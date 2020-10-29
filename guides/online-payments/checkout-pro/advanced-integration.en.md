@@ -1,19 +1,19 @@
-# Integración avanzada
+ # Advanced Integration
 
-## Recibe notificaciones de pagos
+## Receive Payment Notifications
 
-Las notificaciones IPN (Instant Payment Notification) son la **forma automática de aviso de la creación de nuevos pagos y las actualizaciones de sus estados.** Por ejemplo si fueron aprobados, rechazados o si se encuentran pendientes.
-Te permiten administrar tu stock y mantener tu sistema sincronizado.
+IPN (Instant Payment Notification) notifications are the **automatic form of notice of the creation of new payments and updates of their status.** For example if they were approved, rejected or if they are pending.
+They allow you to manage your stock and keep your system in sync.
 
-<a href="https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn/" target="_blank">Recibir notificaciones IPN</a>
+<a href="https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn/" target="_blank">Receive IPN notifications</a>
 
-## Información adicional para la preferencia
+## Additional information for the preference
 
-Mejora la aprobación de los pagos y la experiencia de tus compradores sumando información en tu preferencia.
+Improve the approval of payments and the experience of your buyers by adding information in your preference.
 
-Te recomendamos detallar toda la información posible sobre el ítem y el comprador.
+We recommend detailing all possible information about the item and the buyer.
 
-### Datos del comprador
+### Buyer Details
 
 [[[
 ```php
@@ -32,8 +32,8 @@ Te recomendamos detallar toda la información posible sobre el ítem y el compra
   $payer->identification = array(
     "type" => "DNI",
     "number" => "12345678"
-  );
   ------------
+  );
   $payer->address = array(
     "street_name" => "Cuesta Miguel Armendáriz",
     "street_number" => 1004,
@@ -53,12 +53,12 @@ var payer = {
     area_code: "",
     number: "949 128 866"
   },
-   ----[mla, mlb, mlu, mco, mlc, mpe]----
+  ----[mla, mlb, mlu, mco, mlc, mpe]----
   identification: {
     type: "DNI",
     number: "12345678"
-  },
   ------------
+  },
   address: {
     street_name: "Cuesta Miguel Armendáriz",
     street_number: "1004",
@@ -77,11 +77,11 @@ payer.setName("Charles")
      .setPhone(new Phone()
         .setAreaCode("")
         .setPhoneNumber("949 128 866"))
-      ----[mla, mlb, mlu, mco, mlc, mpe]----
+      ----[mla, mlb, mlu, mco, mlc, mpe]----  
      .setIdentification(new Identification()
         .setType("DNI")
         .setNumber("12345678"))
-      ------------
+      ------------  
      .setAddress(new Address()
         .setStreetName("Cuesta Miguel Armendáriz")
         .setBuildingNumber("1004")
@@ -146,7 +146,7 @@ Payer payer = new Payer()
 ```
 ]]]
 
-### Datos del ítem
+### Item Details
 
 [[[
 ```php
@@ -218,46 +218,39 @@ preference.Items.Add(
 ```
 ]]]
 
-> La lista de categorías para tu `ìtem` la puedes encontrar en el siguiente [link](https://api.mercadopago.com/item_categories). En caso de no encontrar la categoría de tu producto, envía como `categoryid` el valor `others`.    
+
+> You can find the list of categories for your `item` in the following [link](https://api.mercadopago.com/item_categories). If you cannot find the category of your product, send the value `others` as ` category_id`.
 
 
-## URL de retorno
+## Return URL
 
-Al finalizar el proceso de pago, tienes la opción de **redireccionar al comprador a tu sitio.**
-Para esto, se utilizan las `back_urls`. Esta redirección puede ser automática a través del atributo `auto_return` o un link que permita volver al sitio del vendedor.
+At the end of the payment process you have the option to **redirect the buyer to your website.** In order to do this you need to add the `back_urls` attribute and define where you want the return to site button to redirect the buyer depending on the payment status. 
+
+If you want this redirection to be made automatically you need to also add the `auto_return` attribute with value `success`. 
 
 > NOTE
 >
-> Nota
+> Note
 >
-> Ten en cuenta que las `backs_urls` solo funcionan para modo redirect y mobile. No al usar [modo modal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/integration/), ya que para volver al sitio toma la URL del `form action`. 
+> Note that the `auto_return` only works for redirect and mobile mode. It does not work for [modal mode](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/integration/) since the buyer stays on your website.
 
 ![autoreturn](/images/web-payment-checkout/autoreturn-img.png)
 
-Atributo |	Descripción
+Attribute |	Description
 ------------ 	|	--------
-`auto_return` | Redirige automáticamente a tu sitio cuando el pago finaliza como aprobado. Los valores posibles son _approved_ y _all_.
- | **_success._** URL de retorno ante pago aprobado.
- `back_url`| **_pending._** URL de retorno ante pago pendiente.
-  | **_failure._** URL de retorno ante pago cancelado.
+`auto_return` | Automatically redirect to your site when the payment is successful. Possible value is `approved`.
+| `back_urls` | `success`. Return URL for approved payment.<br><br>`pending`. Return URL for pending payment.<br><br>`failure`. Return URL for canceled payment.
 
+Through the `back_urls` *the following parameters will return*:
 
-A través de las `back_url`, *retornarán los siguientes parámetros*:
-
-Parámetro |	Descripción
+Parameter |	Description
 ------------ 	|	--------
-`collection_id` | ID del pago de Mercado Pago. |
-`collection_status` | Estado del pago. Por ejemplo: `approved` para un pago aprobado o `pending` para un pago pendiente. |
-`external_reference` | Valor del campo `external_reference` que hayas enviado a la hora de crear la preferencia de pago. |
-`payment_type` | Tipo de pago. Por ejemplo: `credit_card` para tarjetas de crédito o `ticket` para medios de pago en efectivo. |
-`merchant_order_id` | ID de la orden de pago generada en Mercado Pago. |
-`preference_id` | ID de la preferencia de pago de la que se está retornando. |
-`site_id` | ID del país de la cuenta de Mercado Pago del vendedor. Por ejemplo: ----[mla]---- MLA para Argentina.------------ ----[mlb]---- MLB para Brasil.------------ ----[mlm]---- MLM para México.------------ ----[mpe]---- MPE para Perú.------------ ----[mlc]---- MLC para Chile.------------ ----[mco]---- MCO para Colombia.------------ ----[mlu]---- MLU para Uruguay.------------ |
-`processing_mode` | Valor `aggregator`. |
-`merchant_account_id` | Valor `null`. |
+`payment_id` | Payment ID of Mercado Pago. |
+`status` | Payment status. For example: `approved` for an approved payment or ` pending` for a pending payment. |
+`external_reference` | Value that you sent when creating the payment preference. |
+`merchant_order_id` | Payment order ID created in Mercado Pago. |
 
->  La información de los parámetros dependerá de la finalización del pago en el Checkout Pro y de que no haya abandonado el flujo antes de retornar a tu sitio a través de la `back_url` de **_failure_**.
-
+> The information of the parameters will depend on the finalization of the payment at the Checkout Pro and on the fact that the flow has not been abandoned before returning to your site through the `back_urls` of **_failure_**.
 
 
 [[[
@@ -321,43 +314,43 @@ Preference preference = new Preference();
 ```
 ]]]
 
-## Previene pagos rechazados
+## Prevent payment rejection
 
-Un pago puede ser rechazado porque el emisor del medio de pago detecta un problema o porque no se cumple con los requisitos de seguridad necesarios.
+A payment can be rejected because the issuer for the selected method detected a problem or because of non-compliance with security requirements.
 
-Evita pagos rechazados con nuestras recomendaciones y <a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/payment-rejections" target="_blank">mejora la aprobación de tus pagos</a>.
+Avoid rejected payments with our recommendations and <a href="https://www.mercadopago.com.ar/developers/en/guides/manage-account/account/payment-rejections" target="_blank">improve the approval process</a>.
 
-## Cancelaciones y devoluciones
+## Cancellations and Returns
 
-Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes de la fecha de vencimiento y el vendedor decide cancelarlo.
-Y las devoluciones suceden cuando el pago se realizó pero el vendedor decide anularlo total o parcialmente.
+Cancellations are made when the cash payment was not completed before the expiration date and the seller decides to cancel it.
+And the returns happen when the payment was made but the seller decides to cancel it totally or partially.
 
-Puedes encontrar toda la información en la <a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/cancellations-and-refunds" target="_blank"> sección Devoluciones y cancelaciones</a>.
+You can find all the information in the <a href="https://www.mercadopago.com.ar/developers/en/guides/manage-account/account/cancellations-and-refunds" target="_blank"> Returns and Cancellations section</a>.
 
-## Gestiona contracargos
+## Manage Chargebacks
 
-Se produce un contracargo o _chargeback_ cuando el comprador se comunica con la entidad que emitió su tarjeta y desconoce el pago.
-Esto quiere decir que el dinero del vendedor por ese pago será retenido de su cuenta de Mercado Pago hasta que se solucione.
+A _chargeback_ occurs when the buyer contacts the entity that issued the card and communicates that they do not recognize the payment.
+This means that the seller's money for that payment will be withheld from their Mercado Pago account until it is settled.
 
-<a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/chargebacks/" target="_blank"> Gestionar contracargos</a>
+<a href="https://www.mercadopago.com.ar/developers/en/guides/manage-account/account/chargebacks/" target="_blank"> Manage Chargebacks</a>
 
 ---
 
-### Próximos pasos
+### Next steps
 
 
 > LEFT_BUTTON
 >
-> Otras funcionalidades
+> Other functionalities
 >
-> Configura tus pago y adapta Checkout Pro a tu negocio.
+> Set up your payment and adapt the Checkout Pro to your business.
 >
-> [Configurations](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/configurations/)
+> [Other functionalities](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/configurations/)
 
 > RIGHT_BUTTON
 >
-> Personalizaciones
+> Customization
 >
-> Adapta el estilo de tu marca en la experiencia de compra.
+> Adapt the style of your brand in the shopping experience.
 >
-> [Personalizaciones](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/customizations/)
+> [Customization](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/customizations/)

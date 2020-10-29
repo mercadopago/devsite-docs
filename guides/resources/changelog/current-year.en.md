@@ -4,9 +4,57 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ---
 
-----[mlb]----
-
 ## October 2020
+
+### October 29th
+
+> CHANGELOG
+>
+> Receive payments only by the Mercado Pago wallet
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: CHECKOUT PRO
+
+Now, you can add the option to receive payments only from registered users with the Checkout Pro wallet mode. This means that your buyers will pay you exclusively with their saved cards or with their account balance.
+
+[Receive payments by Mercado Pago wallet](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations/#bookmark_accept_payments_from_registered_users_only)
+
+### October 26th
+
+> CHANGELOG
+>
+> New version WooCommerce
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+
+We have released the new version 4.5.0 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction/)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.5.0) for further details regarding this release.
+
+### October 22nd
+ 
+> CHANGELOG
+>
+> Improved experience for return URLs
+>
+> NEWS: FEATURE
+>
+> Product: CHECKOUT PRO
+
+We do not require you to include a form along with the script in order to add the button to your site anymore. You can also configure ways to return to your site just through your preference. 
+
+[More information about return URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/advanced-integration#bookmark_return_url)
+
+----[mlb]----
 
 ### October 15th
 
@@ -91,7 +139,7 @@ From now on, you must start adding your Access Token to the request headers inst
 You can see all the information in the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/).
 
 
-### September 21th
+### September 21st
 
 > CHANGELOG
 >
@@ -164,7 +212,7 @@ In order to optimize your sales, we have added a new attribute that will allow y
 
 ## August 2020
 
-### August 31th
+### August 31st
 
 > CHANGELOG
 >
@@ -414,7 +462,7 @@ We have released the new version 4.2.1 for WooCommerce.
 >
 > [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.2.1) for further details regarding this release.
 
-### May 13th
+### May 13rd
 
 > CHANGELOG
 >

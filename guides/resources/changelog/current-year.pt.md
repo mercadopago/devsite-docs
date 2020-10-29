@@ -4,9 +4,57 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
-----[mlb]----
-
 ## Outubro 2020
+
+### 29 de outubro
+
+> CHANGELOG
+>
+> Receba pagamentos somente com a carteira do Mercado Pago
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: CHECKOUT PRO
+
+Agora, você pode adicionar a opção de receber pagamentos somente de usuários cadastrados com o Checkout Pro modo carteira. Isto significa que seus compradores pagarão exclusivamente com seus cartões salvos ou com saldo em conta.
+
+[Receber pagamentos com a carteira do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados)
+
+### 26 de outubro
+
+> CHANGELOG
+>
+> Nova versão WooCommerce
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: WOOCOMMERCE
+
+Lançamos a nova versão 4.5.0 para WooCommerce.
+
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction/)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.5.0).
+
+### 22 de outubro
+ 
+> CHANGELOG
+>
+> Melhoramos a experiência das URLs de retorno
+>
+> NEWS: FEATURE
+>
+> Product: CHECKOUT PRO
+
+Agora, para adicionar o botão ao seu site, você não precisa mais de um formulário ao incorporar o script e pode configurar como voltar ao seu site apenas com a sua preferência. 
+
+[Mais informações sobre URLs de retorno](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/advanced-integration#bookmark_url_de_retorno)
+
+----[mlb]----
 
 ### 15 de outubro
 

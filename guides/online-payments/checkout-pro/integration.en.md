@@ -98,6 +98,8 @@ MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
 
 ----[mla, mlb, mlu, mpe, mlm]----
 
+> Note that you need to configure the `back_urls` if you want to return to your site at the end of the payment. For more information, you can visit the [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/advanced-integration#bookmark_return_url) section. 
+
 [[[
  ```php
 <?php
@@ -379,48 +381,36 @@ curl -X POST \
 
 Finally, add the following code to show the payment button of your Checkout Pro in the place you want it to appear.
 
-> If your site works on mobile, note that you need to configure the `back_urls` if you want to return to your site at the end of the payment. For more information, you can visit the [Advanced integration](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/test-integration/) section. 
-
 [[[
 ```php
-<form action="/payment-process" method="POST">
-  <script
-   src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-   data-preference-id="<?php echo $preference->id; ?>">
-  </script>
-</form>
+<script
+  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id="<?php echo $preference->id; ?>">
+</script>
 ```
 ```node
-<form method="POST">
-  <script
-   src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-   data-preference-id='<%= global.id %>'>
-  </script>
-</form>
+<script
+  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id='<%= global.id %>'>
+</script>
 ```
 ```java
-<form action="/payment-process" method="POST">
-  <script
-   src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-   data-preference-id="${preference.id}">
-  </script>
-</form>
+<script
+  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id="${preference.id}">
+</script>
 ```
 ```ruby
-<form action="/payment-process" method="POST">
-  <script
-   src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-   data-preference-id="<%= @preference_id %>">
-  </script>
-</form>
+<script
+  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id="<%= @preference_id %>">
+</script>
 ```
 ```csharp
-<form action="/payment-process" method="POST">
-  <script
-   src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-   data-preference-id="@Html.DisplayFor(model => model.id)">
-  </script>
-</form>
+<script
+  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id="@Html.DisplayFor(model => model.id)">
+</script>
 ```
 ]]]
 
@@ -448,8 +438,8 @@ _Click on the link within your site and [test the integration of your Checkout P
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
-> Accept payments from registered users only
+> Accepts payments by Mercado Pago wallet
 >
-> Allows payments only from users registered in Mercado Pago, with cards and money in account.
+> It allows payments only from Mercado Pago registered users, with cards and available balance.
 >
 > [Registered users](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations/#bookmark_accept_payments_from_registered_users_only)
