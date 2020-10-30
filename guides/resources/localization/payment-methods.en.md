@@ -166,6 +166,8 @@ Mastercard			| `credit_card`            | `master`
 American Express		| `credit_card`            | `amex`
 Diners Club International	| `credit_card`            | `diners`
 Crédito Fácil Codensa    	| `credit_card`            | `codensa`
+Visa Debit       		| `debit_card`             | `debvisa`
+Mastercard Debit		| `debit_card`             | `debmaster`
 Efecty        			| `ticket`                 | `efecty`
 Davivienda       		| `ticket`                 | `davivienda`
 PSE    			       	| `bank_transfer`          | `pse`
