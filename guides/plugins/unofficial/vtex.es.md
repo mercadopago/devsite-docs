@@ -1071,7 +1071,9 @@ Para crear esta condición de pago, sigue estos pasos:
 
 
 > Los cambios en las Condiciones de pago pueden demorar hasta 10 minutos en aplicarse.
+------------
 
+----[mla, mlm, mlc, mco, mlu]----
 
 ## Configura las cuotas sin interés en tu cuenta de Mercado Pago
 
@@ -1085,6 +1087,9 @@ Para crear esta condición de pago, sigue estos pasos:
 
 **¡Y listo! Ya estás ofreciendo cuotas sin interés, con el costo de financiación que hayas configurado.**
 <br>
+
+------------
+----[mla, mlm, mlc, mco, mpe, mlu]----
 
 ## Obtén una mejor aprobación enviando el device fingerprint
 Mercado Pago tiene sus propias herramientas de prevención de fraude. **Te recomendamos que envíes información sobre el comportamiento de tus clientes para detectar movimientos inusuales y evitar transacciones fraudulentas**. Y no te preocupes, cuidamos los datos de tus clientes y no los compartiremos con nadie.
