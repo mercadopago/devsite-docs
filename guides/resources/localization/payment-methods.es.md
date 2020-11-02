@@ -166,7 +166,6 @@ American Express		| `credit_card`            | `amex`
 Diners Club International	| `credit_card`            | `diners`
 Crédito Fácil Codensa    	| `credit_card`            | `codensa`
 Efecty        			| `ticket`                 | `efecty`
-Davivienda       		| `ticket`                 | `davivienda`
 PSE    			       	| `bank_transfer`          | `pse`
 Dinero en cuenta	       	| `account_money`          | `account_money`
 
