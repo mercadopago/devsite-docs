@@ -31,10 +31,10 @@ use:
 errors:
 - 400 bad_request:
   - collector_does_not_comply_with_current_regulation:
-    description:
-      en: indentity validation required.
-      es: indentity validation required.
-      pt: indentity validation required.
+      description:
+        en: indentity validation required.
+        es: indentity validation required.
+        pt: indentity validation required.
   - invalid_collector_id:
       description:
         en: collector_id must be a number.
