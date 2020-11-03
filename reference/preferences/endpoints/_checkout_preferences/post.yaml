@@ -34,7 +34,7 @@ errors:
       description:
         en: [identity validation](https://www.mercadopago.com.ar/developers/panel/credentials/validation) required.
         es: [identity validation](https://www.mercadopago.com.ar/developers/panel/credentials/validation) required.
-        pt: indentity validation required.
+        pt: [identity validation](https://www.mercadopago.com.ar/developers/panel/credentials/validation) required.
   - invalid_collector_id:
       description:
         en: collector_id must be a number.
