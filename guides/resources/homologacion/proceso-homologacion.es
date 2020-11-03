@@ -17,11 +17,11 @@ A su vez, se revisan distintos factores que impactan directamente en los sistema
 
 Los diferentes Checkouts de Mercado Pago son: Checkout Pro, Checkout Tokenizer o Checkout API. En todos se realizan validaciones sobre los siguientes aspectos:
 
-- Flujos y experiencias de pago.
 - Seguridad de la integración.
 - Efectividad de nuestros sistemas de fraude.  
 - Gestión de cuenta.
-- Actualización de pagos/órdenes.
+- Conciliación de pagos/órdenes.
+- Medios de pago. 
 
 
 A continuación encontrarás una serie puntos que revisaremos en tu sitio en el momento de la homologación:
@@ -31,7 +31,7 @@ A continuación encontrarás una serie puntos que revisaremos en tu sitio en el 
 
 - Se realizan [pruebas](https://www.mercadopago.cl/developers/es/guides/online-payments/checkout-pro/test-integration) de pagos aprobados y rechazados.
 	* En caso de no estar utilizando el modo binario, se realizan pruebas de cambio de estado *pendiente* a *aprobado*.
-	* Se verifica en todos los casos que la redirección y los mensajes de éxito/rechazo de la transaccion esten comunicados correctamente. 
+	* Se verifica en todos los casos que la redirección y los mensajes de éxito/rechazo de la transacción esten comunicados correctamente. 
 - Se comprueba el uso del campo [_`external_reference`_](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_ejemplo_de_una_preferencia_completa) en la preferencia para facilitar la conciliación de tus transacciones.
 - Se comprueba el uso y procesamiento correcto de notificaciones de pago ([IPN](https://www.mercadopago.com/developers/es/guides/notifications/ipn) o [Webhooks](https://www.mercadopago.com/developers/es/guides/notifications/webhooks)) para actualizar el estado de las órdenes.
 - Uso del [script de seguridad](https://www.mercadopago.com/developers/es/guides/manage-account/account/payment-rejections/#bookmark_recomendaciones_para_mejorar_tu_aprobaci%C3%B3n) en las páginas del ecommerce para mejora de aprobación.
@@ -60,7 +60,7 @@ Si estas utilizando el flujo de clientes y tarjetas, verifica las [validaciones 
 
 - Se realizan [pruebas](https://www.mercadopago.cl/developers/es/guides/online-payments/web-tokenize-checkout/testing#bookmark_prueba_el_flujo_de_pago) de pagos aprobados y rechazados.
 	* En caso de no estar utilizando el modo binario, se realizan pruebas de cambio de estado *pendiente* a *aprobado*.
-	* Se verifica en todos los casos que la redirección y los mensajes de éxito/rechazo de la transaccion esten comunicados correctamente. 
+	* Se verifica en todos los casos que la redirección y los mensajes de éxito/rechazo de la transacción esten comunicados correctamente. 
 - Se comprueba el uso del campo [_`external_reference`_](https://www.mercadopago.com.ar/developers/es/reference/payments/resource/) en la preferencia para facilitar la conciliación de tus transacciones.
 - Se comprueba el uso y procesamiento correcto de notificaciones de pago ([IPN](https://www.mercadopago.com/developers/es/guides/notifications/ipn) o [Webhooks](https://www.mercadopago.com/developers/es/guides/notifications/webhooks)) para actualizar el estado de las órdenes.
 - Uso del [script de seguridad](https://www.mercadopago.com/developers/es/guides/manage-account/account/payment-rejections/#bookmark_recomendaciones_para_mejorar_tu_aprobaci%C3%B3n) en las páginas del ecommerce para mejora de aprobación.
@@ -72,12 +72,14 @@ Si estas utilizando el flujo de clientes y tarjetas, verifica las [validaciones 
 
 
 ### Validaciones sobre el flujo de Marketplace
-- Revisión del flujo oAuth de vinculación y desvinculación del vendedor al marketplace
-- Creación y búsqueda de pagos exitosa con las credenciales de vinculacion del vendedor y con las credenciales del marketplace.
+- Revisión del flujo oAuth de vinculación y desvinculación del vendedor al marketplace.
+- Revisión de flujo de renovación de token.
+- Creación y búsqueda de pagos exitosa con las credenciales de vinculación del vendedor y con las credenciales del marketplace.
+
 
 ### Validaciones sobre el flujo de Clientes y Tarjetas
-- Se revisa que exista un flujo para vinculacion y desvinculacion de tarjetas del sitio. 
-- Se revisa que al momento de crear el token de tarjeta se envie la informacion del dispositivo ( device fingerprint )
+- Se revisa que exista un flujo para vinculación y desvinculación de tarjetas del sitio. 
+- Envío de [información del dispositivo ( device fingerprint )](https://www.mercadopago.com/developers/es/guides/resources/pci-compliant-merchants/receiving-payment-by-card)
 
 
 ## ¿Qué necesito para poder realizar la homologación?
