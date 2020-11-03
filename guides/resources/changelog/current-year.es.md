@@ -4,9 +4,9 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ---
 
-## Octubre 2020
+## Noviembre 2020
 
-### 30 de octubre
+### 5 de noviembre
 
 > CHANGELOG
 >
@@ -19,6 +19,8 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 Las suscripciones de Mercado Pago te permiten recibir pagos de forma recurrente, con tarjeta de crédito y débito. Puedes establecer la periodicidad de cobro que deseas y el tiempo en el que quieres mantener activa la suscripción.
 
 [Crear suscripciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/introduction)
+
+## Octubre 2020
 
 ### 29 de octubre
 
