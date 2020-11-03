@@ -169,7 +169,6 @@ Crédito Fácil Codensa    	| `credit_card`            | `codensa`
 Visa Debit       		| `debit_card`             | `debvisa`
 Mastercard Debit		| `debit_card`             | `debmaster`
 Efecty        			| `ticket`                 | `efecty`
-Davivienda       		| `ticket`                 | `davivienda`
 PSE    			       	| `bank_transfer`          | `pse`
 Account money	       		| `account_money`          | `account_money`
 
