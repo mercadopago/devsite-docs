@@ -1,5 +1,8 @@
 ---
-indexable: false
+sites_supported:
+  - mla
+  - mlm
+  - mlb
 ---
 
 # Lógica de reintentos de cobro
