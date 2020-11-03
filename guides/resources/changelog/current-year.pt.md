@@ -20,6 +20,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 As assinaturas do Mercado Pago permitem que você receba pagamentos recorrentes com cartão. Você pode definir a frequência de pagamento desejada e o período de tempo que quer manter a assinatura ativa.
 
 [Criar assinaturas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/introduction)
+------------
 
 ## Outubro 2020
 
