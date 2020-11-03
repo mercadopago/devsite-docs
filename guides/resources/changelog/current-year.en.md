@@ -4,6 +4,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ---
 
+----[mlm, mla, mlb]----
 ## November 2020
 
 ### November 5th
