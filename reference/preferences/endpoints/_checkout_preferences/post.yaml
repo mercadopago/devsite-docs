@@ -33,7 +33,7 @@ errors:
   - collector_does_not_comply_with_current_regulation:
       description:
         en: [identity validation](https://www.mercadopago.com.ar/developers/panel/credentials/validation) required.
-        es: indentity validation required.
+        es: [identity validation](https://www.mercadopago.com.ar/developers/panel/credentials/validation) required.
         pt: indentity validation required.
   - invalid_collector_id:
       description:
