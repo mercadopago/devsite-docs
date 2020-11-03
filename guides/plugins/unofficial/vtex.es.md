@@ -633,7 +633,7 @@ Luego de tener creada tu afiliación con Mercado Pago, puedes ofrecer pagos con 
 Para poder utilizar este tipo de checkout se tienen que configurar los medios de pago por separado: 
 
 1. [Tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito)
-2. [tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito)
+2. [Tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito)
 3. [Transferencia bancaria (PSE)](#bookmark_condición_de_pagos_para_medios_de_pago_por_transferencia_bancaria)
 4. [Efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo)
 
