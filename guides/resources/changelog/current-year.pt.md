@@ -4,6 +4,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
+----[mlm, mla, mlb]----
 ## Novembro 2020
 
 ### 5 de novembro
