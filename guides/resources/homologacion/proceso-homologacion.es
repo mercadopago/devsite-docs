@@ -71,15 +71,22 @@ Si tienes un marketplace, verifica las [validaciones sobre marketplace](###Valid
 Si estas utilizando el flujo de clientes y tarjetas, verifica las [validaciones sobre el flujo de clientes y tarjetas](### Validaciones sobre el flujo de Clientes y Tarjetas).
 
 
+			
+### Validaciones sobre el flujo de Clientes y Tarjetas
+- Se revisa que exista un flujo para vinculación y desvinculación de tarjetas del sitio. 
+- Envío de [información del dispositivo ( device fingerprint )](https://www.mercadopago.com/developers/es/guides/resources/pci-compliant-merchants/receiving-payment-by-card)
+
 ### Validaciones sobre el flujo de Marketplace
 - Revisión del flujo oAuth de vinculación y desvinculación del vendedor al marketplace.
 - Revisión de flujo de renovación de token.
 - Creación y búsqueda de pagos exitosa con las credenciales de vinculación del vendedor y con las credenciales del marketplace.
+			
+#### Validaciones sobre el flujo de Split de pagos
+- Se verifica que la liberación del dinero esté configurada correctamente.
 
-
-### Validaciones sobre el flujo de Clientes y Tarjetas
-- Se revisa que exista un flujo para vinculación y desvinculación de tarjetas del sitio. 
-- Envío de [información del dispositivo ( device fingerprint )](https://www.mercadopago.com/developers/es/guides/resources/pci-compliant-merchants/receiving-payment-by-card)
+								
+### Validaciones sobre modo de operacion Gateway
+Recorda que si estas utilizando el modo de operacion Gateway ademas, vamos a corroborar que envies merchant_account_id , payment_method_option_id.		
 
 
 ## ¿Qué necesito para poder realizar la homologación?
