@@ -6,13 +6,6 @@ indexable: false
 
 We explain how to use our cards and test users to verify that your subscriptions are created correctly.
 
-> WARNING
-> 
-> Subscription testing limitations
-> 
-> At the moment, with test users it is only possible to carry out the flow of creating a subscription and you will not be able to see the impact or registration of the quota, either through the Mercado Pago panel or by API.
-
-
 
 ## How to test your integration
 

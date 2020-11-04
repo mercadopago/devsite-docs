@@ -4,6 +4,24 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ---
 
+----[mlm, mla, mlb]----
+## Noviembre 2020
+
+### 5 de noviembre
+
+> CHANGELOG
+>
+> Crea suscripciones para cobrar de forma recurrente
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: SUSCRIPCIONES
+
+Las suscripciones de Mercado Pago te permiten recibir pagos de forma recurrente, con tarjeta de crédito y débito. Puedes establecer la periodicidad de cobro que deseas y el tiempo en el que quieres mantener activa la suscripción.
+
+[Crear suscripciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/introduction)
+------------
+
 ## Octubre 2020
 
 ### 29 de octubre
