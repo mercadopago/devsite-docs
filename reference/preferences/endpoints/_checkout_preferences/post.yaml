@@ -30,6 +30,11 @@ use:
 - tracks
 errors:
 - 400 bad_request:
+  - collector_does_not_comply_with_current_regulation:
+      description:
+        en: [identity validation](https://www.mercadopago.com.ar/developers/panel/credentials/validation) required.
+        es: [identity validation](https://www.mercadopago.com.ar/developers/panel/credentials/validation) required.
+        pt: [identity validation](https://www.mercadopago.com.ar/developers/panel/credentials/validation) required.
   - invalid_collector_id:
       description:
         en: collector_id must be a number.
