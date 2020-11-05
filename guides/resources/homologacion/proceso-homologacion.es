@@ -83,9 +83,8 @@ Si estas utilizando el flujo de clientes y tarjetas, verifica las [validaciones 
 			
 #### Validaciones sobre el flujo de Split de pagos
 - Se verifica que la liberación del dinero esté configurada correctamente.
-
 								
-### Validaciones sobre modo de operacion Gateway
+### Validaciones sobre modo de operación Gateway
 Recorda que si estas utilizando el modo de operacion Gateway ademas, vamos a corroborar que envies merchant_account_id , payment_method_option_id.		
 
 
@@ -95,11 +94,3 @@ Recorda que si estas utilizando el modo de operacion Gateway ademas, vamos a cor
 * Tener a mano las tarjetas de prueba.
 * Usuarios de prueba (si es necesario).
 * Coordinar con equipo de integraciones para obtener cualquier información adicional que necesite el para probar.
-
-
-
-
-
-
-
-
