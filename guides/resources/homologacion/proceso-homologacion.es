@@ -70,7 +70,6 @@ Si estas utilizando el flujo de clientes y tarjetas, verifica las [validaciones 
 Si tienes un marketplace, verifica las [validaciones sobre marketplace](###Validaciones sobre el flujo de Marketplace).
 Si estas utilizando el flujo de clientes y tarjetas, verifica las [validaciones sobre el flujo de clientes y tarjetas](### Validaciones sobre el flujo de Clientes y Tarjetas).
 
-
 			
 ### Validaciones sobre el flujo de Clientes y Tarjetas
 - Se revisa que exista un flujo para vinculación y desvinculación de tarjetas del sitio. 
@@ -92,4 +91,4 @@ Recuerda que si estas utilizando el modo de operacion Gateway vamos a corroborar
 * [Credenciales](https://www.mercadopago.com/developers/es/guides/resources/faqs/credentials) de test.
 * Tener a mano las tarjetas de prueba.
 * Usuarios de prueba (si es necesario).
-* Coordinar con equipo de integraciones para obtener cualquier información adicional que necesite el para probar.
+* Coordinar con equipo de integraciones para obtener cualquier información adicional que se necesite para probar.
