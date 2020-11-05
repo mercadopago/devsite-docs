@@ -85,8 +85,7 @@ Si estas utilizando el flujo de clientes y tarjetas, verifica las [validaciones 
 - Se verifica que la liberación del dinero esté configurada correctamente.
 								
 ### Validaciones sobre modo de operación Gateway
-Recorda que si estas utilizando el modo de operacion Gateway ademas, vamos a corroborar que envies merchant_account_id , payment_method_option_id.		
-
+Recuerda que si estas utilizando el modo de operacion Gateway vamos a corroborar que estes enviando los campos [_`merchant_account_id`_] y [_`payment_method_option_id`_].	
 
 ## ¿Qué necesito para poder realizar la homologación?
 * Tener tu sitio de prueba funcionando.
