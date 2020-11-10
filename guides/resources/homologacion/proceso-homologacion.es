@@ -17,8 +17,6 @@ A su vez, se revisan distintos factores que impactan directamente en los sistema
 
 Los diferentes Checkouts de Mercado Pago son: Checkout Pro, Checkout Tokenizer o Checkout API. En todos se realizan validaciones sobre los siguientes aspectos:
 
-
-
 - Seguridad de la integración:
 	* Uso de certificado SSL en el sitio
 	* Protocolo TLS 1.2 o superior
