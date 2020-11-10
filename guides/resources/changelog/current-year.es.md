@@ -7,7 +7,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Noviembre 2020
 
-### 25 de noviembre
+### 12 de noviembre
 
 > CHANGELOG
 >
