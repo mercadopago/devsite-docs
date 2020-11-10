@@ -4,9 +4,29 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
-----[mlm, mla, mlb]----
 ## Novembro 2020
 
+### 12 de novembro
+
+> CHANGELOG
+>
+> Nova versão do plugin para PrestaShop
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: PRESTASHOP
+
+Lançamos a nova versão 4.3.0 para PrestaShop.
+
+[Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction/)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.3.0).
+
+----[mlm, mla, mlb]----
 ### 5 de novembro
 
 > CHANGELOG
