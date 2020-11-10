@@ -5,7 +5,7 @@ sites_supported:
   - mlb
 ---
 
-# O que são as assinaturas?
+# O que são Assinaturas?
 
 As assinaturas do Mercado Pago permitem que você receba pagamentos recorrentes com cartão. A disponibilidade dos meios de pagamento varia de acordo com a forma de integração.
 
