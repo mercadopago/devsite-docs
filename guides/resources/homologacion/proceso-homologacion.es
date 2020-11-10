@@ -43,15 +43,15 @@ A continuación encontrarás una serie puntos que revisaremos en tu sitio en el 
 
 ### Validaciones sobre Checkout Pro
 
-Se realizan pruebas de pagos aprobados y rechazados. En caso de no estar utilizando el modo binario, se realizan pruebas de cambio de estado *in_process* a *approved*.
+Se realizan [pruebas](https://www.mercadopago.cl/developers/es/guides/online-payments/checkout-pro/test-integration/#bookmark_c%C3%B3mo_probar_mi_integraci%C3%B3n) de pagos aprobados y rechazados. En caso de no estar utilizando el modo binario, se realizan pruebas de cambio de estado *in_process* a *approved*.
 Se verifica en todos los casos que la redirección esté funcionando correctamente ( esta verificación se aplica solo en apertura *redirect* )
 
 Si tienes un marketplace, verifica las [validaciones sobre marketplace](###Validaciones sobre el flujo de Marketplace).
 
 ### Validaciones sobre Checkout API
 
-Se realizan pruebas de pagos aprobados y rechazados.
-En caso de no estar utilizando el modo binario, se realizan pruebas de cambio de estado  in_process a approved.
+Se realizan [pruebas](https://www.mercadopago.cl/developers/es/guides/online-payments/checkout-api/testing) de pagos aprobados y rechazados.
+En caso de no estar utilizando el modo binario, se realizan pruebas de cambio de estado *in_process* a *approved*.
 Se verifica en todos los casos que las páginas de éxito/rechazo de la transacción estén funcionando correctamente. [Revisa la documentación sobre manejo de respuestas.](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-api/handling-responses) Asegúrate de no incluir el atributo name al crear un formulario de tarjeta para cuidar la seguridad de los datos.
 
 Si tienes un marketplace, verifica las [validaciones sobre marketplace](###Validaciones sobre el flujo de Marketplace).
@@ -60,14 +60,12 @@ Si estas utilizando el flujo de clientes y tarjetas, verifica las [validaciones 
 
 ### Validaciones sobre Web Tokenize Checkout
 
-- Se realizan pruebas de pagos aprobados y rechazados.
+- Se realizan [pruebas](https://www.mercadopago.cl/developers/es/guides/online-payments/web-tokenize-checkout/testing) de pagos aprobados y rechazados.
 En caso de no estar utilizando el modo binario, se realizan pruebas de cambio de estado *in_process* a *approved*.
 Se verifica en todos los casos que las páginas de éxito/rechazo de la transacción estén funcionando correctamente. [Revisa la documentación sobre manejo de respuestas.](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-api/handling-responses)
 
 Si tienes un marketplace, verifica las [validaciones sobre marketplace](###Validaciones sobre el flujo de Marketplace).
 Si estas utilizando el flujo de clientes y tarjetas, verifica las [validaciones sobre el flujo de clientes y tarjetas](### Validaciones sobre el flujo de Clientes y Tarjetas).
-
-
 			
 ### Validaciones sobre el flujo de Clientes y Tarjetas
 - Se revisa que exista un flujo para vinculación y desvinculación de tarjetas del sitio. 
