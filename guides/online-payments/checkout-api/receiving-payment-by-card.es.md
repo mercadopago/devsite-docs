@@ -68,7 +68,7 @@ En el siguiente ejemplo se asume que los datos `transactionAmount` y `descriptio
      <div>
        <div>
          <label for="email">E-mail</label>
-         <input id="email" name="email" type="text" value="test@test.com"></select>
+         <input id="email" name="email" type="text" value="test@test.com"/>
        </div>
        <div>
          <label for="docType">Tipo de documento</label>
