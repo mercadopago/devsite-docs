@@ -23,8 +23,41 @@ Esto significa que tus clientes tienen más formas de pagarte y pueden acceder a
 
 ## Cómo sumar la billetera en tu sitio
 
-1. Integra el [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/integration) para crear tus preferencias de pago y sumar el botón en tu sitio.
-2. Al momento de crear la preferencia, solo tienes que agregar el atributo que permite [recibir pagos únicamente de usuarios registrados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations/#bookmark_aceptar_pagos_únicamente_de_usuarios_registrados).
+Necesitas integrar [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction) configurado como [modo billetera](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_aceptar_pagos_%C3%BAnicamente_de_usuarios_registrados) para agregar la billetera de Mercado Pago en tu sitio.
+
+Para integrarlo, tienes que [generar la preferencia de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/integration#bookmark_pasos_para_integrarte) con la información del producto o servicio que quieras ofrecer y agregar la opción de pago en tu sitio. 
+
+### Pasos para integrar la billetera
+
+> SERVER_SIDE
+>
+> h3
+>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Genera tu preferencia
+
+Para comenzar, tienes que generar tu preferencia de pago desde tu backend con la [SDK de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements#bookmark_utiliza_nuestras_librer%C3%ADas_siempre) que utilizaste en tu Checkout API. 
+
+{{CODIGO}}
+
+> CLIENT_SIDE
+>
+> h3
+>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Suma el checkout a tu sitio
+
+Luego, desde tu frontend, agrega el siguiente código para mostrar el botón de pago de Checkout Pro modo billetera en el lugar que quieras que aparezca.
+
+{{CODIGO}}
+
+Para más información sobre cada atributo, consulta la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/preferences/_checkout_preferences/post/). 
+
+¡Y listo! Ya tienes integrada la billetera de Mercado Pago en tu sitio. 
+
+> WARNING
+>
+> Importante
+>
+> Para probarlo, no te olvides de acceder desde otro navegador o cerrar la sesión de tu cuenta de Mercado Pago ya que no puedes pagarte a ti mismo.<br/> 
 
 ---
 
@@ -32,8 +65,17 @@ Esto significa que tus clientes tienen más formas de pagarte y pueden acceder a
 
 > LEFT_BUTTON_RECOMMENDED_ES
 >
-> Acepta pagos con la billetera de Mercado Pago
+> Integración avanzada de Checkout Pro
 >
-> Permite pagos solo de usuarios registrados en Mercado Pago, con tarjetas y dinero disponible.
+> Optimiza la integración de tu billetera para mejorar la gestión de tus ventas.
 >
-> [Usuarios registrados](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/integration)
+> [Integración avanzada](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/advanced-integration)
+
+
+> RIGHT_BUTTON_RECOMMENDED_ES
+>
+> Prueba la billetera
+>
+> Revisa que esté todo bien en tu integración con los usuarios de prueba.
+>
+> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/test-integration/)
