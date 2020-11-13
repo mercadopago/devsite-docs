@@ -4,8 +4,19 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ---
 
-
 ## Noviembre 2020
+
+### 13 de noviembre
+
+> CHANGELOG
+>
+> Nueva versión SDK PHP
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK PHP
+
+Lanzamos una nueva versión del SDK PHP 2.2.1.
 
 ### 12 de noviembre
 

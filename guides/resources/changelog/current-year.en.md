@@ -6,6 +6,18 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## November 2020
 
+### November 13th
+
+> CHANGELOG
+>
+> New version of SDK PHP
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK PHP
+
+We have released a new version of SDK PHP 2.2.1.
+
 ### November 12th
 
 > CHANGELOG
