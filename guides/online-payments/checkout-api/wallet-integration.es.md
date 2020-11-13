@@ -37,7 +37,137 @@ Para integrarlo, tienes que [generar la preferencia de pago](https://www.mercado
 
 Para comenzar, tienes que generar tu preferencia de pago desde tu backend con la [SDK de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements#bookmark_utiliza_nuestras_librer%C3%ADas_siempre) que utilizaste en tu Checkout API. 
 
-{{CODIGO}}
+[[[
+ ```php
+===
+El modo billetera funciona agregando el atributo `purpose` en la preferencia.
+===
+<?php
+// Crea un objeto de preferencia
+$preference = new MercadoPago\Preference();
+
+// Crea un ítem en la preferencia
+$item = new MercadoPago\Item();
+$item->title = 'Mi producto';
+$item->quantity = 1;
+$item->unit_price = 75;
+$preference->items = array($item);
+$preference->purpose = 'wallet_purchase';
+$preference->save();
+?>
+```
+```node
+===
+El modo billetera funciona agregando el atributo `purpose` en la preferencia.
+===
+// Crea un objeto de preferencia
+let preference = {
+  items: [
+    {
+      title: 'Mi producto',
+      unit_price: 100,
+      quantity: 1,
+    }
+  ],
+  purpose: 'wallet_purchase'
+};
+
+mercadopago.preferences.create(preference)
+.then(function(response){
+// Este valor reemplazará el string "<%= global.id %>" en tu HTML
+  global.id = response.body.id;
+}).catch(function(error){
+  console.log(error);
+});
+```
+```java
+===
+El modo billetera funciona agregando el atributo `purpose` en la preferencia.
+===
+// Crea un objeto de preferencia
+Preference preference = new Preference();
+
+// Crea un ítem en la preferencia
+Item item = new Item();
+item.setTitle("Mi producto")
+    .setQuantity(1)
+    .setUnitPrice((float) 75);
+preference.appendItem(item);
+preference.setPurpose("wallet_purchase");
+preference.save();
+```
+```ruby
+===
+El modo billetera funciona agregando el atributo `purpose` en la preferencia.
+===
+# Crea un objeto de preferencia
+preference_data = {
+  "items": [
+    {
+      "title": "Mi producto",
+      "unit_price": 100,
+      "quantity": 1
+    }
+  ],
+  "purpose": "wallet_purchase"
+}
+preference = $mp.create_preference(preference_data)
+
+# Este valor reemplazará el string "<%= @preference_id %>" en tu HTML
+@preference_id = preference["response"]["id"]
+```
+```csharp
+===
+El modo billetera funciona agregando el atributo `purpose` en la preferencia.
+===
+// Crea un objeto de preferencia
+Preference preference = new Preference();
+
+// Crea un ítem en la preferencia
+preference.Items.Add(
+  new Item()
+  {
+    Title = "Mi producto",
+    Quantity = 1,
+    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
+    UnitPrice = (decimal)75
+  }
+);
+preference.Purpose = "wallet_purchase"
+preference.Save();
+```
+```curl
+===
+El modo billetera funciona agregando el atributo `purpose` en la preferencia.
+===
+curl -X POST \
+  'https://api.mercadopago.com/checkout/preferences' \
+  -H 'Content-Type: application/json' \
+  -H 'cache-control: no-cache' \
+  -H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
+  -d '{
+    "items": [
+        {
+            "title": "Mi producto",
+            "quantity": 1,
+            "unit_price": 75
+        }
+    ],
+    "purpose": "wallet_purchase"
+}'
+```
+]]]
+
+----[mlc, mco]----
+
+> WARNING
+>
+> Importante
+>
+> El valor de `unit_price` debe ser entero.
+
+------------
+<span></span>
 
 > CLIENT_SIDE
 >
@@ -47,7 +177,49 @@ Para comenzar, tienes que generar tu preferencia de pago desde tu backend con la
 
 Luego, desde tu frontend, agrega el siguiente código para mostrar el botón de pago de Checkout Pro modo billetera en el lugar que quieras que aparezca.
 
-{{CODIGO}}
+[[[
+```php
+<script
+  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id="<?php echo $preference->id; ?>"
+  data-button-label="Pagar con Mercado Pago"
+  data-button-type="wallet">
+</script>
+```
+```node
+<script
+  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id="<%= global.id %>"
+  data-button-label="Pagar con Mercado Pago"
+  data-button-type="wallet">
+</script>
+```
+```java
+<script
+  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id="${preference.id}"
+  data-button-label="Pagar con Mercado Pago"
+  data-button-type="wallet">
+</script>
+```
+```ruby
+<script
+  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id="<%= @preference_id %>"
+  data-button-label="Pagar con Mercado Pago"
+  data-button-type="wallet">
+</script>
+```
+```csharp
+<script
+  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id="@Html.DisplayFor(model => model.id)"
+  data-button-label="Pagar con Mercado Pago"
+  data-button-type="wallet">
+</script>
+```
+]]]
+
 
 Para más información sobre cada atributo, consulta la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/preferences/_checkout_preferences/post/). 
 
