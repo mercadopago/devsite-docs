@@ -55,7 +55,7 @@ The following example assumes that `transactionAmount` and `description` data we
      <div>
        <div>
          <label for="email">E-mail</label>
-         <input id="email" name="email" type="text" value="test@test.com"></select>
+         <input id="email" name="email" type="text" value="test@test.com"/>
        </div>----[mla, mlb, mlu, mlc, mpe, mco]----
        <div>
          <label for="docType">Document Type</label>
