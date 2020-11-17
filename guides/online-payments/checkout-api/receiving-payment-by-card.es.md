@@ -133,6 +133,12 @@ En el siguiente ejemplo se asume que los datos `transactionAmount` y `descriptio
  </form>
 ```
 
+> NOTE
+>
+> Nota
+>
+> Ten en cuenta que es necesario que el formulario se encuentre antes de todos los pasos siguientes para su correcto funcionamiento.
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configura tu clave pública
 
 Agrega tu [clave pública]([FAKER][CREDENTIALS][URL]) de la siguiente manera:

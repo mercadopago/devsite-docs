@@ -133,6 +133,13 @@ No seguinte exemplo se assume que os dados `transactionAmount` e `description` f
  </form>
 ```
 
+> NOTE
+>
+> Nota
+>
+> Lembre-se que é necessário que o formulário seja encontrado antes de todos os passos seguintes para seu correto funcionamento.
+
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure sua chave pública
 
 

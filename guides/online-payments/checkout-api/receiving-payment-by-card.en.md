@@ -120,6 +120,12 @@ The following example assumes that `transactionAmount` and `description` data we
  </form>
 ```
 
+> NOTE
+>
+> Note
+>
+> Note that it is necessary that the form be found before all the following steps for its correct operation.
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure your public key
 
 Add your [public key]([FAKER][CREDENTIALS][URL]) like this:
