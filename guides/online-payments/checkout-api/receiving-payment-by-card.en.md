@@ -56,11 +56,11 @@ The following example assumes that `transactionAmount` and `description` data we
        <div>
          <label for="email">E-mail</label>
          <input id="email" name="email" type="text" value="test@test.com"></select>
-       </div>
+       </div>----[mla, mlb, mlu, mlc, mpe, mco]----
        <div>
          <label for="docType">Document Type</label>
          <select id="docType" name="docType" data-checkout="docType" type="text"></select>
-       </div>
+       </div>------------
        <div>
          <label for="docNumber">Document Number</label>
          <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
@@ -175,39 +175,13 @@ function setPaymentMethod(status, response) {
    if (status == 200) {
        let paymentMethod = response[0];
        document.getElementById('paymentMethodId').value = paymentMethod.id;
+
+       getIssuers(paymentMethod.id);
    } else {
        alert(`payment method info error: ${response}`);
    }
 }
 
-```
-
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get number of installments
-
-The number of installments is also a mandatory field for credit card payments. You can use the function in the following example to fill out the _select_ type suggested field called `installments` and get the available installments.
-
-```javascript
-function getInstallments(paymentMethodId, transactionAmount, issuerId){
-   window.Mercadopago.getInstallments({
-       "payment_method_id": paymentMethodId,
-       "amount": parseFloat(transactionAmount),
-       "issuer_id": issuerId ? parseInt(issuerId) : undefined
-   }, setInstallments);
-}
-
-function setInstallments(status, response){
-   if (status == 200) {
-       document.getElementById('installments').options.length = 0;
-       response[0].payer_costs.forEach( payerCost => {
-           let opt = document.createElement('option');
-           opt.text = payerCost.recommended_message;
-           opt.value = payerCost.installments;
-           document.getElementById('installments').appendChild(opt);
-       });
-   } else {
-       alert(`installments method info error: ${response}`);
-   }
-}
 ```
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain issuer
@@ -241,6 +215,34 @@ function setIssuers(status, response) {
        );
    } else {
        alert(`issuers method info error: ${response}`);
+   }
+}
+```
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get number of installments
+
+The number of installments is also a mandatory field for credit card payments. You can use the function in the following example to fill out the _select_ type suggested field called `installments` and get the available installments.
+
+```javascript
+function getInstallments(paymentMethodId, transactionAmount, issuerId){
+   window.Mercadopago.getInstallments({
+       "payment_method_id": paymentMethodId,
+       "amount": parseFloat(transactionAmount),
+       "issuer_id": issuerId ? parseInt(issuerId) : undefined
+   }, setInstallments);
+}
+
+function setInstallments(status, response){
+   if (status == 200) {
+       document.getElementById('installments').options.length = 0;
+       response[0].payer_costs.forEach( payerCost => {
+           let opt = document.createElement('option');
+           opt.text = payerCost.recommended_message;
+           opt.value = payerCost.installments;
+           document.getElementById('installments').appendChild(opt);
+       });
+   } else {
+       alert(`installments method info error: ${response}`);
    }
 }
 ```
@@ -321,8 +323,8 @@ For this to work, you should configure your [private key]([FAKER][CREDENTIALS][U
 
     $payer = new MercadoPago\Payer();
     $payer->email = $_POST['email'];
-    $payer->identification = array( 
-        "type" => $_POST['docType'],
+    $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
+        "type" => $_POST['docType'],------------
         "number" => $_POST['docNumber']
     );
     $payment->payer = $payer;
@@ -354,8 +356,8 @@ var payment_data = {
   issuer_id: req.body.issuer,
   payer: {
     email: req.body.email,
-    identification: {
-      type: req.body.docType,
+    identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
+      type: req.body.docType,------------
       number: req.body.docNumber
     }
   }
@@ -387,9 +389,10 @@ payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmou
        .setInstallments(Integer.valueOf(request.getParameter("installments")))
        .setPaymentMethodId(request.getParameter("paymentMethodId"));
 
-Identification identification = new Identification();
+Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
 identification.setType(request.getParameter("docType"))
-              .setNumber(request.getParameter("docNumber"));
+              .setNumber(request.getParameter("docNumber"));------------ ----[mlm]----
+identification.setNumber(request.getParameter("docNumber"));------------
 
 Payer payer = new Payer();
 payer.setEmail(request.getParameter("email"))
@@ -417,8 +420,8 @@ payment_data = {
   "payment_method_id": request.body.paymentMethodId,
   "payer": {
     "email": request.body.email,
-    "identification": {
-      "type": request.body.docType,
+    "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
+      "type": request.body.docType,------------
       "number": request.body.docNumber
     }
   }
@@ -448,9 +451,9 @@ Payment payment = new Payment()
     PaymentMethodId = Request["paymentMethodId"],
     Payer = new Payer(){
         Email = Request["email"],
-        Identification = new Identification(){
-          Type = Request["docType"],
-          Number = Request["docNumber]
+        Identification = new Identification(){----[mla, mlb, mlu, mlc, mpe, mco]----
+          Type = Request["docType"],------------
+          Number = Request["docNumber"]
         }
     }
 };
