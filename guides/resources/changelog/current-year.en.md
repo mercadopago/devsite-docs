@@ -18,6 +18,12 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 We have released a new version of SDK PHP 2.2.1.
 
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/dx-php/releases/tag/2.2.1) for further details regarding this release.
+
 ### November 12th
 
 > CHANGELOG
