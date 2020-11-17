@@ -1,8 +1,14 @@
-# Manipulação de respostas
+# Mensagens de resposta
 
 Ofereça aos seus clientes informação clara e precisa sobre os possíveis erros na inserção de dados de cartão ou o estado dos pagamentos realizados. Isso permite notificá-los sobre que ação podem realizar para solucionar ou comunicar se há algum passo extra a ser realizado.
 
 Por exemplo, se o cartão não possui saldo suficiente para a compra, pode-se recomendar que se tente pagar novamente com outro meio de pagamento para completar a operação.
+
+> NOTE
+>
+> Nota
+>
+> Para saber mais sobre os possíveis erros, confira a [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
 
 ## Resultados da criação de uma cobrança
 

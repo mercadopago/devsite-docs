@@ -69,11 +69,11 @@ No seguinte exemplo se assume que os dados `transactionAmount` e `description` f
        <div>
          <label for="email">E-mail</label>
          <input id="email" name="email" type="text" value="test@test.com"/>
-       </div>
+       </div>----[mla, mlb, mlu, mlc, mpe, mco]----
        <div>
          <label for="docType">Tipo de documento</label>
          <select id="docType" name="docType" data-checkout="docType" type="text"></select>
-       </div>
+       </div>------------
        <div>
          <label for="docNumber">Número do documento</label>
          <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
@@ -133,6 +133,13 @@ No seguinte exemplo se assume que os dados `transactionAmount` e `description` f
  </form>
 ```
 
+> NOTE
+>
+> Nota
+>
+> Lembre-se que é necessário que o formulário seja encontrado antes de todos os passos seguintes para seu correto funcionamento.
+
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure sua chave pública
 
 
@@ -147,9 +154,11 @@ window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtenha os dados para seu formulário
 
+----[mla, mlb, mlu, mlc, mpe, mco]----
+
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os tipos de documento
 
-Caso seu país possua mais de um tipo de documento, este campo será obrigatório. Utilize a lista de documentos no momento de completar os dados.
+Um dos campos obrigatórios é o tipo de documento. Utilize a lista de documentos no momento de completar os dados.
 
 Incluindo o elemento de tipo select com `id = docType` que se encontra no formulário, MercadoPago.js completará automaticamente as opções disponíveis quando a seguinte função for chamada:
 
@@ -157,11 +166,13 @@ Incluindo o elemento de tipo select com `id = docType` que se encontra no formul
 window.Mercadopago.getIdentificationTypes();
 ```
 
-> Encontre mais detalhes na [seção de tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/identification-types/).
+> Encontre mais detalhes na [seção de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/identification-types/).
+
+------------
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha o método de pagamento do cartão
 
-Valide os dados dos seus clientes enquanto são preenchidos para evitar erros e oferecer corretamente as parcelas disponíveis. Use o seguinte código de exemplo para identificar o meio de pagamento com os primeiros 6 dígitos do cartão e verifique se é necessário identificar também o banco emissor.
+Valide os dados dos seus clientes enquanto são preenchidos para evitar erros e oferecer corretamente as parcelas disponíveis. Use o seguinte código de exemplo para identificar o meio de pagamento com os primeiros 6 dígitos do cartão.
 
 ```javascript
 document.getElementById('cardNumber').addEventListener('change', guessPaymentMethod);
@@ -181,14 +192,7 @@ function setPaymentMethod(status, response) {
        let paymentMethod = response[0];
        document.getElementById('paymentMethodId').value = paymentMethod.id;
 
-       if(paymentMethod.additional_info_needed.includes("issuer_id")){
-           getIssuers(paymentMethod.id);
-       } else {
-           getInstallments(
-               paymentMethod.id,
-               document.getElementById('transactionAmount').value
-           );
-       }
+       getIssuers(paymentMethod.id);
    } else {
        alert(`payment method info error: ${response}`);
    }
@@ -197,7 +201,7 @@ function setPaymentMethod(status, response) {
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha a banco emissor
 
-É importante identificar o banco emissor do cartão no momento do preenchimento o formulário para evitar conflitos entre os diferentes emissores e poder disponibilizar a informação para os meios de pagamento que o solicitem.
+No momento do preenchimento o formulário, é importante identificar o banco emissor do cartão para evitar conflitos entre os diferentes emissores e poder oferecer as opções corretas de parcelamento.
 
 Adicione o seguinte código para obter o `issuer_id`:
 
@@ -231,8 +235,6 @@ function setIssuers(status, response) {
 ```
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha a quantidade de parcelas
-
-> Se não deseja oferecer parcelamento, ignore esse passo.
 
 Outro campo obrigatório para pagamento com cartão é a quantidade de parcelas. Para obter as parcelas diponíveis, utilize a seguinte função de exemplo para completar o campo sugerido de tipo _select_ denominado `installments`.
 
@@ -337,8 +339,8 @@ Tenha em conta que para que esse passo funcione é necessário que configure sua
 
     $payer = new MercadoPago\Payer();
     $payer->email = $_POST['email'];
-    $payer->identification = array( 
-        "type" => $_POST['docType'],
+    $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
+        "type" => $_POST['docType'],------------
         "number" => $_POST['docNumber']
     );
     $payment->payer = $payer;
@@ -371,8 +373,8 @@ var payment_data = {
   issuer_id: req.body.issuer,
   payer: {
     email: req.body.email,
-    identification: {
-      type: req.body.docType,
+    identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
+      type: req.body.docType,------------
       number: req.body.docNumber
     }
   }
@@ -404,9 +406,10 @@ payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmou
        .setInstallments(Integer.valueOf(request.getParameter("installments")))
        .setPaymentMethodId(request.getParameter("paymentMethodId"));
 
-Identification identification = new Identification();
+Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
 identification.setType(request.getParameter("docType"))
-              .setNumber(request.getParameter("docNumber"));
+              .setNumber(request.getParameter("docNumber"));------------ ----[mlm]----
+identification.setNumber(request.getParameter("docNumber"));------------
 
 Payer payer = new Payer();
 payer.setEmail(request.getParameter("email"))
@@ -434,8 +437,8 @@ payment_data = {
   "payment_method_id": request.body.paymentMethodId,
   "payer": {
     "email": request.body.email,
-    "identification": {
-      "type": request.body.docType,
+    "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
+      "type": request.body.docType,------------
       "number": request.body.docNumber
     }
   }
@@ -466,9 +469,9 @@ Payment payment = new Payment()
     PaymentMethodId = Request["paymentMethodId"],
     Payer = new Payer(){
         Email = Request["email"],
-        Identification = new Identification(){
-          Type = Request["docType"],
-          Number = Request["docNumber]
+        Identification = new Identification(){----[mla, mlb, mlu, mlc, mpe, mco]----
+          Type = Request["docType"],------------
+          Number = Request["docNumber"]
         }
     }
 };
@@ -523,7 +526,7 @@ curl -X POST \
 
 > Conheça todos os campos disponíveis para realizar um pagamento completo nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments/post/).
 
-## Manipulação de respostas de erro
+## Mensagens de respostas
 
 Os possíveis estados de um pagamento são:
 
@@ -535,7 +538,7 @@ Para ajudar a melhorar a aprovação dos seus pagamentos, é fundamental que pos
 
 Isso ajudará a evitar casos de rejeição e estornos nos casos de transações inicialmente aprovadas. Por exemplo, permite que se possa corrigir os erros de carga de dados ou ajudar a alterar o meio de pagamento.
 
-Te recomendamos usar a [manipulação de respostas de erro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/handling-responses/) e utilizar a comunicação sugerida em cada um dos casos.
+Te recomendamos usar as [mensagens de respostas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/handling-responses/) e utilizar a comunicação sugerida em cada um dos casos.
 
 > NOTE
 >

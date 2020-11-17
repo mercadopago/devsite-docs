@@ -1,8 +1,14 @@
-# Manejo de respuesta de error
+# Mensajes de respuesta
 
-Ofrece a tus clientes información clara y precisa sobre los posibles errores en el ingreso de datos de la tarjeta o el estado del pago realizado. Esto permite notificarlos sobre qué acción pueden realizar para solucionarlo o comunicarles si tienen que realizar algún paso extra. 
+Ofrece a tus clientes información clara y precisa sobre los posibles errores en el ingreso de datos de la tarjeta o el estado del pago realizado. Esto permite notificarlos sobre qué acción pueden realizar para solucionarlo o comunicarles si tienen que realizar algún paso extra.
 
 Por ejemplo, si la tarjeta no tiene saldo suficiente para la compra, puedes recomendarles que vuelva a intentar con otro medio de pago para completar la operación.
+
+> NOTE
+>
+> Nota
+>
+> Para conocer información sobre los posibles errores, consulta la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/).
 
 ## Resultados de creación de un cobro
 
