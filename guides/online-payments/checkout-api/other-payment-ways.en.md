@@ -361,7 +361,7 @@ In the `external_resource_url` field you will find an address with payment instr
 
 ## Expiration date of cash payment
 
-By default, the due date of a cash payment can vary between 7 and 30 days depending on the payment method you are using. If you want, you can change this date by sending the `date_of_expiration` field in the payment creation request. The configured date must be between 1 and 30 days from the issue date.
+If you want, you can change the default due date of a cash payment by sending the `date_of_expiration` field in the payment creation request. The configured date must be between 1 and 30 days from the issue date.
 
 [[[
 ```php
@@ -1669,7 +1669,7 @@ In the `external_resource_url` field you will find an address with payment instr
 
 ## Expiration date of cash payment
 
-By default, the due date of a cash payment can vary between 7 and 30 days depending on the payment method you are using. If you want, you can change this date by sending the `date_of_expiration` field in the payment creation request. The configured date must be between 1 and 30 days from the issue date.
+If you want, you can change the default due date of a cash payment by sending the `date_of_expiration` field in the payment creation request. The configured date must be between 1 and 30 days from the issue date.
 
 [[[
 ```php
