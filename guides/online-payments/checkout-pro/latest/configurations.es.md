@@ -302,7 +302,7 @@ Usa el atributo taxes para definir el valor que corresponda
 
 ### Fecha de vencimiento para pagos en efectivo
 
-Por defecto, la fecha de vencimiento para los pagos en efectivo es de 30 días. Si quieres, puedes cambiarla enviando el campo `date_of_expiration` en la solicitud de creación de la preferencia. La fecha configurada debe ser entre 1 y 30 días a partir de la fecha de creación de la preferencia de pago.
+Si quieres, puedes cambiarla la fecha de vencimiento por defecto de un pago en efectivo enviando el campo `date_of_expiration` en la solicitud de creación de la preferencia. La fecha configurada debe ser entre 1 y 30 días a partir de la fecha de creación de la preferencia de pago.
 
 [[[
 ```json

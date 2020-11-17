@@ -281,7 +281,7 @@ _`value`_ | Valor do imposto. Permitido o máximo de duas casas decimais. Para i
 
 ## Data de expiração de meios de pagamento em dinheiro
 
-A data de expiração padrão para pagamentos em dinheiro é de 30 dias. Opcionalmente é possível alterar essa data enviando o campo `date_of_expiration` na requisição de criação da preferência. A data configurada deve estar entre 1 e 30 dias a partir da data de emissão.
+Opcionalmente é possível alterar a data de vencimento por padrão para pagamentos em dinheiro enviando o campo `date_of_expiration` na requisição de criação da preferência. A data configurada deve estar entre 1 e 30 dias a partir da data de emissão.
 
 [[[
 ```json
