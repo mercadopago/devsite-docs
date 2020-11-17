@@ -185,6 +185,34 @@ function setPaymentMethod(status, response) {
 
 ```
 
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get number of installments
+
+The number of installments is also a mandatory field for credit card payments. You can use the function in the following example to fill out the _select_ type suggested field called `installments` and get the available installments.
+
+```javascript
+function getInstallments(paymentMethodId, transactionAmount, issuerId){
+   window.Mercadopago.getInstallments({
+       "payment_method_id": paymentMethodId,
+       "amount": parseFloat(transactionAmount),
+       "issuer_id": issuerId ? parseInt(issuerId) : undefined
+   }, setInstallments);
+}
+
+function setInstallments(status, response){
+   if (status == 200) {
+       document.getElementById('installments').options.length = 0;
+       response[0].payer_costs.forEach( payerCost => {
+           let opt = document.createElement('option');
+           opt.text = payerCost.recommended_message;
+           opt.value = payerCost.installments;
+           document.getElementById('installments').appendChild(opt);
+       });
+   } else {
+       alert(`installments method info error: ${response}`);
+   }
+}
+```
+
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain issuer
 
 It is important to identify the card's issuing bank when completing the form to avoid conflicts between different issuers and to be able to provide the relevant information to the payment methods that require it.
@@ -216,36 +244,6 @@ function setIssuers(status, response) {
        );
    } else {
        alert(`issuers method info error: ${response}`);
-   }
-}
-```
-
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get number of installments
-
-> If you don't want to offer installments, skip this step.
-
-The number of installments is also a mandatory field for credit card payments. You can use the function in the following example to fill out the _select_ type suggested field called `installments` and get the available installments.
-
-```javascript
-function getInstallments(paymentMethodId, transactionAmount, issuerId){
-   window.Mercadopago.getInstallments({
-       "payment_method_id": paymentMethodId,
-       "amount": parseFloat(transactionAmount),
-       "issuer_id": issuerId ? parseInt(issuerId) : undefined
-   }, setInstallments);
-}
-
-function setInstallments(status, response){
-   if (status == 200) {
-       document.getElementById('installments').options.length = 0;
-       response[0].payer_costs.forEach( payerCost => {
-           let opt = document.createElement('option');
-           opt.text = payerCost.recommended_message;
-           opt.value = payerCost.installments;
-           document.getElementById('installments').appendChild(opt);
-       });
-   } else {
-       alert(`installments method info error: ${response}`);
    }
 }
 ```

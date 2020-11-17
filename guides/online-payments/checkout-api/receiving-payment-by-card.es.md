@@ -196,6 +196,34 @@ function setPaymentMethod(status, response) {
 }
 ```
 
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtener cantidad de cuotas
+
+Otro de los campos obligatorios para pagos con tarjetas es la cantidad de cuotas. Para obtener las cuotas disponibles, puedes utilizar la siguiente función de ejemplo para completar el campo sugerido de tipo _select_ denominado `installments`.
+
+```javascript
+function getInstallments(paymentMethodId, transactionAmount, issuerId){
+   window.Mercadopago.getInstallments({
+       "payment_method_id": paymentMethodId,
+       "amount": parseFloat(transactionAmount),
+       "issuer_id": issuerId ? parseInt(issuerId) : undefined
+   }, setInstallments);
+}
+
+function setInstallments(status, response){
+   if (status == 200) {
+       document.getElementById('installments').options.length = 0;
+       response[0].payer_costs.forEach( payerCost => {
+           let opt = document.createElement('option');
+           opt.text = payerCost.recommended_message;
+           opt.value = payerCost.installments;
+           document.getElementById('installments').appendChild(opt);
+       });
+   } else {
+       alert(`installments method info error: ${response}`);
+   }
+}
+```
+
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtener banco emisor
 
 Es importante identificar el banco emisor de la tarjeta al momento de completar el formulario para evitar conflictos entre los distintos emisores y poder disponibilizar la información a los medios de pago que lo requieran.
@@ -227,36 +255,6 @@ function setIssuers(status, response) {
        );
    } else {
        alert(`issuers method info error: ${response}`);
-   }
-}
-```
-
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtener cantidad de cuotas
-
-> En el caso de que no quieras ofrecer cuotas, omite este paso.
-
-Otro de los campos obligatorios para pagos con tarjetas es la cantidad de cuotas. Para obtener las cuotas disponibles, puedes utilizar la siguiente función de ejemplo para completar el campo sugerido de tipo _select_ denominado `installments`.
-
-```javascript
-function getInstallments(paymentMethodId, transactionAmount, issuerId){
-   window.Mercadopago.getInstallments({
-       "payment_method_id": paymentMethodId,
-       "amount": parseFloat(transactionAmount),
-       "issuer_id": issuerId ? parseInt(issuerId) : undefined
-   }, setInstallments);
-}
-
-function setInstallments(status, response){
-   if (status == 200) {
-       document.getElementById('installments').options.length = 0;
-       response[0].payer_costs.forEach( payerCost => {
-           let opt = document.createElement('option');
-           opt.text = payerCost.recommended_message;
-           opt.value = payerCost.installments;
-           document.getElementById('installments').appendChild(opt);
-       });
-   } else {
-       alert(`installments method info error: ${response}`);
    }
 }
 ```

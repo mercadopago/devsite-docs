@@ -199,6 +199,34 @@ function setPaymentMethod(status, response) {
 }
 ```
 
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha a quantidade de parcelas
+
+Outro campo obrigatório para pagamento com cartão é a quantidade de parcelas. Para obter as parcelas diponíveis, utilize a seguinte função de exemplo para completar o campo sugerido de tipo _select_ denominado `installments`.
+
+```javascript
+function getInstallments(paymentMethodId, transactionAmount, issuerId){
+   window.Mercadopago.getInstallments({
+       "payment_method_id": paymentMethodId,
+       "amount": parseFloat(transactionAmount),
+       "issuer_id": issuerId ? parseInt(issuerId) : undefined
+   }, setInstallments);
+}
+
+function setInstallments(status, response){
+   if (status == 200) {
+       document.getElementById('installments').options.length = 0;
+       response[0].payer_costs.forEach( payerCost => {
+           let opt = document.createElement('option');
+           opt.text = payerCost.recommended_message;
+           opt.value = payerCost.installments;
+           document.getElementById('installments').appendChild(opt);
+       });
+   } else {
+       alert(`installments method info error: ${response}`);
+   }
+}
+```
+
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha a banco emissor
 
 É importante identificar o banco emissor do cartão no momento do preenchimento o formulário para evitar conflitos entre os diferentes emissores e poder disponibilizar a informação para os meios de pagamento que o solicitem.
@@ -230,36 +258,6 @@ function setIssuers(status, response) {
        );
    } else {
        alert(`issuers method info error: ${response}`);
-   }
-}
-```
-
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha a quantidade de parcelas
-
-> Se não deseja oferecer parcelamento, ignore esse passo.
-
-Outro campo obrigatório para pagamento com cartão é a quantidade de parcelas. Para obter as parcelas diponíveis, utilize a seguinte função de exemplo para completar o campo sugerido de tipo _select_ denominado `installments`.
-
-```javascript
-function getInstallments(paymentMethodId, transactionAmount, issuerId){
-   window.Mercadopago.getInstallments({
-       "payment_method_id": paymentMethodId,
-       "amount": parseFloat(transactionAmount),
-       "issuer_id": issuerId ? parseInt(issuerId) : undefined
-   }, setInstallments);
-}
-
-function setInstallments(status, response){
-   if (status == 200) {
-       document.getElementById('installments').options.length = 0;
-       response[0].payer_costs.forEach( payerCost => {
-           let opt = document.createElement('option');
-           opt.text = payerCost.recommended_message;
-           opt.value = payerCost.installments;
-           document.getElementById('installments').appendChild(opt);
-       });
-   } else {
-       alert(`installments method info error: ${response}`);
    }
 }
 ```
