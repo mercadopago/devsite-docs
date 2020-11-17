@@ -9,7 +9,19 @@ Com o Checkout API do Mercado Pago você pode oferecer **outras alternativas de 
 
 ----[mla]----
 
-## Meios de pagamento
+## Como funciona?
+
+Para receber outros meios de pagamento, é importante ter em conta duas instâncias:
+
+1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+1. Segundo, um backend que tome os dados do pagamento e pode confirmar e fazer o pagamento.
+
+Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
+
+
+## Consulta os meios de pagamento disponíveis
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meios de pagamento
 
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
@@ -22,7 +34,7 @@ Além de cartões, também existem outras opções de pagamento que podem ser of
 | `ticket` | Cobro Express |
 | `atm` | Red Link |
 
-## Obtenha os meios de pagamento disponíveis
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os meios de pagamento disponíveis
 
 Consulte os meios de pagamento disponíveis sempre que necessite.
 
@@ -108,9 +120,113 @@ O resultado será uma lista com os meios de pagamento e suas propriedades. Por e
 
 > Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
 
-## Receba com meios de pagamento em dinheiro
+<br>
+<span></span>
+> CLIENT_SIDE
+>
+> h2
+>
+> Capture os dados para pagamento
 
-Para receber pagamentos em dinheiro envie o e-mail do seu cliente e o detalhe do valor e método de pagamento.
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa a biblioteca MercadoPago.js
+
+**Lembre-se usar nossa biblioteca oficial para acessar a API de Mercado Pago** no seu frontend e coletar os dados de forma segura.
+
+```html
+<script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o formulário de pagamento
+
+Para realizar a captura dos dados sensíveis dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação.
+
+Você pode adicionar tudo o que necessite e adicionar o estilo que queira sem problemas.
+
+Use a lista que você consultou em [Obtenha os meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtenha_os_meios_de_pagamento_disponíveis) para criar as opções de pagamento que deseja oferecer.
+
+```html
+<form action="/process_payment" method="post" id="paymentForm">
+             <h3>Forma de Pagamento</h3>
+             <div>
+               <select class="form-control" id="paymentMethod" name="paymentMethod">
+                 <option>Selecione uma forma de pagamento</option>
+
+                 <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
+                 <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+               </select>
+             </div>
+             <h3>Detalhe do comprador</h3>
+             <div>
+              <div>
+                 <label for="payerFirstName">Nome</label>
+                 <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+               </div>
+               <div>
+                 <label for="payerLastName">Sobrenome</label>
+                 <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+               </div>
+               <div>
+                 <label for="payerEmail">E-mail</label>
+                 <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+               </div>
+               <div>
+                 <label for="docType">Tipo de documento</label>
+                 <select id="docType" name="docType" data-checkout="docType" type="text"></select>
+               </div>
+               <div>
+                 <label for="docNumber">Número do documento</label>
+                 <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
+               </div>
+             </div>
+
+             <div>
+               <div>
+                 <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
+                 <input type="hidden" name="productDescription" id="productDescription" value="Nome do Produto" />
+                 <br>
+                 <button type="submit">Pagar</button>
+                 <br>
+               </div>
+           </div>
+         </form>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure sua chave pública
+Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
+
+```javascript
+window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
+```
+
+> Se ainda não possui conta para ver suas credenciais, [regístre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtenha os dados para seu formulário
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os tipos de documento
+
+Um dos campos obrigatórios é o tipo de documento. Utilize a lista de documentos no momento de completar os dados.
+
+Incluindo o elemento de tipo select com `id = docType` que se encontra no formulário, MercadoPago.js completará automaticamente as opções disponíveis quando a seguinte função for chamada:
+
+```javascript
+window.Mercadopago.getIdentificationTypes();
+```
+
+> Encontre mais detalhes na [seção de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/identification-types/).
+
+<br>
+<span></span>
+> SERVER_SIDE
+>
+> h2
+>
+> Envie o pagamento ao Mercado Pago
+
+Para receber pagamentos em dinheiro envie o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+
+Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs.
+
+Tenha em conta que para que esse passo funcione é necessário que configure sua [chave privada]([FAKER][CREDENTIALS][URL]).
 
 [[[
 ```php
@@ -248,7 +364,7 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 
 ## Data de expiração de meios de pagamento em dinheiro
 
-A data de expiração padrão para pagamentos em dinheiro é de 3 dias. Opcionalmente é possível alterar essa data enviando o campo `date_of_expiration` na requisição de criação do pagamento. A data configurada deve estar entre 1 e 30 dias a partir da data de emissão.
+Por padrão, a data de vencimento para pagamentos em dinheiro pode variar entre 5 e 30 dias, dependendo do meio de pagamento que você está usando. Opcionalmente é possível alterar essa data enviando o campo `date_of_expiration` na requisição de criação do pagamento. A data configurada deve estar entre 1 e 30 dias a partir da data de emissão.
 
 [[[
 ```php
@@ -323,7 +439,16 @@ Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago
 
 ----[mlm]----
 
-## Meios de pagamento
+## Como funciona?
+
+Para receber outros meios de pagamento, é importante ter em conta duas instâncias:
+
+1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+1. Segundo, um backend que tome os dados do pagamento e pode confirmar e fazer o pagamento.
+
+Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
+
+## Consulta os meios de pagamento disponíveis
 
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
@@ -505,9 +630,101 @@ O resultado será uma lista com os meios de pagamento e suas propriedades. Por e
 
 > Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
 
-## Receba com meios de pagamento em dinheiro
+<br>
+<span></span>
+> CLIENT_SIDE
+>
+> h2
+>
+> Capture os dados para pagamento
 
-Para receber pagamentos em dinheiro envie o e-mail do seu cliente e o detalhe do valor e método de pagamento.
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa a biblioteca MercadoPago.js
+
+**Lembre-se usar nossa biblioteca oficial para acessar a API de Mercado Pago** no seu frontend e coletar os dados de forma segura.
+
+```html
+<script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o formulário de pagamento
+
+Para realizar a captura dos dados sensíveis dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação.
+
+Você pode adicionar tudo o que necessite e adicionar o estilo que queira sem problemas.
+
+Use a lista que você consultou em [Obtenha os meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtenha_os_meios_de_pagamento_disponíveis) para criar as opções de pagamento que deseja oferecer.
+
+```html
+<form action="/process_payment" method="post" id="paymentForm">
+             <h3>Forma de Pagamento</h3>
+             <div>
+               <select class="form-control" id="paymentMethod" name="paymentMethod">
+                 <option>Selecione uma forma de pagamento</option>
+
+                 <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
+                 <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+               </select>
+             </div>
+             <h3>Detalhe do comprador</h3>
+             <div>
+              <div>
+                 <label for="payerFirstName">Nome</label>
+                 <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+               </div>
+               <div>
+                 <label for="payerLastName">Sobrenome</label>
+                 <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+               </div>
+               <div>
+                 <label for="payerEmail">E-mail</label>
+                 <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+               </div>
+               <div>
+                 <label for="docType">Tipo de documento</label>
+                 <select id="docType" name="docType" data-checkout="docType" type="text"></select>
+               </div>
+               <div>
+                 <label for="docNumber">Número do documento</label>
+                 <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
+               </div>
+             </div>
+
+             <div>
+               <div>
+                 <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
+                 <input type="hidden" name="productDescription" id="productDescription" value="Nome do Produto" />
+                 <br>
+                 <button type="submit">Pagar</button>
+                 <br>
+               </div>
+           </div>
+         </form>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure sua chave pública
+
+Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
+
+```javascript
+window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
+```
+
+> Se ainda não possui conta para ver suas credenciais, [regístre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+
+<br>
+<span></span>
+> SERVER_SIDE
+>
+> h2
+>
+> Envie o pagamento ao Mercado Pago
+
+Para receber pagamentos em dinheiro envie o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+
+Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs.
+
+Tenha em conta que para que esse passo funcione é necessário que configure sua [chave privada]([FAKER][CREDENTIALS][URL]).
+
 
 [[[
 ```php
@@ -679,7 +896,19 @@ Ao finalizar, é importante que compartilhe com seus clientes a informação dos
 
 ----[mlu]----
 
-## Meios de pagamento
+## Como funciona?
+
+Para receber outros meios de pagamento, é importante ter em conta duas instâncias:
+
+1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+1. Segundo, um backend que tome os dados do pagamento e pode confirmar e fazer o pagamento.
+
+Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
+
+
+## Consulta os meios de pagamento disponíveis
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meios de pagamento
 
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
@@ -688,7 +917,7 @@ Além de cartões, também existem outras opções de pagamento que podem ser of
 | `ticket` | Abitab |
 | `ticket` | Redpagos |
 
-## Obtenha os meios de pagamento disponíveis
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os meios de pagamento disponíveis
 
 Consulte os meios de pagamento disponíveis sempre que necessite.
 
@@ -790,9 +1019,112 @@ O resultado será uma lista com os meios de pagamento e suas propriedades. Por e
 
 > Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
 
-## Receba com meios de pagamento em dinheiro
+<br>
+<span></span>
+> CLIENT_SIDE
+>
+> h2
+>
+> Capture os dados para pagamento
 
-Para receber pagamentos em dinheiro envie o e-mail do seu cliente e o detalhe do valor e método de pagamento.
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa a biblioteca MercadoPago.js
+
+**Lembre-se usar nossa biblioteca oficial para acessar a API de Mercado Pago** no seu frontend e coletar os dados de forma segura.
+
+```html
+<script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o formulário de pagamento
+
+Para realizar a captura dos dados sensíveis dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação.
+
+Você pode adicionar tudo o que necessite e adicionar o estilo que queira sem problemas.
+
+Use a lista que você consultou em [Obtenha os meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtenha_os_meios_de_pagamento_disponíveis) para criar as opções de pagamento que deseja oferecer.
+
+```html
+<form action="/process_payment" method="post" id="paymentForm">
+             <h3>Forma de Pagamento</h3>
+             <div>
+               <select class="form-control" id="paymentMethod" name="paymentMethod">
+                 <option>Selecione uma forma de pagamento</option>
+
+                 <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
+                 <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+               </select>
+             </div>
+             <h3>Detalhe do comprador</h3>
+             <div>
+              <div>
+                 <label for="payerFirstName">Nome</label>
+                 <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+               </div>
+               <div>
+                 <label for="payerLastName">Sobrenome</label>
+                 <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+               </div>
+               <div>
+                 <label for="payerEmail">E-mail</label>
+                 <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+               </div>
+               <div>
+                 <label for="docType">Tipo de documento</label>
+                 <select id="docType" name="docType" data-checkout="docType" type="text"></select>
+               </div>
+               <div>
+                 <label for="docNumber">Número do documento</label>
+                 <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
+               </div>
+             </div>
+
+             <div>
+               <div>
+                 <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
+                 <input type="hidden" name="productDescription" id="productDescription" value="Nome do Produto" />
+                 <br>
+                 <button type="submit">Pagar</button>
+                 <br>
+               </div>
+           </div>
+         </form>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure sua chave pública
+Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
+
+```javascript
+window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
+```
+
+> Se ainda não possui conta para ver suas credenciais, [regístre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtenha os dados para seu formulário
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os tipos de documento
+
+Um dos campos obrigatórios é o tipo de documento. Utilize a lista de documentos no momento de completar os dados.
+Incluindo o elemento de tipo select com `id = docType` que se encontra no formulário, MercadoPago.js completará automaticamente as opções disponíveis quando a seguinte função for chamada:
+
+```javascript
+window.Mercadopago.getIdentificationTypes();
+```
+
+> Encontre mais detalhes na [seção de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/identification-types/).
+
+<br>
+<span></span>
+> SERVER_SIDE
+>
+> h2
+>
+> Envie o pagamento ao Mercado Pago
+
+Para receber pagamentos em dinheiro envie o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+
+Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs.
+
+Tenha em conta que para que esse passo funcione é necessário que configure sua [chave privada]([FAKER][CREDENTIALS][URL]).
 
 [[[
 ```php
@@ -947,7 +1279,18 @@ Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago
 
 ----[mco]----
 
-## Meios de pagamento
+## Como funciona?
+
+Para receber outros meios de pagamento, é importante ter em conta duas instâncias:
+
+1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+1. Segundo, um backend que tome os dados do pagamento e pode confirmar e fazer o pagamento.
+
+Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
+
+## Consulta os meios de pagamento disponíveis
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meios de pagamento
 
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
@@ -958,7 +1301,7 @@ Além de cartões, também existem outras opções de pagamento que podem ser of
 | `bank_transfer` | PSE |
 
 
-## Obtenha os meios de pagamento disponíveis
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os meios de pagamento disponíveis
 
 Consulte os meios de pagamento disponíveis sempre que necessite.
 
@@ -1077,9 +1420,113 @@ O resultado será uma lista com os meios de pagamento e suas propriedades. Por e
 
 > Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
 
-## Receba com meios de pagamento em dinheiro
+<br>
+<span></span>
+> CLIENT_SIDE
+>
+> h2
+>
+> Capture os dados para pagamento
 
-Para receber pagamentos em dinheiro envie o e-mail do seu cliente e o detalhe do valor e método de pagamento.
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa a biblioteca MercadoPago.js
+
+**Lembre-se usar nossa biblioteca oficial para acessar a API de Mercado Pago** no seu frontend e coletar os dados de forma segura.
+
+```html
+<script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o formulário de pagamento
+
+Para realizar a captura dos dados sensíveis dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação.
+
+Você pode adicionar tudo o que necessite e adicionar o estilo que queira sem problemas.
+
+Use a lista que você consultou em [Obtenha os meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtenha_os_meios_de_pagamento_disponíveis) para criar as opções de pagamento que deseja oferecer.
+
+```html
+<form action="/process_payment" method="post" id="paymentForm">
+             <h3>Forma de Pagamento</h3>
+             <div>
+               <select class="form-control" id="paymentMethod" name="paymentMethod">
+                 <option>Selecione uma forma de pagamento</option>
+
+                 <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
+                 <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+               </select>
+             </div>
+             <h3>Detalhe do comprador</h3>
+             <div>
+              <div>
+                 <label for="payerFirstName">Nome</label>
+                 <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+               </div>
+               <div>
+                 <label for="payerLastName">Sobrenome</label>
+                 <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+               </div>
+               <div>
+                 <label for="payerEmail">E-mail</label>
+                 <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+               </div>
+               <div>
+                 <label for="docType">Tipo de documento</label>
+                 <select id="docType" name="docType" data-checkout="docType" type="text"></select>
+               </div>
+               <div>
+                 <label for="docNumber">Número do documento</label>
+                 <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
+               </div>
+             </div>
+
+             <div>
+               <div>
+                 <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
+                 <input type="hidden" name="productDescription" id="productDescription" value="Nome do Produto" />
+                 <br>
+                 <button type="submit">Pagar</button>
+                 <br>
+               </div>
+           </div>
+         </form>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure sua chave pública
+Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
+
+```javascript
+window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
+```
+
+> Se ainda não possui conta para ver suas credenciais, [regístre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtenha os dados para seu formulário
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os tipos de documento
+
+Um dos campos obrigatórios é o tipo de documento. Utilize a lista de documentos no momento de completar os dados.
+
+Incluindo o elemento de tipo select com `id = docType` que se encontra no formulário, MercadoPago.js completará automaticamente as opções disponíveis quando a seguinte função for chamada:
+
+```javascript
+window.Mercadopago.getIdentificationTypes();
+```
+
+> Encontre mais detalhes na [seção de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/identification-types/).
+
+<br>
+<span></span>
+> SERVER_SIDE
+>
+> h2
+>
+> Envie o pagamento ao Mercado Pago
+
+Para receber pagamentos em dinheiro envie o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+
+Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs.
+
+Tenha em conta que para que esse passo funcione é necessário que configure sua [chave privada]([FAKER][CREDENTIALS][URL]).
 
 [[[
 ```php
@@ -1218,7 +1665,7 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 
 ## Data de expiração de meios de pagamento em dinheiro
 
-A data de expiração padrão para pagamentos em dinheiro é de 3 dias. Opcionalmente é possível alterar essa data enviando o campo `date_of_expiration` na requisição de criação do pagamento. A data configurada deve estar entre 1 e 30 dias a partir da data de emissão.
+Por padrão, a data de vencimento para pagamentos em dinheiro pode variar entre 5 e 30 dias, dependendo do meio de pagamento que você está usando. Opcionalmente é possível alterar essa data enviando o campo `date_of_expiration` na requisição de criação do pagamento. A data configurada deve estar entre 1 e 30 dias a partir da data de emissão.
 
 [[[
 ```php
@@ -1447,7 +1894,19 @@ Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago
 
 ----[mlc]----
 
-## Meios de pagamento
+## Como funciona?
+
+Para receber outros meios de pagamento, é importante ter em conta duas instâncias:
+
+1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+1. Segundo, um backend que tome os dados do pagamento e pode confirmar e fazer o pagamento.
+
+Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
+
+
+## Consulta os meios de pagamento disponíveis
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meios de pagamento
 
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
@@ -1457,7 +1916,7 @@ Além de cartões, também existem outras opções de pagamento que podem ser of
 | `bank_transfer` | Redcompra Webpay |
 
 
-## Obtenha os meios de pagamento disponíveis
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os meios de pagamento disponíveis
 
 Consulte os meios de pagamento disponíveis sempre que necessite.
 
@@ -1561,9 +2020,114 @@ O resultado será uma lista com os meios de pagamento e suas propriedades. Por e
 
 > Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
 
-## Receba com meios de pagamento em dinheiro
+<br>
+<span></span>
+> CLIENT_SIDE
+>
+> h2
+>
+> Capture os dados para pagamento
 
-Para receber pagamentos em dinheiro envie o e-mail do seu cliente e o detalhe do valor e método de pagamento.
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa a biblioteca MercadoPago.js
+
+**Lembre-se usar nossa biblioteca oficial para acessar a API de Mercado Pago** no seu frontend e coletar os dados de forma segura.
+
+```html
+<script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o formulário de pagamento
+
+Para realizar a captura dos dados sensíveis dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação.
+
+Você pode adicionar tudo o que necessite e adicionar o estilo que queira sem problemas.
+
+Use a lista que você consultou em [Obtenha os meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtenha_os_meios_de_pagamento_disponíveis) para criar as opções de pagamento que deseja oferecer.
+
+```html
+<form action="/process_payment" method="post" id="paymentForm">
+             <h3>Forma de Pagamento</h3>
+             <div>
+               <select class="form-control" id="paymentMethod" name="paymentMethod">
+                 <option>Selecione uma forma de pagamento</option>
+
+                 <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
+                 <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+               </select>
+             </div>
+             <h3>Detalhe do comprador</h3>
+             <div>
+              <div>
+                 <label for="payerFirstName">Nome</label>
+                 <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+               </div>
+               <div>
+                 <label for="payerLastName">Sobrenome</label>
+                 <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+               </div>
+               <div>
+                 <label for="payerEmail">E-mail</label>
+                 <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+               </div>
+               <div>
+                 <label for="docType">Tipo de documento</label>
+                 <select id="docType" name="docType" data-checkout="docType" type="text"></select>
+               </div>
+               <div>
+                 <label for="docNumber">Número do documento</label>
+                 <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
+               </div>
+             </div>
+
+             <div>
+               <div>
+                 <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
+                 <input type="hidden" name="productDescription" id="productDescription" value="Nome do Produto" />
+                 <br>
+                 <button type="submit">Pagar</button>
+                 <br>
+               </div>
+           </div>
+         </form>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure sua chave pública
+
+Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
+
+```javascript
+window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
+```
+
+> Se ainda não possui conta para ver suas credenciais, [regístre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtenha os dados para seu formulário
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os tipos de documento
+
+Um dos campos obrigatórios é o tipo de documento. Utilize a lista de documentos no momento de completar os dados.
+
+Incluindo o elemento de tipo select com `id = docType` que se encontra no formulário, MercadoPago.js completará automaticamente as opções disponíveis quando a seguinte função for chamada:
+
+```javascript
+window.Mercadopago.getIdentificationTypes();
+```
+
+> Encontre mais detalhes na [seção de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/identification-types/).
+
+<br>
+<span></span>
+> SERVER_SIDE
+>
+> h2
+>
+> Envie o pagamento ao Mercado Pago
+
+Para receber pagamentos em dinheiro envie o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+
+Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs.
+
+Tenha em conta que para que esse passo funcione é necessário que configure sua [chave privada]([FAKER][CREDENTIALS][URL]).
 
 [[[
 ```php
@@ -1884,7 +2448,18 @@ Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago
 
 ----[mpe]----
 
-## Meios de pagamento
+## Como funciona?
+
+Para receber outros meios de pagamento, é importante ter em conta duas instâncias:
+
+1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+1. Segundo, um backend que tome os dados do pagamento e pode confirmar e fazer o pagamento.
+
+Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
+
+## Consulta os meios de pagamento disponíveis
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meios de pagamento
 
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
@@ -1892,8 +2467,7 @@ Além de cartões, também existem outras opções de pagamento que podem ser of
 | --- | ---|
 | `atm` | PagoEfectivo |
 
-
-## Obtenha os meios de pagamento disponíveis
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os meios de pagamento disponíveis
 
 Consulte os meios de pagamento disponíveis sempre que necessite.
 
@@ -1972,9 +2546,113 @@ O resultado será uma lista com os meios de pagamento e suas propriedades. Por e
 
 > Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
 
-## Receba com meios de pagamento em dinheiro
+<br>
+<span></span>
+> CLIENT_SIDE
+>
+> h2
+>
+> Capture os dados para pagamento
 
-Para receber pagamentos em dinheiro envie o e-mail do seu cliente e o detalhe do valor e método de pagamento.
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa a biblioteca MercadoPago.js
+
+**Lembre-se usar nossa biblioteca oficial para acessar a API de Mercado Pago** no seu frontend e coletar os dados de forma segura.
+
+```html
+<script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o formulário de pagamento
+
+Para realizar a captura dos dados sensíveis dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação.
+
+Você pode adicionar tudo o que necessite e adicionar o estilo que queira sem problemas.
+
+Use a lista que você consultou em [Obtenha os meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtenha_os_meios_de_pagamento_disponíveis) para criar as opções de pagamento que deseja oferecer.
+
+```html
+<form action="/process_payment" method="post" id="paymentForm">
+             <h3>Forma de Pagamento</h3>
+             <div>
+               <select class="form-control" id="paymentMethod" name="paymentMethod">
+                 <option>Selecione uma forma de pagamento</option>
+
+                 <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
+                 <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+               </select>
+             </div>
+             <h3>Detalhe do comprador</h3>
+             <div>
+              <div>
+                 <label for="payerFirstName">Nome</label>
+                 <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+               </div>
+               <div>
+                 <label for="payerLastName">Sobrenome</label>
+                 <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+               </div>
+               <div>
+                 <label for="payerEmail">E-mail</label>
+                 <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+               </div>
+               <div>
+                 <label for="docType">Tipo de documento</label>
+                 <select id="docType" name="docType" data-checkout="docType" type="text"></select>
+               </div>
+               <div>
+                 <label for="docNumber">Número do documento</label>
+                 <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
+               </div>
+             </div>
+
+             <div>
+               <div>
+                 <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
+                 <input type="hidden" name="productDescription" id="productDescription" value="Nome do Produto" />
+                 <br>
+                 <button type="submit">Pagar</button>
+                 <br>
+               </div>
+           </div>
+         </form>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure sua chave pública
+Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
+
+```javascript
+window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
+```
+
+> Se ainda não possui conta para ver suas credenciais, [regístre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtenha os dados para seu formulário
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os tipos de documento
+
+Um dos campos obrigatórios é o tipo de documento. Utilize a lista de documentos no momento de completar os dados.
+
+Incluindo o elemento de tipo select com `id = docType` que se encontra no formulário, MercadoPago.js completará automaticamente as opções disponíveis quando a seguinte função for chamada:
+
+```javascript
+window.Mercadopago.getIdentificationTypes();
+```
+
+> Encontre mais detalhes na [seção de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/identification-types/).
+
+<br>
+<span></span>
+> SERVER_SIDE
+>
+> h2
+>
+> Envie o pagamento ao Mercado Pago
+
+Para receber pagamentos em dinheiro envie o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+
+Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs.
+
+Tenha em conta que para que esse passo funcione é necessário que configure sua [chave privada]([FAKER][CREDENTIALS][URL]).
 
 [[[
 ```php
@@ -2137,7 +2815,18 @@ Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago
 
 ----[mlb]----
 
-## Meios de pagamento
+## Como funciona?
+
+Para receber outros meios de pagamento, é importante ter em conta duas instâncias:
+
+1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+1. Segundo, um backend que tome os dados do pagamento e pode confirmar e fazer o pagamento.
+
+Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
+
+## Consulta os meios de pagamento disponíveis
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meios de pagamento
 
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
@@ -2146,7 +2835,7 @@ Além de cartões, também existem outras opções de pagamento que podem ser of
 | `ticket` | Boleto |
 | `ticket` | Pagamento em lotérica |
 
-## Obtenha os meios de pagamento disponíveis
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os meios de pagamento disponíveis
 
 Consulte os meios de pagamento disponíveis sempre que necessite.
 
@@ -2232,13 +2921,118 @@ O resultado será uma lista com os meios de pagamento e suas propriedades. Por e
 
 > Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
 
-## Receba com boleto ou pagamento em lotérica
+<br>
+<span></span>
+> CLIENT_SIDE
+>
+> h2
+>
+> Capture os dados para pagamento
 
-Para receber pagamentos em boleto ou pagamento em lotérica envie os detalhes de valor e meio de pagamento além dos dados de identificação e endereço do seu comprador.
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa a biblioteca MercadoPago.js
+
+**Lembre-se usar nossa biblioteca oficial para acessar a API de Mercado Pago** no seu frontend e coletar os dados de forma segura.
+
+```html
+<script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o formulário de pagamento
+
+Para realizar a captura dos dados sensíveis dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação.
+
+Você pode adicionar tudo o que necessite e adicionar o estilo que queira sem problemas.
+
+Use a lista que você consultou em [Obtenha os meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtenha_os_meios_de_pagamento_disponíveis) para criar as opções de pagamento que deseja oferecer.
+
+```html
+<form action="/process_payment" method="post" id="paymentForm">
+             <h3>Forma de Pagamento</h3>
+             <div>
+               <select class="form-control" id="paymentMethod" name="paymentMethod">
+                 <option>Selecione uma forma de pagamento</option>
+
+                 <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
+                 <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+               </select>
+             </div>
+             <h3>Detalhe do comprador</h3>
+             <div>
+              <div>
+                 <label for="payerFirstName">Nome</label>
+                 <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+               </div>
+               <div>
+                 <label for="payerLastName">Sobrenome</label>
+                 <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+               </div>
+               <div>
+                 <label for="payerEmail">E-mail</label>
+                 <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+               </div>
+               <div>
+                 <label for="docType">Tipo de documento</label>
+                 <select id="docType" name="docType" data-checkout="docType" type="text"></select>
+               </div>
+               <div>
+                 <label for="docNumber">Número do documento</label>
+                 <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
+               </div>
+             </div>
+
+             <div>
+               <div>
+                 <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
+                 <input type="hidden" name="productDescription" id="productDescription" value="Nome do Produto" />
+                 <br>
+                 <button type="submit">Pagar</button>
+                 <br>
+               </div>
+           </div>
+         </form>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure sua chave pública
+
+Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
+
+```javascript
+window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
+```
+
+> Se ainda não possui conta para ver suas credenciais, [regístre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtenha os dados para seu formulário
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os tipos de documento
+
+Um dos campos obrigatórios é o tipo de documento. Utilize a lista de documentos no momento de completar os dados.
+
+Incluindo o elemento de tipo select com `id = docType` que se encontra no formulário, MercadoPago.js completará automaticamente as opções disponíveis quando a seguinte função for chamada:
+
+```javascript
+window.Mercadopago.getIdentificationTypes();
+```
+
+> Encontre mais detalhes na [seção de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/identification-types/).
+
+<br>
+<span></span>
+> SERVER_SIDE
+>
+> h2
+>
+> Envie o pagamento ao Mercado Pago
+
+Para receber pagamentos em boleto ou pagamento em lotérica envie o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+
+Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs.
+
+Tenha em conta que para que esse passo funcione é necessário que configure sua [chave privada]([FAKER][CREDENTIALS][URL]).
 
 [[[
 ```php
-<?php  
+<?php
 
  require_once 'vendor/autoload.php';
 
