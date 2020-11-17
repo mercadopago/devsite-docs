@@ -154,7 +154,7 @@ window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtenha os dados para seu formulário
 
----[mla, mlb, mlu, mlc, mpe, mco]---
+----[mla, mlb, mlu, mlc, mpe, mco]----
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os tipos de documento
 
@@ -168,7 +168,7 @@ window.Mercadopago.getIdentificationTypes();
 
 > Encontre mais detalhes na [seção de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/identification-types/).
 
-------
+------------
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha o método de pagamento do cartão
 

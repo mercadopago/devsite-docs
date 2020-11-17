@@ -151,7 +151,7 @@ window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtén los datos para tu formulario
 
----[mla, mlb, mlu, mlc, mpe, mco]---
+----[mla, mlb, mlu, mlc, mpe, mco]----
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtener tipos de documentos
 
 Uno de los campos obligatorios es el tipo de número de documento. Utiliza la lista de documentos al momento de completar los datos.
@@ -164,7 +164,8 @@ window.Mercadopago.getIdentificationTypes();
 
 > Encuentra más detalle en la [sección de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/identification-types/).
 
-------
+------------
+
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtener método de pago de la tarjeta
 

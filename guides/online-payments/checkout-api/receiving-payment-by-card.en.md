@@ -152,7 +152,7 @@ window.Mercadopago.getIdentificationTypes();
 
 > Find more information in the [Document type section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/identification-types/).
 
-------
+------------
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get card payment method
 

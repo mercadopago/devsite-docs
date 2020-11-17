@@ -873,7 +873,7 @@ For more information, check the [Refunds and Cancellations section](https://www.
 
 Each payment method has its own credit times; it is immediate in some cases, while in others, it may take up to 3 business days.
 
-Check [credit times by payment method]https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) whenever you need to.
+Check [credit times by payment method](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) whenever you need to.
 
 ## Inform customer payment points
 
@@ -1268,7 +1268,7 @@ To avoid collection issues, you need to cancel expired payments. Cash payments s
 
 Take into account that **you can only cancel payments in process or pending status**. If a payment expires after 30 days, the cancellation is automatic and the final status will be cancelled or expired.
 
-For more information, check the [Refunds and Cancellations section]https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds/).
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds/).
 
 ## Payment credit times
 
