@@ -366,7 +366,7 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 
 ## Data de expiração de meios de pagamento em dinheiro
 
-Por padrão, a data de vencimento para pagamentos em dinheiro pode variar entre 5 e 30 dias, dependendo do meio de pagamento que você está usando. Opcionalmente é possível alterar essa data enviando o campo `date_of_expiration` na requisição de criação do pagamento. A data configurada deve estar entre 1 e 30 dias a partir da data de emissão.
+Opcionalmente é possível alterar a data de vencimento por padrão para pagamentos em dinheiro enviando o campo `date_of_expiration` na requisição de criação do pagamento. A data configurada deve estar entre 1 e 30 dias a partir da data de emissão.
 
 [[[
 ```php
@@ -1672,7 +1672,7 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 
 ## Data de expiração de meios de pagamento em dinheiro
 
-Por padrão, a data de vencimento para pagamentos em dinheiro pode variar entre 5 e 30 dias, dependendo do meio de pagamento que você está usando. Opcionalmente é possível alterar essa data enviando o campo `date_of_expiration` na requisição de criação do pagamento. A data configurada deve estar entre 1 e 30 dias a partir da data de emissão.
+Opcionalmente é possível alterar a data de vencimento por padrão para pagamentos em dinheiro enviando o campo `date_of_expiration` na requisição de criação do pagamento. A data configurada deve estar entre 1 e 30 dias a partir da data de emissão.
 
 [[[
 ```php
