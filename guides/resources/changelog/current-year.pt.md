@@ -18,6 +18,12 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 Lançamos uma nova versão do SDK PHP 2.2.1.
 
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-php/releases/tag/2.2.1).
+
 ### 12 de novembro
 
 > CHANGELOG
