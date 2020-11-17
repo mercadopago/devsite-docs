@@ -367,7 +367,7 @@ En el campo `external_resource_url` vas a encontrar una dirección que contiene 
 
 ## Fecha de vencimiento para pagos en efectivo
 
-Por defecto, la fecha de vencimiento de un pago en efectivo puede variar entre 5 y 30 días según el medio de pago estés utilizando. Si quieres, puedes cambiarla enviando el campo `date_of_expiration` en la solicitud de creación de pago. La fecha configurada debe ser entre 1 y 30 días a partir de la fecha de emisión.
+Por defecto, la fecha de vencimiento de un pago en efectivo puede variar entre 7 y 30 días según el medio de pago estés utilizando. Si quieres, puedes cambiarla enviando el campo `date_of_expiration` en la solicitud de creación de pago. La fecha configurada debe ser entre 1 y 30 días a partir de la fecha de emisión.
 
 [[[
 ```php
@@ -1679,7 +1679,7 @@ En el campo `external_resource_url` vas a encontrar una dirección que contiene 
 
 ## Fecha de vencimiento para pagos en efectivo
 
-Por defecto, la fecha de vencimiento de un pago en efectivo puede variar entre 5 y 30 días según el medio de pago estés utilizando. Si quieres, puedes cambiarla enviando el campo `date_of_expiration` en la solicitud de creación de pago. La fecha configurada debe ser entre 1 y 30 días a partir de la fecha de emisión.
+Por defecto, la fecha de vencimiento de un pago en efectivo puede variar entre 7 y 30 días según el medio de pago estés utilizando. Si quieres, puedes cambiarla enviando el campo `date_of_expiration` en la solicitud de creación de pago. La fecha configurada debe ser entre 1 y 30 días a partir de la fecha de emisión.
 
 [[[
 ```php
