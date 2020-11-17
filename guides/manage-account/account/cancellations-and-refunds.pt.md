@@ -26,9 +26,7 @@ Somente é possível cancelar pagamentos que se encontrem com status `pending` o
 
 Os cancelamentos são utilizados principalmente com **meios de pagamento em dinheiro**.
 
-Embora os `tickets` dos meios de pagamento offline expirem após 5 dias, o usuário pode gerá-los novamente inserindo a transação em sua conta do Mercado Pago.
-
-Para cancelá-los efetivamente e não gera-los novamente por mais 5 dias, evitando problemas de retenção de estoque por exemplo, é necessário que você execute o cancelamento.
+Embora os tickets fora de mídia expirem, o usuário pode gerá-los novamente inserindo a transação de sua conta no Mercado Pago. Para cancelá-los definitivamente, sem a possibilidade de gerá-los novamente, evitando problemas de retenção de estoque por exemplo, é necessário que você execute o cancelamento deles.
 
 Para realizar o cancelamento, faça a seguinte requisição enviando o `status` `cancelled`:
 
