@@ -162,7 +162,7 @@ window.Mercadopago.getIdentificationTypes();
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtener método de pago de la tarjeta
 
-Valida los datos de tus clientes mientras los completan para evitar errores y que puedas ofrecer correctamente las cuotas disponibles. Usa el siguiente código de ejemplo para identificar el medio de pago con los primeros 6 dígitos de la tarjeta y revisar si es necesario identificar también el banco emisor.
+Valida los datos de tus clientes mientras los completan para evitar errores y que puedas ofrecer correctamente las cuotas disponibles. Usa el siguiente código de ejemplo para identificar el medio de pago con los primeros 6 dígitos de la tarjeta.
 
 ```javascript
 document.getElementById('cardNumber').addEventListener('change', guessPaymentMethod);
@@ -181,15 +181,6 @@ function setPaymentMethod(status, response) {
    if (status == 200) {
        let paymentMethod = response[0];
        document.getElementById('paymentMethodId').value = paymentMethod.id;
-
-       if(paymentMethod.additional_info_needed.includes("issuer_id")){
-           getIssuers(paymentMethod.id);
-       } else {
-           getInstallments(
-               paymentMethod.id,
-               document.getElementById('transactionAmount').value
-           );
-       }
    } else {
        alert(`payment method info error: ${response}`);
    }
@@ -226,7 +217,7 @@ function setInstallments(status, response){
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtener banco emisor
 
-Es importante identificar el banco emisor de la tarjeta al momento de completar el formulario para evitar conflictos entre los distintos emisores y poder disponibilizar la información a los medios de pago que lo requieran.
+Al completar los datos, es importante identificar el banco emisor de la tarjeta para evitar conflictos entre los distintos emisores y poder ofrecer las opciones de pago en cuotas correctas.
 
 Agrega el siguiente código para obtener el `issuer_id`:
 

@@ -150,7 +150,7 @@ window.Mercadopago.getIdentificationTypes();
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get card payment method
 
-Avoid mistakes and offer the correct available installments by validating your customers' data as they fill it out. Use the code in the following example to identify payment method with the first 6 digits of the card and check if it is necessary to identify the issuing bank.
+Avoid mistakes and offer the correct available installments by validating your customers' data as they fill it out. Use the code in the following example to identify payment method with the first 6 digits of the card.
 
 ```javascript
 document.getElementById('cardNumber').addEventListener('change', guessPaymentMethod);
@@ -169,15 +169,6 @@ function setPaymentMethod(status, response) {
    if (status == 200) {
        let paymentMethod = response[0];
        document.getElementById('paymentMethodId').value = paymentMethod.id;
-
-       if(paymentMethod.additional_info_needed.includes("issuer_id")){
-           getIssuers(paymentMethod.id);
-       } else {
-           getInstallments(
-               paymentMethod.id,
-               document.getElementById('transactionAmount').value
-           );
-       }
    } else {
        alert(`payment method info error: ${response}`);
    }
@@ -215,7 +206,7 @@ function setInstallments(status, response){
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain issuer
 
-It is important to identify the card's issuing bank when completing the form to avoid conflicts between different issuers and to be able to provide the relevant information to the payment methods that require it.
+When completing the form, it is important to identify card's issuing bank to avoid conflicts between the different issuers and to be able to provide the correct payment options in installments.
 
 Add the following code to obtain the `issuer_id`:
 
