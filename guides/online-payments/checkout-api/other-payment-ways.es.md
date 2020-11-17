@@ -184,7 +184,7 @@ Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](http
              <div>
                <div>
                  <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
-                 <input type="hidden" name="productDescription" id="productDescription" value="Nome do Produto" />
+                 <input type="hidden" name="productDescription" id="productDescription" value="Nombre del Producto" />
                  <br>
                  <button type="submit">Pagar</button>
                  <br>
