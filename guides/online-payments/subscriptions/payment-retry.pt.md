@@ -54,7 +54,7 @@ Caso a parcela não possa ser cobrada na quarta tentativa, ela estará automatic
 >
 > Atualize, altere ou cancele suas assinaturas.
 >
-> [Integração avançada](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/advenced-integration/)
+> [Integração avançada](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/advanced-integration/)
 
 > RIGHT_BUTTON
 >
