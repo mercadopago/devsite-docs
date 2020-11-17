@@ -26,7 +26,7 @@ Sólo puedes cancelar pagos que estén en estado `pending` o `in_process`. Cuand
 
 Las cancelaciones se utilizan principalmente con **medios en efectivo**.
 
-Si bien los tickets de un medio de pago en efectivo tienen vencimiento, el usuario puede volver a generarlos ingresando a la transacción de su cuenta de Mercado Pago.. Para cancelarlos definitivamente, sin posibilidad de volver a generarlos, evitando problemas de retención de stock por ejemplo, es necesario que ejecutes su cancelación.
+Si bien los tickets de los medios de pago en efectivo tienen vencimiento, el usuario puede volver a generarlos ingresando a la transacción de su cuenta de Mercado Pago. Para cancelarlos definitivamente, sin posibilidad de volver a generarlos, evitando problemas de retención de stock por ejemplo, es necesario que ejecutes su cancelación.
 
 
 Para realizar la cancelación, realiza el siguiente request enviando el `status` en `cancelled`:
