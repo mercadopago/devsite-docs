@@ -498,7 +498,7 @@ curl -X POST \
 
 > Check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post/) to learn about all the available fields for full payments.
 
-## Error Response Handling
+## Response Handling
 
 Possible payment statuses are:
 
@@ -510,7 +510,7 @@ For improved payment approval, you need to correctly inform results to your cust
 
 This will prevent rejections and chargebacks in the case of already approved transactions.  For example, this allows you to correct data upload mistakes or change payment methods.
 
-We recommend using [error response handling](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses/) and the suggested communication in each case.
+We recommend using [response handling](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses/) and the suggested communication in each case.
 
 > NOTE
 >

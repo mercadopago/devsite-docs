@@ -516,7 +516,7 @@ curl -X POST \
 
 > Conheça todos os campos disponíveis para realizar um pagamento completo nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments/post/).
 
-## Manipulação de respostas de erro
+## Mensagens de respostas
 
 Os possíveis estados de um pagamento são:
 
@@ -528,7 +528,7 @@ Para ajudar a melhorar a aprovação dos seus pagamentos, é fundamental que pos
 
 Isso ajudará a evitar casos de rejeição e estornos nos casos de transações inicialmente aprovadas. Por exemplo, permite que se possa corrigir os erros de carga de dados ou ajudar a alterar o meio de pagamento.
 
-Te recomendamos usar a [manipulação de respostas de erro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/handling-responses/) e utilizar a comunicação sugerida em cada um dos casos.
+Te recomendamos usar as [mensagens de respostas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/handling-responses/) e utilizar a comunicação sugerida em cada um dos casos.
 
 > NOTE
 >
