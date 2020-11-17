@@ -16,7 +16,7 @@ Para receber outros meios de pagamento, é importante ter em conta duas instânc
 1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
 1. Segundo, um backend que tome os dados do pagamento e pode confirmar e fazer o pagamento.
 
-Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
+Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
 
 
 ## Consulta os meios de pagamento disponíveis
@@ -87,6 +87,8 @@ curl -X GET \
 <br>
 
 O resultado será uma lista com os meios de pagamento e suas propriedades. Por exemplo, os meios de pagamento do `payment_type_id` que tenham como valor `ticket` se referem aos meios de pagamento em dinheiro.
+
+Lembre-se de que a resposta retornará todos os meios de pagamento. Portanto, você deve filtrar os meios que deseja oferecer de acordo com a [lista de métodos de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_meios_de_pagamento).
 
 ```json
 [
@@ -446,7 +448,7 @@ Para receber outros meios de pagamento, é importante ter em conta duas instânc
 1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
 1. Segundo, um backend que tome os dados do pagamento e pode confirmar e fazer o pagamento.
 
-Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
+Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
 
 ## Consulta os meios de pagamento disponíveis
 
@@ -513,6 +515,8 @@ curl -X GET \
 <br>
 
 O resultado será uma lista com os meios de pagamento e suas propriedades. Por exemplo, os meios de pagamento do `payment_type_id` que tenham como valor `ticket` se referem aos meios de pagamento em dinheiro.
+
+Lembre-se de que a resposta retornará todos os meios de pagamento. Portanto, você deve filtrar os meios que deseja oferecer de acordo com a [lista de métodos de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_meios_de_pagamento).
 
 ```json
 [
@@ -903,7 +907,7 @@ Para receber outros meios de pagamento, é importante ter em conta duas instânc
 1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
 1. Segundo, um backend que tome os dados do pagamento e pode confirmar e fazer o pagamento.
 
-Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
+Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
 
 
 ## Consulta os meios de pagamento disponíveis
@@ -971,8 +975,9 @@ curl -X GET \
 
 O resultado será uma lista com os meios de pagamento e suas propriedades. Por exemplo, os meios de pagamento do `payment_type_id` que tenham como valor `ticket` se referem aos meios de pagamento em dinheiro.
 
-```json
+Lembre-se de que a resposta retornará todos os meios de pagamento. Portanto, você deve filtrar os meios que deseja oferecer de acordo com a [lista de métodos de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_meios_de_pagamento).
 
+```json
 [
  {
         "id": "abitab",
@@ -1267,7 +1272,7 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 
 Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
 
-Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds/).
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds/).
 
 ## Tempos de creditação do pagamento
 
@@ -1286,7 +1291,7 @@ Para receber outros meios de pagamento, é importante ter em conta duas instânc
 1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
 1. Segundo, um backend que tome os dados do pagamento e pode confirmar e fazer o pagamento.
 
-Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
+Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
 
 ## Consulta os meios de pagamento disponíveis
 
@@ -1354,6 +1359,8 @@ curl -X GET \
 <br>
 
 O resultado será uma lista com os meios de pagamento e suas propriedades. Por exemplo, os meios de pagamento do `payment_type_id` que tenham como valor `ticket` se referem aos meios de pagamento em dinheiro.
+
+Lembre-se de que a resposta retornará todos os meios de pagamento. Portanto, você deve filtrar os meios que deseja oferecer de acordo com a [lista de métodos de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_meios_de_pagamento).
 
 ```json
 [
@@ -1882,7 +1889,7 @@ Ao concluir o pagamento, o cliente será redirecionado para o `callback_url` que
 
 Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
 
-Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds/).
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds/).
 
 ## Tempos de creditação do pagamento
 
@@ -1901,7 +1908,7 @@ Para receber outros meios de pagamento, é importante ter em conta duas instânc
 1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
 1. Segundo, um backend que tome os dados do pagamento e pode confirmar e fazer o pagamento.
 
-Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
+Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
 
 
 ## Consulta os meios de pagamento disponíveis
@@ -1969,6 +1976,8 @@ curl -X GET \
 <br>
 
 O resultado será uma lista com os meios de pagamento e suas propriedades. Por exemplo, os meios de pagamento do `payment_type_id` que tenham como valor `ticket` se referem aos meios de pagamento em dinheiro.
+
+Lembre-se de que a resposta retornará todos os meios de pagamento. Portanto, você deve filtrar os meios que deseja oferecer de acordo com a [lista de métodos de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_meios_de_pagamento).
 
 ```json
 [
@@ -2435,7 +2444,7 @@ Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com 
 >
 > Tenha em conta que Webpay cancelará automaticamente o pagamento caso não se realize em 30 minutos.
 
-Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago.cl/developers/es/guides/manage-account/account/cancellations-and-refunds/).
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago.cl/developers/pt/guides/manage-account/account/cancellations-and-refunds/).
 
 ## Tempos de creditação do pagamento
 
@@ -2455,7 +2464,7 @@ Para receber outros meios de pagamento, é importante ter em conta duas instânc
 1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
 1. Segundo, um backend que tome os dados do pagamento e pode confirmar e fazer o pagamento.
 
-Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
+Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
 
 ## Consulta os meios de pagamento disponíveis
 
@@ -2520,6 +2529,8 @@ curl -X GET \
 <br>
 
 O resultado será uma lista com os meios de pagamento e suas propriedades. Por exemplo, os meios de pagamento do `payment_type_id` que tenham como valor `ticket` se referem aos meios de pagamento em dinheiro.
+
+Lembre-se de que a resposta retornará todos os meios de pagamento. Portanto, você deve filtrar os meios que deseja oferecer de acordo com a [lista de métodos de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_meios_de_pagamento).
 
 ```json
 [
@@ -2803,7 +2814,7 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 
 Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
 
-Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds/).
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds/).
 
 ## Tempos de creditação do pagamento
 
@@ -2822,7 +2833,7 @@ Para receber outros meios de pagamento, é importante ter em conta duas instânc
 1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
 1. Segundo, um backend que tome os dados do pagamento e pode confirmar e fazer o pagamento.
 
-Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
+Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
 
 ## Consulta os meios de pagamento disponíveis
 
@@ -2888,6 +2899,8 @@ curl -X GET \
 <br>
 
 O resultado será uma lista com os meios de pagamento e suas propriedades. Por exemplo, os meios de pagamento do `payment_type_id` que tenham como valor `ticket` se referem aos meios de pagamento em dinheiro.
+
+Lembre-se de que a resposta retornará todos os meios de pagamento. Portanto, você deve filtrar os meios que deseja oferecer de acordo com a [lista de métodos de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_meios_de_pagamento).
 
 ```json
 [

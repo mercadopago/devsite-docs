@@ -87,6 +87,8 @@ curl -X GET \
 
 El resultado será un listado con los medios de pago y sus propiedades. Por ejemplo, los medios de pago del `payment_type_id` que tienen como valor `ticket` refieren a medio de pago en efectivo.
 
+Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tienes que filtrar los medios que quieras ofrecer según la [lista de medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_medios_de_pago).
+
 ```json
 [
     {
@@ -141,7 +143,7 @@ Para realizar la captura de datos sensibles de tus clientes, es muy importante q
 
 Puedes agregar todo lo que necesites y sumarle el estilo que quieras sin problemas.
 
-Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
+Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
 
 
 ```html
@@ -516,6 +518,8 @@ curl -X GET \
 
 El resultado será un listado con los medios de pago y sus propiedades. Por ejemplo, los medios de pago del `payment_type_id` que tienen como valor `ticket` refieren a medio de pago en efectivo.
 
+Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tienes que filtrar los medios que quieras ofrecer según la [lista de medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_medios_de_pago).
+
 ```json
 [
   {
@@ -654,7 +658,7 @@ Para realizar la captura de datos sensibles de tus clientes, es muy importante q
 
 Puedes agregar todo lo que necesites y sumarle el estilo que quieras sin problemas.
 
-Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
+Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
@@ -971,6 +975,8 @@ curl -X GET \
 
 El resultado será un listado con los medios de pago y sus propiedades. Por ejemplo, los medios de pago del `payment_type_id` que tienen como valor `ticket` refieren a medio de pago en efectivo.
 
+Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tienes que filtrar los medios que quieras ofrecer según la [lista de medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_medios_de_pago).
+
 ```json
 
 [
@@ -1041,7 +1047,7 @@ Para realizar la captura de datos sensibles de tus clientes, es muy importante q
 
 Puedes agregar todo lo que necesites y sumarle el estilo que quieras sin problemas.
 
-Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
+Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
 
 
 ```html
@@ -1358,6 +1364,8 @@ curl -X GET \
 
 El resultado será un listado con los medios de pago y sus propiedades. Por ejemplo, los medios de pago del `payment_type_id` que tienen como valor `ticket` refieren a medio de pago en efectivo.
 
+Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tienes que filtrar los medios que quieras ofrecer según la [lista de medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_medios_de_pago).
+
 ```json
 [
   {
@@ -1445,7 +1453,7 @@ Para realizar la captura de datos sensibles de tus clientes, es muy importante q
 
 Puedes agregar todo lo que necesites y sumarle el estilo que quieras sin problemas.
 
-Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
+Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
 
 
 ```html
@@ -1974,6 +1982,8 @@ curl -X GET \
 
 El resultado será un listado con los medios de pago y sus propiedades. Por ejemplo, los medios de pago del `payment_type_id` que tienen como valor `ticket` refieren a medio de pago en efectivo.
 
+Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tienes que filtrar los medios que quieras ofrecer según la [lista de medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_medios_de_pago).
+
 ```json
 [
  {
@@ -2046,7 +2056,7 @@ Para realizar la captura de datos sensibles de tus clientes, es muy importante q
 
 Puedes agregar todo lo que necesites y sumarle el estilo que quieras sin problemas.
 
-Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
+Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
 
 
 ```html
@@ -2525,6 +2535,8 @@ curl -X GET \
 
 El resultado será un listado con los medios de pago y sus propiedades. Por ejemplo, los medios de pago del `payment_type_id` que tienen como valor `ticket` refieren a medio de pago en efectivo.
 
+Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tienes que filtrar los medios que quieras ofrecer según la [lista de medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_medios_de_pago).
+
 ```json
 [
   {
@@ -2572,7 +2584,7 @@ Para realizar la captura de datos sensibles de tus clientes, es muy importante q
 
 Puedes agregar todo lo que necesites y sumarle el estilo que quieras sin problemas.
 
-Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
+Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
 
 
 ```html
@@ -2895,6 +2907,8 @@ curl -X GET \
 
 El resultado será un listado con los medios de pago y sus propiedades. Por ejemplo, los medios de pago del `payment_type_id` que tienen como valor `ticket` refieren a medio de pago en efectivo.
 
+Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tienes que filtrar los medios que quieras ofrecer según la [lista de medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_medios_de_pago).
+
 ```json
 [
     {
@@ -2949,7 +2963,7 @@ Para realizar la captura de datos sensibles de tus clientes, es muy importante q
 
 Puedes agregar todo lo que necesites y sumarle el estilo que quieras sin problemas.
 
-Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
+Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
 
 
 ```html
