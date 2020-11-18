@@ -240,7 +240,7 @@ function getInstallments(paymentMethodId, transactionAmount, issuerId){
    window.Mercadopago.getInstallments({
        "payment_method_id": paymentMethodId,
        "amount": parseFloat(transactionAmount),
-       "issuer_id": issuerId ? parseInt(issuerId) : undefined
+       "issuer_id": parseInt(issuerId)
    }, setInstallments);
 }
 
