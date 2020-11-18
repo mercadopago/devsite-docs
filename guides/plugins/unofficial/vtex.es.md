@@ -636,6 +636,7 @@ Para poder utilizar este tipo de checkout se tienen que configurar los medios de
 2. [Tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito)
 3. [Transferencia bancaria (PSE)](#bookmark_condición_de_pagos_para_medios_de_pago_por_transferencia_bancaria)
 4. [Efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo)
+5. [Tarjetas de crédito locales](#bookmark_condición_de_pagos_con_medios_de_pagos_personalizados)
 
 
 <br>
@@ -717,6 +718,41 @@ En VTEX, al seleccionar Boleto Bancario se incluyen todos los medios de pagos di
 
 
 ![Imagen efectivo](/images/vtex/vtex-hispanos-efectivo.gif)
+
+<br>
+
+#### Condición de pagos con medios de pagos personalizados
+
+Los medios de pago personalizado permite sumar a VTEX tarjetas de crédito locales que VTEX no integra como una opción nativo y se pueden utilizar con Mercado Pago.
+
+Para crear esta condición de pago, sigue estos pasos: 
+
+1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
+2. En la pestaña Pagos personalizados, busca la sección Cobrands y haz clic en Configurar.
+3. Se desplegará un formulario donde deberás ingresar Nombre, Descripción, Medio de pago (la marca bandera), Bines (validar en Mercado Pago los mismos) y el Código de Medio de Pago (es el nombre del medio de pago en Mercado Pago). 
+4. Haz clic en Guardar. 
+5. En la pestaña Planes de Pago, haz clic en +. 
+6. En la sección Pago personalizado, elige el medio de pago que habías creado para agregar el medio de pago.
+7. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status. 
+8. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
+9. Haz clic en Guardar. 
+
+
+> WARNING
+>
+> Importante
+>
+> Las cuotas deben quedar configuradas como automáticas para evitar problemas al procesar los pagos. Vamos a tomar las cuotas habilitadas en tu cuenta de Mercado Pago según corresponda. <br>
+
+<br>
+En VTEX, los medios de pago personalizados que se pueden agregar son:
+
+| Tipo | Medio de pago | Bandera de la tarjeta | Bines | Código de pago del adquirente |
+| --- | --- | --- | --- | --- |
+| `credit_card` | Crédito Fácil Codensa | Mastercard | 590712, 529448 | codensa |
+
+
+![Imagen personalizado](/images/vtex/vtex-hisp-personalizado.gif)
 
 
 ------------
