@@ -257,7 +257,7 @@ paymentmethods.Installments = 12;
 
 ----[mla, mlb, mco]----
 
-## Expiration date of cash payment
+### Expiration date of cash payment
 
 If you want, you can change the default due date of a cash payment by sending the `date_of_expiration` field in the preference creation request. The configured date must be between 1 and 30 days from the preference creation date.
 
