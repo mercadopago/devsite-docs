@@ -148,49 +148,49 @@ Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](http
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
-             <h3>Medio de pago</h3>
-             <div>
-               <select class="form-control" id="paymentMethod" name="paymentMethod">
-                 <option>Selecione un medio de pago</option>
+    <h3>Medio de pago</h3>
+    <div>
+      <select class="form-control" id="paymentMethod" name="paymentMethod">
+        <option>Selecione un medio de pago</option>
 
-                 <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-                 <option value="--PaymentTypeId--">--PaymentTypeName--</option>
-               </select>
-             </div>
-             <h3>Detalles del comprador</h3>
-             <div>
-              <div>
-                 <label for="payerFirstName">Nombre</label>
-                 <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
-               </div>
-               <div>
-                 <label for="payerLastName">Apellido</label>
-                 <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
-               </div>
-               <div>
-                 <label for="payerEmail">E-mail</label>
-                 <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
-               </div>
-               <div>
-                 <label for="docType">Tipo de documento</label>
-                 <select id="docType" name="docType" data-checkout="docType" type="text"></select>
-               </div>
-               <div>
-                 <label for="docNumber">Número de documento</label>
-                 <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
-               </div>
-             </div>
+        <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
+        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+      </select>
+    </div>
+    <h3>Detalles del comprador</h3>
+    <div>
+    <div>
+        <label for="payerFirstName">Nombre</label>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+      </div>
+      <div>
+        <label for="payerLastName">Apellido</label>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+      </div>
+      <div>
+        <label for="payerEmail">E-mail</label>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+      </div>
+      <div>
+        <label for="docType">Tipo de documento</label>
+        <select id="docType" name="docType" data-checkout="docType" type="text"></select>
+      </div>
+      <div>
+        <label for="docNumber">Número de documento</label>
+        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
+      </div>
+    </div>
 
-             <div>
-               <div>
-                 <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
-                 <input type="hidden" name="productDescription" id="productDescription" value="Nombre del Producto" />
-                 <br>
-                 <button type="submit">Pagar</button>
-                 <br>
-               </div>
-           </div>
-         </form>
+    <div>
+      <div>
+        <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
+        <input type="hidden" name="productDescription" id="productDescription" value="Nombre del Producto" />
+        <br>
+        <button type="submit">Pagar</button>
+        <br>
+      </div>
+  </div>
+</form>
 ```
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configura tu clave pública
@@ -662,49 +662,49 @@ Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](http
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
-             <h3>Medio de pago</h3>
-             <div>
-               <select class="form-control" id="paymentMethod" name="paymentMethod">
-                 <option>Selecione un medio de pago</option>
+    <h3>Medio de pago</h3>
+    <div>
+      <select class="form-control" id="paymentMethod" name="paymentMethod">
+        <option>Selecione un medio de pago</option>
 
-                 <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-                 <option value="--PaymentTypeId--">--PaymentTypeName--</option>
-               </select>
-             </div>
-             <h3>Detalles del comprador</h3>
-             <div>
-              <div>
-                 <label for="payerFirstName">Nombre</label>
-                 <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
-               </div>
-               <div>
-                 <label for="payerLastName">Apellido</label>
-                 <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
-               </div>
-               <div>
-                 <label for="payerEmail">E-mail</label>
-                 <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
-               </div>
-               <div>
-                 <label for="docType">Tipo de documento</label>
-                 <select id="docType" name="docType" data-checkout="docType" type="text"></select>
-               </div>
-               <div>
-                 <label for="docNumber">Número de documento</label>
-                 <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
-               </div>
-             </div>
+        <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
+        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+      </select>
+    </div>
+    <h3>Detalles del comprador</h3>
+    <div>
+    <div>
+        <label for="payerFirstName">Nombre</label>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+      </div>
+      <div>
+        <label for="payerLastName">Apellido</label>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+      </div>
+      <div>
+        <label for="payerEmail">E-mail</label>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+      </div>
+      <div>
+        <label for="docType">Tipo de documento</label>
+        <select id="docType" name="docType" data-checkout="docType" type="text"></select>
+      </div>
+      <div>
+        <label for="docNumber">Número de documento</label>
+        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
+      </div>
+    </div>
 
-             <div>
-               <div>
-                 <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
-                 <input type="hidden" name="productDescription" id="productDescription" value="Nombre del Producto" />
-                 <br>
-                 <button type="submit">Pagar</button>
-                 <br>
-               </div>
-           </div>
-         </form>
+    <div>
+      <div>
+        <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
+        <input type="hidden" name="productDescription" id="productDescription" value="Nombre del Producto" />
+        <br>
+        <button type="submit">Pagar</button>
+        <br>
+      </div>
+  </div>
+</form>
 ```
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configura tu clave pública
@@ -1052,49 +1052,49 @@ Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](http
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
-             <h3>Medio de pago</h3>
-             <div>
-               <select class="form-control" id="paymentMethod" name="paymentMethod">
-                 <option>Selecione un medio de pago</option>
+    <h3>Medio de pago</h3>
+    <div>
+      <select class="form-control" id="paymentMethod" name="paymentMethod">
+        <option>Selecione un medio de pago</option>
 
-                 <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-                 <option value="--PaymentTypeId--">--PaymentTypeName--</option>
-               </select>
-             </div>
-             <h3>Detalles del comprador</h3>
-             <div>
-              <div>
-                 <label for="payerFirstName">Nombre</label>
-                 <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
-               </div>
-               <div>
-                 <label for="payerLastName">Apellido</label>
-                 <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
-               </div>
-               <div>
-                 <label for="payerEmail">E-mail</label>
-                 <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
-               </div>
-               <div>
-                 <label for="docType">Tipo de documento</label>
-                 <select id="docType" name="docType" data-checkout="docType" type="text"></select>
-               </div>
-               <div>
-                 <label for="docNumber">Número de documento</label>
-                 <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
-               </div>
-             </div>
+        <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
+        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+      </select>
+    </div>
+    <h3>Detalles del comprador</h3>
+    <div>
+    <div>
+        <label for="payerFirstName">Nombre</label>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+      </div>
+      <div>
+        <label for="payerLastName">Apellido</label>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+      </div>
+      <div>
+        <label for="payerEmail">E-mail</label>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+      </div>
+      <div>
+        <label for="docType">Tipo de documento</label>
+        <select id="docType" name="docType" data-checkout="docType" type="text"></select>
+      </div>
+      <div>
+        <label for="docNumber">Número de documento</label>
+        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
+      </div>
+    </div>
 
-             <div>
-               <div>
-                 <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
-                 <input type="hidden" name="productDescription" id="productDescription" value="Nombre del Producto" />
-                 <br>
-                 <button type="submit">Pagar</button>
-                 <br>
-               </div>
-           </div>
-         </form>
+    <div>
+      <div>
+        <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
+        <input type="hidden" name="productDescription" id="productDescription" value="Nombre del Producto" />
+        <br>
+        <button type="submit">Pagar</button>
+        <br>
+      </div>
+  </div>
+</form>
 ```
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configura tu clave pública
@@ -1458,49 +1458,49 @@ Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](http
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
-             <h3>Medio de pago</h3>
-             <div>
-               <select class="form-control" id="paymentMethod" name="paymentMethod">
-                 <option>Selecione un medio de pago</option>
+    <h3>Medio de pago</h3>
+    <div>
+      <select class="form-control" id="paymentMethod" name="paymentMethod">
+        <option>Selecione un medio de pago</option>
 
-                 <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-                 <option value="--PaymentTypeId--">--PaymentTypeName--</option>
-               </select>
-             </div>
-             <h3>Detalles del comprador</h3>
-             <div>
-              <div>
-                 <label for="payerFirstName">Nombre</label>
-                 <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
-               </div>
-               <div>
-                 <label for="payerLastName">Apellido</label>
-                 <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
-               </div>
-               <div>
-                 <label for="payerEmail">E-mail</label>
-                 <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
-               </div>
-               <div>
-                 <label for="docType">Tipo de documento</label>
-                 <select id="docType" name="docType" data-checkout="docType" type="text"></select>
-               </div>
-               <div>
-                 <label for="docNumber">Número de documento</label>
-                 <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
-               </div>
-             </div>
+        <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
+        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+      </select>
+    </div>
+    <h3>Detalles del comprador</h3>
+    <div>
+    <div>
+        <label for="payerFirstName">Nombre</label>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+      </div>
+      <div>
+        <label for="payerLastName">Apellido</label>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+      </div>
+      <div>
+        <label for="payerEmail">E-mail</label>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+      </div>
+      <div>
+        <label for="docType">Tipo de documento</label>
+        <select id="docType" name="docType" data-checkout="docType" type="text"></select>
+      </div>
+      <div>
+        <label for="docNumber">Número de documento</label>
+        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
+      </div>
+    </div>
 
-             <div>
-               <div>
-                 <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
-                 <input type="hidden" name="productDescription" id="productDescription" value="Nombre del Producto" />
-                 <br>
-                 <button type="submit">Pagar</button>
-                 <br>
-               </div>
-           </div>
-         </form>
+    <div>
+      <div>
+        <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
+        <input type="hidden" name="productDescription" id="productDescription" value="Nombre del Producto" />
+        <br>
+        <button type="submit">Pagar</button>
+        <br>
+      </div>
+  </div>
+</form>
 ```
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configura tu clave pública
@@ -2061,49 +2061,49 @@ Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](http
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
-             <h3>Medio de pago</h3>
-             <div>
-               <select class="form-control" id="paymentMethod" name="paymentMethod">
-                 <option>Selecione un medio de pago</option>
+    <h3>Medio de pago</h3>
+    <div>
+      <select class="form-control" id="paymentMethod" name="paymentMethod">
+        <option>Selecione un medio de pago</option>
 
-                 <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-                 <option value="--PaymentTypeId--">--PaymentTypeName--</option>
-               </select>
-             </div>
-             <h3>Detalles del comprador</h3>
-             <div>
-              <div>
-                 <label for="payerFirstName">Nombre</label>
-                 <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
-               </div>
-               <div>
-                 <label for="payerLastName">Apellido</label>
-                 <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
-               </div>
-               <div>
-                 <label for="payerEmail">E-mail</label>
-                 <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
-               </div>
-               <div>
-                 <label for="docType">Tipo de documento</label>
-                 <select id="docType" name="docType" data-checkout="docType" type="text"></select>
-               </div>
-               <div>
-                 <label for="docNumber">Número de documento</label>
-                 <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
-               </div>
-             </div>
+        <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
+        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+      </select>
+    </div>
+    <h3>Detalles del comprador</h3>
+    <div>
+    <div>
+        <label for="payerFirstName">Nombre</label>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+      </div>
+      <div>
+        <label for="payerLastName">Apellido</label>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+      </div>
+      <div>
+        <label for="payerEmail">E-mail</label>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+      </div>
+      <div>
+        <label for="docType">Tipo de documento</label>
+        <select id="docType" name="docType" data-checkout="docType" type="text"></select>
+      </div>
+      <div>
+        <label for="docNumber">Número de documento</label>
+        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
+      </div>
+    </div>
 
-             <div>
-               <div>
-                 <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
-                 <input type="hidden" name="productDescription" id="productDescription" value="Nombre del Producto" />
-                 <br>
-                 <button type="submit">Pagar</button>
-                 <br>
-               </div>
-           </div>
-         </form>
+    <div>
+      <div>
+        <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
+        <input type="hidden" name="productDescription" id="productDescription" value="Nombre del Producto" />
+        <br>
+        <button type="submit">Pagar</button>
+        <br>
+      </div>
+  </div>
+</form>
 ```
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configura tu clave pública
@@ -2589,49 +2589,49 @@ Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](http
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
-             <h3>Medio de pago</h3>
-             <div>
-               <select class="form-control" id="paymentMethod" name="paymentMethod">
-                 <option>Selecione un medio de pago</option>
+    <h3>Medio de pago</h3>
+    <div>
+      <select class="form-control" id="paymentMethod" name="paymentMethod">
+        <option>Selecione un medio de pago</option>
 
-                 <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-                 <option value="--PaymentTypeId--">--PaymentTypeName--</option>
-               </select>
-             </div>
-             <h3>Detalles del comprador</h3>
-             <div>
-              <div>
-                 <label for="payerFirstName">Nombre</label>
-                 <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
-               </div>
-               <div>
-                 <label for="payerLastName">Apellido</label>
-                 <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
-               </div>
-               <div>
-                 <label for="payerEmail">E-mail</label>
-                 <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
-               </div>
-               <div>
-                 <label for="docType">Tipo de documento</label>
-                 <select id="docType" name="docType" data-checkout="docType" type="text"></select>
-               </div>
-               <div>
-                 <label for="docNumber">Número de documento</label>
-                 <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
-               </div>
-             </div>
+        <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
+        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+      </select>
+    </div>
+    <h3>Detalles del comprador</h3>
+    <div>
+    <div>
+        <label for="payerFirstName">Nombre</label>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+      </div>
+      <div>
+        <label for="payerLastName">Apellido</label>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+      </div>
+      <div>
+        <label for="payerEmail">E-mail</label>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+      </div>
+      <div>
+        <label for="docType">Tipo de documento</label>
+        <select id="docType" name="docType" data-checkout="docType" type="text"></select>
+      </div>
+      <div>
+        <label for="docNumber">Número de documento</label>
+        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
+      </div>
+    </div>
 
-             <div>
-               <div>
-                 <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
-                 <input type="hidden" name="productDescription" id="productDescription" value="Nombre del Producto" />
-                 <br>
-                 <button type="submit">Pagar</button>
-                 <br>
-               </div>
-           </div>
-         </form>
+    <div>
+      <div>
+        <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
+        <input type="hidden" name="productDescription" id="productDescription" value="Nombre del Producto" />
+        <br>
+        <button type="submit">Pagar</button>
+        <br>
+      </div>
+  </div>
+</form>
 ```
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configura tu clave pública
@@ -2968,49 +2968,49 @@ Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](http
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
-             <h3>Medio de pago</h3>
-             <div>
-               <select class="form-control" id="paymentMethod" name="paymentMethod">
-                 <option>Selecione un medio de pago</option>
+    <h3>Medio de pago</h3>
+    <div>
+      <select class="form-control" id="paymentMethod" name="paymentMethod">
+        <option>Selecione un medio de pago</option>
 
-                 <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-                 <option value="--PaymentTypeId--">--PaymentTypeName--</option>
-               </select>
-             </div>
-             <h3>Detalles del comprador</h3>
-             <div>
-              <div>
-                 <label for="payerFirstName">Nombre</label>
-                 <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
-               </div>
-               <div>
-                 <label for="payerLastName">Apellido</label>
-                 <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
-               </div>
-               <div>
-                 <label for="payerEmail">E-mail</label>
-                 <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
-               </div>
-               <div>
-                 <label for="docType">Tipo de documento</label>
-                 <select id="docType" name="docType" data-checkout="docType" type="text"></select>
-               </div>
-               <div>
-                 <label for="docNumber">Número de documento</label>
-                 <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
-               </div>
-             </div>
+        <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
+        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+      </select>
+    </div>
+    <h3>Detalles del comprador</h3>
+    <div>
+    <div>
+        <label for="payerFirstName">Nombre</label>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+      </div>
+      <div>
+        <label for="payerLastName">Apellido</label>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+      </div>
+      <div>
+        <label for="payerEmail">E-mail</label>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+      </div>
+      <div>
+        <label for="docType">Tipo de documento</label>
+        <select id="docType" name="docType" data-checkout="docType" type="text"></select>
+      </div>
+      <div>
+        <label for="docNumber">Número de documento</label>
+        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
+      </div>
+    </div>
 
-             <div>
-               <div>
-                 <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
-                 <input type="hidden" name="productDescription" id="productDescription" value="Nombre del Producto" />
-                 <br>
-                 <button type="submit">Pagar</button>
-                 <br>
-               </div>
-           </div>
-         </form>
+    <div>
+      <div>
+        <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
+        <input type="hidden" name="productDescription" id="productDescription" value="Nombre del Producto" />
+        <br>
+        <button type="submit">Pagar</button>
+        <br>
+      </div>
+  </div>
+</form>
 ```
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configura tu clave pública
