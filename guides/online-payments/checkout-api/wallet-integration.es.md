@@ -38,7 +38,7 @@ Para integrarlo, tienes que [generar la preferencia de pago](https://www.mercado
 Para comenzar, tienes que generar tu preferencia de pago desde tu backend con la [SDK de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements#bookmark_utiliza_nuestras_librer%C3%ADas_siempre) que utilizaste en tu Checkout API. 
 
 [[[
- ```php
+```php
 ===
 El modo billetera funciona agregando el atributo `purpose` en la preferencia.
 ===
