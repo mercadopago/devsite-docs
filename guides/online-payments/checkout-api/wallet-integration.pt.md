@@ -250,4 +250,4 @@ Pronto! você já tem a carteira do Mercado Pago integrada no seu site.
 >
 > Confira se está tudo correto na sua integração com os usuários de teste.
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration/
+> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration/)
