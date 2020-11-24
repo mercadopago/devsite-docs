@@ -82,7 +82,7 @@ mercadopago.preferences.create(preference)
 ```
 ```java
 ===
-El modo billetera funciona agregando el atributo `purpose` en la preferencia.
+El modo billetera funciona agregando el atributo _purpose_ en la preferencia.
 ===
 // Crea un objeto de preferencia
 Preference preference = new Preference();
