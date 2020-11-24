@@ -31,7 +31,7 @@ Para integrá-lo, você deve [gerar a preferência de pagamento](https://www.mer
 
 > SERVER_SIDE
 >
-> h3
+> h4
 >
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Gere sua preferência
 
