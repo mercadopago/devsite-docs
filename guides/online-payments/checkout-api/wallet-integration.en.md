@@ -123,7 +123,7 @@ preference = $mp.create_preference(preference_data)
 ```
 ```csharp
 ===
-The wallet mode works by adding the `purpose` attribute to the preference.
+The wallet mode works by adding the _purpose_ attribute to the preference.
 ===
 // Create a preference object
 Preference preference = new Preference();
