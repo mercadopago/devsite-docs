@@ -4,7 +4,44 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
+## Dezembro
+
+### 1 de dezembro
+
+> CHANGELOG
+>
+> Nova versão WooCommerce
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: WOOCOMMERCE
+
+Lançamos a nova versão 4.6.0 para WooCommerce.
+
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction/)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.6.0).
+
+
 ## Novembro 2020
+
+### 16 de novembro
+
+> CHANGELOG
+>
+> Fim do suporte para Magento 1
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: MAGENTO 1
+
+O módulo do Mercado Pago para Magento 1 deixou de processar pagamentos.
+
+[Ir para o anúncio](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento)
 
 ### 10 de novembro
 
