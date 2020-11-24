@@ -143,7 +143,7 @@ preference.Save();
 ```
 ```curl
 ===
-The wallet mode works by adding the `purpose` attribute to the preference.
+The wallet mode works by adding the _purpose_ attribute to the preference.
 ===
 curl -X POST \
   'https://api.mercadopago.com/checkout/preferences' \
