@@ -1071,6 +1071,10 @@ En VTEX, los medios de pago personalizados que se pueden agregar son:
 
 ## Condición de pagos con Checkout Pro
 
+Checkout Pro es la integración que te permite cobrar a través de nuestro formulario web de manera simple, rápida y segura.
+
+### Configuración del método de pago de Mercado Pago
+
 **El comprador será redireccionado a Mercado Pago** para realizar el pago y terminar la compra. Incorpora todo los medios de pagos disponibles en el país e incluye la posibilidad de pagar con el dinero en la cuenta de Mercado Pago. 
 
 Para crear esta condición de pago, sigue estos pasos: 
@@ -1086,7 +1090,48 @@ Para crear esta condición de pago, sigue estos pasos:
 ![Imagen cow](images/vtex/vtex-hispanos-cow.gif)
 
 
+### Configuración del método de pago de Mercado Pago Pro
+
+
+**El comprador finalizará el pago en el ambiente de Mercado Pago** mediante formulario web modal directamente en su tienda.
+
+Para crear esta condición de pago, sigue estos pasos: 
+
+1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
+2. En la pestaña Condiciones de pago, haz clic en +. 
+3. En la sección Otro, elige como condición de pago MercadoPagoPro.
+4. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status. 
+5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
+6. Haz clic en Guardar. 
+
+
+![Imagen cow](images/vtex/vtex-hispanos-cow-pro.gif)
+
+### Configuración del método de pago de Mercado Pago Wallet
+
+
+**El comprador finaliza el pago con el wallet de Mercado Pago** exclusivamente para usuarios registrados y una vez finalizado el proceso volverá a su tienda.
+
+Para crear esta condición de pago, sigue estos pasos: 
+
+1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
+2. En la pestaña Condiciones de pago, haz clic en +. 
+3. En la sección Otro, elige como condición de pago MercadoPagoWallet.
+4. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status. 
+5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
+6. Haz clic en Guardar. 
+
+
+![Imagen cow](images/vtex/vtex-hispanos-cow-wallet.gif)
+
 > Los cambios en las Condiciones de pago pueden demorar hasta 10 minutos en aplicarse.
+<!-- --> <br>
+
+> WARNING
+>
+> Importante
+>
+Si las condiciones de pago de MercadoPagoPro y MercadoPagoWallet no están disponibles para agregarlas, asegúrate en tu tienda de aplicaciones en VTEX que el App de Mercado Pago Payments APP está instalada o solicita la instalación por parte del equipo de VTEX bajo demanda a través de un ticket en [Soporte VTEX.](https://support.vtex.com/) <br>
 ------------
 
 ----[mla, mlm, mlc, mco, mlu]----
