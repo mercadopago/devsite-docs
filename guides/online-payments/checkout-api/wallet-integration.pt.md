@@ -23,7 +23,7 @@ Isto significa que seus clientes têm mais formas de te pagar e podem ter acesso
 
 ## Como adicionar a carteira no seu site
 
-Você deve integrar o [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction) configurado como [modo carteira](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados) para adicionar a carteira do Mercado Pago no seu site.
+Você deve integrar o [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction) configurado como [modo carteira](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados) para adicionar a carteira do Mercado Pago no seu site.
 
 Para integrá-lo, você deve [gerar a preferência de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/integration#bookmark_etapas_para_se_integrar) com as informações do produto ou serviço que quer oferecer e adicionar a opção de pagamento no seu site. 
 
