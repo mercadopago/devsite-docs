@@ -1131,7 +1131,7 @@ Para crear esta condición de pago, sigue estos pasos:
 >
 > Importante
 >
-Si las condiciones de pago de MercadoPagoPro y MercadoPagoWallet no están disponibles para agregarlas, asegúrate en tu tienda de aplicaciones en VTEX que el App de Mercado Pago Payments APP está instalada o solicita la instalación por parte del equipo de VTEX bajo demanda a través de un ticket en [Soporte VTEX.](https://support.vtex.com/) <br>
+> Si las condiciones de pago de MercadoPagoPro y MercadoPagoWallet no están disponibles para agregarlas, asegúrate en tu tienda de aplicaciones en VTEX que el App de Mercado Pago Payments APP está instalada o solicita la instalación por parte del equipo de VTEX bajo demanda a través de un ticket en [Soporte VTEX.](https://support.vtex.com/) <br>
 ------------
 
 ----[mla, mlm, mlc, mco, mlu]----
