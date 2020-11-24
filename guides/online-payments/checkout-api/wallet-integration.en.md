@@ -43,7 +43,7 @@ To integrate it, you need to [generate the payment preference](https://www.merca
 To start, you need to generate your payment preference from your backend with the [Mercado Pago SDK](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements#bookmark_always_use_our_libraries) you used in your Checkout API. 
 
 [[[
- ```php
+```php
 ===
 The wallet mode works by adding the `purpose` attribute to the preference.
 ===
