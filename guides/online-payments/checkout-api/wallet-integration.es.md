@@ -40,7 +40,7 @@ Para comenzar, tienes que generar tu preferencia de pago desde tu backend con la
 [[[
 ```php
 ===
-El modo billetera funciona agregando el atributo `purpose` en la preferencia.
+El modo billetera funciona agregando el atributo _purpose_ en la preferencia.
 ===
 <?php
 // Crea un objeto de preferencia
