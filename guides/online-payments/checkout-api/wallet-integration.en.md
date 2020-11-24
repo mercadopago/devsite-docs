@@ -45,7 +45,7 @@ To start, you need to generate your payment preference from your backend with th
 [[[
 ```php
 ===
-The wallet mode works by adding the `purpose` attribute to the preference.
+The wallet mode works by adding the _purpose_ attribute to the preference.
 ===
 <?php
 // Create a preference object
