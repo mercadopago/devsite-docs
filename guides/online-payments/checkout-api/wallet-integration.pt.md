@@ -38,7 +38,7 @@ Para integrá-lo, você deve [gerar a preferência de pagamento](https://www.mer
 Para começar, você precisa gerar sua preferência de pagamento pelo seu backend com a [SDK do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/previous-requirements#bookmark_sempre_utilize_nossas_bibliotecas) que você usou na sua API de Checkout. 
 
 [[[
- ```php
+```php
 ===
 O modo carteira funciona adicionando o atributo `purpose` na preferência.
 ===
@@ -251,4 +251,3 @@ Pronto! você já tem a carteira do Mercado Pago integrada no seu site.
 > Confira se está tudo correto na sua integração com os usuários de teste.
 >
 > [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration/
-
