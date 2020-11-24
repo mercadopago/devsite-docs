@@ -36,7 +36,7 @@ To integrate it, you need to [generate the payment preference](https://www.merca
 
 > SERVER_SIDE
 >
-> h3
+> h4
 >
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Generate your preference
 
