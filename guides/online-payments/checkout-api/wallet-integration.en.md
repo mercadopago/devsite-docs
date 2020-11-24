@@ -63,7 +63,7 @@ $preference->save();
 ```
 ```node
 ===
-The wallet mode works by adding the `purpose` attribute to the preference.
+The wallet mode works by adding the _purpose_ attribute to the preference.
 ===
 // Create a preference object
 let preference = {
