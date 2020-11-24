@@ -171,7 +171,7 @@ curl -X POST \
 
 > CLIENT_SIDE
 >
-> h3
+> h4
 >
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o checkout ao seu site
 
