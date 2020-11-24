@@ -31,7 +31,7 @@ Para integrarlo, tienes que [generar la preferencia de pago](https://www.mercado
 
 > SERVER_SIDE
 >
-> h3
+> h4
 >
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Genera tu preferencia
 
