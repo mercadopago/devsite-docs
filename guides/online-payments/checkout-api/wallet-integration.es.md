@@ -138,7 +138,7 @@ preference.Save();
 ```
 ```curl
 ===
-El modo billetera funciona agregando el atributo `purpose` en la preferencia.
+El modo billetera funciona agregando el atributo _purpose_ en la preferencia.
 ===
 curl -X POST \
   'https://api.mercadopago.com/checkout/preferences' \
