@@ -1,10 +1,5 @@
 ---
-sites_supported:
-  - mla
-  - mlb
-  - mlm
-  - mlc
-  - mpe
+  indexable: false
 ---
 
 # Capturar um Advanced Payment

@@ -1,10 +1,5 @@
 ---
-sites_supported:
-  - mla
-  - mlb
-  - mlm
-  - mlc
-  - mpe
+  indexable: false
 ---
 
 # Obtenção de permissões e dados de vendedores
