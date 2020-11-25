@@ -28,6 +28,24 @@ Lanzamos la nueva versión 4.6.0 para WooCommerce.
 
 ## Noviembre 2020
 
+### 19 de noviembre
+
+> CHANGELOG
+>
+> Nueva versión SDK NODEJS
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK NODEJS
+
+Lanzamos una nueva versión del SDK NODEJS 1.5.1.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-nodejs/releases/tag/1.5.1).
+
 ### 16 de noviembre
 
 > CHANGELOG
@@ -41,6 +59,7 @@ Lanzamos la nueva versión 4.6.0 para WooCommerce.
 El módulo de Mercado Pago para Magento 1 dejó de procesar pagos.
 
 [Ir al anuncio](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/official/magento/)
+
 
 ### 13 de noviembre
 
