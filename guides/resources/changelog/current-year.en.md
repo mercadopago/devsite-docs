@@ -4,7 +4,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ---
 
-## December
+## December 2020
 
 ### December 1st
 
@@ -42,7 +42,25 @@ Mercado Pago’s module for Magento 1 is no longer processing payments.
 
 [Go to announcement](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/official/magento/)
 
-### November 10th
+### November 13th
+
+> CHANGELOG
+>
+> New version of SDK PHP
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK PHP
+
+We have released a new version of SDK PHP 2.2.1.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/dx-php/releases/tag/2.2.1) for further details regarding this release.
+
+### November 12th
 
 > CHANGELOG
 >
