@@ -144,7 +144,7 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 >
 > Importante
 >
-> Caso as condições de pagamento MercadoPagoPro e MercadoPagoWallet não estiverem disponíveis para adicioná las, certifique em sua loja de aplicativos da VTEX que o App Mercado Pago Payment APP esteja instalado ou solicite a instalação pela equipe VTEX sob demanda através de ticket no [Support VTEX](https://support.vtex.com/).
+> Caso as condições de pagamento MercadoPagoPro e MercadoPagoWallet não estiverem disponíveis para adicioná-las, certifique em sua loja de aplicativos da VTEX que o App Mercado Pago Payment APP esteja instalado ou solicite a instalação pela equipe VTEX sob demanda através de ticket no [Support VTEX](https://support.vtex.com/).
 
 
 ## Configurando o parcelamento em sua conta Mercado Pago
