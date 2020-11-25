@@ -4,6 +4,28 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ---
 
+## December 2020
+
+### December 1st
+
+> CHANGELOG
+>
+> New WooCommerce plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+
+We have released the new version 4.6.0 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction/)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.6.0) for further details regarding this release.
+
 ## November 2020
 
 ### November 19th
@@ -24,6 +46,19 @@ We have released a new version of SDK NodeJS 1.5.1.
 >
 > [Check GitHub](https://github.com/mercadopago/dx-nodejs/releases/tag/1.5.1) for further details regarding this release.
 
+### November 16th
+
+> CHANGELOG
+>
+> End of support for Magento 1
+>
+> NEWS: NEWS
+>
+> PRODUCT: MAGENTO 1
+
+Mercado Pago’s module for Magento 1 is no longer processing payments.
+
+[Go to announcement](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/official/magento/)
 
 ### November 13th
 
@@ -99,7 +134,7 @@ Now, you can add the option to receive payments only from registered users with 
 
 > CHANGELOG
 >
-> New version WooCommerce
+> New WooCommerce plugin version
 >
 > NEW_VERSION: NEW VERSION
 >
@@ -218,7 +253,7 @@ You can see all the information in the [API Reference](https://www.mercadopago[F
 
 > CHANGELOG
 >
-> New version WooCommerce
+> New WooCommerce plugin version
 >
 > NEW_VERSION: NEW VERSION
 >
@@ -253,7 +288,7 @@ You can see all the information in the [API Reference](https://www.mercadopago[F
 
 > CHANGELOG
 >
-> New version WooCommerce
+> New WooCommerce plugin version
 >
 > NEW_VERSION: NEW VERSION
 >
@@ -291,7 +326,7 @@ In order to optimize your sales, we have added a new attribute that will allow y
 
 > CHANGELOG
 >
-> New version WooCommerce
+> New WooCommerce plugin version
 >
 > NEW_VERSION: NEW VERSION
 >
@@ -380,7 +415,7 @@ Are you going to integrate Mercado Pago for another account? Now you can request
 
 > CHANGELOG
 >
-> New version WooCommerce
+> New WooCommerce plugin version
 >
 > NEW_VERSION: NEW VERSION
 >
@@ -521,7 +556,7 @@ We have released the new version of Javascript SDK 1.3.0. From now on, it is com
 
 > CHANGELOG
 >
-> New version WooCommerce
+> New WooCommerce plugin version
 >
 > NEW_VERSION: NEW VERSION
 >
@@ -541,7 +576,7 @@ We have released the new version 4.2.1 for WooCommerce.
 
 > CHANGELOG
 >
-> New version WooCommerce
+> New WooCommerce plugin version
 >
 > NEW_VERSION: NEW VERSION
 >
@@ -677,7 +712,7 @@ We have released a new version of Prestashop 1.6 & 1.7. Our Checkout Pro now wor
 
 > CHANGELOG
 >
-> New version WooCommerce
+> New WooCommerce plugin version
 >
 > NEW_VERSION: NEW VERSION
 >
@@ -711,7 +746,7 @@ If you have advertising campaigns for your business, it is important that you ca
 
 > CHANGELOG
 >
-> New version WooCommerce
+> New WooCommerce plugin version
 >
 > NEW_VERSION: NEW VERSION
 >
