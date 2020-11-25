@@ -277,6 +277,32 @@ _`value`_ | Valor do imposto. Permitido o máximo de duas casas decimais. Para i
 
 ------------
 
+----[mla, mlb, mco]----
+
+### Data de expiração de meios de pagamento em dinheiro
+
+Opcionalmente é possível alterar a data de vencimento por padrão para pagamentos em dinheiro enviando o campo `date_of_expiration` na requisição de criação da preferência. A data configurada deve estar entre 1 e 30 dias a partir da data de emissão.
+
+[[[
+```json
+===
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00"
+```
+]]]
+
+O prazo de creditação está entre 1 e 2 dias úteis de acordo com o meio de pagamento. Por isso recomendamos que você defina a data de expiração com no mínimo 3 dias para garantir que o pagamento seja feito.
+
+Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/_265) para executar a configuração.
+
+> WARNING
+>
+> Importante
+>
+> Caso o pagamento seja realizado depois da data de expiração, o valor será estornado na conta do Mercado Pago do pagador.
+------------
+
 ### Modo binário
 
 Você pode ativar o modo binário se o modelo de negócios exigir que a aprovação do pagamento seja instantânea. Dessa forma, o pagamento só pode ser aprovado ou recusado.

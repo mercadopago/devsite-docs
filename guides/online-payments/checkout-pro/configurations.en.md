@@ -255,6 +255,32 @@ paymentmethods.Installments = 12;
 ```
 ]]]
 
+----[mla, mlb, mco]----
+
+### Expiration date of cash payment
+
+If you want, you can change the default due date of a cash payment by sending the `date_of_expiration` field in the preference creation request. The configured date must be between 1 and 30 days from the preference creation date.
+
+[[[
+```json
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00"
+```
+]]]
+
+The deadline for approval of the cash payment is between 1 and 2 working days according to the payment method. Therefore, we recommend that you set the due date with at least 3 days to ensure that payment is made.
+
+Check [credit times by payment method](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_221) when configuring.
+
+> WARNING
+>
+> Important
+>
+> If the cash payment is paid after the expiration date, the amount will be refunded to the payer's Mercado Pago account.
+------------
+
 ### Binary Mode
 
 You can activate the binary mode if the business model requires payment approval to be instantaneous. This way, payment can only be approved or declined.

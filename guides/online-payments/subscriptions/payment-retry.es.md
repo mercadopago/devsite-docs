@@ -52,7 +52,7 @@ En el caso de que no se pueda cobrar la cuota en el cuarto reintento, la cuota a
 >
 > Actualiza, modifica o cancela tus suscripciones.
 >
-> [Integración avanzada](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/advenced-integration/)
+> [Integración avanzada](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/advanced-integration/)
 
 > RIGHT_BUTTON
 >
