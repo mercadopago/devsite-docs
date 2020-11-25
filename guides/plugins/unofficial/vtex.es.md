@@ -691,9 +691,6 @@ Para crear una condición de pago con PSE, sigue estos pasos:
 6. En la opción de cuotas, selecciona cuotas automáticas. Esto te permite usar la configuración de tu cuenta de Mercado Pago. 
 7. Haz clic en Guardar. 
 
-> El medio de pago tarjeta Codensa no está disponible para el Checkout de VTEX.
-
-
 ![Imagen transferencia](/images/vtex/vtex-hisp-pse.gif)
 
 
