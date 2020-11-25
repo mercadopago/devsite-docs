@@ -76,7 +76,7 @@ Caso | Resultado esperado | Observaciones
 
 ## Quiero ir a producción
 
-Cuando tengas la aplicación **lista y funcionando** en modalidad de prueba y quieras empezar a procesar pagos reales, debes [activar tus credenciales]([CREDENTIALS][URL]). 
+Cuando tengas la aplicación **lista y funcionando** en modalidad de prueba y quieras empezar a procesar pagos reales, debes [activar tus credenciales]([FAKER][CREDENTIALS][URL]). 
 
 Luego, Mercado Pago podrá auditar tu sitio, app o Software de Punto de Venta y verificar que se cumplan las reglas detalladas anteriormente. Caso contrario, un asesor entrará en contacto contigo para discutir si hay cosas que debes corregir en tu integración.
 
