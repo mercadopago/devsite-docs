@@ -6,6 +6,24 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Noviembre 2020
 
+### 19 de noviembre
+
+> CHANGELOG
+>
+> Nueva versión SDK NODEJS
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK NODEJS
+
+Lanzamos una nueva versión del SDK NODEJS 1.5.1.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-nodejs/releases/tag/1.5.1).
+
 ### 13 de noviembre
 
 > CHANGELOG
