@@ -138,7 +138,8 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 <p>&nbsp;</p>
 
 > As mudanças nas Condições de pagamento podem levar até 10 minutos para serem aplicadas.
-<!-- -->
+
+<br>
 
 > WARNING
 >
