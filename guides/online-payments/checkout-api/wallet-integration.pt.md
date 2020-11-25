@@ -40,7 +40,7 @@ Para começar, você precisa gerar sua preferência de pagamento pelo seu backen
 [[[
 ```php
 ===
-O modo carteira funciona adicionando o atributo `purpose` na preferência.
+O modo carteira funciona adicionando o atributo _purpose_ na preferência.
 ===
 <?php
 // Cria um objeto de preferência
@@ -58,7 +58,7 @@ $preference->save();
 ```
 ```node
 ===
-O modo carteira funciona adicionando o atributo `purpose` na preferência.
+O modo carteira funciona adicionando o atributo _purpose_ na preferência.
 ===
 // Cria um objeto de preferência
 let preference = {
@@ -82,7 +82,7 @@ mercadopago.preferences.create(preference)
 ```
 ```java
 ===
-O modo carteira funciona adicionando o atributo `purpose` na preferência.
+O modo carteira funciona adicionando o atributo _purpose_ na preferência.
 ===
 // Cria um objeto de preferência
 Preference preference = new Preference();
@@ -98,7 +98,7 @@ preference.save();
 ```
 ```ruby
 ===
-O modo carteira funciona adicionando o atributo `purpose` na preferência.
+O modo carteira funciona adicionando o atributo _purpose_ na preferência.
 ===
 # Cria um objeto de preferência
 preference_data = {
@@ -118,7 +118,7 @@ preference = $mp.create_preference(preference_data)
 ```
 ```csharp
 ===
-O modo carteira funciona adicionando o atributo `purpose` na preferência.
+O modo carteira funciona adicionando o atributo _purpose_ na preferência.
 ===
 // Cria um objeto de preferência
 Preference preference = new Preference();
@@ -138,7 +138,7 @@ preference.Save();
 ```
 ```curl
 ===
-O modo carteira funciona adicionando o atributo `purpose` na preferência.
+O modo carteira funciona adicionando o atributo _purpose_ na preferência.
 ===
 curl -X POST \
   'https://api.mercadopago.com/checkout/preferences' \
