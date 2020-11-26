@@ -24,18 +24,18 @@ Para todos los productos de Mercado Pago se deben validar los siguientes aspecto
 A continuación encontrarás una serie puntos que debes tener en cuenta de acuerdo al producto que estés integrando:
 
 
-### Validaciones sobre Checkout Pro
+###Checkout Pro
 
 Realiza [pruebas](https://www.mercadopago.cl/developers/es/guides/online-payments/checkout-pro/test-integration/#bookmark_c%C3%B3mo_probar_mi_integraci%C3%B3n) de pagos aprobados y rechazados.
 
 * En caso de no estar utilizando el modo binario, ten en cuenta que los pagos pueden cambiar de estado *in_process* a *approved*.
 * Verifica en todos los casos que la [redirección](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/advanced-integration#bookmark_url_de_retorno) esté funcionando correctamente ( aplica sólo en apertura redirect).
 
-Si tienes un marketplace, verifica las [validaciones sobre marketplace](###Validaciones sobre el flujo de Marketplace).
+Si tienes un marketplace, verifica las [validaciones sobre marketplace](###Marketplace).
 
 
 
-### Validaciones sobre Checkout API
+###Checkout API
 
 Realiza [pruebas](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-api/testing) de pagos aprobados y rechazados.
 
@@ -44,11 +44,11 @@ Realiza [pruebas](https://www.mercadopago.com.ar/developers/es/guides/online-pay
 ](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-api/handling-responses)
 * Asegúrate de no incluir el atributo name al crear un formulario de tarjeta para cuidar la seguridad de los datos.
 
-Si tienes un marketplace, verifica las [validaciones sobre marketplace](###Validaciones sobre el flujo de Marketplace).
-Si estas utilizando el flujo de clientes y tarjetas, verifica las [validaciones sobre el flujo de clientes y tarjetas](### Validaciones sobre el flujo de Clientes y Tarjetas).
+Si tienes un marketplace, verifica las [validaciones sobre marketplace](###Marketplace).
+Si estas utilizando el flujo de usuarios y tarjetas, verifica las [validaciones sobre el flujo de [clientes y tarjetas](###Usuarios-y-Tarjetas).
 
 
-### Validaciones sobre Web Tokenize Checkout
+###Web Tokenize Checkout
 
 Realiza [pruebas](https://www.mercadopago.com.ar/developers/es/guides/online-payments/web-tokenize-checkout/testing) de pagos aprobados y rechazados.
 
@@ -56,19 +56,19 @@ Realiza [pruebas](https://www.mercadopago.com.ar/developers/es/guides/online-pay
 * Verifica en todos los casos que las páginas de éxito/rechazo de la transacción estén funcionando correctamente. Revisa la documentación sobre [manejo de respuestas.
 ](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-api/handling-responses)
 
-Si tienes un marketplace, verifica las [validaciones sobre marketplace](###Validaciones sobre el flujo de Marketplace).
-Si estas utilizando el flujo de clientes y tarjetas, verifica las [validaciones sobre el flujo de clientes y tarjetas](### Validaciones sobre el flujo de Usuarios y Tarjetas).
+Si tienes un marketplace, verifica las [validaciones sobre marketplace](###Marketplace).
+Si estas utilizando el flujo de usuarios y tarjetas, verifica las [validaciones sobre el flujo de [clientes y tarjetas](###Usuarios-y-Tarjetas).
 
 
 			
-### Validaciones sobre el flujo de Usuarios y Tarjetas
+###Usuarios y Tarjetas
 * Debes tener un flujo para vinculación y desvinculación de tarjetas del sitio.
 * La experiencia debe ser clara, segura, y amigable para el cliente. 
 * Realiza pagos con tarjetas de crédito guardadas. 
 
 
 
-### Validaciones sobre el flujo de Marketplace
+###Marketplace
 * Debe funcionar el flujo oAuth de vinculación y desvinculación del vendedor al marketplace.
 * Revisa el flujo de renovación de token de vinculación.
 * Los pagos que crees pueden ser [encontrados via api](https://www.mercadopago.cl/developers/es/reference/payments/_payments_id/get/) utilizando las credenciales de vinculación del vendedor y utilizando las credenciales del marketplace.
@@ -76,10 +76,10 @@ Si estas utilizando el flujo de clientes y tarjetas, verifica las [validaciones 
 
 [Documentación sobre vinculación de cuentas](https://www.mercadopago.com.ar/developers/es/guides/online-payments/marketplace/checkout-pro/create-marketplace#bookmark_2._vinculaci%C3%B3n_de_cuentas)
 			
-#### Validaciones sobre el flujo de Split de pagos
+####Split de pagos
 - Se verifica que la liberación del dinero esté configurada correctamente.
 								
-### Validaciones sobre modo de operación Gateway
+###Modo de operación Gateway
 Recuerda que si estas utilizando el modo de operacion Gateway vamos a corroborar que estes enviando los campos [_`merchant_account_id`_] y [_`payment_method_option_id`_].		
 
 
