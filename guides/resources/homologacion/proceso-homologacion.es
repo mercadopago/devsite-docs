@@ -13,7 +13,7 @@ Para todos los productos de Mercado Pago se deben validar los siguientes aspecto
 		* [Documentación checkout API / Web Tokenize](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/payment-rejections/#bookmark_recomendaciones_para_mejorar_tu_aprobaci%C3%B3n)
 	* Uso del [script de seguridad](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/payment-rejections#bookmark_recomendaciones_para_mejorar_tu_aprobaci%C3%B3n) en las páginas del ecommerce para mejora de aprobación.
 	* Envío de información del dispositivo al generar el pago  
-- Gestión de cuenta: Sugerimos implementar acciones de gestión de cuenta como [devoluciones, cancelaciones](https://www.mercadopago.cl/developers/es/guides/manage-account/account/cancellations-and-refunds/) y manejo de chargebacks para automatizar estos procesos desde tus sistemas. En caso de que no estén implementados, puedes gestionar estas acciones manualmente desde el backoffice de Mercado Pago. 
+- Gestión de cuenta: Sugerimos implementar acciones de gestión de cuenta como [devoluciones, cancelaciones](https://www.mercadopago.cl/developers/es/guides/manage-account/account/cancellations-and-refunds/) y manejo de [contracargos](https://www.mercadopago.cl/developers/es/guides/manage-account/account/chargebacks#bookmark_gestiona_tus_contracargos_por_api) para automatizar estos procesos desde tus sistemas. En caso de que no estén implementados, puedes gestionar estas acciones manualmente desde el backoffice de Mercado Pago. 
 
 - Conciliación de pagos/órdenes: 
 	* Utiliza el campo [_`external_reference`_] en la preferencia o en el pago para facilitar la conciliación de tus transacciones.
