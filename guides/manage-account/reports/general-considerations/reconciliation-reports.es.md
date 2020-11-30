@@ -5,8 +5,9 @@ Los reportes de Mercado Pago son informes descargables en formato .xlsx o .csv q
 Con estos informes buscamos cubrir las distintas necesidades de nuestros usuarios:
 
 * Reportes de conciliación
-    + [Dinero retirado](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/introduction/)
     + [Todas las transacciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/account-money/introduction/)
+    + [Liberaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/released-money/introduction/)
+    + [Dinero retirado](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/introduction/)
 
 * Reportes de Operaciones
     + Retiros
