@@ -4,7 +4,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ---
 
-## Diciembre
+## Diciembre 2020
 
 ### 1 de diciembre
 
