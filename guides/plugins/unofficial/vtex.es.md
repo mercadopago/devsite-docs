@@ -1110,7 +1110,7 @@ Para crear esta condición de pago, sigue estos pasos:
 ### Configuración del método de pago de Mercado Pago Wallet
 
 
-**El comprador finaliza el pago con el wallet de Mercado Pago** exclusivamente para usuarios registrados y una vez finalizado el proceso volverá a su tienda.
+El comprador finalizará el pago con la billetera de Mercado Pago exclusivamente para usuarios registrados y al terminar el proceso volverá a tu sitio.
 
 Para crear esta condición de pago, sigue estos pasos: 
 
