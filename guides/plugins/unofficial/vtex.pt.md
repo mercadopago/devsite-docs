@@ -89,7 +89,7 @@ Para criar uma **condição de pagamento [boleto bancário](#bookmark_condiçõe
 
 O Checkout Pro é a integração que te permite cobrar através do nosso formulário web de forma simples, rápida e segura.
 
-### Configuração do meio de pagamento Mercado Pago
+### Condição de pagamento Mercado Pago
 
 **O comprador será redirecionado ao site do Mercado Pago** e uma vez finalizado o processo, voltará para sua loja.
 
