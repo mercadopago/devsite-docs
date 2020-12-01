@@ -1090,7 +1090,7 @@ Para crear esta condición de pago, sigue estos pasos:
 ![Imagen cow](images/vtex/vtex-hispanos-cow.gif)
 
 
-### Configuración del método de pago de Mercado Pago Pro
+### Condición de pagos para Mercado Pago Pro
 
 
 El comprador finalizará el pago en Mercado Pago a través del formulario web modo modal directamente en tu sitio.
