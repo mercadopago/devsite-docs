@@ -105,7 +105,7 @@ Para criar essa condição de pagamento, siga os passos abaixo:
     ![Setting payments in VTEX](/images/vtex/vtex_condicao_redirect_4.gif)
 <p>&nbsp;</p>
 
-### Configuração do meio de pagamento Mercado Pago Pro
+### Condição de pagamento Mercado Pago Pro
 
 **O comprador finalizará o pagamento no ambiente do Mercado Pago via formulário web modal** diretamente em sua loja.
 
