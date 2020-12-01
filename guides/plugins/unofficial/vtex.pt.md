@@ -121,7 +121,7 @@ Para criar essa condição de pagamento, siga os passos abaixo:
     ![Setting payments in VTEX](/images/vtex/vtex_condicao_pro_4.gif)
 <p>&nbsp;</p>
 
-### Configuração do meio de pagamento Mercado Pago Wallet
+### Condição de pagamento Mercado Pago Wallet
 
 **O comprador finaliza o pagamento com a carteira do Mercado Pago exclusivamente de usuários cadastrados** e uma vez concluído o processo, voltará para sua loja.
 
