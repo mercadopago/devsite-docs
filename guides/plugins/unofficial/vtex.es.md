@@ -1107,7 +1107,7 @@ Para crear esta condición de pago, sigue estos pasos:
 
 ![Imagen cow](images/vtex/vtex-hispanos-cow-pro.gif)
 
-### Configuración del método de pago de Mercado Pago Wallet
+### Condición de pagos para Mercado Pago Wallet
 
 
 El comprador finalizará el pago con la billetera de Mercado Pago exclusivamente para usuarios registrados y al terminar el proceso volverá a tu sitio.
