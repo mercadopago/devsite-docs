@@ -1093,7 +1093,7 @@ Para crear esta condición de pago, sigue estos pasos:
 ### Configuración del método de pago de Mercado Pago Pro
 
 
-**El comprador finalizará el pago en el ambiente de Mercado Pago** mediante formulario web modal directamente en su tienda.
+El comprador finalizará el pago en Mercado Pago a través del formulario web modo modal directamente en tu sitio.
 
 Para crear esta condición de pago, sigue estos pasos: 
 
