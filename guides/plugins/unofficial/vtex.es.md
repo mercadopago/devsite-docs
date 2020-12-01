@@ -1117,7 +1117,7 @@ Para crear esta condición de pago, sigue estos pasos:
 1. En el panel de administración, ingresa en Configuraciones de medios de pago. 
 2. En la pestaña Condiciones de pago, haz clic en +. 
 3. En la sección Otro, elige como condición de pago MercadoPagoWallet.
-4. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status. 
+4. Nombra la regla para ayudar a facilitar la identificación y activa la condición en el campo Status. 
 5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
 6. Haz clic en Guardar. 
 
