@@ -1073,7 +1073,7 @@ En VTEX, los medios de pago personalizados que se pueden agregar son:
 
 Checkout Pro es la integración que te permite cobrar a través de nuestro formulario web de manera simple, rápida y segura.
 
-### Configuración del método de pago de Mercado Pago
+### Condición de pagos para Mercado Pago
 
 **El comprador será redireccionado a Mercado Pago** para realizar el pago y terminar la compra. Incorpora todo los medios de pagos disponibles en el país e incluye la posibilidad de pagar con el dinero en la cuenta de Mercado Pago. 
 
