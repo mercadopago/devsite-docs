@@ -107,7 +107,7 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 
 ### Condição de pagamento Mercado Pago Pro
 
-**O comprador finalizará o pagamento no ambiente do Mercado Pago via formulário web modal** diretamente em sua loja.
+**O comprador finalizará o pagamento no Mercado Pago via formulário web modal** diretamente em sua loja.
 
 Para criar essa condição de pagamento, siga os passos abaixo:
 
