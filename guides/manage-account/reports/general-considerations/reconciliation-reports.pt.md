@@ -8,10 +8,3 @@ Com estes relatórios, procuramos cobrir as diferentes necessidades dos nossos u
     + [Dinheiro em conta](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/reports/account-money/introduction/)
     + [Liberações](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/reports/released-money/introduction/)
     + [Saldo disponível](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/reports/available-money/introduction/)
-
-* Relatórios de Operações
-    + Retiradas
-    + Reclamações
-    + Cobranças
-    + Contestações
-    + Gateway

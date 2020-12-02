@@ -9,9 +9,3 @@ Con estos informes buscamos cubrir las distintas necesidades de nuestros usuario
     + [Liberaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/released-money/introduction/)
     + [Dinero retirado](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/introduction/)
 
-* Reportes de Operaciones
-    + Retiros
-    + Reclamos
-    + Cobros
-    + Contracargos
-    + Gateway

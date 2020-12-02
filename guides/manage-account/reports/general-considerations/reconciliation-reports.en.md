@@ -8,10 +8,3 @@ With these reports we seek to cover the different needs of our users:
     + [Money in the account](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/account-money/introduction/)
     + [Money released](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/released-money/introduction/)
     + [Money available](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/available-money/introduction/)
-
-* Transaction Reports
-    + Withdrawals
-    + Complaints
-    + Charges
-    + Chargebacks
-    + Gateway
