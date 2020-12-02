@@ -85,11 +85,11 @@ Para criar uma **condição de pagamento [boleto bancário](#bookmark_condiçõe
     ![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_boleto_3.gif)
 <p>&nbsp;</p>
 
-## Condição de pagamento Checkout Pro
+### Condição de pagamento Checkout Pro
 
 O Checkout Pro é a integração que te permite cobrar através do nosso formulário web de forma simples, rápida e segura.
 
-### Condição de pagamento Mercado Pago
+#### Configuração do meio de pagamento Mercado Pago
 
 **O comprador será redirecionado ao site do Mercado Pago** e uma vez finalizado o processo, voltará para sua loja.
 
@@ -105,7 +105,7 @@ Para criar essa condição de pagamento, siga os passos abaixo:
     ![Setting payments in VTEX](/images/vtex/vtex_condicao_redirect_4.gif)
 <p>&nbsp;</p>
 
-### Condição de pagamento Mercado Pago Pro
+#### Configuração do meio de pagamento Mercado Pago PRO
 
 **O comprador finalizará o pagamento no Mercado Pago via formulário web modal** diretamente em sua loja.
 
@@ -121,7 +121,7 @@ Para criar essa condição de pagamento, siga os passos abaixo:
     ![Setting payments in VTEX](/images/vtex/vtex_condicao_pro_4.gif)
 <p>&nbsp;</p>
 
-### Condição de pagamento Mercado Pago Wallet
+#### Configuração do meio de pagamento Mercado Pago Wallet
 
 **O comprador finaliza o pagamento com a carteira do Mercado Pago exclusivamente de usuários cadastrados** e uma vez concluído o processo, voltará para sua loja.
 
@@ -137,16 +137,18 @@ Para criar essa condição de pagamento, siga os passos abaixo:
     ![Setting payments in VTEX](/images/vtex/vtex_condicao_wallet_4.gif)
 <p>&nbsp;</p>
 
-> As mudanças nas Condições de pagamento podem levar até 10 minutos para serem aplicadas.
-
-<br>
-
 > WARNING
 >
 > Importante
 >
-> Caso as condições de pagamento MercadoPagoPro e MercadoPagoWallet não estiverem disponíveis para adicioná-las, certifique em sua loja de aplicativos da VTEX que o App Mercado Pago Payment APP esteja instalado ou solicite a instalação pela equipe VTEX sob demanda através de ticket no [Support VTEX](https://support.vtex.com/).
+> Caso as condições de pagamento MercadoPagoPro e MercadoPagoWallet não estiverem disponíveis para adicioná-las, certifique em sua loja de aplicativos da VTEX que o App Mercado Pago Payment APP esteja instalado ou solicite a instalação pela equipe VTEX sob demanda através de ticket no [Support VTEX](https://support.vtex.com/). <br>
 
+<!-- -->
+> NOTE
+> 
+> Nota
+>
+> As mudanças nas Condições de pagamento podem levar até 10 minutos para serem aplicadas. <br>
 
 ## Configurando o parcelamento em sua conta Mercado Pago
 
