@@ -141,7 +141,6 @@ Giftcard                	| `digital_currency`       | `giftcard`
 Paypal							| `digital_wallet` | `paypal`
 Pix						| `bank_transfer` 		   | `pix`
 
-
 ### Chile
 
 Payment Method    		| Payment Type ID          | ID  
