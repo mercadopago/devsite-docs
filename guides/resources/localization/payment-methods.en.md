@@ -139,6 +139,7 @@ Boleto Bancario			| `ticket`                 | `bolbradesco`
 Account money	       		| `account_money`          | `account_money`
 Giftcard                	| `digital_currency`       | `giftcard`
 Paypal							| `digital_wallet` | `paypal`
+Pix						| `bank_transfer` 		   | `pix`
 
 
 ### Chile
