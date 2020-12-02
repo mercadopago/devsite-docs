@@ -1,4 +1,4 @@
- # Advanced Integration
+# Advanced Integration
 
 ## Receive Payment Notifications
 
