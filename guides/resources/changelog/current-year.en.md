@@ -28,6 +28,27 @@ We have released a new version of SDK NodeJS 1.5.2.
 >
 > [Check GitHub](https://github.com/mercadopago/dx-nodejs/releases/tag/1.5.2) for further details regarding this release.
 
+### December 1st
+
+> CHANGELOG
+>
+> New WooCommerce plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+
+We have released the new version 4.6.0 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction/)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.6.0) for further details regarding this release.
+
+
 ## November 2020
 
 ### November 19th
