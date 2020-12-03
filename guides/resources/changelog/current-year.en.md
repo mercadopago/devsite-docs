@@ -4,6 +4,30 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ---
 
+## December 2020
+
+### December 7th
+
+> CHANGELOG
+>
+> New version of SDK NodeJS
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK NODEJS
+
+We have released a new version of SDK NodeJS 1.5.2.
+
+- Add `statement_descriptor` option to Preferences
+
+- Credentials now can be set dynamically
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/dx-nodejs/releases/tag/1.5.2) for further details regarding this release.
+
 ## November 2020
 
 ### November 19th

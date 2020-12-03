@@ -4,6 +4,26 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
+## Dezembro 2020
+
+### 7 de novembro
+
+> CHANGELOG
+>
+> Nova versão SDK NodeJS
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK NODEJS
+
+Lançamos uma nova versão do SDK NodeJS 1.5.2.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-nodejs/releases/tag/1.5.2).
+
 ## Novembro 2020
 
 ### 19 de novembro
