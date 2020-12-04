@@ -1,7 +1,7 @@
 # ¿Qué debo tener en cuenta para que mi integración esté completa?
 
 
-Para todos los productos de Mercado Pago debes tener en cuenta los siguientes aspectos:
+Para cualquier producto de Mercado Pago que estés integrando debes tener en cuenta los siguientes aspectos antes de salir a producción:
 
 
 - Seguridad de la integración:
