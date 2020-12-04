@@ -1,7 +1,7 @@
 # ¿Qué debo tener en cuenta para que mi integración esté completa?
 
 
-Para todos los productos de Mercado Pago se deben validar los siguientes aspectos:
+Para todos los productos de Mercado Pago debes tener en cuenta los siguientes aspectos:
 
 
 - Seguridad de la integración:
@@ -9,12 +9,11 @@ Para todos los productos de Mercado Pago se deben validar los siguientes aspecto
 	* Protocolo TLS 1.2 o superior
 - Efectividad de nuestros sistemas de fraude:
 	* Envío de información del pagador, item, envío y de industria en el pago.
-		* [Documentación checkout PRO](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/advanced-integration#bookmark_informaci%C3%B3n_adicional_para_la_preferencia)
-		* [Documentación checkout API / Web Tokenize](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/payment-rejections/#bookmark_recomendaciones_para_mejorar_tu_aprobaci%C3%B3n)
+		* [Documentación checkout PRO - API Preferencias](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/advanced-integration#bookmark_informaci%C3%B3n_adicional_para_la_preferencia).
+		* [Documentación checkout API / Web Tokenize](https://www.mercadopago.cl/developers/es/reference/payments/resource/). En el objeto additional_info podrás enviar toda la informacion relevante para nuestro motor de fraude.				  
 	* Uso del [script de seguridad](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/payment-rejections#bookmark_recomendaciones_para_mejorar_tu_aprobaci%C3%B3n) en las páginas del ecommerce para mejora de aprobación.
-	* Envío de información del dispositivo al generar el pago  
+	* Envío de información del dispositivo al generar el pago.  
 - Gestión de cuenta: Sugerimos implementar acciones de gestión de cuenta como [devoluciones, cancelaciones](https://www.mercadopago.cl/developers/es/guides/manage-account/account/cancellations-and-refunds/) y manejo de [contracargos](https://www.mercadopago.cl/developers/es/guides/manage-account/account/chargebacks#bookmark_gestiona_tus_contracargos_por_api) para automatizar estos procesos desde tus sistemas. En caso de que no estén implementados, puedes gestionar estas acciones manualmente desde el backoffice de Mercado Pago. 
-
 - Conciliación de pagos/órdenes: 
 	* Utiliza el campo [_`external_reference`_] en la preferencia o en el pago para facilitar la conciliación de tus transacciones.
 	* Utiliza y procesa correctamente las notificaciones de pago ([IPN](https://www.mercadopago.cl/developers/es/guides/notifications/ipn) o [Webhooks](https://www.mercadopago.cl/developers/es/guides/notifications/webhooks)) para actualizar el estado de las órdenes.
@@ -45,7 +44,7 @@ Realiza [pruebas](https://www.mercadopago.com.ar/developers/es/guides/online-pay
 * Asegúrate de no incluir el atributo name al crear un formulario de tarjeta para cuidar la seguridad de los datos.
 
 Si tienes un marketplace, verifica las [validaciones sobre marketplace](###Marketplace).
-Si estas utilizando el flujo de usuarios y tarjetas, verifica las [validaciones sobre el flujo de [clientes y tarjetas](###Usuarios-y-Tarjetas).
+Si estas utilizando el flujo de usuarios y tarjetas, verifica las validaciones sobre el flujo [aquí](###Usuarios-y-Tarjetas).
 
 
 ###Web Tokenize Checkout
@@ -66,7 +65,7 @@ Si estas utilizando el flujo de usuarios y tarjetas, verifica las [validaciones 
 * La experiencia debe ser clara, segura, y amigable para el cliente. 
 * Realiza pagos con tarjetas de crédito guardadas. 
 
-
+								  
 
 ###Marketplace
 * Debe funcionar el flujo oAuth de vinculación y desvinculación del vendedor al marketplace.
@@ -77,7 +76,7 @@ Si estas utilizando el flujo de usuarios y tarjetas, verifica las [validaciones 
 [Documentación sobre vinculación de cuentas](https://www.mercadopago.com.ar/developers/es/guides/online-payments/marketplace/checkout-pro/create-marketplace#bookmark_2._vinculaci%C3%B3n_de_cuentas)
 			
 ####Split de pagos
-- Se verifica que la liberación del dinero esté configurada correctamente.
+Verifica que la liberación del dinero esté configurada correctamente.
 								
 ###Modo de operación Gateway
 Recuerda que si estas utilizando el modo de operacion Gateway vamos a corroborar que estes enviando los campos [_`merchant_account_id`_] y [_`payment_method_option_id`_].		
