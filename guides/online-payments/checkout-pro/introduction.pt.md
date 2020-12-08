@@ -42,7 +42,7 @@ O Checkout Pro é a integração que **te permite cobrar através do nosso formu
                                    | Checkout Pro|Web Tokenize Checkout|      API
 :---  | :---: | :---: | :---:
 Dificuldade de integração 			  	     |    Baixa    |       Media         |     Alta
-Desing UI/UX 							  	           |      ✔      |         ✔           |
+Design UI/UX 							  	           |      ✔      |         ✔           |
 Otimizado para a melhor conversão	     |      ✔      |         ✔           |
 Otimizado para melhorar a aprovação     |      ✔      |                     |  
 Pagamento de usuários convidados    	   |      ✔      |         ✔           |      ✔
@@ -57,7 +57,7 @@ Pagamento com dois cartões		           |      ✔      |                     |
                                    | Checkout Pro|Web Tokenize Checkout|      API
 :---  | :---: | :---: | :---:
 Dificuldade de integração 			  	     |    Baixa    |       Media         |     Alta
-Desing UI/UX 							  	           |      ✔      |         ✔           |
+Design UI/UX 							  	           |      ✔      |         ✔           |
 Otimizado para a melhor conversão	     |      ✔      |         ✔           |
 Otimizado para melhorar a aprovação     |      ✔      |                     |  
 Pagamento de usuários convidados    	   |      ✔      |         ✔           |      ✔
