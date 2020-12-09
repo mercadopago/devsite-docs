@@ -28,7 +28,7 @@ The JSON will have basic payment information. If you need more information, [per
 
 ## How to activate the new IPN notifications?
 
-From your Mercado Pago account you can [add IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/ipn-notifications)).
+From your Mercado Pago account you can [add IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/ipn-notifications).
 
 > You must use the account in which you receive the payments from which you want to be notified.
 
