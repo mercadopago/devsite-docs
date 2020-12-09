@@ -1,9 +1,8 @@
 # Migrate to the new MercadoPago.js version
 
-Learn how to install the **new MercadoPago.js SDK beta version to integrate the Checkout API.** 
+Learn how to install the **new MercadoPago.js SDK beta version to integrate the Checkout API**. 
 
 With MercadoPago.js SDK you can create the card token required to securely send the data to your backend.
-
 
 ## About the new version
 
@@ -11,8 +10,6 @@ The new version **optimizes your integration as it includes the CardForm feature
 
 If you don't want to use the new CardForm feature, you can keep the basic characteristics of the previous version. Check the [technical reference](https://github.com/mercadopago/sdk-js/) to see what changes you need to make and to know the new names of the parameters.
 
-
-<br>
 
 ## Installation steps
 
@@ -22,15 +19,13 @@ We leave you a overview of what you will have to do to start using the new Merca
 * Then, set up the credentials of the account you are integrating so we can identify it when connecting to Mercado Pago.
 * Finally, update your payment form with the CardForm feature and start using it.
 
-<br>
-
 > CLIENT_SIDE
 >
 > h2
 >
 > Install MercadoPago.js beta version
 
-1. Include MercadoPago.js
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Include MercadoPago.js
 
 Add the following script to your site:
 
@@ -38,23 +33,21 @@ Add the following script to your site:
 <script src="https://beta-sdk.mercadopago.com/js/v2"></script>
 ```
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Set up credentials
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Set up credentials
 
-Initialize the library with the [Public Key](https://www.mercadopago.com.br/developers/panel/credentials) of the account to be integrated for identification when connecting to Mercado Pago.
+Initialize the library with the [Public Key]([FAKER][CREDENTIALS][URL]) of the account to be integrated for identification when connecting to Mercado Pago.
 
 ```javascript
 const mercadopago = new MercadoPago('PUBLIC_KEY')
 ```
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Update your payment form
-
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Update your payment form
 
 In the previous version, you were required to add the form with the `data-checkout` attributes, paying attention to the `name` attribute for sensitive information field management. 
 
-
 You were also required to add several JavaScript functions to fill out information on each field.  For example, you were required to add a function to detect the method of payment based on credit card number, or to list possible issuers, or even to get the number of installments that can be offered.
 
-Now, **you just need to initialize our CardForm. Link the ID of each form field to the relevant attributes, and the library will fill out, get, and validate all data required for payment confirmation.**
+Now, **you just need to initialize our CardForm. Link the ID of each form field to the relevant attributes, and the library will fill out, get, and validate all data required for payment confirmation**.
 
 ```html
 <form id="form-checkout" >
@@ -134,8 +127,7 @@ Now, **you just need to initialize our CardForm. Link the ID of each form field 
  </script>
 ```
 
-
-> NOTE
+> GIT
 > 
 > Technical Reference
 > 

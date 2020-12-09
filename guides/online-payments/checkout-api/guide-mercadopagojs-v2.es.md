@@ -1,17 +1,14 @@
 # Migrar a la nueva versión de MercadoPago.js
 
-Conoce cómo instalar la **nueva versión beta de la SDK MercadoPago.js para la integración de Checkout API.** 
+Conoce cómo instalar la **nueva versión beta de la SDK MercadoPago.js para la integración de ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------**. 
 
 La SDK MercadoPago.js te permite crear el token de la tarjeta para enviar los datos a tu backend de forma segura.
-
 
 ## Sobre la nueva versión
 
 La nueva versión **optimiza tu integración al incluir el uso de la funcionalidad CardForm que obtiene y valida todos los datos necesarios** para realizar el pago sin que tengas que sumar pasos extras. 
 
 Si no quieres utilizar la nueva funcionalidad CardForm, puedes mantener las características básicas de la versión antigua. Revisa las [referencias técnicas](https://github.com/mercadopago/sdk-js/) para ver qué cambios necesitas hacer y conocer los nuevos nombres de los parámetros. 
-
-<br>
 
 ## Pasos para instalar
 
@@ -21,15 +18,13 @@ Te dejamos un resumen de lo que tendrás que hacer para comenzar a usar la nueva
 * Luego, configura las credenciales de la cuenta que estés integrando para identificarla al conectar con Mercado Pago.
 * Por último, actualiza tu formulario de pago con la funcionalidad CardForm para comenzar a usarlo.
 
-<br>
-
 > CLIENT_SIDE
 >
 > h2
 >
 > Instalar versión beta de MercadoPago.js
 
-1. Incluye MercadoPago.js
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Incluye MercadoPago.js
 
 Añade el siguiente script en tu sitio:
 
@@ -37,21 +32,21 @@ Añade el siguiente script en tu sitio:
 <script src="https://beta-sdk.mercadopago.com/js/v2"></script>
 ```
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Configura las credenciales
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Configura las credenciales
 
-Inicializa la librería con la [Public Key](https://www.mercadopago.com.ar/developers/panel/credentials) de la cuenta que estés integrando así podemos identificarla al conectar con Mercado Pago.
+Inicializa la librería con la [Public Key]([FAKER][CREDENTIALS][URL]) de la cuenta que estés integrando así podemos identificarla al conectar con Mercado Pago.
 
 ```javascript
 const mercadopago = new MercadoPago('PUBLIC_KEY')
 ```
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Actualiza tu formulario de pago
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Actualiza tu formulario de pago
 
 En la versión anterior, tenías que agregar el formulario con los atributos `data-checkout` y prestar atención al atributo `name` para cuidar el manejo de información sensible en los campos. 
 
 Además, necesitabas agregar varias funciones JavaScript para completar la información de cada campo. Por ejemplo, tenías que sumar una función para detectar el medio de pago a partir del número de tarjeta o para listar los posibles emisores y hasta para obtener la cantidad de cuotas que pueden ofrecerse.
 
-Ahora, **solo debes inicializar nuestro CardForm relacionando el ID de cada campo del formulario con los atributos correspondientes y la librería va a ser la responsable de completar, obtener y validar todos los datos necesarios al momento de confirmar el pago.**
+Ahora, **solo debes inicializar nuestro CardForm relacionando el ID de cada campo del formulario con los atributos correspondientes y la librería va a ser la responsable de completar, obtener y validar todos los datos necesarios al momento de confirmar el pago**.
 
 ```html
 <form id="form-checkout" >
@@ -132,7 +127,7 @@ Ahora, **solo debes inicializar nuestro CardForm relacionando el ID de cada camp
 ```
 
 
-> NOTE
+> GIT
 > 
 > Referencia técnica
 > 
