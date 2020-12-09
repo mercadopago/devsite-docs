@@ -26,6 +26,7 @@ Lançamos a nova versão 4.6.0 para WooCommerce.
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.6.0).
 
+---
 
 ## Novembro 2020
 
@@ -116,6 +117,8 @@ As assinaturas do Mercado Pago permitem que você receba pagamentos recorrentes 
 [Criar assinaturas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/introduction)
 ------------
 
+---
+
 ## Outubro 2020
 
 ### 29 de outubro
@@ -182,6 +185,8 @@ Estendemos os prazos de devolução a 180 dias para todos os meios de pagamento.
 
 [Ir para a documentação de Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds#bookmark_devoluções)
 ------------
+
+---
 
 ## Setembro 2020
 
