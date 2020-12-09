@@ -6,7 +6,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Dezembro 2020
 
-### 7 de novembro
+### 7 de dezembro
 
 > CHANGELOG
 >

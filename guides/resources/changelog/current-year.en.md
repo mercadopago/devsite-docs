@@ -18,10 +18,6 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 We have released a new version of SDK NodeJS 1.5.2.
 
-- Add `statement_descriptor` option to Preferences
-
-- Credentials now can be set dynamically
-
 > GIT
 >
 > GitHub
