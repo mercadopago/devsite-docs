@@ -1,6 +1,11 @@
 # Migrar a la nueva versión de MercadoPago.js
 
-Conoce cómo instalar la **nueva versión beta de la SDK MercadoPago.js para la integración de ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------**. 
+----[mlb]----
+Conoce cómo instalar la **nueva versión beta de la SDK MercadoPago.js para la integración de Checkout Transparente**. 
+------------ 
+----[mla, mlm, mpe, mco, mlu, mlc]---- 
+Conoce cómo instalar la **nueva versión beta de la SDK MercadoPago.js para la integración de Checkout API**. 
+------------ 
 
 La SDK MercadoPago.js te permite crear el token de la tarjeta para enviar los datos a tu backend de forma segura.
 
