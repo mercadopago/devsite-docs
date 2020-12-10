@@ -87,7 +87,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
         },
         "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -123,7 +123,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
     "shipments": {
         "mode": "not_specified",
         "receiver_address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "city_name": "[FAKER][ADDRESS][CITY]",
             "state_name": "[FAKER][ADDRESS][STATE]",
@@ -216,7 +216,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
         },
         "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -252,7 +252,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
     "shipments": {
         "mode": "not_specified",
         "receiver_address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "city_name": "[FAKER][ADDRESS][CITY]",
             "state_name": "[FAKER][ADDRESS][STATE]",
@@ -375,7 +375,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
     "shipments": {
         "mode": "not_specified",
         "receiver_address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "city_name": "[FAKER][ADDRESS][CITY]",
             "state_name": "[FAKER][ADDRESS][STATE]",
@@ -472,7 +472,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
         },
         "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -508,7 +508,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
     "shipments": {
         "mode": "not_specified",
         "receiver_address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "city_name": "[FAKER][ADDRESS][CITY]",
             "state_name": "[FAKER][ADDRESS][STATE]",
@@ -591,7 +591,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
         },
         "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -710,7 +710,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
         },
         "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -746,7 +746,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
     "shipments": {
         "mode": "not_specified",
         "receiver_address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "city_name": "[FAKER][ADDRESS][CITY]",
             "state_name": "[FAKER][ADDRESS][STATE]",
@@ -841,7 +841,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
         },
         "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -877,7 +877,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
     "shipments": {
         "mode": "not_specified",
         "receiver_address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "city_name": "[FAKER][ADDRESS][CITY]",
             "state_name": "[FAKER][ADDRESS][STATE]",
@@ -985,7 +985,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
         },
         "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -1106,7 +1106,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
         },
         "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -1212,7 +1212,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
         },
         "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -1332,7 +1332,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
         },
         "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -1369,7 +1369,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
         "mode": "not_specified",
         "local_pickup": false,
         "receiver_address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "city_name": "[FAKER][ADDRESS][CITY]",
             "state_name": "[FAKER][ADDRESS][STATE]",
@@ -1464,7 +1464,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
         },
         "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -1500,7 +1500,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
         "mode": "not_specified",
         "local_pickup": false,
         "receiver_address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "city_name": "[FAKER][ADDRESS][CITY]",
             "state_name": "[FAKER][ADDRESS][STATE]",
@@ -1583,7 +1583,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
         },
         "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
