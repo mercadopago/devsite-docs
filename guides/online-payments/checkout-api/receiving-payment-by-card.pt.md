@@ -46,6 +46,12 @@ Para criar um pagamento é necessário fazer a captura dos dados do cartão atra
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Inclua a biblioteca MercadoPago.js
 
+> NOTE
+>
+> Experimente a nova versão beta do MercadoPago.js
+>
+> Integre em menos tempo com a nossa funcionalidade CardForm, desenvolvida com um código ordenado que te permite automatizar validações e manter o código livre de callbacks.<br><br>[Confira o manual de migração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/guide-mercadopagojs-v2)
+
 **Use nossa biblioteca oficial para acessar a API de Mercado Pago** no seu frontend e coletar os dados de forma segura.
 
 ```html
@@ -55,6 +61,12 @@ Para criar um pagamento é necessário fazer a captura dos dados do cartão atra
 A informação do cartão será convertida em um token para que envie os dados aos seus servidores de modo seguro.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o formulário de pagamento
+
+> NOTE
+>
+> Nova funcionalidade CardForm
+>
+> Experimente a nova versão beta do MercadoPago.js e otimize sua integração ao usar a funcionalidade CardForm que obtém e valida todos os dados necessários sem que você precise adicionar etapas adicionais. <br><br>[Confira o manual de migração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/guide-mercadopagojs-v2)
 
 Para realizar a captura dos dados sensíveis dos cartões dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação e a geração correta do token. Por exemplo, é preciso respeitar os atributos `data-checkout` e não colocar o atributo `name` nos campos que tenham dados sensíveis, dessa forma nunca chegarão aos seus servidores.
 
