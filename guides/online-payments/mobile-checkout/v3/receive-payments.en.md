@@ -71,7 +71,7 @@ Then, you must add the attributes of your payment preference:
 
   $item = new MercadoPago\Item();
   $item->title = "[FAKER][COMMERCE][PRODUCT_NAME]";
-  $item->quantity = [FAKER][NUMBER][BETWEEN][1,10];
+  $item->quantity = 10;
   $item->currency_id = "[FAKER][CURRENCY][ACRONYM]";
   $item->unit_price = [FAKER][COMMERCE][PRICE];
 
@@ -90,7 +90,7 @@ Preference preference = new Preference();
 Item item = new Item();
 item.setId("1234")
     .setTitle("[FAKER][COMMERCE][PRODUCT_NAME]")
-    .setQuantity([FAKER][NUMBER][BETWEEN][1,10])
+    .setQuantity(10)
     .setCategoryId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float) [FAKER][COMMERCE][PRICE]);
 
@@ -130,7 +130,7 @@ preference = MercadoPago::Preference.new()
 
 item = MercadoPago::Item.new()
 item.title="[FAKER][COMMERCE][PRODUCT_NAME]"
-item.quantity= [FAKER][NUMBER][BETWEEN][1,10]
+item.quantity= 10
 item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
 item.unit_price = [FAKER][COMMERCE][PRICE]
 
@@ -218,7 +218,7 @@ public void failure(ApiException apiException) {
 }
 ```
 ```swift
-        let preferenceBody : [String : Any] = ["item_id" : "id", "quantity" : [FAKER][NUMBER][BETWEEN][1,10]]
+        let preferenceBody : [String : Any] = ["item_id" : "id", "quantity" : 10]
 
         CustomServer.createCheckoutPreference(url: "https://your-base-url.com/", uri: "your-create-preference-uri", bodyInfo: preferenceBody as NSDictionary, success: { (checkoutPrefernece) in
             startMercadoPagoCheckout(checkoutPreference)

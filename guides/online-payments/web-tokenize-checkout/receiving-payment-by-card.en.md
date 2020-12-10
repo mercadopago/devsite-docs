@@ -91,7 +91,7 @@ You should only make an *API call* including the data you received from the chec
     MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
     //...
     $payment = new MercadoPago\Payment();
-    $payment->transaction_amount = [FAKER][NUMBER][BETWEEN][100, 200];
+    $payment->transaction_amount = 100;
     $payment->token = $token;
     $payment->description = "[FAKER][COMMERCE][PRODUCT_NAME]";
     $payment->installments = $installments;
@@ -112,7 +112,7 @@ You should only make an *API call* including the data you received from the chec
 MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
 //...
 Payment payment = new Payment();
-payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200]f)
+payment.setTransactionAmount(100f)
        .setToken(token)
        .setDescription("[FAKER][COMMERCE][PRODUCT_NAME]")
        .setInstallments(installments)
@@ -132,7 +132,7 @@ var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
 var payment_data = {
-  transaction_amount: [FAKER][NUMBER][BETWEEN][100, 200],
+  transaction_amount: 100,
   token: token,
   description: '[FAKER][COMMERCE][PRODUCT_NAME]',
   installments: installments,
@@ -158,7 +158,7 @@ require 'mercadopago'
 MercadoPago::SDK.access_token = "ENV_ACCESS_TOKEN";
 
 payment = MercadoPago::Payment.new()
-payment.transaction_amount = [FAKER][NUMBER][BETWEEN][100, 200]
+payment.transaction_amount = 100
 payment.token = token
 payment.description = '[FAKER][COMMERCE][PRODUCT_NAME]'
 payment.installments = installments
@@ -180,7 +180,7 @@ MercadoPago.SDK.SetAccessToken(ENV_ACCESS_TOKEN);
 //...
 Payment payment = new Payment()
 {
-    TransactionAmount = float.Parse("[FAKER][NUMBER][BETWEEN][100, 200]"),
+    TransactionAmount = float.Parse("100"),
     Token = token,
     Description = "[FAKER][COMMERCE][PRODUCT_NAME]",
     Installments = installments,
