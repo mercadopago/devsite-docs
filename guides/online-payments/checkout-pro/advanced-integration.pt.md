@@ -226,7 +226,7 @@ preference.Items.Add(
 No final do processo de pagamento, você tem a opção de **redirecionar o comprador para o seu site.**
 Para isso, precisa adicionar o atributo `back_urls` e definir, segundo o status do pagamento, a onde quer que redirecionemos seu comprador quando ele clique no botão de voltar ao site.
 
-Se quer que o redirecionamento seja automático para os pagamentos aprovados, precisa adicionar também o atributo `auto_return` com valor `success`. 
+Se quer que o redirecionamento seja automático para os pagamentos aprovados, precisa adicionar também o atributo `auto_return` com valor `approved`. 
 
 > NOTE
 >

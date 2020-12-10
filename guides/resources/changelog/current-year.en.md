@@ -6,6 +6,22 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## December 2020
 
+
+### December 11th
+
+> CHANGELOG
+>
+> New beta version of SDK MercadoPago.js
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: MERCADOPAGO.JS
+
+Integrate simpler and faster Checkout API with the new CardForm functionality, which keeps your code clean and allows you to automate validations.
+
+[Go to the migration guide](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/guide-mercadopagojs-v2)
+
+
 ### December 7th
 
 > CHANGELOG
@@ -23,6 +39,7 @@ We have released a new version of SDK NodeJS 1.5.2.
 > GitHub
 >
 > [Check GitHub](https://github.com/mercadopago/dx-nodejs/releases/tag/1.5.2) for further details regarding this release.
+
 
 ### December 1st
 
@@ -44,6 +61,7 @@ We have released the new version 4.6.0 for WooCommerce.
 >
 > [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.6.0) for further details regarding this release.
 
+---
 
 ## November 2020
 
@@ -133,6 +151,8 @@ Mercado Pago subscriptions allow you to receive recurring payments by credit and
 [Create subscriptions](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/introduction)
 ------------
 
+---
+
 ## October 2020
 
 ### October 29th
@@ -199,6 +219,8 @@ Refunds are now permitted up to 180 days after the payment has been made for all
 
 [Go to Refunds and cancellations documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds#bookmark_refunds)
 ------------
+
+---
 
 ## September 2020
 

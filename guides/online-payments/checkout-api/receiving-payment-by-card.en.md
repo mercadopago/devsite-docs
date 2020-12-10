@@ -33,6 +33,14 @@ To create a payment, you should capture card data through the buyer's browser. F
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Include MercadoPago.js library
 
+> NOTE
+>
+> Try the new beta version of MercadoPago.js
+>
+> Integrate in less time our CardForm functionality, developed with a clean code that allows you to automate validations and keep the code free of callbacks.
+>
+> [Review the migration guide](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/guide-mercadopagojs-v2)
+
 **Use our official library to access Mercado Pago API** from your application and collect data securely.
 
 ```html
@@ -42,6 +50,14 @@ To create a payment, you should capture card data through the buyer's browser. F
 Card information will be turned into a token so that you can send data to your servers securely.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
+
+> NOTE
+>
+> New CardForm functionality
+>
+> Try the new MercadoPago.js beta version and optimize your integration by using the CardForm functionality that obtains and validates all the necessary data without you having to add extra steps.
+>
+>[Review the migration guide](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/guide-mercadopagojs-v2)
 
 To capture sensitive data from your customer's cards, **please use our form with the corresponding attributes,** which ensures information security and correct token generation. For example, you should observe `data-checkout` attributes and avoid putting the `name` attribute in fields containing sensitive data. This way your servers will never store data.
 

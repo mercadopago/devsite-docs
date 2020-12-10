@@ -6,6 +6,22 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Dezembro 2020
 
+
+### 11 de dezembro
+
+> CHANGELOG
+>
+> Nova versão beta SDK MercadoPago.js
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MERCADOPAGO.JS
+
+Integre o Checkout Transparente de forma mais simples e rápida com a nova funcionalidade CardForm, que mantém seu código ordenado e permite automatizar validações.
+
+[Ir para o manual de migração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/guide-mercadopagojs-v2)
+
+
 ### 7 de dezembro
 
 > CHANGELOG
@@ -23,6 +39,7 @@ Lançamos uma nova versão do SDK NodeJS 1.5.2.
 > GitHub
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-nodejs/releases/tag/1.5.2).
+
 
 ### 1 de dezembro
 
@@ -44,6 +61,7 @@ Lançamos a nova versão 4.6.0 para WooCommerce.
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.6.0).
 
+---
 
 ## Novembro 2020
 
@@ -134,6 +152,8 @@ As assinaturas do Mercado Pago permitem que você receba pagamentos recorrentes 
 [Criar assinaturas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/introduction)
 ------------
 
+---
+
 ## Outubro 2020
 
 ### 29 de outubro
@@ -200,6 +220,8 @@ Estendemos os prazos de devolução a 180 dias para todos os meios de pagamento.
 
 [Ir para a documentação de Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds#bookmark_devoluções)
 ------------
+
+---
 
 ## Setembro 2020
 

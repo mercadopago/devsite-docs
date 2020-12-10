@@ -31,6 +31,14 @@ MercadoPago.js allows you to create a payment token to send card data to your ba
 <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
 ```
 
+> NOTE
+>
+> Try the new beta version of MercadoPago.js
+>
+> Integrate in less time our CardForm functionality, developed with a clean code that allows you to automate validations and keep the code free of callbacks.
+>
+> [Review the migration guide](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/guide-mercadopagojs-v2)
+
 <br>
 
 > SERVER_SIDE
