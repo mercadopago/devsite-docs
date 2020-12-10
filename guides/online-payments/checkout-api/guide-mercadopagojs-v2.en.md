@@ -8,7 +8,7 @@ With MercadoPago.js SDK you can create the card token required to securely send 
 
 The new version **optimizes your integration as it includes the CardForm feature, which gets and validates all data required** to make a payment with no need for any additional step.
 
-If you don't want to use the new CardForm feature, you can keep the basic characteristics of the previous version. Check the [technical reference](https://github.com/mercadopago/sdk-js/) to see what changes you need to make and to know the new names of the parameters.
+If you don't want to use the new CardForm feature, you can keep the basic characteristics of the previous version. Check the [technical reference](https://github.com/mercadopago/sdk-js) to see what changes you need to make and to know the new names of the parameters.
 
 
 ## Installation steps

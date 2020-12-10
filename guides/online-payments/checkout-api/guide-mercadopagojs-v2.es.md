@@ -13,7 +13,7 @@ La SDK MercadoPago.js te permite crear el token de la tarjeta para enviar los da
 
 La nueva versión **optimiza tu integración al incluir el uso de la funcionalidad CardForm que obtiene y valida todos los datos necesarios** para realizar el pago sin que tengas que sumar pasos extras. 
 
-Si no quieres utilizar la nueva funcionalidad CardForm, puedes mantener las características básicas de la versión antigua. Revisa las [referencias técnicas](https://github.com/mercadopago/sdk-js/) para ver qué cambios necesitas hacer y conocer los nuevos nombres de los parámetros. 
+Si no quieres utilizar la nueva funcionalidad CardForm, puedes mantener las características básicas de la versión antigua. Revisa las [referencias técnicas](https://github.com/mercadopago/sdk-js) para ver qué cambios necesitas hacer y conocer los nuevos nombres de los parámetros. 
 
 ## Pasos para instalar
 
