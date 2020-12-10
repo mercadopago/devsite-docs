@@ -50,7 +50,9 @@ Para crear un pago es necesario hacer la captura de los datos de la tarjeta a tr
 >
 > Prueba la nueva versión beta de MercadoPago.js
 >
-> Integra en menos tiempo con nuestra funcionalidad CardForm, desarrollada con un código ordenado que te permite automatizar validaciones y mantener el código libre de callbacks.<br><br>[Ir a la guía de migración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/guide-mercadopagojs-v2)
+> Integra en menos tiempo con nuestra funcionalidad CardForm, desarrollada con un código ordenado que te permite automatizar validaciones y mantener el código libre de callbacks.
+>
+> [Ir a la guía de migración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/guide-mercadopagojs-v2)
 
 **Usa nuestra librería oficial para acceder a la API de Mercado Pago** desde tu aplicación y recolectar los datos de forma segura.
 
@@ -66,7 +68,9 @@ La información de la tarjeta será convertida en un token para que envíes los 
 >
 > Nueva funcionalidad CardForm
 >
-> Prueba la nueva versión beta de MercadoPago.js y optimiza tu integración al usar la funcionalidad CardForm que obtiene y valida todos los datos necesarios sin que tengas que sumar pasos extras.<br><br>[Ir a la guía de migración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/guide-mercadopagojs-v2)
+> Prueba la nueva versión beta de MercadoPago.js y optimiza tu integración al usar la funcionalidad CardForm que obtiene y valida todos los datos necesarios sin que tengas que sumar pasos extras.
+>
+> [Ir a la guía de migración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/guide-mercadopagojs-v2)
 
 Para realizar la captura de datos sensibles de las tarjetas de tus clientes, **es muy importante que utilices nuestro formulario con los atributos correspondientes** para garantizar la seguridad de la información y la correcta generación del token. Por ejemplo, debes respetar los atributos `data-checkout` y no colocar el atributo `name` en los campos que tienen datos sensibles, de esta forma nunca llegarán a tus servidores.
 

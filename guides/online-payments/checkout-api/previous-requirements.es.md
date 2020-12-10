@@ -34,7 +34,9 @@ MercadoPago.js te permite crear un token de pago para enviar los datos de las ta
 >
 > Prueba la nueva versión beta de MercadoPago.js
 >
-> Integra en menos tiempo con nuestra funcionalidad CardForm, desarrollada con un código ordenado que te permite automatizar validaciones y mantener el código libre de callbacks.<br><br>[Ir a la guía de migración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/guide-mercadopagojs-v2)
+> Integra en menos tiempo con nuestra funcionalidad CardForm, desarrollada con un código ordenado que te permite automatizar validaciones y mantener el código libre de callbacks.
+>
+> [Ir a la guía de migración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/guide-mercadopagojs-v2)
 
 <br>
 
