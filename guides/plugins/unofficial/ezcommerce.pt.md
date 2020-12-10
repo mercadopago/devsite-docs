@@ -23,7 +23,7 @@ Para operar com boleto, siga estes passos:
 2. Acesse "Formas de Pagamento".
 3. Selecione a aba "Boleto bancário".
 4. Clique na opção "Boleto Bancário" que tenha na coluna "Adquirente / Gateway" a informação "mercadopago_transparente".
-5. Preencha os dados do grupo Específico. Para obter o Client ID e Client Secret, veja a seção [Credenciais]([FAKER][CREDENTIALS][URL_BASIC]).
+5. Preencha os dados do grupo Específico. Para obter o Client ID e Client Secret, veja a seção [Credenciais]([FAKER][CREDENTIALS][URL]).
 6. Clique em salvar.
 
     ![Ez Commerce Configuration Page - Ticket](/images/ezcommerce-ticket-1.gif)

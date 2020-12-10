@@ -30,7 +30,7 @@ Em Python 3.x:
 ### Configure suas credenciais
 
 
-Obtenha seu **CLIENT_ID** e **CLIENT_SECRET** [nos seguintes link]([FAKER][CREDENTIALS][URL_BASIC]).
+Obtenha seu **CLIENT_ID** e **CLIENT_SECRET** [nos seguintes link]([FAKER][CREDENTIALS][URL]).
 
 ``` python
     import mercadopago
