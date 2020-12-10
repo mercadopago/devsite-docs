@@ -163,11 +163,11 @@ Antes de activarlas, verifica que las credenciales en tu integración sean las d
 
 > LEFT_BUTTON_REQUIRED_ES
 >
-> Manejo de respuestas de error
+> Mensajes de respuesta
 >
 > Ayuda a tus clientes a completar sus pagos sin errores.
 >
-> [Manejo de respuestas de error](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/handling-responses/)
+> [Mensajes de respuesta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/handling-responses/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >

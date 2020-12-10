@@ -162,11 +162,11 @@ Antes de ativá-las, certifique-se de que as credenciais na sua integração sej
 
 > LEFT_BUTTON_REQUIRED_PT
 >
-> Manipulação de respostas de erro
+> Mensagens de resposta
 >
 > Ajude seus clientes a completar seus pagamentos sem erros.
 >
-> [Manipulação de respostas de erro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/handling-responses/)
+> [Mensagens de resposta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/handling-responses/)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
