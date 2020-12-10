@@ -23,6 +23,8 @@ Te dejamos un resumen de lo que tendrás que hacer para comenzar a usar la nueva
 * Luego, configura las credenciales de la cuenta que estés integrando para identificarla al conectar con Mercado Pago.
 * Por último, actualiza tu formulario de pago con la funcionalidad CardForm para comenzar a usarlo.
 
+<br>
+
 > CLIENT_SIDE
 >
 > h2

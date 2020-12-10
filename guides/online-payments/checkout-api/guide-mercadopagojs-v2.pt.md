@@ -23,6 +23,8 @@ Deixamos um resumo do que você terá que fazer para começar a usar a nova vers
 * Depois, configure as credenciais da conta que estiver integrando para identificá-la ao conectar com Mercado Pago.
 * Por último, atualize seu formulário de pagamento com a funcionalidade CardForm para começar a usá-lo.
 
+<br>
+
 > CLIENT_SIDE
 >
 > h2

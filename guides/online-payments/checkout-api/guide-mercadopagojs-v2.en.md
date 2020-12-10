@@ -19,6 +19,8 @@ We leave you a overview of what you will have to do to start using the new Merca
 * Then, set up the credentials of the account you are integrating so we can identify it when connecting to Mercado Pago.
 * Finally, update your payment form with the CardForm feature and start using it.
 
+<br>
+
 > CLIENT_SIDE
 >
 > h2
