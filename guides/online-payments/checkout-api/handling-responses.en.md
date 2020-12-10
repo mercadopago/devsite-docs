@@ -59,7 +59,7 @@ E302 | invalid parameter securityCode | Check security code.
 324 | invalid parameter docNumber | Invalid ID.
 325 | invalid parameter cardExpirationMonth | Invalid month.
 326 | invalid parameter cardExpirationYear | Invalid year.
-default | Otro código de error | Check data.
+default | Another error code | Check data.
 
 ## Card token generation errors
 
