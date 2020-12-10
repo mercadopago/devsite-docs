@@ -6,6 +6,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## December 2020
 
+
 ### December 11th
 
 > CHANGELOG
@@ -19,6 +20,25 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 Integrate simpler and faster Checkout API with the new CardForm functionality, which keeps your code clean and allows you to automate validations.
 
 [Go to the migration guide](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/guide-mercadopagojs-v2)
+
+
+### December 7th
+
+> CHANGELOG
+>
+> New version of SDK NodeJS
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK NODEJS
+
+We have released a new version of SDK NodeJS 1.5.2.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/dx-nodejs/releases/tag/1.5.2) for further details regarding this release.
 
 
 ### December 1st

@@ -6,6 +6,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Dezembro 2020
 
+
 ### 11 de dezembro
 
 > CHANGELOG
@@ -19,6 +20,26 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 Integre o Checkout Transparente de forma mais simples e rápida com a nova funcionalidade CardForm, que mantém seu código ordenado e permite automatizar validações.
 
 [Ir para o manual de migração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/guide-mercadopagojs-v2)
+
+
+### 7 de dezembro
+
+> CHANGELOG
+>
+> Nova versão SDK NodeJS
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK NODEJS
+
+Lançamos uma nova versão do SDK NodeJS 1.5.2.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-nodejs/releases/tag/1.5.2).
+
 
 ### 1 de dezembro
 
