@@ -15,7 +15,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 >
 > NEW_VERSION: NOVA VERSÃO
 >
-> PRODUCT: MERCADOPAGO.JS
+> PRODUCT: SDK MERCADOPAGO.JS
 
 Integre o Checkout Transparente de forma mais simples e rápida com a nova funcionalidade CardForm, que mantém seu código ordenado e permite automatizar validações.
 

@@ -15,7 +15,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 >
 > NEW_VERSION: NUEVA VERSIÓN
 >
-> PRODUCT: MERCADOPAGO.JS
+> PRODUCT: SDK MERCADOPAGO.JS
 
 Integra Checkout API más simple y rápido con la nueva funcionalidad CardForm, que mantiene tu código ordenado y permite automatizar validaciones.
 
