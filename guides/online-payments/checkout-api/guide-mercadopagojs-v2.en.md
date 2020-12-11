@@ -32,7 +32,7 @@ We leave you a overview of what you will have to do to start using the new Merca
 Add the following script to your site:
 
 ```html
-<script src="https://beta-sdk.mercadopago.com/js/v2"></script>
+<script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Set up credentials

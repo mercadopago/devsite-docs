@@ -36,7 +36,7 @@ Te dejamos un resumen de lo que tendrás que hacer para comenzar a usar la nueva
 Añade el siguiente script en tu sitio:
 
 ```html
-<script src="https://beta-sdk.mercadopago.com/js/v2"></script>
+<script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Configura las credenciales
