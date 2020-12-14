@@ -1,3 +1,7 @@
+---
+indexable: false  
+---
+
 # Migrar para a nova versão do MercadoPago.js
 
 ----[mlb]----

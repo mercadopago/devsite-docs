@@ -1,3 +1,7 @@
+---
+indexable: false  
+---
+
 # Migrate to the new MercadoPago.js version
 
 Learn how to install the **new MercadoPago.js SDK beta version to integrate the Checkout API**. 
