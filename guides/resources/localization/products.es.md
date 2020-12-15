@@ -110,13 +110,13 @@ Suscripciones | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debm
 | :--- | :--- | :--- |
 | Pagos | Link de pago | N/A |
 | Pagos | Checkout Pro | N/A |
-| Pagos | Mobile Checkout | `account_money` |
-| Pagos | Checkout Transparente | N/A |
-| Suscripciones | Link de pago | `bolbradesco`, `giftcard` |
-| Suscripciones | Checkout Pro | `bolbradesco`, `giftcard` |
-| Suscripciones | Checkout Transparente | `bolbradesco`, `giftcard` |
-| Marketplace | Checkout Pro | N/A |
-| Marketplace | Checkout Transparente | N/A |
+| Pagos | Mobile Checkout | `account_money`, `pix` |
+| Pagos | Checkout Transparente | `pix` |
+| Suscripciones | Link de pago | `bolbradesco`, `giftcard`, `pix` |
+| Suscripciones | Checkout Pro | `bolbradesco`, `giftcard`, `pix` |
+| Suscripciones | Checkout Transparente | `bolbradesco`, `giftcard`, `pix` |
+| Marketplace | Checkout Pro | `pix`|
+| Marketplace | Checkout Transparente | `pix` |
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 | Producto | Solución | Medios de pago no disponibles |
