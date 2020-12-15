@@ -47,7 +47,7 @@ Para receber pagamentos com QR em seu negócio, **você pode imprimi-lo e colá-
 >
 > Nota
 >
-> Caso seu modelo não necessite de integração com sistema de ponto de venda, você pode consultar todas as informações disponíveis em [gerar QR do painel](https://www.mercadopago.com.ar/developers/pt/guides/qr-code/integrations-front/).
+> Caso seu modelo não necessite de integração com sistema de ponto de venda, você pode consultar todas as informações disponíveis em [gerar QR do pagina web do Mercado Pago](https://www.mercadopago.com.br/developers/pt/guides/in-person-payments/qr-code/integrations-front/).
 
 ## Características do modelo
 

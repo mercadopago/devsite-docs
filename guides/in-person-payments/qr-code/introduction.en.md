@@ -46,7 +46,7 @@ In order to receive payments with QR, you can **print it and paste it in a visib
 >
 > Note
 >
-> If your model does not require integration with a point of sale system, you can consult all the information available in [generate QR from the panel](https://www.mercadopago.com.ar/developers/en/guides/qr-code/integrations-front/).
+> If your model does not require integration with a point of sale system, you can consult all the information available in [generate QR from the Mercado Pago web page](https://www.mercadopago.com.ar/developers/en/guides/in-person-payments/qr-code/integrations-front/).
 
 ## Main characteristics
 

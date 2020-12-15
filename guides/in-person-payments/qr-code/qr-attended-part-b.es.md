@@ -24,6 +24,12 @@ Te explicamos cómo funciona el modelo atendido:
 1. El punto de venta registra un pedido (1a) y crea una orden asignada a una caja (1b). En este momento la orden se encuentra disponible para ser escaneada (2). 
 2. Cuando el cliente escanea el QR (3) con la orden y realiza el pago (5), se recibe una notificación IPN (4a y 6b) al servidor del vendedor. Con esos datos, se obtiene el estado de la orden (7a), para validar que esté cerrada o siga abierta, pendiente de pago.
 
+## Video explicativo
+
+<center>
+  <iframe width="100%" height="350" src="https://www.youtube.com/watch?v=JsuMZw3Z5k4&list=PLCazXKuqZp3hGVY3bBhEO0ItFhIic5UpK&index=6&ab_channel=MercadoPagoDevelopers" frameborder="0" allow="encrypted-media; picture-in-picture"></iframe>
+</center>
+<br>
 
 ## Crear una orden
 
