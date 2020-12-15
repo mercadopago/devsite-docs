@@ -6,22 +6,6 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Diciembre 2020
 
-
-### 11 de diciembre
-
-> CHANGELOG
->
-> Nueva versión beta SDK MercadoPago.js
->
-> NEW_VERSION: NUEVA VERSIÓN
->
-> PRODUCT: SDK MERCADOPAGO.JS
-
-Integra Checkout API más simple y rápido con la nueva funcionalidad CardForm, que mantiene tu código ordenado y permite automatizar validaciones.
-
-[Ir a la guía de migración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/guide-mercadopagojs-v2)
-
-
 ### 7 de diciembre
 
 > CHANGELOG
