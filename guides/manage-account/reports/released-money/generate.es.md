@@ -60,7 +60,7 @@ Considera estas opciones a la hora de descargar tu reporte:
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
-> Reporte de liberaciones
+> Cómo usar el reporte
 >
 > Qué es y para qué sirve el reporte de liberaciones. Descubre ejemplos y casos de uso.
 >

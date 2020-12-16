@@ -41,7 +41,7 @@ Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la
 
 Observa cómo está compuesto el reporte de liberaciones en este ejemplo para identificar las secciones y leer tus propios reportes:
 
-![Reporte de liberaciones Ejemplos Mercado Pago](/images/manage-account/reports/examples-release-es.jpg)
+![Reporte de liberaciones Ejemplos Mercado Pago](/images/manage-account/reports/examples-release-es.png)
 
 La versión por defecto mostrará una vista extendida de las columnas. El informe final tendrá la mayor cantidad de detalle posible.
 
@@ -60,8 +60,8 @@ La versión por defecto mostrará una vista extendida de las columnas. El inform
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
-> Reporte de liberaciones
+> Glosario
 >
-> Qué es y para qué sirve el reporte de liberaciones. Descubre ejemplos y casos de uso.
+> Conoce qué significa cada término y el detalle de las columnas que componen al reporte.
 >
-> [Cómo usar el reporte](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/released-money/how-to-use/)
+> [Glosario](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/released-money/glossary/)
