@@ -121,6 +121,8 @@ Dinheiro em conta	       	| `account_money`          | `account_money`
 Giftcard                	| `digital_currency`       | `giftcard`
 Pagamento na Lotérica      	| `ticket`| `pec`
 Paypal							| `digital_wallet` | `paypal`
+Pix							| `bank_transfer` 		   | `pix`
+
 
 ### Chile
 
