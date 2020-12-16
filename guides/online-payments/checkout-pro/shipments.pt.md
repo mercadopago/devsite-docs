@@ -152,7 +152,7 @@ Por padrão, você terá configurado o envio por conta do comprador. Se quiser, 
 O custo do envio será debitado da conta do vendedor quando receber um pagamento. 
 
 Você pode oferecer diferentes formas de envio alterando o ID. Confira os
- <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][SITE][ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">ID de formas de envio</a> disponíveis para saber quais adicionar.
+ <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][GLOBALIZE][UPPER_SITE_ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">ID de formas de envio</a> disponíveis para saber quais adicionar.
 
 Por exemplo, no código a seguir, o `ID 505345` se encontra adicionado, referente a um envio normal em domicílio de Mercado Envios e o `ID 100009` para envio normal de Correios.
 
@@ -234,7 +234,7 @@ preference.Shipments = shipments;
 O custo do envio será debitado da conta do vendedor quando receber um pagamento. 
 
 Você pode oferecer diferentes formas de envio alterando o ID. Confira os
- <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][SITE][ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">ID de formas de envio</a> disponíveis para saber quais adicionar.
+ <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][GLOBALIZE][UPPER_SITE_ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">ID de formas de envio</a> disponíveis para saber quais adicionar.
 
 Por exemplo, no código a seguir, o `ID 73328` se encontra adicionado, referente a um envio normal de OCA e o `ID 504945` para envio normal de Andreani.
 
@@ -317,7 +317,7 @@ preference.Shipments = shipments;
 O custo do envio será debitado da conta do vendedor quando receber um pagamento. 
 
 Você pode oferecer diferentes formas de envio alterando o ID. Confira os
- <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][SITE][ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">ID de formas de envio</a> disponíveis para saber quais adicionar.
+ <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][GLOBALIZE][UPPER_SITE_ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">ID de formas de envio</a> disponíveis para saber quais adicionar.
 
 Por exemplo, no código a seguir, o `ID 509247` se encontra adicionado, referente a um envio normal em domicílio e o `ID 509245` para envio prioritário para uma agência dos correios.
 

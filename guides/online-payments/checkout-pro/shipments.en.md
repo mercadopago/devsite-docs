@@ -142,7 +142,7 @@ By default, you'll have shipping configured at the buyer's expense. If you want,
 
 ----[mla]----
 The shipping cost will be debited from the seller’s account when the payment is received. 
-You can offer different shipping methods by changing the ID. Check the available <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][SITE][ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">id shipping methods</a> to know which ones to add.
+You can offer different shipping methods by changing the ID. Check the available <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][GLOBALIZE][UPPER_SITE_ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">id shipping methods</a> to know which ones to add.
 
 For example, in the following code is added the `ID 73328` which refers to a normal home delivery of OCA and the `ID 504945` for normal home delivery of Adreani. 
 
@@ -221,7 +221,7 @@ preference.Shipments = shipments;
 ----[mlm]----
 
 The shipping cost will be debited from the seller’s account when the payment is received. 
-You can offer different shipping methods by changing the ID. Check the available <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][SITE][ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">id shipping methods</a> to know which ones to add.
+You can offer different shipping methods by changing the ID. Check the available <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][GLOBALIZE][UPPER_SITE_ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">id shipping methods</a> to know which ones to add.
 
 For example, in the following code is added the `ID 509247` which refers to a standard delivery to home and the `ID 509245` for priority delivery to a post office.
 
@@ -300,7 +300,7 @@ preference.Shipments = shipments;
 ----[mlb]----
 
 The shipping cost will be debited from the seller’s account when the payment is received. 
-You can offer different shipping methods by changing the ID. Check the available <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][SITE][ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">id shipping methods</a> to know which ones to add.
+You can offer different shipping methods by changing the ID. Check the available <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][GLOBALIZE][UPPER_SITE_ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">id shipping methods</a> to know which ones to add.
 
 For example, in the following code, the `ID 505345` is added, referring to a normal Mercado Envíos shipping address and the `ID 100009` for normal Post Office shipping.
 
