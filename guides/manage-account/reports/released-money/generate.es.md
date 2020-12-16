@@ -54,9 +54,9 @@ Considera estas opciones a la hora de descargar tu reporte:
 >
 > Introducción al reporte de liberaciones 
 >
-> Crea tus reportes de forma manual desde tu cuenta de Mercado Pago.
+> Conoce qué es y para qué sirve el reporte de liberaciones.
 >
-> [Introducción al reporte de liberaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/released-money/panel/)
+> [Introducción al reporte de liberaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/released-money/introduction/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
