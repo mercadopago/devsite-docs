@@ -123,13 +123,13 @@ Assinaturas | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmas
 | :--- | :--- | :--- |
 | Pagamentos | Link de pagamento | N/A |
 | Pagamentos | Checkout Pro | N/A |
-| Pagamentos | Mobile Checkout | `account_money` |
-| Pagamentos | Checkout API | N/A |
-| Assinaturas | Link de pagamento | `bolbradesco`, `giftcard` |
-| Assinaturas | Checkout Pro | `bolbradesco`, `giftcard` |
-| Assinaturas | Checkout API | `bolbradesco`, `giftcard` |
-| Marketplace | Checkout Pro | N/A |
-| Marketplace | Checkout API | N/A |
+| Pagamentos | Mobile Checkout | `account_money`, `pix` |
+| Pagamentos | Checkout API | `pix` |
+| Assinaturas | Link de pagamento | `bolbradesco`, `giftcard`, `pix`  |
+| Assinaturas | Checkout Pro | `bolbradesco`, `giftcard`, `pix`  |
+| Assinaturas | Checkout API | `bolbradesco`, `giftcard`, `pix`  |
+| Marketplace | Checkout Pro | `pix` |
+| Marketplace | Checkout API | `pix` |
 ------------
 
 
