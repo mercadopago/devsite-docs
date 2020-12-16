@@ -52,7 +52,7 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 
   ![Setting client id and client secret](/images/zencart-credentials.png) <br />
 
-	Get your [CLIENT_ID and CLIENT_SECRET]([FAKER][CREDENTIALS][URL_BASIC]).
+	Get your [CLIENT_ID and CLIENT_SECRET]([FAKER][CREDENTIALS][URL]).
 
 5. Set the status for IPN (Instant Payment Notification):
 

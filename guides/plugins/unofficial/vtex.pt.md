@@ -29,8 +29,8 @@ Para criar uma **afiliação de gateway de pagamento com o Mercado Pago**, siga 
 |-------------------------------------------|---------------------------------------------------------------------------------------|
 | Nome da afiliação | Defina o nome que identificará a sua Afiliação. |
 | OAuth login | Não é utilizado. Deixe-o como está. |
-| PublicKey | Refere-se às suas [credenciais]([FAKER][CREDENTIALS][URL_BASIC]) do Mercado Pago. Complete com sua Public Key. |
-| AccessToken | Refere-se às suas [credenciais]([FAKER][CREDENTIALS][URL_BASIC]) do Mercado Pago. Complete com seu Access Token. |
+| PublicKey | Refere-se às suas [credenciais]([FAKER][CREDENTIALS][URL]) do Mercado Pago. Complete com sua Public Key. |
+| AccessToken | Refere-se às suas [credenciais]([FAKER][CREDENTIALS][URL]) do Mercado Pago. Complete com seu Access Token. |
 | RefreshToken | Deixar em branco. |
 | ExpiredTokenIn | Deixar em branco. |
 | Merchant Account Id | Deixar em branco. |
