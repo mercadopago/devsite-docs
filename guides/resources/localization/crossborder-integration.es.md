@@ -141,8 +141,9 @@ Para llevar a cabo la integración deberás seguir la documentación que podrás
 Este sería un ejemplo de la creación de la preferencia de pago:
 
 ``` curl
-$ curl https://api.mercadopago.com/checkout/preferences?access_token=<ACCESS_TOKEN> \
+$ curl https://api.mercadopago.com/checkout/preferences \
   -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer <ACCESS_TOKEN>' \
   -d '
 {
 	"items": [
@@ -488,8 +489,9 @@ Este sería un ejemplo de la creación del checkout:
 Este sería un ejemplo de la creación del pago:
 
 ``` json
-$ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
+$ curl https://api.mercadopago.com/v1/payments \
   -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer <ACCESS_TOKEN>' \
   -d '
   {
 	"transaction_amount": 100,
@@ -755,8 +757,9 @@ Deberás generar un formulario de tarjeta como se indica en la documentación qu
 Este sería un ejemplo de la creación del pago:
 
 ``` json
-$ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
+$ curl https://api.mercadopago.com/v1/payments \
   -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer <ACCESS_TOKEN>' \
   -d '
   {
 	"transaction_amount": 100,

@@ -80,14 +80,16 @@ Para manter a consistência semântica com os resultados do endpoint /payments/s
 
 ```json
 curl -X GET \
- "http://api.mercadopago.com/v1/payments/search?access_token=ENV_ACCESS_TOKEN&site_id=MLA&limit=50&range=date_created&end_date=NOW&begin_date=NOW-90DAYS&sort=date_created&criteria=desc&payer.id=PAYER_ID" 
+ -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+ "http://api.mercadopago.com/v1/payments/search?site_id=MLA&limit=50&range=date_created&end_date=NOW&begin_date=NOW-90DAYS&sort=date_created&criteria=desc&payer.id=PAYER_ID" 
 ```
 
 Para manter a consistência semântica com os resultados do endpoint /payments/search, você deve adicionar o parâmetro payer.id com o seu identificador de usuário.
 
 ```json
 curl -X GET \
- "http://api.mercadopago.com/v1/payments/search?access_token=ENV_ACCESS_TOKEN&site_id=MLA&limit=50&range=date_created&end_date=NOW&begin_date=NOW-90DAYS&sort=date_created&criteria=desc&collector.id=COLLECTOR_ID" 
+ -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+ "http://api.mercadopago.com/v1/payments/search?site_id=MLA&limit=50&range=date_created&end_date=NOW&begin_date=NOW-90DAYS&sort=date_created&criteria=desc&collector.id=COLLECTOR_ID" 
 ```
 
 ### Devolução total
@@ -95,7 +97,8 @@ curl -X GET \
 ```json
 curl -X POST \
         -H "content-type: application/json" \
-        "https://api.mercadopago.com/v1/payments/:id/refunds?access_token=ENV_ACCESS_TOKEN"
+        -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+        "https://api.mercadopago.com/v1/payments/:id/refunds"
 ```
 
 
@@ -104,7 +107,8 @@ curl -X POST \
 ```curl
 curl -X POST \
         -H 'content-type: application/json' \
-        'https://api.mercadopago.com/v1/payments/12861583/refunds?access_token=ENV_ACCESS_TOKEN' \
+        -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+        'https://api.mercadopago.com/v1/payments/12861583/refunds' \
         -d '{
                 "amount": 5.0
         }'

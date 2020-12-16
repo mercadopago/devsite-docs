@@ -142,8 +142,9 @@ To carry out the integration, you must follow the documentation that you can fin
 This is an example of the creation of the payment preference:
 
 ``` curl
-$ curl https://api.mercadopago.com/checkout/preferences?access_token=<ACCESS_TOKEN> \
+$ curl https://api.mercadopago.com/checkout/preferences \
   -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer <ACCESS_TOKEN>' \
   -d '
 {
 	"items": [
@@ -490,8 +491,9 @@ This would be an example of the creation of the checkout:
 This is an example of the creation of the payment:
 
 ``` json
-$ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
+$ curl https://api.mercadopago.com/v1/payments \
   -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer <ACCESS_TOKEN>' \
   -d '
   {
 	"transaction_amount": 100,
@@ -757,8 +759,9 @@ You must generate a card form as indicated in the documentation that allows you 
 This is an example of the creation of the payment:
 
 ``` json
-$ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
+$ curl https://api.mercadopago.com/v1/payments \
   -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer <ACCESS_TOKEN>' \
   -d '
   {
 	"transaction_amount": 100,

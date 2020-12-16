@@ -1,0 +1,30 @@
+---
+samples:
+- curl.sh
+use:
+- user_id
+- external_pos_id
+
+errors:
+- 400 BAD_REQUEST:
+  - invalid_collectorId:
+      description:
+        en: user_id must be a number.
+        es: user_id debe ser un número.
+        pt: user_id deve ser um número.
+  - invalid_externalPosId:
+      description:
+        en: externalPosId must be present.
+        es: externalPosId debe estar presente.
+        pt: externalPosId deve estar presente.
+- 404 NOT_FOUND:
+  - point_of_sale_in_store_order_not_found:
+        en: No associated order found.
+        es: No se encontró ninguna orden asociada.
+        pt: Nenhum pedido associado encontrado.
+- 500 SERVER_ERROR:
+  - in_store_order_creation_error:
+      description:
+        en: Failed to create order.
+        es: Error al intentar crear una orden.
+        pt: Erro ao tentar criar uma ordem.

@@ -218,7 +218,10 @@ You must create a QR code for each POS with an `url`.
 **API QR**
 
 ```bash
-curl -X POST https://api.mercadopago.com/pos?access_token=ACCESS_TOKEN -d
+curl -X POST \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+https://api.mercadopago.com/pos \
+-d \
 '{
     "name":"Principal Pump",
     "fixed_amount": true,
@@ -242,13 +245,18 @@ There will be times when you will need to [refund](https://www.mercadopago.com.a
 **Total Refund**
 
 ```bash
-curl -X POST https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds?access_token=ACCESS_TOKEN
+curl -X POST \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds
 ```
 
 **Parcial Refund**
 
 ```bash
-curl -X POST https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds?access_token=ACCESS_TOKEN -d '{ "amount": 10.50 }'
+curl -X POST \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds \
+-d '{ "amount": 10.50 }'
 ```
 
 ## Testing
@@ -257,7 +265,7 @@ Two test users must be created: one buyer and another collector. With the billin
 
 > **NOTE**: If in the tests you will use a test account, all accounts must be tested. Otherwise, if you use a real account, all related accounts must be real. **If the `sponsor_id` is added in the testing phase, remember that you must be a test user.**
 
-Consult the [test data](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/v1/testing): test users and test cards that can be used.
+Consult the [test data](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/test-integration): test users and test cards that can be used.
 
 | Test cases                                                   | Expected response                                            |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |

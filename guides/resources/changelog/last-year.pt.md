@@ -38,7 +38,7 @@ Para atender aos mais altos padrões de segurança, buscamos estar sempre atuali
 
 Se a estiver usando, **você deve revisar sua versão e atualizá-la para evitar problemas e perda de serviço.** Caso você não queira fazer isso, pode usar outro tipo de notificação que oferecemos. 
 
-Confira todas as informações necessárias no [manual da migração](https://www.mercadopago.com.br/developers/pt/guides/resources/changelog/ipn-ow-guide).
+Confira todas as informações necessárias no [manual da migração](https://www.mercadopago.com.br/developers/pt/guides/resources/changelog/migration-guides/ipn-ow-guide).
 
 ----[mlc, mco]----
 

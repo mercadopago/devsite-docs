@@ -1,2 +1,3 @@
 curl -X GET \
-  'https://api.mercadopago.com/stores/ID?access_token=PROD_ACCESS_TOKEN'
+  'https://api.mercadopago.com/stores/ID' \
+  -H 'Authorization: Bearer PROD_ACCESS_TOKEN'

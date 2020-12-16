@@ -87,9 +87,9 @@ definitions:
       - email:
           type: String(256)
           description:
-            en: Buyer e-mail address.
-            es: E-mail del comprador.
-            pt: E-mail do comprador.
+            en: Deprecated field, will return an empty string.
+            es: Campo deprecado, responderá una cadena vacía.
+            pt: Deprecated field, will return an empty string.
       - nickname:
           type: String(256)
           description:

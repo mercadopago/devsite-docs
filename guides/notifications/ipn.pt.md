@@ -2,7 +2,7 @@
 
 O **IPN** (_Instant Payment Notification_) é uma notificação enviada de um servidor a outro mediante uma chamada `HTTP POST` para informar sobre suas transações.
 
-Para receber notificações de eventos na sua plataforma, você pode [configurar previamente uma notification_url à qual Mercado Pago tiver acesso](https://www.mercadopago.com.br/ipn-notifications).
+Para receber notificações de eventos na sua plataforma, você pode [configurar previamente uma notification_url à qual Mercado Pago tiver acesso](https://www.mercadopago[FAKER][URL][DOMAIN]/ipn-notifications).
 
 ## Eventos
 
@@ -45,9 +45,9 @@ Depois disso, você poderá obter a informação completa do recurso notificado 
 
 Tipo               | URL                                                         | Documentação
 ------------------ | ----------------------------------------------------------- | --------------------
-payment            | /v1/payments/[ID]?access\_token=[ACCESS\_TOKEN] | [ver documentação](https://www.mercadopago.com.ar/developers/pt/reference/payments/_payments_id/get/)
-chargebacks    	   | /v1/chargebacks/[ID]?access\_token=[ACCESS\_TOKEN]| -
-merchant_orders    | /merchant\_orders/[ID]?access\_token=[ACCESS\_TOKEN]           | [ver documentação](https://www.mercadopago.com.ar/developers/pt/reference/merchant_orders/_merchant_orders_id/get/)
+payment            | /v1/payments/[ID] | [ver documentação](https://www.mercadopago.com.ar/developers/pt/reference/payments/_payments_id/get/)
+chargebacks    	   | /v1/chargebacks/[ID]| -
+merchant_orders    | /merchant\_orders/[ID]           | [ver documentação](https://www.mercadopago.com.ar/developers/pt/reference/merchant_orders/_merchant_orders_id/get/)
 
 
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma, por exemplo: atualizar um pagamento aprovado o un pedido fechado.
@@ -124,7 +124,9 @@ Dentro da ordem, no objeto payments, você vai encontrar todos os pagamentos del
 **Se você estiver integrando pagamentos presenciais**, é necessário aplicar como método de contingência a **pesquisa da ordem** utilizando o seu `external_reference` como critério de pesquisa.
 
 ```curl
-curl -X GET https://api.mercadopago.com/merchant_orders?external_reference=$EXTERNAL_REFERENCE&access_token=$ACCESS_TOKEN -d
+curl -X GET \
+    -H 'Authorization: Bearer $ACCESS_TOKEN' \
+    https://api.mercadopago.com/merchant_orders?external_reference=$EXTERNAL_REFERENCE
 ```
 Mais informações na [Referência de API](https://www.mercadopago.com.br/developers/pt/reference/merchant_orders/_merchant_orders_search/get/).
 

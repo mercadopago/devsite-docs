@@ -7,6 +7,7 @@ The payment methods offered by Mercado Pago vary by country.
 You can get the payment methods as follows:
 
 **GET /v1/payment_methods**
+
 [[[
 ```php
 	<?php
@@ -19,7 +20,8 @@ You can get the payment methods as follows:
 ```curl
 curl -X GET \
 -H "Content-Type: application/json" \
-'https://api.mercadolibre.com/sites/SITE_ID/payment_methods?marketplace=NONE'
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+'https://api.mercadopago.com/sites/SITE_ID/payment_methods?marketplace=NONE'
 ```
 ]]]
 
@@ -39,7 +41,8 @@ Also, you can get the payment methods supported for recurring payments/payments 
 ```curl
 curl -X GET \
 -H "Content-Type: application/json" \
-'https://api.mercadolibre.com/sites/SITE_ID/payment_methods?marketplace=NONE&operation_type=recurring_payment'
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+'https://api.mercadopago.com/sites/SITE_ID/payment_methods?marketplace=NONE&operation_type=recurring_payment'
 ```
 ]]]
 
@@ -86,7 +89,7 @@ curl -X GET \
 		...
 	]
 
-The results included in this response will coincide with the country associated with your Mercado Pago account. For more information about this feature and its attributes, go to  [API reference]https://www.mercadopago.com.ar/developers/en/reference/payment_methods/_payment_methods/get/).
+The results included in this response will coincide with the country associated with your Mercado Pago account. For more information about this feature and its attributes, go to  [API reference](https://www.mercadopago.com.ar/developers/en/reference/payment_methods/_payment_methods/get/).
 
 ## Payment methods by country
 
@@ -136,7 +139,7 @@ Boleto Bancario			| `ticket`                 | `bolbradesco`
 Account money	       		| `account_money`          | `account_money`
 Giftcard                	| `digital_currency`       | `giftcard`
 Paypal							| `digital_wallet` | `paypal`
-
+Pix						| `bank_transfer` 		   | `pix`
 
 ### Chile
 
@@ -149,6 +152,9 @@ Diners Club International	| `credit_card`            | `diners`
 Tarjeta CMR             	| `credit_card`            | `cmr`
 Tarjeta Magna             	| `credit_card`            | `magna`
 Tarjeta Presto             	| `credit_card`            | `presto`
+Visa Debit             	| `debit_card`            | `debvisa`
+Mastercard Debit             	| `debit_card`            | `debmaster`
+Redcompra             	| `debit_card`            | `redcompra`
 Servipag      			| `ticket`                 | `servipag`
 Red Compras (Webpay)		| `bank_transfer`          | `webpay`
 Khipu      			| `bank_transfer`          | `khipu`
@@ -163,8 +169,9 @@ Mastercard			| `credit_card`            | `master`
 American Express		| `credit_card`            | `amex`
 Diners Club International	| `credit_card`            | `diners`
 Crédito Fácil Codensa    	| `credit_card`            | `codensa`
+Visa Debit       		| `debit_card`             | `debvisa`
+Mastercard Debit		| `debit_card`             | `debmaster`
 Efecty        			| `ticket`                 | `efecty`
-Davivienda       		| `ticket`                 | `davivienda`
 PSE    			       	| `bank_transfer`          | `pse`
 Account money	       		| `account_money`          | `account_money`
 

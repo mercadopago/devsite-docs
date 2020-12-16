@@ -27,7 +27,8 @@ Para hacer el request, es necesario que envíes el `payment_method_id` y el `bin
 ```
 curl -X GET \
 -H "accept: application/json" \
-"https://api.mercadopago.com/v1/payment_methods/installments?[payment_method_id=:id]&[bin=:bin]&[amount=:amount]&[issuer.id=:issuer_id]&access_token=TEST-5252485006568871-060216-a48700bfc7c55fd627e1a107f7ece57e__LA_LB__-110261734"
+-H 'Authorization: Bearer TEST-5252485006568871-060216-a48700bfc7c55fd627e1a107f7ece57e__LA_LB__-110261734' \
+"https://api.mercadopago.com/v1/payment_methods/installments?[payment_method_id=:id]&[bin=:bin]&[amount=:amount]&[issuer.id=:issuer_id]"
 ```
 
 El resultado obtenido será una lista de cuotas que contendrán dicha información dentro del atributo `labels`:

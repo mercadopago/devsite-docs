@@ -56,7 +56,7 @@ Para generar un duplicado del boleto es necesario que uses el [método GET de la
 
 La consulta sería de la siguiente forma:
 
-`https://api.mercadopago.com/v1/payments/PAYMENT_ID?access_token=ACCESS_TOKEN`
+`https://api.mercadopago.com/v1/payments/PAYMENT_ID`
 
 El retorno de la llamada va a devolver el parámetro `transaction_details` que contendrá el `external_resource_url` con el link del boleto duplicado.
 

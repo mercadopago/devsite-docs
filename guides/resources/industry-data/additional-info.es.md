@@ -54,8 +54,9 @@ Agrega toda la información adicional que quieras.
 | `express_shipment` | Boolean | `True` si lo es, `False` si no lo es. |
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "auto_return": "approved",
     "back_urls": {
@@ -86,7 +87,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
         },
         "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -122,7 +123,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
     "shipments": {
         "mode": "not_specified",
         "receiver_address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "city_name": "[FAKER][ADDRESS][CITY]",
             "state_name": "[FAKER][ADDRESS][STATE]",
@@ -184,8 +185,9 @@ Agrega toda la información adicional que quieras.
 | `express_shipment` | Boolean | `True` si lo es, `False` si no lo es. |
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "auto_return": "approved",
     "back_urls": {
@@ -214,7 +216,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
         },
         "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -250,7 +252,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
     "shipments": {
         "mode": "not_specified",
         "receiver_address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "city_name": "[FAKER][ADDRESS][CITY]",
             "state_name": "[FAKER][ADDRESS][STATE]",
@@ -311,8 +313,9 @@ Agrega toda la información adicional que quieras.
 | `express_shipment` | Boolean | `True` si lo es, `False` si no lo es. |
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "auto_return": "approved",
     "back_urls": {
@@ -372,7 +375,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
     "shipments": {
         "mode": "not_specified",
         "receiver_address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "city_name": "[FAKER][ADDRESS][CITY]",
             "state_name": "[FAKER][ADDRESS][STATE]",
@@ -436,8 +439,9 @@ Agrega toda la información adicional que quieras.
 
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "auto_return": "approved",
     "back_urls": {
@@ -468,7 +472,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
         },
         "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -504,7 +508,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
     "shipments": {
         "mode": "not_specified",
         "receiver_address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "city_name": "[FAKER][ADDRESS][CITY]",
             "state_name": "[FAKER][ADDRESS][STATE]",
@@ -555,8 +559,9 @@ Agrega toda la información adicional que quieras.
 | `last_purchase` | Date | Fecha de la última compra en el sitio. |
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "auto_return": "approved",
     "back_urls": {
@@ -586,7 +591,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
         },
         "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -673,8 +678,9 @@ Agrega toda la información adicional que quieras.
 | `express_shipment` | Boolean | `True` si lo es, `False` si no lo es. |
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "auto_return": "approved",
     "back_urls": {
@@ -704,7 +710,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
         },
         "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -740,7 +746,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
     "shipments": {
         "mode": "not_specified",
         "receiver_address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "city_name": "[FAKER][ADDRESS][CITY]",
             "state_name": "[FAKER][ADDRESS][STATE]",
@@ -802,8 +808,9 @@ Agrega toda la información adicional que quieras.
 | `street_number` | Integer | Número de calle |
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "auto_return": "approved",
     "back_urls": {
@@ -834,7 +841,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
         },
         "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -870,7 +877,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
     "shipments": {
         "mode": "not_specified",
         "receiver_address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "city_name": "[FAKER][ADDRESS][CITY]",
             "state_name": "[FAKER][ADDRESS][STATE]",
@@ -932,8 +939,9 @@ Agrega toda la información adicional que quieras.
 
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "auto_return": "approved",
     "back_urls": {
@@ -977,7 +985,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
         },
         "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -1058,8 +1066,9 @@ Agrega toda la información adicional que quieras.
 | `last_purchase` | Date | Fecha de la última compra en el sitio. |
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "auto_return": "approved",
     "back_urls": {
@@ -1097,7 +1106,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
         },
         "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -1171,8 +1180,9 @@ Agrega toda la información adicional que quieras.
 | `last_purchase` | Date | Fecha de la última compra en el sitio. |
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "auto_return": "approved",
     "back_urls": {
@@ -1201,7 +1211,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
         },
         "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -1289,8 +1299,9 @@ Agrega toda la información adicional que quieras.
 | `local_pickup` | Boolean | `True` si se retira en sucursal, `False` si no lo hace. |
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "auto_return": "approved",
     "back_urls": {
@@ -1320,7 +1331,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
         },
         "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -1357,7 +1368,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
         "mode": "not_specified",
         "local_pickup": false,
         "receiver_address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "city_name": "[FAKER][ADDRESS][CITY]",
             "state_name": "[FAKER][ADDRESS][STATE]",
@@ -1420,8 +1431,9 @@ Agrega toda la información adicional que quieras.
 | `local_pickup` | Boolean | `True` si se retira en sucursal, `False` si no lo hace. |
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "auto_return": "approved",
     "back_urls": {
@@ -1451,7 +1463,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
         },
         "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },
@@ -1487,7 +1499,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
         "mode": "not_specified",
         "local_pickup": false,
         "receiver_address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "city_name": "[FAKER][ADDRESS][CITY]",
             "state_name": "[FAKER][ADDRESS][STATE]",
@@ -1538,8 +1550,9 @@ Agrega toda la información adicional que quieras.
 | `last_purchase` | Date | Fecha de la última compra en el sitio. |
 
 ```curl
-curl --location --request POST 'https://api.mercadopago.com/checkout/preferences?access_token=YOUR_ACCESS_TOKEN' \
+curl --location --request POST 'https://api.mercadopago.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
 --data-raw '{
     "auto_return": "approved",
     "back_urls": {
@@ -1569,7 +1582,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
             "number": "[FAKER][PHONE_NUMBER][CELL_PHONE]"
         },
         "address": {
-            "zip_code": "[FAKER][ADDRESS][ZIP]",
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
             "street_name": "[FAKER][ADDRESS][STREET_NAME]",
             "street_number": [FAKER][NUMBER][BETWEEN][1000,2000]
         },

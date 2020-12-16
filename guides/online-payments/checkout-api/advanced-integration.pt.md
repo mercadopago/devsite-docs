@@ -104,8 +104,9 @@ MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 ```curl
 
 curl -X POST \
-'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards?access_token=ENV_ACCESS_TOKEN' \
   -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+  'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
   -d '{"token": "9b2d63e00d66a8c721607214cedaecda"}'
 
 ```
@@ -238,13 +239,15 @@ MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
 ```
 ```curl
 curl -X POST \
-'https://api.mercadopago.com/v1/customers?access_token=ENV_ACCESS_TOKEN' \
   -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+  'https://api.mercadopago.com/v1/customers' \
   -d '{"email": "test@test.com"}'
 
 curl -X POST \
-'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards?access_token=ENV_ACCESS_TOKEN' \
   -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+  'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
   -d '{"token": "9b2d63e00d66a8c721607214cedaecda"}'
 ```
 
@@ -346,7 +349,8 @@ List<Card> cards = customer.Cards;
 ```curl
 
 curl -X GET \
-  'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards/?access_token=ENV_ACCESS_TOKEN' \
+  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+  'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
 ```
 
 ]]]
@@ -489,8 +493,9 @@ payment.save()
 ```curl
 
 curl -X POST \
-  'https://api.mercadopago.com/v1/payments?access_token=ENV_ACCESS_TOKEN' \
   -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+  'https://api.mercadopago.com/v1/payments' \
   -d '{
   transaction_amount: 100,
   token: "ff8080814c11e237014c1ff593b57b4d",
@@ -555,7 +560,8 @@ Busque informação de um cliente caso necessário. Por exemplo, caso não saiba
 ```curl
 
 curl -X GET \
-  'https://api.mercadopago.com/v1/customers/search?access_token=ENV_ACCESS_TOKEN' \
+  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+  'https://api.mercadopago.com/v1/customers/search' \
   -d '{
     "email": "test_user_19653727@testuser.com"
 }'
@@ -651,7 +657,8 @@ curl -X GET \
 ```curl
 
 curl -X GET \
-  'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards/?access_token=ENV_ACCESS_TOKEN' \
+  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+  'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
 
 ```
 

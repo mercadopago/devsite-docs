@@ -38,7 +38,10 @@ Ejecuta el siguiente código para generarla:
 
 [[[
  ```curl
-curl -X POST https://api.mercadopago.com/users/$USER_ID/stores?access_token=PROD_ACCESS_TOKEN -d
+curl -X POST \
+-H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
+https://api.mercadopago.com/users/$USER_ID/stores \
+-d \
 {  
    "name":"Sucursal Instore",
    "business_hours":{  
@@ -99,7 +102,10 @@ Al tener creadas tus sucursales, puedes crear tus cajas. Ten en cuenta lo siguie
 
 [[[
  ```curl
-curl -X POST https://api.mercadopago.com/pos?access_token=PROD_ACCESS_TOKEN -d     
+curl -X POST \
+-H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
+https://api.mercadopago.com/pos \
+-d \    
 {
   "name":"Caja Principal", 
   "fixed_amount": true,
@@ -125,5 +131,4 @@ Una vez creada la caja, podremos ver en el _Response_ los links a distintos entr
 >
 > Conoce paso a paso cómo integrar este modelo.
 >
-> [Integrar QR modelo atendido](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-attended-part-b/)
-
+> [Integrar QR modelo atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/qr-attended-part-b/)

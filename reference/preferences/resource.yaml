@@ -368,6 +368,12 @@ definitions:
         en: URL where you'd like to receive a payment notification.
         es: URL a la cual te gustaría recibir notificaciones de pagos.
         pt: URL para a qual você gostaria de receber notificações de pagamentos.
+  - statement_descriptor:
+      type: String
+      description:
+        en: 'How will look the payment in the card bill (e.g.: MERCADOPAGO).'
+        es: 'Cómo aparecerá el pago en el resumen de tarjeta (ej.: MERCADOPAGO).'
+        pt: 'Como aparecerá o pagamento no extrato do cartão (ex: o MERCADOPAGO).'
   - id:
       type: String(UUID)
       description:

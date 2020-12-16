@@ -1,10 +1,5 @@
 ---
-sites_supported:
-  - mla
-  - mlb
-  - mlm
-  - mlc
-  - mpe
+  indexable: false
 ---
 
 # Meios de pagamento e disponibilidade
@@ -17,8 +12,6 @@ Atualmente os meios de pagamento aceitos são os seguintes:
 |Brasil   |credit_card, ticket                     |Split de pagamentos, Wallet      |
 |Mexico   |credit_card                             |Split de pagamentos              |
 |Chile    |credit_card                             |Split de pagamentos              |
-|Colombia |credit_card                             |Split de pagamentos              |
-|Uruguay  |credit_card                             |Split de pagamentos              |
 |Perú     |credit_card                             |Split de pagamentos              |
 
 > NOTE

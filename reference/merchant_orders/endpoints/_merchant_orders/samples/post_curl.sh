@@ -1,5 +1,6 @@
 curl -X POST \
-  'https://api.mercadopago.com/merchant_orders?access_token=ACCESS_TOKEN_ENV' \
+  'https://api.mercadopago.com/merchant_orders' \
+  -H 'Authorization: Bearer ACCESS_TOKEN_ENV' \
   -d '{
     "preference_id": "preference_id",
     "items": [

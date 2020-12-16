@@ -218,7 +218,10 @@ Você deve criar um código QR para cada fornecedor ou bomba com uma `url` confi
 **API de criação de QRs**
 
 ```bash
-curl -X POST https://api.mercadopago.com/pos?access_token=ACCESS_TOKEN -d
+curl -X POST \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+https://api.mercadopago.com/pos \
+-d \
 '{
     "name":"Caixa principal", 
     "fixed_amount": true,
@@ -243,13 +246,18 @@ Haverá momentos em que você precisará efetuar a [devolução](https://www.mer
 **Devolução total**
 
 ```bash
-curl -X POST https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds?access_token=ACCESS_TOKEN
+curl -X POST \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds
 ```
 
 **Devolução parcial**
 
 ```bash
-curl -X POST https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds?access_token=ACCESS_TOKEN -d '{ "amount": 10.50 }'
+curl -X POST \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds \
+-d '{ "amount": 10.50 }'
 ```
 
 ## Testes
@@ -258,7 +266,7 @@ Para testar a integração, você deve criar dois usuários de teste: um comprad
 
 Você usará o usuário vendedor para criar o QR e completar o dado `collector_id`; Assim, com o usuário comprador, acesse o aplicativo Mercado Pago ou Mercado Livre e complete o fluxo.
 
-Verifique os [dados de teste](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/v1/testing): teste usuários e cartões de teste que podem ser usados.
+Verifique os [dados de teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration): teste usuários e cartões de teste que podem ser usados.
 
 > **NOTA**: Se nos testes você usar uma conta de teste, todas as contas devem ser de testes. Caso contrário, se você usar uma conta real, todas as contas relacionadas deverão ser reais. **Se o `sponsor_id` for adicionado na fase de teste, lembre-se de que você deve ser um usuário de teste.**
 

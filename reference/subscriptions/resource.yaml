@@ -1,0 +1,145 @@
+title: Subscriptions API
+key: subscriptions
+order: 13
+version:
+baseUri: https://api.mercadopago.com
+paths:
+  /preapproval:
+    methods:
+      - post
+definitions:
+  type: object
+  properties:
+  - id:
+      type: String
+      description:
+        en: Preapproval ID.
+        es: Identificador de suscripción.
+        pt: Identificador de assinatura.
+  - preapproval_plan_id:
+      type: String
+      description:
+        en: Preapproval ID. 
+        es: Identificador de plan.
+        pt: Identificador de plano.
+  - payer_id:
+      type: String
+      description:
+        en: Payer ID. 
+        es: Identificador de pagador.
+        pt: Identificador de pagador.
+  - payer_email:
+      type: String
+      description:
+        en: Customer's e-mail.
+        es: E-mail del pagador.
+        pt: Email do pagador.
+  - back_url:
+      type: String
+      description:
+        en: Return URL.
+        es: url de retorno.
+        pt: url de retorno.
+  - collector_id:
+      type: String
+      description:
+        en: Seller ID. 
+        es: Identificador de vendedor.
+        pt: Identificador de fornecedor.
+  - application_id:
+      type: String
+      description:
+        en: Application ID. 
+        es: Identificador de aplicación.
+        pt: Identificador de aplicativo.
+  - status:
+      type: String
+      description:
+        en: Preapproval status. 
+        es: Estado de suscripción.
+        pt: Status de assinatura.
+  - reason:
+      type: String
+      description:
+        en: Preapproval titlte. 
+        es: Titulo de suscripción.
+        pt: Título da assinatura.
+  - external_reference:
+      type: String
+      description:
+        en: Preapproval reference value. 
+        es: Valor de referencia de suscripción.
+        pt: Valor de referência de assinatura.
+  - date_created:
+      type: Date(ISO_8601)
+      description:
+        en: preapproval's creation date.
+        es: Fecha de creación de suscripción.
+        pt: Data de criação da assinatura.
+  - last_modified:
+      type: Date(ISO_8601)
+      description:
+        en: preapproval's last update date.
+        es: Fecha de última actualización de suscripción.
+        pt: Data da última atualização de assinatura.
+  - init_point:
+      type: String
+      description:
+        en: Preapproval checkout link. 
+        es: Link de adhesión de suscripción.
+        pt: Link de inscrição de assinatura.
+  - payment_method_id:
+      type: String
+      description:
+        en: Payment Method Id. 
+        es: Identificador de medio de pago.
+        pt: Identificador da forma de pagamento.
+  - version:
+      type: String
+      description:
+        en: Version. 
+        es: Version.
+        pt: Versão.
+  - auto_recurring:
+      type: Object
+      description:
+        en: Recurring data.
+        es: Datos de recurrencia de suscripción.
+        pt: Dados de recorrência de assinatura.
+      properties:
+      - frequency:
+          type: Integer
+          description:
+            en: Recurring frecuency.
+            es: Cantidad de dias de la recurrencia.
+            pt: Número de dias de recorrência.
+      - frequency_type:
+          type: String
+          description:
+            en: Recurring frecuency type (days or months).
+            es: Tipo de recurrencia (dias o meses).
+            pt: Tipo de recorrência (dias ou meses).
+      - transaction_amount:
+          type: Number
+          description:
+            en: Recurring amount.
+            es: Monto de la suscripción.
+            pt: Valor da assinatura.
+      - currency_id:
+          type: String
+          description:
+            en: Currency Id.
+            es: Identificador de moneda local.
+            pt: Identificador de moeda local.
+      - start_date:
+          type: Date(ISO_8601)
+          description:
+            en: preapproval's start date.
+            es: Fecha de inicio de suscripción.
+            pt: Data de início da assinatura.
+      - end_date:
+          type: Date(ISO_8601)
+          description:
+            en: preapproval's end date.
+            es: Fecha de fin de suscripción.
+            pt: Data de término da assinatura.

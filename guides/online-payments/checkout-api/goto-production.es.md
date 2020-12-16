@@ -41,7 +41,7 @@ Implementando estas notificaciones, podrás enterarte de todas las actualizacion
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mostrar los correctos mensajes de respuesta
 
-Como se menciona en la [sección de Manejo de respuestas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/handling-responses/), se le deben mostrar los mensajes correspondientes al cliente, dependiendo el resultado del pago, para que el mismo pueda accionar de la manera correcta.
+Como se menciona en la [sección de Mensajes de respuesta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/handling-responses/), se le deben mostrar los mensajes correspondientes al cliente, dependiendo el resultado del pago, para que el mismo pueda accionar de la manera correcta.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sé transparente con las promociones y financiación
 
@@ -62,13 +62,13 @@ Debes disponer de una política de términos y condiciones y aclarar que sos res
 ---
 ### Próximos pasos
 
-> LEFT_BUTTON
+> LEFT_BUTTON_RECOMMENDED_ES
 >
-> Prueba tu integración
+> Acepta pagos con la billetera de Mercado Pago
 >
-> Revisa que esté todo bien en tu integración utilizando los  usuarios de prueba.
+> Permite pagos solo de usuarios registrados en Mercado Pago, con tarjetas y dinero disponible.
 >
-> [Prueba tu integración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/testing/)
+> [Usuarios registrados](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/wallet-integration)
 
 > RIGHT_BUTTON
 >

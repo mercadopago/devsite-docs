@@ -1,5 +1,6 @@
 curl -X PUT \
-   'https://api.mercadopago.com/users/USER_ID/stores/ID?access_token=PROD_ACCESS_TOKEN' \
+   'https://api.mercadopago.com/users/USER_ID/stores/ID' \
+   -H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
    -d '{
   "name": "Cambio Sucursal",
   "business_hours": {

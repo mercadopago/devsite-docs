@@ -62,8 +62,9 @@ preapproval.update()
 ```curl
 curl -X PUT \
 -H "Content-Type: application/json" \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
 -d '{"status":"cancelled"}' \
-'https://api.mercadopago.com/v1/payments/:ID?access_token=ACCESS_TOKEN'
+'https://api.mercadopago.com/v1/payments/:ID'
 ```
 ]]]
 
@@ -74,7 +75,7 @@ curl -X PUT \
 You can refund a payment within **360 days** after it was approved.
 ------------
 ----[mlb]----
-You can refund a payment within **120 days** after it was approved.
+You can refund a payment within **180 days** after it was approved.
 ------------
 ----[mlm]----
 You can refund a payment within **180 days** after it was approved.
@@ -104,10 +105,20 @@ $payment->refund();
 
 ?>
 ```
+```node
+mercadopago.payment.refund(payment_id)
+  .then(function (response) {
+    //Process response...
+  })
+  .catch(function (error) {
+    //Handle the error ...
+  });
+```
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
-'https://api.mercadopago.com/v1/payments/:ID/refunds?access_token=ACCESS_TOKEN'
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+'https://api.mercadopago.com/v1/payments/:ID/refunds'
 ```
 
 > NOTE
@@ -153,9 +164,13 @@ Payment payment = Payment.findById(paymentId);
 payment.refund(10.5);
 ```
 ```node
-mercadopago.payment.refund(paymentId).then(function(data) {}
-  //Do Stuff ..
-});
+mercadopago.payment.refundPartial({ payment_id: id, amount: Number(amount) })
+  .then(function (response) {
+    //Process response...
+  })
+  .catch(function (error) {
+    //Handle the error ...
+  });
 ```
 ```ruby
 payment = MercadoPago::Payment.find_by_id(paymnentId)
@@ -164,7 +179,8 @@ payment.refund(10.5);
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
-'https://api.mercadopago.com/v1/payments/:ID/refunds?access_token=ACCESS_TOKEN' \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+'https://api.mercadopago.com/v1/payments/:ID/refunds' \
 -d '{"amount":10.5}'
 ```
 ]]]
@@ -193,6 +209,12 @@ mercadopago.payment.refund(paymentId).then(function(data) {}
 ```ruby
 payment = MercadoPago::Payment.find_by_id(payment_id)
 refunds = payment.refund()
+```
+```curl
+curl -X GET \
+-H "Content-Type: application/json" \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+'https://api.mercadopago.com/v1/payments/:ID'
 ```
 ]]]
 

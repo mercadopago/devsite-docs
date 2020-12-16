@@ -1,6 +1,7 @@
 curl -X POST \
-'https://api.mercadopago.com/mpmobile/instore/qr/USER_ID/EXTERNAL_ID?access_token=PROD_ACCESS_TOKEN' \
- -d '{
+  'https://api.mercadopago.com/mpmobile/instore/qr/USER_ID/EXTERNAL_ID' \
+  -H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
+  -d '{
     "external_reference": "Factura-0001",
     "notification_url": "www.yourserver.com",
     "sponsor_id": 446566691,

@@ -1,3 +1,6 @@
+---
+  indexable: false
+---
 # Adaltech
 
 ## O que é Adaltech

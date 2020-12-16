@@ -98,7 +98,7 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos co
 
 1) Vá até o menu  **Stores > Configuration > Sales > Payment Methods**.
 
-2) Para configurar as credenciais acesse a opção **Mercado Pago - Classic Checkout**, logo em seguida clique em **Configure**. Irá aparecer o campo de **Client id** e o campo **Client secret**. Obtenha suas credenciais na seção [Credenciais]([FAKER][CREDENTIALS][URL_BASIC]).
+2) Para configurar as credenciais acesse a opção **Mercado Pago - Classic Checkout**, logo em seguida clique em **Configure**. Irá aparecer o campo de **Client id** e o campo **Client secret**. Obtenha suas credenciais na seção [Credenciais]([FAKER][CREDENTIALS][URL]).
 
 3) Com as credenciais preenchidas, agora é necessário habilitar o método de pagamento. Vá até a opção **Enable** e marque como **Yes**.
 Aproveite e também configure o Tipo do Checkout (**Type Checkout**) e se o usuário deve retornar a sua loja ao finalizar o checkout (**Auto Redirect**).

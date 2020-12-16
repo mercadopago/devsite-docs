@@ -8,6 +8,7 @@ Os meios de pagamento podem ser obtidos da seguinte forma:
 
 **GET /v1/payment_methods**
 
+[[[
 ```php
 	<?php
 		require ('mercadopago.php');
@@ -16,6 +17,13 @@ Os meios de pagamento podem ser obtidos da seguinte forma:
 		print_r ($payment_methods);
 	?>
 ```
+```curl
+curl -X GET \
+-H "Content-Type: application/json" \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+'https://api.mercadopago.com/sites/SITE_ID/payment_methods?marketplace=NONE'
+```
+]]]
 
 **Resposta**
 
@@ -62,7 +70,7 @@ Os meios de pagamento podem ser obtidos da seguinte forma:
 	]
 ```
 
-Os resultados incluídos nesta resposta coincidirão com o país associado à sua conta Mercado Pago. Você poderá obter mais informações sobre este recurso e seus atributos na [Referência da API]https://www.mercadopago.com.br/developers/pt/reference/payment_methods/_payment_methods/get/).
+Os resultados incluídos nesta resposta coincidirão com o país associado à sua conta Mercado Pago. Você poderá obter mais informações sobre este recurso e seus atributos na [Referência da API](https://www.mercadopago.com.br/developers/pt/reference/payment_methods/_payment_methods/get/).
 
 ## Meios de pagamento por país
 
@@ -113,6 +121,8 @@ Dinheiro em conta	       	| `account_money`          | `account_money`
 Giftcard                	| `digital_currency`       | `giftcard`
 Pagamento na Lotérica      	| `ticket`| `pec`
 Paypal							| `digital_wallet` | `paypal`
+Pix							| `bank_transfer` 		   | `pix`
+
 
 ### Chile
 
@@ -125,6 +135,9 @@ Diners Club International	| `credit_card`            | `diners`
 Tarjeta CMR             	| `credit_card`            | `cmr`
 Tarjeta Magna             	| `credit_card`            | `magna`
 Tarjeta Presto             	| `credit_card`            | `presto`
+Visa Débito             	| `debit_card`            | `debvisa`
+Mastercard Débito             	| `debit_card`            | `debmaster`
+Redcompra             	| `debit_card`            | `redcompra`
 Servipag      			| `ticket`                 | `servipag`
 Red Compras (Webpay)		| `bank_transfer`          | `webpay`
 Khipu      			| `bank_transfer`          | `khipu`
@@ -139,8 +152,9 @@ Mastercard			| `credit_card`            | `master`
 American Express		| `credit_card`            | `amex`
 Diners Club International	| `credit_card`            | `diners`
 Crédito Fácil Codensa    	| `credit_card`            | `codensa`
+Visa Débito       		| `debit_card`             | `debvisa`
+Mastercard Débito		| `debit_card`             | `debmaster`
 Efecty        			| `ticket`                 | `efecty`
-Davivienda       		| `ticket`                 | `davivienda`
 PSE    			       	| `bank_transfer`          | `pse`
 Dinheiro em conta	       	| `account_money`          | `account_money`
 

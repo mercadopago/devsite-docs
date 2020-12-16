@@ -1,10 +1,5 @@
 ---
-sites_supported:
-  - mla
-  - mlb
-  - mlm
-  - mlc
-  - mpe
+  indexable: false
 ---
 
 # Medios de pago y disponibilidad
@@ -17,8 +12,6 @@ Actualmente los medios de pagos soportados son los siguientes:
 |Brasil   |credit_card, ticket                     |Split de pagos		             |
 |Mexico   |credit_card                             |Split de pagos                   |
 |Chile    |credit_card                             |Split de pagos                   |
-|Colombia |credit_card                             |Split de pagos                   |
-|Uruguay  |credit_card                             |Split de pagos                   |
 |Perú     |credit_card                             |Split de pagos                   |
 
 > NOTE

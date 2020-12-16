@@ -61,37 +61,7 @@ Luego ejecuta los pasos de una nueva instalación para actualizar tu página con
 
 > Mantén el módulo actualizado siempre en la última versión. 
 
-## Versión 4.1.0 - Todo lo que debes saber
-
-Estas son las mejoras técnicas que encontrarás en nuestra última versión:
-
-**Break Change**
-- En esta versión debes pegar la public_key de sandbox y producción para poder vender. Antes de actualizar el plugin, activa el modo de mantenimiento y haz algunas pruebas para chequear que nada se rompa.
-
-**Fixes:**
-- Arreglamos el layout mobile del Checkout Pro.
-- Arreglamos la creación del pedido, dejando que la función recupere el valor del customer_secure_key.
-
-**Mejoras:** 
-- Ahora el Checkout Pro funciona a través de un modal: tus clientes podrán finalizar la compra sin abandonar el sitio.
-- Renovamos la pantalla de configuraciones del plugin.
-- Renovamos la estructura del código del plugin. 
-- Unimos las versiones del plugin para PS1.6 y PS1.7.
-
-**Sumamos:**
-- Nuevas traducciones para Chile y Uruguay.
-- Checkout Personalizado con:
- - Modo Binario.
- - Descuento por pagar con Mercado Pago.
-- Ticket Checkout con:
- - Seleccionar los medios de pagos disponibles.
- - Elegir la fecha de vencimiento.
- - Descuento por pagar con Mercado Pago.
-
-**Suspendimos temporalmente algunas funcionalidades a partir de la versión 4.1.0 del plugin:**
-- Mercado Envíos.
-- Cupones de descuento.
-- Calculadora de cuotas.
+<span></span>
 
 > NOTE
 >

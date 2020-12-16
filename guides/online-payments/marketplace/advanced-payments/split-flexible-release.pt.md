@@ -1,10 +1,5 @@
 ---
-sites_supported:
-  - mla
-  - mlb
-  - mlm
-  - mlc
-  - mpe
+  indexable: false
 ---
 
 # Liberação flexível
@@ -50,7 +45,8 @@ Uma vez criado, pode-se alterar a data de liberação tanto do Advanced Payment 
 curl -X POST \
     -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
-    'https://api.mercadopago.com/v1/advanced_payments/ID/disburses?access_token=MKT_ACCESS_TOKEN' \
+    -H 'Authorization: Bearer MKT_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/advanced_payments/ID/disburses' \
     -d '{...}'
 ```
 
@@ -60,7 +56,8 @@ curl -X POST \
 curl -X POST \
     -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
-    'https://api.mercadopago.com/v1/advanced_payments/ID/disbursements/DISBURSEMENT_ID/disburses?access_token=MKT_ACCESS_TOKEN' \
+    -H 'Authorization: Bearer MKT_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/advanced_payments/ID/disbursements/DISBURSEMENT_ID/disburses' \
     -d '{...}'
 ```
 

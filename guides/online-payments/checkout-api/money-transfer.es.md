@@ -75,10 +75,11 @@ Para el envío de dinero se puede especificar el receptor del pago de dos manera
 A continuación se puede ver un ejemplo de la creación del pago utilizando el email:
 
 ``` json
-$ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
+$ curl https://api.mercadopago.com/v1/payments \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'Cache-Control: no-cache' \
+  -H 'Authorization: Bearer ACCESS_TOKEN' \
   -d '
   {
 	"transaction_amount": 100,
@@ -98,10 +99,11 @@ $ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
 A continuación se puede ver un ejemplo de la creación del pago utilizando el ID de la cuenta:
 
 ``` json
-$ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
+$ curl https://api.mercadopago.com/v1/payments \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'Cache-Control: no-cache' \
+  -H 'Authorization: Bearer ACCESS_TOKEN' \
   -d '
   {
 	"transaction_amount": 100,
@@ -210,10 +212,11 @@ Para identificar si se trata de un pago a un proveedor ("supply") o un pago de s
 A continuación se puede ver un ejemplo de la creación del pago de un proveedor:
 
 ``` json
-$ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
+$ curl https://api.mercadopago.com/v1/payments \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'Cache-Control: no-cache' \
+  -H 'Authorization: Bearer ACCESS_TOKEN' \
   -d '
   {
 	"transaction_amount": 100,
@@ -234,10 +237,11 @@ $ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
 A continuación se puede ver un ejemplo de la creación del pago de un sueldo:
 
 ``` json
-$ curl https://api.mercadopago.com/v1/payments?access_token=<ACCESS_TOKEN> \
+$ curl https://api.mercadopago.com/v1/payments \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -H 'Cache-Control: no-cache' \
+  -H 'Authorization: Bearer ACCESS_TOKEN' \
   -d '
   {
 	"transaction_amount": 100,

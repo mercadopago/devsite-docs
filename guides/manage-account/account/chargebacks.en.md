@@ -76,7 +76,9 @@ We will advise you via [IPN notifications](https://www.mercadopago.com.ar/develo
 The IPN notification will have a chargeback ID. Use that ID to get information about the payment.
 
 ```
-curl -XGET https://api.mercadopago.com/v1/chargebacks/ID?access_token=<ACCESS_TOKEN>
+curl -X GET \
+-H 'Authorization: Bearer <ACCESS_TOKEN>' \
+https://api.mercadopago.com/v1/chargebacks/ID
 ```
 
 You will get the following information:
@@ -97,7 +99,7 @@ You will get the following information:
   "documentation": [
     {
       "type": "image/png",
-      "url": "https://api.mercadopago.com/v1/chargebacks/documentation/op/op-4ccf4f39-b6f7-4c7b-a5ce-e8941a2a2b5f?access_token=TEST-7330838325999170-111309-c5e69fb44fb5dc008668f64e27653767-345521533",
+      "url": "https://api.mercadopago.com/v1/chargebacks/documentation/op/op-4ccf4f39-b6f7-4c7b-a5ce-e8941a2a2b5f",
       "description": "File: img.png, Size: 3324"
     }
   ],
@@ -131,7 +133,11 @@ For more information, you can see the [Seller Protection Program](https://www.me
 You can send supporting information validating the sale by API.
 
 ```
-curl -XPOST -F 'files[]=@/path/to/file/file1.png' -F 'files[]=@/path/to/file/file2.pdf' https://api.mercadopago.com/v1/chargebacks/ID/documentation?access_token=
+curl -X POST  \
+-F 'files[]=@/path/to/file/file1.png' \
+-F 'files[]=@/path/to/file/file2.pdf' \
+-H 'Authorization: Bearer <ACCESS_TOKEN>' \
+https://api.mercadopago.com/v1/chargebacks/ID/documentation
 ```
 
 If the documentation has been successfully uploaded, the API will answer with `200 OK` state, and the `documentation_status` value will go to `review_pending`.

@@ -70,8 +70,8 @@ If you want to search payments, you can use the `Payment Search API`:
 ```curl
 curl -G -X GET \
 -H "accept: application/json" \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
 "https://api.mercadopago.com/v1/payments/search" \
--d "access_token=ACCESS_TOKEN" \
 -d "status=approved" \
 -d "offset=0" \
 -d "limit=10"

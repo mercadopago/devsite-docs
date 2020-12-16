@@ -1,10 +1,5 @@
 ---
-sites_supported:
-  - mla
-  - mlb
-  - mlm
-  - mlc
-  - mpe
+  indexable: false
 ---
 
 # Cancelar um Advanced Payment
@@ -16,7 +11,8 @@ sites_supported:
 curl -X PUT \
     -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
-    'https://api.mercadopago.com/v1/advanced_payments/ID?access_token=MKT_ACCESS_TOKEN' \
+    -H 'Authorization: Bearer MKT_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/advanced_payments/ID' \
     -d '{...}'
 ```
 

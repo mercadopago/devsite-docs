@@ -21,7 +21,8 @@ Você pode cancelar um Advanced Payment que permaneceu no estado `autorizado`.
 curl -X PUT \
     -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
-    'https://api.mercadopago.com/v1/advanced_payments/ID?access_token=APPLICATION_TOKEN' \
+    -H 'Authorization: Bearer APPLICATION_TOKEN' \
+    'https://api.mercadopago.com/v1/advanced_payments/ID' \
     -d '{...}'
 ```
 

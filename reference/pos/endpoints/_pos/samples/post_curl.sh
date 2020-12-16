@@ -1,5 +1,6 @@
 curl -X POST \
-  'https://api.mercadopago.com/pos?access_token=PROD_ACCESS_TOKEN' \
+  'https://api.mercadopago.com/pos' \
+  -H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
   -d '{
     "name":"Caja Principal", 
     "fixed_amount": true,

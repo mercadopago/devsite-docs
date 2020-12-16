@@ -29,7 +29,8 @@ Debes efectuar la siguiente llamada a la API para crear cada uno de los usuarios
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
-"https://api.mercadopago.com/users/test_user?access_token=ACCESS_TOKEN" \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+"https://api.mercadopago.com/users/test_user" \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
 

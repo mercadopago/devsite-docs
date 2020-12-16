@@ -1,5 +1,6 @@
 curl -X PUT \
-   'https://api.mercadopago.com/pos/ID?access_token=PROD_ACCESS_TOKEN' \
+   'https://api.mercadopago.com/pos/ID' \
+   -H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
     -d '{
      "name":"Caja Secundaria", 
      "fixed_amount": false,

@@ -7,6 +7,7 @@ Los medios de pago ofrecidos por Mercado Pago varían según cada país.
 Los medios pueden ser obtenidos de la siguiente forma:
 
 **GET /v1/payment_methods**
+
 [[[
 ```php
 	<?php
@@ -19,7 +20,8 @@ Los medios pueden ser obtenidos de la siguiente forma:
 ```curl
 curl -X GET \
 -H "Content-Type: application/json" \
-'https://api.mercadolibre.com/sites/SITE_ID/payment_methods?marketplace=NONE'
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+'https://api.mercadopago.com/sites/SITE_ID/payment_methods?marketplace=NONE'
 ```
 ]]]
 
@@ -38,7 +40,8 @@ A su vez, también se pueden consultar los medios de pago soportados para operac
 ```curl
 curl -X GET \
 -H "Content-Type: application/json" \
-'https://api.mercadolibre.com/sites/SITE_ID/payment_methods?marketplace=NONE&operation_type=recurring_payment'
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+'https://api.mercadopago.com/sites/SITE_ID/payment_methods?marketplace=NONE&operation_type=recurring_payment'
 ```
 ]]]
 
@@ -136,6 +139,7 @@ Boleto Bancario			| `ticket`                 | `bolbradesco`
 Dinero en cuenta	       	| `account_money`          | `account_money`
 Giftcard                	| `digital_currency`       | `giftcard`
 Paypal							| `digital_wallet` | `paypal`
+Pix						| `bank_transfer` 		   | `pix`
 
 ### Chile
 
@@ -148,6 +152,9 @@ Diners Club International	| `credit_card`            | `diners`
 Tarjeta CMR             	| `credit_card`            | `cmr`
 Tarjeta Magna             	| `credit_card`            | `magna`
 Tarjeta Presto             	| `credit_card`            | `presto`
+Visa Débito             	| `debit_card`            | `debvisa`
+Mastercard Débito             	| `debit_card`            | `debmaster`
+Redcompra             	| `debit_card`            | `redcompra`
 Servipag      			| `ticket`                 | `servipag`
 Red Compras (Webpay)		| `bank_transfer`          | `webpay`
 Khipu      			| `bank_transfer`          | `khipu`
@@ -162,8 +169,9 @@ Mastercard			| `credit_card`            | `master`
 American Express		| `credit_card`            | `amex`
 Diners Club International	| `credit_card`            | `diners`
 Crédito Fácil Codensa    	| `credit_card`            | `codensa`
+Visa Débito       		| `debit_card`             | `debvisa`
+Mastercard Débito		| `debit_card`             | `debmaster`
 Efecty        			| `ticket`                 | `efecty`
-Davivienda       		| `ticket`                 | `davivienda`
 PSE    			       	| `bank_transfer`          | `pse`
 Dinero en cuenta	       	| `account_money`          | `account_money`
 

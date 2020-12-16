@@ -19,8 +19,8 @@ Sabemos que alguns termos são novos. Antes de começar, os deixamos perto de su
 | -----------------------------------| ------------------------------------------------------------ | 
 | Credenciais (Credentials)         | Suas credenciais são as senhas que lhe fornecemos para que você possa configurar suas integrações. Para poder achá-las, vá para suas [credenciais]([FAKER][CREDENTIALS][URL]) e selecione as produtivas. |
 | `ACCESS_TOKEN` | É a senha privada do aplicativo para gerar pagamentos, dentro da secção [credenciais]([FAKER][CREDENTIALS][URL]). Deve utilizá-la para se identificar em suas integrações. Utiliza sempre as do **Modo Produção**.  |
-| `USER_ID` | É o ID do usuário vendedor em Mercado Pago, são os últimos 9 dígitos do access_token, posterior hífen. Também conhecido como `COLLECTOR_ID`. |
-| `SPONSOR_ID` | É o ID do usuário fornecedor do sistema integrado com Mercado Pago, são os últimos 9 dígitos do `access_token`, posterior ao hífen. O `sponsor_ID` não pode ser igual que o `USER_ID`. |
+| `USER_ID` | É o ID do usuário vendedor em Mercado Pago, são os últimos dígitos do access_token, posterior do último hífen. Também conhecido como `COLLECTOR_ID`. |
+| `SPONSOR_ID` | É o ID do usuário fornecedor do sistema integrado com Mercado Pago, são os últimos dígitos do `access_token`, posterior do último hífen. O `sponsor_ID` não pode ser igual que o `USER_ID`. |
 | Loja (Store) | É uma **loja física** onde seus clientes podem adquirir seus produtos ou serviços. Você pode ter várias lojas numa mesma conta.  |
 | Caixa (POS) | É um **ponto de venda** que existe numa sucursal ou loja física. Cada caixa terá um código QR unívoco vinculado.  |
 | Ordem | É o pedido realizado pelo seu cliente. Contém uma relação de produtos com seu valor associado. 
@@ -49,10 +49,10 @@ Execute o comando seguinte para gerar um usuário de teste:
 
 ```curl
 curl -X POST \
-
 -H "Content-Type: application/json" \
-"https://api.mercadopago.com/users/test_user?access_token=PROD_ACCESS_TOKEN
--d '{"site_id":"[FAKER][SITE][ID]"}'
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+"https://api.mercadopago.com/users/test_user"
+-d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
 
 > NOTE
@@ -83,7 +83,7 @@ Resposta:
 > * Tanto o comprador como o vendedor devem ser usuários de teste.
 > * Utiliza cartões de teste, já que não é possível sacar o dinheiro.
 
-Uma vez que os usuários de teste são criados, você pode começar com a integração e criar as sucursais e caixas.
+Uma vez que os usuários de teste são criados, você pode começar com a integração e criar as lojas e caixas.
 
 ---
 ### Próximos passos
@@ -92,6 +92,6 @@ Uma vez que os usuários de teste são criados, você pode começar com a integr
 >
 > Lojas e Caixas
 >
-> Para realizar a integração, primeiramente deverá configurar suas sucursais e caixas.
+> Para realizar a integração, primeiramente deverá configurar suas lojas e caixas.
 >
 > [Lojas e Caixas](https://www.mercadopago.com.br/developers/pt/guides/in-person-payments/qr-code/stores-pos/)

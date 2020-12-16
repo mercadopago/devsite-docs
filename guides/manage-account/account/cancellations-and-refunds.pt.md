@@ -26,9 +26,7 @@ Somente é possível cancelar pagamentos que se encontrem com status `pending` o
 
 Os cancelamentos são utilizados principalmente com **meios de pagamento em dinheiro**.
 
-Embora os `tickets` dos meios de pagamento offline expirem após 5 dias, o usuário pode gerá-los novamente inserindo a transação em sua conta do Mercado Pago.
-
-Para cancelá-los efetivamente e não gera-los novamente por mais 5 dias, evitando problemas de retenção de estoque por exemplo, é necessário que você execute o cancelamento.
+Embora os tickets fora de mídia expirem, o usuário pode gerá-los novamente inserindo a transação de sua conta no Mercado Pago. Para cancelá-los definitivamente, sem a possibilidade de gerá-los novamente, evitando problemas de retenção de estoque por exemplo, é necessário que você execute o cancelamento deles.
 
 Para realizar o cancelamento, faça a seguinte requisição enviando o `status` `cancelled`:
 
@@ -64,8 +62,9 @@ preapproval.update()
 ```curl
 curl -X PUT \
 -H "Content-Type: application/json" \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
 -d '{"status":"cancelled"}' \
-'https://api.mercadopago.com/v1/payments/:ID?access_token=ACCESS_TOKEN'
+'https://api.mercadopago.com/v1/payments/:ID'
 ```
 ]]]
 
@@ -76,7 +75,7 @@ curl -X PUT \
 É possível devolver um pagamento dentro de **360 dias** a partir de sua data de aprovação.
 ------------
 ----[mlb]----
-É possível devolver um pagamento dentro de **120 dias** a partir de sua data de aprovação.
+É possível devolver um pagamento dentro de **180 dias** a partir de sua data de aprovação.
 ------------
 ----[mlm]----
 É possível devolver um pagamento dentro de **180 dias** a partir de sua data de aprovação.
@@ -106,10 +105,20 @@ $payment->refund();
 
 ?>
 ```
+```node
+mercadopago.payment.refund(payment_id)
+  .then(function (response) {
+    // Resposta do processo ...
+  })
+  .catch(function (error) {
+    // manipular o erro ...
+  });
+```
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
-'https://api.mercadopago.com/v1/payments/:ID/refunds?access_token=ACCESS_TOKEN'
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+'https://api.mercadopago.com/v1/payments/:ID/refunds'
 ```
 
 > NOTE
@@ -155,9 +164,13 @@ Payment payment = Payment.findById(paymentId);
 payment.refund(10.5);
 ```
 ```node
-mercadopago.payment.refund(paymentId).then(function(data) {}
-  //Do Stuff ..
-});
+mercadopago.payment.refundPartial({ payment_id: id, amount: Number(amount) })
+  .then(function (response) {
+    // Resposta do processo ...
+  })
+  .catch(function (error) {
+    // manipular o erro ...
+  });
 ```
 ```ruby
 payment = MercadoPago::Payment.find_by_id(paymnentId)
@@ -166,7 +179,8 @@ payment.refund(10.5);
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
-'https://api.mercadopago.com/v1/payments/:ID/refunds?access_token=ACCESS_TOKEN' \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+'https://api.mercadopago.com/v1/payments/:ID/refunds' \
 -d '{"amount":10.5}'
 ```
 ]]]
@@ -195,6 +209,12 @@ mercadopago.payment.refund(paymentId).then(function(data) {}
 ```ruby
 payment = MercadoPago::Payment.find_by_id(payment_id)
 refunds = payment.refund()
+```
+```curl
+curl -X GET \
+-H "Content-Type: application/json" \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+'https://api.mercadopago.com/v1/payments/:ID'
 ```
 ]]]
 

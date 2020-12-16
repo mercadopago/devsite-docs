@@ -21,7 +21,8 @@ En este ejemplo te mostramos cómo enviar los datos:
 curl -X POST \
         -H 'accept: application/json' \
         -H 'content-type: application/json' \
-        'https://api.mercadopago.com/v1/payments?access_token=ACCESS_TOKEN' \
+        -H 'Authorization: Bearer ACCESS_TOKEN' \
+        'https://api.mercadopago.com/v1/payments' \
         -d '{
                 "transaction_amount": 10000,
                 "net_amount": 9500,

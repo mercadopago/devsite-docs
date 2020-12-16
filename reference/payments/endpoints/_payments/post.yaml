@@ -60,10 +60,10 @@ errors:
         es: Debes proveer tu access_token para proceder.
         pt: Must provide your access_token to proceed.
   - '23':
-    description:
-      en: The following parameters must be valid date and format (yyyy-MM-dd'T'HH:mm:ssz) date_of_expiration.
-      es: El siguiente parámetro debe ser una fecha válida en formato (yyyy-MM-dd'T'HH:mm:ssz) date_of_expiration.
-      pt: The following parameters must be valid date and format (yyyy-MM-dd'T'HH:mm:ssz) date_of_expiration.
+      description:
+        en: The following parameters must be valid date and format (yyyy-MM-dd'T'HH:mm:ssz) date_of_expiration.
+        es: El siguiente parámetro debe ser una fecha válida en formato (yyyy-MM-dd'T'HH:mm:ssz) date_of_expiration.
+        pt: The following parameters must be valid date and format (yyyy-MM-dd'T'HH:mm:ssz) date_of_expiration.
   - '1000':
       description:
         en: Number of rows exceeded the limits.

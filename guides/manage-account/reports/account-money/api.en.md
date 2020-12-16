@@ -17,7 +17,8 @@ Check the configuration of your reports by API in this way:
 curl -X GET \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/account/settlement_report/config' \
 ```
 ```php
 <?php
@@ -25,18 +26,20 @@ include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
 $headers = array(
     'accept' => 'application/json',
-    'content-type' => 'application/json'
+    'content-type' => 'application/json',
+    'Authorization' => 'Bearer ENV_ACCESS_TOKEN'
 );
-$response = Requests::get('https://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN', $headers);
+$response = Requests::get('https://api.mercadopago.com/v1/account/settlement_report/config', $headers);
 ```
 ```java
- URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN");
+ URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/config");
 
 HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
 
 connection.setRequestMethod("GET");
 connection.setRequestProperty("Accept", "application/json");
 connection.setRequestProperty("Content-Type", "application/json");
+connection.setRequestProperty("Authorization", "Bearer ENV_ACCESS_TOKEN");
 
 System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
@@ -47,21 +50,22 @@ import requests
 headers = {
     'accept': 'application/json',
     'content-type': 'application/json',
+    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 }
-params = {'access_token': 'ENV_ACCESS_TOKEN'}
 
-response = requests.get('https://api.mercadopago.com/v1/account/settlement_report/config', headers=headers, params=params)
+response = requests.get('https://api.mercadopago.com/v1/account/settlement_report/config', headers=headers)
 ```
 ```node
 var request = require('request');
 
 var headers = {
     'accept': 'application/json',
-    'content-type': 'application/json'
+    'content-type': 'application/json',
+    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 };
 
 var options = {
-    url: 'https://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN',
+    url: 'https://api.mercadopago.com/v1/account/settlement_report/config',
     headers: headers
 };
 function callback(error, response, body) {
@@ -103,7 +107,8 @@ Create your API generation preferences to export columns, name your files and co
 curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/account/settlement_report/config' \
     -d '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
@@ -123,7 +128,8 @@ include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
 $headers = array(
     'accept' => 'application/json',
-    'content-type' => 'application/json'
+    'content-type' => 'application/json',
+    'Authorization' => 'Bearer ENV_ACCESS_TOKEN'
 );
 $data = '{
             "file_name_prefix": "settlement-report-USER_ID",
@@ -140,16 +146,17 @@ $data = '{
                 "value": 1
             }
         }';
-$response = Requests::post('https://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN', $headers, $data);
+$response = Requests::post('https://api.mercadopago.com/v1/account/settlement_report/config', $headers, $data);
 ```
 ```java
-URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN");
+URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/config");
 
 HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
 
 connection.setRequestMethod("POST");
 connection.setRequestProperty("Accept", "application/json");
 connection.setRequestProperty("Content-Type", "application/json");
+connection.setRequestProperty("Authorization", "Bearer ENV_ACCESS_TOKEN");
 
 connection.setDoOutput(true);
 
@@ -184,9 +191,8 @@ import requests
 headers = {
     'accept': 'application/json',
     'content-type': 'application/json',
+    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 }
-
-params = {'access_token': 'ENV_ACCESS_TOKEN'}
 
 data = '{  
             "file_name_prefix": "settlement-report-USER_ID",
@@ -204,14 +210,15 @@ data = '{
             }
         }'
 
-response = requests.post('https://api.mercadopago.com/v1/account/settlement_report/config', headers=headers, params=params, data=data)
+response = requests.post('https://api.mercadopago.com/v1/account/settlement_report/config', headers=headers, data=data)
 ```
 ```node
 var request = require('request');
 
 var headers = {
     'accept': 'application/json',
-    'content-type': 'application/json'
+    'content-type': 'application/json',
+    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 };
 
 var dataString = '{
@@ -231,7 +238,7 @@ var dataString = '{
     }';
 
 var options = {
-    url: 'https://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN',
+    url: 'https://api.mercadopago.com/v1/account/settlement_report/config',
     method: 'POST',
     headers: headers,
     body: dataString
@@ -277,7 +284,8 @@ When you need to update your settings, you can adjust the following attributes:
 curl -X PUT \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/account/settlement_report/config' \
     -d '{
         "file_name_prefix": "settlement-report-USER_ID",
         "show_fee_prevision": false,
@@ -300,7 +308,8 @@ include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
 $headers = array(
     'accept' => 'application/json',
-    'content-type' => 'application/json'
+    'content-type' => 'application/json',
+    'Authorization' => 'Bearer ENV_ACCESS_TOKEN'
 );
 $data = '{
         "file_name_prefix": "settlement-report-USER_ID",
@@ -317,16 +326,17 @@ $data = '{
             "value": 1
         }
     }';
-$response = Requests::put('https://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN', $headers, $data);
+$response = Requests::put('https://api.mercadopago.com/v1/account/settlement_report/config', $headers, $data);
 ```
 ```java
-URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN");
+URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/config");
 
 HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
 
 connection.setRequestMethod("PUT");
 connection.setRequestProperty("Accept", "application/json");
 connection.setRequestProperty("Content-Type", "application/json");
+connection.setRequestProperty("Authorization", "Bearer ENV_ACCESS_TOKEN");
 
 connection.setDoOutput(true);
 
@@ -361,9 +371,8 @@ import requests
 headers = {
     'accept': 'application/json',
     'content-type': 'application/json',
+    'Authorization': 'Bearer ENV_ACCESS_TOKEN',
 }
-
-params = {'access_token': 'ENV_ACCESS_TOKEN'}
 
 data = '{
             "file_name_prefix": "settlement-report-USER_ID",
@@ -381,14 +390,15 @@ data = '{
             }
         }'
 
-response = requests.put('https://api.mercadopago.com/v1/account/settlement_report/config', headers=headers, params=params, data=data)
+response = requests.put('https://api.mercadopago.com/v1/account/settlement_report/config', headers=headers, data=data)
 ```
 ```node
 var request = require('request');
 
 var headers = {
     'accept': 'application/json',
-    'content-type': 'application/json'
+    'content-type': 'application/json',
+    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 };
 
 var dataString = '{
@@ -408,7 +418,7 @@ var dataString = '{
     }';
 
 var options = {
-    url: 'https://api.mercadopago.com/v1/account/settlement_report/config?access_token=ENV_ACCESS_TOKEN',
+    url: 'https://api.mercadopago.com/v1/account/settlement_report/config',
     method: 'PUT',
     headers: headers,
     body: dataString
@@ -484,7 +494,8 @@ Post to the API by specifying the start and end dates as follows:
 curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/account/settlement_report?access_token=ENV_ACCESS_TOKEN' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/account/settlement_report' \
     -d '{
             "begin_date": "2019-05-01T00:00:00Z",
             "end_date": "2019-06-01T00:00:00Z"
@@ -496,23 +507,25 @@ include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
 $headers = array(
     'accept' => 'application/json',
-    'content-type' => 'application/json'
+    'content-type' => 'application/json',
+    'Authorization' => 'Bearer ENV_ACCESS_TOKEN'
 );
 $data ='{
             "begin_date": "2019-05-01T00:00:00Z",
             "end_date": "2019-06-01T00:00:00Z"
     }';
 
-$response = Requests::post("https://api.mercadopago.com/v1/account/settlement_report?access_token=ENV_ACCESS_TOKEN", $headers, $data);
+$response = Requests::post("https://api.mercadopago.com/v1/account/settlement_report", $headers, $data);
 ```
 ```java
-URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report?access_token=ENV_ACCESS_TOKEN");
+URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report");
 
 HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
 
 connection.setRequestMethod("POST");
 connection.setRequestProperty("Accept", "application/json");
 connection.setRequestProperty("Content-Type", "application/json");
+connection.setRequestProperty("Authorization", "Bearer ENV_ACCESS_TOKEN");
 connection.setDoOutput(true);
 
 String body = "{\\"begin_date\\":\\"2019-05-01T00:00:00Z\\",\\"end_date\\": \\"2019-06-01T00:00:00Z\\"}";
@@ -532,23 +545,26 @@ import requests
 headers = {
     'accept': 'application/json',
     'content-type': 'application/json',
+    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 }
-
-params = { 'access_token': 'ENV_ACCESS_TOKEN' }
 
 data = '{ "begin_date": "2019-05-01T00:00:00Z", "end_date": "2019-06-01T00:00:00Z" }'
 
-response = requests.post('https://api.mercadopago.com/v1/account/settlement_report', headers=headers, params=params, data=data)
+response = requests.post('https://api.mercadopago.com/v1/account/settlement_report', headers=headers, data=data)
 ```
 ```node
 var request = require('request');
 
-var headers = { 'accept': 'application/json', 'content-type': 'application/json' };
+var headers = { 
+    'accept': 'application/json', 
+    'content-type': 'application/json', 
+    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
+};
 
 var dataString = '{ "begin_date": "2019-05-01T00:00:00Z", "end_date": "2019-06-01T00:00:00Z" }';
 
 var options = {
-    url: 'https://api.mercadopago.com/v1/account/settlement_report?access_token=ENV_ACCESS_TOKEN',
+    url: 'https://api.mercadopago.com/v1/account/settlement_report',
     method: 'POST',
     headers: headers,
     body: dataString
@@ -588,9 +604,10 @@ $data = array(
 $response = Requests::post('https://api.mercadopago.com/v1/account/settlement_report/list', $headers, $data);
 ```
 ```java
-URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/list?access_token=ENV_ACCESS_TOKEN");
+URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/list");
 
 HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+connection.setRequestProperty("Authorization", "Bearer ENV_ACCESS_TOKEN");
 
 connection.setRequestMethod("GET");
 
@@ -601,11 +618,12 @@ System.out.println(connection.getInputStream());
 ```Python
 import requests
 
-headers = { 'accept': 'application/json' }
+headers = { 
+    'accept': 'application/json',
+    'Authorization: Bearer ENV_ACCESS_TOKEN'
+}
 
-params = { 'access_token': 'ENV_ACCESS_TOKEN' }
-
-response = requests.post('https://api.mercadopago.com/v1/account/settlement_report/list', headers=headers, params=params)
+response = requests.post('https://api.mercadopago.com/v1/account/settlement_report/list', headers=headers)
 ```
 ```node
 var request = require('request');
@@ -651,7 +669,9 @@ Using the `file_name` attribute, you can download the report from the following 
 
 [[[
 ```curl
-curl -X GET 'https://api.mercadopago.com/v1/account/settlement_report/:file_name?access_token=ENV_ACCESS_TOKEN'
+curl -X GET \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/account/settlement_report/:file_name'
 ```
 ```php
 <?php
@@ -666,9 +686,10 @@ $data = array(
 $response = Requests::post('https://api.mercadopago.com/v1/account/settlement_report/:file_name', $headers, $data);
 ```
 ```java
-URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/:file_name?access_token=ENV_ACCESS_TOKEN");
+URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/:file_name");
 
 HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+connection.setRequestProperty("Authorization", "Bearer ENV_ACCESS_TOKEN");
 
 connection.setRequestMethod("GET");
 
@@ -679,15 +700,24 @@ System.out.println(connection.getInputStream());
 ```Python
 import requests
 
-params = {'access_token': 'ENV_ACCESS_TOKEN'}
+headers = { 
+    'Authorization: Bearer ENV_ACCESS_TOKEN'
+}
 
-response = requests.get('https://api.mercadopago.com/v1/account/settlement_report/:file_name', params=params)
+response = requests.get('https://api.mercadopago.com/v1/account/settlement_report/:file_name', headers=headers)
 ```
 ```node
 var request = require('request');
 
+
+var headers = { 
+    'Authorization: Bearer ENV_ACCESS_TOKEN',
+};
+
 var options = {
-    url: 'https://api.mercadopago.com/v1/account/settlement_report/:file_name?access_token=ENV_ACCESS_TOKEN'
+    url: 'https://api.mercadopago.com/v1/account/settlement_report/:file_name'
+    method: 'GET',
+    headers: headers,
 };
 
 function callback(error, response, body) {
@@ -731,7 +761,8 @@ Schedule the automatic report generation using the frequency in the configuratio
 curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/account/settlement_report/schedule?access_token=ENV_ACCESS_TOKEN'
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/account/settlement_report/schedule'
 ```
 ```php
 <?php
@@ -739,18 +770,20 @@ include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
 $headers = array(
     'accept' => 'application/json',
-    'content-type' => 'application/json'
+    'content-type' => 'application/json',
+    'Authorization' => 'Bearer ENV_ACCESS_TOKEN'
 );
-$response = Requests::post('https://api.mercadopago.com/v1/account/settlement_report/schedule?access_token=ENV_ACCESS_TOKEN', $headers);
+$response = Requests::post('https://api.mercadopago.com/v1/account/settlement_report/schedule', $headers);
 ```
 ```java
-URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/schedule?access_token=ENV_ACCESS_TOKEN");
+URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/schedule");
 
 HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
 
 connection.setRequestMethod("POST");
 connection.setRequestProperty("Accept", "application/json");
 connection.setRequestProperty("Content-Type", "application/json");
+connection.setRequestProperty("Authorization", "Bearer ENV_ACCESS_TOKEN");
 
 System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
@@ -762,22 +795,22 @@ import requests
 headers = {
     'accept': 'application/json',
     'content-type': 'application/json',
+    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 }
 
-params = {'access_token': 'ENV_ACCESS_TOKEN'}
-
-response = requests.post('https://api.mercadopago.com/v1/account/settlement_report/schedule', headers=headers, params=params)
+response = requests.post('https://api.mercadopago.com/v1/account/settlement_report/schedule', headers=headers)
 ```
 ```node
 var request = require('request');
 
 var headers = {
     'accept': 'application/json',
-    'content-type': 'application/json'
+    'content-type': 'application/json',
+    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 };
 
 var options = {
-    url: 'https://api.mercadopago.com/v1/account/settlement_report/schedule?access_token=ENV_ACCESS_TOKEN',
+    url: 'https://api.mercadopago.com/v1/account/settlement_report/schedule',
     method: 'POST',
     headers: headers
 };
@@ -818,7 +851,8 @@ Execute the curl you need to start and cancel the scheduled generation of your r
 curl -X DELETE \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    'https://api.mercadopago.com/v1/account/settlement_report/schedule?access_token=ENV_ACCESS_TOKEN'
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/account/settlement_report/schedule'
 ```
 ```php
 <?php
@@ -826,18 +860,20 @@ include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
 $headers = array(
     'accept' => 'application/json',
-    'content-type' => 'application/json'
+    'content-type' => 'application/json',
+    'Authorization' => 'Bearer ENV_ACCESS_TOKEN'
 );
-$response = Requests::delete('https://api.mercadopago.com/v1/account/settlement_report/schedule?access_token=ENV_ACCESS_TOKEN', $headers);
+$response = Requests::delete('https://api.mercadopago.com/v1/account/settlement_report/schedule', $headers);
 ```
 ```java
-URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/schedule?access_token=ENV_ACCESS_TOKEN");
+URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/schedule");
 
 HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
 
 connection.setRequestMethod("DELETE");
 connection.setRequestProperty("Accept", "application/json");
 connection.setRequestProperty("Content-Type", "application/json");
+connection.setRequestProperty("Authorization", "Bearer ENV_ACCESS_TOKEN");
 
 System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
@@ -849,21 +885,22 @@ import requests
 headers = {
     'accept': 'application/json',
     'content-type': 'application/json',
+    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 }
-params = {'access_token': 'ENV_ACCESS_TOKEN'}
 
-response = requests.delete('https://api.mercadopago.com/v1/account/settlement_report/schedule', headers=headers, params=params)
+response = requests.delete('https://api.mercadopago.com/v1/account/settlement_report/schedule', headers=headers)
 ```
 ```node
 var request = require('request');
 
 var headers = {
     'accept': 'application/json',
-    'content-type': 'application/json'
+    'content-type': 'application/json',
+    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 };
 
 var options = {
-    url: 'https://api.mercadopago.com/v1/account/settlement_report/schedule?access_token=ENV_ACCESS_TOKEN',
+    url: 'https://api.mercadopago.com/v1/account/settlement_report/schedule',
     method: 'DELETE',
     headers: headers
 };
@@ -901,21 +938,26 @@ Download the file with this command:
 
 [[[
 ```curl
-curl -X GET 'https://api.mercadopago.com/v1/account/settlement_report/:file_name?access_token=ENV_ACCESS_TOKEN'
+curl -X GET \
+-H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+'https://api.mercadopago.com/v1/account/settlement_report/:file_name'
 ```
 ```php
 <?php
 include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
-$headers = array();
-$response = Requests::get('https://api.mercadopago.com/v1/account/settlement_report/:file_name?access_token=ENV_ACCESS_TOKEN', $headers);
+$headers = array(
+   'Authorization' => 'Bearer ENV_ACCESS_TOKEN'
+);
+$response = Requests::get('https://api.mercadopago.com/v1/account/settlement_report/:file_name', $headers);
 ```
 ```java
-URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/:file_name?access_token=ENV_ACCESS_TOKEN");
+URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/:file_name");
 
 HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
 
 connection.setRequestMethod("GET");
+connection.setRequestProperty("Authorization", "Bearer ENV_ACCESS_TOKEN");
 
 System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
@@ -924,15 +966,23 @@ System.out.println(connection.getInputStream());
 ```Python
 import requests
 
-params = {'access_token': 'ENV_ACCESS_TOKEN'}
+headers = {
+    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
+}
 
-response = requests.get('https://api.mercadopago.com/v1/account/settlement_report/:file_name', params=params)
+response = requests.get('https://api.mercadopago.com/v1/account/settlement_report/:file_name', headers=headers)
 ```
 ```node
 var request = require('request');
 
+var headers = {
+    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
+};
+
 var options = {
-    url: 'https://api.mercadopago.com/v1/account/settlement_report/:file_name?access_token=ENV_ACCESS_TOKEN'
+    url: 'https://api.mercadopago.com/v1/account/settlement_report/:file_name',
+    method: 'GET',
+    headers: headers
 };
 
 function callback(error, response, body) {

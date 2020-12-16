@@ -22,7 +22,8 @@ Además se puede enviar el objeto `metadata` con información relevante a su neg
 curl -X POST \
     -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
-    'https://api.mercadopago.com/v1/advanced_payments?access_token=APPLICATION_TOKEN' \
+    -H 'Authorization: Bearer APPLICATION_TOKEN' \
+    'https://api.mercadopago.com/v1/advanced_payments' \
 ```
 
 #### Body

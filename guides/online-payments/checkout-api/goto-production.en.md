@@ -62,13 +62,13 @@ You need to have a policy on terms and conditions and make it clear that you are
 ---
 ### Next steps
 
-> LEFT_BUTTON
+> LEFT_BUTTON_RECOMMENDED_EN
 >
-> Test your integration
+> Accepts payments by Mercado Pago wallet
 >
-> Check that everything works in your integration with test users.
+> It allows payments only from Mercado Pago registered users, with cards and available balance.
 >
-> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/test-integration/)
+> [Registered users](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/wallet-integration)
 
 > RIGHT_BUTTON
 >
@@ -77,4 +77,3 @@ You need to have a policy on terms and conditions and make it clear that you are
 > Find all the information required to interact with our APIs.
 >
 > [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/)
-

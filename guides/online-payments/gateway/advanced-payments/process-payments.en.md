@@ -29,7 +29,8 @@ Below is an example of payment in Gateway mode with direct capture, using the Ad
 curl -X POST \
     -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
-    'https://api.mercadopago.com/v1/advanced_payments?access_token=APPLICATION_TOKEN' \
+    -H 'Authorization: Bearer APPLICATION_TOKEN' \
+    'https://api.mercadopago.com/v1/advanced_payments' \
     -d '{...}'
 ```
 
@@ -150,7 +151,8 @@ Below is an example of payment in Gateway mode with deferred capture, using the 
 curl -X POST \
     -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
-    'https://api.mercadopago.com/v1/advanced_payments?access_token=APPLICATION_TOKEN' \
+    -H 'Authorization: Bearer APPLICATION_TOKEN' \
+    'https://api.mercadopago.com/v1/advanced_payments' \
     -d '{...}'
 ```
 

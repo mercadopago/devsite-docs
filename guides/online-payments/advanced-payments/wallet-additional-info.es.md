@@ -11,7 +11,8 @@ Es posible enviar información que puede mejorar el análisis de prevención de 
 curl -X POST \
     -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
-    'https://api.mercadopago.com/v1/advanced_payments?access_token=SELLER_TOKEN' \
+    -H 'Authorization: Bearer SELLER_TOKEN' \
+    'https://api.mercadopago.com/v1/advanced_payments' \
 ```
 
 #### Body
