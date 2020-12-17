@@ -69,7 +69,7 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 
 8. Agora, é muito importante você configurar o seu **CLIENT_ID** e **CLIENT_SECRET**.
 
-	Obtenha o seu CLIENT_ID e CLIENT_SECRET na [seção Credenciais]([FAKER][CREDENTIALS][URL_BASIC]).
+	Obtenha o seu CLIENT_ID e CLIENT_SECRET na [seção Credenciais]([FAKER][CREDENTIALS][URL]).
 
 	Depois de efetuar a instalação e configuração básica, outras opções estão disponíveis para serem configuradas:
 

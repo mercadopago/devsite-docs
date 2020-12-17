@@ -36,7 +36,7 @@ Configura en tu preferencia, el peso y las dimensiones de los paquetes tal como 
   $shipments->dimensions = "30x30x30,500";
   
   $shipments->receiver_address=array(
-    "zip_code" => "[FAKER][ADDRESS][ZIP]",
+    "zip_code" => "[FAKER][ADDRESS][ZIP_CODE]",
     "street_number" => 1000,
     "street_name" => "[FAKER][ADDRESS][STREET_NAME]",
     "floor" => "4",
@@ -58,7 +58,7 @@ Shipments shipments = new Shipments();
 // No es obligatorio configurar la propiedad AddressReceiver
 shipments.setMode(Shipments.ShipmentMode.me2)
     .setDimensions("30x30x30,500")
-    .setReceiverAddress(new AddressReceiver("[FAKER][ADDRESS][ZIP]", 1000, "[FAKER][ADDRESS][STREET_NAME]", "4", "C"));
+    .setReceiverAddress(new AddressReceiver("[FAKER][ADDRESS][ZIP_CODE]", 1000, "[FAKER][ADDRESS][STREET_NAME]", "4", "C"));
 
 preference.setShipments(shipments);
 
@@ -75,7 +75,7 @@ var shipments = {
   "mode": "me2",
   "dimensions": "30x30x30,500",
   "receiver_address": {
-    "zip_code": "[FAKER][ADDRESS][ZIP]",
+    "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
     "street_number": 1000,
     "street_name": "[FAKER][ADDRESS][STREET_NAME]",
     "floor": "4",
@@ -97,7 +97,7 @@ shipment.mode = me2
 shipment.dimensions = "30x30x30,500"
 
 shipment.receiver_address = {
-  zip_code: "[FAKER][ADDRESS][ZIP]",
+  zip_code: "[FAKER][ADDRESS][ZIP_CODE]",
   street_number: 1000,
   street_name: "[FAKER][ADDRESS][STREET_NAME]",
   floor: "4",
@@ -119,7 +119,7 @@ MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataS
      Mode = MercadoPago.Common.ShipmentMode.Me2,
      Dimensions = "30x30x30,500",
      ReceiverAddress = new MercadoPago.DataStructures.Preference.ReceiverAddress(){
-      Zip_code = "[FAKER][ADDRESS][ZIP]",
+      Zip_code = "[FAKER][ADDRESS][ZIP_CODE]",
       StreetNumber = 1000,
       StreetName = "[FAKER][ADDRESS][STREET_NAME]",
       Floor = "4",
@@ -146,7 +146,7 @@ Por defecto, tendrás configurado el envío a cargo del comprador. Si quieres, p
 ----[mla]----
 El costo del envío será debitado de la cuenta del vendedor cuando reciba un pago. 
 
-Puedes ofrecer distintos métodos de envíos modificando el ID. Consulta los <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][SITE][ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">id de medios de envío</a> envíos disponibles para saber cuáles agregar. 
+Puedes ofrecer distintos métodos de envíos modificando el ID. Consulta los <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][GLOBALIZE][UPPER_SITE_ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">id de medios de envío</a> envíos disponibles para saber cuáles agregar. 
 
 Por ejemplo, en el siguiente código se encuentra sumado el `ID 73328` que refiere a un envío normal a domicilio de OCA y el `ID 504945` para envío normal a domicilio de Adreani. 
 
@@ -226,7 +226,7 @@ preference.Shipments = shipments;
 
 El costo del envío será debitado de la cuenta del vendedor cuando reciba un pago. 
 
-Puedes ofrecer distintos métodos de envío modificando el ID. Consulta los <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][SITE][ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">id de medios de envío</a> disponibles para saber cuáles agregar. 
+Puedes ofrecer distintos métodos de envío modificando el ID. Consulta los <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][GLOBALIZE][UPPER_SITE_ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">id de medios de envío</a> disponibles para saber cuáles agregar. 
 
 Por ejemplo, en el siguiente código se encuentra sumado el `ID 509247` que refiere a un envío estándar a domicilio y el `ID 509245` para envío prioritario a sucursal de correo. 
 
@@ -306,7 +306,7 @@ preference.Shipments = shipments;
 
 El costo del envío será debitado de la cuenta del vendedor cuando reciba un pago. 
 
-Puedes ofrecer distintos métodos de envío modificando el ID. Consulta los <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][SITE][ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">id de medios de envío</a> disponibles para saber cuáles agregar. 
+Puedes ofrecer distintos métodos de envío modificando el ID. Consulta los <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][GLOBALIZE][UPPER_SITE_ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">id de medios de envío</a> disponibles para saber cuáles agregar. 
 
 Por ejemplo, en el siguiente código se encuentra sumado el `ID 505345` que refiere a un envío estándar a domicilio y el `ID 100009` para envío prioritario a sucursal de correo. 
 
@@ -494,7 +494,7 @@ Una vez que se reciba una venta, solo hay que ----[mla, mlm]---- <a href="https:
           "id2"=>504945)
   );
   $shipments->receiver_address=array(
-    "zip_code" => "[FAKER][ADDRESS][ZIP]",
+    "zip_code" => "[FAKER][ADDRESS][ZIP_CODE]",
     "street_number" => 1000,
     "street_name" => "[FAKER][ADDRESS][STREET_NAME]",
     "floor" => "4",
@@ -526,7 +526,7 @@ payer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
 Shipments shipments = new Shipments();
 shipments.setMode(Shipments.ShipmentMode.me2)
     .setDimensions("30x30x30,500")
-    .setReceiverAddress(new AddressReceiver("[FAKER][ADDRESS][ZIP]", 1000, "[FAKER][ADDRESS][STREET_NAME]", "4", "C"));
+    .setReceiverAddress(new AddressReceiver("[FAKER][ADDRESS][ZIP_CODE]", 1000, "[FAKER][ADDRESS][STREET_NAME]", "4", "C"));
 
 shipments.setFreeMethods(73328, 504945); 
 
@@ -555,7 +555,7 @@ var shipments = {
   "mode": "me2",
   "dimensions": "30x30x30,500",
   "receiver_address": {
-    "zip_code": "[FAKER][ADDRESS][ZIP]",
+    "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
     "street_number": 1000,
     "street_name": "[FAKER][ADDRESS][STREET_NAME]",
     "floor": "4",
@@ -599,7 +599,7 @@ shipment = MercadoPago::Shipment.new
 shipment.mode = me2
 shipment.dimensions = "30x30x30,500"
 shipment.receiver_address = {
-  zip_code: "[FAKER][ADDRESS][ZIP]",
+  zip_code: "[FAKER][ADDRESS][ZIP_CODE]",
   street_number: 1000,
   street_name: "[FAKER][ADDRESS][STREET_NAME]",
   floor: "4",
@@ -645,7 +645,7 @@ MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataS
      LocalPickUp = true,
      FreeMethods = new List<int> { 73328, 504945 },
      ReceiverAddress = new MercadoPago.DataStructures.Preference.ReceiverAddress(){
-      ZipCode = "[FAKER][ADDRESS][ZIP]",
+      ZipCode = "[FAKER][ADDRESS][ZIP_CODE]",
       StreetNumber = 1000,
       StreetName = "[FAKER][ADDRESS][STREET_NAME]",
       Floor = "4",
@@ -685,7 +685,7 @@ preference.Save();
           "id2"=>509245)
   );
   $shipments->receiver_address=array(
-    "zip_code" => "[FAKER][ADDRESS][ZIP]",
+    "zip_code" => "[FAKER][ADDRESS][ZIP_CODE]",
     "street_number" => 1000,
     "street_name" => "[FAKER][ADDRESS][STREET_NAME]",
     "floor" => "4",
@@ -717,7 +717,7 @@ payer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
 Shipments shipments = new Shipments();
 shipments.setMode(Shipments.ShipmentMode.me2)
     .setDimensions("30x30x30,500")
-    .setReceiverAddress(new AddressReceiver("[FAKER][ADDRESS][ZIP]", 1000, "[FAKER][ADDRESS][STREET_NAME]", "4", "C"));
+    .setReceiverAddress(new AddressReceiver("[FAKER][ADDRESS][ZIP_CODE]", 1000, "[FAKER][ADDRESS][STREET_NAME]", "4", "C"));
 
 shipments.setFreeMethods(509247, 509245); 
 
@@ -746,7 +746,7 @@ var shipments = {
   "mode": "me2",
   "dimensions": "30x30x30,500",
   "receiver_address": {
-    "zip_code": "[FAKER][ADDRESS][ZIP]",
+    "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
     "street_number": 1000,
     "street_name": "[FAKER][ADDRESS][STREET_NAME]",
     "floor": "4",
@@ -790,7 +790,7 @@ shipment = MercadoPago::Shipment.new
 shipment.mode = me2
 shipment.dimensions = "30x30x30,500"
 shipment.receiver_address = {
-  zip_code: "[FAKER][ADDRESS][ZIP]",
+  zip_code: "[FAKER][ADDRESS][ZIP_CODE]",
   street_number: 1000,
   street_name: "[FAKER][ADDRESS][STREET_NAME]",
   floor: "4",
@@ -836,7 +836,7 @@ MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataS
      LocalPickUp = true,
      FreeMethods = new List<int> { 509247, 509245 },
      ReceiverAddress = new MercadoPago.DataStructures.Preference.ReceiverAddress(){
-      ZipCode = "[FAKER][ADDRESS][ZIP]",
+      ZipCode = "[FAKER][ADDRESS][ZIP_CODE]",
       StreetNumber = 1000,
       StreetName = "[FAKER][ADDRESS][STREET_NAME]",
       Floor = "4",
@@ -876,7 +876,7 @@ preference.Save();
           "id2"=>100009)
   );
   $shipments->receiver_address=array(
-    "zip_code" => "[FAKER][ADDRESS][ZIP]",
+    "zip_code" => "[FAKER][ADDRESS][ZIP_CODE]",
     "street_number" => 1000,
     "street_name" => "[FAKER][ADDRESS][STREET_NAME]",
     "floor" => "4",
@@ -908,7 +908,7 @@ payer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
 Shipments shipments = new Shipments();
 shipments.setMode(Shipments.ShipmentMode.me2)
     .setDimensions("30x30x30,500")
-    .setReceiverAddress(new AddressReceiver("[FAKER][ADDRESS][ZIP]", 1000, "[FAKER][ADDRESS][STREET_NAME]", "4", "C"));
+    .setReceiverAddress(new AddressReceiver("[FAKER][ADDRESS][ZIP_CODE]", 1000, "[FAKER][ADDRESS][STREET_NAME]", "4", "C"));
 
 shipments.setFreeMethods(505345, 100009); 
 
@@ -937,7 +937,7 @@ var shipments = {
   "mode": "me2",
   "dimensions": "30x30x30,500",
   "receiver_address": {
-    "zip_code": "[FAKER][ADDRESS][ZIP]",
+    "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
     "street_number": 1000,
     "street_name": "[FAKER][ADDRESS][STREET_NAME]",
     "floor": "4",
@@ -981,7 +981,7 @@ shipment = MercadoPago::Shipment.new
 shipment.mode = me2
 shipment.dimensions = "30x30x30,500"
 shipment.receiver_address = {
-  zip_code: "[FAKER][ADDRESS][ZIP]",
+  zip_code: "[FAKER][ADDRESS][ZIP_CODE]",
   street_number: 1000,
   street_name: "[FAKER][ADDRESS][STREET_NAME]",
   floor: "4",
@@ -1027,7 +1027,7 @@ MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataS
      LocalPickUp = true,
      FreeMethods = new List<int> { 505345, 100009 },
      ReceiverAddress = new MercadoPago.DataStructures.Preference.ReceiverAddress(){
-      ZipCode = "[FAKER][ADDRESS][ZIP]",
+      ZipCode = "[FAKER][ADDRESS][ZIP_CODE]",
       StreetNumber = 1000,
       StreetName = "[FAKER][ADDRESS][STREET_NAME]",
       Floor = "4",

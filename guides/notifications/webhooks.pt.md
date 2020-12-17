@@ -89,7 +89,7 @@ Tipo         | URL                                                  | Documenta�
 payment      | https://api.mercadopago.com/v1/payments/[ID]      | [ver documentação](https://www.mercadopago.com.ar/developers/pt/reference/payments/_payments_id/get/)
 plan         | https://api.mercadopago.com/v1/plans/[ID]         | -
 subscription | https://api.mercadopago.com/v1/subscriptions/[ID] | -
-invoice      | https://api.mercadopago.com/v1/invoices/[ID]      | [ver documentação](https://www.mercadopago.com.ar/developers/pt/reference/invoices/_invoices_id/get/)
+invoice      | https://api.mercadopago.com/v1/invoices/[ID]      | -
 
 
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma, por exemplo: atualizar um pagamento aprovado.

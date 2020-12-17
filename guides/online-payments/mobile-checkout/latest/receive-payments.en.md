@@ -198,7 +198,7 @@ You must submit your buyer’s email.
     ------------
     "address": {
       "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-      "street_number": [FAKER][ADDRESS][BUILDING_NUMBER],
+      "street_number": 7304,
       "zip_code": "[FAKER][ADDRESS][ZIP_CODE]"
     }
   },

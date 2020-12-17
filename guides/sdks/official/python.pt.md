@@ -30,7 +30,7 @@ Em Python 3.x:
 ### Configure suas credenciais
 
 
-Obtenha seu **CLIENT_ID** e **CLIENT_SECRET** [nos seguintes link]([FAKER][CREDENTIALS][URL_BASIC]).
+Obtenha seu **CLIENT_ID** e **CLIENT_SECRET** [nos seguintes link]([FAKER][CREDENTIALS][URL]).
 
 ``` python
     import mercadopago
@@ -177,7 +177,7 @@ Obtenha seu **ACCESS_TOKEN** na [seção Credenciais]([FAKER][CREDENTIALS][URL])
     mp.get ("/v1/customers/CUSTOMER_ID")
 ```
 
-> Para mais informações visite a sessão [API reference]https://www.mercadopago.com.br/developers/pt/reference).
+> Para mais informações visite a sessão [API reference](https://www.mercadopago.com.br/developers/pt/reference).
 
 ## Métodos genéricos
 

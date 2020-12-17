@@ -67,13 +67,13 @@ Subscriptions | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debm
 | :--- | :--- | :--- |
 | Payments | Payment link | N/A |
 | Payments | Checkout Pro | N/A |
-| Payments | Mobile Checkout | `account_money` |
-| Payments | Checkout API | N/A |
-| Subscriptions | Payment link | `bolbradesco`, `giftcard` |
-| Subscriptions | Checkout | `bolbradesco`, `giftcard` |
-| Subscriptions | Checkout API | `bolbradesco`, `giftcard` |
-| Marketplace | Checkout Pro | N/A |
-| Marketplace | Checkout API | N/A |
+| Payments | Mobile Checkout | `account_money`, `pix` |
+| Payments | Checkout API |`pix` |
+| Subscriptions | Payment link | `bolbradesco`, `giftcard`, `pix` |
+| Subscriptions | Checkout | `bolbradesco`, `giftcard`, `pix` |
+| Subscriptions | Checkout API | `bolbradesco`, `giftcard`, `pix` |
+| Marketplace | Checkout Pro | `pix` |
+| Marketplace | Checkout API | `pix` |
 
 ### Chile
 

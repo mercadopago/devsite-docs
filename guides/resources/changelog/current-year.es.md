@@ -6,6 +6,25 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Diciembre 2020
 
+### 7 de diciembre
+
+> CHANGELOG
+>
+> Nueva versión SDK NodeJS
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK NODEJS
+
+Lanzamos una nueva versión del SDK NodeJS 1.5.2.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-nodejs/releases/tag/1.5.2).
+
+
 ### 1 de diciembre
 
 > CHANGELOG
@@ -26,6 +45,7 @@ Lanzamos la nueva versión 4.6.0 para WooCommerce.
 >
 > Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.6.0).
 
+---
 
 ## Noviembre 2020
 
@@ -116,6 +136,8 @@ Las suscripciones de Mercado Pago te permiten recibir pagos de forma recurrente,
 [Crear suscripciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/introduction)
 ------------
 
+---
+
 ## Octubre 2020
 
 ### 29 de octubre
@@ -182,6 +204,8 @@ Extendimos los plazos de devoluciones a 180 días para todos los medios de pago.
 
 [Ir a documentación de Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds#bookmark_devoluciones)
 ------------
+
+---
 
 ## Septiembre 2020
 
