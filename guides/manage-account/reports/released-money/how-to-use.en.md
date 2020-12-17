@@ -43,7 +43,7 @@ If this happens, the report is still valid. The money goes back to your account 
 
 Note how the Release report is composed in this example to identify the sections and read your own reports:
 
-![Mercado Pago Release report example](/images/manage-account/reports/examples-es.png)
+![Mercado Pago Release report example](/images/manage-account/reports/example-release-en.jpg)
 
 The default version will show an extended view of the columns. The final report will have as much detail as possible.
 

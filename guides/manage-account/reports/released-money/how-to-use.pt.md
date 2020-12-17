@@ -43,7 +43,7 @@ Caso isso aconteça, o relatório continuará válido. O dinheiro voltará à su
 
 Observe como está composto o relatório de dinheiro liberado neste exemplo para identificar as seções e analisar seus próprios relatórios:
 
-![Relatório de liberaçoes Exemplos Mercado Pago](/images/manage-account/reports/examples-es.png)
+![Relatório de liberaçoes Exemplos Mercado Pago](/images/manage-account/reports/example-release-pt.jpg)
 
 A versão padrão mostrará uma visualização estendida das colunas. O relatório final terá a maior quantidade de detalhes possível. 
 
