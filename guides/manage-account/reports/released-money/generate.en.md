@@ -7,7 +7,7 @@ You can generate a Release report from your Mercado Pago account:
 
 | Channels | Description |
 | ------- | ----------- |
-| Mercado Pago panel | <br/>It's very simple and fast. To generate ir from your account, go to ----[mla]---- [Reports](https://www.mercadopago.com.ar/movements) ------------ ----[mlm]---- [Reports](https://www.mercadopago.com.mx/movements) ------------ ----[mlu]---- [Reports](https://www.mercadopago.com.uy/movements) ------------ ----[mlc]---- [Reports](https://www.mercadopago.cl/movements) ------------ ----[mco]---- [Reports](https://www.mercadopago.com.co/movements) ------------ ----[mpe]---- [Reports](https://www.mercadopago.com.pe/movements) ------------ ----[mlb]---- [Reports](https://www.mercadopago.com.br/movements) ------------ and choose * Created reports*.<br/><br/>Follow the step by step to [generate reports from your panel.](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/released-money/panel/)<br/><br/> |
+| Mercado Pago panel | <br/>It's very simple and fast. To generate ir from your account, go to [Reports](https://www.mercadopago[FAKER][URL][DOMAIN]/movements) and choose * Created reports*.<br/><br/>Follow the step by step to [generate reports from your panel.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/panel/)<br/><br/> |
 
 ## Technical characteristics of the report
 
@@ -45,7 +45,7 @@ All the options you have available when downloading your report.
 >
 > Note
 >
-> Have the [Releases report Glossary](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/released-money/glossary/) on hand to review it when needed or want to review a technical term.
+> Have the [Releases report Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary/) on hand to review it when needed or want to review a technical term.
 
 
 <hr/>
@@ -58,7 +58,7 @@ All the options you have available when downloading your report.
 >
 > Find out what the release report is and what it is for.
 >
-> [Introduction to the Release Report](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/released-money/introduction/)
+> [Introduction to the Release Report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -66,4 +66,4 @@ All the options you have available when downloading your report.
 >
 > Learn how the report is composed and how to analyze it to make your reconciliation. 
 >
-> [How to use this report](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/released-money/how-to-use/)
+> [How to use this report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/how-to-use/)

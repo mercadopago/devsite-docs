@@ -1,13 +1,13 @@
-# ¿Cómo generar tu reporte de liberaciones?
+# ¿Cómo generar tu reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------?
 
 
 ## Canales de generación
 
-Puedes generar un reporte de liberaciones desde tu cuenta de Mercado Pago:
+Puedes generar un reporte de ----[mla]---- liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones ------------ desde tu cuenta de Mercado Pago:
 
 | Canales | Descripción |
 | ------- | ----------- |
-| Panel de Mercado Pago | <br/>Es muy simple y rápido. Para generarlo desde tu cuenta de Mercado Pago, ve a ----[mla]---- [tus informes](https://www.mercadopago.com.ar/movements) ------------ ----[mlm]---- [tus informes](https://www.mercadopago.com.mx/movements) ------------ ----[mlu]---- [tus informes](https://www.mercadopago.com.uy/movements) ------------ ----[mlc]---- [tus informes](https://www.mercadopago.cl/movements) ------------ ----[mco]---- [tus informes](https://www.mercadopago.com.co/movements) ------------ ----[mpe]---- [tus informes](https://www.mercadopago.com.pe/movements) ------------ ----[mlb]---- [tus informes](https://www.mercadopago.com.br/movements) ------------ y elige la opción de *Ver reportes creados*.<br/><br/>Sigue el paso a paso para [generar reportes desde el panel.](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/released-money/panel/)<br/><br/> |
+| Panel de Mercado Pago | <br/>Es muy simple y rápido. Para generarlo desde tu cuenta de Mercado Pago, ve a [Reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/movements) y elige la opción de *Ver reportes creados*.<br/><br/>Sigue el paso a paso para [generar reportes desde el panel.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/panel/)<br/><br/> |
 
 ## Características técnicas del reporte
 
@@ -44,7 +44,7 @@ Considera estas opciones a la hora de descargar tu reporte:
 >
 > Nota
 >
-> Ten a mano el [Glosario del reportes](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/release-money/glossary/) de liberaciones para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/release-money/glossary/) de ----[mla]---- liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones ------------ para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 <hr/>
 
@@ -52,16 +52,16 @@ Considera estas opciones a la hora de descargar tu reporte:
 
 > LEFT_BUTTON_RECOMMENDED_ES
 >
-> Introducción al reporte de liberaciones 
+> Introducción al reporte de ----[mla]---- liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones ------------ 
 >
-> Conoce qué es y para qué sirve el reporte de liberaciones.
+> Conoce qué es y para qué sirve el reporte de ----[mla]---- liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones ------------.
 >
-> [Introducción al reporte de liberaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/released-money/introduction/)
+> [Introducción al reporte de ----[mla]---- liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones ------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
 > Cómo usar el reporte
 >
-> Qué es y para qué sirve el reporte de liberaciones. Descubre ejemplos y casos de uso.
+> Qué es y para qué sirve el reporte de ----[mla]---- liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones ------------. Descubre ejemplos y casos de uso.
 >
-> [Cómo usar el reporte](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/released-money/how-to-use/)
+> [Cómo usar el reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/how-to-use/)

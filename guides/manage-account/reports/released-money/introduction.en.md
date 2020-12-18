@@ -14,12 +14,12 @@ Once available, it will be in your report tray and you can always download it tw
 
 ### Report Values
 
-Depending on the [rates and terms](https://www.mercadopago.com.ar/settings/release-options) you choose, the money you earn from an order will be released some time after the payment is credited. For this reason, the total value you see in the report will not always match your total balance or the value you see in the billing reports.
+Depending on the [rates and terms](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options) you choose, the money you earn from an order will be released some time after the payment is credited. For this reason, the total value you see in the report will not always match your total balance or the value you see in the billing reports.
 
 The release periods have to do with the bank terms or the intermediation flows when the operations are carried out in Mercado Libre. Other operations that may affect the release of your money are Chargebacks and Complaints that you may receive for an order.
 
 
-> To know the exact date on which the money of an operation will be available, check the [details of your accredited collections](https://www.mercadopago.com.ar/activities/balance).
+> To know the exact date on which the money of an operation will be available, check the [details of your accredited collections](https://www.mercadopago[FAKER][URL][DOMAIN]/activities/balance).
 
 
 ## What to use the report for
@@ -39,7 +39,7 @@ In addition, you can use the report to know the history of releases between two 
 >
 > Note
 >
-> Have the [Releases report Glossary](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/released-money/glossary/) on hand to review it when needed or want to review a technical term.
+> Have the [Releases report Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary/) on hand to review it when needed or want to review a technical term.
 
 <hr/>
 
@@ -51,7 +51,7 @@ In addition, you can use the report to know the history of releases between two 
 >
 > Learn the composition of the report and how to read it to make your reconciliation
 >
-> [How to use the report](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/released-money/how-to-use/)
+> [How to use the report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/how-to-use/)
 
 > RIGHT_BUTTON_REQUIRED_ES
 >
@@ -59,4 +59,4 @@ In addition, you can use the report to know the history of releases between two 
 >
 > Learn the ways to generate a report and follow the steps to set your preferences.
 >
-> [Generate your reports](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/release-money/generate/)
+> [Generate your reports](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/release-money/generate/)

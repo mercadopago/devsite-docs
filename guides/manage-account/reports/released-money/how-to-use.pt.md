@@ -12,7 +12,7 @@ O relatório é composto por:
 | Composição do relatório | Descrição |
 | --- | --- |
 | Initial Available Balance |<br/> Saldo inicial.<br/><br/>|
-| Release |<br/>O detalhe das liberações de dinheiro que inclui o saldo inicial.<br/><br/> |
+| Release |<br/>O detalhe das ----[mla]---- liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberações ------------ de dinheiro que inclui o saldo inicial.<br/><br/> |
 | Block | <br/>Os bloqueios de dinheiro por disputas.<br/><br/> |
 | Unblock |<br/> Os desbloqueios após a resolução das disputas.<br/><br/>|
 | Subtotal | <br/>É a soma das transações que compõem cada seção.<br/><br/>|
@@ -37,13 +37,18 @@ Caso isso aconteça, o relatório continuará válido. O dinheiro voltará à su
 >
 > Nota
 >
-> Tenha em mãos o [Glossário do relatório](https://www.mercadopago.com.br/developers/es/guides/manage-account/reports/released-money/glossary/) de liberaçoes para consultá-lo quando precisar ou queira conferir algum termo técnico.
+> Tenha em mãos o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary/) de ----[mla]---- liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberações ------------ para consultá-lo quando precisar ou queira conferir algum termo técnico.
 
 ## Exemplo de um relatório
 
-Observe como está composto o relatório de dinheiro liberado neste exemplo para identificar as seções e analisar seus próprios relatórios:
+Observe como está composto o relatório de dinheiro ----[mla]---- liquidado ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberado ------------ neste exemplo para identificar as seções e analisar seus próprios relatórios:
 
-![Relatório de liberaçoes Exemplos Mercado Pago](/images/manage-account/reports/example-release-pt.jpg)
+----[mla]----
+![Relatório de liquidaçoes](/images/manage-account/reports/example-release-pt.jpg)
+------------
+----[mlm, mlb, mlc, mco, mlu, mpe]----
+![Relatório de liberações](/images/manage-account/reports/example-release-pt.jpg)
+------------
 
 A versão padrão mostrará uma visualização estendida das colunas. O relatório final terá a maior quantidade de detalhes possível. 
 
@@ -67,7 +72,7 @@ A versão padrão mostrará uma visualização estendida das colunas. O relatór
 >
 > Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
 >
-> [Gere seus relatórios](https://www.mercadopago.com.br/developers/es/guides/manage-account/reports/released-money/generate/)
+> [Gere seus relatórios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/generate/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -75,4 +80,4 @@ A versão padrão mostrará uma visualização estendida das colunas. O relatór
 >
 > Saiba o que significa cada termo e os detalhes das colunas que compõem o relatório.
 >
-> [Glossário](https://www.mercadopago.com.br/developers/es/guides/manage-account/reports/released-money/glossary/)
+> [Glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary/)

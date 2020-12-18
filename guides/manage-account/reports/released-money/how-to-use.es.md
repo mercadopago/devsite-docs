@@ -11,7 +11,7 @@ El reporte está compuesto por:
 | Composición del reporte | Descripción |
 | --- | --- |
 | Initial Available Balance |<br/> Balance inicial.<br/><br/>|
-| Release |<br/> El detalle de las liberaciones de dinero que incluye el balance inicial.<br/><br/> |
+| Release |<br/> El detalle de las ----[mla]---- liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones ------------ de dinero que incluye el balance inicial.<br/><br/> |
 | Block | <br/>Los bloqueos de dinero por disputas.<br/><br/> |
 | Unblock |<br/> Los desbloqueos por la resolución de las disputas.<br/><br/>|
 | Subtotal | <br/>Es la suma de las operaciones que componen a cada sección.<br/><br/>|
@@ -35,13 +35,18 @@ Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/released-money/glossary/) de liberaciones para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary/) de ----[mla]---- liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones ------------ para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 ## Ejemplo de un reporte
 
-Observa cómo está compuesto el reporte de liberaciones en este ejemplo para identificar las secciones y leer tus propios reportes:
+Observa cómo está compuesto el reporte de ----[mla]---- liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones ------------ en este ejemplo para identificar las secciones y leer tus propios reportes:
 
-![Reporte de liberaciones Ejemplos Mercado Pago](/images/manage-account/reports/example-release-es.jpg)
+----[mla]----
+![Reporte de liquidaciones](/images/manage-account/reports/example-release-es.jpg)
+------------
+----[mlm, mlb, mlc, mco, mlu, mpe]----
+![Reporte de liberaciones](/images/manage-account/reports/example-release-es.jpg)
+------------
 
 La versión por defecto mostrará una vista extendida de las columnas. El informe final tendrá la mayor cantidad de detalle posible.
 
@@ -56,7 +61,7 @@ La versión por defecto mostrará una vista extendida de las columnas. El inform
 >
 > Conoce las formas de generar un reporte y sigue los pasos para configurar tus preferencias.
 >
-> [Genera tus reportes](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/released-money/generate/)
+> [Genera tus reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/generate/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -64,4 +69,4 @@ La versión por defecto mostrará una vista extendida de las columnas. El inform
 >
 > Conoce qué significa cada término y el detalle de las columnas que componen al reporte.
 >
-> [Glosario](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/released-money/glossary/)
+> [Glosario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary/)
