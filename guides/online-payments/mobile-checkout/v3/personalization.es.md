@@ -175,7 +175,7 @@ Para incorporar en el _Checkout_ las opciones configuradas en la clase _FlowPref
 ```android
 	CheckoutPreference checkoutPreference = new CheckoutPreference.Builder()
                 .setSite(Sites.ARGENTINA)
-                .addItem(new Item("[FAKER][COMMERCE][PRODUCT_NAME]", new BigDecimal("100")))
+                .addItem(new Item("Blue shirt", new BigDecimal("100")))
                 .build();
 
 FlowPreference flowPreference = new FlowPreference.Builder()
@@ -199,7 +199,7 @@ let flowPrefernece = FlowPreference()
 
 MercadoPagoCheckout.setFlowPreference(flowPrefernece)
 
-let item = Item(_id: "itemId", title: "[FAKER][COMMERCE][PRODUCT_NAME]", quantity: [FAKER][NUMBER][BETWEEN][1,10], unitPrice: [FAKER][COMMERCE][PRICE], description: nil, currencyId: "[FAKER][CURRENCY][ACRONYM]")
+let item = Item(_id: "itemId", title: "Blue shirt", quantity: [FAKER][NUMBER][BETWEEN][1,10], unitPrice: [FAKER][COMMERCE][PRICE], description: nil, currencyId: "[FAKER][CURRENCY][ACRONYM]")
 let payer = Payer(_id: "payerId", email: "[FAKER][INTERNET][FREE_EMAIL]", type: nil, identification: nil, entityType: nil)
 
 let checkoutPreference = CheckoutPreference()
@@ -218,7 +218,7 @@ FlowPreference *flowPreference = [[FlowPreference alloc]init];
 [flowPreference disableBankDeals];
 [MercadoPagoCheckout setFlowPreference:flowPreference];
 
-Item *item = [[Item alloc] initWith_id:@"itemId" title:@"[FAKER][COMMERCE][PRODUCT_NAME]" quantity:[FAKER][NUMBER][BETWEEN][1,10] unitPrice:[FAKER][COMMERCE][PRICE] description:@"item description" currencyId:@"[FAKER][CURRENCY][ACRONYM]"];
+Item *item = [[Item alloc] initWith_id:@"itemId" title:@"Blue shirt" quantity:[FAKER][NUMBER][BETWEEN][1,10] unitPrice:[FAKER][COMMERCE][PRICE] description:@"item description" currencyId:@"[FAKER][CURRENCY][ACRONYM]"];
 Payer *payer = [[Payer alloc] initWith_id:@"payerId" email:@"[FAKER][INTERNET][FREE_EMAIL]" type:nil identification:nil entityType:nil];
     
 NSArray *items = [NSArray arrayWithObjects:item, item, nil];
@@ -249,7 +249,7 @@ Una vez creada la _ServicePreference_, debes iniciar el flujo de pago de Mercado
 public void submit(View view) {
   CheckoutPreference checkoutPreference = new CheckoutPreference.Builder()
           .setSite(Sites.ARGENTINA)
-          .addItem(new Item("[FAKER][COMMERCE][PRODUCT_NAME]", new BigDecimal("100")))
+          .addItem(new Item("Blue shirt", new BigDecimal("100")))
           .build();
 
   HashMap<String, Object> extraData = new HashMap<>();
@@ -268,7 +268,7 @@ public void submit(View view) {
 }
 ```
 ```swift
-let item = Item(_id: "itemId", title: "[FAKER][COMMERCE][PRODUCT_NAME]", quantity: [FAKER][NUMBER][BETWEEN][1,10], unitPrice: [FAKER][COMMERCE][PRICE], description: nil, currencyId: "[FAKER][CURRENCY][ACRONYM]")
+let item = Item(_id: "itemId", title: "Blue shirt", quantity: [FAKER][NUMBER][BETWEEN][1,10], unitPrice: [FAKER][COMMERCE][PRICE], description: nil, currencyId: "[FAKER][CURRENCY][ACRONYM]")
 let payer = Payer(_id: "payerId", email: "[FAKER][INTERNET][FREE_EMAIL]", type: nil, identification: nil, entityType: nil)
 
 

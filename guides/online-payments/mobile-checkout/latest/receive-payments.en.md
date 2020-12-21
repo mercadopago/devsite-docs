@@ -76,7 +76,7 @@ Then, you must add the attributes of your payment preference:
   $preference = new MercadoPago\Preference();
 
   $item = new MercadoPago\Item();
-  $item->title = "[FAKER][COMMERCE][PRODUCT_NAME]";
+  $item->title = "Blue shirt";
   $item->quantity = [FAKER][NUMBER][BETWEEN][1,10];
   $item->currency_id = "[FAKER][CURRENCY][ACRONYM]";
   $item->unit_price = [FAKER][COMMERCE][PRICE];
@@ -95,7 +95,7 @@ Preference preference = new Preference();
 
 Item item = new Item();
 item.setId("1234")
-    .setTitle("[FAKER][COMMERCE][PRODUCT_NAME]")
+    .setTitle("Blue shirt")
     .setQuantity([FAKER][NUMBER][BETWEEN][1,10])
     .setCategoryId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float) [FAKER][COMMERCE][PRICE]);
@@ -112,7 +112,7 @@ preference.save();
 var preference = {}
 
 var item = {
-  title: '[FAKER][COMMERCE][PRODUCT_NAME]',
+  title: 'Blue shirt',
   quantity: 1,
   currency_id: '[FAKER][CURRENCY][ACRONYM]',
   unit_price: [FAKER][COMMERCE][PRICE]
@@ -135,7 +135,7 @@ mercadopago.preferences.create(preference).then(function (data) {
 preference = MercadoPago::Preference.new()
 
 item = MercadoPago::Item.new()
-item.title="[FAKER][COMMERCE][PRODUCT_NAME]"
+item.title="Blue shirt"
 item.quantity= [FAKER][NUMBER][BETWEEN][1,10]
 item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
 item.unit_price = [FAKER][COMMERCE][PRICE]
@@ -155,7 +155,7 @@ Preference preference = new Preference();
   new Item()
   {
     Id = "1234",
-    Title = "[FAKER][COMMERCE][PRODUCT_NAME]",
+    Title = "Blue shirt",
     Quantity = [FAKER][NUMBER][BETWEEN][1,10],
     CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
     UnitPrice = (float)[FAKER][COMMERCE][PRICE]

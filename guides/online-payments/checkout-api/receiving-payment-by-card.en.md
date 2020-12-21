@@ -475,7 +475,7 @@ curl -X POST \
     -d '{
           "transaction_amount": [FAKER][NUMBER][BETWEEN][100, 200],
           "token": "ff8080814c11e237014c1ff593b57b4d",
-          "description": "[FAKER][COMMERCE][PRODUCT_NAME]",
+          "description": "Blue shirt",
           "installments": 1,
           "payment_method_id": "visa",
           "issuer_id": 310,
