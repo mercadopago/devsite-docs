@@ -19,7 +19,7 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | TAXES_AMOUNT | Taxes charged for gross income withholdings. |
 | COUPON_AMOUNT | Discount coupon amount. Only the gross amount (`GROSS_AMOUNT`) is discounted if provided by the seller. |
 | INSTALLMENTS | Number of installments in which the operation was carried out. |
-| PAYMENT METHOD | Payment method. ----[mla]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_argentina)  ------------ ----[mlb]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_brasil) ------------ ----[mpe]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_perú)  ------------ ----[mco]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_colombia)  ------------ ----[mlm]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_méxico) ------------ ----[mlu]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_uruguay) ------------ ----[mlc]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_chile) ------------ |
+| PAYMENT METHOD | Payment method. ----[mla]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_argentina)  ------------ ----[mlb]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_brasil) ------------ ----[mpe]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_perú)  ------------ ----[mco]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_colombia)  ------------ ----[mlm]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_méxico) ------------ ----[mlu]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_uruguay) ------------ ----[mlc]---- [It can be](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_chile) ------------ |
 | TAX_DETAIL | <br/> Description of the tax withheld by operation in `TAXES_AMOUNT`. ----[mla]----  It can take the following values according to the jurisdiction: <br/>cordoba<br/>mendoza<br/>la_pampa<br/>santa_fe<br/>tucuman<br/>entre_rios<br/>catamarca<br/>neuquen<br/>santiago_del_estero<br/>rio_negro<br/>jujuy ------------ <br/><br/> |
 | TAX_AMOUNT_TELCO | It is the value of the tax on telecommunications companies that is deducted from the gross value. |
 | TRANSACTION_APPROVAL_DATE | Date of approval of the operation. |
@@ -35,18 +35,23 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | PACK_ID | Package identification in the cart. |
 | TAXES_DISAGGREGATED | Taxes disaggregated in JSON format. |
 
-> LEFT_BUTTON_RECOMMENDED_ES
+<hr/>
+---
+
+### Next steps
+
+> LEFT_BUTTON_RECOMMENDED_EN
 >
 > How to use this report
 >
 > Learn how the report is composed and how to analyze it to make your reconciliation. 
 >
-> [How to use this report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/how-to-use/)
+> [How to use this report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/how-to-use/)
 
-> RIGHT_BUTTON_REQUIRED_ES
+> RIGHT_BUTTON_REQUIRED_EN
 >
 > Generate your report
 >
 > Learn the ways to generate a report and follow the steps to set your preferences.
 >
-> [Generate your report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/generate/)
+> [Generate your report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/generate/)

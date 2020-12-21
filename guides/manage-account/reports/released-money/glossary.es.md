@@ -36,6 +36,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | TAXES_DISAGGREGATED | Impuestos desagregados en formato JSON. |
 
 <hr/>
+---
 
 ### Próximos pasos
 

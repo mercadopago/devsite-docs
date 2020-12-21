@@ -50,8 +50,8 @@ Observa cómo está compuesto el reporte de ----[mla]---- liquidaciones --------
 
 La versión por defecto mostrará una vista extendida de las columnas. El informe final tendrá la mayor cantidad de detalle posible.
 
-
 <hr/>
+---
 
 ### Próximos pasos
 

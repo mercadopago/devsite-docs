@@ -36,7 +36,7 @@ If this happens, the report is still valid. The money goes back to your account 
 >
 > Note
 >
-> Have the [Releases report Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary/) on hand to review it when needed or want to review a technical term.
+> Have the [Releases report Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/glossary/) on hand to review it when needed or want to review a technical term.
 
 
 ## Report example
@@ -47,30 +47,23 @@ Note how the Release report is composed in this example to identify the sections
 
 The default version will show an extended view of the columns. The final report will have as much detail as possible.
 
-> WARNING
->
-> Important: differences between partial withdrawal and total withdrawal.
->
-> When you withdraw all your available money, the total report will match that amount. On the other hand, when you make a partial withdrawal, which does not include all of your released account money, the total available balance and the total of the report will not match.
->
-> For example, imagine that you have $ 3,000 available to withdraw to a bank account but only withdraw $ 2,000. The withdrawal is partial but the total value of the report will continue to show you the amount of the initial balance that was at the time of withdrawal, that is, the $ 3,000 you had available. On the other hand, if you withdraw the $ 3,000, the total value of the report will match the value of that withdrawal.
-
 <hr/>
+---
 
 ### Next steps
 
-> LEFT_BUTTON_REQUIRED_ES
+> LEFT_BUTTON_REQUIRED_EN
 >
 > Generate your report
 >
 > Learn the ways to generate a report and follow the steps to set your preferences.
 >
-> [Generate your report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/generate/)
+> [Generate your report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/generate/)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON_RECOMMENDED_EN
 >
 > Glossary
 >
 > Know what each term means and the detail of the columns that make up the report.
 >
-> [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary/)
+> [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/glossary/)

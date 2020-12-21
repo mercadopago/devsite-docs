@@ -1,4 +1,4 @@
-# O que é o Relatório de ----[mla]---- Liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------?
+# O que é o relatório de ----[mla]---- Liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------?
 
 
 O Relatório de ----[mla]---- Liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ e um **relatório para ser baixado que te permite saber como seu saldo disponível está composto no Mercado Pago. Ou seja, quanto você tem para usar** Ele contém **detalhes de todos os valores envolvidos em um período de tempo,** e inclui os casos de ----[mla]---- liquidaçao ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberação ------------ de dinheiro, como de bloqueios e desbloqueios.
@@ -38,24 +38,25 @@ Além disso, você pode usar o relatório para saber o histórico de dinheiro --
 >
 > Nota
 >
-> Tenha em mãos o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary/) de dinheiro ----[mla]---- Liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ para revisá-lo quando precisar ou caso queira consultar algum termo técnico.
+> Tenha em mãos o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/glossary/) de dinheiro ----[mla]---- Liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ para revisá-lo quando precisar ou caso queira consultar algum termo técnico.
 
 <hr/>
+---
 
 ### Próximos passos
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON_RECOMMENDED_PT
 >
 > Como usar o relatório           
 >
 > Saiba como o relatório é composto e aprenda a analisá-lo para fazer sua conciliação.
 >
-> [Como usar o relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/how-to-use/)
+> [Como usar o relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/how-to-use/)
 
-> RIGHT_BUTTON_REQUIRED_ES
+> RIGHT_BUTTON_REQUIRED_PT
 >
 > Gere seus relatórios
 >
 > Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
 >
-> [Gere seus relatórios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/release-money/generate/)
+> [Gere seus relatórios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/release-money/generate/)

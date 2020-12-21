@@ -1,4 +1,4 @@
-# ¿Qué es el Reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------?
+# ¿Qué es el reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------?
 
 
 El reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ es un **informe descargable que te permite conocer cómo está compuesto tu dinero disponible en Mercado Pago.** Contiene el **detalle de todos los fondos involucrados en un período de fechas,** e incluye los casos de ----[mla]---- liquidación ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberación ------------ de dinero como de bloqueos y desbloqueos.
@@ -28,7 +28,7 @@ Los plazos de liquidación tienen que ver con los tiempos de los bancos o por lo
 
 **Este reporte se usa para conciliar** el dinero que existe en tu cuenta en un momento determinado e incluye las transacciones que componen a esos movimientos. 
 
-Genera el reporte de ----[mla]---- liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones ------------ cada vez que necesites conciliar el detalle del dinero liberado entre dos fechas. Podrás saber cuándo se hizo cada transacción, en qué concepto y por qué monto, incluyendo los casos de bloqueo y desbloqueo. 
+Genera el reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ cada vez que necesites conciliar el detalle del dinero liberado entre dos fechas. Podrás saber cuándo se hizo cada transacción, en qué concepto y por qué monto, incluyendo los casos de bloqueo y desbloqueo. 
 
 
 ### Usa el reporte para conocer tu historial
@@ -42,6 +42,7 @@ Además, puedes usar el reporte para conocer el historial de dinero ----[mla]---
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary/) de ----[mla]---- liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones ------------ para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 <hr/>
+---
 
 ### Próximos pasos
 

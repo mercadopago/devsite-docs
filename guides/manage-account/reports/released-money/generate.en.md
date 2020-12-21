@@ -7,7 +7,7 @@ You can generate a Release report from your Mercado Pago account:
 
 | Channels | Description |
 | ------- | ----------- |
-| Mercado Pago panel | <br/>It's very simple and fast. To generate ir from your account, go to [Reports](https://www.mercadopago[FAKER][URL][DOMAIN]/movements) and choose * Created reports*.<br/><br/>Follow the step by step to [generate reports from your panel.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/panel/)<br/><br/> |
+| Mercado Pago panel | It's very simple and fast. To generate ir from your account, go to [Reports](https://www.mercadopago[FAKER][URL][DOMAIN]/movements) and choose "Created reports".<br/><br/>Follow the step by step to [generate reports from your panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/panel/). |
 
 ## Technical characteristics of the report
 
@@ -20,14 +20,13 @@ Know the characteristics of the elements that make up your report.
 
 
 | Element or action | Characteristics |
-| ------------ |	--------    |
-| Tables Detail | <br/>The detail of the tables includes information generated in at least 1 day. <br/> <br/>  |
-| Column Order |<br/> Fix <br/> <br/> |
-| Maximum Period | <br/> Reports with data of up to 60 days <br/> <br/> |
-| Currency | <br/> Local (basada en el país donde esté registrada la cuenta de Mercado Pagobased on the country where the Mercado Pago account is registered) <br/> <br/> |
-| Time zone of the columns | <br/> GMT-4 <br/> <br/> Take as reference the place where you download the report from. <br/> <br/> |
-| Date selection via web | <br/> It must be based on the timezone of the user's account.
- <br/>For example, the timezone of Sao Paulo corresponds to the user account registered in Brazil. <br/> <br/> |
+| ------------ | -------- |
+| Tables Detail | The detail of the tables includes information generated in at least 1 day. |
+| Column Order | Fix |
+| Maximum Period | Reports with data of up to 60 days. |
+| Currency | Local (based on the country where the Mercado Pago account is registered) |
+| Time zone of the columns | <br/> GMT-4 <br/> <br/> Take as reference the place where you download the report from. |
+| Date selection via web | <br/> It must be based on the timezone of the user's account. <br/> For example, the timezone of Sao Paulo corresponds to the user account registered in Brazil. |
 
 
 ### Report Export
@@ -35,35 +34,35 @@ Know the characteristics of the elements that make up your report.
 All the options you have available when downloading your report.
 
 | Element or action | Characteristics |
-| ------------ |	--------    |
-| Filename format | <br/>When the report is scheduled or manual:<br/> "prefix-custom-<span style='color:#999999;'>created-date.csv</span>" <br/> Example:  mystore-28-05-2019.csv <br/><br/> |
-| Download formats | <br/>.csv, .xlsx <br/><br/>Tip:Download the report in .csv to import the data and use it in other applications. Download it in .xlsx to read the information in the spreadsheet tables.<br/><br/> |
-| File | <br/>Generated reports are saved in your Mercado Pago account<br/><br/> |
+| ------------ | -------- |
+| Filename format | When the report is scheduled or manual: "prefix-custom-<span style='color:#999999;'>created-date.csv</span>" <br/> Example:  mystore-28-05-2019.csv |
+| Download formats | .csv, .xlsx <br/><br/>Tip:Download the report in .csv to import the data and use it in other applications. Download it in .xlsx to read the information in the spreadsheet tables. |
+| File | Generated reports are saved in your Mercado Pago account. |
 
 
 > NOTE
 >
 > Note
 >
-> Have the [Releases report Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary/) on hand to review it when needed or want to review a technical term.
-
+> Have the [Releases report Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/glossary/) on hand to review it when needed or want to review a technical term.
 
 <hr/>
+---
 
 ### Next steps
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON_RECOMMENDED_EN
 >
 > Introduction to the Release Report 
 >
 > Find out what the release report is and what it is for.
 >
-> [Introduction to the Release Report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction/)
+> [Introduction to the Release Report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction/)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON_RECOMMENDED_EN
 >
 > How to use this report
 >
 > Learn how the report is composed and how to analyze it to make your reconciliation. 
 >
-> [How to use this report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/how-to-use/)
+> [How to use this report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/how-to-use/)
