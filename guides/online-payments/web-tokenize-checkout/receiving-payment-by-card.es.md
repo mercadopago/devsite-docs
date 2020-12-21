@@ -101,7 +101,7 @@ Solamente debes realizar un *API call* incluyendo los datos que recibiste del ch
     $payment->payment_method_id = $payment_method_id;
     $payment->issuer_id = $issuer_id;
     $payment->payer = array(
-    "email" => "[FAKER][INTERNET][FREE_EMAIL]"
+    "email" => "john@yourdomain.com"
     );
     // Guarda y postea el pago
     $payment->save();
@@ -122,7 +122,7 @@ payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200]f)
        .setPaymentMethodId(payment_method_id)
        .setIssuerId(issuer_id)
        .setPayer(new Payer()
-         .setEmail("[FAKER][INTERNET][FREE_EMAIL]"));
+         .setEmail("john@yourdomain.com"));
 // Guarda y postea el pago
 payment.save();
 //...
@@ -142,7 +142,7 @@ var payment_data = {
   payment_method_id: payment_method_id,
   issuer_id: issuer_id,
   payer: {
-    email: '[FAKER][INTERNET][FREE_EMAIL]'
+    email: 'john@yourdomain.com'
   }
 };
 
@@ -168,7 +168,7 @@ payment.installments = installments
 payment.payment_method_id = payment_method_id
 payment.issuer_id = issuer_id
 payment.payer = {
-  email: "[FAKER][INTERNET][FREE_EMAIL]"
+  email: "john@yourdomain.com"
 }
 # Guarda y postea el pago
 payment.save()
@@ -190,7 +190,7 @@ Payment payment = new Payment()
     PaymentMethodId = payment_method_id,
     IssuerId = issuer_id,
     Payer = new Payer(){
-        Email = "[FAKER][INTERNET][FREE_EMAIL]"
+        Email = "john@yourdomain.com"
     }
 };
 // Guarda y postea el pago

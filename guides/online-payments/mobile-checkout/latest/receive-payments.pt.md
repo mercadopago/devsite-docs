@@ -99,7 +99,7 @@ item.setId("1234")
     .setUnitPrice((float)[FAKER][COMMERCE][PRICE]);
 
 Payer payer = new Payer();
-payer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
+payer.setEmail("john@yourdomain.com");
 
 preference.setPayer(payer);
 preference.appendItem(item);
@@ -139,7 +139,7 @@ item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
 item.unit_price = [FAKER][COMMERCE][PRICE]
 
 payer = MercadoPago::Payer.new()
-payer.email="[FAKER][INTERNET][FREE_EMAIL]"
+payer.email="john@yourdomain.com"
 
 preference.items = [item]
 preference.payer = payer
@@ -160,7 +160,7 @@ Preference preference = new Preference();
   }
   preference.Payer = new Payer()
   {
-    Email = "[FAKER][INTERNET][FREE_EMAIL]"
+    Email = "john@yourdomain.com"
   };
 
   preference.Save();
@@ -186,7 +186,7 @@ Quanto mais informações você nos enviar, melhor será a aprovação dos pagam
   "payer": {
     "name": "[FAKER][NAME][FIRST_NAME]",
     "surname": "[FAKER][NAME][LAST_NAME]",
-    "email": "[FAKER][INTERNET][FREE_EMAIL]",
+    "email": "john@yourdomain.com",
     "date_created": "2015-06-02T12:58:41.425-04:00",
     "phone": {
       "area_code": "[FAKER][PHONE_NUMBER][AREA_CODE]",

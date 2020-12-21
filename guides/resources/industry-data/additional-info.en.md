@@ -95,7 +95,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
           "identification_type": "[FAKER][IDENTIFICATION][TYPE]",
           "identification_number": "12345678"
         },
-        "email": "[FAKER][INTERNET][FREE_EMAIL]",
+        "email": "john@yourdomain.com",
         "first_name": "[FAKER][NAME][FIRST_NAME]",
         "last_name": "[FAKER][NAME][LAST_NAME]",
         "date_created": "",
@@ -224,7 +224,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
           "identification_type": "[FAKER][IDENTIFICATION][TYPE]",
           "identification_number": "12345678"
         },
-        "email": "[FAKER][INTERNET][FREE_EMAIL]”,
+        "email": "john@yourdomain.com”,
         "first_name": "[FAKER][NAME][FIRST_NAME]",
         "last_name": "[FAKER][NAME][LAST_NAME]",
         "date_created": "",
@@ -347,7 +347,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
           "identification_type": "[FAKER][IDENTIFICATION][TYPE]",
           "identification_number": "12345678"
         },
-        "email": "[FAKER][INTERNET][FREE_EMAIL]",
+        "email": "john@yourdomain.com",
         "first_name": "[FAKER][NAME][FIRST_NAME]",
         "last_name": "[FAKER][NAME][LAST_NAME]",
         "date_created": "",
@@ -480,7 +480,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
           "identification_type": "[FAKER][IDENTIFICATION][TYPE]",
           "identification_number": "12345678"
         },
-        "email": "[FAKER][INTERNET][FREE_EMAIL]",
+        "email": "john@yourdomain.com",
         "first_name": "[FAKER][NAME][FIRST_NAME]",
         "last_name": "[FAKER][NAME][LAST_NAME]",
         "date_created": "",
@@ -599,7 +599,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
           "identification_type": "[FAKER][IDENTIFICATION][TYPE]",
           "identification_number": "12345678"
         },
-        "email": "[FAKER][INTERNET][FREE_EMAIL]",
+        "email": "john@yourdomain.com",
         "name": "[FAKER][NAME][FIRST_NAME]",
         "surname": "[FAKER][NAME][LAST_NAME]",
         "date_created": "",
@@ -718,7 +718,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
           "identification_type": "[FAKER][IDENTIFICATION][TYPE]",
           "identification_number": "12345678"
         },
-        "email": "[FAKER][INTERNET][FREE_EMAIL]",
+        "email": "john@yourdomain.com",
         "name": "[FAKER][NAME][FIRST_NAME]",
         "surname": "[FAKER][NAME][LAST_NAME]",
         "date_created": "",
@@ -849,7 +849,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
           "identification_type": "[FAKER][IDENTIFICATION][TYPE]",
           "identification_number": "12345678"
         },
-        "email": "[FAKER][INTERNET][FREE_EMAIL]",
+        "email": "john@yourdomain.com",
         "name": "[FAKER][NAME][FIRST_NAME]",
         "surname": "[FAKER][NAME][LAST_NAME]",
         "date_created": "",
@@ -993,7 +993,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
           "identification_type": "[FAKER][IDENTIFICATION][TYPE]",
           "identification_number": "12345678"
         },
-        "email": "[FAKER][INTERNET][FREE_EMAIL]",
+        "email": "john@yourdomain.com",
         "name": "[FAKER][NAME][FIRST_NAME]",
         "surname": "[FAKER][NAME][LAST_NAME]",
         "date_created": "",
@@ -1114,7 +1114,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
           "identification_type": "[FAKER][IDENTIFICATION][TYPE]",
           "identification_number": "12345678"
         },
-        "email": "[FAKER][INTERNET][FREE_EMAIL]",
+        "email": "john@yourdomain.com",
         "name": "[FAKER][NAME][FIRST_NAME]",
         "surname": "[FAKER][NAME][LAST_NAME]",
         "date_created": "",
@@ -1220,7 +1220,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
           "identification_type": "[FAKER][IDENTIFICATION][TYPE]",
           "identification_number": "12345678"
         },
-        "email": "[FAKER][INTERNET][FREE_EMAIL]",
+        "email": "john@yourdomain.com",
         "name": "[FAKER][NAME][FIRST_NAME]",
         "surname": "[FAKER][NAME][LAST_NAME]",
         "date_created": "",
@@ -1340,7 +1340,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
           "identification_type": "[FAKER][IDENTIFICATION][TYPE]",
           "identification_number": "12345678"
         },
-        "email": "[FAKER][INTERNET][FREE_EMAIL]",
+        "email": "john@yourdomain.com",
         "name": "[FAKER][NAME][FIRST_NAME]",
         "surname": "[FAKER][NAME][LAST_NAME]",
         "date_created": "",
@@ -1472,7 +1472,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
           "identification_type": "[FAKER][IDENTIFICATION][TYPE]",
           "identification_number": "12345678"
         },
-        "email": "[FAKER][INTERNET][FREE_EMAIL]",
+        "email": "john@yourdomain.com",
         "name": "[FAKER][NAME][FIRST_NAME]",
         "surname": "[FAKER][NAME][LAST_NAME]",
         "date_created": "",
@@ -1591,7 +1591,7 @@ curl --location --request POST 'https://api.mercadopago.com/checkout/preferences
           "identification_type": "[FAKER][IDENTIFICATION][TYPE]",
           "identification_number": "12345678"
         },
-        "email": "[FAKER][INTERNET][FREE_EMAIL]",
+        "email": "john@yourdomain.com",
         "name": "[FAKER][NAME][FIRST_NAME]",
         "surname": "[FAKER][NAME][LAST_NAME]",
         "date_created": "",
