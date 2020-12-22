@@ -9,7 +9,7 @@
 
 ## Canais de geração
 
-Você pode gerar um relatório de ----[mla]---- liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberações ------------ pela sua conta Mercado Pago:
+Você pode gerar um relatório de ----[mla]---- Liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ pela sua conta Mercado Pago:
 
 | Canais | Descrição |
 | ------- | ----------- |
