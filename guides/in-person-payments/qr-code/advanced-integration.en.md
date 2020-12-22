@@ -22,11 +22,6 @@ Refunds happen when a payment was completed but the seller decides to cancel it 
 > Remember that in the case QR payments, refunds are available but cancellations are not.
 
 
-## Order validity
-
-By default, QR orders expires 10 minutes after being created or automatically if it’s closed. 
-
-If you require a different expiration time, you can send the header `X-Ttl-Store-Preference` with the time you need expressed in seconds. I.e., if you want 5 minutes as the available time, you’ll have to send the header `X-Ttl-Store-Preference: 300`.
 
 ## Get order data
 

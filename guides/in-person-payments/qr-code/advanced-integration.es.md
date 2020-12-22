@@ -22,12 +22,6 @@ Puedes encontrar toda la información en la [sección Devoluciones y cancelacion
 > 
 > Ten en cuenta que para pagos presenciales, solo puedes efectuar devoluciones pero no cancelaciones.
 
-## Vigencia de la orden
-
-Por defecto, la orden del QR expira a los 10 minutos de ser creada o automáticamente al ser cerrada. 
-
-Si se requiere un tiempo de expiración diferente, se puede enviar el _header_ `X-Ttl-Store-Preference` con el tiempo deseado en segundos.
-Por ejemplo, para que esté disponible durante 5 minutos se debe enviar el _header_ `X-Ttl-Store-Preference: 300`.
 
 ## Obtener datos de la orden
 
