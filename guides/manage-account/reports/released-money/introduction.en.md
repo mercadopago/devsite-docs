@@ -59,4 +59,4 @@ In addition, you can use the report to know the history of releases between two 
 >
 > Learn the ways to generate a report and follow the steps to set your preferences.
 >
-> [Generate your reports](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/release-money/generate)
+> [Generate your reports](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/generate)

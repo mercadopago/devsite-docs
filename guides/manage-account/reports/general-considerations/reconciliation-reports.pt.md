@@ -5,11 +5,11 @@ Os relatórios do Mercado Pago podem ser baixados em formato .xlsx ou .csv e ser
 Com estes relatórios, procuramos cobrir as diferentes necessidades dos nossos usuários:
 
 * Relatórios de contabilidade
-    + [Dinheiro em conta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/introduction/)
+    + [Dinheiro em conta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/introduction)
     ----[mla]----
-    + [Liquidaçoes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction/)
+    + [Liquidaçoes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction)
     ------------
     ----[mlm, mlb, mlc, mco, mlu, mpe]----
-    + [Liberações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction/)
+    + [Liberações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction)
     ------------
-    + [Saldo disponível](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/introduction/)
+    + [Saldo disponível](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/introduction)
