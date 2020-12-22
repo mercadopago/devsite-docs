@@ -21,11 +21,6 @@ As devoluções acontecem quando o pagamento foi realizado, porém, o vendedor d
 > 
 > Leve em consideração que para pagamentos presenciais somente poderá realizar devoluções, mas não cancelamentos. 
 
-## Validade do pedido
-
-Por defeito, o pedido do QR expira aos 10 minutos de ser criado ou automaticamente ao ser encerrado. 
-
-Se um tempo de expiração diverso for requerido, poderá enviar o header `X-Ttl-Store-Preference` com o tempo desejado em segundos. Por exemplo, para que esteja disponível durante 5 minutos, o header `X-Ttl-Store-Preference: 300` deverá ser enviado.
 
 ## Obter dados do pedido
 
