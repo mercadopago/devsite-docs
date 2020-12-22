@@ -36,7 +36,7 @@ If this happens, the report is still valid. The money goes back to your account 
 >
 > Note
 >
-> Have the [Releases report Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/glossary) on hand to review it when needed or want to review a technical term.
+> Have the [Glossary of Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/glossary) on hand to review it when needed or want to review a technical term.
 
 
 ## Report example
