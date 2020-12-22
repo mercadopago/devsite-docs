@@ -473,7 +473,7 @@ curl -X POST \
     -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/payments' \
     -d '{
-          "transaction_amount": [FAKER][NUMBER][BETWEEN][100, 200],
+          "transaction_amount": 100,
           "token": "ff8080814c11e237014c1ff593b57b4d",
           "description": "Blue shirt",
           "installments": 1,

@@ -40,7 +40,7 @@ With the `application_id` of the subscription you want to update, make the follo
   "application_id": 1234567812345678,
   "auto_recurring": {
     "currency_id": "[FAKER][CURRENCY][ACRONYM]",
-    "transaction_amount": [FAKER][NUMBER][BETWEEN][10,1000]
+    "transaction_amount": 100
   },
   "card_token_id":"1aca87c7338585abdf1edf0000000000"
 }'
