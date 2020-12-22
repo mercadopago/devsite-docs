@@ -38,7 +38,7 @@ Além disso, você pode usar o relatório para saber o histórico de dinheiro --
 >
 > Nota
 >
-> Tenha em mãos o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/glossary/) de dinheiro ----[mla]---- Liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ para revisá-lo quando precisar ou caso queira consultar algum termo técnico.
+> Tenha em mãos o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/glossary) de dinheiro ----[mla]---- Liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ para revisá-lo quando precisar ou caso queira consultar algum termo técnico.
 
 <hr/>
 
@@ -50,7 +50,7 @@ Além disso, você pode usar o relatório para saber o histórico de dinheiro --
 >
 > Saiba como o relatório é composto e aprenda a analisá-lo para fazer sua conciliação.
 >
-> [Como usar o relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/how-to-use/)
+> [Como usar o relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/how-to-use)
 
 > RIGHT_BUTTON_REQUIRED_PT
 >
@@ -58,4 +58,4 @@ Além disso, você pode usar o relatório para saber o histórico de dinheiro --
 >
 > Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
 >
-> [Gere seus relatórios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/release-money/generate/)
+> [Gere seus relatórios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/release-money/generate)
