@@ -53,13 +53,12 @@ Observe como está composto o relatório de dinheiro ----[mla]---- liquidado ---
 A versão padrão mostrará uma visualização estendida das colunas. O relatório final terá a maior quantidade de detalhes possível. 
 
 <hr/>
----
 
 ### Próximos passos
 
 > LEFT_BUTTON_REQUIRED_PT
 >
-> Gere seus relatórios                   
+> Gere seus relatórios
 >
 > Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
 >

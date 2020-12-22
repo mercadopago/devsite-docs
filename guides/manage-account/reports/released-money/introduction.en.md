@@ -42,7 +42,6 @@ In addition, you can use the report to know the history of releases between two 
 > Have the [Releases report Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/glossary/) on hand to review it when needed or want to review a technical term.
 
 <hr/>
----
 
 ### Next steps
 

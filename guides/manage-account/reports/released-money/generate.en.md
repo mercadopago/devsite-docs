@@ -47,7 +47,6 @@ All the options you have available when downloading your report.
 > Have the [Releases report Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/glossary/) on hand to review it when needed or want to review a technical term.
 
 <hr/>
----
 
 ### Next steps
 

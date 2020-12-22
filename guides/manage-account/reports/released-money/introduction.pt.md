@@ -41,13 +41,12 @@ Além disso, você pode usar o relatório para saber o histórico de dinheiro --
 > Tenha em mãos o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/glossary/) de dinheiro ----[mla]---- Liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ para revisá-lo quando precisar ou caso queira consultar algum termo técnico.
 
 <hr/>
----
 
 ### Próximos passos
 
 > LEFT_BUTTON_RECOMMENDED_PT
 >
-> Como usar o relatório           
+> Como usar o relatório
 >
 > Saiba como o relatório é composto e aprenda a analisá-lo para fazer sua conciliação.
 >

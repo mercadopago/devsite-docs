@@ -46,7 +46,6 @@ Considera estas opciones a la hora de descargar tu reporte:
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/release-money/glossary/) de ----[mla]---- liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones ------------ para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 <hr/>
----
 
 ### Próximos pasos
 

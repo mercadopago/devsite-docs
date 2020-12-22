@@ -47,7 +47,6 @@ Todas as opções disponíveis na hora de baixar seu relatório.
 > Tenha em mãos o [Glossário do relatório](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/released-money/glossary/) de ----[mla]---- liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberações ------------ para consultá-lo quando precisar ou queira conferir algum termo técnico.
 
 <hr/>
----
 
 ### Próximos passos
 

@@ -48,7 +48,6 @@ Note how the Release report is composed in this example to identify the sections
 The default version will show an extended view of the columns. The final report will have as much detail as possible.
 
 <hr/>
----
 
 ### Next steps
 
