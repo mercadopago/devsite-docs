@@ -35,11 +35,11 @@ Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de ----[mla]---- liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones ------------ para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 ## Ejemplo de un reporte
 
-Observa cómo está compuesto el reporte de ----[mla]---- liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones ------------ en este ejemplo para identificar las secciones y leer tus propios reportes:
+Observa cómo está compuesto el reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ en este ejemplo para identificar las secciones y leer tus propios reportes:
 
 ----[mla]----
 ![Reporte de liquidaciones](/images/manage-account/reports/example-release-es.jpg)

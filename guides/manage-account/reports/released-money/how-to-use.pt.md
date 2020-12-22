@@ -37,7 +37,7 @@ Caso isso aconteça, o relatório continuará válido. O dinheiro voltará à su
 >
 > Nota
 >
-> Tenha em mãos o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/glossary) de ----[mla]---- liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberações ------------ para consultá-lo quando precisar ou queira conferir algum termo técnico.
+> Tenha em mãos o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/glossary) de ----[mla]---- Liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ para consultá-lo quando precisar ou queira conferir algum termo técnico.
 
 ## Exemplo de um relatório
 

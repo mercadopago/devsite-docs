@@ -1,4 +1,4 @@
-# How to generate your Available Balance report?
+# How to generate your Releases report?
 
 
 ## Generating channels
@@ -52,9 +52,9 @@ All the options you have available when downloading your report.
 
 > LEFT_BUTTON_RECOMMENDED_EN
 >
-> Introduction to the Release Report 
+> Introduction to the Release report
 >
-> Find out what the release report is and what it is for.
+> Find out what the Release report is and what it is for.
 >
 > [Introduction to the Release Report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction)
 
