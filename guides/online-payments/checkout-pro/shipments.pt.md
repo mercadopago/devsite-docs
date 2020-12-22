@@ -498,7 +498,7 @@ Quando receber uma venda, basta ----[mla, mlm]---- <a href="https://www.mercadop
   $item->unit_price = [FAKER][COMMERCE][PRICE];
 
   $payer = new MercadoPago\Payer();
-  $payer->email = "[FAKER][INTERNET][FREE_EMAIL]";
+  $payer->email = "john@yourdomain.com";
 
   $shipments = new MercadoPago\Shipments();
   $shipments->mode = "me2";
@@ -535,7 +535,7 @@ item.setId("1234")
     .setUnitPrice((float) [FAKER][COMMERCE][PRICE]);
 
 Payer payer = new Payer();
-payer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
+payer.setEmail("john@yourdomain.com");
 
 
 Shipments shipments = new Shipments();
@@ -563,7 +563,7 @@ var item = {
 }
 
 var payer = {
-  "email": "[FAKER][INTERNET][FREE_EMAIL]"
+  "email": "john@yourdomain.com"
 }
 
 var shipments = {
@@ -608,7 +608,7 @@ item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
 item.unit_price = [FAKER][COMMERCE][PRICE]
 
 payer = MercadoPago::Payer.new()
-payer.email="[FAKER][INTERNET][FREE_EMAIL]"
+payer.email="john@yourdomain.com"
 
 shipment = MercadoPago::Shipment.new
 shipment.mode = me2
@@ -650,7 +650,7 @@ preference.Items.Add(
 
 MercadoPago.DataStructures.Preference.Payer payer = new MercadoPago.DataStructures.Preference.Payer()
     {
-      Email = "[FAKER][INTERNET][FREE_EMAIL]"
+      Email = "john@yourdomain.com"
     };
 
 MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataStructures.Preference.Shipment()
@@ -689,7 +689,7 @@ preference.Save();
   $item->unit_price = [FAKER][COMMERCE][PRICE];
 
   $payer = new MercadoPago\Payer();
-  $payer->email = "[FAKER][INTERNET][FREE_EMAIL]";
+  $payer->email = "john@yourdomain.com";
 
   $shipments = new MercadoPago\Shipments();
   $shipments->mode = "me2";
@@ -726,7 +726,7 @@ item.setId("1234")
     .setUnitPrice((float) [FAKER][COMMERCE][PRICE]);
 
 Payer payer = new Payer();
-payer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
+payer.setEmail("john@yourdomain.com");
 
 
 Shipments shipments = new Shipments();
@@ -754,7 +754,7 @@ var item = {
 }
 
 var payer = {
-  "email": "[FAKER][INTERNET][FREE_EMAIL]"
+  "email": "john@yourdomain.com"
 }
 
 var shipments = {
@@ -799,7 +799,7 @@ item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
 item.unit_price = [FAKER][COMMERCE][PRICE]
 
 payer = MercadoPago::Payer.new()
-payer.email="[FAKER][INTERNET][FREE_EMAIL]"
+payer.email="john@yourdomain.com"
 
 shipment = MercadoPago::Shipment.new
 shipment.mode = me2
@@ -841,7 +841,7 @@ preference.Items.Add(
 
 MercadoPago.DataStructures.Preference.Payer payer = new MercadoPago.DataStructures.Preference.Payer()
     {
-      Email = "[FAKER][INTERNET][FREE_EMAIL]"
+      Email = "john@yourdomain.com"
     };
 
 MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataStructures.Preference.Shipment()
@@ -880,7 +880,7 @@ preference.Save();
   $item->unit_price = [FAKER][COMMERCE][PRICE];
 
   $payer = new MercadoPago\Payer();
-  $payer->email = "[FAKER][INTERNET][FREE_EMAIL]";
+  $payer->email = "john@yourdomain.com";
 
   $shipments = new MercadoPago\Shipments();
   $shipments->mode = "me2";
@@ -917,7 +917,7 @@ item.setId("1234")
     .setUnitPrice((float) [FAKER][COMMERCE][PRICE]);
 
 Payer payer = new Payer();
-payer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
+payer.setEmail("john@yourdomain.com");
 
 
 Shipments shipments = new Shipments();
@@ -945,7 +945,7 @@ var item = {
 }
 
 var payer = {
-  "email": "[FAKER][INTERNET][FREE_EMAIL]"
+  "email": "john@yourdomain.com"
 }
 
 var shipments = {
@@ -990,7 +990,7 @@ item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
 item.unit_price = [FAKER][COMMERCE][PRICE]
 
 payer = MercadoPago::Payer.new()
-payer.email="[FAKER][INTERNET][FREE_EMAIL]"
+payer.email="john@yourdomain.com"
 
 shipment = MercadoPago::Shipment.new
 shipment.mode = me2
@@ -1032,7 +1032,7 @@ preference.Items.Add(
 
 MercadoPago.DataStructures.Preference.Payer payer = new MercadoPago.DataStructures.Preference.Payer()
     {
-      Email = "[FAKER][INTERNET][FREE_EMAIL]"
+      Email = "john@yourdomain.com"
     };
 
 MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataStructures.Preference.Shipment()

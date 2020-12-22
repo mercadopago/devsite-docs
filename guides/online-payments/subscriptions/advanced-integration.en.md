@@ -18,7 +18,7 @@ The parameters to be added are optional and, depending on the parameters sent, t
 For example, you can search for all of a customer's paused subscriptions: 
 
 [[[
-```curl curl --location --request GET 'https://api.mercadopago.com/preapproval/search?status=paused&payer_email=[FAKER][INTERNET][FREE_EMAIL]' \
+```curl curl --location --request GET 'https://api.mercadopago.com/preapproval/search?status=paused&payer_email=john@yourdomain.com' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 ```
 ]]]

@@ -208,7 +208,7 @@ item.setId("1234")
     .setUnitPrice((float) 14.5);
 
 Payer payer = new Payer();
-payer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
+payer.setEmail("john@yourdomain.com");
 
 preference.setPayer(payer);
 preference.appendItem(item);
@@ -229,7 +229,7 @@ preference.save();
   }
 
   var payer = {
-    email: "[FAKER][INTERNET][FREE_EMAIL]"
+    email: "john@yourdomain.com"
   }
 
   preference.items = [item]
@@ -255,7 +255,7 @@ item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
 item.unit_price = [FAKER][COMMERCE][PRICE]
 
 payer = MercadoPago::Payer.new()
-payer.email="[FAKER][INTERNET][FREE_EMAIL]"
+payer.email="john@yourdomain.com"
 
 preference.items = [item]
 preference.payer = payer
