@@ -1,4 +1,10 @@
-# Como gerar o seu Relatório de ----[mla]---- Liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------?
+----[mla]----
+# Como gerar o seu relatório de Liquidaçoes?
+------------
+
+----[mlm, mlb, mlc, mco, mlu, mpe]----
+# Como gerar o seu relatório de Liberações?
+------------
 
 
 ## Canais de geração
@@ -52,7 +58,7 @@ Todas as opções disponíveis na hora de baixar seu relatório.
 
 > LEFT_BUTTON_RECOMMENDED_PT
 >
-> Introdução ao relatório de ----[mla]---- liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberações ------------ 
+> Introdução ao relatório de ----[mla]---- liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberações ------------
 >
 > Saiba o que é o relatório de ----[mla]---- liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberações ------------ e para que serve.
 >

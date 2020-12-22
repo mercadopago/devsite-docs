@@ -28,7 +28,7 @@ Além disso, o relatório reflete os conceitos de *débito* (dinheiro a pagar) e
 
 Você verá o saldo disponível das transações liberadas nas colunas `NET_CREDIT` (creditado) e `NET_DEBIT` (debitado), dependendo se o valor é positivo ou negativo. Você também verá aí o valor bruto e os gastos de financiamento, impostos e custos de envio que descontamos para chegar ao valor líquido.
 
-**O que acontece se uma transferência não se concretizar? **
+**O que acontece se uma transferência não se concretizar?**
 
 Caso isso aconteça, o relatório continuará válido. O dinheiro voltará à sua conta e a transação aparecerá no relatório em uma nova linha na coluna `NET_CREDIT`.
 

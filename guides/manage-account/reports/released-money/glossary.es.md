@@ -43,7 +43,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 >
 > Reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------
 >
-> Qué es y para qué sirve el reporte de ----[mla]---- liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones ------------. Descubre ejemplos y casos de uso.
+> Qué es y para qué sirve el reporte de ----[mla]---- liquidaciones.------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones.------------ Descubre ejemplos y casos de uso.
 >
 > [Cómo usar el reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/how-to-use)
 

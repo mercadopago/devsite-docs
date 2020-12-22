@@ -1,4 +1,10 @@
-# ¿Qué es el reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------?
+----[mla]----
+# ¿Qué es el reporte de Liquidaciones?
+------------
+
+----[mlm, mlb, mlc, mco, mlu, mpe]----
+# ¿Qué es el reporte de Liberaciones?
+------------
 
 
 El reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ es un **informe descargable que te permite conocer cómo está compuesto tu dinero disponible en Mercado Pago.** Contiene el **detalle de todos los fondos involucrados en un período de fechas,** e incluye los casos de ----[mla]---- liquidación ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberación ------------ de dinero como de bloqueos y desbloqueos.

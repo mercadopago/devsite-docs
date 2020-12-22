@@ -27,7 +27,7 @@ In addition, the report reflects the accounting concepts of *owe* (money you mus
 
 You will see the available balance from the released transactions in the `NET_CREDIT` (credited) and `NET_DEBIT` (debited) columns, depending on whether the amount is positive or negative. You will also see there the gross amount and the financing costs, taxes and shipping costs that we deducted to reach the net amount.
 
-** What happens is a transfer fails?**
+**What happens is a transfer fails?**
 
 If this happens, the report is still valid. The money goes back to your account and the transaction will appear in the report as a new line in the `NET_CREDIT` column.
 

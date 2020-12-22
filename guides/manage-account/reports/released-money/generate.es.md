@@ -1,5 +1,9 @@
-# ¿Cómo generar tu reporte de ----[mla]----Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberaciones------------?
+----[mla]----
+# ¿Cómo generar tu reporte de Liquidaciones?
 
+----[mlm, mlb, mlc, mco, mlu, mpe]----
+# ¿Cómo generar tu reporte de Liberaciones?
+------------
 
 ## Canales de generación
 
@@ -54,7 +58,7 @@ Considera estas opciones a la hora de descargar tu reporte:
 >
 > Introducción al reporte de ----[mla]---- liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones ------------ 
 >
-> Conoce qué es y para qué sirve el reporte de ----[mla]---- liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones ------------.
+> Conoce qué es y para qué sirve el reporte de ----[mla]---- liquidaciones. ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones. ------------
 >
 > [Introducción al reporte de ----[mla]---- liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones ------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction)
 
@@ -62,6 +66,6 @@ Considera estas opciones a la hora de descargar tu reporte:
 >
 > Cómo usar el reporte
 >
-> Qué es y para qué sirve el reporte de ----[mla]---- liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones ------------. Descubre ejemplos y casos de uso.
+> Qué es y para qué sirve el reporte de ----[mla]---- liquidaciones.------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones.------------ Descubre ejemplos y casos de uso.
 >
 > [Cómo usar el reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/how-to-use)
