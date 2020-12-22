@@ -1,5 +1,5 @@
 ----[mla]----
-# Como gerar o seu relatório de Liquidaçoes?
+# Como gerar o seu relatório de Liquidações?
 ------------
 
 ----[mlm, mlb, mlc, mco, mlu, mpe]----
@@ -9,7 +9,7 @@
 
 ## Canais de geração
 
-Você pode gerar um relatório de ----[mla]---- Liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ pela sua conta Mercado Pago:
+Você pode gerar um relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ pela sua conta Mercado Pago:
 
 | Canais | Descrição |
 | ------- | ----------- |
@@ -50,7 +50,7 @@ Todas as opções disponíveis na hora de baixar seu relatório.
 >
 > Nota
 >
-> Tenha em mãos o [Glossário do relatório](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/released-money/glossary) de ----[mla]---- Liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ para consultá-lo quando precisar ou queira conferir algum termo técnico.
+> Tenha em mãos o [Glossário do relatório](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/released-money/glossary) de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ para consultá-lo quando precisar ou queira conferir algum termo técnico.
 
 <hr/>
 
@@ -58,9 +58,9 @@ Todas as opções disponíveis na hora de baixar seu relatório.
 
 > LEFT_BUTTON_RECOMMENDED_PT
 >
-> Introdução ao relatório de ----[mla]---- Liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------
+> Introdução ao relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------
 >
-> Saiba o que é o relatório de ----[mla]---- Liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ e para que serve.
+> Saiba o que é o relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ e para que serve.
 >
 > [Introdução ao relatório de ----[mla]---- liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberações ------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction)
 
@@ -68,6 +68,6 @@ Todas as opções disponíveis na hora de baixar seu relatório.
 >
 > Como usar o relatório
 >
-> Saiba o que é o relatório de ----[mla]---- Liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ e para que serve. 
+> Saiba o que é o relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ e para que serve. 
 >
 > [Como usar o relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/how-to-use)
