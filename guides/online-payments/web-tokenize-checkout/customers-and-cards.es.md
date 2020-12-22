@@ -53,7 +53,7 @@ import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Customer customer = new Customer();
-customer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
+customer.setEmail("john@yourdomain.com");
 customer.save();
 
 Card card = new Card();

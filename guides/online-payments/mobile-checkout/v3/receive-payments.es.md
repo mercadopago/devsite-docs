@@ -72,7 +72,7 @@ Luego, deberás agregar los atributos de tu preferencia de pago:
   $preference = new MercadoPago\Preference();
 
   $item = new MercadoPago\Item();
-  $item->title = "[FAKER][COMMERCE][PRODUCT_NAME]";
+  $item->title = "Blue shirt";
   $item->quantity = 10;
   $item->currency_id = "[FAKER][CURRENCY][ACRONYM]";
   $item->unit_price = [FAKER][COMMERCE][PRICE];
@@ -91,13 +91,13 @@ Preference preference = new Preference();
 
 Item item = new Item();
 item.setId("1234")
-    .setTitle("[FAKER][COMMERCE][PRODUCT_NAME]")
+    .setTitle("Blue shirt")
     .setQuantity(10)
     .setCategoryId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float) [FAKER][COMMERCE][PRICE]);
 
 Payer payer = new Payer();
-payer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
+payer.setEmail("john@yourdomain.com");
 
 preference.setPayer(payer);
 preference.appendItem(item);
@@ -108,7 +108,7 @@ preference.save();
 var preference = {}
 
 var item = {
-  title: '[FAKER][COMMERCE][PRODUCT_NAME]',
+  title: 'Blue shirt',
   quantity: 10,
   currency_id: '[FAKER][CURRENCY][ACRONYM]',
   unit_price: [FAKER][COMMERCE][PRICE]
@@ -131,13 +131,13 @@ mercadopago.preferences.create(preference).then(function (data) {
 preference = MercadoPago::Preference.new()
 
 item = MercadoPago::Item.new()
-item.title="[FAKER][COMMERCE][PRODUCT_NAME]"
+item.title="Blue shirt"
 item.quantity= 10
 item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
 item.unit_price = [FAKER][COMMERCE][PRICE]
 
 payer = MercadoPago::Payer.new()
-payer.email="[FAKER][INTERNET][FREE_EMAIL]"
+payer.email="john@yourdomain.com"
 
 preference.items = [item]
 preference.payer = payer
@@ -160,7 +160,7 @@ Es requerido el envío del `email` de tu comprador.
   "payer": {
     "name": "[FAKER][NAME][FIRST_NAME]",
     "surname": "[FAKER][NAME][LAST_NAME]",
-    "email": "[FAKER][INTERNET][FREE_EMAIL]",
+    "email": "john@yourdomain.com",
     "date_created": "2015-06-02T12:58:41.425-04:00",
     "phone": {
       "area_code": "[FAKER][PHONE_NUMBER][AREA_CODE]",
@@ -199,7 +199,7 @@ Map<String, Object> preferenceMap = new HashMap<>();
 preferenceMap.put("item_id", "1");
 preferenceMap.put("amount", new BigDecimal(10));
 preferenceMap.put("currency_id", "[FAKER][CURRENCY][ACRONYM]");
-preferenceMap.put("payer_email", "[FAKER][INTERNET][FREE_EMAIL]");
+preferenceMap.put("payer_email", "john@yourdomain.com");
 
 final Activity activity = this;
 LayoutUtil.showProgressLayout(activity);
@@ -231,7 +231,7 @@ public void failure(ApiException apiException) {
                                      @"amount" : @10,
                                      @"itemId" : @29334,
                                      @"customerId" : @207,
-                                     @"payerEmail" : @"[FAKER][INTERNET][FREE_EMAIL]" };
+                                     @"payerEmail" : @"john@yourdomain.com" };
 
 
     [CustomServer createCheckoutPreferenceWithUrl:@"https://your-base-url.com" uri:@"/your-create-preference-uri" bodyInfo:preferenceBody success:^(CheckoutPreference * checkoutPreference) {

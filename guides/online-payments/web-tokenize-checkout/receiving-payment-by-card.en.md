@@ -93,12 +93,12 @@ You should only make an *API call* including the data you received from the chec
     $payment = new MercadoPago\Payment();
     $payment->transaction_amount = 100;
     $payment->token = $token;
-    $payment->description = "[FAKER][COMMERCE][PRODUCT_NAME]";
+    $payment->description = "Blue shirt";
     $payment->installments = $installments;
     $payment->payment_method_id = $payment_method_id;
     $payment->issuer_id = $issuer_id;
     $payment->payer = array(
-    "email" => "[FAKER][INTERNET][FREE_EMAIL]"
+    "email" => "john@yourdomain.com"
     );
     // Guarda y postea el pago
     $payment->save();
@@ -114,12 +114,12 @@ MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
 Payment payment = new Payment();
 payment.setTransactionAmount(100f)
        .setToken(token)
-       .setDescription("[FAKER][COMMERCE][PRODUCT_NAME]")
+       .setDescription("Blue shirt")
        .setInstallments(installments)
        .setPaymentMethodId(payment_method_id)
        .setIssuerId(issuer_id)
        .setPayer(new Payer()
-         .setEmail("[FAKER][INTERNET][FREE_EMAIL]"));
+         .setEmail("john@yourdomain.com"));
 // Save and create the payment
 payment.save();
 //...
@@ -134,12 +134,12 @@ mercadopago.configurations.setAccessToken(config.access_token);
 var payment_data = {
   transaction_amount: 100,
   token: token,
-  description: '[FAKER][COMMERCE][PRODUCT_NAME]',
+  description: 'Blue shirt',
   installments: installments,
   payment_method_id: payment_method_id,
   issuer_id: issuer_id,
   payer: {
-    email: '[FAKER][INTERNET][FREE_EMAIL]'
+    email: 'john@yourdomain.com'
   }
 };
 
@@ -160,12 +160,12 @@ MercadoPago::SDK.access_token = "ENV_ACCESS_TOKEN";
 payment = MercadoPago::Payment.new()
 payment.transaction_amount = 100
 payment.token = token
-payment.description = '[FAKER][COMMERCE][PRODUCT_NAME]'
+payment.description = 'Blue shirt'
 payment.installments = installments
 payment.payment_method_id = payment_method_id
 payment.issuer_id = issuer_id
 payment.payer = {
-  email: "[FAKER][INTERNET][FREE_EMAIL]"
+  email: "john@yourdomain.com"
 }
 # Save and create the payment
 payment.save()
@@ -182,12 +182,12 @@ Payment payment = new Payment()
 {
     TransactionAmount = float.Parse("100"),
     Token = token,
-    Description = "[FAKER][COMMERCE][PRODUCT_NAME]",
+    Description = "Blue shirt",
     Installments = installments,
     PaymentMethodId = payment_method_id,
     IssuerId = issuer_id,
     Payer = new Payer(){
-        Email = "[FAKER][INTERNET][FREE_EMAIL]"
+        Email = "john@yourdomain.com"
     }
 };
 // Save and create the payment

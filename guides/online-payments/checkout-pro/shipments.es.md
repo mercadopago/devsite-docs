@@ -477,13 +477,13 @@ Una vez que se reciba una venta, solo hay que ----[mla, mlm]---- <a href="https:
   $preference = new MercadoPago\Preference();
 
   $item = new MercadoPago\Item();
-  $item->title = "[FAKER][COMMERCE][PRODUCT_NAME]";
+  $item->title = "Blue shirt";
   $item->quantity = 10;
   $item->currency_id = "[FAKER][CURRENCY][ACRONYM]";
   $item->unit_price = [FAKER][COMMERCE][PRICE];
 
   $payer = new MercadoPago\Payer();
-  $payer->email = "[FAKER][INTERNET][FREE_EMAIL]";
+  $payer->email = "john@yourdomain.com";
 
   $shipments = new MercadoPago\Shipments();
   $shipments->mode = "me2";
@@ -514,13 +514,13 @@ Preference preference = new Preference();
 
 Item item = new Item();
 item.setId("1234")
-    .setTitle("[FAKER][COMMERCE][PRODUCT_NAME]")
+    .setTitle("Blue shirt")
     .setQuantity(10)
     .setCategoryId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float) [FAKER][COMMERCE][PRICE]);
 
 Payer payer = new Payer();
-payer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
+payer.setEmail("john@yourdomain.com");
 
 
 Shipments shipments = new Shipments();
@@ -541,14 +541,14 @@ preference.save();
 var preference = {}
 
 var item = {
-  "title": '[FAKER][COMMERCE][PRODUCT_NAME]',
+  "title": 'Blue shirt',
   "quantity": 10,
   "currency_id": '[FAKER][CURRENCY][ACRONYM]',
   "unit_price": [FAKER][COMMERCE][PRICE]
 }
 
 var payer = {
-  "email": "[FAKER][INTERNET][FREE_EMAIL]"
+  "email": "john@yourdomain.com"
 }
 
 var shipments = {
@@ -587,13 +587,13 @@ mercadopago.preferences.create(preference).then(function (data) {
 
 preference = new MercadoPago::Preference.new();
 item = MercadoPago::Item.new()
-item.title="[FAKER][COMMERCE][PRODUCT_NAME]"
+item.title="Blue shirt"
 item.quantity= 10
 item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
 item.unit_price = [FAKER][COMMERCE][PRICE]
 
 payer = MercadoPago::Payer.new()
-payer.email="[FAKER][INTERNET][FREE_EMAIL]"
+payer.email="john@yourdomain.com"
 
 shipment = MercadoPago::Shipment.new
 shipment.mode = me2
@@ -627,7 +627,7 @@ Preference preference = new Preference();
 preference.Items.Add(
   new MercadoPago.DataStructures.Preference.Item()
   {
-    Title = "[FAKER][COMMERCE][PRODUCT_NAME]",
+    Title = "Blue shirt",
     Quantity = 1,
     UnitPrice = (decimal)[FAKER][COMMERCE][PRICE]
   }
@@ -635,7 +635,7 @@ preference.Items.Add(
 
 MercadoPago.DataStructures.Preference.Payer payer = new MercadoPago.DataStructures.Preference.Payer()
     {
-      Email = "[FAKER][INTERNET][FREE_EMAIL]"
+      Email = "john@yourdomain.com"
     };
 
 MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataStructures.Preference.Shipment()
@@ -668,13 +668,13 @@ preference.Save();
   $preference = new MercadoPago\Preference();
 
   $item = new MercadoPago\Item();
-  $item->title = "[FAKER][COMMERCE][PRODUCT_NAME]";
+  $item->title = "Blue shirt";
   $item->quantity = 10;
   $item->currency_id = "[FAKER][CURRENCY][ACRONYM]";
   $item->unit_price = [FAKER][COMMERCE][PRICE];
 
   $payer = new MercadoPago\Payer();
-  $payer->email = "[FAKER][INTERNET][FREE_EMAIL]";
+  $payer->email = "john@yourdomain.com";
 
   $shipments = new MercadoPago\Shipments();
   $shipments->mode = "me2";
@@ -705,13 +705,13 @@ Preference preference = new Preference();
 
 Item item = new Item();
 item.setId("1234")
-    .setTitle("[FAKER][COMMERCE][PRODUCT_NAME]")
+    .setTitle("Blue shirt")
     .setQuantity(10)
     .setCategoryId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float) [FAKER][COMMERCE][PRICE]);
 
 Payer payer = new Payer();
-payer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
+payer.setEmail("john@yourdomain.com");
 
 
 Shipments shipments = new Shipments();
@@ -732,14 +732,14 @@ preference.save();
 var preference = {}
 
 var item = {
-  "title": '[FAKER][COMMERCE][PRODUCT_NAME]',
+  "title": 'Blue shirt',
   "quantity": 10,
   "currency_id": '[FAKER][CURRENCY][ACRONYM]',
   "unit_price": [FAKER][COMMERCE][PRICE]
 }
 
 var payer = {
-  "email": "[FAKER][INTERNET][FREE_EMAIL]"
+  "email": "john@yourdomain.com"
 }
 
 var shipments = {
@@ -778,13 +778,13 @@ mercadopago.preferences.create(preference).then(function (data) {
 
 preference = new MercadoPago::Preference.new();
 item = MercadoPago::Item.new()
-item.title="[FAKER][COMMERCE][PRODUCT_NAME]"
+item.title="Blue shirt"
 item.quantity= 10
 item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
 item.unit_price = [FAKER][COMMERCE][PRICE]
 
 payer = MercadoPago::Payer.new()
-payer.email="[FAKER][INTERNET][FREE_EMAIL]"
+payer.email="john@yourdomain.com"
 
 shipment = MercadoPago::Shipment.new
 shipment.mode = me2
@@ -818,7 +818,7 @@ Preference preference = new Preference();
 preference.Items.Add(
   new MercadoPago.DataStructures.Preference.Item()
   {
-    Title = "[FAKER][COMMERCE][PRODUCT_NAME]",
+    Title = "Blue shirt",
     Quantity = 1,
     UnitPrice = (decimal)[FAKER][COMMERCE][PRICE]
   }
@@ -826,7 +826,7 @@ preference.Items.Add(
 
 MercadoPago.DataStructures.Preference.Payer payer = new MercadoPago.DataStructures.Preference.Payer()
     {
-      Email = "[FAKER][INTERNET][FREE_EMAIL]"
+      Email = "john@yourdomain.com"
     };
 
 MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataStructures.Preference.Shipment()
@@ -859,13 +859,13 @@ preference.Save();
   $preference = new MercadoPago\Preference();
 
   $item = new MercadoPago\Item();
-  $item->title = "[FAKER][COMMERCE][PRODUCT_NAME]";
+  $item->title = "Blue shirt";
   $item->quantity = 10;
   $item->currency_id = "[FAKER][CURRENCY][ACRONYM]";
   $item->unit_price = [FAKER][COMMERCE][PRICE];
 
   $payer = new MercadoPago\Payer();
-  $payer->email = "[FAKER][INTERNET][FREE_EMAIL]";
+  $payer->email = "john@yourdomain.com";
 
   $shipments = new MercadoPago\Shipments();
   $shipments->mode = "me2";
@@ -896,13 +896,13 @@ Preference preference = new Preference();
 
 Item item = new Item();
 item.setId("1234")
-    .setTitle("[FAKER][COMMERCE][PRODUCT_NAME]")
+    .setTitle("Blue shirt")
     .setQuantity(10)
     .setCategoryId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float) [FAKER][COMMERCE][PRICE]);
 
 Payer payer = new Payer();
-payer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
+payer.setEmail("john@yourdomain.com");
 
 
 Shipments shipments = new Shipments();
@@ -923,14 +923,14 @@ preference.save();
 var preference = {}
 
 var item = {
-  "title": '[FAKER][COMMERCE][PRODUCT_NAME]',
+  "title": 'Blue shirt',
   "quantity": 10,
   "currency_id": '[FAKER][CURRENCY][ACRONYM]',
   "unit_price": [FAKER][COMMERCE][PRICE]
 }
 
 var payer = {
-  "email": "[FAKER][INTERNET][FREE_EMAIL]"
+  "email": "john@yourdomain.com"
 }
 
 var shipments = {
@@ -969,13 +969,13 @@ mercadopago.preferences.create(preference).then(function (data) {
 
 preference = new MercadoPago::Preference.new();
 item = MercadoPago::Item.new()
-item.title="[FAKER][COMMERCE][PRODUCT_NAME]"
+item.title="Blue shirt"
 item.quantity= 10
 item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
 item.unit_price = [FAKER][COMMERCE][PRICE]
 
 payer = MercadoPago::Payer.new()
-payer.email="[FAKER][INTERNET][FREE_EMAIL]"
+payer.email="john@yourdomain.com"
 
 shipment = MercadoPago::Shipment.new
 shipment.mode = me2
@@ -1009,7 +1009,7 @@ Preference preference = new Preference();
 preference.Items.Add(
   new MercadoPago.DataStructures.Preference.Item()
   {
-    Title = "[FAKER][COMMERCE][PRODUCT_NAME]",
+    Title = "Blue shirt",
     Quantity = 1,
     UnitPrice = (decimal)[FAKER][COMMERCE][PRICE]
   }
@@ -1017,7 +1017,7 @@ preference.Items.Add(
 
 MercadoPago.DataStructures.Preference.Payer payer = new MercadoPago.DataStructures.Preference.Payer()
     {
-      Email = "[FAKER][INTERNET][FREE_EMAIL]"
+      Email = "john@yourdomain.com"
     };
 
 MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataStructures.Preference.Shipment()

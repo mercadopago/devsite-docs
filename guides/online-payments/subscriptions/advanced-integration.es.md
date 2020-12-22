@@ -18,7 +18,7 @@ Los parámetros a sumar son opcionales y según los parámetros que se envían, 
 Por ejemplo, puedes buscar todas las suscripciones pausadas de un cliente: 
 
 [[[
-```curl curl --location --request GET 'https://api.mercadopago.com/preapproval/search?status=paused&payer_email=[FAKER][INTERNET][FREE_EMAIL]' \
+```curl curl --location --request GET 'https://api.mercadopago.com/preapproval/search?status=paused&payer_email=john@yourdomain.com' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 ```
 ]]]

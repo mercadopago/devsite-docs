@@ -179,7 +179,7 @@ curl -X POST \
 $preference = new MercadoPago\Preference();
 
 $item = new MercadoPago\Item();
-$item->title = "[FAKER][COMMERCE][PRODUCT_NAME]";
+$item->title = "Blue shirt";
 $item->quantity = 10;
 $item->currency_id = "[FAKER][CURRENCY][ACRONYM]";
 $item->unit_price = [FAKER][COMMERCE][PRICE];
@@ -202,13 +202,13 @@ Preference preference = new Preference();
 
 Item item = new Item();
 item.setId("1234")
-    .setTitle("[FAKER][COMMERCE][PRODUCT_NAME]")
+    .setTitle("Blue shirt")
     .setQuantity(10)
     .setCategoryId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float) 14.5);
 
 Payer payer = new Payer();
-payer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
+payer.setEmail("john@yourdomain.com");
 
 preference.setPayer(payer);
 preference.appendItem(item);
@@ -222,14 +222,14 @@ preference.save();
 	var preference = {}
 
   var item = {
-    title: '[FAKER][COMMERCE][PRODUCT_NAME]',
+    title: 'Blue shirt',
     quantity: 10,
     currency_id: '[FAKER][CURRENCY][ACRONYM]',
     unit_price: [FAKER][COMMERCE][PRICE]
   }
 
   var payer = {
-    email: "[FAKER][INTERNET][FREE_EMAIL]"
+    email: "john@yourdomain.com"
   }
 
   preference.items = [item]
@@ -249,13 +249,13 @@ preference.save();
 preference = MercadoPago::Preference.new()
 
 item = MercadoPago::Item.new()
-item.title="[FAKER][COMMERCE][PRODUCT_NAME]"
+item.title="Blue shirt"
 item.quantity= 10
 item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
 item.unit_price = [FAKER][COMMERCE][PRICE]
 
 payer = MercadoPago::Payer.new()
-payer.email="[FAKER][INTERNET][FREE_EMAIL]"
+payer.email="john@yourdomain.com"
 
 preference.items = [item]
 preference.payer = payer
