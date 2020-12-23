@@ -8,7 +8,7 @@
 
 ## Canales de generación
 
-Puedes generar un reporte de ----[mla]---- liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones ------------ desde tu cuenta de Mercado Pago:
+Puedes generar un reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ desde tu cuenta de Mercado Pago:
 
 | Canales | Descripción |
 | ------- | ----------- |
@@ -57,11 +57,11 @@ Considera estas opciones a la hora de descargar tu reporte:
 
 > LEFT_BUTTON_RECOMMENDED_ES
 >
-> Introducción al reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------
+> Glosario
 >
-> Conoce qué es y para qué sirve el reporte de ----[mla]---- Liquidaciones. ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones. ------------
+> Conoce qué significa cada término y el detalle de las columnas que componen al reporte.
 >
-> [Introducción al reporte de ----[mla]---- liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones ------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction)
+> [Glosario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
