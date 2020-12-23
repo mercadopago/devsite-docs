@@ -30,7 +30,7 @@ The shutdown will involve the following resources:
 | Payment Methods search  | `GET`  | /checkout/custom/payment_methods/search  |
 | Card issuers            | `GET`  | /checkout/custom/card_issuers            |
 
-You can find the equivalent resources in [this article](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-api/introduction/).
+You can find the equivalent resources in [this article](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction/).
 
 ## November 25, 2019
 
@@ -38,7 +38,7 @@ To meet the highest security standards, we seek to always be updated. Therefore,
 
 If you are using it, **you must check your version and update it to avoid problems and loss of service.** In case you don't want to do it, you can use other types of notifications that we offer.
 
-You can find all the necessary information in the [migration guide](https://www.mercadopago.com.br/developers/en/guides/resources/changelog/migration-guides/ipn-ow-guide). 
+You can find all the necessary information in the [migration guide](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/changelog/migration-guides/ipn-ow-guide). 
 
 ----[mlc, mco]----
 
@@ -71,7 +71,7 @@ We always want to give you the best experience. Therefore, we list the modules t
 | Magento                 | Community Edition 1.8.x - 1.9.x, Enterprise Edition 1.11.x - 1.14.x, Magento 2.0.0 - 2.3.x  | 
 | Shopify                 | -                                                                                           |
 
-[View modules](https://www.mercadopago.com.ar/developers/en/guides/plugins).
+[View modules](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins).
 
 
 > Please note that the modules and platforms not mentioned only have support from the community. 

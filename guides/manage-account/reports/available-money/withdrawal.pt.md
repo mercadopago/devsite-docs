@@ -209,7 +209,7 @@ Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
 >
 > Gere seus relatórios de Dinheiro Disponível a partir do painel do Mercado Pago em 3 etapas simples. 
 >
-> [Geração a partir do Mercado Pago](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/available-money/panel/)
+> [Geração a partir do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/panel/)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
@@ -217,4 +217,4 @@ Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
 >
 > Crie relatórios de forma programada e manual por meio de uma integração com o Mercado Pago.
 >
-> [Geração via API](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/available-money/api/)
+> [Geração via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/api/)

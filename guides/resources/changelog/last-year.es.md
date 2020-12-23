@@ -30,7 +30,7 @@ El apagado afecta a los siguientes recursos:
 | Búsqueda de Medios de Pagos| `GET`  | /checkout/custom/payment_methods/search  |
 | Emisores                   | `GET`  | /checkout/custom/card_issuers            |
 
-En [este artículo](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-api/introduction) vas a encontrar los recursos equivalentes.
+En [este artículo](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction) vas a encontrar los recursos equivalentes.
 
 ## 25 de Noviembre de 2019
 
@@ -38,7 +38,7 @@ Para cumplir con los más altos estándares de seguridad, buscamos siempre estar
 
 Si la estás usando, **tienes que revisar tu versión y actualizarla para evitar problemas y pérdidas de servicio.** En caso de no querer hacerlo, puedes usar otro tipo de notificaciones que ofrecemos.
 
-Puedes encontrar toda la información necesaria en la [guía de la migración](https://www.mercadopago.com.ar/developers/es/guides/resources/changelog/migration-guides/ipn-ow-guide).
+Puedes encontrar toda la información necesaria en la [guía de la migración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/changelog/migration-guides/ipn-ow-guide).
 
 ----[mlc, mco]----
 
@@ -85,7 +85,7 @@ Queremos darte la mejor experiencia, siempre. Por eso, te contamos cuáles son l
 | Magento                 | Community Edition 1.8.x - 1.9.x, Enterprise Edition 1.11.x - 1.14.x, Magento 2.0.0 - 2.3.x  | 
 | Shopify                 | -                                                                                           |
 
-[Ver módulos](https://www.mercadopago.com.ar/developers/es/guides/plugins).
+[Ver módulos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins).
 
 
 ----[mlb, mlm, mlc, mco, mpe]----

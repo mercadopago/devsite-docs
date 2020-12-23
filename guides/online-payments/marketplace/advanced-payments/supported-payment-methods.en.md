@@ -18,4 +18,4 @@ The payments methods that are currently supported are the following:
 >
 > Note
 >
-> For more information, please go to the reference of [Payment Methods](https://www.mercadopago.com.br/developers/en/reference/payment_methods/_payment_methods/get/).
+> For more information, please go to the reference of [Payment Methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payment_methods/_payment_methods/get/).

@@ -442,7 +442,7 @@ Notifications are automatically sent to inform you of any new payments and statu
 
 This will allow you to manage your inventories and keep your system in sync.
 
-To learn more about it, go to [Notifications.](https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn)
+To learn more about it, go to [Notifications.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn)
 
 ### Prevent payment rejection
 
@@ -456,8 +456,8 @@ You can test the integration before going into production, in order to check the
 
 For that, you must use test users and cards.
 
-For more information, go to the [Test](https://www.mercadopago.com.ar/developers/en/guides/online-payments/mobile-checkout/testing) section.
+For more information, go to the [Test](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/mobile-checkout/testing) section.
 
 ### Next steps
 
-- To adapt the payment flow to your needs, go to the [Customization](https://www.mercadopago.com.ar/developers/en/guides/online-payments/mobile-checkout/personalization) section.
+- To adapt the payment flow to your needs, go to the [Customization](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/mobile-checkout/personalization) section.

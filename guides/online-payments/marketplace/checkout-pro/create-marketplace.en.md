@@ -5,14 +5,14 @@
 >
 > Prerequisites
 >
-> * Have the [Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/introduction) implemented.
+> * Have the [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction) implemented.
 ------------
 ----[mpe]----
 > WARNING
 >
 > Prerequisites
 >
-> * Have the [Checkout Pro](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction) implemented.
+> * Have the [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/web-checkout/introduction) implemented.
 ------------
 
 To begin, you need to:
@@ -134,7 +134,7 @@ Expected response:
 
 ## 3. Integrate the checkout
 
-To collect on behalf of your sellers you must integrate the [Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction), generating the payment preferences with the Access Token of each seller for your application.
+To collect on behalf of your sellers you must integrate the [Checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/web-checkout/introduction), generating the payment preferences with the Access Token of each seller for your application.
 
 If you want to charge a fee for each payment processed by your application on behalf of your seller, simply add that amount to the marketplace_fee  parameter when creating the preference:
 
@@ -273,11 +273,11 @@ The seller will receive the difference between the total amount and the fees, bo
 
 You need to send your `notification_url`, where you will receive a notification of all new payments and status updates generated.
 
-For more information, go to the [notifications section](https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn).
+For more information, go to the [notifications section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn).
 
 ### Refunds and cancellations
 
 The cancellations and refunds can be made either by the marketplace or by the seller, via API or through the Mercado Pago account.
 Cancellations can only be made using the cancellation API.
 
-For more information, go to [refunds and cancellations.](https://www.mercadopago.com.ar/developers/en/guides/manage-account/account/cancellations-and-refunds)
+For more information, go to [refunds and cancellations.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds)

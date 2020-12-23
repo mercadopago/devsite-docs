@@ -80,5 +80,5 @@ Order completed page		         |      ✔      |                     |
 >
 > Prerequisites to get started
 >
-> [Integrations requirements](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/previous-requirements)
+> [Integrations requirements](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/previous-requirements)
 >

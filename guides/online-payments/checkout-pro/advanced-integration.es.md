@@ -347,7 +347,7 @@ Esto quiere decir que el dinero del vendedor por ese pago será retenido de su c
 >
 > Configura tus pago y adapta Checkout Pro a tu negocio.
 >
-> [Configurations](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/configurations/)
+> [Configurations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations/)
 
 > RIGHT_BUTTON
 >
@@ -355,4 +355,4 @@ Esto quiere decir que el dinero del vendedor por ese pago será retenido de su c
 >
 > Adapta el estilo de tu marca en la experiencia de compra.
 >
-> [Personalizaciones](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/customizations/)
+> [Personalizaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/customizations/)

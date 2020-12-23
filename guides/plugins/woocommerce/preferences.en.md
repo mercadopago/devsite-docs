@@ -41,9 +41,9 @@ Activate the checkout you want to offer your customers according to your prefere
 >
 > Important
 >
-> Note that the [Checkout Pro](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/introduction) is exclusive of the Custom Checkout and vice versa. You can use both custom checkouts at the same time to offer all means of payment. -->
+> Note that the [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction) is exclusive of the Custom Checkout and vice versa. You can use both custom checkouts at the same time to offer all means of payment. -->
 
-* Choose the [payment methods available](https://www.mercadopago.com.ar/developers/en/guides/resources/localization/payment-methods/) to your customers according to the marketplace in which you operate and the type of checkout you are configuring.
+* Choose the [payment methods available](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/) to your customers according to the marketplace in which you operate and the type of checkout you are configuring.
 
 * Set the maximum number of installments in which they can pay you.
 
@@ -80,7 +80,7 @@ Choose what shopping experience your customers will have when paying:
 >
 > Nota
 >
-> Check out the [Checkout Pro documentation](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/introduction/) to learn more about all its features and functionalities.
+> Check out the [Checkout Pro documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction/) to learn more about all its features and functionalities.
 
 | Configuration                 | Description                                                               	                  |
 |-------------------------------|-----------------------------------------------------------------------------------------------|
@@ -113,4 +113,4 @@ Choose what shopping experience your customers will have when paying:
 > Test the module and verify that everything works well to start receiving money from your sales in Mercado Pago.
 >
 >
-> [Receive payments](https://www.mercadopago.com.ar/developers/en/guides/plugins/woocommerce/receive-payments/)
+> [Receive payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/receive-payments/)

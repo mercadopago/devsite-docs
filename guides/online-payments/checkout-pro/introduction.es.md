@@ -77,5 +77,5 @@ Pantalla de finalización de pago		     |      ✔      |                     |
 >
 > Para realizar la integración, tienes que cumplir con los requisitos necesarios.
 >
-> [Requisitos previos](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/previous-requirements)
+> [Requisitos previos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/previous-requirements)
 >

@@ -178,7 +178,7 @@ Obtén tu **ACCESS_TOKEN** en la [sección de Credenciales]([FAKER][CREDENTIALS]
     mp.get ("/v1/customers/CUSTOMER_ID")
 ```
 
-> Para más información visita la sección [API reference](https://www.mercadopago.com.ar/developers/es/reference).
+> Para más información visita la sección [API reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference).
 
 ## Métodos genéricos
 

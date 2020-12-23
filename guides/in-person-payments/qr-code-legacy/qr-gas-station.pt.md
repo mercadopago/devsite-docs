@@ -167,7 +167,7 @@ Além dos conceitos anteriores, você também deve conhecer os objetos com os qu
 
 - `status_detail`: Informações detalhadas sobre o status atual ou o motivo da rejeição.
 
-Consulte a [documentação completa](https://www.mercadopago.com.br/developers/pt/reference/payments/resource/) sobre este objeto em nossa Referencia API.
+Consulte a [documentação completa](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/resource/) sobre este objeto em nossa Referencia API.
 
 ## Configuração inicial
 
@@ -207,7 +207,7 @@ A `message` é opcional, corresponde a uma explicação de texto simples da caus
 
 ### Notificar URL
 
-Seja na fase de teste ou de produção, você deve informar a URL do [Mercado Pago](https://www.mercadopago.com.br/developers/pt/support) para configurá-lo e iniciar o teste.
+Seja na fase de teste ou de produção, você deve informar a URL do [Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/support) para configurá-lo e iniciar o teste.
 
 ## Cobranças
 
@@ -236,12 +236,12 @@ https://api.mercadopago.com/pos \
 
 Depois que o usuário fizer o pagamento, você poderá obter os dados usando qualquer uma das seguintes maneiras:
 
-1. [IPN](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn/): Quando o pagamento é criado, enviamos uma notificação via webhook para a URL configurado no `notification_url` da ordem, você deve se inscrever para o tipo de notificações `merchant_order`.
-2. Faça a [pesquisa de pagamento](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_search/get/) usando o `external_reference` como critério de pesquisa.
+1. [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/): Quando o pagamento é criado, enviamos uma notificação via webhook para a URL configurado no `notification_url` da ordem, você deve se inscrever para o tipo de notificações `merchant_order`.
+2. Faça a [pesquisa de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_search/get/) usando o `external_reference` como critério de pesquisa.
 
 ## Devoluções
 
-Haverá momentos em que você precisará efetuar a [devolução](https://www.mercadopago.com.br/developers/pt/guides/manage-account/account/cancellations-and-refunds/) parcial ou total de um pagamento.
+Haverá momentos em que você precisará efetuar a [devolução](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds/) parcial ou total de um pagamento.
 
 **Devolução total**
 
@@ -283,7 +283,7 @@ Verifique os [dados de teste](https://www.mercadopago[FAKER][URL][DOMAIN]/develo
 
 ### Dicionário de erros
 
-[Aqui](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/handling-responses/) você pode encontrar nosso dicionário de erros.
+[Aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/handling-responses/) você pode encontrar nosso dicionário de erros.
 
 ## Relatórios
 

@@ -344,7 +344,7 @@ Isso significa que o dinheiro do vendedor, por esse pagamento, será retido da s
 >
 > Configure seus pagamentos e adapte o Checkout Pro ao seu negócio.
 >
-> [Outras funcionalidades](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/configurations/)
+> [Outras funcionalidades](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/)
 
 > RIGHT_BUTTON
 >
@@ -352,4 +352,4 @@ Isso significa que o dinheiro do vendedor, por esse pagamento, será retido da s
 >
 > Adapte o estilo da sua marca na experiência de compra.
 >
-> [Customizações](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/customizations/)
+> [Customizações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/customizations/)

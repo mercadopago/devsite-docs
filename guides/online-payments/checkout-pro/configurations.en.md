@@ -1,16 +1,16 @@
 # Other functionalities
 
 
-You can adapt the integration to your business by adding attributes in the preference. There is a lot of [details in a preference](https://www.mercadopago.com.ar/developers/en/reference/preferences/resource/) that can be set, but always keep in mind what your business needs.
+You can adapt the integration to your business by adding attributes in the preference. There is a lot of [details in a preference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/preferences/resource/) that can be set, but always keep in mind what your business needs.
 
 ----[mla, mlb]----
-If you offer purchases of high amounts, for example, you can accept [payments with two credit cards](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_payments_with_two_credit_cards) or, also, [exclude payment methods](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_attributes_for_the_preference) that you do not want to accept.
+If you offer purchases of high amounts, for example, you can accept [payments with two credit cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_payments_with_two_credit_cards) or, also, [exclude payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_attributes_for_the_preference) that you do not want to accept.
 ------------
 ----[mlm, mlc, mlu, mco, mpe]----
-If you offer purchases of high amounts, for example, you can [exclude payment methods](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_attributes_for_the_preference) that you do not want to accept.
+If you offer purchases of high amounts, for example, you can [exclude payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_attributes_for_the_preference) that you do not want to accept.
 ------------
 
-You can [get business information](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_get_information_about_your_business) using preference. And you can also measure advertising effectiveness and track ads by [integration to Facebook Pixel](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_associate_a_facebook_pixel) or [associate your Google Ads](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_associate_a_google_ads_tag).
+You can [get business information](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_get_information_about_your_business) using preference. And you can also measure advertising effectiveness and track ads by [integration to Facebook Pixel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_associate_a_facebook_pixel) or [associate your Google Ads](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_associate_a_google_ads_tag).
 
 
 ## Example of a complete preference
@@ -888,7 +888,7 @@ To activate the payment option, go to your <a href="https://www.mercadopago.com.
 >
 > Optimize your integration and improve the management of your sales.
 >
-> [Advanced Integration](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/advanced-integration)
+> [Advanced Integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/advanced-integration)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -896,4 +896,4 @@ To activate the payment option, go to your <a href="https://www.mercadopago.com.
 >
 > Adapt the style of your brand in the buying experience.
 >
-> [Customization](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/customizations)
+> [Customization](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/customizations)

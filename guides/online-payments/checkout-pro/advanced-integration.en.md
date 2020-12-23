@@ -345,7 +345,7 @@ This means that the seller's money for that payment will be withheld from their 
 >
 > Set up your payment and adapt the Checkout Pro to your business.
 >
-> [Other functionalities](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/configurations/)
+> [Other functionalities](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations/)
 
 > RIGHT_BUTTON
 >
@@ -353,4 +353,4 @@ This means that the seller's money for that payment will be withheld from their 
 >
 > Adapt the style of your brand in the shopping experience.
 >
-> [Customization](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/customizations/)
+> [Customization](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/customizations/)

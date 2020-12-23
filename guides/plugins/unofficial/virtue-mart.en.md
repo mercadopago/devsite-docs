@@ -52,14 +52,14 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
 
 The module of Mercado Pago to VirtueMart is integrated with the features and payment solutions:
 
-* [Basic Checkout (Redirect, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
+* [Basic Checkout (Redirect, Iframe ou Lightbox)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/basic-checkout/receive-payments/)
   * Split payments (Two cards)
 
 
 * Custom Checkout
-  * [Payment with Credit Card](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-  * [One Click Pay (Customers and Cards)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)
-  * [Paid with other payment methods](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)
+  * [Payment with Credit Card](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/basic-checkout/receive-payments/)
+  * [One Click Pay (Customers and Cards)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)
+  * [Paid with other payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)
 
 ## Installation
 
@@ -182,7 +182,7 @@ The module of Mercado Pago to VirtueMart is integrated with the features and pay
 
   Find your **Access token** in the [Credentials section]([FAKER][CREDENTIALS][URL]).  
 
-> Find all the information about your credentials in our [FAQs](https://www.mercadopago.com.ar/developers/en/guides/resources/faqs/credentials/). 
+> Find all the information about your credentials in our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/faqs/credentials/). 
 
   7. IPN settings.
   <br/>![Setting Notification - IPN](/images/virtuemart-ipn_settings.png) <br />

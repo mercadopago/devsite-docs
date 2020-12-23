@@ -122,7 +122,7 @@ American Express | 3711 803032 57522 | 1234 | 11/25
 
 ------------
 
-You can also [use test credit cards from local payment methods in each country](https://www.mercadopago.com.ar/developers/en/guides/resources/localization/local-cards).
+You can also [use test credit cards from local payment methods in each country](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/local-cards).
 
 ## Receive a payment
 

@@ -5,14 +5,14 @@
 >
 > Pré-requisitos
 >
-> * Possuir o [Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/introduction) implementado.
+> * Possuir o [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction) implementado.
 ------------
 ----[mpe]----
 > WARNING
 >
 > Pré-requisitos
 >
-> * Possuir o [Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/introduction) implementado.
+> * Possuir o [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/web-checkout/introduction) implementado.
 ------------
 
 Para começar, você deve:
@@ -136,7 +136,7 @@ Resposta esperada:
 
 ## 3. Integre o checkout
 
-Para realizar a cobrança em nome de seus vendedores, você deve integrar o [Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/introduction), gerando as preferências de pagamento com o Access Token de cada vendedor para a sua aplicação.
+Para realizar a cobrança em nome de seus vendedores, você deve integrar o [Checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/web-checkout/introduction), gerando as preferências de pagamento com o Access Token de cada vendedor para a sua aplicação.
 
 Se deseja cobrar uma comissão por cada pagamento processado pela sua aplicação em nome do seu vendedor, simplesmente adicione esse valor no parâmetro `marketplace_fee` ao criar a preferência:
 
@@ -274,7 +274,7 @@ O vendedor receberá a diferença entre o valor total e as comissões, tanto a d
 
 É necessário que envie sua `notification_url` onde receberá um aviso de todos os novos pagamentos e atualizações de status gerados, assim como também alta e baixa de usuários em seu Marketplace.
 
-Para mais informações, consulte a seção de [notificações](https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks).
+Para mais informações, consulte a seção de [notificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks).
 
 ### Devoluções e cancelamentos
 
@@ -284,4 +284,4 @@ Caso a devolução seja realizada no Marketplace, deve-se utilizar as credenciai
 
 Os cancelamentos somente poderão ser efetuados utilizando a API de cancelamentos.
 
-Para mais informações, consulte a seção de [devoluções e cancelamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/account/cancellations-and-refunds).
+Para mais informações, consulte a seção de [devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).

@@ -25,7 +25,7 @@ This _fragment of HTML code_ will insert a payment button. When the buyer presse
 ```
 You can find the Public Key in the [Credentials section]([FAKER][CREDENTIALS][URL]) page.
 
-> Find all the information about your credentials in our [FAQs](https://www.mercadopago.com.ar/developers/en/guides/resources/faqs/credentials/).
+> Find all the information about your credentials in our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/faqs/credentials/).
 
 ### Step 3: Get the data
 
@@ -79,7 +79,7 @@ issuer_id = Request["issuer_id"]
 
 ### Step 4: Creating the payment
 
-To make the payment, you must perform an API call using the [SDK de Mercado Pago](https://www.mercadopago.com.ar/developers/en/guides/sdks) that corresponds with the programming language that you are using on your site.
+To make the payment, you must perform an API call using the [SDK de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks) that corresponds with the programming language that you are using on your site.
 
 You should only make an *API call* including the data you received from the checkout:
 
@@ -223,8 +223,8 @@ Response:
 
 ### Test cards
 
-To make testing payments (with your TEST credentials), you need to use [test cards](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-api/testing).
+To make testing payments (with your TEST credentials), you need to use [test cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/testing).
 
 ### Installments offer
 
-We recommend you include the [installments offer link](https://www.mercadopago.com.ar/promociones) of **Mercado Pago**, or implement one of our [payment methods banner](https://www.mercadopago.com.ar/developers/en/guides/resources/banners/introduction/).
+We recommend you include the [installments offer link](https://www.mercadopago.com.ar/promociones) of **Mercado Pago**, or implement one of our [payment methods banner](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/banners/introduction/).

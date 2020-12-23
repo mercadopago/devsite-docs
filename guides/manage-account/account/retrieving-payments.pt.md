@@ -47,7 +47,7 @@ Resposta esperada:
 }
 ```
 
-As informações sobre todas as variáveis retornadas podem ser obtidas na [referência da API do recurso Payments](https://www.mercadopago.com.ar/developers/pt/reference/payments/_payments_id/get/).
+As informações sobre todas as variáveis retornadas podem ser obtidas na [referência da API do recurso Payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get/).
 
 ## Buscar pagamentos
 

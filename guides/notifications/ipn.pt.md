@@ -45,9 +45,9 @@ Depois disso, você poderá obter a informação completa do recurso notificado 
 
 Tipo               | URL                                                         | Documentação
 ------------------ | ----------------------------------------------------------- | --------------------
-payment            | /v1/payments/[ID] | [ver documentação](https://www.mercadopago.com.ar/developers/pt/reference/payments/_payments_id/get/)
+payment            | /v1/payments/[ID] | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get/)
 chargebacks    	   | /v1/chargebacks/[ID]| -
-merchant_orders    | /merchant\_orders/[ID]           | [ver documentação](https://www.mercadopago.com.ar/developers/pt/reference/merchant_orders/_merchant_orders_id/get/)
+merchant_orders    | /merchant\_orders/[ID]           | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/merchant_orders/_merchant_orders_id/get/)
 
 
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma, por exemplo: atualizar um pagamento aprovado o un pedido fechado.
@@ -65,7 +65,7 @@ Com essas informações, você poderá realizar as atualizações necessárias n
 1. O campo `status` da `merchant_order` permanecerá em **opened** quando ainda não tiver pagamentos associados, ou tiver pagamentos recusados ou aprovados por um valor menor ao total da ordem.
 2. O campo `status` da `merchant_order` será **closed** quando a soma dos pagamentos aprovados for igual ou superior ao total da ordem.
  
-Dentro da ordem, no objeto payments, você vai encontrar todos os pagamentos dela. É importante obter a ID dos pagamentos com status = approved para [poder realizar restituições](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/account/cancellations-and-refunds).
+Dentro da ordem, no objeto payments, você vai encontrar todos os pagamentos dela. É importante obter a ID dos pagamentos com status = approved para [poder realizar restituições](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
  
 > WARNING
 >
@@ -128,7 +128,7 @@ curl -X GET \
     -H 'Authorization: Bearer $ACCESS_TOKEN' \
     https://api.mercadopago.com/merchant_orders?external_reference=$EXTERNAL_REFERENCE
 ```
-Mais informações na [Referência de API](https://www.mercadopago.com.br/developers/pt/reference/merchant_orders/_merchant_orders_search/get/).
+Mais informações na [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/merchant_orders/_merchant_orders_search/get/).
 
 A **pesquisa** pode ser realizada por `external_reference` de duas formas:
 
