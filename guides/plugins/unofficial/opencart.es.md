@@ -100,7 +100,7 @@ Ofrezca un checkout personalizado a su experiencia de marca con nuestra API de p
 
 1. De nuevo en **Extensions> Payments> MercadoPago**, haga clic en **Edit** para configurar su cuenta de Mercado Pago:
 
- [Open cart configuration page] (https://raw.github.com/brunocodeman/cart-opencart/master/README.img/MPAccount.png)
+ [Open cart configuration page](https://raw.github.com/brunocodeman/cart-opencart/master/README.img/MPAccount.png)
 
 2. Configure su **CLIENT_ID** y **CLIENT_SECRET**, o **PUBLIC_KEY** y **ACCESS_TOKEN** (dependiendo de qué módulo está utilizando). [Obtenga sus credenciales]([FAKER][CREDENTIALS][URL]).
 

@@ -468,7 +468,7 @@ The Tokenizer is the Mercado Pago solution that quickly allows you to obtain a c
 > * Does not include all means of payment.
 
 
-To carry out the integration, you must follow the documentation you can find by entering the following [link] (https://www.mercadopago.com.ar/developers/en/guides/payments/tokenize-checkout/introduction)
+To carry out the integration, you must follow the documentation you can find by entering the following [link](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/tokenize-checkout/introduction)
 
 
 This would be an example of the creation of the checkout:

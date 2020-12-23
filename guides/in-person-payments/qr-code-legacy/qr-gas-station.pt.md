@@ -18,9 +18,9 @@
 
 5. O usuário segue o fluxo de compra e confirma o pagamento.
 
-6. Imediatamente após o processamento do pagamento é enviada uma notificação para o servidor [IPN] (https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn) relatando que há algo novo.
+6. Imediatamente após o processamento do pagamento é enviada uma notificação para o servidor [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn) relatando que há algo novo.
 
-7. Com o ID de pagamento, você pode [pesquisar] (https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_search/get) o pagamento e continuar os seus processos internos.
+7. Com o ID de pagamento, você pode [pesquisar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_search/get) o pagamento e continuar os seus processos internos.
 
    > Se o status for 'approved', o pagamento deve ser creditado. Por outro lado, se for `rejected`, o aplicativo tentará novamente o pagamento solicitando outro meio de pagamento.
 
@@ -32,7 +32,7 @@ Primeiro você deve se familiarizar com os seguintes conceitos, já que você os
 
 | Atributo                    | Descrição                                                  |
 | --------------------------- | ------------------------------------------------------------ |
-| `ACCESS_TOKEN`              | É o [token de acesso] (https://www.mercadopago.com/mlb/account/credentials) da conta do Mercado Pago para a qual as coleções serão creditadas. |
+| `ACCESS_TOKEN`              | É o [token de acesso](https://www.mercadopago.com/mlb/account/credentials) da conta do Mercado Pago para a qual as coleções serão creditadas. |
 | `COLLECTOR_ID`              | É o número de usuário da conta Mercado Pago, são os últimos 9 dígitos do seu `access_token`, após o hífen. |
 | `EXTERNAL_ID`               | É o identificador único do fornecedor. É um código alfanumérico definido pelo integrador, não pode conter espaços ou caracteres especiais e não faz distinção entre maiúsculas e minúsculas. |
 | `SPONSOR_ID`                | `COLLECTOR_ID` da conta do Mercado Pago do integrador. Você deve criar uma conta por marca (YPF, Shell, Axion, etc).|
