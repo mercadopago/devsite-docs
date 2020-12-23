@@ -78,4 +78,4 @@ Then execute the steps of a new installation to update your page with the latest
 > Connect your Mercado Pago account to the module and capture the payments you receive for your online sales.
 >
 > 
-> [Integrate](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/integration/)
+> [Integrate](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/integration)

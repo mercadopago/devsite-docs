@@ -11,7 +11,7 @@
 > Prerequisites
 >
 > Contact your account executive to correctly configure your Marketplace.
-> This guide assumes that you have already created and correctly configured your [Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/marketplace/checkout-api/introduction/) and know how to [generate a card token](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card).
+> This guide assumes that you have already created and correctly configured your [Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/marketplace/checkout-api/introduction) and know how to [generate a card token](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card).
 >
 > Your sellers must have a MP account and must [give you permission to collect payments on their behalf](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/marketplace/advanced-payments/sellers-permissions).
 

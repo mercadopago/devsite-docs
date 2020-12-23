@@ -50,7 +50,7 @@ Para **configurar la activación de tu cuenta de Mercado Pago**, sigue estos pas
 ![Setting active in Wix](/images/wix/wix_active_configuration_2.gif)
 <p>&nbsp;</p>
 
-> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/faqs/credentials/).
+> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/faqs/credentials).
 
 ## Configura las cuotas sin interés en tu cuenta de Mercado Pago
 

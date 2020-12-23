@@ -93,7 +93,7 @@ Com as informações obtidas, você já pode gerar o seu QR!
 
 ## Testes
 
-Para criar o QR, você precisa [criar um usuário para teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/integration-test/) para vender e um outro usuário para escanear e pagar no App de Mercado Pago ou Mercado Livre.
+Para criar o QR, você precisa [criar um usuário para teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/integration-test) para vender e um outro usuário para escanear e pagar no App de Mercado Pago ou Mercado Livre.
 
 > NOTE
 >
@@ -105,7 +105,7 @@ Para criar o QR, você precisa [criar um usuário para teste](https://www.mercad
 
 Para obter as informações do pagamento, é necessário configurar a URL de notificação no [painel do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/ipn-notifications). 
 
-Com a URL já configurada, será possível validar as ordens, como indicado na [seção de Notificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/).
+Com a URL já configurada, será possível validar as ordens, como indicado na [seção de Notificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn).
 
 
 ## Começar a receber pagamentos
@@ -125,4 +125,4 @@ Depois disso, mostre o QR ao seu cliente, como preferir, para que ele o pague. E
 >
 > Conheça as opções que você tem para levar sua integração ao próximo nível.
 >
-> [Integrar modelo QR dinâmico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/advanced-integration/)
+> [Integrar modelo QR dinâmico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/advanced-integration)

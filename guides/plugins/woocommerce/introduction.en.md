@@ -46,7 +46,7 @@ With these payment options we cover the needs of each business. Review the featu
 >
 > Note
 >
-> Check out the [Checkout Pro documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction/) to learn more about all its characteristics and functionalities.
+> Check out the [Checkout Pro documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction) to learn more about all its characteristics and functionalities.
 
 ### Next steps
 
@@ -57,4 +57,4 @@ With these payment options we cover the needs of each business. Review the featu
 > Follow these steps to install the Mercado Pago module in your online store.
 >
 > 
-> [Install](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/instalation/)
+> [Install](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/instalation)

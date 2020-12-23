@@ -239,7 +239,7 @@ Si necesitas hacer alguna validación en tu servidor al momento de realizar el p
 
 En la clase _ServicePreference_ puedes configurar la URL y la URI de tu servicio junto con un _Map_ para que puedas enviar la información que desees.
 
-Al momento de postear el pago, el SDK lo hará a tu servicio, [el cual deberá crear el pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments/post/) y hacer la validaciones inherentes a tu negocio. El SDK esperará recibir un pago, tal como responde el servicio de Mercado Pago.
+Al momento de postear el pago, el SDK lo hará a tu servicio, [el cual deberá crear el pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments/post) y hacer la validaciones inherentes a tu negocio. El SDK esperará recibir un pago, tal como responde el servicio de Mercado Pago.
 
 Una vez creada la _ServicePreference_, debes iniciar el flujo de pago de Mercado Pago, tal como se muestra en el siguiente código:
 

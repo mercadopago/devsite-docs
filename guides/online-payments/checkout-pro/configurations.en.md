@@ -1,7 +1,7 @@
 # Other functionalities
 
 
-You can adapt the integration to your business by adding attributes in the preference. There is a lot of [details in a preference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/preferences/resource/) that can be set, but always keep in mind what your business needs.
+You can adapt the integration to your business by adding attributes in the preference. There is a lot of [details in a preference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/preferences/resource) that can be set, but always keep in mind what your business needs.
 
 ----[mla, mlb]----
 If you offer purchases of high amounts, for example, you can accept [payments with two credit cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_payments_with_two_credit_cards) or, also, [exclude payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_attributes_for_the_preference) that you do not want to accept.

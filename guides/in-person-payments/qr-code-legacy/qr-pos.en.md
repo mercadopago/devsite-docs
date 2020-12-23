@@ -103,7 +103,7 @@ In addition to the previous concepts, you must also know the objects with which 
 
 - `status_detail`: Detailed information about the current status or the reason for rejection.
 
-Consult the [full documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/resource/) about this object in our API Reference.
+Consult the [full documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/resource) about this object in our API Reference.
 
 ## Payments
 
@@ -158,8 +158,8 @@ For example, if you want it to be available for 5 minutes you should send the he
 
 After the user makes the payment you can obtain the data using any of the following ways:
 
-1. [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/): When the payment is created, we send a notification via webhook to the URL configured in the `notification_url` of the order, you will need to be subscribed to merchant_order's type notifications.
-2. Do the [payment search](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_search/get/) using the `external_reference` as the search criteria.
+1. [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn): When the payment is created, we send a notification via webhook to the URL configured in the `notification_url` of the order, you will need to be subscribed to merchant_order's type notifications.
+2. Do the [payment search](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_search/get) using the `external_reference` as the search criteria.
 
 ### Delete order
 
@@ -173,7 +173,7 @@ https://api.mercadopago.com/mpmobile/instore/qr/COLLECTOR_ID/EXTERNAL_ID
 
 ## Refunds
 
-There will be times when you will need to do a partial or total [refund](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds/).
+There will be times when you will need to do a partial or total [refund](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
 
 **Total refund**
 
@@ -209,7 +209,7 @@ Consult the [test data](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/e
 
 ### Errors
 
-[Here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses/) you can find our error dictionary.
+[Here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses) you can find our error dictionary.
 
 ## Reports
 

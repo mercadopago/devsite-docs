@@ -15,7 +15,7 @@ Os métodos disponíveis de Spreedly com Mercado Pago são:
 
 Para integração com Spreedly é necessário obter e configurar as [credenciais]([FAKER][CREDENTIALS][URL]) Public key e Access token do Mercado Pago.
 
-> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials/).
+> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials).
 
 Por sua vez, também é necessário inserir o código do país:
 
@@ -350,7 +350,7 @@ Para processar com Mercado Pago e para obter maiores níveis de aprovação em s
 
 ### Payer Identification
 
-Para processar com Mercado Pago é necessário enviar a identificação do pagador em cada pagamento. Esta informação é OBRIGATÓRIA para todos os sítios de Mercado Pago a exceção de México. Para mais detalhes, [acesse o seguinte link](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/identification_types/_identification_types/get/).
+Para processar com Mercado Pago é necessário enviar a identificação do pagador em cada pagamento. Esta informação é OBRIGATÓRIA para todos os sítios de Mercado Pago a exceção de México. Para mais detalhes, [acesse o seguinte link](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/identification_types/_identification_types/get).
 
 ### Parcelas
 

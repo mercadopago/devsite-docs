@@ -90,4 +90,4 @@ Luego ejecuta los pasos de una **nueva instalación** para actualizar tu tienda 
 > Conecta tu cuenta de Mercado Pago al módulo y captura los pagos que recibas por tus ventas online.
 >
 > 
-> [Integrar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/woocommerce/integration/)
+> [Integrar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/woocommerce/integration)

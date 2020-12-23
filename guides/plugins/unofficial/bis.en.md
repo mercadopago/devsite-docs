@@ -35,7 +35,7 @@ Com a conta do MercadoPago já criada, você deve informar os dados abaixo para 
 
 [Public key e Access token]([FAKER][CREDENTIALS][URL])
 
-> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials/).
+> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials).
 
 
 ### Canal de Atendimento:

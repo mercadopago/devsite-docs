@@ -50,7 +50,7 @@ To **set up the activation of your Mercado Pago account**, follow these steps:
 ![Setting active in Wix](/images/wix/wix_active_configuration_2.gif)
 <p>&nbsp;</p>
 
-> Find all the information about your credentials in our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/faqs/credentials/).
+> Find all the information about your credentials in our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/faqs/credentials).
 
 ## Set interest free installments in your Mercado Pago account
 

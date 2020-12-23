@@ -54,7 +54,7 @@ Once the checkout is installed, follow these steps:
 
 1. Create a [seller account](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-company?confirmation_url=https%3A%2F%2Fwww.mercadopago[FAKER][URL][DOMAIN]%2Fcomo-cobrar) in Mercado Pago if you don’t have one yet.
 1. Get the **Public Key** and **Access Token** [credentials]([FAKER][CREDENTIALS][URL]), and paste them in the Production and Testing fields that you will find in the app settings.
-1. Approve the account to [go to Production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/goto-production/) and receive the money from your sales in Mercado Pago.
+1. Approve the account to [go to Production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/goto-production) and receive the money from your sales in Mercado Pago.
 
 **Done! With this configuration you can start selling and get the payments you receive in your Mercado Pago account.**
 
@@ -80,7 +80,7 @@ When you test, check that the payment flow works correctly.
 
 To start receiving payments, you must [activate your credentials]([FAKER][CREDENTIALS][URL]/).
 
-> Check the [requirements to go to production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/goto-production/) if you have any questions about the process.
+> Check the [requirements to go to production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/goto-production) if you have any questions about the process.
 
 To activate them, make sure that the production credentials entered are those of the account that you receive money from sales.
 
@@ -125,7 +125,7 @@ Follow these steps to process payments with Checkout Pro:
 >
 > Nota
 >
-> Check [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/web-payment-checkout/introduction/) documentation to learn more about all its features and functionalities.
+> Check [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/web-payment-checkout/introduction) documentation to learn more about all its features and functionalities.
 
 
 ### Payment status mapping

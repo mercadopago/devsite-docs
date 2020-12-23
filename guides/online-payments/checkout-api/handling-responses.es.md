@@ -8,7 +8,7 @@ Por ejemplo, si la tarjeta no tiene saldo suficiente para la compra, puedes reco
 >
 > Nota
 >
-> Para conocer información sobre los posibles errores, consulta la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/).
+> Para conocer información sobre los posibles errores, consulta la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference).
 
 ## Resultados de creación de un cobro
 
@@ -86,7 +86,7 @@ default | Otro código de error | No pudimos procesar tu pago.
 >
 > Optimiza tu integración y mejora la gestión de tus ventas.
 >
-> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es//guides/online-payments/checkout-api/advanced-integration/)
+> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es//guides/online-payments/checkout-api/advanced-integration)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -94,4 +94,4 @@ default | Otro código de error | No pudimos procesar tu pago.
 >
 > Encuentra toda la información necesaria para interactuar con nuestras APIs.
 >
-> [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/)
+> [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference)

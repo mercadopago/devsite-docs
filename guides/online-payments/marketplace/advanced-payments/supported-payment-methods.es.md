@@ -18,4 +18,4 @@ Actualmente los medios de pagos soportados son los siguientes:
 >
 > Nota
 >
-> Para más información dirigirse a la referencia de [Payment Methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payment_methods/_payment_methods/get/).
+> Para más información dirigirse a la referencia de [Payment Methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payment_methods/_payment_methods/get).

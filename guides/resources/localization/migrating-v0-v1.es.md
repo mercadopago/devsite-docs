@@ -62,9 +62,9 @@ A continuación vas a poder encontrar los recursos migrados y sus equivalentes.
 | Uso                     | Método | URI del recurso deprecado              | URI del recurso equivalente      | Referencia                                                      |
 |-------------------------|--------|----------------------------------------|----------------------------------|-----------------------------------------------------------------|
 | Devoluciones            | `POST` | /collections/$payment_id/refunds       | /v1/payments/$payment_id/refunds | -|
-| Devoluciones            | `PUT`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[visita](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/put/)    |
-| Actualización de pago   | `PUT`  | /payments/$payment_id                  | /v1/payments/$payment_id/        |[visita](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/put/)    |
-| Actualización de pago   | `PUT`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[visita](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/put/)    |
+| Devoluciones            | `PUT`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[visita](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/put)    |
+| Actualización de pago   | `PUT`  | /payments/$payment_id                  | /v1/payments/$payment_id/        |[visita](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/put)    |
+| Actualización de pago   | `PUT`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[visita](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/put)    |
 | Pagos                   | `GET`  | /payments/$payment_id                  | /v1/payments/$payment_id/        |[visita](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get)    |
 | Pagos                   | `GET`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[visita](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get)    |
 | Notificación de pagos   | `GET`  | /collections/notifications/$payment_id | /v1/payments/$payment_id/        |[visita](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get)    |
@@ -146,7 +146,7 @@ curl -X POST \
 
 Si necesitás hacer adaptaciones, recordá que es importante hacer este cambio antes de la fecha límite.
 
-Si tenés alguna duda o necesita ayuda para hacer estos cambios, [contáctanos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support/).
+Si tenés alguna duda o necesita ayuda para hacer estos cambios, [contáctanos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support).
 
 El equipo de Mercado Pago.
 
@@ -200,7 +200,7 @@ curl -X POST \
 
 Si necesitas hacer adaptaciones, recuerda que es importante hacer este cambio antes de la fecha límite.
  
-Si tienes alguna duda o necesita ayuda para hacer estos cambios, [contactanos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support/).
+Si tienes alguna duda o necesita ayuda para hacer estos cambios, [contactanos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support).
 
 
 El equipo de Mercado Pago.

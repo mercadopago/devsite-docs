@@ -75,7 +75,7 @@ https://api.mercadopago.com/users/$USER_ID/stores \
 ```
 ]]]
 
-Learn more with our [API reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/stores/_users_user_id_stores/post/).
+Learn more with our [API reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/stores/_users_user_id_stores/post).
 
 > WARNING
 >
@@ -116,7 +116,7 @@ https://api.mercadopago.com/pos \
 ```
 ]]]
 
-Learn more with our [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/pos/_pos/post/).
+Learn more with our [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/pos/_pos/post).
 
 Once Point of Sale is created, you’ll be able to see the QR files in the _Response_ section, along with other relevant data. 
 
@@ -130,4 +130,4 @@ Once Point of Sale is created, you’ll be able to see the QR files in the _Resp
 >
 > Learn step by step how to integrate this model.
 >
-> [Integrate QR attended model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/qr-attended-part-b/)
+> [Integrate QR attended model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/qr-attended-part-b)

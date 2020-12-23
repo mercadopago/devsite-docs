@@ -5,7 +5,7 @@
 > Importante
 >
 > ¡Lo sentimos! Por el momento, esta página no se encuentra disponible en español.<br>
-[Ir a documentación en portugués](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex//)
+[Ir a documentación en portugués](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/)
 
 ------------
 
@@ -1229,7 +1229,7 @@ Los datos más significativos son los siguientes:
 | `first_six_digits` | 450995 | Bin de la tarjeta. |
 | `processing_mode` | agregador | Modo de procesamiento del pago. |
 
-Para conocer el detalle sobre un pago rechazado, revisa el `status_detail` y busca la información en los [manejos de respuesta de error](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/handling-responses/).
+Para conocer el detalle sobre un pago rechazado, revisa el `status_detail` y busca la información en los [manejos de respuesta de error](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/handling-responses).
 
 ## Errores comunes
 

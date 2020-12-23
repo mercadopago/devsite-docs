@@ -13,7 +13,7 @@
 
 El módulo de Mercado Pago para ZenCart esta integrado con las siguientes funcionalidad y soluciones de pago:
 
-* [Checkout básico (Redirect, Iframe ou Modal)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/solutions/payments/basic-checkout/receive-payments/)
+* [Checkout básico (Redirect, Iframe ou Modal)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/solutions/payments/basic-checkout/receive-payments)
 * Pagos con dos tarjetas
 
 ## Versión Disponibles

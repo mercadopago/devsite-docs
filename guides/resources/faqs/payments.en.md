@@ -54,7 +54,7 @@ Because of this, according to the amount selected, you can only see some payment
 ----[mlb]----
 ## How to generate the same ticket again
 
-To generate a duplicate of the ticket, it is necessary to use the [GET method from the API of Payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get/) sending the payment ID and the seller’s Access Token.
+To generate a duplicate of the ticket, it is necessary to use the [GET method from the API of Payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) sending the payment ID and the seller’s Access Token.
 
 The query would be as follows:
 
@@ -74,7 +74,7 @@ You can remove the ticket option through the payment preference. For more detail
 
 You can remove it directly from your frontend. Get the payment methods excluding the ticket in the call with the parameter `"payment_type_id" = credit_card` as filter, for example.
 
-> For more details please refer to the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payment_methods/_payment_methods/get/).
+> For more details please refer to the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payment_methods/_payment_methods/get).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plugins and e-commerce solutions ready to use
 
@@ -82,7 +82,7 @@ If you are selling through our plugins or e-commerce solutions ready to use, and
 
 ## Setting a date of expiration for the ticket
 
-By default, the date of expiration is 3 calendar days but you can set the [date of expiration for the ticket through API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways/) using the field `date_of_expiration`.
+By default, the date of expiration is 3 calendar days but you can set the [date of expiration for the ticket through API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways) using the field `date_of_expiration`.
 ------------
 
 ## Improve the approval process of your payments

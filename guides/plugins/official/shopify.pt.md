@@ -54,7 +54,7 @@ Depois que o checkout estiver instalado, siga estas etapas:
 
 1. Crie uma [conta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-company?confirmation_url=https%3A%2F%2Fwww.mercadopago[FAKER][URL][DOMAIN]%2Fcomo-cobrar) no Mercado Pago se você ainda não tem uma.
 1. Obtenha as [credenciais]([FAKER][CREDENTIALS][URL]) **Public Key** e **Access Token**, e cole-as nos campos de Produção e Testes encontrados na configuração do app.
-1. Ative a conta para [ir a Produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/goto-production/) e receber o dinheiro das suas vendas no Mercado Pago.
+1. Ative a conta para [ir a Produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/goto-production) e receber o dinheiro das suas vendas no Mercado Pago.
 
 **Pronto! Com essa configuração, você pode começar a vender e obter os pagamentos recebidos na sua conta Mercado Pago.**
 
@@ -62,7 +62,7 @@ Depois que o checkout estiver instalado, siga estas etapas:
 >
 > Importante
 >
-> As [credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/faqs/credentials/) são as chaves que o identificam exclusivamente no Mercado Pago. Elas permitirão que você simule pagamentos em um ambiente de teste e receba pagamentos reais quando estiver pronto para produção.
+> As [credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/faqs/credentials) são as chaves que o identificam exclusivamente no Mercado Pago. Elas permitirão que você simule pagamentos em um ambiente de teste e receba pagamentos reais quando estiver pronto para produção.
 
 
 ### Como testar o checkout?
@@ -80,7 +80,7 @@ Ao fazer o teste, confira se o fluxo de pagamento funciona corretamente.
 
 Para começar a receber pagamentos, você deve [ativar suas credenciais]([FAKER][CREDENTIALS][URL]).
 
-> Confira os [requisitos para ir a produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/goto-production/) se você tem alguma dúvida em relação ao processo.
+> Confira os [requisitos para ir a produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/goto-production) se você tem alguma dúvida em relação ao processo.
 
 Para ativá-las, verifique se as credenciais de produção inseridas são as da conta que você recebe o dinheiro das vendas. 
 
@@ -125,7 +125,7 @@ Siga estas etapas para processar pagamentos com o Checkout Pro:
 >
 > Nota
 >
-> Confira a documentação do [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/web-payment-checkout/introduction/) para conhecer melhor todas as suas características e funcionalidades.
+> Confira a documentação do [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/web-payment-checkout/introduction) para conhecer melhor todas as suas características e funcionalidades.
 
 
 ### Mapeamento de status de pagamento

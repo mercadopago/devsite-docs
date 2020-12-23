@@ -86,7 +86,7 @@ Depois disso, você deve obter as informações completas do recurso notificado 
 
 Tipo         | URL                                                  | Documentação
 ------------ | -----------------------------------------------------| --------------------
-payment      | https://api.mercadopago.com/v1/payments/[ID]      | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get/)
+payment      | https://api.mercadopago.com/v1/payments/[ID]      | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get)
 plan         | https://api.mercadopago.com/v1/plans/[ID]         | -
 subscription | https://api.mercadopago.com/v1/subscriptions/[ID] | -
 invoice      | https://api.mercadopago.com/v1/invoices/[ID]      | -

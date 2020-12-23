@@ -46,13 +46,13 @@
 # Funcionalidad
 El módulo de Mercado Pago para WP eCommerce está integrado con las siguientes funcionalidades y soluciones de pago:
 
-### [Checkout básico (Redirect, Iframe or Lightbox)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/basic-checkout/receive-payments/)
+### [Checkout básico (Redirect, Iframe or Lightbox)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/basic-checkout/receive-payments)
 * Interfaces "pre-armadas" de Mercado Pago <ar>![Basic Checkout](/images/wp-ecommerce-basic_checkout_payment.png)
 
 ### Checkout personalizado
-* [Pagos con tarjeta de crédito](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/basic-checkout/receive-payments/)<ar>![Custom Checkout](/images/wp-ecommerce-order_custom.png)
-* [Pago conn un click (Customer Cards)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)<ar>![One Click Payment](/images/wp-ecommerce-order_cust_card.png)
-* [Otros medios de pago, como por ejemplo Tickets](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<ar>![Tickets](/images/wp-ecommerce-order_ticket.png)
+* [Pagos con tarjeta de crédito](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/basic-checkout/receive-payments)<ar>![Custom Checkout](/images/wp-ecommerce-order_custom.png)
+* [Pago conn un click (Customer Cards)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript)<ar>![One Click Payment](/images/wp-ecommerce-order_cust_card.png)
+* [Otros medios de pago, como por ejemplo Tickets](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/custom-checkout/charge-with-other-methods)<ar>![Tickets](/images/wp-ecommerce-order_ticket.png)
 
 ### Otras funcionalidades
 * Credenciales y chequeos de estado de la plataforma.

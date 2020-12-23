@@ -94,7 +94,7 @@ En el artículo de [GitHub](https://github.com/mercadopago/point-android_integra
 >
 > * Esta integración sólo esta disponible para Android versión 2.8.0 o superior.
 > * No esta disponible para iOS.
-> * Para poder utilizar esta integración es necesario que te comuniques con [soporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support/) para que te habiliten las opciones de integraciones en la app de Mercado Pago.
+> * Para poder utilizar esta integración es necesario que te comuniques con [soporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support) para que te habiliten las opciones de integraciones en la app de Mercado Pago.
 
 La otra forma de integrarse con la aplicación de Mercado Pago para cobrar con nuestro Point es mediante nuestras API.
 
@@ -267,7 +267,7 @@ En el artículo de [notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/
 
 
 ## Pagos de Point
-Los pagos de Point se pueden buscar en la API de Payments. Podes encontrar más información en el artículo de [API's](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get/)
+Los pagos de Point se pueden buscar en la API de Payments. Podes encontrar más información en el artículo de [API's](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get)
 
 A su vez, existe una API exclusiva de Point que cuenta con alguna información adicional del pago: 
 

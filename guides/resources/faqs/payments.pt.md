@@ -52,7 +52,7 @@ Isso ocorre porque, de acordo com o valor escolhido, você pode visualizar algun
 
 ## Como gerar a segunda via do boleto
 
-Para gerar uma segunda via do boleto será necessário [utilizar o método GET da API de Payment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get/) passando o ID do pagamento e a Access Token do vendedor.
+Para gerar uma segunda via do boleto será necessário [utilizar o método GET da API de Payment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get) passando o ID do pagamento e a Access Token do vendedor.
 
 A consulta será da seguinte forma:
 
@@ -72,7 +72,7 @@ Dependendo do seu tipo de checkout e integração o processo pode ser diferente.
 
 A remoção é realizada diretamente no seu frontend. Você pode obter os meios de pagamento desejados ao excluir boleto da chamada ao método payment, inserindo o parâmetro `"payment_type_id" = credit_card` como filtro, por exemplo.
 
-> Você pode encontrar mais detalhes na [referência da API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payment_methods/_payment_methods/get/).
+> Você pode encontrar mais detalhes na [referência da API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payment_methods/_payment_methods/get).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plugins ou soluções de e-commerce prontas para usar
 
@@ -80,7 +80,7 @@ Caso venda através de um de nossos plugins ou soluções de e-commerce prontas 
 
 ## Definir prazo de vencimento do boleto
 
-Por padrão, a data de vencimento é de 3 dias corridos, mas é possível [definir a data de vencimento do boleto via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways/), através do campo `date_of_expiration`.
+Por padrão, a data de vencimento é de 3 dias corridos, mas é possível [definir a data de vencimento do boleto via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways), através do campo `date_of_expiration`.
 ------------
 
 ## Melhore a aprovação de seus pagamentos

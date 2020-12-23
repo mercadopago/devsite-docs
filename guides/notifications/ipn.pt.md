@@ -45,9 +45,9 @@ Depois disso, você poderá obter a informação completa do recurso notificado 
 
 Tipo               | URL                                                         | Documentação
 ------------------ | ----------------------------------------------------------- | --------------------
-payment            | /v1/payments/[ID] | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get/)
+payment            | /v1/payments/[ID] | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get)
 chargebacks    	   | /v1/chargebacks/[ID]| -
-merchant_orders    | /merchant\_orders/[ID]           | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/merchant_orders/_merchant_orders_id/get/)
+merchant_orders    | /merchant\_orders/[ID]           | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/merchant_orders/_merchant_orders_id/get)
 
 
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma, por exemplo: atualizar um pagamento aprovado o un pedido fechado.
@@ -128,7 +128,7 @@ curl -X GET \
     -H 'Authorization: Bearer $ACCESS_TOKEN' \
     https://api.mercadopago.com/merchant_orders?external_reference=$EXTERNAL_REFERENCE
 ```
-Mais informações na [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/merchant_orders/_merchant_orders_search/get/).
+Mais informações na [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/merchant_orders/_merchant_orders_search/get).
 
 A **pesquisa** pode ser realizada por `external_reference` de duas formas:
 

@@ -29,6 +29,6 @@ Vamos lhe explicar como ver as informações de seus [pagamentos no fluxo
 >
 > No momento, esta página não está disponível em português.
 >
-> [Ver documentação em espanhol](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/extra/reports-information-details/)
+> [Ver documentação em espanhol](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/extra/reports-information-details)
 
 ------------

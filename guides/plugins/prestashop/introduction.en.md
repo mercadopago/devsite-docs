@@ -46,7 +46,7 @@ With these payment options we cover the needs of each business. Check the featur
 >
 > Note
 >
-> Check [the documentation of the Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction/) to learn more about all its features and functionalities.
+> Check [the documentation of the Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction) to learn more about all its features and functionalities.
 
 ### Next step
 
@@ -57,4 +57,4 @@ With these payment options we cover the needs of each business. Check the featur
 > Follow these steps to install the Mercado Pago module in your online store.
 >
 > 
-> [Install](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/instalation/)
+> [Install](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/instalation)

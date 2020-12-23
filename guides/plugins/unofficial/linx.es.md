@@ -51,7 +51,7 @@ Después de agregar el medio de pago, **configura los datos para tu integración
     ![LINX Configuracao](/images/linx/linx_configurando_integracao-2.gif)
 <p>&nbsp;</p>
 
-> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/faqs/credentials/).
+> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/faqs/credentials).
 
 ### Configura los datos para tarjetas de crédito 
 
