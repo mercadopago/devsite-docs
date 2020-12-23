@@ -94,10 +94,10 @@ Você pode obter mais informações nas [Referências de API](https://www.mercad
 
 Tendo lojas criadas, você pode criar seus caixas. Considere o seguinte: 
 
-| Termo       |  Descrição    |
-| ------------- | ------------------------------------------------- |
-| `EXTERNAL_STORE_ID`     | Vincula o caixa com a loja. É um campo requerido e é o mesmo *external_id* da loja previamente criada. |
-| `EXTERNAL_ID`           | Identifica univocamente cada caixa. É requerido e não se pode alterar nem repetir numa mesma conta de Mercado Pago. |
+| Termo | Descrição |
+| --- | --- |
+| `EXTERNAL_STORE_ID` | Vincula o caixa com a loja. É um campo requerido e é o mesmo *external_id* da loja previamente criada. |
+| `EXTERNAL_ID` | Identifica univocamente cada caixa. É requerido e não se pode alterar nem repetir numa mesma conta de Mercado Pago. |
 
 
 [[[
