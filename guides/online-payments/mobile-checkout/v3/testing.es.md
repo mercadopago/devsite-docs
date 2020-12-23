@@ -6,8 +6,6 @@ sites_supported:
     - mco
     - mlc
     - mpe
-    - mlv
-    - global
 ---
 # Probando la integración
 

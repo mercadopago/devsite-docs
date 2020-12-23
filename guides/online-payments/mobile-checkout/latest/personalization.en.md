@@ -1,15 +1,3 @@
----
-sites_supported:
-    - mla
-    - mlb
-    - mlm
-    - mco
-    - mlc
-    - mpe
-    - mlv
-    - mlu
-    - global
----
 # Customization
 
 > WARNING

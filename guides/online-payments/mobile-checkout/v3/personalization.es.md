@@ -6,7 +6,6 @@ sites_supported:
     - mco
     - mlc
     - mpe
-    - global
 ---
 # **Personalización**
 
