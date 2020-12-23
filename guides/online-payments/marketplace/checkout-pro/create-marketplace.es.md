@@ -37,12 +37,12 @@ Para operar en Mercado Pago en nombre de tu vendedor, debes primero solicitarle 
 
 2.1. Para esto, redirige al usuario a la siguiente URL reemplazando en `client_id`, el valor de `APP_ID` y la misma `redirect_uri` que configuraste en el paso anterior:
 
-`https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http://www.URL_de_retorno.com`
+`https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=https://www.URL_de_retorno.com`
 
 <br>
 2.2. Recibirás el código de autorización en la URL que especificaste:
 
-`http://www.URL_de_retorno.com?code=AUTHORIZATION_CODE`
+`https://www.URL_de_retorno.com?code=AUTHORIZATION_CODE`
 
 El `AUTHORIZATION_CODE` será utilizado para crear las credenciales y tiene un tiempo de validez de 10 minutos.
 
@@ -51,11 +51,11 @@ El `AUTHORIZATION_CODE` será utilizado para crear las credenciales y tiene un t
 
 Al incluir este parámetro, la URL de redirección quedaría de la siguiente forma:
 
-`https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=id=RANDOM_ID=&redirect_uri=http://www.URL_de_retorno.com`
+`https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=id=RANDOM_ID=&redirect_uri=https://www.URL_de_retorno.com`
 
 Ahora recibirás en la URL de retorno especificada el código de autorización y también el identificador seguro:
 
-`hhttp://www.URL_de_retorno.com?code=AUTHORIZATION_CODE&state=id=RANDOM_ID`
+`https://www.URL_de_retorno.com?code=AUTHORIZATION_CODE&state=id=RANDOM_ID`
 
 > No envíes información confidencial o credenciales de la cuenta de Mercado Pago.
 
@@ -190,7 +190,7 @@ $payer->email = "test_user_19653727@testuser.com";
 $preference->items = array($item);
 $preference->payer = $payer;
 $preference->marketplace_fee = 2.56
-$preference->notification_url = "http://urlmarketplace.com/notification_ipn"
+$preference->notification_url = "https://urlmarketplace.com/notification_ipn"
 
 $preference->save();
 ?>
@@ -213,7 +213,7 @@ payer.setEmail("john@yourdomain.com");
 preference.setPayer(payer);
 preference.appendItem(item);
 preference.setMarketPlace(2.56);
-preference.setNotificationUrl("http://urlmarketplace.com/notification_ipn");
+preference.setNotificationUrl("https://urlmarketplace.com/notification_ipn");
 preference.save();
 
 ```
@@ -235,7 +235,7 @@ preference.save();
   preference.items = [item]
   preference.payer = payer
   preference.marketplace_fee = 2.56
-  preference.notification_url = "http://urlmarketplace.com/notification_ipn";
+  preference.notification_url = "https://urlmarketplace.com/notification_ipn";
 
   mercadopago.preferences.create(preference).then(function (data) {
      // Do Stuff...
@@ -260,7 +260,7 @@ payer.email="john@yourdomain.com"
 preference.items = [item]
 preference.payer = payer
 preference.marketplace_fee = 2.56
-preference.notification_url = "http://urlmarketplace.com/notification_ipn"
+preference.notification_url = "https://urlmarketplace.com/notification_ipn"
 
 preference.save
 

@@ -71,14 +71,14 @@ Para mantener la consistencia semántica con los resultados del endpoint /paymen
 ```json
 curl -X GET \
  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
- "http://api.mercadopago.com/v1/payments/search?site_id=MLA&limit=50&range=date_created&end_date=NOW&begin_date=NOW-90DAYS&sort=date_created&criteria=desc&payer.id=PAYER_ID" 
+ "https://api.mercadopago.com/v1/payments/search?site_id=MLA&limit=50&range=date_created&end_date=NOW&begin_date=NOW-90DAYS&sort=date_created&criteria=desc&payer.id=PAYER_ID" 
 ```
 Para mantener la consistencia semántica con los resultados del endpoint /collections/search deberás agregar el parámetro collector.id con tu identificador de usuario.
 
 ```json
 curl -X GET \
  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
- "http://api.mercadopago.com/v1/payments/search?site_id=MLA&limit=50&range=date_created&end_date=NOW&begin_date=NOW-90DAYS&sort=date_created&criteria=desc&collector.id=COLLECTOR_ID" 
+ "https://api.mercadopago.com/v1/payments/search?site_id=MLA&limit=50&range=date_created&end_date=NOW&begin_date=NOW-90DAYS&sort=date_created&criteria=desc&collector.id=COLLECTOR_ID" 
 ```
 
 #### Devolución total

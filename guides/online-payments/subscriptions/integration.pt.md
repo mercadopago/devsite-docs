@@ -138,7 +138,7 @@ Atributo | Definição
     "preapproval_plan_id": "2c938084726e18d60170001112223334",
     "payer_id": 100200300,
     "payer_email": "test_user_XXXX@testuser.com",
-    "back_url": "http://www.mercadopago[FAKER][URL][DOMAIN]/",
+    "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]/",
     "collector_id": 10101,
     "application_id": 1234567812345678,
     "status": "authorized",
@@ -182,7 +182,7 @@ Para criar uma assinatura com status `authorized`, você deve enviar os dados do
     "frequency_type": "months",
     "end_date": "2022-07-20T11:59:52.581-04:00"
   },
-  "back_url": "http://www.mercadopago[FAKER][URL][DOMAIN]/",
+  "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]/",
   "collector_id": 100200300,
   "external_reference": "1245AT234562",
   "payer_email": "test_user_XXXX@testuser.com",
@@ -201,7 +201,7 @@ Para criar uma assinatura com status `authorized`, você deve enviar os dados do
     "id": "2c938084726fca480172750000000000",
     "payer_id": 400500600,
     "payer_email": "test_user_XXXX@testuser.com",
-    "back_url": "http://www.mercadopago[FAKER][URL][DOMAIN]/",
+    "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]/",
     "collector_id": 100200300,
     "application_id": 1234567812345678,
     "status": "authorized",
@@ -242,7 +242,7 @@ Para o cadastro, os detalhes do cartão devem ser informados usando nosso formul
     "frequency_type": "months",
     "end_date": "2022-07-20T11:59:52.581-04:00"
   },
-  "back_url": "http://www.mercadopago[FAKER][URL][DOMAIN]/",
+  "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]/",
   "collector_id": 100200300,
   "external_reference": "1245AT234562",
   "payer_email": "test_user_XXXX@testuser.com",
@@ -261,7 +261,7 @@ Para o cadastro, os detalhes do cartão devem ser informados usando nosso formul
     "id": "2c938084726fca480172750000000000",
     "payer_id": 400500600,
     "payer_email": "test_user_XXXX@testuser.com",
-    "back_url": "http://www.mercadopago[FAKER][URL][DOMAIN]/",
+    "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]/",
     "collector_id": 100200300,
     "application_id": 1234567812345678,
     "status": "pending",
@@ -313,7 +313,7 @@ Atributo | Definção
 >
 > Verifique se suas assinaturas estão configuradas corretamente com os usuários de teste. 
 >
-> [Testes](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/testing/)
+> [Testes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/testing)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
@@ -321,4 +321,4 @@ Atributo | Definção
 >
 > Atualize, altere ou cancele suas assinaturas.
 >
-> [Integração avançada](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/advanced-integration/)
+> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/advanced-integration)

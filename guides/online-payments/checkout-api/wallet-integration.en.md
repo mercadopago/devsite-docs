@@ -246,7 +246,7 @@ Done! You already have the Mercado Pago wallet integrated on your website.
 >
 > Optimize your wallet integration to improve your sales management.
 >
-> [Advanced Integration](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/advanced-integration)
+> [Advanced Integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/advanced-integration)
 
 
 > RIGHT_BUTTON_RECOMMENDED_EN
@@ -255,4 +255,4 @@ Done! You already have the Mercado Pago wallet integrated on your website.
 >
 > Make sure everything is ok in your integration with the test users.
 >
-> [Tests](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/test-integration/)
+> [Tests](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/test-integration)

@@ -19,7 +19,7 @@ where:
 
 You will receive an authorization code in the url that you specified: 
 
-`http://<REDIRECT_URI>?code=AUTHORIZATION_CODE`
+`https://<REDIRECT_URI>?code=AUTHORIZATION_CODE`
 
 This `AUTHORIZATION_CODE` will be used to create the credentials, and is valid for 10 minutes.
 

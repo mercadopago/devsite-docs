@@ -138,7 +138,7 @@ Attribute |	Definition
     "preapproval_plan_id": "2c938084726e18d60170001112223334",
     "payer_id": 100200300,
     "payer_email": "test_user_XXXX@testuser.com",
-    "back_url": "http://www.mercadopago[FAKER][URL][DOMAIN]/",
+    "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]/",
     "collector_id": 10101,
     "application_id": 1234567812345678,
     "status": "authorized",
@@ -182,7 +182,7 @@ To create a subscription with `authorized` status, the card details must be subm
     "frequency_type": "months",
     "end_date": "2022-07-20T11:59:52.581-04:00"
   },
-  "back_url": "http://www.mercadopago[FAKER][URL][DOMAIN]/",
+  "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]/",
   "collector_id": 100200300,
   "external_reference": "1245AT234562",
   "payer_email": "test_user_XXXX@testuser.com",
@@ -201,7 +201,7 @@ To create a subscription with `authorized` status, the card details must be subm
     "id": "2c938084726fca480172750000000000",
     "payer_id": 400500600,
     "payer_email": "test_user_XXXX@testuser.com",
-    "back_url": "http://www.mercadopago[FAKER][URL][DOMAIN]/",
+    "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]/",
     "collector_id": 100200300,
     "application_id": 1234567812345678,
     "status": "authorized",
@@ -242,7 +242,7 @@ In order to subscribe, the card data must be uploaded with our form. Only the li
     "frequency_type": "months",
     "end_date": "2022-07-20T11:59:52.581-04:00"
   },
-  "back_url": "http://www.mercadopago[FAKER][URL][DOMAIN]/",
+  "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]/",
   "collector_id": 100200300,
   "external_reference": "1245AT234562",
   "payer_email": "test_user_XXXX@testuser.com",
@@ -261,7 +261,7 @@ In order to subscribe, the card data must be uploaded with our form. Only the li
     "id": "2c938084726fca480172750000000000",
     "payer_id": 400500600,
     "payer_email": "test_user_XXXX@testuser.com",
-    "back_url": "http://www.mercadopago[FAKER][URL][DOMAIN]/",
+    "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]/",
     "collector_id": 100200300,
     "application_id": 1234567812345678,
     "status": "pending",
@@ -313,7 +313,7 @@ Attribute |	Definition
 >
 > Check that your subscriptions are properly configured with the test users. 
 >
-> [Tests](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/testing/)
+> [Tests](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/testing)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -321,4 +321,4 @@ Attribute |	Definition
 >
 > Update, edit or cancel your subscriptions. 
 >
-> [Advanced integration](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/advanced-integration/)
+> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/advanced-integration)

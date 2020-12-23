@@ -354,7 +354,7 @@ Lanzamos la nueva versión 4.3.1 para WooCommerce.
 
 Para que puedas optimizar tus ventas, agregamos un nuevo atributo que te permitirá recibir pagos solo de usuarios registrados, en el Checkout Pro. Esto significa que tus compradores te pagarán exclusivamente con sus tarjetas guardadas o con su dinero en cuenta.  
 
-[Comenzar a recibir pagos solamente de usuarios registrados](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations/#bookmark_aceptar_pagos_únicamente_de_usuarios_registrados)
+[Comenzar a recibir pagos solamente de usuarios registrados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_aceptar_pagos_únicamente_de_usuarios_registrados)
 
 ---
 

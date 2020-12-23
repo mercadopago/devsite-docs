@@ -42,4 +42,4 @@ Pago de validación | Son pagos de monto mínimo que se realizan una sola vez po
 >
 > Revisa que esté todo bien en tu integración con los usuarios de prueba.
 >
-> [Requisitos para integrar](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/previous-requirements/)
+> [Requisitos para integrar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/previous-requirements)

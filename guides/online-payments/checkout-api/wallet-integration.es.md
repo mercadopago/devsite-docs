@@ -241,7 +241,7 @@ Para más información sobre cada atributo, consulta la [Referencia de API](http
 >
 > Optimiza la integración de tu billetera para mejorar la gestión de tus ventas.
 >
-> [Integración avanzada](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/advanced-integration)
+> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/advanced-integration)
 
 
 > RIGHT_BUTTON_RECOMMENDED_ES
@@ -250,4 +250,4 @@ Para más información sobre cada atributo, consulta la [Referencia de API](http
 >
 > Revisa que esté todo bien en tu integración con los usuarios de prueba.
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/test-integration/)
+> [Pruebas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/test-integration)

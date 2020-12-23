@@ -19,7 +19,7 @@ donde:
 
 Recibirás un código de autorización en la url que especificaste: 
 
-`http://<REDIRECT_URI>?code=AUTHORIZATION_CODE`
+`https://<REDIRECT_URI>?code=AUTHORIZATION_CODE`
 
 Este `AUTHORIZATION_CODE` será utilizado para crear las credenciales, y tiene un tiempo de validez de 10 minutos.
 

@@ -42,4 +42,4 @@ Validation payment | These are one-time minimum payments per subscription to ver
 >
 > View all the necessary requirements to start integrating.
 >
-> [Requirements to integrate](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/previous-requirements/)
+> [Requirements to integrate](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/previous-requirements)

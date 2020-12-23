@@ -122,7 +122,7 @@ Con el `application_id` de la suscripción que quieras actualizar, realiza la si
 >
 > Revisa que tus suscripciones creadas estén bien configuradas con los usuarios de prueba. 
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/testing/)
+> [Pruebas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/testing)
 
 
 > RIGHT_BUTTON
@@ -131,4 +131,4 @@ Con el `application_id` de la suscripción que quieras actualizar, realiza la si
 >
 > Por si tienes inconvenientes, te explicamos la lógica de reintentos de cobros.
 >
-> [Lógica de reintentos de cobros](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/payment-retry/)
+> [Lógica de reintentos de cobros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/payment-retry)

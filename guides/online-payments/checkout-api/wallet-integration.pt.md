@@ -241,7 +241,7 @@ Pronto! você já tem a carteira do Mercado Pago integrada no seu site.
 >
 > Otimize a integração da sua carteira para melhorar a gestão das suas vendas.
 >
-> [Integração avançada](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/advanced-integration)
+> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/advanced-integration)
 
 
 > RIGHT_BUTTON_RECOMMENDED_PT
@@ -250,4 +250,4 @@ Pronto! você já tem a carteira do Mercado Pago integrada no seu site.
 >
 > Confira se está tudo correto na sua integração com os usuários de teste.
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration/)
+> [Pruebas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration)

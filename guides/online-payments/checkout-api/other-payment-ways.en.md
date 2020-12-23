@@ -342,7 +342,7 @@ The response will show pending status until the buyer makes the payment. The pay
         "net_received_amount": 0,
         "total_paid_amount": 100,
         "overpaid_amount": 0,
-        "external_resource_url": "http://www.mercadopago.com/mla/payments/ticket/helper?payment_id=123456789&payment_method_reference_id= 123456789&caller_id=123456",
+        "external_resource_url": "https://www.mercadopago.com/mla/payments/ticket/helper?payment_id=123456789&payment_method_reference_id= 123456789&caller_id=123456",
         "installment_amount": 0,
         "financial_institution": null,
         "payment_method_reference_id": "1234567890"
@@ -1754,7 +1754,7 @@ $payment->transaction_details = array(
 $payment->additional_info = array(
 "ip_address" => "127.0.0.1"
 );
-$payment->callback_url = "http://www.your-site.com";
+$payment->callback_url = "https://www.your-site.com";
 $payment->payment_method_id = "pse";
 
 $payment->save();
@@ -1782,7 +1782,7 @@ financial_institution: 1234
 additional_info: {
 ip_address: "127.0.0.1"
 },
-callback_url: "http://www.your-site.com",
+callback_url: "https://www.your-site.com",
 payment_method_id: "pse"
 }
 
@@ -1813,7 +1813,7 @@ payment.setTransactionAmount(5000f)
 .setPayer(payer)
 .setTransactionDetails(transactionDetails)
 .additionalInfo(additionalInfo)
-.callbackUrl("http://www.your-site.com")
+.callbackUrl("https://www.your-site.com")
 .setPaymentMethodId("pse");
 ```
 ```ruby
@@ -1837,7 +1837,7 @@ financial_institution: 1234
 payment.additional_info = {
 ip_address: "127.0.0.1"
 }
-payment.callback_url = "http://www.your-site.com"
+payment.callback_url = "https://www.your-site.com"
 payment.payment_method_id = "pse"
 
 payment.save();
@@ -2291,7 +2291,7 @@ $payment->transaction_details = array(
 $payment->additional_info = array(
 "ip_address" => "127.0.0.1"
 );
-$payment->callback_url = "http://www.your-site.com";
+$payment->callback_url = "https://www.your-site.com";
 $payment->payment_method_id = "webpay";
 
 $payment->save();
@@ -2315,7 +2315,7 @@ financial_institution: 1234
 additional_info: {
 ip_address: "127.0.0.1"
 },
-callback_url: "http://www.your-site.com",
+callback_url: "https://www.your-site.com",
 payment_method_id: "webpay"
 }
 
@@ -2345,7 +2345,7 @@ payment.setTransactionAmount(100f)
 .setPayer(payer)
 .setTransactionDetails(transactionDetails)
 .additionalInfo(additionalInfo)
-.callbackUrl("http://www.your-site.com")
+.callbackUrl("https://www.your-site.com")
 .setPaymentMethodId("webpay");
 
 payment.save();
@@ -2367,7 +2367,7 @@ financial_institution: 1234
 payment.additional_info = {
 ip_address: "127.0.0.1"
 }
-payment.callback_url = "http://www.your-site.com"
+payment.callback_url = "https://www.your-site.com"
 payment.payment_method_id = "webpay"
 
 payment.save();
@@ -2395,7 +2395,7 @@ curl -X POST \
   additional_info: {
   ip_address: “127.0.0.1”
 },
-  callback_url: "http://www.your-site.com"
+  callback_url: "https://www.your-site.com"
 }'
 ```
 ]]]
@@ -3246,7 +3246,7 @@ The response will show pending status until the buyer makes the payment. The pay
         "net_received_amount": 0,
         "total_paid_amount": 100,
         "overpaid_amount": 0,
-        "external_resource_url": "http://www.mercadopago.com/mlb/payments/ticket/helper?payment_id=123456789&payment_method_reference_id= 123456789&caller_id=123456",
+        "external_resource_url": "https://www.mercadopago.com/mlb/payments/ticket/helper?payment_id=123456789&payment_method_reference_id= 123456789&caller_id=123456",
         "installment_amount": 0,
         "financial_institution": null,
         "payment_method_reference_id": "1234567890"

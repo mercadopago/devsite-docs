@@ -42,4 +42,4 @@ Pagamento de validação | Estes são pagamentos mínimos por assinatura para ve
 >
 > Confira todos os requisitos necessários para começar a integrar.
 >
-> [Requisitos para integrar](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/previous-requirements/)
+> [Requisitos para integrar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/previous-requirements)

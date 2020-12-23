@@ -933,7 +933,7 @@ Para activar la opción de pago, ve a tus <a href="https://www.mercadopago.com.a
 >
 > Optimiza tu integración y mejora la gestión de tus ventas.
 >
-> [Otras funcionalidades](http://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/advanced-integration/)
+> [Otras funcionalidades](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/advanced-integration)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -941,4 +941,4 @@ Para activar la opción de pago, ve a tus <a href="https://www.mercadopago.com.a
 >
 > Adapta el estilo de tu marca en la experiencia de compra.
 >
-> [Integración avanzada](http://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/customizations/)
+> [Integración avanzada](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/customizations)
