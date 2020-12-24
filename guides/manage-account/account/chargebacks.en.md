@@ -36,8 +36,8 @@ It’s very simple.  Add the script, set up your site section where it is in and
 
 #### Possible `view` values
 
-| Value                                                         | Section                                                  |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Value | Section |
+| --- | --- |
 | *home* | Your site home page. |
 | *search* | Search page or product list. |
 | *item* | Specific product page. |
