@@ -53,12 +53,12 @@ Nesses casos, o serviço deve responder uma mensagem de erro para que o usuário
 
 ### Atributos
 
-| Tipo (type)       |  Descrição                                                 |
-| ------------- | ------------------------------------------------------------ |
-| `in_process`     | Tem um pedido em processo, porém, ainda não foi possível determinar o valor a receber. |
-| `unavailable`           | Não tem pedido em processo ou pendente de pagamento.  |
-| `invalid`           | Os parâmetros adicionais (ID de estação, posição, etc.) fazem referência a uma localização desconhecida.  |
-| `timeout`           | O server do vendedor não conseguiu se comunicar com algum dos sistemas internos (por exemplo, a máquina de venda automática) e cancelou a operação. |
+| Tipo (type) | Descrição |
+| --- | --- |
+| `in_process` | Tem um pedido em processo, porém, ainda não foi possível determinar o valor a receber. |
+| `unavailable` | Não tem pedido em processo ou pendente de pagamento.  |
+| `invalid` | Os parâmetros adicionais (ID de estação, posição, etc.) fazem referência a uma localização desconhecida.  |
+| `timeout` | O server do vendedor não conseguiu se comunicar com algum dos sistemas internos (por exemplo, a máquina de venda automática) e cancelou a operação. |
 
 O `message` é opcional, é uma explicação em texto plano que pode acompanhar o type declarado.
 
@@ -92,17 +92,17 @@ Deve utilizar o campo `external_reference` para poder identificar o pedido em se
 
 ### Atributos
 
-| Atributo            | Tipo (_type_)       |  Descripción               |
-| ------------- | ------------- | ------------------------------------------------------------ |
-| `collector_id` | _Long_     | Identificador da conta Mercado Pago onde os pagos serão creditados.  |
-| `sponsor_id` | _Long_           | Identificador da conta Mercado Pago do sistema integrador. |
-| `items.title` | _String_           | Título do produto. |
-| `items.currency_id` | _String (3)_           | Identificador de moeda no formato ISO-4217. |
-| `items.description` | _String_     | Descrição do produto.  |
-| `items.quantity` | _Integer_           | Quantidade do produto envolvido.  |
-| `items.unit_price` | _Decimal_           | Preço unitário do produto. |
-| `external_reference` | _String (256)_           | Referência para poder associar a ordem em Mercado Pago com ordem de compra, comanda ou despacho em seu sistema. Geralmente, é utilizado o número de NF.  |
-| `notification_url` | String | URL aonde as notificações serão enviadas.  |
+| Atributo | Tipo (_type_) | Descripción |
+| --- | --- | --- |
+| `collector_id` | _Long_ | Identificador da conta Mercado Pago onde os pagos serão creditados. |
+| `sponsor_id` | _Long_  | Identificador da conta Mercado Pago do sistema integrador. |
+| `items.title` | _String_ | Título do produto. |
+| `items.currency_id` | _String (3)_ | Identificador de moeda no formato ISO-4217. |
+| `items.description` | _String_  | Descrição do produto. |
+| `items.quantity` | _Integer_ | Quantidade do produto envolvido. |
+| `items.unit_price` | _Decimal_  | Preço unitário do produto. |
+| `external_reference` | _String (256)_ | Referência para poder associar a ordem em Mercado Pago com ordem de compra, comanda ou despacho em seu sistema. Geralmente, é utilizado o número de NF. |
+| `notification_url` | String | URL aonde as notificações serão enviadas. |
 
 ## 2. Declarar o URL de seu domínio a Mercado Pago
 
