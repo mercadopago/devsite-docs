@@ -10,24 +10,24 @@ QR code needs to have a set of data ordered and endorsed by EMVCo standard.
 The following table shows all the data contained:
 
 
-ID | Meaning in Mercado Pago | Size | Presence - Restriction
------------------ | ----------------- | ----------- | ---------
-ID 00: Payload Format Indicator | QR Code Template Version. | 02 | Mandatory 
-ID 01: Point of Initiation Method | It identifies whether QR information is dynamic or static. | 02 | Mandatory 
-ID 43.00 Merchant Account Information | Mercado Libre Identification.| 16 | Mandatory 
-ID 43.02 | Mercado Pago Template Version. | up to 2 | Mandatory 
-ID 43.03 | User ID. | up to 10 | Mandatory 
-ID 43.04 | Sponsor ID. | up to 10 | Optional 
-ID 52: Merchant Category Code | Code for business classification.. | 04 | Mandatory 
-ID 53: Transaction Currency | Numeric currency corresponding to total amount. ----[mlb]---- Brazil: 986 ------------ ----[mla]---- Argentina: 032 ------------ ----[mlc]---- Chile: 152 ------------ ----[mlu]---- Uruguay: 858 ------------ ----[mco]---- Colombia: 170 ------------ ----[mpe]---- Peru: 604 ------------ ----[mlm]---- Mexico: 484 ------------.  | 03 | Mandatory 
-ID 54: Transaction Amount | Total purchase price: E.g. 10.00 | up to 13 | Mandatory 
-ID 58: Country Code | Seller Country. ----[mlb]---- Brazil: `BR` ------------ ----[mla]---- Argentina: `AR` ------------ ----[mlc]---- Chile: `CL` ------------ ----[mlu]---- Uruguay: `UY` ------------ ----[mco]---- Colombia: `CO` ------------ ----[mpe]---- Peru: `PE` ------------ ----[mlm]---- Mexico: `MX` ------------. | 02 | Mandatory 
-ID 59: Merchant Name | Your Business Name. | up to 25 | Mandatory 
-ID 60: Merchant City | Seller City.  | up to 15 | Mandatory 
-ID 62.05: Reference Label | ID defined by integrator to associate transaction to Mercado Pago payment.   | up to 25 | Mandatory 
-ID 62.07: Terminal Label | Cashier's *External_id*.  | up to 10 | Optional 
-ID 62.08: Purpose of Transaction | Description header making reference to purchase purpose.  | up to 25 | Optional 
-ID 63: CRC |  Checksum - Content validation.  | 04 | Mandatory 
+| ID | Meaning in Mercado Pago | Size | Presence - Restriction |
+| --- | --- | --- | --- |
+| ID 00: Payload Format Indicator | QR Code Template Version. | 02 | Mandatory |
+| ID 01: Point of Initiation Method | It identifies whether QR information is dynamic or static. | 02 | Mandatory |
+| ID 43.00 Merchant Account Information | Mercado Libre Identification.| 16 | Mandatory |
+| ID 43.02 | Mercado Pago Template Version. | up to 2 | Mandatory |
+| ID 43.03 | User ID. | up to 10 | Mandatory |
+| ID 43.04 | Sponsor ID. | up to 10 | Optional |
+| ID 52: Merchant Category Code | Code for business classification.. | 04 | Mandatory |
+| ID 53: Transaction Currency | Numeric currency corresponding to total amount. ----[mlb]---- Brazil: 986 ------------ ----[mla]---- Argentina: 032 ------------ ----[mlc]---- Chile: 152 ------------ ----[mlu]---- Uruguay: 858 ------------ ----[mco]---- Colombia: 170 ------------ ----[mpe]---- Peru: 604 ------------ ----[mlm]---- Mexico: 484 ------------.  | 03 | Mandatory |
+| ID 54: Transaction Amount | Total purchase price: E.g. 10.00 | up to 13 | Mandatory |
+| ID 58: Country Code | Seller Country. ----[mlb]---- Brazil: `BR` ------------ ----[mla]---- Argentina: `AR` ------------ ----[mlc]---- Chile: `CL` ------------ ----[mlu]---- Uruguay: `UY` ------------ ----[mco]---- Colombia: `CO` ------------ ----[mpe]---- Peru: `PE` ------------ ----[mlm]---- Mexico: `MX` ------------. | 02 | Mandatory |
+| ID 59: Merchant Name | Your Business Name. | up to 25 | Mandatory |
+| ID 60: Merchant City | Seller City.  | up to 15 | Mandatory |
+| ID 62.05: Reference Label | ID defined by integrator to associate transaction to Mercado Pago payment.   | up to 25 | Mandatory |
+| ID 62.07: Terminal Label | Cashier's *External_id*.  | up to 10 | Optional |
+| ID 62.08: Purpose of Transaction | Description header making reference to purchase purpose.  | up to 25 | Optional |
+| ID 63: CRC |  Checksum - Content validation.  | 04 | Mandatory |
 
 
 >For more information about data to be filled out on your account, [see glosary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/pre-requisites/#bookmark_glosario).
@@ -42,32 +42,32 @@ Take into account that you only need to change the example values. Fixed values 
 
 
 
-ID | Sub ID | Length | Fixed value | Example value
------- | -------- | ---------- | ------------- | -------------
-00 | - | 02 | 01 | - 
-01 | - | 02 | 12 | - 
-43 | - | *Total Length* | - | 38
-| - | 00 | 16 | com.mercadolibre | - 
-| - | 02 | 01 | 1 | - 
-| - | 03 | 09 | - | ----[mlb]---- 582245993 ------------ ----[mla]---- 446566691 ------------ ----[mlc]---- 582115007 ------------ ----[mlu]---- 519253179 ------------ ----[mco]---- 582249137 ------------ ----[mpe]---- 582252133 ------------ ----[mlm]---- 582256360 ------------ 
-52 | - | 04 | 5206 | -
-53 | - | 03 | ----[mlb]---- 986 ------------ ----[mla]---- 032 ------------ ----[mlc]---- 152 ------------ ----[mlu]---- 858 ------------ ----[mco]---- 170 ------------ ----[mpe]---- 604 ------------ ----[mlm]---- 484 ------------ | -
-54 | - | 03 | - | 5.0
-58 | - | 02 | ----[mlb]---- BR ------------ ----[mla]---- AR ------------ ----[mlc]---- CL ------------ ----[mlu]---- UY ------------ ----[mco]---- CO ------------ ----[mpe]---- PE ------------ ----[mlm]---- MX ------------  | -
-59 | - | 09 | - | *TuNegocio*
-60 | - | ----[mlb]---- 10 ------------ ----[mla]---- 12 ------------ ----[mlc]---- 8 ------------ ----[mlu]---- 10 ------------ ----[mco]---- 6 ------------ ----[mpe]---- 4 ------------ ----[mlm]---- 11 ------------ | - | ----[mlb]---- *Sao Paulo* ------------ ----[mla]---- *Buenos Aires* ------------ ----[mlc]---- *Santiago* ------------ ----[mlu]---- *Montevideo* ------------ ----[mco]---- *Bogotá* ------------ ----[mpe]---- *Lima* ------------ ----[mlm]---- *Guadalajara* ------------ 
-62 | - | *Total Length* | - | 35
-| - | 05 | 10 | - | ticket-123
-| - | 07 | 07 | - | CAJA001
-| - | 08 | 06 | - | Bebida
-63 | - | 04 | - | ----[mlb]---- 9D3B ------------ ----[mla]---- 5259 ------------ ----[mlc]---- B680 ------------ ----[mlu]---- 9512 ------------ ----[mco]---- 2735 ------------ ----[mpe]---- 91B1 ------------ ----[mlm]---- C8D9 ------------ 
+| ID | Sub ID | Length | Fixed value | Example value
+| --- | --- | --- | --- | --- |
+| 00 | - | 02 | 01 | - |
+| 01 | - | 02 | 12 | - |
+| 43 | - | *Total Length* | - | 38 |
+| - | 00 | 16 | com.mercadolibre | - |
+| - | 02 | 01 | 1 | - |
+| - | 03 | 09 | - | ----[mlb]---- 582245993 ------------ ----[mla]---- 446566691 ------------ ----[mlc]---- 582115007 ------------ ----[mlu]---- 519253179 ------------ ----[mco]---- 582249137 ------------ ----[mpe]---- 582252133 ------------ ----[mlm]---- 582256360 ------------ |
+| 52 | - | 04 | 5206 | -|
+| 53 | - | 03 | ----[mlb]---- 986 ------------ ----[mla]---- 032 ------------ ----[mlc]---- 152 ------------ ----[mlu]---- 858 ------------ ----[mco]---- 170 ------------ ----[mpe]---- 604 ------------ ----[mlm]---- 484 ------------ | - |
+| 54 | - | 03 | - | 5.0 |
+| 58 | - | 02 | ----[mlb]---- BR ------------ ----[mla]---- AR ------------ ----[mlc]---- CL ------------ ----[mlu]---- UY ------------ ----[mco]---- CO ------------ ----[mpe]---- PE ------------ ----[mlm]---- MX ------------  | - |
+| 59 | - | 09 | - | *TuNegocio* |
+| 60 | - | ----[mlb]---- 10 ------------ ----[mla]---- 12 ------------ ----[mlc]---- 8 ------------ ----[mlu]---- 10 ------------ ----[mco]---- 6 ------------ ----[mpe]---- 4 ------------ ----[mlm]---- 11 ------------ | - | ----[mlb]---- *Sao Paulo* ------------ ----[mla]---- *Buenos Aires* ------------ ----[mlc]---- *Santiago* ------------ ----[mlu]---- *Montevideo* ------------ ----[mco]---- *Bogotá* ------------ ----[mpe]---- *Lima* ------------ ----[mlm]---- *Guadalajara* ------------ |
+| 62 | - | *Total Length* | - | 35 |
+| - | 05 | 10 | - | ticket-123 |
+| - | 07 | 07 | - | CAJA001 |
+| - | 08 | 06 | - | Bebida |
+63 | - | 04 | - | ----[mlb]---- 9D3B ------------ ----[mla]---- 5259 ------------ ----[mlc]---- B680 ------------ ----[mlu]---- 9512 ------------ ----[mco]---- 2735 ------------ ----[mpe]---- 91B1 ------------ ----[mlm]---- C8D9 ------------ |
 
 
 > NOTE
 >
 > Data to take into account
 >
-> - For total length of ID 43 and 62 with 3 Sub IDs each, the **total length of all characters within the ID** need to be included. For example:  
+> - For total length of ID 43 and 62 with 3 Sub IDs each, the **total length of all characters within the ID** need to be included. For example:
 ----[mlb]---- 43380016com.mercadolibre020110309582245993 ------------ ----[mla]---- 43380016com.mercadolibre020110309446566691 ------------ ----[mlc]---- 43380016com.mercadolibre020110309582115007 ------------ ----[mlu]---- 43380016com.mercadolibre020110309519253179 ------------ ----[mco]---- 43380016com.mercadolibre020110309582249137 ------------ ----[mpe]---- 43380016com.mercadolibre020110309582252133 ------------ ----[mlm]---- 43380016com.mercadolibre020110309582256360 ------------ 
 > - If **character length** is less than 10, left pad integer number with one 0. For example: “06”.
 > - *CRC* is a **content verification**. You need to use `CRC-16/CCITT-FALSE Hexadecimal` method. 
