@@ -7,7 +7,7 @@
 There are three ways to generate an Available Balance report:
 
 | Channels | Description |
-| ------- | ----------- |
+| --- | --- |
 | Mercado Pago panel | <br/>It's very simple and fast. To generate it from your Mercado Pago account, go to [your reports](https://www.mercadopago.com.ar/balance/reports) and choose the *Reports* option.<br/><br/>Follow the step by step to [generate reports from this panel](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/available-money/panel/).<br/><br/> |
 | API integration | <br/>Schedule the frequency of your report according to your needs. It can be both manually and on a scheduled basis.<br/><br/>Read the documentation to [generate reports through API](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/available-money/api/).<br/><br/>|
 | Con el retiro de dinero | <br/>Generate a report automatically each time you withdraw your available balance to a bank account.<br/><br/>Follow the step by step to [generate reports for each withdrawal](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/available-money/withdrawal/)<br/><br/> |
