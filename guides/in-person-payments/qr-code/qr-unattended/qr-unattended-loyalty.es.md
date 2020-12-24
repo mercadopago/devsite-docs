@@ -63,34 +63,34 @@ Dentro de la orden, agrega el campo `loyalty` con todos sus datos requeridos com
 
 ## Atributos
 
-| Parámetro    | Tipo (*type*) | Descripción                                                 |
-| ------------- | -------------- |-----------------------------------------------------------|
-| `program`     | *String* | Programa de fidelización (Serviclub, CTC) |
-| `transaction_id`  | *String* (40)         | Número de transacción o comprobante. |
-| `invoice_number` | *String* (8)          | Número de comprobante definido por el integrador. Completar con ceros a la izquierda si tiene menos de 8 dígitos. Ej: “00000001” |
-| `transaction_date` | *String*          | Fecha y hora de la transacción (ISO 8601). |
-| `transaction_amount` | *Decimal*       | Importe total de la transacción.           |
-| `store_id` | *String* (5)         | Identificador único del comercio (APIES en caso de YPF, SiteID en caso de Shell). Completar con ceros a la izquierda si tiene menos de 5 dígitos. Ej: "00001" |
-| `products` | *Array*          | Lista de productos. |
-| `code` | *String*          | Código del producto. |
-| `quantity` | *Decimal*          | Cantidad de producto. Hasta 3 decimales. Ej: 20.513. |
-| `unit_price` | *Decimal*          | Precio unitario del producto.|
-| `unit` | *String*          | Unidad de medida (piece o litre). |
-| `cashier_identification` | *Object*          | Datos del empleado. |
-| `type` | *String*          | Tipo de documento. |
-| `number` | *String*          | ID del documento. En caso de no estar disponible enviar “00000000”. |
-| `period` | *String* (4)         | Número del período. En caso de no estar disponible enviar “0000”. |
-| `shift` | *String* (1)         | Número del turno. |
-| `affinity_plan` | *String* (1)          | Plan de afinidad (7). |
+| Parámetro | Tipo (*type*) | Descripción |
+| --- | --- | --- |
+| `program` | *String* | Programa de fidelización (Serviclub, CTC) |
+| `transaction_id`  | *String* (40) | Número de transacción o comprobante. |
+| `invoice_number` | *String* (8) | Número de comprobante definido por el integrador. Completar con ceros a la izquierda si tiene menos de 8 dígitos. Ej: “00000001” |
+| `transaction_date` | *String* | Fecha y hora de la transacción (ISO 8601). |
+| `transaction_amount` | *Decimal* | Importe total de la transacción.           |
+| `store_id` | *String* (5) | Identificador único del comercio (APIES en caso de YPF, SiteID en caso de Shell). Completar con ceros a la izquierda si tiene menos de 5 dígitos. Ej: "00001" |
+| `products` | *Array* | Lista de productos. |
+| `code` | *String*  | Código del producto. |
+| `quantity` | *Decimal* | Cantidad de producto. Hasta 3 decimales. Ej: 20.513. |
+| `unit_price` | *Decimal* | Precio unitario del producto.|
+| `unit` | *String* | Unidad de medida (piece o litre). |
+| `cashier_identification` | *Object* | Datos del empleado. |
+| `type` | *String* | Tipo de documento. |
+| `number` | *String* | ID del documento. En caso de no estar disponible enviar “00000000”. |
+| `period` | *String* (4) | Número del período. En caso de no estar disponible enviar “0000”. |
+| `shift` | *String* (1) | Número del turno. |
+| `affinity_plan` | *String* (1) | Plan de afinidad (7). |
 
 ## Programas de fidelización activos
 
 Actualmente contamos con los siguientes programas de fidelización.
 
-| Programa de fidelización    | Atributo `program`          |
-| ------------- | -----------------------------------------------|
-| Shell     | `CTC`          |
-| YPF  | `serviclub`          |    
+| Programa de fidelización | Atributo `program` |
+| --- | --- |
+| Shell | `CTC` |
+| YPF | `serviclub` |
 
 
 ## Códigos de producto
