@@ -12,8 +12,8 @@
 
 Primero debes familiarizarte con los siguiente conceptos ya que los usarás durante la integración.
 
-| Atributo       | Descripción                                                  |
-| -------------- | ------------------------------------------------------------ |
+| Atributo | Descripción |
+| --- | --- |
 | `ACCESS_TOKEN` | Es el [token de acceso](https://www.mercadopago.com/mlm/account/credentials) de la cuenta de Mercado Pago a la cual se acreditarán los cobros. |
 | `COLLECTOR_ID` | Es el número de usuario de la cuenta de Mercado Pago, son los últimos 9 dígitos de tu `access_token`, posterior al guión medio. |
 
@@ -198,14 +198,14 @@ Se deben crear dos usuarios de prueba: uno comprador y otro cobrador. Con el usu
 
 Consultar los [datos de prueba](https://www.mercadopago.com.mx/developers/es/guides/online-payments/checkout-pro/test-integration): usuarios de prueba y tarjetas de prueba que se pueden utilizar.
 
-| Casos a probar                                               | Resultado esperado                                           |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| El usuario escanea un código QR válido antes de hacer el pedido. | La app no muestra una orden.                                 |
-| El usuario escanea un código QR con parámetros inválidos, es decir que hace referencia a una cuenta inexistente. | La app informa que ocurrió un error.                         |
-| El usuario escanea un código válido, una vez realizado el pedido y creada la orden de venta. | La app muestra la orden.                                     |
-| El usuario realiza un pago aprobado.                         | El sistema de PDV recibe la información de un pago aprobado. |
-| El usuario realiza un pago rechazado.                        | El sistema de PDV recibe la información de un pago rechazado. |
-| Se hace una devolución de un pago desde el PDV.              | En la cuenta del comprador se impacta la devolución.         |
+| Casos a probar | Resultado esperado |
+| --- | --- |
+| El usuario escanea un código QR válido antes de hacer el pedido. | La app no muestra una orden. |
+| El usuario escanea un código QR con parámetros inválidos, es decir que hace referencia a una cuenta inexistente. | La app informa que ocurrió un error. |
+| El usuario escanea un código válido, una vez realizado el pedido y creada la orden de venta. | La app muestra la orden. |
+| El usuario realiza un pago aprobado. | El sistema de PDV recibe la información de un pago aprobado. |
+| El usuario realiza un pago rechazado. | El sistema de PDV recibe la información de un pago rechazado. |
+| Se hace una devolución de un pago desde el PDV. | En la cuenta del comprador se impacta la devolución. |
 
 ### Diccionario de errores
 

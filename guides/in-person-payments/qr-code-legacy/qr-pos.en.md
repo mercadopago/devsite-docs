@@ -12,8 +12,8 @@
 
 First, you must familiarize yourself with the following concepts since you will use them during the integration.
 
-| Attribute      | Description                                                  |
-| -------------- | ------------------------------------------------------------ |
+| Attribute | Description |
+| --- | --- |
 | `ACCESS_TOKEN` | It is the [access token](https://www.mercadopago.com/mlm/account/credentials) of the Mercado Pago account to which the charges will be credited. |
 | `COLLECTOR_ID` | It is the user number of the Mercado Pago account, it is the last 9 digits of your `access_token`, after the middle script. |
 
@@ -198,14 +198,14 @@ Two test users must be created: one buyer and another collector. With the billin
 
 Consult the [test data](https://www.mercadopago.com.mx/developers/es/guides/online-payments/checkout-pro/test-integration): test users and test cards that can be used.
 
-| Test cases                                                   | Expected response                                            |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| The user scans a valid QR code before placing the order.     | The app does not display an order.                           |
-| The user scans a QR code with invalid parameters, meaning that it refers to a nonexistent account. | The app reports that an error has occurred.                  |
-| The user scans a valid code, once the order has been placed and the sales order has been created. | La app muestra la orden.                                     |
-| The user generates an approved payment.                      | The POS system receives the information of an approved payment. |
-| The user generates an rejected payment.                      | The POS system receives the information of an rejected payment. |
-| A return of a payment is made from the POS.                  | The return is impacted in the buyer's account.               |
+| Test cases | Expected response |
+| --- | --- |
+| The user scans a valid QR code before placing the order. | The app does not display an order. |
+| The user scans a QR code with invalid parameters, meaning that it refers to a nonexistent account. | The app reports that an error has occurred. |
+| The user scans a valid code, once the order has been placed and the sales order has been created. | La app muestra la orden. |
+| The user generates an approved payment. | The POS system receives the information of an approved payment. |
+| The user generates an rejected payment. | The POS system receives the information of an rejected payment. |
+| A return of a payment is made from the POS. | The return is impacted in the buyer's account. |
 
 ### Errors
 

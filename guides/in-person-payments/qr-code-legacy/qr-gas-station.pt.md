@@ -30,13 +30,13 @@
 
 Primeiro você deve se familiarizar com os seguintes conceitos, já que você os usará durante a integração.
 
-| Atributo                    | Descrição                                                  |
-| --------------------------- | ------------------------------------------------------------ |
-| `ACCESS_TOKEN`              | É o [token de acesso] (https://www.mercadopago.com/mlb/account/credentials) da conta do Mercado Pago para a qual as coleções serão creditadas. |
-| `COLLECTOR_ID`              | É o número de usuário da conta Mercado Pago, são os últimos 9 dígitos do seu `access_token`, após o hífen. |
-| `EXTERNAL_ID`               | É o identificador único do fornecedor. É um código alfanumérico definido pelo integrador, não pode conter espaços ou caracteres especiais e não faz distinção entre maiúsculas e minúsculas. |
-| `SPONSOR_ID`                | `COLLECTOR_ID` da conta do Mercado Pago do integrador. Você deve criar uma conta por marca (YPF, Shell, Axion, etc).|
-| `APIES`, `STORE`,`STORE_ID` | Identificador único da estação de serviço.              |
+| Atributo | Descrição |
+| --- | --- |
+| `ACCESS_TOKEN` | É o [token de acesso] (https://www.mercadopago.com/mlb/account/credentials) da conta do Mercado Pago para a qual as coleções serão creditadas. |
+| `COLLECTOR_ID` | É o número de usuário da conta Mercado Pago, são os últimos 9 dígitos do seu `access_token`, após o hífen. |
+| `EXTERNAL_ID` | É o identificador único do fornecedor. É um código alfanumérico definido pelo integrador, não pode conter espaços ou caracteres especiais e não faz distinção entre maiúsculas e minúsculas. |
+| `SPONSOR_ID` | `COLLECTOR_ID` da conta do Mercado Pago do integrador. Você deve criar uma conta por marca (YPF, Shell, Axion, etc).|
+| `APIES`, `STORE`,`STORE_ID` | Identificador único da estação de serviço. |
 
 ## Objetos
 
@@ -196,12 +196,12 @@ Em caso de erro, será retornado um código de status `HTTP 400 (Bad Request)`, 
 
 **Donde**
 
-| Type        | Descrição                                                  |
-| ----------- | ------------------------------------------------------------ |
-| in_process  | Existe um pedido em andamento, o valor a ser cobrado ainda não pode ser determinado.|
-| unavailable | Não há pedido em andamento ou pagamento pendente.               |
-| invalid     | Parâmetros adicionais (id da estação, posição, etc.) referem-se a um local desconhecido. |
-| timeout     | O servidor do seu sistema não pôde se comunicar com nenhum dos outros sistemas (fornecedor, POS, API do Mercado Pago) e foi anulado. |
+| Type | Descrição |
+| --- | --- |
+| in_process | Existe um pedido em andamento, o valor a ser cobrado ainda não pode ser determinado.|
+| unavailable | Não há pedido em andamento ou pagamento pendente. |
+| invalid | Parâmetros adicionais (id da estação, posição, etc.) referem-se a um local desconhecido. |
+| timeout | O servidor do seu sistema não pôde se comunicar com nenhum dos outros sistemas (fornecedor, POS, API do Mercado Pago) e foi anulado. |
 
 A `message` é opcional, corresponde a uma explicação de texto simples da causa do problema.
 
@@ -272,14 +272,14 @@ Verifique os [dados de teste](https://www.mercadopago[FAKER][URL][DOMAIN]/develo
 
 **Casos de teste**
 
-| Caso                                                         | Resultado esperado                                           |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Caso | Resultado esperado |
+| --- | --- |
 | O usuário escaneia um código válido antes de finalizar o pedido. | O aplicativo informa que você deve notificar o funcionário e esperar que o carregamento termine. |
-| O usuário escaneia um código válido durante um pedido.       | O aplicativo informa que uma cobrança está sendo feita e que pode ser paga assim que a entrega estiver concluída. |
+| O usuário escaneia um código válido durante um pedido. | O aplicativo informa que uma cobrança está sendo feita e que pode ser paga assim que a entrega estiver concluída. |
 | O usuário escaneia um código válido, mas a URL que possui o QR não responde. | O aplicativo informa que a estação de serviço não pode operar com os meios de pagamento. |
-| O usuário escaneia um código válido, mas a URL tem parâmetros inválidos | O aplicativo informa que algo não correu bem.                       |
-| O usuário escaneia um código válido, assim que o pedido é concluído. | O checkout é mostrado no celular do usuário pagador.    |
-| O usuário escaneia um código válido com o pedido concluído e efetua o pagamento. | O PDV recebe as informações de pagamento.                       |
+| O usuário escaneia um código válido, mas a URL tem parâmetros inválidos | O aplicativo informa que algo não correu bem. |
+| O usuário escaneia um código válido, assim que o pedido é concluído. | O checkout é mostrado no celular do usuário pagador. |
+| O usuário escaneia um código válido com o pedido concluído e efetua o pagamento. | O PDV recebe as informações de pagamento. |
 
 ### Dicionário de erros
 
