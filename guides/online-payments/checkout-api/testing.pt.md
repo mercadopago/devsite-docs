@@ -6,10 +6,10 @@ Utilize cartões e usuários de teste para verificar que seus pagamentos sejam c
 
 **Os usuários de teste te permitem testar sua integração** ao gerar fluxos de pagamento em uma cópia exata da sua integração.
 
-Tipos de usuários | Descrição
------------- | -------------
-Vendedor | É a conta de teste utilizada para **configurar a aplicação e credenciais para a cobrança**. |
-Comprador | É a conta de teste utilizada para **testar o processo de compra**. |
+| Tipos de usuários | Descrição |
+| --- | --- |
+| Vendedor | É a conta de teste utilizada para **configurar a aplicação e credenciais para a cobrança**. |
+| Comprador | É a conta de teste utilizada para **testar o processo de compra**. |
 
 <br>
 

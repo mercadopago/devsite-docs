@@ -6,10 +6,10 @@ Te explicamos cómo utilizar nuestras tarjetas y usuarios de prueba para verific
 
 **Los usuarios de prueba te permiten probar tu integración** al generar flujos de pagos en una copia exacta de tu integración.
 
-Tipos de usuarios | Descripción
------------- | -------------
-Vendedor | Es la cuenta de prueba que usas para **configurar la aplicación y credenciales para el cobro**. |
-Comprador | Es la cuenta de prueba que usas para **probar el proceso de compra**. |
+| Tipos de usuarios | Descripción |
+| --- | --- |
+| Vendedor | Es la cuenta de prueba que usas para **configurar la aplicación y credenciales para el cobro**. |
+| Comprador | Es la cuenta de prueba que usas para **probar el proceso de compra**. |
 
 <br>
 

@@ -6,10 +6,10 @@ We will explain how to use our test cards and users to check that your payments 
 
 **Test users allow you to test your integration** by generating payment flows in an exact copy of your integration.
 
-Types of users | Description
------------- | -------------
-Seller | It is the test account you use **to configure the application and credentials for collection**. |
-Buyer | It is the test account you use **to test the purchase process**. |
+| Types of users | Description |
+| --- | --- |
+| Seller | It is the test account you use **to configure the application and credentials for collection**. |
+| Buyer | It is the test account you use **to test the purchase process**. |
 
 <br>
 
