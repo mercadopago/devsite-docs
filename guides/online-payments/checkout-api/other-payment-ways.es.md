@@ -25,7 +25,7 @@ Tanto para el frontend como para el backend, recomendamos utilizar [nuestras lib
 Además de tarjetas, también existen otras opciones de pago que puedes ofrecer en tu sitio.
 
 | Tipo de medio de pago | Medio de pago |
-| --- | ---|
+| --- | --- |
 | `ticket` | Rapipago |
 | `ticket` | Pago Fácil |
 | `ticket` | Provincia NET Pagos |
@@ -457,7 +457,7 @@ Tanto para el frontend como para el backend, recomendamos utilizar [nuestras lib
 Además de tarjetas, también existen otras opciones de pago que puedes ofrecer en tu sitio.
 
 | Tipo de medio de pago | Medio de pago |
-| --- | ---|
+| --- | --- |
 | `ticket` | OXXO |
 | `atm` | Citibanamex |
 | `atm` | Santander |
@@ -886,7 +886,7 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago[
 Al finalizar, es importante que compartas con tus clientes la información de los distintos lugares en los que puede pagar.
 
 | Medio de pago | Tiendas disponibles
-| --- | ---|
+| --- | --- |
 | OXXO | OXXO
 | BBVA Bancomer | 7-Eleven |
 | BBVA Bancomer | K |
@@ -917,7 +917,7 @@ Tanto para el frontend como para el backend, recomendamos utilizar [nuestras lib
 Además de tarjetas, también existen otras opciones de pago que puedes ofrecer en tu sitio.
 
 | Tipo de medio de pago | Medio de pago |
-| --- | ---|
+| --- | --- |
 | `ticket` | Abitab |
 | `ticket` | Redpagos |
 
@@ -1304,7 +1304,7 @@ Tanto para el frontend como para el backend, recomendamos utilizar [nuestras lib
 Además de tarjetas, también existen otras opciones de pago que puedes ofrecer en tu sitio.
 
 | Tipo de medio de pago | Medio de pago |
-| --- | ---|
+| --- | --- |
 | `ticket` | Efecty |
 | `ticket` | Baloto |
 | `bank_transfer` | PSE |
@@ -1924,7 +1924,7 @@ Tanto para el frontend como para el backend, recomendamos utilizar [nuestras lib
 Además de tarjetas, también existen otras opciones de pago que puedes ofrecer en tu sitio.
 
 | Tipo de medio de pago | Medio de pago |
-| --- | ---|
+| --- | --- |
 | `ticket` | Sucursales Servipag |
 | `bank_transfer` | Redcompra Webpay |
 
@@ -2478,7 +2478,7 @@ Tanto para el frontend como para el backend, recomendamos utilizar [nuestras lib
 Además de tarjetas, también existen otras opciones de pago que puedes ofrecer en tu sitio.
 
 | Tipo de medio de pago | Medio de pago |
-| --- | ---|
+| --- | --- |
 | `atm` | PagoEfectivo |
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtén los medios de pago disponibles
@@ -2849,7 +2849,7 @@ Tanto para el frontend como para el backend, recomendamos utilizar [nuestras lib
 Además de tarjetas, también existen otras opciones de pago que puedes ofrecer en tu sitio.
 
 | Tipo de medio de pago | Medio de pago |
-| --- | ---|
+| --- | --- |
 | `ticket` | Boleto |
 | `ticket` | Pagamento em lotérica |
 
