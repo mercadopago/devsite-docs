@@ -2,18 +2,18 @@
 
 ## Requisitos para integrar
 
-Requisito                   | Descripción
-----------------------------| -------------------------------------------------------------------------
-Versión del Magento         | 2.x
-Ambiente                    | LAMP (Linux, Apache, MySQL, and PHP)<br/>LNMP stack
-Sistema Operativo           | Linux x86-64
-Memoria                     | Minimum 2GB of RAM
-Web Server                  | Apache 2.x<br/>Nginx 1.7.x
-Versión del PHP             | 5.6.x<br/>7.0.2<br/>7.0.6–7.0.x<br/>
-Versión del MySQL           | MySQL 5.6<br/>MariaDB y Percona son compatibles con Magento porque suportam las APIs del MySQL 5.6.
-Dependencias de Extensiones | bc-math (Magento Commerce only)<br/>curl<br/>gd, ImageMagick 6.3.7 (or later) or both<br/>intl<br/>bstring<br/>mcrypt<br/>hash<br/>openssl<br/>PDO/MySQL<br/>SimpleXML<br/>soap<br/>xml<br/>xsl<br/>zip<br/>
-PHP 7 only                  | json<br/>iconv
-SSL                         | Es un requisito que tenga un certificado SSL.<br/>Durante las pruebas en modo de Sandbox usted podrá ejecutar las pruebas en HTTP.
+| Requisito | Descripción |
+| --- | --- |
+| Versión del Magento | 2.x |
+| Ambiente | LAMP (Linux, Apache, MySQL, and PHP)<br/>LNMP stack |
+| Sistema Operativo | Linux x86-64 |
+| Memoria | Minimum 2GB of RAM |
+| Web Server | Apache 2.x<br/>Nginx 1.7.x |
+| Versión del PHP | 5.6.x<br/>7.0.2<br/>7.0.6–7.0.x<br/> |
+| Versión del MySQL | MySQL 5.6<br/>MariaDB y Percona son compatibles con Magento porque suportam las APIs del MySQL 5.6. |
+| Dependencias de Extensiones | bc-math (Magento Commerce only)<br/>curl<br/>gd, ImageMagick 6.3.7 (or later) or both<br/>intl<br/>bstring<br/>mcrypt<br/>hash<br/>openssl<br/>PDO/MySQL<br/>SimpleXML<br/>soap<br/>xml<br/>xsl<br/>zip<br/> |
+| PHP 7 only | json<br/>iconv |
+| SSL | Es un requisito que tenga un certificado SSL.<br/>Durante las pruebas en modo de Sandbox usted podrá ejecutar las pruebas en HTTP. |
 
 
 ## Instalación
