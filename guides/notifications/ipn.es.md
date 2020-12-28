@@ -47,11 +47,11 @@ Recuerda que esta comunicación es exclusivamente entre los servidores de Mercad
 
 Luego de esto, puedes obtener la información completa del recurso notificado accediendo a la API correspondiente en `https://api.mercadopago.com/`:
 
-Tipo               | URL                                                         | Documentación
------------------- | ----------------------------------------------------------- | --------------------
-payment            | /v1/payments/[ID] | [ver documentación](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get/)
-chargebacks    	   | /v1/chargebacks/[ID]| -
-merchant_orders    | /merchant\_orders/[ID]           | [ver documentación](https://www.mercadopago.com.ar/developers/es/reference/merchant_orders/_merchant_orders_id/get/)
+| Tipo | URL | Documentación |
+| --- | --- | --- |
+| payment | /v1/payments/[ID] | [ver documentación](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get) |
+| chargebacks | /v1/chargebacks/[ID] | - |
+| merchant_orders | /merchant\_orders/[ID] | [ver documentación](https://www.mercadopago.com.ar/developers/es/reference/merchant_orders/_merchant_orders_id/get) |
 
 Con esta información puedes realizar las actualizaciones necesarias en tu plataforma, por ejemplo registrar un pago acreditado o una orden cerrada. 
 
@@ -134,8 +134,8 @@ Más información en la [Referencia de API](https://www.mercadopago.com.ar/devel
 
 Se puede implementar la **búsqueda** por `external_reference` de dos formas:
 
-| Formas	|	Descripción		|
-| ----------- | ----------------- |
+| Formas | Descripción |
+| --- | --- |
 | **Manual** | El punto de venta debe incluir un botón para realizar la búsqueda. |
 | **Automática** | Pasado un tiempo prudencial sin haber recibido alguna notificación, se comienza una búsqueda de la orden cada un intervalo de, por ejemplo, 5 segundos. |
 
