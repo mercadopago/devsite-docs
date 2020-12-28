@@ -16,11 +16,11 @@ El módulo de Mercado Pago para ZenCart esta integrado con las siguientes funcio
 * [Checkout básico (Redirect, Iframe ou Modal)](https://www.mercadopago.com.ar/developers/es/solutions/payments/basic-checkout/receive-payments/)
 * Pagos con dos tarjetas
 
-## Versión Disponibles
+## Versión disponibles
 
-Versión del Plugin | Status | Versiones compatibles
--------------- | ------ | -------------------
-v1.0.1 | Stable (Current version) | ZenCart 1.5.x
+| Versión del Plugin | Status | Versiones compatibles |
+| --- | --- | --- |
+| v1.0.1 | Stable (Current version) | ZenCart 1.5.x |
 
 ## Requisitos:
 
