@@ -6,12 +6,12 @@ After [creating your payment link](https://www.mercadopago[FAKER][URL][DOMAIN]/d
 
 Define the method that best suits your business:
 
-**Method** | **Description**
------------------ | -----------------
-WhatsApp | Choose from your contact list and send the payment link by private message.
-Facebook or Twitter | Create a new post on your favorite social network and share it with all your followers.
-E-mail | Use your personal email address to send the payment link to anyone you want.
-More options (_from your cell phone browser_) | If you created your link on your phone, it can be shared through all of your installed apps.
+| **Method** | **Description** |
+| --- | --- |
+| WhatsApp | Choose from your contact list and send the payment link by private message. |
+| Facebook or Twitter | Create a new post on your favorite social network and share it with all your followers. |
+| E-mail | Use your personal email address to send the payment link to anyone you want. |
+| More options (_from your cell phone browser_) | If you created your link on your phone, it can be shared through all of your installed apps. |
 
 ----[mla, mco, mlm, mlc, mlu, mpe]----
 ![Recibir pagos por redes sociales](/images/button/byl_compartir.png)
