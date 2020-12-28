@@ -84,12 +84,12 @@ This communication is exclusively between the servers of Mercado Pago and your s
 After this, you must obtain the complete information of the notified resource by accessing the corresponding endpoint of the API:
 
 
-Type         | URL                                                | Documentation
------------- | -------------------------------------------------- | --------------------
-payment      | https://api.mercadopago.com/v1/payments/[ID]     | [see documentation](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_id/get/)
-plan         | https://api.mercadopago.com/v1/plans/[ID]         | -
-subscription | https://api.mercadopago.com/v1/subscriptions/[ID] | -
-invoice      | https://api.mercadopago.com/v1/invoices/[ID]      | -
+| Type | URL | Documentation |
+| --- | --- | --- |
+| payment | https://api.mercadopago.com/v1/payments/[ID] | [see documentation](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_id/get/) |
+| plan | https://api.mercadopago.com/v1/plans/[ID] | - |
+| subscription | https://api.mercadopago.com/v1/subscriptions/[ID] | - |
+| invoice | https://api.mercadopago.com/v1/invoices/[ID] | - |
 
 With this information you can make the necessary updates on your platform, such as registering an approved payment.
 

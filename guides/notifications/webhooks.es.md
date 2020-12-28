@@ -81,12 +81,12 @@ Es recomendable que respondas a la notificación antes de ejecutar lógica de ne
 
 Luego de esto, tienes que obtener la información completa del recurso notificado accediendo al endpoint correspondiente de la API:
 
-Tipo         | URL                                                | Documentación
------------- | -------------------------------------------------- | --------------------
-payment      | https://api.mercadopago.com/v1/payments/[ID]      | [Ver documentación](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get/)
-plan         | https://api.mercadopago.com/v1/plans/[ID]         | -
-subscription | https://api.mercadopago.com/v1/subscriptions/[ID] | -
-invoice      | https://api.mercadopago.com/v1/invoices/[ID]      | -
+| Tipo | URL | Documentación |
+| --- | --- | --- |
+| payment | https://api.mercadopago.com/v1/payments/[ID] | [Ver documentación](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get/) |
+| plan | https://api.mercadopago.com/v1/plans/[ID] | - |
+| subscription | https://api.mercadopago.com/v1/subscriptions/[ID] | - |
+| invoice | https://api.mercadopago.com/v1/invoices/[ID] | - |
 
 
 Con esta información puedes realizar las actualizaciones necesarias en tu plataforma, por ejemplo registrar un pago acreditado.
