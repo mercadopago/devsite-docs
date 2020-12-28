@@ -19,11 +19,10 @@ The module of Mercado Pago to OsCommerce is integrated with the feature and paym
 
 ## Available versions
 
-
-Plugin Version | Status | Compatible Versions
--------------- | ------ | -------------------
-v2.2 | Deprecated (Old version) | osCommerce 2.2
-v2.3 | Stable (Current version) | osCommerce 2.3
+| Plugin Version | Status | Compatible Versions |
+| --- | --- | --- |
+| v2.2 | Deprecated (Old version) | osCommerce 2.2 |
+| v2.3 | Stable (Current version) | osCommerce 2.3 |
 
 
 ## Requirements:
