@@ -4,10 +4,10 @@
 
 **Test users allow you to test your Checkout Pro** by generating payment flows in an exact copy of your integration.
 
-User types | Description
------------- | -------------
-Seller | It is the test account you use to **configure the application and credentials for collection.**
-Buyer | It is the test account you use to **test the purchase process.**<br/>There are two ways to make the payment:<br/><br/> **As a guest user:** you only need to complete the email address.<br/>**As a registered user:** you access the Mercado Pago account with the username and password. In case money is available in the account or there are saved cards, they will be enabled as payment methods.
+| User types | Description |
+| --- | --- |
+| Seller | It is the test account you use to **configure the application and credentials for collection**. |
+| Buyer | It is the test account you use to **test the purchase process.**<br/>There are two ways to make the payment:<br/><br/> **As a guest user:** you only need to complete the email address.<br/>**As a registered user:** you access the Mercado Pago account with the username and password. In case money is available in the account or there are saved cards, they will be enabled as payment methods. |
 
 
 ## How to create users

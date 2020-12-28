@@ -165,13 +165,13 @@ Através da preferência, você pode [obter informações de negócio](https://w
 Por padrão, todos os meios de pagamento são oferecidos. Se você quiser excluir algum deles, pode fazer isso pela preferência de pagamento.
 Você também pode definir um meio de pagamento para que apareça por padrão ou definir o número máximo de parcelas a oferecer.
 
-Atributo | Descrição
------------- | -------------
-_`payment_methods`_ | Classe que descreve os atributos e métodos de meios de pagamento.
-_`excluded_payment_methods`_ | Método que exclui por <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods/#bookmark_meios_de_pagamento_por_país" target="_blank">meios de pagamento</a> específicos: Visa, Mastercard o American Express, entre outros.
-_`excluded_payment_types`_ | Método que exclui por tipo de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods/#bookmark_meios_de_pagamento_por_país" target="_blank">meio de pagamento</a>: cartão de crédito ou ticket (boleto ou pagamento em lotérica).
-_`installments`_ | Método que define o número máximo de parcelas a oferecer
-_`purpose`_ | Quando for indicado o valor "wallet_purchase", o Checkout aceitará pagamentos exclusivamente de usuários cadastrados no Mercado Pago, com cartão e saldo em conta.
+| Atributo | Descrição |
+| --- | --- |
+| `payment_methods` | Classe que descreve os atributos e métodos de meios de pagamento. |
+| `excluded_payment_methods` | Método que exclui por <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods/#bookmark_meios_de_pagamento_por_país" target="_blank">meios de pagamento</a> específicos: Visa, Mastercard o American Express, entre outros. |
+| `excluded_payment_types` | Método que exclui por tipo de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods/#bookmark_meios_de_pagamento_por_país" target="_blank">meio de pagamento</a>: cartão de crédito ou ticket (boleto ou pagamento em lotérica). |
+| `installments` | Método que define o número máximo de parcelas a oferecer. |
+| `purpose` | Quando for indicado o valor "wallet_purchase", o Checkout aceitará pagamentos exclusivamente de usuários cadastrados no Mercado Pago, com cartão e saldo em conta. |
 
 [[[
 ```php
@@ -818,11 +818,11 @@ Desta forma, quando um pagamento é aprovado por meio do seu Checkout Pro, será
 
 Nossos [Partners](https://partners.mercadopago.com/) poderão obter métricas de negócio. Utilize `headers` na sua preferência de pagamento agregando o código de identificação para o caso que corresponda. Não é obrigatório completar os três campos mencionados.
 
-Header | Tipo de código | Identificadores
------- | ---------------| ---------
-`x-integrator-id` | Integrador | Para programadores ou agências que realizam a integração.
-`x-platform-id` | Plataforma | Para as plataformas ou módulos que oferecem Mecado Pago em suas soluções.
-`x-corporation-id` | Corporações | Para contas associadas a uma conta vendedor ou grupo econômico.
+| Header | Tipo de código | Identificadores |
+| --- | --- | --- |
+| `x-integrator-id` | Integrador | Para programadores ou agências que realizam a integração. |
+| `x-platform-id` | Plataforma | Para as plataformas ou módulos que oferecem Mecado Pago em suas soluções. |
+| `x-corporation-id` | Corporações | Para contas associadas a uma conta vendedor ou grupo econômico. |
 
 > Se você precisa do seu `integrator_id` ou `platform_id`, [solicite seu código já](https://docs.google.com/forms/d/19gEyBhtdFuw_W7ycp464bwcmzYKVA-yWGyRzZfjt6vk/edit). 
 

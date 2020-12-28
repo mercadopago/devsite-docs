@@ -6,10 +6,10 @@
 
 **Os usuários de teste permitem que você faça testes no seu Checkout Pro** ao gerar fluxos de pagamento em uma cópia fiel da sua integração.
 
-Tipos de usuarios | Descrição
------------- | -------------
-Vendedor | É a conta de testes que você usa para **configurar a aplicação e credenciais para a cobrança.**
-Comprador | É a conta de testes que você usa para **testar o processo de compra.**<br/>Existem duas formas de fazer o pagamento:<br/><br/> **Como usuário convidado:** basta preencher o endereço de e-mail.<br/>**Como usuário cadastrado:** acessa a conta do Mercado Pago com o usuário e senha. Caso tenha saldo disponível na conta ou cartões salvos, estarão habilitados como meios de pagamento.
+| Tipos de usuarios | Descrição |
+| --- | --- |
+| Vendedor | É a conta de testes que você usa para **configurar a aplicação e credenciais para a cobrança**. |
+| Comprador | É a conta de testes que você usa para **testar o processo de compra.**<br/>Existem duas formas de fazer o pagamento:<br/><br/> **Como usuário convidado:** basta preencher o endereço de e-mail.<br/>**Como usuário cadastrado:** acessa a conta do Mercado Pago com o usuário e senha. Caso tenha saldo disponível na conta ou cartões salvos, estarão habilitados como meios de pagamento. |
 
 
 
