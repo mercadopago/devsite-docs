@@ -14,10 +14,10 @@ You should check if:
 
 **Test users allow you to test your integration** by generating payment flows in an exact copy of your integration.
 
-User types | Description
------------- | -------------
-Seller | It is the test account you use to **configure the application and credentials for collection.**
-Buyer | It is the test account you use to **test the purchase process.**<br/>
+| User types | Description |
+| --- | --- |
+| Seller | It is the test account you use to **configure the application and credentials for collection**. |
+| Buyer | It is the test account you use to **test the purchase process**.<br/> |
 
 ## How to create users
 To perform the tests **it is necessary that you have at least two users:** a buyer and a seller.

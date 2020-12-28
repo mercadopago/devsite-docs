@@ -14,10 +14,10 @@ Debes verificar que:
 
 **Los usuarios de prueba te permiten probar tu integración** al generar flujos de pagos en una copia exacta de tu integración.
 
-Tipos de usuarios | Descripción
------------- | -------------
-Vendedor | Es la cuenta de prueba que usas para **configurar la aplicación y credenciales para el cobro.**
-Comprador | Es la cuenta de prueba que usas para **probar el proceso de compra.**<br/>
+| Tipos de usuarios | Descripción |
+| --- | --- |
+| Vendedor | Es la cuenta de prueba que usas para **configurar la aplicación y credenciales para el cobro**. |
+| Comprador | Es la cuenta de prueba que usas para **probar el proceso de compra**.<br/> |
 
 ## Cómo crear usuarios
 Para realizar las pruebas **es necesario que tengas como mínimo dos usuarios**: un comprador y un vendedor.
