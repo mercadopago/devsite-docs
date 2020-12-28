@@ -40,26 +40,26 @@ Te recomendamos que empieces a planificar la inclusión del protocolo TLS 1.2 ta
 
 Consulte las directrices de compatibilidad a continuación:
 
-Plataforma | Notas de Compatibilidad
----------- | -----------------------
-Java (Oracle) | Compatible con la versión más reciente, sin que el sistema operativo sea relevante.
-Java 8 (1.8) y versiones posteriores | Compatible con el cifrado TLS 1.2 o versiones posteriores de forma predeterminada.
-Java 7 (1.7) | Active TLS 1.2 utilizando la propiedad del sistema Java https.protocols para HttpsURLConnection. Para activar  TLS 1.2 en conexiones sin HttpsURLConnection, establezca los protocolos activados en las instancias creadas de SSLSocket y SSLEngine dentro del código fuente de la aplicación. Cambiar a IBM Java puede ser una solución efectiva si la actualización a una versión de Oracle Java más reciente no es posible.
-Java 8 | Compatible con el cifrado TLS 1.2 o versiones posteriores de forma predeterminada. Es posible que tenga que establecer com.ibm.jsse2.overrideDefaultTLS=true si su aplicación o una biblioteca que la llame utiliza SSLContext.getinstance("TLS").
-Java 7 y versiones posteriores, la actualización de servicio 1 de Java 6.0.1 (J9 VM2.6) y versiones posteriores y la actualización de servicio 10 de Java 6 y versiones posteriores | Active TLS 1.2 empleando la propiedad del sistema de Java https.protocols para HttpsURLConnection y la propiedad del sistema de Java com.ibm.jsse2.overrideDefaultProtocol para conexiones SSLSocket y SSLEngine, según recomienda la documentación de IBM. Es posible que también tenga que establecer com.ibm.jsse2.overrideDefaultTLS=true.
-.NET  | Compatible con la versión más reciente cuando se ejecuta en un sistema operativo que admita TLS 1.2
-.NET 4.6 y versiones posteriores | Compatible con el cifrado TLS 1.2 o versiones posteriores de forma predeterminada.
-.NET 4.5 a 4.5.2 | .NET 4.5, 4.5.1 y 4.5.2 no activan TLS 1.2 de forma predeterminada. Existen dos opciones para activarlas, como se describe a continuación.
-.NET 4.0 | .NET 4.0 no activa TLS 1.2 de forma predeterminada. Para activar TLS 1.2 de forma predeterminada, es posible instalar .NET Framework 4.5 o una versión posterior, y establecer el valor DWORD de SchUseStrongCrypto en 1 en las siguientes dos entradas del registro del sistema, creándolas si no existen: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319" y "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319". No obstante, esas claves del registro del sistema pueden activar TLS 1.2 de forma predeterminada en todas las aplicaciones .NET 4.0, 4.5, 4.5.1 y 4.5.2 instaladas en ese sistema. Recomendamos probar este cambio antes de implementarlo en sus servidores de producción. Esto también está disponible como un archivo de importación para el registro del sistema.Sin embargo, estos valores del registro del sistema no afectarán a las aplicaciones .NET que establecen el valor System.Net.ServicePointManager.SecurityProtocol.
-.NET 3.5 y versiones anteriores | No son compatibles con el cifrado TLS 1.2 o versiones posteriores
-Python | Compatible con la versión más reciente cuando se ejecuta en un sistema operativo que admita TLS 1.2
-Python 2.7.9 y versiones posteriores | Compatible con el cifrado TLS 1.2 o versiones posteriores de forma predeterminada.
-Python 2.7.8 y versiones anteriores | No son compatibles con el cifrado TLS 1.2 o versiones posteriores
-Ruby | Es compatible con la versión más reciente y estable cuando se vincula con OpenSSL 1.0.1 o versiones posteriores.
-Ruby 2.0.0 | TLS 1.2 se activa de forma predeterminada cuando se utiliza con OpenSSL 1.0.1 o versiones posteriores. El uso de los símbolos :TLSv1_2 con ssl_version de SSLContext ayuda a garantizar que se desactiva TLS 1.0 o versiones anteriores.
-Ruby 1.9.3 y versiones anteriores | El símbolo :TLSv1_2 no existe en la versión 1.9.3 y anteriores, pero es posible parchear Ruby para agregar ese símbolo y compilar Ruby con OpenSSL 1.0.1 o versiones posteriores.
-Android 4.x | Es necesario forzar el uso de TLS 1.2 para ello usar [este snippet de código](https://gist.github.com/zehemz/fdf777a64a173a58beb6f9132eb7655c).
-Android 5.x | TLS 1.2 Es soportado de forma predeterminada.
+| Plataforma | Notas de Compatibilidad |
+| --- | --- |
+| Java (Oracle) | Compatible con la versión más reciente, sin que el sistema operativo sea relevante. |
+| Java 8 (1.8) y versiones posteriores | Compatible con el cifrado TLS 1.2 o versiones posteriores de forma predeterminada. |
+| Java 7 (1.7) | Active TLS 1.2 utilizando la propiedad del sistema Java https.protocols para HttpsURLConnection. Para activar  TLS 1.2 en conexiones sin HttpsURLConnection, establezca los protocolos activados en las instancias creadas de SSLSocket y SSLEngine dentro del código fuente de la aplicación. Cambiar a IBM Java puede ser una solución efectiva si la actualización a una versión de Oracle Java más reciente no es posible. |
+| Java 8 | Compatible con el cifrado TLS 1.2 o versiones posteriores de forma predeterminada. Es posible que tenga que establecer com.ibm.jsse2.overrideDefaultTLS=true si su aplicación o una biblioteca que la llame utiliza SSLContext.getinstance("TLS"). |
+| Java 7 y versiones posteriores, la actualización de servicio 1 de Java 6.0.1 (J9 VM2.6) y versiones posteriores y la actualización de servicio 10 de Java 6 y versiones posteriores | Active TLS 1.2 empleando la propiedad del sistema de Java https.protocols para HttpsURLConnection y la propiedad del sistema de Java com.ibm.jsse2.overrideDefaultProtocol para conexiones SSLSocket y SSLEngine, según recomienda la documentación de IBM. Es posible que también tenga que establecer com.ibm.jsse2.overrideDefaultTLS=true. |
+| .NET | Compatible con la versión más reciente cuando se ejecuta en un sistema operativo que admita TLS 1.2 |
+| .NET 4.6 y versiones posteriores | Compatible con el cifrado TLS 1.2 o versiones posteriores de forma predeterminada. |
+| .NET 4.5 a 4.5.2 | .NET 4.5, 4.5.1 y 4.5.2 no activan TLS 1.2 de forma predeterminada. Existen dos opciones para activarlas, como se describe a continuación. |
+| .NET 4.0 | .NET 4.0 no activa TLS 1.2 de forma predeterminada. Para activar TLS 1.2 de forma predeterminada, es posible instalar .NET Framework 4.5 o una versión posterior, y establecer el valor DWORD de SchUseStrongCrypto en 1 en las siguientes dos entradas del registro del sistema, creándolas si no existen: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319" y "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319". No obstante, esas claves del registro del sistema pueden activar TLS 1.2 de forma predeterminada en todas las aplicaciones .NET 4.0, 4.5, 4.5.1 y 4.5.2 instaladas en ese sistema. Recomendamos probar este cambio antes de implementarlo en sus servidores de producción. Esto también está disponible como un archivo de importación para el registro del sistema.Sin embargo, estos valores del registro del sistema no afectarán a las aplicaciones .NET que establecen el valor System.Net.ServicePointManager.SecurityProtocol. |
+| .NET 3.5 y versiones anteriores | No son compatibles con el cifrado TLS 1.2 o versiones posteriores |
+| Python | Compatible con la versión más reciente cuando se ejecuta en un sistema operativo que admita TLS 1.2 |
+| Python 2.7.9 y versiones posteriores | Compatible con el cifrado TLS 1.2 o versiones posteriores de forma predeterminada. |
+| Python 2.7.8 y versiones anteriores | No son compatibles con el cifrado TLS 1.2 o versiones posteriores |
+| Ruby | Es compatible con la versión más reciente y estable cuando se vincula con OpenSSL 1.0.1 o versiones posteriores. |
+| Ruby 2.0.0 | TLS 1.2 se activa de forma predeterminada cuando se utiliza con OpenSSL 1.0.1 o versiones posteriores. El uso de los símbolos :TLSv1_2 con ssl_version de SSLContext ayuda a garantizar que se desactiva TLS 1.0 o versiones anteriores. |
+| Ruby 1.9.3 y versiones anteriores | El símbolo :TLSv1_2 no existe en la versión 1.9.3 y anteriores, pero es posible parchear Ruby para agregar ese símbolo y compilar Ruby con OpenSSL 1.0.1 o versiones posteriores. |
+| Android 4.x | Es necesario forzar el uso de TLS 1.2 para ello usar [este snippet de código](https://gist.github.com/zehemz/fdf777a64a173a58beb6f9132eb7655c). |
+| Android 5.x | TLS 1.2 Es soportado de forma predeterminada. |
 
 En caso que requieras hacer adaptaciones, **es importante que recuerdes hacer este cambio en tiempo y forma, ya que de lo contrario es muy probable que tus conexiones con Mercado Pago comiencen a fallar.**
 
