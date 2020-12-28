@@ -56,16 +56,16 @@ To create the plan, make the following call to our API with the data you need:
 
 #### Attributes
 
-Attribute |	Definition
---- | ---
-`reason` (required) | It is the description that the subscriber will see when making the subscription and the detail that will be seen in the card statement. |
-`auto_recurring.frequency` (required) | Indicates the length of time  or cycle based on the type of frequency. |
-`auto_recurring.frequency_type` (required) | Indicates the type of frequency. It can be by month (months) or day (days). <br><br> Along with the frequency, they define the installment cycle that a subscription will have. <br><br>For example, if every fifteen days you need to generate an instalment to be charged it would look like this: `auto_recurring.frequency`: 15 y `auto_recurring.frequency_type`: days |
-`auto_recurring.transaction_amount` | If we indicate the amount, it is fixed. If this field is blank, it is understood as a variable amount. A maximum of two decimals separated by a period is allowed. |
-`auto_recurring.currency_id` (required) | Identifies the currency that corresponds to the country. |
-`auto_recurring.repetitions` | Indicates if the subscription will have a limit. If not specified, there is no limit. This limit is related to `auto_recurring.frequency` y `auto_recurring.frequency_type`. |
-`auto_recurring.free_trial.frequency` | Defines an initial test period and delays the first collection. Indicates the length of time that the service will not be charged, for based on the type of frequency. It must be consistent with `auto_recurring.frequency`. |
-`auto_recurring.free_trial.frequency_type` | Indicates the number of installments that will not be charged for the service. It must be consistent with `auto_recurring.frequency_type`. |
+| Attribute |	Definition |
+| --- | --- |
+| `reason` (required) | It is the description that the subscriber will see when making the subscription and the detail that will be seen in the card statement. |
+| `auto_recurring.frequency` (required) | Indicates the length of time or cycle based on the type of frequency. |
+| `auto_recurring.frequency_type` (required) | Indicates the type of frequency. It can be by month (months) or day (days). <br><br> Along with the frequency, they define the installment cycle that a subscription will have. <br><br>For example, if every fifteen days you need to generate an instalment to be charged it would look like this: `auto_recurring.frequency`: 15 y `auto_recurring.frequency_type`: days |
+| `auto_recurring.transaction_amount` | If we indicate the amount, it is fixed. If this field is blank, it is understood as a variable amount. A maximum of two decimals separated by a period is allowed. |
+| `auto_recurring.currency_id` (required) | Identifies the currency that corresponds to the country. |
+| `auto_recurring.repetitions` | Indicates if the subscription will have a limit. If not specified, there is no limit. This limit is related to `auto_recurring.frequency` y `auto_recurring.frequency_type`. |
+| `auto_recurring.free_trial.frequency` | Defines an initial test period and delays the first collection. Indicates the length of time that the service will not be charged, for based on the type of frequency. It must be consistent with `auto_recurring.frequency`. |
+| `auto_recurring.free_trial.frequency_type` | Indicates the number of installments that will not be charged for the service. It must be consistent with `auto_recurring.frequency_type`. |
 
 #### Response
 `HTTP Status 200 OK`
@@ -118,11 +118,11 @@ Once you have generated your plan and obtained your `preapproval_plan_id`, creat
 
 #### Attributes
 
-Attribute |	Definition
---- | ---
-`preapproval_plan_id` (required) | Refers to the previously generated plan.|
-`card_token_id` (required) | The information on the card will be converted into a token to send the data securely. |
-`payer_email` (required) | Payer's email address. |
+| Attribute |	Definition |
+| --- | --- |
+| `preapproval_plan_id` (required) | Refers to the previously generated plan. |
+| `card_token_id` (required) | The information on the card will be converted into a token to send the data securely. |
+| `payer_email` (required) | Payer's email address. |
 
 > WARNING
 > 
@@ -288,20 +288,20 @@ In order to subscribe, the card data must be uploaded with our form. Only the li
 
 Attributes
 
-Attribute |	Definition
---- | ---
-`reason` | It is the description that the subscriber will see when making the subscription and the detail that will be seen in the card statement. |
-`status` | Subscription status. It can be `pending` or `authorized`. |
-`auto_recurring.frequency` | Indicates the length of time or cycle based on the type of frequency. |
-`auto_recurring.frequency_type` | Indicates the type of frequency. It can be by month (months) or day (days). Along with the frequency, they define the installment cycle that a subscription will have.<br><br> For example, if every fifteen days you need to generate an instalment to be collected it would look as follows: `auto_recurring.frequency`: 15 y  `auto_recurring.frequency_type`: days |
-`auto_recurring.transaction_amount` | Amount applicable to the subscription. |
-`auto_recurring.currency_id` | Identifies the currency that corresponds to the country. |
-`auto_recurring.end_date` | Indicates if the subscription will have a limit. If not specified, there is no limit. |
-`auto_recurring.free_trial.frequency` | Indicates the length of time that the service will not be charged. It must be consistent with `auto_recurring.frequency`. |
-`auto_recurring.free_trial.frequency_type` | Indicates the amount of installments that will not be charged for the service. It must be consistent with `auto_recurring.frequency_type`. |
-`collector_id` | Seller's identifier. |
-`payer_email` | Payer's email address. |
-`card_token_id` | If the subscription was already authorized, the information on the card will be converted into a token to send the data securely. |
+| Attribute |	Definition |
+| --- | --- |
+| `reason` | It is the description that the subscriber will see when making the subscription and the detail that will be seen in the card statement. |
+| `status` | Subscription status. It can be `pending` or `authorized`. |
+| `auto_recurring.frequency` | Indicates the length of time or cycle based on the type of frequency. |
+| `auto_recurring.frequency_type` | Indicates the type of frequency. It can be by month (months) or day (days). Along with the frequency, they define the installment cycle that a subscription will have.<br><br> For example, if every fifteen days you need to generate an instalment to be collected it would look as follows: `auto_recurring.frequency`: 15 y `auto_recurring.frequency_type`: days |
+| `auto_recurring.transaction_amount` | Amount applicable to the subscription. |
+| `auto_recurring.currency_id` | Identifies the currency that corresponds to the country. |
+| `auto_recurring.end_date` | Indicates if the subscription will have a limit. If not specified, there is no limit. |
+| `auto_recurring.free_trial.frequency` | Indicates the length of time that the service will not be charged. It must be consistent with `auto_recurring.frequency`. |
+| `auto_recurring.free_trial.frequency_type` | Indicates the amount of installments that will not be charged for the service. It must be consistent with `auto_recurring.frequency_type`. |
+| `collector_id` | Seller's identifier. |
+| `payer_email` | Payer's email address. |
+| `card_token_id` | If the subscription was already authorized, the information on the card will be converted into a token to send the data securely. |
 
 
 ------------
