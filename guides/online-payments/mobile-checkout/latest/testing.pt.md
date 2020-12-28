@@ -24,10 +24,10 @@ Você deve verificar se:
 
 **Os usuários de teste permitem que você faça testes no sua integração** ao gerar fluxos de pagamento em uma cópia fiel da sua integração.
 
-Tipos de usuarios | Descrição
------------- | -------------
-Vendedor | É a conta de testes que você usa para **configurar a aplicação e credenciais para a cobrança.**
-Comprador | É a conta de testes que você usa para **testar o processo de compra.**<br/>
+| Tipos de usuarios | Descrição |
+| --- | --- |
+| Vendedor | É a conta de testes que você usa para **configurar a aplicação e credenciais para a cobrança**. |
+| Comprador | É a conta de testes que você usa para **testar o processo de compra**.<br/> |
 
 ## Como criar usuários
 Para fazer os testes **é necessário que você tenha pelo menos dois usuários:** um comprador e um vendedor.
