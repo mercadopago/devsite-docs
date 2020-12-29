@@ -258,10 +258,10 @@ paymentmethods.Installments = 12;
 
 Você pode modificar o valor do imposto para a Dirección de Impuestos y Aduanas Nacionales (DIAN) que é aplicado de acordo com o produto ou serviço que você oferece. Se o valor não for diferenciado, será aplicado 19% como padrão.
 
- Atributo | Descrição
----------| -----------
-_`type`_ | Identificador do imposto. Permitido somente os valores IVA e INC.
-_`value`_ | Valor do imposto. Permitido o máximo de duas casas decimais. Para itens isentos de imposto,deve ser informado zero.
+| Atributo | Descrição |
+| --- | --- |
+| `type` | Identificador do imposto. Permitido somente os valores IVA e INC. |
+| `value` | Valor do imposto. Permitido o máximo de duas casas decimais. Para itens isentos de imposto,deve ser informado zero. |
 
  ```json
 ===
