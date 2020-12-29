@@ -23,12 +23,12 @@ Después del 12 de diciembre del 2019, la versión 0 dejara de tener soporte.
 
 El apagado afecta a los siguientes recursos:
 
-| Uso                        | Método | URI del Recurso deprecado                |
-|----------------------------|--------|------------------------------------------|
-| Pago                       | `POST` | /checkout/custom/create_payment          |
-| Medio de Pagos             | `GET`  | /checkout/custom/payment_methods         |
-| Búsqueda de Medios de Pagos| `GET`  | /checkout/custom/payment_methods/search  |
-| Emisores                   | `GET`  | /checkout/custom/card_issuers            |
+| Uso | Método | URI del Recurso deprecado |
+| --- | --- | --- |
+| Pago | `POST` | /checkout/custom/create_payment |
+| Medio de Pagos | `GET` | /checkout/custom/payment_methods |
+| Búsqueda de Medios de Pagos| `GET` | /checkout/custom/payment_methods/search |
+| Emisores | `GET` | /checkout/custom/card_issuers |
 
 En [este artículo](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-api/introduction) vas a encontrar los recursos equivalentes.
 
@@ -78,12 +78,12 @@ Queremos darte la mejor experiencia, siempre. Por eso, te contamos cuáles son l
 ------------
 
 
-| Módulo                  | Versiones                                                                                   |
-|-------------------------|---------------------------------------------------------------------------------------------|
-| WooCommerce             | WordPress 3.1.x - 4.9.x, WooCommerce 2.6.x - 3.4.x                                          | 
-| PrestaShop              | Prestashop 1.6.x - 1.7.x                                                                    |
-| Magento                 | Community Edition 1.8.x - 1.9.x, Enterprise Edition 1.11.x - 1.14.x, Magento 2.0.0 - 2.3.x  | 
-| Shopify                 | -                                                                                           |
+| Módulo | Versiones |
+| --- | --- |
+| WooCommerce | WordPress 3.1.x - 4.9.x, WooCommerce 2.6.x - 3.4.x |
+| PrestaShop | Prestashop 1.6.x - 1.7.x |
+| Magento | Community Edition 1.8.x - 1.9.x, Enterprise Edition 1.11.x - 1.14.x, Magento 2.0.0 - 2.3.x |
+| Shopify | - |
 
 [Ver módulos](https://www.mercadopago.com.ar/developers/es/guides/plugins).
 
@@ -125,11 +125,11 @@ Para seguir usando Mercado Pago sin problemas, es necesario que lo hagas desde l
 
 ------------
 
-| Navegador               | Versión            |
-|-------------------------|--------------------|
-| Internet Explorer       | 9 o posterior      | 
-| Chrome                  | 6 o posterior      |
-| Android Browser         | 2.3.3 o posterior  | 
+| Navegador | Versión |
+| --- | --- |
+| Internet Explorer | 9 o posterior |
+| Chrome | 6 o posterior |
+| Android Browser | 2.3.3 o posterior |
 
 ----[mlb, mlm, mlc, mco, mpe]----
 > Ten en cuenta que no vas a poder ingresar a ningún sitio de Mercado Pago con los navegadores no compatibles.
