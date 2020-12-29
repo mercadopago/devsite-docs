@@ -19,7 +19,7 @@ We offer two checkout methods that make it easy to securely accept payments from
 | Feature | Basic Checkout | Customized Checkout |
 | --- | --- | --- |
 | Credit card Payments | ✔ | ✔ |
-| Other payment methods              | ✔                 | ✔                       |
+| Other payment methods | ✔ | ✔ |
 | Mercado Pago's interface           | ✔                 |  |
 | Installments calculator            | ✔                 | ✔                       |
 | IPN and webhooks                   | ✔                 | ✔                       |
