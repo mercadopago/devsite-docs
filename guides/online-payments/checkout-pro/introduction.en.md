@@ -43,7 +43,7 @@ Checkout Pro is an integration that allows you to **charge your customers throug
 ## Checkout Pro vs. other Mercado Pago tools
 
 ----[mla, mlb]----
-                                   | Checkout Pro | Web Tokenize Checkout |      API |
+| | Checkout Pro | Web Tokenize Checkout |      API |
 | :---  | :---: | :---: | :---: |
 | Integration difficulty		  	      |     Low    |       Medium         |     High |
 | UI/UX Design 							  	       |      ✔      |         ✔           |
