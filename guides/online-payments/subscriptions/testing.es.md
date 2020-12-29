@@ -81,7 +81,7 @@ American Express |  3711 803032 57522   |   1234| 11/25
 >
 > Actualiza, modifica o cancela tus suscripciones.
 >
-> [Integración avanzada](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/advanced-integration/)
+> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/advanced-integration/)
 
 > RIGHT_BUTTON
 >
@@ -89,4 +89,4 @@ American Express |  3711 803032 57522   |   1234| 11/25
 >
 > Por si tienes inconvenientes, te explicamos la lógica de reintentos de cobros. 
 >
-> [Reintentos de cobros](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/payment-retry/)
+> [Reintentos de cobros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/payment-retry/)

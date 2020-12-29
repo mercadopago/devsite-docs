@@ -122,7 +122,7 @@ With the subscription `application_id` you want to update, make the following ca
 >
 > Check that your created subscriptions are properly configured with the test users.  
 >
-> [Tests](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/testing/)
+> [Tests](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/testing/)
 
 
 > RIGHT_BUTTON
@@ -131,4 +131,4 @@ With the subscription `application_id` you want to update, make the following ca
 >
 > In case you have problems, we explain the logic of reattempting collections.
 >
-> [Logic of collection retries](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/payment-retry/)
+> [Logic of collection retries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/payment-retry/)

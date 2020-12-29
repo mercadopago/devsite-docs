@@ -30,7 +30,7 @@ Puedes ver el estado del pago en la respuesta de la API como `rejected` y el mot
 }
 ```
 
-Puedes encontrar más información sobre el detalle del pago en la [actividad de la cuenta de Mercado Pago](http://mercadopago.com.ar/activities) en la que se reciben los cobros.
+Puedes encontrar más información sobre el detalle del pago en la [actividad de la cuenta de Mercado Pago](https://www.mercadopago.com.ar/activities) en la que se reciben los cobros.
 
 > WARNING
 >

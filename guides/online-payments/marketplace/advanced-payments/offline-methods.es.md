@@ -38,7 +38,7 @@ En la respuesta, encontrarás el campo `external_resource_url` con la url que co
       "payment_method_id": "bolbradesco",
       "payment_type_id": "ticket",
       ...
-      "external_resource_url": "http://www.mercadopago.com/mla/payments/ticket/helperpayment_id=4265666119&payment_method_reference_id=3575111597&caller_id=121212&hash=87069857reydfhgjhkjliouy7t6rd",
+      "external_resource_url": "https://www.mercadopago.com/mla/payments/ticket/helperpayment_id=4265666119&payment_method_reference_id=3575111597&caller_id=121212&hash=87069857reydfhgjhkjliouy7t6rd",
       ...
     }
   ]
