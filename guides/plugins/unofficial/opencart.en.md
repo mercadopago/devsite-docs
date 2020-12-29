@@ -20,7 +20,7 @@ We offer two checkout methods that make it easy to securely accept payments from
 | --- | --- | --- |
 | Credit card Payments | ✔ | ✔ |
 | Other payment methods | ✔ | ✔ |
-| Mercado Pago's interface           | ✔                 |  |
+| Mercado Pago's interface | ✔ |  |
 | Installments calculator            | ✔                 | ✔                       |
 | IPN and webhooks                   | ✔                 | ✔                       |
 | Mercado Pago coupon discounts      | ✔                 |  |
