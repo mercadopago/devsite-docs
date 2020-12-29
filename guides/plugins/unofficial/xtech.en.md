@@ -78,17 +78,17 @@ Para escolher o checkout redirect, é necessários elecionar a opção **DESATIV
 
 Segue abaixo a descrição de cada campo do formulário de configuração no painel administrativo da plataforma:
 
-Item | Valores | Descrição
----------|----------|---------
- Status | Ativado / Desativado | Indica se o meio de pagamento está ativado/desativado na págian do checkout
- Nome da Aba no Checkout | | Indica o nome da aba para o meio de pagamento
- Desconto no boleto (%) | | Valor a ser descontado quando a forma de pagamento selecionada for boleto
- Cupom Mercado Pago | Ativado / Desativado | Habilitar o cupom de desconto exclusivo do Mercado Pago
- Checkout Transparente | Ativado / Desativado | Indica o tipo de checkout. Ativado habilita o checkout transparente enquanto que desativado habilita o checkout redirect
- Nome da Fatura do cartão de crédito | | Indica o nome que irá aparecer na fatura do cliente, sugerismo utilizar o nome da loja. Limite máximo de 11 caracteres.
- Formas de pagamento | Cartão de crédito / Boleto Bancário | Habilita as formas de pagamento que serão exibidas na página do checkout.
- Número de parcelas | | Indica a quantidade máxima de parcelas que serão aceitas no checkout.
- Valor minimo de parcela | | Indica o menor valor que a parcela poderá ter.
+| Item | Valores | Descrição |
+| --- | --- | --- |
+| Status | Ativado / Desativado | Indica se o meio de pagamento está ativado/desativado na págian do checkout |
+| Nome da Aba no Checkout | | Indica o nome da aba para o meio de pagamento |
+| Desconto no boleto (%) | | Valor a ser descontado quando a forma de pagamento selecionada for boleto |
+| Cupom Mercado Pago | Ativado / Desativado | Habilitar o cupom de desconto exclusivo do Mercado Pago |
+| Checkout Transparente | Ativado / Desativado | Indica o tipo de checkout. Ativado habilita o checkout transparente enquanto que desativado habilita o checkout redirect |
+| Nome da Fatura do cartão de crédito | | Indica o nome que irá aparecer na fatura do cliente, sugerismo utilizar o nome da loja. Limite máximo de 11 caracteres. |
+| Formas de pagamento | Cartão de crédito / Boleto Bancário | Habilita as formas de pagamento que serão exibidas na página do checkout. |
+| Número de parcelas | | Indica a quantidade máxima de parcelas que serão aceitas no checkout. |
+ Valor minimo de parcela | | Indica o menor valor que a parcela poderá ter. |
 
 ## Exemplos
 

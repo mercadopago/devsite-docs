@@ -18,15 +18,15 @@ We offer two checkout methods that make it easy to securely accept payments from
 
 | Feature | Basic Checkout | Customized Checkout |
 | --- | --- | --- |
-| Credit card Payments                                      | ✔                 | ✔                       |
-| Other payment methods                                     | ✔                 | ✔                       |
-| Mercado Pago's interface                                  | ✔                 |                         |
-| Installments calculator                                   | ✔                 | ✔                       |
-| IPN and webhooks                                          | ✔                 | ✔                       |
-| Mercado Pago coupon discounts                             | ✔                 |                         |
-| Log and debugging tools                                   | ✔                 | ✔                       |
-| Currency conversion                                       |                   | ✔                       |
-| Platform and credential Status                            | ✔                 | ✔                       |
+| Credit card Payments               | ✔                 | ✔                       |
+| Other payment methods              | ✔                 | ✔                       |
+| Mercado Pago's interface           | ✔                 |  |
+| Installments calculator            | ✔                 | ✔                       |
+| IPN and webhooks                   | ✔                 | ✔                       |
+| Mercado Pago coupon discounts      | ✔                 |  |
+| Log and debugging tools            | ✔                 | ✔                       |
+| Currency conversion                |                   | ✔                       |
+| Platform and credential Status     | ✔                 | ✔                       |
 
 **Basic Checkout**
 
@@ -55,12 +55,12 @@ Offer a checkout fully customized to your brand experience with our simple-to-us
 
 ## Requirements:
 
-| Requirement               | Detail                                                    |
-|---------------------------|-----------------------------------------------------------|
-| OS                        | Linux x86-64                                              |
-| Web Server                | Apache 2.x, Nginx 1.7.x                                   |
-| Data base                 | MySQL 5.6 (Oracle or Percona)                             |
-| PHP version               | PHP 5.4.x / 5.5.x                                         |
+| Requirement | Detail |
+| --- | --- |
+| OS | Linux x86-64                       |
+| Web Server                | Apache 2.x, Nginx 1.7.x            |
+| Data base                 | MySQL 5.6 (Oracle or Percona)      |
+| PHP version               | PHP 5.4.x / 5.5.x                  |
 | Extensions                | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl  |
 | SSL                       | SSL required to process card Payments                     |
 
@@ -70,13 +70,13 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
 
 ## Available Versions:
 
-| Plugin Version                                                                          | Status                    | Compatible versions   |
-|-----------------------------------------------------------------------------------------|---------------------------|-----------------------|
-| [v1.4.9](https://github.com/mercadopago/cart-opencart/tree/master/v1.4.9)               | Deprecated (Old Versión)  | OpenCart v1.4.9       |
-| [v1.5.x](https://github.com/mercadopago/cart-opencart/tree/master/v1.5.x)               | Deprecated (Old Versión)  | OpenCart v1.5.x       |
+| Plugin Version | Status | Compatible versions |
+| --- | --- |
+| [v1.4.9](https://github.com/mercadopago/cart-opencart/tree/master/v1.4.9) | Deprecated (Old Versión)  | OpenCart v1.4.9       |
+| [v1.5.x](https://github.com/mercadopago/cart-opencart/tree/master/v1.5.x) | Deprecated (Old Versión)  | OpenCart v1.5.x       |
 | [v2.x - v2.2](https://github.com/mercadopago/cart-opencart/tree/master/v2.x%20-%202.2)  | Deprecated (Old Versión)  | OpenCart v2.x - v2.2  |
-| [v2.3](https://github.com/mercadopago/cart-opencart-2/archive/master.zip)               | Stable (Current Versión)  | OpenCart v2.3         |
-| [v3.x](https://github.com/mercadopago/cart-opencart-3/archive/master.zip)               | Stable (Current Versión)  | OpenCart v3.x         |
+| [v2.3](https://github.com/mercadopago/cart-opencart-2/archive/master.zip) | Stable (Current Versión)  | OpenCart v2.3         |
+| [v3.x](https://github.com/mercadopago/cart-opencart-3/archive/master.zip) | Stable (Current Versión)  | OpenCart v3.x         |
 
 ## Installation:
 

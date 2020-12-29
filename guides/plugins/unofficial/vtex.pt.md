@@ -26,7 +26,7 @@ Para criar uma **afiliação de gateway de pagamento com o Mercado Pago**, siga 
 4. Preencha os campos correspondentes e clique em "Salvar".
 
 | Campos | Dados necessários |
-|-------------------------------------------|---------------------------------------------------------------------------------------|
+| --- | --- |
 | Nome da afiliação | Defina o nome que identificará a sua Afiliação. |
 | OAuth login | Não é utilizado. Deixe-o como está. |
 | PublicKey | Refere-se às suas [credenciais]([FAKER][CREDENTIALS][URL]) do Mercado Pago. Complete com sua Public Key. |
@@ -191,7 +191,7 @@ Acesse a transação da VTEX, então busque pelo LOG que contenha o status respo
 Os dados mais significativos são os seguintes:
 
 | Campo | Dado | Descrição |
-|-------------------|-------------------------------------|--------------------------------------------|
+| --- | --- | --- |
 | ID | 10302316 | Número da transação de Mercado Pago. |
 | Payment_method_id | visa | Meio de pagamento. |
 | Payment_type_id | credit_card | Meio de pagamento. |
@@ -210,11 +210,11 @@ Para mais informações acesse o link <a href="https://www.mercadopago.com.br/de
 Os erros mais comuns são os seguintes:
 
 | Mensagem | Significado |
-|-------------------|--------------------------------------------|
+| --- | --- |
 | `unauthorized_use_of_live_credentials` | Isso significa que as credenciais da conta do Mercado Pago não estão ativadas. Você deve ir para a página de credenciais e ativá-las |
 | `invalid installments` | Está sendo feita uma tentativa de processar o pagamento com uma taxa que não está ativada. Você deve acessar a configuração do método de pagamento e definir as taxas como "Automático". |
-| `invalid_users` | Você está tentando pagar com o mesmo usuário que está cobrando. Repetir o pagamento com um email de pagador diferente.|
-| `Cannot infer Payment Method` | Você está tentando pagar com um cartão que não seja o tipo de cartão selecionado (por exemplo, um número de cartão de crédito foi inserido na opção de cartão de débito).|
+| `invalid_users` | Você está tentando pagar com o mesmo usuário que está cobrando. Repetir o pagamento com um e-mail de pagador diferente.|
+| `Cannot infer Payment Method` | Você está tentando pagar com um cartão que não seja o tipo de cartão selecionado (por exemplo, um número de cartão de crédito foi inserido na opção de cartão de débito). |
 
 > WARNING
 >
