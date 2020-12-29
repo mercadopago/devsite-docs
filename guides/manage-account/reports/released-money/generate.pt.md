@@ -12,7 +12,7 @@
 Você pode gerar um relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ pela sua conta Mercado Pago:
 
 | Canais | Descrição |
-| ------- | ----------- |
+| --- | --- |
 | Painel do Mercado Pago | É muito rápido e simples. Para gerar a partir da sua conta do Mercado Pago, vá até [Relatórios](https://www.mercadopago[FAKER][URL][DOMAIN]/movements) e selecione uma opção de "Relatórios criados".<br/><br/>Siga o paso a paso para [gerar seus relatórios a partir do painel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/panel). |
 
 ## Características técnicas do relatório
@@ -26,7 +26,7 @@ Saiba as características dos elementos que compõem seu relatório.
 
 
 | Ações e componentes | Características |
-| ------------ | -------- |
+| --- | --- |
 | Detalhes das tablas | Os detalhes das tabelas compreende as informações no mínimo de 1 dia. |
 | Ordem das colunas | Fixa |
 | Período máximo | Relatórios com dados de até 60 dias. |
@@ -40,7 +40,7 @@ Saiba as características dos elementos que compõem seu relatório.
 Todas as opções disponíveis na hora de baixar seu relatório.
 
 | Ações e componentes | Características |
-| ------------ | -------- |
+| --- | --- |
 | Formato do nome do arquivo | Quando o relatório é programado ou manual:<br/> "prefixo-configuravel-<span style='color:#999999;'>data-de-criacao.csv</span>" <br/> Exemplo: minhaloja-28-05-2019.csv |
 | Formatos de download | .csv, .xlsx <br/><br/>Dica: baixe o relatório em .csv para importar os dados e usá-los em outros aplicativos. Baixe-o em .xlsx para ler as informações nas tabelas da planilha. |
 | Arquivo | Os relatórios gerados ficam salvos na sua conta do Mercado Pago. |

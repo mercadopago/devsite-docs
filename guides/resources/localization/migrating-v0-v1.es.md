@@ -59,44 +59,44 @@ En esta guía vas a encontrar toda la información necesaria para poder actualiz
 
 A continuación vas a poder encontrar los recursos migrados y sus equivalentes.
 
-| Uso                     | Método | URI del recurso deprecado              | URI del recurso equivalente      | Referencia                                                      |
-|-------------------------|--------|----------------------------------------|----------------------------------|-----------------------------------------------------------------|
-| Devoluciones            | `POST` | /collections/$payment_id/refunds       | /v1/payments/$payment_id/refunds | -|
-| Devoluciones            | `PUT`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/put/)    |
-| Actualización de pago   | `PUT`  | /payments/$payment_id                  | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/put/)    |
-| Actualización de pago   | `PUT`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/put/)    |
-| Pagos                   | `GET`  | /payments/$payment_id                  | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get)    |
-| Pagos                   | `GET`  | /collections/$payment_id               | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get)    |
-| Notificación de pagos   | `GET`  | /collections/notifications/$payment_id | /v1/payments/$payment_id/        |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get)    |
-| Búsqueda de pagos       | `GET`  | /payments/search                       | /v1/payments/search              |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get)|
-| Búsqueda de pagos       | `GET`  | /collections/search                    | /v1/payments/search              |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get)|
+| Uso | Método | URI del recurso deprecado | URI del recurso equivalente | Referencia |
+| --- | --- | --- | --- | --- |
+| Devoluciones | `POST` | /collections/$payment_id/refunds | /v1/payments/$payment_id/refunds | -|
+| Devoluciones | `PUT` | /collections/$payment_id | /v1/payments/$payment_id/ | [visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/put/) |
+| Actualización de pago | `PUT` | /payments/$payment_id | /v1/payments/$payment_id/ | [visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/put/) |
+| Actualización de pago | `PUT` | /collections/$payment_id | /v1/payments/$payment_id/ | [visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/put/) |
+| Pagos | `GET` | /payments/$payment_id | /v1/payments/$payment_id/ | [visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get) |
+| Pagos | `GET` | /collections/$payment_id | /v1/payments/$payment_id/ | [visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get) |
+| Notificación de pagos | `GET` | /collections/notifications/$payment_id | /v1/payments/$payment_id/ |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get) |
+| Búsqueda de pagos | `GET` | /payments/search | /v1/payments/search | [visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get)|
+| Búsqueda de pagos | `GET` | /collections/search | /v1/payments/search | [visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get)|
 
 ##Versiones válidas de las herramientas para la nueva versión 
 
 Si usas nuestras herramientas, para la nueva versión de la API es necesario que la versiones instaladas sean las que se detalla en la tabla o superior.
 
-| Herramienta      | Versión |
-|------------------|---------|
-| Magento 1.x      | 2.11.4  |
-| Magento 2.x      | 2.2.0   |
-| Opencart 3.x     | 4.1     |
-| Opencart 2.3     | 3.2     |
-| WooCommerce      | 3.0.17  |
-| WPCommerce       | 4.2.6   |
-| OsCommerce       | none    |
-| VirtueMart       | 2.2.0   |
-| ZenCart          | 1.0.3   |
-| Prestashop 1.6.x | 3.1.0   |
-| Prestashop 1.7.x | 1.0.12  |
-| SDK PHP 0.x      | 0.5.3   |
-| SDK PHP 1.x      | 1.1.4   |
-| SDK Java 0.x     | 0.3.5   |
-| SDK Java 1.x     | 1.0.19  |
-| SDK .net 0.x     | 0.3.4   |
-| SDK .net 1.x     | 1.0.10  |
-| SDK ruby 0.x     | 0.3.6   |
-| SDK python 0.x   | 0.3.5   |
-| SDK NodeJS 1.x   | 1.0.16  |
+| Herramienta | Versión |
+| --- | --- |
+| Magento 1.x | 2.11.4 |
+| Magento 2.x | 2.2.0 |
+| Opencart 3.x | 4.1 |
+| Opencart 2.3 | 3.2 |
+| WooCommerce | 3.0.17 |
+| WPCommerce | 4.2.6 |
+| OsCommerce | none |
+| VirtueMart | 2.2.0 |
+| ZenCart | 1.0.3 |
+| Prestashop 1.6.x | 3.1.0 |
+| Prestashop 1.7.x | 1.0.12 |
+| SDK PHP 0.x | 0.5.3 |
+| SDK PHP 1.x | 1.1.4 |
+| SDK Java 0.x | 0.3.5 |
+| SDK Java 1.x | 1.0.19 |
+| SDK .net 0.x | 0.3.4 |
+| SDK .net 1.x | 1.0.10 |
+| SDK ruby 0.x | 0.3.6 |
+| SDK python 0.x | 0.3.5 |
+| SDK NodeJS 1.x | 1.0.16 |
 
 ----[mla, mlu, mlb]----
 
@@ -140,7 +140,7 @@ curl -X POST \
         -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
         'https://api.mercadopago.com/v1/payments/12861583/refunds' \
         -d '{
-                "amount": 5.0
+  "amount": 5.0
         }'
 ```
 
@@ -194,7 +194,7 @@ curl -X POST \
         -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
         'https://api.mercadopago.com/v1/payments/12861583/refunds' \
         -d '{
-                "amount": 5.0
+  "amount": 5.0
         }'
 ```
 

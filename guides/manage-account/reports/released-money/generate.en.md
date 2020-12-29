@@ -6,7 +6,7 @@
 You can generate a Release report from your Mercado Pago account:
 
 | Channels | Description |
-| ------- | ----------- |
+| --- | --- |
 | Mercado Pago panel | It's very simple and fast. To generate ir from your account, go to [Reports](https://www.mercadopago[FAKER][URL][DOMAIN]/movements) and choose "Created reports".<br/><br/>Follow the step by step to [generate reports from your panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/panel). |
 
 ## Technical characteristics of the report
@@ -20,7 +20,7 @@ Know the characteristics of the elements that make up your report.
 
 
 | Element or action | Characteristics |
-| ------------ | -------- |
+| --- | --- |
 | Tables Detail | The detail of the tables includes information generated in at least 1 day. |
 | Column Order | Fix |
 | Maximum Period | Reports with data of up to 60 days. |
@@ -34,8 +34,8 @@ Know the characteristics of the elements that make up your report.
 All the options you have available when downloading your report.
 
 | Element or action | Characteristics |
-| ------------ | -------- |
-| Filename format | When the report is scheduled or manual: "prefix-custom-<span style='color:#999999;'>created-date.csv</span>" <br/> Example:  mystore-28-05-2019.csv |
+| --- | --- |
+| Filename format | When the report is scheduled or manual: "prefix-custom-<span style='color:#999999;'>created-date.csv</span>" <br/> Example: mystore-28-05-2019.csv |
 | Download formats | .csv, .xlsx <br/><br/>Tip:Download the report in .csv to import the data and use it in other applications. Download it in .xlsx to read the information in the spreadsheet tables. |
 | File | Generated reports are saved in your Mercado Pago account. |
 

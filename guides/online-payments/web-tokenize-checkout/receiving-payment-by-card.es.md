@@ -36,12 +36,12 @@ El *Web Tokenize Checkout* hará un `POST` a la URL que hayas definido en el atr
 
 #### Los datos son:
 
-Dato | Descripción
----- | ------------
-**token** | Identificador único de la tarjeta tokenizada
-**payment_method_id** | Medio de pago elegido por el comprador
-**installments** | Cantidad de cuotas elegidas por el comprador
-**issuer_id** | ID del emisor de la tarjeta del comprador
+| Dato | Descripción |
+| --- | --- |
+| **token** | Identificador único de la tarjeta tokenizada. |
+| **payment_method_id** | Medio de pago elegido por el comprador. |
+| **installments** | Cantidad de cuotas elegidas por el comprador. |
+| **issuer_id** | ID del emisor de la tarjeta del comprador. |
 
 _No recibirás ni el **transaction_amount** ni el **payer.email** por cuestiones de seguridad._
 

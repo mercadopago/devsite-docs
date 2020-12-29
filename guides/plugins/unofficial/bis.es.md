@@ -37,6 +37,6 @@ Con la cuenta de MercadoPago ya creada, debe ingresar los datos a continuación 
 
 ### Canal de soporte de la plataforma:
 
-Sitio web | Teléfono
---|--
-http://cliente.bis2bis.com.br |(43) 3326-1500
+| Sitio web | Teléfono |
+| --- | --- |
+| http://cliente.bis2bis.com.br | (43) 3326-1500 |

@@ -30,13 +30,13 @@
 
 First you must familiarize yourself with the following concepts since you will use them during the integration.
 
-| Attribute                    | Description                                                  |
-| ---------------------------- | ------------------------------------------------------------ |
-| `ACCESS_TOKEN`               | It is the [access token](https://www.mercadopago.com/mlm/account/credentials) of the Mercado Pago account where the payments will be accredited. |
-| `COLLECTOR_ID`               | It is the user number of the Mercado Pago account, it is the last 9 digits of your `access_token`, after the middle script. |
-| `EXTERNAL_ID`                | It is the unique identifier of the supplier. It is an alphanumeric code defined by you, it can not contain spaces or special characters and the uppercase of the lowercase is not distinguished. |
-| `SPONSOR_ID`                 | `COLLECTOR_ID` of a developer's Mercado Pago account. You must create an account by brand (YPF, Shell, Axion, etc). |
-| `APIES`, `STORE_ID`, `STORE` | Unique identifier of the service station.                    |
+| Attribute | Description |
+| --- | --- |
+| `ACCESS_TOKEN` | It is the [access token](https://www.mercadopago.com/mlm/account/credentials) of the Mercado Pago account where the payments will be accredited. |
+| `COLLECTOR_ID` | It is the user number of the Mercado Pago account, it is the last 9 digits of your `access_token`, after the middle script. |
+| `EXTERNAL_ID` | It is the unique identifier of the supplier. It is an alphanumeric code defined by you, it can not contain spaces or special characters and the uppercase of the lowercase is not distinguished. |
+| `SPONSOR_ID` | `COLLECTOR_ID` of a developer's Mercado Pago account. You must create an account by brand (YPF, Shell, Axion, etc). |
+| `APIES`, `STORE_ID`, `STORE` | Unique identifier of the service station. |
 
 ## Objects
 
@@ -196,12 +196,12 @@ In case of error, the URL should return a status code `HTTP 400 (Bad Request)`, 
 
 **Definitions**
 
-| Type        | Description                                                  |
-| ----------- | ------------------------------------------------------------ |
-| in_process  | There is an order in process, the amount to be charged cannot yet be determined. |
-| unavailable | There is no order with pending payment.                      |
-| invalid     | Additional parameters (station id, position, etc.) are referred to an unknown location. |
-| timeout     | The server of your system has not been able to communicate with any of the other systems (supplier, POS, Mercado Pago API) and has aborted. |
+| Type | Description |
+| --- | --- |
+| in_process | There is an order in process, the amount to be charged cannot yet be determined. |
+| unavailable | There is no order with pending payment. |
+| invalid | Additional parameters (station id, position, etc.) are referred to an unknown location. |
+| timeout  The server of your system has not been able to communicate with any of the other systems (supplier, POS, Mercado Pago API) and has aborted. |
 
 The `message` is optional, corresponds to a plain text explanation of the cause of the problem.
 
@@ -267,14 +267,14 @@ Two test users must be created: one buyer and another collector. With the billin
 
 Consult the [test data](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/test-integration): test users and test cards that can be used.
 
-| Test cases                                                   | Expected response                                            |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| The user scans a valid QR code before placing the order.     | The app does not display an order.                           |
-| The user scans a QR code with invalid parameters, meaning that it refers to a nonexistent account. | The app reports that an error has occurred.                  |
-| The user scans a valid code, once the order has been placed and the sales order has been created. | La app muestra la orden.                                     |
-| The user generates an approved payment.                      | The POS system receives the information of an approved payment. |
-| The user generates an rejected payment.                      | The POS system receives the information of an rejected payment. |
-| A return of a payment is made from the POS.                  | The return is impacted in the buyer's account.               |
+| Test cases | Expected response |
+| --- | --- |
+| The user scans a valid QR code before placing the order. | The app does not display an order. |
+| The user scans a QR code with invalid parameters, meaning that it refers to a nonexistent account. | The app reports that an error has occurred. |
+| The user scans a valid code, once the order has been placed and the sales order has been created. | The app displays the order. |
+| The user generates an approved payment. | The POS system receives the information of an approved payment. |
+| The user generates an rejected payment. | The POS system receives the information of an rejected payment. |
+| A return of a payment is made from the POS. | The return is impacted in the buyer's account. |
 
 ### Errors
 

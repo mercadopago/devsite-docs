@@ -21,7 +21,7 @@ Both for frontend and backend, we recommend [our libraries](https://www.mercadop
 In addition to cards, you can offer other payment choices on your website.
 
 | Type of payment method | Payment method |
-| --- | ---|
+| --- | --- |
 | `ticket` | Rapipago |
 | `ticket` | Pago Fácil |
 | `ticket` | Provincia NET Pagos |
@@ -452,7 +452,7 @@ Both for frontend and backend, we recommend [our libraries](https://www.mercadop
 In addition to cards, you can offer other payment choices on your website.
 
 | Type of payment method | Payment method |
-| --- | ---|
+| --- | --- |
 | `ticket` | OXXO |
 | `atm` | Citibanamex |
 | `atm` | Santander |
@@ -880,7 +880,7 @@ Check [credit times by payment method](https://www.mercadopago[FAKER][URL][DOMAI
 Finally, you should share information about the different places where your customers can pay.
 
 | Payment method | Available stores |
-| --- | ---|
+| --- | --- |
 | OXXO | OXXO
 | BBVA Bancomer | 7-Eleven |
 | BBVA Bancomer | K |
@@ -911,7 +911,7 @@ Both for frontend and backend, we recommend [our libraries](https://www.mercadop
 In addition to cards, you can offer other payment choices on your website.
 
 | Type of payment method | Payment method |
-| --- | ---|
+| --- | --- |
 | `ticket` | Abitab |
 | `ticket` | Redpagos |
 
@@ -1296,7 +1296,7 @@ Both for frontend and backend, we recommend [our libraries](https://www.mercadop
 In addition to cards, you can offer other payment choices on your website.
 
 | Type of payment method | Payment method |
-| --- | ---|
+| --- | --- |
 | `ticket` | Efecty |
 | `ticket` | Baloto |
 | `bank_transfer` | PSE |
@@ -1914,7 +1914,7 @@ Both for frontend and backend, we recommend [our libraries](https://www.mercadop
 In addition to cards, you can offer other payment choices on your website.
 
 | Type of payment method | Payment method |
-| --- | ---|
+| --- | --- |
 | `ticket` | Sucursales Servipag |
 | `bank_transfer` | Redcompra Webpay |
 
@@ -2467,7 +2467,7 @@ Both for frontend and backend, we recommend [our libraries](https://www.mercadop
 In addition to cards, you can offer other payment choices on your website.
 
 | Type of payment method | Payment method |
-| --- | ---|
+| --- | --- |
 | `atm` | PagoEfectivo |
 
 
@@ -2837,7 +2837,7 @@ Both for frontend and backend, we recommend [our libraries](https://www.mercadop
 In addition to cards, you can offer other payment choices on your website.
 
 | Type of payment method | Payment method |
-| --- | ---|
+| --- | --- |
 | `ticket` | Boleto |
 | `ticket` | Pagamento em lotérica |
 

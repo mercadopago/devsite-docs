@@ -25,16 +25,16 @@ El **Modelo Agregador** es el que se usa por defecto en Mercado Pago a menos que
 
 _A continuación se comparan las características principales de cada modelo:_
 
-|Característica| Modelo Agregador | Modelo Gateway |
-|---|:---:|:---:|
-|Procesamiento | ✔ | ✔ |
-|Prevención de fraude (Scoring) | ✔ | ✔ (*) |
-|Prevención de fraude (Revisión Manual) | ✔ | ✔ (*) |
-|Conciliación (con Mercado Pago) | ✔ | ✔ |
-|Conciliación (con Adquirentes y Emisores) | Incluído | No ofrecido/a |
-|Financiación (cuotas y promociones) | Incluída | No aplicable |
-|Contracargos (Gestión) | Incluído | No ofrecido/a |
-|Contracargos (Cobertura) | Incluída | No ofrecido/a |
+| Característica | Modelo Agregador | Modelo Gateway |
+| --- | :---: | :---: |
+| Procesamiento | ✔ | ✔ |
+| Prevención de fraude (Scoring) | ✔ | ✔ (*) |
+| Prevención de fraude (Revisión Manual) | ✔ | ✔ (*) |
+| Conciliación (con Mercado Pago) | ✔ | ✔ |
+| Conciliación (con Adquirentes y Emisores) | Incluído | No ofrecido/a |
+| Financiación (cuotas y promociones) | Incluída | No aplicable |
+| Contracargos (Gestión) | Incluído | No ofrecido/a |
+| Contracargos (Cobertura) | Incluída | No ofrecido/a |
 
 > (\*) Opcional
 

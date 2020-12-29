@@ -167,13 +167,13 @@ By default, all payment methods are offered. If you want to exclude any, it can 
 You can also set a payment method to appear by default or define the maximum number of installments to offer.
 
 
-Attribute | Description
------------- | -------------
-_`payment_methods`_ | Class that describes the attributes and methods of payment methods.
-_`excluded_payment_methods`_ | Method that excludes by specific <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_payment_methods_by_country" target="_blank">payment methods</a>: Visa, Mastercard or American Express, among others.
-_`excluded_payment_types`_ | Method that excludes by type of <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_payment_methods_by_country" target="_blank">payment method</a>: cash, credit or debit cards.
-_`installments`_ | Method that defines the amount of maximum number of installments to offer.
-_`purpose`_ | When the "wallet purchase" value is indicated, Checkout will accept payments exclusively from Mercado Pago registered users, with card and account balance.
+| Attribute | Description |
+| --- | --- |
+| `payment_methods` | Class that describes the attributes and methods of payment methods. |
+| `excluded_payment_methods` | Method that excludes by specific <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_payment_methods_by_country" target="_blank">payment methods</a>: Visa, Mastercard or American Express, among others. |
+| `excluded_payment_types` | Method that excludes by type of <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_payment_methods_by_country" target="_blank">payment method</a>: cash, credit or debit cards. |
+| `installments` | Method that defines the amount of maximum number of installments to offer. |
+| `purpose` | When the "wallet purchase" value is indicated, Checkout will accept payments exclusively from Mercado Pago registered users, with card and account balance. |
 
 [[[
 ```php
@@ -793,11 +793,11 @@ Once set up, you’ll see a conversion associated to the configured label everyt
 
 Our [Partners](https://partners.mercadopago.com/) can obtain business metrics. To get business metrics, use `headers` in your preference. You should only add identification codes, as applicable. It is not required to complete the three fields mentioned.
 
-Header | Code Type | Identifiers
------- | ---------------| ---------
-`x-integrator-id` | Integrator | For developers or agencies that conducted the integration.
-`x-platform-id` | Platform | For the platforms or modules that offer Mercado Pago in their solutions.
-`x-corporation-id` | Corporations | For accounts associated with a seller's account or economic group.
+| Header | Code Type | Identifiers |
+| --- | --- | --- |
+| `x-integrator-id` | Integrator | For developers or agencies that conducted the integration. |
+| `x-platform-id` | Platform | For the platforms or modules that offer Mercado Pago in their solutions. |
+| `x-corporation-id` | Corporations | For accounts associated with a seller's account or economic group. |
 
 > If you need your `integrator_id` or your` platform_id`, [request your code now](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/edit). 
 

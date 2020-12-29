@@ -120,7 +120,7 @@ You can set the maximum or minimum amount of installments and apply surcharges o
     | Minimum value of installment R$ | Indicate the minimum value of installments that you wish to offer in Reales |
     | Only orders over R$ | Set if you want to use a minimum value range to accept orders on your store. |
     | Discounts for payments in cash (%) | Enter the discount value for cash payments that you want. |
-    | Surcharge/Discount | Apply a surcharge or discount on the order. | 
+    | Surcharge/Discount | Apply a surcharge or discount on the order. |
 
 1. Click on “Close” and then on “Save changes”.
 <p>&nbsp;</p>

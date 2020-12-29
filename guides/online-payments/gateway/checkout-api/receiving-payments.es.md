@@ -27,11 +27,11 @@ indexable: false
 
 Antes de continuar con la integración es importante que conozcas estos nuevos conceptos:
 
-|Atributo|Tipo|Descripción|
-|---|---|---|
-|`processing_mode`| String | Indica el modo de procesamiento de un pago. Las opciones son **gateway** o **aggregator**|
-|`merchant_account_id`| String | Indica el número de comercio. Sólo es posible de usar cuando el `processing_mode` es gateway |
-|`payment_method_option_id`| String | Identifica unívocamente la sumatoria de un `payment_method` + `issuer` + `merchant_account_id`|
+| Atributo | Tipo | Descripción |
+| --- | --- | --- |
+| `processing_mode` | String | Indica el modo de procesamiento de un pago. Las opciones son **gateway** o **aggregator** |
+| `merchant_account_id` | String | Indica el número de comercio. Sólo es posible de usar cuando el `processing_mode` es gateway |
+| `payment_method_option_id` | String | Identifica unívocamente la sumatoria de un `payment_method` + `issuer` + `merchant_account_id` |
 
 ## Integración
 
@@ -126,10 +126,10 @@ Obtener el valor del atributo `payment_method_option_id` para el número de come
 
 Se puede customizar por cada pago que servicios (`merchant_services`) se desean utilizar.
 
-|Servicio|Tipo|Descripción|
-|---|---|---|
-|`fraud_scoring`|Boolean| Si se quiere utilizar la prevención de fraude automática|
-|`fraud_manual_review`| Boolean| Si se quiere utilizar la revisión manual |
+| Servicio | Tipo | Descripción |
+| --- | --- | --- |
+| `fraud_scoring` | Boolean | Si se quiere utilizar la prevención de fraude automática. |
+| `fraud_manual_review` | Boolean | Si se quiere utilizar la revisión manual. |
 
 ```curl
 curl -X POST \

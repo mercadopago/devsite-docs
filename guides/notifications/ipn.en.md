@@ -45,11 +45,11 @@ Note that this communication is made exclusively between MercadoPago’s servers
 
 After that, you will be able to get full information about the notified resource by accessing the corresponding API at https://api.mercadopago.com/:
 
-Type               | URL                                                         | Documentation
------------------- | ----------------------------------------------------------- | --------------------
-payment            | /v1/payments/[ID] | [see documentation](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_id/get/)
-chargebacks    	   | /v1/chargebacks/[ID]| -
-merchant_orders    | /merchant\_orders/[ID]           | [see documentation](https://www.mercadopago.com.ar/developers/en/reference/merchant_orders/_merchant_orders_id/get/)
+| Type | URL | Documentation |
+| --- | --- | --- |
+| payment | /v1/payments/[ID] | [see documentation](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_id/get/) |
+| chargebacks | /v1/chargebacks/[ID]| - |
+| merchant_orders | /merchant\_orders/[ID] | [see documentation](https://www.mercadopago.com.ar/developers/en/reference/merchant_orders/_merchant_orders_id/get/) |
 
 With this information you can make the necessary updates on your platform, such as registering an approved payment or a closed order.
 
@@ -136,8 +136,8 @@ Find more information in [API Reference](https://www.mercadopago.com.ar/develope
 
 There are two ways to implement **search** by `external_reference`:
 
-| Ways	|	Description		|
-| ----------- | ----------------- |
+| Ways | Description |
+| --- | --- |
 | **Manual** | The point of sale should include a search button.|
 | **Automatic** | After a reasonable time without getting any notification, order search begins, for example, at 5-second intervals. |
 

@@ -19,9 +19,9 @@ The module of Mercado Pago to Zencart is integrated with the feature and payment
 
 ## Available versions
 
-Plugin Version | Status | Compatible Versions
--------------- | ------ | -------------------
-v1.0.1 | Stable (Current version) | ZenCart 1.5.x
+| Plugin Version | Status | Compatible Versions |
+| --- | --- | --- |
+| v1.0.1 | Stable (Current version) | ZenCart 1.5.x |
 
 ## Requirements
 

@@ -54,9 +54,9 @@ You will have different settings available depending on the type of checkout you
 
 ### Settings common to all checkouts
 
-| Configuration | Description                                                               	                |
-|---------------|-----------------------------------------------------------------------------------------------|
-| Binary mode   | Activate this option when you do not want to leave payments pending or under review. With binary mode payments will be accepted or rejected automatically.|
+| Configuration | Description |
+| --- | --- |
+| Binary mode | Activate this option when you do not want to leave payments pending or under review. With binary mode payments will be accepted or rejected automatically.|
 
 > WARNING
 >
@@ -66,17 +66,17 @@ You will have different settings available depending on the type of checkout you
 
 ### Checkout Pro
 
-| Configuration            | Description                                                              	                                   |
-|--------------------------|---------------------------------------------------------------------------------------------------------------|
-| Return to the store      | When you choose redirect, you will always have the option of having your customers return or not to your store once the payment is finished. |
+| Configuration | Description |
+| --- | --- |
+| Return to the store | When you choose redirect, you will always have the option of having your customers return or not to your store once the payment is finished. |
 | Save payment preferences | When the user accesses our checkout, we generate a payment link with the information of that purchase. Here you can set the time in which we save that preference. |
 
 Choose what shopping experience your customers will have when paying:
 
-| Payment Experience            | Characteristics                                                              	                                 |
-|-------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Redirect     	                | Your customers will be redirected to a Mercado Pago page with the payment form to complete the purchase. |
-| Modal **(NEW)**               | Your customers will access the Mercado Pago payment form without leaving your store. If you deactivate it, they will be redirected to another page. |
+| Payment Experience | Characteristics |
+| --- | --- |
+| Redirect | Your customers will be redirected to a Mercado Pago page with the payment form to complete the purchase. |
+| Modal **(NEW)** | Your customers will access the Mercado Pago payment form without leaving your store. If you deactivate it, they will be redirected to another page. |
 
 > NOTE
 >
@@ -86,9 +86,9 @@ Choose what shopping experience your customers will have when paying:
 
 ### Custom Checkout
 
-| Configuration                          | Description                                                                      |
-|----------------------------------------|----------------------------------------------------------------------------------|
-| Discount for paying with Mercado Pago. | Offer a special discount to encourage your customers to make the purchase.       |
+| Configuration| Description |
+| --- | --- |
+| Discount for paying with Mercado Pago. | Offer a special discount to encourage your customers to make the purchase. |
 
 ### Last step
 

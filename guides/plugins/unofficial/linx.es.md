@@ -62,8 +62,8 @@ Para **configurar los datos de tarjetas de créditos en tu tienda**, sigue estos
 1. Ingresa en la pestaña “Tarjetas de Crédito”, elige la bandera que quieras configurar y selecciona el estado “Activo”. 
 1. Completa los campos correspondientes si es necesario:
 
-    | Campos | Datos  |
-    | --- | ---|
+    | Campos | Datos |
+    | --- | --- |
     | Porcentaje de interés | Completa el porcentaje de interés que quieras agregar. Si no quieres sumar ninguno, deja el dato en 0,00. |
     | Tipo de interés | Emisor - Incluye intereses en el pedido total. Emisor - Intereses devengados por el emisor. Comerciante - Incluye interés en el pedido total. |
     | Número total de cuotas | Ingresa el número total de cuotas que quieres ofrecer por venta. |
@@ -72,7 +72,8 @@ Para **configurar los datos de tarjetas de créditos en tu tienda**, sigue estos
     | Identificador de integración | Agrega un código para identificarse en su ERP. |
     | Orden | Configura el orden en el que aparecerán las banderas al finalizar la compra. |
     | Imagen de ruta | Completa la ruta para obtener la imagen de las banderas de la tarjeta. |
-1. Haz clic en “Guardar”. 
+
+1. Haz clic en “Guardar”.
 <p>&nbsp;</p>
     ![LINX Configuracao](/images/linx/linx_configurando_cartao-3.gif)
 <p>&nbsp;</p>

@@ -36,8 +36,8 @@ Es muy simple. Agrega el script, configura la sección de tu sitio en la que se 
 
 #### Posibles valores para `view`
 
-| Tipo                                                         | Descripción                                                  |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Tipo | Descripción |
+| --- | --- |
 | *home* | Página principal de tu sitio. |
 | *search* | Página de búsqueda o listado de productos. |
 | *item* | Página de un producto específico. |

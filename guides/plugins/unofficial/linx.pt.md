@@ -72,6 +72,7 @@ Para **configurar os dados de Cartão de Crédito em sua loja**, siga os passos 
     | Identificador de Integração | Coloque um código que será identificado no seu ERP. |
     | Ordem | Configure a ordem em que as bandeiras aparecerão no Checkout. |
     | Caminho Imagem | Complete o caminho onde as imagem das bandeiras do cartão serão buscadas. |
+
 1. Por último, clique em "Salvar".
 <p>&nbsp;</p>
     ![LINX Configuracao](/images/linx/linx_configurando_cartao-3.gif)

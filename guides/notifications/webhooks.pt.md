@@ -28,28 +28,28 @@ Sempre que ocorrer um evento, enviaremos uma notificação no formato `json` usa
 Notificaremos os seguintes eventos:
 
 
-| Tipo de notificação  |           Ação             |         Descrição            |
-| :------------------- | :------------------------- | :--------------------------- |
-| `payment`            | `payment.created`          | Criação de pagamento         |
-| `payment`            | `payment.updated`          | Atualização de pagamento     |
-| `mp-connect`         | `application.deauthorized` | Desvinculação de conta       |
-| `mp-connect`         | `application.authorized`   | Vinculação de conta          |
-| `plan`               | `application.authorized`   | Vinculação de conta          |
-| `subscription`       | `application.authorized`   | Vinculação de conta          |
-| `invoice`            | `application.authorized`   | Vinculação de conta          |
+| Tipo de notificação | Ação | Descrição |
+| :--- | :--- | :--- |
+| `payment` | `payment.created` | Criação de pagamento |
+| `payment` | `payment.updated` | Atualização de pagamento |
+| `mp-connect` | `application.deauthorized` | Desvinculação de conta |
+| `mp-connect` | `application.authorized` | Vinculação de conta |
+| `plan` | `application.authorized` | Vinculação de conta |
+| `subscription` | `application.authorized` | Vinculação de conta |
+| `invoice` | `application.authorized` | Vinculação de conta |
 
 O Mercado Pago enviará notificações com o seguinte cronograma de novas tentativas e prazos para sua confirmação. Você deve retornar um HTTP STATUS 200 (OK) ou 201 (CREATED) antes do final do prazo correspondente. Caso contrário, será entendido que você não o recebeu corretamente e você será notificado novamente.
 
 Se precisar de mais informações, confira a seção [“O que devo fazer quando receber uma notificação?”.](#bookmark_o_que_devo_fazer_ao_receber_uma_notificação?)
 
-| Evento             | Prazo após o primeiro envio | Tempo de espera de confirmação |
-|--------------------|-----------------------------|--------------------------------|
-| Envio              | -                           | 22 segundos                    |
-| Primeira tentativa | 5 minutos                   | 5 segundos                     |
-| Segunda tentativa  | 45 minutos                  | 5 segundos                     |
-| Terceira tentativa | 6 horas                     | 5 segundos                     |
-| Quarta tentativa   | 2 dias                      | 5 segundos                     |
-| Quinta tentativa   | 4 dias                      | 5 segundos                     |
+| Evento | Prazo após o primeiro envio | Tempo de espera de confirmação |
+| --- | --- | --- |
+| Envio | - | 22 segundos |
+| Primeira tentativa | 5 minutos | 5 segundos |
+| Segunda tentativa | 45 minutos | 5 segundos |
+| Terceira tentativa | 6 horas | 5 segundos |
+| Quarta tentativa | 2 dias | 5 segundos |
+| Quinta tentativa | 4 dias | 5 segundos |
 
 A notificação tem o seguinte formato:
 
@@ -84,12 +84,12 @@ Essa comunicação é exclusiva entre os servidores do Mercado Pago e o seu, por
 Depois disso, você deve obter as informações completas do recurso notificado acessando o terminal correspondente da API:
 
 
-Tipo         | URL                                                  | Documentação
------------- | -----------------------------------------------------| --------------------
-payment      | https://api.mercadopago.com/v1/payments/[ID]      | [ver documentação](https://www.mercadopago.com.ar/developers/pt/reference/payments/_payments_id/get/)
-plan         | https://api.mercadopago.com/v1/plans/[ID]         | -
-subscription | https://api.mercadopago.com/v1/subscriptions/[ID] | -
-invoice      | https://api.mercadopago.com/v1/invoices/[ID]      | -
+| Tipo | URL | Documentação |
+| --- | --- | --- |
+| payment | https://api.mercadopago.com/v1/payments/[ID] | [ver documentação](https://www.mercadopago.com.ar/developers/pt/reference/payments/_payments_id/get/) |
+| plan | https://api.mercadopago.com/v1/plans/[ID] | - |
+| subscription | https://api.mercadopago.com/v1/subscriptions/[ID] | - |
+| invoice | https://api.mercadopago.com/v1/invoices/[ID] | - |
 
 
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma, por exemplo: atualizar um pagamento aprovado.

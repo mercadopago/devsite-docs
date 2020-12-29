@@ -33,12 +33,12 @@ You can find the Public Key in the [Credentials section]([FAKER][CREDENTIALS][UR
 
 #### Data:
 
-Data | Description
----- | ------------
-**token** | Unique identifier of the tokenized card
-**payment_method_id** | Payment method chosen by the buyer
-**installments** | Amount of installments chosen by the buyer
-**issuer_id** | ID of the issuer of the buyer's card
+| Data | Description |
+| --- | --- |
+| **token** | Unique identifier of the tokenized card. |
+| **payment_method_id** | Payment method chosen by the buyer. |
+| **installments** | Amount of installments chosen by the buyer. |
+| **issuer_id** | ID of the issuer of the buyer's card. |
 
 _You will not receive the **transaction_amount** neither the **payer.email** for security reasons._
 

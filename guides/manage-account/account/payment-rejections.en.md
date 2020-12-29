@@ -77,8 +77,8 @@ It’s simple. Add the script, adjust the section of your website where you inse
 
 #### VIEW Values
 
-| Value                                                         | Section                                                  |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Value | Section |
+| --- | --- |
 | *home* | Your website main page. |
 | *search* | Search page or product list page. |
 | *item* | Single product page with details for one product. |

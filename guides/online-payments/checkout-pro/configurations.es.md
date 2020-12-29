@@ -173,24 +173,24 @@ También se puede definir un medio de pago para que aparezca por defecto o la ca
 
 
 ----[mla, mco, mlb, mlu, mlc, mpe]----
-Atributo | Descripción
------- | -----
-_`payment_methods`_ | Clase que describe los atributos y métodos de medios de pago.
-_`excluded_payment_methods`_ | Método que excluye por <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">medios de pago</a> específicos: Visa, Mastercard o American Express, entre otras.
-_`excluded_payment_types`_ | Método que excluye por tipo de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">medios de pago</a>: efectivo, tarjetas de crédito o débito.
-_`installments`_ | Método que define la cantidad de cuotas máximas a ofrecer.
-_`purpose`_ | Cuando se indique el valor "wallet_purchase", el Checkout aceptará pagos exclusivamente de usuarios registrados en Mercado Pago, con tarjeta y dinero en cuenta.
+| Atributo | Descripción |
+| --- | --- |
+| `payment_methods` | Clase que describe los atributos y métodos de medios de pago. |
+| `excluded_payment_methods` | Método que excluye por <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">medios de pago</a> específicos: Visa, Mastercard o American Express, entre otras. |
+| `excluded_payment_types` | Método que excluye por tipo de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">medios de pago</a>: efectivo, tarjetas de crédito o débito. |
+| `installments` | Método que define la cantidad de cuotas máximas a ofrecer. |
+| `purpose` | Cuando se indique el valor "wallet_purchase", el Checkout aceptará pagos exclusivamente de usuarios registrados en Mercado Pago, con tarjeta y dinero en cuenta. |
 
 ------------
 
 ----[mlm]----
-Atributo | Descripción
------- | -----
-_`payment_methods`_ | Clase que describe los atributos y métodos de medios de pago.
-_`excluded_payment_methods`_ | Método que excluye por <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">medios de pago</a>  específicos: Visa, Mastercard o American Express, entre otras.
-_`excluded_payment_types`_ | Método que excluye por tipo de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">medios de pago</a> : efectivo, tarjetas de crédito o débito.
-_`installments`_ | Método que define la cantidad de mensualidades máximas a ofrecer.
-_`purpose`_ | Cuando se indique el valor "wallet_purchase", el Checkout aceptará pagos exclusivamente de usuarios registrados en Mercado Pago, con tarjeta y dinero en cuenta.
+| Atributo | Descripción |
+| --- | --- |
+| `payment_methods` | Clase que describe los atributos y métodos de medios de pago. |
+| `excluded_payment_methods` | Método que excluye por <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">medios de pago</a>  específicos: Visa, Mastercard o American Express, entre otras. |
+| `excluded_payment_types` | Método que excluye por tipo de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">medios de pago</a> : efectivo, tarjetas de crédito o débito. |
+| `installments` | Método que define la cantidad de mensualidades máximas a ofrecer. |
+| `purpose` | Cuando se indique el valor "wallet_purchase", el Checkout aceptará pagos exclusivamente de usuarios registrados en Mercado Pago, con tarjeta y dinero en cuenta.|
 
 ------------
 
@@ -279,10 +279,10 @@ paymentmethods.Installments = 12;
 
  Puedes modificar el valor del impuesto para la Dirección de Impuestos y Aduanas Nacionales (DIAN) que aplique según el producto o servicio que ofrezcas. Si no diferencias este valor, se aplicará por defecto el 19%.
 
- Atributo | Descripción
----------| -----------
-_`type`_ | Identificador del impuesto. Solo se admiten los valores IVA e INC.
-_`value`_ | Monto del impuesto. Se admite un máximo de dos decimales. Para ítems excentos de impuestos se debe informar cero.
+| Atributo | Descripción |
+| --- | --- |
+| `type` | Identificador del impuesto. Solo se admiten los valores IVA e INC. |
+| `value` | Monto del impuesto. Se admite un máximo de dos decimales. Para ítems excentos de impuestos se debe informar cero. |
 
  ```json
 ===
@@ -838,11 +838,11 @@ De este modo, cuando se apruebe un pago a través de tu Checkout Pro, se asociar
 
 Si sos un Partner podrás ser identificado y luego obtener métricas de negocio según corresponda. Utiliza `headers` en tu preferencia de pago agregando el código de identificación que te brindamos para el caso que corresponda. No es obligatorio completar este campo, por lo que si no sos Partner debes dejarlo vacío.
 
-Header | Tipo de código | Identificadores
------- | ---------------| ---------
-`x-integrator-id` | Integrador | Para desarrolladores o agencias que realizaron la integración.
-`x-platform-id` | Plataforma | Para las plataformas o módulos que ofrecen Mercado Pago en sus soluciones. 
-`x-corporation-id` | Corporaciones | Para cuentas asociadas a una cuenta vendedor o grupo económico.
+| Header | Tipo de código | Identificadores |
+| --- | --- | --- |
+| `x-integrator-id` | Integrador | Para desarrolladores o agencias que realizaron la integración. |
+| `x-platform-id` | Plataforma | Para las plataformas o módulos que ofrecen Mercado Pago en sus soluciones. |
+| `x-corporation-id` | Corporaciones | Para cuentas asociadas a una cuenta vendedor o grupo económico. |
 
 > Para ser un Partner deberás homologarte o certificarte como tal. Para conocer más sobre las certificaciones para desarrolladores de Mercado Pago y cómo obtener tu ID, [déjanos tu contacto](https://docs.google.com/forms/d/e/1FAIpQLSdbA1Y8_9RD2xTCRDHLxeVYrrSIy5s2ME8Ku6_gEcSu60KUHQ/viewform). 
 

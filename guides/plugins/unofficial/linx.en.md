@@ -62,8 +62,8 @@ To **set up credit card data in your store**, follow these steps:
 1. Go to "Credit Card" tab, choose the flag you want to set up and select "Active" state. 
 1. Fill out the relevant fields, if needed:
 
-    | Fields | Data  |
-    | --- | ---|
+    | Fields | Data |
+    | --- | --- |
     | Interest percentage | Fill out interest percentage you want to add. If you don't want to add any, leave 0.00. |
     | Type of interest | Issuer - Interest included in total order.<br> Issuer - Interest accrued by issuer.<br> Seller -Interest included in total order. |
     | Total number of instalments | Enter total number of instalments you want to offer per sale. |
@@ -72,7 +72,8 @@ To **set up credit card data in your store**, follow these steps:
     | Integration ID | Add code for ERP identification. |
     | Order | Set up order of flags to finalize purchase. |
     | Road picture | Fill out road to get card flags picture. |
-1. Click on "Save". 
+
+1. Click on "Save".
 <p>&nbsp;</p>
     ![LINX Configuracao](/images/linx/linx_configurando_cartao-3.gif)
 <p>&nbsp;</p>

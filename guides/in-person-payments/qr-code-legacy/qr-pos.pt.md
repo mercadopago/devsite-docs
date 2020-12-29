@@ -12,8 +12,8 @@
 
 Primeiro você deve familiarizar-se com os seguintes conceitos que usará durante a integração.
 
-| Atributo       | Descrição                                                  |
-| -------------- | ------------------------------------------------------------ |
+| Atributo | Descrição |
+| --- | --- |
 | `ACCESS_TOKEN` | É o [token de acceso](https://www.mercadopago.com/mlb/account/credentials) da conta Mercado Pago a qual se creditarão suas cobranças. |
 | `COLLECTOR_ID` | É o número de usuário da conta Mercado Pago, são os últimos 9 dígitos de seu `access_token`, posterior ao hífen. |
 
@@ -199,14 +199,14 @@ Dois usuários de teste devem ser criados: um comprador e outro coletor. Com o u
 
 Consulta os [dados para testes](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/test-integration/): usuários de teste e cartões de teste que possam ser utilizados.
 
-| Casos de teste                                               | Resultado esperado                                           |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| O usuário escaneia um código QR válido antes de fazer o pedido. | O app não mostra um pedido.                                 |
-| O usuário escaneia um código QR com parâmetros inválidos, isto é, refere-se a uma conta inexistente. | O app informa que ocorreu um erro.                   |
-| O usuário escaneia um código válido, depois que o pedido foi feito e criado um pedido de venda. | O app mostra o pedido.                                     |
-| O usuário realiza um pagamento aprovado.                         | O sistema de PDV recebe a informação de um pagamento aprovado. |
-| O usuário realiza um pagamento recusado.                        | O sistema de PDV recebe a informação de um pagamento recusado. |
-| A devolução de um pagamento é feito a partir do PDV.              | Na conta do comprador consta a devolução.         |
+| Casos de teste | Resultado esperado |
+| --- | --- |
+| O usuário escaneia um código QR válido antes de fazer o pedido. | O app não mostra um pedido. |
+| O usuário escaneia um código QR com parâmetros inválidos, isto é, refere-se a uma conta inexistente. | O app informa que ocorreu um erro. |
+| O usuário escaneia um código válido, depois que o pedido foi feito e criado um pedido de venda. | O app mostra o pedido. |
+| O usuário realiza um pagamento aprovado. | O sistema de PDV recebe a informação de um pagamento aprovado. |
+| O usuário realiza um pagamento recusado. | O sistema de PDV recebe a informação de um pagamento recusado. |
+| A devolução de um pagamento é feito a partir do PDV. | Na conta do comprador consta a devolução. |
 
 ### Dicionário de erros
 

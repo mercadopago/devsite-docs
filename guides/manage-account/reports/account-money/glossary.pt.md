@@ -5,12 +5,12 @@
 Sabemos que alguns termos são técnicos e você pode não estar familiarizado com todos eles. Use este glossário para não se perder!
 
 | Nome da coluna do relatório | O que significa |
-| ----------------------------------- |	--------------- |
+| --- | --- |
 | EXTERNAL_REFERENCE | <br/> ID que ajuda a identificar a origem da operação. Por exemplo, pode ser a venda através do ID do pedido ou do envio (se for uma compra de carrinho) ou o próprio ID fornecido pelo vendedor no caso de uma integração externa.<br/><br/> Lembre-se que é possível que este campo esteja vazio para alguns casos, como pagamento de boletos ou envio de dinheiro, entre outros. <br/> <br/> |
 | SOURCE_ID | ID da transação no Mercado Pago (por exemplo, o pagamento de uma venda). |
 | USER_ID | Código da conta do vendedor. (Cust ID) |
 | PAYMENT_METHOD | Confira os [meios de pagamento disponíveis](https://www.mercadopago.com.br/developers/pt/guides/resources/localization/payment-methods/#bookmark_argentina) de acordo com o país no qual você opera com o Mercado Pago. |
-| PAYMENT_METHOD_TYPE | <table style="border:none;background:none;font-size:16px;height:auto" ><tr style="border:none;background:none;"><td style="border:none;background:none;"> Tipo de meio de pagamento.<br/><br/> Pode ser:<br/><ul><li>*credit_card*: cartão de crédito.</li><li>*debit_card*: cartão de débito.</li><li>*bank_transfer*: transferência.</li><li>*atm*: caixa eletrônico.</li><li>*ticket*:  à vista</li><li>*account_money*: dinheiro em conta.</li></ul></td></tr></table> |
+| PAYMENT_METHOD_TYPE | <table style="border:none;background:none;font-size:16px;height:auto" ><tr style="border:none;background:none;"><td style="border:none;background:none;"> Tipo de meio de pagamento.<br/><br/> Pode ser:<br/><ul><li>*credit_card*: cartão de crédito.</li><li>*debit_card*: cartão de débito.</li><li>*bank_transfer*: transferência.</li><li>*atm*: caixa eletrônico.</li><li>*ticket*: à vista</li><li>*account_money*: dinheiro em conta.</li></ul></td></tr></table> |
 | SITE | MLB: Brasil |
 | TRANSACTION_TYPE | <table style="border:none;background:none;font-size:16px;height:auto" ><tr style="border:none;background:none;"><td style="border:none;background:none;"> Tipo de operação. Pode ser:<br/><ul><li> *SETTLEMENT*: Pagamento aprovado.</li><li>*REFUND*: Pagamento devolvido total ou parcial.</li><li>*CHARGEBACK*: O comprador fez uma contestação (desconhece o pagamento) no seu cartão de crédito.</li><li>*DISPUTE*: O comprador iniciou uma reclamação por esse pagamento.</li><li>*WITHDRAWAL*: Retirada para a conta bancária.</li><li>*WITHDRAWAL_CANCEL*: Retirada para a conta bancária que foi cancelada.</li><li>*PAYOUT*: Saque em dinheiro disponível no Mercado Pago.</li></ul></td></tr></table> |
 | TRANSACTION_AMOUNT | Valor bruto da transação. |
@@ -28,17 +28,17 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | SHIPPING_FEE_AMOUNT | Custo de envio. |
 | TAXES_AMOUNT | Impostos recebidos. |
 | INSTALLMENTS | Número de parcelas em que a transação foi realizada. |
-| TAX_DETAIL | <br/> Descrição do imposto retido por operação no  `TAXES_AMOUNT`. <br/><br/> |
+| TAX_DETAIL | <br/> Descrição do imposto retido por operação no `TAXES_AMOUNT`. <br/><br/> |
 | POS_ID | ID do caixa, se o pagamento é feito através de um comércio físico. |
 | POS_NAME | Nome do caixa para o pagamento realizado em um comércio físico. |
-| EXTERNAL_POS_ID |  ID do caixa definido pelo usuário para o pagamento realizado em um comércio físico. |
+| EXTERNAL_POS_ID | ID do caixa definido pelo usuário para o pagamento realizado em um comércio físico. |
 | STORE_ID | ID da loja se o pagamento é feito em um comércio físico. |
-| STORE_NAME |  Nome da loja para o pagamento feito em um comércio físico. |
-| EXTERNAL_STORE_ID |  ID da loja definido pelo usuário para o pagamento feito em um comércio físico. |
+| STORE_NAME | Nome da loja para o pagamento feito em um comércio físico. |
+| EXTERNAL_STORE_ID | ID da loja definido pelo usuário para o pagamento feito em um comércio físico. |
 | ORDER_ID | Ordem de compra. |
 | SHIPPING_ID | Identificador de envio. |
-| SHIPMENT_MODE |  Modalidade de envio. |
-| PACK_ID |  Identificador do pacote no carrinho. |
+| SHIPMENT_MODE | Modalidade de envio. |
+| PACK_ID | Identificador do pacote no carrinho. |
 | TAXES_DISAGGREGATED | Impostos desagregados no formato JSON. |
 
 <hr/>

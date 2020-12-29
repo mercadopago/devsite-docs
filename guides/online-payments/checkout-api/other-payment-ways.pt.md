@@ -26,7 +26,7 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
 | Tipo de meio de pagamento | Meio de pagamento |
-| --- | ---|
+| --- | --- |
 | `ticket` | Rapipago |
 | `ticket` | Pago Fácil |
 | `ticket` | Provincia NET Pagos |
@@ -455,7 +455,7 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
 | Tipo de meio de pagamento | Meio de pagamento |
-| --- | ---|
+| --- | --- |
 | `ticket` | OXXO |
 | `atm` | Citibanamex |
 | `atm` | Santander |
@@ -885,7 +885,7 @@ Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago
 Ao finalizar, é importante que compartilhe com seus clientes a informação dos distintos lugares em que pode realizar o pagamento.
 
 | Meio de pagamento | Lojas disponíveis
-| --- | ---|
+| --- | --- |
 | OXXO | OXXO
 | BBVA Bancomer | 7-Eleven |
 | BBVA Bancomer | K |
@@ -917,7 +917,7 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
 | Tipo de meio de pagamento | Meio de pagamento |
-| --- | ---|
+| --- | --- |
 | `ticket` | Abitab |
 | `ticket` | Redpagos |
 
@@ -1300,7 +1300,7 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
 | Tipo de meio de pagamento | Meio de pagamento |
-| --- | ---|
+| --- | --- |
 | `ticket` | Efecty |
 | `ticket` | Baloto |
 | `bank_transfer` | PSE |
@@ -1918,7 +1918,7 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
 | Tipo de meio de pagamento | Meio de pagamento |
-| --- | ---|
+| --- | --- |
 | `ticket` | Sucursales Servipag |
 | `bank_transfer` | Redcompra Webpay |
 
@@ -2473,7 +2473,7 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
 | Tipo de meio de pagamento | Meio de pagamento |
-| --- | ---|
+| --- | --- |
 | `atm` | PagoEfectivo |
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os meios de pagamento disponíveis
@@ -2842,7 +2842,7 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
 | Tipo de meio de pagamento | Meio de pagamento |
-| --- | ---|
+| --- | --- |
 | `ticket` | Boleto |
 | `ticket` | Pagamento em lotérica |
 

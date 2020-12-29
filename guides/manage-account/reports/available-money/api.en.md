@@ -440,7 +440,7 @@ Know the fields you can configure to adjust your preferences before you start:
 
 
 | Configurable fields | Description |
-| ----------| ---------------------- |
+| --- | --- |
 | `sftp_info` (optional) | <br/>Indicates the uploaded data to SFTP when you need it.<br/><br/> |
 | `separator` (optional) | <br/>Separator that you can use in the .csv file when you don't want the separator to be a comma. <br/><br/> |
 | `extended` (optional) | <br/>Includes the details of the commissions in the report.<br/><br/> |

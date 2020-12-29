@@ -77,8 +77,8 @@ Ajudamos você a detectar comportamentos infrequentes dos clientes com o nosso c
 
 #### Possíveis valores para VIEW
 
-| Valor                                                         | Seção                                                  |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Valor | Seção |
+| --- | --- |
 | *home* | Página principal de seu website. |
 | *search* | Página de busca ou lista de produtos. |
 | *item* | Página de um produto específico. |

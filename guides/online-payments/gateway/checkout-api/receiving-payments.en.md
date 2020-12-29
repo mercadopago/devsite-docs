@@ -25,11 +25,11 @@ indexable: false
 
 Before we begin with the integration changes, is important for you to know about these new concepts:
 
-|Attribute|Type|Description|
-|---|---|---|
-|`processing_mode`| String | Indicates the processing mode. The options are **gateway** or **aggregator**|
-|`merchant_account_id`| String | Indicates the merchant ID. Can only be used when `processing_mode` is equal to gateway |
-|`payment_method_option_id`| String | Identifies unequivocally the representation of a `payment_method` + `issuer` + `merchant_account_id`|
+| Attribute | Type | Description |
+| --- | --- | --- |
+| `processing_mode` | String | Indicates the processing mode. The options are **gateway** or **aggregator**|
+| `merchant_account_id` | String | Indicates the merchant ID. Can only be used when `processing_mode` is equal to gateway |
+| `payment_method_option_id` | String | Identifies unequivocally the representation of a `payment_method` + `issuer` + `merchant_account_id` |
 
 ## Integration
 
@@ -124,10 +124,10 @@ You need to retrieve the value of the `payment_method_option_id` attribute for t
 
 In every payment you can customize which services (`merchant_services`) you want to use.
 
-|Services|Type|Description|
-|---|---|---|
-|`fraud_scoring`|Boolean| If you want to use automatic fraud prevention scoring or not|
-|`fraud_manual_review`| Boolean| If you want to use Mercado Pago's manual review (representatives) |
+| Services | Type | Description |
+| --- | --- | --- |
+| `fraud_scoring` | Boolean | If you want to use automatic fraud prevention scoring or not. |
+| `fraud_manual_review` | Boolean | If you want to use Mercado Pago's manual review (representatives). |
 
 ```curl
 curl -X POST \

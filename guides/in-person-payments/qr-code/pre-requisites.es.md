@@ -15,15 +15,15 @@ sites_supported:
 
 Sabemos que algunos términos son nuevos. Antes de empezar, te los dejamos a mano. 
 
-| Término                            | Descripción                                                  |
-| -----------------------------------| ------------------------------------------------------------ | 
-| Credenciales (Credentials)         | Tus credenciales son las claves que te proporcionamos para que puedas configurar tus integraciones. Para poder encontrarlas, ve a tus [credenciales]([FAKER][CREDENTIALS][URL]) y selecciona las productivas. |
+| Término | Descripción |
+| --- | --- |
+| Credenciales (Credentials) | Tus credenciales son las claves que te proporcionamos para que puedas configurar tus integraciones. Para poder encontrarlas, ve a tus [credenciales]([FAKER][CREDENTIALS][URL]) y selecciona las productivas. |
 | `ACCESS_TOKEN` | Es la clave privada de la aplicación para generar pagos, dentro de la sección [credenciales]([FAKER][CREDENTIALS][URL]). Debes usarla para identificarte en tus integraciones. Siempre usa las del Modo Producción. |
 | `USER_ID` | ID de la cuenta de Mercado Pago. Se compone por los últimos dígitos del `access_token` posteriores al último guión medio. También lo puedes encontrar como _`COLLECTOR_ID`_. |
-| `SPONSOR_ID` |  Es el `USER_ID` del usuario proveedor del sistema integrado con Mercado Pago. El `SPONSOR_ID` no puede ser igual al `USER_ID`. |
+| `SPONSOR_ID` | Es el `USER_ID` del usuario proveedor del sistema integrado con Mercado Pago. El `SPONSOR_ID` no puede ser igual al `USER_ID`. |
 | Sucursal (Store) | Es una **tienda física** en la que tus clientes pueden adquirir tus productos o servicios. Puedes tener varias sucursales en una misma cuenta. |
 | Caja (POS) | Es un **punto de venta** que existe en una sucursal o tienda física. Cada caja tendrá vinculado un código QR unívoco. |
-| Orden | Es el pedido realizado por tu cliente. Contiene un listado de productos con su monto asociado.
+| Orden | Es el pedido realizado por tu cliente. Contiene un listado de productos con su monto asociado. |
 
 > Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/resources/faqs/credentials/).
 

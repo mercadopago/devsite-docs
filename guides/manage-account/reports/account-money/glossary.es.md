@@ -4,8 +4,8 @@
 
 Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado con todos ellos. ¡Usa este glosario para no perderte!
 
-| Nombre de la columna del reporte  | Qué significa |
-| ----------------------------------- |	--------------- |
+| Nombre de la columna del reporte | Qué significa |
+| --- | --- |
 | EXTERNAL_REFERENCE | <br/> ID que ayuda a identificar el origen de la operación. Por ejemplo, puede ser la venta a través del ID de la orden o el envío (si es una compra de carrito) o del ID propio provisto por el vendedor en caso de una integración externa.<br/><br/> Ten en cuenta que es posible que este campo esté vacío para algunos casos como el pago de facturas o un envío de dinero, entre otros. <br/> <br/> |
 | SOURCE_ID | ID de operación en Mercado Pago (por ejemplo, el pago de una venta). |
 | USER_ID | Código de la cuenta del vendedor. (Cust ID) |
@@ -32,14 +32,14 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | TAX_DETAIL | <br/> Descripción del impuesto retenido por operación en el `TAXES_AMOUNT`. ----[mla]---- Puede tomar los siguientes valores según la jurisdicción: <br/>cordoba<br/>mendoza<br/>la_pampa<br/>santa_fe<br/>tucuman<br/>entre_rios<br/>catamarca<br/>neuquen<br/>santiago_del_estero<br/>rio_negro<br/>jujuy ------------ <br/><br/> |
 | POS_ID | ID de caja si el pago se realiza a través de un comercio físico. |
 | POS_NAME | Nombre de caja para el pago realizado a través de un comercio físico. |
-| EXTERNAL_POS_ID |  ----[mla, mlm]---- ID de caja definido por el usuario para el pago realizado a través de un comercio físico. ------------ |
+| EXTERNAL_POS_ID | ----[mla, mlm]---- ID de caja definido por el usuario para el pago realizado a través de un comercio físico. ------------ |
 | STORE_ID | ID de sucursal si el pago se realiza a través de un comercio físico. |
-| STORE_NAME |  ----[mla, mlm]---- Nombre de sucursal para el pago realizado a través de un comercio físico. ------------ |
-| EXTERNAL_STORE_ID |  ----[mla, mlm]---- ID de sucursal definido por el usuario para el pago realizado a través de un comercio físico. ------------ |
-| ORDER_ID |  ----[mla, mlm]---- Orden de compra. ------------ |
-| SHIPPING_ID |  ----[mla, mlm]---- Identificador de envío. ------------ |
-| SHIPMENT_MODE |  ----[mla, mlm]---- Modalidad de envío. ------------ |
-| PACK_ID |  ----[mla, mlm]---- Identificador del paquete en el carrito. ------------ |
+| STORE_NAME | ----[mla, mlm]---- Nombre de sucursal para el pago realizado a través de un comercio físico. ------------ |
+| EXTERNAL_STORE_ID | ----[mla, mlm]---- ID de sucursal definido por el usuario para el pago realizado a través de un comercio físico. ------------ |
+| ORDER_ID | ----[mla, mlm]---- Orden de compra. ------------ |
+| SHIPPING_ID | ----[mla, mlm]---- Identificador de envío. ------------ |
+| SHIPMENT_MODE | ----[mla, mlm]---- Modalidad de envío. ------------ |
+| PACK_ID | ----[mla, mlm]---- Identificador del paquete en el carrito. ------------ |
 | TAXES_DISAGGREGATED | Impuestos desagregados en formato JSON. |
 
 <hr/>

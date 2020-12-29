@@ -23,12 +23,12 @@ After December 12th, 2019 version 0 will stop having support.
 
 The shutdown will involve the following resources:
 
-| Use                     | Method | Deprecated resource URI                  |
-|-------------------------|--------|------------------------------------------|
-| Payment                 | `POST` | /checkout/custom/create_payment          |
-| Payment Methods         | `GET`  | /checkout/custom/payment_methods         |
-| Payment Methods search  | `GET`  | /checkout/custom/payment_methods/search  |
-| Card issuers            | `GET`  | /checkout/custom/card_issuers            |
+| Use | Method | Deprecated resource URI |
+| --- | --- | --- |
+| Payment | `POST` | /checkout/custom/create_payment |
+| Payment Methods | `GET` | /checkout/custom/payment_methods |
+| Payment Methods search | `GET` | /checkout/custom/payment_methods/search |
+| Card issuers | `GET` | /checkout/custom/card_issuers |
 
 You can find the equivalent resources in [this article](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-api/introduction/).
 
@@ -64,12 +64,12 @@ You can find all the necessary information in the [migration guide](https://www.
 
 We always want to give you the best experience. Therefore, we list the modules that have official support from Mercado Pago and that you can have personalized service as needed:
 
-| Module                  | Versions                                                                                    |
-|-------------------------|---------------------------------------------------------------------------------------------|
-| WooCommerce             | WordPress 3.1.x - 4.9.x, WooCommerce 2.6.x - 3.4.x                                          | 
-| PrestaShop              | Prestashop 1.6.x - 1.7.x                                                                    |
-| Magento                 | Community Edition 1.8.x - 1.9.x, Enterprise Edition 1.11.x - 1.14.x, Magento 2.0.0 - 2.3.x  | 
-| Shopify                 | -                                                                                           |
+| Module | Versions |
+| --- | --- |
+| WooCommerce | WordPress 3.1.x - 4.9.x, WooCommerce 2.6.x - 3.4.x |
+| PrestaShop | Prestashop 1.6.x - 1.7.x |
+| Magento| Community Edition 1.8.x - 1.9.x, Enterprise Edition 1.11.x - 1.14.x, Magento 2.0.0 - 2.3.x |
+| Shopify | - |
 
 [View modules](https://www.mercadopago.com.ar/developers/en/guides/plugins).
 
@@ -86,11 +86,11 @@ We have updated our security protocols to meet the highest security standards.
 To continue using Mercado Pago without problems, you must do it from the versions supported by our domains:
 
 
-| Browser                 | Version            |
-|-------------------------|--------------------|
-| Internet Explorer       | 9 or later         | 
-| Chrome                  | 6 or later         |
-| Android Browser         | 2.3.3 or later     | 
+| Browser | Version |
+| --- | --- |
+| Internet Explorer | 9 or later |
+| Chrome | 6 or later |
+| Android Browser | 2.3.3 or later |
 
 
 > Keep in mind that you will not be able to enter any Mercado Pago website using unsupported browsers.

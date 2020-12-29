@@ -149,12 +149,12 @@ Puedes utilizar el campo `range` para buscar sobre un campo de fecha específico
 
 En el caso en que tengas muchos resultados deberás paginar los pagos utilizando los siguientes atributos:
 
-| Atributo |           Descripción           |         Ejemplo          |
-| :------------------- | :------------------------- | :--------------------------- |
-| `limit`            | Cantidad de registros devueltos (valor máximo = 50). Si no se define, devuelve hasta 30 registros encontrados.          | `limit=50`          |
-| `offset`            | Posición a partir de la cual se desea que devuelvan los registros. Por defecto el valor es 0 (máximo permitido: 10000).          | `offset=100`     |
-| `sort`         | Establece un criterio a partir del cual se ordenan los resultados. | `sort=external_reference` |
-| `criteria`         | Orden de los datos. Puede ser asc (ascendente) o desc (descendente).   | `criteria=asc`   |
+| Atributo | Descripción | Ejemplo |
+| :--- | :--- | :--- |
+| `limit` | Cantidad de registros devueltos (valor máximo = 50). Si no se define, devuelve hasta 30 registros encontrados. | `limit=50` |
+| `offset` | Posición a partir de la cual se desea que devuelvan los registros. Por defecto el valor es 0 (máximo permitido: 10000). | `offset=100` |
+| `sort` | Establece un criterio a partir del cual se ordenan los resultados. | `sort=external_reference` |
+| `criteria` | Orden de los datos. Puede ser asc (ascendente) o desc (descendente). | `criteria=asc` |
 
 Ejemplo de paginación:
 

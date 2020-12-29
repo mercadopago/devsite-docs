@@ -25,16 +25,16 @@ The **Aggregator Model** is the one offered by default in Mercado Pago unless th
 
 _Main differences between the two models:_
 
-|Trait| Aggregator Model | Gateway Model |
-|---|:---:|:---:|
-|Processing | ✔ | ✔ |
-|Fraud Prevention (Scoring) | ✔ | ✔ (*) |
-|Fraud Prevention (Manual Review) | ✔ | ✔ (*) |
-|Reconciliation (with Mercado Pago) | ✔ | ✔ |
-|Reconciliation (with Acquirers & Issuers) | Included | Not offered |
-|Financing (Installments & Promotions) | Included | Not applicable |
-|Chargebacks (Management) | Included | Not offered |
-|Chargebacks (Coverage) |Included | Not offered |
+| Trait | Aggregator Model | Gateway Model |
+| --- | :---: | :---: |
+| Processing | ✔ | ✔ |
+| Fraud Prevention (Scoring) | ✔ | ✔ (*) |
+| Fraud Prevention (Manual Review) | ✔ | ✔ (*) |
+| Reconciliation (with Mercado Pago) | ✔ | ✔ |
+| Reconciliation (with Acquirers & Issuers) | Included | Not offered |
+| Financing (Installments & Promotions) | Included | Not applicable |
+| Chargebacks (Management) | Included | Not offered |
+| Chargebacks (Coverage) |Included | Not offered |
 
 > (\*) Optional
 

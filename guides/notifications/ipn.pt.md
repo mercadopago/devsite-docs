@@ -43,11 +43,11 @@ Lembre-se que esta comunicação é feita exclusivamente entre os servidores do 
 
 Depois disso, você poderá obter a informação completa do recurso notificado acessando a API correspondente em `https://api.mercadopago.com/`:
 
-Tipo               | URL                                                         | Documentação
------------------- | ----------------------------------------------------------- | --------------------
-payment            | /v1/payments/[ID] | [ver documentação](https://www.mercadopago.com.ar/developers/pt/reference/payments/_payments_id/get/)
-chargebacks    	   | /v1/chargebacks/[ID]| -
-merchant_orders    | /merchant\_orders/[ID]           | [ver documentação](https://www.mercadopago.com.ar/developers/pt/reference/merchant_orders/_merchant_orders_id/get/)
+| Tipo | URL | Documentação |
+| --- | --- | --- |
+| payment | /v1/payments/[ID] | [ver documentação](https://www.mercadopago.com.ar/developers/pt/reference/payments/_payments_id/get/) |
+| chargebacks | /v1/chargebacks/[ID]| - |
+| merchant_orders | /merchant\_orders/[ID] | [ver documentação](https://www.mercadopago.com.ar/developers/pt/reference/merchant_orders/_merchant_orders_id/get/) |
 
 
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma, por exemplo: atualizar um pagamento aprovado o un pedido fechado.
@@ -133,8 +133,8 @@ Mais informações na [Referência de API](https://www.mercadopago.com.br/develo
 A **pesquisa** pode ser realizada por `external_reference` de duas formas:
 
 
-| Formas	|	Descrição		|
-| ----------- | ----------------- |
+| Formas | Descrição |
+| --- | --- |
 | **Manual** | O ponto de venda deve incluir um botão para realizar a pesquisa. |
 | **Automática** | Após um tempo razoável sem ter recebido qualquer notificação, é iniciada uma pesquisa da ordem a cada um intervalo de, por exemplo, 5 segundos. |
 

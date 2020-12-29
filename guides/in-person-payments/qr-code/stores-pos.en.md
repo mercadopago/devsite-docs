@@ -94,10 +94,10 @@ It is a **point of sale** that exists in a branch or physical store. Each POS wi
 
 Once you created your stores, the next step is to generate your POS. Some considerations:
 
-| Term       |  Description  | 
-| ------------- | -------------------------------------------- |
-| `EXTERNAL_STORE_ID`     | Links a Point of Sale (POS) to a store. This is a required field and same as the Store *external_id* previously created. |
-| `EXTERNAL_ID`           | Identifies each Point of Sale (POS). This is required and can’t be modified nor repeated on the same Mercado Pago account. |
+| Term |  Description |
+| --- | --- |
+| `EXTERNAL_STORE_ID` | Links a Point of Sale (POS) to a store. This is a required field and same as the Store *external_id* previously created. |
+| `EXTERNAL_ID` | Identifies each Point of Sale (POS). This is required and can’t be modified nor repeated on the same Mercado Pago account. |
 
 
 [[[

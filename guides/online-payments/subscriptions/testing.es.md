@@ -66,11 +66,11 @@ Pruebas con tarjeta de crédito
 
 ### Tarjetas de prueba
 
-Tarjeta |   Número  | Código de seguridad   |   Fecha de vencimiento
---- |	--- | --- | --- 
-Mastercard       |  5031 7557 3453 0604 |   123 | 11/25            
-Visa             |  4509 9535 6623 3704 |   123 | 11/25   
-American Express |  3711 803032 57522   |   1234| 11/25   
+| Tarjeta | Número | Código de seguridad | Fecha de vencimiento |
+| --- | --- | --- | --- |
+| Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
+| Visa | 4509 9535 6623 3704 | 123 | 11/25 |
+| American Express | 3711 803032 57522 | 1234 | 11/25 |
 
 ------------
 ### Próximos pasos

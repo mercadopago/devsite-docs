@@ -121,8 +121,8 @@ Puedes establecer la cantidad máxima o mínima de cuotas y la aplicación de au
     | --- | --- |
     | Venta a plazos hasta | Selecciona el número máximo de cuotas que quieras ofrecer. |
     | Valor mínimo de cuota R$ | Indica el valor mínimo de cuotas que quiera ofrecer en reales. |
-    | Solo pedidos superiores a R$ | Configura si quieres utilizar un rango de valor mínimo para aceptar pedidos en tu tienda. 
-    | Descuentos para pagos en efectivo (%) | Ingresa el valor de descuento para pagos en efectivo que quieras. 
+    | Solo pedidos superiores a R$ | Configura si quieres utilizar un rango de valor mínimo para aceptar pedidos en tu tienda. |
+    | Descuentos para pagos en efectivo (%) | Ingresa el valor de descuento para pagos en efectivo que quieras. |
     | Adición/Descuento | Aplica un aumento o descuento en el pedido. | 
 
 1. Haz clic en “Cerrar” y después en “Guardar cambios”.
@@ -153,10 +153,10 @@ Para **configurar la información de los pedidos en tu tienda**, sigue estos pas
     | --- | --- |
     | Información al usuario sobre el tipo de pago | Instrucciones al momento de realizar el pago. |
     | Información al usuario sobre el tipo de pago | Instrucciones para mostrarse luego de finalizado el pago |
-    | Estado de nuevos pedidos | Selecciona un estado para los nuevos pedidos. 
-    | Estado de pedidos aprobados | Selecciona un estado para los pedidos aprobados. 
+    | Estado de nuevos pedidos | Selecciona un estado para los nuevos pedidos. |
+    | Estado de pedidos aprobados | Selecciona un estado para los pedidos aprobados. |
     | Estado de pedidos cancelados | Selecciona un estado para los pedidos cancelados. |
-    | Usar campaña de descuento | Informa si tienes disponibles cupones de descuentos desde tu cuenta de Mercado Pago. 
+    | Usar campaña de descuento | Informa si tienes disponibles cupones de descuentos desde tu cuenta de Mercado Pago. |
 
 1. Haz clic en “Cerrar” y después en “Guardar cambios”. 
 <p>&nbsp;</p>

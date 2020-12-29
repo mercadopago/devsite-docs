@@ -437,7 +437,7 @@ Confira os campos que você pode configurar para ajustar suas preferências ante
 
 
 | Campos configuráveis | Descrição |
-| ----------| ---------------------- |
+| --- | --- |
 | `sftp_info` (opcional) | <br/>Indica os dados para subir a SFTP quando precisar.<br/><br/> |
 | `separator` (opcional) | <br/>Separador que pode ser usado no arquivo .csv quando não quiser que o separador seja uma vírgula (‘,’). <br/><br/> |
 | `extended` (opcional) | <br/>Inclui o detalhe das comissões no relatório.<br/><br/> |

@@ -150,12 +150,12 @@ You can use the `range` field to search a specific date field, e.g. `date_create
 
 If you have too many results, you must page the payments using the following attributes:
 
-| Attribute            |           Description                                                                                        |         Example           |
-| :------------------- | :----------------------------------------------------------------------------------------------------------- | :------------------------ |
-| `limit`              | Number of results shown (max value = 50). If it is not defined, it will return up to 30 results found.       | `limit=50`                |
-| `offset`             | Position from which you want the results to be returned. By default, the value is 0 (max. allowed: 10000).   | `offset=100`              |
-| `sort`               | It sets a criterion to sort the results.                                                                     | `sort=external_reference` |
-| `criteria`           | Order of information. It may be asc (ascending) or desc (descending).                                        | `criteria=asc`            |
+| Attribute | Description | Example |
+| :--- | :--- | :--- |
+| `limit`| Number of results shown (max value = 50). If it is not defined, it will return up to 30 results found. | `limit=50`|
+| `offset` | Position from which you want the results to be returned. By default, the value is 0 (max. allowed: 10000). | `offset=100`|
+| `sort` | It sets a criterion to sort the results. | `sort=external_reference` |
+| `criteria` | Order of information. It may be asc (ascending) or desc (descending). | `criteria=asc` |
 
 Example of pagination:
 

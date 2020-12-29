@@ -94,10 +94,10 @@ Es un **punto de venta** que existe en una sucursal o tienda física. Cada caja 
 
 Al tener creadas tus sucursales, puedes crear tus cajas. Ten en cuenta lo siguiente:
 
-| Término       |  Descripción                     |
-| ------------- | ---------------------------------------------------- |
-| `EXTERNAL_STORE_ID`     | Vincula la caja con la sucursal. Es un campo requerido y es el mismo *external_id* de la Sucursal previamente creada. |
-| `EXTERNAL_ID`           | Identifica unívocamente cada caja. Es requerido y no se puede modificar, tampoco repetir en una misma cuenta de Mercado Pago. También lo puedes encontrar como `EXTERNAL_POS_ID`.|
+| Término | Descripción |
+| --- | --- |
+| `EXTERNAL_STORE_ID` | Vincula la caja con la sucursal. Es un campo requerido y es el mismo *external_id* de la Sucursal previamente creada. |
+| `EXTERNAL_ID` | Identifica unívocamente cada caja. Es requerido y no se puede modificar, tampoco repetir en una misma cuenta de Mercado Pago. También lo puedes encontrar como `EXTERNAL_POS_ID`. |
 
 
 [[[

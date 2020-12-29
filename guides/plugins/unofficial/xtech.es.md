@@ -78,17 +78,17 @@ Para elegir redireccionar el pago, debe seleccionar ** DESACTIVADO ** en el camp
 
 A continuación se muestra la descripción de cada campo del formulario de configuración en el panel de administración de la plataforma:
 
-Item | Valores | Descripción
----------|----------|---------
-Status | Activo / Inactivo | Indica si el método de pago está habilitado / deshabilitado en la página de pago
-Nombre de pestaña de pago |  | Indica el nombre de la pestaña para el método de pago
-Descuento de boleto (%) |  | Cantidad a descontar cuando el método de pago seleccionado es un recibo bancario
-Cupón de pago del mercado | Encendido / Apagado | Habilite el cupón de descuento exclusivo de Marketplace pagado
-Pago transparente | Encendido / Apagado | Indica el tipo de pago. Encendido habilita el pago transparente mientras que deshabilitado habilita el pago de redireccionamiento
-Nombre de factura de tarjeta de crédito | | Indica el nombre que aparecerá en la factura del cliente, sugiero usar el nombre de la tienda. Límite máximo de 11 caracteres.
-Formas de pago | Tarjeta de crédito / transferencia bancaria | Habilita los métodos de pago que aparecerán en la página de pago.
-Número de cuotas | | Indica la cantidad máxima de cuotas que se aceptarán al finalizar la compra.
-Valor mínimo de la cuota | | Indica la cantidad más pequeña que puede tener el paquete.
+| Item | Valores | Descripción
+| --- | --- | --- |
+| Status | Activo / Inactivo | Indica si el método de pago está habilitado / deshabilitado en la página de pago
+| Nombre de pestaña de pago |  | Indica el nombre de la pestaña para el método de pago
+| Descuento de boleto (%) |  | Cantidad a descontar cuando el método de pago seleccionado es un recibo bancario
+| Cupón de pago del mercado | Encendido / Apagado | Habilite el cupón de descuento exclusivo de Marketplace pagado
+| Pago transparente | Encendido / Apagado | Indica el tipo de pago. Encendido habilita el pago transparente mientras que deshabilitado habilita el pago de redireccionamiento
+| Nombre de factura de tarjeta de crédito | | Indica el nombre que aparecerá en la factura del cliente, sugiero usar el nombre de la tienda. Límite máximo de 11 caracteres.
+| Formas de pago | Tarjeta de crédito / transferencia bancaria | Habilita los métodos de pago que aparecerán en la página de pago.
+| Número de cuotas | | Indica la cantidad máxima de cuotas que se aceptarán al finalizar la compra.
+| Valor mínimo de la cuota | | Indica la cantidad más pequeña que puede tener el paquete.
 
 ## Ejemplos
 
