@@ -47,7 +47,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 >
 > [Como usar o relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/how-to-use)
 
-> RIGHT_BUTTON_REQUIRED_PT
+> RIGHT_BUTTON
 >
 > Gere seus relatórios
 >

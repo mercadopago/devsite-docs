@@ -52,11 +52,11 @@ All the options you have available when downloading your report.
 
 > LEFT_BUTTON_RECOMMENDED_EN
 >
-> Introduction to the Release report
+> Glossary
 >
-> Find out what the Release report is and what it is for.
+> Know what each term means and the detail of the columns that make up the report.
 >
-> [Introduction to the Release Report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction)
+> [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/glossary)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
