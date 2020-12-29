@@ -1,7 +1,6 @@
 ---
   sites_supported:
       - mla
-      - global
 ---
 
 # Special considerations for Argentina
