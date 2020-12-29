@@ -23,15 +23,15 @@ Instale o [app extension do nosso checkout transparente](https://apps.shopify.co
 
 ### O que eu posso fazer com o checkout transparente do Mercado Pago?
 
-| Características          | Descrição                                                                                        |
-|---|---|
-| Compras em uma etapa     | Ofereça uma experiência de compra clara e rápida, desenvolvida na sua loja e na mesma página.    |
-| Experiência mobile       | Ofereça um fluxo de compras pensado e otimizado para dispositivos móveis.                        |
-| Envios                   | Conecte o checkout com sua ferramenta de envios e ofereça entregas durante o processo de compra. |
-| Ads tracking             | Acompanhe suas campanhas de marketing em detalhes ao longo de processo.                          |
-| Meios de pagamento       | Aceite pagamentos com cartão, boleto e dinheiro na conta Mercado Pago.                           |
-| Parcelamento             | Venda parcelado e ofereça as promoções disponíveis.                                              |
-| Pagamento como convidado | Permita que seus clientes paguem sem a necessidade de terem uma conta no Mercado Pago.           |
+| Características | Descrição |
+| --- | --- |
+| Compras em uma etapa | Ofereça uma experiência de compra clara e rápida, desenvolvida na sua loja e na mesma página. |
+| Experiência mobile | Ofereça um fluxo de compras pensado e otimizado para dispositivos móveis. |
+| Envios | Conecte o checkout com sua ferramenta de envios e ofereça entregas durante o processo de compra. |
+| Ads tracking | Acompanhe suas campanhas de marketing em detalhes ao longo de processo. |
+| Meios de pagamento | Aceite pagamentos com cartão, boleto e dinheiro na conta Mercado Pago. |
+| Parcelamento | Venda parcelado e ofereça as promoções disponíveis. |
+| Pagamento como convidado | Permita que seus clientes paguem sem a necessidade de terem uma conta no Mercado Pago. |
 
 
 ### Como instalar o checkout transparente?
@@ -98,14 +98,14 @@ Configure nosso módulo para finalizar a compra no site do Mercado Pago durante 
 
 ### O que eu posso fazer com o gateway de pagamentos do Mercado Pago?
 
-| Características          | Descrição                                                                                      |
-|---|---|
-| Interface Mercado Pago   | Nós cuidamos disso! Você não precisa se preocupar com a implementação e design de um checkout. |
-| Ads tracking             | Acompanhe suas campanhas de marketing em detalhes ao longo do processo.                        |
-| Meios de pagamento       | Aceite pagamentos com cartão, boleto e dinheiro na conta Mercado Pago.                         |
-| Parcelamento             | Venda parcelado e ofereça as promoções disponíveis.                                            |
-| Pagamento como convidado | Permita que seus clientes paguem sem a necessidade de terem uma conta no Mercado Pago.         |
-| Descontos                | Use cupons para oferecer promoções aos seus clientes.                                          |
+| Características | Descrição |
+| --- | --- |
+| Interface Mercado Pago | Nós cuidamos disso! Você não precisa se preocupar com a implementação e design de um checkout. |
+| Ads tracking | Acompanhe suas campanhas de marketing em detalhes ao longo do processo. |
+| Meios de pagamento | Aceite pagamentos com cartão, boleto e dinheiro na conta Mercado Pago. |
+| Parcelamento | Venda parcelado e ofereça as promoções disponíveis. |
+| Pagamento como convidado | Permita que seus clientes paguem sem a necessidade de terem uma conta no Mercado Pago. |
+| Descontos | Use cupons para oferecer promoções aos seus clientes. |
 
 
 ### Como configurar o módulo do Mercado Pago?
@@ -133,11 +133,11 @@ Siga estas etapas para processar pagamentos com o Checkout Pro:
 O diagrama a seguir representa a correlação entre os status de um pagamento no Mercado Pago e o status do pedido no Shopify.
 
 | Status do pagamento | Mercado Pago status | Shopify order status |
-|---|---|---|
-| Aprovado            | Approved            | Completed            |
-| Pendente            | Pending             | Pending              |
-| Em processamento    | In process          | Pending              |
-| Em mediação         | In mediation        | Pending              |
-| Cancelado           | Cancelled           | Failed               |
-| Reembolsado         | Refunded            | Failed               |
-| Recusado            | Rejected            | Failed               |
+| --- | --- | --- |
+| Aprovado | Approved | Completed |
+| Pendente | Pending | Pending |
+| Em processamento | In process | Pending |
+| Em mediação | In mediation | Pending |
+| Cancelado | Cancelled | Failed |
+| Reembolsado | Refunded | Failed |
+| Recusado | Rejected | Failed |
