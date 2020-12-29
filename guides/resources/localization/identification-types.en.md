@@ -64,8 +64,8 @@ The document types accepted by country are listed below.
 | :--- | :--- |
 | Documento Nacional de Identidad | `DNI` |
 | Cédula de Identidad | `CI` |
-| Libreta Cívica | `LC`  |
-| Libreta de Enrolamiento   | `LE`  |
+| Libreta Cívica | `LC` |
+| Libreta de Enrolamiento | `LE` |
 | Others | `Otro` |
 
 ### Brazil
@@ -96,7 +96,7 @@ The document types accepted by country are listed below.
 
 | Identification type | ID |
 | :--- | :--- |
-| Documento Nacional de Identidad  | `DNI` |
+| Documento Nacional de Identidad | `DNI` |
 | Carné de Extranjería | `CE` |
 | Registro Único de Contribuyentes | `RUC` |
 

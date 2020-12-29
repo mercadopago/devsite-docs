@@ -42,7 +42,7 @@ Take into account that you only need to change the example values. Fixed values 
 
 
 
-| ID | Sub ID | Length | Fixed value | Example value
+| ID | Sub ID | Length | Fixed value | Example value |
 | --- | --- | --- | --- | --- |
 | 00 | - | 02 | 01 | - |
 | 01 | - | 02 | 12 | - |
