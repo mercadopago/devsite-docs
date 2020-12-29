@@ -43,30 +43,30 @@ Checkout Pro is an integration that allows you to **charge your customers throug
 ## Checkout Pro vs. other Mercado Pago tools
 
 ----[mla, mlb]----
-                                   | Checkout Pro|Web Tokenize Checkout|      API
-:---  | :---: | :---: | :---:
-Integration difficulty		  	      |     Low    |       Medium         |     High
-UI/UX Design 							  	       |      ✔      |         ✔           |
-Conversion optimization	   |      ✔      |         ✔           |
-Approval optimization       |      ✔      |                     |  
-Guest payments        	     |      ✔      |         ✔           |      ✔
-Registered users payments          |      ✔      |                     |
-Fraud prevention               	     |      ✔      |         ✔           |      ✔
-Order completed page		         |      ✔      |                     |
-Split payments		           |      ✔      |                     |
+                                   | Checkout Pro | Web Tokenize Checkout |      API |
+| :---  | :---: | :---: | :---: |
+| Integration difficulty		  	      |     Low    |       Medium         |     High |
+| UI/UX Design 							  	       |      ✔      |         ✔           |
+| Conversion optimization	   |      ✔      |         ✔           |
+| Approval optimization       |      ✔      |                     | 
+| Guest payments        	     |      ✔      |         ✔           |      ✔ |
+| Registered users payments          |      ✔      |                     |
+| Fraud prevention               	     |      ✔      |         ✔           |      ✔ |
+| Order completed page		         |      ✔      |                     |
+| Split payments		           |      ✔      |                     |
 
 ------------
 ----[mlm, mlu, mco, mlc, mpe]----
-                                   | Checkout Pro|Web Tokenize Checkout|      API
-:---  | :---: | :---: | :---:
-Integration difficulty		  	      |     Low    |       Medium         |     High
-UI/UX Design 							  	       |      ✔      |         ✔           |
-Conversion optimization	   |      ✔      |         ✔           |
-Approval optimization        |      ✔      |                     |  
-Guest Payments      	     |      ✔      |         ✔           |      ✔
-Registered users payments          |      ✔      |                     |
-Fraud prevention               	     |      ✔      |         ✔           |      ✔
-Order completed page		         |      ✔      |                     |
+                                   | Checkout Pro | Web Tokenize Checkout |      API
+| :---  | :---: | :---: | :---: |
+| Integration difficulty		  	      |     Low    |       Medium         |     High  |
+| UI/UX Design 							  	       |      ✔      |         ✔           |
+| Conversion optimization	   |      ✔      |         ✔           |
+| Approval optimization        |      ✔      |                     | 
+| Guest Payments      	     |      ✔      |         ✔           |      ✔  |
+| Registered users payments          |      ✔      |                     |
+| Fraud prevention               	     |      ✔      |         ✔           |      ✔  |
+| Order completed page		         |      ✔      |                     |
 
 ------------
 
