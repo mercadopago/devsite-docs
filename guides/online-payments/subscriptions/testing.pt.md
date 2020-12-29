@@ -81,7 +81,7 @@ Testes com cartão de crédito
 >
 > Atualize, altere ou cancele suas assinaturas.
 >
-> [Integração avançada](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/advanced-integration/)
+> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/advanced-integration/)
 
 > RIGHT_BUTTON
 >
@@ -89,4 +89,4 @@ Testes com cartão de crédito
 >
 > Caso você tenha problemas, explicamos a lógica de novas tentativas de cobrança. 
 >
-> [Novas tentativas de cobrança](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/payment-retry/)
+> [Novas tentativas de cobrança](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/payment-retry/)

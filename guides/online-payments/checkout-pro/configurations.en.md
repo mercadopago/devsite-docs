@@ -888,7 +888,7 @@ To activate the payment option, go to your <a href="https://www.mercadopago.com.
 >
 > Optimize your integration and improve the management of your sales.
 >
-> [Advanced Integration](http://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/advanced-integration/)
+> [Advanced Integration](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/advanced-integration/)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -896,4 +896,4 @@ To activate the payment option, go to your <a href="https://www.mercadopago.com.
 >
 > Adapt the style of your brand in the buying experience.
 >
-> [Customization](http://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/customizations/)
+> [Customization](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/customizations/)

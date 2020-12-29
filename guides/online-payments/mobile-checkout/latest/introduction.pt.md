@@ -64,4 +64,4 @@ pod 'MercadoPagoSDK'
 > Lembre-se de que o suporte ativo é fornecido apenas para a versão principal mais recente e suporte passivo para o anterior, por isso recomendamos uma migração para a nova versão.
 
 Pode-se encontrar a referência dos métodos nos seguintes links: [Documentação
- Android](http://mercadopago.github.io/px-android/) - [Documentação iOS](http://mercadopago.github.io/px-ios/v4/)
+ Android](https://mercadopago.github.io/px-android/) - [Documentação iOS](https://mercadopago.github.io/px-ios/v4/)

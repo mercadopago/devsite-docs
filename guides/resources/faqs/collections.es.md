@@ -21,7 +21,7 @@ Cuando recibes dinero de una venta o cobras en tu negocio online tendrás el din
 >
 > Nota
 >
-> ¿Quieres saber cuándo estará disponible el dinero de una de tus ventas? Busca la operación entre tus [cobros acreditados](http://www.mercadopago.com.ar/ayuda/payments), y en el detalle te diremos la fecha exacta.
+> ¿Quieres saber cuándo estará disponible el dinero de una de tus ventas? Busca la operación entre tus [cobros acreditados](https://www.mercadopago.com.ar/ayuda/payments), y en el detalle te diremos la fecha exacta.
 ------------
 ----[mlm]----
 
@@ -43,7 +43,7 @@ Cuando recibes dinero de una venta o cobras en tu tienda online tendrás el dine
 >
 > Nota
 >
-> ¿Quieres saber cuándo estará disponible el dinero de una de tus ventas? Busca la operación entre tus [cobros acreditados](http://www.mercadopago.com.mx/ayuda/payments), y en el detalle te diremos la fecha exacta.
+> ¿Quieres saber cuándo estará disponible el dinero de una de tus ventas? Busca la operación entre tus [cobros acreditados](https://www.mercadopago.com.mx/ayuda/payments), y en el detalle te diremos la fecha exacta.
 ------------
 ----[mpe]----
 
@@ -65,7 +65,7 @@ Cuando recibes dinero de una venta o cobras en tu tienda online tendrás el dine
 >
 > Nota
 >
-> ¿Quieres saber cuándo estará disponible el dinero de una de tus ventas? Busca la operación entre tus [cobros acreditados](http://www.mercadopago.com.pe/ayuda/payments), y en el detalle te diremos la fecha exacta.
+> ¿Quieres saber cuándo estará disponible el dinero de una de tus ventas? Busca la operación entre tus [cobros acreditados](https://www.mercadopago.com.pe/ayuda/payments), y en el detalle te diremos la fecha exacta.
 
 ------------
 ----[mco]----
@@ -88,7 +88,7 @@ Cuando recibes dinero de una venta o cobras en tu tienda online tendrás el dine
 >
 > Nota
 >
-> ¿Quieres saber cuándo estará disponible el dinero de una de tus ventas? Busca la operación entre tus [cobros acreditados](http://www.mercadopago.com.co/ayuda/payments), y en el detalle te diremos la fecha exacta.
+> ¿Quieres saber cuándo estará disponible el dinero de una de tus ventas? Busca la operación entre tus [cobros acreditados](https://www.mercadopago.com.co/ayuda/payments), y en el detalle te diremos la fecha exacta.
 ------------
 ----[mlu]----
 
@@ -108,7 +108,7 @@ Cuando recibes dinero de una venta o cobras en tu tienda online tendrás el dine
 >
 > Nota
 >
-> ¿Quieres saber cuándo estará disponible el dinero de una de tus ventas? Busca la operación entre tus [cobros acreditados](http://www.mercadopago.com.uy/ayuda/payments), y en el detalle te diremos la fecha exacta.
+> ¿Quieres saber cuándo estará disponible el dinero de una de tus ventas? Busca la operación entre tus [cobros acreditados](https://www.mercadopago.com.uy/ayuda/payments), y en el detalle te diremos la fecha exacta.
 
 ------------
 ----[mlc]----
@@ -131,5 +131,5 @@ Cuando recibes dinero de una venta o cobras en tu tienda online tendrás el dine
 >
 > Nota
 >
-> Quieres saber cuándo estará disponible el dinero de una de tus ventas? Busca la operación entre tus [cobros acreditados](http://www.mercadopago.cl/ayuda/payments), y en el detalle te diremos la fecha exacta.
+> Quieres saber cuándo estará disponible el dinero de una de tus ventas? Busca la operación entre tus [cobros acreditados](https://www.mercadopago.cl/ayuda/payments), y en el detalle te diremos la fecha exacta.
 ------------

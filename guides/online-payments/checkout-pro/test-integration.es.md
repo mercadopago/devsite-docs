@@ -171,7 +171,7 @@ Al activarlas, verifica que las credenciales en tu integración sean las de la c
 >
 > Optimiza tu integración y mejora la gestión de tus ventas.
 >
-> [Integración avanzada](http://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/advanced-integration/)
+> [Integración avanzada](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/advanced-integration/)
 
 > RIGHT_BUTTON
 >
@@ -179,4 +179,4 @@ Al activarlas, verifica que las credenciales en tu integración sean las de la c
 >
 > Adapta el estilo de tu marca en la experiencia de compra.
 >
-> [Prueba](http://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/customizations/)
+> [Prueba](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/customizations/)

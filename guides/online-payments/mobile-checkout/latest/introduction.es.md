@@ -62,4 +62,4 @@ pod 'MercadoPagoSDK'
 > Si tienes la versión 3.x del Mobile Checkout integrado puedes visitar la [documentación de integración de la versión 3](https://www.mercadopago.com.ar/developers/es/guides/online-payments/mobile-checkout/v3/introduction).
 > Recuerda que solo se brinda soporte activo a la última versión major y soporte pasivo a la anterior por lo que recomendamos una migración a la nueva versión.
 
-Puedes encontrar la referencia de los métodos en los siguientes links: [Documentación Android](http://mercadopago.github.io/px-android/) - [Documentación iOS](http://mercadopago.github.io/px-ios/v4/)
+Puedes encontrar la referencia de los métodos en los siguientes links: [Documentación Android](https://mercadopago.github.io/px-android/) - [Documentación iOS](https://mercadopago.github.io/px-ios/v4/)

@@ -124,7 +124,7 @@ Accedes a nuestras herramientas exclusivas para vendedores:
 
 - Y solo pagas una [comisión por cada pago acreditado](https://www.mercadopago.com.pe/ayuda/cuanto-cuesta-recibir-pagos_2430).
 
-**¿Quieres probar por 30 días tu cuenta vendedor?**  [Hazlo ahora](http://www.mercadopago.com.pe/summary/seller-account-promo).
+**¿Quieres probar por 30 días tu cuenta vendedor?**  [Hazlo ahora](https://www.mercadopago.com.pe/summary/seller-account-promo).
 
 Al terminar el período de prueba tu cuenta personal se convertirá en cuenta vendedor automáticamente, para siempre.
 
@@ -161,7 +161,7 @@ Accedes a nuestras herramientas exclusivas para vendedores:
 
 - Y solo pagas 3,49% + $900 + IVA de cada pago acreditado.
 
-**¿Quieres probar por 30 días tu cuenta vendedor?**  [Hazlo ahora](http://www.mercadopago.com.co/summary/seller-account-promo).
+**¿Quieres probar por 30 días tu cuenta vendedor?**  [Hazlo ahora](https://www.mercadopago.com.co/summary/seller-account-promo).
 
 Al terminar el período de prueba tu cuenta personal se convertirá en cuenta vendedor automáticamente, para siempre.
 
@@ -198,7 +198,7 @@ Accedes a nuestras herramientas exclusivas para vendedores:
 
 - Y solo pagas una [comisión por cada pago acreditado](https://www.mercadopago.com.uy/ayuda/recibir-pagos-costos_3010).
 
-**¿Quieres probar por 30 días tu cuenta vendedor?**  [Hazlo ahora](http://www.mercadopago.com.uy/summary/seller-account-promo).
+**¿Quieres probar por 30 días tu cuenta vendedor?**  [Hazlo ahora](https://www.mercadopago.com.uy/summary/seller-account-promo).
 
 Al finalizar el período de prueba tu cuenta personal se convertirá en cuenta vendedor automáticamente, para siempre.
 
