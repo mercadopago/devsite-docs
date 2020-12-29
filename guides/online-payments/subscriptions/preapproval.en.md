@@ -135,7 +135,6 @@ $payment = $mp->post("/v1/payments", $payment_data);
 | México | 4075 5957 1648 3764 |5474 9254 3267 0366| no disponible |
 | Perú | 4009 1753 3280 6176 | no disponible | no disponible |
 | Uruguay | 4157 2362 1173 6486 |5808 8877 7464 1586| no disponible |
-| Venezuela | 4966 3823 3110 9310 |5177 0761 6430 0010| no disponibl |
 
 Also [you can use test cards of local payment methods in each country](https://www.mercadopago.com.ar/developers/en/guides/resources/localization/local-cards).
 Test all possible scenarios of approved, pending or rejected payment. To do this you must enter in the form in the field `card_holder_name` any of the following prefixes:
