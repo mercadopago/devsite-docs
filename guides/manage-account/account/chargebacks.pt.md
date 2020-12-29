@@ -36,7 +36,7 @@ Vamos te ajudar a detectar comportamentos incomuns dos clientes com o nosso cód
 
 #### Possíveis valores para `view`
 
-| Tipo | Descripción |
+| Valor | Seção |
 | --- | --- |
 | *home* | Página inicial do seu site. |
 | *search* | Página de pesquisa ou lista de produtos. |
