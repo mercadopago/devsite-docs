@@ -16,8 +16,8 @@
 Checkout options right for your business:
 We offer two checkout methods that make it easy to securely accept payments from anyone, anywhere.
 
-| Feature                                                   | Basic  Checkout   | Customized Checkout     |
-|---------------------------------------------------------- |-------------------|-------------------------|
+| Feature | Basic Checkout | Customized Checkout |
+| --- | --- | --- |
 | Credit card Payments                                      | ✔                 | ✔                       |
 | Other payment methods                                     | ✔                 | ✔                       |
 | Mercado Pago's interface                                  | ✔                 |                         |

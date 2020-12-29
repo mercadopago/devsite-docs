@@ -15,8 +15,8 @@
 
 O módulo do Mercado Pago para Opencart esta integrado com as funcionalidades a seguir:
 
-| Funcionalidade                                            | Checkout Pro      | API                     |
-|---------------------------------------------------------- |-------------------|-------------------------|
+| Funcionalidade | Checkout Pro | API |
+| --- | --- | --- |
 | Pagamento com Cartão de Crédito                           | ✔                 | ✔                       |
 | Outros Meios de Pagamento, como os Boletos                | ✔                 | ✔                       |
 | Interfaces pré-construídas do Mercado Pago                | ✔                 |                         |

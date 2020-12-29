@@ -15,8 +15,8 @@
 
 El módulo de Mercado Pago para Opencart tiene las siguientes funcionalidades:
 
-| Funcionalidades                                           | Checkout Básico   | Checkout Transparente   |
-|---------------------------------------------------------- |-------------------|-------------------------|
+| Funcionalidades | Checkout Básico | Checkout Transparente |
+| --- | --- | --- |
 | Pago con tarjeta de crédito                               | ✔                 | ✔                       |
 | Otros medios de pago                                      | ✔                 | ✔                       |
 | Interfaz provista por Mercado Pago                        | ✔                 |                         |
