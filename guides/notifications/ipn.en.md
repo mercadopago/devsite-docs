@@ -47,7 +47,7 @@ After that, you will be able to get full information about the notified resource
 
 | Type | URL | Documentation |
 | --- | --- | --- |
-payment | /v1/payments/[ID] | [see documentation](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_id/get/) 
+| payment | /v1/payments/[ID] | [see documentation](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_id/get/) |
 | chargebacks | /v1/chargebacks/[ID]| - |
 | merchant_orders | /merchant\_orders/[ID] | [see documentation](https://www.mercadopago.com.ar/developers/en/reference/merchant_orders/_merchant_orders_id/get/) |
 
