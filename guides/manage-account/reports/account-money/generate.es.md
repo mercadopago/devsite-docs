@@ -22,9 +22,9 @@ Programa cómo y con qué frecuencia quieres generar tus reportes.
 
 
 | Elemento | Características |
-| ------------ |	--------    |
-| Programacion | <br/>-  Diaria<br/>  -  Semanal<br/>-  Mensual<br/><br/> |
-| Generación  | <br/>-  Manual<br/><br/>  |
+| --- | --- |
+| Programacion | <br/>- Diaria<br/> - Semanal<br/>- Mensual<br/><br/> |
+| Generación | <br/>- Manual<br/><br/> |
 
 
 ### Estructura del reporte
@@ -33,13 +33,13 @@ Conoce las características de los elementos que conforman tu reporte.
 
 
 | Elemento o acción | Características |
-| ------------ |	--------    |
-| Detalle de tablas | <br/>El detalle de las tablas comprende información generada en día 1 como mínimo.<br/> <br/>  |
+| --- | --- |
+| Detalle de tablas | <br/>El detalle de las tablas comprende información generada en día 1 como mínimo.<br/> <br/> |
 | Orden de columnas |<br/> Fijo <br/> <br/> |
 | Período máximo | <br/> Reportes con datos de hasta 60 días. <br/> <br/> |
 | Moneda | <br/> Local (basada en el país donde esté registrada la cuenta de Mercado Pago) <br/> <br/> |
 | Zona horaria de las columnas con fechas | <br/> GMT-4 <br/> <br>Toma como referencia el lugar desde el que se descarga el reporte.<br/><br/> |
-| Selección de fechas vía API |<br/>  Formato del timezone: UTC / GMT-0 <br/> <br/> |
+| Selección de fechas vía API |<br/> Formato del timezone: UTC / GMT-0 <br/> <br/> |
 | Selección de fechas vía web | <br/> Debe basarse en el timezone de la cuenta. <br/>Por ejemplo, a la cuenta registrada en Brasil le corresponde el timezone de São Paulo. <br/> <br/> |
 
 
@@ -48,11 +48,11 @@ Conoce las características de los elementos que conforman tu reporte.
 Todas las opciones que tienes disponible a la hora de descargar tu reporte.
 
 | Elemento o acción | Características |
-| ------------ |	--------    |
-| Formato del nombre del archivo | <br/>Cuando el reporte es programado o manual:<br/> "&#60;prefijo-configurable&#62;-<span>&#60;yyyy-MM-dd-hhmmss&#62;.&#60;formato&#62;</span>" <br/> Ejemplo:  mitienda-2019-05-28-104010.csv<br/><br/> |
+| --- | --- |
+| Formato del nombre del archivo | <br/>Cuando el reporte es programado o manual:<br/> "&#60;prefijo-configurable&#62;-<span>&#60;yyyy-MM-dd-hhmmss&#62;.&#60;formato&#62;</span>" <br/> Ejemplo: mitienda-2019-05-28-104010.csv<br/><br/> |
 | Formatos de descarga | <br/>.csv, .xlsx <br/><br/>Tip: descarga el reporte en .csv para importar los datos y usarlos en otras aplicaciones. Descárgalo en .xlsx para leer la información en las tablas de la hoja de cálculo. <br/><br/> |
 | Archivo | <br/>Los reportes generados quedan guardados en tu cuenta de Mercado Pago.<br/><br/> |
-| Configuración disponible vía API | <br/>-  Columnas a generar por reporte<br/> -  Prefijo del archivo para identificarlo fácilmente<br/> -  Carga por SFTP<br/> -  Separador de columnas (punto o punto y coma)<br/> - Notificación por e-mail<br/><br/> |
+| Configuración disponible vía API | <br/>- Columnas a generar por reporte<br/> - Prefijo del archivo para identificarlo fácilmente<br/> - Carga por SFTP<br/> - Separador de columnas (punto o punto y coma)<br/> - Notificación por e-mail<br/><br/> |
 
 
 
