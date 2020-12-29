@@ -17,18 +17,18 @@ A Marketplace can be informed of the status changes of an Advanced Payment if yo
 
 #### Status definition
 
-State               |Description                                                            |
---------------------|-----------------------------------------------------------------------|
-authorized          |The payment is pending capture.                                        |
-in_process          |The payment is in the analysis process.                                |
-pending             |The user did not complete the payment process yet.                     |
-approved            |The payment was approved and accredited.                               |
-rejected            |The payment was rejected. The user could retry the payment.            |
-cancelled           |The payment was canceled by one of the parties or the payment expired. |
-refunded            |The payment was returned to the user.                                  |
-partially_refunded  |Part of the payment was returned to the user.                          |
-charged_back        |A chargeback has been made on the buyer's credit card.                 |
-vacated             |There was an internal error.                                           |
+| State | Description |
+| --- | --- |
+| authorized | The payment is pending capture. |
+| in_process | The payment is in the analysis process. |
+| pending | The user did not complete the payment process yet. |
+| approved | The payment was approved and accredited. |
+| rejected | The payment was rejected. The user could retry the payment. |
+| cancelled | The payment was canceled by one of the parties or the payment expired. |
+| refunded | The payment was returned to the user. |
+| partially_refunded | Part of the payment was returned to the user. |
+| charged_back | A chargeback has been made on the buyer's credit card. |
+| vacated | There was an internal error. |
 
 # Webhooks Notifications
 

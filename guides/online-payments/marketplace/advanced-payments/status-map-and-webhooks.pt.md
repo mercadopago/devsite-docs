@@ -17,18 +17,18 @@ Um Marketplace pode ser informado sobre as mudanças de status de um advanced pa
 
 #### Definição de estados
 
-Estado              |Descrição                                                              |
---------------------|-----------------------------------------------------------------------|
-authorized          |O pagamento está pendente de captura.                                  |
-in_process          |O pagamento está em processo de análise.                               |
-pending             |O usuário ainda não concluiu o processo de pagamento.                  |
-approved            |O pagamento foi aprovado e creditado.                                  |
-rejected            |O pagamento foi recusado. O cliente pode fazer uma nova tentativa.     |
-cancelled           |O pagamento foi cancelado por uma das partes ou expirou.               |
-refunded            |O pagamento foi devolvido ao usuário.                                  |
-partially_refunded  |Parte do pagamento foi devolvida ao usuário.                           |
-charged_back        |Um estorno foi feito no cartão de crédito do comprador.                |
-vacated             |Ocorreu um erro interno.                                               |
+| Estado | Descrição |
+| --- | --- |
+| authorized | O pagamento está pendente de captura. |
+| in_process | O pagamento está em processo de análise. |
+| pending | O usuário ainda não concluiu o processo de pagamento. |
+| approved | O pagamento foi aprovado e creditado. |
+| rejected | O pagamento foi recusado. O cliente pode fazer uma nova tentativa. |
+| cancelled | O pagamento foi cancelado por uma das partes ou expirou. |
+| refunded | O pagamento foi devolvido ao usuário. |
+| partially_refunded | Parte do pagamento foi devolvida ao usuário. |
+| charged_back | Um estorno foi feito no cartão de crédito do comprador. |
+| vacated | Ocorreu um erro interno. |
 
 # Notificações de Webhooks
 
