@@ -28,28 +28,28 @@ Whenever an event occurs, we will send you a notification in json format using H
 
 We will notify the following events:
 
-| Notification type    |           Action           |        Description           |
-| :------------------- | :------------------------- | :--------------------------- |
-| `payment`            | `payment.created`          | Payment created              |
-| `payment`            | `payment.updated`          | Payment updated              |
-| `mp-connect`         | `application.deauthorized` | Account deauthorized         |
-| `mp-connect`         | `application.authorized`   | Account authorized           |
-| `plan`               | `application.authorized`   | Account authorized           |
-| `subscription`       | `application.authorized`   | Account authorized           |
-| `invoice`            | `application.authorized`   | Account authorized           |
+| Notification type | Action | Description |
+| :--- | :--- | :--- |
+| `payment` | `payment.created` | Payment created |
+| `payment` | `payment.updated` | Payment updated |
+| `mp-connect` | `application.deauthorized` | Account deauthorized |
+| `mp-connect` | `application.authorized` | Account authorized |
+| `plan` | `application.authorized` | Account authorized |
+| `subscription` | `application.authorized` | Account authorized |
+| `invoice` | `application.authorized` | Account authorized |
 
 Mercado Pago will send notifications with the following schedule of retries and confirmation awaiting times. You must return an `HTTP STATUS 200 (OK)` or `201 (CREATED)` before the corresponding time expires. If not, it will be assumed that you did not receive it correctly and you will be notified again.
 
 If you need more information, please review the section [What should I do when I receive a notification?](#bookmark_what_should_i_do_after_receiving_a_notification?).
 
-| Event        | Time after the first dispatch | Confirmation waiting time |
-|--------------|-------------------------------|---------------------------|
-| Dispatch     | -                             | 22 seconds                |
-| First retry  | 5 minutes                     | 5 seconds                 |
-| Second retry | 45 minutes                    | 5 seconds                 |
-| Third retry  | 6 hours                       | 5 seconds                 |
-| Fourth retry | 2 days                        | 5 seconds                 |
-| Fifth retry  | 4 days                        | 5 seconds                 |
+| Event| Time after the first dispatch | Confirmation waiting time |
+| --- | --- | --- |
+| Dispatch | - | 22 seconds |
+| First retry | 5 minutes | 5 seconds |
+| Second retry | 45 minutes | 5 seconds |
+| Third retry | 6 hours | 5 seconds |
+| Fourth retry | 2 days | 5 seconds |
+| Fifth retry | 4 days | 5 seconds |
 
 The notification sent has the following format:
 

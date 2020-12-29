@@ -28,28 +28,28 @@ Siempre que suceda un evento, te enviaremos una notificación en formato `json` 
 
 Notificaremos los siguientes eventos:
 
-| Tipo de notificación |           Acción           |         Descripción          |
-| :------------------- | :------------------------- | :--------------------------- |
-| `payment`            | `payment.created`          | Creación de un pago          |
-| `payment`            | `payment.updated`          | Actualización de un pago     |
-| `mp-connect`         | `application.deauthorized` | Desvinculación de una cuenta |
-| `mp-connect`         | `application.authorized`   | Vinculación de una cuenta    |
-| `plan`               | `application.authorized`   | Vinculación de una cuenta    |
-| `subscription`       | `application.authorized`   | Vinculación de una cuenta    |
-| `invoice`            | `application.authorized`   | Vinculación de una cuenta    |
+| Tipo de notificación | Acción | Descripción |
+| :--- | :--- | :--- |
+| `payment` | `payment.created` | Creación de un pago |
+| `payment` | `payment.updated` | Actualización de un pago |
+| `mp-connect` | `application.deauthorized` | Desvinculación de una cuenta |
+| `mp-connect` | `application.authorized` | Vinculación de una cuenta |
+| `plan` | `application.authorized` | Vinculación de una cuenta |
+| `subscription` | `application.authorized` | Vinculación de una cuenta |
+| `invoice` | `application.authorized` | Vinculación de una cuenta |
 
 Mercado Pago enviará las notificaciones con el siguiente esquema de reintentos y tiempos por los que espera tu confirmación. Deberás retornar un `HTTP STATUS 200 (OK)` ó `201 (CREATED)` antes de que se termine el tiempo correspondiente. Si no lo haces, se asumirá que no lo recibiste correctamente y se te volverá a notificar.
 
 Si necesitas más información, consulta la sección [¿Qué debo hacer al recibir una notificación?](#bookmark_¿qué_debo_hacer_al_recibir_una_notificación?)
 
-| Evento            | Tiempo después del primer envío | Tiempo de espera de confirmación |
-|-------------------|---------------------------------|----------------------------------|
-| Envío             | -                               | 22 segundos                      |
-| Primer reintento  | 5 minutos                       | 5 segundos                       |
-| Segundo reintento | 45 minutos                      | 5 segundos                       |
-| Tercer reintento  | 6 horas                         | 5 segundos                       |
-| Cuarto reintento  | 2 días                          | 5 segundos                       |
-| Quinto reintento  | 4 días                          | 5 segundos                       |
+| Evento | Tiempo después del primer envío | Tiempo de espera de confirmación |
+| --- | --- | --- |
+| Envío | - | 22 segundos |
+| Primer reintento | 5 minutos | 5 segundos |
+| Segundo reintento | 45 minutos | 5 segundos |
+| Tercer reintento | 6 horas | 5 segundos |
+| Cuarto reintento | 2 días | 5 segundos |
+| Quinto reintento | 4 días | 5 segundos |
 
 La notificación enviada tiene el siguiente formato:
 
