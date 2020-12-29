@@ -9,18 +9,18 @@ Instale o Mercado Pago no WooCommerce automaticamente pelo marketplace na WordPr
 
 Revise os requisitos de instalação e siga as etapas que indicamos. A instalação do módulo leva poucos minutos!
 
-| Requisitos                    | Detalhes                                                                  	                |
-|-------------------------------|-----------------------------------------------------------------------------------------------|
-| WordPress        	            | Requerido 4.9.10 ou superior. Testado até 5.5.x                                               |
-| WooCommerce      	            | Requerido 3.x ou superior. Testado até 4.7.x                                                  |
-| Ambiente                    	| LAMP (Linux, Apache, MySQL, and PHP)                                                      	|
-| Sistema                     	| Linux x86, Windows x86-64                                                        	            |
-| Servidor Web                	| Apache 2.x, Nginx 1.7.x                                                               	    |
-| Versão PHP                  	| PHP 5.6 ou superior com suporte a curl                     	                                |
-| Base de dados               	| MySql 5.6 ou superior (Oracle o Percona), MariaDB 10.0 ou superior           	                |
-| Dependência de extensões     	| PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (para Webservices API)         |
-| Configuração adicional        | safe_mode off * memory_limit maior que 256MB (512MB recomendado)                              |
-| SSL                         	| Certificado SSL  	                                                                            |
+| Requisitos | Detalhes |
+| --- | --- |
+| WordPress | Requerido 4.9.10 ou superior. Testado até 5.5.x |
+| WooCommerce | Requerido 3.x ou superior. Testado até 4.7.x |
+| Ambiente | LAMP (Linux, Apache, MySQL, and PHP) |
+| Sistema | Linux x86, Windows x86-64 |
+| Servidor Web | Apache 2.x, Nginx 1.7.x |
+| Versão PHP | PHP 5.6 ou superior com suporte a curl |
+| Base de dados | MySql 5.6 ou superior (Oracle o Percona), MariaDB 10.0 ou superior |
+| Dependência de extensões | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (para Webservices API) |
+| Configuração adicional | safe_mode off * memory_limit maior que 256MB (512MB recomendado) |
+| SSL | Certificado SSL |
 
 > WARNING
 >

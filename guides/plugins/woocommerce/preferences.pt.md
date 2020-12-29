@@ -61,9 +61,9 @@ Você terá diferentes ajustes disponíveis conforme o tipo de checkout que ativ
 
 ### Ajustes comuns em todos os checkouts
 
-| Configuración                 | Descripción                                                               	                  |
-|-------------------------------|-----------------------------------------------------------------------------------------------|
-| Modo binário     	            | Ative esta opção quando não quiser deixar os pagamentos em estado pendente ou em revisão. Com o modo binário, os pagamentos serão aceitos ou recusados automaticamente.|
+| Configuración | Descripción |
+| --- | --- |
+| Modo binário | Ative esta opção quando não quiser deixar os pagamentos em estado pendente ou em revisão. Com o modo binário, os pagamentos serão aceitos ou recusados automaticamente. |
 
 ### Checkout Pro
 
@@ -71,10 +71,10 @@ Você terá diferentes ajustes disponíveis conforme o tipo de checkout que ativ
 
 Escolha qual experiência de compra seus clientes terão na hora de pagar:
 
-| Experiencia de pagamento      | Características                                                              	                                           |
-|-------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Redirect     	                | Seus clientes serão redirecionados para uma página do Mercado Pago com o formulário de pagamentos para terminar a compra.|
-| Modal                       	| Seus clientes terão acesso ao formulário de pagamentos do Mercado Pago sem sair da sua loja.                             |
+| Experiencia de pagamento | Características |
+| --- | --- |
+| Redirect | Seus clientes serão redirecionados para uma página do Mercado Pago com o formulário de pagamentos para terminar a compra. |
+| Modal | Seus clientes terão acesso ao formulário de pagamentos do Mercado Pago sem sair da sua loja. |
 
 > NOTE
 >
@@ -82,25 +82,25 @@ Escolha qual experiência de compra seus clientes terão na hora de pagar:
 >
 > Veja a [documentação do Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/introduction/) para conhecer melhor todas as suas características e funcionalidades.
 
-| Configuração                  | Descrição                                                                 	                  |
-|-------------------------------|-----------------------------------------------------------------------------------------------|
-| Voltar à loja         	      | Ao escolher redirect, você sempre terá a opção de fazer com que seus clientes retornem ou não à sua loja quando o pagamento for finalizado.|
-| URLs configuráveis          	| De aprovação, pagamento recusado, pagamento pendente.|
+| Configuração | Descrição |
+| --- | --- |
+| Voltar à loja | Ao escolher redirect, você sempre terá a opção de fazer com que seus clientes retornem ou não à sua loja quando o pagamento for finalizado. |
+| URLs configuráveis | De aprovação, pagamento recusado, pagamento pendente. |
 
 ### Checkout Personalizado
 
 #### Pagamentos com cartões
 
-| Configuração                  | Descrição                                                                   	                |
-|-------------------------------|-----------------------------------------------------------------------------------------------|
-| Cupons de desconto       	    | Ative esta opção quando quiser oferecer descontos aos seus clientes. Aparecerá um campo no formulário onde poderão inserir seu cupom.|
+| Configuração | Descrição |
+| --- | --- |
+| Cupons de desconto | Ative esta opção quando quiser oferecer descontos aos seus clientes. Aparecerá um campo no formulário onde poderão inserir seu cupom. |
 
 #### Pagamentos presenciais
 
-| Configuração                  | Descrição                                                                    	                |
-|-------------------------------|-----------------------------------------------------------------------------------------------|
-| Cupons de desconto       	    | Ative esta opção quando quiser oferecer descontos aos seus clientes. Aparecerá um campo no formulário onde poderão inserir seu cupom.|
-| Reduzir inventário     	      | Ative esta opção quando quiser automatizar a diminuição do inventário por cada ordem de compra aprovada após um pagamento com Mercado Pago. |
+| Configuração | Descrição |
+| --- | --- |
+| Cupons de desconto | Ative esta opção quando quiser oferecer descontos aos seus clientes. Aparecerá um campo no formulário onde poderão inserir seu cupom. |
+| Reduzir inventário | Ative esta opção quando quiser automatizar a diminuição do inventário por cada ordem de compra aprovada após um pagamento com Mercado Pago. |
 
 ---
 

@@ -9,18 +9,18 @@ Install the Mercado Pago module in WooCommerce automatically, from your WordPres
 
 Review the installation requirements and follow the steps we indicate, it will only take a few minutes to install the module!
 
-| Requirements                  | Details                                                                    	                |
-|-------------------------------|-----------------------------------------------------------------------------------------------|
-| WordPress        	            | Required 4.9.10 or higher. Tested up to 5.5.x                                                 |
-| WooCommerce      	            | Required 3.x or higher. Tested up to 4.7.x                                                    |
-| Environment                  	| LAMP (Linux, Apache, MySQL, and PHP)                                                    	    |
-| System                      	| Linux x86, Windows x86-64                                                        	            |
-| Web Server                  	| Apache 2.x, Nginx 1.7.x                                                               	    |
-| PHP Version                 	| PHP 5.6, 5.5 y 5.4                                        	                                |
-| Database                     	| MySQL 5.6 or higher (Oracle or Percona), MariaDB 10.0 or higher         	                    |
-| Extension Dependency         	| PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (to Webservices API)           |
-| Additional Settings           | safe_mode off * memory_limit bigger than 256MB (512MB recommended)                            |
-| SSL                         	| SSL Certificate 	                                                                            |
+| Requirements | Details |
+| --- | --- |
+| WordPress | Required 4.9.10 or higher. Tested up to 5.5.x |
+| WooCommerce | Required 3.x or higher. Tested up to 4.7.x |
+| Environment | LAMP (Linux, Apache, MySQL, and PHP) |
+| System | Linux x86, Windows x86-64 |
+| Web Server | Apache 2.x, Nginx 1.7.x |
+| PHP Version | PHP 5.6, 5.5 y 5.4 |
+| Database | MySQL 5.6 or higher (Oracle or Percona), MariaDB 10.0 or higher |
+| Extension Dependency | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (to Webservices API) |
+| Additional Settings | safe_mode off * memory_limit bigger than 256MB (512MB recommended) |
+| SSL | SSL Certificate |
 
 > WARNING
 >
