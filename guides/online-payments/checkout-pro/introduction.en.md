@@ -48,7 +48,7 @@ Checkout Pro is an integration that allows you to **charge your customers throug
 | Integration difficulty		  	      |     Low    |       Medium         |     High |
 | UI/UX Design 							  	       |      ✔      |         ✔           |
 | Conversion optimization	   |      ✔      |         ✔           |
-| Approval optimization       |      ✔      |                     | 
+| Approval optimization       |      ✔      |                     |
 | Guest payments        	     |      ✔      |         ✔           |      ✔ |
 | Registered users payments          |      ✔      |                     |
 | Fraud prevention               	     |      ✔      |         ✔           |      ✔ |
@@ -62,7 +62,7 @@ Checkout Pro is an integration that allows you to **charge your customers throug
 | Integration difficulty		  	      |     Low    |       Medium         |     High  |
 | UI/UX Design 							  	       |      ✔      |         ✔           |
 | Conversion optimization	   |      ✔      |         ✔           |
-| Approval optimization        |      ✔      |                     | 
+| Approval optimization        |      ✔      |                     |
 | Guest Payments      	     |      ✔      |         ✔           |      ✔  |
 | Registered users payments          |      ✔      |                     |
 | Fraud prevention               	     |      ✔      |         ✔           |      ✔  |
