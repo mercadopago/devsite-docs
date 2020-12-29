@@ -68,7 +68,7 @@ Você terá diferentes ajustes disponíveis conforme o tipo de checkout que ativ
 
 | Configuração | Descrição |
 | --- | --- |
-| Voltar à loja | Ao escolher redirect, você sempre terá a opção de fazer com que seus clientes retornem ou não à sua loja quando o pagamento for finalizado.|
+| Voltar à loja | Ao escolher redirect, você sempre terá a opção de fazer com que seus clientes retornem ou não à sua loja quando o pagamento for finalizado. |
 | Cancelamento de preferências de pagamento | Quando o usuário acessa nosso checkout, geramos um link de pagamento com as informações dessa compra. Aqui você pode definir o horário em que salvamos essa preferência. |
 
 Escolha a experiência de compra que seus clientes terão ao pagar:

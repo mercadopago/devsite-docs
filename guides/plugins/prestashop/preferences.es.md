@@ -57,7 +57,7 @@ Tendrás distintos ajustes disponibles según el tipo de checkout que actives en
 
 | Configuración | Descripción |
 | --- | --- |
-| Modo binario | Activa esta opción cuando no quieras dejar pagos en estado pendiente o en revisión. Con el modo binario los pagos se aceptarán o rechazarán de forma automática.|
+| Modo binario | Activa esta opción cuando no quieras dejar pagos en estado pendiente o en revisión. Con el modo binario los pagos se aceptarán o rechazarán de forma automática. |
 
 > WARNING
 >
