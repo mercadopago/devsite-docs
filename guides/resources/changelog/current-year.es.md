@@ -6,6 +6,27 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Diciembre 2020
 
+### 29 de diciembre
+
+> CHANGELOG
+>
+> Nueva versión del plugin para PrestaShop
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: PRESTASHOP
+
+Lanzamos la nueva versión 4.4.0 para PrestaShop.
+
+[Ir a documentación de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/introduction/)
+
+> GIT
+>
+> GitHub
+>
+> Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.4.0).
+
+
 ### 7 de diciembre
 
 > CHANGELOG
