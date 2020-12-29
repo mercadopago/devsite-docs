@@ -39,6 +39,6 @@ Com a conta do MercadoPago já criada, você deve informar os dados abaixo para 
 
 ### Canal de Atendimento:
 
-Email | Telefone
---|--
-http://cliente.bis2bis.com.br |(43) 3326-1500
+| E-mail | Telefone |
+| --- | --- |
+| http://cliente.bis2bis.com.br | (43) 3326-1500 |
