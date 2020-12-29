@@ -119,7 +119,7 @@ The payment methods available for each country are shown below.
 | Pago Fácil | `ticket` | `pagofacil` |
 | RapiPago | `ticket` | `rapipago` |
 | Provincia Pagos | `ticket` | `bapropagos` |
-| Carga Virtual	| `ticket` | `cargavirtual` |
+| Carga Virtual | `ticket` | `cargavirtual` |
 | Cobro Express | `ticket` | `cobroexpress` |
 | Red Link | `atm` | `redlink` |
 | Account money | `account_money` | `account_money` |
@@ -134,9 +134,9 @@ The payment methods available for each country are shown below.
 | Hipercard | `credit_card` | `hipercard` |
 | Diners Club International	| `credit_card` | `diners` |
 | Elo | `credit_card` | `elo` |
-| Mercado Livre	Card | `credit_card` | `melicard` |
+| Mercado Livre Card | `credit_card` | `melicard` |
 | Boleto Bancario | `ticket` | `bolbradesco` |
-| Account money	| `account_money` | `account_money` |
+| Account money | `account_money` | `account_money` |
 | Giftcard | `digital_currency` | `giftcard` |
 | Paypal | `digital_wallet` | `paypal` |
 | Pix | `bank_transfer` | `pix` |
@@ -158,7 +158,7 @@ The payment methods available for each country are shown below.
 | Servipag | `ticket` | `servipag` |
 | Red Compras (Webpay) | `bank_transfer` | `webpay` |
 | Khipu | `bank_transfer` | `khipu` |
-| Account money	| `account_money` | `account_money` |
+| Account money | `account_money` | `account_money` |
 
 ### Colombia
 
@@ -189,7 +189,7 @@ The payment methods available for each country are shown below.
 | BBVA Bancomer | `atm` | `bancomer` |
 | Banamex | `atm` | `banamex` |
 | Santander | `atm` | `serfin` |
-| Account money	| `account_money` | `account_money` |
+| Account money | `account_money` | `account_money` |
 | Bitcoin | `digital_currency` | `bitcoin` |
 | Paypal | `digital_wallet` | `paypal` |
 
