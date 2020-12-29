@@ -55,9 +55,9 @@ Tendrás distintos ajustes disponibles según el tipo de checkout que actives en
 
 ### Ajustes comunes a todos los checkouts
 
-| Configuración | Descripción                                                               	                |
-|---------------|-----------------------------------------------------------------------------------------------|
-| Modo binario  | Activa esta opción cuando no quieras dejar pagos en estado pendiente o en revisión. Con el modo binario los pagos se aceptarán o rechazarán de forma automática.|
+| Configuración | Descripción |
+| --- | --- |
+| Modo binario | Activa esta opción cuando no quieras dejar pagos en estado pendiente o en revisión. Con el modo binario los pagos se aceptarán o rechazarán de forma automática.|
 
 > WARNING
 >
@@ -67,17 +67,17 @@ Tendrás distintos ajustes disponibles según el tipo de checkout que actives en
 
 ### Checkout Pro
 
-| Configuración                   | Descripción                                                              	                                   |
-|---------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Volver a la tienda              | Cuando elijas redirect, siempre tendrás la opción de hacer que tus clientes vuelvan o no a tu tienda una vez finalizado el pago.|
+| Configuración | Descripción |
+| --- | --- |
+| Volver a la tienda | Cuando elijas redirect, siempre tendrás la opción de hacer que tus clientes vuelvan o no a tu tienda una vez finalizado el pago. |
 | Guarda las preferencias de pago | Cuando el usuario accede a nuestro checkout, generamos un link de pago con la información de esa compra. Aquí puedes configurar el tiempo en que guardamos esa preferencia. |
 
 Elige qué experiencia de compra tendrán tus clientes a la hora de pagar: 
 
-| Experiencia de pago           | Características                                                              	                                 |
-|-------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Redirect     	                | Tus clientes serán redirigidos a una página de Mercado Pago con el formulario de pagos para terminar la compra.|
-| Modal **(NUEVO)**               | Tus clientes accederán al formulario de pagos de Mercado Pago sin salir de tu tienda. Si lo desactivas, serán redirigidos a otra página. |
+| Experiencia de pago | Características |
+| --- | --- |
+| Redirect | Tus clientes serán redirigidos a una página de Mercado Pago con el formulario de pagos para terminar la compra.|
+| Modal **(NUEVO)** | Tus clientes accederán al formulario de pagos de Mercado Pago sin salir de tu tienda. Si lo desactivas, serán redirigidos a otra página. |
 
 > NOTE
 >
@@ -87,9 +87,9 @@ Elige qué experiencia de compra tendrán tus clientes a la hora de pagar:
 
 ### Checkout Personalizado
 
-| Configuración                   | Descripción                                                                      |
-|---------------------------------|----------------------------------------------------------------------------------|
-| Descuento por compra            | Ofrece un descuento especial para alentar a que tus clientes realicen la compra. |
+| Configuración | Descripción |
+| --- | --- |
+| Descuento por compra | Ofrece un descuento especial para alentar a que tus clientes realicen la compra. |
 
 ### Último paso
 

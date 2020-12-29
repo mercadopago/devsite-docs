@@ -13,17 +13,17 @@ Instale o módulo do Mercado Pago automaticamente, através do marketplace ou em
 
 Revise os requisitos de instalação e siga as etapas que indicamos. A instalação do módulo leva poucos minutos!
 
-| Requisitos                    | Detalhes                                                                  	                |
-|-------------------------------|-----------------------------------------------------------------------------------------------|
-| Versão        	            | Prestashop 1.6.x - 1.7.x                                                                      |
-| Ambiente                    	| LAMP (Linux, Apache, MySQL, and PHP) ou LNMP stack                                            |
-| Sistema                     	| Linux x86, Windows x86-64                                                        	            |
-| Servidor Web                	| Apache 2.x, Nginx 1.7.x                                                               	    |
-| Versão PHP                 	| PHP 5.6 até 7.1 para PrestaShop 1.6 <br> PHP 5.6 ou superior para PrestaShop 1.7              |
-| Base de dados               	| MySQL 5.6 ou superior (Oracle ou Percona)                               	                    |
-| Dependência de extensões    	| PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (para Webservices API)         |
-| Configuração adicional        | safe_mode off * memory_limite maior que 256MB (512MB recomendado)                             |
-| SSL                         	| Certificado SSL  	                                                                            |
+| Requisitos | Detalhes |
+| --- | --- |
+| Versão | Prestashop 1.6.x - 1.7.x |
+| Ambiente | LAMP (Linux, Apache, MySQL, and PHP) ou LNMP stack |
+| Sistema | Linux x86, Windows x86-64 |
+| Servidor Web | Apache 2.x, Nginx 1.7.x |
+| Versão PHP | PHP 5.6 até 7.1 para PrestaShop 1.6 <br> PHP 5.6 ou superior para PrestaShop 1.7 |
+| Base de dados | MySQL 5.6 ou superior (Oracle ou Percona) |
+| Dependência de extensões | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (para Webservices API) |
+| Configuração adicional | safe_mode off * memory_limite maior que 256MB (512MB recomendado) |
+| SSL | Certificado SSL |
 
 > WARNING
 >
