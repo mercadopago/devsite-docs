@@ -2,7 +2,7 @@
   indexable: false
 ---
 
-# Wallet Connect
+# Wallet Connect
 
 - [Configurar aplicación para Wallet](https://www.mercadopago.com.ar/developers/es/guides/online-payments/advanced-payments/wallet-config-application)
 - [Solicitar permisos al Pagador](https://www.mercadopago.com.ar/developers/es/guides/online-payments/advanced-payments/wallet-payer-permissions)

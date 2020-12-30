@@ -58,7 +58,7 @@ Diferente do Checkout Pro, facilitamos a criação de uma experiência de pagame
 
 Esta forma de integração permite que você se conecte diretamente com as nossas APIs.
 
-- **Torne-se dono da sua experiência.** Proporcionamos liberdade absoluta para você personalizar as experiências dos seus compradores e que nunca saiam do seu site.  
+- **Torne-se dono da sua experiência.** Proporcionamos liberdade absoluta para você personalizar as experiências dos seus compradores e que nunca saiam do seu site.  
 
 - **Sua equipe técnica tem total controle.** Eles poderão lidar com todos os processos de manipulação de dados sensíveis no front-end, onde a solicitação de pagamento ocorre.
 

@@ -53,7 +53,7 @@ Es la versión simplificada del Checkout Pro con una experiencia de usuario reno
 
 Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
-- **Convertite en el dueño de tu experiencia.** Te proporcionamos absoluta libertad para personalizar la experiencia de tus compradores y que nunca salgan de tu sitio.  
+- **Convertite en el dueño de tu experiencia.** Te proporcionamos absoluta libertad para personalizar la experiencia de tus compradores y que nunca salgan de tu sitio.  
 
 - **Tu equipo técnico tiene el control total.** Van a poder manejar todos los procesos de manipulación de datos sensibles en el front-end donde se produce la solicitud de pago.
 
@@ -135,7 +135,7 @@ Es la versión simplificada del Checkout Pro con una experiencia de usuario reno
 
 Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
-- **Convertite en el dueño de tu experiencia.** Te damos absoluta libertad para personalizar la experiencias de tus compradores y que nunca salgan de tu sitio.  
+- **Convertite en el dueño de tu experiencia.** Te damos absoluta libertad para personalizar la experiencias de tus compradores y que nunca salgan de tu sitio.  
 
 - **Tu equipo técnico tiene el control total.** Van a poder manejar todos los procesos de manipulación de datos sensibles en el front-end donde se produce la solicitud de pago.
 
@@ -223,7 +223,7 @@ Es la versión simplificada del Checkout Pro con una experiencia de usuario reno
 
 Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
-- Convertite en el dueño de tu experiencia. Te proporcionamos absoluta libertad para personalizar la experiencias de tus compradores y que nunca salgan de tu sitio.  
+- Convertite en el dueño de tu experiencia. Te proporcionamos absoluta libertad para personalizar la experiencias de tus compradores y que nunca salgan de tu sitio.  
 
 - Tu equipo técnico tiene el control total. Van a poder manejar todos los procesos de manipulación de datos sensibles en el front-end donde se produce la solicitud de pago.
 
@@ -264,7 +264,7 @@ Esta opción te permite cobrar a través de nuestro formulario web dentro del am
 
 - **Ofrece los mejores medios de pago.** Te conectamos con los [medios de pago más conocidos por tus compradores](https://www.mercadopago.com.co/ayuda/medios-de-pago-para-vendedores_1792), sin que tengas que hacer nada.
 
-- **Protegemos tu dinero, siempre.** No tienes que preocuparte de nada. Si tienes  algún problema, te respaldamos con nuestro [Programa de Protección al Vendedor](https://www.mercadopago.com.co/ayuda/seguridad-vendedor_1800).
+- **Protegemos tu dinero, siempre.** No tienes que preocuparte de nada. Si tienes  algún problema, te respaldamos con nuestro [Programa de Protección al Vendedor](https://www.mercadopago.com.co/ayuda/seguridad-vendedor_1800).
 
 [Integrar Checkout Pro](https://www.mercadopago.com.co/developers/es/guides/online-payments/checkout-pro/introduction/)
 
@@ -296,7 +296,7 @@ Es la versión simplificada del Checkout Pro con una experiencia de usuario reno
 
 Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
-- **Convertite en el dueño de tu experiencia.** Te proporcionamos absoluta libertad para personalizar la experiencias de tus compradores y que nunca salgan de tu sitio.  
+- **Convertite en el dueño de tu experiencia.** Te proporcionamos absoluta libertad para personalizar la experiencias de tus compradores y que nunca salgan de tu sitio.  
 
 - **Tu equipo técnico tiene el control total.** Van a poder manejar todos los procesos de manipulación de datos sensibles en el front-end donde se produce la solicitud de pago.
 
@@ -361,7 +361,7 @@ Es la versión simplificada del Checkout Pro con una experiencia de usuario reno
 
 Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
-- **Convertite en el dueño de tu experiencia.** Te proporcionamos absoluta libertad para personalizar la experiencias de tus compradores y que nunca salgan de tu sitio.  
+- **Convertite en el dueño de tu experiencia.** Te proporcionamos absoluta libertad para personalizar la experiencias de tus compradores y que nunca salgan de tu sitio.  
 
 - **Tu equipo técnico tiene el control total.** Van a poder manejar todos los procesos de manipulación de datos sensibles en el front-end donde se produce la solicitud de pago.
 
@@ -439,7 +439,7 @@ Es la versión simplificada del Checkout Pro con una experiencia de usuario reno
 
 Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
-- **Convertite en el dueño de tu experiencia.** Te proporcionamos absoluta libertad para personalizar la experiencias de tus compradores y que nunca salgan de tu sitio.  
+- **Convertite en el dueño de tu experiencia.** Te proporcionamos absoluta libertad para personalizar la experiencias de tus compradores y que nunca salgan de tu sitio.  
 
 - **Tu equipo técnico tiene el control total.** Van a poder manejar todos los procesos de manipulación de datos sensibles en el front-end donde se produce la solicitud de pago.
 

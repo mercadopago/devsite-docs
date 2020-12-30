@@ -723,7 +723,7 @@ Para ajudar a otimizar suas conciliações, implementamos melhorias na geração
 
 | Filtros do `search`| Data atual | Nova data |
 | --- | --- | --- |
-| begin_date | 01/01/2020 00:00:00 | 01/01/2020 00:00:00 |
+| begin_date | 01/01/2020 00:00:00 | 01/01/2020 00:00:00 |
 | end_date | 02/01/2020 00:00:00 | 01/01/2020 23:59:59 |
 
 

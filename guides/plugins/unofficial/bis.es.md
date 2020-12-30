@@ -29,7 +29,7 @@ Si desea obtener más información sobre **Mercado Pago**, visite nuestra [pági
 
 Con la cuenta de MercadoPago ya creada, debe ingresar los datos a continuación para que el representante de Bis2Bis realice la configuración en su tienda, y así el método de pago esté disponible para que sus clientes realicen compras.
 
-#### Credenciales
+#### Credenciales
 
 [Public key y Access token]([FAKER][CREDENTIALS][URL])
 

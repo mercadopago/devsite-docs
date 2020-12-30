@@ -64,8 +64,8 @@ Para criar o plano, faça a seguinte chamada à nossa API com os dados que preci
 | `auto_recurring.transaction_amount` | Se indicarmos o valor, ele é fixo. Se não preenchermos este campo, entende-se que se trata de uma quantia variável. É permitido um máximo de duas casas decimais separadas por um ponto.|
 | `auto_recurring.currency_id` (obrigatório) | Identifica a moeda que corresponde ao país. |
 | `auto_recurring.repetitions` | Indica se a assinatura terá um limite. Se não for especificado, não há limite. Este limite se relaciona com `auto_recurring.frequency` y `auto_recurring.frequency_type`. |
-| `auto_recurring.free_trial.frequency` | Define um período de teste inicial e retarda a primeira cobrança. Indica o tempo pelo qual o serviço não será cobrado com base no tipo de frequência. Deve ser consistente com `auto_recurring.frequency`. |
-| `auto_recurring.free_trial.frequency_type` | Indica o número de parcelas que não serão cobradas pelo serviço. Deve ser consistente com `auto_recurring.frequency_type`. |
+| `auto_recurring.free_trial.frequency` | Define um período de teste inicial e retarda a primeira cobrança. Indica o tempo pelo qual o serviço não será cobrado com base no tipo de frequência. Deve ser consistente com `auto_recurring.frequency`. |
+| `auto_recurring.free_trial.frequency_type` | Indica o número de parcelas que não serão cobradas pelo serviço. Deve ser consistente com `auto_recurring.frequency_type`. |
 
 #### Resposta
 `HTTP Status 200 OK`
@@ -119,10 +119,10 @@ Uma vez que você tenha gerado seu plano e obtido seu `preapproval_plan_id`, cri
 #### Atributos
 
 | Atributo | Definição |
-| --- | --- |
+| --- | --- |
 | `preapproval_plan_id` (obrigatório) | Refere-se ao plano gerado anteriormente. |
 | `card_token_id` (obrigatório) | Las informações no cartão serão convertidas em um token para enviar os dados com segurança. |
-| `payer_email` (obrigatório) | E-mail do pagador. |
+| `payer_email` (obrigatório) | E-mail do pagador. |
 
 > WARNING
 > 
@@ -292,7 +292,7 @@ Atributos
 | --- | --- |
 | `reason` | Esta é a descrição que o assinante verá quando assinar e o detalhe que será visto na fatura do cartão. |
 | `status` | Status da assinatura. Pode ser `pending` ou `authorized`. |
-| `auto_recurring.frequency` | Indica o tempo ou ciclo com base no tipo de frequência. |
+| `auto_recurring.frequency` | Indica o tempo ou ciclo com base no tipo de frequência. |
 | `auto_recurring.frequency_type` | Indica o tipo de frequência. Pode ser por mês (months) ou dias (days). Juntamente com a frequência, definem o ciclo de parcelas que uma assinatura terá.<br><br> Por exemplo, se a cada duas semanas fosse necessário gerar uma parcela para ser cobrada, ficaria da seguinte forma: `auto_recurring.frequency`: 15 y `auto_recurring.frequency_type`: days |
 | `auto_recurring.transaction_amount` | Valor aplicado à assinatura. |
 | `auto_recurring.currency_id` | Identifica a moeda que corresponde ao país. |

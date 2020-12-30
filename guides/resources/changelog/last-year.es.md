@@ -24,7 +24,7 @@ Después del 12 de diciembre del 2019, la versión 0 dejara de tener soporte.
 El apagado afecta a los siguientes recursos:
 
 | Uso | Método | URI del Recurso deprecado |
-| --- | --- | --- |
+| --- | --- | --- |
 | Pago | `POST` | /checkout/custom/create_payment |
 | Medio de Pagos | `GET` | /checkout/custom/payment_methods |
 | Búsqueda de Medios de Pagos| `GET` | /checkout/custom/payment_methods/search |

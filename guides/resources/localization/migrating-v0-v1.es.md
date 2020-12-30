@@ -102,7 +102,7 @@ Si usas nuestras herramientas, para la nueva versión de la API es necesario que
 
 ## Ejemplos 
 
-#### Búsqueda de un pago
+#### Búsqueda de un pago
 
 Para la búsqueda de pagos tenés que usar el endpoint /v1/payments/search
 Tené en cuenta que el resultado de esta búsqueda te va a traer los pagos como payer y collector del invocador.

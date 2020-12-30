@@ -2,7 +2,7 @@
   indexable: false
 ---
 
-# Personalización
+# Personalización
 
 Podrás configurar distintas acciones a la hora de recibir los pagos:
 

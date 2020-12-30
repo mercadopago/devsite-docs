@@ -40,7 +40,7 @@ Configure your credentials
     mp = mercadopago.MP("CLIENT_ID", "CLIENT_SECRET")
 ```
 
-### Preferences
+### Preferences
 
 
 Get an existent Checkout preference

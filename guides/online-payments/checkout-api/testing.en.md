@@ -8,7 +8,7 @@ We will explain how to use our test cards and users to check that your payments 
 
 | Types of users | Description |
 | --- | --- |
-| Seller | It is the test account you use **to configure the application and credentials for collection**. |
+| Seller | It is the test account you use **to configure the application and credentials for collection**. |
 | Buyer | It is the test account you use **to test the purchase process**. |
 
 <br>
@@ -93,7 +93,7 @@ Start your integration with your test seller user credentials:
 ------------
 ----[mlc]----
 
-| Card | Number | CVV | Expiration Date |
+| Card | Number | CVV | Expiration Date |
 | :--- | :---: | :---: | :---: |
 | Mastercard | 5416 7526 0258 2580 | 123 | 11/25 |
 | Visa | 4168 8188 4444 7115 | 123 | 11/25 |

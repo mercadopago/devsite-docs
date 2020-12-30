@@ -92,12 +92,12 @@ You should use the field `external_reference` to be able to identify the order f
 ### Attributes
 
 | Atributo | Tipo (type) | Descripción |
-| --- | --- | --- |
+| --- | --- | --- |
 | `collector_id` | Long | Mercado Pago account identifier, to which payments will be imputed. |
 | `sponsor_id` | Long | Mercado Pago account identifier from integrative system. |
 | `items.title` | String | Product title. |
 | `items.currency_id` | String(3) | Currency identifier in ISO-4217 format. |
-| `items.description` | String | Product description.  |
+| `items.description` | String | Product description. |
 | `items.quantity` | Integer | Product quantity. |
 | `items.unit_price` | Decimal | Unitary price. |
 | `external_reference` | String (256) | Reference to link an order in Mercado Pago with a shopping order from your system. Usually, is the receipt number. |

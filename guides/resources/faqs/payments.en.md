@@ -62,7 +62,7 @@ The query would be as follows:
 
 The callback is going to return the parameter `transaction_details` containing the `external_resource_url` with the link for the duplicated ticket.
 
-## Remove ticket as payment method
+## Remove ticket as payment method
 
 Based on the type of checkout and integration used, the process may be different.
 

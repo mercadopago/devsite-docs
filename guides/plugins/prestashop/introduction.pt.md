@@ -37,7 +37,7 @@ Instale nosso gateway de pagamento e leve suas vendas para outro nível com a me
 Com estas opções de pagamento nós cobrimos as necessidades de cada negócio. Confira as características para escolher aquela que se adapte melhor ao seu negócio.
 
 | Características | Checkout Pro | Checkout Personalizado | Ticket Checkout |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | Meios de pagamento | Pagamento com cartões, em dinheiro e com dinheiro na conta do Mercado Pago. | Pagamentos com cartões de crédito. | Pagamentos presenciais. |
 | Experiência de pagamento | Seus clientes pagam na página do Mercado Pago com um formato redirect (fora da sua loja) ou modal (dentro da sua loja). | Seus clientes pagam sem sair da sua loja virtual. | Seus clientes pagam sem sair da sua loja virtual. |
 | Usuários convidados | Seus clientes podem pagar tendo ou não uma conta no Mercado Pago. | Seus clientes pagam como convidados, sem ter uma conta no Mercado Pago. | Seus clientes pagam como convidados, sem ter uma conta no Mercado Pago. |

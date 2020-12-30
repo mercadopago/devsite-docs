@@ -26,20 +26,20 @@ En el caso de que el comprador tenga un navegador no soportado, se le indicará 
 
 | Navegador | Soporte |
 | --- | --- |
-| **Chrome** | Completo |
-| **Firefox** | Completo |
+| **Chrome** | Completo |
+| **Firefox** | Completo |
 | **Internet Explorer** | 11 |
-| **Edge** | Completo |
-| **Safari** | Completo |
-| **Opera** | Completo |
+| **Edge** | Completo |
+| **Safari** | Completo |
+| **Opera** | Completo |
 
 ### Mobile web
 
 | Navegador | Soporte |
 | --- | --- |
-| **Chrome** | Completo |
-| **Firefox** | Completo |
-| **Windows Phone (Internet Explorer Mobile)** | _No_ |
-| **Safari Mobile** | Completo |
-| **Opera Mini** | _Básico_ |
+| **Chrome** | Completo |
+| **Firefox** | Completo |
+| **Windows Phone (Internet Explorer Mobile)** | _No_ |
+| **Safari Mobile** | Completo |
+| **Opera Mini** | _Básico_ |
 | **Android Browser** | _No_ |

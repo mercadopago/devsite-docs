@@ -79,7 +79,7 @@ Para escolher o checkout redirect, é necessários elecionar a opção **DESATIV
 Segue abaixo a descrição de cada campo do formulário de configuração no painel administrativo da plataforma:
 
 | Item | Valores | Descrição |
-| --- | --- | --- |
+| --- | --- | --- |
 | Status | Ativado / Desativado | Indica se o meio de pagamento está ativado/desativado na págian do checkout |
 | Nome da Aba no Checkout | | Indica o nome da aba para o meio de pagamento |
 | Desconto no boleto (%) | | Valor a ser descontado quando a forma de pagamento selecionada for boleto |

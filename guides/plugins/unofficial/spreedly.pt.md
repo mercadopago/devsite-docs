@@ -35,10 +35,10 @@ Finalmente, para operar com Mercado Pago é necessário que nos envie os dados d
 ## Começando com Spreedly
 
 Para começar a executar transações e obter pagamentos de seus usuarios necessitará:
-1. Criar uma [cuenta gratutita](https://spreedly.com/trial-qualification) e obter as credenciais.
-2. [Adicionar Mercado Pago](https://docs.spreedly.com/basics/gateway/) como gateway de pagamento.
-3. Começar a obter [informação do meio de pagamento](https://docs.spreedly.com/basics/payment-method) de seus usuários.
-4. [Gerar uma compra](https://docs.spreedly.com/basics/purchase)  com Spreedly através de Mercado Pago com a informação de pagamento de seus usuários.
+1. Criar uma [cuenta gratutita](https://spreedly.com/trial-qualification) e obter as credenciais.
+2. [Adicionar Mercado Pago](https://docs.spreedly.com/basics/gateway/) como gateway de pagamento.
+3. Começar a obter [informação do meio de pagamento](https://docs.spreedly.com/basics/payment-method) de seus usuários.
+4. [Gerar uma compra](https://docs.spreedly.com/basics/purchase)  com Spreedly através de Mercado Pago com a informação de pagamento de seus usuários.
 
 ## Adicionar Mercado Pago como gateway
 
@@ -114,7 +114,7 @@ A resposta que obterá é similar à seguinte:
 
 ## Gerar um meio de pagamento
 
-Para que Spreedly possa transacionar através de Mercado Pago é necessário obter a informação do cartão do seu usuário (Spreedly payment method). Por ser informação confidencial, não deve ir ao seu servidor. Para isto é necessário implementar o [checkout de Spreedly](https://docs.spreedly.com/basics/payment-method/).
+Para que Spreedly possa transacionar através de Mercado Pago é necessário obter a informação do cartão do seu usuário (Spreedly payment method). Por ser informação confidencial, não deve ir ao seu servidor. Para isto é necessário implementar o [checkout de Spreedly](https://docs.spreedly.com/basics/payment-method/).
 
 A API envolvida neste processo é:
 
@@ -356,7 +356,7 @@ Para processar com Mercado Pago é necessário enviar a identificação do pagad
 
 Você pode especificar o número de parcelas para uma transação enviando o campo `installments`. Se este campo não for enviado, Spreedly enviará com valor igual a 1.
 
-### Statement Descriptor
+### Statement Descriptor
 
 Esta é uma string que pode enviar para que seu cliente possa identificar a cobrança no extrato do cartão. Pode especificar o valor enviando-o no campo `statement_descriptor`. Isto se encontra disponível somente para o Brasil.
 
@@ -364,7 +364,7 @@ Esta é uma string que pode enviar para que seu cliente possa identificar a cobr
 
 Para obter uma melhora na aprovação dos pagamentos pode enviar as informacoes adicionais do pagamento em formato JSON no campo `additional_info`. Para maiores informações acesse o [seguinte link]("/reference/payments/_payments_id/get/").
 
-### Mercado Pago Device Fingerprint
+### Mercado Pago Device Fingerprint
 
 Mercado Pago tem suas próprias ferramentas de prevenção de fraude. Sempre que seja possível recomendamos enviar informação sobre o dispositivo do comprador, isto ajudará a evitar transações fraudulentas e melhorará a aprovação de seus pagamentos.
 

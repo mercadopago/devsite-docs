@@ -83,7 +83,7 @@ Puede suceder que determinados [medios de pago](https://www.mercadopago.com.ar/d
 | Pagos | Mobile Checkout | `account_money` |
 | Pagos | Checkout Transparente | N/A |
 | Suscripciones | Link de Pago | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress` |
-Suscripciones | Checkout Pro   | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
+Suscripciones | Checkout Pro   | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
 Suscripciones | Checkout Transparente | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout Transparente | N/A |
@@ -97,7 +97,7 @@ Suscripciones | Checkout Transparente | `naranja`, `nativa`, `shopping`, `debvis
 | Pagos | Mobile Checkout | `account_money` |
 | Pagos | Checkout API | N/A |
 | Suscripciones | Link de Pago | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress` |
-Suscripciones | Checkout Pro   | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
+Suscripciones | Checkout Pro   | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
 Suscripciones | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | N/A |

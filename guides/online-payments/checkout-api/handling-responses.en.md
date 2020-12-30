@@ -13,7 +13,7 @@ For example, if the card has insufficient balance, you can suggest trying again 
 ## Collection creation results
 
 
-| Status | `status_detail` | Suggested communication |
+| Status | `status_detail` | Suggested communication |
 | --- | --- | --- |
 | approved | `accredited` | Done! Your payment was credited. Your statement will show the `amount` charge as `statement_descriptor`. |
 | in_process | `pending_contingency` | We are processing your payment.<br/><br/>Don't worry! You will be notified via e-mail | if payment was credited in less than 2 business days. |

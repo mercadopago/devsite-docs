@@ -6,10 +6,10 @@ Una vez que hayas [creado tu link de pago](https://www.mercadopago[FAKER][URL][D
 
 Define cuál es el medio que mejor se adapta a tu negocio:
 
-| **Medio** | **Descripción** |
+| **Medio** | **Descripción** |
 | --- | --- |
 | WhatsApp | Elige entre tu lista de contactos y envíale el link de pago a través de un mensaje privado. |
-| Facebook o Twitter | Genera un nuevo posteo en tu red social favorita y compártelo con todos tus seguidores. |
+| Facebook o Twitter | Genera un nuevo posteo en tu red social favorita y compártelo con todos tus seguidores. |
 | E-mail | Utiliza tu correo personal para enviar el link de pago a quien quieras. |
 | Más opciones (_desde el navegador de tu celular_) | Si creaste tu link desde tu celular, podrás compartir el link a través de todas tus aplicaciones instaladas. |
 

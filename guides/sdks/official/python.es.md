@@ -40,7 +40,7 @@ Obtén tu **CLIENT_ID** y **CLIENT_SECRET** [en el siguiente link]([FAKER][CREDE
     mp = mercadopago.MP("CLIENT_ID", "CLIENT_SECRET")
 ```
 
-### Preferencias
+### Preferencias
 
 
 #### Obtén una preferencia de pago existente

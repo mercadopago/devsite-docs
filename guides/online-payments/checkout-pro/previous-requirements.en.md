@@ -6,7 +6,7 @@
 We know some terms are new. Before getting started, we'll give you a hand.
 
 | Term | Description |
-| --- | --- |
+| --- | --- |
 | _Preference_ | It is the **information of the product or service that you want to offer.** Among the most important attributes of a preference are defined: the description, the amount and the items. When generating it, you get the URL to start the payment flow. |
 | _Credentials_ | Your credentials are the **keys we provide so you can configure your integrations.**<br/>There are two types:<br/><br/>**Public Key**. Public key of the application to know, for example, the payment methods and encrypt card details. You must use it only for your integrations.<br/>**Access Token**. Private key of the application to generate payments. You must use it only for your integrations.<br/><br/>To find them, go to your <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credentials </a> and select the productive ones.<br/><br/> |
 | _Initial Point (init_point)_ | **It is the URL obtained at the time of generating the preference** and that starts the payment flow of the Checkout Pro. |

@@ -18,9 +18,9 @@ O módulo do Mercado Pago para o ZenCart esta integrado com as seguintes funcion
 
 ## Versões disponíveis
 
-| Versão do Plugin | Status | Versões compativéis |
+| Versão do Plugin | Status | Versões compativéis |
 | --- | --- | --- |
-| v1.0.1 | Stable (Current version) | ZenCart 1.5.x |
+| v1.0.1 | Stable (Current version) | ZenCart 1.5.x |
 
 ## Requisitos
 

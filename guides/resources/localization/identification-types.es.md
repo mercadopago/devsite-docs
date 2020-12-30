@@ -86,7 +86,7 @@ A continuación se indican los tipos de documento aceptados para cada país.
 | Tipo de documento | ID |
 | :--- | :--- |
 | Cédula de Ciudadanía | `CC` |
-| Cédula de Extranjeria | `CE`                     |
+| Cédula de Extranjeria | `CE`                     |
 | Número de Identificación Tributaria | `NIT` |
 | Otro | `Otro` |
 

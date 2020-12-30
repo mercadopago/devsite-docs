@@ -22,7 +22,7 @@ O módulo do Mercado Pago para o OsCommerce esta integrado com as seguintes func
 | Versão do Plugin | Status | Versões compativéis |
 | --- | --- | --- |
 | v2.2 | Deprecated (Old version) | osCommerce 2.2 |
-| v2.3 | Stable (Current version) | osCommerce 2.3 |
+| v2.3 | Stable (Current version) | osCommerce 2.3 |
 
 ## Requisitos
 
