@@ -49,9 +49,9 @@ Luego de esto, puedes obtener la información completa del recurso notificado ac
 
 | Tipo | URL | Documentación |
 | --- | --- | --- |
-| payment | /v1/payments/[ID] | [ver documentación](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_idget) |
+| payment | /v1/payments/[ID] | [ver documentación](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get) |
 | chargebacks | /v1/chargebacks/[ID] | - |
-| merchant_orders | /merchant\_orders/[ID] | [ver documentación](https://www.mercadopago.com.ar/developers/es/reference/merchant_orders/_merchant_orders_idget) |
+| merchant_orders | /merchant\_orders/[ID] | [ver documentación](https://www.mercadopago.com.ar/developers/es/reference/merchant_orders/_merchant_orders_id/get) |
 
 Con esta información puedes realizar las actualizaciones necesarias en tu plataforma, por ejemplo registrar un pago acreditado o una orden cerrada. 
 
