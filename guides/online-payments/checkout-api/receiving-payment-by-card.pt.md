@@ -32,7 +32,7 @@ Ao usar nosso Checkout API do Mercado Pago, é importante ter em conta duas inst
 
 Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
 
-> Obtenha mais informações nas [Referências de API](https://www.mercadopago.FAKER][URL][DOMAIN]/developers/pt/reference).
+> Obtenha mais informações nas [Referências de API](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/reference).
 
 <br>
 
@@ -524,7 +524,7 @@ curl -X POST \
 }
 ```
 
-> Conheça todos os campos disponíveis para realizar um pagamento completo nas [Referências de API](https://www.mercadopago.FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments/post).
+> Conheça todos os campos disponíveis para realizar um pagamento completo nas [Referências de API](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments/post).
 
 ## Mensagens de respostas
 

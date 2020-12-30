@@ -157,7 +157,7 @@ Uma vez que você tenha gerado seu plano e obtido seu `preapproval_plan_id`, cri
         "end_date": "2021-07-02T11:59:52.581-04:00"
 }
 ```
->Você pode obter mais informações sobre os campos na <a href="https://www.mercadopago.FAKER][URL][DOMAIN]/developers/pt/reference/" target="_blank">Referência de API<a>.
+>Você pode obter mais informações sobre os campos na <a href="https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/reference/" target="_blank">Referência de API<a>.
 
 Prono! Você criou uma assinatura com um plano associado.
 
@@ -283,7 +283,7 @@ Para o cadastro, os detalhes do cartão devem ser informados usando nosso formul
 }
 ```
 
-> Você pode obter mais informações sobre os campos na <a href="https://www.mercadopago.FAKER][URL][DOMAIN]/developers/pt/reference/" target="_blank">Referência de API<a>.
+> Você pode obter mais informações sobre os campos na <a href="https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/reference/" target="_blank">Referência de API<a>.
 
 
 Atributos

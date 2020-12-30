@@ -87,7 +87,7 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 
 ## Conoce nuestras Referencias de API
 
-Si no puedes utilizar nuestros SDK oficiales, tienes disponible toda la información sobre consultas y respuestas de datos para interactuar directamente con nuestras APIs en [Referencias de API](https://www.mercadopago.FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments/post).
+Si no puedes utilizar nuestros SDK oficiales, tienes disponible toda la información sobre consultas y respuestas de datos para interactuar directamente con nuestras APIs en [Referencias de API](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments/post).
 
 ## Cumple los requisitos para ir a producción
 
@@ -122,4 +122,4 @@ Cuando tengas lista tu integración y quieras comenzar a recibir pagos, solo tie
 >
 > Encuentra toda la información necesaria para interactuar con nuestras APIs.
 >
-> [Referencias de API](https://www.mercadopago.FAKER][URL][DOMAIN]/developers/es/reference)
+> [Referencias de API](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/es/reference)

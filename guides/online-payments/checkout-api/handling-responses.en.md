@@ -8,7 +8,7 @@ For example, if the card has insufficient balance, you can suggest trying again 
 >
 > Note
 >
-> To get more information about the possible errors, view the [API reference](https://www.mercadopago.FAKER][URL][DOMAIN]/developers/en/reference).
+> To get more information about the possible errors, view the [API reference](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/reference).
 
 ## Collection creation results
 
@@ -94,4 +94,4 @@ For example, if the card has insufficient balance, you can suggest trying again 
 >
 > Find all the information required to interact with our APIs.
 >
-> [API References](https://www.mercadopago.FAKER][URL][DOMAIN]/developers/en/reference)
+> [API References](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/reference)

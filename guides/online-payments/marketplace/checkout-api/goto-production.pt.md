@@ -73,4 +73,4 @@ Disponibilize uma política de termos e condições e deixe claro que é respons
 >
 > Encontre toda a informação necessária para interagir com nossas APIs.
 >
-> [Referências de API](https://www.mercadopago.FAKER][URL][DOMAIN]/developers/pt/reference)
+> [Referências de API](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/reference)

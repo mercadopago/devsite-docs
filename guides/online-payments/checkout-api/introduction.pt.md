@@ -40,4 +40,4 @@ Use nossos SDKs oficiais ou interaja diretamente com nossas APIs.
 >
 > Encontre toda a informação necessária para interagir com nossas APIs.
 >
-> [Referencias de API](https://www.mercadopago.FAKER][URL][DOMAIN]/developers/pt/reference)
+> [Referencias de API](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/reference)

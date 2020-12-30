@@ -175,4 +175,4 @@ Antes de activarlas, verifica que las credenciales en tu integración sean las d
 >
 > Encuentra toda la información necesaria para interactuar con nuestras APIs.
 >
-> [Referencias de API](https://www.mercadopago.FAKER][URL][DOMAIN]/developers/es/reference)
+> [Referencias de API](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/es/reference)
