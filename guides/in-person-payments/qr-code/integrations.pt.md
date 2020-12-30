@@ -29,7 +29,7 @@ Você pode receber, restituir pagamentos e receber notificações em seu sistema
 
 | Tipo de integração | Características | Funcionamento | Exemplos de negócios |
 | --- | --- | --- | --- |
-| Modelo atendido | Requer intervenção do operador do ponto de venda. Mercado Pago como meio de pagamento. | O operador toma o pedido de venda. Depois o cliente escaneia o QR pagando o valor do pedido. | Loja de produtos,  restaurantes de [fast-food]. |
+| Modelo atendido | Requer intervenção do operador do ponto de venda. Mercado Pago como meio de pagamento. | O operador toma o pedido de venda. Depois o cliente escaneia o QR pagando o valor do pedido. | Loja de produtos, restaurantes de [fast-food]. |
 
 ---
 ### Próximos passos

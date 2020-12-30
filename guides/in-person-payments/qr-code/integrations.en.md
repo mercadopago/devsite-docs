@@ -26,7 +26,7 @@ Provide a more complete experience for QR payments by **integrating your system 
 
 You’ll be able to charge, refund and receive notifications in your system. 
 
-| Integration type | Features | Operation |   Business examples |
+| Integration type | Features | Operation | Business examples |
 | --- | --- | --- | --- |
 | Attended model | Requires intervention from the operator in a point of sale. Select Mercado Pago as a payment method. | Operator takes the order. Next, client scans QR to pay for the order. | Stores, fast food restaurants. |
 
