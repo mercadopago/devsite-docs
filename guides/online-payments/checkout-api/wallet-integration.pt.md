@@ -221,7 +221,7 @@ Depois, do seu frontend, adicione o seguinte código para exibir o botão de pag
 ]]]
 
 
-Para mais informações sobre cada atributo, confira a [Referência de API](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/reference/preferences/_checkout_preferences/post). 
+Para mais informações sobre cada atributo, confira a [Referência de API](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/pt/reference/preferences/_checkout_preferences/post). 
 
 Pronto! você já tem a carteira do Mercado Pago integrada no seu site.
 

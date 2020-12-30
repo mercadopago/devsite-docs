@@ -31,7 +31,7 @@ curl -X GET \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/orders
 ```
-Pode obter mais informações em [Referências do API](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/get).
+Pode obter mais informações em [Referências do API](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/pt/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/get).
 
 
 ## Gere relatórios de suas vendas

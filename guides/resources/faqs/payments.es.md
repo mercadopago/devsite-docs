@@ -52,7 +52,7 @@ Esto genera que, según el monto elegido, puedas visualizar algunos medios de pa
 
 ## Cómo generar el mismo ticket nuevamente
 
-Para generar un duplicado del boleto es necesario que uses el [método GET de la API de Payments](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get) enviando el ID del pago y el Access Token del vendedor.
+Para generar un duplicado del boleto es necesario que uses el [método GET de la API de Payments](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/es/reference/payments/_payments_id/get) enviando el ID del pago y el Access Token del vendedor.
 
 La consulta sería de la siguiente forma:
 
@@ -72,7 +72,7 @@ Es posible remover la opción de boleto a través de la preferencia de pago. Pue
 
 Puedes removerlo directamente desde tu frontend. Obtén los medios de pago y excluye a boleto en la llamada con el parámetro `"payment_type_id" = credit_card` como filtro, por ejemplo.
 
-> Puedes encontrar más detalle en la [Referencia de API](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/es/reference/payment_methods/_payment_methods/get).
+> Puedes encontrar más detalle en la [Referencia de API](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/es/reference/payment_methods/_payment_methods/get).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plugins y soluciones de e-commerce listas para usar
 

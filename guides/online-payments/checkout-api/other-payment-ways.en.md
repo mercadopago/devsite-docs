@@ -115,7 +115,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 ]
 ```
 
-> For more information, check [API References](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/reference).
+> For more information, check [API References](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/en/reference).
 
 <br>
 <span></span>
@@ -629,7 +629,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 ]
 ```
 
-> For more information, check [API References](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/reference).
+> For more information, check [API References](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/en/reference).
 
 <br>
 <span></span>
@@ -1017,7 +1017,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 ]
 ```
 
-> For more information, check [API References](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/reference).
+> For more information, check [API References](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/en/reference).
 
 <br>
 <span></span>
@@ -1421,7 +1421,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 ]
 ```
 
-> For more information, check [API References](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/reference).
+> For more information, check [API References](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/en/reference).
 
 <br>
 <span></span>
@@ -2023,7 +2023,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 ]
 ```
 
-> For more information, check [API References](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/reference).
+> For more information, check [API References](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/en/reference).
 
 <br>
 <span></span>
@@ -2550,7 +2550,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 ]
 ```
 
-> For more information, check [API References](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/reference).
+> For more information, check [API References](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/en/reference).
 
 <br>
 <span></span>
@@ -2927,7 +2927,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 ]
 ```
 
-> For more information, check [API References](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/reference).
+> For more information, check [API References](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/en/reference).
 
 <br>
 <span></span>

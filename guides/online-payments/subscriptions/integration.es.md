@@ -157,7 +157,7 @@ Una vez generado tu plan y obtenido tu `preapproval_plan_id`, crea la suscripci�
         "end_date": "2021-07-02T11:59:52.581-04:00"
 }
 ```
->Puedes obtener más información sobre los campos en la <a href="https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/es/reference/" target="_blank">Referencia de API<a>.
+>Puedes obtener más información sobre los campos en la <a href="https://www.mercadopago[FAKER[URL][DOMAIN]/developers/es/reference/" target="_blank">Referencia de API<a>.
 
 ¡Y listo! Ya creaste una suscripción con un plan asociado.
 
@@ -283,7 +283,7 @@ Para poder adherirse, la carga de los datos de la tarjeta se debe realizar con n
 }
 ```
 
-> Puedes obtener más información sobre los campos en la <a href="https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/es/reference/" target="_blank">Referencia de API<a>.
+> Puedes obtener más información sobre los campos en la <a href="https://www.mercadopago[FAKER[URL][DOMAIN]/developers/es/reference/" target="_blank">Referencia de API<a>.
 
 
 Atributos

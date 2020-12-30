@@ -32,7 +32,7 @@ curl -X GET \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/orders
 ```
-Obtain more information in our [API Reference](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/get).
+Obtain more information in our [API Reference](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/get).
 
 ## Generate reports of your sales
 
