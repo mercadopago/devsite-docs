@@ -45,7 +45,7 @@ Checkout Pro is an integration that allows you to **charge your customers throug
 ----[mla, mlb]----
 | | Checkout Pro | Web Tokenize Checkout |      API |
 | :---  | :---: | :---: | :---: |
-| Integration difficulty		  	      |     Low    |       Medium         |     High |
+| Integration difficulty		  	      |     Low    |       Medium         |     High |
 | UI/UX Design 							  	       |      ✔      |         ✔           |
 | Conversion optimization	   |      ✔      |         ✔           |
 | Approval optimization       |      ✔      |                     |

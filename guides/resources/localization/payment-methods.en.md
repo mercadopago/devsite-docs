@@ -147,7 +147,7 @@ The payment methods available for each country are shown below.
 | :--- | :--- | :--- |
 | Visa | `credit_card` | `visa` |
 | Mastercard | `credit_card` | `master` |
-| American Express | `credit_card` | `amex` |
+| American Express | `credit_card` | `amex` |
 | Diners Club International	| `credit_card` | `diners` |
 | Tarjeta CMR | `credit_card` | `cmr` |
 | Tarjeta Magna | `credit_card` | `magna` |

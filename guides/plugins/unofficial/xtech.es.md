@@ -79,7 +79,7 @@ Para elegir redireccionar el pago, debe seleccionar ** DESACTIVADO ** en el camp
 A continuación se muestra la descripción de cada campo del formulario de configuración en el panel de administración de la plataforma:
 
 | Item | Valores | Descripción
-| --- | --- | --- |
+| --- | --- | --- |
 | Status | Activo / Inactivo | Indica si el método de pago está habilitado / deshabilitado en la página de pago
 | Nombre de pestaña de pago |  | Indica el nombre de la pestaña para el método de pago
 | Descuento de boleto (%) |  | Cantidad a descontar cuando el método de pago seleccionado es un recibo bancario

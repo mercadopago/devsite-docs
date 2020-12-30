@@ -71,7 +71,7 @@ Lastly, make sure you’ve received an status notification in your system. And y
 | **Rejected payment**. User makes a rejected payment.| Point of Sale system receives information about the rejected payment and keeps waiting for the order to be pay.| `merchant_order` status must be **opened**. |
 | **Second payment attempt**. User first performs a rejected payments and then execute an approved payment. | Point of sale system receives information about the rejected payment and an approved payment later.| Don’t remove the order after a rejected payment.|
 | **Refunds**. These are performed from the Point of Sale.| Refunds impact in buyer account.| See [refunds](https://www.mercadopago.com.ar/developers/en/guides/manage-account/account/cancellations-and-refunds/#bookmark_refunds). |
-| **Cancel order**. Users change their mind and decides to pay in cash. | Order is removed and, therefore, scanning the QR code only shows a waiting screen.  | Remove order from the Point of Sale. |
+| **Cancel order**. Users change their mind and decides to pay in cash. | Order is removed and, therefore, scanning the QR code only shows a waiting screen. | Remove order from the Point of Sale. |
 
 ## Production mode
 

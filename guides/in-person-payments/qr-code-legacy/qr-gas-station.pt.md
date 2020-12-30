@@ -22,7 +22,7 @@
 
 7. Com o ID de pagamento, você pode [pesquisar] (https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_search/get/) o pagamento e continuar os seus processos internos.
 
-   > Se o status for 'approved', o pagamento deve ser creditado. Por outro lado, se for `rejected`, o aplicativo tentará novamente o pagamento solicitando outro meio de pagamento.
+   > Se o status for 'approved', o pagamento deve ser creditado. Por outro lado, se for `rejected`, o aplicativo tentará novamente o pagamento solicitando outro meio de pagamento.
 
 8. Pronto! Informe ao cliente que o pagamento foi processado corretamente.
 

@@ -177,9 +177,9 @@ También se puede definir un medio de pago para que aparezca por defecto o la ca
 | --- | --- |
 | `payment_methods` | Clase que describe los atributos y métodos de medios de pago. |
 | `excluded_payment_methods` | Método que excluye por <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">medios de pago</a> específicos: Visa, Mastercard o American Express, entre otras. |
-| `excluded_payment_types` | Método que excluye por tipo de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">medios de pago</a>: efectivo, tarjetas de crédito o débito. |
+| `excluded_payment_types` | Método que excluye por tipo de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">medios de pago</a>: efectivo, tarjetas de crédito o débito. |
 | `installments` | Método que define la cantidad de cuotas máximas a ofrecer. |
-| `purpose` | Cuando se indique el valor "wallet_purchase", el Checkout aceptará pagos exclusivamente de usuarios registrados en Mercado Pago, con tarjeta y dinero en cuenta. |
+| `purpose` | Cuando se indique el valor "wallet_purchase", el Checkout aceptará pagos exclusivamente de usuarios registrados en Mercado Pago, con tarjeta y dinero en cuenta. |
 
 ------------
 
@@ -188,7 +188,7 @@ También se puede definir un medio de pago para que aparezca por defecto o la ca
 | --- | --- |
 | `payment_methods` | Clase que describe los atributos y métodos de medios de pago. |
 | `excluded_payment_methods` | Método que excluye por <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">medios de pago</a>  específicos: Visa, Mastercard o American Express, entre otras. |
-| `excluded_payment_types` | Método que excluye por tipo de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">medios de pago</a> : efectivo, tarjetas de crédito o débito. |
+| `excluded_payment_types` | Método que excluye por tipo de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">medios de pago</a> : efectivo, tarjetas de crédito o débito. |
 | `installments` | Método que define la cantidad de mensualidades máximas a ofrecer. |
 | `purpose` | Cuando se indique el valor "wallet_purchase", el Checkout aceptará pagos exclusivamente de usuarios registrados en Mercado Pago, con tarjeta y dinero en cuenta.|
 
@@ -282,7 +282,7 @@ paymentmethods.Installments = 12;
 | Atributo | Descripción |
 | --- | --- |
 | `type` | Identificador del impuesto. Solo se admiten los valores IVA e INC. |
-| `value` | Monto del impuesto. Se admite un máximo de dos decimales. Para ítems excentos de impuestos se debe informar cero. |
+| `value` | Monto del impuesto. Se admite un máximo de dos decimales. Para ítems excentos de impuestos se debe informar cero. |
 
  ```json
 ===

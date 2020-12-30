@@ -19,15 +19,15 @@ A tabela abaixo mostra todas as informações que ele contém:
 | ID 43.03 | User ID. | até 10 | Obrigatório |
 | ID 43.04 | Sponsor ID. | até 10 | Opcional |
 | ID 52: Merchant Category Code | Código para classificação da loja. | 04 | Obrigatório |
-| ID 53: Transaction Currency | Moeda numérica respectiva ao valor total. ----[mlb]---- Brasil: 986 ------------ ----[mla]---- Argentina: 032 ------------ ----[mlc]---- Chile: 152 ------------ ----[mlu]---- Uruguay: 858 ------------ ----[mco]---- Colombia: 170 ------------ ----[mpe]---- Perú: 604 ------------ ----[mlm]---- México: 484 ------------.  | 03 | Obrigatório |
+| ID 53: Transaction Currency | Moeda numérica respectiva ao valor total. ----[mlb]---- Brasil: 986 ------------ ----[mla]---- Argentina: 032 ------------ ----[mlc]---- Chile: 152 ------------ ----[mlu]---- Uruguay: 858 ------------ ----[mco]---- Colombia: 170 ------------ ----[mpe]---- Perú: 604 ------------ ----[mlm]---- México: 484 ------------. | 03 | Obrigatório |
 | ID 54: Transaction Amount | Valor total da compra. Ex.: 10.00 | até 13 | Obrigatório |
-| ID 58: Country Code | País do vendedor.  ----[mlb]---- Brasil: `BR` ------------ ----[mla]---- Argentina: `AR` ------------ ----[mlc]---- Chile: `CL` ------------ ----[mlu]---- Uruguay: `UY` ------------ ----[mco]---- Colombia: `CO` ------------ ----[mpe]---- Perú: `PE` ------------ ----[mlm]---- México: `MX` ------------. | 02 | Obrigatório |
+| ID 58: Country Code | País do vendedor. ----[mlb]---- Brasil: `BR` ------------ ----[mla]---- Argentina: `AR` ------------ ----[mlc]---- Chile: `CL` ------------ ----[mlu]---- Uruguay: `UY` ------------ ----[mco]---- Colombia: `CO` ------------ ----[mpe]---- Perú: `PE` ------------ ----[mlm]---- México: `MX` ------------. | 02 | Obrigatório |
 | ID 59: Merchant Name | Nome da sua loja. | até 25 | Obrigatório |
-| ID 60: Merchant City | Cidade do vendedor.  | até 15 | Obrigatório |
-| ID 62.05: Reference Label | ID definido pelo integrador para associar a transação à um pagamento do Mercado Pago.   | até 25 | Obrigatório |
+| ID 60: Merchant City | Cidade do vendedor. | até 15 | Obrigatório |
+| ID 62.05: Reference Label | ID definido pelo integrador para associar a transação à um pagamento do Mercado Pago. | até 25 | Obrigatório |
 | ID 62.07: Terminal Label | *External_id* da caixa. | até 10 | Opcional |
-| ID 62.08: Purpose of Transaction | Título descritivo referido ao propósito da compra.  | até 25 | Opcional |
-| ID 63: CRC |  Checksum - Validação do conteúdo.  | 04 | Obrigatório |
+| ID 62.08: Purpose of Transaction | Título descritivo referido ao propósito da compra. | até 25 | Opcional |
+| ID 63: CRC | Checksum - Validação do conteúdo. | 04 | Obrigatório |
 
 
 >Para saber mais sobre as informações que você deve fornecer sobre a sua conta, [consulte o glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/pre-requisites/#bookmark_glosario).
@@ -42,7 +42,7 @@ Lembre que você só deve alterar os valores de exemplo. Os valores fixos não d
 
 
 
-| ID | Sub ID | Comprimento | Valor fixo | Valor exemplo |
+| ID | Sub ID | Comprimento | Valor fixo | Valor exemplo |
 | --- | --- | --- | --- | --- |
 | 00 | - | 02 | 01 | - |
 | 01 | - | 02 | 12 | - |

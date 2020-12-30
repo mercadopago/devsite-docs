@@ -15,7 +15,7 @@ You should check if:
 
 | User types | Description |
 | --- | --- |
-| Seller | It is the test account you use to **configure the application and credentials for collection**. |
+| Seller | It is the test account you use to **configure the application and credentials for collection**. |
 | Buyer | It is the test account you use to **test the purchase process**.<br/> |
 
 ## How to create users
@@ -96,7 +96,7 @@ Use these test cards to test the different payment results.
 ------------
 ----[mlc]----
 
-| Card | Number | CVV | Expiration Date |
+| Card | Number | CVV | Expiration Date |
 | :--- | :---: | :---: | :---: |
 | Mastercard | 5416 7526 0258 2580 | 123 | 11/25 |
 | Visa | 4168 8188 4444 7115 | 123 | 11/25 |

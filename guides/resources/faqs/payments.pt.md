@@ -60,7 +60,7 @@ A consulta será da seguinte forma:
 
 No retorno da chamada haverá o parâmetro `transaction_details` que conterá o  `external_resource_url` com o link da segunda via do boleto.
 
-## Remover o boleto como forma de pagamento
+## Remover o boleto como forma de pagamento
 
 Dependendo do seu tipo de checkout e integração o processo pode ser diferente.
 

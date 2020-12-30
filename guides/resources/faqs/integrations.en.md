@@ -53,7 +53,7 @@ It's the simplified version of the Checkout Pro with a renewed user experience.
 
 This way of integrating allows you to connect directly with our APIs.
 
-- **Become the owner of your experience.** We give you absolute freedom to customize the experiences of your buyers and never leave your site.  
+- **Become the owner of your experience.** We give you absolute freedom to customize the experiences of your buyers and never leave your site.  
 
 - **Your technical team has total control.** They will be able to handle all sensitive data manipulation processes in the front-end where the payment request occurs.
 

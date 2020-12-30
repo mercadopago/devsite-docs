@@ -168,7 +168,7 @@ Você também pode definir um meio de pagamento para que apareça por padrão ou
 | Atributo | Descrição |
 | --- | --- |
 | `payment_methods` | Classe que descreve os atributos e métodos de meios de pagamento. |
-| `excluded_payment_methods` | Método que exclui por <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods/#bookmark_meios_de_pagamento_por_país" target="_blank">meios de pagamento</a> específicos: Visa, Mastercard o American Express, entre outros. |
+| `excluded_payment_methods` | Método que exclui por <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods/#bookmark_meios_de_pagamento_por_país" target="_blank">meios de pagamento</a> específicos: Visa, Mastercard o American Express, entre outros. |
 | `excluded_payment_types` | Método que exclui por tipo de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods/#bookmark_meios_de_pagamento_por_país" target="_blank">meio de pagamento</a>: cartão de crédito ou ticket (boleto ou pagamento em lotérica). |
 | `installments` | Método que define o número máximo de parcelas a oferecer. |
 | `purpose` | Quando for indicado o valor "wallet_purchase", o Checkout aceitará pagamentos exclusivamente de usuários cadastrados no Mercado Pago, com cartão e saldo em conta. |
@@ -261,7 +261,7 @@ Você pode modificar o valor do imposto para a Dirección de Impuestos y Aduanas
 | Atributo | Descrição |
 | --- | --- |
 | `type` | Identificador do imposto. Permitido somente os valores IVA e INC. |
-| `value` | Valor do imposto. Permitido o máximo de duas casas decimais. Para itens isentos de imposto,deve ser informado zero. |
+| `value` | Valor do imposto. Permitido o máximo de duas casas decimais. Para itens isentos de imposto,deve ser informado zero. |
 
  ```json
 ===
@@ -820,7 +820,7 @@ Nossos [Partners](https://partners.mercadopago.com/) poderão obter métricas de
 
 | Header | Tipo de código | Identificadores |
 | --- | --- | --- |
-| `x-integrator-id` | Integrador | Para programadores ou agências que realizam a integração. |
+| `x-integrator-id` | Integrador | Para programadores ou agências que realizam a integração. |
 | `x-platform-id` | Plataforma | Para as plataformas ou módulos que oferecem Mecado Pago em suas soluções. |
 | `x-corporation-id` | Corporações | Para contas associadas a uma conta vendedor ou grupo econômico. |
 

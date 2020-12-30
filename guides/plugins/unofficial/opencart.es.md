@@ -120,9 +120,9 @@ Ofrezca un checkout personalizado a su experiencia de marca con nuestra API de p
  * **Debug Mode**: Si está habilitado, muestra la respuesta cruda de la API en lugar de un mensaje amigable.
  * **Enabled**: Habilita/desabilita esta solución de pago.
  * **Type Checkout (you're using Standard Checkout)**: Define los tipos de checkout, las opciones son:
-  * *Iframe*: Abre una URL de OpenCart con el iframe como contenido.
-  * *Redirect*: Redirecciona la URL del Mercado Pago.
-  * *Lightbox*: Similar a la opción de Iframe pero abre una lightbox en lugar de un iframe.
+  * *Iframe*: Abre una URL de OpenCart con el iframe como contenido.
+  * *Redirect*: Redirecciona la URL del Mercado Pago.
+  * *Lightbox*: Similar a la opción de Iframe pero abre una lightbox en lugar de un iframe.
 
 
 ## Notificaciones

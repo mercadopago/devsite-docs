@@ -793,11 +793,11 @@ Once set up, you’ll see a conversion associated to the configured label everyt
 
 Our [Partners](https://partners.mercadopago.com/) can obtain business metrics. To get business metrics, use `headers` in your preference. You should only add identification codes, as applicable. It is not required to complete the three fields mentioned.
 
-| Header | Code Type | Identifiers |
+| Header | Code Type | Identifiers |
 | --- | --- | --- |
-| `x-integrator-id` | Integrator | For developers or agencies that conducted the integration. |
+| `x-integrator-id` | Integrator | For developers or agencies that conducted the integration. |
 | `x-platform-id` | Platform | For the platforms or modules that offer Mercado Pago in their solutions. |
-| `x-corporation-id` | Corporations | For accounts associated with a seller's account or economic group. |
+| `x-corporation-id` | Corporations | For accounts associated with a seller's account or economic group. |
 
 > If you need your `integrator_id` or your` platform_id`, [request your code now](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/edit). 
 

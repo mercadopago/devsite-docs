@@ -31,10 +31,10 @@ _Segue uma comparação das características principais de cada modelo:_
 | Prevenção de fraude (Scoring) | ✔ | ✔ (*) |
 | Prevenção de fraude (Revisão Manual) | ✔ | ✔ (*) |
 | Conciliação (com Mercado Pago) | ✔ | ✔ |
-| Conciliação (com Adquirentes e Emissores) | Incluído | Não oferecido(a) |
+| Conciliação (com Adquirentes e Emissores) | Incluído | Não oferecido(a) |
 | Financiamento (parcelamento e promoções) | Incluída | Não aplicável |
-| Transações não autorizadas (Gestão) | Incluído | Não oferecido(a) |
-| Transações não autorizadas (Cobertura) | Incluída | Não oferecido(a) |
+| Transações não autorizadas (Gestão) | Incluído | Não oferecido(a) |
+| Transações não autorizadas (Cobertura) | Incluída | Não oferecido(a) |
 
 > (\*) Opcional
 

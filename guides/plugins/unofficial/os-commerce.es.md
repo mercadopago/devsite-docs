@@ -25,8 +25,8 @@ Great for merchants who want to get going quickly and easily.
 
 ## Available versions
 
-| Plugin Version | Status | Compatible Versions |
-| --- | --- | --- |
+| Plugin Version | Status | Compatible Versions |
+| --- | --- | --- |
 | v2.2 | Deprecated (Old version) | osCommerce 2.2 |
 | v2.3 | Stable (Current version) | osCommerce 2.3 |
 

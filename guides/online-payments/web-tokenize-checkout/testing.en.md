@@ -15,7 +15,7 @@ You should check if:
 **Test users allow you to test your integration** by generating payment flows in an exact copy of your integration.
 
 | User types | Description |
-| --- | --- |
+| --- | --- |
 | Seller | It is the test account you use to **configure the application and credentials for collection**. |
 | Buyer | It is the test account you use to **test the purchase process**.<br/> |
 
@@ -80,7 +80,7 @@ You have a pair of [test credentials]([FAKER][CREDENTIALS][URL]) which will allo
 ------------
 ----[mlc]----
 
-| Card | Number | CVV | Expiration Date |
+| Card | Number | CVV | Expiration Date |
 | :--- | :---: | :---: | :---: |
 | Mastercard | 5416 7526 0258 2580 | 123 | 11/25 |
 | Visa | 4168 8188 4444 7115 | 123 | 11/25 |

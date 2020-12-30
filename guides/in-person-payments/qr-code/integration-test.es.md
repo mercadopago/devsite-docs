@@ -42,8 +42,8 @@ Para realizar las pruebas es necesario que tengas como mínimo dos usuarios: un 
 | Tarjeta | Número | CVV | Fecha de vencimiento |
 | --- | --- | --- |
 | MasterCard | 5031 7557 3453 0604 | 123 | 11/25 |
-| Visa | 4170 0688 1010 8020 | 123 | 11/25 |
-| American Express | 3711 8030 3257 522 | 1234 | 11/25 |
+| Visa | 4170 0688 1010 8020 | 123 | 11/25 |
+| American Express | 3711 8030 3257 522 | 1234 | 11/25 |
 
 Aquí podras encontrar mas [tarjetas de prueba](https://www.mercadopago.com.ar/developers/es/guides/resources/localization/local-cards/). 
 

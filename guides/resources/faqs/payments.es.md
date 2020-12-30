@@ -60,7 +60,7 @@ La consulta sería de la siguiente forma:
 
 El retorno de la llamada va a devolver el parámetro `transaction_details` que contendrá el `external_resource_url` con el link del boleto duplicado.
 
-## Quitar boleto como medio de pago
+## Quitar boleto como medio de pago
 
 En base al tipo de checkout e integración que estés realizando, el proceso puede ser diferente.
 
