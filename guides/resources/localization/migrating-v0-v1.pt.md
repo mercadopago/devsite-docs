@@ -39,8 +39,8 @@ A seguir, você encontrará os recursos migrados e seus equivalentes.
 | Pagamentos | `GET` | /payments/$payment_id | /v1/payments/$payment_id/ | [acesse](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_id/get) |
 | Pagamentos | `GET` | /collections/$payment_id | /v1/payments/$payment_id/ | [acesse](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_id/get) |
 | Notificação de pagamentos| `GET` | /collections/notifications/$payment_id | /v1/payments/$payment_id/ |[acesse](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_id/get) |
-| Busca de pagamentos | `GET` | /payments/search | /v1/payments/search | [acesse](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_searchget)|
-| Busca de pagamentos | `GET` | /collections/search | /v1/payments/search | [acesse](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_searchget)|
+| Busca de pagamentos | `GET` | /payments/search | /v1/payments/search | [acesse](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_search/get)|
+| Busca de pagamentos | `GET` | /collections/search | /v1/payments/search | [acesse](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_search/get)|
 
 ## Versões válidas das ferramentas para a nova versão 
 
