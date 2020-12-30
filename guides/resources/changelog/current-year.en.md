@@ -271,7 +271,7 @@ We added sample projects to get your Checkout API up and running instantly. You 
 
 From now on, you must start adding your Access Token to the request headers instead of sending by URL when consuming our APIs in order to guarantee the security of your token. For now, both forms are valid but we recommend using the new one. If you use our official SDKs you just have to make sure you are using the latest version.
 
-You can see all the information in the [API Reference](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/en/reference).
+You can see all the information in the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
 
 
 ### September 21st
@@ -307,7 +307,7 @@ We have released the new version 4.4.0 for WooCommerce.
 
 We update our data protection protocols to meet the highest security standards. After October 12th, we will stop displaying the payer's e-mail when creating orders.
 
-You can see all the information in the [API Reference](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/en/reference/merchant_orders/resource).
+You can see all the information in the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/merchant_orders/resource).
 
 ### September 10th
 
@@ -380,7 +380,7 @@ We have released the new version 4.3.0 for WooCommerce.
 Our payment IDs will now be 11 digits long. Our APIs and SDKs operate on data type `long` so this change should not impact your integration with Mercado Pago.
 If you have any doubts, we recommend reviewing how you manage and store our Payment ID in your integration in order to avoid any inconvenience.
 
-For further information, visit our [API Reference](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/en/reference/payments/_payments/post).
+For further information, visit our [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post).
 
 ### August 13th
 
@@ -468,7 +468,7 @@ We have released the new version 4.2.2 for WooCommerce.
 
 We update our data protection protocols to meet the highest security standards. After July 8th, we will stop displaying the seller's e-mail when creating orders. The change shouldn't cause any problems in the integration, since it's information of the person who is creating the order.
 
-You can see all the information in the [API Reference](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/en/reference/merchant_orders/resource).
+You can see all the information in the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/merchant_orders/resource).
 
 ### July 7th
 

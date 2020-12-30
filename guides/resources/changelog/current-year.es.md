@@ -284,7 +284,7 @@ Sumamos ejemplos descargables de integración de pagos con tarjeta para que prue
 
 A partir de ahora, deberás dejar de enviar tu Access Token por URL al consumir nuestras APIs y comenzar a sumarlo en los headers de la solicitud para mayor seguridad. Por el momento, ambas formas son válidas pero te recomendamos que comiences a usar la nueva. Si usas nuestras SDKs oficiales solo tienes que mantenerla actualizada a la última versión.
 
-Puedes ver toda la información en la [Referencia de API](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/es/reference).
+Puedes ver toda la información en la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference).
 
 
 ### 21 de septiembre
@@ -320,7 +320,7 @@ Lanzamos la nueva versión 4.4.0 para WooCommerce.
 
 Actualizamos nuestras medidas de protección de datos para cumplir con los más altos estándares de seguridad. A partir del lunes 12 de octubre, vamos a dejar de mostrar el e-mail del comprador en la creación de órdenes. 
 
-Puedes ver toda la información en la [Referencia de API](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/es/reference/merchant_orders/resource).
+Puedes ver toda la información en la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/merchant_orders/resource).
 
 ### 10 de septiembre
 
@@ -393,7 +393,7 @@ Lanzamos la nueva versión 4.3.0 para WooCommerce.
 Los IDs de pagos pasarán de tener 10 dígitos a 11 dígitos. Nuestras APIs y SDKs operan con un tipo de dato `long` por lo que no habrá ningún impacto en la operatoria con Mercado Pago. 
 Si tienes dudas, te recomendamos revisar la administración y almacenamiento de nuestro Payment ID en tu integración para evitar cualquier inconveniente. 
 
-Puedes ver toda la información en la [Referencia de API](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/es/reference/payments/_payments/post).
+Puedes ver toda la información en la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments/post).
 
 ### 13 de agosto
 
@@ -481,7 +481,7 @@ Lanzamos la nueva versión 4.2.2 para WooCommerce.
 
 Actualizamos nuestras medidas de protección de datos para cumplir con los más altos estándares de seguridad. Desde el miércoles 8 de julio, vamos a dejar de mostrar el e-mail del vendedor en la creación de órdenes. El cambio no debería generar ningún problema en la integración, ya que es información de la persona que se encuentra creando la orden. 
 
-Puedes ver toda la información en la [Referencia de API](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/es/reference/merchant_orders/resource).
+Puedes ver toda la información en la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/merchant_orders/resource).
 
 ### 7 de julio
 

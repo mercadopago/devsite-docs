@@ -76,4 +76,4 @@ Debes disponer de una política de términos y condiciones y aclarar que sos res
 >
 > Encuentra toda la información necesaria para interactuar con nuestras APIs.
 >
-> [Referencias de API](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/es/reference)
+> [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference)

@@ -8,7 +8,7 @@ Por ejemplo, si la tarjeta no tiene saldo suficiente para la compra, puedes reco
 >
 > Nota
 >
-> Para conocer información sobre los posibles errores, consulta la [Referencia de API](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/es/reference).
+> Para conocer información sobre los posibles errores, consulta la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference).
 
 ## Resultados de creación de un cobro
 
@@ -94,4 +94,4 @@ Por ejemplo, si la tarjeta no tiene saldo suficiente para la compra, puedes reco
 >
 > Encuentra toda la información necesaria para interactuar con nuestras APIs.
 >
-> [Referencias de API](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/es/reference)
+> [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference)

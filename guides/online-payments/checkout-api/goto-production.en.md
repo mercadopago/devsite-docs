@@ -76,4 +76,4 @@ You need to have a policy on terms and conditions and make it clear that you are
 >
 > Find all the information required to interact with our APIs.
 >
-> [API References](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/en/reference)
+> [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference)

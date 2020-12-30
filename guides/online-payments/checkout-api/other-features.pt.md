@@ -390,4 +390,4 @@ curl -X PUT \
 >
 > Encontre toda a informação necessária para interagir com nossas APIs.
 >
-> [Referências de API](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/es/reference)
+> [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference)

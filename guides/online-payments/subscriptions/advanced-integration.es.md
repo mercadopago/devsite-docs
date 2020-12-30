@@ -110,7 +110,7 @@ Con el `application_id` de la suscripción que quieras actualizar, realiza la si
 ```
 ]]]
 
->Puedes obtener más información sobre los campos en la <a href="https://www.mercadopago[FAKER[URL][DOMAIN]/developers/es/reference/" target="_blank">Referencia de API<a>.
+>Puedes obtener más información sobre los campos en la <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/" target="_blank">Referencia de API<a>.
 
 
 ------------

@@ -119,7 +119,7 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 ]
 ```
 
-> Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/es/reference).
+> Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference).
 
 <br>
 <span></span>
@@ -634,7 +634,7 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 ]
 ```
 
-> Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/es/reference).
+> Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference).
 
 <br>
 <span></span>
@@ -1023,7 +1023,7 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 ]
 ```
 
-> Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/es/reference).
+> Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference).
 
 <br>
 <span></span>
@@ -1429,7 +1429,7 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 ]
 ```
 
-> Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/es/reference).
+> Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference).
 
 <br>
 <span></span>
@@ -2032,7 +2032,7 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 ]
 ```
 
-> Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/es/reference).
+> Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference).
 
 <br>
 <span></span>
@@ -2560,7 +2560,7 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 ]
 ```
 
-> Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/es/reference).
+> Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference).
 
 <br>
 <span></span>
@@ -2939,7 +2939,7 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 ]
 ```
 
-> Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/es/reference).
+> Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference).
 
 <br>
 <span></span>

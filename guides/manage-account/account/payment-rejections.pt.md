@@ -288,7 +288,7 @@ preference.Items.Add(
 ```
 ]]]
 
-Você pode obter mais informações sobre cada atributo nas [Referências de API](https://www.mercadopago[FAKER[URL][DOMAIN]/developers/pt/reference/payments/_payments/post).
+Você pode obter mais informações sobre cada atributo nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments/post).
 
 ### Dados de indústria
 
