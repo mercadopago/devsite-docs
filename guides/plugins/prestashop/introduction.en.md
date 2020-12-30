@@ -37,7 +37,7 @@ Install our payment processor and take your sales to another level with the best
 With these payment options we cover the needs of each business. Check the features to choose which one best suits yours.
 
 | Characteristics | Checkout Pro | Custom Checkout | Ticket Checkout |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | Payment Methods | Payments with cards, in cash and with money in Mercado Pago account. | Payments with debit and credit cards. | Payments in cash. |
 | Payment Experience | Your customers pay from the Mercado Pago page with a modal format (within your store). | Your customers pay without leaving your online store. | Your customers pay without leaving your online store. |
 | Guest Users | Your customers can pay with or without a Mercado Pago account. | Your customers pay as guests, without an account in Mercado Pago. | Your customers pay as guests, without an account in Mercado Pago. |

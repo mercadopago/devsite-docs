@@ -42,7 +42,7 @@ Instala nuestro procesador de pagos y lleva tus ventas a otro nivel con la mejor
 Con estas opciones de pago cubrimos las necesidades de cada negocio. Revisa las características para elegir cuál se adapta mejor al tuyo. 
 
 | Características | Checkout Pro | Checkout Personalizado | Ticket Checkout |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | Medios de pago | Pagos con tarjetas, en efectivo y con dinero en cuenta de Mercado Pago. | Pagos con tarjetas de débito y crédito.| Pagos en efectivo. |
 | Experiencia de pago | Tus clientes pagan desde la página de Mercado Pago con un formato modal (dentro de tu tienda). | Tus clientes pagan sin salir de tu tienda online. | Tus clientes pagan sin salir de tu tienda online. |
 | Usuarios invitados | Tus clientes pueden pagar con o sin cuenta en Mercado Pago. | Tus clientes pagan como invitados, sin cuenta en Mercado Pago. | Tus clientes pagan como invitados, sin cuenta en Mercado Pago. |
