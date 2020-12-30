@@ -103,7 +103,7 @@ In addition to the previous concepts, you must also know the objects with which 
 
 - `status_detail`: Detailed information about the current status or the reason for rejection.
 
-Consult the [full documentation](https://www.mercadopago.com.mx/developers/en/reference/payments/resource/) about this object in our API Reference.
+Consult the [full documentation](https://www.mercadopago.com.mx/developers/en/reference/payments/resource) about this object in our API Reference.
 
 ## Payments
 
@@ -159,7 +159,7 @@ For example, if you want it to be available for 5 minutes you should send the he
 After the user makes the payment you can obtain the data using any of the following ways:
 
 1. [IPN](https://www.mercadopago.com.mx/developers/es/guides/notifications/ipn/): When the payment is created, we send a notification via webhook to the URL configured in the `notification_url` of the order, you will need to be subscribed to merchant_order's type notifications.
-2. Do the [payment search](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_search/get/) using the `external_reference` as the search criteria.
+2. Do the [payment search](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_search/get) using the `external_reference` as the search criteria.
 
 ### Delete order
 

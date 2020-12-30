@@ -55,7 +55,7 @@ Vamos te ajudar a detectar comportamentos incomuns dos clientes com o nosso cód
 ### Detalhe toda a informação sobre o pagamento
 
 Para otimizar a validação de segurança dos pagamentos, encaminhe para nós a maior quantidade de dados possíveis no momento de criar o pagamento. Por exemplo, se você encaminhar para nós os dados do comprador, podemos detectar se realizou pagamentos suspeitos em outro momento e alertá-lo sobre isso.
-Você pode obter mais informações sobre cada atributo nas [Referências de API](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post/).
+Você pode obter mais informações sobre cada atributo nas [Referências de API](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post).
 
 ### Faça a devolução de pagamentos suspeitos
 
@@ -114,7 +114,7 @@ Você vai obter as seguintes informações:
 >
 > Nota
 >
-> Você pode obter mais informações nas [Referências de API](https://www.mercadopago.com.ar/developers/es/reference/chargebacks/_chargebacks_id/get/).
+> Você pode obter mais informações nas [Referências de API](https://www.mercadopago.com.ar/developers/es/reference/chargebacks/_chargebacks_id/get).
 
 ### Compreensão de cobertura
 

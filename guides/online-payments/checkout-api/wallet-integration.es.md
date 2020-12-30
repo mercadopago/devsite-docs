@@ -221,7 +221,7 @@ Luego, desde tu frontend, agrega el siguiente código para mostrar el botón de 
 ]]]
 
 
-Para más información sobre cada atributo, consulta la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/preferences/_checkout_preferences/post/). 
+Para más información sobre cada atributo, consulta la [Referencia de API](https://www.mercadopago.FAKER][URL][DOMAIN]/developers/es/reference/preferences/_checkout_preferences/post). 
 
 ¡Y listo! Ya tienes integrada la billetera de Mercado Pago en tu sitio. 
 

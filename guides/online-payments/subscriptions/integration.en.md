@@ -157,7 +157,7 @@ Once you have generated your plan and obtained your `preapproval_plan_id`, creat
         "end_date": "2021-07-02T11:59:52.581-04:00"
 }
 ```
->You can get more information about the fields in the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/" target="_blank">API Reference</a>.
+>You can get more information about the fields in the <a href="https://www.mercadopago.FAKER][URL][DOMAIN]/developers/en/reference/" target="_blank">API Reference<a>.
 
 Done! You have already created a subscription with an associated plan.
 
@@ -283,7 +283,7 @@ In order to subscribe, the card data must be uploaded with our form. Only the li
 }
 ```
 
-> You can get more information about the fields in the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/" target="_blank">API reference</a>.
+> You can get more information about the fields in the <a href="https://www.mercadopago.FAKER][URL][DOMAIN]/developers/en/reference/" target="_blank">API reference<a>.
 
 
 Attributes

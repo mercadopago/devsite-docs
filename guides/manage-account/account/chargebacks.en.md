@@ -55,7 +55,7 @@ Send the payment voucher by e-mail or sms so that your customer remembers what t
 ### Detail all payment data
 
 For enhanced validation of payment security, send us as much information as possible when creating the payment.  For example, if you send us information about the buyer, we can detect if that buyer made any suspicious payment some other time and prevent it.
-Find more information about each attribute in [API References](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post/).
+Find more information about each attribute in [API References](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post).
 
 ### Return suspicious payments
 
@@ -114,7 +114,7 @@ You will get the following information:
 >
 > Nota
 >
-> Find more information in [API References](https://www.mercadopago.com.ar/developers/es/reference/chargebacks/_chargebacks_id/get/).
+> Find more information in [API References](https://www.mercadopago.com.ar/developers/es/reference/chargebacks/_chargebacks_id/get).
 
 ### Understanding coverage
 

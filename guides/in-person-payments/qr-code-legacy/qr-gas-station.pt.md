@@ -20,7 +20,7 @@
 
 6. Imediatamente após o processamento do pagamento é enviada uma notificação para o servidor [IPN] (https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn/) relatando que há algo novo.
 
-7. Com o ID de pagamento, você pode [pesquisar] (https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_search/get/) o pagamento e continuar os seus processos internos.
+7. Com o ID de pagamento, você pode [pesquisar] (https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_search/get) o pagamento e continuar os seus processos internos.
 
    > Se o status for 'approved', o pagamento deve ser creditado. Por outro lado, se for `rejected`, o aplicativo tentará novamente o pagamento solicitando outro meio de pagamento.
 
@@ -167,7 +167,7 @@ Além dos conceitos anteriores, você também deve conhecer os objetos com os qu
 
 - `status_detail`: Informações detalhadas sobre o status atual ou o motivo da rejeição.
 
-Consulte a [documentação completa](https://www.mercadopago.com.br/developers/pt/reference/payments/resource/) sobre este objeto em nossa Referencia API.
+Consulte a [documentação completa](https://www.mercadopago.com.br/developers/pt/reference/payments/resource) sobre este objeto em nossa Referencia API.
 
 ## Configuração inicial
 
@@ -237,7 +237,7 @@ https://api.mercadopago.com/pos \
 Depois que o usuário fizer o pagamento, você poderá obter os dados usando qualquer uma das seguintes maneiras:
 
 1. [IPN](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn/): Quando o pagamento é criado, enviamos uma notificação via webhook para a URL configurado no `notification_url` da ordem, você deve se inscrever para o tipo de notificações `merchant_order`.
-2. Faça a [pesquisa de pagamento](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_search/get/) usando o `external_reference` como critério de pesquisa.
+2. Faça a [pesquisa de pagamento](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_search/get) usando o `external_reference` como critério de pesquisa.
 
 ## Devoluções
 

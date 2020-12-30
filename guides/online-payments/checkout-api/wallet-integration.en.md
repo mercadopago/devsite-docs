@@ -226,7 +226,7 @@ Then, from your frontend, add the following code to display the Checkout Pro Wal
 ]]]
 
 
-For more information on each attribute, please check the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/preferences/_checkout_preferences/post/). 
+For more information on each attribute, please check the [API Reference](https://www.mercadopago.FAKER][URL][DOMAIN]/developers/en/reference/preferences/_checkout_preferences/post). 
 
 Done! You already have the Mercado Pago wallet integrated on your website. 
 

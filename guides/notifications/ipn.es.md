@@ -49,9 +49,9 @@ Luego de esto, puedes obtener la información completa del recurso notificado ac
 
 | Tipo | URL | Documentación |
 | --- | --- | --- |
-| payment | /v1/payments/[ID] | [ver documentación](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get) |
+| payment | /v1/payments/[ID] | [ver documentación](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_idget) |
 | chargebacks | /v1/chargebacks/[ID] | - |
-| merchant_orders | /merchant\_orders/[ID] | [ver documentación](https://www.mercadopago.com.ar/developers/es/reference/merchant_orders/_merchant_orders_id/get) |
+| merchant_orders | /merchant\_orders/[ID] | [ver documentación](https://www.mercadopago.com.ar/developers/es/reference/merchant_orders/_merchant_orders_idget) |
 
 Con esta información puedes realizar las actualizaciones necesarias en tu plataforma, por ejemplo registrar un pago acreditado o una orden cerrada. 
 
@@ -130,7 +130,7 @@ curl -X GET \
     https://api.mercadopago.com/merchant_orders?external_reference=$EXTERNAL_REFERENCE
 ```
 
-Más información en la [Referencia de API](https://www.mercadopago.com.ar/developers/es/reference/merchant_orders/_merchant_orders_search/get/).
+Más información en la [Referencia de API](https://www.mercadopago.com.ar/developers/es/reference/merchant_orders/_merchant_orders_search/get).
 
 Se puede implementar la **búsqueda** por `external_reference` de dos formas:
 

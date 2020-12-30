@@ -104,7 +104,7 @@ Além dos conceitos anteriores, também deve conhecer os objetos com que trabalh
 
 - `status_detail`: Informação detalhada sobre o status atual ou motivo da rejeição.
 
-Consultar a [documentação completa](https://www.mercadopago.com.br/developers/pt/reference/payments/resource/) sobre este objeto na nossa referência da API.
+Consultar a [documentação completa](https://www.mercadopago.com.br/developers/pt/reference/payments/resource) sobre este objeto na nossa referência da API.
 
 ## Cobranças
 
@@ -160,7 +160,7 @@ Por exemplo se deseja que esteja disponível por 5 minutos se deve enviar o head
 Depois que o usuário fizer o pagamento, você poderá obter os dados usando qualquer uma das seguintes maneiras:
 
 1. [Webhooks](https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks/): Quando o pagamento é criado, enviamos uma notificação via webhook para a URL configurada no campo `notification_url` do pedido. 
-2. Fazer [busca do pagamento](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_id/get/) utilizando o `external_reference` como critério de busca.
+2. Fazer [busca do pagamento](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_id/get) utilizando o `external_reference` como critério de busca.
 
 ### Eliminar pedido
 
