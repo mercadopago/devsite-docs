@@ -10,7 +10,7 @@ indexable: false
 >
 > Pre-requisito
 >
-> Haber realizado [la integración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction) de **Checkout Pro**
+> Haber realizado la integración de [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction).
 
 </br>
 > WARNING
