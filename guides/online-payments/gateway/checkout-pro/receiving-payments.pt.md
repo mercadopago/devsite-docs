@@ -8,7 +8,7 @@ indexable: false
 # Mercado Pago Gateway: Checkout Pro
 > NOTE
 >
-> PRERREQUISITO
+> Pré-requisito
 >
 > Ter realizado [la integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction) de **Checkout Pro**
 
