@@ -18,7 +18,7 @@ Segundo o que seu negócio necessitar, você tem diversas opções para gerar se
 
 É a forma mais simples para receber com QR, já que **não é necessária uma integração entre seu sistema e Mercado Pago para funcionar**.
 
-Você tem diferentes formas de fazê-lo. Consulte todas as informações disponibilizadas em  [gerar QR pelo painel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/integrations-front). 
+Você tem diferentes formas de fazê-lo. Consulte todas as informações disponibilizadas em [gerar QR pelo painel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/integrations-front). 
 
 
 ## Gerar QR integrado com seu sistema
