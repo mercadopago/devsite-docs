@@ -193,7 +193,7 @@ Esta opción te permite cobrar a través de nuestro formulario web dentro del am
 
 - Protegemos tu dinero, siempre. No tienes que preocuparte de nada. Si tenés algún problema, te respaldamos con nuestro [Programa de Protección al Vendedor](https://www.mercadopago.com.pe/ayuda/dinero-seguridad-ventas_288).
 
-[Integrar Checkout Pro](https://www.mercadopago.com.pe/developers/es/guides/payments/web-checkout/introduction)
+[Integrar Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction)
 
 ### Mobile Checkout
 

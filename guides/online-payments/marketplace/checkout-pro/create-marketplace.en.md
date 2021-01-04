@@ -1,19 +1,10 @@
 # How to Integrate the Marketplace in the Checkout Pro
 
-----[mla, mlb, mlc, mlm, mco, mlu]----
 > WARNING
 >
 > Prerequisites
 >
-> * Have the [Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/introduction) implemented.
-------------
-----[mpe]----
-> WARNING
->
-> Prerequisites
->
-> * Have the [Checkout Pro](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction) implemented.
-------------
+> * Have the [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction) implemented.
 
 To begin, you need to:
 
@@ -134,7 +125,7 @@ Expected response:
 
 ## 3. Integrate the checkout
 
-To collect on behalf of your sellers you must integrate the [Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction), generating the payment preferences with the Access Token of each seller for your application.
+To collect on behalf of your sellers you must integrate the [Checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction), generating the payment preferences with the Access Token of each seller for your application.
 
 If you want to charge a fee for each payment processed by your application on behalf of your seller, simply add that amount to the marketplace_fee  parameter when creating the preference:
 

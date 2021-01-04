@@ -519,4 +519,4 @@ For more information, go to the [Test](https://www.mercadopago.com.ar/developers
 ### Next steps
 
 - To adapt the payment flow to your needs, go to the [Customization](https://www.mercadopago.com.ar/developers/en/guides/online-payments/mobile-checkout/v3/personalization) section.
-- For information on how to test, go to the [testing integration](https://www.mercadopago.com.ar/developers/en/guides/online-payments/mobile-checkout/v3/testing.en.pt) section.
+- For information on how to test, go to the [testing integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/mobile-checkout/v3/testing) section.

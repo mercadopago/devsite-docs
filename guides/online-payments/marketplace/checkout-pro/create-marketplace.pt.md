@@ -1,19 +1,10 @@
 # Como integrar o Marketplace no Checkout Pro
 
-----[mla, mlb, mlc, mlm, mco, mlu]----
 > WARNING
 >
 > Pré-requisitos
 >
-> * Possuir o [Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/introduction) implementado.
-------------
-----[mpe]----
-> WARNING
->
-> Pré-requisitos
->
-> * Possuir o [Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/introduction) implementado.
-------------
+> * Possuir o [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction) implementado.
 
 Para começar, você deve:
 
@@ -136,7 +127,7 @@ Resposta esperada:
 
 ## 3. Integre o checkout
 
-Para realizar a cobrança em nome de seus vendedores, você deve integrar o [Checkout](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/introduction), gerando as preferências de pagamento com o Access Token de cada vendedor para a sua aplicação.
+Para realizar a cobrança em nome de seus vendedores, você deve integrar o [Checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction), gerando as preferências de pagamento com o Access Token de cada vendedor para a sua aplicação.
 
 Se deseja cobrar uma comissão por cada pagamento processado pela sua aplicação em nome do seu vendedor, simplesmente adicione esse valor no parâmetro `marketplace_fee` ao criar a preferência:
 

@@ -56,4 +56,4 @@ Você pode consultar suas vendas na relação das atividades de [sua conta de Me
 >
 > Conheça as diferentes opções de receber com QR segundo seu negócio.
 >
-> [Como gerar o QR?](https://www.mercadopago.com.br/developers/pt/guides/qr-code/integrations/)
+> [Como gerar o QR?](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/integrations)
