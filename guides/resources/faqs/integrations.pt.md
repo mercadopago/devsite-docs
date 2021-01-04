@@ -23,12 +23,7 @@ Esta opção permite cobrar através do nosso formulário web dentro do ambiente
 
 -   **Protegemos seu dinheiro, sempre.** Você não precisa se preocupar com nada. Caso tenha algum problema, você conta com o nosso respaldo através do [nosso Programa de Proteção ao Vendedor](https://www.mercadopago.com.br/ajuda/como-protegemos-vendedores_500).
 
-----[mla, mlb]----
-[Integrar Checkout Pro.](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/introduction)
-------------
-----[mlm, mpe, mco, mlu]----
-[Integrar Checkout Pro.](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/introduction)
-------------
+[Integrar Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction)
 
 ### Mobile Checkout
 

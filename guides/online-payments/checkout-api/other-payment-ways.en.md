@@ -3345,7 +3345,7 @@ Check [credit times by payment method](https://www.mercadopago.com.br/ajuda/meio
 >
 > Check that everything works in your integration with test users.
 >
-> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/test-integration/)
+> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/testing)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >

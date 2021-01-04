@@ -6,23 +6,12 @@ indexable: false
 ---
 
 # Mercado Pago Gateway: Checkout Pro
-----[mla, mlb, mlc, mlm, mco, mlu]----
 > NOTE
 >
 > Pre-requisito
 >
+> Haber realizado la integración de [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction).
 
-> Haber realizado [la integración](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/introduction) de **Checkout Pro**
-------------
-
-----[mpe]----
-> NOTE
->
-> Pre-requisito
->
-
-> Haber realizado [la integración](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/introduction) de **Checkout Pro**
-------------
 </br>
 > WARNING
 >

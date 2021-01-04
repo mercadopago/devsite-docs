@@ -3359,7 +3359,7 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 >
 > Revisa que esté todo bien en tu integración con los usuarios de prueba.
 >
-> [Pruebas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/test-integration/)
+> [Pruebas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/testing)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >

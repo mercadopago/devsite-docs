@@ -306,4 +306,4 @@ checkout.start()
 ```
 ]]]
 
-- For information on how to test, go to the [testing integration](https://www.mercadopago.com.ar/developers/en/guides/online-payments/mobile-checkout/v3/testing.en.pt) section.
+- For information on how to test, go to the [testing integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/mobile-checkout/v3/testing) section.

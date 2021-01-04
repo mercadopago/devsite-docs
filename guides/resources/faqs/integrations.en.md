@@ -23,12 +23,7 @@ This option allows you to collect through our web form within the safe environme
 
 -   We protect your money, always. You don't have to worry about anything. If there is a problem, we'll cover you with our [Seller Protection Program](https://www.mercadopago.com.ar/ayuda/dinero-seguridad-ventas-arg_3777).
 
-----[mla, mlb]----
-[Integrate Checkout Pro](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/introduction)
-------------
-----[mlm, mpe, mco, mlu, mlc]----
-[Integrate Checkout Pro](https://www.mercadopago.com.mx/developers/en/guides/payments/web-checkout/introduction)
-------------
+[Integrate Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction)
 
 ### Mobile Checkout
 
@@ -57,7 +52,7 @@ This way of integrating allows you to connect directly with our APIs.
 
 - **Your technical team has total control.** They will be able to handle all sensitive data manipulation processes in the front-end where the payment request occurs.
 
-[Integrate Checkout API](guides/payments/api/introduction)
+[Integrate Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction)
 
 ## How to offer interest-free installments
 
