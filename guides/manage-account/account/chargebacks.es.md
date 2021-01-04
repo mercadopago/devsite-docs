@@ -55,7 +55,7 @@ Es importante que mandes el comprobante del pago por e-mail o por mensaje de tex
 ### Detalla toda la información sobre el pago
 
 Para optimizar la validación de seguridad de los pagos, envíanos la mayor cantidad de datos posibles al momento de crear el pago. Por ejemplo, si nos envías datos del comprador, podemos detectar si realizó pagos sospechosos en otro momento y prevenirlo.
-Puedes obtener más información sobre cada atributo en las [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post/).
+Puedes obtener más información sobre cada atributo en las [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post).
 
 ### Devuelve los pagos sospechosos
 
@@ -114,7 +114,7 @@ Vas a obtener la siguiente información:
 >
 > Nota
 >
-> Puedes obtener más información en la [referencia de API](https://www.mercadopago.com.ar/developers/es/reference/chargebacks/_chargebacks_id/get/).
+> Puedes obtener más información en la [referencia de API](https://www.mercadopago.com.ar/developers/es/reference/chargebacks/_chargebacks_id/get).
 
 ### Entendimiento de cobertura
 

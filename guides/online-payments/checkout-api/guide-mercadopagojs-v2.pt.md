@@ -171,4 +171,4 @@ Agora, **você apenas deve inicializar nosso CardForm relacionando o ID de cada 
 >
 > Encontre toda a informação necessária para interagir com nossas APIs.
 >
-> [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/)
+> [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference)

@@ -700,4 +700,4 @@ Encontre mais informações na [seção de Devoluções e cancelamentos](https:/
 >
 > Encontre toda informação necessária para interagir com nossas APIs.
 >
-> [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/)
+> [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference)

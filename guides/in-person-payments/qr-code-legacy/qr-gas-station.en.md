@@ -20,7 +20,7 @@
 
 1. Immediately after the payment is processed, we send to your server a notification [INP](https://www.mercadopago.com.mx/developers/es/guides/notifications/ipn/) informing that there is a novelty.
 
-1. With the payment identifier, you can [search](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_search/get/) the payment and continue with your internal processes.
+1. With the payment identifier, you can [search](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_search/get) the payment and continue with your internal processes.
 
    >
    > If the status is `approved`, the payment must be accredited. On the other hand, if it is `rejected`, the app will retry the payment requesting another means of payment.
@@ -167,7 +167,7 @@ Within to the previous concepts, you must also know the objects with which we go
 
 - `status_detail`: Detailed information about the current status or the reason for rejection.
 
-Consult the [full documentation](https://www.mercadopago.com.mx/developers/en/reference/payments/resource/) about this object in our API Reference.
+Consult the [full documentation](https://www.mercadopago.com.mx/developers/en/reference/payments/resource) about this object in our API Reference.
 
 ## Settings
 
@@ -236,7 +236,7 @@ https://api.mercadopago.com/pos \
    After the user makes the payment you can obtain the data using any of the following ways:
 
    1. [IPN](https://www.mercadopago.com.mx/developers/es/guides/notifications/ipn/): When the payment is created, we send a notification via webhook to the URL configured in the `notification_url` of the order, you will need to be subscribed to merchant_order's type notifications.
-   2. Do the [payment search](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_search/get/) using the `external_reference` as the search criteria.
+   2. Do the [payment search](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_search/get) using the `external_reference` as the search criteria.
 
 ## Refunds
 

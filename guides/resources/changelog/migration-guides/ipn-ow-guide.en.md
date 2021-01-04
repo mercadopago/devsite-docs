@@ -22,7 +22,7 @@ Until now you received “x-www-form-urlencoded”, so you have to adapt the log
 
 > It is necessary that after receiving the notification we reply us a 200 immediately to avoid a resending of notification before 10 seconds.
 
-The JSON will have basic payment information. If you need more information, [perform a GET to the payment ID](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_id/get/).
+The JSON will have basic payment information. If you need more information, [perform a GET to the payment ID](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_id/get).
 
 > It is necessary for your server to have HTTPS certificates.
 

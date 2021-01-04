@@ -20,7 +20,7 @@
 
 6. Inmediatamente luego de ser procesado el pago, enviamos a tu servidor una notificación [IPN](https://www.mercadopago.com.mx/developers/es/guides/notifications/ipn/) informando que hay una novedad.
 
-7. Con el identificador del pago, puedes [buscar](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get/) el pago y continuar con tus procesos internos.
+7. Con el identificador del pago, puedes [buscar](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get) el pago y continuar con tus procesos internos.
 
    > Si el estatus es `approved` se debe acreditar el pago. En cambio si es `rejected`, la app reintentará el cobro solicitando otro medio de pago.
 
@@ -167,7 +167,7 @@ Además de los conceptos anteriores, también debes conocer los objetos con los 
 
 - `status_detail`: Información detallada del estado actual o el motivo de rechazo.
 
-Consultar la [documentación completa](https://www.mercadopago.com.mx/developers/es/reference/payments/resource/) sobre este objeto en nuestra Referencia API.
+Consultar la [documentación completa](https://www.mercadopago.com.mx/developers/es/reference/payments/resource) sobre este objeto en nuestra Referencia API.
 
 ## Configuración inicial
 
@@ -237,7 +237,7 @@ https://api.mercadopago.com/pos \
 Luego de que el usuario realiza el pago podrás obtener los datos usando cualquiera de las siguientes formas:
 
 1. [IPN](https://www.mercadopago.com.mx/developers/es/guides/notifications/ipn/): Cuando el pago es creado, enviamos una notificación vía webhook a la URL configurada en la `notification_url` de la orden, deberás estar suscrito a las notificaciones tipo `merchant_order`.
-2. Hacer la [búsqueda del pago](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get/) utilizando el `external_reference` como criterio de búsqueda.
+2. Hacer la [búsqueda del pago](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get) utilizando el `external_reference` como criterio de búsqueda.
 
 ## Devoluciones
 

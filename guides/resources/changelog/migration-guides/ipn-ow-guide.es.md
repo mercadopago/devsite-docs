@@ -22,7 +22,7 @@ Hasta ahora recibías “x-www-form-urlencoded”, por lo que tenés que adaptar
 
 > Es necesario que después de recibir la notificación nos respondas un 200 inmediatamente para evitar un reenvío de notificación antes de los 10 segundos.
 
-El JSON va a tener información básica del pago. Y si necesitas más información, [realizá un GET al ID del pago](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get/).
+El JSON va a tener información básica del pago. Y si necesitas más información, [realizá un GET al ID del pago](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get).
 
 > Es necesario que tu servidor tenga certificados HTTPS.
 
