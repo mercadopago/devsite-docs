@@ -52,7 +52,7 @@ This way of integrating allows you to connect directly with our APIs.
 
 - **Your technical team has total control.** They will be able to handle all sensitive data manipulation processes in the front-end where the payment request occurs.
 
-[Integrate Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction)
+[Integrate Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction)
 
 ## How to offer interest-free installments
 
