@@ -128,7 +128,7 @@ Respuesta esperada:
 
 ## 3. Integra el checkout
 
-Para cobrar en nombre de tus vendedores debes integrar [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction/), generando las preferencias de pago con el _Access Token_ de cada vendedor para tu aplicación.
+Para cobrar en nombre de tus vendedores debes integrar [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction/), generando las preferencias de pago con el Access Token de cada vendedor para tu aplicación.
 
 Si deseas cobrar una comisión por cada pago que procesa tu aplicación en nombre de tu vendedor, sólo debes agregar dicho monto en el parámetro `marketplace_fee` al crear la preferencia:
 
