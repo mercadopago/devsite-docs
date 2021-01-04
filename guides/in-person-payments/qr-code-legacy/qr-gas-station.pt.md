@@ -20,7 +20,7 @@
 
 6. Imediatamente após o processamento do pagamento é enviada uma notificação para o servidor [IPN] (https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn/) relatando que há algo novo.
 
-7. Com o ID de pagamento, você pode [pesquisar] (https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_search/get) o pagamento e continuar os seus processos internos.
+7. Com o ID de pagamento, você pode [pesquisar](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_search/get) o pagamento e continuar os seus processos internos.
 
    > Se o status for 'approved', o pagamento deve ser creditado. Por outro lado, se for `rejected`, o aplicativo tentará novamente o pagamento solicitando outro meio de pagamento.
 
