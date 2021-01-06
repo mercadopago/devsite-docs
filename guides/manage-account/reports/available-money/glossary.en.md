@@ -34,3 +34,4 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | SHIPMENT_MODE | Shipping Mode. |
 | PACK_ID | Package identification in the cart. |
 | TAXES_DISAGGREGATED | Taxes disaggregated in JSON format. |
+| EFFECTIVE_COUPON_AMOUNT | Cost for offering discount. |
