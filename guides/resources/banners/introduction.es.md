@@ -1,4 +1,4 @@
-gi---
+---
 sites_supported:
   - mla
   - mlb
