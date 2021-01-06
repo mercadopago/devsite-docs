@@ -138,4 +138,4 @@ Usa estas tarjetas de prueba para probar los diferentes resultados del pago.
 
 ------------
 
-También [puedes utilizar tarjetas de prueba de medios de pago locales de cada país](https://www.mercadopago.com.ar/developers/es/guides/resources/localization/local-cards).
+También [puedes utilizar tarjetas de prueba de medios de pago locales de cada país](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/local-cards).

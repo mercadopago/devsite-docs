@@ -6,9 +6,9 @@ Neste manual, você encontrará todas as informações necessárias para poder a
 
 **Conteúdo do manual**
 
-* [Recursos migrados](https://www.mercadopago.com.ar/developers/es/guides/localization/migrating-v0-v1#recursos_migrados)  
-* [Versões de ferramentas para a nova versão](https://www.mercadopago.com.ar/developers/es/guides/localization/migrating-v0-v1#versões_de_ferramentas_para_a_nova_versão) 
-* [Exemplos](https://www.mercadopago.com.ar/developers/es/guides/localization/migrating-v0-v1#exemplos) 
+* [Recursos migrados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/migrating-v0-v1#recursos_migrados)  
+* [Versões de ferramentas para a nova versão](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/migrating-v0-v1#versões_de_ferramentas_para_a_nova_versão) 
+* [Exemplos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/migrating-v0-v1#exemplos) 
 
 
 ### Lembre-se: 
@@ -18,7 +18,7 @@ Neste manual, você encontrará todas as informações necessárias para poder a
 * Se você tem o seu próprio e-commerce, por favor, consulte sua equipe de tecnologia. 
 * Ou, se você trabalha com alguma plataforma, como Magento, Shopify ou outra, por favor, entre em contato com seu suporte técnico.
 
-Se você usa o recurso de search de payments, você precisa de um novo recurso e incluir um novo parâmetro para obter o mesmo resultado. Para mais informações, consulte a [seção de exemplos](https://www.mercadopago.com.ar/developers/es/guides/localization/migrating-v0-v1#exemplos).
+Se você usa o recurso de search de payments, você precisa de um novo recurso e incluir um novo parâmetro para obter o mesmo resultado. Para mais informações, consulte a [seção de exemplos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/migrating-v0-v1#exemplos).
 
 
 > NOTE
@@ -33,14 +33,14 @@ A seguir, você encontrará os recursos migrados e seus equivalentes.
 | Uso | Método | URI do Recurso deprecado | URI do Recurso equivalente | Referência |
 | --- | --- | --- | --- | --- |
 | Devoluções | `POST` | /collections/$payment_id/refunds | /v1/payments/$payment_id/refunds |- |
-| Devoluções | `PUT` | /collections/$payment_id | /v1/payments/$payment_id/ | [acesse](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_id/put)	 |
-| Atualização de pagamento | `PUT` | /payments/$payment_id | /v1/payments/$payment_id/ | [acesse](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_id/put) |
-| Atualização de pagamento | `PUT` | /collections/$payment_id | /v1/payments/$payment_id/ | [acesse](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_id/put) |
-| Pagamentos | `GET` | /payments/$payment_id | /v1/payments/$payment_id/ | [acesse](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_id/get) |
-| Pagamentos | `GET` | /collections/$payment_id | /v1/payments/$payment_id/ | [acesse](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_id/get) |
-| Notificação de pagamentos| `GET` | /collections/notifications/$payment_id | /v1/payments/$payment_id/ |[acesse](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_id/get) |
-| Busca de pagamentos | `GET` | /payments/search | /v1/payments/search | [acesse](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_search/get)|
-| Busca de pagamentos | `GET` | /collections/search | /v1/payments/search | [acesse](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_search/get)|
+| Devoluções | `PUT` | /collections/$payment_id | /v1/payments/$payment_id/ | [acesse](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/put)	 |
+| Atualização de pagamento | `PUT` | /payments/$payment_id | /v1/payments/$payment_id/ | [acesse](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/put) |
+| Atualização de pagamento | `PUT` | /collections/$payment_id | /v1/payments/$payment_id/ | [acesse](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/put) |
+| Pagamentos | `GET` | /payments/$payment_id | /v1/payments/$payment_id/ | [acesse](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get) |
+| Pagamentos | `GET` | /collections/$payment_id | /v1/payments/$payment_id/ | [acesse](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get) |
+| Notificação de pagamentos| `GET` | /collections/notifications/$payment_id | /v1/payments/$payment_id/ |[acesse](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get) |
+| Busca de pagamentos | `GET` | /payments/search | /v1/payments/search | [acesse](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_search/get)|
+| Busca de pagamentos | `GET` | /collections/search | /v1/payments/search | [acesse](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_search/get)|
 
 ## Versões válidas das ferramentas para a nova versão 
 
@@ -117,6 +117,6 @@ curl -X POST \
 Se precisar fazer adaptações, lembre-se que é importante fazer essa mudança antes da data limite.
 
 
-Se você tiver alguma dúvida ou precisar de ajuda para fazer essas alterações, [entre em contato](https://www.mercadopago.com.br/developers/pt/support) conosco.
+Se você tiver alguma dúvida ou precisar de ajuda para fazer essas alterações, [entre em contato](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/support) conosco.
 
 Equipe Mercado Pago

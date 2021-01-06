@@ -30,7 +30,7 @@ O desligamento afetará os seguintes recursos:
 | Busca de Meios de Pagamentos| `GET` | /checkout/custom/payment_methods/search |
 | Emissores | `GET` | /checkout/custom/card_issuers |
 
-[Neste link](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/introduction), você encontrará os recursos que vão substituir os que estão sendo depreciados.
+[Neste link](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction), você encontrará os recursos que vão substituir os que estão sendo depreciados.
 
 ## 24 de novembro de 2019
 
@@ -38,7 +38,7 @@ Para atender aos mais altos padrões de segurança, buscamos estar sempre atuali
 
 Se a estiver usando, **você deve revisar sua versão e atualizá-la para evitar problemas e perda de serviço.** Caso você não queira fazer isso, pode usar outro tipo de notificação que oferecemos. 
 
-Confira todas as informações necessárias no [manual da migração](https://www.mercadopago.com.br/developers/pt/guides/resources/changelog/migration-guides/ipn-ow-guide).
+Confira todas as informações necessárias no [manual da migração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/changelog/migration-guides/ipn-ow-guide).
 
 ----[mlc, mco]----
 
@@ -71,7 +71,7 @@ Queremos dar a melhor experiência para você sempre. Por isso, informamos quais
 | Magento | Community Edition 1.8.x - 1.9.x, Enterprise Edition 1.11.x - 1.14.x, Magento 2.0.0 - 2.3.x |
 | Shopify | - |
 
-[Ver módulos](https://www.mercadopago.com.ar/developers/pt/guides/plugins).
+[Ver módulos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins).
 
 > Lembre-se de que os módulos e plataformas não mencionados têm suporte apenas da comunidade. 
 

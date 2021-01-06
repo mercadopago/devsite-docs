@@ -76,7 +76,7 @@ https://api.mercadopago.com/users/$USER_ID/stores \
 ```
 ]]]
 
-Puedes obtener más información en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/stores/_users_user_id_stores/post).
+Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/stores/_users_user_id_stores/post).
 
 > WARNING
 > 
@@ -116,7 +116,7 @@ https://api.mercadopago.com/pos \
 ```
 ]]]
 
-Puedes obtener más información en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/pos/_pos/post).
+Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/pos/_pos/post).
 
 Una vez creada la caja, podremos ver en el _Response_ los links a distintos entregables del QR, junto con otros datos relevantes de la caja. 
 

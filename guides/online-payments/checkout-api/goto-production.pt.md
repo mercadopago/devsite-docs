@@ -49,7 +49,7 @@ Deve-se comunicar claramento que as promoções são oferecidas pelo Mercado Pag
 >
 > Nota
 >
-> Devido a Resolução [E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) da Secretería de Comércio Argentina, sobre preços transparentes, é necessário que cumpra com [exigências adicionais](https://www.mercadopago.com.ar/developers/es/guides/resources/localization/considerations-argentina/).
+> Devido a Resolução [E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) da Secretería de Comércio Argentina, sobre preços transparentes, é necessário que cumpra com [exigências adicionais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/considerations-argentina/).
 ------------
 
 ## Disponibilize seus termos e condições

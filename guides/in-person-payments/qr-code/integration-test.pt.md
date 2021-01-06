@@ -17,7 +17,7 @@ Os usuários de teste lhe permitem checar a integração de seu sistema com Merc
 
 Pra realizar os testes, é necessário ter pelo menos dois usuários: um comprador e um vendedor.
 
-> Se você não gerou seus usuários neste momento, pode fazê-lo nos [pré-requisitos](https://www.mercadopago.com.ar/developers/pt/guides/in-person-payments/qr-code/pre-requisites/).
+> Se você não gerou seus usuários neste momento, pode fazê-lo nos [pré-requisitos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/pre-requisites/).
 
 | Tipos de usuários | Descrição |
 | --- | --- |
@@ -41,7 +41,7 @@ Pra realizar os testes, é necessário ter pelo menos dois usuários: um comprad
 | Visa | 4170 0688 1010 8020 | 123 | 11/25 |
 | American Express | 3711 8030 3257 522 | 1234 | 11/25 |
 
-Aqui você encontra mais [cartões de teste](https://www.mercadopago.com.br/developers/pt/guides/resources/localization/local-cards/).
+Aqui você encontra mais [cartões de teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/local-cards/).
 
 ## Teste o fluxo de pagamento
 
@@ -65,10 +65,10 @@ Comprove que tenha recebido as notificações do estado do pedido em seu sistema
 | --- | --- | --- |
 | **Escaneio prévio à criação do pedido**. O cliente escaneia um código QR válido antes de fazer o pedido.  | O app mostra a tela de espera.  | Verifique que `fixed_amount` = **true** no caixa. |
 | **Escaneio de QR**. O usuário escaneia um código QR válido uma vez realizado o pedido e criada a ordem. | O app mostra a tela de pagamento. | Verifique o valor na tela de pagamento. |
-| **Pagamento aprovado**. O usuário realiza um pagamento aprovado. | O sistema de Ponto de Venda recebe as informações de um pagamento aprovado. | Verifique recebimento de [notificações](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn/). |
+| **Pagamento aprovado**. O usuário realiza um pagamento aprovado. | O sistema de Ponto de Venda recebe as informações de um pagamento aprovado. | Verifique recebimento de [notificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/). |
 | **Pagamento recusado**. O usuário realiza um pagamento recusado. | O sistema de Ponto de Venda recebe as informações de um pagamento recusado e continua esperando o pagamento do pedido.| O `status` da `merchant_order` deve ser **opened**. |
 | **Segunda tentativa de pagamento**. O usuário realiza primeiramente um pagamento recusado e depois um pagamento aprovado.| O sistema de Ponto de Venda recebe as informações de um pagamento recusado e depois um pagamento aprovado. | Não remover a ordem depois de um pagamento recusado. |
-| **Restituição de pagamento**. Uma restituição é realizada desde o Ponto de Venda. | Na conta do comprador impacta a restituição. | Ver [devoluções](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/account/cancellations-and-refunds/#bookmark_devolu%C3%A7%C3%B5es). |
+| **Restituição de pagamento**. Uma restituição é realizada desde o Ponto de Venda. | Na conta do comprador impacta a restituição. | Ver [devoluções](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds/#bookmark_devolu%C3%A7%C3%B5es). |
 | **Cancelar ordem**. O usuário se arrepende e decide pagar em dinheiro.  | O pedido é eliminado e, portanto, ao escanear o QR somente é mostrada a tela de espera. | Remover a ordem de pagamento do caixa. |
 
 ## Quero ir para produção

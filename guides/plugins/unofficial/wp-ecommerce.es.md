@@ -46,13 +46,13 @@
 # Funcionalidad
 El módulo de Mercado Pago para WP eCommerce está integrado con las siguientes funcionalidades y soluciones de pago:
 
-### [Checkout básico (Redirect, Iframe or Lightbox)](https://www.mercadopago.com.ar/developers/en/solutions/payments/basic-checkout/receive-payments/)
+### [Checkout básico (Redirect, Iframe or Lightbox)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/basic-checkout/receive-payments/)
 * Interfaces "pre-armadas" de Mercado Pago <ar>![Basic Checkout](/images/wp-ecommerce-basic_checkout_payment.png)
 
 ### Checkout personalizado
-* [Pagos con tarjeta de crédito](https://www.mercadopago.com.ar/developers/en/solutions/payments/basic-checkout/receive-payments/)<ar>![Custom Checkout](/images/wp-ecommerce-order_custom.png)
-* [Pago conn un click (Customer Cards)](https://www.mercadopago.com.ar/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)<ar>![One Click Payment](/images/wp-ecommerce-order_cust_card.png)
-* [Otros medios de pago, como por ejemplo Tickets](https://www.mercadopago.com.ar/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<ar>![Tickets](/images/wp-ecommerce-order_ticket.png)
+* [Pagos con tarjeta de crédito](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/basic-checkout/receive-payments/)<ar>![Custom Checkout](/images/wp-ecommerce-order_custom.png)
+* [Pago conn un click (Customer Cards)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)<ar>![One Click Payment](/images/wp-ecommerce-order_cust_card.png)
+* [Otros medios de pago, como por ejemplo Tickets](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<ar>![Tickets](/images/wp-ecommerce-order_ticket.png)
 
 ### Otras funcionalidades
 * Credenciales y chequeos de estado de la plataforma.
@@ -170,7 +170,7 @@ Instant Payment Notifications (IPN) - Notificaciones instantáneas de pago- es u
 
 > HINT 1: Cuando configuras o testeas tus IPN/Webhooks y las comunicaciones del servidor está seguro que tu servidor pueda acceder al servidor de MercadoPago.
 
-> HINT 2: Asegúrate que tu firewall tenga acceso al [IPs de MercadoPago](https://www.mercadopago.com.ar/developers/en/api-docs/basics/design-considerations#ip-range) dentro del white-list.
+> HINT 2: Asegúrate que tu firewall tenga acceso al [IPs de MercadoPago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/api-docs/basics/design-considerations#ip-range) dentro del white-list.
 
 > HINT 3: Prestar atención a que Mercado Pago usa TSL protocol **version 1.0**, así que tu servidor necesita soportar/aceptar conexiones con esta versión del protocolo.
 

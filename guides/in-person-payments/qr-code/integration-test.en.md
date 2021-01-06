@@ -18,7 +18,7 @@ Test users allow you to try the integration of your system with Mercado Pago wit
 
 To carry out the tests, you need to have at least two users: a buyer and a seller.
 
-> If you did not generate your users at this point, you can do so in the [previous requirements](https://www.mercadopago.com.ar/developers/en/guides/in-person-payments/qr-code/pre-requisites/).
+> If you did not generate your users at this point, you can do so in the [previous requirements](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/pre-requisites/).
 
 
 | Test user types | Description |
@@ -43,7 +43,7 @@ To carry out the tests, you need to have at least two users: a buyer and a selle
 | Visa | 4170 0688 1010 8020 | 123 | 11/25 |
 | American Express | 3711 8030 3257 522 | 1234 | 11/25 |
 
-Here you can find more [test cards](https://www.mercadopago.com.ar/developers/en/guides/resources/localization/local-cards/).
+Here you can find more [test cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/local-cards/).
 
 ## Test payment process
 
@@ -67,10 +67,10 @@ Lastly, make sure you’ve received an status notification in your system. And y
 | --- | --- | --- |
 | **QR scan before creating the order**. A client scans a QR code before to making an order.| App shows a waiting screen. | Verify `fixed_amount` = **true** on the Point of Sale. |
 | **QR scanning**. User scans QR code after order is created.| App shows a checkout screen. | Verify amount displayed on checkout. |
-| **Approved payment**. User makes a successful payment. | Point of Sale system receives information about an approved payment.| Verify [notifications](https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn/) were received. |
+| **Approved payment**. User makes a successful payment. | Point of Sale system receives information about an approved payment.| Verify [notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/) were received. |
 | **Rejected payment**. User makes a rejected payment.| Point of Sale system receives information about the rejected payment and keeps waiting for the order to be pay.| `merchant_order` status must be **opened**. |
 | **Second payment attempt**. User first performs a rejected payments and then execute an approved payment. | Point of sale system receives information about the rejected payment and an approved payment later.| Don’t remove the order after a rejected payment.|
-| **Refunds**. These are performed from the Point of Sale.| Refunds impact in buyer account.| See [refunds](https://www.mercadopago.com.ar/developers/en/guides/manage-account/account/cancellations-and-refunds/#bookmark_refunds). |
+| **Refunds**. These are performed from the Point of Sale.| Refunds impact in buyer account.| See [refunds](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds/#bookmark_refunds). |
 | **Cancel order**. Users change their mind and decides to pay in cash. | Order is removed and, therefore, scanning the QR code only shows a waiting screen. | Remove order from the Point of Sale. |
 
 ## Production mode

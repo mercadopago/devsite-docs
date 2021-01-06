@@ -46,7 +46,7 @@ Com estas opções de pagamento nós cobrimos as necessidades de cada negócio. 
 >
 > Nota
 >
-> Consulte a [documentação do Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/introduction/) para conhecer melhor todas as suas características e funcionalidades.
+> Consulte a [documentação do Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction/) para conhecer melhor todas as suas características e funcionalidades.
 
 ### Próximo passo
 
@@ -57,4 +57,4 @@ Com estas opções de pagamento nós cobrimos as necessidades de cada negócio. 
 > Siga estas etapas para instalar o módulo do Mercado Pago na sua loja virtual.
 >
 > 
-> [Instalar](https://www.mercadopago.com.ar/developers/pt/guides/plugins/prestashop/instalation/)
+> [Instalar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/instalation/)
