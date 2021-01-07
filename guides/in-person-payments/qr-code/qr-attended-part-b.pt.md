@@ -17,7 +17,7 @@ Para receber por meio de um código QR modelo atendido, deverá criar um pedido 
 
 Explicamos como funciona o modelo atendido:
 
-![Fluxo de pagamento no ponto de venda QR Mercado Pago](/images/mobile/qr-user-flow.pt.png)
+>![Fluxo de pagamento no ponto de venda QR Mercado Pago](/images/qr-user-flow.pt.png)
 
 <span></span>
 

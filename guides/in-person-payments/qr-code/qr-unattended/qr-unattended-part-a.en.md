@@ -41,7 +41,7 @@ The main characteristics are:
 
 This is how the QR unattended model works:
 
-![Flujo de pago en punto de venta QR Mercado Pago](/images/mobile/qr-gas-station-flow.en.png)
+>![Flujo de pago en punto de venta QR Mercado Pago](/images/qr-gas-station-flow.en.png)
 
 1. Clients scan QR code from their app. 
 2. Using the associated URL, Mercado Pago searches for the order in the merchant server.

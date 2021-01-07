@@ -48,8 +48,7 @@ Para criar uma **afiliação de gateway de pagamento com o Mercado Pago**, siga 
 | Categoria Principal | Escolha a categoria que mais se encaixa com sua loja. |
 | Captura de segurança antecipada | Você pode desativar a função ou escolher em quanto tempo quer realizar a captura (depois da aprovação da transação e da análise do antifraude). |
 <br>
-
-![Setting affiliation in VTEX](/images/vtex/vtex_afiliacao_gateway_1.gif)
+    ![Setting affiliation in VTEX](/images/vtex/vtex_afiliacao_gateway_1.gif)
 
 E pronto! Sua afiliação com o Mercado Pago já está ativa!
 
@@ -69,8 +68,7 @@ Para criar uma **condição de pagamento cartão de crédito** utilizando sua af
 6. Em opções de parcelamento, escolha parcelamento "Automático", onde utiliza as condições de **parcelamento diretamente de sua conta Mercado Pago**.
 7. Clique em "Salvar".
 <p>&nbsp;</p>
-
-![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_cartao_2.gif)
+    ![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_cartao_2.gif)
 <p>&nbsp;</p>
 
 ### Condição de pagamento boleto bancário
@@ -84,8 +82,7 @@ Para criar uma **condição de pagamento [boleto bancário](#bookmark_condiçõe
 5. Informe sua afiliação com o Mercado Pago, no campo "Processar com a afiliação".
 6. Clique em "Salvar".
 <p>&nbsp;</p>
-
-![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_boleto_3.gif)
+    ![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_boleto_3.gif)
 <p>&nbsp;</p>
 
 ### Condição de pagamento Checkout Pro
@@ -105,8 +102,7 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 5. Informe sua afiliação com o Mercado Pago, no campo "Processar com a afiliação".
 6. Clique em "Salvar".
 <p>&nbsp;</p>
-
-![Setting payments in VTEX](/images/vtex/vtex_condicao_redirect_4.gif)
+    ![Setting payments in VTEX](/images/vtex/vtex_condicao_redirect_4.gif)
 <p>&nbsp;</p>
 
 #### Configuração do meio de pagamento Mercado Pago PRO
@@ -122,8 +118,7 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 5. Informe sua afiliação com o Mercado Pago, no campo "Processar com a afiliação".
 6. Clique em "Salvar".
 <p>&nbsp;</p>
-
-![Setting payments in VTEX](/images/vtex/vtex_condicao_pro_4.gif)
+    ![Setting payments in VTEX](/images/vtex/vtex_condicao_pro_4.gif)
 <p>&nbsp;</p>
 
 #### Configuração do meio de pagamento Mercado Pago Wallet
@@ -139,8 +134,7 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 5. Informe sua afiliação com o Mercado Pago, no campo "Processar com a afiliação".
 6. Clique em "Salvar".
 <p>&nbsp;</p>
-
-![Setting payments in VTEX](/images/vtex/vtex_condicao_wallet_4.gif)
+    ![Setting payments in VTEX](/images/vtex/vtex_condicao_wallet_4.gif)
 <p>&nbsp;</p>
 
 > WARNING
@@ -162,8 +156,7 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 2. Clique na opção "Configurações", navegue até o campo "Oferecer parcelas sem acréscimo" e clique em "Ativar".
 3. Escolha "Quantas parcelas você quer oferecer?" e clique em "Ativar" para confirmar as alterações.
 <p>&nbsp;</p>
-
-![Setting affiliation in VTEX](/images/vtex/vtex-account-installment-7.gif)
+    ![Setting affiliation in VTEX](/images/vtex/vtex-account-installment-7.gif)
 <p>&nbsp;</p>
 E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarifas de parcelamento que você configurou.
 
@@ -187,8 +180,7 @@ script.setAttribute("view","checkout");
 document.body.appendChild(script);
 ```
 <br>
-
-![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
+    ![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
 
 ## Entendendo sobre os principais logs da VTEX
 

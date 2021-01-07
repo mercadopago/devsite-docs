@@ -26,7 +26,9 @@ To **activate your Mercado Pago account in iSET**, follow these steps:
 1. Search in the payment methods list for Mercado Pago and go to “Setting options”.
 1. In the field Status, select the option “Active”.
 1. Click on “Close” and then on “Save changes”.
-![Payments Connect - iSET](/images/iset/iset_active_modulo_1.gif)
+<p>&nbsp;</p>
+    ![Payments Connect - iSET](/images/iset/iset_active_modulo_1.gif)
+<p>&nbsp;</p>
 
 Done! Mercado Pago is now installed on your store.
 
@@ -44,8 +46,7 @@ You also have the option to [offer interest free installments](#bookmark_set_int
 1. Complete in “Brief description/Name of the store" the name that will appear in your client’s invoice so that they can recognize you (maximum 13 characters). 
 1. Click on “Close” and then on “Save changes”.
 <p>&nbsp;</p>
-
-![Payments Connect - iSET](/images/iset/iset_configuration_methods_2.gif)
+    ![Payments Connect - iSET](/images/iset/iset_configuration_methods_2.gif)
 <p>&nbsp;</p>
 
 ### Checkout Pro
@@ -61,8 +62,7 @@ To activate this model, follow these steps:
 1. Complete the fields Client ID and Client Secret with the [credentials of your Mercado Pago account]([FAKER][CREDENTIALS][URL]).
 1. Click on “Close” and then on “Save changes”.
 <p>&nbsp;</p>
-
-![Payments Connect - iSET](/images/iset/iset_configuration_checkout_padrao_3.gif)
+    ![Payments Connect - iSET](/images/iset/iset_configuration_checkout_padrao_3.gif)
 <p>&nbsp;</p>
 
 ### Transparent Checkout
@@ -78,8 +78,7 @@ To activate this model, follow these steps:
 1. Complete the fields Client ID, Client Secret and Public Key with the [credentials of your Mercado Pago account]([FAKER][CREDENTIALS][URL]).
 1. Click on “Close” and then on “Save changes”.
 <p>&nbsp;</p>
-
-![Payments Connect - iSET](/images/iset/iset_configuration_checkout_transparente_4.gif)
+    ![Payments Connect - iSET](/images/iset/iset_configuration_checkout_transparente_4.gif)
 <p>&nbsp;</p>
 
 ### Both checkouts
@@ -95,8 +94,7 @@ To **activate both checkouts**, follow these steps:
 1. Complete the fields “Client ID, Client Secret and Public Key” with the [credentials of your Mercado Pago account]([FAKER][CREDENTIALS][URL]).
 1. Click on “Close” and then on “Save changes”.
 <p>&nbsp;</p>
-
-![Payments Connect - iSET](/images/iset/iset_configuration_checkout_ambos_5.gif)
+    ![Payments Connect - iSET](/images/iset/iset_configuration_checkout_ambos_5.gif)
 <p>&nbsp;</p>
 
 > Find all the information about your credentials in our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials/).
@@ -126,8 +124,7 @@ You can set the maximum or minimum amount of installments and apply surcharges o
 
 1. Click on “Close” and then on “Save changes”.
 <p>&nbsp;</p>
-
-![Payments Connect - iSET](/images/iset/iset_configuration_installments_6.gif)
+    ![Payments Connect - iSET](/images/iset/iset_configuration_installments_6.gif)
 <p>&nbsp;</p>
 
 ## Set interest free installments in your Mercado Pago account
@@ -136,8 +133,7 @@ You can set the maximum or minimum amount of installments and apply surcharges o
 1. Go to the option “Settings”, navigate to “Offer interest-free installments” and click “Activate”.
 1. Choose “How many do you want to offer?” and confirm the changes with the “Activate” button.
 <p>&nbsp;</p>
-
-![Payments Connect - iSET](/images/iset/iset_account_installment_7.gif)
+    ![Payments Connect - iSET](/images/iset/iset_account_installment_7.gif)
 <p>&nbsp;</p>
 
 And that’s it! You are now offering interest-free installments, with the financing cost you have set.
@@ -161,8 +157,7 @@ To **set the information for the orders on your store**, follow these steps:
 
 1. Click on “Close” and then on “Save changes”. 
 <p>&nbsp;</p>
-
-![Payments Connect - iSET](/images/iset/iset_configuration_informacion_9.gif)
+    ![Payments Connect - iSET](/images/iset/iset_configuration_informacion_9.gif)
 <p>&nbsp;</p>
 
 > WARNING
