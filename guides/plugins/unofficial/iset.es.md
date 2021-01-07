@@ -30,7 +30,8 @@ Para **activar tu cuenta de Mercado Pago en iSET**, sigue estos pasos:
 1. En el campo Status, selecciona la opción “Activo”.
 1. Haz clic en “Cerrar” y después en “Guardar cambios”.
 <p>&nbsp;</p>
-    ![Payments Connect - iSET](/images/iset/iset_active_modulo_1.gif)
+
+![Payments Connect - iSET](/images/iset/iset_active_modulo_1.gif)
 <p>&nbsp;</p>
 
 ¡Y listo! Mercado Pago ya se encuentra instalado en tu tienda.
@@ -49,7 +50,8 @@ También tienes la opción de [ofrecer cuotas sin interés](#bookmark_configura_
 1. Completa en "Breve descripción/Nombre de la tienda" el nombre que aparecerá en la factura de tu cliente para que pueda reconocerte (máximo de 13 caracteres).
 1. Haz clic en “Cerrar” y después en “Guardar cambios”.
 <p>&nbsp;</p>
-    ![Payments Connect - iSET](/images/iset/iset_configuration_methods_2.gif)
+
+![Payments Connect - iSET](/images/iset/iset_configuration_methods_2.gif)
 <p>&nbsp;</p>
 
 ### Checkout Pro
@@ -65,7 +67,8 @@ Para activar este modelo, sigue estos pasos:
 1. Completa los campos Client ID y Client Secret con las [credenciales]([FAKER][CREDENTIALS][URL]) de tu cuenta de Mercado Pago.
 1. Haz clic en “Cerrar” y después en “Guardar cambios”.
 <p>&nbsp;</p>
-    ![Payments Connect - iSET](/images/iset/iset_configuration_checkout_padrao_3.gif)
+
+![Payments Connect - iSET](/images/iset/iset_configuration_checkout_padrao_3.gif)
 <p>&nbsp;</p>
 
 ### Checkout Transparente
@@ -81,7 +84,8 @@ Para activar este modelo, sigue estos pasos:
 1. Completa en los campos Client ID, Client Secret y Public Key, las [credenciales]([FAKER][CREDENTIALS][URL]) de tu cuenta de Mercado Pago.
 1. Haz clic en “Cerrar” y después en “Guardar cambios”.
 <p>&nbsp;</p>
-    ![Payments Connect - iSET](/images/iset/iset_configuration_checkout_transparente_4.gif)
+
+![Payments Connect - iSET](/images/iset/iset_configuration_checkout_transparente_4.gif)
 <p>&nbsp;</p>
 
 ### Ambos checkouts
@@ -97,7 +101,8 @@ Para **activar los dos checkouts**, sigue estos pasos:
 1. Completa los campos “Cliend ID, Clien Secret y Public Key” con las [credenciales de tu cuenta de Mercado Pago]([FAKER][CREDENTIALS][URL]).
 1. Haz clic en “Cerrar” y después en “Guardar cambios”.
 <p>&nbsp;</p>
-    ![Payments Connect - iSET](/images/iset/iset_configuration_checkout_ambos_5.gif)
+
+![Payments Connect - iSET](/images/iset/iset_configuration_checkout_ambos_5.gif)
 <p>&nbsp;</p>
 
 > Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials/).
@@ -127,7 +132,8 @@ Puedes establecer la cantidad máxima o mínima de cuotas y la aplicación de au
 
 1. Haz clic en “Cerrar” y después en “Guardar cambios”.
 <p>&nbsp;</p>
-    ![Payments Connect - iSET](/images/iset/iset_configuration_installments_6.gif)
+
+![Payments Connect - iSET](/images/iset/iset_configuration_installments_6.gif)
 <p>&nbsp;</p>
 
 ## Configura las cuotas sin interés en tu cuenta de Mercado Pago
@@ -136,7 +142,8 @@ Puedes establecer la cantidad máxima o mínima de cuotas y la aplicación de au
 1. Accede en la opción “Configuraciones”, navega hasta “Ofrecer cuotas sin interés” y haz clic en “Activar”.
 1. Elige “¿Cuántas quieres ofrecer?” y confirma los cambios con el botón “Activar”.
 <p>&nbsp;</p>
-    ![Payments Connect - iSET](/images/iset/iset_account_installment_7.gif)
+
+![Payments Connect - iSET](/images/iset/iset_account_installment_7.gif)
 <p>&nbsp;</p>
 
 ¡Y listo! Ya estás ofreciendo cuotas sin interés, con el costo de financiación que hayas configurado.
@@ -160,7 +167,8 @@ Para **configurar la información de los pedidos en tu tienda**, sigue estos pas
 
 1. Haz clic en “Cerrar” y después en “Guardar cambios”. 
 <p>&nbsp;</p>
-    ![Payments Connect - iSET](/images/iset/iset_configuration_informacion_9.gif)
+
+![Payments Connect - iSET](/images/iset/iset_configuration_informacion_9.gif)
 <p>&nbsp;</p>
 
 > WARNING

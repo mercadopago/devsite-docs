@@ -17,7 +17,7 @@ To charge with a QR attended model, you’ll have to create and order and then a
 
 We explain how the attended model works:
 
->![Payment flow at QR Mercado Pago point of sale](/images/qr-user-flow.en.png)
+![Payment flow at QR Mercado Pago point of sale](/images/mobile/qr-user-flow.en.png)
 
 <span></span>
 
