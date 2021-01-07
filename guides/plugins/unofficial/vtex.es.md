@@ -99,7 +99,6 @@ Para poder utilizar este tipo de checkout se tienen que configurar los medios de
 4. [Tarjetas de crédito locales](#bookmark_condición_de_pagos_con_medios_de_pagos_personalizados)
 
 
-<br>
 #### Condición de pagos para tarjeta de crédito
 
 Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
@@ -122,7 +121,6 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 ![Imagen tarjeta](/images/vtex/vtex-hispanos-credito.gif)
 
 
-<br>
 #### Condición de pagos para tarjeta de débito
 
 Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
@@ -136,7 +134,6 @@ Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
 7. Haz clic en Guardar.
 
 
-<br>
 #### Condición de pagos para medios de pago en efectivo
 
 Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos:
@@ -162,7 +159,6 @@ En VTEX, al seleccionar Boleto Bancario se incluyen todos los medios de pagos di
 
 ![Imagen efectivo](/images/vtex/vtex-hispanos-efectivo.gif)
 
-<br>
 
 #### Condición de pagos con medios de pagos personalizados
 
@@ -295,7 +291,6 @@ Para poder utilizar este tipo de checkout se tienen que configurar los medios de
 3. [Efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo)
 
 
-<br>
 #### Condición de pagos para tarjeta de crédito
 
 Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
@@ -318,7 +313,6 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 ![Imagen tarjeta](/images/vtex/vtex-hispanos-credito.gif)
 
 
-<br>
 #### Condición de pagos para tarjeta de débito
 
 Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
@@ -332,7 +326,6 @@ Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
 7. Haz clic en Guardar.
 
 
-<br>
 #### Condición de pagos para medios de pago en efectivo
 
 Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos:
@@ -454,7 +447,6 @@ Para poder utilizar este tipo de checkout se tienen que configurar los medios de
 4. [Tarjetas de crédito locales](#bookmark_condición_de_pagos_con_medios_de_pagos_personalizados)
 
 
-<br>
 #### Condición de pagos para tarjeta de crédito
 
 Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
@@ -477,7 +469,6 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 ![Imagen tarjeta](/images/vtex/vtex-hispanos-credito.gif)
 
 
-<br>
 #### Condición de pagos para medios de pago por transferencia bancaria
 
 Para crear una condición de pago con WebPay, sigue estos pasos: 
@@ -493,7 +484,6 @@ Para crear una condición de pago con WebPay, sigue estos pasos:
 ![Imagen transferencia](/images/vtex/vtex-hisp-webpay.gif)
 
 
-<br>
 #### Condición de pagos para medios de pago en efectivo
 
 Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos: 
@@ -514,7 +504,6 @@ En VTEX, al seleccionar Boleto Bancario se incluyen todos los medios de pagos di
 
 ![Imagen efectivo](/images/vtex/vtex-hispanos-efectivo.gif)
 
-<br>
 
 #### Condición de pagos con medios de pagos personalizados
 
@@ -639,7 +628,6 @@ Para poder utilizar este tipo de checkout se tienen que configurar los medios de
 5. [Tarjetas de crédito locales](#bookmark_condición_de_pagos_con_medios_de_pagos_personalizados)
 
 
-<br>
 #### Condición de pagos para tarjeta de crédito
 
 Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
@@ -663,7 +651,6 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 ![Imagen tarjeta](/images/vtex/vtex-hispanos-credito.gif)
 
 
-<br>
 #### Condición de pagos para tarjeta de débito
 
 Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
@@ -677,8 +664,6 @@ Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
 7. Haz clic en Guardar.
 
 
-
-<br>
 #### Condición de pagos para medios de pago por transferencia bancaria
 
 Para crear una condición de pago con PSE, sigue estos pasos: 
@@ -694,7 +679,6 @@ Para crear una condición de pago con PSE, sigue estos pasos:
 ![Imagen transferencia](/images/vtex/vtex-hisp-pse.gif)
 
 
-<br>
 #### Condición de pagos para medios de pago en efectivo
 
 Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos: 
@@ -716,7 +700,6 @@ En VTEX, al seleccionar Boleto Bancario se incluyen todos los medios de pagos di
 
 ![Imagen efectivo](/images/vtex/vtex-hispanos-efectivo.gif)
 
-<br>
 
 #### Condición de pagos con medios de pagos personalizados
 
@@ -851,7 +834,6 @@ Para poder utilizar este tipo de checkout se tienen que configurar los medios de
 3. [Efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo)
 
 
-<br>
 #### Condición de pagos para tarjeta de crédito
 
 Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
@@ -875,7 +857,6 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 ![Imagen tarjeta](/images/vtex/vtex-hispanos-credito.gif)
 
 
-<br>
 #### Condición de pagos para tarjeta de débito
 
 Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
@@ -889,7 +870,6 @@ Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
 7. Haz clic en Guardar. 
 
 
-<br>
 #### Condición de pagos para medios de pago en efectivo
 
 Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos: 
@@ -1013,7 +993,6 @@ Para poder utilizar este tipo de checkout se tienen que configurar los medios de
 3. [Tarjetas de crédito locales](#bookmark_condición_de_pagos_con_medios_de_pagos_personalizados)
 
 
-<br>
 #### Condición de pagos para tarjeta de crédito
 
 Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
@@ -1036,7 +1015,6 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 ![Imagen tarjeta](/images/vtex/vtex-hispanos-credito.gif)
 
 
-<br>
 #### Condición de pagos para medios de pago en efectivo
 
 Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos: 
@@ -1058,7 +1036,6 @@ En VTEX, al seleccionar Boleto Bancario se incluyen todos los medios de pagos di
 
 ![Imagen efectivo](/images/vtex/vtex-hispanos-efectivo.gif)
 
-<br>
 
 #### Condición de pagos con medios de pagos personalizados
 
