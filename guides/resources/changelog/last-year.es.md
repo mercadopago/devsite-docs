@@ -444,7 +444,7 @@ Lanzamos una nueva versión del SDK Java 1.7.1.
 >
 > PRODUCT: SDK .NET
 
-Lanzamos una nueva versíon del SDK .NET 1.8.1.
+Lanzamos una nueva versión del SDK .NET 1.8.1.
 
 > GIT
 >
@@ -514,7 +514,7 @@ Puedes ver toda la información en la [Referencia de API](https://www.mercadopag
 >
 > PRODUCT: SDK NODEJS
 
-Lanzamos una nueva versíon del SDK NodeJS 1.3.2.
+Lanzamos una nueva versión del SDK NodeJS 1.3.2.
 
 > GIT
 >
@@ -602,7 +602,7 @@ Lanzamos una nueva versión de Link de pago totalmente renovada. Diseñamos e im
 
 > CHANGELOG
 >
-> Nueva versíon SDK Javascript
+> Nueva versión SDK Javascript
 >
 > NEW_VERSION: NUEVA VERSIÓN
 >
