@@ -101,7 +101,7 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
 
 1. Again in **Extensions > Payments > MercadoPago**, click **Edit** to Setup your Mercado Pago account:
 
-![Mercado Pago Account](https://raw.github.com/brunocodeman/cart-opencart/master/README.img/MPAccount.png)
+ ![Mercado Pago Account](https://raw.github.com/brunocodeman/cart-opencart/master/README.img/MPAccount.png)
 
 2.  Set your **CLIENT_ID** and **CLIENT_SECRET**, or **PUBLIC_KEY** and **ACCESS_TOKEN** (depending on which module you're using).Find your credentials in [Credentials section]([FAKER][CREDENTIALS][URL]).
 

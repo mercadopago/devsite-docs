@@ -206,7 +206,7 @@ Si tienes alguna pregunta, problema o error tenemos un canal de soporte. Contác
 
 > HINT: Puedes obtener la versión del modulo en la lista de plugin de tu página de administración de WordPress:
 >
-![Developer](/images/wp-ecommerce-plugin_adm.png)
+> ![Developer](/images/wp-ecommerce-plugin_adm.png)
 
 # Cómo Contribuir
 Aquí hay algunos tips para ayudar con el desarrollo y mantenimiento del proyecto.
