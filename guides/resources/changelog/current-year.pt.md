@@ -6,6 +6,24 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Janeiro 2021
 
+### 7 de janeiro
+
+> CHANGELOG
+>
+> Nova versão SDK NodeJS
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK NODEJS
+
+Lançamos uma nova versão do SDK NodeJS 1.5.3.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-nodejs/releases/tag/1.5.3).
+
 ### 6 de janeiro
 
 > CHANGELOG
