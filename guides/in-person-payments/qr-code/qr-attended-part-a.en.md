@@ -30,7 +30,7 @@ The main characteristics are:
 
 Here's an explanation of how this model works:
 
-> ![Flujo de pago en punto de venta QR Mercado Pago](/images/mobile/qr-user-flow.en.png)
+![Flujo de pago en punto de venta QR Mercado Pago](/images/mobile/qr-user-flow.en.png)
 
 <span></span>
 

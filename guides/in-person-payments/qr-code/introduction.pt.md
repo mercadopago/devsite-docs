@@ -40,7 +40,7 @@ O QR é um **código único vinculado à sua conta de Mercado Pago**, que lhe pe
 Para receber pagamentos com QR em seu negócio, **você pode imprimi-lo e colá-lo em local visível ou exibi-lo em seu dispositivo móvel** e receber desde o app de Mercado Pago.
 
 
-> ![Flujo QR](/images/mobile/qr_flujo.pt.png)
+![Flujo QR](/images/mobile/qr_flujo.pt.png)
 
 <span></span>
 > NOTE

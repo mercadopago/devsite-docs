@@ -29,7 +29,7 @@ Las características principales son:
 
 Te explicamos cómo funciona el modelo atendido: 
 
-> ![Flujo de pago en punto de venta QR Mercado Pago](/images/mobile/qr-user-flow.es.png)
+![Flujo de pago en punto de venta QR Mercado Pago](/images/mobile/qr-user-flow.es.png)
 
 <span></span>
 
