@@ -47,7 +47,7 @@
 O módulo do Mercado Pago para WP eCommerce é integrado com as seguintes funcionalidades e soluções de pagamento:
 
 ### [Checkout Básico (Redirecionamento, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-* Interfaces pré-construídas do Mercado Pago<br>![Basic Checkout](/images/wp-ecommerce-basic_checkout_payment.png)
+* Interfaces pré-construídas do Mercado Pago<br>![Basic Checkout](/images/wp-ecommerce/wp-ecommerce-basic_checkout_payment.png)
 
 ### Checkout Transparente
 * [Pagamento com Cartão de Crédito](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)<br>![Custom Checkout](/images/wp-ecommerce-order_custom.png)
@@ -206,7 +206,7 @@ Se você tiver dúvidas, problemas ou erros, temos um canal de suporte. Escreva 
 
 > DICA: Você pode obter a versão do módulo na lista de plugins da sua página de administração do WordPress:
 >
-> ![Developer](/images/wp-ecommerce-plugin_adm.png)
+![Developer](/images/wp-ecommerce-plugin_adm.png)
 
 # Como Contribuir
 Aqui estão algumas dicas para ajudar no desenvolvimento e manutenção desse projeto.
