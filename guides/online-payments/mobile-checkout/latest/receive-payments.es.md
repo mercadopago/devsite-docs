@@ -205,7 +205,7 @@ A modo de ejemplo proponemos que inicies el flujo de Mercado Pago desde un botó
 
 [[[
 
-```android-xml
+```android
 ===
 1. Crea un Activity para insertar el botón (**MainActivity**, por ejemplo).  
 2. Agrega un campo de texto para mostrar el resultado del pago.
