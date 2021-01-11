@@ -289,6 +289,7 @@ The `createToken` method will return a `card_token` with the secure card display
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2

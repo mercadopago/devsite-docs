@@ -304,6 +304,7 @@ O método `createToken` devolverá um `card_token` com a representação segura 
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -554,17 +555,20 @@ Por último, é importante que esteja sempre informado sobre a criação nos nov
 
 ## Exemplos para download
 
+----[mlb]----
 > GIT
 >
-----[mlb]----
 > Checkout Transparente
-------------
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> Checkout API
-------------
 >
 > Disponibilizamos <a href="http://github.com/mercadopago/card-payment-sample" target="_blank">exemplos completos de integração</a> no GitHub para PHP ou NodeJS para que você possa fazer o download imediatamente.
-
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+> GIT
+>
+> Checkout API
+>
+> Disponibilizamos <a href="http://github.com/mercadopago/card-payment-sample" target="_blank">exemplos completos de integração</a> no GitHub para PHP ou NodeJS para que você possa fazer o download imediatamente.
+------------
 <span></span>
 > GIT
 >
