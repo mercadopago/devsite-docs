@@ -144,10 +144,10 @@ var payment_data = {
 };
 
 // Armazena e envia o pagamento
-mercadopago.payment.save(payment).then(function (data) {
+mercadopago.payment.save(payment_data).then(function (data) {
   // ...    
   // Imprime o status do pagamento
-  Console.log(payment.status);
+  Console.log(data.status);
 }).catch(function (error) {
   // ...
 });
