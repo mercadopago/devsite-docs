@@ -14,7 +14,7 @@ Integra Mercado Envíos para recibir el pago de tus productos y gestionar su env
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Activa Mercado Envíos
 
-Desde la cuenta del vendedor, ingresa a la sección de [Configuración](https://www.mercadopago[FAKER][URL][DOMAIN]/business#shipping) y activa la opción de Mercado Envíos.
+Desde la cuenta del vendedor, ingresa a la sección de [Tu negocio > Configuración](https://www.mercadopago[FAKER][URL][DOMAIN]/business#shipping) y activa la opción de Mercado Envíos.
 
 Usaremos el domicilio que cargues para mostrar los puntos de despacho cercanos a los que el vendedor podrá llevar los paquetes, y calcular los costos de envío.
 
@@ -458,7 +458,7 @@ preference.Shipments = shipments;
 
 **¡Y listo! Mercado Envíos ya se encuentra integrado.** 
 
-Una vez que se reciba una venta, solo hay que ----[mla, mlm]---- [preparar el paquete y enviarlo](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_1603). ------------
+Una vez que se reciba una venta, solo hay que ----[mla, mlm]---- [preparar el paquete y enviarlo](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_1603). ------------ ----[mlb]---- [preparar el paquete y enviarlo](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/_1603). ------------
 
 > NOTE
 >

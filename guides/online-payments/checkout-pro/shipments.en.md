@@ -13,7 +13,7 @@ Integrate Mercado Envíos to receive payment for your products and manage their 
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Activate Mercado Envíos
 
-From the seller's account, go to the [Settings](https://www.mercadopago[FAKER][URL][DOMAIN]/business#shipping) section and activate the Mercado Envíos option.
+From the seller's account, go to the [Your Business > Settings](https://www.mercadopago[FAKER][URL][DOMAIN]/business#shipping) section and activate the Mercado Envíos option.
 
 We will use the address you upload to show the delivery points close to where the seller will be able to take the packages, and calculate the shipping costs.
 
@@ -452,7 +452,7 @@ preference.Shipments = shipments;
 
 **Done! Mercado Envíos is already integrated.** 
 
-Once you receive an order, you only need to ----[mla, mlm]---- [prepare and ship the package](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_1603). ------------
+Once you receive an order, you only need to ----[mla, mlm]---- [prepare and ship the package](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_1603). ------------ ----[mlb]---- [prepare and ship the package](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/_1603) ------------
 
 > NOTE
 >
