@@ -27,7 +27,7 @@ Ofrece a tus usuarios la mejor experiencia de pago, tanto en Android como en iOS
 ### Integrar el checkout es muy fácil:
 
 1. Incluye el SDK en tu proyecto.
-2. Coloca tus <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciales </a> y crea la preferencia de pagos.
+2. Coloca tus [credenciales]([FAKER][CREDENTIALS][URL]) y crea la preferencia de pagos.
 3. Inicia el proceso de pago desde un botón en tu aplicación.
 4. Enterate del pago escuchando las notificaciones que te enviamos.
 

@@ -53,7 +53,7 @@ curl -X POST \
 
 ### 1. Configure the checkout with the information of your selling user
 
-Generate a preference with the <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credentials</a> of the test user that you want to use as a seller.
+Generate a preference with the [credentials]([FAKER][CREDENTIALS][URL]) of the test user that you want to use as a seller.
 
 ### 2. Make a payment with your buyer user
 
@@ -156,7 +156,7 @@ To **test different payment results,** complete the information you want in the 
 
 ## Start receiving payments
 
-To start charging, you must <a href="[FAKER][CREDENTIALS][URL]" target="_blank">activate your credentials</a>.
+To start charging, you must [activate your credentials]([FAKER][CREDENTIALS][URL]).
 
 To activate them, verify that the credentials in your integration are those of the account that receives the money from the sales.<br/>
 

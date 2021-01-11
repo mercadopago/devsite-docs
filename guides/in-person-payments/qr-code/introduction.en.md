@@ -16,15 +16,15 @@ A QR is an **unique code linked to your Mercado Pago account**. It’ll allow yo
 
 ----[mlb]----
 
-![Pagos QR Mercado Pago](/images/qr_mla2.es.png)
+![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
 ------------
 ----[mla]----
 
-![Pagos QR Mercado Pago](/images/qr_mla2.es.png)
+![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
 
 ------------
 ----[mlm]----
-![Pagos QR Mercado Pago](/images/qr_mla2.es.png)
+![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
 ------------
 
 ## What are the benefits?
@@ -39,7 +39,7 @@ A QR is an **unique code linked to your Mercado Pago account**. It’ll allow yo
 
 In order to receive payments with QR, you can **print it and paste it in a visible place or display it on your phone**.
 
-> ![Flujo QR](/images/qr_flujo.en.png)
+> ![Flujo QR](/images/mobile/qr_flujo.en.png)
 
 <span></span>
 > NOTE

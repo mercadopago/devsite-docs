@@ -203,7 +203,7 @@ As an example, we propose that you initiate the MercadoPago’s flow from a butt
 
 [[[
 
-```android-xml
+```android
 ===
 1. Create an Activity to insert the button (**MainActivity**, for example).
 2. Add a text field to show the payment result.
@@ -436,7 +436,7 @@ To learn more about it, go to [Notifications.](https://www.mercadopago[FAKER][UR
 
 A payment can be rejected because the issuer for the selected method detected a problem or because of non-compliance with security requirements.
 
-Avoid rejected payments with our recommendations and <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/payment-rejections" target="_blank">improve the approval process</a>.
+Avoid rejected payments with our recommendations and [improve the approval process](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/payment-rejections).
 
 ### Test the integration
 

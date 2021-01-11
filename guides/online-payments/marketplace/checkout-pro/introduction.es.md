@@ -26,7 +26,7 @@ Después de crear la aplicación, sólo es necesario ejecutar el segundo y terce
 
 ## Credenciales
 
-Las <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciales </a> son las **claves que te proporcionamos para que puedas configurar tu integración**. Para este caso, vas a utilizar una clave pública y otra privada.
+Las [credenciales]([FAKER][CREDENTIALS][URL]) son las **claves que te proporcionamos para que puedas configurar tu integración**. Para este caso, vas a utilizar una clave pública y otra privada.
 
 * La clave pública, o Public key, te sirve para acceder a los recursos que necesita tu frontend. Vas a poder recolectar los datos de las tarjetas de crédito y convertirlos en un token representativo que puedes guardar de forma segura en tus servidores para crear un pago.
 

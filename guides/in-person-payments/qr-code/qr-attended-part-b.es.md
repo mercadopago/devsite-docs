@@ -17,7 +17,7 @@ Para cobrar a través de un código QR modelo atendido, deberás crear una orden
 
 Te explicamos cómo funciona el modelo atendido: 
 
->![Flujo de pago en punto de venta QR Mercado Pago](/images/qr-user-flow.es.png)
+![Flujo de pago en punto de venta QR Mercado Pago](/images/mobile/qr-user-flow.es.png)
 
 <span></span>
 
@@ -85,7 +85,7 @@ Las notificaciones IPN (Instant Payment Notification) son la **forma automática
 
 Implementa IPN de `merchant_order` junto con una búsqueda de la orden por `external_reference` como método de contigencia.
 
-<a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/" target="_blank">Recibir notificaciones IPN</a>
+[Recibir notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn)
 
 ---
 ### Próximos pasos

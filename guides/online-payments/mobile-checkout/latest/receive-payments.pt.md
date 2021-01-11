@@ -205,7 +205,7 @@ Como exemplo, sugerimos que inicie o fluxo do Mercado Pago a partir de um botão
 
 [[[
 
-```android-xml
+```android
 ===
 1. Crie uma Atividade para inserir o botão (**MainActivity**, por exemplo).  
 2. Adicione um campo de texto para mostrar o resultado do pagamento.
@@ -438,7 +438,7 @@ Para mais informações, consulte a seção de [Notificações](https://www.merc
 
 Um pagamento pode ser recusado porque o emissor do meio de pagamento detecta um problema ou porque não preenche os requisitos de segurança necessários.
 
-Evite pagamentos recusados com nossas recomendações e <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/payment-rejections" target="_blank">melhore a aprovação de seus pagamentos</a>.
+Evite pagamentos recusados com nossas recomendações e [melhore a aprovação de seus pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/payment-rejections).
 
 ### Teste a integração
 

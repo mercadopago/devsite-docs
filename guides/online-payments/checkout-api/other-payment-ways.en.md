@@ -119,6 +119,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -213,6 +214,7 @@ window.Mercadopago.getIdentificationTypes();
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -633,6 +635,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -713,6 +716,7 @@ window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -1021,6 +1025,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -1115,6 +1120,7 @@ window.Mercadopago.getIdentificationTypes();
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -1425,6 +1431,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -1519,6 +1526,7 @@ window.Mercadopago.getIdentificationTypes();
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -2027,6 +2035,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -2121,6 +2130,7 @@ window.Mercadopago.getIdentificationTypes();
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -2554,6 +2564,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -2648,6 +2659,7 @@ window.Mercadopago.getIdentificationTypes();
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -2931,6 +2943,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -3025,6 +3038,7 @@ window.Mercadopago.getIdentificationTypes();
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2

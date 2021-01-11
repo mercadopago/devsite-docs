@@ -124,6 +124,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -218,6 +219,7 @@ window.Mercadopago.getIdentificationTypes();
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -636,6 +638,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -717,6 +720,7 @@ window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -1026,6 +1030,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -1119,6 +1124,7 @@ window.Mercadopago.getIdentificationTypes();
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -1429,6 +1435,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -1523,6 +1530,7 @@ window.Mercadopago.getIdentificationTypes();
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -2031,6 +2039,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -2126,6 +2135,7 @@ window.Mercadopago.getIdentificationTypes();
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -2559,6 +2569,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -2653,6 +2664,7 @@ window.Mercadopago.getIdentificationTypes();
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -2936,6 +2948,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -3031,6 +3044,7 @@ window.Mercadopago.getIdentificationTypes();
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2

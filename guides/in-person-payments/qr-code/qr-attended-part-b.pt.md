@@ -17,7 +17,7 @@ Para receber por meio de um código QR modelo atendido, deverá criar um pedido 
 
 Explicamos como funciona o modelo atendido:
 
->![Fluxo de pagamento no ponto de venda QR Mercado Pago](/images/qr-user-flow.pt.png)
+![Fluxo de pagamento no ponto de venda QR Mercado Pago](/images/mobile/qr-user-flow.pt.png)
 
 <span></span>
 
@@ -82,7 +82,7 @@ As [notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/p
 
 Implementa IPN de `merchant_order` junto com uma busca do pedido por `external_reference` como método de contingência.
 
-<a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/" target="_blank"> Receber notificações IPN </a>
+[Receber notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn)
 
 ---
 ### Próximos passos

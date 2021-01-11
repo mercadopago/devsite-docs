@@ -289,6 +289,7 @@ The `createToken` method will return a `card_token` with the secure card display
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -539,14 +540,14 @@ Finally, you always need to be notified of new payments and status updates.  For
 >
 > Checkout API
 >
-> Use our <a href="http://github.com/mercadopago/card-payment-sample" target="_blank">complete integration examples</a> on GitHub in PHP or NodeJS to download instantly.
+> Use our [complete integration examples](http://github.com/mercadopago/card-payment-sample) on GitHub in PHP or NodeJS to download instantly.
 
 <span></span>
 > GIT
 >
 > Payment form
 >
-> If you want to deploy other technology in your server, you can <a href="https://github.com/mercadopago/card-payment-sample/tree/master/client" target="_blank">download a complete payment form sample</a> from GitHub.
+> If you want to deploy other technology in your server, you can [download a complete payment form sample](https://github.com/mercadopago/card-payment-sample/tree/master/client) from GitHub.
 
 ---
 ### Next steps

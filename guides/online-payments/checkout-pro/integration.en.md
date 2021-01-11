@@ -22,7 +22,7 @@ Installing the Checkout Pro consists of two steps:
 
 Write the following code consisting of three parts:
 
-1.1 Add the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/previous-requirements#bookmark_pré-requisitos" target="_blank"> Mercado Pago SDK</a> in your project:
+1.1 Add the [Mercado Pago SDK](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/previous-requirements#bookmark_pré-requisitos) in your project:
 
 [[[
 ```php
@@ -49,7 +49,7 @@ require 'mercadopago.rb'
 ```
 ]]]
 
-<br/><br/>1.2 Add the <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credentials</a> to enable the use of the Mercado Pago SDK:<br/>
+<br/><br/>1.2 Add the [credentials]([FAKER][CREDENTIALS][URL]) to enable the use of the Mercado Pago SDK:<br/>
 
 [[[
 ```php

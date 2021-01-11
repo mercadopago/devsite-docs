@@ -6,15 +6,15 @@
 
 ----[mlb]----
 
-![Pagos QR Mercado Pago](/images/qr_mla2.es.png)
+![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
 ------------
 ----[mla]----
 
-![Pagos QR Mercado Pago](/images/qr_mla2.es.png)
+![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
 
 ------------
 ----[mlm]----
-![Pagos QR Mercado Pago](/images/qr_mla2.es.png)
+![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
 ------------
 
 

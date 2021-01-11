@@ -36,7 +36,7 @@ Por el momento, Mercado Pago permite pagos solamente en moneda local. Es decir, 
 
 Mercado Pago cuenta con una validación de montos al momento de ofrecer los medios de pago disponibles.
 
-En el caso de que el monto no cumpla con las condiciones de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_620" target="_blank">montos mínimos y máximos</a> del medio de pago, nuestro checkout solicitará el inicio sesión a la cuenta de Mercado Pago, ya que la única opción disponible para usar será dinero en cuenta. Por esto, tus clientes no podrán pagar como invitados.
+En el caso de que el monto no cumpla con las condiciones de [montos mínimos y máximos](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_620) del medio de pago, nuestro checkout solicitará el inicio sesión a la cuenta de Mercado Pago, ya que la única opción disponible para usar será dinero en cuenta. Por esto, tus clientes no podrán pagar como invitados.
 
 Esto genera que, según el monto elegido, puedas visualizar algunos medios de pagos y otros no debido a que no cumple con los requisitos necesarios. Es decir, en base al valor del producto y del mínimo o máximo permitido, se mostrarán los medios de pagos disponibles.
 ------------
@@ -46,7 +46,7 @@ Esto genera que, según el monto elegido, puedas visualizar algunos medios de pa
 
 Mercado Pago cuenta con una validación de montos al momento de ofrecer los medios de pago disponibles.
 
-En el caso de que el monto no cumpla con las condiciones de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/_324" target="_blank">montos mínimos y máximos</a> del medio de pago, nuestro checkout solicitará el inicio sesión a la cuenta de Mercado Pago, ya que la única opción disponible para usar será dinero en cuenta. Por esto, tus clientes no podrán pagar como invitados.
+En el caso de que el monto no cumpla con las condiciones de [montos mínimos y máximos](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/_324) del medio de pago, nuestro checkout solicitará el inicio sesión a la cuenta de Mercado Pago, ya que la única opción disponible para usar será dinero en cuenta. Por esto, tus clientes no podrán pagar como invitados.
 
 Esto genera que, según el monto elegido, puedas visualizar algunos medios de pagos y otros no debido a que no cumple con los requisitos necesarios. Es decir, en base al valor del producto y del mínimo o máximo permitido, se mostrarán los medios de pagos disponibles.
 
@@ -97,19 +97,19 @@ Es importante que sumes en tu integración toda la información necesaria para [
 
 ----[mla, mco, mlu, mpe, mlc, mlm]----
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Me rechazaron un pago
-Si tienes problemas con un pago, puedes contactarte a través de Ayuda > Cobros > Tengo un problema con un cobro > <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/charges" target="_blank">Resolver un problema con un cobro</a>.
+Si tienes problemas con un pago, puedes contactarte a través de Ayuda > Cobros > Tengo un problema con un cobro > [Resolver un problema con un cobro](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/charges).
 ------------
 
 ----[mlb]----
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Me rechazaron un pago
-Si tienes problemas con un pago, puedes contactarte a través de Ayuda > Cobros > Tengo un problema con un cobro > <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/charges" target="_blank">Resolver un problema con un cobro</a>.
+Si tienes problemas con un pago, puedes contactarte a través de Ayuda > Cobros > Tengo un problema con un cobro > [Resolver un problema con un cobro](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/charges).
 ------------
 
 ----[mla, mco, mlu, mpe, mlc, mlm]----
-> Si sigues necesitando ayuda, te recomendamos que nos contactes a través de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda" target="_blank">Ayuda</a>.
+> Si sigues necesitando ayuda, te recomendamos que nos contactes a través de [Ayuda](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda).
 ------------
 
 ----[mlb]----
-> Si sigues necesitando ayuda, te recomendamos que nos contactes a través de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda" target="_blank">Ayuda</a>.
+> Si sigues necesitando ayuda, te recomendamos que nos contactes a través de [Ayuda](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda).
 ------------
 

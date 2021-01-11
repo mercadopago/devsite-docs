@@ -50,13 +50,13 @@ El módulo de Mercado Pago para ZenCart esta integrado con las siguientes funcio
 
 4. Ahora, es muy importante configurar las credenciales **CLIENT_ID** y **CLIENT_SECRET**.
 
-  ![Setting client id and client secret](/images/zencart-credentials.png) <br />
+![Setting client id and client secret](/images/zencart/zencart-credentials.png) <br />
 
 Obtenga su [CLIENT_ID y CLIENT_SECRET]([FAKER][CREDENTIALS][URL]).
 
 5. Configure el estado para IPN (Instant Payment Notification):
 
-  ![Installation Instructions](/images/zencart-notification.png) <br />
+![Installation Instructions](/images/zencart/zencart-notification.png) <br />
 
   * **Choose the default status for a new order**: Setea el status de la orden cuando los pagos son aprobados.
   * **Choose the status of approved orders**: Setea el status de la orden cuando los pagos son aprobados.
@@ -69,11 +69,11 @@ Obtenga su [CLIENT_ID y CLIENT_SECRET]([FAKER][CREDENTIALS][URL]).
 
 6. Otras configuraciones: <br/>
 
-![Installation Instructions](/images/zencart-other_config_1.png) <br />
+![Installation Instructions](/images/zencart/zencart-other_config_1.png) <br />
 
-![Installation Instructions](/images/zencart-other_config_2.png) <br />
+![Installation Instructions](/images/zencart/zencart-other_config_2.png) <br />
 
-![Number of installments and other settings](/images/zencart-other_config_3.png) <br />
+![Number of installments and other settings](/images/zencart/zencart-other_config_3.png) <br />
 
   * **Store Category**: Seleccione la categoría de la tienda;
   * **Redirect URL**: La  URL de redirección se genera automáticamente si está probando en un localhost no funcionará correctamente. Puedes cambiar la dirección a cualquier url de su preferencia;
