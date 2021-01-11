@@ -211,7 +211,7 @@ Os dados mais significativos são os seguintes:
 
 Quando confrontado com uma rejeição, é muito importante rever o `status_detail` que especifica o motivo do mesmo.
 
-Para mais informações acesse o link <a href="https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/handling-responses/" target="_blank">Resultados da criação de uma cobrança</a>.
+Para mais informações acesse o link [Resultados da criação de uma cobrança](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/handling-responses).
 
 ## Erros comuns
 
@@ -228,7 +228,7 @@ Os erros mais comuns são os seguintes:
 >
 > Importante
 >
-> Antes de iniciar sua operação em produção, você deve <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials" target="_blank">ativar suas credenciais</a>. Caso já tenha realizado este passo o link não será apresentado.
+> Antes de iniciar sua operação em produção, você deve [ativar suas credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials). Caso já tenha realizado este passo o link não será apresentado.
 
 <!-- -->
 > Para mais informação, visite o site [oficial da VTEX](https://help.vtex.com/) e o [site de status da Vtex](https://status.vtex.com/).

@@ -563,14 +563,14 @@ Por último, é importante que esteja sempre informado sobre a criação nos nov
 > Checkout API
 ------------
 >
-> Disponibilizamos <a href="http://github.com/mercadopago/card-payment-sample" target="_blank">exemplos completos de integração</a> no GitHub para PHP ou NodeJS para que você possa fazer o download imediatamente.
+> Disponibilizamos [exemplos completos de integração](http://github.com/mercadopago/card-payment-sample) no GitHub para PHP ou NodeJS para que você possa fazer o download imediatamente.
 
 <span></span>
 > GIT
 >
 > Formulário de pagamento
 >
-> Se você deseja implementar seu servidor com alguma outra tecnologia, te deixamos um <a href="https://github.com/mercadopago/card-payment-sample/tree/master/client" target="_blank">exemplo completo do formulário de pagamento </a> no GitHub para que possa baixar.
+> Se você deseja implementar seu servidor com alguma outra tecnologia, te deixamos um [exemplo completo do formulário de pagamento ](https://github.com/mercadopago/card-payment-sample/tree/master/client) no GitHub para que possa baixar.
 
 ---
 ### Próximos passos

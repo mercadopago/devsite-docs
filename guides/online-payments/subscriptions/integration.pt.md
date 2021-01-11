@@ -19,7 +19,7 @@ Há duas formas de integrar assinaturas:
 > 
 > Conceitos-chave
 > 
-> Dúvidas sobre o que é um plano ou outro conceito? Tenha em mãos os <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/introduction" target="_blank">conceitos-chave</a> para revisá-los quando necessário.
+> Dúvidas sobre o que é um plano ou outro conceito? Tenha em mãos os [conceitos-chave](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/introduction) para revisá-los quando necessário.
 
 
 ## Assinaturas com um plano associado
@@ -128,7 +128,7 @@ Uma vez que você tenha gerado seu plano e obtido seu `preapproval_plan_id`, cri
 > 
 > Importante
 > 
-> Dúvidas sobre como criar o token de pagamento? Encontre todas as informações na seção de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card#bookmark_capture_os_dados_de_cart_o" target="_blank">Capturar dados do cartão</a>.
+> Dúvidas sobre como criar o token de pagamento? Encontre todas as informações na seção de [Capturar dados do cartão](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card#bookmark_capture_os_dados_de_cart_o).
 
 #### Resposta 
 `HTTP Status 200 OK`
@@ -157,7 +157,7 @@ Uma vez que você tenha gerado seu plano e obtido seu `preapproval_plan_id`, cri
         "end_date": "2021-07-02T11:59:52.581-04:00"
 }
 ```
->Você pode obter mais informações sobre os campos na <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/" target="_blank">Referência de API</a>.
+>Você pode obter mais informações sobre os campos na [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference).
 
 Prono! Você criou uma assinatura com um plano associado.
 
@@ -283,7 +283,7 @@ Para o cadastro, os detalhes do cartão devem ser informados usando nosso formul
 }
 ```
 
-> Você pode obter mais informações sobre os campos na <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/" target="_blank">Referência de API</a>.
+> Você pode obter mais informações sobre os campos na [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference).
 
 
 Atributos
