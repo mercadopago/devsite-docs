@@ -249,7 +249,7 @@ As an example, we propose that you initiate the MercadoPago’s flow from a butt
 
 [[[
 
-```android-xml
+```android
 ===
 1.  Create an Activity to insert the button (** MainActivity**, for example).  
 2. Add a text field to show the payment result.
