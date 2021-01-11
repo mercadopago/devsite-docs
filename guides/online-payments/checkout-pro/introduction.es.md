@@ -42,29 +42,29 @@ Checkout Pro es la integración que **te permite cobrar a través de nuestro for
 ## Diferencias de Checkout Pro con otras herramientas de Mercado Pago
 
 ----[mla, mlb]----
-| | Checkout Pro | Web Tokenize Checkout |      API |
-| :---  | :--: | :--: | :--: |
-| Dificultad de integración 			  	     |     Baja    |       Media         |     Alta |
-| Diseño UI/UX 							  	           |      ✔      |         ✔           |
-| Optimizado para la mejor conversión	     |      ✔      |         ✔           |
-| Optimizado para mejorar la aprobación    |      ✔      |                     | 
-| Pago de usuarios invitados         	     |      ✔      |         ✔           |      ✔ |
-| Pago de usuarios registrados       	     |      ✔      |                     |
-| Prevención de fraude               	     |      ✔      |         ✔           |      ✔ |
-| Pantalla de finalización de pago		     |      ✔      |                     |
-| Pago con dos tarjetas					           |      ✔      |                     |
+|                                       | Checkout Pro | Web Tokenize Checkout | API |
+| :--- | :--: | :--: | :--: |
+| Dificultad de integración             | Baja | Media | Alta |
+| Diseño UI/UX                          | ✔ | ✔ |   |
+| Optimizado para la mejor conversión   | ✔ | ✔ |   |
+| Optimizado para mejorar la aprobación | ✔ |   |   |
+| Pago de usuarios invitados            | ✔ | ✔ | ✔ |
+| Pago de usuarios registrados          | ✔ |   |   |
+| Prevención de fraude                  | ✔ | ✔ | ✔ |
+| Pantalla de finalización de pago      | ✔ |   |   |
+| Pago con dos tarjetas                 | ✔ |   |   |
 ------------
 ----[mlm, mlu, mco, mlc, mpe]----
-                                   | Checkout Pro | Web Tokenize Checkout |      API |
-| :---  | :--: | :--: | :--: |
-| Dificultad de integración 			  	     |     Baja    |       Media         |     Alta |
-| Diseño UI/UX 							  	           |      ✔      |         ✔           |
-| Optimizado para la mejor conversión	     |      ✔      |         ✔           |
-| Optimizado para mejorar la aprobación    |      ✔      |                     |
-| Pago de usuarios invitados         	     |      ✔      |         ✔           |      ✔ |
-| Pago de usuarios registrados       	     |      ✔      |                     |
-| Prevención de fraude               	     |      ✔      |         ✔           |      ✔ |
-| Pantalla de finalización de pago		     |      ✔      |                     |
+|                                       | Checkout Pro | Web Tokenize Checkout | API |
+| :--- | :--: | :--: | :--: |
+| Dificultad de integración             | Baja | Media | Alta |
+| Diseño UI/UX                          | ✔ | ✔ |   |
+| Optimizado para la mejor conversión   | ✔ | ✔ |   |
+| Optimizado para mejorar la aprobación | ✔ |   |   |
+| Pago de usuarios invitados            | ✔ | ✔ | ✔ |
+| Pago de usuarios registrados          | ✔ |   |   |
+| Prevención de fraude                  | ✔ | ✔ | ✔ |
+| Pantalla de finalización de pago      | ✔ |   |   |
 ------------
 
 ---

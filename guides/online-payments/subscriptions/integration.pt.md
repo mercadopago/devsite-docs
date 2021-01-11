@@ -32,8 +32,8 @@ Ao gerar o plano, você receberá o `preapproval_plan_id` que usará para fazer 
 
 Para criar o plano, faça a seguinte chamada à nossa API com os dados que precisar:
 
-[[[
-```curl curl --location --request POST 'https://api.mercadopago.com/preapproval_plan' \
+```curl 
+curl --location --request POST 'https://api.mercadopago.com/preapproval_plan' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -52,7 +52,6 @@ Para criar o plano, faça a seguinte chamada à nossa API com os dados que preci
 	}
 }'
 ```
-]]]
 
 #### Atributos
 
@@ -70,7 +69,6 @@ Para criar o plano, faça a seguinte chamada à nossa API com os dados que preci
 #### Resposta
 `HTTP Status 200 OK`
 ```json
-
 {
     "id": "2c938084726e18d60172720000000000",
     "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]",
@@ -94,8 +92,8 @@ Para criar o plano, faça a seguinte chamada à nossa API com os dados que preci
         }
     }
 }
-
 ```
+
 Pronto! Agora podemos criar a assinatura e associá-la ao seu plano.
 
 
@@ -103,8 +101,8 @@ Pronto! Agora podemos criar a assinatura e associá-la ao seu plano.
 
 Uma vez que você tenha gerado seu plano e obtido seu `preapproval_plan_id`, crie a assinatura por API do pagador da seguinte forma: 
 
-[[[
-```curl curl --location --request POST 'https://api.mercadopago.com/preapproval \
+```curl 
+curl --location --request POST 'https://api.mercadopago.com/preapproval \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -114,7 +112,6 @@ Uma vez que você tenha gerado seu plano e obtido seu `preapproval_plan_id`, cri
    
 }'
 ```
-]]]
 
 #### Atributos
 
@@ -170,8 +167,8 @@ Se você quiser usar uma assinatura sem um plano associado, deve primeiro defini
 
 Para criar uma assinatura com status `authorized`, você deve enviar os dados do seu cartão a associar da seguinte forma:
 
-[[[
-```curl curl --location --request POST 'https://api.mercadopago.com/preapproval' \
+```curl 
+curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -191,12 +188,10 @@ Para criar uma assinatura com status `authorized`, você deve enviar os dados do
   "status": "authorized"
 }'
 ```
-]]]
 
 #### Resposta 
 `HTTP Status 200 OK`
 ```json
-
 {
     "id": "2c938084726fca480172750000000000",
     "payer_id": 400500600,
@@ -230,8 +225,8 @@ Você pode criar uma assinatura com status `pending` e nenhum meio de pagamento 
 
 Para o cadastro, os detalhes do cartão devem ser informados usando nosso formulário. Somente o link retornado na propriedade `init_point` deve ser compartilhado com o pagador:
 
-[[[
-```curl curl --location --request POST 'https://api.mercadopago.com/preapproval' \
+```curl 
+curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -250,13 +245,11 @@ Para o cadastro, os detalhes do cartão devem ser informados usando nosso formul
   "status": "pending"
 }'
 ```
-]]]
 
 
 #### Resposta
 `HTTP Status 200 OK`
 ```json
-
 {
     "id": "2c938084726fca480172750000000000",
     "payer_id": 400500600,
