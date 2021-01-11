@@ -149,7 +149,7 @@ curl -X POST \
 ```
 
 
-> Os [serviços](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/localization/gateway) dependem do país e devem ser contratados previamente.
+> Os [serviços](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/gateway) dependem do país e devem ser contratados previamente.
 
 ### Próximos passos
 
