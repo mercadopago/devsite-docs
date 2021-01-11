@@ -27,15 +27,13 @@ To set up the seller account you can use your test user's credentials.
 
 Run the following curl to generate a test user:
 
-
-[[[
-```curl curl -X POST \
+```curl
+curl -X POST \
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer ENV_ACCESS_TOKEN" \
 "https://api.mercadopago.com/users/test_user" \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
-]]]
 
 ### Response
 `HTTP Status 200 OK`
