@@ -7,7 +7,7 @@ Find the payment preference settings in the *Configure* option once you have the
 >
 > Note
 >
-> Remember that we have different [types of checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/introduction/#bookmark_tipos_de_checkout) that adapt to the needs of your business and that each one has its own settings.
+> Remember that we have different [types of checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/introduction/#bookmark_checkout_types) that adapt to the needs of your business and that each one has its own settings.
 
 ## Business Information
 
