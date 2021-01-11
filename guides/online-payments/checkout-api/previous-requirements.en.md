@@ -68,7 +68,7 @@ To install the SDK in your [Maven](http://maven.apache.org/install.html) project
 ```
 ```ruby
 ===
-The Mercado Pago SDK is available as a [gema](https://rubygems.org/gems/mercadopago-sdk), to install it you must execute the following code on the command line:
+The Mercado Pago SDK is available as a [gem](https://rubygems.org/gems/mercadopago-sdk), to install it you must execute the following code on the command line:
 ===
 gem install mercadopago-sdk
 ```
