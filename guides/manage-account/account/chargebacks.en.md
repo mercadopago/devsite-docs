@@ -114,7 +114,7 @@ You will get the following information:
 >
 > Nota
 >
-> Find more information in [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/chargebacks/_chargebacks_id/get).
+> Find more information in [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/chargebacks/_chargebacks_id/get).
 
 ### Understanding coverage
 
