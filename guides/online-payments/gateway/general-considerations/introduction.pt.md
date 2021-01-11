@@ -64,4 +64,4 @@ O custo dependerá do volume mensal operado pelo vendedor.
 * [Configure seus números de comercio e meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/gateway/general-considerations/configuration) no backoffice de Mercado Pago
 * [Integre o Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/gateway/checkout-pro/receiving-payments) no Modelo Gateway
 * [Integre a API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/gateway/checkout-api/receiving-payments) no Modelo Gateway
-* [Integre pagamentos avançados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/gateway/advanced/introduction) no Modelo Gateway
+* [Integre pagamentos avançados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/gateway/advanced/introduction) no Modelo Gateway
