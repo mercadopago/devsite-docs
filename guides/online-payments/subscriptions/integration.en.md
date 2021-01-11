@@ -32,8 +32,8 @@ When generating the plan you will get the `preapproval_plan_id` that you will us
 
 To create the plan, make the following call to our API with the data you need:
 
-[[[
-```curl curl --location --request POST 'https://api.mercadopago.com/preapproval_plan' \
+```curl 
+curl --location --request POST 'https://api.mercadopago.com/preapproval_plan' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -52,7 +52,6 @@ To create the plan, make the following call to our API with the data you need:
 	}
 }'
 ```
-]]]
 
 #### Attributes
 
@@ -70,7 +69,6 @@ To create the plan, make the following call to our API with the data you need:
 #### Response
 `HTTP Status 200 OK`
 ```json
-
 {
     "id": "2c938084726e18d60172720000000000",
     "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]",
@@ -94,8 +92,8 @@ To create the plan, make the following call to our API with the data you need:
         }
     }
 }
-
 ```
+
 Done! We can now create the subscription and associate it to your plan.
 
 
@@ -103,8 +101,8 @@ Done! We can now create the subscription and associate it to your plan.
 
 Once you have generated your plan and obtained your `preapproval_plan_id`, create the subscription of the payer by API as follows: 
 
-[[[
-```curl curl --location --request POST 'https://api.mercadopago.com/preapproval \
+```curl 
+curl --location --request POST 'https://api.mercadopago.com/preapproval \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -114,7 +112,6 @@ Once you have generated your plan and obtained your `preapproval_plan_id`, creat
    
 }'
 ```
-]]]
 
 #### Attributes
 
@@ -170,8 +167,8 @@ If you want to use a subscription without an associated plan, you must first set
 
 To create a subscription with `authorized` status, the card details must be submitted to be associated as follows:
 
-[[[
-```curl curl --location --request POST 'https://api.mercadopago.com/preapproval' \
+```curl 
+curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -191,12 +188,10 @@ To create a subscription with `authorized` status, the card details must be subm
   "status": "authorized"
 }'
 ```
-]]]
 
 #### Response 
 `HTTP Status 200 OK`
 ```json
-
 {
     "id": "2c938084726fca480172750000000000",
     "payer_id": 400500600,
@@ -230,8 +225,8 @@ You can create a subscription with `pending` status and no associated payment me
 
 In order to subscribe, the card data must be uploaded with our form. Only the link returned in the `init_point` property must be shared with the payer:
 
-[[[
-```curl curl --location --request POST 'https://api.mercadopago.com/preapproval' \
+```curl 
+curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -250,13 +245,11 @@ In order to subscribe, the card data must be uploaded with our form. Only the li
   "status": "pending"
 }'
 ```
-]]]
 
 
 #### Response
 `HTTP Status 200 OK`
 ```json
-
 {
     "id": "2c938084726fca480172750000000000",
     "payer_id": 400500600,
