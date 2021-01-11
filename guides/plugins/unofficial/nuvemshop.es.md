@@ -39,8 +39,15 @@ Para **vincular tu cuenta de Mercado Pago a Tiendanube**, sigue estos pasos:
 3. Haz clic en "Configurar" y luego en "Activar"
 4. Vas a ser redirigido a Mercado Pago para que ingreses con los datos de tu cuenta. Para autorizar la conexión, haz clic en "Permitir".
 <p>&nbsp;</p>
-----[mlb]----     ![Payments Connect - Nuvem Shop](/images/nuvemshop/nuvemshop_connect_1.gif) ------------ ----[mla]----     ![Payments Connect - Nuvem Shop](/images/nuvemshop/ar_tientanube_connect.gif) ------------
-----[mlm, mlc, mlu, mpe, mco]----     ![Payments Connect - Nuvem Shop](/images/nuvemshop/mx_tientanube_connect.gif) ------------
+----[mlb]----
+![Payments Connect - Nuvem Shop](/images/nuvemshop/nuvemshop_connect_1.gif)
+------------
+----[mla]----
+![Payments Connect - Nuvem Shop](/images/nuvemshop/ar_tientanube_connect.gif)
+------------
+----[mlm, mlc, mlu, mpe, mco]----
+![Payments Connect - Nuvem Shop](/images/nuvemshop/mx_tientanube_connect.gif)
+------------
 <p>&nbsp;</p>
 ¡Y listo! Mercado Pago ya se encuentra instalado en tu tienda.
 
@@ -79,7 +86,15 @@ Permite que el **cliente finalice la compra en tu tienda**, sin ser redirecciona
 2. En el ítem "Tipo de integración" cambia a la opción "Proceso de compra sin dejar la tienda".
 3. Finalmente, haz clic en "Guardar cambios".
 <p>&nbsp;</p>
-----[mlb]----    ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_transparente_2.gif) ------------ ----[mla]----    ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_transparente.gif) ------------ ----[mlm, mlc, mlu, mpe, mco]----    ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_transparente.gif) ------------
+----[mlb]----
+![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_transparente_2.gif)
+------------
+----[mla]----
+![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_transparente.gif)
+------------
+----[mlm, mlc, mlu, mpe, mco]----
+![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_transparente.gif)
+------------
 
 
 ### Checkout Pro
@@ -90,7 +105,15 @@ Permite que el **cliente finalice la compra en tu tienda**, sin ser redirecciona
 2. En el ítem "Tipo de integración" cambia a la opción "Proceso de compra en el sitio de Mercado Pago".
 3. Finalmente, haz clic en "Guardar cambios".
 <p>&nbsp;</p>
-----[mlb]----    ![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_3.gif) ------------ ----[mla]----    ![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_redirect.gif) ------------ ----[mlm, mlc, mlu, mpe, mco]----    ![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_redirect.gif) ------------
+----[mlb]----
+![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_3.gif)
+------------
+----[mla]----
+![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_redirect.gif)
+------------
+----[mlm, mlc, mlu, mpe, mco]----
+![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_redirect.gif)
+------------
 
 > NOTE
 >
@@ -108,17 +131,32 @@ También puedes sincronizar los últimos cambios manualmente de la siguiente man
 2. En la sección de cuotas, haz clic en "Reflejar ahora".
 3. Finalmente, haz clic en "Guardar cambios".
 <p>&nbsp;</p>
-----[mlb]----    ![Payments Installment - Nuvem Shop](/images/nuvemshop/nuvemshop_installments_4.gif) ------------ ----[mla]----    ![Payments Installment - Nuvem Shop](/images/nuvemshop/ar_tiendanube_installments.gif) ------------ ----[mlm, mlc, mlu, mpe, mco]----    ![Payments Installment - Nuvem Shop](/images/nuvemshop/mx_tiendanube_istallments.gif) ------------
+----[mlb]----
+![Payments Installment - Nuvem Shop](/images/nuvemshop/nuvemshop_installments_4.gif)
+------------
+----[mla]----
+![Payments Installment - Nuvem Shop](/images/nuvemshop/ar_tiendanube_installments.gif)
+------------
+----[mlm, mlc, mlu, mpe, mco]----
+![Payments Installment - Nuvem Shop](/images/nuvemshop/mx_tiendanube_istallments.gif)
+------------
 
 
 ## Configura las cuotas sin interés en tu cuenta de Mercado Pago
 
-1. Ingresa a tu ----[mlb]---- [cuenta de Mercado Pago](https://www.mercadopago.com.br/business#from-section=menu) ------------ ----[mla]---- [cuenta de Mercado Pago](https://www.mercadopago.com.ar/business#from-section=menu) ------------ ----[mlm]---- [cuenta de Mercado Pago](https://www.mercadopago.com.mx/business#from-section=menu) ------------ ----[mlc]---- [cuenta de Mercado Pago](https://www.mercadopago.cl/business#from-section=menu) ------------ ----[mlu]---- [cuenta de Mercado Pago](https://www.mercadopago.com.uy/business#from-section=menu) ------------ ----[mpe]---- [cuenta de Mercado Pago](https://www.mercadopago.com.pe/business#from-section=menu) y ve a "Tu negocio". ------------ ----[mco]---- [cuenta de Mercado Pago](https://www.mercadopago.co/business#from-section=menu) ------------ y ve a "Tu negocio".
+1. Ingresa a tu [cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/business#from-section=menu) y ve a "Tu negocio".
 2. Accede en la opción "Configuraciones", navega hasta "Ofrecer cuotas sin interés" y haz clic en "Activar".
 3. Elige "¿Cuántas quieres ofrecer?" y confirma los cambios con el botón "Activar".
 <p>&nbsp;</p>
-----[mlb]----    ![Payments Installments - Nuvem Shop](/images/nuvemshop/nuvemshop_account_installments_5.gif) ------------ ----[mla]----    ![Payments Installments - Nuvem Shop](/images/nuvemshop/ar_tiendanube_account_installments_cropped.gif) ------------ ----[mlm, mlc, mlu, mpe, mco]----
-    ![Payments Installments - Nuvem Shop](/images/nuvemshop/mx_tiendanube-account_installments_cropped.gif) ------------
+----[mlb]----
+![Payments Installments - Nuvem Shop](/images/nuvemshop/nuvemshop_account_installments_5.gif)
+------------
+----[mla]----
+![Payments Installments - Nuvem Shop](/images/nuvemshop/ar_tiendanube_account_installments_cropped.gif)
+------------
+----[mlm, mlc, mlu, mpe, mco]----
+![Payments Installments - Nuvem Shop](/images/nuvemshop/mx_tiendanube-account_installments_cropped.gif)
+------------
 <p>&nbsp;</p>
 ----[mlb]----
 ¡Y listo! Ya estás ofreciendo cuotas sin interés, con el costo de financiación que hayas configurado.
