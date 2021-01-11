@@ -9,7 +9,8 @@ The Advanced Payments API allows you to make payments with Customers and Saved C
 >
 > Note
 >
-> View reference of [Customers & Cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en//guides/online-payments/checkout-api/advanced-integration/) for more details.
+> View reference of [Customers & Cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/advanced-integration/) for more details.
+
 
 To create a payment using `Customers`, the user ID and the type must be set with the `customer` value.
 
