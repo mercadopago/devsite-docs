@@ -175,7 +175,7 @@ print(json.dumps(card_token, indent=4))
 }
 ```
 
-Una vez hayas obtenido el _Card Token_ de la tarjeta, puedes [crear el pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card#recibir-un-pago-con-tarjeta).
+Una vez hayas obtenido el _Card Token_ de la tarjeta, puedes [crear el pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card#bookmark_envía_el_pago_a_mercado_pago).
 
 ## Mejora la aprobación enviando el device fingerprint
 
