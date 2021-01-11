@@ -168,8 +168,8 @@ Você também pode definir um meio de pagamento para que apareça por padrão ou
 | Atributo | Descrição |
 | --- | --- |
 | `payment_methods` | Classe que descreve os atributos e métodos de meios de pagamento. |
-| `excluded_payment_methods` | Método que exclui por <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods/#bookmark_meios_de_pagamento_por_país" target="_blank">meios de pagamento</a> específicos: Visa, Mastercard o American Express, entre outros. |
-| `excluded_payment_types` | Método que exclui por tipo de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods/#bookmark_meios_de_pagamento_por_país" target="_blank">meio de pagamento</a>: cartão de crédito ou ticket (boleto ou pagamento em lotérica). |
+| `excluded_payment_methods` | Método que exclui por [meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods#bookmark_meios_de_pagamento_por_país) específicos: Visa, Mastercard o American Express, entre outros. |
+| `excluded_payment_types` | Método que exclui por tipo de [meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods#bookmark_meios_de_pagamento_por_país): cartão de crédito ou ticket (boleto ou pagamento em lotérica). |
 | `installments` | Método que define o número máximo de parcelas a oferecer. |
 | `purpose` | Quando for indicado o valor "wallet_purchase", o Checkout aceitará pagamentos exclusivamente de usuários cadastrados no Mercado Pago, com cartão e saldo em conta. |
 
@@ -898,7 +898,7 @@ curl -X POST \
 
 ![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas_br.png)
 
-Você pode ativar a opção de oferecer pagamento com dois cartões de crédito da conta do Mercado Pago. Para ativar a opção de pagamento, acesse as <a href="https://www.mercadopago.com.ar/settings/my-business" target="_blank">opcões de negócio</a> e selecione a opção _Receber pagamentos com 2 cartões de crédito_.
+Você pode ativar a opção de oferecer pagamento com dois cartões de crédito da conta do Mercado Pago. Para ativar a opção de pagamento, acesse as [opcões de negócio](https://www.mercadopago.com.ar/settings/my-business) e selecione a opção _Receber pagamentos com 2 cartões de crédito_.
 
 
 ![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas_br.gif)

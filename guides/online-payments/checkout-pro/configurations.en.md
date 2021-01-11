@@ -170,8 +170,8 @@ You can also set a payment method to appear by default or define the maximum num
 | Attribute | Description |
 | --- | --- |
 | `payment_methods` | Class that describes the attributes and methods of payment methods. |
-| `excluded_payment_methods` | Method that excludes by specific <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_payment_methods_by_country" target="_blank">payment methods</a>: Visa, Mastercard or American Express, among others. |
-| `excluded_payment_types` | Method that excludes by type of <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_payment_methods_by_country" target="_blank">payment method</a>: cash, credit or debit cards. |
+| `excluded_payment_methods` | Method that excludes by specific [payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods#bookmark_payment_methods_by_country): Visa, Mastercard or American Express, among others. |
+| `excluded_payment_types` | Method that excludes by type of [payment method](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods#bookmark_payment_methods_by_country): cash, credit or debit cards. |
 | `installments` | Method that defines the amount of maximum number of installments to offer. |
 | `purpose` | When the "wallet purchase" value is indicated, Checkout will accept payments exclusively from Mercado Pago registered users, with card and account balance. |
 
@@ -874,7 +874,7 @@ curl -X POST \
 ![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas.png)
 
 You can enable the option to offer to pay with two credit cards from the Mercado Pago account.
-To activate the payment option, go to your <a href="https://www.mercadopago.com.ar/settings/my-business" target="_blank">business options</a> and choose the option _Receive payments with 2 credit cards_.
+To activate the payment option, go to your [business options](https://www.mercadopago.com.ar/settings/my-business) and choose the option _Receive payments with 2 credit cards_.
 
 ![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
 

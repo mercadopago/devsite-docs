@@ -5,7 +5,7 @@
  As notificações IPN (Instant Payment Notification) são a **forma automática de aviso da criação de novos pagamentos e as atualizações de seus status.** Por exemplo se foram aprovados, recusados ou se estão pendentes.
 Permitem que você administre seu estoque e mantenha seu sistema sincronizado.
 
-<a href="https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn/" target="_blank">Receber notificações IPN</a>
+[Receber notificações IPN](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn/)
 
 ## Informações adicionais para a preferência
 
@@ -317,21 +317,21 @@ Preference preference = new Preference();
 
 Um pagamento pode ser recusado porque o emissor do meio de pagamento detecta um problema ou porque não preenche os requisitos de segurança necessários.
 
-Evite pagamentos recusados com nossas recomendações e <a href="https://www.mercadopago.com.ar/developers/pt/guides/manage-account/account/payment-rejections" target="_blank">melhore a aprovação de seus pagamentos</a>.
+Evite pagamentos recusados com nossas recomendações e [melhore a aprovação de seus pagamentos](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/account/payment-rejections).
 
 ## Cancelamentos e estornos
 
 Os cancelamentos são feitos quando o pagamento não foi concluído antes da data de vencimento e o vendedor decide cancelá-lo.
 As devoluções acontecem quando o pagamento foi feito, mas o vendedor decide estorná-lo, total ou parcialmente.
 
-Você pode encontrar todas as informações na <a href="https://www.mercadopago.com.br/developers/pt/guides/manage-account/account/cancellations-and-refunds" target="_blank"> seção de Devoluções e cancelamentos</a>.
+Você pode encontrar todas as informações na [ seção de Devoluções e cancelamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
 ## Gerencie contestações
 
 Uma contestação ou chargeback acontece quando o comprador entra em contato com a entidade emissora do cartão e desconhece o pagamento.
 Isso significa que o dinheiro do vendedor, por esse pagamento, será retido da sua conta do Mercado Pago até que seja solucionada.
 
-<a href="https://www.mercadopago.com.br/developers/pt/guides/manage-account/account/chargebacks/" target="_blank"> Gerenciar contestações</a>
+[ Gerenciar contestações](https://www.mercadopago.com.br/developers/pt/guides/manage-account/account/chargebacks/)
 
 ---
 
