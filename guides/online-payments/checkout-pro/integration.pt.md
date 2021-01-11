@@ -1,5 +1,8 @@
 # Integre o Checkout Pro
 
+A integração por Checkout Pro do Mercado Pago te permite cobrar através do nosso formulário web de qualquer dispositivo de forma simples, rápida e segura.
+Use os [exemplos para download](#bookmark_exemplos_para_download) para conhecer a integração completa ou para adaptá-los de acordo com o que precisa.
+
 ## Como me integro?
 
 ![Integration](/images/web-payment-checkout/flow-v2.png)
@@ -422,6 +425,14 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 
 #### Excelente! Você concluiu sua integração.
 _Clique no link dentro do seu site e [teste a integração do seu Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/test-integration/)_.<br/><br/>
+
+## Exemplos para download
+
+> GIT
+>
+> Checkout Pro
+>
+> Disponibilizamos <a href="http://github.com/mercadopago/checkout-payment-sample" target="_blank">exemplos completos de integração</a> no GitHub para PHP ou NodeJS para que você possa fazer o download imediatamente.
 
 ---
 
