@@ -13,7 +13,7 @@ Integrate Mercado Envíos to receive payment for your products and manage their 
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Activate Mercado Envíos
 
-From the seller's account, go to the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/business#shipping" target="_blank">Your Business > Settings</a> section and activate the Mercado Envíos option.
+From the seller's account, go to the [Settings](https://www.mercadopago[FAKER][URL][DOMAIN]/business#shipping) section and activate the Mercado Envíos option.
 
 We will use the address you upload to show the delivery points close to where the seller will be able to take the packages, and calculate the shipping costs.
 
@@ -142,7 +142,7 @@ By default, you'll have shipping configured at the buyer's expense. If you want,
 
 ----[mla]----
 The shipping cost will be debited from the seller’s account when the payment is received. 
-You can offer different shipping methods by changing the ID. Check the available <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][GLOBALIZE][UPPER_SITE_ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">id shipping methods</a> to know which ones to add.
+You can offer different shipping methods by changing the ID. Check the available [id shipping methods](https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][GLOBALIZE][UPPER_SITE_ID]&shipping_mode=me2&allow_free_shipping=true) to know which ones to add.
 
 For example, in the following code is added the `ID 73328` which refers to a normal home delivery of OCA and the `ID 504945` for normal home delivery of Adreani. 
 
@@ -221,7 +221,7 @@ preference.Shipments = shipments;
 ----[mlm]----
 
 The shipping cost will be debited from the seller’s account when the payment is received. 
-You can offer different shipping methods by changing the ID. Check the available <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][GLOBALIZE][UPPER_SITE_ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">id shipping methods</a> to know which ones to add.
+You can offer different shipping methods by changing the ID. Check the available [id shipping methods](https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][GLOBALIZE][UPPER_SITE_ID]&shipping_mode=me2&allow_free_shipping=true) to know which ones to add.
 
 For example, in the following code is added the `ID 509247` which refers to a standard delivery to home and the `ID 509245` for priority delivery to a post office.
 
@@ -300,7 +300,7 @@ preference.Shipments = shipments;
 ----[mlb]----
 
 The shipping cost will be debited from the seller’s account when the payment is received. 
-You can offer different shipping methods by changing the ID. Check the available <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][GLOBALIZE][UPPER_SITE_ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">id shipping methods</a> to know which ones to add.
+You can offer different shipping methods by changing the ID. Check the available [id shipping methods](https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][GLOBALIZE][UPPER_SITE_ID]&shipping_mode=me2&allow_free_shipping=true) to know which ones to add.
 
 For example, in the following code, the `ID 505345` is added, referring to a normal Mercado Envíos shipping address and the `ID 100009` for normal Post Office shipping.
 
@@ -452,13 +452,13 @@ preference.Shipments = shipments;
 
 **Done! Mercado Envíos is already integrated.** 
 
-Once you receive an order, you only need to ----[mla, mlm]---- <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_1603" target="_blank">prepare and ship the package</a>. ------------ ----[mlb]---- <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/_1603" target="_blank"> prepare and ship the package</a>. ------------
+Once you receive an order, you only need to ----[mla, mlm]---- [prepare and ship the package](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_1603). ------------
 
 > NOTE
 >
 > Label Management
 >
-> When an order is made, you will receive an e-mail with a button to print the label you must attach to the package. You will also be able to view the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/activities?type=facet_type_collection&status=facet_shipping_me_all" target="_blank">payments to be printed</a> from the Mercado Pago account that received the order.
+> When an order is made, you will receive an e-mail with a button to print the label you must attach to the package. You will also be able to view the [payments to be printed](https://www.mercadopago[FAKER][URL][DOMAIN]/activities?type=facet_type_collection&status=facet_shipping_me_all) from the Mercado Pago account that received the order.
 
 
 ## Example of a complete preference

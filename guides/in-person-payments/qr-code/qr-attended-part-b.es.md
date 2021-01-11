@@ -85,7 +85,7 @@ Las notificaciones IPN (Instant Payment Notification) son la **forma automática
 
 Implementa IPN de `merchant_order` junto con una búsqueda de la orden por `external_reference` como método de contigencia.
 
-<a href="https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn/" target="_blank">Recibir notificaciones IPN</a>
+[Recibir notificaciones IPN](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn)
 
 ---
 ### Próximos pasos

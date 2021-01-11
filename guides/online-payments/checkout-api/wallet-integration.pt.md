@@ -13,10 +13,10 @@ Isto significa que seus clientes têm mais formas de te pagar e podem ter acesso
   Eles também têm seus endereços salvos, o que simplifica todo o processo de preenchimento.
   * **Com saldo disponível no Mercado Pago**, o dinheiro está pronto para ser usado na hora, em 1 clique.
 ----[mla]----
-* Seus clientes podem pagar em até 12 vezes no boleto, com parcelamento financiado pelo <a href="https://www.mercadolibre.com.ar/mercado-credito/meses-sin-tarjeta/" target="_blank"> Mercado Crédito</a>.
+* Seus clientes podem pagar em até 12 vezes no boleto, com parcelamento financiado pelo [Mercado Crédito](https://www.mercadolibre.com.ar/mercado-credito/meses-sin-tarjeta/).
 ------------
 ----[mlb]----
-* Seus clientes podem pagar em até 12 vezes no boleto, com parcelamento financiado pelo <a href="https://www.mercadolibre.com.br/mercado-credito/meses-sin-tarjeta/" target="_blank"> Mercado Crédito</a>.
+* Seus clientes podem pagar em até 12 vezes no boleto, com parcelamento financiado pelo [Mercado Crédito](https://www.mercadolibre.com.br/mercado-credito/meses-sin-tarjeta/).
 ------------
 * A conversão do seu Checkout melhora ao oferecer meios de pagamento mais dinâmicos e fáceis de usar.
 * Melhora a aprovação dos seus pagamentos com menos risco de fraude.

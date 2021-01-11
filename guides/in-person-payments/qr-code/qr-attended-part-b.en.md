@@ -86,7 +86,7 @@ Answer will be `HTTP 204 No Content`.
 
 Implement IPN `merchant_order` with an order search by `external_reference` as a contingency method.
 
-<a href="https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn/" target="_blank"> Receive IPN notifications </a>
+[Receive IPN notifications](https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn)
 
 ---
 ### Next steps

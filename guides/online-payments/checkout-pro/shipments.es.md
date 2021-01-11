@@ -14,7 +14,7 @@ Integra Mercado Envíos para recibir el pago de tus productos y gestionar su env
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Activa Mercado Envíos
 
-Desde la cuenta del vendedor, ingresa a la sección de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/business#shipping" target="_blank">Tu negocio > Configuración</a> y activa la opción de Mercado Envíos.
+Desde la cuenta del vendedor, ingresa a la sección de [Configuración](https://www.mercadopago[FAKER][URL][DOMAIN]/business#shipping) y activa la opción de Mercado Envíos.
 
 Usaremos el domicilio que cargues para mostrar los puntos de despacho cercanos a los que el vendedor podrá llevar los paquetes, y calcular los costos de envío.
 
@@ -146,7 +146,7 @@ Por defecto, tendrás configurado el envío a cargo del comprador. Si quieres, p
 ----[mla]----
 El costo del envío será debitado de la cuenta del vendedor cuando reciba un pago. 
 
-Puedes ofrecer distintos métodos de envíos modificando el ID. Consulta los <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][GLOBALIZE][UPPER_SITE_ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">id de medios de envío</a> envíos disponibles para saber cuáles agregar. 
+Puedes ofrecer distintos métodos de envíos modificando el ID. Consulta los [id de medios de envío](https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][GLOBALIZE][UPPER_SITE_ID]&shipping_mode=me2&allow_free_shipping=true) envíos disponibles para saber cuáles agregar. 
 
 Por ejemplo, en el siguiente código se encuentra sumado el `ID 73328` que refiere a un envío normal a domicilio de OCA y el `ID 504945` para envío normal a domicilio de Adreani. 
 
@@ -226,7 +226,7 @@ preference.Shipments = shipments;
 
 El costo del envío será debitado de la cuenta del vendedor cuando reciba un pago. 
 
-Puedes ofrecer distintos métodos de envío modificando el ID. Consulta los <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][GLOBALIZE][UPPER_SITE_ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">id de medios de envío</a> disponibles para saber cuáles agregar. 
+Puedes ofrecer distintos métodos de envío modificando el ID. Consulta los [id de medios de envío](https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][GLOBALIZE][UPPER_SITE_ID]&shipping_mode=me2&allow_free_shipping=true) disponibles para saber cuáles agregar. 
 
 Por ejemplo, en el siguiente código se encuentra sumado el `ID 509247` que refiere a un envío estándar a domicilio y el `ID 509245` para envío prioritario a sucursal de correo. 
 
@@ -306,7 +306,7 @@ preference.Shipments = shipments;
 
 El costo del envío será debitado de la cuenta del vendedor cuando reciba un pago. 
 
-Puedes ofrecer distintos métodos de envío modificando el ID. Consulta los <a href="https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][GLOBALIZE][UPPER_SITE_ID]&shipping_mode=me2&allow_free_shipping=true" target="_blank">id de medios de envío</a> disponibles para saber cuáles agregar. 
+Puedes ofrecer distintos métodos de envío modificando el ID. Consulta los [id de medios de envío](https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][GLOBALIZE][UPPER_SITE_ID]&shipping_mode=me2&allow_free_shipping=true) disponibles para saber cuáles agregar. 
 
 Por ejemplo, en el siguiente código se encuentra sumado el `ID 505345` que refiere a un envío estándar a domicilio y el `ID 100009` para envío prioritario a sucursal de correo. 
 
@@ -458,13 +458,13 @@ preference.Shipments = shipments;
 
 **¡Y listo! Mercado Envíos ya se encuentra integrado.** 
 
-Una vez que se reciba una venta, solo hay que ----[mla, mlm]---- <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_1603" target="_blank">preparar el paquete y enviarlo</a>. ------------ ----[mlb]---- <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/_1603" target="_blank">preparar el paquete y enviarlo</a>. ------------
+Una vez que se reciba una venta, solo hay que ----[mla, mlm]---- [preparar el paquete y enviarlo](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_1603). ------------
 
 > NOTE
 >
 > Gestión de etiquetas
 >
-> Cuando se efectúe una venta, te va a llegar un e-mail con un botón para imprimir la etiqueta que tendrás que pegar en el paquete. También podrás ver los <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/activities?type=facet_type_collection&status=facet_shipping_me_all" target="_blank">pagos pendientes de impresión</a> desde la cuenta de Mercado Pago que recibió la venta.
+> Cuando se efectúe una venta, te va a llegar un e-mail con un botón para imprimir la etiqueta que tendrás que pegar en el paquete. También podrás ver los [pagos pendientes de impresión](https://www.mercadopago[FAKER][URL][DOMAIN]/activities?type=facet_type_collection&status=facet_shipping_me_all) desde la cuenta de Mercado Pago que recibió la venta.
 
 
 ## Ejemplo de una preferencia completa

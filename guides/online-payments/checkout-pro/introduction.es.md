@@ -12,25 +12,25 @@ Checkout Pro es la integración que **te permite cobrar a través de nuestro for
 ## Checkout Pro ofrece:
 
 ----[mla]----
-* Pagar con los principales <a href="https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank"> medios de pago</a> del país.
+* Pagar con los principales [medios de pago](https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264) del país.
 ------------
 ----[mlm]----
-* Pagar con los principales <a href="https://www.mercadopago.com.mx/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank"> medios de pago</a> del país.
+* Pagar con los principales [medios de pago](https://www.mercadopago.com.mx/ayuda/medios-de-pago-cuotas-promociones_264) del país.
 ------------
 ----[mlu]----
-* Pagar con los principales <a href="https://www.mercadopago.com.uy/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank"> medios de pago</a> del país.
+* Pagar con los principales [medios de pago](https://www.mercadopago.com.uy/ayuda/medios-de-pago-cuotas-promociones_264) del país.
 ------------
 ----[mlc]----
-* Pagar con los principales <a href="https://www.mercadopago.cl/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank"> medios de pago</a> del país.
+* Pagar con los principales [medios de pago](https://www.mercadopago.cl/ayuda/medios-de-pago-cuotas-promociones_264) del país.
 ------------
 ----[mco]----
-* Pagar con los principales <a href="https://www.mercadopago.com.co/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank"> medios de pago</a> del país.
+* Pagar con los principales [medios de pago](https://www.mercadopago.com.co/ayuda/medios-de-pago-cuotas-promociones_264) del país.
 ------------
 ----[mlb]----
-* Pagar con los principales <a href="https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265" target="_blank"> medios de pago</a> del país.
+* Pagar con los principales [medios de pago](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265) del país.
 ------------
 ----[mpe]----
-* Pagar con los principales <a href="https://www.mercadopago.com.pe/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank"> medios de pago</a> del país.
+* Pagar con los principales [medios de pago](https://www.mercadopago.com.pe/ayuda/medios-de-pago-cuotas-promociones_264) del país.
 ------------
 * Una **experiencia de compra adaptada** y accesible desde cualquier celular o computadora.
 * **Compras en un click.** Al pagar con una cuenta de Mercado Pago, se recuerdan los datos y tarjetas de los compradores, por lo que permite pagos ingresando solo el código de seguridad o dinero en cuenta.

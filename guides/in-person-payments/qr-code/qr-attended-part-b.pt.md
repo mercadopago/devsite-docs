@@ -82,7 +82,7 @@ As [notificações IPN](https://www.mercadopago.com.br/developers/pt/guides/noti
 
 Implementa IPN de `merchant_order` junto com uma busca do pedido por `external_reference` como método de contingência.
 
-<a href="https://www.mercadopago.com.ar/developers/pt/guides/notifications/ipn/" target="_blank"> Receber notificações IPN </a>
+[Receber notificações IPN](https://www.mercadopago.com.ar/developers/pt/guides/notifications/ipn)
 
 ---
 ### Próximos passos

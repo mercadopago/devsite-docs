@@ -44,7 +44,7 @@ Install an [official SDK](https://www.mercadopago[FAKER][URL][DOMAIN]/developers
 [[[
 ```php
 ===
-<a href="https://getcomposer.org/download" target="_blank"> Install Composer</a> to use the SDK.
+[Install Composer](https://getcomposer.org/download) to use the SDK.
 
 Then run the following code on the command line:
 ===
@@ -52,13 +52,13 @@ php composer.phar require "mercadopago/dx-php:dev-master"
 ```
 ```node
 ===
-To install the SDK you must execute the following code on the command line of your terminal using <a href="https://www.npmjs.com/get-npm" target="_blank">npm</a>:
+To install the SDK you must execute the following code on the command line of your terminal using [npm](https://www.npmjs.com/get-npm):
 ===
 npm install mercadopago
 ```
 ```java
 ===
-To install the SDK in your <a href="http://maven.apache.org/install.html" target="_blank"> Maven </a> project, add the following dependency in your pom.xml file and then run ´maven install´.
+To install the SDK in your [Maven](http://maven.apache.org/install.html) project, add the following dependency in your pom.xml file and then run ´maven install´.
 ===
 <dependency>
             <groupId> com.mercadopago </groupId>
@@ -68,17 +68,17 @@ To install the SDK in your <a href="http://maven.apache.org/install.html" target
 ```
 ```ruby
 ===
-The Mercado Pago SDK is available as a <a href="https://rubygems.org/gems/mercadopago-sdk" target="_blank"> gema</a>, to install it you must execute the following code on the command line:
+The Mercado Pago SDK is available as a [gema](https://rubygems.org/gems/mercadopago-sdk), to install it you must execute the following code on the command line:
 ===
 gem install mercadopago-sdk
 ```
 ```csharp
 ===
 ----[mlb]----
-Use <a href="https://docs.microsoft.com/pt-pt/nuget/install-nuget-client-tools" target="_blank"> NuGet</a> to install the Mercado Pago SDK .NET.
+Use [NuGet](https://docs.microsoft.com/pt-pt/nuget/install-nuget-client-tools) to install the Mercado Pago SDK .NET.
 ------------
 ----[mla, mco, mlu, mlc, mlm]----
-Use <a href="https://docs.microsoft.com/es-es/nuget/install-nuget-client-tools" target="_blank"> NuGet</a> to install the Mercado Pago SDK .NET.
+Use [NuGet](https://docs.microsoft.com/es-es/nuget/install-nuget-client-tools) to install the Mercado Pago SDK .NET.
 ------------
 To do this, run the following command in the NuGet Package Manager console:
 ===

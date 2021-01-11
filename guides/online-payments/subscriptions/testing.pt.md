@@ -53,7 +53,7 @@ Execute o curl a seguir para gerar um usuário de teste:
 
 #### 1. Configure a assinatura com os dados do seu usuário vendedo
 
-Use a <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/account/credentials" target="_blank">chave pública de teste</a> do seu usuário vendedor na hora de criar a assinatura que quiser testar.<br>
+Use a [chave pública de teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials) do seu usuário vendedor na hora de criar a assinatura que quiser testar.<br>
 
 #### 2. Faça um pagamento com seu usuário comprador
 
