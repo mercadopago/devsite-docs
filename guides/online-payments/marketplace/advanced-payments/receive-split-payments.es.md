@@ -10,7 +10,7 @@
 >
 > Pre-requisitos
 >
-> Esta guía asume que ya has creado y configurado correctamente tu [Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/marketplace/checkout-api/introduction/) y sabes cómo [generar un token de tarjeta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card). De no ser el caso, contactate con tu ejecutivo de cuenta para configurar correctamente tu Marketplace.
+> Esta guía asume que ya has creado y configurado correctamente tu [Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/marketplace/checkout-api/introduction/) y sabes cómo [generar un token de tarjeta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card). De no ser el caso, contactate con tu ejecutivo de cuenta para configurar correctamente tu Marketplace.
 >
 > Tus vendedores deben contar con una cuenta de Mercado Pago y tienen que [configurar los permisos necesarios para recibir los cobros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/marketplace/advanced-payments/sellers-permissions).
 
