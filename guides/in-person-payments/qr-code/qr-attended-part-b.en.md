@@ -17,7 +17,7 @@ To charge with a QR attended model, you’ll have to create and order and then a
 
 We explain how the attended model works:
 
->![Payment flow at QR Mercado Pago point of sale](/images/qr-user-flow.en.png)
+![Payment flow at QR Mercado Pago point of sale](/images/mobile/qr-user-flow.en.png)
 
 <span></span>
 
@@ -86,7 +86,7 @@ Answer will be `HTTP 204 No Content`.
 
 Implement IPN `merchant_order` with an order search by `external_reference` as a contingency method.
 
-<a href="https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn/" target="_blank"> Receive IPN notifications </a>
+[Receive IPN notifications](https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn)
 
 ---
 ### Next steps

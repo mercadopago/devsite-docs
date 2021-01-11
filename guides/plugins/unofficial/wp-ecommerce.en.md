@@ -206,7 +206,7 @@ If you have any questions, problems or errors we have a support channel. Write u
 
 > HINT: You can get the module version in the plugin list of your WordPress administration page:
 >
-> ![Ips from Mercado Pago](/images/wp-ecommerce-plugin_adm.png)
+![Ips from Mercado Pago](/images/wp-ecommerce-plugin_adm.png)
 
 
 # How to Contribute

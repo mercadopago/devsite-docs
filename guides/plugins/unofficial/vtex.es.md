@@ -100,6 +100,7 @@ Para poder utilizar este tipo de checkout se tienen que configurar los medios de
 
 
 <br>
+
 #### Condición de pagos para tarjeta de crédito
 
 Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
@@ -123,6 +124,7 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 
 
 <br>
+
 #### Condición de pagos para tarjeta de débito
 
 Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
@@ -137,6 +139,7 @@ Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
 
 
 <br>
+
 #### Condición de pagos para medios de pago en efectivo
 
 Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos:
@@ -296,6 +299,7 @@ Para poder utilizar este tipo de checkout se tienen que configurar los medios de
 
 
 <br>
+
 #### Condición de pagos para tarjeta de crédito
 
 Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
@@ -319,6 +323,7 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 
 
 <br>
+
 #### Condición de pagos para tarjeta de débito
 
 Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
@@ -333,6 +338,7 @@ Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
 
 
 <br>
+
 #### Condición de pagos para medios de pago en efectivo
 
 Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos:
@@ -455,6 +461,7 @@ Para poder utilizar este tipo de checkout se tienen que configurar los medios de
 
 
 <br>
+
 #### Condición de pagos para tarjeta de crédito
 
 Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
@@ -478,6 +485,7 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 
 
 <br>
+
 #### Condición de pagos para medios de pago por transferencia bancaria
 
 Para crear una condición de pago con WebPay, sigue estos pasos: 
@@ -494,6 +502,7 @@ Para crear una condición de pago con WebPay, sigue estos pasos:
 
 
 <br>
+
 #### Condición de pagos para medios de pago en efectivo
 
 Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos: 
@@ -640,6 +649,7 @@ Para poder utilizar este tipo de checkout se tienen que configurar los medios de
 
 
 <br>
+
 #### Condición de pagos para tarjeta de crédito
 
 Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
@@ -664,6 +674,7 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 
 
 <br>
+
 #### Condición de pagos para tarjeta de débito
 
 Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
@@ -679,6 +690,7 @@ Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
 
 
 <br>
+
 #### Condición de pagos para medios de pago por transferencia bancaria
 
 Para crear una condición de pago con PSE, sigue estos pasos: 
@@ -695,6 +707,7 @@ Para crear una condición de pago con PSE, sigue estos pasos:
 
 
 <br>
+
 #### Condición de pagos para medios de pago en efectivo
 
 Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos: 
@@ -852,6 +865,7 @@ Para poder utilizar este tipo de checkout se tienen que configurar los medios de
 
 
 <br>
+
 #### Condición de pagos para tarjeta de crédito
 
 Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
@@ -876,6 +890,7 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 
 
 <br>
+
 #### Condición de pagos para tarjeta de débito
 
 Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
@@ -890,6 +905,7 @@ Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
 
 
 <br>
+
 #### Condición de pagos para medios de pago en efectivo
 
 Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos: 
@@ -1014,6 +1030,7 @@ Para poder utilizar este tipo de checkout se tienen que configurar los medios de
 
 
 <br>
+
 #### Condición de pagos para tarjeta de crédito
 
 Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
@@ -1037,6 +1054,7 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 
 
 <br>
+
 #### Condición de pagos para medios de pago en efectivo
 
 Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos: 

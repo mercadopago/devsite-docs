@@ -19,7 +19,7 @@ There are two ways to integrate subscriptions:
 > 
 > Key concepts
 > 
-> Do you have questions about what a plan or other concept is? Keep the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/introduction" target="_blank">key concepts</a> handy to review them when needed.
+> Do you have questions about what a plan or other concept is? Keep the [key concepts](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/introduction) handy to review them when needed.
 
 
 ## Subscriptions with an associated plan
@@ -125,7 +125,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval \
 > 
 > Important
 > 
-> ¿Do you have questions about how to create the payment token? Find all the information in the section of <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card#bookmark_card_data_capture" target="_blank">Capture data from the card</a>.
+> ¿Do you have questions about how to create the payment token? Find all the information in the section of [Capture data from the card](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card#bookmark_card_data_capture).
 
 #### Response 
 `HTTP Status 200 OK`
@@ -154,7 +154,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval \
         "end_date": "2021-07-02T11:59:52.581-04:00"
 }
 ```
->You can get more information about the fields in the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/" target="_blank">API Reference</a>.
+>You can get more information about the fields in the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
 
 Done! You have already created a subscription with an associated plan.
 
@@ -276,7 +276,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 }
 ```
 
-> You can get more information about the fields in the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/" target="_blank">API reference</a>.
+> You can get more information about the fields in the [API reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
 
 
 Attributes
