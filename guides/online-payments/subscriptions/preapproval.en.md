@@ -37,7 +37,7 @@
  
  ## Create a customer and associate the used card
  
- Once the first payment has been made, and having been assured that the card is valid, create a Customer that will be associated with your account and associate a card with it. You can do this following the step by step indicating in our integration of [Users and Cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/customers-and-cards)
+ Once the first payment has been made, and having been assured that the card is valid, create a Customer that will be associated with your account and associate a card with it. You can do this following the step by step indicating in our integration of [Users and Cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/advanced-integration)
 
 ## Recurring your customers
 
