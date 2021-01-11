@@ -27,7 +27,7 @@ The module of Mercado Pago to Magento is integrated with the features and paymen
 
 * Custom Checkout
     * [Payment with Credit Card](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card/)
-    * [One Click Pay (Customers and Cards)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en//guides/online-payments/checkout-api/advanced-integration/)
+    * [One Click Pay (Customers and Cards)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/advanced-integration/)
     * [Paid with other payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways/)
     * [Refunds of Payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds)
 
