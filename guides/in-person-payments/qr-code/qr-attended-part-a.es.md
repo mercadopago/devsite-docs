@@ -69,6 +69,6 @@ Te explicamos cómo funciona el modelo atendido:
 >
 > Conoce paso a paso como integrar este modelo.
 >
-> [Cómo integrar QR modelo atendido](https://www.mercadopago.com.ar/developers/es/guides/qr-code/qr-attended-part-b/)
+> [Cómo integrar QR modelo atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/qr-attended-part-b/)
 
 

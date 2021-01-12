@@ -52,7 +52,7 @@ You need to be clear about which promotions are offered by Mercado Pago. You can
 >
 > Note
 >
-> Per Resolution [E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) from the Argentine Secretary of Trade, on transparent prices, you are required to comply with [additional requirements](https://www.mercadopago.com.ar/developers/en/guides/resources/localization/considerations-argentina/).
+> Per Resolution [E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) from the Argentine Secretary of Trade, on transparent prices, you are required to comply with [additional requirements](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/considerations-argentina/).
 ------------
 
 ## Make your terms and conditions available

@@ -44,4 +44,4 @@ curl -X POST \
 > 
 > Note
 > 
-> See [reference](https://www.mercadopago.com.ar/developers/es/guides/payments/advanced-payments/wallet-device-fingerprint-sample) for whole example about Fingerprint and implementation via SDK. 
+> See [reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/advanced-payments/wallet-device-fingerprint-sample) for whole example about Fingerprint and implementation via SDK. 

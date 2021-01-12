@@ -2454,7 +2454,7 @@ Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com 
 >
 > Tenha em conta que Webpay cancelará automaticamente o pagamento caso não se realize em 30 minutos.
 
-Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago.cl/developers/pt/guides/manage-account/account/cancellations-and-refunds/).
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds/).
 
 ## Tempos de creditação do pagamento
 

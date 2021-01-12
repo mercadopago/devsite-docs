@@ -5,7 +5,7 @@
  As notificações IPN (Instant Payment Notification) são a **forma automática de aviso da criação de novos pagamentos e as atualizações de seus status.** Por exemplo se foram aprovados, recusados ou se estão pendentes.
 Permitem que você administre seu estoque e mantenha seu sistema sincronizado.
 
-[Receber notificações IPN](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn/)
+[Receber notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/)
 
 ## Informações adicionais para a preferência
 
@@ -317,21 +317,21 @@ Preference preference = new Preference();
 
 Um pagamento pode ser recusado porque o emissor do meio de pagamento detecta um problema ou porque não preenche os requisitos de segurança necessários.
 
-Evite pagamentos recusados com nossas recomendações e [melhore a aprovação de seus pagamentos](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/account/payment-rejections).
+Evite pagamentos recusados com nossas recomendações e [melhore a aprovação de seus pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/payment-rejections).
 
 ## Cancelamentos e estornos
 
 Os cancelamentos são feitos quando o pagamento não foi concluído antes da data de vencimento e o vendedor decide cancelá-lo.
 As devoluções acontecem quando o pagamento foi feito, mas o vendedor decide estorná-lo, total ou parcialmente.
 
-Você pode encontrar todas as informações na [ seção de Devoluções e cancelamentos](https://www.mercadopago.com.br/developers/pt/guides/manage-account/account/cancellations-and-refunds).
+Você pode encontrar todas as informações na [ seção de Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
 ## Gerencie contestações
 
 Uma contestação ou chargeback acontece quando o comprador entra em contato com a entidade emissora do cartão e desconhece o pagamento.
 Isso significa que o dinheiro do vendedor, por esse pagamento, será retido da sua conta do Mercado Pago até que seja solucionada.
 
-[ Gerenciar contestações](https://www.mercadopago.com.br/developers/pt/guides/manage-account/account/chargebacks/)
+[ Gerenciar contestações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/chargebacks/)
 
 ---
 
@@ -344,7 +344,7 @@ Isso significa que o dinheiro do vendedor, por esse pagamento, será retido da s
 >
 > Configure seus pagamentos e adapte o Checkout Pro ao seu negócio.
 >
-> [Outras funcionalidades](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/configurations/)
+> [Outras funcionalidades](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/)
 
 > RIGHT_BUTTON
 >
@@ -352,4 +352,4 @@ Isso significa que o dinheiro do vendedor, por esse pagamento, será retido da s
 >
 > Adapte o estilo da sua marca na experiência de compra.
 >
-> [Customizações](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/customizations/)
+> [Customizações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/customizations/)

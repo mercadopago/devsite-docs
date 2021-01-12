@@ -2448,7 +2448,7 @@ Take into account that **you can only cancel payments in process or pending stat
 >
 > Remember that if payments are not made within 30 minutes, Webpay will automatically cancel them.
 
-For more information, check the [Refunds and Cancellations section](https://www.mercadopago.cl/developers/en/guides/manage-account/account/cancellations-and-refunds/).
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds/).
 
 ## Payment credit times
 

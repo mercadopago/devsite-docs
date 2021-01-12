@@ -9,7 +9,7 @@ assignees: ''
 
 <!---This space is exclusive for malfunction problems, errors or improvement ideas for Mercado Pago developers website. I.e., if you find a button that isn’t working..-->
 
-<!--- If you are experiencing problems with the integration of any product documented in the developer site, we suggest contacting [the oficial developer support](mercadopago.com.ar/developers/es/support/)-->
+<!--- If you are experiencing problems with the integration of any product documented in the developer site, we suggest contacting [the oficial developer support](mercadopago.com/developers/es/support/)-->
  
 ## Context
 Include:

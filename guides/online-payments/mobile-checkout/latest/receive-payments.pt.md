@@ -432,13 +432,13 @@ As notificações informam automaticamente sobre seus novos pagamentos e atualiz
 
 Isto permitirá que você gerencie seu estoque e mantenha seu sistema sincronizado.
 
-Para mais informações, consulte a seção de [Notificações](https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks).
+Para mais informações, consulte a seção de [Notificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks).
 
 ### Evite recusas de pagamentos
 
 Um pagamento pode ser recusado porque o emissor do meio de pagamento detecta um problema ou porque não preenche os requisitos de segurança necessários.
 
-Evite pagamentos recusados com nossas recomendações e [melhore a aprovação de seus pagamentos](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/account/payment-rejections).
+Evite pagamentos recusados com nossas recomendações e [melhore a aprovação de seus pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/payment-rejections).
 
 ### Teste a integração
 
@@ -446,8 +446,8 @@ Você pode testar sua integração antes de partir para a produção, a fim de v
 
 Para isso, deve-se utilizar usuários e cartões de teste.
 
-Para mais informações, consulte a seção de [Testes](https://www.mercadopago.com.br/developers/pt/guides/online-payments/mobile-checkout/testing).
+Para mais informações, consulte a seção de [Testes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/mobile-checkout/testing).
 
 ### Próximos passos
 
-- Visite a seção [Personalização](https://www.mercadopago.com.br/developers/pt/guides/online-payments/mobile-checkout/personalization) para adequar o fluxo de pagamento às suas necessidades.
+- Visite a seção [Personalização](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/mobile-checkout/personalization) para adequar o fluxo de pagamento às suas necessidades.

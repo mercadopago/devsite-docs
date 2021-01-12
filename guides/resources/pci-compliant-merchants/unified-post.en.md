@@ -161,4 +161,4 @@ In the buyers credit card bill will appear: "MERPAG*<brand_name>". You can set t
 
 This info should be sent by the vendor in order to get a better payment approval rate. 
 You can find the corresponding documentation in the following link: 
-https://www.mercadopago.com.ar/developers/en/guides/pci-compliant-merchants/receiving-payment-by-card/
+https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/pci-compliant-merchants/receiving-payment-by-card/

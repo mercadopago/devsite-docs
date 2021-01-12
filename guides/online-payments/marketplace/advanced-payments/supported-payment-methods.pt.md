@@ -18,4 +18,4 @@ Atualmente os meios de pagamento aceitos são os seguintes:
 >
 > Nota
 >
-> Para mais informações, consulte a referência de [Payment Methods](https://www.mercadopago.com.br/developers/pt/reference/payment_methods/_payment_methods/get).
+> Para mais informações, consulte a referência de [Payment Methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payment_methods/_payment_methods/get).

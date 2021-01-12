@@ -66,7 +66,7 @@ Testes com cartão de crédito
 Ao abrir o checkout criado com os dados do seu usuário vendedor:
 
 1. Selecione Cartão como meio de pagamento.
-2. Insira os dados de um [cartão de teste.](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/test-integration#bookmark_cartões_de_teste)
+2. Insira os dados de um [cartão de teste.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration#bookmark_cartões_de_teste)
 3. Informe o e-mail e pronto!<br/><br/>
 
 #### Comprar como usuário cadastrado (com conta do Mercado Pago)
@@ -172,7 +172,7 @@ Para ativá-las, certifique-se de que as credenciais na sua integração sejam a
 >
 > Otimize sua integração e melhore o gerenciamento de suas vendas.
 >
-> [Integração avançada](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/advanced-integration/)
+> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/advanced-integration/)
 
 > RIGHT_BUTTON
 >
@@ -180,4 +180,4 @@ Para ativá-las, certifique-se de que as credenciais na sua integração sejam a
 >
 > Adapte o estilo da sua marca na experiência de compra.
 >
-> [Prueba](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/customizations/)
+> [Prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/customizations/)

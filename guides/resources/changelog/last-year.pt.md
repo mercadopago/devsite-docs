@@ -758,7 +758,7 @@ https://api.mercadolibre.com/account/bank_report/search?
 
 ```
 
-> Para mais informações sobre a programação de relatórios, [consulte a documentação](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/reports/general-considerations/reconciliation-reports/).
+> Para mais informações sobre a programação de relatórios, [consulte a documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/general-considerations/reconciliation-reports/).
 
 
 ### 19 de março
@@ -817,7 +817,7 @@ Lançamos a nova versão 4.1.1 para WooCommerce.
 
 Se você possui campanhas publicitárias para seu negócio, é importante acompanhá-las e ver se elas estão lhe ajudando a concretizar vendas. Para poder melhorá-las e sejam cada vez mais eficientes, acrescentamos a possibilidade de associar um pixel do Facebook e uma tag de acompanhamento de conversões do Google Ads aos pagamentos de seu Checkout Pro.
 
-[Começar a medir a conversão de seus anúncios](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/configurations/).
+[Começar a medir a conversão de seus anúncios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/).
 
 ### 6 de janeiro
 

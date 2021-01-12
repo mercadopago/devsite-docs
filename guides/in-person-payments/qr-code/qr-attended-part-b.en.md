@@ -82,11 +82,11 @@ Answer will be `HTTP 204 No Content`.
 
 ## Receive notifications of your orders
 
-[IPN notifications](https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn/) are an **automatic way of receiving notifications for order creation and status updates**. I.e.: when orders are approved, rejected or pending. 
+[IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/) are an **automatic way of receiving notifications for order creation and status updates**. I.e.: when orders are approved, rejected or pending. 
 
 Implement IPN `merchant_order` with an order search by `external_reference` as a contingency method.
 
-[Receive IPN notifications](https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn)
+[Receive IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn)
 
 ---
 ### Next steps
@@ -98,7 +98,7 @@ Implement IPN `merchant_order` with an order search by `external_reference` as a
 >
 > Learn the options to take your integration to the next level.
 >
-> [Advanced Integration](https://www.mercadopago.com.ar/developers/en/guides/in-person-payments/qr-code/advanced-integration/)
+> [Advanced Integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/advanced-integration/)
 
 
 > RIGHT_BUTTON_RECOMMENDED_EN
@@ -107,4 +107,4 @@ Implement IPN `merchant_order` with an order search by `external_reference` as a
 >
 > Try the most frequent use cases to validate your integration.
 >
-> [Test your integration](https://www.mercadopago.com.ar/developers/en/guides/in-person-payments/qr-code/integration-test/)
+> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/integration-test/)

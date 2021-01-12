@@ -267,7 +267,7 @@ El vendedor va a recibir la diferencia entre el monto total y las comisiones, ta
 
 Es necesario que envíes tu `notification_url`, donde recibirás aviso de todos los nuevos pagos y actualizaciones de estados que se generen, así como también alta y baja de usuarios en tu Marketplace.
 
-En el artículo de [notificaciones](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn) puedes obtener más información.
+En el artículo de [notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn) puedes obtener más información.
 
 ### Devoluciones y cancelaciones
 
@@ -276,4 +276,4 @@ En caso de que la devolución la realice el Marketplace, se deberán utilizar la
 
 En el caso de las cancelaciones, solo podrán ser realizadas  utilizando la API de cancelaciones.
 
-Puedes encontrar más información en el articulo sobre [devoluciones y cancelaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/cancellations-and-refunds).
+Puedes encontrar más información en el articulo sobre [devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).

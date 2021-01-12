@@ -46,13 +46,13 @@
 # Features
 The module of Mercado Pago for WP eCommerce is integrated with the following features and payment solutions:
 
-### [Basic Checkout (Redirect, Iframe or Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
+### [Basic Checkout (Redirect, Iframe or Lightbox)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/basic-checkout/receive-payments/)
 * Mercado Pago Pre-Builded Interfaces<br>![Basic Checkout Pro in Wp Ecommerce](/images/wp-ecommerce-basic_checkout_payment.png)
 
 ### Custom Checkout
-* [Payment with Credit Card - Checkout transparent](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)<br>![Custom Checkout](/images/wp-ecommerce-order_custom.png)
-* [One Click Pay (Customer Cards)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)<br>![One Click Payment](/images/wp-ecommerce-order_cust_card.png)
-* [Other Payment Methods, Such as Tickets](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<br>![Tickets](/images/wp-ecommerce-order_ticket.png)
+* [Payment with Credit Card - Checkout transparent](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/basic-checkout/receive-payments/)<br>![Custom Checkout](/images/wp-ecommerce-order_custom.png)
+* [One Click Pay (Customer Cards)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)<br>![One Click Payment](/images/wp-ecommerce-order_cust_card.png)
+* [Other Payment Methods, Such as Tickets](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<br>![Tickets](/images/wp-ecommerce-order_ticket.png)
 
 ### Other Features
 * Credentials and platform status checkings
@@ -170,7 +170,7 @@ Instant Payment Notifications (IPN) is a mechanism that enables your store to re
 
 > HINT 1: When configuring or testing your IPN/Webhooks and server communications be sure that your server can access Mercado Pago server.
 
-> HINT 2: Make sure that your firewall haves [Mercado Pago IP Ranges](https://www.mercadopago.com.ar/developers/en/api-docs/basics/design-considerations#ip-range) within its white-list.
+> HINT 2: Make sure that your firewall haves [Mercado Pago IP Ranges](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/api-docs/basics/design-considerations#ip-range) within its white-list.
 
 > HINT 3: Pay attention that Mercado Pago uses TSL protocol version 1.0, so your server needs to support/accept connections with this protocol version.
 

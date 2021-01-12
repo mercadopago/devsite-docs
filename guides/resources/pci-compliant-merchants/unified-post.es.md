@@ -163,4 +163,4 @@ En el caso de tarjetas de crédito en el resumen del usuario aparecerá como: "M
 Esta información debe ser enviada por el integrador para que la aprobación por el sistema
 de fraude de Mercado Pago responda a valores normales de aprobación.
 La documentación correspondiente puedes encontrarla en la siguiente URL: 
-https://www.mercadopago.com.ar/developers/es/guides/pci-compliant-merchants/receiving-payment-by-card/
+https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/pci-compliant-merchants/receiving-payment-by-card/

@@ -51,13 +51,13 @@ Durante os testes em modo sandbox, você pode operar por HTTP, mas para homologa
 
 O módulo do Mercado Pago para o VirtueMart esta integrado com as seguintes funcionalidades e soluções de pagamento:
 
-* [Checkout básico (Redirecionado, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/pt/solutions/payments/basic-checkout/receive-payments/)
+* [Checkout básico (Redirecionado, Iframe ou Lightbox)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/solutions/payments/basic-checkout/receive-payments/)
     * Pagamento com dois cartões
 
 * Checkout Transparente
-    * [Pagamento com Cartão de Crédito](https://www.mercadopago.com.br/developers/pt/solutions/payments/basic-checkout/receive-payments/)
-    * [Pagamento com um click (Clientes e Cartões)](https://www.mercadopago.com.br/developers/pt/solutions/payments/custom-checkout/one-click-charges/javascript/)
-    * [Pagamento com outros meios (Boleto)](https://www.mercadopago.com.br/developers/pt/solutions/payments/custom-checkout/charge-with-other-methods/)
+    * [Pagamento com Cartão de Crédito](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/solutions/payments/basic-checkout/receive-payments/)
+    * [Pagamento com um click (Clientes e Cartões)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/solutions/payments/custom-checkout/one-click-charges/javascript/)
+    * [Pagamento com outros meios (Boleto)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/solutions/payments/custom-checkout/charge-with-other-methods/)
 
 ## Instalação
 
@@ -160,7 +160,7 @@ Para poder encontrá-las, confira suas [credenciais]([FAKER][CREDENTIALS][URL]).
 
 Encontre seu **Access Token** na [seção Credenciais]([FAKER][CREDENTIALS][URL]).
 
-> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/resources/faqs/credentials/).
+> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials/).
 
 ## Suporte
 

@@ -19,7 +19,7 @@ indexable: false
 >
 > Pre-requisites
 >
-> Have already integrated the [Payments's API](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-api/introduction.en.md)
+> Have already integrated the [Payments's API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction.en.md)
 
 ## New concepts
 
@@ -147,8 +147,8 @@ curl -X POST \
 }"
 ```
 
-> The [services](https://www.mercadopago.com.ar/developers/en/localization/gateway) vary according to country and must be previously acquired.
+> The [services](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/gateway) vary according to country and must be previously acquired.
 
 ### Next steps
 
-* [Reconcile your operations](https://www.mercadopago.com.ar/developers/en/guides/online-payments/gateway/general-considerations/reconciliation/)
+* [Reconcile your operations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/gateway/general-considerations/reconciliation/)

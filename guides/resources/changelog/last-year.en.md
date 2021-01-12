@@ -725,7 +725,7 @@ https://api.mercadolibre.com/account/bank_report/search?
 
 ```
 
-> For further information regarding scheduling your reports, [visit our documentation](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/general-considerations/reconciliation-reports/).
+> For further information regarding scheduling your reports, [visit our documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/general-considerations/reconciliation-reports/).
 
 
 ### March 19th
@@ -785,7 +785,7 @@ We have released the new version 4.1.1 for WooCommerce.
 
 If you have advertising campaigns for your business, it is important that you can follow them and see if they are helping you to realize sales. In order to improve them and make it more efficient, we add the possibility of associating a Facebook Pixel and a Google Ads conversion tracking tag to the payments of your Checkout Pro.
 
-[Start now measuring the conversion of your ads](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/configurations/).
+[Start now measuring the conversion of your ads](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations/).
 
 ### January 6th
 

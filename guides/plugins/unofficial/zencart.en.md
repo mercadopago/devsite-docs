@@ -13,9 +13,9 @@
 
 The module of Mercado Pago to Zencart is integrated with the feature and payment solutions:
 
-* [Basic Checkout (Redirect, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
+* [Basic Checkout (Redirect, Iframe ou Lightbox)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/basic-checkout/receive-payments/)
     * Split payments (Two cards)
-    * [Refunds of Payments](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/refund-cancel#refund)
+    * [Refunds of Payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/basic-checkout/refund-cancel#refund)
 
 ## Available versions
 
