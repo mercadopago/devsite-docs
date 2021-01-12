@@ -1,6 +1,6 @@
 # Integrate Checkout Pro
 
-Integrate Mercado Pago's Checkout Pro allows you to charge your customers through our web form from any device in a simple, fast and secure way.
+Integrating Mercado Pago's Checkout Pro allows you to charge your customers through our web form from any device in a simple, fast and secure way.
 Use our [sample projects](#bookmark_sample_projects) for a complete integration. You can adapt them according to your needs.
 
 ## How do I integrate?
