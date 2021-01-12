@@ -535,14 +535,19 @@ Para configurá-lo, adicione o item `shipments` com o valor que quiser cobrar no
 
 Sabemos que é importante maximizar a eficácia dos seus anúncios. Por isto, oferecemos a possibilidade de integrar o Checkout Pro com as plataformas do Facebook Ads e Google Ads para associar pagamentos às suas campanhas.
 
+----[mla, mlb]----
 > NOTE
 >
 > Nota
 >
-----[mla, mlb]----
 > Só serão associados os pagamentos aprovados instantaneamente com cartões de crédito ou débito, dinheiro no Mercado Pago ou com Mercado Créditos.
 ------------
+
 ----[mlm, mlc, mco, mpe, mlu]----
+> NOTE
+>
+> Nota
+>
 > Só serão associados os pagamentos aprovados instantaneamente com cartões de crédito ou débito, ou com dinheiro no Mercado Pago.
 ------------
 
