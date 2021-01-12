@@ -27,15 +27,13 @@ Para configurar la cuenta del vendedor puedes usar las credenciales de prueba de
 
 Ejecuta el siguiente curl para generar un usuario de prueba:
 
-
-[[[
-```curl curl -X POST \
+```curl
+curl -X POST \
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer ENV_ACCESS_TOKEN" \
 "https://api.mercadopago.com/users/test_user" \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
-]]]
 
 ### Respuesta
 `HTTP Status 200 OK`
