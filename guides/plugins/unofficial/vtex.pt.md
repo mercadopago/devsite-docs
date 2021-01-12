@@ -47,7 +47,6 @@ Para criar uma **afiliação de gateway de pagamento com o Mercado Pago**, siga 
 | MaxInstallments | Escolha a quantidade máxima de parcelas enviadas ao Mercado Pago. |
 | Categoria Principal | Escolha a categoria que mais se encaixa com sua loja. |
 | Captura de segurança antecipada | Você pode desativar a função ou escolher em quanto tempo quer realizar a captura (depois da aprovação da transação e da análise do antifraude). |
-<br>
 
 ![Setting affiliation in VTEX](/images/vtex/vtex_afiliacao_gateway_1.gif)
 

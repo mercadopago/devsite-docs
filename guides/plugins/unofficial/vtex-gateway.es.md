@@ -277,7 +277,6 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado Pago. |
 | Categoria Principal | Selecciona la categoría correspondiente a su tienda. |
 | Early Security Capture | Puede desactivar la función o elegir en cuánto tiempo desea realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
-<br>
 
 
 > WARNING
