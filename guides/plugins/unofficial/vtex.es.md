@@ -5,7 +5,7 @@
 > Importante
 >
 > ¡Lo sentimos! Por el momento, esta página no se encuentra disponible en español.<br>
-[Ir a documentación en portugués](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex//)
+> [Ir a documentación en portugués](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex//)
 
 ------------
 
