@@ -433,7 +433,7 @@ _Click on the link within your site and [test the integration of your Checkout P
 >
 > Checkout Pro
 >
-> Use our <a href="http://github.com/mercadopago/checkout-payment-sample" target="_blank">complete integration examples</a> on GitHub in PHP or NodeJS to download instantly.
+> Use our [complete integration examples](http://github.com/mercadopago/checkout-payment-sample) on GitHub in PHP or NodeJS to download instantly.
 
 ---
 
