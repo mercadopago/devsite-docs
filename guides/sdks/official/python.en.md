@@ -175,11 +175,7 @@ Get customer
 
     mp.get ("/v1/customers/CUSTOMER_ID")
 
-* View more Custom checkout related APIs in Developers Site
-    * Argentina: `https://www.mercadopago[FAKER][URL][DOMAIN]/developers <https://www.mercadopago[FAKER][URL][DOMAIN]/developers>`_
-    * Brazil: `https://www.mercadopago[FAKER][URL][DOMAIN]/developers <https://www.mercadopago[FAKER][URL][DOMAIN]/developers>`_
-    * Mexico: `https://www.mercadopago[FAKER][URL][DOMAIN]/developers <https://www.mercadopago[FAKER][URL][DOMAIN]/developers>`_
-    * Colombia: `https://www.mercadopago[FAKER][URL][DOMAIN]/developers <https://www.mercadopago[FAKER][URL][DOMAIN]/developers>`_
+* View more Custom checkout related APIs in [API reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference)
 
 ## Generic methods
 
