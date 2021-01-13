@@ -26,4 +26,4 @@ Activate Production mode only when you are ready to sell and have tested the mod
 
 ![Homologation Flow](/images/woocomerce/es_woo_homologacion.gif)
 
-### **Done! The Mercado Pago module is ready to receive online payments.**
+### Done! The Mercado Pago module is ready to receive online payments.

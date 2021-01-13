@@ -27,4 +27,5 @@ Activa el modo Producción solo cuando estés listo para vender y hayas puesto a
 
 ![Flow homologación producción](/images/prestashop/receive_payments_es.gif)
 
-### **¡Listo! El módulo de Mercado Pago está preparado para recibir cobros online.**
+### ¡Listo! El módulo de Mercado Pago está preparado para recibir cobros online.
+

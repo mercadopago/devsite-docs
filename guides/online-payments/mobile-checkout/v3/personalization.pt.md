@@ -7,7 +7,7 @@ sites_supported:
     - mlc
     - mpe
 ---
-# **Personalização**
+# Personalização
 
 > WARNING
 >

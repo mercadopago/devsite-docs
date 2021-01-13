@@ -33,7 +33,7 @@ Para probar la integración sigue estos pasos:
 * **FORM**: Rechazo por error en formulario.  
 * **OTHE**: Rechazo general.  
 
-### Tarjetas para probar nuestro _checkout_
+### Tarjetas para probar nuestro checkout
 
 Usa estas tarjetas de prueba para testear los diferentes resultados del pago.
 

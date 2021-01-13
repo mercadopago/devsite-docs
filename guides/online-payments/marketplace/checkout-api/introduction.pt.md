@@ -34,7 +34,7 @@ representativo que pode ser guardado de forma segura em seus servidores para cri
 
 > Possui alguma dúvida? Consulte nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials/).
 
-## Modo _Sandbox_ e Modo de Produção
+## Modo Sandbox e Modo de Produção
 
 Inicialmente, sua aplicação poderá interagir com o Mercado Pago apenas no **Modo Sandbox**, uma réplica exata do **Modo de Produção**, desenvolvido com o objetivo de facilitar os testes durante a integração.
 

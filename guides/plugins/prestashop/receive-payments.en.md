@@ -27,4 +27,5 @@ Activate the Production mode only when you are ready to sell and have tested the
 
 ![Production Homologation Flow](/images/prestashop/receive_payments_en.gif)
 
-### **Done! The Mercado Pago module is ready to receive online payments.**
+### Done! The Mercado Pago module is ready to receive online payments.
+
