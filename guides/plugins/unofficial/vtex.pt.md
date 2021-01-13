@@ -163,7 +163,7 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 <p>&nbsp;</p>
 
 ![Setting affiliation in VTEX](/images/vtex/vtex-account-installment-7.gif)
-<p>&nbsp;</p>
+
 E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarifas de parcelamento que você configurou.
 
 ## Obtenha aprovação mais rápida enviando o device fingerprint
