@@ -50,7 +50,7 @@ button.mercadopago-button {
 
 #### Default state
 
-![Standard status elements](/images/cow-ui-elements.png)
+![Standard status elements](/images/cow/cow-ui-elements.png)
 
 #### Customization
 
@@ -69,14 +69,14 @@ The value of the attribute must be in hexadecimal format. For example:
 data-elements-color="#c0392b"
 ```
 
-![Customization elements](/images/cow-ui-elements--custom.png)
+![Customization elements](/images/cow/cow-ui-elements--custom.png)
 
 
 ### Header
 
 #### Default state
 
-![Standard status header Mercado Pago](/images/cow-ui-header.png)
+![Standard status header Mercado Pago](/images/cow/cow-ui-header.png)
 
 #### Customization
 
@@ -88,7 +88,7 @@ The value of the attribute must be in hexadecimal format. For example:
 data-header-color="#c0392b"
 ```
 
-![Header customization Mercado Pago](/images/cow-ui-header--custom.png)
+![Header customization Mercado Pago](/images/cow/cow-ui-header--custom.png)
 
 
 ### Text color
@@ -101,7 +101,7 @@ For a *light* element color, the text color will be *black* or `# 000`. For exam
 data-elements-color="#81ecec" <!-- Light color -->
 ```
 
-![Font color in light element Mercado Pago](/images/cow-ui-fontcolor__light.png)
+![Font color in light element Mercado Pago](/images/cow/cow-ui-fontcolor__light.png)
 
 For a *dark* element color, the text color will be *white* or `# fff`. For example:
 
@@ -109,13 +109,13 @@ For a *dark* element color, the text color will be *white* or `# fff`. For examp
 data-elements-color="#8e44ad" <!-- Dark color -->
 ```
 
-![Font color in dark element Mercado Pago](/images/cow-ui-fontcolor__dark.png)
+![Font color in dark element Mercado Pago](/images/cow/cow-ui-fontcolor__dark.png)
 
 ## Purchase detail
 
 ### Default state
 
-![Purchase detail standard status](/images/cow-summary.png)
+![Purchase detail standard status](/images/cow/cow-summary.png)
 
 
 ### Customization

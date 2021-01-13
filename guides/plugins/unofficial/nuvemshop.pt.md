@@ -31,7 +31,9 @@ Para **vincular sua conta do Mercado Pago à Nuvemshop,** siga os passos abaixo:
 3. Clique em "Configurar" e depois em "Ativar".
 4. Você **será redirecionado para uma página do Mercado Pago** para acessar com seus dados. Clique em "Permitir" para autorizar a conexão.
 <p>&nbsp;</p>
+
 ![Payments Connect - Nuvem Shop](/images/nuvemshop/nuvemshop_connect_1.gif)
+
 <p>&nbsp;</p>
 Pronto! Sua conta Mercado Pago já está ativa!
 
@@ -68,6 +70,7 @@ Além disso, você pode [configurar parcelas sem juros](#bookmark_configurando_o
 2. No item "Tipo de integração" altere para "Processo de compra sem sair da loja".
 3. Clique em "Salvar alterações".
 <p>&nbsp;</p>
+
 ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_transparente_2.gif)
 
 
@@ -79,6 +82,7 @@ Além disso, você pode [configurar parcelas sem juros](#bookmark_configurando_o
 2. No item "Tipo de integração" altere para "Processo de compra no site do Mercado Pago".
 3. Clique em "Salvar alterações".
 <p>&nbsp;</p>
+
 ![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_3.gif)
 
 
@@ -99,6 +103,7 @@ Caso queira **sincronização suas alterações manualmente**, realize os seguin
 2. No item "Parcelas" clique em "Ativar agora".
 3. Clique em "Salvar alterações".
 <p>&nbsp;</p>
+
 ![Payments Installment - Nuvem Shop](/images/nuvemshop/nuvemshop_installments_4.gif)
 
 
@@ -108,7 +113,9 @@ Caso queira **sincronização suas alterações manualmente**, realize os seguin
 2. Clique na opção Configurações, navegue até o campo "Oferecer parcelas sem acréscimo" e clique em "Ativar".
 3. Escolha "Quantas parcelas você quer oferecer?" e clique em "Ativar" para confirmar as alterações.
 <p>&nbsp;</p>
+
 ![Payments Installments - Nuvem Shop](/images/nuvemshop/nuvemshop_account_installments_5.gif)
+
 <p>&nbsp;</p>
 ----[mlb]----
 E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarifas de parcelamento que você configurou.
