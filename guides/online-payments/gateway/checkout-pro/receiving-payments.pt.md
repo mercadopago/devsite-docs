@@ -12,8 +12,6 @@ indexable: false
 >
 > Ter realizado la integração de [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction).
 
-</br>
-
 > WARNING
 >
 > Contato comercial necessário

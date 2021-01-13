@@ -17,8 +17,6 @@
 >
 > C. Pre-Approval is only available through the personalized Checkout Pro or web tokenize checkout, that is, via the use of our API's.
 
-<br/>
-
 > NOTE
 >
 > Note
