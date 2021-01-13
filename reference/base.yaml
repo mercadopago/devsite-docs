@@ -1,0 +1,23 @@
+#------DEFAULT - ALL ARCHIVES - BEGIN------
+openapi: 3.0.0
+servers:
+  - url: 'https://api.mercadopago.com'
+info:
+  title: Mercado Pago API Reference
+#UTILIZAR TAGS PARA SER "PRODUTOS"
+tags:
+  - name: 'QR-Code'
+  - name: 'Checkout PRO'
+  - name: 'Checkout API'
+    description:
+      pt: 'Checkout Transparente'
+      en: 'Checkout API'
+      es: 'Checkout API'
+  - name: 'Link de Pago'
+    description:
+      pt: 'Link de Pagamento'
+      en: 'Payment Link'
+      es: 'Link de Pago'
+#------DEFAULT - ALL ARCHIVES - END------
+
+schemas: !!inc/dir [ 'devsite-docs/reference/local_schemas', { recursive: false, allowEmpty: false }]

@@ -1,0 +1,35 @@
+paths:
+  /v1/identification_types:
+    get:
+      tags:
+        - 'Checkout API'
+        - 'Link de Pago'
+      summary:
+        es: 'API para recuperar los tipos de documentos disponibles.'
+        en: 'API to recover the document type available.'
+        pt: 'API para recuperar os tipos de documentos disponíveis.'
+      responses:
+        '200':
+          content: 
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/schemas/identification_type'
+        '400':
+          - '1001':
+            description:
+              en: 'Public_key not found.'
+              es: 'No se ha encontrado una Public_key.'
+              pt: 'Public_key not found.'
+          - '1002':
+            description:
+              en: 'Public_key not found 1002.'
+              es: 'No se ha encontrado una Public_key 1002.'
+              pt: 'Public_key not found 1002.'
+        '401':
+          - '1001':
+            description:
+              en: 'The credentials are required.'
+              es: 'Las credenciales son requeridas.'
+              pt: 'The credentials are required.'
