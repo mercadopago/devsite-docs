@@ -66,8 +66,7 @@ Ten en cuenta que solo tienes que modificar los valores de ejemplo. Los valores 
 >
 > Datos a tener en cuenta
 >
-> - Para el largo total del ID 43 y 62, que contienen 3 Sub IDs cada uno, es necesario incluir el largo total de **todos los caracteres dentro del ID**. Por ejemplo: 
-----[mlb]---- 43380016com.mercadolibre020110309582245993 ------------ ----[mla]---- 43380016com.mercadolibre020110309446566691 ------------ ----[mlc]---- 43380016com.mercadolibre020110309582115007 ------------ ----[mlu]---- 43380016com.mercadolibre020110309519253179 ------------ ----[mco]---- 43380016com.mercadolibre020110309582249137 ------------ ----[mpe]---- 43380016com.mercadolibre020110309582252133 ------------ ----[mlm]---- 43380016com.mercadolibre020110309582256360 ------------ 
+> - Para el largo total del ID 43 y 62, que contienen 3 Sub IDs cada uno, es necesario incluir el largo total de **todos los caracteres dentro del ID**. Por ejemplo: ----[mlb]---- 43380016com.mercadolibre020110309582245993 ------------ ----[mla]---- 43380016com.mercadolibre020110309446566691 ------------ ----[mlc]---- 43380016com.mercadolibre020110309582115007 ------------ ----[mlu]---- 43380016com.mercadolibre020110309519253179 ------------ ----[mco]---- 43380016com.mercadolibre020110309582249137 ------------ ----[mpe]---- 43380016com.mercadolibre020110309582252133 ------------ ----[mlm]---- 43380016com.mercadolibre020110309582256360 ------------
 > - Si el **largo de los caracteres** es menor a 10, debe incluirse un 0 a la izquierda del número entero. Por ejemplo: “06”.
 > - El *CRC* es una **verificación del contenido**. Debes usar el método `CRC-16/CCITT-FALSE Hexadecimal`. 
 
