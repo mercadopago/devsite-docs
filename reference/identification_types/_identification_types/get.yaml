@@ -1,13 +1,19 @@
 paths:
   /v1/identification_types:
-    get:
+    post:
       tags:
-        - 'Checkout API'
-        - 'Link de Pago'
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
       summary:
-        es: 'API para recuperar los tipos de documentos disponibles.'
-        en: 'API to recover the document type available.'
-        pt: 'API para recuperar os tipos de documentos disponíveis.'
+        es: 'Recuperar los tipos de documentos disponibles'
+        en: 'Recover the document type available'
+        pt: 'Recuperar os tipos de documentos disponíveis'
+      description:
+        es: 'ES-Esa es una API en que se puede capturar los tipos de documentaciones disponibles en Mercado Pago'
+        en: 'EN-Esa es una API en que se puede capturar los tipos de documentaciones disponibles en Mercado Pago'
+        pt: 'PT-Esa es una API en que se puede capturar los tipos de documentaciones disponibles en Mercado Pago'
+      requestBody:
+        $ref: '#/schemas/identification_type'
       responses:
         '200':
           content: 
@@ -18,18 +24,15 @@ paths:
                   $ref: '#/schemas/identification_type'
         '400':
           - '1001':
-            description:
               en: 'Public_key not found.'
               es: 'No se ha encontrado una Public_key.'
               pt: 'Public_key not found.'
           - '1002':
-            description:
               en: 'Public_key not found 1002.'
               es: 'No se ha encontrado una Public_key 1002.'
               pt: 'Public_key not found 1002.'
         '401':
           - '1001':
-            description:
               en: 'The credentials are required.'
               es: 'Las credenciales son requeridas.'
               pt: 'The credentials are required.'
