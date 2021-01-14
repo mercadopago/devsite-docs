@@ -26,4 +26,4 @@ Activa el modo Producción solo cuando estés listo para vender y hayas puesto a
 
 ![Flow homologación](/images/woocomerce/es_woo_homologacion.gif)
 
-### **¡Listo! El módulo de Mercado Pago está preparado para recibir cobros online.**
+### ¡Listo! El módulo de Mercado Pago está preparado para recibir cobros online.

@@ -13,7 +13,6 @@ indexable: false
 >
 > Have already integrated the [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction).
 
-</br>
 > WARNING
 >
 > Commercial contact required

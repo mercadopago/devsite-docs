@@ -71,12 +71,13 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
 ## Available Versions:
 
 | Plugin Version | Status | Compatible versions |
-| --- | --- |
+| --- | --- | --- |
 | [v1.4.9](https://github.com/mercadopago/cart-opencart/tree/master/v1.4.9) | Deprecated (Old Versión)  | OpenCart v1.4.9 |
 | [v1.5.x](https://github.com/mercadopago/cart-opencart/tree/master/v1.5.x) | Deprecated (Old Versión)  | OpenCart v1.5.x |
 | [v2.x - v2.2](https://github.com/mercadopago/cart-opencart/tree/master/v2.x%20-%202.2)  | Deprecated (Old Versión)  | OpenCart v2.x - v2.2  |
 | [v2.3](https://github.com/mercadopago/cart-opencart-2/archive/master.zip) | Stable (Current Versión)  | OpenCart v2.3 |
 | [v3.x](https://github.com/mercadopago/cart-opencart-3/archive/master.zip) | Stable (Current Versión)  | OpenCart v3.x |
+
 
 ## Installation:
 
@@ -94,14 +95,16 @@ During the sandbox mode tests, you can operate over HTTP, but for homologation y
 1. On your store administration, go to **extensions > payments > MercadoPago** and click **Install**.
 
 2. Again in **extensions > payments > MercadoPago**, click **Edit** to Setup your Mercado Pago account:
+<br>
 
-	![Open cart configuration page](https://raw.github.com/mercadopago/cart-opencart/master/README.img/MPAccount.png)
+![Open cart configuration page](images/opencart/MPAccount.png)
 
 ## Configuration
 
 1. Again in **Extensions > Payments > MercadoPago**, click **Edit** to Setup your Mercado Pago account:
+<br>
 
-![Mercado Pago Account](https://raw.github.com/brunocodeman/cart-opencart/master/README.img/MPAccount.png)
+![Mercado Pago Account](images/opencart/MPAccount.png)
 
 2.  Set your **CLIENT_ID** and **CLIENT_SECRET**, or **PUBLIC_KEY** and **ACCESS_TOKEN** (depending on which module you're using).Find your credentials in [Credentials section]([FAKER][CREDENTIALS][URL]).
 

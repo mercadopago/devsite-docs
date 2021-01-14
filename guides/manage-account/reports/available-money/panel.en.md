@@ -9,7 +9,7 @@ Follow these steps to generate your reports:
 1. Go to Available Money reports and click on *Create report*.
 1. Search for withdrawals by **time period** and select the withdrawal you want to reconcile.
 
-<span style="margin-left:40px">Done! You will see your report *In preparation*.</span>
+Done! You will see your report *In preparation*.
 
 You can also schedule the generation of these reports [for each money withdrawal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/withdrawal/).
 

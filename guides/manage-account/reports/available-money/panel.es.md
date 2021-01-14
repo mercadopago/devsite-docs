@@ -9,7 +9,7 @@ Sigue estos pasos para generar tus reportes:
 1. Ve a [reportes de Dinero retirado](https://www.mercadopago.com.ar/balance/reports/bank) y haz click en *Crear Reporte*.
 1. Busca los retiros por período de tiempo y selecciona el retiro que quieras conciliar.
 
-<span style="margin-left:40px">¡Y listo! Vas a ver tu reporte *En preparación*.</span>
+¡Y listo! Vas a ver tu reporte *En preparación*.
 
 También podrás programar la generación de estos reportes [por cada retiro de dinero](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/withdrawal/).
 

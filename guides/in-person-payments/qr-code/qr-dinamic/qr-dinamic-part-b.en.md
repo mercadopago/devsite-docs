@@ -67,8 +67,7 @@ Take into account that you only need to change the example values. Fixed values 
 >
 > Data to take into account
 >
-> - For total length of ID 43 and 62 with 3 Sub IDs each, the **total length of all characters within the ID** need to be included. For example:
-----[mlb]---- 43380016com.mercadolibre020110309582245993 ------------ ----[mla]---- 43380016com.mercadolibre020110309446566691 ------------ ----[mlc]---- 43380016com.mercadolibre020110309582115007 ------------ ----[mlu]---- 43380016com.mercadolibre020110309519253179 ------------ ----[mco]---- 43380016com.mercadolibre020110309582249137 ------------ ----[mpe]---- 43380016com.mercadolibre020110309582252133 ------------ ----[mlm]---- 43380016com.mercadolibre020110309582256360 ------------ 
+> - For total length of ID 43 and 62 with 3 Sub IDs each, the **total length of all characters within the ID** need to be included. For example: ----[mlb]---- 43380016com.mercadolibre020110309582245993 ------------ ----[mla]---- 43380016com.mercadolibre020110309446566691 ------------ ----[mlc]---- 43380016com.mercadolibre020110309582115007 ------------ ----[mlu]---- 43380016com.mercadolibre020110309519253179 ------------ ----[mco]---- 43380016com.mercadolibre020110309582249137 ------------ ----[mpe]---- 43380016com.mercadolibre020110309582252133 ------------ ----[mlm]---- 43380016com.mercadolibre020110309582256360 ------------ 
 > - If **character length** is less than 10, left pad integer number with one 0. For example: “06”.
 > - *CRC* is a **content verification**. You need to use `CRC-16/CCITT-FALSE Hexadecimal` method. 
 

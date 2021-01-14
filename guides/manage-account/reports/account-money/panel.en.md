@@ -10,7 +10,7 @@ Follow these steps to generate your reports:
 1. Go to ----[mla]---- [Account Money reports](https://www.mercadopago.com.ar/settings/release-options) ------------ ----[mlm]---- [Account Money reports](https://www.mercadopago.com.mlm/settings/release-options) ------------ ----[mlu]---- [Account Money reports](https://www.mercadopago.com.uy/settings/release-options) ------------ ----[mlc]---- [Account Money reports](https://www.mercadopago.com.cl/settings/release-options) ------------ ----[mco]---- [Account Money reports][https://www.mercadopago.com.co/settings/release-options) ------------ ----[mpe]---- [Account Money reports](https://www.mercadopago.com.pe/settings/release-options) ------------ ----[mlb]---- [Account Money reports](https://www.mercadopago.com.br/settings/release-options) ------------ and click on *Create report*.
 1. Search the transactions per period of time and select the ones you wish to reconcile. 
 
-<span style="margin-left:40px">Done! You will see your report *In preparation*.</span>
+Done! You will see your report *In preparation*.
 
 > NOTE
 >

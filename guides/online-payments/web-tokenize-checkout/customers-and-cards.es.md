@@ -395,7 +395,7 @@ Respuesta:
 }
 ```
 
-## Buscar un _Customer_
+## Buscar un Customer
 
 En el caso en el que no sepas cuál es el `id` de tu `Customer`, puedes utilizar la API de `Customer Search` realizando un request `HTTP GET`. El parámetro requerido para esto es `email`:
 
@@ -496,7 +496,7 @@ Respuesta:
 }
 ```
 
-## Obtener las _Cards_ de un _Customer_
+## Obtener las Cards de un Customer
 
 Puedes obtener el listado completo de `Cards` de un cliente realizando un request `HTTP GET`:
 
