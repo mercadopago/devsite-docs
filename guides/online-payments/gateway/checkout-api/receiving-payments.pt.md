@@ -13,13 +13,11 @@ indexable: false
 >
 > Você só pode integrar este produto se o seu contato comercial compartilhar todas as informações necessárias para isso. 
 
-</br>
-
 > NOTE
 >
 > Pre-requisito
 >
-> Ter realizado [a integração](https://www.mercadopago.com.ar/developers/pt/guides/online-payments/checkout-api/introduction) de **API**
+> Ter realizado [a integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction) de **API**
 
 ## Novos conceitos
 
@@ -149,8 +147,8 @@ curl -X POST \
 ```
 
 
-> Os [serviços](https://www.mercadopago.com.ar/developers/pt/localization/gateway) dependem do país e devem ser contratados previamente.
+> Os [serviços](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/gateway) dependem do país e devem ser contratados previamente.
 
 ### Próximos passos
 
-* [Concilie suas operações](https://www.mercadopago.com.ar/developers/es/guides/online-payments/gateway/general-considerations/reconciliation/)
+* [Concilie suas operações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/gateway/general-considerations/reconciliation/)

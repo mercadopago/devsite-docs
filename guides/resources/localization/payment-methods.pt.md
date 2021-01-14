@@ -70,7 +70,7 @@ curl -X GET \
 	]
 ```
 
-Os resultados incluídos nesta resposta coincidirão com o país associado à sua conta Mercado Pago. Você poderá obter mais informações sobre este recurso e seus atributos na [Referência da API](https://www.mercadopago.com.br/developers/pt/reference/payment_methods/_payment_methods/get).
+Os resultados incluídos nesta resposta coincidirão com o país associado à sua conta Mercado Pago. Você poderá obter mais informações sobre este recurso e seus atributos na [Referência da API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payment_methods/_payment_methods/get).
 
 ## Meios de pagamento por país
 

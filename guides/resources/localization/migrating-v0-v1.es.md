@@ -6,9 +6,9 @@ Protegemos tus pagos, siempre. Trabajamos en la nueva versión de nuestra API pa
 En esta guía vas a encontrar toda la información necesaria para poder actualizar tu API de pago a la versión nueva (v1).
 
 **Contenidos de la guía**
-* [Recursos migrados](https://www.mercadopago.com.ar/developers/es/guides/localization/migrating-v0-v1#recursos_migrados) 
-* [Versiones de herramientas para la nueva versión](https://www.mercadopago.com.ar/developers/es/guides/localization/migrating-v0-v1#versiones_de_herramientas_para_la_nueva_versión)
-* [Ejemplos](https://www.mercadopago.com.ar/developers/es/guides/localization/migrating-v0-v1#ejemplos) 
+* [Recursos migrados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/migrating-v0-v1#recursos_migrados) 
+* [Versiones de herramientas para la nueva versión](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/migrating-v0-v1#versiones_de_herramientas_para_la_nueva_versión)
+* [Ejemplos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/migrating-v0-v1#ejemplos) 
 
 
 ### Tené en cuenta: 
@@ -18,7 +18,7 @@ En esta guía vas a encontrar toda la información necesaria para poder actualiz
 * Si tenés comercio eléctronico propio, consultalo con tu equipo de tecnología. 
 * O si trabajás con alguna plataforma, como por ejemplo, Magento, Shopify u otra, contactate con su soporte técnico.
 
-Si usa el recurso de search de payments, tenés que consumir un nuevo recurso e incluir un nuevo parámetro para obtener el mismo resultado. Para más información, mirá la [sección de ejemplos](https://www.mercadopago.com.ar/developers/es/guides/localization/migrating-v0-v1#ejemplos).
+Si usa el recurso de search de payments, tenés que consumir un nuevo recurso e incluir un nuevo parámetro para obtener el mismo resultado. Para más información, mirá la [sección de ejemplos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/migrating-v0-v1#ejemplos).
 
 
 > NOTE
@@ -35,9 +35,9 @@ Protegemos tus pagos, siempre. Trabajamos en la nueva versión de nuestra API pa
 En esta guía vas a encontrar toda la información necesaria para poder actualizar tu API de pago a la versión nueva (v1).
 
 **Contenidos de la guía**
-* [Recursos migrados](https://www.mercadopago.com.mx/developers/es/guides/localization/migrating-v0-v1#recursos_migrados) 
-* [Versiones de herramientas para la nueva versión](https://www.mercadopago.com.mx/developers/es/guides/localization/migrating-v0-v1#versiones_de_herramientas_para_la_nueva_versión)
-* [Ejemplos](https://www.mercadopago.com.mx/developers/es/guides/localization/migrating-v0-v1#ejemplos) 
+* [Recursos migrados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/migrating-v0-v1#recursos_migrados) 
+* [Versiones de herramientas para la nueva versión](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/migrating-v0-v1#versiones_de_herramientas_para_la_nueva_versión)
+* [Ejemplos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/migrating-v0-v1#ejemplos) 
 
 
 ### Ten en cuenta: 
@@ -46,7 +46,7 @@ En esta guía vas a encontrar toda la información necesaria para poder actualiz
 * Si usas botones de pago o Mercado Shops, el cambio no te afecta.
 * Si tienes comercio eléctronico propio, consultalo con tu equipo de tecnología. 
 * O si trabajas con alguna plataforma, como por ejemplo, Magento, Shopify u otra, contáctate con su soporte técnico.
-* Si usas el recurso de search de payments, tienes que consumir un nuevo recurso e incluir un nuevo parámetro para obtener el mismo resultado. Para más información, mira la [sección de ejemplos](https://www.mercadopago.com.ar/developers/es/guides/localization/migrating-v0-v1#ejemplos).
+* Si usas el recurso de search de payments, tienes que consumir un nuevo recurso e incluir un nuevo parámetro para obtener el mismo resultado. Para más información, mira la [sección de ejemplos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/localization/migrating-v0-v1#ejemplos).
 
 
 > NOTE
@@ -62,14 +62,14 @@ A continuación vas a poder encontrar los recursos migrados y sus equivalentes.
 | Uso | Método | URI del recurso deprecado | URI del recurso equivalente | Referencia |
 | --- | --- | --- | --- | --- |
 | Devoluciones | `POST` | /collections/$payment_id/refunds | /v1/payments/$payment_id/refunds | -|
-| Devoluciones | `PUT` | /collections/$payment_id | /v1/payments/$payment_id/ | [visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/put) |
-| Actualización de pago | `PUT` | /payments/$payment_id | /v1/payments/$payment_id/ | [visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/put) |
-| Actualización de pago | `PUT` | /collections/$payment_id | /v1/payments/$payment_id/ | [visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/put) |
-| Pagos | `GET` | /payments/$payment_id | /v1/payments/$payment_id/ | [visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get) |
-| Pagos | `GET` | /collections/$payment_id | /v1/payments/$payment_id/ | [visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get) |
-| Notificación de pagos | `GET` | /collections/notifications/$payment_id | /v1/payments/$payment_id/ |[visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get) |
-| Búsqueda de pagos | `GET` | /payments/search | /v1/payments/search | [visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get)|
-| Búsqueda de pagos | `GET` | /collections/search | /v1/payments/search | [visita](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get)|
+| Devoluciones | `PUT` | /collections/$payment_id | /v1/payments/$payment_id/ | [visita](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/put) |
+| Actualización de pago | `PUT` | /payments/$payment_id | /v1/payments/$payment_id/ | [visita](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/put) |
+| Actualización de pago | `PUT` | /collections/$payment_id | /v1/payments/$payment_id/ | [visita](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/put) |
+| Pagos | `GET` | /payments/$payment_id | /v1/payments/$payment_id/ | [visita](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get) |
+| Pagos | `GET` | /collections/$payment_id | /v1/payments/$payment_id/ | [visita](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get) |
+| Notificación de pagos | `GET` | /collections/notifications/$payment_id | /v1/payments/$payment_id/ |[visita](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get) |
+| Búsqueda de pagos | `GET` | /payments/search | /v1/payments/search | [visita](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_search/get)|
+| Búsqueda de pagos | `GET` | /collections/search | /v1/payments/search | [visita](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_search/get)|
 
 ##Versiones válidas de las herramientas para la nueva versión 
 
@@ -146,7 +146,7 @@ curl -X POST \
 
 Si necesitás hacer adaptaciones, recordá que es importante hacer este cambio antes de la fecha límite.
 
-Si tenés alguna duda o necesita ayuda para hacer estos cambios, [contáctanos](https://www.mercadopago.com.ar/developers/es/support/).
+Si tenés alguna duda o necesita ayuda para hacer estos cambios, [contáctanos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support/).
 
 El equipo de Mercado Pago.
 
@@ -200,7 +200,7 @@ curl -X POST \
 
 Si necesitas hacer adaptaciones, recuerda que es importante hacer este cambio antes de la fecha límite.
  
-Si tienes alguna duda o necesita ayuda para hacer estos cambios, [contactanos](https://www.mercadopago.com.uy/developers/es/support/).
+Si tienes alguna duda o necesita ayuda para hacer estos cambios, [contactanos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support/).
 
 
 El equipo de Mercado Pago.

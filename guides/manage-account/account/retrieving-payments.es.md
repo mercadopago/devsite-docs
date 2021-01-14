@@ -2,7 +2,7 @@
 
 Puedes encontrar toda la información de los pagos generados utilizando nuestras APIs.
 
-## Obtener pagos creados a partir de su _ID_
+## Obtener pagos creados a partir de su ID
 
 Para obtener la información de un pago a partir de su _ID_ debes hacer el siguiente _request_:
 ```curl
@@ -47,7 +47,7 @@ Respuesta esperada:
 }
 ```
 
-Puedes obtener información sobre todos las variables devueltas en la [referencia de la API del recurso Payments](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get).
+Puedes obtener información sobre todos las variables devueltas en la [referencia de la API del recurso Payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get).
 
 ## Buscar pagos
 

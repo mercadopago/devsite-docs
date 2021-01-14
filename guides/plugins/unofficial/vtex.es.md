@@ -5,7 +5,7 @@
 > Importante
 >
 > ¡Lo sentimos! Por el momento, esta página no se encuentra disponible en español.<br>
-[Ir a documentación en portugués](https://www.mercadopago.com.br/developers/pt/guides/plugins/unofficial/vtex//)
+> [Ir a documentación en portugués](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/)
 
 ------------
 
@@ -75,8 +75,6 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | Marketplace fee | Dejar en blanco. |
 | Auto Settle | Dejar por defecto. |
 | Early Security Capture | Puede desactivar la función o elegir en cuánto tiempo quieres realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
-<br>
-
 
 ![Imagen Afiliación](/images/vtex/vtex-hisp-afiliacion-arg.gif)
 
@@ -100,6 +98,7 @@ Para poder utilizar este tipo de checkout se tienen que configurar los medios de
 
 
 <br>
+
 #### Condición de pagos para tarjeta de crédito
 
 Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
@@ -123,6 +122,7 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 
 
 <br>
+
 #### Condición de pagos para tarjeta de débito
 
 Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
@@ -137,6 +137,7 @@ Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
 
 
 <br>
+
 #### Condición de pagos para medios de pago en efectivo
 
 Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos:
@@ -264,7 +265,6 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | Marketplace | Dejar en blanco. |
 | Marketplace fee | Dejar en blanco. |
 | Early Security Capture | Puede desactivar la función o elegir en cuánto tiempo desea realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
-<br>
 
 
 > WARNING
@@ -296,6 +296,7 @@ Para poder utilizar este tipo de checkout se tienen que configurar los medios de
 
 
 <br>
+
 #### Condición de pagos para tarjeta de crédito
 
 Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
@@ -319,6 +320,7 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 
 
 <br>
+
 #### Condición de pagos para tarjeta de débito
 
 Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
@@ -333,6 +335,7 @@ Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
 
 
 <br>
+
 #### Condición de pagos para medios de pago en efectivo
 
 Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos:
@@ -420,7 +423,6 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | Marketplace | Sólo se debe completar cuando se utiliza el modelo marketplace. Origen del pago |
 | Marketplace Fee | Comisión de cada pago en el modelo marketplace |
 | Captura de seguridad antecipada | Puede desactivar la función o elegir en cuánto tiempo desea realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
-<br>
 
 
 > WARNING
@@ -455,6 +457,7 @@ Para poder utilizar este tipo de checkout se tienen que configurar los medios de
 
 
 <br>
+
 #### Condición de pagos para tarjeta de crédito
 
 Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
@@ -478,6 +481,7 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 
 
 <br>
+
 #### Condición de pagos para medios de pago por transferencia bancaria
 
 Para crear una condición de pago con WebPay, sigue estos pasos: 
@@ -494,6 +498,7 @@ Para crear una condición de pago con WebPay, sigue estos pasos:
 
 
 <br>
+
 #### Condición de pagos para medios de pago en efectivo
 
 Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos: 
@@ -606,7 +611,6 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado pago. |
 | Categoria Principal | Selecciona la categoría correspondiente a su tienda. |
 | Early Security Capture | Puede desactivar la función o elegir en cuánto tiempo desea realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
-<br>
 
 
 > WARNING
@@ -640,6 +644,7 @@ Para poder utilizar este tipo de checkout se tienen que configurar los medios de
 
 
 <br>
+
 #### Condición de pagos para tarjeta de crédito
 
 Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
@@ -664,6 +669,7 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 
 
 <br>
+
 #### Condición de pagos para tarjeta de débito
 
 Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
@@ -679,6 +685,7 @@ Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
 
 
 <br>
+
 #### Condición de pagos para medios de pago por transferencia bancaria
 
 Para crear una condición de pago con PSE, sigue estos pasos: 
@@ -695,6 +702,7 @@ Para crear una condición de pago con PSE, sigue estos pasos:
 
 
 <br>
+
 #### Condición de pagos para medios de pago en efectivo
 
 Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos: 
@@ -821,7 +829,6 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado pago. |
 | Categoria Principal | Selecciona la categoría correspondiente a su tienda. |
 | Early Security Capture | Puede desactivar la función o elegir en cuánto tiempo desea realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
-<br>
 
 
 > WARNING
@@ -852,6 +859,7 @@ Para poder utilizar este tipo de checkout se tienen que configurar los medios de
 
 
 <br>
+
 #### Condición de pagos para tarjeta de crédito
 
 Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
@@ -876,6 +884,7 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 
 
 <br>
+
 #### Condición de pagos para tarjeta de débito
 
 Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
@@ -890,6 +899,7 @@ Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
 
 
 <br>
+
 #### Condición de pagos para medios de pago en efectivo
 
 Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos: 
@@ -982,7 +992,6 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado pago. |
 | Categoria Principal | Selecciona la categoría correspondiente a su tienda. |
 | Early Security Capture | Puede desactivar la función o elegir en cuánto tiempo desea realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
-<br>
 
 
 > WARNING
@@ -990,7 +999,6 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 > Importante
 >
 > El campo Early Security Capture no se encuentra disponible por el momento para Uruguay.
-<br>
 
 
 ![Imagen Afiliación](/images/vtex/vtex-hisp-afiliacion.gif)
@@ -1014,6 +1022,7 @@ Para poder utilizar este tipo de checkout se tienen que configurar los medios de
 
 
 <br>
+
 #### Condición de pagos para tarjeta de crédito
 
 Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
@@ -1037,6 +1046,7 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 
 
 <br>
+
 #### Condición de pagos para medios de pago en efectivo
 
 Para crear una condición de pago con medios de pago en efectivo, sigue estos pasos: 

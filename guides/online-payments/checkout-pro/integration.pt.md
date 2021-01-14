@@ -22,7 +22,7 @@ Instalar o Checkout Pro requer duas etapas:
 
 Insira o seguinte código que consta de três partes:
 
-1.1 Adicione o <a href="https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/previous-requirements#bookmark_pré-requisitos" target="_blank"> SDK do Mercado Pago</a> no seu projeto:
+1.1 Adicione o [SDK do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/previous-requirements#bookmark_pré-requisitos) no seu projeto:
 
 [[[
 ```php
@@ -49,7 +49,7 @@ require 'mercadopago.rb'
 ```
 ]]]
 
-<br/><br/>1.2 Adicione as <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciais</a> para habilitar o uso do SDK do Mercado Pago:<br/>
+<br/><br/>1.2 Adicione as [credenciais]([FAKER][CREDENTIALS][URL]) para habilitar o uso do SDK do Mercado Pago:<br/>
 
 [[[
 ```php
@@ -421,7 +421,7 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 > Não esqueça de acessar de outro navegador ou de encerrar a sessão da sua conta do Mercado Pago antes de fazer os testes. Você não pode pagar com a mesma conta que criou o formulário de pagamento.<br/>
 
 #### Excelente! Você concluiu sua integração.
-_Clique no link dentro do seu site e [teste a integração do seu Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/test-integration/)_.<br/><br/>
+_Clique no link dentro do seu site e [teste a integração do seu Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration/)_.<br/><br/>
 
 ---
 
@@ -433,7 +433,7 @@ _Clique no link dentro do seu site e [teste a integração do seu Checkout Pro](
 >
 > Confira se está tudo em ordem na sua integração com os usuários de teste.
 >
-> [Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/test-integration/)
+> [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration/)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >

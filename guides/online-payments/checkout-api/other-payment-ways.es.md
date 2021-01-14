@@ -123,6 +123,7 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -219,6 +220,7 @@ window.Mercadopago.getIdentificationTypes();
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -638,6 +640,7 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -719,6 +722,7 @@ window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -1027,6 +1031,7 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -1123,6 +1128,7 @@ window.Mercadopago.getIdentificationTypes();
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -1433,6 +1439,7 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -1529,6 +1536,7 @@ window.Mercadopago.getIdentificationTypes();
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -2036,6 +2044,7 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -2132,6 +2141,7 @@ window.Mercadopago.getIdentificationTypes();
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -2449,7 +2459,7 @@ Ten en cuenta que **solo puedes cancelar los pagos que se encuentren en estado p
 >
 > Ten en cuenta que Webpay cancelará automáticamente el pago si no se realizó a los 30 minutos.
 
-Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago.cl/developers/es/guides/manage-account/account/cancellations-and-refunds/).
+Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds/).
 
 ## Tiempos de acreditación del pago
 
@@ -2564,6 +2574,7 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -2660,6 +2671,7 @@ window.Mercadopago.getIdentificationTypes();
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -2943,6 +2955,7 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -3039,6 +3052,7 @@ window.Mercadopago.getIdentificationTypes();
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2

@@ -27,15 +27,13 @@ Para configurar a conta do vendedor, você pode usar as credenciais de teste do 
 
 Execute o curl a seguir para gerar um usuário de teste:
 
-
-[[[
-```curl curl -X POST \
+```curl
+curl -X POST \
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer ENV_ACCESS_TOKEN" \
 "https://api.mercadopago.com/users/test_user" \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
-]]]
 
 ### Resposta
 `HTTP Status 200 OK`
@@ -53,7 +51,7 @@ Execute o curl a seguir para gerar um usuário de teste:
 
 #### 1. Configure a assinatura com os dados do seu usuário vendedo
 
-Use a <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/account/credentials" target="_blank">chave pública de teste</a> do seu usuário vendedor na hora de criar a assinatura que quiser testar.<br>
+Use a [chave pública de teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials) do seu usuário vendedor na hora de criar a assinatura que quiser testar.<br>
 
 #### 2. Faça um pagamento com seu usuário comprador
 

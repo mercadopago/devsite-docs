@@ -50,7 +50,7 @@ A resposta exitosa será um `HTTP Status 200 OK` e restituirá o advanced paymen
 > 
 > OBS.
 > 
-> Ver [referência](https://www.mercadopago.com.ar/developers/es/guides/payments/advanced-payments/wallet-device-fingerprint-sample) ao exemplo completo de Fingerprint e implementação mediante SDK.
+> Ver [referência](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/advanced-payments/wallet-device-fingerprint-sample) ao exemplo completo de Fingerprint e implementação mediante SDK.
 
 O valor `id` da resposta deve ser capturado para ser depois enviado no header `X-Device-Session-Id`.
 

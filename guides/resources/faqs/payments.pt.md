@@ -36,7 +36,7 @@ No momento, o Mercado Pago permite pagamentos somente em moeda local. Ou seja, u
 
 O Mercado Pago conta com uma validação de valores no momento de oferecer os meios de pagamento disponíveis.
 
-No caso em que o valor não cumpra com as condições de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_620" target="_blank">valores mínimos e máximos</a> do meio de pagamento, nosso checkout solicitará iniciar uma seção na conta do Mercado Pago, já que a única opção disponível para usar será dinheiro em conta. Por isso, seus clientes não poderão pagar como convidados.
+No caso em que o valor não cumpra com as condições de [valores mínimos e máximos](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_620) do meio de pagamento, nosso checkout solicitará iniciar uma seção na conta do Mercado Pago, já que a única opção disponível para usar será dinheiro em conta. Por isso, seus clientes não poderão pagar como convidados.
 
 Isso ocorre porque, de acordo com o valor escolhido, você pode visualizar alguns meios de pagamentos e outros não devido a não cumprir com os requisitos necessários. Ou seja, com base no valor do produto e do mínimo ou máximo permitido, serão mostrados os meios de pagamentos disponíveis.
 ------------
@@ -46,7 +46,7 @@ Isso ocorre porque, de acordo com o valor escolhido, você pode visualizar algun
 
 O Mercado Pago conta com uma validação de valores no momento de oferecer os meios de pagamento disponíveis.
 
-No caso em que o valor não cumpra com as condições de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/_324" target="_blank">valores mínimos e máximos</a> do meio de pagamento, nosso checkout solicitará iniciar uma seção na conta do Mercado Pago, já que a única opção disponível para usar será dinheiro em conta. Por isso, seus clientes não poderão pagar como convidados.
+No caso em que o valor não cumpra com as condições de [valores mínimos e máximos](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/_324) do meio de pagamento, nosso checkout solicitará iniciar uma seção na conta do Mercado Pago, já que a única opção disponível para usar será dinheiro em conta. Por isso, seus clientes não poderão pagar como convidados.
 
 Isso ocorre porque, de acordo com o valor escolhido, você pode visualizar alguns meios de pagamentos e outros não devido a não cumprir com os requisitos necessários. Ou seja, com base no valor do produto e do mínimo ou máximo permitido, serão mostrados os meios de pagamentos disponíveis.
 
@@ -96,9 +96,9 @@ Verifique se a identidade da conta vendedor está validada no painel do Mercado 
 É importante que acrescente em sua integração toda a informação necessária para [melhorar a aprovação de seus pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/payment-rejections/#bookmark_recomendações_para_melhorar_sua_aprovação).
 
 ----[mla, mco, mlu, mpe, mlc, mlm]----
-> Se você ainda precisar de ajuda, recomendamos que entre em contato através da <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/charges" target="_blank">Ajuda</a>.
+> Se você ainda precisar de ajuda, recomendamos que entre em contato através da [Ajuda](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/charges).
 ------------
 
 ----[mlb]----
-> Se você ainda precisar de ajuda, recomendamos que entre em contato através da <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/charges" target="_blank">Ajuda</a>.
+> Se você ainda precisar de ajuda, recomendamos que entre em contato através da [Ajuda](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/charges).
 ------------

@@ -13,7 +13,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | NET_DEBIT_AMOUNT | Creditado no valor disponível. |
 | NET_CREDIT_AMOUNT | Debitado no valor disponível. |
 | GROSS_AMOUNT | Valor bruto da transação. |
-| MP_FEE_AMOUNT | Pagamento da tarifa doMercado Pago e/ou Mercado Livre. ----[mla,mpe,mco,mlm,mlu,mlc]---- Inclui IVA. ------------ |
+| MP_FEE_AMOUNT | Pagamento da tarifa doMercado Pago e/ou Mercado Livre. ----[mla, mpe, mco, mlm, mlu, mlc]---- Inclui IVA. ------------ |
 | FINANCING_FEE_AMOUNT | Custo de oferecer parcelamento sem juros. |
 | SHIPPING_FEE_AMOUNT | Custo de envio. |
 | TAXES_AMOUNT | Impostos recebidos por retenção de receita bruta. |
@@ -46,7 +46,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 >
 > Saiba como o relatório é composto e aprenda a analisá-lo.
 >
-> [Como usar o relatório](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/available-money/how-to-use/)
+> [Como usar o relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/how-to-use/)
 
 > RIGHT_BUTTON_REQUIRED_PT
 >
@@ -54,4 +54,4 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 >
 > Saiba as formas de gerar um relatório e siga as etapas para configurar suas preferências.
 >
-> [Gere seus relatórios](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/available-money/generate/)
+> [Gere seus relatórios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/generate/)

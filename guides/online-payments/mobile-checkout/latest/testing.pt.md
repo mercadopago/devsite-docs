@@ -140,4 +140,4 @@ Utilize estes cartões de teste para testar os diferentes resultados do pagament
 ------------
 
 
-Você também pode [usar cartões de teste de métodos de pagamento locais de cada país](https://www.mercadopago.com.br/developers/pt/guides/resources/localization/local-cards).
+Você também pode [usar cartões de teste de métodos de pagamento locais de cada país](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/local-cards).

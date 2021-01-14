@@ -1,16 +1,16 @@
 # Otras funcionalidades
 
 
-Puedes adaptar la integración a tu negocio sumando atributos en la preferencia. Hay muchos [datos en una preferencia](https://www.mercadopago.com.ar/developers/es/reference/preferences/resource) que se pueden configurar, pero siempre ten en cuenta qué es lo que tu negocio necesita.
+Puedes adaptar la integración a tu negocio sumando atributos en la preferencia. Hay muchos [datos en una preferencia](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/preferences/resource) que se pueden configurar, pero siempre ten en cuenta qué es lo que tu negocio necesita.
 
 ----[mla, mlb]----
-Si ofreces compras de montos altos, por ejemplo, puedes aceptar [pagos con dos tarjetas de crédito](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_pagos_con_dos_tarjetas_de_crédito) o también, [excluir medios de pago](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_atributos_para_la_preferencia) que no quieras aceptar.
+Si ofreces compras de montos altos, por ejemplo, puedes aceptar [pagos con dos tarjetas de crédito](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_pagos_con_dos_tarjetas_de_crédito) o también, [excluir medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_atributos_para_la_preferencia) que no quieras aceptar.
 ------------
 ----[mlm, mlc, mlu, mco, mpe]----
-Si ofreces compras de montos bajos, por ejemplo, puedes [excluir medios de pago](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_atributos_para_la_preferencia) que no quieras aceptar.
+Si ofreces compras de montos bajos, por ejemplo, puedes [excluir medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_atributos_para_la_preferencia) que no quieras aceptar.
 ------------
 
-A través de la preferencia, puedes [obtener información de tu negocio](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_Obtén_información_sobre_tu_negocio). Y también, medir la efectividad de tus publicidades y darles seguimiento al [integrar un píxel de Facebook](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_asocia_un_píxel_de_facebook) o al [asociar tus anuncios de Google](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_asocia_una_etiqueta_de_google_ads).
+A través de la preferencia, puedes [obtener información de tu negocio](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_Obtén_información_sobre_tu_negocio). Y también, medir la efectividad de tus publicidades y darles seguimiento al [integrar un píxel de Facebook](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_asocia_un_píxel_de_facebook) o al [asociar tus anuncios de Google](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_asocia_una_etiqueta_de_google_ads).
 
 ## Ejemplo de una preferencia completa
 
@@ -176,8 +176,8 @@ También se puede definir un medio de pago para que aparezca por defecto o la ca
 | Atributo | Descripción |
 | --- | --- |
 | `payment_methods` | Clase que describe los atributos y métodos de medios de pago. |
-| `excluded_payment_methods` | Método que excluye por <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">medios de pago</a> específicos: Visa, Mastercard o American Express, entre otras. |
-| `excluded_payment_types` | Método que excluye por tipo de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">medios de pago</a>: efectivo, tarjetas de crédito o débito. |
+| `excluded_payment_methods` | Método que excluye por [medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods#bookmark_medios_de_pago_por_país) específicos: Visa, Mastercard o American Express, entre otras. |
+| `excluded_payment_types` | Método que excluye por tipo de [medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods#bookmark_medios_de_pago_por_país): efectivo, tarjetas de crédito o débito. |
 | `installments` | Método que define la cantidad de cuotas máximas a ofrecer. |
 | `purpose` | Cuando se indique el valor "wallet_purchase", el Checkout aceptará pagos exclusivamente de usuarios registrados en Mercado Pago, con tarjeta y dinero en cuenta. |
 
@@ -187,8 +187,8 @@ También se puede definir un medio de pago para que aparezca por defecto o la ca
 | Atributo | Descripción |
 | --- | --- |
 | `payment_methods` | Clase que describe los atributos y métodos de medios de pago. |
-| `excluded_payment_methods` | Método que excluye por <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">medios de pago</a>  específicos: Visa, Mastercard o American Express, entre otras. |
-| `excluded_payment_types` | Método que excluye por tipo de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/#bookmark_medios_de_pago_por_país" target="_blank">medios de pago</a> : efectivo, tarjetas de crédito o débito. |
+| `excluded_payment_methods` | Método que excluye por [medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods#bookmark_medios_de_pago_por_país)  específicos: Visa, Mastercard o American Express, entre otras. |
+| `excluded_payment_types` | Método que excluye por tipo de [medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods#bookmark_medios_de_pago_por_país) : efectivo, tarjetas de crédito o débito. |
 | `installments` | Método que define la cantidad de mensualidades máximas a ofrecer. |
 | `purpose` | Cuando se indique el valor "wallet_purchase", el Checkout aceptará pagos exclusivamente de usuarios registrados en Mercado Pago, con tarjeta y dinero en cuenta.|
 
@@ -554,14 +554,19 @@ Para configurarlo, agrega el nodo `shipments` con el valor del monto que quieras
 
 Sabemos que es importante maximizar la efectividad de tus anuncios. Por esto, te damos la posibilidad de integrar el Checkout Pro con las plataformas de Facebook Ads y Google Ads para asociar los pagos a tus campañas.
 
+----[mla, mlb]----
 > NOTE
 >
 > Nota
 >
-----[mla, mlb]----
 > Solo se verán asociados los pagos aprobados al instante con tarjetas de crédito o débito, dinero en Mercado Pago o con Mercado Créditos.
 ------------
+
 ----[mlm, mlc, mco, mpe, mlu]----
+> NOTE
+>
+> Nota
+>
 > Solo se verán asociados los pagos aprobados al instante con tarjetas de crédito o débito, o con dinero en Mercado Pago.
 ------------
 
@@ -919,7 +924,7 @@ curl -X POST \
 ![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas.png)
 
 Se puede habilitar la opción de ofrecer pagar con dos tarjetas de crédito desde la cuenta de Mercado Pago.
-Para activar la opción de pago, ve a tus <a href="https://www.mercadopago.com.ar/settings/my-business" target="_blank"> opciones de negocio</a> y elige la opción _Recibir pagos con 2 tarjetas de crédito_.
+Para activar la opción de pago, ve a tus [opciones de negocio](https://www.mercadopago.com.ar/settings/my-business) y elige la opción _Recibir pagos con 2 tarjetas de crédito_.
 
 ![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
 
@@ -933,7 +938,7 @@ Para activar la opción de pago, ve a tus <a href="https://www.mercadopago.com.a
 >
 > Optimiza tu integración y mejora la gestión de tus ventas.
 >
-> [Otras funcionalidades](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/advanced-integration/)
+> [Otras funcionalidades](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/advanced-integration/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -941,4 +946,4 @@ Para activar la opción de pago, ve a tus <a href="https://www.mercadopago.com.a
 >
 > Adapta el estilo de tu marca en la experiencia de compra.
 >
-> [Integración avanzada](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/customizations/)
+> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/customizations/)

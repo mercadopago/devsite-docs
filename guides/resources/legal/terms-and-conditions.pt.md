@@ -27,7 +27,7 @@ Cualquier persona que no acepte estos Términos y Condiciones para Desarrollador
  
 **1.9 Términos y Condiciones:** Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación, se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
  
-**1.10 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago.com.ar/developers) y todas sus versiones pertenecientes a Mercado Libre.
+**1.10 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago[FAKER][URL][DOMAIN]/developers) y todas sus versiones pertenecientes a Mercado Libre.
  
 **1.11 Términos y Condiciones Generales:** Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus servicios a los Usuarios.
 	
@@ -308,7 +308,7 @@ Qualquer pessoa que não aceitar estes Termos e Condições para Desenvolvedores
  
 **1.9 Termos e Condições:** São estes Termos e Condições para Desenvolvedores do Mercado Pago, por meio dos quais o Mercado Pago disponibiliza aos Desenvolvedores a API, para que, a partir de seu uso ou aplicação, sejam desenvolvidos Aplicativos que empreguem conteúdos do Site, sejam integrados ou interajam com ele e/ou com os serviços prestados pelo Mercado Pago ou facilitem o seu uso. 
  
-**1.10 Website:** É o website do Mercado Pago Developers (disponibilizado no URL https://www.mercadopago.com.br/developers) e todas suas versões pertencentes ao Mercado Pago e/ou ao Mercado Livre.
+**1.10 Website:** É o website do Mercado Pago Developers (disponibilizado no URL https://www.mercadopago[FAKER][URL][DOMAIN]/developers) e todas suas versões pertencentes ao Mercado Pago e/ou ao Mercado Livre.
  
 **1.11 Termos e Condições Gerais:** São os dispositivos e políticas segundo os quais o Mercado Pago oferece seus serviços aos Usuários. 
 	
@@ -579,7 +579,7 @@ Cualquier persona que no acepte estos Términos y Condiciones para Desarrollador
  
 **1.9 Términos y Condiciones:** Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación, se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
  
-**1.10 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago.cl/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
+**1.10 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
  
 **1.11 Términos y Condiciones Generales:** Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus servicios a los Usuarios.
  
@@ -848,7 +848,7 @@ Cualquier persona que no acepte estos Términos y Condiciones para Desarrollador
  
 **1.9 Términos y Condiciones:** Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
  
-**1.10 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago.com.co/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
+**1.10 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
  
 **1.11 Términos y Condiciones Generales:** Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus servicios a los Usuarios.
  
@@ -1117,7 +1117,7 @@ Cualquier persona que no acepte estos Términos y Condiciones para Desarrollador
  
 **1.9 Términos y Condiciones:** Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
  
-**1.10 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago.com.pe/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
+**1.10 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
  
 **1.11 Términos y Condiciones Generales:** Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus servicios a los Usuarios.
  
@@ -1389,7 +1389,7 @@ Cualquier persona que no acepte estos Términos y Condiciones para Desarrollador
  
 **1.9 Términos y Condiciones:** Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación, se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
  
-**1.10 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago.com.mx/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
+**1.10 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
  
 **1.11 Términos y Condiciones Generales:** Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus servicios a los Usuarios.
  
@@ -1656,7 +1656,7 @@ Cualquier persona que no acepte estos Términos y Condiciones para Desarrollador
  
 **1.9 Términos y Condiciones:** Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
  
-**1.10 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago.com.uy/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
+**1.10 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
  
 **1.11 Términos y Condiciones Generales:** Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus Servicios a los Usuarios.
  

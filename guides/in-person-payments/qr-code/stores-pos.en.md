@@ -15,7 +15,7 @@ sites_supported:
 
 **Stores** and **Points of Sale** are the concepts you’ll use on Mercado Pago to manage your business and keep track of your accounts. You can have several POS in one Store.
 
-> ![Cajas y Sucursales](/images/stores_pos.en.png) 
+![Cajas y Sucursales](/images/mobile/stores_pos.en.png) 
 
 
 ## Stores
@@ -75,7 +75,7 @@ https://api.mercadopago.com/users/$USER_ID/stores \
 ```
 ]]]
 
-Learn more with our [API reference](https://www.mercadopago.com.ar/developers/en/reference/stores/_users_user_id_stores/post).
+Learn more with our [API reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/stores/_users_user_id_stores/post).
 
 > WARNING
 >
@@ -116,7 +116,7 @@ https://api.mercadopago.com/pos \
 ```
 ]]]
 
-Learn more with our [API Reference](https://www.mercadopago.com.ar/developers/en/reference/pos/_pos/post).
+Learn more with our [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/pos/_pos/post).
 
 Once Point of Sale is created, you’ll be able to see the QR files in the _Response_ section, along with other relevant data. 
 

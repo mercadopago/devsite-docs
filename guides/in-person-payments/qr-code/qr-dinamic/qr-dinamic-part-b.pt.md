@@ -67,8 +67,7 @@ Lembre que você só deve alterar os valores de exemplo. Os valores fixos não d
 >
 > Dados a serem considerados
 >
-> - Para o comprimento total do ID 43 e 62, que contêm 3 Sub IDs cada um, é necessário incluir o comprimento total de **todos os caracteres dentro do ID**. Por exemplo:
-----[mlb]---- 43380016com.mercadolibre020110309582245993 ------------ ----[mla]---- 43380016com.mercadolibre020110309446566691 ------------ ----[mlc]---- 43380016com.mercadolibre020110309582115007 ------------ ----[mlu]---- 43380016com.mercadolibre020110309519253179 ------------ ----[mco]---- 43380016com.mercadolibre020110309582249137 ------------ ----[mpe]---- 43380016com.mercadolibre020110309582252133 ------------ ----[mlm]---- 43380016com.mercadolibre020110309582256360 ------------ 
+> - Para o comprimento total do ID 43 e 62, que contêm 3 Sub IDs cada um, é necessário incluir o comprimento total de **todos os caracteres dentro do ID**. Por exemplo: ----[mlb]---- 43380016com.mercadolibre020110309582245993 ------------ ----[mla]---- 43380016com.mercadolibre020110309446566691 ------------ ----[mlc]---- 43380016com.mercadolibre020110309582115007 ------------ ----[mlu]---- 43380016com.mercadolibre020110309519253179 ------------ ----[mco]---- 43380016com.mercadolibre020110309582249137 ------------ ----[mpe]---- 43380016com.mercadolibre020110309582252133 ------------ ----[mlm]---- 43380016com.mercadolibre020110309582256360 ------------ 
 > - Caso o **comprimento dos caracteres** seja menor que 10, um 0 deve ser incluído à esquerda do número inteiro. Por exemplo: “06”.
 > - O CRC é uma verificação do conteúdo. Você deve usar o método `CRC-16/CCITT-FALSE Hexadecimal`. 
 

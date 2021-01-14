@@ -22,7 +22,7 @@ Instalar el Checkout Pro consta de dos pasos:
 
 Escribe el siguiente código que consta de tres partes:
 
-1.1 Suma la <a href="https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/previous-requirements#bookmark_requisitos_previos" target="_blank"> SDK de Mercado Pago</a> en tu proyecto:
+1.1 Suma la [SDK de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/previous-requirements#bookmark_requisitos_previos) en tu proyecto:
 
 [[[
 ```php
@@ -49,7 +49,7 @@ require 'mercadopago.rb'
 ```
 ]]]
 
-<br/><br/>1.2 Agrega las <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciales</a> para habilitar el uso de la SDK de Mercado Pago:<br/>
+<br/><br/>1.2 Agrega las [credenciales]([FAKER][CREDENTIALS][URL]) para habilitar el uso de la SDK de Mercado Pago:<br/>
 
 [[[
 ```php
@@ -421,7 +421,7 @@ Por último, suma el siguiente código para mostrar el botón de pago de tu Chec
 > No te olvides de acceder desde otro navegador o cerrar la sesión de tu cuenta de Mercado Pago antes de probarlo. No puedes pagar con la misma cuenta que creaste el formulario de pago.<br/> 
 
 #### ¡Excelente! Terminaste tu integración.
-_Haz clic en el link dentro de tu sitio y [prueba la integración de tu Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/test-integration/)_.<br/><br/>
+_Haz clic en el link dentro de tu sitio y [prueba la integración de tu Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/test-integration/)_.<br/><br/>
 
 ---
 
@@ -433,7 +433,7 @@ _Haz clic en el link dentro de tu sitio y [prueba la integración de tu Checkout
 >
 > Revisa que esté todo bien en tu integración con los usuarios de prueba.
 >
-> [Pruebas](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/test-integration/)
+> [Pruebas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/test-integration/)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >

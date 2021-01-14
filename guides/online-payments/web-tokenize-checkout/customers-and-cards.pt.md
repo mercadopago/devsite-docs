@@ -4,7 +4,7 @@
 >
 > Pré-requisitos
 >
-> * Ter implementada a [captura de dados de cartão](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card#capturar-datos-de-tarjeta).
+> * Ter implementada a [captura de dados de cartão](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card#capture_os_dados_de_cart_o).
 
 Os clientes e cartões (*customers & cards*) são uma forma de armazenar os dados do cartão **de maneira segura** para melhorar a experiência de compra.
 
@@ -16,7 +16,7 @@ Os *customers* representam seus clientes. Os cartões que armazenar serão deste
 
 Para criar um `Customer` e um `Card` ao mesmo tempo é necessário enviar pelo menos os campos `email` e `token`.
 
-O `token` é o que captura quando esta [tratando o retorno](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/handling-responses) do *Web Tokenize Checkout*.
+O `token` é o que captura quando esta [tratando o retorno](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/handling-responses) do *Web Tokenize Checkout*.
 
 
 > NOTE
@@ -393,7 +393,7 @@ Retorno:
 }
 ```
 
-## Buscar um _Customer_
+## Buscar um Customer
 
 No caso em que não saiba qual é o `id` de seu `Customer`, poderá utilizar a API de `Customer Search` realizando um request `HTTP GET`. O parâmetro requerido para isto é o `email`:
 
@@ -494,7 +494,7 @@ Retorno:
 }
 ```
 
-## Obter os _Cards_ de um _Customer_
+## Obter os Cards de um Customer
 
 Poderá obter uma lista completa de `Cards` de um cliente realizando um request `HTTP GET`:
 

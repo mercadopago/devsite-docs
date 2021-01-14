@@ -138,4 +138,4 @@ Use these test cards to test the different payment results.
 
 ------------
 
-You can also [use test credit cards from local payment methods in each country](https://www.mercadopago.com.ar/developers/en/guides/resources/localization/local-cards).
+You can also [use test credit cards from local payment methods in each country](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/local-cards).

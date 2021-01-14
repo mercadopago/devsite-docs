@@ -17,7 +17,7 @@ Para cobrar a través de un código QR modelo atendido, deberás crear una orden
 
 Te explicamos cómo funciona el modelo atendido: 
 
->![Flujo de pago en punto de venta QR Mercado Pago](/images/qr-user-flow.es.png)
+![Flujo de pago en punto de venta QR Mercado Pago](/images/mobile/qr-user-flow.es.png)
 
 <span></span>
 
@@ -85,7 +85,7 @@ Las notificaciones IPN (Instant Payment Notification) son la **forma automática
 
 Implementa IPN de `merchant_order` junto con una búsqueda de la orden por `external_reference` como método de contigencia.
 
-<a href="https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn/" target="_blank">Recibir notificaciones IPN</a>
+[Recibir notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn)
 
 ---
 ### Próximos pasos
@@ -97,7 +97,7 @@ Implementa IPN de `merchant_order` junto con una búsqueda de la orden por `exte
 >
 > Conoce las opciones que dispones para llevar tu integración al siguiente nivel.
 >
-> [Integración avanzada](https://www.mercadopago.com.ar/developers/es/guides/in-person-payments/qr-code/advanced-integration/)
+> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/advanced-integration/)
 
 
 > RIGHT_BUTTON_RECOMMENDED_ES
@@ -106,4 +106,4 @@ Implementa IPN de `merchant_order` junto con una búsqueda de la orden por `exte
 >
 > Realiza los casos de uso más frecuentes para validar tu integración.
 >
-> [Prueba tu integración](https://www.mercadopago.com.ar/developers/es/guides/in-person-payments/qr-code/integration-test/)
+> [Prueba tu integración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/integration-test/)

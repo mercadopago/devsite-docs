@@ -9,7 +9,7 @@ Um pagamento pode ser recusado por um erro com o meio de pagamento ou porque nã
 >
 > Nota
 >
-> Se quiser mais informações, consulte [os estados e motivos de recusa existentes](https://www.mercadopago.com.ar/developers/pt/guides/online-payments/checkout-api/handling-responses).
+> Se quiser mais informações, consulte [os estados e motivos de recusa existentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/handling-responses).
 
 Para evitar perdas de receitas de seu negócio e melhorar a experiência de seus clientes, trabalhamos com os emissores responsáveis de cada meio de pagamento e utilizamos as últimas tecnologias para evitar a fraude e aumentar a quantidade de pagamentos aprovados.
 
@@ -59,7 +59,7 @@ Quando o nosso sistema de prevenção de fraude detectar um pagamento suspeito, 
 >
 > Nota
 >
-> Se você quiser mais informações, consulte os [estados e motivos de recusa existentes](https://www.mercadopago.com.ar/developers/pt/guides/online-payments/checkout-api/handling-responses).
+> Se você quiser mais informações, consulte os [estados e motivos de recusa existentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/handling-responses).
 
 ## Recomendações para melhorar sua aprovação
 

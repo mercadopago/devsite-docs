@@ -17,7 +17,7 @@ Para receber por meio de um código QR modelo atendido, deverá criar um pedido 
 
 Explicamos como funciona o modelo atendido:
 
->![Fluxo de pagamento no ponto de venda QR Mercado Pago](/images/qr-user-flow.pt.png)
+![Fluxo de pagamento no ponto de venda QR Mercado Pago](/images/mobile/qr-user-flow.pt.png)
 
 <span></span>
 
@@ -78,11 +78,11 @@ A resposta será um `HTTP 204 No Content`.
 
 ## Receba notificações de suas ordens 
 
-As [notificações IPN](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn/) (Instant Payment Notification) são a **forma automática de aviso da criação de novas ordens e as atualizações de seus estados**. Por exemplo, se foram aprovadas, recusadas ou se estiverem pendentes. 
+As [notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/) (Instant Payment Notification) são a **forma automática de aviso da criação de novas ordens e as atualizações de seus estados**. Por exemplo, se foram aprovadas, recusadas ou se estiverem pendentes. 
 
 Implementa IPN de `merchant_order` junto com uma busca do pedido por `external_reference` como método de contingência.
 
-<a href="https://www.mercadopago.com.ar/developers/pt/guides/notifications/ipn/" target="_blank"> Receber notificações IPN </a>
+[Receber notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn)
 
 ---
 ### Próximos passos
@@ -94,7 +94,7 @@ Implementa IPN de `merchant_order` junto com uma busca do pedido por `external_r
 >
 > Conheça as opções disponibilizadas para chegar à integração para o seguinte nível.
 >
-> [Integração avançada](https://www.mercadopago.com.br/developers/pt/guides/in-person-payments/qr-code/advanced-integration/)
+> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/advanced-integration/)
 
 
 > RIGHT_BUTTON_RECOMMENDED_PT
@@ -103,4 +103,4 @@ Implementa IPN de `merchant_order` junto com uma busca do pedido por `external_r
 >
 > Realiza os casos de uso mais frequentes para validar sua integração.
 >
-> [Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/in-person-payments/qr-code/integration-test/)
+> [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/integration-test/)

@@ -12,8 +12,6 @@ indexable: false
 >
 > Ter realizado la integração de [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction).
 
-</br>
-
 > WARNING
 >
 > Contato comercial necessário
@@ -45,4 +43,4 @@ Pronto! Seu **Checkout Pro** agora estará funcionando no Modelo Gateway.
 
 ### Próximos passos
 
-* [Concilie suas operações](https://www.mercadopago.com.ar/developers/pt/guides/online-payments/gateway/general-considerations/reconciliation)
+* [Concilie suas operações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/gateway/general-considerations/reconciliation)

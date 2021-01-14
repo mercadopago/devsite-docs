@@ -149,7 +149,7 @@ preference.save
 
 Mientras más información nos envíes, mejor será la aprobación de los pagos y la experiencia de tus usuarios.
 
-#### _Payer_
+#### Payer
 
 Es requerido el envío del `email` de tu comprador.
 
@@ -249,7 +249,7 @@ A modo de ejemplo proponemos que inicies el flujo de Mercado Pago desde un botó
 
 [[[
 
-```android-xml
+```android
 ===
 1. Crea un Activity para insertar el botón (**MainActivity**, por ejemplo).  
 2. Agrega un campo de texto para mostrar el resultado del pago.
@@ -505,16 +505,16 @@ El SDK permite configurar el color en formato hexadecimal, es decir por ejemplo 
 
 Las notificaciones son la forma automática de enterarte de tus nuevos pagos y las actualizaciones de sus estados. Esto te permitirá administrar tu _stock_ y mantener tu sistema sincronizado.
 
-Visita la sección [Notificaciones](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn) para conocer más sobre esto.
+Visita la sección [Notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn) para conocer más sobre esto.
 
 ## Prueba la integración
 
 Prueba tu integración antes de salir a producción, a fin de verificar el funcionamiento y realizar los ajustes que necesites.
 
-Para ello debes usar usuario y tarjetas de prueba, visita la sección [Probando](https://www.mercadopago.com.ar/developers/es/guides/online-payments/mobile-checkout/testing) para más información.
+Para ello debes usar usuario y tarjetas de prueba, visita la sección [Probando](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/mobile-checkout/testing) para más información.
 
 ### Próximos pasos
 
-- Visita la sección [Personalización](https://www.mercadopago.com.ar/developers/es/guides/online-payments/mobile-checkout/v3/personalization) para adecuar el flujo de pago a tus necesidades.
-- Para obtener información sobre como hacer pruebas, dirígete a la sección [Probando integración](https://www.mercadopago.com.ar/developers/es/guides/online-payments/mobile-checkout/v3/testing).
+- Visita la sección [Personalización](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/mobile-checkout/v3/personalization) para adecuar el flujo de pago a tus necesidades.
+- Para obtener información sobre como hacer pruebas, dirígete a la sección [Probando integración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/mobile-checkout/v3/testing).
 

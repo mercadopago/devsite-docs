@@ -17,8 +17,6 @@
 >
 > C. Pre-Approval is only available through the personalized Checkout Pro or web tokenize checkout, that is, via the use of our API's.
 
-<br/>
-
 > NOTE
 >
 > Note
@@ -33,11 +31,11 @@
  
  ## Charge the first payment
  
- For the first transaction you will always have to request the data of the card, and pay the payment with security code. It can be done following the steps of our integration by [API](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card/).
+ For the first transaction you will always have to request the data of the card, and pay the payment with security code. It can be done following the steps of our integration by [API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card/).
  
  ## Create a customer and associate the used card
  
- Once the first payment has been made, and having been assured that the card is valid, create a Customer that will be associated with your account and associate a card with it. You can do this following the step by step indicating in our integration of [Users and Cards](https://www.mercadopago.com.ar/developers/en/guides/payments/api/customers-and-cards)
+ Once the first payment has been made, and having been assured that the card is valid, create a Customer that will be associated with your account and associate a card with it. You can do this following the step by step indicating in our integration of [Users and Cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/advanced-integration)
 
 ## Recurring your customers
 
@@ -86,7 +84,7 @@ print_r ($card_token);
 >
 > Note
 >
-> Follow the step by step and avoid fraudulent payments with our recommendations to [improve the approval process](https://www.mercadopago.com.ar/developers/en/guides/pci-compliant-merchants/receiving-payment-by-card/#bookmark_mejora_la_aprobación_enviando_el_device_fingerprint).
+> Follow the step by step and avoid fraudulent payments with our recommendations to [improve the approval process](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/pci-compliant-merchants/receiving-payment-by-card/#bookmark_get_approval_faster_by_submitting_the_device_fingerprint).
 
 ### Do the Payment:
 
@@ -112,12 +110,12 @@ $payment = $mp->post("/v1/payments", $payment_data);
 
 ## Listen for notifications of payments
 
- Every time a payment is made and there is a novelty about the payment, Mercado Pago will send you a notification so you can update your systems. You can see the step by step in our section of [notifications](https://www.mercadopago.com.ar/developers/en/guides/notifications/webhooks)
+ Every time a payment is made and there is a novelty about the payment, Mercado Pago will send you a notification so you can update your systems. You can see the step by step in our section of [notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks)
  
  ## Retries
 
  If the payment without cvv is rejected, we recommend that you follow a retry logic according to the rejection status. For example, if the payment was rejected by expired card it does not make sense for a retry to be made. The client must be asked to inform another card to pay the following charges. In case the rejection is for insufficient funds, it makes sense that a logic of retries be made.
- You can see all the rejections [here](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-api/handling-responses)
+ You can see all the rejections [here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses)
  
  ## Test your integration
 
@@ -136,7 +134,7 @@ $payment = $mp->post("/v1/payments", $payment_data);
 | Perú | 4009 1753 3280 6176 | no disponible | no disponible |
 | Uruguay | 4157 2362 1173 6486 |5808 8877 7464 1586| no disponible |
 
-Also [you can use test cards of local payment methods in each country](https://www.mercadopago.com.ar/developers/en/guides/resources/localization/local-cards).
+Also [you can use test cards of local payment methods in each country](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/local-cards).
 Test all possible scenarios of approved, pending or rejected payment. To do this you must enter in the form in the field `card_holder_name` any of the following prefixes:
 
 * **APRO**: Pago aprobado.  

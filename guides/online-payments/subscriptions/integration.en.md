@@ -19,7 +19,7 @@ There are two ways to integrate subscriptions:
 > 
 > Key concepts
 > 
-> Do you have questions about what a plan or other concept is? Keep the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/introduction" target="_blank">key concepts</a> handy to review them when needed.
+> Do you have questions about what a plan or other concept is? Keep the [key concepts](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/introduction) handy to review them when needed.
 
 
 ## Subscriptions with an associated plan
@@ -32,8 +32,8 @@ When generating the plan you will get the `preapproval_plan_id` that you will us
 
 To create the plan, make the following call to our API with the data you need:
 
-[[[
-```curl curl --location --request POST 'https://api.mercadopago.com/preapproval_plan' \
+```curl 
+curl --location --request POST 'https://api.mercadopago.com/preapproval_plan' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -52,7 +52,6 @@ To create the plan, make the following call to our API with the data you need:
 	}
 }'
 ```
-]]]
 
 #### Attributes
 
@@ -70,7 +69,6 @@ To create the plan, make the following call to our API with the data you need:
 #### Response
 `HTTP Status 200 OK`
 ```json
-
 {
     "id": "2c938084726e18d60172720000000000",
     "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]",
@@ -94,8 +92,8 @@ To create the plan, make the following call to our API with the data you need:
         }
     }
 }
-
 ```
+
 Done! We can now create the subscription and associate it to your plan.
 
 
@@ -103,8 +101,8 @@ Done! We can now create the subscription and associate it to your plan.
 
 Once you have generated your plan and obtained your `preapproval_plan_id`, create the subscription of the payer by API as follows: 
 
-[[[
-```curl curl --location --request POST 'https://api.mercadopago.com/preapproval \
+```curl 
+curl --location --request POST 'https://api.mercadopago.com/preapproval \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -114,7 +112,6 @@ Once you have generated your plan and obtained your `preapproval_plan_id`, creat
    
 }'
 ```
-]]]
 
 #### Attributes
 
@@ -128,7 +125,7 @@ Once you have generated your plan and obtained your `preapproval_plan_id`, creat
 > 
 > Important
 > 
-> ¿Do you have questions about how to create the payment token? Find all the information in the section of <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card#bookmark_card_data_capture" target="_blank">Capture data from the card</a>.
+> ¿Do you have questions about how to create the payment token? Find all the information in the section of [Capture data from the card](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card#bookmark_card_data_capture).
 
 #### Response 
 `HTTP Status 200 OK`
@@ -157,7 +154,7 @@ Once you have generated your plan and obtained your `preapproval_plan_id`, creat
         "end_date": "2021-07-02T11:59:52.581-04:00"
 }
 ```
->You can get more information about the fields in the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/" target="_blank">API Reference</a>.
+>You can get more information about the fields in the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
 
 Done! You have already created a subscription with an associated plan.
 
@@ -170,8 +167,8 @@ If you want to use a subscription without an associated plan, you must first set
 
 To create a subscription with `authorized` status, the card details must be submitted to be associated as follows:
 
-[[[
-```curl curl --location --request POST 'https://api.mercadopago.com/preapproval' \
+```curl 
+curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -191,12 +188,10 @@ To create a subscription with `authorized` status, the card details must be subm
   "status": "authorized"
 }'
 ```
-]]]
 
 #### Response 
 `HTTP Status 200 OK`
 ```json
-
 {
     "id": "2c938084726fca480172750000000000",
     "payer_id": 400500600,
@@ -230,8 +225,8 @@ You can create a subscription with `pending` status and no associated payment me
 
 In order to subscribe, the card data must be uploaded with our form. Only the link returned in the `init_point` property must be shared with the payer:
 
-[[[
-```curl curl --location --request POST 'https://api.mercadopago.com/preapproval' \
+```curl 
+curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -250,13 +245,11 @@ In order to subscribe, the card data must be uploaded with our form. Only the li
   "status": "pending"
 }'
 ```
-]]]
 
 
 #### Response
 `HTTP Status 200 OK`
 ```json
-
 {
     "id": "2c938084726fca480172750000000000",
     "payer_id": 400500600,
@@ -283,7 +276,7 @@ In order to subscribe, the card data must be uploaded with our form. Only the li
 }
 ```
 
-> You can get more information about the fields in the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/" target="_blank">API reference</a>.
+> You can get more information about the fields in the [API reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
 
 
 Attributes

@@ -7,7 +7,7 @@ sites_supported:
     - mlc
     - mpe
 ---
-# **Personalização**
+# Personalização
 
 > WARNING
 >
@@ -236,7 +236,7 @@ Se precisar fazer alguma validação em seu servidor no momento do pagamento, vo
 
 Na classe ServicePreference, você pode configurar a URL e a URI do seu serviço juntamente com um Map para que possa enviar as informações que deseja.
 
-No momento de postar o pagamento, o SDK o fará em seu lugar, [o qual deverá criar o pagamento](https://www.mercadopago.com.ar/developers/pt/reference/payments/_payments/post) e efetuar as validações inerentes ao seu negócio. O SDK irá esperar receber um pagamento, da mesma forma que o serviço do Mercado Pago responde.
+No momento de postar o pagamento, o SDK o fará em seu lugar, [o qual deverá criar o pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments/post) e efetuar as validações inerentes ao seu negócio. O SDK irá esperar receber um pagamento, da mesma forma que o serviço do Mercado Pago responde.
 Assim que a ServicePreference é criada, você deve iniciar o fluxo de pagamento do Mercado Pago, conforme indicado no código abaixo:
 
 [[[
@@ -308,4 +308,4 @@ checkout.start()
 ```
 ]]]
 
-- Para informações sobre como testar, vá para a seção [testando a integração](https://www.mercadopago.com.br/developers/pt/guides/online-payments/mobile-checkout/v3/testing).
+- Para informações sobre como testar, vá para a seção [testando a integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/mobile-checkout/v3/testing).

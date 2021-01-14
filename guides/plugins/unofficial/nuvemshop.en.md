@@ -45,7 +45,17 @@ The **steps to start charging with Mercado Pago** are the following:
 3. Click on "Settings" and then on "Activate".
 4. You are going to be redirected to Mercado Pago so you can log in with your account information. To authorize the connection, click on "Allow".
 <p>&nbsp;</p>
-----[mlb]----    ![Payments Connect - Nuvem Shop](/images/nuvemshop/nuvemshop_connect_1.gif) ------------ ----[mla]----    ![Payments Connect - Nuvem Shop](/images/nuvemshop/ar_tientanube_connect.gif) ------------ ----[mlm, mlc, mlu, mpe, mco]----    ![Payments Connect - Nuvem Shop](/images/nuvemshop/mx_tientanube_connect.gif) ------------
+
+----[mlb]----
+![Payments Connect - Nuvem Shop](/images/nuvemshop/nuvemshop_connect_1.gif)
+------------
+----[mla]----
+![Payments Connect - Nuvem Shop](/images/nuvemshop/ar_tientanube_connect.gif)
+------------
+----[mlm, mlc, mlu, mpe, mco]----
+![Payments Connect - Nuvem Shop](/images/nuvemshop/mx_tientanube_connect.gif)
+------------
+
 <p>&nbsp;</p>
 Done! Mercado Pago is installed on your site.
 
@@ -94,7 +104,16 @@ It allows the **client to complete the purchase on your site**, without being re
 2. In the item "Type of integration" change to the option "Purchase process without leaving the site".
 3. Finally, click on "Save changes".
 <p>&nbsp;</p>
-----[mlb]----    ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_transparente_2.gif) ------------ ----[mla]----    ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_transparente.gif) ------------ ----[mlm, mlc, mlu, mpe, mco]----    ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_transparente.gif) ------------
+
+----[mlb]----
+![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_transparente_2.gif)
+------------
+----[mla]----
+![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_transparente.gif)
+------------
+----[mlm, mlc, mlu, mpe, mco]----
+![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_transparente.gif)
+------------
 
 ### Checkout Pro
 
@@ -104,7 +123,16 @@ It allows the **client to complete the purchase on your site**, without being re
 2. In the item "Type of integration" change to the option "Purchase process on Mercado Pago site".
 3. Finally, click on "Save changes".
 <p>&nbsp;</p>
-----[mlb]----    ![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_3.gif) ------------ ----[mla]----    ![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_redirect.gif) ------------ ----[mlm, mlc, mlu, mpe, mco]----    ![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_redirect.gif) ------------
+
+----[mlb]----
+![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_3.gif)
+------------
+----[mla]----
+![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/ar_tiendanube_checkout_redirect.gif)
+------------
+----[mlm, mlc, mlu, mpe, mco]----
+![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/mx_tiendanube_checkout_redirect.gif)
+------------
 
 > NOTE
 >
@@ -122,15 +150,34 @@ You can also manually synchronize the latest changes in the following way:
 2. In the installments section, click on "Show now".
 3. Finally, click on "Save changes".
 <p>&nbsp;</p>
-----[mlb]----    ![Payments Installment - Nuvem Shop](/images/nuvemshop/nuvemshop_installments_4.gif) ------------ ----[mla]----    ![Payments Installment - Nuvem Shop](/images/nuvemshop/ar_tiendanube_installments.gif) ------------ ----[mlm, mlc, mlu, mpe, mco]----    ![Payments Installment - Nuvem Shop](/images/nuvemshop/mx_tiendanube_istallments.gif) ------------
+
+----[mlb]----
+![Payments Installment - Nuvem Shop](/images/nuvemshop/nuvemshop_installments_4.gif)
+------------
+----[mla]----
+![Payments Installment - Nuvem Shop](/images/nuvemshop/ar_tiendanube_installments.gif)
+------------
+----[mlm, mlc, mlu, mpe, mco]----
+![Payments Installment - Nuvem Shop](/images/nuvemshop/mx_tiendanube_istallments.gif)
+------------
 
 ## Set interest-free installments in your Mercado Pago account
 
-1. Log in to your ----[mlb]---- [Mercado Pago account](https://www.mercadopago.com.br/business#from-section=menu) ------------ ----[mla]---- [Mercado Pago account](https://www.mercadopago.com.ar/business#from-section=menu) ------------ ----[mlm]---- [Mercado Pago account](https://www.mercadopago.com.mx/business#from-section=menu) ------------ ----[mlc]---- [Mercado Pago account](https://www.mercadopago.cl/business#from-section=menu) ------------ ----[mlu]---- [Mercado Pago account](https://www.mercadopago.com.uy/business#from-section=menu) ------------ ----[mpe]---- [Mercado Pago account](https://www.mercadopago.com.pe/business#from-section=menu) y ve a "Tu negocio". ------------ ----[mco]---- [Mercado Pago account](https://www.mercadopago.co/business#from-section=menu) ------------ and go to "Your business".
+1. Log in to your [Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/business#from-section=menu) and go to "Your business".
 2. Access the option "Settings", navigate to "Offer interest-free installments" and click "Activate".
 3. Choose "How many do you want to offer?" and confirm the changes with the "Activate" button.
 <p>&nbsp;</p>
-----[mlb]----    ![Payments Installments - Nuvem Shop](/images/nuvemshop/nuvemshop_account_installments_5.gif) ------------ ----[mla]----    ![Payments Installments - Nuvem Shop](/images/nuvemshop/ar_tiendanube_account_installments_cropped.gif) ------------ ----[mlm, mlc, mlu, mpe, mco]----    ![Payments Installments - Nuvem Shop](/images/nuvemshop/mx_tiendanube-account_installments_cropped.gif) ------------
+
+----[mlb]----
+![Payments Installments - Nuvem Shop](/images/nuvemshop/nuvemshop_account_installments_5.gif)
+------------
+----[mla]----
+![Payments Installments - Nuvem Shop](/images/nuvemshop/ar_tiendanube_account_installments_cropped.gif)
+------------
+----[mlm, mlc, mlu, mpe, mco]----
+![Payments Installments - Nuvem Shop](/images/nuvemshop/mx_tiendanube-account_installments_cropped.gif)
+------------
+
 <p>&nbsp;</p>
 ----[mlb]----
 Done! You are offering installment interest-free, assuming the installment charges you have set.

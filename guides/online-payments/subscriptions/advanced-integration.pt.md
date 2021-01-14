@@ -7,7 +7,7 @@ sites_supported:
 
 # Atualização de assinaturas
 
-Para atualizar, pausar, cancelar ou reativar uma assinatura já criada, é necessário usar o `preapproval_id` que retorna após a <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/introduction/" target="_blank">criação</a>. 
+Para atualizar, pausar, cancelar ou reativar uma assinatura já criada, é necessário usar o `preapproval_id` que retorna após a [criação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/introduction). 
 
 ## Busca de uma assinatura
 
@@ -17,12 +17,10 @@ Os parâmetros a serem adicionados são opcionais e, dependendo dos parâmetros 
 
 Por exemplo, você pode buscar todas as assinaturas pausadas de um cliente: 
 
-[[[
-```curl curl --location --request GET 'https://api.mercadopago.com/preapproval/search?status=paused&payer_email=john@yourdomain.com' \
+```curl
+curl --location --request GET 'https://api.mercadopago.com/preapproval/search?status=paused&payer_email=john@yourdomain.com' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 ```
-]]]
-
 
 ## Alterar cartão e valor
 
@@ -32,8 +30,8 @@ Para __alterar o cartão__, você deve indicar o novo token no atributo `card_to
 
 Com o `application_id` da assinatura que quiser atualizar, faça a seguinte chamada: 
 
-[[[
-```curl curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \
+```curl
+curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -45,7 +43,6 @@ Com o `application_id` da assinatura que quiser atualizar, faça a seguinte cham
   "card_token_id":"1aca87c7338585abdf1edf0000000000"
 }'
 ```
-]]]
 
 >Observe que o token dura 7 dias e pode ser usado apenas uma vez, portanto, este valor não deve ser salvo.
 
@@ -55,16 +52,14 @@ Para __cancelar uma assinatura__, basta especificar o valor `cancelled` no `stat
 
 E para __pausar uma assinatura__, você deve indicar  `paused` no `status`. Você pode ativá-la novamente quando quiser. 
 
-
-[[[
-```curl curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \
+```curl
+curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
   "status": "cancelled"
 }'
 ```
-]]]
 
 ## Reativar uma assinatura pausada
 
@@ -76,9 +71,8 @@ Para isso, atualize o prazo no campo `auto_recurring.end_date` e envie o valor`a
 
 Com o `application_id` da assinatura que quiser atualizar, faça a seguinte chamada: 
 
-
-[[[
-```curl curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \
+```curl
+curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -89,7 +83,6 @@ Com o `application_id` da assinatura que quiser atualizar, faça a seguinte cham
   "status": "authorized"
 }'
 ```
-]]]
 
 ### Ativar assinatura sem prazo final
 
@@ -97,8 +90,8 @@ Para reativar uma assinatura, envie o valor `authorized` no `status`. Isso reati
 
 Com o `application_id` da assinatura que quiser atualizar, faça a seguinte chamada:
 
-[[[
-```curl curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \
+```curl
+curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -106,9 +99,8 @@ Com o `application_id` da assinatura que quiser atualizar, faça a seguinte cham
   "status": "authorized"
 }'
 ```
-]]]
 
->Para saber mais sobre os campos disponíveis, confira as <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/" target="_blank">Referências de API</a>.
+>Para saber mais sobre os campos disponíveis, confira as [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference).
 
 
 ------------

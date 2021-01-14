@@ -27,7 +27,7 @@ Este _fragmento de código HTML_ insertará un botón de pago. Cuando el comprad
 Puedes encontrar tu Public key en la [sección de credenciales]([FAKER][CREDENTIALS][URL]).
 
 
-> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/resources/faqs/credentials/).
+> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials/).
 
 
 ### Paso 3: Obtener los datos
@@ -82,7 +82,7 @@ issuer_id = Request["issuer_id"]
 
 ### Paso 4: Realizar el pago
 
-Para realizar el pago, debes realizar un API call usando el [SDK de Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/sdks) que corresponda con el lenguaje de programación que estés utilizando en tu sitio.
+Para realizar el pago, debes realizar un API call usando el [SDK de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks) que corresponda con el lenguaje de programación que estés utilizando en tu sitio.
 
 Solamente debes realizar un *API call* incluyendo los datos que recibiste del checkout:
 
@@ -226,8 +226,8 @@ Respuesta:
 
 ### Tarjetas de prueba
 
-Para realizar pagos de prueba (con tus credenciales de TEST), es necesario que utilices [tarjetas de prueba](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-api/testing).
+Para realizar pagos de prueba (con tus credenciales de TEST), es necesario que utilices [tarjetas de prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/testing).
 
 ### Promociones
 
-Te recomendamos incluir el [link de promociones](https://www.mercadopago.com.ar/promociones) de **Mercado Pago**, o bien implementar uno de nuestros [banners de medios de pago](https://www.mercadopago.com.ar/developers/es/guides/resources/banners/introduction/).
+Te recomendamos incluir el [link de promociones](https://www.mercadopago.com.ar/promociones) de **Mercado Pago**, o bien implementar uno de nuestros [banners de medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/banners/introduction/).

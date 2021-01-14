@@ -55,7 +55,7 @@ curl -X POST \
 
 ### 1. Configure o checkout com os dados do seu usuário vendedor
 
-Gere uma preferência com as <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciais</a> do usuário de teste que quiser usar como vendedor.
+Gere uma preferência com as [credenciais]([FAKER][CREDENTIALS][URL]) do usuário de teste que quiser usar como vendedor.
 
 ### 2. Faça um pagamento de teste com seu usuário comprador
 
@@ -66,7 +66,7 @@ Testes com cartão de crédito
 Ao abrir o checkout criado com os dados do seu usuário vendedor:
 
 1. Selecione Cartão como meio de pagamento.
-2. Insira os dados de um [cartão de teste.](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/test-integration#bookmark_cartões_de_teste)
+2. Insira os dados de um [cartão de teste.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration#bookmark_cartões_de_teste)
 3. Informe o e-mail e pronto!<br/><br/>
 
 #### Comprar como usuário cadastrado (com conta do Mercado Pago)
@@ -158,7 +158,7 @@ Para **testar diferentes resultados de pagamento**, preencha o dado que quiser n
 
 ## Começar a receber pagamentos
 
-Para começar a cobrar, você deve <a href="[FAKER][CREDENTIALS][URL]" target="_blank">ativar suas credenciais</a>.
+Para começar a cobrar, você deve [ativar suas credenciais]([FAKER][CREDENTIALS][URL]).
 
 Para ativá-las, certifique-se de que as credenciais na sua integração sejam as da conta que recebe o dinheiro das vendas.<br/>
 
@@ -172,7 +172,7 @@ Para ativá-las, certifique-se de que as credenciais na sua integração sejam a
 >
 > Otimize sua integração e melhore o gerenciamento de suas vendas.
 >
-> [Integração avançada](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/advanced-integration/)
+> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/advanced-integration/)
 
 > RIGHT_BUTTON
 >
@@ -180,4 +180,4 @@ Para ativá-las, certifique-se de que as credenciais na sua integração sejam a
 >
 > Adapte o estilo da sua marca na experiência de compra.
 >
-> [Prueba](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/customizations/)
+> [Prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/customizations/)
