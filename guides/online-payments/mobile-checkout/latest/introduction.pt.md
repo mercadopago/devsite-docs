@@ -58,9 +58,11 @@ pod 'MercadoPagoSDK'
 ```
 ]]]
 
+> NOTE
+>
 > Nota
 >
-> Se você tiver a versão 3.x do Mobile Checkout integrada, pode visitar a [documentação de integração da versão 3] (https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/mobile-checkout/v3/introduction).
+> Se você tiver a versão 3.x do Mobile Checkout integrada, pode visitar a [documentação de integração da versão 3](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/mobile-checkout/v3/introduction).<br>
 > Lembre-se de que o suporte ativo é fornecido apenas para a versão principal mais recente e suporte passivo para o anterior, por isso recomendamos uma migração para a nova versão.
 
 Pode-se encontrar a referência dos métodos nos seguintes links: [Documentação
