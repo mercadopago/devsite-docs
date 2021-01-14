@@ -321,11 +321,10 @@ Tenha em conta que para que esse passo funcione é necessário que configure sua
 
 [[[
 ```php
+===
+Encontre o estado do pagamento no campo _status_.
+===
 <?php
-    ===
-    Encontre o estado do pagamento no campo _status_.
-    ===
-
     require_once 'vendor/autoload.php';
 
     MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
