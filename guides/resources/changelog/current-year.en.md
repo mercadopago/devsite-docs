@@ -24,7 +24,7 @@ We have released a new version of SDK NodeJS 1.5.3.
 >
 > [Check GitHub](https://github.com/mercadopago/dx-nodejs/releases/tag/1.5.3) for further details regarding this release.
 
-## January 6th
+### January 6th
 
 > CHANGELOG
 >
@@ -44,7 +44,7 @@ We have released the new version 4.6.2 for WooCommerce.
 >
 > [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.6.2) for further details regarding this release.
 
-## January 4th
+### January 4th
 
 > CHANGELOG
 >
