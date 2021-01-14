@@ -144,10 +144,10 @@ var payment_data = {
 };
 
 // Save and do the payment POST
-mercadopago.payment.save(payment).then(function (data) {
+mercadopago.payment.save(payment_data).then(function (data) {
   // ...    
   // Shows payment stauts
-  Console.log(payment.status);
+  Console.log(data.status);
 }).catch(function (error) {
   // ...
 });
