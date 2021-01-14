@@ -306,10 +306,10 @@ For this to work, you should configure your [private key]([FAKER][CREDENTIALS][U
 
 [[[
 ```php
+===
+You can find payment status in _status_ value.
+===
 <?php
-    ===
-    You can find payment status in _status_ value.
-    ===
     require_once 'vendor/autoload.php';
 
     MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
