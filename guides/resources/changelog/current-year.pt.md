@@ -6,6 +6,26 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Janeiro 2021
 
+### 15 de janeiro
+
+> CHANGELOG
+>
+> Nova versão SDK PHP
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK PHP
+
+Lançamos uma nova versão do SDK PHP 1.10.0.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-php/releases/tag/1.10.0).
+
+## Janeiro 2021
+
 ### 7 de janeiro
 
 > CHANGELOG
