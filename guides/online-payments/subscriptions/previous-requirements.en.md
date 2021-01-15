@@ -53,4 +53,4 @@ Integrate with our [Mercado Pago SDK Javascript](https://www.mercadopago[FAKER][
 >
 > Choose your way to integrate and start receiving recurring payments.
 >
-> [Integrate subscriptions](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/integration/)
+> [Integrate subscriptions](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/integration)

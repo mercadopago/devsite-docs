@@ -172,7 +172,7 @@ Para ativá-las, certifique-se de que as credenciais na sua integração sejam a
 >
 > Otimize sua integração e melhore o gerenciamento de suas vendas.
 >
-> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/advanced-integration/)
+> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/advanced-integration)
 
 > RIGHT_BUTTON
 >
@@ -180,4 +180,4 @@ Para ativá-las, certifique-se de que as credenciais na sua integração sejam a
 >
 > Adapte o estilo da sua marca na experiência de compra.
 >
-> [Prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/customizations/)
+> [Prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/customizations)

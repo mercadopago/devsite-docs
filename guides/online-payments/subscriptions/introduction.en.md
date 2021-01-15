@@ -42,4 +42,4 @@ In order to integrate subscriptions, you need to know four key concepts:
 >
 > View all the necessary requirements to start integrating.
 >
-> [Requirements to integrate](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/previous-requirements/)
+> [Requirements to integrate](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/previous-requirements)

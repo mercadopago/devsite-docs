@@ -18,7 +18,7 @@
 
 5. O usuário segue o fluxo de compra e confirma o pagamento.
 
-6. Imediatamente após o processamento do pagamento é enviada uma notificação para o servidor [IPN] (https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/) relatando que há algo novo.
+6. Imediatamente após o processamento do pagamento é enviada uma notificação para o servidor [IPN] (https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn) relatando que há algo novo.
 
 7. Com o ID de pagamento, você pode [pesquisar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_search/get) o pagamento e continuar os seus processos internos.
 
@@ -236,12 +236,12 @@ https://api.mercadopago.com/pos \
 
 Depois que o usuário fizer o pagamento, você poderá obter os dados usando qualquer uma das seguintes maneiras:
 
-1. [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/): Quando o pagamento é criado, enviamos uma notificação via webhook para a URL configurado no `notification_url` da ordem, você deve se inscrever para o tipo de notificações `merchant_order`.
+1. [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn): Quando o pagamento é criado, enviamos uma notificação via webhook para a URL configurado no `notification_url` da ordem, você deve se inscrever para o tipo de notificações `merchant_order`.
 2. Faça a [pesquisa de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_search/get) usando o `external_reference` como critério de pesquisa.
 
 ## Devoluções
 
-Haverá momentos em que você precisará efetuar a [devolução](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds/) parcial ou total de um pagamento.
+Haverá momentos em que você precisará efetuar a [devolução](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds) parcial ou total de um pagamento.
 
 **Devolução total**
 
@@ -283,7 +283,7 @@ Verifique os [dados de teste](https://www.mercadopago[FAKER][URL][DOMAIN]/develo
 
 ### Dicionário de erros
 
-[Aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/handling-responses/) você pode encontrar nosso dicionário de erros.
+[Aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/handling-responses) você pode encontrar nosso dicionário de erros.
 
 ## Relatórios
 

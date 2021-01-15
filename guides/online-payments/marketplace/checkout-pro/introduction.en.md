@@ -31,7 +31,7 @@ Your [credentials]([FAKER][CREDENTIALS][URL]) are the **keys we provide so you c
 
 * The private key, or Access Token, will allow you to call the rest of the APIs. For example, how to process a payment, make a refund or store cards.
 
-> Do you have any questions? Check our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials/).
+> Do you have any questions? Check our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials).
 
 
 #### [Start creating my Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/marketplace/checkout-pro/create-marketplace)

@@ -115,7 +115,7 @@ curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPRO
 >
 > Check that your created subscriptions are properly configured with the test users.  
 >
-> [Tests](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/testing/)
+> [Tests](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/testing)
 
 
 > RIGHT_BUTTON
@@ -124,4 +124,4 @@ curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPRO
 >
 > In case you have problems, we explain the logic of reattempting collections.
 >
-> [Logic of collection retries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/payment-retry/)
+> [Logic of collection retries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/payment-retry)

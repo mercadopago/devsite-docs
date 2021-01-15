@@ -94,7 +94,7 @@ With data obtained, you can generate your QR!
 
 ## Tests
 
-To validate the QR, you only need to [create a test user](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/integration-test/) to design the QR and another one for scanning and paying from Mercado Pago or Mercado Libre App.
+To validate the QR, you only need to [create a test user](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/integration-test) to design the QR and another one for scanning and paying from Mercado Pago or Mercado Libre App.
 
 > NOTE
 >
@@ -127,4 +127,4 @@ Then, it shows QR code to your customer the way he/she prefers to pay.  And read
 >
 > Learn about your options for your integration to reach the next level.
 >
-> [Integrar modelo QR dinamico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/advanced-integration/)
+> [Integrar modelo QR dinamico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/advanced-integration)

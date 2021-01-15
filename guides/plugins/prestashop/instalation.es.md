@@ -78,4 +78,4 @@ Luego ejecuta los pasos de una nueva instalación para actualizar tu página con
 > Conecta tu cuenta de Mercado Pago al módulo y captura los pagos que recibas por tus ventas online.
 >
 > 
-> [Integrar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/integration/)
+> [Integrar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/integration)

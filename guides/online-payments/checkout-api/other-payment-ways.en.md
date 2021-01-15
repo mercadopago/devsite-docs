@@ -210,7 +210,7 @@ When you call the next function, MercadoPago.js will automatically fill out the 
 window.Mercadopago.getIdentificationTypes();
 ```
 
-> Find more information in the [Document type section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/identification-types/).
+> Find more information in the [Document type section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/identification-types).
 
 <br>
 <span></span>
@@ -426,7 +426,7 @@ To avoid collection issues, you need to cancel expired payments. Cash payments s
 
 Take into account that **you can only cancel payments in process or pending status**. If a payment expires after 30 days, the cancellation is automatic and the final status will be cancelled or expired.
 
-For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds/).
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
 
 ## Payment credit times
 
@@ -871,7 +871,7 @@ To avoid collection issues, you need to cancel expired payments. Cash payments s
 
 Take into account that **you can only cancel payments in process or pending status**. If a payment expires after 30 days, the cancellation is automatic and the final status will be cancelled or expired.
 
-For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds/).
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
 
 ## Payment credit times
 
@@ -1116,7 +1116,7 @@ When you call the next function, MercadoPago.js will automatically fill out the 
 window.Mercadopago.getIdentificationTypes();
 ```
 
-> Find more information in the [Document type section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/identification-types/).
+> Find more information in the [Document type section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/identification-types).
 
 <br>
 <span></span>
@@ -1274,7 +1274,7 @@ To avoid collection issues, you need to cancel expired payments. Cash payments s
 
 Take into account that **you can only cancel payments in process or pending status**. If a payment expires after 30 days, the cancellation is automatic and the final status will be cancelled or expired.
 
-For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds/).
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
 
 ## Payment credit times
 
@@ -1522,7 +1522,7 @@ When you call the next function, MercadoPago.js will automatically fill out the 
 window.Mercadopago.getIdentificationTypes();
 ```
 
-> Find more information in the [Document type section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/identification-types/).
+> Find more information in the [Document type section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/identification-types).
 
 <br>
 <span></span>
@@ -1894,7 +1894,7 @@ To avoid collection issues, you need to cancel expired payments. Cash payments s
 
 Take into account that **you can only cancel payments in process or pending status**. If a payment expires after 30 days, the cancellation is automatic and the final status will be cancelled or expired.
 
-For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds/).
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
 
 ## Payment credit times
 
@@ -2126,7 +2126,7 @@ When you call the next function, MercadoPago.js will automatically fill out the 
 window.Mercadopago.getIdentificationTypes();
 ```
 
-> Find more information in the [Document type section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/identification-types/).
+> Find more information in the [Document type section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/identification-types).
 
 <br>
 <span></span>
@@ -2448,7 +2448,7 @@ Take into account that **you can only cancel payments in process or pending stat
 >
 > Remember that if payments are not made within 30 minutes, Webpay will automatically cancel them.
 
-For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds/).
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
 
 ## Payment credit times
 
@@ -2655,7 +2655,7 @@ When you call the next function, MercadoPago.js will automatically fill out the 
 window.Mercadopago.getIdentificationTypes();
 ```
 
-> Find more information in the [Document type section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/identification-types/).
+> Find more information in the [Document type section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/identification-types).
 
 <br>
 <span></span>
@@ -2821,7 +2821,7 @@ To avoid collection issues, you need to cancel expired payments. Cash payments s
 
 Take into account that **you can only cancel payments in process or pending status**. If a payment expires after 30 days, the cancellation is automatic and the final status will be cancelled or expired.
 
-For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds/).
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
 
 ## Payment credit times
 
@@ -3034,7 +3034,7 @@ When you call the next function, MercadoPago.js will automatically fill out the 
 window.Mercadopago.getIdentificationTypes();
 ```
 
-> Find more information in the [Document type section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/identification-types/).
+> Find more information in the [Document type section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/identification-types).
 
 <br>
 <span></span>
@@ -3340,7 +3340,7 @@ To avoid collection issues, you need to cancel expired payments. Cash payments s
 
 Take into account that **you can only cancel payments in process or pending status**. If a payment expires after 30 days, the cancellation is automatic and the final status will be cancelled or expired.
 
-For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds/).
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
 
 ## Payment credit times
 

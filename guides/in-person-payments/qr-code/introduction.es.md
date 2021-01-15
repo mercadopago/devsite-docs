@@ -62,7 +62,7 @@ Las características principales son:
 > 
 > Nota
 > 
-> Esta documentación refiere a la nueva versión de Código QR. Para ver la versión anterior, ve a la sección de [Código QR antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code-legacy/introduction/).
+> Esta documentación refiere a la nueva versión de Código QR. Para ver la versión anterior, ve a la sección de [Código QR antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code-legacy/introduction).
 
 ---
 
@@ -75,4 +75,4 @@ Las características principales son:
 >
 > Para integrar tu sistema, es importante conocer los datos de tu cuenta y tus credenciales de acceso.
 >
-> [Requisitos previos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/pre-requisites/)
+> [Requisitos previos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/pre-requisites)

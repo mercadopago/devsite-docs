@@ -237,4 +237,4 @@ For more information, go to [refunds and cancellations.](https://www.mercadopago
 ### Test your integration
 
 You can try your Marketplace using your Sandbox credentials to associate the sellers and to make the payments/refunds/cancellations.  
-[Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/testing/)
+[Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/testing)

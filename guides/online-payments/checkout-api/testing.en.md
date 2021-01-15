@@ -167,7 +167,7 @@ Before activating them, verify that the credentials in your integration are thos
 >
 > Help your customers make error-free payments.
 >
-> [Error Response Handling](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses/)
+> [Error Response Handling](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >

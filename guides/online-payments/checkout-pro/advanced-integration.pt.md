@@ -5,7 +5,7 @@
  As notificações IPN (Instant Payment Notification) são a **forma automática de aviso da criação de novos pagamentos e as atualizações de seus status.** Por exemplo se foram aprovados, recusados ou se estão pendentes.
 Permitem que você administre seu estoque e mantenha seu sistema sincronizado.
 
-[Receber notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/)
+[Receber notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn)
 
 ## Informações adicionais para a preferência
 
@@ -232,7 +232,7 @@ Se quer que o redirecionamento seja automático para os pagamentos aprovados, pr
 >
 > Nota
 >
-> Tenha em conta que o atributo `auto_return` só funciona para o modo 'redirect' e 'mobile'. Isso não funciona quando usa o [modo modal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/integration/) já que o comprador está sempre no site.
+> Tenha em conta que o atributo `auto_return` só funciona para o modo 'redirect' e 'mobile'. Isso não funciona quando usa o [modo modal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/integration) já que o comprador está sempre no site.
 
 ![autoreturn](/images/web-payment-checkout/autoreturn-img-br.png)
 
@@ -331,7 +331,7 @@ Você pode encontrar todas as informações na [ seção de Devoluções e cance
 Uma contestação ou chargeback acontece quando o comprador entra em contato com a entidade emissora do cartão e desconhece o pagamento.
 Isso significa que o dinheiro do vendedor, por esse pagamento, será retido da sua conta do Mercado Pago até que seja solucionada.
 
-[ Gerenciar contestações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/chargebacks/)
+[ Gerenciar contestações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/chargebacks)
 
 ---
 
@@ -344,7 +344,7 @@ Isso significa que o dinheiro do vendedor, por esse pagamento, será retido da s
 >
 > Configure seus pagamentos e adapte o Checkout Pro ao seu negócio.
 >
-> [Outras funcionalidades](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/)
+> [Outras funcionalidades](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations)
 
 > RIGHT_BUTTON
 >
@@ -352,4 +352,4 @@ Isso significa que o dinheiro do vendedor, por esse pagamento, será retido da s
 >
 > Adapte o estilo da sua marca na experiência de compra.
 >
-> [Customizações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/customizations/)
+> [Customizações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/customizations)

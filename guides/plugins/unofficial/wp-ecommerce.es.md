@@ -54,17 +54,17 @@ El módulo de Mercado Pago para WP eCommerce está integrado con las siguientes 
 
 ### Checkout personalizado
 
-* [Pagos con tarjeta de crédito](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/basic-checkout/receive-payments/)
+* [Pagos con tarjeta de crédito](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/basic-checkout/receive-payments)
 <br>
 
 ![Custom Checkout](/images/wp-ecommerce/wp-ecommerce-order_custom.png)
 
-* [Pago conn un click (Customer Cards)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)
+* [Pago conn un click (Customer Cards)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript)
 <br>
 
 ![One Click Payment](/images/wp-ecommerce/wp-ecommerce-order_cust_card.png)
 
-* [Otros medios de pago, como por ejemplo Tickets](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)
+* [Otros medios de pago, como por ejemplo Tickets](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/custom-checkout/charge-with-other-methods)
 <br>
 
 ![Tickets](/images/wp-ecommerce/wp-ecommerce-order_ticket.png)

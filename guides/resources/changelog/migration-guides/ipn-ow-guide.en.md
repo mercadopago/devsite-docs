@@ -60,7 +60,7 @@ You will also receive a JSON as follows:
 }
 ```
 
-> You can find more information on how to integrate notifications in the [IPN notification section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/).
+> You can find more information on how to integrate notifications in the [IPN notification section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn).
 
 ## What can I do if I don’t want IPN notifications?
 

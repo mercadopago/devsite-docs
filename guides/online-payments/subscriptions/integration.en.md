@@ -306,7 +306,7 @@ Attributes
 >
 > Check that your subscriptions are properly configured with the test users. 
 >
-> [Tests](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/testing/)
+> [Tests](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/testing)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -314,4 +314,4 @@ Attributes
 >
 > Update, edit or cancel your subscriptions. 
 >
-> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/advanced-integration/)
+> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/advanced-integration)

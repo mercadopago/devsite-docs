@@ -27,6 +27,6 @@ We explain to you how to see information about [monthly collections in your Avai
 > We're sorry
 >
 > This page is currently not available in English.<br>
->[View documentation in Spanish](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/extra/reports-information-details/)
+>[View documentation in Spanish](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/extra/reports-information-details)
 
 ------------

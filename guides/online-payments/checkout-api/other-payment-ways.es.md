@@ -216,7 +216,7 @@ Incluyendo el elemento de tipo _select_ con `id = docType` que se encuentra en e
 window.Mercadopago.getIdentificationTypes();
 ```
 
-> Encuentra más detalle en la [sección de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/identification-types/).
+> Encuentra más detalle en la [sección de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/identification-types).
 
 <br>
 <span></span>
@@ -432,7 +432,7 @@ Es importante que puedas cancelar los pagos luego de su vencimiento para evitar 
 
 Ten en cuenta que **solo puedes cancelar los pagos que se encuentren en estado pendiente o en proceso**. Si la expiración de un pago se produce a los 30 días, la cancelación es automática y el estado final será de cancelado o expirado.
 
-Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds/).
+Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).
 
 ## Tiempos de acreditación del pago
 
@@ -877,7 +877,7 @@ Es importante que puedas cancelar los pagos luego de su vencimiento para evitar 
 
 Ten en cuenta que **solo puedes cancelar los pagos que se encuentren en estado pendiente o en proceso**. Si la expiración de un pago se produce a los 30 días, la cancelación es automática y el estado final será de cancelado o expirado.
 
-Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds/).
+Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).
 
 ## Tiempos de acreditación del pago
 
@@ -1124,7 +1124,7 @@ Incluyendo el elemento de tipo _select_ con `id = docType` que se encuentra en e
 window.Mercadopago.getIdentificationTypes();
 ```
 
-> Encuentra más detalle en la [sección de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/identification-types/).
+> Encuentra más detalle en la [sección de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/identification-types).
 
 <br>
 <span></span>
@@ -1282,7 +1282,7 @@ Es importante que puedas cancelar los pagos luego de su vencimiento para evitar 
 
 Ten en cuenta que **solo puedes cancelar los pagos que se encuentren en estado pendiente o en proceso**. Si la expiración de un pago se produce a los 30 días, la cancelación es automática y el estado final será de cancelado o expirado.
 
-Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds/).
+Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).
 
 ## Tiempos de acreditación del pago
 
@@ -1532,7 +1532,7 @@ Incluyendo el elemento de tipo _select_ con `id = docType` que se encuentra en e
 window.Mercadopago.getIdentificationTypes();
 ```
 
-> Encuentra más detalle en la [sección de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/identification-types/).
+> Encuentra más detalle en la [sección de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/identification-types).
 
 <br>
 <span></span>
@@ -1904,7 +1904,7 @@ Es importante que puedas cancelar los pagos luego de su vencimiento para evitar 
 
 Ten en cuenta que **solo puedes cancelar los pagos que se encuentren en estado pendiente o en proceso**. Si la expiración de un pago se produce a los 30 días, la cancelación es automática y el estado final será de cancelado o expirado.
 
-Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds/).
+Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).
 
 ## Tiempos de acreditación del pago
 
@@ -2137,7 +2137,7 @@ Incluyendo el elemento de tipo _select_ con `id = docType` que se encuentra en e
 window.Mercadopago.getIdentificationTypes();
 ```
 
-> Encuentra más detalle en la [sección de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/identification-types/).
+> Encuentra más detalle en la [sección de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/identification-types).
 
 <br>
 <span></span>
@@ -2459,7 +2459,7 @@ Ten en cuenta que **solo puedes cancelar los pagos que se encuentren en estado p
 >
 > Ten en cuenta que Webpay cancelará automáticamente el pago si no se realizó a los 30 minutos.
 
-Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds/).
+Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).
 
 ## Tiempos de acreditación del pago
 
@@ -2667,7 +2667,7 @@ Incluyendo el elemento de tipo _select_ con `id = docType` que se encuentra en e
 window.Mercadopago.getIdentificationTypes();
 ```
 
-> Encuentra más detalle en la [sección de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/identification-types/).
+> Encuentra más detalle en la [sección de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/identification-types).
 
 <br>
 <span></span>
@@ -2833,7 +2833,7 @@ Es importante que puedas cancelar los pagos luego de su vencimiento para evitar 
 
 Ten en cuenta que **solo puedes cancelar los pagos que se encuentren en estado pendiente o en proceso**. Si la expiración de un pago se produce a los 30 días, la cancelación es automática y el estado final será de cancelado o expirado.
 
-Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds/).
+Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).
 
 ## Tiempos de acreditación del pago
 
@@ -3048,7 +3048,7 @@ Incluyendo el elemento de tipo _select_ con `id = docType` que se encuentra en e
 window.Mercadopago.getIdentificationTypes();
 ```
 
-> Encuentra más detalle en la [sección de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/identification-types/).
+> Encuentra más detalle en la [sección de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/identification-types).
 
 <br>
 <span></span>
@@ -3354,7 +3354,7 @@ Es importante que puedas cancelar los pagos luego de su vencimiento para evitar 
 
 Ten en cuenta que **solo puedes cancelar los pagos que se encuentren en estado pendiente o en proceso**. Si la expiración de un pago se produce a los 30 días, la cancelación es automática y el estado final será de cancelado o expirado.
 
-Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds/).
+Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).
 
 ## Tiempos de acreditación del pago
 

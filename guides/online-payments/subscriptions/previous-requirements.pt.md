@@ -53,4 +53,4 @@ Integre com nosso [SDK Javascript do Mercado Pago](https://www.mercadopago[FAKER
 >
 > Escolha sua forma de integração e comece a receber pagamentos recorrentes.
 >
-> [Integre assinaturas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/integration/)
+> [Integre assinaturas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/integration)

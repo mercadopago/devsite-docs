@@ -149,4 +149,4 @@ curl -X POST \
 
 ### Next steps
 
-* [Reconcile your operations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/gateway/general-considerations/reconciliation/)
+* [Reconcile your operations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/gateway/general-considerations/reconciliation)

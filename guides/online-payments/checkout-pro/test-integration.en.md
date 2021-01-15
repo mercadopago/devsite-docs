@@ -170,7 +170,7 @@ To activate them, verify that the credentials in your integration are those of t
 >
 > Optimize your integration and improve the management of your sales.
 >
-> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/advanced-integration/)
+> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/advanced-integration)
 
 > RIGHT_BUTTON
 >
@@ -178,4 +178,4 @@ To activate them, verify that the credentials in your integration are those of t
 >
 > Adapt the style of your brand in the buying experience.
 >
-> [Customization](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/customizations/)
+> [Customization](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/customizations)

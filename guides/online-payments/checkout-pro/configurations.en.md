@@ -893,7 +893,7 @@ To activate the payment option, go to your [business options](https://www.mercad
 >
 > Optimize your integration and improve the management of your sales.
 >
-> [Advanced Integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/advanced-integration/)
+> [Advanced Integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/advanced-integration)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -901,4 +901,4 @@ To activate the payment option, go to your [business options](https://www.mercad
 >
 > Adapt the style of your brand in the buying experience.
 >
-> [Customization](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/customizations/)
+> [Customization](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/customizations)

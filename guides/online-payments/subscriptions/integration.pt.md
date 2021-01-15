@@ -306,7 +306,7 @@ Atributos
 >
 > Verifique se suas assinaturas estão configuradas corretamente com os usuários de teste. 
 >
-> [Testes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/testing/)
+> [Testes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/testing)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
@@ -314,4 +314,4 @@ Atributos
 >
 > Atualize, altere ou cancele suas assinaturas.
 >
-> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/advanced-integration/)
+> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/advanced-integration)

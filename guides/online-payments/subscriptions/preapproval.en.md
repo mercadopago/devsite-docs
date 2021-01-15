@@ -31,7 +31,7 @@
  
  ## Charge the first payment
  
- For the first transaction you will always have to request the data of the card, and pay the payment with security code. It can be done following the steps of our integration by [API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card/).
+ For the first transaction you will always have to request the data of the card, and pay the payment with security code. It can be done following the steps of our integration by [API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card).
  
  ## Create a customer and associate the used card
  
