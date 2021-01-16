@@ -1,6 +1,6 @@
 # Como criar um link de pagamento?
 
-Comece a receber pagamentos pelas redes sociais, e-mail ou site é muito fácil.
+Começar a receber pagamentos pelas redes sociais, e-mail ou site é muito fácil.
 
 ## Configurações básicas
 
