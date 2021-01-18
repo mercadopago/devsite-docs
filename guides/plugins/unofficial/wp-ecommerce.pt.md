@@ -59,7 +59,7 @@ O módulo do Mercado Pago para WP eCommerce é integrado com as seguintes funcio
 
 ![Custom Checkout](/images/wp-ecommerce/wp-ecommerce-order_custom.png)
 
-* [Pagamento com 1 Click (Cartões de Clientes)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript)
+* [Pagamento com 1 Click (Cartões de Clientes)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/solutions/payments/custom-checkout/one-click-charges/javascript)
 <br>
 
 ![One Click Payment](/images/wp-ecommerce/wp-ecommerce-order_cust_card.png)
