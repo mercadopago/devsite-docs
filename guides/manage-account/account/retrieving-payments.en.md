@@ -47,7 +47,7 @@ Expected response:
 }
 ```
 
-You can get information about all the returned variables in the [API reference for the resource Payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get).
+You can get information about all the returned variables in the [API reference for the resource Payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get).
 
 ## Search payments
 
