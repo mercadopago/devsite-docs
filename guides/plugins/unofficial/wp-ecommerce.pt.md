@@ -54,7 +54,7 @@ O módulo do Mercado Pago para WP eCommerce é integrado com as seguintes funcio
 
 ### Checkout Transparente
 
-* [Pagamento com Cartão de Crédito](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/basic-checkout/receive-payments)
+* [Pagamento com Cartão de Crédito](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/solutions/payments/basic-checkout/receive-payments)
 <br>
 
 ![Custom Checkout](/images/wp-ecommerce/wp-ecommerce-order_custom.png)
