@@ -13,7 +13,7 @@ Once the module is installed, follow these steps to integrate:
 
 1. Create a [seller account](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-company?confirmation_url=https%3A%2F%2Fwww.mercadopago[FAKER][URL][DOMAIN]%2Fcomo-cobrar)  in Mercado Pago if you don’t have one yet.
 2. Obtain the Access Token and Public Key [credencials]([FAKER][CREDENTIALS][URL]) and paste them into the Production and Testing fields that you will find in the module configuration.
-3. Approve the account to [go to Production](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-api/goto-production) and receive money from your sales in Mercado Pago.
+3. Approve the account to [go to Production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production) and receive money from your sales in Mercado Pago.
 
 Done! With this you can capture the payments you receive in WooCommerce with your Mercado Pago account.
 
