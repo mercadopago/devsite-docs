@@ -86,7 +86,7 @@ Por ejemplo, si la tarjeta no tiene saldo suficiente para la compra, puedes reco
 >
 > Optimiza tu integración y mejora la gestión de tus ventas.
 >
-> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es//guides/online-payments/checkout-api/advanced-integration)
+> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/advanced-integration)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
