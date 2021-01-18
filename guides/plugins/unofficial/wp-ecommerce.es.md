@@ -64,7 +64,7 @@ El módulo de Mercado Pago para WP eCommerce está integrado con las siguientes 
 
 ![One Click Payment](/images/wp-ecommerce/wp-ecommerce-order_cust_card.png)
 
-* [Otros medios de pago, como por ejemplo Tickets](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/custom-checkout/charge-with-other-methods)
+* [Otros medios de pago, como por ejemplo Tickets](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/solutions/payments/custom-checkout/charge-with-other-methods)
 <br>
 
 ![Tickets](/images/wp-ecommerce/wp-ecommerce-order_ticket.png)
