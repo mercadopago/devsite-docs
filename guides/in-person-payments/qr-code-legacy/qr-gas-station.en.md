@@ -18,7 +18,7 @@
 
 1. The user follows the purchase flow and confirms the payment.
 
-1. Immediately after the payment is processed, we send to your server a notification [INP](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn) informing that there is a novelty.
+1. Immediately after the payment is processed, we send to your server a notification [INP](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn) informing that there is a novelty.
 
 1. With the payment identifier, you can [search](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_search/get) the payment and continue with your internal processes.
 
