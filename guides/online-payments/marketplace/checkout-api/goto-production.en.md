@@ -34,7 +34,7 @@ You can see more information in the [Improves approval section](https://www.merc
 ## Notifications and payment search
 
 In order to take full advantage of the Mercado Pago integration, one of the key points to highlight is the use of notifications to update orders in real time in your system.
-Both types of notifications, [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/) or [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks), are sent from one server to another through an `HTTP POST` request informing your transactions.
+Both types of notifications, [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn) or [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks), are sent from one server to another through an `HTTP POST` request informing your transactions.
 By implementing these notifications, you will be able to find out all the updates of your transactions at the moment.
 
 ## User experience
@@ -77,4 +77,3 @@ You need to have a policy on terms and conditions and make it clear that you are
 > Find all the information required to interact with our APIs.
 >
 > [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference)
-
