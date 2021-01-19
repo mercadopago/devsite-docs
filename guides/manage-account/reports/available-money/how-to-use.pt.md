@@ -79,4 +79,4 @@ A versão padrão mostrará uma visualização estendida das colunas. O relatór
 >
 > Saiba o que significa cada termo e os detalhes das colunas que compõem o relatório.
 >
-> [Glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pr/guides/manage-account/reports/available-money/glossary)
+> [Glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/glossary)
