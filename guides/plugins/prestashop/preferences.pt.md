@@ -82,7 +82,7 @@ Escolha a experiência de compra que seus clientes terão ao pagar:
 >
 > Nota
 >
-> Confira a [documentação do Checkout Pro ](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction) para saber mais sobre todos os recursos e funcionalidades.
+> Confira a [documentação do Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction) para saber mais sobre todos os recursos e funcionalidades.
 
 ### Checkout Personalizado
 
