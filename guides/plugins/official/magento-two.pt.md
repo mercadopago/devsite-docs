@@ -27,7 +27,7 @@ O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcion
 
 * Checkout Transparente
     * [Pagamento com Cartão de Crédito](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card)
-    * [Pagamento com um click (Clientes e Cartões)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt//guides/online-payments/checkout-api/advanced-integration)
+    * [Pagamento com um click (Clientes e Cartões)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/advanced-integration)
     * [Pagamento com outros meios (Boleto)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways)
     * [Devolução de Pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds)
 
