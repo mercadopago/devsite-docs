@@ -19,11 +19,12 @@ sites_supported:
 
 Para integrar o modelo desatendido, é necessário: 
   
-1.  Criar o serviço que será invocado ao receber uma intenção de pagamento e sua lógica associada quando: 
-  * A. As informações do pedido **ainda não foram disponibilizadas**. 
-  * B. As informações do pedido **são disponibilizadas**. 
+   1.  Criar o serviço que será invocado ao receber uma intenção de pagamento e sua lógica associada quando: 
 
-2. Declarar o URL de seu domínio a Mercado Pago.
+      * A. As informações do pedido **ainda não foram disponibilizadas**. 
+      * B. As informações do pedido **são disponibilizadas**. 
+
+   2. Declarar o URL de seu domínio a Mercado Pago.
 
 ## 1. Criar o serviço que será invocado para receber uma intenção de pagamento 
 
@@ -57,8 +58,7 @@ Nesses casos, o serviço deve responder uma mensagem de erro para que o usuário
 | ------------- | ------------------------------------------------------------ |
 | `in_process`     | Tem um pedido em processo, porém, ainda não foi possível determinar o valor a receber. |
 | `unavailable`           | Não tem pedido em processo ou pendente de pagamento.  |
-| `invalid`           | Os parâmetros adicionais (ID de estação, posição, etc.) fazem referência a uma localização desconhecida.  |
-| `timeout`           | O server do vendedor não conseguiu se comunicar com algum dos sistemas internos (por exemplo, a máquina de venda automática) e cancelou a operação. |
+
 
 O `message` é opcional, é uma explicação em texto plano que pode acompanhar o type declarado.
 

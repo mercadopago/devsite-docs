@@ -19,11 +19,12 @@ sites_supported:
 
 To integrate QR unattended model you need to:
 
-1. Create a service that will be called when a payment request is received and its associate logic.
-- A. Order information isn’t available yet. 
-- B. Order information is available.
+   1. Create a service that will be called when a payment request is received and its associate logic.
 
-2. Declare your domain URL to Mercado Pago
+      * A. Order information isn’t available yet. 
+      * B. Order information is available.
+
+   2. Declare your domain URL to Mercado Pago
 
 ## 1. Create a service that will be called when a payment request is received.
 
@@ -55,8 +56,6 @@ In those cases, service must answer with an error message, so the user sees a wa
 | ------------- | ------------------------------------------------------------ |
 | `in_process`     | An order is being processed but an amount is not defined yet.  |
 | `unavailable`           | There’s no order being processed or pending.   |
-| `invalid`           | Secondary parameters (Station ID, Position, etc.) reference an unknown location. |
-| `timeout`           | Merchant server couldn’t communicate with any internal system (For example, vending machine) and cancelled the operation. |
 
 A `message` is a plain text that can come with the declared type and is optional.
 
