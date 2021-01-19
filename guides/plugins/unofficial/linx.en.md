@@ -53,7 +53,7 @@ Once you added the method of payment, **set up data for integration with Mercado
 ![LINX Configuracao](/images/linx/linx_configurando_integracao-2.gif)
 <p>&nbsp;</p>
 
-> Find all the information about your credentials in our [frequently asked questions](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/faqs/credentials/).
+> Find all the information about your credentials in our [frequently asked questions](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/faqs/credentials).
 
 ### Set up credit card data 
 

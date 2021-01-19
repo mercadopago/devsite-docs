@@ -80,7 +80,7 @@ En el caso de que vendas a través de nuestros plugins o soluciones de e-commerc
 
 ## Definir fecha de vencimiento para boleto
 
-Por defecto, la fecha de vencimiento es de 3 días corridos pero puedes [definir la fecha de vencimiento del boleto vía API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways/) a través del campo `date_of_expiration`.
+Por defecto, la fecha de vencimiento es de 3 días corridos pero puedes [definir la fecha de vencimiento del boleto vía API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways) a través del campo `date_of_expiration`.
 ------------
 
 ## Mejora la aprobación de tus pagos

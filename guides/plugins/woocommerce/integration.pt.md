@@ -13,9 +13,9 @@ Quando o módulo estiver instalado, siga estas etapas para integrá-lo:
 
 1. Crie uma [conta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-company?confirmation_url=https%3A%2F%2Fwww.mercadopago[FAKER][URL][DOMAIN]%2Fcomo-cobrar) no Mercado Pago caso ainda não tenha uma.
 2. Obtenha suas [credenciais]([FAKER][CREDENTIALS][URL]) Access Token e Public Key e cole-as nos campos de Produção e Testes que estarão na configuração do módulo.
-3. Homologue a conta para [ir à Produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/goto-production/) e receber o dinheiro das suas vendas no Mercado Pago.
+3. Homologue a conta para [ir à Produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/goto-production) e receber o dinheiro das suas vendas no Mercado Pago.
 
-> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials/).
+> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials).
 
 Pronto! Assim você poderá capturar os pagamentos que receber no WooCommerce com a sua conta do Mercado Pago.
 
@@ -38,4 +38,4 @@ Pronto! Assim você poderá capturar os pagamentos que receber no WooCommerce co
 > Configure suas preferências de pagamento e faça ajustes conforme a experiência que você quer oferecer aos seus clientes.
 >
 >
-> [Preferências](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/preferences/)
+> [Preferências](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/preferences)

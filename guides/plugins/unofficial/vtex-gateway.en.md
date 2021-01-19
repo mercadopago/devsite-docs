@@ -12,5 +12,5 @@ indexable: false
 > Important
 >
 > We're sorry! This page is currently not available in English.<br>
-> [View documentation in Spanish](https://www.mercadopago[FAKER][URL][DOMAIN/developers/es/guides/plugins/unofficial/vtex-gateway/)
+> [View documentation in Spanish](https://www.mercadopago[FAKER][URL][DOMAIN/developers/es/guides/plugins/unofficial/vtex-gateway)
 

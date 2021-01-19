@@ -167,7 +167,7 @@ Antes de activarlas, verifica que las credenciales en tu integración sean las d
 >
 > Ayuda a tus clientes a completar sus pagos sin errores.
 >
-> [Mensajes de respuesta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/handling-responses/)
+> [Mensajes de respuesta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/handling-responses)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >

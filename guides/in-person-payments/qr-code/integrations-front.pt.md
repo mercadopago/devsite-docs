@@ -48,7 +48,7 @@ Você pode consultar suas vendas na relação das atividades de [sua conta de Me
 >
 > Configura as notificações de seus pagamentos.
 >
-> [Que é o código QR?](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/introduction/)
+> [Que é o código QR?](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/introduction)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >

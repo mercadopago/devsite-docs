@@ -36,7 +36,7 @@ Lançamos uma nova versão do SDK NodeJS 1.5.3.
 
 Lançamos a nova versão 4.6.2 para WooCommerce.
 
-[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction/)
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
 
 > GIT
 >
@@ -56,7 +56,7 @@ Lançamos a nova versão 4.6.2 para WooCommerce.
 
 Lançamos a nova versão 4.6.1 para WooCommerce.
 
-[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction/)
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
 
 > GIT
 >

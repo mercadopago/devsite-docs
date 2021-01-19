@@ -54,7 +54,7 @@ Una vez instalado el checkout, sigue estos pasos:
 
 1. Crea una [cuenta vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-company?confirmation_url=https%3A%2F%2Fwww.mercadopago[FAKER][URL][DOMAIN]%2Fcomo-cobrar) en Mercado Pago si todavía no tienes una.
 1. Obtén las [credenciales]([FAKER][CREDENTIALS][URL]) **Public Key** y **Access Token**, y pégalas en los campos de Producción y Pruebas que encontrarás en la configuración de la app.
-1. Homologa la cuenta para [ir a Producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/goto-production/) y recibir el dinero de tus ventas en Mercado Pago.
+1. Homologa la cuenta para [ir a Producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/goto-production) y recibir el dinero de tus ventas en Mercado Pago.
 
 **¡Listo! Con esta configuración podrás comenzar a vender y obtener los pagos que recibas en tu cuenta de Mercado Pago.**
 
@@ -80,7 +80,7 @@ Cuando hagas pruebas, revisa que el flujo de pagos funcione correctamente.
 
 Para empezar a cobrar debes [activar tus credenciales]([FAKER][CREDENTIALS][URL]).
 
-> Consulta los [requisitos para ir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/goto-production/) si tienes alguna duda con el proceso.
+> Consulta los [requisitos para ir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/goto-production) si tienes alguna duda con el proceso.
 
 Al activarlas, asegúrate que las credenciales de Producción ingresadas sean las de la cuenta que reciba el dinero de las ventas. 
 
@@ -125,7 +125,7 @@ Sigue estos pasos para procesar los pagos con Checkout Pro:
 >
 > Nota
 >
-> Consulta la documentación de [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/web-payment-checkout/introduction/) para conocer mejor todas sus características y funcionalidades.
+> Consulta la documentación de [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/web-payment-checkout/introduction) para conocer mejor todas sus características y funcionalidades.
 
 
 ### Mapeo de estados de pago

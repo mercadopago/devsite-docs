@@ -42,4 +42,4 @@ Para poder integrar suscripciones, es necesario que conozcas cuatro conceptos cl
 >
 > Revisa que esté todo bien en tu integración con los usuarios de prueba.
 >
-> [Requisitos para integrar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/previous-requirements/)
+> [Requisitos para integrar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/previous-requirements)

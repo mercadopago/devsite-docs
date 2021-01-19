@@ -1064,4 +1064,4 @@ preference.Save();
 >
 > Certifique-se de que esteja tudo correto na sua integração com os usuários de teste.
 >
-> [Testes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration/)
+> [Testes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration)

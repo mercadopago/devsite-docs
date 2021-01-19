@@ -938,7 +938,7 @@ Para activar la opción de pago, ve a tus [opciones de negocio](https://www.merc
 >
 > Optimiza tu integración y mejora la gestión de tus ventas.
 >
-> [Otras funcionalidades](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/advanced-integration/)
+> [Otras funcionalidades](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/advanced-integration)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -946,4 +946,4 @@ Para activar la opción de pago, ve a tus [opciones de negocio](https://www.merc
 >
 > Adapta el estilo de tu marca en la experiencia de compra.
 >
-> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/customizations/)
+> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/customizations)

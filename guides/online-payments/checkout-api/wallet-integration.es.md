@@ -249,4 +249,4 @@ Para más información sobre cada atributo, consulta la [Referencia de API](http
 >
 > Revisa que esté todo bien en tu integración con los usuarios de prueba.
 >
-> [Pruebas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/test-integration/)
+> [Pruebas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/test-integration)

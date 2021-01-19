@@ -262,4 +262,4 @@ Puedes encontrar más información en el artículo sobre [devoluciones y cancela
 
 Puedes probar tu Marketplace utilizando las credenciales de Sandbox de tu cuenta tanto para asociar a los vendedores como para realizar los cobros/cancelaciones y demás.
 Se podrá utilizar las tarjetas de test proporcionadas por Mercado Pago, y los distintos prefijos para manejar los mensajes de respuesta.
-[Probá tu integración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/testing/)
+[Probá tu integración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/testing)

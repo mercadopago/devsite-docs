@@ -18,7 +18,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 Lançamos a nova versão 4.4.0 para PrestaShop.
 
-[Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction/)
+[Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
 
 > GIT
 >
@@ -57,7 +57,7 @@ Lançamos uma nova versão do SDK NodeJS 1.5.2.
 
 Lançamos a nova versão 4.6.0 para WooCommerce.
 
-[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction/)
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
 
 > GIT
 >
@@ -132,7 +132,7 @@ Lançamos uma nova versão do SDK PHP 2.2.1.
 
 Lançamos a nova versão 4.3.0 para PrestaShop.
 
-[Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction/)
+[Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
 
 > GIT
 >
@@ -186,7 +186,7 @@ Agora, você pode adicionar a opção de receber pagamentos somente de usuários
 
 Lançamos a nova versão 4.5.0 para WooCommerce.
 
-[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction/)
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
 
 > GIT
 >
@@ -242,7 +242,7 @@ Estendemos os prazos de devolução a 180 dias para todos os meios de pagamento.
 
 Lançamos um novo Checkout Transparente para Shopify.
 
-Veja todas as informações na [documentação oficial](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/shopify/).
+Veja todas as informações na [documentação oficial](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/shopify).
 ------------
 
 ### 25 de setembro
@@ -257,7 +257,7 @@ Veja todas as informações na [documentação oficial](https://www.mercadopago[
 
 Lançamos a nova versão 4.2.0 para PrestaShop.
 
-[Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction/)
+[Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
 
 > GIT
 >
@@ -319,7 +319,7 @@ Veja todas as informações na [Referência da API](https://www.mercadopago[FAKE
 
 Lançamos a nova versão 4.4.0 para WooCommerce.
 
-[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction/)
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
 
 > GIT
 >
@@ -354,7 +354,7 @@ Veja todas as informações na [Referência da API](https://www.mercadopago[FAKE
 
 Lançamos a nova versão 4.3.1 para WooCommerce.
 
-[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction/)
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
 
 > GIT
 >
@@ -392,7 +392,7 @@ Para que você possa otimizar suas vendas, adicionamos um novo atributo que perm
 
 Lançamos a nova versão 4.3.0 para WooCommerce.
 
-[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction/)
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
 
 > GIT
 >
@@ -463,7 +463,7 @@ Lançamos uma nova versão do SDK .NET 1.8.1.
 
 Vai integrar Mercado Pago para outra pessoa? Agora você pode solicitar acesso a suas credenciais de forma rápida e segura.
 
-[Saiba mais sobre como solicitar credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials/)
+[Saiba mais sobre como solicitar credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials)
 
 ---
 
@@ -481,7 +481,7 @@ Vai integrar Mercado Pago para outra pessoa? Agora você pode solicitar acesso a
 
 Lançamos a nova versão 4.2.2 para WooCommerce.
 
-[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction/)
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
 
 > GIT
 >
@@ -591,7 +591,7 @@ Lançamos uma nova versão do SDK .NET 1.8.0.
 
 Lançamos uma nova versão do Link de pagamento, totalmente atualizados. Criamos e implementamos uma nova experiência para a criação de links de pagamento para compartilhar on-line por chat, e-mail ou nas redes sociais.
 
-[Ir para a documentação de Link de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/payment-link/intro-button/)
+[Ir para a documentação de Link de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/payment-link/intro-button)
 
 ---
 
@@ -608,7 +608,7 @@ Lançamos uma nova versão do Link de pagamento, totalmente atualizados. Criamos
 > PRODUCT: SDK JAVASCRIPT
 
 Lançamos uma nova versão do SDK Javascript 1.3.0. A partir de agora, é compatível com Internet Explorer 11 para que o possa usar em suas integrações sem problemas.
-[Ir para a documentação do SDK Javascript](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/sdks/official/js/)
+[Ir para a documentação do SDK Javascript](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/sdks/official/js)
 
 ### 18 de maio
 
@@ -622,7 +622,7 @@ Lançamos uma nova versão do SDK Javascript 1.3.0. A partir de agora, é compat
 
 Lançamos a nova versão 4.2.1 para WooCommerce.
 
-[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction/)
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
 
 > GIT
 >
@@ -642,7 +642,7 @@ Lançamos a nova versão 4.2.1 para WooCommerce.
 
 Lançamos a nova versão 4.2.0 para WooCommerce.
 
-[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction/)
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
 
 > GIT
 >
@@ -717,11 +717,11 @@ Lançamos uma nova versão do SDK .NET.
 Renovamos a documentação para usar nossas APIs de pagamento. Adicionamos um exemplo básico do formulário no frontend e também diagramas de funcionamento para te ajudar na hora de integrar.
 
 ----[mlm, mla, mlc, mco, mpe, mlu]----
-[Ir para a documentação de Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction/)
+[Ir para a documentação de Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction)
 ------------
 
 ----[mlb]----
-[Ir para a documentação de Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction/)
+[Ir para a documentação de Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction)
 ------------
 
 ---
@@ -758,7 +758,7 @@ https://api.mercadolibre.com/account/bank_report/search?
 
 ```
 
-> Para mais informações sobre a programação de relatórios, [consulte a documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/general-considerations/reconciliation-reports/).
+> Para mais informações sobre a programação de relatórios, [consulte a documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/general-considerations/reconciliation-reports).
 
 
 ### 19 de março
@@ -773,7 +773,7 @@ https://api.mercadolibre.com/account/bank_report/search?
 
 Lançamos uma nova versão do Prestashop 1.6 & 1.7. Disponibilizamos o Checkout Pro através de modal para que seus compradores possam comprar sem sair de seu site.
 
-[Ir para a documentação de Prestashop 1.6 & 1.7](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction/)
+[Ir para a documentação de Prestashop 1.6 & 1.7](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
 
 > GIT
 >
@@ -797,7 +797,7 @@ Lançamos uma nova versão do Prestashop 1.6 & 1.7. Disponibilizamos o Checkout 
 
 Lançamos a nova versão 4.1.1 para WooCommerce.
 
-[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction/)
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
 
 > GIT
 >
@@ -817,7 +817,7 @@ Lançamos a nova versão 4.1.1 para WooCommerce.
 
 Se você possui campanhas publicitárias para seu negócio, é importante acompanhá-las e ver se elas estão lhe ajudando a concretizar vendas. Para poder melhorá-las e sejam cada vez mais eficientes, acrescentamos a possibilidade de associar um pixel do Facebook e uma tag de acompanhamento de conversões do Google Ads aos pagamentos de seu Checkout Pro.
 
-[Começar a medir a conversão de seus anúncios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/).
+[Começar a medir a conversão de seus anúncios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations).
 
 ### 6 de janeiro
 
@@ -831,7 +831,7 @@ Se você possui campanhas publicitárias para seu negócio, é importante acompa
 
 Lançamos a nova versão 4.1.0 para WooCommerce.
 
-[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction/)
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
 
 > GIT
 >

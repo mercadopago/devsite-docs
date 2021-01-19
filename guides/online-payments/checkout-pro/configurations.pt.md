@@ -918,7 +918,7 @@ Você pode ativar a opção de oferecer pagamento com dois cartões de crédito 
 >
 > Otimize sua integração e melhore o gerenciamento de suas vendas.
 >
-> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/advanced-integration/)
+> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/advanced-integration)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
@@ -926,4 +926,4 @@ Você pode ativar a opção de oferecer pagamento com dois cartões de crédito 
 >
 > Adapte o estilo da sua marca na experiência de compra.
 >
-> [Customizações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/customizations/)
+> [Customizações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/customizations)
