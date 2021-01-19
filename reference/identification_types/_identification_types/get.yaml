@@ -23,16 +23,19 @@ paths:
                 items:
                   $ref: '#/schemas/identification_type'
         '400':
-          - '1001':
+          '1001':
+            description:
               en: 'Public_key not found.'
               es: 'No se ha encontrado una Public_key.'
               pt: 'Public_key not found.'
-          - '1002':
+          '1002':
+            description:
               en: 'Public_key not found 1002.'
               es: 'No se ha encontrado una Public_key 1002.'
               pt: 'Public_key not found 1002.'
         '401':
-          - '1001':
+          '1001':
+            description:
               en: 'The credentials are required.'
               es: 'Las credenciales son requeridas.'
               pt: 'The credentials are required.'

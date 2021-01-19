@@ -1,0 +1,128 @@
+properties:
+  email:
+    type: String
+    example: "jhon@doe.com"
+    description:
+      en: Customer's email. 
+      es: Email del cliente.
+      pt: Email do cliente.
+  first_name:
+    type: String
+    example: Jhon
+    description:
+      en: Customer's name. 
+      es: Nombre del cliente.
+      pt: Nome do cliente.
+  last_name:
+    type: String
+    example: Doe
+    description:
+      en: Customer's last name.
+      es: Apellido del cliente.
+      pt: Sobrenome do cliente.
+  phone:
+    type: Object
+    description:
+      en: Customer phone's information.
+      es: Teléfono del cliente.
+      pt: Telefone do cliente.
+    properties:
+      area_code:
+        type: String
+        example: '55'
+        description:
+          en: Phone's area code.
+          es: Código de área.
+          pt: Código de área.
+      number:
+        type: String
+        example: '991234567'
+        description:
+          en: Phone's number.
+          es: Número de teléfono.
+          pt: Número de telefone.
+  identification:
+    type: Object
+    description:
+      en: Customer identification's information.
+      es: Información sobre la identificación del cliente.
+      pt: Informações sobre a identificação do cliente.
+    properties:
+      type:
+        type: String
+        example: 'CPF'
+        description:
+          en: Identification's type.
+          es: Tipo de identificación.
+          pt: Tipo de identificação.
+      number:
+        type: String
+        example: '12345678900'
+        description:
+          en: Identification's number.
+          es: Número de identificación.
+          pt: Número de identificação.
+  default_address:
+    type: String
+    example: "Home"
+    description:
+      en: Customer's default address.
+      es: Dirección por defecto del cliente.
+      pt: Endereço por defeito do cliente.
+  address:
+    type: Object
+    description:
+      en: Default address's information.
+      es: Información sobre la dirección por defecto del cliente.
+      pt: Informação sobre o endereço padrão do cliente.
+    properties:
+      id:
+        type: String
+        example: '123123'
+        description:
+          en: Address ID.
+          es: Identificador de la dirección del cliente.
+          pt: Identificador do endereço do cliente.
+      zip_code:
+        type: String
+        example: '01234567'
+        description:
+          en: Zip code.
+          es: Código postal.
+          pt: Código postal.
+      street_name:
+        type: String
+        example: 'Rua Exemplo'
+        description:
+          en: Street name.
+          es: Calle.
+          pt: Rua.
+      street_number:
+        type: String
+        example: '123 A'
+        description:
+          en: Street number.
+          es: Número.
+          pt: O Número.
+  date_registered:
+    type: Date(ISO_8601)
+    example: '2000-01-18'
+    description:
+      en: Customer's registration date.
+      es: Fecha de registro del cliente.
+      pt: Data de registo do cliente.
+  description:
+    type: String
+    example: 'Description del user'
+    description:
+      en: Customer's description.
+      es: Descripción del cliente.
+      pt: Descrição do cliente.
+  default_card:
+    type: String
+    example: 'None'
+    description:
+      en: Customer's default card.
+      es: Tarjeta por defecto del cliente.
+      pt: Cartão padrão do cliente.
+  
