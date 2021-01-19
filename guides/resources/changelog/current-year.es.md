@@ -24,8 +24,6 @@ Lanzamos una nueva versión del SDK PHP 1.10.0.
 >
 > Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-php/releases/tag/1.10.0).
 
-## Enero 2021
-
 ### 7 de enero
 
 > CHANGELOG
