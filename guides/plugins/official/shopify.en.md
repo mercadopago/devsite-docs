@@ -54,7 +54,7 @@ Once the checkout is installed, follow these steps:
 
 1. Create a [seller account](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-company?confirmation_url=https%3A%2F%2Fwww.mercadopago[FAKER][URL][DOMAIN]%2Fcomo-cobrar) in Mercado Pago if you don’t have one yet.
 1. Get the **Public Key** and **Access Token** [credentials]([FAKER][CREDENTIALS][URL]), and paste them in the Production and Testing fields that you will find in the app settings.
-1. Approve the account to [go to Production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/goto-production) and receive the money from your sales in Mercado Pago.
+1. Approve the account to [go to Production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production) and receive the money from your sales in Mercado Pago.
 
 **Done! With this configuration you can start selling and get the payments you receive in your Mercado Pago account.**
 
