@@ -1,0 +1,305 @@
+properties:
+  id:
+      type: String
+      description: Customer ID.
+      properties: null
+  email:
+      type: String
+      description: Customer's email.
+      properties: null
+  first_name:
+      type: String (a-zA-Z)
+      description: Customer's name.
+      properties: null
+  last_name:
+      type: String (a-zA-Z)
+      description: Customer's last name.
+      properties: null
+  phone:
+      type: Object
+      description: Customer phone's information.
+      properties:
+        area_code:
+            type: String
+            description: Phone's area code.
+            properties: null
+        number:
+            type: String
+            description: Phone's number.
+            properties: null
+  identification:
+      type: Object
+      description: Customer identification's information.
+      properties:
+        type:
+            type: String
+            description: Identification's type.
+            properties: null
+        number:
+            type: String
+            description: Identification's number.
+            properties: null
+  default_address:
+      type: String
+      description: Customer's default address.
+      properties: null
+  address:
+      type: Object
+      description: Default address's information.
+      properties:
+        id:
+            type: String
+            description: Address ID.
+            properties: null
+        zip_code:
+            type: String
+            description: Zip code.
+            properties: null
+        street_name:
+            type: String
+            description: Street name.
+            properties: null
+        street_number:
+            type: String
+            description: Street number.
+            properties: null
+  date_registered:
+      type: Date(ISO_8601)
+      description: Customer's registration date.
+      properties: null
+  description:
+      type: String
+      description: Customer's description.
+      properties: null
+  date_created:
+      type: Date(ISO_8601)
+      description: Customer's date created.
+      properties: null
+  date_last_updated:
+      type: Date(ISO_8601)
+      description: Last modified date.
+      properties: null
+  metadata:
+      type: Object
+      description: Customer's metadata.
+      properties: null
+  default_card:
+      type: String
+      description: Customer's default card.
+      properties: null
+  cards:
+      type: Object
+      description: Customer's cards.
+      properties:
+        id:
+            type: String
+            description: Card ID.
+            properties: null
+        customer_id:
+            type: String
+            description: Customer ID.
+            properties: null
+        expiration_month:
+            type: Integer
+            description: Card's expiration month.
+            properties: null
+        expiration_year:
+            type: Integer
+            description: Card's expiration year.
+            properties: null
+        first_six_digits:
+            type: String
+            description: Card's first six digits.
+            properties: null
+        last_four_digits:
+            type: String
+            description: Card's last four digits.
+            properties: null
+        payment_method:
+            type: Object
+            description: Payment method information.
+            properties:
+              id:
+                  type: String
+                  description: Payment method ID.
+                  properties: null
+              name:
+                  type: String
+                  description: Payment method name.
+                  properties: null
+              payment_type_id:
+                  type: String
+                  description: Payment method type.
+                  properties: null
+              thumbnail:
+                  type: String
+                  description: Payment method thumbnail.
+                  properties: null
+              secure_thumbnail:
+                  type: String
+                  description: Payment method secure thumbnail.
+                  properties: null
+        security_code:
+            type: Object
+            description: Security code information.
+            properties:
+              length:
+                  type: Integer
+                  description: Security code's length.
+                  properties: null
+              card_location:
+                  type: String
+                  description: Security code's card location.
+                  properties: null
+        issuer:
+            type: Object
+            description: Issuer information.
+            properties:
+              id:
+                  type: Integer
+                  description: Issuer Id.
+                  properties: null
+              name:
+                  type: String
+                  description: Issuer name.
+                  properties: null
+        cardholder:
+            type: Object
+            description: Card holder information.
+            properties:
+              name:
+                  type: Integer
+                  description: Card holder name.
+                  properties: null
+              identification:
+                  type: Integer
+                  description: Identification information.
+                  properties:
+                    number:
+                        type: Integer
+                        description: Identification number.
+                        properties: null
+                    subtype:
+                        type: String
+                        description: Identification subtype.
+                        properties: null
+                    type:
+                        type: String
+                        description: Identification type.
+                        properties: null
+        date_created:
+            type: Date(ISO_8601)
+            description: Card's date created.
+            properties: null
+        date_last_updated:
+            type: Date(ISO_8601)
+            description: Card's last modified date.
+            properties: null
+  addresses:
+      type: Object List
+      description: Customer's addresses.
+      properties:
+        id:
+            type: String
+            description: Address ID.
+            properties: null
+        phone:
+            type: String
+            description: Phone number.
+            properties: null
+        name:
+            type: String
+            description: Address name.
+            properties: null
+        floor:
+            type: String
+            description: Floor.
+            properties: null
+        apartment:
+            type: String
+            description: Apartment.
+            properties: null
+        street_name:
+            type: String
+            description: Street name.
+            properties: null
+        street_number:
+            type: Number
+            description: Street number.
+            properties: null
+        zip_code:
+            type: String
+            description: Postal code of an Address.
+            properties: null
+        city:
+            type: Object
+            description: City information.
+            properties:
+              id:
+                  type: String
+                  description: City ID.
+                  properties: null
+              name:
+                  type: String
+                  description: City name.
+                  properties: null
+        state:
+            type: Object
+            description: State information.
+            properties:
+              id:
+                  type: String
+                  description: State ID.
+                  properties: null
+              name:
+                  type: String
+                  description: State name.
+                  properties: null
+        country:
+            type: Object
+            description: Country information.
+            properties:
+              id:
+                  type: String
+                  description: Country ID.
+                  properties: null
+              name:
+                  type: String
+                  description: Country name.
+                  properties: null
+        neighborhood:
+            type: Object
+            description: Neighborhood information.
+            properties:
+              id:
+                  type: String
+                  description: Neighborhood ID.
+                  properties: null
+              name:
+                  type: String
+                  description: Neighborhood name.
+                  properties: null
+        municipality:
+            type: Object
+            description: Municipality information.
+            properties:
+              id:
+                  type: String
+                  description: Municipality ID.
+                  properties: null
+              name:
+                  type: String
+                  description: Municipality name.
+                  properties: null
+        comments:
+            type: String
+            description: Additional information.
+            properties: null
+        date_created:
+            type: String
+            description: Address date created.
+            properties: null
+  live_mode:
+      type: Boolean
+      description: Whether the customers will be in sandbox or in production mode.
+      properties: null

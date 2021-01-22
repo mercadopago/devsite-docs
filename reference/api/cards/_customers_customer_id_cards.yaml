@@ -1,0 +1,303 @@
+paths:
+  /customers/{customer_id}/cards:
+    get:
+      tags: 
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
+      summary: "Search a customer"
+      description: 'Operation responsable for search a customer based on e-mail and return the data.'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  properties:
+                    id:
+                      type: String
+                      description: Card ID.
+                    date_registered:
+                      type: String
+                      description: Nao sei o que é
+                    date_created:
+                      type: Date(ISO_8601)
+                      description: Card's date created.
+                    date_last_updated:
+                      type: Date(ISO_8601)
+                      description: Card's last modified date.
+                    customer_id:
+                      type: String
+                      description: Customer ID.
+                    expiration_month:
+                      type: Integer
+                      description: Card's expiration month.
+                    expiration_year:
+                      type: Integer
+                      description: Card's expiration year.
+                    first_six_digits:
+                      type: String
+                      description: Card's first six digits.
+                    last_four_digits:
+                      type: String
+                      description: Card's last four digits.
+                    payment_method:
+                      type: Object
+                      description: Payment method information.
+                      properties:
+                        id:
+                          type: String
+                          description: Payment method ID.
+                        name:
+                          type: String
+                          description: Payment method name.
+                        payment_type_id:
+                          type: String
+                          description: Payment method type.
+                        thumbnail:
+                          type: String
+                          description: Payment method thumbnail.
+                        secure_thumbnail:
+                          type: String
+                          description: Payment method secure thumbnail.
+                    security_code:
+                      type: Object
+                      description: Security code information.
+                      properties:
+                        length:
+                          type: Integer
+                          description: Security code's length.
+                        card_location:
+                          type: String
+                          description: Security code's card location.
+                    issuer:
+                      type: Object
+                      description: Issuer information.
+                      properties:
+                        id:
+                          type: Integer
+                          description: Issuer Id.
+                        name:
+                          type: String
+                          description: Issuer name.
+                    cardholder:
+                      type: Object
+                      description: Card holder information.
+                      properties:
+                        name:
+                          type: Integer
+                          description: Card holder name.
+                        identification:
+                          type: Integer
+                          description: Identification information.
+                          properties:
+                            number:
+                              type: Integer
+                              description: Identification number.
+                            subtype:
+                              type: String
+                              description: Identification subtype.
+                            type:
+                              type: String
+                              description: Identification type.
+        '400':
+          '100':
+            description: the credentials are required.
+          '101':
+            description: the customer already exist.
+          '102':
+            description: missing customer id.
+          '103':
+            description: 'parameter must be an object '
+          '104':
+            description: parameter length is too large.
+          '105':
+            description: the customer id is invalid.
+          '106':
+            description: the email format is invalid.
+          '107':
+            description: the first_name is invalid.
+          '108':
+            description: the last_name is invalid.
+          '109':
+            description: the phone.area_code is invalid.
+          '110':
+            description: the phone.number is invalid.
+          '111':
+            description: the identification.type is invalid.
+          '112':
+            description: the identification.number is invalid.
+          '113':
+            description: the address.zip_code is invalid.
+          '114':
+            description: the address.street_name is invalid.
+          '115':
+            description: the date_registered format is invalid.
+          '116':
+            description: the description is invalid.
+          '117':
+            description: the metadata is invalid.
+          '118':
+            description: the body must be a Json Object.
+          '119':
+            description: the card is required.
+          '120':
+            description: card not found.
+          '121':
+            description: the card is invalid.
+          '122':
+            description: the card data is invalid.
+          '123':
+            description: the payment_method_id is required.
+          '124':
+            description: the issuer_id is required.
+          '125':
+            description: invalid parameters.
+          '126':
+            description: invalid parameter. You cannot update the email.
+          '127':
+            description: >-
+              invalid parameter. Cannot resolve the payment method of card,
+              check the payment_method_id and issuer_id.
+          '128':
+            description: >-
+              the email format is invalid. Use
+              'test_payer_[0-9]{1,10}@testuser.com'.
+          '129':
+            description: the customer has reached the maximum allowed number of cards.
+          '140':
+            description: invalid card owner.
+          '150':
+            description: invalid users involved.
+          '200':
+            description: >-
+              invalid range format
+              (range=:date_parameter:after::date_from,before::date_to).
+          '201':
+            description: range attribute must belong to date entity.
+          '202':
+            description: invalid 'after' parameter. It should be date[iso_8601].
+          '203':
+            description: invalid 'before' parameter. It should be date[iso_8601].
+          '204':
+            description: invalid filters format.
+          '205':
+            description: invalid query format.
+          '206':
+            description: attributes to sort must belong to 'customer' entity.
+          '207':
+            description: order filter must be 'asc' or 'desc'.
+          '208':
+            description: invalid 'sort' parameter format.
+        '401':
+          unauthorized:
+            description: unauthorized.
+        '404':
+          not_found:
+            description: not_found.
+    post:
+      tags: 
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
+      summary: "Search a customer"
+      description: 'Operation responsable for search a customer based on e-mail and return the data.'
+      requestBody:
+        properties:
+          date_registered:
+            type: String
+            description: Nao sei o que é
+      responses:
+        '400':
+          '100':
+            description: the credentials are required.
+          '101':
+            description: the customer already exist.
+          '102':
+            description: missing customer id.
+          '103':
+            description: 'parameter must be an object '
+          '104':
+            description: parameter length is too large.
+          '105':
+            description: the customer id is invalid.
+          '106':
+            description: the email format is invalid.
+          '107':
+            description: the first_name is invalid.
+          '108':
+            description: the last_name is invalid.
+          '109':
+            description: the phone.area_code is invalid.
+          '110':
+            description: the phone.number is invalid.
+          '111':
+            description: the identification.type is invalid.
+          '112':
+            description: the identification.number is invalid.
+          '113':
+            description: the address.zip_code is invalid.
+          '114':
+            description: the address.street_name is invalid.
+          '115':
+            description: the date_registered format is invalid.
+          '116':
+            description: the description is invalid.
+          '117':
+            description: the metadata is invalid.
+          '118':
+            description: the body must be a Json Object.
+          '119':
+            description: the card is required.
+          '120':
+            description: card not found.
+          '121':
+            description: the card is invalid.
+          '122':
+            description: the card data is invalid.
+          '123':
+            description: the payment_method_id is required.
+          '124':
+            description: the issuer_id is required.
+          '125':
+            description: invalid parameters.
+          '126':
+            description: invalid parameter. You cannot update the email.
+          '127':
+            description: >-
+              invalid parameter. Cannot resolve the payment method of card,
+              check the payment_method_id and issuer_id.
+          '128':
+            description: >-
+              the email format is invalid. Use
+              'test_payer_[0-9]{1,10}@testuser.com'.
+          '129':
+            description: the customer has reached the maximum allowed number of cards.
+          '140':
+            description: invalid card owner.
+          '150':
+            description: invalid users involved.
+          '200':
+            description: >-
+              invalid range format
+              (range=:date_parameter:after::date_from,before::date_to).
+          '201':
+            description: range attribute must belong to date entity.
+          '202':
+            description: invalid 'after' parameter. It should be date[iso_8601].
+          '203':
+            description: invalid 'before' parameter. It should be date[iso_8601].
+          '204':
+            description: invalid filters format.
+          '205':
+            description: invalid query format.
+          '206':
+            description: attributes to sort must belong to 'customer' entity.
+          '207':
+            description: order filter must be 'asc' or 'desc'.
+          '208':
+            description: invalid 'sort' parameter format.
+        '401':
+          unauthorized:
+            description: unauthorized.
+        '404':
+          not_found:
+            description: not_found.

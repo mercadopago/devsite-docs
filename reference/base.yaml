@@ -28,4 +28,4 @@ tags:
       es: 'Link de Pago'
 #------DEFAULT - ALL ARCHIVES - END------
 
-schemas: !!inc/dir [ 'devsite-docs/reference/local_schemas', { recursive: false, allowEmpty: false }]
+schemas: !!inc/dir [ 'devsite-docs/reference/schemas', { recursive: false, allowEmpty: false }]
