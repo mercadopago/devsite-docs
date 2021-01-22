@@ -17,7 +17,7 @@ This _fragment of HTML code_ will insert a payment button. When the buyer presse
 ```html
 <form action="https://www.my-site.com/process-payment" method="POST">
   <script
-    src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
+    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00">
   </script>
