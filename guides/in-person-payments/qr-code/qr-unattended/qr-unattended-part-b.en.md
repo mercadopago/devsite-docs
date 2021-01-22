@@ -19,12 +19,12 @@ sites_supported:
 
 To integrate QR unattended model you need to:
 
-   1. Create a service that will be called when a payment request is received and its associate logic.
+1. Create a service that will be called when a payment request is received and its associate logic.
 
-      * A. Order information isn’t available yet. 
-      * B. Order information is available.
+   * A. Order information isn’t available yet. 
+   * B. Order information is available.
 
-   2. Declare your domain URL to Mercado Pago
+2. Declare your domain URL to Mercado Pago
 
 ## 1. Create a service that will be called when a payment request is received.
 
