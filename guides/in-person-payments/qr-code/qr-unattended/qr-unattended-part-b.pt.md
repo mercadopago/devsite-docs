@@ -21,24 +21,27 @@ Para integrar o modelo desatendido, é necessário:
   
 1.  Criar o serviço que será invocado ao receber uma intenção de pagamento e sua lógica associada quando: 
 
-    * A. As informações do pedido **ainda não foram disponibilizadas**. 
-    * B. As informações do pedido **são disponibilizadas**.
+    1.1 As informações do pedido **ainda não foram disponibilizadas**.
+
+    1.2 As informações do pedido **são disponibilizadas**.
 
 2. Declarar o URL de seu domínio a Mercado Pago.
 
 ## 1. Criar o serviço que será invocado para receber uma intenção de pagamento 
 
-Tem que **criar um serviço que será invocado por Mercado Pago cada vez que quiser realizar um pagamento** com um código QR.
+É necessário **criar um serviço que será invocado por Mercado Pago cada vez que quiser realizar um pagamento** com um código QR.
 
-Este serviço deve restituir as informações do pedido a cobrar. Por exemplo:  https://www.miempresa.com/pay-mp?storeid=6232&posid=1 
+Este serviço deve restituir as informações do pedido a cobrar. Por exemplo:
+
+> https://www.miempresa.com/pay-mp?storeid=6232&posid=1 
 
 O URL do serviço é declarado no campo URL do caixa (QR).
 
 ## Lógica do serviço 
 
-Implementa a seguinte lógica no serviço para suportar os casos a seguir: 
+Implemente a seguinte lógica no serviço para suportar os casos a seguir: 
 
-### A. As informações do pedido ainda não foram disponibilizadas
+### 1.1 As informações do pedido ainda não foram disponibilizadas
 
 Pode acontecer que as informações do pedido ainda não foram disponibilizadas ao querer realizar o pagamento. Por exemplo, durante o abastecimento de combustível. 
 
@@ -62,7 +65,7 @@ Nesses casos, o serviço deve responder uma mensagem de erro para que o usuário
 
 O `message` é opcional, é uma explicação em texto plano que pode acompanhar o type declarado.
 
-### B. As informações da ordem foram disponibilizadas
+### 1.2. As informações da ordem foram disponibilizadas
 
 Se já existir uma ordem para receber, o serviço deve restituir suas informações. 
 
@@ -94,7 +97,7 @@ Deve utilizar o campo `external_reference` para poder identificar o pedido em se
 
 | Atributo            | Tipo (_type_)       |  Descripción               |
 | ------------- | ------------- | ------------------------------------------------------------ |
-| `collector_id` | _Long_     | Identificador da conta Mercado Pago onde os pagos serão creditados.  |
+| `collector_id` | _Long_     | Identificador da conta Mercado Pago onde os pagamentos serão creditados.  |
 | `sponsor_id` | _Long_           | Identificador da conta Mercado Pago do sistema integrador. |
 | `items.title` | _String_           | Título do produto. |
 | `items.currency_id` | _String (3)_           | Identificador de moeda no formato ISO-4217. |

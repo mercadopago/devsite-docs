@@ -22,8 +22,9 @@ Para integrar el modelo desatendido es necesario:
 
 1. Crear el servicio que será invocado al recibir una intención de pago y su lógica asociada cuando:
 
-    * A. La información de la orden **aún no está disponible**.
-    * B. La información de la orden **está disponible**.
+    1.1 La información de la orden **aún no está disponible**.
+
+    1.2 La información de la orden **está disponible**.
 
 2. Declarar la URL de tu dominio a Mercado Pago.
 
@@ -31,7 +32,9 @@ Para integrar el modelo desatendido es necesario:
 
 Tienes que **crear un servicio que será invocado por Mercado Pago cada vez que se quiera realizar un pago** con un código QR. 
 
-Este servicio debe devolver la información de la orden a cobrar. Por ejemplo: https://www.miempresa.com/pay-mp?storeid=6232&posid=1
+Este servicio debe devolver la información de la orden a cobrar. Por ejemplo: 
+
+> https://www.miempresa.com/pay-mp?storeid=6232&posid=1
 
 La URL del servicio se declara en el campo URL de la caja (QR).
 
@@ -39,7 +42,7 @@ La URL del servicio se declara en el campo URL de la caja (QR).
 
 Implementa la siguiente lógica en el servicio para soportar los siguientes casos: 
 
-### A. La información de la orden aún no está disponible
+### 1.1 La información de la orden aún no está disponible
 
 Puede suceder que la información de la orden todavía no se encuentre disponible al querer realizar el pago. Por ejemplo, durante la carga de combustible. 
 
@@ -62,7 +65,7 @@ En estos casos, el servicio debe responder un mensaje de error para que el usuar
 
 El `message` es opcional, es  una explicación en texto plano que puede acompañar al type declarado.
 
-### B. La información de la orden está disponible
+### 1.2 La información de la orden está disponible
 
 Si ya existe la orden para ser cobrada, el servicio debe devolver su información. 
 
