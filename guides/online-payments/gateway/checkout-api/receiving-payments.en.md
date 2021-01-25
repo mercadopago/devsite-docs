@@ -13,23 +13,21 @@ indexable: false
 >
 > This product is only available through prior contact with one of our executives. 
 
-</br>
-
 > NOTE
 >
 > Pre-requisites
 >
-> Have already integrated the [Payments's API](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-api/introduction.en.md)
+> Have already integrated the [Payments's API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction.en.md)
 
 ## New concepts
 
 Before we begin with the integration changes, is important for you to know about these new concepts:
 
-|Attribute|Type|Description|
-|---|---|---|
-|`processing_mode`| String | Indicates the processing mode. The options are **gateway** or **aggregator**|
-|`merchant_account_id`| String | Indicates the merchant ID. Can only be used when `processing_mode` is equal to gateway |
-|`payment_method_option_id`| String | Identifies unequivocally the representation of a `payment_method` + `issuer` + `merchant_account_id`|
+| Attribute | Type | Description |
+| --- | --- | --- |
+| `processing_mode` | String | Indicates the processing mode. The options are **gateway** or **aggregator**|
+| `merchant_account_id` | String | Indicates the merchant ID. Can only be used when `processing_mode` is equal to gateway |
+| `payment_method_option_id` | String | Identifies unequivocally the representation of a `payment_method` + `issuer` + `merchant_account_id` |
 
 ## Integration
 
@@ -124,10 +122,10 @@ You need to retrieve the value of the `payment_method_option_id` attribute for t
 
 In every payment you can customize which services (`merchant_services`) you want to use.
 
-|Services|Type|Description|
-|---|---|---|
-|`fraud_scoring`|Boolean| If you want to use automatic fraud prevention scoring or not|
-|`fraud_manual_review`| Boolean| If you want to use Mercado Pago's manual review (representatives) |
+| Services | Type | Description |
+| --- | --- | --- |
+| `fraud_scoring` | Boolean | If you want to use automatic fraud prevention scoring or not. |
+| `fraud_manual_review` | Boolean | If you want to use Mercado Pago's manual review (representatives). |
 
 ```curl
 curl -X POST \
@@ -147,8 +145,8 @@ curl -X POST \
 }"
 ```
 
-> The [services](https://www.mercadopago.com.ar/developers/en/localization/gateway) vary according to country and must be previously acquired.
+> The [services](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/gateway) vary according to country and must be previously acquired.
 
 ### Next steps
 
-* [Reconcile your operations](https://www.mercadopago.com.ar/developers/en/guides/online-payments/gateway/general-considerations/reconciliation/)
+* [Reconcile your operations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/gateway/general-considerations/reconciliation)

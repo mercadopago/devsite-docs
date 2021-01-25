@@ -29,7 +29,7 @@ As características principais são:
 
 Explicamos a você o funcionamento do modelo atendido: 
 
-> ![Flujo de pago en punto de venta QR Mercado Pago](/images/qr-user-flow.pt.png)
+![Flujo de pago en punto de venta QR Mercado Pago](/images/mobile/qr-user-flow.pt.png)
 
 <span></span>
 
@@ -69,4 +69,4 @@ Explicamos a você o funcionamento do modelo atendido:
 >
 > Conheça passo a passo como integrar este modelo.
 >
-> [Integrar o modelo QR atendido](https://www.mercadopago.com.br/developers/pt/guides/qr-code/qr-attended-part-b/)
+> [Integrar o modelo QR atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/qr-code/qr-attended-part-b)

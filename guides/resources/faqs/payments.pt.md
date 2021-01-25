@@ -36,7 +36,7 @@ No momento, o Mercado Pago permite pagamentos somente em moeda local. Ou seja, u
 
 O Mercado Pago conta com uma validação de valores no momento de oferecer os meios de pagamento disponíveis.
 
-No caso em que o valor não cumpra com as condições de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_620" target="_blank">valores mínimos e máximos</a> do meio de pagamento, nosso checkout solicitará iniciar uma seção na conta do Mercado Pago, já que a única opção disponível para usar será dinheiro em conta. Por isso, seus clientes não poderão pagar como convidados.
+No caso em que o valor não cumpra com as condições de [valores mínimos e máximos](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_620) do meio de pagamento, nosso checkout solicitará iniciar uma seção na conta do Mercado Pago, já que a única opção disponível para usar será dinheiro em conta. Por isso, seus clientes não poderão pagar como convidados.
 
 Isso ocorre porque, de acordo com o valor escolhido, você pode visualizar alguns meios de pagamentos e outros não devido a não cumprir com os requisitos necessários. Ou seja, com base no valor do produto e do mínimo ou máximo permitido, serão mostrados os meios de pagamentos disponíveis.
 ------------
@@ -46,13 +46,13 @@ Isso ocorre porque, de acordo com o valor escolhido, você pode visualizar algun
 
 O Mercado Pago conta com uma validação de valores no momento de oferecer os meios de pagamento disponíveis.
 
-No caso em que o valor não cumpra com as condições de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/_324" target="_blank">valores mínimos e máximos</a> do meio de pagamento, nosso checkout solicitará iniciar uma seção na conta do Mercado Pago, já que a única opção disponível para usar será dinheiro em conta. Por isso, seus clientes não poderão pagar como convidados.
+No caso em que o valor não cumpra com as condições de [valores mínimos e máximos](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/_324) do meio de pagamento, nosso checkout solicitará iniciar uma seção na conta do Mercado Pago, já que a única opção disponível para usar será dinheiro em conta. Por isso, seus clientes não poderão pagar como convidados.
 
 Isso ocorre porque, de acordo com o valor escolhido, você pode visualizar alguns meios de pagamentos e outros não devido a não cumprir com os requisitos necessários. Ou seja, com base no valor do produto e do mínimo ou máximo permitido, serão mostrados os meios de pagamentos disponíveis.
 
 ## Como gerar a segunda via do boleto
 
-Para gerar uma segunda via do boleto será necessário [utilizar o método GET da API de Payment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get/) passando o ID do pagamento e a Access Token do vendedor.
+Para gerar uma segunda via do boleto será necessário [utilizar o método GET da API de Payment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get) passando o ID do pagamento e a Access Token do vendedor.
 
 A consulta será da seguinte forma:
 
@@ -60,7 +60,7 @@ A consulta será da seguinte forma:
 
 No retorno da chamada haverá o parâmetro `transaction_details` que conterá o  `external_resource_url` com o link da segunda via do boleto.
 
-## Remover o boleto como forma de pagamento
+## Remover o boleto como forma de pagamento
 
 Dependendo do seu tipo de checkout e integração o processo pode ser diferente.
 
@@ -72,7 +72,7 @@ Dependendo do seu tipo de checkout e integração o processo pode ser diferente.
 
 A remoção é realizada diretamente no seu frontend. Você pode obter os meios de pagamento desejados ao excluir boleto da chamada ao método payment, inserindo o parâmetro `"payment_type_id" = credit_card` como filtro, por exemplo.
 
-> Você pode encontrar mais detalhes na [referência da API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payment_methods/_payment_methods/get/).
+> Você pode encontrar mais detalhes na [referência da API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payment_methods/_payment_methods/get).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plugins ou soluções de e-commerce prontas para usar
 
@@ -80,7 +80,7 @@ Caso venda através de um de nossos plugins ou soluções de e-commerce prontas 
 
 ## Definir prazo de vencimento do boleto
 
-Por padrão, a data de vencimento é de 3 dias corridos, mas é possível [definir a data de vencimento do boleto via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways/), através do campo `date_of_expiration`.
+Por padrão, a data de vencimento é de 3 dias corridos, mas é possível [definir a data de vencimento do boleto via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways), através do campo `date_of_expiration`.
 ------------
 
 ## Melhore a aprovação de seus pagamentos
@@ -96,9 +96,9 @@ Verifique se a identidade da conta vendedor está validada no painel do Mercado 
 É importante que acrescente em sua integração toda a informação necessária para [melhorar a aprovação de seus pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/payment-rejections/#bookmark_recomendações_para_melhorar_sua_aprovação).
 
 ----[mla, mco, mlu, mpe, mlc, mlm]----
-> Se você ainda precisar de ajuda, recomendamos que entre em contato através da <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/charges" target="_blank">Ajuda</a>.
+> Se você ainda precisar de ajuda, recomendamos que entre em contato através da [Ajuda](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/charges).
 ------------
 
 ----[mlb]----
-> Se você ainda precisar de ajuda, recomendamos que entre em contato através da <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/charges" target="_blank">Ajuda</a>.
+> Se você ainda precisar de ajuda, recomendamos que entre em contato através da [Ajuda](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/charges).
 ------------

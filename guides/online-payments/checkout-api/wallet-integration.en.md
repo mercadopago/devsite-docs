@@ -14,14 +14,13 @@ This means that your customers have more ways to pay you and can access better b
 ## Benefits of Mercado Pago wallet
 
 * Your customers can pay you with more payment methods and faster:
-  * **With saved credit or debit cards** in their Mercado Pago account, saving the effort of entering a card from the beginning.
-  They also have their **addresses saved**, which simplifies the whole information entering process.
+  * **With saved credit or debit cards** in their Mercado Pago account, saving the effort of entering a card from the beginning. They also have their **addresses saved**, which simplifies the whole information entering process.
   * **With balance available in Mercado Pago** they have the money ready to be used on the spot, in just 1 click.
 ----[mla]----
-* Your clients can pay you in up to 12 installments without using a credit card, being financed by <a href="https://www.mercadolibre.com.ar/mercado-credito/meses-sin-tarjeta/" target="_blank"> Mercado Crédito</a>.
+* Your clients can pay you in up to 12 installments without using a credit card, being financed by [Mercado Crédito](https://www.mercadolibre.com.ar/mercado-credito/meses-sin-tarjeta/).
 ------------
 ----[mlb]----
-* Your clients can pay you in up to 12 installments without using a credit card, being financed by <a href="https://www.mercadolibre.com.br/mercado-credito/meses-sin-tarjeta/" target="_blank"> Mercado Crédito</a>.
+* Your clients can pay you in up to 12 installments without using a credit card, being financed by [Mercado Crédito](https://www.mercadolibre.com.br/mercado-credito/meses-sin-tarjeta/).
 ------------
 * Your checkout conversion improves by offering more dynamic and easy-to-use payment methods.
 * Improve approval of your payments with less risk of fraud.
@@ -226,7 +225,7 @@ Then, from your frontend, add the following code to display the Checkout Pro Wal
 ]]]
 
 
-For more information on each attribute, please check the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/preferences/_checkout_preferences/post/). 
+For more information on each attribute, please check the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/preferences/_checkout_preferences/post). 
 
 Done! You already have the Mercado Pago wallet integrated on your website. 
 
@@ -246,7 +245,7 @@ Done! You already have the Mercado Pago wallet integrated on your website.
 >
 > Optimize your wallet integration to improve your sales management.
 >
-> [Advanced Integration](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/advanced-integration)
+> [Advanced Integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/advanced-integration)
 
 
 > RIGHT_BUTTON_RECOMMENDED_EN
@@ -255,4 +254,4 @@ Done! You already have the Mercado Pago wallet integrated on your website.
 >
 > Make sure everything is ok in your integration with the test users.
 >
-> [Tests](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/test-integration/)
+> [Tests](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/test-integration)

@@ -29,7 +29,8 @@ Para **adicionar o Mercado Pago em sua loja**, siga os passos abaixo:
 1. Na lista Fornecedor de Serviço, busque por Mercado Pago e clique em "Próximo Passo".
 1. Defina um nome para o meio de pagamento Mercado Pago V2 e selecione o status "Ativo".
 <p>&nbsp;</p>
-    ![LINX Configuracao](/images/linx/linx_adicione_meio_pagamento-1.gif)
+
+![LINX Configuracao](/images/linx/linx_adicione_meio_pagamento-1.gif)
 <p>&nbsp;</p>
 
 ## Configure a forma de pagamento
@@ -48,10 +49,11 @@ Após adicionar o meio de pagamento, **configure os dados de sua integração co
 1. Na seção de Parcelamento, selecione "Externo (API do Mercado Pago)" onde você vai utilizar as condições de parcelamento diretamente da sua conta Mercado Pago.
 1. Por último, clique em "Salvar".
 <p>&nbsp;</p>
-    ![LINX Configuracao](/images/linx/linx_configurando_integracao-2.gif)
+
+![LINX Configuracao](/images/linx/linx_configurando_integracao-2.gif)
 <p>&nbsp;</p>
 
-> Encontre todas as informações sobre suas credenciais em [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/faqs/credentials/).
+> Encontre todas as informações sobre suas credenciais em [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/faqs/credentials).
 
 ### Configurando os dados de cartão de crédito
 
@@ -72,9 +74,11 @@ Para **configurar os dados de Cartão de Crédito em sua loja**, siga os passos 
     | Identificador de Integração | Coloque um código que será identificado no seu ERP. |
     | Ordem | Configure a ordem em que as bandeiras aparecerão no Checkout. |
     | Caminho Imagem | Complete o caminho onde as imagem das bandeiras do cartão serão buscadas. |
+
 1. Por último, clique em "Salvar".
 <p>&nbsp;</p>
-    ![LINX Configuracao](/images/linx/linx_configurando_cartao-3.gif)
+
+![LINX Configuracao](/images/linx/linx_configurando_cartao-3.gif)
 <p>&nbsp;</p>
 
 > WARNING
@@ -95,7 +99,8 @@ Para **configurar os dados de Boleto Bancário o em sua loja**, siga os passos a
 1. Informe a ordem em que o boleto aparecerá no seu checkout.
 1. Por último, clique em "Salvar".
 <p>&nbsp;</p>
-    ![LINX Configuracao](/images/linx/linx_configurando_boleto-4.gif)
+
+![LINX Configuracao](/images/linx/linx_configurando_boleto-4.gif)
 <p>&nbsp;</p>
 
 ## Configurando o parcelamento na sua conta do Mercado Pago
@@ -104,7 +109,8 @@ Para **configurar os dados de Boleto Bancário o em sua loja**, siga os passos a
 1. Procure por Oferecer parcelamento sem juros e clique em "Ativar".
 1. Escolha quantas parcelas você quer oferecer e clique em “Ativar” para confirmar as alterações.
 <p>&nbsp;</p>
-    ![LINX Configuracao](/images/linx/linx_parcelamento_conta-5.gif)
+
+![LINX Configuracao](/images/linx/linx_parcelamento_conta-5.gif)
 <p>&nbsp;</p>
 
 E pronto! Você está oferecendo parcelamento sem juros, assumindo as tarifas de parcelamento que você configurou.
@@ -122,7 +128,8 @@ Para **criar um contrato em sua loja**, siga os passos abaixo:
 1. Preencha um nome para o contrato que está sendo criado.
 1. Por último, clique em "Salvar".
 <p>&nbsp;</p>
-    ![LINX Configuracao](/images/linx/linx_criando_um_contrato-6.gif)
+
+![LINX Configuracao](/images/linx/linx_criando_um_contrato-6.gif)
 <p>&nbsp;</p>
 
 ### Definindo os meios de pagamento do contrato
@@ -136,7 +143,8 @@ Para **definir os meios de pagamento do contrato**, siga os passos abaixo:
  - **Definidos abaixo**. Escolher quais meios de pagamento irão fazer parte do contrato.
 1. Por último, clique em "Salvar".
 <p>&nbsp;</p>
-    ![LINX Configuracao](/images/linx/linx_meio_pagamento_contrato-7.gif)
+
+![LINX Configuracao](/images/linx/linx_meio_pagamento_contrato-7.gif)
 <p>&nbsp;</p>
 
 ### Atribuindo meio de pagamento do contrato a um canal
@@ -148,7 +156,8 @@ Para **atribuir o meio de pagamento do contrato ao canal de sua loja**, siga os 
 1. Na sessão contrato padrão, adicione o contrato que criou.
 1. Por último, clique em "Salvar".
 <p>&nbsp;</p>
-    ![LINX Configuracao](/images/linx/linx_atribuindo_contrato_ao_canal-8.gif)
+
+![LINX Configuracao](/images/linx/linx_atribuindo_contrato_ao_canal-8.gif)
 <p>&nbsp;</p>
 
 <!-- -->

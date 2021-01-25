@@ -9,7 +9,7 @@ Un pago puede ser rechazado por un error con el medio de pago o porque no se cum
 >
 > Nota
 >
-> Si quieres más información, consulta [los estados y motivos de rechazo existentes](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-api/handling-responses).
+> Si quieres más información, consulta [los estados y motivos de rechazo existentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/handling-responses).
 
 Para evitar pérdidas de ingresos de tu negocio y mejorar la experiencia de tus clientes, trabajamos con los emisores responsables de cada medio de pago y utilizamos las últimas tecnologías para evitar el fraude y aumentar la cantidad de pagos aprobados.
 
@@ -30,7 +30,7 @@ Puedes ver el estado del pago en la respuesta de la API como `rejected` y el mot
 }
 ```
 
-Puedes encontrar más información sobre el detalle del pago en la [actividad de la cuenta de Mercado Pago](http://mercadopago.com.ar/activities) en la que se reciben los cobros.
+Puedes encontrar más información sobre el detalle del pago en la [actividad de la cuenta de Mercado Pago](https://www.mercadopago.com.ar/activities) en la que se reciben los cobros.
 
 > WARNING
 >
@@ -59,7 +59,7 @@ Cuando nuestro sistema de prevención de fraude detecta un pago sospechoso, pued
 >
 > Nota
 >
-> Si quieres más información, consulta [los estados y motivos de rechazo existentes](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-api/handling-responses).
+> Si quieres más información, consulta [los estados y motivos de rechazo existentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/handling-responses).
 
 ## Recomendaciones para mejorar tu aprobación
 
@@ -77,8 +77,8 @@ Es muy simple. Agrega el script, configura la sección de tu sitio en la que se 
 
 #### Posibles valores para VIEW
 
-| Tipo                                                         | Descripción                                                  |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Tipo | Descripción |
+| --- | --- |
 | *home* | Página principal de tu sitio. |
 | *search* | Página de búsqueda o listado de productos. |
 | *item* | Página de un producto específico. |
@@ -288,7 +288,7 @@ preference.Items.Add(
 ```
 ]]]
 
-Puedes obtener más información sobre cada atributo en las [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments/post/).
+Puedes obtener más información sobre cada atributo en las [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments/post).
 
 ### Datos de industria
 

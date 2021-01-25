@@ -9,17 +9,17 @@ If you already use WooCommerce to create e-commerce sites in WordPress, one of t
 
 Install the payment processor in WooCommerce and take your sales to another level with the best shopping experience:
 
-| Characteristics               | Description                                                              	                                               |
-|-------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Installments                 	| Sell in installments and offer the promotions you want.                  	                                               |
-| Money release                 | Instantly or with the rates and terms that best suit the business.      	                                               |
-| Payment methods               | Accept payments by credit and debit card, cash and payments with Mercado Pago account money.                             |
-| Checkout types                | Checkout Pro, Custom Checkout                                                                      	                   |
-| Payment as a guest            | Users don’t need to be registered in Mercado Pago in order to pay in WooCommerce.                                        |
-| Payment refunds     	        | Refund payments directly from the platform.                                                        	                     |
-| Payment cancellations   	    | Cancel the pending payments directly from the platform                       	                                           |
-| Binary mode                   | Approve or reject payments instantly and automatically.                                                                  |
-| Currency conversion           | No more compatibility issues. Convert the currency you use in WooCommerce to the currency of your Mercado Pago account.  |
+| Characteristics | Description |
+| --- | --- |
+| Installments | Sell in installments and offer the promotions you want. |
+| Money release | Instantly or with the rates and terms that best suit the business. |
+| Payment methods | Accept payments by credit and debit card, cash and payments with Mercado Pago account money. |
+| Checkout types | Checkout Pro, Custom Checkout |
+| Payment as a guest | Users don’t need to be registered in Mercado Pago in order to pay in WooCommerce. |
+| Payment refunds | Refund payments directly from the platform. |
+| Payment cancellations | Cancel the pending payments directly from the platform |
+| Binary mode | Approve or reject payments instantly and automatically. |
+| Currency conversion | No more compatibility issues. Convert the currency you use in WooCommerce to the currency of your Mercado Pago account. |
 
 >**Are you a developer?**
 >This guide is also designed to speed up the installation, integration and configuration of our module in the most recognized e-commerce platforms worldwide.
@@ -36,17 +36,17 @@ Install the payment processor in WooCommerce and take your sales to another leve
 
 With these payment options we cover the needs of each business. Review the features to choose which one best suits your business.
 
-| Characteristics    | Checkout Pro                                                                                                          | Custom Checkout                                               |
-|--------------------|-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| Payment methods    | Payments with cards, cash and money in Mercado Pago account.                                                            | Payments with debit and credit cards or in-person payments.   |
-| Payment experience | Your customers pay from the Mercado Pago page with a redirect (outside your store) or modal (inside your store) format. | Your customers pay without leaving your online store.         |
-| Guest users        | Your customers can pay with or without an account in Mercado Pago.                                                      | Your customers pay as guests, without a Mercado Pago account. |
+| Characteristics | Checkout Pro | Custom Checkout |
+| --- | --- | --- |
+| Payment methods | Payments with cards, cash and money in Mercado Pago account. | Payments with debit and credit cards or in-person payments. |
+| Payment experience | Your customers pay from the Mercado Pago page with a redirect (outside your store) or modal (inside your store) format. | Your customers pay without leaving your online store. |
+| Guest users | Your customers can pay with or without an account in Mercado Pago. | Your customers pay as guests, without a Mercado Pago account. |
 
 > NOTE
 >
 > Note
 >
-> Check out the [Checkout Pro documentation](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/introduction/) to learn more about all its characteristics and functionalities.
+> Check out the [Checkout Pro documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction) to learn more about all its characteristics and functionalities.
 
 ### Next steps
 
@@ -57,4 +57,4 @@ With these payment options we cover the needs of each business. Review the featu
 > Follow these steps to install the Mercado Pago module in your online store.
 >
 > 
-> [Install](https://www.mercadopago.com.ar/developers/en/guides/plugins/woocommerce/instalation/)
+> [Install](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/instalation)

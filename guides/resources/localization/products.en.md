@@ -92,10 +92,10 @@ Subscriptions | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debm
 | Product | Solution | Unavailable payment methods |
 | :--- | :--- | :--- |
 | Payments | Payment link | N/A |
-| Payments   | Checkout Pro   | N/A                                 |
+| Payments   | Checkout Pro   | N/A                                 |
 | Payments | Mobile Checkout | `account_money`,`davivienda`,`efecty`,`pse` |
 | Payments | Checkout API | `account_money` |
-| Marketplace | Checkout Pro   | N/A                                 |
+| Marketplace | Checkout Pro   | N/A                                 |
 | Marketplace | Checkout API | `account_money` |
 
 

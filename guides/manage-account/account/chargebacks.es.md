@@ -36,8 +36,8 @@ Es muy simple. Agrega el script, configura la sección de tu sitio en la que se 
 
 #### Posibles valores para `view`
 
-| Tipo                                                         | Descripción                                                  |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Tipo | Descripción |
+| --- | --- |
 | *home* | Página principal de tu sitio. |
 | *search* | Página de búsqueda o listado de productos. |
 | *item* | Página de un producto específico. |
@@ -55,11 +55,11 @@ Es importante que mandes el comprobante del pago por e-mail o por mensaje de tex
 ### Detalla toda la información sobre el pago
 
 Para optimizar la validación de seguridad de los pagos, envíanos la mayor cantidad de datos posibles al momento de crear el pago. Por ejemplo, si nos envías datos del comprador, podemos detectar si realizó pagos sospechosos en otro momento y prevenirlo.
-Puedes obtener más información sobre cada atributo en las [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post/).
+Puedes obtener más información sobre cada atributo en las [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments/post).
 
 ### Devuelve los pagos sospechosos
 
-Cuando detectamos un comportamiento irregular o recibimos una notificación de que la tarjeta usada fue robada, nos contactaremos vía e-mail para avisarte. Te recomendamos que [canceles la compra](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/cancellations-and-refunds/) y le devuelvas el dinero al comprador para evitar el contracargo.
+Cuando detectamos un comportamiento irregular o recibimos una notificación de que la tarjeta usada fue robada, nos contactaremos vía e-mail para avisarte. Te recomendamos que [canceles la compra](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds) y le devuelvas el dinero al comprador para evitar el contracargo.
 
 ### Revisa los datos al cobrar con Point
 
@@ -69,7 +69,7 @@ Pide el documento de tus compradores a la hora de hacer el pago y comprueba que 
 
 ### Aparición del contracargo
 
-Te avisaremos vía [notificaciones IPN](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn) cada vez que recibas un contracargo. Para [comenzar a recibir notificaciones](https://www.mercadopago.com.ar/herramientas/notificaciones), debes completar tus datos y elegir la opción Chargebacks.
+Te avisaremos vía [notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn) cada vez que recibas un contracargo. Para [comenzar a recibir notificaciones](https://www.mercadopago.com.ar/herramientas/notificaciones), debes completar tus datos y elegir la opción Chargebacks.
 
 ### Consulta del contracargo
 
@@ -114,7 +114,7 @@ Vas a obtener la siguiente información:
 >
 > Nota
 >
-> Puedes obtener más información en la [referencia de API](https://www.mercadopago.com.ar/developers/es/reference/chargebacks/_chargebacks_id/get/).
+> Puedes obtener más información en la [referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/chargebacks/_chargebacks_id/get).
 
 ### Entendimiento de cobertura
 

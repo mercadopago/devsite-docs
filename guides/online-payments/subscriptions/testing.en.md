@@ -27,15 +27,13 @@ To set up the seller account you can use your test user's credentials.
 
 Run the following curl to generate a test user:
 
-
-[[[
-```curl curl -X POST \
+```curl
+curl -X POST \
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer ENV_ACCESS_TOKEN" \
 "https://api.mercadopago.com/users/test_user" \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
-]]]
 
 ### Response
 `HTTP Status 200 OK`
@@ -53,7 +51,7 @@ Run the following curl to generate a test user:
 
 #### 1. Set the subscription with the data of your seller user
 
-Use the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/account/credentials" target="_blank">test public key</a> of your seller user at the time of creating the subscription you want to test.<br>
+Use the [test public key](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials) of your seller user at the time of creating the subscription you want to test.<br>
 
 #### 2. Make a payment with your buyer user
 
@@ -66,11 +64,11 @@ Credit card testing
 
 ### Test cards
 
-Card |   Number  | CVV   |   Expiration date
---- |	--- | --- | --- 
-Mastercard       |  5031 7557 3453 0604 |   123 | 11/25            
-Visa             |  4509 9535 6623 3704 |   123 | 11/25   
-American Express |  3711 803032 57522   |   1234| 11/25   
+| Card | Number | CVV | Expiration date |
+| --- | --- | --- | --- |
+| Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
+| Visa | 4509 9535 6623 3704 | 123 | 11/25 |
+| American Express | 3711 803032 57522 | 1234 | 11/25 |
 
 ------------
 ### Next steps
@@ -81,7 +79,7 @@ American Express |  3711 803032 57522   |   1234| 11/25
 >
 > Update, edit or cancel your subscriptions.
 >
-> [Advanced integration](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/advanced-integration/)
+> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/advanced-integration)
 
 > RIGHT_BUTTON
 >
@@ -89,4 +87,4 @@ American Express |  3711 803032 57522   |   1234| 11/25
 >
 > In case you have problems, we explain the logic of retrying collections. 
 >
-> [Reattempts to collect](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/payment-retry/)
+> [Reattempts to collect](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/payment-retry)

@@ -47,11 +47,11 @@ Recuerda que esta comunicación es exclusivamente entre los servidores de Mercad
 
 Luego de esto, puedes obtener la información completa del recurso notificado accediendo a la API correspondiente en `https://api.mercadopago.com/`:
 
-Tipo               | URL                                                         | Documentación
------------------- | ----------------------------------------------------------- | --------------------
-payment            | /v1/payments/[ID] | [ver documentación](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get/)
-chargebacks    	   | /v1/chargebacks/[ID]| -
-merchant_orders    | /merchant\_orders/[ID]           | [ver documentación](https://www.mercadopago.com.ar/developers/es/reference/merchant_orders/_merchant_orders_id/get/)
+| Tipo | URL | Documentación |
+| --- | --- | --- |
+| payment | /v1/payments/[ID] | [ver documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get) |
+| chargebacks | /v1/chargebacks/[ID] | - |
+| merchant_orders | /merchant\_orders/[ID] | [ver documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/merchant_orders/_merchant_orders_id/get) |
 
 Con esta información puedes realizar las actualizaciones necesarias en tu plataforma, por ejemplo registrar un pago acreditado o una orden cerrada. 
 
@@ -68,7 +68,7 @@ Con esta información puedes realizar las actualizaciones necesarias en tu plata
 1. El campo `status` de la `merchant_order` permanecerá en **opened** cuando aún no tenga pagos asociados, o los tenga y estén rechazados o aprobados por un monto menor al total de la orden.
 2. El campo `status` de la `merchant_order` será **closed** cuando la suma de los pagos aprobados sea igual o mayor al total de la orden.
 
-Dentro de la orden, en el objeto payments, encontrarás todos los pagos de la misma. Es importante obtener el id de los pagos con `status` = **approved** para [poder realizar devoluciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/cancellations-and-refunds/). 
+Dentro de la orden, en el objeto payments, encontrarás todos los pagos de la misma. Es importante obtener el id de los pagos con `status` = **approved** para [poder realizar devoluciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds). 
 
 > WARNING
 >
@@ -130,12 +130,12 @@ curl -X GET \
     https://api.mercadopago.com/merchant_orders?external_reference=$EXTERNAL_REFERENCE
 ```
 
-Más información en la [Referencia de API](https://www.mercadopago.com.ar/developers/es/reference/merchant_orders/_merchant_orders_search/get/).
+Más información en la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/merchant_orders/_merchant_orders_search/get).
 
 Se puede implementar la **búsqueda** por `external_reference` de dos formas:
 
-| Formas	|	Descripción		|
-| ----------- | ----------------- |
+| Formas | Descripción |
+| --- | --- |
 | **Manual** | El punto de venta debe incluir un botón para realizar la búsqueda. |
 | **Automática** | Pasado un tiempo prudencial sin haber recibido alguna notificación, se comienza una búsqueda de la orden cada un intervalo de, por ejemplo, 5 segundos. |
 

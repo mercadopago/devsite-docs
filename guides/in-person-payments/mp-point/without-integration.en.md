@@ -3,7 +3,6 @@ sites_supported:
   - mla
   - mlb
   - mlm
-  - global
 ---
 
 # Receiving payments with Point without integration
@@ -31,6 +30,6 @@ For each product you can insert an image, the price and name of it.
 
 ## Find out about your payments
 
-You can check your sales in the list of activities of the Mercado Pago account, or integrate [notifications] (https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn) into your management system.
+You can check your sales in the list of activities of the Mercado Pago account, or integrate [notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks) into your management system.
 
-> If you want to build something more advanced and personalized, read our [Integrated Point] (https://www.mercadopago.com.ar/developers/en/guides/in-person-payments/mp-point/introduction) documentation
+> If you want to build something more advanced and personalized, read our [Integrated Point](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/mp-point/how-to-integrate) documentation

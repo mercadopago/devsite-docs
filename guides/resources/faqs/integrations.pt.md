@@ -2,7 +2,6 @@
   sites_supported:
    - mla
    - mlb
-   - global
   indexable: false
 ---
 
@@ -24,18 +23,13 @@ Esta opção permite cobrar através do nosso formulário web dentro do ambiente
 
 -   **Protegemos seu dinheiro, sempre.** Você não precisa se preocupar com nada. Caso tenha algum problema, você conta com o nosso respaldo através do [nosso Programa de Proteção ao Vendedor](https://www.mercadopago.com.br/ajuda/como-protegemos-vendedores_500).
 
-----[mla, mlb]----
-[Integrar Checkout Pro.](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/introduction)
-------------
-----[mlm, mpe, mco, mlu]----
-[Integrar Checkout Pro.](https://www.mercadopago.com.br/developers/pt/guides/payments/web-checkout/introduction)
-------------
+[Integrar Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction)
 
 ### Mobile Checkout
 
 Diferente do Checkout Pro, facilitamos a criação de uma experiência de pagamento pelo app através do nosso SDK. É uma integração simples e rápida, para que você possa oferecer a melhor experiência e os melhores meios de pagamento.
 
-[Integrar Mobile Checkout.](https://www.mercadopago.com.br/developers/pt/guides/online-payments/mobile-checkout/introduction)
+[Integrar Mobile Checkout.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/mobile-checkout/introduction)
 
 ### Web Tokenize
 
@@ -47,7 +41,7 @@ Diferente do Checkout Pro, facilitamos a criação de uma experiência de pagame
 
 - **Você estará sempre atualizado.** Você pode oferecer para seus compradores uma experiência que o Mercado Pago mantém em constante aperfeiçoamento.
 
-[Integrar Web Tokenize](https://www.mercadopago.com.br/developers/pt/guides/online-payments/web-tokenize-checkout/introduction)
+[Integrar Web Tokenize](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/web-tokenize-checkout/introduction)
 
 ----[mlm, mla, mlc, mco, mpe, mlu]----
 ### Checkout API
@@ -59,16 +53,16 @@ Diferente do Checkout Pro, facilitamos a criação de uma experiência de pagame
 
 Esta forma de integração permite que você se conecte diretamente com as nossas APIs.
 
-- **Torne-se dono da sua experiência.** Proporcionamos liberdade absoluta para você personalizar as experiências dos seus compradores e que nunca saiam do seu site.  
+- **Torne-se dono da sua experiência.** Proporcionamos liberdade absoluta para você personalizar as experiências dos seus compradores e que nunca saiam do seu site.  
 
 - **Sua equipe técnica tem total controle.** Eles poderão lidar com todos os processos de manipulação de dados sensíveis no front-end, onde a solicitação de pagamento ocorre.
 
 ----[mlm, mla, mlc, mco, mpe, mlu]----
-[Integrar Checkout API](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/introduction)
+[Integrar Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction)
 ------------
 
 ----[mlb]----
-[Integrar Checkout Transparente](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/introduction)
+[Integrar Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction)
 ------------
 
 ## Posso oferecer pagamentos com cartão de débito?
@@ -93,11 +87,11 @@ Seu cliente paga sem juros, e você absorve o custo do financiamento, por isso, 
 
 Por enquanto, não oferecemos a opção de habilitar o Mercado Envios aos novos negócios que se integrem, porque isso pode gerar erro. Esta opção está disponível somente para as vendas no Mercado Livre.
 
-Sentimos muito, mas, lembre-se de que você pode usar as nossas [ferramentas exclusivas para vendedores](https://www.mercadopago.com.br/developers/pt/guides/resources/faqs/myaccount) quando quiser.
+Sentimos muito, mas, lembre-se de que você pode usar as nossas [ferramentas exclusivas para vendedores](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/myaccount) quando quiser.
 
 ## Como gerenciar as vendas de clientes no meu site
 
-Para gerenciar vendedores e que eles possam fazer transações comerciais no seu site, você deve [criar um Marketplace](https://www.mercadopago.com.br/developers/pt/guides/online-payments/marketplace/checkout-pro/introduction).
+Para gerenciar vendedores e que eles possam fazer transações comerciais no seu site, você deve [criar um Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/marketplace/checkout-pro/introduction).
 
 Um Marketplace é um site ou aplicativo que permite que você faça cobranças em nome dos vendedores e cobre uma comissão por cada uma, se quiser. Quando um pagamento é gerado, o valor é dividido na mesma hora entre a conta dos seus vendedores e a sua.
 

@@ -62,7 +62,6 @@ Nesses casos, o serviço deve responder uma mensagem de erro para que o usuário
 | `in_process`     | Tem um pedido em processo, porém, ainda não foi possível determinar o valor a receber. |
 | `unavailable`           | Não tem pedido em processo ou pendente de pagamento.  |
 
-
 O `message` é opcional, é uma explicação em texto plano que pode acompanhar o type declarado.
 
 ### 1.2. As informações da ordem foram disponibilizadas
@@ -128,7 +127,7 @@ Deve informar ao seu assessor técnico atribuído, o URL base de seu domínio ao
 >
 > Conheça as opções disponíveis para chegar à integração para o seguinte nível.
 >
-> [Integração avançada](https://www.mercadopago.com.br/developers/pt/guides/in-person-payments/qr-code/advanced-integration/)
+> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/advanced-integration)
 
 
 > RIGHT_BUTTON_RECOMMENDED_PT
@@ -137,4 +136,4 @@ Deve informar ao seu assessor técnico atribuído, o URL base de seu domínio ao
 >
 > Realiza os casos de uso mais frequentes para validar sua integração.
 >
-> [Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/in-person-payments/qr-code/integration-test/)
+> [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/integration-test)

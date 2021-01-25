@@ -6,10 +6,10 @@ We will explain how to use our test cards and users to check that your payments 
 
 **Test users allow you to test your integration** by generating payment flows in an exact copy of your integration.
 
-Types of users | Description
------------- | -------------
-Seller | It is the test account you use **to configure the application and credentials for collection**. |
-Buyer | It is the test account you use **to test the purchase process**. |
+| Types of users | Description |
+| --- | --- |
+| Seller | It is the test account you use **to configure the application and credentials for collection**. |
+| Buyer | It is the test account you use **to test the purchase process**. |
 
 <br>
 
@@ -75,63 +75,63 @@ Start your integration with your test seller user credentials:
 
 ----[mla]----
 
-Card | Number | CVV | Expiration Date
-:---  | :---: | :---: | :---:
-Mastercard | 5031 7557 3453 0604 | 123 | 11/25
-Visa | 4509 9535 6623 3704 | 123 | 11/25
-American Express | 3711 803032 57522 | 1234 | 11/25
+| Card | Number | CVV | Expiration Date |
+| :--- | :---: | :---: | :---: |
+| Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
+| Visa | 4509 9535 6623 3704 | 123 | 11/25 |
+| American Express | 3711 803032 57522 | 1234 | 11/25 |
 
 ------------
 ----[mlb]----
 
-Card | Number | CVV | Expiration Date
-:---  | :---: | :---: | :---:
-Mastercard | 5031 4332 1540 6351 | 123 | 11/25
-Visa | 4235 6477 2802 5682 | 123 | 11/25
-American Express | 3753 651535 56885 | 1234 | 11/25
+| Card | Number | CVV | Expiration Date |
+| :--- | :---: | :---: | :---: |
+| Mastercard | 5031 4332 1540 6351 | 123 | 11/25 |
+| Visa | 4235 6477 2802 5682 | 123 | 11/25 |
+| American Express | 3753 651535 56885 | 1234 | 11/25 |
 
 ------------
 ----[mlc]----
 
-Card | Number | CVV | Expiration Date
-:---  | :---: | :---: | :---:
-Mastercard | 5416 7526 0258 2580 | 123 | 11/25
-Visa | 4168 8188 4444 7115 | 123 | 11/25
-American Express | 3757 781744 61804 | 1234 | 11/25
+| Card | Number | CVV | Expiration Date |
+| :--- | :---: | :---: | :---: |
+| Mastercard | 5416 7526 0258 2580 | 123 | 11/25 |
+| Visa | 4168 8188 4444 7115 | 123 | 11/25 |
+| American Express | 3757 781744 61804 | 1234 | 11/25 |
 
 ------------
 ----[mco]----
 
-Card | Number | CVV | Expiration Date
-:---  | :---: | :---: | :---:
-Mastercard | 5254 1336 7440 3564 | 123 | 11/25
-Visa | 4013 5406 8274 6260 | 123 | 11/25
-American Express | 3743 781877 55283 | 1234 | 11/25
+| Card | Number | CVV | Expiration Date |
+| :--- | :---: | :---: | :---: |
+| Mastercard | 5254 1336 7440 3564 | 123 | 11/25 |
+| Visa | 4013 5406 8274 6260 | 123 | 11/25 |
+| American Express | 3743 781877 55283 | 1234 | 11/25 |
 
 ------------
 ----[mlm]----
 
-Card | Number | CVV | Expiration Date
-:---  | :---: | :---: | :---:
-Mastercard | 5474 9254 3267 0366 | 123 | 11/25
-Visa | 4075 5957 1648 3764 | 123 | 11/25
+| Card | Number | CVV | Expiration Date |
+| :---  | :---: | :---: | :---: |
+| Mastercard | 5474 9254 3267 0366 | 123 | 11/25 |
+| Visa | 4075 5957 1648 3764 | 123 | 11/25 |
 
 ------------
 ----[mlu]----
 
-Card | Number | CVV | Expiration Date
-:---  | :---: | :---: | :---:
-Mastercard | 5031 7557 3453 0604 | 123 | 11/25
-Visa | 4509 9535 6623 3704 | 123 | 11/25
+| Card | Number | CVV | Expiration Date |
+| :--- | :---: | :---: | :---: |
+| Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
+| Visa | 4509 9535 6623 3704 | 123 | 11/25 |
 
 ------------
 ----[mpe]----
 
-Card | Number | CVV | Expiration Date
-:---  | :---: | :---: | :---:
-Mastercard | 5031 7557 3453 0604 | 123 | 11/25
-Visa | 4009 1753 3280 6176 | 123 | 11/25
-American Express | 3711 803032 57522 | 1234 | 11/25
+| Card | Number | CVV | Expiration Date |
+| :--- | :---: | :---: | :---: |
+| Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
+| Visa | 4009 1753 3280 6176 | 123 | 11/25 |
+| American Express | 3711 803032 57522 | 1234 | 11/25 |
 
 ------------
 
@@ -154,7 +154,7 @@ To **test different payment results,** complete the information you want in the 
 
 ## Start receiving payments
 
-To start charging, you need to meet the [production environment requirements](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production/), and must <a href="[FAKER][CREDENTIALS][URL]" target="_blank">activate your credentials</a>.
+To start charging, you need to meet the [production environment requirements](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production), and must [activate your credentials]([FAKER][CREDENTIALS][URL]).
 
 Before activating them, verify that the credentials in your integration are those of the account that receives the money from the sales.<br/>
 
@@ -167,7 +167,7 @@ Before activating them, verify that the credentials in your integration are thos
 >
 > Help your customers make error-free payments.
 >
-> [Error Response Handling](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses/)
+> [Error Response Handling](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -175,4 +175,4 @@ Before activating them, verify that the credentials in your integration are thos
 >
 > Find all the information required to interact with our APIs.
 >
-> [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/)
+> [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference)

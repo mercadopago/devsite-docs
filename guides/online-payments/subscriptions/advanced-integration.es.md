@@ -7,7 +7,7 @@ sites_supported:
 
 # Actualización de suscripciones
 
-Para actualizar, pausar, cancelar o reactivar una suscripción ya creada, es necesario usar el `preapproval_id` que retorna luego de la <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/introduction/" target="_blank">creación</a>.
+Para actualizar, pausar, cancelar o reactivar una suscripción ya creada, es necesario usar el `preapproval_id` que retorna luego de la [creación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/introduction).
 
 ## Búsqueda de una suscripción
 
@@ -17,12 +17,10 @@ Los parámetros a sumar son opcionales y según los parámetros que se envían, 
 
 Por ejemplo, puedes buscar todas las suscripciones pausadas de un cliente: 
 
-[[[
-```curl curl --location --request GET 'https://api.mercadopago.com/preapproval/search?status=paused&payer_email=[FAKER][INTERNET][FREE_EMAIL]' \
+```curl
+curl --location --request GET 'https://api.mercadopago.com/preapproval/search?status=paused&payer_email=john@yourdomain.com' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 ```
-]]]
-
 
 ## Modificar tarjeta y monto
 
@@ -32,20 +30,19 @@ Para __modificar la tarjeta__, debes indicar el nuevo token en el atributo `card
 
 Con el `application_id` de la suscripción que quieras actualizar, realiza la siguiente llamada: 
 
-[[[
-```curl curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \
+```curl
+curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
   "application_id": 1234567812345678,
   "auto_recurring": {
     "currency_id": "[FAKER][CURRENCY][ACRONYM]",
-    "transaction_amount": [FAKER][NUMBER][BETWEEN][10,1000]
+    "transaction_amount": 100
   },
   "card_token_id":"1aca87c7338585abdf1edf0000000000"
 }'
 ```
-]]]
 
 >Ten en cuenta que el token dura 7 días y se puede usar una sola vez, por lo tanto no debe guardarse este valor.
 
@@ -55,16 +52,14 @@ Para __cancelar una suscripción__, solo debes especificar el valor `cancelled` 
 
 Y para __pausar una suscripción__, tienes que indicar `paused` en `status`. Puedes volver a activarla cuando quieras. 
 
-
-[[[
-```curl curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \
+```curl
+curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
   "status": "cancelled"
 }'
 ```
-]]]
 
 ## Reactivar una suscripción pausada
 
@@ -78,9 +73,8 @@ Para hacerlo, actualiza el tiempo en el campo `auto_recurring.end_date` y envía
 
 Con el `application_id` de la suscripción que quieras actualizar, realiza la siguiente llamada: 
 
-
-[[[
-```curl curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \
+```curl
+curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -91,7 +85,6 @@ Con el `application_id` de la suscripción que quieras actualizar, realiza la si
   "status": "authorized"
 }'
 ```
-]]]
 
 ### Activar suscripción sin tiempo de fin
 
@@ -99,8 +92,8 @@ Para reactivar una suscripción, envía el valor `authorized` en `status`. Esto 
 
 Con el `application_id` de la suscripción que quieras actualizar, realiza la siguiente llamada: 
 
-[[[
-```curl curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \
+```curl
+curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPROVAL_ID>' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -108,9 +101,8 @@ Con el `application_id` de la suscripción que quieras actualizar, realiza la si
   "status": "authorized"
 }'
 ```
-]]]
 
->Puedes obtener más información sobre los campos en la <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/" target="_blank">Referencia de API</a>.
+>Puedes obtener más información sobre los campos en la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference).
 
 
 ------------
@@ -122,7 +114,7 @@ Con el `application_id` de la suscripción que quieras actualizar, realiza la si
 >
 > Revisa que tus suscripciones creadas estén bien configuradas con los usuarios de prueba. 
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/testing/)
+> [Pruebas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/testing)
 
 
 > RIGHT_BUTTON
@@ -131,4 +123,4 @@ Con el `application_id` de la suscripción que quieras actualizar, realiza la si
 >
 > Por si tienes inconvenientes, te explicamos la lógica de reintentos de cobros.
 >
-> [Lógica de reintentos de cobros](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/payment-retry/)
+> [Lógica de reintentos de cobros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/payment-retry)

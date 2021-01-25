@@ -26,7 +26,7 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
 | Tipo de meio de pagamento | Meio de pagamento |
-| --- | ---|
+| --- | --- |
 | `ticket` | Rapipago |
 | `ticket` | Pago Fácil |
 | `ticket` | Provincia NET Pagos |
@@ -120,10 +120,11 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 ]
 ```
 
-> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
+> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference).
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -214,10 +215,11 @@ Incluindo o elemento de tipo select com `id = docType` que se encontra no formul
 window.Mercadopago.getIdentificationTypes();
 ```
 
-> Encontre mais detalhes na [seção de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/identification-types/).
+> Encontre mais detalhes na [seção de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/identification-types).
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -347,7 +349,7 @@ A resposta mostrará o estado pendente até que o comprador realize o pagamento.
         "net_received_amount": 0,
         "total_paid_amount": 100,
         "overpaid_amount": 0,
-        "external_resource_url": "http://www.mercadopago.com/mla/payments/ticket/helper?payment_id=123456789&payment_method_reference_id= 123456789&caller_id=123456",
+        "external_resource_url": "https://www.mercadopago.com/mla/payments/ticket/helper?payment_id=123456789&payment_method_reference_id= 123456789&caller_id=123456",
         "installment_amount": 0,
         "financial_institution": null,
         "payment_method_reference_id": "1234567890"
@@ -429,7 +431,7 @@ Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago
 
 Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
 
-Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds/).
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
 ## Tempos de creditação do pagamento
 
@@ -455,7 +457,7 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
 | Tipo de meio de pagamento | Meio de pagamento |
-| --- | ---|
+| --- | --- |
 | `ticket` | OXXO |
 | `atm` | Citibanamex |
 | `atm` | Santander |
@@ -632,10 +634,11 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 ]
 ```
 
-> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
+> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference).
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -717,6 +720,7 @@ window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -872,7 +876,7 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 
 Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
 
-Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds/).
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
 ## Tempos de creditação do pagamento
 
@@ -885,7 +889,7 @@ Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago
 Ao finalizar, é importante que compartilhe com seus clientes a informação dos distintos lugares em que pode realizar o pagamento.
 
 | Meio de pagamento | Lojas disponíveis
-| --- | ---|
+| --- | --- |
 | OXXO | OXXO
 | BBVA Bancomer | 7-Eleven |
 | BBVA Bancomer | K |
@@ -917,7 +921,7 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
 | Tipo de meio de pagamento | Meio de pagamento |
-| --- | ---|
+| --- | --- |
 | `ticket` | Abitab |
 | `ticket` | Redpagos |
 
@@ -1022,10 +1026,11 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 ]
 ```
 
-> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
+> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference).
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -1115,10 +1120,11 @@ Incluindo o elemento de tipo select com `id = docType` que se encontra no formul
 window.Mercadopago.getIdentificationTypes();
 ```
 
-> Encontre mais detalhes na [seção de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/identification-types/).
+> Encontre mais detalhes na [seção de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/identification-types).
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -1272,7 +1278,7 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 
 Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
 
-Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds/).
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
 ## Tempos de creditação do pagamento
 
@@ -1300,7 +1306,7 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
 | Tipo de meio de pagamento | Meio de pagamento |
-| --- | ---|
+| --- | --- |
 | `ticket` | Efecty |
 | `ticket` | Baloto |
 | `bank_transfer` | PSE |
@@ -1425,10 +1431,11 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 ]
 ```
 
-> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
+> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference).
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -1519,10 +1526,11 @@ Incluindo o elemento de tipo select com `id = docType` que se encontra no formul
 window.Mercadopago.getIdentificationTypes();
 ```
 
-> Encontre mais detalhes na [seção de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/identification-types/).
+> Encontre mais detalhes na [seção de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/identification-types).
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -1889,7 +1897,7 @@ Ao concluir o pagamento, o cliente será redirecionado para o `callback_url` que
 
 Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
 
-Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds/).
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
 ## Tempos de creditação do pagamento
 
@@ -1918,7 +1926,7 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
 | Tipo de meio de pagamento | Meio de pagamento |
-| --- | ---|
+| --- | --- |
 | `ticket` | Sucursales Servipag |
 | `bank_transfer` | Redcompra Webpay |
 
@@ -2027,10 +2035,11 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 ]
 ```
 
-> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
+> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference).
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -2122,10 +2131,11 @@ Incluindo o elemento de tipo select com `id = docType` que se encontra no formul
 window.Mercadopago.getIdentificationTypes();
 ```
 
-> Encontre mais detalhes na [seção de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/identification-types/).
+> Encontre mais detalhes na [seção de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/identification-types).
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -2444,7 +2454,7 @@ Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com 
 >
 > Tenha em conta que Webpay cancelará automaticamente o pagamento caso não se realize em 30 minutos.
 
-Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago.cl/developers/pt/guides/manage-account/account/cancellations-and-refunds/).
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
 ## Tempos de creditação do pagamento
 
@@ -2473,7 +2483,7 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
 | Tipo de meio de pagamento | Meio de pagamento |
-| --- | ---|
+| --- | --- |
 | `atm` | PagoEfectivo |
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os meios de pagamento disponíveis
@@ -2555,10 +2565,11 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 ]
 ```
 
-> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
+> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference).
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -2649,10 +2660,11 @@ Incluindo o elemento de tipo select com `id = docType` que se encontra no formul
 window.Mercadopago.getIdentificationTypes();
 ```
 
-> Encontre mais detalhes na [seção de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/identification-types/).
+> Encontre mais detalhes na [seção de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/identification-types).
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -2814,7 +2826,7 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 
 Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
 
-Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds/).
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
 ## Tempos de creditação do pagamento
 
@@ -2842,7 +2854,7 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
 | Tipo de meio de pagamento | Meio de pagamento |
-| --- | ---|
+| --- | --- |
 | `ticket` | Boleto |
 | `ticket` | Pagamento em lotérica |
 
@@ -2932,10 +2944,11 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 ]
 ```
 
-> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/).
+> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference).
 
 <br>
 <span></span>
+
 > CLIENT_SIDE
 >
 > h2
@@ -3027,10 +3040,11 @@ Incluindo o elemento de tipo select com `id = docType` que se encontra no formul
 window.Mercadopago.getIdentificationTypes();
 ```
 
-> Encontre mais detalhes na [seção de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/identification-types/).
+> Encontre mais detalhes na [seção de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/identification-types).
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -3252,7 +3266,7 @@ A resposta mostrará o estado pendente até que o comprador realize o pagamento.
         "net_received_amount": 0,
         "total_paid_amount": 100,
         "overpaid_amount": 0,
-        "external_resource_url": "http://www.mercadopago.com/mlb/payments/ticket/helper?payment_id=123456789&payment_method_reference_id= 123456789&caller_id=123456",
+        "external_resource_url": "https://www.mercadopago.com/mlb/payments/ticket/helper?payment_id=123456789&payment_method_reference_id= 123456789&caller_id=123456",
         "installment_amount": 0,
         "financial_institution": null,
         "payment_method_reference_id": "1234567890"
@@ -3275,7 +3289,7 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 
 Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
 
-Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds/).
+Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
 ## Data de expiração de boleto
 
@@ -3351,7 +3365,7 @@ Revise os [tempos de aprovação por meio de pagamento](https://www.mercadopago.
 >
 > Revise que esteja tudo bem com sua integração com usuários de teste.
 >
-> [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/test-integration/)
+> [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/testing)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >

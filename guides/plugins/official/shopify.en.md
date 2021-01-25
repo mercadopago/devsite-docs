@@ -23,15 +23,15 @@ Install the [app extension of our transparent checkout](https://apps.shopify.com
 
 ### What can I do with Mercado Pago Transparent Checkout?
 
-| Characteristics    | Description                                                                                    |
-|---|---|
-| One-step purchases | Offer a clear and fast shopping experience, developed within your store and on the same page.  |
-| Mobile experience  | Provides a thought and optimized purchase flow for mobile devices.                             |
-| Shipments          | Connect the checkout with your shipping tool and offer deliveries during the purchase process. |
-| Ads tracking       | Track your marketing campaigns in detail throughout the process.                               |
-| Payment methods    | Accept payments with credit and debit card, cash and money in Mercado Pago account.            |
-| Financing          | Sell in installments and offer the promotions available.                                       |
-| Payment as guest   | Allow your customers to pay even if they don’t have a Mercado Pago account.                    |
+| Characteristics | Description |
+| --- | --- |
+| One-step purchases | Offer a clear and fast shopping experience, developed within your store and on the same page. |
+| Mobile experience | Provides a thought and optimized purchase flow for mobile devices. |
+| Shipments | Connect the checkout with your shipping tool and offer deliveries during the purchase process. |
+| Ads tracking | Track your marketing campaigns in detail throughout the process. |
+| Payment methods | Accept payments with credit and debit card, cash and money in Mercado Pago account. |
+| Financing | Sell in installments and offer the promotions available. |
+| Payment as guest | Allow your customers to pay even if they don’t have a Mercado Pago account. |
 
 
 ### How to install the Transparent Checkout?
@@ -54,7 +54,7 @@ Once the checkout is installed, follow these steps:
 
 1. Create a [seller account](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-company?confirmation_url=https%3A%2F%2Fwww.mercadopago[FAKER][URL][DOMAIN]%2Fcomo-cobrar) in Mercado Pago if you don’t have one yet.
 1. Get the **Public Key** and **Access Token** [credentials]([FAKER][CREDENTIALS][URL]), and paste them in the Production and Testing fields that you will find in the app settings.
-1. Approve the account to [go to Production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/goto-production/) and receive the money from your sales in Mercado Pago.
+1. Approve the account to [go to Production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production) and receive the money from your sales in Mercado Pago.
 
 **Done! With this configuration you can start selling and get the payments you receive in your Mercado Pago account.**
 
@@ -80,7 +80,7 @@ When you test, check that the payment flow works correctly.
 
 To start receiving payments, you must [activate your credentials]([FAKER][CREDENTIALS][URL]/).
 
-> Check the [requirements to go to production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/goto-production/) if you have any questions about the process.
+> Check the [requirements to go to production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/goto-production) if you have any questions about the process.
 
 To activate them, make sure that the production credentials entered are those of the account that you receive money from sales.
 
@@ -98,14 +98,14 @@ Configure our module to finalize the purchase on Mercado Pago site during the pu
 
 ### What can I do with Mercado Pago payment gateway?
 
-| Characteristics        | Description                                                                              |
-|---|---|
+| Characteristics | Description |
+| --- | --- |
 | Mercado Pago Interface | We take care of it! You don't have to worry about implementing and designing a checkout. |
-| Ads tracking           | Track your marketing campaigns in detail throughout the process.                         |
-| Payment methods        | Accept payments with credit and debit card, cash and money in Mercado Pago account.      |
-| Financing              | Sell in installments and offer the promotions available.                                 |
-| Payment as guest       | Allow your customers to pay even if they don’t have a Mercado Pago account.              |
-| Discounts              | Use coupons to offer promotions to your customers.                                       |
+| Ads tracking | Track your marketing campaigns in detail throughout the process. |
+| Payment methods | Accept payments with credit and debit card, cash and money in Mercado Pago account. |
+| Financing | Sell in installments and offer the promotions available. |
+| Payment as guest | Allow your customers to pay even if they don’t have a Mercado Pago account. |
+| Discounts | Use coupons to offer promotions to your customers. |
 
 
 ### How to configure Mercado Pago module?
@@ -125,7 +125,7 @@ Follow these steps to process payments with Checkout Pro:
 >
 > Nota
 >
-> Check [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/web-payment-checkout/introduction/) documentation to learn more about all its features and functionalities.
+> Check [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/web-payment-checkout/introduction) documentation to learn more about all its features and functionalities.
 
 
 ### Payment status mapping
@@ -133,11 +133,11 @@ Follow these steps to process payments with Checkout Pro:
 The following diagram represents the correlation between the status of a payment in Mercado Pago and the order status in Shopify.
 
 | Estado del pago | Mercado Pago status | Shopify order status |
-|---|---|---|
-| Approved        | Approved            | Completed            |
-| Pending         | Pending             | Pending              |
-| In process      | In process          | Pending              |
-| In mediation    | In mediation        | Pending              |
-| Cancelled       | Cancelled           | Failed               |
-| Refunded        | Refunded            | Failed               |
-| Rejected        | Rejected            | Failed               |
+| --- | --- | --- |
+| Approved | Approved | Completed |
+| Pending | Pending | Pending |
+| In process | In process | Pending |
+| In mediation | In mediation | Pending |
+| Cancelled | Cancelled | Failed |
+| Refunded | Refunded | Failed |
+| Rejected | Rejected | Failed |

@@ -17,7 +17,7 @@ To charge with a QR attended model, you’ll have to create and order and then a
 
 We explain how the attended model works:
 
->![Payment flow at QR Mercado Pago point of sale](/images/qr-user-flow.en.png)
+![Payment flow at QR Mercado Pago point of sale](/images/mobile/qr-user-flow.en.png)
 
 <span></span>
 
@@ -57,7 +57,7 @@ https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/stores/EXTERNAL
 }
 ```
 
-Obtain more information in our [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put/).
+Obtain more information in our [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put).
 
 Once the order is created, it is available to be **scanned and paid**.
 
@@ -82,11 +82,11 @@ Answer will be `HTTP 204 No Content`.
 
 ## Receive notifications of your orders
 
-[IPN notifications](https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn/) are an **automatic way of receiving notifications for order creation and status updates**. I.e.: when orders are approved, rejected or pending. 
+[IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn) are an **automatic way of receiving notifications for order creation and status updates**. I.e.: when orders are approved, rejected or pending. 
 
 Implement IPN `merchant_order` with an order search by `external_reference` as a contingency method.
 
-<a href="https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn/" target="_blank"> Receive IPN notifications </a>
+[Receive IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn)
 
 ---
 ### Next steps
@@ -98,7 +98,7 @@ Implement IPN `merchant_order` with an order search by `external_reference` as a
 >
 > Learn the options to take your integration to the next level.
 >
-> [Advanced Integration](https://www.mercadopago.com.ar/developers/en/guides/in-person-payments/qr-code/advanced-integration/)
+> [Advanced Integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/advanced-integration)
 
 
 > RIGHT_BUTTON_RECOMMENDED_EN
@@ -107,4 +107,4 @@ Implement IPN `merchant_order` with an order search by `external_reference` as a
 >
 > Try the most frequent use cases to validate your integration.
 >
-> [Test your integration](https://www.mercadopago.com.ar/developers/en/guides/in-person-payments/qr-code/integration-test/)
+> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/integration-test)

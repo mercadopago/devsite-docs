@@ -1,19 +1,10 @@
 # How to Integrate the Marketplace in the Checkout Pro
 
-----[mla, mlb, mlc, mlm, mco, mlu]----
 > WARNING
 >
 > Prerequisites
 >
-> * Have the [Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/introduction) implemented.
-------------
-----[mpe]----
-> WARNING
->
-> Prerequisites
->
-> * Have the [Checkout Pro](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction) implemented.
-------------
+> * Have the [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction) implemented.
 
 To begin, you need to:
 
@@ -134,7 +125,7 @@ Expected response:
 
 ## 3. Integrate the checkout
 
-To collect on behalf of your sellers you must integrate the [Checkout](https://www.mercadopago.com.ar/developers/en/guides/payments/web-checkout/introduction), generating the payment preferences with the Access Token of each seller for your application.
+To collect on behalf of your sellers you must integrate the [Checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction), generating the payment preferences with the Access Token of each seller for your application.
 
 If you want to charge a fee for each payment processed by your application on behalf of your seller, simply add that amount to the marketplace_fee  parameter when creating the preference:
 
@@ -171,8 +162,8 @@ curl -X POST \
 $preference = new MercadoPago\Preference();
 
 $item = new MercadoPago\Item();
-$item->title = "[FAKER][COMMERCE][PRODUCT_NAME]";
-$item->quantity = [FAKER][NUMBER][BETWEEN][1,10];
+$item->title = "Blue shirt";
+$item->quantity = 10;
 $item->title = "[FAKER][CURRENCY][ACRONYM]";
 $item->unit_price = [FAKER][COMMERCE][PRICE];
 
@@ -194,13 +185,13 @@ Preference preference = new Preference();
 
 Item item = new Item();
 item.setId("1234")
-    .setTitle("[FAKER][COMMERCE][PRODUCT_NAME]")
-    .setQuantity([FAKER][NUMBER][BETWEEN][1,10])
+    .setTitle("Blue shirt")
+    .setQuantity(10)
     .setCategoryId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float) [FAKER][COMMERCE][PRICE]);
 
 Payer payer = new Payer();
-payer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
+payer.setEmail("john@yourdomain.com");
 
 preference.setPayer(payer);
 preference.appendItem(item);
@@ -214,8 +205,8 @@ preference.save();
 	var preference = {}
 
   var item = {
-    title: '[FAKER][COMMERCE][PRODUCT_NAME]',
-    quantity: [FAKER][NUMBER][BETWEEN][1,10],
+    title: 'Blue shirt',
+    quantity: 10,
     currency_id: '[FAKER][CURRENCY][ACRONYM]',
     unit_price: [FAKER][COMMERCE][PRICE]
   }
@@ -241,13 +232,13 @@ preference.save();
 preference = MercadoPago::Preference.new()
 
 item = MercadoPago::Item.new()
-item.title="[FAKER][COMMERCE][PRODUCT_NAME]"
-item.quantity= [FAKER][NUMBER][BETWEEN][1,10]
+item.title="Blue shirt"
+item.quantity= 10
 item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
 item.unit_price = [FAKER][COMMERCE][PRICE]
 
 payer = MercadoPago::Payer.new()
-payer.email="[FAKER][INTERNET][FREE_EMAIL]"
+payer.email="john@yourdomain.com"
 
 preference.items = [item]
 preference.payer = payer
@@ -273,11 +264,11 @@ The seller will receive the difference between the total amount and the fees, bo
 
 You need to send your `notification_url`, where you will receive a notification of all new payments and status updates generated.
 
-For more information, go to the [notifications section](https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn).
+For more information, go to the [notifications section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn).
 
 ### Refunds and cancellations
 
 The cancellations and refunds can be made either by the marketplace or by the seller, via API or through the Mercado Pago account.
 Cancellations can only be made using the cancellation API.
 
-For more information, go to [refunds and cancellations.](https://www.mercadopago.com.ar/developers/en/guides/manage-account/account/cancellations-and-refunds)
+For more information, go to [refunds and cancellations.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds)

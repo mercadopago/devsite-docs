@@ -16,7 +16,7 @@ The available Spreedly methods with Mercado Pago are:
 
 To integrate Spreedly you need to obtain and setup your Mercado Pago [credentials]([FAKER][CREDENTIALS][URL]) Public key and Access token.
 
-> Find all the information about your credentials in our [FAQs](https://www.mercadopago.com.ar/developers/en/guides/resources/faqs/credentials/). 
+> Find all the information about your credentials in our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/faqs/credentials). 
 
 In addition, you have to set up the country code:
 
@@ -144,7 +144,7 @@ $ curl https://core.spreedly.com/v1/payment_methods.json \
 	      "month": "CARD EXPIRATION MONTH",
 	      "year": "CARD EXPIRATION YEAR"
 	    },
-	    "email": "[FAKER][INTERNET][FREE_EMAIL]"
+	    "email": "john@yourdomain.com"
 	  }
 	}
 '
@@ -167,7 +167,7 @@ The response you will get will be similar to this one:
             "token": "3uAIR1sSCVJG90obnCN1Ip1BY3b",
             "created_at": "2018-01-08T21:03:39Z",
             "updated_at": "2018-01-08T21:03:39Z",
-            "email": "[FAKER][INTERNET][FREE_EMAIL]",
+            "email": "john@yourdomain.com",
             "data": null,
             "storage_state": "cached",
             "test": false,
@@ -434,7 +434,7 @@ $ curl https://core.spreedly.com/v1/gateways/6DqX57I6fHgIuUkVN2HGszjDSu1/purchas
           "retain_on_success": true,
           "order_id" : "0001",
           "description" : "SPREEDLY TEST",
-          "email" : "[FAKER][INTERNET][FREE_EMAIL]",  
+          "email" : "john@yourdomain.com",  
           "shipping_address" : {
             "name" : "ADDRESS NAME",
             "address1" : "STREET NAME STREET NUMBER",

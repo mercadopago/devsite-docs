@@ -28,28 +28,28 @@ Whenever an event occurs, we will send you a notification in json format using H
 
 We will notify the following events:
 
-| Notification type    |           Action           |        Description           |
-| :------------------- | :------------------------- | :--------------------------- |
-| `payment`            | `payment.created`          | Payment created              |
-| `payment`            | `payment.updated`          | Payment updated              |
-| `mp-connect`         | `application.deauthorized` | Account deauthorized         |
-| `mp-connect`         | `application.authorized`   | Account authorized           |
-| `plan`               | `application.authorized`   | Account authorized           |
-| `subscription`       | `application.authorized`   | Account authorized           |
-| `invoice`            | `application.authorized`   | Account authorized           |
+| Notification type | Action | Description |
+| :--- | :--- | :--- |
+| `payment` | `payment.created` | Payment created |
+| `payment` | `payment.updated` | Payment updated |
+| `mp-connect` | `application.deauthorized` | Account deauthorized |
+| `mp-connect` | `application.authorized` | Account authorized |
+| `plan` | `application.authorized` | Account authorized |
+| `subscription` | `application.authorized` | Account authorized |
+| `invoice` | `application.authorized` | Account authorized |
 
 Mercado Pago will send notifications with the following schedule of retries and confirmation awaiting times. You must return an `HTTP STATUS 200 (OK)` or `201 (CREATED)` before the corresponding time expires. If not, it will be assumed that you did not receive it correctly and you will be notified again.
 
 If you need more information, please review the section [What should I do when I receive a notification?](#bookmark_what_should_i_do_after_receiving_a_notification?).
 
-| Event        | Time after the first dispatch | Confirmation waiting time |
-|--------------|-------------------------------|---------------------------|
-| Dispatch     | -                             | 22 seconds                |
-| First retry  | 5 minutes                     | 5 seconds                 |
-| Second retry | 45 minutes                    | 5 seconds                 |
-| Third retry  | 6 hours                       | 5 seconds                 |
-| Fourth retry | 2 days                        | 5 seconds                 |
-| Fifth retry  | 4 days                        | 5 seconds                 |
+| Event| Time after the first dispatch | Confirmation waiting time |
+| --- | --- | --- |
+| Dispatch | - | 22 seconds |
+| First retry | 5 minutes | 5 seconds |
+| Second retry | 45 minutes | 5 seconds |
+| Third retry | 6 hours | 5 seconds |
+| Fourth retry | 2 days | 5 seconds |
+| Fifth retry | 4 days | 5 seconds |
 
 The notification sent has the following format:
 
@@ -84,12 +84,12 @@ This communication is exclusively between the servers of Mercado Pago and your s
 After this, you must obtain the complete information of the notified resource by accessing the corresponding endpoint of the API:
 
 
-Type         | URL                                                | Documentation
------------- | -------------------------------------------------- | --------------------
-payment      | https://api.mercadopago.com/v1/payments/[ID]     | [see documentation](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_id/get/)
-plan         | https://api.mercadopago.com/v1/plans/[ID]         | -
-subscription | https://api.mercadopago.com/v1/subscriptions/[ID] | -
-invoice      | https://api.mercadopago.com/v1/invoices/[ID]      | -
+| Type | URL | Documentation |
+| --- | --- | --- |
+| payment | https://api.mercadopago.com/v1/payments/[ID] | [see documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) |
+| plan | https://api.mercadopago.com/v1/plans/[ID] | - |
+| subscription | https://api.mercadopago.com/v1/subscriptions/[ID] | - |
+| invoice | https://api.mercadopago.com/v1/invoices/[ID] | - |
 
 With this information you can make the necessary updates on your platform, such as registering an approved payment.
 

@@ -12,8 +12,8 @@
 
 First, you must familiarize yourself with the following concepts since you will use them during the integration.
 
-| Attribute      | Description                                                  |
-| -------------- | ------------------------------------------------------------ |
+| Attribute | Description |
+| --- | --- |
 | `ACCESS_TOKEN` | It is the [access token](https://www.mercadopago.com/mlm/account/credentials) of the Mercado Pago account to which the charges will be credited. |
 | `COLLECTOR_ID` | It is the user number of the Mercado Pago account, it is the last 9 digits of your `access_token`, after the middle script. |
 
@@ -103,7 +103,7 @@ In addition to the previous concepts, you must also know the objects with which 
 
 - `status_detail`: Detailed information about the current status or the reason for rejection.
 
-Consult the [full documentation](https://www.mercadopago.com.mx/developers/en/reference/payments/resource/) about this object in our API Reference.
+Consult the [full documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/resource) about this object in our API Reference.
 
 ## Payments
 
@@ -158,8 +158,8 @@ For example, if you want it to be available for 5 minutes you should send the he
 
 After the user makes the payment you can obtain the data using any of the following ways:
 
-1. [IPN](https://www.mercadopago.com.mx/developers/es/guides/notifications/ipn/): When the payment is created, we send a notification via webhook to the URL configured in the `notification_url` of the order, you will need to be subscribed to merchant_order's type notifications.
-2. Do the [payment search](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_search/get/) using the `external_reference` as the search criteria.
+1. [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn): When the payment is created, we send a notification via webhook to the URL configured in the `notification_url` of the order, you will need to be subscribed to merchant_order's type notifications.
+2. Do the [payment search](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_search/get) using the `external_reference` as the search criteria.
 
 ### Delete order
 
@@ -173,7 +173,7 @@ https://api.mercadopago.com/mpmobile/instore/qr/COLLECTOR_ID/EXTERNAL_ID
 
 ## Refunds
 
-There will be times when you will need to do a partial or total [refund](https://www.mercadopago.com.ar/developers/en/guides/manage-account/account/cancellations-and-refunds/).
+There will be times when you will need to do a partial or total [refund](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
 
 **Total refund**
 
@@ -196,20 +196,20 @@ https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds \
 
 Two test users must be created: one buyer and another collector. With the billing user, the QR must be created and with the other, enter the Mercado Pago or Mercado Libre apps.
 
-Consult the [test data](https://www.mercadopago.com.mx/developers/es/guides/online-payments/checkout-pro/test-integration): test users and test cards that can be used.
+Consult the [test data](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/test-integration): test users and test cards that can be used.
 
-| Test cases                                                   | Expected response                                            |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| The user scans a valid QR code before placing the order.     | The app does not display an order.                           |
-| The user scans a QR code with invalid parameters, meaning that it refers to a nonexistent account. | The app reports that an error has occurred.                  |
-| The user scans a valid code, once the order has been placed and the sales order has been created. | La app muestra la orden.                                     |
-| The user generates an approved payment.                      | The POS system receives the information of an approved payment. |
-| The user generates an rejected payment.                      | The POS system receives the information of an rejected payment. |
-| A return of a payment is made from the POS.                  | The return is impacted in the buyer's account.               |
+| Test cases | Expected response |
+| --- | --- |
+| The user scans a valid QR code before placing the order. | The app does not display an order. |
+| The user scans a QR code with invalid parameters, meaning that it refers to a nonexistent account. | The app reports that an error has occurred. |
+| The user scans a valid code, once the order has been placed and the sales order has been created. | La app muestra la orden. |
+| The user generates an approved payment. | The POS system receives the information of an approved payment. |
+| The user generates an rejected payment. | The POS system receives the information of an rejected payment. |
+| A return of a payment is made from the POS. | The return is impacted in the buyer's account. |
 
 ### Errors
 
-[Here](https://www.mercadopago.com.mx/developers/en/guides/online-payments/checkout-api/handling-responses/) you can find our error dictionary.
+[Here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses) you can find our error dictionary.
 
 ## Reports
 

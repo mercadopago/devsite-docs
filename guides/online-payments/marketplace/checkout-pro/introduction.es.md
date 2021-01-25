@@ -26,13 +26,13 @@ Después de crear la aplicación, sólo es necesario ejecutar el segundo y terce
 
 ## Credenciales
 
-Las <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciales </a> son las **claves que te proporcionamos para que puedas configurar tu integración**. Para este caso, vas a utilizar una clave pública y otra privada.
+Las [credenciales]([FAKER][CREDENTIALS][URL]) son las **claves que te proporcionamos para que puedas configurar tu integración**. Para este caso, vas a utilizar una clave pública y otra privada.
 
 * La clave pública, o Public key, te sirve para acceder a los recursos que necesita tu frontend. Vas a poder recolectar los datos de las tarjetas de crédito y convertirlos en un token representativo que puedes guardar de forma segura en tus servidores para crear un pago.
 
 * La clave privada, o Access token, te va a permitir llamar al resto de las APIs. Por ejemplo, cómo procesar un pago, realizar un reembolso o almacenar tarjetas.
 
-> ¿Tienes dudas? Consulta nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/resources/faqs/credentials/).
+> ¿Tienes dudas? Consulta nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials).
 
 
-#### [Comenzar a crear mi Marketplace](https://www.mercadopago.com.ar/developers/es/guides/online-payments/marketplace/checkout-pro/create-marketplace)
+#### [Comenzar a crear mi Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/marketplace/checkout-pro/create-marketplace)

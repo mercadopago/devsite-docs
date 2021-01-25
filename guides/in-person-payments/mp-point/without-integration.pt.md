@@ -3,7 +3,6 @@ sites_supported:
   - mla
   - mlb
   - mlm
-  - global
 ---
 
 # Cobranças com Point sem integração
@@ -30,6 +29,6 @@ Você pode inserir uma imagem para cada produto, o preço e o nome do mesmo.
 
 ## Intere-se sobre seus pagamentos
 
-Você pode verificar suas vendas na lista de atividades da conta do Mercado Pago ou integrar [notificações](https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks) no seu sistema de gestão.
+Você pode verificar suas vendas na lista de atividades da conta do Mercado Pago ou integrar [notificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks) no seu sistema de gestão.
 
-> Se você quiser construir algo mais avançado e personalizado, consulte nossa documentação de [Point integrado](https://www.mercadopago.com.br/developers/pt/guides/mp-point/create-point)
+> Se você quiser construir algo mais avançado e personalizado, consulte nossa documentação de [Point integrado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/mp-point/how-to-integrate)

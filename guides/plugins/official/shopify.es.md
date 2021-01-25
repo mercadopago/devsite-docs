@@ -23,15 +23,15 @@ Instala la [app extension de nuestro checkout transparente](https://apps.shopify
 
 ### ¿Qué puedo hacer con el checkout transparente de Mercado Pago?
 
-| Características    | Descripción                                                                                             |
-|---|---|
+| Características | Descripción |
+| --- | --- |
 | Compras en un paso | Ofrece una experiencia de compra clara y rápida, desarrollada dentro de tu tienda y en la misma página. |
-| Experiencia mobile | Brinda un flujo de compra pensado y optimizado para dispositivos móviles.                               |
-| Envíos             | Conecta el checkout con tu herramienta de envíos y ofrece entregas durante el proceso de compra.        |
-| Ads tracking       | Realiza un seguimiento detallado de tus campañas de marketing durante todo el proceso.                  |
-| Medios de pago     | Acepta pagos con tarjeta de crédito y débito, efectivo y dinero en cuenta de Mercado Pago.              |
-| Financiación       | Vende en cuotas y ofrece las promociones disponibles.                                                   |
-| Pago como invitado | Permite que tus clientes paguen sin necesidad de tener cuenta en Mercado Pago.                          |
+| Experiencia mobile | Brinda un flujo de compra pensado y optimizado para dispositivos móviles. |
+| Envíos | Conecta el checkout con tu herramienta de envíos y ofrece entregas durante el proceso de compra. |
+| Ads tracking | Realiza un seguimiento detallado de tus campañas de marketing durante todo el proceso. |
+| Medios de pago | Acepta pagos con tarjeta de crédito y débito, efectivo y dinero en cuenta de Mercado Pago. |
+| Financiación | Vende en cuotas y ofrece las promociones disponibles. |
+| Pago como invitado | Permite que tus clientes paguen sin necesidad de tener cuenta en Mercado Pago. |
 
 
 ### ¿Cómo instalar el checkout transparente?
@@ -54,7 +54,7 @@ Una vez instalado el checkout, sigue estos pasos:
 
 1. Crea una [cuenta vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-company?confirmation_url=https%3A%2F%2Fwww.mercadopago[FAKER][URL][DOMAIN]%2Fcomo-cobrar) en Mercado Pago si todavía no tienes una.
 1. Obtén las [credenciales]([FAKER][CREDENTIALS][URL]) **Public Key** y **Access Token**, y pégalas en los campos de Producción y Pruebas que encontrarás en la configuración de la app.
-1. Homologa la cuenta para [ir a Producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/goto-production/) y recibir el dinero de tus ventas en Mercado Pago.
+1. Homologa la cuenta para [ir a Producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/goto-production) y recibir el dinero de tus ventas en Mercado Pago.
 
 **¡Listo! Con esta configuración podrás comenzar a vender y obtener los pagos que recibas en tu cuenta de Mercado Pago.**
 
@@ -80,7 +80,7 @@ Cuando hagas pruebas, revisa que el flujo de pagos funcione correctamente.
 
 Para empezar a cobrar debes [activar tus credenciales]([FAKER][CREDENTIALS][URL]).
 
-> Consulta los [requisitos para ir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/goto-production/) si tienes alguna duda con el proceso.
+> Consulta los [requisitos para ir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/goto-production) si tienes alguna duda con el proceso.
 
 Al activarlas, asegúrate que las credenciales de Producción ingresadas sean las de la cuenta que reciba el dinero de las ventas. 
 
@@ -98,14 +98,14 @@ Configura nuestro módulo para finalizar la compra en el sitio de Mercado Pago d
 
 ### ¿Qué puedo hacer con el gateway de pagos de Mercado Pago?
 
-| Características       | Descripción                                                                                            |
-|---|---|
-| Interfaz Mercado Pago | ¡Nosotros nos encargamos! No tienes que preocuparte por la implementación y diseño de un checkout.     |
-| Ads tracking          | Realiza un seguimiento detallado de tus campañas de marketing y su conversión durante todo el proceso. |
-| Medios de pago        | Acepta pagos con tarjeta de crédito y débito, efectivo y dinero en cuenta de Mercado Pago.             |
-| Financiación          | Vende en cuotas y ofrece las promociones disponibles.                                                  |
-| Pago como invitado    | Permite que tus clientes paguen sin necesidad de tener cuenta en Mercado Pago.                         |
-| Descuentos            | Utiliza cupones para ofrecer promociones a tus clientes.                                               |
+| Características | Descripción |
+| --- | --- |
+| Interfaz Mercado Pago | ¡Nosotros nos encargamos! No tienes que preocuparte por la implementación y diseño de un checkout. |
+| Ads tracking | Realiza un seguimiento detallado de tus campañas de marketing y su conversión durante todo el proceso. |
+| Medios de pago | Acepta pagos con tarjeta de crédito y débito, efectivo y dinero en cuenta de Mercado Pago. |
+| Financiación | Vende en cuotas y ofrece las promociones disponibles. |
+| Pago como invitado | Permite que tus clientes paguen sin necesidad de tener cuenta en Mercado Pago. |
+| Descuentos | Utiliza cupones para ofrecer promociones a tus clientes. |
 
 
 ### ¿Cómo configurar el módulo de Mercado Pago?
@@ -125,7 +125,7 @@ Sigue estos pasos para procesar los pagos con Checkout Pro:
 >
 > Nota
 >
-> Consulta la documentación de [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/web-payment-checkout/introduction/) para conocer mejor todas sus características y funcionalidades.
+> Consulta la documentación de [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/web-payment-checkout/introduction) para conocer mejor todas sus características y funcionalidades.
 
 
 ### Mapeo de estados de pago
@@ -133,11 +133,11 @@ Sigue estos pasos para procesar los pagos con Checkout Pro:
 El siguiente esquema representa la correlación entre los estados de un pago en Mercado Pago y el estado de la orden en Shopify.
 
 | Estado del pago | Mercado Pago status | Shopify order status |
-|---|---|---|
-| Aprobado        | Approved            | Completed            |
-| Pendiente       | Pending             | Pending              |
-| En proceso      | In process          | Pending              |
-| En mediación    | In mediation        | Pending              |
-| Cancelado       | Cancelled           | Failed               |
-| Reembolsado     | Refunded            | Failed               |
-| Rechazado       | Rejected            | Failed               |
+| --- | --- | --- |
+| Aprobado | Approved | Completed |
+| Pendiente | Pending | Pending |
+| En proceso | In process | Pending |
+| En mediación | In mediation | Pending |
+| Cancelado | Cancelled | Failed |
+| Reembolsado | Refunded | Failed |
+| Rechazado | Rejected | Failed |

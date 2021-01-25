@@ -19,7 +19,7 @@ There are two ways to integrate subscriptions:
 > 
 > Key concepts
 > 
-> Do you have questions about what a plan or other concept is? Keep the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/introduction" target="_blank">key concepts</a> handy to review them when needed.
+> Do you have questions about what a plan or other concept is? Keep the [key concepts](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/introduction) handy to review them when needed.
 
 
 ## Subscriptions with an associated plan
@@ -32,8 +32,8 @@ When generating the plan you will get the `preapproval_plan_id` that you will us
 
 To create the plan, make the following call to our API with the data you need:
 
-[[[
-```curl curl --location --request POST 'https://api.mercadopago.com/preapproval_plan' \
+```curl 
+curl --location --request POST 'https://api.mercadopago.com/preapproval_plan' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -52,25 +52,23 @@ To create the plan, make the following call to our API with the data you need:
 	}
 }'
 ```
-]]]
 
 #### Attributes
 
-Attribute |	Definition
---- | ---
-`reason` (required) | It is the description that the subscriber will see when making the subscription and the detail that will be seen in the card statement. |
-`auto_recurring.frequency` (required) | Indicates the length of time  or cycle based on the type of frequency. |
-`auto_recurring.frequency_type` (required) | Indicates the type of frequency. It can be by month (months) or day (days). <br><br> Along with the frequency, they define the installment cycle that a subscription will have. <br><br>For example, if every fifteen days you need to generate an instalment to be charged it would look like this: `auto_recurring.frequency`: 15 y `auto_recurring.frequency_type`: days |
-`auto_recurring.transaction_amount` | If we indicate the amount, it is fixed. If this field is blank, it is understood as a variable amount. A maximum of two decimals separated by a period is allowed. |
-`auto_recurring.currency_id` (required) | Identifies the currency that corresponds to the country. |
-`auto_recurring.repetitions` | Indicates if the subscription will have a limit. If not specified, there is no limit. This limit is related to `auto_recurring.frequency` y `auto_recurring.frequency_type`. |
-`auto_recurring.free_trial.frequency` | Defines an initial test period and delays the first collection. Indicates the length of time that the service will not be charged, for based on the type of frequency. It must be consistent with `auto_recurring.frequency`. |
-`auto_recurring.free_trial.frequency_type` | Indicates the number of installments that will not be charged for the service. It must be consistent with `auto_recurring.frequency_type`. |
+| Attribute |	Definition |
+| --- | --- |
+| `reason` (required) | It is the description that the subscriber will see when making the subscription and the detail that will be seen in the card statement. |
+| `auto_recurring.frequency` (required) | Indicates the length of time or cycle based on the type of frequency. |
+| `auto_recurring.frequency_type` (required) | Indicates the type of frequency. It can be by month (months) or day (days). <br><br> Along with the frequency, they define the installment cycle that a subscription will have. <br><br>For example, if every fifteen days you need to generate an instalment to be charged it would look like this: `auto_recurring.frequency`: 15 y `auto_recurring.frequency_type`: days |
+| `auto_recurring.transaction_amount` | If we indicate the amount, it is fixed. If this field is blank, it is understood as a variable amount. A maximum of two decimals separated by a period is allowed. |
+| `auto_recurring.currency_id` (required) | Identifies the currency that corresponds to the country. |
+| `auto_recurring.repetitions` | Indicates if the subscription will have a limit. If not specified, there is no limit. This limit is related to `auto_recurring.frequency` y `auto_recurring.frequency_type`. |
+| `auto_recurring.free_trial.frequency` | Defines an initial test period and delays the first collection. Indicates the length of time that the service will not be charged, for based on the type of frequency. It must be consistent with `auto_recurring.frequency`. |
+| `auto_recurring.free_trial.frequency_type` | Indicates the number of installments that will not be charged for the service. It must be consistent with `auto_recurring.frequency_type`. |
 
 #### Response
 `HTTP Status 200 OK`
 ```json
-
 {
     "id": "2c938084726e18d60172720000000000",
     "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]",
@@ -94,8 +92,8 @@ Attribute |	Definition
         }
     }
 }
-
 ```
+
 Done! We can now create the subscription and associate it to your plan.
 
 
@@ -103,8 +101,8 @@ Done! We can now create the subscription and associate it to your plan.
 
 Once you have generated your plan and obtained your `preapproval_plan_id`, create the subscription of the payer by API as follows: 
 
-[[[
-```curl curl --location --request POST 'https://api.mercadopago.com/preapproval \
+```curl 
+curl --location --request POST 'https://api.mercadopago.com/preapproval \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -114,21 +112,20 @@ Once you have generated your plan and obtained your `preapproval_plan_id`, creat
    
 }'
 ```
-]]]
 
 #### Attributes
 
-Attribute |	Definition
---- | ---
-`preapproval_plan_id` (required) | Refers to the previously generated plan.|
-`card_token_id` (required) | The information on the card will be converted into a token to send the data securely. |
-`payer_email` (required) | Payer's email address. |
+| Attribute |	Definition |
+| --- | --- |
+| `preapproval_plan_id` (required) | Refers to the previously generated plan. |
+| `card_token_id` (required) | The information on the card will be converted into a token to send the data securely. |
+| `payer_email` (required) | Payer's email address. |
 
 > WARNING
 > 
 > Important
 > 
-> ¿Do you have questions about how to create the payment token? Find all the information in the section of <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card#bookmark_card_data_capture" target="_blank">Capture data from the card</a>.
+> ¿Do you have questions about how to create the payment token? Find all the information in the section of [Capture data from the card](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card#bookmark_card_data_capture).
 
 #### Response 
 `HTTP Status 200 OK`
@@ -138,7 +135,7 @@ Attribute |	Definition
     "preapproval_plan_id": "2c938084726e18d60170001112223334",
     "payer_id": 100200300,
     "payer_email": "test_user_XXXX@testuser.com",
-    "back_url": "http://www.mercadopago[FAKER][URL][DOMAIN]/",
+    "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]/",
     "collector_id": 10101,
     "application_id": 1234567812345678,
     "status": "authorized",
@@ -157,7 +154,7 @@ Attribute |	Definition
         "end_date": "2021-07-02T11:59:52.581-04:00"
 }
 ```
->You can get more information about the fields in the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/" target="_blank">API Reference</a>.
+>You can get more information about the fields in the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
 
 Done! You have already created a subscription with an associated plan.
 
@@ -170,8 +167,8 @@ If you want to use a subscription without an associated plan, you must first set
 
 To create a subscription with `authorized` status, the card details must be submitted to be associated as follows:
 
-[[[
-```curl curl --location --request POST 'https://api.mercadopago.com/preapproval' \
+```curl 
+curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -182,7 +179,7 @@ To create a subscription with `authorized` status, the card details must be subm
     "frequency_type": "months",
     "end_date": "2022-07-20T11:59:52.581-04:00"
   },
-  "back_url": "http://www.mercadopago[FAKER][URL][DOMAIN]/",
+  "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]/",
   "collector_id": 100200300,
   "external_reference": "1245AT234562",
   "payer_email": "test_user_XXXX@testuser.com",
@@ -191,17 +188,15 @@ To create a subscription with `authorized` status, the card details must be subm
   "status": "authorized"
 }'
 ```
-]]]
 
 #### Response 
 `HTTP Status 200 OK`
 ```json
-
 {
     "id": "2c938084726fca480172750000000000",
     "payer_id": 400500600,
     "payer_email": "test_user_XXXX@testuser.com",
-    "back_url": "http://www.mercadopago[FAKER][URL][DOMAIN]/",
+    "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]/",
     "collector_id": 100200300,
     "application_id": 1234567812345678,
     "status": "authorized",
@@ -230,8 +225,8 @@ You can create a subscription with `pending` status and no associated payment me
 
 In order to subscribe, the card data must be uploaded with our form. Only the link returned in the `init_point` property must be shared with the payer:
 
-[[[
-```curl curl --location --request POST 'https://api.mercadopago.com/preapproval' \
+```curl 
+curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -242,7 +237,7 @@ In order to subscribe, the card data must be uploaded with our form. Only the li
     "frequency_type": "months",
     "end_date": "2022-07-20T11:59:52.581-04:00"
   },
-  "back_url": "http://www.mercadopago[FAKER][URL][DOMAIN]/",
+  "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]/",
   "collector_id": 100200300,
   "external_reference": "1245AT234562",
   "payer_email": "test_user_XXXX@testuser.com",
@@ -250,18 +245,16 @@ In order to subscribe, the card data must be uploaded with our form. Only the li
   "status": "pending"
 }'
 ```
-]]]
 
 
 #### Response
 `HTTP Status 200 OK`
 ```json
-
 {
     "id": "2c938084726fca480172750000000000",
     "payer_id": 400500600,
     "payer_email": "test_user_XXXX@testuser.com",
-    "back_url": "http://www.mercadopago[FAKER][URL][DOMAIN]/",
+    "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]/",
     "collector_id": 100200300,
     "application_id": 1234567812345678,
     "status": "pending",
@@ -283,25 +276,25 @@ In order to subscribe, the card data must be uploaded with our form. Only the li
 }
 ```
 
-> You can get more information about the fields in the <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/" target="_blank">API reference</a>.
+> You can get more information about the fields in the [API reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
 
 
 Attributes
 
-Attribute |	Definition
---- | ---
-`reason` | It is the description that the subscriber will see when making the subscription and the detail that will be seen in the card statement. |
-`status` | Subscription status. It can be `pending` or `authorized`. |
-`auto_recurring.frequency` | Indicates the length of time or cycle based on the type of frequency. |
-`auto_recurring.frequency_type` | Indicates the type of frequency. It can be by month (months) or day (days). Along with the frequency, they define the installment cycle that a subscription will have.<br><br> For example, if every fifteen days you need to generate an instalment to be collected it would look as follows: `auto_recurring.frequency`: 15 y  `auto_recurring.frequency_type`: days |
-`auto_recurring.transaction_amount` | Amount applicable to the subscription. |
-`auto_recurring.currency_id` | Identifies the currency that corresponds to the country. |
-`auto_recurring.end_date` | Indicates if the subscription will have a limit. If not specified, there is no limit. |
-`auto_recurring.free_trial.frequency` | Indicates the length of time that the service will not be charged. It must be consistent with `auto_recurring.frequency`. |
-`auto_recurring.free_trial.frequency_type` | Indicates the amount of installments that will not be charged for the service. It must be consistent with `auto_recurring.frequency_type`. |
-`collector_id` | Seller's identifier. |
-`payer_email` | Payer's email address. |
-`card_token_id` | If the subscription was already authorized, the information on the card will be converted into a token to send the data securely. |
+| Attribute |	Definition |
+| --- | --- |
+| `reason` | It is the description that the subscriber will see when making the subscription and the detail that will be seen in the card statement. |
+| `status` | Subscription status. It can be `pending` or `authorized`. |
+| `auto_recurring.frequency` | Indicates the length of time or cycle based on the type of frequency. |
+| `auto_recurring.frequency_type` | Indicates the type of frequency. It can be by month (months) or day (days). Along with the frequency, they define the installment cycle that a subscription will have.<br><br> For example, if every fifteen days you need to generate an instalment to be collected it would look as follows: `auto_recurring.frequency`: 15 y `auto_recurring.frequency_type`: days |
+| `auto_recurring.transaction_amount` | Amount applicable to the subscription. |
+| `auto_recurring.currency_id` | Identifies the currency that corresponds to the country. |
+| `auto_recurring.end_date` | Indicates if the subscription will have a limit. If not specified, there is no limit. |
+| `auto_recurring.free_trial.frequency` | Indicates the length of time that the service will not be charged. It must be consistent with `auto_recurring.frequency`. |
+| `auto_recurring.free_trial.frequency_type` | Indicates the amount of installments that will not be charged for the service. It must be consistent with `auto_recurring.frequency_type`. |
+| `collector_id` | Seller's identifier. |
+| `payer_email` | Payer's email address. |
+| `card_token_id` | If the subscription was already authorized, the information on the card will be converted into a token to send the data securely. |
 
 
 ------------
@@ -313,7 +306,7 @@ Attribute |	Definition
 >
 > Check that your subscriptions are properly configured with the test users. 
 >
-> [Tests](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/testing/)
+> [Tests](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/testing)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -321,4 +314,4 @@ Attribute |	Definition
 >
 > Update, edit or cancel your subscriptions. 
 >
-> [Advanced integration](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/advanced-integration/)
+> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/advanced-integration)

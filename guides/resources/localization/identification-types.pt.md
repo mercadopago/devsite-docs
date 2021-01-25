@@ -54,7 +54,7 @@ curl -X GET \
 ]]]
 
 
-Os resultados incluídos nesta resposta coincidirão com o país associado à sua conta Mercado Pago. Você poderá obter mais informações sobre este recurso e seus atributos em [Referência da API](https://www.mercadopago.com.br/developers/pt/reference/payment_methods/_payment_methods/get/).
+Os resultados incluídos nesta resposta coincidirão com o país associado à sua conta Mercado Pago. Você poderá obter mais informações sobre este recurso e seus atributos em [Referência da API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payment_methods/_payment_methods/get).
 
 ## Tipos de documentos por país
 
@@ -64,49 +64,49 @@ Apenas o México não requer esta informação.
 
 ### Argentina
 
-Tipo de documento               | ID                       |
-:------------------------------ | :----------------------- |
-Documento Nacional de Identidad | `DNI`                    |
-Cédula de Identidad             | `CI`                     |
-Libreta Cívica                  | `LC`                     |
-Libreta de Enrolamiento         | `LE`                     |
-Outros                          | `Otro`                   |
+| Tipo de documento | ID |
+| :--- | :--- |
+| Documento Nacional de Identidad | `DNI` |
+| Cédula de Identidad | `CI` |
+| Libreta Cívica | `LC` |
+| Libreta de Enrolamiento | `LE` |
+| Outros | `Otro` |
 
 ### Brasil
 
-Tipo de documento           | ID                       |
-:-------------------------- | :----------------------- |
-Cadastro de Pessoas Físicas | `CPF`                    |
-Cadastro Nacional da Pessoa Jurídica | `CNPJ`                   |
+| Tipo de documento | ID |
+| :--- | :--- |
+| Cadastro de Pessoas Físicas | `CPF` |
+| Cadastro Nacional da Pessoa Jurídica | `CNPJ` |
 
 ### Chile
 
-Tipo de documento          | ID                       |
-:------------------------- | :----------------------- |
-Rol Único Tributario       | `RUT`                    |
-Outros                     | `Otro`                   |
+| Tipo de documento | ID |
+| :--- | :--- |
+| Rol Único Tributario | `RUT` |
+| Outros | `Otro` |
 
 ### Colômbia
 
-Tipo de documento                   | ID                       |
-:---------------------------------- | :----------------------- |
-Cédula de Ciudadanía                | `CC`                     |
-Cédula de Extranjeria               | `CE`                     |
-Número de Identificación Tributaria | `NIT`                    |
-Outros                              | `Otro`                   |
+| Tipo de documento | ID |
+| :--- | :--- |
+| Cédula de Ciudadanía | `CC` |
+| Cédula de Extranjeria | `CE` |
+| Número de Identificación Tributaria | `NIT` |
+| Outros | `Otro` |
 
 ### Peru
 
-Tipo de documento                | ID                       |
-:------------------------------- | :----------------------- |
-Documento Nacional de Identidad  | `DNI`                    |
-Carné de Extranjería             | `CE`                     |
-Registro Único de Contribuyentes | `RUC`                    |
+| Tipo de documento | ID |
+| :--- | :--- |
+| Documento Nacional de Identidad | `DNI` |
+| Carné de Extranjería | `CE` |
+| Registro Único de Contribuyentes | `RUC` |
 
 ### Uruguai
 
-Tipo de documento          | ID                       |
-:------------------------- | :----------------------- |
-Cédula de Identidad        | `CI`                    |
-Outros                     | `Otro`                   |
+| Tipo de documento | ID |
+| :--- | :--- |
+| Cédula de Identidad | `CI` |
+| Outros | `Otro` |
 

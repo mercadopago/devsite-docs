@@ -6,15 +6,15 @@
 
 ----[mlb]----
 
-![Pagos QR Mercado Pago](/images/qr_mla2.es.png)
+![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
 ------------
 ----[mla]----
 
-![Pagos QR Mercado Pago](/images/qr_mla2.es.png)
+![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
 
 ------------
 ----[mlm]----
-![Pagos QR Mercado Pago](/images/qr_mla2.es.png)
+![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
 ------------
 
 You can boost in-store sales by using QR codes to get paid. The mobile app of Mercado Pago allows its users to securely store their credit cards, debit cards and use the available account balance. Its main features are:
@@ -34,10 +34,10 @@ To make the payment, your customers need to download the app on their mobile pho
 
 ## QR Payments types
 
-| Type                                                         | Description                                                  | Integration required? |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | --------------------- |
-| [Simple QR code](https://www.mercadopago.com.ar/developers/en/guides/in-person-payments/qr-code-legacy/qr-static) | By generating a QR code from your Mercado Pago portal. The customer scans your QR code and can transfer the money. The amount must be entered manually. | No                    |
-| [Point of Sale QR](https://www.mercadopago.com.ar/developers/en/guides/in-person-payments/qr-code-legacy/qr-pos) | By integrating in your point of sale system the payment method via QR code. Customers scan the QR code, which allows them to view on their mobile phone the description of what they purchased and the amount to be paid. | Yes                   |
-| [Gas Station QR](https://www.mercadopago.com.ar/developers/en/guides/in-person-payments/qr-code-legacy/qr-gas-station) | By integrating in your management system the payment method via QR code. Customers scan the QR code, which allows them to view on their mobile phone the description of what they purchased and the amount to be paid. | Yes                   |
+| Type | Description | Integration required? |
+| --- | --- | --- |
+| [Simple QR code](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code-legacy/qr-static) | By generating a QR code from your Mercado Pago portal. The customer scans your QR code and can transfer the money. The amount must be entered manually. | No |
+| [Point of Sale QR](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code-legacy/qr-pos) | By integrating in your point of sale system the payment method via QR code. Customers scan the QR code, which allows them to view on their mobile phone the description of what they purchased and the amount to be paid. | Yes |
+| [Gas Station QR](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code-legacy/qr-gas-station) | By integrating in your management system the payment method via QR code. Customers scan the QR code, which allows them to view on their mobile phone the description of what they purchased and the amount to be paid. | Yes |
 
 Based on your business model, you can choose one of the options or combine them to offer your customers a great shopping experience in your physical stores.

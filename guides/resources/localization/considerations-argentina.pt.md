@@ -1,7 +1,6 @@
 ---
   sites_supported:
       - mla
-      - global
 ---
 
 # Considerações especiais para Argentina
@@ -16,7 +15,7 @@ Devido à [Resolução E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNor
 
 3. A informação sobre o custo financeiro total (CFT) da transação deverá ser posicionada próxima das outras variáveis informadas no ponto anterior, destacada em negrito em fonte idêntica e tamanho pelo menos 5 (CINCO) vezes maior – preservando todas as proporções de espessura do traço, altura e largura – à utilizada para informar a taxa de juros efetiva anual (TEA) aplicada. Multiplicar a largura dos lados x 2,25 é o suficiente. Exemplo:
 
-![cft-tea](https://secure.mlstatic.com/developers/site/cloud/assets/misc/tea-cft.png)
+![cft-tea](/images/resources/tea-cft.png)
 
 ### Obtenha a TEA e o CFT
 

@@ -6,7 +6,7 @@ As credenciais são as Chaves que proporcionamos para que você possa fazer suas
 
 Suas credenciais são:
 
-| Chave | Descrição|
+| Chave | Descrição |
 | --- | --- |
 | Public key | Chave pública da aplicação que normalmente será usada no frontend e te permitirá, por exemplo, conhecer os meios de pagamento e criptografar os dados do cartão.|
 | Access token | Chave privada da aplicação normalmente será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor. |

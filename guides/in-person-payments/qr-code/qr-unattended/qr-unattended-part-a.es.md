@@ -41,7 +41,7 @@ Las características principales son:
 
 Te explicamos cómo funciona el modelo desatendido: 
 
->![Flujo de pago en punto de venta QR Mercado Pago](/images/qr-gas-station-flow.es.png)
+![Flujo de pago en punto de venta QR Mercado Pago](/images/mobile/qr-gas-station-flow.es.png)
 
 
 1. El cliente escanea el código QR desde su aplicación.
@@ -100,5 +100,5 @@ https://api.mercadopago.com/pos \
 >
 > Conoce paso a paso como integrar este modelo.
 >
-> [Cómo integrar QR modelo desatendido](https://www.mercadopago.com.ar/developers/es/guides/in-person-payments/qr-code/qr-unattended/qr-unattended-part-b/)
+> [Cómo integrar QR modelo desatendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/qr-unattended/qr-unattended-part-b)
 

@@ -2,7 +2,6 @@
 sites_supported:
   - mla
   - mco
-  - global
 indexable: false
 ---
 
@@ -26,16 +25,16 @@ The **Aggregator Model** is the one offered by default in Mercado Pago unless th
 
 _Main differences between the two models:_
 
-|Trait| Aggregator Model | Gateway Model |
-|---|:---:|:---:|
-|Processing | ✔ | ✔ |
-|Fraud Prevention (Scoring) | ✔ | ✔ (*) |
-|Fraud Prevention (Manual Review) | ✔ | ✔ (*) |
-|Reconciliation (with Mercado Pago) | ✔ | ✔ |
-|Reconciliation (with Acquirers & Issuers) | Included | Not offered |
-|Financing (Installments & Promotions) | Included | Not applicable |
-|Chargebacks (Management) | Included | Not offered |
-|Chargebacks (Coverage) |Included | Not offered |
+| Trait | Aggregator Model | Gateway Model |
+| --- | :---: | :---: |
+| Processing | ✔ | ✔ |
+| Fraud Prevention (Scoring) | ✔ | ✔ (*) |
+| Fraud Prevention (Manual Review) | ✔ | ✔ (*) |
+| Reconciliation (with Mercado Pago) | ✔ | ✔ |
+| Reconciliation (with Acquirers & Issuers) | Included | Not offered |
+| Financing (Installments & Promotions) | Included | Not applicable |
+| Chargebacks (Management) | Included | Not offered |
+| Chargebacks (Coverage) |Included | Not offered |
 
 > (\*) Optional
 
@@ -61,6 +60,6 @@ The service costs in the **Gateway Model** are negotiated one on one. The cost d
 
 ### Next steps
 
-* [Configure your merchant IDs and payment methods](https://www.mercadopago.com.ar/developers/en/guides/online-payments/gateway/general-considerations/configuration) in Mercado Pago's backoffice
-* [Integrate the Checkout Pro](https://www.mercadopago.com.ar/developers/en/guides/online-payments/gateway/checkout-pro/receiving-payments) for the Gateway Model
-* [Integrate the API](https://www.mercadopago.com.ar/developers/en/guides/online-payments/gateway/checkout-api/receiving-payments) for the Gateway Model
+* [Configure your merchant IDs and payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/gateway/general-considerations/configuration) in Mercado Pago's backoffice
+* [Integrate the Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/gateway/checkout-pro/receiving-payments) for the Gateway Model
+* [Integrate the API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/gateway/checkout-api/receiving-payments) for the Gateway Model

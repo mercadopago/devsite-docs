@@ -41,7 +41,7 @@ As características principais são:
 
 Explicamos a você o funcionamento do modelo desatendido:
 
->![Fluxo do modelo](/images/qr-gas-station-flow.pt.png)
+![Fluxo do modelo](/images/mobile/qr-gas-station-flow.pt.png)
 
 1. O cliente escaneia o código QR desde seu aplicativo.
 2. Em função do URL associado ao caixa, Mercado Pago busca o pedido no server do  vendedor.
@@ -99,4 +99,4 @@ https://api.mercadopago.com/pos \
 >
 > Conoce paso a paso como integrar este modelo.
 >
-> [Integrar o modelo autônomo do QR](https://www.mercadopago.com.br/developers/pt/guides/in-person-payments/qr-code/qr-unattended/qr-unattended-part-b/)
+> [Integrar o modelo autônomo do QR](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/qr-unattended/qr-unattended-part-b)

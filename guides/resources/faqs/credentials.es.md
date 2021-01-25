@@ -7,8 +7,8 @@ Las credenciales son las claves que te proporcionamos para que puedas hacer tus 
 Tus credenciales son:
 
 | Clave | Descripción |
-| --- |--- |
-| Public key  | Clave pública de la aplicación que usarás normalmente en el frontend y te permitirá, por ejemplo, conocer los medios de pago y cifrar datos de tarjeta.|
+| --- | --- |
+| Public key | Clave pública de la aplicación que usarás normalmente en el frontend y te permitirá, por ejemplo, conocer los medios de pago y cifrar datos de tarjeta. |
 | Access token | Clave privada de la aplicación que usarás normalmente en el backend para generar pagos. Es muy importante que este dato quede protegido en tus servidores y no sea accesible por ningún usuario del sistema o atacante. |
 
 Están disponibles en el panel de [Credenciales]([FAKER][CREDENTIALS][URL]) o desde tu cuenta de Mercado Pago en [Tu Negocio > Configuraciones > Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).

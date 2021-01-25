@@ -2,7 +2,7 @@
 
 Puedes encontrar toda la información de los pagos generados utilizando nuestras APIs.
 
-## Obtener pagos creados a partir de su _ID_
+## Obtener pagos creados a partir de su ID
 
 Para obtener la información de un pago a partir de su _ID_ debes hacer el siguiente _request_:
 ```curl
@@ -47,7 +47,7 @@ Respuesta esperada:
 }
 ```
 
-Puedes obtener información sobre todos las variables devueltas en la [referencia de la API del recurso Payments](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get/).
+Puedes obtener información sobre todos las variables devueltas en la [referencia de la API del recurso Payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get).
 
 ## Buscar pagos
 
@@ -149,12 +149,12 @@ Puedes utilizar el campo `range` para buscar sobre un campo de fecha específico
 
 En el caso en que tengas muchos resultados deberás paginar los pagos utilizando los siguientes atributos:
 
-| Atributo |           Descripción           |         Ejemplo          |
-| :------------------- | :------------------------- | :--------------------------- |
-| `limit`            | Cantidad de registros devueltos (valor máximo = 50). Si no se define, devuelve hasta 30 registros encontrados.          | `limit=50`          |
-| `offset`            | Posición a partir de la cual se desea que devuelvan los registros. Por defecto el valor es 0 (máximo permitido: 10000).          | `offset=100`     |
-| `sort`         | Establece un criterio a partir del cual se ordenan los resultados. | `sort=external_reference` |
-| `criteria`         | Orden de los datos. Puede ser asc (ascendente) o desc (descendente).   | `criteria=asc`   |
+| Atributo | Descripción | Ejemplo |
+| :--- | :--- | :--- |
+| `limit` | Cantidad de registros devueltos (valor máximo = 50). Si no se define, devuelve hasta 30 registros encontrados. | `limit=50` |
+| `offset` | Posición a partir de la cual se desea que devuelvan los registros. Por defecto el valor es 0 (máximo permitido: 10000). | `offset=100` |
+| `sort` | Establece un criterio a partir del cual se ordenan los resultados. | `sort=external_reference` |
+| `criteria` | Orden de los datos. Puede ser asc (ascendente) o desc (descendente). | `criteria=asc` |
 
 Ejemplo de paginación:
 
