@@ -36,7 +36,7 @@ Currently, Mercado Pago only allows payments in the local currency. That is, the
 
 Mercado Pago has an amount validation when offering the available payment methods.
 
-If the amount does not comply with the requirements for <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_620" target="_blank">minimum and maximum amounts</a> for the payment method, our checkout will request the log in into the Mercado Pago account, since the only option available to use will be the money available in the account. For this reason, your clients won’t be able to pay as guests.
+If the amount does not comply with the requirements for [minimum and maximum amounts](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_620) for the payment method, our checkout will request the log in into the Mercado Pago account, since the only option available to use will be the money available in the account. For this reason, your clients won’t be able to pay as guests.
 
 Because of this, according to the amount selected, you can only see some payment methods, the ones which are not shown do not comply with the necessary requirements. In other words, the available payment methods will be shown based on the value of the product and the minimum and maximum allowed.
 ------------
@@ -46,7 +46,7 @@ Because of this, according to the amount selected, you can only see some payment
 
 Mercado Pago has an amount validation when offering the available payment methods.
 
-If the amount does not comply with the requirements for <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/_620" target="_blank">minimum and maximum amounts</a> for the payment method, our checkout will request the log in into the Mercado Pago account, since the only option available to use will be the money available in the account. For this reason, your clients won’t be able to pay as guests.
+If the amount does not comply with the requirements for [minimum and maximum amounts](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/_620) for the payment method, our checkout will request the log in into the Mercado Pago account, since the only option available to use will be the money available in the account. For this reason, your clients won’t be able to pay as guests.
 
 Because of this, according to the amount selected, you can only see some payment methods, the ones which are not shown do not comply with the necessary requirements. In other words, the available payment methods will be shown based on the value of the product and the minimum and maximum allowed.
 ------------
@@ -54,7 +54,7 @@ Because of this, according to the amount selected, you can only see some payment
 ----[mlb]----
 ## How to generate the same ticket again
 
-To generate a duplicate of the ticket, it is necessary to use the [GET method from the API of Payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get/) sending the payment ID and the seller’s Access Token.
+To generate a duplicate of the ticket, it is necessary to use the [GET method from the API of Payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) sending the payment ID and the seller’s Access Token.
 
 The query would be as follows:
 
@@ -62,7 +62,7 @@ The query would be as follows:
 
 The callback is going to return the parameter `transaction_details` containing the `external_resource_url` with the link for the duplicated ticket.
 
-## Remove ticket as payment method
+## Remove ticket as payment method
 
 Based on the type of checkout and integration used, the process may be different.
 
@@ -74,7 +74,7 @@ You can remove the ticket option through the payment preference. For more detail
 
 You can remove it directly from your frontend. Get the payment methods excluding the ticket in the call with the parameter `"payment_type_id" = credit_card` as filter, for example.
 
-> For more details please refer to the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payment_methods/_payment_methods/get/).
+> For more details please refer to the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payment_methods/_payment_methods/get).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plugins and e-commerce solutions ready to use
 
@@ -82,7 +82,7 @@ If you are selling through our plugins or e-commerce solutions ready to use, and
 
 ## Setting a date of expiration for the ticket
 
-By default, the date of expiration is 3 calendar days but you can set the [date of expiration for the ticket through API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways/) using the field `date_of_expiration`.
+By default, the date of expiration is 3 calendar days but you can set the [date of expiration for the ticket through API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways) using the field `date_of_expiration`.
 ------------
 
 ## Improve the approval process of your payments
@@ -99,18 +99,18 @@ It is important to add to your integration all the necessary information to [imp
 
 ----[mla, mco, mlu, mpe, mlc, mlm]----
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A payment has been rejected
-If you are having trouble with a payment, you can contact us through Help > Collections > I have a problem with a collection > <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/charges" target="_blank">Solve a problem with a collection</a>.
+If you are having trouble with a payment, you can contact us through Help > Collections > I have a problem with a collection > [Solve a problem with a collection](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/charges).
 ------------
 
 ----[mlb]----
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A payment has been rejected
-If you are having trouble with a payment, you can contact us through Help > Collections > I have a problem with a collection > <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/charges" target="_blank">Solve a problem with a collection</a>.
+If you are having trouble with a payment, you can contact us through Help > Collections > I have a problem with a collection > [Solve a problem with a collection](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/charges).
 ------------
 
 ----[mla, mco, mlu, mpe, mlc, mlm]----
-> If you still need help, please contact us through <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda" target="_blank">Help</a>.
+> If you still need help, please contact us through [Help](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda).
 ------------
 
 ----[mlb]----
-> If you still need help, please contact us through <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda" target="_blank">Help</a>.
+> If you still need help, please contact us through [Help](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda).
 ------------

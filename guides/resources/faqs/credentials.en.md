@@ -7,8 +7,8 @@ The credentials are the keys that we provided you so that you could make your in
 Your credentials include:
 
 | Key | Description |
-| --- |--- |
-| Public key  | Public key of the application that you will use in your frontend and will allow you, for example, to know available payment methods and encrypt card data.|
+| --- | --- |
+| Public key | Public key of the application that you will use in your frontend and will allow you, for example, to know available payment methods and encrypt card data. |
 | Access token | Private key of the application that you will use in your backend to generate payments. It is very important that this data is protected on your servers and is not accessible by any system user or attacker. |
 
 They are available in the [Credentials]([FAKER][CREDENTIALS][URL]) panel or from your Mercado Pago account in [Your Business > Settings > Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).

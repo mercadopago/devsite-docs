@@ -6,10 +6,10 @@
 
 **Os usuários de teste permitem que você faça testes no seu Checkout Pro** ao gerar fluxos de pagamento em uma cópia fiel da sua integração.
 
-Tipos de usuarios | Descrição
------------- | -------------
-Vendedor | É a conta de testes que você usa para **configurar a aplicação e credenciais para a cobrança.**
-Comprador | É a conta de testes que você usa para **testar o processo de compra.**<br/>Existem duas formas de fazer o pagamento:<br/><br/> **Como usuário convidado:** basta preencher o endereço de e-mail.<br/>**Como usuário cadastrado:** acessa a conta do Mercado Pago com o usuário e senha. Caso tenha saldo disponível na conta ou cartões salvos, estarão habilitados como meios de pagamento.
+| Tipos de usuarios | Descrição |
+| --- | --- |
+| Vendedor | É a conta de testes que você usa para **configurar a aplicação e credenciais para a cobrança**. |
+| Comprador | É a conta de testes que você usa para **testar o processo de compra.**<br/>Existem duas formas de fazer o pagamento:<br/><br/> **Como usuário convidado:** basta preencher o endereço de e-mail.<br/>**Como usuário cadastrado:** acessa a conta do Mercado Pago com o usuário e senha. Caso tenha saldo disponível na conta ou cartões salvos, estarão habilitados como meios de pagamento. |
 
 
 
@@ -55,7 +55,7 @@ curl -X POST \
 
 ### 1. Configure o checkout com os dados do seu usuário vendedor
 
-Gere uma preferência com as <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciais</a> do usuário de teste que quiser usar como vendedor.
+Gere uma preferência com as [credenciais]([FAKER][CREDENTIALS][URL]) do usuário de teste que quiser usar como vendedor.
 
 ### 2. Faça um pagamento de teste com seu usuário comprador
 
@@ -66,7 +66,7 @@ Testes com cartão de crédito
 Ao abrir o checkout criado com os dados do seu usuário vendedor:
 
 1. Selecione Cartão como meio de pagamento.
-2. Insira os dados de um [cartão de teste.](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/test-integration#bookmark_cartões_de_teste)
+2. Insira os dados de um [cartão de teste.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration#bookmark_cartões_de_teste)
 3. Informe o e-mail e pronto!<br/><br/>
 
 #### Comprar como usuário cadastrado (com conta do Mercado Pago)
@@ -84,63 +84,63 @@ Ao abrir o checkout criado com os dados do seu usuário vendedor:
 
 ----[mla]----
 
-Cartão | Número | Código de segurança | Data de vencimento
-:---  | :---: | :---: | :---:
-Mastercard | 5031 7557 3453 0604 | 123 | 11/25
-Visa | 4509 9535 6623 3704 | 123 | 11/25
-American Express | 3711 803032 57522 | 1234 | 11/25
+| Cartão | Número | Código de segurança | Data de vencimento |
+| :--- | :---: | :---: | :---: |
+| Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
+| Visa | 4509 9535 6623 3704 | 123 | 11/25 |
+| American Express | 3711 803032 57522 | 1234 | 11/25 |
 
 ------------
 ----[mlb]----
 
-Cartão | Número | Código de segurança | Data de vencimento
-:---  | :---: | :---: | :---:
-Mastercard | 5031 4332 1540 6351 | 123 | 11/25
-Visa | 4235 6477 2802 5682 | 123 | 11/25
-American Express | 3753 651535 56885 | 1234 | 11/25
+| Cartão | Número | Código de segurança | Data de vencimento |
+| :--- | :---: | :---: | :---: |
+| Mastercard | 5031 4332 1540 6351 | 123 | 11/25 |
+| Visa | 4235 6477 2802 5682 | 123 | 11/25 |
+| American Express | 3753 651535 56885 | 1234 | 11/25 |
 
 ------------
 ----[mlc]----
 
-Cartão | Número | Código de segurança | Data de vencimento
-:---  | :---: | :---: | :---:
-Mastercard | 5416 7526 0258 2580 | 123 | 11/25
-Visa | 4168 8188 4444 7115 | 123 | 11/25
-American Express | 3757 781744 61804 | 1234 | 11/25
+| Cartão | Número | Código de segurança | Data de vencimento |
+| :--- | :---: | :---: | :---: |
+| Mastercard | 5416 7526 0258 2580 | 123 | 11/25 |
+| Visa | 4168 8188 4444 7115 | 123 | 11/25 |
+| American Express | 3757 781744 61804 | 1234 | 11/25 |
 
 ------------
 ----[mco]----
 
-Cartão | Número | Código de segurança | Data de vencimento
-:---  | :---: | :---: | :---:
-Mastercard | 5254 1336 7440 3564 | 123 | 11/25
-Visa | 4013 5406 8274 6260 | 123 | 11/25
-American Express | 3743 781877 55283 | 1234 | 11/25
+| Cartão | Número | Código de segurança | Data de vencimento |
+| :--- | :---: | :---: | :---: |
+| Mastercard | 5254 1336 7440 3564 | 123 | 11/25 |
+| Visa | 4013 5406 8274 6260 | 123 | 11/25 |
+| American Express | 3743 781877 55283 | 1234 | 11/25 |
 
 ------------
 ----[mlm]----
 
-Cartão | Número | Código de segurança | Data de vencimento
-:---  | :---: | :---: | :---:
-Mastercard | 5474 9254 3267 0366 | 123 | 11/25
-Visa | 4075 5957 1648 3764 | 123 | 11/25
+| Cartão | Número | Código de segurança | Data de vencimento |
+| :--- | :---: | :---: | :---: |
+| Mastercard | 5474 9254 3267 0366 | 123 | 11/25 |
+| Visa | 4075 5957 1648 3764 | 123 | 11/25 |
 
 ------------
 ----[mlu]----
 
-Cartão | Número | Código de segurança | Data de vencimento
-:---  | :---: | :---: | :---:
-Mastercard | 5031 7557 3453 0604 | 123 | 11/25
-Visa | 4509 9535 6623 3704 | 123 | 11/25
+| Cartão | Número | Código de segurança | Data de vencimento |
+| :--- | :---: | :---: | :---: |
+| Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
+| Visa | 4509 9535 6623 3704 | 123 | 11/25 |
 
 ------------
 ----[mpe]----
 
-Cartão | Número | Código de segurança | Data de vencimento
-:---  | :---: | :---: | :---:
-Mastercard | 5031 7557 3453 0604 | 123 | 11/25
-Visa | 4009 1753 3280 6176 | 123 | 11/25
-American Express | 3711 803032 57522 | 1234 | 11/25
+| Cartão | Número | Código de segurança | Data de vencimento |
+| :--- | :---: | :---: | :---: |
+| Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
+| Visa | 4009 1753 3280 6176 | 123 | 11/25 |
+| American Express | 3711 803032 57522 | 1234 | 11/25 |
 
 ------------
 
@@ -158,7 +158,7 @@ Para **testar diferentes resultados de pagamento**, preencha o dado que quiser n
 
 ## Começar a receber pagamentos
 
-Para começar a cobrar, você deve <a href="[FAKER][CREDENTIALS][URL]" target="_blank">ativar suas credenciais</a>.
+Para começar a cobrar, você deve [ativar suas credenciais]([FAKER][CREDENTIALS][URL]).
 
 Para ativá-las, certifique-se de que as credenciais na sua integração sejam as da conta que recebe o dinheiro das vendas.<br/>
 
@@ -172,7 +172,7 @@ Para ativá-las, certifique-se de que as credenciais na sua integração sejam a
 >
 > Otimize sua integração e melhore o gerenciamento de suas vendas.
 >
-> [Integração avançada](http://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/advanced-integration/)
+> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/advanced-integration)
 
 > RIGHT_BUTTON
 >
@@ -180,4 +180,4 @@ Para ativá-las, certifique-se de que as credenciais na sua integração sejam a
 >
 > Adapte o estilo da sua marca na experiência de compra.
 >
-> [Prueba](http://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/customizations/)
+> [Prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/customizations)

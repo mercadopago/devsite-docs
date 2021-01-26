@@ -13,23 +13,21 @@ indexable: false
 >
 > Você só pode integrar este produto se o seu contato comercial compartilhar todas as informações necessárias para isso. 
 
-</br>
-
 > NOTE
 >
 > Pre-requisito
 >
-> Ter realizado [a integração](https://www.mercadopago.com.ar/developers/pt/guides/online-payments/checkout-api/introduction) de **API**
+> Ter realizado [a integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction) de **API**
 
 ## Novos conceitos
 
 Antes de continuar com a integração, é importante que você conheça esses novos conceitos:
 
-|Atributo|Tipo|Descrição|
-|---|---|---|
-|`processing_mode`| String | Indica a forma de processamento de um pagamento. As opções são **gateway** ou **aggregator**|
-|`merchant_account_id`| String | Indica o número de comércio. Somente é possível utilizá-lo quando o `processing_mode` é gateway |
-|`payment_method_option_id`| String | Identifica univocamente a somatória de um `payment_method` + `issuer` + `merchant_account_id`|
+| Atributo | Tipo | Descrição |
+| --- | --- | --- |
+| `processing_mode` | String | Indica a forma de processamento de um pagamento. As opções são **gateway** ou **aggregator** |
+| `merchant_account_id` | String | Indica o número de comércio. Somente é possível utilizá-lo quando o `processing_mode` é gateway |
+| `payment_method_option_id` | String | Identifica univocamente a somatória de um `payment_method` + `issuer` + `merchant_account_id` |
 
 ## Integração
 
@@ -124,10 +122,10 @@ Obter o valor do atributo `payment_method_option_id` para o número de comércio
 
 Por cada pagamento, os serviços (`merchant_services`) que se deseja utilizar podem ser customizados.
 
-|Serviço|Tipo|Descrição|
-|---|---|---|
-|`fraud_scoring`|Boolean| Se quiser utilizar a prevenção automática de fraude.|
-|`fraud_manual_review`| Boolean| Se quiser utilizar a revisão manual. |
+| Serviço | Tipo | Descrição |
+| --- | --- | --- |
+| `fraud_scoring` | Boolean | Se quiser utilizar a prevenção automática de fraude. |
+| `fraud_manual_review` | Boolean | Se quiser utilizar a revisão manual. |
 
 ```curl
 curl -X POST \
@@ -149,8 +147,8 @@ curl -X POST \
 ```
 
 
-> Os [serviços](https://www.mercadopago.com.ar/developers/pt/localization/gateway) dependem do país e devem ser contratados previamente.
+> Os [serviços](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/gateway) dependem do país e devem ser contratados previamente.
 
 ### Próximos passos
 
-* [Concilie suas operações](https://www.mercadopago.com.ar/developers/es/guides/online-payments/gateway/general-considerations/reconciliation/)
+* [Concilie suas operações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/gateway/general-considerations/reconciliation)

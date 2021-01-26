@@ -24,23 +24,23 @@ After creating the application, you only need to take the second and third steps
 
 ### Credentials
 
-Your <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credentials </a> are the **keys we provide so you can configure your integrations.**. 
+Your [credentials]([FAKER][CREDENTIALS][URL]) are the **keys we provide so you can configure your integrations.**. 
 
 * The public key, or **Public Key**, is used to access the resources that your frontend needs. You will be able to collect credit card data and convert it into a representative token that you can safely store on your servers to create a payment.
 
 
 * The private key, or **Access Token**, will allow you to call the rest of the APIs. For example, how to process a payment, make a refund or store cards.
 
-> Do you have any questions? Check our [FAQs](https://www.mercadopago.com.ar/developers/es/guides/resources/faqs/credentials/).
+> Do you have any questions? Check our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/faqs/credentials).
 
 
 ## Sandbox and Production Mode
 
 Initially, your application will only be able to interact with Mercado Pago in **Sandbox Mode**, an exact replica of the **Production Mode**, designed with the purpose of facilitating tests during the integration.
 
-We will provide you with [test cards](https://www.mercadopago.com.ar/developers/en/guides/online-payments/marketplace/checkout-pro/testing-marketplace/), so that you can simulate transactions as if they were real.
+We will provide you with [test cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/marketplace/checkout-pro/testing-marketplace), so that you can simulate transactions as if they were real.
 
-Once you have tested your application, you must complete the [homologation process](https://www.mercadopago.com.ar/developers/en/guides/online-payments/marketplace/checkout-api/goto-production/) and must [activate your credentials]([FAKER][CREDENTIALS][URL]).
+Once you have tested your application, you must complete the [homologation process](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/marketplace/checkout-api/goto-production) and must [activate your credentials]([FAKER][CREDENTIALS][URL]).
 
 **Before you can start using your production credentials you must activate them.**
 If not, you´ll get the "Invalid use of live credentials" error.
@@ -48,4 +48,4 @@ If not, you´ll get the "Invalid use of live credentials" error.
 Your application will be automatically activated. All you have to do is replace the sandbox keys with the production ones in your code.
 
 
-#### [Start creating my Marketplace](https://www.mercadopago.com.ar/developers/en/guides/online-payments/marketplace/checkout-api/create-marketplace)
+#### [Start creating my Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/marketplace/checkout-api/create-marketplace)

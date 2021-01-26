@@ -16,15 +16,15 @@ El QR es un **código único vinculado a tu cuenta de Mercado Pago** que te perm
 
 ----[mlb]----
 
-![Pagos QR Mercado Pago](/images/qr_mla2.es.png)
+![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
 ------------
 ----[mla]----
 
-![Pagos QR Mercado Pago](/images/qr_mla2.es.png)
+![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
 
 ------------
 ----[mlm]----
-![Pagos QR Mercado Pago](/images/qr_mla2.es.png)
+![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
 ------------
 
 ## ¿Cuáles son los beneficios?
@@ -39,14 +39,14 @@ El QR es un **código único vinculado a tu cuenta de Mercado Pago** que te perm
 
 Para recibir pagos con QR en tu negocio **puedes imprimirlo y pegarlo en un lugar visible o mostrarlo en tu dispositivo móvil** y cobrar desde la app de Mercado Pago.
 
-> ![Flujo QR](/images/qr_flujo.es.png)
+![Flujo QR](/images/mobile/qr_flujo.es.png)
 
 <span></span>
 > NOTE
 > 
 > Nota
 > 
-> Si tu modelo no requiere de una integración con un sistema de punto de venta,  puedes consultar toda la información disponible en [generar QR desde el panel](https://www.mercadopago.com.ar/developers/es/guides/qr-code/integrations-front/). 
+> Si tu modelo no requiere de una integración con un sistema de punto de venta,  puedes consultar toda la información disponible en [generar QR desde el panel de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/integrations-front). 
 
 ## Características del modelo
 
@@ -62,7 +62,7 @@ Las características principales son:
 > 
 > Nota
 > 
-> Esta documentación refiere a la nueva versión de Código QR. Para ver la versión anterior, ve a la sección de [Código QR antigua](https://www.mercadopago.com.ar/developers/es/guides/in-person-payments/qr-code-legacy/introduction/).
+> Esta documentación refiere a la nueva versión de Código QR. Para ver la versión anterior, ve a la sección de [Código QR antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code-legacy/introduction).
 
 ---
 
@@ -75,5 +75,4 @@ Las características principales son:
 >
 > Para integrar tu sistema, es importante conocer los datos de tu cuenta y tus credenciales de acceso.
 >
-> [Requisitos previos](https://www.mercadopago.com.ar/developers/es/guides/in-person-payments/qr-code/pre-requisites/)
-
+> [Requisitos previos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/pre-requisites)

@@ -464,7 +464,7 @@ Confira os campos que você pode configurar para ajustar suas preferências ante
 
 
 | Campos configuráveis | Descrição |
-| ----------| ---------------------- |
+| --- | --- |
 | *`coupon_detailed` (opcional)* | <br/>Inclui uma coluna para mostrar os detalhes dos cupons de desconto.<br/><br/> |
 | `detailed` | <br/>Inclui colunas com informações mais detalhadas sobre suas operações:<br/> - Comissão do  Mercado Livre (`mkp_fee_amount`)<br/> - Comissão por oferecer parcelas sem juros (`financing_fee_amount`)<br/> - Custos de envio (`shipping_fee_amount`)<br/> ----[mla]---- - Impostos cobrados por retenções de IIBB (`taxes_amount`) ------------ ----[mlm, mlu, mco, mlc, mpe, mlb]---- - Impostos recebidos (`taxes_amount`) ------------ <br/> - Parcelas (`installments`)<br/> <br/><br/>|
 | *`extended` (opcional)* | <br/>Inclui o detalhe das comissões no relatório.<br/> - Detalhes do imposto (`tax_detail`)<br/> - Detalhes do imposto(`tax_amount_telco`)<br/> - ID do ponto de venda (`pos_id`)<br/> - ID da loja (`store_id`)<br/> - Nome da loja (`store_name`)<br/> - ID externo do ponto de venda (`external_pos_id`)<br/> - Nome do ponto de venda (`pos_name`)<br/> - ID externo da loja (`external_store_id`)<br/> <br/><br/> |
@@ -474,15 +474,15 @@ Confira os campos que você pode configurar para ajustar suas preferências ante
 | `scheduled` (read_only) | <br/>Campo informativo que indica se já existem relatórios programados na conta do usuário.<br/><br/> |
 | *`separator` (opcional)* | <br/>Separador que pode ser usado no arquivo .csv quando não quiser que o separador seja uma vírgula. <br/><br/> |
 | *`sftp_info` (opcional)* | <br/>Indica os dados para subir a SFTP quando precisar.<br/><br/> |
-| *`shipping_detail` (opcional)* |  <br/>  Inclui os detalhes dos envios. <br/> <br/>|
-| *`show_chargeback_cancel` (opcional)* |  <br/> Inclui os detalhes dos cancelamentos das contestações. <br/> <br/>|
-| *`show_fee_prevision` (opcional)* |   <br/> Inclui os detalhes das comissões. <br/> <br/>|
+| *`shipping_detail` (opcional)* | <br/> Inclui os detalhes dos envios. <br/> <br/>|
+| *`show_chargeback_cancel` (opcional)* | <br/> Inclui os detalhes dos cancelamentos das contestações. <br/> <br/>|
+| *`show_fee_prevision` (opcional)* | <br/> Inclui os detalhes das comissões. <br/> <br/>|
 
 > NOTE
 >
 > Nota
 >
-> Tenha em mãos o [Glossário do relatório](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/account-money/glossary/) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
+> Tenha em mãos o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/glossary) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
 
 ## Gerar de forma manual
 
@@ -1032,7 +1032,7 @@ EXTERNAL_REFERENCE;SOURCE_ID;USER_ID;PAYMENT_METHOD_TYPE;PAYMENT_METHOD;SITE;TRA
 >
 > Baixe seus relatórios de forma manual ou programada na sua conta do Mercado Pago.     
 >
-> [Geração a partir do Mercado Pago](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/account-money/panel/)
+> [Geração a partir do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/panel)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
@@ -1040,4 +1040,4 @@ EXTERNAL_REFERENCE;SOURCE_ID;USER_ID;PAYMENT_METHOD_TYPE;PAYMENT_METHOD;SITE;TRA
 >
 > Saiba o que significa cada termo e os detalhes das colunas que compõem o relatório.
 >
-> [Glossário](https://www.mercadopago.com.br/developers/pt/guides/manage-account/reports/account-money/glossary/)
+> [Glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/glossary)

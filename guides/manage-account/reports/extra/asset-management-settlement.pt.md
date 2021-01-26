@@ -8,6 +8,5 @@ sites_supported:
 >
 > Desculpe
 >
-> No momento, esta página não está disponível em português.
->
-> [Ver documentação em espanhol](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/extra/asset-management-settlement/)
+> No momento, esta página não está disponível em português.<br>
+> [Ver documentação em espanhol](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/extra/asset-management-settlement)

@@ -164,7 +164,7 @@ data-button-label="Buy"
 >
 > Set up your payment and adapt Checkout Pro to your business.
 >
-> [Other functionalities](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/configurations/)
+> [Other functionalities](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -172,4 +172,4 @@ data-button-label="Buy"
 >
 > Optimize your integration and improve the management of your sales.
 >
-> [Advanced Integration](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/advanced-integration/)
+> [Advanced Integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/advanced-integration)

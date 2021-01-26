@@ -19,7 +19,7 @@ With our Mercado Pago Checkout API, you should take into account two aspects: da
 
 Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements/#bookmark_always_use_our_libraries) to collect user sensitive data securely.
 
-> For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/).
+> For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
 
 <br>
 
@@ -150,7 +150,7 @@ When you call the next function, MercadoPago.js will automatically fill out the 
 window.Mercadopago.getIdentificationTypes();
 ```
 
-> Find more information in the [Document type section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/identification-types/).
+> Find more information in the [Document type section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/identification-types).
 
 ------------
 
@@ -289,6 +289,7 @@ The `createToken` method will return a `card_token` with the secure card display
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -305,10 +306,10 @@ For this to work, you should configure your [private key]([FAKER][CREDENTIALS][U
 
 [[[
 ```php
+===
+You can find payment status in _status_ value.
+===
 <?php
-    ===
-    You can find payment status in _status_ value.
-    ===
     require_once 'vendor/autoload.php';
 
     MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
@@ -473,9 +474,9 @@ curl -X POST \
     -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/payments' \
     -d '{
-          "transaction_amount": [FAKER][NUMBER][BETWEEN][100, 200],
+          "transaction_amount": 100,
           "token": "ff8080814c11e237014c1ff593b57b4d",
-          "description": "[FAKER][COMMERCE][PRODUCT_NAME]",
+          "description": "Blue shirt",
           "installments": 1,
           "payment_method_id": "visa",
           "issuer_id": 310,
@@ -505,7 +506,7 @@ curl -X POST \
 }
 ```
 
-> Check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post/) to learn about all the available fields for full payments.
+> Check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post) to learn about all the available fields for full payments.
 
 ## Response Handling
 
@@ -519,19 +520,19 @@ For improved payment approval, you need to correctly inform results to your cust
 
 This will prevent rejections and chargebacks in the case of already approved transactions.  For example, this allows you to correct data upload mistakes or change payment methods.
 
-We recommend using [response handling](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses/) and the suggested communication in each case.
+We recommend using [response handling](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses) and the suggested communication in each case.
 
 > NOTE
 >
 > Note
 >
-> Avoid rejected payments with our recommendations to [improve the approval process](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/payment-rejections/).
+> Avoid rejected payments with our recommendations to [improve the approval process](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/payment-rejections).
 
 ## Receive payment notifications
 
 Finally, you always need to be notified of new payments and status updates.  For example, if they were approved, rejected, or are pending.
 
-[Configure webhook notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks/) or [IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/).
+[Configure webhook notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks) or [IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn).
 
 ## Sample projects
 
@@ -539,14 +540,14 @@ Finally, you always need to be notified of new payments and status updates.  For
 >
 > Checkout API
 >
-> Use our <a href="http://github.com/mercadopago/card-payment-sample" target="_blank">complete integration examples</a> on GitHub in PHP or NodeJS to download instantly.
+> Use our [complete integration examples](http://github.com/mercadopago/card-payment-sample) on GitHub in PHP or NodeJS to download instantly.
 
 <span></span>
 > GIT
 >
 > Payment form
 >
-> If you want to deploy other technology in your server, you can <a href="https://github.com/mercadopago/card-payment-sample/tree/master/client" target="_blank">download a complete payment form sample</a> from GitHub.
+> If you want to deploy other technology in your server, you can [download a complete payment form sample](https://github.com/mercadopago/card-payment-sample/tree/master/client) from GitHub.
 
 ---
 ### Next steps
@@ -557,7 +558,7 @@ Finally, you always need to be notified of new payments and status updates.  For
 >
 > Check that everything works in your integration with test users.
 >
-> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/testing/)
+> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/testing)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -565,4 +566,4 @@ Finally, you always need to be notified of new payments and status updates.  For
 >
 > Learn about all the available payment options and how to offer them.
 >
-> [Integrate other payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways/)
+> [Integrate other payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways)

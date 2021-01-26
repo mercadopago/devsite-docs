@@ -1,19 +1,10 @@
 # Cómo integrar marketplace en el Checkout Pro
 
-----[mla, mlb, mlc, mlm, mco, mlu]----
 > WARNING
 >
 > Pre-requisitos
 >
-> * Tener implementado [Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/introduction).
-------------
-----[mpe]----
-> WARNING
->
-> Pre-requisitos
->
-> * Tener implementado [Checkout Pro](https://www.mercadopago.com.pe/developers/es/guides/payments/web-checkout/introduction).
-------------
+> * Tener implementado [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction).
 
 
 Para comenzar debes:
@@ -35,7 +26,7 @@ Una vez creada, obtendrás el `APP_ID` (identificador de aplicación) necesario 
 
 Para operar en Mercado Pago en nombre de tu vendedor, debes primero solicitarle autorización.
 
-2.1. Para esto, redirige al usuario a la siguiente URL reemplazando en `client_id`, el valor de `APP_ID` y la misma `redirect_uri` que configuraste en el paso anterior:
+2.1. Para esto, redirige al usuario a la siguiente URL reemplazando en `client_id`, el valor de `APP_ID` y la misma `redirect_uri` que configuraste en el paso anterior:
 
 `https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http://www.URL_de_retorno.com`
 
@@ -137,12 +128,7 @@ Respuesta esperada:
 
 ## 3. Integra el checkout
 
-----[mpe]----
-Para cobrar en nombre de tus vendedores debes integrar [Checkout Pro](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/introduction), generando las preferencias de pago con el _Access Token_ de cada vendedor para tu aplicación.
-------------
-----[mla,mlb,mlc,mlm,mco,mlu]----
-Para cobrar en nombre de tus vendedores debes integrar [Checkout Pro](https://www.mercadopago.com.mx/developers/es/guides/online-payments/checkout-pro/introduction/), generando las preferencias de pago con el _Access Token_ de cada vendedor para tu aplicación.
-------------
+Para cobrar en nombre de tus vendedores debes integrar [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction), generando las preferencias de pago con el Access Token de cada vendedor para tu aplicación.
 
 Si deseas cobrar una comisión por cada pago que procesa tu aplicación en nombre de tu vendedor, sólo debes agregar dicho monto en el parámetro `marketplace_fee` al crear la preferencia:
 
@@ -179,8 +165,8 @@ curl -X POST \
 $preference = new MercadoPago\Preference();
 
 $item = new MercadoPago\Item();
-$item->title = "[FAKER][COMMERCE][PRODUCT_NAME]";
-$item->quantity = [FAKER][NUMBER][BETWEEN][1,10];
+$item->title = "Blue shirt";
+$item->quantity = 10;
 $item->currency_id = "[FAKER][CURRENCY][ACRONYM]";
 $item->unit_price = [FAKER][COMMERCE][PRICE];
 
@@ -202,13 +188,13 @@ Preference preference = new Preference();
 
 Item item = new Item();
 item.setId("1234")
-    .setTitle("[FAKER][COMMERCE][PRODUCT_NAME]")
-    .setQuantity([FAKER][NUMBER][BETWEEN][1,10])
+    .setTitle("Blue shirt")
+    .setQuantity(10)
     .setCategoryId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float) 14.5);
 
 Payer payer = new Payer();
-payer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
+payer.setEmail("john@yourdomain.com");
 
 preference.setPayer(payer);
 preference.appendItem(item);
@@ -222,14 +208,14 @@ preference.save();
 	var preference = {}
 
   var item = {
-    title: '[FAKER][COMMERCE][PRODUCT_NAME]',
-    quantity: [FAKER][NUMBER][BETWEEN][1,10],
+    title: 'Blue shirt',
+    quantity: 10,
     currency_id: '[FAKER][CURRENCY][ACRONYM]',
     unit_price: [FAKER][COMMERCE][PRICE]
   }
 
   var payer = {
-    email: "[FAKER][INTERNET][FREE_EMAIL]"
+    email: "john@yourdomain.com"
   }
 
   preference.items = [item]
@@ -249,13 +235,13 @@ preference.save();
 preference = MercadoPago::Preference.new()
 
 item = MercadoPago::Item.new()
-item.title="[FAKER][COMMERCE][PRODUCT_NAME]"
-item.quantity= [FAKER][NUMBER][BETWEEN][1,10]
+item.title="Blue shirt"
+item.quantity= 10
 item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
 item.unit_price = [FAKER][COMMERCE][PRICE]
 
 payer = MercadoPago::Payer.new()
-payer.email="[FAKER][INTERNET][FREE_EMAIL]"
+payer.email="john@yourdomain.com"
 
 preference.items = [item]
 preference.payer = payer
@@ -281,7 +267,7 @@ El vendedor va a recibir la diferencia entre el monto total y las comisiones, ta
 
 Es necesario que envíes tu `notification_url`, donde recibirás aviso de todos los nuevos pagos y actualizaciones de estados que se generen, así como también alta y baja de usuarios en tu Marketplace.
 
-En el artículo de [notificaciones](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn) puedes obtener más información.
+En el artículo de [notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn) puedes obtener más información.
 
 ### Devoluciones y cancelaciones
 
@@ -290,4 +276,4 @@ En caso de que la devolución la realice el Marketplace, se deberán utilizar la
 
 En el caso de las cancelaciones, solo podrán ser realizadas  utilizando la API de cancelaciones.
 
-Puedes encontrar más información en el articulo sobre [devoluciones y cancelaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/cancellations-and-refunds).
+Puedes encontrar más información en el articulo sobre [devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).

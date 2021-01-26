@@ -15,17 +15,17 @@
 
 O módulo do Mercado Pago para Opencart esta integrado com as funcionalidades a seguir:
 
-| Funcionalidade                                            | Checkout Pro      | API                     |
-|---------------------------------------------------------- |-------------------|-------------------------|
-| Pagamento com Cartão de Crédito                           | ✔                 | ✔                       |
-| Outros Meios de Pagamento, como os Boletos                | ✔                 | ✔                       |
-| Interfaces pré-construídas do Mercado Pago                | ✔                 |                         |
-| Calculadora de Parcelas                                   | ✔                 | ✔                       |
-| Notificação instantânea de pagamentos e webhooks          | ✔                 | ✔                       |
-| Descontos por meio de pagamento ou cupom do Mercado Pago  | ✔                 |                         |
-| Log e ferramentas de debug                                | ✔                 | ✔                       |
-| Conversão de moedas                                       |                   | ✔                       |
-| Checagens de credenciais e status de plataforma           | ✔                 | ✔                       |
+| Funcionalidade | Checkout Pro | API |
+| --- | --- | --- |
+| Pagamento com Cartão de Crédito | ✔ | ✔  |
+| Outros Meios de Pagamento, como os Boletos  | ✔ | ✔  |
+| Interfaces pré-construídas do Mercado Pago  | ✔ | |
+| Calculadora de Parcelas | ✔ | ✔ |
+| Notificação instantânea de pagamentos e webhooks | ✔ | ✔ |
+| Descontos por meio de pagamento ou cupom do Mercado Pago | ✔ | |
+| Log e ferramentas de debug | ✔ | ✔ |
+| Conversão de moedas | | ✔ |
+| Checagens de credenciais e status de plataforma | ✔ | ✔ |
 
 
 ### Opção de Checkout correta para seu negócio:
@@ -44,7 +44,7 @@ Oferecemos dois métodos de checkout que facilitam o recebimento seguro de pagam
 
 *Disponível para Argentina, Brasil, Chile, Colômbia, México, Peru e Uruguai*
 
-**API*
+**API**
 
 Ofereça um checkout totalmente customizado à sua experiência de marca com nossa API de pagamentos simples de usar.
 
@@ -59,27 +59,27 @@ Ofereça um checkout totalmente customizado à sua experiência de marca com nos
 
 ## Requisitos
 
-| Requisito                 | Detalhe                                                   |
-|---------------------------|-----------------------------------------------------------|
-| Sistema Operacional       | Linux x86-64                                              |
-| Servidor Web              | Apache 2.x, Nginx 1.7.x                                   |
-| Banco de Dados            | MySQL 5.6 (Oracle or Percona)                             |
-| PHP                       | PHP 5.4.x / 5.5.x                                         |
-| Extenções                 | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl  |
-| SSL                       | SSL é necessário para uso de cartão de crédito            |
+| Requisito | Detalhe |
+| --- | --- |
+| Sistema Operacional | Linux x86-64 |
+| Servidor Web | Apache 2.x, Nginx 1.7.x |
+| Banco de Dados | MySQL 5.6 (Oracle or Percona) |
+| PHP | PHP 5.4.x / 5.5.x |
+| Extenções | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl |
+| SSL | SSL é necessário para uso de cartão de crédito |
 
 >É um requisito que você tenha um certificado SSL e o formulário de pagamento a ser fornecido em uma página HTTPS. Durante os testes do modo sandbox você pode operar via HTTP, mas para homologação você precisará adquirir o certificado caso não o tenha.
 
 
 ## Versões
 
-| Plugin Version                                                                          | Status                    | Versões Compatíveis   |
-|-----------------------------------------------------------------------------------------|---------------------------|-----------------------|
-| [v1.4.9](https://github.com/mercadopago/cart-opencart/tree/master/v1.4.9)               | Deprecated (Old Version)  | OpenCart v1.4.9       |
-| [v1.5.x](https://github.com/mercadopago/cart-opencart/tree/master/v1.5.x)               | Deprecated (Old Version)  | OpenCart v1.5.x       |
-| [v2.x - v2.2](https://github.com/mercadopago/cart-opencart/tree/master/v2.x%20-%202.2)  | Deprecated (Old Version)  | OpenCart v2.x - v2.2  |
-| [v2.3](https://github.com/mercadopago/cart-opencart/tree/master/v2.3)                   | Stable (Current Version)  | OpenCart v2.3         |
-| [v3.x](https://github.com/mercadopago/cart-opencart/tree/master/v3.x)                   | Stable (Current Version)  | OpenCart v3.x         |
+| Plugin Version | Status | Versões Compatíveis |
+| --- | --- | --- |
+| [v1.4.9](https://github.com/mercadopago/cart-opencart/tree/master/v1.4.9) | Deprecated (Old Version) | OpenCart v1.4.9 |
+| [v1.5.x](https://github.com/mercadopago/cart-opencart/tree/master/v1.5.x) | Deprecated (Old Version) | OpenCart v1.5.x |
+| [v2.x - v2.2](https://github.com/mercadopago/cart-opencart/tree/master/v2.x%20-%202.2) | Deprecated (Old Version) | OpenCart v2.x - v2.2 |
+| [v2.3](https://github.com/mercadopago/cart-opencart/tree/master/v2.3) | Stable (Current Version) | OpenCart v2.3 |
+| [v3.x](https://github.com/mercadopago/cart-opencart/tree/master/v3.x) | Stable (Current Version) | OpenCart v3.x |
 
 
 ## Instalação
@@ -102,8 +102,9 @@ Ofereça um checkout totalmente customizado à sua experiência de marca com nos
 ## Configuração
 
 1. Novamente em **Extensions > Payments > MercadoPago**, clique em **Edit** para configurar sua conta do Mercado Pago:
+<br>
 
- ![Open cart configuration page](/images/opencart_mpaccount.png)
+![Open cart configuration page](/images/opencart_mpaccount.png)
 
 2.  Configure seu **CLIENT_ID** e **CLIENT_SECRET**, ou **PUBLIC_KEY** e **ACCESS_TOKEN** (dependendo de qual módulo você está utilizando). [Obtenha suas credenciais]([FAKER][CREDENTIALS][URL]).
  

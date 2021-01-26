@@ -58,7 +58,7 @@ import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Customer customer = new Customer();
-customer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
+customer.setEmail("john@yourdomain.com");
 customer.save();
 
 Card card = new Card();
@@ -681,7 +681,7 @@ curl -X GET \
 
 Os cancelamentos se realizam quando um pagamento de boleto não se concretizou antes da data de vencimento e o vendedor decide cancelá-lo. E as devoluções ocorrem quando o pagamento se realizou mas o vendedor decide anulá-lo total ou parcialmente.
 
-Encontre mais informações na [seção de Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds/).
+Encontre mais informações na [seção de Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
 ---
 ### Próximos passos
@@ -692,7 +692,7 @@ Encontre mais informações na [seção de Devoluções e cancelamentos](https:/
 >
 > Configure seus pagamentos e adapte a integração do Mercado Pago ao seu negócio.
 >
-> [Outras funcionalidades](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-features/)
+> [Outras funcionalidades](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-features)
 
 > RIGHT_BUTTON
 >
@@ -700,4 +700,4 @@ Encontre mais informações na [seção de Devoluções e cancelamentos](https:/
 >
 > Encontre toda informação necessária para interagir com nossas APIs.
 >
-> [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/)
+> [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference)

@@ -58,7 +58,7 @@ import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Customer customer = new Customer();
-customer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
+customer.setEmail("john@yourdomain.com");
 customer.save();
 
 Card card = new Card();
@@ -680,7 +680,7 @@ curl -X GET \
 
 Cancellations occur when a cash payment is not completed before the expiration date, and the seller decides to cancel it. And refunds occur when the payment is made, but the seller decides to cancel it, partially or entirely.
 
-For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds/).
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
 
 ---
 ### Next steps
@@ -691,7 +691,7 @@ For more information, check the [Refunds and Cancellations section](https://www.
 >
 > Set up your payment and adapt the integration of Mercado Pago to your business.
 >
-> [Other features](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-features/)
+> [Other features](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-features)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -699,4 +699,4 @@ For more information, check the [Refunds and Cancellations section](https://www.
 >
 > Find all the information required to interact with our APIs.
 >
-> [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/)
+> [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference)

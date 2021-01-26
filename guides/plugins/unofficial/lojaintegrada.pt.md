@@ -28,7 +28,7 @@ Para **vincular sua conta do Mercado Pago à Loja Integrada**, siga os passos ab
 3. Você será redirecionado para uma página do Mercado Pago para acessar com seus dados. Clique em “Permitir” para autorizar a conexão.
 
 
-    ![Installing Mercado Pago - Loja Integrada](/images/lojaintegrada/lojaintegrada-connect-1.gif)
+![Installing Mercado Pago - Loja Integrada](/images/lojaintegrada/lojaintegrada-connect-1.gif)
 
 
 E pronto! O aplicativo do Mercado Pago já está instalado na sua loja e você pode começar a receber pagamentos.
@@ -67,7 +67,7 @@ O **comprador é direcionado ao Mercado Pago para fazer o pagamento** e concluir
 3. Clique em “Salvar alterações”.
 
 
-    ![Activating Checkout transparent and Checkout redirected - Loja Integrada](/images/lojaintegrada/lojaintegrada-checkout-1.gif)
+![Activating Checkout transparent and Checkout redirected - Loja Integrada](/images/lojaintegrada/lojaintegrada-checkout-1.gif)
 
 
 Informe como você quer que sua loja apareça para seu cliente quando for realizar a compra:
@@ -87,7 +87,7 @@ Operar com **boleto do Mercado Pago como opção de pagamento**:
 5. Clique em “salvar alterações”.
 
 
-    ![Setting ticket - Loja Integrada](/images/lojaintegrada/lojaintegrada-ticket-1.gif)
+![Setting ticket - Loja Integrada](/images/lojaintegrada/lojaintegrada-ticket-1.gif)
 
 
 ## Configuração de parcelamento
@@ -108,7 +108,7 @@ Operar com **boleto do Mercado Pago como opção de pagamento**:
 3. Clique em “Salvar alterações”.
 
 
-    ![Setting credit card - Loja Integrada](/images/lojaintegrada/lojaintegrada-credit-card-1.gif)
+![Setting credit card - Loja Integrada](/images/lojaintegrada/lojaintegrada-credit-card-1.gif)
 
 
 ### Configurando o parcelamento de sua conta Mercado Pago

@@ -14,7 +14,7 @@ Recordá que para consultas sobre tus pagos o cobros siempre podés consultar nu
 
 ¿Tenés algún caso concreto con tu integración que no podés resolver?
 
-No te preocupes, contáctanos para que podamos ayudarte a través de nuestro [soporte técnico](https://www.mercadopago.com.ar/developers/es/support).
+No te preocupes, contáctanos para que podamos ayudarte a través de nuestro [soporte técnico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support).
 ------------
 ----[mlm]----
 
@@ -28,7 +28,7 @@ Recuerda que para consultas sobre tus pagos o cobros siempre puedes consultar nu
 
 ¿Tienes algún caso concreto con tu integración que no puedes resolver?
 
-No te preocupes, contáctanos para que podamos ayudarte a través de nuestro [soporte técnico](https://www.mercadopago.com.mx/developers/es/support).
+No te preocupes, contáctanos para que podamos ayudarte a través de nuestro [soporte técnico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support).
 
 ------------
 ----[mpe]----
@@ -39,7 +39,7 @@ No te preocupes, contáctanos para que podamos ayudarte a través de nuestro [so
 
 ¿Tienes algún caso concreto con tu integración que no puedes resolver?
 
-No te preocupes, contáctanos para que podamos ayudarte a través de nuestro [soporte técnico.](https://www.mercadopago.com.pe/developers/es/support)
+No te preocupes, contáctanos para que podamos ayudarte a través de nuestro [soporte técnico.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support)
 ------------
 ----[mco]----
 
@@ -49,7 +49,7 @@ No te preocupes, contáctanos para que podamos ayudarte a través de nuestro [so
 
 ¿Tienes algún caso concreto con tu integración que no puedes resolver?
 
-No te preocupes, contáctanos para que podamos ayudarte a través de nuestro [soporte técnico.](https://www.mercadopago.com.co/developers/es/support)
+No te preocupes, contáctanos para que podamos ayudarte a través de nuestro [soporte técnico.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support)
 ------------
 ----[mlu]----
 
@@ -59,7 +59,7 @@ No te preocupes, contáctanos para que podamos ayudarte a través de nuestro [so
 
 ¿Tienes algún caso concreto con tu integración que no puedes resolver?
 
-No te preocupes, contáctanos para que podamos ayudarte a través de nuestro [soporte técnico.](https://www.mercadopago.com.uy/developers/es/support)
+No te preocupes, contáctanos para que podamos ayudarte a través de nuestro [soporte técnico.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support)
 
 ------------
 ----[mlc]----
@@ -70,5 +70,5 @@ No te preocupes, contáctanos para que podamos ayudarte a través de nuestro [so
 
 ¿Tienes algún caso concreto con tu integración que no puedes resolver?
 
-No te preocupes, contáctanos para que podamos ayudarte a través de nuestro [soporte técnico.](https://www.mercadopago.cl/developers/es/support)
+No te preocupes, contáctanos para que podamos ayudarte a través de nuestro [soporte técnico.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support)
 ------------

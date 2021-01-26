@@ -36,8 +36,8 @@ Vamos te ajudar a detectar comportamentos incomuns dos clientes com o nosso cód
 
 #### Possíveis valores para `view`
 
-| Tipo                                                         | Descripción                                                  |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Valor | Seção |
+| --- | --- |
 | *home* | Página inicial do seu site. |
 | *search* | Página de pesquisa ou lista de produtos. |
 | *item* | Página de um produto específico. |
@@ -55,11 +55,11 @@ Vamos te ajudar a detectar comportamentos incomuns dos clientes com o nosso cód
 ### Detalhe toda a informação sobre o pagamento
 
 Para otimizar a validação de segurança dos pagamentos, encaminhe para nós a maior quantidade de dados possíveis no momento de criar o pagamento. Por exemplo, se você encaminhar para nós os dados do comprador, podemos detectar se realizou pagamentos suspeitos em outro momento e alertá-lo sobre isso.
-Você pode obter mais informações sobre cada atributo nas [Referências de API](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments/post/).
+Você pode obter mais informações sobre cada atributo nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments/post).
 
 ### Faça a devolução de pagamentos suspeitos
 
-Se detectarmos um comportamento irregular ou recebermos uma notificação de que o cartão utilizado foi roubado, entraremos em contato via email para avisar você dessa ocorrência. Recomendamos que [cancele a compra](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/cancellations-and-refunds/) e faça a devolução do dinheiro ao comprador para evitar a contestação do pagamento.
+Se detectarmos um comportamento irregular ou recebermos uma notificação de que o cartão utilizado foi roubado, entraremos em contato via email para avisar você dessa ocorrência. Recomendamos que [cancele a compra](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds) e faça a devolução do dinheiro ao comprador para evitar a contestação do pagamento.
 
 ### Revise os dados ao cobrar com Point
 
@@ -69,7 +69,7 @@ Solicite a seus compradores a carteira de identidade no momento de fazer o pagam
 
 ### Apresentação da contestação
 
-Vamos avisar via [notificações IPN](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn) toda vez que você receber uma contestação. Para [começar a receber notificações](https://www.mercadopago.com.ar/herramientas/notificaciones), você deve preencher seus dados e escolher a opção Chargebacks.
+Vamos avisar via [notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn) toda vez que você receber uma contestação. Para [começar a receber notificações](https://www.mercadopago.com.ar/herramientas/notificaciones), você deve preencher seus dados e escolher a opção Chargebacks.
 
 ### Consulte sobre a contestação
 
@@ -114,7 +114,7 @@ Você vai obter as seguintes informações:
 >
 > Nota
 >
-> Você pode obter mais informações nas [Referências de API](https://www.mercadopago.com.ar/developers/es/reference/chargebacks/_chargebacks_id/get/).
+> Você pode obter mais informações nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_chargebacks_id/get).
 
 ### Compreensão de cobertura
 

@@ -2,7 +2,6 @@
   sites_supported:
    - mla
    - mlb
-   - global
   indexable: false
 ---
 
@@ -24,18 +23,13 @@ This option allows you to collect through our web form within the safe environme
 
 -   We protect your money, always. You don't have to worry about anything. If there is a problem, we'll cover you with our [Seller Protection Program](https://www.mercadopago.com.ar/ayuda/dinero-seguridad-ventas-arg_3777).
 
-----[mla, mlb]----
-[Integrate Checkout Pro](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/introduction)
-------------
-----[mlm, mpe, mco, mlu, mlc]----
-[Integrate Checkout Pro](https://www.mercadopago.com.mx/developers/en/guides/payments/web-checkout/introduction)
-------------
+[Integrate Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction)
 
 ### Mobile Checkout
 
 Unlike Checkout Pro, we facilitate the creation of a payment experience but from your application through our SDK. It is a simple and fast integration so you can offer the best experience and the best payment methods.
 
-[Integrate Mobile Checkout](https://www.mercadopago.com.ar/developers/en/guides/online-payments/mobile-checkout/introduction)
+[Integrate Mobile Checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/mobile-checkout/introduction)
 
 ### Web Tokenize
 
@@ -48,17 +42,17 @@ It's the simplified version of the Checkout Pro with a renewed user experience.
 
 - **You will always be up to date.** You can offer your buyers an experience that Mercado Pago keeps in constant improvement.
 
-[Integrate Web Tokenize](https://www.mercadopago.com.ar/developers/en/guides/online-payments/web-tokenize-checkout/introduction)
+[Integrate Web Tokenize](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/web-tokenize-checkout/introduction)
 
 ### Checkout API
 
 This way of integrating allows you to connect directly with our APIs.
 
-- **Become the owner of your experience.** We give you absolute freedom to customize the experiences of your buyers and never leave your site.  
+- **Become the owner of your experience.** We give you absolute freedom to customize the experiences of your buyers and never leave your site.  
 
 - **Your technical team has total control.** They will be able to handle all sensitive data manipulation processes in the front-end where the payment request occurs.
 
-[Integrate Checkout API](guides/payments/api/introduction)
+[Integrate Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction)
 
 ## How to offer interest-free installments
 
@@ -72,7 +66,7 @@ Your customer pays no interest and you absorb the financing cost, therefore, ple
 
 ## How to manage customer sales on my site
 
-In order to manage sellers and for them to be able to perform commercial transactions in your site, you must [create a Marketplace](https://www.mercadopago.com.ar/developers/en/guides/online-payments/marketplace/checkout-pro/introduction).
+In order to manage sellers and for them to be able to perform commercial transactions in your site, you must [create a Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/marketplace/checkout-pro/introduction).
 
 A Marketplace is a site or app that allows you to make collections on behalf of sellers and charge a commission for each one if you wish. When a payment is generated, the money is instantly divided between your seller's account and yours.
 

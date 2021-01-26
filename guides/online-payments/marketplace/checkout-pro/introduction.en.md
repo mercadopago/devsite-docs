@@ -24,14 +24,14 @@ After creating the application, you only need to take the second and third steps
 
 ### Credentials
 
-Your <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credentials </a> are the **keys we provide so you can configure your integrations.**. 
+Your [credentials]([FAKER][CREDENTIALS][URL]) are the **keys we provide so you can configure your integrations.**. 
 
 * The public key, or Public Key, is used to access the resources that your frontend needs. You will be able to collect credit card data and convert it into a representative token that you can safely store on your servers to create a payment.
 
 
 * The private key, or Access Token, will allow you to call the rest of the APIs. For example, how to process a payment, make a refund or store cards.
 
-> Do you have any questions? Check our [FAQs](https://www.mercadopago.com.ar/developers/es/guides/resources/faqs/credentials/).
+> Do you have any questions? Check our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/faqs/credentials).
 
 
-#### [Start creating my Marketplace](https://www.mercadopago.com.ar/developers/en/guides/online-payments/marketplace/checkout-pro/create-marketplace)
+#### [Start creating my Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/marketplace/checkout-pro/create-marketplace)

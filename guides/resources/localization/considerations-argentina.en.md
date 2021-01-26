@@ -1,7 +1,6 @@
 ---
   sites_supported:
       - mla
-      - global
 ---
 
 # Special considerations for Argentina
@@ -16,7 +15,7 @@ Due to [Resolution E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBu
 
 3. The information about the total financial cost (CFT) of the transaction must be placed near the other variables reported in the previous point, highlighted in bold using the same font and size at least FIVE (5) times bigger – while preserving all proportions of stroke thickness, height and width – in relation to that used to report the annual effective interest rate (TEA) applied. Multiplying the width of the sides x 2.25 is sufficient. Example:
 
-![cft-tea](https://secure.mlstatic.com/developers/site/cloud/assets/misc/tea-cft.png)
+![cft-tea](/images/resources/tea-cft.png)
 
 ### Get the TEA and CFT
 

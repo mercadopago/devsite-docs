@@ -51,12 +51,12 @@ In those cases, service must answer with an error message, so the user sees a wa
 
 ### Attributes
 
-| Type          |  Description                                                 |
-| ------------- | ------------------------------------------------------------ |
-| `in_process`     | An order is being processed but an amount is not defined yet.  |
-| `unavailable`           | There’s no order being processed or pending.   |
-| `invalid`           | Secondary parameters (Station ID, Position, etc.) reference an unknown location. |
-| `timeout`           | Merchant server couldn’t communicate with any internal system (For example, vending machine) and cancelled the operation. |
+| Type | Description |
+| --- | --- |
+| `in_process` | An order is being processed but an amount is not defined yet. |
+| `unavailable` | There’s no order being processed or pending. |
+| `invalid` | Secondary parameters (Station ID, Position, etc.) reference an unknown location. |
+| `timeout` | Merchant server couldn’t communicate with any internal system (For example, vending machine) and cancelled the operation. |
 
 A `message` is a plain text that can come with the declared type and is optional.
 
@@ -91,17 +91,17 @@ You should use the field `external_reference` to be able to identify the order f
 
 ### Attributes
 
-| Atributo            | Tipo (type)       |  Descripción               |
-| ------------- | ------------- | ------------------------------------------------------------ |
-| `collector_id` | Long     | Mercado Pago account identifier, to which payments will be imputed.  |
-| `sponsor_id` | Long           | Mercado Pago account identifier from integrative system. |
-| `items.title` | String           | Product title. |
-| `items.currency_id` | String(3)           | Currency identifier in ISO-4217 format. |
-| `items.description` | String     | Product description.  |
-| `items.quantity` | Integer           | Product quantity. |
-| `items.unit_price` | Decimal           | Unitary price. |
-| `external_reference` | String (256)           | Reference to link an order in Mercado Pago with a shopping order from your system. Usually, is the receipt number.  |
-| `notification_url` | String | URL to which the notification will be send.  |
+| Atributo | Tipo (type) | Descripción |
+| --- | --- | --- |
+| `collector_id` | Long | Mercado Pago account identifier, to which payments will be imputed. |
+| `sponsor_id` | Long | Mercado Pago account identifier from integrative system. |
+| `items.title` | String | Product title. |
+| `items.currency_id` | String(3) | Currency identifier in ISO-4217 format. |
+| `items.description` | String | Product description. |
+| `items.quantity` | Integer | Product quantity. |
+| `items.unit_price` | Decimal | Unitary price. |
+| `external_reference` | String (256) | Reference to link an order in Mercado Pago with a shopping order from your system. Usually, is the receipt number. |
+| `notification_url` | String | URL to which the notification will be send. |
 
 ## 2. Declare your domain URL to Mercado Pago
 
@@ -125,7 +125,7 @@ You must inform your domain URL to your assigned technical advisor. Mercado Pago
 >
 > Learn the options to take your integration to the next level.
 >
-> [Advanced Integration](https://www.mercadopago.com.ar/developers/en/guides/in-person-payments/qr-code/advanced-integration/)
+> [Advanced Integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/advanced-integration)
 
 
 > RIGHT_BUTTON_RECOMMENDED_EN
@@ -134,4 +134,4 @@ You must inform your domain URL to your assigned technical advisor. Mercado Pago
 >
 > Try the most frequent use cases to validate your integration.
 >
-> [Test your integration](https://www.mercadopago.com.ar/developers/en/guides/in-person-payments/qr-code/integration-test/)
+> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/integration-test)

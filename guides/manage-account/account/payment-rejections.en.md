@@ -9,7 +9,7 @@ A payment can be rejected due to an error with a payment method or non-complianc
 >
 > Note
 >
-> For more information, check [current rejection status and reasons](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-api/handling-responses).
+> For more information, check [current rejection status and reasons](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses).
 
 In order to avoid any revenue loss with your business and to enhance your customers experience, we work with agents from each payment method and operate with the latest tools for fraud prevention and payment growth.
 
@@ -59,7 +59,7 @@ When our fraud prevention system detects a suspicious payout, you'll be able to 
 >
 > Note
 >
-> For more information, check the current [rejection status and reasons](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-api/handling-responses).
+> For more information, check the current [rejection status and reasons](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses).
 
 ## Tips to improve the approval process
 
@@ -77,8 +77,8 @@ It’s simple. Add the script, adjust the section of your website where you inse
 
 #### VIEW Values
 
-| Value                                                         | Section                                                  |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Value | Section |
+| --- | --- |
 | *home* | Your website main page. |
 | *search* | Search page or product list page. |
 | *item* | Single product page with details for one product. |
@@ -288,7 +288,7 @@ preference.Items.Add(
 ```
 ]]]
 
-Learn all about these attributes in our [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post/).
+Learn all about these attributes in our [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post).
 
 ### Industry Data
 

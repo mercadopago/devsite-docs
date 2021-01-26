@@ -2,7 +2,6 @@
 sites_supported:
   - mla
   - mco
-  - global
 indexable: false
 ---
 
@@ -26,16 +25,16 @@ El **Modelo Agregador** es el que se usa por defecto en Mercado Pago a menos que
 
 _A continuación se comparan las características principales de cada modelo:_
 
-|Característica| Modelo Agregador | Modelo Gateway |
-|---|:---:|:---:|
-|Procesamiento | ✔ | ✔ |
-|Prevención de fraude (Scoring) | ✔ | ✔ (*) |
-|Prevención de fraude (Revisión Manual) | ✔ | ✔ (*) |
-|Conciliación (con Mercado Pago) | ✔ | ✔ |
-|Conciliación (con Adquirentes y Emisores) | Incluído | No ofrecido/a |
-|Financiación (cuotas y promociones) | Incluída | No aplicable |
-|Contracargos (Gestión) | Incluído | No ofrecido/a |
-|Contracargos (Cobertura) | Incluída | No ofrecido/a |
+| Característica | Modelo Agregador | Modelo Gateway |
+| --- | :---: | :---: |
+| Procesamiento | ✔ | ✔ |
+| Prevención de fraude (Scoring) | ✔ | ✔ (*) |
+| Prevención de fraude (Revisión Manual) | ✔ | ✔ (*) |
+| Conciliación (con Mercado Pago) | ✔ | ✔ |
+| Conciliación (con Adquirentes y Emisores) | Incluído | No ofrecido/a |
+| Financiación (cuotas y promociones) | Incluída | No aplicable |
+| Contracargos (Gestión) | Incluído | No ofrecido/a |
+| Contracargos (Cobertura) | Incluída | No ofrecido/a |
 
 > (\*) Opcional
 
@@ -62,7 +61,7 @@ El costo dependerá según el volumen mensual operado del vendedor.
 
 ### Próximos pasos
 
-* [Configurá tus números de comercio y medios de pago](https://www.mercadopago.com.ar/developers/es/guides/online-payments/gateway/general-considerations/configuration) en el backoffice de Mercado Pago
-* [Integrá el Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/online-payments/gateway/checkout-pro/receiving-payments) en Modelo Gateway
-* [Integrá la API](https://www.mercadopago.com.ar/developers/es/guides/online-payments/gateway/checkout-api/receiving-payments) en Modelo Gateway
-* [Integrá pagos avanzados](https://www.mercadopago.com.ar/developers/es/guides/gateway/advanced/introduction) en Modelo Gateway
+* [Configurá tus números de comercio y medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/gateway/general-considerations/configuration) en el backoffice de Mercado Pago
+* [Integrá el Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/gateway/checkout-pro/receiving-payments) en Modelo Gateway
+* [Integrá la API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/gateway/checkout-api/receiving-payments) en Modelo Gateway
+* [Integrá pagos avanzados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/gateway/advanced/introduction) en Modelo Gateway

@@ -7,7 +7,7 @@ Find the payment preference settings in the *Configure* option once you have the
 >
 > Note
 >
-> Remember that we have different [types of checkout](https://www.mercadopago.com.ar/developers/en/guides/plugins/prestashop/introduction/#bookmark_tipos_de_checkout) that adapt to the needs of your business and that each one has its own settings.
+> Remember that we have different [types of checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/introduction/#bookmark_checkout_types) that adapt to the needs of your business and that each one has its own settings.
 
 ## Business Information
 
@@ -42,7 +42,7 @@ Enter the name of the business to appear on your customers' invoice and make it 
 >
 > While you can activate all checkouts, we recommend selecting only one of the experiences so as not to confuse your customers.
 
-* Select the [payment methods available](https://www.mercadopago.com.ar/developers/en/guides/resources/localization/payment-methods/) to your customers according to the country in which you operate and the type of checkout you are configuring.
+* Select the [payment methods available](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods) to your customers according to the country in which you operate and the type of checkout you are configuring.
 
 * Set the maximum number of installments in which they can pay you.
 
@@ -54,9 +54,9 @@ You will have different settings available depending on the type of checkout you
 
 ### Settings common to all checkouts
 
-| Configuration | Description                                                               	                |
-|---------------|-----------------------------------------------------------------------------------------------|
-| Binary mode   | Activate this option when you do not want to leave payments pending or under review. With binary mode payments will be accepted or rejected automatically.|
+| Configuration | Description |
+| --- | --- |
+| Binary mode | Activate this option when you do not want to leave payments pending or under review. With binary mode payments will be accepted or rejected automatically.|
 
 > WARNING
 >
@@ -66,29 +66,29 @@ You will have different settings available depending on the type of checkout you
 
 ### Checkout Pro
 
-| Configuration            | Description                                                              	                                   |
-|--------------------------|---------------------------------------------------------------------------------------------------------------|
-| Return to the store      | When you choose redirect, you will always have the option of having your customers return or not to your store once the payment is finished. |
+| Configuration | Description |
+| --- | --- |
+| Return to the store | When you choose redirect, you will always have the option of having your customers return or not to your store once the payment is finished. |
 | Save payment preferences | When the user accesses our checkout, we generate a payment link with the information of that purchase. Here you can set the time in which we save that preference. |
 
 Choose what shopping experience your customers will have when paying:
 
-| Payment Experience            | Characteristics                                                              	                                 |
-|-------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Redirect     	                | Your customers will be redirected to a Mercado Pago page with the payment form to complete the purchase. |
-| Modal **(NEW)**               | Your customers will access the Mercado Pago payment form without leaving your store. If you deactivate it, they will be redirected to another page. |
+| Payment Experience | Characteristics |
+| --- | --- |
+| Redirect | Your customers will be redirected to a Mercado Pago page with the payment form to complete the purchase. |
+| Modal **(NEW)** | Your customers will access the Mercado Pago payment form without leaving your store. If you deactivate it, they will be redirected to another page. |
 
 > NOTE
 >
 > Note
 >
-> Check [the documentation of the Checkout Pro](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/introduction/) to learn more about all its features and functionalities.
+> Check [the documentation of the Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction) to learn more about all its features and functionalities.
 
 ### Custom Checkout
 
-| Configuration                          | Description                                                                      |
-|----------------------------------------|----------------------------------------------------------------------------------|
-| Discount for paying with Mercado Pago. | Offer a special discount to encourage your customers to make the purchase.       |
+| Configuration| Description |
+| --- | --- |
+| Discount for paying with Mercado Pago. | Offer a special discount to encourage your customers to make the purchase. |
 
 ### Last step
 
@@ -99,4 +99,4 @@ Choose what shopping experience your customers will have when paying:
 > Test the module and verify that everything works well to start receiving money from your sales in Mercado Pago.
 >
 >
-> [Recibir pagos](https://www.mercadopago.com.ar/developers/en/guides/plugins/prestashop/receive-payments/)
+> [Recibir pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/receive-payments)

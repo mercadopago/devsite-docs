@@ -6,13 +6,12 @@ sites_supported:
     - mco
     - mlc
     - mpe
-    - global
 ---
 # Mobile Checkout
 
 Las SDK de Mercado Pago facilitan la creación de una experiencia de pago en tu aplicación. Instantáneamente ofrecerás a tus usuarios:
 
-----[mla, mpe, mlb, mlm, global]----
+----[mla, mpe, mlb, mlm]----
 - Pagos con tarjeta, efectivo o transferencia bancaria.
 - **Financiación**: cuotas con la mejor financiación posible.
 - Descuentos y promociones.
@@ -66,4 +65,4 @@ pod 'MercadoPagoSDK', '3.7.2'
 ```
 ]]]
 
-En [este artículo](https://www.mercadopago.com.ar/developers/es/guides/online-payments/mobile-checkout/v3/receive-payments) verás el detalle de cómo hacer un pago.
+En [este artículo](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/mobile-checkout/v3/receive-payments) verás el detalle de cómo hacer un pago.

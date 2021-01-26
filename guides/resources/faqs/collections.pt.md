@@ -2,7 +2,6 @@
   sites_supported:
    - mla
    - mlb
-   - global
   indexable: false
 ---
 
@@ -26,4 +25,4 @@ Ao receber dinheiro de uma venda no seu negócio online você terá o dinheiro d
 >
 > Nota
 >
-> Você quer saber quando estará disponível o dinheiro de uma das suas vendas? Acesse [Operações](http://www.mercadopago.com.br/ajuda/payments), procure no detalhe da operação o recebimento e lhe diremos a data exata.
+> Você quer saber quando estará disponível o dinheiro de uma das suas vendas? Acesse [Operações](https://www.mercadopago.com.br/ajuda/payments), procure no detalhe da operação o recebimento e lhe diremos a data exata.

@@ -12,8 +12,8 @@
 
 Primero debes familiarizarte con los siguiente conceptos ya que los usarás durante la integración.
 
-| Atributo       | Descripción                                                  |
-| -------------- | ------------------------------------------------------------ |
+| Atributo | Descripción |
+| --- | --- |
 | `ACCESS_TOKEN` | Es el [token de acceso](https://www.mercadopago.com/mlm/account/credentials) de la cuenta de Mercado Pago a la cual se acreditarán los cobros. |
 | `COLLECTOR_ID` | Es el número de usuario de la cuenta de Mercado Pago, son los últimos 9 dígitos de tu `access_token`, posterior al guión medio. |
 
@@ -103,7 +103,7 @@ Además de los conceptos anteriores, también debes conocer los objetos con los 
 
 * `status_detail`: Información detallada del estado actual o el motivo de rechazo.
 
-Consultar la [documentación completa](https://www.mercadopago.com.mx/developers/es/reference/payments/resource/) sobre este objeto en nuestra Referencia API.
+Consultar la [documentación completa](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/resource) sobre este objeto en nuestra Referencia API.
 
 ## Cobros
 
@@ -158,8 +158,8 @@ Por ejemplo si deseas que esté disponible durante 5 minutos se debe enviar el h
 
 Luego de que el usuario realiza el pago podrás obtener los datos usando cualquiera de las siguientes formas:
 
-1. [IPN](https://www.mercadopago.com.mx/developers/es/guides/notifications/ipn/): Cuando el pago es creado, enviamos una notificación vía webhook a la URL configurada en la `notification_url` de la orden, deberás estar suscrito a las notificaciones tipo `merchant_order`.
-2. Hacer la [búsqueda del pago](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get/) utilizando el `external_reference` como criterio de búsqueda.
+1. [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn): Cuando el pago es creado, enviamos una notificación vía webhook a la URL configurada en la `notification_url` de la orden, deberás estar suscrito a las notificaciones tipo `merchant_order`.
+2. Hacer la [búsqueda del pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_search/get) utilizando el `external_reference` como criterio de búsqueda.
 
 ### Eliminar orden
 
@@ -173,7 +173,7 @@ https://api.mercadopago.com/mpmobile/instore/qr/COLLECTOR_ID/EXTERNAL_ID
 
 ## Devoluciones
 
-Habrán ocasiones en las que necesitarás realizar una [devolución](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/cancellations-and-refunds/) parcial o total de un pago.
+Habrán ocasiones en las que necesitarás realizar una [devolución](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds) parcial o total de un pago.
 
 **Devolución total**
 
@@ -196,20 +196,20 @@ https://api.mercadopago.com/v1/payments/PAYMENT_ID/refunds \
 
 Se deben crear dos usuarios de prueba: uno comprador y otro cobrador. Con el usuario cobrador se debe crear el QR y con el otro ingresar en las apps de Mercado Pago o Mercado Libre.
 
-Consultar los [datos de prueba](https://www.mercadopago.com.mx/developers/es/guides/online-payments/checkout-pro/test-integration): usuarios de prueba y tarjetas de prueba que se pueden utilizar.
+Consultar los [datos de prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/test-integration): usuarios de prueba y tarjetas de prueba que se pueden utilizar.
 
-| Casos a probar                                               | Resultado esperado                                           |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| El usuario escanea un código QR válido antes de hacer el pedido. | La app no muestra una orden.                                 |
-| El usuario escanea un código QR con parámetros inválidos, es decir que hace referencia a una cuenta inexistente. | La app informa que ocurrió un error.                         |
-| El usuario escanea un código válido, una vez realizado el pedido y creada la orden de venta. | La app muestra la orden.                                     |
-| El usuario realiza un pago aprobado.                         | El sistema de PDV recibe la información de un pago aprobado. |
-| El usuario realiza un pago rechazado.                        | El sistema de PDV recibe la información de un pago rechazado. |
-| Se hace una devolución de un pago desde el PDV.              | En la cuenta del comprador se impacta la devolución.         |
+| Casos a probar | Resultado esperado |
+| --- | --- |
+| El usuario escanea un código QR válido antes de hacer el pedido. | La app no muestra una orden. |
+| El usuario escanea un código QR con parámetros inválidos, es decir que hace referencia a una cuenta inexistente. | La app informa que ocurrió un error. |
+| El usuario escanea un código válido, una vez realizado el pedido y creada la orden de venta. | La app muestra la orden. |
+| El usuario realiza un pago aprobado. | El sistema de PDV recibe la información de un pago aprobado. |
+| El usuario realiza un pago rechazado. | El sistema de PDV recibe la información de un pago rechazado. |
+| Se hace una devolución de un pago desde el PDV. | En la cuenta del comprador se impacta la devolución. |
 
 ### Diccionario de errores
 
-[Aquí](https://www.mercadopago.com.mx/developers/es/guides/online-payments/checkout-api/handling-responses/) podrás encontrar nuestro diccionario de errores.
+[Aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/handling-responses) podrás encontrar nuestro diccionario de errores.
 
 ## Reportes
 
