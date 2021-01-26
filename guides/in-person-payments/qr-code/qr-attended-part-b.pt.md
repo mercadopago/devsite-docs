@@ -26,6 +26,7 @@ Explicamos como funciona o modelo atendido:
 
 ## Criar um pedido
 
+----[mla, mpe, mlb, mlc, mlu, mlm]----
 ```curl
 curl -X PUT \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
@@ -55,7 +56,47 @@ https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/stores/EXTERNAL
     }
 }
 ```
+------------
+
+----[mco]----
+```curl
+curl -X POST \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+https://api.mercadopago.com/mpmobile/instore/qr/USER_ID/EXTERNAL_ID \
+-d \
+{
+    "external_reference": "order-id-1234",
+    "notification_url": "www.yourserver.com/yourendpoint",
+    "sponsor_id": 629437702,
+    "items": [
+        {
+            "title": "Item 1",
+            "currency_id": "COP",
+            "unit_price": 6000,
+            "quantity": 1
+        },
+        {
+            "title": "Item 2",
+            "currency_id": "COP",
+            "unit_price": 3000,
+            "quantity": 1
+        }
+    ],
+    "taxes": [
+        {
+            "value": 1437,
+            "type": "IVA"
+        }
+    ]
+}
+```
+------------
+
 Pode obter mais informações em [Referências do API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put/).
+
+----[mco]----
+> É necessário pagar o IVA para os produtos do seu pedido, visite a [seção de IVA Colômbia](https://www.mercadopago.com.co/developers/pt/guides/resources/localization/iva-colombia).
+------------
 
 Assim que o pedido for criado, ele estará disponível para ser **digitalizado e pago**.
 
