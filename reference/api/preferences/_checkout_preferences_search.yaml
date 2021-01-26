@@ -1,0 +1,148 @@
+paths:
+  /checkout/preferences/search:
+    get:
+      tags:
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
+      summary: 'Find a preference'
+      description: 'Find a preference'
+      parameters:
+        - name: sponsor_id
+          in: query
+          description: The sponsor id
+          schema:
+            type: string
+        - name: external_reference
+          in: query
+          description: The external reference
+          schema:
+            type: string
+        - name: site_id
+          in: query
+          description: The site id
+          schema:
+            type: string
+        - name: marketplace
+          in: query
+          description: The marketplace identifier
+          schema:
+            type: string
+        - name: external_reference
+          in: query
+          description: The external reference
+          schema:
+            type: string
+        - name: external_reference
+          in: query
+          description: The external reference
+          schema:
+            type: string
+        - name: external_reference
+          in: query
+          description: The external reference
+          schema:
+            type: string
+        - name: external_reference
+          in: query
+          description: The external reference
+          schema:
+            type: string
+        - name: external_reference
+          in: query
+          description: The external reference
+          schema:
+            type: string
+        - name: external_reference
+          in: query
+          description: The external reference
+          schema:
+            type: string
+        - name: external_reference
+          in: query
+          description: The external reference
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  properties:
+                    elements:
+                      type: Array
+                      description: A list of preferences
+                      properties: 
+                        client_id:
+                          type: String
+                          example: 6295877106812064
+                          description: Application owner ID that use Mercado Libre API.
+                        collector_id:
+                          type: Integer
+                          example: 202809963
+                          description: Your Mercado Pago seller ID.
+                        date_created:
+                          type: Date(ISO_8601)
+                          example: '2018-02-02T15:18:51.150-04:00'
+                          description: Preference's creation date.
+                        expiration_date_from:
+                          type: Date(ISO_8601)
+                          description: Date since the preference will be active.
+                        expiration_date_to:
+                          type: Date(ISO_8601)
+                          description: Date when the preference will be expired.
+                        expires:
+                          type: Boolean
+                          description: Boolean value that determines if a preference expire.
+                        date_of_expiration:
+                          type: Date(ISO_8601)
+                          description: Expiration date of cash payment.
+                        external_reference:
+                          type: String(256)
+                          description: Reference you can synchronize with your payment system.
+                        items:
+                          type: Array(Object)
+                          description: Items information.
+                          properties:
+                            id:
+                              type: String(256)
+                              description: Item ID.
+                            title:
+                              type: String(256)
+                              example: Dummy Item
+                              description: >-
+                                Item title. It will be displayed in the payment
+                                process.
+                            description:
+                              type: String(256)
+                              description: Item description.
+                            picture_url:
+                              type: String(600)
+                              description: Item image URL.
+                            category_id:
+                              type: String(256)
+                              description: Item category ID.
+                            quantity:
+                              type: Integer
+                              description: Item quantity.
+                            currency_id:
+                              type: String(3)
+                              description: Currency ID. ISO_4217 code.
+                            unit_price:
+                              type: Float
+                              description: Unit price.
+                        marketplace:
+                          type: String(256)
+                          description: 'Origin of the payment. Default value: NONE'
+                        operation_type:
+                          type: String
+                          example: regular_payment
+                          description: Operation data_type.
+        '400':
+          ds_search_query:
+            description: invalid query.
+        '401':
+          invalid_token:
+            description: invalid_token.
+          invalid_caller_id:
+            description: invalid caller_id
