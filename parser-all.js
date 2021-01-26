@@ -1,3 +1,4 @@
+const { throws } = require('assert');
 const fs = require('fs');
 const yaml = require('js-yaml');
 
@@ -8,11 +9,16 @@ function parseProps(props) {
   const finalResult = {};
   props.forEach((property) => {
     const name = Object.keys(property)[0];
-    finalResult[`${name}`] = {
-      type: property[name].type,
-      description: property[name].description.en,
-      properties: parseProps(property[name].properties),
-    };
+    try {
+      finalResult[`${name}`] = {
+        type: property[name].type,
+        description: property[name].description.en,
+        properties: parseProps(property[name].properties),
+      };
+    } catch (e) {
+      console.log(name);
+      throw (e);
+    }
   });
   return finalResult;
 }
@@ -120,4 +126,4 @@ function parseAPI(resourcePath, outputDirectory) {
 //   console.log(JSON.stringify(paths, null, 2));
 }
 
-parseAPI('./devsite-docs/reference/cards/resource.yaml', './devsite-docs/reference/api/cards');
+parseAPI('./devsite-docs/reference/preferences/resource.yaml', './devsite-docs/reference/api/preferences');
