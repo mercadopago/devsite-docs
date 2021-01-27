@@ -16,6 +16,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 >
 > PRODUCT: PRESTASHOP
 We have released the new version 4.4.3 for PrestaShop.
+
 [Go to PrestaShop documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/introduction)
 
 > GIT
