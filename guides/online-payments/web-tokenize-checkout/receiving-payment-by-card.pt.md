@@ -17,7 +17,7 @@ Este _fragmento de código javascript_ criará um botão de pagamento. Quando o 
 ```html
 <form action="https://www.meu-site.com/processar-pagamento" method="POST">
   <script
-    src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
+    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00">
   </script>
