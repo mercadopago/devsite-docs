@@ -6,6 +6,46 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Janeiro 2021
 
+### 19 de janeiro
+
+> CHANGELOG
+>
+> Nova versão PrestaShop
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: PRESTASHOP
+
+Lançamos a nova versão 4.4.2 para PrestaShop.
+
+[Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.4.2).
+
+### 18 de janeiro
+
+> CHANGELOG
+>
+> Nova versão PrestaShop
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: PRESTASHOP
+
+Lançamos a nova versão 4.4.1 para PrestaShop.
+
+[Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.4.1).
+
 ### 15 de janeiro
 
 > CHANGELOG
