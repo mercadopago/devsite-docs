@@ -6,6 +6,24 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## January 2021
 
+### January 22nd
+
+> CHANGELOG
+>
+> New PrestaShop plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: PRESTASHOP
+We have released the new version 4.4.3 for PrestaShop.
+[Go to PrestaShop documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.4.3) for further details regarding this release.
+
 ### January 19th
 
 > CHANGELOG
@@ -15,7 +33,6 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 > NEW_VERSION: NEW VERSION
 >
 > PRODUCT: PRESTASHOP
-
 We have released the new version 4.4.2 for PrestaShop.
 
 [Go to PrestaShop documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/introduction)
@@ -35,7 +52,6 @@ We have released the new version 4.4.2 for PrestaShop.
 > NEW_VERSION: NEW VERSION
 >
 > PRODUCT: PRESTASHOP
-
 We have released the new version 4.4.1 for PrestaShop.
 
 [Go to PrestaShop documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/introduction)
@@ -45,7 +61,6 @@ We have released the new version 4.4.1 for PrestaShop.
 > GitHub
 >
 > [Check GitHub](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.4.1) for further details regarding this release.
-
 
 ### January 15th
 
