@@ -20,14 +20,18 @@ sites_supported:
 To integrate QR unattended model you need to:
 
 1. Create a service that will be called when a payment request is received and its associate logic.
-- A. Order information isn’t available yet. 
-- B. Order information is available.
+
+    1.1 Order information **isn’t available yet**.
+    
+    1.2 Order information **is available**.
 
 2. Declare your domain URL to Mercado Pago
 
 ## 1. Create a service that will be called when a payment request is received.
 
-You need to **create a service that Mercado Pago will call each time a QR payment is requested**. For example: https://www.mybusiness.com/pay-mp?storeid=6232&posid=1 
+You need to **create a service that Mercado Pago will call each time a QR payment is requested**. For example:
+
+> https://www.mybusiness.com/pay-mp?storeid=6232&posid=1 
 
 This service will return the information needed to charge a customer. The URL service is declared on Point of Sale URL field.
 
@@ -35,7 +39,7 @@ This service will return the information needed to charge a customer. The URL se
 
 Implement the next logics on the service to support the following cases:
 
-### A. Order informations isn’t available yet
+### 1.1 Order informations isn’t available yet
 
 In some cases, order data may not be available yet when a customer tries to pay. I.e, when filling the tank at a gas station.
 
@@ -51,17 +55,15 @@ In those cases, service must answer with an error message, so the user sees a wa
 
 ### Attributes
 
-| Type | Description |
-| --- | --- |
-| `in_process` | An order is being processed but an amount is not defined yet. |
-| `unavailable` | There’s no order being processed or pending. |
-| `invalid` | Secondary parameters (Station ID, Position, etc.) reference an unknown location. |
-| `timeout` | Merchant server couldn’t communicate with any internal system (For example, vending machine) and cancelled the operation. |
+| Type          |  Description                                                 |
+| ------------- | ------------------------------------------------------------ |
+| `in_process`     | An order is being processed but an amount is not defined yet.  |
+| `unavailable`           | There’s no order being processed or pending.   |
 
 A `message` is a plain text that can come with the declared type and is optional.
 
 
-### B. Order infromation is available
+### 1.2 Order infromation is available
 
 If order exits and is ready to be paid, service must return its information. 
 
