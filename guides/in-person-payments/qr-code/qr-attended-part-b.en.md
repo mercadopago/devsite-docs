@@ -27,6 +27,7 @@ We explain how the attended model works:
 
 ## Create an order
 
+----[mla, mpe, mlb, mlc, mlu, mlm]----
 ```curl
 curl -X PUT \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
@@ -56,8 +57,49 @@ https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/stores/EXTERNAL
     }
 }
 ```
+------------
+
+----[mco]----
+
+```curl
+curl -X POST \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+https://api.mercadopago.com/mpmobile/instore/qr/USER_ID/EXTERNAL_ID \
+-d \
+{
+    "external_reference": "order-id-1234",
+    "notification_url": "www.yourserver.com/yourendpoint",
+    "sponsor_id": 629437702,
+    "items": [
+        {
+            "title": "Item 1",
+            "currency_id": "COP",
+            "unit_price": 6000,
+            "quantity": 1
+        },
+        {
+            "title": "Item 2",
+            "currency_id": "COP",
+            "unit_price": 3000,
+            "quantity": 1
+        }
+    ],
+    "taxes": [
+        {
+            "value": 1437,
+            "type": "IVA"
+        }
+    ]
+}
+```
+
+------------
 
 Obtain more information in our [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put).
+
+----[mco]----
+> If you must pay IVA for the products in your order, visit the [Considerations IVA Colombia section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/iva-colombia).
+------------
 
 Once the order is created, it is available to be **scanned and paid**.
 

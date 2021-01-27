@@ -95,7 +95,7 @@ https://api.mercadopago.com/mpmobile/instore/qr/USER_ID/EXTERNAL_ID \
 Pode obter mais informações em [Referências do API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put/).
 
 ----[mco]----
-> É necessário pagar o IVA para os produtos do seu pedido, visite a [seção de IVA Colômbia](https://www.mercadopago.com.co/developers/pt/guides/resources/localization/iva-colombia).
+> Se você precisa pagar o IVA para os produtos do seu pedido, visite a [seção de Considerações IVA Colômbia](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/iva-colombia).
 ------------
 
 Assim que o pedido for criado, ele estará disponível para ser **digitalizado e pago**.
