@@ -93,7 +93,7 @@ https://api.mercadopago.com/mpmobile/instore/qr/USER_ID/EXTERNAL_ID \
 ```
 ------------
 
-Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put/).
+Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put).
 
 ----[mco]----
 > Si debes pagar IVA para los productos de tu orden, visita la [sección de Consideraciones IVA Colombia](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/iva-colombia).

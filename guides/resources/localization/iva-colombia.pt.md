@@ -15,7 +15,7 @@ O IVA (Imposto ao Valor Agregado) é uma carga fiscal que recai sobre a venda de
 
 ## Impostos em pagamentos online
 
-Para processar corretamente o IVA, permitimos o envio do valor total (transaction_amount), valor líquido (net_amount) e IVA (taxes) no momento de realizar a cobrança através da API.
+Para processar corretamente o IVA, permitimos o envio do valor total (`transaction_amount`), valor líquido (`net_amount`) e IVA (`taxes`) no momento de realizar a cobrança através da API.
 
 Neste exemplo te mostramos como enviar os dados:
 
@@ -39,14 +39,14 @@ curl -X POST \
                 "payer": {
                         "email": "test_user_19653727@testuser.com"
                 }
-        }'
+            }'
 ```
 
 O IVA deve ser um valor determinado, não envie uma porcentagem. Caso não envie os atributos _net_amount_ e _taxes_, se aplicará o IVA geral (19%).
 
 ## Impostos em pagamentos presenciais
 
-Se está integrando pagamentos presenciais, é preciso informar o valor total de IVA a pagar sobre o valor total de todos os produtos discriminados em um array de *items*.
+Se está integrando pagamentos presenciais, **é preciso informar o valor total de IVA a pagar sobre o valor total de todos os produtos discriminados em um array de items**.
 
 ```curl
 curl -X POST \

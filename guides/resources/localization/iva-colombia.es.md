@@ -9,13 +9,13 @@
 >
 > Nota
 >
-> Sólo para Colombia.
+> Solo para Colombia.
 
 El IVA (Impuesto al Valor Agregado) es una carga fiscal que recae sobre la venta de productos o la prestación de servicios dentro del territorio colombiano. Algunos productos así como algunos servicios están excluidos del IVA y otros tienen tarifas reducidas. En la actualidad, la tarifa general de este impuesto es del 19%.
 
 ## Impuestos en pagos online
 
-A efectos de poder procesar tu IVA correctamente, te permitimos enviar el monto total (transaction_amount), neto (net_amount) e IVA (taxes) al momento de realizar el cobro a través de la API.
+Para procesar el IVA correctamente, te permitimos enviar el monto total (`transaction_amount`), neto (`net_amount`) e IVA (`taxes`) al momento de realizar el cobro a través de la API.
 
 En este ejemplo te mostramos cómo enviar los datos:
 
@@ -39,14 +39,14 @@ curl -X POST \
                 "payer": {
                         "email": "test_user_19653727@testuser.com"
                 }
-        }'
+            }'
 ```
 
 El IVA debe ser un monto determinado, no envíes un porcentaje. En caso que no envíes los atributos net_amount y taxes, se aplicará el IVA general (19%).
 
 ## Impuestos en pagos presenciales
 
-Si estas integrando pagos presenciales, deberás informar el monto total de IVA a pagar sobre el valor total de todos los productos discriminados en el array de *items*. 
+Si estás integrando pagos presenciales, **deberás informar el monto total de IVA a pagar sobre el valor total de todos los productos discriminados en el listado de ítems**.
 
 ```curl
 curl -X POST \
@@ -80,4 +80,4 @@ https://api.mercadopago.com/mpmobile/instore/qr/USER_ID/EXTERNAL_ID \
 }
 ```
 
-En caso que no envíes los atributos de taxes, se aplicará el IVA general (19%) sobre el valor total de la orden.
+En el caso que no envíes los atributos de taxes, se aplicará el IVA general (19%) sobre el valor total de la orden.
