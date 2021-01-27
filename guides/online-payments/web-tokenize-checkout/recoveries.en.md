@@ -20,7 +20,7 @@ For example:
 
 <form action="/procesar-pago" method="POST">
   <script
-    src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
+    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00"
     data-button-label="Retry"> <!-- Button text -->
@@ -41,7 +41,7 @@ For example:
 ```html
 <form action="/procesar-pago" method="POST">
   <script
-    src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
+    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00"
     data-open="true"> <!-- open by default -->
