@@ -10,14 +10,14 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 > CHANGELOG
 >
-> Nova versão Prestashop
+> Nova versão PrestaShop
 >
 > NEW_VERSION: NOVA VERSÃO
 >
 > PRODUCT: PRESTASHOP
-Lançamos a nova versão 4.4.3 para Prestashop.
+Lançamos a nova versão 4.4.3 para PrestaShop.
 
-[Ir para a documentação de Prestashop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
+[Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
 
 > GIT
 >

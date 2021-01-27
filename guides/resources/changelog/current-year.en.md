@@ -10,14 +10,14 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 > CHANGELOG
 >
-> New Prestashop plugin version
+> New PrestaShop plugin version
 >
 > NEW_VERSION: NEW VERSION
 >
 > PRODUCT: PRESTASHOP
-We have released the new version 4.4.3 for Prestashop.
+We have released the new version 4.4.3 for PrestaShop.
 
-[Go to Prestashop documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/introduction)
+[Go to PrestaShop documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/introduction)
 
 > GIT
 >
@@ -100,4 +100,3 @@ We have released the new version 4.6.1 for WooCommerce.
 > GitHub
 >
 > [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.6.1) for further details regarding this release.
-
