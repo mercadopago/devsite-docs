@@ -120,9 +120,9 @@ Learn more with our [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/
 
 > WARNING 
 > 
-> IMPORTANT
+> Important
 > 
-> As of April 20, 2021, Point of sales can not be created without an assigned store.
+> After April 20th, 2021, Point of Sales can not be created without an assigned store.
 
 Once Point of Sale is created, you’ll be able to see the QR files in the _Response_ section, along with other relevant data. 
 

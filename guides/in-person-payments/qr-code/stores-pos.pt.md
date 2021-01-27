@@ -120,7 +120,7 @@ Você pode obter mais informações em [Referências de API](https://www.mercado
 
 > WARNING 
 > 
-> IMPORTANTE
+> Importante
 > 
 > A partir de 20 de abril de 2021, os caixas não poderão ser criados sem uma loja atribuída.
 
