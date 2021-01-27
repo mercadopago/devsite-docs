@@ -10,15 +10,15 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 > CHANGELOG
 >
-> Nueva versión Prestashop
+> Nueva versión PrestaShop
 >
 > NEW_VERSION: NUEVA VERSIÓN
 >
 > PRODUCT: PRESTASHOP
 
-Lanzamos la nueva versión 4.4.2 para Prestashop.
+Lanzamos la nueva versión 4.4.2 para PrestaShop.
 
-[Ir a documentación de Prestashop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/introduction)
+[Ir a documentación de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/introduction)
 
 > GIT
 >
@@ -30,15 +30,15 @@ Lanzamos la nueva versión 4.4.2 para Prestashop.
 
 > CHANGELOG
 >
-> Nueva versión Prestashop
+> Nueva versión PrestaShop
 >
 > NEW_VERSION: NUEVA VERSIÓN
 >
 > PRODUCT: PRESTASHOP
 
-Lanzamos la nueva versión 4.4.1 para Prestashop.
+Lanzamos la nueva versión 4.4.1 para PrestaShop.
 
-[Ir a documentación de Prestashop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/introduction)
+[Ir a documentación de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/introduction)
 
 > GIT
 >
