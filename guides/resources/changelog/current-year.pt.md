@@ -15,6 +15,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 > NEW_VERSION: NOVA VERSÃO
 >
 > PRODUCT: PRESTASHOP
+
 Lançamos a nova versão 4.4.4 para PrestaShop.
 
 [Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
