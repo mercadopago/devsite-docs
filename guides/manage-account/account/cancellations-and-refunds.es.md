@@ -149,6 +149,7 @@ curl -X POST \
 }
 ```
 
+----[mla, mlb, mlc, mco, mlu, mlm]----
 ### Realiza una devolución parcial
 
 Puedes realizar hasta 20 devoluciones parciales a un mismo pago. Una vez efectuada, el `status` del pago será `approved` con un `status_detail` en `partially_refunded`.
@@ -188,6 +189,7 @@ curl -X POST \
 -d '{"amount":10.5}'
 ```
 ]]]
+------------
 
 
 ### Obtén las devoluciones realizadas
