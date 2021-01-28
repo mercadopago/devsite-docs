@@ -6,7 +6,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## January 2021
 
-### January 28nd
+### January 28th
 
 > CHANGELOG
 >
