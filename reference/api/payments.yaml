@@ -1,0 +1,1308 @@
+paths:
+  /payments:
+    post:
+      tags:
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
+      summary: 'Create a payment'
+      description: 'Create a payment.'
+      requestBody:
+        properties:
+          additional_info:
+            type: Object
+            description: >-
+              Data that could improve fraud analysis and conversion rates. Try
+              to send as much information as possible.
+            properties:
+              ip_address:
+                type: String
+                description: >-
+                  IP from where the request comes from (only for bank
+                  transfers).
+              items:
+                type: Array(Object)
+                description: List of items to be paid.
+                properties:
+                  id:
+                    type: String
+                    description: Item code.
+                  title:
+                    type: String
+                    description: Item name.
+                  description:
+                    type: String
+                    description: Long item description.
+                  picture_url:
+                    type: String
+                    description: Image URL.
+                  category_id:
+                    type: String
+                    description: Category of the item.
+                  quantity:
+                    type: Integer
+                    description: Item's quantity.
+                  unit_price:
+                    type: Float
+                    description: Unit price.
+              payer:
+                type: Object
+                description: Buyer's information.
+                properties:
+                  first_name:
+                    type: String
+                    description: Buyer's name.
+                  last_name:
+                    type: String
+                    description: Buyer's last name.
+                  phone:
+                    type: Object
+                    description: Buyer's phone.
+                    properties:
+                      area_code:
+                        type: String
+                        description: Area code.
+                      number:
+                        type: String
+                        description: Phone number.
+                  address:
+                    type: Object
+                    description: Address.
+                    properties:
+                      zip_code:
+                        type: String
+                        description: Zip code.
+                      street_name:
+                        type: String
+                        description: Street name.
+                      street_number:
+                        type: Integer
+                        description: Number.
+                  registration_date:
+                    type: Date
+                    description: Date of registration of the buyer on your site.
+              shipments:
+                type: Object
+                description: Shipping information.
+                properties:
+                  receiver_address:
+                    type: Object
+                    description: Buyer's address.
+                    properties:
+                      zip_code:
+                        type: String
+                        description: Zip code.
+                      state_name:
+                        type: String
+                        description: State.
+                      city_name:
+                        type: String
+                        description: City Name.
+                      street_name:
+                        type: String
+                        description: Street name.
+                      street_number:
+                        type: Integer
+                        description: Number
+                      floor:
+                        type: String
+                        description: Floor.
+                      apartment:
+                        type: String
+                        description: Department.
+              barcode:
+                type: Object
+                description: Barcode information.
+                properties:
+                  type:
+                    type: String
+                    description: Encoding type.
+                  content:
+                    type: String
+                    description: Barcode generated.
+                  width:
+                    type: Integer
+                    description: Width of barcode.
+                  height:
+                    type: Integer
+                    description: Height of barcode.
+          application_fee:
+            type: Float
+            description: Fee collected by a marketplace or Mercado Pago Application.
+          binary_mode:
+            type: Boolean
+            description: >-
+              When set to true, the payment can only be approved or rejected.
+              Otherwise in_process status is added.
+          callback_url:
+            type: String
+            description: >-
+              URL where mercadopago does the final redirect (only for bank
+              transfers).
+          campaign_id:
+            type: Integer
+            description: Discount campaign ID.
+          capture:
+            type: Boolean
+            description: >-
+              Determines if the payment should be captured (true, default value)
+              or just reserved (false).
+          coupon_amount:
+            type: Float
+            description: Amount of the coupon discount.
+          coupon_code:
+            type: String
+            description: Discount campaign with a specific code.
+          description:
+            type: String
+            description: Payment reason or item title.
+          differential_pricing_id:
+            type: Integer
+            description: Id of the scheme for the absorption of financing fee.
+          date_of_expiration:
+            type: Date(ISO_8601)
+            description: Payment’s expiration date.
+          external_reference:
+            type: String
+            description: ID given by the merchant in their system.
+          installments:
+            type: Integer
+            description: Selected quantity of installments. (Required)
+          issuer_id:
+            type: String
+            description: Payment method issuer.
+          metadata:
+            type: Object
+            description: >-
+              Valid JSON that can be attached to the payment to record
+              additional attributes of the merchant.
+          notification_url:
+            type: String
+            description: >-
+              URL where Mercado Pago will send notifications associated to
+              changes in this payment
+          order:
+            type: Object
+            description: Order identifier.
+            properties:
+              type:
+                type: String
+                description: Type of order.
+              id:
+                type: Long
+                description: Id of the associated purchase order.
+          payer:
+            type: Object
+            description: Identifies the buyer.
+            properties:
+              entity_type:
+                type: String
+                description: Entity type of the payer (only for bank transfers).
+              type:
+                type: String
+                description: >-
+                  Identification type of the associated payer (mandatory if the
+                  Payer is a Customer).
+              id:
+                type: String
+                description: Identification of the associated payer.
+              email:
+                type: String
+                description: Email. (Required)
+              identification:
+                type: Object
+                description: Personal identification.
+                properties:
+                  type:
+                    type: String
+                    description: Identification type.
+                  number:
+                    type: String
+                    description: Identification number.
+              phone:
+                type: Object
+                description: Phone of the associated payer.
+                properties:
+                  area_code:
+                    type: String
+                    description: Phone area code.
+                  number:
+                    type: String
+                    description: Phone number.
+                  extension:
+                    type: String
+                    description: Phone number's extension.
+              first_name:
+                type: String
+                description: First name of the associated payer.
+              last_name:
+                type: String
+                description: Last name of the associated payer.
+          payment_method_id:
+            type: String
+            description: Payment method chosen to do the payment. (Required)
+          statement_descriptor:
+            type: String
+            description: 'How will look the payment in the card bill (e.g.: MERCADOPAGO).'
+          token:
+            type: String
+            description: Card token ID. (Required for credit card)
+          transaction_amount:
+            type: Float
+            description: Product cost. (Required)
+      responses:
+        '400':
+          '1':
+            description: Params Error.
+          '3':
+            description: Token must be for test.
+          '5':
+            description: Must provide your access_token to proceed.
+          '23':
+            description: >-
+              The following parameters must be valid date and format
+              (yyyy-MM-dd'T'HH:mm:ssz) date_of_expiration.
+          '1000':
+            description: Number of rows exceeded the limits.
+          '1001':
+            description: Date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ.
+          '2001':
+            description: Already posted the same request in the last minute.
+          '2002':
+            description: Customer not found.
+          '2004':
+            description: POST to Gateway Transactions API fail.
+          '2006':
+            description: Card Token not found.
+          '2007':
+            description: Connection to Card Token API fail.
+          '2009':
+            description: Card token issuer can't be null.
+          '2060':
+            description: The customer can't be equal to the collector.
+          '3000':
+            description: You must provide your cardholder_name with your card data.
+          '3001':
+            description: You must provide your cardissuer_id with your card data.
+          '3003':
+            description: Invalid card_token_id.
+          '3004':
+            description: Invalid parameter site_id.
+          '3005':
+            description: >-
+              Not valid action, the resource is in a state that does not allow
+              this operation. For more information see the state that has the
+              resource.
+          '3006':
+            description: Invalid parameter cardtoken_id.
+          '3007':
+            description: The parameter client_id can not be null or empty.
+          '3008':
+            description: Not found Cardtoken.
+          '3009':
+            description: unauthorized client_id.
+          '3010':
+            description: Not found card on whitelist.
+          '3011':
+            description: Not found payment_method.
+          '3012':
+            description: Invalid parameter security_code_length.
+          '3013':
+            description: >-
+              The parameter security_code is a required field can not be null or
+              empty.
+          '3014':
+            description: Invalid parameter payment_method.
+          '3015':
+            description: Invalid parameter card_number_length.
+          '3016':
+            description: Invalid parameter card_number.
+          '3017':
+            description: The parameter card_number_id can not be null or empty.
+          '3018':
+            description: The parameter expiration_month can not be null or empty.
+          '3019':
+            description: The parameter expiration_year can not be null or empty.
+          '3020':
+            description: The parameter cardholder.name can not be null or empty.
+          '3021':
+            description: The parameter cardholder.document.number can not be null or empty.
+          '3022':
+            description: The parameter cardholder.document.type can not be null or empty.
+          '3023':
+            description: >-
+              The parameter cardholder.document.subtype can not be null or
+              empty.
+          '3024':
+            description: >-
+              Not valid action - partial refund unsupported for this
+              transaction.
+          '3025':
+            description: Invalid Auth Code.
+          '3026':
+            description: Invalid card_id for this payment_method_id.
+          '3027':
+            description: Invalid payment_type_id.
+          '3028':
+            description: Invalid payment_method_id.
+          '3029':
+            description: Invalid card expiration month.
+          '3030':
+            description: Invalid card expiration year.
+          '4000':
+            description: card atributte can't be null.
+          '4001':
+            description: payment_method_id atributte can't be null.
+          '4002':
+            description: transaction_amount atributte can't be null.
+          '4003':
+            description: transaction_amount atributte must be numeric.
+          '4004':
+            description: installments atributte can't be null.
+          '4005':
+            description: installments atributte must be numeric.
+          '4006':
+            description: payer atributte is malformed.
+          '4007':
+            description: site_id atributte can't be null.
+          '4012':
+            description: payer.id atributte can't be null.
+          '4013':
+            description: payer.type atributte can't be null.
+          '4015':
+            description: payment_method_reference_id atributte can't be null.
+          '4016':
+            description: payment_method_reference_id atributte must be numeric.
+          '4017':
+            description: status atributte can't be null.
+          '4018':
+            description: payment_id atributte can't be null.
+          '4019':
+            description: payment_id atributte must be numeric.
+          '4020':
+            description: notificaction_url atributte must be url valid.
+          '4021':
+            description: notificaction_url atributte must be shorter than 500 characters.
+          '4022':
+            description: metadata atributte must be a valid JSON.
+          '4023':
+            description: transaction_amount atributte can't be null.
+          '4024':
+            description: transaction_amount atributte must be numeric.
+          '4025':
+            description: refund_id can't be null.
+          '4026':
+            description: Invalid coupon_amount.
+          '4027':
+            description: campaign_id atributte must be numeric.
+          '4028':
+            description: coupon_amount atributte must be numeric.
+          '4029':
+            description: Invalid payer type.
+          '4037':
+            description: Invalid transaction_amount.
+          '4038':
+            description: application_fee cannot be bigger than transaction_amount.
+          '4039':
+            description: application_fee cannot be a negative value.
+          '4050':
+            description: payer.email must be a valid email.
+          '4051':
+            description: payer.email must be shorter than 254 characters.
+          '7523':
+            description: Invalid expiration date.
+        '403':
+          '4':
+            description: The caller is not authorized to access this resource.
+          '3002':
+            description: The caller is not authorized to perform this action.
+        '404':
+          '2000':
+            description: Payment not found
+  /payments/{id}:
+    get:
+      tags:
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
+      summary: 'Get a payment'
+      description: 'Get a payment.'
+      parameters:
+        - name: id
+          in: path
+          description: The Id of the payment
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  properties:
+                    id:
+                      type: Long
+                      description: Payment identifier.
+        '400':
+          '1':
+            description: Params Error.
+          '3':
+            description: Token must be for test.
+          '5':
+            description: Must provide your access_token to proceed.
+          '1000':
+            description: Number of rows exceeded the limits.
+          '1001':
+            description: Date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ.
+          '2001':
+            description: Already posted the same request in the last minute.
+          '2002':
+            description: Customer not found.
+          '2004':
+            description: POST to Gateway Transactions API fail.
+          '2006':
+            description: Card Token not found.
+          '2007':
+            description: Connection to Card Token API fail.
+          '2009':
+            description: Card token issuer can't be null.
+          '3000':
+            description: You must provide your cardholder_name with your card data.
+          '3001':
+            description: You must provide your cardissuer_id with your card data.
+          '3003':
+            description: Invalid card_token_id.
+          '3004':
+            description: Invalid parameter site_id.
+          '3005':
+            description: >-
+              Not valid action, the resource is in a state that does not allow
+              this operation. For more information see the state that has the
+              resource.
+          '3006':
+            description: Invalid parameter cardtoken_id.
+          '3007':
+            description: The parameter client_id can not be null or empty.
+          '3008':
+            description: Not found Cardtoken.
+          '3009':
+            description: unauthorized client_id.
+          '3010':
+            description: Not found card on whitelist.
+          '3011':
+            description: Not found payment_method.
+          '3012':
+            description: Invalid parameter security_code_length.
+          '3013':
+            description: >-
+              The parameter security_code is a required field can not be null or
+              empty.
+          '3014':
+            description: Invalid parameter payment_method.
+          '3015':
+            description: Invalid parameter card_number_length.
+          '3016':
+            description: Invalid parameter card_number.
+          '3017':
+            description: The parameter card_number_id can not be null or empty.
+          '3018':
+            description: The parameter expiration_month can not be null or empty.
+          '3019':
+            description: The parameter expiration_year can not be null or empty.
+          '3020':
+            description: The parameter cardholder.name can not be null or empty.
+          '3021':
+            description: The parameter cardholder.document.number can not be null or empty.
+          '3022':
+            description: The parameter cardholder.document.type can not be null or empty.
+          '3023':
+            description: >-
+              The parameter cardholder.document.subtype can not be null or
+              empty.
+          '3024':
+            description: >-
+              Not valid action - partial refund unsupported for this
+              transaction.
+          '3025':
+            description: Invalid Auth Code.
+          '3026':
+            description: Invalid card_id for this payment_method_id.
+          '3027':
+            description: Invalid payment_type_id.
+          '3028':
+            description: Invalid payment_method_id.
+          '3029':
+            description: Invalid card expiration month.
+          '3030':
+            description: Invalid card expiration year.
+        '403':
+          '4':
+            description: The caller is not authorized to access this resource.
+          '3002':
+            description: The caller is not authorized to perform this action.
+        '404':
+          '2000':
+            description: Payment not found.
+    put:
+      tags:
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
+      summary: 'Update a payment'
+      description: 'Update a payment.'
+      parameters:
+        - name: id
+          in: path
+          description: The Id of the payment
+          required: true
+          schema:
+            type: string
+      requestBody:
+        properties:
+          additional_info:
+            type: Object
+            description: >-
+              Data that could improve fraud analysis and conversion rates. Try
+              to send as much information as possible.
+            properties:
+              ip_address:
+                type: String
+                description: >-
+                  IP from where the request comes from (only for bank
+                  transfers).
+              items:
+                type: Array(Object)
+                description: List of items to be paid.
+                properties:
+                  id:
+                    type: String
+                    description: Item code.
+                  title:
+                    type: String
+                    description: Item name.
+                  description:
+                    type: String
+                    description: Long item description.
+                  picture_url:
+                    type: String
+                    description: Image URL.
+                  category_id:
+                    type: String
+                    description: Category of the item.
+                  quantity:
+                    type: Integer
+                    description: Item's quantity.
+                  unit_price:
+                    type: Float
+                    description: Unit price.
+              payer:
+                type: Object
+                description: Buyer's information.
+                properties:
+                  first_name:
+                    type: String
+                    description: Buyer's name.
+                  last_name:
+                    type: String
+                    description: Buyer's last name.
+                  phone:
+                    type: Object
+                    description: Buyer's phone.
+                    properties:
+                      area_code:
+                        type: String
+                        description: Area code.
+                      number:
+                        type: String
+                        description: Phone number.
+                  address:
+                    type: Object
+                    description: Address.
+                    properties:
+                      zip_code:
+                        type: String
+                        description: Zip code.
+                      street_name:
+                        type: String
+                        description: Street name.
+                      street_number:
+                        type: Integer
+                        description: Number.
+                  registration_date:
+                    type: Date
+                    description: Date of registration of the buyer on your site.
+              shipments:
+                type: Object
+                description: Shipping information.
+                properties:
+                  receiver_address:
+                    type: Object
+                    description: Buyer's address.
+                    properties:
+                      zip_code:
+                        type: String
+                        description: Zip code.
+                      state_name:
+                        type: String
+                        description: State.
+                      city_name:
+                        type: String
+                        description: City Name.
+                      street_name:
+                        type: String
+                        description: Street name.
+                      street_number:
+                        type: Integer
+                        description: Number
+                      floor:
+                        type: String
+                        description: Floor.
+                      apartment:
+                        type: String
+                        description: Department.
+              barcode:
+                type: Object
+                description: Barcode information.
+                properties:
+                  type:
+                    type: String
+                    description: Encoding type.
+                  content:
+                    type: String
+                    description: Barcode generated.
+                  width:
+                    type: Integer
+                    description: Width of barcode.
+                  height:
+                    type: Integer
+                    description: Height of barcode.
+          application_fee:
+            type: Float
+            description: Fee collected by a marketplace or Mercado Pago Application.
+          binary_mode:
+            type: Boolean
+            description: >-
+              When set to true, the payment can only be approved or rejected.
+              Otherwise in_process status is added.
+          callback_url:
+            type: String
+            description: >-
+              URL where mercadopago does the final redirect (only for bank
+              transfers).
+          campaign_id:
+            type: Integer
+            description: Discount campaign ID.
+          capture:
+            type: Boolean
+            description: >-
+              Determines if the payment should be captured (true, default value)
+              or just reserved (false).
+          coupon_amount:
+            type: Float
+            description: Amount of the coupon discount.
+          coupon_code:
+            type: String
+            description: Discount campaign with a specific code.
+          description:
+            type: String
+            description: Payment reason or item title.
+          differential_pricing_id:
+            type: Integer
+            description: Id of the scheme for the absorption of financing fee.
+          date_of_expiration:
+            type: Date(ISO_8601)
+            description: Payment’s expiration date.
+          external_reference:
+            type: String
+            description: ID given by the merchant in their system.
+          installments:
+            type: Integer
+            description: Selected quantity of installments. (Required)
+          issuer_id:
+            type: String
+            description: Payment method issuer.
+          metadata:
+            type: Object
+            description: >-
+              Valid JSON that can be attached to the payment to record
+              additional attributes of the merchant.
+          notification_url:
+            type: String
+            description: >-
+              URL where Mercado Pago will send notifications associated to
+              changes in this payment
+          order:
+            type: Object
+            description: Order identifier.
+            properties:
+              type:
+                type: String
+                description: Type of order.
+              id:
+                type: Long
+                description: Id of the associated purchase order.
+          payer:
+            type: Object
+            description: Identifies the buyer.
+            properties:
+              entity_type:
+                type: String
+                description: Entity type of the payer (only for bank transfers).
+              type:
+                type: String
+                description: >-
+                  Identification type of the associated payer (mandatory if the
+                  Payer is a Customer).
+              id:
+                type: String
+                description: Identification of the associated payer.
+              email:
+                type: String
+                description: Email. (Required)
+              identification:
+                type: Object
+                description: Personal identification.
+                properties:
+                  type:
+                    type: String
+                    description: Identification type.
+                  number:
+                    type: String
+                    description: Identification number.
+              phone:
+                type: Object
+                description: Phone of the associated payer.
+                properties:
+                  area_code:
+                    type: String
+                    description: Phone area code.
+                  number:
+                    type: String
+                    description: Phone number.
+                  extension:
+                    type: String
+                    description: Phone number's extension.
+              first_name:
+                type: String
+                description: First name of the associated payer.
+              last_name:
+                type: String
+                description: Last name of the associated payer.
+          payment_method_id:
+            type: String
+            description: Payment method chosen to do the payment. (Required)
+          statement_descriptor:
+            type: String
+            description: 'How will look the payment in the card bill (e.g.: MERCADOPAGO).'
+          token:
+            type: String
+            description: Card token ID. (Required for credit card)
+          transaction_amount:
+            type: Float
+            description: Product cost. (Required)
+      responses:
+        '400':
+          '1':
+            description: Params Error.
+          '3':
+            description: Token must be for test.
+          '5':
+            description: Must provide your access_token to proceed.
+          '1000':
+            description: Number of rows exceeded the limits.
+          '1001':
+            description: Date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ.
+          '2001':
+            description: Already posted the same request in the last minute.
+          '2002':
+            description: Customer not found.
+          '2004':
+            description: POST to Gateway Transactions API fail.
+          '2006':
+            description: Card Token not found.
+          '2007':
+            description: Connection to Card Token API fail.
+          '2009':
+            description: Card token issuer can't be null.
+          '3000':
+            description: You must provide your cardholder_name with your card data.
+          '3001':
+            description: You must provide your cardissuer_id with your card data.
+          '3003':
+            description: Invalid card_token_id.
+          '3004':
+            description: Invalid parameter site_id.
+          '3005':
+            description: >-
+              Not valid action, the resource is in a state that does not allow
+              this operation. For more information see the state that has the
+              resource.
+          '3006':
+            description: Invalid parameter cardtoken_id.
+          '3007':
+            description: The parameter client_id can not be null or empty.
+          '3008':
+            description: Not found Cardtoken.
+          '3009':
+            description: unauthorized client_id.
+          '3010':
+            description: Not found card on whitelist.
+          '3011':
+            description: Not found payment_method.
+          '3012':
+            description: Invalid parameter security_code_length.
+          '3013':
+            description: >-
+              The parameter security_code is a required field can not be null or
+              empty.
+          '3014':
+            description: Invalid parameter payment_method.
+          '3015':
+            description: Invalid parameter card_number_length.
+          '3016':
+            description: Invalid parameter card_number.
+          '3017':
+            description: The parameter card_number_id can not be null or empty.
+          '3018':
+            description: The parameter expiration_month can not be null or empty.
+          '3019':
+            description: The parameter expiration_year can not be null or empty.
+          '3020':
+            description: The parameter cardholder.name can not be null or empty.
+          '3021':
+            description: The parameter cardholder.document.number can not be null or empty.
+          '3022':
+            description: The parameter cardholder.document.type can not be null or empty.
+          '3023':
+            description: >-
+              The parameter cardholder.document.subtype can not be null or
+              empty.
+          '3024':
+            description: >-
+              Not valid action - partial refund unsupported for this
+              transaction.
+          '3025':
+            description: Invalid Auth Code.
+          '3026':
+            description: Invalid card_id for this payment_method_id.
+          '3027':
+            description: Invalid payment_type_id.
+          '3028':
+            description: Invalid payment_method_id.
+          '3029':
+            description: Invalid card expiration month.
+          '3030':
+            description: Invalid card expiration year.
+        '403':
+          '4':
+            description: The caller is not authorized to access this resource.
+          '3002':
+            description: The caller is not authorized to perform this action.
+        '404':
+          '2000':
+            description: Payment not found.
+  /payments/search:
+    get:
+      tags:
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
+      summary: 'Search a payment'
+      description: 'Search a payment.'
+      parameters:
+        - name: sort
+          in: query
+          description: Define the field to sort
+          required: true
+          schema:
+            type: string
+            example: date_created
+        - name: criteria
+          in: query
+          description: The criteria result
+          required: true
+          schema:
+            type: string
+            example: desc
+        - name: external_reference
+          in: query
+          description: The external reference of the payment
+          required: true
+          schema:
+            type: string
+            example: ID_REF
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  properties:
+                    id:
+                      type: Long
+                      description: Payment identifier.
+                    date_created:
+                      type: Date(ISO_8601)
+                      description: Payment’s creation date.
+                    date_approved:
+                      type: Date(ISO_8601)
+                      description: Payment’s approval date.
+                    date_last_updated:
+                      type: Date(ISO_8601)
+                      description: Last modified date.
+                    money_release_date:
+                      type: Date(ISO_8601)
+                      description: Release date of payment.
+                    operation_type:
+                      type: String
+                      description: Payment type.
+                    payer:
+                      type: Object
+                      description: Identifies the buyer.
+                      properties:
+                        entity_type:
+                          type: String
+                          description: Entity type of the payer (only for bank transfers).
+                        type:
+                          type: String
+                          description: >-
+                            Identification type of the associated payer
+                            (mandatory if the Payer is a Customer).
+                        id:
+                          type: String
+                          description: Identification of the associated payer.
+                        email:
+                          type: String
+                          description: Email. (Required)
+                        identification:
+                          type: Object
+                          description: Personal identification.
+                          properties:
+                            type:
+                              type: String
+                              description: Identification type.
+                            number:
+                              type: String
+                              description: Identification number.
+                        phone:
+                          type: Object
+                          description: Phone of the associated payer.
+                          properties:
+                            area_code:
+                              type: String
+                              description: Phone area code.
+                            number:
+                              type: String
+                              description: Phone number.
+                            extension:
+                              type: String
+                              description: Phone number's extension.
+                        first_name:
+                          type: String
+                          description: First name of the associated payer.
+                        last_name:
+                          type: String
+                          description: Last name of the associated payer.
+                    binary_mode:
+                      type: Boolean
+                      description: >-
+                        When set to true, the payment can only be approved or
+                        rejected. Otherwise in_process status is added.
+                    live_mode:
+                      type: Boolean
+                      description: >-
+                        Whether the payment will be processed in sandbox or in
+                        production mode.
+                    order:
+                      type: Object
+                      description: Order identifier.
+                      properties:
+                        type:
+                          type: String
+                          description: Type of order.
+                        id:
+                          type: Long
+                          description: Id of the associated purchase order.
+                    external_reference:
+                      type: String
+                      description: ID given by the merchant in their system.
+                    description:
+                      type: String
+                      description: Payment reason or item title.
+                    metadata:
+                      type: Object
+                      description: >-
+                        Valid JSON that can be attached to the payment to record
+                        additional attributes of the merchant.
+                    currency_id:
+                      type: String(3)
+                      description: ID of the currency used in the payment.
+                    transaction_amount:
+                      type: Float
+                      description: Product cost. (Required)
+                    transaction_amount_refunded:
+                      type: Float
+                      description: Total refunded amount in this payment.
+                    transaction_details:
+                      type: Object
+                      description: Groups the details of the transaction.
+                      properties:
+                        financial_institution:
+                          type: String
+                          description: >-
+                            External financial institution identifier (e.g.:
+                            company id for atm)
+                        net_received_amount:
+                          type: Float
+                          description: Amount received by the seller.
+                        total_paid_amount:
+                          type: Float
+                          description: Total amount paid by the buyer (includes fees).
+                        installment_amount:
+                          type: Float
+                          description: Total installments amount.
+                        overpaid_amount:
+                          type: Float
+                          description: Amount overpaid (only for tickets).
+                        external_resource_url:
+                          type: String
+                          description: Identifies the resource in the payment processor.
+                        payment_method_reference_id:
+                          type: String
+                          description: >-
+                            For credit card payments is the USN. For offline
+                            payment methods, is the reference to give to the
+                            cashier or to input into the ATM.
+                    fee_details:
+                      type: Array(Object)
+                      description: List of fees.
+                      properties:
+                        type:
+                          type: String
+                          description: Fee detail.
+                        fee_payer:
+                          type: String
+                          description: Who absorbs the cost.
+                        amount:
+                          type: Float
+                          description: Fee amount.
+                    status:
+                      type: String
+                      description: Payment status.
+                    status_detail:
+                      type: String
+                      description: >-
+                        Gives more detailed information on the current state or
+                        rejection cause.
+                    captured:
+                      type: Boolean
+                      description: >-
+                        Determines if the capture operation was performed (just
+                        for credit cards).
+                    call_for_authorize_id:
+                      type: String
+                      description: >-
+                        Identifier that must be provided to the issuing bank to
+                        authorize the payment.
+                    payment_method_id:
+                      type: String
+                      description: Payment method chosen to do the payment. (Required)
+                    issuer_id:
+                      type: String
+                      description: Payment method issuer.
+                    payment_type_id:
+                      type: String
+                      description: Type of payment method chosen.
+                    card:
+                      type: Object
+                      description: Details of the card used.
+                      properties:
+                        id:
+                          type: Number
+                          description: Id of the card.
+                        last_four_digits:
+                          type: String
+                          description: Last four digits of card number.
+                        first_six_digits:
+                          type: String
+                          description: First six digit of card number.
+                        expiration_year:
+                          type: Integer
+                          description: Card expiration year.
+                        expiration_month:
+                          type: Integer
+                          description: Card expiration month.
+                        date_created:
+                          type: Date(ISO_8601)
+                          description: Creation date of card.
+                        date_last_updated:
+                          type: Date(ISO_8601)
+                          description: Last update of data from the card.
+                        cardholder:
+                          type: Object
+                          description: Card's owner data.
+                          properties:
+                            name:
+                              type: String
+                              description: Cardholder Name.
+                            identification:
+                              type: Object
+                              description: ID of the cardholder.
+                              properties:
+                                number:
+                                  type: String
+                                  description: Document number.
+                                type:
+                                  type: String
+                                  description: Document type.
+                    statement_descriptor:
+                      type: String
+                      description: >-
+                        How will look the payment in the card bill (e.g.:
+                        MERCADOPAGO).
+                    installments:
+                      type: Integer
+                      description: Selected quantity of installments. (Required)
+                    notification_url:
+                      type: String
+                      description: >-
+                        URL where Mercado Pago will send notifications
+                        associated to changes in this payment
+                    refunds:
+                      type: Array(Object)
+                      description: List of refunds that were made to this payment.
+                      properties:
+                        id:
+                          type: Number
+                          description: Refund identifier.
+                        payment_id:
+                          type: Number
+                          description: Payment on which the return was made.
+                        amount:
+                          type: Float
+                          description: Amount refunded.
+                        metadata:
+                          type: Object
+                          description: >-
+                            Valid JSON that can be attached to the payment to
+                            record additional attributes of the merchant.
+                        source:
+                          type: Object
+                          description: Who made the refund.
+                          properties:
+                            id:
+                              type: String
+                              description: User ID who issued the refund.
+                            name:
+                              type: String
+                              description: User who issued the refund.
+                            type:
+                              type: String
+                              description: Type of user who issued the refund.
+                        date_created:
+                          type: Date(ISO_8601)
+                          description: Date of refund.
+                        unique_sequence_number:
+                          type: String
+                          description: Refund identifier given by the card processor.
+        '400':
+          '1':
+            description: Params Error.
+          '3':
+            description: Token must be for test.
+          '5':
+            description: Must provide your access_token to proceed.
+          '1000':
+            description: Number of rows exceeded the limits.
+          '1001':
+            description: Date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ.
+          '1003':
+            description: Invalid sort value.
+          '1004':
+            description: Invalid criteria value.
+          '2001':
+            description: Already posted the same request in the last minute.
+          '2002':
+            description: Customer not found.
+          '2004':
+            description: POST to Gateway Transactions API fail.
+          '2006':
+            description: Card Token not found.
+          '2007':
+            description: Connection to Card Token API fail.
+          '2009':
+            description: Card token issuer can't be null.
+          '3000':
+            description: You must provide your cardholder_name with your card data.
+          '3001':
+            description: You must provide your cardissuer_id with your card data.
+          '3003':
+            description: Invalid card_token_id.
+          '3004':
+            description: Invalid parameter site_id.
+          '3005':
+            description: >-
+              Not valid action, the resource is in a state that does not allow
+              this operation. For more information see the state that has the
+              resource.
+          '3006':
+            description: Invalid parameter cardtoken_id.
+          '3007':
+            description: The parameter client_id can not be null or empty.
+          '3008':
+            description: Not found Cardtoken.
+          '3009':
+            description: unauthorized client_id.
+          '3010':
+            description: Not found card on whitelist.
+          '3011':
+            description: Not found payment_method.
+          '3012':
+            description: Invalid parameter security_code_length.
+          '3013':
+            description: >-
+              The parameter security_code is a required field can not be null or
+              empty.
+          '3014':
+            description: Invalid parameter payment_method.
+          '3015':
+            description: Invalid parameter card_number_length.
+          '3016':
+            description: Invalid parameter card_number.
+          '3017':
+            description: The parameter card_number_id can not be null or empty.
+          '3018':
+            description: The parameter expiration_month can not be null or empty.
+          '3019':
+            description: The parameter expiration_year can not be null or empty.
+          '3020':
+            description: The parameter cardholder.name can not be null or empty.
+          '3021':
+            description: The parameter cardholder.document.number can not be null or empty.
+          '3022':
+            description: The parameter cardholder.document.type can not be null or empty.
+          '3023':
+            description: >-
+              The parameter cardholder.document.subtype can not be null or
+              empty.
+          '3024':
+            description: >-
+              Not valid action - partial refund unsupported for this
+              transaction.
+          '3025':
+            description: Invalid Auth Code.
+          '3026':
+            description: Invalid card_id for this payment_method_id.
+          '3027':
+            description: Invalid payment_type_id.
+          '3028':
+            description: Invalid payment_method_id.
+          '3029':
+            description: Invalid card expiration month.
+          '3030':
+            description: Invalid card expiration year.
+        '403':
+          '4':
+            description: The caller is not authorized to access this resource.
+          '3002':
+            description: The caller is not authorized to perform this action.
+        '404':
+          '2000':
+            description: Payment not found.
