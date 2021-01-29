@@ -434,6 +434,12 @@ paths:
         - $ref: '#/tags/link-de-pago/description'
       summary: 'Get a preference'
       description: 'Get a preference'
+      parameters:
+        - name: id
+          in: path
+          description: The preference's ID
+          schema:
+            type: string
       responses:
         '200':
           content:
@@ -516,6 +522,12 @@ paths:
         - $ref: '#/tags/link-de-pago/description'
       summary: 'Update a preference'
       description: 'Update a preference'
+      parameters:
+        - name: id
+          in: path
+          description: The preference's ID
+          schema:
+            type: string
       requestBody:
         properties:
           items:
