@@ -197,7 +197,6 @@ paths:
         '404':
           not_found:
               description: not_found.
-
     get: 
       tags: 
         - $ref: '#/tags/qr-code/description'
@@ -205,6 +204,257 @@ paths:
       summary: "Get customer's data"
       description: 'Operation responsable for retrieve customer data saved on Mercado Pago.'
       responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  properties:
+                    id:
+                      type: String
+                      description: Customer ID.
+                    email:
+                      type: String
+                      description: Customer's email.
+                    first_name:
+                      type: String (a-zA-Z)
+                      description: Customer's name.
+                    last_name:
+                      type: String (a-zA-Z)
+                      description: Customer's last name.
+                    phone:
+                      type: Object
+                      description: Customer phone's information.
+                      properties:
+                        area_code:
+                          type: String
+                          description: Phone's area code.
+                        number:
+                          type: String
+                          description: Phone's number.
+                    identification:
+                      type: Object
+                      description: Customer identification's information.
+                      properties:
+                        type:
+                          type: String
+                          description: Identification's type.
+                        number:
+                          type: String
+                          description: Identification's number.
+                    default_address:
+                      type: String
+                      description: Customer's default address.
+                    address:
+                      type: Object
+                      description: Default address's information.
+                      properties:
+                        id:
+                          type: String
+                          description: Address ID.
+                        zip_code:
+                          type: String
+                          description: Zip code.
+                        street_name:
+                          type: String
+                          description: Street name.
+                        street_number:
+                          type: String
+                          description: Street number.
+                    date_registered:
+                      type: Date(ISO_8601)
+                      description: Customer's registration date.
+                    description:
+                      type: String
+                      description: Customer's description.
+                    date_created:
+                      type: Date(ISO_8601)
+                      description: Customer's date created.
+                    date_last_updated:
+                      type: Date(ISO_8601)
+                      description: Last modified date.
+                    metadata:
+                      type: Object
+                      description: Customer's metadata.
+                    default_card:
+                      type: String
+                      description: Customer's default card.
+                    cards:
+                      type: Object
+                      description: Customer's cards.
+                      properties:
+                        id:
+                          type: String
+                          description: Card ID.
+                        customer_id:
+                          type: String
+                          description: Customer ID.
+                        expiration_month:
+                          type: Integer
+                          description: Card's expiration month.
+                        expiration_year:
+                          type: Integer
+                          description: Card's expiration year.
+                        first_six_digits:
+                          type: String
+                          description: Card's first six digits.
+                        last_four_digits:
+                          type: String
+                          description: Card's last four digits.
+                        payment_method:
+                          type: Object
+                          description: Payment method information.
+                          properties:
+                            id:
+                              type: String
+                              description: Payment method ID.
+                            name:
+                              type: String
+                              description: Payment method name.
+                            payment_type_id:
+                              type: String
+                              description: Payment method type.
+                            thumbnail:
+                              type: String
+                              description: Payment method thumbnail.
+                            secure_thumbnail:
+                              type: String
+                              description: Payment method secure thumbnail.
+                        security_code:
+                          type: Object
+                          description: Security code information.
+                          properties:
+                            length:
+                              type: Integer
+                              description: Security code's length.
+                            card_location:
+                              type: String
+                              description: Security code's card location.
+                        issuer:
+                          type: Object
+                          description: Issuer information.
+                          properties:
+                            id:
+                              type: Integer
+                              description: Issuer Id.
+                            name:
+                              type: String
+                              description: Issuer name.
+                        cardholder:
+                          type: Object
+                          description: Card holder information.
+                          properties:
+                            name:
+                              type: Integer
+                              description: Card holder name.
+                            identification:
+                              type: Integer
+                              description: Identification information.
+                              properties:
+                                number:
+                                  type: Integer
+                                  description: Identification number.
+                                subtype:
+                                  type: String
+                                  description: Identification subtype.
+                                type:
+                                  type: String
+                                  description: Identification type.
+                        date_created:
+                          type: Date(ISO_8601)
+                          description: Card's date created.
+                        date_last_updated:
+                          type: Date(ISO_8601)
+                          description: Card's last modified date.
+                    addresses:
+                      type: Object List
+                      description: Customer's addresses.
+                      properties:
+                        id:
+                          type: String
+                          description: Address ID.
+                        phone:
+                          type: String
+                          description: Phone number.
+                        name:
+                          type: String
+                          description: Address name.
+                        floor:
+                          type: String
+                          description: Floor.
+                        apartment:
+                          type: String
+                          description: Apartment.
+                        street_name:
+                          type: String
+                          description: Street name.
+                        street_number:
+                          type: Number
+                          description: Street number.
+                        zip_code:
+                          type: String
+                          description: Postal code of an Address.
+                        city:
+                          type: Object
+                          description: City information.
+                          properties:
+                            id:
+                              type: String
+                              description: City ID.
+                            name:
+                              type: String
+                              description: City name.
+                        state:
+                          type: Object
+                          description: State information.
+                          properties:
+                            id:
+                              type: String
+                              description: State ID.
+                            name:
+                              type: String
+                              description: State name.
+                        country:
+                          type: Object
+                          description: Country information.
+                          properties:
+                            id:
+                              type: String
+                              description: Country ID.
+                            name:
+                              type: String
+                              description: Country name.
+                        neighborhood:
+                          type: Object
+                          description: Neighborhood information.
+                          properties:
+                            id:
+                              type: String
+                              description: Neighborhood ID.
+                            name:
+                              type: String
+                              description: Neighborhood name.
+                        municipality:
+                          type: Object
+                          description: Municipality information.
+                          properties:
+                            id:
+                              type: String
+                              description: Municipality ID.
+                            name:
+                              type: String
+                              description: Municipality name.
+                        comments:
+                          type: String
+                          description: Additional information.
+                        date_created:
+                          type: String
+                          description: Address date created.
+                    live_mode:
+                      type: Boolean
+                      description: >-
+                        Whether the customers will be in sandbox or in
+                        production mode.
         '400':
           '100':
               description: the credentials are required.
@@ -310,6 +560,37 @@ paths:
             type: string
             example: jhon@doe.com
       responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  properties:
+                    id:
+                      type: String
+                      description: Customer ID.
+                    email:
+                      type: String
+                      description: Customer's email.
+                    first_name:
+                      type: String (a-zA-Z)
+                      description: Customer's name.
+                    last_name:
+                      type: String (a-zA-Z)
+                      description: Customer's last name.
+                    description:
+                      type: String
+                      description: Customer's description.
+                    identification:
+                      type: Object
+                      description: Customer identification's information.
+                      properties:
+                        type:
+                          type: String
+                          description: Identification's type.
+                        number:
+                          type: String
+                          description: Identification's number.
         '400':
           '100':
               description: the credentials are required.
