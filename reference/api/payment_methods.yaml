@@ -1,0 +1,129 @@
+paths:
+  /payment_methods:
+    get:
+      tags:
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
+      summary: List the payment method's
+      description: List the payment method's.
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  properties:
+                    id:
+                      type: String
+                      description: Payment method identifier.
+                    name:
+                      type: String
+                      description: Name of the payment method.
+                    payment_type_id:
+                      type: String
+                      description: Types of payment methods.
+                    status:
+                      type: String
+                      description: Payment methods status.
+                    secure_thumbnail:
+                      type: String
+                      description: Logo to display on secure sites.
+                    thumbnail:
+                      type: String
+                      description: Logo to show.
+                    deferred_capture:
+                      type: String
+                      description: Whether the capture can be delayed or not.
+                    settings:
+                      type: Object
+                      description: Payment method settings.
+                      properties:
+                        bin:
+                          type: Object
+                          description: ''
+                          properties:
+                            pattern:
+                              type: String
+                              description: >-
+                                Regular expression representing the accepted
+                                bins.
+                            exclusion_pattern:
+                              type: String
+                              description: >-
+                                Regular expression representing the excluded
+                                bins.
+                            installments_pattern:
+                              type: String
+                              description: >-
+                                Regular expression representing bins allowed to
+                                pay with more than one installment.
+                        card_number:
+                          type: Object
+                          description: ''
+                          properties:
+                            length:
+                              type: String
+                              description: Card number length.
+                            validation:
+                              type: String
+                              description: >-
+                                Whether the card number can be validated using a
+                                checksum algorithm (usually Luhn)
+                        security_code:
+                          type: Object
+                          description: ''
+                          properties:
+                            mode:
+                              type: String
+                              description: Whether the security code is mandatory or not.
+                            length:
+                              type: Number
+                              description: Security code length.
+                            card_location:
+                              type: String
+                              description: >-
+                                Whether the security code is located in the back
+                                or in the front of the card.
+                    additional_info_needed:
+                      type: List(String)
+                      description: >-
+                        List of additional information that must be supplied by
+                        the payer.
+                    min_allowed_amount:
+                      type: Number
+                      description: >-
+                        Minimum amount that can be processed with this payment
+                        method.
+                    max_allowed_amount:
+                      type: Number
+                      description: >-
+                        Maximum amount that can be processed with this payment
+                        method.
+                    accreditation_time:
+                      type: Number
+                      description: >-
+                        How many time in minutes could happen until processing
+                        of the payment.
+                    financial_institutions:
+                      type: Object
+                      description: Finantial institution processing this payment method.
+                      properties:
+                        id:
+                          type: Integer
+                          description: >-
+                            External financial institution identifier (e.g.:
+                            company id for atm)
+                        description:
+                          type: String
+                          description: Descriptive finantial institution name.
+        '400':
+          '1000':
+            description: the credentials are required.
+          '1001':
+            description: public_key not found.
+        '401':
+          unauthorized:
+            description: unauthorized.
+        '404':
+          not_found:
+            description: not_found.
