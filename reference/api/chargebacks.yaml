@@ -1,0 +1,78 @@
+paths:
+  /chargebacks/{id}:
+    get:
+      tags: 
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
+      summary: "Get a chargeback info"
+      description: "Get a chargeback info."
+      parameters:
+        - name: id
+          in: path
+          description: Chargeback Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  properties:
+                    id:
+                      type: String
+                      description: Chargeback identifier
+                    payments:
+                      type: Array(Integer)
+                      description: List of payments ids associated to the case
+                    currency:
+                      type: String
+                      description: 'Amount''s currency '
+                    amount:
+                      type: Float
+                      description: Chargeback's amount
+                    coverage_applied:
+                      type: Boolean
+                      description: Whether the seller has been covered or not
+                    coverage_elegible:
+                      type: Boolean
+                      description: >-
+                        Whether the chargeback complies with the conditions to
+                        be covered
+                    documentation_required:
+                      type: Boolean
+                      description: >-
+                        Whether the seller needs to send documentation for this
+                        chargeback
+                    documentation_status:
+                      type: String
+                      description: Detail of decision taken for the documentation
+                    documentation:
+                      type: Array(Object)
+                      description: List of documentation received from the seller
+                      properties:
+                        type:
+                          type: String
+                          description: Documentation's file type
+                        url:
+                          type: String
+                          description: Url to see the documentation file
+                        description:
+                          type: String
+                          description: Documentation's description
+                    date_documentation_deadline:
+                      type: Date(ISO_8601)
+                      description: Chargeback's last day to send documentation
+                    date_created:
+                      type: Date(ISO_8601)
+                      description: Chargeback’s creation date
+                    date_last_updated:
+                      type: Date(ISO_8601)
+                      description: Chargeback's last modified date
+                    live_mode:
+                      type: Boolean
+                      description: >-
+                        Whether the chargeback will be processed in sandbox or
+                        in production mode
