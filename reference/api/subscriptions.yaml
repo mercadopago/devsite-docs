@@ -1,0 +1,179 @@
+paths:
+  /preapproval:
+    post:
+      tags: 
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
+      summary: "Create a subscription preference"
+      description: "Create a subscription preference."
+      requestBody:
+        properties:
+          auto_recurring:
+            type: Object
+            description: Recurring data.
+            properties:
+              frequency:
+                type: Integer
+                description: Recurring frecuency.
+              frequency_type:
+                type: String
+                description: Recurring frecuency type (days or months).
+              transaction_amount:
+                type: Number
+                description: Recurring amount.
+              currency_id:
+                type: String
+                description: Currency Id.
+              start_date:
+                type: Date(ISO_8601)
+                description: preapproval's start date.
+              end_date:
+                type: Date(ISO_8601)
+                description: preapproval's end date.
+          back_url:
+            type: String
+            description: Return URL.
+          collector_id:
+            type: String
+            description: Seller ID.
+          external_reference:
+            type: String
+            description: Preapproval reference value.
+          payer_email:
+            type: String
+            description: Customer's e-mail.
+          reason:
+            type: String
+            description: Preapproval titlte.
+          status:
+            type: String
+            description: Preapproval status.
+      responses:
+        '400':
+          Card token was used, please generate new:
+            description: Card token was used, please generate new.
+          Card token was generated without cvv validation:
+            description: Card token was generated without cvv validation.
+          Subscriptions are not available for this country yet:
+            description: Subscriptions are not available for this country yet.
+          The payment method account money is not available in your country:
+            description: The payment method account money is not available in your country.
+          Collector and Application cannot be from different countries:
+            description: Collector and Application cannot be from different countries.
+          card_token_id is required:
+            description: card_token_id is required.
+          payer_email is required:
+            description: payer_email is required.
+          Invalid value for payer_email, must be a valid email address:
+            description: Invalid value for payer_email, must be a valid email address.
+          Invalid value for transaction amount, must be a positive number:
+            description: Invalid value for transaction amount, must be a positive number.
+          Invalid value for transaction amount, only two decimals are allowed:
+            description: >-
+              Invalid value for transaction amount, only two decimals are
+              allowed.
+          Cannot pay an amount lower than ${currency_id} ${min amount}:
+            description: Cannot pay an amount lower than ${currency_id} ${min amount}.
+          Cannot pay an amount greater than ${currency_id} ${max amount}:
+            description: Cannot pay an amount greater than ${currency_id} ${max amount}.
+          The transaction_amount must be the same as preapproval_plan:
+            description: The transaction_amount must be the same as preapproval_plan.
+          You cannot create a new preapproval from a cancelled/inactive template:
+            description: >-
+              You cannot create a new preapproval from a cancelled/inactive
+              template.
+          back_url is required:
+            description: back_url is required.
+          Invalid value for back url, must be a valid URL:
+            description: Invalid value for back url, must be a valid URL.
+          reason is required:
+            description: reason is required.
+          reason has more than 255 characters:
+            description: reason has more than 255 characters.
+          reason has unsupported characters:
+            description: reason has unsupported characters.
+          auto_recurring.frequency is required:
+            description: auto_recurring.frequency is required.
+          Invalid value for frequency, must be a positive integer:
+            description: Invalid value for frequency, must be a positive integer.
+          Invalid value for frequency type, valid ones are [days, months]:
+            description: Invalid value for frequency type, valid ones are [days, months].
+          auto_recurring.frequency_type is required:
+            description: auto_recurring.frequency_type is required.
+          auto_recurring.transaction_amount is required:
+            description: auto_recurring.transaction_amount is required.
+          auto_recurring.currency_id is required:
+            description: auto_recurring.currency_id is required.
+          Invalid field -> auto_recurring.currency_id:
+            description: Invalid field -> auto_recurring.currency_id.
+          Invalid value for auto_recurring.end_date, the date must be after today:
+            description: >-
+              Invalid value for auto_recurring.end_date, the date must be after
+              today.
+          auto_recurring.end_date must be after auto_recurring.start_date:
+            description: auto_recurring.end_date must be after auto_recurring.start_date.
+          Invalid value for auto_recurring.start_date, the date must be after today:
+            description: >-
+              Invalid value for auto_recurring.start_date, the date must be
+              after today.
+          Invalid format in auto_recurring.start_date or auto_recurring.end_date:
+            description: >-
+              Invalid format in auto_recurring.start_date or
+              auto_recurring.end_date.
+          external_reference has more than 255 characters:
+            description: external_reference has more than 255 characters.
+          external_reference has unsupported characters:
+            description: external_reference has unsupported characters.
+          Already exists a preapproval for user ${payer_email} and application ${application_id}:
+            description: >-
+              Already exists a preapproval for user ${payer_email} and
+              application ${application_id}.
+          Cannot operate between different countries:
+            description: Cannot operate between different countries.
+          Payer and collector cannot be the same user:
+            description: Payer and collector cannot be the same user.
+          Both payer and collector must be real or test users:
+            description: Both payer and collector must be real or test users.
+          'This preapproval cannot be created: The seller does not accept account_money':
+            description: >-
+              This preapproval cannott be created. The seller does not accept
+              account_money.
+          This preapproval cannot be created only with payment method account_money:
+            description: >-
+              This preapproval can't be created only with payment method
+              account_money.
+          You cannot create a preapproval with payment_method in status pending:
+            description: >-
+              You cannot create a preapproval with payment_method in status
+              pending.
+          Cannot create preapproval pending, the feature with account money is disabled for your country.:
+            description: >-
+              Cannot create preapproval pending, the feature with account money
+              is disabled for your country.
+          Invalid request data:
+            description: Invalid request data.
+        '401':
+          CC_VAL_433:
+            description: CC_VAL_433 Credit card validation has failed.
+          Verification of collectors personal data is in process, come back later:
+            description: >-
+              Verification of collector's personal data is in process, come back
+              later.
+          Unauthorized access to resource:
+            description: Unauthorized access to resource.
+          This app cannot create preapprovals without a plan:
+            description: This app can't create preapprovals without a plan.
+        '403':
+          The collector does not meet the personal data verification requirements:
+            description: >-
+              The collector does not meet the personal data verification
+              requirements.
+          The caller is not authorized to access this resource:
+            description: The caller is not authorized to access this resource.
+          AM_VAL_01 Unauthorized seller for this feature:
+            description: AM_VAL_01 Unauthorized seller for this feature (account money) .
+        '404':
+          The preapproval with id ${preapproval id} does not exist:
+            description: The preapproval with id ${preapproval id} does not exist.
+          Card token service not found:
+            description: Card token service not found.
