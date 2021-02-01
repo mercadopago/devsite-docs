@@ -246,6 +246,14 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 }'
 ```
 
+> NOTE
+> 
+> Aumente a segurança do seu site
+>
+> Com o __código de segurança__, você irá proteger ainda mais seu site e poderá ter mais pagamentos aprovados. Ele >auxilia na prevenção de fraudes e pagamentos recusados sem justificativa.
+>
+> A configuração é simples! [Veja como adicionar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/payment-rejections#bookmark_recomendações_para_melhorar_sua_aprovação)
+
 
 #### Resposta
 `HTTP Status 200 OK`

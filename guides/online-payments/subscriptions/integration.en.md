@@ -246,6 +246,14 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 }'
 ```
 
+> NOTE
+> 
+> Increase the security of your website
+>
+> With our __security code__, you can further protect your website and get more payments approved. It will help you to prevent fraud and unjustified rejected payments.
+>
+> It's simple! [Add the code in easy steps](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/payment-rejections#bookmark_tips_to_improve_the_approval_process).
+
 
 #### Response
 `HTTP Status 200 OK`
