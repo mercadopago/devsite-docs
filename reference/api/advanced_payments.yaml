@@ -1,6 +1,11 @@
 paths:
   /advanced_payments:
     post:
+      tags: 
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
+      summary: "Create Payments"
+      description: 'Create Payments.'
       requestBody:
         properties:
           payer:
@@ -352,6 +357,19 @@ paths:
             description: Error in the payments API.
   /advanced_payments/{id}:
     get:
+      tags: 
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
+      summary: "Get a Payment"
+      description: 'Get a Payment'
+      parameters:
+        - name: id
+          in: path
+          description: Payment's Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
       responses:
         '200':
           content:
@@ -477,6 +495,19 @@ paths:
           '406001':
             description: Error in the payments API.
     put:
+      tags: 
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
+      summary: "Update a Payment"
+      description: 'Update a Payment'
+      parameters:
+        - name: id
+          in: path
+          description: Payment's Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
       requestBody:
         properties:
           id:
@@ -600,8 +631,35 @@ paths:
         '406':
           '406001':
             description: Error in the payments API.
-  /advanced_payments/{id}/search:
+  /advanced_payments/search:
     get:
+      tags: 
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
+      summary: "Search a Payment"
+      description: 'Search a Payment'
+      parameters:
+        - name: sort
+          in: query
+          description: Sort type
+          required: true
+          schema:
+            type: string
+            example: date_created
+        - name: criteria
+          in: query
+          description: Search criteria
+          required: true
+          schema:
+            type: string
+            example: desc
+        - name: external_reference
+          in: query
+          description: Payment's external reference
+          required: true
+          schema:
+            type: string
+            example: ID_REF
       responses:
         '200':
           content:
