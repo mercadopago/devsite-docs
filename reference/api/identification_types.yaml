@@ -1,0 +1,46 @@
+paths:
+  /identification_types:
+    get:
+      tags:
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
+      summary: 'Find identification types'
+      description: 'Find identification types.'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  properties:
+                    id:
+                      type: String
+                      example: "cpf"
+                      description: Identification type id.
+                    name:
+                      type: String
+                      example: "CPF"
+                      description: Identification type name.
+                    type:
+                      type: String
+                      example: String
+                      description: Identification number data type.
+                    min_length:
+                      type: number
+                      example: 0
+                      description: Identification number min length.
+                    max_length:
+                      type: number
+                      example: 10
+                      description: Identification number max length
+        '400':
+          '1001':
+            description: Public_key not found.
+          '1002':
+            description: 2Public_key not found.
+        '401':
+          '1000':
+            description: The credentials are required.
+        '404':
+          '1004':
+            description: Identification types not found.
