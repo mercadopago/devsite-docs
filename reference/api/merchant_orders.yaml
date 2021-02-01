@@ -1,0 +1,622 @@
+paths:
+  /merchant_orders:
+    post:
+      tags: 
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
+      summary: "Create a merchant order"
+      description: "Create a merchant order."
+      requestBody:
+        properties:
+          external_reference:
+            type: String(256)
+            description: Reference you can synchronize with your payment system.
+          preference_id:
+            type: String(UUID)
+            description: Payment preference identifier associated to the merchant order.
+          marketplace:
+            type: String(256)
+            description: 'Origin of the payment. Default value: ''NONE'''
+          notification_url:
+            type: String(500)
+            description: URL where you'd like to receive a payment notification.
+          sponsor_id:
+            type: Integer
+            description: Sponsor ID in Mercado Pago.
+          payer:
+            type: Object
+            description: Buyer Information.
+            properties:
+              id:
+                type: Integer
+                description: Buyer id.
+              email:
+                type: String(256)
+                description: Deprecated field, will return an empty string.
+              nickname:
+                type: String(256)
+                description: Buyer nickname.
+          site_id:
+            type: String
+            description: Country identifier that merchant order belongs to.
+          items:
+            type: Array(Object)
+            description: items information.
+            properties:
+              id:
+                type: String
+                description: Item id.
+              category_id:
+                type: String
+                description: Item category.
+              currency_id:
+                type: String(3)
+                description: ID of the currency used in the item price.
+              description:
+                type: String
+                description: Item description.
+              picture_url:
+                type: String
+                description: Item picture URL.
+              quantity:
+                type: Integer
+                description: Item quantity.
+              unit_price:
+                type: Float
+                description: Item unit price.
+              title:
+                type: String
+                description: Item title.
+          additional_info:
+            type: String(600)
+            description: Additional information.
+          application_id:
+            type: String
+            description: application identifier.
+      responses:
+        '400':
+          invalid_user_id:
+            description: invalid users involved.
+          invalid_order_state:
+            description: >-
+              the action requested is not valid for the current merchant order
+              state.
+          invalid_string:
+            description: string too long.
+          invalid_application_id:
+            description: internal server error.
+          invalid_items:
+            description: invalid unit_price.
+          user_not_allowed:
+            description: user not allowed to operate.
+          invalid_operation_type:
+            description: invalid operation type.
+          invalid_payer:
+            description: invalid payer identifier.
+          invalid_id:
+            description: invalid preference_id.
+          invalid_expired:
+            description: the preference_id has expired.
+          invalid_sponsor_id:
+            description: invalid sponsor_id.
+          invalid_marketplace:
+            description: invalid marketplace.
+          unmarshal_error:
+            description: could not unmarshal request body into merchant order struct.
+          invalid_url:
+            description: invalid URL. Isn't HTTP or HTTPS.
+          communication_error:
+            description: Error when calling...
+        '401':
+          invalid_token:
+            description: access denied.
+          invalid_caller_id:
+            description: invalid caller_id
+  /merchant_orders/search:
+    get:
+      tags: 
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
+      summary: "Search a merchant order"
+      description: "Search a merchant order."
+      parameters:
+        - name: status
+          in: path
+          description: Merchant order state.
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: preference_id
+          in: path
+          description: Payment preference identifier associated to the merchant order.
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: application_id
+          in: path
+          description: Application identifier.
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: payer_id
+          in: path
+          description: Buyer's Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: sponsor_id
+          in: path
+          description: Sponsor ID in Mercado Pago.
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: external_reference
+          in: path
+          description: Reference you can synchronize with your payment system.
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: site_id
+          in: path
+          description: Country identifier that merchant order belongs to.
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: marketplace
+          in: path
+          description: "Origin of the payment. Default value: 'NONE'"
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: date_created_from
+          in: path
+          description: Order's creation date (start search)
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: date_created_to
+          in: path
+          description: Order's creation date (end search)
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: last_updated_from
+          in: path
+          description: Order's last update date (start search)
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: last_updated_to
+          in: path
+          description: Order's last update date (end search)
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: items
+          in: path
+          description: items information.
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: limit
+          in: path
+          description: Qtd of max itens to return
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: offset
+          in: path
+          description: Qtd of itens to 'offset'
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  properties:
+                    status:
+                      type: String
+                      description: Show the current merchant order state.
+                    external_reference:
+                      type: String(256)
+                      description: Reference you can synchronize with your payment system.
+                    preference_id:
+                      type: String(UUID)
+                      description: >-
+                        Payment preference identifier associated to the merchant
+                        order.
+                    marketplace:
+                      type: String(256)
+                      description: 'Origin of the payment. Default value: ''NONE'''
+                    date_created:
+                      type: Date(ISO_8601)
+                      description: Order's creation date.
+                    last_updated:
+                      type: Date(ISO_8601)
+                      description: Order's last update date.
+                    sponsor_id:
+                      type: Integer
+                      description: Sponsor ID in Mercado Pago.
+                    site_id:
+                      type: String
+                      description: Country identifier that merchant order belongs to.
+                    payer:
+                      type: Object
+                      description: Buyer Information.
+                      properties:
+                        id:
+                          type: Integer
+                          description: Buyer id.
+                        email:
+                          type: String(256)
+                          description: Deprecated field, will return an empty string.
+                        nickname:
+                          type: String(256)
+                          description: Buyer nickname.
+                    items:
+                      type: Array(Object)
+                      description: items information.
+                      properties:
+                        id:
+                          type: String
+                          description: Item id.
+                        category_id:
+                          type: String
+                          description: Item category.
+                        currency_id:
+                          type: String(3)
+                          description: ID of the currency used in the item price.
+                        description:
+                          type: String
+                          description: Item description.
+                        picture_url:
+                          type: String
+                          description: Item picture URL.
+                        quantity:
+                          type: Integer
+                          description: Item quantity.
+                        unit_price:
+                          type: Float
+                          description: Item unit price.
+                        title:
+                          type: String
+                          description: Item title.
+                    application_id:
+                      type: String
+                      description: application identifier.
+                    order_status:
+                      type: String
+                      description: Current merchant order status given the payments status.
+        '400':
+          ds_search_query:
+            description: invalid query.
+        '401':
+          invalid_token:
+            description: invalid_token.
+          invalid_caller_id:
+            description: invalid caller_id
+  /merchant_orders/{id}:
+    get:
+      tags: 
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
+      summary: "Get a merchant order"
+      description: "Get a merchant order."
+      parameters:
+        - name: id
+          in: path
+          description: Order identifier
+          required: true
+          schema:
+            type: Integer
+            example: 123123123
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  properties:
+                    id:
+                      type: Integer
+                      description: Order identifier.
+        '400':
+          invalid_format:
+            description: invalid caller.id.
+        '401':
+          invalid_token:
+            description: access denied.
+          invalid_caller_id:
+            description: invalid caller_id
+    put:
+      tags: 
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
+      summary: "Update a merchant order"
+      description: "Update a merchant order."
+      parameters:
+        - name: id
+          in: path
+          description: Order identifier
+          required: true
+          schema:
+            type: Integer
+            example: 123123123
+      requestBody:
+        properties:
+          external_reference:
+            type: String(256)
+            description: Reference you can synchronize with your payment system.
+          additional_info:
+            type: String(600)
+            description: Additional information.
+          shipments:
+            type: Array(Object)
+            description: Shipments information.
+            properties:
+              id:
+                type: Integer
+                description: Shipping identifier.
+              shipment_type:
+                type: String
+                description: Shipping type.
+              shipping_mode:
+                type: String
+                description: Shipping mode.
+              picking_type:
+                type: String
+                description: Shipping picking type.
+              status:
+                type: String
+                description: Shipping picking type.
+              substatus:
+                type: String
+                description: Shipping picking type.
+              items:
+                type: Array(Object)
+                description: Shipping items.
+              date_created:
+                type: Date(ISO_8601)
+                description: Shipping's creation date.
+              last_modified:
+                type: Date(ISO_8601)
+                description: Shipping's last modification date.
+              date_first_printed:
+                type: Date(ISO_8601)
+                description: Shipping's first printed date.
+              service_id:
+                type: String
+                description: Shipping service identifier.
+              sender_id:
+                type: Integer
+                description: Sender identifier.
+              receiver_id:
+                type: Integer
+                description: Receiver identifier.
+              receiver_address:
+                type: Object
+                description: Shipping address.
+                properties:
+                  id:
+                    type: Integer
+                    description: Identifier of receiver address.
+                  address_line:
+                    type: String
+                    description: Street name and number of receiver address.
+                  apartment:
+                    type: String(256)
+                    description: Apartment.
+                  city:
+                    type: Object
+                    description: Information about receiver address city.
+                    properties:
+                      id:
+                        type: String
+                        description: City identifier.
+                      name:
+                        type: String
+                        description: City name.
+                  country:
+                    type: Object
+                    description: Information about receiver address country.
+                    properties:
+                      id:
+                        type: String
+                        description: Country identifier.
+                      name:
+                        type: String
+                        description: Country name.
+                  state:
+                    type: Object
+                    description: Information about receiver address state.
+                    properties:
+                      id:
+                        type: String
+                        description: State identifier.
+                      name:
+                        type: String
+                        description: State name.
+                  comment:
+                    type: String
+                    description: Comment about receiver address.
+                  contact:
+                    type: String
+                    description: Contact information.
+                  zip_code:
+                    type: String(256)
+                    description: Zip code.
+                  street_name:
+                    type: String(256)
+                    description: Street name.
+                  street_number:
+                    type: String(256)
+                    description: Street number.
+                  floor:
+                    type: String(256)
+                    description: Floor.
+                  phone:
+                    type: String(256)
+                    description: Receiver address phone.
+                  latitude:
+                    type: String(256)
+                    description: Receiver address latitude.
+                  longitude:
+                    type: String(256)
+                    description: Receiver address longitude.
+              shipping_option:
+                type: Object
+                description: Shipping options.
+                properties:
+                  cost:
+                    type: Float
+                    description: Net cost absorbed by the receiver.
+                  currency_id:
+                    type: String(3)
+                    description: Currency identifier.
+                  estimated_delivery:
+                    type: Object
+                    description: Estimated delivery time information.
+                    properties:
+                      date:
+                        type: Date(ISO_8601)
+                        description: Estimated delivery date.
+                      time_from:
+                        type: String
+                        description: Estimated lower delivery time.
+                      time_to:
+                        type: String
+                        description: Estimated upper delivery time.
+                  id:
+                    type: Integer
+                    description: Shipping option identifier.
+                  list_cost:
+                    type: Float
+                    description: Net cost of the shipping.
+                  name:
+                    type: String
+                    description: Option name.
+                  shipping_method_id:
+                    type: Integer
+                    description: Shipping method identifier.
+                  speed:
+                    type: Object
+                    description: Shipping time information.
+                    properties:
+                      handling:
+                        type: Integer
+                        description: Handling time.
+                      shipping:
+                        type: Integer
+                        description: Shipping time.
+          marketplace:
+            type: String(256)
+            description: 'Origin of the payment. Default value: ''NONE'''
+          notification_url:
+            type: String(500)
+            description: URL where you'd like to receive a payment notification.
+          sponsor_id:
+            type: Integer
+            description: Sponsor ID in Mercado Pago.
+          site_id:
+            type: String
+            description: Country identifier that merchant order belongs to.
+          payer:
+            type: Object
+            description: Buyer Information.
+            properties:
+              id:
+                type: Integer
+                description: Buyer id.
+              email:
+                type: String(256)
+                description: Deprecated field, will return an empty string.
+              nickname:
+                type: String(256)
+                description: Buyer nickname.
+          items:
+            type: Array(Object)
+            description: items information.
+            properties:
+              id:
+                type: String
+                description: Item id.
+              category_id:
+                type: String
+                description: Item category.
+              currency_id:
+                type: String(3)
+                description: ID of the currency used in the item price.
+              description:
+                type: String
+                description: Item description.
+              picture_url:
+                type: String
+                description: Item picture URL.
+              quantity:
+                type: Integer
+                description: Item quantity.
+              unit_price:
+                type: Float
+                description: Item unit price.
+              title:
+                type: String
+                description: Item title.
+      responses:
+        '400':
+          invalid_user_id:
+            description: invalid users involved.
+          invalid_order_state:
+            description: >-
+              the action requested is not valid for the current merchant order
+              state.
+          invalid_string:
+            description: string too long.
+          invalid_application_id:
+            description: internal server error.
+          invalid_items:
+            description: only the item quantity of an item can be modified.
+          user_not_allowed:
+            description: user not allowed to operate.
+          invalid_payment_id:
+            description: invalid payment identifier.
+          invalid_operation_type:
+            description: invalid operation type.
+          invalid_payer:
+            description: invalid payer identifier.
+          invalid_shipment_id:
+            description: invalid shipment identifier.
+          invalid_sponsor_id:
+            description: invalid sponsor_id.
+          invalid_marketplace:
+            description: invalid marketplace.
+          unmarshall_error:
+            description: could not unmarshal request body into merchant order struct.
+          invalid_format:
+            description: invalid merchant order id.
+          invalid_url:
+            description: invalid URL. Isn't HTTP or HTTPS.
+          communication_error:
+            description: Error when calling...
+        '401':
+          invalid_token:
+            description: access denied.
+          invalid_caller_id:
+            description: invalid caller_id

@@ -19,7 +19,7 @@ errors:
           es: invalid users involved.
           pt: invalid users involved.
     - invalid_order_state:
-        descrption:
+        description:
           en: the action requested is not valid for the current merchant order state.
           es: the action requested is not valid for the current merchant order state.
           pt: the action requested is not valid for the current merchant order state.
