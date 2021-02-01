@@ -19,6 +19,7 @@ errors:
         pt: externalPosId deve estar presente.
 - 404 NOT_FOUND:
   - point_of_sale_in_store_order_not_found:
+      description:
         en: No associated order found.
         es: No se encontró ninguna orden asociada.
         pt: Nenhum pedido associado encontrado.

@@ -1,0 +1,238 @@
+paths:
+  /instore/qr/seller/collectors/{user_id}/pos/{external_pos_id}/orders:
+    delete:
+      tags: 
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
+      summary: "Delete an Order"
+      description: "Delete an Order."
+      parameters:
+        - name: user_id
+          in: path
+          description: User Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: external_pos_id
+          in: path
+          description: External POS Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+      responses:
+        '400':
+          invalid_collectorId:
+            description: user_id must be a number.
+          invalid_externalPosId:
+            description: externalPosId must be present.
+          invalid_access_token:
+            description: Access denied.
+        '500':
+          in_store_order_creation_error:
+            description: Failed to delete order.
+    get:
+      tags: 
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
+      summary: "Get an Order"
+      description: "Get an Order."
+      parameters:
+        - name: user_id
+          in: path
+          description: User Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: external_pos_id
+          in: path
+          description: External POS Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  properties:
+                    user_id:
+                      type: String
+                      description: User identifier. (Required)
+                    external_pos_id:
+                      type: String
+                      description: >-
+                        External_id of the point of sale defined by integrator
+                        system. (Required)
+        '400':
+          invalid_collectorId:
+            description: user_id must be a number.
+          invalid_externalPosId:
+            description: externalPosId must be present.
+        '404':
+          point_of_sale_in_store_order_not_found:
+            description: No associated order found.
+        '500':
+          in_store_order_creation_error:
+            description: Failed to create order.
+  /instore/qr/seller/collectors/{user_id}/stores/{external_store_id}/pos/{external_pos_id}/orders:
+    put:
+      tags: 
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
+      summary: "Create an Order"
+      description: "Create an Order."
+      parameters:
+        - name: user_id
+          in: path
+          description: User Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: external_store_id
+          in: path
+          description: External Store Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: external_pos_id
+          in: path
+          description: External POS Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+      requestBody:
+        properties:
+          user_id:
+            type: String
+            description: User identifier. (Required)
+          external_store_id:
+            type: String
+            description: External_id of the store defined by integrator system. (Required)
+          external_pos_id:
+            type: String
+            description: >-
+              External_id of the point of sale defined by integrator system.
+              (Required)
+          external_reference:
+            type: String(256)
+            description: Reference you can synchronize with your sale system. (Required)
+          title:
+            type: String(256)
+            description: Purchase title. (Required)
+          description:
+            type: String(256)
+            description: Purchase description.
+          notification_url:
+            type: String(500)
+            description: >-
+              URL where you'd like to receive a payment or merchant_order
+              notification.
+          expiration_date:
+            type: String(500)
+            description: Expiration date with format "2020-08-22T16:34:56.559-04:00"
+          total_amount:
+            type: Double
+            description: Total amount of the transaction in local currency. (Required)
+          items:
+            type: Array(Object)
+            description: Information on the products involved in the order.
+            properties:
+              sku_number:
+                type: String
+                description: Item code.
+              category:
+                type: String
+                description: Item category.
+              title:
+                type: String
+                description: Item title. (Required)
+              description:
+                type: String
+                description: Item description.
+              unit_price:
+                type: Double
+                description: Unit price of the item (maximum 2 decimals). (Required)
+              quantity:
+                type: Integer
+                description: Number of item units. (Required)
+              unit_measure:
+                type: String
+                description: Unit of measure of the item. (Required)
+              total_amount:
+                type: String
+                description: Item image URL. (Required)
+          sponsor:
+            type: Object
+            description: Integrator information.
+            properties:
+              id:
+                type: Long
+                description: Mercado Pago's USER_ID of the integrator system.
+          cash_out:
+            type: Object
+            description: Cash withdrawal.
+            properties:
+              amount:
+                type: Double
+                description: Amount to withdraw in local currency.
+      responses:
+        '400':
+          invalid_collectorId:
+            description: user_id must be a number.
+          invalid_externalPosId:
+            description: externalPosId must be present.
+          invalid_external_reference:
+            description: external_reference must be present.
+          invalid_total_amount:
+            description: total_amount must be present.
+          invalid_items.sku_number:
+            description: items.sku_number must be string.
+          invalid_items.category:
+            description: items.category must be string.
+          invalid_items.title:
+            description: items.title must be string.
+          invalid_items.description:
+            description: items.description must be string.
+          invalid_items.unit_measure:
+            description: items.unit_measure must be string.
+          invalid_items.quantity:
+            description: items.quantity must be number.
+          invalid_items.currency_id:
+            description: items.currency_id must be string.
+          invalid_items.unit_price:
+            description: items.unit_price must be number.
+          invalid_items.total_amount:
+            description: items.total_amount must be number.
+          invalid_title:
+            description: title must be string.
+          invalid_unit_measure:
+            description: unit_measure must be present.
+          invalid_quantity:
+            description: quantity must be present.
+          invalid_unit_price:
+            description: unit_price must be present.
+          invalid_description:
+            description: description must be present.
+          invalid_sponsor.id:
+            description: sponsor.id must be number.
+          invalid_id:
+            description: sponsor.id must be present.
+          invalid_cash_out.amount:
+            description: cash_out.amount must be number.
+          invalid_amount:
+            description: cash_out.amount must be present.
+          error_creating_seller_qr_order:
+            description: The cash out is required when order has no items.
+          invalid_expiration_date:
+            description: Expiration date must be a valid and future date.
+        '500':
+          in_store_order_creation_error:
+            description: Failed to create order.
