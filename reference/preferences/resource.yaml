@@ -353,9 +353,9 @@ definitions:
       - pending:
           type: String(600)
           description:
-          en: Pending or in process payment URL.
-          es: URL de retorno ante pago pendiente o en proceso.
-          pt: URL de retorno diante de pagamento pendente ou em processo.
+            en: Pending or in process payment URL.
+            es: URL de retorno ante pago pendiente o en proceso.
+            pt: URL de retorno diante de pagamento pendente ou em processo.
       - failure:
           type: String(600)
           description:
