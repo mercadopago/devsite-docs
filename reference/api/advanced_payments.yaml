@@ -1,0 +1,1219 @@
+paths:
+  /advanced_payments:
+    post:
+      requestBody:
+        properties:
+          payer:
+            type: Object
+            description: payer identifier.
+            properties:
+              id:
+                type: String
+                description: Identification of the associated payer.
+              email:
+                type: String
+                description: Payer’s email address.
+              type:
+                type: String
+                description: >-
+                  Type of identification of the associated payer (required if
+                  the payer is a customer).
+              identification:
+                type: Object
+                description: Personal identification.
+                properties:
+                  type:
+                    type: String
+                    description: Identification type.
+                  number:
+                    type: String
+                    description: Identification number.
+              address:
+                type: Object
+                description: Address.
+                properties:
+                  zip_code:
+                    type: String
+                    description: Zip Code.
+                  street_name:
+                    type: String
+                    description: Street name.
+                  street_number:
+                    type: Integer
+                    description: Number.
+              phone:
+                type: Object
+                description: Phone number of the associated payer.
+                properties:
+                  area_code:
+                    type: String
+                    description: Area Code.
+                  number:
+                    type: String
+                    description: Phone number.
+                  extension:
+                    type: String
+                    description: Phone number extension.
+              first_name:
+                type: String
+                description: Name of the associated payer.
+              last_name:
+                type: String
+                description: Last name od the associated payer.
+          payments:
+            type: Array(Object)
+            description: List of payments made by the buyer.
+            properties:
+              id:
+                type: Number
+                description: Payment identification.
+              status:
+                type: String
+                description: Payment status.
+              status_detail:
+                type: String
+                description: Payment status details.
+              payment_type_id:
+                type: String
+                description: Selected payment method type.
+              payment_method_id:
+                type: String
+                description: Payment method selected to make the payment.
+              token:
+                type: String
+                description: Token card identifier.
+              transaction_amount:
+                type: Float
+                description: Product cost.
+              installments:
+                type: Integer
+                description: Number of installments selected.
+              processing_mode:
+                type: String
+                description: Method of processing the payments (aggregator by default).
+              issuer_id:
+                type: String
+                description: Identifier of the issuer of the payment method.
+              description:
+                type: String
+                description: Reason for payment.
+              capture:
+                type: Boolean
+                description: >-
+                  Determines whether the payment should be captured (true,
+                  default value) or only reserved (false).
+              external_reference:
+                type: String
+                description: Identifier provided by the seller in their system.
+              statement_descriptor:
+                type: String
+                description: How the payment will appear in the card statement.
+              date_of_expiration:
+                type: String
+                description: Expiration date for the case of payment method "ticket".
+              transaction_details:
+                type: Object
+                description: Group the transaction details.
+                properties:
+                  external_resource_url:
+                    type: String
+                    description: Identify the resource in the payment processor.
+          disbursements:
+            type: Array(Object)
+            description: List of payments that correspond to each Seller.
+            properties:
+              id:
+                type: Number
+                description: Payment identifier.
+              amount:
+                type: Float
+                description: Payment amount.
+              external_reference:
+                type: String
+                description: Identifier provided by the seller in their system.
+              collector_id:
+                type: Integer
+                description: Seller identifier.
+              application_fee:
+                type: Float
+                description: Commission collected by the Marketplace.
+              money_release_days:
+                type: Float
+                description: >-
+                  Number of days (from the date of approval of the payment) in
+                  which the payment will be released to the Seller.
+          binary_mode:
+            type: Boolean
+            description: >-
+              When the payment is activated, it can only be approved or
+              rejected. Otherwise, the payment may be pending.
+          metadata:
+            type: Object
+            description: >-
+              Valid JSON that can be added to the payment to save additional
+              attributes.
+          application_id:
+            type: Object
+            description: Marketplace ID.
+          additional_info:
+            type: Object
+            description: >-
+              Information that can improve the fraud prevention analysis and the
+              conversion rate. Try sending us as much information as possible.
+            properties:
+              ip_address:
+                type: String
+                description: IP from which the request comes (only for bank transfer)
+              items:
+                type: Array(Object)
+                description: List of items to pay.
+                properties:
+                  id:
+                    type: String
+                    description: Item code.
+                  title:
+                    type: String
+                    description: Item name.
+                  description:
+                    type: String
+                    description: Item description.
+                  picture_url:
+                    type: String
+                    description: Image URL.
+                  category_id:
+                    type: String
+                    description: Item category.
+                  quantity:
+                    type: Integer
+                    description: Number of items.
+                  unit_price:
+                    type: Float
+                    description: Unit price.
+              payer:
+                type: Object
+                description: Buyer’s information.
+                properties:
+                  first_name:
+                    type: String
+                    description: Buyer’s name.
+                  last_name:
+                    type: String
+                    description: Buyer’s last name.
+                  phone:
+                    type: Object
+                    description: Buyer’s phone number.
+                    properties:
+                      area_code:
+                        type: String
+                        description: Area Code.
+                      number:
+                        type: String
+                        description: Phone number.
+                  registration_date:
+                    type: Date
+                    description: Date of registration of the buyer on your website.
+              shipments:
+                type: Object
+                description: Shipping information.
+                properties:
+                  receiver_address:
+                    type: Object
+                    description: Buyer’s address.
+                    properties:
+                      zip_code:
+                        type: String
+                        description: Zip Code.
+                      street_name:
+                        type: String
+                        description: Street name.
+                      street_number:
+                        type: Integer
+                        description: Number.
+                      floor:
+                        type: String
+                        description: Floor
+                      apartment:
+                        type: String
+                        description: Unit.
+      responses:
+        '400':
+          '400004':
+            description: Invalid application.
+          '400005':
+            description: The application is required.
+          '400006':
+            description: Invalid date of release for the Disbursement.
+          '400007':
+            description: Invalid date of release for the Disbursement.
+          '400013':
+            description: Invalid email address.
+          '400014':
+            description: Invalid number of payments.
+          '400015':
+            description: Payer ID is required for payments with money in the account.
+          '400016':
+            description: Invalid payment type.
+          '400017':
+            description: The transaction amount is required.
+          '400018':
+            description: Invalid amount.
+          '400019':
+            description: The payment method is required.
+          '400020':
+            description: The payment type is required.
+          '400021':
+            description: The amount format is invalid.
+          '400022':
+            description: Invalid processing method.
+          '400023':
+            description: The payer type is required.
+          '400024':
+            description: The payer’s name is required.
+          '400025':
+            description: The payer’s last name is required.
+          '400026':
+            description: The payer’s identification type is required.
+          '400027':
+            description: The payer’s identification number is required.
+          '400028':
+            description: The expiration date is required.
+          '400029':
+            description: The payment token is required.
+          '400030':
+            description: The installments are required.
+          '400031':
+            description: The amount of disbursements is required.
+          '400032':
+            description: The collector ID is required.
+          '400033':
+            description: Invalid Marketplace commission.
+          '400034':
+            description: Invalid disbursement amount.
+          '400035':
+            description: The field money_release_date is invalid.
+          '400036':
+            description: The Marketplace does not have permissions on the payer.
+          '400037':
+            description: The collector was not found.
+          '400039':
+            description: Invalid request.
+          '400040':
+            description: Invalid status.
+          '400041':
+            description: Invalid start date.
+          '400042':
+            description: Invalid end date.
+          '400043':
+            description: Invalid email address.
+          '400044':
+            description: Invalid payer ID.
+          '400045':
+            description: Invalid collector ID.
+          '400046':
+            description: The field external_reference is invalid.
+          '400047':
+            description: Some parameters of the search are invalid.
+          '400048':
+            description: Invalid ID.
+          '400049':
+            description: Invalid last modification date.
+          '400051':
+            description: The field money_release_date is required.
+          '400052':
+            description: The processing_mode is required.
+          '400053':
+            description: Invalid content.
+          '400054':
+            description: The Marketplace does not have permissions on the collector.
+          '400055':
+            description: The field external_reference is required.
+          '400056':
+            description: The field money_release_days is invalid.
+          '400057':
+            description: The fields collector_id and external_reference are duplicated.
+          '400058':
+            description: Invalid idempodency key.
+        '401':
+          '401000':
+            description: Invalid access token.
+          '401002':
+            description: Invalid access token.
+          '401003':
+            description: Invalid device token.
+        '404':
+          '404001':
+            description: The Disbursement was not found.
+          '404002':
+            description: The Advanced Payment was not found.
+          '404003':
+            description: The Payer was not found.
+        '406':
+          '406001':
+            description: Error in the payments API.
+  /advanced_payments/{id}:
+    get:
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  properties:
+                    id:
+                      type: Long
+                      description: Advanced Payment Identifier.
+        '400':
+          '400004':
+            description: Invalid application.
+          '400005':
+            description: The application is required.
+          '400006':
+            description: Invalid date of release for the Disbursement.
+          '400007':
+            description: Invalid date of release for the Disbursement.
+          '400013':
+            description: Invalid email address.
+          '400014':
+            description: Invalid number of payments.
+          '400015':
+            description: Payer ID is required for payments with money in the account.
+          '400016':
+            description: Invalid payment type.
+          '400017':
+            description: The transaction amount is required.
+          '400018':
+            description: Invalid amount.
+          '400019':
+            description: The payment method is required.
+          '400020':
+            description: The payment type is required.
+          '400021':
+            description: The amount format is invalid.
+          '400022':
+            description: Invalid processing method.
+          '400023':
+            description: The payer type is required.
+          '400024':
+            description: The payer’s name is required.
+          '400025':
+            description: The payer’s last name is required.
+          '400026':
+            description: The payer’s identification type is required.
+          '400027':
+            description: The payer’s identification number is required.
+          '400028':
+            description: The expiration date is required.
+          '400029':
+            description: The payment token is required.
+          '400030':
+            description: The installments are required.
+          '400031':
+            description: The amount of disbursements is required.
+          '400032':
+            description: The collector ID is required.
+          '400033':
+            description: Invalid Marketplace commission.
+          '400034':
+            description: Invalid disbursement amount.
+          '400035':
+            description: The field money_release_date is invalid.
+          '400036':
+            description: The Marketplace does not have permissions on the payer.
+          '400037':
+            description: The collector was not found.
+          '400039':
+            description: Invalid request.
+          '400040':
+            description: Invalid status.
+          '400041':
+            description: Invalid start date.
+          '400042':
+            description: Invalid end date.
+          '400043':
+            description: Invalid email address.
+          '400044':
+            description: Invalid payer ID.
+          '400045':
+            description: Invalid collector ID.
+          '400046':
+            description: The field external_reference is invalid.
+          '400047':
+            description: Some parameters of the search are invalid.
+          '400048':
+            description: Invalid ID.
+          '400049':
+            description: Invalid last modification date.
+          '400051':
+            description: The field money_release_date is required.
+          '400052':
+            description: The processing_mode is required.
+          '400053':
+            description: Invalid content.
+          '400054':
+            description: The Marketplace does not have permissions on the collector.
+          '400055':
+            description: The field external_reference is required.
+          '400056':
+            description: The field money_release_days is invalid.
+          '400057':
+            description: The fields collector_id and external_reference are duplicated.
+          '400058':
+            description: Invalid idempodency key.
+        '401':
+          '401000':
+            description: Invalid access token.
+          '401002':
+            description: Invalid access token.
+          '401003':
+            description: Invalid device token.
+        '404':
+          '404001':
+            description: The Disbursement was not found.
+          '404002':
+            description: The Advanced Payment was not found.
+          '404003':
+            description: The Payer was not found.
+        '406':
+          '406001':
+            description: Error in the payments API.
+    put:
+      requestBody:
+        properties:
+          id:
+            type: Long
+            description: Advanced Payment Identifier.
+          status:
+            type: String
+            description: Advanced Payment status.
+      responses:
+        '400':
+          '400004':
+            description: Invalid application.
+          '400005':
+            description: The application is required.
+          '400006':
+            description: Invalid date of release for the Disbursement.
+          '400007':
+            description: Invalid date of release for the Disbursement.
+          '400013':
+            description: Invalid email address.
+          '400014':
+            description: Invalid number of payments.
+          '400015':
+            description: Payer ID is required for payments with money in the account.
+          '400016':
+            description: Invalid payment type.
+          '400017':
+            description: The transaction amount is required.
+          '400018':
+            description: Invalid amount.
+          '400019':
+            description: The payment method is required.
+          '400020':
+            description: The payment type is required.
+          '400021':
+            description: The amount format is invalid.
+          '400022':
+            description: Invalid processing method.
+          '400023':
+            description: The payer type is required.
+          '400024':
+            description: The payer’s name is required.
+          '400025':
+            description: The payer’s last name is required.
+          '400026':
+            description: The payer’s identification type is required.
+          '400027':
+            description: The payer’s identification number is required.
+          '400028':
+            description: The expiration date is required.
+          '400029':
+            description: The payment token is required.
+          '400030':
+            description: The installments are required.
+          '400031':
+            description: The amount of disbursements is required.
+          '400032':
+            description: The collector ID is required.
+          '400033':
+            description: Invalid Marketplace commission.
+          '400034':
+            description: Invalid disbursement amount.
+          '400035':
+            description: The field money_release_date is invalid.
+          '400036':
+            description: The Marketplace does not have permissions on the payer.
+          '400037':
+            description: The collector was not found.
+          '400039':
+            description: Invalid request.
+          '400040':
+            description: Invalid status.
+          '400041':
+            description: Invalid start date.
+          '400042':
+            description: Invalid end date.
+          '400043':
+            description: Invalid email address.
+          '400044':
+            description: Invalid payer ID.
+          '400045':
+            description: Invalid collector ID.
+          '400046':
+            description: The field external_reference is invalid.
+          '400047':
+            description: Some parameters of the search are invalid.
+          '400048':
+            description: Invalid ID.
+          '400049':
+            description: Invalid last modification date.
+          '400051':
+            description: The field money_release_date is required.
+          '400052':
+            description: The processing_mode is required.
+          '400053':
+            description: Invalid content.
+          '400054':
+            description: The Marketplace does not have permissions on the collector.
+          '400055':
+            description: The field external_reference is required.
+          '400056':
+            description: The field money_release_days is invalid.
+          '400057':
+            description: The fields collector_id and external_reference are duplicated.
+          '400058':
+            description: Invalid idempodency key.
+        '401':
+          '401000':
+            description: Invalid access token.
+          '401002':
+            description: Invalid access token.
+          '401003':
+            description: Invalid device token.
+        '404':
+          '404001':
+            description: The Disbursement was not found.
+          '404002':
+            description: The Advanced Payment was not found.
+          '404003':
+            description: The Payer was not found.
+        '406':
+          '406001':
+            description: Error in the payments API.
+  /advanced_payments/{id}/search:
+    get:
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  properties:
+                    date_created:
+                      type: Date(ISO_8601)
+                      description: Date of creation of the payment.
+                    status:
+                      type: String
+                      description: Advanced Payment status.
+        '400':
+          '400004':
+            description: Invalid application.
+          '400005':
+            description: The application is required.
+          '400006':
+            description: Invalid date of release for the Disbursement.
+          '400007':
+            description: Invalid date of release for the Disbursement.
+          '400013':
+            description: Invalid email address.
+          '400014':
+            description: Invalid number of payments.
+          '400015':
+            description: Payer ID is required for payments with money in the account.
+          '400016':
+            description: Invalid payment type.
+          '400017':
+            description: The transaction amount is required.
+          '400018':
+            description: Invalid amount.
+          '400019':
+            description: The payment method is required.
+          '400020':
+            description: The payment type is required.
+          '400021':
+            description: The amount format is invalid.
+          '400022':
+            description: Invalid processing method.
+          '400023':
+            description: The payer type is required.
+          '400024':
+            description: The payer’s name is required.
+          '400025':
+            description: The payer’s last name is required.
+          '400026':
+            description: The payer’s identification type is required.
+          '400027':
+            description: The payer’s identification number is required.
+          '400028':
+            description: The expiration date is required.
+          '400029':
+            description: The payment token is required.
+          '400030':
+            description: The installments are required.
+          '400031':
+            description: The amount of disbursements is required.
+          '400032':
+            description: The collector ID is required.
+          '400033':
+            description: Invalid Marketplace commission.
+          '400034':
+            description: Invalid disbursement amount.
+          '400035':
+            description: The field money_release_date is invalid.
+          '400036':
+            description: The Marketplace does not have permissions on the payer.
+          '400037':
+            description: The collector was not found.
+          '400039':
+            description: Invalid request.
+          '400040':
+            description: Invalid status.
+          '400041':
+            description: Invalid start date.
+          '400042':
+            description: Invalid end date.
+          '400043':
+            description: Invalid email address.
+          '400044':
+            description: Invalid payer ID.
+          '400045':
+            description: Invalid collector ID.
+          '400046':
+            description: The field external_reference is invalid.
+          '400047':
+            description: Some parameters of the search are invalid.
+          '400048':
+            description: Invalid ID.
+          '400049':
+            description: Invalid last modification date.
+          '400051':
+            description: The field money_release_date is required.
+          '400052':
+            description: The processing_mode is required.
+          '400053':
+            description: Invalid content.
+          '400054':
+            description: The Marketplace does not have permissions on the collector.
+          '400055':
+            description: The field external_reference is required.
+          '400056':
+            description: The field money_release_days is invalid.
+          '400057':
+            description: The fields collector_id and external_reference are duplicated.
+          '400058':
+            description: Invalid idempodency key.
+        '401':
+          '401000':
+            description: Invalid access token.
+          '401002':
+            description: Invalid access token.
+          '401003':
+            description: Invalid device token.
+        '404':
+          '404001':
+            description: The Disbursement was not found.
+          '404002':
+            description: The Advanced Payment was not found.
+          '404003':
+            description: The Payer was not found.
+        '406':
+          '406001':
+            description: Error in the payments API.
+  /advanced_payments/{id}/refunds:
+    post:
+      requestBody:
+        properties:
+          id:
+            type: Long
+            description: Advanced Payment Identifier.
+      responses:
+        '400':
+          '400004':
+            description: Invalid application.
+          '400005':
+            description: The application is required.
+          '400006':
+            description: Invalid date of release for the Disbursement.
+          '400007':
+            description: Invalid date of release for the Disbursement.
+          '400013':
+            description: Invalid email address.
+          '400014':
+            description: Invalid number of payments.
+          '400015':
+            description: Payer ID is required for payments with money in the account.
+          '400016':
+            description: Invalid payment type.
+          '400017':
+            description: The transaction amount is required.
+          '400018':
+            description: Invalid amount.
+          '400019':
+            description: The payment method is required.
+          '400020':
+            description: The payment type is required.
+          '400021':
+            description: The amount format is invalid.
+          '400022':
+            description: Invalid processing method.
+          '400023':
+            description: The payer type is required.
+          '400024':
+            description: The payer’s name is required.
+          '400025':
+            description: The payer’s last name is required.
+          '400026':
+            description: The payer’s identification type is required.
+          '400027':
+            description: The payer’s identification number is required.
+          '400028':
+            description: The expiration date is required.
+          '400029':
+            description: The payment token is required.
+          '400030':
+            description: The installments are required.
+          '400031':
+            description: The amount of disbursements is required.
+          '400032':
+            description: The collector ID is required.
+          '400033':
+            description: Invalid Marketplace commission.
+          '400034':
+            description: Invalid disbursement amount.
+          '400035':
+            description: The field money_release_date is invalid.
+          '400036':
+            description: The Marketplace does not have permissions on the payer.
+          '400037':
+            description: The collector was not found.
+          '400039':
+            description: Invalid request.
+          '400040':
+            description: Invalid status.
+          '400041':
+            description: Invalid start date.
+          '400042':
+            description: Invalid end date.
+          '400043':
+            description: Invalid email address.
+          '400044':
+            description: Invalid payer ID.
+          '400045':
+            description: Invalid collector ID.
+          '400046':
+            description: The field external_reference is invalid.
+          '400047':
+            description: Some parameters of the search are invalid.
+          '400048':
+            description: Invalid ID.
+          '400049':
+            description: Invalid last modification date.
+          '400051':
+            description: The field money_release_date is required.
+          '400052':
+            description: The processing_mode is required.
+          '400053':
+            description: Invalid content.
+          '400054':
+            description: The Marketplace does not have permissions on the collector.
+          '400055':
+            description: The field external_reference is required.
+          '400056':
+            description: The field money_release_days is invalid.
+          '400057':
+            description: The fields collector_id and external_reference are duplicated.
+          '400058':
+            description: Invalid idempodency key.
+        '401':
+          '401000':
+            description: Invalid access token.
+          '401002':
+            description: Invalid access token.
+          '401003':
+            description: Invalid device token.
+        '404':
+          '404001':
+            description: The Disbursement was not found.
+          '404002':
+            description: The Advanced Payment was not found.
+          '404003':
+            description: The Payer was not found.
+        '406':
+          '406001':
+            description: Error in the payments API.
+  /advanced_payments/{id}/disburses:
+    post:
+      requestBody:
+        properties:
+          id:
+            type: Long
+            description: Advanced Payment Identifier.
+      responses:
+        '400':
+          '400004':
+            description: Invalid application.
+          '400005':
+            description: The application is required.
+          '400006':
+            description: Invalid date of release for the Disbursement.
+          '400007':
+            description: Invalid date of release for the Disbursement.
+          '400013':
+            description: Invalid email address.
+          '400014':
+            description: Invalid number of payments.
+          '400015':
+            description: Payer ID is required for payments with money in the account.
+          '400016':
+            description: Invalid payment type.
+          '400017':
+            description: The transaction amount is required.
+          '400018':
+            description: Invalid amount.
+          '400019':
+            description: The payment method is required.
+          '400020':
+            description: The payment type is required.
+          '400021':
+            description: The amount format is invalid.
+          '400022':
+            description: Invalid processing method.
+          '400023':
+            description: The payer type is required.
+          '400024':
+            description: The payer’s name is required.
+          '400025':
+            description: The payer’s last name is required.
+          '400026':
+            description: The payer’s identification type is required.
+          '400027':
+            description: The payer’s identification number is required.
+          '400028':
+            description: The expiration date is required.
+          '400029':
+            description: The payment token is required.
+          '400030':
+            description: The installments are required.
+          '400031':
+            description: The amount of disbursements is required.
+          '400032':
+            description: The collector ID is required.
+          '400033':
+            description: Invalid Marketplace commission.
+          '400034':
+            description: Invalid disbursement amount.
+          '400035':
+            description: The field money_release_date is invalid.
+          '400036':
+            description: The Marketplace does not have permissions on the payer.
+          '400037':
+            description: The collector was not found.
+          '400039':
+            description: Invalid request.
+          '400040':
+            description: Invalid status.
+          '400041':
+            description: Invalid start date.
+          '400042':
+            description: Invalid end date.
+          '400043':
+            description: Invalid email address.
+          '400044':
+            description: Invalid payer ID.
+          '400045':
+            description: Invalid collector ID.
+          '400046':
+            description: The field external_reference is invalid.
+          '400047':
+            description: Some parameters of the search are invalid.
+          '400048':
+            description: Invalid ID.
+          '400049':
+            description: Invalid last modification date.
+          '400051':
+            description: The field money_release_date is required.
+          '400052':
+            description: The processing_mode is required.
+          '400053':
+            description: Invalid content.
+          '400054':
+            description: The Marketplace does not have permissions on the collector.
+          '400055':
+            description: The field external_reference is required.
+          '400056':
+            description: The field money_release_days is invalid.
+          '400057':
+            description: The fields collector_id and external_reference are duplicated.
+          '400058':
+            description: Invalid idempodency key.
+        '401':
+          '401000':
+            description: Invalid access token.
+          '401002':
+            description: Invalid access token.
+          '401003':
+            description: Invalid device token.
+        '404':
+          '404001':
+            description: The Disbursement was not found.
+          '404002':
+            description: The Advanced Payment was not found.
+          '404003':
+            description: The Payer was not found.
+        '406':
+          '406001':
+            description: Error in the payments API.
+  /advanced_payments/{id}/disbursements/{disbursement_id}/refunds:
+    post:
+      requestBody:
+        properties:
+          id:
+            type: Long
+            description: Advanced Payment Identifier.
+      responses:
+        '400':
+          '400004':
+            description: Invalid application.
+          '400005':
+            description: The application is required.
+          '400006':
+            description: Invalid date of release for the Disbursement.
+          '400007':
+            description: Invalid date of release for the Disbursement.
+          '400013':
+            description: Invalid email address.
+          '400014':
+            description: Invalid number of payments.
+          '400015':
+            description: Payer ID is required for payments with money in the account.
+          '400016':
+            description: Invalid payment type.
+          '400017':
+            description: The transaction amount is required.
+          '400018':
+            description: Invalid amount.
+          '400019':
+            description: The payment method is required.
+          '400020':
+            description: The payment type is required.
+          '400021':
+            description: The amount format is invalid.
+          '400022':
+            description: Invalid processing method.
+          '400023':
+            description: The payer type is required.
+          '400024':
+            description: The payer’s name is required.
+          '400025':
+            description: The payer’s last name is required.
+          '400026':
+            description: The payer’s identification type is required.
+          '400027':
+            description: The payer’s identification number is required.
+          '400028':
+            description: The expiration date is required.
+          '400029':
+            description: The payment token is required.
+          '400030':
+            description: The installments are required.
+          '400031':
+            description: The amount of disbursements is required.
+          '400032':
+            description: The collector ID is required.
+          '400033':
+            description: Invalid Marketplace commission.
+          '400034':
+            description: Invalid disbursement amount.
+          '400035':
+            description: The field money_release_date is invalid.
+          '400036':
+            description: The Marketplace does not have permissions on the payer.
+          '400037':
+            description: The collector was not found.
+          '400039':
+            description: Invalid request.
+          '400040':
+            description: Invalid status.
+          '400041':
+            description: Invalid start date.
+          '400042':
+            description: Invalid end date.
+          '400043':
+            description: Invalid email address.
+          '400044':
+            description: Invalid payer ID.
+          '400045':
+            description: Invalid collector ID.
+          '400046':
+            description: The field external_reference is invalid.
+          '400047':
+            description: Some parameters of the search are invalid.
+          '400048':
+            description: Invalid ID.
+          '400049':
+            description: Invalid last modification date.
+          '400051':
+            description: The field money_release_date is required.
+          '400052':
+            description: The processing_mode is required.
+          '400053':
+            description: Invalid content.
+          '400054':
+            description: The Marketplace does not have permissions on the collector.
+          '400055':
+            description: The field external_reference is required.
+          '400056':
+            description: The field money_release_days is invalid.
+          '400057':
+            description: The fields collector_id and external_reference are duplicated.
+          '400058':
+            description: Invalid idempodency key.
+        '401':
+          '401000':
+            description: Invalid access token.
+          '401002':
+            description: Invalid access token.
+          '401003':
+            description: Invalid device token.
+        '404':
+          '404001':
+            description: The Disbursement was not found.
+          '404002':
+            description: The Advanced Payment was not found.
+          '404003':
+            description: The Payer not found was.
+        '406':
+          '406001':
+            description: Error in the payments API.
+  /advanced_payments/{id}/disbursements/{disbursement_id}/disburses:
+    post:
+      requestBody:
+        properties:
+          id:
+            type: Long
+            description: Advanced Payment Identifier.
+      responses:
+        '400':
+          '400004':
+            description: Invalid application.
+          '400005':
+            description: The application is required.
+          '400006':
+            description: Invalid date of release for the Disbursement.
+          '400007':
+            description: Invalid date of release for the Disbursement.
+          '400013':
+            description: Invalid email address.
+          '400014':
+            description: Invalid number of payments.
+          '400015':
+            description: Payer ID is required for payments with money in the account.
+          '400016':
+            description: Invalid payment type.
+          '400017':
+            description: The transaction amount is required.
+          '400018':
+            description: Invalid amount.
+          '400019':
+            description: The payment method is required.
+          '400020':
+            description: The payment type is required.
+          '400021':
+            description: The amount format is invalid.
+          '400022':
+            description: Invalid processing method.
+          '400023':
+            description: The payer type is required.
+          '400024':
+            description: The payer’s name is required.
+          '400025':
+            description: The payer’s last name is required.
+          '400026':
+            description: The payer’s identification type is required.
+          '400027':
+            description: The payer’s identification number is required.
+          '400028':
+            description: The expiration date is required.
+          '400029':
+            description: The payment token is required.
+          '400030':
+            description: The installments are required.
+          '400031':
+            description: The amount of disbursements is required.
+          '400032':
+            description: The collector ID is required.
+          '400033':
+            description: Invalid Marketplace commission.
+          '400034':
+            description: Invalid disbursement amount.
+          '400035':
+            description: The field money_release_date is invalid.
+          '400036':
+            description: The Marketplace does not have permissions on the payer.
+          '400037':
+            description: The collector was not found.
+          '400039':
+            description: Invalid request.
+          '400040':
+            description: Invalid status.
+          '400041':
+            description: Invalid start date.
+          '400042':
+            description: Invalid end date.
+          '400043':
+            description: Invalid email address.
+          '400044':
+            description: Invalid payer ID.
+          '400045':
+            description: Invalid collector ID.
+          '400046':
+            description: The field external_reference is invalid.
+          '400047':
+            description: Some parameters of the search are invalid.
+          '400048':
+            description: Invalid ID.
+          '400049':
+            description: Invalid last modification date.
+          '400051':
+            description: The field money_release_date is required.
+          '400052':
+            description: The processing_mode is required.
+          '400053':
+            description: Invalid content.
+          '400054':
+            description: The Marketplace does not have permissions on the collector.
+          '400055':
+            description: The field external_reference is required.
+          '400056':
+            description: The field money_release_days is invalid.
+          '400057':
+            description: The fields collector_id and external_reference are duplicated.
+          '400058':
+            description: Invalid idempodency key.
+        '401':
+          '401000':
+            description: Invalid access token.
+          '401002':
+            description: Invalid access token.
+          '401003':
+            description: Invalid device token.
+        '404':
+          '404001':
+            description: The Disbursement was not found.
+          '404002':
+            description: The Advanced Payment was not found.
+          '404003':
+            description: The Payer was not found.
+        '406':
+          '406001':
+            description: Error in the payments API.
