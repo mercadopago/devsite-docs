@@ -384,7 +384,7 @@ paths:
                 items:
                   properties:
                     id:
-                      type: Long
+                      type: number
                       description: Advanced Payment Identifier.
         '400':
           '400004':
@@ -517,7 +517,7 @@ paths:
       requestBody:
         properties:
           id:
-            type: Long
+            type: number
             description: Advanced Payment Identifier.
           status:
             type: string
@@ -798,7 +798,7 @@ paths:
       requestBody:
         properties:
           id:
-            type: Long
+            type: number
             description: Advanced Payment Identifier.
       responses:
         '400':
@@ -920,7 +920,7 @@ paths:
       requestBody:
         properties:
           id:
-            type: Long
+            type: number
             description: Advanced Payment Identifier.
       responses:
         '400':
@@ -1042,7 +1042,7 @@ paths:
       requestBody:
         properties:
           id:
-            type: Long
+            type: number
             description: Advanced Payment Identifier.
       responses:
         '400':
@@ -1164,7 +1164,7 @@ paths:
       requestBody:
         properties:
           id:
-            type: Long
+            type: number
             description: Advanced Payment Identifier.
       responses:
         '400':

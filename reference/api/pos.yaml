@@ -17,7 +17,7 @@ paths:
               Define if the customer can insert the amount to be paid.
               (Required)
           category:
-            type: Long
+            type: number
             description: >-
               MCC code that indicates the category of the Point of Sale. If not
               specified, it remains as a generic category.
@@ -105,7 +105,7 @@ paths:
                 items:
                   properties:
                     category:
-                      type: Long
+                      type: number
                       description: >-
                         MCC code that indicates the category of the Point of
                         Sale. If not specified, it remains as a generic
@@ -209,7 +209,7 @@ paths:
               Define if the customer can insert the amount to be paid.
               (Required)
           category:
-            type: Long
+            type: number
             description: >-
               MCC code that indicates the category of the Point of Sale. If not
               specified, it remains as a generic category.

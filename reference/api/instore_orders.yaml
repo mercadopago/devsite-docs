@@ -56,10 +56,10 @@ paths:
                 type: string
                 description: Currency identifier in ISO_4217 format. (Required)
               unit_price:
-                type: Float
+                type: number
                 description: Unit price of the item (maximum 2 decimals).  (Required)
               quantity:
-                type: Integer
+                type: number
                 description: Item quantity. (Required)
               description:
                 type: string

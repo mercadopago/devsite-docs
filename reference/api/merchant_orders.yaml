@@ -21,14 +21,14 @@ paths:
             type: string
             description: URL where you'd like to receive a payment notification.
           sponsor_id:
-            type: Integer
+            type: number
             description: Sponsor ID in Mercado Pago.
           payer:
             type: Object
             description: Buyer Information.
             properties:
               id:
-                type: Integer
+                type: number
                 description: Buyer id.
               email:
                 type: string
@@ -61,10 +61,10 @@ paths:
                   type: string
                   description: Item picture URL.
                 quantity:
-                  type: Integer
+                  type: number
                   description: Item quantity.
                 unit_price:
-                  type: Float
+                  type: number
                   description: Item unit price.
                 title:
                   type: string
@@ -255,7 +255,7 @@ paths:
                       type: Date(ISO_8601)
                       description: Order's last update date.
                     sponsor_id:
-                      type: Integer
+                      type: number
                       description: Sponsor ID in Mercado Pago.
                     site_id:
                       type: string
@@ -265,7 +265,7 @@ paths:
                       description: Buyer Information.
                       properties:
                         id:
-                          type: Integer
+                          type: number
                           description: Buyer id.
                         email:
                           type: string
@@ -295,10 +295,10 @@ paths:
                             type: string
                             description: Item picture URL.
                           quantity:
-                            type: Integer
+                            type: number
                             description: Item quantity.
                           unit_price:
-                            type: Float
+                            type: number
                             description: Item unit price.
                           title:
                             type: string
@@ -330,7 +330,7 @@ paths:
           description: Order identifier
           required: true
           schema:
-            type: Integer
+            type: number
             example: 123123123
       responses:
         '200':
@@ -340,7 +340,7 @@ paths:
                 items:
                   properties:
                     id:
-                      type: Integer
+                      type: number
                       description: Order identifier.
         '400':
           invalid_format:
@@ -362,7 +362,7 @@ paths:
           description: Order identifier
           required: true
           schema:
-            type: Integer
+            type: number
             example: 123123123
       requestBody:
         properties:
@@ -379,7 +379,7 @@ paths:
               type: object
               properties:
                 id:
-                  type: Integer
+                  type: number
                   description: Shipping identifier.
                 shipment_type:
                   type: string
@@ -414,17 +414,17 @@ paths:
                   type: string
                   description: Shipping service identifier.
                 sender_id:
-                  type: Integer
+                  type: number
                   description: Sender identifier.
                 receiver_id:
-                  type: Integer
+                  type: number
                   description: Receiver identifier.
                 receiver_address:
                   type: Object
                   description: Shipping address.
                   properties:
                     id:
-                      type: Integer
+                      type: number
                       description: Identifier of receiver address.
                     address_line:
                       type: string
@@ -494,7 +494,7 @@ paths:
                   description: Shipping options.
                   properties:
                     cost:
-                      type: Float
+                      type: number
                       description: Net cost absorbed by the receiver.
                     currency_id:
                       type: string
@@ -513,26 +513,26 @@ paths:
                           type: string
                           description: Estimated upper delivery time.
                     id:
-                      type: Integer
+                      type: number
                       description: Shipping option identifier.
                     list_cost:
-                      type: Float
+                      type: number
                       description: Net cost of the shipping.
                     name:
                       type: string
                       description: Option name.
                     shipping_method_id:
-                      type: Integer
+                      type: number
                       description: Shipping method identifier.
                     speed:
                       type: Object
                       description: Shipping time information.
                       properties:
                         handling:
-                          type: Integer
+                          type: number
                           description: Handling time.
                         shipping:
-                          type: Integer
+                          type: number
                           description: Shipping time.
           marketplace:
             type: string
@@ -541,7 +541,7 @@ paths:
             type: string
             description: URL where you'd like to receive a payment notification.
           sponsor_id:
-            type: Integer
+            type: number
             description: Sponsor ID in Mercado Pago.
           site_id:
             type: string
@@ -551,7 +551,7 @@ paths:
             description: Buyer Information.
             properties:
               id:
-                type: Integer
+                type: number
                 description: Buyer id.
               email:
                 type: string
@@ -581,10 +581,10 @@ paths:
                   type: string
                   description: Item picture URL.
                 quantity:
-                  type: Integer
+                  type: number
                   description: Item quantity.
                 unit_price:
-                  type: Float
+                  type: number
                   description: Item unit price.
                 title:
                   type: string

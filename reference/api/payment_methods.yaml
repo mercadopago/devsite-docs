@@ -109,7 +109,7 @@ paths:
                       description: Finantial institution processing this payment method.
                       properties:
                         id:
-                          type: Integer
+                          type: number
                           description: >-
                             External financial institution identifier (e.g.:
                             company id for atm)

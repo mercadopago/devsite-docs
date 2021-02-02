@@ -34,7 +34,7 @@ paths:
                   example: cat123
                   description: Item category ID.
                 quantity:
-                  type: Integer
+                  type: number
                   example: 1
                   description: Item quantity.
                 currency_id:
@@ -42,7 +42,7 @@ paths:
                   example: U$
                   description: Currency ID. ISO_4217 code.
                 unit_price:
-                  type: Float
+                  type: number
                   example: 10.0
                   description: Unit price.
           payer:
@@ -89,7 +89,7 @@ paths:
                     type: string
                     description: Street name.
                   street_number:
-                    type: Integer
+                    type: number
                     description: Street number.
               date_created:
                 type: Date(ISO_8601)
@@ -122,10 +122,10 @@ paths:
                 type: string
                 description: Payment method to be preferred on the payments methods list.
               installments:
-                type: Integer
+                type: number
                 description: Maximum number of credit card installments to be accepted.
               default_installments:
-                type: Integer
+                type: number
                 description: Prefered number of credit card installments.
           shipments:
             type: Object
@@ -143,7 +143,7 @@ paths:
                 type: string
                 description: Dimensions of the shipment in cm x cm x cm, gr (mode:me2 only)
               default_shipping_method:
-                type: Integer
+                type: number
                 description: Select default shipping method in checkout (mode:me2 only).
               free_methods:
                 type: array
@@ -152,10 +152,10 @@ paths:
                   type: object
                   properties:
                     id:
-                      type: Integer
+                      type: number
                       description: Shipping method ID.
               cost:
-                type: Float
+                type: number
                 description: Shipment cost (mode:custom only).
               free_shipping:
                 type: Boolean
@@ -177,7 +177,7 @@ paths:
                     type: string
                     description: State name.
                   street_number:
-                    type: Integer
+                    type: number
                     description: Street number.
                   floor:
                     type: string
@@ -231,7 +231,7 @@ paths:
             type: string
             description: 'Origin of the payment. Default value: NONE'
           marketplace_fee:
-            type: Float
+            type: number
             description: >-
               Marketplace's fee charged by application owner. Default value: 0
               in local currency
@@ -240,7 +240,7 @@ paths:
             description: Differential pricing configuration for this preference.
             properties:
               id:
-                type: Integer
+                type: number
                 description: Differential pricing ID.
           tracks:
             type: array
@@ -371,7 +371,7 @@ paths:
                             example: 6295877106812064
                             description: Application owner ID that use Mercado Libre API.
                           collector_id:
-                            type: Integer
+                            type: number
                             example: 202809963
                             description: Your Mercado Pago seller ID.
                           date_created:
@@ -418,13 +418,13 @@ paths:
                                   type: string
                                   description: Item category ID.
                                 quantity:
-                                  type: Integer
+                                  type: number
                                   description: Item quantity.
                                 currency_id:
                                   type: string
                                   description: Currency ID. ISO_4217 code.
                                 unit_price:
-                                  type: Float
+                                  type: number
                                   description: Unit price.
                           marketplace:
                             type: string
@@ -492,7 +492,7 @@ paths:
                             example: cat123
                             description: Item category ID.
                           quantity:
-                            type: Integer
+                            type: number
                             example: 1
                             description: Item quantity.
                           currency_id:
@@ -500,7 +500,7 @@ paths:
                             example: U$
                             description: Currency ID. ISO_4217 code.
                           unit_price:
-                            type: Float
+                            type: number
                             example: 10.0
                             description: Unit price.
         '400':
@@ -573,7 +573,7 @@ paths:
                   example: cat123
                   description: Item category ID.
                 quantity:
-                  type: Integer
+                  type: number
                   example: 1
                   description: Item quantity.
                 currency_id:
@@ -581,7 +581,7 @@ paths:
                   example: U$
                   description: Currency ID. ISO_4217 code.
                 unit_price:
-                  type: Float
+                  type: number
                   example: 10.0
                   description: Unit price.
           payer:
@@ -628,7 +628,7 @@ paths:
                     type: string
                     description: Street name.
                   street_number:
-                    type: Integer
+                    type: number
                     description: Street number.
               date_created:
                 type: Date(ISO_8601)
@@ -661,10 +661,10 @@ paths:
                 type: string
                 description: Payment method to be preferred on the payments methods list.
               installments:
-                type: Integer
+                type: number
                 description: Maximum number of credit card installments to be accepted.
               default_installments:
-                type: Integer
+                type: number
                 description: Prefered number of credit card installments.
           shipments:
             type: Object
@@ -682,7 +682,7 @@ paths:
                 type: string
                 description: Dimensions of the shipment in cm x cm x cm, gr (mode:me2 only)
               default_shipping_method:
-                type: Integer
+                type: number
                 description: Select default shipping method in checkout (mode:me2 only).
               free_methods:
                 type: array
@@ -691,10 +691,10 @@ paths:
                   type: object
                   properties:
                     id:
-                      type: Integer
+                      type: number
                       description: Shipping method ID.
               cost:
-                type: Float
+                type: number
                 description: Shipment cost (mode:custom only).
               free_shipping:
                 type: Boolean
@@ -716,7 +716,7 @@ paths:
                     type: string
                     description: State name.
                   street_number:
-                    type: Integer
+                    type: number
                     description: Street number.
                   floor:
                     type: string
@@ -767,7 +767,7 @@ paths:
             type: string
             description: 'Origin of the payment. Default value: NONE'
           marketplace_fee:
-            type: Float
+            type: number
             description: >-
               Marketplace's fee charged by application owner. Default value: 0
               in local currency
@@ -776,7 +776,7 @@ paths:
             description: Differential pricing configuration for this preference.
             properties:
               id:
-                type: Integer
+                type: number
                 description: Differential pricing ID.
       responses:
         '400':

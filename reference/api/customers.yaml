@@ -290,10 +290,10 @@ paths:
                           type: string
                           description: Customer ID.
                         expiration_month:
-                          type: Integer
+                          type: number
                           description: Card's expiration month.
                         expiration_year:
-                          type: Integer
+                          type: number
                           description: Card's expiration year.
                         first_six_digits:
                           type: string
@@ -325,7 +325,7 @@ paths:
                           description: Security code information.
                           properties:
                             length:
-                              type: Integer
+                              type: number
                               description: Security code's length.
                             card_location:
                               type: string
@@ -335,7 +335,7 @@ paths:
                           description: Issuer information.
                           properties:
                             id:
-                              type: Integer
+                              type: number
                               description: Issuer Id.
                             name:
                               type: string
@@ -345,14 +345,14 @@ paths:
                           description: Card holder information.
                           properties:
                             name:
-                              type: Integer
+                              type: number
                               description: Card holder name.
                             identification:
-                              type: Integer
+                              type: number
                               description: Identification information.
                               properties:
                                 number:
-                                  type: Integer
+                                  type: number
                                   description: Identification number.
                                 subtype:
                                   type: string

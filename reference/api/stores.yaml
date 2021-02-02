@@ -69,7 +69,7 @@ paths:
                 type: string
                 description: Zip code.
               street_number:
-                type: Integer
+                type: number
                 description: Number. (Required)
               street_name:
                 type: string
@@ -211,7 +211,7 @@ paths:
                 type: string
                 description: Zip code.
               street_number:
-                type: Integer
+                type: number
                 description: Number. (Required)
               street_name:
                 type: string

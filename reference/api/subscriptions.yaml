@@ -13,7 +13,7 @@ paths:
             description: Recurring data.
             properties:
               frequency:
-                type: Integer
+                type: number
                 description: Recurring frecuency.
               frequency_type:
                 type: string
