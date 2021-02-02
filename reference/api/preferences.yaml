@@ -9,40 +9,42 @@ paths:
       requestBody:
         properties:
           items:
-            type: Array(Object)
+            type: array
             description: Items information.
-            properties:
-              id:
-                type: String(256)
-                description: Item ID.
-              title:
-                type: String(256)
-                example: Dummy Title
-                description: Item title. It will be displayed in the payment process.
-              description:
-                type: String(256)
-                example: Dummy description
-                description: Item description.
-              picture_url:
-                type: String(600)
-                example: http://www.myapp.com/myimage.jpg
-                description: Item image URL.
-              category_id:
-                type: String(256)
-                example: cat123
-                description: Item category ID.
-              quantity:
-                type: Integer
-                example: 1
-                description: Item quantity.
-              currency_id:
-                type: String(3)
-                example: U$
-                description: Currency ID. ISO_4217 code.
-              unit_price:
-                type: Float
-                example: 10.0
-                description: Unit price.
+            items:
+              type: object
+              properties:
+                id:
+                  type: String(256)
+                  description: Item ID.
+                title:
+                  type: String(256)
+                  example: Dummy Title
+                  description: Item title. It will be displayed in the payment process.
+                description:
+                  type: String(256)
+                  example: Dummy description
+                  description: Item description.
+                picture_url:
+                  type: String(600)
+                  example: http://www.myapp.com/myimage.jpg
+                  description: Item image URL.
+                category_id:
+                  type: String(256)
+                  example: cat123
+                  description: Item category ID.
+                quantity:
+                  type: Integer
+                  example: 1
+                  description: Item quantity.
+                currency_id:
+                  type: String(3)
+                  example: U$
+                  description: Currency ID. ISO_4217 code.
+                unit_price:
+                  type: Float
+                  example: 10.0
+                  description: Unit price.
           payer:
             type: Object
             description: Buyer Information.
@@ -97,21 +99,25 @@ paths:
             description: Set up payment methods to be excluded from the payment process.
             properties:
               excluded_payment_methods:
-                type: Array(Object)
+                type: array
                 description: >-
                   Payment methods not allowed in payment process (except
                   account_money).
-                properties:
-                  id:
-                    type: String(256)
-                    description: Payment method ID.
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: String(256)
+                      description: Payment method ID.
               excluded_payment_types:
-                type: Array(Object)
+                type: array
                 description: Payment types not allowed in payment process.
-                properties:
-                  id:
-                    type: String(256)
-                    description: Payment method data_type ID.
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: String(256)
+                      description: Payment method data_type ID.
               default_payment_method_id:
                 type: String(256)
                 description: Payment method to be preferred on the payments methods list.
@@ -140,12 +146,14 @@ paths:
                 type: Integer
                 description: Select default shipping method in checkout (mode:me2 only).
               free_methods:
-                type: Array(Object)
+                type: array
                 description: Offer a shipping method as free shipping (mode:me2 only).
-                properties:
-                  id:
-                    type: Integer
-                    description: Shipping method ID.
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: Integer
+                      description: Shipping method ID.
               cost:
                 type: Float
                 description: Shipment cost (mode:custom only).
@@ -235,17 +243,19 @@ paths:
                 type: Integer
                 description: Differential pricing ID.
           tracks:
-            type: Array (Object)
+            type: array
             description: >-
               Tracks to be executed during the users's interaction in the
               Checkout flow.
-            properties:
-              type:
-                type: String
-                description: Track type. Specifies which tool the values belong to.
-              values:
-                type: Map
-                description: Configuration values according the track type.
+            items:
+              type: object
+              properties:
+                type:
+                  type: string
+                  description: Track type. Specifies which tool the values belong to.
+                values:
+                  type: string
+                  description: Configuration values according the track type.
       responses:
         '400':
           collector_does_not_comply_with_current_regulation:
@@ -351,74 +361,78 @@ paths:
                 items:
                   properties:
                     elements:
-                      type: Array
+                      type: array
                       description: A list of preferences
-                      properties: 
-                        client_id:
-                          type: String
-                          example: 6295877106812064
-                          description: Application owner ID that use Mercado Libre API.
-                        collector_id:
-                          type: Integer
-                          example: 202809963
-                          description: Your Mercado Pago seller ID.
-                        date_created:
-                          type: Date(ISO_8601)
-                          example: '2018-02-02T15:18:51.150-04:00'
-                          description: Preference's creation date.
-                        expiration_date_from:
-                          type: Date(ISO_8601)
-                          description: Date since the preference will be active.
-                        expiration_date_to:
-                          type: Date(ISO_8601)
-                          description: Date when the preference will be expired.
-                        expires:
-                          type: Boolean
-                          description: Boolean value that determines if a preference expire.
-                        date_of_expiration:
-                          type: Date(ISO_8601)
-                          description: Expiration date of cash payment.
-                        external_reference:
-                          type: String(256)
-                          description: Reference you can synchronize with your payment system.
-                        items:
-                          type: Array(Object)
-                          description: Items information.
-                          properties:
-                            id:
-                              type: String(256)
-                              description: Item ID.
-                            title:
-                              type: String(256)
-                              example: Dummy Item
-                              description: >-
-                                Item title. It will be displayed in the payment
-                                process.
-                            description:
-                              type: String(256)
-                              description: Item description.
-                            picture_url:
-                              type: String(600)
-                              description: Item image URL.
-                            category_id:
-                              type: String(256)
-                              description: Item category ID.
-                            quantity:
-                              type: Integer
-                              description: Item quantity.
-                            currency_id:
-                              type: String(3)
-                              description: Currency ID. ISO_4217 code.
-                            unit_price:
-                              type: Float
-                              description: Unit price.
-                        marketplace:
-                          type: String(256)
-                          description: 'Origin of the payment. Default value: NONE'
-                        operation_type:
-                          type: String
-                          example: regular_payment
-                          description: Operation data_type.
+                      items:
+                        type: object
+                        properties: 
+                          client_id:
+                            type: String
+                            example: 6295877106812064
+                            description: Application owner ID that use Mercado Libre API.
+                          collector_id:
+                            type: Integer
+                            example: 202809963
+                            description: Your Mercado Pago seller ID.
+                          date_created:
+                            type: Date(ISO_8601)
+                            example: '2018-02-02T15:18:51.150-04:00'
+                            description: Preference's creation date.
+                          expiration_date_from:
+                            type: Date(ISO_8601)
+                            description: Date since the preference will be active.
+                          expiration_date_to:
+                            type: Date(ISO_8601)
+                            description: Date when the preference will be expired.
+                          expires:
+                            type: Boolean
+                            description: Boolean value that determines if a preference expire.
+                          date_of_expiration:
+                            type: Date(ISO_8601)
+                            description: Expiration date of cash payment.
+                          external_reference:
+                            type: String(256)
+                            description: Reference you can synchronize with your payment system.
+                          items:
+                            type: array
+                            description: Items information.
+                            items:
+                              type: object
+                              properties:
+                                id:
+                                  type: String(256)
+                                  description: Item ID.
+                                title:
+                                  type: String(256)
+                                  example: Dummy Item
+                                  description: >-
+                                    Item title. It will be displayed in the payment
+                                    process.
+                                description:
+                                  type: String(256)
+                                  description: Item description.
+                                picture_url:
+                                  type: String(600)
+                                  description: Item image URL.
+                                category_id:
+                                  type: String(256)
+                                  description: Item category ID.
+                                quantity:
+                                  type: Integer
+                                  description: Item quantity.
+                                currency_id:
+                                  type: String(3)
+                                  description: Currency ID. ISO_4217 code.
+                                unit_price:
+                                  type: Float
+                                  description: Unit price.
+                          marketplace:
+                            type: String(256)
+                            description: 'Origin of the payment. Default value: NONE'
+                          operation_type:
+                            type: String
+                            example: regular_payment
+                            description: Operation data_type.
         '400':
           ds_search_query:
             description: invalid query.
@@ -452,41 +466,43 @@ paths:
                       example: 202809963-a2201f8d-11cb-443f-adf6-de5a42eed67d
                       description: Preference ID.
                     items:
-                      type: Array(Object)
+                      type: array
                       description: Items information.
-                      properties:
-                        id:
-                          type: String(256)
-                          example: 202809963-a2201f8d-11cb-443f-adf6-de5a42eed67d
-                          description: Item ID.
-                        title:
-                          type: String(256)
-                          example: Dummy Title
-                          description: Item title. It will be displayed in the payment process.
-                        description:
-                          type: String(256)
-                          example: Dummy description
-                          description: Item description.
-                        picture_url:
-                          type: String(600)
-                          example: http://www.myapp.com/myimage.jpg
-                          description: Item image URL.
-                        category_id:
-                          type: String(256)
-                          example: cat123
-                          description: Item category ID.
-                        quantity:
-                          type: Integer
-                          example: 1
-                          description: Item quantity.
-                        currency_id:
-                          type: String(3)
-                          example: U$
-                          description: Currency ID. ISO_4217 code.
-                        unit_price:
-                          type: Float
-                          example: 10.0
-                          description: Unit price.
+                      items:
+                        type: object
+                        properties:
+                          id:
+                            type: String(256)
+                            example: 202809963-a2201f8d-11cb-443f-adf6-de5a42eed67d
+                            description: Item ID.
+                          title:
+                            type: String(256)
+                            example: Dummy Title
+                            description: Item title. It will be displayed in the payment process.
+                          description:
+                            type: String(256)
+                            example: Dummy description
+                            description: Item description.
+                          picture_url:
+                            type: String(600)
+                            example: http://www.myapp.com/myimage.jpg
+                            description: Item image URL.
+                          category_id:
+                            type: String(256)
+                            example: cat123
+                            description: Item category ID.
+                          quantity:
+                            type: Integer
+                            example: 1
+                            description: Item quantity.
+                          currency_id:
+                            type: String(3)
+                            example: U$
+                            description: Currency ID. ISO_4217 code.
+                          unit_price:
+                            type: Float
+                            example: 10.0
+                            description: Unit price.
         '400':
           invalid_collector_id:
             description: collector_id invalid.
@@ -531,41 +547,43 @@ paths:
       requestBody:
         properties:
           items:
-            type: Array(Object)
+            type: array
             description: Items information.
-            properties:
-              id:
-                type: String(256)
-                example: 202809963-a2201f8d-11cb-443f-adf6-de5a42eed67d
-                description: Item ID.
-              title:
-                type: String(256)
-                example: Dummy Title
-                description: Item title. It will be displayed in the payment process.
-              description:
-                type: String(256)
-                example: Dummy Description
-                description: Item description.
-              picture_url:
-                type: String(600)
-                example: http://www.myapp.com/myimage.jpg
-                description: Item image URL.
-              category_id:
-                type: String(256)
-                example: cat123
-                description: Item category ID.
-              quantity:
-                type: Integer
-                example: 1
-                description: Item quantity.
-              currency_id:
-                type: String(3)
-                example: U$
-                description: Currency ID. ISO_4217 code.
-              unit_price:
-                type: Float
-                example: 10.0
-                description: Unit price.
+            items:
+              type: object
+              properties:
+                id:
+                  type: String(256)
+                  example: 202809963-a2201f8d-11cb-443f-adf6-de5a42eed67d
+                  description: Item ID.
+                title:
+                  type: String(256)
+                  example: Dummy Title
+                  description: Item title. It will be displayed in the payment process.
+                description:
+                  type: String(256)
+                  example: Dummy Description
+                  description: Item description.
+                picture_url:
+                  type: String(600)
+                  example: http://www.myapp.com/myimage.jpg
+                  description: Item image URL.
+                category_id:
+                  type: String(256)
+                  example: cat123
+                  description: Item category ID.
+                quantity:
+                  type: Integer
+                  example: 1
+                  description: Item quantity.
+                currency_id:
+                  type: String(3)
+                  example: U$
+                  description: Currency ID. ISO_4217 code.
+                unit_price:
+                  type: Float
+                  example: 10.0
+                  description: Unit price.
           payer:
             type: Object
             description: Buyer Information.
@@ -620,21 +638,25 @@ paths:
             description: Set up payment methods to be excluded from the payment process.
             properties:
               excluded_payment_methods:
-                type: Array(Object)
+                type: array
                 description: >-
                   Payment methods not allowed in payment process (except
                   account_money).
-                properties:
-                  id:
-                    type: String(256)
-                    description: Payment method ID.
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: String(256)
+                      description: Payment method ID.
               excluded_payment_types:
-                type: Array(Object)
+                type: array
                 description: Payment types not allowed in payment process.
-                properties:
-                  id:
-                    type: String(256)
-                    description: Payment method data_type ID.
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: String(256)
+                      description: Payment method data_type ID.
               default_payment_method_id:
                 type: String(256)
                 description: Payment method to be preferred on the payments methods list.
@@ -663,12 +685,14 @@ paths:
                 type: Integer
                 description: Select default shipping method in checkout (mode:me2 only).
               free_methods:
-                type: Array(Object)
+                type: array
                 description: Offer a shipping method as free shipping (mode:me2 only).
-                properties:
-                  id:
-                    type: Integer
-                    description: Shipping method ID.
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: Integer
+                      description: Shipping method ID.
               cost:
                 type: Float
                 description: Shipment cost (mode:custom only).

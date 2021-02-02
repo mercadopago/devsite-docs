@@ -9,236 +9,242 @@ paths:
       requestBody:
         properties:
           payer:
-            type: Object
+            type: object
             description: payer identifier.
             properties:
               id:
-                type: String
+                type: string
                 description: Identification of the associated payer.
               email:
-                type: String
+                type: string
                 description: Payer’s email address.
               type:
-                type: String
+                type: string
                 description: >-
                   Type of identification of the associated payer (required if
                   the payer is a customer).
               identification:
-                type: Object
+                type: object
                 description: Personal identification.
                 properties:
                   type:
-                    type: String
+                    type: string
                     description: Identification type.
                   number:
-                    type: String
+                    type: string
                     description: Identification number.
               address:
-                type: Object
+                type: object
                 description: Address.
                 properties:
                   zip_code:
-                    type: String
+                    type: string
                     description: Zip Code.
                   street_name:
-                    type: String
+                    type: string
                     description: Street name.
                   street_number:
-                    type: Integer
+                    type: number
                     description: Number.
               phone:
-                type: Object
+                type: object
                 description: Phone number of the associated payer.
                 properties:
                   area_code:
-                    type: String
+                    type: string
                     description: Area Code.
                   number:
-                    type: String
+                    type: string
                     description: Phone number.
                   extension:
-                    type: String
+                    type: string
                     description: Phone number extension.
               first_name:
-                type: String
+                type: string
                 description: Name of the associated payer.
               last_name:
-                type: String
+                type: string
                 description: Last name od the associated payer.
           payments:
-            type: Array(Object)
+            type: array
             description: List of payments made by the buyer.
-            properties:
-              id:
-                type: Number
-                description: Payment identification.
-              status:
-                type: String
-                description: Payment status.
-              status_detail:
-                type: String
-                description: Payment status details.
-              payment_type_id:
-                type: String
-                description: Selected payment method type.
-              payment_method_id:
-                type: String
-                description: Payment method selected to make the payment.
-              token:
-                type: String
-                description: Token card identifier.
-              transaction_amount:
-                type: Float
-                description: Product cost.
-              installments:
-                type: Integer
-                description: Number of installments selected.
-              processing_mode:
-                type: String
-                description: Method of processing the payments (aggregator by default).
-              issuer_id:
-                type: String
-                description: Identifier of the issuer of the payment method.
-              description:
-                type: String
-                description: Reason for payment.
-              capture:
-                type: Boolean
-                description: >-
-                  Determines whether the payment should be captured (true,
-                  default value) or only reserved (false).
-              external_reference:
-                type: String
-                description: Identifier provided by the seller in their system.
-              statement_descriptor:
-                type: String
-                description: How the payment will appear in the card statement.
-              date_of_expiration:
-                type: String
-                description: Expiration date for the case of payment method "ticket".
-              transaction_details:
-                type: Object
-                description: Group the transaction details.
-                properties:
-                  external_resource_url:
-                    type: String
-                    description: Identify the resource in the payment processor.
+            items:
+              type: object
+              properties:
+                id:
+                  type: Number
+                  description: Payment identification.
+                status:
+                  type: string
+                  description: Payment status.
+                status_detail:
+                  type: string
+                  description: Payment status details.
+                payment_type_id:
+                  type: string
+                  description: Selected payment method type.
+                payment_method_id:
+                  type: string
+                  description: Payment method selected to make the payment.
+                token:
+                  type: string
+                  description: Token card identifier.
+                transaction_amount:
+                  type: number
+                  description: Product cost.
+                installments:
+                  type: number
+                  description: Number of installments selected.
+                processing_mode:
+                  type: string
+                  description: Method of processing the payments (aggregator by default).
+                issuer_id:
+                  type: string
+                  description: Identifier of the issuer of the payment method.
+                description:
+                  type: string
+                  description: Reason for payment.
+                capture:
+                  type: Boolean
+                  description: >-
+                    Determines whether the payment should be captured (true,
+                    default value) or only reserved (false).
+                external_reference:
+                  type: string
+                  description: Identifier provided by the seller in their system.
+                statement_descriptor:
+                  type: string
+                  description: How the payment will appear in the card statement.
+                date_of_expiration:
+                  type: string
+                  description: Expiration date for the case of payment method "ticket".
+                transaction_details:
+                  type: object
+                  description: Group the transaction details.
+                  properties:
+                    external_resource_url:
+                      type: string
+                      description: Identify the resource in the payment processor.
           disbursements:
-            type: Array(Object)
+            type: array
             description: List of payments that correspond to each Seller.
-            properties:
-              id:
-                type: Number
-                description: Payment identifier.
-              amount:
-                type: Float
-                description: Payment amount.
-              external_reference:
-                type: String
-                description: Identifier provided by the seller in their system.
-              collector_id:
-                type: Integer
-                description: Seller identifier.
-              application_fee:
-                type: Float
-                description: Commission collected by the Marketplace.
-              money_release_days:
-                type: Float
-                description: >-
-                  Number of days (from the date of approval of the payment) in
-                  which the payment will be released to the Seller.
+            items: 
+              type: object
+              properties:
+                id:
+                  type: Number
+                  description: Payment identifier.
+                amount:
+                  type: number
+                  description: Payment amount.
+                external_reference:
+                  type: string
+                  description: Identifier provided by the seller in their system.
+                collector_id:
+                  type: number
+                  description: Seller identifier.
+                application_fee:
+                  type: number
+                  description: Commission collected by the Marketplace.
+                money_release_days:
+                  type: number
+                  description: >-
+                    Number of days (from the date of approval of the payment) in
+                    which the payment will be released to the Seller.
           binary_mode:
             type: Boolean
             description: >-
               When the payment is activated, it can only be approved or
               rejected. Otherwise, the payment may be pending.
           metadata:
-            type: Object
+            type: object
             description: >-
               Valid JSON that can be added to the payment to save additional
               attributes.
           application_id:
-            type: Object
+            type: object
             description: Marketplace ID.
           additional_info:
-            type: Object
+            type: object
             description: >-
               Information that can improve the fraud prevention analysis and the
               conversion rate. Try sending us as much information as possible.
             properties:
               ip_address:
-                type: String
+                type: string
                 description: IP from which the request comes (only for bank transfer)
               items:
-                type: Array(Object)
+                type: array
                 description: List of items to pay.
-                properties:
-                  id:
-                    type: String
-                    description: Item code.
-                  title:
-                    type: String
-                    description: Item name.
-                  description:
-                    type: String
-                    description: Item description.
-                  picture_url:
-                    type: String
-                    description: Image URL.
-                  category_id:
-                    type: String
-                    description: Item category.
-                  quantity:
-                    type: Integer
-                    description: Number of items.
-                  unit_price:
-                    type: Float
-                    description: Unit price.
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                      description: Item code.
+                    title:
+                      type: string
+                      description: Item name.
+                    description:
+                      type: string
+                      description: Item description.
+                    picture_url:
+                      type: string
+                      description: Image URL.
+                    category_id:
+                      type: string
+                      description: Item category.
+                    quantity:
+                      type: number
+                      description: Number of items.
+                    unit_price:
+                      type: number
+                      description: Unit price.
               payer:
-                type: Object
+                type: object
                 description: Buyer’s information.
                 properties:
                   first_name:
-                    type: String
+                    type: string
                     description: Buyer’s name.
                   last_name:
-                    type: String
+                    type: string
                     description: Buyer’s last name.
                   phone:
-                    type: Object
+                    type: object
                     description: Buyer’s phone number.
                     properties:
                       area_code:
-                        type: String
+                        type: string
                         description: Area Code.
                       number:
-                        type: String
+                        type: string
                         description: Phone number.
                   registration_date:
                     type: Date
                     description: Date of registration of the buyer on your website.
               shipments:
-                type: Object
+                type: object
                 description: Shipping information.
                 properties:
                   receiver_address:
-                    type: Object
+                    type: object
                     description: Buyer’s address.
                     properties:
                       zip_code:
-                        type: String
+                        type: string
                         description: Zip Code.
                       street_name:
-                        type: String
+                        type: string
                         description: Street name.
                       street_number:
-                        type: Integer
+                        type: number
                         description: Number.
                       floor:
-                        type: String
+                        type: string
                         description: Floor
                       apartment:
-                        type: String
+                        type: string
                         description: Unit.
       responses:
         '400':
@@ -514,7 +520,7 @@ paths:
             type: Long
             description: Advanced Payment Identifier.
           status:
-            type: String
+            type: string
             description: Advanced Payment status.
       responses:
         '400':
@@ -671,7 +677,7 @@ paths:
                       type: Date(ISO_8601)
                       description: Date of creation of the payment.
                     status:
-                      type: String
+                      type: string
                       description: Advanced Payment status.
         '400':
           '400004':

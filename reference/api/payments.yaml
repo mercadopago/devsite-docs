@@ -20,30 +20,32 @@ paths:
                   IP from where the request comes from (only for bank
                   transfers).
               items:
-                type: Array(Object)
+                type: array
                 description: List of items to be paid.
-                properties:
-                  id:
-                    type: String
-                    description: Item code.
-                  title:
-                    type: String
-                    description: Item name.
-                  description:
-                    type: String
-                    description: Long item description.
-                  picture_url:
-                    type: String
-                    description: Image URL.
-                  category_id:
-                    type: String
-                    description: Category of the item.
-                  quantity:
-                    type: Integer
-                    description: Item's quantity.
-                  unit_price:
-                    type: Float
-                    description: Unit price.
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: String
+                      description: Item code.
+                    title:
+                      type: String
+                      description: Item name.
+                    description:
+                      type: String
+                      description: Long item description.
+                    picture_url:
+                      type: String
+                      description: Image URL.
+                    category_id:
+                      type: String
+                      description: Category of the item.
+                    quantity:
+                      type: Integer
+                      description: Item's quantity.
+                    unit_price:
+                      type: Float
+                      description: Unit price.
               payer:
                 type: Object
                 description: Buyer's information.
@@ -569,30 +571,32 @@ paths:
                   IP from where the request comes from (only for bank
                   transfers).
               items:
-                type: Array(Object)
+                type: array
                 description: List of items to be paid.
-                properties:
-                  id:
-                    type: String
-                    description: Item code.
-                  title:
-                    type: String
-                    description: Item name.
-                  description:
-                    type: String
-                    description: Long item description.
-                  picture_url:
-                    type: String
-                    description: Image URL.
-                  category_id:
-                    type: String
-                    description: Category of the item.
-                  quantity:
-                    type: Integer
-                    description: Item's quantity.
-                  unit_price:
-                    type: Float
-                    description: Unit price.
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: String
+                      description: Item code.
+                    title:
+                      type: String
+                      description: Item name.
+                    description:
+                      type: String
+                      description: Long item description.
+                    picture_url:
+                      type: String
+                      description: Image URL.
+                    category_id:
+                      type: String
+                      description: Category of the item.
+                    quantity:
+                      type: Integer
+                      description: Item's quantity.
+                    unit_price:
+                      type: Float
+                      description: Unit price.
               payer:
                 type: Object
                 description: Buyer's information.
@@ -1071,18 +1075,20 @@ paths:
                             payment methods, is the reference to give to the
                             cashier or to input into the ATM.
                     fee_details:
-                      type: Array(Object)
+                      type: array
                       description: List of fees.
-                      properties:
-                        type:
-                          type: String
-                          description: Fee detail.
-                        fee_payer:
-                          type: String
-                          description: Who absorbs the cost.
-                        amount:
-                          type: Float
-                          description: Fee amount.
+                      items:
+                        type: object
+                        properties:
+                          type:
+                            type: String
+                            description: Fee detail.
+                          fee_payer:
+                            type: String
+                            description: Who absorbs the cost.
+                          amount:
+                            type: Float
+                            description: Fee amount.
                     status:
                       type: String
                       description: Payment status.
@@ -1166,42 +1172,44 @@ paths:
                         URL where Mercado Pago will send notifications
                         associated to changes in this payment
                     refunds:
-                      type: Array(Object)
+                      type: array
                       description: List of refunds that were made to this payment.
-                      properties:
-                        id:
-                          type: Number
-                          description: Refund identifier.
-                        payment_id:
-                          type: Number
-                          description: Payment on which the return was made.
-                        amount:
-                          type: Float
-                          description: Amount refunded.
-                        metadata:
-                          type: Object
-                          description: >-
-                            Valid JSON that can be attached to the payment to
-                            record additional attributes of the merchant.
-                        source:
-                          type: Object
-                          description: Who made the refund.
-                          properties:
-                            id:
-                              type: String
-                              description: User ID who issued the refund.
-                            name:
-                              type: String
-                              description: User who issued the refund.
-                            type:
-                              type: String
-                              description: Type of user who issued the refund.
-                        date_created:
-                          type: Date(ISO_8601)
-                          description: Date of refund.
-                        unique_sequence_number:
-                          type: String
-                          description: Refund identifier given by the card processor.
+                      items:
+                        type: object
+                        properties:
+                          id:
+                            type: Number
+                            description: Refund identifier.
+                          payment_id:
+                            type: Number
+                            description: Payment on which the return was made.
+                          amount:
+                            type: Float
+                            description: Amount refunded.
+                          metadata:
+                            type: Object
+                            description: >-
+                              Valid JSON that can be attached to the payment to
+                              record additional attributes of the merchant.
+                          source:
+                            type: Object
+                            description: Who made the refund.
+                            properties:
+                              id:
+                                type: String
+                                description: User ID who issued the refund.
+                              name:
+                                type: String
+                                description: User who issued the refund.
+                              type:
+                                type: String
+                                description: Type of user who issued the refund.
+                          date_created:
+                            type: Date(ISO_8601)
+                            description: Date of refund.
+                          unique_sequence_number:
+                            type: String
+                            description: Refund identifier given by the card processor.
         '400':
           '1':
             description: Params Error.

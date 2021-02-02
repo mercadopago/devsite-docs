@@ -22,10 +22,10 @@ paths:
                 items:
                   properties:
                     id:
-                      type: String
+                      type: string
                       description: Card ID.
                     date_registered:
-                      type: String
+                      type: string
                       description: Nao sei o que é
                     date_created:
                       type: Date(ISO_8601)
@@ -34,78 +34,78 @@ paths:
                       type: Date(ISO_8601)
                       description: Card's last modified date.
                     customer_id:
-                      type: String
+                      type: string
                       description: Customer ID.
                     expiration_month:
-                      type: Integer
+                      type: number
                       description: Card's expiration month.
                     expiration_year:
-                      type: Integer
+                      type: number
                       description: Card's expiration year.
                     first_six_digits:
-                      type: String
+                      type: string
                       description: Card's first six digits.
                     last_four_digits:
-                      type: String
+                      type: string
                       description: Card's last four digits.
                     payment_method:
-                      type: Object
+                      type: object
                       description: Payment method information.
                       properties:
                         id:
-                          type: String
+                          type: string
                           description: Payment method ID.
                         name:
-                          type: String
+                          type: string
                           description: Payment method name.
                         payment_type_id:
-                          type: String
+                          type: string
                           description: Payment method type.
                         thumbnail:
-                          type: String
+                          type: string
                           description: Payment method thumbnail.
                         secure_thumbnail:
-                          type: String
+                          type: string
                           description: Payment method secure thumbnail.
                     security_code:
-                      type: Object
+                      type: object
                       description: Security code information.
                       properties:
                         length:
-                          type: Integer
+                          type: number
                           description: Security code's length.
                         card_location:
-                          type: String
+                          type: string
                           description: Security code's card location.
                     issuer:
-                      type: Object
+                      type: object
                       description: Issuer information.
                       properties:
                         id:
-                          type: Integer
+                          type: number
                           description: Issuer Id.
                         name:
-                          type: String
+                          type: string
                           description: Issuer name.
                     cardholder:
-                      type: Object
+                      type: object
                       description: Card holder information.
                       properties:
                         name:
-                          type: Integer
+                          type: number
                           description: Card holder name.
                         identification:
-                          type: Integer
+                          type: number
                           description: Identification information.
                           properties:
                             number:
-                              type: Integer
+                              type: number
                               description: Identification number.
                             subtype:
-                              type: String
+                              type: string
                               description: Identification subtype.
                             type:
-                              type: String
+                              type: string
                               description: Identification type.
         '400':
           '100':
@@ -145,7 +145,7 @@ paths:
           '117':
             description: the metadata is invalid.
           '118':
-            description: the body must be a Json Object.
+            description: the body must be a Json object.
           '119':
             description: the card is required.
           '120':
@@ -219,7 +219,7 @@ paths:
       requestBody:
         properties:
           date_registered:
-            type: String
+            type: string
             description: Nao sei o que é
       responses:
         '400':
@@ -260,7 +260,7 @@ paths:
           '117':
             description: the metadata is invalid.
           '118':
-            description: the body must be a Json Object.
+            description: the body must be a Json object.
           '119':
             description: the card is required.
           '120':
@@ -327,10 +327,10 @@ paths:
                 items:
                   properties:
                     id:
-                      type: String
+                      type: string
                       description: Card ID.
                     date_registered:
-                      type: String
+                      type: string
                       description: Nao sei o que é
                     date_created:
                       type: Date(ISO_8601)
@@ -339,78 +339,78 @@ paths:
                       type: Date(ISO_8601)
                       description: Card's last modified date.
                     customer_id:
-                      type: String
+                      type: string
                       description: Customer ID.
                     expiration_month:
-                      type: Integer
+                      type: number
                       description: Card's expiration month.
                     expiration_year:
-                      type: Integer
+                      type: number
                       description: Card's expiration year.
                     first_six_digits:
-                      type: String
+                      type: string
                       description: Card's first six digits.
                     last_four_digits:
-                      type: String
+                      type: string
                       description: Card's last four digits.
                     payment_method:
-                      type: Object
+                      type: object
                       description: Payment method information.
                       properties:
                         id:
-                          type: String
+                          type: string
                           description: Payment method ID.
                         name:
-                          type: String
+                          type: string
                           description: Payment method name.
                         payment_type_id:
-                          type: String
+                          type: string
                           description: Payment method type.
                         thumbnail:
-                          type: String
+                          type: string
                           description: Payment method thumbnail.
                         secure_thumbnail:
-                          type: String
+                          type: string
                           description: Payment method secure thumbnail.
                     security_code:
-                      type: Object
+                      type: object
                       description: Security code information.
                       properties:
                         length:
-                          type: Integer
+                          type: number
                           description: Security code's length.
                         card_location:
-                          type: String
+                          type: string
                           description: Security code's card location.
                     issuer:
-                      type: Object
+                      type: object
                       description: Issuer information.
                       properties:
                         id:
-                          type: Integer
+                          type: number
                           description: Issuer Id.
                         name:
-                          type: String
+                          type: string
                           description: Issuer name.
                     cardholder:
-                      type: Object
+                      type: object
                       description: Card holder information.
                       properties:
                         name:
-                          type: Integer
+                          type: number
                           description: Card holder name.
                         identification:
-                          type: Integer
+                          type: number
                           description: Identification information.
                           properties:
                             number:
-                              type: Integer
+                              type: number
                               description: Identification number.
                             subtype:
-                              type: String
+                              type: string
                               description: Identification subtype.
                             type:
-                              type: String
+                              type: string
                               description: Identification type.
         '400':
           '100':
@@ -450,7 +450,7 @@ paths:
           '117':
             description: the metadata is invalid.
           '118':
-            description: the body must be a Json Object.
+            description: the body must be a Json object.
           '119':
             description: the card is required.
           '120':
@@ -511,7 +511,7 @@ paths:
       requestBody:
         properties:
           date_registered:
-            type: String
+            type: string
             description: Nao sei o que é
       responses:
         '400':
@@ -552,7 +552,7 @@ paths:
           '117':
             description: the metadata is invalid.
           '118':
-            description: the body must be a Json Object.
+            description: the body must be a Json object.
           '119':
             description: the card is required.
           '120':
@@ -649,7 +649,7 @@ paths:
           '117':
             description: the metadata is invalid.
           '118':
-            description: the body must be a Json Object.
+            description: the body must be a Json object.
           '119':
             description: the card is required.
           '120':

@@ -142,33 +142,35 @@ paths:
             type: Double
             description: Total amount of the transaction in local currency. (Required)
           items:
-            type: Array(Object)
+            type: array
             description: Information on the products involved in the order.
-            properties:
-              sku_number:
-                type: String
-                description: Item code.
-              category:
-                type: String
-                description: Item category.
-              title:
-                type: String
-                description: Item title. (Required)
-              description:
-                type: String
-                description: Item description.
-              unit_price:
-                type: Double
-                description: Unit price of the item (maximum 2 decimals). (Required)
-              quantity:
-                type: Integer
-                description: Number of item units. (Required)
-              unit_measure:
-                type: String
-                description: Unit of measure of the item. (Required)
-              total_amount:
-                type: String
-                description: Item image URL. (Required)
+            items:
+              type: object
+              properties:
+                sku_number:
+                  type: String
+                  description: Item code.
+                category:
+                  type: String
+                  description: Item category.
+                title:
+                  type: String
+                  description: Item title. (Required)
+                description:
+                  type: String
+                  description: Item description.
+                unit_price:
+                  type: Double
+                  description: Unit price of the item (maximum 2 decimals). (Required)
+                quantity:
+                  type: Integer
+                  description: Number of item units. (Required)
+                unit_measure:
+                  type: String
+                  description: Unit of measure of the item. (Required)
+                total_amount:
+                  type: String
+                  description: Item image URL. (Required)
           sponsor:
             type: Object
             description: Integrator information.
