@@ -1,5 +1,5 @@
 paths:
-  /advanced_payments:
+  /v1/advanced_payments:
     post:
       tags: 
         - $ref: '#/tags/qr-code/description'
@@ -355,7 +355,7 @@ paths:
         '406':
           '406001':
             description: Error in the payments API.
-  /advanced_payments/{id}:
+  /v1/advanced_payments/{id}:
     get:
       tags: 
         - $ref: '#/tags/qr-code/description'
@@ -631,7 +631,7 @@ paths:
         '406':
           '406001':
             description: Error in the payments API.
-  /advanced_payments/search:
+  /v1/advanced_payments/search:
     get:
       tags: 
         - $ref: '#/tags/qr-code/description'
@@ -787,7 +787,7 @@ paths:
         '406':
           '406001':
             description: Error in the payments API.
-  /advanced_payments/{id}/refunds:
+  /v1/advanced_payments/{id}/refunds:
     post:
       requestBody:
         properties:
@@ -909,7 +909,7 @@ paths:
         '406':
           '406001':
             description: Error in the payments API.
-  /advanced_payments/{id}/disburses:
+  /v1/advanced_payments/{id}/disburses:
     post:
       requestBody:
         properties:
@@ -1031,7 +1031,7 @@ paths:
         '406':
           '406001':
             description: Error in the payments API.
-  /advanced_payments/{id}/disbursements/{disbursement_id}/refunds:
+  /v1/advanced_payments/{id}/disbursements/{disbursement_id}/refunds:
     post:
       requestBody:
         properties:
@@ -1153,7 +1153,7 @@ paths:
         '406':
           '406001':
             description: Error in the payments API.
-  /advanced_payments/{id}/disbursements/{disbursement_id}/disburses:
+  /v1/advanced_payments/{id}/disbursements/{disbursement_id}/disburses:
     post:
       requestBody:
         properties:
