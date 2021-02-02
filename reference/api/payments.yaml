@@ -15,7 +15,7 @@ paths:
               to send as much information as possible.
             properties:
               ip_address:
-                type: String
+                type: string
                 description: >-
                   IP from where the request comes from (only for bank
                   transfers).
@@ -26,19 +26,19 @@ paths:
                   type: object
                   properties:
                     id:
-                      type: String
+                      type: string
                       description: Item code.
                     title:
-                      type: String
+                      type: string
                       description: Item name.
                     description:
-                      type: String
+                      type: string
                       description: Long item description.
                     picture_url:
-                      type: String
+                      type: string
                       description: Image URL.
                     category_id:
-                      type: String
+                      type: string
                       description: Category of the item.
                     quantity:
                       type: Integer
@@ -51,30 +51,30 @@ paths:
                 description: Buyer's information.
                 properties:
                   first_name:
-                    type: String
+                    type: string
                     description: Buyer's name.
                   last_name:
-                    type: String
+                    type: string
                     description: Buyer's last name.
                   phone:
                     type: Object
                     description: Buyer's phone.
                     properties:
                       area_code:
-                        type: String
+                        type: string
                         description: Area code.
                       number:
-                        type: String
+                        type: string
                         description: Phone number.
                   address:
                     type: Object
                     description: Address.
                     properties:
                       zip_code:
-                        type: String
+                        type: string
                         description: Zip code.
                       street_name:
-                        type: String
+                        type: string
                         description: Street name.
                       street_number:
                         type: Integer
@@ -91,35 +91,35 @@ paths:
                     description: Buyer's address.
                     properties:
                       zip_code:
-                        type: String
+                        type: string
                         description: Zip code.
                       state_name:
-                        type: String
+                        type: string
                         description: State.
                       city_name:
-                        type: String
+                        type: string
                         description: City Name.
                       street_name:
-                        type: String
+                        type: string
                         description: Street name.
                       street_number:
                         type: Integer
                         description: Number
                       floor:
-                        type: String
+                        type: string
                         description: Floor.
                       apartment:
-                        type: String
+                        type: string
                         description: Department.
               barcode:
                 type: Object
                 description: Barcode information.
                 properties:
                   type:
-                    type: String
+                    type: string
                     description: Encoding type.
                   content:
-                    type: String
+                    type: string
                     description: Barcode generated.
                   width:
                     type: Integer
@@ -136,7 +136,7 @@ paths:
               When set to true, the payment can only be approved or rejected.
               Otherwise in_process status is added.
           callback_url:
-            type: String
+            type: string
             description: >-
               URL where mercadopago does the final redirect (only for bank
               transfers).
@@ -152,10 +152,10 @@ paths:
             type: Float
             description: Amount of the coupon discount.
           coupon_code:
-            type: String
+            type: string
             description: Discount campaign with a specific code.
           description:
-            type: String
+            type: string
             description: Payment reason or item title.
           differential_pricing_id:
             type: Integer
@@ -164,13 +164,13 @@ paths:
             type: Date(ISO_8601)
             description: Payment’s expiration date.
           external_reference:
-            type: String
+            type: string
             description: ID given by the merchant in their system.
           installments:
             type: Integer
             description: Selected quantity of installments. (Required)
           issuer_id:
-            type: String
+            type: string
             description: Payment method issuer.
           metadata:
             type: Object
@@ -178,7 +178,7 @@ paths:
               Valid JSON that can be attached to the payment to record
               additional attributes of the merchant.
           notification_url:
-            type: String
+            type: string
             description: >-
               URL where Mercado Pago will send notifications associated to
               changes in this payment
@@ -187,7 +187,7 @@ paths:
             description: Order identifier.
             properties:
               type:
-                type: String
+                type: string
                 description: Type of order.
               id:
                 type: Long
@@ -197,56 +197,56 @@ paths:
             description: Identifies the buyer.
             properties:
               entity_type:
-                type: String
+                type: string
                 description: Entity type of the payer (only for bank transfers).
               type:
-                type: String
+                type: string
                 description: >-
                   Identification type of the associated payer (mandatory if the
                   Payer is a Customer).
               id:
-                type: String
+                type: string
                 description: Identification of the associated payer.
               email:
-                type: String
+                type: string
                 description: Email. (Required)
               identification:
                 type: Object
                 description: Personal identification.
                 properties:
                   type:
-                    type: String
+                    type: string
                     description: Identification type.
                   number:
-                    type: String
+                    type: string
                     description: Identification number.
               phone:
                 type: Object
                 description: Phone of the associated payer.
                 properties:
                   area_code:
-                    type: String
+                    type: string
                     description: Phone area code.
                   number:
-                    type: String
+                    type: string
                     description: Phone number.
                   extension:
-                    type: String
+                    type: string
                     description: Phone number's extension.
               first_name:
-                type: String
+                type: string
                 description: First name of the associated payer.
               last_name:
-                type: String
+                type: string
                 description: Last name of the associated payer.
           payment_method_id:
-            type: String
+            type: string
             description: Payment method chosen to do the payment. (Required)
           statement_descriptor:
-            type: String
+            type: string
             description: 'How will look the payment in the card bill (e.g.: MERCADOPAGO).'
           token:
-            type: String
+            type: string
             description: Card token ID. (Required for credit card)
           transaction_amount:
             type: Float
@@ -566,7 +566,7 @@ paths:
               to send as much information as possible.
             properties:
               ip_address:
-                type: String
+                type: string
                 description: >-
                   IP from where the request comes from (only for bank
                   transfers).
@@ -577,19 +577,19 @@ paths:
                   type: object
                   properties:
                     id:
-                      type: String
+                      type: string
                       description: Item code.
                     title:
-                      type: String
+                      type: string
                       description: Item name.
                     description:
-                      type: String
+                      type: string
                       description: Long item description.
                     picture_url:
-                      type: String
+                      type: string
                       description: Image URL.
                     category_id:
-                      type: String
+                      type: string
                       description: Category of the item.
                     quantity:
                       type: Integer
@@ -602,30 +602,30 @@ paths:
                 description: Buyer's information.
                 properties:
                   first_name:
-                    type: String
+                    type: string
                     description: Buyer's name.
                   last_name:
-                    type: String
+                    type: string
                     description: Buyer's last name.
                   phone:
                     type: Object
                     description: Buyer's phone.
                     properties:
                       area_code:
-                        type: String
+                        type: string
                         description: Area code.
                       number:
-                        type: String
+                        type: string
                         description: Phone number.
                   address:
                     type: Object
                     description: Address.
                     properties:
                       zip_code:
-                        type: String
+                        type: string
                         description: Zip code.
                       street_name:
-                        type: String
+                        type: string
                         description: Street name.
                       street_number:
                         type: Integer
@@ -642,35 +642,35 @@ paths:
                     description: Buyer's address.
                     properties:
                       zip_code:
-                        type: String
+                        type: string
                         description: Zip code.
                       state_name:
-                        type: String
+                        type: string
                         description: State.
                       city_name:
-                        type: String
+                        type: string
                         description: City Name.
                       street_name:
-                        type: String
+                        type: string
                         description: Street name.
                       street_number:
                         type: Integer
                         description: Number
                       floor:
-                        type: String
+                        type: string
                         description: Floor.
                       apartment:
-                        type: String
+                        type: string
                         description: Department.
               barcode:
                 type: Object
                 description: Barcode information.
                 properties:
                   type:
-                    type: String
+                    type: string
                     description: Encoding type.
                   content:
-                    type: String
+                    type: string
                     description: Barcode generated.
                   width:
                     type: Integer
@@ -687,7 +687,7 @@ paths:
               When set to true, the payment can only be approved or rejected.
               Otherwise in_process status is added.
           callback_url:
-            type: String
+            type: string
             description: >-
               URL where mercadopago does the final redirect (only for bank
               transfers).
@@ -703,10 +703,10 @@ paths:
             type: Float
             description: Amount of the coupon discount.
           coupon_code:
-            type: String
+            type: string
             description: Discount campaign with a specific code.
           description:
-            type: String
+            type: string
             description: Payment reason or item title.
           differential_pricing_id:
             type: Integer
@@ -715,13 +715,13 @@ paths:
             type: Date(ISO_8601)
             description: Payment’s expiration date.
           external_reference:
-            type: String
+            type: string
             description: ID given by the merchant in their system.
           installments:
             type: Integer
             description: Selected quantity of installments. (Required)
           issuer_id:
-            type: String
+            type: string
             description: Payment method issuer.
           metadata:
             type: Object
@@ -729,7 +729,7 @@ paths:
               Valid JSON that can be attached to the payment to record
               additional attributes of the merchant.
           notification_url:
-            type: String
+            type: string
             description: >-
               URL where Mercado Pago will send notifications associated to
               changes in this payment
@@ -738,7 +738,7 @@ paths:
             description: Order identifier.
             properties:
               type:
-                type: String
+                type: string
                 description: Type of order.
               id:
                 type: Long
@@ -748,56 +748,56 @@ paths:
             description: Identifies the buyer.
             properties:
               entity_type:
-                type: String
+                type: string
                 description: Entity type of the payer (only for bank transfers).
               type:
-                type: String
+                type: string
                 description: >-
                   Identification type of the associated payer (mandatory if the
                   Payer is a Customer).
               id:
-                type: String
+                type: string
                 description: Identification of the associated payer.
               email:
-                type: String
+                type: string
                 description: Email. (Required)
               identification:
                 type: Object
                 description: Personal identification.
                 properties:
                   type:
-                    type: String
+                    type: string
                     description: Identification type.
                   number:
-                    type: String
+                    type: string
                     description: Identification number.
               phone:
                 type: Object
                 description: Phone of the associated payer.
                 properties:
                   area_code:
-                    type: String
+                    type: string
                     description: Phone area code.
                   number:
-                    type: String
+                    type: string
                     description: Phone number.
                   extension:
-                    type: String
+                    type: string
                     description: Phone number's extension.
               first_name:
-                type: String
+                type: string
                 description: First name of the associated payer.
               last_name:
-                type: String
+                type: string
                 description: Last name of the associated payer.
           payment_method_id:
-            type: String
+            type: string
             description: Payment method chosen to do the payment. (Required)
           statement_descriptor:
-            type: String
+            type: string
             description: 'How will look the payment in the card bill (e.g.: MERCADOPAGO).'
           token:
-            type: String
+            type: string
             description: Card token ID. (Required for credit card)
           transaction_amount:
             type: Float
@@ -955,54 +955,54 @@ paths:
                       type: Date(ISO_8601)
                       description: Release date of payment.
                     operation_type:
-                      type: String
+                      type: string
                       description: Payment type.
                     payer:
                       type: Object
                       description: Identifies the buyer.
                       properties:
                         entity_type:
-                          type: String
+                          type: string
                           description: Entity type of the payer (only for bank transfers).
                         type:
-                          type: String
+                          type: string
                           description: >-
                             Identification type of the associated payer
                             (mandatory if the Payer is a Customer).
                         id:
-                          type: String
+                          type: string
                           description: Identification of the associated payer.
                         email:
-                          type: String
+                          type: string
                           description: Email. (Required)
                         identification:
                           type: Object
                           description: Personal identification.
                           properties:
                             type:
-                              type: String
+                              type: string
                               description: Identification type.
                             number:
-                              type: String
+                              type: string
                               description: Identification number.
                         phone:
                           type: Object
                           description: Phone of the associated payer.
                           properties:
                             area_code:
-                              type: String
+                              type: string
                               description: Phone area code.
                             number:
-                              type: String
+                              type: string
                               description: Phone number.
                             extension:
-                              type: String
+                              type: string
                               description: Phone number's extension.
                         first_name:
-                          type: String
+                          type: string
                           description: First name of the associated payer.
                         last_name:
-                          type: String
+                          type: string
                           description: Last name of the associated payer.
                     binary_mode:
                       type: Boolean
@@ -1019,16 +1019,16 @@ paths:
                       description: Order identifier.
                       properties:
                         type:
-                          type: String
+                          type: string
                           description: Type of order.
                         id:
                           type: Long
                           description: Id of the associated purchase order.
                     external_reference:
-                      type: String
+                      type: string
                       description: ID given by the merchant in their system.
                     description:
-                      type: String
+                      type: string
                       description: Payment reason or item title.
                     metadata:
                       type: Object
@@ -1036,7 +1036,7 @@ paths:
                         Valid JSON that can be attached to the payment to record
                         additional attributes of the merchant.
                     currency_id:
-                      type: String(3)
+                      type: string(3)
                       description: ID of the currency used in the payment.
                     transaction_amount:
                       type: Float
@@ -1049,7 +1049,7 @@ paths:
                       description: Groups the details of the transaction.
                       properties:
                         financial_institution:
-                          type: String
+                          type: string
                           description: >-
                             External financial institution identifier (e.g.:
                             company id for atm)
@@ -1066,10 +1066,10 @@ paths:
                           type: Float
                           description: Amount overpaid (only for tickets).
                         external_resource_url:
-                          type: String
+                          type: string
                           description: Identifies the resource in the payment processor.
                         payment_method_reference_id:
-                          type: String
+                          type: string
                           description: >-
                             For credit card payments is the USN. For offline
                             payment methods, is the reference to give to the
@@ -1081,19 +1081,19 @@ paths:
                         type: object
                         properties:
                           type:
-                            type: String
+                            type: string
                             description: Fee detail.
                           fee_payer:
-                            type: String
+                            type: string
                             description: Who absorbs the cost.
                           amount:
                             type: Float
                             description: Fee amount.
                     status:
-                      type: String
+                      type: string
                       description: Payment status.
                     status_detail:
-                      type: String
+                      type: string
                       description: >-
                         Gives more detailed information on the current state or
                         rejection cause.
@@ -1103,18 +1103,18 @@ paths:
                         Determines if the capture operation was performed (just
                         for credit cards).
                     call_for_authorize_id:
-                      type: String
+                      type: string
                       description: >-
                         Identifier that must be provided to the issuing bank to
                         authorize the payment.
                     payment_method_id:
-                      type: String
+                      type: string
                       description: Payment method chosen to do the payment. (Required)
                     issuer_id:
-                      type: String
+                      type: string
                       description: Payment method issuer.
                     payment_type_id:
-                      type: String
+                      type: string
                       description: Type of payment method chosen.
                     card:
                       type: Object
@@ -1124,10 +1124,10 @@ paths:
                           type: Number
                           description: Id of the card.
                         last_four_digits:
-                          type: String
+                          type: string
                           description: Last four digits of card number.
                         first_six_digits:
-                          type: String
+                          type: string
                           description: First six digit of card number.
                         expiration_year:
                           type: Integer
@@ -1146,20 +1146,20 @@ paths:
                           description: Card's owner data.
                           properties:
                             name:
-                              type: String
+                              type: string
                               description: Cardholder Name.
                             identification:
                               type: Object
                               description: ID of the cardholder.
                               properties:
                                 number:
-                                  type: String
+                                  type: string
                                   description: Document number.
                                 type:
-                                  type: String
+                                  type: string
                                   description: Document type.
                     statement_descriptor:
-                      type: String
+                      type: string
                       description: >-
                         How will look the payment in the card bill (e.g.:
                         MERCADOPAGO).
@@ -1167,7 +1167,7 @@ paths:
                       type: Integer
                       description: Selected quantity of installments. (Required)
                     notification_url:
-                      type: String
+                      type: string
                       description: >-
                         URL where Mercado Pago will send notifications
                         associated to changes in this payment
@@ -1196,19 +1196,19 @@ paths:
                             description: Who made the refund.
                             properties:
                               id:
-                                type: String
+                                type: string
                                 description: User ID who issued the refund.
                               name:
-                                type: String
+                                type: string
                                 description: User who issued the refund.
                               type:
-                                type: String
+                                type: string
                                 description: Type of user who issued the refund.
                           date_created:
                             type: Date(ISO_8601)
                             description: Date of refund.
                           unique_sequence_number:
-                            type: String
+                            type: string
                             description: Refund identifier given by the card processor.
         '400':
           '1':

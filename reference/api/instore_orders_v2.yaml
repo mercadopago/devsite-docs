@@ -61,10 +61,10 @@ paths:
                 items:
                   properties:
                     user_id:
-                      type: String
+                      type: string
                       description: User identifier. (Required)
                     external_pos_id:
-                      type: String
+                      type: string
                       description: >-
                         External_id of the point of sale defined by integrator
                         system. (Required)
@@ -111,32 +111,32 @@ paths:
       requestBody:
         properties:
           user_id:
-            type: String
+            type: string
             description: User identifier. (Required)
           external_store_id:
-            type: String
+            type: string
             description: External_id of the store defined by integrator system. (Required)
           external_pos_id:
-            type: String
+            type: string
             description: >-
               External_id of the point of sale defined by integrator system.
               (Required)
           external_reference:
-            type: String(256)
+            type: string(256)
             description: Reference you can synchronize with your sale system. (Required)
           title:
-            type: String(256)
+            type: string(256)
             description: Purchase title. (Required)
           description:
-            type: String(256)
+            type: string(256)
             description: Purchase description.
           notification_url:
-            type: String(500)
+            type: string(500)
             description: >-
               URL where you'd like to receive a payment or merchant_order
               notification.
           expiration_date:
-            type: String(500)
+            type: string(500)
             description: Expiration date with format "2020-08-22T16:34:56.559-04:00"
           total_amount:
             type: Double
@@ -148,16 +148,16 @@ paths:
               type: object
               properties:
                 sku_number:
-                  type: String
+                  type: string
                   description: Item code.
                 category:
-                  type: String
+                  type: string
                   description: Item category.
                 title:
-                  type: String
+                  type: string
                   description: Item title. (Required)
                 description:
-                  type: String
+                  type: string
                   description: Item description.
                 unit_price:
                   type: Double
@@ -166,10 +166,10 @@ paths:
                   type: Integer
                   description: Number of item units. (Required)
                 unit_measure:
-                  type: String
+                  type: string
                   description: Unit of measure of the item. (Required)
                 total_amount:
-                  type: String
+                  type: string
                   description: Item image URL. (Required)
           sponsor:
             type: Object

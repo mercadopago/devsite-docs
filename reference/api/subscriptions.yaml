@@ -16,13 +16,13 @@ paths:
                 type: Integer
                 description: Recurring frecuency.
               frequency_type:
-                type: String
+                type: string
                 description: Recurring frecuency type (days or months).
               transaction_amount:
                 type: Number
                 description: Recurring amount.
               currency_id:
-                type: String
+                type: string
                 description: Currency Id.
               start_date:
                 type: Date(ISO_8601)
@@ -31,22 +31,22 @@ paths:
                 type: Date(ISO_8601)
                 description: preapproval's end date.
           back_url:
-            type: String
+            type: string
             description: Return URL.
           collector_id:
-            type: String
+            type: string
             description: Seller ID.
           external_reference:
-            type: String
+            type: string
             description: Preapproval reference value.
           payer_email:
-            type: String
+            type: string
             description: Customer's e-mail.
           reason:
-            type: String
+            type: string
             description: Preapproval titlte.
           status:
-            type: String
+            type: string
             description: Preapproval status.
       responses:
         '400':

@@ -211,61 +211,61 @@ paths:
                 items:
                   properties:
                     id:
-                      type: String
+                      type: string
                       description: Customer ID.
                     email:
-                      type: String
+                      type: string
                       description: Customer's email.
                     first_name:
-                      type: String (a-zA-Z)
+                      type: string
                       description: Customer's name.
                     last_name:
-                      type: String (a-zA-Z)
+                      type: string
                       description: Customer's last name.
                     phone:
                       type: Object
                       description: Customer phone's information.
                       properties:
                         area_code:
-                          type: String
+                          type: string
                           description: Phone's area code.
                         number:
-                          type: String
+                          type: string
                           description: Phone's number.
                     identification:
                       type: Object
                       description: Customer identification's information.
                       properties:
                         type:
-                          type: String
+                          type: string
                           description: Identification's type.
                         number:
-                          type: String
+                          type: string
                           description: Identification's number.
                     default_address:
-                      type: String
+                      type: string
                       description: Customer's default address.
                     address:
                       type: Object
                       description: Default address's information.
                       properties:
                         id:
-                          type: String
+                          type: string
                           description: Address ID.
                         zip_code:
-                          type: String
+                          type: string
                           description: Zip code.
                         street_name:
-                          type: String
+                          type: string
                           description: Street name.
                         street_number:
-                          type: String
+                          type: string
                           description: Street number.
                     date_registered:
                       type: Date(ISO_8601)
                       description: Customer's registration date.
                     description:
-                      type: String
+                      type: string
                       description: Customer's description.
                     date_created:
                       type: Date(ISO_8601)
@@ -277,17 +277,17 @@ paths:
                       type: Object
                       description: Customer's metadata.
                     default_card:
-                      type: String
+                      type: string
                       description: Customer's default card.
                     cards:
                       type: Object
                       description: Customer's cards.
                       properties:
                         id:
-                          type: String
+                          type: string
                           description: Card ID.
                         customer_id:
-                          type: String
+                          type: string
                           description: Customer ID.
                         expiration_month:
                           type: Integer
@@ -296,29 +296,29 @@ paths:
                           type: Integer
                           description: Card's expiration year.
                         first_six_digits:
-                          type: String
+                          type: string
                           description: Card's first six digits.
                         last_four_digits:
-                          type: String
+                          type: string
                           description: Card's last four digits.
                         payment_method:
                           type: Object
                           description: Payment method information.
                           properties:
                             id:
-                              type: String
+                              type: string
                               description: Payment method ID.
                             name:
-                              type: String
+                              type: string
                               description: Payment method name.
                             payment_type_id:
-                              type: String
+                              type: string
                               description: Payment method type.
                             thumbnail:
-                              type: String
+                              type: string
                               description: Payment method thumbnail.
                             secure_thumbnail:
-                              type: String
+                              type: string
                               description: Payment method secure thumbnail.
                         security_code:
                           type: Object
@@ -328,7 +328,7 @@ paths:
                               type: Integer
                               description: Security code's length.
                             card_location:
-                              type: String
+                              type: string
                               description: Security code's card location.
                         issuer:
                           type: Object
@@ -338,7 +338,7 @@ paths:
                               type: Integer
                               description: Issuer Id.
                             name:
-                              type: String
+                              type: string
                               description: Issuer name.
                         cardholder:
                           type: Object
@@ -355,10 +355,10 @@ paths:
                                   type: Integer
                                   description: Identification number.
                                 subtype:
-                                  type: String
+                                  type: string
                                   description: Identification subtype.
                                 type:
-                                  type: String
+                                  type: string
                                   description: Identification type.
                         date_created:
                           type: Date(ISO_8601)
@@ -371,84 +371,84 @@ paths:
                       description: Customer's addresses.
                       properties:
                         id:
-                          type: String
+                          type: string
                           description: Address ID.
                         phone:
-                          type: String
+                          type: string
                           description: Phone number.
                         name:
-                          type: String
+                          type: string
                           description: Address name.
                         floor:
-                          type: String
+                          type: string
                           description: Floor.
                         apartment:
-                          type: String
+                          type: string
                           description: Apartment.
                         street_name:
-                          type: String
+                          type: string
                           description: Street name.
                         street_number:
                           type: Number
                           description: Street number.
                         zip_code:
-                          type: String
+                          type: string
                           description: Postal code of an Address.
                         city:
                           type: Object
                           description: City information.
                           properties:
                             id:
-                              type: String
+                              type: string
                               description: City ID.
                             name:
-                              type: String
+                              type: string
                               description: City name.
                         state:
                           type: Object
                           description: State information.
                           properties:
                             id:
-                              type: String
+                              type: string
                               description: State ID.
                             name:
-                              type: String
+                              type: string
                               description: State name.
                         country:
                           type: Object
                           description: Country information.
                           properties:
                             id:
-                              type: String
+                              type: string
                               description: Country ID.
                             name:
-                              type: String
+                              type: string
                               description: Country name.
                         neighborhood:
                           type: Object
                           description: Neighborhood information.
                           properties:
                             id:
-                              type: String
+                              type: string
                               description: Neighborhood ID.
                             name:
-                              type: String
+                              type: string
                               description: Neighborhood name.
                         municipality:
                           type: Object
                           description: Municipality information.
                           properties:
                             id:
-                              type: String
+                              type: string
                               description: Municipality ID.
                             name:
-                              type: String
+                              type: string
                               description: Municipality name.
                         comments:
-                          type: String
+                          type: string
                           description: Additional information.
                         date_created:
-                          type: String
+                          type: string
                           description: Address date created.
                     live_mode:
                       type: Boolean
@@ -567,29 +567,29 @@ paths:
                 items:
                   properties:
                     id:
-                      type: String
+                      type: string
                       description: Customer ID.
                     email:
-                      type: String
+                      type: string
                       description: Customer's email.
                     first_name:
-                      type: String (a-zA-Z)
+                      type: string
                       description: Customer's name.
                     last_name:
-                      type: String (a-zA-Z)
+                      type: string
                       description: Customer's last name.
                     description:
-                      type: String
+                      type: string
                       description: Customer's description.
                     identification:
                       type: Object
                       description: Customer identification's information.
                       properties:
                         type:
-                          type: String
+                          type: string
                           description: Identification's type.
                         number:
-                          type: String
+                          type: string
                           description: Identification's number.
         '400':
           '100':

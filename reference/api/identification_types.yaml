@@ -14,16 +14,16 @@ paths:
                 items:
                   properties:
                     id:
-                      type: String
+                      type: string
                       example: "cpf"
                       description: Identification type id.
                     name:
-                      type: String
+                      type: string
                       example: "CPF"
                       description: Identification type name.
                     type:
-                      type: String
-                      example: String
+                      type: string
+                      example: string
                       description: Identification number data type.
                     min_length:
                       type: number

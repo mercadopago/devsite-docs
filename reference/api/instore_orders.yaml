@@ -24,36 +24,36 @@ paths:
       requestBody:
         properties:
           user_id:
-            type: String
+            type: string
             description: User identifier. (Required)
           external_id:
-            type: String
+            type: string
             description: >-
               Unique identifier of the Point of Sale defined by integrator
               system. (Required)
           external_reference:
-            type: String(256)
+            type: string(256)
             description: Reference you can synchronize with your sale system.  (Required)
           notification_url:
-            type: String(500)
+            type: string(500)
             description: >-
               URL where you'd like to receive a payment or merchant_order
               notification.
           sponsor_id:
-            type: String
+            type: string
             description: Mercado Pago's USER_ID of the integrator system.
           items:
             type: Object
             description: Information on the products involved in the order. (Required)
             properties:
               id:
-                type: String
+                type: string
                 description: Item id.
               title:
-                type: String
+                type: string
                 description: Item title. (Required)
               currency_id:
-                type: String(3)
+                type: string(3)
                 description: Currency identifier in ISO_4217 format. (Required)
               unit_price:
                 type: Float
@@ -62,10 +62,10 @@ paths:
                 type: Integer
                 description: Item quantity. (Required)
               description:
-                type: String
+                type: string
                 description: Item description. (Required)
               picture_url:
-                type: String
+                type: string
                 description: Item image URL.
       responses:
         '400':

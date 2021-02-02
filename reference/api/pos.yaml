@@ -9,7 +9,7 @@ paths:
       requestBody:
         properties:
           name:
-            type: String
+            type: string
             description: Name of the POS. (Required)
           fixed_amount:
             type: Boolean
@@ -22,18 +22,18 @@ paths:
               MCC code that indicates the category of the Point of Sale. If not
               specified, it remains as a generic category.
           store_id:
-            type: String
+            type: string
             description: Store identifier to which the point of sale belongs.
           external_store_id:
-            type: String
+            type: string
             description: >-
               External_id of the store to which the pos belongs defined by
               integrator system. (Required)
           external_id:
-            type: String
+            type: string
             description: Unique identifier of the pos defined by integrator system.
           url:
-            type: String
+            type: string
             description: >-
               URL to get the order of the integrator system. It is optional and
               is used only in the unattended integration model.
@@ -46,7 +46,7 @@ paths:
               The indicated field is not allowed for this operation or is
               unknown.
           INVALID_NAME:
-            description: NAME must be String.
+            description: NAME must be string.
           NAME_TOO_LONG:
             description: The NAME must be less than 45 characters.
           INVALID_FIXED_AMOUNT:
@@ -58,7 +58,7 @@ paths:
           INVALID_STORE_ID:
             description: STORE_ID must be numeric.
           INVALID_EXTERNAL_STORE_ID:
-            description: EXTERNAL_STORE_ID must be String.
+            description: EXTERNAL_STORE_ID must be string.
           EXTERNAL_STORE_ID_NOT_MATCH:
             description: The EXTERNAL_STORE_ID does not refer to the indicated STORE_ID.
           INEXISTENT_EXTERNAL_STORE_ID:
@@ -70,7 +70,7 @@ paths:
           EXTERNAL_ID_TOO_LONG:
             description: The EXTERNAL_ID must be less than 40 characters.
           INVALID_URL:
-            description: The URL must be String and must have the format of a valid url.
+            description: The URL must be string and must have the format of a valid url.
           URL_TOO_LONG:
             description: The URL must be less than 300 characters.
           FIXED_AMOUNT_FALSE:
@@ -111,15 +111,15 @@ paths:
                         Sale. If not specified, it remains as a generic
                         category.
                     store_id:
-                      type: String
+                      type: string
                       description: Store identifier to which the point of sale belongs.
                     external_store_id:
-                      type: String
+                      type: string
                       description: >-
                         External_id of the store to which the pos belongs
                         defined by integrator system. (Required)
                     external_id:
-                      type: String
+                      type: string
                       description: >-
                         Unique identifier of the pos defined by integrator
                         system.
@@ -165,7 +165,7 @@ paths:
                 items:
                   properties:
                     id:
-                      type: String
+                      type: string
                       description: POS identifier, numerical and self-generated.
         '400':
           INVALID_POS_ID:
@@ -198,10 +198,10 @@ paths:
       requestBody:
         properties:
           id:
-            type: String
+            type: string
             description: POS identifier, numerical and self-generated.
           name:
-            type: String
+            type: string
             description: Name of the POS. (Required)
           fixed_amount:
             type: Boolean
@@ -214,15 +214,15 @@ paths:
               MCC code that indicates the category of the Point of Sale. If not
               specified, it remains as a generic category.
           store_id:
-            type: String
+            type: string
             description: Store identifier to which the point of sale belongs.
           external_store_id:
-            type: String
+            type: string
             description: >-
               External_id of the store to which the pos belongs defined by
               integrator system. (Required)
           url:
-            type: String
+            type: string
             description: >-
               URL to get the order of the integrator system. It is optional and
               is used only in the unattended integration model.
@@ -237,7 +237,7 @@ paths:
           INVALID_POS_ID:
             description: The ID of the pos is invalid, it must be numeric.
           INVALID_NAME:
-            description: NAME must be String.
+            description: NAME must be string.
           NAME_TOO_LONG:
             description: The NAME must be less than 45 characters.
           INVALID_FIXED_AMOUNT:
@@ -249,7 +249,7 @@ paths:
           POS_INVALID_STORE_ID:
             description: STORE_ID must be numeric.
           INVALID_EXTERNAL_STORE_ID:
-            description: EXTERNAL_STORE_ID must be String.
+            description: EXTERNAL_STORE_ID must be string.
           EXTERNAL_STORE_ID_NOT_MATCH:
             description: The EXTERNAL_STORE_ID does not refer to the indicated STORE_ID.
           INEXISTENT_EXTERNAL_STORE_ID:
@@ -261,7 +261,7 @@ paths:
           EXTERNAL_ID_TOO_LONG:
             description: The EXTERNAL_ID must be less than 40 characters.
           INVALID_URL:
-            description: The URL must be String and must have the format of a valid url.
+            description: The URL must be string and must have the format of a valid url.
           URL_TOO_LONG:
             description: The URL must be less than 300 characters.
           FIXED_AMOUNT_FALSE:
