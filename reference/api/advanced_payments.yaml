@@ -382,10 +382,230 @@ paths:
             application/json:
               schema:
                 items:
-                  properties:
-                    id:
+                  type: object
+                  properties: 
+                    id: 
                       type: number
-                      description: Advanced Payment Identifier.
+                      example: 111111111
+                    status: 
+                      type: string
+                      example: approved
+                    payments: 
+                      type: array
+                      items: 
+                        type: object
+                        properties: 
+                          id: 
+                            type: number
+                            example: 222222222
+                          status: 
+                            type: string
+                            example: approved
+                          status_detail: 
+                            type: string
+                            example: accredited
+                          payment_type_id: 
+                            type: string
+                            example: credit_card
+                          payment_method_id: 
+                            type: string
+                            example: visa
+                          token: 
+                            type: string
+                            example: 98f6a9s7dfyihfasfdhasdjfhñasdfh
+                          transaction_amount: 
+                            type: number
+                            example: 100
+                          installments: 
+                            type: number
+                            example: 1
+                          processing_mode: 
+                            type: string
+                            example: aggregator
+                          description: 
+                            type: string
+                            example: Payment description
+                          capture: 
+                            type: boolean
+                          external_reference: 
+                            type: string
+                            example: ext_ref_payment
+                          statement_descriptor: 
+                            type: string
+                            example: MKT-STATEMENT-DESCRIPTION
+                    disbursements: 
+                      type: array
+                      items: 
+                        type: object
+                        properties: 
+                          id: 
+                            type: number
+                            example: 33333333
+                          amount: 
+                            type: number
+                            example: 40
+                          external_reference: 
+                            type: string
+                            example: ext_ref_disb_1
+                          collector_id: 
+                            type: number
+                            example: 31313
+                          application_fee: 
+                            type: number
+                            example: 5
+                          money_release_days: 
+                            type: number
+                            example: 10
+                          additional_info: 
+                            type: object
+                            properties: 
+                              items: 
+                                type: array
+                                items: 
+                                  type: object
+                                  properties: 
+                                    id: 
+                                      type: string
+                                      example: item-ID-1234
+                                    title: 
+                                      type: string
+                                      example: Title of what you are paying for
+                                    picture_url: 
+                                      type: string
+                                      example: https://www.mercadopago.com/logomp3.gif
+                                    description: 
+                                      type: string
+                                      example: Item description
+                                    category_id: 
+                                      type: string
+                                      example: art
+                                    quantity: 
+                                      type: number
+                                      example: 1
+                                    unit_price: 
+                                      type: number
+                                      example: 100
+                              shipments: 
+                                type: object
+                                properties: 
+                                  receiver_address: 
+                                    type: object
+                                    properties: 
+                                      zip_code: 
+                                        type: string
+                                        example: 5700
+                                      street_name: 
+                                        type: string
+                                        example: Street
+                                      street_number: 
+                                        type: number
+                                        example: 123
+                                      floor: 
+                                        type: number
+                                        example: 4
+                                      apartment: 
+                                        type: string
+                                        example: C
+                    payer: 
+                      type: object
+                      properties: 
+                        email: 
+                          type: string
+                          example: test@user.com
+                        first_name: 
+                          type: string
+                          example: Test
+                        last_name: 
+                          type: string
+                          example: Test
+                        address: 
+                          type: object
+                          properties: 
+                            zip_code: 
+                              type: string
+                              example: 1111
+                            street_name: 
+                              type: string
+                              example: Calle
+                            street_numer: 
+                              type: string
+                              example: 120
+                        identification: 
+                          type: object
+                          properties: 
+                            type: 
+                              type: string
+                              example: DNI
+                            number: 
+                              type: string
+                              example: 88999000
+                    external_reference: 
+                      type: string
+                      example: ext_ref_adv_paym
+                    description: 
+                      type: string
+                      example: Advanced payment description
+                    binary_mode: 
+                      type: boolean
+                    date_created: 
+                      type: string
+                      example: 2018-06-27T09:34:20.518-04:00
+                    date_last_updated: 
+                      type: string
+                      example: 2018-06-27T09:34:20.518-04:00
+                    metadata: 
+                      type: object
+                    additional_info: 
+                      type: object
+                      properties: 
+                        items: 
+                          type: array
+                          items: 
+                            type: object
+                            properties: 
+                              id: 
+                                type: string
+                                example: item-ID-7356
+                              title: 
+                                type: string
+                                example: Title of what you are paying for
+                              picture_url: 
+                                type: string
+                                example: https://www.mercadopago.com/logomp3.gif
+                              description: 
+                                type: string
+                                example: Item description
+                              category_id: 
+                                type: string
+                                example: art
+                              quantity: 
+                                type: number
+                                example: 1
+                              unit_price: 
+                                type: number
+                                example: 100
+                        shipments: 
+                          type: object
+                          properties: 
+                            receiver_address: 
+                              type: object
+                              properties: 
+                                zip_code: 
+                                  type: string
+                                  example: 5700
+                                street_name: 
+                                  type: string
+                                  example: Street
+                                street_number: 
+                                  type: number
+                                  example: 123
+                                floor: 
+                                  type: number
+                                  example: 4
+                                apartment: 
+                                  type: string
+                                  example: C
+
         '400':
           '400004':
             description: Invalid application.
@@ -672,13 +892,248 @@ paths:
             application/json:
               schema:
                 items:
-                  properties:
-                    date_created:
-                      type: Date(ISO_8601)
-                      description: Date of creation of the payment.
-                    status:
-                      type: string
-                      description: Advanced Payment status.
+                  type: object
+                  properties: 
+                    paging: 
+                      type: object
+                      properties: 
+                        total: 
+                          type: number
+                          example: 1
+                        limit: 
+                          type: number
+                          example: 10
+                        offset: 
+                          type: number
+                          example: 0
+                    results: 
+                      type: array
+                      items: 
+                        type: object
+                        properties: 
+                          id: 
+                            type: number
+                            example: 111111111
+                          status: 
+                            type: string
+                            example: approved
+                          payments: 
+                            type: array
+                            items: 
+                              type: object
+                              properties: 
+                                id: 
+                                  type: number
+                                  example: 222222222
+                                status: 
+                                  type: string
+                                  example: approved
+                                status_detail: 
+                                  type: string
+                                  example: accredited
+                                payment_type_id: 
+                                  type: string
+                                  example: credit_card
+                                payment_method_id: 
+                                  type: string
+                                  example: visa
+                                token: 
+                                  type: string
+                                  example: 98f6a9s7dfyihfasfdhasdjfhñasdfh
+                                transaction_amount: 
+                                  type: number
+                                  example: 100
+                                installments: 
+                                  type: number
+                                  example: 1
+                                processing_mode: 
+                                  type: string
+                                  example: aggregator
+                                description: 
+                                  type: string
+                                  example: Payment description
+                                capture: 
+                                  type: boolean
+                                external_reference: 
+                                  type: string
+                                  example: ext_ref_payment
+                                statement_descriptor: 
+                                  type: string
+                                  example: MKT-STATEMENT-DESCRIPTION
+                          disbursements: 
+                            type: array
+                            items: 
+                              type: object
+                              properties: 
+                                id: 
+                                  type: number
+                                  example: 33333333
+                                amount: 
+                                  type: number
+                                  example: 40
+                                external_reference: 
+                                  type: string
+                                  example: ext_ref_disb_1
+                                collector_id: 
+                                  type: number
+                                  example: 31313
+                                application_fee: 
+                                  type: number
+                                  example: 5
+                                money_release_days: 
+                                  type: number
+                                  example: 10
+                                additional_info: 
+                                  type: object
+                                  properties: 
+                                    items: 
+                                      type: array
+                                      items: 
+                                        type: object
+                                        properties: 
+                                          id: 
+                                            type: string
+                                            example: item-ID-1234
+                                          title: 
+                                            type: string
+                                            example: Title of what you are paying for
+                                          picture_url: 
+                                            type: string
+                                            example: https://www.mercadopago.com/logomp3.gif
+                                          description: 
+                                            type: string
+                                            example: Item description
+                                          category_id: 
+                                            type: string
+                                            example: art
+                                          quantity: 
+                                            type: number
+                                            example: 1
+                                          unit_price: 
+                                            type: number
+                                            example: 100
+                                    shipments: 
+                                      type: object
+                                      properties: 
+                                        receiver_address: 
+                                          type: object
+                                          properties: 
+                                            zip_code: 
+                                              type: string
+                                              example: 5700
+                                            street_name: 
+                                              type: string
+                                              example: Street
+                                            street_number: 
+                                              type: number
+                                              example: 123
+                                            floor: 
+                                              type: number
+                                              example: 4
+                                            apartment: 
+                                              type: string
+                                              example: C
+                          payer: 
+                            type: object
+                            properties: 
+                              email: 
+                                type: string
+                                example: test@user.com
+                              first_name: 
+                                type: string
+                                example: Test
+                              last_name: 
+                                type: string
+                                example: Test
+                              address: 
+                                type: object
+                                properties: 
+                                  zip_code: 
+                                    type: string
+                                    example: 1111
+                                  street_name: 
+                                    type: string
+                                    example: Calle
+                                  street_numer: 
+                                    type: string
+                                    example: 120
+                              identification: 
+                                type: object
+                                properties: 
+                                  type: 
+                                    type: string
+                                    example: DNI
+                                  number: 
+                                    type: string
+                                    example: 88999000
+                          external_reference: 
+                            type: string
+                            example: ext_ref_adv_paym
+                          description: 
+                            type: string
+                            example: Advanced payment description
+                          binary_mode: 
+                            type: boolean
+                          date_created: 
+                            type: string
+                            example: 2018-06-27T09:34:20.518-04:00
+                          date_last_updated: 
+                            type: string
+                            example: 2018-06-27T09:34:20.518-04:00
+                          metadata: 
+                            type: object
+                            properties:  
+                          additional_info: 
+                            type: object
+                            properties: 
+                              items: 
+                                type: array
+                                items: 
+                                  type: object
+                                  properties: 
+                                    id: 
+                                      type: string
+                                      example: item-ID-7356
+                                    title: 
+                                      type: string
+                                      example: Title of what you are paying for
+                                    picture_url: 
+                                      type: string
+                                      example: https://www.mercadopago.com/logomp3.gif
+                                    description: 
+                                      type: string
+                                      example: Item description
+                                    category_id: 
+                                      type: string
+                                      example: art
+                                    quantity: 
+                                      type: number
+                                      example: 1
+                                    unit_price: 
+                                      type: number
+                                      example: 100
+                              shipments: 
+                                type: object
+                                properties: 
+                                  receiver_address: 
+                                    type: object
+                                    properties: 
+                                      zip_code: 
+                                        type: string
+                                        example: 5700
+                                      street_name: 
+                                        type: string
+                                        example: Street
+                                      street_number: 
+                                        type: number
+                                        example: 123
+                                      floor: 
+                                        type: number
+                                        example: 4
+                                      apartment: 
+                                        type: string
+                                        example: C
+
         '400':
           '400004':
             description: Invalid application.
