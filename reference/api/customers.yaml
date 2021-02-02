@@ -451,7 +451,7 @@ paths:
                           type: string
                           description: Address date created.
                     live_mode:
-                      type: Boolean
+                      type: boolean
                       description: >-
                         Whether the customers will be in sandbox or in
                         production mode.

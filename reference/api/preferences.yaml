@@ -135,7 +135,7 @@ paths:
                 type: string
                 description: Shipment mode.
               local_pickup:
-                type: Boolean
+                type: boolean
                 description: >-
                   The payer have the option to pick up the shipment in your
                   store (mode:me2 only).
@@ -158,7 +158,7 @@ paths:
                 type: number
                 description: Shipment cost (mode:custom only).
               free_shipping:
-                type: Boolean
+                type: boolean
                 description: Free shipping for mode:custom.
               receiver_address:
                 type: Object
@@ -216,7 +216,7 @@ paths:
             type: string
             description: Reference you can synchronize with your payment system.
           expires:
-            type: Boolean
+            type: boolean
             description: Boolean value that determines if a preference expire.
           date_of_expiration:
             type: Date(ISO_8601)
@@ -385,7 +385,7 @@ paths:
                             type: Date(ISO_8601)
                             description: Date when the preference will be expired.
                           expires:
-                            type: Boolean
+                            type: boolean
                             description: Boolean value that determines if a preference expire.
                           date_of_expiration:
                             type: Date(ISO_8601)
@@ -674,7 +674,7 @@ paths:
                 type: string
                 description: Shipment mode.
               local_pickup:
-                type: Boolean
+                type: boolean
                 description: >-
                   The payer have the option to pick up the shipment in your
                   store (mode:me2 only).
@@ -697,7 +697,7 @@ paths:
                 type: number
                 description: Shipment cost (mode:custom only).
               free_shipping:
-                type: Boolean
+                type: boolean
                 description: Free shipping for mode:custom.
               receiver_address:
                 type: Object
@@ -752,7 +752,7 @@ paths:
             type: string
             description: Reference you can synchronize with your payment system.
           expires:
-            type: Boolean
+            type: boolean
             description: Boolean value that determines if a preference expire.
           date_of_expiration:
             type: Date(ISO_8601)

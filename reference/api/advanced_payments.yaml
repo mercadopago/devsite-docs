@@ -105,7 +105,7 @@ paths:
                   type: string
                   description: Reason for payment.
                 capture:
-                  type: Boolean
+                  type: boolean
                   description: >-
                     Determines whether the payment should be captured (true,
                     default value) or only reserved (false).
@@ -152,7 +152,7 @@ paths:
                     Number of days (from the date of approval of the payment) in
                     which the payment will be released to the Seller.
           binary_mode:
-            type: Boolean
+            type: boolean
             description: >-
               When the payment is activated, it can only be approved or
               rejected. Otherwise, the payment may be pending.

@@ -12,7 +12,7 @@ paths:
             type: string
             description: Name of the POS. (Required)
           fixed_amount:
-            type: Boolean
+            type: boolean
             description: >-
               Define if the customer can insert the amount to be paid.
               (Required)
@@ -204,7 +204,7 @@ paths:
             type: string
             description: Name of the POS. (Required)
           fixed_amount:
-            type: Boolean
+            type: boolean
             description: >-
               Define if the customer can insert the amount to be paid.
               (Required)
