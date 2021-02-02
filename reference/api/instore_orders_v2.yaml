@@ -122,21 +122,21 @@ paths:
               External_id of the point of sale defined by integrator system.
               (Required)
           external_reference:
-            type: string(256)
+            type: string
             description: Reference you can synchronize with your sale system. (Required)
           title:
-            type: string(256)
+            type: string
             description: Purchase title. (Required)
           description:
-            type: string(256)
+            type: string
             description: Purchase description.
           notification_url:
-            type: string(500)
+            type: string
             description: >-
               URL where you'd like to receive a payment or merchant_order
               notification.
           expiration_date:
-            type: string(500)
+            type: string
             description: Expiration date with format "2020-08-22T16:34:56.559-04:00"
           total_amount:
             type: Double

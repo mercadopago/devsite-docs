@@ -32,10 +32,10 @@ paths:
               Unique identifier of the Point of Sale defined by integrator
               system. (Required)
           external_reference:
-            type: string(256)
+            type: string
             description: Reference you can synchronize with your sale system.  (Required)
           notification_url:
-            type: string(500)
+            type: string
             description: >-
               URL where you'd like to receive a payment or merchant_order
               notification.
@@ -53,7 +53,7 @@ paths:
                 type: string
                 description: Item title. (Required)
               currency_id:
-                type: string(3)
+                type: string
                 description: Currency identifier in ISO_4217 format. (Required)
               unit_price:
                 type: Float

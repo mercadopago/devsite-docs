@@ -1036,7 +1036,7 @@ paths:
                         Valid JSON that can be attached to the payment to record
                         additional attributes of the merchant.
                     currency_id:
-                      type: string(3)
+                      type: string
                       description: ID of the currency used in the payment.
                     transaction_amount:
                       type: Float

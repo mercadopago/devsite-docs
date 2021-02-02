@@ -9,16 +9,16 @@ paths:
       requestBody:
         properties:
           external_reference:
-            type: string(256)
+            type: string
             description: Reference you can synchronize with your payment system.
           preference_id:
-            type: string(UUID)
+            type: string
             description: Payment preference identifier associated to the merchant order.
           marketplace:
-            type: string(256)
+            type: string
             description: 'Origin of the payment. Default value: ''NONE'''
           notification_url:
-            type: string(500)
+            type: string
             description: URL where you'd like to receive a payment notification.
           sponsor_id:
             type: Integer
@@ -31,10 +31,10 @@ paths:
                 type: Integer
                 description: Buyer id.
               email:
-                type: string(256)
+                type: string
                 description: Deprecated field, will return an empty string.
               nickname:
-                type: string(256)
+                type: string
                 description: Buyer nickname.
           site_id:
             type: string
@@ -52,7 +52,7 @@ paths:
                   type: string
                   description: Item category.
                 currency_id:
-                  type: string(3)
+                  type: string
                   description: ID of the currency used in the item price.
                 description:
                   type: string
@@ -70,7 +70,7 @@ paths:
                   type: string
                   description: Item title.
           additional_info:
-            type: string(600)
+            type: string
             description: Additional information.
           application_id:
             type: string
@@ -238,15 +238,15 @@ paths:
                       type: string
                       description: Show the current merchant order state.
                     external_reference:
-                      type: string(256)
+                      type: string
                       description: Reference you can synchronize with your payment system.
                     preference_id:
-                      type: string(UUID)
+                      type: string
                       description: >-
                         Payment preference identifier associated to the merchant
                         order.
                     marketplace:
-                      type: string(256)
+                      type: string
                       description: 'Origin of the payment. Default value: ''NONE'''
                     date_created:
                       type: Date(ISO_8601)
@@ -268,10 +268,10 @@ paths:
                           type: Integer
                           description: Buyer id.
                         email:
-                          type: string(256)
+                          type: string
                           description: Deprecated field, will return an empty string.
                         nickname:
-                          type: string(256)
+                          type: string
                           description: Buyer nickname.
                     items:
                       type: array
@@ -286,7 +286,7 @@ paths:
                             type: string
                             description: Item category.
                           currency_id:
-                            type: string(3)
+                            type: string
                             description: ID of the currency used in the item price.
                           description:
                             type: string
@@ -367,10 +367,10 @@ paths:
       requestBody:
         properties:
           external_reference:
-            type: string(256)
+            type: string
             description: Reference you can synchronize with your payment system.
           additional_info:
-            type: string(600)
+            type: string
             description: Additional information.
           shipments:
             type: array
@@ -430,7 +430,7 @@ paths:
                       type: string
                       description: Street name and number of receiver address.
                     apartment:
-                      type: string(256)
+                      type: string
                       description: Apartment.
                     city:
                       type: Object
@@ -469,25 +469,25 @@ paths:
                       type: string
                       description: Contact information.
                     zip_code:
-                      type: string(256)
+                      type: string
                       description: Zip code.
                     street_name:
-                      type: string(256)
+                      type: string
                       description: Street name.
                     street_number:
-                      type: string(256)
+                      type: string
                       description: Street number.
                     floor:
-                      type: string(256)
+                      type: string
                       description: Floor.
                     phone:
-                      type: string(256)
+                      type: string
                       description: Receiver address phone.
                     latitude:
-                      type: string(256)
+                      type: string
                       description: Receiver address latitude.
                     longitude:
-                      type: string(256)
+                      type: string
                       description: Receiver address longitude.
                 shipping_option:
                   type: Object
@@ -497,7 +497,7 @@ paths:
                       type: Float
                       description: Net cost absorbed by the receiver.
                     currency_id:
-                      type: string(3)
+                      type: string
                       description: Currency identifier.
                     estimated_delivery:
                       type: Object
@@ -535,10 +535,10 @@ paths:
                           type: Integer
                           description: Shipping time.
           marketplace:
-            type: string(256)
+            type: string
             description: 'Origin of the payment. Default value: ''NONE'''
           notification_url:
-            type: string(500)
+            type: string
             description: URL where you'd like to receive a payment notification.
           sponsor_id:
             type: Integer
@@ -554,10 +554,10 @@ paths:
                 type: Integer
                 description: Buyer id.
               email:
-                type: string(256)
+                type: string
                 description: Deprecated field, will return an empty string.
               nickname:
-                type: string(256)
+                type: string
                 description: Buyer nickname.
           items:
             type: array
@@ -572,7 +572,7 @@ paths:
                   type: string
                   description: Item category.
                 currency_id:
-                  type: string(3)
+                  type: string
                   description: ID of the currency used in the item price.
                 description:
                   type: string

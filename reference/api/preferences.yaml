@@ -15,22 +15,22 @@ paths:
               type: object
               properties:
                 id:
-                  type: string(256)
+                  type: string
                   description: Item ID.
                 title:
-                  type: string(256)
+                  type: string
                   example: Dummy Title
                   description: Item title. It will be displayed in the payment process.
                 description:
-                  type: string(256)
+                  type: string
                   example: Dummy description
                   description: Item description.
                 picture_url:
-                  type: string(600)
+                  type: string
                   example: http://www.myapp.com/myimage.jpg
                   description: Item image URL.
                 category_id:
-                  type: string(256)
+                  type: string
                   example: cat123
                   description: Item category ID.
                 quantity:
@@ -38,7 +38,7 @@ paths:
                   example: 1
                   description: Item quantity.
                 currency_id:
-                  type: string(3)
+                  type: string
                   example: U$
                   description: Currency ID. ISO_4217 code.
                 unit_price:
@@ -50,43 +50,43 @@ paths:
             description: Buyer Information.
             properties:
               name:
-                type: string(256)
+                type: string
                 description: Buyer name.
               surname:
-                type: string(256)
+                type: string
                 description: Buyer last name.
               email:
-                type: string(256)
+                type: string
                 description: Buyer e-mail address.
               phone:
                 type: Object
                 description: Buyer phone.
                 properties:
                   area_code:
-                    type: string(256)
+                    type: string
                     description: Area code.
                   number:
-                    type: string(256)
+                    type: string
                     description: Number.
               identification:
                 type: Object
                 description: Personal identification.
                 properties:
                   type:
-                    type: string(256)
+                    type: string
                     description: Identification Type.
                   number:
-                    type: string(256)
+                    type: string
                     description: Number.
               address:
                 type: Object
                 description: Buyer address.
                 properties:
                   zip_code:
-                    type: string(256)
+                    type: string
                     description: Zip code.
                   street_name:
-                    type: string(256)
+                    type: string
                     description: Street name.
                   street_number:
                     type: Integer
@@ -107,7 +107,7 @@ paths:
                   type: object
                   properties:
                     id:
-                      type: string(256)
+                      type: string
                       description: Payment method ID.
               excluded_payment_types:
                 type: array
@@ -116,10 +116,10 @@ paths:
                   type: object
                   properties:
                     id:
-                      type: string(256)
+                      type: string
                       description: Payment method data_type ID.
               default_payment_method_id:
-                type: string(256)
+                type: string
                 description: Payment method to be preferred on the payments methods list.
               installments:
                 type: Integer
@@ -165,47 +165,47 @@ paths:
                 description: Shipping address.
                 properties:
                   zip_code:
-                    type: string(256)
+                    type: string
                     description: Zip code.
                   street_name:
-                    type: string(256)
+                    type: string
                     description: Street name.
                   city_name:
-                    type: string(256)
+                    type: string
                     description: City name.
                   state_name:
-                    type: string(256)
+                    type: string
                     description: State name.
                   street_number:
                     type: Integer
                     description: Street number.
                   floor:
-                    type: string(256)
+                    type: string
                     description: Floor.
                   apartment:
-                    type: string(256)
+                    type: string
                     description: Apartment.
           back_urls:
             type: Object
             description: URLs to return to the sellers website.
             properties:
               success:
-                type: string(600)
+                type: string
                 description: Approved payment URL.
               pending:
-                type: string(600)
+                type: string
                 description: Pending or in process payment URL.
               failure:
-                type: string(600)
+                type: string
                 description: Canceled payment URL.
           notification_url:
-            type: string(500)
+            type: string
             description: URL where you'd like to receive a payment notification.
           statement_descriptor:
             type: string
             description: 'How will look the payment in the card bill (e.g.: MERCADOPAGO).'
           additional_info:
-            type: string(600)
+            type: string
             description: Additional information.
           auto_return:
             type: string
@@ -213,7 +213,7 @@ paths:
               If specified, your buyers will be redirected back to your site
               immediately after completing the purchase.
           external_reference:
-            type: string(256)
+            type: string
             description: Reference you can synchronize with your payment system.
           expires:
             type: Boolean
@@ -228,7 +228,7 @@ paths:
             type: Date(ISO_8601)
             description: Date when the preference will be expired.
           marketplace:
-            type: string(256)
+            type: string
             description: 'Origin of the payment. Default value: NONE'
           marketplace_fee:
             type: Float
@@ -391,7 +391,7 @@ paths:
                             type: Date(ISO_8601)
                             description: Expiration date of cash payment.
                           external_reference:
-                            type: string(256)
+                            type: string
                             description: Reference you can synchronize with your payment system.
                           items:
                             type: array
@@ -400,34 +400,34 @@ paths:
                               type: object
                               properties:
                                 id:
-                                  type: string(256)
+                                  type: string
                                   description: Item ID.
                                 title:
-                                  type: string(256)
+                                  type: string
                                   example: Dummy Item
                                   description: >-
                                     Item title. It will be displayed in the payment
                                     process.
                                 description:
-                                  type: string(256)
+                                  type: string
                                   description: Item description.
                                 picture_url:
-                                  type: string(600)
+                                  type: string
                                   description: Item image URL.
                                 category_id:
-                                  type: string(256)
+                                  type: string
                                   description: Item category ID.
                                 quantity:
                                   type: Integer
                                   description: Item quantity.
                                 currency_id:
-                                  type: string(3)
+                                  type: string
                                   description: Currency ID. ISO_4217 code.
                                 unit_price:
                                   type: Float
                                   description: Unit price.
                           marketplace:
-                            type: string(256)
+                            type: string
                             description: 'Origin of the payment. Default value: NONE'
                           operation_type:
                             type: string
@@ -462,7 +462,7 @@ paths:
                 items:
                   properties:
                     id:
-                      type: string(UUID)
+                      type: string
                       example: 202809963-a2201f8d-11cb-443f-adf6-de5a42eed67d
                       description: Preference ID.
                     items:
@@ -472,23 +472,23 @@ paths:
                         type: object
                         properties:
                           id:
-                            type: string(256)
+                            type: string
                             example: 202809963-a2201f8d-11cb-443f-adf6-de5a42eed67d
                             description: Item ID.
                           title:
-                            type: string(256)
+                            type: string
                             example: Dummy Title
                             description: Item title. It will be displayed in the payment process.
                           description:
-                            type: string(256)
+                            type: string
                             example: Dummy description
                             description: Item description.
                           picture_url:
-                            type: string(600)
+                            type: string
                             example: http://www.myapp.com/myimage.jpg
                             description: Item image URL.
                           category_id:
-                            type: string(256)
+                            type: string
                             example: cat123
                             description: Item category ID.
                           quantity:
@@ -496,7 +496,7 @@ paths:
                             example: 1
                             description: Item quantity.
                           currency_id:
-                            type: string(3)
+                            type: string
                             example: U$
                             description: Currency ID. ISO_4217 code.
                           unit_price:
@@ -553,23 +553,23 @@ paths:
               type: object
               properties:
                 id:
-                  type: string(256)
+                  type: string
                   example: 202809963-a2201f8d-11cb-443f-adf6-de5a42eed67d
                   description: Item ID.
                 title:
-                  type: string(256)
+                  type: string
                   example: Dummy Title
                   description: Item title. It will be displayed in the payment process.
                 description:
-                  type: string(256)
+                  type: string
                   example: Dummy Description
                   description: Item description.
                 picture_url:
-                  type: string(600)
+                  type: string
                   example: http://www.myapp.com/myimage.jpg
                   description: Item image URL.
                 category_id:
-                  type: string(256)
+                  type: string
                   example: cat123
                   description: Item category ID.
                 quantity:
@@ -577,7 +577,7 @@ paths:
                   example: 1
                   description: Item quantity.
                 currency_id:
-                  type: string(3)
+                  type: string
                   example: U$
                   description: Currency ID. ISO_4217 code.
                 unit_price:
@@ -589,43 +589,43 @@ paths:
             description: Buyer Information.
             properties:
               name:
-                type: string(256)
+                type: string
                 description: Buyer name.
               surname:
-                type: string(256)
+                type: string
                 description: Buyer last name.
               email:
-                type: string(256)
+                type: string
                 description: Buyer e-mail address.
               phone:
                 type: Object
                 description: Buyer phone.
                 properties:
                   area_code:
-                    type: string(256)
+                    type: string
                     description: Area code.
                   number:
-                    type: string(256)
+                    type: string
                     description: Number.
               identification:
                 type: Object
                 description: Personal identification.
                 properties:
                   type:
-                    type: string(256)
+                    type: string
                     description: Identification Type.
                   number:
-                    type: string(256)
+                    type: string
                     description: Number.
               address:
                 type: Object
                 description: Buyer address.
                 properties:
                   zip_code:
-                    type: string(256)
+                    type: string
                     description: Zip code.
                   street_name:
-                    type: string(256)
+                    type: string
                     description: Street name.
                   street_number:
                     type: Integer
@@ -646,7 +646,7 @@ paths:
                   type: object
                   properties:
                     id:
-                      type: string(256)
+                      type: string
                       description: Payment method ID.
               excluded_payment_types:
                 type: array
@@ -655,10 +655,10 @@ paths:
                   type: object
                   properties:
                     id:
-                      type: string(256)
+                      type: string
                       description: Payment method data_type ID.
               default_payment_method_id:
-                type: string(256)
+                type: string
                 description: Payment method to be preferred on the payments methods list.
               installments:
                 type: Integer
@@ -704,44 +704,44 @@ paths:
                 description: Shipping address.
                 properties:
                   zip_code:
-                    type: string(256)
+                    type: string
                     description: Zip code.
                   street_name:
-                    type: string(256)
+                    type: string
                     description: Street name.
                   city_name:
-                    type: string(256)
+                    type: string
                     description: City name.
                   state_name:
-                    type: string(256)
+                    type: string
                     description: State name.
                   street_number:
                     type: Integer
                     description: Street number.
                   floor:
-                    type: string(256)
+                    type: string
                     description: Floor.
                   apartment:
-                    type: string(256)
+                    type: string
                     description: Apartment.
           back_urls:
             type: Object
             description: URLs to return to the sellers website.
             properties:
               success:
-                type: string(600)
+                type: string
                 description: Approved payment URL.
               pending:
-                type: string(600)
+                type: string
                 description: Pending or in process payment URL.
               failure:
-                type: string(600)
+                type: string
                 description: Canceled payment URL.
           notification_url:
-            type: string(500)
+            type: string
             description: URL where you'd like to receive a payment notification.
           additional_info:
-            type: string(600)
+            type: string
             description: Additional information.
           auto_return:
             type: string
@@ -749,7 +749,7 @@ paths:
               If specified, your buyers will be redirected back to your site
               immediately after completing the purchase.
           external_reference:
-            type: string(256)
+            type: string
             description: Reference you can synchronize with your payment system.
           expires:
             type: Boolean
@@ -764,7 +764,7 @@ paths:
             type: Date(ISO_8601)
             description: Date when the preference will be expired.
           marketplace:
-            type: string(256)
+            type: string
             description: 'Origin of the payment. Default value: NONE'
           marketplace_fee:
             type: Float
