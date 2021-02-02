@@ -222,6 +222,94 @@ paths:
             type: string
             description: Nao sei o que é
       responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  type: object
+                  properties: 
+                    id: 
+                      type: string
+                      example: 1562188766852
+                    expiration_month: 
+                      type: number
+                      example: 6
+                    expiration_year: 
+                      type: number
+                      example: 2023
+                    first_six_digits: 
+                      type: string
+                      example: 423564
+                    last_four_digits: 
+                      type: string
+                      example: 5682
+                    payment_method: 
+                      type: object
+                      properties: 
+                        id: 
+                          type: string
+                          example: visa
+                        name: 
+                          type: string
+                          example: visa
+                        payment_type_id: 
+                          type: string
+                          example: credit_card
+                        thumbnail: 
+                          type: string
+                          example: http://img.mlstatic.com/org-img/MP3/API/logos/visa.gif
+                        secure_thumbnail: 
+                          type: string
+                          example: https://www.mercadopago.com/org-img/MP3/API/logos/visa.gif
+                    security_code: 
+                      type: object
+                      properties: 
+                        length: 
+                          type: number
+                          example: 3
+                        card_location: 
+                          type: string
+                          example: back
+                    issuer: 
+                      type: object
+                      properties: 
+                        id: 
+                          type: number
+                          example: 25
+                        name: 
+                          type: string
+                          example: Visa
+                    cardholder: 
+                      type: object
+                      properties: 
+                        name: 
+                          type: string
+                          example: APRO
+                        identification: 
+                          type: object
+                          properties: 
+                            number: 
+                              type: string
+                              example: 19119119100
+                            type: 
+                              type: string
+                              example: CPF
+                    date_created: 
+                      type: string
+                      example: 2019-07-03T17:15:35.000-04:00
+                    date_last_updated: 
+                      type: string
+                      example: 2019-07-03T17:19:18.000-04:00
+                    customer_id: 
+                      type: string
+                      example: 448870796-7ZjwhKGxILixxN
+                    user_id: 
+                      type: string
+                      example: 448870796
+                    live_mode: 
+                      type: boolean
+
         '400':
           '100':
             description: the credentials are required.
