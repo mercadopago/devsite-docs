@@ -9,6 +9,92 @@ paths:
       requestBody:
         $ref: '#/schemas/customer'
       responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  type: object
+                  properties: 
+                    id: 
+                      type: string
+                      example: 000000001-sT93QZFAsfxU9P5
+                    email: 
+                      type: string
+                      example: bruno@gmail.com
+                    first_name: 
+                      type: string
+                      example: Bruce
+                    last_name: 
+                      type: string
+                      example: Wayne
+                    phone: 
+                      type: object
+                      properties: 
+                        area_code: 
+                          type: string
+                          example: 023
+                        number: 
+                          type: string
+                          example: 12345678
+                    identification: 
+                      type: object
+                      properties: 
+                        type: 
+                          type: string
+                          example: DNI
+                        number: 
+                          type: string
+                          example: 12345678
+                    address: 
+                      type: object
+                      properties: 
+                        id: 
+                          type: string
+                          format: nullable
+                        zip_code: 
+                          type: string
+                          example: SG1 2AX
+                        street_name: 
+                          type: string
+                          example: Old Knebworth Ln
+                        street_number: 
+                          type: string
+                          format: nullable
+                    date_registered: 
+                      type: string
+                      format: nullable
+                    description: 
+                      type: string
+                      example: Lorem Ipsum
+                    date_created: 
+                      type: string
+                      example: 2018-02-20T11:36:23.541-04:00
+                    date_last_updated: 
+                      type: string
+                      format: nullable
+                    metadata: 
+                      type: object
+                      properties:  
+                    default_card: 
+                      type: string
+                      format: nullable
+                    default_address: 
+                      type: string
+                      format: nullable
+                    cards: 
+                      type: array
+                      items: 
+                        type: object
+                        properties:  
+                    addresses: 
+                      type: array
+                      items: 
+                        type: object
+                        properties:  
+                    live_mode: 
+                      type: boolean
+
         '400':
           '100':
             description: the credentials are required.
@@ -565,32 +651,104 @@ paths:
             application/json:
               schema:
                 items:
-                  properties:
-                    id:
-                      type: string
-                      description: Customer ID.
-                    email:
-                      type: string
-                      description: Customer's email.
-                    first_name:
-                      type: string
-                      description: Customer's name.
-                    last_name:
-                      type: string
-                      description: Customer's last name.
-                    description:
-                      type: string
-                      description: Customer's description.
-                    identification:
-                      type: Object
-                      description: Customer identification's information.
-                      properties:
-                        type:
-                          type: string
-                          description: Identification's type.
-                        number:
-                          type: string
-                          description: Identification's number.
+                  type: object
+                  properties: 
+                    paging: 
+                      type: object
+                      properties: 
+                        limit: 
+                          type: number
+                          example: 10
+                        offset: 
+                          type: number
+                          example: 0
+                        total: 
+                          type: number
+                          example: 1
+                    results: 
+                      type: array
+                      items: 
+                        type: object
+                        properties: 
+                          address: 
+                            type: object
+                            properties: 
+                              id: 
+                                type: string
+                                format: nullable
+                              street_name: 
+                                type: string
+                                format: nullable
+                              street_number: 
+                                type: string
+                                format: nullable
+                              zip_code: 
+                                type: string
+                                format: nullable
+                          addresses: 
+                            type: array
+                            items: 
+                              type: object
+                              properties:  
+                          cards: 
+                            type: array
+                            items: 
+                              type: object
+                              properties:  
+                          date_created: 
+                            type: string
+                            example: 2017-05-05T00:00:00.000-04:00
+                          date_last_updated: 
+                            type: string
+                            example: 2017-05-05T09:23:25.021-04:00
+                          date_registered: 
+                            type: string
+                            format: nullable
+                          default_address: 
+                            type: string
+                            format: nullable
+                          default_card: 
+                            type: string
+                            example: 1493990563105
+                          description: 
+                            type: string
+                            format: nullable
+                          email: 
+                            type: string
+                            example: test@test.com
+                          first_name: 
+                            type: string
+                            format: nullable
+                          id: 
+                            type: string
+                            example: 123456789-jxOV430go9fx2e
+                          identification: 
+                            type: object
+                            properties: 
+                              number: 
+                                type: string
+                                format: nullable
+                              type: 
+                                type: string
+                                format: nullable
+                          last_name: 
+                            type: string
+                            format: nullable
+                          live_mode: 
+                            type: boolean
+                          metadata: 
+                            type: object
+                            properties:  
+                          phone: 
+                            type: object
+                            properties: 
+                              area_code: 
+                                type: string
+                                format: nullable
+                              number: 
+                                type: string
+                                format: nullable
+
         '400':
           '100':
               description: the credentials are required.
