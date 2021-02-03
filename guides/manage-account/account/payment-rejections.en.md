@@ -83,10 +83,6 @@ It’s simple. Add the script, adjust the section of your website where you inse
 > In case of unavailable value for a section, left empty.
 
 ### Implement the Device ID in your site
---
-
-
-
 
 To deploy the device on your website, you must add the following code:
 
@@ -115,9 +111,6 @@ X-meli-session-id: device_id
 ```
 
 ### Implement the Device ID in your native mobile application
---
-
-
 
 If you have a native application, you can capture the device information with our SDK and send it when creating the token. Follow these steps:
 

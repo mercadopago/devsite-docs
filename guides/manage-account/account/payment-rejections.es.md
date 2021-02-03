@@ -97,10 +97,6 @@ X-meli-session-id: device_id
 ```
 
 #### Puedes obtener el device ID de dos formas:
---
-
-
-
 
 - Automáticamente se crea una variable global de javascript con el nombre `MP_DEVICE_SESSION_ID` cuyo valor es el `device_id`. Si prefieres que lo asignemos a otra variable, indica el nombre agregando el atributo `output`.
 
