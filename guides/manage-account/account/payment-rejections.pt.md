@@ -180,7 +180,6 @@ DeviceSDK.getInstance().execute(this);
 Execute alguma das funções abaixo para obter a informação no formato que precisar.
 
 [[[
-
 ```swift
 MercadoPagoDevicesSDK.shared.getInfo() // Devolve um objeto Device que é Codificável
 MercadoPagoDevicesSDK.shared.getInfoAsJson() // Devolve um objeto em JSON
@@ -197,7 +196,6 @@ Device device = DeviceSDK.getInstance().getInfo() // Devolve um objeto Device, q
 Map deviceMap = DeviceSDK.getInstance().getInfoAsMap()  // Devolve um Map<String, Object>
 String jsonString = DeviceSDK.getInstance().getInfoAsJsonString() // Devolve uma String no formato JSON
 ```
-
 ]]]
 
 #### 4. Envie a informação
