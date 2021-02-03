@@ -250,9 +250,8 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 > 
 > Aumenta la seguridad de tu sitio web
 >
-> Con el código de seguridad, podrás proteger aún más tu sitio y obtener más pagos aprobados. Este te ayudará a prevenir el fraude y los pagos rechazados sin justificación.
->
-> ¡Es fácil! [Agrega el código](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/payment-rejections#bookmark_recomendaciones_para_mejorar_tu_aprobacion) en simples pasos.
+> Con el código de seguridad, podrás proteger aún más tu sitio y obtener más pagos aprobados. Este te ayudará a prevenir el fraude y los pagos rechazados sin justificación.<br><br>
+> ¡Es fácil! [Agrega el código](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/payment-rejections#bookmark_recomendaciones_para_mejorar_tu_aprobación) en simples pasos.
 
 
 #### Respuesta
