@@ -76,6 +76,114 @@ paths:
             type: string
             description: application identifier.
       responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  type: object
+                  properties: 
+                    id: 
+                      type: number
+                      example: 9999999999
+                    status: 
+                      type: string
+                      example: closed
+                    external_reference: 
+                      type: string
+                      example: default
+                    preference_id: 
+                      type: string
+                      example: Preference identification
+                    collector: 
+                      type: object
+                      properties: 
+                        id: 
+                          type: number
+                          example: 999999999
+                        nickname: 
+                          type: string
+                          format: nullable
+                    marketplace: 
+                      type: string
+                      example: NONE
+                    notification_url: 
+                      type: string
+                      format: nullable
+                    date_created: 
+                      type: string
+                      example: 2018-09-14T13:11:31.000-04:00
+                    last_updated: 
+                      type: string
+                      example: 2018-09-14T13:11:43.000-04:00
+                    sponsor_id: 
+                      type: string
+                      format: nullable
+                    shipping_cost: 
+                      type: number
+                      example: 0
+                    total_amount: 
+                      type: number
+                      example: 5
+                    site_id: 
+                      type: string
+                      example: mla
+                    paid_amount: 
+                      type: number
+                      example: 5
+                    refunded_amount: 
+                      type: number
+                      example: 0
+                    payer: 
+                      type: object
+                      properties: 
+                        id: 
+                          type: number
+                          example: 999999999
+                        email: 
+                          type: string
+                          example: 
+                    items: 
+                      type: array
+                      items: 
+                        type: object
+                        properties: 
+                          id: 
+                            type: string
+                            example: item id
+                          category_id: 
+                            type: string
+                            example: item category
+                          currency_id: 
+                            type: string
+                            example: [FAKER][CURRENCY][ACRONYM]
+                          description: 
+                            type: string
+                            example: item description
+                          picture_url: 
+                            type: string
+                            example: item picture url
+                          title: 
+                            type: string
+                            example: item title
+                          quantity: 
+                            type: number
+                            example: 1
+                          unit_price: 
+                            type: number
+                            example: 5
+                    cancelled: 
+                      type: boolean
+                    additional_info: 
+                      type: string
+                      example: additional information
+                    application_id: 
+                      type: number
+                      example: 10000000000000000
+                    order_status: 
+                      type: string
+                      example: payment_required
+
         '400':
           invalid_user_id:
             description: invalid users involved.
@@ -233,82 +341,330 @@ paths:
             application/json:
               schema:
                 items:
-                  properties:
-                    status:
-                      type: string
-                      description: Show the current merchant order state.
-                    external_reference:
-                      type: string
-                      description: Reference you can synchronize with your payment system.
-                    preference_id:
-                      type: string
-                      description: >-
-                        Payment preference identifier associated to the merchant
-                        order.
-                    marketplace:
-                      type: string
-                      description: 'Origin of the payment. Default value: ''NONE'''
-                    date_created:
-                      type: Date(ISO_8601)
-                      description: Order's creation date.
-                    last_updated:
-                      type: Date(ISO_8601)
-                      description: Order's last update date.
-                    sponsor_id:
-                      type: number
-                      description: Sponsor ID in Mercado Pago.
-                    site_id:
-                      type: string
-                      description: Country identifier that merchant order belongs to.
-                    payer:
-                      type: Object
-                      description: Buyer Information.
-                      properties:
-                        id:
-                          type: number
-                          description: Buyer id.
-                        email:
-                          type: string
-                          description: Deprecated field, will return an empty string.
-                        nickname:
-                          type: string
-                          description: Buyer nickname.
-                    items:
+                  type: object
+                  properties: 
+                    elements: 
                       type: array
-                      description: items information.
-                      items:
+                      items: 
                         type: object
-                        properties:
-                          id:
-                            type: string
-                            description: Item id.
-                          category_id:
-                            type: string
-                            description: Item category.
-                          currency_id:
-                            type: string
-                            description: ID of the currency used in the item price.
-                          description:
-                            type: string
-                            description: Item description.
-                          picture_url:
-                            type: string
-                            description: Item picture URL.
-                          quantity:
+                        properties: 
+                          id: 
                             type: number
-                            description: Item quantity.
-                          unit_price:
-                            type: number
-                            description: Item unit price.
-                          title:
+                            example: 9999999999
+                          status: 
                             type: string
-                            description: Item title.
-                    application_id:
-                      type: string
-                      description: application identifier.
-                    order_status:
-                      type: string
-                      description: Current merchant order status given the payments status.
+                            example: closed
+                          external_reference: 
+                            type: string
+                            example: default
+                          preference_id: 
+                            type: string
+                            example: Preference identification
+                          payments: 
+                            type: array
+                            items: 
+                              type: object
+                              properties: 
+                                id: 
+                                  type: number
+                                  example: 9999999999
+                                transaction_amount: 
+                                  type: number
+                                  example: 1
+                                total_paid_amount: 
+                                  type: number
+                                  example: 1
+                                shipping_cost: 
+                                  type: number
+                                  example: 0
+                                currency_id: 
+                                  type: string
+                                  example: $
+                                status: 
+                                  type: string
+                                  example: approved
+                                status_detail: 
+                                  type: string
+                                  example: accredited
+                                operation_type: 
+                                  type: string
+                                  example: regular_payment
+                                date_approved: 
+                                  type: string
+                                  example: 2019-04-02T14:35:35.000-04:00
+                                date_created: 
+                                  type: string
+                                  example: 2019-04-02T14:35:34.000-04:00
+                                last_modified: 
+                                  type: string
+                                  example: 2019-04-02T14:35:35.000-04:00
+                                amount_refunded: 
+                                  type: number
+                                  example: 0
+                          shipments: 
+                            type: array
+                            items: 
+                              type: object
+                              properties: 
+                                id: 
+                                  type: number
+                                  example: 99999999999
+                                shipment_type: 
+                                  type: string
+                                  example: shipping
+                                shipping_mode: 
+                                  type: string
+                                  example: me2
+                                picking_type: 
+                                  type: string
+                                  format: nullable
+                                status: 
+                                  type: string
+                                  example: delivered
+                                substatus: 
+                                  type: string
+                                  format: nullable
+                                items: 
+                                  type: array
+                                  items: 
+                                    type: object
+                                    properties: 
+                                      id: 
+                                        type: string
+                                        example: not specified
+                                      description: 
+                                        type: string
+                                        example: shipment item description
+                                      quantity: 
+                                        type: number
+                                        example: 1
+                                      dimensions: 
+                                        type: string
+                                        example: 1.0x10.0x23.0100.0
+                                      dimensions_source: 
+                                        type: string
+                                        format: nullable
+                                date_created: 
+                                  type: string
+                                  example: 2019-04-02T14:20:46.000-04:00
+                                last_modified: 
+                                  type: string
+                                  example: 2019-04-12T15:36:48.000-04:00
+                                date_first_printed: 
+                                  type: string
+                                  example: 2019-04-02T14:35:40.000-04:00
+                                service_id: 
+                                  type: number
+                                  example: 999
+                                sender_id: 
+                                  type: number
+                                  example: 999999999
+                                receiver_id: 
+                                  type: number
+                                  example: 999999999
+                                receiver_address: 
+                                  type: object
+                                  properties: 
+                                    id: 
+                                      type: number
+                                      example: 9999999999
+                                    address_line: 
+                                      type: string
+                                      example: address line
+                                    city: 
+                                      type: object
+                                      properties: 
+                                        id: 
+                                          type: string
+                                          format: nullable
+                                        name: 
+                                          type: string
+                                          example: City Name
+                                    state: 
+                                      type: object
+                                      properties: 
+                                        id: 
+                                          type: string
+                                          example: AR-X
+                                        name: 
+                                          type: string
+                                          example: state name
+                                    country: 
+                                      type: object
+                                      properties: 
+                                        id: 
+                                          type: string
+                                          example: AR
+                                        name: 
+                                          type: string
+                                          example: Argentina
+                                    latitude: 
+                                      type: string
+                                      example: 0.000000
+                                    longitude: 
+                                      type: string
+                                      example: 0.000000
+                                    comment: 
+                                      type: string
+                                      example: shipment comment
+                                    contact: 
+                                      type: string
+                                      example: shipment contact
+                                    phone: 
+                                      type: string
+                                      example: 9999999999
+                                    zip_code: 
+                                      type: string
+                                      example: 9999
+                                    street_name: 
+                                      type: string
+                                      example: Street name
+                                    street_number: 
+                                      type: string
+                                      example: 999
+                                    floor: 
+                                      type: string
+                                      format: nullable
+                                    apartment: 
+                                      type: string
+                                      format: nullable
+                                shipping_option: 
+                                  type: object
+                                  properties: 
+                                    id: 
+                                      type: number
+                                      example: 999999999
+                                    cost: 
+                                      type: number
+                                      example: 0
+                                    currency_id: 
+                                      type: string
+                                      example: $
+                                    shipping_method_id: 
+                                      type: number
+                                      example: 99999
+                                    estimated_delivery: 
+                                      type: object
+                                      properties: 
+                                        date: 
+                                          type: string
+                                          example: 2019-04-11T00:00:00.000-03:00
+                                        time_from: 
+                                          type: string
+                                          format: nullable
+                                        time_to: 
+                                          type: string
+                                          format: nullable
+                                    name: 
+                                      type: string
+                                      example: Normal a domicilio
+                                    list_cost: 
+                                      type: number
+                                      example: 0
+                                    speed: 
+                                      type: object
+                                      properties: 
+                                        handling: 
+                                          type: number
+                                          example: 72
+                                        shipping: 
+                                          type: number
+                                          example: 72
+                          collector: 
+                            type: object
+                            properties: 
+                              id: 
+                                type: number
+                                example: 999999999
+                              nickname: 
+                                type: string
+                                format: nullable
+                          marketplace: 
+                            type: string
+                            example: NONE
+                          notification_url: 
+                            type: string
+                            format: nullable
+                          date_created: 
+                            type: string
+                            example: 2018-09-14T13:11:31.000-04:00
+                          last_updated: 
+                            type: string
+                            example: 2018-09-14T13:11:43.000-04:00
+                          sponsor_id: 
+                            type: string
+                            format: nullable
+                          shipping_cost: 
+                            type: number
+                            example: 0
+                          total_amount: 
+                            type: number
+                            example: 5
+                          site_id: 
+                            type: string
+                            example: MLA
+                          paid_amount: 
+                            type: number
+                            example: 5
+                          refunded_amount: 
+                            type: number
+                            example: 0
+                          payer: 
+                            type: object
+                            properties: 
+                              id: 
+                                type: number
+                                example: 999999999
+                              email: 
+                                type: string
+                                example: 
+                          items: 
+                            type: array
+                            items: 
+                              type: object
+                              properties: 
+                                id: 
+                                  type: string
+                                  example: item id
+                                category_id: 
+                                  type: string
+                                  example: item category
+                                currency_id: 
+                                  type: string
+                                  example: $
+                                description: 
+                                  type: string
+                                  example: item description
+                                picture_url: 
+                                  type: string
+                                  example: item picture url
+                                title: 
+                                  type: string
+                                  example: item title
+                                quantity: 
+                                  type: number
+                                  example: 1
+                                unit_price: 
+                                  type: number
+                                  example: 5
+                          cancelled: 
+                            type: boolean
+                          additional_info: 
+                            type: string
+                            example: additional information
+                          application_id: 
+                            type: number
+                            example: 10000000000000000
+                          order_status: 
+                            type: string
+                            example: paid
+                    next_offset: 
+                      type: number
+                      example: 1
+                    total: 
+                      type: number
+                      example: 1
+
         '400':
           ds_search_query:
             description: invalid query.
@@ -338,10 +694,319 @@ paths:
             application/json:
               schema:
                 items:
-                  properties:
-                    id:
+                  type: object
+                  properties: 
+                    id: 
                       type: number
-                      description: Order identifier.
+                      example: 9999999999
+                    status: 
+                      type: string
+                      example: closed
+                    external_reference: 
+                      type: string
+                      example: default
+                    preference_id: 
+                      type: string
+                      example: Preference identification
+                    payments: 
+                      type: array
+                      items: 
+                        type: object
+                        properties: 
+                          id: 
+                            type: number
+                            example: 9999999999
+                          transaction_amount: 
+                            type: number
+                            example: 1
+                          total_paid_amount: 
+                            type: number
+                            example: 1
+                          shipping_cost: 
+                            type: number
+                            example: 0
+                          currency_id: 
+                            type: string
+                            example: $
+                          status: 
+                            type: string
+                            example: approved
+                          status_detail: 
+                            type: string
+                            example: accredited
+                          operation_type: 
+                            type: string
+                            example: regular_payment
+                          date_approved: 
+                            type: string
+                            example: 2019-04-02T14:35:35.000-04:00
+                          date_created: 
+                            type: string
+                            example: 2019-04-02T14:35:34.000-04:00
+                          last_modified: 
+                            type: string
+                            example: 2019-04-02T14:35:35.000-04:00
+                          amount_refunded: 
+                            type: number
+                            example: 0
+                    shipments: 
+                      type: array
+                      items: 
+                        type: object
+                        properties: 
+                          id: 
+                            type: number
+                            example: 99999999999
+                          shipment_type: 
+                            type: string
+                            example: shipping
+                          shipping_mode: 
+                            type: string
+                            example: me2
+                          picking_type: 
+                            type: string
+                            format: nullable
+                          status: 
+                            type: string
+                            example: delivered
+                          substatus: 
+                            type: string
+                            format: nullable
+                          items: 
+                            type: array
+                            items: 
+                              type: object
+                              properties: 
+                                id: 
+                                  type: string
+                                  example: not specified
+                                description: 
+                                  type: string
+                                  example: shipment item description
+                                quantity: 
+                                  type: number
+                                  example: 1
+                                dimensions: 
+                                  type: string
+                                  example: 1.0x10.0x23.0100.0
+                                dimensions_source: 
+                                  type: string
+                                  format: nullable
+                          date_created: 
+                            type: string
+                            example: 2019-04-02T14:20:46.000-04:00
+                          last_modified: 
+                            type: string
+                            example: 2019-04-12T15:36:48.000-04:00
+                          date_first_printed: 
+                            type: string
+                            example: 2019-04-02T14:35:40.000-04:00
+                          service_id: 
+                            type: number
+                            example: 999
+                          sender_id: 
+                            type: number
+                            example: 999999999
+                          receiver_id: 
+                            type: number
+                            example: 999999999
+                          receiver_address: 
+                            type: object
+                            properties: 
+                              id: 
+                                type: number
+                                example: 9999999999
+                              address_line: 
+                                type: string
+                                example: address line
+                              city: 
+                                type: object
+                                properties: 
+                                  id: 
+                                    type: string
+                                    format: nullable
+                                  name: 
+                                    type: string
+                                    example: City Name
+                              state: 
+                                type: object
+                                properties: 
+                                  id: 
+                                    type: string
+                                    example: AR-X
+                                  name: 
+                                    type: string
+                                    example: state name
+                              country: 
+                                type: object
+                                properties: 
+                                  id: 
+                                    type: string
+                                    example: AR
+                                  name: 
+                                    type: string
+                                    example: Argentina
+                              latitude: 
+                                type: string
+                                example: 0.000000
+                              longitude: 
+                                type: string
+                                example: 0.000000
+                              comment: 
+                                type: string
+                                example: shipment comment
+                              contact: 
+                                type: string
+                                example: shipment contact
+                              phone: 
+                                type: string
+                                example: 9999999999
+                              zip_code: 
+                                type: string
+                                example: 9999
+                              street_name: 
+                                type: string
+                                example: Street name
+                              street_number: 
+                                type: string
+                                example: 999
+                              floor: 
+                                type: string
+                                format: nullable
+                              apartment: 
+                                type: string
+                                format: nullable
+                          shipping_option: 
+                            type: object
+                            properties: 
+                              id: 
+                                type: number
+                                example: 999999999
+                              cost: 
+                                type: number
+                                example: 0
+                              currency_id: 
+                                type: string
+                                example: $
+                              shipping_method_id: 
+                                type: number
+                                example: 99999
+                              estimated_delivery: 
+                                type: object
+                                properties: 
+                                  date: 
+                                    type: string
+                                    example: 2019-04-11T00:00:00.000-03:00
+                                  time_from: 
+                                    type: string
+                                    format: nullable
+                                  time_to: 
+                                    type: string
+                                    format: nullable
+                              name: 
+                                type: string
+                                example: Normal a domicilio
+                              list_cost: 
+                                type: number
+                                example: 0
+                              speed: 
+                                type: object
+                                properties: 
+                                  handling: 
+                                    type: number
+                                    example: 72
+                                  shipping: 
+                                    type: number
+                                    example: 72
+                    collector: 
+                      type: object
+                      properties: 
+                        id: 
+                          type: number
+                          example: 999999999
+                        nickname: 
+                          type: string
+                          format: nullable
+                    marketplace: 
+                      type: string
+                      example: NONE
+                    notification_url: 
+                      type: string
+                      format: nullable
+                    date_created: 
+                      type: string
+                      example: 2018-09-14T13:11:31.000-04:00
+                    last_updated: 
+                      type: string
+                      example: 2018-09-14T13:11:43.000-04:00
+                    sponsor_id: 
+                      type: string
+                      format: nullable
+                    shipping_cost: 
+                      type: number
+                      example: 0
+                    total_amount: 
+                      type: number
+                      example: 5
+                    site_id: 
+                      type: string
+                      example: mla
+                    paid_amount: 
+                      type: number
+                      example: 5
+                    refunded_amount: 
+                      type: number
+                      example: 0
+                    payer: 
+                      type: object
+                      properties: 
+                        id: 
+                          type: number
+                          example: 999999999
+                        email: 
+                          type: string
+                          example: 
+                    items: 
+                      type: array
+                      items: 
+                        type: object
+                        properties: 
+                          id: 
+                            type: string
+                            example: item id
+                          category_id: 
+                            type: string
+                            example: item category
+                          currency_id: 
+                            type: string
+                            example: $
+                          description: 
+                            type: string
+                            example: item description
+                          picture_url: 
+                            type: string
+                            example: item picture url
+                          title: 
+                            type: string
+                            example: item title
+                          quantity: 
+                            type: number
+                            example: 1
+                          unit_price: 
+                            type: number
+                            example: 5
+                    cancelled: 
+                      type: boolean
+                    additional_info: 
+                      type: string
+                      example: additional information
+                    application_id: 
+                      type: number
+                      example: 10000000000000000
+                    order_status: 
+                      type: string
+                      example: paid
+
         '400':
           invalid_format:
             description: invalid caller.id.
