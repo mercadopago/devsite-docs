@@ -52,7 +52,7 @@ Cuando nuestro sistema de prevención de fraude detecta un pago sospechoso, pued
 
 Para evitar que un pago real se rechace por no cumplir con las validaciones de seguridad, es necesario sumar toda la información posible a la hora de realizar la operación. 
 
-Te ayudamos a detectar comportamientos inusuales de los clientes con nuestro código de seguridad o el device ID para prevenir el fraude. Y no te preocupes, no guardaremos ni compartiremos los datos de tus clientes.
+Te ayudamos a detectar comportamientos inusuales de los clientes con nuestro código de seguridad y el device ID para prevenir el fraude. Y no te preocupes, no guardaremos ni compartiremos los datos de tus clientes.
 
 > NOTE
 >
@@ -84,28 +84,32 @@ Es muy simple. Agrega el script, configura la sección de tu sitio en la que se 
 
 ### Implementa el device ID en tu sitio
 
-Para implementar en tu sitio la generación del device debes agregar el siguiente código a tu plataforma de pagos:
+Para implementar en tu sitio la generación del device debes agregar el siguiente código:
 
 ```html
 <script src="https://www.mercadopago.com/v2/security.js" view="checkout"></script>
 ```
 
-Es importante que envíes el `device_id` generado por este código a tu servidor y que al momento de crear el pago agregues el siguiente header al request:
+Es importante que envíes el `device_id` generado por este código a tu servidor y que al momento de crear el pago agregues el siguiente header por la solicitud:
 
 ```http
 X-meli-session-id: device_id
 ```
 
-**Puedes obtener el `device_id` de dos formas:**
+#### Puedes obtener el device ID de dos formas:
+--
 
-Automáticamente se crea una variable global de javascript con el nombre `MP_DEVICE_SESSION_ID` cuyo valor es el `device_id`. Si prefieres que lo asignemos a otra variable, indica el nombre agregando el atributo `output`.
+
+
+
+- Automáticamente se crea una variable global de javascript con el nombre `MP_DEVICE_SESSION_ID` cuyo valor es el `device_id`. Si prefieres que lo asignemos a otra variable, indica el nombre agregando el atributo `output`.
 
 
 ```html
 <script src="https://www.mercadopago.com/v2/security.js" view="checkout" output="deviceId"></script>
 ````
 
-Si quieres crear una variable propia, puedes agregar una etiqueta HTML en tu sitio con el identificador `id="deviceId"` y el código le asignará automáticamente el valor `device_id`.
+- Si quieres crear una variable propia, puedes agregar una etiqueta HTML en tu sitio con el identificador `id="deviceId"` y el código le asignará automáticamente el valor `device_id`.
 
 ```html
 <input type="hidden" id="deviceId">
@@ -113,12 +117,11 @@ Si quieres crear una variable propia, puedes agregar una etiqueta HTML en tu sit
 
 ### Implementa el device ID en tu aplicación móvil nativa
 
-Si tienes una aplicación nativa, puedes capturar la información del dispositivo con nuestro SDK y enviarla al momento de crear el token.
+Si tienes una aplicación nativa, puedes capturar la información del dispositivo con nuestro SDK y enviarla al momento de crear el token. Sigue estos pasos:
 
 #### 1. Agrega la dependencia
 
 [[[
-
 ```ios
 ===
 Agrega el siguiente código en el archivo **Podfile**.
@@ -134,13 +137,11 @@ dependencies {
    implementation 'com.mercadolibre.android.device:sdk:1.0.0'
 }
 ```
-
 ]]]
 
 #### 2. Inicializa el módulo
 
 [[[
-
 ```swift
 ===
 Te recomendamos iniciarlo en el evento didFinishLaunchingWithOptions del AppDelegate.
@@ -176,13 +177,11 @@ DeviceSDK.getInstance().execute(this);
 ```
 
 ]]]
-
 #### 3. Captura la información
 
 Ejecuta alguna de estas funciones para obtener la información en el formato que prefieras.
 
 [[[
-
 ```swift
 MercadoPagoDevicesSDK.shared.getInfo() // devuelve un objeto Device que es Codable
 MercadoPagoDevicesSDK.shared.getInfoAsJson() // devuelve un objeto Data de la librería de JSON
@@ -199,7 +198,6 @@ Device device = DeviceSDK.getInstance().getInfo() // devuelve un objeto Device, 
 Map deviceMap = DeviceSDK.getInstance().getInfoAsMap()  // devuelve un Map<String, Object>
 String jsonString = DeviceSDK.getInstance().getInfoAsJsonString() // devuelve un String de tipo Json
 ```
-
 ]]]
 
 #### 4. Envía la información
