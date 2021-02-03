@@ -1,5 +1,5 @@
 paths:
-  /identification_types:
+  /v1/identification_types:
     get:
       tags:
         - $ref: '#/tags/qr-code/description'
