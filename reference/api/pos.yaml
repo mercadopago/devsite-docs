@@ -38,6 +38,64 @@ paths:
               URL to get the order of the integrator system. It is optional and
               is used only in the unattended integration model.
       responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  type: object
+                  definitions: 
+                    id: 
+                      type: number
+                      example: 2711382
+                    qr: 
+                      type: object
+                      properties: 
+                        image: 
+                          type: string
+                          example: https://www.mercadopago.com/instore/merchant/qr/2711382/0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.png
+                        template_document: 
+                          type: string
+                          example: https://www.mercadopago.com/instore/merchant/qr/2711382/template_0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.pdf
+                        template_image: 
+                          type: string
+                          example: https://www.mercadopago.com/instore/merchant/qr/2711382/template_0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.png
+                    status: 
+                      type: string
+                      example: active
+                    date_created: 
+                      type: string
+                      example: 2019-08-22T10:11:12.000-04:00
+                    date_last_updated: 
+                      type: string
+                      example: 2019-08-22T10:11:12.000-04:00
+                    uuid: 
+                      type: string
+                      example: 0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1
+                    user_id: 
+                      type: number
+                      example: 446566691
+                    name: 
+                      type: string
+                      example: Caja Principal
+                    fixed_amount: 
+                      type: boolean
+                    category: 
+                      type: number
+                      example: 621102
+                    store_id: 
+                      type: string
+                      example: 12345678
+                    external_store_id: 
+                      type: string
+                      example: BK021
+                    url: 
+                      type: string
+                      example: https://www.miempresa.com/MP?locationId=6232&positionId=01
+                    external_id: 
+                      type: string
+                      example: 4lph4num3r1c
+
         '400':
           MISSING_BODY:
             description: HTTP body is required to create pos.
@@ -103,26 +161,67 @@ paths:
             application/json:
               schema:
                 items:
-                  properties:
-                    category:
-                      type: number
-                      description: >-
-                        MCC code that indicates the category of the Point of
-                        Sale. If not specified, it remains as a generic
-                        category.
-                    store_id:
-                      type: string
-                      description: Store identifier to which the point of sale belongs.
-                    external_store_id:
-                      type: string
-                      description: >-
-                        External_id of the store to which the pos belongs
-                        defined by integrator system. (Required)
-                    external_id:
-                      type: string
-                      description: >-
-                        Unique identifier of the pos defined by integrator
-                        system.
+                  type: object
+                  properties: 
+                    paging: 
+                      type: object
+                      properties: 
+                        total: 
+                          type: number
+                          example: 2
+                        offset: 
+                          type: number
+                          example: 0
+                        limit: 
+                          type: number
+                          example: 0
+                    results: 
+                      type: array
+                      items: 
+                        type: object
+                        properties: 
+                          user_id: 
+                            type: number
+                            example: 446566691
+                          name: 
+                            type: string
+                            example: Caja Principal
+                          fixed_amount: 
+                            type: boolean
+                          category: 
+                            type: number
+                            example: 621102
+                          store_id: 
+                            type: string
+                            example: 12345678
+                          external_id: 
+                            type: string
+                            example: CAJA001
+                          id: 
+                            type: number
+                            example: 1988157
+                          qr: 
+                            type: object
+                            properties: 
+                              image: 
+                                type: string
+                                example: https://www.mercadopago.com/instore/merchant/qr/1988157/1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.png
+                              template_document: 
+                                type: string
+                                example: https://www.mercadopago.com/instore/merchant/qr/1988157/template_1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.pdf
+                              template_image: 
+                                type: string
+                                example: https://www.mercadopago.com/instore/merchant/qr/1988157/template_1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.png
+                          date_created: 
+                            type: string
+                            example: 2019-06-24T09:31:56.000-04:00
+                          date_last_updated: 
+                            type: string
+                            example: 2019-08-07T17:07:26.000-04:00
+                          external_store_id: 
+                            type: string
+                            example: SUC001
+
         '400':
           INVALID_CATEGORY:
             description: The CATEGORY must be numeric.
