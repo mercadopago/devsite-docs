@@ -20,10 +20,72 @@ paths:
             application/json:
               schema:
                 items:
-                  properties:
-                    id:
+                  type: object
+                  properties: 
+                    id: 
                       type: string
-                      description: Store identifier, numerical and self-generated.
+                      example: 30163646
+                    name: 
+                      type: string
+                      example: Sucursal Instore
+                    date_creation: 
+                      type: string
+                      format: date-time
+                      example: 2019-09-09T09:25:56Z
+                    business_hours: 
+                      type: object
+                      properties: 
+                        monday: 
+                          type: array
+                          items: 
+                            type: object
+                            properties: 
+                              open: 
+                                type: string
+                                example: 08:00
+                              close: 
+                                type: string
+                                example: 13:00
+                        tuesday: 
+                          type: array
+                          items: 
+                            type: object
+                            properties: 
+                              open: 
+                                type: string
+                                example: 08:00
+                              close: 
+                                type: string
+                                example: 18:00
+                        wednesday: 
+                          type: array
+                          items: 
+                            type: object
+                            properties: 
+                              open: 
+                                type: string
+                                example: 07:00
+                              close: 
+                                type: string
+                                example: 10:00
+                    location: 
+                      type: object
+                      properties: 
+                        address_line: 
+                          type: string
+                          example: Caseros 3039 Belgrano Capital Federal Argentina
+                        reference: 
+                          type: string
+                          example: 3er Piso
+                        latitude: 
+                          type: number
+                          example: -32.8897322
+                        longitude: 
+                          type: number
+                          example: -68.8443275
+                    external_id: 
+                      type: string
+                      example: SUC001
         '400':
           INVALID_STORE_ID:
             description: Invalid STORE_ID.
@@ -90,6 +152,66 @@ paths:
                 type: string
                 description: Reference.
       responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  type: object
+                  properties: 
+                    id: 
+                      type: string
+                      example: 1234567
+                    name: 
+                      type: string
+                      example: Sucursal Instore
+                    date_created: 
+                      type: string
+                      example: 2019-08-08T19:29:45.019Z
+                    business_hours: 
+                      type: object
+                      properties: 
+                        monday: 
+                          type: array
+                          items: 
+                            type: object
+                            properties: 
+                              open: 
+                                type: string
+                                example: 08:00
+                              close: 
+                                type: string
+                                example: 12:00
+                        tuesday: 
+                          type: array
+                          items: 
+                            type: object
+                            properties: 
+                              open: 
+                                type: string
+                                example: 09:00
+                              close: 
+                                type: string
+                                example: 18:00
+                    location: 
+                      type: object
+                      properties: 
+                        address_line: 
+                          type: string
+                          example: Caseros 3039 Belgrano Capital Federal
+                        latitude: 
+                          type: number
+                          example: -32.8897322
+                        longitude: 
+                          type: number
+                          example: -68.8443275
+                        reference: 
+                          type: string
+                          example: 3er Piso
+                    external_id: 
+                      type: string
+                      example: 1234
+
         '400':
           INVALID_USER_ID:
             description: USER_ID must be number.
@@ -147,15 +269,90 @@ paths:
             application/json:
               schema:
                 items:
-                  properties:
-                    user_id:
-                      type: string
-                      description: User identifier.
-                    external_id:
-                      type: string
-                      description: >-
-                        Unique identifier of the store defined by integrator
-                        system.
+                  type: object
+                  properties: 
+                    paging: 
+                      type: object
+                      properties: 
+                        total: 
+                          type: number
+                          example: 2
+                        offset: 
+                          type: number
+                          example: 0
+                        limit: 
+                          type: number
+                          example: 30
+                    results: 
+                      type: array
+                      items: 
+                        type: object
+                        properties: 
+                          id: 
+                            type: string
+                            example: 30163646
+                          name: 
+                            type: string
+                            example: Sucursal Instore
+                          date_creation: 
+                            type: string
+                            format: date-time
+                            example: 2019-09-09T09:25:56Z
+                          business_hours: 
+                            type: object
+                            properties: 
+                              monday: 
+                                type: array
+                                items: 
+                                  type: object
+                                  properties: 
+                                    open: 
+                                      type: string
+                                      example: 08:00
+                                    close: 
+                                      type: string
+                                      example: 13:00
+                              tuesday: 
+                                type: array
+                                items: 
+                                  type: object
+                                  properties: 
+                                    open: 
+                                      type: string
+                                      example: 08:00
+                                    close: 
+                                      type: string
+                                      example: 18:00
+                              wednesday: 
+                                type: array
+                                items: 
+                                  type: object
+                                  properties: 
+                                    open: 
+                                      type: string
+                                      example: 07:00
+                                    close: 
+                                      type: string
+                                      example: 10:00
+                          location: 
+                            type: object
+                            properties: 
+                              address_line: 
+                                type: string
+                                example: Caseros 3039 Belgrano Capital Federal Argentina
+                              reference: 
+                                type: string
+                                example: 3er Piso
+                              latitude: 
+                                type: number
+                                example: -32.8897322
+                              longitude: 
+                                type: number
+                                example: -68.8443275
+                          external_id: 
+                            type: string
+                            example: SUC001
+
         '400':
           INVALID_USER_ID:
             description: USER_ID must be number.
