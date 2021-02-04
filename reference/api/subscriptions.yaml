@@ -49,6 +49,77 @@ paths:
             type: string
             description: Preapproval status.
       responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                items:
+                  type: object
+                  properties: 
+                    id: 
+                      type: string
+                      example: 2c938084726fca480172750000000000
+                    payer_id: 
+                      type: number
+                      example: 123123123
+                    payer_email: 
+                      type: string
+                      example: test_user@testuser.com
+                    back_url: 
+                      type: string
+                      example: https://www.mercadopago.com.ar
+                    collector_id: 
+                      type: number
+                      example: 100200300
+                    application_id: 
+                      type: number
+                      example: 1234567812345678
+                    status: 
+                      type: string
+                      example: pending
+                    reason: 
+                      type: string
+                      example: Suscripcion Particular
+                    external_reference: 
+                      type: string
+                      example: 23546246234
+                    date_created: 
+                      type: string
+                      example: 2020-06-02T09:07:14.260-04:00
+                    last_modified: 
+                      type: string
+                      example: 2020-06-02T09:07:14.263-04:00
+                    init_point: 
+                      type: string
+                      example: https://www.mercadopago.com/[FAKER][GLOBALIZE][UPPER_SITE_ID]/debits/new?preapproval_id=2c938084726fca480172750000000000
+                    sandbox_init_point: 
+                      type: string
+                      example: https://sandbox.mercadopago.com/[FAKER][GLOBALIZE][UPPER_SITE_ID]/debits/new?preapproval_id=2c938084726fca480172750000000000
+                    auto_recurring: 
+                      type: object
+                      properties: 
+                        frequency: 
+                          type: number
+                          example: 1
+                        frequency_type: 
+                          type: string
+                          example: months
+                        transaction_amount: 
+                          type: number
+                          example: 10
+                        currency_id: 
+                          type: string
+                          example: ARS
+                        start_date: 
+                          type: string
+                          example: 2020-06-02T09:07:14.260-04:00
+                        end_date: 
+                          type: string
+                          example: 2022-07-20T11:59:52.581-04:00
+                    version: 
+                      type: number
+                      example: 0
+
         '400':
           Card token was used, please generate new:
             description: Card token was used, please generate new.
