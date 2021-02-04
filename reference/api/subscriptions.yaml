@@ -91,10 +91,10 @@ paths:
                       example: 2020-06-02T09:07:14.263-04:00
                     init_point: 
                       type: string
-                      example: https://www.mercadopago.com/[FAKER][GLOBALIZE][UPPER_SITE_ID]/debits/new?preapproval_id=2c938084726fca480172750000000000
+                      example: https://www.mercadopago.com/MLB/debits/new?preapproval_id=2c938084726fca480172750000000000
                     sandbox_init_point: 
                       type: string
-                      example: https://sandbox.mercadopago.com/[FAKER][GLOBALIZE][UPPER_SITE_ID]/debits/new?preapproval_id=2c938084726fca480172750000000000
+                      example: https://sandbox.mercadopago.com/MLB/debits/new?preapproval_id=2c938084726fca480172750000000000
                     auto_recurring: 
                       type: object
                       properties: 

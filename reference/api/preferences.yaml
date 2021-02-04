@@ -718,7 +718,7 @@ paths:
                             example: item-ID-1234
                           currency_id: 
                             type: string
-                            example: [FAKER][CURRENCY][ACRONYM]
+                            example: $
                           title: 
                             type: string
                             example: Practical Granite Shirt

@@ -156,7 +156,7 @@ paths:
                             example: item category
                           currency_id: 
                             type: string
-                            example: [FAKER][CURRENCY][ACRONYM]
+                            example: $
                           description: 
                             type: string
                             example: item description
