@@ -12,10 +12,11 @@ paths:
             application/json:
               schema:
                 items:
+                  type: array
                   properties:
                     id:
                       type: string
-                      example: "cpf"
+                      example: "CPF"
                       description: Identification type id.
                     name:
                       type: string
@@ -23,15 +24,15 @@ paths:
                       description: Identification type name.
                     type:
                       type: string
-                      example: string
+                      example: number
                       description: Identification number data type.
                     min_length:
                       type: number
-                      example: 0
+                      example: 11
                       description: Identification number min length.
                     max_length:
                       type: number
-                      example: 10
+                      example: 11
                       description: Identification number max length
         '400':
           '1001':
