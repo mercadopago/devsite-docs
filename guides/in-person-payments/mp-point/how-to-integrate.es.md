@@ -87,18 +87,24 @@ En el artículo de [GitHub](https://github.com/mercadopago/point-android_integra
 
 
 ## Integración vía API
-
 > WARNING
 >
 > Importante
 >
 > * Esta integración sólo esta disponible para Android versión 2.8.0 o superior.
 > * No esta disponible para iOS.
-> * Para poder utilizar esta integración es necesario que te comuniques con [soporte](https://www.mercadopago.com.ar/developers/es/support/) para que te habiliten las opciones de integraciones en la app de Mercado Pago.
-
 La otra forma de integrarse con la aplicación de Mercado Pago para cobrar con nuestro Point es mediante nuestras API.
-
-Para esta integración, primero es necesario configurar desde la aplicación de Mercado Pago el `device_name` . El mismo sirve para identificar tu celular o tablet y relacionarlo con tu cuenta de Mercado Pago. De esta manera, sabrás a que dispositivo enviar la orden de pago.
+<br>
+<br>
+Para poder integrarte, tienes que habilitar las opciones de itegraciones  en la app de Mercado Pago. Ejecuta el siguiente curl para realizarlo:
+```curl
+--location --request POST ‘https://api.mercadopago.com/point/services/user/status/integrators?access_token=<ENV_ACCESTOKEN>’ \
+--header ‘Content-Type: application/json’ \
+--data-raw ‘{
+    “id”: <user_id>
+}’
+```
+Luego es necesario configurar desde la aplicación de Mercado Pago el `device_name`. El mismo sirve para identificar tu celular o tablet y relacionarlo con tu cuenta de Mercado Pago. De esta manera, sabrás a que dispositivo enviar la orden de pago.
 
 El siguiente paso, consiste en generar una orden de pago y enviarsela vía API al device desde donde queres cobrarla. El usuario verá que en la pantalla de ese dispositivo se levanta la aplicación de Mercado Pago lista para pasar la tarjeta y avanzar con el flujo de pago utilizando el Point.
 
