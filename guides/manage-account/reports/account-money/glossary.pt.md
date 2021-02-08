@@ -40,6 +40,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | SHIPMENT_MODE | Modalidade de envio. |
 | PACK_ID | Identificador do pacote no carrinho. |
 | TAXES_DISAGGREGATED | Impostos desagregados no formato JSON. |
+| POI_ID | Número de série da maquininha (S/N). |
 
 <hr/>
 

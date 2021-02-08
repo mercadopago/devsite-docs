@@ -35,6 +35,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | PACK_ID | Identificador do pacote no carrinho. |
 | TAXES_DISAGGREGATED | Impostos desagregados no formato JSON. |
 | EFFECTIVE_COUPON_AMOUNT | Custo de oferecer desconto. |
+| POI_ID | Número de série da maquininha (S/N). |
 
 <hr/>
 
