@@ -9,14 +9,29 @@ sites_supported:
 
 By automating the recurrence of your collections, authorized payments that will have a debit date configured based on the periodicity that was defined in the subscription are created.
 
+----[mla]----
+
 ## Payment statuses
 At the time the instalment is collected, three alternatives may arise, based on the outcome of the payment:
 
 * __Payment is successfully made__ so, the instalment will remain as `processed` and will not be reattempted. 
-----[mla]----
+
 * __Payment is being processed__ so the instalment will be pending in a `waiting for gateway` status until the payment is resolved.
-------------
+
 * __Payment is declined__ so the installment will always remain in `recycling` status and when the installment is not expired or has not reached the maximum number of reattempts. Otherwise, it will be processed with the `processed` status.
+
+------------
+
+----[mlb, mlm]----
+
+## Payment statuses
+At the time the instalment is collected, two alternatives may arise, based on the outcome of the payment:
+
+* __Payment is successfully made__ so, the instalment will remain as `processed` and will not be reattempted. 
+
+* __Payment is declined__ so the installment will always remain in `recycling` status and when the installment is not expired or has not reached the maximum number of reattempts. Otherwise, it will be processed with the `processed` status.
+
+------------
 
 ## Declined payments
 
