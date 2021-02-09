@@ -93,9 +93,7 @@ In the [GitHub](https://github.com/mercadopago/point-android_integration#intent)
 > * This integration is only available for Android version 2.8.0 or higher.<br>
 > * Not available for iOS.
 
-The other way to integrate the Mercado Pago application to charge with our Point is through our APIs.
-
-In order to integrate, you have to enable the integration options in the Mercado Pago app. Run the following curl to do it:
+In order to integrate through our APIs, you have to enable the integration options in the Mercado Pago app. Run the following curl to do it:
 
 ```curl
 --location --request POST ‘https://api.mercadopago.com/point/services/user/status/integrators?access_token= <ENV_ACCESTOKEN>’ \
@@ -105,11 +103,11 @@ In order to integrate, you have to enable the integration options in the Mercado
 } ’
 ```
 
-Then it is necessary to configure the `device_name` from the Mercado Pago application. It serves to identify your cell phone or tablet and relate it to your Mercado Pago account. In this way, you will know to which device to send the payment order.
+Next it is necessary to configure the `device_name` from the Mercado Pago application. It serves to identify your cell phone or tablet and relate it to your Mercado Pago account. In this way, you will know to which device to send the payment order.
 
-The next step consist in generating a payment order and sending it via API to the corresponding device. The user will see in the screen of the device the order sent to the application, this means that the user is going to be able to swipe the card at that moment and continue with the proccess. 
+The next step consist in generating a payment order and sending it via API to the corresponding device. The user will see in the screen of the device the order sent to the application. This means that the user is going to be able to swipe the card at that moment and continue with the proccess. 
 
-Once the payment is processed , the user will see the result in the Mercado Pago application. Finally, the order will close and the corresponding payment will be created
+Once the payment is processed, the user will see the result in the Mercado Pago application. Finally, the order will close and the corresponding payment will be created
 
 
 ### Payment creation
