@@ -97,7 +97,7 @@ En el artículo de [GitHub](https://github.com/mercadopago/point-android_integra
 
 La otra forma de integrarse con la aplicación de Mercado Pago para cobrar con nuestro Point es mediante nuestras API.
 
-Para poder integrarte, tienes que habilitar las opciones de itegraciones  en la app de Mercado Pago. Ejecuta el siguiente curl para realizarlo:
+Para poder integrarte, tienes que habilitar las opciones de integraciones en la app de Mercado Pago. Ejecuta el siguiente curl para realizarlo:
 
 ```curl
 --location --request POST ‘https://api.mercadopago.com/point/services/user/status/integrators?access_token=<ENV_ACCESTOKEN>’ \
