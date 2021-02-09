@@ -1,3 +1,11 @@
+---
+  sites_supported:
+      - mla
+      - mlb
+      - mlm
+      - mpe
+---
+
 # Payment authorization and capture
 
 Add specific features to your integration based on your business needs.
