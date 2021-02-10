@@ -11,7 +11,13 @@ Ao automatizar a recorrência de suas cobranças, são criados pagamentos autori
 
 ## Status de pagamento
 
+----[mla]----
 Três alternativas podem surgir na hora em que a parcela é cobrada com base no resultado do seu pagamento:
+------------
+
+----[mlb, mlm]----
+Duas alternativas podem surgir na hora em que a parcela é cobrada com base no resultado do seu pagamento:
+------------
 
 * __O pagamento é feito com sucesso__ assim a parcela será `processed` processada no `status` processado e não será mais tentado novamente. 
 ----[mla]----
