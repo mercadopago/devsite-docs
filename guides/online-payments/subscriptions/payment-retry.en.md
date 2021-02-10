@@ -9,16 +9,18 @@ sites_supported:
 
 By automating the recurrence of your collections, authorized payments that will have a debit date configured based on the periodicity that was defined in the subscription are created.
 
-----[mla]----
+
 
 ## Payment statuses
+
+----[mla]----
+
 At the time the instalment is collected, three alternatives may arise, based on the outcome of the payment:
 
 ------------
 
 ----[mlb, mlm]----
 
-## Payment statuses
 At the time the instalment is collected, two alternatives may arise, based on the outcome of the payment:
 
 ------------
