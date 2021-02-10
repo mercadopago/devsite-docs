@@ -143,13 +143,12 @@ Lanzamos una nueva versión del SDK NodeJS 1.5.3.
 >
 > GitHub
 >
-> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-nodejs/releases/tag/1.5.3).
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.3).
 
 ### 6 de enero
 
 > CHANGELOG
 >
-> Nueva versión WooCommerce
 >
 > NEW_VERSION: NUEVA VERSIÓN
 >

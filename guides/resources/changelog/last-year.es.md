@@ -69,7 +69,7 @@ Lanzamos una nueva versión del SDK NodeJS 1.5.2.
 >
 > GitHub
 >
-> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-nodejs/releases/tag/1.5.2).
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.2).
 
 
 ### 1 de diciembre
@@ -112,7 +112,7 @@ Lanzamos una nueva versión del SDK NodeJS 1.5.1.
 >
 > GitHub
 >
-> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-nodejs/releases/tag/1.5.1).
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.1).
 
 ### 16 de noviembre
 
@@ -458,7 +458,7 @@ Lanzamos una nueva versión del SDK Java 1.7.1.
 >
 > GitHub
 >
-> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-java/releases/tag/1.7.1).
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-java/releases/tag/1.7.1).
 
 ### 12 de agosto
 
@@ -546,7 +546,7 @@ Lanzamos una nueva versión del SDK NodeJS 1.3.2.
 >
 > GitHub
 >
-> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-nodejs/releases/tag/1.3.2).
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.3.2).
 
 ### 1 de julio
 
@@ -564,7 +564,7 @@ Lanzamos una nueva versión del SDK Java 1.7.0.
 >
 > GitHub
 >
-> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-java/releases/tag/1.7.0).
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-java/releases/tag/1.7.0).
 
 <br>
 
@@ -695,7 +695,7 @@ Disponibilizamos una nueva versión de SDK Java 1.6.
 >
 > GitHub
 >
-> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-java/releases/tag/1.6.0).
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-java/releases/tag/1.6.0).
 
 
 ### 4 de mayo

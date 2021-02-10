@@ -143,7 +143,7 @@ We have released a new version of SDK NodeJS 1.5.3.
 >
 > GitHub
 >
-> [Check GitHub](https://github.com/mercadopago/dx-nodejs/releases/tag/1.5.3) for further details regarding this release.
+> [Check GitHub](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.3) for further details regarding this release.
 
 ### January 6th
 

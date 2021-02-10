@@ -68,7 +68,7 @@ We have released a new version of SDK NodeJS 1.5.2.
 >
 > GitHub
 >
-> [Check GitHub](https://github.com/mercadopago/dx-nodejs/releases/tag/1.5.2) for further details regarding this release.
+> [Check GitHub](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.2) for further details regarding this release.
 
 
 ### December 1st
@@ -111,7 +111,7 @@ We have released a new version of SDK NodeJS 1.5.1.
 >
 > GitHub
 >
-> [Check GitHub](https://github.com/mercadopago/dx-nodejs/releases/tag/1.5.1) for further details regarding this release.
+> [Check GitHub](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.1) for further details regarding this release.
 
 ### November 16th
 
@@ -444,7 +444,7 @@ We have released a new version of SDK Java 1.7.1.
 >
 > GitHub
 >
-> [Check GitHub](https://github.com/mercadopago/dx-java/releases/tag/1.7.1) for further details regarding this release.
+> [Check GitHub](https://github.com/mercadopago/sdk-java/releases/tag/1.7.1) for further details regarding this release.
 
 ### August 12th
 
@@ -532,7 +532,7 @@ We have released a new version of SDK NodeJS 1.3.2.
 >
 > GitHub
 >
-> [Check GitHub](https://github.com/mercadopago/dx-nodejs/releases/tag/1.3.2) for further details regarding this release.
+> [Check GitHub](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.3.2) for further details regarding this release.
 
 ### July 1st
 
@@ -550,7 +550,7 @@ We have released a new version of SDK Java 1.7.0.
 >
 > GitHub
 >
-> [Check GitHub](https://github.com/mercadopago/dx-java/releases/tag/1.7.0) for further details regarding this release.
+> [Check GitHub](https://github.com/mercadopago/sdk-java/releases/tag/1.7.0) for further details regarding this release.
 
 <br>
 
@@ -680,7 +680,7 @@ We have released a new version of SDK Java 1.6.
 >
 > GitHub
 >
-> [Check GitHub](https://github.com/mercadopago/dx-java/releases/tag/1.6.0) for further details regarding this release.
+> [Check GitHub](https://github.com/mercadopago/sdk-java/releases/tag/1.6.0) for further details regarding this release.
 
 
 ### May 4th
