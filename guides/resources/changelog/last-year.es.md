@@ -4,6 +4,32 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ---
 
+## Febrero 2021
+
+### 12 de febrero
+
+> CHANGELOG
+>
+> Cambiado el nombre de la SDK NodeJs
+>
+> PRODUCT: SDK NODEJS
+
+Cambiamos el nombre de nuestra SDK NodeJs de dx-nodejs para sdk-nodejs
+
+[Ir a documentación de las SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks)
+
+### 11 de febrero
+
+> CHANGELOG
+>
+> Cambiado el nombre de la SDK Java
+>
+> PRODUCT: SDK JAVA
+
+Cambiamos el nombre de nuestra SDK Java de dx-java para sdk-java
+
+[Ir a documentación de las SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks)
+
 ## Diciembre 2020
 
 ### 29 de diciembre
