@@ -6,29 +6,33 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Febrero 2021
 
-### Febrero 12th
+### 12 de febrero
 
 > CHANGELOG
 >
 > Cambiado el nombre de la SDK NodeJs
 >
+> NEWS: NOVEDADES
+>
 > PRODUCT: SDK NODEJS
 
-Cambiamos el nombre de nuestra SDK NodeJs de dx-nodejs para sdk-nodejs
+Cambiamos el nombre de nuestra SDK NodeJs de **dx-nodejs** por **sdk-nodejs**.
 
 [Ir a documentación de las SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks)
-
-### Febrero 11th
 
 > CHANGELOG
 >
 > Cambiado el nombre de la SDK Java
 >
+> NEWS: NOVEDADES
+>
 > PRODUCT: SDK JAVA
 
-Cambiamos el nombre de nuestra SDK Java de dx-java para sdk-java
+Cambiamos el nombre de nuestra SDK Java de **dx-java** por **sdk-java**.
 
 [Ir a documentación de las SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks)
+
+---
 
 ## Enero 2021
 
@@ -61,6 +65,7 @@ Lanzamos la nueva versión 4.4.4 para PrestaShop.
 > NEW_VERSION: NUEVA VERSIÓN
 >
 > PRODUCT: PRESTASHOP
+
 Lanzamos la nueva versión 4.4.3 para PrestaShop.
 
 [Ir a documentación de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/introduction)
@@ -80,6 +85,7 @@ Lanzamos la nueva versión 4.4.3 para PrestaShop.
 > NEW_VERSION: NUEVA VERSIÓN
 >
 > PRODUCT: PRESTASHOP
+
 Lanzamos la nueva versión 4.4.2 para PrestaShop.
 
 [Ir a documentación de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/introduction)
@@ -99,6 +105,7 @@ Lanzamos la nueva versión 4.4.2 para PrestaShop.
 > NEW_VERSION: NUEVA VERSIÓN
 >
 > PRODUCT: PRESTASHOP
+
 Lanzamos la nueva versión 4.4.1 para PrestaShop.
 
 [Ir a documentación de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/introduction)
