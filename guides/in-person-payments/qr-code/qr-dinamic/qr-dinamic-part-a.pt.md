@@ -62,4 +62,4 @@ O Modelo Offline permite que você crie sua própria string de dados, que irá c
 >
 > Conheça o passo a passo de como integrar o modelo.
 >
-> [Como integrar QR dinâmico Offile](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/qr-dinamic/qr-dinamic-part-b/)
+> [Como integrar QR dinâmico Offline](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/qr-dinamic/qr-dinamic-part-b)
