@@ -156,6 +156,7 @@ Lanzamos una nueva versión del SDK NodeJS 1.5.3.
 
 > CHANGELOG
 >
+> Nueva versión WooCommerce
 >
 > NEW_VERSION: NUEVA VERSIÓN
 >
