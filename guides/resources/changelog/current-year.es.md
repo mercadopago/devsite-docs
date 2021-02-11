@@ -4,6 +4,36 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ---
 
+## Febrero 2021
+
+### 12 de febrero
+
+> CHANGELOG
+>
+> Cambiado el nombre de la SDK NodeJs
+>
+> NEWS: NOVEDADES
+>
+> PRODUCT: SDK NODEJS
+
+Cambiamos el nombre de nuestra SDK NodeJs de **dx-nodejs** por **sdk-nodejs**.
+
+[Ir a documentación de las SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks)
+
+> CHANGELOG
+>
+> Cambiado el nombre de la SDK Java
+>
+> NEWS: NOVEDADES
+>
+> PRODUCT: SDK JAVA
+
+Cambiamos el nombre de nuestra SDK Java de **dx-java** por **sdk-java**.
+
+[Ir a documentación de las SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks)
+
+---
+
 ## Enero 2021
 
 ### 28 de enero
@@ -35,6 +65,7 @@ Lanzamos la nueva versión 4.4.4 para PrestaShop.
 > NEW_VERSION: NUEVA VERSIÓN
 >
 > PRODUCT: PRESTASHOP
+
 Lanzamos la nueva versión 4.4.3 para PrestaShop.
 
 [Ir a documentación de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/introduction)
@@ -54,6 +85,7 @@ Lanzamos la nueva versión 4.4.3 para PrestaShop.
 > NEW_VERSION: NUEVA VERSIÓN
 >
 > PRODUCT: PRESTASHOP
+
 Lanzamos la nueva versión 4.4.2 para PrestaShop.
 
 [Ir a documentación de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/introduction)
@@ -73,6 +105,7 @@ Lanzamos la nueva versión 4.4.2 para PrestaShop.
 > NEW_VERSION: NUEVA VERSIÓN
 >
 > PRODUCT: PRESTASHOP
+
 Lanzamos la nueva versión 4.4.1 para PrestaShop.
 
 [Ir a documentación de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/introduction)
@@ -117,7 +150,7 @@ Lanzamos una nueva versión del SDK NodeJS 1.5.3.
 >
 > GitHub
 >
-> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-nodejs/releases/tag/1.5.3).
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.3).
 
 ### 6 de enero
 

@@ -4,6 +4,36 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ---
 
+## February 2021
+
+### February 12th
+
+> CHANGELOG
+>
+> Changed the SDK NodeJs name
+>
+> NEWS: NEWS
+>
+> PRODUCT: SDK NODEJS
+
+We have changed our SDK NodeJs from **dx-nodejs** to **sdk-nodejs**.
+
+[Go to SDKs documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks)
+
+> CHANGELOG
+>
+> Changed the SDK Java name
+>
+> NEWS: NEWS
+>
+> PRODUCT: SDK JAVA
+
+We have changed our SDK Java from **dx-java** to **sdk-java**.
+
+[Go to SDKs documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks)
+
+---
+
 ## January 2021
 
 ### January 28th
@@ -117,7 +147,7 @@ We have released a new version of SDK NodeJS 1.5.3.
 >
 > GitHub
 >
-> [Check GitHub](https://github.com/mercadopago/dx-nodejs/releases/tag/1.5.3) for further details regarding this release.
+> [Check GitHub](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.3) for further details regarding this release.
 
 ### January 6th
 

@@ -4,6 +4,32 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ---
 
+## February 2021
+
+### February 12th
+
+> CHANGELOG
+>
+> Changed the SDK NodeJs name
+>
+> PRODUCT: SDK NODEJS
+
+We have changed our SDK NodeJs from dx-nodejs to sdk-nodejs
+
+[Go to SDKs home](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks)
+
+### February 11th
+
+> CHANGELOG
+>
+> Changed the SDK Java name
+>
+> PRODUCT: SDK JAVA
+
+We have changed our SDK Java from dx-java to sdk-java
+
+[Go to SDKs home](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks)
+
 ## December 2020
 
 ### December 29th
@@ -42,7 +68,7 @@ We have released a new version of SDK NodeJS 1.5.2.
 >
 > GitHub
 >
-> [Check GitHub](https://github.com/mercadopago/dx-nodejs/releases/tag/1.5.2) for further details regarding this release.
+> [Check GitHub](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.2) for further details regarding this release.
 
 
 ### December 1st
@@ -85,7 +111,7 @@ We have released a new version of SDK NodeJS 1.5.1.
 >
 > GitHub
 >
-> [Check GitHub](https://github.com/mercadopago/dx-nodejs/releases/tag/1.5.1) for further details regarding this release.
+> [Check GitHub](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.1) for further details regarding this release.
 
 ### November 16th
 
@@ -418,7 +444,7 @@ We have released a new version of SDK Java 1.7.1.
 >
 > GitHub
 >
-> [Check GitHub](https://github.com/mercadopago/dx-java/releases/tag/1.7.1) for further details regarding this release.
+> [Check GitHub](https://github.com/mercadopago/sdk-java/releases/tag/1.7.1) for further details regarding this release.
 
 ### August 12th
 
@@ -506,7 +532,7 @@ We have released a new version of SDK NodeJS 1.3.2.
 >
 > GitHub
 >
-> [Check GitHub](https://github.com/mercadopago/dx-nodejs/releases/tag/1.3.2) for further details regarding this release.
+> [Check GitHub](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.3.2) for further details regarding this release.
 
 ### July 1st
 
@@ -524,7 +550,7 @@ We have released a new version of SDK Java 1.7.0.
 >
 > GitHub
 >
-> [Check GitHub](https://github.com/mercadopago/dx-java/releases/tag/1.7.0) for further details regarding this release.
+> [Check GitHub](https://github.com/mercadopago/sdk-java/releases/tag/1.7.0) for further details regarding this release.
 
 <br>
 
@@ -654,7 +680,7 @@ We have released a new version of SDK Java 1.6.
 >
 > GitHub
 >
-> [Check GitHub](https://github.com/mercadopago/dx-java/releases/tag/1.6.0) for further details regarding this release.
+> [Check GitHub](https://github.com/mercadopago/sdk-java/releases/tag/1.6.0) for further details regarding this release.
 
 
 ### May 4th

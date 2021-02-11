@@ -4,6 +4,32 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
+## Fevereiro 2021
+
+### 12 de fevereiro
+
+> CHANGELOG
+>
+> Mudança de nome da SDK NodeJs
+>
+> PRODUCT: SDK NODEJS
+
+Mudamos o nome de nossa SDK NodeJs de dx-nodejs para sdk-nodejs
+
+[Ir para a documentação das SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/sdks)
+
+### 11 de fevereiro
+
+> CHANGELOG
+>
+> Mudança de nome da SDK Java
+>
+> PRODUCT: SDK JAVA
+
+Mudamos o nome de nossa SDK Java de dx-java para sdk-java
+
+[Ir para a documentação das SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/sdks)
+
 ## Dezembro 2020
 
 ### 12 de dezembro
@@ -42,7 +68,7 @@ Lançamos uma nova versão do SDK NodeJS 1.5.2.
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-nodejs/releases/tag/1.5.2).
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.2).
 
 
 ### 1 de dezembro
@@ -85,7 +111,7 @@ Lançamos uma nova versão do SDK NodeJS 1.5.1.
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-nodejs/releases/tag/1.5.1).
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.1).
 
 ### 16 de novembro
 
@@ -431,7 +457,7 @@ Lançamos uma nova versão do SDK Java 1.7.1.
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-java/releases/tag/1.7.1).
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-java/releases/tag/1.7.1).
 
 ### 12 de agosto
 
@@ -519,7 +545,7 @@ Lançamos uma nova versão do SDK NodeJS 1.3.2.
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-nodejs/releases/tag/1.3.2).
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.3.2).
 
 ### 1 de julho
 
@@ -537,7 +563,7 @@ Lançamos uma nova versão do SDK Java 1.7.0.
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-java/releases/tag/1.7.0).
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-java/releases/tag/1.7.0).
 
 <br>
 
@@ -667,7 +693,7 @@ Lançamos uma nova versão do SDK Java 1.6.
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-java/releases/tag/1.6.0).
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-java/releases/tag/1.6.0).
 
 
 ### 4 de maio
