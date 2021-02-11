@@ -186,7 +186,6 @@ curl -X POST \
 ]]]
 
 
-
 ### Get the refunds made
 
 You can view the refunds issued for a specific payment with the following request:
