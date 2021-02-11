@@ -1,3 +1,11 @@
+---
+  sites_supported:
+      - mla
+      - mlb
+      - mlm
+      - mpe
+---
+
 # Autorização e Captura
 
 Adicione funcionalidades específicas a sua integração segundo as necessidades do seu negócio.
