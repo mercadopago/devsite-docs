@@ -6,7 +6,6 @@ sites_supported:
     - mco
     - mlc
     - mpe
-    - global
 ---
 # Receive Payments
 
@@ -70,8 +69,8 @@ Then, you must add the attributes of your payment preference:
   $preference = new MercadoPago\Preference();
 
   $item = new MercadoPago\Item();
-  $item->title = "[FAKER][COMMERCE][PRODUCT_NAME]";
-  $item->quantity = [FAKER][NUMBER][BETWEEN][1,10];
+  $item->title = "Blue shirt";
+  $item->quantity = 10;
   $item->currency_id = "[FAKER][CURRENCY][ACRONYM]";
   $item->unit_price = [FAKER][COMMERCE][PRICE];
 
@@ -89,13 +88,13 @@ Preference preference = new Preference();
 
 Item item = new Item();
 item.setId("1234")
-    .setTitle("[FAKER][COMMERCE][PRODUCT_NAME]")
-    .setQuantity([FAKER][NUMBER][BETWEEN][1,10])
+    .setTitle("Blue shirt")
+    .setQuantity(10)
     .setCategoryId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float) [FAKER][COMMERCE][PRICE]);
 
 Payer payer = new Payer();
-payer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
+payer.setEmail("john@yourdomain.com");
 
 preference.setPayer(payer);
 preference.appendItem(item);
@@ -106,7 +105,7 @@ preference.save();
 var preference = {}
 
 var item = {
-  title: '[FAKER][COMMERCE][PRODUCT_NAME]',
+  title: 'Blue shirt',
   quantity: 1,
   currency_id: '[FAKER][CURRENCY][ACRONYM]',
   unit_price: [FAKER][COMMERCE][PRICE]
@@ -129,13 +128,13 @@ mercadopago.preferences.create(preference).then(function (data) {
 preference = MercadoPago::Preference.new()
 
 item = MercadoPago::Item.new()
-item.title="[FAKER][COMMERCE][PRODUCT_NAME]"
-item.quantity= [FAKER][NUMBER][BETWEEN][1,10]
+item.title="Blue shirt"
+item.quantity= 10
 item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
 item.unit_price = [FAKER][COMMERCE][PRICE]
 
 payer = MercadoPago::Payer.new()
-payer.email="[FAKER][INTERNET][FREE_EMAIL]"
+payer.email="john@yourdomain.com"
 
 preference.items = [item]
 preference.payer = payer
@@ -158,7 +157,7 @@ You must submit your buyer’s email.
   "payer": {
     "name": "[FAKER][NAME][FIRST_NAME]",
     "surname": "[FAKER][NAME][LAST_NAME]",
-    "email": "[FAKER][INTERNET][FREE_EMAIL]",
+    "email": "john@yourdomain.com",
     "date_created": "2015-06-02T12:58:41.425-04:00",
     "phone": {
       "area_code": "[FAKER][PHONE_NUMBER][AREA_CODE]",
@@ -170,7 +169,7 @@ You must submit your buyer’s email.
     },
     "address": {
       "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-      "street_number": [FAKER][ADDRESS][BUILDING_NUMBER],
+      "street_number": 7304,
       "zip_code": "[FAKER][ADDRESS][ZIP_CODE]"
     }
   },
@@ -199,7 +198,7 @@ Map<String, Object> preferenceMap = new HashMap<>();
 preferenceMap.put("item_id", "1");
 preferenceMap.put("amount", new BigDecimal(10));
 preferenceMap.put("currency_id", "[FAKER][CURRENCY][ACRONYM]");
-preferenceMap.put("payer_email", "[FAKER][INTERNET][FREE_EMAIL]");
+preferenceMap.put("payer_email", "john@yourdomain.com");
 
 final Activity activity = this;
 LayoutUtil.showProgressLayout(activity);
@@ -218,7 +217,7 @@ public void failure(ApiException apiException) {
 }
 ```
 ```swift
-        let preferenceBody : [String : Any] = ["item_id" : "id", "quantity" : [FAKER][NUMBER][BETWEEN][1,10]]
+        let preferenceBody : [String : Any] = ["item_id" : "id", "quantity" : 10]
 
         CustomServer.createCheckoutPreference(url: "https://your-base-url.com/", uri: "your-create-preference-uri", bodyInfo: preferenceBody as NSDictionary, success: { (checkoutPrefernece) in
             startMercadoPagoCheckout(checkoutPreference)
@@ -231,7 +230,7 @@ public void failure(ApiException apiException) {
                                      @"amount" : @10,
                                      @"itemId" : @29334,
                                      @"customerId" : @207,
-                                     @"payerEmail" : @"[FAKER][INTERNET][FREE_EMAIL]" };
+                                     @"payerEmail" : @"john@yourdomain.com" };
 
 
     [CustomServer createCheckoutPreferenceWithUrl:@"https://your-base-url.com" uri:@"/your-create-preference-uri" bodyInfo:preferenceBody success:^(CheckoutPreference * checkoutPreference) {
@@ -250,7 +249,7 @@ As an example, we propose that you initiate the MercadoPago’s flow from a butt
 
 [[[
 
-```android-xml
+```android
 ===
 1.  Create an Activity to insert the button (** MainActivity**, for example).  
 2. Add a text field to show the payment result.
@@ -507,7 +506,7 @@ Notifications are automatically sent to inform you of any new payments and statu
 
 This will allow you to manage your inventories and keep your system in sync.
 
-To learn more about it, go to [Notifications.](https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn)
+To learn more about it, go to [Notifications.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn)
 
 ## Test the integration
 
@@ -515,9 +514,9 @@ You can test the integration before going into production, in order to check the
 
 For that, you must use test users and cards.
 
-For more information, go to the [Test](https://www.mercadopago.com.ar/developers/en/guides/online-payments/mobile-checkout/testing) section.
+For more information, go to the [Test](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/mobile-checkout/testing) section.
 
 ### Next steps
 
-- To adapt the payment flow to your needs, go to the [Customization](https://www.mercadopago.com.ar/developers/en/guides/online-payments/mobile-checkout/v3/personalization) section.
-- For information on how to test, go to the [testing integration](https://www.mercadopago.com.ar/developers/en/guides/online-payments/mobile-checkout/v3/testing.en.pt) section.
+- To adapt the payment flow to your needs, go to the [Customization](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/mobile-checkout/v3/personalization) section.
+- For information on how to test, go to the [testing integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/mobile-checkout/v3/testing) section.

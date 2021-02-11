@@ -26,30 +26,30 @@ Para que seja seguro e que possa cuidar dos dados, é necessário que tenha um c
 Para evitar que um pagamento real seja recusado por não atender as validações de segurança, é necessário somar todas as informações possíveis na hora de realizar a operação.
 Para otimizar a validação de segurança dos pagamentos e melhorar as aprovações, você poderá enviar para nós os dados do comprador e do item para que os analisemos. Por exemplo, se você enviar essas informações para nós, poderemos detectar se esse comprador realizou pagamentos suspeitos em outro momento e preveni-lo.
 
-Veja mais informações na [seção Melhore a aprovação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/payment-rejections/).
+Veja mais informações na [seção Melhore a aprovação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/payment-rejections).
 
 ## Notificações e pesquisa de pagamento
 
 Para aproveitar ao máximo a integração do Mercado Pago, um dos principais pontos a destacar é o uso de notificações para atualizar pedidos em tempo real no seu sistema.
-Ambos os tipos de notificações, [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/) ou [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks/), são enviadas de um servidor a outro mediante uma chamada `HTTP POST` para informar sobre suas transações.
+Ambos os tipos de notificações, [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn) ou [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks), são enviadas de um servidor a outro mediante uma chamada `HTTP POST` para informar sobre suas transações.
 Ao implementar essas notificações, você poderá descobrir todas as atualizações de suas transações no momento.
 
 ## Experiência do usuário
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mostrar mensagens de resposta corretas
 
-Conforme mencionado na [seção Manipulação de respostas] (https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/handling-responses/), deve-se mostrar as mensagens correspondentes ao cliente, dependendo do resultado do pagamento, para que ele possa agir da maneira correta.
+Conforme mencionado na [seção Mensagens de resposta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/handling-responses), deve-se mostrar as mensagens correspondentes ao cliente, dependendo do resultado do pagamento, para que ele possa agir da maneira correta.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seja transparente com as promoções e financiamentos
 
-Deve-se comunicar claramento que as promoções são oferecidas pelo Mercado Pago. Pode-se [incluir um banner de meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/introduction/) ou [adicionar um link na seção de promoções](https://www.mercadopago.com.br/promocoes/). Também, deve-se informar os [custos de financiamento que se aplicam aos seus clientes](https://www.mercadopago.com.br/ajuda/Custos-de-parcelamento_322).
+Deve-se comunicar claramento que as promoções são oferecidas pelo Mercado Pago. Pode-se [incluir um banner de meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/introduction) ou [adicionar um link na seção de promoções](https://www.mercadopago.com.br/promocoes/). Também, deve-se informar os [custos de financiamento que se aplicam aos seus clientes](https://www.mercadopago.com.br/ajuda/Custos-de-parcelamento_322).
 
 ----[mla]----
 > NOTE
 >
 > Nota
 >
-> Devido a Resolução [E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) da Secretería de Comércio Argentina, sobre preços transparentes, é necessário que cumpra com [exigências adicionais](https://www.mercadopago.com.ar/developers/es/guides/resources/localization/considerations-argentina/).
+> Devido a Resolução [E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleNormaBusquedaRapida/158269/20170125/resolucion%2051) da Secretería de Comércio Argentina, sobre preços transparentes, é necessário que cumpra com [exigências adicionais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/considerations-argentina).
 ------------
 
 ## Disponibilize seus termos e condições
@@ -65,7 +65,7 @@ Disponibilize uma política de termos e condições e deixe claro que é respons
 >
 > Revise que esteja tudo bem com sua integração utilizando os usuários de teste.
 >
-> [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/testing/)
+> [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/testing)
 
 > RIGHT_BUTTON
 >
@@ -73,4 +73,4 @@ Disponibilize uma política de termos e condições e deixe claro que é respons
 >
 > Encontre toda a informação necessária para interagir com nossas APIs.
 >
-> [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/)
+> [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference)

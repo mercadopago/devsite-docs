@@ -13,14 +13,14 @@
 
 O módulo do Mercado Pago para o ZenCart esta integrado com as seguintes funcionalidades e soluções de pagamento:
 
-* [Checkout básico (Redirecionado, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/pt/solutions/payments/basic-checkout/receive-payments/)
+* [Checkout básico (Redirecionado, Iframe ou Lightbox)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/solutions/payments/basic-checkout/receive-payments)
 * Pagamento com dois cartões
 
 ## Versões disponíveis
 
-Versão do Plugin | Status | Versões compativéis
--------------- | ------ | -------------------
-v1.0.1 | Stable (Current version) | ZenCart 1.5.x
+| Versão do Plugin | Status | Versões compativéis |
+| --- | --- | --- |
+| v1.0.1 | Stable (Current version) | ZenCart 1.5.x |
 
 ## Requisitos
 
@@ -50,13 +50,13 @@ v1.0.1 | Stable (Current version) | ZenCart 1.5.x
 
 4. Agora, é muito importante você configurar o seu **CLIENT_ID** e **CLIENT_SECRET**.
 
-  ![Setting client id and client secret](/images/zencart-credentials.png) <br />
+![Setting client id and client secret](/images/zencart/zencart-credentials.png) <br />
 
-Obtenha o seu [CLIENT_ID e CLIENT_SECRET]([FAKER][CREDENTIALS][URL_BASIC]).
+Obtenha o seu [CLIENT_ID e CLIENT_SECRET]([FAKER][CREDENTIALS][URL]).
 
 5. Configure os status para IPN (Instant Payment Notification):
 
-  ![Setting notification](/images/zencart-notification.png) <br />
+![Setting notification](/images/zencart/zencart-notification.png) <br />
 
   * **Choose the default status for a new order**: Define o status do pedido quando o pagamento é aprovado.
   * **Choose the status of approved orders**: Define o status do pedido quando o pagamento é aprovado.
@@ -69,11 +69,11 @@ Obtenha o seu [CLIENT_ID e CLIENT_SECRET]([FAKER][CREDENTIALS][URL_BASIC]).
 
 6. Outras configurações: <br/>
 
-![Store Category](/images/zencart-other_config_1.png) <br />
+![Store Category](/images/zencart/zencart-other_config_1.png) <br />
 
-![Checkout type setting](/images/zencart-other_config_2.png) <br />
+![Checkout type setting](/images/zencart/zencart-other_config_2.png) <br />
 
-![Number of installments and other settings](/images/zencart-other_config_3.png) <br />
+![Number of installments and other settings](/images/zencart/zencart-other_config_3.png) <br />
 
   * **Store Category**: Selecione a categoria da Loja;
   * **Redirect URL**: A URL de redirecionamento é gerado automaticamente, se você estiver testando em um localhost não funcionará corretamente. Você pode alterar o endereço para qualquer url da sua escolha, contanto que não seja localhost;

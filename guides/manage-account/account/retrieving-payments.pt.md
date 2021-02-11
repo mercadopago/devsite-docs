@@ -47,7 +47,7 @@ Resposta esperada:
 }
 ```
 
-As informações sobre todas as variáveis retornadas podem ser obtidas na [referência da API do recurso Payments](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments/get/).
+As informações sobre todas as variáveis retornadas podem ser obtidas na [referência da API do recurso Payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get).
 
 ## Buscar pagamentos
 
@@ -150,12 +150,12 @@ Pode-se utilizar o campo `range` para pesquisar um campo de data específico, po
 
 Caso obtenha muitos resultados, os pagamentos deverão ser paginados utilizando os seguintes atributos:
 
-| Atributo |           Descrição           |         Exemplo          |
-| :------------------- | :------------------------- | :--------------------------- |
-| `limit`            | Número de registros exibidos (valor máximo = 50). Se não for definido, serão exibidos até 30 registros encontrados         | `limit=50`          |
-| `offset`            | Posição a partir da qual você deseja que os registros sejam exibidos. O valor padrão é 0 (máximo permitido: 10000).          | `offset=100`     |
-| `sort`         | Estabelece um critério a partir do qual os resultados são classificados. | `sort=external_reference` |
-| `criteria`         | Ordem dos dados. Pode ser asc (crescente) ou desc (decrescente).   | `criteria=asc`   |
+| Atributo | Descrição | Exemplo |
+| :--- | :--- | :--- |
+| `limit` | Número de registros exibidos (valor máximo = 50). Se não for definido, serão exibidos até 30 registros encontrados | `limit=50` |
+| `offset` | Posição a partir da qual você deseja que os registros sejam exibidos. O valor padrão é 0 (máximo permitido: 10000). | `offset=100` |
+| `sort` | Estabelece um critério a partir do qual os resultados são classificados. | `sort=external_reference` |
+| `criteria` | Ordem dos dados. Pode ser asc (crescente) ou desc (decrescente). | `criteria=asc` |
 
 Exemplo de paginação:
 

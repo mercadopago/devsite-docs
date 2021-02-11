@@ -71,7 +71,7 @@ A continuación un listado de funcionalidades específicas de nuestra API por pa
 
 ## Medios de pago no disponibles
 
-Puede suceder que determinados [medios de pago](https://www.mercadopago.com.ar/developers/es/guides/resources/localization/payment-methods) no estén disponibles en algunos productos. A continuación se indica en detalle que medios de pago no están disponibles por producto, por país.
+Puede suceder que determinados [medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods) no estén disponibles en algunos productos. A continuación se indica en detalle que medios de pago no están disponibles por producto, por país.
 
 ### Argentina
 
@@ -83,7 +83,7 @@ Puede suceder que determinados [medios de pago](https://www.mercadopago.com.ar/d
 | Pagos | Mobile Checkout | `account_money` |
 | Pagos | Checkout Transparente | N/A |
 | Suscripciones | Link de Pago | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress` |
-Suscripciones | Checkout Pro   | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
+Suscripciones | Checkout Pro   | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
 Suscripciones | Checkout Transparente | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout Transparente | N/A |
@@ -97,7 +97,7 @@ Suscripciones | Checkout Transparente | `naranja`, `nativa`, `shopping`, `debvis
 | Pagos | Mobile Checkout | `account_money` |
 | Pagos | Checkout API | N/A |
 | Suscripciones | Link de Pago | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress` |
-Suscripciones | Checkout Pro   | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
+Suscripciones | Checkout Pro   | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
 Suscripciones | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmaster`, `maestro`, `pagofacil`, `rapipago`, `bapropagos`, `cargavirtual`, `redlink`, `cobroexpress`|
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | N/A |
@@ -110,26 +110,26 @@ Suscripciones | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debm
 | :--- | :--- | :--- |
 | Pagos | Link de pago | N/A |
 | Pagos | Checkout Pro | N/A |
-| Pagos | Mobile Checkout | `account_money` |
-| Pagos | Checkout Transparente | N/A |
-| Suscripciones | Link de pago | `bolbradesco`, `giftcard` |
-| Suscripciones | Checkout Pro | `bolbradesco`, `giftcard` |
-| Suscripciones | Checkout Transparente | `bolbradesco`, `giftcard` |
-| Marketplace | Checkout Pro | N/A |
-| Marketplace | Checkout Transparente | N/A |
+| Pagos | Mobile Checkout | `account_money`, `pix` |
+| Pagos | Checkout Transparente | `pix` |
+| Suscripciones | Link de pago | `bolbradesco`, `giftcard`, `pix` |
+| Suscripciones | Checkout Pro | `bolbradesco`, `giftcard`, `pix` |
+| Suscripciones | Checkout Transparente | `bolbradesco`, `giftcard`, `pix` |
+| Marketplace | Checkout Pro | `pix`|
+| Marketplace | Checkout Transparente | `pix` |
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 | Producto | Solución | Medios de pago no disponibles |
 | :--- | :--- | :--- |
 | Pagos | Link de pago | N/A |
 | Pagos | Checkout Pro | N/A |
-| Pagos | Mobile Checkout | `account_money` |
-| Pagos | Checkout API | N/A |
-| Suscripciones | Link de pago | `bolbradesco`, `giftcard` |
-| Suscripciones | Checkout Pro | `bolbradesco`, `giftcard` |
-| Suscripciones | Checkout API | `bolbradesco`, `giftcard` |
-| Marketplace | Checkout Pro | N/A |
-| Marketplace | Checkout API | N/A |
+| Pagos | Mobile Checkout | `account_money`, `pix` |
+| Pagos | Checkout API | `pix` |
+| Suscripciones | Link de pago | `bolbradesco`, `giftcard`, `pix`  |
+| Suscripciones | Checkout Pro | `bolbradesco`, `giftcard`, `pix`  |
+| Suscripciones | Checkout API | `bolbradesco`, `giftcard`, `pix`  |
+| Marketplace | Checkout Pro | `pix` |
+| Marketplace | Checkout API | `pix` |
 ------------
 
 ### Chile

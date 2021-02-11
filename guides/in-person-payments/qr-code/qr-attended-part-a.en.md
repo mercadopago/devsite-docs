@@ -30,7 +30,7 @@ The main characteristics are:
 
 Here's an explanation of how this model works:
 
-> ![Flujo de pago en punto de venta QR Mercado Pago](/images/qr-user-flow.en.png)
+![Flujo de pago en punto de venta QR Mercado Pago](/images/mobile/qr-user-flow.en.png)
 
 <span></span>
 
@@ -71,4 +71,4 @@ Here's an explanation of how this model works:
 >
 > Learn to integrate this model step by step.
 >
-> [How to Integrate attended model](https://www.mercadopago.com.ar/developers/en/guides/qr-code/qr-attended-part-b/)
+> [How to Integrate attended model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/qr-code/qr-attended-part-b)

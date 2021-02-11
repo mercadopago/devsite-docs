@@ -1,7 +1,6 @@
 ---
   sites_supported:
       - mla
-      - global
 ---
 
 # Consideraciones especiales para Argentina
@@ -16,7 +15,7 @@ Debido a la [Resolución E 51/2017](https://www.boletinoficial.gob.ar/#!DetalleN
 
 3. La información del costo financiero total (CFT) de la operación deberá colocarse en una ubicación contigua al resto de las variables informadas en el punto anterior, en una tipografía en color destacado de idéntica fuente y tamaño al menos CINCO (5) veces mayor —conservando todas las proporciones de espesor de trazos, alto y ancho— al que se utilice para informar la tasa de interés efectiva anual (TEA) aplicada . Multiplicando el ancho de los lados x 2.25 es suficiente. Ejemplo:
 
-![cft-tea](https://secure.mlstatic.com/developers/site/cloud/assets/misc/tea-cft.png)
+![cft-tea](/images/resources/tea-cft.png)
 
 ### Obteniendo la TEA y el CFT
 

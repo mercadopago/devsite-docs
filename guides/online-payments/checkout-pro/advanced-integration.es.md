@@ -5,7 +5,7 @@
 Las notificaciones IPN (Instant Payment Notification) son la **forma automática de aviso de la creación de nuevos pagos y las actualizaciones de sus estados.** Por ejemplo si fueron aprobados, rechazados o si se encuentran pendientes.
 Te permiten administrar tu stock y mantener tu sistema sincronizado.
 
-<a href="https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn/" target="_blank">Recibir notificaciones IPN</a>
+[Recibir notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn)
 
 ## Información adicional para la preferencia
 
@@ -226,13 +226,13 @@ preference.Items.Add(
 Al finalizar el proceso de pago, tienes la opción de **redireccionar al comprador a tu sitio.**
 Para esto, tienes que sumar el atributo `back_urls` y definir según el estado de pago a dónde quieres que regrese tu comprador a través del botón de volver al sitio. 
 
-Si quieres que la redirección sea automática para pagos aprobados, tienes que agregar también el atributo `auto_return` con valor `success`.
+Si quieres que la redirección sea automática para pagos aprobados, tienes que agregar también el atributo `auto_return` con valor `approved`.
 
 > NOTE
 >
 > Nota
 >
-> Ten en cuenta que el atributo `auto_return` solo funciona para modo redirect y mobile. No al usar [modo modal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/integration/), ya que el comprador siempre se encuentra en el sitio.
+> Ten en cuenta que el atributo `auto_return` solo funciona para modo redirect y mobile. No al usar [modo modal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/integration), ya que el comprador siempre se encuentra en el sitio.
 
 ![autoreturn](/images/web-payment-checkout/autoreturn-img.png)
 
@@ -320,21 +320,21 @@ Preference preference = new Preference();
 
 Un pago puede ser rechazado porque el emisor del medio de pago detecta un problema o porque no se cumple con los requisitos de seguridad necesarios.
 
-Evita pagos rechazados con nuestras recomendaciones y <a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/payment-rejections" target="_blank">mejora la aprobación de tus pagos</a>.
+Evita pagos rechazados con nuestras recomendaciones y [mejora la aprobación de tus pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/payment-rejections).
 
 ## Cancelaciones y devoluciones
 
 Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes de la fecha de vencimiento y el vendedor decide cancelarlo.
 Y las devoluciones suceden cuando el pago se realizó pero el vendedor decide anularlo total o parcialmente.
 
-Puedes encontrar toda la información en la <a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/cancellations-and-refunds" target="_blank"> sección Devoluciones y cancelaciones</a>.
+Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).
 
 ## Gestiona contracargos
 
 Se produce un contracargo o _chargeback_ cuando el comprador se comunica con la entidad que emitió su tarjeta y desconoce el pago.
 Esto quiere decir que el dinero del vendedor por ese pago será retenido de su cuenta de Mercado Pago hasta que se solucione.
 
-<a href="https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/chargebacks/" target="_blank"> Gestionar contracargos</a>
+[Gestionar contracargos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/chargebacks)
 
 ---
 
@@ -347,7 +347,7 @@ Esto quiere decir que el dinero del vendedor por ese pago será retenido de su c
 >
 > Configura tus pago y adapta Checkout Pro a tu negocio.
 >
-> [Configurations](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/configurations/)
+> [Configurations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations)
 
 > RIGHT_BUTTON
 >
@@ -355,4 +355,4 @@ Esto quiere decir que el dinero del vendedor por ese pago será retenido de su c
 >
 > Adapta el estilo de tu marca en la experiencia de compra.
 >
-> [Personalizaciones](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/customizations/)
+> [Personalizaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/customizations)

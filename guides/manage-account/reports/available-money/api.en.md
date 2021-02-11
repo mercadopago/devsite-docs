@@ -8,7 +8,7 @@ Save time and automate the **generating frequency** of the Available Balance rep
 >
 > Note
 >
-> Have the [Glossary](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/available-money/glossary/) of the Available Balance report on hand to review it when needed or want to review a technical term.
+> Have the [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/glossary) of the Available Balance report on hand to review it when needed or want to review a technical term.
 
 
 ## Set up your reports
@@ -440,7 +440,7 @@ Know the fields you can configure to adjust your preferences before you start:
 
 
 | Configurable fields | Description |
-| ----------| ---------------------- |
+| --- | --- |
 | `sftp_info` (optional) | <br/>Indicates the uploaded data to SFTP when you need it.<br/><br/> |
 | `separator` (optional) | <br/>Separator that you can use in the .csv file when you don't want the separator to be a comma. <br/><br/> |
 | `extended` (optional) | <br/>Includes the details of the commissions in the report.<br/><br/> |
@@ -902,7 +902,7 @@ Download the file with this command:
 >
 > You can generate your Available Balance reports from the Mercado Pago panel in three simple steps.
 >
-> [Generating from Mercado Pago](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/available-money/panel/)
+> [Generating from Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/panel)
 
 > RIGHT_BUTTON_REQUIRED_EN
 >
@@ -910,4 +910,4 @@ Download the file with this command:
 >
 > You can generate a report every time you withdraw available money to a bank account.
 >
-> [Generating per withdrawal](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/available-money/withdrawal/)
+> [Generating per withdrawal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/withdrawal)

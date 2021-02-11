@@ -3,7 +3,6 @@ sites_supported:
   - mla
   - mlb
   - mlm
-  - global
 ---
 
 
@@ -91,12 +90,14 @@ No artigo do [GitHub](https://github.com/mercadopago/point-android_integration#i
 >
 > Importante
 >
+
 > * Esta integração está disponível apenas para Android versão 2.8.0 ou superior.<br>
 > * Não disponível para iOS.
 
 A outra forma de integração com o aplicativo Mercado Pago para cobrar com nosso Point é através de nossas APIs.
 
 Para fazer a integração, é necessário habilitar as opções de integração no aplicativo Mercado Pago. Execute o seguinte curl para fazer isso:
+
 
 ```curl
 --location --request POST ‘https://api.mercadopago.com/point/services/user/status/integrators?access_token= <ENV_ACCESTOKEN>’ \
@@ -270,12 +271,12 @@ A resposta terá o seguinte formato.
 
 É necessário que envie sua `notification_url`, onde receberá aviso de todos os novos pagamentos e atualizações de status que se gerem.
 
-No artigo de [notificações](https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks) é possível obter mais informações.
+No artigo de [notificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks) é possível obter mais informações.
 
 
 ## Pagamentos de Point
 
-Os pagamentos de Point podem ser buscados na API de Payments. Pode-se encontrar mais informações no artigo de [API's](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_id/get/)
+Os pagamentos de Point podem ser buscados na API de Payments. Pode-se encontrar mais informações no artigo de [API's](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get)
 
 Existe uma API exclusiva de Point que conta com informações adicionais do pagamento: 
 

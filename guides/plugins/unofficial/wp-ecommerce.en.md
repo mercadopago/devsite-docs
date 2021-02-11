@@ -11,8 +11,8 @@
 
 # System Requirements
 ### Platform Version
-* <a href="https://wordpress.org/download/">WordPress</a> 4.1 or greater
-* <a href="https://wordpress.org/plugins/wp-e-commerce/">WP eCommerce</a> 3.11 or greater
+* [WordPress](https://wordpress.org/download) 4.1 or greater
+* [WP eCommerce](https://wordpress.org/plugins/wp-e-commerce) 3.11 or greater
 
 ### Environment
 * LAMP (Linux, Apache, MySQL, and PHP)
@@ -22,16 +22,16 @@
 * x86-64
 
 ### Web Server
-* <a href="https://httpd.apache.org/">Apache 2.x</a>
+* [Apache 2.x](https://httpd.apache.org)
 
 ### Hosting
 * Can override the .htaccess file
 
 ### PHP Versions
-* <a href="http://php.net/">PHP</a> 5.6 or greater, with CURL support
+* [PHP](http://php.net) 5.6 or greater, with CURL support
 
 ### MySQL Version
-* <a href="http://www.mysql.com/">MySQL</a> version 5.6 or greater OR <a href="https://mariadb.org/">MariaDB</a> version 10.0 or greater
+* [MySQL](http://www.mysql.com) version 5.6 or greater OR [MariaDB](https://mariadb.org) version 10.0 or greater
 
 ### Extension Dependencies
 * WP eCommerce
@@ -46,13 +46,29 @@
 # Features
 The module of Mercado Pago for WP eCommerce is integrated with the following features and payment solutions:
 
-### [Basic Checkout (Redirect, Iframe or Lightbox)](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)
-* Mercado Pago Pre-Builded Interfaces<br>![Basic Checkout Pro in Wp Ecommerce](/images/wp-ecommerce-basic_checkout_payment.png)
+### Basic Checkout (Redirect, Iframe or Lightbox)
+
+* Mercado Pago Pre-Builded Interfaces
+<br>
+
+![Basic Checkout Pro in Wp Ecommerce](/images/wp-ecommerce/wp-ecommerce-basic_checkout_payment.png)
 
 ### Custom Checkout
-* [Payment with Credit Card - Checkout transparent](https://www.mercadopago.com.br/developers/en/solutions/payments/basic-checkout/receive-payments/)<br>![Custom Checkout](/images/wp-ecommerce-order_custom.png)
-* [One Click Pay (Customer Cards)](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)<br>![One Click Payment](/images/wp-ecommerce-order_cust_card.png)
-* [Other Payment Methods, Such as Tickets](https://www.mercadopago.com.br/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<br>![Tickets](/images/wp-ecommerce-order_ticket.png)
+
+* [Payment with Credit Card - Checkout transparent](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/basic-checkout/receive-payments)
+<br>
+
+![Custom Checkout](/images/wp-ecommerce/wp-ecommerce-order_custom.png)
+
+* [One Click Pay (Customer Cards)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript)
+<br>
+
+![One Click Payment](/images/wp-ecommerce/wp-ecommerce-order_cust_card.png)
+
+* [Other Payment Methods, Such as Tickets](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/solutions/payments/custom-checkout/charge-with-other-methods)
+<br>
+
+![Tickets](/images/wp-ecommerce/wp-ecommerce-order_ticket.png)
 
 ### Other Features
 * Credentials and platform status checkings
@@ -77,7 +93,7 @@ You have two options to install this module: from your WordPress Store, or by do
 
 ### Manual Download
 
-1. Get the module sources from a repository (<a href="https://github.com/mercadopago/cart-wp-commerce/archive/master.zip">Github</a> or <a href="https://br.wordpress.org/plugins/wpecomm-mercado-pago-module/">WordPress Plugin Directory</a>);
+1. Get the module sources from a repository [Github](https://github.com/mercadopago/cart-wp-commerce/archive/master.zip) or [WordPress Plugin Directory](https://br.wordpress.org/plugins/wpecomm-mercado-pago-module/);
 
 2. Unzip the folder and find "wpecomm-mercado-pago-module" directory;
 
@@ -87,8 +103,9 @@ You have two options to install this module: from your WordPress Store, or by do
 
 # Configuring Credit Card
 This page will explain how to configure the module to accept payments with Credit Card of Custom Checkout. On your store administration, go to *Settings > Store > Payments* tab. Click in *Mercado Pago - Custom Checkout*. You should get the following page:
+<br>
 
-![Custom Checkout Config](/images/wp-ecommerce-custom_config_screenshot.png)
+![Custom Checkout Config](/images/wp-ecommerce/wp-ecommerce-custom_config_screenshot.png)
 
 ### Mercado Pago Credentials
   * Here you should place your *Public Key* and *Access Token* keys, the credentials that uniquely identifies you in Mercado Pago.
@@ -113,8 +130,9 @@ Offers logging tools so you can analyze problems that may be occurring. Maintain
 
 # Configuring Tickets
 This page will explain how to configure the module to accept payments with Tickets of Custom Checkout. On your store administration, go to *Settings > Store > Payments* tab. Click in *Mercado Pago - Ticket*. You should get the following page:
+<br>
 
-![Ticket Checkout Config](/images/wp-ecommerce-ticket_config_screenshot.png)
+![Ticket Checkout Config](/images/wp-ecommerce/wp-ecommerce-ticket_config_screenshot.png)
 
 ### Mercado Pago Credentials
   * Here you should place your *Access Token* key, the credential that uniquely identifies you in Mercado Pago.
@@ -136,8 +154,9 @@ Offers logging tools so you can analyze problems that may be occurring. Maintain
 
 # Configuring Checkout by Redirect, Iframe, or LightBox
 This page will explain how to configure the module to accept payments with Basic Checkout in Redirect, Iframe or Lightbox. On your store administration, go to *Settings > Store > Payments* tab. Click in *Mercado Pago - Basic Checkout*. You should get the following page:
+<br>
 
-![Basic Checkout](/images/wp-ecommerce-basic_config_screenshot.png)
+![Basic Checkout](/images/wp-ecommerce/wp-ecommerce-basic_config_screenshot.png)
 
 ### Mercado Pago Credentials
   * Here you should place your *Client Id* and *Client Secret* keys, the credentials that uniquely identifies you in Mercado Pago.
@@ -170,7 +189,7 @@ Instant Payment Notifications (IPN) is a mechanism that enables your store to re
 
 > HINT 1: When configuring or testing your IPN/Webhooks and server communications be sure that your server can access Mercado Pago server.
 
-> HINT 2: Make sure that your firewall haves [Mercado Pago IP Ranges](https://www.mercadopago.com.ar/developers/en/api-docs/basics/design-considerations#ip-range) within its white-list.
+> HINT 2: Make sure that your firewall haves [Mercado Pago IP Ranges](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/api-docs/basics/design-considerations#ip-range) within its white-list.
 
 > HINT 3: Pay attention that Mercado Pago uses TSL protocol version 1.0, so your server needs to support/accept connections with this protocol version.
 
@@ -185,7 +204,7 @@ If you already had installed a previous version of WPeComm Mercado Pago Module, 
 3. In a few seconds it should be installed with *Updated!* message shown.
 
 ### Upgrade with Manual Download
-1. Get the module sources from a repository (<a href="https://github.com/mercadopago/cart-wp-commerce/archive/master.zip">Github</a> or <a href="https://br.wordpress.org/plugins/wpecomm-mercado-pago-module/">WordPress Plugin Directory</a>);
+1. Get the module sources from a repository [Github](https://github.com/mercadopago/cart-wp-commerce/archive/master.zip) or [WordPress Plugin Directory](https://br.wordpress.org/plugins/wpecomm-mercado-pago-module);
 2. Unzip the folder and find "wpecomm-mercado-pago-module" directory;
 3. Go to *[WordPressRootDirectory]/wp-content/plugins/* directory and delete the existing directory "wpecomm-mercado-pago-module";
 4. Copy "wpecomm-mercado-pago-module" directory to *[WordPressRootDirectory]/wp-content/plugins/* directory.
@@ -196,7 +215,7 @@ To confirm that your module is really updated, you can see in *Plugins* item in 
 
 
 # Technical Support
-If you have any questions, problems or errors we have a support channel. Write us at our [support form](/support) with the following information:
+If you have any questions, problems or errors we have a support channel. Write us at our [support form](https://mercadopago[FAKER][URL][DOMAIN]/developers/en/support) with the following information:
 
 * Email of your account Mercado Pago;
 * Details about your question, problem or error;
@@ -205,8 +224,7 @@ If you have any questions, problems or errors we have a support channel. Write u
 * Module version, if you are using.
 
 > HINT: You can get the module version in the plugin list of your WordPress administration page:
->
-> ![Ips from Mercado Pago](/images/wp-ecommerce-plugin_adm.png)
+![Ips from Mercado Pago](/images/wp-ecommerce/wp-ecommerce-plugin_adm.png)
 
 
 # How to Contribute

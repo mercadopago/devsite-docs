@@ -1,10 +1,5 @@
 ---
-sites_supported:
-  - mla
-  - mlb
-  - mlm
-  - mlc
-  - mpe
+  indexable: false
 ---
 
 # Mapa de estados
@@ -22,18 +17,18 @@ Un Marketplace puede informarse de los cambios de estados de un `advanced paymen
 
 #### Definición de estados
 
-Estado              |Descripción                                                            |
---------------------|-----------------------------------------------------------------------|
-authorized          |El pago se encuentra pendiente de captura.                             |
-in_process          |El pago se encuentra en proceso de análisis.                           |
-pending             |El usuario no completó el proceso de pago todavía.                     |
-approved            |El pago fue aprobado y acreditado.                                     |
-rejected            |El pago fue rechazado. El usuario podría reintentar el pago.           |
-cancelled           |El pago fue cancelado por una de las partes o el pago expiró.          |
-refunded            |El pago fue devuelto al usuario.                                       |
-partially_refunded  |Fue devuelta parte del pago al usuario.                                |
-charged_back        |Se ha realizado un contracargo en la tarjeta de crédito del comprador. |
-vacated             |Ocurrió un error interno.                                              |
+| Estado | Descripción |
+| --- | --- |
+| authorized | El pago se encuentra pendiente de captura. |
+| in_process | El pago se encuentra en proceso de análisis. |
+| pending | El usuario no completó el proceso de pago todavía. |
+| approved | El pago fue aprobado y acreditado. |
+| rejected | El pago fue rechazado. El usuario podría reintentar el pago. |
+| cancelled | El pago fue cancelado por una de las partes o el pago expiró. |
+| refunded | El pago fue devuelto al usuario. |
+| partially_refunded | Fue devuelta parte del pago al usuario. |
+| charged_back | Se ha realizado un contracargo en la tarjeta de crédito del comprador. |
+| vacated | Ocurrió un error interno. |
 
 # Notificaciones de Webhooks
 

@@ -54,13 +54,13 @@ Durante los testeos en modo Sandbox, puedes operar sobre HTTP, pero para la homo
 
 El módulo de Mercado Pago para VirtueMart esta integrado con las siguientes funcionalidad y soluciones de pago:
 
-* [Checkout básico (Redirect, Iframe ou Modal)](https://www.mercadopago.com.ar/developers/es/solutions/payments/basic-checkout/receive-payments/)
+* [Checkout básico (Redirect, Iframe ou Modal)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/solutions/payments/basic-checkout/receive-payments)
     * Pagos con dos tarjetas
 
 * Checkout Personalizado
-    * [Pagos con Tarjetas](https://www.mercadopago.com.ar/developers/es/solutions/payments/basic-checkout/receive-payments/)
-    * [Pagos con un click (Clientes y Tarjetas)](https://www.mercadopago.com.ar/developers/es/solutions/payments/custom-checkout/one-click-charges/javascript/)
-    * [Pagos con otros medios](https://www.mercadopago.com.ar/developers/es/solutions/payments/custom-checkout/charge-with-other-methods/)
+    * [Pagos con Tarjetas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/solutions/payments/basic-checkout/receive-payments)
+    * [Pagos con un click (Clientes y Tarjetas)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/solutions/payments/custom-checkout/one-click-charges/javascript)
+    * [Pagos con otros medios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/solutions/payments/custom-checkout/charge-with-other-methods)
 
 ## Instalación ##
 
@@ -84,7 +84,7 @@ El módulo de Mercado Pago para VirtueMart esta integrado con las siguientes fun
 
 ![Setting client id and client secret](/images/virtuemart-credentials.png) <br />
 
-> Encuentra tu **Client id** y **Client secret** en la [sección de Credenciales]([FAKER][CREDENTIALS][URL_BASIC]).
+> Encuentra tu **Client id** y **Client secret** en la [sección de Credenciales]([FAKER][CREDENTIALS][URL]).
 
 5. Configuraciones del Checkout. <br/>
 
@@ -183,7 +183,7 @@ Para poder encontrarlas, ve a tus [credenciales]([FAKER][CREDENTIALS][URL]).
 
 Puedes obtener tu **Access Token** [en la sección credenciales]([FAKER][CREDENTIALS][URL]).
 
-> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/resources/faqs/credentials/). 
+> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials). 
 
 7. Configuración IPN. <br/>
 

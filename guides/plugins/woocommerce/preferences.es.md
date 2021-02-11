@@ -43,9 +43,9 @@ Activa el checkout que quieras ofrecer a tus clientes según tus preferencias y 
 >
 > Importante
 >
-> Ten en cuenta que el [Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/introduction) es excluyente del Checkout Personalizado y viceversa. Puedes usar los dos checkout personalizados a la vez para ofrecer todos los medios de pago. -->
+> Ten en cuenta que el [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction) es excluyente del Checkout Personalizado y viceversa. Puedes usar los dos checkout personalizados a la vez para ofrecer todos los medios de pago. -->
 
-* Elige los [medios de pago disponibles](https://www.mercadopago.com.ar/developers/es/guides/resources/localization/payment-methods/) para tus clientes según el país en el que operes y el tipo de checkout que estés configurando. 
+* Elige los [medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods) para tus clientes según el país en el que operes y el tipo de checkout que estés configurando. 
 
 * Establece el máximo de cuotas en el que podrán pagarte.
 
@@ -63,9 +63,9 @@ Tendrás distintos ajustes disponibles según el tipo de checkout que actives en
 
 ### Ajustes comunes a todos los checkouts
 
-| Configuración                 | Descripción                                                               	                |
-|-------------------------------|-----------------------------------------------------------------------------------------------|
-| Modo binario     	            | Activa esta opción cuando no quieras dejar pagos en estado pendiente o en revisión. Con el modo binario los pagos se aceptarán o rechazarán de forma automática.|
+| Configuración | Descripción |
+| --- | --- |
+| Modo binario | Activa esta opción cuando no quieras dejar pagos en estado pendiente o en revisión. Con el modo binario los pagos se aceptarán o rechazarán de forma automática. |
 
 ### Checkout Pro
 
@@ -73,36 +73,36 @@ Tendrás distintos ajustes disponibles según el tipo de checkout que actives en
 
 Elige qué experiencia de compra tendrán tus clientes a la hora de pagar: 
 
-| Experiencia de pago           | Características                                                              	                                 |
-|-------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Redirect     	                | Tus clientes serán redirigidos a una página de Mercado Pago con el formulario de pagos para terminar la compra.|
-| Modal                       	| Tus clientes accederán al formulario de pagos de Mercado Pago sin salir de tu tienda.                          |
+| Experiencia de pago | Características |
+| --- | --- |
+| Redirect | Tus clientes serán redirigidos a una página de Mercado Pago con el formulario de pagos para terminar la compra. |
+| Modal | Tus clientes accederán al formulario de pagos de Mercado Pago sin salir de tu tienda. |
 
 > NOTE
 >
 > Nota
 >
-> Consulta la [documentación del Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/introduction/) para conocer mejor todas sus características y funcionalidades.
+> Consulta la [documentación del Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction) para conocer mejor todas sus características y funcionalidades.
 
-| Configuración                 | Descripción                                                               	                  |
-|-------------------------------|-----------------------------------------------------------------------------------------------|
-| Volver a la tienda     	      | Cuando elijas redirect, siempre tendrás la opción de hacer que tus clientes vuelvan o no a tu tienda una vez finalizado el pago.|
-| URLs configurables          	| De éxito, pago rechazado, pago pendiente.|
+| Configuración | Descripción |
+| --- | --- |
+| Volver a la tienda | Cuando elijas redirect, siempre tendrás la opción de hacer que tus clientes vuelvan o no a tu tienda una vez finalizado el pago.|
+| URLs configurables | De éxito, pago rechazado, pago pendiente.|
 
 ### Checkout Personalizado
 
 #### Pagos con tarjetas
 
-| Configuración                 | Descripción                                                                 	                |
-|-------------------------------|-----------------------------------------------------------------------------------------------|
-| Cupon de descuento     	      | Activa esta opción cuando quieras ofrecer descuentos a tus clientes. Aparecerá un campo en el formulario donde podrán ingresar su cupón.|
+| Configuración | Descripción |
+| --- | --- |
+| Cupon de descuento | Activa esta opción cuando quieras ofrecer descuentos a tus clientes. Aparecerá un campo en el formulario donde podrán ingresar su cupón. |
 
 #### Pagos presenciales
 
-| Configuración                 | Descripción                                                                 	                |
-|-------------------------------|-----------------------------------------------------------------------------------------------|
-| Cupon de descuento     	      | Activa esta opción cuando quieras ofrecer descuentos a tus clientes. Aparecerá un campo en el formulario donde podrán ingresar su cupón.|
-| Reducir inventario     	      | Activa esta opción cuando quieras automatizar la reducción del inventario por cada orden de compra que se aprueba tras un pago con Mercado Pago.|
+| Configuración | Descripción |
+| --- | --- |
+| Cupon de descuento | Activa esta opción cuando quieras ofrecer descuentos a tus clientes. Aparecerá un campo en el formulario donde podrán ingresar su cupón. |
+| Reducir inventario | Activa esta opción cuando quieras automatizar la reducción del inventario por cada orden de compra que se aprueba tras un pago con Mercado Pago. |
 
 ---
 
@@ -115,4 +115,4 @@ Elige qué experiencia de compra tendrán tus clientes a la hora de pagar:
 > Pon a prueba el módulo y verifica que todo funcione bien para empezar a recibir el dinero de tus ventas en Mercado Pago.
 >
 >
-> [Recibir pagos](https://www.mercadopago.com.ar/developers/es/guides/plugins/woocommerce/receive-payments/)
+> [Recibir pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/woocommerce/receive-payments)

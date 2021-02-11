@@ -31,6 +31,6 @@ Adaltech realiza todas as configurações necessárias para que você venda em s
 
 ## Canal de suporte
 
-Email | Telefone
---|--
-suporte@gticket.com.br |(11)43848727
+| E-mail | Telefone |
+| --- | --- |
+| suporte@gticket.com.br | (11)43848727 |

@@ -1,5 +1,8 @@
 ---
-indexable: false
+sites_supported:
+  - mla
+  - mlm
+  - mlb
 ---
 
 # Collection reattempt logic
@@ -7,12 +10,25 @@ indexable: false
 By automating the recurrence of your collections, authorized payments that will have a debit date configured based on the periodicity that was defined in the subscription are created.
 
 ## Payment statuses
+
+----[mla]----
+
 At the time the instalment is collected, three alternatives may arise, based on the outcome of the payment:
 
+------------
+
+----[mlb, mlm]----
+
+At the time the instalment is collected, two alternatives may arise, based on the outcome of the payment:
+
+------------
+
 * __Payment is successfully made__ so, the instalment will remain as `processed` and will not be reattempted. 
+
 ----[mla]----
 * __Payment is being processed__ so the instalment will be pending in a `waiting for gateway` status until the payment is resolved.
 ------------
+
 * __Payment is declined__ so the installment will always remain in `recycling` status and when the installment is not expired or has not reached the maximum number of reattempts. Otherwise, it will be processed with the `processed` status.
 
 ## Declined payments
@@ -48,7 +64,7 @@ the installment cannot be collected on the fourth reattempt, it will automatical
 >
 > Update, edit or cancel your subscriptions.
 >
-> [Advanced integration](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/advenced-integration/)
+> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/advanced-integration)
 
 > RIGHT_BUTTON
 >
@@ -56,4 +72,4 @@ the installment cannot be collected on the fourth reattempt, it will automatical
 >
 > Check that your subscriptions are properly configured with the test users. 
 >
-> [Tests](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/testing/)
+> [Tests](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/testing)

@@ -17,14 +17,14 @@ As you can imagine, a website without a payment processor is nothing more than a
 
 Install our payment processor and take your sales to another level with the best shopping experience:
 
-| Characteristics               | Description                                                              	                                               |
-|-------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Financing                 	  | Sell in installments and offer the promotions you want.                  	                                               |
-| Money Release                 | Instantly or with the rates and terms that best suit the business.    	                                                 |
-| Payment Methods               | Accept payments by credit and debit card, payments in cash and with money in Mercado Pago account.                       |
-| Checkout Types                | Checkout Pro, Custom Checkout, Ticket Checkout.                                                 	               |
-| Payment as a Guest            | Users do not need to be registered in Mercado Pago in order to pay in PrestaShop.                                        |
-| Binary Mode                   | Approve or reject payments instantly and automatically.                                                                  |
+| Characteristics | Description |
+| --- | --- |
+| Financing | Sell in installments and offer the promotions you want. |
+| Money Release | Instantly or with the rates and terms that best suit the business. |
+| Payment Methods | Accept payments by credit and debit card, payments in cash and with money in Mercado Pago account. |
+| Checkout Types | Checkout Pro, Custom Checkout, Ticket Checkout. |
+| Payment as a Guest | Users do not need to be registered in Mercado Pago in order to pay in PrestaShop. |
+| Binary Mode | Approve or reject payments instantly and automatically. |
 
 > NOTE
 >
@@ -37,7 +37,7 @@ Install our payment processor and take your sales to another level with the best
 With these payment options we cover the needs of each business. Check the features to choose which one best suits yours.
 
 | Characteristics | Checkout Pro | Custom Checkout | Ticket Checkout |
-|-----------------|--------------------------|------------------------|-----------------|
+| --- | --- | --- | --- |
 | Payment Methods | Payments with cards, in cash and with money in Mercado Pago account. | Payments with debit and credit cards. | Payments in cash. |
 | Payment Experience | Your customers pay from the Mercado Pago page with a modal format (within your store). | Your customers pay without leaving your online store. | Your customers pay without leaving your online store. |
 | Guest Users | Your customers can pay with or without a Mercado Pago account. | Your customers pay as guests, without an account in Mercado Pago. | Your customers pay as guests, without an account in Mercado Pago. |
@@ -46,7 +46,7 @@ With these payment options we cover the needs of each business. Check the featur
 >
 > Note
 >
-> Check [the documentation of the Checkout Pro](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/introduction/) to learn more about all its features and functionalities.
+> Check [the documentation of the Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction) to learn more about all its features and functionalities.
 
 ### Next step
 
@@ -57,4 +57,4 @@ With these payment options we cover the needs of each business. Check the featur
 > Follow these steps to install the Mercado Pago module in your online store.
 >
 > 
-> [Install](https://www.mercadopago.com.ar/developers/en/guides/plugins/prestashop/instalation/)
+> [Install](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/instalation)

@@ -22,13 +22,13 @@ Hasta ahora recibías “x-www-form-urlencoded”, por lo que tenés que adaptar
 
 > Es necesario que después de recibir la notificación nos respondas un 200 inmediatamente para evitar un reenvío de notificación antes de los 10 segundos.
 
-El JSON va a tener información básica del pago. Y si necesitas más información, [realizá un GET al ID del pago](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get/).
+El JSON va a tener información básica del pago. Y si necesitas más información, [realizá un GET al ID del pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get).
 
 > Es necesario que tu servidor tenga certificados HTTPS.
 
 ## ¿Cómo activar las notificaciones IPN?
 
-Desde tu cuenta de Mercado Pago, puedes [sumar notificaciones IPN](https://www.mercadopago.com.ar/ipn-notifications).
+Desde tu cuenta de Mercado Pago, puedes [sumar notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/ipn-notifications).
 
 > Tienes que usar la cuenta en la que recibes los pagos de los que quieres ser notificado.
 
@@ -60,7 +60,7 @@ También vas a recibir un JSON de esta forma:
 }
 ```
 
-> Puedes encontrar más información sobre cómo integrar las notificaciones en la [sección Notificaciones IPN](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn/).
+> Puedes encontrar más información sobre cómo integrar las notificaciones en la [sección Notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn).
 
 ## Si no quiero notificaciones IPN, ¿qué puedo hacer?
 

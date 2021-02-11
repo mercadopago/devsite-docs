@@ -44,4 +44,4 @@ curl -X POST \
 > 
 > OBS
 > 
-> Ver [referência](https://www.mercadopago.com.br/developers/es/guides/payments/advanced-payments/wallet-device-fingerprint-sample) ao exemplo completo de Fingerprint e implementação mediante SDK. 
+> Ver [referência](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/advanced-payments/wallet-device-fingerprint-sample) ao exemplo completo de Fingerprint e implementação mediante SDK. 

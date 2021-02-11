@@ -22,22 +22,22 @@ No caso do comprador possuir um navegador não suportado, ele será informado de
 
 ### Desktop web
 
-Navegador | Suporte
---------- | --------
-**Chrome** | Completo
-**Firefox** | Completo
-**Internet Explorer** | 11
-**Edge** | Completo
-**Safari** | Completo
-**Opera** | Completo
+| Navegador | Suporte |
+| --- | --- |
+| **Chrome** | Completo |
+| **Firefox** | Completo |
+| **Internet Explorer** | 11 |
+| **Edge** | Completo |
+| **Safari** | Completo |
+| **Opera** | Completo |
 
 ### Mobile web
 
-Navegador | Suporte
---------- | --------
-**Chrome** | Completo
-**Firefox** | Completo
-**Windows Phone (Internet Explorer Mobile)** | _Não_
-**Safari Mobile** | Completo
-**Opera Mini** | _Basico_
-**Android Browser** | _Não_
+| Navegador | Suporte |
+| --- | --- |
+| **Chrome** | Completo |
+| **Firefox** | Completo |
+| **Windows Phone (Internet Explorer Mobile)** | _Não_ |
+| **Safari Mobile** | Completo |
+| **Opera Mini** | _Basico_ |
+| **Android Browser** | _Não_ |

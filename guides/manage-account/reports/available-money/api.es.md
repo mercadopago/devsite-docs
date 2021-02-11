@@ -436,14 +436,14 @@ Conoce los campos que puedes configurar para ajustar tus preferencias antes de e
 
 
 | Campos configurables | Descripción |
-| ----------| ---------------------- |
+| --- | --- |
 | `sftp_info` (opcional) | <br/>Indica los datos de subida a SFTP cuando lo necesites.<br/><br/> |
 | `separator` (opcional) | <br/>Separador que puedes usar en el archivo .csv cuando no quieras que el separador sea una coma. <br/><br/> |
 | `extended` (opcional) | <br/>Incluye el detalle de las comisiones en el reporte.<br/><br/> |
 | `refund_detailed` (opcional) | <br/>Muestra el código de referencia (external_reference) del reembolso en vez del código de referencia (external_reference) del pago.<br/><br/> |
 | `include_withdrawal` (opcional) | <br/>Incluye los retiros de dinero en el reporte.<br/><br/> |
 | `coupon_detailed` (opcional) | <br/>Suma una columna para mostrar el detalle de los cupones de descuento.<br/><br/> |
-| `detailed` | <br/>Incluye columnas con información más detallada sobre tus operaciones:<br/> - Comisión de Mercado Pago (`mp_fee_amount`)<br/> - Comisión por ofrecer cuotas sin interés (`financing_fee_amount`)<br/> - Monto bruto de la operación (`gross_amount`)<br/> - Medios de pago (`payment_method`)<br/> - Cuotas (`installments`)<br/> - Cupón de descuento (`coupon_amount`) <br/> - Costos de envío (`shipping_fee_amount`) <br/> - Impuestos  cobrados por retenciones de IIBB (`taxes_amount`) <br/> - Monto recibido por compras con split (`seller_amount`)<br/><br/>|
+| `detailed` | <br/>Incluye columnas con información más detallada sobre tus operaciones:<br/> - Comisión de Mercado Pago (`mp_fee_amount`)<br/> - Comisión por ofrecer cuotas sin interés (`financing_fee_amount`)<br/> - Monto bruto de la operación (`gross_amount`)<br/> - Medios de pago (`payment_method`)<br/> - Cuotas (`installments`)<br/> - Cupón de descuento (`coupon_amount`) <br/> - Costos de envío (`shipping_fee_amount`) <br/> - Impuestos cobrados por retenciones de IIBB (`taxes_amount`) <br/> - Monto recibido por compras con split (`seller_amount`)<br/><br/>|
 | `file_name_prefix` | <br/>Prefijo que compone el nombre del reporte una vez generado y listo para descargar.<br/><br/> |
 | `frequency` | <br/>Indica la frecuencia diaria, semanal o mensual de los reportes programados.<br/><br/> - `frequency` aplica type *monthly* al día del mes o *weekly* el día de la semana<br/> - `hour` hora del día en la que generar el reporte <br/> - `type` indica el tipo de frecuencia *daily* (diaria), *weekly* (semanal) y *monthly* (mensual).<br/><br/> |
 | `scheduled` (read_only) | <br/>Campo informativo que indica si ya existen reportes programados en la cuenta de usuario.<br/><br/> |
@@ -453,7 +453,7 @@ Conoce los campos que puedes configurar para ajustar tus preferencias antes de e
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/glossary/) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/glossary) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 
 
@@ -990,7 +990,7 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 >
 > Puedes generar tus reportes de Dinero retirado desde el panel de Mercado Pago en tres simples pasos.
 >
-> [Generación desde Mercado Pago](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/panel/)
+> [Generación desde Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/panel)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -998,4 +998,4 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 >
 > Puedes generar un reporte cada vez que retires dinero a una cuenta bancaria.
 >
-> [Generación por retiro](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/available-money/withdrawal/)
+> [Generación por retiro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/withdrawal)

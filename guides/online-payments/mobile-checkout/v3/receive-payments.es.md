@@ -6,7 +6,6 @@ sites_supported:
     - mco
     - mlc
     - mpe
-    - global
 ---
 # Recibir pagos
 
@@ -72,8 +71,8 @@ Luego, deberás agregar los atributos de tu preferencia de pago:
   $preference = new MercadoPago\Preference();
 
   $item = new MercadoPago\Item();
-  $item->title = "[FAKER][COMMERCE][PRODUCT_NAME]";
-  $item->quantity = [FAKER][NUMBER][BETWEEN][1,10];
+  $item->title = "Blue shirt";
+  $item->quantity = 10;
   $item->currency_id = "[FAKER][CURRENCY][ACRONYM]";
   $item->unit_price = [FAKER][COMMERCE][PRICE];
 
@@ -91,13 +90,13 @@ Preference preference = new Preference();
 
 Item item = new Item();
 item.setId("1234")
-    .setTitle("[FAKER][COMMERCE][PRODUCT_NAME]")
-    .setQuantity([FAKER][NUMBER][BETWEEN][1,10])
+    .setTitle("Blue shirt")
+    .setQuantity(10)
     .setCategoryId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float) [FAKER][COMMERCE][PRICE]);
 
 Payer payer = new Payer();
-payer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
+payer.setEmail("john@yourdomain.com");
 
 preference.setPayer(payer);
 preference.appendItem(item);
@@ -108,8 +107,8 @@ preference.save();
 var preference = {}
 
 var item = {
-  title: '[FAKER][COMMERCE][PRODUCT_NAME]',
-  quantity: [FAKER][NUMBER][BETWEEN][1,10],
+  title: 'Blue shirt',
+  quantity: 10,
   currency_id: '[FAKER][CURRENCY][ACRONYM]',
   unit_price: [FAKER][COMMERCE][PRICE]
 }
@@ -131,13 +130,13 @@ mercadopago.preferences.create(preference).then(function (data) {
 preference = MercadoPago::Preference.new()
 
 item = MercadoPago::Item.new()
-item.title="[FAKER][COMMERCE][PRODUCT_NAME]"
-item.quantity= [FAKER][NUMBER][BETWEEN][1,10]
+item.title="Blue shirt"
+item.quantity= 10
 item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
 item.unit_price = [FAKER][COMMERCE][PRICE]
 
 payer = MercadoPago::Payer.new()
-payer.email="[FAKER][INTERNET][FREE_EMAIL]"
+payer.email="john@yourdomain.com"
 
 preference.items = [item]
 preference.payer = payer
@@ -150,7 +149,7 @@ preference.save
 
 Mientras más información nos envíes, mejor será la aprobación de los pagos y la experiencia de tus usuarios.
 
-#### _Payer_
+#### Payer
 
 Es requerido el envío del `email` de tu comprador.
 
@@ -160,7 +159,7 @@ Es requerido el envío del `email` de tu comprador.
   "payer": {
     "name": "[FAKER][NAME][FIRST_NAME]",
     "surname": "[FAKER][NAME][LAST_NAME]",
-    "email": "[FAKER][INTERNET][FREE_EMAIL]",
+    "email": "john@yourdomain.com",
     "date_created": "2015-06-02T12:58:41.425-04:00",
     "phone": {
       "area_code": "[FAKER][PHONE_NUMBER][AREA_CODE]",
@@ -172,7 +171,7 @@ Es requerido el envío del `email` de tu comprador.
     },
     "address": {
       "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-      "street_number": [FAKER][ADDRESS][BUILDING_NUMBER],
+      "street_number": 7304,
       "zip_code": "[FAKER][ADDRESS][ZIP_CODE]"
     }
   },
@@ -199,7 +198,7 @@ Map<String, Object> preferenceMap = new HashMap<>();
 preferenceMap.put("item_id", "1");
 preferenceMap.put("amount", new BigDecimal(10));
 preferenceMap.put("currency_id", "[FAKER][CURRENCY][ACRONYM]");
-preferenceMap.put("payer_email", "[FAKER][INTERNET][FREE_EMAIL]");
+preferenceMap.put("payer_email", "john@yourdomain.com");
 
 final Activity activity = this;
 LayoutUtil.showProgressLayout(activity);
@@ -231,7 +230,7 @@ public void failure(ApiException apiException) {
                                      @"amount" : @10,
                                      @"itemId" : @29334,
                                      @"customerId" : @207,
-                                     @"payerEmail" : @"[FAKER][INTERNET][FREE_EMAIL]" };
+                                     @"payerEmail" : @"john@yourdomain.com" };
 
 
     [CustomServer createCheckoutPreferenceWithUrl:@"https://your-base-url.com" uri:@"/your-create-preference-uri" bodyInfo:preferenceBody success:^(CheckoutPreference * checkoutPreference) {
@@ -250,7 +249,7 @@ A modo de ejemplo proponemos que inicies el flujo de Mercado Pago desde un botó
 
 [[[
 
-```android-xml
+```android
 ===
 1. Crea un Activity para insertar el botón (**MainActivity**, por ejemplo).  
 2. Agrega un campo de texto para mostrar el resultado del pago.
@@ -506,16 +505,16 @@ El SDK permite configurar el color en formato hexadecimal, es decir por ejemplo 
 
 Las notificaciones son la forma automática de enterarte de tus nuevos pagos y las actualizaciones de sus estados. Esto te permitirá administrar tu _stock_ y mantener tu sistema sincronizado.
 
-Visita la sección [Notificaciones](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn) para conocer más sobre esto.
+Visita la sección [Notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn) para conocer más sobre esto.
 
 ## Prueba la integración
 
 Prueba tu integración antes de salir a producción, a fin de verificar el funcionamiento y realizar los ajustes que necesites.
 
-Para ello debes usar usuario y tarjetas de prueba, visita la sección [Probando](https://www.mercadopago.com.ar/developers/es/guides/online-payments/mobile-checkout/testing) para más información.
+Para ello debes usar usuario y tarjetas de prueba, visita la sección [Probando](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/mobile-checkout/testing) para más información.
 
 ### Próximos pasos
 
-- Visita la sección [Personalización](https://www.mercadopago.com.ar/developers/es/guides/online-payments/mobile-checkout/v3/personalization) para adecuar el flujo de pago a tus necesidades.
-- Para obtener información sobre como hacer pruebas, dirígete a la sección [Probando integración](https://www.mercadopago.com.ar/developers/es/guides/online-payments/mobile-checkout/v3/testing).
+- Visita la sección [Personalización](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/mobile-checkout/v3/personalization) para adecuar el flujo de pago a tus necesidades.
+- Para obtener información sobre como hacer pruebas, dirígete a la sección [Probando integración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/mobile-checkout/v3/testing).
 

@@ -1,10 +1,5 @@
 ---
-sites_supported:
-  - mla
-  - mlb
-  - mlm
-  - mlc
-  - mpe
+  indexable: false
 ---
 
 # Pagos con clientes y tarjetas guardadas
@@ -15,7 +10,7 @@ La API de Advanced Payments permite realizar pagos con clientes y tarjetas guard
 >
 > Nota
 >
-> Para mayor información ver referencia de [Customers & Cards](https://www.mercadopago.com.ar/developers/es//guides/online-payments/checkout-api/advanced-integration/).
+> Para mayor información ver referencia de [Customers & Cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/advanced-integration).
 
 Para crear un pago usando `Customers`, se setea el ID del usuario y el tipo con el valor `customer`.
 

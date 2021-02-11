@@ -40,7 +40,7 @@ Configure your credentials
     mp = mercadopago.MP("CLIENT_ID", "CLIENT_SECRET")
 ```
 
-### Preferences
+### Preferences
 
 
 Get an existent Checkout preference
@@ -175,11 +175,7 @@ Get customer
 
     mp.get ("/v1/customers/CUSTOMER_ID")
 
-* View more Custom checkout related APIs in Developers Site
-    * Argentina: `https://www.mercadopago.com.ar/developers <https://www.mercadopago.com.ar/developers>`_
-    * Brazil: `https://www.mercadopago.com.br/developers <https://www.mercadopago.com.br/developers>`_
-    * Mexico: `https://www.mercadopago.com.mx/developers <https://www.mercadopago.com.mx/developers>`_
-    * Colombia: `https://www.mercadopago.com.co/developers <https://www.mercadopago.com.co/developers>`_
+* View more Custom checkout related APIs in [API reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference)
 
 ## Generic methods
 

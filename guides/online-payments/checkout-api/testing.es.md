@@ -6,10 +6,10 @@ Te explicamos cómo utilizar nuestras tarjetas y usuarios de prueba para verific
 
 **Los usuarios de prueba te permiten probar tu integración** al generar flujos de pagos en una copia exacta de tu integración.
 
-Tipos de usuarios | Descripción
------------- | -------------
-Vendedor | Es la cuenta de prueba que usas para **configurar la aplicación y credenciales para el cobro**. |
-Comprador | Es la cuenta de prueba que usas para **probar el proceso de compra**. |
+| Tipos de usuarios | Descripción |
+| --- | --- |
+| Vendedor | Es la cuenta de prueba que usas para **configurar la aplicación y credenciales para el cobro**. |
+| Comprador | Es la cuenta de prueba que usas para **probar el proceso de compra**. |
 
 <br>
 
@@ -75,63 +75,63 @@ Inicia tu integración configurada con las credenciales de tu usuario de prueba 
 
 ----[mla]----
 
-Tarjeta | Número | Código de seguridad | Fecha de vencimiento
-:---  | :---: | :---: | :---:
-Mastercard | 5031 7557 3453 0604 | 123 | 11/25
-Visa | 4509 9535 6623 3704 | 123 | 11/25
-American Express | 3711 803032 57522 | 1234 | 11/25
+| Tarjeta | Número | Código de seguridad | Fecha de vencimiento |
+| :--- | :---: | :---: | :---: |
+| Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
+| Visa | 4509 9535 6623 3704 | 123 | 11/25 |
+| American Express | 3711 803032 57522 | 1234 | 11/25 |
 
 ------------
 ----[mlb]----
 
-Tarjeta | Número | Código de seguridad | Fecha de vencimiento
-:---  | :---: | :---: | :---:
-Mastercard | 5031 4332 1540 6351 | 123 | 11/25
-Visa | 4235 6477 2802 5682 | 123 | 11/25
-American Express | 3753 651535 56885 | 1234 | 11/25
+| Tarjeta | Número | Código de seguridad | Fecha de vencimiento |
+| :--- | :---: | :---: | :---: |
+| Mastercard | 5031 4332 1540 6351 | 123 | 11/25 |
+| Visa | 4235 6477 2802 5682 | 123 | 11/25 |
+| American Express | 3753 651535 56885 | 1234 | 11/25 |
 
 ------------
 ----[mlc]----
 
-Tarjeta | Número | Código de seguridad | Fecha de vencimiento
-:---  | :---: | :---: | :---:
-Mastercard | 5416 7526 0258 2580 | 123 | 11/25
-Visa | 4168 8188 4444 7115 | 123 | 11/25
-American Express | 3757 781744 61804 | 1234 | 11/25
+| Tarjeta | Número | Código de seguridad | Fecha de vencimiento |
+| :--- | :---: | :---: | :---: |
+| Mastercard | 5416 7526 0258 2580 | 123 | 11/25 |
+| Visa | 4168 8188 4444 7115 | 123 | 11/25 |
+| American Express | 3757 781744 61804 | 1234 | 11/25 |
 
 ------------
 ----[mco]----
 
-Tarjeta | Número | Código de seguridad | Fecha de vencimiento
-:---  | :---: | :---: | :---:
-Mastercard | 5254 1336 7440 3564 | 123 | 11/25
-Visa | 4013 5406 8274 6260 | 123 | 11/25
-American Express | 3743 781877 55283 | 1234 | 11/25
+| Tarjeta | Número | Código de seguridad | Fecha de vencimiento |
+| :--- | :---: | :---: | :---: |
+| Mastercard | 5254 1336 7440 3564 | 123 | 11/25 |
+| Visa | 4013 5406 8274 6260 | 123 | 11/25 |
+| American Express | 3743 781877 55283 | 1234 | 11/25 |
 
 ------------
 ----[mlm]----
 
-Tarjeta | Número | Código de seguridad | Fecha de vencimiento
-:---  | :---: | :---: | :---:
-Mastercard | 5474 9254 3267 0366 | 123 | 11/25
-Visa | 4075 5957 1648 3764 | 123 | 11/25
+| Tarjeta | Número | Código de seguridad | Fecha de vencimiento |
+| :--- | :---: | :---: | :---: |
+| Mastercard | 5474 9254 3267 0366 | 123 | 11/25 |
+| Visa | 4075 5957 1648 3764 | 123 | 11/25 |
 
 ------------
 ----[mlu]----
 
-Tarjeta | Número | Código de seguridad | Fecha de vencimiento
-:---  | :---: | :---: | :---:
-Mastercard | 5031 7557 3453 0604 | 123 | 11/25
-Visa | 4509 9535 6623 3704 | 123 | 11/25
+| Tarjeta | Número | Código de seguridad | Fecha de vencimiento |
+| :--- | :---: | :---: | :---: |
+| Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
+| Visa | 4509 9535 6623 3704 | 123 | 11/25 |
 
 ------------
 ----[mpe]----
 
-Tarjeta | Número | Código de seguridad | Fecha de vencimiento
-:---  | :---: | :---: | :---:
-Mastercard | 5031 7557 3453 0604 | 123 | 11/25
-Visa | 4009 1753 3280 6176 | 123 | 11/25
-American Express | 3711 803032 57522 | 1234 | 11/25
+| Tarjeta | Número | Código de seguridad | Fecha de vencimiento |
+| :--- | :---: | :---: | :---: |
+| Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
+| Visa | 4009 1753 3280 6176 | 123 | 11/25 |
+| American Express | 3711 803032 57522 | 1234 | 11/25 |
 
 ------------
 
@@ -154,7 +154,7 @@ Para **probar distintos resultados de pago**, completa el dato que quieras en el
 
 ## Comenzar a recibir pagos
 
-Para empezar a cobrar, debes cumplir los [requisitos para ir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/goto-production/) y <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> activar tus credenciales</a>.
+Para empezar a cobrar, debes cumplir los [requisitos para ir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/goto-production) y [activar tus credenciales]([FAKER][CREDENTIALS][URL]).
 
 Antes de activarlas, verifica que las credenciales en tu integración sean las de la cuenta que reciba el dinero de las ventas.<br/>
 
@@ -163,11 +163,11 @@ Antes de activarlas, verifica que las credenciales en tu integración sean las d
 
 > LEFT_BUTTON_REQUIRED_ES
 >
-> Manejo de respuestas de error
+> Mensajes de respuesta
 >
 > Ayuda a tus clientes a completar sus pagos sin errores.
 >
-> [Manejo de respuestas de error](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/handling-responses/)
+> [Mensajes de respuesta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/handling-responses)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -175,4 +175,4 @@ Antes de activarlas, verifica que las credenciales en tu integración sean las d
 >
 > Encuentra toda la información necesaria para interactuar con nuestras APIs.
 >
-> [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/)
+> [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference)

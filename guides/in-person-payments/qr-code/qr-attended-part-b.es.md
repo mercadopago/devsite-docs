@@ -17,7 +17,7 @@ Para cobrar a través de un código QR modelo atendido, deberás crear una orden
 
 Te explicamos cómo funciona el modelo atendido: 
 
->![Flujo de pago en punto de venta QR Mercado Pago](/images/qr-user-flow.es.png)
+![Flujo de pago en punto de venta QR Mercado Pago](/images/mobile/qr-user-flow.es.png)
 
 <span></span>
 
@@ -27,6 +27,7 @@ Te explicamos cómo funciona el modelo atendido:
 
 ## Crear una orden
 
+----[mla, mpe, mlb, mlc, mlu, mlm]---- 
 ```curl
 curl -X PUT \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
@@ -56,7 +57,47 @@ https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/stores/EXTERNAL
     }
 }
 ```
-Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put/).
+------------
+
+----[mco]----
+```curl
+curl -X POST \
+-H 'Authorization: Bearer ACCESS_TOKEN' \
+https://api.mercadopago.com/mpmobile/instore/qr/USER_ID/EXTERNAL_ID \
+-d \
+{
+    "external_reference": "order-id-1234",
+    "notification_url": "www.yourserver.com/yourendpoint",
+    "sponsor_id": 629437702,
+    "items": [
+        {
+            "title": "Item 1",
+            "currency_id": "COP",
+            "unit_price": 6000,
+            "quantity": 1
+        },
+        {
+            "title": "Item 2",
+            "currency_id": "COP",
+            "unit_price": 3000,
+            "quantity": 1
+        }
+    ],
+    "taxes": [
+        {
+            "value": 1437,
+            "type": "IVA"
+        }
+    ]
+}
+```
+------------
+
+Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put).
+
+----[mco]----
+> Si debes pagar IVA para los productos de tu orden, visita la [sección de Consideraciones IVA Colombia](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/iva-colombia).
+------------
 
 Una vez creada la orden, ya se encuentra disponible para ser **escaneada y pagada**.
 
@@ -85,7 +126,7 @@ Las notificaciones IPN (Instant Payment Notification) son la **forma automática
 
 Implementa IPN de `merchant_order` junto con una búsqueda de la orden por `external_reference` como método de contigencia.
 
-<a href="https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn/" target="_blank">Recibir notificaciones IPN</a>
+[Recibir notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn)
 
 ---
 ### Próximos pasos
@@ -97,7 +138,7 @@ Implementa IPN de `merchant_order` junto con una búsqueda de la orden por `exte
 >
 > Conoce las opciones que dispones para llevar tu integración al siguiente nivel.
 >
-> [Integración avanzada](https://www.mercadopago.com.ar/developers/es/guides/in-person-payments/qr-code/advanced-integration/)
+> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/advanced-integration)
 
 
 > RIGHT_BUTTON_RECOMMENDED_ES
@@ -106,4 +147,4 @@ Implementa IPN de `merchant_order` junto con una búsqueda de la orden por `exte
 >
 > Realiza los casos de uso más frecuentes para validar tu integración.
 >
-> [Prueba tu integración](https://www.mercadopago.com.ar/developers/es/guides/in-person-payments/qr-code/integration-test/)
+> [Prueba tu integración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/integration-test)

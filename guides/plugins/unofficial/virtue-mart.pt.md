@@ -51,13 +51,13 @@ Durante os testes em modo sandbox, você pode operar por HTTP, mas para homologa
 
 O módulo do Mercado Pago para o VirtueMart esta integrado com as seguintes funcionalidades e soluções de pagamento:
 
-* [Checkout básico (Redirecionado, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/pt/solutions/payments/basic-checkout/receive-payments/)
+* [Checkout básico (Redirecionado, Iframe ou Lightbox)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/solutions/payments/basic-checkout/receive-payments)
     * Pagamento com dois cartões
 
 * Checkout Transparente
-    * [Pagamento com Cartão de Crédito](https://www.mercadopago.com.br/developers/pt/solutions/payments/basic-checkout/receive-payments/)
-    * [Pagamento com um click (Clientes e Cartões)](https://www.mercadopago.com.br/developers/pt/solutions/payments/custom-checkout/one-click-charges/javascript/)
-    * [Pagamento com outros meios (Boleto)](https://www.mercadopago.com.br/developers/pt/solutions/payments/custom-checkout/charge-with-other-methods/)
+    * [Pagamento com Cartão de Crédito](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/solutions/payments/basic-checkout/receive-payments)
+    * [Pagamento com um click (Clientes e Cartões)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/solutions/payments/custom-checkout/one-click-charges/javascript)
+    * [Pagamento com outros meios (Boleto)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/solutions/payments/custom-checkout/charge-with-other-methods)
 
 ## Instalação
 
@@ -80,13 +80,13 @@ O módulo do Mercado Pago para o VirtueMart esta integrado com as seguintes func
 4. Vá para **Configuração** guia <br/>
   Em primeiro lugar, você precisa configurar as credenciais do seu cliente. Para fazê-lo, preencha o **Client_id** e **Client_secret** na seção Configuração de Credenciais.
 
-![Setting client id and client secret](/images/virtuemart-credentials.png) <br />
+![Setting client id and client secret](/images/virtuemart/virtuemart-credentials.png) <br />
 
-> Encontre sua **Client id** e **Client secret** na [seção Credenciais]([FAKER][CREDENTIALS][URL_BASIC]).
+> Encontre sua **Client id** e **Client secret** na [seção Credenciais]([FAKER][CREDENTIALS][URL]).
 
 5. Configurações do checkout básico. <br />
 
-![Settings checkout](/images/virtuemart-checkout_settings.png) <br />
+![Settings checkout](/images/virtuemart/virtuemart-checkout_settings.png) <br />
 
   **Tipo Checkout**: Como seus clientes irão interagir com o Mercado Pago para pagar suas ordens; <br />
   **Redirecionamento automático**: se configurado, a plataforma retornará à sua loja quando o pagamento for aprovado. <br />
@@ -97,7 +97,7 @@ O módulo do Mercado Pago para o VirtueMart esta integrado com as seguintes func
 
   6. Confiuraça de notificaço de pagamento - IPN. <br />
 
-![Setting Notification](/images/virtuemart-ipn_settings.png) <br />
+![Setting Notification](/images/virtuemart/virtuemart-ipn_settings.png) <br />
 
   * **Escolha o status para pagamento aprovado**: Define o status do pedido quando o pagamento é aprovado.
   * **Escolha o status para pagamento pendente**: Define o status do pedido quando o pagamento é pendente.
@@ -110,7 +110,7 @@ O módulo do Mercado Pago para o VirtueMart esta integrado com as seguintes func
 
 7. Outras configurações. <br/>
 
-![Store category](/images/virtuemart-other_settings.png) <br />
+![Store category](/images/virtuemart/virtuemart-other_settings.png) <br />
 
   **Categoria da loja**: Defina a categoria da loja;<br />
   **Log**: Habilite/Desabilite logs.<br />
@@ -134,7 +134,7 @@ O módulo do Mercado Pago para o VirtueMart esta integrado com as seguintes func
 
   6. Agora configure com as suas credenciais. Para fazer isso, informe seu **Access token** na sessão de credenciais.
 
-  ![Settings credentials - Transparent checkout - Credit card](/images/virtuemart-credentials_custom.png) <br />
+![Settings credentials - Transparent checkout - Credit card](/images/virtuemart/virtuemart-credentials_custom.png) <br />
 
 Para poder encontrá-las, confira suas [credenciais]([FAKER][CREDENTIALS][URL]).
 
@@ -156,11 +156,11 @@ Para poder encontrá-las, confira suas [credenciais]([FAKER][CREDENTIALS][URL]).
 
 6. Agora configure suas credenciais. Para fazer isso, preencha sua **Public key** e **Access token** na sessão de Credenciais.
 
-![Settings credentials - Transparent checkout - Ticket](/images/virtuemart-credentials_custom_ticket.png) <br />
+![Settings credentials - Transparent checkout - Ticket](/images/virtuemart/virtuemart-credentials_custom_ticket.png) <br />
 
 Encontre seu **Access Token** na [seção Credenciais]([FAKER][CREDENTIALS][URL]).
 
-> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/resources/faqs/credentials/).
+> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials).
 
 ## Suporte
 

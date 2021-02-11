@@ -28,7 +28,7 @@ You can use the official SDKs or interact directly with our APIs.
 >
 > Learn all the requirements needed to start your integration.
 >
-> [Integration Requirements](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements/)
+> [Integration Requirements](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -36,4 +36,4 @@ You can use the official SDKs or interact directly with our APIs.
 >
 > Find all the information required to interact with our APIs.
 >
-> [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/)
+> [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference)

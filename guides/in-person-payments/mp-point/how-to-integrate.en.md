@@ -3,7 +3,6 @@ sites_supported:
   - mla
   - mlb
   - mlm
-  - global
 ---
 
 
@@ -90,8 +89,10 @@ In the [GitHub](https://github.com/mercadopago/point-android_integration#intent)
 >
 > Important
 >
+
 > * This integration is only available for Android version 2.8.0 or higher.<br>
 > * Not available for iOS.
+
 
 In order to integrate through our APIs, you have to enable the integration options in the Mercado Pago app. Run the following curl to do it:
 
@@ -268,11 +269,11 @@ The answer will have the following format.
 
 It is necessary that you send the `notification_url`, where you´ll get the notification about current and new payments.
 
-In the article [notificaciones](https://www.mercadopago.com.ar/developers/en/guides/notifications/webhooks) you could find more information about it.
+In the article [notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks) you could find more information about it.
 
 
 ## Point payments
-Point payments can be search in the Payments API. You can find more information in the following article: [API's](https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_id/get/)
+Point payments can be search in the Payments API. You can find more information in the following article: [API's](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get)
 
 On the other hand, we have an exclusive Point API that has some additional information about the payments: 
 

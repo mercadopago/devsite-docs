@@ -19,7 +19,7 @@ With our Mercado Pago Checkout API, you should take into account two aspects: da
 
 Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements/#bookmark_always_use_our_libraries) to collect user sensitive data securely.
 
-> For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/).
+> For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
 
 <br>
 
@@ -55,12 +55,12 @@ The following example assumes that `transactionAmount` and `description` data we
      <div>
        <div>
          <label for="email">E-mail</label>
-         <input id="email" name="email" type="text" value="test@test.com"></select>
-       </div>
+         <input id="email" name="email" type="text" value="test@test.com"/>
+       </div>----[mla, mlb, mlu, mlc, mpe, mco]----
        <div>
          <label for="docType">Document Type</label>
          <select id="docType" name="docType" data-checkout="docType" type="text"></select>
-       </div>
+       </div>------------
        <div>
          <label for="docNumber">Document Number</label>
          <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
@@ -120,6 +120,12 @@ The following example assumes that `transactionAmount` and `description` data we
  </form>
 ```
 
+> NOTE
+>
+> Note
+>
+> Note that it is necessary that the form be found before all the following steps for its correct operation.
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure your public key
 
 Add your [public key]([FAKER][CREDENTIALS][URL]) like this:
@@ -132,9 +138,11 @@ window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Get data for your form
 
+----[mla, mlb, mlu, mco, mlc, mpe]----
+
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get document types
 
-If your country has more than one type of document, this field will be mandatory. Use the document list to fill out your data.
+Document type is one of the mandatory fields. Use the document list to fill out your data.
 
 When you call the next function, MercadoPago.js will automatically fill out the available options, including the _select_ type element with `id = docType` in the form:
 
@@ -142,11 +150,13 @@ When you call the next function, MercadoPago.js will automatically fill out the 
 window.Mercadopago.getIdentificationTypes();
 ```
 
-> Find more information in the [document type section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/identification-types/).
+> Find more information in the [Document type section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/identification-types).
+
+------------
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get card payment method
 
-Avoid mistakes and offer the correct available installments by validating your customers' data as they fill it out. Use the code in the following example to identify payment method with the first 6 digits of the card and check if it is necessary to identify the issuing bank.
+Avoid mistakes and offer the correct available installments by validating your customers' data as they fill it out. Use the code in the following example to identify payment method with the first 6 digits of the card.
 
 ```javascript
 document.getElementById('cardNumber').addEventListener('change', guessPaymentMethod);
@@ -166,14 +176,7 @@ function setPaymentMethod(status, response) {
        let paymentMethod = response[0];
        document.getElementById('paymentMethodId').value = paymentMethod.id;
 
-       if(paymentMethod.additional_info_needed.includes("issuer_id")){
-           getIssuers(paymentMethod.id);
-       } else {
-           getInstallments(
-               paymentMethod.id,
-               document.getElementById('transactionAmount').value
-           );
-       }
+       getIssuers(paymentMethod.id);
    } else {
        alert(`payment method info error: ${response}`);
    }
@@ -183,7 +186,7 @@ function setPaymentMethod(status, response) {
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain issuer
 
-It is important to identify the card's issuing bank when completing the form to avoid conflicts between different issuers and to be able to provide the relevant information to the payment methods that require it.
+When completing the form, it is important to identify card's issuing bank to avoid conflicts between the different issuers and to be able to provide the correct payment options in installments.
 
 Add the following code to obtain the `issuer_id`:
 
@@ -218,8 +221,6 @@ function setIssuers(status, response) {
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get number of installments
 
-> If you don't want to offer installments, skip this step.
-
 The number of installments is also a mandatory field for credit card payments. You can use the function in the following example to fill out the _select_ type suggested field called `installments` and get the available installments.
 
 ```javascript
@@ -227,7 +228,7 @@ function getInstallments(paymentMethodId, transactionAmount, issuerId){
    window.Mercadopago.getInstallments({
        "payment_method_id": paymentMethodId,
        "amount": parseFloat(transactionAmount),
-       "issuer_id": issuerId ? parseInt(issuerId) : undefined
+       "issuer_id": parseInt(issuerId)
    }, setInstallments);
 }
 
@@ -288,6 +289,7 @@ The `createToken` method will return a `card_token` with the secure card display
 
 <br>
 <span></span>
+
 > SERVER_SIDE
 >
 > h2
@@ -304,10 +306,10 @@ For this to work, you should configure your [private key]([FAKER][CREDENTIALS][U
 
 [[[
 ```php
+===
+You can find payment status in _status_ value.
+===
 <?php
-    ===
-    You can find payment status in _status_ value.
-    ===
     require_once 'vendor/autoload.php';
 
     MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
@@ -322,8 +324,8 @@ For this to work, you should configure your [private key]([FAKER][CREDENTIALS][U
 
     $payer = new MercadoPago\Payer();
     $payer->email = $_POST['email'];
-    $payer->identification = array( 
-        "type" => $_POST['docType'],
+    $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
+        "type" => $_POST['docType'],------------
         "number" => $_POST['docNumber']
     );
     $payment->payer = $payer;
@@ -355,8 +357,8 @@ var payment_data = {
   issuer_id: req.body.issuer,
   payer: {
     email: req.body.email,
-    identification: {
-      type: req.body.docType,
+    identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
+      type: req.body.docType,------------
       number: req.body.docNumber
     }
   }
@@ -388,9 +390,10 @@ payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmou
        .setInstallments(Integer.valueOf(request.getParameter("installments")))
        .setPaymentMethodId(request.getParameter("paymentMethodId"));
 
-Identification identification = new Identification();
+Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
 identification.setType(request.getParameter("docType"))
-              .setNumber(request.getParameter("docNumber"));
+              .setNumber(request.getParameter("docNumber"));------------ ----[mlm]----
+identification.setNumber(request.getParameter("docNumber"));------------
 
 Payer payer = new Payer();
 payer.setEmail(request.getParameter("email"))
@@ -418,8 +421,8 @@ payment_data = {
   "payment_method_id": request.body.paymentMethodId,
   "payer": {
     "email": request.body.email,
-    "identification": {
-      "type": request.body.docType,
+    "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
+      "type": request.body.docType,------------
       "number": request.body.docNumber
     }
   }
@@ -449,9 +452,9 @@ Payment payment = new Payment()
     PaymentMethodId = Request["paymentMethodId"],
     Payer = new Payer(){
         Email = Request["email"],
-        Identification = new Identification(){
-          Type = Request["docType"],
-          Number = Request["docNumber]
+        Identification = new Identification(){----[mla, mlb, mlu, mlc, mpe, mco]----
+          Type = Request["docType"],------------
+          Number = Request["docNumber"]
         }
     }
 };
@@ -471,9 +474,9 @@ curl -X POST \
     -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/payments' \
     -d '{
-          "transaction_amount": [FAKER][NUMBER][BETWEEN][100, 200],
+          "transaction_amount": 100,
           "token": "ff8080814c11e237014c1ff593b57b4d",
-          "description": "[FAKER][COMMERCE][PRODUCT_NAME]",
+          "description": "Blue shirt",
           "installments": 1,
           "payment_method_id": "visa",
           "issuer_id": 310,
@@ -503,9 +506,9 @@ curl -X POST \
 }
 ```
 
-> Check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post/) to learn about all the available fields for full payments.
+> Check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post) to learn about all the available fields for full payments.
 
-## Error Response Handling
+## Response Handling
 
 Possible payment statuses are:
 
@@ -517,19 +520,19 @@ For improved payment approval, you need to correctly inform results to your cust
 
 This will prevent rejections and chargebacks in the case of already approved transactions.  For example, this allows you to correct data upload mistakes or change payment methods.
 
-We recommend using [error response handling](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses/) and the suggested communication in each case.
+We recommend using [response handling](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses) and the suggested communication in each case.
 
 > NOTE
 >
 > Note
 >
-> Avoid rejected payments with our recommendations to [improve the approval process](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/payment-rejections/).
+> Avoid rejected payments with our recommendations to [improve the approval process](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/payment-rejections).
 
 ## Receive payment notifications
 
 Finally, you always need to be notified of new payments and status updates.  For example, if they were approved, rejected, or are pending.
 
-[Configure webhook notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks/) or [IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/).
+[Configure webhook notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks) or [IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn).
 
 ## Sample projects
 
@@ -537,14 +540,14 @@ Finally, you always need to be notified of new payments and status updates.  For
 >
 > Checkout API
 >
-> Use our <a href="http://github.com/mercadopago/card-payment-sample" target="_blank">complete integration examples</a> on GitHub in PHP or NodeJS to download instantly.
+> Use our [complete integration examples](http://github.com/mercadopago/card-payment-sample) on GitHub in PHP or NodeJS to download instantly.
 
 <span></span>
 > GIT
 >
 > Payment form
 >
-> If you want to deploy other technology in your server, you can <a href="https://github.com/mercadopago/card-payment-sample/tree/master/client" target="_blank">download a complete payment form sample</a> from GitHub.
+> If you want to deploy other technology in your server, you can [download a complete payment form sample](https://github.com/mercadopago/card-payment-sample/tree/master/client) from GitHub.
 
 ---
 ### Next steps
@@ -555,7 +558,7 @@ Finally, you always need to be notified of new payments and status updates.  For
 >
 > Check that everything works in your integration with test users.
 >
-> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/testing/)
+> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/testing)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -563,4 +566,4 @@ Finally, you always need to be notified of new payments and status updates.  For
 >
 > Learn about all the available payment options and how to offer them.
 >
-> [Integrate other payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways/)
+> [Integrate other payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways)

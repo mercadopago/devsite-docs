@@ -6,9 +6,8 @@ sites_supported:
     - mco
     - mlc
     - mpe
-    - global
 ---
-# **Customization**
+# Customization
 
 > WARNING
 >
@@ -171,7 +170,7 @@ In order to incorporate into the Checkout the options set up in the `FlowPrefere
 ```android
 CheckoutPreference checkoutPreference = new CheckoutPreference.Builder()
   .setSite(Sites.ARGENTINA)
-  .addItem(new Item("[FAKER][COMMERCE][PRODUCT_NAME]", new BigDecimal("100")))
+  .addItem(new Item("Blue shirt", new BigDecimal("100")))
   .build();
 
 FlowPreference flowPreference = new FlowPreference.Builder()
@@ -195,8 +194,8 @@ new MercadoPagoCheckout.Builder()
 
             MercadoPagoCheckout.setFlowPreference(flowPrefernece)
 
-let item = Item(_id: "itemId", title: "[FAKER][COMMERCE][PRODUCT_NAME]", quantity: [FAKER][NUMBER][BETWEEN][1,10], unitPrice: [FAKER][COMMERCE][PRICE], description: nil, currencyId: "[FAKER][CURRENCY][ACRONYM]")
-let payer = Payer(_id: "payerId", email: "[FAKER][INTERNET][FREE_EMAIL]", type: nil, identification: nil, entityType: nil)
+let item = Item(_id: "itemId", title: "Blue shirt", quantity: 10, unitPrice: [FAKER][COMMERCE][PRICE], description: nil, currencyId: "[FAKER][CURRENCY][ACRONYM]")
+let payer = Payer(_id: "payerId", email: "john@yourdomain.com", type: nil, identification: nil, entityType: nil)
 
 let checkoutPreference = CheckoutPreference()
             checkoutPreference.items = [item]
@@ -214,8 +213,8 @@ FlowPreference *flowPreference = [[FlowPreference alloc]init];
 [flowPreference disableBankDeals];
 [MercadoPagoCheckout setFlowPreference:flowPreference];
 
-Item *item = [[Item alloc] initWith_id:@"itemId" title:@"[FAKER][COMMERCE][PRODUCT_NAME]" quantity:[FAKER][NUMBER][BETWEEN][1,10] unitPrice:[FAKER][COMMERCE][PRICE] description:@"item description" currencyId:@"[FAKER][CURRENCY][ACRONYM]"];
-Payer *payer = [[Payer alloc] initWith_id:@"payerId" email:@"[FAKER][INTERNET][FREE_EMAIL]" type:nil identification:nil entityType:nil];
+Item *item = [[Item alloc] initWith_id:@"itemId" title:@"Blue shirt" quantity:10 unitPrice:[FAKER][COMMERCE][PRICE] description:@"item description" currencyId:@"[FAKER][CURRENCY][ACRONYM]"];
+Payer *payer = [[Payer alloc] initWith_id:@"payerId" email:@"john@yourdomain.com" type:nil identification:nil entityType:nil];
 
 NSArray *items = [NSArray arrayWithObjects:item, item, nil];
 
@@ -235,7 +234,7 @@ If you need to perform any validation on your server at the time of making the p
 
 In the `ServicePreference` class you can set up the URL and URI of your service together with a Map so that you can send the information you want.
 
-At the moment of posting the payment, the SDK will do it at your service, [creating the payment]https://www.mercadopago.com.ar/developers/en/reference/payments/_payments_id/get/). and performing the validations inherent to your business. The SDK will expect to receive a payment, according to the response of Mercado Pago service.
+At the moment of posting the payment, the SDK will do it at your service, [creating the payment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post) and performing the validations inherent to your business. The SDK will expect to receive a payment, according to the response of Mercado Pago service.
 
 As soon as the `ServicePreference` has been created, you must start the payment flow of MercadoPago, as shown in the following code:
 
@@ -246,7 +245,7 @@ As soon as the `ServicePreference` has been created, you must start the payment 
 public void submit(View view) {
   CheckoutPreference checkoutPreference = new CheckoutPreference.Builder()
           .setSite(Sites.ARGENTINA)
-          .addItem(new Item("[FAKER][COMMERCE][PRODUCT_NAME]", new BigDecimal("100")))
+          .addItem(new Item("Blue shirt", new BigDecimal("100")))
           .build();
 
   HashMap<String, Object> extraData = new HashMap<>();
@@ -265,8 +264,8 @@ public void submit(View view) {
 }
 ```
 ```swift
-let item = Item(_id: "itemId", title: "[FAKER][COMMERCE][PRODUCT_NAME]", quantity: [FAKER][NUMBER][BETWEEN][1,10], unitPrice: [FAKER][COMMERCE][PRICE], description: nil, currencyId: "[FAKER][CURRENCY][ACRONYM]")
-let payer = Payer(_id: "payerId", email: "[FAKER][INTERNET][FREE_EMAIL]", type: nil, identification: nil, entityType: nil)
+let item = Item(_id: "itemId", title: "Blue shirt", quantity: 10, unitPrice: [FAKER][COMMERCE][PRICE], description: nil, currencyId: "[FAKER][CURRENCY][ACRONYM]")
+let payer = Payer(_id: "payerId", email: "john@yourdomain.com", type: nil, identification: nil, entityType: nil)
 
 	let checkoutPreference = CheckoutPreference()
 	checkoutPreference.items = [item]
@@ -276,7 +275,7 @@ let payer = Payer(_id: "payerId", email: "[FAKER][INTERNET][FREE_EMAIL]", type: 
 
 let servicePreference = ServicePreference()
 servicePreference.setCreatePayment(baseURL: "https://your-base-url.com/", URI: "/your-create-payment-uri",
-additionalInfo: ["item_id" : "id", "quantity" : [FAKER][NUMBER][BETWEEN][1,10]])
+additionalInfo: ["item_id" : "id", "quantity" : 10])
 
 MercadoPagoCheckout.setServicePreference(servicePreference)
 
@@ -286,7 +285,7 @@ checkout.start()
 ```
 ```Objective-c
 
-	 Item *item = [[Item alloc] initWith_id:@"itemId" title:@"item title 2" quantity:[FAKER][NUMBER][BETWEEN][1,10] unitPrice:2 description:@"item description" currencyId:@"[FAKER][CURRENCY][ACRONYM]"];
+	 Item *item = [[Item alloc] initWith_id:@"itemId" title:@"item title 2" quantity:10 unitPrice:2 description:@"item description" currencyId:@"[FAKER][CURRENCY][ACRONYM]"];
     Payer *payer = [[Payer alloc] initWith_id:@"payerId" email:@"payer@email.com" type:nil identification:nil entityType:nil];
 
     NSArray *items = [NSArray arrayWithObjects:item, item, nil];
@@ -307,4 +306,4 @@ checkout.start()
 ```
 ]]]
 
-- For information on how to test, go to the [testing integration](https://www.mercadopago.com.ar/developers/en/guides/online-payments/mobile-checkout/v3/testing.en.pt) section.
+- For information on how to test, go to the [testing integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/mobile-checkout/v3/testing) section.

@@ -1,5 +1,8 @@
 ---
-indexable: false
+sites_supported:
+  - mla
+  - mlm
+  - mlb
 ---
 
 # Integrar suscripciones   
@@ -16,7 +19,7 @@ Hay dos formas de integrar suscripciones:
 > 
 > Conceptos claves
 > 
-> ¿Tienes dudas sobre qué es un plan u otro concepto? Ten a mano los <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/introduction" target="_blank">conceptos claves</a> para revisarlos cuando los necesites.
+> ¿Tienes dudas sobre qué es un plan u otro concepto? Ten a mano los [conceptos claves](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/introduction) para revisarlos cuando los necesites.
 
 
 ## Suscripciones con un plan asociado
@@ -29,8 +32,8 @@ Al generar el plan vas a obtener el `preapproval_plan_id` que vas a usar para re
 
 Para crear el plan, realiza la siguiente llamada a nuestra API con los datos que necesites:
 
-[[[
-```curl curl --location --request POST 'https://api.mercadopago.com/preapproval_plan' \
+```curl 
+curl --location --request POST 'https://api.mercadopago.com/preapproval_plan' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -49,25 +52,23 @@ Para crear el plan, realiza la siguiente llamada a nuestra API con los datos que
 	}
 }'
 ```
-]]]
 
 #### Atributos
 
-Atributo | Descripción
---- | ---
-`reason` (requerido) | Es la descripción que verá el suscriptor al realizar la suscripción y el detalle que se verá en el resumen de la tarjeta. |
-`auto_recurring.frequency` (requerido) | Indica la cantidad de tiempo o ciclo en base al tipo de frecuencia. |
-`auto_recurring.frequency_type` (requerido) | Indica el tipo de frecuencia. Puede ser por mes (months) o días (days). En conjunto con la frecuencia, definen el ciclo de cuotas que va a tener una suscripción. <br><br>Por ejemplo, si cada quince días se necesita generar una cuota para ser cobrada quedaría de la siguiente forma: `auto_recurring.frequency`: 15 y  `auto_recurring.frequency_type`: days |
-`auto_recurring.transaction_amount` | Si indicamos el monto, es fijo. Si no completamos este campo, se entiende como monto variable. Se admite un máximo de dos decimales separados por punto. |
-`auto_recurring.currency_id` (requerido) | Identifica la moneda que corresponde al país. |
-`auto_recurring.repetitions` | Indica si la suscripción va a tener un límite. Si no se especifica no tiene límite. Este límite se relaciona con `auto_recurring.frequency` y `auto_recurring.frequency_type`. |
-`auto_recurring.free_trial.frequency` | Define un período de prueba inicial  y retrasa el primer cobro. Indica la cantidad de tiempo que no se va a cobrar por el servicio en base al tipo de frecuencia. Tiene que ser consistente con `auto_recurring.frequency`. |
-`auto_recurring.free_trial.frequency_type` | Indica la cantidad de cuotas que no se van a cobrar por el servicio. Tiene que ser consistente con `auto_recurring.frequency_type`. |
+| Atributo | Descripción |
+| --- | --- |
+| `reason` (requerido) | Es la descripción que verá el suscriptor al realizar la suscripción y el detalle que se verá en el resumen de la tarjeta. |
+| `auto_recurring.frequency` (requerido) | Indica la cantidad de tiempo o ciclo en base al tipo de frecuencia. |
+| `auto_recurring.frequency_type` (requerido) | Indica el tipo de frecuencia. Puede ser por mes (months) o días (days). En conjunto con la frecuencia, definen el ciclo de cuotas que va a tener una suscripción. <br><br>Por ejemplo, si cada quince días se necesita generar una cuota para ser cobrada quedaría de la siguiente forma: `auto_recurring.frequency`: 15 y `auto_recurring.frequency_type`: days |
+| `auto_recurring.transaction_amount` | Si indicamos el monto, es fijo. Si no completamos este campo, se entiende como monto variable. Se admite un máximo de dos decimales separados por punto. |
+| `auto_recurring.currency_id` (requerido) | Identifica la moneda que corresponde al país. |
+| `auto_recurring.repetitions` | Indica si la suscripción va a tener un límite. Si no se especifica no tiene límite. Este límite se relaciona con `auto_recurring.frequency` y `auto_recurring.frequency_type`. |
+| `auto_recurring.free_trial.frequency` | Define un período de prueba inicial y retrasa el primer cobro. Indica la cantidad de tiempo que no se va a cobrar por el servicio en base al tipo de frecuencia. Tiene que ser consistente con `auto_recurring.frequency`. |
+| `auto_recurring.free_trial.frequency_type` | Indica la cantidad de cuotas que no se van a cobrar por el servicio. Tiene que ser consistente con `auto_recurring.frequency_type`. |
 
 #### Respuesta
 `HTTP Status 200 OK`
 ```json
-
 {
     "id": "2c938084726e18d60172720000000000",
     "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]",
@@ -91,8 +92,8 @@ Atributo | Descripción
         }
     }
 }
-
 ```
+
 ¡Listo! Ya podemos crear la suscripción y asociarla a tu plan.
 
 
@@ -100,8 +101,8 @@ Atributo | Descripción
 
 Una vez generado tu plan y obtenido tu `preapproval_plan_id`, crea la suscripción por API de la siguiente manera:
 
-[[[
-```curl curl --location --request POST 'https://api.mercadopago.com/preapproval \
+```curl 
+curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -111,21 +112,20 @@ Una vez generado tu plan y obtenido tu `preapproval_plan_id`, crea la suscripci�
    
 }'
 ```
-]]]
 
 #### Atributos
 
-Atributos |	Descripción
---- | ---
-`preapproval_plan_id` (requerido) | Hace referencia al Template o Plan previamente generado.|
-`card_token_id`(requerido) | La información de la tarjeta será convertida en un token para enviar los datos de modo seguro. |
-`payer_email` (requerido) | E-mail del pagador. |
+| Atributo |	Descripción |
+| --- | --- |
+| `preapproval_plan_id` (requerido) | Hace referencia al Template o Plan previamente generado. |
+| `card_token_id`(requerido) | La información de la tarjeta será convertida en un token para enviar los datos de modo seguro. |
+| `payer_email` (requerido) | E-mail del pagador. |
 
 > WARNING
 > 
 > Importante
 > 
-> ¿Tienes dudas sobre cómo crear el token de pago? Encuentra toda la información en la sección de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card#bookmark_captura_los_datos_de_la_tarjeta" target="_blank">Capturar datos de la tarjeta</a>.
+> ¿Tienes dudas sobre cómo crear el token de pago? Encuentra toda la información en la sección de [Capturar datos de la tarjeta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card#bookmark_captura_los_datos_de_la_tarjeta).
 
 #### Respuesta 
 `HTTP Status 200 OK`
@@ -135,7 +135,7 @@ Atributos |	Descripción
     "preapproval_plan_id": "2c938084726e18d60170001112223334",
     "payer_id": 100200300,
     "payer_email": "test_user_XXXX@testuser.com",
-    "back_url": "http://www.mercadopago[FAKER][URL][DOMAIN]/",
+    "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]/",
     "collector_id": 10101,
     "application_id": 1234567812345678,
     "status": "authorized",
@@ -154,7 +154,7 @@ Atributos |	Descripción
         "end_date": "2021-07-02T11:59:52.581-04:00"
 }
 ```
->Puedes obtener más información sobre los campos en la <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/" target="_blank">Referencia de API</a>.
+>Puedes obtener más información sobre los campos en la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference).
 
 ¡Y listo! Ya creaste una suscripción con un plan asociado.
 
@@ -167,8 +167,8 @@ Si quieres usar una suscripción sin plan asociado, primero debes configurar el 
 
 Para crear una suscripción con estado `authorized`, se deben enviar los datos de la tarjeta a asociar de la siguiente manera:
 
-[[[
-```curl curl --location --request POST 'https://api.mercadopago.com/preapproval' \
+```curl 
+curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -179,7 +179,7 @@ Para crear una suscripción con estado `authorized`, se deben enviar los datos d
     "frequency_type": "months",
     "end_date": "2022-07-20T11:59:52.581-04:00"
   },
-  "back_url": "http://www.mercadopago[FAKER][URL][DOMAIN]/",
+  "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]/",
   "collector_id": 100200300,
   "external_reference": "1245AT234562",
   "payer_email": "test_user_XXXX@testuser.com",
@@ -188,17 +188,15 @@ Para crear una suscripción con estado `authorized`, se deben enviar los datos d
   "status": "authorized"
 }'
 ```
-]]]
 
 #### Respuesta 
 `HTTP Status 200 OK`
 ```json
-
 {
     "id": "2c938084726fca480172750000000000",
     "payer_id": 400500600,
     "payer_email": "test_user_XXXX@testuser.com",
-    "back_url": "http://www.mercadopago[FAKER][URL][DOMAIN]/",
+    "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]/",
     "collector_id": 100200300,
     "application_id": 1234567812345678,
     "status": "authorized",
@@ -227,8 +225,8 @@ Puedes crear una suscripción con estado `pending` y sin medio de pago asociado.
 
 Para poder adherirse, la carga de los datos de la tarjeta se debe realizar con nuestro formulario. Solamente se deberá compartir el link retornado en la propiedad `init_point` al pagador:
 
-[[[
-```curl curl --location --request POST 'https://api.mercadopago.com/preapproval' \
+```curl 
+curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -239,7 +237,7 @@ Para poder adherirse, la carga de los datos de la tarjeta se debe realizar con n
     "frequency_type": "months",
     "end_date": "2022-07-20T11:59:52.581-04:00"
   },
-  "back_url": "http://www.mercadopago[FAKER][URL][DOMAIN]/",
+  "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]/",
   "collector_id": 100200300,
   "external_reference": "1245AT234562",
   "payer_email": "test_user_XXXX@testuser.com",
@@ -247,18 +245,23 @@ Para poder adherirse, la carga de los datos de la tarjeta se debe realizar con n
   "status": "pending"
 }'
 ```
-]]]
+
+> NOTE
+> 
+> Aumenta la seguridad de tu sitio web
+>
+> Con el código de seguridad, podrás proteger aún más tu sitio y obtener más pagos aprobados. Este te ayudará a prevenir el fraude y los pagos rechazados sin justificación.<br><br>
+> ¡Es fácil! [Agrega el código](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/payment-rejections#bookmark_recomendaciones_para_mejorar_tu_aprobación) en simples pasos.
 
 
 #### Respuesta
 `HTTP Status 200 OK`
 ```json
-
 {
     "id": "2c938084726fca480172750000000000",
     "payer_id": 400500600,
     "payer_email": "test_user_XXXX@testuser.com",
-    "back_url": "http://www.mercadopago[FAKER][URL][DOMAIN]/",
+    "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]/",
     "collector_id": 100200300,
     "application_id": 1234567812345678,
     "status": "pending",
@@ -280,25 +283,25 @@ Para poder adherirse, la carga de los datos de la tarjeta se debe realizar con n
 }
 ```
 
-> Puedes obtener más información sobre los campos en la <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/" target="_blank">Referencia de API</a>.
+> Puedes obtener más información sobre los campos en la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference).
 
 
 Atributos
 
-Atributo | Descripción
---- | ---
-`reason`| Es la descripción que verá el suscriptor al realizar la suscripción y el detalle que se verá en el resumen de la tarjeta. |
-`status` | Estado de la suscripción. Puede ser `pending` o `authorized`. |
-`auto_recurring.frequency` | Indica la cantidad de tiempo o ciclo en base al tipo de frecuencia. |
-`auto_recurring.frequency_type` | Indica el tipo de frecuencia. Puede ser por mes (months) o días (days). En conjunto con la frecuencia, definen el ciclo de cuotas que va a tener una suscripción.<br><br> Por ejemplo, si cada quince días se necesita generar una cuota para ser cobrada quedaría de la siguiente forma: `auto_recurring.frequency`: 15 y  `auto_recurring.frequency_type`: days |
-`auto_recurring.transaction_amount` | Monto que se aplica a la suscripción. |
-`auto_recurring.currency_id` | Identifica la moneda que corresponde al país. |
-`auto_recurring.end_date` | Indica si la suscripción va a tener un límite. Si no se especifica no tiene límite. |
-`auto_recurring.free_trial.frequency` | Define un período de prueba inicial durante el cual podrás retrasar el primer cobro, indica la cantidad de tiempo que no se va a cobrar por el servicio en base al tipo de frecuencia. Tiene que ser consistente con `auto_recurring.frequency`. |
-`auto_recurring.free_trial.frequency_type` | Indica la cantidad de cuotas que no se van a cobrar por el servicio. Tiene que ser consistente con `auto_recurring.frequency_type`. |
-`collector_id` | Identificador del vendedor. |
-`payer_email` | E-mail del pagador. |
-`card_token_id`| Si la suscripción ya fue autorizada, la información de la tarjeta será convertida en un token para enviar los datos de modo seguro. |
+| Atributo | Descripción |
+| --- | --- |
+| `reason` | Es la descripción que verá el suscriptor al realizar la suscripción y el detalle que se verá en el resumen de la tarjeta. |
+| `status` | Estado de la suscripción. Puede ser `pending` o `authorized`. |
+| `auto_recurring.frequency` | Indica la cantidad de tiempo o ciclo en base al tipo de frecuencia. |
+| `auto_recurring.frequency_type` | Indica el tipo de frecuencia. Puede ser por mes (months) o días (days). En conjunto con la frecuencia, definen el ciclo de cuotas que va a tener una suscripción.<br><br> Por ejemplo, si cada quince días se necesita generar una cuota para ser cobrada quedaría de la siguiente forma: `auto_recurring.frequency`: 15 y `auto_recurring.frequency_type`: days |
+| `auto_recurring.transaction_amount` | Monto que se aplica a la suscripción. |
+| `auto_recurring.currency_id` | Identifica la moneda que corresponde al país. |
+| `auto_recurring.end_date` | Indica si la suscripción va a tener un límite. Si no se especifica no tiene límite. |
+| `auto_recurring.free_trial.frequency` | Define un período de prueba inicial durante el cual podrás retrasar el primer cobro, indica la cantidad de tiempo que no se va a cobrar por el servicio en base al tipo de frecuencia. Tiene que ser consistente con `auto_recurring.frequency`. |
+| `auto_recurring.free_trial.frequency_type` | Indica la cantidad de cuotas que no se van a cobrar por el servicio. Tiene que ser consistente con `auto_recurring.frequency_type`. |
+| `collector_id` | Identificador del vendedor. |
+| `payer_email` | E-mail del pagador. |
+| `card_token_id`| Si la suscripción ya fue autorizada, la información de la tarjeta será convertida en un token para enviar los datos de modo seguro. |
 
 
 ------------
@@ -310,7 +313,7 @@ Atributo | Descripción
 >
 > Revisa que tus suscripciones estén bien configuradas con los usuarios de prueba.
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/testing/)
+> [Pruebas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/testing)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -318,4 +321,4 @@ Atributo | Descripción
 >
 > Actualiza, modifica o cancela tus suscripciones.
 >
-> [Integración avanzada](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/advanced-integration/)
+> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/advanced-integration)

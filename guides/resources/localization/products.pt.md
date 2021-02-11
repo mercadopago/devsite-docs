@@ -73,7 +73,7 @@ A seguir uma lista de funcionalidades específicas de nossa API por país:
 
 ## Meios de pagamento não disponíveis
 
-Pode ser que alguns [meios de pagamento](https://www.mercadopago.com.br/developers/pt/guides/resources/localization/payment-methods) não estejam disponíveis para alguns produtos. Abaixo estão detalhados quais meios de pagamento não estão disponíveis por produto e por país.
+Pode ser que alguns [meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods) não estejam disponíveis para alguns produtos. Abaixo estão detalhados quais meios de pagamento não estão disponíveis por produto e por país.
 
 ### Argentina
 
@@ -110,26 +110,26 @@ Assinaturas | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmas
 | :--- | :--- | :--- |
 | Pagamentos | Link de pagamento | N/A |
 | Pagamentos | Checkout Pro | N/A |
-| Pagamentos | Mobile Checkout | `account_money` |
-| Pagamentos | Checkout Transparente | N/A |
-| Assinaturas | Link de pagamento | `bolbradesco`, `giftcard` |
-| Assinaturas | Checkout Pro | `bolbradesco`, `giftcard` |
-| Assinaturas | Checkout Transparente | `bolbradesco`, `giftcard` |
-| Marketplace | Checkout Pro | N/A |
-| Marketplace | Checkout Transparente | N/A |
+| Pagamentos | Mobile Checkout | `account_money`, `pix` |
+| Pagamentos | Checkout Transparente | `pix` |
+| Assinaturas | Link de pagamento | `bolbradesco`, `giftcard`, `pix` |
+| Assinaturas | Checkout Pro | `bolbradesco`, `giftcard`, `pix` |
+| Assinaturas | Checkout Transparente | `bolbradesco`, `giftcard`, `pix` |
+| Marketplace | Checkout Pro | `pix` |
+| Marketplace | Checkout Transparente | `pix` |
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 | Produto | Solução | Meios de pagamento não disponíveis |
 | :--- | :--- | :--- |
 | Pagamentos | Link de pagamento | N/A |
 | Pagamentos | Checkout Pro | N/A |
-| Pagamentos | Mobile Checkout | `account_money` |
-| Pagamentos | Checkout API | N/A |
-| Assinaturas | Link de pagamento | `bolbradesco`, `giftcard` |
-| Assinaturas | Checkout Pro | `bolbradesco`, `giftcard` |
-| Assinaturas | Checkout API | `bolbradesco`, `giftcard` |
-| Marketplace | Checkout Pro | N/A |
-| Marketplace | Checkout API | N/A |
+| Pagamentos | Mobile Checkout | `account_money`, `pix` |
+| Pagamentos | Checkout API | `pix` |
+| Assinaturas | Link de pagamento | `bolbradesco`, `giftcard`, `pix`  |
+| Assinaturas | Checkout Pro | `bolbradesco`, `giftcard`, `pix`  |
+| Assinaturas | Checkout API | `bolbradesco`, `giftcard`, `pix`  |
+| Marketplace | Checkout Pro | `pix` |
+| Marketplace | Checkout API | `pix` |
 ------------
 
 

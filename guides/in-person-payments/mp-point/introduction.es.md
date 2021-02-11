@@ -3,7 +3,6 @@ sites_supported:
   - mla
   - mlb
   - mlm
-  - global
 ---
 
 # Cobros Presenciales con Point

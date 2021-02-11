@@ -1,15 +1,3 @@
----
-sites_supported:
-    - mla
-    - mlb
-    - mlm
-    - mco
-    - mlc
-    - mpe
-    - mlv
-    - mlu
-    - global
----
 # Receba Pagamentos
 
 > WARNING
@@ -74,8 +62,8 @@ Depois você deverá adicionar os atributos das suas preferências de pagamento:
   $preference = new MercadoPago\Preference();
 
   $item = new MercadoPago\Item();
-  $item->title = "[FAKER][COMMERCE][PRODUCT_NAME]";
-  $item->quantity = [FAKER][NUMBER][BETWEEN][1,10];
+  $item->title = "Blue shirt";
+  $item->quantity = 10;
   $item->currency_id = "[FAKER][CURRENCY][ACRONYM]";
   $item->unit_price = [FAKER][COMMERCE][PRICE];
 
@@ -93,13 +81,13 @@ Preference preference = new Preference();
 
 Item item = new Item();
 item.setId("1234")
-    .setTitle("[FAKER][COMMERCE][PRODUCT_NAME]")
-    .setQuantity([FAKER][NUMBER][BETWEEN][1,10])
+    .setTitle("Blue shirt")
+    .setQuantity(10)
     .setCategoryId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float)[FAKER][COMMERCE][PRICE]);
 
 Payer payer = new Payer();
-payer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
+payer.setEmail("john@yourdomain.com");
 
 preference.setPayer(payer);
 preference.appendItem(item);
@@ -110,8 +98,8 @@ preference.save();
 var preference = {}
 
 var item = {
-  title: '[FAKER][COMMERCE][PRODUCT_NAME]',
-  quantity: [FAKER][NUMBER][BETWEEN][1,10],
+  title: 'Blue shirt',
+  quantity: 10,
   currency_id: '[FAKER][CURRENCY][ACRONYM]',
   unit_price: [FAKER][COMMERCE][PRICE]
 }
@@ -133,13 +121,13 @@ mercadopago.preferences.create(preference).then(function (data) {
 preference = MercadoPago::Preference.new()
 
 item = MercadoPago::Item.new()
-item.title="[FAKER][COMMERCE][PRODUCT_NAME]"
-item.quantity= [FAKER][NUMBER][BETWEEN][1,10]
+item.title="Blue shirt"
+item.quantity= 10
 item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
 item.unit_price = [FAKER][COMMERCE][PRICE]
 
 payer = MercadoPago::Payer.new()
-payer.email="[FAKER][INTERNET][FREE_EMAIL]"
+payer.email="john@yourdomain.com"
 
 preference.items = [item]
 preference.payer = payer
@@ -153,14 +141,14 @@ Preference preference = new Preference();
   new Item()
   {
     Id = "1234",
-    Title = "[FAKER][COMMERCE][PRODUCT_NAME]",
-    Quantity = [FAKER][NUMBER][BETWEEN][1,10],
+    Title = "Blue shirt",
+    Quantity = 10,
     CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
     UnitPrice = (float)[FAKER][COMMERCE][PRICE]
   }
   preference.Payer = new Payer()
   {
-    Email = "[FAKER][INTERNET][FREE_EMAIL]"
+    Email = "john@yourdomain.com"
   };
 
   preference.Save();
@@ -186,7 +174,7 @@ Quanto mais informações você nos enviar, melhor será a aprovação dos pagam
   "payer": {
     "name": "[FAKER][NAME][FIRST_NAME]",
     "surname": "[FAKER][NAME][LAST_NAME]",
-    "email": "[FAKER][INTERNET][FREE_EMAIL]",
+    "email": "john@yourdomain.com",
     "date_created": "2015-06-02T12:58:41.425-04:00",
     "phone": {
       "area_code": "[FAKER][PHONE_NUMBER][AREA_CODE]",
@@ -200,7 +188,7 @@ Quanto mais informações você nos enviar, melhor será a aprovação dos pagam
     ------------
     "address": {
       "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-      "street_number": [FAKER][ADDRESS][BUILDING_NUMBER],
+      "street_number": 7304,
       "zip_code": "[FAKER][ADDRESS][ZIP_CODE]"
     }
   },
@@ -217,7 +205,7 @@ Como exemplo, sugerimos que inicie o fluxo do Mercado Pago a partir de um botão
 
 [[[
 
-```android-xml
+```android
 ===
 1. Crie uma Atividade para inserir o botão (**MainActivity**, por exemplo).  
 2. Adicione um campo de texto para mostrar o resultado do pagamento.
@@ -444,13 +432,13 @@ As notificações informam automaticamente sobre seus novos pagamentos e atualiz
 
 Isto permitirá que você gerencie seu estoque e mantenha seu sistema sincronizado.
 
-Para mais informações, consulte a seção de [Notificações](https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks).
+Para mais informações, consulte a seção de [Notificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks).
 
 ### Evite recusas de pagamentos
 
 Um pagamento pode ser recusado porque o emissor do meio de pagamento detecta um problema ou porque não preenche os requisitos de segurança necessários.
 
-Evite pagamentos recusados com nossas recomendações e <a href="https://www.mercadopago.com.ar/developers/pt/guides/manage-account/account/payment-rejections" target="_blank">melhore a aprovação de seus pagamentos</a>.
+Evite pagamentos recusados com nossas recomendações e [melhore a aprovação de seus pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/payment-rejections).
 
 ### Teste a integração
 
@@ -458,8 +446,8 @@ Você pode testar sua integração antes de partir para a produção, a fim de v
 
 Para isso, deve-se utilizar usuários e cartões de teste.
 
-Para mais informações, consulte a seção de [Testes](https://www.mercadopago.com.br/developers/pt/guides/online-payments/mobile-checkout/testing).
+Para mais informações, consulte a seção de [Testes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/mobile-checkout/testing).
 
 ### Próximos passos
 
-- Visite a seção [Personalização](https://www.mercadopago.com.br/developers/pt/guides/online-payments/mobile-checkout/personalization) para adequar o fluxo de pagamento às suas necessidades.
+- Visite a seção [Personalização](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/mobile-checkout/personalization) para adequar o fluxo de pagamento às suas necessidades.

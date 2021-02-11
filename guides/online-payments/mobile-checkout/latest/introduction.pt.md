@@ -1,21 +1,9 @@
----
-sites_supported:
-    - mla
-    - mlb
-    - mlm
-    - mco
-    - mlc
-    - mpe
-    - mlv
-    - mlu
-    - global
----
 # Mobile Checkout
 
 Os SDKs do Mercado Pago facilitam a criação de uma experiência de pagamento na sua aplicação. Instantaneamente você oferece aos seus usuários:
 
 
-----[mla, mpe, mlb, mlm, global]----
+----[mla, mpe, mlb, mlm]----
 - Pagamentos com cartão, dinheiro ou transferência bancária.
 - **Financiamento**: parcelas com o melhor financiamento possível.
 - Descontos e promoções.
@@ -40,11 +28,11 @@ Ofereça aos seus usuários a melhor experiência de pagamento, tanto no Android
 ### Integrar o checkout é muito fácil:
 
 1. Inclua o SDK em seu projeto.
-2. Insira suas <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciais </a> e crie a preferência de pagamentos.
+2. Insira suas [credenciais]([FAKER][CREDENTIALS][URL]) e crie a preferência de pagamentos.
 3. Inicie o processo de pagamento a partir de um botão em sua aplicação.
 4. Receba as notificações de pagamento que lhe enviamos.
 
-> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/resources/faqs/credentials/).
+> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials).
 
 ## Adicione a dependência ao seu projeto
 [[[
@@ -70,10 +58,12 @@ pod 'MercadoPagoSDK'
 ```
 ]]]
 
+> NOTE
+>
 > Nota
 >
-> Se você tiver a versão 3.x do Mobile Checkout integrada, pode visitar a [documentação de integração da versão 3] (https://www.mercadopago.com.br/developers/pt/guides/online-payments/mobile-checkout/v3/introduction).
+> Se você tiver a versão 3.x do Mobile Checkout integrada, pode visitar a [documentação de integração da versão 3](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/mobile-checkout/v3/introduction).<br>
 > Lembre-se de que o suporte ativo é fornecido apenas para a versão principal mais recente e suporte passivo para o anterior, por isso recomendamos uma migração para a nova versão.
 
 Pode-se encontrar a referência dos métodos nos seguintes links: [Documentação
- Android](http://mercadopago.github.io/px-android/) - [Documentação iOS](http://mercadopago.github.io/px-ios/v4/)
+ Android](https://mercadopago.github.io/px-android/) - [Documentação iOS](https://mercadopago.github.io/px-ios/v4/)

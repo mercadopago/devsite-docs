@@ -50,7 +50,7 @@ button.mercadopago-button {
 
 #### Estado por defecto
 
-![Interfaz por defecto Mercado Pago Web Tokenize Checkout](/images/cow-ui-elements.png)
+![Interfaz por defecto Mercado Pago Web Tokenize Checkout](/images/cow/cow-ui-elements.png)
 
 #### Personalización
 
@@ -69,14 +69,14 @@ El valor del atributo deberá ser en formato hexadecimal. Por ejemplo:
 data-elements-color="#c0392b"
 ```
 
-![Interfaz personalizada Mercado Pago Web Tokenize Checkout](/images/cow-ui-elements--custom.png)
+![Interfaz personalizada Mercado Pago Web Tokenize Checkout](/images/cow/cow-ui-elements--custom.png)
 
 
 ### Encabezado
 
 #### Estado por defecto
 
-![Encabezado por defecto Mercado Pago Web Tokenize Checkout](/images/cow-ui-header.png)
+![Encabezado por defecto Mercado Pago Web Tokenize Checkout](/images/cow/cow-ui-header.png)
 
 #### Personalización
 
@@ -88,7 +88,7 @@ El valor del atributo deberá ser en formato hexadecimal. Por ejemplo:
 data-header-color="#c0392b"
 ```
 
-![Encabezado personalizado Mercado Pago Web Tokenize Checkout](/images/cow-ui-header--custom.png)
+![Encabezado personalizado Mercado Pago Web Tokenize Checkout](/images/cow/cow-ui-header--custom.png)
 
 
 ### Color de texto
@@ -101,7 +101,7 @@ Para un color de elemento *claro*, el color del texto será *negro* o `#000`. Po
 data-elements-color="#81ecec" <!-- Color claro -->
 ```
 
-![Personalización del color de fuente Mercado Pago Web Tokenize Checkout](/images/cow-ui-fontcolor__light.png)
+![Personalización del color de fuente Mercado Pago Web Tokenize Checkout](/images/cow/cow-ui-fontcolor__light.png)
 
 Para un color de elementos *oscuro*, el color del texto será *blanco* o `#fff`. Por ejemplo:
 
@@ -109,13 +109,13 @@ Para un color de elementos *oscuro*, el color del texto será *blanco* o `#fff`.
 data-elements-color="#8e44ad" <!-- Color oscuro -->
 ```
 
-![Personalización de color de fuente en elementos oscuros Mercado Pago Web Tokenize Checkout](/images/cow-ui-fontcolor__dark.png)
+![Personalización de color de fuente en elementos oscuros Mercado Pago Web Tokenize Checkout](/images/cow/cow-ui-fontcolor__dark.png)
 
 ## Detalle de la compra
 
 ### Estado por defecto
 
-![Detalle de compra Mercado Pago Web Tokenize Checkout](/images/cow-summary.png)
+![Detalle de compra Mercado Pago Web Tokenize Checkout](/images/cow/cow-summary.png)
 
 
 ### Personalización

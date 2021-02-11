@@ -25,10 +25,10 @@ Great for merchants who want to get going quickly and easily.
 
 ## Available versions
 
-Plugin Version | Status | Compatible Versions
--------------- | ------ | -------------------
-v2.2 | Deprecated (Old version) | osCommerce 2.2
-v2.3 | Stable (Current version) | osCommerce 2.3
+| Plugin Version | Status | Compatible Versions |
+| --- | --- | --- |
+| v2.2 | Deprecated (Old version) | osCommerce 2.2 |
+| v2.3 | Stable (Current version) | osCommerce 2.3 |
 
 
 ## Requirements
@@ -60,24 +60,28 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 3. Click on **MercadoPago** then in **+Install Module**.
 
 4. Choose your country:
+<br>
 
-	![Country Selecion in Os Commerce](/images/oscommerce-CountrySelection.png)
+![Country Selecion in Os Commerce](/images/oscommerce/oscommerce-CountrySelection.png)
 
 5. Choose the payment methods that you don´t want to accept in your Store:
+<br>
 
-	![Payment Methods - Os Commerce](/images/oscommerce-PaymentMethodsSelection.png)
+![Payment Methods - Os Commerce](/images/oscommerce/oscommerce-PaymentMethodsSelection.png)
 
 6. Choose the category on the list that more describe your shop activities.
+<br>
 
-	![Store category selection](/images/oscommerce-CategorySelection.png)
+![Store category selection](/images/oscommerce/oscommerce-CategorySelection.png)
 
 7. In the next screen, you will see **MercadoPago** listed as a payment method. Now, click on **Edit** on the right bar.
+<br>
 
-	![Payment Method List](/images/oscommerce-PaymentMethodList.png)
+![Payment Method List](/images/oscommerce/oscommerce-PaymentMethodList.png)
 
 8. Now, is very important to set your **CLIENT_ID** and **CLIENT_SECRET**.
 
-	Get your CLIENT_ID and CLIENT_SECRET [in the following link]([FAKER][CREDENTIALS][URL_BASIC]).
+	Get your CLIENT_ID and CLIENT_SECRET [in the following link]([FAKER][CREDENTIALS][URL]).
 
 	Other options have been added and you can choose any time after installation:
 
@@ -88,8 +92,9 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 	- **Instant Payment Notification (IPN) URL:** In this part, you can check your IPN URL, where you will get notified about payment updates.
 
 9. **DO NOT TOUCH** the fields *Country*, *Exclude Methods*, *Cod Status (fields…)*. They were generated for you with the correct values, if you need to change them, is highly recommended that you reinstall the module.
+<br>
 
-	![Do not upgrade](/images/oscommerce-DoNotTouch.png)
+![Do not upgrade](/images/oscommerce/oscommerce-DoNotTouch.png)
 
 10. The fields **Success Url** and **Pending url** were also generated automatically, but if you're testing in a localhost, it will not work. You can change the address to any of your choice, but can't be localhost.
 

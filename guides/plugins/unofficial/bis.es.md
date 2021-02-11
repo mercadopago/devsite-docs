@@ -29,14 +29,14 @@ Si desea obtener más información sobre **Mercado Pago**, visite nuestra [pági
 
 Con la cuenta de MercadoPago ya creada, debe ingresar los datos a continuación para que el representante de Bis2Bis realice la configuración en su tienda, y así el método de pago esté disponible para que sus clientes realicen compras.
 
-#### Credenciales
+#### Credenciales
 
-[Public key y Access token](([FAKER][CREDENTIALS][URL]))
+[Public key y Access token]([FAKER][CREDENTIALS][URL])
 
-> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago.com.ar/developers/es/guides/resources/faqs/credentials/). 
+> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials). 
 
 ### Canal de soporte de la plataforma:
 
-Sitio web | Teléfono
---|--
-http://cliente.bis2bis.com.br |(43) 3326-1500
+| Sitio web | Teléfono |
+| --- | --- |
+| http://cliente.bis2bis.com.br | (43) 3326-1500 |

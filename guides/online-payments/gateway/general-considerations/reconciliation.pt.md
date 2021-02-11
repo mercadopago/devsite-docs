@@ -2,7 +2,6 @@
 sites_supported:
   - mla
   - mco
-  - global
 indexable: false
 ---
 
@@ -20,9 +19,9 @@ A seguir verá informação sobre como conciliar as operações de Mercado Pago 
 
 A forma mais fácil é trabalhar com um dos nossos parceiros:
 
-|País|Parceiro|
-|---|---|
-|Argentina|[Increase](https://www.increasecard.com/mercadopago/)|
+| País | Parceiro |
+| --- | --- |
+| Argentina | [Increase](https://www.increasecard.com/mercadopago/)|
 
 > Estamos trabalhando para lhe oferecer mais parceiros
 
@@ -81,18 +80,18 @@ Cada operação (payment) conterá as informações de reconciliação no nó `a
 
 ### Atributos
 
-|Atributo|Descrição|
-|---|---|
-|`authorization_code`| Código de autorização |
-|`batch_closing_date`| Data de encerramento de lote |
-|`batch_number`| Número de lote |
-|`date_created`| Data de criação do registro |
-|`date_last_updated`| Data da última modificação do registro |
-|`operation`| Tipo de operação |
-|`operation_status`| Estado da operação |
-|`refund_id`| ID do reembolso |
-|`terminal_number`| Número do terminal |
-|`transaction_number`| Número de operação ou de cupom |
+| Atributo | Descrição |
+| --- | --- |
+| `authorization_code` | Código de autorização |
+| `batch_closing_date` | Data de encerramento de lote |
+| `batch_number` | Número de lote |
+| `date_created` | Data de criação do registro |
+| `date_last_updated` | Data da última modificação do registro |
+| `operation` | Tipo de operação |
+| `operation_status` | Estado da operação |
+| `refund_id` | ID do reembolso |
+| `terminal_number` | Número do terminal |
+| `transaction_number` | Número de operação ou de cupom |
 
 > É importante mencionar que as informações de `acquirer_reconciliation` podem ir variando no tempo, conforme os diferentes casos de uso e à variação dos dados segundo cada adquirente.
 

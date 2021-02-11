@@ -381,7 +381,7 @@ curl -X PUT \
 >
 > Learn all the requirements needed to start receiving payments.
 >
-> [Requirements for the production environment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production/)
+> [Requirements for the production environment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -389,4 +389,4 @@ curl -X PUT \
 >
 > Find all the information required to interact with our APIs.
 >
-> [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/)
+> [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference)

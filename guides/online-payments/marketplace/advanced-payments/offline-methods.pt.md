@@ -1,10 +1,5 @@
 ---
-sites_supported:
-  - mla
-  - mlb
-  - mlm
-  - mlc
-  - mpe
+  indexable: false
 ---
 
 # Pagamentos com Meios offline
@@ -15,8 +10,8 @@ sites_supported:
 >
 > Nota
 >
-> É possível consultar os [meios de pagamento off-line](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/other-payment-ways) para mais informação.
-> Também é possível ver os [meios de pagamento suportados](https://www.mercadopago.com.br/developers/pt/guides/online-payments/marketplace/advanced-payments/supported-payment-methods) pela API de Advanced Payments.
+> É possível consultar os [meios de pagamento off-line](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways) para mais informação.
+> Também é possível ver os [meios de pagamento suportados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/marketplace/advanced-payments/supported-payment-methods) pela API de Advanced Payments.
 
 #### Request
 No `body` do request defina o tipo de pagamento como `ticket` e o meio de pagamento segundo o país.
@@ -42,7 +37,7 @@ Na resposta,  você encontrará o campo `external_resource_url` com a url que co
       "payment_method_id": "bolbradesco",
       "payment_type_id": "ticket",
       ...
-      "external_resource_url": "http://www.mercadopago.com/mlb/payments/ticket/helperpayment_id=4265666119&payment_method_reference_id=3575111597&caller_id=121212&hash=87069857reydfhgjhkjliouy7t6rd",
+      "external_resource_url": "https://www.mercadopago.com/mlb/payments/ticket/helperpayment_id=4265666119&payment_method_reference_id=3575111597&caller_id=121212&hash=87069857reydfhgjhkjliouy7t6rd",
       ...
     }
   ]

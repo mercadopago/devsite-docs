@@ -13,16 +13,16 @@
 
 O módulo do Mercado Pago para o OsCommerce esta integrado com as seguintes funcionalidades e soluções de pagamento:
 
-* [Checkout básico (Redirecionado, Iframe ou Lightbox)](https://www.mercadopago.com.br/developers/pt/solutions/payments/basic-checkout/receive-payments/)
+* [Checkout básico (Redirecionado, Iframe ou Lightbox)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/solutions/payments/basic-checkout/receive-payments)
     * Pagamento com dois cartões
 
 
 ## Versões disponíveis
 
-Versão do Plugin | Status | Versões compativéis
--------------- | ------ | -------------------
-v2.2 | Deprecated (Old version) | osCommerce 2.2
-v2.3 | Stable (Current version) | osCommerce 2.3
+| Versão do Plugin | Status | Versões compativéis |
+| --- | --- | --- |
+| v2.2 | Deprecated (Old version) | osCommerce 2.2 |
+| v2.3 | Stable (Current version) | osCommerce 2.3 |
 
 ## Requisitos
 
@@ -52,24 +52,28 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 3. Em **Mercado Pago** clique no botão **Install Module**.
 
 4. Escolha o país:
+<br>
 
-	![Country Selecion in Os Commerce](/images/oscommerce-CountrySelection.png)
+![Country Selecion in Os Commerce](/images/oscommerce/oscommerce-CountrySelection.png)
 
 5. Selecione os métodos de pagamento que você **não quer aceitar** na sua loja:
+<br>
 
-	![Payment Methods - Os Commerce](/images/oscommerce-PaymentMethodsSelection.png)
+![Payment Methods - Os Commerce](/images/oscommerce/oscommerce-PaymentMethodsSelection.png)
 
 6. Seleciona a categoria da loja:
+<br>
 
-	![Store category selection](/images/oscommerce-CategorySelection.png)
+![Store category selection](/images/oscommerce/oscommerce-CategorySelection.png)
 
 7. Na próxima tela, você verá que o **MercadoPago** está listando nos métodos de pagamento. Agora, clique em **Edit** localizado na barra direita.
+<br>
 
-	![Payment Method List](/images/oscommerce-PaymentMethodList.png)
+![Payment Method List](/images/oscommerce/oscommerce-PaymentMethodList.png)
 
 8. Agora, é muito importante você configurar o seu **CLIENT_ID** e **CLIENT_SECRET**.
 
-	Obtenha o seu CLIENT_ID e CLIENT_SECRET na [seção Credenciais]([FAKER][CREDENTIALS][URL_BASIC]).
+	Obtenha o seu CLIENT_ID e CLIENT_SECRET na [seção Credenciais]([FAKER][CREDENTIALS][URL]).
 
 	Depois de efetuar a instalação e configuração básica, outras opções estão disponíveis para serem configuradas:
 
@@ -80,8 +84,9 @@ v2.3 | Stable (Current version) | osCommerce 2.3
 	- **Instant Payment Notification (IPN) URL:** Você pode verificar sua URL de IPN, onde você receberá notificações de atualizações de pagamento.
 
 9. **NÃO ATUALIZE** os campos *Country*, *Exclude Methods*, *Cod Status (fields…)*. Caso queira alterar esses campos, desinstale o módulo e instale novamente o módulo.
+<br>
 
-	![Do not upgrade](/images/oscommerce-DoNotTouch.png)
+![Do not upgrade](/images/oscommerce/oscommerce-DoNotTouch.png)
 
 10. Os campos **Sucess Url** e **Pending url** são gerados automaticamente, caso esteja realizando testes em um ambiente sandbox, não ira funcionar corretamente. Você pode alterar essas URLs para uma de sua escolha.
 

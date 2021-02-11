@@ -6,9 +6,8 @@ sites_supported:
     - mco
     - mlc
     - mpe
-    - global
 ---
-# **Personalización**
+# Personalización
 
 > WARNING
 >
@@ -175,7 +174,7 @@ Para incorporar en el _Checkout_ las opciones configuradas en la clase _FlowPref
 ```android
 	CheckoutPreference checkoutPreference = new CheckoutPreference.Builder()
                 .setSite(Sites.ARGENTINA)
-                .addItem(new Item("[FAKER][COMMERCE][PRODUCT_NAME]", new BigDecimal("100")))
+                .addItem(new Item("Blue shirt", new BigDecimal("100")))
                 .build();
 
 FlowPreference flowPreference = new FlowPreference.Builder()
@@ -199,8 +198,8 @@ let flowPrefernece = FlowPreference()
 
 MercadoPagoCheckout.setFlowPreference(flowPrefernece)
 
-let item = Item(_id: "itemId", title: "[FAKER][COMMERCE][PRODUCT_NAME]", quantity: [FAKER][NUMBER][BETWEEN][1,10], unitPrice: [FAKER][COMMERCE][PRICE], description: nil, currencyId: "[FAKER][CURRENCY][ACRONYM]")
-let payer = Payer(_id: "payerId", email: "[FAKER][INTERNET][FREE_EMAIL]", type: nil, identification: nil, entityType: nil)
+let item = Item(_id: "itemId", title: "Blue shirt", quantity: 10, unitPrice: [FAKER][COMMERCE][PRICE], description: nil, currencyId: "[FAKER][CURRENCY][ACRONYM]")
+let payer = Payer(_id: "payerId", email: "john@yourdomain.com", type: nil, identification: nil, entityType: nil)
 
 let checkoutPreference = CheckoutPreference()
             checkoutPreference.items = [item]
@@ -218,8 +217,8 @@ FlowPreference *flowPreference = [[FlowPreference alloc]init];
 [flowPreference disableBankDeals];
 [MercadoPagoCheckout setFlowPreference:flowPreference];
 
-Item *item = [[Item alloc] initWith_id:@"itemId" title:@"[FAKER][COMMERCE][PRODUCT_NAME]" quantity:[FAKER][NUMBER][BETWEEN][1,10] unitPrice:[FAKER][COMMERCE][PRICE] description:@"item description" currencyId:@"[FAKER][CURRENCY][ACRONYM]"];
-Payer *payer = [[Payer alloc] initWith_id:@"payerId" email:@"[FAKER][INTERNET][FREE_EMAIL]" type:nil identification:nil entityType:nil];
+Item *item = [[Item alloc] initWith_id:@"itemId" title:@"Blue shirt" quantity:10 unitPrice:[FAKER][COMMERCE][PRICE] description:@"item description" currencyId:@"[FAKER][CURRENCY][ACRONYM]"];
+Payer *payer = [[Payer alloc] initWith_id:@"payerId" email:@"john@yourdomain.com" type:nil identification:nil entityType:nil];
     
 NSArray *items = [NSArray arrayWithObjects:item, item, nil];
 
@@ -239,7 +238,7 @@ Si necesitas hacer alguna validación en tu servidor al momento de realizar el p
 
 En la clase _ServicePreference_ puedes configurar la URL y la URI de tu servicio junto con un _Map_ para que puedas enviar la información que desees.
 
-Al momento de postear el pago, el SDK lo hará a tu servicio, [el cual deberá crear el pago](https://www.mercadopago.com.ar/developers/es/api-docs/custom-checkout/create-payments/) y hacer la validaciones inherentes a tu negocio. El SDK esperará recibir un pago, tal como responde el servicio de Mercado Pago.
+Al momento de postear el pago, el SDK lo hará a tu servicio, [el cual deberá crear el pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments/post) y hacer la validaciones inherentes a tu negocio. El SDK esperará recibir un pago, tal como responde el servicio de Mercado Pago.
 
 Una vez creada la _ServicePreference_, debes iniciar el flujo de pago de Mercado Pago, tal como se muestra en el siguiente código:
 
@@ -249,7 +248,7 @@ Una vez creada la _ServicePreference_, debes iniciar el flujo de pago de Mercado
 public void submit(View view) {
   CheckoutPreference checkoutPreference = new CheckoutPreference.Builder()
           .setSite(Sites.ARGENTINA)
-          .addItem(new Item("[FAKER][COMMERCE][PRODUCT_NAME]", new BigDecimal("100")))
+          .addItem(new Item("Blue shirt", new BigDecimal("100")))
           .build();
 
   HashMap<String, Object> extraData = new HashMap<>();
@@ -268,8 +267,8 @@ public void submit(View view) {
 }
 ```
 ```swift
-let item = Item(_id: "itemId", title: "[FAKER][COMMERCE][PRODUCT_NAME]", quantity: [FAKER][NUMBER][BETWEEN][1,10], unitPrice: [FAKER][COMMERCE][PRICE], description: nil, currencyId: "[FAKER][CURRENCY][ACRONYM]")
-let payer = Payer(_id: "payerId", email: "[FAKER][INTERNET][FREE_EMAIL]", type: nil, identification: nil, entityType: nil)
+let item = Item(_id: "itemId", title: "Blue shirt", quantity: 10, unitPrice: [FAKER][COMMERCE][PRICE], description: nil, currencyId: "[FAKER][CURRENCY][ACRONYM]")
+let payer = Payer(_id: "payerId", email: "john@yourdomain.com", type: nil, identification: nil, entityType: nil)
 
 
 	let checkoutPreference = CheckoutPreference()
@@ -280,7 +279,7 @@ let payer = Payer(_id: "payerId", email: "[FAKER][INTERNET][FREE_EMAIL]", type: 
 
 let servicePreference = ServicePreference()
 servicePreference.setCreatePayment(baseURL: "https://your-base-url.com/", URI: "/your-create-payment-uri",
-additionalInfo: ["item_id" : "id", "quantity" : [FAKER][NUMBER][BETWEEN][1,10]])
+additionalInfo: ["item_id" : "id", "quantity" : 10])
 
 MercadoPagoCheckout.setServicePreference(servicePreference)
 
@@ -290,7 +289,7 @@ checkout.start()
 ```
 ```Objective-c
  
-	 Item *item = [[Item alloc] initWith_id:@"itemId" title:@"item title 2" quantity:[FAKER][NUMBER][BETWEEN][1,10] unitPrice:2 description:@"item description" currencyId:@"[FAKER][CURRENCY][ACRONYM]"];
+	 Item *item = [[Item alloc] initWith_id:@"itemId" title:@"item title 2" quantity:10 unitPrice:2 description:@"item description" currencyId:@"[FAKER][CURRENCY][ACRONYM]"];
     Payer *payer = [[Payer alloc] initWith_id:@"payerId" email:@"payer@email.com" type:nil identification:nil entityType:nil];
 
     NSArray *items = [NSArray arrayWithObjects:item, item, nil];
@@ -311,4 +310,4 @@ checkout.start()
 ```
 ]]]
 
-- Para obtener información sobre como hacer pruebas, dirígete a la sección [Probando integración](https://www.mercadopago.com.ar/developers/es/guides/online-payments/mobile-checkout/v3/testing).
+- Para obtener información sobre como hacer pruebas, dirígete a la sección [Probando integración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/mobile-checkout/v3/testing).

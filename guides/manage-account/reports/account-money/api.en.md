@@ -460,7 +460,7 @@ You will receive an `HTTP STATUS 200 (OK)` in response.
 Know the fields you can configure to adjust your preferences before you start:
 
 | Configurable fields | Description |
-| ----------| ---------------------- |
+| --- | --- |
 | *`coupon_detailed` (optional)* | <br/>Includes a column to show the detail of the discount coupons.<br/><br/> |
 | `detailed` | <br/>Includes columns with more detailed information about your operations:<br/> - Mercado Libre Fee (`mkp_fee_amount`)<br/> - Fee for offering interest-free installments (`financing_fee_amount`)<br/> - Shipping Costs (`shipping_fee_amount`)<br/>  ----[mla]---- - Taxes charged for gross income withholdings (`taxes_amount`)<br/> ------------ - Installments (`installments`)<br/> <br/><br/>|
 | *`extended` (optional)* | <br/>Includes the details of the commissions in the report:<br/> - Tax detail (`tax_detail`)<br/> - Tax detail (`tax_amount_telco`)<br/> - Point of sale ID  (`pos_id`)<br/> - Store ID (`store_id`)<br/> - Branch name (`store_name`)<br/> - Point of sale external ID (`external_pos_id`)<br/> - Point of sale name (`pos_name`)<br/> - Branch external ID (`external_store_id`)<br/> <br/><br/> |
@@ -470,15 +470,15 @@ Know the fields you can configure to adjust your preferences before you start:
 | `scheduled` (read_only) | <br/> Informative field that indicates if there are already scheduled reports in the user account. <br/><br/> |
 | *`separator` (optional)* | <br/> Separator that you can use in the .csv file when you don't want the separator to be a comma. <br/><br/> |
 | *`sftp_info` (optional)* | <br/> Indicates the uploaded data to SFTP when you need it. <br/><br/> |
-| *`shipping_detail` (optional)* |  <br/> Includes the detail of the shipments. <br/> <br/>|
-| *`show_chargeback_cancel` (optional)* |  <br/> Includes the detail of cancellations of chargebacks. <br/> <br/>|
-| *`show_fee_prevision` (optional)* |   <br/> Includes the details of the fees. <br/> <br/>|
+| *`shipping_detail` (optional)* | <br/> Includes the detail of the shipments. <br/> <br/>|
+| *`show_chargeback_cancel` (optional)* | <br/> Includes the detail of cancellations of chargebacks. <br/> <br/>|
+| *`show_fee_prevision` (optional)* | <br/> Includes the details of the fees. <br/> <br/>|
 
 > NOTE
 >
 > Note
 >
-> Have the [Glossary of the Account Money report](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/account-money/glossary/) on hand to review it when needed or want to review a technical term.
+> Have the [Glossary of the Account Money report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/glossary) on hand to review it when needed or want to review a technical term.
 
 
 ## Generating manually 
@@ -1021,7 +1021,7 @@ EXTERNAL_REFERENCE;SOURCE_ID;USER_ID;PAYMENT_METHOD_TYPE;PAYMENT_METHOD;SITE;TRA
 >
 > Download your reports manually or scheduled from your Mercado Pago account.         
 >
-> [Generating from Mercado Pago](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/account-money/panel/)
+> [Generating from Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/panel)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -1029,4 +1029,4 @@ EXTERNAL_REFERENCE;SOURCE_ID;USER_ID;PAYMENT_METHOD_TYPE;PAYMENT_METHOD;SITE;TRA
 >
 > Know what each term means and the detail of the columns that make up the report.
 >
-> [Glossary](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/account-money/glossary/)
+> [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/glossary)

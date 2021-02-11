@@ -1,10 +1,5 @@
 ---
-sites_supported:
-  - mla
-  - mlb
-  - mlm
-  - mlc
-  - mpe
+  indexable: false
 ---
 
 # Busca e Conciliação
@@ -53,16 +48,16 @@ O qual retorna os resultados numa estrutura que mostra, também, a quantidade de
 
 #### Filtros de busca
 
-Estado                      |Descrição                                                          |
-----------------------------|-------------------------------------------------------------------|
-status                      |Estado do Advanced Payment.                                        |
-payments.id                 |ID do pagamento do comprador.                                      |
-payments.payment_method_id  |Método do pagamento.                                               |
-payments.payment_type_id    |Tipo de meio de pagamento                                          |     
-payer.id                    |ID do comprador.                                                   |
-payer.email                 |Email do comprador.                                                |
-disbursement.collector_id   |ID do vendedor.                                                    |
-external_reference          |ID gerado pelo marketplace que identifica ao Advanced Payment.     |
+| Estado | Descrição |
+| --- | --- |
+| status |Estado do Advanced Payment. |
+| payments.id |ID do pagamento do comprador. |
+| payments.payment_method_id | Método do pagamento. |
+| payments.payment_type_id | Tipo de meio de pagamento. |
+| payer.id |ID do comprador. |
+| payer.email |Email do comprador. |
+| disbursement.collector_id | ID do vendedor. |
+| external_reference | ID gerado pelo marketplace que identifica ao Advanced Payment. |
 
 #### Filtros de busca por intervalo de datas
 

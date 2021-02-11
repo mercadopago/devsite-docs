@@ -23,10 +23,10 @@ Para operar com boleto, siga estes passos:
 2. Acesse "Formas de Pagamento".
 3. Selecione a aba "Boleto bancário".
 4. Clique na opção "Boleto Bancário" que tenha na coluna "Adquirente / Gateway" a informação "mercadopago_transparente".
-5. Preencha os dados do grupo Específico. Para obter o Client ID e Client Secret, veja a seção [Credenciais]([FAKER][CREDENTIALS][URL_BASIC]).
+5. Preencha os dados do grupo Específico. Para obter o Client ID e Client Secret, veja a seção [Credenciais]([FAKER][CREDENTIALS][URL]).
 6. Clique em salvar.
 
-    ![Ez Commerce Configuration Page - Ticket](/images/ezcommerce-ticket-1.gif)
+![Ez Commerce Configuration Page - Ticket](/images/ezcommerce/ezcommerce-ticket-1.gif)
 
 ### Configurar Cartões de Crédito
 
@@ -42,6 +42,6 @@ Para operar com cartões de crédito siga estes passos:
 - Customizado: Deverá configurar as informações de parcelamento na plataforma (total de parcelas, parcelas sem juros, porcentagem de juros e parcela mínima).
 7. Clique em salvar.
 
-    ![Ez Commerce Setup Page - Credit Card](/images/ezcommerce-credit-card-1.gif)
+![Ez Commerce Setup Page - Credit Card](/images/ezcommerce/ezcommerce-credit-card-1.gif)
 
 >Esses passos devem ser executados para todas as BANDEIRAS que deseja ativar.

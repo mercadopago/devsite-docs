@@ -1,5 +1,8 @@
 ---
-indexable: false
+sites_supported:
+  - mla
+  - mlm
+  - mlb
 ---
 
 # Requisitos previos para comenzar
@@ -26,20 +29,20 @@ Ten en cuenta que el monto mínimo permitido para crear una suscripción es de $
 ### Acceso a cuenta de Mercado Pago o Mercado Libre
 Para poder comenzar la integración, es necesario contar con una cuenta de Mercado Pago o Mercado Libre.
 
-Si aún no tienes una, puedes <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/" target="_blank">crear una cuenta</a> cuando quieras.
+Si aún no tienes una, puedes [crear una cuenta](https://www.mercadopago[FAKER][URL][DOMAIN]) cuando quieras.
 
 ### Ten a mano tus credenciales
 
 Las credenciales son las claves que te proporcionamos para que puedas configurar tu integración. Para este caso, vas a utilizar una clave pública y otra clave privada.
 
-Para poder encontrarlas, ve la sección de <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/account/credentials/" target="_blank">Credenciales</a>.
+Para poder encontrarlas, ve la sección de [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials).
 
->¿Tienes dudas sobre credenciales? Puedes consultar nuestras <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials/" target="_blank">preguntas frecuentes</a>.
+>¿Tienes dudas sobre credenciales? Puedes consultar nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials).
 
 
 ### Usa nuestras librerías oficiales
 
-Intégrate con nuestra <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks" target="_blank">SDK Javascript de Mercado Pago</a>  que te permite crear un token de pago y enviar los datos de las tarjetas a tu backend de forma segura. 
+Intégrate con nuestra [SDK Javascript de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks)  que te permite crear un token de pago y enviar los datos de las tarjetas a tu backend de forma segura. 
 
 
 ------------
@@ -50,4 +53,4 @@ Intégrate con nuestra <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/deve
 >
 > Elige tu forma de integrar y comienza a recibir pagos recurrentes.
 >
-> [Integrar suscripciones](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/integration/)
+> [Integrar suscripciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/integration)

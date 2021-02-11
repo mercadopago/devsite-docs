@@ -52,7 +52,7 @@ curl -X GET \
 ```
 ]]]
 
-The results included in this response will coincide with the country associated with your Mercado Pago account. For more information about this feature and its attributes, go to  [API reference](https://www.mercadopago.com.ar/developers/en/reference/identification_types/endpoints/_identification_types/get.yaml).
+The results included in this response will coincide with the country associated with your Mercado Pago account. For more information about this feature and its attributes, go to  [API reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/identification_types/_identification_types/get).
 
 ## Identification types by country
 
@@ -60,49 +60,49 @@ The document types accepted by country are listed below.
 
 ### Argentina
 
-Identification type             | ID                       |
-:------------------------------ | :----------------------- |
-Documento Nacional de Identidad | `DNI`                    |
-Cédula de Identidad             | `CI`                     |
-Libreta Cívica                  | `LC`                     |
-Libreta de Enrolamiento         | `LE`                     |
-Others                          | `Otro`                   |
+| Identification type | ID |
+| :--- | :--- |
+| Documento Nacional de Identidad | `DNI` |
+| Cédula de Identidad | `CI` |
+| Libreta Cívica | `LC` |
+| Libreta de Enrolamiento | `LE` |
+| Others | `Otro` |
 
 ### Brazil
 
-Identification type         | ID                       |
-:-------------------------- | :----------------------- |
-Cadastro de Pessoas Físicas | `CPF`                    |
-Cadastro Nacional da Pessoa Jurídica | `CNPJ`                   |
+| Identification type | ID |
+| :--- | :--- |
+| Cadastro de Pessoas Físicas | `CPF` |
+| Cadastro Nacional da Pessoa Jurídica | `CNPJ` |
 
 
 ### Chile
 
-Identification type        | ID                       |
-:------------------------- | :----------------------- |
-Rol Único Tributario       | `RUT`                    |
-Others                     | `Otro`                   |
+| Identification type | ID |
+| :--- | :--- |
+| Rol Único Tributario | `RUT` |
+| Others | `Otro` |
 
 ### Colombia
 
-Identification type                 | ID                       |
-:---------------------------------- | :----------------------- |
-Cédula de Ciudadanía                | `CC`                     |
-Cédula de Extranjeria               | `CE`                     |
-Número de Identificación Tributaria | `NIT`                    |
-Others                              | `Otro`                   |
+| Identification type | ID |
+| :--- | :--- |
+| Cédula de Ciudadanía | `CC` |
+| Cédula de Extranjeria | `CE` |
+| Número de Identificación Tributaria | `NIT` |
+| Others | `Otro` |
 
 ### Peru
 
-Identification type              | ID                       |
-:------------------------------- | :----------------------- |
-Documento Nacional de Identidad  | `DNI`                    |
-Carné de Extranjería             | `CE`                     |
-Registro Único de Contribuyentes | `RUC`                    |
+| Identification type | ID |
+| :--- | :--- |
+| Documento Nacional de Identidad | `DNI` |
+| Carné de Extranjería | `CE` |
+| Registro Único de Contribuyentes | `RUC` |
 
 ### Uruguay
 
-Identification type        | ID                       |
-:------------------------- | :----------------------- |
-Cédula de Identidad        | `CI`                     |
-Others                     | `Otro`                   |
+| Identification type | ID |
+| :--- | :--- |
+| Cédula de Identidad | `CI` |
+| Others | `Otro` |

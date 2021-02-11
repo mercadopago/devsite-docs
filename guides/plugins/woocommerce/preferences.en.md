@@ -41,9 +41,9 @@ Activate the checkout you want to offer your customers according to your prefere
 >
 > Important
 >
-> Note that the [Checkout Pro](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/introduction) is exclusive of the Custom Checkout and vice versa. You can use both custom checkouts at the same time to offer all means of payment. -->
+> Note that the [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction) is exclusive of the Custom Checkout and vice versa. You can use both custom checkouts at the same time to offer all means of payment. -->
 
-* Choose the [payment methods available](https://www.mercadopago.com.ar/developers/en/guides/resources/localization/payment-methods/) to your customers according to the marketplace in which you operate and the type of checkout you are configuring.
+* Choose the [payment methods available](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods) to your customers according to the marketplace in which you operate and the type of checkout you are configuring.
 
 * Set the maximum number of installments in which they can pay you.
 
@@ -61,9 +61,9 @@ You will have different settings available depending on the type of checkout you
 
 ### Common settings to all checkouts
 
-| Configuration                 | Description                                                                 	                |
-|-------------------------------|-----------------------------------------------------------------------------------------------|
-| Binary Mode     	            | Activate this option when you do not want to leave payments pending or under review. With binary mode payments will be accepted or rejected automatically.|
+| Configuration | Description |
+| --- | --- |
+| Binary Mode | Activate this option when you do not want to leave payments pending or under review. With binary mode payments will be accepted or rejected automatically.|
 
 ### Checkout Pro
 
@@ -71,36 +71,36 @@ You will have different settings available depending on the type of checkout you
 
 Choose what shopping experience your customers will have when paying: 
 
-| Payment experience            | Characteristics                                                              	                                 |
-|-------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Redirect     	                | Your customers will be redirected to a Mercado Pago page with the payment form to complete the purchase.       |
-| Modal                       	| Your customers will access the Mercado Pago payment form without leaving your store.                           |
+| Payment experience | Characteristics |
+| --- | --- |
+| Redirect | Your customers will be redirected to a Mercado Pago page with the payment form to complete the purchase. |
+| Modal | Your customers will access the Mercado Pago payment form without leaving your store. |
 
 > NOTE
 >
 > Nota
 >
-> Check out the [Checkout Pro documentation](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/introduction/) to learn more about all its features and functionalities.
+> Check out the [Checkout Pro documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction) to learn more about all its features and functionalities.
 
-| Configuration                 | Description                                                               	                  |
-|-------------------------------|-----------------------------------------------------------------------------------------------|
-| Back to the store     	      | When you choose redirect, you will always have the option of having your customers return or not to your store once the payment is finished.|
-| Configurable URLs           	| Payment successful, declined or pending.|
+| Configuration | Description |
+| --- | --- |
+| Back to the store | When you choose redirect, you will always have the option of having your customers return or not to your store once the payment is finished. |
+| Configurable URLs | Payment successful, declined or pending. |
 
 ### Custom Checkout
 
 #### Card payments
 
-| Configuration                 | Description                                                                 	                |
-|-------------------------------|-----------------------------------------------------------------------------------------------|
-| Discount coupon       	      | Activate this option when you want to offer discounts to your customers. A field will appear on the form where they can enter their coupon.|
+| Configuration | Description |
+| --- | --- |
+| Discount coupon | Activate this option when you want to offer discounts to your customers. A field will appear on the form where they can enter their coupon. |
 
 #### Pay with cash
 
-| Configuration                 | Description                                                                 	                |
-|-------------------------------|-----------------------------------------------------------------------------------------------|
-| Discount coupon       	      | Activate this option when you want to offer discounts to your customers. A field will appear on the form where they can enter their coupon.|
-| Reduce inventory      	      | Activate this option when you want to automate the inventory reduction for each purchase order that is approved after a payment with Mercado Pago.|
+| Configuration | Description |
+| --- | --- |
+| Discount coupon | Activate this option when you want to offer discounts to your customers. A field will appear on the form where they can enter their coupon. |
+| Reduce inventory | Activate this option when you want to automate the inventory reduction for each purchase order that is approved after a payment with Mercado Pago. |
 
 ---
 
@@ -113,4 +113,4 @@ Choose what shopping experience your customers will have when paying:
 > Test the module and verify that everything works well to start receiving money from your sales in Mercado Pago.
 >
 >
-> [Receive payments](https://www.mercadopago.com.ar/developers/en/guides/plugins/woocommerce/receive-payments/)
+> [Receive payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/receive-payments)

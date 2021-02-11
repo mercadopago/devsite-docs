@@ -28,7 +28,8 @@ Para **ativar sua conta do Mercado Pago na iSET**, siga os passos abaixo:
 3. No campo Status, selecione a opção "Ativo".
 4. Clique em "Fechar" e depois em "Salvar Alterações".
 <p>&nbsp;</p>
-    ![Payments Connect - iSET](/images/iset/iset_active_modulo_1.gif)
+
+![Payments Connect - iSET](/images/iset/iset_active_modulo_1.gif)
 <p>&nbsp;</p>
 E pronto! O Mercado Pago já está ativado.
 
@@ -46,7 +47,8 @@ Além disso, você pode [configurar parcelas sem juros](#bookmark_configurando_o
 4. Preencha uma Breve descrição/Nome da loja que deve aparecer na fatura do cartão do comprador (em até 13 caracteres).
 5. Clique em "Fechar" e depois em "Salvar Alterações".
 <p>&nbsp;</p>
-    ![Payments Connect - iSET](/images/iset/iset_configuration_methods_2.gif)
+
+![Payments Connect - iSET](/images/iset/iset_configuration_methods_2.gif)
 <p>&nbsp;</p>
 
 ### Checkout Pro
@@ -59,10 +61,11 @@ Para ativar esse modelo de checkout, siga os passos abaixo:
 2. Na lista de meios de pagamentos, selecione as "Opções de configuração" do Mercado Pago.
 3. Selecione a opção "Padrão" da seção Modelo de Checkout.
 4. Informe o [e-mail de cadastro na MercadoPago](https://www.mercadopago[FAKER][URL][DOMAIN]/profile#from-section=menu).
-5. Complete os campos Client ID e Client Secret que são as [credenciais]([FAKER][CREDENTIALS][URL_BASIC]) da sua conta do Mercado Pago.
+5. Complete os campos Client ID e Client Secret que são as [credenciais]([FAKER][CREDENTIALS][URL]) da sua conta do Mercado Pago.
 6. Clique em "Fechar" e depois em "Salvar Alterações".
 <p>&nbsp;</p>
-    ![Payments Connect - iSET](/images/iset/iset_configuration_checkout_padrao_3.gif)
+
+![Payments Connect - iSET](/images/iset/iset_configuration_checkout_padrao_3.gif)
 <p>&nbsp;</p>
 
 ### Checkout Transparente
@@ -75,10 +78,11 @@ Para ativar esse modelo de checkout, siga os passos abaixo:
 2. Na lista de meios de pagamentos, selecione as "Opções de configuração" do Mercado Pago.
 3. Selecione a opção "Transparente" da seção Modelo de Checkout.
 4. Informe o [e-mail de cadastro na MercadoPago](https://www.mercadopago[FAKER][URL][DOMAIN]/profile#from-section=menu).
-5. Complete os campos Client ID, Client Secret e Public Key que são as [credenciais da sua conta do Mercado Pago]([FAKER][CREDENTIALS][URL_BASIC]).
+5. Complete os campos Client ID, Client Secret e Public Key que são as [credenciais da sua conta do Mercado Pago]([FAKER][CREDENTIALS][URL]).
 6. Clique em "Fechar" e depois em "Salvar Alterações".
 <p>&nbsp;</p>
-    ![Payments Connect - iSET](/images/iset/iset_configuration_checkout_transparente_4.gif)
+
+![Payments Connect - iSET](/images/iset/iset_configuration_checkout_transparente_4.gif)
 <p>&nbsp;</p>
 
 ### Ambos Checkouts
@@ -91,13 +95,14 @@ Para **ativar os dois checkout**, siga os passos abaixo:
 2. Na lista de meios de pagamentos, selecione as "Opções de configuração" do Mercado Pago.
 3. Selecione a opção "Ambos" da seção Modelo de Checkout.
 4. Informe o [e-mail de cadastro na MercadoPago](https://www.mercadopago[FAKER][URL][DOMAIN]/profile#from-section=menu).
-5. Complete os campos Client ID, Client Secret e Public Key que são as [credenciais da sua conta do Mercado Pago]([FAKER][CREDENTIALS][URL_BASIC]).
+5. Complete os campos Client ID, Client Secret e Public Key que são as [credenciais da sua conta do Mercado Pago]([FAKER][CREDENTIALS][URL]).
 6. Clique em "Fechar" e depois em "Salvar Alterações".
 <p>&nbsp;</p>
-    ![Payments Connect - iSET](/images/iset/iset_configuration_checkout_ambos_5.gif)
+
+![Payments Connect - iSET](/images/iset/iset_configuration_checkout_ambos_5.gif)
 <p>&nbsp;</p>
 
-> Encontre todas as informações sobre suas credenciais em [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials/).
+> Encontre todas as informações sobre suas credenciais em [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials).
 
 ## Configuração de parcelamento
 
@@ -124,7 +129,8 @@ Estabeleça a quantidade máxima ou mínima de parcelas e a aplicação de acré
 
 5. Clique em "Fechar" e depois em "Salvar Alterações".
 <p>&nbsp;</p>
-    ![Payments Connect - iSET](/images/iset/iset_configuration_installments_6.gif)
+
+![Payments Connect - iSET](/images/iset/iset_configuration_installments_6.gif)
 <p>&nbsp;</p>
 
 ## Configurando o parcelamento em sua conta do Mercado Pago
@@ -133,7 +139,8 @@ Estabeleça a quantidade máxima ou mínima de parcelas e a aplicação de acré
 2. Procure por "Oferecer parcelamento sem juros" e clique em "Ativar".
 3. Escolha "Quantas parcelas você quer oferecer?" e clique em "Ativar" para confirmar as alterações.
 <p>&nbsp;</p>
-    ![Payments Connect - iSET](/images/iset/iset_account_installment_7.gif)
+
+![Payments Connect - iSET](/images/iset/iset_account_installment_7.gif)
 <p>&nbsp;</p>
 E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarifas de parcelamento que você configurou.
 
@@ -156,7 +163,8 @@ Para **configurar as informações de pedido em sua loja**, siga os passos abaix
  
 4. Clique em "Fechar" e depois em "Salvar Alterações".
 <p>&nbsp;</p>
-    ![Payments Connect - iSET](/images/iset/iset_configuration_informacion_9.gif)
+
+![Payments Connect - iSET](/images/iset/iset_configuration_informacion_9.gif)
 <p>&nbsp;</p>
 
 > WARNING

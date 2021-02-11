@@ -13,17 +13,17 @@ Instala el módulo de Mercado Pago de forma automática, a través del marketpla
 
 Es importante que revises los requerimientos para poder instalar nuestro módulo. Luego sigue los pasos que te indicamos. ¡Sólo te llevará unos minutos!
 
-| Requisitos                    | Detalles                                                                  	                |
-|-------------------------------|-----------------------------------------------------------------------------------------------|
-| Versiones        	            | Prestashop 1.6.x - 1.7.x                                                                      |
-| Ambiente                    	| LAMP (Linux, Apache, MySQL, and PHP) o LNMP stack                                             |
-| Sistema                     	| Linux x86, Windows x86-64                                                        	            |
-| Servidor Web                	| Apache 2.x, Nginx 1.7.x                                                               	    |
-| Versión PHP                 	| PHP 5.6 hasta 7.1 para PrestaShop 1.6 <br> PHP 5.6 o superior para PrestaShop 1.7             |
-| Base de datos               	| MySQL 5.6 o superior (Oracle o Percona)                                  	                    |
-| Dependencias de extensiones 	| PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (para Webservices API)         |
-| Configuraciones adicionales   | safe_mode off * memory_limite mayor que 256MB (512MB recomendado)                             |
-| SSL                         	| Certificado SSL  	                                                                            |
+| Requisitos | Detalles |
+| --- | --- |
+| Versiones | Prestashop 1.6.x - 1.7.x |
+| Ambiente | LAMP (Linux, Apache, MySQL, and PHP) o LNMP stack |
+| Sistema | Linux x86, Windows x86-64 |
+| Servidor Web | Apache 2.x, Nginx 1.7.x |
+| Versión PHP | PHP 5.6 hasta 7.1 para PrestaShop 1.6 <br> PHP 5.6 o superior para PrestaShop 1.7 |
+| Base de datos | MySQL 5.6 o superior (Oracle o Percona) |
+| Dependencias de extensiones | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (para Webservices API) |
+| Configuraciones adicionales | safe_mode off * memory_limite mayor que 256MB (512MB recomendado) |
+| SSL | Certificado SSL |
 
 > WARNING
 >
@@ -78,4 +78,4 @@ Luego ejecuta los pasos de una nueva instalación para actualizar tu página con
 > Conecta tu cuenta de Mercado Pago al módulo y captura los pagos que recibas por tus ventas online.
 >
 > 
-> [Integrar](https://www.mercadopago.com.ar/developers/es/guides/plugins/prestashop/integration/)
+> [Integrar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/integration)

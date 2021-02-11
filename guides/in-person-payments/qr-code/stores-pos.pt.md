@@ -15,7 +15,7 @@ sites_supported:
 
 As **lojas** e **caixas** são os conceitos que você usará no Mercado Pago para gerenciar seus negócios e manter um registro das suas contas. Você pode ter vários caixas dentro de uma loja.
 
-> ![Cajas y Sucursales](/images/stores_pos.pt.png) 
+![Cajas y Sucursales](/images/mobile/stores_pos.pt.png) 
 
 ## Lojas
 
@@ -75,7 +75,7 @@ https://api.mercadopago.com/users/$USER_ID/stores \
 ```
 ]]]
 
-Você pode obter mais informações nas [Referências de API](https://www.mercadopago.com.br/developers/pt/reference/stores/_users_user_id_stores/post/).
+Você pode obter mais informações nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/stores/_users_user_id_stores/post).
 
 > WARNING
 >
@@ -94,10 +94,10 @@ Você pode obter mais informações nas [Referências de API](https://www.mercad
 
 Tendo lojas criadas, você pode criar seus caixas. Considere o seguinte: 
 
-| Termo       |  Descrição    |
-| ------------- | ------------------------------------------------- |
-| `EXTERNAL_STORE_ID`     | Vincula o caixa com a loja. É um campo requerido e é o mesmo *external_id* da loja previamente criada. |
-| `EXTERNAL_ID`           | Identifica univocamente cada caixa. É requerido e não se pode alterar nem repetir numa mesma conta de Mercado Pago. |
+| Termo | Descrição |
+| --- | --- |
+| `EXTERNAL_STORE_ID` | Vincula o caixa com a loja. É um campo requerido e é o mesmo *external_id* da loja previamente criada. |
+| `EXTERNAL_ID` | Identifica univocamente cada caixa. É requerido e não se pode alterar nem repetir numa mesma conta de Mercado Pago. |
 
 
 [[[
@@ -116,7 +116,13 @@ https://api.mercadopago.com/pos \
 ```
 ]]]
 
-Você pode obter mais informações em [Referências de API](https://www.mercadopago.com.br/developers/pt/reference/pos/_pos/post/).
+Você pode obter mais informações em [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/pos/_pos/post).
+
+> WARNING 
+> 
+> Importante
+> 
+> A partir de 20 de abril de 2021, os caixas não poderão ser criados sem uma loja atribuída.
 
 Uma vez criado o caixa, poderemos ver no _Response_ os links para diferentes entregáveis do QR, junto com outros dados relevantes do caixa. 
 
@@ -131,4 +137,4 @@ Uma vez criado o caixa, poderemos ver no _Response_ os links para diferentes ent
 >
 > Aprenda passo a passo como integrar este modelo.
 >
-> [Integrar o modelo QR atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/qr-attended-part-b/)
+> [Integrar o modelo QR atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/qr-attended-part-b)

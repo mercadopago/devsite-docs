@@ -5,12 +5,23 @@ With Checkout API of Mercado Pago, you can add **alternative payment methods for
 
 ----[mla]----
 
-## Payment Methods
+## How does it work?
+
+To receive other payment methods, you should take into account two aspects:
+
+1. First, you need a frontend to collect customer's e-mail and document, amount and payment method.
+1. Then, you need a backend that takes the payment data and can confirm and make the payment.
+
+Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements/#bookmark_always_use_our_libraries) to collect user sensitive data securely.
+
+## Check the available payment methods
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Methods
 
 In addition to cards, you can offer other payment choices on your website.
 
 | Type of payment method | Payment method |
-| --- | ---|
+| --- | --- |
 | `ticket` | Rapipago |
 | `ticket` | Pago Fácil |
 | `ticket` | Provincia NET Pagos |
@@ -18,7 +29,7 @@ In addition to cards, you can offer other payment choices on your website.
 | `ticket` | Cobro Express |
 | `atm` | Red Link |
 
-## Check the available payment methods
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain the available payment methods
 
 You can check the available payment methods whenever you need.
 
@@ -72,6 +83,8 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method.
 
+Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_payment_methods).
+
 ```json
 [
     {
@@ -102,11 +115,117 @@ The result will be a list of payment methods and their features. For example, `p
 ]
 ```
 
-> For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/).
+> For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
 
-## Receive cash payments
+<br>
+<span></span>
 
-To receive cash payments, just send your customer's e-mail, amount, and payment method.
+> CLIENT_SIDE
+>
+> h2
+>
+> Data capture for payment
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
+**Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
+
+```html
+<script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
+
+To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
+
+You can easily include anything you need and add your own style.
+
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+
+```html
+<form action="/process_payment" method="post" id="paymentForm">
+    <h3>Payment method</h3>
+    <div>
+      <select class="form-control" id="paymentMethod" name="paymentMethod">
+        <option>Select a payment form</option>
+
+        <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
+        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+      </select>
+    </div>
+    <h3>Buyer Details</h3>
+    <div>
+    <div>
+        <label for="payerFirstName">Name</label>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+      </div>
+      <div>
+        <label for="payerLastName">Surname</label>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+      </div>
+      <div>
+        <label for="payerEmail">E-mail</label>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+      </div>
+      <div>
+        <label for="docType">Document Type</label>
+        <select id="docType" name="docType" data-checkout="docType" type="text"></select>
+      </div>
+      <div>
+        <label for="docNumber">Document Number</label>
+        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
+        <input type="hidden" name="productDescription" id="productDescription" value="Product name" />
+        <br>
+        <button type="submit">Pay</button>
+        <br>
+      </div>
+  </div>
+</form>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure your public key
+
+Add your [public key]([FAKER][CREDENTIALS][URL]) like this:
+
+```javascript
+window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
+```
+
+>  If you still don't have an account to check your credentials, [sign in](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Get data for your form
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get document types
+
+Document type is one of the mandatory fields. Use the document list to fill out your data.
+
+When you call the next function, MercadoPago.js will automatically fill out the available options, including the _select_ type element with `id = docType` in the form:
+
+```javascript
+window.Mercadopago.getIdentificationTypes();
+```
+
+> Find more information in the [Document type section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/identification-types).
+
+<br>
+<span></span>
+
+> SERVER_SIDE
+>
+> h2
+>
+> Payment submission to Mercado Pago
+
+To receive cash payments, just send your customer's e-mail and document, amount and payment method.
+
+Once the request –with all the collected information– is in your backend, it should be submitted to Mercado Pago through our APIs.
+
+For this to work, you should configure your [private key]([FAKER][CREDENTIALS][URL]).
 
 [[[
 ```php
@@ -225,7 +344,7 @@ The response will show pending status until the buyer makes the payment. The pay
         "net_received_amount": 0,
         "total_paid_amount": 100,
         "overpaid_amount": 0,
-        "external_resource_url": "http://www.mercadopago.com/mla/payments/ticket/helper?payment_id=123456789&payment_method_reference_id= 123456789&caller_id=123456",
+        "external_resource_url": "https://www.mercadopago.com/mla/payments/ticket/helper?payment_id=123456789&payment_method_reference_id= 123456789&caller_id=123456",
         "installment_amount": 0,
         "financial_institution": null,
         "payment_method_reference_id": "1234567890"
@@ -244,7 +363,7 @@ In the `external_resource_url` field you will find an address with payment instr
 
 ## Expiration date of cash payment
 
-The default expiration date for cash payments is 3 days. If you want, you can change this date by sending the `date_of_expiration` field in the payment creation request. The configured date must be between 1 and 30 days from the issue date.
+If you want, you can change the default due date of a cash payment by sending the `date_of_expiration` field in the payment creation request. The configured date must be between 1 and 30 days from the issue date.
 
 [[[
 ```php
@@ -307,7 +426,7 @@ To avoid collection issues, you need to cancel expired payments. Cash payments s
 
 Take into account that **you can only cancel payments in process or pending status**. If a payment expires after 30 days, the cancellation is automatic and the final status will be cancelled or expired.
 
-For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds/).
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
 
 ## Payment credit times
 
@@ -319,19 +438,30 @@ Check [credit times by payment method](https://www.mercadopago[FAKER][URL][DOMAI
 
 ----[mlm]----
 
-## Payment Methods
+## How does it work?
+
+To receive other payment methods, you should take into account two aspects:
+
+1. First, you need a frontend to collect customer's e-mail and document, amount and payment method.
+1. Then, you need a backend that takes the payment data and can confirm and make the payment.
+
+Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements/#bookmark_always_use_our_libraries) to collect user sensitive data securely.
+
+## Check the available payment methods
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Methods
 
 In addition to cards, you can offer other payment choices on your website.
 
 | Type of payment method | Payment method |
-| --- | ---|
+| --- | --- |
 | `ticket` | OXXO |
 | `atm` | Citibanamex |
 | `atm` | Santander |
 | `atm` | BBVA Bancomer |
 | `prepaid_card` | Mercado Pago Card |
 
-## Check the available payment methods
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain the available payment methods
 
 You can check the available payment methods whenever you need.
 
@@ -384,6 +514,8 @@ curl -X GET \
 <br>
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method.
+
+Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_payment_methods).
 
 ```json
 [
@@ -499,11 +631,103 @@ The result will be a list of payment methods and their features. For example, `p
 ]
 ```
 
-> For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/).
+> For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
 
-## Receive cash payments
+<br>
+<span></span>
 
-To receive cash payments, just send your customer's e-mail, amount, and payment method.
+> CLIENT_SIDE
+>
+> h2
+>
+> Data capture for payment
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
+**Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
+
+```html
+<script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
+
+To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
+
+You can easily include anything you need and add your own style.
+
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+
+```html
+<form action="/process_payment" method="post" id="paymentForm">
+    <h3>Payment method</h3>
+    <div>
+      <select class="form-control" id="paymentMethod" name="paymentMethod">
+        <option>Select a payment form</option>
+
+        <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
+        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+      </select>
+    </div>
+    <h3>Buyer Details</h3>
+    <div>
+    <div>
+        <label for="payerFirstName">Name</label>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+      </div>
+      <div>
+        <label for="payerLastName">Surname</label>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+      </div>
+      <div>
+        <label for="payerEmail">E-mail</label>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+      </div>
+      <div>
+        <label for="docType">Document Type</label>
+        <select id="docType" name="docType" data-checkout="docType" type="text"></select>
+      </div>
+      <div>
+        <label for="docNumber">Document Number</label>
+        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
+        <input type="hidden" name="productDescription" id="productDescription" value="Product name" />
+        <br>
+        <button type="submit">Pay</button>
+        <br>
+      </div>
+  </div>
+</form>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure your public key
+
+Add your [public key]([FAKER][CREDENTIALS][URL]) like this:
+
+```javascript
+window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
+```
+
+>  If you still don't have an account to check your credentials, [sign in](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+
+<br>
+<span></span>
+
+> SERVER_SIDE
+>
+> h2
+>
+> Payment submission to Mercado Pago
+
+To receive cash payments, just send your customer's e-mail and document, amount and payment method.
+
+Once the request –with all the collected information– is in your backend, it should be submitted to Mercado Pago through our APIs.
+
+For this to work, you should configure your [private key]([FAKER][CREDENTIALS][URL]).
 
 [[[
 ```php
@@ -647,20 +871,20 @@ To avoid collection issues, you need to cancel expired payments. Cash payments s
 
 Take into account that **you can only cancel payments in process or pending status**. If a payment expires after 30 days, the cancellation is automatic and the final status will be cancelled or expired.
 
-For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds/).
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
 
 ## Payment credit times
 
 Each payment method has its own credit times; it is immediate in some cases, while in others, it may take up to 3 business days.
 
-Check [credit times by payment method]https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) whenever you need to.
+Check [credit times by payment method](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) whenever you need to.
 
 ## Inform customer payment points
 
 Finally, you should share information about the different places where your customers can pay.
 
 | Payment method | Available stores |
-| --- | ---|
+| --- | --- |
 | OXXO | OXXO
 | BBVA Bancomer | 7-Eleven |
 | BBVA Bancomer | K |
@@ -675,16 +899,27 @@ Finally, you should share information about the different places where your cust
 
 ----[mlu]----
 
-# Payment Methods
+## How does it work?
+
+To receive other payment methods, you should take into account two aspects:
+
+1. First, you need a frontend to collect customer's e-mail and document, amount and payment method.
+1. Then, you need a backend that takes the payment data and can confirm and make the payment.
+
+Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements/#bookmark_always_use_our_libraries) to collect user sensitive data securely.
+
+## Check the available payment methods
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Methods
 
 In addition to cards, you can offer other payment choices on your website.
 
 | Type of payment method | Payment method |
-| --- | ---|
+| --- | --- |
 | `ticket` | Abitab |
 | `ticket` | Redpagos |
 
-## Check the available payment methods
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain the available payment methods
 
 You can check the available payment methods whenever you need.
 
@@ -738,6 +973,8 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method.
 
+Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_payment_methods).
+
 ```json
 
 [
@@ -784,11 +1021,117 @@ The result will be a list of payment methods and their features. For example, `p
 ]
 ```
 
-> For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/).
+> For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
 
-## Receive cash payments
+<br>
+<span></span>
 
-To receive cash payments, just send your customer's e-mail, amount, and payment method.
+> CLIENT_SIDE
+>
+> h2
+>
+> Data capture for payment
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
+**Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
+
+```html
+<script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
+
+To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
+
+You can easily include anything you need and add your own style.
+
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+
+```html
+<form action="/process_payment" method="post" id="paymentForm">
+    <h3>Payment method</h3>
+    <div>
+      <select class="form-control" id="paymentMethod" name="paymentMethod">
+        <option>Select a payment form</option>
+
+        <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
+        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+      </select>
+    </div>
+    <h3>Buyer Details</h3>
+    <div>
+    <div>
+        <label for="payerFirstName">Name</label>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+      </div>
+      <div>
+        <label for="payerLastName">Surname</label>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+      </div>
+      <div>
+        <label for="payerEmail">E-mail</label>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+      </div>
+      <div>
+        <label for="docType">Document Type</label>
+        <select id="docType" name="docType" data-checkout="docType" type="text"></select>
+      </div>
+      <div>
+        <label for="docNumber">Document Number</label>
+        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
+        <input type="hidden" name="productDescription" id="productDescription" value="Product name" />
+        <br>
+        <button type="submit">Pay</button>
+        <br>
+      </div>
+  </div>
+</form>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure your public key
+
+Add your [public key]([FAKER][CREDENTIALS][URL]) like this:
+
+```javascript
+window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
+```
+
+>  If you still don't have an account to check your credentials, [sign in](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Get data for your form
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get document types
+
+Document type is one of the mandatory fields. Use the document list to fill out your data.
+
+When you call the next function, MercadoPago.js will automatically fill out the available options, including the _select_ type element with `id = docType` in the form:
+
+```javascript
+window.Mercadopago.getIdentificationTypes();
+```
+
+> Find more information in the [Document type section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/identification-types).
+
+<br>
+<span></span>
+
+> SERVER_SIDE
+>
+> h2
+>
+> Payment submission to Mercado Pago
+
+To receive cash payments, just send your customer's e-mail and document, amount and payment method.
+
+Once the request –with all the collected information– is in your backend, it should be submitted to Mercado Pago through our APIs.
+
+For this to work, you should configure your [private key]([FAKER][CREDENTIALS][URL]).
 
 [[[
 ```php
@@ -931,7 +1274,7 @@ To avoid collection issues, you need to cancel expired payments. Cash payments s
 
 Take into account that **you can only cancel payments in process or pending status**. If a payment expires after 30 days, the cancellation is automatic and the final status will be cancelled or expired.
 
-For more information, check the [Refunds and Cancellations section]https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds/).
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
 
 ## Payment credit times
 
@@ -943,18 +1286,29 @@ Check [credit times by payment method](https://www.mercadopago[FAKER][URL][DOMAI
 
 ----[mco]----
 
-## Payment Methods
+## How does it work?
+
+To receive other payment methods, you should take into account two aspects:
+
+1. First, you need a frontend to collect customer's e-mail and document, amount and payment method.
+1. Then, you need a backend that takes the payment data and can confirm and make the payment.
+
+Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements/#bookmark_always_use_our_libraries) to collect user sensitive data securely.
+
+## Check the available payment methods
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Methods
 
 In addition to cards, you can offer other payment choices on your website.
 
 | Type of payment method | Payment method |
-| --- | ---|
+| --- | --- |
 | `ticket` | Efecty |
 | `ticket` | Baloto |
 | `bank_transfer` | PSE |
 
 
-## Check the available payment methods
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain the available payment methods
 
 You can check the available payment methods whenever you need.
 
@@ -1007,6 +1361,8 @@ curl -X GET \
 <br>
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method.
+
+Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_payment_methods).
 
 ```json
 [
@@ -1071,11 +1427,117 @@ The result will be a list of payment methods and their features. For example, `p
 ]
 ```
 
-> For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/).
+> For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
 
-## Receive cash payments
+<br>
+<span></span>
 
-To receive cash payments, just send your customer's e-mail, amount, and payment method.
+> CLIENT_SIDE
+>
+> h2
+>
+> Data capture for payment
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
+**Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
+
+```html
+<script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
+
+To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
+
+You can easily include anything you need and add your own style.
+
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+
+```html
+<form action="/process_payment" method="post" id="paymentForm">
+    <h3>Payment method</h3>
+    <div>
+      <select class="form-control" id="paymentMethod" name="paymentMethod">
+        <option>Select a payment form</option>
+
+        <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
+        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+      </select>
+    </div>
+    <h3>Buyer Details</h3>
+    <div>
+    <div>
+        <label for="payerFirstName">Name</label>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+      </div>
+      <div>
+        <label for="payerLastName">Surname</label>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+      </div>
+      <div>
+        <label for="payerEmail">E-mail</label>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+      </div>
+      <div>
+        <label for="docType">Document Type</label>
+        <select id="docType" name="docType" data-checkout="docType" type="text"></select>
+      </div>
+      <div>
+        <label for="docNumber">Document Number</label>
+        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
+        <input type="hidden" name="productDescription" id="productDescription" value="Product name" />
+        <br>
+        <button type="submit">Pay</button>
+        <br>
+      </div>
+  </div>
+</form>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure your public key
+
+Add your [public key]([FAKER][CREDENTIALS][URL]) like this:
+
+```javascript
+window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
+```
+
+>  If you still don't have an account to check your credentials, [sign in](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Get data for your form
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get document types
+
+Document type is one of the mandatory fields. Use the document list to fill out your data.
+
+When you call the next function, MercadoPago.js will automatically fill out the available options, including the _select_ type element with `id = docType` in the form:
+
+```javascript
+window.Mercadopago.getIdentificationTypes();
+```
+
+> Find more information in the [Document type section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/identification-types).
+
+<br>
+<span></span>
+
+> SERVER_SIDE
+>
+> h2
+>
+> Payment submission to Mercado Pago
+
+To receive cash payments, just send your customer's e-mail and document, amount and payment method.
+
+Once the request –with all the collected information– is in your backend, it should be submitted to Mercado Pago through our APIs.
+
+For this to work, you should configure your [private key]([FAKER][CREDENTIALS][URL]).
 
 [[[
 ```php
@@ -1167,7 +1629,7 @@ payment.Save();
 curl -X POST \
   'https://api.mercadopago.com/v1/payments' \
   -H 'Content-Type: application/json' \
-  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \   
+  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   -d '{
   transaction_amount: 5000,
   description: "Product Title",
@@ -1215,7 +1677,7 @@ In the `external_resource_url` field you will find an address with payment instr
 
 ## Expiration date of cash payment
 
-The default expiration date for cash payments is 3 days. If you want, you can change this date by sending the `date_of_expiration` field in the payment creation request. The configured date must be between 1 and 30 days from the issue date.
+If you want, you can change the default due date of a cash payment by sending the `date_of_expiration` field in the payment creation request. The configured date must be between 1 and 30 days from the issue date.
 
 [[[
 ```php
@@ -1432,7 +1894,7 @@ To avoid collection issues, you need to cancel expired payments. Cash payments s
 
 Take into account that **you can only cancel payments in process or pending status**. If a payment expires after 30 days, the cancellation is automatic and the final status will be cancelled or expired.
 
-For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds/).
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
 
 ## Payment credit times
 
@@ -1444,17 +1906,28 @@ Check [credit times by payment method](https://www.mercadopago[FAKER][URL][DOMAI
 
 ----[mlc]----
 
-## Payment Methods
+## How does it work?
+
+To receive other payment methods, you should take into account two aspects:
+
+1. First, you need a frontend to collect customer's e-mail and document, amount and payment method.
+1. Then, you need a backend that takes the payment data and can confirm and make the payment.
+
+Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements/#bookmark_always_use_our_libraries) to collect user sensitive data securely.
+
+## Check the available payment methods
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Methods
 
 In addition to cards, you can offer other payment choices on your website.
 
 | Type of payment method | Payment method |
-| --- | ---|
+| --- | --- |
 | `ticket` | Sucursales Servipag |
 | `bank_transfer` | Redcompra Webpay |
 
 
-## Check the available payment methods
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain the available payment methods
 
 You can check the available payment methods whenever you need.
 
@@ -1508,6 +1981,8 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method.
 
+Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_payment_methods).
+
 ```json
 [
  {
@@ -1556,11 +2031,117 @@ The result will be a list of payment methods and their features. For example, `p
 ]
 ```
 
-> For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/).
+> For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
 
-## Receive cash payments
+<br>
+<span></span>
 
-To receive cash payments, just send your customer's e-mail, amount, and payment method.
+> CLIENT_SIDE
+>
+> h2
+>
+> Data capture for payment
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
+**Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
+
+```html
+<script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
+
+To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
+
+You can easily include anything you need and add your own style.
+
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+
+```html
+<form action="/process_payment" method="post" id="paymentForm">
+    <h3>Payment method</h3>
+    <div>
+      <select class="form-control" id="paymentMethod" name="paymentMethod">
+        <option>Select a payment form</option>
+
+        <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
+        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+      </select>
+    </div>
+    <h3>Buyer Details</h3>
+    <div>
+    <div>
+        <label for="payerFirstName">Name</label>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+      </div>
+      <div>
+        <label for="payerLastName">Surname</label>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+      </div>
+      <div>
+        <label for="payerEmail">E-mail</label>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+      </div>
+      <div>
+        <label for="docType">Document Type</label>
+        <select id="docType" name="docType" data-checkout="docType" type="text"></select>
+      </div>
+      <div>
+        <label for="docNumber">Document Number</label>
+        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
+        <input type="hidden" name="productDescription" id="productDescription" value="Product name" />
+        <br>
+        <button type="submit">Pay</button>
+        <br>
+      </div>
+  </div>
+</form>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure your public key
+
+Add your [public key]([FAKER][CREDENTIALS][URL]) like this:
+
+```javascript
+window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
+```
+
+>  If you still don't have an account to check your credentials, [sign in](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Get data for your form
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get document types
+
+Document type is one of the mandatory fields. Use the document list to fill out your data.
+
+When you call the next function, MercadoPago.js will automatically fill out the available options, including the _select_ type element with `id = docType` in the form:
+
+```javascript
+window.Mercadopago.getIdentificationTypes();
+```
+
+> Find more information in the [Document type section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/identification-types).
+
+<br>
+<span></span>
+
+> SERVER_SIDE
+>
+> h2
+>
+> Payment submission to Mercado Pago
+
+To receive cash payments, just send your customer's e-mail and document, amount and payment method.
+
+Once the request –with all the collected information– is in your backend, it should be submitted to Mercado Pago through our APIs.
+
+For this to work, you should configure your [private key]([FAKER][CREDENTIALS][URL]).
 
 [[[
 ```php
@@ -1867,7 +2448,7 @@ Take into account that **you can only cancel payments in process or pending stat
 >
 > Remember that if payments are not made within 30 minutes, Webpay will automatically cancel them.
 
-For more information, check the [Refunds and Cancellations section](https://www.mercadopago.cl/developers/en/guides/manage-account/account/cancellations-and-refunds/).
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
 
 ## Payment credit times
 
@@ -1880,16 +2461,27 @@ Check [credit times by payment method](https://www.mercadopago.cl/ayuda/Medios-d
 
 ----[mpe]----
 
-## Payment Methods
+## How does it work?
+
+To receive other payment methods, you should take into account two aspects:
+
+1. First, you need a frontend to collect customer's e-mail and document, amount and payment method.
+1. Then, you need a backend that takes the payment data and can confirm and make the payment.
+
+Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements/#bookmark_always_use_our_libraries) to collect user sensitive data securely.
+
+## Check the available payment methods
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Methods
 
 In addition to cards, you can offer other payment choices on your website.
 
 | Type of payment method | Payment method |
-| --- | ---|
+| --- | --- |
 | `atm` | PagoEfectivo |
 
 
-## Check the available payment methods
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain the available payment methods
 
 You can check the available payment methods whenever you need.
 
@@ -1943,6 +2535,8 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method.
 
+Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_payment_methods).
+
 ```json
 [
   {
@@ -1966,11 +2560,117 @@ The result will be a list of payment methods and their features. For example, `p
 ]
 ```
 
-> For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/).
+> For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
 
-## Receive cash payments
+<br>
+<span></span>
 
-To receive cash payments, just send your customer's e-mail, amount, and payment method.
+> CLIENT_SIDE
+>
+> h2
+>
+> Data capture for payment
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
+**Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
+
+```html
+<script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
+
+To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
+
+You can easily include anything you need and add your own style.
+
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+
+```html
+<form action="/process_payment" method="post" id="paymentForm">
+    <h3>Payment method</h3>
+    <div>
+      <select class="form-control" id="paymentMethod" name="paymentMethod">
+        <option>Select a payment form</option>
+
+        <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
+        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+      </select>
+    </div>
+    <h3>Buyer Details</h3>
+    <div>
+    <div>
+        <label for="payerFirstName">Name</label>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+      </div>
+      <div>
+        <label for="payerLastName">Surname</label>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+      </div>
+      <div>
+        <label for="payerEmail">E-mail</label>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+      </div>
+      <div>
+        <label for="docType">Document Type</label>
+        <select id="docType" name="docType" data-checkout="docType" type="text"></select>
+      </div>
+      <div>
+        <label for="docNumber">Document Number</label>
+        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
+        <input type="hidden" name="productDescription" id="productDescription" value="Product name" />
+        <br>
+        <button type="submit">Pay</button>
+        <br>
+      </div>
+  </div>
+</form>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure your public key
+
+Add your [public key]([FAKER][CREDENTIALS][URL]) like this:
+
+```javascript
+window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
+```
+
+>  If you still don't have an account to check your credentials, [sign in](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Get data for your form
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get document types
+
+Document type is one of the mandatory fields. Use the document list to fill out your data.
+
+When you call the next function, MercadoPago.js will automatically fill out the available options, including the _select_ type element with `id = docType` in the form:
+
+```javascript
+window.Mercadopago.getIdentificationTypes();
+```
+
+> Find more information in the [Document type section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/identification-types).
+
+<br>
+<span></span>
+
+> SERVER_SIDE
+>
+> h2
+>
+> Payment submission to Mercado Pago
+
+To receive cash payments, just send your customer's e-mail and document, amount and payment method.
+
+Once the request –with all the collected information– is in your backend, it should be submitted to Mercado Pago through our APIs.
+
+For this to work, you should configure your [private key]([FAKER][CREDENTIALS][URL]).
 
 [[[
 ```php
@@ -2121,7 +2821,7 @@ To avoid collection issues, you need to cancel expired payments. Cash payments s
 
 Take into account that **you can only cancel payments in process or pending status**. If a payment expires after 30 days, the cancellation is automatic and the final status will be cancelled or expired.
 
-For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds/).
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
 
 ## Payment credit times
 
@@ -2133,16 +2833,27 @@ Check [credit times by payment method](https://www.mercadopago[FAKER][URL][DOMAI
 
 ----[mlb]----
 
-## Payment Methods
+## How does it work?
+
+To receive other payment methods, you should take into account two aspects:
+
+1. First, you need a frontend to collect customer's e-mail and document, amount and payment method.
+1. Then, you need a backend that takes the payment data and can confirm and make the payment.
+
+Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements/#bookmark_always_use_our_libraries) to collect user sensitive data securely.
+
+## Check the available payment methods
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Methods
 
 In addition to cards, you can offer other payment choices on your website.
 
 | Type of payment method | Payment method |
-| --- | ---|
+| --- | --- |
 | `ticket` | Boleto |
 | `ticket` | Pagamento em lotérica |
 
-## Check the available payment methods
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain the available payment methods
 
 You can check the available payment methods whenever you need.
 
@@ -2196,6 +2907,8 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method.
 
+Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_payment_methods).
+
 ```json
 [
     {
@@ -2226,11 +2939,117 @@ The result will be a list of payment methods and their features. For example, `p
 ]
 ```
 
-> For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/).
+> For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
 
-## Receive payments with boleto or lotérica
+<br>
+<span></span>
 
-To receive payments with boleto or lotérica, you just have to send the amount, the payment method, the identification data and the buyer's address.
+> CLIENT_SIDE
+>
+> h2
+>
+> Data capture for payment
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
+**Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
+
+```html
+<script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
+
+To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
+
+You can easily include anything you need and add your own style.
+
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+
+```html
+<form action="/process_payment" method="post" id="paymentForm">
+    <h3>Payment method</h3>
+    <div>
+      <select class="form-control" id="paymentMethod" name="paymentMethod">
+        <option>Select a payment form</option>
+
+        <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
+        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+      </select>
+    </div>
+    <h3>Buyer Details</h3>
+    <div>
+    <div>
+        <label for="payerFirstName">Name</label>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+      </div>
+      <div>
+        <label for="payerLastName">Surname</label>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+      </div>
+      <div>
+        <label for="payerEmail">E-mail</label>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+      </div>
+      <div>
+        <label for="docType">Document Type</label>
+        <select id="docType" name="docType" data-checkout="docType" type="text"></select>
+      </div>
+      <div>
+        <label for="docNumber">Document Number</label>
+        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
+        <input type="hidden" name="productDescription" id="productDescription" value="Product name" />
+        <br>
+        <button type="submit">Pay</button>
+        <br>
+      </div>
+  </div>
+</form>
+```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure your public key
+
+Add your [public key]([FAKER][CREDENTIALS][URL]) like this:
+
+```javascript
+window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
+```
+
+>  If you still don't have an account to check your credentials, [sign in](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Get data for your form
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get document types
+
+Document type is one of the mandatory fields. Use the document list to fill out your data.
+
+When you call the next function, MercadoPago.js will automatically fill out the available options, including the _select_ type element with `id = docType` in the form:
+
+```javascript
+window.Mercadopago.getIdentificationTypes();
+```
+
+> Find more information in the [Document type section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/identification-types).
+
+<br>
+<span></span>
+
+> SERVER_SIDE
+>
+> h2
+>
+> Payment submission to Mercado Pago
+
+To receive payments with boleto or lotérica, just send your customer's e-mail and document, amount and payment method.
+
+Once the request –with all the collected information– is in your backend, it should be submitted to Mercado Pago through our APIs.
+
+For this to work, you should configure your [private key]([FAKER][CREDENTIALS][URL]).
 
 [[[
 ```php
@@ -2441,7 +3260,7 @@ The response will show pending status until the buyer makes the payment. The pay
         "net_received_amount": 0,
         "total_paid_amount": 100,
         "overpaid_amount": 0,
-        "external_resource_url": "http://www.mercadopago.com/mlb/payments/ticket/helper?payment_id=123456789&payment_method_reference_id= 123456789&caller_id=123456",
+        "external_resource_url": "https://www.mercadopago.com/mlb/payments/ticket/helper?payment_id=123456789&payment_method_reference_id= 123456789&caller_id=123456",
         "installment_amount": 0,
         "financial_institution": null,
         "payment_method_reference_id": "1234567890"
@@ -2521,7 +3340,7 @@ To avoid collection issues, you need to cancel expired payments. Cash payments s
 
 Take into account that **you can only cancel payments in process or pending status**. If a payment expires after 30 days, the cancellation is automatic and the final status will be cancelled or expired.
 
-For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds/).
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
 
 ## Payment credit times
 
@@ -2540,7 +3359,7 @@ Check [credit times by payment method](https://www.mercadopago.com.br/ajuda/meio
 >
 > Check that everything works in your integration with test users.
 >
-> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/test-integration/)
+> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/testing)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >

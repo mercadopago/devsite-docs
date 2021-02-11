@@ -11,8 +11,8 @@
 
 # Requisitos del Sistema
 ### Versiones de la plataforma
-* <a href="https://wordpress.org/download/">WordPress</a> 4.1 o mayor
-* <a href="https://wordpress.org/plugins/wp-e-commerce/">WP eCommerce</a> 3.11 o mayor
+* [WordPress](https://wordpress.org/download) 4.1 o mayor
+* [WP eCommerce](https://wordpress.org/plugins/wp-e-commerce) 3.11 o mayor
 
 ### Ambiente
 * LAMP (Linux, Apache, MySQL, and PHP)
@@ -22,16 +22,16 @@
 * x86-64
 
 ### Web Server
-* <a href="https://httpd.apache.org/">Apache 2.x</a>
+* [Apache 2.x](https://httpd.apache.org)
 
 ### Hosting
 * Puede sobreescribir el archivo .htaccess
 
 ### Versiones PHP
-* <a href="http://php.net/">PHP</a> 5.6 o mayor, con soporte CURL.
+* [PHP](http://php.net) 5.6 o mayor, con soporte CURL.
 
 ### Versión MySQL
-* <a href="http://www.mysql.com/">MySQL</a> versión 5.6 o mayor ó <a href="https://mariadb.org/">MariaDB</a> versión 10.0 o mayor
+* [MySQL](http://www.mysql.com) versión 5.6 o mayor ó [MariaDB](https://mariadb.org) versión 10.0 o mayor
 
 ### Dependencia de extensión
 * WP eCommerce
@@ -46,13 +46,28 @@
 # Funcionalidad
 El módulo de Mercado Pago para WP eCommerce está integrado con las siguientes funcionalidades y soluciones de pago:
 
-### [Checkout básico (Redirect, Iframe or Lightbox)](https://www.mercadopago.com.ar/developers/en/solutions/payments/basic-checkout/receive-payments/)
-* Interfaces "pre-armadas" de Mercado Pago <ar>![Basic Checkout](/images/wp-ecommerce-basic_checkout_payment.png)
+### Checkout básico (Redirect, Iframe or Lightbox)
+* Interfaces "pre-armadas" de Mercado Pago
+<br>
+
+![Basic Checkout](/images/wp-ecommerce/wp-ecommerce-basic_checkout_payment.png)
 
 ### Checkout personalizado
-* [Pagos con tarjeta de crédito](https://www.mercadopago.com.ar/developers/en/solutions/payments/basic-checkout/receive-payments/)<ar>![Custom Checkout](/images/wp-ecommerce-order_custom.png)
-* [Pago conn un click (Customer Cards)](https://www.mercadopago.com.ar/developers/en/solutions/payments/custom-checkout/one-click-charges/javascript/)<ar>![One Click Payment](/images/wp-ecommerce-order_cust_card.png)
-* [Otros medios de pago, como por ejemplo Tickets](https://www.mercadopago.com.ar/developers/en/solutions/payments/custom-checkout/charge-with-other-methods/)<ar>![Tickets](/images/wp-ecommerce-order_ticket.png)
+
+* [Pagos con tarjeta de crédito](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/solutions/payments/basic-checkout/receive-payments)
+<br>
+
+![Custom Checkout](/images/wp-ecommerce/wp-ecommerce-order_custom.png)
+
+* [Pago conn un click (Customer Cards)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/solutions/payments/custom-checkout/one-click-charges/javascript)
+<br>
+
+![One Click Payment](/images/wp-ecommerce/wp-ecommerce-order_cust_card.png)
+
+* [Otros medios de pago, como por ejemplo Tickets](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/solutions/payments/custom-checkout/charge-with-other-methods)
+<br>
+
+![Tickets](/images/wp-ecommerce/wp-ecommerce-order_ticket.png)
 
 ### Otras funcionalidades
 * Credenciales y chequeos de estado de la plataforma.
@@ -77,9 +92,9 @@ Se tienen dos opciones para instalar el módulo: Desde el Wordpress Store, o des
 
 ### Descarga manual
 
-1. Obtener la fuente del modulo desde el repositorio de (<a href="https://github.com/mercadopago/cart-wp-commerce/archive/master.zip">Github</a> ó desde el <a href="https://br.wordpress.org/plugins/wpecomm-mercado-pago-module/">"WordPress Plugin Directory"</a>);
+1. Obtener la fuente del modulo desde el repositorio de [Github](https://github.com/mercadopago/cart-wp-commerce/archive/master.zip) ó desde el [WordPress Plugin Directory](https://br.wordpress.org/plugins/wpecomm-mercado-pago-module/);
 
-2. Abrir la carpeta y buscar el directorio "wpecomm-mercado-pago-module" ;
+2. Abrir la carpeta y buscar el directorio "wpecomm-mercado-pago-module";
 
 3. Copiar el directorio "wpecomm-mercado-pago-module" en *[WordPressRootDirectory]/wp-content/plugins/* directory. Listo!
 
@@ -87,8 +102,9 @@ Se tienen dos opciones para instalar el módulo: Desde el Wordpress Store, o des
 
 # Configurando la Tarjeta de Crédito
 Esta página explica como configurar el módulo para aceptar pagos con tarjeta de crédito en el Checkout personalizado. En el administrador de tu tienda, ir a *Configuración > Tienda > Pagos*. Hacer click en *Mercado Pago - Checkout personalizado*. Deberías obtener la siguiente página:
+<br>
 
-![Custom Checkout Config](/images/wp-ecommerce-custom_config_screenshot.png)
+![Custom Checkout Config](/images/wp-ecommerce/wp-ecommerce-custom_config_screenshot.png)
 
 ### Credenciales de Mercado Pago
   * Aquí se deberían ingresar la *Public Key* y *Access Token* correspondientes. Las credenciales son las que identifican al usuario en Mercado Pago.
@@ -113,8 +129,9 @@ Se ofrecen herramientas de logging para que se puedan analizar los problemas que
 
 # Configurando los Tickets
 Esta página explicará como configurar el módulo para poder aceptar pagos con Tickets en el Checkout personalizado. En el administrador de su tienda, ir a *Settings > Store > Payments*. Hacer click en *Mercado Pago - Ticket*. Se debería obtener la siguiente página:
+<br>
 
-![Ticket Checkout Config](/images/wp-ecommerce-ticket_config_screenshot.png)
+![Ticket Checkout Config](/images/wp-ecommerce/wp-ecommerce-ticket_config_screenshot.png)
 
 ### Credenciales de Mercado Pago
   * Aquí se debería ingresar el *Access Token*, la credenciales que identifica a los usuarios en MaercadoPago.
@@ -136,8 +153,9 @@ Se ofrecen herramientas de logging que permiten analizar el problema que pueda l
 
 # Configurando el Checkout por Redirect, Iframe o LightBox
 Esta página explicará como configurar el módulo para poder aceptar pagos con el Checkout básico en Redirect, Iframe or Lightbox. En el administrador de su tienda, ir a *Settings > Store > Payments*. Hacer click en *Mercado Pago - Basic Checkout*. Se debería obtener la siguiente página:
+<br>
 
-![Basic Checkout](/images/wp-ecommerce-basic_config_screenshot.png)
+![Basic Checkout](/images/wp-ecommerce/wp-ecommerce-basic_config_screenshot.png)
 
 ### Credenciales de Mercado Pago
   * Aquí se deberían ingresar el *Client ID* y *Client ID*, las credenciales que identifican a los usuarios en MaercadoPago.
@@ -170,7 +188,7 @@ Instant Payment Notifications (IPN) - Notificaciones instantáneas de pago- es u
 
 > HINT 1: Cuando configuras o testeas tus IPN/Webhooks y las comunicaciones del servidor está seguro que tu servidor pueda acceder al servidor de MercadoPago.
 
-> HINT 2: Asegúrate que tu firewall tenga acceso al [IPs de MercadoPago](https://www.mercadopago.com.ar/developers/en/api-docs/basics/design-considerations#ip-range) dentro del white-list.
+> HINT 2: Asegúrate que tu firewall tenga acceso al [IPs de MercadoPago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/api-docs/basics/design-considerations#ip-range) dentro del white-list.
 
 > HINT 3: Prestar atención a que Mercado Pago usa TSL protocol **version 1.0**, así que tu servidor necesita soportar/aceptar conexiones con esta versión del protocolo.
 
@@ -185,7 +203,7 @@ Si ya has instalado una versión previa del módulo de MercadoPago WPeComm, por 
 3. En unos pocos segundos debería estar instalado, y mostrando un mensaje de *Updated!* .
 
 ### Actualización con descarga manual
-1. Obtén la fuente del módulo desde el repositorio (<a href="https://github.com/mercadopago/cart-wp-commerce/archive/master.zip">Github</a> ó <a href="https://br.wordpress.org/plugins/wpecomm-mercado-pago-module/">WordPress Plugin Directory</a>);
+1. Obtén la fuente del módulo desde el repositorio [Github](https://github.com/mercadopago/cart-wp-commerce/archive/master.zip) ó [WordPress Plugin Directory](https://br.wordpress.org/plugins/wpecomm-mercado-pago-module);
 2. Descomprime la carpeta y busca el directorio "wpecomm-mercado-pago-module";
 3. Ir al directorio *[WordPressRootDirectory]/wp-content/plugins/* y borrar el directorio existente "wpecomm-mercado-pago-module";
 4. Copiar el directorio "wpecomm-mercado-pago-module" a *[WordPressRootDirectory]/wp-content/plugins/* .
@@ -196,7 +214,7 @@ Para confirmar que tu modulo está realmente actualizado, puedes ver en el item 
 
 
 # Soporte Técnico
-Si tienes alguna pregunta, problema o error tenemos un canal de soporte. Contáctanos a nuestro canal de [soporte](/support) con la siguiente información:
+Si tienes alguna pregunta, problema o error tenemos un canal de soporte. Contáctanos a nuestro canal de [soporte](https://mercadopago[FAKER][URL][DOMAIN]/developers/es/support) con la siguiente información:
 
 * Email de tu cuenta de Mercado Pago;
 * Detalles sobre tu consulta, problema o error;
@@ -205,8 +223,7 @@ Si tienes alguna pregunta, problema o error tenemos un canal de soporte. Contác
 * Versión del modulo, si estás usando.
 
 > HINT: Puedes obtener la versión del modulo en la lista de plugin de tu página de administración de WordPress:
->
-> ![Developer](/images/wp-ecommerce-plugin_adm.png)
+![Developer](/images/wp-ecommerce/wp-ecommerce-plugin_adm.png)
 
 # Cómo Contribuir
 Aquí hay algunos tips para ayudar con el desarrollo y mantenimiento del proyecto.

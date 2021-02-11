@@ -8,16 +8,16 @@ indexable: false
 
 ## Product availability
 
-Product                 | ARG  | BRA  | CHL  | COL  | MEX  | PER  | URY  | VEN  |
-:---------------------- |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |
-Payment button          |      |      |      |      |      |      |      |      |
-Checkout                | ✔    |      |      | ✔    |      |      |      |      |
-API                     | ✔    |      |      | ✔    |      |      |      |      |
+| Product                 | ARG  | BRA  | CHL  | COL  | MEX  | PER  | URY  | VEN  |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Payment button          |      |      |      |      |      |      |      |      |
+| Checkout                | ✔    |      |      | ✔    |      |      |      |      |
+| API                     | ✔    |      |      | ✔    |      |      |      |      |
 
 ## Service availability
 
-Service.                | ARG  | BRA  | CHL  | COL  | MEX  | PER  | URY  | VEN  |
-:---------------------- |:---: |:---: |:---: |:---: |:---: |:---: |:---: |:---: |
-Processing.             | ✔    |      |      | ✔    |      |      |      |      |
-Automatic Scoring       | ✔    |      |      | ✔    |      |      |      |      |
-Manual Review           | ✔    |      |      | ✔    |      |      |      |      |
+| Service.                | ARG  | BRA  | CHL  | COL  | MEX  | PER  | URY  | VEN  |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Processing.             | ✔    |      |      | ✔    |      |      |      |      |
+| Automatic Scoring       | ✔    |      |      | ✔    |      |      |      |      |
+| Manual Review           | ✔    |      |      | ✔    |      |      |      |      |

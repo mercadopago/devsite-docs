@@ -23,10 +23,10 @@ To trade with ticket, follow this steps:
 2. Access "Formas de Pagamento".
 3. Select the "Boleto bancário" tab.
 4. Click the "Boleto Bancário" option that contains "mercadopago_transparente" in the "Adquirente / Gateway" column.
-5. Fill in the data for the "Specific" group. For Client id and Client secret, see the [Credentials section]([FAKER][CREDENTIALS][URL_BASIC]).
+5. Fill in the data for the "Specific" group. For Client id and Client secret, see the [Credentials section]([FAKER][CREDENTIALS][URL]).
 6. Click "salvar".
 
-    ![Ez Commerce Configuration Page - Ticket](/images/ezcommerce-ticket-1.gif)
+![Ez Commerce Configuration Page - Ticket](/images/ezcommerce/ezcommerce-ticket-1.gif)
 
 ### Set up Credit Cards
 
@@ -43,6 +43,6 @@ To trade with credit cards, follow this steps:
 - Customizado: The interests must be configures in the plataform.
 7. Click "salvar".
 
-    ![Ez Commerce Setup Page - Credit Card](/images/ezcommerce-credit-card-1.gif)
+![Ez Commerce Setup Page - Credit Card](/images/ezcommerce/ezcommerce-credit-card-1.gif)
 
 >These steps should be performed for all credit card brands you want to enable.

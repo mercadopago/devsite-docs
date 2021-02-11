@@ -1,11 +1,11 @@
- # Advanced Integration
+# Advanced Integration
 
 ## Receive Payment Notifications
 
 IPN (Instant Payment Notification) notifications are the **automatic form of notice of the creation of new payments and updates of their status.** For example if they were approved, rejected or if they are pending.
 They allow you to manage your stock and keep your system in sync.
 
-<a href="https://www.mercadopago.com.ar/developers/en/guides/notifications/ipn/" target="_blank">Receive IPN notifications</a>
+[Receive IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn)
 
 ## Additional information for the preference
 
@@ -226,13 +226,13 @@ preference.Items.Add(
 
 At the end of the payment process you have the option to **redirect the buyer to your website.** In order to do this you need to add the `back_urls` attribute and define where you want the return to site button to redirect the buyer depending on the payment status. 
 
-If you want this redirection to be made automatically you need to also add the `auto_return` attribute with value `success`. 
+If you want this redirection to be made automatically you need to also add the `auto_return` attribute with value `approved`. 
 
 > NOTE
 >
 > Note
 >
-> Note that the `auto_return` only works for redirect and mobile mode. It does not work for [modal mode](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/integration/) since the buyer stays on your website.
+> Note that the `auto_return` only works for redirect and mobile mode. It does not work for [modal mode](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/integration) since the buyer stays on your website.
 
 ![autoreturn](/images/web-payment-checkout/autoreturn-img.png)
 
@@ -318,21 +318,21 @@ Preference preference = new Preference();
 
 A payment can be rejected because the issuer for the selected method detected a problem or because of non-compliance with security requirements.
 
-Avoid rejected payments with our recommendations and <a href="https://www.mercadopago.com.ar/developers/en/guides/manage-account/account/payment-rejections" target="_blank">improve the approval process</a>.
+Avoid rejected payments with our recommendations and [improve the approval process](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/payment-rejections).
 
 ## Cancellations and Returns
 
 Cancellations are made when the cash payment was not completed before the expiration date and the seller decides to cancel it.
 And the returns happen when the payment was made but the seller decides to cancel it totally or partially.
 
-You can find all the information in the <a href="https://www.mercadopago.com.ar/developers/en/guides/manage-account/account/cancellations-and-refunds" target="_blank"> Returns and Cancellations section</a>.
+You can find all the information in the [Returns and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
 
 ## Manage Chargebacks
 
 A _chargeback_ occurs when the buyer contacts the entity that issued the card and communicates that they do not recognize the payment.
 This means that the seller's money for that payment will be withheld from their Mercado Pago account until it is settled.
 
-<a href="https://www.mercadopago.com.ar/developers/en/guides/manage-account/account/chargebacks/" target="_blank"> Manage Chargebacks</a>
+[Manage Chargebacks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/chargebacks)
 
 ---
 
@@ -345,7 +345,7 @@ This means that the seller's money for that payment will be withheld from their 
 >
 > Set up your payment and adapt the Checkout Pro to your business.
 >
-> [Other functionalities](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/configurations/)
+> [Other functionalities](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations)
 
 > RIGHT_BUTTON
 >
@@ -353,4 +353,4 @@ This means that the seller's money for that payment will be withheld from their 
 >
 > Adapt the style of your brand in the shopping experience.
 >
-> [Customization](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/customizations/)
+> [Customization](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/customizations)

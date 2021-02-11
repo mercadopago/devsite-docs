@@ -22,13 +22,13 @@ Until now you received “x-www-form-urlencoded”, so you have to adapt the log
 
 > It is necessary that after receiving the notification we reply us a 200 immediately to avoid a resending of notification before 10 seconds.
 
-The JSON will have basic payment information. If you need more information, [perform a GET to the payment ID](https://www.mercadopago.com.br/developers/pt/reference/payments/_payments_id/get/).
+The JSON will have basic payment information. If you need more information, [perform a GET to the payment ID](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get).
 
 > It is necessary for your server to have HTTPS certificates.
 
 ## How to activate the new IPN notifications?
 
-From your Mercado Pago account you can [add IPN notifications](https://www.mercadopago.com.br/ipn-notifications).
+From your Mercado Pago account you can [add IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/ipn-notifications).
 
 > You must use the account in which you receive the payments from which you want to be notified.
 
@@ -60,7 +60,7 @@ You will also receive a JSON as follows:
 }
 ```
 
-> You can find more information on how to integrate notifications in the [IPN notification section](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn/).
+> You can find more information on how to integrate notifications in the [IPN notification section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn).
 
 ## What can I do if I don’t want IPN notifications?
 

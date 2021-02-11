@@ -6,7 +6,6 @@ sites_supported:
     - mco
     - mlc
     - mpe
-    - global
 ---
 # Receba Pagamentos
 
@@ -72,8 +71,8 @@ Depois você deverá adicionar os atributos das suas preferências de pagamento:
   $preference = new MercadoPago\Preference();
 
   $item = new MercadoPago\Item();
-  $item->title = "[FAKER][COMMERCE][PRODUCT_NAME]";
-  $item->quantity = [FAKER][NUMBER][BETWEEN][1,10];
+  $item->title = "Blue shirt";
+  $item->quantity = 10;
   $item->currency_id = "[FAKER][CURRENCY][ACRONYM]";
   $item->unit_price = [FAKER][COMMERCE][PRICE];
 
@@ -91,13 +90,13 @@ Preference preference = new Preference();
 
 Item item = new Item();
 item.setId("1234")
-    .setTitle("[FAKER][COMMERCE][PRODUCT_NAME]")
-    .setQuantity([FAKER][NUMBER][BETWEEN][1,10])
+    .setTitle("Blue shirt")
+    .setQuantity(10)
     .setCategoryId("[FAKER][CURRENCY][ACRONYM]")
     .setUnitPrice((float)[FAKER][COMMERCE][PRICE]);
 
 Payer payer = new Payer();
-payer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
+payer.setEmail("john@yourdomain.com");
 
 preference.setPayer(payer);
 preference.appendItem(item);
@@ -108,8 +107,8 @@ preference.save();
 var preference = {}
 
 var item = {
-  title: '[FAKER][COMMERCE][PRODUCT_NAME]',
-  quantity: [FAKER][NUMBER][BETWEEN][1,10],
+  title: 'Blue shirt',
+  quantity: 10,
   currency_id: '[FAKER][CURRENCY][ACRONYM]',
   unit_price: [FAKER][COMMERCE][PRICE]
 }
@@ -131,13 +130,13 @@ mercadopago.preferences.create(preference).then(function (data) {
 preference = MercadoPago::Preference.new()
 
 item = MercadoPago::Item.new()
-item.title="[FAKER][COMMERCE][PRODUCT_NAME]"
-item.quantity= [FAKER][NUMBER][BETWEEN][1,10]
+item.title="Blue shirt"
+item.quantity= 10
 item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
 item.unit_price = [FAKER][COMMERCE][PRICE]
 
 payer = MercadoPago::Payer.new()
-payer.email="[FAKER][INTERNET][FREE_EMAIL]"
+payer.email="john@yourdomain.com"
 
 preference.items = [item]
 preference.payer = payer
@@ -160,7 +159,7 @@ Quanto mais informações você nos enviar, melhor será a aprovação dos pagam
   "payer": {
     "name": "[FAKER][NAME][FIRST_NAME]",
     "surname": "[FAKER][NAME][LAST_NAME]",
-    "email": "[FAKER][INTERNET][FREE_EMAIL]",
+    "email": "john@yourdomain.com",
     "date_created": "2015-06-02T12:58:41.425-04:00",
     "phone": {
       "area_code": "[FAKER][PHONE_NUMBER][AREA_CODE]",
@@ -172,7 +171,7 @@ Quanto mais informações você nos enviar, melhor será a aprovação dos pagam
     },
     "address": {
       "street_name": "[FAKER][ADDRESS][STREET_NAME]",
-      "street_number": [FAKER][ADDRESS][BUILDING_NUMBER],
+      "street_number": 7304,
       "zip_code": "[FAKER][ADDRESS][ZIP_CODE]"
     }
   },
@@ -199,7 +198,7 @@ Map<String, Object> preferenceMap = new HashMap<>();
 preferenceMap.put("item_id", "1");
 preferenceMap.put("amount", new BigDecimal(10));
 preferenceMap.put("currency_id", "[FAKER][CURRENCY][ACRONYM]");
-preferenceMap.put("payer_email", "[FAKER][INTERNET][FREE_EMAIL]");
+preferenceMap.put("payer_email", "john@yourdomain.com");
 
 final Activity activity = this;
 LayoutUtil.showProgressLayout(activity);
@@ -231,7 +230,7 @@ NSDictionary *preferenceBody = @{
                                  @"amount" : @10,
                                  @"itemId" : @29334,
                                  @"customerId" : @207,
-                                 @"payerEmail" : @"[FAKER][INTERNET][FREE_EMAIL]" };
+                                 @"payerEmail" : @"john@yourdomain.com" };
 
 
 [CustomServer createCheckoutPreferenceWithUrl:@"https://your-base-url.com" uri:@"/your-create-preference-uri" bodyInfo:preferenceBody success:^(CheckoutPreference * checkoutPreference) {
@@ -250,7 +249,7 @@ Como exemplo, sugerimos que inicie o fluxo do Mercado Pago a partir de um botão
 
 [[[
 
-```android-xml
+```android
 ===
 1. Crie uma Atividade para inserir o botão (**MainActivity**, por exemplo).  
 2. Adicione um campo de texto para mostrar o resultado do pagamento.
@@ -507,7 +506,7 @@ As notificações informam automaticamente sobre seus novos pagamentos e atualiz
 
 Isto permitirá que você gerencie seu estoque e mantenha seu sistema sincronizado.
 
-Para mais informações, consulte a seção de [Notificações](https://www.mercadopago.com.br/developers/pt/guides/notifications/webhooks).
+Para mais informações, consulte a seção de [Notificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks).
 
 ## Teste a integração
 
@@ -515,10 +514,10 @@ Você pode testar sua integração antes de partir para a produção, a fim de v
 
 Para isso, deve-se utilizar usuários e cartões de teste.
 
-Para mais informações, consulte a seção de [Testes](https://www.mercadopago.com.br/developers/pt/guides/online-payments/mobile-checkout/testing).
+Para mais informações, consulte a seção de [Testes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/mobile-checkout/testing).
 
 
 ### Próximos passos
 
-- Visite a seção [Personalização](https://www.mercadopago.com.br/developers/pt/guides/online-payments/mobile-checkout/v3/personalization) para adequar o fluxo de pagamento às suas necessidades.
-- Para informações sobre como testar, vá para a seção [testando a integração](https://www.mercadopago.com.br/developers/pt/guides/online-payments/mobile-checkout/v3/testing).
+- Visite a seção [Personalização](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/mobile-checkout/v3/personalization) para adequar o fluxo de pagamento às suas necessidades.
+- Para informações sobre como testar, vá para a seção [testando a integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/mobile-checkout/v3/testing).

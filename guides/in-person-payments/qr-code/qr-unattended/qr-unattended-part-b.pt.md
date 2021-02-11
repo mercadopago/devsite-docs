@@ -20,24 +20,28 @@ sites_supported:
 Para integrar o modelo desatendido, é necessário: 
   
 1.  Criar o serviço que será invocado ao receber uma intenção de pagamento e sua lógica associada quando: 
-  * A. As informações do pedido **ainda não foram disponibilizadas**. 
-  * B. As informações do pedido **são disponibilizadas**. 
+
+    1.1 As informações do pedido **ainda não foram disponibilizadas**.
+
+    1.2 As informações do pedido **são disponibilizadas**.
 
 2. Declarar o URL de seu domínio a Mercado Pago.
 
 ## 1. Criar o serviço que será invocado para receber uma intenção de pagamento 
 
-Tem que **criar um serviço que será invocado por Mercado Pago cada vez que quiser realizar um pagamento** com um código QR.
+É necessário **criar um serviço que será invocado por Mercado Pago cada vez que quiser realizar um pagamento** com um código QR.
 
-Este serviço deve restituir as informações do pedido a cobrar. Por exemplo:  https://www.miempresa.com/pay-mp?storeid=6232&posid=1 
+Este serviço deve restituir as informações do pedido a cobrar. Por exemplo:
+
+> https://www.miempresa.com/pay-mp?storeid=6232&posid=1 
 
 O URL do serviço é declarado no campo URL do caixa (QR).
 
 ## Lógica do serviço 
 
-Implementa a seguinte lógica no serviço para suportar os casos a seguir: 
+Implemente a seguinte lógica no serviço para suportar os casos a seguir: 
 
-### A. As informações do pedido ainda não foram disponibilizadas
+### 1.1 As informações do pedido ainda não foram disponibilizadas
 
 Pode acontecer que as informações do pedido ainda não foram disponibilizadas ao querer realizar o pagamento. Por exemplo, durante o abastecimento de combustível. 
 
@@ -57,12 +61,10 @@ Nesses casos, o serviço deve responder uma mensagem de erro para que o usuário
 | ------------- | ------------------------------------------------------------ |
 | `in_process`     | Tem um pedido em processo, porém, ainda não foi possível determinar o valor a receber. |
 | `unavailable`           | Não tem pedido em processo ou pendente de pagamento.  |
-| `invalid`           | Os parâmetros adicionais (ID de estação, posição, etc.) fazem referência a uma localização desconhecida.  |
-| `timeout`           | O server do vendedor não conseguiu se comunicar com algum dos sistemas internos (por exemplo, a máquina de venda automática) e cancelou a operação. |
 
 O `message` é opcional, é uma explicação em texto plano que pode acompanhar o type declarado.
 
-### B. As informações da ordem foram disponibilizadas
+### 1.2. As informações da ordem foram disponibilizadas
 
 Se já existir uma ordem para receber, o serviço deve restituir suas informações. 
 
@@ -94,7 +96,7 @@ Deve utilizar o campo `external_reference` para poder identificar o pedido em se
 
 | Atributo            | Tipo (_type_)       |  Descripción               |
 | ------------- | ------------- | ------------------------------------------------------------ |
-| `collector_id` | _Long_     | Identificador da conta Mercado Pago onde os pagos serão creditados.  |
+| `collector_id` | _Long_     | Identificador da conta Mercado Pago onde os pagamentos serão creditados.  |
 | `sponsor_id` | _Long_           | Identificador da conta Mercado Pago do sistema integrador. |
 | `items.title` | _String_           | Título do produto. |
 | `items.currency_id` | _String (3)_           | Identificador de moeda no formato ISO-4217. |
@@ -125,7 +127,7 @@ Deve informar ao seu assessor técnico atribuído, o URL base de seu domínio ao
 >
 > Conheça as opções disponíveis para chegar à integração para o seguinte nível.
 >
-> [Integração avançada](https://www.mercadopago.com.br/developers/pt/guides/in-person-payments/qr-code/advanced-integration/)
+> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/advanced-integration)
 
 
 > RIGHT_BUTTON_RECOMMENDED_PT
@@ -134,4 +136,4 @@ Deve informar ao seu assessor técnico atribuído, o URL base de seu domínio ao
 >
 > Realiza os casos de uso mais frequentes para validar sua integração.
 >
-> [Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/in-person-payments/qr-code/integration-test/)
+> [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/integration-test)
