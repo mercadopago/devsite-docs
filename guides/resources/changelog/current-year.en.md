@@ -6,6 +6,20 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## February 2021
 
+### February 16th
+
+> CHANGELOG
+>
+> Fixed serialization of the ShipmentMode enum in the .NET SDK
+>
+> NEWS: NEWS
+>
+> PRODUCT: SDK .NET
+
+We have fixed ShipmentMode enum serialization to generate values accepted by the Preference API
+
+[Go to SDKs documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks)
+
 ### February 12th
 
 > CHANGELOG

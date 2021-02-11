@@ -6,6 +6,20 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Fevereiro 2021
 
+### February 16th
+
+> CHANGELOG
+>
+> Foi corrigida a serialização do enum ShipmentMode no SDK .NET
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: SDK .NET
+
+Corrigimos a serialização do enum ShipmentMode para gerar valores aceitos pela API de Preference
+
+[Go to SDKs documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks)
+
 ### 12 de fevereiro
 
 > CHANGELOG

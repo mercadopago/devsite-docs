@@ -6,6 +6,20 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Febrero 2021
 
+### February 16th
+
+> CHANGELOG
+>
+> Se corrigió la serialización de la enumeración ShipmentMode en el SDK .NET
+>
+> NEWS: NOVEDADES
+>
+> PRODUCT: SDK .NET
+
+Arreglamos la serialización de la enumeración ShipmentMode para generar valores aceptados por la API de Preference
+
+[Go to SDKs documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks)
+
 ### 12 de febrero
 
 > CHANGELOG
@@ -768,10 +782,10 @@ Renovamos la documentación para usar nuestras APIs de pagos. Agregamos un ejemp
 
 Para ayudarte a optimizar tus conciliaciones, implementamos una mejora en la generación de los rangos de fechas para reportes programados. El cambio aplica tanto para el reporte de Dinero retirado, como al reporte de Todas las transacciones. Desde el miércoles 1 de abril, para encontrar tus reportes programados, vas a tener que buscarlos por un segundo menos.
 
-| Filtros del `search`| Fecha actual | Nueva fecha |
-| --- | --- | --- |
-| begin_date | 01/01/2020 00:00:00 | 01/01/2020 00:00:00 |
-| end_date | 02/01/2020 00:00:00 | 01/01/2020 23:59:59 |
+| Filtros del `search` | Fecha actual        | Nueva fecha         |
+| -------------------- | ------------------- | ------------------- |
+| begin_date           | 01/01/2020 00:00:00 | 01/01/2020 00:00:00 |
+| end_date             | 02/01/2020 00:00:00 | 01/01/2020 23:59:59 |
 
 Tu nuevo parámetro quedaría de la siguiente forma:
 
