@@ -90,7 +90,6 @@ No artigo do [GitHub](https://github.com/mercadopago/point-android_integration#i
 >
 > Importante
 >
-
 > * Esta integração está disponível apenas para Android versão 2.8.0 ou superior.<br>
 > * Não disponível para iOS.
 

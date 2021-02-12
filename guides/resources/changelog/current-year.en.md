@@ -5,28 +5,6 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 ---
 ## February 2021
 
-### February 5th
-
-> CHANGELOG
->
-> New WooCommerce plugin version
->
-> NEW_VERSION: NEW VERSION
->
-> PRODUCT: WOOCOMMERCE
-
-We have released the new version 4.6.3 for WooCommerce.
-
-[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction)
-
-> GIT
->
-> GitHub
->
-> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.6.3) for further details regarding this release.
-
-## February 2021
-
 ### February 12th
 
 > CHANGELOG
@@ -52,6 +30,27 @@ We have changed our SDK NodeJs from **dx-nodejs** to **sdk-nodejs**.
 We have changed our SDK Java from **dx-java** to **sdk-java**.
 
 [Go to SDKs documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks)
+
+
+### February 5th
+
+> CHANGELOG
+>
+> New WooCommerce plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+
+We have released the new version 4.6.3 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.6.3) for further details regarding this release.
 
 ---
 

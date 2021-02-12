@@ -5,28 +5,6 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 ---
 ## Fevereiro 2021
 
-### 5 de fevereiro
-
-> CHANGELOG
->
-> Nova versão WooCommerce
->
-> NEW_VERSION: NOVA VERSÃO
->
-> PRODUCT: WOOCOMMERCE
-
-Lançamos a nova versão 4.6.3 para WooCommerce.
-
-[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
-
-> GIT
->
-> GitHub
->
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.6.3).
-
-## Fevereiro 2021
-
 ### 12 de fevereiro
 
 > CHANGELOG
@@ -52,6 +30,27 @@ Mudamos o nome de nossa SDK NodeJs de **dx-nodejs** para **sdk-nodejs**.
 Mudamos o nome de nossa SDK Java de **dx-java** para **sdk-java**.
 
 [Ir para a documentação das SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/sdks)
+
+### 5 de fevereiro
+
+> CHANGELOG
+>
+> Nova versão WooCommerce
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: WOOCOMMERCE
+
+Lançamos a nova versão 4.6.3 para WooCommerce.
+
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.6.3).
+
 
 ---
 
