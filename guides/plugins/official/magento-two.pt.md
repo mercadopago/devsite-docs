@@ -38,7 +38,7 @@ O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcion
 
 ## Instalação
 
-    Esse processo irá explicar a instalação do módulo Mercado Pago via Composer:
+Esse processo irá explicar a instalação do módulo Mercado Pago via Composer:
 
 **Instalação via Composer**
 
