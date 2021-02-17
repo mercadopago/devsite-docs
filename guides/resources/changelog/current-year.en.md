@@ -5,6 +5,32 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 ---
 ## February 2021
 
+### February 12th
+
+> CHANGELOG
+>
+> Changed the SDK NodeJs name
+>
+> NEWS: NEWS
+>
+> PRODUCT: SDK NODEJS
+
+We have changed our SDK NodeJs from **dx-nodejs** to **sdk-nodejs**.
+
+[Go to SDKs documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks)
+
+> CHANGELOG
+>
+> Changed the SDK Java name
+>
+> NEWS: NEWS
+>
+> PRODUCT: SDK JAVA
+
+We have changed our SDK Java from **dx-java** to **sdk-java**.
+
+[Go to SDKs documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks)
+
 ### February 11th
 
 > CHANGELOG
@@ -44,34 +70,6 @@ We have released the new version 4.6.3 for WooCommerce.
 > GitHub
 >
 > [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.6.3) for further details regarding this release.
-
-## February 2021
-
-### February 12th
-
-> CHANGELOG
->
-> Changed the SDK NodeJs name
->
-> NEWS: NEWS
->
-> PRODUCT: SDK NODEJS
-
-We have changed our SDK NodeJs from **dx-nodejs** to **sdk-nodejs**.
-
-[Go to SDKs documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks)
-
-> CHANGELOG
->
-> Changed the SDK Java name
->
-> NEWS: NEWS
->
-> PRODUCT: SDK JAVA
-
-We have changed our SDK Java from **dx-java** to **sdk-java**.
-
-[Go to SDKs documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks)
 
 ---
 

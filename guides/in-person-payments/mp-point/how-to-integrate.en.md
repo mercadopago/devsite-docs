@@ -89,10 +89,8 @@ In the [GitHub](https://github.com/mercadopago/point-android_integration#intent)
 >
 > Important
 >
-
 > * This integration is only available for Android version 2.8.0 or higher.<br>
 > * Not available for iOS.
-
 
 In order to integrate through our APIs, you have to enable the integration options in the Mercado Pago app. Run the following curl to do it:
 

@@ -5,6 +5,32 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 ---
 ## Febrero 2021
 
+### 12 de febrero
+
+> CHANGELOG
+>
+> Cambiado el nombre de la SDK NodeJs
+>
+> NEWS: NOVEDADES
+>
+> PRODUCT: SDK NODEJS
+
+Cambiamos el nombre de nuestra SDK NodeJs de **dx-nodejs** por **sdk-nodejs**.
+
+[Ir a documentación de las SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks)
+
+> CHANGELOG
+>
+> Cambiado el nombre de la SDK Java
+>
+> NEWS: NOVEDADES
+>
+> PRODUCT: SDK JAVA
+
+Cambiamos el nombre de nuestra SDK Java de **dx-java** por **sdk-java**.
+
+[Ir a documentación de las SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks)
+
 ### 11 de febrero
 
 > CHANGELOG
@@ -44,34 +70,6 @@ Lanzamos la nueva versión 4.6.3 para WooCommerce.
 > GitHub
 >
 > Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.6.3).
-
-## Febrero 2021
-
-### 12 de febrero
-
-> CHANGELOG
->
-> Cambiado el nombre de la SDK NodeJs
->
-> NEWS: NOVEDADES
->
-> PRODUCT: SDK NODEJS
-
-Cambiamos el nombre de nuestra SDK NodeJs de **dx-nodejs** por **sdk-nodejs**.
-
-[Ir a documentación de las SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks)
-
-> CHANGELOG
->
-> Cambiado el nombre de la SDK Java
->
-> NEWS: NOVEDADES
->
-> PRODUCT: SDK JAVA
-
-Cambiamos el nombre de nuestra SDK Java de **dx-java** por **sdk-java**.
-
-[Ir a documentación de las SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks)
 
 ---
 
