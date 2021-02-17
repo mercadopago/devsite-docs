@@ -13,17 +13,17 @@ Install the Mercado Pago module automatically, through the marketplace or from y
 
 It is important that you review the requirements to install our module. Then follow the steps that we indicate. It will only take you a few minutes!
 
-| Requirements                  | Description                                                                  	                |
-|-------------------------------|-----------------------------------------------------------------------------------------------|
-| Versions      	            | Prestashop 1.6.x - 1.7.x                                                                      |
-| Environment                  	| LAMP (Linux, Apache, MySQL, and PHP) or LNMP stack                                             |
-| System                     	| Linux x86, Windows x86-64                                                        	            |
-| Web Server                	| Apache 2.x, Nginx 1.7.x                                                               	    |
-| PHP Version                 	| PHP 5.6 to 7.1 for PrestaShop 1.6 <br> PHP 5.6 or higher for PrestaShop 1.7                   |
-| Database                   	| MySQL 5.6 or higher (Oracle or Percona)                                  	                    |
-| Extension Dependency      	| PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (for Webservices API)          |
-| Additional configuration      | safe_mode off * memory_limite larger than 256MB (512MB recommended)                           |
-| SSL                         	| SSL Certificate  	                                                                            |
+| Requirements | Description |
+| --- | --- |
+| Versions | Prestashop 1.6.x - 1.7.x |
+| Environment | LAMP (Linux, Apache, MySQL, and PHP) or LNMP stack |
+| System | Linux x86, Windows x86-64 |
+| Web Server | Apache 2.x, Nginx 1.7.x |
+| PHP Version | PHP 5.6 to 7.1 for PrestaShop 1.6 <br> PHP 5.6 or higher for PrestaShop 1.7 |
+| Database | MySQL 5.6 or higher (Oracle or Percona) |
+| Extension Dependency | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (for Webservices API) |
+| Additional configuration | safe_mode off * memory_limite larger than 256MB (512MB recommended) |
+| SSL | SSL Certificate |
 
 > WARNING
 >
@@ -78,4 +78,4 @@ Then execute the steps of a new installation to update your page with the latest
 > Connect your Mercado Pago account to the module and capture the payments you receive for your online sales.
 >
 > 
-> [Integrate](https://www.mercadopago.com.ar/developers/en/guides/plugins/prestashop/integration/)
+> [Integrate](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/integration)

@@ -4,7 +4,7 @@
 >
 > Pre-requisites
 >
-> * Have the [card data capture](https://www.mercadopago.com.ar/developers/en/guides/online-payments/web-tokenize-checkout/receiving-payment-by-card)implemented.
+> * Have the [card data capture](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/web-tokenize-checkout/receiving-payment-by-card) implemented.
 
 Customers and cards are the way to store card data of your customers **safely** to improve the shopping experience.
 
@@ -16,7 +16,7 @@ The *customers* represent your customers. The cards that you store will be valid
 
 To create a `Customer` and a `Card` at the same time it is necessary to send at least the `email` and `token` fields.
 
-The `token` is the one you capture when you [handle the answer](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card) of the *Web Tokenize Checkout*.
+The `token` is the one you capture when you [handle the answer](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card) of the *Web Tokenize Checkout*.
 
 
 > NOTE
@@ -51,7 +51,7 @@ import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Customer customer = new Customer();
-customer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
+customer.setEmail("john@yourdomain.com");
 customer.save();
 
 Card card = new Card();
@@ -158,7 +158,7 @@ For example:
 ```html
 <form action="/procesar-pago" method="POST">
   <script
-    src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
+    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00"
     data-customer-id="209277402-FqRqgEc3XItrxs"
@@ -241,7 +241,7 @@ For example:
 ```html
 <form action="/procesar-pago" method="POST">
   <script
-    src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
+    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00"
     data-customer-id="209277402-FqRqgEc3XItrxs"
@@ -395,7 +395,7 @@ Response:
 }
 ```
 
-## Search a _Customer_
+## Search a Customer
 
 In case you do not know what the `id` of your `Customer` is, you can use the `Customer Search` API by doing a `HTTP GET` request. The required parameter for this is `email`:
 
@@ -496,7 +496,7 @@ Response:
 }
 ```
 
-## Get the _Cards_ of a _Customer_
+## Get the Cards of a Customer
 
 You can get the complete list of `Cards` of a client by making a `HTTP GET` request:
 

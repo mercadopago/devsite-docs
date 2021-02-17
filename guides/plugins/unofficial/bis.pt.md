@@ -35,10 +35,10 @@ Com a conta do MercadoPago já criada, você deve informar os dados abaixo para 
 
 [Public key e Access token]([FAKER][CREDENTIALS][URL])
 
-> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/resources/faqs/credentials/).
+> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials).
 
 ### Canal de Atendimento:
 
-Email | Telefone
---|--
-http://cliente.bis2bis.com.br |(43) 3326-1500
+| E-mail | Telefone |
+| --- | --- |
+| http://cliente.bis2bis.com.br | (43) 3326-1500 |

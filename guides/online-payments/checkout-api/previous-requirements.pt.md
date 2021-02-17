@@ -12,7 +12,7 @@ As credenciais são as **chaves que te oferecemos para que possa configurar sua 
 
 Para poder encontrá-las, veja a [seção de Credenciais]([FAKER][CREDENTIALS][URL]).
 
-> Têm dúvidas sobre credenciais? Acesse nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials/).
+> Têm dúvidas sobre credenciais? Acesse nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials).
 
 ## Sempre utilize nossas bibliotecas
 É importante que sempre utilize nossas bibliotecas oficiais para sua integração. Isso permite cuidar dos dados sensíveis dos seus cliente, cumprir com os padrões de segurança requeridos e estar sempre atualizado.
@@ -44,7 +44,7 @@ Instale o [SDKs oficial](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/
 [[[
 ```php
 ===
-<a href="https://getcomposer.org/download" target="_blank"> Instale Composer</a> para usar o SDK.
+[Instale Composer](https://getcomposer.org/download) para usar o SDK.
 
 Execute o seguinte código na sua linha de comando:
 ===
@@ -52,33 +52,33 @@ php composer.phar require "mercadopago/dx-php"
 ```
 ```node
 ===
-Para instalar o SDK execute o seguinte código via linha de comandos do seu terminal usando <a href="https://www.npmjs.com/get-npm" target="_blank">npm</a>:
+Para instalar o SDK execute o seguinte código via linha de comandos do seu terminal usando [npm](https://www.npmjs.com/get-npm):
 ===
 npm install mercadopago
 ```
 ```java
 ===
-Para instalar o SDK no seu projeto <a href="http://maven.apache.org/install.html" target="_blank"> Maven </a> adicione a seguinte dependência no seu arquivo pom.xml e em seguida execute 'maven install'.
+Para instalar o SDK no seu projeto [Maven](http://maven.apache.org/install.html) adicione a seguinte dependência no seu arquivo pom.xml e em seguida execute 'maven install'.
 ===
 <dependency>
             <groupId> com.mercadopago </groupId>
-            <artifactId> dx-java </artifactId>
-            <version> 1.0.33 </version>
+            <artifactId> sdk-java </artifactId>
+            <version> 1.8.0 </version>
 </dependency>
 ```
 ```ruby
 ===
-O SDK de Mercado Pago está disponível como <a href="https://rubygems.org/gems/mercadopago-sdk" target="_blank"> gema</a>, para instá-la execute o seguinte código na sua linha de comandos:
+O SDK de Mercado Pago está disponível como [gema](https://rubygems.org/gems/mercadopago-sdk), para instá-la execute o seguinte código na sua linha de comandos:
 ===
 gem install mercadopago-sdk
 ```
 ```csharp
 ===
 ----[mlb]----
-Use <a href="https://docs.microsoft.com/pt-pt/nuget/install-nuget-client-tools" target="_blank"> NuGet</a> para instalar o SDK .NET de Mercado Pago.
+Use [NuGet](https://docs.microsoft.com/pt-pt/nuget/install-nuget-client-tools) para instalar o SDK .NET de Mercado Pago.
 ------------
 ----[mla, mlm, mco, mlc, mlu]----
-Use <a href="https://docs.microsoft.com/es-es/nuget/install-nuget-client-tools" target="_blank"> NuGet</a> para instalar el SDK .NET de Mercado Pago.
+Use [NuGet](https://docs.microsoft.com/es-es/nuget/install-nuget-client-tools) para instalar el SDK .NET de Mercado Pago.
 ------------
 Execute o seguinte comando no seu console do NuGet Package Manager:
 ===
@@ -88,34 +88,34 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 
 ## Conheça nossas Referências de API
 
-Se não pode utilizar nossos SDKs oficiais, tenha disponível toda a informação sobre consultas e respostas de dados para interagir diretamente com nossas APIs em [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments/post/).
+Se não pode utilizar nossos SDKs oficiais, tenha disponível toda a informação sobre consultas e respostas de dados para interagir diretamente com nossas APIs em [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments/post).
 
 ## Cumpra com os requisitos para ir a produção
 
-Ao finalizar sua integração, é necessário que tenha em conta todos os [requisitos para ir a produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/goto-production/).
+Ao finalizar sua integração, é necessário que tenha em conta todos os [requisitos para ir a produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/goto-production).
 Com esse processo, garante-se a segurança dos dados dos seus cliente, o cumprimento das normas e disposições legais de cada país e ofereça a melhor experiência de compra para suas vendas.
 
 Quando sua integração estiver pronta e quiser começar a receber pagamentos, complete o formulário para ir a produção na [seção de Credenciais]([FAKER][CREDENTIALS][URL]).
 
 ---
 ### Próximos passos
-
+----[mlb]----
 > LEFT_BUTTON_REQUIRED_PT
 >
-----[mlb]----
 > Integrar Checkout Transparente com cartão
-------------
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> Integrar Checkout API com cartão
-------------
 >
 > Construa e configure sua própria experiência de pagamentos.
 >
-----[mlb]----
-> [Integrar Checkout Transparente do Mercado Pago para cartão](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card/)
+> [Integrar Checkout Transparente do Mercado Pago para cartão](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card)
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-> [Integrar Checkout API do Mercado Pago para cartão](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card/)
+> LEFT_BUTTON_REQUIRED_PT
+>
+> Integrar Checkout API com cartão
+>
+> Construa e configure sua própria experiência de pagamentos.
+>
+> [Integrar Checkout API do Mercado Pago para cartão](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card)
 ------------
 
 > RIGHT_BUTTON_RECOMMENDED_PT
@@ -124,4 +124,4 @@ Quando sua integração estiver pronta e quiser começar a receber pagamentos, c
 >
 > Encontre toda a informação necessária para interagir com nossas APIs.
 >
-> [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/)
+> [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference)

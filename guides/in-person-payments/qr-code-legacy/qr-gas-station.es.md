@@ -18,9 +18,9 @@
 
 5. El usuario sigue el flujo de compra y confirma el pago.
 
-6. Inmediatamente luego de ser procesado el pago, enviamos a tu servidor una notificación [IPN](https://www.mercadopago.com.mx/developers/es/guides/notifications/ipn/) informando que hay una novedad.
+6. Inmediatamente luego de ser procesado el pago, enviamos a tu servidor una notificación [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn) informando que hay una novedad.
 
-7. Con el identificador del pago, puedes [buscar](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get/) el pago y continuar con tus procesos internos.
+7. Con el identificador del pago, puedes [buscar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_search/get) el pago y continuar con tus procesos internos.
 
    > Si el estatus es `approved` se debe acreditar el pago. En cambio si es `rejected`, la app reintentará el cobro solicitando otro medio de pago.
 
@@ -30,13 +30,13 @@
 
 Primero debes familiarizarte con los siguiente conceptos ya que los usarás durante la integración.
 
-| Atributo                    | Descripción                                                  |
-| --------------------------- | ------------------------------------------------------------ |
-| `ACCESS_TOKEN`              | Es el [token de acceso](https://www.mercadopago.com/mlm/account/credentials) de la cuenta de Mercado Pago a la cual se acreditarán los cobros. |
-| `COLLECTOR_ID`              | Es el número de usuario de la cuenta de Mercado Pago, son los últimos 9 dígitos de tu `access_token`, posterior al guión medio. |
-| `EXTERNAL_ID`               | Es el identificador único del surtidor. Es un código alfanumérico definido por el integrador, no puede contener espacios ni caracteres especiales y no se distinguen las mayúsculas de las minúsculas. |
-| `SPONSOR_ID`                | `COLLECTOR_ID` de la cuenta de Mercado Pago del integrador. Se debe crear una cuenta por marca (YPF, Shell, Axion, etc). |
-| `APIES`, `STORE`,`STORE_ID` | Identificador único de la estación de servicio.              |
+| Atributo | Descripción |
+| --- | --- |
+| `ACCESS_TOKEN` | Es el [token de acceso](https://www.mercadopago.com/mlm/account/credentials) de la cuenta de Mercado Pago a la cual se acreditarán los cobros. |
+| `COLLECTOR_ID` | Es el número de usuario de la cuenta de Mercado Pago, son los últimos 9 dígitos de tu `access_token`, posterior al guión medio. |
+| `EXTERNAL_ID` | Es el identificador único del surtidor. Es un código alfanumérico definido por el integrador, no puede contener espacios ni caracteres especiales y no se distinguen las mayúsculas de las minúsculas. |
+| `SPONSOR_ID` | `COLLECTOR_ID` de la cuenta de Mercado Pago del integrador. Se debe crear una cuenta por marca (YPF, Shell, Axion, etc). |
+| `APIES`, `STORE`,`STORE_ID` | Identificador único de la estación de servicio. |
 
 ## Objetos
 
@@ -167,7 +167,7 @@ Además de los conceptos anteriores, también debes conocer los objetos con los 
 
 - `status_detail`: Información detallada del estado actual o el motivo de rechazo.
 
-Consultar la [documentación completa](https://www.mercadopago.com.mx/developers/es/reference/payments/resource/) sobre este objeto en nuestra Referencia API.
+Consultar la [documentación completa](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/resource) sobre este objeto en nuestra Referencia API.
 
 ## Configuración inicial
 
@@ -196,18 +196,18 @@ En caso de error, ser regresará un código de estado `HTTP 400 (Bad Request)`, 
 
 **Donde**
 
-| Type        | Descripción                                                  |
-| ----------- | ------------------------------------------------------------ |
-| in_process  | Hay un pedido en proceso, aún no se puede determinar el monto a cobrar. |
-| unavailable | No hay pedido en proceso ni pendiente de pago.               |
-| invalid     | Los parámetros adicionales (id de estación, posición, etc.) hacen referencia a una ubicación desconocida. |
-| timeout     | El servidor de tu sistema no ha podido comunicarse con alguno de los otros sistemas (surtidor, POS, API de Mercado Pago) y ha abortado. |
+| Type | Descripción |
+| --- | --- |
+| in_process | Hay un pedido en proceso, aún no se puede determinar el monto a cobrar. |
+| unavailable | No hay pedido en proceso ni pendiente de pago. |
+| invalid | Los parámetros adicionales (id de estación, posición, etc.) hacen referencia a una ubicación desconocida. |
+| timeout | El servidor de tu sistema no ha podido comunicarse con alguno de los otros sistemas (surtidor, POS, API de Mercado Pago) y ha abortado. |
 
 El `message` es opcional, corresponde a una explicación en texto plano de la causa del problema.
 
 ### Notificar URL
 
-Ya sea en fase de pruebas o producción, se debe informar la URL a [Mercado Pago](https://www.mercadopago.com.mx/developers/es/support) para configurarla y comenzar a hacer pruebas.
+Ya sea en fase de pruebas o producción, se debe informar la URL a [Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support) para configurarla y comenzar a hacer pruebas.
 
 ## Cobros
 
@@ -236,12 +236,12 @@ https://api.mercadopago.com/pos \
 
 Luego de que el usuario realiza el pago podrás obtener los datos usando cualquiera de las siguientes formas:
 
-1. [IPN](https://www.mercadopago.com.mx/developers/es/guides/notifications/ipn/): Cuando el pago es creado, enviamos una notificación vía webhook a la URL configurada en la `notification_url` de la orden, deberás estar suscrito a las notificaciones tipo `merchant_order`.
-2. Hacer la [búsqueda del pago](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_search/get/) utilizando el `external_reference` como criterio de búsqueda.
+1. [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn): Cuando el pago es creado, enviamos una notificación vía webhook a la URL configurada en la `notification_url` de la orden, deberás estar suscrito a las notificaciones tipo `merchant_order`.
+2. Hacer la [búsqueda del pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_search/get) utilizando el `external_reference` como criterio de búsqueda.
 
 ## Devoluciones
 
-Habrán ocasiones en las que necesitarás realizar una [devolución](https://www.mercadopago.com.ar/developers/es/guides/manage-account/account/cancellations-and-refunds/) parcial o total de un pago.
+Habrán ocasiones en las que necesitarás realizar una [devolución](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds) parcial o total de un pago.
 
 **Devolución total**
 
@@ -272,18 +272,18 @@ Consulta los [datos de prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/devel
 
 **Escenarios a probar**
 
-| Caso                                                         | Resultado esperado                                           |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Caso | Resultado esperado |
+| --- | --- |
 | El usuario escanea un código válido antes de finalizar el pedido. | La app informa que hay que avisarle al empleado de playa y luego se queda esperando a que finalice la carga. |
-| El usuario escanea un código válido durante un pedido.       | La app informa que se está haciendo una carga y que se podrá pagar una vez que termine el despacho. |
+| El usuario escanea un código válido durante un pedido. | La app informa que se está haciendo una carga y que se podrá pagar una vez que termine el despacho. |
 | El usuario escanea un código válido pero la URL que tiene el QR no responde. | La app informa que la estación de servicio no puede operar con el medio de pago. |
-| El usuario escanea un código válido pero la URL tiene parámetros inválidos | La app informa que algo no salió bien.                       |
-| El usuario escanea un código válido, una vez finalizado el pedido. | Se muestra el checkout en el celular del usuario pagador.    |
-| El usuario escanea un código válido con pedido terminado y realiza el pago. | El PDV recibe la información del pago.                       |
+| El usuario escanea un código válido pero la URL tiene parámetros inválidos | La app informa que algo no salió bien. |
+| El usuario escanea un código válido, una vez finalizado el pedido. | Se muestra el checkout en el celular del usuario pagador. |
+| El usuario escanea un código válido con pedido terminado y realiza el pago. | El PDV recibe la información del pago. |
 
 ### Diccionario de errores
 
-[Aquí](https://www.mercadopago.com.mx/developers/es/guides/online-payments/checkout-api/handling-responses/) podrás encontrar nuestro diccionario de errores.
+[Aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/handling-responses) podrás encontrar nuestro diccionario de errores.
 
 ## Reportes
 

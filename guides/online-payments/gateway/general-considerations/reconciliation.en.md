@@ -2,7 +2,6 @@
 sites_supported:
   - mla
   - mco
-  - global
 indexable: false
 ---
 
@@ -20,9 +19,9 @@ You will find information below on how to reconcile your operations in Mercado P
 
 The easiest way is working with one of our partners:
 
-|Country|Partner|
-|---|---|
-|Argentina|[Increase](https://www.increasecard.com/mercadopago/)|
+| Country| Partner |
+| --- | --- |
+| Argentina | [Increase](https://www.increasecard.com/mercadopago/) |
 
 > We are working on adding more partners soon
 
@@ -81,18 +80,18 @@ Each transaction (payment) will have the reconciliation information in the `acqu
 
 ### Attributes
 
-|Attribute|Description|
-|---|---|
-|`authorization_code`| Authorization code |
-|`batch_closing_date`| Batch closing date |
-|`batch_number`| Batch number |
-|`date_created`| Creating date |
-|`date_last_updated`| Last updated date |
-|`operation`| Operation type |
-|`operation_status`| Operation status |
-|`refund_id`| Refund ID |
-|`terminal_number`| Terminal number |
-|`transaction_number`| Transaction number / Coupon number |
+| Attribute | Description |
+| --- | --- |
+| `authorization_code` | Authorization code |
+| `batch_closing_date` | Batch closing date |
+| `batch_number` | Batch number |
+| `date_created` | Creating date |
+| `date_last_updated` | Last updated date |
+| `operation` | Operation type |
+| `operation_status` | Operation status |
+| `refund_id` | Refund ID |
+| `terminal_number` | Terminal number |
+| `transaction_number` | Transaction number / Coupon number |
 
 > Is very important to mention that the information provided in the `acquirer_reconciliation` object may vary according to different use cases and depending on the acquirer.
 

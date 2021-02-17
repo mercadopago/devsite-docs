@@ -17,7 +17,7 @@ Este _fragmento de código javascript_ criará um botão de pagamento. Quando o 
 ```html
 <form action="https://www.meu-site.com/processar-pagamento" method="POST">
   <script
-    src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
+    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00">
   </script>
@@ -25,7 +25,7 @@ Este _fragmento de código javascript_ criará um botão de pagamento. Quando o 
 ```
 Você pode encontrar sua Public key na [seção "Credenciais"]([FAKER][CREDENTIALS][URL]).
 
-> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/resources/faqs/credentials/).
+> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials).
 
 ### Paso 3: Obter todos os dados
 
@@ -33,12 +33,12 @@ O *Web Tokenize Checkout* fará um `POST` para a URL que tenha definido no atrib
 
 #### Os dados são:
 
-Dado | Descrição
----- | ------------
-**token** | Identificador único do cartão tokenizado
-**payment_method_id** | Forma de pagamento escolhida pelo comprador
-**installments** | Quantidade de parcelas escolhidas pelo comprador
-**issuer_id** | ID emissor do cartão do comprador
+| Dado | Descrição |
+| --- | --- |
+| **token** | Identificador único do cartão tokenizado. |
+| **payment_method_id** | Forma de pagamento escolhida pelo comprador. |
+| **installments** | Quantidade de parcelas escolhidas pelo comprador. |
+| **issuer_id** | ID emissor do cartão do comprador. |
 
 _Você não receberá o **transaction_amount** nem o **payer.email** por questões de segurança._
 
@@ -79,7 +79,7 @@ issuer_id = Request["issuer_id"]
 
 ### Passo 4: Realizar o pagamento
 
-Para realizar o pagamento, deverá efetuar uma chamada a API utilizando o [SDK do Mercado Pago](https://www.mercadopago.com.br/developers/pt/guides/sdks) que corresponda a linguagem de programação que está utilizando em seu site.
+Para realizar o pagamento, deverá efetuar uma chamada a API utilizando o [SDK do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/sdks) que corresponda a linguagem de programação que está utilizando em seu site.
 
 Somente deverá incluir uma *chamada à API* incluindo os dados que recebeu do checkout:
 
@@ -91,14 +91,14 @@ Somente deverá incluir uma *chamada à API* incluindo os dados que recebeu do c
     MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
     //...
     $payment = new MercadoPago\Payment();
-    $payment->transaction_amount = [FAKER][NUMBER][BETWEEN][100, 200];
+    $payment->transaction_amount = 100;
     $payment->token = $token;
-    $payment->description = "[FAKER][COMMERCE][PRODUCT_NAME]";
+    $payment->description = "Blue shirt";
     $payment->installments = $installments;
     $payment->payment_method_id = $payment_method_id;
     $payment->issuer_id = $issuer_id;
     $payment->payer = array(
-    "email" => "[FAKER][INTERNET][FREE_EMAIL]"
+    "email" => "john@yourdomain.com"
     );
     // Armazena e envia o pagamento
     $payment->save();
@@ -112,14 +112,14 @@ Somente deverá incluir uma *chamada à API* incluindo os dados que recebeu do c
 MercadoPago.SDK.setAccessToken("ENV_ACCESS_TOKEN");
 //...
 Payment payment = new Payment();
-payment.setTransactionAmount([FAKER][NUMBER][BETWEEN][100, 200]f)
+payment.setTransactionAmount(100f)
        .setToken(token)
-       .setDescription("[FAKER][COMMERCE][PRODUCT_NAME]")
+       .setDescription("Blue shirt")
        .setInstallments(installments)
        .setPaymentMethodId(payment_method_id)
        .setIssuerId(issuer_id)
        .setPayer(new Payer()
-         .setEmail("[FAKER][INTERNET][FREE_EMAIL]"));
+         .setEmail("john@yourdomain.com"));
 // Armazena e envia o pagamento
 payment.save();
 //...
@@ -132,22 +132,22 @@ var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
 var payment_data = {
-  transaction_amount: [FAKER][NUMBER][BETWEEN][100, 200],
+  transaction_amount: 100,
   token: token,
-  description: '[FAKER][COMMERCE][PRODUCT_NAME]',
+  description: 'Blue shirt',
   installments: installments,
   payment_method_id: payment_method_id,
   issuer_id: issuer_id,
   payer: {
-    email: '[FAKER][INTERNET][FREE_EMAIL]'
+    email: 'john@yourdomain.com'
   }
 };
 
 // Armazena e envia o pagamento
-mercadopago.payment.save(payment).then(function (data) {
+mercadopago.payment.save(payment_data).then(function (data) {
   // ...    
   // Imprime o status do pagamento
-  Console.log(payment.status);
+  Console.log(data.status);
 }).catch(function (error) {
   // ...
 });
@@ -158,14 +158,14 @@ require 'mercadopago'
 MercadoPago::SDK.access_token = "ENV_ACCESS_TOKEN";
 
 payment = MercadoPago::Payment.new()
-payment.transaction_amount = [FAKER][NUMBER][BETWEEN][100, 200]
+payment.transaction_amount = 100
 payment.token = token
-payment.description = '[FAKER][COMMERCE][PRODUCT_NAME]'
+payment.description = 'Blue shirt'
 payment.installments = installments
 payment.payment_method_id = payment_method_id
 payment.issuer_id = issuer_id
 payment.payer = {
-  email: "[FAKER][INTERNET][FREE_EMAIL]"
+  email: "john@yourdomain.com"
 }
 # Armazena e envia o pagamento
 payment.save()
@@ -180,14 +180,14 @@ MercadoPago.SDK.SetAccessToken(ENV_ACCESS_TOKEN);
 //...
 Payment payment = new Payment()
 {
-    TransactionAmount = float.Parse("[FAKER][NUMBER][BETWEEN][100, 200]"),
+    TransactionAmount = float.Parse("100"),
     Token = token,
-    Description = "[FAKER][COMMERCE][PRODUCT_NAME]",
+    Description = "Blue shirt",
     Installments = installments,
     PaymentMethodId = payment_method_id,
     IssuerId = issuer_id,
     Payer = new Payer(){
-        Email = "[FAKER][INTERNET][FREE_EMAIL]"
+        Email = "john@yourdomain.com"
     }
 };
 // Armazena e envia o pagamento
@@ -223,8 +223,8 @@ Retorno:
 
 ### Cartões de teste
 
-Para realizar pagamentos de teste (com suas credenciais de TEST), é necessário que utilize [cartões de teste](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/testing).
+Para realizar pagamentos de teste (com suas credenciais de TEST), é necessário que utilize [cartões de teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/testing).
 
 ### Promoções
 
-Recomendamos incluir o [link de promoções](https://www.mercadopago.com.br/promocoes) do **Mercado Pago**, ou então implementar um de nossos [banners de formas de pagamento](https://www.mercadopago.com.ar/developers/pt/guides/resources/banners/introduction/).
+Recomendamos incluir o [link de promoções](https://www.mercadopago.com.br/promocoes) do **Mercado Pago**, ou então implementar um de nossos [banners de formas de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/introduction).

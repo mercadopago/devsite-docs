@@ -4,13 +4,13 @@
 >
 > Note
 >
-> Avoid rejected payments with our recommendations to [improve the approval process](https://www.mercadopago.com.ar/developers/en/guides/manage-account/account/payment-rejections).
+> Avoid rejected payments with our recommendations to [improve the approval process](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/payment-rejections).
 
 In the event that a payment is rejected you can offer the buyer the option to retry it and recover the sale.
 
 At that moment you will receive the response status *rejected* (`rejected`) and it is advisable to inform the user of said status.
 
-Along with the communication you can also offer the possibility of re-entering the card data, **using the _Web Tokenize Checkout_ again**. You also have the opportunity to [change the button text](https://www.mercadopago.com.ar/developers/en/guides/online-payments/web-tokenize-checkout/personalization) using the `data-button-label` attribute to complement the communication.
+Along with the communication you can also offer the possibility of re-entering the card data, **using the _Web Tokenize Checkout_ again**. You also have the opportunity to [change the button text](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/web-tokenize-checkout/personalization) using the `data-button-label` attribute to complement the communication.
 
 For example:
 
@@ -20,7 +20,7 @@ For example:
 
 <form action="/procesar-pago" method="POST">
   <script
-    src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
+    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00"
     data-button-label="Retry"> <!-- Button text -->
@@ -28,7 +28,7 @@ For example:
 </form>
 ```
 
-![Retrieve the sale button Mercado Pago](/images/cow-recovery-page.png)
+![Retrieve the sale button Mercado Pago](/images/cow/cow-recovery-page.png)
 
 ## Checkout open by default
 
@@ -41,7 +41,7 @@ For example:
 ```html
 <form action="/procesar-pago" method="POST">
   <script
-    src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
+    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00"
     data-open="true"> <!-- open by default -->

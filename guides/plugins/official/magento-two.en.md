@@ -2,34 +2,34 @@
 
 ## Requirements to integrate
 
-Requirement                 | Description
-----------------------------| -------------------------------------------------------------------------
-Magento Version             | 2.x
-Environment                 | LAMP (Linux, Apache, MySQL, and PHP)<br/>LNMP stack
-Operational System          | Linux x86-64
-Memory requirement          | Minimum 2GB of RAM
-Web Server                  | Apache 2.x<br/>Nginx 1.7.x
-PHP Versions                | 5.6.x<br/>7.0.2<br/>7.0.6–7.0.x<br/>
-MySQL Version               | MySQL 5.6<br/>MariaDB and Percona are compatible with Magento because we support MySQL 5.6 APIs.
-Extension Dependencies      | bc-math (Magento Commerce only)<br/>curl<br/>gd, ImageMagick 6.3.7 (or later) or both<br/>intl<br/>bstring<br/>mcrypt<br/>hash<br/>openssl<br/>PDO/MySQL<br/>SimpleXML<br/>soap<br/>xml<br/>xsl<br/>zip<br/>
-PHP 7 only                  | json<br/>iconv
-SSL                         | It is a requirement that you have an SSL certificate.<br/>During testing in Sandbox you will be able to run at http.
+| Requirement | Description |
+| --- | --- |
+| Magento Version | 2.x |
+| Environment | LAMP (Linux, Apache, MySQL, and PHP)<br/>LNMP stack |
+| Operational System | Linux x86-64 |
+| Memory requirement | Minimum 2GB of RAM |
+| Web Server | Apache 2.x<br/>Nginx 1.7.x |
+| PHP Versions | 5.6.x<br/>7.0.2<br/>7.0.6–7.0.x<br/> |
+| MySQL Version | MySQL 5.6<br/>MariaDB and Percona are compatible with Magento because we support MySQL 5.6 APIs. |
+| Extension Dependencies | bc-math (Magento Commerce only)<br/>curl<br/>gd, ImageMagick 6.3.7 (or later) or both<br/>intl<br/>bstring<br/>mcrypt<br/>hash<br/>openssl<br/>PDO/MySQL<br/>SimpleXML<br/>soap<br/>xml<br/>xsl<br/>zip<br/> |
+| PHP 7 only | json<br/>iconv |
+| SSL | It is a requirement that you have an SSL certificate.<br/>During testing in Sandbox you will be able to run at http. |
 
 
 ## Features
 
 The module of Mercado Pago to Magento is integrated with the features and payment solutions:
 
-* [Basic Checkout (Checkout Pro)](https://www.mercadopago.com.br/developers/en/guides/online-payments/checkout-pro/introduction/)
-    * [Split payments (Two cards)](https://www.mercadopago.com.br/developers/en/guides/online-payments/checkout-pro/configurations/#bookmark_payments_with_two_credit_cards)
-    * [Refunds of Payments](https://www.mercadopago.com.br/developers/en/guides/manage-account/account/cancellations-and-refunds/)
+* [Basic Checkout (Checkout Pro)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction)
+    * [Split payments (Two cards)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations/#bookmark_payments_with_two_credit_cards)
+    * [Refunds of Payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds)
 
 
 * Custom Checkout
-    * [Payment with Credit Card](https://www.mercadopago.com.br/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card/)
-    * [One Click Pay (Customers and Cards)](https://www.mercadopago.com.br/developers/en//guides/online-payments/checkout-api/advanced-integration/)
-    * [Paid with other payment methods](https://www.mercadopago.com.br/developers/en/guides/online-payments/checkout-api/other-payment-ways/)
-    * [Refunds of Payments](https://www.mercadopago.com.br/developers/en/guides/manage-account/account/cancellations-and-refunds)
+    * [Payment with Credit Card](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card)
+    * [One Click Pay (Customers and Cards)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/advanced-integration)
+    * [Paid with other payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways)
+    * [Refunds of Payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds)
 
 
 * Other features

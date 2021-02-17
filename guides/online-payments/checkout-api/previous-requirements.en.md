@@ -11,7 +11,7 @@ Your credentials are the **keys we provide you to configure your integrations**.
 
 To find them, go to the [Credentials section]([FAKER][CREDENTIALS][URL]).
 
-> Do you have any questions about credentials? Check our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/faqs/credentials/).
+> Do you have any questions about credentials? Check our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/faqs/credentials).
 
 
 ## Always use our libraries
@@ -44,7 +44,7 @@ Install an [official SDK](https://www.mercadopago[FAKER][URL][DOMAIN]/developers
 [[[
 ```php
 ===
-<a href="https://getcomposer.org/download" target="_blank"> Install Composer</a> to use the SDK.
+[Install Composer](https://getcomposer.org/download) to use the SDK.
 
 Then run the following code on the command line:
 ===
@@ -52,33 +52,33 @@ php composer.phar require "mercadopago/dx-php:dev-master"
 ```
 ```node
 ===
-To install the SDK you must execute the following code on the command line of your terminal using <a href="https://www.npmjs.com/get-npm" target="_blank">npm</a>:
+To install the SDK you must execute the following code on the command line of your terminal using [npm](https://www.npmjs.com/get-npm):
 ===
 npm install mercadopago
 ```
 ```java
 ===
-To install the SDK in your <a href="http://maven.apache.org/install.html" target="_blank"> Maven </a> project, add the following dependency in your pom.xml file and then run ´maven install´.
+To install the SDK in your [Maven](http://maven.apache.org/install.html) project, add the following dependency in your pom.xml file and then run ´maven install´.
 ===
 <dependency>
             <groupId> com.mercadopago </groupId>
-            <artifactId> dx-java </artifactId>
-            <version> 1.0.33 </version>
+            <artifactId> sdk-java </artifactId>
+            <version> 1.8.0 </version>
 </dependency>
 ```
 ```ruby
 ===
-The Mercado Pago SDK is available as a <a href="https://rubygems.org/gems/mercadopago-sdk" target="_blank"> gema</a>, to install it you must execute the following code on the command line:
+The Mercado Pago SDK is available as a [gem](https://rubygems.org/gems/mercadopago-sdk), to install it you must execute the following code on the command line:
 ===
 gem install mercadopago-sdk
 ```
 ```csharp
 ===
 ----[mlb]----
-Use <a href="https://docs.microsoft.com/pt-pt/nuget/install-nuget-client-tools" target="_blank"> NuGet</a> to install the Mercado Pago SDK .NET.
+Use [NuGet](https://docs.microsoft.com/pt-pt/nuget/install-nuget-client-tools) to install the Mercado Pago SDK .NET.
 ------------
 ----[mla, mco, mlu, mlc, mlm]----
-Use <a href="https://docs.microsoft.com/es-es/nuget/install-nuget-client-tools" target="_blank"> NuGet</a> to install the Mercado Pago SDK .NET.
+Use [NuGet](https://docs.microsoft.com/es-es/nuget/install-nuget-client-tools) to install the Mercado Pago SDK .NET.
 ------------
 To do this, run the following command in the NuGet Package Manager console:
 ===
@@ -88,11 +88,11 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 
 ## Learn our API References
 
-If you can't use our official SDKs, you will have all the information about data queries and responses available to interact directly with our APIs in [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post/).
+If you can't use our official SDKs, you will have all the information about data queries and responses available to interact directly with our APIs in [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post).
 
 ## Meet the requirements for the production environment
 
-When you develop your integration, consider all the [requirements for the production environment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production/). This process can ensure your customer's data security, compliance with legal standards or provisions in each country, and the best shopping experience for your customers.
+When you develop your integration, consider all the [requirements for the production environment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production). This process can ensure your customer's data security, compliance with legal standards or provisions in each country, and the best shopping experience for your customers.
 
 Once your integration is ready, you just need to fill out the form for to go to production in the [Credentials section]([FAKER][CREDENTIALS][URL]) to start receiving payments.
 
@@ -106,7 +106,7 @@ Once your integration is ready, you just need to fill out the form for to go to 
 >
 > Create and configure your own payment experience.
 >
-> [Integrate Checkout API for cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card/)
+> [Integrate Checkout API for cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card)
 
 
 > RIGHT_BUTTON_RECOMMENDED_EN
@@ -115,4 +115,4 @@ Once your integration is ready, you just need to fill out the form for to go to 
 >
 > Find all the information required to interact with our APIs.
 >
-> [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/)
+> [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference)

@@ -50,7 +50,7 @@ Successful answer will be an `HTTP Status 200 OK`  and it will return complete a
 > 
 > Nota
 > 
-> See [reference](https://www.mercadopago.com.ar/developers/es/guides/payments/advanced-payments/wallet-device-fingerprint-sample) or complete example about Fingerprint and implementation via SDK.
+> See [reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/advanced-payments/wallet-device-fingerprint-sample) or complete example about Fingerprint and implementation via SDK.
 
 You must capture `id` value from the response in order to send it into `X-Device-Session-Id` header afterwards.
 

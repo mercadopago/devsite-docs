@@ -4,13 +4,13 @@
 >
 > Nota
 >
-> Evite pagamentos recusados com as nossas recomendações para [melhorar a aprovação de seus pagamentos](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/account/payment-rejections).
+> Evite pagamentos recusados com as nossas recomendações para [melhorar a aprovação de seus pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/payment-rejections).
 
 No caso de um pagamento ser rejeitado, você pode oferecer ao comprador a opção de tentar novamente e recuperar a venda.
 
 Neste momento receberá como resposta o estado do pagamento *rejeitado* (`rejected`) e é recomendado informar ao usuário tal estado.
 
-Junto com a comunicação você pode oferecer também a possibilidade de voltar a inserir os dados do cartão, **usando novamente o _Web Tokenize Checkout_**. Também tem a possibilidade de [trocar o texto do botão](https://www.mercadopago.com.br/developers/pt/guides/online-payments/web-tokenize-checkout/personalization) mediante o atributo `data-button-label` para complementar a comunicação.
+Junto com a comunicação você pode oferecer também a possibilidade de voltar a inserir os dados do cartão, **usando novamente o _Web Tokenize Checkout_**. Também tem a possibilidade de [trocar o texto do botão](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/web-tokenize-checkout/personalization) mediante o atributo `data-button-label` para complementar a comunicação.
 
 Por exemplo:
 
@@ -20,7 +20,7 @@ Por exemplo:
 
 <form action="/procesar-pago" method="POST">
   <script
-    src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
+    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00"
     data-button-label="Tente Novamente"> <!-- Texto do botão -->
@@ -28,7 +28,7 @@ Por exemplo:
 </form>
 ```
 
-![Retrieve the sale button Mercado Pago](/images/cow-recovery-page__pt.png)
+![Retrieve the sale button Mercado Pago](/images/cow/cow-recovery-page__pt.png)
 
 ## Checkout aberto por padrão
 
@@ -41,7 +41,7 @@ Por exemplo:
 ```html
 <form action="/processar-pagamento" method="POST">
   <script
-    src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
+    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00"
     data-open="true"> <!-- Aberto por padrão -->

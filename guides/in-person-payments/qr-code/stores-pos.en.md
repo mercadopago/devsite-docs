@@ -15,7 +15,7 @@ sites_supported:
 
 **Stores** and **Points of Sale** are the concepts you’ll use on Mercado Pago to manage your business and keep track of your accounts. You can have several POS in one Store.
 
-> ![Cajas y Sucursales](/images/stores_pos.en.png) 
+![Cajas y Sucursales](/images/mobile/stores_pos.en.png) 
 
 
 ## Stores
@@ -75,7 +75,7 @@ https://api.mercadopago.com/users/$USER_ID/stores \
 ```
 ]]]
 
-Learn more with our [API reference](https://www.mercadopago.com.ar/developers/en/reference/stores/_users_user_id_stores/post/).
+Learn more with our [API reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/stores/_users_user_id_stores/post).
 
 > WARNING
 >
@@ -94,10 +94,10 @@ It is a **point of sale** that exists in a branch or physical store. Each POS wi
 
 Once you created your stores, the next step is to generate your POS. Some considerations:
 
-| Term       |  Description  | 
-| ------------- | -------------------------------------------- |
-| `EXTERNAL_STORE_ID`     | Links a Point of Sale (POS) to a store. This is a required field and same as the Store *external_id* previously created. |
-| `EXTERNAL_ID`           | Identifies each Point of Sale (POS). This is required and can’t be modified nor repeated on the same Mercado Pago account. |
+| Term |  Description |
+| --- | --- |
+| `EXTERNAL_STORE_ID` | Links a Point of Sale (POS) to a store. This is a required field and same as the Store *external_id* previously created. |
+| `EXTERNAL_ID` | Identifies each Point of Sale (POS). This is required and can’t be modified nor repeated on the same Mercado Pago account. |
 
 
 [[[
@@ -116,7 +116,13 @@ https://api.mercadopago.com/pos \
 ```
 ]]]
 
-Learn more with our [API Reference](https://www.mercadopago.com.ar/developers/en/reference/pos/_pos/post/).
+Learn more with our [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/pos/_pos/post).
+
+> WARNING 
+> 
+> Important
+> 
+> After April 20th, 2021, Point of Sales can not be created without an assigned store.
 
 Once Point of Sale is created, you’ll be able to see the QR files in the _Response_ section, along with other relevant data. 
 
@@ -130,4 +136,4 @@ Once Point of Sale is created, you’ll be able to see the QR files in the _Resp
 >
 > Learn step by step how to integrate this model.
 >
-> [Integrate QR attended model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/qr-attended-part-b/)
+> [Integrate QR attended model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/qr-attended-part-b)

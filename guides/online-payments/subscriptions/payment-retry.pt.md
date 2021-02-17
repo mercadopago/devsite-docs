@@ -11,14 +11,25 @@ Ao automatizar a recorrência de suas cobranças, são criados pagamentos autori
 
 ## Status de pagamento
 
+----[mla]----
+
 Três alternativas podem surgir na hora em que a parcela é cobrada com base no resultado do seu pagamento:
 
-* __O pagamento é feito com sucesso__ assim a parcela será `processed` processada no `status` processado e não será mais tentado novamente. 
+------------
+
+----[mlb, mlm]----
+
+Duas alternativas podem surgir na hora em que a parcela é cobrada com base no resultado do seu pagamento:
+
+------------
+
+* __O pagamento é feito com sucesso__ assim a parcela será processada no status `processed` e não será mais tentado novamente. 
+
 ----[mla]----
 * __O pagamento está sendo processado__ portanto, a parcela permanecerá pendente em status `waiting for gateway` até que o pagamento seja resolvido.
 ------------
-* __O pagamento é recusado__ portanto, a parcela permanecerá em status de `recycling` e quando a parcela não estiver vencida ou não tiver atingido o número máximo de novas tentativas. Caso contrário, permanecerá em processada com o status `processed`.
 
+* __O pagamento é recusado__ portanto, a parcela permanecerá em status de `recycling` e quando a parcela não estiver vencida ou não tiver atingido o número máximo de novas tentativas. Caso contrário, permanecerá em processada com o status `processed`.
 
 ## Pagamentos recusados
 
@@ -54,7 +65,7 @@ Caso a parcela não possa ser cobrada na quarta tentativa, ela estará automatic
 >
 > Atualize, altere ou cancele suas assinaturas.
 >
-> [Integração avançada](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/advanced-integration/)
+> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/advanced-integration)
 
 > RIGHT_BUTTON
 >
@@ -62,4 +73,4 @@ Caso a parcela não possa ser cobrada na quarta tentativa, ela estará automatic
 >
 > Verifique se suas assinaturas estão configuradas corretamente com os usuários de teste.
 >
-> [Testes](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/testing/)
+> [Testes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/testing)

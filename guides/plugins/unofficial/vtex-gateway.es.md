@@ -256,7 +256,7 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 <br>
 
 | Campos | Datos necesarios |
-|---|---|
+| --- | --- |
 | Nombre de afiliación | Define el nombre que identificará a tu afiliación. |
 | OAuth login | No es necesario. Dejar como está. |
 | PublicKey | Refiere a las credenciales de tu cuenta de Mercado Pago. Completa con tu [clave pública]([FAKER][CREDENTIALS][URL]). |
@@ -268,16 +268,15 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | CountryName | Colombia. |
 | SoftDescriptor | Dejar en blanco.|
 | Description | Escribe una breve descripción de tu negocio (opcional). |
-| CategoryId | Elige la categoría de tus productos.|
+| CategoryId | Elige la categoría de tus productos. |
 | Financial Institution | Dejar en blanco. |
 | External Installments | No. |
 | Antifraud | Elegir `Yes`. |
 | Time Zone | Indica la región que define tu horario local. |
-| OrderExpirationHours | Elegir `1 hora`. Este campo define cada cuántas horas quieres que el sistema verifique el estado del pedido antes de que caduque. Si esta opción no se cumple, se configura al patrón de 192 horas.|
+| OrderExpirationHours | Elegir `1 hora`. Este campo define cada cuántas horas quieres que el sistema verifique el estado del pedido antes de que caduque. Si esta opción no se cumple, se configura al patrón de 192 horas. |
 | MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado Pago. |
 | Categoria Principal | Selecciona la categoría correspondiente a su tienda. |
 | Early Security Capture | Puede desactivar la función o elegir en cuánto tiempo desea realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
-<br>
 
 
 > WARNING
@@ -410,7 +409,7 @@ Los datos más significativos son los siguientes:
 | `first_six_digits` | 450995 | Bin de la tarjeta. |
 | `processing_mode` | agregador | Modo de procesamiento del pago. |
 
-> Para conocer el detalle sobre un pago rechazado, revisa el `status_detail` y busca la información en los [manejos de respuesta de error](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/handling-responses/).
+> Para conocer el detalle sobre un pago rechazado, revisa el `status_detail` y busca la información en los [manejos de respuesta de error](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/handling-responses).
 
 ## Errores comunes
 

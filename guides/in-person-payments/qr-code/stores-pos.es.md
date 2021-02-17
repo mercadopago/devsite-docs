@@ -15,7 +15,7 @@ sites_supported:
 
 Las **sucursales** y **cajas** son importantes para recibir pagos presenciales con QR. Te permiten crear tu tienda y asignar sus puntos de venta.
 
-> ![Cajas y Sucursales](/images/stores_pos.es.png) 
+![Cajas y Sucursales](/images/mobile/stores_pos.es.png) 
 
 
 ## Sucursales
@@ -76,7 +76,7 @@ https://api.mercadopago.com/users/$USER_ID/stores \
 ```
 ]]]
 
-Puedes obtener más información en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/stores/_users_user_id_stores/post/).
+Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/stores/_users_user_id_stores/post).
 
 > WARNING
 > 
@@ -94,10 +94,10 @@ Es un **punto de venta** que existe en una sucursal o tienda física. Cada caja 
 
 Al tener creadas tus sucursales, puedes crear tus cajas. Ten en cuenta lo siguiente:
 
-| Término       |  Descripción                     |
-| ------------- | ---------------------------------------------------- |
-| `EXTERNAL_STORE_ID`     | Vincula la caja con la sucursal. Es un campo requerido y es el mismo *external_id* de la Sucursal previamente creada. |
-| `EXTERNAL_ID`           | Identifica unívocamente cada caja. Es requerido y no se puede modificar, tampoco repetir en una misma cuenta de Mercado Pago. También lo puedes encontrar como `EXTERNAL_POS_ID`.|
+| Término | Descripción |
+| --- | --- |
+| `EXTERNAL_STORE_ID` | Vincula la caja con la sucursal. Es un campo requerido y es el mismo *external_id* de la Sucursal previamente creada. |
+| `EXTERNAL_ID` | Identifica unívocamente cada caja. Es requerido y no se puede modificar, tampoco repetir en una misma cuenta de Mercado Pago. También lo puedes encontrar como `EXTERNAL_POS_ID`. |
 
 
 [[[
@@ -116,7 +116,13 @@ https://api.mercadopago.com/pos \
 ```
 ]]]
 
-Puedes obtener más información en la [Referencias de API](https://www.mercadopago.com.ar/developers/es/reference/pos/_pos/post/).
+Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/pos/_pos/post).
+
+> WARNING 
+> 
+> Importante
+> 
+> A partir del 20 de abril de 2021, no se podrán crear cajas sin una sucursal asignada. 
 
 Una vez creada la caja, podremos ver en el _Response_ los links a distintos entregables del QR, junto con otros datos relevantes de la caja. 
 
@@ -131,4 +137,4 @@ Una vez creada la caja, podremos ver en el _Response_ los links a distintos entr
 >
 > Conoce paso a paso cómo integrar este modelo.
 >
-> [Integrar QR modelo atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/qr-attended-part-b/)
+> [Integrar QR modelo atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/qr-attended-part-b)

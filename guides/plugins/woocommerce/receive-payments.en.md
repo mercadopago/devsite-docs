@@ -4,7 +4,7 @@
 
 The Mercado Pago module comes with the Sandbox environment active by default. Simulate payments in the store with this testing environment and verify that everything works well before you start receiving real payments from your customers.
  
-This is where the test credentials that you have copied into the module come into play when [integrating Mercado Pago to your store](https://www.mercadopago.com.ar/developers/en/guides/plugins/woocommerce/integration/). You need them to be able to test the module.
+This is where the test credentials that you have copied into the module come into play when [integrating Mercado Pago to your store](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/integration). You need them to be able to test the module.
 
 When testing, verify that the payment flow works correctly and that the payment preferences are what you have set. Do you see that everything is going well? Disable Testing and go to Production mode to receive real payments.
 
@@ -18,7 +18,7 @@ When testing, verify that the payment flow works correctly and that the payment 
 
 To start charging you must [activate your credentials](https://www.mercadopago.com/mla/account/credentials/).
 
-> Check out the [requirements to go to production](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-api/goto-production/) if you have any questions during the process.
+> Check out the [requirements to go to production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production) if you have any questions during the process.
 
 Verify that the Production credentials of the module are those of the account that receives the money from the sales.
 
@@ -26,4 +26,4 @@ Activate Production mode only when you are ready to sell and have tested the mod
 
 ![Homologation Flow](/images/woocomerce/es_woo_homologacion.gif)
 
-### **Done! The Mercado Pago module is ready to receive online payments.**
+### Done! The Mercado Pago module is ready to receive online payments.

@@ -1,20 +1,8 @@
----
-sites_supported:
-    - mla
-    - mlb
-    - mlm
-    - mco
-    - mlc
-    - mpe
-    - mlv
-    - mlu
-    - global
----
 # Mobile Checkout
 
 Mercado Pago SDK makes it easy to create a payment experience in your application. You will instantly offer your users:
 
-----[mla, mpe, mlb, mlm, global]----
+----[mla, mpe, mlb, mlm]----
 - Card payments, payments in cash or bank transfer.
 - **Financing**: payments in installments with the best possible financing fee.
 - Discounts and promotions.
@@ -39,11 +27,11 @@ Offer the best payment experience to your users, on Android or iOS.
 ### It is very easy to integrate the checkout:
 
 1. Include the SDK in your project.
-2. Enter your <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credentials</a> and create the payment preference.
+2. Enter your [credentials]([FAKER][CREDENTIALS][URL]) and create the payment preference.
 3. Start the payment process with a button on your application.
 4. Get to know when a payment is made with the notifications we send you.
 
-> Find all the information about your credentials in our [FAQs](https://www.mercadopago.com.ar/developers/en/guides/resources/faqs/credentials/).
+> Find all the information about your credentials in our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/faqs/credentials).
 
 ## Add the dependency to your project
 [[[
@@ -69,9 +57,11 @@ pod 'MercadoPagoSDK'
 ```
 ]]]
 
+> NOTE
+>
 > Note
 >
-> If you have version 3.x of the Mobile Checkout integrated you can visit the [integration docs of version 3](https://www.mercadopago.com.ar/developers/en/guides/online-payments/mobile-checkout/v3/introduction).
+> If you have version 3.x of the Mobile Checkout integrated you can visit the [integration docs of version 3](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/mobile-checkout/v3/introduction).<br>
 > Remember that active support is only provided to the latest major version and passive support to the previous one, so we recommend a migration to the new version.
 
-You can find the reference to the interface in the following links: [Android docs](http://mercadopago.github.io/px-android/) - [iOS docs](http://mercadopago.github.io/px-ios/v4/)
+You can find the reference to the interface in the following links: [Android docs](https://mercadopago.github.io/px-android/) - [iOS docs](https://mercadopago.github.io/px-ios/v4/)

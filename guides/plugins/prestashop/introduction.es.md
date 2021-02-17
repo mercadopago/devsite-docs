@@ -22,14 +22,14 @@ Como imaginarás, una página web sin un procesador de pagos no es más que un c
 
 Instala nuestro procesador de pagos y lleva tus ventas a otro nivel con la mejor experiencia de compra:
 
-| Características               | Detalle                                                                  	                                               |
-|-------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Financiación                 	| Vende en cuotas y ofrece las promociones que desees.                    	                                               |
-| Liberación de dinero          | Al instante o con las tasas y plazos que mejor se adapten al negocio.    	                                               |
-| Medios de pago                | Acepta pagos con tarjeta de crédito y débito, pagos en efectivo y con dinero en cuenta de Mercado Pago.                  |
-| Tipos de checkout             | Checkout Pro, Checkout Personalizado, Ticket Checkout.                                               	         |
-| Pago como invitado            | Los usuarios no necesitan estar registrados en Mercado Pago para poder pagar en Prestashop.                             |
-| Modo binario                  | Aprueba o rechaza pagos al instante y de forma automática.                                                               |
+| Características | Detalle |
+| --- | --- |
+| Financiación | Vende en cuotas y ofrece las promociones que desees. |
+| Liberación de dinero | Al instante o con las tasas y plazos que mejor se adapten al negocio. |
+| Medios de pago | Acepta pagos con tarjeta de crédito y débito, pagos en efectivo y con dinero en cuenta de Mercado Pago. |
+| Tipos de checkout | Checkout Pro, Checkout Personalizado, Ticket Checkout. |
+| Pago como invitado | Los usuarios no necesitan estar registrados en Mercado Pago para poder pagar en Prestashop. |
+| Modo binario | Aprueba o rechaza pagos al instante y de forma automática. |
 
 > NOTE
 >
@@ -42,8 +42,8 @@ Instala nuestro procesador de pagos y lleva tus ventas a otro nivel con la mejor
 Con estas opciones de pago cubrimos las necesidades de cada negocio. Revisa las características para elegir cuál se adapta mejor al tuyo. 
 
 | Características | Checkout Pro | Checkout Personalizado | Ticket Checkout |
-|-----------------|--------------------------|------------------------|-----------------|
-| Medios de pago  | Pagos con tarjetas, en efectivo y con dinero en cuenta de Mercado Pago. | Pagos con tarjetas de débito y crédito.| Pagos en efectivo. |
+| --- | --- | --- | --- |
+| Medios de pago | Pagos con tarjetas, en efectivo y con dinero en cuenta de Mercado Pago. | Pagos con tarjetas de débito y crédito.| Pagos en efectivo. |
 | Experiencia de pago | Tus clientes pagan desde la página de Mercado Pago con un formato modal (dentro de tu tienda). | Tus clientes pagan sin salir de tu tienda online. | Tus clientes pagan sin salir de tu tienda online. |
 | Usuarios invitados | Tus clientes pueden pagar con o sin cuenta en Mercado Pago. | Tus clientes pagan como invitados, sin cuenta en Mercado Pago. | Tus clientes pagan como invitados, sin cuenta en Mercado Pago. |
 
@@ -51,7 +51,7 @@ Con estas opciones de pago cubrimos las necesidades de cada negocio. Revisa las 
 >
 > Nota
 >
-> Consulta la [documentación del Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/introduction/) para conocer mejor todas sus características y funcionalidades.
+> Consulta la [documentación del Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction) para conocer mejor todas sus características y funcionalidades.
 
 ### Próximo paso
 
@@ -62,4 +62,4 @@ Con estas opciones de pago cubrimos las necesidades de cada negocio. Revisa las 
 > Sigue estos pasos para instalar el módulo de Mercado Pago en tu tienda online.
 >
 > 
-> [Instalar](https://www.mercadopago.com.ar/developers/es/guides/plugins/prestashop/instalation/)
+> [Instalar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/instalation)

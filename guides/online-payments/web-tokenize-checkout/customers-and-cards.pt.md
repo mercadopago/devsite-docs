@@ -4,7 +4,7 @@
 >
 > Pré-requisitos
 >
-> * Ter implementada a [captura de dados de cartão](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card#capturar-datos-de-tarjeta).
+> * Ter implementada a [captura de dados de cartão](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card#capture_os_dados_de_cart_o).
 
 Os clientes e cartões (*customers & cards*) são uma forma de armazenar os dados do cartão **de maneira segura** para melhorar a experiência de compra.
 
@@ -16,7 +16,7 @@ Os *customers* representam seus clientes. Os cartões que armazenar serão deste
 
 Para criar um `Customer` e um `Card` ao mesmo tempo é necessário enviar pelo menos os campos `email` e `token`.
 
-O `token` é o que captura quando esta [tratando o retorno](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/handling-responses) do *Web Tokenize Checkout*.
+O `token` é o que captura quando esta [tratando o retorno](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/handling-responses) do *Web Tokenize Checkout*.
 
 
 > NOTE
@@ -51,7 +51,7 @@ import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Customer customer = new Customer();
-customer.setEmail("[FAKER][INTERNET][FREE_EMAIL]");
+customer.setEmail("john@yourdomain.com");
 customer.save();
 
 Card card = new Card();
@@ -156,7 +156,7 @@ Para que possa receber um pagamento utilizando um cartão armazenado, é necess�
 ```html
 <form action="/processar-pagamento" method="POST">
   <script
-    src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
+    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00"
     data-customer-id="209277402-FqRqgEc3XItrxs"
@@ -239,7 +239,7 @@ Por exemplo:
 ```html
 <form action="/procesar-pago" method="POST">
   <script
-    src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
+    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00"
     data-customer-id="209277402-FqRqgEc3XItrxs"
@@ -393,7 +393,7 @@ Retorno:
 }
 ```
 
-## Buscar um _Customer_
+## Buscar um Customer
 
 No caso em que não saiba qual é o `id` de seu `Customer`, poderá utilizar a API de `Customer Search` realizando um request `HTTP GET`. O parâmetro requerido para isto é o `email`:
 
@@ -494,7 +494,7 @@ Retorno:
 }
 ```
 
-## Obter os _Cards_ de um _Customer_
+## Obter os Cards de um Customer
 
 Poderá obter uma lista completa de `Cards` de um cliente realizando um request `HTTP GET`:
 

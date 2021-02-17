@@ -2,7 +2,6 @@
 sites_supported:
   - mla
   - mco
-  - global
 indexable: false
 ---
 
@@ -12,7 +11,7 @@ indexable: false
 >
 > Unfortunately Mercado Pago's Gateway Configuration Section is not currently translated to english. Nonetheless this guide will be helpful to you to understand the configuration flow.
 
-</br>
+<br>
 
 > WARNING
 >
@@ -125,5 +124,5 @@ Get in touch with your sales representative.
 ### Next steps
 
 
-* [Integrate the Checkout Pro](https://www.mercadopago.com.ar/developers/en/guides/online-payments/gateway/checkout-pro/receiving-payments) for the Gateway Model
-* [Integrate the API](https://www.mercadopago.com.ar/developers/en/guides/online-payments/gateway/checkout-api/receiving-payments) for the Gateway Model
+* [Integrate the Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/gateway/checkout-pro/receiving-payments) for the Gateway Model
+* [Integrate the API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/gateway/checkout-api/receiving-payments) for the Gateway Model

@@ -17,14 +17,14 @@ Como você pode imaginar, um site sem processador de pagamento nada mais é do q
 
 Instale nosso gateway de pagamento e leve suas vendas para outro nível com a melhor experiência de compra:
 
-| Características               | Descrição                                                                	                                               |
-|-------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Financiamento                	| Venda parcelado e ofereça as promoções que quiser.                     	                                                 |
-| Liberação de dinheiro         | Na hora ou com tarifas e prazos que melhor se adaptem ao seu negócio.  	                                                 |
-| Meios de pagamento            | Aceite pagamentos com cartão de crédito, boleto, dinheiro e com o saldo na conta do Mercado Pago.                        |
-| Tipos de checkout             | Checkout Pro, Checkout Personalizado, Ticket Checkout.                                               	         |
-| Pague como convidado          | Os usuários não precisam obrigatoriamente estarem cadastrados no Mercado Pago para poder pagar na sua loja virtual.      |
-| Modo binário                  | Aprove ou recuse pagamentos na hora e automaticamente.                                                                   |
+| Características | Descrição |
+| --- | --- |
+| Financiamento | Venda parcelado e ofereça as promoções que quiser. |
+| Liberação de dinheiro | Na hora ou com tarifas e prazos que melhor se adaptem ao seu negócio. |
+| Meios de pagamento | Aceite pagamentos com cartão de crédito, boleto, dinheiro e com o saldo na conta do Mercado Pago. |
+| Tipos de checkout | Checkout Pro, Checkout Personalizado, Ticket Checkout. |
+| Pague como convidado | Os usuários não precisam obrigatoriamente estarem cadastrados no Mercado Pago para poder pagar na sua loja virtual. |
+| Modo binário | Aprove ou recuse pagamentos na hora e automaticamente. |
 
 > NOTE
 >
@@ -36,8 +36,8 @@ Instale nosso gateway de pagamento e leve suas vendas para outro nível com a me
 
 Com estas opções de pagamento nós cobrimos as necessidades de cada negócio. Confira as características para escolher aquela que se adapte melhor ao seu negócio.
 
-| Características    | Checkout Pro    | Checkout Personalizado | Ticket Checkout |
-|--------------------|--------------------------|------------------------|-----------------|
+| Características | Checkout Pro | Checkout Personalizado | Ticket Checkout |
+| --- | --- | --- | --- |
 | Meios de pagamento | Pagamento com cartões, em dinheiro e com dinheiro na conta do Mercado Pago. | Pagamentos com cartões de crédito. | Pagamentos presenciais. |
 | Experiência de pagamento | Seus clientes pagam na página do Mercado Pago com um formato redirect (fora da sua loja) ou modal (dentro da sua loja). | Seus clientes pagam sem sair da sua loja virtual. | Seus clientes pagam sem sair da sua loja virtual. |
 | Usuários convidados | Seus clientes podem pagar tendo ou não uma conta no Mercado Pago. | Seus clientes pagam como convidados, sem ter uma conta no Mercado Pago. | Seus clientes pagam como convidados, sem ter uma conta no Mercado Pago. |
@@ -46,7 +46,7 @@ Com estas opções de pagamento nós cobrimos as necessidades de cada negócio. 
 >
 > Nota
 >
-> Consulte a [documentação do Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/introduction/) para conhecer melhor todas as suas características e funcionalidades.
+> Consulte a [documentação do Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction) para conhecer melhor todas as suas características e funcionalidades.
 
 ### Próximo passo
 
@@ -57,4 +57,4 @@ Com estas opções de pagamento nós cobrimos as necessidades de cada negócio. 
 > Siga estas etapas para instalar o módulo do Mercado Pago na sua loja virtual.
 >
 > 
-> [Instalar](https://www.mercadopago.com.ar/developers/pt/guides/plugins/prestashop/instalation/)
+> [Instalar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/instalation)

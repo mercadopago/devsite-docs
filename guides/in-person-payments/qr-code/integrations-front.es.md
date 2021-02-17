@@ -38,7 +38,7 @@ Primero, debes [crear un link de pago](https://www.mercadopago.com.ar/tools/crea
 
 ## Entérate de tus cobros recibidos
 
-Puedes consultar tus ventas en el listado de actividades de [tu cuenta de Mercado Pago](https://www.mercadopago.com.ar/activities) o [integrar notificaciones](https://www.mercadopago.com.ar/developers/es/guides/notifications/ipn) en tu sistema.
+Puedes consultar tus ventas en el listado de actividades de [tu cuenta de Mercado Pago](https://www.mercadopago.com.ar/activities) o [integrar notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn) en tu sistema.
 
 ---
 ### Próximos pasos
@@ -49,7 +49,7 @@ Puedes consultar tus ventas en el listado de actividades de [tu cuenta de Mercad
 >
 > Conoce cómo funciona cobrar con un código QR y cuáles son sus beneficios.
 >
-> [¿Qué es el código QR?](https://www.mercadopago.com.ar/developers/es/guides/in-person-payments/qr-code/introduction/)
+> [¿Qué es el código QR?](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/introduction)
 
 
 > RIGHT_BUTTON_RECOMMENDED_ES
@@ -58,4 +58,4 @@ Puedes consultar tus ventas en el listado de actividades de [tu cuenta de Mercad
 >
 > Conoce las distintas opciones de cobrar con QR según tu negocio.
 >
-> [¿Cómo generar el QR?](https://www.mercadopago.com.ar/developers/es/guides/qr-code/integrations/)
+> [¿Cómo generar el QR?](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/integrations)

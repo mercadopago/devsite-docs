@@ -23,22 +23,22 @@ In the case that the buyer has an unsupported browser, they will be informed tha
 
 ### Desktop web
 
-Browser | Support
---------- | --------
-**Chrome** | Complete
-**Firefox** | Complete
-**Internet Explorer** | 11
-**Edge** | Complete
-**Safari** | Complete
-**Opera** | Complete
+| Browser | Support |
+| --- | --- |
+| **Chrome** | Complete |
+| **Firefox** | Complete |
+| **Internet Explorer** | 11 |
+| **Edge** | Complete |
+| **Safari** | Complete |
+| **Opera** | Complete |
 
 ### Mobile web
 
-Browser | Support
---------- | --------
-**Chrome** | Complete
-**Firefox** | Complete
-**Windows Phone (Internet Explorer Mobile)** | _No_
-**Safari Mobile** | Complete
-**Opera Mini** | _Basic_
-**Android Browser** | _No_
+| Browser | Support |
+| --- | --- |
+| **Chrome** | Complete |
+| **Firefox** | Complete |
+| **Windows Phone (Internet Explorer Mobile)** | _No_ |
+| **Safari Mobile** | Complete |
+| **Opera Mini** | _Basic_ |
+| **Android Browser** | _No_ |

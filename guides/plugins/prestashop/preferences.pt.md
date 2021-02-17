@@ -7,7 +7,7 @@ Configure as preferências de pagamento para oferecer diversas opções na área
 >
 > Nota
 >
-> Lembre-se de que temos diversos [tipos de checkout](https://www.mercadopago.com.br/developers/pt/guides/plugins/prestashop/introduction/#bookmark_tipos_de_checkout) que se adaptam às necessidades do seu negócio e que cada um conta com a sua própria configuração. 
+> Lembre-se de que temos diversos [tipos de checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction/#bookmark_tipos_de_checkout) que se adaptam às necessidades do seu negócio e que cada um conta com a sua própria configuração. 
 
 
 ## Informações do negócio
@@ -42,7 +42,7 @@ Insira o nome do seu negócio para que apareça na fatura dos seus clientes e se
 >
 > Embora você possa ativar todos os checkouts, recomendamos selecionar apenas uma das experiências para não confundir seus clientes.
 
-* Escolha os [meios de pagamento disponíveis](https://www.mercadopago.com.br/developers/pt/guides/resources/localization/payment-methods/) para seus clientes conforme o país em que você opera e o tipo de checkout que você está configurando.
+* Escolha os [meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods) para seus clientes conforme o país em que você opera e o tipo de checkout que você está configurando.
 
 * Defina o número máximo de parcelas nas quais podem pagar.
 
@@ -54,9 +54,9 @@ Você terá diferentes ajustes disponíveis conforme o tipo de checkout que ativ
 
 ### Ajustes comuns para todos os checkouts
 
-| Configuração  | Descrição                                                               	                |
-|---------------|-----------------------------------------------------------------------------------------------|
-| Modo binário  | Ative esta opção quando não desejar deixar pagamentos pendentes ou em revisão. No modo binário, os pagamentos serão aceitos ou rejeitados automaticamente.|
+| Configuração | Descrição |
+| --- | --- |
+| Modo binário | Ative esta opção quando não desejar deixar pagamentos pendentes ou em revisão. No modo binário, os pagamentos serão aceitos ou rejeitados automaticamente.|
 
 > WARNING
 >
@@ -66,29 +66,29 @@ Você terá diferentes ajustes disponíveis conforme o tipo de checkout que ativ
 
 ### Checkout Pro
 
-| Configuração               | Descrição                                                              	                                   |
-|----------------------------|----------------------------------------------------------------------------------------------------------------|
-| Voltar à loja              | Ao escolher redirect, você sempre terá a opção de fazer com que seus clientes retornem ou não à sua loja quando o pagamento for finalizado.|
+| Configuração | Descrição |
+| --- | --- |
+| Voltar à loja | Ao escolher redirect, você sempre terá a opção de fazer com que seus clientes retornem ou não à sua loja quando o pagamento for finalizado. |
 | Cancelamento de preferências de pagamento | Quando o usuário acessa nosso checkout, geramos um link de pagamento com as informações dessa compra. Aqui você pode definir o horário em que salvamos essa preferência. |
 
-Escolha a experiência de compra que seus clientes terão ao pagar: 
+Escolha a experiência de compra que seus clientes terão ao pagar:
 
-| Experiência de pagamento      | Características                                                              	                                 |
-|-------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Redirect     	                | Seus clientes serão redirecionados para uma página do Mercado Pago com o formulário de pagamento para concluir a compra.|
-| Modal **(NOVO)**              | Seus clientes acessarão o formulário de pagamento do Mercado Pago sem sair de sua loja. Se você desativá-lo, eles serão redirecionados para outra página.|
+| Experiência de pagamento | Características |
+| --- | --- |
+| Redirect | Seus clientes serão redirecionados para uma página do Mercado Pago com o formulário de pagamento para concluir a compra. |
+| Modal **(NOVO)** | Seus clientes acessarão o formulário de pagamento do Mercado Pago sem sair de sua loja. Se você desativá-lo, eles serão redirecionados para outra página. |
 
 > NOTE
 >
 > Nota
 >
-> Confira a [documentação do Checkout Pro ](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/introduction/) para saber mais sobre todos os recursos e funcionalidades.
+> Confira a [documentação do Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction) para saber mais sobre todos os recursos e funcionalidades.
 
 ### Checkout Personalizado
 
-| Configuração                    | Descrição                                                                        |
-|---------------------------------|----------------------------------------------------------------------------------|
-| Desconto por compra             | Ofereça um desconto especial para incentivar seus clientes a fazer a compra.     |
+| Configuração | Descrição |
+| --- | --- |
+| Desconto por compra | Ofereça um desconto especial para incentivar seus clientes a fazer a compra. |
 
 ### Último passo
 
@@ -99,4 +99,4 @@ Escolha a experiência de compra que seus clientes terão ao pagar:
 > Teste o módulo e confira se tudo está funcionando bem para começar a receber o dinheiro das suas vendas no Mercado Pago.
 >
 >
-> [Receber pagamentos](https://www.mercadopago.com.br/developers/pt/guides/plugins/prestashop/receive-payments/)
+> [Receber pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/receive-payments)

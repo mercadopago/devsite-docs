@@ -1,3 +1,11 @@
+---
+  sites_supported:
+      - mla
+      - mlb
+      - mlm
+      - mpe
+---
+
 # Autorização e Captura
 
 Adicione funcionalidades específicas a sua integração segundo as necessidades do seu negócio.
@@ -6,7 +14,7 @@ Ofereça a possibilidade de realizar uma autorização antes de gerar uma captur
 
 Por exemplo, para realizar uma autorização para alugar um carro ou autorizar um valor estimado de uma compra antes da sua confirmação.
 
-## Realize uma reserva de valores
+## Realize uma reserva de valores
 
 Para fazer uma autorização de reserva de valores é preciso apenas adicionar o atributo `capture=false` da seguinte maneira:
 
@@ -382,7 +390,7 @@ curl -X PUT \
 >
 > Conheça os requisitos necessários para começar a receber pagamentos.
 >
-> [Requisitos para ir a produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/goto-production/)
+> [Requisitos para ir a produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/goto-production)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
@@ -390,4 +398,4 @@ curl -X PUT \
 >
 > Encontre toda a informação necessária para interagir com nossas APIs.
 >
-> [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/)
+> [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference)

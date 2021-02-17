@@ -97,8 +97,8 @@ Sí, podrás hacerlo en cualquier momento. Pero si la cancelas, no tendrás acce
 Ten a mano los links y modifica los datos que necesites:
 - [Cambiar el e-mail de tu cuenta](https://www.mercadopago.com/mpe/mydata?axn=myDataAdminEmails)
 - [Modificar tus claves](https://www.mercadopago.com/mpe/account/security)
-- [Agregar opciones de recuperación de clave](https://www.mercadopago.com/mpe/accountrecovery/collect/userInfo?redirUrl=https%3A%2F%2Fwww.mercadopago.com%2Fmla%2Fmydatapwd)
-- [Dejar de recibir ofertas, descuentos y/o sugerencias por e-mail](https://www.mercadopago.com/mpe/account/mydata/emails)
+- [Agregar opciones de recuperación de clave](https://www.mercadopago.com/mpe/accountrecovery/collect/userInfo?redirUrl=https%3A%2F%2Fwww.mercadopago.com%2Fmla%2Fmydatapwd)
+- [Dejar de recibir ofertas, descuentos y/o sugerencias por e-mail](https://www.mercadopago.com/mpe/account/mydata/emails)
 
 Si quieres corregir tu nombre y/o tu DNI o cambiar la titularidad de tu cuenta, puedes solicitar este cambio desde Mercado Libre > [Mis datos](https://myaccount.mercadolibre.com.pe/profile) > Datos personales > 'Necesito ayuda'.
 
@@ -124,7 +124,7 @@ Accedes a nuestras herramientas exclusivas para vendedores:
 
 - Y solo pagas una [comisión por cada pago acreditado](https://www.mercadopago.com.pe/ayuda/cuanto-cuesta-recibir-pagos_2430).
 
-**¿Quieres probar por 30 días tu cuenta vendedor?**  [Hazlo ahora](http://www.mercadopago.com.pe/summary/seller-account-promo).
+**¿Quieres probar por 30 días tu cuenta vendedor?**  [Hazlo ahora](https://www.mercadopago.com.pe/summary/seller-account-promo).
 
 Al terminar el período de prueba tu cuenta personal se convertirá en cuenta vendedor automáticamente, para siempre.
 
@@ -140,10 +140,10 @@ Si, podrás hacerlo en cualquier momento. Pero si la cancelas, no tendrás acces
 
 Ten a mano los links y modifica los datos que necesites:
 
-- [Cambiar el e-mail de tu cuenta](https://www.mercadopago.com/mco/mydata?axn=myDataAdminEmails)
-- [Modificar tus claves](https://www.mercadopago.com/mco/account/security)
-- [Agregar opciones de recuperación de clave](https://www.mercadopago.com/mco/accountrecovery/collect/userInfo?redirUrl=https%3A%2F%2Fwww.mercadopago.com%2Fmla%2Fmydatapwd)
-- [Dejar de recibir ofertas, descuentos y/o sugerencias por e-mail](https://www.mercadopago.com/mco/account/mydata/emails)
+- [Cambiar el e-mail de tu cuenta](https://www.mercadopago.com/mco/mydata?axn=myDataAdminEmails)
+- [Modificar tus claves](https://www.mercadopago.com/mco/account/security)
+- [Agregar opciones de recuperación de clave](https://www.mercadopago.com/mco/accountrecovery/collect/userInfo?redirUrl=https%3A%2F%2Fwww.mercadopago.com%2Fmla%2Fmydatapwd)
+- [Dejar de recibir ofertas, descuentos y/o sugerencias por e-mail](https://www.mercadopago.com/mco/account/mydata/emails)
 
 Si quieres corregir tu nombre y/o tu DNI o cambiar la titularidad de tu cuenta, puedes solicitar este cambio desde Mercado Libre >  [Mis datos](https://myaccount.mercadolibre.com.co/profile)  > Datos personales > 'Necesito ayuda'.
 
@@ -161,7 +161,7 @@ Accedes a nuestras herramientas exclusivas para vendedores:
 
 - Y solo pagas 3,49% + $900 + IVA de cada pago acreditado.
 
-**¿Quieres probar por 30 días tu cuenta vendedor?**  [Hazlo ahora](http://www.mercadopago.com.co/summary/seller-account-promo).
+**¿Quieres probar por 30 días tu cuenta vendedor?**  [Hazlo ahora](https://www.mercadopago.com.co/summary/seller-account-promo).
 
 Al terminar el período de prueba tu cuenta personal se convertirá en cuenta vendedor automáticamente, para siempre.
 
@@ -177,10 +177,10 @@ Si, podrás hacerlo en cualquier momento. Pero si la cancelas, no tendrás acces
 
 Ten a mano los links y modifica los datos que necesites:
 
-- [Cambiar el e-mail de tu cuenta](https://www.mercadopago.com/mlu/mydata?axn=myDataAdminEmails)
-- [Modificar tus claves](https://www.mercadopago.com/mlu/account/security)
-- [Agregar opciones de recuperación de clave](https://www.mercadopago.com/mlu/accountrecovery/collect/userInfo?redirUrl=https%3A%2F%2Fwww.mercadopago.com%2Fmla%2Fmydatapwd)
-- [Dejar de recibir ofertas, descuentos y/o sugerencias por e-mail](https://www.mercadopago.com/mlu/account/mydata/emails)
+- [Cambiar el e-mail de tu cuenta](https://www.mercadopago.com/mlu/mydata?axn=myDataAdminEmails)
+- [Modificar tus claves](https://www.mercadopago.com/mlu/account/security)
+- [Agregar opciones de recuperación de clave](https://www.mercadopago.com/mlu/accountrecovery/collect/userInfo?redirUrl=https%3A%2F%2Fwww.mercadopago.com%2Fmla%2Fmydatapwd)
+- [Dejar de recibir ofertas, descuentos y/o sugerencias por e-mail](https://www.mercadopago.com/mlu/account/mydata/emails)
 
 Si quieres corregir tu nombre y/o tu DNI o cambiar la titularidad de tu cuenta, puedes solicitar este cambio desde Mercado Libre > [Mis datos](https://myaccount.mercadolibre.com.uy/profile) > Datos personales > 'Necesito ayuda'.
 
@@ -198,7 +198,7 @@ Accedes a nuestras herramientas exclusivas para vendedores:
 
 - Y solo pagas una [comisión por cada pago acreditado](https://www.mercadopago.com.uy/ayuda/recibir-pagos-costos_3010).
 
-**¿Quieres probar por 30 días tu cuenta vendedor?**  [Hazlo ahora](http://www.mercadopago.com.uy/summary/seller-account-promo).
+**¿Quieres probar por 30 días tu cuenta vendedor?**  [Hazlo ahora](https://www.mercadopago.com.uy/summary/seller-account-promo).
 
 Al finalizar el período de prueba tu cuenta personal se convertirá en cuenta vendedor automáticamente, para siempre.
 
@@ -214,13 +214,13 @@ Si, podrás hacerlo en cualquier momento. Pero si la cancelas, no tendrás acces
 
 Ten a mano los links y modifica los datos que necesites:
 
- [Cambiar el e-mail de tu cuenta](https://www.mercadopago.com/mlc/mydata?axn=myDataAdminEmails)
+ [Cambiar el e-mail de tu cuenta](https://www.mercadopago.com/mlc/mydata?axn=myDataAdminEmails)
 
- [Modificar tus claves](https://www.mercadopago.com/mlc/account/security)
+ [Modificar tus claves](https://www.mercadopago.com/mlc/account/security)
 
- [Agregar opciones de recuperación de clave](https://www.mercadopago.com/mlc/accountrecovery/collect/userInfo?redirUrl=https%3A%2F%2Fwww.mercadopago.com%2Fmla%2Fmydatapwd)
+ [Agregar opciones de recuperación de clave](https://www.mercadopago.com/mlc/accountrecovery/collect/userInfo?redirUrl=https%3A%2F%2Fwww.mercadopago.com%2Fmla%2Fmydatapwd)
 
- [Dejar de recibir ofertas, descuentos y/o sugerencias por e-mail](https://www.mercadopago.com/mlc/account/mydata/emails)
+ [Dejar de recibir ofertas, descuentos y/o sugerencias por e-mail](https://www.mercadopago.com/mlc/account/mydata/emails)
 
 Si quieres corregir tu nombre y/o tu DNI o cambiar la titularidad de tu cuenta, puedes solicitar este cambio desde Mercado Libre >  [Mis datos](https://myaccount.mercadolibre.cl/profile)  > Datos personales > 'Necesito ayuda'.
 

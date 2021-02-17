@@ -1,5 +1,9 @@
 # Integre o Checkout Pro
 
+Integrar Checkout Pro do Mercado Pago te permite cobrar através do nosso formulário web de qualquer dispositivo de forma simples, rápida e segura.
+
+Use os [exemplos para download](#bookmark_exemplos_para_download) para conhecer a integração completa ou para adaptá-los de acordo com o que precisa.
+
 ## Como me integro?
 
 ![Integration](/images/web-payment-checkout/flow-v2.png)
@@ -22,7 +26,7 @@ Instalar o Checkout Pro requer duas etapas:
 
 Insira o seguinte código que consta de três partes:
 
-1.1 Adicione o <a href="https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/previous-requirements#bookmark_pré-requisitos" target="_blank"> SDK do Mercado Pago</a> no seu projeto:
+1.1 Adicione o [SDK do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/previous-requirements#bookmark_pré-requisitos) no seu projeto:
 
 [[[
 ```php
@@ -49,7 +53,7 @@ require 'mercadopago.rb'
 ```
 ]]]
 
-<br/><br/>1.2 Adicione as <a href="[FAKER][CREDENTIALS][URL]" target="_blank"> credenciais</a> para habilitar o uso do SDK do Mercado Pago:<br/>
+<br/><br/>1.2 Adicione as [credenciais]([FAKER][CREDENTIALS][URL]) para habilitar o uso do SDK do Mercado Pago:<br/>
 
 [[[
 ```php
@@ -375,7 +379,7 @@ curl -X POST \
 >
 > Aceite pagamentos apenas de usuários cadastrados
 >
-> Se quiser aceitar pagamentos apenas de usuários cadastrados, com cartão e saldo no Mercado Pago, entre [nesta seção](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados) para mais informações.
+> Se quiser aceitar pagamentos apenas de usuários cadastrados, com cartão e saldo no Mercado Pago, entre [nesta seção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados) para mais informações.
 
 ### 2. Adicione o checkout ao seu site
 
@@ -384,31 +388,31 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 [[[
 ```php
 <script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
   data-preference-id="<?php echo $preference->id; ?>">
 </script>
 ```
 ```node
 <script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
   data-preference-id='<%= global.id %>'>
 </script>
 ```
 ```java
 <script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
   data-preference-id="${preference.id}">
 </script>
 ```
 ```ruby
 <script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
   data-preference-id="<%= @preference_id %>">
 </script>
 ```
 ```csharp
 <script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
   data-preference-id="@Html.DisplayFor(model => model.id)">
 </script>
 ```
@@ -421,7 +425,15 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 > Não esqueça de acessar de outro navegador ou de encerrar a sessão da sua conta do Mercado Pago antes de fazer os testes. Você não pode pagar com a mesma conta que criou o formulário de pagamento.<br/>
 
 #### Excelente! Você concluiu sua integração.
-_Clique no link dentro do seu site e [teste a integração do seu Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/test-integration/)_.<br/><br/>
+_Clique no link dentro do seu site e [teste a integração do seu Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration)_.<br/><br/>
+
+## Exemplos para download
+
+> GIT
+>
+> Checkout Pro
+>
+> Disponibilizamos [exemplos completos de integração](http://github.com/mercadopago/checkout-payment-sample) no GitHub para PHP ou NodeJS para que você possa fazer o download imediatamente.
 
 ---
 
@@ -433,7 +445,7 @@ _Clique no link dentro do seu site e [teste a integração do seu Checkout Pro](
 >
 > Confira se está tudo em ordem na sua integração com os usuários de teste.
 >
-> [Teste sua integração](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/test-integration/)
+> [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
@@ -441,4 +453,4 @@ _Clique no link dentro do seu site e [teste a integração do seu Checkout Pro](
 >
 > Permite pagamentos somente de usuários cadastrados no Mercado Pago, com cartão e saldo disponível.
 >
-> [Usuários cadastrados](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados)
+> [Usuários cadastrados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados)

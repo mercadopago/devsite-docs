@@ -1,5 +1,5 @@
 ---
-  indexable: false
+ indexable: false
 ---
 # OpenCart
 
@@ -15,17 +15,17 @@
 
 El módulo de Mercado Pago para Opencart tiene las siguientes funcionalidades:
 
-| Funcionalidades                                           | Checkout Básico   | Checkout Transparente   |
-|---------------------------------------------------------- |-------------------|-------------------------|
-| Pago con tarjeta de crédito                               | ✔                 | ✔                       |
-| Otros medios de pago                                      | ✔                 | ✔                       |
-| Interfaz provista por Mercado Pago                        | ✔                 |                         |
-| Calculadora de cuotas                                     | ✔                 | ✔                       |
-| IPN y webhooks                                            | ✔                 | ✔                       |
-| Descuentos con cupones de Mercado Pago                    | ✔                 |                         |
-| Log y herramientas de debug                               | ✔                 | ✔                       |
-| Conversión de moneda                                      |                   | ✔                       |
-| Status de credenciales y de la plataforma                 | ✔                 | ✔                       |
+| Funcionalidades | Checkout Básico | Checkout Transparente |
+| --- | --- | --- |
+| Pago con tarjeta de crédito | ✔ | ✔ |
+| Otros medios de pago | ✔ | ✔ |
+| Interfaz provista por Mercado Pago | ✔ | |
+| Calculadora de cuotas | ✔ | ✔ |
+| IPN y webhooks | ✔ | ✔ |
+| Descuentos con cupones de Mercado Pago | ✔ | |
+| Log y herramientas de debug | ✔ | ✔ |
+| Conversión de moneda | | ✔ |
+| Status de credenciales y de la plataforma | ✔ | ✔ |
 
 
 ### El checkout para tu negocio:
@@ -59,35 +59,35 @@ Ofrezca un checkout personalizado a su experiencia de marca con nuestra API de p
 
 ## Requisitos
 
-| Requisito                 | Detalle                                                       |
-|---------------------------|---------------------------------------------------------------|
-| Sistema Operativo         | Linux x86-64                                                  |
-| Servidor Web              | Apache 2.x, Nginx 1.7.x                                       |
-| Base de Datos             | MySQL 5.6 (Oracle or Percona)                                 |
-| Versión de PHP            | PHP 5.4.x / 5.5.x                                             |
-| Extensiones               | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl      |
-| SSL                       | SSL es necesario para el procesamiento de tarjetas de crédito |
+| Requisito | Detalle |
+| --- | --- |
+| Sistema Operativo | Linux x86-64 |
+| Servidor Web | Apache 2.x, Nginx 1.7.x |
+| Base de Datos | MySQL 5.6 (Oracle or Percona) |
+| Versión de PHP | PHP 5.4.x / 5.5.x |
+| Extensiones | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl |
+| SSL | SSL es necesario para el procesamiento de tarjetas de crédito |
 
 >Es un requisito que cuentes con un certificado SSL y que el formulario de pago que sea servido bajo HTTPS. Durante las pruebas en modo sandbox usted puede operar vía HTTP, pero para la homologación usted necesitará adquirir el certificado si no lo tiene.
 
 
 ## Versiones
 
-| Versión del plugin                                                                          | Status                    | Versiones Compatibles   |
-|-----------------------------------------------------------------------------------------|---------------------------|-----------------------|
-| [v1.4.9](https://github.com/mercadopago/cart-opencart/tree/master/v1.4.9)               | Deprecada (Old Versión)  | OpenCart v1.4.9       |
-| [v1.5.x](https://github.com/mercadopago/cart-opencart/tree/master/v1.5.x)               | Deprecada (Old Versión)  | OpenCart v1.5.x       |
-| [v2.x - v2.2](https://github.com/mercadopago/cart-opencart/tree/master/v2.x%20-%202.2)  | Deprecada (Old Versión)  | OpenCart v2.x - v2.2  |
-| [v2.3](https://github.com/mercadopago/cart-opencart-2/archive/master.zip)                                  | Estable (Current Versión)  | OpenCart v2.3     |
-| [v3.x](https://github.com/mercadopago/cart-opencart-3/archive/master.zip/archive/master.zip)                                  | Estable (Current Versión)  | OpenCart v3.x     |
+| Versión del plugin | Status | Versiones Compatibles |
+| --- | --- | --- |
+| [v1.4.9](https://github.com/mercadopago/cart-opencart/tree/master/v1.4.9) | Deprecada (Old Versión) | OpenCart v1.4.9 |
+| [v1.5.x](https://github.com/mercadopago/cart-opencart/tree/master/v1.5.x) | Deprecada (Old Versión) | OpenCart v1.5.x |
+| [v2.x - v2.2](https://github.com/mercadopago/cart-opencart/tree/master/v2.x%20-%202.2) | Deprecada (Old Versión) | OpenCart v2.x - v2.2 |
+| [v2.3](https://github.com/mercadopago/cart-opencart-2/archive/master.zip) | Estable (Current Versión) | OpenCart v2.3 |
+| [v3.x](https://github.com/mercadopago/cart-opencart-3/archive/master.zip/archive/master.zip) | Estable (Current Versión) | OpenCart v3.x |
 
 
 ## Instalación
 
 1. Descargue el módulo de Mercado Pago
 
-  * [OpenCart 2.3](https://github.com/mercadopago/cart-opencart-2/archive/master.zip)
-  * [OpenCart 3.x](https://github.com/mercadopago/cart-opencart-3/archive/master.zip)
+ * [OpenCart 2.3](https://github.com/mercadopago/cart-opencart-2/archive/master.zip)
+ * [OpenCart 3.x](https://github.com/mercadopago/cart-opencart-3/archive/master.zip)
 
 2. Copie las carpetas **admin**, **catalog** y **image** a la raíz de su instalación de OpenCart. Asegúrese de mantener la estructura de carpetas OpenCart intactas.
 
@@ -99,8 +99,9 @@ Ofrezca un checkout personalizado a su experiencia de marca con nuestra API de p
 ## Configuración
 
 1. De nuevo en **Extensions> Payments> MercadoPago**, haga clic en **Edit** para configurar su cuenta de Mercado Pago:
+<br>
 
- [Open cart configuration page] (https://raw.github.com/brunocodeman/cart-opencart/master/README.img/MPAccount.png)
+![Open cart configuration page](images/opencart/MPAccount.png)
 
 2. Configure su **CLIENT_ID** y **CLIENT_SECRET**, o **PUBLIC_KEY** y **ACCESS_TOKEN** (dependiendo de qué módulo está utilizando). [Obtenga sus credenciales]([FAKER][CREDENTIALS][URL]).
 
@@ -108,21 +109,21 @@ Ofrezca un checkout personalizado a su experiencia de marca con nuestra API de p
 
 4. Otras configuraciones generales:
 
-  * **Category of your store**: Configura la categoría de tu tienda.
-  * **Choose the status of approved orders**: Establece el estado de la orden cuando se aprueban los pagos.
-  * **Choose the status of refunded orders**:  Establece el estado de la orden cuando se devuelven los pagos.
-  * **Choose the status when payment is pending**: Establece el estado de la orden cuando el pago queda pendiente.
-  * **Choose the status when client open a mediation**: Establece el estado de la orden cuando el cliente inicia una mediación.
-  * **Choose the status when payment was reject**: Establece el estado de la orden cuando se rechaza un pago.
-  * **Choose the status when payment was canceled**: Establece el estado de la orden cuando se canelan los pagos.
-  * **Choose the status when payment was chargeback**:Establece el estado de la orden cuando se devuelven los pagos.
-  * **Logs**: Habilita/desabilita logs.
-  * **Debug Mode**: Si está habilitado, muestra la respuesta cruda de la API en lugar de un mensaje amigable.
-  * **Enabled**: Habilita/desabilita esta solución de pago.
-  * **Type Checkout (you're using Standard Checkout)**: Define los tipos de checkout, las opciones son:
-  * *Iframe*: Abre una URL de OpenCart con el iframe como contenido.
-  * *Redirect*: Redirecciona la URL del Mercado Pago.
-  * *Lightbox*: Similar a la opción de Iframe pero abre una lightbox en lugar de un iframe.
+ * **Category of your store**: Configura la categoría de tu tienda.
+ * **Choose the status of approved orders**: Establece el estado de la orden cuando se aprueban los pagos.
+ * **Choose the status of refunded orders**: Establece el estado de la orden cuando se devuelven los pagos.
+ * **Choose the status when payment is pending**: Establece el estado de la orden cuando el pago queda pendiente.
+ * **Choose the status when client open a mediation**: Establece el estado de la orden cuando el cliente inicia una mediación.
+ * **Choose the status when payment was reject**: Establece el estado de la orden cuando se rechaza un pago.
+ * **Choose the status when payment was canceled**: Establece el estado de la orden cuando se canelan los pagos.
+ * **Choose the status when payment was chargeback**:Establece el estado de la orden cuando se devuelven los pagos.
+ * **Logs**: Habilita/desabilita logs.
+ * **Debug Mode**: Si está habilitado, muestra la respuesta cruda de la API en lugar de un mensaje amigable.
+ * **Enabled**: Habilita/desabilita esta solución de pago.
+ * **Type Checkout (you're using Standard Checkout)**: Define los tipos de checkout, las opciones son:
+  * *Iframe*: Abre una URL de OpenCart con el iframe como contenido.
+  * *Redirect*: Redirecciona la URL del Mercado Pago.
+  * *Lightbox*: Similar a la opción de Iframe pero abre una lightbox en lugar de un iframe.
 
 
 ## Notificaciones

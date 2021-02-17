@@ -27,15 +27,13 @@ Para configurar a conta do vendedor, você pode usar as credenciais de teste do 
 
 Execute o curl a seguir para gerar um usuário de teste:
 
-
-[[[
-```curl curl -X POST \
+```curl
+curl -X POST \
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer ENV_ACCESS_TOKEN" \
 "https://api.mercadopago.com/users/test_user" \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
-]]]
 
 ### Resposta
 `HTTP Status 200 OK`
@@ -53,7 +51,7 @@ Execute o curl a seguir para gerar um usuário de teste:
 
 #### 1. Configure a assinatura com os dados do seu usuário vendedo
 
-Use a <a href="https://www.mercadopago[FAKER][URL][DOMAIN]/account/credentials" target="_blank">chave pública de teste</a> do seu usuário vendedor na hora de criar a assinatura que quiser testar.<br>
+Use a [chave pública de teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials) do seu usuário vendedor na hora de criar a assinatura que quiser testar.<br>
 
 #### 2. Faça um pagamento com seu usuário comprador
 
@@ -66,11 +64,11 @@ Testes com cartão de crédito
 
 ### Cartões de teste
 
-Cartão |   Número  | Código de segurança   |   Data de vencimento
---- |	--- | --- | --- 
-Mastercard       |  5031 7557 3453 0604 |   123 | 11/25            
-Visa             |  4509 9535 6623 3704 |   123 | 11/25   
-American Express |  3711 803032 57522   |   1234| 11/25   
+| Cartão | Número | Código de segurança | Data de vencimento |
+| --- |	--- | --- | --- |
+| Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
+| Visa | 4509 9535 6623 3704 | 123 | 11/25 |
+| American Express | 3711 803032 57522 | 1234| 11/25 |
 
 ------------
 ### Próximos passos
@@ -81,7 +79,7 @@ American Express |  3711 803032 57522   |   1234| 11/25
 >
 > Atualize, altere ou cancele suas assinaturas.
 >
-> [Integração avançada](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/advanced-integration/)
+> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/advanced-integration)
 
 > RIGHT_BUTTON
 >
@@ -89,4 +87,4 @@ American Express |  3711 803032 57522   |   1234| 11/25
 >
 > Caso você tenha problemas, explicamos a lógica de novas tentativas de cobrança. 
 >
-> [Novas tentativas de cobrança](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/payment-retry/)
+> [Novas tentativas de cobrança](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/payment-retry)

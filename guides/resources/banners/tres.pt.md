@@ -104,4 +104,4 @@ width="120" height="600"/>
 >
 > Ofereça os benefícios de pagar com Mercado Pago no seu site.
 >
-> [Banners de Mercado Pago](http://www.mercadopago.com.ar/developers/pt/guides/resources/banners/introduction/)
+> [Banners de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/introduction)

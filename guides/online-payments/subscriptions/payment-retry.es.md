@@ -10,14 +10,26 @@ sites_supported:
 Al automatizar la recurrencia de tus cobros, se crean pagos autorizados que tendrán una fecha de débito configurada en base a la periodicidad que se definió en la suscripción. 
 
 ## Estados de pago
+
+----[mla]----
+
 En el momento en que se cobre la cuota pueden surgir tres alternativas en base al resultado de su pago:
 
+------------
+
+----[mlb, mlm]----
+
+En el momento en que se cobre la cuota pueden surgir dos alternativas en base al resultado de su pago:
+
+------------
+
 * __El pago es realizado exitosamente__ por lo que la cuota quedará `processed` y ya no se reintentará cobrarla. 
+
 ----[mla]----
 * __El pago se está procesando__ por lo que la cuota quedará en `waiting for gateway` hasta que se resuelva el pago.
 ------------
-* __El pago es rechazado__ por lo que la cuota quedará en `recycling` siempre y cuando la cuota no esté expirada o no haya alcanzado el máximo de reintentos. Caso contrario, quedará en `processed`.
 
+* __El pago es rechazado__ por lo que la cuota quedará en `recycling` siempre y cuando la cuota no esté expirada o no haya alcanzado el máximo de reintentos. Caso contrario, quedará en `processed`.
 
 ## Pagos rechazados
 
@@ -52,7 +64,7 @@ En el caso de que no se pueda cobrar la cuota en el cuarto reintento, la cuota a
 >
 > Actualiza, modifica o cancela tus suscripciones.
 >
-> [Integración avanzada](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/advanced-integration/)
+> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/advanced-integration)
 
 > RIGHT_BUTTON
 >
@@ -60,4 +72,4 @@ En el caso de que no se pueda cobrar la cuota en el cuarto reintento, la cuota a
 >
 > Revisa que tus suscripciones creadas estén bien configuradas con los usuarios de prueba. 
 >
-> [Pruebas](http://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/testing/)
+> [Pruebas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/testing)

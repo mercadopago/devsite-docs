@@ -12,25 +12,25 @@ Checkout Pro is an integration that allows you to **charge your customers throug
 ## Checkout Pro offers:
 
 ----[mla]----
-* The most popular <a href="https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">payment methods</a> in the country.
+* The most popular [payment methods](https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264) in the country.
 ------------
 ----[mlm]----
-*  The most popular <a href="https://www.mercadopago.com.mx/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">payment methods</a> in the country.
+*  The most popular [payment methods](https://www.mercadopago.com.mx/ayuda/medios-de-pago-cuotas-promociones_264) in the country.
 ------------
 ----[mlc]----
-* The most popular <a href="https://www.mercadopago.cl/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">payment methods</a> in the country.
+* The most popular [payment methods](https://www.mercadopago.cl/ayuda/medios-de-pago-cuotas-promociones_264) in the country.
 ------------
 ----[mlu]----
-* The most popular <a href="https://www.mercadopago.com.uy/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">payment methods</a> in the country.
+* The most popular [payment methods](https://www.mercadopago.com.uy/ayuda/medios-de-pago-cuotas-promociones_264) in the country.
 ------------
 ----[mco]----
-* The most popular <a href="https://www.mercadopago.com.co/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">payment methods</a> in the country.
+* The most popular [payment methods](https://www.mercadopago.com.co/ayuda/medios-de-pago-cuotas-promociones_264) in the country.
 ------------
 ----[mlb]----
-* The most popular <a href="https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265" target="_blank">payment methods</a> in the country.
+* The most popular [payment methods](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265) in the country.
 ------------
 ----[mpe]----
-* The most popular <a href="https://www.mercadopago.com.pe/ayuda/medios-de-pago-cuotas-promociones_264" target="_blank">payment methods</a> in the country.
+* The most popular [payment methods](https://www.mercadopago.com.pe/ayuda/medios-de-pago-cuotas-promociones_264) in the country.
 ------------
 
 * A shopping experience on your site that's accessible across devices.
@@ -43,31 +43,29 @@ Checkout Pro is an integration that allows you to **charge your customers throug
 ## Checkout Pro vs. other Mercado Pago tools
 
 ----[mla, mlb]----
-                                   | Checkout Pro|Web Tokenize Checkout|      API
-:---  | :---: | :---: | :---:
-Integration difficulty		  	      |     Low    |       Medium         |     High
-UI/UX Design 							  	       |      ✔      |         ✔           |
-Conversion optimization	   |      ✔      |         ✔           |
-Approval optimization       |      ✔      |                     |  
-Guest payments        	     |      ✔      |         ✔           |      ✔
-Registered users payments          |      ✔      |                     |
-Fraud prevention               	     |      ✔      |         ✔           |      ✔
-Order completed page		         |      ✔      |                     |
-Split payments		           |      ✔      |                     |
-
+|                               | Checkout Pro | Web Tokenize Checkout | API |
+| :--- | :---: | :---: | :---: |
+| Integration difficulty        | Low | Medium | High |
+| UI/UX Design                  | ✔ | ✔ |   |
+| Conversion optimization       | ✔ | ✔ |   |
+| Approval optimization         | ✔ |   |   |
+| Guest payments                | ✔ | ✔ | ✔ |
+| Registered users payments     | ✔ |   |   |
+| Fraud prevention              | ✔ | ✔ | ✔ |
+| Order completed page          | ✔ |   |   |
+| Split payments                | ✔ |   |   |
 ------------
 ----[mlm, mlu, mco, mlc, mpe]----
-                                   | Checkout Pro|Web Tokenize Checkout|      API
-:---  | :---: | :---: | :---:
-Integration difficulty		  	      |     Low    |       Medium         |     High
-UI/UX Design 							  	       |      ✔      |         ✔           |
-Conversion optimization	   |      ✔      |         ✔           |
-Approval optimization        |      ✔      |                     |  
-Guest Payments      	     |      ✔      |         ✔           |      ✔
-Registered users payments          |      ✔      |                     |
-Fraud prevention               	     |      ✔      |         ✔           |      ✔
-Order completed page		         |      ✔      |                     |
-
+|                               | Checkout Pro | Web Tokenize Checkout | API
+| :--- | :---: | :---: | :---: |
+| Integration difficulty        | Low | Medium | High |
+| UI/UX Design                  | ✔ | ✔ |   |
+| Conversion optimization       | ✔ | ✔ |   |
+| Approval optimization         | ✔ |   |   |
+| Guest Payments                | ✔ | ✔ | ✔ |
+| Registered users payments     | ✔ |   |   |
+| Fraud prevention              | ✔ | ✔ | ✔ |
+| Order completed page          | ✔ |   |   |
 ------------
 
 ---
@@ -80,5 +78,5 @@ Order completed page		         |      ✔      |                     |
 >
 > Prerequisites to get started
 >
-> [Integrations requirements](http://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/previous-requirements/)
+> [Integrations requirements](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/previous-requirements)
 >

@@ -23,15 +23,15 @@ Instale o [app extension do nosso checkout transparente](https://apps.shopify.co
 
 ### O que eu posso fazer com o checkout transparente do Mercado Pago?
 
-| Características          | Descrição                                                                                        |
-|---|---|
-| Compras em uma etapa     | Ofereça uma experiência de compra clara e rápida, desenvolvida na sua loja e na mesma página.    |
-| Experiência mobile       | Ofereça um fluxo de compras pensado e otimizado para dispositivos móveis.                        |
-| Envios                   | Conecte o checkout com sua ferramenta de envios e ofereça entregas durante o processo de compra. |
-| Ads tracking             | Acompanhe suas campanhas de marketing em detalhes ao longo de processo.                          |
-| Meios de pagamento       | Aceite pagamentos com cartão, boleto e dinheiro na conta Mercado Pago.                           |
-| Parcelamento             | Venda parcelado e ofereça as promoções disponíveis.                                              |
-| Pagamento como convidado | Permita que seus clientes paguem sem a necessidade de terem uma conta no Mercado Pago.           |
+| Características | Descrição |
+| --- | --- |
+| Compras em uma etapa | Ofereça uma experiência de compra clara e rápida, desenvolvida na sua loja e na mesma página. |
+| Experiência mobile | Ofereça um fluxo de compras pensado e otimizado para dispositivos móveis. |
+| Envios | Conecte o checkout com sua ferramenta de envios e ofereça entregas durante o processo de compra. |
+| Ads tracking | Acompanhe suas campanhas de marketing em detalhes ao longo de processo. |
+| Meios de pagamento | Aceite pagamentos com cartão, boleto e dinheiro na conta Mercado Pago. |
+| Parcelamento | Venda parcelado e ofereça as promoções disponíveis. |
+| Pagamento como convidado | Permita que seus clientes paguem sem a necessidade de terem uma conta no Mercado Pago. |
 
 
 ### Como instalar o checkout transparente?
@@ -54,7 +54,7 @@ Depois que o checkout estiver instalado, siga estas etapas:
 
 1. Crie uma [conta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-company?confirmation_url=https%3A%2F%2Fwww.mercadopago[FAKER][URL][DOMAIN]%2Fcomo-cobrar) no Mercado Pago se você ainda não tem uma.
 1. Obtenha as [credenciais]([FAKER][CREDENTIALS][URL]) **Public Key** e **Access Token**, e cole-as nos campos de Produção e Testes encontrados na configuração do app.
-1. Ative a conta para [ir a Produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/goto-production/) e receber o dinheiro das suas vendas no Mercado Pago.
+1. Ative a conta para [ir a Produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/goto-production) e receber o dinheiro das suas vendas no Mercado Pago.
 
 **Pronto! Com essa configuração, você pode começar a vender e obter os pagamentos recebidos na sua conta Mercado Pago.**
 
@@ -62,7 +62,7 @@ Depois que o checkout estiver instalado, siga estas etapas:
 >
 > Importante
 >
-> As [credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/faqs/credentials/) são as chaves que o identificam exclusivamente no Mercado Pago. Elas permitirão que você simule pagamentos em um ambiente de teste e receba pagamentos reais quando estiver pronto para produção.
+> As [credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/faqs/credentials) são as chaves que o identificam exclusivamente no Mercado Pago. Elas permitirão que você simule pagamentos em um ambiente de teste e receba pagamentos reais quando estiver pronto para produção.
 
 
 ### Como testar o checkout?
@@ -80,7 +80,7 @@ Ao fazer o teste, confira se o fluxo de pagamento funciona corretamente.
 
 Para começar a receber pagamentos, você deve [ativar suas credenciais]([FAKER][CREDENTIALS][URL]).
 
-> Confira os [requisitos para ir a produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/goto-production/) se você tem alguma dúvida em relação ao processo.
+> Confira os [requisitos para ir a produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/goto-production) se você tem alguma dúvida em relação ao processo.
 
 Para ativá-las, verifique se as credenciais de produção inseridas são as da conta que você recebe o dinheiro das vendas. 
 
@@ -98,14 +98,14 @@ Configure nosso módulo para finalizar a compra no site do Mercado Pago durante 
 
 ### O que eu posso fazer com o gateway de pagamentos do Mercado Pago?
 
-| Características          | Descrição                                                                                      |
-|---|---|
-| Interface Mercado Pago   | Nós cuidamos disso! Você não precisa se preocupar com a implementação e design de um checkout. |
-| Ads tracking             | Acompanhe suas campanhas de marketing em detalhes ao longo do processo.                        |
-| Meios de pagamento       | Aceite pagamentos com cartão, boleto e dinheiro na conta Mercado Pago.                         |
-| Parcelamento             | Venda parcelado e ofereça as promoções disponíveis.                                            |
-| Pagamento como convidado | Permita que seus clientes paguem sem a necessidade de terem uma conta no Mercado Pago.         |
-| Descontos                | Use cupons para oferecer promoções aos seus clientes.                                          |
+| Características | Descrição |
+| --- | --- |
+| Interface Mercado Pago | Nós cuidamos disso! Você não precisa se preocupar com a implementação e design de um checkout. |
+| Ads tracking | Acompanhe suas campanhas de marketing em detalhes ao longo do processo. |
+| Meios de pagamento | Aceite pagamentos com cartão, boleto e dinheiro na conta Mercado Pago. |
+| Parcelamento | Venda parcelado e ofereça as promoções disponíveis. |
+| Pagamento como convidado | Permita que seus clientes paguem sem a necessidade de terem uma conta no Mercado Pago. |
+| Descontos | Use cupons para oferecer promoções aos seus clientes. |
 
 
 ### Como configurar o módulo do Mercado Pago?
@@ -125,7 +125,7 @@ Siga estas etapas para processar pagamentos com o Checkout Pro:
 >
 > Nota
 >
-> Confira a documentação do [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/web-payment-checkout/introduction/) para conhecer melhor todas as suas características e funcionalidades.
+> Confira a documentação do [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/web-payment-checkout/introduction) para conhecer melhor todas as suas características e funcionalidades.
 
 
 ### Mapeamento de status de pagamento
@@ -133,11 +133,11 @@ Siga estas etapas para processar pagamentos com o Checkout Pro:
 O diagrama a seguir representa a correlação entre os status de um pagamento no Mercado Pago e o status do pedido no Shopify.
 
 | Status do pagamento | Mercado Pago status | Shopify order status |
-|---|---|---|
-| Aprovado            | Approved            | Completed            |
-| Pendente            | Pending             | Pending              |
-| Em processamento    | In process          | Pending              |
-| Em mediação         | In mediation        | Pending              |
-| Cancelado           | Cancelled           | Failed               |
-| Reembolsado         | Refunded            | Failed               |
-| Recusado            | Rejected            | Failed               |
+| --- | --- | --- |
+| Aprovado | Approved | Completed |
+| Pendente | Pending | Pending |
+| Em processamento | In process | Pending |
+| Em mediação | In mediation | Pending |
+| Cancelado | Cancelled | Failed |
+| Reembolsado | Refunded | Failed |
+| Recusado | Rejected | Failed |

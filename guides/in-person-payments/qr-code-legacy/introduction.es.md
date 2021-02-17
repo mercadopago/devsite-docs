@@ -6,15 +6,15 @@
 
 ----[mlb]----
 
-![Pagos QR Mercado Pago](/images/qr_mla2.es.png)
+![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
 ------------
 ----[mla]----
 
-![Pagos QR Mercado Pago](/images/qr_mla2.es.png)
+![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
 
 ------------
 ----[mlm]----
-![Pagos QR Mercado Pago](/images/qr_mla2.es.png)
+![Pagos QR Mercado Pago](/images/mobile/qr_mla2.es.png)
 ------------
 
 
@@ -35,11 +35,11 @@ Para poder pagar, tus clientes deben descargar la App desde el store de su telé
 
 ## Formas de cobrar con QR  
 
-| Tipo                                                         | Descripción                                                  | ¿Requieres integración? |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ----------------------- |
-| [QR sin integración](https://www.mercadopago.com.ar/developers/es/guides/in-person-payments/qr-code-legacy/qr-static) | Generas el QR desde tu portal de Mercado Pago, así el comprador escanea tu código y puede enviarte dinero. Debe ingresar el monto en forma manual. | No                      |
-| [QR Punto de Venta](https://www.mercadopago.com.ar/developers/es/guides/in-person-payments/qr-code-legacy/qr-pos) | Integrando a tu sistema de punto de venta la opción de pagos vía QR. Tu cliente escanea el código y en su celular se disponibiliza la descripción de lo que compró y el monto que debe pagar. | Sí                      |
-| [QR Petroleras](https://www.mercadopago.com.ar/developers/es/guides/in-person-payments/qr-code-legacy/qr-gas-station) | Integrando a tu sistema de gestión la modalidad de pagos vía QR. Tu cliente escanea el código y en su celular se disponibiliza el monto que debe pagar. | Sí                      |
+| Tipo | Descripción | ¿Requieres integración? |
+| --- | --- | --- |
+| [QR sin integración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code-legacy/qr-static) | Generas el QR desde tu portal de Mercado Pago, así el comprador escanea tu código y puede enviarte dinero. Debe ingresar el monto en forma manual. | No |
+| [QR Punto de Venta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code-legacy/qr-pos) | Integrando a tu sistema de punto de venta la opción de pagos vía QR. Tu cliente escanea el código y en su celular se disponibiliza la descripción de lo que compró y el monto que debe pagar. | Sí |
+| [QR Petroleras](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code-legacy/qr-gas-station) | Integrando a tu sistema de gestión la modalidad de pagos vía QR. Tu cliente escanea el código y en su celular se disponibiliza el monto que debe pagar. | Sí |
 
 En base a tu modelo de negocio, puedes escoger alguna de las opciones o combinarlas para ofrecer a tus clientes una buena experiencia de compra en tus tiendas físicas.
 

@@ -37,7 +37,7 @@ Primeiramente, você deve [criar um link de pagamento](https://www.mercadopago.c
 
 ## Fique sabendo sobre suas cobranças recebidas
 
-Você pode consultar suas vendas na relação das atividades de [sua conta de Mercado Pago](https://www.mercadopago.com.br/activities) ou [integrar notificações](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn) em seu sistema.
+Você pode consultar suas vendas na relação das atividades de [sua conta de Mercado Pago](https://www.mercadopago.com.br/activities) ou [integrar notificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn) em seu sistema.
 
 ---
 ### Próximos passos
@@ -48,7 +48,7 @@ Você pode consultar suas vendas na relação das atividades de [sua conta de Me
 >
 > Configura as notificações de seus pagamentos.
 >
-> [Que é o código QR?](https://www.mercadopago.com.br/developers/pt/guides/in-person-payments/qr-code/introduction/)
+> [Que é o código QR?](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/introduction)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
@@ -56,4 +56,4 @@ Você pode consultar suas vendas na relação das atividades de [sua conta de Me
 >
 > Conheça as diferentes opções de receber com QR segundo seu negócio.
 >
-> [Como gerar o QR?](https://www.mercadopago.com.br/developers/pt/guides/qr-code/integrations/)
+> [Como gerar o QR?](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/integrations)

@@ -3,7 +3,6 @@ sites_supported:
   - mla
   - mlb
   - mlm
-  - global
 ---
 
 
@@ -92,13 +91,22 @@ En el artículo de [GitHub](https://github.com/mercadopago/point-android_integra
 >
 > Importante
 >
-> * Esta integración sólo esta disponible para Android versión 2.8.0 o superior.
+> * Esta integración sólo esta disponible para Android versión 2.8.0 o superior.<br>
 > * No esta disponible para iOS.
-> * Para poder utilizar esta integración es necesario que te comuniques con [soporte](https://www.mercadopago.com.ar/developers/es/support/) para que te habiliten las opciones de integraciones en la app de Mercado Pago.
 
 La otra forma de integrarse con la aplicación de Mercado Pago para cobrar con nuestro Point es mediante nuestras API.
 
-Para esta integración, primero es necesario configurar desde la aplicación de Mercado Pago el `device_name` . El mismo sirve para identificar tu celular o tablet y relacionarlo con tu cuenta de Mercado Pago. De esta manera, sabrás a que dispositivo enviar la orden de pago.
+Para poder integrarte, tienes que habilitar las opciones de integraciones en la app de Mercado Pago. Ejecuta el siguiente curl para realizarlo:
+
+```curl
+--location --request POST ‘https://api.mercadopago.com/point/services/user/status/integrators?access_token=<ENV_ACCESTOKEN>’ \
+--header ‘Content-Type: application/json’ \
+--data-raw ‘{
+    “id”: <user_id>
+}’
+```
+
+Luego es necesario configurar desde la aplicación de Mercado Pago el `device_name`. El mismo sirve para identificar tu celular o tablet y relacionarlo con tu cuenta de Mercado Pago. De esta manera, sabrás a que dispositivo enviar la orden de pago.
 
 El siguiente paso, consiste en generar una orden de pago y enviarsela vía API al device desde donde queres cobrarla. El usuario verá que en la pantalla de ese dispositivo se levanta la aplicación de Mercado Pago lista para pasar la tarjeta y avanzar con el flujo de pago utilizando el Point.
 
@@ -263,13 +271,13 @@ La respuesta tendra el siguiente formato.
 
 Es necesario que envíes tu `notification_url`, donde recibirás aviso de todos los nuevos pagos y actualizaciones de estados que se generen.
 
-En el artículo de [notificaciones](https://www.mercadopago.com.ar/developers/es/guides/notifications/webhooks) podes obtener más información.
+En el artículo de [notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks) podes obtener más información.
 
 
 ## Pagos de Point
-Los pagos de Point se pueden buscar en la API de Payments. Podes encontrar más información en el artículo de [API's](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get/)
+Los pagos de Point se pueden buscar en la API de Payments. Podes encontrar más información en el artículo de [API's](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get)
 
-A su vez, existe una API exclusiva de Point que cuenta con alguna información adicional del pago: 
+A su vez, existe una API exclusiva de Point que cuenta con alguna información adicional del pago:
 
 
 ```curl

@@ -2,29 +2,15 @@
 sites_supported:
   - mla
   - mco
-  - global
 indexable: false
 ---
 
 # Mercado Pago Gateway: Checkout Pro
-----[mla, mlb, mlc, mlm, mco, mlu]----
 > NOTE
 >
-> PRERREQUISITO
+> Pré-requisito
 >
-
-> Ter realizado [la integração](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/introduction) de **Checkout Pro**
-------------
-
-----[mpe]----
-> NOTE
->
-> PRERREQUISITO
->
-
-> Ter realizado [la integración](https://www.mercadopago.com.mx/developers/es/guides/payments/web-checkout/introduction) de **Checkout Pro**
-------------
-</br>
+> Ter realizado la integração de [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction).
 
 > WARNING
 >
@@ -57,4 +43,4 @@ Pronto! Seu **Checkout Pro** agora estará funcionando no Modelo Gateway.
 
 ### Próximos passos
 
-* [Concilie suas operações](https://www.mercadopago.com.ar/developers/pt/guides/online-payments/gateway/general-considerations/reconciliation)
+* [Concilie suas operações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/gateway/general-considerations/reconciliation)
