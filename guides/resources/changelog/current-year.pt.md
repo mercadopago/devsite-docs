@@ -5,6 +5,40 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 ---
 ## Fevereiro 2021
 
+### 17 de fevereiro
+
+> CHANGELOG
+>
+> Nova versão PrestaShop
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: PRESTASHOP
+
+Lançamos a nova versão 4.5.0 para PrestaShop.
+
+[Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.5.0).
+
+### February 16th
+
+> CHANGELOG
+>
+> Mudanças na serialização do enum ShipmentMode
+>
+> FIX: FIX
+>
+> PRODUCT: SDK .NET
+
+Corrigimos a serialização do enum `ShipmentMode` no .Net C # SDK para gerar valores aceitos pela API de preferências.
+
+[Ir para a documentação das SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks)
+
 ### 12 de fevereiro
 
 > CHANGELOG
@@ -30,6 +64,26 @@ Mudamos o nome de nossa SDK NodeJs de **dx-nodejs** para **sdk-nodejs**.
 Mudamos o nome de nossa SDK Java de **dx-java** para **sdk-java**.
 
 [Ir para a documentação das SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/sdks)
+
+### 11 de fevereiro
+
+> CHANGELOG
+>
+> Nova versão WooCommerce
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: WOOCOMMERCE
+
+Lançamos a nova versão 4.6.4 para WooCommerce.
+
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.6.4).
 
 ### 5 de fevereiro
 
