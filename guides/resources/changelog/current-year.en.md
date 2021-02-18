@@ -25,6 +25,20 @@ We have released the new version 4.5.0 for PrestaShop.
 >
 > [Check GitHub](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.5.0) for further details regarding this release.
 
+### February 16th
+
+> CHANGELOG
+>
+> Changes to ShipmentMode Enum Serialization
+>
+> FIX: FIX
+>
+> PRODUCT: SDK .NET
+
+We have fixed the `ShipmentMode` enum serialization in the .Net C # SDK to generate values accepted by the Preferences API.
+
+[Go to SDKs documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks)
+
 ### February 12th
 
 > CHANGELOG
@@ -51,6 +65,25 @@ We have changed our SDK Java from **dx-java** to **sdk-java**.
 
 [Go to SDKs documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks)
 
+### February 11th
+
+> CHANGELOG
+>
+> New WooCommerce plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+
+We have released the new version 4.6.4 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.6.4) for further details regarding this release.
 
 ### February 5th
 
