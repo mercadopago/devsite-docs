@@ -10,7 +10,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 > CHANGELOG
 >
-> Fixed serialization of the ShipmentMode enum in the .NET SDK
+> Changes to ShipmentMode Enum Serialization
 >
 > NEWS: NEWS
 >
