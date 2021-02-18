@@ -10,7 +10,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 > CHANGELOG
 >
-> Se corrigió la serialización de la enumeración ShipmentMode en el SDK .NET
+> Cambios en la serialización de la enumeración ShipmentMode
 >
 > NEWS: NOVEDADES
 >
