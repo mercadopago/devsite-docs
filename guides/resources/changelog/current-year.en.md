@@ -16,7 +16,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 >
 > PRODUCT: SDK .NET
 
-We have fixed ShipmentMode enum serialization to generate values accepted by the Preference API
+We have fixed the `ShipmentMode` enum serialization in the .Net C # SDK to generate values accepted by the Preferences API.
 
 [Go to SDKs documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks)
 
