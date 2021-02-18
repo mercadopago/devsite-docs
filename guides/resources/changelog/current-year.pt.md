@@ -16,7 +16,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 >
 > PRODUCT: SDK .NET
 
-Corrigimos a serialização do enum ShipmentMode para gerar valores aceitos pela API de Preference
+Corrigimos a serialização do enum `ShipmentMode` no .Net C # SDK para gerar valores aceitos pela API de preferências.
 
 [Go to SDKs documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks)
 
