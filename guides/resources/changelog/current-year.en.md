@@ -12,7 +12,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 >
 > Changes to ShipmentMode Enum Serialization
 >
-> NEWS: NEWS
+> FIX: FIX
 >
 > PRODUCT: SDK .NET
 
