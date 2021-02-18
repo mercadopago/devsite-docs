@@ -25,7 +25,7 @@ Lançamos a nova versão 4.5.0 para PrestaShop.
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.5.0).
 
-### February 16th
+### 16 de fevereiro
 
 > CHANGELOG
 >
@@ -35,9 +35,9 @@ Lançamos a nova versão 4.5.0 para PrestaShop.
 >
 > PRODUCT: SDK .NET
 
-Corrigimos a serialização do enum `ShipmentMode` no .Net C # SDK para gerar valores aceitos pela API de preferências.
+Corrigimos a serialização do enum ShipmentMode no .Net C# SDK para gerar valores aceitos pela API de Preferências.
 
-[Ir para a documentação das SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks)
+[Ir para a documentação das SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/sdks)
 
 ### 12 de fevereiro
 
