@@ -16,7 +16,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 >
 > PRODUCT: SDK .NET
 
-Arreglamos la serialización de la enumeración ShipmentMode para generar valores aceptados por la API de Preference
+Arreglamos la serialización de la enumeración del `ShipmentMode` en la SDK .Net C# para generar valores aceptados por la API de Preferencias.
 
 [Go to SDKs documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks)
 
