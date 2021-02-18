@@ -42,7 +42,7 @@ Esse processo irá explicar a instalação do módulo Mercado Pago via Composer:
 
 **Instalação via Composer**
 
-1) Execute o comando para baixar o plugin via Composer:
+1) Execute o comando para baixar o plugin com Composer:
 
 > composer require mercadopago/magento2-plugin:3.*
 
