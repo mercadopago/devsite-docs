@@ -12,7 +12,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 >
 > Mudanças na serialização do enum ShipmentMode
 >
-> NEWS: NOVIDADES
+> FIX: FIX
 >
 > PRODUCT: SDK .NET
 
