@@ -35,7 +35,7 @@ We have released the new version 4.5.0 for PrestaShop.
 >
 > PRODUCT: SDK .NET
 
-We have fixed the `ShipmentMode` enum serialization in the .Net C # SDK to generate values accepted by the Preferences API.
+We have fixed the ShipmentMode enum serialization in the .Net C# SDK to generate values accepted by the Preferences API.
 
 [Go to SDKs documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks)
 
