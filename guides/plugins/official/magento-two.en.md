@@ -38,17 +38,11 @@ The module of Mercado Pago to Magento is integrated with the features and paymen
 
 ## Installation
 
-    This process will explain the installation of the Mercado Pago module via Composer:
+This process will explain the installation of the Mercado Pago module via Composer:
 
 **Installation via Composer**
 
-1) Currently available two versions of modules, where each of them will provide a type of checkout:
-
-* If you want to process payments with **Checkout Redirect**, you will need to install version 2.x of the Mercado Pago module. To install this version run the command:
-
-> composer require mercadopago/magento2-plugin:2.*
-
-* If you want to process payments with **Custom Checkout** with Credit Card or Ticket, use version 3.x of the module. This version is optimized for this type of checkout. To install this version run the command:
+1) Execute the command to get the plugin with Composer:
 
 > composer require mercadopago/magento2-plugin:3.*
 

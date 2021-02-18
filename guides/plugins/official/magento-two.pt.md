@@ -38,17 +38,11 @@ O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcion
 
 ## Instalação
 
-    Esse processo irá explicar a instalação do módulo Mercado Pago via Composer:
+Esse processo irá explicar a instalação do módulo Mercado Pago via Composer:
 
 **Instalação via Composer**
 
-1) No momento disponibilizamos duas versões de módulos, onde cada uma delas irá disponibilizar um tipo de checkout:
-
-* Caso queira processar pagamentos com **Checkout Redirecionado**, será necessário instalar a versão 2.x do módulo do Mercado Pago. Para isso execute o comando:
-
-> composer require mercadopago/magento2-plugin:2.*
-
-* Caso queira processar pagamentos com **Checkout Transparente (Custom)** com Cartão de Crédito ou Boleto, utilize a versão 3.x do módulo. Essa versão esta melhor otimizada para esse tipo de checkout. Para isso execute o comando:
+1) Execute o comando para baixar o plugin com Composer:
 
 > composer require mercadopago/magento2-plugin:3.*
 
