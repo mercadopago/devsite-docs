@@ -5,6 +5,20 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 ---
 ## Febrero 2021
 
+### February 16th
+
+> CHANGELOG
+>
+> Cambios en la serialización de la enumeración ShipmentMode
+>
+> FIX: FIX
+>
+> PRODUCT: SDK .NET
+
+Arreglamos la serialización de la enumeración del `ShipmentMode` en la SDK .Net C# para generar valores aceptados por la API de Preferencias.
+
+[Ir a documentación de las SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks)
+
 ### 12 de febrero
 
 > CHANGELOG
