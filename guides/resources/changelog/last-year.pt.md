@@ -6,20 +6,6 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Fevereiro 2021
 
-### February 16th
-
-> CHANGELOG
->
-> Foi corrigida a serialização do enum ShipmentMode no SDK .NET
->
-> NEWS: NOVIDADES
->
-> PRODUCT: SDK .NET
-
-Corrigimos a serialização do enum ShipmentMode para gerar valores aceitos pela API de Preference
-
-[Go to SDKs documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks)
-
 ### 12 de fevereiro
 
 > CHANGELOG
@@ -781,10 +767,10 @@ Renovamos a documentação para usar nossas APIs de pagamento. Adicionamos um ex
 Para ajudar a otimizar suas conciliações, implementamos melhorias na geração dos intervalos de datas para relatórios programados. A mudança é válida tanto para o relatório de Dinheiro retirado, como para o relatório de Todas as transações. Desde quarta-feira 1 de abril, para encontrar seus relatórios programados, busque-os por um segundo a menos.
 
 
-| Filtros do `search` | Data atual          | Nova data           |
-| ------------------- | ------------------- | ------------------- |
-| begin_date          | 01/01/2020 00:00:00 | 01/01/2020 00:00:00 |
-| end_date            | 02/01/2020 00:00:00 | 01/01/2020 23:59:59 |
+| Filtros do `search`| Data atual | Nova data |
+| --- | --- | --- |
+| begin_date | 01/01/2020 00:00:00 | 01/01/2020 00:00:00 |
+| end_date | 02/01/2020 00:00:00 | 01/01/2020 23:59:59 |
 
 
 Seu novo parâmetro ficaria da seguinte forma:

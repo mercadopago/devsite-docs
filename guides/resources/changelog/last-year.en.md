@@ -6,20 +6,6 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## February 2021
 
-### February 16th
-
-> CHANGELOG
->
-> Fixed serialization of the ShipmentMode enum in the .NET SDK
->
-> NEWS: NEWS
->
-> PRODUCT: SDK .NET
-
-We have fixed ShipmentMode enum serialization to generate values accepted by the Preference API
-
-[Go to SDKs documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks)
-
 ### February 12th
 
 > CHANGELOG
@@ -749,10 +735,10 @@ We have updated the documentation for using our payments API. We included a basi
 
 In order to help you optimize your reconciliations, we made some changes in the generation of the date ranges for your scheduled reports. This change applies to both the Available Balance report and Account Balance report. After April 1st, 2020 to find your scheduled reports, you will have to search for them by one second less. 
 
-| `Search` Filters | Actual Date         | New Date            |
-| ---------------- | ------------------- | ------------------- |
-| begin_date       | 01/01/2020 00:00:00 | 01/01/2020 00:00:00 |
-| end_date         | 02/01/2020 00:00:00 | 01/01/2020 23:59:59 |
+| `Search` Filters | Actual Date | New Date |
+| --- | --- | --- |
+| begin_date | 01/01/2020 00:00:00 | 01/01/2020 00:00:00 |
+| end_date | 02/01/2020 00:00:00 | 01/01/2020 23:59:59 |
 
 Your new parameter will look as follows:
 
