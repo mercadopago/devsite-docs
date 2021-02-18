@@ -12,7 +12,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 >
 > Cambios en la serialización de la enumeración ShipmentMode
 >
-> NEWS: NOVEDADES
+> FIX: FIX
 >
 > PRODUCT: SDK .NET
 
