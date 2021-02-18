@@ -10,7 +10,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 > CHANGELOG
 >
-> Foi corrigida a serialização do enum ShipmentMode no SDK .NET
+> Mudanças na serialização do enum ShipmentMode
 >
 > NEWS: NOVIDADES
 >
