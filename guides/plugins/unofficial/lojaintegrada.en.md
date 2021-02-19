@@ -17,36 +17,36 @@ You can activate the option to [sell directly on your site](#bookmark_set_paymen
 The **steps to start charging with Mercado Pago** are the following:
 
 1. Create a [seller account](https://www.mercadopago.com.br/activities) in Mercado Pago if you do not yet have one.
-2. Install the app on your site.
+2. Synchronize your Mercado Pago account on your site.
 3. Set the payment methods with Mercado Pago.
 
-## Install Mercado Pago on your site
+## Synchronize Mercado Pago on your site
 
-To **associate your Mercado Pago account to Loja Integrada**, follow these steps:
+To **synchronize your Mercado Pago account to Loja Integrada**, follow these steps:
 
 1. Access the [payment methods settings](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) in the Loja Integrada menu.
-2. Click on “Mercado Pago” and then on “Install Mercado Pago App”.
+2. Click on “Mercado Pago” and then on "Synchronize Mercado Pago account”.
 3. You are going to be redirected to Mercado Pago so that you can enter your account with your account information. To authorize the connection, click on “Allow”.
 
 
     ![Installing Mercado Pago - Loja Integrada](/images/lojaintegrada/lojaintegrada-connect-1.gif)
 
 
-Done! Mercado Pago is installed on your site and you can start charging.
+Done! Mercado Pago account is Synchronize on your site and you can start charging.
 
 > NOTE
 >
 > Change the Mercado Pago account
 >
-> If you wish to change the Mercado Pago account associated to your site, it is necessary to close and reinstall the app.
+> If you wish to change the Mercado Pago account associated to your site, it is necessary to close and Synchronize the new account.
 > 1. Close your Mercado Pago account if you have it open in your browser.
 > 2. Click “Options Menu” and then “Exit”.
-> 3. Access the [payment methods settings](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) in the Loja Integrada menu, click on “Mercado Pago” and finally, on “Uninstall app”.
-> 4. Finally, [install Mercado Pago on your site](#bookmark_install_mercado_pago_on_your_site) with your new account.
+> 3. Access the [payment methods settings](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) in the Loja Integrada menu, click on “Mercado Pago” and finally, on ““Drawingcronizar Mercado Pago account”.
+> 4. Finally, [synchronize Mercado Pago on your site](#bookmark_synchronize_mercado_pago_on_your_site) with your new account.
 
 ## Set payment methods
 
-After associating your account, you have the option to activate two types of checkout: Transparent Checkout and Checkout Redirect. You will always have to activate one or the other. You can also [set payments with Bank Ticket](#bookmark_bank_ticket_setting) and [interest-free monthly installments](#bookmark_installments_settings).
+After associating your account, you have the option to activate two types of checkout at the same time, they are: Transparent Checkout and Checkout Pro. You can also [set payments with Bank Ticket](#bookmark_bank_ticket_setting) and [interest-free monthly installments](#bookmark_installments_settings).
 
 You can check and configure the [Fees and Deadlines](https://www.mercadopago.com.br/settings/release-options) of your online sales whenever you want.
 
@@ -59,12 +59,14 @@ It allows the **client to complete the purchase on your site**, without being re
 2. In the item “Transparent Checkout” change the option to “Activated”.
 3. Finally, click on “Save changes”.
 
-### Mercado Pago Redirect
+### Checkout Pro
 
-In this case, **the buyer will be redirected to Mercado Pago to make the payment** and complete the purchase.
+Checkout Pro is **the integration that allows you to charge in the Mercado Pago environment**, with **additional payment methods** such as: Pix, installment payment bank ticket, virtual debit from the caixa, Mercado Pago digital wallet.
+
+> Learn more about the payment options that [Checkout Pro offers](https://conteudo.mercadopago.com.br/o-que-e-o-checkout-mercado-pago).
 
 1. Access the [payment methods settings](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) in the Loja Integrada menu and click on “Mercado Pago”.
-2. In the item “Mercado Pago Redirect” change the option to “Activated”.
+2. In the item “Checkout Pro” change the option to “Activated”.
 3. Finally, click on “Save changes”.
 
 
