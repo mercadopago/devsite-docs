@@ -32,7 +32,7 @@ To **synchronize your Mercado Pago account to Loja Integrada**, follow these ste
     ![Installing Mercado Pago - Loja Integrada](/images/lojaintegrada/lojaintegrada-connect-1.gif)
 
 
-Done! Mercado Pago account is Synchronize on your site and you can start charging.
+Done! Mercado Pago account is synchronized with your site and you can start charging.
 
 > NOTE
 >
