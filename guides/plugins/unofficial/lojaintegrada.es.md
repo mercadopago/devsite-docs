@@ -38,7 +38,7 @@ Para **sincronizar tu cuenta de Mercado Pago a Loja Integrada**, sigue estos pas
 >
 > Cambiar cuenta de Mercado Pago
 >
-> Si quieres cambiar la cuenta de Mercado Pago asociada a tu sitio, es necesario cerrar y sincronizar usando la nueva cuenta.
+> Si quieres cambiar la cuenta de Mercado Pago asociada a tu sitio, es necesario salir de la cuenta activa y volver a sincronizar usando la nueva cuenta.
 > 1. Cierra tu cuenta de Mercado Pago si la tienes abierta en tu navegador.
 > 2. Haz clic en “Menú de opciones” y luego en “Salir”.
 > 3. Accede a las [configuraciones de formas de pago](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) en el menú de Loja Integrada, haz clic en “Mercado Pago" y por último, en “Desincronizar cuenta de Mercado Pago”.
