@@ -21,7 +21,7 @@ Los **pasos para comenzar a cobrar con Mercado Pago** son los siguientes:
 
 ## Sincroniza Mercado Pago en tu tienda
 
-Para **sincroniza tu cuenta de Mercado Pago a Loja Integrada**, sigue estos pasos:
+Para **sincronizar tu cuenta de Mercado Pago a Loja Integrada**, sigue estos pasos:
 
 1. Accede a las [configuraciones de formas de pago](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) en el menú de Loja Integrada.
 2. Haz clic en “Mercado Pago” y luego en “Sincroniza tu cuenta de Mercado Pago”.
