@@ -31,7 +31,7 @@ Para **sincronizar tu cuenta de Mercado Pago a Loja Integrada**, sigue estos pas
     ![Installing Mercado Pago - Loja Integrada](/images/lojaintegrada/lojaintegrada-connect-1.gif)
 
 
-¡Y listo! Mercado Pago ya está sincronizada en tu tienda y puedes empezar a cobrar.
+¡Y listo! Mercado Pago ya está sincronizado en tu tienda para que empieces a cobrar.
 
 
 > NOTE
