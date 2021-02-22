@@ -38,7 +38,7 @@ Done! Mercado Pago account is synchronized with your site and you can start char
 >
 > Change the Mercado Pago account
 >
-> If you wish to change the Mercado Pago account associated to your site, it is necessary to close and Synchronize the new account.
+> If you wish to change the Mercado Pago account associated to your site, it is necessary to close the active account and synchronize again using the new account.
 > 1. Close your Mercado Pago account if you have it open in your browser.
 > 2. Click “Options Menu” and then “Exit”.
 > 3. Access the [payment methods settings](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) in the Loja Integrada menu, click on “Mercado Pago” and finally, on ““Drawingcronizar Mercado Pago account”.
