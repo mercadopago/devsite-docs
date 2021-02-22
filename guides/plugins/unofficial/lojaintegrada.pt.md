@@ -38,7 +38,7 @@ E pronto! Sua conta Mercado Pago já está sincronizada em sua loja e você pode
 >
 > Alterar conta do Mercado Pago
 >
-> Se quiser alterar a conta do Mercado Pago do seu site, é necessário sair e sincronizar utilizando a nova conta.
+> Se quiser alterar a conta do Mercado Pago do seu site, é necessário sair da conta ativa e sincronizar utilizando a nova conta.
 > 1. Desconectar de sua conta Mercado Pago, caso conectada em um navegador.
 > 2. Clique no "Menu de opções" e depois em "Sair".
 > 3. Acesse as [configurações de formas de pagamento](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) no menu da Loja Integrada e clique em “Mercado Pago” e depois em "Dessincronizar conta do Mercado Pago".
