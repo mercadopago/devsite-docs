@@ -166,7 +166,7 @@ Te recomendamos iniciarlo en el evento didFinishLaunchingWithOptions del AppDele
 ===
 Te recomendamos iniciarlo en la clase MainApplication.
 ===
-import com.mercadolibre.android.devices.sdk.DeviceSDK;
+import com.mercadolibre.android.device.sdk.DeviceSDK;
 
 
 DeviceSDK.getInstance().execute(this);

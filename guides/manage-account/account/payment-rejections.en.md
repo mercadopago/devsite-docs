@@ -165,7 +165,7 @@ We recommend initializing it in the _didFinishLaunchingWithOptions_ event of the
 ===
 We recommend initializing it in the _MainApplication_ class.
 ===
-import com.mercadolibre.android.devices.sdk.DeviceSDK;
+import com.mercadolibre.android.device.sdk.DeviceSDK;
 
 
 DeviceSDK.getInstance().execute(this);

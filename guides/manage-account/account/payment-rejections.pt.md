@@ -164,7 +164,7 @@ Recomendamos realizar a inicialização no envento didFinishLaunchingWithOptions
 ===
 Recomendamos realizar a inicialização na classe MainApplication.
 ===
-import com.mercadolibre.android.devices.sdk.DeviceSDK;
+import com.mercadolibre.android.device.sdk.DeviceSDK;
 
 
 DeviceSDK.getInstance().execute(this);
