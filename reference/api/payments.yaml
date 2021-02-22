@@ -256,341 +256,339 @@ paths:
           content:
             application/json:
               schema:
-                items:
-                  type: object
-                  properties: 
-                    id: 
-                      type: number
-                      example: 20359978
-                    date_created: 
-                      type: string
-                      example: 2019-07-10T10:47:58.000-04:00
-                    date_approved: 
-                      type: string
-                      example: 2019-07-10T10:47:58.000-04:00
-                    date_last_updated: 
-                      type: string
-                      example: 2019-07-10T10:47:58.000-04:00
-                    date_of_expiration: 
-                      type: string
-                      format: nullable
-                    money_release_date: 
-                      type: string
-                      example: 2019-07-24T10:47:58.000-04:00
-                    operation_type: 
-                      type: string
-                      example: regular_payment
-                    issuer_id: 
-                      type: string
-                      example: 25
-                    payment_method_id: 
-                      type: string
-                      example: visa
-                    payment_type_id: 
-                      type: string
-                      example: credit_card
-                    status: 
-                      type: string
-                      example: approved
-                    status_detail: 
-                      type: string
-                      example: accredited
-                    currency_id: 
-                      type: string
-                      example: $
-                    description: 
-                      type: string
-                      example: Point Mini a maquininha que dá o dinheiro de suas vendas na hora
-                    live_mode: 
-                      type: boolean
-                    sponsor_id: 
-                      type: string
-                      format: nullable
-                    authorization_code: 
-                      type: string
-                      format: nullable
-                    money_release_schema: 
-                      type: string
-                      format: nullable
-                    taxes_amount: 
-                      type: number
-                      example: 0
-                    counter_currency: 
-                      type: string
-                      format: nullable
-                    shipping_amount: 
-                      type: number
-                      example: 0
-                    pos_id: 
-                      type: string
-                      format: nullable
-                    store_id: 
-                      type: string
-                      format: nullable
-                    collector_id: 
-                      type: number
-                      example: 448876418
-                    payer: 
-                      type: object
-                      properties: 
-                        first_name: 
-                          type: string
-                          example: Test
-                        last_name: 
-                          type: string
-                          example: Test
-                        email: 
-                          type: string
-                          example: test_user_80507629@testuser.com
-                        identification: 
-                          type: object
-                          properties: 
-                            number: 
-                              type: string
-                              example: 19119119100
-                            type: 
-                              type: string
-                              example: CPF
-                        phone: 
-                          type: object
-                          properties: 
-                            area_code: 
-                              type: string
-                              example: 011
-                            number: 
-                              type: string
-                              example: 987654321
-                            extension: 
-                              type: string
-                              example: 
-                        type: 
-                          type: string
-                          example: guest
-                        entity_type: 
-                          type: string
-                          format: nullable
-                        id: 
-                          type: string
-                          format: nullable
-                    metadata: 
-                      type: object
-                      properties:  
-                    additional_info: 
-                      type: object
-                      properties: 
-                        items: 
-                          type: array
-                          items: 
-                            type: object
-                            properties: 
-                              id: 
-                                type: string
-                                example: PR0001
-                              title: 
-                                type: string
-                                example: Point Mini
-                              description: 
-                                type: string
-                                example: Producto Point para cobros con tarjetas mediante bluetooth
-                              picture_url: 
-                                type: string
-                                example: https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png
-                              category_id: 
-                                type: string
-                                example: electronics
-                              quantity: 
-                                type: number
-                                example: 1
-                              unit_price: 
-                                type: number
-                                example: 58.8
-                        payer: 
-                          type: object
-                          properties: 
-                            phone: 
-                              type: object
-                              properties: 
-                                area_code: 
-                                  type: string
-                                  example: 11
-                                number: 
-                                  type: string
-                                  example: 987654321
-                            address: 
-                              type: object
-                              properties: 
-                                zip_code: 
-                                  type: string
-                                  example: 06233-200
-                                street_name: 
-                                  type: string
-                                  example: Av das Nacoes Unidas
-                                street_number: 
-                                  type: string
-                                  example: 3003
-                            first_name: 
-                              type: string
-                              example: Nome
-                            last_name: 
-                              type: string
-                              example: Sobrenome
-                            registration_date: 
-                              type: string
-                              example: 2019-01-01T12:01:01.000-03:00
-                        shipments: 
-                          type: object
-                          properties: 
-                            receiver_address: 
-                              type: object
-                              properties: 
-                                street_name: 
-                                  type: string
-                                  example: Av das Nacoes Unidas
-                                street_number: 
-                                  type: number
-                                  example: 3003
-                                zip_code: 
-                                  type: string
-                                  example: 06233200
-                                city_name: 
-                                  type: string
-                                  example: Buzios
-                                state_name: 
-                                  type: string
-                                  example: Rio de Janeiro
-                    order: 
-                      type: object
-                      properties:  
-                    external_reference: 
-                      type: string
-                      example: MP0001
-                    transaction_amount: 
-                      type: number
-                      example: 58.8
-                    transaction_amount_refunded: 
-                      type: number
-                      example: 0
-                    coupon_amount: 
-                      type: number
-                      example: 0
-                    differential_pricing_id: 
-                      type: string
-                      format: nullable
-                    deduction_schema: 
-                      type: string
-                      format: nullable
-                    transaction_details: 
-                      type: object
-                      properties: 
-                        payment_method_reference_id: 
-                          type: string
-                          format: nullable
-                        net_received_amount: 
-                          type: number
-                          example: 56.16
-                        total_paid_amount: 
-                          type: number
-                          example: 58.8
-                        overpaid_amount: 
-                          type: number
-                          example: 0
-                        external_resource_url: 
-                          type: string
-                          format: nullable
-                        installment_amount: 
-                          type: number
-                          example: 58.8
-                        financial_institution: 
-                          type: string
-                          format: nullable
-                        payable_deferral_period: 
-                          type: string
-                          format: nullable
-                        acquirer_reference: 
-                          type: string
-                          format: nullable
-                    fee_details: 
-                      type: array
-                      items: 
+                type: object
+                properties: 
+                  id: 
+                    type: number
+                    example: 20359978
+                  date_created: 
+                    type: string
+                    example: 2019-07-10T10:47:58.000-04:00
+                  date_approved: 
+                    type: string
+                    example: 2019-07-10T10:47:58.000-04:00
+                  date_last_updated: 
+                    type: string
+                    example: 2019-07-10T10:47:58.000-04:00
+                  date_of_expiration: 
+                    type: string
+                    format: nullable
+                  money_release_date: 
+                    type: string
+                    example: 2019-07-24T10:47:58.000-04:00
+                  operation_type: 
+                    type: string
+                    example: regular_payment
+                  issuer_id: 
+                    type: string
+                    example: 25
+                  payment_method_id: 
+                    type: string
+                    example: visa
+                  payment_type_id: 
+                    type: string
+                    example: credit_card
+                  status: 
+                    type: string
+                    example: approved
+                  status_detail: 
+                    type: string
+                    example: accredited
+                  currency_id: 
+                    type: string
+                    example: $
+                  description: 
+                    type: string
+                    example: Point Mini a maquininha que dá o dinheiro de suas vendas na hora
+                  live_mode: 
+                    type: boolean
+                  sponsor_id: 
+                    type: string
+                    format: nullable
+                  authorization_code: 
+                    type: string
+                    format: nullable
+                  money_release_schema: 
+                    type: string
+                    format: nullable
+                  taxes_amount: 
+                    type: number
+                    example: 0
+                  counter_currency: 
+                    type: string
+                    format: nullable
+                  shipping_amount: 
+                    type: number
+                    example: 0
+                  pos_id: 
+                    type: string
+                    format: nullable
+                  store_id: 
+                    type: string
+                    format: nullable
+                  collector_id: 
+                    type: number
+                    example: 448876418
+                  payer: 
+                    type: object
+                    properties: 
+                      first_name: 
+                        type: string
+                        example: Test
+                      last_name: 
+                        type: string
+                        example: Test
+                      email: 
+                        type: string
+                        example: test_user_80507629@testuser.com
+                      identification: 
                         type: object
                         properties: 
+                          number: 
+                            type: string
+                            example: 19119119100
                           type: 
                             type: string
-                            example: mercadopago_fee
-                          amount: 
-                            type: number
-                            example: 2.64
-                          fee_payer: 
+                            example: CPF
+                      phone: 
+                        type: object
+                        properties: 
+                          area_code: 
                             type: string
-                            example: collector
-                    captured: 
-                      type: boolean
-                    binary_mode: 
-                      type: boolean
-                    call_for_authorize_id: 
-                      type: string
-                      format: nullable
-                    statement_descriptor: 
-                      type: string
-                      example: MercadoPago
-                    installments: 
-                      type: number
-                      example: 1
-                    card: 
-                      type: object
-                      properties: 
-                        id: 
-                          type: string
-                          format: nullable
-                        first_six_digits: 
-                          type: string
-                          example: 423564
-                        last_four_digits: 
-                          type: string
-                          example: 5682
-                        expiration_month: 
-                          type: number
-                          example: 6
-                        expiration_year: 
-                          type: number
-                          example: 2023
-                        date_created: 
-                          type: string
-                          example: 2019-07-10T10:47:58.000-04:00
-                        date_last_updated: 
-                          type: string
-                          example: 2019-07-10T10:47:58.000-04:00
-                        cardholder: 
+                            example: 011
+                          number: 
+                            type: string
+                            example: 987654321
+                          extension: 
+                            type: string
+                            example: 
+                      type: 
+                        type: string
+                        example: guest
+                      entity_type: 
+                        type: string
+                        format: nullable
+                      id: 
+                        type: string
+                        format: nullable
+                  metadata: 
+                    type: object
+                    properties:  
+                  additional_info: 
+                    type: object
+                    properties: 
+                      items: 
+                        type: array
+                        items: 
                           type: object
                           properties: 
-                            name: 
+                            id: 
                               type: string
-                              example: APRO
-                            identification: 
-                              type: object
-                              properties: 
-                                number: 
-                                  type: string
-                                  example: 19119119100
-                                type: 
-                                  type: string
-                                  example: CPF
-                    notification_url: 
-                      type: string
-                      example: https://www.suaurl.com/notificacoes/
-                    processing_mode: 
-                      type: string
-                      example: aggregator
-                    merchant_account_id: 
-                      type: string
-                      format: nullable
-                    acquirer: 
-                      type: string
-                      format: nullable
-                    merchant_number: 
-                      type: string
-                      format: nullable
-
+                              example: PR0001
+                            title: 
+                              type: string
+                              example: Point Mini
+                            description: 
+                              type: string
+                              example: Producto Point para cobros con tarjetas mediante bluetooth
+                            picture_url: 
+                              type: string
+                              example: https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png
+                            category_id: 
+                              type: string
+                              example: electronics
+                            quantity: 
+                              type: number
+                              example: 1
+                            unit_price: 
+                              type: number
+                              example: 58.8
+                      payer: 
+                        type: object
+                        properties: 
+                          phone: 
+                            type: object
+                            properties: 
+                              area_code: 
+                                type: string
+                                example: 11
+                              number: 
+                                type: string
+                                example: 987654321
+                          address: 
+                            type: object
+                            properties: 
+                              zip_code: 
+                                type: string
+                                example: 06233-200
+                              street_name: 
+                                type: string
+                                example: Av das Nacoes Unidas
+                              street_number: 
+                                type: string
+                                example: 3003
+                          first_name: 
+                            type: string
+                            example: Nome
+                          last_name: 
+                            type: string
+                            example: Sobrenome
+                          registration_date: 
+                            type: string
+                            example: 2019-01-01T12:01:01.000-03:00
+                      shipments: 
+                        type: object
+                        properties: 
+                          receiver_address: 
+                            type: object
+                            properties: 
+                              street_name: 
+                                type: string
+                                example: Av das Nacoes Unidas
+                              street_number: 
+                                type: number
+                                example: 3003
+                              zip_code: 
+                                type: string
+                                example: 06233200
+                              city_name: 
+                                type: string
+                                example: Buzios
+                              state_name: 
+                                type: string
+                                example: Rio de Janeiro
+                  order: 
+                    type: object
+                    properties:  
+                  external_reference: 
+                    type: string
+                    example: MP0001
+                  transaction_amount: 
+                    type: number
+                    example: 58.8
+                  transaction_amount_refunded: 
+                    type: number
+                    example: 0
+                  coupon_amount: 
+                    type: number
+                    example: 0
+                  differential_pricing_id: 
+                    type: string
+                    format: nullable
+                  deduction_schema: 
+                    type: string
+                    format: nullable
+                  transaction_details: 
+                    type: object
+                    properties: 
+                      payment_method_reference_id: 
+                        type: string
+                        format: nullable
+                      net_received_amount: 
+                        type: number
+                        example: 56.16
+                      total_paid_amount: 
+                        type: number
+                        example: 58.8
+                      overpaid_amount: 
+                        type: number
+                        example: 0
+                      external_resource_url: 
+                        type: string
+                        format: nullable
+                      installment_amount: 
+                        type: number
+                        example: 58.8
+                      financial_institution: 
+                        type: string
+                        format: nullable
+                      payable_deferral_period: 
+                        type: string
+                        format: nullable
+                      acquirer_reference: 
+                        type: string
+                        format: nullable
+                  fee_details: 
+                    type: array
+                    items: 
+                      type: object
+                      properties: 
+                        type: 
+                          type: string
+                          example: mercadopago_fee
+                        amount: 
+                          type: number
+                          example: 2.64
+                        fee_payer: 
+                          type: string
+                          example: collector
+                  captured: 
+                    type: boolean
+                  binary_mode: 
+                    type: boolean
+                  call_for_authorize_id: 
+                    type: string
+                    format: nullable
+                  statement_descriptor: 
+                    type: string
+                    example: MercadoPago
+                  installments: 
+                    type: number
+                    example: 1
+                  card: 
+                    type: object
+                    properties: 
+                      id: 
+                        type: string
+                        format: nullable
+                      first_six_digits: 
+                        type: string
+                        example: 423564
+                      last_four_digits: 
+                        type: string
+                        example: 5682
+                      expiration_month: 
+                        type: number
+                        example: 6
+                      expiration_year: 
+                        type: number
+                        example: 2023
+                      date_created: 
+                        type: string
+                        example: 2019-07-10T10:47:58.000-04:00
+                      date_last_updated: 
+                        type: string
+                        example: 2019-07-10T10:47:58.000-04:00
+                      cardholder: 
+                        type: object
+                        properties: 
+                          name: 
+                            type: string
+                            example: APRO
+                          identification: 
+                            type: object
+                            properties: 
+                              number: 
+                                type: string
+                                example: 19119119100
+                              type: 
+                                type: string
+                                example: CPF
+                  notification_url: 
+                    type: string
+                    example: https://www.suaurl.com/notificacoes/
+                  processing_mode: 
+                    type: string
+                    example: aggregator
+                  merchant_account_id: 
+                    type: string
+                    format: nullable
+                  acquirer: 
+                    type: string
+                    format: nullable
+                  merchant_number: 
+                    type: string
+                    format: nullable
         '400':
           '1':
             description: Params Error.
@@ -778,198 +776,197 @@ paths:
           content:
             application/json:
               schema:
-                items:
-                  type: object
-                  properties: 
-                    id: 
-                      type: string
-                      example: 0000001
-                    date_created: 
-                      type: string
-                      example: 2017-08-31T07:26:38.000-04:00
-                    date_approved: 
-                      type: string
-                      example: 2017-08-31T07:26:38.000-04:00
-                    date_last_updated: 
-                      type: string
-                      example: 2017-08-31T07:26:38.000-04:00
-                    date_of_expiration: 
-                      type: string
-                      format: nullable
-                    money_release_date: 
-                      type: string
-                      example: 2017-09-14T07:26:38.000-04:00
-                    operation_type: 
-                      type: string
-                      example: money_transfer
-                    issuer_id: 
-                      type: string
-                      format: nullable
-                    payment_method_id: 
-                      type: string
-                      example: account_money
-                    payment_type_id: 
-                      type: string
-                      example: account_money
-                    status: 
-                      type: string
-                      example: approved
-                    status_detail: 
-                      type: string
-                      example: accredited
-                    currency_id: 
-                      type: string
-                      example: $
-                    description: 
-                      type: string
-                      example: Pago Pizza
-                    live_mode: 
-                      type: boolean
-                    sponsor_id: 
-                      type: string
-                      format: nullable
-                    authorization_code: 
-                      type: string
-                      format: nullable
-                    money_release_schema: 
-                      type: string
-                      format: nullable
-                    counter_currency: 
-                      type: string
-                      format: nullable
-                    collector_id: 
-                      type: string
-                      example: 0000002
-                    payer: 
-                      type: object
-                      properties: 
-                        type: 
-                          type: string
-                          example: registered
-                        id: 
-                          type: string
-                          example: 000001
-                        email: 
-                          type: string
-                          example: afriend@gmail.com
-                        identification: 
-                          type: object
-                          properties: 
-                            type: 
-                              type: string
-                              example: DNI
-                            number: 
-                              type: string
-                              example: 12345678
-                        phone: 
-                          type: object
-                          properties: 
-                            area_code: 
-                              type: string
-                              format: nullable
-                            number: 
-                              type: string
-                              example: 11123456789
-                            extension: 
-                              type: string
-                              format: nullable
-                        first_name: 
-                          type: string
-                          example: Name
-                        last_name: 
-                          type: string
-                          example: LastName
-                        entity_type: 
-                          type: string
-                          format: nullable
-                    metadata: 
-                      type: object
-                      properties:  
-                    additional_info: 
-                      type: object
-                      properties:  
-                    order: 
-                      type: object
-                      properties:  
-                    external_reference: 
-                      type: string
-                      format: nullable
-                    transaction_amount: 
-                      type: number
-                      example: 250
-                    transaction_amount_refunded: 
-                      type: number
-                      example: 0
-                    coupon_amount: 
-                      type: number
-                      example: 0
-                    differential_pricing_id: 
-                      type: string
-                      format: nullable
-                    deduction_schema: 
-                      type: string
-                      format: nullable
-                    transaction_details: 
-                      type: object
-                      properties: 
-                        net_received_amount: 
-                          type: number
-                          example: 250
-                        total_paid_amount: 
-                          type: number
-                          example: 250
-                        overpaid_amount: 
-                          type: number
-                          example: 0
-                        external_resource_url: 
-                          type: string
-                          format: nullable
-                        installment_amount: 
-                          type: number
-                          example: 250
-                        financial_institution: 
-                          type: string
-                          format: nullable
-                        payment_method_reference_id: 
-                          type: string
-                          format: nullable
-                        payable_deferral_period: 
-                          type: string
-                          format: nullable
-                        acquirer_reference: 
-                          type: string
-                          format: nullable
-                    captured: 
-                      type: boolean
-                    binary_mode: 
-                      type: boolean
-                    call_for_authorize_id: 
-                      type: string
-                      format: nullable
-                    statement_descriptor: 
-                      type: string
-                      format: nullable
-                    installments: 
-                      type: number
-                      example: 1
-                    card: 
-                      type: object
-                      properties:  
-                    notification_url: 
-                      type: string
-                      format: nullable
-                    processing_mode: 
-                      type: string
-                      format: nullable
-                    merchant_account_id: 
-                      type: string
-                      format: nullable
-                    acquirer: 
-                      type: string
-                      format: nullable
-                    merchant_number: 
-                      type: string
-                      format: nullable
+                type: object
+                properties: 
+                  id: 
+                    type: string
+                    example: 0000001
+                  date_created: 
+                    type: string
+                    example: 2017-08-31T07:26:38.000-04:00
+                  date_approved: 
+                    type: string
+                    example: 2017-08-31T07:26:38.000-04:00
+                  date_last_updated: 
+                    type: string
+                    example: 2017-08-31T07:26:38.000-04:00
+                  date_of_expiration: 
+                    type: string
+                    format: nullable
+                  money_release_date: 
+                    type: string
+                    example: 2017-09-14T07:26:38.000-04:00
+                  operation_type: 
+                    type: string
+                    example: money_transfer
+                  issuer_id: 
+                    type: string
+                    format: nullable
+                  payment_method_id: 
+                    type: string
+                    example: account_money
+                  payment_type_id: 
+                    type: string
+                    example: account_money
+                  status: 
+                    type: string
+                    example: approved
+                  status_detail: 
+                    type: string
+                    example: accredited
+                  currency_id: 
+                    type: string
+                    example: $
+                  description: 
+                    type: string
+                    example: Pago Pizza
+                  live_mode: 
+                    type: boolean
+                  sponsor_id: 
+                    type: string
+                    format: nullable
+                  authorization_code: 
+                    type: string
+                    format: nullable
+                  money_release_schema: 
+                    type: string
+                    format: nullable
+                  counter_currency: 
+                    type: string
+                    format: nullable
+                  collector_id: 
+                    type: string
+                    example: 0000002
+                  payer: 
+                    type: object
+                    properties: 
+                      type: 
+                        type: string
+                        example: registered
+                      id: 
+                        type: string
+                        example: 000001
+                      email: 
+                        type: string
+                        example: afriend@gmail.com
+                      identification: 
+                        type: object
+                        properties: 
+                          type: 
+                            type: string
+                            example: DNI
+                          number: 
+                            type: string
+                            example: 12345678
+                      phone: 
+                        type: object
+                        properties: 
+                          area_code: 
+                            type: string
+                            format: nullable
+                          number: 
+                            type: string
+                            example: 11123456789
+                          extension: 
+                            type: string
+                            format: nullable
+                      first_name: 
+                        type: string
+                        example: Name
+                      last_name: 
+                        type: string
+                        example: LastName
+                      entity_type: 
+                        type: string
+                        format: nullable
+                  metadata: 
+                    type: object
+                    properties:  
+                  additional_info: 
+                    type: object
+                    properties:  
+                  order: 
+                    type: object
+                    properties:  
+                  external_reference: 
+                    type: string
+                    format: nullable
+                  transaction_amount: 
+                    type: number
+                    example: 250
+                  transaction_amount_refunded: 
+                    type: number
+                    example: 0
+                  coupon_amount: 
+                    type: number
+                    example: 0
+                  differential_pricing_id: 
+                    type: string
+                    format: nullable
+                  deduction_schema: 
+                    type: string
+                    format: nullable
+                  transaction_details: 
+                    type: object
+                    properties: 
+                      net_received_amount: 
+                        type: number
+                        example: 250
+                      total_paid_amount: 
+                        type: number
+                        example: 250
+                      overpaid_amount: 
+                        type: number
+                        example: 0
+                      external_resource_url: 
+                        type: string
+                        format: nullable
+                      installment_amount: 
+                        type: number
+                        example: 250
+                      financial_institution: 
+                        type: string
+                        format: nullable
+                      payment_method_reference_id: 
+                        type: string
+                        format: nullable
+                      payable_deferral_period: 
+                        type: string
+                        format: nullable
+                      acquirer_reference: 
+                        type: string
+                        format: nullable
+                  captured: 
+                    type: boolean
+                  binary_mode: 
+                    type: boolean
+                  call_for_authorize_id: 
+                    type: string
+                    format: nullable
+                  statement_descriptor: 
+                    type: string
+                    format: nullable
+                  installments: 
+                    type: number
+                    example: 1
+                  card: 
+                    type: object
+                    properties:  
+                  notification_url: 
+                    type: string
+                    format: nullable
+                  processing_mode: 
+                    type: string
+                    format: nullable
+                  merchant_account_id: 
+                    type: string
+                    format: nullable
+                  acquirer: 
+                    type: string
+                    format: nullable
+                  merchant_number: 
+                    type: string
+                    format: nullable
 
         '400':
           '1':
@@ -1464,6 +1461,7 @@ paths:
           content:
             application/json:
               schema:
+                type: array
                 items:
                   type: object
                   properties: 

@@ -13,87 +13,86 @@ paths:
           content:
             application/json:
               schema:
-                items:
-                  type: object
-                  properties: 
-                    id: 
-                      type: string
-                      example: 000000001-sT93QZFAsfxU9P5
-                    email: 
-                      type: string
-                      example: bruno@gmail.com
-                    first_name: 
-                      type: string
-                      example: Bruce
-                    last_name: 
-                      type: string
-                      example: Wayne
-                    phone: 
-                      type: object
-                      properties: 
-                        area_code: 
-                          type: string
-                          example: 023
-                        number: 
-                          type: string
-                          example: 12345678
-                    identification: 
-                      type: object
-                      properties: 
-                        type: 
-                          type: string
-                          example: DNI
-                        number: 
-                          type: string
-                          example: 12345678
-                    address: 
-                      type: object
-                      properties: 
-                        id: 
-                          type: string
-                          format: nullable
-                        zip_code: 
-                          type: string
-                          example: SG1 2AX
-                        street_name: 
-                          type: string
-                          example: Old Knebworth Ln
-                        street_number: 
-                          type: string
-                          format: nullable
-                    date_registered: 
-                      type: string
-                      format: nullable
-                    description: 
-                      type: string
-                      example: Lorem Ipsum
-                    date_created: 
-                      type: string
-                      example: 2018-02-20T11:36:23.541-04:00
-                    date_last_updated: 
-                      type: string
-                      format: nullable
-                    metadata: 
+                type: object
+                properties: 
+                  id: 
+                    type: string
+                    example: 000000001-sT93QZFAsfxU9P5
+                  email: 
+                    type: string
+                    example: bruno@gmail.com
+                  first_name: 
+                    type: string
+                    example: Bruce
+                  last_name: 
+                    type: string
+                    example: Wayne
+                  phone: 
+                    type: object
+                    properties: 
+                      area_code: 
+                        type: string
+                        example: 023
+                      number: 
+                        type: string
+                        example: 12345678
+                  identification: 
+                    type: object
+                    properties: 
+                      type: 
+                        type: string
+                        example: DNI
+                      number: 
+                        type: string
+                        example: 12345678
+                  address: 
+                    type: object
+                    properties: 
+                      id: 
+                        type: string
+                        format: nullable
+                      zip_code: 
+                        type: string
+                        example: SG1 2AX
+                      street_name: 
+                        type: string
+                        example: Old Knebworth Ln
+                      street_number: 
+                        type: string
+                        format: nullable
+                  date_registered: 
+                    type: string
+                    format: nullable
+                  description: 
+                    type: string
+                    example: Lorem Ipsum
+                  date_created: 
+                    type: string
+                    example: 2018-02-20T11:36:23.541-04:00
+                  date_last_updated: 
+                    type: string
+                    format: nullable
+                  metadata: 
+                    type: object
+                    properties:  
+                  default_card: 
+                    type: string
+                    format: nullable
+                  default_address: 
+                    type: string
+                    format: nullable
+                  cards: 
+                    type: array
+                    items: 
                       type: object
                       properties:  
-                    default_card: 
-                      type: string
-                      format: nullable
-                    default_address: 
-                      type: string
-                      format: nullable
-                    cards: 
-                      type: array
-                      items: 
-                        type: object
-                        properties:  
-                    addresses: 
-                      type: array
-                      items: 
-                        type: object
-                        properties:  
-                    live_mode: 
-                      type: boolean
+                  addresses: 
+                    type: array
+                    items: 
+                      type: object
+                      properties:  
+                  live_mode: 
+                    type: boolean
 
         '400':
           '100':
@@ -294,253 +293,253 @@ paths:
           content:
             application/json:
               schema:
-                items:
-                  properties:
-                    id:
-                      type: string
-                      description: Customer ID.
-                    email:
-                      type: string
-                      description: Customer's email.
-                    first_name:
-                      type: string
-                      description: Customer's name.
-                    last_name:
-                      type: string
-                      description: Customer's last name.
-                    phone:
-                      type: Object
-                      description: Customer phone's information.
-                      properties:
-                        area_code:
-                          type: string
-                          description: Phone's area code.
-                        number:
-                          type: string
-                          description: Phone's number.
-                    identification:
-                      type: Object
-                      description: Customer identification's information.
-                      properties:
-                        type:
-                          type: string
-                          description: Identification's type.
-                        number:
-                          type: string
-                          description: Identification's number.
-                    default_address:
-                      type: string
-                      description: Customer's default address.
-                    address:
-                      type: Object
-                      description: Default address's information.
-                      properties:
-                        id:
-                          type: string
-                          description: Address ID.
-                        zip_code:
-                          type: string
-                          description: Zip code.
-                        street_name:
-                          type: string
-                          description: Street name.
-                        street_number:
-                          type: string
-                          description: Street number.
-                    date_registered:
-                      type: Date(ISO_8601)
-                      description: Customer's registration date.
-                    description:
-                      type: string
-                      description: Customer's description.
-                    date_created:
-                      type: Date(ISO_8601)
-                      description: Customer's date created.
-                    date_last_updated:
-                      type: Date(ISO_8601)
-                      description: Last modified date.
-                    metadata:
-                      type: Object
-                      description: Customer's metadata.
-                    default_card:
-                      type: string
-                      description: Customer's default card.
-                    cards:
-                      type: Object
-                      description: Customer's cards.
-                      properties:
-                        id:
-                          type: string
-                          description: Card ID.
-                        customer_id:
-                          type: string
-                          description: Customer ID.
-                        expiration_month:
-                          type: number
-                          description: Card's expiration month.
-                        expiration_year:
-                          type: number
-                          description: Card's expiration year.
-                        first_six_digits:
-                          type: string
-                          description: Card's first six digits.
-                        last_four_digits:
-                          type: string
-                          description: Card's last four digits.
-                        payment_method:
-                          type: Object
-                          description: Payment method information.
-                          properties:
-                            id:
-                              type: string
-                              description: Payment method ID.
-                            name:
-                              type: string
-                              description: Payment method name.
-                            payment_type_id:
-                              type: string
-                              description: Payment method type.
-                            thumbnail:
-                              type: string
-                              description: Payment method thumbnail.
-                            secure_thumbnail:
-                              type: string
-                              description: Payment method secure thumbnail.
-                        security_code:
-                          type: Object
-                          description: Security code information.
-                          properties:
-                            length:
-                              type: number
-                              description: Security code's length.
-                            card_location:
-                              type: string
-                              description: Security code's card location.
-                        issuer:
-                          type: Object
-                          description: Issuer information.
-                          properties:
-                            id:
-                              type: number
-                              description: Issuer Id.
-                            name:
-                              type: string
-                              description: Issuer name.
-                        cardholder:
-                          type: Object
-                          description: Card holder information.
-                          properties:
-                            name:
-                              type: number
-                              description: Card holder name.
-                            identification:
-                              type: number
-                              description: Identification information.
-                              properties:
-                                number:
-                                  type: number
-                                  description: Identification number.
-                                subtype:
-                                  type: string
-                                  description: Identification subtype.
-                                type:
-                                  type: string
-                                  description: Identification type.
-                        date_created:
-                          type: Date(ISO_8601)
-                          description: Card's date created.
-                        date_last_updated:
-                          type: Date(ISO_8601)
-                          description: Card's last modified date.
-                    addresses:
-                      type: Object List
-                      description: Customer's addresses.
-                      properties:
-                        id:
-                          type: string
-                          description: Address ID.
-                        phone:
-                          type: string
-                          description: Phone number.
-                        name:
-                          type: string
-                          description: Address name.
-                        floor:
-                          type: string
-                          description: Floor.
-                        apartment:
-                          type: string
-                          description: Apartment.
-                        street_name:
-                          type: string
-                          description: Street name.
-                        street_number:
-                          type: Number
-                          description: Street number.
-                        zip_code:
-                          type: string
-                          description: Postal code of an Address.
-                        city:
-                          type: Object
-                          description: City information.
-                          properties:
-                            id:
-                              type: string
-                              description: City ID.
-                            name:
-                              type: string
-                              description: City name.
-                        state:
-                          type: Object
-                          description: State information.
-                          properties:
-                            id:
-                              type: string
-                              description: State ID.
-                            name:
-                              type: string
-                              description: State name.
-                        country:
-                          type: Object
-                          description: Country information.
-                          properties:
-                            id:
-                              type: string
-                              description: Country ID.
-                            name:
-                              type: string
-                              description: Country name.
-                        neighborhood:
-                          type: Object
-                          description: Neighborhood information.
-                          properties:
-                            id:
-                              type: string
-                              description: Neighborhood ID.
-                            name:
-                              type: string
-                              description: Neighborhood name.
-                        municipality:
-                          type: Object
-                          description: Municipality information.
-                          properties:
-                            id:
-                              type: string
-                              description: Municipality ID.
-                            name:
-                              type: string
-                              description: Municipality name.
-                        comments:
-                          type: string
-                          description: Additional information.
-                        date_created:
-                          type: string
-                          description: Address date created.
-                    live_mode:
-                      type: boolean
-                      description: >-
-                        Whether the customers will be in sandbox or in
-                        production mode.
+                type: object
+                properties:
+                  id:
+                    type: string
+                    description: Customer ID.
+                  email:
+                    type: string
+                    description: Customer's email.
+                  first_name:
+                    type: string
+                    description: Customer's name.
+                  last_name:
+                    type: string
+                    description: Customer's last name.
+                  phone:
+                    type: Object
+                    description: Customer phone's information.
+                    properties:
+                      area_code:
+                        type: string
+                        description: Phone's area code.
+                      number:
+                        type: string
+                        description: Phone's number.
+                  identification:
+                    type: Object
+                    description: Customer identification's information.
+                    properties:
+                      type:
+                        type: string
+                        description: Identification's type.
+                      number:
+                        type: string
+                        description: Identification's number.
+                  default_address:
+                    type: string
+                    description: Customer's default address.
+                  address:
+                    type: Object
+                    description: Default address's information.
+                    properties:
+                      id:
+                        type: string
+                        description: Address ID.
+                      zip_code:
+                        type: string
+                        description: Zip code.
+                      street_name:
+                        type: string
+                        description: Street name.
+                      street_number:
+                        type: string
+                        description: Street number.
+                  date_registered:
+                    type: Date(ISO_8601)
+                    description: Customer's registration date.
+                  description:
+                    type: string
+                    description: Customer's description.
+                  date_created:
+                    type: Date(ISO_8601)
+                    description: Customer's date created.
+                  date_last_updated:
+                    type: Date(ISO_8601)
+                    description: Last modified date.
+                  metadata:
+                    type: Object
+                    description: Customer's metadata.
+                  default_card:
+                    type: string
+                    description: Customer's default card.
+                  cards:
+                    type: Object
+                    description: Customer's cards.
+                    properties:
+                      id:
+                        type: string
+                        description: Card ID.
+                      customer_id:
+                        type: string
+                        description: Customer ID.
+                      expiration_month:
+                        type: number
+                        description: Card's expiration month.
+                      expiration_year:
+                        type: number
+                        description: Card's expiration year.
+                      first_six_digits:
+                        type: string
+                        description: Card's first six digits.
+                      last_four_digits:
+                        type: string
+                        description: Card's last four digits.
+                      payment_method:
+                        type: Object
+                        description: Payment method information.
+                        properties:
+                          id:
+                            type: string
+                            description: Payment method ID.
+                          name:
+                            type: string
+                            description: Payment method name.
+                          payment_type_id:
+                            type: string
+                            description: Payment method type.
+                          thumbnail:
+                            type: string
+                            description: Payment method thumbnail.
+                          secure_thumbnail:
+                            type: string
+                            description: Payment method secure thumbnail.
+                      security_code:
+                        type: Object
+                        description: Security code information.
+                        properties:
+                          length:
+                            type: number
+                            description: Security code's length.
+                          card_location:
+                            type: string
+                            description: Security code's card location.
+                      issuer:
+                        type: Object
+                        description: Issuer information.
+                        properties:
+                          id:
+                            type: number
+                            description: Issuer Id.
+                          name:
+                            type: string
+                            description: Issuer name.
+                      cardholder:
+                        type: Object
+                        description: Card holder information.
+                        properties:
+                          name:
+                            type: number
+                            description: Card holder name.
+                          identification:
+                            type: number
+                            description: Identification information.
+                            properties:
+                              number:
+                                type: number
+                                description: Identification number.
+                              subtype:
+                                type: string
+                                description: Identification subtype.
+                              type:
+                                type: string
+                                description: Identification type.
+                      date_created:
+                        type: Date(ISO_8601)
+                        description: Card's date created.
+                      date_last_updated:
+                        type: Date(ISO_8601)
+                        description: Card's last modified date.
+                  addresses:
+                    type: Object List
+                    description: Customer's addresses.
+                    properties:
+                      id:
+                        type: string
+                        description: Address ID.
+                      phone:
+                        type: string
+                        description: Phone number.
+                      name:
+                        type: string
+                        description: Address name.
+                      floor:
+                        type: string
+                        description: Floor.
+                      apartment:
+                        type: string
+                        description: Apartment.
+                      street_name:
+                        type: string
+                        description: Street name.
+                      street_number:
+                        type: Number
+                        description: Street number.
+                      zip_code:
+                        type: string
+                        description: Postal code of an Address.
+                      city:
+                        type: Object
+                        description: City information.
+                        properties:
+                          id:
+                            type: string
+                            description: City ID.
+                          name:
+                            type: string
+                            description: City name.
+                      state:
+                        type: Object
+                        description: State information.
+                        properties:
+                          id:
+                            type: string
+                            description: State ID.
+                          name:
+                            type: string
+                            description: State name.
+                      country:
+                        type: Object
+                        description: Country information.
+                        properties:
+                          id:
+                            type: string
+                            description: Country ID.
+                          name:
+                            type: string
+                            description: Country name.
+                      neighborhood:
+                        type: Object
+                        description: Neighborhood information.
+                        properties:
+                          id:
+                            type: string
+                            description: Neighborhood ID.
+                          name:
+                            type: string
+                            description: Neighborhood name.
+                      municipality:
+                        type: Object
+                        description: Municipality information.
+                        properties:
+                          id:
+                            type: string
+                            description: Municipality ID.
+                          name:
+                            type: string
+                            description: Municipality name.
+                      comments:
+                        type: string
+                        description: Additional information.
+                      date_created:
+                        type: string
+                        description: Address date created.
+                  live_mode:
+                    type: boolean
+                    description: >-
+                      Whether the customers will be in sandbox or in
+                      production mode.
         '400':
           '100':
               description: the credentials are required.
@@ -650,104 +649,103 @@ paths:
           content:
             application/json:
               schema:
-                items:
-                  type: object
-                  properties: 
-                    paging: 
+                type: object
+                properties: 
+                  paging: 
+                    type: object
+                    properties: 
+                      limit: 
+                        type: number
+                        example: 10
+                      offset: 
+                        type: number
+                        example: 0
+                      total: 
+                        type: number
+                        example: 1
+                  results: 
+                    type: array
+                    items: 
                       type: object
                       properties: 
-                        limit: 
-                          type: number
-                          example: 10
-                        offset: 
-                          type: number
-                          example: 0
-                        total: 
-                          type: number
-                          example: 1
-                    results: 
-                      type: array
-                      items: 
-                        type: object
-                        properties: 
-                          address: 
-                            type: object
-                            properties: 
-                              id: 
-                                type: string
-                                format: nullable
-                              street_name: 
-                                type: string
-                                format: nullable
-                              street_number: 
-                                type: string
-                                format: nullable
-                              zip_code: 
-                                type: string
-                                format: nullable
-                          addresses: 
-                            type: array
-                            items: 
-                              type: object
-                              properties:  
-                          cards: 
-                            type: array
-                            items: 
-                              type: object
-                              properties:  
-                          date_created: 
-                            type: string
-                            example: 2017-05-05T00:00:00.000-04:00
-                          date_last_updated: 
-                            type: string
-                            example: 2017-05-05T09:23:25.021-04:00
-                          date_registered: 
-                            type: string
-                            format: nullable
-                          default_address: 
-                            type: string
-                            format: nullable
-                          default_card: 
-                            type: string
-                            example: 1493990563105
-                          description: 
-                            type: string
-                            format: nullable
-                          email: 
-                            type: string
-                            example: test@test.com
-                          first_name: 
-                            type: string
-                            format: nullable
-                          id: 
-                            type: string
-                            example: 123456789-jxOV430go9fx2e
-                          identification: 
-                            type: object
-                            properties: 
-                              number: 
-                                type: string
-                                format: nullable
-                              type: 
-                                type: string
-                                format: nullable
-                          last_name: 
-                            type: string
-                            format: nullable
-                          live_mode: 
-                            type: boolean
-                          metadata: 
+                        address: 
+                          type: object
+                          properties: 
+                            id: 
+                              type: string
+                              format: nullable
+                            street_name: 
+                              type: string
+                              format: nullable
+                            street_number: 
+                              type: string
+                              format: nullable
+                            zip_code: 
+                              type: string
+                              format: nullable
+                        addresses: 
+                          type: array
+                          items: 
                             type: object
                             properties:  
-                          phone: 
+                        cards: 
+                          type: array
+                          items: 
                             type: object
-                            properties: 
-                              area_code: 
-                                type: string
-                                format: nullable
-                              number: 
-                                type: string
-                                format: nullable
+                            properties:  
+                        date_created: 
+                          type: string
+                          example: 2017-05-05T00:00:00.000-04:00
+                        date_last_updated: 
+                          type: string
+                          example: 2017-05-05T09:23:25.021-04:00
+                        date_registered: 
+                          type: string
+                          format: nullable
+                        default_address: 
+                          type: string
+                          format: nullable
+                        default_card: 
+                          type: string
+                          example: 1493990563105
+                        description: 
+                          type: string
+                          format: nullable
+                        email: 
+                          type: string
+                          example: test@test.com
+                        first_name: 
+                          type: string
+                          format: nullable
+                        id: 
+                          type: string
+                          example: 123456789-jxOV430go9fx2e
+                        identification: 
+                          type: object
+                          properties: 
+                            number: 
+                              type: string
+                              format: nullable
+                            type: 
+                              type: string
+                              format: nullable
+                        last_name: 
+                          type: string
+                          format: nullable
+                        live_mode: 
+                          type: boolean
+                        metadata: 
+                          type: object
+                          properties:  
+                        phone: 
+                          type: object
+                          properties: 
+                            area_code: 
+                              type: string
+                              format: nullable
+                            number: 
+                              type: string
+                              format: nullable
 
         '400':
           '100':

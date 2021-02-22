@@ -11,8 +11,9 @@ paths:
           content:
             application/json:
               schema:
+                type: array
                 items:
-                  type: array
+                  type: object
                   properties:
                     id:
                       type: string

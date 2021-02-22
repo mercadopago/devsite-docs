@@ -19,64 +19,64 @@ paths:
           content:
             application/json:
               schema:
-                items:
-                  properties:
-                    id:
-                      type: string
-                      description: Chargeback identifier
-                    payments:
-                      type: array
-                      description: List of payments ids associated to the case
-                      items:
-                        type: number
-                    currency:
-                      type: string
-                      description: 'Amount''s currency '
-                    amount:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    description: Chargeback identifier
+                  payments:
+                    type: array
+                    description: List of payments ids associated to the case
+                    items:
                       type: number
-                      description: Chargeback's amount
-                    coverage_applied:
-                      type: boolean
-                      description: Whether the seller has been covered or not
-                    coverage_elegible:
-                      type: boolean
-                      description: >-
-                        Whether the chargeback complies with the conditions to
-                        be covered
-                    documentation_required:
-                      type: boolean
-                      description: >-
-                        Whether the seller needs to send documentation for this
-                        chargeback
-                    documentation_status:
-                      type: string
-                      description: Detail of decision taken for the documentation
-                    documentation:
-                      type: array
-                      description: List of documentation received from the seller
-                      items:
-                        type: object
-                        properties:
-                          type:
-                            type: string
-                            description: Documentation's file type
-                          url:
-                            type: string
-                            description: Url to see the documentation file
-                          description:
-                            type: string
-                            description: Documentation's description
-                    date_documentation_deadline:
-                      type: Date(ISO_8601)
-                      description: Chargeback's last day to send documentation
-                    date_created:
-                      type: Date(ISO_8601)
-                      description: Chargeback’s creation date
-                    date_last_updated:
-                      type: Date(ISO_8601)
-                      description: Chargeback's last modified date
-                    live_mode:
-                      type: boolean
-                      description: >-
-                        Whether the chargeback will be processed in sandbox or
-                        in production mode
+                  currency:
+                    type: string
+                    description: 'Amount''s currency '
+                  amount:
+                    type: number
+                    description: Chargeback's amount
+                  coverage_applied:
+                    type: boolean
+                    description: Whether the seller has been covered or not
+                  coverage_elegible:
+                    type: boolean
+                    description: >-
+                      Whether the chargeback complies with the conditions to
+                      be covered
+                  documentation_required:
+                    type: boolean
+                    description: >-
+                      Whether the seller needs to send documentation for this
+                      chargeback
+                  documentation_status:
+                    type: string
+                    description: Detail of decision taken for the documentation
+                  documentation:
+                    type: array
+                    description: List of documentation received from the seller
+                    items:
+                      type: object
+                      properties:
+                        type:
+                          type: string
+                          description: Documentation's file type
+                        url:
+                          type: string
+                          description: Url to see the documentation file
+                        description:
+                          type: string
+                          description: Documentation's description
+                  date_documentation_deadline:
+                    type: Date(ISO_8601)
+                    description: Chargeback's last day to send documentation
+                  date_created:
+                    type: Date(ISO_8601)
+                    description: Chargeback’s creation date
+                  date_last_updated:
+                    type: Date(ISO_8601)
+                    description: Chargeback's last modified date
+                  live_mode:
+                    type: boolean
+                    description: >-
+                      Whether the chargeback will be processed in sandbox or
+                      in production mode

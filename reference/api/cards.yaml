@@ -19,11 +19,14 @@ paths:
           content:
             application/json:
               schema:
+                type: array
                 items:
+                  type: object
                   properties:
                     id:
                       type: string
                       description: Card ID.
+                      example: 123123-ABD123DIGKBKI991-123
                     date_registered:
                       type: string
                       description: Nao sei o que é
@@ -226,89 +229,88 @@ paths:
           content:
             application/json:
               schema:
-                items:
-                  type: object
-                  properties: 
-                    id: 
-                      type: string
-                      example: 1562188766852
-                    expiration_month: 
-                      type: number
-                      example: 6
-                    expiration_year: 
-                      type: number
-                      example: 2023
-                    first_six_digits: 
-                      type: string
-                      example: 423564
-                    last_four_digits: 
-                      type: string
-                      example: 5682
-                    payment_method: 
-                      type: object
-                      properties: 
-                        id: 
-                          type: string
-                          example: visa
-                        name: 
-                          type: string
-                          example: visa
-                        payment_type_id: 
-                          type: string
-                          example: credit_card
-                        thumbnail: 
-                          type: string
-                          example: http://img.mlstatic.com/org-img/MP3/API/logos/visa.gif
-                        secure_thumbnail: 
-                          type: string
-                          example: https://www.mercadopago.com/org-img/MP3/API/logos/visa.gif
-                    security_code: 
-                      type: object
-                      properties: 
-                        length: 
-                          type: number
-                          example: 3
-                        card_location: 
-                          type: string
-                          example: back
-                    issuer: 
-                      type: object
-                      properties: 
-                        id: 
-                          type: number
-                          example: 25
-                        name: 
-                          type: string
-                          example: Visa
-                    cardholder: 
-                      type: object
-                      properties: 
-                        name: 
-                          type: string
-                          example: APRO
-                        identification: 
-                          type: object
-                          properties: 
-                            number: 
-                              type: string
-                              example: 19119119100
-                            type: 
-                              type: string
-                              example: CPF
-                    date_created: 
-                      type: string
-                      example: 2019-07-03T17:15:35.000-04:00
-                    date_last_updated: 
-                      type: string
-                      example: 2019-07-03T17:19:18.000-04:00
-                    customer_id: 
-                      type: string
-                      example: 448870796-7ZjwhKGxILixxN
-                    user_id: 
-                      type: string
-                      example: 448870796
-                    live_mode: 
-                      type: boolean
+                type: object
+                properties: 
+                  id: 
+                    type: string
+                    example: 1562188766852
+                  expiration_month: 
+                    type: number
+                    example: 6
+                  expiration_year: 
+                    type: number
+                    example: 2023
+                  first_six_digits: 
+                    type: string
+                    example: 423564
+                  last_four_digits: 
+                    type: string
+                    example: 5682
+                  payment_method: 
+                    type: object
+                    properties: 
+                      id: 
+                        type: string
+                        example: visa
+                      name: 
+                        type: string
+                        example: visa
+                      payment_type_id: 
+                        type: string
+                        example: credit_card
+                      thumbnail: 
+                        type: string
+                        example: http://img.mlstatic.com/org-img/MP3/API/logos/visa.gif
+                      secure_thumbnail: 
+                        type: string
+                        example: https://www.mercadopago.com/org-img/MP3/API/logos/visa.gif
+                  security_code: 
+                    type: object
+                    properties: 
+                      length: 
+                        type: number
+                        example: 3
+                      card_location: 
+                        type: string
+                        example: back
+                  issuer: 
+                    type: object
+                    properties: 
+                      id: 
+                        type: number
+                        example: 25
+                      name: 
+                        type: string
+                        example: Visa
+                  cardholder: 
+                    type: object
+                    properties: 
+                      name: 
+                        type: string
+                        example: APRO
+                      identification: 
+                        type: object
+                        properties: 
+                          number: 
+                            type: string
+                            example: 19119119100
+                          type: 
+                            type: string
+                            example: CPF
+                  date_created: 
+                    type: string
+                    example: 2019-07-03T17:15:35.000-04:00
+                  date_last_updated: 
+                    type: string
+                    example: 2019-07-03T17:19:18.000-04:00
+                  customer_id: 
+                    type: string
+                    example: 448870796-7ZjwhKGxILixxN
+                  user_id: 
+                    type: string
+                    example: 448870796
+                  live_mode: 
+                    type: boolean
 
         '400':
           '100':
@@ -407,99 +409,119 @@ paths:
             description: not_found.
   /customers/{customer_id}/cards/{id}:
     get:
+      tags: 
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
+      summary: "Get a customer card"
+      description: "Get a customer card"
+      parameters:
+        - name: customer_id
+          in: path
+          description: Customer's Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: id
+          in: path
+          description: Card's Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
       responses:
         '200':
           content:
             application/json:
               schema:
-                items:
-                  properties:
-                    id:
-                      type: string
-                      description: Card ID.
-                    date_registered:
-                      type: string
-                      description: Nao sei o que é
-                    date_created:
-                      type: Date(ISO_8601)
-                      description: Card's date created.
-                    date_last_updated:
-                      type: Date(ISO_8601)
-                      description: Card's last modified date.
-                    customer_id:
-                      type: string
-                      description: Customer ID.
-                    expiration_month:
-                      type: number
-                      description: Card's expiration month.
-                    expiration_year:
-                      type: number
-                      description: Card's expiration year.
-                    first_six_digits:
-                      type: string
-                      description: Card's first six digits.
-                    last_four_digits:
-                      type: string
-                      description: Card's last four digits.
-                    payment_method:
-                      type: object
-                      description: Payment method information.
-                      properties:
-                        id:
-                          type: string
-                          description: Payment method ID.
-                        name:
-                          type: string
-                          description: Payment method name.
-                        payment_type_id:
-                          type: string
-                          description: Payment method type.
-                        thumbnail:
-                          type: string
-                          description: Payment method thumbnail.
-                        secure_thumbnail:
-                          type: string
-                          description: Payment method secure thumbnail.
-                    security_code:
-                      type: object
-                      description: Security code information.
-                      properties:
-                        length:
-                          type: number
-                          description: Security code's length.
-                        card_location:
-                          type: string
-                          description: Security code's card location.
-                    issuer:
-                      type: object
-                      description: Issuer information.
-                      properties:
-                        id:
-                          type: number
-                          description: Issuer Id.
-                        name:
-                          type: string
-                          description: Issuer name.
-                    cardholder:
-                      type: object
-                      description: Card holder information.
-                      properties:
-                        name:
-                          type: number
-                          description: Card holder name.
-                        identification:
-                          type: number
-                          description: Identification information.
-                          properties:
-                            number:
-                              type: number
-                              description: Identification number.
-                            subtype:
-                              type: string
-                              description: Identification subtype.
-                            type:
-                              type: string
-                              description: Identification type.
+                type: object
+                properties:
+                  id:
+                    type: string
+                    description: Card ID.
+                  date_registered:
+                    type: string
+                    description: Nao sei o que é
+                  date_created:
+                    type: Date(ISO_8601)
+                    description: Card's date created.
+                  date_last_updated:
+                    type: Date(ISO_8601)
+                    description: Card's last modified date.
+                  customer_id:
+                    type: string
+                    description: Customer ID.
+                  expiration_month:
+                    type: number
+                    description: Card's expiration month.
+                  expiration_year:
+                    type: number
+                    description: Card's expiration year.
+                  first_six_digits:
+                    type: string
+                    description: Card's first six digits.
+                  last_four_digits:
+                    type: string
+                    description: Card's last four digits.
+                  payment_method:
+                    type: object
+                    description: Payment method information.
+                    properties:
+                      id:
+                        type: string
+                        description: Payment method ID.
+                      name:
+                        type: string
+                        description: Payment method name.
+                      payment_type_id:
+                        type: string
+                        description: Payment method type.
+                      thumbnail:
+                        type: string
+                        description: Payment method thumbnail.
+                      secure_thumbnail:
+                        type: string
+                        description: Payment method secure thumbnail.
+                  security_code:
+                    type: object
+                    description: Security code information.
+                    properties:
+                      length:
+                        type: number
+                        description: Security code's length.
+                      card_location:
+                        type: string
+                        description: Security code's card location.
+                  issuer:
+                    type: object
+                    description: Issuer information.
+                    properties:
+                      id:
+                        type: number
+                        description: Issuer Id.
+                      name:
+                        type: string
+                        description: Issuer name.
+                  cardholder:
+                    type: object
+                    description: Card holder information.
+                    properties:
+                      name:
+                        type: number
+                        description: Card holder name.
+                      identification:
+                        type: number
+                        description: Identification information.
+                        properties:
+                          number:
+                            type: number
+                            description: Identification number.
+                          subtype:
+                            type: string
+                            description: Identification subtype.
+                          type:
+                            type: string
+                            description: Identification type.
         '400':
           '100':
             description: the credentials are required.
@@ -596,6 +618,26 @@ paths:
           not_found:
             description: not_found.
     put:
+      tags: 
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
+      summary: "Update a customer card"
+      description: "Update a customer card"
+      parameters:
+        - name: customer_id
+          in: path
+          description: Customer's Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: id
+          in: path
+          description: Card's Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
       requestBody:
         properties:
           date_registered:
@@ -698,6 +740,26 @@ paths:
           not_found:
             description: not_found.
     delete:
+      tags: 
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
+      summary: "Delete a customer card"
+      description: "Delete a customer card"
+      parameters:
+        - name: customer_id
+          in: path
+          description: Customer's Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: id
+          in: path
+          description: Card's Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
       responses:
         '400':
           '100':
