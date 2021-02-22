@@ -7,74 +7,78 @@ paths:
       summary: "Create a merchant order"
       description: "Create a merchant order."
       requestBody:
-        properties:
-          external_reference:
-            type: string
-            description: Reference you can synchronize with your payment system.
-          preference_id:
-            type: string
-            description: Payment preference identifier associated to the merchant order.
-          marketplace:
-            type: string
-            description: 'Origin of the payment. Default value: ''NONE'''
-          notification_url:
-            type: string
-            description: URL where you'd like to receive a payment notification.
-          sponsor_id:
-            type: number
-            description: Sponsor ID in Mercado Pago.
-          payer:
-            type: Object
-            description: Buyer Information.
-            properties:
-              id:
-                type: number
-                description: Buyer id.
-              email:
-                type: string
-                description: Deprecated field, will return an empty string.
-              nickname:
-                type: string
-                description: Buyer nickname.
-          site_id:
-            type: string
-            description: Country identifier that merchant order belongs to.
-          items:
-            type: array
-            description: items information.
-            items:
+        content:
+          application/json:
+            schema:
               type: object
               properties:
-                id:
+                external_reference:
                   type: string
-                  description: Item id.
-                category_id:
+                  description: Reference you can synchronize with your payment system.
+                preference_id:
                   type: string
-                  description: Item category.
-                currency_id:
+                  description: Payment preference identifier associated to the merchant order.
+                marketplace:
                   type: string
-                  description: ID of the currency used in the item price.
-                description:
+                  description: 'Origin of the payment. Default value: ''NONE'''
+                notification_url:
                   type: string
-                  description: Item description.
-                picture_url:
-                  type: string
-                  description: Item picture URL.
-                quantity:
+                  description: URL where you'd like to receive a payment notification.
+                sponsor_id:
                   type: number
-                  description: Item quantity.
-                unit_price:
-                  type: number
-                  description: Item unit price.
-                title:
+                  description: Sponsor ID in Mercado Pago.
+                payer:
+                  type: Object
+                  description: Buyer Information.
+                  properties:
+                    id:
+                      type: number
+                      description: Buyer id.
+                    email:
+                      type: string
+                      description: Deprecated field, will return an empty string.
+                    nickname:
+                      type: string
+                      description: Buyer nickname.
+                site_id:
                   type: string
-                  description: Item title.
-          additional_info:
-            type: string
-            description: Additional information.
-          application_id:
-            type: string
-            description: application identifier.
+                  description: Country identifier that merchant order belongs to.
+                items:
+                  type: array
+                  description: items information.
+                  items:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        description: Item id.
+                      category_id:
+                        type: string
+                        description: Item category.
+                      currency_id:
+                        type: string
+                        description: ID of the currency used in the item price.
+                      description:
+                        type: string
+                        description: Item description.
+                      picture_url:
+                        type: string
+                        description: Item picture URL.
+                      quantity:
+                        type: number
+                        description: Item quantity.
+                      unit_price:
+                        type: number
+                        description: Item unit price.
+                      title:
+                        type: string
+                        description: Item title.
+                additional_info:
+                  type: string
+                  description: Additional information.
+                application_id:
+                  type: string
+                  description: application identifier.
       responses:
         '200':
           content:
@@ -1027,230 +1031,234 @@ paths:
             type: number
             example: 123123123
       requestBody:
-        properties:
-          external_reference:
-            type: string
-            description: Reference you can synchronize with your payment system.
-          additional_info:
-            type: string
-            description: Additional information.
-          shipments:
-            type: array
-            description: Shipments information.
-            items:
+        content:
+          application/json:
+            schema:
               type: object
               properties:
-                id:
-                  type: number
-                  description: Shipping identifier.
-                shipment_type:
+                external_reference:
                   type: string
-                  description: Shipping type.
-                shipping_mode:
+                  description: Reference you can synchronize with your payment system.
+                additional_info:
                   type: string
-                  description: Shipping mode.
-                picking_type:
-                  type: string
-                  description: Shipping picking type.
-                status:
-                  type: string
-                  description: Shipping picking type.
-                substatus:
-                  type: string
-                  description: Shipping picking type.
-                items:
+                  description: Additional information.
+                shipments:
                   type: array
-                  description: Shipping items.
+                  description: Shipments information.
                   items:
                     type: object
-                date_created:
-                  type: Date(ISO_8601)
-                  description: Shipping's creation date.
-                last_modified:
-                  type: Date(ISO_8601)
-                  description: Shipping's last modification date.
-                date_first_printed:
-                  type: Date(ISO_8601)
-                  description: Shipping's first printed date.
-                service_id:
+                    properties:
+                      id:
+                        type: number
+                        description: Shipping identifier.
+                      shipment_type:
+                        type: string
+                        description: Shipping type.
+                      shipping_mode:
+                        type: string
+                        description: Shipping mode.
+                      picking_type:
+                        type: string
+                        description: Shipping picking type.
+                      status:
+                        type: string
+                        description: Shipping picking type.
+                      substatus:
+                        type: string
+                        description: Shipping picking type.
+                      items:
+                        type: array
+                        description: Shipping items.
+                        items:
+                          type: object
+                      date_created:
+                        type: Date(ISO_8601)
+                        description: Shipping's creation date.
+                      last_modified:
+                        type: Date(ISO_8601)
+                        description: Shipping's last modification date.
+                      date_first_printed:
+                        type: Date(ISO_8601)
+                        description: Shipping's first printed date.
+                      service_id:
+                        type: string
+                        description: Shipping service identifier.
+                      sender_id:
+                        type: number
+                        description: Sender identifier.
+                      receiver_id:
+                        type: number
+                        description: Receiver identifier.
+                      receiver_address:
+                        type: Object
+                        description: Shipping address.
+                        properties:
+                          id:
+                            type: number
+                            description: Identifier of receiver address.
+                          address_line:
+                            type: string
+                            description: Street name and number of receiver address.
+                          apartment:
+                            type: string
+                            description: Apartment.
+                          city:
+                            type: Object
+                            description: Information about receiver address city.
+                            properties:
+                              id:
+                                type: string
+                                description: City identifier.
+                              name:
+                                type: string
+                                description: City name.
+                          country:
+                            type: Object
+                            description: Information about receiver address country.
+                            properties:
+                              id:
+                                type: string
+                                description: Country identifier.
+                              name:
+                                type: string
+                                description: Country name.
+                          state:
+                            type: Object
+                            description: Information about receiver address state.
+                            properties:
+                              id:
+                                type: string
+                                description: State identifier.
+                              name:
+                                type: string
+                                description: State name.
+                          comment:
+                            type: string
+                            description: Comment about receiver address.
+                          contact:
+                            type: string
+                            description: Contact information.
+                          zip_code:
+                            type: string
+                            description: Zip code.
+                          street_name:
+                            type: string
+                            description: Street name.
+                          street_number:
+                            type: string
+                            description: Street number.
+                          floor:
+                            type: string
+                            description: Floor.
+                          phone:
+                            type: string
+                            description: Receiver address phone.
+                          latitude:
+                            type: string
+                            description: Receiver address latitude.
+                          longitude:
+                            type: string
+                            description: Receiver address longitude.
+                      shipping_option:
+                        type: Object
+                        description: Shipping options.
+                        properties:
+                          cost:
+                            type: number
+                            description: Net cost absorbed by the receiver.
+                          currency_id:
+                            type: string
+                            description: Currency identifier.
+                          estimated_delivery:
+                            type: Object
+                            description: Estimated delivery time information.
+                            properties:
+                              date:
+                                type: Date(ISO_8601)
+                                description: Estimated delivery date.
+                              time_from:
+                                type: string
+                                description: Estimated lower delivery time.
+                              time_to:
+                                type: string
+                                description: Estimated upper delivery time.
+                          id:
+                            type: number
+                            description: Shipping option identifier.
+                          list_cost:
+                            type: number
+                            description: Net cost of the shipping.
+                          name:
+                            type: string
+                            description: Option name.
+                          shipping_method_id:
+                            type: number
+                            description: Shipping method identifier.
+                          speed:
+                            type: Object
+                            description: Shipping time information.
+                            properties:
+                              handling:
+                                type: number
+                                description: Handling time.
+                              shipping:
+                                type: number
+                                description: Shipping time.
+                marketplace:
                   type: string
-                  description: Shipping service identifier.
-                sender_id:
+                  description: 'Origin of the payment. Default value: ''NONE'''
+                notification_url:
+                  type: string
+                  description: URL where you'd like to receive a payment notification.
+                sponsor_id:
                   type: number
-                  description: Sender identifier.
-                receiver_id:
-                  type: number
-                  description: Receiver identifier.
-                receiver_address:
+                  description: Sponsor ID in Mercado Pago.
+                site_id:
+                  type: string
+                  description: Country identifier that merchant order belongs to.
+                payer:
                   type: Object
-                  description: Shipping address.
+                  description: Buyer Information.
                   properties:
                     id:
                       type: number
-                      description: Identifier of receiver address.
-                    address_line:
+                      description: Buyer id.
+                    email:
                       type: string
-                      description: Street name and number of receiver address.
-                    apartment:
+                      description: Deprecated field, will return an empty string.
+                    nickname:
                       type: string
-                      description: Apartment.
-                    city:
-                      type: Object
-                      description: Information about receiver address city.
-                      properties:
-                        id:
-                          type: string
-                          description: City identifier.
-                        name:
-                          type: string
-                          description: City name.
-                    country:
-                      type: Object
-                      description: Information about receiver address country.
-                      properties:
-                        id:
-                          type: string
-                          description: Country identifier.
-                        name:
-                          type: string
-                          description: Country name.
-                    state:
-                      type: Object
-                      description: Information about receiver address state.
-                      properties:
-                        id:
-                          type: string
-                          description: State identifier.
-                        name:
-                          type: string
-                          description: State name.
-                    comment:
-                      type: string
-                      description: Comment about receiver address.
-                    contact:
-                      type: string
-                      description: Contact information.
-                    zip_code:
-                      type: string
-                      description: Zip code.
-                    street_name:
-                      type: string
-                      description: Street name.
-                    street_number:
-                      type: string
-                      description: Street number.
-                    floor:
-                      type: string
-                      description: Floor.
-                    phone:
-                      type: string
-                      description: Receiver address phone.
-                    latitude:
-                      type: string
-                      description: Receiver address latitude.
-                    longitude:
-                      type: string
-                      description: Receiver address longitude.
-                shipping_option:
-                  type: Object
-                  description: Shipping options.
-                  properties:
-                    cost:
-                      type: number
-                      description: Net cost absorbed by the receiver.
-                    currency_id:
-                      type: string
-                      description: Currency identifier.
-                    estimated_delivery:
-                      type: Object
-                      description: Estimated delivery time information.
-                      properties:
-                        date:
-                          type: Date(ISO_8601)
-                          description: Estimated delivery date.
-                        time_from:
-                          type: string
-                          description: Estimated lower delivery time.
-                        time_to:
-                          type: string
-                          description: Estimated upper delivery time.
-                    id:
-                      type: number
-                      description: Shipping option identifier.
-                    list_cost:
-                      type: number
-                      description: Net cost of the shipping.
-                    name:
-                      type: string
-                      description: Option name.
-                    shipping_method_id:
-                      type: number
-                      description: Shipping method identifier.
-                    speed:
-                      type: Object
-                      description: Shipping time information.
-                      properties:
-                        handling:
-                          type: number
-                          description: Handling time.
-                        shipping:
-                          type: number
-                          description: Shipping time.
-          marketplace:
-            type: string
-            description: 'Origin of the payment. Default value: ''NONE'''
-          notification_url:
-            type: string
-            description: URL where you'd like to receive a payment notification.
-          sponsor_id:
-            type: number
-            description: Sponsor ID in Mercado Pago.
-          site_id:
-            type: string
-            description: Country identifier that merchant order belongs to.
-          payer:
-            type: Object
-            description: Buyer Information.
-            properties:
-              id:
-                type: number
-                description: Buyer id.
-              email:
-                type: string
-                description: Deprecated field, will return an empty string.
-              nickname:
-                type: string
-                description: Buyer nickname.
-          items:
-            type: array
-            description: items information.
-            items:
-              type: object
-              properties:
-                id:
-                  type: string
-                  description: Item id.
-                category_id:
-                  type: string
-                  description: Item category.
-                currency_id:
-                  type: string
-                  description: ID of the currency used in the item price.
-                description:
-                  type: string
-                  description: Item description.
-                picture_url:
-                  type: string
-                  description: Item picture URL.
-                quantity:
-                  type: number
-                  description: Item quantity.
-                unit_price:
-                  type: number
-                  description: Item unit price.
-                title:
-                  type: string
-                  description: Item title.
+                      description: Buyer nickname.
+                items:
+                  type: array
+                  description: items information.
+                  items:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        description: Item id.
+                      category_id:
+                        type: string
+                        description: Item category.
+                      currency_id:
+                        type: string
+                        description: ID of the currency used in the item price.
+                      description:
+                        type: string
+                        description: Item description.
+                      picture_url:
+                        type: string
+                        description: Item picture URL.
+                      quantity:
+                        type: number
+                        description: Item quantity.
+                      unit_price:
+                        type: number
+                        description: Item unit price.
+                      title:
+                        type: string
+                        description: Item title.
       responses:
         '400':
           invalid_user_id:

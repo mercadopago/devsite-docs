@@ -7,47 +7,51 @@ paths:
       summary: "Create a subscription preference"
       description: "Create a subscription preference."
       requestBody:
-        properties:
-          auto_recurring:
-            type: Object
-            description: Recurring data.
-            properties:
-              frequency:
-                type: number
-                description: Recurring frecuency.
-              frequency_type:
-                type: string
-                description: Recurring frecuency type (days or months).
-              transaction_amount:
-                type: Number
-                description: Recurring amount.
-              currency_id:
-                type: string
-                description: Currency Id.
-              start_date:
-                type: Date(ISO_8601)
-                description: preapproval's start date.
-              end_date:
-                type: Date(ISO_8601)
-                description: preapproval's end date.
-          back_url:
-            type: string
-            description: Return URL.
-          collector_id:
-            type: string
-            description: Seller ID.
-          external_reference:
-            type: string
-            description: Preapproval reference value.
-          payer_email:
-            type: string
-            description: Customer's e-mail.
-          reason:
-            type: string
-            description: Preapproval titlte.
-          status:
-            type: string
-            description: Preapproval status.
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                auto_recurring:
+                  type: Object
+                  description: Recurring data.
+                  properties:
+                    frequency:
+                      type: number
+                      description: Recurring frecuency.
+                    frequency_type:
+                      type: string
+                      description: Recurring frecuency type (days or months).
+                    transaction_amount:
+                      type: Number
+                      description: Recurring amount.
+                    currency_id:
+                      type: string
+                      description: Currency Id.
+                    start_date:
+                      type: Date(ISO_8601)
+                      description: preapproval's start date.
+                    end_date:
+                      type: Date(ISO_8601)
+                      description: preapproval's end date.
+                back_url:
+                  type: string
+                  description: Return URL.
+                collector_id:
+                  type: string
+                  description: Seller ID.
+                external_reference:
+                  type: string
+                  description: Preapproval reference value.
+                payer_email:
+                  type: string
+                  description: Customer's e-mail.
+                reason:
+                  type: string
+                  description: Preapproval titlte.
+                status:
+                  type: string
+                  description: Preapproval status.
       responses:
         '200':
           content:

@@ -7,36 +7,40 @@ paths:
       summary: "Create a POS"
       description: "Create a POS."
       requestBody:
-        properties:
-          name:
-            type: string
-            description: Name of the POS. (Required)
-          fixed_amount:
-            type: boolean
-            description: >-
-              Define if the customer can insert the amount to be paid.
-              (Required)
-          category:
-            type: number
-            description: >-
-              MCC code that indicates the category of the Point of Sale. If not
-              specified, it remains as a generic category.
-          store_id:
-            type: string
-            description: Store identifier to which the point of sale belongs.
-          external_store_id:
-            type: string
-            description: >-
-              External_id of the store to which the pos belongs defined by
-              integrator system. (Required)
-          external_id:
-            type: string
-            description: Unique identifier of the pos defined by integrator system.
-          url:
-            type: string
-            description: >-
-              URL to get the order of the integrator system. It is optional and
-              is used only in the unattended integration model.
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: Name of the POS. (Required)
+                fixed_amount:
+                  type: boolean
+                  description: >-
+                    Define if the customer can insert the amount to be paid.
+                    (Required)
+                category:
+                  type: number
+                  description: >-
+                    MCC code that indicates the category of the Point of Sale. If not
+                    specified, it remains as a generic category.
+                store_id:
+                  type: string
+                  description: Store identifier to which the point of sale belongs.
+                external_store_id:
+                  type: string
+                  description: >-
+                    External_id of the store to which the pos belongs defined by
+                    integrator system. (Required)
+                external_id:
+                  type: string
+                  description: Unique identifier of the pos defined by integrator system.
+                url:
+                  type: string
+                  description: >-
+                    URL to get the order of the integrator system. It is optional and
+                    is used only in the unattended integration model.
       responses:
         '200':
           content:
@@ -294,36 +298,40 @@ paths:
             type: string
             example: 12123adfasdf123u4u
       requestBody:
-        properties:
-          id:
-            type: string
-            description: POS identifier, numerical and self-generated.
-          name:
-            type: string
-            description: Name of the POS. (Required)
-          fixed_amount:
-            type: boolean
-            description: >-
-              Define if the customer can insert the amount to be paid.
-              (Required)
-          category:
-            type: number
-            description: >-
-              MCC code that indicates the category of the Point of Sale. If not
-              specified, it remains as a generic category.
-          store_id:
-            type: string
-            description: Store identifier to which the point of sale belongs.
-          external_store_id:
-            type: string
-            description: >-
-              External_id of the store to which the pos belongs defined by
-              integrator system. (Required)
-          url:
-            type: string
-            description: >-
-              URL to get the order of the integrator system. It is optional and
-              is used only in the unattended integration model.
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                  description: POS identifier, numerical and self-generated.
+                name:
+                  type: string
+                  description: Name of the POS. (Required)
+                fixed_amount:
+                  type: boolean
+                  description: >-
+                    Define if the customer can insert the amount to be paid.
+                    (Required)
+                category:
+                  type: number
+                  description: >-
+                    MCC code that indicates the category of the Point of Sale. If not
+                    specified, it remains as a generic category.
+                store_id:
+                  type: string
+                  description: Store identifier to which the point of sale belongs.
+                external_store_id:
+                  type: string
+                  description: >-
+                    External_id of the store to which the pos belongs defined by
+                    integrator system. (Required)
+                url:
+                  type: string
+                  description: >-
+                    URL to get the order of the integrator system. It is optional and
+                    is used only in the unattended integration model.
       responses:
         '400':
           MISSING_BODY:

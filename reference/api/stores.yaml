@@ -104,52 +104,56 @@ paths:
             type: string
             example: 12123adfasdf123u4u
       requestBody:
-        properties:
-          id:
-            type: string
-            description: Store identifier, numerical and self-generated.
-          user_id:
-            type: string
-            description: User identifier.
-          name:
-            type: string
-            description: Store name. (Required)
-          business_hours:
-            type: string
-            description: >-
-              Business hours. They are divided by day of the week and up to two
-              opening and closing times per day are allowed.
-          external_id:
-            type: string
-            description: Unique identifier of the store defined by integrator system.
-          location:
-            type: Object
-            description: Store location. (Required)
-            properties:
-              zip_code:
-                type: string
-                description: Zip code.
-              street_number:
-                type: number
-                description: Number. (Required)
-              street_name:
-                type: string
-                description: Street name. (Required)
-              city_name:
-                type: string
-                description: City.(Required)
-              state_name:
-                type: Object
-                description: State. (Required)
-              latitude:
-                type: string
-                description: Latitude. (Required)
-              logitude:
-                type: string
-                description: Longitude. (Required)
-              reference:
-                type: string
-                description: Reference.
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                  description: Store identifier, numerical and self-generated.
+                user_id:
+                  type: string
+                  description: User identifier.
+                name:
+                  type: string
+                  description: Store name. (Required)
+                business_hours:
+                  type: string
+                  description: >-
+                    Business hours. They are divided by day of the week and up to two
+                    opening and closing times per day are allowed.
+                external_id:
+                  type: string
+                  description: Unique identifier of the store defined by integrator system.
+                location:
+                  type: Object
+                  description: Store location. (Required)
+                  properties:
+                    zip_code:
+                      type: string
+                      description: Zip code.
+                    street_number:
+                      type: number
+                      description: Number. (Required)
+                    street_name:
+                      type: string
+                      description: Street name. (Required)
+                    city_name:
+                      type: string
+                      description: City.(Required)
+                    state_name:
+                      type: Object
+                      description: State. (Required)
+                    latitude:
+                      type: string
+                      description: Latitude. (Required)
+                    logitude:
+                      type: string
+                      description: Longitude. (Required)
+                    reference:
+                      type: string
+                      description: Reference.
       responses:
         '200':
           content:
@@ -384,49 +388,53 @@ paths:
             type: string
             example: 12123adfasdf123u4u
       requestBody:
-        properties:
-          id:
-            type: string
-            description: Store identifier, numerical and self-generated.
-          user_id:
-            type: string
-            description: User identifier.
-          name:
-            type: string
-            description: Store name. (Required)
-          business_hours:
-            type: string
-            description: >-
-              Business hours. They are divided by day of the week and up to two
-              opening and closing times per day are allowed.
-          location:
-            type: Object
-            description: Store location. (Required)
-            properties:
-              zip_code:
-                type: string
-                description: Zip code.
-              street_number:
-                type: number
-                description: Number. (Required)
-              street_name:
-                type: string
-                description: Street name. (Required)
-              city_name:
-                type: string
-                description: City.(Required)
-              state_name:
-                type: Object
-                description: State. (Required)
-              latitude:
-                type: string
-                description: Latitude. (Required)
-              logitude:
-                type: string
-                description: Longitude. (Required)
-              reference:
-                type: string
-                description: Reference.
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                  description: Store identifier, numerical and self-generated.
+                user_id:
+                  type: string
+                  description: User identifier.
+                name:
+                  type: string
+                  description: Store name. (Required)
+                business_hours:
+                  type: string
+                  description: >-
+                    Business hours. They are divided by day of the week and up to two
+                    opening and closing times per day are allowed.
+                location:
+                  type: Object
+                  description: Store location. (Required)
+                  properties:
+                    zip_code:
+                      type: string
+                      description: Zip code.
+                    street_number:
+                      type: number
+                      description: Number. (Required)
+                    street_name:
+                      type: string
+                      description: Street name. (Required)
+                    city_name:
+                      type: string
+                      description: City.(Required)
+                    state_name:
+                      type: Object
+                      description: State. (Required)
+                    latitude:
+                      type: string
+                      description: Latitude. (Required)
+                    logitude:
+                      type: string
+                      description: Longitude. (Required)
+                    reference:
+                      type: string
+                      description: Reference.
       responses:
         '400':
           INVALID_USER_ID:

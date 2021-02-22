@@ -7,255 +7,259 @@ paths:
       summary: 'Create a preference'
       description: 'Create a preference.'
       requestBody:
-        properties:
-          items:
-            type: array
-            description: Items information.
-            items:
+        content:
+          application/json:
+            schema:
               type: object
               properties:
-                id:
-                  type: string
-                  description: Item ID.
-                title:
-                  type: string
-                  example: Dummy Title
-                  description: Item title. It will be displayed in the payment process.
-                description:
-                  type: string
-                  example: Dummy description
-                  description: Item description.
-                picture_url:
-                  type: string
-                  example: http://www.myapp.com/myimage.jpg
-                  description: Item image URL.
-                category_id:
-                  type: string
-                  example: cat123
-                  description: Item category ID.
-                quantity:
-                  type: number
-                  example: 1
-                  description: Item quantity.
-                currency_id:
-                  type: string
-                  example: U$
-                  description: Currency ID. ISO_4217 code.
-                unit_price:
-                  type: number
-                  example: 10.0
-                  description: Unit price.
-          payer:
-            type: Object
-            description: Buyer Information.
-            properties:
-              name:
-                type: string
-                description: Buyer name.
-              surname:
-                type: string
-                description: Buyer last name.
-              email:
-                type: string
-                description: Buyer e-mail address.
-              phone:
-                type: Object
-                description: Buyer phone.
-                properties:
-                  area_code:
-                    type: string
-                    description: Area code.
-                  number:
-                    type: string
-                    description: Number.
-              identification:
-                type: Object
-                description: Personal identification.
-                properties:
-                  type:
-                    type: string
-                    description: Identification Type.
-                  number:
-                    type: string
-                    description: Number.
-              address:
-                type: Object
-                description: Buyer address.
-                properties:
-                  zip_code:
-                    type: string
-                    description: Zip code.
-                  street_name:
-                    type: string
-                    description: Street name.
-                  street_number:
-                    type: number
-                    description: Street number.
-              date_created:
-                type: Date(ISO_8601)
-                description: Registration date.
-          payment_methods:
-            type: Object
-            description: Set up payment methods to be excluded from the payment process.
-            properties:
-              excluded_payment_methods:
-                type: array
-                description: >-
-                  Payment methods not allowed in payment process (except
-                  account_money).
                 items:
-                  type: object
+                  type: array
+                  description: Items information.
+                  items:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        description: Item ID.
+                      title:
+                        type: string
+                        example: Dummy Title
+                        description: Item title. It will be displayed in the payment process.
+                      description:
+                        type: string
+                        example: Dummy description
+                        description: Item description.
+                      picture_url:
+                        type: string
+                        example: http://www.myapp.com/myimage.jpg
+                        description: Item image URL.
+                      category_id:
+                        type: string
+                        example: cat123
+                        description: Item category ID.
+                      quantity:
+                        type: number
+                        example: 1
+                        description: Item quantity.
+                      currency_id:
+                        type: string
+                        example: U$
+                        description: Currency ID. ISO_4217 code.
+                      unit_price:
+                        type: number
+                        example: 10.0
+                        description: Unit price.
+                payer:
+                  type: Object
+                  description: Buyer Information.
                   properties:
-                    id:
+                    name:
                       type: string
-                      description: Payment method ID.
-              excluded_payment_types:
-                type: array
-                description: Payment types not allowed in payment process.
-                items:
-                  type: object
+                      description: Buyer name.
+                    surname:
+                      type: string
+                      description: Buyer last name.
+                    email:
+                      type: string
+                      description: Buyer e-mail address.
+                    phone:
+                      type: Object
+                      description: Buyer phone.
+                      properties:
+                        area_code:
+                          type: string
+                          description: Area code.
+                        number:
+                          type: string
+                          description: Number.
+                    identification:
+                      type: Object
+                      description: Personal identification.
+                      properties:
+                        type:
+                          type: string
+                          description: Identification Type.
+                        number:
+                          type: string
+                          description: Number.
+                    address:
+                      type: Object
+                      description: Buyer address.
+                      properties:
+                        zip_code:
+                          type: string
+                          description: Zip code.
+                        street_name:
+                          type: string
+                          description: Street name.
+                        street_number:
+                          type: number
+                          description: Street number.
+                    date_created:
+                      type: Date(ISO_8601)
+                      description: Registration date.
+                payment_methods:
+                  type: Object
+                  description: Set up payment methods to be excluded from the payment process.
                   properties:
-                    id:
+                    excluded_payment_methods:
+                      type: array
+                      description: >-
+                        Payment methods not allowed in payment process (except
+                        account_money).
+                      items:
+                        type: object
+                        properties:
+                          id:
+                            type: string
+                            description: Payment method ID.
+                    excluded_payment_types:
+                      type: array
+                      description: Payment types not allowed in payment process.
+                      items:
+                        type: object
+                        properties:
+                          id:
+                            type: string
+                            description: Payment method data_type ID.
+                    default_payment_method_id:
                       type: string
-                      description: Payment method data_type ID.
-              default_payment_method_id:
-                type: string
-                description: Payment method to be preferred on the payments methods list.
-              installments:
-                type: number
-                description: Maximum number of credit card installments to be accepted.
-              default_installments:
-                type: number
-                description: Prefered number of credit card installments.
-          shipments:
-            type: Object
-            description: Shipments information.
-            properties:
-              mode:
-                type: string
-                description: Shipment mode.
-              local_pickup:
-                type: boolean
-                description: >-
-                  The payer have the option to pick up the shipment in your
-                  store (mode:me2 only).
-              dimensions:
-                type: string
-                description: Dimensions of the shipment in cm x cm x cm, gr (mode:me2 only)
-              default_shipping_method:
-                type: number
-                description: Select default shipping method in checkout (mode:me2 only).
-              free_methods:
-                type: array
-                description: Offer a shipping method as free shipping (mode:me2 only).
-                items:
-                  type: object
+                      description: Payment method to be preferred on the payments methods list.
+                    installments:
+                      type: number
+                      description: Maximum number of credit card installments to be accepted.
+                    default_installments:
+                      type: number
+                      description: Prefered number of credit card installments.
+                shipments:
+                  type: Object
+                  description: Shipments information.
+                  properties:
+                    mode:
+                      type: string
+                      description: Shipment mode.
+                    local_pickup:
+                      type: boolean
+                      description: >-
+                        The payer have the option to pick up the shipment in your
+                        store (mode:me2 only).
+                    dimensions:
+                      type: string
+                      description: Dimensions of the shipment in cm x cm x cm, gr (mode:me2 only)
+                    default_shipping_method:
+                      type: number
+                      description: Select default shipping method in checkout (mode:me2 only).
+                    free_methods:
+                      type: array
+                      description: Offer a shipping method as free shipping (mode:me2 only).
+                      items:
+                        type: object
+                        properties:
+                          id:
+                            type: number
+                            description: Shipping method ID.
+                    cost:
+                      type: number
+                      description: Shipment cost (mode:custom only).
+                    free_shipping:
+                      type: boolean
+                      description: Free shipping for mode:custom.
+                    receiver_address:
+                      type: Object
+                      description: Shipping address.
+                      properties:
+                        zip_code:
+                          type: string
+                          description: Zip code.
+                        street_name:
+                          type: string
+                          description: Street name.
+                        city_name:
+                          type: string
+                          description: City name.
+                        state_name:
+                          type: string
+                          description: State name.
+                        street_number:
+                          type: number
+                          description: Street number.
+                        floor:
+                          type: string
+                          description: Floor.
+                        apartment:
+                          type: string
+                          description: Apartment.
+                back_urls:
+                  type: Object
+                  description: URLs to return to the sellers website.
+                  properties:
+                    success:
+                      type: string
+                      description: Approved payment URL.
+                    pending:
+                      type: string
+                      description: Pending or in process payment URL.
+                    failure:
+                      type: string
+                      description: Canceled payment URL.
+                notification_url:
+                  type: string
+                  description: URL where you'd like to receive a payment notification.
+                statement_descriptor:
+                  type: string
+                  description: 'How will look the payment in the card bill (e.g.: MERCADOPAGO).'
+                additional_info:
+                  type: string
+                  description: Additional information.
+                auto_return:
+                  type: string
+                  description: >-
+                    If specified, your buyers will be redirected back to your site
+                    immediately after completing the purchase.
+                external_reference:
+                  type: string
+                  description: Reference you can synchronize with your payment system.
+                expires:
+                  type: boolean
+                  description: Boolean value that determines if a preference expire.
+                date_of_expiration:
+                  type: Date(ISO_8601)
+                  description: Expiration date of cash payment.
+                expiration_date_from:
+                  type: Date(ISO_8601)
+                  description: Date since the preference will be active.
+                expiration_date_to:
+                  type: Date(ISO_8601)
+                  description: Date when the preference will be expired.
+                marketplace:
+                  type: string
+                  description: 'Origin of the payment. Default value: NONE'
+                marketplace_fee:
+                  type: number
+                  description: >-
+                    Marketplace's fee charged by application owner. Default value: 0
+                    in local currency
+                differential_pricing:
+                  type: Object
+                  description: Differential pricing configuration for this preference.
                   properties:
                     id:
                       type: number
-                      description: Shipping method ID.
-              cost:
-                type: number
-                description: Shipment cost (mode:custom only).
-              free_shipping:
-                type: boolean
-                description: Free shipping for mode:custom.
-              receiver_address:
-                type: Object
-                description: Shipping address.
-                properties:
-                  zip_code:
-                    type: string
-                    description: Zip code.
-                  street_name:
-                    type: string
-                    description: Street name.
-                  city_name:
-                    type: string
-                    description: City name.
-                  state_name:
-                    type: string
-                    description: State name.
-                  street_number:
-                    type: number
-                    description: Street number.
-                  floor:
-                    type: string
-                    description: Floor.
-                  apartment:
-                    type: string
-                    description: Apartment.
-          back_urls:
-            type: Object
-            description: URLs to return to the sellers website.
-            properties:
-              success:
-                type: string
-                description: Approved payment URL.
-              pending:
-                type: string
-                description: Pending or in process payment URL.
-              failure:
-                type: string
-                description: Canceled payment URL.
-          notification_url:
-            type: string
-            description: URL where you'd like to receive a payment notification.
-          statement_descriptor:
-            type: string
-            description: 'How will look the payment in the card bill (e.g.: MERCADOPAGO).'
-          additional_info:
-            type: string
-            description: Additional information.
-          auto_return:
-            type: string
-            description: >-
-              If specified, your buyers will be redirected back to your site
-              immediately after completing the purchase.
-          external_reference:
-            type: string
-            description: Reference you can synchronize with your payment system.
-          expires:
-            type: boolean
-            description: Boolean value that determines if a preference expire.
-          date_of_expiration:
-            type: Date(ISO_8601)
-            description: Expiration date of cash payment.
-          expiration_date_from:
-            type: Date(ISO_8601)
-            description: Date since the preference will be active.
-          expiration_date_to:
-            type: Date(ISO_8601)
-            description: Date when the preference will be expired.
-          marketplace:
-            type: string
-            description: 'Origin of the payment. Default value: NONE'
-          marketplace_fee:
-            type: number
-            description: >-
-              Marketplace's fee charged by application owner. Default value: 0
-              in local currency
-          differential_pricing:
-            type: Object
-            description: Differential pricing configuration for this preference.
-            properties:
-              id:
-                type: number
-                description: Differential pricing ID.
-          tracks:
-            type: array
-            description: >-
-              Tracks to be executed during the users's interaction in the
-              Checkout flow.
-            items:
-              type: object
-              properties:
-                type:
-                  type: string
-                  description: Track type. Specifies which tool the values belong to.
-                values:
-                  type: string
-                  description: Configuration values according the track type.
+                      description: Differential pricing ID.
+                tracks:
+                  type: array
+                  description: >-
+                    Tracks to be executed during the users's interaction in the
+                    Checkout flow.
+                  items:
+                    type: object
+                    properties:
+                      type:
+                        type: string
+                        description: Track type. Specifies which tool the values belong to.
+                      values:
+                        type: string
+                        description: Configuration values according the track type.
       responses:
         '200':
           content:
@@ -549,90 +553,88 @@ paths:
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  type: object
-                  properties: 
-                    elements: 
-                      type: array
-                      items: 
-                        type: object
-                        properties: 
-                          id: 
-                            type: string
-                            example: 202809963-a2201f8d-11cb-443f-adf6-de5a42eed67d
-                          client_id: 
-                            type: string
-                            example: 6295877106812064
-                          collector_id: 
-                            type: number
-                            example: 202809963
-                          concept_id: 
-                            type: string
-                            format: nullable
-                          corporation_id: 
-                            type: string
-                            format: nullable
-                          date_created: 
-                            type: string
-                            example: 2018-02-02T15:18:51.150-04:00
-                          expiration_date_from: 
-                            type: string
-                            format: nullable
-                          expiration_date_to: 
-                            type: string
-                            format: nullable
-                          expires: 
-                            type: boolean
-                          external_reference: 
-                            type: string
-                            example: 
-                          integrator_id: 
-                            type: string
-                            format: nullable
+                type: object
+                properties: 
+                  elements: 
+                    type: array
+                    items: 
+                      type: object
+                      properties: 
+                        id: 
+                          type: string
+                          example: 202809963-a2201f8d-11cb-443f-adf6-de5a42eed67d
+                        client_id: 
+                          type: string
+                          example: 6295877106812064
+                        collector_id: 
+                          type: number
+                          example: 202809963
+                        concept_id: 
+                          type: string
+                          format: nullable
+                        corporation_id: 
+                          type: string
+                          format: nullable
+                        date_created: 
+                          type: string
+                          example: 2018-02-02T15:18:51.150-04:00
+                        expiration_date_from: 
+                          type: string
+                          format: nullable
+                        expiration_date_to: 
+                          type: string
+                          format: nullable
+                        expires: 
+                          type: boolean
+                        external_reference: 
+                          type: string
+                          example: 
+                        integrator_id: 
+                          type: string
+                          format: nullable
+                        items: 
+                          type: array
                           items: 
-                            type: array
-                            items: 
-                              type: string
-                              example: Test Item
-                          last_updated: 
                             type: string
-                            format: nullable
-                          live_mode: 
-                            type: boolean
-                          marketplace: 
-                            type: string
-                            example: NONE
-                          operation_type: 
-                            type: string
-                            example: regular_payment
-                          payer_email: 
-                            type: string
-                            example: 
-                          platform_id: 
-                            type: string
-                            example: 
-                          processing_modes: 
-                            type: string
-                            format: nullable
-                          product_id: 
-                            type: string
-                            example: 
-                          purpose: 
-                            type: string
-                            example: 
-                          site_id: 
-                            type: string
-                            example: MLA
-                          sponsor_id: 
-                            type: number
-                            example: 0
-                    next_offset: 
-                      type: number
-                      example: 1
-                    total: 
-                      type: number
-                      example: 1
+                            example: Test Item
+                        last_updated: 
+                          type: string
+                          format: nullable
+                        live_mode: 
+                          type: boolean
+                        marketplace: 
+                          type: string
+                          example: NONE
+                        operation_type: 
+                          type: string
+                          example: regular_payment
+                        payer_email: 
+                          type: string
+                          example: 
+                        platform_id: 
+                          type: string
+                          example: 
+                        processing_modes: 
+                          type: string
+                          format: nullable
+                        product_id: 
+                          type: string
+                          example: 
+                        purpose: 
+                          type: string
+                          example: 
+                        site_id: 
+                          type: string
+                          example: MLA
+                        sponsor_id: 
+                          type: number
+                          example: 0
+                  next_offset: 
+                    type: number
+                    example: 1
+                  total: 
+                    type: number
+                    example: 1
 
         '400':
           ds_search_query:
@@ -890,239 +892,243 @@ paths:
           schema:
             type: string
       requestBody:
-        properties:
-          items:
-            type: array
-            description: Items information.
-            items:
+        content:
+          application/json:
+            schema:
               type: object
               properties:
-                id:
-                  type: string
-                  example: 202809963-a2201f8d-11cb-443f-adf6-de5a42eed67d
-                  description: Item ID.
-                title:
-                  type: string
-                  example: Dummy Title
-                  description: Item title. It will be displayed in the payment process.
-                description:
-                  type: string
-                  example: Dummy Description
-                  description: Item description.
-                picture_url:
-                  type: string
-                  example: http://www.myapp.com/myimage.jpg
-                  description: Item image URL.
-                category_id:
-                  type: string
-                  example: cat123
-                  description: Item category ID.
-                quantity:
-                  type: number
-                  example: 1
-                  description: Item quantity.
-                currency_id:
-                  type: string
-                  example: U$
-                  description: Currency ID. ISO_4217 code.
-                unit_price:
-                  type: number
-                  example: 10.0
-                  description: Unit price.
-          payer:
-            type: Object
-            description: Buyer Information.
-            properties:
-              name:
-                type: string
-                description: Buyer name.
-              surname:
-                type: string
-                description: Buyer last name.
-              email:
-                type: string
-                description: Buyer e-mail address.
-              phone:
-                type: Object
-                description: Buyer phone.
-                properties:
-                  area_code:
-                    type: string
-                    description: Area code.
-                  number:
-                    type: string
-                    description: Number.
-              identification:
-                type: Object
-                description: Personal identification.
-                properties:
-                  type:
-                    type: string
-                    description: Identification Type.
-                  number:
-                    type: string
-                    description: Number.
-              address:
-                type: Object
-                description: Buyer address.
-                properties:
-                  zip_code:
-                    type: string
-                    description: Zip code.
-                  street_name:
-                    type: string
-                    description: Street name.
-                  street_number:
-                    type: number
-                    description: Street number.
-              date_created:
-                type: Date(ISO_8601)
-                description: Registration date.
-          payment_methods:
-            type: Object
-            description: Set up payment methods to be excluded from the payment process.
-            properties:
-              excluded_payment_methods:
-                type: array
-                description: >-
-                  Payment methods not allowed in payment process (except
-                  account_money).
                 items:
-                  type: object
+                  type: array
+                  description: Items information.
+                  items:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        example: 202809963-a2201f8d-11cb-443f-adf6-de5a42eed67d
+                        description: Item ID.
+                      title:
+                        type: string
+                        example: Dummy Title
+                        description: Item title. It will be displayed in the payment process.
+                      description:
+                        type: string
+                        example: Dummy Description
+                        description: Item description.
+                      picture_url:
+                        type: string
+                        example: http://www.myapp.com/myimage.jpg
+                        description: Item image URL.
+                      category_id:
+                        type: string
+                        example: cat123
+                        description: Item category ID.
+                      quantity:
+                        type: number
+                        example: 1
+                        description: Item quantity.
+                      currency_id:
+                        type: string
+                        example: U$
+                        description: Currency ID. ISO_4217 code.
+                      unit_price:
+                        type: number
+                        example: 10.0
+                        description: Unit price.
+                payer:
+                  type: Object
+                  description: Buyer Information.
                   properties:
-                    id:
+                    name:
                       type: string
-                      description: Payment method ID.
-              excluded_payment_types:
-                type: array
-                description: Payment types not allowed in payment process.
-                items:
-                  type: object
+                      description: Buyer name.
+                    surname:
+                      type: string
+                      description: Buyer last name.
+                    email:
+                      type: string
+                      description: Buyer e-mail address.
+                    phone:
+                      type: Object
+                      description: Buyer phone.
+                      properties:
+                        area_code:
+                          type: string
+                          description: Area code.
+                        number:
+                          type: string
+                          description: Number.
+                    identification:
+                      type: Object
+                      description: Personal identification.
+                      properties:
+                        type:
+                          type: string
+                          description: Identification Type.
+                        number:
+                          type: string
+                          description: Number.
+                    address:
+                      type: Object
+                      description: Buyer address.
+                      properties:
+                        zip_code:
+                          type: string
+                          description: Zip code.
+                        street_name:
+                          type: string
+                          description: Street name.
+                        street_number:
+                          type: number
+                          description: Street number.
+                    date_created:
+                      type: Date(ISO_8601)
+                      description: Registration date.
+                payment_methods:
+                  type: Object
+                  description: Set up payment methods to be excluded from the payment process.
                   properties:
-                    id:
+                    excluded_payment_methods:
+                      type: array
+                      description: >-
+                        Payment methods not allowed in payment process (except
+                        account_money).
+                      items:
+                        type: object
+                        properties:
+                          id:
+                            type: string
+                            description: Payment method ID.
+                    excluded_payment_types:
+                      type: array
+                      description: Payment types not allowed in payment process.
+                      items:
+                        type: object
+                        properties:
+                          id:
+                            type: string
+                            description: Payment method data_type ID.
+                    default_payment_method_id:
                       type: string
-                      description: Payment method data_type ID.
-              default_payment_method_id:
-                type: string
-                description: Payment method to be preferred on the payments methods list.
-              installments:
-                type: number
-                description: Maximum number of credit card installments to be accepted.
-              default_installments:
-                type: number
-                description: Prefered number of credit card installments.
-          shipments:
-            type: Object
-            description: Shipments information.
-            properties:
-              mode:
-                type: string
-                description: Shipment mode.
-              local_pickup:
-                type: boolean
-                description: >-
-                  The payer have the option to pick up the shipment in your
-                  store (mode:me2 only).
-              dimensions:
-                type: string
-                description: Dimensions of the shipment in cm x cm x cm, gr (mode:me2 only)
-              default_shipping_method:
-                type: number
-                description: Select default shipping method in checkout (mode:me2 only).
-              free_methods:
-                type: array
-                description: Offer a shipping method as free shipping (mode:me2 only).
-                items:
-                  type: object
+                      description: Payment method to be preferred on the payments methods list.
+                    installments:
+                      type: number
+                      description: Maximum number of credit card installments to be accepted.
+                    default_installments:
+                      type: number
+                      description: Prefered number of credit card installments.
+                shipments:
+                  type: Object
+                  description: Shipments information.
+                  properties:
+                    mode:
+                      type: string
+                      description: Shipment mode.
+                    local_pickup:
+                      type: boolean
+                      description: >-
+                        The payer have the option to pick up the shipment in your
+                        store (mode:me2 only).
+                    dimensions:
+                      type: string
+                      description: Dimensions of the shipment in cm x cm x cm, gr (mode:me2 only)
+                    default_shipping_method:
+                      type: number
+                      description: Select default shipping method in checkout (mode:me2 only).
+                    free_methods:
+                      type: array
+                      description: Offer a shipping method as free shipping (mode:me2 only).
+                      items:
+                        type: object
+                        properties:
+                          id:
+                            type: number
+                            description: Shipping method ID.
+                    cost:
+                      type: number
+                      description: Shipment cost (mode:custom only).
+                    free_shipping:
+                      type: boolean
+                      description: Free shipping for mode:custom.
+                    receiver_address:
+                      type: Object
+                      description: Shipping address.
+                      properties:
+                        zip_code:
+                          type: string
+                          description: Zip code.
+                        street_name:
+                          type: string
+                          description: Street name.
+                        city_name:
+                          type: string
+                          description: City name.
+                        state_name:
+                          type: string
+                          description: State name.
+                        street_number:
+                          type: number
+                          description: Street number.
+                        floor:
+                          type: string
+                          description: Floor.
+                        apartment:
+                          type: string
+                          description: Apartment.
+                back_urls:
+                  type: Object
+                  description: URLs to return to the sellers website.
+                  properties:
+                    success:
+                      type: string
+                      description: Approved payment URL.
+                    pending:
+                      type: string
+                      description: Pending or in process payment URL.
+                    failure:
+                      type: string
+                      description: Canceled payment URL.
+                notification_url:
+                  type: string
+                  description: URL where you'd like to receive a payment notification.
+                additional_info:
+                  type: string
+                  description: Additional information.
+                auto_return:
+                  type: string
+                  description: >-
+                    If specified, your buyers will be redirected back to your site
+                    immediately after completing the purchase.
+                external_reference:
+                  type: string
+                  description: Reference you can synchronize with your payment system.
+                expires:
+                  type: boolean
+                  description: Boolean value that determines if a preference expire.
+                date_of_expiration:
+                  type: Date(ISO_8601)
+                  description: Expiration date of cash payment.
+                expiration_date_from:
+                  type: Date(ISO_8601)
+                  description: Date since the preference will be active.
+                expiration_date_to:
+                  type: Date(ISO_8601)
+                  description: Date when the preference will be expired.
+                marketplace:
+                  type: string
+                  description: 'Origin of the payment. Default value: NONE'
+                marketplace_fee:
+                  type: number
+                  description: >-
+                    Marketplace's fee charged by application owner. Default value: 0
+                    in local currency
+                differential_pricing:
+                  type: Object
+                  description: Differential pricing configuration for this preference.
                   properties:
                     id:
                       type: number
-                      description: Shipping method ID.
-              cost:
-                type: number
-                description: Shipment cost (mode:custom only).
-              free_shipping:
-                type: boolean
-                description: Free shipping for mode:custom.
-              receiver_address:
-                type: Object
-                description: Shipping address.
-                properties:
-                  zip_code:
-                    type: string
-                    description: Zip code.
-                  street_name:
-                    type: string
-                    description: Street name.
-                  city_name:
-                    type: string
-                    description: City name.
-                  state_name:
-                    type: string
-                    description: State name.
-                  street_number:
-                    type: number
-                    description: Street number.
-                  floor:
-                    type: string
-                    description: Floor.
-                  apartment:
-                    type: string
-                    description: Apartment.
-          back_urls:
-            type: Object
-            description: URLs to return to the sellers website.
-            properties:
-              success:
-                type: string
-                description: Approved payment URL.
-              pending:
-                type: string
-                description: Pending or in process payment URL.
-              failure:
-                type: string
-                description: Canceled payment URL.
-          notification_url:
-            type: string
-            description: URL where you'd like to receive a payment notification.
-          additional_info:
-            type: string
-            description: Additional information.
-          auto_return:
-            type: string
-            description: >-
-              If specified, your buyers will be redirected back to your site
-              immediately after completing the purchase.
-          external_reference:
-            type: string
-            description: Reference you can synchronize with your payment system.
-          expires:
-            type: boolean
-            description: Boolean value that determines if a preference expire.
-          date_of_expiration:
-            type: Date(ISO_8601)
-            description: Expiration date of cash payment.
-          expiration_date_from:
-            type: Date(ISO_8601)
-            description: Date since the preference will be active.
-          expiration_date_to:
-            type: Date(ISO_8601)
-            description: Date when the preference will be expired.
-          marketplace:
-            type: string
-            description: 'Origin of the payment. Default value: NONE'
-          marketplace_fee:
-            type: number
-            description: >-
-              Marketplace's fee charged by application owner. Default value: 0
-              in local currency
-          differential_pricing:
-            type: Object
-            description: Differential pricing configuration for this preference.
-            properties:
-              id:
-                type: number
-                description: Differential pricing ID.
+                      description: Differential pricing ID.
       responses:
         '400':
           invalid_collector_id:

@@ -220,10 +220,15 @@ paths:
             type: string
             example: 12123adfasdf123u4u
       requestBody:
-        properties:
-          date_registered:
-            type: string
-            description: Nao sei o que é
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                date_registered:
+                  type: string
+                  description: Nao sei o que é
+                  example: 16/02/1991
       responses:
         '200':
           content:
@@ -639,10 +644,14 @@ paths:
             type: string
             example: 12123adfasdf123u4u
       requestBody:
-        properties:
-          date_registered:
-            type: string
-            description: Nao sei o que é
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                date_registered:
+                  type: string
+                  description: Nao sei o que é
       responses:
         '400':
           '100':
