@@ -22,8 +22,6 @@ Extendimos los plazos de devoluciones a 180 días para todos los medios de pago.
 [Ir a documentación de Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds#bookmark_devoluciones)
 ------------
 
----
-
 ### 17 de febrero
 
 > CHANGELOG

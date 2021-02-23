@@ -22,8 +22,6 @@ Estendemos os prazos de devolução a 180 dias para todos os meios de pagamento.
 [Ir para a documentação de Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds#bookmark_devoluções)
 ------------
 
----
-
 ### 17 de fevereiro
 
 > CHANGELOG
