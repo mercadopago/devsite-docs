@@ -4,7 +4,7 @@
 
 We know, some terms are technical and you may not be familiar with all of them. Use this glossary to not get lost!
 
-| Name on the report column | --- | --- || What it means |
+| Name on the report column | What it means |
 | --- | --- |
 | EXTERNAL_REFERENCE | <br/> ID that helps identify the origin of the operation. For example, it can be the sale through the order ID or the shipment (if it is a cart purchase) or the own ID provided by the seller in case of an external integration. <br/><br/> Keep in mind that it is possible that this field is empty for some cases such as ticket payment or money transfer, among others. <br/> <br/> |
 | SOURCE_ID | Operation ID in Mercado Pago (for example, the payment of a sale). |
