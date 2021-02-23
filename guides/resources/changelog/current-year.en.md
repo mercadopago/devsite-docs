@@ -5,6 +5,23 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 ---
 ## February 2021
 
+----[mco]----
+
+### February 25th
+
+> CHANGELOG
+>
+> New deadlines for returns
+>
+> NEWS: NEWS
+>
+> PRODUCT: MERCADO PAGO
+
+Refunds are now permitted up to 180 days after the payment has been made for all payment methods.
+
+[Go to Refunds and cancellations documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds#bookmark_refunds)
+------------
+
 ### February 17th
 
 > CHANGELOG
