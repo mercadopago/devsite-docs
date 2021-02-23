@@ -84,8 +84,11 @@ Puedes devolver un pago dentro de los **180 días** desde su acreditación.
 ----[mlc]----
 Puedes devolver un pago dentro de los **330 días** desde su acreditación.
 ------------
-----[mlu, mpe, mco]----
+----[mlu, mpe]----
 Puedes devolver un pago dentro de los **90 días** desde su acreditación.
+------------
+----[mco]----
+Puedes devolver un pago dentro de los **180 días** desde su acreditación.
 ------------
 
 Debes poseer suficiente dinero disponible en tu cuenta para devolver el monto del pago satisfactoriamente. De lo contrario obtendrás un error `400 Bad Request`.
