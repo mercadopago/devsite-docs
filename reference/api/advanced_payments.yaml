@@ -232,6 +232,7 @@ paths:
                               description: Phone number.
                         registration_date:
                           type: string
+                          format: date
                           description: Date of registration of the buyer on your website.
                     shipments:
                       type: object
@@ -612,7 +613,6 @@ paths:
                               apartment: 
                                 type: string
                                 example: C
-
         '400':
           '400004':
             description: Invalid application.
@@ -1141,7 +1141,6 @@ paths:
                                     apartment: 
                                       type: string
                                       example: C
-
         '400':
           '400004':
             description: Invalid application.
