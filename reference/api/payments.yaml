@@ -1,3 +1,9 @@
+openapi: 3.0.0
+servers:
+  - url: 'https://api.mercadopago.com'
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
 paths:
   /payments:
     post:
@@ -13,7 +19,7 @@ paths:
               type: object
               properties:
                 additional_info:
-                  type: Object
+                  type: object
                   description: >-
                     Data that could improve fraud analysis and conversion rates. Try
                     to send as much information as possible.
@@ -51,7 +57,7 @@ paths:
                             type: number
                             description: Unit price.
                     payer:
-                      type: Object
+                      type: object
                       description: Buyer's information.
                       properties:
                         first_name:
@@ -61,7 +67,7 @@ paths:
                           type: string
                           description: Buyer's last name.
                         phone:
-                          type: Object
+                          type: object
                           description: Buyer's phone.
                           properties:
                             area_code:
@@ -71,7 +77,7 @@ paths:
                               type: string
                               description: Phone number.
                         address:
-                          type: Object
+                          type: object
                           description: Address.
                           properties:
                             zip_code:
@@ -84,14 +90,15 @@ paths:
                               type: number
                               description: Number.
                         registration_date:
-                          type: Date
+                          type: string
+                          format: date
                           description: Date of registration of the buyer on your site.
                     shipments:
-                      type: Object
+                      type: object
                       description: Shipping information.
                       properties:
                         receiver_address:
-                          type: Object
+                          type: object
                           description: Buyer's address.
                           properties:
                             zip_code:
@@ -116,7 +123,7 @@ paths:
                               type: string
                               description: Department.
                     barcode:
-                      type: Object
+                      type: object
                       description: Barcode information.
                       properties:
                         type:
@@ -165,7 +172,8 @@ paths:
                   type: number
                   description: Id of the scheme for the absorption of financing fee.
                 date_of_expiration:
-                  type: Date(ISO_8601)
+                  type: string
+                  format: date
                   description: Payment’s expiration date.
                 external_reference:
                   type: string
@@ -177,7 +185,7 @@ paths:
                   type: string
                   description: Payment method issuer.
                 metadata:
-                  type: Object
+                  type: object
                   description: >-
                     Valid JSON that can be attached to the payment to record
                     additional attributes of the merchant.
@@ -187,7 +195,7 @@ paths:
                     URL where Mercado Pago will send notifications associated to
                     changes in this payment
                 order:
-                  type: Object
+                  type: object
                   description: Order identifier.
                   properties:
                     type:
@@ -197,7 +205,7 @@ paths:
                       type: number
                       description: Id of the associated purchase order.
                 payer:
-                  type: Object
+                  type: object
                   description: Identifies the buyer.
                   properties:
                     entity_type:
@@ -215,7 +223,7 @@ paths:
                       type: string
                       description: Email. (Required)
                     identification:
-                      type: Object
+                      type: object
                       description: Personal identification.
                       properties:
                         type:
@@ -225,7 +233,7 @@ paths:
                           type: string
                           description: Identification number.
                     phone:
-                      type: Object
+                      type: object
                       description: Phone of the associated payer.
                       properties:
                         area_code:
@@ -1092,7 +1100,7 @@ paths:
               type: object
               properties:
                 additional_info:
-                  type: Object
+                  type: object
                   description: >-
                     Data that could improve fraud analysis and conversion rates. Try
                     to send as much information as possible.
@@ -1130,7 +1138,7 @@ paths:
                             type: number
                             description: Unit price.
                     payer:
-                      type: Object
+                      type: object
                       description: Buyer's information.
                       properties:
                         first_name:
@@ -1140,7 +1148,7 @@ paths:
                           type: string
                           description: Buyer's last name.
                         phone:
-                          type: Object
+                          type: object
                           description: Buyer's phone.
                           properties:
                             area_code:
@@ -1150,7 +1158,7 @@ paths:
                               type: string
                               description: Phone number.
                         address:
-                          type: Object
+                          type: object
                           description: Address.
                           properties:
                             zip_code:
@@ -1163,14 +1171,15 @@ paths:
                               type: number
                               description: Number.
                         registration_date:
-                          type: Date
+                          type: string
+                          format: date
                           description: Date of registration of the buyer on your site.
                     shipments:
-                      type: Object
+                      type: object
                       description: Shipping information.
                       properties:
                         receiver_address:
-                          type: Object
+                          type: object
                           description: Buyer's address.
                           properties:
                             zip_code:
@@ -1195,7 +1204,7 @@ paths:
                               type: string
                               description: Department.
                     barcode:
-                      type: Object
+                      type: object
                       description: Barcode information.
                       properties:
                         type:
@@ -1244,7 +1253,8 @@ paths:
                   type: number
                   description: Id of the scheme for the absorption of financing fee.
                 date_of_expiration:
-                  type: Date(ISO_8601)
+                  type: string
+                  format: date
                   description: Payment’s expiration date.
                 external_reference:
                   type: string
@@ -1256,7 +1266,7 @@ paths:
                   type: string
                   description: Payment method issuer.
                 metadata:
-                  type: Object
+                  type: object
                   description: >-
                     Valid JSON that can be attached to the payment to record
                     additional attributes of the merchant.
@@ -1266,7 +1276,7 @@ paths:
                     URL where Mercado Pago will send notifications associated to
                     changes in this payment
                 order:
-                  type: Object
+                  type: object
                   description: Order identifier.
                   properties:
                     type:
@@ -1276,7 +1286,7 @@ paths:
                       type: number
                       description: Id of the associated purchase order.
                 payer:
-                  type: Object
+                  type: object
                   description: Identifies the buyer.
                   properties:
                     entity_type:
@@ -1294,7 +1304,7 @@ paths:
                       type: string
                       description: Email. (Required)
                     identification:
-                      type: Object
+                      type: object
                       description: Personal identification.
                       properties:
                         type:
@@ -1304,7 +1314,7 @@ paths:
                           type: string
                           description: Identification number.
                     phone:
-                      type: Object
+                      type: object
                       description: Phone of the associated payer.
                       properties:
                         area_code:

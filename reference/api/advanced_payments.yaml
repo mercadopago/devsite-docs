@@ -1,3 +1,9 @@
+openapi: 3.0.0
+servers:
+  - url: 'https://api.mercadopago.com'
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
 paths:
   /v1/advanced_payments:
     post:
@@ -76,7 +82,7 @@ paths:
                     type: object
                     properties:
                       id:
-                        type: Number
+                        type: number
                         description: Payment identification.
                       status:
                         type: string
@@ -136,7 +142,7 @@ paths:
                     type: object
                     properties:
                       id:
-                        type: Number
+                        type: number
                         description: Payment identifier.
                       amount:
                         type: number
@@ -225,7 +231,7 @@ paths:
                               type: string
                               description: Phone number.
                         registration_date:
-                          type: Date
+                          type: string
                           description: Date of registration of the buyer on your website.
                     shipments:
                       type: object

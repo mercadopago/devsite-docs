@@ -1,3 +1,9 @@
+openapi: 3.0.0
+servers:
+  - url: 'https://api.mercadopago.com'
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
 paths:
   /checkout/preferences:
     post:
@@ -50,7 +56,7 @@ paths:
                         example: 10.0
                         description: Unit price.
                 payer:
-                  type: Object
+                  type: object
                   description: Buyer Information.
                   properties:
                     name:
@@ -63,7 +69,7 @@ paths:
                       type: string
                       description: Buyer e-mail address.
                     phone:
-                      type: Object
+                      type: object
                       description: Buyer phone.
                       properties:
                         area_code:
@@ -73,7 +79,7 @@ paths:
                           type: string
                           description: Number.
                     identification:
-                      type: Object
+                      type: object
                       description: Personal identification.
                       properties:
                         type:
@@ -83,7 +89,7 @@ paths:
                           type: string
                           description: Number.
                     address:
-                      type: Object
+                      type: object
                       description: Buyer address.
                       properties:
                         zip_code:
@@ -96,10 +102,11 @@ paths:
                           type: number
                           description: Street number.
                     date_created:
-                      type: Date(ISO_8601)
+                      type: string
+                      format: date
                       description: Registration date.
                 payment_methods:
-                  type: Object
+                  type: object
                   description: Set up payment methods to be excluded from the payment process.
                   properties:
                     excluded_payment_methods:
@@ -132,7 +139,7 @@ paths:
                       type: number
                       description: Prefered number of credit card installments.
                 shipments:
-                  type: Object
+                  type: object
                   description: Shipments information.
                   properties:
                     mode:
@@ -165,7 +172,7 @@ paths:
                       type: boolean
                       description: Free shipping for mode:custom.
                     receiver_address:
-                      type: Object
+                      type: object
                       description: Shipping address.
                       properties:
                         zip_code:
@@ -190,7 +197,7 @@ paths:
                           type: string
                           description: Apartment.
                 back_urls:
-                  type: Object
+                  type: object
                   description: URLs to return to the sellers website.
                   properties:
                     success:
@@ -223,13 +230,16 @@ paths:
                   type: boolean
                   description: Boolean value that determines if a preference expire.
                 date_of_expiration:
-                  type: Date(ISO_8601)
+                  type: string
+                  format: date
                   description: Expiration date of cash payment.
                 expiration_date_from:
-                  type: Date(ISO_8601)
+                  type: string
+                  format: date
                   description: Date since the preference will be active.
                 expiration_date_to:
-                  type: Date(ISO_8601)
+                  type: string
+                  format: date
                   description: Date when the preference will be expired.
                 marketplace:
                   type: string
@@ -240,7 +250,7 @@ paths:
                     Marketplace's fee charged by application owner. Default value: 0
                     in local currency
                 differential_pricing:
-                  type: Object
+                  type: object
                   description: Differential pricing configuration for this preference.
                   properties:
                     id:
@@ -936,7 +946,7 @@ paths:
                         example: 10.0
                         description: Unit price.
                 payer:
-                  type: Object
+                  type: object
                   description: Buyer Information.
                   properties:
                     name:
@@ -949,7 +959,7 @@ paths:
                       type: string
                       description: Buyer e-mail address.
                     phone:
-                      type: Object
+                      type: object
                       description: Buyer phone.
                       properties:
                         area_code:
@@ -959,7 +969,7 @@ paths:
                           type: string
                           description: Number.
                     identification:
-                      type: Object
+                      type: object
                       description: Personal identification.
                       properties:
                         type:
@@ -969,7 +979,7 @@ paths:
                           type: string
                           description: Number.
                     address:
-                      type: Object
+                      type: object
                       description: Buyer address.
                       properties:
                         zip_code:
@@ -982,10 +992,11 @@ paths:
                           type: number
                           description: Street number.
                     date_created:
-                      type: Date(ISO_8601)
+                      type: string
+                      format: date
                       description: Registration date.
                 payment_methods:
-                  type: Object
+                  type: object
                   description: Set up payment methods to be excluded from the payment process.
                   properties:
                     excluded_payment_methods:
@@ -1018,7 +1029,7 @@ paths:
                       type: number
                       description: Prefered number of credit card installments.
                 shipments:
-                  type: Object
+                  type: object
                   description: Shipments information.
                   properties:
                     mode:
@@ -1051,7 +1062,7 @@ paths:
                       type: boolean
                       description: Free shipping for mode:custom.
                     receiver_address:
-                      type: Object
+                      type: object
                       description: Shipping address.
                       properties:
                         zip_code:
@@ -1076,7 +1087,7 @@ paths:
                           type: string
                           description: Apartment.
                 back_urls:
-                  type: Object
+                  type: object
                   description: URLs to return to the sellers website.
                   properties:
                     success:
@@ -1106,13 +1117,16 @@ paths:
                   type: boolean
                   description: Boolean value that determines if a preference expire.
                 date_of_expiration:
-                  type: Date(ISO_8601)
+                  type: string
+                  format: date
                   description: Expiration date of cash payment.
                 expiration_date_from:
-                  type: Date(ISO_8601)
+                  type: string
+                  format: date
                   description: Date since the preference will be active.
                 expiration_date_to:
-                  type: Date(ISO_8601)
+                  type: string
+                  format: date
                   description: Date when the preference will be expired.
                 marketplace:
                   type: string
@@ -1123,7 +1137,7 @@ paths:
                     Marketplace's fee charged by application owner. Default value: 0
                     in local currency
                 differential_pricing:
-                  type: Object
+                  type: object
                   description: Differential pricing configuration for this preference.
                   properties:
                     id:

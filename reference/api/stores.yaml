@@ -1,3 +1,9 @@
+openapi: 3.0.0
+servers:
+  - url: 'https://api.mercadopago.com'
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
 paths:
   /stores/{id}:
     get:
@@ -127,7 +133,7 @@ paths:
                   type: string
                   description: Unique identifier of the store defined by integrator system.
                 location:
-                  type: Object
+                  type: object
                   description: Store location. (Required)
                   properties:
                     zip_code:
@@ -143,7 +149,7 @@ paths:
                       type: string
                       description: City.(Required)
                     state_name:
-                      type: Object
+                      type: object
                       description: State. (Required)
                     latitude:
                       type: string
@@ -408,7 +414,7 @@ paths:
                     Business hours. They are divided by day of the week and up to two
                     opening and closing times per day are allowed.
                 location:
-                  type: Object
+                  type: object
                   description: Store location. (Required)
                   properties:
                     zip_code:
@@ -424,7 +430,7 @@ paths:
                       type: string
                       description: City.(Required)
                     state_name:
-                      type: Object
+                      type: object
                       description: State. (Required)
                     latitude:
                       type: string

@@ -1,3 +1,9 @@
+openapi: 3.0.0
+servers:
+  - url: 'https://api.mercadopago.com'
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
 paths:
   /customers/{customer_id}/cards:
     get:
@@ -31,10 +37,12 @@ paths:
                       type: string
                       description: Nao sei o que é
                     date_created:
-                      type: Date(ISO_8601)
+                      type: string
+                      format: date
                       description: Card's date created.
                     date_last_updated:
-                      type: Date(ISO_8601)
+                      type: string
+                      format: date
                       description: Card's last modified date.
                     customer_id:
                       type: string
@@ -448,10 +456,12 @@ paths:
                     type: string
                     description: Nao sei o que é
                   date_created:
-                    type: Date(ISO_8601)
+                    type: string
+                    format: date
                     description: Card's date created.
                   date_last_updated:
-                    type: Date(ISO_8601)
+                    type: string
+                    format: date
                     description: Card's last modified date.
                   customer_id:
                     type: string

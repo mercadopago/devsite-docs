@@ -1,3 +1,9 @@
+openapi: 3.0.0
+servers:
+  - url: 'https://api.mercadopago.com'
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
 paths:
   /merchant_orders:
     post:
@@ -28,7 +34,7 @@ paths:
                   type: number
                   description: Sponsor ID in Mercado Pago.
                 payer:
-                  type: Object
+                  type: object
                   description: Buyer Information.
                   properties:
                     id:
@@ -1072,13 +1078,16 @@ paths:
                         items:
                           type: object
                       date_created:
-                        type: Date(ISO_8601)
+                        type: string
+                        format: date
                         description: Shipping's creation date.
                       last_modified:
-                        type: Date(ISO_8601)
+                        type: string
+                        format: date
                         description: Shipping's last modification date.
                       date_first_printed:
-                        type: Date(ISO_8601)
+                        type: string
+                        format: date
                         description: Shipping's first printed date.
                       service_id:
                         type: string
@@ -1090,7 +1099,7 @@ paths:
                         type: number
                         description: Receiver identifier.
                       receiver_address:
-                        type: Object
+                        type: object
                         description: Shipping address.
                         properties:
                           id:
@@ -1103,7 +1112,7 @@ paths:
                             type: string
                             description: Apartment.
                           city:
-                            type: Object
+                            type: object
                             description: Information about receiver address city.
                             properties:
                               id:
@@ -1113,7 +1122,7 @@ paths:
                                 type: string
                                 description: City name.
                           country:
-                            type: Object
+                            type: object
                             description: Information about receiver address country.
                             properties:
                               id:
@@ -1123,7 +1132,7 @@ paths:
                                 type: string
                                 description: Country name.
                           state:
-                            type: Object
+                            type: object
                             description: Information about receiver address state.
                             properties:
                               id:
@@ -1160,7 +1169,7 @@ paths:
                             type: string
                             description: Receiver address longitude.
                       shipping_option:
-                        type: Object
+                        type: object
                         description: Shipping options.
                         properties:
                           cost:
@@ -1170,11 +1179,12 @@ paths:
                             type: string
                             description: Currency identifier.
                           estimated_delivery:
-                            type: Object
+                            type: object
                             description: Estimated delivery time information.
                             properties:
                               date:
-                                type: Date(ISO_8601)
+                                type: string
+                                format: date
                                 description: Estimated delivery date.
                               time_from:
                                 type: string
@@ -1195,7 +1205,7 @@ paths:
                             type: number
                             description: Shipping method identifier.
                           speed:
-                            type: Object
+                            type: object
                             description: Shipping time information.
                             properties:
                               handling:
@@ -1217,7 +1227,7 @@ paths:
                   type: string
                   description: Country identifier that merchant order belongs to.
                 payer:
-                  type: Object
+                  type: object
                   description: Buyer Information.
                   properties:
                     id:

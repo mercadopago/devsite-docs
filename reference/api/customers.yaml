@@ -1,3 +1,9 @@
+openapi: 3.0.0
+servers:
+  - url: 'https://api.mercadopago.com'
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
 paths:
   /v1/customers:
     post:
@@ -308,7 +314,7 @@ paths:
                     type: string
                     description: Customer's last name.
                   phone:
-                    type: Object
+                    type: object
                     description: Customer phone's information.
                     properties:
                       area_code:
@@ -318,7 +324,7 @@ paths:
                         type: string
                         description: Phone's number.
                   identification:
-                    type: Object
+                    type: object
                     description: Customer identification's information.
                     properties:
                       type:
@@ -331,7 +337,7 @@ paths:
                     type: string
                     description: Customer's default address.
                   address:
-                    type: Object
+                    type: object
                     description: Default address's information.
                     properties:
                       id:
@@ -347,25 +353,28 @@ paths:
                         type: string
                         description: Street number.
                   date_registered:
-                    type: Date(ISO_8601)
+                    type: string
+                    format: date
                     description: Customer's registration date.
                   description:
                     type: string
                     description: Customer's description.
                   date_created:
-                    type: Date(ISO_8601)
+                    type: string
+                    format: date
                     description: Customer's date created.
                   date_last_updated:
-                    type: Date(ISO_8601)
+                    type: string
+                    format: date
                     description: Last modified date.
                   metadata:
-                    type: Object
+                    type: object
                     description: Customer's metadata.
                   default_card:
                     type: string
                     description: Customer's default card.
                   cards:
-                    type: Object
+                    type: object
                     description: Customer's cards.
                     properties:
                       id:
@@ -387,7 +396,7 @@ paths:
                         type: string
                         description: Card's last four digits.
                       payment_method:
-                        type: Object
+                        type: object
                         description: Payment method information.
                         properties:
                           id:
@@ -406,7 +415,7 @@ paths:
                             type: string
                             description: Payment method secure thumbnail.
                       security_code:
-                        type: Object
+                        type: object
                         description: Security code information.
                         properties:
                           length:
@@ -416,7 +425,7 @@ paths:
                             type: string
                             description: Security code's card location.
                       issuer:
-                        type: Object
+                        type: object
                         description: Issuer information.
                         properties:
                           id:
@@ -426,7 +435,7 @@ paths:
                             type: string
                             description: Issuer name.
                       cardholder:
-                        type: Object
+                        type: object
                         description: Card holder information.
                         properties:
                           name:
@@ -446,13 +455,15 @@ paths:
                                 type: string
                                 description: Identification type.
                       date_created:
-                        type: Date(ISO_8601)
+                        type: string
+                        format: date
                         description: Card's date created.
                       date_last_updated:
-                        type: Date(ISO_8601)
+                        type: string
+                        format: date
                         description: Card's last modified date.
                   addresses:
-                    type: Object List
+                    type: object List
                     description: Customer's addresses.
                     properties:
                       id:
@@ -474,13 +485,13 @@ paths:
                         type: string
                         description: Street name.
                       street_number:
-                        type: Number
+                        type: number
                         description: Street number.
                       zip_code:
                         type: string
                         description: Postal code of an Address.
                       city:
-                        type: Object
+                        type: object
                         description: City information.
                         properties:
                           id:
@@ -490,7 +501,7 @@ paths:
                             type: string
                             description: City name.
                       state:
-                        type: Object
+                        type: object
                         description: State information.
                         properties:
                           id:
@@ -500,7 +511,7 @@ paths:
                             type: string
                             description: State name.
                       country:
-                        type: Object
+                        type: object
                         description: Country information.
                         properties:
                           id:
@@ -510,7 +521,7 @@ paths:
                             type: string
                             description: Country name.
                       neighborhood:
-                        type: Object
+                        type: object
                         description: Neighborhood information.
                         properties:
                           id:
@@ -520,7 +531,7 @@ paths:
                             type: string
                             description: Neighborhood name.
                       municipality:
-                        type: Object
+                        type: object
                         description: Municipality information.
                         properties:
                           id:

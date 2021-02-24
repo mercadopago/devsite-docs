@@ -16,7 +16,7 @@ properties:
       description: Customer's last name.
       properties: null
   phone:
-      type: Object
+      type: object
       description: Customer phone's information.
       properties:
         area_code:
@@ -28,7 +28,7 @@ properties:
             description: Phone's number.
             properties: null
   identification:
-      type: Object
+      type: object
       description: Customer identification's information.
       properties:
         type:
@@ -44,7 +44,7 @@ properties:
       description: Customer's default address.
       properties: null
   address:
-      type: Object
+      type: object
       description: Default address's information.
       properties:
         id:
@@ -80,7 +80,7 @@ properties:
       description: Last modified date.
       properties: null
   metadata:
-      type: Object
+      type: object
       description: Customer's metadata.
       properties: null
   default_card:
@@ -88,7 +88,7 @@ properties:
       description: Customer's default card.
       properties: null
   cards:
-      type: Object
+      type: object
       description: Customer's cards.
       properties:
         id:
@@ -116,7 +116,7 @@ properties:
             description: Card's last four digits.
             properties: null
         payment_method:
-            type: Object
+            type: object
             description: Payment method information.
             properties:
               id:
@@ -140,7 +140,7 @@ properties:
                   description: Payment method secure thumbnail.
                   properties: null
         security_code:
-            type: Object
+            type: object
             description: Security code information.
             properties:
               length:
@@ -152,7 +152,7 @@ properties:
                   description: Security code's card location.
                   properties: null
         issuer:
-            type: Object
+            type: object
             description: Issuer information.
             properties:
               id:
@@ -164,7 +164,7 @@ properties:
                   description: Issuer name.
                   properties: null
         cardholder:
-            type: Object
+            type: object
             description: Card holder information.
             properties:
               name:
@@ -196,7 +196,7 @@ properties:
             description: Card's last modified date.
             properties: null
   addresses:
-      type: Object List
+      type: object List
       description: Customer's addresses.
       properties:
         id:
@@ -232,7 +232,7 @@ properties:
             description: Postal code of an Address.
             properties: null
         city:
-            type: Object
+            type: object
             description: City information.
             properties:
               id:
@@ -244,7 +244,7 @@ properties:
                   description: City name.
                   properties: null
         state:
-            type: Object
+            type: object
             description: State information.
             properties:
               id:
@@ -256,7 +256,7 @@ properties:
                   description: State name.
                   properties: null
         country:
-            type: Object
+            type: object
             description: Country information.
             properties:
               id:
@@ -268,7 +268,7 @@ properties:
                   description: Country name.
                   properties: null
         neighborhood:
-            type: Object
+            type: object
             description: Neighborhood information.
             properties:
               id:
@@ -280,7 +280,7 @@ properties:
                   description: Neighborhood name.
                   properties: null
         municipality:
-            type: Object
+            type: object
             description: Municipality information.
             properties:
               id:

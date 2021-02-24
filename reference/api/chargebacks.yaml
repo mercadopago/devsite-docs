@@ -1,3 +1,9 @@
+openapi: 3.0.0
+servers:
+  - url: 'https://api.mercadopago.com'
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
 paths:
   /chargebacks/{id}:
     get:
@@ -67,13 +73,16 @@ paths:
                           type: string
                           description: Documentation's description
                   date_documentation_deadline:
-                    type: Date(ISO_8601)
+                    type: string
+                    format: date
                     description: Chargeback's last day to send documentation
                   date_created:
-                    type: Date(ISO_8601)
+                    type: string
+                    format: date
                     description: Chargeback’s creation date
                   date_last_updated:
-                    type: Date(ISO_8601)
+                    type: string
+                    format: date
                     description: Chargeback's last modified date
                   live_mode:
                     type: boolean

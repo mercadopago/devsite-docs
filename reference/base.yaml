@@ -1,9 +1,3 @@
-#------DEFAULT - ALL ARCHIVES - BEGIN------
-openapi: 3.0.0
-servers:
-  - url: 'https://api.mercadopago.com'
-info:
-  title: Mercado Pago API Reference
 #UTILIZAR TAGS PARA SER "PRODUTOS"
 tags:
   qr-code:

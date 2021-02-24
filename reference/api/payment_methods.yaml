@@ -1,3 +1,9 @@
+openapi: 3.0.0
+servers:
+  - url: 'https://api.mercadopago.com'
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
 paths:
   /payment_methods:
     get:
@@ -36,11 +42,11 @@ paths:
                       type: string
                       description: Whether the capture can be delayed or not.
                     settings:
-                      type: Object
+                      type: object
                       description: Payment method settings.
                       properties:
                         bin:
-                          type: Object
+                          type: object
                           description: ''
                           properties:
                             pattern:
@@ -59,7 +65,7 @@ paths:
                                 Regular expression representing bins allowed to
                                 pay with more than one installment.
                         card_number:
-                          type: Object
+                          type: object
                           description: ''
                           properties:
                             length:
@@ -71,14 +77,14 @@ paths:
                                 Whether the card number can be validated using a
                                 checksum algorithm (usually Luhn)
                         security_code:
-                          type: Object
+                          type: object
                           description: ''
                           properties:
                             mode:
                               type: string
                               description: Whether the security code is mandatory or not.
                             length:
-                              type: Number
+                              type: number
                               description: Security code length.
                             card_location:
                               type: string
@@ -86,27 +92,27 @@ paths:
                                 Whether the security code is located in the back
                                 or in the front of the card.
                     additional_info_needed:
-                      type: List(string)
+                      type: array
                       description: >-
                         List of additional information that must be supplied by
                         the payer.
                     min_allowed_amount:
-                      type: Number
+                      type: number
                       description: >-
                         Minimum amount that can be processed with this payment
                         method.
                     max_allowed_amount:
-                      type: Number
+                      type: number
                       description: >-
                         Maximum amount that can be processed with this payment
                         method.
                     accreditation_time:
-                      type: Number
+                      type: number
                       description: >-
                         How many time in minutes could happen until processing
                         of the payment.
                     financial_institutions:
-                      type: Object
+                      type: object
                       description: Finantial institution processing this payment method.
                       properties:
                         id:

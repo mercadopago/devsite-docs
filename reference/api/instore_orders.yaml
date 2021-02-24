@@ -1,3 +1,9 @@
+openapi: 3.0.0
+servers:
+  - url: 'https://api.mercadopago.com'
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
 paths:
   /mpmobile/instore/qr/{user_id}/{external_id}:
     post:
@@ -47,7 +53,7 @@ paths:
                   type: string
                   description: Mercado Pago's USER_ID of the integrator system.
                 items:
-                  type: Object
+                  type: object
                   description: Information on the products involved in the order. (Required)
                   properties:
                     id:

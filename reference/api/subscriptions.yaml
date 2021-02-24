@@ -1,3 +1,9 @@
+openapi: 3.0.0
+servers:
+  - url: 'https://api.mercadopago.com'
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
 paths:
   /preapproval:
     post:
@@ -13,7 +19,7 @@ paths:
               type: object
               properties:
                 auto_recurring:
-                  type: Object
+                  type: object
                   description: Recurring data.
                   properties:
                     frequency:
@@ -23,16 +29,18 @@ paths:
                       type: string
                       description: Recurring frecuency type (days or months).
                     transaction_amount:
-                      type: Number
+                      type: number
                       description: Recurring amount.
                     currency_id:
                       type: string
                       description: Currency Id.
                     start_date:
-                      type: Date(ISO_8601)
+                      type: string
+                      format: date
                       description: preapproval's start date.
                     end_date:
-                      type: Date(ISO_8601)
+                      type: string
+                      format: date
                       description: preapproval's end date.
                 back_url:
                   type: string
@@ -54,6 +62,7 @@ paths:
                   description: Preapproval status.
       responses:
         '200':
+          description: Success
           content:
             application/json:
               schema:

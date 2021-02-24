@@ -1,3 +1,9 @@
+openapi: 3.0.0
+servers:
+  - url: 'https://api.mercadopago.com'
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
 paths:
   /instore/qr/seller/collectors/{user_id}/pos/{external_pos_id}/orders:
     delete:
@@ -178,14 +184,14 @@ paths:
                         type: string
                         description: Item image URL. (Required)
                 sponsor:
-                  type: Object
+                  type: object
                   description: Integrator information.
                   properties:
                     id:
                       type: number
                       description: Mercado Pago's USER_ID of the integrator system.
                 cash_out:
-                  type: Object
+                  type: object
                   description: Cash withdrawal.
                   properties:
                     amount:
