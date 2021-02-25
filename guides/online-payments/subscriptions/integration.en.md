@@ -102,7 +102,7 @@ Done! We can now create the subscription and associate it to your plan.
 Once you have generated your plan and obtained your `preapproval_plan_id`, create the subscription of the payer by API as follows: 
 
 ```curl 
-curl --location --request POST 'https://api.mercadopago.com/preapproval \
+curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -245,6 +245,13 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
   "status": "pending"
 }'
 ```
+
+> NOTE
+> 
+> Increase the security of your website
+>
+> With our security code, you can further protect your website and get more payments approved. It will help you to prevent fraud and unjustified rejected payments.<br><br>
+> It's simple! [Add the code](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/payment-rejections#bookmark_tips_to_improve_the_approval_process) in easy steps.
 
 
 #### Response

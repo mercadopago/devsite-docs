@@ -35,6 +35,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | PACK_ID | Identificador del paquete en el carrito. |
 | TAXES_DISAGGREGATED | Impuestos desagregados en formato JSON. |
 | EFFECTIVE_COUPON_AMOUNT | Costo por ofrecer descuento. |
+| POI_ID | ID del lector si el pago se realiza a través de un comercio físico. |
 
 <hr/>
 

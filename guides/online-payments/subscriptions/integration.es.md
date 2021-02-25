@@ -102,7 +102,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval_plan' \
 Una vez generado tu plan y obtenido tu `preapproval_plan_id`, crea la suscripción por API de la siguiente manera:
 
 ```curl 
-curl --location --request POST 'https://api.mercadopago.com/preapproval \
+curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -245,6 +245,13 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
   "status": "pending"
 }'
 ```
+
+> NOTE
+> 
+> Aumenta la seguridad de tu sitio web
+>
+> Con el código de seguridad, podrás proteger aún más tu sitio y obtener más pagos aprobados. Este te ayudará a prevenir el fraude y los pagos rechazados sin justificación.<br><br>
+> ¡Es fácil! [Agrega el código](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/payment-rejections#bookmark_recomendaciones_para_mejorar_tu_aprobación) en simples pasos.
 
 
 #### Respuesta

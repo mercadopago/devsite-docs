@@ -3,6 +3,7 @@
 Find out everything about the new versions and updates of Mercado Pago integrations.
 
 ---
+----[mlb]----
 ## March 2021
 
 ### March 04th
@@ -19,8 +20,150 @@ Now you can add Pix as method of payment and receive money immediately, every da
 
 
 [Start receiving payments with Pix](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_recibir_pagos_con_pix)
+------------
+
+## February 2021
+
+----[mco]----
+
+### February 25th
+
+> CHANGELOG
+>
+> New deadlines for returns
+>
+> NEWS: NEWS
+>
+> PRODUCT: MERCADO PAGO
+
+Refunds are now permitted up to 180 days after the payment has been made for all payment methods.
+
+[Go to Refunds and cancellations documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds#bookmark_refunds)
+------------
+
+### February 17th
+
+> CHANGELOG
+>
+> New PrestaShop plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: PRESTASHOP
+
+We have released the new version 4.5.0 for PrestaShop.
+
+[Go to PrestaShop documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.5.0) for further details regarding this release.
+
+### February 16th
+
+> CHANGELOG
+>
+> Changes to ShipmentMode Enum Serialization
+>
+> FIX: FIX
+>
+> PRODUCT: SDK .NET
+
+We have fixed the ShipmentMode enum serialization in the .Net C# SDK to generate values accepted by the Preferences API.
+
+[Go to SDKs documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks)
+
+### February 12th
+
+> CHANGELOG
+>
+> Changed the SDK NodeJs name
+>
+> NEWS: NEWS
+>
+> PRODUCT: SDK NODEJS
+
+We have changed our SDK NodeJs from **dx-nodejs** to **sdk-nodejs**.
+
+[Go to SDKs documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks)
+
+> CHANGELOG
+>
+> Changed the SDK Java name
+>
+> NEWS: NEWS
+>
+> PRODUCT: SDK JAVA
+
+We have changed our SDK Java from **dx-java** to **sdk-java**.
+
+[Go to SDKs documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks)
+
+### February 11th
+
+> CHANGELOG
+>
+> New WooCommerce plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+
+We have released the new version 4.6.4 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.6.4) for further details regarding this release.
+
+### February 5th
+
+> CHANGELOG
+>
+> New WooCommerce plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+
+We have released the new version 4.6.3 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.6.3) for further details regarding this release.
+
+---
 
 ## January 2021
+
+### January 28th
+
+> CHANGELOG
+>
+> New PrestaShop plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: PRESTASHOP
+
+We have released the new version 4.4.4 for PrestaShop.
+
+[Go to PrestaShop documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.4.4) for further details regarding this release.
 
 ### January 22nd
 
