@@ -1,6 +1,6 @@
 openapi: 3.0.0
 servers:
-  - url: 'https://api.mercadopago.com'
+  - url: https://api.mercadopago.com
 info:
   title: Mercado Pago API Reference
   version: '1.0'
@@ -10,8 +10,8 @@ paths:
       tags:
         - $ref: '#/tags/qr-code/description'
         - $ref: '#/tags/link-de-pago/description'
-      summary: 'Find identification types'
-      description: 'Find identification types.'
+      summary: Find identification types
+      description: Find identification types.
       responses:
         '200':
           content:
@@ -23,11 +23,11 @@ paths:
                   properties:
                     id:
                       type: string
-                      example: "CPF"
+                      example: CPF
                       description: Identification type id.
                     name:
                       type: string
-                      example: "CPF"
+                      example: CPF
                       description: Identification type name.
                     type:
                       type: string
@@ -42,13 +42,36 @@ paths:
                       example: 11
                       description: Identification number max length
         '400':
-          '1001':
-            description: Public_key not found.
-          '1002':
-            description: 2Public_key not found.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 1001--Public-key-not-found-
+                      - 1002--2Public-key-not-found-
         '401':
-          '1000':
-            description: The credentials are required.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 1000--The-credentials-are-required-
         '404':
-          '1004':
-            description: Identification types not found.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 1004--Identification-types-not-found-

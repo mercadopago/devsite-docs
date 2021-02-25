@@ -1,17 +1,17 @@
 openapi: 3.0.0
 servers:
-  - url: 'https://api.mercadopago.com'
+  - url: https://api.mercadopago.com
 info:
   title: Mercado Pago API Reference
   version: '1.0'
 paths:
   /instore/qr/seller/collectors/{user_id}/pos/{external_pos_id}/orders:
     delete:
-      tags: 
+      tags:
         - $ref: '#/tags/qr-code/description'
         - $ref: '#/tags/link-de-pago/description'
-      summary: "Delete an Order"
-      description: "Delete an Order."
+      summary: Delete an Order
+      description: Delete an Order.
       parameters:
         - name: user_id
           in: path
@@ -29,21 +29,35 @@ paths:
             example: 12123adfasdf123u4u
       responses:
         '400':
-          invalid_collectorId:
-            description: user_id must be a number.
-          invalid_externalPosId:
-            description: externalPosId must be present.
-          invalid_access_token:
-            description: Access denied.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - invalid_collectorId--user-id-must-be-a-number-
+                      - invalid_externalPosId--externalPosId-must-be-present-
+                      - invalid_access_token--Access-denied-
         '500':
-          in_store_order_creation_error:
-            description: Failed to delete order.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - in_store_order_creation_error--Failed-to-delete-order-
     get:
-      tags: 
+      tags:
         - $ref: '#/tags/qr-code/description'
         - $ref: '#/tags/link-de-pago/description'
-      summary: "Get an Order"
-      description: "Get an Order."
+      summary: Get an Order
+      description: Get an Order.
       parameters:
         - name: user_id
           in: path
@@ -77,23 +91,47 @@ paths:
                         External_id of the point of sale defined by integrator
                         system. (Required)
         '400':
-          invalid_collectorId:
-            description: user_id must be a number.
-          invalid_externalPosId:
-            description: externalPosId must be present.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - invalid_collectorId--user-id-must-be-a-number-
+                      - invalid_externalPosId--externalPosId-must-be-present-
         '404':
-          point_of_sale_in_store_order_not_found:
-            description: No associated order found.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - >-
+                        point_of_sale_in_store_order_not_found--No-associated-order-found-
         '500':
-          in_store_order_creation_error:
-            description: Failed to create order.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - in_store_order_creation_error--Failed-to-create-order-
   /instore/qr/seller/collectors/{user_id}/stores/{external_store_id}/pos/{external_pos_id}/orders:
     put:
-      tags: 
+      tags:
         - $ref: '#/tags/qr-code/description'
         - $ref: '#/tags/link-de-pago/description'
-      summary: "Create an Order"
-      description: "Create an Order."
+      summary: Create an Order
+      description: Create an Order.
       parameters:
         - name: user_id
           in: path
@@ -127,15 +165,19 @@ paths:
                   description: User identifier. (Required)
                 external_store_id:
                   type: string
-                  description: External_id of the store defined by integrator system. (Required)
+                  description: >-
+                    External_id of the store defined by integrator system.
+                    (Required)
                 external_pos_id:
                   type: string
                   description: >-
-                    External_id of the point of sale defined by integrator system.
-                    (Required)
+                    External_id of the point of sale defined by integrator
+                    system. (Required)
                 external_reference:
                   type: string
-                  description: Reference you can synchronize with your sale system. (Required)
+                  description: >-
+                    Reference you can synchronize with your sale system.
+                    (Required)
                 title:
                   type: string
                   description: Purchase title. (Required)
@@ -152,7 +194,9 @@ paths:
                   description: Expiration date with format "2020-08-22T16:34:56.559-04:00"
                 total_amount:
                   type: number
-                  description: Total amount of the transaction in local currency. (Required)
+                  description: >-
+                    Total amount of the transaction in local currency.
+                    (Required)
                 items:
                   type: array
                   description: Information on the products involved in the order.
@@ -173,7 +217,9 @@ paths:
                         description: Item description.
                       unit_price:
                         type: number
-                        description: Unit price of the item (maximum 2 decimals). (Required)
+                        description: >-
+                          Unit price of the item (maximum 2 decimals).
+                          (Required)
                       quantity:
                         type: number
                         description: Number of item units. (Required)
@@ -199,54 +245,56 @@ paths:
                       description: Amount to withdraw in local currency.
       responses:
         '400':
-          invalid_collectorId:
-            description: user_id must be a number.
-          invalid_externalPosId:
-            description: externalPosId must be present.
-          invalid_external_reference:
-            description: external_reference must be present.
-          invalid_total_amount:
-            description: total_amount must be present.
-          invalid_items.sku_number:
-            description: items.sku_number must be string.
-          invalid_items.category:
-            description: items.category must be string.
-          invalid_items.title:
-            description: items.title must be string.
-          invalid_items.description:
-            description: items.description must be string.
-          invalid_items.unit_measure:
-            description: items.unit_measure must be string.
-          invalid_items.quantity:
-            description: items.quantity must be number.
-          invalid_items.currency_id:
-            description: items.currency_id must be string.
-          invalid_items.unit_price:
-            description: items.unit_price must be number.
-          invalid_items.total_amount:
-            description: items.total_amount must be number.
-          invalid_title:
-            description: title must be string.
-          invalid_unit_measure:
-            description: unit_measure must be present.
-          invalid_quantity:
-            description: quantity must be present.
-          invalid_unit_price:
-            description: unit_price must be present.
-          invalid_description:
-            description: description must be present.
-          invalid_sponsor.id:
-            description: sponsor.id must be number.
-          invalid_id:
-            description: sponsor.id must be present.
-          invalid_cash_out.amount:
-            description: cash_out.amount must be number.
-          invalid_amount:
-            description: cash_out.amount must be present.
-          error_creating_seller_qr_order:
-            description: The cash out is required when order has no items.
-          invalid_expiration_date:
-            description: Expiration date must be a valid and future date.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - invalid_collectorId--user-id-must-be-a-number-
+                      - invalid_externalPosId--externalPosId-must-be-present-
+                      - >-
+                        invalid_external_reference--external-reference-must-be-present-
+                      - invalid_total_amount--total-amount-must-be-present-
+                      - >-
+                        invalid_items.sku_number--items-sku-number-must-be-string-
+                      - invalid_items.category--items-category-must-be-string-
+                      - invalid_items.title--items-title-must-be-string-
+                      - >-
+                        invalid_items.description--items-description-must-be-string-
+                      - >-
+                        invalid_items.unit_measure--items-unit-measure-must-be-string-
+                      - invalid_items.quantity--items-quantity-must-be-number-
+                      - >-
+                        invalid_items.currency_id--items-currency-id-must-be-string-
+                      - >-
+                        invalid_items.unit_price--items-unit-price-must-be-number-
+                      - >-
+                        invalid_items.total_amount--items-total-amount-must-be-number-
+                      - invalid_title--title-must-be-string-
+                      - invalid_unit_measure--unit-measure-must-be-present-
+                      - invalid_quantity--quantity-must-be-present-
+                      - invalid_unit_price--unit-price-must-be-present-
+                      - invalid_description--description-must-be-present-
+                      - invalid_sponsor.id--sponsor-id-must-be-number-
+                      - invalid_id--sponsor-id-must-be-present-
+                      - invalid_cash_out.amount--cash-out-amount-must-be-number-
+                      - invalid_amount--cash-out-amount-must-be-present-
+                      - >-
+                        error_creating_seller_qr_order--The-cash-out-is-required-when-order-has-no-items-
+                      - >-
+                        invalid_expiration_date--Expiration-date-must-be-a-valid-and-future-date-
         '500':
-          in_store_order_creation_error:
-            description: Failed to create order.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - in_store_order_creation_error--Failed-to-create-order-

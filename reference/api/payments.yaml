@@ -1,6 +1,6 @@
 openapi: 3.0.0
 servers:
-  - url: 'https://api.mercadopago.com'
+  - url: https://api.mercadopago.com
 info:
   title: Mercado Pago API Reference
   version: '1.0'
@@ -10,8 +10,8 @@ paths:
       tags:
         - $ref: '#/tags/qr-code/description'
         - $ref: '#/tags/link-de-pago/description'
-      summary: 'Create a payment'
-      description: 'Create a payment.'
+      summary: Create a payment
+      description: Create a payment.
       requestBody:
         content:
           application/json:
@@ -21,8 +21,8 @@ paths:
                 additional_info:
                   type: object
                   description: >-
-                    Data that could improve fraud analysis and conversion rates. Try
-                    to send as much information as possible.
+                    Data that could improve fraud analysis and conversion rates.
+                    Try to send as much information as possible.
                   properties:
                     ip_address:
                       type: string
@@ -144,8 +144,8 @@ paths:
                 binary_mode:
                   type: boolean
                   description: >-
-                    When set to true, the payment can only be approved or rejected.
-                    Otherwise in_process status is added.
+                    When set to true, the payment can only be approved or
+                    rejected. Otherwise in_process status is added.
                 callback_url:
                   type: string
                   description: >-
@@ -157,8 +157,8 @@ paths:
                 capture:
                   type: boolean
                   description: >-
-                    Determines if the payment should be captured (true, default value)
-                    or just reserved (false).
+                    Determines if the payment should be captured (true, default
+                    value) or just reserved (false).
                 coupon_amount:
                   type: number
                   description: Amount of the coupon discount.
@@ -214,8 +214,8 @@ paths:
                     type:
                       type: string
                       description: >-
-                        Identification type of the associated payer (mandatory if the
-                        Payer is a Customer).
+                        Identification type of the associated payer (mandatory
+                        if the Payer is a Customer).
                     id:
                       type: string
                       description: Identification of the associated payer.
@@ -256,7 +256,9 @@ paths:
                   description: Payment method chosen to do the payment. (Required)
                 statement_descriptor:
                   type: string
-                  description: 'How will look the payment in the card bill (e.g.: MERCADOPAGO).'
+                  description: >-
+                    How will look the payment in the card bill (e.g.:
+                    MERCADOPAGO).
                 token:
                   type: string
                   description: Card token ID. (Required for credit card)
@@ -269,513 +271,476 @@ paths:
             application/json:
               schema:
                 type: object
-                properties: 
-                  id: 
+                properties:
+                  id:
                     type: number
                     example: 20359978
-                  date_created: 
+                  date_created:
                     type: string
-                    example: 2019-07-10T10:47:58.000-04:00
-                  date_approved: 
+                    example: 2019-07-10T14:47:58.000Z
+                  date_approved:
                     type: string
-                    example: 2019-07-10T10:47:58.000-04:00
-                  date_last_updated: 
+                    example: 2019-07-10T14:47:58.000Z
+                  date_last_updated:
                     type: string
-                    example: 2019-07-10T10:47:58.000-04:00
-                  date_of_expiration: 
+                    example: 2019-07-10T14:47:58.000Z
+                  date_of_expiration:
                     type: string
                     format: nullable
-                  money_release_date: 
+                  money_release_date:
                     type: string
-                    example: 2019-07-24T10:47:58.000-04:00
-                  operation_type: 
+                    example: 2019-07-24T14:47:58.000Z
+                  operation_type:
                     type: string
                     example: regular_payment
-                  issuer_id: 
+                  issuer_id:
                     type: string
                     example: 25
-                  payment_method_id: 
+                  payment_method_id:
                     type: string
                     example: visa
-                  payment_type_id: 
+                  payment_type_id:
                     type: string
                     example: credit_card
-                  status: 
+                  status:
                     type: string
                     example: approved
-                  status_detail: 
+                  status_detail:
                     type: string
                     example: accredited
-                  currency_id: 
+                  currency_id:
                     type: string
                     example: $
-                  description: 
+                  description:
                     type: string
-                    example: Point Mini a maquininha que dá o dinheiro de suas vendas na hora
-                  live_mode: 
+                    example: >-
+                      Point Mini a maquininha que dá o dinheiro de suas vendas
+                      na hora
+                  live_mode:
                     type: boolean
-                  sponsor_id: 
+                  sponsor_id:
                     type: string
                     format: nullable
-                  authorization_code: 
+                  authorization_code:
                     type: string
                     format: nullable
-                  money_release_schema: 
+                  money_release_schema:
                     type: string
                     format: nullable
-                  taxes_amount: 
+                  taxes_amount:
                     type: number
                     example: 0
-                  counter_currency: 
+                  counter_currency:
                     type: string
                     format: nullable
-                  shipping_amount: 
+                  shipping_amount:
                     type: number
                     example: 0
-                  pos_id: 
+                  pos_id:
                     type: string
                     format: nullable
-                  store_id: 
+                  store_id:
                     type: string
                     format: nullable
-                  collector_id: 
+                  collector_id:
                     type: number
                     example: 448876418
-                  payer: 
+                  payer:
                     type: object
-                    properties: 
-                      first_name: 
+                    properties:
+                      first_name:
                         type: string
                         example: Test
-                      last_name: 
+                      last_name:
                         type: string
                         example: Test
-                      email: 
+                      email:
                         type: string
                         example: test_user_80507629@testuser.com
-                      identification: 
+                      identification:
                         type: object
-                        properties: 
-                          number: 
+                        properties:
+                          number:
                             type: string
                             example: 19119119100
-                          type: 
+                          type:
                             type: string
                             example: CPF
-                      phone: 
+                      phone:
                         type: object
-                        properties: 
-                          area_code: 
+                        properties:
+                          area_code:
                             type: string
-                            example: 011
-                          number: 
+                            example: 11
+                          number:
                             type: string
                             example: 987654321
-                          extension: 
+                          extension:
                             type: string
-                            example: 
-                      type: 
+                            example: null
+                      type:
                         type: string
                         example: guest
-                      entity_type: 
+                      entity_type:
                         type: string
                         format: nullable
-                      id: 
+                      id:
                         type: string
                         format: nullable
-                  metadata: 
+                  metadata:
                     type: object
-                    properties:  
-                  additional_info: 
+                    properties: null
+                  additional_info:
                     type: object
-                    properties: 
-                      items: 
+                    properties:
+                      items:
                         type: array
-                        items: 
+                        items:
                           type: object
-                          properties: 
-                            id: 
+                          properties:
+                            id:
                               type: string
                               example: PR0001
-                            title: 
+                            title:
                               type: string
                               example: Point Mini
-                            description: 
+                            description:
                               type: string
-                              example: Producto Point para cobros con tarjetas mediante bluetooth
-                            picture_url: 
+                              example: >-
+                                Producto Point para cobros con tarjetas mediante
+                                bluetooth
+                            picture_url:
                               type: string
-                              example: https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png
-                            category_id: 
+                              example: >-
+                                https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png
+                            category_id:
                               type: string
                               example: electronics
-                            quantity: 
+                            quantity:
                               type: number
                               example: 1
-                            unit_price: 
+                            unit_price:
                               type: number
                               example: 58.8
-                      payer: 
+                      payer:
                         type: object
-                        properties: 
-                          phone: 
+                        properties:
+                          phone:
                             type: object
-                            properties: 
-                              area_code: 
+                            properties:
+                              area_code:
                                 type: string
                                 example: 11
-                              number: 
+                              number:
                                 type: string
                                 example: 987654321
-                          address: 
+                          address:
                             type: object
-                            properties: 
-                              zip_code: 
+                            properties:
+                              zip_code:
                                 type: string
                                 example: 06233-200
-                              street_name: 
+                              street_name:
                                 type: string
                                 example: Av das Nacoes Unidas
-                              street_number: 
+                              street_number:
                                 type: string
                                 example: 3003
-                          first_name: 
+                          first_name:
                             type: string
                             example: Nome
-                          last_name: 
+                          last_name:
                             type: string
                             example: Sobrenome
-                          registration_date: 
+                          registration_date:
                             type: string
-                            example: 2019-01-01T12:01:01.000-03:00
-                      shipments: 
+                            example: 2019-01-01T15:01:01.000Z
+                      shipments:
                         type: object
-                        properties: 
-                          receiver_address: 
+                        properties:
+                          receiver_address:
                             type: object
-                            properties: 
-                              street_name: 
+                            properties:
+                              street_name:
                                 type: string
                                 example: Av das Nacoes Unidas
-                              street_number: 
+                              street_number:
                                 type: number
                                 example: 3003
-                              zip_code: 
+                              zip_code:
                                 type: string
-                                example: 06233200
-                              city_name: 
+                                example: 6233200
+                              city_name:
                                 type: string
                                 example: Buzios
-                              state_name: 
+                              state_name:
                                 type: string
                                 example: Rio de Janeiro
-                  order: 
+                  order:
                     type: object
-                    properties:  
-                  external_reference: 
+                    properties: null
+                  external_reference:
                     type: string
                     example: MP0001
-                  transaction_amount: 
+                  transaction_amount:
                     type: number
                     example: 58.8
-                  transaction_amount_refunded: 
+                  transaction_amount_refunded:
                     type: number
                     example: 0
-                  coupon_amount: 
+                  coupon_amount:
                     type: number
                     example: 0
-                  differential_pricing_id: 
+                  differential_pricing_id:
                     type: string
                     format: nullable
-                  deduction_schema: 
+                  deduction_schema:
                     type: string
                     format: nullable
-                  transaction_details: 
+                  transaction_details:
                     type: object
-                    properties: 
-                      payment_method_reference_id: 
+                    properties:
+                      payment_method_reference_id:
                         type: string
                         format: nullable
-                      net_received_amount: 
+                      net_received_amount:
                         type: number
                         example: 56.16
-                      total_paid_amount: 
+                      total_paid_amount:
                         type: number
                         example: 58.8
-                      overpaid_amount: 
+                      overpaid_amount:
                         type: number
                         example: 0
-                      external_resource_url: 
+                      external_resource_url:
                         type: string
                         format: nullable
-                      installment_amount: 
+                      installment_amount:
                         type: number
                         example: 58.8
-                      financial_institution: 
+                      financial_institution:
                         type: string
                         format: nullable
-                      payable_deferral_period: 
+                      payable_deferral_period:
                         type: string
                         format: nullable
-                      acquirer_reference: 
+                      acquirer_reference:
                         type: string
                         format: nullable
-                  fee_details: 
+                  fee_details:
                     type: array
-                    items: 
+                    items:
                       type: object
-                      properties: 
-                        type: 
+                      properties:
+                        type:
                           type: string
                           example: mercadopago_fee
-                        amount: 
+                        amount:
                           type: number
                           example: 2.64
-                        fee_payer: 
+                        fee_payer:
                           type: string
                           example: collector
-                  captured: 
+                  captured:
                     type: boolean
-                  binary_mode: 
+                  binary_mode:
                     type: boolean
-                  call_for_authorize_id: 
+                  call_for_authorize_id:
                     type: string
                     format: nullable
-                  statement_descriptor: 
+                  statement_descriptor:
                     type: string
                     example: MercadoPago
-                  installments: 
+                  installments:
                     type: number
                     example: 1
-                  card: 
+                  card:
                     type: object
-                    properties: 
-                      id: 
+                    properties:
+                      id:
                         type: string
                         format: nullable
-                      first_six_digits: 
+                      first_six_digits:
                         type: string
                         example: 423564
-                      last_four_digits: 
+                      last_four_digits:
                         type: string
                         example: 5682
-                      expiration_month: 
+                      expiration_month:
                         type: number
                         example: 6
-                      expiration_year: 
+                      expiration_year:
                         type: number
                         example: 2023
-                      date_created: 
+                      date_created:
                         type: string
-                        example: 2019-07-10T10:47:58.000-04:00
-                      date_last_updated: 
+                        example: 2019-07-10T14:47:58.000Z
+                      date_last_updated:
                         type: string
-                        example: 2019-07-10T10:47:58.000-04:00
-                      cardholder: 
+                        example: 2019-07-10T14:47:58.000Z
+                      cardholder:
                         type: object
-                        properties: 
-                          name: 
+                        properties:
+                          name:
                             type: string
                             example: APRO
-                          identification: 
+                          identification:
                             type: object
-                            properties: 
-                              number: 
+                            properties:
+                              number:
                                 type: string
                                 example: 19119119100
-                              type: 
+                              type:
                                 type: string
                                 example: CPF
-                  notification_url: 
+                  notification_url:
                     type: string
                     example: https://www.suaurl.com/notificacoes/
-                  processing_mode: 
+                  processing_mode:
                     type: string
                     example: aggregator
-                  merchant_account_id: 
+                  merchant_account_id:
                     type: string
                     format: nullable
-                  acquirer: 
+                  acquirer:
                     type: string
                     format: nullable
-                  merchant_number: 
+                  merchant_number:
                     type: string
                     format: nullable
         '400':
-          '1':
-            description: Params Error.
-          '3':
-            description: Token must be for test.
-          '5':
-            description: Must provide your access_token to proceed.
-          '23':
-            description: >-
-              The following parameters must be valid date and format
-              (yyyy-MM-dd'T'HH:mm:ssz) date_of_expiration.
-          '1000':
-            description: Number of rows exceeded the limits.
-          '1001':
-            description: Date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ.
-          '2001':
-            description: Already posted the same request in the last minute.
-          '2002':
-            description: Customer not found.
-          '2004':
-            description: POST to Gateway Transactions API fail.
-          '2006':
-            description: Card Token not found.
-          '2007':
-            description: Connection to Card Token API fail.
-          '2009':
-            description: Card token issuer can't be null.
-          '2060':
-            description: The customer can't be equal to the collector.
-          '3000':
-            description: You must provide your cardholder_name with your card data.
-          '3001':
-            description: You must provide your cardissuer_id with your card data.
-          '3003':
-            description: Invalid card_token_id.
-          '3004':
-            description: Invalid parameter site_id.
-          '3005':
-            description: >-
-              Not valid action, the resource is in a state that does not allow
-              this operation. For more information see the state that has the
-              resource.
-          '3006':
-            description: Invalid parameter cardtoken_id.
-          '3007':
-            description: The parameter client_id can not be null or empty.
-          '3008':
-            description: Not found Cardtoken.
-          '3009':
-            description: unauthorized client_id.
-          '3010':
-            description: Not found card on whitelist.
-          '3011':
-            description: Not found payment_method.
-          '3012':
-            description: Invalid parameter security_code_length.
-          '3013':
-            description: >-
-              The parameter security_code is a required field can not be null or
-              empty.
-          '3014':
-            description: Invalid parameter payment_method.
-          '3015':
-            description: Invalid parameter card_number_length.
-          '3016':
-            description: Invalid parameter card_number.
-          '3017':
-            description: The parameter card_number_id can not be null or empty.
-          '3018':
-            description: The parameter expiration_month can not be null or empty.
-          '3019':
-            description: The parameter expiration_year can not be null or empty.
-          '3020':
-            description: The parameter cardholder.name can not be null or empty.
-          '3021':
-            description: The parameter cardholder.document.number can not be null or empty.
-          '3022':
-            description: The parameter cardholder.document.type can not be null or empty.
-          '3023':
-            description: >-
-              The parameter cardholder.document.subtype can not be null or
-              empty.
-          '3024':
-            description: >-
-              Not valid action - partial refund unsupported for this
-              transaction.
-          '3025':
-            description: Invalid Auth Code.
-          '3026':
-            description: Invalid card_id for this payment_method_id.
-          '3027':
-            description: Invalid payment_type_id.
-          '3028':
-            description: Invalid payment_method_id.
-          '3029':
-            description: Invalid card expiration month.
-          '3030':
-            description: Invalid card expiration year.
-          '4000':
-            description: card atributte can't be null.
-          '4001':
-            description: payment_method_id atributte can't be null.
-          '4002':
-            description: transaction_amount atributte can't be null.
-          '4003':
-            description: transaction_amount atributte must be numeric.
-          '4004':
-            description: installments atributte can't be null.
-          '4005':
-            description: installments atributte must be numeric.
-          '4006':
-            description: payer atributte is malformed.
-          '4007':
-            description: site_id atributte can't be null.
-          '4012':
-            description: payer.id atributte can't be null.
-          '4013':
-            description: payer.type atributte can't be null.
-          '4015':
-            description: payment_method_reference_id atributte can't be null.
-          '4016':
-            description: payment_method_reference_id atributte must be numeric.
-          '4017':
-            description: status atributte can't be null.
-          '4018':
-            description: payment_id atributte can't be null.
-          '4019':
-            description: payment_id atributte must be numeric.
-          '4020':
-            description: notificaction_url atributte must be url valid.
-          '4021':
-            description: notificaction_url atributte must be shorter than 500 characters.
-          '4022':
-            description: metadata atributte must be a valid JSON.
-          '4023':
-            description: transaction_amount atributte can't be null.
-          '4024':
-            description: transaction_amount atributte must be numeric.
-          '4025':
-            description: refund_id can't be null.
-          '4026':
-            description: Invalid coupon_amount.
-          '4027':
-            description: campaign_id atributte must be numeric.
-          '4028':
-            description: coupon_amount atributte must be numeric.
-          '4029':
-            description: Invalid payer type.
-          '4037':
-            description: Invalid transaction_amount.
-          '4038':
-            description: application_fee cannot be bigger than transaction_amount.
-          '4039':
-            description: application_fee cannot be a negative value.
-          '4050':
-            description: payer.email must be a valid email.
-          '4051':
-            description: payer.email must be shorter than 254 characters.
-          '7523':
-            description: Invalid expiration date.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 1--Params-Error-
+                      - 3--Token-must-be-for-test-
+                      - 5--Must-provide-your-access-token-to-proceed-
+                      - >-
+                        23--The-following-parameters-must-be-valid-date-and-format--yyyy-MM-dd-T-HH-mm-ssz--date-of-expiration-
+                      - 1000--Number-of-rows-exceeded-the-limits-
+                      - 1001--Date-format-must-be-yyyy-MM-dd-T-HH-mm-ss-SSSZ-
+                      - >-
+                        2001--Already-posted-the-same-request-in-the-last-minute-
+                      - 2002--Customer-not-found-
+                      - 2004--POST-to-Gateway-Transactions-API-fail-
+                      - 2006--Card-Token-not-found-
+                      - 2007--Connection-to-Card-Token-API-fail-
+                      - 2009--Card-token-issuer-can-t-be-null-
+                      - 2060--The-customer-can-t-be-equal-to-the-collector-
+                      - >-
+                        3000--You-must-provide-your-cardholder-name-with-your-card-data-
+                      - >-
+                        3001--You-must-provide-your-cardissuer-id-with-your-card-data-
+                      - 3003--Invalid-card-token-id-
+                      - 3004--Invalid-parameter-site-id-
+                      - >-
+                        3005--Not-valid-action--the-resource-is-in-a-state-that-does-not-allow-this-operation--For-more-information-see-the-state-that-has-the-resource-
+                      - 3006--Invalid-parameter-cardtoken-id-
+                      - 3007--The-parameter-client-id-can-not-be-null-or-empty-
+                      - 3008--Not-found-Cardtoken-
+                      - 3009--unauthorized-client-id-
+                      - 3010--Not-found-card-on-whitelist-
+                      - 3011--Not-found-payment-method-
+                      - 3012--Invalid-parameter-security-code-length-
+                      - >-
+                        3013--The-parameter-security-code-is-a-required-field-can-not-be-null-or-empty-
+                      - 3014--Invalid-parameter-payment-method-
+                      - 3015--Invalid-parameter-card-number-length-
+                      - 3016--Invalid-parameter-card-number-
+                      - >-
+                        3017--The-parameter-card-number-id-can-not-be-null-or-empty-
+                      - >-
+                        3018--The-parameter-expiration-month-can-not-be-null-or-empty-
+                      - >-
+                        3019--The-parameter-expiration-year-can-not-be-null-or-empty-
+                      - >-
+                        3020--The-parameter-cardholder-name-can-not-be-null-or-empty-
+                      - >-
+                        3021--The-parameter-cardholder-document-number-can-not-be-null-or-empty-
+                      - >-
+                        3022--The-parameter-cardholder-document-type-can-not-be-null-or-empty-
+                      - >-
+                        3023--The-parameter-cardholder-document-subtype-can-not-be-null-or-empty-
+                      - >-
+                        3024--Not-valid-action---partial-refund-unsupported-for-this-transaction-
+                      - 3025--Invalid-Auth-Code-
+                      - 3026--Invalid-card-id-for-this-payment-method-id-
+                      - 3027--Invalid-payment-type-id-
+                      - 3028--Invalid-payment-method-id-
+                      - 3029--Invalid-card-expiration-month-
+                      - 3030--Invalid-card-expiration-year-
+                      - 4000--card-atributte-can-t-be-null-
+                      - 4001--payment-method-id-atributte-can-t-be-null-
+                      - 4002--transaction-amount-atributte-can-t-be-null-
+                      - 4003--transaction-amount-atributte-must-be-numeric-
+                      - 4004--installments-atributte-can-t-be-null-
+                      - 4005--installments-atributte-must-be-numeric-
+                      - 4006--payer-atributte-is-malformed-
+                      - 4007--site-id-atributte-can-t-be-null-
+                      - 4012--payer-id-atributte-can-t-be-null-
+                      - 4013--payer-type-atributte-can-t-be-null-
+                      - >-
+                        4015--payment-method-reference-id-atributte-can-t-be-null-
+                      - >-
+                        4016--payment-method-reference-id-atributte-must-be-numeric-
+                      - 4017--status-atributte-can-t-be-null-
+                      - 4018--payment-id-atributte-can-t-be-null-
+                      - 4019--payment-id-atributte-must-be-numeric-
+                      - 4020--notificaction-url-atributte-must-be-url-valid-
+                      - >-
+                        4021--notificaction-url-atributte-must-be-shorter-than-500-characters-
+                      - 4022--metadata-atributte-must-be-a-valid-JSON-
+                      - 4023--transaction-amount-atributte-can-t-be-null-
+                      - 4024--transaction-amount-atributte-must-be-numeric-
+                      - 4025--refund-id-can-t-be-null-
+                      - 4026--Invalid-coupon-amount-
+                      - 4027--campaign-id-atributte-must-be-numeric-
+                      - 4028--coupon-amount-atributte-must-be-numeric-
+                      - 4029--Invalid-payer-type-
+                      - 4037--Invalid-transaction-amount-
+                      - >-
+                        4038--application-fee-cannot-be-bigger-than-transaction-amount-
+                      - 4039--application-fee-cannot-be-a-negative-value-
+                      - 4050--payer-email-must-be-a-valid-email-
+                      - 4051--payer-email-must-be-shorter-than-254-characters-
+                      - 7523--Invalid-expiration-date-
         '403':
-          '4':
-            description: The caller is not authorized to access this resource.
-          '3002':
-            description: The caller is not authorized to perform this action.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 4--The-caller-is-not-authorized-to-access-this-resource-
+                      - >-
+                        3002--The-caller-is-not-authorized-to-perform-this-action-
         '404':
-          '2000':
-            description: Payment not found
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 2000--Payment-not-found
   /payments/{id}:
     get:
       tags:
         - $ref: '#/tags/qr-code/description'
         - $ref: '#/tags/link-de-pago/description'
-      summary: 'Get a payment'
-      description: 'Get a payment.'
+      summary: Get a payment
+      description: Get a payment.
       parameters:
         - name: id
           in: path
@@ -789,303 +754,290 @@ paths:
             application/json:
               schema:
                 type: object
-                properties: 
-                  id: 
+                properties:
+                  id:
                     type: string
-                    example: 0000001
-                  date_created: 
+                    example: 1
+                  date_created:
                     type: string
-                    example: 2017-08-31T07:26:38.000-04:00
-                  date_approved: 
+                    example: 2017-08-31T11:26:38.000Z
+                  date_approved:
                     type: string
-                    example: 2017-08-31T07:26:38.000-04:00
-                  date_last_updated: 
+                    example: 2017-08-31T11:26:38.000Z
+                  date_last_updated:
                     type: string
-                    example: 2017-08-31T07:26:38.000-04:00
-                  date_of_expiration: 
+                    example: 2017-08-31T11:26:38.000Z
+                  date_of_expiration:
                     type: string
                     format: nullable
-                  money_release_date: 
+                  money_release_date:
                     type: string
-                    example: 2017-09-14T07:26:38.000-04:00
-                  operation_type: 
+                    example: 2017-09-14T11:26:38.000Z
+                  operation_type:
                     type: string
                     example: money_transfer
-                  issuer_id: 
+                  issuer_id:
                     type: string
                     format: nullable
-                  payment_method_id: 
+                  payment_method_id:
                     type: string
                     example: account_money
-                  payment_type_id: 
+                  payment_type_id:
                     type: string
                     example: account_money
-                  status: 
+                  status:
                     type: string
                     example: approved
-                  status_detail: 
+                  status_detail:
                     type: string
                     example: accredited
-                  currency_id: 
+                  currency_id:
                     type: string
                     example: $
-                  description: 
+                  description:
                     type: string
                     example: Pago Pizza
-                  live_mode: 
+                  live_mode:
                     type: boolean
-                  sponsor_id: 
+                  sponsor_id:
                     type: string
                     format: nullable
-                  authorization_code: 
+                  authorization_code:
                     type: string
                     format: nullable
-                  money_release_schema: 
+                  money_release_schema:
                     type: string
                     format: nullable
-                  counter_currency: 
+                  counter_currency:
                     type: string
                     format: nullable
-                  collector_id: 
+                  collector_id:
                     type: string
-                    example: 0000002
-                  payer: 
+                    example: 2
+                  payer:
                     type: object
-                    properties: 
-                      type: 
+                    properties:
+                      type:
                         type: string
                         example: registered
-                      id: 
+                      id:
                         type: string
-                        example: 000001
-                      email: 
+                        example: 1
+                      email:
                         type: string
                         example: afriend@gmail.com
-                      identification: 
+                      identification:
                         type: object
-                        properties: 
-                          type: 
+                        properties:
+                          type:
                             type: string
                             example: DNI
-                          number: 
+                          number:
                             type: string
                             example: 12345678
-                      phone: 
+                      phone:
                         type: object
-                        properties: 
-                          area_code: 
+                        properties:
+                          area_code:
                             type: string
                             format: nullable
-                          number: 
+                          number:
                             type: string
                             example: 11123456789
-                          extension: 
+                          extension:
                             type: string
                             format: nullable
-                      first_name: 
+                      first_name:
                         type: string
                         example: Name
-                      last_name: 
+                      last_name:
                         type: string
                         example: LastName
-                      entity_type: 
+                      entity_type:
                         type: string
                         format: nullable
-                  metadata: 
+                  metadata:
                     type: object
-                    properties:  
-                  additional_info: 
+                    properties: null
+                  additional_info:
                     type: object
-                    properties:  
-                  order: 
+                    properties: null
+                  order:
                     type: object
-                    properties:  
-                  external_reference: 
+                    properties: null
+                  external_reference:
                     type: string
                     format: nullable
-                  transaction_amount: 
+                  transaction_amount:
                     type: number
                     example: 250
-                  transaction_amount_refunded: 
+                  transaction_amount_refunded:
                     type: number
                     example: 0
-                  coupon_amount: 
+                  coupon_amount:
                     type: number
                     example: 0
-                  differential_pricing_id: 
+                  differential_pricing_id:
                     type: string
                     format: nullable
-                  deduction_schema: 
+                  deduction_schema:
                     type: string
                     format: nullable
-                  transaction_details: 
+                  transaction_details:
                     type: object
-                    properties: 
-                      net_received_amount: 
+                    properties:
+                      net_received_amount:
                         type: number
                         example: 250
-                      total_paid_amount: 
+                      total_paid_amount:
                         type: number
                         example: 250
-                      overpaid_amount: 
+                      overpaid_amount:
                         type: number
                         example: 0
-                      external_resource_url: 
+                      external_resource_url:
                         type: string
                         format: nullable
-                      installment_amount: 
+                      installment_amount:
                         type: number
                         example: 250
-                      financial_institution: 
+                      financial_institution:
                         type: string
                         format: nullable
-                      payment_method_reference_id: 
+                      payment_method_reference_id:
                         type: string
                         format: nullable
-                      payable_deferral_period: 
+                      payable_deferral_period:
                         type: string
                         format: nullable
-                      acquirer_reference: 
+                      acquirer_reference:
                         type: string
                         format: nullable
-                  captured: 
+                  captured:
                     type: boolean
-                  binary_mode: 
+                  binary_mode:
                     type: boolean
-                  call_for_authorize_id: 
+                  call_for_authorize_id:
                     type: string
                     format: nullable
-                  statement_descriptor: 
+                  statement_descriptor:
                     type: string
                     format: nullable
-                  installments: 
+                  installments:
                     type: number
                     example: 1
-                  card: 
+                  card:
                     type: object
-                    properties:  
-                  notification_url: 
+                    properties: null
+                  notification_url:
                     type: string
                     format: nullable
-                  processing_mode: 
+                  processing_mode:
                     type: string
                     format: nullable
-                  merchant_account_id: 
+                  merchant_account_id:
                     type: string
                     format: nullable
-                  acquirer: 
+                  acquirer:
                     type: string
                     format: nullable
-                  merchant_number: 
+                  merchant_number:
                     type: string
                     format: nullable
-
         '400':
-          '1':
-            description: Params Error.
-          '3':
-            description: Token must be for test.
-          '5':
-            description: Must provide your access_token to proceed.
-          '1000':
-            description: Number of rows exceeded the limits.
-          '1001':
-            description: Date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ.
-          '2001':
-            description: Already posted the same request in the last minute.
-          '2002':
-            description: Customer not found.
-          '2004':
-            description: POST to Gateway Transactions API fail.
-          '2006':
-            description: Card Token not found.
-          '2007':
-            description: Connection to Card Token API fail.
-          '2009':
-            description: Card token issuer can't be null.
-          '3000':
-            description: You must provide your cardholder_name with your card data.
-          '3001':
-            description: You must provide your cardissuer_id with your card data.
-          '3003':
-            description: Invalid card_token_id.
-          '3004':
-            description: Invalid parameter site_id.
-          '3005':
-            description: >-
-              Not valid action, the resource is in a state that does not allow
-              this operation. For more information see the state that has the
-              resource.
-          '3006':
-            description: Invalid parameter cardtoken_id.
-          '3007':
-            description: The parameter client_id can not be null or empty.
-          '3008':
-            description: Not found Cardtoken.
-          '3009':
-            description: unauthorized client_id.
-          '3010':
-            description: Not found card on whitelist.
-          '3011':
-            description: Not found payment_method.
-          '3012':
-            description: Invalid parameter security_code_length.
-          '3013':
-            description: >-
-              The parameter security_code is a required field can not be null or
-              empty.
-          '3014':
-            description: Invalid parameter payment_method.
-          '3015':
-            description: Invalid parameter card_number_length.
-          '3016':
-            description: Invalid parameter card_number.
-          '3017':
-            description: The parameter card_number_id can not be null or empty.
-          '3018':
-            description: The parameter expiration_month can not be null or empty.
-          '3019':
-            description: The parameter expiration_year can not be null or empty.
-          '3020':
-            description: The parameter cardholder.name can not be null or empty.
-          '3021':
-            description: The parameter cardholder.document.number can not be null or empty.
-          '3022':
-            description: The parameter cardholder.document.type can not be null or empty.
-          '3023':
-            description: >-
-              The parameter cardholder.document.subtype can not be null or
-              empty.
-          '3024':
-            description: >-
-              Not valid action - partial refund unsupported for this
-              transaction.
-          '3025':
-            description: Invalid Auth Code.
-          '3026':
-            description: Invalid card_id for this payment_method_id.
-          '3027':
-            description: Invalid payment_type_id.
-          '3028':
-            description: Invalid payment_method_id.
-          '3029':
-            description: Invalid card expiration month.
-          '3030':
-            description: Invalid card expiration year.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 1--Params-Error-
+                      - 3--Token-must-be-for-test-
+                      - 5--Must-provide-your-access-token-to-proceed-
+                      - 1000--Number-of-rows-exceeded-the-limits-
+                      - 1001--Date-format-must-be-yyyy-MM-dd-T-HH-mm-ss-SSSZ-
+                      - >-
+                        2001--Already-posted-the-same-request-in-the-last-minute-
+                      - 2002--Customer-not-found-
+                      - 2004--POST-to-Gateway-Transactions-API-fail-
+                      - 2006--Card-Token-not-found-
+                      - 2007--Connection-to-Card-Token-API-fail-
+                      - 2009--Card-token-issuer-can-t-be-null-
+                      - >-
+                        3000--You-must-provide-your-cardholder-name-with-your-card-data-
+                      - >-
+                        3001--You-must-provide-your-cardissuer-id-with-your-card-data-
+                      - 3003--Invalid-card-token-id-
+                      - 3004--Invalid-parameter-site-id-
+                      - >-
+                        3005--Not-valid-action--the-resource-is-in-a-state-that-does-not-allow-this-operation--For-more-information-see-the-state-that-has-the-resource-
+                      - 3006--Invalid-parameter-cardtoken-id-
+                      - 3007--The-parameter-client-id-can-not-be-null-or-empty-
+                      - 3008--Not-found-Cardtoken-
+                      - 3009--unauthorized-client-id-
+                      - 3010--Not-found-card-on-whitelist-
+                      - 3011--Not-found-payment-method-
+                      - 3012--Invalid-parameter-security-code-length-
+                      - >-
+                        3013--The-parameter-security-code-is-a-required-field-can-not-be-null-or-empty-
+                      - 3014--Invalid-parameter-payment-method-
+                      - 3015--Invalid-parameter-card-number-length-
+                      - 3016--Invalid-parameter-card-number-
+                      - >-
+                        3017--The-parameter-card-number-id-can-not-be-null-or-empty-
+                      - >-
+                        3018--The-parameter-expiration-month-can-not-be-null-or-empty-
+                      - >-
+                        3019--The-parameter-expiration-year-can-not-be-null-or-empty-
+                      - >-
+                        3020--The-parameter-cardholder-name-can-not-be-null-or-empty-
+                      - >-
+                        3021--The-parameter-cardholder-document-number-can-not-be-null-or-empty-
+                      - >-
+                        3022--The-parameter-cardholder-document-type-can-not-be-null-or-empty-
+                      - >-
+                        3023--The-parameter-cardholder-document-subtype-can-not-be-null-or-empty-
+                      - >-
+                        3024--Not-valid-action---partial-refund-unsupported-for-this-transaction-
+                      - 3025--Invalid-Auth-Code-
+                      - 3026--Invalid-card-id-for-this-payment-method-id-
+                      - 3027--Invalid-payment-type-id-
+                      - 3028--Invalid-payment-method-id-
+                      - 3029--Invalid-card-expiration-month-
+                      - 3030--Invalid-card-expiration-year-
         '403':
-          '4':
-            description: The caller is not authorized to access this resource.
-          '3002':
-            description: The caller is not authorized to perform this action.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 4--The-caller-is-not-authorized-to-access-this-resource-
+                      - >-
+                        3002--The-caller-is-not-authorized-to-perform-this-action-
         '404':
-          '2000':
-            description: Payment not found.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 2000--Payment-not-found-
     put:
       tags:
         - $ref: '#/tags/qr-code/description'
         - $ref: '#/tags/link-de-pago/description'
-      summary: 'Update a payment'
-      description: 'Update a payment.'
+      summary: Update a payment
+      description: Update a payment.
       parameters:
         - name: id
           in: path
@@ -1102,8 +1054,8 @@ paths:
                 additional_info:
                   type: object
                   description: >-
-                    Data that could improve fraud analysis and conversion rates. Try
-                    to send as much information as possible.
+                    Data that could improve fraud analysis and conversion rates.
+                    Try to send as much information as possible.
                   properties:
                     ip_address:
                       type: string
@@ -1225,8 +1177,8 @@ paths:
                 binary_mode:
                   type: boolean
                   description: >-
-                    When set to true, the payment can only be approved or rejected.
-                    Otherwise in_process status is added.
+                    When set to true, the payment can only be approved or
+                    rejected. Otherwise in_process status is added.
                 callback_url:
                   type: string
                   description: >-
@@ -1238,8 +1190,8 @@ paths:
                 capture:
                   type: boolean
                   description: >-
-                    Determines if the payment should be captured (true, default value)
-                    or just reserved (false).
+                    Determines if the payment should be captured (true, default
+                    value) or just reserved (false).
                 coupon_amount:
                   type: number
                   description: Amount of the coupon discount.
@@ -1295,8 +1247,8 @@ paths:
                     type:
                       type: string
                       description: >-
-                        Identification type of the associated payer (mandatory if the
-                        Payer is a Customer).
+                        Identification type of the associated payer (mandatory
+                        if the Payer is a Customer).
                     id:
                       type: string
                       description: Identification of the associated payer.
@@ -1337,7 +1289,9 @@ paths:
                   description: Payment method chosen to do the payment. (Required)
                 statement_descriptor:
                   type: string
-                  description: 'How will look the payment in the card bill (e.g.: MERCADOPAGO).'
+                  description: >-
+                    How will look the payment in the card bill (e.g.:
+                    MERCADOPAGO).
                 token:
                   type: string
                   description: Card token ID. (Required for credit card)
@@ -1346,112 +1300,100 @@ paths:
                   description: Product cost. (Required)
       responses:
         '400':
-          '1':
-            description: Params Error.
-          '3':
-            description: Token must be for test.
-          '5':
-            description: Must provide your access_token to proceed.
-          '1000':
-            description: Number of rows exceeded the limits.
-          '1001':
-            description: Date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ.
-          '2001':
-            description: Already posted the same request in the last minute.
-          '2002':
-            description: Customer not found.
-          '2004':
-            description: POST to Gateway Transactions API fail.
-          '2006':
-            description: Card Token not found.
-          '2007':
-            description: Connection to Card Token API fail.
-          '2009':
-            description: Card token issuer can't be null.
-          '3000':
-            description: You must provide your cardholder_name with your card data.
-          '3001':
-            description: You must provide your cardissuer_id with your card data.
-          '3003':
-            description: Invalid card_token_id.
-          '3004':
-            description: Invalid parameter site_id.
-          '3005':
-            description: >-
-              Not valid action, the resource is in a state that does not allow
-              this operation. For more information see the state that has the
-              resource.
-          '3006':
-            description: Invalid parameter cardtoken_id.
-          '3007':
-            description: The parameter client_id can not be null or empty.
-          '3008':
-            description: Not found Cardtoken.
-          '3009':
-            description: unauthorized client_id.
-          '3010':
-            description: Not found card on whitelist.
-          '3011':
-            description: Not found payment_method.
-          '3012':
-            description: Invalid parameter security_code_length.
-          '3013':
-            description: >-
-              The parameter security_code is a required field can not be null or
-              empty.
-          '3014':
-            description: Invalid parameter payment_method.
-          '3015':
-            description: Invalid parameter card_number_length.
-          '3016':
-            description: Invalid parameter card_number.
-          '3017':
-            description: The parameter card_number_id can not be null or empty.
-          '3018':
-            description: The parameter expiration_month can not be null or empty.
-          '3019':
-            description: The parameter expiration_year can not be null or empty.
-          '3020':
-            description: The parameter cardholder.name can not be null or empty.
-          '3021':
-            description: The parameter cardholder.document.number can not be null or empty.
-          '3022':
-            description: The parameter cardholder.document.type can not be null or empty.
-          '3023':
-            description: >-
-              The parameter cardholder.document.subtype can not be null or
-              empty.
-          '3024':
-            description: >-
-              Not valid action - partial refund unsupported for this
-              transaction.
-          '3025':
-            description: Invalid Auth Code.
-          '3026':
-            description: Invalid card_id for this payment_method_id.
-          '3027':
-            description: Invalid payment_type_id.
-          '3028':
-            description: Invalid payment_method_id.
-          '3029':
-            description: Invalid card expiration month.
-          '3030':
-            description: Invalid card expiration year.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 1--Params-Error-
+                      - 3--Token-must-be-for-test-
+                      - 5--Must-provide-your-access-token-to-proceed-
+                      - 1000--Number-of-rows-exceeded-the-limits-
+                      - 1001--Date-format-must-be-yyyy-MM-dd-T-HH-mm-ss-SSSZ-
+                      - >-
+                        2001--Already-posted-the-same-request-in-the-last-minute-
+                      - 2002--Customer-not-found-
+                      - 2004--POST-to-Gateway-Transactions-API-fail-
+                      - 2006--Card-Token-not-found-
+                      - 2007--Connection-to-Card-Token-API-fail-
+                      - 2009--Card-token-issuer-can-t-be-null-
+                      - >-
+                        3000--You-must-provide-your-cardholder-name-with-your-card-data-
+                      - >-
+                        3001--You-must-provide-your-cardissuer-id-with-your-card-data-
+                      - 3003--Invalid-card-token-id-
+                      - 3004--Invalid-parameter-site-id-
+                      - >-
+                        3005--Not-valid-action--the-resource-is-in-a-state-that-does-not-allow-this-operation--For-more-information-see-the-state-that-has-the-resource-
+                      - 3006--Invalid-parameter-cardtoken-id-
+                      - 3007--The-parameter-client-id-can-not-be-null-or-empty-
+                      - 3008--Not-found-Cardtoken-
+                      - 3009--unauthorized-client-id-
+                      - 3010--Not-found-card-on-whitelist-
+                      - 3011--Not-found-payment-method-
+                      - 3012--Invalid-parameter-security-code-length-
+                      - >-
+                        3013--The-parameter-security-code-is-a-required-field-can-not-be-null-or-empty-
+                      - 3014--Invalid-parameter-payment-method-
+                      - 3015--Invalid-parameter-card-number-length-
+                      - 3016--Invalid-parameter-card-number-
+                      - >-
+                        3017--The-parameter-card-number-id-can-not-be-null-or-empty-
+                      - >-
+                        3018--The-parameter-expiration-month-can-not-be-null-or-empty-
+                      - >-
+                        3019--The-parameter-expiration-year-can-not-be-null-or-empty-
+                      - >-
+                        3020--The-parameter-cardholder-name-can-not-be-null-or-empty-
+                      - >-
+                        3021--The-parameter-cardholder-document-number-can-not-be-null-or-empty-
+                      - >-
+                        3022--The-parameter-cardholder-document-type-can-not-be-null-or-empty-
+                      - >-
+                        3023--The-parameter-cardholder-document-subtype-can-not-be-null-or-empty-
+                      - >-
+                        3024--Not-valid-action---partial-refund-unsupported-for-this-transaction-
+                      - 3025--Invalid-Auth-Code-
+                      - 3026--Invalid-card-id-for-this-payment-method-id-
+                      - 3027--Invalid-payment-type-id-
+                      - 3028--Invalid-payment-method-id-
+                      - 3029--Invalid-card-expiration-month-
+                      - 3030--Invalid-card-expiration-year-
         '403':
-          '4':
-            description: The caller is not authorized to access this resource.
-          '3002':
-            description: The caller is not authorized to perform this action.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 4--The-caller-is-not-authorized-to-access-this-resource-
+                      - >-
+                        3002--The-caller-is-not-authorized-to-perform-this-action-
         '404':
-          '2000':
-            description: Payment not found.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 2000--Payment-not-found-
   /payments/search:
     get:
       tags:
         - $ref: '#/tags/qr-code/description'
         - $ref: '#/tags/link-de-pago/description'
-      summary: 'Search a payment'
-      description: 'Search a payment.'
+      summary: Search a payment
+      description: Search a payment.
       parameters:
         - name: sort
           in: query
@@ -1482,315 +1424,300 @@ paths:
                 type: array
                 items:
                   type: object
-                  properties: 
-                    paging: 
+                  properties:
+                    paging:
                       type: object
-                      properties: 
-                        total: 
+                      properties:
+                        total:
                           type: number
                           example: 17493
-                        limit: 
+                        limit:
                           type: number
                           example: 30
-                        offset: 
+                        offset:
                           type: number
                           example: 0
-                    results: 
+                    results:
                       type: array
-                      items: 
+                      items:
                         type: object
-                        properties: 
-                          id: 
+                        properties:
+                          id:
                             type: string
-                            example: 0000001
-                          date_created: 
+                            example: 1
+                          date_created:
                             type: string
-                            example: 2017-08-31T07:26:38.000-04:00
-                          date_approved: 
+                            example: 2017-08-31T11:26:38.000Z
+                          date_approved:
                             type: string
-                            example: 2017-08-31T07:26:38.000-04:00
-                          date_last_updated: 
+                            example: 2017-08-31T11:26:38.000Z
+                          date_last_updated:
                             type: string
-                            example: 2017-08-31T07:26:38.000-04:00
-                          date_of_expiration: 
+                            example: 2017-08-31T11:26:38.000Z
+                          date_of_expiration:
                             type: string
                             format: nullable
-                          money_release_date: 
+                          money_release_date:
                             type: string
-                            example: 2017-09-14T07:26:38.000-04:00
-                          operation_type: 
+                            example: 2017-09-14T11:26:38.000Z
+                          operation_type:
                             type: string
                             example: money_transfer
-                          issuer_id: 
+                          issuer_id:
                             type: string
                             format: nullable
-                          payment_method_id: 
+                          payment_method_id:
                             type: string
                             example: account_money
-                          payment_type_id: 
+                          payment_type_id:
                             type: string
                             example: account_money
-                          status: 
+                          status:
                             type: string
                             example: approved
-                          status_detail: 
+                          status_detail:
                             type: string
                             example: accredited
-                          currency_id: 
+                          currency_id:
                             type: string
                             example: $
-                          description: 
+                          description:
                             type: string
                             example: Pago Pizza
-                          live_mode: 
+                          live_mode:
                             type: boolean
-                          sponsor_id: 
+                          sponsor_id:
                             type: string
                             format: nullable
-                          authorization_code: 
+                          authorization_code:
                             type: string
                             format: nullable
-                          money_release_schema: 
+                          money_release_schema:
                             type: string
                             format: nullable
-                          counter_currency: 
+                          counter_currency:
                             type: string
                             format: nullable
-                          collector_id: 
+                          collector_id:
                             type: string
-                            example: 0000002
-                          payer: 
+                            example: 2
+                          payer:
                             type: object
-                            properties: 
-                              type: 
+                            properties:
+                              type:
                                 type: string
                                 example: registered
-                              id: 
+                              id:
                                 type: string
-                                example: 000001
-                              email: 
+                                example: 1
+                              email:
                                 type: string
                                 example: afriend@gmail.com
-                              identification: 
+                              identification:
                                 type: object
-                                properties: 
-                                  type: 
+                                properties:
+                                  type:
                                     type: string
                                     example: DNI
-                                  number: 
+                                  number:
                                     type: string
                                     example: 12345678
-                              phone: 
+                              phone:
                                 type: object
-                                properties: 
-                                  area_code: 
+                                properties:
+                                  area_code:
                                     type: string
                                     format: nullable
-                                  number: 
+                                  number:
                                     type: string
                                     example: 11123456789
-                                  extension: 
+                                  extension:
                                     type: string
                                     format: nullable
-                              first_name: 
+                              first_name:
                                 type: string
                                 example: Name
-                              last_name: 
+                              last_name:
                                 type: string
                                 example: LastName
-                              entity_type: 
+                              entity_type:
                                 type: string
                                 format: nullable
-                          metadata: 
+                          metadata:
                             type: object
-                            properties:  
-                          additional_info: 
+                            properties: null
+                          additional_info:
                             type: object
-                            properties:  
-                          order: 
+                            properties: null
+                          order:
                             type: object
-                            properties:  
-                          external_reference: 
+                            properties: null
+                          external_reference:
                             type: string
                             format: nullable
-                          transaction_amount: 
+                          transaction_amount:
                             type: number
                             example: 250
-                          transaction_amount_refunded: 
+                          transaction_amount_refunded:
                             type: number
                             example: 0
-                          coupon_amount: 
+                          coupon_amount:
                             type: number
                             example: 0
-                          differential_pricing_id: 
+                          differential_pricing_id:
                             type: string
                             format: nullable
-                          deduction_schema: 
+                          deduction_schema:
                             type: string
                             format: nullable
-                          transaction_details: 
+                          transaction_details:
                             type: object
-                            properties: 
-                              net_received_amount: 
+                            properties:
+                              net_received_amount:
                                 type: number
                                 example: 250
-                              total_paid_amount: 
+                              total_paid_amount:
                                 type: number
                                 example: 250
-                              overpaid_amount: 
+                              overpaid_amount:
                                 type: number
                                 example: 0
-                              external_resource_url: 
+                              external_resource_url:
                                 type: string
                                 format: nullable
-                              installment_amount: 
+                              installment_amount:
                                 type: number
                                 example: 250
-                              financial_institution: 
+                              financial_institution:
                                 type: string
                                 format: nullable
-                              payment_method_reference_id: 
+                              payment_method_reference_id:
                                 type: string
                                 format: nullable
-                              payable_deferral_period: 
+                              payable_deferral_period:
                                 type: string
                                 format: nullable
-                              acquirer_reference: 
+                              acquirer_reference:
                                 type: string
                                 format: nullable
-                          captured: 
+                          captured:
                             type: boolean
-                          binary_mode: 
+                          binary_mode:
                             type: boolean
-                          call_for_authorize_id: 
+                          call_for_authorize_id:
                             type: string
                             format: nullable
-                          statement_descriptor: 
+                          statement_descriptor:
                             type: string
                             format: nullable
-                          installments: 
+                          installments:
                             type: number
                             example: 1
-                          card: 
+                          card:
                             type: object
-                            properties:  
-                          notification_url: 
+                            properties: null
+                          notification_url:
                             type: string
                             format: nullable
-                          processing_mode: 
+                          processing_mode:
                             type: string
                             format: nullable
-                          merchant_account_id: 
+                          merchant_account_id:
                             type: string
                             format: nullable
-                          acquirer: 
+                          acquirer:
                             type: string
                             format: nullable
-                          merchant_number: 
+                          merchant_number:
                             type: string
                             format: nullable
-
         '400':
-          '1':
-            description: Params Error.
-          '3':
-            description: Token must be for test.
-          '5':
-            description: Must provide your access_token to proceed.
-          '1000':
-            description: Number of rows exceeded the limits.
-          '1001':
-            description: Date format must be yyyy-MM-dd'T'HH:mm:ss.SSSZ.
-          '1003':
-            description: Invalid sort value.
-          '1004':
-            description: Invalid criteria value.
-          '2001':
-            description: Already posted the same request in the last minute.
-          '2002':
-            description: Customer not found.
-          '2004':
-            description: POST to Gateway Transactions API fail.
-          '2006':
-            description: Card Token not found.
-          '2007':
-            description: Connection to Card Token API fail.
-          '2009':
-            description: Card token issuer can't be null.
-          '3000':
-            description: You must provide your cardholder_name with your card data.
-          '3001':
-            description: You must provide your cardissuer_id with your card data.
-          '3003':
-            description: Invalid card_token_id.
-          '3004':
-            description: Invalid parameter site_id.
-          '3005':
-            description: >-
-              Not valid action, the resource is in a state that does not allow
-              this operation. For more information see the state that has the
-              resource.
-          '3006':
-            description: Invalid parameter cardtoken_id.
-          '3007':
-            description: The parameter client_id can not be null or empty.
-          '3008':
-            description: Not found Cardtoken.
-          '3009':
-            description: unauthorized client_id.
-          '3010':
-            description: Not found card on whitelist.
-          '3011':
-            description: Not found payment_method.
-          '3012':
-            description: Invalid parameter security_code_length.
-          '3013':
-            description: >-
-              The parameter security_code is a required field can not be null or
-              empty.
-          '3014':
-            description: Invalid parameter payment_method.
-          '3015':
-            description: Invalid parameter card_number_length.
-          '3016':
-            description: Invalid parameter card_number.
-          '3017':
-            description: The parameter card_number_id can not be null or empty.
-          '3018':
-            description: The parameter expiration_month can not be null or empty.
-          '3019':
-            description: The parameter expiration_year can not be null or empty.
-          '3020':
-            description: The parameter cardholder.name can not be null or empty.
-          '3021':
-            description: The parameter cardholder.document.number can not be null or empty.
-          '3022':
-            description: The parameter cardholder.document.type can not be null or empty.
-          '3023':
-            description: >-
-              The parameter cardholder.document.subtype can not be null or
-              empty.
-          '3024':
-            description: >-
-              Not valid action - partial refund unsupported for this
-              transaction.
-          '3025':
-            description: Invalid Auth Code.
-          '3026':
-            description: Invalid card_id for this payment_method_id.
-          '3027':
-            description: Invalid payment_type_id.
-          '3028':
-            description: Invalid payment_method_id.
-          '3029':
-            description: Invalid card expiration month.
-          '3030':
-            description: Invalid card expiration year.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 1--Params-Error-
+                      - 3--Token-must-be-for-test-
+                      - 5--Must-provide-your-access-token-to-proceed-
+                      - 1000--Number-of-rows-exceeded-the-limits-
+                      - 1001--Date-format-must-be-yyyy-MM-dd-T-HH-mm-ss-SSSZ-
+                      - 1003--Invalid-sort-value-
+                      - 1004--Invalid-criteria-value-
+                      - >-
+                        2001--Already-posted-the-same-request-in-the-last-minute-
+                      - 2002--Customer-not-found-
+                      - 2004--POST-to-Gateway-Transactions-API-fail-
+                      - 2006--Card-Token-not-found-
+                      - 2007--Connection-to-Card-Token-API-fail-
+                      - 2009--Card-token-issuer-can-t-be-null-
+                      - >-
+                        3000--You-must-provide-your-cardholder-name-with-your-card-data-
+                      - >-
+                        3001--You-must-provide-your-cardissuer-id-with-your-card-data-
+                      - 3003--Invalid-card-token-id-
+                      - 3004--Invalid-parameter-site-id-
+                      - >-
+                        3005--Not-valid-action--the-resource-is-in-a-state-that-does-not-allow-this-operation--For-more-information-see-the-state-that-has-the-resource-
+                      - 3006--Invalid-parameter-cardtoken-id-
+                      - 3007--The-parameter-client-id-can-not-be-null-or-empty-
+                      - 3008--Not-found-Cardtoken-
+                      - 3009--unauthorized-client-id-
+                      - 3010--Not-found-card-on-whitelist-
+                      - 3011--Not-found-payment-method-
+                      - 3012--Invalid-parameter-security-code-length-
+                      - >-
+                        3013--The-parameter-security-code-is-a-required-field-can-not-be-null-or-empty-
+                      - 3014--Invalid-parameter-payment-method-
+                      - 3015--Invalid-parameter-card-number-length-
+                      - 3016--Invalid-parameter-card-number-
+                      - >-
+                        3017--The-parameter-card-number-id-can-not-be-null-or-empty-
+                      - >-
+                        3018--The-parameter-expiration-month-can-not-be-null-or-empty-
+                      - >-
+                        3019--The-parameter-expiration-year-can-not-be-null-or-empty-
+                      - >-
+                        3020--The-parameter-cardholder-name-can-not-be-null-or-empty-
+                      - >-
+                        3021--The-parameter-cardholder-document-number-can-not-be-null-or-empty-
+                      - >-
+                        3022--The-parameter-cardholder-document-type-can-not-be-null-or-empty-
+                      - >-
+                        3023--The-parameter-cardholder-document-subtype-can-not-be-null-or-empty-
+                      - >-
+                        3024--Not-valid-action---partial-refund-unsupported-for-this-transaction-
+                      - 3025--Invalid-Auth-Code-
+                      - 3026--Invalid-card-id-for-this-payment-method-id-
+                      - 3027--Invalid-payment-type-id-
+                      - 3028--Invalid-payment-method-id-
+                      - 3029--Invalid-card-expiration-month-
+                      - 3030--Invalid-card-expiration-year-
         '403':
-          '4':
-            description: The caller is not authorized to access this resource.
-          '3002':
-            description: The caller is not authorized to perform this action.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 4--The-caller-is-not-authorized-to-access-this-resource-
+                      - >-
+                        3002--The-caller-is-not-authorized-to-perform-this-action-
         '404':
-          '2000':
-            description: Payment not found.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 2000--Payment-not-found-

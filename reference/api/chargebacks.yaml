@@ -1,17 +1,17 @@
 openapi: 3.0.0
 servers:
-  - url: 'https://api.mercadopago.com'
+  - url: https://api.mercadopago.com
 info:
   title: Mercado Pago API Reference
   version: '1.0'
 paths:
   /chargebacks/{id}:
     get:
-      tags: 
+      tags:
         - $ref: '#/tags/qr-code/description'
         - $ref: '#/tags/link-de-pago/description'
-      summary: "Get a chargeback info"
-      description: "Get a chargeback info."
+      summary: Get a chargeback info
+      description: Get a chargeback info.
       parameters:
         - name: id
           in: path
@@ -47,8 +47,8 @@ paths:
                   coverage_elegible:
                     type: boolean
                     description: >-
-                      Whether the chargeback complies with the conditions to
-                      be covered
+                      Whether the chargeback complies with the conditions to be
+                      covered
                   documentation_required:
                     type: boolean
                     description: >-
@@ -87,5 +87,5 @@ paths:
                   live_mode:
                     type: boolean
                     description: >-
-                      Whether the chargeback will be processed in sandbox or
-                      in production mode
+                      Whether the chargeback will be processed in sandbox or in
+                      production mode

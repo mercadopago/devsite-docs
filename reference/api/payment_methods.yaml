@@ -1,6 +1,6 @@
 openapi: 3.0.0
 servers:
-  - url: 'https://api.mercadopago.com'
+  - url: https://api.mercadopago.com
 info:
   title: Mercado Pago API Reference
   version: '1.0'
@@ -124,13 +124,36 @@ paths:
                           type: string
                           description: Descriptive finantial institution name.
         '400':
-          '1000':
-            description: the credentials are required.
-          '1001':
-            description: public_key not found.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 1000--the-credentials-are-required-
+                      - 1001--public-key-not-found-
         '401':
-          unauthorized:
-            description: unauthorized.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - unauthorized--unauthorized-
         '404':
-          not_found:
-            description: not_found.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - not_found--not-found-

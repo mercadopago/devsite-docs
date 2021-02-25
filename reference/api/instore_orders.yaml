@@ -1,17 +1,17 @@
 openapi: 3.0.0
 servers:
-  - url: 'https://api.mercadopago.com'
+  - url: https://api.mercadopago.com
 info:
   title: Mercado Pago API Reference
   version: '1.0'
 paths:
   /mpmobile/instore/qr/{user_id}/{external_id}:
     post:
-      tags: 
+      tags:
         - $ref: '#/tags/qr-code/description'
         - $ref: '#/tags/link-de-pago/description'
-      summary: "Create an Order"
-      description: "Create an Order."
+      summary: Create an Order
+      description: Create an Order.
       parameters:
         - name: user_id
           in: path
@@ -43,7 +43,9 @@ paths:
                     system. (Required)
                 external_reference:
                   type: string
-                  description: Reference you can synchronize with your sale system.  (Required)
+                  description: >-
+                    Reference you can synchronize with your sale system. 
+                    (Required)
                 notification_url:
                   type: string
                   description: >-
@@ -54,7 +56,9 @@ paths:
                   description: Mercado Pago's USER_ID of the integrator system.
                 items:
                   type: object
-                  description: Information on the products involved in the order. (Required)
+                  description: >-
+                    Information on the products involved in the order.
+                    (Required)
                   properties:
                     id:
                       type: string
@@ -83,167 +87,171 @@ paths:
             application/json:
               schema:
                 type: object
-                properties: 
-                  id: 
+                properties:
+                  id:
                     type: string
                     example: 360472057-3d2cadbf-2c54-485c-bcb9-f262adc14af6
-                  items: 
+                  items:
                     type: array
-                    items: 
+                    items:
                       type: object
-                      properties: 
-                        title: 
+                      properties:
+                        title:
                           type: string
                           example: Shampoo
-                        id: 
+                        id:
                           type: string
                           example: 78123172
-                        currency_id: 
+                        currency_id:
                           type: string
                           example: $
-                        unit_price: 
+                        unit_price:
                           type: number
                           example: 120
-                        quantity: 
+                        quantity:
                           type: number
                           example: 1
-                        description: 
+                        description:
                           type: string
                           example: Almendras
-                        picture_url: 
+                        picture_url:
                           type: string
                           example: https://bit.ly/2nxdWHa
-                  collector_id: 
+                  collector_id:
                     type: number
                     example: 360472057
-                  collector: 
+                  collector:
                     type: object
-                    properties:  
-                  total_amount: 
+                    properties: null
+                  total_amount:
                     type: number
                     example: 120
-                  amount: 
+                  amount:
                     type: number
                     example: 120
-                  external_reference: 
+                  external_reference:
                     type: string
                     example: Factura-0001
-                  operation_type: 
+                  operation_type:
                     type: string
                     example: regular_payment
-                  payment_methods: 
-                    type: object
-                    properties: 
-                      excluded_payment_methods: 
-                        type: array
-                        items: 
-                          type: object
-                          properties: 
-                            id: 
-                              type: string
-                              example: 
-                      excluded_payment_types: 
-                        type: array
-                        items: 
-                          type: object
-                          properties: 
-                            id: 
-                              type: string
-                              example: ticket
-                  marketplace: 
-                    type: string
-                    example: NONE
-                  marketplace_fee: 
-                    type: number
-                    example: 0
-                  sponsor_id: 
-                    type: number
-                    example: 446566691
-                  notification_url: 
-                    type: string
-                    example: http://www.yourserver.com
-                  back_urls: 
-                    type: object
-                    properties: 
-                      success: 
-                        type: string
-                        example: 
-                      pending: 
-                        type: string
-                        example: 
-                      failure: 
-                        type: string
-                        example: 
-                  payer: 
-                    type: object
-                    properties: 
-                      id: 
-                        type: number
-                        example: 0
-                      email: 
-                        type: string
-                        example: 
-                      identification: 
-                        type: object
-                        properties: 
-                          number: 
-                            type: string
-                            example: 
-                          type: 
-                            type: string
-                            example: 
-                      address: 
-                        type: object
-                        properties: 
-                          primary: 
-                            type: boolean
-                          zip: 
-                            type: string
-                            example: 
-                      phone: 
-                        type: object
-                        properties: 
-                          area_code: 
-                            type: string
-                            example: 
-                          number: 
-                            type: string
-                            example: 
-                  expires: 
-                    type: boolean
-                  additional_info: 
-                    type: string
-                    example: 
-                  site_id: 
-                    type: string
-                    example: mla
-                  client_id: 
-                    type: number
-                    example: 360472057
-                  processing_modes: 
-                    type: array
-                    items: 
-                      type: string
-                      example: aggregator
-                  internal_metadata: 
+                  payment_methods:
                     type: object
                     properties:
-
+                      excluded_payment_methods:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: string
+                              example: null
+                      excluded_payment_types:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: string
+                              example: ticket
+                  marketplace:
+                    type: string
+                    example: NONE
+                  marketplace_fee:
+                    type: number
+                    example: 0
+                  sponsor_id:
+                    type: number
+                    example: 446566691
+                  notification_url:
+                    type: string
+                    example: http://www.yourserver.com
+                  back_urls:
+                    type: object
+                    properties:
+                      success:
+                        type: string
+                        example: null
+                      pending:
+                        type: string
+                        example: null
+                      failure:
+                        type: string
+                        example: null
+                  payer:
+                    type: object
+                    properties:
+                      id:
+                        type: number
+                        example: 0
+                      email:
+                        type: string
+                        example: null
+                      identification:
+                        type: object
+                        properties:
+                          number:
+                            type: string
+                            example: null
+                          type:
+                            type: string
+                            example: null
+                      address:
+                        type: object
+                        properties:
+                          primary:
+                            type: boolean
+                          zip:
+                            type: string
+                            example: null
+                      phone:
+                        type: object
+                        properties:
+                          area_code:
+                            type: string
+                            example: null
+                          number:
+                            type: string
+                            example: null
+                  expires:
+                    type: boolean
+                  additional_info:
+                    type: string
+                    example: null
+                  site_id:
+                    type: string
+                    example: mla
+                  client_id:
+                    type: number
+                    example: 360472057
+                  processing_modes:
+                    type: array
+                    items:
+                      type: string
+                      example: aggregator
+                  internal_metadata:
+                    type: object
+                    properties: null
         '400':
-          invalid_collector_id:
-            description: collector_id invalid.
-          invalid_sponsor_id:
-            description: sponsor_id is not an active user.
-          invalid_items:
-            description: unit_price invalid.
-          invalid_access_token:
-            description: Access denied.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - invalid_collector_id--collector-id-invalid-
+                      - invalid_sponsor_id--sponsor-id-is-not-an-active-user-
+                      - invalid_items--unit-price-invalid-
+                      - invalid_access_token--Access-denied-
     delete:
-      tags: 
+      tags:
         - $ref: '#/tags/qr-code/description'
         - $ref: '#/tags/link-de-pago/description'
-      summary: "Delete an Order"
-      description: "Delete an Order."
+      summary: Delete an Order
+      description: Delete an Order.
       parameters:
         - name: user_id
           in: path
@@ -261,7 +269,14 @@ paths:
             example: 12123adfasdf123u4u
       responses:
         '400':
-          invalid_collector_id:
-            description: COLLECTOR_ID invalid.
-          invalid_access_token:
-            description: access denied.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - invalid_collector_id--COLLECTOR-ID-invalid-
+                      - invalid_access_token--access-denied-

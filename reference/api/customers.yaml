@@ -1,6 +1,6 @@
 openapi: 3.0.0
 servers:
-  - url: 'https://api.mercadopago.com'
+  - url: https://api.mercadopago.com
 info:
   title: Mercado Pago API Reference
   version: '1.0'
@@ -10,8 +10,8 @@ paths:
       tags:
         - $ref: '#/tags/qr-code/description'
         - $ref: '#/tags/link-de-pago/description'
-      summary: 'Create a customer'
-      description: 'Operation responsable for create a customer on Mercado Pago.'
+      summary: Create a customer
+      description: Operation responsable for create a customer on Mercado Pago.
       requestBody:
         $ref: '#/schemas/customer'
       responses:
@@ -20,280 +20,261 @@ paths:
             application/json:
               schema:
                 type: object
-                properties: 
-                  id: 
+                properties:
+                  id:
                     type: string
                     example: 000000001-sT93QZFAsfxU9P5
-                  email: 
+                  email:
                     type: string
                     example: bruno@gmail.com
-                  first_name: 
+                  first_name:
                     type: string
                     example: Bruce
-                  last_name: 
+                  last_name:
                     type: string
                     example: Wayne
-                  phone: 
+                  phone:
                     type: object
-                    properties: 
-                      area_code: 
+                    properties:
+                      area_code:
                         type: string
-                        example: 023
-                      number: 
+                        example: 23
+                      number:
                         type: string
                         example: 12345678
-                  identification: 
+                  identification:
                     type: object
-                    properties: 
-                      type: 
+                    properties:
+                      type:
                         type: string
                         example: DNI
-                      number: 
+                      number:
                         type: string
                         example: 12345678
-                  address: 
+                  address:
                     type: object
-                    properties: 
-                      id: 
+                    properties:
+                      id:
                         type: string
                         format: nullable
-                      zip_code: 
+                      zip_code:
                         type: string
                         example: SG1 2AX
-                      street_name: 
+                      street_name:
                         type: string
                         example: Old Knebworth Ln
-                      street_number: 
+                      street_number:
                         type: string
                         format: nullable
-                  date_registered: 
+                  date_registered:
                     type: string
                     format: nullable
-                  description: 
+                  description:
                     type: string
                     example: Lorem Ipsum
-                  date_created: 
+                  date_created:
                     type: string
-                    example: 2018-02-20T11:36:23.541-04:00
-                  date_last_updated: 
+                    example: 2018-02-20T15:36:23.541Z
+                  date_last_updated:
                     type: string
                     format: nullable
-                  metadata: 
+                  metadata:
                     type: object
-                    properties:  
-                  default_card: 
+                    properties: null
+                  default_card:
                     type: string
                     format: nullable
-                  default_address: 
+                  default_address:
                     type: string
                     format: nullable
-                  cards: 
+                  cards:
                     type: array
-                    items: 
+                    items:
                       type: object
-                      properties:  
-                  addresses: 
+                      properties: null
+                  addresses:
                     type: array
-                    items: 
+                    items:
                       type: object
-                      properties:  
-                  live_mode: 
+                      properties: null
+                  live_mode:
                     type: boolean
-
         '400':
-          '100':
-            description: the credentials are required.
-          '101':
-            description: the customer already exist.
-          '102':
-            description: missing customer id.
-          '103':
-            description: 'parameter must be an object '
-          '104':
-            description: parameter length is too large.
-          '105':
-            description: the customer id is invalid.
-          '106':
-            description: the email format is invalid.
-          '107':
-            description: the first_name is invalid.
-          '108':
-            description: the last_name is invalid.]
-          '109':
-            description: the phone.area_code is invalid.
-          '110':
-            description: the phone.number is invalid.
-          '111':
-            description: the identification.type is invalid.
-          '112':
-            description: the identification.number is invalid.
-          '113':
-            description: the address.zip_code is invalid.
-          '114':
-            description: the address.street_name is invalid.
-          '115':
-            description: the date_registered format is invalid.
-          '116':
-            description: the description is invalid.
-          '117':
-            description: the metadata is invalid.
-          '118':
-            description: the body must be a Json Object.
-          '119':
-            description: the card is required.
-          '120':
-            description: card not found.
-          '121':
-            description: the card is invalid.
-          '122':
-            description: the card data is invalid.
-          '123':
-            description: the payment_method_id is required.
-          '124':
-            description: the issuer_id is required.
-          '125':
-            description: invalid parameters.
-          '126':
-            description: invalid parameter. You cannot update the email.
-          '127':
-            description: invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.
-          '128':
-            description: the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.
-          '129':
-            description: the customer has reached the maximum allowed number of cards.
-          '140':
-            description: invalid card owner.
-          '150':
-            description: invalid users involved.
-          '200':
-            description: invalid range format (range=:date_parameter:after::date_from,before::date_to).
-          '201':
-            description: range attribute must belong to date entity.
-          '202':
-            description: invalid 'after' parameter. It should be date[iso_8601].
-          '203':
-            description: invalid 'before' parameter. It should be date[iso_8601].
-          '204':
-            description: invalid filters format.
-          '205':
-            description: invalid query format.
-          '206':
-            description: attributes to sort must belong to 'customer' entity.
-          '207':
-            description: order filter must be 'asc' or 'desc'.
-          '208':
-            description: invalid 'sort' parameter format.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 100--the-credentials-are-required-
+                      - 101--the-customer-already-exist-
+                      - 102--missing-customer-id-
+                      - 103--parameter-must-be-an-object-
+                      - 104--parameter-length-is-too-large-
+                      - 105--the-customer-id-is-invalid-
+                      - 106--the-email-format-is-invalid-
+                      - 107--the-first-name-is-invalid-
+                      - 108--the-last-name-is-invalid--
+                      - 109--the-phone-area-code-is-invalid-
+                      - 110--the-phone-number-is-invalid-
+                      - 111--the-identification-type-is-invalid-
+                      - 112--the-identification-number-is-invalid-
+                      - 113--the-address-zip-code-is-invalid-
+                      - 114--the-address-street-name-is-invalid-
+                      - 115--the-date-registered-format-is-invalid-
+                      - 116--the-description-is-invalid-
+                      - 117--the-metadata-is-invalid-
+                      - 118--the-body-must-be-a-Json-Object-
+                      - 119--the-card-is-required-
+                      - 120--card-not-found-
+                      - 121--the-card-is-invalid-
+                      - 122--the-card-data-is-invalid-
+                      - 123--the-payment-method-id-is-required-
+                      - 124--the-issuer-id-is-required-
+                      - 125--invalid-parameters-
+                      - 126--invalid-parameter--You-cannot-update-the-email-
+                      - >-
+                        127--invalid-parameter--Cannot-resolve-the-payment-method-of-card--check-the-payment-method-id-and-issuer-id-
+                      - >-
+                        128--the-email-format-is-invalid--Use--test-payer--0-9--1-10--testuser-com--
+                      - >-
+                        129--the-customer-has-reached-the-maximum-allowed-number-of-cards-
+                      - 140--invalid-card-owner-
+                      - 150--invalid-users-involved-
+                      - >-
+                        200--invalid-range-format--range--date-parameter-after--date-from-before--date-to--
+                      - 201--range-attribute-must-belong-to-date-entity-
+                      - >-
+                        202--invalid--after--parameter--It-should-be-date-iso-8601--
+                      - >-
+                        203--invalid--before--parameter--It-should-be-date-iso-8601--
+                      - 204--invalid-filters-format-
+                      - 205--invalid-query-format-
+                      - >-
+                        206--attributes-to-sort-must-belong-to--customer--entity-
+                      - 207--order-filter-must-be--asc--or--desc--
+                      - 208--invalid--sort--parameter-format-
         '401':
-          'unauthorized':
-              description: unauthorized.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - unauthorized--unauthorized-
         '404':
-          'not_found':
-              description: not_found.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - not_found--not-found-
   /v1/customers/{id}:
     put:
-      tags: 
+      tags:
         - $ref: '#/tags/qr-code/description'
         - $ref: '#/tags/link-de-pago/description'
-      summary: "Update customer's data"
-      description: 'Operation responsable for update customer data on Mercado Pago.'
+      summary: Update customer's data
+      description: Operation responsable for update customer data on Mercado Pago.
       requestBody:
         $ref: '#/schemas/customer'
       responses:
         '400':
-          '100':
-              description: the credentials are required.
-          '101':
-              description: the customer already exist.
-          '102':
-              description: missing customer id.
-          '103':
-              description: 'parameter must be an object '
-          '104':
-              description: parameter length is too large.
-          '105':
-              description: the customer id is invalid.
-          '106':
-              description: the email format is invalid.
-          '107':
-              description: the first_name is invalid.
-          '108':
-              description: the last_name is invalid.
-          '109':
-              description: the phone.area_code is invalid.
-          '110':
-              description: the phone.number is invalid.
-          '111':
-              description: the identification.type is invalid.
-          '112':
-              description: the identification.number is invalid.
-          '113':
-              description: the address.zip_code is invalid.
-          '114':
-              description: the address.street_name is invalid.
-          '115':
-              description: the date_registered format is invalid.
-          '116':
-              description: the description is invalid.
-          '117':
-              description: the metadata is invalid.
-          '118':
-              description: the body must be a Json Object.
-          '119':
-              description: the card is required.
-          '120':
-              description: card not found.
-          '121':
-              description: the card is invalid.
-          '122':
-              description: the card data is invalid.
-          '123':
-              description: the payment_method_id is required.
-          '124':
-              description: the issuer_id is required.
-          '125':
-              description: invalid parameters.
-          '126':
-              description: invalid parameter. You cannot update the email.
-          '127':
-              description: invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.
-          '128':
-              description: the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.
-          '129':
-              description: the customer has reached the maximum allowed number of cards.
-          '140':
-              description: invalid card owner.
-          '150':
-              description: invalid users involved.
-          '200':
-              description: invalid range format (range=:date_parameter:after::date_from,before::date_to).
-          '201':
-              description: range attribute must belong to date entity.
-          '202':
-              description: invalid 'after' parameter. It should be date[iso_8601].
-          '203':
-              description: invalid 'before' parameter. It should be date[iso_8601].
-          '204':
-              description: invalid filters format.
-          '205':
-              description: invalid query format.
-          '206':
-              description: attributes to sort must belong to 'customer' entity.
-          '207':
-              description: order filter must be 'asc' or 'desc'.
-          '208':
-              description: invalid 'sort' parameter format.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 100--the-credentials-are-required-
+                      - 101--the-customer-already-exist-
+                      - 102--missing-customer-id-
+                      - 103--parameter-must-be-an-object-
+                      - 104--parameter-length-is-too-large-
+                      - 105--the-customer-id-is-invalid-
+                      - 106--the-email-format-is-invalid-
+                      - 107--the-first-name-is-invalid-
+                      - 108--the-last-name-is-invalid-
+                      - 109--the-phone-area-code-is-invalid-
+                      - 110--the-phone-number-is-invalid-
+                      - 111--the-identification-type-is-invalid-
+                      - 112--the-identification-number-is-invalid-
+                      - 113--the-address-zip-code-is-invalid-
+                      - 114--the-address-street-name-is-invalid-
+                      - 115--the-date-registered-format-is-invalid-
+                      - 116--the-description-is-invalid-
+                      - 117--the-metadata-is-invalid-
+                      - 118--the-body-must-be-a-Json-Object-
+                      - 119--the-card-is-required-
+                      - 120--card-not-found-
+                      - 121--the-card-is-invalid-
+                      - 122--the-card-data-is-invalid-
+                      - 123--the-payment-method-id-is-required-
+                      - 124--the-issuer-id-is-required-
+                      - 125--invalid-parameters-
+                      - 126--invalid-parameter--You-cannot-update-the-email-
+                      - >-
+                        127--invalid-parameter--Cannot-resolve-the-payment-method-of-card--check-the-payment-method-id-and-issuer-id-
+                      - >-
+                        128--the-email-format-is-invalid--Use--test-payer--0-9--1-10--testuser-com--
+                      - >-
+                        129--the-customer-has-reached-the-maximum-allowed-number-of-cards-
+                      - 140--invalid-card-owner-
+                      - 150--invalid-users-involved-
+                      - >-
+                        200--invalid-range-format--range--date-parameter-after--date-from-before--date-to--
+                      - 201--range-attribute-must-belong-to-date-entity-
+                      - >-
+                        202--invalid--after--parameter--It-should-be-date-iso-8601--
+                      - >-
+                        203--invalid--before--parameter--It-should-be-date-iso-8601--
+                      - 204--invalid-filters-format-
+                      - 205--invalid-query-format-
+                      - >-
+                        206--attributes-to-sort-must-belong-to--customer--entity-
+                      - 207--order-filter-must-be--asc--or--desc--
+                      - 208--invalid--sort--parameter-format-
         '401':
-          unauthorized:
-              description: unauthorized.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - unauthorized--unauthorized-
         '404':
-          not_found:
-              description: not_found.
-    get: 
-      tags: 
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - not_found--not-found-
+    get:
+      tags:
         - $ref: '#/tags/qr-code/description'
         - $ref: '#/tags/link-de-pago/description'
-      summary: "Get customer's data"
-      description: 'Operation responsable for retrieve customer data saved on Mercado Pago.'
+      summary: Get customer's data
+      description: Operation responsable for retrieve customer data saved on Mercado Pago.
       responses:
         '200':
           content:
@@ -549,104 +530,97 @@ paths:
                   live_mode:
                     type: boolean
                     description: >-
-                      Whether the customers will be in sandbox or in
-                      production mode.
+                      Whether the customers will be in sandbox or in production
+                      mode.
         '400':
-          '100':
-              description: the credentials are required.
-          '101':
-              description: the customer already exist.
-          '102':
-              description: missing customer id.
-          '103':
-              description: 'parameter must be an object '
-          '104':
-              description: parameter length is too large.
-          '105':
-              description: the customer id is invalid.
-          '106':
-              description: the email format is invalid.
-          '107':
-              description: the first_name is invalid.
-          '108':
-              description: the last_name is invalid.
-          '109':
-              description: the phone.area_code is invalid.
-          '110':
-              description: the phone.number is invalid.
-          '111':
-              description: the identification.type is invalid.
-          '112':
-              description: the identification.number is invalid.
-          '113':
-              description: the address.zip_code is invalid.
-          '114':
-              description: the address.street_name is invalid.
-          '115':
-              description: the date_registered format is invalid.
-          '116':
-              description: the description is invalid.
-          '117':
-              description: the metadata is invalid.
-          '118':
-              description: the body must be a Json Object.
-          '119':
-              description: the card is required.
-          '120':
-              description: card not found.
-          '121':
-              description: the card is invalid.
-          '122':
-              description: the card data is invalid.
-          '123':
-              description: the payment_method_id is required.
-          '124':
-              description: the issuer_id is required.
-          '125':
-              description: invalid parameters.
-          '126':
-              description: invalid parameter. You cannot update the email.
-          '127':
-              description: invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.
-          '128':
-              description: the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.
-          '129':
-              description: the customer has reached the maximum allowed number of cards.
-          '140':
-              description: invalid card owner.
-          '150':
-              description: invalid users involved.
-          '200':
-              description: invalid range format (range=:date_parameter:after::date_from,before::date_to).
-          '201':
-              description: range attribute must belong to date entity.
-          '202':
-              description: invalid 'after' parameter. It should be date[iso_8601].
-          '203':
-              description: invalid 'before' parameter. It should be date[iso_8601].
-          '204':
-              description: invalid filters format.
-          '205':
-              description: invalid query format.
-          '206':
-              description: attributes to sort must belong to 'customer' entity.
-          '207':
-              description: order filter must be 'asc' or 'desc'.
-          '208':
-              description: invalid 'sort' parameter format.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 100--the-credentials-are-required-
+                      - 101--the-customer-already-exist-
+                      - 102--missing-customer-id-
+                      - 103--parameter-must-be-an-object-
+                      - 104--parameter-length-is-too-large-
+                      - 105--the-customer-id-is-invalid-
+                      - 106--the-email-format-is-invalid-
+                      - 107--the-first-name-is-invalid-
+                      - 108--the-last-name-is-invalid-
+                      - 109--the-phone-area-code-is-invalid-
+                      - 110--the-phone-number-is-invalid-
+                      - 111--the-identification-type-is-invalid-
+                      - 112--the-identification-number-is-invalid-
+                      - 113--the-address-zip-code-is-invalid-
+                      - 114--the-address-street-name-is-invalid-
+                      - 115--the-date-registered-format-is-invalid-
+                      - 116--the-description-is-invalid-
+                      - 117--the-metadata-is-invalid-
+                      - 118--the-body-must-be-a-Json-Object-
+                      - 119--the-card-is-required-
+                      - 120--card-not-found-
+                      - 121--the-card-is-invalid-
+                      - 122--the-card-data-is-invalid-
+                      - 123--the-payment-method-id-is-required-
+                      - 124--the-issuer-id-is-required-
+                      - 125--invalid-parameters-
+                      - 126--invalid-parameter--You-cannot-update-the-email-
+                      - >-
+                        127--invalid-parameter--Cannot-resolve-the-payment-method-of-card--check-the-payment-method-id-and-issuer-id-
+                      - >-
+                        128--the-email-format-is-invalid--Use--test-payer--0-9--1-10--testuser-com--
+                      - >-
+                        129--the-customer-has-reached-the-maximum-allowed-number-of-cards-
+                      - 140--invalid-card-owner-
+                      - 150--invalid-users-involved-
+                      - >-
+                        200--invalid-range-format--range--date-parameter-after--date-from-before--date-to--
+                      - 201--range-attribute-must-belong-to-date-entity-
+                      - >-
+                        202--invalid--after--parameter--It-should-be-date-iso-8601--
+                      - >-
+                        203--invalid--before--parameter--It-should-be-date-iso-8601--
+                      - 204--invalid-filters-format-
+                      - 205--invalid-query-format-
+                      - >-
+                        206--attributes-to-sort-must-belong-to--customer--entity-
+                      - 207--order-filter-must-be--asc--or--desc--
+                      - 208--invalid--sort--parameter-format-
         '401':
-          unauthorized:
-              description: unauthorized.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - unauthorized--unauthorized-
         '404':
-          not_found:
-              description: not_found.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - not_found--not-found-
   /v1/customers/search:
     get:
-      tags: 
+      tags:
         - $ref: '#/tags/qr-code/description'
         - $ref: '#/tags/link-de-pago/description'
-      summary: "Search a customer"
-      description: 'Operation responsable for search a customer based on e-mail and return the data.'
+      summary: Search a customer
+      description: >-
+        Operation responsable for search a customer based on e-mail and return
+        the data.
       parameters:
         - name: email
           in: query
@@ -661,189 +635,179 @@ paths:
             application/json:
               schema:
                 type: object
-                properties: 
-                  paging: 
+                properties:
+                  paging:
                     type: object
-                    properties: 
-                      limit: 
+                    properties:
+                      limit:
                         type: number
                         example: 10
-                      offset: 
+                      offset:
                         type: number
                         example: 0
-                      total: 
+                      total:
                         type: number
                         example: 1
-                  results: 
+                  results:
                     type: array
-                    items: 
+                    items:
                       type: object
-                      properties: 
-                        address: 
+                      properties:
+                        address:
                           type: object
-                          properties: 
-                            id: 
+                          properties:
+                            id:
                               type: string
                               format: nullable
-                            street_name: 
+                            street_name:
                               type: string
                               format: nullable
-                            street_number: 
+                            street_number:
                               type: string
                               format: nullable
-                            zip_code: 
+                            zip_code:
                               type: string
                               format: nullable
-                        addresses: 
+                        addresses:
                           type: array
-                          items: 
+                          items:
                             type: object
-                            properties:  
-                        cards: 
+                            properties: null
+                        cards:
                           type: array
-                          items: 
+                          items:
                             type: object
-                            properties:  
-                        date_created: 
+                            properties: null
+                        date_created:
                           type: string
-                          example: 2017-05-05T00:00:00.000-04:00
-                        date_last_updated: 
+                          example: 2017-05-05T04:00:00.000Z
+                        date_last_updated:
                           type: string
-                          example: 2017-05-05T09:23:25.021-04:00
-                        date_registered: 
+                          example: 2017-05-05T13:23:25.021Z
+                        date_registered:
                           type: string
                           format: nullable
-                        default_address: 
+                        default_address:
                           type: string
                           format: nullable
-                        default_card: 
+                        default_card:
                           type: string
                           example: 1493990563105
-                        description: 
+                        description:
                           type: string
                           format: nullable
-                        email: 
+                        email:
                           type: string
                           example: test@test.com
-                        first_name: 
+                        first_name:
                           type: string
                           format: nullable
-                        id: 
+                        id:
                           type: string
                           example: 123456789-jxOV430go9fx2e
-                        identification: 
+                        identification:
                           type: object
-                          properties: 
-                            number: 
+                          properties:
+                            number:
                               type: string
                               format: nullable
-                            type: 
+                            type:
                               type: string
                               format: nullable
-                        last_name: 
+                        last_name:
                           type: string
                           format: nullable
-                        live_mode: 
+                        live_mode:
                           type: boolean
-                        metadata: 
+                        metadata:
                           type: object
-                          properties:  
-                        phone: 
+                          properties: null
+                        phone:
                           type: object
-                          properties: 
-                            area_code: 
+                          properties:
+                            area_code:
                               type: string
                               format: nullable
-                            number: 
+                            number:
                               type: string
                               format: nullable
-
         '400':
-          '100':
-              description: the credentials are required.
-          '101':
-              description: the customer already exist.
-          '102':
-              description: missing customer id.
-          '103':
-              description: 'parameter must be an object '
-          '104':
-              description: parameter length is too large.
-          '105':
-              description: the customer id is invalid.
-          '106':
-              description: the email format is invalid.
-          '107':
-              description: the first_name is invalid.
-          '108':
-              description: the last_name is invalid.
-          '109':
-              description: the phone.area_code is invalid.
-          '110':
-              description: the phone.number is invalid.
-          '111':
-              description: the identification.type is invalid.
-          '112':
-              description: the identification.number is invalid.
-          '113':
-              description: the address.zip_code is invalid.
-          '114':
-              description: the address.street_name is invalid.
-          '115':
-              description: the date_registered format is invalid.
-          '116':
-              description: the description is invalid.
-          '117':
-              description: the metadata is invalid.
-          '118':
-              description: the body must be a Json Object.
-          '119':
-              description: the card is required.
-          '120':
-              description: card not found.
-          '121':
-              description: the card is invalid.
-          '122':
-              description: the card data is invalid.
-          '123':
-              description: the payment_method_id is required.
-          '124':
-              description: the issuer_id is required.
-          '125':
-              description: invalid parameters.
-          '126':
-              description: invalid parameter. You cannot update the email.
-          '127':
-              description: invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id.
-          '128':
-              description: the email format is invalid. Use 'test_payer_[0-9]{1,10}@testuser.com'.
-          '129':
-              description: the customer has reached the maximum allowed number of cards.
-          '140':
-              description: invalid card owner.
-          '150':
-              description: invalid users involved.
-          '200':
-              description: invalid range format (range=:date_parameter:after::date_from,before::date_to).
-          '201':
-              description: range attribute must belong to date entity.
-          '202':
-              description: invalid 'after' parameter. It should be date[iso_8601].
-          '203':
-              description: invalid 'before' parameter. It should be date[iso_8601].
-          '204':
-              description: invalid filters format.
-          '205':
-              description: invalid query format.
-          '206':
-              description: attributes to sort must belong to 'customer' entity.
-          '207':
-              description: order filter must be 'asc' or 'desc'.
-          '208':
-              description: invalid 'sort' parameter format.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 100--the-credentials-are-required-
+                      - 101--the-customer-already-exist-
+                      - 102--missing-customer-id-
+                      - 103--parameter-must-be-an-object-
+                      - 104--parameter-length-is-too-large-
+                      - 105--the-customer-id-is-invalid-
+                      - 106--the-email-format-is-invalid-
+                      - 107--the-first-name-is-invalid-
+                      - 108--the-last-name-is-invalid-
+                      - 109--the-phone-area-code-is-invalid-
+                      - 110--the-phone-number-is-invalid-
+                      - 111--the-identification-type-is-invalid-
+                      - 112--the-identification-number-is-invalid-
+                      - 113--the-address-zip-code-is-invalid-
+                      - 114--the-address-street-name-is-invalid-
+                      - 115--the-date-registered-format-is-invalid-
+                      - 116--the-description-is-invalid-
+                      - 117--the-metadata-is-invalid-
+                      - 118--the-body-must-be-a-Json-Object-
+                      - 119--the-card-is-required-
+                      - 120--card-not-found-
+                      - 121--the-card-is-invalid-
+                      - 122--the-card-data-is-invalid-
+                      - 123--the-payment-method-id-is-required-
+                      - 124--the-issuer-id-is-required-
+                      - 125--invalid-parameters-
+                      - 126--invalid-parameter--You-cannot-update-the-email-
+                      - >-
+                        127--invalid-parameter--Cannot-resolve-the-payment-method-of-card--check-the-payment-method-id-and-issuer-id-
+                      - >-
+                        128--the-email-format-is-invalid--Use--test-payer--0-9--1-10--testuser-com--
+                      - >-
+                        129--the-customer-has-reached-the-maximum-allowed-number-of-cards-
+                      - 140--invalid-card-owner-
+                      - 150--invalid-users-involved-
+                      - >-
+                        200--invalid-range-format--range--date-parameter-after--date-from-before--date-to--
+                      - 201--range-attribute-must-belong-to-date-entity-
+                      - >-
+                        202--invalid--after--parameter--It-should-be-date-iso-8601--
+                      - >-
+                        203--invalid--before--parameter--It-should-be-date-iso-8601--
+                      - 204--invalid-filters-format-
+                      - 205--invalid-query-format-
+                      - >-
+                        206--attributes-to-sort-must-belong-to--customer--entity-
+                      - 207--order-filter-must-be--asc--or--desc--
+                      - 208--invalid--sort--parameter-format-
         '401':
-          unauthorized:
-              description: unauthorized.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - unauthorized--unauthorized-
         '404':
-          not_found:
-              description: not_found.
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - not_found--not-found-
