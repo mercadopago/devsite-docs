@@ -3,9 +3,9 @@
 Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones de Mercado Pago.
 
 ---
-## Febrero 2021
+## Marzo 2021
 
-### 25 de Febrero
+### 04 de Marzo
 
 > CHANGELOG
 >

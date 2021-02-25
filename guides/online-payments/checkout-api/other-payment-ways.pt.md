@@ -2853,7 +2853,8 @@ Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago
 
 Para receber outros meios de pagamento, é importante ter em conta duas instâncias:
 
-1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+1. Primeiro, é preciso um frontend para coletar as informações necessárias para realizar o pagamento.
+
 1. Segundo, um backend que tome os dados do pagamento e pode confirmar e fazer o pagamento.
 
 Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
@@ -2922,7 +2923,7 @@ curl -X GET \
 
 <br>
 
-O resultado será uma lista com os meios de pagamento e suas propriedades. Por exemplo, os meios de pagamento do `payment_type_id` que tenham como valor `ticket` se referem aos meios de pagamento em dinheiro.
+O resultado será uma lista com os meios de pagamento e suas propriedades. Por exemplo, os meios de pagamento do `payment_type_id` que tenham como valor `ticket` se referem aos meios de pagamento em dinheiro e as de bank_transfer para depósitos bancários.
 
 Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por isso você precisa filtrar as formas de pagamento que queira oferecer de acordo com a [lista de pagamentos disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_meios_de_pagamento).
 
@@ -3309,20 +3310,21 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 >
 > h2
 >
-> Recibir pagos con Pix
+> Receber pagamentos com Pix 
 
-Ofrece la opción de recibir pagos al instante con Pix desde cualquier banco o billetera digital a través de un código QR o un código de pago.
+Ofereça a opção de receber pagamentos no instante com Pix de qualquer banco ou carteira digital através de um código QR ou de um código de pagamento.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pré-requisitos
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtén una llave Pix
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Requisito prévio
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha uma chave Pix
 
-Para comenzar, debes tener registrada una llave Pix en la cuenta del vendedor. Este dato es único, sirve para identificar tu cuenta y te permitirá utilizar las funcionalidades del medio de pago. 
+Para começar, você deve ter cadastrada uma chave Pix na conta do vendedor. Este dado é único, serve para identificar sua conta e permitirá que você utilize as funcionalidades do meio de pagamento. 
 
-[Conoce cómo crear una llave Pix](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/17843)
+[Conheça como criar uma chave Pix](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/17843)
 
-### Datos para el pago 
+### Dados para o pagamento
 
-Luego de [capturar los datos](#bookmark_capture_os_dados_para_pagamento) con el formulario, para poder recibir pagos con Pix, debes enviar la dirección de e-mail del comprador, el tipo y número de documento, el medio de pago y el detalle del monto.
+Após [capturar os dados](#bookmark_capture_os_dados_para_pagamento) com o formulário, para poder receber pagamentos com Pix, você deve encaminhar o e-mail do comprador, o tipo e número de carteira de identidade, o meio de pagamento e o detalhe do valor.
+
 
 [[[
 ```php
@@ -3520,50 +3522,48 @@ curl -X POST \
 
 <br>
 
-La respuesta va a mostrar el estado pendiente del pago y toda la información que necesitas para mostrar al comprador.
+A resposta mostrará o status pendente do pagamento e todas as informações que você precisa para mostrar ao comprador.
 
-El valor `transaction_data` te brindará los datos para disponibilizar la opción de pago a través de un código QR. Vas a encontrar los siguientes atributos: 
+O valor `transaction_data` oferecerá os dados para disponibilizar a opção de pagamento através de um código QR. Você vai encontrar os atributos abaixo:   
 
 
-| Atributos| Descripción |
+| Atributos| Descrição |
 | --- | --- |
-| `qr_code_base64` | Dato para renderizar el código QR.|
-| `qr_code` | Dato para armar un código de pago para copiar y pegar.|
+| `qr_code_base64` | Dado para renderizar o código QR.|
+| `qr_code` | Dado para montar um código de pagamento para copiar e colar.|
 
-### Datos para efectuar el pago
+### Dados para realizar o pagamento 
 
-Para que se efectúe el pago, deberás renderizar el código QR para poder mostrarlo. También puedes agregar una opción para copiar y pegar el código de pago, que permitirá realizar la transacción desde una Banca por Internet. 
+Para o pagamento ser realizado, você deverá renderizar o código QR para poder mostrá-lo. Você também pode adicionar uma opção para copiar e colar o código de pagamento, que permitirá realizar a transação a partir de Bancos pela Internet. 
 
-Tienes que agregar el `qr_code_base64` para poder mostrar el código QR. Por ejemplo, puedes renderizarlo de la siguiente manera:
+Você tem que adicionar o `qr_code_base64` para poder mostrar o código QR. Por exemplo, pode renderizar o código da seguinte forma:
 
 ```html
-{
 <img src={`data:image/jpeg;base64,${qr_code_base64}`/>
-}
 ```
 
-Para mostrar la opción que te permitirá copiar y pegar el código de pago, puedes sumar el `qr_code` de esta forma:
+Para mostrar a opção que permitirá copiar e colar o código de pagamento, você pode adicionar o `qr_code` desta forma:
 
 ```html
-{
 <label for="cvv">Copiar Hash:</label>
 <input type="text" id="copiar"  value={qr_code}/>
-}
 ```
 
 > NOTE
 >
-> Nota
+> Para você levar em conta
 >
->  * Por defecto, el cliente tiene 24 horas para realizar el pago. 
->  * El código puede ser utilizado una sola vez.
->  * El código se va a mostrar siempre que esté vigente según la fecha de expiración. 
+>  * Por default, o cliente tem 24 horas para realizar o pagamento. 
+>  * O código pode ser utilizado somente uma vez.
+>  * O código será mostrado desde que estiver vigente, dependendo da data de expiração. 
+
 <br>
 
 
-## Fecha de vencimiento para pagos
+## Data de vencimento para pagamentos
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pagos con boleto
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pagamentos com boleto
+
 
 
 A data de expiração padrão para pagamentos de boleto é de 3 dias. Opcionalmente é possível alterar essa data enviando o campo `date_of_expiration` na requisição de criação do pagamento. A data configurada deve estar entre 1 e 30 dias a partir da data de emissão.
@@ -3621,9 +3621,9 @@ O prazo de aprovação do boleto é de até 48h úteis. Por isso recomenda-se co
 >
 > Caso o boleto seja pago depois da data de expiração, o valor será estornado na conta do Mercado Pago do pagador.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pagos con Pix
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pagamentos com Pix
 
-Por defecto, la fecha de vencimiento para los pagos con Pix es de 24 horas. Si quieres, puedes cambiarla enviando el campo `date_of_expiration` en la solicitud de creación de pago. La fecha configurada debe ser entre 1 y 30 días a partir de la fecha de emisión.
+Por default, a data de vencimento para os pagamentos com Pix é de 24 horas. Se você quiser, pode alterá-la enviando o campo `date_of_expiration` na solicitação de criação de pagamento. A data configurada deve ser entre 1 e 30 dias a partir da data de emissão.
 
 [[[
 ```php
@@ -3674,7 +3674,7 @@ La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 >
 > Importante
 >
-> Si el pago se intenta realizar fuera de la fecha de expiración establecida, la operación será rechazada. 
+> Se o pagamento for realizado após a data de expiração marcada, a operação será rejeitada. 
 
 ## Cancelar um pagamento
 

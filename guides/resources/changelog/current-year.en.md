@@ -3,22 +3,22 @@
 Find out everything about the new versions and updates of Mercado Pago integrations.
 
 ---
-## Febrero 2021
+## March 2021
 
-### 25 de Febrero
+### March 04th
 
 > CHANGELOG
 >
-> Pix como nuevo medio de pago en Checkout Transparente 
+> Pix as new payment method in Transparent Checkout 
 >
 > NEWS: NOVEDADES
 >
 > PRODUCT: CHECKOUT TRANSPARENTE 
 
-Ahora puedes agregar a Pix como medio de pago para comenzar a recibir dinero al instante, todos los días y desde cualquier banco o billetera. Solo debes tener tu llave y sumar a Pix en tu formulario de pago.
+Now you can add Pix as method of payment and receive money immediately, every day from any bank or wallet. You only need to have a key and add Pix to your payment form. 
 
 
-[Comenzar a recibir pagos con Pix](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_recibir_pagos_con_pix)
+[Start receiving payments with Pix](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_recibir_pagos_con_pix)
 
 ## January 2021
 

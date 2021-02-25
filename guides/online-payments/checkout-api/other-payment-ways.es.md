@@ -3570,18 +3570,14 @@ Para que se efectúe el pago, deberás renderizar el código QR para poder mostr
 Tienes que agregar el `qr_code_base64` para poder mostrar el código QR. Por ejemplo, puedes renderizarlo de la siguiente manera:
 
 ```html
-{
 <img src={`data:image/jpeg;base64,${qr_code_base64}`/>
-}
 ```
 
 Para mostrar la opción que te permitirá copiar y pegar el código de pago, puedes sumar el `qr_code` de esta forma:
 
 ```html
-{
 <label for="cvv">Copiar Hash:</label>
 <input type="text" id="copiar"  value={qr_code}/>
-}
 ```
 
 
