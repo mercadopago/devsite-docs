@@ -156,7 +156,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 ```
 >Você pode obter mais informações sobre os campos na [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference).
 
-Prono! Você criou uma assinatura com um plano associado.
+Pronto! Você criou uma assinatura com um plano associado.
 
 
 ## Assinaturas sem plano associado
@@ -218,6 +218,13 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
     "version": 0
 }
 ```
+
+> NOTE
+> 
+> Pagamento de validação
+> 
+> Efetuamos um pagamento de validação de um valor mínimo, que difere de acordo com cada país, e se o pagamento for bem sucedido, procedemos com o reembolso desse pagamento. Isso serve como uma medida para garantir que se trata de um cartão válido. Os valores mínimos são: (Argentina: $2, Brasil: R$ 0.5, México: $10).
+
 
 ### Criar assinatura com pagamento pendente
 
