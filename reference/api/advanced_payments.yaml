@@ -1203,6 +1203,8 @@ paths:
                       - 406001--Error-in-the-payments-API-
   /v1/advanced_payments/{id}/refunds:
     post:
+      summary: Refund a Payment
+      description: Refund a Payment
       requestBody:
         content:
           application/json:
@@ -1314,6 +1316,8 @@ paths:
                       - 406001--Error-in-the-payments-API-
   /v1/advanced_payments/{id}/disburses:
     post:
+      summary: Change release date of a Disbursement
+      description: Change release date of a Disbursement
       requestBody:
         content:
           application/json:
@@ -1425,6 +1429,8 @@ paths:
                       - 406001--Error-in-the-payments-API-
   /v1/advanced_payments/{id}/disbursements/{disbursement_id}/refunds:
     post:
+      summary: Parcial refund of an Advanced Payment
+      description: Parcial refund of an Advanced Payment
       requestBody:
         content:
           application/json:
@@ -1536,6 +1542,8 @@ paths:
                       - 406001--Error-in-the-payments-API-
   /v1/advanced_payments/{id}/disbursements/{disbursement_id}/disburses:
     post:
+      summary: Change release date os all Disbursements
+      description: Change release date os all Disbursements
       requestBody:
         content:
           application/json:
