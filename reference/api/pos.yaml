@@ -54,7 +54,7 @@ paths:
             application/json:
               schema:
                 type: object
-                definitions:
+                properties:
                   id:
                     type: number
                     example: 2711382
