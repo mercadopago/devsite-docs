@@ -20,12 +20,13 @@ paths:
               properties:
                 name:
                   type: string
-                  description: Name of the POS. (Required)
+                  description: Name of the POS.
+                  required: true
                 fixed_amount:
                   type: boolean
                   description: >-
                     Define if the customer can insert the amount to be paid.
-                    (Required)
+                  required: true
                 category:
                   type: number
                   description: >-
@@ -38,7 +39,8 @@ paths:
                   type: string
                   description: >-
                     External_id of the store to which the pos belongs defined by
-                    integrator system. (Required)
+                    integrator system.
+                  required: true
                 external_id:
                   type: string
                   description: Unique identifier of the pos defined by integrator system.
@@ -355,12 +357,13 @@ paths:
                   description: POS identifier, numerical and self-generated.
                 name:
                   type: string
-                  description: Name of the POS. (Required)
+                  description: Name of the POS.
+                  required: true
                 fixed_amount:
                   type: boolean
                   description: >-
                     Define if the customer can insert the amount to be paid.
-                    (Required)
+                  required: true
                 category:
                   type: number
                   description: >-
@@ -373,7 +376,8 @@ paths:
                   type: string
                   description: >-
                     External_id of the store to which the pos belongs defined by
-                    integrator system. (Required)
+                    integrator system.
+                  required: true
                 url:
                   type: string
                   description: >-
