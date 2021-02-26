@@ -32,6 +32,7 @@ Install the [app extension of our transparent checkout](https://apps.shopify.com
 | Payment methods | Accept payments with credit and debit card, cash and money in Mercado Pago account. |
 | Financing | Sell in installments and offer the promotions available. |
 | Payment as guest | Allow your customers to pay even if they don’t have a Mercado Pago account. |
+| Discounts | Automatic discounts and discount coupons. |
 
 
 ### How to install the Transparent Checkout?

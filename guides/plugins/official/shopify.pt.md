@@ -32,6 +32,7 @@ Instale o [app extension do nosso checkout transparente](https://apps.shopify.co
 | Meios de pagamento | Aceite pagamentos com cartão, boleto e dinheiro na conta Mercado Pago. |
 | Parcelamento | Venda parcelado e ofereça as promoções disponíveis. |
 | Pagamento como convidado | Permita que seus clientes paguem sem a necessidade de terem uma conta no Mercado Pago. |
+| Descontos | Descontos automáticos e cupons de desconto. |
 
 
 ### Como instalar o checkout transparente?
