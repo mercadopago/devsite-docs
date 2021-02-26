@@ -257,7 +257,7 @@ paths:
             example: 12123adfasdf123u4u
         - name: application_id
           in: path
-          description: Application identifier.
+          description: application identifier.
           required: true
           schema:
             type: string

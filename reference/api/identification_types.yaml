@@ -52,7 +52,6 @@ paths:
                     type: string
                     enum:
                       - 1001--Public-key-not-found-
-                      - 1002--2Public-key-not-found-
         '401':
           description: Error
           content:
