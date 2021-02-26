@@ -24,81 +24,106 @@ paths:
                   id:
                     type: string
                     example: 000000001-sT93QZFAsfxU9P5
+                    description: id
                   email:
                     type: string
                     example: bruno@gmail.com
+                    description: email
                   first_name:
                     type: string
                     example: Bruce
+                    description: first_name
                   last_name:
                     type: string
                     example: Wayne
+                    description: last_name
                   phone:
                     type: object
                     properties:
                       area_code:
                         type: string
                         example: 23
+                        description: area_code
                       number:
                         type: string
                         example: 12345678
+                        description: number
+                    description: phone
                   identification:
                     type: object
                     properties:
                       type:
                         type: string
                         example: DNI
+                        description: type
                       number:
                         type: string
                         example: 12345678
+                        description: number
+                    description: identification
                   address:
                     type: object
                     properties:
                       id:
                         type: string
                         format: nullable
+                        description: id
                       zip_code:
                         type: string
                         example: SG1 2AX
+                        description: zip_code
                       street_name:
                         type: string
                         example: Old Knebworth Ln
+                        description: street_name
                       street_number:
                         type: string
                         format: nullable
+                        description: street_number
+                    description: address
                   date_registered:
                     type: string
                     format: nullable
+                    description: date_registered
                   description:
                     type: string
                     example: Lorem Ipsum
+                    description: description
                   date_created:
                     type: string
                     example: 2018-02-20T15:36:23.541Z
+                    description: date_created
                   date_last_updated:
                     type: string
                     format: nullable
+                    description: date_last_updated
                   metadata:
                     type: object
                     properties: null
+                    description: metadata
                   default_card:
                     type: string
                     format: nullable
+                    description: default_card
                   default_address:
                     type: string
                     format: nullable
+                    description: default_address
                   cards:
                     type: array
                     items:
                       type: object
                       properties: null
+                    description: cards
                   addresses:
                     type: array
                     items:
                       type: object
                       properties: null
+                    description: addresses
                   live_mode:
                     type: boolean
+                    description: live_mode
         '400':
           description: Error
           content:
@@ -642,12 +667,16 @@ paths:
                       limit:
                         type: number
                         example: 10
+                        description: limit
                       offset:
                         type: number
                         example: 0
+                        description: offset
                       total:
                         type: number
                         example: 1
+                        description: total
+                    description: paging
                   results:
                     type: array
                     items:
@@ -659,78 +688,104 @@ paths:
                             id:
                               type: string
                               format: nullable
+                              description: id
                             street_name:
                               type: string
                               format: nullable
+                              description: street_name
                             street_number:
                               type: string
                               format: nullable
+                              description: street_number
                             zip_code:
                               type: string
                               format: nullable
+                              description: zip_code
+                          description: address
                         addresses:
                           type: array
                           items:
                             type: object
                             properties: null
+                          description: addresses
                         cards:
                           type: array
                           items:
                             type: object
                             properties: null
+                          description: cards
                         date_created:
                           type: string
                           example: 2017-05-05T04:00:00.000Z
+                          description: date_created
                         date_last_updated:
                           type: string
                           example: 2017-05-05T13:23:25.021Z
+                          description: date_last_updated
                         date_registered:
                           type: string
                           format: nullable
+                          description: date_registered
                         default_address:
                           type: string
                           format: nullable
+                          description: default_address
                         default_card:
                           type: string
                           example: 1493990563105
+                          description: default_card
                         description:
                           type: string
                           format: nullable
+                          description: description
                         email:
                           type: string
                           example: test@test.com
+                          description: email
                         first_name:
                           type: string
                           format: nullable
+                          description: first_name
                         id:
                           type: string
                           example: 123456789-jxOV430go9fx2e
+                          description: id
                         identification:
                           type: object
                           properties:
                             number:
                               type: string
                               format: nullable
+                              description: number
                             type:
                               type: string
                               format: nullable
+                              description: type
+                          description: identification
                         last_name:
                           type: string
                           format: nullable
+                          description: last_name
                         live_mode:
                           type: boolean
+                          description: live_mode
                         metadata:
                           type: object
                           properties: null
+                          description: metadata
                         phone:
                           type: object
                           properties:
                             area_code:
                               type: string
                               format: nullable
+                              description: area_code
                             number:
                               type: string
                               format: nullable
+                              description: number
+                          description: phone
+                    description: results
         '400':
           description: Error
           content:

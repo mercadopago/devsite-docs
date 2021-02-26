@@ -47,7 +47,7 @@ paths:
                       properties:
                         bin:
                           type: object
-                          description: ''
+                          description: bin
                           properties:
                             pattern:
                               type: string
@@ -66,7 +66,7 @@ paths:
                                 pay with more than one installment.
                         card_number:
                           type: object
-                          description: ''
+                          description: card_number
                           properties:
                             length:
                               type: string
@@ -78,7 +78,7 @@ paths:
                                 checksum algorithm (usually Luhn)
                         security_code:
                           type: object
-                          description: ''
+                          description: security_code
                           properties:
                             mode:
                               type: string

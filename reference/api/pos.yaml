@@ -24,8 +24,7 @@ paths:
                   required: true
                 fixed_amount:
                   type: boolean
-                  description: >-
-                    Define if the customer can insert the amount to be paid.
+                  description: Define if the customer can insert the amount to be paid.
                   required: true
                 category:
                   type: number
@@ -60,6 +59,7 @@ paths:
                   id:
                     type: number
                     example: 2711382
+                    description: id
                   qr:
                     type: object
                     properties:
@@ -67,50 +67,66 @@ paths:
                         type: string
                         example: >-
                           https://www.mercadopago.com/instore/merchant/qr/2711382/0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.png
+                        description: image
                       template_document:
                         type: string
                         example: >-
                           https://www.mercadopago.com/instore/merchant/qr/2711382/template_0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.pdf
+                        description: template_document
                       template_image:
                         type: string
                         example: >-
                           https://www.mercadopago.com/instore/merchant/qr/2711382/template_0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.png
+                        description: template_image
+                    description: qr
                   status:
                     type: string
                     example: active
+                    description: status
                   date_created:
                     type: string
                     example: 2019-08-22T14:11:12.000Z
+                    description: date_created
                   date_last_updated:
                     type: string
                     example: 2019-08-22T14:11:12.000Z
+                    description: date_last_updated
                   uuid:
                     type: string
                     example: >-
                       0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1
+                    description: uuid
                   user_id:
                     type: number
                     example: 446566691
+                    description: user_id
                   name:
                     type: string
                     example: Caja Principal
+                    description: name
                   fixed_amount:
                     type: boolean
+                    description: fixed_amount
                   category:
                     type: number
                     example: 621102
+                    description: category
                   store_id:
                     type: string
                     example: 12345678
+                    description: store_id
                   external_store_id:
                     type: string
                     example: BK021
+                    description: external_store_id
                   url:
                     type: string
                     example: https://www.miempresa.com/MP?locationId=6232&positionId=01
+                    description: url
                   external_id:
                     type: string
                     example: 4lph4num3r1c
+                    description: external_id
         '400':
           description: Error
           content:
@@ -202,12 +218,16 @@ paths:
                         total:
                           type: number
                           example: 2
+                          description: total
                         offset:
                           type: number
                           example: 0
+                          description: offset
                         limit:
                           type: number
                           example: 0
+                          description: limit
+                      description: paging
                     results:
                       type: array
                       items:
@@ -216,23 +236,30 @@ paths:
                           user_id:
                             type: number
                             example: 446566691
+                            description: user_id
                           name:
                             type: string
                             example: Caja Principal
+                            description: name
                           fixed_amount:
                             type: boolean
+                            description: fixed_amount
                           category:
                             type: number
                             example: 621102
+                            description: category
                           store_id:
                             type: string
                             example: 12345678
+                            description: store_id
                           external_id:
                             type: string
                             example: CAJA001
+                            description: external_id
                           id:
                             type: number
                             example: 1988157
+                            description: id
                           qr:
                             type: object
                             properties:
@@ -240,23 +267,31 @@ paths:
                                 type: string
                                 example: >-
                                   https://www.mercadopago.com/instore/merchant/qr/1988157/1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.png
+                                description: image
                               template_document:
                                 type: string
                                 example: >-
                                   https://www.mercadopago.com/instore/merchant/qr/1988157/template_1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.pdf
+                                description: template_document
                               template_image:
                                 type: string
                                 example: >-
                                   https://www.mercadopago.com/instore/merchant/qr/1988157/template_1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.png
+                                description: template_image
+                            description: qr
                           date_created:
                             type: string
                             example: 2019-06-24T13:31:56.000Z
+                            description: date_created
                           date_last_updated:
                             type: string
                             example: 2019-08-07T21:07:26.000Z
+                            description: date_last_updated
                           external_store_id:
                             type: string
                             example: SUC001
+                            description: external_store_id
+                      description: results
         '400':
           description: Error
           content:
@@ -361,8 +396,7 @@ paths:
                   required: true
                 fixed_amount:
                   type: boolean
-                  description: >-
-                    Define if the customer can insert the amount to be paid.
+                  description: Define if the customer can insert the amount to be paid.
                   required: true
                 category:
                   type: number

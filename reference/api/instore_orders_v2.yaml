@@ -165,11 +165,10 @@ paths:
                 user_id:
                   type: string
                   description: User identifier.
-                  required: true  
+                  required: true
                 external_store_id:
                   type: string
-                  description: >-
-                    External_id of the store defined by integrator system.
+                  description: External_id of the store defined by integrator system.
                   required: true
                 external_pos_id:
                   type: string
@@ -179,8 +178,7 @@ paths:
                   required: true
                 external_reference:
                   type: string
-                  description: >-
-                    Reference you can synchronize with your sale system.
+                  description: Reference you can synchronize with your sale system.
                   required: true
                 title:
                   type: string
@@ -199,8 +197,7 @@ paths:
                   description: Expiration date with format "2020-08-22T16:34:56.559-04:00"
                 total_amount:
                   type: number
-                  description: >-
-                    Total amount of the transaction in local currency.
+                  description: Total amount of the transaction in local currency.
                   required: true
                 items:
                   type: array
@@ -223,8 +220,7 @@ paths:
                         description: Item description.
                       unit_price:
                         type: number
-                        description: >-
-                          Unit price of the item (maximum 2 decimals).
+                        description: Unit price of the item (maximum 2 decimals).
                         required: true
                       quantity:
                         type: number

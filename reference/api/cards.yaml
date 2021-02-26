@@ -232,84 +232,111 @@ paths:
                   id:
                     type: string
                     example: 1562188766852
+                    description: id
                   expiration_month:
                     type: number
                     example: 6
+                    description: expiration_month
                   expiration_year:
                     type: number
                     example: 2023
+                    description: expiration_year
                   first_six_digits:
                     type: string
                     example: 423564
+                    description: first_six_digits
                   last_four_digits:
                     type: string
                     example: 5682
+                    description: last_four_digits
                   payment_method:
                     type: object
                     properties:
                       id:
                         type: string
                         example: visa
+                        description: id
                       name:
                         type: string
                         example: visa
+                        description: name
                       payment_type_id:
                         type: string
                         example: credit_card
+                        description: payment_type_id
                       thumbnail:
                         type: string
                         example: http://img.mlstatic.com/org-img/MP3/API/logos/visa.gif
+                        description: thumbnail
                       secure_thumbnail:
                         type: string
                         example: >-
                           https://www.mercadopago.com/org-img/MP3/API/logos/visa.gif
+                        description: secure_thumbnail
+                    description: payment_method
                   security_code:
                     type: object
                     properties:
                       length:
                         type: number
                         example: 3
+                        description: length
                       card_location:
                         type: string
                         example: back
+                        description: card_location
+                    description: security_code
                   issuer:
                     type: object
                     properties:
                       id:
                         type: number
                         example: 25
+                        description: id
                       name:
                         type: string
                         example: Visa
+                        description: name
+                    description: issuer
                   cardholder:
                     type: object
                     properties:
                       name:
                         type: string
                         example: APRO
+                        description: name
                       identification:
                         type: object
                         properties:
                           number:
                             type: string
                             example: 19119119100
+                            description: number
                           type:
                             type: string
                             example: CPF
+                            description: type
+                        description: identification
+                    description: cardholder
                   date_created:
                     type: string
                     example: 2019-07-03T21:15:35.000Z
+                    description: date_created
                   date_last_updated:
                     type: string
                     example: 2019-07-03T21:19:18.000Z
+                    description: date_last_updated
                   customer_id:
                     type: string
                     example: 448870796-7ZjwhKGxILixxN
+                    description: customer_id
                   user_id:
                     type: string
                     example: 448870796
+                    description: user_id
                   live_mode:
                     type: boolean
+                    description: live_mode
         '400':
           description: Error
           content:

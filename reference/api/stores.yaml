@@ -30,13 +30,16 @@ paths:
                   id:
                     type: string
                     example: 30163646
+                    description: id
                   name:
                     type: string
                     example: Sucursal Instore
+                    description: name
                   date_creation:
                     type: string
                     format: date-time
                     example: 2019-09-09T09:25:56.000Z
+                    description: date_creation
                   business_hours:
                     type: object
                     properties:
@@ -48,9 +51,12 @@ paths:
                             open:
                               type: string
                               example: '08:00'
+                              description: open
                             close:
                               type: string
                               example: '13:00'
+                              description: close
+                        description: monday
                       tuesday:
                         type: array
                         items:
@@ -59,9 +65,12 @@ paths:
                             open:
                               type: string
                               example: '08:00'
+                              description: open
                             close:
                               type: string
                               example: '18:00'
+                              description: close
+                        description: tuesday
                       wednesday:
                         type: array
                         items:
@@ -70,27 +79,37 @@ paths:
                             open:
                               type: string
                               example: '07:00'
+                              description: open
                             close:
                               type: string
                               example: '10:00'
+                              description: close
+                        description: wednesday
+                    description: business_hours
                   location:
                     type: object
                     properties:
                       address_line:
                         type: string
                         example: Caseros 3039 Belgrano Capital Federal Argentina
+                        description: address_line
                       reference:
                         type: string
                         example: 3er Piso
+                        description: reference
                       latitude:
                         type: number
                         example: -32.8897322
+                        description: latitude
                       longitude:
                         type: number
                         example: -68.8443275
+                        description: longitude
+                    description: location
                   external_id:
                     type: string
                     example: SUC001
+                    description: external_id
         '400':
           description: Error
           content:
@@ -151,11 +170,11 @@ paths:
                       description: Zip code.
                     street_number:
                       type: number
-                      description: Number. 
+                      description: Number.
                       required: true
                     street_name:
                       type: string
-                      description: Street name. 
+                      description: Street name.
                       required: true
                     city_name:
                       type: string
@@ -163,15 +182,15 @@ paths:
                       required: true
                     state_name:
                       type: object
-                      description: State. 
+                      description: State.
                       required: true
                     latitude:
                       type: string
-                      description: Latitude. 
+                      description: Latitude.
                       required: true
                     logitude:
                       type: string
-                      description: Longitude. 
+                      description: Longitude.
                       required: true
                     reference:
                       type: string
@@ -186,12 +205,15 @@ paths:
                   id:
                     type: string
                     example: 1234567
+                    description: id
                   name:
                     type: string
                     example: Sucursal Instore
+                    description: name
                   date_created:
                     type: string
                     example: 2019-08-08T19:29:45.019Z
+                    description: date_created
                   business_hours:
                     type: object
                     properties:
@@ -203,9 +225,12 @@ paths:
                             open:
                               type: string
                               example: '08:00'
+                              description: open
                             close:
                               type: string
                               example: '12:00'
+                              description: close
+                        description: monday
                       tuesday:
                         type: array
                         items:
@@ -214,27 +239,37 @@ paths:
                             open:
                               type: string
                               example: '09:00'
+                              description: open
                             close:
                               type: string
                               example: '18:00'
+                              description: close
+                        description: tuesday
+                    description: business_hours
                   location:
                     type: object
                     properties:
                       address_line:
                         type: string
                         example: Caseros 3039 Belgrano Capital Federal
+                        description: address_line
                       latitude:
                         type: number
                         example: -32.8897322
+                        description: latitude
                       longitude:
                         type: number
                         example: -68.8443275
+                        description: longitude
                       reference:
                         type: string
                         example: 3er Piso
+                        description: reference
+                    description: location
                   external_id:
                     type: string
                     example: 1234
+                    description: external_id
         '400':
           description: Error
           content:
@@ -297,12 +332,16 @@ paths:
                         total:
                           type: number
                           example: 2
+                          description: total
                         offset:
                           type: number
                           example: 0
+                          description: offset
                         limit:
                           type: number
                           example: 30
+                          description: limit
+                      description: paging
                     results:
                       type: array
                       items:
@@ -311,13 +350,16 @@ paths:
                           id:
                             type: string
                             example: 30163646
+                            description: id
                           name:
                             type: string
                             example: Sucursal Instore
+                            description: name
                           date_creation:
                             type: string
                             format: date-time
                             example: 2019-09-09T09:25:56.000Z
+                            description: date_creation
                           business_hours:
                             type: object
                             properties:
@@ -329,9 +371,12 @@ paths:
                                     open:
                                       type: string
                                       example: '08:00'
+                                      description: open
                                     close:
                                       type: string
                                       example: '13:00'
+                                      description: close
+                                description: monday
                               tuesday:
                                 type: array
                                 items:
@@ -340,9 +385,12 @@ paths:
                                     open:
                                       type: string
                                       example: '08:00'
+                                      description: open
                                     close:
                                       type: string
                                       example: '18:00'
+                                      description: close
+                                description: tuesday
                               wednesday:
                                 type: array
                                 items:
@@ -351,9 +399,13 @@ paths:
                                     open:
                                       type: string
                                       example: '07:00'
+                                      description: open
                                     close:
                                       type: string
                                       example: '10:00'
+                                      description: close
+                                description: wednesday
+                            description: business_hours
                           location:
                             type: object
                             properties:
@@ -362,18 +414,25 @@ paths:
                                 example: >-
                                   Caseros 3039 Belgrano Capital Federal
                                   Argentina
+                                description: address_line
                               reference:
                                 type: string
                                 example: 3er Piso
+                                description: reference
                               latitude:
                                 type: number
                                 example: -32.8897322
+                                description: latitude
                               longitude:
                                 type: number
                                 example: -68.8443275
+                                description: longitude
+                            description: location
                           external_id:
                             type: string
                             example: SUC001
+                            description: external_id
+                      description: results
         '400':
           description: Error
           content:
@@ -441,11 +500,11 @@ paths:
                       description: Zip code.
                     street_number:
                       type: number
-                      description: Number. 
+                      description: Number.
                       required: true
                     street_name:
                       type: string
-                      description: Street name. 
+                      description: Street name.
                       required: true
                     city_name:
                       type: string
@@ -453,15 +512,15 @@ paths:
                       required: true
                     state_name:
                       type: object
-                      description: State. 
+                      description: State.
                       required: true
                     latitude:
                       type: string
-                      description: Latitude. 
+                      description: Latitude.
                       required: true
                     logitude:
                       type: string
-                      description: Longitude. 
+                      description: Longitude.
                       required: true
                     reference:
                       type: string

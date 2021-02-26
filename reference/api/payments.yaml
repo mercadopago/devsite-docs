@@ -279,121 +279,160 @@ paths:
                   id:
                     type: number
                     example: 20359978
+                    description: id
                   date_created:
                     type: string
                     example: 2019-07-10T14:47:58.000Z
+                    description: date_created
                   date_approved:
                     type: string
                     example: 2019-07-10T14:47:58.000Z
+                    description: date_approved
                   date_last_updated:
                     type: string
                     example: 2019-07-10T14:47:58.000Z
+                    description: date_last_updated
                   date_of_expiration:
                     type: string
                     format: nullable
+                    description: date_of_expiration
                   money_release_date:
                     type: string
                     example: 2019-07-24T14:47:58.000Z
+                    description: money_release_date
                   operation_type:
                     type: string
                     example: regular_payment
+                    description: operation_type
                   issuer_id:
                     type: string
                     example: 25
+                    description: issuer_id
                   payment_method_id:
                     type: string
                     example: visa
+                    description: payment_method_id
                   payment_type_id:
                     type: string
                     example: credit_card
+                    description: payment_type_id
                   status:
                     type: string
                     example: approved
+                    description: status
                   status_detail:
                     type: string
                     example: accredited
+                    description: status_detail
                   currency_id:
                     type: string
                     example: $
+                    description: currency_id
                   description:
                     type: string
                     example: >-
                       Point Mini a maquininha que dá o dinheiro de suas vendas
                       na hora
+                    description: description
                   live_mode:
                     type: boolean
+                    description: live_mode
                   sponsor_id:
                     type: string
                     format: nullable
+                    description: sponsor_id
                   authorization_code:
                     type: string
                     format: nullable
+                    description: authorization_code
                   money_release_schema:
                     type: string
                     format: nullable
+                    description: money_release_schema
                   taxes_amount:
                     type: number
                     example: 0
+                    description: taxes_amount
                   counter_currency:
                     type: string
                     format: nullable
+                    description: counter_currency
                   shipping_amount:
                     type: number
                     example: 0
+                    description: shipping_amount
                   pos_id:
                     type: string
                     format: nullable
+                    description: pos_id
                   store_id:
                     type: string
                     format: nullable
+                    description: store_id
                   collector_id:
                     type: number
                     example: 448876418
+                    description: collector_id
                   payer:
                     type: object
                     properties:
                       first_name:
                         type: string
                         example: Test
+                        description: first_name
                       last_name:
                         type: string
                         example: Test
+                        description: last_name
                       email:
                         type: string
                         example: test_user_80507629@testuser.com
+                        description: email
                       identification:
                         type: object
                         properties:
                           number:
                             type: string
                             example: 19119119100
+                            description: number
                           type:
                             type: string
                             example: CPF
+                            description: type
+                        description: identification
                       phone:
                         type: object
                         properties:
                           area_code:
                             type: string
                             example: 11
+                            description: area_code
                           number:
                             type: string
                             example: 987654321
+                            description: number
                           extension:
                             type: string
                             example: null
+                            description: extension
+                        description: phone
                       type:
                         type: string
                         example: guest
+                        description: type
                       entity_type:
                         type: string
                         format: nullable
+                        description: entity_type
                       id:
                         type: string
                         format: nullable
+                        description: id
+                    description: payer
                   metadata:
                     type: object
                     properties: null
+                    description: metadata
                   additional_info:
                     type: object
                     properties:
@@ -405,27 +444,35 @@ paths:
                             id:
                               type: string
                               example: PR0001
+                              description: id
                             title:
                               type: string
                               example: Point Mini
+                              description: title
                             description:
                               type: string
                               example: >-
                                 Producto Point para cobros con tarjetas mediante
                                 bluetooth
+                              description: description
                             picture_url:
                               type: string
                               example: >-
                                 https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png
+                              description: picture_url
                             category_id:
                               type: string
                               example: electronics
+                              description: category_id
                             quantity:
                               type: number
                               example: 1
+                              description: quantity
                             unit_price:
                               type: number
                               example: 58.8
+                              description: unit_price
+                        description: items
                       payer:
                         type: object
                         properties:
@@ -435,30 +482,41 @@ paths:
                               area_code:
                                 type: string
                                 example: 11
+                                description: area_code
                               number:
                                 type: string
                                 example: 987654321
+                                description: number
+                            description: phone
                           address:
                             type: object
                             properties:
                               zip_code:
                                 type: string
                                 example: 06233-200
+                                description: zip_code
                               street_name:
                                 type: string
                                 example: Av das Nacoes Unidas
+                                description: street_name
                               street_number:
                                 type: string
                                 example: 3003
+                                description: street_number
+                            description: address
                           first_name:
                             type: string
                             example: Nome
+                            description: first_name
                           last_name:
                             type: string
                             example: Sobrenome
+                            description: last_name
                           registration_date:
                             type: string
                             example: 2019-01-01T15:01:01.000Z
+                            description: registration_date
+                        description: payer
                       shipments:
                         type: object
                         properties:
@@ -468,69 +526,94 @@ paths:
                               street_name:
                                 type: string
                                 example: Av das Nacoes Unidas
+                                description: street_name
                               street_number:
                                 type: number
                                 example: 3003
+                                description: street_number
                               zip_code:
                                 type: string
                                 example: 6233200
+                                description: zip_code
                               city_name:
                                 type: string
                                 example: Buzios
+                                description: city_name
                               state_name:
                                 type: string
                                 example: Rio de Janeiro
+                                description: state_name
+                            description: receiver_address
+                        description: shipments
+                    description: additional_info
                   order:
                     type: object
                     properties: null
+                    description: order
                   external_reference:
                     type: string
                     example: MP0001
+                    description: external_reference
                   transaction_amount:
                     type: number
                     example: 58.8
+                    description: transaction_amount
                   transaction_amount_refunded:
                     type: number
                     example: 0
+                    description: transaction_amount_refunded
                   coupon_amount:
                     type: number
                     example: 0
+                    description: coupon_amount
                   differential_pricing_id:
                     type: string
                     format: nullable
+                    description: differential_pricing_id
                   deduction_schema:
                     type: string
                     format: nullable
+                    description: deduction_schema
                   transaction_details:
                     type: object
                     properties:
                       payment_method_reference_id:
                         type: string
                         format: nullable
+                        description: payment_method_reference_id
                       net_received_amount:
                         type: number
                         example: 56.16
+                        description: net_received_amount
                       total_paid_amount:
                         type: number
                         example: 58.8
+                        description: total_paid_amount
                       overpaid_amount:
                         type: number
                         example: 0
+                        description: overpaid_amount
                       external_resource_url:
                         type: string
                         format: nullable
+                        description: external_resource_url
                       installment_amount:
                         type: number
                         example: 58.8
+                        description: installment_amount
                       financial_institution:
                         type: string
                         format: nullable
+                        description: financial_institution
                       payable_deferral_period:
                         type: string
                         format: nullable
+                        description: payable_deferral_period
                       acquirer_reference:
                         type: string
                         format: nullable
+                        description: acquirer_reference
+                    description: transaction_details
                   fee_details:
                     type: array
                     items:
@@ -539,79 +622,106 @@ paths:
                         type:
                           type: string
                           example: mercadopago_fee
+                          description: type
                         amount:
                           type: number
                           example: 2.64
+                          description: amount
                         fee_payer:
                           type: string
                           example: collector
+                          description: fee_payer
+                    description: fee_details
                   captured:
                     type: boolean
+                    description: captured
                   binary_mode:
                     type: boolean
+                    description: binary_mode
                   call_for_authorize_id:
                     type: string
                     format: nullable
+                    description: call_for_authorize_id
                   statement_descriptor:
                     type: string
                     example: MercadoPago
+                    description: statement_descriptor
                   installments:
                     type: number
                     example: 1
+                    description: installments
                   card:
                     type: object
                     properties:
                       id:
                         type: string
                         format: nullable
+                        description: id
                       first_six_digits:
                         type: string
                         example: 423564
+                        description: first_six_digits
                       last_four_digits:
                         type: string
                         example: 5682
+                        description: last_four_digits
                       expiration_month:
                         type: number
                         example: 6
+                        description: expiration_month
                       expiration_year:
                         type: number
                         example: 2023
+                        description: expiration_year
                       date_created:
                         type: string
                         example: 2019-07-10T14:47:58.000Z
+                        description: date_created
                       date_last_updated:
                         type: string
                         example: 2019-07-10T14:47:58.000Z
+                        description: date_last_updated
                       cardholder:
                         type: object
                         properties:
                           name:
                             type: string
                             example: APRO
+                            description: name
                           identification:
                             type: object
                             properties:
                               number:
                                 type: string
                                 example: 19119119100
+                                description: number
                               type:
                                 type: string
                                 example: CPF
+                                description: type
+                            description: identification
+                        description: cardholder
+                    description: card
                   notification_url:
                     type: string
                     example: https://www.suaurl.com/notificacoes/
+                    description: notification_url
                   processing_mode:
                     type: string
                     example: aggregator
+                    description: processing_mode
                   merchant_account_id:
                     type: string
                     format: nullable
+                    description: merchant_account_id
                   acquirer:
                     type: string
                     format: nullable
+                    description: acquirer
                   merchant_number:
                     type: string
                     format: nullable
+                    description: merchant_number
         '400':
           description: Error
           content:
@@ -762,192 +872,256 @@ paths:
                   id:
                     type: string
                     example: 1
+                    description: id
                   date_created:
                     type: string
                     example: 2017-08-31T11:26:38.000Z
+                    description: date_created
                   date_approved:
                     type: string
                     example: 2017-08-31T11:26:38.000Z
+                    description: date_approved
                   date_last_updated:
                     type: string
                     example: 2017-08-31T11:26:38.000Z
+                    description: date_last_updated
                   date_of_expiration:
                     type: string
                     format: nullable
+                    description: date_of_expiration
                   money_release_date:
                     type: string
                     example: 2017-09-14T11:26:38.000Z
+                    description: money_release_date
                   operation_type:
                     type: string
                     example: money_transfer
+                    description: operation_type
                   issuer_id:
                     type: string
                     format: nullable
+                    description: issuer_id
                   payment_method_id:
                     type: string
                     example: account_money
+                    description: payment_method_id
                   payment_type_id:
                     type: string
                     example: account_money
+                    description: payment_type_id
                   status:
                     type: string
                     example: approved
+                    description: status
                   status_detail:
                     type: string
                     example: accredited
+                    description: status_detail
                   currency_id:
                     type: string
                     example: $
+                    description: currency_id
                   description:
                     type: string
                     example: Pago Pizza
+                    description: description
                   live_mode:
                     type: boolean
+                    description: live_mode
                   sponsor_id:
                     type: string
                     format: nullable
+                    description: sponsor_id
                   authorization_code:
                     type: string
                     format: nullable
+                    description: authorization_code
                   money_release_schema:
                     type: string
                     format: nullable
+                    description: money_release_schema
                   counter_currency:
                     type: string
                     format: nullable
+                    description: counter_currency
                   collector_id:
                     type: string
                     example: 2
+                    description: collector_id
                   payer:
                     type: object
                     properties:
                       type:
                         type: string
                         example: registered
+                        description: type
                       id:
                         type: string
                         example: 1
+                        description: id
                       email:
                         type: string
                         example: afriend@gmail.com
+                        description: email
                       identification:
                         type: object
                         properties:
                           type:
                             type: string
                             example: DNI
+                            description: type
                           number:
                             type: string
                             example: 12345678
+                            description: number
+                        description: identification
                       phone:
                         type: object
                         properties:
                           area_code:
                             type: string
                             format: nullable
+                            description: area_code
                           number:
                             type: string
                             example: 11123456789
+                            description: number
                           extension:
                             type: string
                             format: nullable
+                            description: extension
+                        description: phone
                       first_name:
                         type: string
                         example: Name
+                        description: first_name
                       last_name:
                         type: string
                         example: LastName
+                        description: last_name
                       entity_type:
                         type: string
                         format: nullable
+                        description: entity_type
+                    description: payer
                   metadata:
                     type: object
                     properties: null
+                    description: metadata
                   additional_info:
                     type: object
                     properties: null
+                    description: additional_info
                   order:
                     type: object
                     properties: null
+                    description: order
                   external_reference:
                     type: string
                     format: nullable
+                    description: external_reference
                   transaction_amount:
                     type: number
                     example: 250
+                    description: transaction_amount
                   transaction_amount_refunded:
                     type: number
                     example: 0
+                    description: transaction_amount_refunded
                   coupon_amount:
                     type: number
                     example: 0
+                    description: coupon_amount
                   differential_pricing_id:
                     type: string
                     format: nullable
+                    description: differential_pricing_id
                   deduction_schema:
                     type: string
                     format: nullable
+                    description: deduction_schema
                   transaction_details:
                     type: object
                     properties:
                       net_received_amount:
                         type: number
                         example: 250
+                        description: net_received_amount
                       total_paid_amount:
                         type: number
                         example: 250
+                        description: total_paid_amount
                       overpaid_amount:
                         type: number
                         example: 0
+                        description: overpaid_amount
                       external_resource_url:
                         type: string
                         format: nullable
+                        description: external_resource_url
                       installment_amount:
                         type: number
                         example: 250
+                        description: installment_amount
                       financial_institution:
                         type: string
                         format: nullable
+                        description: financial_institution
                       payment_method_reference_id:
                         type: string
                         format: nullable
+                        description: payment_method_reference_id
                       payable_deferral_period:
                         type: string
                         format: nullable
+                        description: payable_deferral_period
                       acquirer_reference:
                         type: string
                         format: nullable
+                        description: acquirer_reference
+                    description: transaction_details
                   captured:
                     type: boolean
+                    description: captured
                   binary_mode:
                     type: boolean
+                    description: binary_mode
                   call_for_authorize_id:
                     type: string
                     format: nullable
+                    description: call_for_authorize_id
                   statement_descriptor:
                     type: string
                     format: nullable
+                    description: statement_descriptor
                   installments:
                     type: number
                     example: 1
+                    description: installments
                   card:
                     type: object
                     properties: null
+                    description: card
                   notification_url:
                     type: string
                     format: nullable
+                    description: notification_url
                   processing_mode:
                     type: string
                     format: nullable
+                    description: processing_mode
                   merchant_account_id:
                     type: string
                     format: nullable
+                    description: merchant_account_id
                   acquirer:
                     type: string
                     format: nullable
+                    description: acquirer
                   merchant_number:
                     type: string
                     format: nullable
+                    description: merchant_number
         '400':
           description: Error
           content:
@@ -1439,12 +1613,16 @@ paths:
                         total:
                           type: number
                           example: 17493
+                          description: total
                         limit:
                           type: number
                           example: 30
+                          description: limit
                         offset:
                           type: number
                           example: 0
+                          description: offset
+                      description: paging
                     results:
                       type: array
                       items:
@@ -1453,192 +1631,257 @@ paths:
                           id:
                             type: string
                             example: 1
+                            description: id
                           date_created:
                             type: string
                             example: 2017-08-31T11:26:38.000Z
+                            description: date_created
                           date_approved:
                             type: string
                             example: 2017-08-31T11:26:38.000Z
+                            description: date_approved
                           date_last_updated:
                             type: string
                             example: 2017-08-31T11:26:38.000Z
+                            description: date_last_updated
                           date_of_expiration:
                             type: string
                             format: nullable
+                            description: date_of_expiration
                           money_release_date:
                             type: string
                             example: 2017-09-14T11:26:38.000Z
+                            description: money_release_date
                           operation_type:
                             type: string
                             example: money_transfer
+                            description: operation_type
                           issuer_id:
                             type: string
                             format: nullable
+                            description: issuer_id
                           payment_method_id:
                             type: string
                             example: account_money
+                            description: payment_method_id
                           payment_type_id:
                             type: string
                             example: account_money
+                            description: payment_type_id
                           status:
                             type: string
                             example: approved
+                            description: status
                           status_detail:
                             type: string
                             example: accredited
+                            description: status_detail
                           currency_id:
                             type: string
                             example: $
+                            description: currency_id
                           description:
                             type: string
                             example: Pago Pizza
+                            description: description
                           live_mode:
                             type: boolean
+                            description: live_mode
                           sponsor_id:
                             type: string
                             format: nullable
+                            description: sponsor_id
                           authorization_code:
                             type: string
                             format: nullable
+                            description: authorization_code
                           money_release_schema:
                             type: string
                             format: nullable
+                            description: money_release_schema
                           counter_currency:
                             type: string
                             format: nullable
+                            description: counter_currency
                           collector_id:
                             type: string
                             example: 2
+                            description: collector_id
                           payer:
                             type: object
                             properties:
                               type:
                                 type: string
                                 example: registered
+                                description: type
                               id:
                                 type: string
                                 example: 1
+                                description: id
                               email:
                                 type: string
                                 example: afriend@gmail.com
+                                description: email
                               identification:
                                 type: object
                                 properties:
                                   type:
                                     type: string
                                     example: DNI
+                                    description: type
                                   number:
                                     type: string
                                     example: 12345678
+                                    description: number
+                                description: identification
                               phone:
                                 type: object
                                 properties:
                                   area_code:
                                     type: string
                                     format: nullable
+                                    description: area_code
                                   number:
                                     type: string
                                     example: 11123456789
+                                    description: number
                                   extension:
                                     type: string
                                     format: nullable
+                                    description: extension
+                                description: phone
                               first_name:
                                 type: string
                                 example: Name
+                                description: first_name
                               last_name:
                                 type: string
                                 example: LastName
+                                description: last_name
                               entity_type:
                                 type: string
                                 format: nullable
+                                description: entity_type
+                            description: payer
                           metadata:
                             type: object
                             properties: null
+                            description: metadata
                           additional_info:
                             type: object
                             properties: null
+                            description: additional_info
                           order:
                             type: object
                             properties: null
+                            description: order
                           external_reference:
                             type: string
                             format: nullable
+                            description: external_reference
                           transaction_amount:
                             type: number
                             example: 250
+                            description: transaction_amount
                           transaction_amount_refunded:
                             type: number
                             example: 0
+                            description: transaction_amount_refunded
                           coupon_amount:
                             type: number
                             example: 0
+                            description: coupon_amount
                           differential_pricing_id:
                             type: string
                             format: nullable
+                            description: differential_pricing_id
                           deduction_schema:
                             type: string
                             format: nullable
+                            description: deduction_schema
                           transaction_details:
                             type: object
                             properties:
                               net_received_amount:
                                 type: number
                                 example: 250
+                                description: net_received_amount
                               total_paid_amount:
                                 type: number
                                 example: 250
+                                description: total_paid_amount
                               overpaid_amount:
                                 type: number
                                 example: 0
+                                description: overpaid_amount
                               external_resource_url:
                                 type: string
                                 format: nullable
+                                description: external_resource_url
                               installment_amount:
                                 type: number
                                 example: 250
+                                description: installment_amount
                               financial_institution:
                                 type: string
                                 format: nullable
+                                description: financial_institution
                               payment_method_reference_id:
                                 type: string
                                 format: nullable
+                                description: payment_method_reference_id
                               payable_deferral_period:
                                 type: string
                                 format: nullable
+                                description: payable_deferral_period
                               acquirer_reference:
                                 type: string
                                 format: nullable
+                                description: acquirer_reference
+                            description: transaction_details
                           captured:
                             type: boolean
+                            description: captured
                           binary_mode:
                             type: boolean
+                            description: binary_mode
                           call_for_authorize_id:
                             type: string
                             format: nullable
+                            description: call_for_authorize_id
                           statement_descriptor:
                             type: string
                             format: nullable
+                            description: statement_descriptor
                           installments:
                             type: number
                             example: 1
+                            description: installments
                           card:
                             type: object
                             properties: null
+                            description: card
                           notification_url:
                             type: string
                             format: nullable
+                            description: notification_url
                           processing_mode:
                             type: string
                             format: nullable
+                            description: processing_mode
                           merchant_account_id:
                             type: string
                             format: nullable
+                            description: merchant_account_id
                           acquirer:
                             type: string
                             format: nullable
+                            description: acquirer
                           merchant_number:
                             type: string
                             format: nullable
+                            description: merchant_number
+                      description: results
         '400':
           description: Error
           content:
