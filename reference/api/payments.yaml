@@ -180,7 +180,8 @@ paths:
                   description: ID given by the merchant in their system.
                 installments:
                   type: number
-                  description: Selected quantity of installments. (Required)
+                  description: Selected quantity of installments.
+                  required: true
                 issuer_id:
                   type: string
                   description: Payment method issuer.
@@ -221,7 +222,8 @@ paths:
                       description: Identification of the associated payer.
                     email:
                       type: string
-                      description: Email. (Required)
+                      description: Email.
+                      required: true
                     identification:
                       type: object
                       description: Personal identification.
@@ -253,7 +255,8 @@ paths:
                       description: Last name of the associated payer.
                 payment_method_id:
                   type: string
-                  description: Payment method chosen to do the payment. (Required)
+                  description: Payment method chosen to do the payment.
+                  required: true
                 statement_descriptor:
                   type: string
                   description: >-
@@ -264,7 +267,8 @@ paths:
                   description: Card token ID. (Required for credit card)
                 transaction_amount:
                   type: number
-                  description: Product cost. (Required)
+                  description: Product cost.
+                  required: true
       responses:
         '200':
           content:
@@ -1213,7 +1217,8 @@ paths:
                   description: ID given by the merchant in their system.
                 installments:
                   type: number
-                  description: Selected quantity of installments. (Required)
+                  description: Selected quantity of installments.
+                  required: true
                 issuer_id:
                   type: string
                   description: Payment method issuer.
@@ -1254,7 +1259,8 @@ paths:
                       description: Identification of the associated payer.
                     email:
                       type: string
-                      description: Email. (Required)
+                      description: Email.
+                      required: true
                     identification:
                       type: object
                       description: Personal identification.
@@ -1286,7 +1292,8 @@ paths:
                       description: Last name of the associated payer.
                 payment_method_id:
                   type: string
-                  description: Payment method chosen to do the payment. (Required)
+                  description: Payment method chosen to do the payment.
+                  required: true
                 statement_descriptor:
                   type: string
                   description: >-
@@ -1297,7 +1304,8 @@ paths:
                   description: Card token ID. (Required for credit card)
                 transaction_amount:
                   type: number
-                  description: Product cost. (Required)
+                  description: Product cost.
+                  required: true
       responses:
         '400':
           description: Error

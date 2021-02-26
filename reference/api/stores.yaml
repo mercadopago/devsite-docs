@@ -131,7 +131,8 @@ paths:
                   description: User identifier.
                 name:
                   type: string
-                  description: Store name. (Required)
+                  description: Store name.
+                  required: true
                 business_hours:
                   type: string
                   description: >-
@@ -142,29 +143,36 @@ paths:
                   description: Unique identifier of the store defined by integrator system.
                 location:
                   type: object
-                  description: Store location. (Required)
+                  description: Store location.
+                  required: true
                   properties:
                     zip_code:
                       type: string
                       description: Zip code.
                     street_number:
                       type: number
-                      description: Number. (Required)
+                      description: Number. 
+                      required: true
                     street_name:
                       type: string
-                      description: Street name. (Required)
+                      description: Street name. 
+                      required: true
                     city_name:
                       type: string
-                      description: City.(Required)
+                      description: City.
+                      required: true
                     state_name:
                       type: object
-                      description: State. (Required)
+                      description: State. 
+                      required: true
                     latitude:
                       type: string
-                      description: Latitude. (Required)
+                      description: Latitude. 
+                      required: true
                     logitude:
                       type: string
-                      description: Longitude. (Required)
+                      description: Longitude. 
+                      required: true
                     reference:
                       type: string
                       description: Reference.
@@ -416,7 +424,8 @@ paths:
                   description: User identifier.
                 name:
                   type: string
-                  description: Store name. (Required)
+                  description: Store name.
+                  required: true
                 business_hours:
                   type: string
                   description: >-
@@ -424,29 +433,36 @@ paths:
                     to two opening and closing times per day are allowed.
                 location:
                   type: object
-                  description: Store location. (Required)
+                  description: Store location.
+                  required: true
                   properties:
                     zip_code:
                       type: string
                       description: Zip code.
                     street_number:
                       type: number
-                      description: Number. (Required)
+                      description: Number. 
+                      required: true
                     street_name:
                       type: string
-                      description: Street name. (Required)
+                      description: Street name. 
+                      required: true
                     city_name:
                       type: string
-                      description: City.(Required)
+                      description: City.
+                      required: true
                     state_name:
                       type: object
-                      description: State. (Required)
+                      description: State. 
+                      required: true
                     latitude:
                       type: string
-                      description: Latitude. (Required)
+                      description: Latitude. 
+                      required: true
                     logitude:
                       type: string
-                      description: Longitude. (Required)
+                      description: Longitude. 
+                      required: true
                     reference:
                       type: string
                       description: Reference.

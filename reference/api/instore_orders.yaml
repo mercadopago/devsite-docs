@@ -35,17 +35,19 @@ paths:
               properties:
                 user_id:
                   type: string
-                  description: User identifier. (Required)
+                  description: User identifier.
+                  required: true
                 external_id:
                   type: string
                   description: >-
                     Unique identifier of the Point of Sale defined by integrator
-                    system. (Required)
+                    system.
+                  required: true
                 external_reference:
                   type: string
                   description: >-
-                    Reference you can synchronize with your sale system. 
-                    (Required)
+                    Reference you can synchronize with your sale system.
+                  required: true
                 notification_url:
                   type: string
                   description: >-
@@ -58,26 +60,31 @@ paths:
                   type: object
                   description: >-
                     Information on the products involved in the order.
-                    (Required)
+                  required: true
                   properties:
                     id:
                       type: string
                       description: Item id.
                     title:
                       type: string
-                      description: Item title. (Required)
+                      description: Item title.
+                      required: true
                     currency_id:
                       type: string
-                      description: Currency identifier in ISO_4217 format. (Required)
+                      description: Currency identifier in ISO_4217 format.
+                      required: true
                     unit_price:
                       type: number
-                      description: Unit price of the item (maximum 2 decimals).  (Required)
+                      description: Unit price of the item (maximum 2 decimals). 
+                      required: true
                     quantity:
                       type: number
-                      description: Item quantity. (Required)
+                      description: Item quantity.
+                      required: true
                     description:
                       type: string
-                      description: Item description. (Required)
+                      description: Item description.
+                      required: true
                     picture_url:
                       type: string
                       description: Item image URL.
