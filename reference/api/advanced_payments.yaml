@@ -388,11 +388,11 @@ paths:
                   id:
                     type: number
                     example: 111111111
-                    description: id
+                    description: Payment id
                   status:
                     type: string
                     example: approved
-                    description: status
+                    description: Paymentstatus
                   payments:
                     type: array
                     items:
@@ -401,55 +401,55 @@ paths:
                         id:
                           type: number
                           example: 222222222
-                          description: id
+                          description: Payment id
                         status:
                           type: string
                           example: approved
-                          description: status
+                          description: Payment status
                         status_detail:
                           type: string
                           example: accredited
-                          description: status_detail
+                          description: Payment status detail
                         payment_type_id:
                           type: string
                           example: credit_card
-                          description: payment_type_id
+                          description: Payment type id
                         payment_method_id:
                           type: string
                           example: visa
-                          description: payment_method_id
+                          description: Payment method id
                         token:
                           type: string
                           example: 98f6a9s7dfyihfasfdhasdjfhñasdfh
-                          description: token
+                          description: Payment token
                         transaction_amount:
                           type: number
                           example: 100
-                          description: transaction_amount
+                          description: Payment transaction amount
                         installments:
                           type: number
                           example: 1
-                          description: installments
+                          description: Payment installments
                         processing_mode:
                           type: string
                           example: aggregator
-                          description: processing_mode
+                          description: Payment processing_mode
                         description:
                           type: string
                           example: Payment description
-                          description: description
+                          description: Payment description
                         capture:
                           type: boolean
-                          description: capture
+                          description: Captured?
                         external_reference:
                           type: string
                           example: ext_ref_payment
-                          description: external_reference
+                          description: Payment external_reference
                         statement_descriptor:
                           type: string
                           example: MKT-STATEMENT-DESCRIPTION
-                          description: statement_descriptor
-                    description: payments
+                          description: Payment statement_descriptor
+                    description: Payments
                   disbursements:
                     type: array
                     items:
@@ -458,27 +458,27 @@ paths:
                         id:
                           type: number
                           example: 33333333
-                          description: id
+                          description: disbursements id
                         amount:
                           type: number
                           example: 40
-                          description: amount
+                          description: disbursements amount
                         external_reference:
                           type: string
                           example: ext_ref_disb_1
-                          description: external_reference
+                          description: disbursements external_reference
                         collector_id:
                           type: number
                           example: 31313
-                          description: collector_id
+                          description: disbursements collector_id
                         application_fee:
                           type: number
                           example: 5
-                          description: application_fee
+                          description: disbursements application_fee
                         money_release_days:
                           type: number
                           example: 10
-                          description: money_release_days
+                          description: disbursements money_release_days
                         additional_info:
                           type: object
                           properties:
@@ -1715,6 +1715,476 @@ paths:
                   type: number
                   description: Advanced Payment Identifier.
       responses:
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400004--Invalid-application-
+                      - 400005--The-application-is-required-
+                      - 400006--Invalid-date-of-release-for-the-Disbursement-
+                      - 400007--Invalid-date-of-release-for-the-Disbursement-
+                      - 400013--Invalid-email-address-
+                      - 400014--Invalid-number-of-payments-
+                      - >-
+                        400015--Payer-ID-is-required-for-payments-with-money-in-the-account-
+                      - 400016--Invalid-payment-type-
+                      - 400017--The-transaction-amount-is-required-
+                      - 400018--Invalid-amount-
+                      - 400019--The-payment-method-is-required-
+                      - 400020--The-payment-type-is-required-
+                      - 400021--The-amount-format-is-invalid-
+                      - 400022--Invalid-processing-method-
+                      - 400023--The-payer-type-is-required-
+                      - 400024--The-payer-s-name-is-required-
+                      - 400025--The-payer-s-last-name-is-required-
+                      - 400026--The-payer-s-identification-type-is-required-
+                      - 400027--The-payer-s-identification-number-is-required-
+                      - 400028--The-expiration-date-is-required-
+                      - 400029--The-payment-token-is-required-
+                      - 400030--The-installments-are-required-
+                      - 400031--The-amount-of-disbursements-is-required-
+                      - 400032--The-collector-ID-is-required-
+                      - 400033--Invalid-Marketplace-commission-
+                      - 400034--Invalid-disbursement-amount-
+                      - 400035--The-field-money-release-date-is-invalid-
+                      - >-
+                        400036--The-Marketplace-does-not-have-permissions-on-the-payer-
+                      - 400037--The-collector-was-not-found-
+                      - 400039--Invalid-request-
+                      - 400040--Invalid-status-
+                      - 400041--Invalid-start-date-
+                      - 400042--Invalid-end-date-
+                      - 400043--Invalid-email-address-
+                      - 400044--Invalid-payer-ID-
+                      - 400045--Invalid-collector-ID-
+                      - 400046--The-field-external-reference-is-invalid-
+                      - 400047--Some-parameters-of-the-search-are-invalid-
+                      - 400048--Invalid-ID-
+                      - 400049--Invalid-last-modification-date-
+                      - 400051--The-field-money-release-date-is-required-
+                      - 400052--The-processing-mode-is-required-
+                      - 400053--Invalid-content-
+                      - >-
+                        400054--The-Marketplace-does-not-have-permissions-on-the-collector-
+                      - 400055--The-field-external-reference-is-required-
+                      - 400056--The-field-money-release-days-is-invalid-
+                      - >-
+                        400057--The-fields-collector-id-and-external-reference-are-duplicated-
+                      - 400058--Invalid-idempodency-key-
+        '401':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401000--Invalid-access-token-
+                      - 401002--Invalid-access-token-
+                      - 401003--Invalid-device-token-
+        '404':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 404001--The-Disbursement-was-not-found-
+                      - 404002--The-Advanced-Payment-was-not-found-
+                      - 404003--The-Payer-was-not-found-
+        '406':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 406001--Error-in-the-payments-API-
+  /v1/advanced_payments/{id}/search:
+    get:
+      tags:
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
+      summary: Search a payment
+      description: Search a payment
+      parameters:
+        - name: id
+          in: path
+          description: Payment's Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: limit
+          in: query
+          description: Qtd to be returned
+          required: true
+          schema:
+            type: string
+            example: 10
+        - name: offset
+          in: query
+          description: Offset
+          required: true
+          schema:
+            type: string
+            example: 0
+        - name: range
+          in: query
+          description: Range
+          required: true
+          schema:
+            type: string
+            example: date
+        - name: begin_date
+          in: query
+          description: Begin date
+          required: true
+          schema:
+            type: string
+            example: '2018-02-01'
+        - name: end_date
+          in: query
+          description: End Date
+          required: true
+          schema:
+            type: string
+            example: '2018-12-02'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  paging:
+                    type: object
+                    properties:
+                      total:
+                        type: number
+                        example: 1
+                        description: total
+                      limit:
+                        type: number
+                        example: 10
+                        description: limit
+                      offset:
+                        type: number
+                        example: 0
+                        description: offset
+                    description: paging
+                  results:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: number
+                          example: 111111111
+                          description: id
+                        status:
+                          type: string
+                          example: approved
+                          description: status
+                        payments:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              id:
+                                type: number
+                                example: 222222222
+                                description: id
+                              status:
+                                type: string
+                                example: approved
+                                description: status
+                              status_detail:
+                                type: string
+                                example: accredited
+                                description: status_detail
+                              payment_type_id:
+                                type: string
+                                example: credit_card
+                                description: payment_type_id
+                              payment_method_id:
+                                type: string
+                                example: visa
+                                description: payment_method_id
+                              token:
+                                type: string
+                                example: 98f6a9s7dfyihfasfdhasdjfhñasdfh
+                                description: token
+                              transaction_amount:
+                                type: number
+                                example: 100
+                                description: transaction_amount
+                              installments:
+                                type: number
+                                example: 1
+                                description: installments
+                              processing_mode:
+                                type: string
+                                example: aggregator
+                                description: processing_mode
+                              description:
+                                type: string
+                                example: Payment description
+                                description: description
+                              capture:
+                                type: boolean
+                                description: capture
+                              external_reference:
+                                type: string
+                                example: ext_ref_payment
+                                description: external_reference
+                              statement_descriptor:
+                                type: string
+                                example: MKT-STATEMENT-DESCRIPTION
+                                description: statement_descriptor
+                          description: payments
+                        disbursements:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              id:
+                                type: number
+                                example: 33333333
+                                description: id
+                              amount:
+                                type: number
+                                example: 40
+                                description: amount
+                              external_reference:
+                                type: string
+                                example: ext_ref_disb_1
+                                description: external_reference
+                              collector_id:
+                                type: number
+                                example: 31313
+                                description: collector_id
+                              application_fee:
+                                type: number
+                                example: 5
+                                description: application_fee
+                              money_release_days:
+                                type: number
+                                example: 10
+                                description: money_release_days
+                              additional_info:
+                                type: object
+                                properties:
+                                  type: array
+                                  items:
+                                    type: object
+                                    properties:
+                                      id:
+                                        type: string
+                                        example: item-ID-1234
+                                        description: id
+                                      title:
+                                        type: string
+                                        example: Title of what you are paying for
+                                        description: title
+                                      picture_url:
+                                        type: string
+                                        example: https://www.mercadopago.com/logomp3.gif
+                                        description: picture_url
+                                      description:
+                                        type: string
+                                        example: Item description
+                                        description: description
+                                      category_id:
+                                        type: string
+                                        example: art
+                                        description: category_id
+                                      quantity:
+                                        type: number
+                                        example: 1
+                                        description: quantity
+                                      unit_price:
+                                        type: number
+                                        example: 100
+                                        description: unit_price
+                                    description: items
+                                  shipments:
+                                    type: object
+                                    properties:
+                                      receiver_address:
+                                        type: object
+                                        properties:
+                                          zip_code:
+                                            type: string
+                                            example: 5700
+                                            description: zip_code
+                                          street_name:
+                                            type: string
+                                            example: Street
+                                            description: street_name
+                                          street_number:
+                                            type: number
+                                            example: 123
+                                            description: street_number
+                                          floor:
+                                            type: number
+                                            example: 4
+                                            description: floor
+                                          apartment:
+                                            type: string
+                                            example: C
+                                            description: apartment
+                                        description: receiver_address
+                                    description: shipments
+                                description: additional_info
+                          description: disbursements
+                        payer:
+                          type: object
+                          properties:
+                            email:
+                              type: string
+                              example: test@user.com
+                              description: email
+                            first_name:
+                              type: string
+                              example: Test
+                              description: first_name
+                            last_name:
+                              type: string
+                              example: Test
+                              description: last_name
+                            address:
+                              type: object
+                              properties:
+                                zip_code:
+                                  type: string
+                                  example: 1111
+                                  description: zip_code
+                                street_name:
+                                  type: string
+                                  example: Calle
+                                  description: street_name
+                                street_numer:
+                                  type: string
+                                  example: 120
+                                  description: street_numer
+                              description: address
+                            identification:
+                              type: object
+                              properties:
+                                type:
+                                  type: string
+                                  example: DNI
+                                  description: type
+                                number:
+                                  type: string
+                                  example: 88999000
+                                  description: number
+                              description: identification
+                          description: payer
+                        external_reference:
+                          type: string
+                          example: ext_ref_adv_paym
+                          description: external_reference
+                        description:
+                          type: string
+                          example: Advanced payment description
+                          description: description
+                        binary_mode:
+                          type: boolean
+                          description: binary_mode
+                        date_created:
+                          type: string
+                          example: 2018-06-27T13:34:20.518Z
+                          description: date_created
+                        date_last_updated:
+                          type: string
+                          example: 2018-06-27T13:34:20.518Z
+                          description: date_last_updated
+                        metadata:
+                          type: object
+                          properties: null
+                          description: metadata
+                        additional_info:
+                          type: object
+                          properties:
+                            type: array
+                            items:
+                              type: object
+                              properties:
+                                id:
+                                  type: string
+                                  example: item-ID-7356
+                                  description: id
+                                title:
+                                  type: string
+                                  example: Title of what you are paying for
+                                  description: title
+                                picture_url:
+                                  type: string
+                                  example: https://www.mercadopago.com/logomp3.gif
+                                  description: picture_url
+                                description:
+                                  type: string
+                                  example: Item description
+                                  description: description
+                                category_id:
+                                  type: string
+                                  example: art
+                                  description: category_id
+                                quantity:
+                                  type: number
+                                  example: 1
+                                  description: quantity
+                                unit_price:
+                                  type: number
+                                  example: 100
+                                  description: unit_price
+                              description: items
+                            shipments:
+                              type: object
+                              properties:
+                                receiver_address:
+                                  type: object
+                                  properties:
+                                    zip_code:
+                                      type: string
+                                      example: 5700
+                                      description: zip_code
+                                    street_name:
+                                      type: string
+                                      example: Street
+                                      description: street_name
+                                    street_number:
+                                      type: number
+                                      example: 123
+                                      description: street_number
+                                    floor:
+                                      type: number
+                                      example: 4
+                                      description: floor
+                                    apartment:
+                                      type: string
+                                      example: C
+                                      description: apartment
+                                  description: receiver_address
+                              description: shipments
+                          description: additional_info
+                    description: results
         '400':
           description: Error
           content:
