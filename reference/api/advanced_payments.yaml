@@ -1203,6 +1203,9 @@ paths:
                       - 406001--Error-in-the-payments-API-
   /v1/advanced_payments/{id}/refunds:
     post:
+      tags:
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
       summary: Refund a Payment
       description: Refund a Payment
       requestBody:
@@ -1316,6 +1319,9 @@ paths:
                       - 406001--Error-in-the-payments-API-
   /v1/advanced_payments/{id}/disburses:
     post:
+      tags:
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
       summary: Change release date of a Disbursement
       description: Change release date of a Disbursement
       requestBody:
@@ -1429,6 +1435,9 @@ paths:
                       - 406001--Error-in-the-payments-API-
   /v1/advanced_payments/{id}/disbursements/{disbursement_id}/refunds:
     post:
+      tags:
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
       summary: Parcial refund of an Advanced Payment
       description: Parcial refund of an Advanced Payment
       requestBody:
@@ -1542,6 +1551,9 @@ paths:
                       - 406001--Error-in-the-payments-API-
   /v1/advanced_payments/{id}/disbursements/{disbursement_id}/disburses:
     post:
+      tags:
+        - $ref: '#/tags/qr-code/description'
+        - $ref: '#/tags/link-de-pago/description'
       summary: Change release date os all Disbursements
       description: Change release date os all Disbursements
       requestBody:
