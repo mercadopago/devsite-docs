@@ -29,8 +29,6 @@ Se o pagamento for recusado, ele é atualizado para uma nova data de cobrança a
 
 Por padrão, o pagamento é tentado novamente dentro de uma janela de 10 dias. Caso a parcela tenha uma data de vencimento, a janela de tempo é ajustada a essa data e mantém a lógica de 4 tentativas.
 
-Após 3 parcelas com pagamentos recusados a assinatura será automaticamente cancelada e a conta integrada será notificada do cancelamento da assinatura por email.
-
 ------------
 
 ----[mla]----
@@ -51,16 +49,16 @@ Se o pagamento for recusado, ele é atualizado para uma nova data de cobrança a
 
 Por padrão, o pagamento é tentado novamente dentro de uma janela de 10 dias. Caso a parcela tenha uma data de vencimento, a janela de tempo é ajustada a essa data e mantém a lógica de 4 tentativas.
 
-Após 3 parcelas com pagamentos recusados a assinatura será automaticamente cancelada e a conta integrada será notificada do cancelamento da assinatura por email.
-
 ## Pagamentos em processamento
 
 Se uma parcela está com o status `waiting for gateway` e quando o pagamento é resolvido resulta em rejeitado e a data de vencimento é cumprida, a parcela passará automaticamente a processada com o status `processed`. Caso contrário, entrará no esquema de nova tentativa.
 
-
 ------------
 
 Caso a parcela não possa ser cobrada na quarta tentativa, ela estará automaticamente no status `processed` associada a um pagamento recusado.
+
+Após 3 parcelas com pagamentos recusados a assinatura será automaticamente cancelada e a conta integrada será notificada do cancelamento da assinatura por email.
+
 
 > NOTE
 > 

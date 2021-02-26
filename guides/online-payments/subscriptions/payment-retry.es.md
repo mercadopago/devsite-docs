@@ -29,8 +29,6 @@ Si el pago resulta rechazado, se actualiza a una nueva fecha de cobro sumando 1 
 
 Por defecto se reintenta dentro de una ventana de 10 días. En caso de que la cuota tenga fecha de expiración, la ventana de tiempo se ajusta a esa fecha y mantiene la lógica de 4 reintentos.
 
-Luego de 3 cuotas con pagos rechazados se da de baja automáticamente la suscripción y la cuenta integrada será notificada del cancelamiento de la suscripción por email.
-
 ------------
 
 ----[mla]----
@@ -51,8 +49,6 @@ Si el pago resulta rechazado, se actualiza a una nueva fecha de cobro sumando 1 
 
 Por defecto se reintenta dentro de una ventana de 10 días. En caso de que la cuota tenga fecha de expiración, la ventana de tiempo se ajusta a esa fecha y mantiene la lógica de 4 reintentos.
 
-Luego de 3 cuotas con pagos rechazados se da de baja automáticamente la suscripción y la cuenta integrada será notificada del cancelamiento de la suscripción por email.
-
 ## Pagos en proceso
 
 Si una cuota se encuentra en el estado `waiting for gateway` y cuando se resuelve el pago resulta rechazada y se cumplió la fecha de expiración, la cuota automáticamente pasará a procesada con el estado `processed`. Caso contrario, entrará al esquema de reintento.
@@ -60,6 +56,9 @@ Si una cuota se encuentra en el estado `waiting for gateway` y cuando se resuelv
 ------------
 
 En el caso de que no se pueda cobrar la cuota en el cuarto reintento, la cuota automáticamente quedará en el estado `processed` asociada a un pago rechazado.
+
+Luego de 3 cuotas con pagos rechazados se da de baja automáticamente la suscripción y la cuenta integrada será notificada del cancelamiento de la suscripción por email.
+
 
 > NOTE
 > 

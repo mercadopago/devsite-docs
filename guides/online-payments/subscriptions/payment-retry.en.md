@@ -29,8 +29,6 @@ If the payment is declined, it is updated to a new collection date by adding 1 o
 
 By default the reattempt is within a 10 day window. In case the installment has an expiration date, the time window is adjusted to that date and maintains the logic of 4 reattempt.
 
-After 3 installments with rejected payments, the subscription is automatically canceled and the integrated account will be notified of the cancellation of the subscription by email.
-
 ------------
 
 ----[mla]----
@@ -51,15 +49,16 @@ If the payment is declined, it is updated to a new collection date by adding 1 o
 
 By default the reattempt is within a 10 day window. In case the installment has an expiration date, the time window is adjusted to that date and maintains the logic of 4 reattempt.
 
-After 3 installments with rejected payments, the subscription is automatically canceled and the integrated account will be notified of the cancellation of the subscription by email.
-
 ## Payments in process
 
 If an installment is in `waiting for gateway` status and, when the payment is resolved, it appears as declined, and the expiration date is met, the installment will automatically appear as processed with the `processed` status. Otherwise, it will enter the reattempt scheme.
 
 ------------
 
-the installment cannot be collected on the fourth reattempt, it will automatically remain in `processed` status, associated with a declined payment.
+In the case that the installment cannot be collected on the fourth reattempt, it will automatically remain in `processed` status, associated with a declined payment.
+
+After 3 installments with rejected payments, the subscription is automatically canceled and the integrated account will be notified of the cancellation of the subscription by email.
+
 
 > NOTE
 > 
