@@ -45,7 +45,7 @@ Incluindo esse parâmetro, a URL de redirecionamento ficaria da seguinte forma:
 
 Agora você receberá o código de autorização e o identificador seguro na URL de retorno especificada:
 
-`http://www.URL_de_retorno.com?code=AUTHORIZATION_CODE&id=RANDOM_ID`
+`https://www.URL_de_retorno.com?code=AUTHORIZATION_CODE&id=RANDOM_ID`
 
 > Não envie informações confidenciais ou credenciais da conta Mercado Pago.
 
