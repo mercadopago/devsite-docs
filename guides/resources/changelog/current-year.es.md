@@ -7,7 +7,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Marzo 2021
 
-### 04 de Marzo
+### 4 de marzo
 
 > CHANGELOG
 >

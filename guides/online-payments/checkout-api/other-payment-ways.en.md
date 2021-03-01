@@ -2907,7 +2907,7 @@ curl -X GET \
 
 <br>
 
-The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method and bank_transfer data for bank wire transfers.
+The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method and `bank_transfer` refer to bank wire transfers.
 
 Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_payment_methods).
 
@@ -3056,9 +3056,9 @@ window.Mercadopago.getIdentificationTypes();
 >
 > h2
 >
-> Recibir pagos con boleto bancario o en lotéricas
+> Receive payments with boleto or lotérica
 
-Luego de [capturar los datos](#bookmark_data_capture_for_payment) con el formulario, to receive payments with boleto or lotérica, just send your customer's e-mail and document, amount and payment method.
+After [capturing the data for payment](#bookmark_data_capture_for_payment) with the form, to receive payments with boleto or lotérica, just send your customer's e-mail and document, amount and payment method.
 
 Once the request –with all the collected information– is in your backend, it should be submitted to Mercado Pago through our APIs.
 
@@ -3301,13 +3301,13 @@ You can receive immediate payment with Pix from any bank or digital wallet using
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prerequisite
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get a Pix key
 
-To start, register Pix key with the seller's account. This is unique data for account identification to use the payment method functionality. 
+To start, you will need a Pix key registered in the seller's account. This is unique data for account identification to use the payment method functionality. 
 
 [Learn how to create a Pix key](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/17843)
 
 ### Payment data 
 
-After [data capture](#bookmark_data_capture_for_payment) in the form, you can get Pix payments.  Send the buyer's email address, document type and number, method of payment and amount.
+After [capturing the data for payment](#bookmark_data_capture_for_payment) in the form, to start getting Pix payments you will need to dend the buyer's email address, document type and number, method of payment and amount.
 
 [[[
 ```php
@@ -3505,26 +3505,26 @@ curl -X POST \
 
 <br>
 
-The response will show the pending payment status and all the information needed to show the buyer.
+The response will show the pending payment status and all the information needed to show to the buyer.
 
-The `transaction_data` twill provide data to make payment available via QR code. These are the attributes: 
+The `transaction_data` will provide data to make the payment available via QR code. These are the attributes: 
 
 | Attributes| Description |
 | --- | --- |
-| `qr_code_base64` | Data for QR render.|
-| `qr_code` | Data to make payment code for copy&pastes.|
+| `qr_code_base64` | Data for QR code render.|
+| `qr_code` | Data to make payment code available for copy&paste.|
 
 ### Data to make payment
 
-To make the payment, render QR to show it. You can also add an option to copy&paste payment code to make the transaction via web home banking. 
+To make the payment, render the QR code to show it. You can also add an option to copy&paste payment code to make the transaction via web home banking. 
 
-Add `qr_code_base64` to show QR code. For example, you con render it like this:
+Add `qr_code_base64` to show the QR code. For example, you can render it like this:
 
 ```html
 <img src={`data:image/jpeg;base64,${qr_code_base64}`/>
 ```
 
-To show the copy&paste payment code, add `qr_code` like this:
+To show the payment code for copy&paste, you can add `qr_code` like this:
 
 ```html
 <label for="cvv">Copiar Hash:</label>
@@ -3600,7 +3600,7 @@ The deadline for approval of the boleto is up to 48 working hours. Therefore, we
 >
 > If the boleto is paid after the expiration date, the amount will be refunded to the payer's Mercado Pago account.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pix payment
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pix payments
 
 By default, Pix payments expire in 24 hours. You can change this field  `date_of_expiration` ewhen creating the payment. The set date should be between 1 and 30 days from issue date.
 
@@ -3614,35 +3614,35 @@ $payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
 ```
 ```node
 ===
-La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ```
 ```java
 ===
-La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
 ```
 ```ruby
 ===
-La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ```
 ```csharp
 ===
-La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
 ```
 ```curl
 ===
-La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 "date_of_expiration": "2020-05-30T23:59:59.000-04:00",

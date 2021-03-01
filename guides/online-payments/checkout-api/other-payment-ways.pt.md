@@ -2923,7 +2923,7 @@ curl -X GET \
 
 <br>
 
-O resultado será uma lista com os meios de pagamento e suas propriedades. Por exemplo, os meios de pagamento do `payment_type_id` que tenham como valor `ticket` se referem aos meios de pagamento em dinheiro e as de bank_transfer para depósitos bancários.
+O resultado será uma lista com os meios de pagamento e suas propriedades. Por exemplo, os meios de pagamento do `payment_type_id` que tenham como valor `ticket` se referem aos meios de pagamento em dinheiro e as de `bank_transfer` para depósitos bancários.
 
 Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por isso você precisa filtrar as formas de pagamento que queira oferecer de acordo com a [lista de pagamentos disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_meios_de_pagamento).
 
@@ -3072,7 +3072,7 @@ window.Mercadopago.getIdentificationTypes();
 >
 > h2
 >
-> Recibir pagos con boleto bancario o en lotéricas
+> Receber pagamentos com boleto bancário ou em lotéricas
 
 Luego de [capturar los datos](#bookmark_capture_os_dados_para_pagamento) con el formulario, para receber pagamentos em boleto ou pagamento em lotérica envie o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
 
@@ -3571,42 +3571,42 @@ A data de expiração padrão para pagamentos de boleto é de 3 dias. Opcionalme
 [[[
 ```php
 ===
-La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 $payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
 ```
 ```node
 ===
-La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ```
 ```java
 ===
-La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
 ```
 ```ruby
 ===
-La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ```
 ```csharp
 ===
-La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
 ```
 ```curl
 ===
-La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 "date_of_expiration": "2020-05-30T23:59:59.000-04:00",
@@ -3628,42 +3628,42 @@ Por default, a data de vencimento para os pagamentos com Pix é de 24 horas. Se 
 [[[
 ```php
 ===
-La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 $payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
 ```
 ```node
 ===
-La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ```
 ```java
 ===
-La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
 ```
 ```ruby
 ===
-La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ```
 ```csharp
 ===
-La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
 ```
 ```curl
 ===
-La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 "date_of_expiration": "2020-05-30T23:59:59.000-04:00",

@@ -3071,7 +3071,7 @@ window.Mercadopago.getIdentificationTypes();
 >
 > Recibir pagos con boleto bancario o en lotéricas
 
-Luego de [capturar los datos](#bookmark_captura_los_datos_para_el_pago) con el formulario, para recibir pagos con boleto o pagos en lotérica solo  tienes que enviar el e-mail y documento de tu cliente y el método de pago y detalle del monto.
+Luego de [capturar los datos](#bookmark_captura_los_datos_para_el_pago) con el formulario, para recibir pagos con boleto o pagos en lotérica solo tienes que enviar el e-mail y documento de tu cliente junto con el método de pago y detalle del monto.
 
 Ya en tu backend con toda la información recolectada, es momento de enviar la solicitud a Mercado Pago a través de nuestras APIs.
 
@@ -3319,7 +3319,7 @@ Ofrece la opción de recibir pagos al instante con Pix desde cualquier banco o b
 
 Para comenzar, debes tener registrada una llave Pix en la cuenta del vendedor. Este dato es único, sirve para identificar tu cuenta y te permitirá utilizar las funcionalidades del medio de pago.  
 
-[Conoce cómo crear una llave Pix](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/17843)
+[Conoce cómo crear una llave Pix.](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/17843)
 
 ### Datos para el pago 
 

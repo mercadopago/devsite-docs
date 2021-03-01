@@ -7,7 +7,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Marzo 2021
 
-### 04 de Marzo
+### 4 de março
 
 > CHANGELOG
 >
@@ -17,7 +17,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 >
 > PRODUCT: CHECKOUT TRANSPARENTE 
 
-Agora, você pode adicionar Pix como meio de pagamento para começar a receber dinheiro no instante, todos os dias e de qualquer banco ou carteira. Você só deve ter sua chave e adicionar Pix no seu formulário de pagamento
+Agora, você pode adicionar Pix como meio de pagamento para começar a receber dinheiro no instante, todos os dias e de qualquer banco ou carteira. Você só deve ter sua chave e adicionar Pix no seu formulário de pagamento.
 
 [Começar a receber pagamentos com Pix](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_recibir_pagos_con_pix)
 ------------
