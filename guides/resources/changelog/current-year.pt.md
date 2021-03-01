@@ -5,7 +5,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 ---
 ## Março 2021
 
-### March 4th
+### 4 de março
 
 > CHANGELOG
 >
