@@ -3,7 +3,7 @@
 Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones de Mercado Pago.
 
 ---
-## March 2021
+## Marzo 2021
 
 ### March 4th
 
