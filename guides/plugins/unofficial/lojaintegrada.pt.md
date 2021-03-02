@@ -52,7 +52,7 @@ Você pode consultar e configurar as [taxas e prazos](https://www.mercadopago.co
 
 ### Checkout Transparente
 
-É o checkout em que seu **cliente finaliza o pagamento no ambiente da sua loja**, sem ser redirecionado para outro site.
+Este produto permite ao **cliente efetuar o pagamento no ambiente da loja**, sem ser redirecionado para outro site.
 
 1. Acesse as [configurações de formas de pagamento](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) no menu da Loja Integrada e clique em “Mercado Pago”.
 2. No item “Checkout Transparente” alterar de “Desativado” para “Ativado”.
@@ -60,7 +60,7 @@ Você pode consultar e configurar as [taxas e prazos](https://www.mercadopago.co
 
 ### Checkout Pro
 
-O Checkout Pro é a **integração que te permite cobrar no ambiente do Mercado Pago**, contando com as **formas de pagamentos adicionais** como: Pix, boleto parcelado, débito virtual da caixa, carteira digital do Mercado Pago.
+O Checkout Pro é a **integração que te permite cobrar no ambiente do Mercado Pago**, contando com as **formas de pagamentos adicionais** como: Pix, boleto parcelado, débito virtual da caixa e carteira digital do Mercado Pago.
 
 > Conheça mais sobre as opções de pagamentos que o [Checkout Pro oferece](https://conteudo.mercadopago.com.br/o-que-e-o-checkout-mercado-pago).
 
