@@ -3550,12 +3550,12 @@ El valor `transaction_data` te brindará los datos para disponibilizar la opció
             "type": "PIX",
             "sub_type": null,
             "application_data": {
-              "name": "NAME_SDK",    
-              "version": "VERSION_NUMBER",
-                  },
-              "transaction_data": {
-              "qr_code_base64": "iVBORw0KGgoAAAANSUhEUgAABRQAAAUUCAYAAACu5p7oAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAIABJREFUeJzs2luO3LiWQNFmI+Y/Zd6vRt36KGNXi7ZOBtcagHD4kNLeiLX33v8DAAAAABD879sDAAAAAAA/h6AIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCAAAAAJmgCAAAAABkgiIAAAAAkAmKAAAAAEAmKAIAAAAAmaAIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCA...",
-              "qr_code": "00020126600014br.gov.bcb.pix0117test@testuser.com0217datos adicionales520400005303986540510.005802BR5913Maria Silva6008Brasilia62070503***6304E2CA",
+                "name": "NAME_SDK",    
+                "version": "VERSION_NUMBER",
+                    },
+                "transaction_data": {
+                "qr_code_base64": "iVBORw0KGgoAAAANSUhEUgAABRQAAAUUCAYAAACu5p7oAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAIABJREFUeJzs2luO3LiWQNFmI+Y/Zd6vRt36KGNXi7ZOBtcagHD4kNLeiLX33v8DAAAAABD879sDAAAAAAA/h6AIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCAAAAAJmgCAAAAABkgiIAAAAAkAmKAAAAAEAmKAIAAAAAmaAIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCA...",
+                "qr_code": "00020126600014br.gov.bcb.pix0117test@testuser.com0217datos adicionales520400005303986540510.005802BR5913Maria Silva6008Brasilia62070503***6304E2CA",
               }
         }
     }
@@ -3576,10 +3576,9 @@ Tienes que agregar el `qr_code_base64` para poder mostrar el código QR. Por eje
 Para mostrar la opción que te permitirá copiar y pegar el código de pago, puedes sumar el `qr_code` de esta forma:
 
 ```html
-<label for="cvv">Copiar Hash:</label>
+<label for="copiar">Copiar Hash:</label>
 <input type="text" id="copiar"  value={qr_code}/>
 ```
-
 
 > NOTE
 >
