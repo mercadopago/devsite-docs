@@ -9,7 +9,7 @@ sites_supported:
 
 Al automatizar la recurrencia de tus cobros, se crean pagos autorizados que tendrán una fecha de débito configurada en base a la periodicidad que se definió en la suscripción. 
 
-La primera cuota se cobra hasta el periodo aproximado de una hora de suscribirse. 
+Luego de suscribirse, el pago de la la primera cuota se acreditará en 1 hora.
 
 ## Estados de pago
 
