@@ -635,7 +635,6 @@ preference.save();
 ===
 Adicione o código na preferência e substitua o valor pixel_id pelo seu identificador.
 ===
-List<Track> tracks = new List<Track>();
 // Associe seu pixel do Facebook
 var tracks = new List<PreferenceTrackRequest>
 {

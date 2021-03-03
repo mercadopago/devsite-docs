@@ -341,8 +341,7 @@ Primeiro, obtenha a lista de cartões guardados para que seu cliente possa escol
 ```csharp
 
 var customerClient = new CustomerClient();
-var customer = await customerClient.GetAsync("CUSTOMER_ID");
-IList<CustomerCard> cards = customer.Cards;
+ResourcesList<CustomerCard> results = await customerClient.ListCardsAsync("CUSTOMER_ID");
 
 ```
 ```curl

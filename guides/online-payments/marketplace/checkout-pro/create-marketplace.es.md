@@ -251,6 +251,31 @@ preference.notification_url = "http://urlmarketplace.com/notification_ipn"
 preference.save
 
 ```
+```csharp
+
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Blue shirt",
+            Quantity = 10,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = [FAKER][COMMERCE][PRICE]m,
+        },
+    },
+    Payer = new PreferencePayerRequest
+    {
+        Email = "john@yourdomain.com",
+    },
+    MarketplaceFee = 2.56m,
+    NotificationUrl = "http://urlmarketplace.com/notification_ipn",
+};
+var client = new PreferenceClient();
+var preference = await client.CreateAsync(request);
+
+```
 ]]]
 
 

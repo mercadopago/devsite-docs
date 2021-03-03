@@ -654,7 +654,6 @@ preference.save();
 ===
 Agrega el código en la preferencia y reemplaza el valor PIXEL_ID por tu identificador.
 ===
-List<Track> tracks = new List<Track>();
 // Asocia tu píxel de Facebook
 var tracks = new List<PreferenceTrackRequest>
 {

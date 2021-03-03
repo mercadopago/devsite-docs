@@ -468,10 +468,8 @@ var paymentRequest = new PaymentCreateRequest
     {
         Email = Request["email"],
         Identification = new IdentificationRequest
-        {
-            ----[mla, mlb, mlu, mlc, mpe, mco]----
-            Type = Request["docType"],
-            ------------
+        {----[mla, mlb, mlu, mlc, mpe, mco]----
+            Type = Request["docType"],------------
             Number = Request["docNumber"],
         },
     },
