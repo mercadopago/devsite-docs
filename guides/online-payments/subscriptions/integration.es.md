@@ -223,7 +223,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 > 
 > Pago de validación
 > 
-> Realizamos un pago de validación de monto mínimo, esto difiere según cada país, y si el pago es exitoso, procedemos a realizar la devolución de ese pago. Esto nos sirve como medida para resguardar que es una tarjeta válida. Los valores mínimos son (Argentina: $2, Brasil: R$ 0.5, México: $10).
+> Para comprobar que la tarjeta sea válida, realizamos un pago de validación con un monto mínimo. Si el pago es exitoso, procedemos a realizar la devolución de ese pago. El monto puede diferir según cada país. 
 
 
 ### Crear suscripción con pago pendiente
