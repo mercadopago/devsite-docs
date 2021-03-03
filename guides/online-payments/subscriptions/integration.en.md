@@ -221,7 +221,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 
 > NOTE
 > 
-> Validation Payment
+> Validation payment
 > 
 > We make a validation payment of a minimum amount, this differs according to each country, and if the payment is successful, we proceed to make the refund of that payment. This serves as a measure to safeguard that it is a valid card. The minimum values ​​are (Argentina: $ 2, Brazil: R $ 0.5, Mexico: $ 10).
 
