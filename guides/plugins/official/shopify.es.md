@@ -32,7 +32,7 @@ Instala la [app extension de nuestro checkout transparente](https://apps.shopify
 | Medios de pago | Acepta pagos con tarjeta de crédito y débito, efectivo y dinero en cuenta de Mercado Pago. |
 | Financiación | Vende en cuotas y ofrece las promociones disponibles. |
 | Pago como invitado | Permite que tus clientes paguen sin necesidad de tener cuenta en Mercado Pago. |
-| Descuentos | Ofrezca promociones a tus clientes creando cupones y descuentos automáticos. |
+| Descuentos | Ofrece promociones a tus clientes creando cupones y descuentos automáticos. |
 
 
 ### ¿Cómo instalar el checkout transparente?
