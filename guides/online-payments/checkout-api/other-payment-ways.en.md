@@ -3386,7 +3386,7 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 Payment payment = new Payment();
 
 payment.setTransactionAmount(100f)
-       .setDescription('Título do produto')
+       .setDescription("Título do produto")
        .setPaymentMethodId("pix")
        .setPayer(new Payer()
            .setEmail("test@test.com")
