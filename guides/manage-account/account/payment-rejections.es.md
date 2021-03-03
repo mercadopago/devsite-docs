@@ -348,11 +348,11 @@ payer = MercadoPago::Payer.new({
 # ...
 ```
 ```csharp
-using MercadoPago;
-using MercadoPago.Resources;
-using MercadoPago.DataStructures.Preference;
+using System.Collections.Generic;
+using MercadoPago.Client.Common;
+using MercadoPago.Client.Preference;
 // ...
-Payer payer = new Payer()
+var payer = new PreferencePayerRequest
 {
     Name = "Charles",
     Surname = "Luevano",
@@ -360,21 +360,21 @@ Payer payer = new Payer()
     Phone = new Phone()
     {
         AreaCode = "",
-        Number = "949 128 866"
+        Number = "949 128 866",
     },
     ----[mla, mlb, mlu, mco, mlc, mpe]----
-    Identification = new Identification()
+    Identification = new IdentificationRequest
     {
         Type = "DNI",
-        Number = "12345678"
+        Number = "12345678",
     },
     ------------
-    Address = new Address()
+    Address = new AddressRequest
     {
         StreetName = "Cuesta Miguel Armendáriz",
-        StreetNumber = int.Parse("1004"),
-        ZipCode = "11020"
-    }
+        StreetNumber = "1004",
+        ZipCode = "11020",
+    },
 };
 // ...
 ```
@@ -428,16 +428,20 @@ item = MercadoPago::Item.new({
 ```
 ```csharp
 // ...
-preference.Items.Add(
-  new Item()
-  {
-    Id = "1234",
-    Title = "Lightweight Paper Table",
-    Quantity = 3,
-    CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
-    UnitPrice = (float)55.41
-  }
-);
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Id = "1234",
+            Title = "Lightweight Paper Table",
+            Quantity = 3,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 55.41m,
+        }
+    },
+};
 // ...
 ```
 ]]]

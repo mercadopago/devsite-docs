@@ -52,6 +52,10 @@ mercadopago.configure({
 require 'mercadopago'
 MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 ```
+```csharp
+using MercadoPago.Config;
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+```
 ]]]
 
 Depois você deverá adicionar os atributos das suas preferências de pagamento:
@@ -135,28 +139,27 @@ preference.payer = payer
 preference.save
 ```
 ```csharp
-Preference preference = new Preference();
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Id = "1234",
+            Title = "Blue shirt",
+            Quantity = 10,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = [FAKER][COMMERCE][PRICE]m,
+        },
+    },
+    Payer = new PreferencePayerRequest
+    {
+        Email = "john@yourdomain.com",
+    },
+};
+var client = new PreferenceClient();
+var preference = await client.CreateAsync(request);
 
- preference.Items.Add(
-  new Item()
-  {
-    Id = "1234",
-    Title = "Blue shirt",
-    Quantity = 10,
-    CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
-    UnitPrice = (float)[FAKER][COMMERCE][PRICE]
-  }
-  preference.Payer = new Payer()
-  {
-    Email = "john@yourdomain.com"
-  };
-
-  preference.Save();
-
-```
-```csharp
-using MercadoPago;
-MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 ```
 ]]]
 

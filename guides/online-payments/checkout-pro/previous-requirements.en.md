@@ -57,15 +57,38 @@ gem install mercadopago-sdk
 ```
 ```csharp
 ===
+To install the Mercado Pago SDK:
+
 ----[mlb]----
-Use [NuGet](https://docs.microsoft.com/pt-pt/nuget/install-nuget-client-tools) to install the Mercado Pago SDK .NET.
+Use [.NET Core command-line interface (CLI) tools](https://docs.microsoft.com/pt-br/dotnet/core/tools/).
+===
+dotnet add package mercadopago-sdk
+
+===
+Or use [NuGet Command Line Interface (CLI)](https://docs.microsoft.com/pt-br/nuget/reference/nuget-exe-cli-reference).
+===
+nuget install mercadopago-sdk
+
+===
+Or use [Package Manager Console](https://docs.microsoft.com/pt-br/nuget/consume-packages/install-use-packages-powershell).
+===
+Install-Package mercadopago-sdk
+===
 ------------
 ----[mla, mco, mlu, mlc, mlm, mpe]----
-Use [NuGet](https://docs.microsoft.com/es-es/nuget/install-nuget-client-tools) to install the Mercado Pago SDK .NET.
-------------
-To do this, run the following command in the NuGet Package Manager console:
+Use [.NET Core command-line interface (CLI) tools](https://docs.microsoft.com/es-es/dotnet/core/tools/).
 ===
-PM> Install-Package mercadopago-sdk -Version 1.0.57
+dotnet add package mercadopago-sdk
+
+===
+Or use [NuGet Command Line Interface (CLI)](https://docs.microsoft.com/es-es/nuget/reference/nuget-exe-cli-reference).
+===
+nuget install mercadopago-sdk
+
+===
+Or use [Package Manager Console](https://docs.microsoft.com/es-es/nuget/consume-packages/install-use-packages-powershell).
+===
+Install-Package mercadopago-sdk
 ```
 ]]]
 

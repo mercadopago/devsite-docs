@@ -64,10 +64,15 @@ payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
 
 ```
 ```csharp
-using MercadoPago;
-MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+using MercadoPago.Client.PaymentMethod;
+using MercadoPago.Config;
+using MercadoPago.Resource;
+using MercadoPago.Resource.PaymentMethod;
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var client = new PaymentMethodClient();
+ResourcesList<PaymentMethod> paymentMethods = await client.ListAsync();
 
 ```
 ```curl
@@ -296,23 +301,25 @@ payment.save()
 ```
 ```csharp
 
-using MercadoPago;
-using MercadoPago.DataStructures.Payment;
-using MercadoPago.Resources;
+using MercadoPago.Config;
+using MercadoPago.Client.Payment;
+using MercadoPago.Resource.Payment;
 
-MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
-Payment payment = new Payment()
+var request = new PaymentCreateRequest
 {
-    TransactionAmount = float.Parse("100"),
+    TransactionAmount = 100,
     Description = "Product Title",
     PaymentMethodId = "rapipago",
-    Payer = new Payer(){
-        Email = "test_user_19653727@testuser.com"
-  }
+    Payer = new PaymentPayerRequest
+    {
+        Email = "test_user_19653727@testuser.com",
+    },
 };
 
-payment.Save();
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(request);
 
 ```
 ```curl
@@ -399,7 +406,7 @@ date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
-payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+paymentCreateRequest.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
 ```
 ```curl
 ===
@@ -496,10 +503,15 @@ payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
 
 ```
 ```csharp
-using MercadoPago;
-MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+using MercadoPago.Client.PaymentMethod;
+using MercadoPago.Config;
+using MercadoPago.Resource;
+using MercadoPago.Resource.PaymentMethod;
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var client = new PaymentMethodClient();
+ResourcesList<PaymentMethod> paymentMethods = await client.ListAsync();
 
 ```
 ```curl
@@ -798,23 +810,25 @@ payment.save()
 ```
 ```csharp
 
-using MercadoPago;
-using MercadoPago.DataStructures.Payment;
-using MercadoPago.Resources;
+using MercadoPago.Config;
+using MercadoPago.Client.Payment;
+using MercadoPago.Resource.Payment;
 
-MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
-Payment payment = new Payment()
+var request = new PaymentCreateRequest
 {
-    TransactionAmount = float.Parse("100"),
+    TransactionAmount = 100,
     Description = "Product Title",
     PaymentMethodId = "oxxo",
-    Payer = new Payer(){
-        Email = "test_user_82045343@testuser.com"
-  }
+    Payer = new PaymentPayerRequest
+    {
+        Email = "test_user_82045343@testuser.com",
+    },
 };
 
-payment.Save();
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(request);
 
 ```
 ```curl
@@ -954,10 +968,15 @@ payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
 
 ```
 ```csharp
-using MercadoPago;
-MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+using MercadoPago.Client.PaymentMethod;
+using MercadoPago.Config;
+using MercadoPago.Resource;
+using MercadoPago.Resource.PaymentMethod;
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var client = new PaymentMethodClient();
+ResourcesList<PaymentMethod> paymentMethods = await client.ListAsync();
 
 ```
 ```curl
@@ -1200,23 +1219,25 @@ payment.save()
 ```
 ```csharp
 
-using MercadoPago;
-using MercadoPago.DataStructures.Payment;
-using MercadoPago.Resources;
+using MercadoPago.Config;
+using MercadoPago.Client.Payment;
+using MercadoPago.Resource.Payment;
 
-MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
-Payment payment = new Payment()
+var request = new PaymentCreateRequest
 {
-    TransactionAmount = float.Parse("100"),
+    TransactionAmount = 100,
     Description = "Product Title",
     PaymentMethodId = "rapipago",
-    Payer = new Payer(){
-        Email = "test_user_84162205@testuser.com"
-  }
+    Payer = new PaymentPayerRequest
+    {
+        Email = "test_user_84162205@testuser.com",
+    },
 };
 
-payment.Save();
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(request);
 
 ```
 ```curl
@@ -1343,10 +1364,15 @@ payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
 
 ```
 ```csharp
-using MercadoPago;
-MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+using MercadoPago.Client.PaymentMethod;
+using MercadoPago.Config;
+using MercadoPago.Resource;
+using MercadoPago.Resource.PaymentMethod;
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var client = new PaymentMethodClient();
+ResourcesList<PaymentMethod> paymentMethods = await client.ListAsync();
 
 ```
 ```curl
@@ -1606,23 +1632,25 @@ payment.save()
 ```
 ```csharp
 
-using MercadoPago;
-using MercadoPago.DataStructures.Payment;
-using MercadoPago.Resources;
+using MercadoPago.Config;
+using MercadoPago.Client.Payment;
+using MercadoPago.Resource.Payment;
 
-MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
-Payment payment = new Payment()
+var request = new PaymentCreateRequest
 {
-    TransactionAmount = float.Parse("5000"),
+    TransactionAmount = 5000,
     Description = "Product Title",
     PaymentMethodId = "efecty",
-    Payer = new Payer(){
-        Email = "test_user_19549678@testuser.com"
-  }
+    Payer = new PaymentPayerRequest
+    {
+        Email = "test_user_19549678@testuser.com",
+    },
 };
 
-payment.Save();
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(request);
 
 ```
 ```curl
@@ -1713,7 +1741,7 @@ date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
-payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+paymentCreateRequest.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
 ```
 ```curl
 ===
@@ -1962,10 +1990,15 @@ payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
 
 ```
 ```csharp
-using MercadoPago;
-MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+using MercadoPago.Client.PaymentMethod;
+using MercadoPago.Config;
+using MercadoPago.Resource;
+using MercadoPago.Resource.PaymentMethod;
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var client = new PaymentMethodClient();
+ResourcesList<PaymentMethod> paymentMethods = await client.ListAsync();
 
 ```
 ```curl
@@ -2210,23 +2243,25 @@ payment.save()
 ```
 ```csharp
 
-using MercadoPago;
-using MercadoPago.DataStructures.Payment;
-using MercadoPago.Resources;
+using MercadoPago.Config;
+using MercadoPago.Client.Payment;
+using MercadoPago.Resource.Payment;
 
-MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
-Payment payment = new Payment()
+var request = new PaymentCreateRequest
 {
-    TransactionAmount = float.Parse("100"),
+    TransactionAmount = 5000,
     Description = "Product Title",
     PaymentMethodId = "servipag",
-    Payer = new Payer(){
-        Email = "test_user_15748052@testuser.com"
-  }
+    Payer = new PaymentPayerRequest
+    {
+        Email = "test_user_15748052@testuser.com",
+    },
 };
 
-payment.Save();
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(request);
 
 ```
 ```curl
@@ -2516,10 +2551,15 @@ payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
 
 ```
 ```csharp
-using MercadoPago;
-MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+using MercadoPago.Client.PaymentMethod;
+using MercadoPago.Config;
+using MercadoPago.Resource;
+using MercadoPago.Resource.PaymentMethod;
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var client = new PaymentMethodClient();
+ResourcesList<PaymentMethod> paymentMethods = await client.ListAsync();
 
 ```
 ```curl
@@ -2739,23 +2779,25 @@ payment.save()
 ```
 ```csharp
 
-using MercadoPago;
-using MercadoPago.DataStructures.Payment;
-using MercadoPago.Resources;
+using MercadoPago.Config;
+using MercadoPago.Client.Payment;
+using MercadoPago.Resource.Payment;
 
-MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
-Payment payment = new Payment()
+var request = new PaymentCreateRequest
 {
-    TransactionAmount = float.Parse("100"),
+    TransactionAmount = 5000,
     Description = "Product Title",
     PaymentMethodId = "pagoefectivo_atm",
-    Payer = new Payer(){
-        Email = "test_user_42972582@testuser.com"
-  }
+    Payer = new PaymentPayerRequest
+    {
+        Email = "test_user_42972582@testuser.com",
+    },
 };
 
-payment.Save();
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(request);
 
 ```
 ```curl
@@ -2888,10 +2930,15 @@ payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
 
 ```
 ```csharp
-using MercadoPago;
-MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+using MercadoPago.Client.PaymentMethod;
+using MercadoPago.Config;
+using MercadoPago.Resource;
+using MercadoPago.Resource.PaymentMethod;
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var client = new PaymentMethodClient();
+ResourcesList<PaymentMethod> paymentMethods = await client.ListAsync();
 
 ```
 ```curl
@@ -3180,38 +3227,33 @@ payment.save()
 ```
 ```csharp
 
-using MercadoPago;
-using MercadoPago.DataStructures.Payment;
-using MercadoPago.Resources;
+using MercadoPago.Config;
+using MercadoPago.Client.Common;
+using MercadoPago.Client.Payment;
+using MercadoPago.Resource.Payment;
 
-MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
-Payment payment = new Payment()
+var request = new PaymentCreateRequest
 {
-    TransactionAmount = float.Parse("105"),
+    TransactionAmount = 105,
     Description = "Product Title",
     PaymentMethodId = "bolbradesco",
-    Payer = new Payer(){
+    Payer = new PaymentPayerRequest
+    {
         Email = "test@test.com",
         FirstName = "Test",
         LastName = "User",
-        Identification = new Identification(){
+        Identification = new IdentificationRequest
+        {
             Type = "CPF",
-            Number = "191191191-00"
+            Number = "191191191-00",
         },
-        Address = new Address(){
-            ZipCode = "06233-200",
-            StreetName = "Av. das Nações Unidas",
-            StreetNumber = "3003",
-            Neighborhood = "Bonfim",
-            City = "Osasco",
-            FederalUnit = "SP"
-
-        }
-    }
+    },
 };
 
-payment.Save();
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(request);
 
 ```
 ```curl
@@ -3315,7 +3357,7 @@ date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
-payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+paymentCreateRequest.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
 ```
 ```curl
 ===

@@ -119,21 +119,24 @@ preference = $mp.create_preference(preference_data)
 ===
 El modo billetera funciona agregando el atributo _purpose_ en la preferencia.
 ===
-// Crea un objeto de preferencia
-Preference preference = new Preference();
-
-// Crea un ítem en la preferencia
-preference.Items.Add(
-  new Item()
-  {
-    Title = "Mi producto",
-    Quantity = 1,
-    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
-    UnitPrice = (decimal)75
-  }
-);
-preference.Purpose = "wallet_purchase"
-preference.Save();
+// Crea el objeto de request de la preferencia
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Mi producto",
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75m,
+        },
+    },
+    Purpose = "wallet_purchase",
+};
+// Crea la preferencia
+var client = new PreferenceClient();
+var preference = await client.CreateAsync(request);
 ```
 ```curl
 ===

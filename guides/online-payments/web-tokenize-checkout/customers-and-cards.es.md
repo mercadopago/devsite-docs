@@ -105,21 +105,20 @@ card.save
 
 ```
 ```csharp
-MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
+MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
 
-  Customer customer = new Customer()
-    {
-      Email = "test@test.com"
-    };
-    customer.Save();
+var customerRequest = new CustomerRequest
+{
+    Email = "test@test.com",
+};
+var customerClient = new CustomerClient();
+var customer = await customerClient.CreateAsync(customerRequest);
 
-  Card card = new Card()
-    {
-      Token = "9b2d63e00d66a8c721607214cedaecda",
-      CustomerId = customer.Id
-    };
-
-      card.Save();
+var cardRequest = new CustomerCardCreateRequest
+{
+    Token = "9b2d63e00d66a8c721607214cedaecda",
+};
+var card = customerClient.CreateCardAsync(customer.Id, cardRequest);
 ```
 ]]]
 
@@ -214,8 +213,8 @@ Puedes obtener el listado completo de `Cards` de un cliente realizando un reques
 
 ```
 ```csharp
-customer = Customer.FindById("customer.Id");
-List<Card> cards = customer.Cards; 
+var customerClient = new CustomerClient();
+ResourcesList<CustomerCard> results = await customerClient.ListCardsAsync("CUSTOMER_ID");
 ```
 ]]]
 
@@ -339,19 +338,18 @@ puts card
 
 ```
 ```csharp
-MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
+MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
 
-  Customer customer = Customer.FindById("247711297-jxOV430go9fx2e");
+var customerClient = new CustomerClient();
+var customer = await customerClient.GetAsync("247711297-jxOV430go9fx2e");
 
-  Card card = new Card()
-    {
-      Token = "9b2d63e00d66a8c721607214cedaecda",
-      CustomerId = customer.Id
-    };
+var cardRequest = new CustomerCardCreateRequest
+{
+    Token = "9b2d63e00d66a8c721607214cedaecda",
+};
+var card = customerClient.CreateCardAsync(customer.Id, cardRequest);
 
-  card.Save();
-
-  Console.WriteLine(card.Id);
+Console.WriteLine(card.Id);
 ```
 ]]]
 
@@ -441,10 +439,15 @@ En el caso en el que no sepas cuál es el `id` de tu `Customer`, puedes utilizar
 
 ```
 ```csharp
-Dictionary<string, string> filters = new Dictionary<string, string>();
-filters.Add("email", "test@test.com");
-
-List<Customer> customers = Customer.Search(filters);
+var searchRequest = new SearchRequest
+{
+    Filters = new Dictionary<string, object>
+    {
+        ["email"] = "test@test.com",
+    },
+};
+ResultsResourcesPage<Customer> results = await customerClient.SearchAsync(searchRequest);
+IList<Customer> customers = results.Results;
 ```
 ]]]
 
@@ -535,8 +538,8 @@ Puedes obtener el listado completo de `Cards` de un cliente realizando un reques
 
 ```
 ```csharp
-Customer customer = Customer.FindById("customer.Id");
-List<Card> cards = customer.Cards;
+var customerClient = new CustomerClient();
+ResourcesList<CustomerCard> results = await customerClient.ListCardsAsync("CUSTOMER_ID");
 ```
 ]]]
 

@@ -124,21 +124,24 @@ preference = $mp.create_preference(preference_data)
 ===
 The wallet mode works by adding the _purpose_ attribute to the preference.
 ===
-// Create a preference object
-Preference preference = new Preference();
-
-// Create a preference item
-preference.Items.Add(
-  new Item()
-  {
-    Title = "My Item",
-    Quantity = 1,
-    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
-    UnitPrice = (decimal)75
-  }
-);
-preference.Purpose = "wallet_purchase"
-preference.Save();
+// Create the preference request object
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "My Item",
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75m,
+        },
+    },
+    Purpose = "wallet_purchase",
+};
+// Create the preference
+var client = new PreferenceClient();
+var preference = await client.CreateAsync(request);
 ```
 ```curl
 ===
