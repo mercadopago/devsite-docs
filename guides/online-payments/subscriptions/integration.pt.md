@@ -223,7 +223,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 > 
 > Pagamento de validação
 > 
-> Efetuamos um pagamento de validação de um valor mínimo, que difere de acordo com cada país, e se o pagamento for bem sucedido, procedemos com o reembolso desse pagamento. Isso serve como uma medida para garantir que se trata de um cartão válido. Os valores mínimos são: (Argentina: $2, Brasil: R$ 0.5, México: $10).
+> Para comprovar a validade do cartão, realizamos um pagamento com um valor mínimo. Se o pagamento obter sucesso, procedemos com a realização da devolução desse pagamento. O valor pode diferir conforme cada país.
 
 
 ### Criar assinatura com pagamento pendente
