@@ -3296,7 +3296,7 @@ In the `external_resource_url` field you will find an address with payment instr
 >
 > Receive payments with Pix
 
-You can receive immediate payment with Pix from any bank or digital wallet using QR or payment code.
+You can receive payment immediately with Pix from any bank or digital wallet using QR code or payment code.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prerequisite
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get a Pix key
