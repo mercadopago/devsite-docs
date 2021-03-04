@@ -3574,7 +3574,7 @@ To show the payment code for copy&paste, you can add `qr_code` like this:
 <br>
 
 
-## Payment date of expiration
+## Payments date of expiration
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Voucher payment
 
