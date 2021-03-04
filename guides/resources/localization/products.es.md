@@ -111,7 +111,7 @@ Suscripciones | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debm
 | Pagos | Link de pago | N/A |
 | Pagos | Checkout Pro | N/A |
 | Pagos | Mobile Checkout | `account_money`, `pix` |
-| Pagos | Checkout Transparente | `pix` |
+| Pagos | Checkout Transparente | N/A |
 | Suscripciones | Link de pago | `bolbradesco`, `giftcard`, `pix` |
 | Suscripciones | Checkout Pro | `bolbradesco`, `giftcard`, `pix` |
 | Suscripciones | Checkout Transparente | `bolbradesco`, `giftcard`, `pix` |

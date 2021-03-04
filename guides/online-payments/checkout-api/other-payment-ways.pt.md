@@ -2955,7 +2955,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
      "id": "pix",
        "name": "PIX",
        "payment_type_id": "bank_transfer",
-       "status": "active",       
+       "status": "active",
        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
        "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
         "deferred_capture": "does_not_apply",
@@ -3067,7 +3067,6 @@ window.Mercadopago.getIdentificationTypes();
 > Encontre mais detalhes na [seção de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/identification-types).
 
 <br>
-<span></span>
 
 > SERVER_SIDE
 >
@@ -3116,7 +3115,6 @@ Tenha em conta que para que esse passo funcione é necessário que configure sua
 ?>
 ```
 ```node
-
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
@@ -3209,7 +3207,6 @@ payment.save()
 
 ```
 ```csharp
-
 using MercadoPago;
 using MercadoPago.DataStructures.Payment;
 using MercadoPago.Resources;
@@ -3311,14 +3308,14 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 >
 > h2
 >
-> Receber pagamentos com Pix 
+> Receber pagamentos com Pix
 
 Ofereça a opção de receber pagamentos no instante com Pix de qualquer banco ou carteira digital através de um código QR ou de um código de pagamento.
 
 ### Requisito prévio
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha uma chave Pix
 
-Para começar, você deve ter cadastrada uma chave Pix na conta do vendedor. Este dado é único, serve para identificar sua conta e permitirá que você utilize as funcionalidades do meio de pagamento. 
+Para começar, você deve ter cadastrada uma chave Pix na conta do vendedor. Este dado é único, serve para identificar sua conta e permitirá que você utilize as funcionalidades do meio de pagamento.
 
 [Conheça como criar uma chave Pix](https://www.mercadopago.com.br/ajuda/17843)
 
@@ -3522,8 +3519,7 @@ curl -X POST \
 
 A resposta mostrará o status pendente do pagamento e todas as informações que você precisa para mostrar ao comprador.
 
-O valor `transaction_data` oferecerá os dados para disponibilizar a opção de pagamento através de um código QR. Você vai encontrar os atributos abaixo:   
-
+O valor `transaction_data` oferecerá os dados para disponibilizar a opção de pagamento através de um código QR. Você vai encontrar os atributos abaixo:
 
 | Atributos| Descrição |
 | --- | --- |
@@ -3550,7 +3546,7 @@ O valor `transaction_data` oferecerá os dados para disponibilizar a opção de 
             "type": "PIX",
             "sub_type": null,
             "application_data": {
-                "name": "NAME_SDK",    
+                "name": "NAME_SDK",
                 "version": "VERSION_NUMBER",
                     },
                 "transaction_data": {
@@ -3563,9 +3559,10 @@ O valor `transaction_data` oferecerá os dados para disponibilizar a opção de 
   }
 ]∫
 ```
-### Dados para realizar o pagamento 
 
-Para o pagamento ser realizado, você deverá renderizar o código QR para poder mostrá-lo. Você também pode adicionar uma opção para copiar e colar o código de pagamento, que permitirá realizar a transação a partir de Internet Banking. 
+### Dados para realizar o pagamento
+
+Para o pagamento ser realizado, você deverá renderizar o código QR para poder mostrá-lo. Você também pode adicionar uma opção para copiar e colar o código de pagamento, que permitirá realizar a transação a partir de Internet Banking.
 
 Você tem que adicionar o `qr_code_base64` para poder mostrar o código QR. Por exemplo, pode renderizar o código da seguinte forma:
 
@@ -3584,9 +3581,9 @@ Para mostrar a opção que permitirá copiar e colar o código de pagamento, voc
 >
 > Observações
 >
->  * Por default, o cliente tem 24 horas para realizar o pagamento. 
+>  * Por default, o cliente tem 24 horas para realizar o pagamento.
 >  * O código pode ser utilizado somente uma vez.
->  * O código será mostrado desde que estiver vigente, dependendo da data de expiração. 
+>  * O código será mostrado desde que estiver vigente, dependendo da data de expiração.
 
 <br>
 
@@ -3595,8 +3592,6 @@ Para mostrar a opção que permitirá copiar e colar o código de pagamento, voc
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pagamentos com boleto
 
-
-
 A data de expiração padrão para pagamentos de boleto é de 3 dias. Opcionalmente é possível alterar essa data enviando o campo `date_of_expiration` na requisição de criação do pagamento. A data configurada deve estar entre 1 e 30 dias a partir da data de emissão.
 
 [[[
@@ -3604,42 +3599,36 @@ A data de expiração padrão para pagamentos de boleto é de 3 dias. Opcionalme
 ===
 A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 $payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
 ```
 ```node
 ===
 A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ```
 ```java
 ===
 A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
 ```
 ```ruby
 ===
 A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ```
 ```csharp
 ===
 A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
 ```
 ```curl
 ===
 A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 "date_of_expiration": "2020-05-30T23:59:59.000-04:00",
 ```
 ]]]
@@ -3673,7 +3662,6 @@ date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ===
 A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
 ```
 ```ruby
@@ -3700,7 +3688,7 @@ A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 >
 > Importante
 >
-> Se o pagamento for realizado após a data de expiração marcada, a operação será rejeitada. 
+> Se o pagamento for realizado após a data de expiração marcada, a operação será rejeitada.
 
 ## Cancelar um pagamento
 
@@ -3736,4 +3724,4 @@ Revise os [tempos de aprovação por meio de pagamento](https://www.mercadopago.
 >
 > Otimize sua integração e melhore a gestão das suas vendas.
 >
-> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt//guides/online-payments/checkout-api/advanced-integration)
+> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/advanced-integration)

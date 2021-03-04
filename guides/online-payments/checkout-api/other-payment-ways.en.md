@@ -2901,7 +2901,7 @@ curl -X GET \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-    'https://api.mercadopago.com/v1/payment_methods' 
+    'https://api.mercadopago.com/v1/payment_methods'
 ```
 ]]]
 
@@ -2939,7 +2939,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
        "id": "pix",
        "name": "PIX",
        "payment_type_id": "bank_transfer",
-       "status": "active", 
+       "status": "active",
        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
        "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
        "deferred_capture": "does_not_apply",
@@ -2955,7 +2955,6 @@ Keep in mind that the answer will return all the payments methods. For this reas
 > For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
 
 <br>
-<span></span>
 
 > CLIENT_SIDE
 >
@@ -2964,6 +2963,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 > Data capture for payment
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
+
 **Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
 
 ```html
@@ -3099,7 +3099,6 @@ For this to work, you should configure your [private key]([FAKER][CREDENTIALS][U
 ?>
 ```
 ```node
-
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
@@ -3192,7 +3191,6 @@ payment.save()
 
 ```
 ```csharp
-
 using MercadoPago;
 using MercadoPago.DataStructures.Payment;
 using MercadoPago.Resources;
@@ -3299,13 +3297,14 @@ In the `external_resource_url` field you will find an address with payment instr
 You can receive payment immediately with Pix from any bank or digital wallet using QR code or payment code.
 
 ### Prerequisite
+
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get a Pix key
 
-To start, you will need a Pix key registered in the seller's account. This is unique data for account identification to use the payment method functionality. 
+To start, you will need a Pix key registered in the seller's account. This is unique data for account identification to use the payment method functionality.
 
 [Learn how to create a Pix key](https://www.mercadopago.com.br/ajuda/17843)
 
-### Payment data 
+### Payment data
 
 After [capturing the data for payment](#bookmark_data_capture_for_payment) in the form, to start getting Pix payments you will need to dend the buyer's email address, document type and number, method of payment and amount.
 
@@ -3532,7 +3531,7 @@ The `transaction_data` will provide the data to make the payment available via Q
             "type": "PIX",
             "sub_type": null,
             "application_data": {
-                "name": "NAME_SDK",    
+                "name": "NAME_SDK",
                 "version": "VERSION_NUMBER",
                     },
                 "transaction_data": {
@@ -3548,7 +3547,7 @@ The `transaction_data` will provide the data to make the payment available via Q
 
 ### Data to make payment
 
-To make the payment, render the QR code to show it. You can also add an option to copy and paste payment code to make the transaction via Internet Banking. 
+To make the payment, render the QR code to show it. You can also add an option to copy and paste payment code to make the transaction via Internet Banking.
 
 Add `qr_code_base64` to show the QR code. For example, you can render it like this:
 
@@ -3567,7 +3566,7 @@ To show the payment code for copy and paste, you can add `qr_code` like this:
 >
 > To consider
 >
->  * By default, the customer has 24 hours to make payment. 
+>  * By default, the customer has 24 hours to make payment.
 >  * The code can be used once only.
 >  * The code will be shown provided that it is current per date of expiration.
 <br>
@@ -3584,42 +3583,36 @@ The default expiration date for boleto payments is 3 days. If you want, you can 
 ===
 The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 $payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
 ```
 ```node
 ===
 The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ```
 ```java
 ===
 The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
 ```
 ```ruby
 ===
 The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ```
 ```csharp
 ===
 The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
 ```
 ```curl
 ===
 The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 "date_of_expiration": "2020-05-30T23:59:59.000-04:00",
 ```
 ]]]
@@ -3634,7 +3627,7 @@ The deadline for approval of the boleto is up to 48 working hours. Therefore, we
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pix payments
 
-By default, Pix payments expire in 24 hours. You can change this field  `date_of_expiration` ewhen creating the payment. The set date should be between 1 and 30 days from issue date.
+By default, Pix payments expire in 24 hours. You can change this field `date_of_expiration` when creating the payment. The set date should be between 1 and 30 days from issue date.
 
 [[[
 ```php
@@ -3679,7 +3672,7 @@ The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 >
 > Important
 >
-> If you try to make the payment after the date of expiration set, the transaction will be rejected. 
+> If you try to make the payment after the date of expiration set, the transaction will be rejected.
 
 ## Cancel payments
 
@@ -3714,4 +3707,4 @@ Check [credit times by payment method](https://www.mercadopago.com.br/ajuda/meio
 >
 > Enhance your integration and improve your sales management.
 >
-> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en//guides/online-payments/checkout-api/advanced-integration)
+> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/advanced-integration)

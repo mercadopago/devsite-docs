@@ -152,7 +152,7 @@ Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](http
     <h3>Medio de pago</h3>
     <div>
       <select class="form-control" id="paymentMethod" name="paymentMethod">
-        <option>Selecione un medio de pago</option>
+        <option>Seleccione un medio de pago</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
         <option value="--PaymentTypeId--">--PaymentTypeName--</option>
@@ -668,7 +668,7 @@ Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](http
     <h3>Medio de pago</h3>
     <div>
       <select class="form-control" id="paymentMethod" name="paymentMethod">
-        <option>Selecione un medio de pago</option>
+        <option>Seleccione un medio de pago</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
         <option value="--PaymentTypeId--">--PaymentTypeName--</option>
@@ -1060,7 +1060,7 @@ Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](http
     <h3>Medio de pago</h3>
     <div>
       <select class="form-control" id="paymentMethod" name="paymentMethod">
-        <option>Selecione un medio de pago</option>
+        <option>Seleccione un medio de pago</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
         <option value="--PaymentTypeId--">--PaymentTypeName--</option>
@@ -1468,7 +1468,7 @@ Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](http
     <h3>Medio de pago</h3>
     <div>
       <select class="form-control" id="paymentMethod" name="paymentMethod">
-        <option>Selecione un medio de pago</option>
+        <option>Seleccione un medio de pago</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
         <option value="--PaymentTypeId--">--PaymentTypeName--</option>
@@ -2073,7 +2073,7 @@ Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](http
     <h3>Medio de pago</h3>
     <div>
       <select class="form-control" id="paymentMethod" name="paymentMethod">
-        <option>Selecione un medio de pago</option>
+        <option>Seleccione un medio de pago</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
         <option value="--PaymentTypeId--">--PaymentTypeName--</option>
@@ -2603,7 +2603,7 @@ Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](http
     <h3>Medio de pago</h3>
     <div>
       <select class="form-control" id="paymentMethod" name="paymentMethod">
-        <option>Selecione un medio de pago</option>
+        <option>Seleccione un medio de pago</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
         <option value="--PaymentTypeId--">--PaymentTypeName--</option>
@@ -2996,7 +2996,7 @@ Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](http
     <h3>Medio de pago</h3>
     <div>
       <select class="form-control" id="paymentMethod" name="paymentMethod">
-        <option>Selecione un medio de pago</option>
+        <option>Seleccione un medio de pago</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
         <option value="--PaymentTypeId--">--PaymentTypeName--</option>
@@ -3080,7 +3080,6 @@ Ten en cuenta que para que este paso funcione es necesario que configures tu [cl
 [[[
 ```php
 <?php
-
  require_once 'vendor/autoload.php';
 
  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
@@ -3112,7 +3111,6 @@ Ten en cuenta que para que este paso funcione es necesario que configures tu [cl
 ?>
 ```
 ```node
-
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
@@ -3205,7 +3203,6 @@ payment.save()
 
 ```
 ```csharp
-
 using MercadoPago;
 using MercadoPago.DataStructures.Payment;
 using MercadoPago.Resources;
@@ -3315,13 +3312,14 @@ En el campo `external_resource_url` vas a encontrar una dirección que contiene 
 Ofrece la opción de recibir pagos al instante con Pix desde cualquier banco o billetera digital a través de un código QR o un código de pago.
 
 ### Requisito previo
+
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtén una llave Pix
 
-Para comenzar, debes tener registrada una llave Pix en la cuenta del vendedor. Este dato es único, sirve para identificar tu cuenta y te permitirá utilizar las funcionalidades del medio de pago.  
+Para comenzar, debes tener registrada una llave Pix en la cuenta del vendedor. Este dato es único, sirve para identificar tu cuenta y te permitirá utilizar las funcionalidades del medio de pago.
 
 [Conoce cómo crear una llave Pix](https://www.mercadopago.com.br/ajuda/17843)
 
-### Datos para el pago 
+### Datos para el pago
 
 Luego de [capturar los datos](#bookmark_captura_los_datos_para_el_pago) con el formulario, para poder recibir pagos con Pix, debes enviar la dirección de e-mail del comprador, el tipo y número de documento, el medio de pago y el detalle del monto.
 
@@ -3522,7 +3520,7 @@ curl -X POST \
 La respuesta va a mostrar el estado pendiente del pago y toda la información que necesitas para mostrar al comprador.
 
 
-El valor `transaction_data` te brindará los datos para disponibilizar la opción de pago a través de un código QR. Vas a encontrar los siguientes atributos: 
+El valor `transaction_data` te brindará los datos para disponibilizar la opción de pago a través de un código QR. Vas a encontrar los siguientes atributos:
 
 | Atributos| Descripción |
 | --- | --- |
@@ -3548,7 +3546,7 @@ El valor `transaction_data` te brindará los datos para disponibilizar la opció
             "type": "PIX",
             "sub_type": null,
             "application_data": {
-                "name": "NAME_SDK",    
+                "name": "NAME_SDK",
                 "version": "VERSION_NUMBER",
                     },
                 "transaction_data": {
@@ -3561,6 +3559,7 @@ El valor `transaction_data` te brindará los datos para disponibilizar la opció
   }
 ]∫
 ```
+
 ### Datos para efectuar el pago
 
 Para que se efectúe el pago, deberás renderizar el código QR para poder mostrarlo. También puedes agregar una opción para copiar y pegar el código de pago, que permitirá realizar la transacción desde una Banca por Internet.
@@ -3582,9 +3581,9 @@ Para mostrar la opción que te permitirá copiar y pegar el código de pago, pue
 >
 > Ten en cuenta
 >
->  * Por defecto, el cliente tiene 24 horas para realizar el pago. 
+>  * Por defecto, el cliente tiene 24 horas para realizar el pago.
 >  * El código puede ser utilizado una sola vez.
->  * El código se va a mostrar siempre que esté vigente según la fecha de expiración. 
+>  * El código se va a mostrar siempre que esté vigente según la fecha de expiración.
 <br>
 
 
@@ -3600,42 +3599,36 @@ Por defecto, la fecha de vencimiento para los pagos con boleto es de 3 días. Si
 ===
 La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 $payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
 ```
 ```node
 ===
 La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ```
 ```java
 ===
 La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
 ```
 ```ruby
 ===
 La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ```
 ```csharp
 ===
 La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
 ```
 ```curl
 ===
 La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 "date_of_expiration": "2020-05-30T23:59:59.000-04:00",
 ```
 ]]]
@@ -3731,4 +3724,4 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 >
 > Optimiza tu integración y mejora la gestión de tus ventas.
 >
-> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es//guides/online-payments/checkout-api/advanced-integration)
+> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/advanced-integration)
