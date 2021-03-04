@@ -3324,7 +3324,7 @@ Para começar, você deve ter cadastrada uma chave Pix na conta do vendedor. Est
 
 ### Dados para o pagamento
 
-Após [capturar os dados](#bookmark_capture_os_dados_para_pagamento) com o formulário, para poder receber pagamentos com Pix, você deve encaminhar o e-mail do comprador, o tipo e número de carteira de identidade, o meio de pagamento e o detalhe do valor.
+Após [capturar os dados](#bookmark_capture_os_dados_para_pagamento) com o formulário, para poder receber pagamentos com Pix, você deve encaminhar o e-mail do comprador, o tipo e número de documento, o meio de pagamento e o detalhe do valor.
 
 
 [[[
