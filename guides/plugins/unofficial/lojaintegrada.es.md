@@ -62,7 +62,7 @@ Este producto permite que el **cliente finalice el pago en el entorno de la tien
 
 En este caso, el **comprador será redireccionado a Mercado Pago para realizar el pago** y terminar la compra.
 
-Checkout Pro es la **integración que te permite cobrar en el entorno de Mercado Pago**, con **métodos de pago adicionales** como: Pix, pago en cuotas, débito virtual de Caixa y billetera digital de Mercado Pago.
+Checkout Pro es la **integración que te permite cobrar en el entorno de Mercado Pago**, con **métodos de pago adicionales** como: Pix, boleto en cuotas, débito virtual de Caixa y billetera digital de Mercado Pago.
 
 > Obtenga más información sobre las opciones de pago que el [Checkout Pro ofrece](https://conteudo.mercadopago.com.br/o-que-e-o-checkout-mercado-pago).
 
