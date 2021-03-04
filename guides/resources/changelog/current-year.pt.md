@@ -29,7 +29,7 @@ Agora, você pode adicionar Pix como meio de pagamento para começar a receber d
 >
 > NEW_VERSION: NOVA VERSÃO
 >
-> PRODUCT: SDK Java
+> PRODUCT: SDK JAVA
 
 Lançamos uma nova versão do SDK Java 1.9.0.
 
