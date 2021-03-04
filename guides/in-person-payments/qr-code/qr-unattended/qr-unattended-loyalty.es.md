@@ -119,7 +119,7 @@ Códigos de producto **YPF (Serviclub)**:
 ## Puntos a tener en cuenta
 
 1. El parámetro `quantity` no puede contener más de 3 puntos decimales.
-2. Para productos *Shop*, se hace el cálculo de `quantity` multiplicado por `unit_price` para calcular los puntos a cargar. Es por esto que debe ponerse el número de código de *Shop*, `quantity = 1` y `unit_price` = monto total de los productos vendidos en shop.
+2. Para Producto shop, se hace el cálculo de `quantity` multiplicado por `unit_price` para calcular los puntos a cargar. Es por esto que debe ponerse el número de código de shop, `quantity = 1` y `unit_price` = monto total de los productos vendidos en shop.
 3. La cantidad de puntos que se suman para combustibles depende del código de producto (`code`) y la cantidad (`quantity`), validando la unidad (`unit`). Cada producto suma una cantidad distinta en base a la cantidad cargada. Esta lógica la aplica directamente el programa de fidelización.
 4. El `transaction_id` debe ser único tanto para cada integrador como para todo el universo de operaciones de fidelización. Recomendamos concatenarlo con el `store_id` y la cara del surtidor.
 5. Los códigos de combustible deben situarse siempre en el primer ítem del arreglo de productos. 
