@@ -12,7 +12,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 >
 > Pix as new payment method in Checkout API
 >
-> NEWS: NOVEDADES
+> NEWS: NEWS
 >
 > PRODUCT: CHECKOUT TRANSPARENTE 
 
