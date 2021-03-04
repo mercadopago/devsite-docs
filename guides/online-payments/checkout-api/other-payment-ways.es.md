@@ -3543,7 +3543,7 @@ El valor `transaction_data` te brindará los datos para disponibilizar la opció
         "net_received_amount": 0,
         "total_paid_amount": 100,
         "overpaid_amount": 0,
-        "external_resource_url": "https://www.mercadopago.com/mla/payments/ticket/helper?payment_id=123456789&payment_method_reference_id= 123456789&caller_id=123456",
+        "external_resource_url": "https://www.mercadopago.com/mlb/payments/bank_transfer/helper?payment_id=123456789&payment_method_reference_id= 123456789&caller_id=123456",
         "installment_amount": 0,
         "financial_institution": null,
         "point_of_interaction": {
