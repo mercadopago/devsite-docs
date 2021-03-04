@@ -57,7 +57,7 @@ Si una cuota se encuentra en el estado `waiting for gateway` y cuando se resuelv
 
 En el caso de que no se pueda cobrar la cuota en el cuarto reintento, la cuota automáticamente quedará en el estado `processed` asociada a un pago rechazado.
 
-Luego de 3 cuotas con pagos rechazados se da de baja automáticamente la suscripción y la cuenta integrada será notificada del cancelamiento de la suscripción por email.
+Luego de 3 cuotas con pagos rechazados se da de baja automáticamente la suscripción y la cuenta del vendedor será notificada de la cancelación de la suscripción por e-mail.
 
 
 > NOTE

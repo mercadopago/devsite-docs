@@ -57,7 +57,7 @@ If an installment is in `waiting for gateway` status and, when the payment is re
 
 In the case that the installment cannot be collected on the fourth reattempt, it will automatically remain in `processed` status, associated with a declined payment.
 
-After 3 installments with rejected payments, the subscription is automatically canceled and the integrated account will be notified of the cancellation of the subscription by e-mail.
+After 3 installments with rejected payments, the subscription is automatically canceled and the seller account will be notified of the cancellation of the subscription by e-mail.
 
 
 > NOTE
