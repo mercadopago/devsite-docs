@@ -8,6 +8,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 ## Março 2021
 
 ### 4 de março
+
 > CHANGELOG
 >
 > Pix como novo meio de pagamento em Checkout Transparente

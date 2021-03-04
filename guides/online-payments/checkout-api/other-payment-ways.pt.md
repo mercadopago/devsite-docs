@@ -3315,7 +3315,7 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 
 Ofereça a opção de receber pagamentos no instante com Pix de qualquer banco ou carteira digital através de um código QR ou de um código de pagamento.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Requisito prévio
+### Requisito prévio
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha uma chave Pix
 
 Para começar, você deve ter cadastrada uma chave Pix na conta do vendedor. Este dado é único, serve para identificar sua conta e permitirá que você utilize as funcionalidades do meio de pagamento. 
@@ -3330,7 +3330,6 @@ Após [capturar os dados](#bookmark_capture_os_dados_para_pagamento) com o formu
 [[[
 ```php
 <?php
-
  require_once 'vendor/autoload.php';
 
  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
@@ -3362,7 +3361,6 @@ Após [capturar os dados](#bookmark_capture_os_dados_para_pagamento) com o formu
 ?>
 ```
 ```node
-
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
@@ -3455,7 +3453,6 @@ payment.save()
 
 ```
 ```csharp
-
 using MercadoPago;
 using MercadoPago.DataStructures.Payment;
 using MercadoPago.Resources;
@@ -3664,14 +3661,12 @@ Por default, a data de vencimento para os pagamentos com Pix é de 24 horas. Se 
 ===
 A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 $payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
 ```
 ```node
 ===
 A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ```
 ```java
@@ -3685,21 +3680,18 @@ payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
 ===
 A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ```
 ```csharp
 ===
 A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
 ```
 ```curl
 ===
 A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 "date_of_expiration": "2020-05-30T23:59:59.000-04:00",
 ```
 ]]]
@@ -3717,7 +3709,6 @@ A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
 
 Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
-
 
 
 ## Prazo de aprovação de pagamento

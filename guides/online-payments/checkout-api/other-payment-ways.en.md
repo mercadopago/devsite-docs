@@ -3298,7 +3298,7 @@ In the `external_resource_url` field you will find an address with payment instr
 
 You can receive payment immediately with Pix from any bank or digital wallet using QR code or payment code.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prerequisite
+### Prerequisite
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get a Pix key
 
 To start, you will need a Pix key registered in the seller's account. This is unique data for account identification to use the payment method functionality. 
@@ -3344,7 +3344,6 @@ After [capturing the data for payment](#bookmark_data_capture_for_payment) in th
 ?>
 ```
 ```node
-
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
@@ -3437,7 +3436,6 @@ payment.save()
 
 ```
 ```csharp
-
 using MercadoPago;
 using MercadoPago.DataStructures.Payment;
 using MercadoPago.Resources;
@@ -3507,7 +3505,7 @@ curl -X POST \
 
 The response will show the pending payment status and all the information needed to show to the buyer.
 
-The `transaction_data` will provide data to make the payment available via QR code. These are the attributes: 
+The `transaction_data` will provide the data to make the payment available via QR code. These are the attributes: 
 
 | Attributes| Description |
 | --- | --- |
@@ -3643,42 +3641,36 @@ By default, Pix payments expire in 24 hours. You can change this field  `date_of
 ===
 The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 $payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
 ```
 ```node
 ===
 The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ```
 ```java
 ===
 The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
 ```
 ```ruby
 ===
 The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ```
 ```csharp
 ===
 The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
 ```
 ```curl
 ===
 The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 "date_of_expiration": "2020-05-30T23:59:59.000-04:00",
 ```
 ]]]

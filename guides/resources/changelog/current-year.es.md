@@ -7,7 +7,8 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Marzo 2021
 
-### 04 de Marzo
+### 4 de Marzo
+
 > CHANGELOG
 >
 > Pix como nuevo medio de pago en Checkout Transparente 

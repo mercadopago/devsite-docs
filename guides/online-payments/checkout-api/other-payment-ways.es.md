@@ -3314,7 +3314,7 @@ En el campo `external_resource_url` vas a encontrar una dirección que contiene 
 
 Ofrece la opción de recibir pagos al instante con Pix desde cualquier banco o billetera digital a través de un código QR o un código de pago.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Requisito previo
+### Requisito previo
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtén una llave Pix
 
 Para comenzar, debes tener registrada una llave Pix en la cuenta del vendedor. Este dato es único, sirve para identificar tu cuenta y te permitirá utilizar las funcionalidades del medio de pago.  
@@ -3360,7 +3360,6 @@ Luego de [capturar los datos](#bookmark_captura_los_datos_para_el_pago) con el f
 ?>
 ```
 ```node
-
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
@@ -3453,7 +3452,6 @@ payment.save()
 
 ```
 ```csharp
-
 using MercadoPago;
 using MercadoPago.DataStructures.Payment;
 using MercadoPago.Resources;
@@ -3659,42 +3657,36 @@ Por defecto, la fecha de vencimiento para los pagos con Pix es de 24 horas. Si q
 ===
 La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 $payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
 ```
 ```node
 ===
 La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ```
 ```java
 ===
 La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
 ```
 ```ruby
 ===
 La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ```
 ```csharp
 ===
 La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
 ```
 ```curl
 ===
 La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-
 "date_of_expiration": "2020-05-30T23:59:59.000-04:00",
 ```
 ]]]
