@@ -19,7 +19,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 Agora, você pode adicionar Pix como meio de pagamento para começar a receber dinheiro no instante, todos os dias e de qualquer banco ou carteira. Você só deve ter sua chave e adicionar Pix no seu formulário de pagamento.
 
-[Começar a receber pagamentos com Pix](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_recibir_pagos_con_pix)
+[Começar a receber pagamentos com Pix](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_receber_pagamentos_com_pix)
 ------------
 
 ## Fevereiro 2021
