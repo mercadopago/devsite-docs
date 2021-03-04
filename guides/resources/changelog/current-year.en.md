@@ -3,7 +3,6 @@
 Find out everything about the new versions and updates of Mercado Pago integrations.
 
 ---
-
 ## February 2021
 
 ----[mco]----
