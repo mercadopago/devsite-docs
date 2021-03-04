@@ -41,7 +41,7 @@ Done! Mercado Pago account is synchronized with your site and you can start char
 > If you wish to change the Mercado Pago account associated to your site, it is necessary to close the active account and synchronize again using the new account.
 > 1. Close your Mercado Pago account if you have it open in your browser.
 > 2. Click “Options Menu” and then “Exit”.
-> 3. Access the [payment methods settings](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) in the Loja Integrada menu, click on “Mercado Pago” and finally, on ““Drawingcronizar Mercado Pago account”.
+> 3. Access the [payment methods settings](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) in the Loja Integrada menu, click on “Mercado Pago” and finally, on “Desynchronize Mercado Pago account”.
 > 4. Finally, [synchronize Mercado Pago on your site](#bookmark_synchronize_mercado_pago_on_your_site) with your new account.
 
 ## Set payment methods
@@ -53,7 +53,7 @@ You can check and configure the [Fees and Deadlines](https://www.mercadopago.com
 
 ### Transparent Checkout
 
-It allows the **client to complete the purchase on your site**, without being redirected.
+This product allows the **customer to complete the purchase on the store environment**, without being redirected to another website.
 
 1. Access the [payment methods settings](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) in the Loja Integrada menu and click on “Mercado Pago”.
 2. In the item “Transparent Checkout” change the option to “Activated”.
@@ -61,7 +61,7 @@ It allows the **client to complete the purchase on your site**, without being re
 
 ### Checkout Pro
 
-Checkout Pro is **the integration that allows you to charge in the Mercado Pago environment**, with **additional payment methods** such as: Pix, installment payment bank ticket, virtual debit from the caixa, Mercado Pago digital wallet.
+Checkout Pro is **the integration that allows you to charge in the Mercado Pago environment**, with **additional payment methods** such as: Pix, installment payment Bank Ticket, virtual debit from Caixa and Mercado Pago digital wallet.
 
 > Learn more about the payment options that [Checkout Pro offers](https://conteudo.mercadopago.com.br/o-que-e-o-checkout-mercado-pago).
 
