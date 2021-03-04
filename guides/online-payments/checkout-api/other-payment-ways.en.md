@@ -3303,7 +3303,7 @@ You can receive payment immediately with Pix from any bank or digital wallet usi
 
 To start, you will need a Pix key registered in the seller's account. This is unique data for account identification to use the payment method functionality. 
 
-[Learn how to create a Pix key](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/17843)
+[Learn how to create a Pix key](https://www.mercadopago.com.br/ajuda/17843)
 
 ### Payment data 
 
