@@ -89,6 +89,7 @@ paths:
                   description: application identifier.
       responses:
         '200':
+          description: Success
           content:
             application/json:
               schema:
@@ -275,105 +276,105 @@ paths:
       description: Search a merchant order.
       parameters:
         - name: status
-          in: path
+          in: query
           description: Merchant order state.
           required: true
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: preference_id
-          in: path
+          in: query
           description: Payment preference identifier associated to the merchant order.
           required: true
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: application_id
-          in: path
+          in: query
           description: application identifier.
           required: true
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: payer_id
-          in: path
+          in: query
           description: Buyer's Id
           required: true
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: sponsor_id
-          in: path
+          in: query
           description: Sponsor ID in Mercado Pago.
           required: true
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: external_reference
-          in: path
+          in: query
           description: Reference you can synchronize with your payment system.
           required: true
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: site_id
-          in: path
+          in: query
           description: Country identifier that merchant order belongs to.
           required: true
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: marketplace
-          in: path
+          in: query
           description: 'Origin of the payment. Default value: ''NONE'''
           required: true
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: date_created_from
-          in: path
+          in: query
           description: Order's creation date (start search)
           required: true
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: date_created_to
-          in: path
+          in: query
           description: Order's creation date (end search)
           required: true
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: last_updated_from
-          in: path
+          in: query
           description: Order's last update date (start search)
           required: true
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: last_updated_to
-          in: path
+          in: query
           description: Order's last update date (end search)
           required: true
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: items
-          in: path
+          in: query
           description: items information.
           required: true
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: limit
-          in: path
+          in: query
           description: Qtd of max itens to return
           required: true
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: offset
-          in: path
+          in: query
           description: Qtd of itens to 'offset'
           required: true
           schema:
@@ -381,6 +382,7 @@ paths:
             example: 12123adfasdf123u4u
       responses:
         '200':
+          description: Success
           content:
             application/json:
               schema:
@@ -851,6 +853,7 @@ paths:
             example: 123123123
       responses:
         '200':
+          description: Success
           content:
             application/json:
               schema:

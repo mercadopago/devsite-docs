@@ -380,6 +380,7 @@ paths:
             example: 12123adfasdf123u4u
       responses:
         '200':
+          description: Success
           content:
             application/json:
               schema:
@@ -482,7 +483,6 @@ paths:
                         additional_info:
                           type: object
                           properties:
-                            type: array
                             items:
                               type: object
                               properties:
@@ -614,7 +614,6 @@ paths:
                   additional_info:
                     type: object
                     properties:
-                      type: array
                       items:
                         type: object
                         properties:
@@ -932,6 +931,7 @@ paths:
             example: ID_REF
       responses:
         '200':
+          description: Success
           content:
             application/json:
               schema:
@@ -1055,7 +1055,6 @@ paths:
                               additional_info:
                                 type: object
                                 properties:
-                                  type: array
                                   items:
                                     type: object
                                     properties:
@@ -1183,12 +1182,10 @@ paths:
                           description: date_last_updated
                         metadata:
                           type: object
-                          properties: null
                           description: metadata
                         additional_info:
                           type: object
                           properties:
-                            type: array
                             items:
                               type: object
                               properties:
@@ -1357,6 +1354,14 @@ paths:
         - $ref: '#/tags/link-de-pago/description'
       summary: Refund a Payment
       description: Refund a Payment
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Payment Id
+          schema:
+            type: string
+            example: A11ad1237sf76af6718
       requestBody:
         content:
           application/json:
@@ -1473,6 +1478,14 @@ paths:
         - $ref: '#/tags/link-de-pago/description'
       summary: Change release date of a Disbursement
       description: Change release date of a Disbursement
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Payment Id
+          schema:
+            type: string
+            example: A11ad1237sf76af6718
       requestBody:
         content:
           application/json:
@@ -1589,6 +1602,21 @@ paths:
         - $ref: '#/tags/link-de-pago/description'
       summary: Parcial refund of an Advanced Payment
       description: Parcial refund of an Advanced Payment
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Payment Id
+          schema:
+            type: string
+            example: A11ad1237sf76af6718
+        - name: disbursement_id
+          in: path
+          required: true
+          description: Disbursement Id
+          schema:
+            type: string
+            example: A11ad1237sf76af6718
       requestBody:
         content:
           application/json:
@@ -1705,6 +1733,21 @@ paths:
         - $ref: '#/tags/link-de-pago/description'
       summary: Change release date os all Disbursements
       description: Change release date os all Disbursements
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Payment Id
+          schema:
+            type: string
+            example: A11ad1237sf76af6718
+        - name: disbursement_id
+          in: path
+          required: true
+          description: Disbursement Id
+          schema:
+            type: string
+            example: A11ad1237sf76af6718
       requestBody:
         content:
           application/json:
@@ -1866,6 +1909,7 @@ paths:
             example: '2018-12-02'
       responses:
         '200':
+          description: Success
           content:
             application/json:
               schema:
@@ -1989,7 +2033,6 @@ paths:
                               additional_info:
                                 type: object
                                 properties:
-                                  type: array
                                   items:
                                     type: object
                                     properties:
@@ -2117,12 +2160,10 @@ paths:
                           description: date_last_updated
                         metadata:
                           type: object
-                          properties: null
                           description: metadata
                         additional_info:
                           type: object
                           properties:
-                            type: array
                             items:
                               type: object
                               properties:

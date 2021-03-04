@@ -288,6 +288,7 @@ paths:
                         description: Configuration values according the track type.
       responses:
         '200':
+          description: Success
           content:
             application/json:
               schema:
@@ -600,43 +601,9 @@ paths:
           description: The marketplace identifier
           schema:
             type: string
-        - name: external_reference
-          in: query
-          description: The external reference
-          schema:
-            type: string
-        - name: external_reference
-          in: query
-          description: The external reference
-          schema:
-            type: string
-        - name: external_reference
-          in: query
-          description: The external reference
-          schema:
-            type: string
-        - name: external_reference
-          in: query
-          description: The external reference
-          schema:
-            type: string
-        - name: external_reference
-          in: query
-          description: The external reference
-          schema:
-            type: string
-        - name: external_reference
-          in: query
-          description: The external reference
-          schema:
-            type: string
-        - name: external_reference
-          in: query
-          description: The external reference
-          schema:
-            type: string
       responses:
         '200':
+          description: Success
           content:
             application/json:
               schema:
@@ -782,10 +749,12 @@ paths:
         - name: id
           in: path
           description: The preference's ID
+          required: true
           schema:
             type: string
       responses:
         '200':
+          description: Success
           content:
             application/json:
               schema:
@@ -1081,6 +1050,7 @@ paths:
         - name: id
           in: path
           description: The preference's ID
+          required: true
           schema:
             type: string
       requestBody:

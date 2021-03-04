@@ -22,6 +22,7 @@ paths:
             example: 12123adfasdf123u4u
       responses:
         '200':
+          description: Success
           content:
             application/json:
               schema:
@@ -151,7 +152,6 @@ paths:
                 name:
                   type: string
                   description: Store name.
-                  required: true
                 business_hours:
                   type: string
                   description: >-
@@ -163,7 +163,6 @@ paths:
                 location:
                   type: object
                   description: Store location.
-                  required: true
                   properties:
                     zip_code:
                       type: string
@@ -171,32 +170,27 @@ paths:
                     street_number:
                       type: number
                       description: Number.
-                      required: true
                     street_name:
                       type: string
                       description: Street name.
-                      required: true
                     city_name:
                       type: string
                       description: City.
-                      required: true
                     state_name:
                       type: object
                       description: State.
-                      required: true
                     latitude:
                       type: string
                       description: Latitude.
-                      required: true
                     logitude:
                       type: string
                       description: Longitude.
-                      required: true
                     reference:
                       type: string
                       description: Reference.
       responses:
         '200':
+          description: Success
           content:
             application/json:
               schema:
@@ -319,6 +313,7 @@ paths:
             example: 12123adfasdf123u4u
       responses:
         '200':
+          description: Success
           content:
             application/json:
               schema:
@@ -484,7 +479,6 @@ paths:
                 name:
                   type: string
                   description: Store name.
-                  required: true
                 business_hours:
                   type: string
                   description: >-
@@ -493,7 +487,6 @@ paths:
                 location:
                   type: object
                   description: Store location.
-                  required: true
                   properties:
                     zip_code:
                       type: string
@@ -501,27 +494,21 @@ paths:
                     street_number:
                       type: number
                       description: Number.
-                      required: true
                     street_name:
                       type: string
                       description: Street name.
-                      required: true
                     city_name:
                       type: string
                       description: City.
-                      required: true
                     state_name:
                       type: object
                       description: State.
-                      required: true
                     latitude:
                       type: string
                       description: Latitude.
-                      required: true
                     logitude:
                       type: string
                       description: Longitude.
-                      required: true
                     reference:
                       type: string
                       description: Reference.

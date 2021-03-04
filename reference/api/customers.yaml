@@ -16,6 +16,7 @@ paths:
         $ref: '#/schemas/customer'
       responses:
         '200':
+          description: success
           content:
             application/json:
               schema:
@@ -99,7 +100,6 @@ paths:
                     description: date_last_updated
                   metadata:
                     type: object
-                    properties: null
                     description: metadata
                   default_card:
                     type: string
@@ -113,13 +113,11 @@ paths:
                     type: array
                     items:
                       type: object
-                      properties: null
                     description: cards
                   addresses:
                     type: array
                     items:
                       type: object
-                      properties: null
                     description: addresses
                   live_mode:
                     type: boolean
@@ -211,6 +209,14 @@ paths:
         - $ref: '#/tags/link-de-pago/description'
       summary: Update customer's data
       description: Operation responsable for update customer data on Mercado Pago.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Customer's Id
+          schema:
+            type: number
+            example: 123123
       requestBody:
         $ref: '#/schemas/customer'
       responses:
@@ -300,8 +306,17 @@ paths:
         - $ref: '#/tags/link-de-pago/description'
       summary: Get customer's data
       description: Operation responsable for retrieve customer data saved on Mercado Pago.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Customer's Id
+          schema:
+            type: number
+            example: 123123
       responses:
         '200':
+          description: success
           content:
             application/json:
               schema:
@@ -469,7 +484,7 @@ paths:
                         format: date
                         description: Card's last modified date.
                   addresses:
-                    type: object List
+                    type: object
                     description: Customer's addresses.
                     properties:
                       id:
@@ -656,6 +671,7 @@ paths:
             example: jhon@doe.com
       responses:
         '200':
+          description: success
           content:
             application/json:
               schema:
@@ -706,13 +722,11 @@ paths:
                           type: array
                           items:
                             type: object
-                            properties: null
                           description: addresses
                         cards:
                           type: array
                           items:
                             type: object
-                            properties: null
                           description: cards
                         date_created:
                           type: string
@@ -771,7 +785,6 @@ paths:
                           description: live_mode
                         metadata:
                           type: object
-                          properties: null
                           description: metadata
                         phone:
                           type: object

@@ -22,6 +22,7 @@ paths:
             example: 12123adfasdf123u4u
       responses:
         '200':
+          description: success
           content:
             application/json:
               schema:

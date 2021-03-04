@@ -36,17 +36,14 @@ paths:
                 user_id:
                   type: string
                   description: User identifier.
-                  required: true
                 external_id:
                   type: string
                   description: >-
                     Unique identifier of the Point of Sale defined by integrator
                     system.
-                  required: true
                 external_reference:
                   type: string
                   description: Reference you can synchronize with your sale system.
-                  required: true
                 notification_url:
                   type: string
                   description: >-
@@ -58,7 +55,6 @@ paths:
                 items:
                   type: object
                   description: Information on the products involved in the order.
-                  required: true
                   properties:
                     id:
                       type: string
@@ -66,28 +62,24 @@ paths:
                     title:
                       type: string
                       description: Item title.
-                      required: true
                     currency_id:
                       type: string
                       description: Currency identifier in ISO_4217 format.
-                      required: true
                     unit_price:
                       type: number
                       description: Unit price of the item (maximum 2 decimals).
-                      required: true
                     quantity:
                       type: number
                       description: Item quantity.
-                      required: true
                     description:
                       type: string
                       description: Item description.
-                      required: true
                     picture_url:
                       type: string
                       description: Item image URL.
       responses:
         '200':
+          description: Success
           content:
             application/json:
               schema:
@@ -137,7 +129,6 @@ paths:
                     description: collector_id
                   collector:
                     type: object
-                    properties: null
                     description: collector
                   total_amount:
                     type: number
@@ -281,7 +272,6 @@ paths:
                     description: processing_modes
                   internal_metadata:
                     type: object
-                    properties: null
                     description: internal_metadata
         '400':
           description: Error

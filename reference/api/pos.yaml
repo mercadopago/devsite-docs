@@ -21,11 +21,9 @@ paths:
                 name:
                   type: string
                   description: Name of the POS.
-                  required: true
                 fixed_amount:
                   type: boolean
                   description: Define if the customer can insert the amount to be paid.
-                  required: true
                 category:
                   type: number
                   description: >-
@@ -39,7 +37,6 @@ paths:
                   description: >-
                     External_id of the store to which the pos belongs defined by
                     integrator system.
-                  required: true
                 external_id:
                   type: string
                   description: Unique identifier of the pos defined by integrator system.
@@ -51,6 +48,7 @@ paths:
                     model.
       responses:
         '200':
+          description: Success
           content:
             application/json:
               schema:
@@ -205,6 +203,7 @@ paths:
       description: Get all POS.
       responses:
         '200':
+          description: Success
           content:
             application/json:
               schema:
@@ -331,6 +330,7 @@ paths:
             example: 12123adfasdf123u4u
       responses:
         '200':
+          description: Success
           content:
             application/json:
               schema:
@@ -393,11 +393,9 @@ paths:
                 name:
                   type: string
                   description: Name of the POS.
-                  required: true
                 fixed_amount:
                   type: boolean
                   description: Define if the customer can insert the amount to be paid.
-                  required: true
                 category:
                   type: number
                   description: >-
@@ -411,7 +409,6 @@ paths:
                   description: >-
                     External_id of the store to which the pos belongs defined by
                     integrator system.
-                  required: true
                 url:
                   type: string
                   description: >-
