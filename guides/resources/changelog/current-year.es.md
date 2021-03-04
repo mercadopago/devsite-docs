@@ -31,7 +31,7 @@ Ahora puedes agregar a Pix como medio de pago para comenzar a recibir dinero al 
 >
 > PRODUCT: SDK JAVA
 
-Lanzamos una nueva versión del SDK NodeJS 1.9.0.
+Lanzamos una nueva versión del SDK Java 1.9.0.
 
 > GIT
 >
