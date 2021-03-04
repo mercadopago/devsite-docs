@@ -3,6 +3,44 @@
 Descubra tudo sobre as novas versões e atualizações das integrações do Mercado Pago.
 
 ---
+## Março 2021
+
+### 4 de março
+
+> CHANGELOG
+>
+> Nova versão SDK Java
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK Java
+
+Lançamos uma nova versão do SDK NodeJS 1.9.0.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.9.0).
+
+> CHANGELOG
+>
+> Nova versão SDK .NET
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK .NET
+
+Lançamos uma nova versão do SDK NodeJS 1.10.0.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.10.0).
+
+---
+
 ## Fevereiro 2021
 
 ----[mco]----

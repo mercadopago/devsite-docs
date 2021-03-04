@@ -3,6 +3,44 @@
 Find out everything about the new versions and updates of Mercado Pago integrations.
 
 ---
+## March 2021
+
+### March 4th
+
+> CHANGELOG
+>
+> New version of SDK Java
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK Java
+
+We have released a new version of SDK Java 1.9.0.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-java/releases/tag/1.9.0) for further details regarding this release.
+
+> CHANGELOG
+>
+> New version of SDK .NET
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK .NET
+
+We have released a new version of SDK .NET 1.10.0.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/dx-dotnet/releases/tag/1.10.0) for further details regarding this release.
+
+---
+
 ## February 2021
 
 ----[mco]----
