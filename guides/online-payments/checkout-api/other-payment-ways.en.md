@@ -3549,7 +3549,7 @@ The `transaction_data` will provide data to make the payment available via QR co
 
 ### Data to make payment
 
-To make the payment, render the QR code to show it. You can also add an option to copy&paste payment code to make the transaction via web home banking. 
+To make the payment, render the QR code to show it. You can also add an option to copy and paste payment code to make the transaction via Internet Banking. 
 
 Add `qr_code_base64` to show the QR code. For example, you can render it like this:
 
