@@ -60,7 +60,7 @@ Este produto permite ao **cliente efetuar o pagamento no ambiente da loja**, sem
 
 ### Checkout Pro
 
-O Checkout Pro é a **integração que te permite cobrar no ambiente do Mercado Pago**, contando com as **formas de pagamentos adicionais** como: Pix, boleto parcelado, débito virtual da caixa e carteira digital do Mercado Pago.
+O Checkout Pro é a **integração que te permite cobrar no ambiente do Mercado Pago**, contando com as **formas de pagamentos adicionais** como: Pix, boleto parcelado, débito virtual da Caixa e carteira digital do Mercado Pago.
 
 > Conheça mais sobre as opções de pagamentos que o [Checkout Pro oferece](https://conteudo.mercadopago.com.br/o-que-e-o-checkout-mercado-pago).
 
