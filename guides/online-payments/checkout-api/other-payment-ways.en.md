@@ -3557,7 +3557,7 @@ Add `qr_code_base64` to show the QR code. For example, you can render it like th
 <img src={`data:image/jpeg;base64,${qr_code_base64}`/>
 ```
 
-To show the payment code for copy&paste, you can add `qr_code` like this:
+To show the payment code for copy and paste, you can add `qr_code` like this:
 
 ```html
 <label for="copy">Copy Hash:</label>
