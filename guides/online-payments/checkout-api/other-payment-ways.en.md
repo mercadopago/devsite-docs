@@ -3576,7 +3576,7 @@ To show the payment code for copy&paste, you can add `qr_code` like this:
 
 ## Payments date of expiration
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Voucher payment
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boleto payments
 
 The default expiration date for boleto payments is 3 days. If you want, you can change this date by sending the `date_of_expiration` field in the payment creation request. The configured date must be between 1 and 30 days from the issue date.
 
