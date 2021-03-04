@@ -3529,7 +3529,7 @@ El valor `transaction_data` te brindará los datos para disponibilizar la opció
 | Atributos| Descripción |
 | --- | --- |
 | `qr_code_base64` | Dato para renderizar el código QR.|
-| `qr_code` | Dato para armar un botón que permitirá copiar y pegar el código.|
+| `qr_code` | Dato para armar un código de pago para copiar y pegar. |
 
 ```json
 [
