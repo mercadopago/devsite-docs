@@ -57,7 +57,7 @@ Se uma parcela está com o status `waiting for gateway` e quando o pagamento é 
 
 Caso a parcela não possa ser cobrada na quarta tentativa, ela estará automaticamente no status `processed` associada a um pagamento recusado.
 
-Após 3 parcelas com pagamentos recusados a assinatura será automaticamente cancelada e a conta integrada será notificada do cancelamento da assinatura por email.
+Após 3 parcelas com pagamentos recusados a assinatura será automaticamente cancelada e a conta integrada será notificada do cancelamento da assinatura por e-mail.
 
 
 > NOTE
