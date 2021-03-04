@@ -44,7 +44,7 @@ By including this parameter, the redirect URL will look like this:
 
 You will now receive the authorization code and the secure identifier at the specified return URL:
 
-`hhttp://www.URL_de_retorno.com?code=AUTHORIZATION_CODE&state=id=RANDOM_ID`
+`https://www.URL_de_retorno.com?code=AUTHORIZATION_CODE&state=id=RANDOM_ID`
 
 > Don’t send confidential information or credentials of the Mercado Pago account.
 
