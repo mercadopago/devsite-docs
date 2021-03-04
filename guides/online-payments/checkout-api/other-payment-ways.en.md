@@ -3640,7 +3640,7 @@ By default, Pix payments expire in 24 hours. You can change this field  `date_of
 [[[
 ```php
 ===
-La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 $payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
