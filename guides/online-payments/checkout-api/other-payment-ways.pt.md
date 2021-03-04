@@ -3320,7 +3320,7 @@ Ofereça a opção de receber pagamentos no instante com Pix de qualquer banco o
 
 Para começar, você deve ter cadastrada uma chave Pix na conta do vendedor. Este dado é único, serve para identificar sua conta e permitirá que você utilize as funcionalidades do meio de pagamento. 
 
-[Conheça como criar uma chave Pix](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/17843)
+[Conheça como criar uma chave Pix](https://www.mercadopago.com.br/ajuda/17843)
 
 ### Dados para o pagamento
 
