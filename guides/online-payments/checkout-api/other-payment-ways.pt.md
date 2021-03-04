@@ -2923,7 +2923,7 @@ curl -X GET \
 
 <br>
 
-O resultado será uma lista com os meios de pagamento e suas propriedades. Por exemplo, os meios de pagamento do `payment_type_id` que tenham como valor `ticket` se referem aos meios de pagamento em dinheiro e as de `bank_transfer` para depósitos bancários.
+O resultado será uma lista com os meios de pagamento e suas propriedades. Por exemplo, os meios de pagamento do `payment_type_id` que tenham como valor `ticket` se referem aos meios de pagamento em dinheiro e as de `bank_transfer` para transferências bancárias.
 
 Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por isso você precisa filtrar as formas de pagamento que queira oferecer de acordo com a [lista de pagamentos disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_meios_de_pagamento).
 
@@ -2955,7 +2955,8 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
      "id": "pix",
        "name": "PIX",
        "payment_type_id": "bank_transfer",
-       "status": "active",       "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
+       "status": "active",       
+       "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
        "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
         "deferred_capture": "does_not_apply",
        "settings": [],
@@ -3074,7 +3075,7 @@ window.Mercadopago.getIdentificationTypes();
 >
 > Receber pagamentos com boleto bancário ou em lotéricas
 
-Luego de [capturar los datos](#bookmark_capture_os_dados_para_pagamento) con el formulario, para receber pagamentos em boleto ou pagamento em lotérica envie o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+Após [capturar os dados](#bookmark_capture_os_dados_para_pagamento) com o formulário, con el formulario, para receber pagamentos em boleto ou pagamento em lotérica envie o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
 
 Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs.
 
@@ -3319,11 +3320,11 @@ Ofereça a opção de receber pagamentos no instante com Pix de qualquer banco o
 
 Para começar, você deve ter cadastrada uma chave Pix na conta do vendedor. Este dado é único, serve para identificar sua conta e permitirá que você utilize as funcionalidades do meio de pagamento. 
 
-[Conheça como criar uma chave Pix](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/17843)
+[Conheça como criar uma chave Pix](https://www.mercadopago.com.br/ajuda/17843)
 
 ### Dados para o pagamento
 
-Após [capturar os dados](#bookmark_capture_os_dados_para_pagamento) com o formulário, para poder receber pagamentos com Pix, você deve encaminhar o e-mail do comprador, o tipo e número de carteira de identidade, o meio de pagamento e o detalhe do valor.
+Após [capturar os dados](#bookmark_capture_os_dados_para_pagamento) com o formulário, para poder receber pagamentos com Pix, você deve encaminhar o e-mail do comprador, o tipo e número de documento, o meio de pagamento e o detalhe do valor.
 
 
 [[[
@@ -3567,7 +3568,7 @@ O valor `transaction_data` oferecerá os dados para disponibilizar a opção de 
 ```
 ### Dados para realizar o pagamento 
 
-Para o pagamento ser realizado, você deverá renderizar o código QR para poder mostrá-lo. Você também pode adicionar uma opção para copiar e colar o código de pagamento, que permitirá realizar a transação a partir de Bancos pela Internet. 
+Para o pagamento ser realizado, você deverá renderizar o código QR para poder mostrá-lo. Você também pode adicionar uma opção para copiar e colar o código de pagamento, que permitirá realizar a transação a partir de Internet Banking. 
 
 Você tem que adicionar o `qr_code_base64` para poder mostrar o código QR. Por exemplo, pode renderizar o código da seguinte forma:
 
@@ -3584,7 +3585,7 @@ Para mostrar a opção que permitirá copiar e colar o código de pagamento, voc
 
 > NOTE
 >
-> Para você levar em conta
+> Observações
 >
 >  * Por default, o cliente tem 24 horas para realizar o pagamento. 
 >  * O código pode ser utilizado somente uma vez.

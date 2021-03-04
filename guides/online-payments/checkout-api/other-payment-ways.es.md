@@ -3319,7 +3319,7 @@ Ofrece la opción de recibir pagos al instante con Pix desde cualquier banco o b
 
 Para comenzar, debes tener registrada una llave Pix en la cuenta del vendedor. Este dato es único, sirve para identificar tu cuenta y te permitirá utilizar las funcionalidades del medio de pago.  
 
-[Conoce cómo crear una llave Pix.](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/17843)
+[Conoce cómo crear una llave Pix](https://www.mercadopago.com.br/ajuda/17843)
 
 ### Datos para el pago 
 
@@ -3529,7 +3529,7 @@ El valor `transaction_data` te brindará los datos para disponibilizar la opció
 | Atributos| Descripción |
 | --- | --- |
 | `qr_code_base64` | Dato para renderizar el código QR.|
-| `qr_code` | Dato para armar un botón que permitirá copiar y pegar el código.|
+| `qr_code` | Dato para armar un código de pago para copiar y pegar. |
 
 ```json
 [
@@ -3582,7 +3582,7 @@ Para mostrar la opción que te permitirá copiar y pegar el código de pago, pue
 
 > NOTE
 >
-> Nota
+> Ten en cuenta
 >
 >  * Por defecto, el cliente tiene 24 horas para realizar el pago. 
 >  * El código puede ser utilizado una sola vez.

@@ -2907,7 +2907,7 @@ curl -X GET \
 
 <br>
 
-The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method and `bank_transfer` refer to bank wire transfers.
+The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method and `bank_transfer` refer to bank transfers.
 
 Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_payment_methods).
 
@@ -3296,14 +3296,14 @@ In the `external_resource_url` field you will find an address with payment instr
 >
 > Receive payments with Pix
 
-You can receive immediate payment with Pix from any bank or digital wallet using QR or payment code.
+You can receive payment immediately with Pix from any bank or digital wallet using QR code or payment code.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prerequisite
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get a Pix key
 
 To start, you will need a Pix key registered in the seller's account. This is unique data for account identification to use the payment method functionality. 
 
-[Learn how to create a Pix key](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/17843)
+[Learn how to create a Pix key](https://www.mercadopago.com.br/ajuda/17843)
 
 ### Payment data 
 
@@ -3512,7 +3512,7 @@ The `transaction_data` will provide data to make the payment available via QR co
 | Attributes| Description |
 | --- | --- |
 | `qr_code_base64` | Data for QR code render.|
-| `qr_code` | Data to make payment code available for copy&paste.|
+| `qr_code` | Data to make payment code available for copy and paste. |
 
 
 ```json
@@ -3550,7 +3550,7 @@ The `transaction_data` will provide data to make the payment available via QR co
 
 ### Data to make payment
 
-To make the payment, render the QR code to show it. You can also add an option to copy&paste payment code to make the transaction via web home banking. 
+To make the payment, render the QR code to show it. You can also add an option to copy and paste payment code to make the transaction via Internet Banking. 
 
 Add `qr_code_base64` to show the QR code. For example, you can render it like this:
 
@@ -3558,7 +3558,7 @@ Add `qr_code_base64` to show the QR code. For example, you can render it like th
 <img src={`data:image/jpeg;base64,${qr_code_base64}`/>
 ```
 
-To show the payment code for copy&paste, you can add `qr_code` like this:
+To show the payment code for copy and paste, you can add `qr_code` like this:
 
 ```html
 <label for="copy">Copy Hash:</label>
@@ -3575,9 +3575,9 @@ To show the payment code for copy&paste, you can add `qr_code` like this:
 <br>
 
 
-## Payment date of expiration
+## Payments date of expiration
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Voucher payment
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boleto payments
 
 The default expiration date for boleto payments is 3 days. If you want, you can change this date by sending the `date_of_expiration` field in the payment creation request. The configured date must be between 1 and 30 days from the issue date.
 
@@ -3641,7 +3641,7 @@ By default, Pix payments expire in 24 hours. You can change this field  `date_of
 [[[
 ```php
 ===
-La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 $payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
