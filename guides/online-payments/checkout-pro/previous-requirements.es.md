@@ -15,14 +15,14 @@ Sabemos que algunos términos son nuevos. Antes de empezar, te los dejamos a man
 
 ## Requisitos previos
 
-Para continuar, verifica los requisitos previos necesarios:
+Ten en cuenta estos aspectos antes de empezar a integrar: 
 
-### 1. Acceso a cuenta de Mercado Pago o Mercado Libre
+### 1. Accede a tu cuenta de Mercado Pago o Mercado Libre
 Para poder comenzar la integración, es necesario **contar con una cuenta de Mercado Pago o Mercado Libre**.
-Si aún no tienes una, puedes [crear una cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]) cuando quieras.
+Puedes [Ingresar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/overview) a una cuenta de Mercado Pago o de Mercado Libre que ya exista o [Crear una cuenta nueva](https://www.mercadopago[FAKER][URL][DOMAIN]) en Mercado Pago.
 
-### 2. Instalación de SDK de Mercado Pago
-**Instala el SDK oficial** para simplificar tu interacción con nuestras APIs.
+### 2. Instala la SDK de Mercado Pago
+**Instala la SDK oficial** para simplificar tu interacción con nuestras APIs.
 
 [[[
 ```php
@@ -68,6 +68,13 @@ Para hacerlo ejecuta el siguiente comando en la consola del NuGet Package Manage
 PM> Install-Package mercadopago-sdk -Version 1.0.57
 ```
 ]]]
+
+### 3. Ten a mano tus credenciales
+
+Las credenciales son las **claves que te proporcionamos para que puedas configurar tu integración**. 
+Para poder encontrarlas, ve la [sección de Credenciales]([FAKER][CREDENTIALS][URL]).
+
+> ¿Tienes dudas sobre credenciales? Puedes consultar nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials).
 
 ---
 

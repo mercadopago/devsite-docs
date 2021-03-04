@@ -29,11 +29,13 @@ Sabemos que alguns termos são novos. Antes de começar, os deixamos perto de su
 
 ## Requisitos prévios
 
-Para continuar, é necessário realizar o passos a seguir: 
+Observe estes pontos antes de começar: 
 
-### 1. Acesso à conta de Mercado Pago ou Mercado Livre
+### 1. Acesse uma conta do Mercado Pago ou do Mercado Livre
 
-Para poder começar a integração, é necessário **contar com uma conta de Mercado Pago ou Mercado Livre**. Se ainda não tiver uma, poderá [criar uma conta de Mercado Pago](https://www.mercadopago.com.br) quando quiser.
+Para poder começar a integração, é necessário **contar com uma conta de Mercado Pago ou Mercado Livre**. 
+
+Você pode [Entrar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/overview) uma conta existente no Mercado Pago ou no Mercado Livre ou [Criar uma nova conta](https://www.mercadopago[FAKER][URL][DOMAIN]) no Mercado Pago.
 
 > NOTE
 > 

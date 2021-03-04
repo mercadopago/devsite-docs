@@ -27,13 +27,13 @@ Please note that the minimum amount allowed to create a subscription is $ 10 and
 ## First steps
 
 ### Access to the Mercado Pago or Mercado Libre account
-In order to start the integration, it is necessary to have a Mercado Pago or Mercado Libre account.
+In order to start the integration, it is necessary to **have a Mercado Pago or Mercado Libre account**.
 
-If you don't have one yet, you can [create a account](https://www.mercadopago[FAKER][URL][DOMAIN]) whenever you want.
+You can [Sign in](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/overview) an existing Mercado Pago or Mercado Libre account [Create a new account](https://www.mercadopago[FAKER][URL][DOMAIN]) at Mercado Pago.
 
 ### Keep your credentials handy
 
-The credentials are the keys that we provide you with, so that you can configure your integration. For this case, you will use a public key and a private key.
+The credentials are the **keys that we provide you with, so that you can configure your integration**. For this case, you will use a public key and a private key.
 
 To find them, go to the [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developer/panel/credentials) section.
 
