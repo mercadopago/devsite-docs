@@ -3582,7 +3582,7 @@ Para mostrar la opción que te permitirá copiar y pegar el código de pago, pue
 
 > NOTE
 >
-> Nota
+> Ten en cuenta
 >
 >  * Por defecto, el cliente tiene 24 horas para realizar el pago. 
 >  * El código puede ser utilizado una sola vez.
