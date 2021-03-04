@@ -29,7 +29,7 @@ Now you can add Pix as method of payment and receive money immediately, every da
 >
 > NEW_VERSION: NEW VERSION
 >
-> PRODUCT: SDK Java
+> PRODUCT: SDK JAVA
 
 We have released a new version of SDK Java 1.9.0.
 
