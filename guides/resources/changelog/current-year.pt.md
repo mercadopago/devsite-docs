@@ -13,7 +13,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 >
 > Pix como novo meio de pagamento em Checkout Transparente
 >
-> NEWS: NOVEDADES
+> NEWS: NOVIDADES
 >
 > PRODUCT: CHECKOUT TRANSPARENTE 
 
