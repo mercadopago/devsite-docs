@@ -7,6 +7,22 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ### 4 de marzo
 
+----[mlb]----
+
+> CHANGELOG
+>
+> Pix como nuevo medio de pago en Checkout Transparente 
+>
+> NEWS: NOVEDADES
+>
+> PRODUCT: CHECKOUT TRANSPARENTE 
+
+Ahora puedes agregar a Pix como medio de pago para comenzar a recibir dinero al instante, todos los días y desde cualquier banco o billetera. Solo debes tener tu llave y sumar a Pix en tu formulario de pago.
+
+[Comenzar a recibir pagos con Pix](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_recibir_pagos_con_pix)
+
+------------
+
 > CHANGELOG
 >
 > Nueva versión SDK Java

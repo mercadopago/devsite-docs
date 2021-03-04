@@ -7,6 +7,22 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ### March 4th
 
+----[mlb]----
+
+> CHANGELOG
+>
+> Pix as new payment method in Checkout API
+>
+> NEWS: NEWS
+>
+> PRODUCT: CHECKOUT API 
+
+Now you can add Pix as method of payment and receive money immediately, every day from any bank or wallet. You only need to have a key and add Pix to your payment form. 
+
+[Start receiving payments with Pix](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_receive_payments_with_pix)
+
+------------
+
 > CHANGELOG
 >
 > New version of SDK Java
