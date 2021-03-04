@@ -3553,7 +3553,7 @@ Para mostrar a opção que permitirá copiar e colar o código de pagamento, voc
 
 > NOTE
 >
-> Para você levar em conta
+> Observações
 >
 >  * Por default, o cliente tem 24 horas para realizar o pagamento. 
 >  * O código pode ser utilizado somente uma vez.
