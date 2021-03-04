@@ -3512,7 +3512,7 @@ The `transaction_data` will provide data to make the payment available via QR co
 | Attributes| Description |
 | --- | --- |
 | `qr_code_base64` | Data for QR code render.|
-| `qr_code` | Data to make payment code available for copy&paste.|
+| `qr_code` | Data to make payment code available for copy and paste. |
 
 ```json
 [
