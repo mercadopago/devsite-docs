@@ -3075,7 +3075,7 @@ window.Mercadopago.getIdentificationTypes();
 >
 > Receber pagamentos com boleto bancário ou em lotéricas
 
-Luego de [capturar los datos](#bookmark_capture_os_dados_para_pagamento) con el formulario, para receber pagamentos em boleto ou pagamento em lotérica envie o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+Após [capturar os dados](#bookmark_capture_os_dados_para_pagamento) com o formulário, con el formulario, para receber pagamentos em boleto ou pagamento em lotérica envie o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
 
 Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs.
 
