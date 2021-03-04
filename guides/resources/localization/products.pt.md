@@ -111,7 +111,7 @@ Assinaturas | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmas
 | Pagamentos | Link de pagamento | N/A |
 | Pagamentos | Checkout Pro | N/A |
 | Pagamentos | Mobile Checkout | `account_money`, `pix` |
-| Pagamentos | Checkout Transparente | `pix` |
+| Pagamentos | Checkout Transparente | N/A |
 | Assinaturas | Link de pagamento | `bolbradesco`, `giftcard`, `pix` |
 | Assinaturas | Checkout Pro | `bolbradesco`, `giftcard`, `pix` |
 | Assinaturas | Checkout Transparente | `bolbradesco`, `giftcard`, `pix` |
