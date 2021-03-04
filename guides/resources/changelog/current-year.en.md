@@ -14,7 +14,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 >
 > NEWS: NEWS
 >
-> PRODUCT: CHECKOUT TRANSPARENTE 
+> PRODUCT: CHECKOUT API 
 
 Now you can add Pix as method of payment and receive money immediately, every day from any bank or wallet. You only need to have a key and add Pix to your payment form. 
 
