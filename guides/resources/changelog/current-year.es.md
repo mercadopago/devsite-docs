@@ -47,7 +47,7 @@ Lanzamos una nueva versión del SDK Java 1.9.0.
 >
 > PRODUCT: SDK .NET
 
-Lanzamos una nueva versión del SDK NodeJS 1.10.0.
+Lanzamos una nueva versión del SDK .NET 1.10.0.
 
 > GIT
 >
