@@ -3,6 +3,80 @@
 Find out everything about the new versions and updates of Mercado Pago integrations.
 
 ---
+## March 2021
+
+### March 4th
+
+----[mlb]----
+
+> CHANGELOG
+>
+> Pix as new payment method in Checkout API
+>
+> NEWS: NEWS
+>
+> PRODUCT: CHECKOUT API 
+
+Now you can add Pix as method of payment and receive money immediately, every day from any bank or wallet. You only need to have a key and add Pix to your payment form. 
+
+[Start receiving payments with Pix](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_receive_payments_with_pix)
+
+------------
+
+> CHANGELOG
+>
+> New version of SDK Java
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK JAVA
+
+We have released a new version of SDK Java 1.9.0.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-java/releases/tag/1.9.0) for further details regarding this release.
+
+> CHANGELOG
+>
+> New version of SDK .NET
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK .NET
+
+We have released a new version of SDK .NET 1.10.0.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/dx-dotnet/releases/tag/1.10.0) for further details regarding this release.
+
+### March 3rd
+
+> CHANGELOG
+>
+> New Magento 2 plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: MAGENTO 2
+
+We have released the new version 3.7.2 for Magento 2.
+
+[Go to Magento 2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.7.2) for further details regarding this release.
+
+---
+
 ## February 2021
 
 ----[mco]----
