@@ -53,7 +53,7 @@ Lanzamos una nueva versión del SDK .NET 1.10.0.
 >
 > GitHub
 >
-> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.10.0).
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-dotnet/releases/tag/1.10.0).
 
 ### 3 de marzo
 
