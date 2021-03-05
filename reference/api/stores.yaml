@@ -543,8 +543,8 @@ paths:
       tags:
         - $ref: '#/tags/qr-code/description'
         - $ref: '#/tags/link-de-pago/description'
-      summary: Update a Store
-      description: Update a Store.
+      summary: Remove a Store
+      description: Remove a Store.
       parameters:
         - name: user_id
           in: path
