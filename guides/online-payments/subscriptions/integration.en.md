@@ -219,6 +219,12 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 }
 ```
 
+> NOTE
+> 
+> Validation payment
+> 
+> To prove that the card is valid, we make a validation payment with a minimum amount. If the payment is successful, we proceed with the return of that payment. The amount may differ according to each country.
+
 ### Create subscription with pending payment
 
 You can create a subscription with `pending` status and no associated payment method. 

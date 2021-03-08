@@ -52,7 +52,7 @@ Puedes consultar y configurar las [tasas y plazas](https://www.mercadopago.com.b
 
 ### Checkout Transparente
 
-Permite que el **cliente finalice la compra en tu sitio**, sin ser redireccionado para otro.
+Este producto permite que el **cliente finalice el pago en el entorno de la tienda** sin ser redirigido a otro sitio.
 
 1. Accede a las [configuraciones de formas de pago](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) en el menú de Loja Integrada y haz clic en “Mercado Pago”.
 2. En el ítem “Checkout Transparente” cambia a la opción “Activado”.
@@ -60,9 +60,7 @@ Permite que el **cliente finalice la compra en tu sitio**, sin ser redireccionad
 
 ### Checkout Pro
 
-En este caso, el **comprador será redireccionado a Mercado Pago para realizar el pago** y terminar la compra.
-
-Checkout Pro es la **integración que te permite cobrar en el entorno de Mercado Pago**, con **métodos de pago adicionales** como: Pix, boleto a plazos, débito virtual caixa, billetera digital de Mercado Pago.
+Checkout Pro es la **integración que te permite cobrar en el entorno de Mercado Pago**, con **métodos de pago adicionales** como: Pix, boleto en cuotas, débito virtual de Caixa y billetera digital de Mercado Pago.
 
 > Obtenga más información sobre las opciones de pago que el [Checkout Pro ofrece](https://conteudo.mercadopago.com.br/o-que-e-o-checkout-mercado-pago).
 
@@ -85,7 +83,7 @@ Completa los datos de tu tienda que quieras que aparezcan al realizar un pago:
  **Ofrece boleto como opción de pago**:
 
 1. Accede a las [configuraciones de formas de pago](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) en el menú de Loja Integrada y haz clic en “Mercado Pago”.
-2. En el ítem “Boleto bancário” cambia a la opción “Activado”.
+2. En el ítem “Boleto bancario” cambia a la opción “Activado”.
 3. Luego, configura un valor mínimo para estos pagos. En caso de querer recibir todos, deja el campo con valor 0.
 4. Y si quieres que tus pagos con boleto tengan un descuento, marca la opción “Usar descuento en tus boletos?” y completa el porcentaje que quieras ofrecer como descuento en “Descuento aplicado”.
 5. Finalmente, haz clic en “Guardar cambios”.

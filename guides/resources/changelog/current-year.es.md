@@ -3,6 +3,80 @@
 Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones de Mercado Pago.
 
 ---
+## Marzo 2021
+
+### 4 de marzo
+
+----[mlb]----
+
+> CHANGELOG
+>
+> Pix como nuevo medio de pago en Checkout Transparente 
+>
+> NEWS: NOVEDADES
+>
+> PRODUCT: CHECKOUT TRANSPARENTE 
+
+Ahora puedes agregar a Pix como medio de pago para comenzar a recibir dinero al instante, todos los días y desde cualquier banco o billetera. Solo debes tener tu llave y sumar a Pix en tu formulario de pago.
+
+[Comenzar a recibir pagos con Pix](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_recibir_pagos_con_pix)
+
+------------
+
+> CHANGELOG
+>
+> Nueva versión SDK Java
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK JAVA
+
+Lanzamos una nueva versión del SDK Java 1.9.0.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-java/releases/tag/1.9.0).
+
+> CHANGELOG
+>
+> Nueva versión SDK .NET
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK .NET
+
+Lanzamos una nueva versión del SDK .NET 1.10.0.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-dotnet/releases/tag/1.10.0).
+
+### 3 de marzo
+
+> CHANGELOG
+>
+> Nueva versión Magento 2
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: MAGENTO 2
+
+Lanzamos la nueva versión 3.7.2 para Magento 2.
+
+[Ir a documentación de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-magento2/releases/tag/v3.7.2).
+
+---
+
 ## Febrero 2021
 
 ----[mco]----
