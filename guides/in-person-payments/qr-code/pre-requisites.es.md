@@ -31,7 +31,7 @@ Sabemos que algunos términos son nuevos. Antes de empezar, te los dejamos a man
 
 Ten en cuenta estos aspectos antes de empezar:
 
-### 1. Accede a una cuenta de Mercado Pago o Mercado Libre
+### 1. Accede a una cuenta
 
 Para poder comenzar la integración, es necesario **contar con una cuenta de Mercado Pago o Mercado Libre**. 
 Puedes [Ingresar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/overview) a una cuenta de Mercado Pago o de Mercado Libre que ya exista o [Crear una cuenta nueva](https://www.mercadopago[FAKER][URL][DOMAIN]) en Mercado Pago.
