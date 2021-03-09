@@ -28,7 +28,7 @@ Ten en cuenta que el monto mínimo permitido para crear una suscripción es de $
 
 ### Accede a una cuenta de Mercado Pago o Mercado Libre
 
-Para poder comenzar la integración, es necesario **contar con una cuenta de Mercado Pago o Mercado Libre**.git 
+Para poder comenzar la integración, es necesario **contar con una cuenta de Mercado Pago o Mercado Libre**. 
 
 Puedes [Ingresar]([https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/overview](https://www.mercadolibre.com/jms/%5BFAKER%5D%5BGLOBALIZE%5D%5BSITE_ID%5D/lgz/login?platform_id=mp&go=https://www.mercadopago%5BFAKER%5D%5BURL%5D%5BDOMAIN%5D/developers/es/guides/overview)) a una cuenta de Mercado Pago o de Mercado Libre que ya exista o [Crear una cuenta nueva](https://www.mercadopago[FAKER][URL][DOMAIN]) en Mercado Pago.
 
