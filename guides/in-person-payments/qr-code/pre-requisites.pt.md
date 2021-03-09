@@ -31,7 +31,7 @@ Sabemos que alguns termos são novos. Antes de começar, os deixamos perto de su
 
 Observe estes pontos antes de começar: 
 
-### 1. Acesse uma conta do Mercado Pago ou do Mercado Livre
+### 1. Acesse uma conta
 
 Para poder começar a integração, é necessário **contar com uma conta de Mercado Pago ou Mercado Livre**. 
 
