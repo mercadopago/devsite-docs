@@ -26,7 +26,7 @@ Observe que o valor mínimo permitido para criar uma assinatura é de $ 10 e o m
 
 ## Primeiros passos
 
-### Acesse sua conta do Mercado Pago ou do Mercado Livre
+### Acesse uma conta
 
 Para poder começar a integração, é necessário **contar com uma conta do Mercado Pago ou do Mercado Livre**.
 
