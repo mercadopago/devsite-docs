@@ -26,7 +26,7 @@ Ten en cuenta que el monto mínimo permitido para crear una suscripción es de $
 
 ## Primeros pasos
 
-### Accede a una cuenta de Mercado Pago o Mercado Libre
+### Accede a una cuenta
 
 Para poder comenzar la integración, es necesario **contar con una cuenta de Mercado Pago o Mercado Libre**. 
 
