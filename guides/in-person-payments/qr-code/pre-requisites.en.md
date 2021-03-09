@@ -34,7 +34,8 @@ Keep these aspects in mind before you start:
 ### 1. Access to an account
 
 To start the integration, you must **have a Mercado Pago or Mercado Libre account**. 
-You can [Sign in](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/overview) an existing Mercado Pago or Mercado Libre account [Create a new account](https://www.mercadopago[FAKER][URL][DOMAIN]) at Mercado Pago.
+
+You can [Sign in](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/pre-requisites) an existing Mercado Pago or Mercado Libre account [Create a new account](https://www.mercadopago[FAKER][URL][DOMAIN]) at Mercado Pago.
 
 > NOTE
 > 
