@@ -220,20 +220,21 @@ mercadopago.payment.create(payment_data).then(function (data) {
 ```ruby
 
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ACCESS_TOKEN')
 
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 100
-payment.token = 'ff8080814c11e237014c1ff593b57b4d'
-payment.description = 'Title of what you are paying for'
-payment.installments = 1
-payment.payment_method_id = "visa"
-payment.payer = {
-  email: "test_user_19653727@testuser.com"
+payment_object = { 
+  "transaction_amount" : 100,
+  "token" : 'ff8080814c11e237014c1ff593b57b4d',
+  "description" : 'Title of what you are paying for',
+  "installments" : 1,
+  "payment_method_id": "visa",
+  "payer" = {
+      "email" : "test_user_19653727@testuser.com"
 }
 
-payment.save()
+sdk.payment.create(payment_object)
 
+```
 ```
 ]]]
 

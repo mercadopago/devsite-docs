@@ -423,24 +423,24 @@ System.out.println(payment.getStatus());
 Puedes encontrar el estado del pago en el valor _status_.
 ===
 require 'mercadopago'
-$mp = MercadoPago.new('YOUR_ACCESS_TOKEN')
+sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
 
 payment_data = {
-  "transaction_amount": request.body.transactionAmount.to_f,
-  "token": request.body.token,
-  "description": request.body.description,
-  "installments": request.body.installments.to_i,
-  "payment_method_id": request.body.paymentMethodId,
+  "transaction_amount": request[:response]['transactionAmount.to_f'],
+  "token": request[:response]['token'],
+  "description": request[:response]['description'],
+  "installments": request[:response]['installments.to_i'],
+  "payment_method_id": request[:response]['paymentMethodId'],
   "payer": {
-    "email": request.body.email,
+    "email": request[:response]['email'],
     "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
-      "type": request.body.docType,------------
-      "number": request.body.docNumber
+      "type": request[:response]['docType'],------------
+      "number": request[:response]['docNumber']
     }
   }
 }
 
-payment = $mp.post('/v1/payments', payment_data)
+payment = sdk.payment.create(payment_data)
 
 puts payment
 

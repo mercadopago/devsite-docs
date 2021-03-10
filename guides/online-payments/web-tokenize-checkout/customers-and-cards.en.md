@@ -90,16 +90,18 @@ mercadopago.customers.create(customer_data).then(function (customer) {
 ```ruby
 
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
 
-customer = MercadoPago::Customer.new()
-customer.email = "test@test.com"
-customer.save
+customer_object = {
+  "email" : "test@test.com",
+}
+customer = sdk.customer().create(customer_object)
 
-card = MercadoPago::Card.new()
-card.token = "9b2d63e00d66a8c721607214cedaecda"
-card.customer_id = customer.id
-card.save
+card = {
+  "token" : '9b2d63e00d66a8c721607214cedaecda',
+  customer_id = customer[:response]['id'],
+}
+sdk.card().create(card);
 
 ```
 ```csharp
@@ -209,8 +211,7 @@ You can get the complete list of `Cards` from a customer by doing a `HTTP GET` r
 ```
 ```ruby
 
-	customer = MercadoPago::Customer.load(customer_id);
-  cards = customer.cards;
+	customer = sdk.customer.get(customer[:response]['id'])
 
 ```
 ```csharp
@@ -326,17 +327,18 @@ mercadopago.customers.search({
 ```ruby
 
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
 
-customer = MercadoPago::Customer.load("247711297-jxOV430go9fx2e")
+customer = sdk.customer.get("247711297-jxOV430go9fx2e")
 
-card = MercadoPago::Card.new()
-card.token = "9b2d63e00d66a8c721607214cedaecda"
-card.customer_id = customer.id
-card.save
+card_object= {
+  "token" : '9b2d63e00d66a8c721607214cedaecda',
+  "customer_id" : 'customer.id'
+}
+
+card = sdk.card().create(card_object);
 
 puts card
-
 ```
 ```csharp
 MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
@@ -437,7 +439,7 @@ In case you do not know what the `id` of your `Customer` is, you can use the `Cu
 ```
 ```ruby
 
-	customers = MercadoPago::Customer.search(email: "test@test.com");
+customer = sdk.customer.get(email: "test@test.com")
 
 ```
 ```csharp
@@ -530,8 +532,7 @@ You can get the complete list of `Cards` of a client by making a `HTTP GET` requ
 ```
 ```ruby
 
-	customer = MercadoPago::Customer.load(customer_id);
-  cards = customer.cards;
+	customer = sdk.customer.get(customer[:response]['id'])
 
 ```
 ```csharp

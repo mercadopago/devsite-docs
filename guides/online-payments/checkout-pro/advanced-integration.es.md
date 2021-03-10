@@ -190,15 +190,20 @@ item.setId("1234")
 ```
 ```ruby
 # ...
-item = MercadoPago::Item.new({
-  id: "1234",
-  title: "Lightweight Paper Table",
-  description: "Inspired by the classic foldable art of origami",
-  category_id: "home",
-  quantity: 3,
-  currency_id: "[FAKER][CURRENCY][ACRONYM]",
-  unit_price: 55.41
-})# ...
+ payment_object = {
+  "items": [
+    {
+      "id": 'PR0001',
+      "title": 'Point Mini',
+      "description": 'Producto Point para cobros con tarjetas mediante bluetooth',
+      "picture_url": 'https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png',
+      "category_id": 'electronics',
+      "quantity": 1,
+      "unit_price": 58.80
+    }
+  ]
+ }
+ # ...
 ```
 ```csharp
 // ...
@@ -294,14 +299,14 @@ preference.setBackUrls(backUrls);
 // ...
 ```
 ```ruby
-preference = MercadoPago::Preference.new
+sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
 # ...
-preference.back_urls = {
-  success: "https://www.tu-sitio/success",
-  failure: "http://www.tu-sitio/failure",
-  pending: "http://www.tu-sitio/pendings"
+back_urls = {
+  "success": 'https://www.tu-sitio/success',
+  "failure": 'http://www.tu-sitio/failure',
+  "pending": 'http://www.tu-sitio/pendings'
 }
-preference.auto_return = "approved"
+ "auto_return" : 'approved'
 # ...
 ```
 ```csharp

@@ -62,9 +62,9 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
 
-payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
+payment_methods = sdk.payment_methods.get();
 
 ```
 ```csharp
@@ -287,17 +287,18 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
 
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 100
-payment.description = 'Título del producto'
-payment.payment_method_id = "rapipago"
-payment.payer = {
-  email: "test_user_19653727@testuser.com"
-}
-
-payment.save()
+payment_object = {
+    "transaction_amount": 100f,
+    "description": 'Product Title',
+    "payment_method_id": 'rapipago',
+    "payer": {
+      "email": '"test_user_19653727@testuser.com',
+    }
+  }
+  
+result = sdk.payment.create(payment_object)
 
 ```
 ```csharp
@@ -495,9 +496,9 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
 
-payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
+result = sdk.payment_methods.get()
 
 ```
 ```csharp
@@ -789,17 +790,18 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
 
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 100
-payment.description = 'Título del producto'
-payment.payment_method_id = "oxxo"
-payment.payer = {
-  email: "test_user_82045343@testuser.com"
-}
-
-payment.save()
+payment_object = {
+    "transaction_amount": 100f,
+    "description": 'Product Title',
+    "payment_method_id": 'oxxo',
+    "payer": {
+      "email": 'test_user_82045343@testuser.com',
+    }
+  }
+  
+result = sdk.payment.create(payment_object)
 
 ```
 ```csharp
@@ -954,9 +956,9 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
 
-payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
+payment_methods = sdk.payment_methods.get();
 
 ```
 ```csharp
@@ -1194,17 +1196,18 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
 
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 100
-payment.description = 'Título del producto'
-payment.payment_method_id = "abitab"
-payment.payer = {
-  email: "test_user_84162205@testuser.com"
-}
-
-payment.save()
+payment_object = {
+    "transaction_amount": 100f,
+    "description": 'Product Title',
+    "payment_method_id": 'abitab',
+    "payer": {
+      "email": 'test_user_84162205@testuser.com',
+    }
+  }
+  
+result = sdk.payment.create(payment_object)
 ```
 ```csharp
 
@@ -1345,9 +1348,9 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
 
-payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
+payment_methods =  sdk.payment_methods.get();
 
 ```
 ```csharp
@@ -1602,17 +1605,18 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
 
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 5000
-payment.description = 'Título del producto'
-payment.payment_method_id = "efecty"
-payment.payer = {
-  email: "test_user_19549678@testuser.com"
-}
-
-payment.save()
+payment_object = {
+    "transaction_amount": 500.00,
+    "description": 'Product Title',
+    "payment_method_id": 'efecty',
+    "payer": {
+      "email": 'test_user_19549678@testuser.com',
+    }
+  }
+  
+result = sdk.payment.create(payment_object)
 ```
 ```csharp
 
@@ -1836,29 +1840,25 @@ payment.setTransactionAmount(5000f)
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
 
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 5000
-payment.description = 'Título del producto'
-payment.payer = {
-email: 'test_user_19549678@testuser.com',
-identification: {
-type: "CC",
-number: "76262349"
-},
-entity_type: "individual"
-}
-payment.transaction_details = {
-financial_institution: 1234
-}
-payment.additional_info = {
-ip_address: "127.0.0.1"
-}
-payment.callback_url = "http://www.tu-sitio.com"
-payment.payment_method_id = "pse"
-
-payment.save();
+payment_object = {
+      "transaction_amount": 500.0,
+      "description": 'Título del producto',
+      "additional_info": {
+        "ipAddress" : "127.0.0.1"
+      },
+      "payer" :{
+        "email": 'test_user_19549678@testuser.com',
+        "entityType": 'individual'
+      },
+      "transactionDetails" :{
+        "financialInstitution" : 1234,
+      }
+      "callback_url" : 'http://www.tu-sitio.com',
+      "payment_methodId": 'pse'
+    }
+result = sdk.payment.create(payment_object)
 ```
 ```curl
 curl -X POST \
@@ -1965,9 +1965,9 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
 
-payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
+payment_methods = sdk.payment_methods.get()
 
 ```
 ```csharp
@@ -2207,17 +2207,18 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
 
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 100
-payment.description = 'Título del producto'
-payment.payment_method_id = "servipag"
-payment.payer = {
-  email: "test_user_15748052@testuser.com"
-}
+payment_object = {
+      "description": 'Título del producto',
+      "transaction_amount": 100.00,
+      "payment_method_id": 'servipag',
+      "payer": {
+        "email": 'test_user_15748052@testuser.com'
+      }
+    }
 
-payment.save()
+result = sdk.payment.create(payment_object)
 ```
 ```csharp
 
@@ -2373,25 +2374,25 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ACCESS_TOKEN')
 
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 100
-payment.description = 'Título del producto'
-payment.payer = {
-email: 'test_user_15748052@testuser.com',
-entity_type: "individual"
-}
-payment.transaction_details = {
-financial_institution: 1234
-}
-payment.additional_info = {
-ip_address: "127.0.0.1"
-}
-payment.callback_url = "http://www.tu-sitio.com"
-payment.payment_method_id = "webpay"
+payment_object = {
 
-payment.save();
+      "transaction_amount": 100.00,
+      "description": 'Título del producto',
+      "payment_method_id": 'webpay',
+      "payer": {
+        "email": 'test_user_15748052@testuser.com',
+        "entity_type": 'individual'
+       },
+        "additional_info": {
+          "ipAddress": '127.0.0.1',
+        },
+        "callback_url" : 'http://www.tu-sitio.com',
+        "transaction_details" : 1234
+      }
+    }
+result = sdk.payment.create(payment_object)
 ```
 ```curl
 curl -X POST \
@@ -2520,9 +2521,9 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ACCESS_TOKEN')
 
-payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
+payment_methods = sdk.payment_methods.get();
 
 ```
 ```csharp
@@ -2737,17 +2738,18 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
 
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 100
-payment.description = 'Título del producto'
-payment.payment_method_id = "pagoefectivo_atm"
-payment.payer = {
-  email: "test_user_42972582@testuser.com"
+payment_object = {
+   "transaction_amount": 100,
+   "description": 'Título del producto',
+   "payment_method_id" : 'pagoefectivo_atm'
+},
+"payer" : {
+  "email" : "test_user_42972582@testuser.com"
 }
 
-payment.save()
+sdk.payment().create(payment_object)
 ```
 ```csharp
 
@@ -2895,9 +2897,9 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
 
-payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
+payment_methods = sdk.payment_methods.get();
 
 ```
 ```csharp
@@ -3174,32 +3176,23 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
 
-payment_data = {
-  transaction_amount: 100,
-  description: "Título do produto",
-  payment_method_id: "bolbradesco",
-  payer: {
-    email: "test@test.com",
-    first_name: "Test",
-    last_name: "User",
-    identification: {
-        type: "CPF",
-        number: "191191191-00"
-    },
-    address: {
-        zip_code: "06233-200",
-        street_name: "Av. das Nações Unidas",
-        street_number: "3003",
-        neighborhood: "Bonfim",
-        city: "Osasco",
-        federal_unit: "SP"
+payment_object = {
+    "installments": 1,
+    "transaction_amount": 100.00,
+    "description": 'Título do produto',
+    "payment_method_id": 'bolbradesco',
+    "payer": {
+      "email": 'test@test.com"',
+      "identification": {
+        "number": '19119119100',
+        "type": 'CPF'
+      },
     }
   }
-}
-
-payment.save()
+  
+result = sdk.payment.create(payment_object)
 
 ```
 ```csharp
@@ -3421,32 +3414,22 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
 
-payment_data = {
-  transaction_amount: 100,
-  description: "Título do produto",
-  payment_method_id: "pix",
-  payer: {
-    email: "test@test.com",
-    first_name: "Test",
-    last_name: "User",
-    identification: {
-        type: "CPF",
-        number: "191191191-00"
-    },
-    address: {
-        zip_code: "06233-200",
-        street_name: "Av. das Nações Unidas",
-        street_number: "3003",
-        neighborhood: "Bonfim",
-        city: "Osasco",
-        federal_unit: "SP"
+payment_object = {
+    "transaction_amount": 100.00,
+    "description": 'Título do produto',
+    "payment_method_id": 'pix',
+    "payer": {
+      "email": 'test@test.com"',
+      "identification": {
+        "number": '19119119100',
+        "type": 'CPF'
+      }
     }
   }
-}
-
-payment.save()
+  
+result = sdk.payment.create(payment_object)
 
 ```
 ```csharp

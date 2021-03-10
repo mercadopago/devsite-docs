@@ -70,16 +70,19 @@ card.save();
 ```ruby
 
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
 
-customer = MercadoPago::Customer.new()
-customer.email = "test@test.com"
-customer.save
+customer_object = {
+      "email": '"john@yourdomain.com"',
+    }
+customer = sdk.customer.create(customer_object)
 
-card = MercadoPago::Card.new()
-card.token = "9b2d63e00d66a8c721607214cedaecda"
-card.customer_id = customer.id
-card.save
+card_object {
+  "token": "9b2d63e00d66a8c721607214cedaecda",
+  "customer_id": customer[:response]['id'],
+}
+sdk.card.create(card_object)
+
 
 ```
 ```csharp
@@ -208,14 +211,16 @@ System.out.print(card.toString());
 ```ruby
 
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
 
-customer = MercadoPago::Customer.load("247711297-jxOV430go9fx2e")
+customer = sdk.customer().get(("247711297-jxOV430go9fx2e")
 
-card = MercadoPago::Card.new()
-card.token = "9b2d63e00d66a8c721607214cedaecda"
-card.customer_id = customer.id
-card.save
+card_object = {
+  "token": "9b2d63e00d66a8c721607214cedaecda",
+  "customer_id": customer[:response]['id'],
+}
+
+car = sdk.card().save(card_object);
 
 puts card
 
@@ -336,8 +341,7 @@ Primeiro, obtenha a lista de cartões guardados para que seu cliente possa escol
 ```
 ```ruby
 
-    customer = MercadoPago::Customer.load(customer_id);
-    cards = customer.cards;
+customer = sdk.customer.get(customer_id)
 
 ```
 ```csharp
@@ -476,18 +480,16 @@ payment.save();
 ```ruby
 
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
-
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 100
-payment.token = 'ff8080814c11e237014c1ff593b57b4d'
-payment.installments = 1
-payment.payer = {
-  type: "customer"
-  id: "123456789-jxOV430go9fx2e"
-}
-
-payment.save()
+sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
+  payment_object = {
+  "token": 'ff8080814c11e237014c1ff593b57b4d',
+  "installments": 1,
+  "transaction_amount" : 100f,
+    "payer":{
+        "type" : "customer";
+        "id" : "123456789-jxOV430go9fx2e";
+    }
+payment = sdk.payment.create(payment_object)
 
 ```
 ```curl
@@ -554,7 +556,7 @@ Busque informação de um cliente caso necessário. Por exemplo, caso não saiba
 ```
 ```ruby
 
-    customers = MercadoPago::Customer.search(email: "test@test.com");
+customers = sdk.customer.get(email: "test@test.com");
 
 ```
 ```curl
@@ -650,8 +652,7 @@ curl -X GET \
 ```
 ```ruby
 
-    customer = MercadoPago::Customer.load(customer_id);
-    cards = customer.cards;
+customer = sdk.customer.get(customer_id)
 
 ```
 ```curl
