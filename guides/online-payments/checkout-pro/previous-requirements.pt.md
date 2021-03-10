@@ -69,7 +69,7 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 ```
 ]]]
 
-**### 3. Obtenha suas credenciais**
+### 3. Obtenha suas credenciais
 
 As credenciais são as **chaves que te oferecemos para que possa configurar sua integração**. 
 Para poder encontrá-las, veja a [seção de Credenciais]([FAKER][CREDENTIALS][URL]).
