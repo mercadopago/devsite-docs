@@ -16,10 +16,6 @@ This SDK supports Python versions 2.x and 3.x
 ## Install
 
 
-On Python 2.x
-
-``pip install mercadopago``
-
 On Python 3.x
 
 ``pip3 install mercadopago``
@@ -30,14 +26,13 @@ On Python 3.x
 Configure your credentials
 
 
-- Get your **CLIENT_ID** and **CLIENT_SECRET** [in the following link]([FAKER][CREDENTIALS][URL]).
+- Get your **ACCESS_TOKEN** in the [Credentials section]([FAKER][CREDENTIALS][URL])
 
 
 ``` python
     import mercadopago
-    import json
 
-    mp = mercadopago.MP("CLIENT_ID", "CLIENT_SECRET")
+    sdk = mercadopago.SDK("ACCESS_TOKEN")
 ```
 
 ### Preferences
@@ -48,17 +43,17 @@ Get an existent Checkout preference
 
 
 ``` python
-    def index(req, **kwargs):
-        preferenceResult = mp.get_preference("PREFERENCE_ID")
+    def get(self, preference_id, request_options=None):
+        preference = self.sdk.preference().get("PREFERENCE_ID")
 
-        return json.dumps(preferenceResult, indent=4)
+        return preference
 ```
 
 Create a Checkout preference
 
 ``` python
-    def index(req, **kwargs):
-        preference = {
+    def create(self, preference_object, request_options=None):
+        preference_object = {
             "items": [
                 {
                     "title": "Test",
@@ -69,58 +64,58 @@ Create a Checkout preference
             ]
         }
 
-        preferenceResult = mp.create_preference(preference)
+        preference = self.sdk.preference().create(data=preference_object)
 
-        return json.dumps(preferenceResult, indent=4)
+        return preference
 ```
 Update an existent Checkout preference
 
 
 ``` python
-    def index(req, **kwargs):
-        preference = {
-                "items": [
-                    {
-                        "title": "Test Modified",
-                        "quantity": 1,
-                        "currency_id": "USD",
-                        "unit_price": 20.4
-                    }
-                ]
-            }
+    def update(self, preference_id, preference_object, request_options=None):
+        preference_object = {
+            "items": [
+                {
+                    "title": "Test Modified",
+                    "quantity": 1,
+                    "currency_id": "USD",
+                    "unit_price": 20.4
+                }
+            ]
+        }
 
-        preferenceResult = mp.update_preference(id, preference)
+        preference = self.sdk.preference().update(data=preference_object)
 
-        return json.dumps(preferenceResult, indent=4)
+        return preference
 ```
 ### Payments/Collections
 
 
 Search for payments
 ``` python
-    def index(req, **kwargs):
+    def search(self, filters, request_options=None):
         filters = {
             "id": None,
             "external_reference": None
         }
 
-        searchResult = mp.search_payment(filters)
+        payment_search = self.sdk.payment().search(filters=filters)
 
-        return json.dumps(searchResult, indent=4)
+        return payment_search
 ```
 
 Get payment data
 
 ``` python
     import mercadopago
-    import json
+    
+    def get(self, payment_id, request_options=None):
+        sdk = mercadopago.SDK("ACCESS_TOKEN")
 
-    def index(req, **kwargs):
-        mp = mercadopago.MP("CLIENT_ID", "CLIENT_SECRET")
-        paymentInfo = mp.get_payment (kwargs["id"])
+        payment_info = self.sdk.payment().get("payment_id")
 
-        if paymentInfo["status"] == 200:
-            return json.dumps(paymentInfo, indent=4)
+        if payment_info["status"] == 200:
+            return payment_info
         else:
             return None
 ```
@@ -128,21 +123,21 @@ Get payment data
 Cancel (only for pending payments)
 
 ``` python
-    def index(req, **kwargs):
-        result = mp.cancel_payment("ID")
+    def cancel(self, advanced_payment_id, request_options=None):
+        payment_cancel = self.sdk.advanced_payment().cancel("advanced_payment_id")
 
-        // Show result
-        return json.dumps(result, indent=4)
+        # Show result
+        return payment_cancel
 ```
 
 Refund (only for accredited payments)
 
 ``` python
-    def index(req, **kwargs):
-        result = mp.refund_payment("ID")
+    def create(self, payment_id, refund_object, request_options=None):
+        payment_refund = self.sdk.refund("payment_id")
 
-        // Show result
-        return json.dumps(result, indent=4)
+        # Show result
+        return payment_refund
 ```
 
 ## Customized checkout
@@ -155,61 +150,35 @@ Configure your credentials
 
 ``` python
     import mercadopago
-    import json
 
-    mp = mercadopago.MP("ACCESS_TOKEN")
+    sdk = mercadopago.SDK("ACCESS_TOKEN")
 ```
 
 
 Create payment
 
-    mp.post ("/v1/payments", payment_data)
+    self.sdk._post ("/v1/payments", data=payment_object, request_options=request_options)
 
 Create customer
 
 
-    mp.post ("/v1/customers", {"email": "email@test.com"})
+    customer_object = {
+        "email": "email@test.com"
+    }
+
+    self.sdk._post ("/v1/customers", data=customer_object, request_options=request_options)
 
 Get customer
 
 
-    mp.get ("/v1/customers/CUSTOMER_ID")
+    self.sdk._get ("/v1/customers/" + str(customer_id), request_options=request_options)
 
 * View more Custom checkout related APIs in [API reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference)
 
-## Generic methods
-
-
-You can access any other resource from the MercadoPago API using the generic methods:
-
-
-
-    // Get a resource, with optional URL params. Also you can disable authentication for public APIs
-    mp.get ("/resource/uri", [params], [authenticate=true]);
-    
-    // Create a resource with "data" and optional URL params.
-    mp.post ("/resource/uri", data, [params]);
-    
-    // Update a resource with "data" and optional URL params.
-    mp.put ("/resource/uri", data, [params]);
-    
-    // Delete a resource with optional URL params.
-    mp.delete ("/resource/uri", [params]);
-
-For example, if you want to get the Sites list (no params and no authentication):
-
-
-    result = mp.get ("/sites", null, false);
-    
-    print (json.dumps(result, indent=4))
 
 ### Running tests
 
 
-On Python 2.x
-
-``python setup.py test``
-
 On Python 3.x
 
-``python3 setup.py test``
+``python3 -m unittest discover tests/``

@@ -144,6 +144,34 @@ Payer payer = new Payer()
 };
 // ...
 ```
+```python
+# ...
+
+payer_object = {
+    "name": "Charles",
+    "surname": "Luevano",
+    "email": "charles@hotmail.com",
+    "date_created": "2018-06-02T12:58:41.425-04:00",
+    "phone": {
+        "area_code": "",
+        "number": "949 128 866"
+    },
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
+    "identification": {
+        "type": "DNI",
+        "number": "12345678"
+    },
+    ------------
+    "shipments": {
+        "receiver_address": {
+            "street_name": "Cuesta Miguel Armendáriz",
+            "street_number": "1004",
+            "zip_code": "11020"
+        }
+    }
+}
+# ...
+```
 ]]]
 
 ### Item Details
@@ -215,6 +243,22 @@ preference.Items.Add(
   }
 );
 // ...
+```
+```python
+# ...
+preference_object = {
+    "items" = [
+        {
+            "id": "1234",
+            "title": "Lightweight Paper Table",
+            "description": "Inspired by the classic foldable art of origami",
+            "category_id": "home",
+            "quantity": 3,
+            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
+            "unit_price": 55.41
+        }
+    ]
+}
 ```
 ]]]
 
@@ -311,6 +355,16 @@ Preference preference = new Preference();
     Pending = "http://www.tu-sitio/pendings"
   };
   preference.AutoReturn = AutoReturnType.approved;
+```
+```python
+  preference_object = {
+      "back_urls": {
+          "success": "https://www.tu-sitio/success",
+          "failure": "http://www.tu-sitio/failure",
+          "pending": "http://www.tu-sitio/pendings"
+      }
+  }
+  status_object = {"status": "approved"}
 ```
 ]]]
 

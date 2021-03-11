@@ -60,6 +60,14 @@ payment = MercadoPago::Payment.find_by_id(paymentId)
 payment.status = "cancelled"
 payment.update()
 ```
+```python
+payment = self.sdk.payment().get(payment_id)
+payment_object = {
+    status = "cancelled"
+}
+
+preapproval = self.sdk.preapproval().update(data=preapproval_object)
+```
 ```curl
 curl -X PUT \
 -H "Content-Type: application/json" \
@@ -120,6 +128,11 @@ mercadopago.payment.refund(payment_id)
     //Manejar el error...
   });
 ```
+```python
+payment = self.sdk.payment().get(payment_id)
+
+payment_refund = self.sdk.refund().create(payment)
+```
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
@@ -179,6 +192,15 @@ mercadopago.payment.refundPartial({ payment_id: id, amount: Number(amount) })
     //Manejar el error...
   });
 ```
+```python
+payment = self.sdk.payment().get(payment_id)
+
+refund_object = {
+  "value": 10.5
+}
+
+payment_refund = self.sdk.refund().create(data=refund_object)
+```
 ```ruby
 payment = MercadoPago::Payment.find_by_id(paymnentId)
 payment.refund(10.5);
@@ -212,6 +234,11 @@ ArrayList<Refund> refunds = payment.refund();
 mercadopago.payment.refund(paymentId).then(function(data) {}
   //Do Stuff ..
 });
+```
+```python
+payment = self.sdk.payment().get(payment_id)
+
+refunds = self.sdk.refund().create(payment)
 ```
 ```ruby
 payment = MercadoPago::Payment.find_by_id(payment_id)

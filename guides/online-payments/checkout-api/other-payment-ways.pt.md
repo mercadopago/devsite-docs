@@ -75,6 +75,12 @@ MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 
 ```
+``` python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_methods = self.sdk.payment_methods().search("/v1/payment_methods", request_options=request_options)
+```
 ```curl
 curl -X GET \
     -H 'accept: application/json' \
@@ -331,6 +337,21 @@ Payment payment = new Payment()
 payment.Save();
 
 ```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_object = {
+    "transaction_amount": 100,
+    "description": "Título do produto",
+    "payment_method_id": "rapipago",
+    "payer": {
+        "email": "test_user_19653727@testuser.com"
+    }
+}
+
+payment = self.sdk.payment().create(data=payment_object)
+```
 ```curl
 curl -X POST \
   'https://api.mercadopago.com/v1/payments' \
@@ -416,6 +437,13 @@ A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+```
+```python
+===
+A data usa o formato ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00"
 ```
 ```curl
 ===
@@ -515,6 +543,12 @@ MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 
 payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 
+```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_methods = self.sdk.payment_methods().search("/v1/payment_methods", request_options=request_options)
 ```
 ```curl
 curl -X GET \
@@ -833,6 +867,21 @@ Payment payment = new Payment()
 payment.Save();
 
 ```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_object = {
+    "transaction_amount": 100,
+    "description": "Título do produto",
+    "payment_method_id": "oxxo",
+    "payer": {
+        "email": "test_user_82045343@testuser.com"
+    }
+}
+
+payment = self.sdk.payment().create(data=payment_object)
+```
 ```curl
 curl -X POST \
   'https://api.mercadopago.com/v1/payments' \
@@ -976,6 +1025,12 @@ MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 
 payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 
+```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_methods = self.sdk.payment_methods().search("/v1/payment_methods", request_options=request_options)
 ```
 ```curl
 curl -X GET \
@@ -1234,6 +1289,21 @@ Payment payment = new Payment()
 payment.Save();
 
 ```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_object = {
+    "transaction_amount": 100,
+    "description": "Título do produto",
+    "payment_method_id": "rapipago",
+    "payer": {
+        "email": "test_user_84162205@testuser.com"
+    }
+}
+
+payment = self.sdk.payment().create(data=payment_object)
+```
 ```curl
 curl -X POST \
   'https://api.mercadopago.com/v1/payments' \
@@ -1363,6 +1433,12 @@ MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 
 payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 
+```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_methods = self.sdk.payment_methods().search("/v1/payment_methods", request_options=request_options)
 ```
 ```curl
 curl -X GET \
@@ -1640,6 +1716,21 @@ Payment payment = new Payment()
 payment.Save();
 
 ```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_object = {
+    "transaction_amount": 5000,
+    "description": "Título do produto",
+    "payment_method_id": "efecty",
+    "payer": {
+        "email": "test_user_19549678@testuser.com"
+    }
+}
+
+payment = self.sdk.payment().create(data=payment_object)
+```
 ```curl
 curl -X POST \
   'https://api.mercadopago.com/v1/payments' \
@@ -1728,6 +1819,13 @@ A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+```
+```python
+===
+A data usa o formato ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00"
 ```
 ```curl
 ===
@@ -1864,6 +1962,33 @@ payment.payment_method_id = "pse"
 
 payment.save();
 ```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_object = {
+    "transaction_amount": 5000
+    "description": 'Título do produto'
+    "payer": {
+        "email": "test_user_19549678@testuser.com",
+        "identification": {
+            "type": "CC",
+            "number": "76262349"
+        },
+        "entity_type": "individual"
+    },
+    "transaction_details": {
+        "financial_institution": 1234
+    },
+    "additional_info": {
+        "ip_address": "127.0.0.1"
+    },
+    "callback_url": "http://www.your-site.com"
+    "payment_method_id": "pse"
+}
+
+payment = self.sdk.payment().update(data=payment_object)
+```
 ```curl
 curl -X POST \
 'https://api.mercadopago.com/v1/payments' \
@@ -1982,6 +2107,12 @@ MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 
 payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 
+```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_methods = self.sdk.payment_methods().search("/v1/payment_methods", request_options=request_options)
 ```
 ```curl
 curl -X GET \
@@ -2245,6 +2376,21 @@ Payment payment = new Payment()
 payment.Save();
 
 ```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_object = {
+    "transaction_amount": 100,
+    "description": "Título do produto",
+    "payment_method_id": "servipag",
+    "payer": {
+        "email": "test_user_15748052@testuser.com"
+    }
+}
+
+payment = self.sdk.payment().create(data=payment_object)
+```
 ```curl
 curl -X POST \
   'https://api.mercadopago.com/v1/payments' \
@@ -2398,6 +2544,29 @@ payment.payment_method_id = "webpay"
 
 payment.save();
 ```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_object = {
+    "transaction_amount": 100
+    "description": 'Título do produto'
+    "payer": {
+        "email": "test_user_15748052@testuser.com",
+        "entity_type": "individual
+    },
+    "transaction_details": {
+        "financial_institution": 1234
+    },
+    "additional_info": {
+        "ip_address": "127.0.0.1"
+    },
+    "callback_url": "http://www.your-site.com"
+    "payment_method_id": "webpay"
+}
+
+payment = self.sdk.payment().update(data=payment_object)
+```
 ```curl
 curl -X POST \
 'https://api.mercadopago.com/v1/payments' \
@@ -2537,6 +2706,12 @@ MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 
 payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 
+```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_methods = self.sdk.payment_methods().search("/v1/payment_methods", request_options=request_options)
 ```
 ```curl
 curl -X GET \
@@ -2774,6 +2949,21 @@ Payment payment = new Payment()
 payment.Save();
 
 ```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_object = {
+    "transaction_amount": 100,
+    "description": "Título do produto",
+    "payment_method_id": "pagoefectivo_atm",
+    "payer": {
+        "email": "test_user_42972582@testuser.com"
+    }
+}
+
+payment = self.sdk.payment().create(data=payment_object)
+```
 ```curl
 curl -X POST \
   'https://api.mercadopago.com/v1/payments' \
@@ -2911,6 +3101,12 @@ MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 
 payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 
+```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_methods = self.sdk.payment_methods().search("/v1/payment_methods", request_options=request_options)
 ```
 ```curl
 curl -X GET \
@@ -3241,6 +3437,37 @@ Payment payment = new Payment()
 payment.Save();
 
 ```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_object = {
+    "transaction_amount": 100,
+    "description": "Título do produto",
+    "payment_method_id": "bolbradesco",
+    "payer": {
+        "email": "test@test.com",
+        "first_name": "Test",
+        "last_name": "User",
+        "identification": {
+            "type": "CPF",
+            "number": "191191191-00"
+        },
+        "shipments": {
+            "receiver_address": {
+                "zip_code": "06233-200",
+                "street_name": "Av. das Nações Unidas",
+                "street_number": "3003",
+                "neighborhood": "Bonfim",
+                "city": "Osasco",
+                "federal_unit": "SP"
+            }
+        }
+    }
+}
+
+payment = self.sdk.payment().update(data=payment_object)
+```
 ```curl
 curl -X POST \
     -H 'accept: application/json' \
@@ -3484,6 +3711,37 @@ Payment payment = new Payment()
 payment.Save();
 
 ```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_object = {
+    "transaction_amount": 100,
+    "description": "Título do produto",
+    "payment_method_id": "pix",
+    "payer": {
+        "email": "test@test.com",
+        "first_name": "Test",
+        "last_name": "User",
+        "identification": {
+            "type": "CPF",
+            "number": "191191191-00"
+        },
+        "shipments": {
+            "receiver_address": {
+                "zip_code": "06233-200",
+                "street_name": "Av. das Nações Unidas",
+                "street_number": "3003",
+                "neighborhood": "Bonfim",
+                "city": "Osasco",
+                "federal_unit": "SP"
+            }
+        }
+    }
+}
+
+payment = self.sdk.payment().update(data=payment_object)
+```
 ```curl
 curl -X POST \
     -H 'accept: application/json' \
@@ -3625,6 +3883,13 @@ A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
 ```
+```python
+===
+A data usa o formato ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00"
+```
 ```curl
 ===
 A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
@@ -3675,6 +3940,13 @@ date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+```
+```python
+===
+A data usa o formato ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00"
 ```
 ```curl
 ===

@@ -67,6 +67,12 @@ Para hacerlo ejecuta el siguiente comando en la consola del NuGet Package Manage
 ===
 PM> Install-Package mercadopago-sdk -Version 1.0.57
 ```
+```python
+===
+El SDK de Mercado Pago está disponible como [pip](https://pypi.org/project/mercadopago/), para instalarla debes ejecutar el siguiente código en la línea de comandos:
+===
+pip3 install mercadopago
+```
 ]]]
 
 ---

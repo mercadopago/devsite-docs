@@ -476,6 +476,32 @@ payment.Save();
 console.log(payment.Status);
 
 ```
+```python
+===
+Puedes encontrar el estado del pago en el valor _status_.
+===
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_object = {
+    "transaction_amount": self.sdk.payment().create("transaction_amount"),
+    "token": self.sdk.payment().create("token"),
+    "description": self.sdk.payment().create("description"),
+    "installments": self.sdk.payment().create("installments"),
+    "payment_method_id": self.sdk.payment().create("payment_method_id"),
+    "payer": {
+        "email": self.sdk.payment().get("email"),
+        "identification": self.sdk.payment().create("identification") {----[mla, mlb, mlu, mlc, mpe, mco]----
+                                                                "type": self.sdk.payment().create("type"), ------------
+                                                                "number": self.sdk.payment().create("number")
+                                                                }
+    }
+}
+
+self._post(uri="/v1/payments", data=payment_object, request_options=request_options)
+
+print(payment_object)
+```
 ```curl
 ===
 Puedes encontrar el estado del pago en el valor _status_.

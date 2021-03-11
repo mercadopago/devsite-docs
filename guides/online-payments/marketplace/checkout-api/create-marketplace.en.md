@@ -213,6 +213,25 @@ payment.payer = {
 payment.save()
 
 ```
+```python 
+
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_object = {
+    "transaction_amount": 100,
+    "token": 'ff8080814c11e237014c1ff593b57b4d',
+    "description": "Title of what you are paying for",
+    "installments": 1,
+    "payment_method_id": "visa",
+    "payer": {
+        "email": "test_user_19653727@testuser.com"
+    }
+}
+
+payment = self.sdk.advanced_payment().create(data=payment_object)
+
+```
 ]]]
 
 The seller will receive the difference between the total amount and the fees, both the fee of Mercado Pago and the Marketplace, as well as any other amount that should be deducted from the sale.
@@ -221,7 +240,7 @@ The seller will receive the difference between the total amount and the fees, bo
 
 You need to send your `notification_url`, where you will receive a notification of all new payments and status updates generated.
 
-In order to receive notifications when your clients authorize your application, you can [configure the url](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) in your account.
+In order to receive notifications when your clients authorize your application, you can [configure the url](https://www.mercadopago.com/mla/account/webhooks) in your account.
 
 For more information, go to the [notifications section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks).
 

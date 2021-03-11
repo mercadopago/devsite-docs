@@ -248,6 +248,29 @@ preference.notification_url = "http://urlmarketplace.com/notification_ipn"
 preference.save
 
 ```
+```python
+
+preference_object = {
+    "items": [
+        {
+            "title": "Blue shirt",
+            "quantity": 10,
+            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
+            "unit_price": [FAKER][COMMERCE][PRICE],
+            "payer": {
+                "email": "john@yourdomain.com"
+            }
+            "marketplace": {
+                "marketplace_fee": 2.56
+            }
+            "notification_url": "http://urlmarketplace.com/notification_ipn"
+        }
+    ]
+}
+
+preference = self.sdk.preference().create(data=preference_object)
+
+```
 ]]]
 
 

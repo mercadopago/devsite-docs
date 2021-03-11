@@ -235,6 +235,25 @@ payment.payer = {
 payment.save()
 
 ```
+```python 
+
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_object = {
+    "transaction_amount": 100,
+    "token": 'ff8080814c11e237014c1ff593b57b4d',
+    "description": "Title of what you are paying for",
+    "installments": 1,
+    "payment_method_id": "visa",
+    "payer": {
+        "email": "test_user_19653727@testuser.com"
+    }
+}
+
+payment = self.sdk.advanced_payment().create(data=payment_object)
+
+```
 ]]]
 
 
@@ -251,7 +270,7 @@ O vendedor receberá a diferença entre o valor total e as comissões, tanto a d
 
 É necessário que envie sua `notification_url`, onde receberá um aviso de todos os novos pagamentos e atualizações de status gerados, bem como alta e baixa de usuários no Marketplace.
 
-Você pode receber notificações quando seus clientes autorizarem ou desautorizarem sua aplicação, [configurando a URL](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) em sua conta.
+Você pode receber notificações quando seus clientes autorizarem ou desautorizarem sua aplicação, [configurando a URL](https://www.mercadopago.com/mlb/account/webhooks) em sua conta.
 
 Para mais informações, consulte a seção de [notificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks).
 

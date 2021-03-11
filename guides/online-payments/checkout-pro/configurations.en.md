@@ -617,6 +617,25 @@ MercadoPago.Resources.Preference preference = new MercadoPago.Resources.Preferen
 
 preference.Save();
 ```
+```python
+===
+Add the code in the preference and replace the value PIXEL_ID with your identifier.
+===
+# Associate your Facebook Pixel
+  preference_object = {
+      tracks = [
+          {
+              "type": "facebook_ad",
+              "values":
+              {
+                  {"pixel_id", "PIXEL_ID"}
+              }
+          }
+      ]
+  }
+
+  preference = self.sdk.preference().update(data=preference_object)
+```
 ```curl
 ===
 Add the code in the preference and replace the value PIXEL_ID with your identifier.
@@ -754,6 +773,26 @@ MercadoPago.Resources.Preference preference = new MercadoPago.Resources.Preferen
 
 preference.Save();
 ```
+```python
+===
+Add the code in the preference and replace the values ​​CONVERSION_ID y CONVERSION_LABEL with your tag data.
+===
+# Associate your tag
+  preference_object = {
+    tracks = [
+        {
+            "type": "google_ad",
+            "values":
+            {
+                "conversion_id": "CONVERSION_ID",
+                "conversion_label": "CONVERSION_LABEL"
+            }
+        }
+    ]
+}
+
+  preference = self.sdk.preference().update(data=preference_object)
+```
 ```curl
 ===
 Add the code in the preference and replace the values ​​CONVERSION\_ID y CONVERSION\_LABEL with your tag data.
@@ -848,6 +887,14 @@ Add identification codes and replace any value that you wish: CORPORATION\_ID, I
 MercadoPago.SDK.PlatformId    = "PLATFORM_ID";
 MercadoPago.SDK.IntegratorId  = "INTEGRATOR_ID";
 MercadoPago.SDK.CorporationId = "CORPORATION_ID";
+```
+```python
+===
+Add identification codes and replace any value that you wish: CORPORATION_ID, INTEGRATOR_ID and PLATFORM_ID.
+===
+platform_id = self.sdk.__platform_id("PLATFORM_ID")
+integrator_id = self.sdk.__integrator_id("INTEGRATOR_ID")
+corporation_id = self.sdk.__corporation_id("CORPORATION_ID")
 ```
 ```curl
 ===

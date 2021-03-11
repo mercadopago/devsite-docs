@@ -16,10 +16,6 @@ Nosso SDK é compatível com Python versão 2.x e 3.x
 ## Instalação
 
 
-Em Python 2.x:
-
-``pip install mercadopago``
-
 Em Python 3.x:
 
 ``pip3 install mercadopago``
@@ -34,9 +30,8 @@ Obtenha seu **CLIENT_ID** e **CLIENT_SECRET** [nos seguintes link]([FAKER][CREDE
 
 ``` python
     import mercadopago
-    import json
 
-    mp = mercadopago.MP("CLIENT_ID", "CLIENT_SECRET")
+    sdk = mercadopago.SDK("ACCESS_TOKEN")
 ```
 
 ### Preferências
@@ -46,17 +41,17 @@ Obtenha uma preferência de pagamento existente
 
 
 ``` python
-    def index(req, **kwargs):
-        preferenceResult = mp.get_preference("PREFERENCE_ID")
+    def get(self, preference_id, request_options=None):
+        preference = self.sdk.preference().get("PREFERENCE_ID")
 
-        return json.dumps(preferenceResult, indent=4)
+        return preference
 ```
 
 Crie uma preferência de pagamento
 
 ``` python
-    def index(req, **kwargs):
-        preference = {
+    def create(self, preference_object, request_options=None):
+        preference_object = {
             "items": [
                 {
                     "title": "Test",
@@ -67,29 +62,29 @@ Crie uma preferência de pagamento
             ]
         }
 
-        preferenceResult = mp.create_preference(preference)
+        preference = self.sdk.preference().create(data=preference_object)
 
-        return json.dumps(preferenceResult, indent=4)
+        return preference
 ```
 Atualize uma preferência de pagamento existente:
 
 
 ``` python
-    def index(req, **kwargs):
-        preference = {
-                "items": [
-                    {
-                        "title": "Test Modified",
-                        "quantity": 1,
-                        "currency_id": "USD",
-                        "unit_price": 20.4
-                    }
-                ]
-            }
+    def update(self, preference_id, preference_object, request_options=None):
+        preference_object = {
+            "items": [
+                {
+                    "title": "Test Modified",
+                    "quantity": 1,
+                    "currency_id": "USD",
+                    "unit_price": 20.4
+                }
+            ]
+        }
 
-        preferenceResult = mp.update_preference(id, preference)
+        preference = self.sdk.preference().update(data=preference_object)
 
-        return json.dumps(preferenceResult, indent=4)
+        return preference
 ```
 ### Payments/Collections
 
@@ -97,29 +92,29 @@ Atualize uma preferência de pagamento existente:
 Busque pagamentos:
 
 ``` python
-    def index(req, **kwargs):
+    def search(self, filters, request_options=None):
         filters = {
             "id": None,
             "external_reference": None
         }
 
-        searchResult = mp.search_payment(filters)
+        payment_search = self.sdk.payment().search(filters=filters)
 
-        return json.dumps(searchResult, indent=4)
+        return payment_search
 ```
 
 Obtenha a informação de um pagamento:
 
 ``` python
     import mercadopago
-    import json
+    
+    def get(self, payment_id, request_options=None):
+        sdk = mercadopago.SDK("ACCESS_TOKEN")
 
-    def index(req, **kwargs):
-        mp = mercadopago.MP("CLIENT_ID", "CLIENT_SECRET")
-        paymentInfo = mp.get_payment (kwargs["id"])
+        payment_info = self.sdk.payment().get("payment_id")
 
-        if paymentInfo["status"] == 200:
-            return json.dumps(paymentInfo, indent=4)
+        if payment_info["status"] == 200:
+            return payment_info
         else:
             return None
 ```
@@ -127,21 +122,21 @@ Obtenha a informação de um pagamento:
 Cancelamento (Somente para pagamentos pendentes)
 
 ``` python
-    def index(req, **kwargs):
-        result = mp.cancel_payment("ID")
+    def cancel(self, advanced_payment_id, request_options=None):
+        payment_cancel = self.sdk.advanced_payment().cancel("advanced_payment_id")
 
-        // Show result
-        return json.dumps(result, indent=4)
+        # Show result
+        return payment_cancel
 ```
 
 Devolução (Somente para pagamentos creditados)
 
 ``` python
-    def index(req, **kwargs):
-        result = mp.refund_payment("ID")
+    def create(self, payment_id, refund_object, request_options=None):
+        payment_refund = self.sdk.refund("payment_id")
 
-        // Show result
-        return json.dumps(result, indent=4)
+        # Show result
+        return payment_refund
 ```
 
 ## Checkout custom
@@ -153,69 +148,39 @@ Obtenha seu **ACCESS_TOKEN** na [seção Credenciais]([FAKER][CREDENTIALS][URL])
 
 ``` python
     import mercadopago
-    import json
 
-    mp = mercadopago.MP("ACCESS_TOKEN")
+    sdk = mercadopago.SDK("ACCESS_TOKEN")
 ```
 
 
 ### Crie um pagamento
 
 ``` python
-    mp.post ("/v1/payments", payment_data)
+    self.sdk._post ("/v1/payments", data=payment_object, request_options=request_options)
 ```
 
 ### Crie um customer
 
 ```python
-    mp.post ("/v1/customers", {"email": "email@test.com"})
+    customer_object = {
+        "email": "email@test.com"
+    }
+
+    self.sdk._post ("/v1/customers", data=customer_object, request_options=request_options)
 ```
 
 ### Obtenha um customer
 
 ```python
-    mp.get ("/v1/customers/CUSTOMER_ID")
+    self.sdk._get ("/v1/customers/" + str(customer_id), request_options=request_options)
 ```
 
 > Para mais informações visite a sessão [API reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference).
 
-## Métodos genéricos
-
-É possível acessar qualquer outro recurso da API Mercado Pago utilizando métodos genéricos:
-
-```python
-    // Obter um recurso com parâmetros opcionais de URL. Também é possível desabilitar a autenticação para APIs públicas.
-        mp.get ("/resource/uri", [params], [authenticate=true]);
-```
-
-```python
-    // Criar um recurso com "data" e parâmetros opcionais de URL.
-    mp.post ("/resource/uri", data, [params]);
-```
-```python
-    // Atualizar um recurso com "data" e parâmetros opcionais de URL.
-    mp.put ("/resource/uri", data, [params]);
-```
-```python
-    // Eliminar um recurso com "data" e parâmetros opcionais de URL.
-    mp.delete ("/resource/uri", [params]);
-```
-
-Por exemplo, se quiser obter a lista de sites disponíveis (sem parâmetros na autenticação):
-
-```python
-    result = mp.get ("/sites", null, false);
-
-    print (json.dumps(result, indent=4))
-```
 
 ### Executar testes
 
 
-Em Python 2.x executar:
-
-``python setup.py test``
-
 Em Python 3.x executar:
 
-``python3 setup.py test``
+``python3 -m unittest discover tests/``

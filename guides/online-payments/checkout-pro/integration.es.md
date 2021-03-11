@@ -51,6 +51,10 @@ require 'mercadopago.rb'
 // SDK de Mercado Pago
  using MercadoPago;
 ```
+```python
+# SDK de Mercado Pago
+import mercadopago
+```
 ]]]
 
 <br/><br/>1.2 Agrega las [credenciales]([FAKER][CREDENTIALS][URL]) para habilitar el uso de la SDK de Mercado Pago:<br/>
@@ -94,6 +98,13 @@ using MercadoPago;
 
 // Agrega credenciales
 MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
+```
+```python
+  # SDK de Mercado Pago
+  import mercadopago
+
+  # Agrega credenciales
+  sdk = mercadopago.SDK("ACCESS_TOKEN")
 ```
 ]]]
 
@@ -214,6 +225,26 @@ preference.Items.Add(
   }
 );
 preference.Save();
+```
+```python
+# SDK de Mercado Pago
+import mercadopago
+
+# Agrega credenciales
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+# Crea un ítem en la preferencia
+preference_object = {
+    "items": [
+        {
+            "title": "Mi producto",
+            "quantity": 1,
+            "unit_price": 75.76,
+        }
+    ]
+}
+
+preference = self.sdk.preference().create(data=preference_object)
 ```
 ```curl
 curl -X POST \
@@ -347,6 +378,26 @@ preference.Items.Add(
 );
 preference.Save();
 ```
+```python
+# SDK de Mercado Pago
+import mercadopago
+
+# Add Your credentials
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+# Crea un ítem en la preferencia
+preference_object = {
+    "items": [
+        {
+            "title": "Mi producto",
+            "quantity": 1,
+            "unit_price": 75
+        }
+    ]
+}
+
+preference = self.sdk.preference().create(data=preference_object)
+```
 ```curl
 curl -X POST \
   'https://api.mercadopago.com/checkout/preferences' \
@@ -413,6 +464,12 @@ Por último, suma el siguiente código para mostrar el botón de pago de tu Chec
 <script
   src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
   data-preference-id="@Html.DisplayFor(model => model.id)">
+</script>
+```
+```python
+<script
+  src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
+  data-preference-id="+ str(preference_id)">
 </script>
 ```
 ]]]

@@ -101,6 +101,23 @@ MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
       card.Save();
 
 ```
+```python
+
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+customer_object = {
+  "email": "test@test.com"
+}
+customer = self.sdk.customer().create(data=customer_object)
+
+card_token_object = {
+  "token": "9b2d63e00d66a8c721607214cedaecda",
+  "customer_id": "customer_id"
+}
+card_token = self.sdk.card_token().create(data=card_token_object)
+
+```
 ```curl
 
 curl -X POST \
@@ -110,7 +127,6 @@ curl -X POST \
     -d '{"token": "9b2d63e00d66a8c721607214cedaecda"}'
 
 ```
-
 ]]]
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
@@ -236,6 +252,23 @@ MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
   Console.WriteLine(card.Id);
 
 ```
+```python 
+
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+customer = self.sdk.customer().get("247711297-jxOV430go9fx2e")
+
+card_object = {
+    "token": "9b2d63e00d66a8c721607214cedaecda",
+    "customer_id": "customer_id"
+}
+
+card = self.sdk.card().create(data=card_object)
+
+print(card)
+
+```
 ```curl
 curl -X POST \
     -H 'Content-Type: application/json' \
@@ -248,8 +281,8 @@ curl -X POST \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
     -d '{"token": "9b2d63e00d66a8c721607214cedaecda"}'
-```
 
+```
 ]]]
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
@@ -345,13 +378,19 @@ customer = Customer.FindById("customer.Id");
 List<Card> cards = customer.Cards;
 
 ```
+```python
+
+  customer = self.sdk.customer().get(customer_id) 
+  cards = self.sdk.card().get(customer_id)
+
+```
 ```curl
 
 curl -X GET \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
-```
 
+```
 ]]]
 
 Saved card data response:
@@ -489,6 +528,24 @@ payment.payer = {
 payment.save()
 
 ```
+```python
+
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_object = {
+    "transaction_amount": 100,
+    "token": 'ff8080814c11e237014c1ff593b57b4d',
+    "installments": 1,
+    "payer": {
+        "type": "customer",
+        "id": "123456789-jxOV430go9fx2e"
+    }
+}
+
+payment = self.sdk.payment().create(data=payment_object)
+
+```
 ```curl
 
 curl -X POST \
@@ -506,7 +563,6 @@ curl -X POST \
 }'
 
 ```
-
 ]]]
 
 
@@ -556,6 +612,15 @@ You can search for customer information, if needed; for example, when you don't 
     customers = MercadoPago::Customer.search(email: "test@test.com");
 
 ```
+```python
+
+  filters = {
+    "email": "test@test.com"
+  }
+  
+  customers = self.sdk.customer().search(filters=filters)
+
+```
 ```curl
 
 curl -X GET \
@@ -566,7 +631,6 @@ curl -X GET \
 }'
 
 ```
-
 ]]]
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
@@ -653,6 +717,12 @@ curl -X GET \
     cards = customer.cards;
 
 ```
+```python
+
+  customer = self.sdk.customer().get(customer_id) 
+  cards = self.sdk.card().get(customer_id)
+  
+```
 ```curl
 
 curl -X GET \
@@ -660,7 +730,6 @@ curl -X GET \
   'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
 
 ```
-
 ]]]
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response

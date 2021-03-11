@@ -119,6 +119,23 @@ MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
 
       card.Save();
 ```
+```python 
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+customer_object = {
+    "email": "test@test.com"
+}
+
+customer = self.sdk.customer().create(data=customer_object)
+
+card_token_object = {
+    "token": "9b2d63e00d66a8c721607214cedaecda",
+    "customer_id": "customer_id"
+}
+
+card = self.sdk.card_token().create(data=card_token_object)
+```
 ]]]
 
 Retorno do Servidor:
@@ -214,6 +231,11 @@ Podendo obter uma lista completa de `Cards` de um cliente realizando um request 
 ```csharp
 customer = Customer.FindById("customer.Id");
 List<Card> cards = customer.Cards; 
+```
+```python
+
+	customer = self.sdk.customer().get(customer_id)
+  cards = self.sdk.card().create(customer_id)
 ```
 ]]]
 
@@ -351,6 +373,22 @@ MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
 
   Console.WriteLine(card.Id);
 ```
+```python
+
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+customer = self.sdk.customer().get("247711297-jxOV430go9fx2e")
+
+card_object = {
+  "token": "9b2d63e00d66a8c721607214cedaecda",
+  "customer_id": customer_id
+}
+
+card = self.sdk.card_().create(data=card_object)
+
+print(card)
+```
 ]]]
 
 
@@ -444,6 +482,14 @@ filters.Add("email", "test@test.com");
 
 List<Customer> customers = Customer.Search(filters);
 ```
+```python
+
+filters = {
+    "email": "test@test.com"
+}
+
+customers = self.sdk.customer().search(filters=filters)
+```
 ]]]
 
 Retorno:
@@ -535,6 +581,11 @@ Poderá obter uma lista completa de `Cards` de um cliente realizando um request 
 ```csharp
 Customer customer = Customer.FindById("customer.Id");
 List<Card> cards = customer.Cards;
+```
+```python
+
+	customer = self.sdk.customer().get(customer_id)
+  cards = self.sdk.card().create(customer_id)
 ```
 ]]]
 

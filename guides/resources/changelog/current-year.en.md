@@ -5,6 +5,20 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 ---
 ## March 2021
 
+### March ??th
+
+> RELEASE
+>
+> New SDK Python version 2.0.0
+>
+> NEWS: NEWS
+>
+> PRODUCT: SDK PYTHON
+
+We have relesead the new version 2.0.0 of SDK Python.
+
+> [Check GitHub](https://github.com/mercadopago/sdk-python) for further details regarding this release.
+
 ### March 4th
 
 ----[mlb]----

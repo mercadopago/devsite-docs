@@ -75,6 +75,12 @@ payment_method_id = Request["payment_method_id"]
 installments = Request["installments"]
 issuer_id = Request["issuer_id"]
 ```
+```python
+  token = self.sdk.payment().create("token")
+  payment_method_id = self.sdk.payment().create("payment_method_id")
+  installments = self.sdk.payment().create("installments")
+  issuer_id = self.sdk.payment().create("issuer_id")
+```
 ]]]
 
 ### Passo 4: Realizar o pagamento
@@ -196,6 +202,22 @@ payment.Save();
 // Imprime o status do pagamento
 Console.log(payment.Status);
 //...
+```
+```python
+payment_object = {
+    "transaction_amount": 100,
+    "token": "token",
+    "description": "Blue shirt",
+    "installments": installments,
+    "payment_method_id": payment_method_id,
+    "issuer_id": issuer_id,
+    "payer": {
+        "email": "john@yourdomain.com"
+    }
+}
+
+# Armazena e envia o pagamento
+payment = self.sdk.payment().create(data=payment_object)
 ```
 ]]]
 

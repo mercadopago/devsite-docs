@@ -100,6 +100,24 @@ payment.payer = {
 payment.capture = false
 payment.save()
 ```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_object = {
+    "transaction_amount": 100,
+    "token": 'ff8080814c11e237014c1ff593b57b4d',
+    "description": "Title of what you are paying for",
+    "installments": 1,
+    "payment_method_id": "visa",
+    "payer": {
+        "email": "test_user_19653727@testuser.com"
+    }
+}
+capture_object = {"capture": False}
+payment_capture = self.sdk.advanced_payment().capture(data=capture_object)
+payment = self.sdk.advanced_payment().create(data=payment_object)
+```
 ```curl
 
 curl -X POST \
@@ -118,6 +136,7 @@ curl -X POST \
           },
           "capture": "false"
     }'
+```    
 ]]]
 
 A resposta indica que o pagamento se encontra autorizado e pendente de captura.
@@ -192,6 +211,15 @@ MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 payment = MercadoPago::Payment.load(paymentId)
 payment.capture=true
 payment.update()
+```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment = self.sdk.payment().get(payment_id)
+capture_object = {"capture": True}
+payment_capture = self.sdk.advanced_payment().capture(data=capture_object)
+payment = self.sdk.advanced_payment().update()
 ```
 ```curl
 curl -X PUT \
@@ -278,6 +306,20 @@ payment.transaction_amount = 75
 payment.capture=true
 payment.update()
 ```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment = self.sdk.payment().get(payment_id)
+
+payment_object = {
+  "transaction_amount": 75
+}
+
+capture_object = {"capture": True}
+payment_capture = self.sdk.advanced_payment().capture(data=capture_object)
+payment = self.sdk.advanced_payment().update(data=payment_object)
+```
 ```curl
 
 curl -X PUT \
@@ -305,7 +347,6 @@ curl -X PUT \
   ...
 }
 ```
-
 
 > NOTE
 >
@@ -358,6 +399,18 @@ MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 payment = MercadoPago::Payment.load(paymentId)
 payment.status = "canceled"
 payment.update()
+```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment = self.sdk.payment().get(payment_id)
+
+payment_object = {
+  "status": "canceled"
+}
+
+payment = self.sdk.advanced_payment().update(data=payment_object)
 ```
 ```curl
 curl -X PUT \

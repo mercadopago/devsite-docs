@@ -5,6 +5,20 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 ---
 ## Março 2021
 
+### ?? de março
+
+> RELEASE
+>
+> Nova SDK Python versão 2.0.0
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: SDK PYTHON
+
+Lançamos uma nova versão do SDK Python 2.0.0.
+
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-python).
+
 ### 4 de março
 
 ----[mlb]----
@@ -37,7 +51,7 @@ Lançamos uma nova versão do SDK Java 1.9.0.
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-java/releases/tag/1.9.0).
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/java/releases/tag/1.9.0).
 
 > CHANGELOG
 >
