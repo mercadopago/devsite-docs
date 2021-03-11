@@ -15,13 +15,14 @@ Sabemos que alguns termos são novos. Antes de começar, os deixamos à mão.
 
 ## Pré-requisitos
 
-Para continuar, confira os pré-requisitos:
+Observe estes pontos antes de começar a integração:
 
-### 1. Acesso à conta do Mercado Pago ou do Mercado Livre
+### 1. Acesse uma conta
 Para poder começar a integração, é necessário **contar com uma conta do Mercado Pago ou do Mercado Livre.**
-Caso você ainda não tenha uma, pode [criar uma conta do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]) quando quiser.
 
-### 2.  Instalação do SDK do Mercado Pago
+Você pode [Entrar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/previous-requirements) em uma conta existente no Mercado Pago ou no Mercado Livre ou [Criar uma nova conta](https://www.mercadopago[FAKER][URL][DOMAIN]) no Mercado Pago.
+
+### 2. Instale do SDK do Mercado Pago
 **Instale o SDK oficial** para simplificar sua integração com as nossas APIs.
 
 [[[
@@ -67,6 +68,14 @@ Para isso, execute o seguinte comando no console do NuGet Package Manager:
 PM> Install-Package mercadopago-sdk -Version 1.0.57
 ```
 ]]]
+
+### 3. Obtenha suas credenciais
+
+As credenciais são as **chaves que te oferecemos para que possa configurar sua integração**.
+
+Para poder encontrá-las, veja a [seção de Credenciais]([FAKER][CREDENTIALS][URL]).
+
+> Têm dúvidas sobre credenciais? Acesse nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials).
 
 ---
 
