@@ -43,7 +43,7 @@ Você pode [Entrar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]
 > 
 > Se for operar em nome de outros, você pode trabalhar com credenciais deles de uma forma mais fácil e segura por [Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/marketplace/checkout-api/introduction).
 
-### 2. Gerar usuários de teste
+### 2. Gere usuários de teste
 
 Para realizar os testes, é necessário que você tenha, no mínimo, dois usuários: um comprador e um vendedor. 
 

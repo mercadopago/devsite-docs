@@ -72,7 +72,8 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 
 ### 3. Ten a mano tus credenciales
 
-Las credenciales son las **claves que te proporcionamos para que puedas configurar tu integración**. 
+Las credenciales son las **claves que te proporcionamos para que puedas configurar tu integración**.
+
 Para poder encontrarlas, ve la [sección de Credenciales]([FAKER][CREDENTIALS][URL]).
 
 > ¿Tienes dudas sobre credenciales? Puedes consultar nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials).

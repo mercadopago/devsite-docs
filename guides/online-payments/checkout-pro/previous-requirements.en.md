@@ -73,7 +73,8 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 
 ### 3. Have your credentials handy
 
-Your credentials are the **keys we provide you to configure your integrations**. 
+Your credentials are the **keys we provide you to configure your integrations**.
+
 To find them, go to the [Credentials section]([FAKER][CREDENTIALS][URL]).
 
 > Do you have any questions about credentials? Check our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/faqs/credentials).
