@@ -10,7 +10,6 @@ Para crear un cliente y su tarjeta tienes que enviar el campo del e-mail y el to
 Vas a sumar a cada cliente con el valor `customer` y a la tarjeta como `card`.
 
 [[[
-
 ```php
 
 <?php
@@ -163,6 +162,7 @@ Para agregar nuevas tarjetas a un cliente, debes crear un token y hacer un `HTTP
 
 [[[
 ```php
+
 <?php
 
   MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
@@ -252,7 +252,7 @@ MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
   Console.WriteLine(card.Id);
 
 ```
-```python 
+```python
 
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
@@ -270,6 +270,7 @@ print(card)
 
 ```
 ```curl
+
 curl -X POST \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
@@ -281,6 +282,7 @@ curl -X POST \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
   -d '{"token": "9b2d63e00d66a8c721607214cedaecda"}'
+
 ```
 ]]]
 

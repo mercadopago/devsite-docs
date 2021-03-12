@@ -236,7 +236,7 @@ payment.payer = {
 payment.save()
 
 ```
-```python 
+```python
 
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")

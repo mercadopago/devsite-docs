@@ -10,7 +10,6 @@ Para criar um cliente e associá-lo ao seu cartão, é preciso enviar o campo do
 Cada cliente será guardado com o valor `customer` e cada cartão com o valor `card`.
 
 [[[
-
 ```php
 
 <?php
@@ -253,7 +252,7 @@ MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
   Console.WriteLine(card.Id);
 
 ```
-```python 
+```python
 
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
@@ -271,6 +270,7 @@ print(card)
 
 ```
 ```curl
+
 curl -X POST \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \

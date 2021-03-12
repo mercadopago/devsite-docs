@@ -357,9 +357,9 @@ Preference preference = new Preference();
 ```python
   preference_object = {
       "back_urls": {
-          "success": "https://www.tu-sitio/success",
-          "failure": "http://www.tu-sitio/failure",
-          "pending": "http://www.tu-sitio/pendings"
+          "success": "https://www.seu-sitio/success",
+          "failure": "http://www.seu-sitio/failure",
+          "pending": "http://www.seu-sitio/pendings"
       }
   }
   status_object = {"status": "approved"}

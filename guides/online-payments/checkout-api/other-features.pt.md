@@ -219,7 +219,7 @@ sdk = mercadopago.SDK("ACCESS_TOKEN")
 payment = self.sdk.payment().get(payment_id)
 capture_object = {"capture": True}
 payment_capture = self.sdk.advanced_payment().capture(data=capture_object)
-payment = self.sdk.advanced_payment().update()
+payment = self.sdk.advanced_payment().update(payment_id)
 ```
 ```curl
 curl -X PUT \

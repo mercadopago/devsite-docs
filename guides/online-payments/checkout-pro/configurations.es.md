@@ -272,6 +272,21 @@ excludedPaymentType.Add(new PaymentType()
 paymentmethods.ExcludedPaymentTypes = excludedPaymentType;
 paymentmethods.Installments = 12;
 ```
+```python
+#...
+preference_object = {
+    "excluded_payment_methods": {
+        "id": "master"
+    },
+    "excluded_payment_types": {
+        "id": "ticket"
+    },
+    "installments": 12
+}
+
+payment_methods = self.sdk.preference().update(data=preference_object)
+#...
+```
 ]]]
 
 ----[mco]----
@@ -472,6 +487,26 @@ reference.Items.Add(
   }
 );
 preference.Save()"
+```
+```python
+# Create items in the preference
+preference_object = {
+    "items": [
+        {
+            "title": "Mi producto",
+            "quantity": 1,
+            "unit_price": 75.56
+        },
+        {
+            "title": "Mi producto2",
+            "quantity": 2,
+            "unit_price": 96.56
+        }
+    ]
+}
+
+# Create a preference object
+payment_methods = self.sdk.preference().create(data=preference_object)
 ```
 ```curl
 curl -X POST \

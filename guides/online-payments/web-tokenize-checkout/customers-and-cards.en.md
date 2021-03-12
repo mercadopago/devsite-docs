@@ -119,7 +119,7 @@ MercadoPago.SDK.AccessToken = "YOUR_ACCESS_TOKEN";
 
       card.Save();
 ```
-```python 
+```python
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
 

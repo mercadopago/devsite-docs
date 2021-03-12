@@ -74,7 +74,7 @@ MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 
 ```
-``` python
+```python
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
 

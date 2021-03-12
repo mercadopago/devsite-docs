@@ -10,7 +10,6 @@ To create customers and cards, submit the e-mail field and generated token.
 You will add every customer using the `customer` value, and cards as `card`.
 
 [[[
-
 ```php
 
 <?php
@@ -163,6 +162,7 @@ To add new cards to a customer, create a token and make a `HTTP POST` to the `cu
 
 [[[
 ```php
+
 <?php
 
   MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
@@ -202,7 +202,6 @@ mercadopago.customers.search({
     console.log(card);
   });
 });
-
 
 ```
 ```java
@@ -252,7 +251,7 @@ MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
   Console.WriteLine(card.Id);
 
 ```
-```python 
+```python
 
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
@@ -270,6 +269,7 @@ print(card)
 
 ```
 ```curl
+
 curl -X POST \
     -H 'Content-Type: application/json' \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
