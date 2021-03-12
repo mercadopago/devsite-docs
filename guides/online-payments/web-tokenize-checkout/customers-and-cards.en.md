@@ -214,7 +214,7 @@ You can get the complete list of `Cards` from a customer by doing a `HTTP GET` r
 ```
 ```csharp
 var customerClient = new CustomerClient();
-ResourcesList<CustomerCard> results = await customerClient.ListCardsAsync("CUSTOMER_ID");
+ResourcesList<CustomerCard> customerCards = await customerClient.ListCardsAsync("CUSTOMER_ID");
 ```
 ]]]
 
@@ -539,7 +539,7 @@ You can get the complete list of `Cards` of a client by making a `HTTP GET` requ
 ```
 ```csharp
 var customerClient = new CustomerClient();
-ResourcesList<CustomerCard> results = await customerClient.ListCardsAsync("CUSTOMER_ID");
+ResourcesList<CustomerCard> customerCards = await customerClient.ListCardsAsync("CUSTOMER_ID");
 ```
 ]]]
 

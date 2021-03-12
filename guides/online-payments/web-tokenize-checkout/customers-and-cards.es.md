@@ -214,7 +214,7 @@ Puedes obtener el listado completo de `Cards` de un cliente realizando un reques
 ```
 ```csharp
 var customerClient = new CustomerClient();
-ResourcesList<CustomerCard> results = await customerClient.ListCardsAsync("CUSTOMER_ID");
+ResourcesList<CustomerCard> customerCards = await customerClient.ListCardsAsync("CUSTOMER_ID");
 ```
 ]]]
 
@@ -539,7 +539,7 @@ Puedes obtener el listado completo de `Cards` de un cliente realizando un reques
 ```
 ```csharp
 var customerClient = new CustomerClient();
-ResourcesList<CustomerCard> results = await customerClient.ListCardsAsync("CUSTOMER_ID");
+ResourcesList<CustomerCard> customerCards = await customerClient.ListCardsAsync("CUSTOMER_ID");
 ```
 ]]]
 

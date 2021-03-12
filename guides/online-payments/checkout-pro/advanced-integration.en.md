@@ -126,13 +126,13 @@ var payer = new PreferencePayerRequest
     Phone = new PhoneRequest
     {
         AreaCode = "",
-        Number = "949 128 866"
+        Number = "949 128 866",
     },
     ----[mla, mlb, mlu, mco, mlc, mpe]----
     Identification = new IdentificationRequest
     {
         Type = "DNI",
-        Number = "12345678"
+        Number = "12345678",
     },
     ------------
     Address = new AddressRequest
