@@ -104,6 +104,7 @@ payment.save()
 
 using MercadoPago.Client.Payment;
 using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
 
 MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
@@ -220,11 +221,12 @@ payment.update()
 ```csharp
 using MercadoPago.Client.Payment;
 using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
 
 MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
 var client = new PaymentClient();
-var payment = await client.CaptureAsync(paymentId);
+Payment payment = await client.CaptureAsync(paymentId);
 ```
 ```curl
 curl -X PUT \
@@ -314,11 +316,12 @@ payment.update()
 ```csharp
 using MercadoPago.Client.Payment;
 using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
 
 MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
 var client = new PaymentClient();
-var payment = await client.CaptureAsync(paymentId, 75);
+Payment payment = await client.CaptureAsync(paymentId, 75);
 ```
 ```curl
 
@@ -404,11 +407,12 @@ payment.update()
 ```csharp
 using MercadoPago.Client.Payment;
 using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
 
 MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
 var client = new PaymentClient();
-var payment = await client.CancelAsync(paymentId);
+Payment payment = await client.CancelAsync(paymentId);
 ```
 ```curl
 curl -X PUT \

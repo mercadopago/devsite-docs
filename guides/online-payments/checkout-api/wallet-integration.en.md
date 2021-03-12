@@ -141,7 +141,7 @@ var request = new PreferenceRequest
 };
 // Create the preference
 var client = new PreferenceClient();
-var preference = await client.CreateAsync(request);
+Preference preference = await client.CreateAsync(request);
 ```
 ```curl
 ===

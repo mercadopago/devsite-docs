@@ -357,7 +357,7 @@ var payer = new PreferencePayerRequest
     Name = "Charles",
     Surname = "Luevano",
     Email = "charles@hotmail.com",
-    Phone = new Phone()
+    Phone = new PhoneRequest
     {
         AreaCode = "",
         Number = "949 128 866",

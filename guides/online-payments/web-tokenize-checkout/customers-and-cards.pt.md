@@ -110,13 +110,13 @@ var customerRequest = new CustomerRequest
     Email = "test@test.com",
 };
 var customerClient = new CustomerClient();
-var customer = await customerClient.CreateAsync(customerRequest);
+Customer customer = await customerClient.CreateAsync(customerRequest);
 
 var cardRequest = new CustomerCardCreateRequest
 {
     Token = "9b2d63e00d66a8c721607214cedaecda",
 };
-var card = customerClient.CreateCardAsync(customer.Id, cardRequest);
+CustomerCard card = await customerClient.CreateCardAsync(customer.Id, cardRequest);
 ```
 ]]]
 
@@ -339,13 +339,13 @@ puts card
 MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
 
 var customerClient = new CustomerClient();
-var customer = await customerClient.GetAsync("247711297-jxOV430go9fx2e");
+Customer customer = await customerClient.GetAsync("247711297-jxOV430go9fx2e");
 
 var cardRequest = new CustomerCardCreateRequest
 {
     Token = "9b2d63e00d66a8c721607214cedaecda",
 };
-var card = customerClient.CreateCardAsync(customer.Id, cardRequest);
+CustomerCard card = await customerClient.CreateCardAsync(customer.Id, cardRequest);
 
 Console.WriteLine(card.Id);
 ```

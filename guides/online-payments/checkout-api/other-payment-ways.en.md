@@ -3478,38 +3478,34 @@ payment.save()
 
 ```
 ```csharp
-using MercadoPago;
-using MercadoPago.DataStructures.Payment;
-using MercadoPago.Resources;
 
-MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+using MercadoPago.Config;
+using MercadoPago.Client.Common;
+using MercadoPago.Client.Payment;
+using MercadoPago.Resource.Payment;
 
-Payment payment = new Payment()
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var request = new PaymentCreateRequest
 {
-    TransactionAmount = float.Parse("105"),
-    Description = "Título do produto",
+    TransactionAmount = 105,
+    Description = "Product Title",
     PaymentMethodId = "pix",
-    Payer = new Payer(){
+    Payer = new PaymentPayerRequest
+    {
         Email = "test@test.com",
         FirstName = "Test",
         LastName = "User",
-        Identification = new Identification(){
+        Identification = new IdentificationRequest
+        {
             Type = "CPF",
-            Number = "191191191-00"
+            Number = "191191191-00",
         },
-        Address = new Address(){
-            ZipCode = "06233-200",
-            StreetName = "Av. das Nações Unidas",
-            StreetNumber = "3003",
-            Neighborhood = "Bonfim",
-            City = "Osasco",
-            FederalUnit = "SP"
-
-        }
-    }
+    },
 };
 
-payment.Save();
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(request);
 
 ```
 ```curl
@@ -3701,7 +3697,7 @@ date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ===
 The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+paymentCreateRequest.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
 ```
 ```curl
 ===

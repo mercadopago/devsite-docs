@@ -270,7 +270,7 @@ var request = new PreferenceRequest
     NotificationUrl = "http://urlmarketplace.com/notification_ipn",
 };
 var client = new PreferenceClient();
-var preference = await client.CreateAsync(request);
+Preference preference = await client.CreateAsync(request);
 
 ```
 ]]]

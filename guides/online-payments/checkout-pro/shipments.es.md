@@ -703,7 +703,7 @@ var request = new PreferenceRequest
 };
 
 var client = new PreferenceClient();
-var preference = await client.CreateAsync(request);
+Preference preference = await client.CreateAsync(request);
 ```
 ]]]
 ------------
@@ -903,7 +903,7 @@ var request = new PreferenceRequest
 };
 
 var client = new PreferenceClient();
-var preference = await client.CreateAsync(request);
+Preference preference = await client.CreateAsync(request);
 ```
 ]]]
 ------------
@@ -1103,7 +1103,7 @@ var request = new PreferenceRequest
 };
 
 var client = new PreferenceClient();
-var preference = await client.CreateAsync(request);
+Preference preference = await client.CreateAsync(request);
 ```
 ]]]
 ------------

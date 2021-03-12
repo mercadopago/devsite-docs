@@ -484,7 +484,7 @@ var request = new PreferenceRequest
 var client = new PreferenceClient();
 
 // Crea la preferencia
-var preference = await client.CreateAsync(request);
+Preference preference = await client.CreateAsync(request);
 ```
 ```curl
 curl -X POST \
@@ -674,7 +674,7 @@ var request = new PreferenceRequest
 };
 
 var client = new PreferenceClient();
-var preference = await client.CreateAsync(request);
+Preference preference = await client.CreateAsync(request);
 ```
 ```curl
 ===
@@ -814,7 +814,7 @@ var request = new PreferenceRequest
 };
 
 var client = new PreferenceClient();
-var preference = await client.CreateAsync(request);
+Preference preference = await client.CreateAsync(request);
 ```
 ```curl
 ===

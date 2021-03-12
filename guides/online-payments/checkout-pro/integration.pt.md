@@ -197,6 +197,7 @@ preference = $mp.create_preference(preference_data)
 // SDK de Mercado Pago
 using MercadoPago.Config;
 using MercadoPago.Client.Preference;
+using MercadoPago.Resource.Preference;
 
 // Configura credenciais
 MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
@@ -218,7 +219,7 @@ var request = new PreferenceRequest
 
 // Cria a preferência usando o client
 var client = new PreferenceClient();
-var preference = await client.CreateAsync(request);
+Preference preference = await client.CreateAsync(request);
 ```
 ```curl
 curl -X POST \
@@ -333,9 +334,9 @@ preference = $mp.create_preference(preference_data)
 ```
 ```csharp
 // SDK de Mercado Pago
-// SDK de Mercado Pago
 using MercadoPago.Config;
 using MercadoPago.Client.Preference;
+using MercadoPago.Resource.Preference;
 
 // Configura credenciais
 MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
@@ -357,7 +358,7 @@ var request = new PreferenceRequest
 
 // Cria a preferência usando o client
 var client = new PreferenceClient();
-var preference = await client.CreateAsync(request);
+Preference preference = await client.CreateAsync(request);
 ```
 ```curl
 curl -X POST \

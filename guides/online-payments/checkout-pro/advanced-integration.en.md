@@ -114,7 +114,6 @@ payer = MercadoPago::Payer.new({
 # ...
 ```
 ```csharp
-using System.Collections.Generic;
 using MercadoPago.Client.Common;
 using MercadoPago.Client.Preference;
 // ...
