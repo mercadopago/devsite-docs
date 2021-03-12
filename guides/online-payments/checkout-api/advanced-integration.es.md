@@ -340,7 +340,7 @@ Primero, obt√©n el listado de guardadas para que tu cliente pueda elegir con cu√
 ```csharp
 
 var customerClient = new CustomerClient();
-ResourcesList<CustomerCard> results = await customerClient.ListCardsAsync("CUSTOMER_ID");
+ResourcesList<CustomerCard> customerCards = await customerClient.ListCardsAsync("CUSTOMER_ID");
 
 ```
 ```curl
@@ -690,7 +690,7 @@ curl -X GET \
 ```csharp
 
 var customerClient = new CustomerClient();
-ResourcesList<CustomerCard> results = await customerClient.ListCardsAsync("CUSTOMER_ID");
+ResourcesList<CustomerCard> customerCards = await customerClient.ListCardsAsync("CUSTOMER_ID");
 
 ```
 ```curl

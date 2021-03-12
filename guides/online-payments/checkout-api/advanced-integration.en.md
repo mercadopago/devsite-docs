@@ -340,7 +340,7 @@ First, get the saved card list so that your customer can choose one to make the 
 ```csharp
 
 var customerClient = new CustomerClient();
-ResourcesList<CustomerCard> results = await customerClient.ListCardsAsync("CUSTOMER_ID");
+ResourcesList<CustomerCard> customerCards = await customerClient.ListCardsAsync("CUSTOMER_ID");
 
 ```
 ```curl
@@ -690,7 +690,7 @@ curl -X GET \
 ```csharp
 
 var customerClient = new CustomerClient();
-ResourcesList<CustomerCard> results = await customerClient.ListCardsAsync("CUSTOMER_ID");
+ResourcesList<CustomerCard> customerCards = await customerClient.ListCardsAsync("CUSTOMER_ID");
 
 ```
 ```curl
