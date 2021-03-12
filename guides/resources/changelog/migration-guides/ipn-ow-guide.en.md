@@ -28,7 +28,7 @@ The JSON will have basic payment information. If you need more information, [per
 
 ## How to activate the new IPN notifications?
 
-From your Mercado Pago account you can [add IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/ipn-notifications).
+From your Mercado Pago account you can [add IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
 
 > You must use the account in which you receive the payments from which you want to be notified.
 
@@ -64,6 +64,6 @@ You will also receive a JSON as follows:
 
 ## What can I do if I don’t want IPN notifications?
 
-If you want or need other types of notifications, you can [use webhooks](https://www.mercadopago.com/mlb/account/webhooks).
+If you want or need other types of notifications, you can [use webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications).
 
 > To use webhooks, it is important that you select the application you want to receive notifications about and that you choose the corresponding topics.  

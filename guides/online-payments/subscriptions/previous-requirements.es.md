@@ -26,14 +26,15 @@ Ten en cuenta que el monto mínimo permitido para crear una suscripción es de $
 
 ## Primeros pasos
 
-### Acceso a cuenta de Mercado Pago o Mercado Libre
-Para poder comenzar la integración, es necesario contar con una cuenta de Mercado Pago o Mercado Libre.
+### Accede a una cuenta
 
-Si aún no tienes una, puedes [crear una cuenta](https://www.mercadopago[FAKER][URL][DOMAIN]) cuando quieras.
+Para poder comenzar la integración, es necesario **contar con una cuenta de Mercado Pago o Mercado Libre**. 
+
+Puedes [Ingresar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/previous-requirements) a una cuenta de Mercado Pago o de Mercado Libre que ya exista o [Crear una cuenta nueva](https://www.mercadopago[FAKER][URL][DOMAIN]) en Mercado Pago.
 
 ### Ten a mano tus credenciales
 
-Las credenciales son las claves que te proporcionamos para que puedas configurar tu integración. Para este caso, vas a utilizar una clave pública y otra clave privada.
+Las credenciales son las **claves que te proporcionamos para que puedas configurar tu integración**. Para este caso, vas a utilizar una clave pública y otra clave privada.
 
 Para poder encontrarlas, ve la sección de [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials).
 

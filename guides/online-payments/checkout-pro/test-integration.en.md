@@ -120,7 +120,6 @@ When opening the checkout created with the data of your seller user:
 
 | Card | Number | CVV | Expiration Date |
 | :--- | :---: | :---: | :---: |
-| Mastercard | 5474 9254 3267 0366 | 123 | 11/25 |
 | Visa | 4075 5957 1648 3764 | 123 | 11/25 |
 
 ------------
