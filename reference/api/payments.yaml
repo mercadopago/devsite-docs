@@ -717,6 +717,42 @@ paths:
                     type: string
                     format: nullable
                     description: merchant_number
+                  point_of_interaction:
+                    type: object
+                    properties:
+                      type:
+                        type: string
+                        example: PIX
+                        description: Payment type identifier
+                      sub_type:
+                        type: string
+                        example: null
+                        description: Type of way the payment is made
+                      application_data:
+                        type: object
+                        properties:
+                          name:
+                            type: string
+                            example: NAME_SDK
+                            description: Name
+                          version:
+                            type: string
+                            example: VERSION_NUMBER
+                            description: Current version
+                        description: Information of the application that processes the payment
+                      transaction_data:
+                        type: object
+                        properties:
+                          qr_code_base64:
+                            type: string
+                            example: iVBORw0KGgoAAAANSUhEUgAABRQAAAUUCAYAAACu5p7oAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAIABJREFUeJzs2luO3LiWQNFmI+Y/Zd6vRt36KGNXi7ZOBtcagHD4kNLeiLX33v8DAAAAABD879sDAAAAAAA/h6AIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCAAAAAJmgCAAAAABkgiIAAAAAkAmKAAAAAEAmKAIAAAAAmaAIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCA...
+                            description: Data to render the QR code
+                          qr_code:
+                            type: string
+                            example: 00020126600014br.gov.bcb.pix0117test@testuser.com0217dados adicionais520400005303986540510.005802BR5913Maria Silva6008Brasilia62070503***6304E2CA
+                            description: Data to build a payment code to copy and paste
+                        description: Pending generated payment information
+                    description: Information from the application that processes the payment and receives regulatory data
         '400':
           description: Error
           content:
