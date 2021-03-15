@@ -130,6 +130,12 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 >
 > Captura los datos para el pago
 
+> INFO
+>
+> Nueva versión MercadoPago.js
+>
+> Utiliza la librería MercadoPago.js V2 para estar actualizado a la última versión y mejorar la compatibilidad con los distintos navegadores.<br><br>[Integrar Checkout API con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/).
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa la librería MercadoPago.js
 
 **Recuerda utilizar la librería oficial para acceder a la API de Mercado Pago** desde tu aplicación y recolectar los datos de forma segura.
@@ -647,6 +653,12 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 >
 > Captura los datos para el pago
 
+> INFO
+>
+> Nueva versión MercadoPago.js
+>
+> Utiliza la librería MercadoPago.js V2 para estar actualizado a la última versión y mejorar la compatibilidad con los distintos navegadores.<br><br>[Integrar Checkout API con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/).
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa la librería MercadoPago.js
 
 **Recuerda utilizar la librería oficial para acceder a la API de Mercado Pago** desde tu aplicación y recolectar los datos de forma segura.
@@ -1037,6 +1049,12 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 > h2
 >
 > Captura los datos para el pago
+
+> INFO
+>
+> Nueva versión MercadoPago.js
+>
+> Utiliza la librería MercadoPago.js V2 para estar actualizado a la última versión y mejorar la compatibilidad con los distintos navegadores.<br><br>[Integrar Checkout API con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa la librería MercadoPago.js
 
@@ -1445,6 +1463,12 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 > h2
 >
 > Captura los datos para el pago
+
+> INFO
+>
+> Nueva versión MercadoPago.js
+>
+> Utiliza la librería MercadoPago.js V2 para estar actualizado a la última versión y mejorar la compatibilidad con los distintos navegadores.<br><br>[Integrar Checkout API con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa la librería MercadoPago.js
 
@@ -2051,6 +2075,12 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 >
 > Captura los datos para el pago
 
+> INFO
+>
+> Nueva versión MercadoPago.js
+>
+> Utiliza la librería MercadoPago.js V2 para estar actualizado a la última versión y mejorar la compatibilidad con los distintos navegadores.<br><br>[Integrar Checkout API con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/).
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa la librería MercadoPago.js
 
 **Recuerda utilizar la librería oficial para acceder a la API de Mercado Pago** desde tu aplicación y recolectar los datos de forma segura.
@@ -2581,6 +2611,12 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 >
 > Captura los datos para el pago
 
+> INFO
+>
+> Nueva versión MercadoPago.js
+>
+> Utiliza la librería MercadoPago.js V2 para estar actualizado a la última versión y mejorar la compatibilidad con los distintos navegadores.<br><br>[Integrar Checkout API con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/).
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa la librería MercadoPago.js
 
 **Recuerda utilizar la librería oficial para acceder a la API de Mercado Pago** desde tu aplicación y recolectar los datos de forma segura.
@@ -2973,6 +3009,12 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 > h2
 >
 > Captura los datos para el pago
+
+> INFO
+>
+> Nueva versión MercadoPago.js
+>
+> Utiliza la librería MercadoPago.js V2 para estar actualizado a la última versión y mejorar la compatibilidad con los distintos navegadores.<br><br>[Integrar Checkout API con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa la librería MercadoPago.js
 

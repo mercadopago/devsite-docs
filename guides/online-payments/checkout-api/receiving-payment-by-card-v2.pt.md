@@ -16,7 +16,9 @@ Use os [exemplos para download](#bookmark_exemplos_para_download) para conhecer 
 
 ## Como funciona?
 
-![API-integration-flowchart](/images/api/api-integration-flowchart-pt.png)
+![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-pt)
+
+> Caso deseje realizar um fluxo de pagamento personalizado, compartilhamos todos os [métodos disponíveis para integrar de forma avançada.](#)
 
 <br>
 
@@ -42,265 +44,184 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 >
 > Capture os dados de cartão
 
-> INFO
->
-> Nova versão de MercadoPago.js
->
-> Utilize a biblioteca MercadoPago.js V2 para criar seu formulário de cartão com a funcionalidade CardForm e autogerar a lógica de negócio necessária para fazer o pagamento.<br><br>[Integrar Checkout Transparente com MercadoPago.js V2](#).
-
 Para criar um pagamento é necessário fazer a captura dos dados do cartão através do navegador do comprador. Por questões de segurança, **é muito importante que os dados nunca cheguem aos seus servidores**.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Inclua a biblioteca MercadoPago.js
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Inclua e configure a biblioteca MercadoPago.js
 
-**Use nossa biblioteca oficial para acessar a API de Mercado Pago** no seu frontend e coletar os dados de forma segura.
+**Utilize nossa biblioteca oficial para acessar a API de Mercado Pago** desde seu frontend para coletar os dados de forma segura e configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da forma a seguir:
 
 ```html
-<script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+<body>
+   <!-- Add step #2 -->
+   <script src="https://sdk.mercadopago.com/js/v2"></script>
+   <script>
+       const mp = new MercadoPago('PUBLIC_KEY');
+       // Add step #3
+   </script>
+</body>
 ```
+
+> Se ainda não possui conta para ver suas credenciais, [registre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+
+> Esta documentação utiliza a nova versão da biblioteca. Para ver a versão anterior, vá para a [seção de integrar pagamentos com cartão com MercadoPago.js V1.](#)
 
 A informação do cartão será convertida em um token para que envie os dados aos seus servidores de modo seguro.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o formulário de pagamento
 
-Para realizar a captura dos dados sensíveis dos cartões dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação e a geração correta do token. Por exemplo, é preciso respeitar os atributos `data-checkout` e não colocar o atributo `name` nos campos que tenham dados sensíveis, dessa forma nunca chegarão aos seus servidores.
+Para capturar os dados do cartão, primeiro deve oferecer um formulário para carregar toda a informação. 
 
-Você pode adicionar tudo o que necessite, modificar o atributo `label` sugerido e adicionar o estilo que queira sem problemas.
+Com a **funcionalidade CardForm da biblioteca MercadoPago.js V2**, pode obter e validar todos os dados necessários, como identificar o tipo e nome do meio de pagamento, o banco emissor, o número de prestações e mais. 
 
-No seguinte exemplo se assume que os dados `transactionAmount` e `description` formam obtidos em um passo anterior onde o cliente selecionou o produto ou serviço que deseja pagar.
+CardForm permite você ter uma implementação segura e uma correta tokenização da informação do cartão. 
+
+Utilize o formulário seguinte e adicione os estilos que desejar.
+
 
 ```html
-<form action="/process_payment" method="post" id="paymentForm">
-   <h3>Detalhe do comprador</h3>
-     <div>
-       <div>
-         <label for="email">E-mail</label>
-         <input id="email" name="email" type="text" value="test@test.com"/>
-       </div>----[mla, mlb, mlu, mlc, mpe, mco]----
-       <div>
-         <label for="docType">Tipo de documento</label>
-         <select id="docType" name="docType" data-checkout="docType" type="text"></select>
-       </div>------------
-       <div>
-         <label for="docNumber">Número do documento</label>
-         <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
-       </div>
-     </div>
-   <h3>Detalhes do cartão</h3>
-     <div>
-       <div>
-         <label for="cardholderName">Titular do cartão</label>
-         <input id="cardholderName" data-checkout="cardholderName" type="text">
-       </div>
-       <div>
-         <label for="">Data de vencimento</label>
-         <div>
-           <input type="text" placeholder="MM" id="cardExpirationMonth" data-checkout="cardExpirationMonth"
-             onselectstart="return false" onpaste="return false"
-             oncopy="return false" oncut="return false"
-             ondrag="return false" ondrop="return false" autocomplete=off>
-           <span class="date-separator">/</span>
-           <input type="text" placeholder="YY" id="cardExpirationYear" data-checkout="cardExpirationYear"
-             onselectstart="return false" onpaste="return false"
-             oncopy="return false" oncut="return false"
-             ondrag="return false" ondrop="return false" autocomplete=off>
-         </div>
-       </div>
-       <div>
-         <label for="cardNumber">Número do cartão</label>
-         <input type="text" id="cardNumber" data-checkout="cardNumber"
-           onselectstart="return false" onpaste="return false"
-           oncopy="return false" oncut="return false"
-           ondrag="return false" ondrop="return false" autocomplete=off>
-       </div>
-       <div>
-         <label for="securityCode">Código de segurança</label>
-         <input id="securityCode" data-checkout="securityCode" type="text"
-           onselectstart="return false" onpaste="return false"
-           oncopy="return false" oncut="return false"
-           ondrag="return false" ondrop="return false" autocomplete=off>
-       </div>
-       <div id="issuerInput">
-         <label for="issuer">Banco emissor</label>
-         <select id="issuer" name="issuer" data-checkout="issuer"></select>
-       </div>
-       <div>
-         <label for="installments">Parcelas</label>
-         <select type="text" id="installments" name="installments"></select>
-       </div>
-       <div>
-         <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
-         <input type="hidden" name="paymentMethodId" id="paymentMethodId" />
-         <input type="hidden" name="description" id="description" />
-         <br>
-         <button type="submit">Pagar</button>
-         <br>
-       </div>
-   </div>
- </form>
+
+<!-- Step #2 -->
+<form id="form-checkout" >
+   <input type="text" name="cardNumber" id="form-checkout__cardNumber" />
+   <input type="text" name="cardExpirationMonth" id="form-checkout__cardExpirationMonth" />
+   <input type="text" name="cardExpirationYear" id="form-checkout__cardExpirationYear" />
+   <input type="text" name="cardholderName" id="form-checkout__cardholderName"/>
+   <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail"/>
+   <input type="text" name="securityCode" id="form-checkout__securityCode" />
+   <select name="issuer" id="form-checkout__issuer"></select>
+   <select name="identificationType" id="form-checkout__identificationType"></select>
+   <input type="text" name="identificationNumber" id="form-checkout__identificationNumber"/>
+   <select name="installments" id="form-checkout__installments"></select>
+   <button type="submit" id="form-checkout__submit">Pagar</button>
+   <progress value="0" class="progress-bar">Carregando...</progress>
+</form>
 ```
 
-> NOTE
->
-> Nota
->
-> Lembre-se que é necessário que o formulário seja encontrado antes de todos os passos seguintes para seu correto funcionamento.
+> GIT
+> 
+> Referencia técnica
+> 
+> Procure informações acerca dos distintos atributos nas [referências técnicas](https://github.com/mercadopago/sdk-js).
 
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure sua chave pública
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Integre o formulário com a biblioteca MercadoPago.js
 
 
-Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
+Agora, para inicializar o CardForm, deve relacionar a ID de cada campo do formulário com os atributos correspondentes. A biblioteca será responsável pelo preenchimento, obtenção e validação de todos os dados necessários na hora de confirmar o pagamento.
 
 ```javascript
-window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
+// Step #3
+const cardForm = mp.cardForm({
+amount: "100.5",
+autoMount: true,
+form: {
+  id: "form-checkout",
+  cardholderName: {
+    id: "form-checkout__cardholderName",
+    placeholder: "Titular do cartão",
+  },
+  cardholderEmail: {
+    id: "form-checkout__cardholderEmail",
+    placeholder: "E-mail",
+  },
+  cardNumber: {
+    id: "form-checkout__cardNumber",
+    placeholder: "Número do cartão",
+  },
+  cardExpirationMonth: {
+    id: "form-checkout__cardExpirationMonth",
+    placeholder: "Mês de vencimiento",
+  },
+  cardExpirationYear: {
+    id: "form-checkout__cardExpirationYear",
+    placeholder: "Ano de vencimiento",
+  },
+  securityCode: {
+    id: "form-checkout__securityCode",
+    placeholder: "Código de segurança",
+  },
+  installments: {
+    id: "form-checkout__installments",
+    placeholder: "Parcelas",
+  },
+  identificationType: {
+    id: "form-checkout__identificationType",
+    placeholder: "Tipo de documento",
+  },
+  identificationNumber: {
+    id: "form-checkout__identificationNumber",
+    placeholder: "Número do documento",
+  },
+  issuer: {
+    id: "form-checkout__issuer",
+    placeholder: "Banco emissor",
+  },
+},
+callbacks: {
+  onFormMounted: error => {
+    if (error) return console.warn("Form Mounted handling error: ", error);
+    console.log("Form mounted");
+  },
+  onSubmit: event => {
+    event.preventDefault();
+
+    const {
+      paymentMethodId: payment_method_id,
+      issuerId: issuer_id,
+      cardholderEmail: email,
+      amount,
+      token,
+      installments,
+      identificationNumber,
+      identificationType,
+    } = cardForm.getCardFormData();
+
+    fetch("/process_payment", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        token,
+        issuer_id,
+        payment_method_id,
+        transaction_amount: Number(amount),
+        installments: Number(installments),
+        description: "Descrição do produto",
+        payer: {
+          email,
+          identification: {
+            type: identificationType,
+            number: identificationNumber,
+          },
+        },
+      }),
+    });
+  },
+  onFetching: (resource) => {
+    console.log("Fetching resource: ", resource);
+
+    // Animate progress bar
+    const progressBar = document.querySelector(".progress-bar");
+    progressBar.removeAttribute("value");
+
+    return () => {
+      progressBar.setAttribute("value", "0");
+    };
+  },
+},
+});
 ```
 
-> Se ainda não possui conta para ver suas credenciais, [regístre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+A opção de callbacks aceita diferentes funções que são ativadas em diversos momentos do fluxo.
 
+> GIT
+> 
+> Referencia técnica
+> 
+> Obtenha mais informações acerca dos callbacks nas [referências técnicas](https://github.com/mercadopago/sdk-js).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtenha os dados para seu formulário
-
-----[mla, mlb, mlu, mlc, mpe, mco]----
-
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os tipos de documento
-
-Um dos campos obrigatórios é o tipo de documento. Utilize a lista de documentos no momento de completar os dados.
-
-Incluindo o elemento de tipo select com `id = docType` que se encontra no formulário, MercadoPago.js completará automaticamente as opções disponíveis quando a seguinte função for chamada:
-
-```javascript
-window.Mercadopago.getIdentificationTypes();
-```
-
-> Encontre mais detalhes na [seção de Tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/identification-types).
-
-------------
-
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha o método de pagamento do cartão
-
-Valide os dados dos seus clientes enquanto são preenchidos para evitar erros e oferecer corretamente as parcelas disponíveis. Use o seguinte código de exemplo para identificar o meio de pagamento com os primeiros 6 dígitos do cartão.
-
-```javascript
-document.getElementById('cardNumber').addEventListener('change', guessPaymentMethod);
-
-function guessPaymentMethod(event) {
-   let cardnumber = document.getElementById("cardNumber").value;
-   if (cardnumber.length >= 6) {
-       let bin = cardnumber.substring(0,6);
-       window.Mercadopago.getPaymentMethod({
-           "bin": bin
-       }, setPaymentMethod);
-   }
-};
-
-function setPaymentMethod(status, response) {
-   if (status == 200) {
-       let paymentMethod = response[0];
-       document.getElementById('paymentMethodId').value = paymentMethod.id;
-
-       getIssuers(paymentMethod.id);
-   } else {
-       alert(`payment method info error: ${response}`);
-   }
-}
-```
-
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha a banco emissor
-
-No momento do preenchimento o formulário, é importante identificar o banco emissor do cartão para evitar conflitos entre os diferentes emissores e poder oferecer as opções corretas de parcelamento.
-
-Adicione o seguinte código para obter o `issuer_id`:
-
-```javascript
-function getIssuers(paymentMethodId) {
-   window.Mercadopago.getIssuers(
-       paymentMethodId,
-       setIssuers
-   );
-}
-
-function setIssuers(status, response) {
-   if (status == 200) {
-       let issuerSelect = document.getElementById('issuer');
-       response.forEach( issuer => {
-           let opt = document.createElement('option');
-           opt.text = issuer.name;
-           opt.value = issuer.id;
-           issuerSelect.appendChild(opt);
-       });
-
-       getInstallments(
-           document.getElementById('paymentMethodId').value,
-           document.getElementById('transactionAmount').value,
-           issuerSelect.value
-       );
-   } else {
-       alert(`issuers method info error: ${response}`);
-   }
-}
-```
-
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha a quantidade de parcelas
-
-Outro campo obrigatório para pagamento com cartão é a quantidade de parcelas. Para obter as parcelas diponíveis, utilize a seguinte função de exemplo para completar o campo sugerido de tipo _select_ denominado `installments`.
-
-```javascript
-function getInstallments(paymentMethodId, transactionAmount, issuerId){
-   window.Mercadopago.getInstallments({
-       "payment_method_id": paymentMethodId,
-       "amount": parseFloat(transactionAmount),
-       "issuer_id": parseInt(issuerId)
-   }, setInstallments);
-}
-
-function setInstallments(status, response){
-   if (status == 200) {
-       document.getElementById('installments').options.length = 0;
-       response[0].payer_costs.forEach( payerCost => {
-           let opt = document.createElement('option');
-           opt.text = payerCost.recommended_message;
-           opt.value = payerCost.installments;
-           document.getElementById('installments').appendChild(opt);
-       });
-   } else {
-       alert(`installments method info error: ${response}`);
-   }
-}
-```
-
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. Crie o token do cartão
-
-Antes de enviar o pagamento, crie o token que conterá de maneira segura toda a informação do cartão. Você deve gerá-lo da seguinte forma:
-
-```javascript
-doSubmit = false;
-document.getElementById('paymentForm').addEventListener('submit', getCardToken);
-function getCardToken(event){
-   event.preventDefault();
-   if(!doSubmit){
-       let $form = document.getElementById('paymentForm');
-       window.Mercadopago.createToken($form, setCardTokenAndPay);
-       return false;
-   }
-};
-
-function setCardTokenAndPay(status, response) {
-   if (status == 200 || status == 201) {
-       let form = document.getElementById('paymentForm');
-       let card = document.createElement('input');
-       card.setAttribute('name', 'token');
-       card.setAttribute('type', 'hidden');
-       card.setAttribute('value', response.id);
-       form.appendChild(card);
-       doSubmit=true;
-       form.submit();
-   } else {
-       alert("Verify filled data!\n"+JSON.stringify(response, null, 4));
-   }
-};
-```
-
-O método `createToken` devolverá um `card_token` com a representação segura do cartão. O segundo campo do método `createToken` é a função de `callback` que processará a resposta (nesse caso usamos a função `setCardTokenAndPay`). Então tomaremos o ID da resposta e o guardaremos em um atributo oculto que chamaremos `token`, para em seguida enviar o formulário aos seus servidores.
+Antes de enviar o formulário, geramos um token com a representação segura do cartão e o salvaremos em um `input` oculto que denominaremos `MPHiddenInputToken` para depois enviar o formulário para seus servidores.
 
 > WARNING
 >
@@ -319,7 +240,7 @@ O método `createToken` devolverá um `card_token` com a representação segura 
 
 Para continuar o processo de pagamento ao Mercado Pago, é necessário que seu backend possa receber a informação do formulário com o token gerado e os dados completos.
 
-Segundo o exemplo dado, seu backend devería diponibilizar um endpoint `/process_payment`, que foi definido no atributo `action` do formulário, para receber nele, todos os dados assim que realizar a ação `submit`.
+Segundo o exemplo, seu backend deveria disponibilizar um endpoint `/process_payment`, para receber ali todos os dados depois de realizar a ação submit.
 
 Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs. Os campos mínimos requeridos para enviar são: `token`, `transaction_amount`, `installments`, `payment_method_id` e o `payer.email`.
 
