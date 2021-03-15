@@ -29,12 +29,12 @@
         "email": "test_user_80507629@testuser.com",
         "identification": {
         	"number": "19119119100",
-                "type": "CPF"
-        }
+            "type": "CPF"
+        },
         "phone": {
-		"area_code": "011",
-		"number": "987654321",
-		"extension": ""
+            "area_code": "011",
+            "number": "987654321",
+            "extension": ""
         },
         "type": "guest",
         "entity_type": null,
@@ -43,15 +43,15 @@
     "metadata": {},
     "additional_info": {
     	"items": [
-        {
-		"id":"PR0001",
-		"title":"Point Mini",
-		"description": "Producto Point para cobros con tarjetas mediante bluetooth",
-		"picture_url":"https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png",
-		"category_id": "electronics",
-		"quantity":1,
-		"unit_price":58.80
-	}
+            {
+                "id": "PR0001",
+                "title": "Point Mini",
+                "description": "Producto Point para cobros con tarjetas mediante bluetooth",
+                "picture_url": "https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png",
+                "category_id": "electronics",
+                "quantity": 1,
+                "unit_price": 58.80
+            }
         ],
         "payer": {
             "phone": {
@@ -68,13 +68,13 @@
             "registration_date": "2019-01-01T12:01:01.000-03:00"
         },
         "shipments": {
-        	"receiver_address":{
-			"street_name":"Av das Nacoes Unidas",
-			"street_number":3003,
-			"zip_code":"06233200",
-			"city_name": "Buzios",
-			"state_name": "Rio de Janeiro"
-		}
+        	"receiver_address": {
+                "street_name": "Av das Nacoes Unidas",
+                "street_number": 3003,
+                "zip_code": "06233200",
+                "city_name": "Buzios",
+                "state_name": "Rio de Janeiro"
+            }
         }
     },
     "order": {},
@@ -105,7 +105,7 @@
     "captured": true,
     "binary_mode": false,
     "call_for_authorize_id": null,
-    "statement_descriptor":"MercadoPago",
+    "statement_descriptor": "MercadoPago",
     "installments": 1,
     "card": {
         "id": null,
@@ -129,5 +129,17 @@
     "merchant_account_id": null,
     "acquirer": null,
     "merchant_number": null,
-    "acquirer_reconciliation": []
+    "acquirer_reconciliation": [],
+    "point_of_interaction": {
+        "type": "PIX",
+        "sub_type": null,
+        "application_data": {
+          "name": "NAME_SDK",    
+          "version": "VERSION_NUMBER"
+        },
+        "transaction_data": {
+            "qr_code_base64": "iVBORw0KGgoAAAANSUhEUgAABRQAAAUUCAYAAACu5p7oAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAIABJREFUeJzs2luO3LiWQNFmI+Y/Zd6vRt36KGNXi7ZOBtcagHD4kNLeiLX33v8DAAAAABD879sDAAAAAAA/h6AIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCAAAAAJmgCAAAAABkgiIAAAAAkAmKAAAAAEAmKAIAAAAAmaAIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCA...",
+            "qr_code": "00020126600014br.gov.bcb.pix0117test@testuser.com0217datos adicionales520400005303986540510.005802BR5913Maria Silva6008Brasilia62070503***6304E2CA",
+        }
+    }
 }

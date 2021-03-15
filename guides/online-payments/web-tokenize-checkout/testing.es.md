@@ -100,7 +100,6 @@ Cuentas con un par de [credenciales de prueba]([FAKER][CREDENTIALS][URL]), que t
 
 | Tarjeta | Número | Código de seguridad | Fecha de vencimiento |
 | :--- | :---: | :---: | :---: |
-| Mastercard | 5474 9254 3267 0366 | 123 | 11/25 |
 | Visa | 4075 5957 1648 3764 | 123 | 11/25 |
 
 ------------
