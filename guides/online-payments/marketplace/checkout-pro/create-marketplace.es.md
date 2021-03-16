@@ -232,26 +232,27 @@ preference.save();
 ```
 ```ruby
 
-sdk = Mercadopago::SDK.new("ACCES_TOKEN")
+sdk = Mercadopago::SDK.new('ENV_ACCES_TOKEN')
 
-data = {
-      "items": [
-          {
-            "title": 'Blue shirt',
-            "description": 'Multicolor Item',
-            "quantity": 10,
-            "currency_id": '[FAKER][CURRENCY][ACRONYM]',
-            "unit_price": [FAKER][COMMERCE][PRICE]
-          }
-        ]
-      },
-      "payer"{
-        "email": "john@yourdomain.com",
-      }
-      "marketplace_fee" : 2.56,
-      "notification_url" : "http://urlmarketplace.com/notification_ipn"
+preference_data = {
+  items: [
+    {
+      title: 'Blue shirt',
+      description: 'Multicolor Item',
+      quantity: 10,
+      currency_id: '[FAKER][CURRENCY][ACRONYM]',
+      unit_price: [FAKER][COMMERCE][PRICE]
+    }
+  ],
+  payer: {
+    email: 'john@yourdomain.com'
+  },
+  marketplace_fee: 2.56,
+  notification_url: 'http://urlmarketplace.com/notification_ipn'
+}
 
-sdk.preference.create(data);
+preference_response = sdk.preference.create(preference_data);
+preference = preference_response[:response]
 
 ```
 ]]]

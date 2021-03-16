@@ -70,18 +70,20 @@ card.save();
 ```ruby
 
 require 'mercadopago'
-sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
 
-customer_object = {
-      "email": '"john@yourdomain.com"',
-    }
-customer = sdk.customer.create(customer_object)
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-card_object {
-  "token": "9b2d63e00d66a8c721607214cedaecda",
-  "customer_id": customer[:response]['id'],
+customer_request = {
+  email: 'john@yourdomain.com'
 }
-sdk.card.create(card_object)
+customer_response = sdk.customer.create(customer_request)
+customer = customer_response[:response]
+
+card_request = {
+  token: '9b2d63e00d66a8c721607214cedaecda'
+}
+card_response = sdk.card.create(customer['id'], card_request)
+card = card_response[:response]
 
 ```
 ```csharp
@@ -209,16 +211,17 @@ System.out.print(card.toString());
 ```ruby
 
 require 'mercadopago'
-sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
 
-customer = sdk.customer().get(("247711297-jxOV430go9fx2e")
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-card_object = {
-  "token": "9b2d63e00d66a8c721607214cedaecda",
-  "customer_id": customer[:response]['id'],
+customer_response = sdk.customer.get('247711297-jxOV430go9fx2e')
+customer = customer_response[:response]
+
+card_request = {
+  token: '9b2d63e00d66a8c721607214cedaecda'
 }
-
-car = sdk.card().save(card_object);
+card_response = sdk.card.create(customer['id'], card_request)
+card = card_response[:response]
 
 puts card
 
@@ -339,7 +342,8 @@ First, get the saved card list so that your customer can choose one to make the 
 ```
 ```ruby
 
-customer = sdk.customer.get(customer_id)
+cards_response = sdk.card.list(customer_id)
+cards = cards_response[:response]
 
 ```
 ```csharp
@@ -478,16 +482,20 @@ payment.save();
 ```ruby
 
 require 'mercadopago'
-sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
-  payment_object = {
-  "token": 'ff8080814c11e237014c1ff593b57b4d',
-  "installments": 1,
-  "transaction_amount" : 100f,
-    "payer":{
-        "type" : "customer";
-        "id" : "123456789-jxOV430go9fx2e";
-    }
-payment = sdk.payment.create(payment_object)
+
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+
+payment_request = {
+  token: 'ff8080814c11e237014c1ff593b57b4d',
+  installments: 1,
+  transaction_amount: 100,
+  payer: {
+    type: 'customer',
+    id: '123456789-jxOV430go9fx2e'
+  }
+}
+payment_response = sdk.payment.create(payment_request)
+payment = payment_response[:response]
 
 ```
 ```curl
@@ -554,7 +562,8 @@ You can search for customer information, if needed; for example, when you don't 
 ```
 ```ruby
 
-customers = sdk.customer.get(email: "test@test.com");
+customers_response = sdk.customer.search(filters: { email: 'test@test.com' })
+customers = customers_response[:response]
 
 ```
 ```curl
@@ -650,7 +659,8 @@ curl -X GET \
 ```
 ```ruby
 
-customer = sdk.customer.get(customer_id)
+cards_response = sdk.card.list(customer_id)
+cards = cards_response[:response]
 
 ```
 ```curl

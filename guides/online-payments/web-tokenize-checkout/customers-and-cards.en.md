@@ -90,18 +90,20 @@ mercadopago.customers.create(customer_data).then(function (customer) {
 ```ruby
 
 require 'mercadopago'
-sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
+sdk = Mercadopago::SDK.new('ENV_ACCES_TOKEN')
 
-customer_object = {
-  "email" : "test@test.com",
+customer_data = {
+  email: 'test@test.com',
 }
-customer = sdk.customer().create(customer_object)
+customer_response = sdk.customer.create(customer_data)
+customer = customer_response[:response]
 
-card = {
-  "token" : '9b2d63e00d66a8c721607214cedaecda',
-  customer_id = customer[:response]['id'],
+card_data = {
+  token: '9b2d63e00d66a8c721607214cedaecda',
+  customer_id: customer['id'],
 }
-sdk.card().create(card);
+card_response = sdk.card.create(card_data);
+card = card_response[:response]
 
 ```
 ```csharp
@@ -211,7 +213,8 @@ You can get the complete list of `Cards` from a customer by doing a `HTTP GET` r
 ```
 ```ruby
 
-	customer = sdk.customer.get(customer[:response]['id'])
+cards_response = sdk.card.list(customer_id)
+cards = cards_response[:response]
 
 ```
 ```csharp
@@ -327,18 +330,20 @@ mercadopago.customers.search({
 ```ruby
 
 require 'mercadopago'
-sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
+sdk = Mercadopago::SDK.new('ENV_ACCES_TOKEN')
 
-customer = sdk.customer.get("247711297-jxOV430go9fx2e")
+customer_response = sdk.customer.get('247711297-jxOV430go9fx2e')
+customer = customer_response[:response]
 
-card_object= {
-  "token" : '9b2d63e00d66a8c721607214cedaecda',
-  "customer_id" : 'customer.id'
+card_data = {
+  token: '9b2d63e00d66a8c721607214cedaecda',
+  customer_id: customer['id'],
 }
-
-card = sdk.card().create(card_object);
+card_response = sdk.card.create(card_data);
+card = card_response[:response]
 
 puts card
+
 ```
 ```csharp
 MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
@@ -439,7 +444,8 @@ In case you do not know what the `id` of your `Customer` is, you can use the `Cu
 ```
 ```ruby
 
-customer = sdk.customer.get(email: "test@test.com")
+customers_response = sdk.customer.search(filters: { email: 'test@test.com' })
+customer = customer_response[:response]
 
 ```
 ```csharp
@@ -532,7 +538,8 @@ You can get the complete list of `Cards` of a client by making a `HTTP GET` requ
 ```
 ```ruby
 
-	customer = sdk.customer.get(customer[:response]['id'])
+cards_response = sdk.card.list(customer_id)
+cards = cards_response[:response]
 
 ```
 ```csharp

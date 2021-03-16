@@ -90,27 +90,29 @@ payer.setName("Charles")
 ```
 ```ruby
 # ...
-payer = MercadoPago::Payer.new({
-  name: "Charles"
-  surname: "Luevano"
-  email: "charles@hotmail.com"
-  date_created: Time.now
-  phone: MercadoPago::Phone.new({
-    area_code: "",
-    number: "949 128 866"
-  })
+payer_data = {
+  name: 'Charles',
+  surname: 'Luevano',
+  email: 'charles@hotmail.com',
+  date_created: '2018-06-02T12:58:41.425-04:00',
+  phone: {
+    area_code: '',
+    number: '949 128 866'
+  },
   ----[mla, mlb, mlu, mco, mlc, mpe]----
-  identification: MercadoPago::Identification.new({
-    type: "DNI",
-    number: "12345678"
-  })
+  identification: {
+    type: 'DNI',
+    number: '12345678'
+  },
   ------------
-  address: MercadoPago::Address.new ({
-    street_name: "Cuesta Miguel Armendáriz",
-    street_number: "1004",
-    zip_code: "11020"
-  })
-})
+  shipments: {
+    receiver_address: {
+      street_name: 'Cuesta Miguel Armendáriz',
+      street_number: '1004',
+      zip_code: '11020'
+    }
+  }
+}
 # ...
 ```
 ```csharp
@@ -190,19 +192,19 @@ item.setId("1234")
 ```
 ```ruby
 # ...
- payment_object = {
-  "items": [
+preference_data = {
+  items: [
     {
-      "id": 'PR0001',
-      "title": 'Point Mini',
-      "description": 'Producto Point para cobros con tarjetas mediante bluetooth',
-      "picture_url": 'https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png',
-      "category_id": 'electronics',
-      "quantity": 1,
-      "unit_price": 58.80
+      id: 'PR0001',
+      title: 'Lightweight Paper Table',
+      description: 'Inspired by the classic foldable art of origami',
+      category_id: 'home',
+      quantity: 3,
+      currency_id: '[FAKER][CURRENCY][ACRONYM]',
+      unit_price: 55.41
     }
   ]
- }
+}
  # ...
 ```
 ```csharp
@@ -299,14 +301,17 @@ preference.setBackUrls(backUrls);
 // ...
 ```
 ```ruby
-sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
 # ...
-back_urls = {
-  "success": 'https://www.tu-sitio/success',
-  "failure": 'http://www.tu-sitio/failure',
-  "pending": 'http://www.tu-sitio/pendings'
+preference_data = {
+  # ...
+  back_urls = {
+    success: 'https://www.tu-sitio/success',
+    failure: 'http://www.tu-sitio/failure',
+    pending: 'http://www.tu-sitio/pendings'
+  },
+  auto_return: 'approved'
+  # ...
 }
- "auto_return" : 'approved'
 # ...
 ```
 ```csharp

@@ -86,21 +86,23 @@ mercadopago.payment.create(payment_data).then(function (data) {
 ```ruby
 
 require 'mercadopago'
-sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
 
-payment_object = {
-   "transaction_amount" : 100,
-   "token" : 'ff8080814c11e237014c1ff593b57b4d',
-   "description" : 'Title of what you are paying for',
-   "installments" : 1,
-   "payment_method_id" : 'visa',
-   "payer" : {
-      "email": 'test_user_19653727@testuser.com'
-   },
-   "capture": false
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+
+payment_request = {
+  transaction_amount: 100,
+  token: 'ff8080814c11e237014c1ff593b57b4d',
+  description: 'Título do produto',
+  installments: 1,
+  payment_method_id: 'visa',
+  payer: {
+    email: 'test_user_19653727@testuser.com'
+  },
+  capture: false
 }
 
-sdk.payment().create(payment_object);
+payment_response = sdk.payment.create(payment_request)
+payment = payment[:response]
 ```
 ```curl
 
@@ -189,13 +191,14 @@ mercadopago.payment.capture(paymentId, mercadopago, (error, response) => {
 ```
 ```ruby
 require 'mercadopago'
-sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_object = {
-  "capture" : true
+request = {
+  capture: true
 }
 
-sdk.payment().create(payment_object)
+payment_response = sdk.payment.update(payment_id, request)
+payment = payment_response[:response]
 ```
 ```curl
 curl -X PUT \
@@ -275,16 +278,15 @@ mercadopago.payment.capturePartial(captureInfo, mercadopago, (error, response) =
 ```
 ```ruby
 require 'mercadopago'
-sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_object = sdk.payment.get(paymentId)
-
-payment_object = {
-  "transaction_amount" : 75,
-  "capture" :true
+request = {
+  transaction_amount: 75,
+  capture: true
 }
 
-sdk.payment().update(payment_object)
+payment_response = sdk.payment.update(payment_id, request)
+payment = payment_response[:response]
 ```
 ```curl
 
@@ -361,15 +363,14 @@ mercadopago.payment.cancel(paymentToBeCanceled, mercadopago, (error, response) =
 ```
 ```ruby
 require 'mercadopago'
-sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
+sdk = Mercadopago::SDK.new(ENV_ACCESS_TOKEN)
 
-payment_object = sdk.payment.get(paymentId)
-
-payment_object = {
-  "status" : "canceled"
+request = {
+  status: 'canceled'
 }
 
-sdk.payment().update(payment_object)
+payment_response = sdk.payment.update(payment_id, request)
+payment = payment_response[:response]
 ```
 ```curl
 curl -X PUT \

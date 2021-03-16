@@ -104,21 +104,23 @@ preference.save();
 ===
 The wallet mode works by adding the _purpose_ attribute to the preference.
 ===
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 # Create a preference object
 preference_data = {
-  "items": [
+  items: [
     {
-      "title": "My Item",
-      "unit_price": 100,
-      "quantity": 1
+      title: 'My Item',
+      unit_price: 100,
+      quantity: 1
     }
   ],
-  "purpose": "wallet_purchase"
+  purpose: 'wallet_purchase'
 }
-preference = $mp.create_preference(preference_data)
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
 
 # This value replaces the String "<%= @preference_id %>" in your HTML
-@preference_id = preference["response"]["id"]
+@preference_id = preference['id']
 ```
 ```csharp
 ===

@@ -58,9 +58,10 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 ```
 ```ruby
 require 'mercadopago'
-sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_methods = sdk.payment_methods.get();
+payment_methods_response = sdk.payment_methods.get()
+payment_methods = payment_methods_response[:response]
 
 ```
 ```csharp
@@ -281,18 +282,19 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_object = {
-    "transaction_amount": 100f,
-    "description": 'Product Title',
-    "payment_method_id": 'rapipago',
-    "payer": {
-      "email": '"test_user_19653727@testuser.com',
-    }
+payment_request = {
+  transaction_amount: 100,
+  description: 'Product Title',
+  payment_method_id: 'rapipago',
+  payer: {
+    email: 'test_user_19653727@testuser.com',
   }
-  
-result = sdk.payment.create(payment_object)
+}
+
+payment_response = sdk.payment.create(payment_request)
+payment = payment_response[:response]
 
 ```
 ```csharp
@@ -393,7 +395,7 @@ payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
 The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
-date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+date_of_expiration: '2020-05-30T23:59:59.000-04:00',
 ```
 ```csharp
 ===
@@ -491,9 +493,10 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 ```
 ```ruby
 require 'mercadopago'
-sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-result = sdk.payment_methods.get()
+payment_methods_response = sdk.payment_methods.get()
+payment_methods = payment_methods_response[:response]
 
 ```
 ```csharp
@@ -784,18 +787,19 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_object = {
-    "transaction_amount": 100f,
-    "description": 'Product Title',
-    "payment_method_id": 'oxxo',
-    "payer": {
-      "email": 'test_user_82045343@testuser.com',
-    }
+payment_request = {
+  transaction_amount: 100,
+  description: 'Product Title',
+  payment_method_id: 'oxxo',
+  payer: {
+    email: 'test_user_82045343@testuser.com',
   }
-  
-result = sdk.payment.create(payment_object)
+}
+
+payment_response = sdk.payment.create(payment_request)
+payment = payment_response[:response]
 
 ```
 ```csharp
@@ -950,9 +954,10 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 ```
 ```ruby
 require 'mercadopago'
-sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_methods = sdk.payment_methods.get();
+payment_methods_response = sdk.payment_methods.get()
+payment_methods = payment_methods_response[:response]
 
 ```
 ```csharp
@@ -1188,18 +1193,19 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_object = {
-    "transaction_amount": 100f,
-    "description": 'Product Title',
-    "payment_method_id": 'abitab',
-    "payer": {
-      "email": 'test_user_84162205@testuser.com',
-    }
+payment_request = {
+  transaction_amount: 100,
+  description: 'Product Title',
+  payment_method_id: 'abitab',
+  payer: {
+    email: 'test_user_84162205@testuser.com',
   }
-  
-result = sdk.payment.create(payment_object)
+}
+
+payment_response = sdk.payment.create(payment_request)
+payment = payment_response[:response]
 ```
 ```csharp
 
@@ -1340,9 +1346,10 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 ```
 ```ruby
 require 'mercadopago'
-sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_methods =  sdk.payment_methods.get();
+payment_methods_response = sdk.payment_methods.get()
+payment_methods = payment_methods_response[:response]
 
 ```
 ```csharp
@@ -1595,18 +1602,19 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_object = {
-    "transaction_amount": 500.00,
-    "description": 'Product Title',
-    "payment_method_id": 'efecty',
-    "payer": {
-      "email": 'test_user_19549678@testuser.com',
-    }
+payment_request = {
+  transaction_amount: 5000,
+  description: 'Product Title',
+  payment_method_id: 'efecty',
+  payer: {
+    email: 'test_user_19549678@testuser.com',
   }
-  
-result = sdk.payment.create(payment_object)
+}
+
+payment_response = sdk.payment.create(payment_request)
+payment = payment_response[:response]
 ```
 ```csharp
 
@@ -1710,7 +1718,7 @@ payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
 The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
-date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+date_of_expiration: '2020-05-30T23:59:59.000-04:00',
 ```
 ```csharp
 ===
@@ -1830,25 +1838,27 @@ payment.setTransactionAmount(5000f)
 ```
 ```ruby
 require 'mercadopago'
-sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_object = {
-      "transaction_amount": 500.0,
-      "description": '"Product Title"',
-      "additional_info": {
-        "ipAddress" : "127.0.0.1"
-      },
-      "payer" :{
-        "email": 'test_user_19549678@testuser.com',
-        "entityType": 'individual'
-      },
-      "transactionDetails" :{
-        "financialInstitution" : 1234,
-      }
-      "callback_url" : 'http://www.your-site.com',
-      "payment_methodId": 'pse'
-    }
-result = sdk.payment.create(payment_object)
+payment_request = {
+  transaction_amount: 5000,
+  description: 'Product Title',
+  additional_info: {
+    ip_address: '127.0.0.1'
+  },
+  payer: {
+    email: 'test_user_19549678@testuser.com',
+    entity_type: 'individual'
+  },
+  transaction_details: {
+    financial_institution: 1234
+  },
+  callback_url: 'http://www.your-site.com',
+  payment_method_id: 'pse'
+}
+
+payment_response = sdk.payment.create(payment_request)
+payment = payment_response[:response]
 ```
 ```curl
 curl -X POST \
@@ -1956,9 +1966,10 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 ```
 ```ruby
 require 'mercadopago'
-sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_methods = sdk.payment_methods.get()
+payment_methods_response = sdk.payment_methods.get()
+payment_methods = payment_methods_response[:response]
 
 ```
 ```csharp
@@ -2196,18 +2207,19 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_object = {
-      "description": 'Product Title',
-      "transaction_amount": 100.00,
-      "payment_method_id": 'servipag',
-      "payer": {
-        "email": 'test_user_15748052@testuser.com'
-      }
-    }
+payment_request = {
+  description: 'Product Title',
+  transaction_amount: 100,
+  payment_method_id: 'servipag',
+  payer: {
+    email: 'test_user_15748052@testuser.com'
+  }
+}
 
-result = sdk.payment.create(payment_object)
+payment_response = sdk.payment.create(payment_request)
+payment = payment_response[:response]
 ```
 ```csharp
 
@@ -2363,26 +2375,27 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-sdk = Mercadopago::SDK.new('ACCESS_TOKEN')
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_object = {
+payment_request = {
+  transaction_amount: 100,
+  description: 'Product Title',
+  payer: {
+    email: 'test_user_15748052@testuser.com',
+    entity_type: 'individual'
+  },
+  transaction_details: {
+    financial_institution: 1234
+  },
+  additional_info: {
+    ip_address: '127.0.0.1'
+  },
+  callback_url: 'http://www.your-site.com',
+  payment_method_id: 'webpay'
+}
 
-      "transaction_amount": 100.00,
-      "description": 'Product Title"',
-      "payment_method_id": 'webpay',
-      "payer": {
-        "email": 'test_user_15748052@testuser.com',
-        "entity_type": 'individual'
-       },
-        "additional_info": {
-          "ipAddress": '127.0.0.1',
-        },
-        "callback_url" : 'http://www.your-site.com',
-        "transaction_details" : 1234
-      }
-    }
-result = sdk.payment.create(payment_object)
-payment.save();
+payment_response = sdk.payment.create(payment_request)
+payment = payment_response[:response]
 ```
 ```curl
 curl -X POST \
@@ -2512,9 +2525,10 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 ```
 ```ruby
 require 'mercadopago'
-sdk = Mercadopago::SDK.new('ACCESS_TOKEN')
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_methods = sdk.payment_methods.get();
+payment_methods_response = sdk.payment_methods.get()
+payment_methods = payment_methods_response[:response]
 
 ```
 ```csharp
@@ -2727,18 +2741,19 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_object = {
-   "transaction_amount": 100,
-   "description": 'Product Title',
-   "payment_method_id" : 'pagoefectivo_atm'
-},
-"payer" : {
-  "email" : "test_user_42972582@testuser.com"
+payment_request = {
+  transaction_amount: 100,
+  description: 'Product Title',
+  payment_method_id: 'pagoefectivo_atm',
+  payer: {
+    email: 'test_user_42972582@testuser.com'
+  }
 }
 
-sdk.payment().create(payment_object)
+payment_response = sdk.payment.create(payment_request)
+payment = payment_response[:response]
 ```
 ```csharp
 
@@ -2887,9 +2902,10 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 ```
 ```ruby
 require 'mercadopago'
-sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_methods = sdk.payment_methods.get();
+payment_methods_response = sdk.payment_methods.get()
+payment_methods = payment_methods_response[:response]
 
 ```
 ```csharp
@@ -3165,23 +3181,33 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_object = {
-    "installments": 1,
-    "transaction_amount": 100.00,
-    "description": 'Product Title',
-    "payment_method_id": 'bolbradesco',
-    "payer": {
-      "email": 'test@test.com"',
-      "identification": {
-        "number": '19119119100',
-        "type": 'CPF'
-      },
+payment_request = {
+  transaction_amount: 100,
+  description: 'Product Title',
+  payment_method_id: 'bolbradesco',
+  payer: {
+    email: 'test@test.com',
+    first_name: 'Test',
+    last_name: 'User',
+    identification: {
+      type: 'CPF',
+      number: '19119119100',
+    },
+    address: {
+      zip_code: '06233200',
+      street_name: 'Av. das Nações Unidas',
+      street_number: '3003',
+      neighborhood: 'Bonfim',
+      city: 'Osasco',
+      federal_unit: 'SP'
     }
   }
-  
-result = sdk.payment.create(payment_object)
+}
+
+payment_response = sdk.payment.create(payment_request)
+payment = payment_response[:response]
 
 ```
 ```csharp
@@ -3400,22 +3426,23 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-sdk = Mercadopago::SDK.new("ACCESS_TOKEN")
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_object = {
-    "transaction_amount": 100.00,
-    "description": 'Título do produto',
-    "payment_method_id": 'pix',
-    "payer": {
-      "email": 'test@test.com"',
-      "identification": {
-        "number": '19119119100',
-        "type": 'CPF'
-      }
+payment_request = {
+  transaction_amount: 100,
+  description: 'Título do produto',
+  payment_method_id: 'pix',
+  payer: {
+    email: 'test@test.com',
+    identification: {
+      type: 'CPF',
+      number: '19119119100',
     }
   }
-  
-result = sdk.payment.create(payment_object)
+}
+
+payment_response = sdk.payment.create(payment_request)
+payment = payment_response[:response]
 
 ```
 ```csharp
@@ -3585,7 +3612,7 @@ payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
 ===
 The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
-date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+date_of_expiration: '2020-05-30T23:59:59.000-04:00',
 ```
 ```csharp
 ===
@@ -3636,7 +3663,7 @@ payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
 ===
 The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+date_of_expiration: '2020-05-30T23:59:59.000-04:00',
 ```
 ```csharp
 ===

@@ -99,21 +99,23 @@ preference.save();
 ===
 El modo billetera funciona agregando el atributo _purpose_ en la preferencia.
 ===
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 # Crea un objeto de preferencia
 preference_data = {
-  "items": [
+  items: [
     {
-      "title": "Mi producto",
-      "unit_price": 100,
-      "quantity": 1
+      title: 'Mi producto',
+      unit_price: 100,
+      quantity: 1
     }
   ],
-  "purpose": "wallet_purchase"
+  purpose: 'wallet_purchase'
 }
-preference = $mp.create_preference(preference_data)
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
 
 # Este valor reemplazará el string "<%= @preference_id %>" en tu HTML
-@preference_id = preference["response"]["id"]
+@preference_id = preference['id']
 ```
 ```csharp
 ===

@@ -92,24 +92,25 @@ preference.shipments = shipments
 ```
 ```ruby
 ===
- Respeite o formato das dimensões, em centímetros e gramas, conforme corresponda: alturaxlarguraxcomprimento, peso. 
+ Respect the dimensions format, in centimeters and grams as appropriate: heightx width x length, weight. 
 ===
-preference = new MercadoPago::Preference.new();
-
-shipment = MercadoPago::Shipment.new
-shipment.mode = me2
-shipment.dimensions = "30x30x30,500"
-
-shipment.receiver_address = {
-  zip_code: "[FAKER][ADDRESS][ZIP_CODE]",
-  street_number: 1000,
-  street_name: "[FAKER][ADDRESS][STREET_NAME]",
-  floor: "4",
-  apartment: "C"
+# ...
+preference_data = {
+  # ...
+  shipment: {
+    mode: 'me2',
+    dimensions: '30x30x30,500',
+    receiver_address: {
+      zip_code: '[FAKER][ADDRESS][ZIP_CODE]',
+      street_number: 1000,
+      street_name: '[FAKER][ADDRESS][STREET_NAME]',
+      floor: '4',
+      apartment: 'C'
+    }
+  }
+  # ...
 }
-
-preference.shipment = shipment
-
+# ...
 ```
 ```csharp
 ===
@@ -201,21 +202,18 @@ preference.shipments = shipments
 
 ```
 ```ruby
-preference = new MercadoPago::Preference.new();
-
-shipments = MercadoPago::Shipment.new
 # ...
-shipments.free_methods = [
-  {
-    id: 505345
+preference_data = {
+  # ...
+  shipments: {
+    free_methods: [
+      { id: 505345 },
+      { id: 100009 }
+    ]
   }
-  ,{
-    id: 100009
-  }
-]
+  # ...
+}
 # ...
-preference.shipment = shipments
-
 ```
 ```csharp
 Preference preference = new Preference();
@@ -282,21 +280,18 @@ preference.shipments = shipments
 
 ```
 ```ruby
-preference = new MercadoPago::Preference.new();
-
-shipments = MercadoPago::Shipment.new
 # ...
-shipments.free_methods = [
-  {
-    id: 73328
+preference_data = {
+  # ...
+  shipments: {
+    free_methods: [
+      { id: 73328 },
+      { id: 504945 }
+    ]
   }
-  ,{
-    id: 504945
-  }
-]
+  # ...
+}
 # ...
-preference.shipment = shipments
-
 ```
 ```csharp
 Preference preference = new Preference();
@@ -364,21 +359,18 @@ preference.shipments = shipments
 
 ```
 ```ruby
-preference = new MercadoPago::Preference.new();
-
-shipments = MercadoPago::Shipment.new
 # ...
-shipments.free_methods = [
-  {
-    id: 509247
+preference_data = {
+  # ...
+  shipments: {
+    free_methods: [
+      { id: 509247 },
+      { id: 509245 }
+    ]
   }
-  ,{
-    id: 509245
-  }
-]
+  # ...
+}
 # ...
-preference.shipment = shipments
-
 ```
 ```csharp
 Preference preference = new Preference();
@@ -448,14 +440,15 @@ preference.shipments = shipments
 
 ```
 ```ruby
-preference = new MercadoPago::Preference.new();
-
-shipments = MercadoPago::Shipment.new
 # ...
-shipments.local_pickup = true
+preference_data = {
+  # ...
+  shipments: {
+    local_pickup: true
+  }
+  # ...
+}
 # ...
-preference.shipment = shipments
-
 ```
 ```csharp
 Preference preference = new Preference();
@@ -597,40 +590,39 @@ mercadopago.preferences.create(preference).then(function (data) {
 ```
 ```ruby
 
-preference = new MercadoPago::Preference.new();
-item = MercadoPago::Item.new()
-item.title="Blue shirt"
-item.quantity= 10
-item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
-item.unit_price = [FAKER][COMMERCE][PRICE]
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payer = MercadoPago::Payer.new()
-payer.email="john@yourdomain.com"
-
-shipment = MercadoPago::Shipment.new
-shipment.mode = me2
-shipment.dimensions = "30x30x30,500"
-shipment.receiver_address = {
-  zip_code: "[FAKER][ADDRESS][ZIP_CODE]",
-  street_number: 1000,
-  street_name: "[FAKER][ADDRESS][STREET_NAME]",
-  floor: "4",
-  apartment: "C"
-}
-shipment.free_methods = [
-  {
-    id: 505345
+preference_data = {
+  items: [
+    {
+      title: 'Blue shirt',
+      quantity: 10,
+      currency_id: '[FAKER][CURRENCY][ACRONYM]',
+      unit_price: [FAKER][COMMERCE][PRICE]
+    }
+  ],
+  payer: {
+    email: 'john@yourdomain.com'
   },
-  {
-    id: 100009
-  }
-]
+  shipment: {
+    mode: 'me2',
+    dimensions: '30x30x30,500',
+    receiver_address: {
+      zip_code: '[FAKER][ADDRESS][ZIP_CODE]',
+      street_number: 1000,
+      street_name: '[FAKER][ADDRESS][STREET_NAME]',
+      floor: '4',
+      apartment: 'C'
+    }
+  },
+  free_methods: [
+    { id: 505345 },
+    { id: 100009 }
+  ]
+}
 
-preference.items = [item]
-preference.payer = payer
-preference.shipment = shipment
-
-preference.save
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
 
 ```
 ```csharp
@@ -788,40 +780,39 @@ mercadopago.preferences.create(preference).then(function (data) {
 ```
 ```ruby
 
-preference = new MercadoPago::Preference.new();
-item = MercadoPago::Item.new()
-item.title="Blue shirt"
-item.quantity= 10
-item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
-item.unit_price = [FAKER][COMMERCE][PRICE]
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payer = MercadoPago::Payer.new()
-payer.email="john@yourdomain.com"
-
-shipment = MercadoPago::Shipment.new
-shipment.mode = me2
-shipment.dimensions = "30x30x30,500"
-shipment.receiver_address = {
-  zip_code: "[FAKER][ADDRESS][ZIP_CODE]",
-  street_number: 1000,
-  street_name: "[FAKER][ADDRESS][STREET_NAME]",
-  floor: "4",
-  apartment: "C"
-}
-shipment.free_methods = [
-  {
-    id: 73328
+preference_data = {
+  items: [
+    {
+      title: 'Blue shirt',
+      quantity: 10,
+      currency_id: '[FAKER][CURRENCY][ACRONYM]',
+      unit_price: [FAKER][COMMERCE][PRICE]
+    }
+  ],
+  payer: {
+    email: 'john@yourdomain.com'
   },
-  {
-    id: 504945
-  }
-]
+  shipment: {
+    mode: 'me2',
+    dimensions: '30x30x30,500',
+    receiver_address: {
+      zip_code: '[FAKER][ADDRESS][ZIP_CODE]',
+      street_number: 1000,
+      street_name: '[FAKER][ADDRESS][STREET_NAME]',
+      floor: '4',
+      apartment: 'C'
+    }
+  },
+  free_methods: [
+    { id: 73328 },
+    { id: 504945 }
+  ]
+}
 
-preference.items = [item]
-preference.payer = payer
-preference.shipment = shipment
-
-preference.save
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
 
 ```
 ```csharp
@@ -979,40 +970,39 @@ mercadopago.preferences.create(preference).then(function (data) {
 ```
 ```ruby
 
-preference = new MercadoPago::Preference.new();
-item = MercadoPago::Item.new()
-item.title="Blue shirt"
-item.quantity= 10
-item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
-item.unit_price = [FAKER][COMMERCE][PRICE]
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payer = MercadoPago::Payer.new()
-payer.email="john@yourdomain.com"
-
-shipment = MercadoPago::Shipment.new
-shipment.mode = me2
-shipment.dimensions = "30x30x30,500"
-shipment.receiver_address = {
-  zip_code: "[FAKER][ADDRESS][ZIP_CODE]",
-  street_number: 1000,
-  street_name: "[FAKER][ADDRESS][STREET_NAME]",
-  floor: "4",
-  apartment: "C"
-}
-shipment.free_methods = [
-  {
-    id: 509247
+preference_data = {
+  items: [
+    {
+      title: 'Blue shirt',
+      quantity: 10,
+      currency_id: '[FAKER][CURRENCY][ACRONYM]',
+      unit_price: [FAKER][COMMERCE][PRICE]
+    }
+  ],
+  payer: {
+    email: 'john@yourdomain.com'
   },
-  {
-    id: 509245
-  }
-]
+  shipment: {
+    mode: 'me2',
+    dimensions: '30x30x30,500',
+    receiver_address: {
+      zip_code: '[FAKER][ADDRESS][ZIP_CODE]',
+      street_number: 1000,
+      street_name: '[FAKER][ADDRESS][STREET_NAME]',
+      floor: '4',
+      apartment: 'C'
+    }
+  },
+  free_methods: [
+    { id: 509247 },
+    { id: 509245 }
+  ]
+}
 
-preference.items = [item]
-preference.payer = payer
-preference.shipment = shipment
-
-preference.save
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
 
 ```
 ```csharp
