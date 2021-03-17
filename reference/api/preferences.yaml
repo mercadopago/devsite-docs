@@ -8,8 +8,10 @@ paths:
   /checkout/preferences:
     post:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/payment-link'
+        - $ref: '#/tags/marketplace'
+        - $ref: '#/tags/mobile-checkout'
       summary: Create a preference
       description: Create a preference.
       requestBody:
@@ -576,8 +578,10 @@ paths:
   /checkout/preferences/search:
     get:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/payment-link'
+        - $ref: '#/tags/marketplace'
+        - $ref: '#/tags/mobile-checkout'
       summary: Find a preference
       description: Find a preference
       parameters:
@@ -741,8 +745,10 @@ paths:
   /checkout/preferences/{id}:
     get:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/payment-link'
+        - $ref: '#/tags/marketplace'
+        - $ref: '#/tags/mobile-checkout'
       summary: Get a preference
       description: Get a preference
       parameters:
@@ -1042,8 +1048,10 @@ paths:
                         invalid_shipments--Invalid-total-amount--with-me2-it-cannot-be-lesser-than--limit--
     put:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/payment-link'
+        - $ref: '#/tags/marketplace'
+        - $ref: '#/tags/mobile-checkout'
       summary: Update a preference
       description: Update a preference
       parameters:

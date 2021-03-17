@@ -8,8 +8,9 @@ paths:
   /payment_methods:
     get:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
+        - $ref: '#/tags/payment-link'
       summary: List the payment method's
       description: List the payment method's.
       responses:

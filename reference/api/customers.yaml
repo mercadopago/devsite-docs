@@ -8,8 +8,8 @@ paths:
   /v1/customers:
     post:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/marketplace'
+        - $ref: '#/tags/mobile-checkout'
       summary: Create a customer
       description: Operation responsable for create a customer on Mercado Pago.
       requestBody:
@@ -205,8 +205,8 @@ paths:
   /v1/customers/{id}:
     put:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/marketplace'
+        - $ref: '#/tags/mobile-checkout'
       summary: Update customer's data
       description: Operation responsable for update customer data on Mercado Pago.
       parameters:
@@ -302,8 +302,8 @@ paths:
                       - not_found--not-found-
     get:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/marketplace'
+        - $ref: '#/tags/mobile-checkout'
       summary: Get customer's data
       description: Operation responsable for retrieve customer data saved on Mercado Pago.
       parameters:
@@ -655,8 +655,8 @@ paths:
   /v1/customers/search:
     get:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/marketplace'
+        - $ref: '#/tags/mobile-checkout'
       summary: Search a customer
       description: >-
         Operation responsable for search a customer based on e-mail and return

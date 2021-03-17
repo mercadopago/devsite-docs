@@ -8,8 +8,7 @@ paths:
   /instore/qr/seller/collectors/{user_id}/pos/{external_pos_id}/orders:
     delete:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/qr-code'
       summary: Delete an Order
       description: Delete an Order.
       parameters:
@@ -54,8 +53,7 @@ paths:
                       - in_store_order_creation_error--Failed-to-delete-order-
     get:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/qr-code'
       summary: Get an Order
       description: Get an Order.
       parameters:
@@ -129,8 +127,7 @@ paths:
   /instore/qr/seller/collectors/{user_id}/stores/{external_store_id}/pos/{external_pos_id}/orders:
     put:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/qr-code'
       summary: Create an Order
       description: Create an Order.
       parameters:

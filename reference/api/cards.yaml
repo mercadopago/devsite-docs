@@ -8,8 +8,8 @@ paths:
   /customers/{customer_id}/cards:
     get:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
       summary: List customer cards
       description: List customer cards
       parameters:
@@ -201,8 +201,8 @@ paths:
                       - not_found--not-found-
     post:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
       summary: Save a card
       description: Save a card.
       parameters:
@@ -422,8 +422,8 @@ paths:
   /customers/{customer_id}/cards/{id}:
     get:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
       summary: Get a customer card
       description: Get a customer card
       parameters:
@@ -619,8 +619,8 @@ paths:
                       - not_found--not-found-
     put:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
       summary: Update a customer card
       description: Update a customer card
       parameters:
@@ -730,8 +730,8 @@ paths:
                       - not_found--not-found-
     delete:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
       summary: Delete a customer card
       description: Delete a customer card
       parameters:

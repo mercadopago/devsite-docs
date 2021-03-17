@@ -8,8 +8,7 @@ paths:
   /v1/advanced_payments:
     post:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/marketplace'
       summary: Create Payments
       description: Create Payments.
       requestBody:
@@ -366,8 +365,7 @@ paths:
   /v1/advanced_payments/{id}:
     get:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/marketplace'
       summary: Get a Payment
       description: Get a Payment
       parameters:
@@ -776,8 +774,7 @@ paths:
                       - 406001--Error-in-the-payments-API-
     put:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/marketplace'
       summary: Update a Payment
       description: Update a Payment
       parameters:
@@ -903,8 +900,7 @@ paths:
   /v1/advanced_payments/search:
     get:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/marketplace'
       summary: Search a Payment
       description: Search a Payment
       parameters:
@@ -1350,8 +1346,7 @@ paths:
   /v1/advanced_payments/{id}/refunds:
     post:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/marketplace'
       summary: Refund a Payment
       description: Refund a Payment
       parameters:
@@ -1474,8 +1469,7 @@ paths:
   /v1/advanced_payments/{id}/disburses:
     post:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/marketplace'
       summary: Change release date of a Disbursement
       description: Change release date of a Disbursement
       parameters:
@@ -1598,8 +1592,7 @@ paths:
   /v1/advanced_payments/{id}/disbursements/{disbursement_id}/refunds:
     post:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/marketplace'
       summary: Parcial refund of an Advanced Payment
       description: Parcial refund of an Advanced Payment
       parameters:
@@ -1729,8 +1722,7 @@ paths:
   /v1/advanced_payments/{id}/disbursements/{disbursement_id}/disburses:
     post:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/marketplace'
       summary: Change release date os all Disbursements
       description: Change release date os all Disbursements
       parameters:
@@ -1860,8 +1852,7 @@ paths:
   /v1/advanced_payments/{id}/search:
     get:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/marketplace'
       summary: Search a payment
       description: Search a payment
       parameters:

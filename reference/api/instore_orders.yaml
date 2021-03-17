@@ -8,8 +8,7 @@ paths:
   /mpmobile/instore/qr/{user_id}/{external_id}:
     post:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/qr-code'
       summary: Create an Order
       description: Create an Order.
       parameters:
@@ -289,8 +288,7 @@ paths:
                       - invalid_access_token--Access-denied-
     delete:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/qr-code'
       summary: Delete an Order
       description: Delete an Order.
       parameters:

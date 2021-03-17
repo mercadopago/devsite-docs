@@ -8,8 +8,10 @@ paths:
   /payments:
     post:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
+        - $ref: '#/tags/mobile-checkout'
+        - $ref: '#/tags/qr-code'
       summary: Create a payment
       description: Create a payment.
       requestBody:
@@ -882,8 +884,8 @@ paths:
   /payments/{id}:
     get:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/qr-code'
+        - $ref: '#/tags/payment-link'
       summary: Get a payment
       description: Get a payment.
       parameters:
@@ -1240,8 +1242,8 @@ paths:
                       - 2000--Payment-not-found-
     put:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/qr-code'
+        - $ref: '#/tags/payment-link'
       summary: Update a payment
       description: Update a payment.
       parameters:
@@ -1596,8 +1598,8 @@ paths:
   /payments/search:
     get:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/qr-code'
+        - $ref: '#/tags/payment-link'
       summary: Search a payment
       description: Search a payment.
       parameters:

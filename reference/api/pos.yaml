@@ -8,8 +8,7 @@ paths:
   /pos:
     post:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/qr-code'
       summary: Create a POS
       description: Create a POS.
       requestBody:
@@ -197,8 +196,7 @@ paths:
                       - 1--A-pos-with-the-same-EXTERNAL-ID-already-exists-
     get:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/qr-code'
       summary: Get all POS
       description: Get all POS.
       responses:
@@ -316,8 +314,7 @@ paths:
   /pos/{id}:
     get:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/qr-code'
       summary: Get a POS
       description: Get a POS.
       parameters:
@@ -369,8 +366,7 @@ paths:
                         1--If-the-POS-does-not-exist-for-an-indicated-ID-or-EXTERNAL-ID-and-user-
     put:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/qr-code'
       summary: Update a POS
       description: Update a POS.
       parameters:
@@ -490,8 +486,7 @@ paths:
                       - 1--A-pos-with-the-same-EXTERNAL-ID-already-exists-
     delete:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/qr-code'
       summary: Delete a POS
       description: Delete a POS.
       parameters:

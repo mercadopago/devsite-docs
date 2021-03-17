@@ -8,8 +8,8 @@ paths:
   /v1/identification_types:
     get:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
       summary: Find identification types
       description: Find identification types.
       responses:

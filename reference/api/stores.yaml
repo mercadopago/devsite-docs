@@ -8,8 +8,7 @@ paths:
   /stores/{id}:
     get:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/qr-code'
       summary: Get a Store
       description: Get a Store.
       parameters:
@@ -125,8 +124,7 @@ paths:
   /users/{user_id}/stores:
     post:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/qr-code'
       summary: Create a store
       description: Create a store for the user.
       parameters:
@@ -292,8 +290,7 @@ paths:
   /users/{user_id}/stores/search:
     get:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/qr-code'
       summary: Get Stores
       description: Get Stores.
       parameters:
@@ -445,8 +442,7 @@ paths:
   /users/{user_id}/stores/{id}:
     put:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/qr-code'
       summary: Update a Store
       description: Update a Store.
       parameters:
@@ -541,8 +537,7 @@ paths:
                       - INVALID_REFERENCE--REFERENCE-must-be-string-
     delete:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/qr-code'
       summary: Remove a Store
       description: Remove a Store.
       parameters:

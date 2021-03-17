@@ -8,8 +8,7 @@ paths:
   /preapproval:
     post:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/subscriptions'
       summary: Create a subscription preference
       description: Create a subscription preference.
       requestBody:

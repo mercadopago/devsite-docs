@@ -8,8 +8,7 @@ paths:
   /chargebacks/{id}:
     get:
       tags:
-        - $ref: '#/tags/qr-code/description'
-        - $ref: '#/tags/link-de-pago/description'
+        - $ref: '#/tags/marketplace'
       summary: Get a chargeback info
       description: Get a chargeback info.
       parameters:
