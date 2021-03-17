@@ -386,11 +386,11 @@ curl -X PUT \
 
 > LEFT_BUTTON_REQUIRED_PT
 >
-> Requisitos para ir a produção
+> Requisitos para entrar em produção
 >
 > Conheça os requisitos necessários para começar a receber pagamentos.
 >
-> [Requisitos para ir a produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/goto-production)
+> [Requisitos para entrar em produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/goto-production)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
