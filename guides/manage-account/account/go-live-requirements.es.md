@@ -1,6 +1,6 @@
-# Requisitos para ir a producción
+# Requisitos para salir a producción
 
-Cuando tengas lista tu integración y quieras comenzar a recibir pagos, tienes que [activar tus credenciales]([FAKER][CREDENTIALS][URL]).
+Cuando tengas lista tu integración y quieras comenzar a recibir pagos, [activa las credenciales]([FAKER][CREDENTIALS][URL]) de producción y reemplaza las de prueba si hace falta.
 
 ## No te olvides de contar con un certificado SSL
 
@@ -12,3 +12,11 @@ Durante las pruebas puedes no tenerlo, pero es obligatorio para ir a producción
 Con este proceso, se puede garantizar la seguridad de lo datos de tus clientes, el cumplimiento de las normas o disposiciones legales de cada país y lograr la mejor experiencia de compra para tus ventas.
 
 [Conoce los términos y condiciones de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/legal/terms-and-conditions).
+
+## Consideraciones adicionales
+
+Te compartimos algunos puntos a tener en cuenta para elevar la calidad de tus integraciones:
+
++ Mejora la [aprobación del pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/payment-rejections) enviando información del ítem y del pagador, datos de envío e información de industria.
++ Mantén actualizado el estado de las órdenes en tus sistemas usando y procesando de forma correcta las notificaciones [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn) o [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks).
++ Consume reportes de conciliación vía API para mejorar la gestión financiera del negocio.
