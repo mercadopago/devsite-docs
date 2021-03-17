@@ -5,37 +5,43 @@ tags:
       pt: 'Checkout Pro'
       en: 'Checkout Pro'
       es: 'Checkout Pro'
-    endpoint: '/guides/online-payments/checkout-pro/introduction'
+    externalDocs: 
+      url: '/guides/online-payments/checkout-pro/introduction'
   payment-link:
     description:
       pt: 'Link de pagamento'
       en: 'Payment Link'
       es: 'Link de pago'
-    endpoint: '/guides/online-payments/payment-link/intro-button'
+    externalDocs: 
+      url: '/guides/online-payments/payment-link/intro-button'
   subscriptions:
     description:
       pt: 'Assinaturas'
       en: 'Subscriptions'
       es: 'Suscripciones'
-    endpoint: '/guides/online-payments/subscriptions/introduction'
+    externalDocs: 
+      url: '/guides/online-payments/subscriptions/introduction'
   marketplace: 
     description:
       pt: 'Marketplace'
       en: 'Marketplace'
       es: 'Marketplace'
-    endpoint: '/guides/online-payments/marketplace/checkout-pro/introduction'
+    externalDocs: 
+      url: '/guides/online-payments/marketplace/checkout-pro/introduction'
   mobile-checkout:
     description:
       pt: 'Mobile Checkout'
       en: 'Mobile Checkout'
       es: 'Mobile Checkout'
-    endpoint: '/guides/online-payments/mobile-checkout/introduction'
+    externalDocs: 
+      url: '/guides/online-payments/mobile-checkout/introduction'
   qr-code:
     description:
       pt: 'Código QR'
       en: 'QR Code'
       es: 'Código QR'
-    endpoint: '/guides/in-person-payments/qr-code/introduction'
+    externalDocs: 
+      url: '/guides/in-person-payments/qr-code/introduction'
   
 #------DEFAULT - ALL ARCHIVES - END------
 
