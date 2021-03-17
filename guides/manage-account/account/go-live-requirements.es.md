@@ -5,7 +5,7 @@ Cuando tengas lista tu integración y quieras comenzar a recibir pagos, [activa 
 ## No te olvides de contar con un certificado SSL
 
 Para que seas seguro y que puedas cuidar los datos, **es necesario que tengas un certificado SSL y que el formulario de pagos sea disponibilizado en una página HTTPS**. Esto permite proteger las transacciones que realicen los compradores y sus datos.
-Durante las pruebas puedes no tenerlo, pero es obligatorio para ir a producción.
+Durante las pruebas puedes no tenerlo, pero es obligatorio para salir a producción.
 
 ## ¿Por qué es necesario este proceso?
 
