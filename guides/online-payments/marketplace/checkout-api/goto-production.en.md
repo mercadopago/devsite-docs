@@ -1,4 +1,4 @@
-# Requirements for the production environment
+# Requirements to go to production
 
 Once your integration is ready, to start receiving payments you must [activate your credentials]([FAKER][CREDENTIALS][URL]).
 
