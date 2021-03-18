@@ -253,17 +253,15 @@ paymentmethods.Installments = 12;
 ```
 ```python
 #...
-preference_object = {
-    "excluded_payment_methods": {
-        "id": "master"
-    },
-    "excluded_payment_types": {
-        "id": "ticket"
-    },
+preference_data = {
+    "excluded_payment_methods": [
+        { "id": "master" }
+    ],
+    "excluded_payment_types": [
+        { "id": "ticket" }
+    ],
     "installments": 12
 }
-
-payment_methods = self.sdk.preference().update(data=preference_object)
 #...
 ```
 ]]]
@@ -446,8 +444,8 @@ preference = MercadoPago::Preference.new({
 preference.save()
 ```
 ```python
-# Create items in the preference
-preference_object = {
+# Cria itens na preferência
+preference_data = {
     "items": [
         {
             "title": "Mi producto",
@@ -462,8 +460,9 @@ preference_object = {
     ]
 }
 
-# Create a preference object
-payment_methods = self.sdk.preference().create(data=preference_object)
+# Cria a preferência
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
 ```
 ```csharp
 // Cria um objeto preferência
@@ -681,20 +680,21 @@ preference.Save();
 ===
 Adicione o código na preferência e substitua o valor pixel_id pelo seu identificador.
 ===
-# Associate your Facebook Pixel
-  preference_object = {
-      tracks = [
-          {
-              "type": "facebook_ad",
-              "values":
-              {
-                  {"pixel_id", "PIXEL_ID"}
-              }
-          }
-      ]
-  }
+# Associar seu pixel do Facebook
+preference_data = {
+    # ...
+    "tracks": [
+        {
+            "type": "facebook_ad",
+            "values": {
+                "pixel_id": "PIXEL_ID"
+            }
+        }
+    ]
+}
 
-  preference = self.sdk.preference().update(data=preference_object)
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
 ```
 ```curl
 ===
@@ -837,13 +837,13 @@ preference.Save();
 ===
 Adicione o código na preferência e substitua os valores CONVERSION_ID e CONVERSION_LABEL pelos dados da sua tag.
 ===
-# Associate your tag
-  preference_object = {
-    tracks = [
+# Associar sua tag do Google ads
+preference_data = {
+    # ...
+    "tracks": [
         {
             "type": "google_ad",
-            "values":
-            {
+            "values": {
                 "conversion_id": "CONVERSION_ID",
                 "conversion_label": "CONVERSION_LABEL"
             }
@@ -851,7 +851,8 @@ Adicione o código na preferência e substitua os valores CONVERSION_ID e CONVER
     ]
 }
 
-  preference = self.sdk.preference().update(data=preference_object)
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
 ```
 ```curl
 ===
@@ -952,9 +953,14 @@ MercadoPago.SDK.CorporationId = "CORPORATION_ID";
 ===
 Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION_ID, INTEGRATOR_ID e PLATFORM_ID.
 ===
-platform_id = self.sdk.__platform_id("PLATFORM_ID")
-integrator_id = self.sdk.__integrator_id("INTEGRATOR_ID")
-corporation_id = self.sdk.__corporation_id("CORPORATION_ID")
+import mercadopago
+
+request_options = mercadopago.RequestOptions(
+    corporation_id="CORPORATION_ID",
+    integrator_id="INTEGRATOR_ID",
+    platform_id="PLATFORM_ID"
+)
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN", request_options=request_options)
 ```
 ```curl
 ===

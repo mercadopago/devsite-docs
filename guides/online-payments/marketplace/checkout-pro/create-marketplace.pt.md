@@ -250,25 +250,24 @@ preference.save
 ```
 ```python
 
-preference_object = {
+preference_data = {
     "items": [
         {
             "title": "Blue shirt",
             "quantity": 10,
             "currency_id": "[FAKER][CURRENCY][ACRONYM]",
             "unit_price": [FAKER][COMMERCE][PRICE],
-            "payer": {
-                "email": "john@yourdomain.com"
-            }
-            "marketplace": {
-                "marketplace_fee": 2.56
-            }
-            "notification_url": "http://urlmarketplace.com/notification_ipn"
         }
-    ]
+    ],
+    "payer": {
+        "email": "john@yourdomain.com"
+    },
+    "marketplace_fee": 2.56,
+    "notification_url": "http://urlmarketplace.com/notification_ipn"
 }
 
-preference = self.sdk.preference().create(data=preference_object)
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
 
 ```
 ]]]

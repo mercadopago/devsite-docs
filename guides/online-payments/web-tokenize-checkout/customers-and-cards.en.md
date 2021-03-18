@@ -121,20 +121,19 @@ MercadoPago.SDK.AccessToken = "YOUR_ACCESS_TOKEN";
 ```
 ```python
 import mercadopago
-sdk = mercadopago.SDK("ACCESS_TOKEN")
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
-customer_object = {
-    "email": "test@test.com"
+customer_data = {
+  "email": "test@test.com"
 }
+customer_response = sdk.customer().create(customer_data)
+customer = customer_response["response"]
 
-customer = self.sdk.customer().create(data=customer_object)
-
-card_token_object = {
-    "token": "9b2d63e00d66a8c721607214cedaecda",
-    "customer_id": "customer_id"
+card_data = {
+  "token": "9b2d63e00d66a8c721607214cedaecda"
 }
-
-card = self.sdk.card_token().create(data=card_token_object)
+card_response = sdk.card().create(customer["id"], card_data)
+card = card_response["response"]
 ```
 ]]]
 
@@ -235,9 +234,8 @@ customer = Customer.FindById("customer.Id");
 List<Card> cards = customer.Cards; 
 ```
 ```python
-
-	customer = self.sdk.customer().get(customer_id)
-  cards = self.sdk.card().create(customer_id)
+cards_response = sdk.card().list_all(customer_id)
+cards = cards_response["response"]
 ```
 ]]]
 
@@ -376,18 +374,17 @@ MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
   Console.WriteLine(card.Id);
 ```
 ```python
-
 import mercadopago
-sdk = mercadopago.SDK("ACCESS_TOKEN")
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
-customer = self.sdk.customer().get("247711297-jxOV430go9fx2e")
+customer_response = sdk.customer().get("247711297-jxOV430go9fx2e")
+customer = customer_response["response"]
 
-card_object = {
-  "token": "9b2d63e00d66a8c721607214cedaecda",
-  "customer_id": customer_id
+card_data = {
+  "token": "9b2d63e00d66a8c721607214cedaecda"
 }
-
-card = self.sdk.card_().create(data=card_object)
+card_response = sdk.card().create(customer["id"], card_data)
+card = card_response["response"]
 
 print(card)
 ```
@@ -485,12 +482,12 @@ filters.Add("email", "test@test.com");
 List<Customer> customers = Customer.Search(filters);
 ```
 ```python
-
 filters = {
     "email": "test@test.com"
 }
 
-customers = self.sdk.customer().search(filters=filters)
+customers_response = sdk.customer().search(filters=filters)
+customers = customers_response["response"]
 ```
 ]]]
 
@@ -585,9 +582,8 @@ Customer customer = Customer.FindById("customer.Id");
 List<Card> cards = customer.Cards;
 ```
 ```python
-
-	customer = self.sdk.customer().get(customer_id)
-  cards = self.sdk.card().create(customer_id)
+cards_response = sdk.card().list_all(customer_id)
+cards = cards_response["response"]
 ```
 ]]]
 

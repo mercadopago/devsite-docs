@@ -100,11 +100,11 @@ using MercadoPago;
 MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
 ```
 ```python
-  # SDK de Mercado Pago
-  import mercadopago
+# SDK de Mercado Pago
+import mercadopago
 
-  # Agrega credenciales
-  sdk = mercadopago.SDK("ACCESS_TOKEN")
+# Agrega credenciales
+sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 ```
 ]]]
 
@@ -231,10 +231,10 @@ preference.Save();
 import mercadopago
 
 # Agrega credenciales
-sdk = mercadopago.SDK("ACCESS_TOKEN")
+sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 
 # Crea un ítem en la preferencia
-preference_object = {
+preference_data = {
     "items": [
         {
             "title": "Mi producto",
@@ -244,7 +244,8 @@ preference_object = {
     ]
 }
 
-preference = self.sdk.preference().create(data=preference_object)
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
 ```
 ```curl
 curl -X POST \
@@ -383,10 +384,10 @@ preference.Save();
 import mercadopago
 
 # Add Your credentials
-sdk = mercadopago.SDK("ACCESS_TOKEN")
+sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 
 # Crea un ítem en la preferencia
-preference_object = {
+preference_data = {
     "items": [
         {
             "title": "Mi producto",
@@ -396,7 +397,8 @@ preference_object = {
     ]
 }
 
-preference = self.sdk.preference().create(data=preference_object)
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
 ```
 ```curl
 curl -X POST \
@@ -469,7 +471,7 @@ Por último, suma el siguiente código para mostrar el botón de pago de tu Chec
 ```python
 <script
   src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
-  data-preference-id="+ str(preference_id)">
+  data-preference-id="{{ preference_id }}">
 </script>
 ```
 ]]]

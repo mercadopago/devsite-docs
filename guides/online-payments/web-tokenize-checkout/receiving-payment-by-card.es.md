@@ -79,10 +79,10 @@ installments = Request["installments"]
 issuer_id = Request["issuer_id"]
 ```
 ```python
-  token = self.sdk.payment().create("token")
-  payment_method_id = self.sdk.payment().create("payment_method_id")
-  installments = self.sdk.payment().create("installments")
-  issuer_id = self.sdk.payment().create("issuer_id")
+token = request.POST.get("token")
+payment_method_id = request.POST.get("payment_method_id")
+installments = request.POST.get("installments")
+issuer_id = request.POST.get("issuer_id")
 ```
 ]]]
 
@@ -207,9 +207,9 @@ Console.log(payment.Status);
 //...
 ```
 ```python
-payment_object = {
+payment_data = {
     "transaction_amount": 100,
-    "token": "token",
+    "token": token,
     "description": "Blue shirt",
     "installments": installments,
     "payment_method_id": payment_method_id,
@@ -220,7 +220,8 @@ payment_object = {
 }
 
 # Guarda y postea el pago
-payment = self.sdk.payment().create(data=payment_object)
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
 ```
 ]]]
 

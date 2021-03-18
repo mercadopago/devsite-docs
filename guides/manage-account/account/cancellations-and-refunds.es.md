@@ -61,12 +61,14 @@ payment.status = "cancelled"
 payment.update()
 ```
 ```python
-payment = self.sdk.payment().get(payment_id)
-payment_object = {
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+payment_data = {
     status = "cancelled"
 }
 
-preapproval = self.sdk.preapproval().update(data=preapproval_object)
+payment_response = sdk.payment().update(payment_id, payment_data)
+payment = payment_response["response"]
 ```
 ```curl
 curl -X PUT \
@@ -129,9 +131,8 @@ mercadopago.payment.refund(payment_id)
   });
 ```
 ```python
-payment = self.sdk.payment().get(payment_id)
-
-payment_refund = self.sdk.refund().create(payment)
+refund_response = sdk.refund().create(payment_id)
+refund = refund_response["response"]
 ```
 ```curl
 curl -X POST \
@@ -193,13 +194,12 @@ mercadopago.payment.refundPartial({ payment_id: id, amount: Number(amount) })
   });
 ```
 ```python
-payment = self.sdk.payment().get(payment_id)
-
-refund_object = {
-  "value": 10.5
+refund_data = {
+  "amount": 10.5
 }
 
-payment_refund = self.sdk.refund().create(data=refund_object)
+refund_response = sdk.refund().create(payment_id, refund_data)
+refund = refund_response["response"]
 ```
 ```ruby
 payment = MercadoPago::Payment.find_by_id(paymnentId)
@@ -236,9 +236,8 @@ mercadopago.payment.refund(paymentId).then(function(data) {}
 });
 ```
 ```python
-payment = self.sdk.payment().get(payment_id)
-
-refunds = self.sdk.refund().create(payment)
+refunds_response = sdk.refund().list_all(payment_id)
+refunds = refunds_response["response"]
 ```
 ```ruby
 payment = MercadoPago::Payment.find_by_id(payment_id)

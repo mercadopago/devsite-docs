@@ -103,18 +103,19 @@ MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
 ```python
 
 import mercadopago
-sdk = mercadopago.SDK("ACCESS_TOKEN")
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
-customer_object = { 
+customer_data = {
   "email": "test@test.com"
 }
-customer = self.sdk.customer().create(data=customer_object)
+customer_response = sdk.customer().create(customer_data)
+customer = customer_response["response"]
 
-card_token_object = {
-  "token": "9b2d63e00d66a8c721607214cedaecda",
-  "customer_id": "customer_id"
+card_data = {
+  "token": "9b2d63e00d66a8c721607214cedaecda"
 }
-card_token = self.sdk.card_token().create(data=card_token_object)
+card_response = sdk.card().create(customer["id"], card_data)
+card = card_response["response"]
 
 ```
 ```curl
@@ -255,16 +256,16 @@ MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
 ```python
 
 import mercadopago
-sdk = mercadopago.SDK("ACCESS_TOKEN")
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
-customer = self.sdk.customer().get("247711297-jxOV430go9fx2e")
+customer_response = sdk.customer().get("247711297-jxOV430go9fx2e")
+customer = customer_response["response"]
 
-card_object = {
-    "token": "9b2d63e00d66a8c721607214cedaecda",
-    "customer_id": "customer_id"
+card_data = {
+  "token": "9b2d63e00d66a8c721607214cedaecda"
 }
-
-card = self.sdk.card().create(data=card_object)
+card_response = sdk.card().create(customer["id"], card_data)
+card = card_response["response"]
 
 print(card)
 
@@ -381,8 +382,8 @@ List<Card> cards = customer.Cards;
 ```
 ```python
 
-  customer = self.sdk.customer().get(customer_id) 
-  cards = self.sdk.card().get(customer_id)
+cards_response = sdk.card().list_all(customer_id)
+cards = cards_response["response"]
 
 ```
 ```curl
@@ -532,9 +533,9 @@ payment.save()
 ```python
 
 import mercadopago
-sdk = mercadopago.SDK("ACCESS_TOKEN")
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
-payment_object = {
+payment_data = {
     "transaction_amount": 100,
     "token": 'ff8080814c11e237014c1ff593b57b4d',
     "installments": 1,
@@ -544,7 +545,8 @@ payment_object = {
     }
 }
 
-payment = self.sdk.payment().create(data=payment_object)
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
 
 ```
 ```curl
@@ -615,11 +617,12 @@ Busque informação de um cliente caso necessário. Por exemplo, caso não saiba
 ```
 ```python
 
-  filters = {
+filters = {
     "email": "test@test.com"
-  }
-  
-  customers = self.sdk.customer().search(filters=filters)
+}
+
+customers_response = sdk.customer().search(filters=filters)
+customers = customers_response["response"]
 
 ```
 ```curl
@@ -719,8 +722,8 @@ curl -X GET \
 ```
 ```python
 
-  customer = self.sdk.customer().get(customer_id) 
-  cards = self.sdk.card().get(customer_id)
+cards_response = sdk.card().list_all(customer_id)
+cards = cards_response["response"]
   
 ```
 ```curl

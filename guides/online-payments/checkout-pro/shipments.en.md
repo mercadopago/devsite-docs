@@ -126,6 +126,23 @@ MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataS
 
  preference.Shipments = shipments
 ```
+```python
+preference_data = {
+    # ...
+    "shipments": {
+        "mode": "me2",
+        "dimensions": "30x30x30,500",
+        "receiver_address": {
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
+            "street_number": 1000,
+            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
+            "floor": "4",
+            "apartment": "C"
+        }
+    }
+    # ...
+}
+```
 ]]]
 
 > WARNING
@@ -216,6 +233,22 @@ shipments.FreeMethods = new List<int> { 73328, 504945 };
 //...
 preference.Shipments = shipments;
 ```
+```python
+preference_data = {
+    # ...
+    "shipments": {
+        "free_methods": [
+            {
+                "id": 73328
+            },
+            {
+                "id": 504945
+            }
+        ]
+    }
+    # ...
+}
+```
 ]]]
 ------------
 ----[mlm]----
@@ -294,6 +327,22 @@ MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataS
 shipments.FreeMethods = new List<int> { 509247, 509245 };
 //...
 preference.Shipments = shipments;
+```
+```python
+preference_data = {
+    # ...
+    "shipments": {
+        "free_methods": [
+            {
+                "id": 509247
+            },
+            {
+                "id": 509245
+            }
+        ]
+    }
+    # ...
+}
 ```
 ]]]
 ------------
@@ -374,6 +423,22 @@ shipments.FreeMethods = new List<int> { 505345, 100009 };
 //...
 preference.Shipments = shipments;
 ```
+```python
+preference_data = {
+    # ...
+    "shipments": {
+        "free_methods": [
+            {
+                "id": 505345
+            },
+            {
+                "id": 100009
+            }
+        ]
+    }
+    # ...
+}
+```
 ]]]
 ------------
 
@@ -447,6 +512,16 @@ MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataS
 shipments.LocalPickUp = true;
 //...
 preference.Shipments = shipments;
+```
+```python
+preference_data = {
+    # ...
+    "shipments": {
+        # ...
+        "local_pickup": True
+    }
+    # ...
+}
 ```
 ]]]
 
@@ -652,6 +727,40 @@ preference.Shipments = shipments;
 
 preference.Save();
 ```
+```python
+preference_data = {
+    "items": [
+        {
+            "title": 'Blue shirt',
+            "quantity": 10,
+            "currency_id": '[FAKER][CURRENCY][ACRONYM]',
+            "unit_price": [FAKER][COMMERCE][PRICE]
+        }
+    ],
+    "payer": {
+        "email": "john@yourdomain.com"
+    },
+    "shipments": {
+        "mode": "me2",
+        "dimensions": "30x30x30,500",
+        "receiver_address": {
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
+            "street_number": 1000,
+            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
+            "floor": "4",
+            "apartment": "C"
+        },
+        "free_methods": [
+            {
+                "id": 73328
+            },
+            {
+                "id": 504945
+            }
+        ]
+    }
+}
+```
 ]]]
 ------------
 ----[mlm]----
@@ -843,6 +952,40 @@ preference.Shipments = shipments;
 
 preference.Save();
 ```
+```python
+preference_data = {
+    "items": [
+        {
+            "title": 'Blue shirt',
+            "quantity": 10,
+            "currency_id": '[FAKER][CURRENCY][ACRONYM]',
+            "unit_price": [FAKER][COMMERCE][PRICE]
+        }
+    ],
+    "payer": {
+        "email": "john@yourdomain.com"
+    },
+    "shipments": {
+        "mode": "me2",
+        "dimensions": "30x30x30,500",
+        "receiver_address": {
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
+            "street_number": 1000,
+            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
+            "floor": "4",
+            "apartment": "C"
+        },
+        "free_methods": [
+            {
+                "id": 509247
+            },
+            {
+                "id": 509245
+            }
+        ]
+    }
+}
+```
 ]]]
 ------------
 ----[mlb]----
@@ -1033,6 +1176,40 @@ preference.Payer = payer;
 preference.Shipments = shipments;
 
 preference.Save();
+```
+```python
+preference_data = {
+    "items": [
+        {
+            "title": 'Blue shirt',
+            "quantity": 10,
+            "currency_id": '[FAKER][CURRENCY][ACRONYM]',
+            "unit_price": [FAKER][COMMERCE][PRICE]
+        }
+    ],
+    "payer": {
+        "email": "john@yourdomain.com"
+    },
+    "shipments": {
+        "mode": "me2",
+        "dimensions": "30x30x30,500",
+        "receiver_address": {
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
+            "street_number": 1000,
+            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
+            "floor": "4",
+            "apartment": "C"
+        },
+        "free_methods": [
+            {
+                "id": 505345
+            },
+            {
+                "id": 100009
+            }
+        ]
+    }
+}
 ```
 ]]]
 ------------

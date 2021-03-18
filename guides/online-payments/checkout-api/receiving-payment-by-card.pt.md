@@ -488,24 +488,25 @@ Encontre o estado do pagamento no campo _status_.
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
 
-payment_object = {
-    "transaction_amount": self.sdk.payment().create("transaction_amount"),
-    "token": self.sdk.payment().create("token"),
-    "description": self.sdk.payment().create("description"),
-    "installments": self.sdk.payment().create("installments"),
-    "payment_method_id": self.sdk.payment().create("payment_method_id"),
+payment_data = {
+    "transaction_amount": float(request.POST.get("transaction_amount")),
+    "token": request.POST.get("token"),
+    "description": request.POST.get("description"),
+    "installments": int(request.POST.get("installments")),
+    "payment_method_id": request.POST.get("payment_method_id"),
     "payer": {
-        "email": self.sdk.payment().get("email"),
-        "identification": self.sdk.payment().create("identification") {----[mla, mlb, mlu, mlc, mpe, mco]----
-                                                                "type": self.sdk.payment().create("type"), ------------
-                                                                "number": self.sdk.payment().create("number")
-                                                                }
+        "email": request.POST.get("email"),
+        "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
+            "type": request.POST.get("type"), ------------
+            "number": request.POST.get("number")
+        }
     }
 }
 
-self._post(uri="/v1/payments", data=payment_object, request_options=request_options)
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
 
-print(payment_object)
+print(payment)
 ```
 ```curl
 ===

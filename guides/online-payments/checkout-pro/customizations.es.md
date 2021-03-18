@@ -101,7 +101,7 @@ Redirige al 'init_point' de la preferencia
     <title>Pay</title>
   </head>
   <body>
-    <a href="+ str(init_point)" target="_blank">Pay with Mercado Pago</a>
+    <a href="{{ init_point }}" target="_blank">Pay with Mercado Pago</a>
   </body>
 </html>
 ```

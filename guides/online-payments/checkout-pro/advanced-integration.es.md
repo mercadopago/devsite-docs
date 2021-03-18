@@ -147,7 +147,7 @@ Payer payer = new Payer()
 ```python
 # ...
 
-payer_object = {
+payer_data = {
     "name": "Charles",
     "surname": "Luevano",
     "email": "charles@hotmail.com",
@@ -246,8 +246,8 @@ preference.Items.Add(
 ```
 ```python
 # ...
-preference_object = {
-    "items" = [
+preference_data = {
+    "items": [
         {
             "id": "1234",
             "title": "Lightweight Paper Table",
@@ -359,14 +359,14 @@ Preference preference = new Preference();
   preference.AutoReturn = AutoReturnType.approved;
 ```
 ```python
-  preference_object = {
-      "back_urls": {
-          "success": "https://www.tu-sitio/success",
-          "failure": "http://www.tu-sitio/failure",
-          "pending": "http://www.tu-sitio/pendings"
-      }
-  }
-  status_object = {"status": "approved"}
+preference_data = {
+    "back_urls": {
+        "success": "https://www.tu-sitio/success",
+        "failure": "http://www.tu-sitio/failure",
+        "pending": "http://www.tu-sitio/pendings"
+    },
+    "auto_return": "approved"
+}
 ```
 ]]]
 

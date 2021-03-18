@@ -135,6 +135,21 @@ preference.Items.Add(
 preference.Purpose = "wallet_purchase"
 preference.Save();
 ```
+```python
+preference_data = {
+    "items": [
+        {
+            "title": "Mi producto",
+            "unit_price": 100,
+            "quantity": 1
+        }
+    ],
+    "purpose": "wallet_purchase"
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
+```
 ```curl
 ===
 El modo billetera funciona agregando el atributo _purpose_ en la preferencia.
@@ -213,6 +228,14 @@ Luego, desde tu frontend, agrega el siguiente código para mostrar el botón de 
 <script
   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
   data-preference-id="@Html.DisplayFor(model => model.id)"
+  data-button-label="Pagar con Mercado Pago"
+  data-button-type="wallet">
+</script>
+```
+```python
+<script
+  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id="{{ preference_id }}"
   data-button-label="Pagar con Mercado Pago"
   data-button-type="wallet">
 </script>

@@ -100,11 +100,11 @@ using MercadoPago;
 MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
 ```
 ```python
-  # Mercado Pago SDK   
-  import mercadopago
+# Mercado Pago SDK   
+import mercadopago
 
-  # Add Your credentials
-  sdk = mercadopago.SDK("ACCESS_TOKEN")
+# Add Your credentials
+sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 ```
 ]]]
 
@@ -231,10 +231,10 @@ preference.Save();
 import mercadopago
 
 # Add Your credentials
-sdk = mercadopago.SDK("ACCESS_TOKEN")
+sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 
 # Create a preference item
-preference_object = {
+preference_data = {
     "items": [
         {
             "title": "My Item",
@@ -244,7 +244,8 @@ preference_object = {
     ]
 }
 
-preference = self.sdk.preference().create(data=preference_object)
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
 ```
 ```curl
 curl -X POST \
@@ -384,10 +385,10 @@ preference.Save();
 import mercadopago
 
 # Add Your credentials
-sdk = mercadopago.SDK("ACCESS_TOKEN")
+sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 
 # Create a preference object
-preference_object = {
+preference_data = {
     "items": [
         {
             "title": "My Item",
@@ -398,7 +399,8 @@ preference_object = {
     ]
 }
 
-preference = self.sdk.preference().create(data=preference_object)
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
 ```
 ```curl
 curl -X POST \
@@ -471,7 +473,7 @@ Finally, add the following code to show the payment button of your Checkout Pro 
 ```python
 <script
   src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
-  data-preference-id="+ str(preference_id)">
+  data-preference-id="{{ preference_id }}">
 </script>
 ```
 ]]]

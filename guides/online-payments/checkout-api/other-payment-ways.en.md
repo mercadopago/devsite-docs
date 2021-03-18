@@ -74,7 +74,8 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
 
-payment_methods = self.sdk.payment_methods().search("/v1/payment_methods", request_options=request_options)
+payment_methods_response = sdk.payment_methods().list_all()
+payment_methods = payment_methods_response["response"]
 ```
 ```curl
 curl -X GET \
@@ -323,9 +324,9 @@ payment.Save();
 ```
 ```python
 import mercadopago
-sdk = mercadopago.SDK("ACCESS_TOKEN")
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
-payment_object = {
+payment_data = {
     "transaction_amount": 100,
     "description": "Product Title",
     "payment_method_id": "rapipago",
@@ -334,7 +335,8 @@ payment_object = {
     }
 }
 
-payment = self.sdk.payment().create(data=payment_object)
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
 ```
 ```curl
 curl -X POST \
@@ -534,7 +536,8 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
 
-payment_methods = self.sdk.payment_methods().search("/v1/payment_methods", request_options=request_options)
+payment_methods_response = sdk.payment_methods().list_all()
+payment_methods = payment_methods_response["response"]
 ```
 ```curl
 curl -X GET \
@@ -853,9 +856,9 @@ payment.Save();
 ```
 ```python
 import mercadopago
-sdk = mercadopago.SDK("ACCESS_TOKEN")
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
-payment_object = {
+payment_data = {
     "transaction_amount": 100,
     "description": "Product Title",
     "payment_method_id": "oxxo",
@@ -864,7 +867,8 @@ payment_object = {
     }
 }
 
-payment = self.sdk.payment().create(data=payment_object)
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
 ```
 ```curl
 curl -X POST \
@@ -1013,7 +1017,8 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
 
-payment_methods = self.sdk.payment_methods().search("/v1/payment_methods", request_options=request_options)
+payment_methods_response = sdk.payment_methods().list_all()
+payment_methods = payment_methods_response["response"]
 ```
 ```curl
 curl -X GET \
@@ -1276,9 +1281,9 @@ payment.Save();
 ```
 ```python
 import mercadopago
-sdk = mercadopago.SDK("ACCESS_TOKEN")
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
-payment_object = {
+payment_data = {
     "transaction_amount": 100,
     "description": "Product Title",
     "payment_method_id": "rapipago",
@@ -1287,7 +1292,8 @@ payment_object = {
     }
 }
 
-payment = self.sdk.payment().create(data=payment_object)
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
 ```
 ```curl
 curl -X POST \
@@ -1423,7 +1429,8 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
 
-payment_methods = self.sdk.payment_methods().search("/v1/payment_methods", request_options=request_options)
+payment_methods_response = sdk.payment_methods().list_all()
+payment_methods = payment_methods_response["response"]
 ```
 ```curl
 curl -X GET \
@@ -1703,9 +1710,9 @@ payment.Save();
 ```
 ```python
 import mercadopago
-sdk = mercadopago.SDK("ACCESS_TOKEN")
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
-payment_object = {
+payment_data = {
     "transaction_amount": 5000,
     "description": "Product Title",
     "payment_method_id": "efecty",
@@ -1714,7 +1721,8 @@ payment_object = {
     }
 }
 
-payment = self.sdk.payment().create(data=payment_object)
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
 ```
 ```curl
 curl -X POST \
@@ -1950,9 +1958,9 @@ payment.save();
 ```
 ```python
 import mercadopago
-sdk = mercadopago.SDK("ACCESS_TOKEN")
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
-payment_object = {
+payment_data = {
     "transaction_amount": 5000
     "description": 'Product Title'
     "payer": {
@@ -1973,7 +1981,8 @@ payment_object = {
     "payment_method_id": "pse"
 }
 
-payment = self.sdk.payment().update(data=payment_object)
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
 ```
 ```curl
 curl -X POST \
@@ -2097,7 +2106,8 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
 
-payment_methods = self.sdk.payment_methods().search("/v1/payment_methods", request_options=request_options)
+payment_methods_response = sdk.payment_methods().list_all()
+payment_methods = payment_methods_response["response"]
 ```
 ```curl
 curl -X GET \
@@ -2362,9 +2372,9 @@ payment.Save();
 ```
 ```python
 import mercadopago
-sdk = mercadopago.SDK("ACCESS_TOKEN")
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
-payment_object = {
+payment_data = {
     "transaction_amount": 100,
     "description": "Product Title",
     "payment_method_id": "servipag",
@@ -2373,7 +2383,8 @@ payment_object = {
     }
 }
 
-payment = self.sdk.payment().create(data=payment_object)
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
 ```
 ```curl
 curl -X POST \
@@ -2530,9 +2541,9 @@ payment.save();
 ```
 ```python
 import mercadopago
-sdk = mercadopago.SDK("ACCESS_TOKEN")
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
-payment_object = {
+payment_data = {
     "transaction_amount": 100
     "description": 'Product Title'
     "payer": {
@@ -2549,7 +2560,8 @@ payment_object = {
     "payment_method_id": "webpay"
 }
 
-payment = self.sdk.payment().update(data=payment_object)
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
 ```
 ```curl
 curl -X POST \
@@ -2695,7 +2707,8 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
 
-payment_methods = self.sdk.payment_methods().search("/v1/payment_methods", request_options=request_options)
+payment_methods_response = sdk.payment_methods().list_all()
+payment_methods = payment_methods_response["response"]
 ```
 ```curl
 curl -X GET \
@@ -2935,9 +2948,9 @@ payment.Save();
 ```
 ```python
 import mercadopago
-sdk = mercadopago.SDK("ACCESS_TOKEN")
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
-payment_object = {
+payment_data = {
     "transaction_amount": 100,
     "description": "Product Title",
     "payment_method_id": "pagoefectivo_atm",
@@ -2946,7 +2959,8 @@ payment_object = {
     }
 }
 
-payment = self.sdk.payment().create(data=payment_object)
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
 ```
 ```curl
 curl -X POST \
@@ -3090,7 +3104,8 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
 
-payment_methods = self.sdk.payment_methods().search("/v1/payment_methods", request_options=request_options)
+payment_methods_response = sdk.payment_methods().list_all()
+payment_methods = payment_methods_response["response"]
 ```
 ```curl
 curl -X GET \
@@ -3423,9 +3438,9 @@ payment.Save();
 ```
 ```python
 import mercadopago
-sdk = mercadopago.SDK("ACCESS_TOKEN")
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
-payment_object = {
+payment_data = {
     "transaction_amount": 100,
     "description": "Product Title",
     "payment_method_id": "bolbradesco",
@@ -3437,20 +3452,19 @@ payment_object = {
             "type": "CPF",
             "number": "191191191-00"
         },
-        "shipments": {
-            "receiver_address": {
-                "zip_code": "06233-200",
-                "street_name": "Av. das Nações Unidas",
-                "street_number": "3003",
-                "neighborhood": "Bonfim",
-                "city": "Osasco",
-                "federal_unit": "SP"
-            }
+        "address": {
+            "zip_code": "06233-200",
+            "street_name": "Av. das Nações Unidas",
+            "street_number": "3003",
+            "neighborhood": "Bonfim",
+            "city": "Osasco",
+            "federal_unit": "SP"
         }
     }
 }
 
-payment = self.sdk.payment().update(data=payment_object)
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
 ```
 ```curl
 curl -X POST \
@@ -3698,9 +3712,9 @@ payment.Save();
 ```
 ```python
 import mercadopago
-sdk = mercadopago.SDK("ACCESS_TOKEN")
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
-payment_object = {
+payment_data = {
     "transaction_amount": 100,
     "description": "Título do produto",
     "payment_method_id": "pix",
@@ -3712,20 +3726,19 @@ payment_object = {
             "type": "CPF",
             "number": "191191191-00"
         },
-        "shipments": {
-            "receiver_address": {
-                "zip_code": "06233-200",
-                "street_name": "Av. das Nações Unidas",
-                "street_number": "3003",
-                "neighborhood": "Bonfim",
-                "city": "Osasco",
-                "federal_unit": "SP"
-            }
+        "address": {
+            "zip_code": "06233-200",
+            "street_name": "Av. das Nações Unidas",
+            "street_number": "3003",
+            "neighborhood": "Bonfim",
+            "city": "Osasco",
+            "federal_unit": "SP"
         }
     }
 }
 
-payment = self.sdk.payment().update(data=payment_object)
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
 ```
 ```curl
 curl -X POST \

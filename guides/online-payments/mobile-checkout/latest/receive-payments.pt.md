@@ -52,6 +52,10 @@ mercadopago.configure({
 require 'mercadopago'
 MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 ```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+```
 ]]]
 
 Depois você deverá adicionar os atributos das suas preferências de pagamento:
@@ -157,6 +161,20 @@ Preference preference = new Preference();
 ```csharp
 using MercadoPago;
 MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+```
+```python
+preference_data = {
+    "title": "Blue shirt",
+    "quantity": 1,
+    "currency_id": "[FAKER][CURRENCY][ACRONYM]",
+    "unit_price": [FAKER][COMMERCE][PRICE],
+    "payer": {
+        "email": "john@yourdomain.com"
+    }
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
 ```
 ]]]
 
