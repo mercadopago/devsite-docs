@@ -5,6 +5,24 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 ---
 ## Março 2021
 
+### 25 de março
+
+> CHANGELOG
+>
+> Nova versão SDK Ruby
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK RUBY
+
+Lançamos uma nova versão do SDK Ruby 2.0.0.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-ruby/releases/tag/2.0.0).
+
 ### 10 de março
 
 > CHANGELOG

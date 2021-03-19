@@ -5,6 +5,24 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 ---
 ## March 2021
 
+### March 25th
+
+> CHANGELOG
+>
+> New version of SDK Ruby
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK RUBY
+
+We have released a new version of SDK Ruby 2.0.0.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-ruby/releases/tag/2.0.0) for further details regarding this release.
+
 ### March 10th
 
 > CHANGELOG
