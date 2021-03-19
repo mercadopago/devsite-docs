@@ -5,19 +5,23 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 ---
 ## Março 2021
 
-### 18 de março
+### 25 de março
 
-> RELEASE
+> CHANGELOG
 >
-> Nova SDK Python versão 2.0.0
+> Nova versão SDK Python
 >
-> NEWS: NOVIDADES
+> NEW_VERSION: NOVA VERSÃO
 >
 > PRODUCT: SDK PYTHON
 
 Lançamos uma nova versão do SDK Python 2.0.0.
 
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-python).
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-python/releases/tag/2.0.0).
 
 ### 10 de março
 
