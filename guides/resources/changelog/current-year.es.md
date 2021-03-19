@@ -5,6 +5,24 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 ---
 ## Marzo 2021
 
+### 25 de marzo
+
+> CHANGELOG
+>
+> Nueva versión SDK .Net
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK .NET
+
+Lanzamos una nueva versión del SDK .Net 2.0.0.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-dotnet/releases/tag/2.0.0).
+
 ### 10 de marzo
 
 > CHANGELOG
