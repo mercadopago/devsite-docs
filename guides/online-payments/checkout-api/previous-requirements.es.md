@@ -24,11 +24,20 @@ Es importante que siempre utilices nuestras librerías oficiales para tu integra
 >
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Incluye MercadoPago.js
 
+----[mlb]----
 > INFO
 >
 > Nueva versión MercadoPago.js
 >
-> Utiliza la librería MercadoPago.js V2 para actualizarte a la última versión, autogenerar la lógica de negocio en tu formulario de pagos con tarjeta y mejorar la compatibilidad con los distintos navegadores.<br><br>[Integrar Checkout API con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/).
+> Utiliza la librería MercadoPago.js V2 para actualizarte a la última versión, autogenerar la lógica de negocio en tu formulario de pagos con tarjeta y mejorar la compatibilidad con los distintos navegadores.<br><br>[Integrar Checkout API con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements-v2).
+------------
+----[mla, mlm, mco, mlc, mlu]----
+> INFO
+>
+> Nueva versión MercadoPago.js
+>
+> Utiliza la librería MercadoPago.js V2 para actualizarte a la última versión, autogenerar la lógica de negocio en tu formulario de pagos con tarjeta y mejorar la compatibilidad con los distintos navegadores.<br><br>[Integrar Checkout Transparente con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements-v2).
+------------
 
 MercadoPago.js te permite crear un token de pago para enviar los datos de las tarjetas a tu backend de forma segura. Puedes utilizarla sumando el siguiente código en tu sitio:
 

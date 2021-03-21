@@ -29,7 +29,7 @@ Remember to always use our official libraries for your integration. This helps p
 >
 > New MercadoPago.js version
 >
-> Use MercadoPago.js V2 library to update to the latest version; auto generate your business logics in your card payment form and improve compatibility with different browsers.<br><br>[Integrate Checkout API with MercadoPago.js V2](#)
+> Use MercadoPago.js V2 library to update to the latest version; auto generate your business logics in your card payment form and improve compatibility with different browsers.<br><br>[Integrate Checkout API with MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements-v2)
 
 MercadoPago.js allows you to create a payment token to send card data to your backend securely. You can use it by adding the following code to your website:
 

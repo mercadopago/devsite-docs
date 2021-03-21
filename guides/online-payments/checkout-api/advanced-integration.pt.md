@@ -392,11 +392,21 @@ E pode criar um formulário da seguinte maneira:
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Capture o código de segurança
 
+----[mla, mlm, mpe, mco, mlu, mlc]----
 > INFO
 >
 > Nova versão de MercadoPago.js
 >
-> Utilize a biblioteca MercadoPago.js V2 para criar seu formulário de cartão com a funcionalidade CardForm e autogerar a lógica de negócio necessária para fazer o pagamento.<br><br>[Integrar Checkout Transparente com MercadoPago.js V2](#).
+> Utilize a biblioteca MercadoPago.js V2 para criar seu formulário de cartão com a funcionalidade CardForm e autogerar a lógica de negócio necessária para fazer o pagamento.<br><br>[Integrar Checkout API com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/advanced-integration-v2).
+------------
+----[mlb]----
+> INFO
+>
+> Nova versão de MercadoPago.js
+>
+> Utilize a biblioteca MercadoPago.js V2 para criar seu formulário de cartão com a funcionalidade CardForm e autogerar a lógica de negócio necessária para fazer o pagamento.<br><br>[Integrar Checkout Transparente com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/advanced-integration-v2).
+------------
+
 
 O cliente precisa inserir o código se segurança em um fluxo similar ao que realizou para a [captura dos dados do cartão](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card/#bookmark_capture_os_dados_de_cartão). Deve criar um token enviando o formulário com o ID do cartão e o código de segurança.
 

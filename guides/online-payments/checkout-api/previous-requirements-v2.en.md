@@ -31,7 +31,7 @@ MercadoPago.js allows you to create a payment token to send card data to your ba
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section.](#)
+> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements)
 
 <br>
 
@@ -94,7 +94,7 @@ If you can't use our official SDKs, you will have all the information about data
 
 ## Meet the requirements for the production environment
 
-When you develop your integration, consider all the [requirements for the production environment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production). This process can ensure your customer's data security, compliance with legal standards or provisions in each country, and the best shopping experience for your customers.
+When you develop your integration, consider all the [requirements for the production environment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production-v2). This process can ensure your customer's data security, compliance with legal standards or provisions in each country, and the best shopping experience for your customers.
 
 Once your integration is ready, you just need to fill out the form for to go to production in the [Credentials section]([FAKER][CREDENTIALS][URL]) to start receiving payments.
 
@@ -108,7 +108,7 @@ Once your integration is ready, you just need to fill out the form for to go to 
 >
 > Create and configure your own payment experience.
 >
-> [Integrate Checkout API for cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card)
+> [Integrate Checkout API for cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card-v2)
 
 
 > RIGHT_BUTTON_RECOMMENDED_EN

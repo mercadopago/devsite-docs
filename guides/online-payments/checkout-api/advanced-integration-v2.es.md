@@ -416,6 +416,7 @@ El cliente tiene que ingresar el código de seguridad en un flujo similar al que
                securityCode: document.getElementById('cvv').value,
            })
 
+            // Use the received token to make a POST request to your backend
            console.log('token received: ', token.id)
        }catch(e) {
            console.error('error creating token: ', e)
@@ -423,7 +424,7 @@ El cliente tiene que ingresar el código de seguridad en un flujo similar al que
    })()
 ```
 
-> Esta documentación utiliza la nueva versión de MercadoPago.js. Para ver la versión anterior, ve a la [sección de Checkout API antigua.](#)
+> Esta documentación utiliza la nueva versión de MercadoPago.js. Para ver la versión anterior, ve a la [sección de Checkout API antigua.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/advanced-integration)
 
 <br>
 
@@ -710,7 +711,7 @@ Puedes encontrar toda la información en la [sección Devoluciones y cancelacion
 >
 > Adapta la integración a las necesidades específicas de tu negocio.
 >
-> [Otras funcionalidades](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-features)
+> [Otras funcionalidades](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-features-v2)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >

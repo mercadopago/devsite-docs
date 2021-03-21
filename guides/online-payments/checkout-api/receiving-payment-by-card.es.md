@@ -42,11 +42,20 @@ Tanto para el frontend como para el backend, recomendamos utilizar [nuestras lib
 >
 > Captura los datos de la tarjeta
 
+----[mlb]----
 > INFO
 >
 > Nueva versión MercadoPago.js
 >
-> Utiliza la librería MercadoPago.js V2 para crear tu formulario de tarjeta con la funcionalidad CardForm y autogenerar la lógica de negocio necesaria para realizar el pago.<br><br>[Integrar Checkout API con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/).
+> Utiliza la librería MercadoPago.js V2 para crear tu formulario de tarjeta con la funcionalidad CardForm y autogenerar la lógica de negocio necesaria para realizar el pago.<br><br>[Integrar Checkout Transparente con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card-v2).
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+> INFO
+>
+> Nueva versión MercadoPago.js
+>
+> Utiliza la librería MercadoPago.js V2 para crear tu formulario de tarjeta con la funcionalidad CardForm y autogenerar la lógica de negocio necesaria para realizar el pago.<br><br>[Integrar Checkout API con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card-v2).
+------------
 
 Para crear un pago es necesario hacer la captura de los datos de la tarjeta a través del navegador del comprador. Por cuestiones de seguridad, **es muy importante que los datos nunca lleguen a tus servidores**.
 

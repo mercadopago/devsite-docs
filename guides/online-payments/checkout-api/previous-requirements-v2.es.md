@@ -30,7 +30,12 @@ MercadoPago.js te permite crear un token de pago para enviar los datos de las ta
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-> Esta documentación utiliza la nueva versión de MercadoPago.js V2. Para ver la versión anterior, ve a la [sección de Checkout API antigua.](#)
+----[mla, mlm, mpe, mco, mlu, mlc]----
+> Esta documentación utiliza la nueva versión de MercadoPago.js V2. Para ver la versión anterior, ve a la [sección de Checkout API antigua.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements)
+------------
+----[mlb]----
+> Esta documentación utiliza la nueva versión de MercadoPago.js V2. Para ver la versión anterior, ve a la [sección de Checkout Transparente antigua.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements)
+------------
 
 <br>
 
@@ -93,7 +98,7 @@ Si no puedes utilizar nuestras SDK oficiales, tienes disponible toda la informac
 
 ## Cumple los requisitos para ir a producción
 
-Al realizar tu integración, es necesario que tengas en cuenta todos los [requisitos para ir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/goto-production). Con este proceso, se puede garantizar la seguridad de lo datos de tus clientes, el cumplimiento de las normas o disposiciones legales de cada país y lograr la mejor experiencia de compra para tus ventas.
+Al realizar tu integración, es necesario que tengas en cuenta todos los [requisitos para ir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/goto-production-v2). Con este proceso, se puede garantizar la seguridad de lo datos de tus clientes, el cumplimiento de las normas o disposiciones legales de cada país y lograr la mejor experiencia de compra para tus ventas.
 
 Cuando tengas lista tu integración y quieras comenzar a recibir pagos, solo tienes que completar el formulario para ir producción desde la [sección de Credenciales]([FAKER][CREDENTIALS][URL]).
 
@@ -106,7 +111,7 @@ Cuando tengas lista tu integración y quieras comenzar a recibir pagos, solo tie
 >
 > Construye y configura tu propia experiencia de pagos.
 >
-> [Integrar Checkout Transparente de Mercado Pago con tarjeta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card)
+> [Integrar Checkout Transparente de Mercado Pago con tarjeta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card-v2)
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > LEFT_BUTTON_REQUIRED_ES
@@ -115,7 +120,7 @@ Cuando tengas lista tu integración y quieras comenzar a recibir pagos, solo tie
 >
 > Construye y configura tu propia experiencia de pagos.
 >
-> [Integrar Checkout API de Mercado Pago con tarjeta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card)
+> [Integrar Checkout API de Mercado Pago con tarjeta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card-v2)
 ------------
 
 > RIGHT_BUTTON_RECOMMENDED_ES
