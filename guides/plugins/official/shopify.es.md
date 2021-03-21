@@ -81,7 +81,7 @@ Cuando hagas pruebas, revisa que el flujo de pagos funcione correctamente.
 
 Para empezar a cobrar debes [activar tus credenciales]([FAKER][CREDENTIALS][URL]).
 
-> Consulta los [requisitos para ir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/goto-production) si tienes alguna duda con el proceso.
+> Consulta los [requisitos para salir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/goto-production) si tienes alguna duda con el proceso.
 
 Al activarlas, asegúrate que las credenciales de Producción ingresadas sean las de la cuenta que reciba el dinero de las ventas. 
 

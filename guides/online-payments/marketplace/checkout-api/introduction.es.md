@@ -46,4 +46,4 @@ Caso contrario se recibirá el error de "Invalid use of live credentials".
 Tu aplicación será activada automáticamente. Lo único que debes hacer es reemplazar las claves de _sandbox_ por las productivas en tu código.
 
 
-Comenzar a crear mi _Marketplace_](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/marketplace/checkout-api/create-marketplace)
+[Comenzar a crear mi Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/marketplace/checkout-api/create-marketplace).
