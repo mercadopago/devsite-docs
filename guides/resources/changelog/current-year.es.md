@@ -5,6 +5,26 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 ---
 ## Marzo 2021
 
+### 29 de marzo
+
+> CHANGELOG
+>
+> Nueva versión MercadoPago.js
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: MercadoPago.js
+
+Lanzamos la nueva versión 2.0.0 para MercadoPago.js
+
+[Ir a documentación de MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction-v2)
+
+> GIT
+>
+> GitHub
+>
+> Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/sdk-js).
+
 ### 10 de marzo
 
 > CHANGELOG
