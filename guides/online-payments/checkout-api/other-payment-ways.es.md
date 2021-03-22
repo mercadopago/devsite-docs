@@ -3097,7 +3097,7 @@ Luego de [capturar los datos](#bookmark_captura_los_datos_para_el_pago) con el f
 
  $payment = new MercadoPago\Payment();
  $payment->transaction_amount = 100;
- $payment->description = "Título do produto";
+ $payment->description = "Título del producto";
  $payment->payment_method_id = "pix";
  $payment->payer = array(
      "email" => "test@test.com",
@@ -3127,7 +3127,7 @@ mercadopago.configurations.setAccessToken(config.access_token);
 
 var payment_data = {
   transaction_amount: 100,
-  description: 'Título do produto',
+  description: 'Título del producto',
   payment_method_id: 'pix',
   payer: {
     email: 'test@test.com',
@@ -3163,7 +3163,7 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 Payment payment = new Payment();
 
 payment.setTransactionAmount(100f)
-       .setDescription("Título do produto")
+       .setDescription("Título del producto")
        .setPaymentMethodId("pix")
        .setPayer(new Payer()
            .setEmail("test@test.com")
@@ -3189,7 +3189,7 @@ MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 
 payment_data = {
   transaction_amount: 100,
-  description: "Título do produto",
+  description: "Título del producto",
   payment_method_id: "pix",
   payer: {
     email: "test@test.com",
@@ -3223,7 +3223,7 @@ MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
 Payment payment = new Payment()
 {
     TransactionAmount = float.Parse("105"),
-    Description = "Título do produto",
+    Description = "Título del producto",
     PaymentMethodId = "pix",
     Payer = new Payer(){
         Email = "test@test.com",
@@ -3256,7 +3256,7 @@ curl -X POST \
     'https://api.mercadopago.com/v1/payments' \
     -d '{
       "transaction_amount": 100,
-      "description": "Título do produto",
+      "description": "Título del producto",
       "payment_method_id": "pix",
       "payer": {
         "email": "test@test.com",
@@ -3380,7 +3380,7 @@ Ten en cuenta que para que este paso funcione es necesario que configures tu [cl
 
  $payment = new MercadoPago\Payment();
  $payment->transaction_amount = 100;
- $payment->description = "Título do produto";
+ $payment->description = "Título del producto";
  $payment->payment_method_id = "bolbradesco";
  $payment->payer = array(
      "email" => "test@test.com",
@@ -3410,7 +3410,7 @@ mercadopago.configurations.setAccessToken(config.access_token);
 
 var payment_data = {
   transaction_amount: 100,
-  description: 'Título do produto',
+  description: 'Título del producto',
   payment_method_id: 'bolbradesco',
   payer: {
     email: 'test@test.com',
@@ -3446,7 +3446,7 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 Payment payment = new Payment();
 
 payment.setTransactionAmount(100f)
-       .setDescription("Título do produto")
+       .setDescription("Título del producto")
        .setPaymentMethodId("bolbradesco")
        .setPayer(new Payer()
            .setEmail("test@test.com")
@@ -3472,7 +3472,7 @@ MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 
 payment_data = {
   transaction_amount: 100,
-  description: "Título do produto",
+  description: "Título del producto",
   payment_method_id: "bolbradesco",
   payer: {
     email: "test@test.com",
@@ -3506,7 +3506,7 @@ MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
 Payment payment = new Payment()
 {
     TransactionAmount = float.Parse("105"),
-    Description = "Título do produto",
+    Description = "Título del producto",
     PaymentMethodId = "bolbradesco",
     Payer = new Payer(){
         Email = "test@test.com",
@@ -3539,7 +3539,7 @@ curl -X POST \
     'https://api.mercadopago.com/v1/payments' \
     -d '{
       "transaction_amount": 100,
-      "description": "Título do produto",
+      "description": "Título del producto",
       "payment_method_id": "bolbradesco",
       "payer": {
         "email": "test@test.com",
