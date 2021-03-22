@@ -12,6 +12,7 @@ paths:
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/qr-code'
+        - $ref: '#/tags/subscriptions'
       summary: Create a payment
       description: Create a payment.
       requestBody:
@@ -888,6 +889,7 @@ paths:
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/qr-code'
+        - $ref: '#/tags/subscriptions'
       summary: Get a payment
       description: Get a payment.
       parameters:
@@ -1248,6 +1250,7 @@ paths:
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/qr-code'
+        - $ref: '#/tags/subscriptions'
       summary: Update a payment
       description: Update a payment.
       parameters:
@@ -1606,6 +1609,7 @@ paths:
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/qr-code'
+        - $ref: '#/tags/subscriptions'
       summary: Search a payment
       description: Search a payment.
       parameters:
