@@ -648,6 +648,12 @@ Keep in mind that the answer will return all the payments methods. For this reas
 >
 > Data capture for payment
 
+> INFO
+>
+> New MercadoPago.js version
+>
+> Use MercadoPago.js V2 library to be updated to the latest version and to improve compatibility with different browsers.<br><br>[Integrate Checkout API with MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways)
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
 **Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
 
@@ -1037,6 +1043,12 @@ Keep in mind that the answer will return all the payments methods. For this reas
 > h2
 >
 > Data capture for payment
+
+> INFO
+>
+> New MercadoPago.js version
+>
+> Use MercadoPago.js V2 library to be updated to the latest version and to improve compatibility with different browsers.<br><br>[Integrate Checkout API with MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways)
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
 **Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
@@ -1443,6 +1455,12 @@ Keep in mind that the answer will return all the payments methods. For this reas
 > h2
 >
 > Data capture for payment
+
+> INFO
+>
+> New MercadoPago.js version
+>
+> Use MercadoPago.js V2 library to be updated to the latest version and to improve compatibility with different browsers.<br><br>[Integrate Checkout API with MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways)
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
 **Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
@@ -2048,6 +2066,12 @@ Keep in mind that the answer will return all the payments methods. For this reas
 >
 > Data capture for payment
 
+> INFO
+>
+> New MercadoPago.js version
+>
+> Use MercadoPago.js V2 library to be updated to the latest version and to improve compatibility with different browsers.<br><br>[Integrate Checkout API with MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways)
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
 **Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
 
@@ -2577,6 +2601,12 @@ Keep in mind that the answer will return all the payments methods. For this reas
 >
 > Data capture for payment
 
+> INFO
+>
+> New MercadoPago.js version
+>
+> Use MercadoPago.js V2 library to be updated to the latest version and to improve compatibility with different browsers.<br><br>[Integrate Checkout API with MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways)
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
 **Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
 
@@ -2967,6 +2997,12 @@ Keep in mind that the answer will return all the payments methods. For this reas
 > h2
 >
 > Data capture for payment
+
+> INFO
+>
+> New MercadoPago.js version
+>
+> Use MercadoPago.js V2 library to be updated to the latest version and to improve compatibility with different browsers.<br><br>[Integrate Checkout API with MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways)
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
 
