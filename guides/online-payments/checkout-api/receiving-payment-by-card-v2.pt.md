@@ -18,7 +18,7 @@ Use os [exemplos para download](#bookmark_exemplos_para_download) para conhecer 
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-pt.png)
 
-> Caso deseje realizar um fluxo de pagamento personalizado, compartilhamos todos os [métodos disponíveis para integrar de forma avançada.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card-core-methods-v2)
+> Caso deseje realizar um fluxo de pagamento personalizado, compartilhamos todos os [métodos disponíveis para integrar de forma avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card-core-methods-v2).
 
 <br>
 
@@ -63,17 +63,17 @@ Para criar um pagamento é necessário fazer a captura dos dados do cartão atra
 
 > Se ainda não possui conta para ver suas credenciais, [registre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
-> Esta documentação utiliza a nova versão da biblioteca. Para ver a versão anterior, vá para a [seção de integrar pagamentos com cartão com MercadoPago.js V1.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card)
+> Esta documentação utiliza a nova versão da biblioteca. Para ver a versão anterior, vá para a [seção de Integrar pagamentos com cartão com MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card).
 
 A informação do cartão será convertida em um token para que envie os dados aos seus servidores de modo seguro.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o formulário de pagamento
 
-Para capturar os dados do cartão, primeiro deve oferecer um formulário para carregar toda a informação. 
+Para capturar os dados do cartão, primeiro deve oferecer um formulário para carregar toda a informação.
 
-Com a **funcionalidade CardForm da biblioteca MercadoPago.js V2**, pode obter e validar todos os dados necessários, como identificar o tipo e nome do meio de pagamento, o banco emissor, o número de prestações e mais. 
+Com a **funcionalidade CardForm da biblioteca MercadoPago.js V2**, pode obter e validar todos os dados necessários, como identificar o tipo e nome do meio de pagamento, o banco emissor, o número de prestações e mais.
 
-CardForm permite você ter uma implementação segura e uma correta tokenização da informação do cartão. 
+CardForm permite você ter uma implementação segura e uma correta tokenização da informação do cartão.
 
 Utilize o formulário seguinte e adicione os estilos que desejar.
 
@@ -486,7 +486,7 @@ Por último, é importante que esteja sempre informado sobre a criação nos nov
 >
 > Checkout Transparente
 >
-> Disponibilizamos <a href="http://github.com/mercadopago/card-payment-sample" target="_blank">exemplos completos de integração</a> no GitHub para PHP ou NodeJS para que você possa fazer o download imediatamente.
+> Disponibilizamos [exemplos completos de integração](http://github.com/mercadopago/card-payment-sample) no GitHub para PHP ou NodeJS para que você possa fazer o download imediatamente.
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > GIT
@@ -502,7 +502,7 @@ Por último, é importante que esteja sempre informado sobre a criação nos nov
 >
 > Formulário de pagamento
 >
-> Se você deseja implementar seu servidor com alguma outra tecnologia, te deixamos um [exemplo completo do formulário de pagamento ](https://github.com/mercadopago/card-payment-sample/tree/master/client) no GitHub para que possa baixar.
+> Se você deseja implementar seu servidor com alguma outra tecnologia, te deixamos um [exemplo completo do formulário de pagamento](https://github.com/mercadopago/card-payment-sample/tree/master/client) no GitHub para que possa baixar.
 
 ---
 ### Próximos passos
