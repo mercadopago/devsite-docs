@@ -47,14 +47,14 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 >
 > Nova versão de MercadoPago.js
 >
-> Utilize a biblioteca MercadoPago.js V2 para criar seu formulário de cartão com a funcionalidade CardForm e autogerar a lógica de negócio necessária para fazer o pagamento.<br><br>[Integrar Checkout Transparente com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card-v2).
+> Utilize a biblioteca MercadoPago.js V2 para criar seu formulário de cartão com a funcionalidade CardForm e autogerar a lógica de negócio necessária para fazer o pagamento.<br><br>[Integrar Checkout Transparente com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card-v2)
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > INFO
 >
 > Nova versão de MercadoPago.js
 >
-> Utilize a biblioteca MercadoPago.js V2 para criar seu formulário de cartão com a funcionalidade CardForm e autogerar a lógica de negócio necessária para fazer o pagamento.<br><br>[Integrar Checkout API com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card-v2).
+> Utilize a biblioteca MercadoPago.js V2 para criar seu formulário de cartão com a funcionalidade CardForm e autogerar a lógica de negócio necessária para fazer o pagamento.<br><br>[Integrar Checkout API com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card-v2)
 ------------
 
 
