@@ -974,8 +974,9 @@ MercadoPago.SDK.CorporationId = "CORPORATION_ID";
 Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION_ID, INTEGRATOR_ID y PLATFORM_ID.
 ===
 import mercadopago
+from mercadopago.config import RequestOptions
 
-request_options = mercadopago.RequestOptions(
+request_options = RequestOptions(
     corporation_id="CORPORATION_ID",
     integrator_id="INTEGRATOR_ID",
     platform_id="PLATFORM_ID"
