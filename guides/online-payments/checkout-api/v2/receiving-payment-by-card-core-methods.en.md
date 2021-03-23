@@ -6,7 +6,9 @@ Use our [sample projects](#bookmark_sample_projects) for a complete integration.
 
 ## How does it work?
 
-![API-integration-flowchart](/images/api/api-integration-flowchart-en.png)
+![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-en.png)
+
+> For an automated payment flow, [use MercadoPago.js V2 CardForm functionality](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/receiving-payment-by-card).
 
 <br>
 
@@ -17,7 +19,7 @@ With our Mercado Pago Checkout API, you should take into account two aspects: da
 1. First, you need a frontend to collect card data and generate a security token with the information required to create a payment.
 2. Then, you need a backend that takes the generated token and payment data, such as amount and item, to confirm and make a payment.
 
-Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements/#bookmark_always_use_our_libraries) to collect user sensitive data securely.
+Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
 
 > For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
 
@@ -29,115 +31,78 @@ Both for frontend and backend, we recommend [our libraries](https://www.mercadop
 >
 > Card data capture
 
-> INFO
->
-> New MercadoPago.js version
->
-> Use MercadoPago.js V2 library to create your card form with CardForm functionality, which includes all business logic needed to make the payment.<br><br>[Integrate Checkout API with MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/receiving-payment-by-card)
-
 To create a payment, you should capture card data through the buyer's browser. For security reasons, **never store data in your servers**.
+
+> NOTE
+>
+> Note
+>
+> This documentation uses the new library version. To see the previous version, go to [integrate payment for cards with MercadoPago.js V1 section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Include MercadoPago.js library
 
 **Use our official library to access Mercado Pago API** from your application and collect data securely.
 
 ```html
-<script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+<script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
 Card information will be turned into a token so that you can send data to your servers securely.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
 
-To capture sensitive data from your customer's cards, **please use our form with the corresponding attributes,** which ensures information security and correct token generation. For example, you should observe `data-checkout` attributes and avoid putting the `name` attribute in fields containing sensitive data. This way your servers will never store data.
+To capture sensitive data from your customer's cards, please use our form with the corresponding attributes to ensure information security and correct token generation. For example, don't use the `name` attribute in fields containing sensitive data. This way your servers will never store these data.
 
 You can easily include anything you need, change the suggested `label` attribute, and add your own style.
 
-The following example assumes that `transactionAmount` and `description` data were obtained in a previous step in which customers selected the product or service to be paid.
+The following example assumes that `transactionAmount` and `description` data were obtained in the previous step in which customers selected the product or service to be paid.
 
 ```html
-<form action="/process_payment" method="post" id="paymentForm">
-   <h3>Buyer Details</h3>
-     <div>
-       <div>
-         <label for="email">E-mail</label>
-         <input id="email" name="email" type="text" value="test@test.com"/>
-       </div>----[mla, mlb, mlu, mlc, mpe, mco]----
-       <div>
-         <label for="docType">Document Type</label>
-         <select id="docType" name="docType" data-checkout="docType" type="text"></select>
-       </div>------------
-       <div>
-         <label for="docNumber">Document Number</label>
-         <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
-       </div>
-     </div>
-   <h3>Card Details</h3>
-     <div>
-       <div>
-         <label for="cardholderName">Card Holder</label>
-         <input id="cardholderName" data-checkout="cardholderName" type="text">
-       </div>
-       <div>
-         <label for="">Expiration Date</label>
-         <div>
-           <input type="text" placeholder="MM" id="cardExpirationMonth" data-checkout="cardExpirationMonth"
-             onselectstart="return false" onpaste="return false"
-             oncopy="return false" oncut="return false"
-             ondrag="return false" ondrop="return false" autocomplete=off>
-           <span class="date-separator">/</span>
-           <input type="text" placeholder="YY" id="cardExpirationYear" data-checkout="cardExpirationYear"
-             onselectstart="return false" onpaste="return false"
-             oncopy="return false" oncut="return false"
-             ondrag="return false" ondrop="return false" autocomplete=off>
-         </div>
-       </div>
-       <div>
-         <label for="cardNumber">Card Number</label>
-         <input type="text" id="cardNumber" data-checkout="cardNumber"
-           onselectstart="return false" onpaste="return false"
-           oncopy="return false" oncut="return false"
-           ondrag="return false" ondrop="return false" autocomplete=off>
-       </div>
-       <div>
-         <label for="securityCode">CVV</label>
-         <input id="securityCode" data-checkout="securityCode" type="text"
-           onselectstart="return false" onpaste="return false"
-           oncopy="return false" oncut="return false"
-           ondrag="return false" ondrop="return false" autocomplete=off>
-       </div>
-       <div id="issuerInput">
-         <label for="issuer">Issuer</label>
-         <select id="issuer" name="issuer" data-checkout="issuer"></select>
-       </div>
-       <div>
-         <label for="installments">Installments</label>
-         <select type="text" id="installments" name="installments"></select>
-       </div>
-       <div>
-         <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
-         <input type="hidden" name="paymentMethodId" id="paymentMethodId" />
-         <input type="hidden" name="description" id="description" />
-         <br>
-         <button type="submit">Pay</button>
-         <br>
-       </div>
-   </div>
- </form>
+<form id="form-checkout">
+       <input type="text" id="form-checkout__cardNumber" placeholder="Card number" />
+       <input type="text" id="form-checkout__cardExpirationMonth" placeholder="Expiration month (MM)" />
+       <input type="text" id="form-checkout__cardExpirationYear" placeholder="Expiration year (YY or YYYY)" />
+       <input type="text" name="cardholderName" id="form-checkout__cardholderName" placeholder="Cardholder name"/>
+       <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail" placeholder="E-mail" />
+       <input type="text" id="form-checkout__securityCode" placeholder="Security code"/>
+       <select name="issuer" id="form-checkout__issuer">
+           <option value="" disabled selected>Issuer</option>
+       </select>
+       <select name="identificationType" id="form-checkout__identificationType">
+           <option value="" disabled selected>Document Type</option>
+       </select>
+       <input type="text" name="identificationNumber" id="form-checkout__identificationNumber" placeholder="Número de documento" />
+       <select name="installments" id="form-checkout__installments">
+           <option value="" disabled selected>Choose the amount of installments</option>
+       </select>
+       <input id="MPHiddenInputToken" name="MPHiddenInputToken" type="hidden" />
+       <input id="MPHiddenInputPaymentMethod" name="MPHiddenInputPaymentMethod" type="hidden" />
+       <input id="transactionAmmount" name="transactionAmmount" type="hidden" value="100"/>
+       <input id="description" name="description" type="hidden" value="product description" />
+       <button type="submit" id="form-checkout__submit">Pay</button>
+   </form>
 ```
 
 > NOTE
 >
 > Note
 >
-> Note that it is necessary that the form be found before all the following steps for its correct operation.
+> Consider that the form should be available before all the following steps for correct operation.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure your public key
 
 Add your [public key]([FAKER][CREDENTIALS][URL]) like this:
 
 ```javascript
-window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
+<script>
+const mp = new MercadoPago('PUBLIC_KEY');
+
+// Add Step #getIdentificationTypes
+// Add Step #getPaymentMethods
+// Add Step #getIssuers
+// Add Step #getInstallments
+// Add Step #createCardToken
+</script>
 ```
 
 >  If you still don't have an account to check your credentials, [sign in](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
@@ -150,10 +115,45 @@ window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
 
 Document type is one of the mandatory fields. Use the document list to fill out your data.
 
-When you call the next function, MercadoPago.js will automatically fill out the available options, including the _select_ type element with `id = docType` in the form:
+Including `select` type element with id `form-checkout__docType` contained in the form, you can automatically fill out the available choices when you call this function:
 
 ```javascript
-window.Mercadopago.getIdentificationTypes();
+
+// Step #getIdentificationTypes
+
+// Helper function to append option elements to a select input
+function createSelectOptions(elem, options, labelsAndKeys = { label : "name", value : "id"}){
+   const {label, value} = labelsAndKeys;
+
+   elem.options.length = 0;
+
+   const tempOptions = document.createDocumentFragment();
+
+   options.forEach( option => {
+       const optValue = option[value];
+       const optLabel = option[label];
+
+       const opt = document.createElement('option');
+       opt.value = optValue;
+       opt.textContent = optLabel;
+
+       tempOptions.appendChild(opt);
+   });
+
+   elem.appendChild(tempOptions);
+}
+
+// Get Identification Types
+(async function getIdentificationTypes () {
+   try {
+       const identificationTypes = await mp.getIdentificationTypes();
+       const docTypeElement = document.getElementById('form-checkout__identificationType');
+
+       createSelectOptions(docTypeElement, identificationTypes)
+   }catch(e) {
+       return console.error('Error getting identificationTypes: ', e);
+   }
+})()
 ```
 
 > Find more information in the [Document type section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/identification-types).
@@ -165,29 +165,38 @@ window.Mercadopago.getIdentificationTypes();
 Avoid mistakes and offer the correct available installments by validating your customers' data as they fill it out. Use the code in the following example to identify payment method with the first 6 digits of the card.
 
 ```javascript
-document.getElementById('cardNumber').addEventListener('change', guessPaymentMethod);
+// Step #getPaymentMethods
+const cardNumberElement = document.getElementById('form-checkout__cardNumber');
 
-function guessPaymentMethod(event) {
-   let cardnumber = document.getElementById("cardNumber").value;
-   if (cardnumber.length >= 6) {
-       let bin = cardnumber.substring(0,6);
-       window.Mercadopago.getPaymentMethod({
-           "bin": bin
-       }, setPaymentMethod);
+cardNumberElement.addEventListener('keyup', async () => {
+   try {
+      const paymentMethodElement = document.getElementById('MPHiddenInputPaymentMethod');
+       let cardNumber = cardNumberElement.value;
+
+       if (cardNumber.length < 6 && paymentMethodElement.value) return paymentMethodElement.value = "";
+
+       if (cardNumber.length >= 6 && !paymentMethodElement.value) {
+           let bin = cardNumber.substring(0,6);
+           const paymentMethods = await mp.getPaymentMethods({'bin': bin});
+
+           const { id: paymentMethodID, additional_info_needed, issuer } = paymentMethods.results[0];
+
+           // Assign payment method ID to a hidden input.
+           paymentMethodElement.value = paymentMethodID;
+
+           // If 'issuer_id' is needed, we fetch all issuers (getIssuers()) from bin.
+           // Otherwise we just create an option with the unique issuer and call getInstallments().
+           additional_info_needed.includes('issuer_id') ? getIssuers() : (() => {
+               const issuerElement = document.getElementById('form-checkout__issuer');
+               createSelectOptions(issuerElement, [issuer]);
+  
+               getInstallments();
+           })()
+       }
+   }catch(e) {
+       console.error('error getting payment methods: ', e)
    }
-};
-
-function setPaymentMethod(status, response) {
-   if (status == 200) {
-       let paymentMethod = response[0];
-       document.getElementById('paymentMethodId').value = paymentMethod.id;
-
-       getIssuers(paymentMethod.id);
-   } else {
-       alert(`payment method info error: ${response}`);
-   }
-}
-
+});
 ```
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain issuer
@@ -197,32 +206,23 @@ When completing the form, it is important to identify card's issuing bank to avo
 Add the following code to obtain the `issuer_id`:
 
 ```javascript
-function getIssuers(paymentMethodId) {
-   window.Mercadopago.getIssuers(
-       paymentMethodId,
-       setIssuers
-   );
-}
+// Step #getIssuers
 
-function setIssuers(status, response) {
-   if (status == 200) {
-       let issuerSelect = document.getElementById('issuer');
-       response.forEach( issuer => {
-           let opt = document.createElement('option');
-           opt.text = issuer.name;
-           opt.value = issuer.id;
-           issuerSelect.appendChild(opt);
-       });
+const getIssuers = async () => {
+   try {
+       const cardNumber = document.getElementById('form-checkout__cardNumber').value;
+       const paymentMethodId = document.getElementById('MPHiddenInputPaymentMethod').value;
+       const issuerElement = document.getElementById('form-checkout__issuer');
 
-       getInstallments(
-           document.getElementById('paymentMethodId').value,
-           document.getElementById('transactionAmount').value,
-           issuerSelect.value
-       );
-   } else {
-       alert(`issuers method info error: ${response}`);
+       const issuers = await mp.getIssuers({paymentMethodId: paymentMethodID, bin: cardNumber.slice(0,6)});
+
+       createSelectOptions(issuerElement, issuers);
+
+       getInstallments();
+   }catch(e) {
+       console.error('error getting issuers: ', e)
    }
-}
+};
 ```
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get number of installments
@@ -230,25 +230,21 @@ function setIssuers(status, response) {
 The number of installments is also a mandatory field for credit card payments. You can use the function in the following example to fill out the _select_ type suggested field called `installments` and get the available installments.
 
 ```javascript
-function getInstallments(paymentMethodId, transactionAmount, issuerId){
-   window.Mercadopago.getInstallments({
-       "payment_method_id": paymentMethodId,
-       "amount": parseFloat(transactionAmount),
-       "issuer_id": parseInt(issuerId)
-   }, setInstallments);
-}
+// Step #getInstallments
+const getInstallments = async () => {
+   try {
+       const installmentsElement = document.getElementById('form-checkout__installments')
+       const cardNumber = document.getElementById('form-checkout__cardNumber').value; 
 
-function setInstallments(status, response){
-   if (status == 200) {
-       document.getElementById('installments').options.length = 0;
-       response[0].payer_costs.forEach( payerCost => {
-           let opt = document.createElement('option');
-           opt.text = payerCost.recommended_message;
-           opt.value = payerCost.installments;
-           document.getElementById('installments').appendChild(opt);
+       const installments = await mp.getInstallments({
+           amount: document.getElementById('transactionAmmount').value,
+           bin: cardNumber.slice(0,6),
+           paymentTypeId: 'credit_card'
        });
-   } else {
-       alert(`installments method info error: ${response}`);
+
+       createSelectOptions(installmentsElement, installments[0].payer_costs, {label: 'recommended_message', value: 'installments'})
+   }catch(e) {
+       console.error('error getting installments: ', e)
    }
 }
 ```
@@ -258,34 +254,41 @@ function setInstallments(status, response){
 Before payment submission, you must create a token containing all card information securely. You should generate it as follows:
 
 ```javascript
-doSubmit = false;
-document.getElementById('paymentForm').addEventListener('submit', getCardToken);
-function getCardToken(event){
-   event.preventDefault();
-   if(!doSubmit){
-       let $form = document.getElementById('paymentForm');
-       window.Mercadopago.createToken($form, setCardTokenAndPay);
-       return false;
-   }
-};
+// Step #createCardToken
+const formElement = document.getElementById('form-checkout');
+formElement.addEventListener('submit', e => createCardToken(e));
 
-function setCardTokenAndPay(status, response) {
-   if (status == 200 || status == 201) {
-       let form = document.getElementById('paymentForm');
-       let card = document.createElement('input');
-       card.setAttribute('name', 'token');
-       card.setAttribute('type', 'hidden');
-       card.setAttribute('value', response.id);
-       form.appendChild(card);
-       doSubmit=true;
-       form.submit();
-   } else {
-       alert("Verify filled data!\n"+JSON.stringify(response, null, 4));
+const createCardToken = async (event) => {
+   try {
+       const tokenElement = document.getElementById('MPHiddenInputToken');
+
+       if (!tokenElement.value) {
+           event.preventDefault();
+
+           const token = await mp.createCardToken({
+               cardNumber: document.getElementById('form-checkout__cardNumber').value,
+               cardholderName: document.getElementById('form-checkout__cardholderName').value,
+               identificationType: document.getElementById('form-checkout__identificationType').value,
+               identificationNumber: document.getElementById('form-checkout__identificationNumber').value,
+               securityCode: document.getElementById('form-checkout__securityCode').value,
+               cardExpirationMonth: document.getElementById('form-checkout__cardExpirationMonth').value,
+               cardExpirationYear: document.getElementById('form-checkout__cardExpirationYear').value
+           });
+
+           tokenElement.value = token.id;
+
+           formElement.requestSubmit();
+       }
+   }catch(e) {
+       console.error('error creating card token: ', e)
    }
-};
+}
 ```
 
-The `createToken` method will return a `card_token` with the secure card display. The second field of the `createToken` method is the `callback` function, which will process the response (in this case, we use the `setCardTokenAndPay` function). We will take and save the response ID in a hidden attribute called `token` and then send the form to your servers.
+The `createCardToken` method will return a token with the secure card display.
+
+We will take and save the response token ID in a hidden attribute called `MPHiddenInputToken` and then send the form to your servers.
+
 
 > WARNING
 >
@@ -308,7 +311,7 @@ In the above example, after the `submit` action, your backend should display a `
 
 Once the request –with all the collected information– is in your backend, it should be submitted to Mercado Pago through our APIs.  The minimum mandatory fields to submit are: `token`, `transaction_amount`, `installments`, `payment_method_id` and `payer.email`.
 
-For this to work, you should configure your [private key]([FAKER][CREDENTIALS][URL]). Also, to interact with our APIs, you should use [Mercado Pago official SDK](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements/#bookmark__install_mercado_pago_sdk).
+For this to work, you should configure your [private key]([FAKER][CREDENTIALS][URL]). Also, to interact with our APIs, you should use [Mercado Pago official SDK](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/previous-requirements#bookmark__install_mercado_pago_sdk).
 
 [[[
 ```php
@@ -526,7 +529,7 @@ For improved payment approval, you need to correctly inform results to your cust
 
 This will prevent rejections and chargebacks in the case of already approved transactions.  For example, this allows you to correct data upload mistakes or change payment methods.
 
-We recommend using [response handling](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses) and the suggested communication in each case.
+We recommend using [response handling](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/handling-responses) and the suggested communication in each case.
 
 > NOTE
 >
@@ -565,7 +568,7 @@ Finally, you always need to be notified of new payments and status updates.  For
 >
 > Check that everything works in your integration with test users.
 >
-> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/testing)
+> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/testing)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -573,4 +576,4 @@ Finally, you always need to be notified of new payments and status updates.  For
 >
 > Learn about all the available payment options and how to offer them.
 >
-> [Integrate other payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways)
+> [Integrate other payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/other-payment-ways)
