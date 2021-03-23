@@ -10,7 +10,6 @@ paths:
       tags:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/marketplace'
-        - $ref: '#/tags/payment-link'
         - $ref: '#/tags/subscriptions'
       summary: List the payment method's
       description: List the payment method's.
