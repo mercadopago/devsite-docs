@@ -424,7 +424,7 @@ The customer needs to enter the security code in a flow similar to [card data ca
    })()
 ```
 
-> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/advanced-integration)
+> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/advanced-integration).
 
 <br>
 

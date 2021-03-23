@@ -8,7 +8,7 @@ Use our [sample projects](#bookmark_sample_projects) for a complete integration.
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-en.png)
 
-> If you want to make a customized payment flow, we share all the [methods available for advanced integration.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card-core-methods-v2)
+> If you want to make a customized payment flow, we share all the [methods available for advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card-core-methods-v2).
 
 <br>
 
@@ -31,12 +31,6 @@ Both for frontend and backend, we recommend [our libraries](https://www.mercadop
 >
 > Card data capture
 
-> INFO
->
-> New MercadoPago.js version
->
-> Use MercadoPago.js V2 library to create your card form with CardForm functionality, which includes all business logic needed to make the payment.<br><br>[Integrate Checkout API with MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/).
-
 To create a payment, you should capture card data through the buyer's browser. For security reasons, **never store data in your servers**.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Include and configure MercadoPago.js library
@@ -58,7 +52,7 @@ Card information will be turned into a token so that you can send data to your s
 
 >  If you still don't have an account to check your credentials, [sign in](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
-> This documentation uses the new library version. To see the previous version, go to [integrate credit card payment with MercadoPago.js V1 section.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card)
+> This documentation uses the new library version. To see the previous version, go to [integrate credit card payment with MercadoPago.js V1 section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
 
@@ -92,7 +86,7 @@ Use the following form and add the styles of your choice.
 > 
 > Technical reference
 > 
-> Find information about the different attributes in the [technical references.](https://github.com/mercadopago/sdk-js).
+> Find information about the different attributes in the [technical references](https://github.com/mercadopago/sdk-js).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Integrate the form with MercadoPago.js library
 
@@ -209,9 +203,9 @@ The callbacks option accepts different functions that are activated in different
 > 
 > Technical reference
 > 
-> Learn more information about callbacks in the [technical references.](https://github.com/mercadopago/sdk-js).
+> Learn more information about callbacks in the [technical references](https://github.com/mercadopago/sdk-js).
 
-Before sending the form, a token is generated with the card secure display, which is kept in a hidden input called `MPHiddenInputToken,` to then send the form to your servers.
+Before sending the form, a token is generated with the card secure display, which is kept in a hidden `input` called `MPHiddenInputToken,` to then send the form to your servers.
 
 > WARNING
 >
@@ -230,7 +224,7 @@ Before sending the form, a token is generated with the card secure display, whic
 
 To continue with the Mercado Pago payment process, your backend should know how to receive form information with the generated token and the filled out data.
 
-In the above example, after the 'submit' action, your backend should make available a `/process_payment` endpoint, to receive all the data.
+In the above example, after the submit action, your backend should make available a `/process_payment` endpoint, to receive all the data.
 
 Once the request –with all the collected information– is in your backend, it should be submitted to Mercado Pago through our APIs.  The minimum mandatory fields to submit are: `token`, `transaction_amount`, `installments`, `payment_method_id` and `payer.email`.
 
@@ -475,6 +469,7 @@ Finally, you always need to be notified of new payments and status updates.  For
 > Use our [complete integration examples](http://github.com/mercadopago/card-payment-sample) on GitHub in PHP or NodeJS to download instantly.
 
 <span></span>
+
 > GIT
 >
 > Payment form

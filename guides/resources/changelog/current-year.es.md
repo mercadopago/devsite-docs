@@ -9,15 +9,21 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 > CHANGELOG
 >
-> Nueva versión MercadoPago.js
+> Nueva versión de MercadoPago.js
 >
 > NEW_VERSION: NUEVA VERSIÓN
 >
-> PRODUCT: MercadoPago.js
+> PRODUCT: MERCADOPAGO.JS
 
-Lanzamos la nueva versión 2.0.0 para MercadoPago.js
+----[mlb]----
+Integra Checkout Transparente más simple y rápido con la nueva funcionalidad CardForm, que te permite autogenerar la lógica de negocio en tu formulario de pagos con tarjeta y mejorar la compatibilidad con los distintos navegadores.
+------------
 
-[Ir a documentación de MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction-v2)
+----[mla, mlm, mco, mlc, mlu]----
+Integra Checkout API más simple y rápido con la nueva funcionalidad CardForm, que te permite autogenerar la lógica de negocio en tu formulario de pagos con tarjeta y mejorar la compatibilidad con los distintos navegadores.
+------------
+
+[Ir a documentación de MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card-v2)
 
 > GIT
 >

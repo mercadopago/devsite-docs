@@ -18,7 +18,7 @@ Use os [exemplos para download](#bookmark_exemplos_para_download) para conhecer 
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-pt.png)
 
-> Caso deseje realizar um fluxo de pagamento automatizado, recomendamos você utilizar a [funcionalidade CardForm de MercadoPago.js V2.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card-v2)
+> Caso deseje realizar um fluxo de pagamento automatizado, recomendamos você [utilizar a funcionalidade CardForm de MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card-v2).
 
 <br>
 
@@ -32,7 +32,7 @@ Ao usar nosso Checkout API do Mercado Pago, é importante ter em conta duas inst
 1. Primeiro, é preciso um frontend para coletar os dados do cartão e gerar um token de segurança com a informação para poder criar o pagamento.
 2. Segundo, um backend que tome o token gerado e os dados do pagamento, como por exemplo o valor e o ítem, e possa confirmar e efetuar o pagamento.
 
-Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements-v2/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
+Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/previous-requirements-v2/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
 
 > Obtenha mais informações nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference).
 
@@ -50,7 +50,7 @@ Para criar um pagamento é necessário fazer a captura dos dados do cartão atra
 >
 > Nota
 >
-> Esta documentação utiliza a nova versão da biblioteca. Para ver a versão anterior, vá para a [seção de integrar pagamentos com cartão com MercadoPago.js V1.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card)
+> Esta documentação utiliza a nova versão da biblioteca. Para ver a versão anterior, vá para a [seção de integrar pagamentos com cartão com MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Inclua a biblioteca MercadoPago.js
 
@@ -303,7 +303,7 @@ const createCardToken = async (event) => {
 
 O método `createCardToken` retornará um token com a representação segura do cartão.
 
-Tomaremos o ID (token) da resposta e a salvaremos em um atributo oculto que denominaremos `MPHiddenInputToken`, para depois enviar o formulário para seus servidores.
+Tomaremos o token ID da resposta e a salvaremos em um atributo oculto que denominaremos `MPHiddenInputToken`, para depois enviar o formulário para seus servidores.
 
 
 > WARNING
@@ -569,7 +569,7 @@ Por último, é importante que esteja sempre informado sobre a criação nos nov
 >
 > Checkout Transparente
 >
-> Disponibilizamos <a href="http://github.com/mercadopago/card-payment-sample" target="_blank">exemplos completos de integração</a> no GitHub para PHP ou NodeJS para que você possa fazer o download imediatamente.
+> Disponibilizamos [exemplos completos de integração](http://github.com/mercadopago/card-payment-sample) no GitHub para PHP ou NodeJS para que você possa fazer o download imediatamente.
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > GIT
@@ -585,7 +585,7 @@ Por último, é importante que esteja sempre informado sobre a criação nos nov
 >
 > Formulário de pagamento
 >
-> Se você deseja implementar seu servidor com alguma outra tecnologia, te deixamos um [exemplo completo do formulário de pagamento ](https://github.com/mercadopago/card-payment-sample/tree/master/client) no GitHub para que possa baixar.
+> Se você deseja implementar seu servidor com alguma outra tecnologia, te deixamos um [exemplo completo do formulário de pagamento](https://github.com/mercadopago/card-payment-sample/tree/master/client) no GitHub para que possa baixar.
 
 ---
 ### Próximos passos
@@ -596,7 +596,7 @@ Por último, é importante que esteja sempre informado sobre a criação nos nov
 >
 > Revise que esteja tudo bem com sua integração com os usuários de teste.
 >
-> [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/testing)
+> [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/testing-v2)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >

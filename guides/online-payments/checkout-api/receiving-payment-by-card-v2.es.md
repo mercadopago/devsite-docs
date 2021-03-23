@@ -18,7 +18,7 @@ Usa los [ejemplos descargables](#bookmark_ejemplos_descargables) para conocer la
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-es.png)
 
-> Si quieres realizar un flujo personalizado del pago, te compartimos todos los [métodos disponibles para integrar de forma avanzada.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card-core-methods-v2)
+> Si quieres realizar un flujo personalizado del pago, te compartimos todos los [métodos disponibles para integrar de forma avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card-core-methods-v2).
 
 ----[mlb]----
 Al usar nuestro Checkout Transparente de Mercado Pago, es importante tener en cuenta dos instancias: la de la captura de datos y la del envío de confirmación del pago.
@@ -44,7 +44,7 @@ Tanto para el frontend como para el backend, recomendamos utilizar [nuestras lib
 
 Para crear un pago es necesario hacer la captura de los datos de la tarjeta a través del navegador del comprador. Por cuestiones de seguridad, **es muy importante que los datos nunca lleguen a tus servidores**.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Incluye la librería MercadoPago.js
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Incluye y configura la librería MercadoPago.js
 
 **Usa nuestra librería oficial para acceder a la API de Mercado Pago** desde tu frontend para recolectar los datos de forma segura y configura tu [clave pública]([FAKER][CREDENTIALS][URL]) de la siguiente manera:
 
@@ -63,13 +63,16 @@ La información de la tarjeta será convertida en un token para que envíes los 
 
 > Si aún no tienes cuenta para ver tus credenciales, [regístrate](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
-> Esta documentación utiliza la nueva versión de la librería. Para ver la versión anterior, ve a la [sección de Integrar pagos con tarjeta con MercadoPago.js V1.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card)
+> Esta documentación utiliza la nueva versión de la librería. Para ver la versión anterior, ve a la [sección de Integrar pagos con tarjeta con MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Agrega el formulario de pago
 
-Para capturar los datos de la tarjeta, primero tienes que brindar un formulario para cargar toda la información.<br>
-Con la funcionalidad CardForm de la librería MercadoPago.js V2, puedes obtener y validar todo los datos necesarios como identificar el tipo y nombre del medio de pago, el banco emisor, la cantidad de cuotas y más. <br>
-CardForm te permite tener una implementación segura y una correcta tokenización de la información de la tarjeta. <br>
+Para capturar los datos de la tarjeta, primero tienes que brindar un formulario para cargar toda la información.
+
+Con la funcionalidad CardForm de la librería MercadoPago.js V2, puedes obtener y validar todo los datos necesarios como identificar el tipo y nombre del medio de pago, el banco emisor, la cantidad de cuotas y más.
+
+CardForm te permite tener una implementación segura y una correcta tokenización de la información de la tarjeta.
+
 Utiliza el siguiente formulario y agrega los estilos que desees.
 
 ```html
@@ -474,7 +477,7 @@ Por último, es importante que estés siempre informado sobre la creación de nu
 >
 > Checkout Transparente
 >
-> Te dejamos <a href="http://github.com/mercadopago/card-payment-sample" target="_blank">ejemplos completos de integración</a> en GitHub para PHP o NodeJS para que puedas descargar al instante.
+> Te dejamos [ejemplos completos de integración](http://github.com/mercadopago/card-payment-sample) en GitHub para PHP o NodeJS para que puedas descargar al instante.
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > GIT

@@ -47,14 +47,14 @@ Tanto para el frontend como para el backend, recomendamos utilizar [nuestras lib
 >
 > Nueva versión MercadoPago.js
 >
-> Utiliza la librería MercadoPago.js V2 para crear tu formulario de tarjeta con la funcionalidad CardForm y autogenerar la lógica de negocio necesaria para realizar el pago.<br><br>[Integrar Checkout Transparente con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card-v2).
+> Utiliza la librería MercadoPago.js V2 para crear tu formulario de tarjeta con la funcionalidad CardForm y autogenerar la lógica de negocio necesaria para realizar el pago.<br><br>[Integrar Checkout Transparente con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card-v2)
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > INFO
 >
 > Nueva versión MercadoPago.js
 >
-> Utiliza la librería MercadoPago.js V2 para crear tu formulario de tarjeta con la funcionalidad CardForm y autogenerar la lógica de negocio necesaria para realizar el pago.<br><br>[Integrar Checkout API con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card-v2).
+> Utiliza la librería MercadoPago.js V2 para crear tu formulario de tarjeta con la funcionalidad CardForm y autogenerar la lógica de negocio necesaria para realizar el pago.<br><br>[Integrar Checkout API con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card-v2)
 ------------
 
 Para crear un pago es necesario hacer la captura de los datos de la tarjeta a través del navegador del comprador. Por cuestiones de seguridad, **es muy importante que los datos nunca lleguen a tus servidores**.
@@ -568,7 +568,7 @@ Por último, es importante que estés siempre informado sobre la creación de nu
 >
 > Checkout Transparente
 >
-> Te dejamos <a href="http://github.com/mercadopago/card-payment-sample" target="_blank">ejemplos completos de integración</a> en GitHub para PHP o NodeJS para que puedas descargar al instante.
+> Te dejamos [ejemplos completos de integración](http://github.com/mercadopago/card-payment-sample) en GitHub para PHP o NodeJS para que puedas descargar al instante.
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > GIT

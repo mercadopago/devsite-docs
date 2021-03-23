@@ -16,7 +16,7 @@ Utilize cartões e usuários de teste para verificar que seus pagamentos sejam c
 > SERVER_SIDE
 >
 > h2
-> 
+>
 > Como criar usuários
 
 Para começar, é necessário que tenha no mínimo dois usuários de teste: um comprador e um vendedor.
@@ -152,7 +152,7 @@ Para **testar resultados diferentes de pagamento**, complete o dado que queira n
 
 ## Começar a receber pagamentos
 
-Para começar a cobrar, você deve cumprir os [requisitos para ir a produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/goto-production-v2) e [ativar suas credenciais]([FAKER][CREDENTIALS][URL]).
+Para começar a cobrar, você deve cumprir os [requisitos para entrar em produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/goto-production-v2) e [ativar suas credenciais]([FAKER][CREDENTIALS][URL]).
 
 Antes de ativá-las, certifique-se de que as credenciais na sua integração sejam as da conta que recebe o dinheiro das vendas.<br/>
 

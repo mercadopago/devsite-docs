@@ -13,11 +13,11 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 >
 > NEW_VERSION: NEW VERSION
 >
-> PRODUCT: MercadoPago.js
+> PRODUCT: MERCADOPAGO.JS
 
-We have released the new version 2.0.0 for MercadoPago.js
+Integrate Checkout API simpler and faster with the new CardForm functionality, which allows you to auto generate your business logics in your card payment form and improve compatibility with different browsers.
 
-[Go to MercadoPago.js V2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction-v2)
+[Go to MercadoPago.js V2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card-v2)
 
 > GIT
 >
