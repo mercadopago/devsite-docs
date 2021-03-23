@@ -31,7 +31,7 @@ MercadoPago.js allows you to create a payment token to send card data to your ba
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements)
+> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements).
 
 <br>
 

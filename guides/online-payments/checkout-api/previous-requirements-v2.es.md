@@ -31,10 +31,10 @@ MercadoPago.js te permite crear un token de pago para enviar los datos de las ta
 ```
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-> Esta documentación utiliza la nueva versión de MercadoPago.js V2. Para ver la versión anterior, ve a la [sección de Checkout API antigua.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements)
+> Esta documentación utiliza la nueva versión de MercadoPago.js V2. Para ver la versión anterior, ve a la [sección de Checkout API antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements).
 ------------
 ----[mlb]----
-> Esta documentación utiliza la nueva versión de MercadoPago.js V2. Para ver la versión anterior, ve a la [sección de Checkout Transparente antigua.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements)
+> Esta documentación utiliza la nueva versión de MercadoPago.js V2. Para ver la versión anterior, ve a la [sección de Checkout Transparente antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements).
 ------------
 
 <br>

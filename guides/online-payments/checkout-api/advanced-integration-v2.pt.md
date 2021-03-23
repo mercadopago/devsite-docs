@@ -425,7 +425,12 @@ O cliente precisa inserir o código se segurança em um fluxo similar ao que rea
    })()
 ```
 
-> Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout Transparente anterior.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/advanced-integration)
+----[mla, mlm, mpe, mco, mlu, mlc]----
+> Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout API anterior](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/advanced-integration).
+------------
+----[mlb]----
+> Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout Transparente anterior](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/advanced-integration).
+------------
 
 <br>
 
