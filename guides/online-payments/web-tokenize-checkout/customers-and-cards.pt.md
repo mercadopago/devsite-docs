@@ -100,9 +100,9 @@ customer = customer_response[:response]
 
 card_data = {
   token: '9b2d63e00d66a8c721607214cedaecda',
-  customer_id: customer['id'],
+  customer_id: customer['id']
 }
-card_response = sdk.card.create(card_data);
+card_response = sdk.card.create(card_data)
 card = card_response[:response]
 
 ```
@@ -335,9 +335,9 @@ customer = customer_response[:response]
 
 card_data = {
   token: '9b2d63e00d66a8c721607214cedaecda',
-  customer_id: customer['id'],
+  customer_id: customer['id']
 }
-card_response = sdk.card.create(card_data);
+card_response = sdk.card.create(card_data)
 card = card_response[:response]
 
 puts card

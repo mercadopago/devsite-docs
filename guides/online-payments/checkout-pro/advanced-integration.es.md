@@ -306,8 +306,8 @@ preference_data = {
   # ...
   back_urls = {
     success: 'https://www.tu-sitio/success',
-    failure: 'http://www.tu-sitio/failure',
-    pending: 'http://www.tu-sitio/pendings'
+    failure: 'https://www.tu-sitio/failure',
+    pending: 'https://www.tu-sitio/pendings'
   },
   auto_return: 'approved'
   # ...
