@@ -1,13 +1,13 @@
-# Integración avanzada
+# Integração avançada
 
-## Recuerda tus clientes y sus tarjetas
+## Armazene os dados dos seus clientes e cartões
 
-Usa nuestras APIs para guardar la referencia de las tarjetas de tus clientes y poder brindarles una mejor experiencia. De esta manera, tus clientes no tienen que completar sus datos cada vez y pueden finalizar sus pagos más rápido.
+Use nossas APIs para guardar a referência dos cartões dos seus clientes e poder oferecer uma melhor experiência. Dessa maneira, seus clientes não terão que completar seus dados todas as vezes e poderão finalizar seus pagamentos mais rápido.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Crear un cliente y una tarjeta
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Crie um cliente e um cartão
 
-Para crear un cliente y su tarjeta tienes que enviar el campo del e-mail y el token generado.
-Vas a sumar a cada cliente con el valor `customer` y a la tarjeta como `card`.
+Para criar um cliente e associá-lo ao seu cartão, é preciso enviar o campo do e-mail e o token gerado.
+Cada cliente será guardado com o valor `customer` e cada cartão com o valor `card`.
 
 [[[
 
@@ -113,7 +113,7 @@ curl -X POST \
 
 ]]]
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resposta
 
 ```json
 {
@@ -139,15 +139,16 @@ curl -X POST \
 >
 > Nota
 >
-> Te recomendamos almacenar los datos de tarjeta luego de realizar un pago de forma exitosa para guardar datos correctos.
+> Te recomendamos armazenas os dados do cartão assim que realizar um pagamento de forma exitosa para guardar os dados corretos.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agrega nuevas tarjetas a un cliente
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adicione novos cartões a um cliente
 
-Para agregar nuevas tarjetas a un cliente, debes crear un token y hacer un `HTTP POST` al `customer`.
+Para adicionar novos cartões a um cliente, deve-se criar um token e fazer um `HTTP POST` ao `customer`.
 
 [[[
 ```php
-<?php
+
+<?php  
 
   MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
@@ -252,7 +253,7 @@ curl -X POST \
 
 ]]]
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resposta
 
 
 ```json
@@ -294,15 +295,15 @@ curl -X POST \
 }
 ```
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Usa las tarjetas guardadas para un pago
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use cartões guardados para receber um pagamento
 
-Para que un cliente pueda hacer un pago con sus datos guardados, es necesario volver a capturar el código de seguridad. Mercado Pago no puede almacenar esa información por cuestiones de seguridad.
+Para que um cliente possa fazer um pagamento com seus dados guardados, é necessário capturar novamente o código de segurança. Mercado Pago não pode armazenar essa informação por questões de segurança.
 
 <br>
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Muestra las tarjetas guardadas a tu cliente
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Mostre os cartões guardados ao seu cliente
 
-Primero, obtén el listado de guardadas para que tu cliente pueda elegir con cuál quiere pagar:
+Primeiro, obtenha a lista de cartões guardados para que seu cliente possa escolher com qual irá pagar:
 
 [[[
 
@@ -354,7 +355,7 @@ curl -X GET \
 
 ]]]
 
-Respuesta de datos de una tarjeta guardada:
+Resposta dos dados de um cartão guardado:
 
 ```json
 [{
@@ -367,65 +368,75 @@ Respuesta de datos de una tarjeta guardada:
 }]
 ```
 
-Y puedes armar el formulario de la siguiente manera:
+E pode criar um formulário da seguinte maneira:
 
 ```html
 <li>
-    <label>Payment Method:</label>
-    <select id="cardId" name="cardId" data-checkout='cardId'>
-    <?php foreach ($cards["response"] as $card) { ?>
-        <option value="<?php echo $card["id"]; ?>"
-            first_six_digits="<?php echo $card["first_six_digits"]; ?>"
-            security_code_length="<?php echo $card["security_code"]["length"]; ?>">
-                <?php echo $card["payment_method"]["name"]; ?> ended in <?php echo $card["last_four_digits"]; ?>
-        </option>
-    <?php } ?>
-    </select>
+   <label>Payment Method:</label>
+   <select id="cardId" name="cardId"></select>
 </li>
 <li id="cvv">
-    <label for="cvv">Security code:</label>
-    <input type="text" id="cvv" data-checkout="securityCode" placeholder="123" />
+   <label for="cvv">Security code:</label>
+   <input type="text" id="cvv" placeholder="123" />
 </li>
+<script>
+   const customerCards = [{
+       "id": "3502275482333",
+       "last_four_digits": "9999",
+       "payment_method": {
+           "name": "amex",
+       },
+       "security_code": {
+           "length": 4,
+       }
+   }];
+
+   // Append customer cards to select element
+   const selectElement = document.getElementById('cardId');
+   const tmpFragment = document.createDocumentFragment();
+   customerCards.forEach(({id, last_four_digits, payment_method}) => {
+       const optionElement = document.createElement('option');
+       optionElement.setAttribute('value', id)
+       optionElement.textContent = `${payment_method.name} ended in ${last_four_digits}`
+       tmpFragment.appendChild(optionElement);
+   })
+   selectElement.appendChild(tmpFragment)
+</script>
 ```
 <br>
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Captura el código de seguridad
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Capture o código de segurança
 
-----[mlb]----
-> INFO
->
-> Nueva versión MercadoPago.js
->
-> Utiliza la librería MercadoPago.js V2 para tu formulario de tarjeta y autogenera toda la lógica de negocio necesaria para realizar el pago.<br><br>[Integrar Checkout Transparente con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/advanced-integration)
-------------
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> INFO
->
-> Nueva versión MercadoPago.js
->
-> Utiliza la librería MercadoPago.js V2 para tu formulario de tarjeta y autogenera toda la lógica de negocio necesaria para realizar el pago.<br><br>[Integrar Checkout API con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/advanced-integration)
-------------
-
-El cliente tiene que ingresar el código de seguridad en un flujo similar al que realizaste para la [captura de los datos de la tarjeta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card/#bookmark_captura_los_datos_de_la_tarjeta). Debes crear un token enviando el formulario con el ID de la tarjeta y el código de seguridad.
+O cliente precisa inserir o código se segurança em um fluxo similar ao que realizou para a [captura dos dados do cartão](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card/#bookmark_capture_os_dados_de_cartão). Deve criar um token enviando o formulário com o ID do cartão e o código de segurança.
 
 ```javascript
-doSubmit = false;
-addEvent(document.querySelector('#pay'),'submit', doPay);function doPay(event){
-    event.preventDefault();
-    if(!doSubmit){
-        var $form = document.querySelector('#pay');
+(async function createToken() {
+       try {
+           const token = await mp.createCardToken({
+               cardId: document.getElementById('cardId').value,
+               securityCode: document.getElementById('cvv').value,
+           })
 
-        Mercadopago.createToken($form, sdkResponseHandler);
-
-        return false;
-    }
-};
+            // Use the received token to make a POST request to your backend
+           console.log('token received: ', token.id)
+       }catch(e) {
+           console.error('error creating token: ', e)
+       }
+   })()
 ```
+
+----[mla, mlm, mpe, mco, mlu, mlc]----
+> Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout API anterior](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/advanced-integration).
+------------
+----[mlb]----
+> Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout Transparente anterior](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/advanced-integration).
+------------
+
 <br>
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Crea el pago
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Crie o pagamento
 
-Una vez obtenido el token, puedes generar el pago por el monto correspondiente. Al ser un pago con tarjeta guardada, debes enviar el ID del cliente junto al token.
+Uma vez obtido o token, é possível criar o pagamento com o valor correspondente. Ao ser pago com um cartão guardado, deve-se enviar o ID do cliente junto do token.
 
 [[[
 ```php
@@ -459,7 +470,7 @@ var payment_data = {
   token: 'ff8080814c11e237014c1ff593b57b4d',
   installments: 1,
   payer: {
-    type: "customer",
+    type: "customer"
     id: "123456789-jxOV430go9fx2e"
   }
 };
@@ -525,9 +536,9 @@ curl -X POST \
 ]]]
 
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Busca un cliente creado
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Busque um cliente criado
 
-Puedes buscar información sobre tu cliente si lo necesitas. Por ejemplo, en el caso que no sepas cuál es el ID asignado. El parámetro requerido para obtenerlo es el e-mail.
+Busque informação de um cliente caso necessário. Por exemplo, caso não saiba qual é o ID associado. O parâmetro requerido para obtê-lo é o e-mail.
 
 [[[
 
@@ -584,7 +595,7 @@ curl -X GET \
 
 ]]]
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resposta
 
 ```json
 {
@@ -632,7 +643,7 @@ curl -X GET \
 }
 ```
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Consulta el listado de tarjetas de un cliente
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Consulte a lista de cartões de um cliente
 
 [[[
 ```php
@@ -672,13 +683,13 @@ curl -X GET \
 
 curl -X GET \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-  'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards/' \
+  'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
 
 ```
 
 ]]]
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resposta
 
 ```json
 [{
@@ -691,27 +702,27 @@ curl -X GET \
 }]
 ```
 
-## Cancelaciones y devoluciones
+## Cancelamentos e devoluções
 
-Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes de la fecha de vencimiento y el vendedor decide cancelarlo. Y las devoluciones suceden cuando el pago se realizó pero el vendedor decide anularlo total o parcialmente.
+Os cancelamentos se realizam quando um pagamento de boleto não se concretizou antes da data de vencimento e o vendedor decide cancelá-lo. E as devoluções ocorrem quando o pagamento se realizou mas o vendedor decide anulá-lo total ou parcialmente.
 
-Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).
+Encontre mais informações na [seção de Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
 ---
-### Próximos pasos
+### Próximos passos
 
-> LEFT_BUTTON
+> LEFT_BUTTON_RECOMMENDED_PT
 >
-> Otras funcionalidades
+> Outras funcionalidades
 >
-> Adapta la integración a las necesidades específicas de tu negocio.
+> Configure seus pagamentos e adapte a integração do Mercado Pago ao seu negócio.
 >
-> [Otras funcionalidades](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-features)
+> [Outras funcionalidades](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v2/other-features)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON
 >
-> Referencias de API
+> Referências de API
 >
-> Encuentra toda la información necesaria para interactuar con nuestras APIs.
+> Encontre toda informação necessária para interagir com nossas APIs.
 >
-> [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference)
+> [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference)

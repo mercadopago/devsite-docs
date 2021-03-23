@@ -25,17 +25,13 @@ Remember to always use our official libraries for your integration. This helps p
 >
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Include MercadoPago.js
 
-> INFO
->
-> New MercadoPago.js version
->
-> Use MercadoPago.js V2 library to update to the latest version; auto generate your business logics in your card payment form and improve compatibility with different browsers.<br><br>[Integrate Checkout API with MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/previous-requirements)
-
 MercadoPago.js allows you to create a payment token to send card data to your backend securely. You can use it by adding the following code to your website:
 
 ```html
-<script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+<script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
+
+> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements).
 
 <br>
 
@@ -96,9 +92,9 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 
 If you can't use our official SDKs, you will have all the information about data queries and responses available to interact directly with our APIs in [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post).
 
-## Meet the requirements to go to production
+## Meet the requirements for the production environment
 
-When you develop your integration, consider all the [requirements to go to production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production). This process can ensure your customer's data security, compliance with legal standards or provisions in each country, and the best shopping experience for your customers.
+When you develop your integration, consider all the [requirements for the production environment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/goto-production). This process can ensure your customer's data security, compliance with legal standards or provisions in each country, and the best shopping experience for your customers.
 
 Once your integration is ready, you just need to fill out the form for to go to production in the [Credentials section]([FAKER][CREDENTIALS][URL]) to start receiving payments.
 
@@ -112,7 +108,7 @@ Once your integration is ready, you just need to fill out the form for to go to 
 >
 > Create and configure your own payment experience.
 >
-> [Integrate Checkout API for cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card)
+> [Integrate Checkout API for cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/receiving-payment-by-card)
 
 
 > RIGHT_BUTTON_RECOMMENDED_EN
