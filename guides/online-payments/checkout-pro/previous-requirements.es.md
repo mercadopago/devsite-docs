@@ -15,14 +15,15 @@ Sabemos que algunos términos son nuevos. Antes de empezar, te los dejamos a man
 
 ## Requisitos previos
 
-Para continuar, verifica los requisitos previos necesarios:
+Ten en cuenta estos aspectos antes de empezar a integrar: 
 
-### 1. Acceso a cuenta de Mercado Pago o Mercado Libre
+### 1. Accede a una cuenta
 Para poder comenzar la integración, es necesario **contar con una cuenta de Mercado Pago o Mercado Libre**.
-Si aún no tienes una, puedes [crear una cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]) cuando quieras.
 
-### 2. Instalación de SDK de Mercado Pago
-**Instala el SDK oficial** para simplificar tu interacción con nuestras APIs.
+Puedes [Ingresar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/previous-requirements) a una cuenta que ya exista o [Crear una cuenta nueva](https://www.mercadopago[FAKER][URL][DOMAIN]).
+
+### 2. Instala la SDK de Mercado Pago
+**Instala la SDK oficial** para simplificar tu interacción con nuestras APIs.
 
 [[[
 ```php
@@ -45,8 +46,8 @@ Para instalar el SDK en tu proyecto [Maven](http://maven.apache.org/install.html
 ===
 <dependency>
             <groupId> com.mercadopago </groupId>
-            <artifactId> dx-java </artifactId>
-            <version> 1.0.33 </version>
+            <artifactId> sdk-java </artifactId>
+            <version> 1.8.0 </version>
 </dependency>
 ```
 ```ruby
@@ -69,6 +70,14 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 ```
 ]]]
 
+### 3. Ten a mano tus credenciales
+
+Las credenciales son las **claves que te proporcionamos para que puedas configurar tu integración**.
+
+Para poder encontrarlas, ve la [sección de Credenciales]([FAKER][CREDENTIALS][URL]).
+
+> ¿Tienes dudas sobre credenciales? Puedes consultar nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials).
+
 ---
 
 ### Próximos pasos
@@ -79,7 +88,7 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 >
 > Sigue el paso a paso para comenzar a recibir pagos en tu sitio.
 >
-> [Integra](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/integration/)
+> [Integra](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/integration)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -87,4 +96,4 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 >
 > Revisa que esté todo bien en tu integración con los usuarios de prueba.
 >
-> [Prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/test-integration/)
+> [Prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/test-integration)

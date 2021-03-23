@@ -79,7 +79,7 @@ Credit card testing
 >
 > Update, edit or cancel your subscriptions.
 >
-> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/advanced-integration/)
+> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/advanced-integration)
 
 > RIGHT_BUTTON
 >
@@ -87,4 +87,4 @@ Credit card testing
 >
 > In case you have problems, we explain the logic of retrying collections. 
 >
-> [Reattempts to collect](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/payment-retry/)
+> [Reattempts to collect](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/payment-retry)

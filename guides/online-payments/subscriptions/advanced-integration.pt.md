@@ -112,7 +112,7 @@ curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPRO
 >
 > Verifique se suas assinaturas criadas estão devidamente configuradas com os usuários de teste. 
 >
-> [Testes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/testing/)
+> [Testes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/testing)
 
 
 > RIGHT_BUTTON
@@ -121,4 +121,4 @@ curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPRO
 >
 > Caso você tenha problemas, explicamos a lógica de novas tentativas de cobrança.
 >
-> [Lógica de novas tentativas de cobrança](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/payment-retry/)
+> [Lógica de novas tentativas de cobrança](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/payment-retry)

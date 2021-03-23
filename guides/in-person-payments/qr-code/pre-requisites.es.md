@@ -25,25 +25,26 @@ Sabemos que algunos términos son nuevos. Antes de empezar, te los dejamos a man
 | Caja (POS) | Es un **punto de venta** que existe en una sucursal o tienda física. Cada caja tendrá vinculado un código QR unívoco. |
 | Orden | Es el pedido realizado por tu cliente. Contiene un listado de productos con su monto asociado. |
 
-> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials/).
+> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials).
 
 ## Requisitos previos
 
-Para continuar, es necesario realizar los siguientes pasos:
+Ten en cuenta estos aspectos antes de empezar:
 
-### 1. Acceso a cuenta de Mercado Pago o Mercado Libre
+### 1. Accede a una cuenta
 
 Para poder comenzar la integración, es necesario **contar con una cuenta de Mercado Pago o Mercado Libre**. 
-Si aún no tienes una, puedes [crear una cuenta de Mercado Pago](https://www.mercadopago.com.ar) cuando quieras.
+
+Puedes [Ingresar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/pre-requisites) a una cuenta que ya exista o [Crear una cuenta nueva](https://www.mercadopago[FAKER][URL][DOMAIN]).
 
 > NOTE
 >
 > Nota
 >
-> Si vas a operar en nombre de otros, puedes trabajar con las credenciales de ellos de una forma más fácil y segura por [Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/marketplace/checkout-api/introduction/).
+> Si vas a operar en nombre de otros, puedes trabajar con las credenciales de ellos de una forma más fácil y segura por [Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/marketplace/checkout-api/introduction).
 
 
-### 2. Generar usuarios de prueba
+### 2. Genera usuarios de prueba
 
 Para comenzar la integración es necesario que tengas como mínimo dos usuarios: un comprador y un vendedor.
 
@@ -96,4 +97,4 @@ Una vez creados los usuarios de pruebas, ya puedes comenzar con la integración 
 >
 > Para realizar la integración, primero debes configurar tus sucursales y cajas.
 >
-> [Sucursales y Cajas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/stores-pos/)
+> [Sucursales y Cajas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/stores-pos)

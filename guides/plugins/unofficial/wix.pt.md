@@ -52,7 +52,7 @@ Para **configurar a ativação de sua conta do Mercado Pago**, siga os passos ab
 ![Setting active in Wix](/images/wix/wix_active_configuration_2.gif)
 <p>&nbsp;</p>
 
-> Encontre todas as informações sobre suas credenciais em [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/faqs/credentials/).
+> Encontre todas as informações sobre suas credenciais em [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/faqs/credentials).
 
 ## Configurando o parcelamento na sua conta do Mercado Pago
 

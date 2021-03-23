@@ -148,7 +148,7 @@ Now, **you just need to initialize our CardForm. Link the ID of each form field 
 >
 > Create and configure your own payment experience.
 >
-> [Integrate Checkout API for cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card/)
+> [Integrate Checkout API for cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card)
 
 
 > RIGHT_BUTTON_RECOMMENDED_EN

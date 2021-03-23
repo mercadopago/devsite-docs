@@ -84,20 +84,29 @@ Como referência é possível utilizar o código de exemplo e documentação que
 
 No artigo do [GitHub](https://github.com/mercadopago/point-android_integration#intent) é possível obter mais informação e o exemplo correspondente.
 
-
 ## Integração via API
 
 > WARNING
 >
 > Importante
 >
-> * Esta integração somente está disponível para Android versão 2.8.0 ou superior.
-> * Não está disponível para iOS.
-> * Para poder utilizar esta integração é necessário que se comunique com [nossa central de ajuda](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/support/) para que seja habilitada a opção de integração na aplicação de Mercado Pago.
+> * Esta integração está disponível apenas para Android versão 2.8.0 ou superior.<br>
+> * Não disponível para iOS.
 
-A outra forma de se integrar com a aplicação de Mercado Pago para cobrar com Point é mediante nossas APIs.
+A outra forma de integração com o aplicativo Mercado Pago para cobrar com nosso Point é através de nossas APIs.
 
-Para esta integração, primeiro é necessário configurar na aplicação de Mercado Pago o `device_name` . O mesmo serve para identificar o celular ou tablet e relacioná-lo com a conta do Mercado Pago. Desta maneira, saberá a que dispositivo enviar a ordem de pagamento.
+Para fazer a integração, é necessário habilitar as opções de integração no aplicativo Mercado Pago. Execute o seguinte curl para fazer isso:
+
+
+```curl
+--location --request POST ‘https://api.mercadopago.com/point/services/user/status/integrators?access_token= <ENV_ACCESTOKEN>’ \
+--header ‘Content-Type: application / json’ \
+--data-raw ‘{
+    "Id": <user_id>
+} ’
+```
+
+Em seguida, é necessário configurar o `device_name` do aplicativo Mercado Pago. Serve para identificar seu celular ou tablet e relacioná-lo com sua conta do Mercado Pago. Desta forma, você saberá para qual dispositivo enviar a ordem de pagamento.
 
 O passo seguinte, consiste em gerar uma ordem de pagamento e envia-la via API ao dispositivo de onde se deseja cobra-la. O usuário verá que na tela desse dispositivo se abre a aplicação de Mercado Pago pronta para passar o cartão e avançar com o fluxo de pagamento utilizando a Point.
 

@@ -64,6 +64,6 @@ Você também receberá um JSON desta forma:
 
 ## Se eu não quiser notificações IPN, o que posso fazer?
 
-Caso você não queira ou precise de outro tipo de notificação, pode [usar webhooks](https://www.mercadopago.com/mlb/account/webhooks)
+Caso você não queira ou precise de outro tipo de notificação, pode [usar webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications)
 
 > Para usar webhooks, é importante que você selecione a aplicação sobre a qual deseja receber notificações e escolha os tópicos correspondentes.

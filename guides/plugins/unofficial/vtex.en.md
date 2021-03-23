@@ -6,7 +6,7 @@
 > Important
 >
 > We're sorry. This page is currently not available in English.<br>
-[View documentation in Portuguese](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/)
+> [View documentation in Portuguese](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex)
 
 ------------
 
@@ -18,6 +18,6 @@
 > Important
 >
 > We're sorry. This page is currently not available in English.<br>
-[View documentation in Spanish](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/)
+> [View documentation in Spanish](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex)
 
 ------------

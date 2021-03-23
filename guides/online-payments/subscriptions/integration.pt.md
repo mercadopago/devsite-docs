@@ -102,7 +102,7 @@ Pronto! Agora podemos criar a assinatura e associá-la ao seu plano.
 Uma vez que você tenha gerado seu plano e obtido seu `preapproval_plan_id`, crie a assinatura por API do pagador da seguinte forma: 
 
 ```curl 
-curl --location --request POST 'https://api.mercadopago.com/preapproval \
+curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -156,7 +156,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval \
 ```
 >Você pode obter mais informações sobre os campos na [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference).
 
-Prono! Você criou uma assinatura com um plano associado.
+Pronto! Você criou uma assinatura com um plano associado.
 
 
 ## Assinaturas sem plano associado
@@ -219,6 +219,13 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 }
 ```
 
+> NOTE
+> 
+> Pagamento de validação
+> 
+> Para comprovar a validade do cartão, realizamos um pagamento com um valor mínimo. Se o pagamento obter sucesso, procedemos com a realização da devolução desse pagamento. O valor pode diferir conforme cada país.
+
+
 ### Criar assinatura com pagamento pendente
 
 Você pode criar uma assinatura com status `pending` e nenhum meio de pagamento associada. 
@@ -245,6 +252,13 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
   "status": "pending"
 }'
 ```
+
+> NOTE
+> 
+> Aumente a segurança do seu site
+>
+> Com o código de segurança, você irá proteger ainda mais seu site e poderá ter mais pagamentos aprovados. Ele auxilia na prevenção de fraudes e pagamentos recusados sem justificativa.<br><br>
+> A configuração é simples! [Veja como adicionar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/payment-rejections#bookmark_recomendações_para_melhorar_sua_aprovação)
 
 
 #### Resposta
@@ -306,7 +320,7 @@ Atributos
 >
 > Verifique se suas assinaturas estão configuradas corretamente com os usuários de teste. 
 >
-> [Testes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/testing/)
+> [Testes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/testing)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
@@ -314,4 +328,4 @@ Atributos
 >
 > Atualize, altere ou cancele suas assinaturas.
 >
-> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/advanced-integration/)
+> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/advanced-integration)

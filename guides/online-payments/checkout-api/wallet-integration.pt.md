@@ -9,8 +9,7 @@ Isto significa que seus clientes têm mais formas de te pagar e podem ter acesso
 ## Benefícios da carteira do Mercado Pago
 
 * Seus clientes podem te pagar com mais meios de pagamento e mais rapidamente:
-  * **Com cartões já salvos** nas suas contas Mercado Pago, poupando o esforço de digitar as informações de um cartão do zero.
-  Eles também têm seus endereços salvos, o que simplifica todo o processo de preenchimento.
+  * **Com cartões já salvos** nas suas contas Mercado Pago, poupando o esforço de digitar as informações de um cartão do zero. Eles também têm seus endereços salvos, o que simplifica todo o processo de preenchimento.
   * **Com saldo disponível no Mercado Pago**, o dinheiro está pronto para ser usado na hora, em 1 clique.
 ----[mla]----
 * Seus clientes podem pagar em até 12 vezes no boleto, com parcelamento financiado pelo [Mercado Crédito](https://www.mercadolibre.com.ar/mercado-credito/meses-sin-tarjeta/).
@@ -250,4 +249,4 @@ Pronto! você já tem a carteira do Mercado Pago integrada no seu site.
 >
 > Confira se está tudo correto na sua integração com os usuários de teste.
 >
-> [Pruebas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration/)
+> [Pruebas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration)

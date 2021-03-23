@@ -44,7 +44,7 @@ Oferecemos dois métodos de checkout que facilitam o recebimento seguro de pagam
 
 *Disponível para Argentina, Brasil, Chile, Colômbia, México, Peru e Uruguai*
 
-**API*
+**API**
 
 Ofereça um checkout totalmente customizado à sua experiência de marca com nossa API de pagamentos simples de usar.
 
@@ -74,7 +74,7 @@ Ofereça um checkout totalmente customizado à sua experiência de marca com nos
 ## Versões
 
 | Plugin Version | Status | Versões Compatíveis |
-| --- | --- |
+| --- | --- | --- |
 | [v1.4.9](https://github.com/mercadopago/cart-opencart/tree/master/v1.4.9) | Deprecated (Old Version) | OpenCart v1.4.9 |
 | [v1.5.x](https://github.com/mercadopago/cart-opencart/tree/master/v1.5.x) | Deprecated (Old Version) | OpenCart v1.5.x |
 | [v2.x - v2.2](https://github.com/mercadopago/cart-opencart/tree/master/v2.x%20-%202.2) | Deprecated (Old Version) | OpenCart v2.x - v2.2 |
@@ -102,6 +102,7 @@ Ofereça um checkout totalmente customizado à sua experiência de marca com nos
 ## Configuração
 
 1. Novamente em **Extensions > Payments > MercadoPago**, clique em **Edit** para configurar sua conta do Mercado Pago:
+<br>
 
 ![Open cart configuration page](/images/opencart_mpaccount.png)
 

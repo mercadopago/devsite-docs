@@ -554,14 +554,19 @@ Para configurarlo, agrega el nodo `shipments` con el valor del monto que quieras
 
 Sabemos que es importante maximizar la efectividad de tus anuncios. Por esto, te damos la posibilidad de integrar el Checkout Pro con las plataformas de Facebook Ads y Google Ads para asociar los pagos a tus campañas.
 
+----[mla, mlb]----
 > NOTE
 >
 > Nota
 >
-----[mla, mlb]----
 > Solo se verán asociados los pagos aprobados al instante con tarjetas de crédito o débito, dinero en Mercado Pago o con Mercado Créditos.
 ------------
+
 ----[mlm, mlc, mco, mpe, mlu]----
+> NOTE
+>
+> Nota
+>
 > Solo se verán asociados los pagos aprobados al instante con tarjetas de crédito o débito, o con dinero en Mercado Pago.
 ------------
 
@@ -933,7 +938,7 @@ Para activar la opción de pago, ve a tus [opciones de negocio](https://www.merc
 >
 > Optimiza tu integración y mejora la gestión de tus ventas.
 >
-> [Otras funcionalidades](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/advanced-integration/)
+> [Otras funcionalidades](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/advanced-integration)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -941,4 +946,4 @@ Para activar la opción de pago, ve a tus [opciones de negocio](https://www.merc
 >
 > Adapta el estilo de tu marca en la experiencia de compra.
 >
-> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/customizations/)
+> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/customizations)

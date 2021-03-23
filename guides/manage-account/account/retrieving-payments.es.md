@@ -2,7 +2,7 @@
 
 Puedes encontrar toda la información de los pagos generados utilizando nuestras APIs.
 
-## Obtener pagos creados a partir de su _ID_
+## Obtener pagos creados a partir de su ID
 
 Para obtener la información de un pago a partir de su _ID_ debes hacer el siguiente _request_:
 ```curl

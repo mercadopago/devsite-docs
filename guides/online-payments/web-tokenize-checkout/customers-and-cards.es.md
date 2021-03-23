@@ -158,7 +158,7 @@ Para que puedas recibir un pago utilizando una tarjeta almacenada, es necesario 
 ```html
 <form action="/procesar-pago" method="POST">
   <script
-    src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
+    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00"
     data-customer-id="209277402-FqRqgEc3XItrxs"
@@ -241,7 +241,7 @@ Por ejemplo:
 ```html
 <form action="/procesar-pago" method="POST">
   <script
-    src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
+    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00"
     data-customer-id="209277402-FqRqgEc3XItrxs"
@@ -395,7 +395,7 @@ Respuesta:
 }
 ```
 
-## Buscar un _Customer_
+## Buscar un Customer
 
 En el caso en el que no sepas cuál es el `id` de tu `Customer`, puedes utilizar la API de `Customer Search` realizando un request `HTTP GET`. El parámetro requerido para esto es `email`:
 
@@ -496,7 +496,7 @@ Respuesta:
 }
 ```
 
-## Obtener las _Cards_ de un _Customer_
+## Obtener las Cards de un Customer
 
 Puedes obtener el listado completo de `Cards` de un cliente realizando un request `HTTP GET`:
 

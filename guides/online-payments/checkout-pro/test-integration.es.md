@@ -122,7 +122,6 @@ Al abrir el checkout creado con los datos de tu usuario vendedor:
 
 | Tarjeta | Número | Código de seguridad | Fecha de vencimiento |
 | :--- | :---: | :---: | :---: |
-| Mastercard | 5474 9254 3267 0366 | 123 | 11/25 |
 | Visa | 4075 5957 1648 3764 | 123 | 11/25 |
 
 ------------
@@ -171,7 +170,7 @@ Al activarlas, verifica que las credenciales en tu integración sean las de la c
 >
 > Optimiza tu integración y mejora la gestión de tus ventas.
 >
-> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/advanced-integration/)
+> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/advanced-integration)
 
 > RIGHT_BUTTON
 >
@@ -179,4 +178,4 @@ Al activarlas, verifica que las credenciales en tu integración sean las de la c
 >
 > Adapta el estilo de tu marca en la experiencia de compra.
 >
-> [Prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/customizations/)
+> [Prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/customizations)

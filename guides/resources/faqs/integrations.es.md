@@ -105,7 +105,7 @@ Esta opción te permite cobrar a través de nuestro formulario web dentro del am
 
 - **Protegemos tu dinero, siempre.** No tienes que preocuparte de nada. Si tienes algún problema, te respaldaremos con nuestro [Programa de Protección al Vendedor](https://www.mercadopago.com.mx/ayuda/dinero-seguridad-ventas_701).
 
-[Integrar Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction/)
+[Integrar Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction)
 
 ### Mobile Checkout
 
@@ -266,7 +266,7 @@ Esta opción te permite cobrar a través de nuestro formulario web dentro del am
 
 - **Protegemos tu dinero, siempre.** No tienes que preocuparte de nada. Si tienes  algún problema, te respaldamos con nuestro [Programa de Protección al Vendedor](https://www.mercadopago.com.co/ayuda/seguridad-vendedor_1800).
 
-[Integrar Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction/)
+[Integrar Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction)
 
 ### Mobile Checkout
 
@@ -337,7 +337,7 @@ Esta opción te permite cobrar a través de nuestro formulario web dentro del am
 
 - **Protegemos tu dinero, siempre.** No tienes que preocuparte de nada. Si tienes algún problema, te respaldamos con nuestro [Programa de Protección al Vendedor](https://www.mercadopago.com.uy/ayuda/dinero-seguridad-ventas-uy_2989).
 
-[Integrar Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction/)
+[Integrar Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction)
 
 ### Web Tokenize
 
@@ -349,7 +349,7 @@ Es la versión simplificada del Checkout Pro con una experiencia de usuario reno
 
 - **Siempre vas a estar actualizado.** Puedes brindarles a tus compradores una experiencia que Mercado Pago mantiene en constante mejora.
 
-[Integrar Web Tokenize](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/web-tokenize-checkout/introduction/)
+[Integrar Web Tokenize](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/web-tokenize-checkout/introduction)
 
 ----[mlm, mla, mlc, mco, mpe, mlu]----
 ### Checkout API
@@ -365,7 +365,7 @@ Esta forma de integrarse permite conectarse directamente con nuestras APIs.
 
 - **Tu equipo técnico tiene el control total.** Van a poder manejar todos los procesos de manipulación de datos sensibles en el front-end donde se produce la solicitud de pago.
 
-[Integrar por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction/)
+[Integrar por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction)
 
 ## Cómo ofrecer cuotas sin interés
 
@@ -379,7 +379,7 @@ Te cobraremos una comisión de 8,49% + IVA por cada pago que recibas, con cualqu
 
 ## Cómo gestionar las ventas de clientes en mi sitio
 
-Para poder gestionar vendedores y que puedan hacer transacciones comerciales en tu sitio tienes que [crear un Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/marketplace/checkout-pro/introduction/).
+Para poder gestionar vendedores y que puedan hacer transacciones comerciales en tu sitio tienes que [crear un Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/marketplace/checkout-pro/introduction).
 
 Un Marketplace es un sitio o aplicación que te permite hacer cobros a nombre de los vendedores y cobrar una comisión por cada uno si así lo quisieras. Cuando se genera un pago, el dinero es dividido al instante entre la cuenta de tus vendedores y la tuya.
 
@@ -409,7 +409,7 @@ Esta opción te permite cobrar a través de nuestro formulario web dentro del am
 
 - **Protegemos tu dinero, siempre.** No tienes que preocuparte de nada. Si tienes algún problema, te respaldamos con nuestro [Programa de Protección al Vendedor.](https://www.mercadopago.cl/ayuda/proteccion-vendedores_1807)
 
-[Integrar Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction/)
+[Integrar Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction)
 
 ### Mobile Checkout
 

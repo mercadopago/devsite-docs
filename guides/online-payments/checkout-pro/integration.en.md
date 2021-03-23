@@ -1,5 +1,9 @@
 # Integrate Checkout Pro
 
+Integrating Mercado Pago's Checkout Pro allows you to charge your customers through our web form from any device in a simple, fast and secure way.
+
+Use our [sample projects](#bookmark_sample_projects) for a complete integration. You can adapt them according to your needs.
+
 ## How do I integrate?
 
 ![Integration](/images/web-payment-checkout/flow-v2.png)
@@ -384,31 +388,31 @@ Finally, add the following code to show the payment button of your Checkout Pro 
 [[[
 ```php
 <script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
   data-preference-id="<?php echo $preference->id; ?>">
 </script>
 ```
 ```node
 <script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
   data-preference-id='<%= global.id %>'>
 </script>
 ```
 ```java
 <script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
   data-preference-id="${preference.id}">
 </script>
 ```
 ```ruby
 <script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
   data-preference-id="<%= @preference_id %>">
 </script>
 ```
 ```csharp
 <script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
   data-preference-id="@Html.DisplayFor(model => model.id)">
 </script>
 ```
@@ -422,7 +426,15 @@ Finally, add the following code to show the payment button of your Checkout Pro 
 > Do not forget to access from another browser or log out of your Mercado Pago account before testing it. You cannot make a payment with the same account you created the payment form.<br/>
 
 #### Excellent! You finished your integration.
-_Click on the link within your site and [test the integration of your Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/test-integration/)_.<br/><br/>
+_Click on the link within your site and [test the integration of your Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/test-integration)_.<br/><br/>
+
+## Sample projects
+
+> GIT
+>
+> Checkout Pro
+>
+> Use our [complete integration examples](http://github.com/mercadopago/checkout-payment-sample) on GitHub in PHP or NodeJS to download instantly.
 
 ---
 
@@ -434,7 +446,7 @@ _Click on the link within your site and [test the integration of your Checkout P
 >
 > Check that everything works in your integration with test users.
 >
-> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/test-integration/)
+> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/test-integration)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >

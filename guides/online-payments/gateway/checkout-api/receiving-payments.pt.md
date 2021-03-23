@@ -13,8 +13,6 @@ indexable: false
 >
 > Você só pode integrar este produto se o seu contato comercial compartilhar todas as informações necessárias para isso. 
 
-</br>
-
 > NOTE
 >
 > Pre-requisito
@@ -153,4 +151,4 @@ curl -X POST \
 
 ### Próximos passos
 
-* [Concilie suas operações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/gateway/general-considerations/reconciliation/)
+* [Concilie suas operações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/gateway/general-considerations/reconciliation)

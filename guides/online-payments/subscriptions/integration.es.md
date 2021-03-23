@@ -102,7 +102,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval_plan' \
 Una vez generado tu plan y obtenido tu `preapproval_plan_id`, crea la suscripción por API de la siguiente manera:
 
 ```curl 
-curl --location --request POST 'https://api.mercadopago.com/preapproval \
+curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -219,6 +219,13 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 }
 ```
 
+> NOTE
+> 
+> Pago de validación
+> 
+> Para comprobar que la tarjeta sea válida, realizamos un pago de validación con un monto mínimo. Si el pago es exitoso, procedemos a realizar la devolución de ese pago. El monto puede diferir según cada país. 
+
+
 ### Crear suscripción con pago pendiente
 
 Puedes crear una suscripción con estado `pending` y sin medio de pago asociado. 
@@ -245,6 +252,13 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
   "status": "pending"
 }'
 ```
+
+> NOTE
+> 
+> Aumenta la seguridad de tu sitio web
+>
+> Con el código de seguridad, podrás proteger aún más tu sitio y obtener más pagos aprobados. Este te ayudará a prevenir el fraude y los pagos rechazados sin justificación.<br><br>
+> ¡Es fácil! [Agrega el código](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/payment-rejections#bookmark_recomendaciones_para_mejorar_tu_aprobación) en simples pasos.
 
 
 #### Respuesta
@@ -306,7 +320,7 @@ Atributos
 >
 > Revisa que tus suscripciones estén bien configuradas con los usuarios de prueba.
 >
-> [Pruebas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/testing/)
+> [Pruebas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/testing)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -314,4 +328,4 @@ Atributos
 >
 > Actualiza, modifica o cancela tus suscripciones.
 >
-> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/advanced-integration/)
+> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/advanced-integration)

@@ -232,7 +232,7 @@ Si quieres que la redirección sea automática para pagos aprobados, tienes que 
 >
 > Nota
 >
-> Ten en cuenta que el atributo `auto_return` solo funciona para modo redirect y mobile. No al usar [modo modal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/integration/), ya que el comprador siempre se encuentra en el sitio.
+> Ten en cuenta que el atributo `auto_return` solo funciona para modo redirect y mobile. No al usar [modo modal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/integration), ya que el comprador siempre se encuentra en el sitio.
 
 ![autoreturn](/images/web-payment-checkout/autoreturn-img.png)
 
@@ -334,7 +334,7 @@ Puedes encontrar toda la información en la [sección Devoluciones y cancelacion
 Se produce un contracargo o _chargeback_ cuando el comprador se comunica con la entidad que emitió su tarjeta y desconoce el pago.
 Esto quiere decir que el dinero del vendedor por ese pago será retenido de su cuenta de Mercado Pago hasta que se solucione.
 
-[Gestionar contracargos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/chargebacks/)
+[Gestionar contracargos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/chargebacks)
 
 ---
 
@@ -347,7 +347,7 @@ Esto quiere decir que el dinero del vendedor por ese pago será retenido de su c
 >
 > Configura tus pago y adapta Checkout Pro a tu negocio.
 >
-> [Configurations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations/)
+> [Configurations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations)
 
 > RIGHT_BUTTON
 >
@@ -355,4 +355,4 @@ Esto quiere decir que el dinero del vendedor por ese pago será retenido de su c
 >
 > Adapta el estilo de tu marca en la experiencia de compra.
 >
-> [Personalizaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/customizations/)
+> [Personalizaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/customizations)

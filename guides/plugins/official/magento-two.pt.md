@@ -20,15 +20,15 @@
 
 O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcionalidades e soluções de pagamento:
 
-* [Checkout básico (Checkout Pro)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction/)
+* [Checkout básico (Checkout Pro)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction)
     * [Pagamento com dois cartões](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_pagamentos_com_2_cartão_de_crédito)
-    * [Devolução de Pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds/)
+    * [Devolução de Pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds)
 
 
 * Checkout Transparente
-    * [Pagamento com Cartão de Crédito](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card/)
-    * [Pagamento com um click (Clientes e Cartões)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt//guides/online-payments/checkout-api/advanced-integration/)
-    * [Pagamento com outros meios (Boleto)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways/)
+    * [Pagamento com Cartão de Crédito](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card)
+    * [Pagamento com um click (Clientes e Cartões)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/advanced-integration)
+    * [Pagamento com outros meios (Boleto)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways)
     * [Devolução de Pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds)
 
 
@@ -38,17 +38,11 @@ O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcion
 
 ## Instalação
 
-    Esse processo irá explicar a instalação do módulo Mercado Pago via Composer:
+Esse processo irá explicar a instalação do módulo Mercado Pago via Composer:
 
 **Instalação via Composer**
 
-1) No momento disponibilizamos duas versões de módulos, onde cada uma delas irá disponibilizar um tipo de checkout:
-
-* Caso queira processar pagamentos com **Checkout Redirecionado**, será necessário instalar a versão 2.x do módulo do Mercado Pago. Para isso execute o comando:
-
-> composer require mercadopago/magento2-plugin:2.*
-
-* Caso queira processar pagamentos com **Checkout Transparente (Custom)** com Cartão de Crédito ou Boleto, utilize a versão 3.x do módulo. Essa versão esta melhor otimizada para esse tipo de checkout. Para isso execute o comando:
+1) Execute o comando para baixar o plugin com Composer:
 
 > composer require mercadopago/magento2-plugin:3.*
 
@@ -83,7 +77,7 @@ Esse processo irá explicar como configurar o módulo para aceitar pagamentos co
 > Existem dois tipos de credenciais:
 > * Modo Sandbox: As credenciais desse modo são utilizadas para realizar testes.
 > * Modo Produção: As credenciais desse modo são utilizadas para receber os pagamentos em Produção. Para utilizar as credenciais do Modo Produção é necessário ativar suas credenciais.
-> * Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials/).
+> * Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials).
 
 3) Com as credenciais preenchidas, é necessário habilitar os métodos de pagamento. Acesse a opção **Custom Checkout - Credit And Debit Card**, clique no botão **Configure** e marque a opção **Enable** como **Yes**. Faça esse processo também para **Custom Checkout - Offline Payments Methods (Ticket)** e logo seguida clique em **Save Config**.
 

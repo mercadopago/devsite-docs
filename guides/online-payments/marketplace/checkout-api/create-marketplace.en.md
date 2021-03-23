@@ -221,7 +221,7 @@ The seller will receive the difference between the total amount and the fees, bo
 
 You need to send your `notification_url`, where you will receive a notification of all new payments and status updates generated.
 
-In order to receive notifications when your clients authorize your application, you can [configure the url](https://www.mercadopago.com/mla/account/webhooks) in your account.
+In order to receive notifications when your clients authorize your application, you can [configure the url](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) in your account.
 
 For more information, go to the [notifications section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks).
 
@@ -237,4 +237,4 @@ For more information, go to [refunds and cancellations.](https://www.mercadopago
 ### Test your integration
 
 You can try your Marketplace using your Sandbox credentials to associate the sellers and to make the payments/refunds/cancellations.  
-[Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/testing/)
+[Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/testing)

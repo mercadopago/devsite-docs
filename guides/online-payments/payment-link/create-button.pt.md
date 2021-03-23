@@ -1,6 +1,6 @@
 # Como criar um link de pagamento?
 
-Comece a receber pagamentos pelas redes sociais, e-mail ou site é muito fácil.
+Começar a receber pagamentos pelas redes sociais, e-mail ou site é muito fácil.
 
 ## Configurações básicas
 
@@ -35,4 +35,4 @@ Próximos passos
 >
 > Após criado, basta selecionar o meio com o qual você vai cobrar seus clientes.
 >
-> [Compartilhar link de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/payment-link/share-button/)
+> [Compartilhar link de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/payment-link/share-button)

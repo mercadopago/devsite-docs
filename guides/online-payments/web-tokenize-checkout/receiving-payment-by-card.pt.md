@@ -17,7 +17,7 @@ Este _fragmento de código javascript_ criará um botão de pagamento. Quando o 
 ```html
 <form action="https://www.meu-site.com/processar-pagamento" method="POST">
   <script
-    src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
+    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00">
   </script>
@@ -25,7 +25,7 @@ Este _fragmento de código javascript_ criará um botão de pagamento. Quando o 
 ```
 Você pode encontrar sua Public key na [seção "Credenciais"]([FAKER][CREDENTIALS][URL]).
 
-> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials/).
+> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials).
 
 ### Paso 3: Obter todos os dados
 
@@ -144,10 +144,10 @@ var payment_data = {
 };
 
 // Armazena e envia o pagamento
-mercadopago.payment.save(payment).then(function (data) {
+mercadopago.payment.save(payment_data).then(function (data) {
   // ...    
   // Imprime o status do pagamento
-  Console.log(payment.status);
+  Console.log(data.status);
 }).catch(function (error) {
   // ...
 });
@@ -227,4 +227,4 @@ Para realizar pagamentos de teste (com suas credenciais de TEST), é necessário
 
 ### Promoções
 
-Recomendamos incluir o [link de promoções](https://www.mercadopago.com.br/promocoes) do **Mercado Pago**, ou então implementar um de nossos [banners de formas de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/introduction/).
+Recomendamos incluir o [link de promoções](https://www.mercadopago.com.br/promocoes) do **Mercado Pago**, ou então implementar um de nossos [banners de formas de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/introduction).

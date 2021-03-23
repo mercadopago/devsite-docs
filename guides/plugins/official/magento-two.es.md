@@ -22,13 +22,7 @@ Este proceso explicará la instalación del módulo Mercado Pago vía Composer:
 
 **Instalación vía Composer**
 
-1) En el momento tenemos dos versiones de módulos, donde cada una de ellas tendrá un tipo de checkout:
-
-* Si desea procesar pagos con **Checkout Redireccionado**, deberá instalar la versión 2.x del módulo del Mercado Pago. Para instalar ejecute el comando:
-
-> composer require mercadopago/magento2-plugin:2.*
-
-* Si desea procesar pagos con **Checkout Transparente (Custom)** con Tarjeta de Crédito o Ticket, utilice la versión 3.x del módulo. Esta versión esta mejor optimizada para este tipo de checkout. Para instalar ejecute el comando:
+1) Ejecutar el comando para descargar el plugin con Composer: 
 
 > composer require mercadopago/magento2-plugin:3.*
 
@@ -63,7 +57,7 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con Check
 > Existen dos tipos de credenciales:
 > * Modo Sandbox: Las credenciales de este modo se utilizan para realizar pruebas.
 > * Modo Producción: Las credenciales de este modo se utilizan para recibir los pagos en Producción. Para utilizar las credenciales del modo de producción debe activar tus credenciales.
-> * Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials/).
+> * Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials).
 
 3) Con las credenciales completadas, debe habilitar los métodos de pago. Acceda a la opción **Checkout Custom - Credit And Debit Card**, haga un clic en el botón **Configure** y marque la opción **Enable** como **Yes**. Siga este proceso para ** Checkout Custom - Credit And Debit Card** y para **Checkout Custom - Offline Payment Methods (Ticket)** haga un clic en **Save Config** para guardar la configuración.
 

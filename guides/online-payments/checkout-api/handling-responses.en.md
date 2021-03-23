@@ -86,7 +86,7 @@ For example, if the card has insufficient balance, you can suggest trying again 
 >
 > Enhance your integration and improve your sales management.
 >
-> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en//guides/online-payments/checkout-api/advanced-integration)
+> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/advanced-integration)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >

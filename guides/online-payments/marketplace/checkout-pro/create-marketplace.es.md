@@ -46,7 +46,7 @@ Al incluir este parámetro, la URL de redirección quedaría de la siguiente for
 
 Ahora recibirás en la URL de retorno especificada el código de autorización y también el identificador seguro:
 
-`hhttp://www.URL_de_retorno.com?code=AUTHORIZATION_CODE&state=id=RANDOM_ID`
+`https://www.URL_de_retorno.com?code=AUTHORIZATION_CODE&state=id=RANDOM_ID`
 
 > No envíes información confidencial o credenciales de la cuenta de Mercado Pago.
 
@@ -128,7 +128,7 @@ Respuesta esperada:
 
 ## 3. Integra el checkout
 
-Para cobrar en nombre de tus vendedores debes integrar [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction/), generando las preferencias de pago con el Access Token de cada vendedor para tu aplicación.
+Para cobrar en nombre de tus vendedores debes integrar [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction), generando las preferencias de pago con el Access Token de cada vendedor para tu aplicación.
 
 Si deseas cobrar una comisión por cada pago que procesa tu aplicación en nombre de tu vendedor, sólo debes agregar dicho monto en el parámetro `marketplace_fee` al crear la preferencia:
 

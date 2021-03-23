@@ -146,7 +146,7 @@ curl -X POST \
 
 Si necesitás hacer adaptaciones, recordá que es importante hacer este cambio antes de la fecha límite.
 
-Si tenés alguna duda o necesita ayuda para hacer estos cambios, [contáctanos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support/).
+Si tenés alguna duda o necesita ayuda para hacer estos cambios, [contáctanos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support).
 
 El equipo de Mercado Pago.
 
@@ -200,7 +200,7 @@ curl -X POST \
 
 Si necesitas hacer adaptaciones, recuerda que es importante hacer este cambio antes de la fecha límite.
  
-Si tienes alguna duda o necesita ayuda para hacer estos cambios, [contactanos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support/).
+Si tienes alguna duda o necesita ayuda para hacer estos cambios, [contactanos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support).
 
 
 El equipo de Mercado Pago.

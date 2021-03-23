@@ -48,7 +48,7 @@ You can check your sales in the activity list in your [Mercado Pago account](htt
 >
 > Learn about QR code integration.
 >
-> [¿What’s a QR code?](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/introduction/)
+> [¿What’s a QR code?](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/introduction)
 
 
 > RIGHT_BUTTON_RECOMMENDED_EN

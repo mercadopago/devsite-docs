@@ -17,8 +17,6 @@
 >
 > C. Pre-Approval is only available through the personalized Checkout Pro or web tokenize checkout, that is, via the use of our API's.
 
-<br/>
-
 > NOTE
 >
 > Note
@@ -33,7 +31,7 @@
  
  ## Charge the first payment
  
- For the first transaction you will always have to request the data of the card, and pay the payment with security code. It can be done following the steps of our integration by [API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card/).
+ For the first transaction you will always have to request the data of the card, and pay the payment with security code. It can be done following the steps of our integration by [API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card).
  
  ## Create a customer and associate the used card
  
@@ -132,7 +130,7 @@ $payment = $mp->post("/v1/payments", $payment_data);
 | Brasil | 4235 6477 2802 5682 |5031 4332 1540 6351|3753 651535 56885 |
 | Chile | 4168 8188 4444 7115 |5416 7526 0258 2580|3757 781744 61804 |
 | Colombia | 4013 5406 8274 6260 |5254 1336 7440 3564|3743 781877 55283 |
-| México | 4075 5957 1648 3764 |5474 9254 3267 0366| no disponible |
+| México | 4075 5957 1648 3764 | no disponible | no disponible |
 | Perú | 4009 1753 3280 6176 | no disponible | no disponible |
 | Uruguay | 4157 2362 1173 6486 |5808 8877 7464 1586| no disponible |
 

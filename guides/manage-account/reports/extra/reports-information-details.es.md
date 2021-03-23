@@ -38,14 +38,14 @@ Te explicamos cómo ver la información de tus rendimientos según el tipo de re
 
 ----[mla]----
 
-* [Reporte de Dinero retirado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/extra/asset-management-bank/)
-* [Reporte de Todas tus transacciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/extra/asset-management-settlement/)
+* [Reporte de Dinero retirado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/extra/asset-management-bank)
+* [Reporte de Todas tus transacciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/extra/asset-management-settlement)
 
 ------------
 ----[mlb]----
 
-* [Rendimientos en el reporte de Dinero disponible](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/extra/asset-management-bank/)
-* [Rendimientos en el reporte de Dinero en cuenta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/extra/asset-management-settlement/)
+* [Rendimientos en el reporte de Dinero disponible](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/extra/asset-management-bank)
+* [Rendimientos en el reporte de Dinero en cuenta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/extra/asset-management-settlement)
 
 ------------
 

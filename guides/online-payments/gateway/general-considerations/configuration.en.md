@@ -11,7 +11,7 @@ indexable: false
 >
 > Unfortunately Mercado Pago's Gateway Configuration Section is not currently translated to english. Nonetheless this guide will be helpful to you to understand the configuration flow.
 
-</br>
+<br>
 
 > WARNING
 >

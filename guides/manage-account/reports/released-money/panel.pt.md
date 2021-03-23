@@ -10,7 +10,7 @@ Siga estas etapas para gerar seus relatórios:
 1. Vá em [relatório de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------](https://www.mercadopago.com.ar/balance/reports/release) e clique em *Gerar relatório*.
 1. Busque as transações por período de tempo e selecione as que quer conciliar.
 
-<span style="margin-left:40px">Pronto! Você verá seu relatório *Em preparação*.</span>
+Pronto! Você verá seu relatório *Em preparação*.
 
 
 > NOTE

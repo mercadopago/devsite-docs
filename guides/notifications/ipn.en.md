@@ -2,7 +2,7 @@
 
 **IPN** (Instant Payment Notification) is a notification sent from one server to another through an `HTTP POST` request informing your transactions.
 
-To receive event notifications on your platform, you can [previously configure a notification_url accessible for Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/ipn-notifications).
+To receive event notifications on your platform, you can [previously configure a notification_url accessible for Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
 
 
 ## Events
@@ -67,7 +67,7 @@ With this information you can make the necessary updates on your platform, such 
 1. The `merchant_order` status field will remain **open** if there are no associated payments or, otherwise, if they are rejected or approved for an amount lower than total order amount.
 2. The `merchant_order` status field will be **closed** when the sum of approved payments is equal to or higher than total order amount.
 
-You will find all the payments in the order, under the payments object. [To make refunds](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds/), it is important to get the id of payments with `status` = **approved**.
+You will find all the payments in the order, under the payments object. [To make refunds](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds), it is important to get the id of payments with `status` = **approved**.
 
 
 > WARNING

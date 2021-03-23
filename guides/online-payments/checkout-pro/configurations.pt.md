@@ -535,14 +535,19 @@ Para configurá-lo, adicione o item `shipments` com o valor que quiser cobrar no
 
 Sabemos que é importante maximizar a eficácia dos seus anúncios. Por isto, oferecemos a possibilidade de integrar o Checkout Pro com as plataformas do Facebook Ads e Google Ads para associar pagamentos às suas campanhas.
 
+----[mla, mlb]----
 > NOTE
 >
 > Nota
 >
-----[mla, mlb]----
 > Só serão associados os pagamentos aprovados instantaneamente com cartões de crédito ou débito, dinheiro no Mercado Pago ou com Mercado Créditos.
 ------------
+
 ----[mlm, mlc, mco, mpe, mlu]----
+> NOTE
+>
+> Nota
+>
 > Só serão associados os pagamentos aprovados instantaneamente com cartões de crédito ou débito, ou com dinheiro no Mercado Pago.
 ------------
 
@@ -913,7 +918,7 @@ Você pode ativar a opção de oferecer pagamento com dois cartões de crédito 
 >
 > Otimize sua integração e melhore o gerenciamento de suas vendas.
 >
-> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/advanced-integration/)
+> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/advanced-integration)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
@@ -921,4 +926,4 @@ Você pode ativar a opção de oferecer pagamento com dois cartões de crédito 
 >
 > Adapte o estilo da sua marca na experiência de compra.
 >
-> [Customizações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/customizations/)
+> [Customizações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/customizations)
