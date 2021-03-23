@@ -127,19 +127,22 @@ Keep in mind that the answer will return all the payments methods. For this reas
 > Data capture for payment
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
+
 **Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
 
 ```html
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
+> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways).
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-You can easily include anything you need and add your own style.
-
 Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways-v2#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+
+Add the following form with the styles you want.
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
@@ -187,8 +190,6 @@ Use the list you consulted in [Obtain the available payment methods](https://www
   </div>
 </form>
 ```
-
-> This documentation uses the new library version. To see the previous version, go to [integrate credit card payment with MercadoPago.js V1 section.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways)
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure your public key
 
@@ -679,19 +680,22 @@ Keep in mind that the answer will return all the payments methods. For this reas
 > Data capture for payment
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
+
 **Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
 
 ```html
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
+> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways).
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-You can easily include anything you need and add your own style.
-
 Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways-v2#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+
+Add the following form with the styles you want.
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
@@ -739,8 +743,6 @@ Use the list you consulted in [Obtain the available payment methods](https://www
   </div>
 </form>
 ```
-
-> This documentation uses the new library version. To see the previous version, go to [integrate credit card payment with MercadoPago.js V1 section.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways)
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure your public key
 
@@ -1071,19 +1073,22 @@ Keep in mind that the answer will return all the payments methods. For this reas
 > Data capture for payment
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
+
 **Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
 
 ```html
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
+> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways).
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-You can easily include anything you need and add your own style.
-
 Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways-v2#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+
+Add the following form with the styles you want.
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
@@ -1131,8 +1136,6 @@ Use the list you consulted in [Obtain the available payment methods](https://www
   </div>
 </form>
 ```
-
-> This documentation uses the new library version. To see the previous version, go to [integrate credit card payment with MercadoPago.js V1 section.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways)
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure your public key
 
@@ -1513,19 +1516,22 @@ Keep in mind that the answer will return all the payments methods. For this reas
 > Data capture for payment
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
+
 **Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
 
 ```html
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
+> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways).
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-You can easily include anything you need and add your own style.
-
 Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways-v2#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+
+Add the following form with the styles you want.
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
@@ -1573,8 +1579,6 @@ Use the list you consulted in [Obtain the available payment methods](https://www
   </div>
 </form>
 ```
-
-> This documentation uses the new library version. To see the previous version, go to [integrate credit card payment with MercadoPago.js V1 section.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways)
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure your public key
 
@@ -2153,19 +2157,22 @@ Keep in mind that the answer will return all the payments methods. For this reas
 > Data capture for payment
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
+
 **Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
 
 ```html
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
+> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways).
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-You can easily include anything you need and add your own style.
-
 Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways-v2#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+
+Add the following form with the styles you want.
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
@@ -2213,8 +2220,6 @@ Use the list you consulted in [Obtain the available payment methods](https://www
   </div>
 </form>
 ```
-
-> This documentation uses the new library version. To see the previous version, go to [integrate credit card payment with MercadoPago.js V1 section.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways)
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure your public key
 
@@ -2718,19 +2723,22 @@ Keep in mind that the answer will return all the payments methods. For this reas
 > Data capture for payment
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
+
 **Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
 
 ```html
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
+> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways).
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-You can easily include anything you need and add your own style.
-
 Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways-v2#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+
+Add the following form with the styles you want.
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
@@ -2778,8 +2786,6 @@ Use the list you consulted in [Obtain the available payment methods](https://www
   </div>
 </form>
 ```
-
-> This documentation uses the new library version. To see the previous version, go to [integrate credit card payment with MercadoPago.js V1 section.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways)
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure your public key
 
@@ -3152,13 +3158,15 @@ Keep in mind that the answer will return all the payments methods. For this reas
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
+> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways).
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-You can easily include anything you need and add your own style.
-
 Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways-v2#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+
+Add the following form with the styles you want.
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
@@ -3206,8 +3214,6 @@ Use the list you consulted in [Obtain the available payment methods](https://www
   </div>
 </form>
 ```
-
-> This documentation uses the new library version. To see the previous version, go to [integrate credit card payment with MercadoPago.js V1 section.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways)
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure your public key
 

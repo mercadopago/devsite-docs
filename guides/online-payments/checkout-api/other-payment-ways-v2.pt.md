@@ -150,13 +150,15 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
+> Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout API anterior](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways).
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o formulário de pagamento
 
 Para realizar a captura dos dados sensíveis dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação.
 
-Você pode adicionar tudo o que necessite e adicionar o estilo que queira sem problemas.
-
 Use a lista que você consultou em [Obtenha os meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways-v2#bookmark_obtenha_os_meios_de_pagamento_disponíveis) para criar as opções de pagamento que deseja oferecer.
+
+Adicione o seguinte formulário com os estilos que quiser.
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
@@ -204,9 +206,6 @@ Use a lista que você consultou em [Obtenha os meios de pagamento disponíveis](
   </div>
 </form>
 ```
-
-> Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout Transparente anterior.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways)
-
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure sua chave pública
 Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
@@ -701,13 +700,15 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
+> Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout API anterior](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways).
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o formulário de pagamento
 
 Para realizar a captura dos dados sensíveis dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação.
 
-Você pode adicionar tudo o que necessite e adicionar o estilo que queira sem problemas.
-
 Use a lista que você consultou em [Obtenha os meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways-v2#bookmark_obtenha_os_meios_de_pagamento_disponíveis) para criar as opções de pagamento que deseja oferecer.
+
+Adicione o seguinte formulário com os estilos que quiser.
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
@@ -755,9 +756,6 @@ Use a lista que você consultou em [Obtenha os meios de pagamento disponíveis](
   </div>
 </form>
 ```
-
-> Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout Transparente anterior.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways)
-
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure sua chave pública
 
@@ -1096,13 +1094,15 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
+> Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout API anterior](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways).
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o formulário de pagamento
 
 Para realizar a captura dos dados sensíveis dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação.
 
-Você pode adicionar tudo o que necessite e adicionar o estilo que queira sem problemas.
-
 Use a lista que você consultou em [Obtenha os meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways-v2#bookmark_obtenha_os_meios_de_pagamento_disponíveis) para criar as opções de pagamento que deseja oferecer.
+
+Adicione o seguinte formulário com os estilos que quiser.
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
@@ -1150,9 +1150,6 @@ Use a lista que você consultou em [Obtenha os meios de pagamento disponíveis](
   </div>
 </form>
 ```
-
-> Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout Transparente anterior.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways)
-
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure sua chave pública
 Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
@@ -1538,13 +1535,15 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
+> Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout API anterior](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways).
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o formulário de pagamento
 
 Para realizar a captura dos dados sensíveis dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação.
 
-Você pode adicionar tudo o que necessite e adicionar o estilo que queira sem problemas.
-
 Use a lista que você consultou em [Obtenha os meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways-v2#bookmark_obtenha_os_meios_de_pagamento_disponíveis) para criar as opções de pagamento que deseja oferecer.
+
+Adicione o seguinte formulário com os estilos que quiser.
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
@@ -1592,9 +1591,6 @@ Use a lista que você consultou em [Obtenha os meios de pagamento disponíveis](
   </div>
 </form>
 ```
-
-> Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout Transparente anterior.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways)
-
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure sua chave pública
 Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
@@ -2179,13 +2175,15 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
+> Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout API anterior](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways).
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o formulário de pagamento
 
 Para realizar a captura dos dados sensíveis dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação.
 
-Você pode adicionar tudo o que necessite e adicionar o estilo que queira sem problemas.
-
 Use a lista que você consultou em [Obtenha os meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways-v2#bookmark_obtenha_os_meios_de_pagamento_disponíveis) para criar as opções de pagamento que deseja oferecer.
+
+Adicione o seguinte formulário com os estilos que quiser.
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
@@ -2233,9 +2231,6 @@ Use a lista que você consultou em [Obtenha os meios de pagamento disponíveis](
   </div>
 </form>
 ```
-
-> Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout Transparente anterior.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways)
-
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure sua chave pública
 
@@ -2746,13 +2741,15 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
+> Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout API anterior](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways).
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o formulário de pagamento
 
 Para realizar a captura dos dados sensíveis dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação.
 
-Você pode adicionar tudo o que necessite e adicionar o estilo que queira sem problemas.
-
 Use a lista que você consultou em [Obtenha os meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways-v2#bookmark_obtenha_os_meios_de_pagamento_disponíveis) para criar as opções de pagamento que deseja oferecer.
+
+Adicione o seguinte formulário com os estilos que quiser.
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
@@ -2800,9 +2797,6 @@ Use a lista que você consultou em [Obtenha os meios de pagamento disponíveis](
   </div>
 </form>
 ```
-
-> Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout Transparente anterior.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways)
-
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure sua chave pública
 Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
@@ -3175,13 +3169,15 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
+> Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout Transparente anterior](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways).
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o formulário de pagamento
 
 Para realizar a captura dos dados sensíveis dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação.
 
-Você pode adicionar tudo o que necessite e adicionar o estilo que queira sem problemas.
-
 Use a lista que você consultou em [Obtenha os meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways-v2#bookmark_obtenha_os_meios_de_pagamento_disponíveis) para criar as opções de pagamento que deseja oferecer.
+
+Adicione o seguinte formulário com os estilos que quiser.
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
@@ -3229,9 +3225,6 @@ Use a lista que você consultou em [Obtenha os meios de pagamento disponíveis](
   </div>
 </form>
 ```
-
-> Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout Transparente anterior.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways)
-
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure sua chave pública
 
