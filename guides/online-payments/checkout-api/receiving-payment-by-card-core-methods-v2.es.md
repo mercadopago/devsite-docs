@@ -18,7 +18,7 @@ Usa los [ejemplos descargables](#bookmark_ejemplos_descargables) para conocer la
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-es.png)
 
-> Si quieres realizar un flujo automatizado del pago, te recomendamos utilizar la funcionalidad [CardForm de MercadoPago.js V2.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card-v2)
+> Si quieres realizar un flujo automatizado del pago, te recomendamos [utilizar la funcionalidad CardForm de MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card-v2).
 
 <br>
 
@@ -45,6 +45,12 @@ Tanto para el frontend como para el backend, recomendamos utilizar [nuestras lib
 > Captura los datos de la tarjeta
 
 Para crear un pago es necesario hacer la captura de los datos de la tarjeta a través del navegador del comprador. Por cuestiones de seguridad, **es muy importante que los datos sensibles de la tarjeta nunca lleguen a tus servidores.**.
+
+> NOTE
+>
+> Nota
+>
+> Esta documentación utiliza la nueva versión de la librería. Para ver la versión anterior, ve a la [sección de integrar pagos con tarjeta con MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Incluye la librería MercadoPago.js
 
@@ -294,7 +300,13 @@ const createCardToken = async (event) => {
 
 El método `createCardToken` devolverá un token con la representación segura de la tarjeta.
 
-Allí tomaremos el ID (token) de la respuesta y lo guardaremos en un atributo oculto que llamaremos `MPHiddenInputToken`, para luego enviar el formulario a tus servidores.
+Allí tomaremos el token ID de la respuesta y lo guardaremos en un atributo oculto que llamaremos `MPHiddenInputToken`, para luego enviar el formulario a tus servidores.
+
+> WARNING
+>
+> Importante
+>
+> Ten en cuenta que el token tiene una validez de 7 días y solo se puede usar una vez.
 
 <br>
 <span></span>
@@ -550,7 +562,7 @@ Por último, es importante que estés siempre informado sobre la creación de nu
 >
 > Checkout Transparente
 >
-> Te dejamos <a href="http://github.com/mercadopago/card-payment-sample" target="_blank">ejemplos completos de integración</a> en GitHub para PHP o NodeJS para que puedas descargar al instante.
+> Te dejamos [ejemplos completos de integración](http://github.com/mercadopago/card-payment-sample) en GitHub para PHP o NodeJS para que puedas descargar al instante.
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > GIT

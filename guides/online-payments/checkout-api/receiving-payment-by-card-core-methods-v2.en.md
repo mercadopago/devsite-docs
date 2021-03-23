@@ -6,9 +6,9 @@ Use our [sample projects](#bookmark_sample_projects) for a complete integration.
 
 ## How does it work?
 
-![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-en)
+![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-en.png)
 
-> For an automated payment flow, use [MercadoPago.js V2 CardForm functionality.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card-v2)
+> For an automated payment flow, [use MercadoPago.js V2 CardForm functionality](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card-v2).
 
 <br>
 
@@ -33,6 +33,12 @@ Both for frontend and backend, we recommend [our libraries](https://www.mercadop
 
 To create a payment, you should capture card data through the buyer's browser. For security reasons, **never store data in your servers**.
 
+> NOTE
+>
+> Note
+>
+> This documentation uses the new library version. To see the previous version, go to [integrate payment for cards with MercadoPago.js V1 section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card).
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Include MercadoPago.js library
 
 **Use our official library to access Mercado Pago API** from your application and collect data securely.
@@ -45,11 +51,11 @@ Card information will be turned into a token so that you can send data to your s
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
 
-To capture sensitive data from your customers' cards, please use our form with the corresponding attributes to ensure information security and correct token generation. For example, don't use the 'name' attribute in fields containing sensitive data. This way your servers will never store these data.
+To capture sensitive data from your customer's cards, please use our form with the corresponding attributes to ensure information security and correct token generation. For example, don't use the `name` attribute in fields containing sensitive data. This way your servers will never store these data.
 
-You can easily include anything you need, change the suggested 'label' attribute, and add your own style.
+You can easily include anything you need, change the suggested `label` attribute, and add your own style.
 
-The following example assumes that 'transactionAmount' and 'description' data were obtained in the previous step in which customers selected the product or service to be paid.
+The following example assumes that `transactionAmount` and `description` data were obtained in the previous step in which customers selected the product or service to be paid.
 
 ```html
 <form id="form-checkout">
@@ -281,7 +287,7 @@ const createCardToken = async (event) => {
 
 The `createCardToken` method will return a token with the secure card display.
 
-We will take and save the response ID (token) in a hidden attribute called `MPHiddenInputToken` and then send the form to your servers.
+We will take and save the response token ID in a hidden attribute called `MPHiddenInputToken` and then send the form to your servers.
 
 
 > WARNING
@@ -546,6 +552,7 @@ Finally, you always need to be notified of new payments and status updates.  For
 > Use our [complete integration examples](http://github.com/mercadopago/card-payment-sample) on GitHub in PHP or NodeJS to download instantly.
 
 <span></span>
+
 > GIT
 >
 > Payment form
