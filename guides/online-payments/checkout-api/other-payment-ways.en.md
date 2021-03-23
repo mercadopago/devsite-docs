@@ -145,7 +145,7 @@ To capture sensitive data from your customer, **please use our form with the cor
 
 You can easily include anything you need and add your own style.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
@@ -667,7 +667,7 @@ To capture sensitive data from your customer, **please use our form with the cor
 
 You can easily include anything you need and add your own style.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
@@ -1063,7 +1063,7 @@ To capture sensitive data from your customer, **please use our form with the cor
 
 You can easily include anything you need and add your own style.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
@@ -1475,7 +1475,7 @@ To capture sensitive data from your customer, **please use our form with the cor
 
 You can easily include anything you need and add your own style.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
@@ -2085,7 +2085,7 @@ To capture sensitive data from your customer, **please use our form with the cor
 
 You can easily include anything you need and add your own style.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
@@ -2620,7 +2620,7 @@ To capture sensitive data from your customer, **please use our form with the cor
 
 You can easily include anything you need and add your own style.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
@@ -3018,7 +3018,7 @@ To capture sensitive data from your customer, **please use our form with the cor
 
 You can easily include anything you need and add your own style.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
