@@ -354,24 +354,25 @@ System.out.println(payment.getStatus());
 Encontre o estado do pagamento no campo _status_.
 ===
 require 'mercadopago'
-$mp = MercadoPago.new('YOUR_ACCESS_TOKEN')
+sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
 
 payment_data = {
-  "transaction_amount": request.body.transactionAmount.to_f,
-  "token": request.body.token,
-  "description": request.body.description,
-  "installments": request.body.installments.to_i,
-  "payment_method_id": request.body.paymentMethodId,
-  "payer": {
-    "email": request.body.email,
-    "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
-      "type": request.body.docType,------------
-      "number": request.body.docNumber
+  transaction_amount: params[:transactionAmount].to_f,
+  token: params[:token],
+  description: params[:description],
+  installments: params[:installments].to_i,
+  payment_method_id: params[:paymentMethodId],
+  payer: {
+    email: params[:email],
+    identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
+      type: params[:docType],------------
+      number: params[:docNumber]
     }
   }
 }
 
-payment = $mp.post('/v1/payments', payment_data)
+payment_response = sdk.payment.create(payment_data)
+payment = payment_response[:response]
 
 puts payment
 
@@ -380,33 +381,64 @@ puts payment
 ===
 Encontre o estado do pagamento no campo _status_.
 ===
+using System;
+using MercadoPago.Client.Common;
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
 
-using MercadoPago;
-using MercadoPago.DataStructures.Payment;
-using MercadoPago.Resources;
+MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
 
-MercadoPago.SDK.SetAccessToken("YOUR_ACCESS_TOKEN");
-
-Payment payment = new Payment()
+var paymentRequest = new PaymentCreateRequest
 {
-    TransactionAmount = float.Parse(Request["transactionAmount"]),
+    TransactionAmount = decimal.Parse(Request["transactionAmount"]),
     Token = Request["token"],
     Description = Request["description"],
     Installments = int.Parse(Request["installments"]),
     PaymentMethodId = Request["paymentMethodId"],
-    Payer = new Payer(){
+    Payer = new PaymentPayerRequest
+    {
         Email = Request["email"],
-        Identification = new Identification(){----[mla, mlb, mlu, mlc, mpe, mco]----
-          Type = Request["docType"],------------
-          Number = Request["docNumber"]
-        }
-    }
+        Identification = new IdentificationRequest
+        {----[mla, mlb, mlu, mlc, mpe, mco]----
+            Type = Request["docType"],------------
+            Number = Request["docNumber"],
+        },
+    },
 };
 
-payment.Save();
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(paymentRequest);
 
-console.log(payment.Status);
+Console.WriteLine(payment.Status);
 
+```
+```python
+===
+Encontre o estado do pagamento no campo _status_.
+===
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_data = {
+    "transaction_amount": float(request.POST.get("transaction_amount")),
+    "token": request.POST.get("token"),
+    "description": request.POST.get("description"),
+    "installments": int(request.POST.get("installments")),
+    "payment_method_id": request.POST.get("payment_method_id"),
+    "payer": {
+        "email": request.POST.get("email"),
+        "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
+            "type": request.POST.get("type"), ------------
+            "number": request.POST.get("number")
+        }
+    }
+}
+
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
+
+print(payment)
 ```
 ```curl
 ===
