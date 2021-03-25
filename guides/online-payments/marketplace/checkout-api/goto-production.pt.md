@@ -1,4 +1,4 @@
-# Requisitos para ir a produção
+# Requisitos para entrar em produção
 
 Quando sua integração estiver pronta e quiser começar a receber pagamentos, você deve [ativar suas credenciais]([FAKER][CREDENTIALS][URL]).
 
@@ -9,7 +9,7 @@ Com esse processo, se garante a segurança dos dados dos seus clientes, o cumpri
 [Conheça os termos e condições do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/legal/terms-and-conditions).
 
 ## O que validamos?
-A fim de garantir tanto a melhor qualidade de integração e experiência do usuário para o cliente final, no Mercado Pago precisamos que certos requisitos sejam atendidos antes de ir para produção.
+A fim de garantir tanto a melhor qualidade de integração e experiência do usuário para o cliente final, no Mercado Pago precisamos que certos requisitos sejam atendidos antes de entrar em produção.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use as bibliotecas oficiais e cuide da segurança dos dados
 
@@ -19,7 +19,7 @@ Essas medidas permitem cuidar dos dados sensíveis, cumprir com os padrões de s
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tenha um certificado SSL
 
-Para que seja seguro e que possa cuidar dos dados, é necessário que tenha um certificado SSL válido e que o formulário de pagamento seja disponibilizado em uma página HTTPS. Isso permite proteger as transações e os dados dos seus compradores. Durante os testes não é necessário tê-lo, mas é obrigatório para ir à produção.
+Para que seja seguro e que possa cuidar dos dados, é necessário que tenha um certificado SSL válido e que o formulário de pagamento seja disponibilizado em uma página HTTPS. Isso permite proteger as transações e os dados dos seus compradores. Durante os testes não é necessário tê-lo, mas é obrigatório para entrar em produção.
 
 ## Envio das informações
 

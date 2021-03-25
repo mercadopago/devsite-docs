@@ -9,6 +9,22 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 > CHANGELOG
 >
+> New version of SDK .Net
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK .NET
+
+We have released a new version of SDK .Net 2.0.0.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-dotnet/releases/tag/2.0.0) for further details regarding this release.
+
+> CHANGELOG
+>
 > New version of SDK Ruby
 >
 > NEW_VERSION: NEW VERSION

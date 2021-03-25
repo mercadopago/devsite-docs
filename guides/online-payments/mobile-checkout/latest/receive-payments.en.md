@@ -51,8 +51,8 @@ require 'mercadopago'
 sdk = Mercadopago::SDK.new('ENV_ACCES_TOKEN')
 ```
 ```csharp
-using MercadoPago;
-MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+using MercadoPago.Config;
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 ```
 ]]]
 
@@ -138,23 +138,26 @@ preference_response = sdk.preference.create(preference_data)
 preference = preference_response[:response]
 ```
 ```csharp
-Preference preference = new Preference();
-
- preference.Items.Add(
-  new Item()
-  {
-    Id = "1234",
-    Title = "Blue shirt",
-    Quantity = 10,
-    CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
-    UnitPrice = (float)[FAKER][COMMERCE][PRICE]
-  }
-  preference.Payer = new Payer()
-  {
-    Email = "john@yourdomain.com"
-  };
-
-  preference.Save();
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Id = "1234",
+            Title = "Blue shirt",
+            Quantity = 10,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = [FAKER][COMMERCE][PRICE]m,
+        },
+    },
+    Payer = new PreferencePayerRequest
+    {
+        Email = "john@yourdomain.com",
+    },
+};
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
 
 ```
 ]]]
@@ -445,7 +448,7 @@ You can test the integration before going into production, in order to check the
 
 For that, you must use test users and cards.
 
-For more information, go to the [Test](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/mobile-checkout/testing) section.
+For more information, go to the [Testing](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/mobile-checkout/testing) section.
 
 ### Next steps
 

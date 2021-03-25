@@ -110,22 +110,23 @@ preference_data = {
 ===
  Respect the dimensions format, in centimeters and grams as appropriate: heightx width x length, weight. 
 ===
-Preference preference = new Preference();
-
-MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataStructures.Preference.Shipment()
- {
-     Mode = MercadoPago.Common.ShipmentMode.Me2,
-     Dimensions = "30x30x30,500",
-     ReceiverAddress = new MercadoPago.DataStructures.Preference.ReceiverAddress(){
-      Zip_code = "[FAKER][ADDRESS][ZIP_CODE]",
-      StreetNumber = 1000,
-      StreetName = "[FAKER][ADDRESS][STREET_NAME]",
-      Floor = "4",
-      Apartment = "C"
-     }
- };
-
- preference.Shipments = shipments
+var request = new PreferenceRequest
+{
+    // ...
+    Shipments = new PreferenceShipmentsRequest
+    {
+        Mode = "me2",
+        Dimensions = "30x30x30,500",
+        ReceiverAddress = new PreferenceReceiverAddressRequest
+        {
+            ZipCode = "[FAKER][ADDRESS][ZIP_CODE]",
+            StreetNumber = "1000",
+            StreetName = "[FAKER][ADDRESS][STREET_NAME]",
+            Floor = "4",
+            Apartment = "C",
+        },
+    },
+};
 ```
 ]]]
 
@@ -206,13 +207,25 @@ preference_data = {
 # ...
 ```
 ```csharp
-Preference preference = new Preference();
-
-MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataStructures.Preference.Shipment();
-//...
-shipments.FreeMethods = new List<int> { 73328, 504945 };
-//...
-preference.Shipments = shipments;
+var request = new PreferenceRequest
+{
+    // ...
+    Shipments = new PreferenceShipmentsRequest
+    {
+        // ...
+        FreeMethods = new List<PreferenceFreeMethodRequest>
+        {
+            new PreferenceFreeMethodRequest
+            {
+                Id = 73328,
+            },
+            new PreferenceFreeMethodRequest
+            {
+                Id = 504945,
+            },
+        },
+    },
+};
 ```
 ]]]
 ------------
@@ -282,13 +295,25 @@ preference_data = {
 # ...
 ```
 ```csharp
-Preference preference = new Preference();
-
-MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataStructures.Preference.Shipment();
-//...
-shipments.FreeMethods = new List<int> { 509247, 509245 };
-//...
-preference.Shipments = shipments;
+var request = new PreferenceRequest
+{
+    // ...
+    Shipments = new PreferenceShipmentsRequest
+    {
+        // ...
+        FreeMethods = new List<PreferenceFreeMethodRequest>
+        {
+            new PreferenceFreeMethodRequest
+            {
+                Id = 509247,
+            },
+            new PreferenceFreeMethodRequest
+            {
+                Id = 509245,
+            },
+        },
+    },
+};
 ```
 ]]]
 ------------
@@ -358,13 +383,25 @@ preference_data = {
 # ...
 ```
 ```csharp
-Preference preference = new Preference();
-
-MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataStructures.Preference.Shipment();
-//...
-shipments.FreeMethods = new List<int> { 505345, 100009 };
-//...
-preference.Shipments = shipments;
+var request = new PreferenceRequest
+{
+    // ...
+    Shipments = new PreferenceShipmentsRequest
+    {
+        // ...
+        FreeMethods = new List<PreferenceFreeMethodRequest>
+        {
+            new PreferenceFreeMethodRequest
+            {
+                Id = 505345,
+            },
+            new PreferenceFreeMethodRequest
+            {
+                Id = 100009,
+            },
+        },
+    },
+};
 ```
 ]]]
 ------------
@@ -433,13 +470,15 @@ preference_data = {
 # ...
 ```
 ```csharp
-Preference preference = new Preference();
-
-MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataStructures.Preference.Shipment();
-//...
-shipments.LocalPickUp = true;
-//...
-preference.Shipments = shipments;
+var request = new PreferenceRequest
+{
+    // ...
+    Shipments = new PreferenceShipmentsRequest
+    {
+        // ...
+        LocalPickup = true,
+    },
+};
 ```
 ]]]
 
@@ -608,41 +647,50 @@ preference = preference_response[:response]
 
 ```
 ```csharp
-Preference preference = new Preference();
-
-preference.Items.Add(
-  new MercadoPago.DataStructures.Preference.Item()
-  {
-    Title = "Blue shirt",
-    Quantity = 1,
-    UnitPrice = (decimal)[FAKER][COMMERCE][PRICE]
-  }
-);
-
-MercadoPago.DataStructures.Preference.Payer payer = new MercadoPago.DataStructures.Preference.Payer()
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
     {
-      Email = "john@yourdomain.com"
-    };
+        new PreferenceItemRequest
+        {
+            Title = "Blue shirt",
+            Quantity = 1,
+            UnitPrice = [FAKER][COMMERCE][PRICE]m,
+        },
+    },
+    Payer = new PreferencePayerRequest
+    {
+        Email = "john@yourdomain.com",
+    },
+    Shipments = new PreferenceShipmentsRequest
+    {
+        Mode = "me2",
+        Dimensions = "30x30x30,500",
+        LocalPickup = true,
+        FreeMethods = new List<PreferenceFreeMethodRequest>
+        {
+            new PreferenceFreeMethodRequest
+            {
+                Id = 73328,
+            },
+            new PreferenceFreeMethodRequest
+            {
+                Id = 504945,
+            },
+        },
+        ReceiverAddress = new PreferenceReceiverAddressRequest
+        {
+            ZipCode = "[FAKER][ADDRESS][ZIP_CODE]",
+            StreetNumber = "1000",
+            StreetName = "[FAKER][ADDRESS][STREET_NAME]",
+            Floor = "4",
+            Apartment = "C",
+        },
+    },
+};
 
-MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataStructures.Preference.Shipment()
- {
-     Mode = MercadoPago.Common.ShipmentMode.Me2,
-     Dimensions = "30x30x30,500",
-     LocalPickUp = true,
-     FreeMethods = new List<int> { 73328, 504945 },
-     ReceiverAddress = new MercadoPago.DataStructures.Preference.ReceiverAddress(){
-      ZipCode = "[FAKER][ADDRESS][ZIP_CODE]",
-      StreetNumber = 1000,
-      StreetName = "[FAKER][ADDRESS][STREET_NAME]",
-      Floor = "4",
-      Apartment = "C"
-     }
- };
-
-preference.Payer = payer;
-preference.Shipments = shipments;
-
-preference.Save();
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
 ```
 ]]]
 ------------
@@ -798,41 +846,50 @@ preference = preference_response[:response]
 
 ```
 ```csharp
-Preference preference = new Preference();
-
-preference.Items.Add(
-  new MercadoPago.DataStructures.Preference.Item()
-  {
-    Title = "Blue shirt",
-    Quantity = 1,
-    UnitPrice = (decimal)[FAKER][COMMERCE][PRICE]
-  }
-);
-
-MercadoPago.DataStructures.Preference.Payer payer = new MercadoPago.DataStructures.Preference.Payer()
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
     {
-      Email = "john@yourdomain.com"
-    };
+        new PreferenceItemRequest
+        {
+            Title = "Blue shirt",
+            Quantity = 1,
+            UnitPrice = [FAKER][COMMERCE][PRICE]m,
+        },
+    },
+    Payer = new PreferencePayerRequest
+    {
+        Email = "john@yourdomain.com",
+    },
+    Shipments = new PreferenceShipmentsRequest
+    {
+        Mode = "me2",
+        Dimensions = "30x30x30,500",
+        LocalPickup = true,
+        FreeMethods = new List<PreferenceFreeMethodRequest>
+        {
+            new PreferenceFreeMethodRequest
+            {
+                Id = 509247,
+            },
+            new PreferenceFreeMethodRequest
+            {
+                Id = 509245,
+            },
+        },
+        ReceiverAddress = new PreferenceReceiverAddressRequest
+        {
+            ZipCode = "[FAKER][ADDRESS][ZIP_CODE]",
+            StreetNumber = "1000",
+            StreetName = "[FAKER][ADDRESS][STREET_NAME]",
+            Floor = "4",
+            Apartment = "C",
+        },
+    },
+};
 
-MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataStructures.Preference.Shipment()
- {
-     Mode = MercadoPago.Common.ShipmentMode.Me2,
-     Dimensions = "30x30x30,500",
-     LocalPickUp = true,
-     FreeMethods = new List<int> { 509247, 509245 },
-     ReceiverAddress = new MercadoPago.DataStructures.Preference.ReceiverAddress(){
-      ZipCode = "[FAKER][ADDRESS][ZIP_CODE]",
-      StreetNumber = 1000,
-      StreetName = "[FAKER][ADDRESS][STREET_NAME]",
-      Floor = "4",
-      Apartment = "C"
-     }
- };
-
-preference.Payer = payer;
-preference.Shipments = shipments;
-
-preference.Save();
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
 ```
 ]]]
 ------------
@@ -988,41 +1045,50 @@ preference = preference_response[:response]
 
 ```
 ```csharp
-Preference preference = new Preference();
-
-preference.Items.Add(
-  new MercadoPago.DataStructures.Preference.Item()
-  {
-    Title = "Blue shirt",
-    Quantity = 1,
-    UnitPrice = (decimal)[FAKER][COMMERCE][PRICE]
-  }
-);
-
-MercadoPago.DataStructures.Preference.Payer payer = new MercadoPago.DataStructures.Preference.Payer()
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
     {
-      Email = "john@yourdomain.com"
-    };
+        new PreferenceItemRequest
+        {
+            Title = "Blue shirt",
+            Quantity = 1,
+            UnitPrice = [FAKER][COMMERCE][PRICE]m,
+        },
+    },
+    Payer = new PreferencePayerRequest
+    {
+        Email = "john@yourdomain.com",
+    },
+    Shipments = new PreferenceShipmentsRequest
+    {
+        Mode = "me2",
+        Dimensions = "30x30x30,500",
+        LocalPickup = true,
+        FreeMethods = new List<PreferenceFreeMethodRequest>
+        {
+            new PreferenceFreeMethodRequest
+            {
+                Id = 505345,
+            },
+            new PreferenceFreeMethodRequest
+            {
+                Id = 100009,
+            },
+        },
+        ReceiverAddress = new PreferenceReceiverAddressRequest
+        {
+            ZipCode = "[FAKER][ADDRESS][ZIP_CODE]",
+            StreetNumber = "1000",
+            StreetName = "[FAKER][ADDRESS][STREET_NAME]",
+            Floor = "4",
+            Apartment = "C",
+        },
+    },
+};
 
-MercadoPago.DataStructures.Preference.Shipment shipments = new MercadoPago.DataStructures.Preference.Shipment()
- {
-     Mode = MercadoPago.Common.ShipmentMode.Me2,
-     Dimensions = "30x30x30,500",
-     LocalPickUp = true,
-     FreeMethods = new List<int> { 505345, 100009 },
-     ReceiverAddress = new MercadoPago.DataStructures.Preference.ReceiverAddress(){
-      ZipCode = "[FAKER][ADDRESS][ZIP_CODE]",
-      StreetNumber = 1000,
-      StreetName = "[FAKER][ADDRESS][STREET_NAME]",
-      Floor = "4",
-      Apartment = "C"
-     }
- };
-
-preference.Payer = payer;
-preference.Shipments = shipments;
-
-preference.Save();
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
 ```
 ]]]
 ------------

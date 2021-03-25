@@ -88,21 +88,20 @@ card = card_response[:response]
 ```
 ```csharp
 
-MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
-  Customer customer = new Customer()
-    {
-      Email = "test@test.com"
-    };
-    customer.Save();
+var customerRequest = new CustomerRequest
+{
+    Email = "test@test.com",
+};
+var customerClient = new CustomerClient();
+Customer customer = await customerClient.CreateAsync(customerRequest);
 
-  Card card = new Card()
-    {
-      Token = "9b2d63e00d66a8c721607214cedaecda",
-      CustomerId = customer.Id
-    };
-
-      card.Save();
+var cardRequest = new CustomerCardCreateRequest
+{
+    Token = "9b2d63e00d66a8c721607214cedaecda",
+};
+CustomerCard card = await customerClient.CreateCardAsync(customer.Id, cardRequest);
 
 ```
 ```curl
@@ -229,19 +228,18 @@ puts card
 ```
 ```csharp
 
-MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
-  Customer customer = Customer.FindById("247711297-jxOV430go9fx2e");
+var customerClient = new CustomerClient();
+Customer customer = await customerClient.GetAsync("247711297-jxOV430go9fx2e");
 
-  Card card = new Card()
-    {
-      Token = "9b2d63e00d66a8c721607214cedaecda",
-      CustomerId = customer.Id
-    };
+var cardRequest = new CustomerCardCreateRequest
+{
+    Token = "9b2d63e00d66a8c721607214cedaecda",
+};
+CustomerCard card = await customerClient.CreateCardAsync(customer.Id, cardRequest);
 
-  card.Save();
-
-  Console.WriteLine(card.Id);
+Console.WriteLine(card.Id);
 
 ```
 ```curl
@@ -349,8 +347,8 @@ cards = cards_response[:response]
 ```
 ```csharp
 
-customer = Customer.FindById("customer.Id");
-List<Card> cards = customer.Cards;
+var customerClient = new CustomerClient();
+ResourcesList<CustomerCard> customerCards = await customerClient.ListCardsAsync("CUSTOMER_ID");
 
 ```
 ```curl
@@ -499,6 +497,30 @@ payment_response = sdk.payment.create(payment_request)
 payment = payment_response[:response]
 
 ```
+```csharp
+
+using MercadoPago.Config;
+using MercadoPago.Client.Payment;
+using MercadoPago.Resource.Payment;
+
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var request = new PaymentCreateRequest
+{
+    TransactionAmount = 100,
+    Token = "ff8080814c11e237014c1ff593b57b4d",
+    Installments = 1,
+    Payer = new PaymentPayerRequest
+    {
+        Type = "customer",
+        Email = "test_payer_99999999@testuser.com",
+    },
+};
+
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(request);
+
+```
 ```curl
 
 curl -X POST \
@@ -565,6 +587,19 @@ Busque informação de um cliente caso necessário. Por exemplo, caso não saiba
 
 customers_response = sdk.customer.search(filters: { email: 'test@test.com' })
 customers = customers_response[:response]
+
+```
+```csharp
+
+var searchRequest = new SearchRequest
+{
+    Filters = new Dictionary<string, object>
+    {
+        ["email"] = "test@test.com",
+    },
+};
+ResultsResourcesPage<Customer> results = await customerClient.SearchAsync(searchRequest);
+IList<Customer> customers = results.Results;
 
 ```
 ```curl
@@ -662,6 +697,12 @@ curl -X GET \
 
 cards_response = sdk.card.list(customer_id)
 cards = cards_response[:response]
+
+```
+```csharp
+
+var customerClient = new CustomerClient();
+ResourcesList<CustomerCard> customerCards = await customerClient.ListCardsAsync("CUSTOMER_ID");
 
 ```
 ```curl

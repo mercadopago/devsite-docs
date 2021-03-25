@@ -9,6 +9,22 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 > CHANGELOG
 >
+> Nova versão SDK .Net
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK .NET
+
+Lançamos uma nova versão do SDK .Net 2.0.0.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-dotnet/releases/tag/2.0.0).
+
+> CHANGELOG
+>
 > Nova versão SDK Ruby
 >
 > NEW_VERSION: NOVA VERSÃO

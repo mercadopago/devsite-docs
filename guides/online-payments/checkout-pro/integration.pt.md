@@ -49,7 +49,7 @@ require 'mercadopago'
 ```
 ```csharp
 // SDK de Mercado Pago
- using MercadoPago;
+ using MercadoPago.Config;
 ```
 ]]]
 
@@ -90,10 +90,10 @@ sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
 ```
 ```csharp
 // SDK de Mercado Pago
-using MercadoPago;
+using MercadoPago.Config;
 
 // Configura credenciais
-MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
+MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
 ```
 ]]]
 
@@ -196,25 +196,31 @@ preference = preference_response[:response]
 ```
 ```csharp
 // SDK de Mercado Pago
-using MercadoPago;
+using MercadoPago.Config;
+using MercadoPago.Client.Preference;
+using MercadoPago.Resource.Preference;
 
 // Configura credenciais
-MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
+MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
 
-// Cria um objeto de preferência
-Preference preference = new Preference();
+// Cria o objeto de request da preferência
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Meu produto",
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75.56m,
+        },
+    },
+};
 
-// Cria um item na preferência
-preference.Items.Add(
-  new Item()
-  {
-    Title = "Meu produto",
-    Quantity = 1,
-    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
-    UnitPrice = (decimal)75.56
-  }
-);
-preference.Save();
+// Cria a preferência usando o client
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
 ```
 ```curl
 curl -X POST \
@@ -330,25 +336,31 @@ preference = preference_response[:response]
 ```
 ```csharp
 // SDK de Mercado Pago
-using MercadoPago;
+using MercadoPago.Config;
+using MercadoPago.Client.Preference;
+using MercadoPago.Resource.Preference;
 
 // Configura credenciais
-MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
+MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
 
-// Cria um objeto de preferência
-Preference preference = new Preference();
+// Cria o objeto de request da preferência
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Meu produto",
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75m,
+        },
+    },
+};
 
-// Cria um item na preferência
-preference.Items.Add(
-  new Item()
-  {
-    Title = "Meu produto",
-    Quantity = 1,
-    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
-    UnitPrice = (decimal)75
-  }
-);
-preference.Save();
+// Cria a preferência usando o client
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
 ```
 ```curl
 curl -X POST \

@@ -438,31 +438,36 @@ puts payment
 ===
 You can find payment status in _status_ value.
 ===
-using MercadoPago;
-using MercadoPago.DataStructures.Payment;
-using MercadoPago.Resources;
+using System;
+using MercadoPago.Client.Common;
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
 
-MercadoPago.SDK.SetAccessToken("YOUR_ACCESS_TOKEN");
+MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
 
-Payment payment = new Payment()
+var paymentRequest = new PaymentCreateRequest
 {
-    TransactionAmount = float.Parse(Request["transactionAmount"]),
+    TransactionAmount = decimal.Parse(Request["transactionAmount"]),
     Token = Request["token"],
     Description = Request["description"],
     Installments = int.Parse(Request["installments"]),
     PaymentMethodId = Request["paymentMethodId"],
-    Payer = new Payer(){
+    Payer = new PaymentPayerRequest
+    {
         Email = Request["email"],
-        Identification = new Identification(){----[mla, mlb, mlu, mlc, mpe, mco]----
-          Type = Request["docType"],------------
-          Number = Request["docNumber"]
-        }
-    }
+        Identification = new IdentificationRequest
+        {----[mla, mlb, mlu, mlc, mpe, mco]----
+            Type = Request["docType"],------------
+            Number = Request["docNumber"],
+        },
+    },
 };
 
-payment.Save();
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(paymentRequest);
 
-console.log(payment.Status);
+Console.WriteLine(payment.Status);
 
 ```
 ```curl

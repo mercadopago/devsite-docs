@@ -73,7 +73,7 @@ Lastly, make sure you’ve received an status notification in your system. And y
 | **Refunds**. These are performed from the Point of Sale.| Refunds impact in buyer account.| See [refunds](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds/#bookmark_refunds). |
 | **Cancel order**. Users change their mind and decides to pay in cash. | Order is removed and, therefore, scanning the QR code only shows a waiting screen. | Remove order from the Point of Sale. |
 
-## Production mode
+## Go to production
 
 When your app is **ready and working in test mode**, and you want to start processing real payments, you must [activate your credentials]([FAKER][CREDENTIALS][URL]). 
 

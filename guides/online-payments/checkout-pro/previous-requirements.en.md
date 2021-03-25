@@ -21,7 +21,7 @@ Keep these aspects in mind before you start integrating:
 
 In order to start the integration, it is necessary to **have a Mercado Pago or Mercado Libre account**.
 
-You can [Sign in](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/previous-requirements) with an existing Mercado Pago or Mercado Libre account or [Create a new account](https://www.mercadopago[FAKER][URL][DOMAIN]) at Mercado Pago.
+You can [Sign in](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/previous-requirements) with an existing account or [Create a new account](https://www.mercadopago[FAKER][URL][DOMAIN]).
 
 ### 2. Install Mercado Pago SDK
 **Install the official SDK** to simplify your interaction with our APIs.
@@ -60,14 +60,14 @@ gem install mercadopago-sdk
 ```csharp
 ===
 ----[mlb]----
-Use [NuGet](https://docs.microsoft.com/pt-pt/nuget/install-nuget-client-tools) to install the Mercado Pago SDK .NET.
+Use [NuGet](https://docs.microsoft.com/pt-br/nuget/reference/nuget-exe-cli-reference) to install the Mercado Pago SDK .NET.
 ------------
-----[mla, mco, mlu, mlc, mlm, mpe]----
-Use [NuGet](https://docs.microsoft.com/es-es/nuget/install-nuget-client-tools) to install the Mercado Pago SDK .NET.
+----[mla, mco, mlu, mlc, mlm]----
+Use [NuGet](https://docs.microsoft.com/es-es/nuget/reference/nuget-exe-cli-reference) to install the Mercado Pago SDK .NET.
 ------------
-To do this, run the following command in the NuGet Package Manager console:
+To do this, run the following command on your terminal:
 ===
-PM> Install-Package mercadopago-sdk -Version 1.0.57
+nuget install mercadopago-sdk
 ```
 ]]]
 

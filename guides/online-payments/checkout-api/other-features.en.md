@@ -104,6 +104,31 @@ payment_request = {
 payment_response = sdk.payment.create(payment_request)
 payment = payment[:response]
 ```
+```csharp
+
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
+
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var paymentRequest = new PaymentCreateRequest
+{
+    TransactionAmount = 100,
+    Token = "ff8080814c11e237014c1ff593b57b4d",
+    Description = "Title of what you are paying for",
+    Installments = 1,
+    PaymentMethodId = "visa",
+    Payer = new PaymentPayerRequest
+    {
+        Email = "test_user_19653727@testuser.com",
+    },
+    Capture = false,
+};
+
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(paymentRequest);
+```
 ```curl
 
 curl -X POST \
@@ -122,6 +147,7 @@ curl -X POST \
           },
           "capture": "false"
     }'
+```
 ]]]
 
 The response indicates that the payment is authorized and pending to capture.
@@ -198,6 +224,16 @@ request = {
 
 payment_response = sdk.payment.update(payment_id, request)
 payment = payment_response[:response]
+```
+```csharp
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
+
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var client = new PaymentClient();
+Payment payment = await client.CaptureAsync(paymentId);
 ```
 ```curl
 curl -X PUT \
@@ -287,6 +323,16 @@ request = {
 payment_response = sdk.payment.update(payment_id, request)
 payment = payment_response[:response]
 ```
+```csharp
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
+
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var client = new PaymentClient();
+Payment payment = await client.CaptureAsync(paymentId, 75);
+```
 ```curl
 
 curl -X PUT \
@@ -371,6 +417,16 @@ request = {
 payment_reponse = sdk.payment.update(payment_id, request)
 payment = payment_response[:response]
 ```
+```csharp
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
+
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var client = new PaymentClient();
+Payment payment = await client.CancelAsync(paymentId);
+```
 ```curl
 curl -X PUT \
   'https://api.mercadopago.com/v1/payments/PAYMENT_ID' \
@@ -398,11 +454,11 @@ curl -X PUT \
 
 > LEFT_BUTTON_REQUIRED_EN
 >
-> Requirements for the production environment
+> Requirements to go to production
 >
 > Learn all the requirements needed to start receiving payments.
 >
-> [Requirements for the production environment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production)
+> [Requirements to go to production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >

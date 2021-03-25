@@ -260,24 +260,30 @@ preference_data = {
 #...
 ```
 ```csharp
-Preference preference = new Preference();
+var paymentMethods = new PreferencePaymentMethodsRequest
+{
+    ExcludedPaymentMethods = new List<PreferencePaymentMethodRequest>
+    {
+        new PreferencePaymentMethodRequest
+        {
+            Id = "master",
+        },
+    },
+    ExcludedPaymentTypes = new List<PreferencePaymentTypeRequest>
+    {
+        new PreferencePaymentTypeRequest
+        {
+            Id = "ticket",
+        },
+    },
+    Installments = 12,
+};
 
-PaymentMethods paymentmethods = new PaymentMethods();
-
-List<PaymentMethod> excludedPaymentMethod = new List<PaymentMethod>();
-excludedPaymentMethod.Add(new PaymentMethod()
-  {
-    Id = "master"
-  });    
-paymentmethods.excludedPaymentType = excludedPaymentMethod;
-
-List<PaymentType> ExcludedPaymentType = new List<PaymentType>();
-excludedPaymentType.Add(new PaymentType()
-  {
-    Id = "ticket"
-  });
-paymentmethods.ExcludedPaymentTypes = excludedPaymentType;
-paymentmethods.Installments = 12;
+var request = new PreferenceRequest
+{
+    // ...
+    PaymentMethods = paymentMethods,
+};
 ```
 ]]]
 
@@ -463,27 +469,34 @@ preference_response = sdk.preference.create(preference_data)
 preference = preference_response[:response]
 ```
 ```csharp
-// Crea un objeto preferencia
-Preference preference = new Preference();
+// Crea el request con múltiples ítems
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Mi producto 1",
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75.56m,
+        },
+        new PreferenceItemRequest
+        {
+            Title = "Mi producto 2",
+            Quantity = 2,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 96.56m,
+        },
+        // ...
+    },
+};
 
-// Crea ítems en la preferencia
-reference.Items.Add(
-  new Item()
-  {
-    Title = "Mi producto",
-    Quantity = 1,
-    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
-    UnitPrice = (decimal)75.56
-  },
-  new Item()
-  {
-    Title = "Mi producto2”,
-    Quantity = 2,
-    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
-    UnitPrice = (decimal)96.56
-  }
-);
-preference.Save()"
+// Crea un objeto client
+var client = new PreferenceClient();
+
+// Crea la preferencia
+Preference preference = await client.CreateAsync(request);
 ```
 ```curl
 curl -X POST \
@@ -653,25 +666,27 @@ preference.save();
 ===
 Agrega el código en la preferencia y reemplaza el valor PIXEL_ID por tu identificador.
 ===
-List<Track> tracks = new List<Track>();
 // Asocia tu píxel de Facebook
-tracks.Add(
-    new Track
+var tracks = new List<PreferenceTrackRequest>
+{
+    new PreferenceTrackRequest
     {
         Type = "facebook_ad",
-        Values = new JObject
+        Values = new PreferenceTrackValuesRequest
         {
-            { "pixel_id", "PIXEL_ID" }
-        }
-    });
-
-MercadoPago.Resources.Preference preference = new MercadoPago.Resources.Preference
-{
-    // ...
-    Tracks = tracks
+            PixelId = "PIXEL_ID",
+        },
+    },
 };
 
-preference.Save();
+var request = new PreferenceRequest
+{
+    // ...
+    Tracks = tracks,
+};
+
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
 ```
 ```curl
 ===
@@ -790,26 +805,28 @@ preference.save();
 ===
 Agrega el código en la preferencia y reemplaza los valores CONVERSION\_ID y CONVERSION\_LABEL por los datos de tu etiqueta.
 ===
-List<Track> tracks = new List<Track>();
 // Asocia tu etiqueta
-tracks.Add(
-    new Track
-    {
-        Type = "google_ad",
-        Values = new JObject
-        {
-            { "conversion_id", "CONVERSION_ID" },
-            { "conversion_label", "CONVERSION_LABEL" }
-        }
-    });
-
-MercadoPago.Resources.Preference preference = new MercadoPago.Resources.Preference
+var tracks = new List<PreferenceTrackRequest>
 {
-    ...
-    Tracks = tracks
+    new PreferenceTrackRequest
+    {
+        Type = "facebook_ad",
+        Values = new PreferenceTrackValuesRequest
+        {
+            ConversionId = "CONVERSION_ID",
+            ConversionLabel = "CONVERSION_LABEL",
+        },
+    },
 };
 
-preference.Save();
+var request = new PreferenceRequest
+{
+    // ...
+    Tracks = tracks,
+};
+
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
 ```
 ```curl
 ===
@@ -905,9 +922,9 @@ sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN', request_options: request_options)
 ===
 Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
 ===
-MercadoPago.SDK.PlatformId    = "PLATFORM_ID";
-MercadoPago.SDK.IntegratorId  = "INTEGRATOR_ID";
-MercadoPago.SDK.CorporationId = "CORPORATION_ID";
+MercadoPagoConfig.PlatformId    = "PLATFORM_ID";
+MercadoPagoConfig.IntegratorId  = "INTEGRATOR_ID";
+MercadoPagoConfig.CorporationId = "CORPORATION_ID";
 ```
 ```curl
 ===
