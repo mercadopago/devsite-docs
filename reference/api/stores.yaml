@@ -10,7 +10,7 @@ paths:
       tags:
         - $ref: '#/tags/qr-code'
       summary: Get a Store
-      description: Get a Store.
+      description: Check all the information of a physical store with the ID of the branch you want
       parameters:
         - name: id
           in: path
@@ -126,7 +126,7 @@ paths:
       tags:
         - $ref: '#/tags/qr-code'
       summary: Create a store
-      description: Create a store for the user.
+      description: Generates a physical store where customers can purchase products or services. You can create more than one store per account
       parameters:
         - name: user_id
           in: path
@@ -291,8 +291,8 @@ paths:
     get:
       tags:
         - $ref: '#/tags/qr-code'
-      summary: Get Stores
-      description: Get Stores.
+      summary: Search Stores
+      description: Find all the information of the stores generated through specific filters
       parameters:
         - name: user_id
           in: path
@@ -444,7 +444,7 @@ paths:
       tags:
         - $ref: '#/tags/qr-code'
       summary: Update a Store
-      description: Update a Store.
+      description: Renew the data of a physical shop. Indicate the ID of the seller and the store and send the parameters with the information you want to update
       parameters:
         - name: user_id
           in: path
@@ -538,8 +538,8 @@ paths:
     delete:
       tags:
         - $ref: '#/tags/qr-code'
-      summary: Remove a Store
-      description: Remove a Store.
+      summary: Delete a Store
+      description: Delete a physical shop whenever you need it with the ID of the store
       parameters:
         - name: user_id
           in: path

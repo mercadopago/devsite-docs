@@ -10,7 +10,7 @@ paths:
       tags:
         - $ref: '#/tags/qr-code'
       summary: Create a POS
-      description: Create a POS.
+      description: Generate a Point of Sale in a store. Each POS will have a unique QR Code linked to it
       requestBody:
         content:
           application/json:
@@ -198,7 +198,7 @@ paths:
       tags:
         - $ref: '#/tags/qr-code'
       summary: Get all POS
-      description: Get all POS.
+      description: Get the information about all of your stores.
       responses:
         '200':
           description: Success
@@ -316,7 +316,7 @@ paths:
       tags:
         - $ref: '#/tags/qr-code'
       summary: Get a POS
-      description: Get a POS.
+      description: Check all the information of a Point of Sale with the ID of the POS you want
       parameters:
         - name: id
           in: path
@@ -368,7 +368,7 @@ paths:
       tags:
         - $ref: '#/tags/qr-code'
       summary: Update a POS
-      description: Update a POS.
+      description: Renew the data of a Point of Sale. Indicate the ID of the POS and send the parameters with the information you want to update
       parameters:
         - name: id
           in: path
@@ -488,7 +488,7 @@ paths:
       tags:
         - $ref: '#/tags/qr-code'
       summary: Delete a POS
-      description: Delete a POS.
+      description: Delete a Point of Sale whenever you need it with the ID of the POS
       parameters:
         - name: id
           in: path
