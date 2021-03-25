@@ -55,6 +55,24 @@ We have released a new version of SDK Python 2.0.0.
 >
 > [Check GitHub](https://github.com/mercadopago/sdk-python/releases/tag/2.0.0) for further details regarding this release.
 
+### March 22th
+
+> CHANGELOG
+>
+> New version of SDK NodeJS
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK NODEJS
+
+We have released a new version of SDK NodeJS 1.5.6.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.6) for further details regarding this release.
+
 ### March 10th
 
 > CHANGELOG

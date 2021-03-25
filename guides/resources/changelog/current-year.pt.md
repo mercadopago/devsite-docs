@@ -55,6 +55,24 @@ Lançamos uma nova versão do SDK Python 2.0.0.
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-python/releases/tag/2.0.0).
 
+### 22 de março
+
+> CHANGELOG
+>
+> Nova versão SDK NodeJS
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK NODEJS
+
+Lançamos a nova versão 1.5.6 do SDK NodeJS .
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.6).
+
 ### 10 de março
 
 > CHANGELOG
