@@ -1,0 +1,2007 @@
+openapi: 3.0.0
+servers:
+  - url: https://api.mercadopago.com
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
+paths:
+  /payments:
+    post:
+      tags:
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
+        - $ref: '#/tags/mobile-checkout'
+        - $ref: '#/tags/qr-code'
+        - $ref: '#/tags/subscriptions'
+      summary: Create payments
+      description: Create a payment and add all the information you need. Remember to add the payment details and the payer's information
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                additional_info:
+                  type: object
+                  description: >-
+                    Data that could improve fraud analysis and conversion rates.
+                    Try to send as much information as possible.
+                  properties:
+                    ip_address:
+                      type: string
+                      description: >-
+                        IP from where the request comes from (only for bank
+                        transfers).
+                    items:
+                      type: array
+                      description: List of items to be paid.
+                      items:
+                        type: object
+                        properties:
+                          id:
+                            type: string
+                            description: Item code.
+                          title:
+                            type: string
+                            description: Item name.
+                          description:
+                            type: string
+                            description: Long item description.
+                          picture_url:
+                            type: string
+                            description: Image URL.
+                          category_id:
+                            type: string
+                            description: Category of the item.
+                          quantity:
+                            type: number
+                            description: Item's quantity.
+                          unit_price:
+                            type: number
+                            description: Unit price.
+                    payer:
+                      type: object
+                      description: Buyer's information.
+                      properties:
+                        first_name:
+                          type: string
+                          description: Buyer's name.
+                        last_name:
+                          type: string
+                          description: Buyer's last name.
+                        phone:
+                          type: object
+                          description: Buyer's phone.
+                          properties:
+                            area_code:
+                              type: string
+                              description: Area code.
+                            number:
+                              type: string
+                              description: Phone number.
+                        address:
+                          type: object
+                          description: Address.
+                          properties:
+                            zip_code:
+                              type: string
+                              description: Zip code.
+                            street_name:
+                              type: string
+                              description: Street name.
+                            street_number:
+                              type: number
+                              description: Number.
+                        registration_date:
+                          type: string
+                          format: date
+                          description: Date of registration of the buyer on your site.
+                    shipments:
+                      type: object
+                      description: Shipping information.
+                      properties:
+                        receiver_address:
+                          type: object
+                          description: Buyer's address.
+                          properties:
+                            zip_code:
+                              type: string
+                              description: Zip code.
+                            state_name:
+                              type: string
+                              description: State.
+                            city_name:
+                              type: string
+                              description: City Name.
+                            street_name:
+                              type: string
+                              description: Street name.
+                            street_number:
+                              type: number
+                              description: Number
+                            floor:
+                              type: string
+                              description: Floor.
+                            apartment:
+                              type: string
+                              description: Department.
+                    barcode:
+                      type: object
+                      description: Barcode information.
+                      properties:
+                        type:
+                          type: string
+                          description: Encoding type.
+                        content:
+                          type: string
+                          description: Barcode generated.
+                        width:
+                          type: number
+                          description: Width of barcode.
+                        height:
+                          type: number
+                          description: Height of barcode.
+                application_fee:
+                  type: number
+                  description: Fee collected by a marketplace or Mercado Pago Application.
+                binary_mode:
+                  type: boolean
+                  description: >-
+                    When set to true, the payment can only be approved or
+                    rejected. Otherwise in_process status is added.
+                callback_url:
+                  type: string
+                  description: >-
+                    URL where mercadopago does the final redirect (only for bank
+                    transfers).
+                campaign_id:
+                  type: number
+                  description: Discount campaign ID.
+                capture:
+                  type: boolean
+                  description: >-
+                    Determines if the payment should be captured (true, default
+                    value) or just reserved (false).
+                coupon_amount:
+                  type: number
+                  description: Amount of the coupon discount.
+                coupon_code:
+                  type: string
+                  description: Discount campaign with a specific code.
+                description:
+                  type: string
+                  description: Payment reason or item title.
+                differential_pricing_id:
+                  type: number
+                  description: Id of the scheme for the absorption of financing fee.
+                date_of_expiration:
+                  type: string
+                  format: date
+                  description: Payment’s expiration date.
+                external_reference:
+                  type: string
+                  description: ID given by the merchant in their system.
+                installments:
+                  type: number
+                  description: Selected quantity of installments.
+                issuer_id:
+                  type: string
+                  description: Payment method issuer.
+                metadata:
+                  type: object
+                  description: >-
+                    Valid JSON that can be attached to the payment to record
+                    additional attributes of the merchant.
+                notification_url:
+                  type: string
+                  description: >-
+                    URL where Mercado Pago will send notifications associated to
+                    changes in this payment
+                order:
+                  type: object
+                  description: Order identifier.
+                  properties:
+                    type:
+                      type: string
+                      description: Type of order.
+                    id:
+                      type: number
+                      description: Id of the associated purchase order.
+                payer:
+                  type: object
+                  description: Identifies the buyer.
+                  properties:
+                    entity_type:
+                      type: string
+                      description: Entity type of the payer (only for bank transfers).
+                    type:
+                      type: string
+                      description: >-
+                        Identification type of the associated payer (mandatory
+                        if the Payer is a Customer).
+                    id:
+                      type: string
+                      description: Identification of the associated payer.
+                    email:
+                      type: string
+                      description: Email.
+                    identification:
+                      type: object
+                      description: Personal identification.
+                      properties:
+                        type:
+                          type: string
+                          description: Identification type.
+                        number:
+                          type: string
+                          description: Identification number.
+                    phone:
+                      type: object
+                      description: Phone of the associated payer.
+                      properties:
+                        area_code:
+                          type: string
+                          description: Phone area code.
+                        number:
+                          type: string
+                          description: Phone number.
+                        extension:
+                          type: string
+                          description: Phone number's extension.
+                    first_name:
+                      type: string
+                      description: First name of the associated payer.
+                    last_name:
+                      type: string
+                      description: Last name of the associated payer.
+                payment_method_id:
+                  type: string
+                  description: Payment method chosen to do the payment.
+                statement_descriptor:
+                  type: string
+                  description: >-
+                    How will look the payment in the card bill (e.g.:
+                    MERCADOPAGO).
+                token:
+                  type: string
+                  description: Card token ID. (Required for credit card)
+                transaction_amount:
+                  type: number
+                  description: Product cost.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: number
+                    example: 20359978
+                    description: id
+                  date_created:
+                    type: string
+                    example: 2019-07-10T14:47:58.000Z
+                    description: date_created
+                  date_approved:
+                    type: string
+                    example: 2019-07-10T14:47:58.000Z
+                    description: date_approved
+                  date_last_updated:
+                    type: string
+                    example: 2019-07-10T14:47:58.000Z
+                    description: date_last_updated
+                  date_of_expiration:
+                    type: string
+                    format: nullable
+                    description: date_of_expiration
+                  money_release_date:
+                    type: string
+                    example: 2019-07-24T14:47:58.000Z
+                    description: money_release_date
+                  operation_type:
+                    type: string
+                    example: regular_payment
+                    description: operation_type
+                  issuer_id:
+                    type: string
+                    example: 25
+                    description: issuer_id
+                  payment_method_id:
+                    type: string
+                    example: visa
+                    description: payment_method_id
+                  payment_type_id:
+                    type: string
+                    example: credit_card
+                    description: payment_type_id
+                  status:
+                    type: string
+                    example: approved
+                    description: status
+                  status_detail:
+                    type: string
+                    example: accredited
+                    description: status_detail
+                  currency_id:
+                    type: string
+                    example: $
+                    description: currency_id
+                  description:
+                    type: string
+                    example: >-
+                      Point Mini a maquininha que dá o dinheiro de suas vendas
+                      na hora
+                    description: description
+                  live_mode:
+                    type: boolean
+                    description: live_mode
+                  sponsor_id:
+                    type: string
+                    format: nullable
+                    description: sponsor_id
+                  authorization_code:
+                    type: string
+                    format: nullable
+                    description: authorization_code
+                  money_release_schema:
+                    type: string
+                    format: nullable
+                    description: money_release_schema
+                  taxes_amount:
+                    type: number
+                    example: 0
+                    description: taxes_amount
+                  counter_currency:
+                    type: string
+                    format: nullable
+                    description: counter_currency
+                  shipping_amount:
+                    type: number
+                    example: 0
+                    description: shipping_amount
+                  pos_id:
+                    type: string
+                    format: nullable
+                    description: pos_id
+                  store_id:
+                    type: string
+                    format: nullable
+                    description: store_id
+                  collector_id:
+                    type: number
+                    example: 448876418
+                    description: collector_id
+                  payer:
+                    type: object
+                    properties:
+                      first_name:
+                        type: string
+                        example: Test
+                        description: first_name
+                      last_name:
+                        type: string
+                        example: Test
+                        description: last_name
+                      email:
+                        type: string
+                        example: test_user_80507629@testuser.com
+                        description: email
+                      identification:
+                        type: object
+                        properties:
+                          number:
+                            type: string
+                            example: 19119119100
+                            description: number
+                          type:
+                            type: string
+                            example: CPF
+                            description: type
+                        description: identification
+                      phone:
+                        type: object
+                        properties:
+                          area_code:
+                            type: string
+                            example: 11
+                            description: area_code
+                          number:
+                            type: string
+                            example: 987654321
+                            description: number
+                          extension:
+                            type: string
+                            example: null
+                            description: extension
+                        description: phone
+                      type:
+                        type: string
+                        example: guest
+                        description: type
+                      entity_type:
+                        type: string
+                        format: nullable
+                        description: entity_type
+                      id:
+                        type: string
+                        format: nullable
+                        description: id
+                    description: payer
+                  metadata:
+                    type: object
+                    description: metadata
+                  additional_info:
+                    type: object
+                    properties:
+                      items:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: string
+                              example: PR0001
+                              description: id
+                            title:
+                              type: string
+                              example: Point Mini
+                              description: title
+                            description:
+                              type: string
+                              example: >-
+                                Producto Point para cobros con tarjetas mediante
+                                bluetooth
+                              description: description
+                            picture_url:
+                              type: string
+                              example: >-
+                                https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png
+                              description: picture_url
+                            category_id:
+                              type: string
+                              example: electronics
+                              description: category_id
+                            quantity:
+                              type: number
+                              example: 1
+                              description: quantity
+                            unit_price:
+                              type: number
+                              example: 58.8
+                              description: unit_price
+                        description: items
+                      payer:
+                        type: object
+                        properties:
+                          phone:
+                            type: object
+                            properties:
+                              area_code:
+                                type: string
+                                example: 11
+                                description: area_code
+                              number:
+                                type: string
+                                example: 987654321
+                                description: number
+                            description: phone
+                          address:
+                            type: object
+                            properties:
+                              zip_code:
+                                type: string
+                                example: 06233-200
+                                description: zip_code
+                              street_name:
+                                type: string
+                                example: Av das Nacoes Unidas
+                                description: street_name
+                              street_number:
+                                type: string
+                                example: 3003
+                                description: street_number
+                            description: address
+                          first_name:
+                            type: string
+                            example: Nome
+                            description: first_name
+                          last_name:
+                            type: string
+                            example: Sobrenome
+                            description: last_name
+                          registration_date:
+                            type: string
+                            example: 2019-01-01T15:01:01.000Z
+                            description: registration_date
+                        description: payer
+                      shipments:
+                        type: object
+                        properties:
+                          receiver_address:
+                            type: object
+                            properties:
+                              street_name:
+                                type: string
+                                example: Av das Nacoes Unidas
+                                description: street_name
+                              street_number:
+                                type: number
+                                example: 3003
+                                description: street_number
+                              zip_code:
+                                type: string
+                                example: 6233200
+                                description: zip_code
+                              city_name:
+                                type: string
+                                example: Buzios
+                                description: city_name
+                              state_name:
+                                type: string
+                                example: Rio de Janeiro
+                                description: state_name
+                            description: receiver_address
+                        description: shipments
+                    description: additional_info
+                  order:
+                    type: object
+                    description: order
+                  external_reference:
+                    type: string
+                    example: MP0001
+                    description: external_reference
+                  transaction_amount:
+                    type: number
+                    example: 58.8
+                    description: transaction_amount
+                  transaction_amount_refunded:
+                    type: number
+                    example: 0
+                    description: transaction_amount_refunded
+                  coupon_amount:
+                    type: number
+                    example: 0
+                    description: coupon_amount
+                  differential_pricing_id:
+                    type: string
+                    format: nullable
+                    description: differential_pricing_id
+                  deduction_schema:
+                    type: string
+                    format: nullable
+                    description: deduction_schema
+                  transaction_details:
+                    type: object
+                    properties:
+                      payment_method_reference_id:
+                        type: string
+                        format: nullable
+                        description: payment_method_reference_id
+                      net_received_amount:
+                        type: number
+                        example: 56.16
+                        description: net_received_amount
+                      total_paid_amount:
+                        type: number
+                        example: 58.8
+                        description: total_paid_amount
+                      overpaid_amount:
+                        type: number
+                        example: 0
+                        description: overpaid_amount
+                      external_resource_url:
+                        type: string
+                        format: nullable
+                        description: external_resource_url
+                      installment_amount:
+                        type: number
+                        example: 58.8
+                        description: installment_amount
+                      financial_institution:
+                        type: string
+                        format: nullable
+                        description: financial_institution
+                      payable_deferral_period:
+                        type: string
+                        format: nullable
+                        description: payable_deferral_period
+                      acquirer_reference:
+                        type: string
+                        format: nullable
+                        description: acquirer_reference
+                    description: transaction_details
+                  fee_details:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        type:
+                          type: string
+                          example: mercadopago_fee
+                          description: type
+                        amount:
+                          type: number
+                          example: 2.64
+                          description: amount
+                        fee_payer:
+                          type: string
+                          example: collector
+                          description: fee_payer
+                    description: fee_details
+                  captured:
+                    type: boolean
+                    description: captured
+                  binary_mode:
+                    type: boolean
+                    description: binary_mode
+                  call_for_authorize_id:
+                    type: string
+                    format: nullable
+                    description: call_for_authorize_id
+                  statement_descriptor:
+                    type: string
+                    example: MercadoPago
+                    description: statement_descriptor
+                  installments:
+                    type: number
+                    example: 1
+                    description: installments
+                  card:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        format: nullable
+                        description: id
+                      first_six_digits:
+                        type: string
+                        example: 423564
+                        description: first_six_digits
+                      last_four_digits:
+                        type: string
+                        example: 5682
+                        description: last_four_digits
+                      expiration_month:
+                        type: number
+                        example: 6
+                        description: expiration_month
+                      expiration_year:
+                        type: number
+                        example: 2023
+                        description: expiration_year
+                      date_created:
+                        type: string
+                        example: 2019-07-10T14:47:58.000Z
+                        description: date_created
+                      date_last_updated:
+                        type: string
+                        example: 2019-07-10T14:47:58.000Z
+                        description: date_last_updated
+                      cardholder:
+                        type: object
+                        properties:
+                          name:
+                            type: string
+                            example: APRO
+                            description: name
+                          identification:
+                            type: object
+                            properties:
+                              number:
+                                type: string
+                                example: 19119119100
+                                description: number
+                              type:
+                                type: string
+                                example: CPF
+                                description: type
+                            description: identification
+                        description: cardholder
+                    description: card
+                  notification_url:
+                    type: string
+                    example: https://www.suaurl.com/notificacoes/
+                    description: notification_url
+                  processing_mode:
+                    type: string
+                    example: aggregator
+                    description: processing_mode
+                  merchant_account_id:
+                    type: string
+                    format: nullable
+                    description: merchant_account_id
+                  acquirer:
+                    type: string
+                    format: nullable
+                    description: acquirer
+                  merchant_number:
+                    type: string
+                    format: nullable
+                    description: merchant_number
+                  point_of_interaction:
+                    type: object
+                    properties:
+                      type:
+                        type: string
+                        example: PIX
+                        description: Payment type identifier
+                      sub_type:
+                        type: string
+                        example: null
+                        description: Secondary identifier of the payment type
+                      application_data:
+                        type: object
+                        properties:
+                          name:
+                            type: string
+                            example: NAME_SDK
+                            description: Name
+                          version:
+                            type: string
+                            example: VERSION_NUMBER
+                            description: Current version
+                        description: Information about the application that processes the payment
+                      transaction_data:
+                        type: object
+                        properties:
+                          qr_code_base64:
+                            type: string
+                            example: iVBORw0KGgoAAAANSUhEUgAABRQAAAUUCAYAAACu5p7oAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAIABJREFUeJzs2luO3LiWQNFmI+Y/Zd6vRt36KGNXi7ZOBtcagHD4kNLeiLX33v8DAAAAABD879sDAAAAAAA/h6AIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCAAAAAJmgCAAAAABkgiIAAAAAkAmKAAAAAEAmKAIAAAAAmaAIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCA...
+                            description: Data to render the QR code
+                          qr_code:
+                            type: string
+                            example: 00020126600014br.gov.bcb.pix0117test@testuser.com0217dados adicionais520400005303986540510.005802BR5913Maria Silva6008Brasilia62070503***6304E2CA
+                            description: Data to build a payment code to copy and paste
+                        description: Information on the pending payment that was generated
+                    description: Information from the application that processes the payment and receives regulatory data
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 1--Params-Error-
+                      - 3--Token-must-be-for-test-
+                      - 5--Must-provide-your-access-token-to-proceed-
+                      - >-
+                        23--The-following-parameters-must-be-valid-date-and-format--yyyy-MM-dd-T-HH-mm-ssz--date-of-expiration-
+                      - 1000--Number-of-rows-exceeded-the-limits-
+                      - 1001--Date-format-must-be-yyyy-MM-dd-T-HH-mm-ss-SSSZ-
+                      - >-
+                        2001--Already-posted-the-same-request-in-the-last-minute-
+                      - 2002--Customer-not-found-
+                      - 2004--POST-to-Gateway-Transactions-API-fail-
+                      - 2006--Card-Token-not-found-
+                      - 2007--Connection-to-Card-Token-API-fail-
+                      - 2009--Card-token-issuer-can-t-be-null-
+                      - 2060--The-customer-can-t-be-equal-to-the-collector-
+                      - >-
+                        3000--You-must-provide-your-cardholder-name-with-your-card-data-
+                      - >-
+                        3001--You-must-provide-your-cardissuer-id-with-your-card-data-
+                      - 3003--Invalid-card-token-id-
+                      - 3004--Invalid-parameter-site-id-
+                      - >-
+                        3005--Not-valid-action--the-resource-is-in-a-state-that-does-not-allow-this-operation--For-more-information-see-the-state-that-has-the-resource-
+                      - 3006--Invalid-parameter-cardtoken-id-
+                      - 3007--The-parameter-client-id-can-not-be-null-or-empty-
+                      - 3008--Not-found-Cardtoken-
+                      - 3009--unauthorized-client-id-
+                      - 3010--Not-found-card-on-whitelist-
+                      - 3011--Not-found-payment-method-
+                      - 3012--Invalid-parameter-security-code-length-
+                      - >-
+                        3013--The-parameter-security-code-is-a-required-field-can-not-be-null-or-empty-
+                      - 3014--Invalid-parameter-payment-method-
+                      - 3015--Invalid-parameter-card-number-length-
+                      - 3016--Invalid-parameter-card-number-
+                      - >-
+                        3017--The-parameter-card-number-id-can-not-be-null-or-empty-
+                      - >-
+                        3018--The-parameter-expiration-month-can-not-be-null-or-empty-
+                      - >-
+                        3019--The-parameter-expiration-year-can-not-be-null-or-empty-
+                      - >-
+                        3020--The-parameter-cardholder-name-can-not-be-null-or-empty-
+                      - >-
+                        3021--The-parameter-cardholder-document-number-can-not-be-null-or-empty-
+                      - >-
+                        3022--The-parameter-cardholder-document-type-can-not-be-null-or-empty-
+                      - >-
+                        3023--The-parameter-cardholder-document-subtype-can-not-be-null-or-empty-
+                      - >-
+                        3024--Not-valid-action---partial-refund-unsupported-for-this-transaction-
+                      - 3025--Invalid-Auth-Code-
+                      - 3026--Invalid-card-id-for-this-payment-method-id-
+                      - 3027--Invalid-payment-type-id-
+                      - 3028--Invalid-payment-method-id-
+                      - 3029--Invalid-card-expiration-month-
+                      - 3030--Invalid-card-expiration-year-
+                      - 4000--card-atributte-can-t-be-null-
+                      - 4001--payment-method-id-atributte-can-t-be-null-
+                      - 4002--transaction-amount-atributte-can-t-be-null-
+                      - 4003--transaction-amount-atributte-must-be-numeric-
+                      - 4004--installments-atributte-can-t-be-null-
+                      - 4005--installments-atributte-must-be-numeric-
+                      - 4006--payer-atributte-is-malformed-
+                      - 4007--site-id-atributte-can-t-be-null-
+                      - 4012--payer-id-atributte-can-t-be-null-
+                      - 4013--payer-type-atributte-can-t-be-null-
+                      - >-
+                        4015--payment-method-reference-id-atributte-can-t-be-null-
+                      - >-
+                        4016--payment-method-reference-id-atributte-must-be-numeric-
+                      - 4017--status-atributte-can-t-be-null-
+                      - 4018--payment-id-atributte-can-t-be-null-
+                      - 4019--payment-id-atributte-must-be-numeric-
+                      - 4020--notificaction-url-atributte-must-be-url-valid-
+                      - >-
+                        4021--notificaction-url-atributte-must-be-shorter-than-500-characters-
+                      - 4022--metadata-atributte-must-be-a-valid-JSON-
+                      - 4023--transaction-amount-atributte-can-t-be-null-
+                      - 4024--transaction-amount-atributte-must-be-numeric-
+                      - 4025--refund-id-can-t-be-null-
+                      - 4026--Invalid-coupon-amount-
+                      - 4027--campaign-id-atributte-must-be-numeric-
+                      - 4028--coupon-amount-atributte-must-be-numeric-
+                      - 4029--Invalid-payer-type-
+                      - 4037--Invalid-transaction-amount-
+                      - >-
+                        4038--application-fee-cannot-be-bigger-than-transaction-amount-
+                      - 4039--application-fee-cannot-be-a-negative-value-
+                      - 4050--payer-email-must-be-a-valid-email-
+                      - 4051--payer-email-must-be-shorter-than-254-characters-
+                      - 7523--Invalid-expiration-date-
+        '403':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 4--The-caller-is-not-authorized-to-access-this-resource-
+                      - >-
+                        3002--The-caller-is-not-authorized-to-perform-this-action-
+        '404':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 2000--Payment-not-found
+  /payments/{id}:
+    get:
+      tags:
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
+        - $ref: '#/tags/mobile-checkout'
+        - $ref: '#/tags/qr-code'
+        - $ref: '#/tags/subscriptions'
+      summary: Get a payment
+      description: See all the information of a payment through the payment ID
+      parameters:
+        - name: id
+          in: path
+          description: The Id of the payment
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: 1
+                    description: id
+                  date_created:
+                    type: string
+                    example: 2017-08-31T11:26:38.000Z
+                    description: date_created
+                  date_approved:
+                    type: string
+                    example: 2017-08-31T11:26:38.000Z
+                    description: date_approved
+                  date_last_updated:
+                    type: string
+                    example: 2017-08-31T11:26:38.000Z
+                    description: date_last_updated
+                  date_of_expiration:
+                    type: string
+                    format: nullable
+                    description: date_of_expiration
+                  money_release_date:
+                    type: string
+                    example: 2017-09-14T11:26:38.000Z
+                    description: money_release_date
+                  operation_type:
+                    type: string
+                    example: money_transfer
+                    description: operation_type
+                  issuer_id:
+                    type: string
+                    format: nullable
+                    description: issuer_id
+                  payment_method_id:
+                    type: string
+                    example: account_money
+                    description: payment_method_id
+                  payment_type_id:
+                    type: string
+                    example: account_money
+                    description: payment_type_id
+                  status:
+                    type: string
+                    example: approved
+                    description: status
+                  status_detail:
+                    type: string
+                    example: accredited
+                    description: status_detail
+                  currency_id:
+                    type: string
+                    example: $
+                    description: currency_id
+                  description:
+                    type: string
+                    example: Pago Pizza
+                    description: description
+                  live_mode:
+                    type: boolean
+                    description: live_mode
+                  sponsor_id:
+                    type: string
+                    format: nullable
+                    description: sponsor_id
+                  authorization_code:
+                    type: string
+                    format: nullable
+                    description: authorization_code
+                  money_release_schema:
+                    type: string
+                    format: nullable
+                    description: money_release_schema
+                  counter_currency:
+                    type: string
+                    format: nullable
+                    description: counter_currency
+                  collector_id:
+                    type: string
+                    example: 2
+                    description: collector_id
+                  payer:
+                    type: object
+                    properties:
+                      type:
+                        type: string
+                        example: registered
+                        description: type
+                      id:
+                        type: string
+                        example: 1
+                        description: id
+                      email:
+                        type: string
+                        example: afriend@gmail.com
+                        description: email
+                      identification:
+                        type: object
+                        properties:
+                          type:
+                            type: string
+                            example: DNI
+                            description: type
+                          number:
+                            type: string
+                            example: 12345678
+                            description: number
+                        description: identification
+                      phone:
+                        type: object
+                        properties:
+                          area_code:
+                            type: string
+                            format: nullable
+                            description: area_code
+                          number:
+                            type: string
+                            example: 11123456789
+                            description: number
+                          extension:
+                            type: string
+                            format: nullable
+                            description: extension
+                        description: phone
+                      first_name:
+                        type: string
+                        example: Name
+                        description: first_name
+                      last_name:
+                        type: string
+                        example: LastName
+                        description: last_name
+                      entity_type:
+                        type: string
+                        format: nullable
+                        description: entity_type
+                    description: payer
+                  metadata:
+                    type: object
+                    description: metadata
+                  additional_info:
+                    type: object
+                    description: additional_info
+                  order:
+                    type: object
+                    description: order
+                  external_reference:
+                    type: string
+                    format: nullable
+                    description: external_reference
+                  transaction_amount:
+                    type: number
+                    example: 250
+                    description: transaction_amount
+                  transaction_amount_refunded:
+                    type: number
+                    example: 0
+                    description: transaction_amount_refunded
+                  coupon_amount:
+                    type: number
+                    example: 0
+                    description: coupon_amount
+                  differential_pricing_id:
+                    type: string
+                    format: nullable
+                    description: differential_pricing_id
+                  deduction_schema:
+                    type: string
+                    format: nullable
+                    description: deduction_schema
+                  transaction_details:
+                    type: object
+                    properties:
+                      net_received_amount:
+                        type: number
+                        example: 250
+                        description: net_received_amount
+                      total_paid_amount:
+                        type: number
+                        example: 250
+                        description: total_paid_amount
+                      overpaid_amount:
+                        type: number
+                        example: 0
+                        description: overpaid_amount
+                      external_resource_url:
+                        type: string
+                        format: nullable
+                        description: external_resource_url
+                      installment_amount:
+                        type: number
+                        example: 250
+                        description: installment_amount
+                      financial_institution:
+                        type: string
+                        format: nullable
+                        description: financial_institution
+                      payment_method_reference_id:
+                        type: string
+                        format: nullable
+                        description: payment_method_reference_id
+                      payable_deferral_period:
+                        type: string
+                        format: nullable
+                        description: payable_deferral_period
+                      acquirer_reference:
+                        type: string
+                        format: nullable
+                        description: acquirer_reference
+                    description: transaction_details
+                  captured:
+                    type: boolean
+                    description: captured
+                  binary_mode:
+                    type: boolean
+                    description: binary_mode
+                  call_for_authorize_id:
+                    type: string
+                    format: nullable
+                    description: call_for_authorize_id
+                  statement_descriptor:
+                    type: string
+                    format: nullable
+                    description: statement_descriptor
+                  installments:
+                    type: number
+                    example: 1
+                    description: installments
+                  card:
+                    type: object
+                    description: card
+                  notification_url:
+                    type: string
+                    format: nullable
+                    description: notification_url
+                  processing_mode:
+                    type: string
+                    format: nullable
+                    description: processing_mode
+                  merchant_account_id:
+                    type: string
+                    format: nullable
+                    description: merchant_account_id
+                  acquirer:
+                    type: string
+                    format: nullable
+                    description: acquirer
+                  merchant_number:
+                    type: string
+                    format: nullable
+                    description: merchant_number
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 1--Params-Error-
+                      - 3--Token-must-be-for-test-
+                      - 5--Must-provide-your-access-token-to-proceed-
+                      - 1000--Number-of-rows-exceeded-the-limits-
+                      - 1001--Date-format-must-be-yyyy-MM-dd-T-HH-mm-ss-SSSZ-
+                      - >-
+                        2001--Already-posted-the-same-request-in-the-last-minute-
+                      - 2002--Customer-not-found-
+                      - 2004--POST-to-Gateway-Transactions-API-fail-
+                      - 2006--Card-Token-not-found-
+                      - 2007--Connection-to-Card-Token-API-fail-
+                      - 2009--Card-token-issuer-can-t-be-null-
+                      - >-
+                        3000--You-must-provide-your-cardholder-name-with-your-card-data-
+                      - >-
+                        3001--You-must-provide-your-cardissuer-id-with-your-card-data-
+                      - 3003--Invalid-card-token-id-
+                      - 3004--Invalid-parameter-site-id-
+                      - >-
+                        3005--Not-valid-action--the-resource-is-in-a-state-that-does-not-allow-this-operation--For-more-information-see-the-state-that-has-the-resource-
+                      - 3006--Invalid-parameter-cardtoken-id-
+                      - 3007--The-parameter-client-id-can-not-be-null-or-empty-
+                      - 3008--Not-found-Cardtoken-
+                      - 3009--unauthorized-client-id-
+                      - 3010--Not-found-card-on-whitelist-
+                      - 3011--Not-found-payment-method-
+                      - 3012--Invalid-parameter-security-code-length-
+                      - >-
+                        3013--The-parameter-security-code-is-a-required-field-can-not-be-null-or-empty-
+                      - 3014--Invalid-parameter-payment-method-
+                      - 3015--Invalid-parameter-card-number-length-
+                      - 3016--Invalid-parameter-card-number-
+                      - >-
+                        3017--The-parameter-card-number-id-can-not-be-null-or-empty-
+                      - >-
+                        3018--The-parameter-expiration-month-can-not-be-null-or-empty-
+                      - >-
+                        3019--The-parameter-expiration-year-can-not-be-null-or-empty-
+                      - >-
+                        3020--The-parameter-cardholder-name-can-not-be-null-or-empty-
+                      - >-
+                        3021--The-parameter-cardholder-document-number-can-not-be-null-or-empty-
+                      - >-
+                        3022--The-parameter-cardholder-document-type-can-not-be-null-or-empty-
+                      - >-
+                        3023--The-parameter-cardholder-document-subtype-can-not-be-null-or-empty-
+                      - >-
+                        3024--Not-valid-action---partial-refund-unsupported-for-this-transaction-
+                      - 3025--Invalid-Auth-Code-
+                      - 3026--Invalid-card-id-for-this-payment-method-id-
+                      - 3027--Invalid-payment-type-id-
+                      - 3028--Invalid-payment-method-id-
+                      - 3029--Invalid-card-expiration-month-
+                      - 3030--Invalid-card-expiration-year-
+        '403':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 4--The-caller-is-not-authorized-to-access-this-resource-
+                      - >-
+                        3002--The-caller-is-not-authorized-to-perform-this-action-
+        '404':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 2000--Payment-not-found-
+    put:
+      tags:
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
+        - $ref: '#/tags/mobile-checkout'
+        - $ref: '#/tags/qr-code'
+        - $ref: '#/tags/subscriptions'
+      summary: Update a payment
+      description: Renew the details of a payment when you need it. Indicate the payment ID and send the parameters with the information you want to update
+      parameters:
+        - name: id
+          in: path
+          description: The Id of the payment
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                additional_info:
+                  type: object
+                  description: >-
+                    Data that could improve fraud analysis and conversion rates.
+                    Try to send as much information as possible.
+                  properties:
+                    ip_address:
+                      type: string
+                      description: >-
+                        IP from where the request comes from (only for bank
+                        transfers).
+                    items:
+                      type: array
+                      description: List of items to be paid.
+                      items:
+                        type: object
+                        properties:
+                          id:
+                            type: string
+                            description: Item code.
+                          title:
+                            type: string
+                            description: Item name.
+                          description:
+                            type: string
+                            description: Long item description.
+                          picture_url:
+                            type: string
+                            description: Image URL.
+                          category_id:
+                            type: string
+                            description: Category of the item.
+                          quantity:
+                            type: number
+                            description: Item's quantity.
+                          unit_price:
+                            type: number
+                            description: Unit price.
+                    payer:
+                      type: object
+                      description: Buyer's information.
+                      properties:
+                        first_name:
+                          type: string
+                          description: Buyer's name.
+                        last_name:
+                          type: string
+                          description: Buyer's last name.
+                        phone:
+                          type: object
+                          description: Buyer's phone.
+                          properties:
+                            area_code:
+                              type: string
+                              description: Area code.
+                            number:
+                              type: string
+                              description: Phone number.
+                        address:
+                          type: object
+                          description: Address.
+                          properties:
+                            zip_code:
+                              type: string
+                              description: Zip code.
+                            street_name:
+                              type: string
+                              description: Street name.
+                            street_number:
+                              type: number
+                              description: Number.
+                        registration_date:
+                          type: string
+                          format: date
+                          description: Date of registration of the buyer on your site.
+                    shipments:
+                      type: object
+                      description: Shipping information.
+                      properties:
+                        receiver_address:
+                          type: object
+                          description: Buyer's address.
+                          properties:
+                            zip_code:
+                              type: string
+                              description: Zip code.
+                            state_name:
+                              type: string
+                              description: State.
+                            city_name:
+                              type: string
+                              description: City Name.
+                            street_name:
+                              type: string
+                              description: Street name.
+                            street_number:
+                              type: number
+                              description: Number
+                            floor:
+                              type: string
+                              description: Floor.
+                            apartment:
+                              type: string
+                              description: Department.
+                    barcode:
+                      type: object
+                      description: Barcode information.
+                      properties:
+                        type:
+                          type: string
+                          description: Encoding type.
+                        content:
+                          type: string
+                          description: Barcode generated.
+                        width:
+                          type: number
+                          description: Width of barcode.
+                        height:
+                          type: number
+                          description: Height of barcode.
+                application_fee:
+                  type: number
+                  description: Fee collected by a marketplace or Mercado Pago Application.
+                binary_mode:
+                  type: boolean
+                  description: >-
+                    When set to true, the payment can only be approved or
+                    rejected. Otherwise in_process status is added.
+                callback_url:
+                  type: string
+                  description: >-
+                    URL where mercadopago does the final redirect (only for bank
+                    transfers).
+                campaign_id:
+                  type: number
+                  description: Discount campaign ID.
+                capture:
+                  type: boolean
+                  description: >-
+                    Determines if the payment should be captured (true, default
+                    value) or just reserved (false).
+                coupon_amount:
+                  type: number
+                  description: Amount of the coupon discount.
+                coupon_code:
+                  type: string
+                  description: Discount campaign with a specific code.
+                description:
+                  type: string
+                  description: Payment reason or item title.
+                differential_pricing_id:
+                  type: number
+                  description: Id of the scheme for the absorption of financing fee.
+                date_of_expiration:
+                  type: string
+                  format: date
+                  description: Payment’s expiration date.
+                external_reference:
+                  type: string
+                  description: ID given by the merchant in their system.
+                installments:
+                  type: number
+                  description: Selected quantity of installments.
+                issuer_id:
+                  type: string
+                  description: Payment method issuer.
+                metadata:
+                  type: object
+                  description: >-
+                    Valid JSON that can be attached to the payment to record
+                    additional attributes of the merchant.
+                notification_url:
+                  type: string
+                  description: >-
+                    URL where Mercado Pago will send notifications associated to
+                    changes in this payment
+                order:
+                  type: object
+                  description: Order identifier.
+                  properties:
+                    type:
+                      type: string
+                      description: Type of order.
+                    id:
+                      type: number
+                      description: Id of the associated purchase order.
+                payer:
+                  type: object
+                  description: Identifies the buyer.
+                  properties:
+                    entity_type:
+                      type: string
+                      description: Entity type of the payer (only for bank transfers).
+                    type:
+                      type: string
+                      description: >-
+                        Identification type of the associated payer (mandatory
+                        if the Payer is a Customer).
+                    id:
+                      type: string
+                      description: Identification of the associated payer.
+                    email:
+                      type: string
+                      description: Email.
+                    identification:
+                      type: object
+                      description: Personal identification.
+                      properties:
+                        type:
+                          type: string
+                          description: Identification type.
+                        number:
+                          type: string
+                          description: Identification number.
+                    phone:
+                      type: object
+                      description: Phone of the associated payer.
+                      properties:
+                        area_code:
+                          type: string
+                          description: Phone area code.
+                        number:
+                          type: string
+                          description: Phone number.
+                        extension:
+                          type: string
+                          description: Phone number's extension.
+                    first_name:
+                      type: string
+                      description: First name of the associated payer.
+                    last_name:
+                      type: string
+                      description: Last name of the associated payer.
+                payment_method_id:
+                  type: string
+                  description: Payment method chosen to do the payment.
+                statement_descriptor:
+                  type: string
+                  description: >-
+                    How will look the payment in the card bill (e.g.:
+                    MERCADOPAGO).
+                token:
+                  type: string
+                  description: Card token ID. (Required for credit card)
+                transaction_amount:
+                  type: number
+                  description: Product cost.
+      responses:
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 1--Params-Error-
+                      - 3--Token-must-be-for-test-
+                      - 5--Must-provide-your-access-token-to-proceed-
+                      - 1000--Number-of-rows-exceeded-the-limits-
+                      - 1001--Date-format-must-be-yyyy-MM-dd-T-HH-mm-ss-SSSZ-
+                      - >-
+                        2001--Already-posted-the-same-request-in-the-last-minute-
+                      - 2002--Customer-not-found-
+                      - 2004--POST-to-Gateway-Transactions-API-fail-
+                      - 2006--Card-Token-not-found-
+                      - 2007--Connection-to-Card-Token-API-fail-
+                      - 2009--Card-token-issuer-can-t-be-null-
+                      - >-
+                        3000--You-must-provide-your-cardholder-name-with-your-card-data-
+                      - >-
+                        3001--You-must-provide-your-cardissuer-id-with-your-card-data-
+                      - 3003--Invalid-card-token-id-
+                      - 3004--Invalid-parameter-site-id-
+                      - >-
+                        3005--Not-valid-action--the-resource-is-in-a-state-that-does-not-allow-this-operation--For-more-information-see-the-state-that-has-the-resource-
+                      - 3006--Invalid-parameter-cardtoken-id-
+                      - 3007--The-parameter-client-id-can-not-be-null-or-empty-
+                      - 3008--Not-found-Cardtoken-
+                      - 3009--unauthorized-client-id-
+                      - 3010--Not-found-card-on-whitelist-
+                      - 3011--Not-found-payment-method-
+                      - 3012--Invalid-parameter-security-code-length-
+                      - >-
+                        3013--The-parameter-security-code-is-a-required-field-can-not-be-null-or-empty-
+                      - 3014--Invalid-parameter-payment-method-
+                      - 3015--Invalid-parameter-card-number-length-
+                      - 3016--Invalid-parameter-card-number-
+                      - >-
+                        3017--The-parameter-card-number-id-can-not-be-null-or-empty-
+                      - >-
+                        3018--The-parameter-expiration-month-can-not-be-null-or-empty-
+                      - >-
+                        3019--The-parameter-expiration-year-can-not-be-null-or-empty-
+                      - >-
+                        3020--The-parameter-cardholder-name-can-not-be-null-or-empty-
+                      - >-
+                        3021--The-parameter-cardholder-document-number-can-not-be-null-or-empty-
+                      - >-
+                        3022--The-parameter-cardholder-document-type-can-not-be-null-or-empty-
+                      - >-
+                        3023--The-parameter-cardholder-document-subtype-can-not-be-null-or-empty-
+                      - >-
+                        3024--Not-valid-action---partial-refund-unsupported-for-this-transaction-
+                      - 3025--Invalid-Auth-Code-
+                      - 3026--Invalid-card-id-for-this-payment-method-id-
+                      - 3027--Invalid-payment-type-id-
+                      - 3028--Invalid-payment-method-id-
+                      - 3029--Invalid-card-expiration-month-
+                      - 3030--Invalid-card-expiration-year-
+        '403':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 4--The-caller-is-not-authorized-to-access-this-resource-
+                      - >-
+                        3002--The-caller-is-not-authorized-to-perform-this-action-
+        '404':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 2000--Payment-not-found-
+  /payments/search:
+    get:
+      tags:
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
+        - $ref: '#/tags/mobile-checkout'
+        - $ref: '#/tags/qr-code'
+        - $ref: '#/tags/subscriptions'
+      summary: Find payments
+      description: Find all the information of the payments using specific filters or by searching a specific date range
+      parameters:
+        - name: sort
+          in: query
+          description: Define the field to sort
+          required: true
+          schema:
+            type: string
+            example: date_created
+        - name: criteria
+          in: query
+          description: The criteria result
+          required: true
+          schema:
+            type: string
+            example: desc
+        - name: external_reference
+          in: query
+          description: The external reference of the payment
+          required: true
+          schema:
+            type: string
+            example: ID_REF
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    paging:
+                      type: object
+                      properties:
+                        total:
+                          type: number
+                          example: 17493
+                          description: total
+                        limit:
+                          type: number
+                          example: 30
+                          description: limit
+                        offset:
+                          type: number
+                          example: 0
+                          description: offset
+                      description: paging
+                    results:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          id:
+                            type: string
+                            example: 1
+                            description: id
+                          date_created:
+                            type: string
+                            example: 2017-08-31T11:26:38.000Z
+                            description: date_created
+                          date_approved:
+                            type: string
+                            example: 2017-08-31T11:26:38.000Z
+                            description: date_approved
+                          date_last_updated:
+                            type: string
+                            example: 2017-08-31T11:26:38.000Z
+                            description: date_last_updated
+                          date_of_expiration:
+                            type: string
+                            format: nullable
+                            description: date_of_expiration
+                          money_release_date:
+                            type: string
+                            example: 2017-09-14T11:26:38.000Z
+                            description: money_release_date
+                          operation_type:
+                            type: string
+                            example: money_transfer
+                            description: operation_type
+                          issuer_id:
+                            type: string
+                            format: nullable
+                            description: issuer_id
+                          payment_method_id:
+                            type: string
+                            example: account_money
+                            description: payment_method_id
+                          payment_type_id:
+                            type: string
+                            example: account_money
+                            description: payment_type_id
+                          status:
+                            type: string
+                            example: approved
+                            description: status
+                          status_detail:
+                            type: string
+                            example: accredited
+                            description: status_detail
+                          currency_id:
+                            type: string
+                            example: $
+                            description: currency_id
+                          description:
+                            type: string
+                            example: Pago Pizza
+                            description: description
+                          live_mode:
+                            type: boolean
+                            description: live_mode
+                          sponsor_id:
+                            type: string
+                            format: nullable
+                            description: sponsor_id
+                          authorization_code:
+                            type: string
+                            format: nullable
+                            description: authorization_code
+                          money_release_schema:
+                            type: string
+                            format: nullable
+                            description: money_release_schema
+                          counter_currency:
+                            type: string
+                            format: nullable
+                            description: counter_currency
+                          collector_id:
+                            type: string
+                            example: 2
+                            description: collector_id
+                          payer:
+                            type: object
+                            properties:
+                              type:
+                                type: string
+                                example: registered
+                                description: type
+                              id:
+                                type: string
+                                example: 1
+                                description: id
+                              email:
+                                type: string
+                                example: afriend@gmail.com
+                                description: email
+                              identification:
+                                type: object
+                                properties:
+                                  type:
+                                    type: string
+                                    example: DNI
+                                    description: type
+                                  number:
+                                    type: string
+                                    example: 12345678
+                                    description: number
+                                description: identification
+                              phone:
+                                type: object
+                                properties:
+                                  area_code:
+                                    type: string
+                                    format: nullable
+                                    description: area_code
+                                  number:
+                                    type: string
+                                    example: 11123456789
+                                    description: number
+                                  extension:
+                                    type: string
+                                    format: nullable
+                                    description: extension
+                                description: phone
+                              first_name:
+                                type: string
+                                example: Name
+                                description: first_name
+                              last_name:
+                                type: string
+                                example: LastName
+                                description: last_name
+                              entity_type:
+                                type: string
+                                format: nullable
+                                description: entity_type
+                            description: payer
+                          metadata:
+                            type: object
+                            description: metadata
+                          additional_info:
+                            type: object
+                            description: additional_info
+                          order:
+                            type: object
+                            description: order
+                          external_reference:
+                            type: string
+                            format: nullable
+                            description: external_reference
+                          transaction_amount:
+                            type: number
+                            example: 250
+                            description: transaction_amount
+                          transaction_amount_refunded:
+                            type: number
+                            example: 0
+                            description: transaction_amount_refunded
+                          coupon_amount:
+                            type: number
+                            example: 0
+                            description: coupon_amount
+                          differential_pricing_id:
+                            type: string
+                            format: nullable
+                            description: differential_pricing_id
+                          deduction_schema:
+                            type: string
+                            format: nullable
+                            description: deduction_schema
+                          transaction_details:
+                            type: object
+                            properties:
+                              net_received_amount:
+                                type: number
+                                example: 250
+                                description: net_received_amount
+                              total_paid_amount:
+                                type: number
+                                example: 250
+                                description: total_paid_amount
+                              overpaid_amount:
+                                type: number
+                                example: 0
+                                description: overpaid_amount
+                              external_resource_url:
+                                type: string
+                                format: nullable
+                                description: external_resource_url
+                              installment_amount:
+                                type: number
+                                example: 250
+                                description: installment_amount
+                              financial_institution:
+                                type: string
+                                format: nullable
+                                description: financial_institution
+                              payment_method_reference_id:
+                                type: string
+                                format: nullable
+                                description: payment_method_reference_id
+                              payable_deferral_period:
+                                type: string
+                                format: nullable
+                                description: payable_deferral_period
+                              acquirer_reference:
+                                type: string
+                                format: nullable
+                                description: acquirer_reference
+                            description: transaction_details
+                          captured:
+                            type: boolean
+                            description: captured
+                          binary_mode:
+                            type: boolean
+                            description: binary_mode
+                          call_for_authorize_id:
+                            type: string
+                            format: nullable
+                            description: call_for_authorize_id
+                          statement_descriptor:
+                            type: string
+                            format: nullable
+                            description: statement_descriptor
+                          installments:
+                            type: number
+                            example: 1
+                            description: installments
+                          card:
+                            type: object
+                            description: card
+                          notification_url:
+                            type: string
+                            format: nullable
+                            description: notification_url
+                          processing_mode:
+                            type: string
+                            format: nullable
+                            description: processing_mode
+                          merchant_account_id:
+                            type: string
+                            format: nullable
+                            description: merchant_account_id
+                          acquirer:
+                            type: string
+                            format: nullable
+                            description: acquirer
+                          merchant_number:
+                            type: string
+                            format: nullable
+                            description: merchant_number
+                      description: results
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 1--Params-Error-
+                      - 3--Token-must-be-for-test-
+                      - 5--Must-provide-your-access-token-to-proceed-
+                      - 1000--Number-of-rows-exceeded-the-limits-
+                      - 1001--Date-format-must-be-yyyy-MM-dd-T-HH-mm-ss-SSSZ-
+                      - 1003--Invalid-sort-value-
+                      - 1004--Invalid-criteria-value-
+                      - >-
+                        2001--Already-posted-the-same-request-in-the-last-minute-
+                      - 2002--Customer-not-found-
+                      - 2004--POST-to-Gateway-Transactions-API-fail-
+                      - 2006--Card-Token-not-found-
+                      - 2007--Connection-to-Card-Token-API-fail-
+                      - 2009--Card-token-issuer-can-t-be-null-
+                      - >-
+                        3000--You-must-provide-your-cardholder-name-with-your-card-data-
+                      - >-
+                        3001--You-must-provide-your-cardissuer-id-with-your-card-data-
+                      - 3003--Invalid-card-token-id-
+                      - 3004--Invalid-parameter-site-id-
+                      - >-
+                        3005--Not-valid-action--the-resource-is-in-a-state-that-does-not-allow-this-operation--For-more-information-see-the-state-that-has-the-resource-
+                      - 3006--Invalid-parameter-cardtoken-id-
+                      - 3007--The-parameter-client-id-can-not-be-null-or-empty-
+                      - 3008--Not-found-Cardtoken-
+                      - 3009--unauthorized-client-id-
+                      - 3010--Not-found-card-on-whitelist-
+                      - 3011--Not-found-payment-method-
+                      - 3012--Invalid-parameter-security-code-length-
+                      - >-
+                        3013--The-parameter-security-code-is-a-required-field-can-not-be-null-or-empty-
+                      - 3014--Invalid-parameter-payment-method-
+                      - 3015--Invalid-parameter-card-number-length-
+                      - 3016--Invalid-parameter-card-number-
+                      - >-
+                        3017--The-parameter-card-number-id-can-not-be-null-or-empty-
+                      - >-
+                        3018--The-parameter-expiration-month-can-not-be-null-or-empty-
+                      - >-
+                        3019--The-parameter-expiration-year-can-not-be-null-or-empty-
+                      - >-
+                        3020--The-parameter-cardholder-name-can-not-be-null-or-empty-
+                      - >-
+                        3021--The-parameter-cardholder-document-number-can-not-be-null-or-empty-
+                      - >-
+                        3022--The-parameter-cardholder-document-type-can-not-be-null-or-empty-
+                      - >-
+                        3023--The-parameter-cardholder-document-subtype-can-not-be-null-or-empty-
+                      - >-
+                        3024--Not-valid-action---partial-refund-unsupported-for-this-transaction-
+                      - 3025--Invalid-Auth-Code-
+                      - 3026--Invalid-card-id-for-this-payment-method-id-
+                      - 3027--Invalid-payment-type-id-
+                      - 3028--Invalid-payment-method-id-
+                      - 3029--Invalid-card-expiration-month-
+                      - 3030--Invalid-card-expiration-year-
+        '403':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 4--The-caller-is-not-authorized-to-access-this-resource-
+                      - >-
+                        3002--The-caller-is-not-authorized-to-perform-this-action-
+        '404':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 2000--Payment-not-found-
