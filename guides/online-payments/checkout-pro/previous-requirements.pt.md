@@ -67,6 +67,12 @@ Execute o seguinte comando no seu terminal:
 ===
 nuget install mercadopago-sdk
 ```
+```python
+===
+O SDK do Mercado Pago está disponível como [pip](https://pypi.org/project/mercadopago/), para instalá-la, você deve executar o seguinte código na linha de comandos:
+===
+pip3 install mercadopago
+```
 ]]]
 
 ### 3. Obtenha suas credenciais

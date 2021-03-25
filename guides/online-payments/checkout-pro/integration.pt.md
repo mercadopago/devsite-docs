@@ -51,6 +51,10 @@ require 'mercadopago'
 // SDK de Mercado Pago
  using MercadoPago.Config;
 ```
+```python
+# SDK de Mercado Pago
+import mercadopago
+```
 ]]]
 
 <br/><br/>1.2 Adicione as [credenciais]([FAKER][CREDENTIALS][URL]) para habilitar o uso do SDK do Mercado Pago:<br/>
@@ -94,6 +98,13 @@ using MercadoPago.Config;
 
 // Configura credenciais
 MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
+```
+```python
+# SDK de Mercado Pago  
+import mercadopago
+
+# Configura credenciais
+sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 ```
 ]]]
 
@@ -221,6 +232,27 @@ var request = new PreferenceRequest
 // Cria a preferência usando o client
 var client = new PreferenceClient();
 Preference preference = await client.CreateAsync(request);
+```
+```python
+# SDK de Mercado Pago
+import mercadopago
+
+# Configura credenciais
+sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
+
+# Cria um item na preferência
+preference_data = {
+    "items": [
+        {
+            "title": "My Item",
+            "quantity": 1,
+            "unit_price": 75.76
+        }
+    ]
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
 ```
 ```curl
 curl -X POST \
@@ -362,6 +394,27 @@ var request = new PreferenceRequest
 var client = new PreferenceClient();
 Preference preference = await client.CreateAsync(request);
 ```
+```python
+# SDK de Mercado Pago
+import mercadopago
+
+# Configura credenciais
+sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
+
+# Cria um objeto de preferência
+preference_data = {
+    "items": [
+        {
+            "title": "My Item",
+            "quantity": 1,
+            "unit_price": 75
+        }
+    ]
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
+```
 ```curl
 curl -X POST \
   'https://api.mercadopago.com/checkout/preferences' \
@@ -428,6 +481,12 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 <script
   src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
   data-preference-id="@Html.DisplayFor(model => model.id)">
+</script>
+```
+```python
+<script
+  src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
+  data-preference-id="{{ preference_id }}">
 </script>
 ```
 ]]]

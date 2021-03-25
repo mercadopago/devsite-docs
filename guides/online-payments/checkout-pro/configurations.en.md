@@ -266,6 +266,19 @@ var request = new PreferenceRequest
     PaymentMethods = paymentMethods,
 };
 ```
+```python
+#...
+preference_data = {
+    "excluded_payment_methods": [
+        { "id": "master" }
+    ],
+    "excluded_payment_types": [
+        { "id": "ticket" }
+    ],
+    "installments": 12
+}
+#...
+```
 ]]]
 
 ----[mla, mlb, mco]----
@@ -453,6 +466,27 @@ var client = new PreferenceClient();
 
 // Create the preference
 Preference preference = await client.CreateAsync(request);
+```
+```python
+# Create items in the preference
+preference_data = {
+    "items": [
+        {
+            "title": "Mi producto",
+            "quantity": 1,
+            "unit_price": 75.56
+        },
+        {
+            "title": "Mi producto2",
+            "quantity": 2,
+            "unit_price": 96.56
+        }
+    ]
+}
+
+# Create a preference
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
 ```
 ```curl
 curl -X POST \
@@ -644,6 +678,26 @@ var request = new PreferenceRequest
 var client = new PreferenceClient();
 Preference preference = await client.CreateAsync(request);
 ```
+```python
+===
+Add the code in the preference and replace the value PIXEL_ID with your identifier.
+===
+# Associate your Facebook Pixel
+preference_data = {
+    # ...
+    "tracks": [
+        {
+            "type": "facebook_ad",
+            "values": {
+                "pixel_id": "PIXEL_ID"
+            }
+        }
+    ]
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
+```
 ```curl
 ===
 Add the code in the preference and replace the value PIXEL_ID with your identifier.
@@ -783,6 +837,27 @@ var request = new PreferenceRequest
 var client = new PreferenceClient();
 Preference preference = await client.CreateAsync(request);
 ```
+```python
+===
+Add the code in the preference and replace the values ​​CONVERSION_ID y CONVERSION_LABEL with your tag data.
+===
+# Associate your tag
+preference_data = {
+    # ...
+    "tracks": [
+        {
+            "type": "google_ad",
+            "values": {
+                "conversion_id": "CONVERSION_ID",
+                "conversion_label": "CONVERSION_LABEL"
+            }
+        }
+    ]
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
+```
 ```curl
 ===
 Add the code in the preference and replace the values ​​CONVERSION\_ID y CONVERSION\_LABEL with your tag data.
@@ -880,6 +955,20 @@ Add identification codes and replace any value that you wish: CORPORATION\_ID, I
 MercadoPagoConfig.PlatformId    = "PLATFORM_ID";
 MercadoPagoConfig.IntegratorId  = "INTEGRATOR_ID";
 MercadoPagoConfig.CorporationId = "CORPORATION_ID";
+```
+```python
+===
+Add identification codes and replace any value that you wish: CORPORATION_ID, INTEGRATOR_ID and PLATFORM_ID.
+===
+import mercadopago
+from mercadopago.config import RequestOptions
+
+request_options = RequestOptions(
+    corporation_id="CORPORATION_ID",
+    integrator_id="INTEGRATOR_ID",
+    platform_id="PLATFORM_ID"
+)
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN", request_options=request_options)
 ```
 ```curl
 ===

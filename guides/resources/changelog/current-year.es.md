@@ -39,6 +39,22 @@ Lanzamos una nueva versión del SDK Ruby 2.0.0.
 >
 > Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-ruby/releases/tag/2.0.0).
 
+> CHANGELOG
+>
+> Nueva versión SDK Python
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK PYTHON
+
+Lanzamos una nueva versión del SDK Python 2.0.0.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-python/releases/tag/2.0.0).
+
 ### 10 de marzo
 
 > CHANGELOG

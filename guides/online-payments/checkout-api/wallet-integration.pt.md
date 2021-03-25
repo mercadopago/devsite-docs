@@ -140,6 +140,21 @@ var request = new PreferenceRequest
 var client = new PreferenceClient();
 Preference preference = await client.CreateAsync(request);
 ```
+```python
+preference_data = {
+    "items": [
+        {
+            "title": "Meu produto",
+            "unit_price": 100,
+            "quantity": 1
+        }
+    ],
+    "purpose": "wallet_purchase"
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
+```
 ```curl
 ===
 O modo carteira funciona adicionando o atributo _purpose_ na preferência.
@@ -218,6 +233,14 @@ Depois, do seu frontend, adicione o seguinte código para exibir o botão de pag
 <script
   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
   data-preference-id="@Html.DisplayFor(model => model.id)"
+  data-button-label="Paga com Mercado Pago"
+  data-button-type="wallet">
+</script>
+```
+```python
+<script
+  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id="{{ preference_id }}"
   data-button-label="Paga com Mercado Pago"
   data-button-type="wallet">
 </script>

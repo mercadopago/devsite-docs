@@ -10,7 +10,6 @@ Para criar um cliente e associá-lo ao seu cartão, é preciso enviar o campo do
 Cada cliente será guardado com o valor `customer` e cada cartão com o valor `card`.
 
 [[[
-
 ```php
 
 <?php
@@ -104,6 +103,24 @@ var cardRequest = new CustomerCardCreateRequest
 CustomerCard card = await customerClient.CreateCardAsync(customer.Id, cardRequest);
 
 ```
+```python
+
+import mercadopago
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+customer_data = {
+  "email": "test@test.com"
+}
+customer_response = sdk.customer().create(customer_data)
+customer = customer_response["response"]
+
+card_data = {
+  "token": "9b2d63e00d66a8c721607214cedaecda"
+}
+card_response = sdk.card().create(customer["id"], card_data)
+card = card_response["response"]
+
+```
 ```curl
 
 curl -X POST \
@@ -113,7 +130,6 @@ curl -X POST \
   -d '{"token": "9b2d63e00d66a8c721607214cedaecda"}'
 
 ```
-
 ]]]
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resposta
@@ -242,7 +258,25 @@ CustomerCard card = await customerClient.CreateCardAsync(customer.Id, cardReques
 Console.WriteLine(card.Id);
 
 ```
+```python
+
+import mercadopago
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+customer_response = sdk.customer().get("247711297-jxOV430go9fx2e")
+customer = customer_response["response"]
+
+card_data = {
+  "token": "9b2d63e00d66a8c721607214cedaecda"
+}
+card_response = sdk.card().create(customer["id"], card_data)
+card = card_response["response"]
+
+print(card)
+
+```
 ```curl
+
 curl -X POST \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
@@ -254,8 +288,8 @@ curl -X POST \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
   -d '{"token": "9b2d63e00d66a8c721607214cedaecda"}'
-```
 
+```
 ]]]
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resposta
@@ -351,13 +385,19 @@ var customerClient = new CustomerClient();
 ResourcesList<CustomerCard> customerCards = await customerClient.ListCardsAsync("CUSTOMER_ID");
 
 ```
+```python
+
+cards_response = sdk.card().list_all(customer_id)
+cards = cards_response["response"]
+
+```
 ```curl
 
 curl -X GET \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
-```
 
+```
 ]]]
 
 Resposta dos dados de um cartão guardado:
@@ -521,6 +561,25 @@ var client = new PaymentClient();
 Payment payment = await client.CreateAsync(request);
 
 ```
+```python
+
+import mercadopago
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+payment_data = {
+    "transaction_amount": 100,
+    "token": 'ff8080814c11e237014c1ff593b57b4d',
+    "installments": 1,
+    "payer": {
+        "type": "customer",
+        "id": "123456789-jxOV430go9fx2e"
+    }
+}
+
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
+
+```
 ```curl
 
 curl -X POST \
@@ -538,7 +597,6 @@ curl -X POST \
 }'
 
 ```
-
 ]]]
 
 
@@ -602,6 +660,16 @@ ResultsResourcesPage<Customer> results = await customerClient.SearchAsync(search
 IList<Customer> customers = results.Results;
 
 ```
+```python
+
+filters = {
+    "email": "test@test.com"
+}
+
+customers_response = sdk.customer().search(filters=filters)
+customers = customers_response["response"]
+
+```
 ```curl
 
 curl -X GET \
@@ -610,9 +678,7 @@ curl -X GET \
   -d '{
     "email": "test_user_19653727@testuser.com"
 }'
-
 ```
-
 ]]]
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resposta
@@ -705,6 +771,12 @@ var customerClient = new CustomerClient();
 ResourcesList<CustomerCard> customerCards = await customerClient.ListCardsAsync("CUSTOMER_ID");
 
 ```
+```python
+
+cards_response = sdk.card().list_all(customer_id)
+cards = cards_response["response"]
+  
+```
 ```curl
 
 curl -X GET \
@@ -712,7 +784,6 @@ curl -X GET \
   'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
 
 ```
-
 ]]]
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resposta

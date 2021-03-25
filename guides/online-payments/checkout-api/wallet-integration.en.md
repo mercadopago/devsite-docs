@@ -145,6 +145,21 @@ var request = new PreferenceRequest
 var client = new PreferenceClient();
 Preference preference = await client.CreateAsync(request);
 ```
+```python
+preference_data = {
+    "items": [
+        {
+            "title": "My Item",
+            "unit_price": 100,
+            "quantity": 1
+        }
+    ],
+    "purpose": "wallet_purchase"
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
+```
 ```curl
 ===
 The wallet mode works by adding the _purpose_ attribute to the preference.
@@ -223,6 +238,14 @@ Then, from your frontend, add the following code to display the Checkout Pro Wal
 <script
   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
   data-preference-id="@Html.DisplayFor(model => model.id)"
+  data-button-label="Pay with Mercado Pago"
+  data-button-type="wallet">
+</script>
+```
+```python
+<script
+  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id="{{ preference_id }}"
   data-button-label="Pay with Mercado Pago"
   data-button-type="wallet">
 </script>

@@ -61,6 +61,16 @@ request = {
 }
 result = sdk.payment.update(payment_id, request)
 ```
+```python
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+payment_data = {
+    "status": "cancelled"
+}
+
+payment_response = sdk.payment().update(payment_id, payment_data)
+payment = payment_response["response"]
+```
 ```curl
 curl -X PUT \
 -H "Content-Type: application/json" \
@@ -118,6 +128,10 @@ mercadopago.payment.refund(payment_id)
   .catch(function (error) {
     // manipular o erro ...
   });
+```
+```python
+refund_response = sdk.refund().create(payment_id)
+refund = refund_response["response"]
 ```
 ```curl
 curl -X POST \
@@ -184,6 +198,14 @@ request = {
 }
 result = sdk.refund.create(payment_id, request)
 ```
+```python
+refund_data = {
+  "amount": 10.5
+}
+
+refund_response = sdk.refund().create(payment_id, refund_data)
+refund = refund_response["response"]
+```
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
@@ -218,6 +240,10 @@ mercadopago.payment.refund(paymentId).then(function(data) {}
 sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 result = sdk.refund.list(payment_id)
 refunds = result[:response]
+```
+```python
+refunds_response = sdk.refund().list_all(payment_id)
+refunds = refunds_response["response"]
 ```
 ```curl
 curl -X GET \

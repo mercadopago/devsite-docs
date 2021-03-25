@@ -145,6 +145,33 @@ var payer = new PreferencePayerRequest
 };
 // ...
 ```
+```python
+# ...
+
+payer_data = {
+    "name": "Joao",
+    "surname": "Silva",
+    "email": "user@email.com",
+    "phone": {
+        "area_code": "11",
+        "number": "4444-4444"
+    },
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
+    "identification": {
+        "type": "CPF",
+        "number": "19119119100"
+    },
+    ------------
+    "shipments": {
+        "receiver_address": {
+            "street_name": "Street",
+            "street_number": "123",
+            "zip_code": "06233200"
+        }
+    }
+}
+# ...
+```
 ]]]
 
 ### Dados do item
@@ -219,6 +246,22 @@ var item = new PreferenceItemRequest
     UnitPrice = 55.41m,
 };
 // ...
+```
+```python
+# ...
+preference_data = {
+    "items": [
+        {
+            "id": "1234",
+            "title": "Lightweight Paper Table",
+            "description": "Inspired by the classic foldable art of origami",
+            "category_id": "home",
+            "quantity": 3,
+            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
+            "unit_price": 55.41
+        }
+    ]
+}
 ```
 ]]]
 
@@ -320,6 +363,16 @@ var request = new PreferenceRequest
     },
     AutoReturn = "approved",
 };
+```
+```python
+preference_data = {
+    "back_urls": {
+        "success": "https://www.tu-sitio/success",
+        "failure": "https://www.tu-sitio/failure",
+        "pending": "https://www.tu-sitio/pendings"
+    },
+    "auto_return": "approved"
+}
 ```
 ]]]
 

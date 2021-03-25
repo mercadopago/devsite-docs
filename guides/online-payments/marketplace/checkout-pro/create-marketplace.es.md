@@ -280,6 +280,28 @@ var client = new PreferenceClient();
 Preference preference = await client.CreateAsync(request);
 
 ```
+```python
+
+preference_data = {
+    "items": [
+        {
+            "title": "Blue shirt",
+            "quantity": 10,
+            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
+            "unit_price": [FAKER][COMMERCE][PRICE],
+        }
+    ],
+    "payer": {
+        "email": "john@yourdomain.com"
+    },
+    "marketplace_fee": 2.56,
+    "notification_url": "http://urlmarketplace.com/notification_ipn"
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
+
+```
 ]]]
 
 

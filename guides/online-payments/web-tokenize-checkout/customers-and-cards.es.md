@@ -124,6 +124,22 @@ var cardRequest = new CustomerCardCreateRequest
 };
 CustomerCard card = await customerClient.CreateCardAsync(customer.Id, cardRequest);
 ```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+customer_data = {
+  "email": "test@test.com"
+}
+customer_response = sdk.customer().create(customer_data)
+customer = customer_response["response"]
+
+card_data = {
+  "token": "9b2d63e00d66a8c721607214cedaecda"
+}
+card_response = sdk.card().create(customer["id"], card_data)
+card = card_response["response"]
+```
 ]]]
 
 Respuesta del Servidor:
@@ -219,6 +235,10 @@ cards = cards_response[:response]
 ```csharp
 var customerClient = new CustomerClient();
 ResourcesList<CustomerCard> customerCards = await customerClient.ListCardsAsync("CUSTOMER_ID");
+```
+```python
+cards_response = sdk.card().list_all(customer_id)
+cards = cards_response["response"]
 ```
 ]]]
 
@@ -358,6 +378,21 @@ CustomerCard card = await customerClient.CreateCardAsync(customer.Id, cardReques
 
 Console.WriteLine(card.Id);
 ```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+customer_response = sdk.customer().get("247711297-jxOV430go9fx2e")
+customer = customer_response["response"]
+
+card_data = {
+  "token": "9b2d63e00d66a8c721607214cedaecda"
+}
+card_response = sdk.card().create(customer["id"], card_data)
+card = card_response["response"]
+
+print(card)
+```
 ]]]
 
 
@@ -457,6 +492,14 @@ var searchRequest = new SearchRequest
 ResultsResourcesPage<Customer> results = await customerClient.SearchAsync(searchRequest);
 IList<Customer> customers = results.Results;
 ```
+```python
+filters = {
+    "email": "test@test.com"
+}
+
+customers_response = sdk.customer().search(filters=filters)
+customers = customers_response["response"]
+```
 ]]]
 
 Respuesta:
@@ -548,6 +591,10 @@ cards = cards_response[:response]
 ```csharp
 var customerClient = new CustomerClient();
 ResourcesList<CustomerCard> customerCards = await customerClient.ListCardsAsync("CUSTOMER_ID");
+```
+```python
+cards_response = sdk.card().list_all(customer_id)
+cards = cards_response["response"]
 ```
 ]]]
 

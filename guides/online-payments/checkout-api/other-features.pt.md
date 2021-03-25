@@ -129,6 +129,24 @@ var paymentRequest = new PaymentCreateRequest
 var client = new PaymentClient();
 Payment payment = await client.CreateAsync(paymentRequest);
 ```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+payment_data = {
+    "transaction_amount": 100,
+    "token": 'ff8080814c11e237014c1ff593b57b4d',
+    "description": "Title of what you are paying for",
+    "installments": 1,
+    "payment_method_id": "visa",
+    "payer": {
+        "email": "test_user_19653727@testuser.com"
+    },
+    "capture": False
+}
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
+```
 ```curl
 
 curl -X POST \
@@ -147,7 +165,7 @@ curl -X POST \
           },
           "capture": "false"
     }'
-```
+```    
 ]]]
 
 A resposta indica que o pagamento se encontra autorizado e pendente de captura.
@@ -235,6 +253,14 @@ MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
 var client = new PaymentClient();
 Payment payment = await client.CaptureAsync(paymentId);
+```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+payment_data = { "capture": True }
+payment_response = sdk.payment().update(payment_id, payment_data)
+payment = payment_response["response"]
 ```
 ```curl
 curl -X PUT \
@@ -334,6 +360,18 @@ MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 var client = new PaymentClient();
 Payment payment = await client.CaptureAsync(paymentId, 75);
 ```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+payment_data = {
+    "transaction_amount": 75,
+    "capture": True
+}
+
+payment_response = sdk.payment().update(payment_id, payment_data)
+payment = payment_response["response"]
+```
 ```curl
 
 curl -X PUT \
@@ -361,7 +399,6 @@ curl -X PUT \
   ...
 }
 ```
-
 
 > NOTE
 >
@@ -427,6 +464,17 @@ MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
 var client = new PaymentClient();
 Payment payment = await client.CancelAsync(paymentId);
+```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+payment_data = {
+  "status": "cancelled"
+}
+
+payment_response = sdk.payment().update(payment_id, payment_data)
+payment = payment_response["response"]
 ```
 ```curl
 curl -X PUT \

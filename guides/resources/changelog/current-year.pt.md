@@ -39,6 +39,22 @@ Lançamos uma nova versão do SDK Ruby 2.0.0.
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-ruby/releases/tag/2.0.0).
 
+> CHANGELOG
+>
+> Nova versão SDK Python
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK PYTHON
+
+Lançamos uma nova versão do SDK Python 2.0.0.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-python/releases/tag/2.0.0).
+
 ### 10 de março
 
 > CHANGELOG
@@ -111,7 +127,7 @@ Lançamos uma nova versão do SDK Java 1.9.0.
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-java/releases/tag/1.9.0).
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/java/releases/tag/1.9.0).
 
 > CHANGELOG
 >

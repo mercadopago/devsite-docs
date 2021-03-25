@@ -482,6 +482,33 @@ Payment payment = await client.CreateAsync(paymentRequest);
 Console.WriteLine(payment.Status);
 
 ```
+```python
+===
+Puedes encontrar el estado del pago en el valor _status_.
+===
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_data = {
+    "transaction_amount": float(request.POST.get("transaction_amount")),
+    "token": request.POST.get("token"),
+    "description": request.POST.get("description"),
+    "installments": int(request.POST.get("installments")),
+    "payment_method_id": request.POST.get("payment_method_id"),
+    "payer": {
+        "email": request.POST.get("email"),
+        "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
+            "type": request.POST.get("type"), ------------
+            "number": request.POST.get("number")
+        }
+    }
+}
+
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
+
+print(payment)
+```
 ```curl
 ===
 Puedes encontrar el estado del pago en el valor _status_.

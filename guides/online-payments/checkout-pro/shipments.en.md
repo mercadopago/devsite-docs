@@ -128,6 +128,23 @@ var request = new PreferenceRequest
     },
 };
 ```
+```python
+preference_data = {
+    # ...
+    "shipments": {
+        "mode": "me2",
+        "dimensions": "30x30x30,500",
+        "receiver_address": {
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
+            "street_number": 1000,
+            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
+            "floor": "4",
+            "apartment": "C"
+        }
+    }
+    # ...
+}
+```
 ]]]
 
 > WARNING
@@ -227,6 +244,22 @@ var request = new PreferenceRequest
     },
 };
 ```
+```python
+preference_data = {
+    # ...
+    "shipments": {
+        "free_methods": [
+            {
+                "id": 73328
+            },
+            {
+                "id": 504945
+            }
+        ]
+    }
+    # ...
+}
+```
 ]]]
 ------------
 ----[mlm]----
@@ -314,6 +347,22 @@ var request = new PreferenceRequest
         },
     },
 };
+```
+```python
+preference_data = {
+    # ...
+    "shipments": {
+        "free_methods": [
+            {
+                "id": 509247
+            },
+            {
+                "id": 509245
+            }
+        ]
+    }
+    # ...
+}
 ```
 ]]]
 ------------
@@ -403,6 +452,22 @@ var request = new PreferenceRequest
     },
 };
 ```
+```python
+preference_data = {
+    # ...
+    "shipments": {
+        "free_methods": [
+            {
+                "id": 505345
+            },
+            {
+                "id": 100009
+            }
+        ]
+    }
+    # ...
+}
+```
 ]]]
 ------------
 
@@ -479,6 +544,16 @@ var request = new PreferenceRequest
         LocalPickup = true,
     },
 };
+```
+```python
+preference_data = {
+    # ...
+    "shipments": {
+        # ...
+        "local_pickup": True
+    }
+    # ...
+}
 ```
 ]]]
 
@@ -692,6 +767,40 @@ var request = new PreferenceRequest
 var client = new PreferenceClient();
 Preference preference = await client.CreateAsync(request);
 ```
+```python
+preference_data = {
+    "items": [
+        {
+            "title": 'Blue shirt',
+            "quantity": 10,
+            "currency_id": '[FAKER][CURRENCY][ACRONYM]',
+            "unit_price": [FAKER][COMMERCE][PRICE]
+        }
+    ],
+    "payer": {
+        "email": "john@yourdomain.com"
+    },
+    "shipments": {
+        "mode": "me2",
+        "dimensions": "30x30x30,500",
+        "receiver_address": {
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
+            "street_number": 1000,
+            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
+            "floor": "4",
+            "apartment": "C"
+        },
+        "free_methods": [
+            {
+                "id": 73328
+            },
+            {
+                "id": 504945
+            }
+        ]
+    }
+}
+```
 ]]]
 ------------
 ----[mlm]----
@@ -891,6 +1000,40 @@ var request = new PreferenceRequest
 var client = new PreferenceClient();
 Preference preference = await client.CreateAsync(request);
 ```
+```python
+preference_data = {
+    "items": [
+        {
+            "title": 'Blue shirt',
+            "quantity": 10,
+            "currency_id": '[FAKER][CURRENCY][ACRONYM]',
+            "unit_price": [FAKER][COMMERCE][PRICE]
+        }
+    ],
+    "payer": {
+        "email": "john@yourdomain.com"
+    },
+    "shipments": {
+        "mode": "me2",
+        "dimensions": "30x30x30,500",
+        "receiver_address": {
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
+            "street_number": 1000,
+            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
+            "floor": "4",
+            "apartment": "C"
+        },
+        "free_methods": [
+            {
+                "id": 509247
+            },
+            {
+                "id": 509245
+            }
+        ]
+    }
+}
+```
 ]]]
 ------------
 ----[mlb]----
@@ -1089,6 +1232,40 @@ var request = new PreferenceRequest
 
 var client = new PreferenceClient();
 Preference preference = await client.CreateAsync(request);
+```
+```python
+preference_data = {
+    "items": [
+        {
+            "title": 'Blue shirt',
+            "quantity": 10,
+            "currency_id": '[FAKER][CURRENCY][ACRONYM]',
+            "unit_price": [FAKER][COMMERCE][PRICE]
+        }
+    ],
+    "payer": {
+        "email": "john@yourdomain.com"
+    },
+    "shipments": {
+        "mode": "me2",
+        "dimensions": "30x30x30,500",
+        "receiver_address": {
+            "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
+            "street_number": 1000,
+            "street_name": "[FAKER][ADDRESS][STREET_NAME]",
+            "floor": "4",
+            "apartment": "C"
+        },
+        "free_methods": [
+            {
+                "id": 505345
+            },
+            {
+                "id": 100009
+            }
+        ]
+    }
+}
 ```
 ]]]
 ------------

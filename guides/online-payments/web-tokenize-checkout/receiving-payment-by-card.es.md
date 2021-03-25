@@ -78,6 +78,12 @@ payment_method_id = Request["payment_method_id"]
 installments = Request["installments"]
 issuer_id = Request["issuer_id"]
 ```
+```python
+token = request.POST.get("token")
+payment_method_id = request.POST.get("payment_method_id")
+installments = request.POST.get("installments")
+issuer_id = request.POST.get("issuer_id")
+```
 ]]]
 
 ### Paso 4: Realizar el pago
@@ -202,6 +208,23 @@ Payment payment = await client.CreateAsync(paymentRequest);
 // Imprime el estado del pago
 Console.WriteLine(payment.Status);
 // ...
+```
+```python
+payment_data = {
+    "transaction_amount": 100,
+    "token": token,
+    "description": "Blue shirt",
+    "installments": installments,
+    "payment_method_id": payment_method_id,
+    "issuer_id": issuer_id,
+    "payer": {
+        "email": "john@yourdomain.com"
+    }
+}
+
+# Guarda y postea el pago
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
 ```
 ]]]
 

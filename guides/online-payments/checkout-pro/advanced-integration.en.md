@@ -145,6 +145,34 @@ var payer = new PreferencePayerRequest
 };
 // ...
 ```
+```python
+# ...
+
+payer_data = {
+    "name": "Charles",
+    "surname": "Luevano",
+    "email": "charles@hotmail.com",
+    "date_created": "2018-06-02T12:58:41.425-04:00",
+    "phone": {
+        "area_code": "",
+        "number": "949 128 866"
+    },
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
+    "identification": {
+        "type": "DNI",
+        "number": "12345678"
+    },
+    ------------
+    "shipments": {
+        "receiver_address": {
+            "street_name": "Cuesta Miguel Armendáriz",
+            "street_number": "1004",
+            "zip_code": "11020"
+        }
+    }
+}
+# ...
+```
 ]]]
 
 ### Item Details
@@ -219,6 +247,22 @@ var item = new PreferenceItemRequest
     UnitPrice = 55.41m,
 };
 // ...
+```
+```python
+# ...
+preference_data = {
+    "items": [
+        {
+            "id": "1234",
+            "title": "Lightweight Paper Table",
+            "description": "Inspired by the classic foldable art of origami",
+            "category_id": "home",
+            "quantity": 3,
+            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
+            "unit_price": 55.41
+        }
+    ]
+}
 ```
 ]]]
 
@@ -321,6 +365,16 @@ var request = new PreferenceRequest
     },
     AutoReturn = "approved",
 };
+```
+```python
+preference_data = {
+    "back_urls": {
+        "success": "https://www.tu-sitio/success",
+        "failure": "https://www.tu-sitio/failure",
+        "pending": "https://www.tu-sitio/pendings"
+    },
+    "auto_return": "approved"
+}
 ```
 ]]]
 
