@@ -114,33 +114,32 @@ payer = MercadoPago::Payer.new({
 # ...
 ```
 ```csharp
-using MercadoPago;
-using MercadoPago.Resources;
-using MercadoPago.DataStructures.Preference;
+using MercadoPago.Client.Common;
+using MercadoPago.Client.Preference;
 // ...
-Payer payer = new Payer()
+var payer = new PreferencePayerRequest
 {
-    Name = "Joao",
-    Surname = "Silva",
-    Email = "user@email.com",
-    Phone = new Phone()
+    Name = "Charles",
+    Surname = "Luevano",
+    Email = "charles@hotmail.com",
+    Phone = new PhoneRequest
     {
-        AreaCode = "11",
-        Number = "4444-4444"
+        AreaCode = "",
+        Number = "949 128 866",
     },
     ----[mla, mlb, mlu, mco, mlc, mpe]----
-    Identification = new Identification()
+    Identification = new IdentificationRequest
     {
-        Type = "CPF",
-        Number = "19119119100"
+        Type = "DNI",
+        Number = "12345678",
     },
     ------------
-    Address = new Address()
+    Address = new AddressRequest
     {
-        StreetName = "Street",
-        StreetNumber = int.Parse("123"),
-        ZipCode = "06233200"
-    }
+        StreetName = "Cuesta Miguel Armendáriz",
+        StreetNumber = "1004",
+        ZipCode = "11020",
+    },
 };
 // ...
 ```
@@ -202,18 +201,16 @@ item = MercadoPago::Item.new({
 ```
 ```csharp
 // ...
-preference.Items.Add(
-  new Item()
-  {
+var item = new PreferenceItemRequest
+{
     Id = "1234",
     Title = "Lightweight Paper Table",
     Description = "Inspired by the classic foldable art of origami",
     CategoryId = "home",
     Quantity = 3,
     CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
-    UnitPrice = (float)55.41
-  }
-);
+    UnitPrice = 55.41m,
+};
 // ...
 ```
 ]]]
@@ -302,14 +299,17 @@ preference.auto_return = "approved"
 # ...
 ```
 ```csharp
-Preference preference = new Preference();
- preference.BackUrls = new BackUrls()
-  {
-    Success = "https://www.seu-site/success",
-    Failure = "http://www.seu-site/failure",
-    Pending = "http://www.seu-site/pendings"
-  };
-  preference.AutoReturn = AutoReturnType.approved;
+var request = new PreferenceRequest
+{
+    // ...
+    BackUrls = new PreferenceBackUrlsRequest
+    {
+        Success = "https://www.tu-sitio/success",
+        Failure = "http://www.tu-sitio/failure",
+        Pending = "http://www.tu-sitio/pendings",
+    },
+    AutoReturn = "approved",
+};
 ```
 ]]]
 

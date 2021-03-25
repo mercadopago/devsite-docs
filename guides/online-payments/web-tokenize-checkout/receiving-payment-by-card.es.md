@@ -175,30 +175,32 @@ payment.save()
 
 ```
 ```csharp
-using MercadoPago;
-using MercadoPago.DataStructures.Payment;
-using MercadoPago.Resources;
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
 // ...
-MercadoPago.SDK.SetAccessToken(ENV_ACCESS_TOKEN);
-//...
-Payment payment = new Payment()
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+// ...
+var paymentRequest = new PaymentCreateRequest
 {
-    TransactionAmount = float.Parse("100"),
+    TransactionAmount = 100,
     Token = token,
     Description = "Blue shirt",
     Installments = installments,
     PaymentMethodId = payment_method_id,
     IssuerId = issuer_id,
-    Payer = new Payer(){
-        Email = "john@yourdomain.com"
-    }
+    Payer = new PaymentPayerRequest
+    {
+        Email = "john@yourdomain.com",
+    },
 };
-// Guarda y postea el pago
-payment.Save();
-//...
+// Crea el pago
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(paymentRequest);
+// ...
 // Imprime el estado del pago
-Console.log(payment.Status);
-//...
+Console.WriteLine(payment.Status);
+// ...
 ```
 ]]]
 

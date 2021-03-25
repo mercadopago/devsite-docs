@@ -236,6 +236,32 @@ payment.payer = {
 payment.save()
 
 ```
+```csharp
+
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
+
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var paymentRequest = new PaymentCreateRequest
+{
+    TransactionAmount = 100,
+    Token = "ff8080814c11e237014c1ff593b57b4d",
+    Description = "Title of what you are paying for",
+    Installments = 1,
+    PaymentMethodId = "visa",
+    Payer = new PaymentPayerRequest
+    {
+        Email = "test_user_19653727@testuser.com",
+    },
+    ApplicationFee = 5,
+};
+
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(paymentRequest);
+
+```
 ]]]
 
 

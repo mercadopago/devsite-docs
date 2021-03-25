@@ -49,7 +49,7 @@ require 'mercadopago.rb'
 ```
 ```csharp
 // SDK de Mercado Pago
- using MercadoPago;
+ using MercadoPago.Config;
 ```
 ]]]
 
@@ -90,10 +90,10 @@ $mp = MercadoPago.new('PROD_ACCESS_TOKEN')
 ```
 ```csharp
 // SDK de Mercado Pago
-using MercadoPago;
+using MercadoPago.Config;
 
 // Agrega credenciales
-MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
+MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
 ```
 ]]]
 
@@ -195,25 +195,31 @@ preference = $mp.create_preference(preference_data)
 ```
 ```csharp
 // SDK de Mercado Pago
-using MercadoPago;
+using MercadoPago.Config;
+using MercadoPago.Client.Preference;
+using MercadoPago.Resource.Preference;
 
 // Agrega credenciales
-MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
+MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
 
-// Crea un objeto de preferencia
-Preference preference = new Preference();
+// Crea el objeto de request de la preference
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Mi producto",
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75.56m,
+        },
+    },
+};
 
-// Crea un ítem en la preferencia
-preference.Items.Add(
-  new Item()
-  {
-    Title = "Mi producto",
-    Quantity = 1,
-    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
-    UnitPrice = (decimal)75.56
-  }
-);
-preference.Save();
+// Crea la preferencia usando el client
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
 ```
 ```curl
 curl -X POST \
@@ -327,25 +333,31 @@ preference = $mp.create_preference(preference_data)
 ```
 ```csharp
 // SDK de Mercado Pago
-using MercadoPago;
+using MercadoPago.Config;
+using MercadoPago.Client.Preference;
+using MercadoPago.Resource.Preference;
 
 // Agrega credenciales
-MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
+MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
 
-// Crea un objeto de preferencia
-Preference preference = new Preference();
+// Crea el objeto de request de la preference
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Mi producto",
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75m,
+        },
+    },
+};
 
-// Crea un ítem en la preferencia
-preference.Items.Add(
-  new Item()
-  {
-    Title = "Mi producto",
-    Quantity = 1,
-    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
-    UnitPrice = (decimal)75
-  }
-);
-preference.Save();
+// Crea la preferencia usando el client
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
 ```
 ```curl
 curl -X POST \

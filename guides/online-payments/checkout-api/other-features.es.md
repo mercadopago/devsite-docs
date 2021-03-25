@@ -100,6 +100,31 @@ payment.payer = {
 payment.capture = false
 payment.save()
 ```
+```csharp
+
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
+
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var paymentRequest = new PaymentCreateRequest
+{
+    TransactionAmount = 100,
+    Token = "ff8080814c11e237014c1ff593b57b4d",
+    Description = "Title of what you are paying for",
+    Installments = 1,
+    PaymentMethodId = "visa",
+    Payer = new PaymentPayerRequest
+    {
+        Email = "test_user_19653727@testuser.com",
+    },
+    Capture = false,
+};
+
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(paymentRequest);
+```
 ```curl
 
 curl -X POST \
@@ -118,6 +143,7 @@ curl -X POST \
           },
           "capture": "false"
     }'
+```
 ]]]
 
 La respuesta indica que el pago se encuentra autorizado y pendiente de captura.
@@ -191,6 +217,16 @@ MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 payment = MercadoPago::Payment.load(paymentId)
 payment.capture=true
 payment.update()
+```
+```csharp
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
+
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var client = new PaymentClient();
+Payment payment = await client.CaptureAsync(paymentId);
 ```
 ```curl
 curl -X PUT \
@@ -277,6 +313,16 @@ payment.transaction_amount = 75
 payment.capture=true
 payment.update()
 ```
+```csharp
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
+
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var client = new PaymentClient();
+Payment payment = await client.CaptureAsync(paymentId, 75);
+```
 ```curl
 
 curl -X PUT \
@@ -357,6 +403,16 @@ MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 payment = MercadoPago::Payment.load(paymentId)
 payment.status = "canceled"
 payment.update()
+```
+```csharp
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
+
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var client = new PaymentClient();
+Payment payment = await client.CancelAsync(paymentId);
 ```
 ```curl
 curl -X PUT \
