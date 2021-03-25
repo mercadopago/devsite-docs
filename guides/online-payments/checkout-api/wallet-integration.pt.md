@@ -99,21 +99,23 @@ preference.save();
 ===
 O modo carteira funciona adicionando o atributo _purpose_ na preferência.
 ===
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 # Cria um objeto de preferência
 preference_data = {
-  "items": [
+  items: [
     {
-      "title": "Meu produto",
-      "unit_price": 100,
-      "quantity": 1
+      title: 'Meu produto',
+      unit_price: 100,
+      quantity: 1
     }
   ],
-  "purpose": "wallet_purchase"
+  purpose: 'wallet_purchase'
 }
-preference = $mp.create_preference(preference_data)
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
 
 # Este valor substituirá a string "<%= @preference_id %>" no seu HTML
-@preference_id = preference["response"]["id"]
+@preference_id = preference['id']
 ```
 ```csharp
 ===

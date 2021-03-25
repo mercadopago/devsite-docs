@@ -45,7 +45,7 @@ import com.mercadopago.MercadoPago;
 ```
 ```ruby
 # Mercado Pago SDK
-require 'mercadopago.rb'
+require 'mercadopago'
 ```
 ```csharp
 // Mercado Pago SDK
@@ -83,10 +83,10 @@ MercadoPago.SDK.setAccessToken("PROD_ACCESS_TOKEN");
 ```
 ```ruby
 # Mercado Pago SDK
-require 'mercadopago.rb'
+require 'mercadopago'
 
 # Add Your credentials
-$mp = MercadoPago.new('PROD_ACCESS_TOKEN')
+sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
 ```
 ```csharp
 // Mercado Pago SDK
@@ -173,25 +173,26 @@ preference.save();
 ```
 ```ruby
 # Mercado Pago SDK
-require 'mercadopago.rb'
+require 'mercadopago'
 
 # Add Your credentials
-$mp = MercadoPago.new('PROD_ACCESS_TOKEN')
+sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
 
-# Create a preference object
+# Create a preference request
 preference_data = {
-  "items": [
+  items: [
     {
-      "title": "My Item",  
-      "unit_price": 100,
-      "quantity": 1
+      title: 'My Item',
+      unit_price: 75.56,
+      quantity: 1
     }
   ]
 }
-preference = $mp.create_preference(preference_data)
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
 
 # This value replaces the String "<%= @preference_id %>" in your HTML
-@preference_id = preference["response"]["id"]
+@preference_id = preference['id']
 ```
 ```csharp
 // Mercado Pago SDK
@@ -312,25 +313,26 @@ preference.save();
 ```
 ```ruby
 # Mercado Pago SDK
-require 'mercadopago.rb'
+require 'mercadopago'
 
 # Add Your credentials
-$mp = MercadoPago.new('PROD_ACCESS_TOKEN')
+sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
 
-# Create a preference object
+# Create a preference request
 preference_data = {
-  "items": [
+  items: [
     {
-      "title": "My Item",
-      "unit_price": 100,
-      "quantity": 1
+      title: 'My Item',
+      unit_price: 75,
+      quantity: 1
     }
   ]
 }
-preference = $mp.create_preference(preference_data)
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
 
 # This value replaces the String "<%= @preference_id %>" in your HTML
-@preference_id = preference["response"]["id"]
+@preference_id = preference['id']
 ```
 ```csharp
 // Mercado Pago SDK

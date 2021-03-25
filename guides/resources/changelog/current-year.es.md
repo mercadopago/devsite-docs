@@ -23,6 +23,22 @@ Lanzamos una nueva versión del SDK .Net 2.0.0.
 >
 > Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-dotnet/releases/tag/2.0.0).
 
+> CHANGELOG
+>
+> Nueva versión SDK Ruby
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK RUBY
+
+Lanzamos una nueva versión del SDK Ruby 2.0.0.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-ruby/releases/tag/2.0.0).
+
 ### 10 de marzo
 
 > CHANGELOG

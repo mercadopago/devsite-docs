@@ -324,27 +324,23 @@ payer.setName("Charles")
 ```
 ```ruby
 # ...
-payer = MercadoPago::Payer.new({
-  name: "Charles"
-  surname: "Luevano"
-  email: "charles@hotmail.com"
-  date_created: Time.now
-  phone: MercadoPago::Phone.new({
-    area_code: "",
-    number: "949 128 866"
-  })
+payer = {
+  name: "Charles",
+  surname: "Luevano",
+  email: "charles@hotmail.com",
+  date_created: Time.now,
   ----[mla, mlb, mlu, mco, mlc, mpe]----
-  identification: MercadoPago::Identification.new({
+  identification: {
     type: "DNI",
     number: "12345678"
-  })
+  },
   ------------
-  address: MercadoPago::Address.new ({
+  address: {
     street_name: "Cuesta Miguel Armendáriz",
     street_number: "1004",
     zip_code: "11020"
-  })
-})
+  }
+}
 # ...
 ```
 ```csharp
@@ -418,13 +414,13 @@ item.setId("1234")
 ```
 ```ruby
 # ...
-item = MercadoPago::Item.new({
+item = {
   id: "1234",
   title: "Lightweight Paper Table",
   quantity: 3,
   currency_id: "[FAKER][CURRENCY][ACRONYM]",
   unit_price: 55.41
-})# ...
+}# ...
 ```
 ```csharp
 // ...

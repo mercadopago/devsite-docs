@@ -90,27 +90,29 @@ payer.setName("Joao")
 ```
 ```ruby
 # ...
-payer = MercadoPago::Payer.new({
-  name: "Joao"
-  surname: "Silva"
-  email: "user@email.com"
-  date_created: Time.now
-  phone: MercadoPago::Phone.new({
-    area_code: "11",
-    number: "4444-4444"
-  })
+payer_data = {
+  name: 'Charles',
+  surname: 'Luevano',
+  email: 'charles@hotmail.com',
+  date_created: '2018-06-02T12:58:41.425-04:00',
+  phone: {
+    area_code: '',
+    number: '949 128 866'
+  },
   ----[mla, mlb, mlu, mco, mlc, mpe]----
-  identification: MercadoPago::Identification.new({
-    type: "CPF",
-    number: "19119119100"
-  })
+  identification: {
+    type: 'DNI',
+    number: '12345678'
+  },
   ------------
-  address: MercadoPago::Address.new ({
-    street_name: "Street",
-    street_number: "123",
-    zip_code: "06233200"
-  })
-})
+  shipments: {
+    receiver_address: {
+      street_name: 'Cuesta Miguel Armendáriz',
+      street_number: '1004',
+      zip_code: '11020'
+    }
+  }
+}
 # ...
 ```
 ```csharp
@@ -189,15 +191,20 @@ item.setId("1234")
 ```
 ```ruby
 # ...
-item = MercadoPago::Item.new({
-  id: "1234",
-  title: "Lightweight Paper Table",
-  description: "Inspired by the classic foldable art of origami",
-  category_id: "home",
-  quantity: 3,
-  currency_id: "[FAKER][CURRENCY][ACRONYM]",
-  unit_price: 55.41
-})# ...
+preference_data = {
+  items: [
+    {
+      id: 'PR0001',
+      title: 'Lightweight Paper Table',
+      description: 'Inspired by the classic foldable art of origami',
+      category_id: 'home',
+      quantity: 3,
+      currency_id: '[FAKER][CURRENCY][ACRONYM]',
+      unit_price: 55.41
+    }
+  ]
+}
+ # ...
 ```
 ```csharp
 // ...
@@ -288,14 +295,17 @@ preference.setBackUrls(backUrls);
 // ...
 ```
 ```ruby
-preference = MercadoPago::Preference.new
 # ...
-preference.back_urls = {
-  success: "https://www.seu-site/success",
-  failure: "http://www.seu-site/failure",
-  pending: "http://www.seu-site/pendings"
+preference_data = {
+  # ...
+  back_urls = {
+    success: 'https://www.tu-sitio/success',
+    failure: 'https://www.tu-sitio/failure',
+    pending: 'https://www.tu-sitio/pendings'
+  },
+  auto_return: 'approved'
+  # ...
 }
-preference.auto_return = "approved"
 # ...
 ```
 ```csharp

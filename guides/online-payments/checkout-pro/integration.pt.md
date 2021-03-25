@@ -45,7 +45,7 @@ import com.mercadopago.MercadoPago;
 ```
 ```ruby
 # SDK de Mercado Pago
-require 'mercadopago.rb'
+require 'mercadopago'
 ```
 ```csharp
 // SDK de Mercado Pago
@@ -86,7 +86,7 @@ MercadoPago.SDK.setAccessToken("PROD_ACCESS_TOKEN");
 require 'mercadopago.rb'
 
 # Configura credenciais
-$mp = MercadoPago.new('PROD_ACCESS_TOKEN')
+sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
 ```
 ```csharp
 // SDK de Mercado Pago
@@ -173,25 +173,26 @@ preference.save();
 ```
 ```ruby
 # SDK de Mercado Pago
-require 'mercadopago.rb'
+require 'mercadopago'
 
 # Configura credenciais
-$mp = MercadoPago.new('PROD_ACCESS_TOKEN')
+sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
 
 # Cria um objeto de preferência
 preference_data = {
-  "items": [
+  items: [
     {
-      "title": "Meu produto",  
-      "unit_price": 100,
-      "quantity": 1
+      title: 'Meu produto',
+      unit_price: 75.56,
+      quantity: 1
     }
   ]
 }
-preference = $mp.create_preference(preference_data)
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
 
 # Este valor substituirá a string "<%= @preference_id %>" no seu HTML
-@preference_id = preference["response"]["id"]
+@preference_id = preference['id']
 ```
 ```csharp
 // SDK de Mercado Pago
@@ -312,25 +313,26 @@ preference.save();
 ```
 ```ruby
 # SDK de Mercado Pago
-require 'mercadopago.rb'
+require 'mercadopago'
 
 # Configura credenciais
-$mp = MercadoPago.new('PROD_ACCESS_TOKEN')
+sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
 
 # Cria um objeto de preferência
 preference_data = {
-  "items": [
+  items: [
     {
-      "title": "Meu produto",
-      "unit_price": 100,
-      "quantity": 1
+      title: 'Meu produto',
+      unit_price: 75,
+      quantity: 1
     }
   ]
 }
-preference = $mp.create_preference(preference_data)
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
 
 # Este valor substituirá a string "<%= @preference_id %>" no seu HTML
-@preference_id = preference["response"]["id"]
+@preference_id = preference['id']
 ```
 ```csharp
 // SDK de Mercado Pago

@@ -222,12 +222,19 @@ preference.setPaymentMethods(paymentMethods);
 //...
 ```
 ```ruby
-preference = MercadoPago::Preference.new
 #...
-preference.payment_methods = {
-  excluded_payment_methods: [id: "master"],
-  excluded_payment_types: [id: "ticket"],
-  installments: 12
+preference_data = {
+  # ...
+  payment_methods: {
+    excluded_payment_methods: [
+      { id: 'master' }
+    ],
+    excluded_payment_types: [
+      { id: 'ticket' }
+    ],
+    installments: 12
+  }
+  # ...
 }
 #...
 ```
@@ -419,22 +426,27 @@ preference.appendItem(item1, item2);
 preference.save();
 ```
 ```ruby
-# Cria itens na preferência
-item = MercadoPago::Item.new({
-  title:        "Meu produto",
-  quantity:     1,
-  unit_price:   75.56
-})
-item2 = MercadoPago::Item.new({
-  title:        "Meu produto2",
-  quantity:     2,
-  unit_price:   96.56
-})
-# Cria um objeto preferência
-preference = MercadoPago::Preference.new({
-  items: [item, item2]
-})
-preference.save()
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+# Create preference data with items
+preference_data = {
+  items: [
+    {
+      title: 'Meu produto 1',
+      quantity: 1,
+      currency_id: '[FAKER][CURRENCY][ACRONYM]',
+      unit_price: 75.56
+    },
+    {
+      title: 'Meu produto 2',
+      quantity: 2,
+      currency_id: '[FAKER][CURRENCY][ACRONYM]',
+      unit_price: 96.56
+    }
+  ]
+}
+
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
 ```
 ```csharp
 // Cria o request com múltiplos itens
@@ -879,9 +891,12 @@ MercadoPago.SDK.setCorporationId("CORPORATION_ID");
 ===
 Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
 ===
-$mp.set_platform_id("PLATFORM_ID")
-$mp.set_integrator_id("INTERATOR_ID")
-$mp.set_corporation_id("CORPORATION_ID")
+request_options = Mercadopago::RequestOptions.new()
+request_options.platform_id = 'PLATFORM_ID'
+request_options.integrator_id = 'INTEGRATOR_ID'
+request_options.corporation_id = 'CORPORATION_ID'
+
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN', request_options: request_options)
 ```
 ```csharp
 ===

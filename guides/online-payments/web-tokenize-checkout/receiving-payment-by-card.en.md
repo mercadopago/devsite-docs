@@ -64,10 +64,10 @@ const installments = req.body.installments;
 const issuer_id = req.body.issuer_id;
 ```
 ```ruby
-token = request.body.token
-payment_method_id = request.body.payment_method_id
-installments = request.body.installments
-issuer_id = request.body.issuer_id
+token = params[:token]
+payment_method_id = params[:payment_method_id]
+installments = params[:installments]
+issuer_id = params[:issuer_id]
 ```
 ```csharp
 token = Request["token"]
@@ -155,20 +155,21 @@ mercadopago.payment.save(payment_data).then(function (data) {
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.access_token = "ENV_ACCESS_TOKEN";
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 100
-payment.token = token
-payment.description = 'Blue shirt'
-payment.installments = installments
-payment.payment_method_id = payment_method_id
-payment.issuer_id = issuer_id
-payment.payer = {
-  email: "john@yourdomain.com"
+payment_object = {
+   transaction_amount: 100,
+   token: token,
+   description: 'Blue shirt',
+   installments: installments,
+   payment_method_id: payment_method_id,
+   issuer_id: issuer_id,
+   payer: {
+      email: 'john@yourdomain.com'
+  }
 }
-# Save and create the payment
-payment.save()
+payment_response = sdk.payment.create(payment_object)
+payment = payment_response[:response]
 
 ```
 ```csharp

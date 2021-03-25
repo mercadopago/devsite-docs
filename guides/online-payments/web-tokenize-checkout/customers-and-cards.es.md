@@ -92,16 +92,20 @@ mercadopago.customers.create(customer_data).then(function (customer) {
 ```ruby
 
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCES_TOKEN')
 
-customer = MercadoPago::Customer.new()
-customer.email = "test@test.com"
-customer.save
+customer_data = {
+  email: 'test@test.com',
+}
+customer_response = sdk.customer.create(customer_data)
+customer = customer_response[:response]
 
-card = MercadoPago::Card.new()
-card.token = "9b2d63e00d66a8c721607214cedaecda"
-card.customer_id = customer.id
-card.save
+card_data = {
+  token: '9b2d63e00d66a8c721607214cedaecda',
+  customer_id: customer['id']
+}
+card_response = sdk.card.create(card_data)
+card = card_response[:response]
 
 ```
 ```csharp
@@ -208,8 +212,8 @@ Puedes obtener el listado completo de `Cards` de un cliente realizando un reques
 ```
 ```ruby
 
-	customer = MercadoPago::Customer.load(customer_id);
-  cards = customer.cards;
+cards_response = sdk.card.list(customer_id)
+cards = cards_response[:response]
 
 ```
 ```csharp
@@ -325,14 +329,17 @@ mercadopago.customers.search({
 ```ruby
 
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCES_TOKEN')
 
-customer = MercadoPago::Customer.load("247711297-jxOV430go9fx2e")
+customer_response = sdk.customer.get('247711297-jxOV430go9fx2e')
+customer = customer_response[:response]
 
-card = MercadoPago::Card.new()
-card.token = "9b2d63e00d66a8c721607214cedaecda"
-card.customer_id = customer.id
-card.save
+card_data = {
+  token: '9b2d63e00d66a8c721607214cedaecda',
+  customer_id: customer['id']
+}
+card_response = sdk.card.create(card_data)
+card = card_response[:response]
 
 puts card
 
@@ -435,7 +442,8 @@ En el caso en el que no sepas cuál es el `id` de tu `Customer`, puedes utilizar
 ```
 ```ruby
 
-	customers = MercadoPago::Customer.search(email: "test@test.com");
+customers_response = sdk.customer.search(filters: { email: 'test@test.com' })
+customer = customer_response[:response]
 
 ```
 ```csharp
@@ -533,8 +541,8 @@ Puedes obtener el listado completo de `Cards` de un cliente realizando un reques
 ```
 ```ruby
 
-	customer = MercadoPago::Customer.load(customer_id);
-  cards = customer.cards;
+cards_response = sdk.card.list(customer_id)
+cards = cards_response[:response]
 
 ```
 ```csharp
