@@ -16,10 +16,6 @@ This SDK supports Python versions 2.x and 3.x
 ## Install
 
 
-On Python 2.x
-
-``pip install mercadopago``
-
 On Python 3.x
 
 ``pip3 install mercadopago``
@@ -30,14 +26,13 @@ On Python 3.x
 Configure your credentials
 
 
-- Get your **CLIENT_ID** and **CLIENT_SECRET** [in the following link]([FAKER][CREDENTIALS][URL]).
+- Get your **ACCESS_TOKEN** in the [Credentials section]([FAKER][CREDENTIALS][URL])
 
 
-``` python
+```python
     import mercadopago
-    import json
 
-    mp = mercadopago.MP("CLIENT_ID", "CLIENT_SECRET")
+    sdk = mercadopago.SDK("ACCESS_TOKEN")
 ```
 
 ### Preferences
@@ -47,18 +42,18 @@ Get an existent Checkout preference
 
 
 
-``` python
+```python
     def index(req, **kwargs):
-        preferenceResult = mp.get_preference("PREFERENCE_ID")
+        preference_response = sdk.preference().get("PREFERENCE_ID")
 
-        return json.dumps(preferenceResult, indent=4)
+        return json.dumps(preference_response["response"], indent=4)
 ```
 
 Create a Checkout preference
 
-``` python
+```python
     def index(req, **kwargs):
-        preference = {
+        preference_data = {
             "items": [
                 {
                     "title": "Test",
@@ -69,80 +64,80 @@ Create a Checkout preference
             ]
         }
 
-        preferenceResult = mp.create_preference(preference)
+        preference_response = sdk.preference().create(preference_data)
 
-        return json.dumps(preferenceResult, indent=4)
+        return json.dumps(preference_response["response"], indent=4)
 ```
 Update an existent Checkout preference
 
 
-``` python
+```python
     def index(req, **kwargs):
-        preference = {
-                "items": [
-                    {
-                        "title": "Test Modified",
-                        "quantity": 1,
-                        "currency_id": "USD",
-                        "unit_price": 20.4
-                    }
-                ]
-            }
+        preference_data = {
+            "items": [
+                {
+                    "title": "Test Modified",
+                    "quantity": 1,
+                    "currency_id": "USD",
+                    "unit_price": 20.4
+                }
+            ]
+        }
 
-        preferenceResult = mp.update_preference(id, preference)
+        preference = sdk.preference().update(id, preference_data)
 
-        return json.dumps(preferenceResult, indent=4)
+        return json.dumps(preference_response["response"], indent=4)
 ```
 ### Payments/Collections
 
 
 Search for payments
-``` python
+```python
     def index(req, **kwargs):
         filters = {
             "id": None,
             "external_reference": None
         }
 
-        searchResult = mp.search_payment(filters)
+        payments_search = sdk.payment().search(filters=filters)
 
-        return json.dumps(searchResult, indent=4)
+        return json.dumps(payments_search["response"], indent=4)
 ```
 
 Get payment data
 
-``` python
+```python
     import mercadopago
-    import json
-
+    
     def index(req, **kwargs):
-        mp = mercadopago.MP("CLIENT_ID", "CLIENT_SECRET")
-        paymentInfo = mp.get_payment (kwargs["id"])
+        sdk = mercadopago.SDK("ACCESS_TOKEN")
 
-        if paymentInfo["status"] == 200:
-            return json.dumps(paymentInfo, indent=4)
+        payment_info = sdk.payment().get(kwargs["id"])
+
+        if payment_info["status"] == 200:
+            return json.dumps(payment_info["response"], indent=4)
         else:
             return None
 ```
 
 Cancel (only for pending payments)
 
-``` python
+```python
     def index(req, **kwargs):
-        result = mp.cancel_payment("ID")
+        payment_cancel = sdk.payment().update(kwargs["id"], { "status": "cancelled" })
 
-        // Show result
-        return json.dumps(result, indent=4)
+        # Show result
+        return json.dumps(payment_cancel["response"], indent=4)
 ```
 
 Refund (only for accredited payments)
 
-``` python
+```python
     def index(req, **kwargs):
-        result = mp.refund_payment("ID")
+        payment_refund = sdk.refund().create(kwargs["id"])
 
-        // Show result
-        return json.dumps(result, indent=4)
+        # Show result
+        return json.dumps(payment_refund["response"], indent=4)
 ```
 
 ## Customized checkout
@@ -153,63 +148,41 @@ Configure your credentials
 * Get your **ACCESS_TOKEN** in the [Credentials section]([FAKER][CREDENTIALS][URL])
 
 
-``` python
+```python
     import mercadopago
-    import json
 
-    mp = mercadopago.MP("ACCESS_TOKEN")
+    sdk = mercadopago.SDK("ACCESS_TOKEN")
 ```
 
 
 Create payment
 
-    mp.post ("/v1/payments", payment_data)
+```python
+    sdk.payment().create(payment_data)
+```
 
 Create customer
 
+```python
+    customer_data = {
+        "email": "email@test.com"
+    }
 
-    mp.post ("/v1/customers", {"email": "email@test.com"})
+    sdk.customer().create(customer_data)
+```
 
 Get customer
 
-
-    mp.get ("/v1/customers/CUSTOMER_ID")
+```python
+    sdk.customer().get(customer_id)
+```
 
 * View more Custom checkout related APIs in [API reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference)
 
-## Generic methods
-
-
-You can access any other resource from the MercadoPago API using the generic methods:
-
-
-
-    // Get a resource, with optional URL params. Also you can disable authentication for public APIs
-    mp.get ("/resource/uri", [params], [authenticate=true]);
-    
-    // Create a resource with "data" and optional URL params.
-    mp.post ("/resource/uri", data, [params]);
-    
-    // Update a resource with "data" and optional URL params.
-    mp.put ("/resource/uri", data, [params]);
-    
-    // Delete a resource with optional URL params.
-    mp.delete ("/resource/uri", [params]);
-
-For example, if you want to get the Sites list (no params and no authentication):
-
-
-    result = mp.get ("/sites", null, false);
-    
-    print (json.dumps(result, indent=4))
 
 ### Running tests
 
 
-On Python 2.x
-
-``python setup.py test``
-
 On Python 3.x
 
-``python3 setup.py test``
+``python3 -m unittest discover tests/``

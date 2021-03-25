@@ -45,11 +45,15 @@ import com.mercadopago.MercadoPago;
 ```
 ```ruby
 # SDK de Mercado Pago
-require 'mercadopago.rb'
+require 'mercadopago'
 ```
 ```csharp
 // SDK de Mercado Pago
- using MercadoPago;
+ using MercadoPago.Config;
+```
+```python
+# SDK de Mercado Pago
+import mercadopago
 ```
 ]]]
 
@@ -83,17 +87,24 @@ MercadoPago.SDK.setAccessToken("PROD_ACCESS_TOKEN");
 ```
 ```ruby
 # SDK de Mercado Pago
-require 'mercadopago.rb'
+require 'mercadopago'
 
 # Agrega credenciales
-$mp = MercadoPago.new('PROD_ACCESS_TOKEN')
+sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
 ```
 ```csharp
 // SDK de Mercado Pago
-using MercadoPago;
+using MercadoPago.Config;
 
 // Agrega credenciales
-MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
+MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
+```
+```python
+# SDK de Mercado Pago
+import mercadopago
+
+# Agrega credenciales
+sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 ```
 ]]]
 
@@ -173,47 +184,75 @@ preference.save();
 ```
 ```ruby
 # SDK de Mercado Pago
-require 'mercadopago.rb'
+require 'mercadopago'
 
 # Agrega credenciales
-$mp = MercadoPago.new('PROD_ACCESS_TOKEN')
+sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
 
 # Crea un objeto de preferencia
 preference_data = {
-  "items": [
+  items: [
     {
-      "title": "Mi producto",  
-      "unit_price": 100,
-      "quantity": 1
+      title: 'Mi producto',
+      unit_price: 75.56,
+      quantity: 1
     }
   ]
 }
-preference = $mp.create_preference(preference_data)
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
 
 # Este valor reemplazará el string "<%= @preference_id %>" en tu HTML
-@preference_id = preference["response"]["id"]
+@preference_id = preference['id']
 ```
 ```csharp
 // SDK de Mercado Pago
-using MercadoPago;
+using MercadoPago.Config;
+using MercadoPago.Client.Preference;
+using MercadoPago.Resource.Preference;
 
 // Agrega credenciales
-MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
+MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
 
-// Crea un objeto de preferencia
-Preference preference = new Preference();
+// Crea el objeto de request de la preference
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Mi producto",
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75.56m,
+        },
+    },
+};
 
-// Crea un ítem en la preferencia
-preference.Items.Add(
-  new Item()
-  {
-    Title = "Mi producto",
-    Quantity = 1,
-    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
-    UnitPrice = (decimal)75.56
-  }
-);
-preference.Save();
+// Crea la preferencia usando el client
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
+```
+```python
+# SDK de Mercado Pago
+import mercadopago
+
+# Agrega credenciales
+sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
+
+# Crea un ítem en la preferencia
+preference_data = {
+    "items": [
+        {
+            "title": "Mi producto",
+            "quantity": 1,
+            "unit_price": 75.76,
+        }
+    ]
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
 ```
 ```curl
 curl -X POST \
@@ -305,47 +344,75 @@ preference.save();
 ```
 ```ruby
 # SDK de Mercado Pago
-require 'mercadopago.rb'
+require 'mercadopago'
 
 # Agrega credenciales
-$mp = MercadoPago.new('PROD_ACCESS_TOKEN')
+sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
 
 # Crea un objeto de preferencia
 preference_data = {
-  "items": [
+  items: [
     {
-      "title": "Mi producto",
-      "unit_price": 100,
-      "quantity": 1
+      title: 'Mi producto',
+      unit_price: 75,
+      quantity: 1
     }
   ]
 }
-preference = $mp.create_preference(preference_data)
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
 
 # Este valor reemplazará el string "<%= @preference_id %>" en tu HTML
-@preference_id = preference["response"]["id"]
+@preference_id = preference['id']
 ```
 ```csharp
 // SDK de Mercado Pago
-using MercadoPago;
+using MercadoPago.Config;
+using MercadoPago.Client.Preference;
+using MercadoPago.Resource.Preference;
 
 // Agrega credenciales
-MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
+MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
 
-// Crea un objeto de preferencia
-Preference preference = new Preference();
+// Crea el objeto de request de la preference
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Mi producto",
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75m,
+        },
+    },
+};
 
-// Crea un ítem en la preferencia
-preference.Items.Add(
-  new Item()
-  {
-    Title = "Mi producto",
-    Quantity = 1,
-    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
-    UnitPrice = (decimal)75
-  }
-);
-preference.Save();
+// Crea la preferencia usando el client
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
+```
+```python
+# SDK de Mercado Pago
+import mercadopago
+
+# Add Your credentials
+sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
+
+# Crea un ítem en la preferencia
+preference_data = {
+    "items": [
+        {
+            "title": "Mi producto",
+            "quantity": 1,
+            "unit_price": 75
+        }
+    ]
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
 ```
 ```curl
 curl -X POST \
@@ -413,6 +480,12 @@ Por último, suma el siguiente código para mostrar el botón de pago de tu Chec
 <script
   src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
   data-preference-id="@Html.DisplayFor(model => model.id)">
+</script>
+```
+```python
+<script
+  src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
+  data-preference-id="{{ preference_id }}">
 </script>
 ```
 ]]]
