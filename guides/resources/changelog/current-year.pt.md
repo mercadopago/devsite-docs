@@ -15,7 +15,8 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 >
 > PRODUCT: SDK .NET
 
-Lançamos uma nova versão do SDK .Net 2.0.0.
+Lançamos a nova versão 2.0.0 do SDK .Net.
+
 
 > GIT
 >
@@ -31,7 +32,7 @@ Lançamos uma nova versão do SDK .Net 2.0.0.
 >
 > PRODUCT: SDK RUBY
 
-Lançamos uma nova versão do SDK Ruby 2.0.0.
+Lançamos a nova versão 2.0.0 do SDK Ruby.
 
 > GIT
 >
@@ -47,7 +48,7 @@ Lançamos uma nova versão do SDK Ruby 2.0.0.
 >
 > PRODUCT: SDK PYTHON
 
-Lançamos uma nova versão do SDK Python 2.0.0.
+Lançamos a nova versão 2.0.0 do SDK Python.
 
 > GIT
 >
@@ -65,7 +66,7 @@ Lançamos uma nova versão do SDK Python 2.0.0.
 >
 > PRODUCT: SDK NODEJS
 
-Lançamos a nova versão 1.5.6 do SDK NodeJS .
+Lançamos a nova versão 1.5.6 do SDK NodeJS.
 
 > GIT
 >
@@ -139,7 +140,7 @@ Agora, você pode adicionar Pix como meio de pagamento para começar a receber d
 >
 > PRODUCT: SDK JAVA
 
-Lançamos uma nova versão do SDK Java 1.9.0.
+Lançamos a nova versão 1.9.0. do SDK Java.
 
 > GIT
 >
@@ -155,7 +156,7 @@ Lançamos uma nova versão do SDK Java 1.9.0.
 >
 > PRODUCT: SDK .NET
 
-Lançamos uma nova versão do SDK .NET 1.10.0.
+Lançamos a nova versão 1.10.0 do SDK .NET.
 
 > GIT
 >
@@ -396,7 +397,7 @@ Lançamos a nova versão 4.4.1 para PrestaShop.
 >
 > PRODUCT: SDK PHP
 
-Lançamos uma nova versão do SDK PHP 1.10.0.
+Lançamos a nova versão 1.10.0 do SDK PHP.
 
 > GIT
 >
@@ -414,7 +415,7 @@ Lançamos uma nova versão do SDK PHP 1.10.0.
 >
 > PRODUCT: SDK NODEJS
 
-Lançamos uma nova versão do SDK NodeJS 1.5.3.
+Lançamos a nova versão 1.5.3 do SDK NodeJS.
 
 > GIT
 >
