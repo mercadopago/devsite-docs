@@ -46,7 +46,7 @@ Con estas opciones de pago cubrimos las necesidades de cada negocio. Revisa las 
 >
 > Nota
 >
-> Consulta la [documentación del Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction/) para conocer mejor todas sus características y funcionalidades.
+> Consulta la [documentación del Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction) para conocer mejor todas sus características y funcionalidades.
 
 ### Próximos pasos
 
@@ -57,4 +57,4 @@ Con estas opciones de pago cubrimos las necesidades de cada negocio. Revisa las 
 > Sigue estos pasos para instalar el módulo de Mercado Pago en tu tienda online.
 >
 > 
-> [Instalar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/woocommerce/instalation/)
+> [Instalar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/woocommerce/instalation)

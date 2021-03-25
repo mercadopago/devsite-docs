@@ -66,8 +66,7 @@ Ten en cuenta que solo tienes que modificar los valores de ejemplo. Los valores 
 >
 > Datos a tener en cuenta
 >
-> - Para el largo total del ID 43 y 62, que contienen 3 Sub IDs cada uno, es necesario incluir el largo total de **todos los caracteres dentro del ID**. Por ejemplo: 
-----[mlb]---- 43380016com.mercadolibre020110309582245993 ------------ ----[mla]---- 43380016com.mercadolibre020110309446566691 ------------ ----[mlc]---- 43380016com.mercadolibre020110309582115007 ------------ ----[mlu]---- 43380016com.mercadolibre020110309519253179 ------------ ----[mco]---- 43380016com.mercadolibre020110309582249137 ------------ ----[mpe]---- 43380016com.mercadolibre020110309582252133 ------------ ----[mlm]---- 43380016com.mercadolibre020110309582256360 ------------ 
+> - Para el largo total del ID 43 y 62, que contienen 3 Sub IDs cada uno, es necesario incluir el largo total de **todos los caracteres dentro del ID**. Por ejemplo: ----[mlb]---- 43380016com.mercadolibre020110309582245993 ------------ ----[mla]---- 43380016com.mercadolibre020110309446566691 ------------ ----[mlc]---- 43380016com.mercadolibre020110309582115007 ------------ ----[mlu]---- 43380016com.mercadolibre020110309519253179 ------------ ----[mco]---- 43380016com.mercadolibre020110309582249137 ------------ ----[mpe]---- 43380016com.mercadolibre020110309582252133 ------------ ----[mlm]---- 43380016com.mercadolibre020110309582256360 ------------
 > - Si el **largo de los caracteres** es menor a 10, debe incluirse un 0 a la izquierda del número entero. Por ejemplo: “06”.
 > - El *CRC* es una **verificación del contenido**. Debes usar el método `CRC-16/CCITT-FALSE Hexadecimal`. 
 
@@ -92,7 +91,7 @@ Con los datos obtenidos, ¡ya puedes generar tu QR!
 
 ## Pruebas
 
-Para validar el QR, solo necesitas [crear un usuario de prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/integration-test/) para diseñar el QR y otro para escanear y pagar desde la App de Mercado Pago o Mercado Libre.
+Para validar el QR, solo necesitas [crear un usuario de prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/integration-test) para diseñar el QR y otro para escanear y pagar desde la App de Mercado Pago o Mercado Libre.
 
 > NOTE
 >
@@ -102,9 +101,9 @@ Para validar el QR, solo necesitas [crear un usuario de prueba](https://www.merc
 
 ## Notificaciones
 
-Para obtener los datos del pago, es necesario configurar la URL de notificación en el [panel de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/ipn-notifications). 
+Para obtener los datos del pago, es necesario configurar la URL de notificación en el [panel de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn). 
 
-Al tener la URL configurada, ya se pueden validar las órdenes como lo indica la [sección de Notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/).
+Al tener la URL configurada, ya se pueden validar las órdenes como lo indica la [sección de Notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn).
 
 
 ## Comenzar a recibir pagos
@@ -124,5 +123,5 @@ Luego, muestra el QR a tu cliente del modo que prefieras para que lo pueda pagar
 >
 > Conoce las opciones que dispones para llevar tu integración al siguiente nivel.
 >
-> [Integrar modelo QR dinamico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/advanced-integration/)
+> [Integrar modelo QR dinamico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/advanced-integration)
 

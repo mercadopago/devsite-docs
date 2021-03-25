@@ -147,22 +147,24 @@ Agora, **você apenas deve inicializar nosso CardForm relacionando o ID de cada 
 ---
 ### Próximos passos
 
+----[mlb]----
 > LEFT_BUTTON_REQUIRED_PT
 >
-----[mlb]----
 > Integrar Checkout Transparente com cartão
-------------
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> Integrar Checkout API com cartão
-------------
 >
 > Construa e configure sua própria experiência de pagamentos.
 >
-----[mlb]----
-> [Integrar Checkout Transparente do Mercado Pago para cartão](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card/)
+> [Integrar Checkout Transparente do Mercado Pago para cartão](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card)
 ------------
+
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-> [Integrar Checkout API do Mercado Pago para cartão](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card/)
+> LEFT_BUTTON_REQUIRED_PT
+>
+> Integrar Checkout API com cartão
+>
+> Construa e configure sua própria experiência de pagamentos.
+>
+> [Integrar Checkout API do Mercado Pago para cartão](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card)
 ------------
 
 > RIGHT_BUTTON_RECOMMENDED_PT

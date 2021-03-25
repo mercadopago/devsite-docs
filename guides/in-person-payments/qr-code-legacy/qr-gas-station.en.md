@@ -18,7 +18,7 @@
 
 1. The user follows the purchase flow and confirms the payment.
 
-1. Immediately after the payment is processed, we send to your server a notification [INP](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/) informing that there is a novelty.
+1. Immediately after the payment is processed, we send to your server a notification [INP](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn) informing that there is a novelty.
 
 1. With the payment identifier, you can [search](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_search/get) the payment and continue with your internal processes.
 
@@ -235,12 +235,12 @@ https://api.mercadopago.com/pos \
 
    After the user makes the payment you can obtain the data using any of the following ways:
 
-   1. [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/): When the payment is created, we send a notification via webhook to the URL configured in the `notification_url` of the order, you will need to be subscribed to merchant_order's type notifications.
+   1. [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn): When the payment is created, we send a notification via webhook to the URL configured in the `notification_url` of the order, you will need to be subscribed to merchant_order's type notifications.
    2. Do the [payment search](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_search/get) using the `external_reference` as the search criteria.
 
 ## Refunds
 
-There will be times when you will need to [refund](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds/) a payment totally or partially.
+There will be times when you will need to [refund](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds) a payment totally or partially.
 
 **Total Refund**
 
@@ -278,7 +278,7 @@ Consult the [test data](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/e
 
 ### Errors
 
-[Here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses/) you can find our error dictionary.
+[Here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses) you can find our error dictionary.
 
 ## Reports
 

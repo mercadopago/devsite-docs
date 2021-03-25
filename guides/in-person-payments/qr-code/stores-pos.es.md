@@ -118,6 +118,12 @@ https://api.mercadopago.com/pos \
 
 Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/pos/_pos/post).
 
+> WARNING 
+> 
+> Importante
+> 
+> A partir del 20 de abril de 2021, no se podrán crear cajas sin una sucursal asignada. 
+
 Una vez creada la caja, podremos ver en el _Response_ los links a distintos entregables del QR, junto con otros datos relevantes de la caja. 
 
 
@@ -131,4 +137,4 @@ Una vez creada la caja, podremos ver en el _Response_ los links a distintos entr
 >
 > Conoce paso a paso cómo integrar este modelo.
 >
-> [Integrar QR modelo atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/qr-attended-part-b/)
+> [Integrar QR modelo atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/qr-attended-part-b)

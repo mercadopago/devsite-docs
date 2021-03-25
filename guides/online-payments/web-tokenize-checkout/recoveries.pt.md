@@ -20,7 +20,7 @@ Por exemplo:
 
 <form action="/procesar-pago" method="POST">
   <script
-    src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
+    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00"
     data-button-label="Tente Novamente"> <!-- Texto do botão -->
@@ -28,7 +28,7 @@ Por exemplo:
 </form>
 ```
 
-![Retrieve the sale button Mercado Pago](/images/cow-recovery-page__pt.png)
+![Retrieve the sale button Mercado Pago](/images/cow/cow-recovery-page__pt.png)
 
 ## Checkout aberto por padrão
 
@@ -41,7 +41,7 @@ Por exemplo:
 ```html
 <form action="/processar-pagamento" method="POST">
   <script
-    src="https://www.mercadopago.com.ar/integrations/v1/web-tokenize-checkout.js"
+    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
     data-public-key="ENV_PUBLIC_KEY"
     data-transaction-amount="100.00"
     data-open="true"> <!-- Aberto por padrão -->

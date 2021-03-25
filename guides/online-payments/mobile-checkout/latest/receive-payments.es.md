@@ -164,7 +164,7 @@ Preference preference = new Preference();
 
 Mientras más información nos envíes, mejor será la aprobación de los pagos y la experiencia de tus usuarios.
 
-#### _Payer_
+#### Payer
 
 Es requerido el envío del `email` de tu comprador.
 
@@ -443,7 +443,7 @@ Evita pagos rechazados con nuestras recomendaciones y [mejora la aprobación de 
 
 Prueba tu integración antes de salir a producción, a fin de verificar el funcionamiento y realizar los ajustes que necesites.
 
-Para ello debes usar usuario y tarjetas de prueba, visita la sección [Probando](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/mobile-checkout/testing) para más información.
+Para ello debes usar usuario y tarjetas de prueba, visita la sección [Pruebas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/mobile-checkout/testing) para más información.
 
 ### Próximos pasos
 

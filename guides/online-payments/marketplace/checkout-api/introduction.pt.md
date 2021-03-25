@@ -32,9 +32,9 @@ representativo que pode ser guardado de forma segura em seus servidores para cri
 
 * A chave privada, ou **Access token**, é utilizada para todas as requisições realizadas às APIs, tais como processamento de pagamentos, reembolsos, armazenamento de cartões, etc. As chaves privadas devem ser mantidas confidencialmente em seus servidores de backend e nunca devem ser publicadas.
 
-> Possui alguma dúvida? Consulte nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials/).
+> Possui alguma dúvida? Consulte nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials).
 
-## Modo _Sandbox_ e Modo de Produção
+## Modo Sandbox e Modo de Produção
 
 Inicialmente, sua aplicação poderá interagir com o Mercado Pago apenas no **Modo Sandbox**, uma réplica exata do **Modo de Produção**, desenvolvido com o objetivo de facilitar os testes durante a integração.
 

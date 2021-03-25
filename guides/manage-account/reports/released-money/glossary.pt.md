@@ -13,7 +13,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | NET_DEBIT_AMOUNT | Creditado no valor disponível. |
 | NET_CREDIT_AMOUNT | Debitado no valor disponível. |
 | GROSS_AMOUNT | Valor bruto da transação. |
-| MP_FEE_AMOUNT | Pagamento da tarifa doMercado Pago e/ou Mercado Livre. ----[mla,mpe,mco,mlm,mlu,mlc]---- Inclui IVA. ------------ |
+| MP_FEE_AMOUNT | Pagamento da tarifa doMercado Pago e/ou Mercado Livre. ----[mla, mpe, mco, mlm, mlu, mlc]---- Inclui IVA. ------------ |
 | FINANCING_FEE_AMOUNT | Custo de oferecer parcelamento sem juros. |
 | SHIPPING_FEE_AMOUNT | Custo de envio. |
 | TAXES_AMOUNT | Impostos recebidos por retenção de receita bruta. |
@@ -35,6 +35,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | PACK_ID | Identificador do pacote no carrinho. |
 | TAXES_DISAGGREGATED | Impostos desagregados no formato JSON. |
 | EFFECTIVE_COUPON_AMOUNT | Custo de oferecer desconto. |
+| POI_ID | ID da maquininha se o pagamento é feito em uma loja física. |
 
 <hr/>
 

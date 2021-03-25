@@ -102,7 +102,7 @@ Done! We can now create the subscription and associate it to your plan.
 Once you have generated your plan and obtained your `preapproval_plan_id`, create the subscription of the payer by API as follows: 
 
 ```curl 
-curl --location --request POST 'https://api.mercadopago.com/preapproval \
+curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 --data-raw '{
@@ -219,6 +219,12 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 }
 ```
 
+> NOTE
+> 
+> Validation payment
+> 
+> To prove that the card is valid, we make a validation payment with a minimum amount. If the payment is successful, we proceed with the return of that payment. The amount may differ according to each country.
+
 ### Create subscription with pending payment
 
 You can create a subscription with `pending` status and no associated payment method. 
@@ -245,6 +251,13 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
   "status": "pending"
 }'
 ```
+
+> NOTE
+> 
+> Increase the security of your website
+>
+> With our security code, you can further protect your website and get more payments approved. It will help you to prevent fraud and unjustified rejected payments.<br><br>
+> It's simple! [Add the code](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/payment-rejections#bookmark_tips_to_improve_the_approval_process) in easy steps.
 
 
 #### Response
@@ -306,7 +319,7 @@ Attributes
 >
 > Check that your subscriptions are properly configured with the test users. 
 >
-> [Tests](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/testing/)
+> [Tests](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/testing)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -314,4 +327,4 @@ Attributes
 >
 > Update, edit or cancel your subscriptions. 
 >
-> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/advanced-integration/)
+> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/advanced-integration)

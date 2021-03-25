@@ -258,10 +258,10 @@ Este acuerdo será regido en todos sus puntos por las leyes vigentes en Argentin
 
 17.6 Anexos: Forman parte integral e inseparable de los Términos y Condiciones incorporados en este acuerdo, los siguientes documentos, los cuales se podrán consultar dentro del Sitio mediante el enlace abajo provisto o accediendo directamente a las páginas correspondientes:
 
-[Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.ar/ayuda/_299) </br>
-[Términos y Condiciones de Uso de Código QR](https://www.mercadopago.com.ar/ayuda/_4269) </br>
-[Términos y condiciones de uso de Mercado Pago Gateway](https://www.mercadopago.com.ar/ayuda/_3145) </br>
-[Términos y condiciones de uso de Mercado Pago Point](https://www.mercadopago.com.ar/ayuda/_2772) </br>
+[Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.ar/ayuda/_299) <br>
+[Términos y Condiciones de Uso de Código QR](https://www.mercadopago.com.ar/ayuda/_4269) <br>
+[Términos y condiciones de uso de Mercado Pago Gateway](https://www.mercadopago.com.ar/ayuda/_3145) <br>
+[Términos y condiciones de uso de Mercado Pago Point](https://www.mercadopago.com.ar/ayuda/_2772) <br>
 
 ## 18. Modificaciones a los Términos y Condiciones
 
@@ -537,8 +537,8 @@ Este acordo será regido em todos seus termos pelas leis vigentes na República 
 
 17.6 Anexos: Os documentos a seguir fazem parte integrante e indossociável dos Termos e Condições, sendo a eles incorporados, podendo ser consultados no Website mediante o link fornecido abaixo ou acessando diretamente as páginas correspondentes:
 
-[Termos e Condições Gerais de Uso do Mercado Pago](https://www.mercadopago.com.br/ajuda/_299) </br>
-[Termos e condições do Mercado Pago Point](https://www.mercadopago.com.br/ajuda/_1772) </br>
+[Termos e Condições Gerais de Uso do Mercado Pago](https://www.mercadopago.com.br/ajuda/_299) <br>
+[Termos e condições do Mercado Pago Point](https://www.mercadopago.com.br/ajuda/_1772) <br>
 
 ## 18. Modificações dos Termos e Condições
 
@@ -807,7 +807,7 @@ Este acuerdo será regido en todos sus puntos por las leyes vigentes en Chile. C
 
 17.6 Anexos: Forman parte integral e inseparable de los Términos y Condiciones incorporados en este acuerdo, los siguientes documentos, los cuales se podrán consultar dentro del Sitio mediante el enlace abajo provisto o accediendo directamente a las páginas correspondientes:
 
-[Términos y Condiciones de Mercado Pago](https://www.mercadopago.cl/ayuda/_299) </br>
+[Términos y Condiciones de Mercado Pago](https://www.mercadopago.cl/ayuda/_299) <br>
 
 ## 18. Modificaciones a los Términos y Condiciones
 
@@ -1075,8 +1075,8 @@ Este acuerdo será regido en todos sus puntos por las leyes vigentes en Colombia
 
 17.6 Anexos: Forman parte integral e inseparable de los Términos y Condiciones incorporados en este acuerdo, los siguientes documentos, los cuales se podrán consultar dentro del Sitio mediante el enlace abajo provisto o accediendo directamente a las páginas correspondientes:
 
-[Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.co/ayuda/_299) </br>
-[Términos y Condiciones de Mercado Pago Gateway](https://www.mercadopago.com.co/ayuda/3145) </br>
+[Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.co/ayuda/_299) <br>
+[Términos y Condiciones de Mercado Pago Gateway](https://www.mercadopago.com.co/ayuda/3145) <br>
 
 ## 18. Modificaciones a los Términos y Condiciones
 
@@ -1347,8 +1347,8 @@ Este acuerdo será regido en todos sus puntos por las leyes vigentes en la Repú
 
 17.6 Anexos: Forman parte integral e inseparable de los Términos y Condiciones incorporados en este acuerdo, los siguientes documentos, los cuales se podrán consultar dentro del Sitio mediante el enlace abajo provisto o accediendo directamente a las páginas correspondientes:
 
-[Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.pe/ayuda/_299) </br>
-[Términos y condiciones de uso de Mercado Pago Gateway](https://www.mercadopago.com.pe/ayuda/_3529) </br>
+[Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.pe/ayuda/_299) <br>
+[Términos y condiciones de uso de Mercado Pago Gateway](https://www.mercadopago.com.pe/ayuda/_3529) <br>
 
 ## 18. Modificaciones a los Términos y Condiciones
 
@@ -1612,10 +1612,10 @@ Este acuerdo será regido en todos sus puntos por las leyes vigentes en los Esta
 
 17.6 Anexos: Forman parte integral e inseparable de los Términos y Condiciones incorporados en este acuerdo, los siguientes documentos, los cuales se podrán consultar dentro del Sitio mediante el enlace abajo provisto o accediendo directamente a las páginas correspondientes:
 
-[Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.mx/ayuda/_299) </br>
-[Términos y Condiciones de Uso de Código QR](https://www.mercadopago.com.mx/ayuda/_4269) </br>
-[Términos y condiciones de uso de Mercado Pago Gateway](https://www.mercadopago.com.mx/ayuda/_3529) </br>
-[Términos y condiciones de uso de Mercado Pago Point](https://www.mercadopago.com.mx/ayuda/_1772) </br>
+[Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.mx/ayuda/_299) <br>
+[Términos y Condiciones de Uso de Código QR](https://www.mercadopago.com.mx/ayuda/_4269) <br>
+[Términos y condiciones de uso de Mercado Pago Gateway](https://www.mercadopago.com.mx/ayuda/_3529) <br>
+[Términos y condiciones de uso de Mercado Pago Point](https://www.mercadopago.com.mx/ayuda/_1772) <br>
 
 ## 18. Modificaciones a los Términos y Condiciones
 
@@ -1887,7 +1887,7 @@ Este acuerdo estará regido en todos sus puntos por las leyes vigentes en la Rep
 
 17.6 Anexos: Forman parte integral e inseparable de los Términos y Condiciones incorporados en este acuerdo, los siguientes documentos, los cuales se podrán consultar dentro del Sitio mediante el enlace abajo provisto o accediendo directamente a las páginas correspondientes:
 
-[Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.uy/ayuda/_299) </br>
+[Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.uy/ayuda/_299) <br>
 
 ## 18. Modificaciones a los Términos y Condiciones
 

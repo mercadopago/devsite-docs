@@ -149,7 +149,7 @@ preference.save
 
 Mientras más información nos envíes, mejor será la aprobación de los pagos y la experiencia de tus usuarios.
 
-#### _Payer_
+#### Payer
 
 Es requerido el envío del `email` de tu comprador.
 

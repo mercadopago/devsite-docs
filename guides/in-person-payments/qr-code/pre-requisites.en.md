@@ -25,22 +25,23 @@ We know some concepts may be new for you. Before starting, here's a cheatsheet.
 | Point of sale (POS) | A **place to perform a transaction** on a store or physical shop. Each POS will be linked with a unique QR code. |
 | Order | A purchase made by your client. Contains a list of product with an associated cost. |
 
-> Do you have any questions? Check our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials/).
+> Do you have any questions? Check our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/faqs/credentials).
 
 ## Previous requirements
 
-To continue, you must:
+Keep these aspects in mind before you start:
 
-### 1. Access to Mercado Pago or Mercado Libre account
+### 1. Access to an account
 
-To start the integration, you must have a Mercado Pago or Mercado Libre account. 
-If you don't have an account yet, you can [create one here](https://www.mercadopago.com.ar).
+To start the integration, you must **have a Mercado Pago or Mercado Libre account**. 
+
+You can [Sign in](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/pre-requisites) with an existing account or [Create a new account](https://www.mercadopago[FAKER][URL][DOMAIN]).
 
 > NOTE
 > 
 > Note
 > 
-> If you were to operate in behalf of others, you can work with their credentials safer and easier through [Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/marketplace/checkout-api/introduction/).
+> If you were to operate in behalf of others, you can work with their credentials safer and easier through [Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/marketplace/checkout-api/introduction).
 
 ### 2. Generate test users
 
@@ -96,5 +97,4 @@ Once the test users are created, you can start with the integration and create t
 >
 > To build the integration, you must set up your stores and POS first.
 >
-> [Stores and POS](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/stores-pos/)
-
+> [Stores and POS](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/stores-pos)

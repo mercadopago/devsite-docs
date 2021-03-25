@@ -47,7 +47,6 @@ Para criar uma **afiliação de gateway de pagamento com o Mercado Pago**, siga 
 | MaxInstallments | Escolha a quantidade máxima de parcelas enviadas ao Mercado Pago. |
 | Categoria Principal | Escolha a categoria que mais se encaixa com sua loja. |
 | Captura de segurança antecipada | Você pode desativar a função ou escolher em quanto tempo quer realizar a captura (depois da aprovação da transação e da análise do antifraude). |
-<br>
 
 ![Setting affiliation in VTEX](/images/vtex/vtex_afiliacao_gateway_1.gif)
 
@@ -71,7 +70,6 @@ Para criar uma **condição de pagamento cartão de crédito** utilizando sua af
 <p>&nbsp;</p>
 
 ![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_cartao_2.gif)
-<p>&nbsp;</p>
 
 ### Condição de pagamento boleto bancário
 
@@ -86,7 +84,6 @@ Para criar uma **condição de pagamento [boleto bancário](#bookmark_condiçõe
 <p>&nbsp;</p>
 
 ![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_boleto_3.gif)
-<p>&nbsp;</p>
 
 ### Condição de pagamento Checkout Pro
 
@@ -107,7 +104,6 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 <p>&nbsp;</p>
 
 ![Setting payments in VTEX](/images/vtex/vtex_condicao_redirect_4.gif)
-<p>&nbsp;</p>
 
 #### Configuração do meio de pagamento Mercado Pago PRO
 
@@ -124,7 +120,6 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 <p>&nbsp;</p>
 
 ![Setting payments in VTEX](/images/vtex/vtex_condicao_pro_4.gif)
-<p>&nbsp;</p>
 
 #### Configuração do meio de pagamento Mercado Pago Wallet
 
@@ -141,7 +136,6 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 <p>&nbsp;</p>
 
 ![Setting payments in VTEX](/images/vtex/vtex_condicao_wallet_4.gif)
-<p>&nbsp;</p>
 
 > WARNING
 >
@@ -164,7 +158,7 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 <p>&nbsp;</p>
 
 ![Setting affiliation in VTEX](/images/vtex/vtex-account-installment-7.gif)
-<p>&nbsp;</p>
+
 E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarifas de parcelamento que você configurou.
 
 ## Obtenha aprovação mais rápida enviando o device fingerprint

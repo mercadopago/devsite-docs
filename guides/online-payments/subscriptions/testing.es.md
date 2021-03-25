@@ -79,7 +79,7 @@ Pruebas con tarjeta de crédito
 >
 > Actualiza, modifica o cancela tus suscripciones.
 >
-> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/advanced-integration/)
+> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/advanced-integration)
 
 > RIGHT_BUTTON
 >
@@ -87,4 +87,4 @@ Pruebas con tarjeta de crédito
 >
 > Por si tienes inconvenientes, te explicamos la lógica de reintentos de cobros. 
 >
-> [Reintentos de cobros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/payment-retry/)
+> [Reintentos de cobros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/payment-retry)

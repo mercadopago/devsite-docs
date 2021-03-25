@@ -118,6 +118,12 @@ https://api.mercadopago.com/pos \
 
 Learn more with our [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/pos/_pos/post).
 
+> WARNING 
+> 
+> Important
+> 
+> After April 20th, 2021, Point of Sales can not be created without an assigned store.
+
 Once Point of Sale is created, you’ll be able to see the QR files in the _Response_ section, along with other relevant data. 
 
 
@@ -130,4 +136,4 @@ Once Point of Sale is created, you’ll be able to see the QR files in the _Resp
 >
 > Learn step by step how to integrate this model.
 >
-> [Integrate QR attended model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/qr-attended-part-b/)
+> [Integrate QR attended model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/qr-attended-part-b)

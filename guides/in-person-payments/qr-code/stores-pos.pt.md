@@ -118,6 +118,12 @@ https://api.mercadopago.com/pos \
 
 Você pode obter mais informações em [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/pos/_pos/post).
 
+> WARNING 
+> 
+> Importante
+> 
+> A partir de 20 de abril de 2021, os caixas não poderão ser criados sem uma loja atribuída.
+
 Uma vez criado o caixa, poderemos ver no _Response_ os links para diferentes entregáveis do QR, junto com outros dados relevantes do caixa. 
 
 
@@ -131,4 +137,4 @@ Uma vez criado o caixa, poderemos ver no _Response_ os links para diferentes ent
 >
 > Aprenda passo a passo como integrar este modelo.
 >
-> [Integrar o modelo QR atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/qr-attended-part-b/)
+> [Integrar o modelo QR atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/qr-attended-part-b)

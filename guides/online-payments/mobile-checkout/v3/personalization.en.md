@@ -7,7 +7,7 @@ sites_supported:
     - mlc
     - mpe
 ---
-# **Customization**
+# Customization
 
 > WARNING
 >

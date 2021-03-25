@@ -9,7 +9,6 @@ paths:
     post:
       tags:
         - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/payment-link'
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
       summary: Create a preference
@@ -579,7 +578,6 @@ paths:
     get:
       tags:
         - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/payment-link'
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
       summary: Find a preference
@@ -746,7 +744,6 @@ paths:
     get:
       tags:
         - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/payment-link'
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
       summary: Get a preference
@@ -1049,7 +1046,6 @@ paths:
     put:
       tags:
         - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/payment-link'
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
       summary: Update a preference

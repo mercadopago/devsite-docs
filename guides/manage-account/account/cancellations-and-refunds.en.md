@@ -83,8 +83,11 @@ You can refund a payment within **180 days** after it was approved.
 ----[mlc]----
 You can refund a payment within **330 days** after it was approved.
 ------------
-----[mlu, mpe, mco]----
+----[mlu, mpe]----
 You can refund a payment within **90 days** after it was approved.
+------------
+----[mco]----
+You can refund a payment within **180 days** after it was approved.
 ------------
 
 You must have sufficient funds in your account in order to successfully refund the payment amount. Otherwise, you will get a `400 Bad Request error`.
