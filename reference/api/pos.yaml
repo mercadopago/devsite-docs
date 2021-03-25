@@ -198,7 +198,7 @@ paths:
       tags:
         - $ref: '#/tags/qr-code'
       summary: Get all POS
-      description: Get the information about all of your stores.
+      description: Get the information about all of your stores
       responses:
         '200':
           description: Success
