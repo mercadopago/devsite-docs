@@ -65,7 +65,7 @@ Lançamos uma nova versão do SDK Python 2.0.0.
 >
 > PRODUCT: SDK NODEJS
 
-Lançamos uma nova versão do SDK NodeJS 1.5.6.
+Lançamos a nova versão 1.5.6 do SDK NodeJS .
 
 > GIT
 >
