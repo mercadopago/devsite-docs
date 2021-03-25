@@ -10,7 +10,7 @@ paths:
       tags:
         - $ref: '#/tags/qr-code'
       summary: Get a Store
-      description: Check all the information of a physical store with the ID of the branch you want
+      description: Check all the information of a physical store with the ID of the store you want
       parameters:
         - name: id
           in: path
@@ -291,7 +291,7 @@ paths:
     get:
       tags:
         - $ref: '#/tags/qr-code'
-      summary: Search Stores
+      summary: Search stores
       description: Find all the information of the stores generated through specific filters
       parameters:
         - name: user_id
