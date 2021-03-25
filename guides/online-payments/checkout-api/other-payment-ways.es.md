@@ -1866,7 +1866,7 @@ paymentCreateRequest.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-
 ```
 ```python
 ===
-La fecha usa el formato ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 "date_of_expiration": "2020-05-30T23:59:59.000-04:00"
@@ -3590,7 +3590,7 @@ La respuesta va a mostrar el estado pendiente del pago y toda la información qu
 >
 > Importante
 >
-> Recuerda que para poder generar pagos, antes debes [crear una llave Pix](https://www.mercadopago.com.br/ajuda/1784).
+> Recuerda que para poder generar pagos, antes debes [crear una llave Pix](https://www.mercadopago.com.br/ajuda/17843).
 
 
 El valor `transaction_data` te brindará los datos para disponibilizar la opción de pago a través de un código QR. Vas a encontrar los siguientes atributos:
@@ -3954,7 +3954,7 @@ paymentCreateRequest.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-
 ```
 ```python
 ===
-La fecha usa el formato ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 "date_of_expiration": "2020-05-30T23:59:59.000-04:00"
@@ -4011,7 +4011,7 @@ paymentCreateRequest.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-
 ```
 ```python
 ===
-La fecha usa el formato ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
 "date_of_expiration": "2020-05-30T23:59:59.000-04:00"

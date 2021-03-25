@@ -3577,7 +3577,7 @@ The response will show the pending payment status and all the information needed
 >
 > Important
 >
-> Remember that in order to generate payments, you must first [create a Pix key](https://www.mercadopago.com.br/ajuda/1784).
+> Remember that in order to generate payments, you must first [create a Pix key](https://www.mercadopago.com.br/ajuda/17843).
 
 
 The `transaction_data` will provide the data to make the payment available via QR code. These are the attributes: 
@@ -3909,31 +3909,31 @@ By default, Pix payments expire in 24 hours. You can change this field `date_of_
 [[[
 ```php
 ===
-The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
 $payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
 ```
 ```node
 ===
-The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
 date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ```
 ```java
 ===
-The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
 payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
 ```
 ```ruby
 ===
-The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
 date_of_expiration: '2020-05-30T23:59:59.000-04:00',
 ```
 ```csharp
 ===
-The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
 paymentCreateRequest.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
 ```
@@ -3946,7 +3946,7 @@ The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ```curl
 ===
-The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
 "date_of_expiration": "2020-05-30T23:59:59.000-04:00",
 ```
