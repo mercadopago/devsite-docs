@@ -125,7 +125,7 @@ paths:
     post:
       tags:
         - $ref: '#/tags/qr-code'
-      summary: Create a store
+      summary: Create a Store
       description: Generates a physical store where customers can purchase products or services. You can create more than one store per account
       parameters:
         - name: user_id
