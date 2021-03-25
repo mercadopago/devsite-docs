@@ -71,7 +71,7 @@ Comprove que tenha recebido as notificações do estado do pedido em seu sistema
 | **Restituição de pagamento**. Uma restituição é realizada desde o Ponto de Venda. | Na conta do comprador impacta a restituição. | Ver [devoluções](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds/#bookmark_devolu%C3%A7%C3%B5es). |
 | **Cancelar ordem**. O usuário se arrepende e decide pagar em dinheiro.  | O pedido é eliminado e, portanto, ao escanear o QR somente é mostrada a tela de espera. | Remover a ordem de pagamento do caixa. |
 
-## Quero ir para produção
+## Quero entrar em produção
 
 Quando tiver o aplicativo **pronto e funcionando** na modalidade de teste e quiser começar a processar pagamentos reais, deverá [ativar suas credenciais]([FAKER][CREDENTIALS][URL]). 
 

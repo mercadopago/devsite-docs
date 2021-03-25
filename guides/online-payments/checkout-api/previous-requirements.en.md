@@ -75,14 +75,14 @@ gem install mercadopago-sdk
 ```csharp
 ===
 ----[mlb]----
-Use [NuGet](https://docs.microsoft.com/pt-pt/nuget/install-nuget-client-tools) to install the Mercado Pago SDK .NET.
+Use [NuGet](https://docs.microsoft.com/pt-br/nuget/reference/nuget-exe-cli-reference) to install the Mercado Pago SDK .NET.
 ------------
 ----[mla, mco, mlu, mlc, mlm]----
-Use [NuGet](https://docs.microsoft.com/es-es/nuget/install-nuget-client-tools) to install the Mercado Pago SDK .NET.
+Use [NuGet](https://docs.microsoft.com/es-es/nuget/reference/nuget-exe-cli-reference) to install the Mercado Pago SDK .NET.
 ------------
-To do this, run the following command in the NuGet Package Manager console:
+To do this, run the following command on your terminal:
 ===
-PM> Install-Package mercadopago-sdk -Version 1.0.57
+nuget install mercadopago-sdk
 ```
 ```python
 ===
@@ -96,9 +96,9 @@ pip3 install mercadopago
 
 If you can't use our official SDKs, you will have all the information about data queries and responses available to interact directly with our APIs in [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post).
 
-## Meet the requirements for the production environment
+## Meet the requirements to go to production
 
-When you develop your integration, consider all the [requirements for the production environment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production). This process can ensure your customer's data security, compliance with legal standards or provisions in each country, and the best shopping experience for your customers.
+When you develop your integration, consider all the [requirements to go to production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production). This process can ensure your customer's data security, compliance with legal standards or provisions in each country, and the best shopping experience for your customers.
 
 Once your integration is ready, you just need to fill out the form for to go to production in the [Credentials section]([FAKER][CREDENTIALS][URL]) to start receiving payments.
 

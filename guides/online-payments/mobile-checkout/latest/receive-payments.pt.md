@@ -50,7 +50,11 @@ mercadopago.configure({
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCES_TOKEN')
+```
+```csharp
+using MercadoPago.Config;
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 ```
 ```python
 import mercadopago
@@ -122,45 +126,45 @@ mercadopago.preferences.create(preference).then(function (data) {
  });
 ```
 ```ruby
-preference = MercadoPago::Preference.new()
-
-item = MercadoPago::Item.new()
-item.title="Blue shirt"
-item.quantity= 10
-item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
-item.unit_price = [FAKER][COMMERCE][PRICE]
-
-payer = MercadoPago::Payer.new()
-payer.email="john@yourdomain.com"
-
-preference.items = [item]
-preference.payer = payer
-
-preference.save
-```
-```csharp
-Preference preference = new Preference();
-
- preference.Items.Add(
-  new Item()
-  {
-    Id = "1234",
-    Title = "Blue shirt",
-    Quantity = 10,
-    CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
-    UnitPrice = (float)[FAKER][COMMERCE][PRICE]
+preference_data = {
+  items: [
+    {
+      title: 'Blue shirt',
+      quantity: 10,
+      currency_id: '[FAKER][CURRENCY][ACRONYM]',
+      unit_price: [FAKER][COMMERCE][PRICE]
+    }
+  ],
+  payer: {
+    email: 'john@yourdomain.com'
   }
-  preference.Payer = new Payer()
-  {
-    Email = "john@yourdomain.com"
-  };
+}
 
-  preference.Save();
-
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
 ```
 ```csharp
-using MercadoPago;
-MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Id = "1234",
+            Title = "Blue shirt",
+            Quantity = 10,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = [FAKER][COMMERCE][PRICE]m,
+        },
+    },
+    Payer = new PreferencePayerRequest
+    {
+        Email = "john@yourdomain.com",
+    },
+};
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
+
 ```
 ```python
 preference_data = {
@@ -464,7 +468,7 @@ Você pode testar sua integração antes de partir para a produção, a fim de v
 
 Para isso, deve-se utilizar usuários e cartões de teste.
 
-Para mais informações, consulte a seção de [Testes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/mobile-checkout/testing).
+Para mais informações, consulte a seção de [Teste a integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/mobile-checkout/testing).
 
 ### Próximos passos
 

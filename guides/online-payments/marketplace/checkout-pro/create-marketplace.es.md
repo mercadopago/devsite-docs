@@ -232,23 +232,52 @@ preference.save();
 ```
 ```ruby
 
-preference = MercadoPago::Preference.new()
+sdk = Mercadopago::SDK.new('ENV_ACCES_TOKEN')
 
-item = MercadoPago::Item.new()
-item.title="Blue shirt"
-item.quantity= 10
-item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
-item.unit_price = [FAKER][COMMERCE][PRICE]
+preference_data = {
+  items: [
+    {
+      title: 'Blue shirt',
+      description: 'Multicolor Item',
+      quantity: 10,
+      currency_id: '[FAKER][CURRENCY][ACRONYM]',
+      unit_price: [FAKER][COMMERCE][PRICE]
+    }
+  ],
+  payer: {
+    email: 'john@yourdomain.com'
+  },
+  marketplace_fee: 2.56,
+  notification_url: 'http://urlmarketplace.com/notification_ipn'
+}
 
-payer = MercadoPago::Payer.new()
-payer.email="john@yourdomain.com"
+preference_response = sdk.preference.create(preference_data);
+preference = preference_response[:response]
 
-preference.items = [item]
-preference.payer = payer
-preference.marketplace_fee = 2.56
-preference.notification_url = "http://urlmarketplace.com/notification_ipn"
+```
+```csharp
 
-preference.save
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Blue shirt",
+            Quantity = 10,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = [FAKER][COMMERCE][PRICE]m,
+        },
+    },
+    Payer = new PreferencePayerRequest
+    {
+        Email = "john@yourdomain.com",
+    },
+    MarketplaceFee = 2.56m,
+    NotificationUrl = "http://urlmarketplace.com/notification_ipn",
+};
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
 
 ```
 ```python

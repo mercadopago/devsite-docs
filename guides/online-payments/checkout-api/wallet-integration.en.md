@@ -104,41 +104,46 @@ preference.save();
 ===
 The wallet mode works by adding the _purpose_ attribute to the preference.
 ===
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 # Create a preference object
 preference_data = {
-  "items": [
+  items: [
     {
-      "title": "My Item",
-      "unit_price": 100,
-      "quantity": 1
+      title: 'My Item',
+      unit_price: 100,
+      quantity: 1
     }
   ],
-  "purpose": "wallet_purchase"
+  purpose: 'wallet_purchase'
 }
-preference = $mp.create_preference(preference_data)
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
 
 # This value replaces the String "<%= @preference_id %>" in your HTML
-@preference_id = preference["response"]["id"]
+@preference_id = preference['id']
 ```
 ```csharp
 ===
 The wallet mode works by adding the _purpose_ attribute to the preference.
 ===
-// Create a preference object
-Preference preference = new Preference();
-
-// Create a preference item
-preference.Items.Add(
-  new Item()
-  {
-    Title = "My Item",
-    Quantity = 1,
-    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
-    UnitPrice = (decimal)75
-  }
-);
-preference.Purpose = "wallet_purchase"
-preference.Save();
+// Create the preference request object
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "My Item",
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75m,
+        },
+    },
+    Purpose = "wallet_purchase",
+};
+// Create the preference
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
 ```
 ```python
 preference_data = {

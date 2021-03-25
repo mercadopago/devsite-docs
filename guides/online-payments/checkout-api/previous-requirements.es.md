@@ -74,14 +74,14 @@ gem install mercadopago-sdk
 ```csharp
 ===
 ----[mlb]----
-Usa [NuGet](https://docs.microsoft.com/pt-pt/nuget/install-nuget-client-tools) para instalar la SDK .NET de Mercado Pago.
+Usa [NuGet](https://docs.microsoft.com/pt-br/nuget/reference/nuget-exe-cli-reference) para instalar la SDK .NET de Mercado Pago.
 ------------
 ----[mla, mlm, mco, mlc, mlu]----
-Usa [NuGet](https://docs.microsoft.com/es-es/nuget/install-nuget-client-tools) para instalar la SDK .NET de Mercado Pago.
+Usa [NuGet](https://docs.microsoft.com/es-es/nuget/reference/nuget-exe-cli-reference) para instalar la SDK .NET de Mercado Pago.
 ------------
-Para hacerlo ejecuta el siguiente comando en la consola del NuGet Package Manager:
+Para hacerlo ejecuta el siguiente comando en tu terminal:
 ===
-PM> Install-Package mercadopago-sdk -Version 1.0.57
+nuget install mercadopago-sdk
 ```
 ```python
 ===
@@ -95,9 +95,9 @@ pip3 install mercadopago
 
 Si no puedes utilizar nuestras SDK oficiales, tienes disponible toda la información sobre consultas y respuestas de datos para interactuar directamente con nuestras APIs en [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments/post).
 
-## Cumple los requisitos para ir a producción
+## Cumple los requisitos para salir a producción
 
-Al realizar tu integración, es necesario que tengas en cuenta todos los [requisitos para ir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/goto-production). Con este proceso, se puede garantizar la seguridad de lo datos de tus clientes, el cumplimiento de las normas o disposiciones legales de cada país y lograr la mejor experiencia de compra para tus ventas.
+Al realizar tu integración, es necesario que tengas en cuenta todos los [requisitos para salir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/goto-production). Con este proceso, se puede garantizar la seguridad de lo datos de tus clientes, el cumplimiento de las normas o disposiciones legales de cada país y lograr la mejor experiencia de compra para tus ventas.
 
 Cuando tengas lista tu integración y quieras comenzar a recibir pagos, solo tienes que completar el formulario para ir producción desde la [sección de Credenciales]([FAKER][CREDENTIALS][URL]).
 

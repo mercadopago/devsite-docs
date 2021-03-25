@@ -102,23 +102,25 @@ doCardToken.then (
     });
 ```
 ```ruby
-require 'mercadopago.rb'
-$mp = MercadoPago.new('ACCESS_TOKEN')
+require 'mercadopago'
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-cardTokenData = Hash[
-    "card_number" => "450995xxxxxx3704",
-    "security_code" => "123",
-    "expiration_month" => 6,
-    "expiration_year" => 2018,
-    "cardholder" => Hash[
-        "name" => "APRO",
-        "identification" => Hash[
-            "number" => "12345678",
-            "type" => "DNI"
-        ]
-    ]
+card_token_data = {
+  card_number: '450995xxxxxx3704',
+  security_code: '123',
+  expiration_month: 6,
+  expiration_year: 2025,
+  cardholder: {
+    name: 'APRO',
+    identification: {
+      number: '12345678',
+      type: 'DNI'
+    }
+  }
+}
 
-card_token = $mp.post("/v1/card_tokens", cardTokenData);
+card_token_response = sdk.card_token.create(card_token_data)
+card_token = card_token_response[:response]
 
 puts card_token
 ```

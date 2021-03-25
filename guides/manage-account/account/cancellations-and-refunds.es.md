@@ -56,9 +56,11 @@ mercadopago.payment.update({
 
 ```
 ```ruby
-payment = MercadoPago::Payment.find_by_id(paymentId)
-payment.status = "cancelled"
-payment.update()
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+request = {
+  status: 'cancelled'
+}
+result = sdk.payment.update(payment_id, request)
 ```
 ```python
 sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
@@ -202,8 +204,11 @@ refund_response = sdk.refund().create(payment_id, refund_data)
 refund = refund_response["response"]
 ```
 ```ruby
-payment = MercadoPago::Payment.find_by_id(paymnentId)
-payment.refund(10.5);
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+request = {
+  amount: 10.5
+}
+result = sdk.refund.create(payment_id, request)
 ```
 ```curl
 curl -X POST \
@@ -240,8 +245,9 @@ refunds_response = sdk.refund().list_all(payment_id)
 refunds = refunds_response["response"]
 ```
 ```ruby
-payment = MercadoPago::Payment.find_by_id(payment_id)
-refunds = payment.refund()
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+result = sdk.refund.list(payment_id)
+refunds = result[:response]
 ```
 ```curl
 curl -X GET \

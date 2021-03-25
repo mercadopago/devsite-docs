@@ -58,16 +58,22 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
+payment_methods_response = sdk.payment_methods.get()
+payment_methods = payment_methods_response[:response]
 
 ```
 ```csharp
-using MercadoPago;
-MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+using MercadoPago.Client.PaymentMethod;
+using MercadoPago.Config;
+using MercadoPago.Resource;
+using MercadoPago.Resource.PaymentMethod;
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var client = new PaymentMethodClient();
+ResourcesList<PaymentMethod> paymentMethods = await client.ListAsync();
 
 ```
 ```python
@@ -288,38 +294,42 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 100
-payment.description = 'Product Title'
-payment.payment_method_id = "rapipago"
-payment.payer = {
-  email: "test_user_19653727@testuser.com"
+payment_request = {
+  transaction_amount: 100,
+  description: 'Product Title',
+  payment_method_id: 'rapipago',
+  payer: {
+    email: 'test_user_19653727@testuser.com',
+  }
 }
 
-payment.save()
+payment_response = sdk.payment.create(payment_request)
+payment = payment_response[:response]
 
 ```
 ```csharp
 
-using MercadoPago;
-using MercadoPago.DataStructures.Payment;
-using MercadoPago.Resources;
+using MercadoPago.Config;
+using MercadoPago.Client.Payment;
+using MercadoPago.Resource.Payment;
 
-MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
-Payment payment = new Payment()
+var request = new PaymentCreateRequest
 {
-    TransactionAmount = float.Parse("100"),
+    TransactionAmount = 100,
     Description = "Product Title",
     PaymentMethodId = "rapipago",
-    Payer = new Payer(){
-        Email = "test_user_19653727@testuser.com"
-  }
+    Payer = new PaymentPayerRequest
+    {
+        Email = "test_user_19653727@testuser.com",
+    },
 };
 
-payment.Save();
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(request);
 
 ```
 ```python
@@ -415,14 +425,14 @@ payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
 The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
-date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+date_of_expiration: '2020-05-30T23:59:59.000-04:00',
 ```
 ```csharp
 ===
 The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
-payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+paymentCreateRequest.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
 ```
 ```python
 ===
@@ -520,16 +530,22 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
+payment_methods_response = sdk.payment_methods.get()
+payment_methods = payment_methods_response[:response]
 
 ```
 ```csharp
-using MercadoPago;
-MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+using MercadoPago.Client.PaymentMethod;
+using MercadoPago.Config;
+using MercadoPago.Resource;
+using MercadoPago.Resource.PaymentMethod;
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var client = new PaymentMethodClient();
+ResourcesList<PaymentMethod> paymentMethods = await client.ListAsync();
 
 ```
 ```python
@@ -820,38 +836,42 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 100
-payment.description = 'Product Title'
-payment.payment_method_id = "oxxo"
-payment.payer = {
-  email: "test_user_82045343@testuser.com"
+payment_request = {
+  transaction_amount: 100,
+  description: 'Product Title',
+  payment_method_id: 'oxxo',
+  payer: {
+    email: 'test_user_82045343@testuser.com',
+  }
 }
 
-payment.save()
+payment_response = sdk.payment.create(payment_request)
+payment = payment_response[:response]
 
 ```
 ```csharp
 
-using MercadoPago;
-using MercadoPago.DataStructures.Payment;
-using MercadoPago.Resources;
+using MercadoPago.Config;
+using MercadoPago.Client.Payment;
+using MercadoPago.Resource.Payment;
 
-MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
-Payment payment = new Payment()
+var request = new PaymentCreateRequest
 {
-    TransactionAmount = float.Parse("100"),
+    TransactionAmount = 100,
     Description = "Product Title",
     PaymentMethodId = "oxxo",
-    Payer = new Payer(){
-        Email = "test_user_82045343@testuser.com"
-  }
+    Payer = new PaymentPayerRequest
+    {
+        Email = "test_user_82045343@testuser.com",
+    },
 };
 
-payment.Save();
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(request);
 
 ```
 ```python
@@ -1001,16 +1021,22 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
+payment_methods_response = sdk.payment_methods.get()
+payment_methods = payment_methods_response[:response]
 
 ```
 ```csharp
-using MercadoPago;
-MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+using MercadoPago.Client.PaymentMethod;
+using MercadoPago.Config;
+using MercadoPago.Resource;
+using MercadoPago.Resource.PaymentMethod;
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var client = new PaymentMethodClient();
+ResourcesList<PaymentMethod> paymentMethods = await client.ListAsync();
 
 ```
 ```python
@@ -1246,37 +1272,41 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 100
-payment.description = 'Product Title'
-payment.payment_method_id = "abitab"
-payment.payer = {
-  email: "test_user_84162205@testuser.com"
+payment_request = {
+  transaction_amount: 100,
+  description: 'Product Title',
+  payment_method_id: 'abitab',
+  payer: {
+    email: 'test_user_84162205@testuser.com',
+  }
 }
 
-payment.save()
+payment_response = sdk.payment.create(payment_request)
+payment = payment_response[:response]
 ```
 ```csharp
 
-using MercadoPago;
-using MercadoPago.DataStructures.Payment;
-using MercadoPago.Resources;
+using MercadoPago.Config;
+using MercadoPago.Client.Payment;
+using MercadoPago.Resource.Payment;
 
-MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
-Payment payment = new Payment()
+var request = new PaymentCreateRequest
 {
-    TransactionAmount = float.Parse("100"),
+    TransactionAmount = 100,
     Description = "Product Title",
     PaymentMethodId = "rapipago",
-    Payer = new Payer(){
-        Email = "test_user_84162205@testuser.com"
-  }
+    Payer = new PaymentPayerRequest
+    {
+        Email = "test_user_84162205@testuser.com",
+    },
 };
 
-payment.Save();
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(request);
 
 ```
 ```python
@@ -1413,16 +1443,22 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
+payment_methods_response = sdk.payment_methods.get()
+payment_methods = payment_methods_response[:response]
 
 ```
 ```csharp
-using MercadoPago;
-MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+using MercadoPago.Client.PaymentMethod;
+using MercadoPago.Config;
+using MercadoPago.Resource;
+using MercadoPago.Resource.PaymentMethod;
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var client = new PaymentMethodClient();
+ResourcesList<PaymentMethod> paymentMethods = await client.ListAsync();
 
 ```
 ```python
@@ -1675,37 +1711,41 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 5000
-payment.description = 'Product Title'
-payment.payment_method_id = "efecty"
-payment.payer = {
-  email: "test_user_19549678@testuser.com"
+payment_request = {
+  transaction_amount: 5000,
+  description: 'Product Title',
+  payment_method_id: 'efecty',
+  payer: {
+    email: 'test_user_19549678@testuser.com',
+  }
 }
 
-payment.save()
+payment_response = sdk.payment.create(payment_request)
+payment = payment_response[:response]
 ```
 ```csharp
 
-using MercadoPago;
-using MercadoPago.DataStructures.Payment;
-using MercadoPago.Resources;
+using MercadoPago.Config;
+using MercadoPago.Client.Payment;
+using MercadoPago.Resource.Payment;
 
-MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
-Payment payment = new Payment()
+var request = new PaymentCreateRequest
 {
-    TransactionAmount = float.Parse("5000"),
+    TransactionAmount = 5000,
     Description = "Product Title",
     PaymentMethodId = "efecty",
-    Payer = new Payer(){
-        Email = "test_user_19549678@testuser.com"
-  }
+    Payer = new PaymentPayerRequest
+    {
+        Email = "test_user_19549678@testuser.com",
+    },
 };
 
-payment.Save();
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(request);
 
 ```
 ```python
@@ -1805,14 +1845,14 @@ payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
 The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
-date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+date_of_expiration: '2020-05-30T23:59:59.000-04:00',
 ```
 ```csharp
 ===
 The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
 
-payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+paymentCreateRequest.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
 ```
 ```python
 ===
@@ -1932,29 +1972,27 @@ payment.setTransactionAmount(5000f)
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 5000
-payment.description = 'Product Title'
-payment.payer = {
-email: 'test_user_19549678@testuser.com',
-identification: {
-type: "CC",
-number: "76262349"
-},
-entity_type: "individual"
+payment_request = {
+  transaction_amount: 5000,
+  description: 'Product Title',
+  additional_info: {
+    ip_address: '127.0.0.1'
+  },
+  payer: {
+    email: 'test_user_19549678@testuser.com',
+    entity_type: 'individual'
+  },
+  transaction_details: {
+    financial_institution: 1234
+  },
+  callback_url: 'http://www.your-site.com',
+  payment_method_id: 'pse'
 }
-payment.transaction_details = {
-financial_institution: 1234
-}
-payment.additional_info = {
-ip_address: "127.0.0.1"
-}
-payment.callback_url = "http://www.your-site.com"
-payment.payment_method_id = "pse"
 
-payment.save();
+payment_response = sdk.payment.create(payment_request)
+payment = payment_response[:response]
 ```
 ```python
 import mercadopago
@@ -2090,16 +2128,22 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
+payment_methods_response = sdk.payment_methods.get()
+payment_methods = payment_methods_response[:response]
 
 ```
 ```csharp
-using MercadoPago;
-MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+using MercadoPago.Client.PaymentMethod;
+using MercadoPago.Config;
+using MercadoPago.Resource;
+using MercadoPago.Resource.PaymentMethod;
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var client = new PaymentMethodClient();
+ResourcesList<PaymentMethod> paymentMethods = await client.ListAsync();
 
 ```
 ```python
@@ -2337,37 +2381,41 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 100
-payment.description = 'Product Title'
-payment.payment_method_id = "servipag"
-payment.payer = {
-  email: "test_user_15748052@testuser.com"
+payment_request = {
+  description: 'Product Title',
+  transaction_amount: 100,
+  payment_method_id: 'servipag',
+  payer: {
+    email: 'test_user_15748052@testuser.com'
+  }
 }
 
-payment.save()
+payment_response = sdk.payment.create(payment_request)
+payment = payment_response[:response]
 ```
 ```csharp
 
-using MercadoPago;
-using MercadoPago.DataStructures.Payment;
-using MercadoPago.Resources;
+using MercadoPago.Config;
+using MercadoPago.Client.Payment;
+using MercadoPago.Resource.Payment;
 
-MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
-Payment payment = new Payment()
+var request = new PaymentCreateRequest
 {
-    TransactionAmount = float.Parse("100"),
+    TransactionAmount = 5000,
     Description = "Product Title",
     PaymentMethodId = "servipag",
-    Payer = new Payer(){
-        Email = "test_user_15748052@testuser.com"
-  }
+    Payer = new PaymentPayerRequest
+    {
+        Email = "test_user_15748052@testuser.com",
+    },
 };
 
-payment.Save();
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(request);
 
 ```
 ```python
@@ -2519,25 +2567,27 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 100
-payment.description = 'Product Title'
-payment.payer = {
-email: 'test_user_15748052@testuser.com',
-entity_type: "individual"
+payment_request = {
+  transaction_amount: 100,
+  description: 'Product Title',
+  payer: {
+    email: 'test_user_15748052@testuser.com',
+    entity_type: 'individual'
+  },
+  transaction_details: {
+    financial_institution: 1234
+  },
+  additional_info: {
+    ip_address: '127.0.0.1'
+  },
+  callback_url: 'http://www.your-site.com',
+  payment_method_id: 'webpay'
 }
-payment.transaction_details = {
-financial_institution: 1234
-}
-payment.additional_info = {
-ip_address: "127.0.0.1"
-}
-payment.callback_url = "http://www.your-site.com"
-payment.payment_method_id = "webpay"
 
-payment.save();
+payment_response = sdk.payment.create(payment_request)
+payment = payment_response[:response]
 ```
 ```python
 import mercadopago
@@ -2691,16 +2741,22 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
+payment_methods_response = sdk.payment_methods.get()
+payment_methods = payment_methods_response[:response]
 
 ```
 ```csharp
-using MercadoPago;
-MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+using MercadoPago.Client.PaymentMethod;
+using MercadoPago.Config;
+using MercadoPago.Resource;
+using MercadoPago.Resource.PaymentMethod;
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var client = new PaymentMethodClient();
+ResourcesList<PaymentMethod> paymentMethods = await client.ListAsync();
 
 ```
 ```python
@@ -2913,37 +2969,41 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 100
-payment.description = 'Product Title'
-payment.payment_method_id = "pagoefectivo_atm"
-payment.payer = {
-  email: "test_user_42972582@testuser.com"
+payment_request = {
+  transaction_amount: 100,
+  description: 'Product Title',
+  payment_method_id: 'pagoefectivo_atm',
+  payer: {
+    email: 'test_user_42972582@testuser.com'
+  }
 }
 
-payment.save()
+payment_response = sdk.payment.create(payment_request)
+payment = payment_response[:response]
 ```
 ```csharp
 
-using MercadoPago;
-using MercadoPago.DataStructures.Payment;
-using MercadoPago.Resources;
+using MercadoPago.Config;
+using MercadoPago.Client.Payment;
+using MercadoPago.Resource.Payment;
 
-MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
-Payment payment = new Payment()
+var request = new PaymentCreateRequest
 {
-    TransactionAmount = float.Parse("100"),
+    TransactionAmount = 5000,
     Description = "Product Title",
     PaymentMethodId = "pagoefectivo_atm",
-    Payer = new Payer(){
-        Email = "test_user_42972582@testuser.com"
-  }
+    Payer = new PaymentPayerRequest
+    {
+        Email = "test_user_42972582@testuser.com",
+    },
 };
 
-payment.Save();
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(request);
 
 ```
 ```python
@@ -3088,16 +3148,22 @@ payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_methods = MercadoPago::SDK.get("/v1/payment_methods")
+payment_methods_response = sdk.payment_methods.get()
+payment_methods = payment_methods_response[:response]
 
 ```
 ```csharp
-using MercadoPago;
-MercadoPago.SDK.SetAccessToken = "ENV_ACCESS_TOKEN";
+using MercadoPago.Client.PaymentMethod;
+using MercadoPago.Config;
+using MercadoPago.Resource;
+using MercadoPago.Resource.PaymentMethod;
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var client = new PaymentMethodClient();
+ResourcesList<PaymentMethod> paymentMethods = await client.ListAsync();
 
 ```
 ```python
@@ -3373,67 +3439,64 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_data = {
+payment_request = {
   transaction_amount: 100,
-  description: "Product Title",
-  payment_method_id: "bolbradesco",
+  description: 'Product Title',
+  payment_method_id: 'bolbradesco',
   payer: {
-    email: "test@test.com",
-    first_name: "Test",
-    last_name: "User",
+    email: 'test@test.com',
+    first_name: 'Test',
+    last_name: 'User',
     identification: {
-        type: "CPF",
-        number: "191191191-00"
+      type: 'CPF',
+      number: '19119119100',
     },
     address: {
-        zip_code: "06233-200",
-        street_name: "Av. das Nações Unidas",
-        street_number: "3003",
-        neighborhood: "Bonfim",
-        city: "Osasco",
-        federal_unit: "SP"
+      zip_code: '06233200',
+      street_name: 'Av. das Nações Unidas',
+      street_number: '3003',
+      neighborhood: 'Bonfim',
+      city: 'Osasco',
+      federal_unit: 'SP'
     }
   }
 }
 
-payment.save()
+payment_response = sdk.payment.create(payment_request)
+payment = payment_response[:response]
 
 ```
 ```csharp
-using MercadoPago;
-using MercadoPago.DataStructures.Payment;
-using MercadoPago.Resources;
 
-MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+using MercadoPago.Config;
+using MercadoPago.Client.Common;
+using MercadoPago.Client.Payment;
+using MercadoPago.Resource.Payment;
 
-Payment payment = new Payment()
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var request = new PaymentCreateRequest
 {
-    TransactionAmount = float.Parse("105"),
+    TransactionAmount = 105,
     Description = "Product Title",
     PaymentMethodId = "bolbradesco",
-    Payer = new Payer(){
+    Payer = new PaymentPayerRequest
+    {
         Email = "test@test.com",
         FirstName = "Test",
         LastName = "User",
-        Identification = new Identification(){
+        Identification = new IdentificationRequest
+        {
             Type = "CPF",
-            Number = "191191191-00"
+            Number = "191191191-00",
         },
-        Address = new Address(){
-            ZipCode = "06233-200",
-            StreetName = "Av. das Nações Unidas",
-            StreetNumber = "3003",
-            Neighborhood = "Bonfim",
-            City = "Osasco",
-            FederalUnit = "SP"
-
-        }
-    }
+    },
 };
 
-payment.Save();
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(request);
 
 ```
 ```python
@@ -3647,67 +3710,54 @@ payment.save();
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment_data = {
+payment_request = {
   transaction_amount: 100,
-  description: "Título do produto",
-  payment_method_id: "pix",
+  description: 'Título do produto',
+  payment_method_id: 'pix',
   payer: {
-    email: "test@test.com",
-    first_name: "Test",
-    last_name: "User",
+    email: 'test@test.com',
     identification: {
-        type: "CPF",
-        number: "191191191-00"
-    },
-    address: {
-        zip_code: "06233-200",
-        street_name: "Av. das Nações Unidas",
-        street_number: "3003",
-        neighborhood: "Bonfim",
-        city: "Osasco",
-        federal_unit: "SP"
+      type: 'CPF',
+      number: '19119119100',
     }
   }
 }
 
-payment.save()
+payment_response = sdk.payment.create(payment_request)
+payment = payment_response[:response]
 
 ```
 ```csharp
-using MercadoPago;
-using MercadoPago.DataStructures.Payment;
-using MercadoPago.Resources;
 
-MercadoPago.SDK.SetAccessToken("ENV_ACCESS_TOKEN");
+using MercadoPago.Config;
+using MercadoPago.Client.Common;
+using MercadoPago.Client.Payment;
+using MercadoPago.Resource.Payment;
 
-Payment payment = new Payment()
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var request = new PaymentCreateRequest
 {
-    TransactionAmount = float.Parse("105"),
-    Description = "Título do produto",
+    TransactionAmount = 105,
+    Description = "Product Title",
     PaymentMethodId = "pix",
-    Payer = new Payer(){
+    Payer = new PaymentPayerRequest
+    {
         Email = "test@test.com",
         FirstName = "Test",
         LastName = "User",
-        Identification = new Identification(){
+        Identification = new IdentificationRequest
+        {
             Type = "CPF",
-            Number = "191191191-00"
+            Number = "191191191-00",
         },
-        Address = new Address(){
-            ZipCode = "06233-200",
-            StreetName = "Av. das Nações Unidas",
-            StreetNumber = "3003",
-            Neighborhood = "Bonfim",
-            City = "Osasco",
-            FederalUnit = "SP"
-
-        }
-    }
+    },
 };
 
-payment.Save();
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(request);
 
 ```
 ```python
@@ -3807,7 +3857,7 @@ The `transaction_data` will provide the data to make the payment available via Q
             },
             "transaction_data": {
                 "qr_code_base64": "iVBORw0KGgoAAAANSUhEUgAABRQAAAUUCAYAAACu5p7oAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAIABJREFUeJzs2luO3LiWQNFmI+Y/Zd6vRt36KGNXi7ZOBtcagHD4kNLeiLX33v8DAAAAABD879sDAAAAAAA/h6AIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCAAAAAJmgCAAAAABkgiIAAAAAkAmKAAAAAEAmKAIAAAAAmaAIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCA...",
-                "qr_code": "00020126600014br.gov.bcb.pix0117test@testuser.com0217additional data520400005303986540510.005802BR5913Maria Silva6008Brasilia62070503***6304E2CA",
+                "qr_code": "00020126600014br.gov.bcb.pix0117john@yourdomain.com0217additional data520400005303986540510.005802BR5913Maria Silva6008Brasilia62070503***6304E2CA",
             }
         }
     }
@@ -3872,13 +3922,13 @@ payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
 ===
 The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
-date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+date_of_expiration: '2020-05-30T23:59:59.000-04:00',
 ```
 ```csharp
 ===
 The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ===
-payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+paymentCreateRequest.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
 ```
 ```python
 ===
@@ -3930,13 +3980,13 @@ payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
 ===
 The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+date_of_expiration: '2020-05-30T23:59:59.000-04:00',
 ```
 ```csharp
 ===
 The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-payment.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+paymentCreateRequest.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
 ```
 ```python
 ===

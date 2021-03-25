@@ -86,19 +86,48 @@ mercadopago.payment.create(payment_data).then(function (data) {
 ```ruby
 
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
 
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 100
-payment.token = 'ff8080814c11e237014c1ff593b57b4d'
-payment.description = 'Título do produto'
-payment.installments = 1
-payment.payment_method_id = "visa"
-payment.payer = {
-  email: "test_user_19653727@testuser.com"
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+
+payment_request = {
+  transaction_amount: 100,
+  token: 'ff8080814c11e237014c1ff593b57b4d',
+  description: 'Título do produto',
+  installments: 1,
+  payment_method_id: 'visa',
+  payer: {
+    email: 'test_user_19653727@testuser.com'
+  },
+  capture: false
 }
-payment.capture = false
-payment.save()
+
+payment_response = sdk.payment.create(payment_request)
+payment = payment[:response]
+```
+```csharp
+
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
+
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var paymentRequest = new PaymentCreateRequest
+{
+    TransactionAmount = 100,
+    Token = "ff8080814c11e237014c1ff593b57b4d",
+    Description = "Título do produto",
+    Installments = 1,
+    PaymentMethodId = "visa",
+    Payer = new PaymentPayerRequest
+    {
+        Email = "test_user_19653727@testuser.com",
+    },
+    Capture = false,
+};
+
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(paymentRequest);
 ```
 ```python
 import mercadopago
@@ -206,11 +235,24 @@ mercadopago.payment.capture(paymentId, mercadopago, (error, response) => {
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment = MercadoPago::Payment.load(paymentId)
-payment.capture=true
-payment.update()
+request = {
+  capture: true
+}
+
+payment_response = sdk.payment.update(payment_id, request)
+payment = payment_response[:response]
+```
+```csharp
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
+
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var client = new PaymentClient();
+Payment payment = await client.CaptureAsync(paymentId);
 ```
 ```python
 import mercadopago
@@ -298,12 +340,25 @@ mercadopago.payment.capturePartial(captureInfo, mercadopago, (error, response) =
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment = MercadoPago::Payment.load(paymentId)
-payment.transaction_amount = 75
-payment.capture=true
-payment.update()
+request = {
+  transaction_amount: 75,
+  capture: true
+}
+
+payment_response = sdk.payment.update(payment_id, request)
+payment = payment_response[:response]
+```
+```csharp
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
+
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var client = new PaymentClient();
+Payment payment = await client.CaptureAsync(paymentId, 75);
 ```
 ```python
 import mercadopago
@@ -391,11 +446,24 @@ mercadopago.payment.cancel(paymentToBeCanceled, mercadopago, (error, response) =
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new(ENV_ACCESS_TOKEN)
 
-payment = MercadoPago::Payment.load(paymentId)
-payment.status = "canceled"
-payment.update()
+request = {
+  status: 'canceled'
+}
+
+payment_response = sdk.payment.update(payment_id, request)
+payment = payment_response[:response]
+```
+```csharp
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
+
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var client = new PaymentClient();
+Payment payment = await client.CancelAsync(paymentId);
 ```
 ```python
 import mercadopago
@@ -435,11 +503,11 @@ curl -X PUT \
 
 > LEFT_BUTTON_REQUIRED_PT
 >
-> Requisitos para ir a produção
+> Requisitos para entrar em produção
 >
 > Conheça os requisitos necessários para começar a receber pagamentos.
 >
-> [Requisitos para ir a produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/goto-production)
+> [Requisitos para entrar em produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/goto-production)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >

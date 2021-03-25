@@ -59,7 +59,7 @@ mercadopago.configure({
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCES_TOKEN')
 ```
 ```python
 import mercadopago
@@ -131,21 +131,22 @@ mercadopago.preferences.create(preference).then(function (data) {
  });
 ```
 ```ruby
-preference = MercadoPago::Preference.new()
+preference_data = {
+  items: [
+    {
+      title: 'Blue shirt',
+      quantity: 10,
+      currency_id: '[FAKER][CURRENCY][ACRONYM]',
+      unit_price: [FAKER][COMMERCE][PRICE]
+    }
+  ],
+  payer: {
+    email: 'john@yourdomain.com'
+  }
+}
 
-item = MercadoPago::Item.new()
-item.title="Blue shirt"
-item.quantity= 10
-item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
-item.unit_price = [FAKER][COMMERCE][PRICE]
-
-payer = MercadoPago::Payer.new()
-payer.email="john@yourdomain.com"
-
-preference.items = [item]
-preference.payer = payer
-
-preference.save
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
 ```
 ```python
 preference_data = {
