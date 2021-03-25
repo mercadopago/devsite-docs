@@ -9,8 +9,8 @@ paths:
     post:
       tags:
         - $ref: '#/tags/subscriptions'
-      summary: Create a subscription preference
-      description: Create a subscription preference.
+      summary: Create a subscription
+      description: Generate a subscription with all the settings you need
       requestBody:
         content:
           application/json:

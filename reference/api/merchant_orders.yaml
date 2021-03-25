@@ -11,8 +11,8 @@ paths:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/qr-code'
-      summary: Create a merchant order
-      description: Create a merchant order.
+      summary: Create an order
+      description: Generate an order to associate it with the payment preference and obtain the necessary URL to start the payment flow
       requestBody:
         content:
           application/json:
@@ -274,8 +274,8 @@ paths:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/qr-code'
-      summary: Search a merchant order
-      description: Search a merchant order.
+      summary: Search for orders
+      description: Find all the information of the orders generated through specific filters or a specific date range
       parameters:
         - name: status
           in: query
@@ -844,8 +844,8 @@ paths:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/qr-code'
-      summary: Get a merchant order
-      description: Get a merchant order.
+      summary: Get an order
+      description: Check the payment information for a product or service with the ID of the order you want
       parameters:
         - name: id
           in: path
@@ -1301,8 +1301,8 @@ paths:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/qr-code'
-      summary: Update a merchant order
-      description: Update a merchant order.
+      summary: Update an order
+      description: Renew the details of a payment. Indicate the ID of the order and send the parameters with the information you want to update
       parameters:
         - name: id
           in: path

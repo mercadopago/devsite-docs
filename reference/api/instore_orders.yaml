@@ -9,8 +9,8 @@ paths:
     post:
       tags:
         - $ref: '#/tags/qr-code'
-      summary: Create an Order
-      description: Create an Order.
+      summary: Create an order
+      description: Generate a payment order with all the payment information for your product or service and associate it with the Point of Sale you want
       parameters:
         - name: user_id
           in: path
@@ -289,8 +289,8 @@ paths:
     delete:
       tags:
         - $ref: '#/tags/qr-code'
-      summary: Delete an Order
-      description: Delete an Order.
+      summary: Delete an order
+      description: Delete an order whenever you need to with the ID of the user and the external ID
       parameters:
         - name: user_id
           in: path

@@ -10,8 +10,8 @@ paths:
       tags:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/marketplace'
-      summary: Find identification types
-      description: Find identification types.
+      summary: Get document types
+      description: Consult all the types of documents available by country and get a list with the ID and details of each one
       responses:
         '200':
           description: success

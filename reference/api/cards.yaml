@@ -10,8 +10,8 @@ paths:
       tags:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/marketplace'
-      summary: List customer cards
-      description: List customer cards
+      summary: Obtain customer cards
+      description: Consult a client's saved cards in order to be able to show them when making a payment.
       parameters:
         - name: customer_id
           in: path
@@ -204,7 +204,7 @@ paths:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/marketplace'
       summary: Save a card
-      description: Save a card.
+      description: Store the card reference used by the customer in the payment securely on our servers to avoid asking for all the data in future transactions
       parameters:
         - name: customer_id
           in: path
@@ -424,8 +424,8 @@ paths:
       tags:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/marketplace'
-      summary: Get a customer card
-      description: Get a customer card
+      summary: Get a card
+      description: Check the reference information for a saved card associated with a customer
       parameters:
         - name: customer_id
           in: path
@@ -621,8 +621,8 @@ paths:
       tags:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/marketplace'
-      summary: Update a customer card
-      description: Update a customer card
+      summary: Update a card
+      description: Renew the details of a card associated with a customer. Indicate the IDs and send the parameters with the information you want to update
       parameters:
         - name: customer_id
           in: path
@@ -732,8 +732,8 @@ paths:
       tags:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/marketplace'
-      summary: Delete a customer card
-      description: Delete a customer card
+      summary: Delete a card
+      description: Delete the data of a card associated with a customer whenever you need to
       parameters:
         - name: customer_id
           in: path
