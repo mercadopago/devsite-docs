@@ -3083,7 +3083,7 @@ Para começar, você deve ter cadastrada uma chave Pix na conta do vendedor. Est
 
 [Conheça como criar uma chave Pix](https://www.mercadopago.com.br/ajuda/17843)
 
-> Leve em consideração que o registro da chave Pix pode levar alguns minutos.
+> Considere que o registro da chave Pix pode levar alguns minutos.
 
 ### Dados para o pagamento
 
@@ -3289,7 +3289,7 @@ A resposta mostrará o status pendente do pagamento e todas as informações que
 >
 > Importante
 >
-> Lembre-se de que, para gerar pagamentos, você deve primeiro [criar uma chave Pix.](https://www.mercadopago.com.br/ajuda/1784)
+> Lembre-se de que, para gerar pagamentos, você deve primeiro [criar uma chave Pix](https://www.mercadopago.com.br/ajuda/1784).
 
 
 O valor `transaction_data` oferecerá os dados para disponibilizar a opção de pagamento através de um código QR. Você vai encontrar os atributos abaixo:

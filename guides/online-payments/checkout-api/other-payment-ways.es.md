@@ -3287,7 +3287,7 @@ La respuesta va a mostrar el estado pendiente del pago y toda la información qu
 >
 > Importante
 >
-> Recuerda que para poder generar pagos, antes debes [crear una llave Pix.](https://www.mercadopago.com.br/ajuda/1784)
+> Recuerda que para poder generar pagos, antes debes [crear una llave Pix](https://www.mercadopago.com.br/ajuda/1784).
 
 
 El valor `transaction_data` te brindará los datos para disponibilizar la opción de pago a través de un código QR. Vas a encontrar los siguientes atributos:

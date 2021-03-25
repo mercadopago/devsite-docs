@@ -3272,9 +3272,9 @@ The response will show the pending payment status and all the information needed
 
 > WARNING
 >
-> Importante
+> Important
 >
-> Remember that in order to generate payments, you must first [create a Pix key.](https://www.mercadopago.com.br/ajuda/1784)
+> Remember that in order to generate payments, you must first [create a Pix key](https://www.mercadopago.com.br/ajuda/1784).
 
 
 The `transaction_data` will provide the data to make the payment available via QR code. These are the attributes: 
