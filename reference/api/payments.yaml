@@ -730,7 +730,7 @@ paths:
                       sub_type:
                         type: string
                         example: null
-                        description: Type of way the payment is made
+                        description: Secondary identifier of the payment type
                       application_data:
                         type: object
                         properties:
@@ -742,7 +742,7 @@ paths:
                             type: string
                             example: VERSION_NUMBER
                             description: Current version
-                        description: Information of the application that processes the payment
+                        description: Information about the application that processes the payment
                       transaction_data:
                         type: object
                         properties:
@@ -754,7 +754,7 @@ paths:
                             type: string
                             example: 00020126600014br.gov.bcb.pix0117test@testuser.com0217dados adicionais520400005303986540510.005802BR5913Maria Silva6008Brasilia62070503***6304E2CA
                             description: Data to build a payment code to copy and paste
-                        description: Pending generated payment information
+                        description: Information on the pending payment that was generated
                     description: Information from the application that processes the payment and receives regulatory data
         '400':
           description: Error
