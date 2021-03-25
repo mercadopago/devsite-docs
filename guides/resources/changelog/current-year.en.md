@@ -55,26 +55,6 @@ We have released a new version of SDK Python 2.0.0.
 >
 > [Check GitHub](https://github.com/mercadopago/sdk-python/releases/tag/2.0.0) for further details regarding this release.
 
-### March 10th
-
-> CHANGELOG
->
-> New WooCommerce plugin version
->
-> NEW_VERSION: NEW VERSION
->
-> PRODUCT: WOOCOMMERCE
-
-We have released the new version 5.0.1 for WooCommerce.
-
-[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction)
-
-> GIT
->
-> GitHub
->
-> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.0.1) for further details regarding this release.
-
 ### March 22th
 
 > CHANGELOG
