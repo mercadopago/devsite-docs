@@ -85,6 +85,20 @@ Redirect to the 'init_point' of the preference.
   </body>
 </html>
 ```
+```python
+===
+Redirect to the 'init_point' of the preference.
+===
+<!doctype html>
+<html>
+  <head>
+    <title>Pay</title>
+  </head>
+  <body>
+    <a href="{{ init_point }}" target="_blank">Pay with Mercado Pago</a>
+  </body>
+</html>
+```
 ]]]
 
 

@@ -99,41 +99,61 @@ preference.save();
 ===
 O modo carteira funciona adicionando o atributo _purpose_ na preferência.
 ===
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 # Cria um objeto de preferência
 preference_data = {
-  "items": [
+  items: [
     {
-      "title": "Meu produto",
-      "unit_price": 100,
-      "quantity": 1
+      title: 'Meu produto',
+      unit_price: 100,
+      quantity: 1
     }
   ],
-  "purpose": "wallet_purchase"
+  purpose: 'wallet_purchase'
 }
-preference = $mp.create_preference(preference_data)
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
 
 # Este valor substituirá a string "<%= @preference_id %>" no seu HTML
-@preference_id = preference["response"]["id"]
+@preference_id = preference['id']
 ```
 ```csharp
 ===
 O modo carteira funciona adicionando o atributo _purpose_ na preferência.
 ===
-// Cria um objeto de preferência
-Preference preference = new Preference();
+// Cria o objeto de request da preferência
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Meu produto,
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75m,
+        },
+    },
+    Purpose = "wallet_purchase",
+};
+// Cria a preferência
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
+```
+```python
+preference_data = {
+    "items": [
+        {
+            "title": "Meu produto",
+            "unit_price": 100,
+            "quantity": 1
+        }
+    ],
+    "purpose": "wallet_purchase"
+}
 
-// Cria um item na preferência
-preference.Items.Add(
-  new Item()
-  {
-    Title = "Meu produto",
-    Quantity = 1,
-    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
-    UnitPrice = (decimal)75
-  }
-);
-preference.Purpose = "wallet_purchase"
-preference.Save();
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
 ```
 ```curl
 ===
@@ -213,6 +233,14 @@ Depois, do seu frontend, adicione o seguinte código para exibir o botão de pag
 <script
   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
   data-preference-id="@Html.DisplayFor(model => model.id)"
+  data-button-label="Paga com Mercado Pago"
+  data-button-type="wallet">
+</script>
+```
+```python
+<script
+  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id="{{ preference_id }}"
   data-button-label="Paga com Mercado Pago"
   data-button-type="wallet">
 </script>

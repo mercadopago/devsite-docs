@@ -45,11 +45,15 @@ import com.mercadopago.MercadoPago;
 ```
 ```ruby
 # SDK de Mercado Pago
-require 'mercadopago.rb'
+require 'mercadopago'
 ```
 ```csharp
 // SDK de Mercado Pago
- using MercadoPago;
+ using MercadoPago.Config;
+```
+```python
+# SDK de Mercado Pago
+import mercadopago
 ```
 ]]]
 
@@ -86,14 +90,21 @@ MercadoPago.SDK.setAccessToken("PROD_ACCESS_TOKEN");
 require 'mercadopago.rb'
 
 # Configura credenciais
-$mp = MercadoPago.new('PROD_ACCESS_TOKEN')
+sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
 ```
 ```csharp
 // SDK de Mercado Pago
-using MercadoPago;
+using MercadoPago.Config;
 
 // Configura credenciais
-MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
+MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
+```
+```python
+# SDK de Mercado Pago  
+import mercadopago
+
+# Configura credenciais
+sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 ```
 ]]]
 
@@ -173,47 +184,75 @@ preference.save();
 ```
 ```ruby
 # SDK de Mercado Pago
-require 'mercadopago.rb'
+require 'mercadopago'
 
 # Configura credenciais
-$mp = MercadoPago.new('PROD_ACCESS_TOKEN')
+sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
 
 # Cria um objeto de preferência
 preference_data = {
-  "items": [
+  items: [
     {
-      "title": "Meu produto",  
-      "unit_price": 100,
-      "quantity": 1
+      title: 'Meu produto',
+      unit_price: 75.56,
+      quantity: 1
     }
   ]
 }
-preference = $mp.create_preference(preference_data)
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
 
 # Este valor substituirá a string "<%= @preference_id %>" no seu HTML
-@preference_id = preference["response"]["id"]
+@preference_id = preference['id']
 ```
 ```csharp
 // SDK de Mercado Pago
-using MercadoPago;
+using MercadoPago.Config;
+using MercadoPago.Client.Preference;
+using MercadoPago.Resource.Preference;
 
 // Configura credenciais
-MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
+MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
 
-// Cria um objeto de preferência
-Preference preference = new Preference();
+// Cria o objeto de request da preferência
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Meu produto",
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75.56m,
+        },
+    },
+};
 
-// Cria um item na preferência
-preference.Items.Add(
-  new Item()
-  {
-    Title = "Meu produto",
-    Quantity = 1,
-    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
-    UnitPrice = (decimal)75.56
-  }
-);
-preference.Save();
+// Cria a preferência usando o client
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
+```
+```python
+# SDK de Mercado Pago
+import mercadopago
+
+# Configura credenciais
+sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
+
+# Cria um item na preferência
+preference_data = {
+    "items": [
+        {
+            "title": "My Item",
+            "quantity": 1,
+            "unit_price": 75.76
+        }
+    ]
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
 ```
 ```curl
 curl -X POST \
@@ -306,47 +345,75 @@ preference.save();
 ```
 ```ruby
 # SDK de Mercado Pago
-require 'mercadopago.rb'
+require 'mercadopago'
 
 # Configura credenciais
-$mp = MercadoPago.new('PROD_ACCESS_TOKEN')
+sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
 
 # Cria um objeto de preferência
 preference_data = {
-  "items": [
+  items: [
     {
-      "title": "Meu produto",
-      "unit_price": 100,
-      "quantity": 1
+      title: 'Meu produto',
+      unit_price: 75,
+      quantity: 1
     }
   ]
 }
-preference = $mp.create_preference(preference_data)
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
 
 # Este valor substituirá a string "<%= @preference_id %>" no seu HTML
-@preference_id = preference["response"]["id"]
+@preference_id = preference['id']
 ```
 ```csharp
 // SDK de Mercado Pago
-using MercadoPago;
+using MercadoPago.Config;
+using MercadoPago.Client.Preference;
+using MercadoPago.Resource.Preference;
 
 // Configura credenciais
-MercadoPago.SDK.AccessToken = "PROD_ACCESS_TOKEN";
+MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
 
-// Cria um objeto de preferência
-Preference preference = new Preference();
+// Cria o objeto de request da preferência
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Meu produto",
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75m,
+        },
+    },
+};
 
-// Cria um item na preferência
-preference.Items.Add(
-  new Item()
-  {
-    Title = "Meu produto",
-    Quantity = 1,
-    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
-    UnitPrice = (decimal)75
-  }
-);
-preference.Save();
+// Cria a preferência usando o client
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
+```
+```python
+# SDK de Mercado Pago
+import mercadopago
+
+# Configura credenciais
+sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
+
+# Cria um objeto de preferência
+preference_data = {
+    "items": [
+        {
+            "title": "My Item",
+            "quantity": 1,
+            "unit_price": 75
+        }
+    ]
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
 ```
 ```curl
 curl -X POST \
@@ -414,6 +481,12 @@ Por último, adicione o seguinte código para mostrar o botão de pagamento do s
 <script
   src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
   data-preference-id="@Html.DisplayFor(model => model.id)">
+</script>
+```
+```python
+<script
+  src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
+  data-preference-id="{{ preference_id }}">
 </script>
 ```
 ]]]

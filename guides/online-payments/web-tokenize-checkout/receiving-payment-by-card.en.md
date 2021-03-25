@@ -64,16 +64,22 @@ const installments = req.body.installments;
 const issuer_id = req.body.issuer_id;
 ```
 ```ruby
-token = request.body.token
-payment_method_id = request.body.payment_method_id
-installments = request.body.installments
-issuer_id = request.body.issuer_id
+token = params[:token]
+payment_method_id = params[:payment_method_id]
+installments = params[:installments]
+issuer_id = params[:issuer_id]
 ```
 ```csharp
 token = Request["token"]
 payment_method_id = Request["payment_method_id"]
 installments = Request["installments"]
 issuer_id = Request["issuer_id"]
+```
+```python
+token = request.POST.get("token")
+payment_method_id = request.POST.get("payment_method_id")
+installments = request.POST.get("installments")
+issuer_id = request.POST.get("issuer_id")
 ```
 ]]]
 
@@ -155,47 +161,67 @@ mercadopago.payment.save(payment_data).then(function (data) {
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.access_token = "ENV_ACCESS_TOKEN";
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 100
-payment.token = token
-payment.description = 'Blue shirt'
-payment.installments = installments
-payment.payment_method_id = payment_method_id
-payment.issuer_id = issuer_id
-payment.payer = {
-  email: "john@yourdomain.com"
+payment_object = {
+   transaction_amount: 100,
+   token: token,
+   description: 'Blue shirt',
+   installments: installments,
+   payment_method_id: payment_method_id,
+   issuer_id: issuer_id,
+   payer: {
+      email: 'john@yourdomain.com'
+  }
 }
-# Save and create the payment
-payment.save()
+payment_response = sdk.payment.create(payment_object)
+payment = payment_response[:response]
 
 ```
 ```csharp
-using MercadoPago;
-using MercadoPago.DataStructures.Payment;
-using MercadoPago.Resources;
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
 // ...
-MercadoPago.SDK.SetAccessToken(ENV_ACCESS_TOKEN);
-//...
-Payment payment = new Payment()
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+// ...
+var paymentRequest = new PaymentCreateRequest
 {
-    TransactionAmount = float.Parse("100"),
+    TransactionAmount = 100,
     Token = token,
     Description = "Blue shirt",
     Installments = installments,
     PaymentMethodId = payment_method_id,
     IssuerId = issuer_id,
-    Payer = new Payer(){
-        Email = "john@yourdomain.com"
-    }
+    Payer = new PaymentPayerRequest
+    {
+        Email = "john@yourdomain.com",
+    },
 };
-// Save and create the payment
-payment.Save();
-//...
-// Shows payment stauts
-Console.log(payment.Status);
-//...
+// Create the payment
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(paymentRequest);
+// ...
+// Shows payment status
+Console.WriteLine(payment.Status);
+// ...
+```
+```python
+payment_data = {
+    "transaction_amount": 100,
+    "token": token,
+    "description": "Blue shirt",
+    "installments": installments,
+    "payment_method_id": payment_method_id,
+    "issuer_id": issuer_id,
+    "payer": {
+        "email": "john@yourdomain.com"
+    }
+}
+
+# Save and create the payment
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
 ```
 ]]]
 

@@ -5,6 +5,76 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 ---
 ## March 2021
 
+### March 25th
+
+> CHANGELOG
+>
+> New version of SDK .Net
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK .NET
+
+We have released a new version of SDK .Net 2.0.0.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-dotnet/releases/tag/2.0.0) for further details regarding this release.
+
+> CHANGELOG
+>
+> New version of SDK Ruby
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK RUBY
+
+We have released a new version of SDK Ruby 2.0.0.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-ruby/releases/tag/2.0.0) for further details regarding this release.
+
+> CHANGELOG
+>
+> New version of SDK Python
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK PYTHON
+
+We have released a new version of SDK Python 2.0.0.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-python/releases/tag/2.0.0) for further details regarding this release.
+
+### March 10th
+
+> CHANGELOG
+>
+> New WooCommerce plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+
+We have released the new version 5.0.1 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.0.1) for further details regarding this release.
+
 ### March 22th
 
 > CHANGELOG
@@ -62,7 +132,6 @@ We have released the new version 4.5.1 for PrestaShop.
 > GitHub
 >
 > [Check GitHub](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.5.1) for further details regarding this release.
-
 
 ### March 4th
 
