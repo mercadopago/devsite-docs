@@ -1,0 +1,161 @@
+openapi: 3.0.0
+servers:
+  - url: https://api.mercadopago.com
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
+paths:
+  /payment_methods:
+    get:
+      tags:
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
+        - $ref: '#/tags/subscriptions'
+      summary: Get the payment methods
+      description: Consult all the available payment methods and obtain a list with the details of each one and its properties
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  properties:
+                    id:
+                      type: string
+                      description: Payment method identifier.
+                    name:
+                      type: string
+                      description: Name of the payment method.
+                    payment_type_id:
+                      type: string
+                      description: Types of payment methods.
+                    status:
+                      type: string
+                      description: Payment methods status.
+                    secure_thumbnail:
+                      type: string
+                      description: Logo to display on secure sites.
+                    thumbnail:
+                      type: string
+                      description: Logo to show.
+                    deferred_capture:
+                      type: string
+                      description: Whether the capture can be delayed or not.
+                    settings:
+                      type: object
+                      description: Payment method settings.
+                      properties:
+                        bin:
+                          type: object
+                          description: bin
+                          properties:
+                            pattern:
+                              type: string
+                              description: >-
+                                Regular expression representing the accepted
+                                bins.
+                            exclusion_pattern:
+                              type: string
+                              description: >-
+                                Regular expression representing the excluded
+                                bins.
+                            installments_pattern:
+                              type: string
+                              description: >-
+                                Regular expression representing bins allowed to
+                                pay with more than one installment.
+                        card_number:
+                          type: object
+                          description: card_number
+                          properties:
+                            length:
+                              type: string
+                              description: Card number length.
+                            validation:
+                              type: string
+                              description: >-
+                                Whether the card number can be validated using a
+                                checksum algorithm (usually Luhn)
+                        security_code:
+                          type: object
+                          description: security_code
+                          properties:
+                            mode:
+                              type: string
+                              description: Whether the security code is mandatory or not.
+                            length:
+                              type: number
+                              description: Security code length.
+                            card_location:
+                              type: string
+                              description: >-
+                                Whether the security code is located in the back
+                                or in the front of the card.
+                    additional_info_needed:
+                      type: array
+                      description: >-
+                        List of additional information that must be supplied by
+                        the payer.
+                    min_allowed_amount:
+                      type: number
+                      description: >-
+                        Minimum amount that can be processed with this payment
+                        method.
+                    max_allowed_amount:
+                      type: number
+                      description: >-
+                        Maximum amount that can be processed with this payment
+                        method.
+                    accreditation_time:
+                      type: number
+                      description: >-
+                        How many time in minutes could happen until processing
+                        of the payment.
+                    financial_institutions:
+                      type: object
+                      description: Finantial institution processing this payment method.
+                      properties:
+                        id:
+                          type: number
+                          description: >-
+                            External financial institution identifier (e.g.:
+                            company id for atm)
+                        description:
+                          type: string
+                          description: Descriptive finantial institution name.
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 1000--the-credentials-are-required-
+                      - 1001--public-key-not-found-
+        '401':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - unauthorized--unauthorized-
+        '404':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - not_found--not-found-

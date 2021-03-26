@@ -1,0 +1,832 @@
+openapi: 3.0.0
+servers:
+  - url: https://api.mercadopago.com
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
+paths:
+  /customers/{customer_id}/cards:
+    get:
+      tags:
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
+      summary: Obtain customer cards
+      description: Consult a client's saved cards in order to be able to show them when making a payment.
+      parameters:
+        - name: customer_id
+          in: path
+          description: Customer's Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                      description: Card ID.
+                      example: 123123-ABD123DIGKBKI991-123
+                    date_registered:
+                      type: string
+                      description: Nao sei o que é
+                    date_created:
+                      type: string
+                      format: date
+                      description: Card's date created.
+                    date_last_updated:
+                      type: string
+                      format: date
+                      description: Card's last modified date.
+                    customer_id:
+                      type: string
+                      description: Customer ID.
+                    expiration_month:
+                      type: number
+                      description: Card's expiration month.
+                    expiration_year:
+                      type: number
+                      description: Card's expiration year.
+                    first_six_digits:
+                      type: string
+                      description: Card's first six digits.
+                    last_four_digits:
+                      type: string
+                      description: Card's last four digits.
+                    payment_method:
+                      type: object
+                      description: Payment method information.
+                      properties:
+                        id:
+                          type: string
+                          description: Payment method ID.
+                        name:
+                          type: string
+                          description: Payment method name.
+                        payment_type_id:
+                          type: string
+                          description: Payment method type.
+                        thumbnail:
+                          type: string
+                          description: Payment method thumbnail.
+                        secure_thumbnail:
+                          type: string
+                          description: Payment method secure thumbnail.
+                    security_code:
+                      type: object
+                      description: Security code information.
+                      properties:
+                        length:
+                          type: number
+                          description: Security code's length.
+                        card_location:
+                          type: string
+                          description: Security code's card location.
+                    issuer:
+                      type: object
+                      description: Issuer information.
+                      properties:
+                        id:
+                          type: number
+                          description: Issuer Id.
+                        name:
+                          type: string
+                          description: Issuer name.
+                    cardholder:
+                      type: object
+                      description: Card holder information.
+                      properties:
+                        name:
+                          type: number
+                          description: Card holder name.
+                        identification:
+                          type: number
+                          description: Identification information.
+                          properties:
+                            number:
+                              type: number
+                              description: Identification number.
+                            subtype:
+                              type: string
+                              description: Identification subtype.
+                            type:
+                              type: string
+                              description: Identification type.
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 100--the-credentials-are-required-
+                      - 101--the-customer-already-exist-
+                      - 102--missing-customer-id-
+                      - 103--parameter-must-be-an-object-
+                      - 104--parameter-length-is-too-large-
+                      - 105--the-customer-id-is-invalid-
+                      - 106--the-email-format-is-invalid-
+                      - 107--the-first-name-is-invalid-
+                      - 108--the-last-name-is-invalid-
+                      - 109--the-phone-area-code-is-invalid-
+                      - 110--the-phone-number-is-invalid-
+                      - 111--the-identification-type-is-invalid-
+                      - 112--the-identification-number-is-invalid-
+                      - 113--the-address-zip-code-is-invalid-
+                      - 114--the-address-street-name-is-invalid-
+                      - 115--the-date-registered-format-is-invalid-
+                      - 116--the-description-is-invalid-
+                      - 117--the-metadata-is-invalid-
+                      - 118--the-body-must-be-a-Json-object-
+                      - 119--the-card-is-required-
+                      - 120--card-not-found-
+                      - 121--the-card-is-invalid-
+                      - 122--the-card-data-is-invalid-
+                      - 123--the-payment-method-id-is-required-
+                      - 124--the-issuer-id-is-required-
+                      - 125--invalid-parameters-
+                      - 126--invalid-parameter--You-cannot-update-the-email-
+                      - >-
+                        127--invalid-parameter--Cannot-resolve-the-payment-method-of-card--check-the-payment-method-id-and-issuer-id-
+                      - >-
+                        128--the-email-format-is-invalid--Use--test-payer--0-9--1-10--testuser-com--
+                      - >-
+                        129--the-customer-has-reached-the-maximum-allowed-number-of-cards-
+                      - 140--invalid-card-owner-
+                      - 150--invalid-users-involved-
+                      - >-
+                        200--invalid-range-format--range--date-parameter-after--date-from-before--date-to--
+                      - 201--range-attribute-must-belong-to-date-entity-
+                      - >-
+                        202--invalid--after--parameter--It-should-be-date-iso-8601--
+                      - >-
+                        203--invalid--before--parameter--It-should-be-date-iso-8601--
+                      - 204--invalid-filters-format-
+                      - 205--invalid-query-format-
+                      - >-
+                        206--attributes-to-sort-must-belong-to--customer--entity-
+                      - 207--order-filter-must-be--asc--or--desc--
+                      - 208--invalid--sort--parameter-format-
+        '401':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - unauthorized--unauthorized-
+        '404':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - not_found--not-found-
+    post:
+      tags:
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
+      summary: Save a card
+      description: Store the card reference used by the customer in the payment securely on our servers to avoid asking for all the data in future transactions
+      parameters:
+        - name: customer_id
+          in: path
+          description: Customer's Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                date_registered:
+                  type: string
+                  description: Nao sei o que é
+                  example: 16/02/1991
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: 1562188766852
+                    description: id
+                  expiration_month:
+                    type: number
+                    example: 6
+                    description: expiration_month
+                  expiration_year:
+                    type: number
+                    example: 2023
+                    description: expiration_year
+                  first_six_digits:
+                    type: string
+                    example: 423564
+                    description: first_six_digits
+                  last_four_digits:
+                    type: string
+                    example: 5682
+                    description: last_four_digits
+                  payment_method:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        example: visa
+                        description: id
+                      name:
+                        type: string
+                        example: visa
+                        description: name
+                      payment_type_id:
+                        type: string
+                        example: credit_card
+                        description: payment_type_id
+                      thumbnail:
+                        type: string
+                        example: http://img.mlstatic.com/org-img/MP3/API/logos/visa.gif
+                        description: thumbnail
+                      secure_thumbnail:
+                        type: string
+                        example: >-
+                          https://www.mercadopago.com/org-img/MP3/API/logos/visa.gif
+                        description: secure_thumbnail
+                    description: payment_method
+                  security_code:
+                    type: object
+                    properties:
+                      length:
+                        type: number
+                        example: 3
+                        description: length
+                      card_location:
+                        type: string
+                        example: back
+                        description: card_location
+                    description: security_code
+                  issuer:
+                    type: object
+                    properties:
+                      id:
+                        type: number
+                        example: 25
+                        description: id
+                      name:
+                        type: string
+                        example: Visa
+                        description: name
+                    description: issuer
+                  cardholder:
+                    type: object
+                    properties:
+                      name:
+                        type: string
+                        example: APRO
+                        description: name
+                      identification:
+                        type: object
+                        properties:
+                          number:
+                            type: string
+                            example: 19119119100
+                            description: number
+                          type:
+                            type: string
+                            example: CPF
+                            description: type
+                        description: identification
+                    description: cardholder
+                  date_created:
+                    type: string
+                    example: 2019-07-03T21:15:35.000Z
+                    description: date_created
+                  date_last_updated:
+                    type: string
+                    example: 2019-07-03T21:19:18.000Z
+                    description: date_last_updated
+                  customer_id:
+                    type: string
+                    example: 448870796-7ZjwhKGxILixxN
+                    description: customer_id
+                  user_id:
+                    type: string
+                    example: 448870796
+                    description: user_id
+                  live_mode:
+                    type: boolean
+                    description: live_mode
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 100--the-credentials-are-required-
+                      - 101--the-customer-already-exist-
+                      - 102--missing-customer-id-
+                      - 103--parameter-must-be-an-object-
+                      - 104--parameter-length-is-too-large-
+                      - 105--the-customer-id-is-invalid-
+                      - 106--the-email-format-is-invalid-
+                      - 107--the-first-name-is-invalid-
+                      - 108--the-last-name-is-invalid-
+                      - 109--the-phone-area-code-is-invalid-
+                      - 110--the-phone-number-is-invalid-
+                      - 111--the-identification-type-is-invalid-
+                      - 112--the-identification-number-is-invalid-
+                      - 113--the-address-zip-code-is-invalid-
+                      - 114--the-address-street-name-is-invalid-
+                      - 115--the-date-registered-format-is-invalid-
+                      - 116--the-description-is-invalid-
+                      - 117--the-metadata-is-invalid-
+                      - 118--the-body-must-be-a-Json-object-
+                      - 119--the-card-is-required-
+                      - 120--card-not-found-
+                      - 121--the-card-is-invalid-
+                      - 122--the-card-data-is-invalid-
+                      - 123--the-payment-method-id-is-required-
+                      - 124--the-issuer-id-is-required-
+                      - 125--invalid-parameters-
+                      - 126--invalid-parameter--You-cannot-update-the-email-
+                      - >-
+                        127--invalid-parameter--Cannot-resolve-the-payment-method-of-card--check-the-payment-method-id-and-issuer-id-
+                      - >-
+                        128--the-email-format-is-invalid--Use--test-payer--0-9--1-10--testuser-com--
+                      - >-
+                        129--the-customer-has-reached-the-maximum-allowed-number-of-cards-
+                      - 140--invalid-card-owner-
+                      - 150--invalid-users-involved-
+                      - >-
+                        200--invalid-range-format--range--date-parameter-after--date-from-before--date-to--
+                      - 201--range-attribute-must-belong-to-date-entity-
+                      - >-
+                        202--invalid--after--parameter--It-should-be-date-iso-8601--
+                      - >-
+                        203--invalid--before--parameter--It-should-be-date-iso-8601--
+                      - 204--invalid-filters-format-
+                      - 205--invalid-query-format-
+                      - >-
+                        206--attributes-to-sort-must-belong-to--customer--entity-
+                      - 207--order-filter-must-be--asc--or--desc--
+                      - 208--invalid--sort--parameter-format-
+        '401':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - unauthorized--unauthorized-
+        '404':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - not_found--not-found-
+  /customers/{customer_id}/cards/{id}:
+    get:
+      tags:
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
+      summary: Get a card
+      description: Check the reference information for a saved card associated with a customer
+      parameters:
+        - name: customer_id
+          in: path
+          description: Customer's Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: id
+          in: path
+          description: Card's Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    description: Card ID.
+                  date_registered:
+                    type: string
+                    description: Nao sei o que é
+                  date_created:
+                    type: string
+                    format: date
+                    description: Card's date created.
+                  date_last_updated:
+                    type: string
+                    format: date
+                    description: Card's last modified date.
+                  customer_id:
+                    type: string
+                    description: Customer ID.
+                  expiration_month:
+                    type: number
+                    description: Card's expiration month.
+                  expiration_year:
+                    type: number
+                    description: Card's expiration year.
+                  first_six_digits:
+                    type: string
+                    description: Card's first six digits.
+                  last_four_digits:
+                    type: string
+                    description: Card's last four digits.
+                  payment_method:
+                    type: object
+                    description: Payment method information.
+                    properties:
+                      id:
+                        type: string
+                        description: Payment method ID.
+                      name:
+                        type: string
+                        description: Payment method name.
+                      payment_type_id:
+                        type: string
+                        description: Payment method type.
+                      thumbnail:
+                        type: string
+                        description: Payment method thumbnail.
+                      secure_thumbnail:
+                        type: string
+                        description: Payment method secure thumbnail.
+                  security_code:
+                    type: object
+                    description: Security code information.
+                    properties:
+                      length:
+                        type: number
+                        description: Security code's length.
+                      card_location:
+                        type: string
+                        description: Security code's card location.
+                  issuer:
+                    type: object
+                    description: Issuer information.
+                    properties:
+                      id:
+                        type: number
+                        description: Issuer Id.
+                      name:
+                        type: string
+                        description: Issuer name.
+                  cardholder:
+                    type: object
+                    description: Card holder information.
+                    properties:
+                      name:
+                        type: number
+                        description: Card holder name.
+                      identification:
+                        type: number
+                        description: Identification information.
+                        properties:
+                          number:
+                            type: number
+                            description: Identification number.
+                          subtype:
+                            type: string
+                            description: Identification subtype.
+                          type:
+                            type: string
+                            description: Identification type.
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 100--the-credentials-are-required-
+                      - 101--the-customer-already-exist-
+                      - 102--missing-customer-id-
+                      - 103--parameter-must-be-an-object-
+                      - 104--parameter-length-is-too-large-
+                      - 105--the-customer-id-is-invalid-
+                      - 106--the-email-format-is-invalid-
+                      - 107--the-first-name-is-invalid-
+                      - 108--the-last-name-is-invalid-
+                      - 109--the-phone-area-code-is-invalid-
+                      - 110--the-phone-number-is-invalid-
+                      - 111--the-identification-type-is-invalid-
+                      - 112--the-identification-number-is-invalid-
+                      - 113--the-address-zip-code-is-invalid-
+                      - 114--the-address-street-name-is-invalid-
+                      - 115--the-date-registered-format-is-invalid-
+                      - 116--the-description-is-invalid-
+                      - 117--the-metadata-is-invalid-
+                      - 118--the-body-must-be-a-Json-object-
+                      - 119--the-card-is-required-
+                      - 120--card-not-found-
+                      - 121--the-card-is-invalid-
+                      - 122--the-card-data-is-invalid-
+                      - 123--the-payment-method-id-is-required-
+                      - 124--the-issuer-id-is-required-
+                      - 125--invalid-parameters-
+                      - 126--invalid-parameter--You-cannot-update-the-email-
+                      - >-
+                        127--invalid-parameter--Cannot-resolve-the-payment-method-of-card--check-the-payment-method-id-and-issuer-id-
+                      - >-
+                        128--the-email-format-is-invalid--Use--test-payer--0-9--1-10--testuser-com--
+                      - >-
+                        129--the-customer-has-reached-the-maximum-allowed-number-of-cards-
+                      - 140--invalid-card-owner-
+                      - 150--invalid-users-involved-
+                      - >-
+                        200--invalid-range-format--range--date-parameter-after--date-from-before--date-to--
+                      - 201--range-attribute-must-belong-to-date-entity-
+                      - >-
+                        202--invalid--after--parameter--It-should-be-date-iso-8601--
+                      - >-
+                        203--invalid--before--parameter--It-should-be-date-iso-8601--
+                      - 204--invalid-filters-format-
+                      - 205--invalid-query-format-
+                      - >-
+                        206--attributes-to-sort-must-belong-to--customer--entity-
+                      - 207--order-filter-must-be--asc--or--desc--
+                      - 208--invalid--sort--parameter-format-
+        '401':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - unauthorized--unauthorized-
+        '404':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - not_found--not-found-
+    put:
+      tags:
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
+      summary: Update a card
+      description: Renew the details of a card associated with a customer. Indicate the IDs and send the parameters with the information you want to update
+      parameters:
+        - name: customer_id
+          in: path
+          description: Customer's Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: id
+          in: path
+          description: Card's Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                date_registered:
+                  type: string
+                  description: Nao sei o que é
+      responses:
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 100--the-credentials-are-required-
+                      - 101--the-customer-already-exist-
+                      - 102--missing-customer-id-
+                      - 103--parameter-must-be-an-object-
+                      - 104--parameter-length-is-too-large-
+                      - 105--the-customer-id-is-invalid-
+                      - 106--the-email-format-is-invalid-
+                      - 107--the-first-name-is-invalid-
+                      - 108--the-last-name-is-invalid-
+                      - 109--the-phone-area-code-is-invalid-
+                      - 110--the-phone-number-is-invalid-
+                      - 111--the-identification-type-is-invalid-
+                      - 112--the-identification-number-is-invalid-
+                      - 113--the-address-zip-code-is-invalid-
+                      - 114--the-address-street-name-is-invalid-
+                      - 115--the-date-registered-format-is-invalid-
+                      - 116--the-description-is-invalid-
+                      - 117--the-metadata-is-invalid-
+                      - 118--the-body-must-be-a-Json-object-
+                      - 119--the-card-is-required-
+                      - 120--card-not-found-
+                      - 121--the-card-is-invalid-
+                      - 122--the-card-data-is-invalid-
+                      - 123--the-payment-method-id-is-required-
+                      - 124--the-issuer-id-is-required-
+                      - 125--invalid-parameters-
+                      - 126--invalid-parameter--You-cannot-update-the-email-
+                      - >-
+                        127--invalid-parameter--Cannot-resolve-the-payment-method-of-card--check-the-payment-method-id-and-issuer-id-
+                      - >-
+                        128--the-email-format-is-invalid--Use--test-payer--0-9--1-10--testuser-com--
+                      - >-
+                        129--the-customer-has-reached-the-maximum-allowed-number-of-cards-
+                      - 140--invalid-card-owner-
+                      - 150--invalid-users-involved-
+                      - >-
+                        200--invalid-range-format--range--date-parameter-after--date-from-before--date-to--
+                      - 201--range-attribute-must-belong-to-date-entity-
+                      - >-
+                        202--invalid--after--parameter--It-should-be-date-iso-8601--
+                      - >-
+                        203--invalid--before--parameter--It-should-be-date-iso-8601--
+                      - 204--invalid-filters-format-
+                      - 205--invalid-query-format-
+                      - >-
+                        206--attributes-to-sort-must-belong-to--customer--entity-
+                      - 207--order-filter-must-be--asc--or--desc--
+                      - 208--invalid--sort--parameter-format-
+        '401':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - unauthorized--unauthorized-
+        '404':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - not_found--not-found-
+    delete:
+      tags:
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
+      summary: Delete a card
+      description: Delete the data of a card associated with a customer whenever you need to
+      parameters:
+        - name: customer_id
+          in: path
+          description: Customer's Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: id
+          in: path
+          description: Card's Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+      responses:
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 100--the-credentials-are-required-
+                      - 101--the-customer-already-exist-
+                      - 102--missing-customer-id-
+                      - 103--parameter-must-be-an-object-
+                      - 104--parameter-length-is-too-large-
+                      - 105--the-customer-id-is-invalid-
+                      - 106--the-email-format-is-invalid-
+                      - 107--the-first-name-is-invalid-
+                      - 108--the-last-name-is-invalid-
+                      - 109--the-phone-area-code-is-invalid-
+                      - 110--the-phone-number-is-invalid-
+                      - 111--the-identification-type-is-invalid-
+                      - 112--the-identification-number-is-invalid-
+                      - 113--the-address-zip-code-is-invalid-
+                      - 114--the-address-street-name-is-invalid-
+                      - 115--the-date-registered-format-is-invalid-
+                      - 116--the-description-is-invalid-
+                      - 117--the-metadata-is-invalid-
+                      - 118--the-body-must-be-a-Json-object-
+                      - 119--the-card-is-required-
+                      - 120--card-not-found-
+                      - 121--the-card-is-invalid-
+                      - 122--the-card-data-is-invalid-
+                      - 123--the-payment-method-id-is-required-
+                      - 124--the-issuer-id-is-required-
+                      - 125--invalid-parameters-
+                      - 126--invalid-parameter--You-cannot-update-the-email-
+                      - >-
+                        127--invalid-parameter--Cannot-resolve-the-payment-method-of-card--check-the-payment-method-id-and-issuer-id-
+                      - >-
+                        128--the-email-format-is-invalid--Use--test-payer--0-9--1-10--testuser-com--
+                      - >-
+                        129--the-customer-has-reached-the-maximum-allowed-number-of-cards-
+                      - 140--invalid-card-owner-
+                      - 150--invalid-users-involved-
+                      - >-
+                        200--invalid-range-format--range--date-parameter-after--date-from-before--date-to--
+                      - 201--range-attribute-must-belong-to-date-entity-
+                      - >-
+                        202--invalid--after--parameter--It-should-be-date-iso-8601--
+                      - >-
+                        203--invalid--before--parameter--It-should-be-date-iso-8601--
+                      - 204--invalid-filters-format-
+                      - 205--invalid-query-format-
+                      - >-
+                        206--attributes-to-sort-must-belong-to--customer--entity-
+                      - 207--order-filter-must-be--asc--or--desc--
+                      - 208--invalid--sort--parameter-format-
+        '401':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - unauthorized--unauthorized-
+        '404':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - not_found--not-found-

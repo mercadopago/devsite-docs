@@ -1,0 +1,571 @@
+openapi: 3.0.0
+servers:
+  - url: https://api.mercadopago.com
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
+paths:
+  /stores/{id}:
+    get:
+      tags:
+        - $ref: '#/tags/qr-code'
+      summary: Get a Store
+      description: Check all the information of a physical store with the ID of the store you want
+      parameters:
+        - name: id
+          in: path
+          description: Store's Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: 30163646
+                    description: id
+                  name:
+                    type: string
+                    example: Sucursal Instore
+                    description: name
+                  date_creation:
+                    type: string
+                    format: date-time
+                    example: 2019-09-09T09:25:56.000Z
+                    description: date_creation
+                  business_hours:
+                    type: object
+                    properties:
+                      monday:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: '08:00'
+                              description: open
+                            close:
+                              type: string
+                              example: '13:00'
+                              description: close
+                        description: monday
+                      tuesday:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: '08:00'
+                              description: open
+                            close:
+                              type: string
+                              example: '18:00'
+                              description: close
+                        description: tuesday
+                      wednesday:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: '07:00'
+                              description: open
+                            close:
+                              type: string
+                              example: '10:00'
+                              description: close
+                        description: wednesday
+                    description: business_hours
+                  location:
+                    type: object
+                    properties:
+                      address_line:
+                        type: string
+                        example: Caseros 3039 Belgrano Capital Federal Argentina
+                        description: address_line
+                      reference:
+                        type: string
+                        example: 3er Piso
+                        description: reference
+                      latitude:
+                        type: number
+                        example: -32.8897322
+                        description: latitude
+                      longitude:
+                        type: number
+                        example: -68.8443275
+                        description: longitude
+                    description: location
+                  external_id:
+                    type: string
+                    example: SUC001
+                    description: external_id
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - INVALID_STORE_ID--Invalid-STORE-ID-
+  /users/{user_id}/stores:
+    post:
+      tags:
+        - $ref: '#/tags/qr-code'
+      summary: Create a Store
+      description: Generates a physical store where customers can purchase products or services. You can create more than one store per account
+      parameters:
+        - name: user_id
+          in: path
+          description: User Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                  description: Store identifier, numerical and self-generated.
+                user_id:
+                  type: string
+                  description: User identifier.
+                name:
+                  type: string
+                  description: Store name.
+                business_hours:
+                  type: string
+                  description: >-
+                    Business hours. They are divided by day of the week and up
+                    to two opening and closing times per day are allowed.
+                external_id:
+                  type: string
+                  description: Unique identifier of the store defined by integrator system.
+                location:
+                  type: object
+                  description: Store location.
+                  properties:
+                    zip_code:
+                      type: string
+                      description: Zip code.
+                    street_number:
+                      type: number
+                      description: Number.
+                    street_name:
+                      type: string
+                      description: Street name.
+                    city_name:
+                      type: string
+                      description: City.
+                    state_name:
+                      type: object
+                      description: State.
+                    latitude:
+                      type: string
+                      description: Latitude.
+                    logitude:
+                      type: string
+                      description: Longitude.
+                    reference:
+                      type: string
+                      description: Reference.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: 1234567
+                    description: id
+                  name:
+                    type: string
+                    example: Sucursal Instore
+                    description: name
+                  date_created:
+                    type: string
+                    example: 2019-08-08T19:29:45.019Z
+                    description: date_created
+                  business_hours:
+                    type: object
+                    properties:
+                      monday:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: '08:00'
+                              description: open
+                            close:
+                              type: string
+                              example: '12:00'
+                              description: close
+                        description: monday
+                      tuesday:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: '09:00'
+                              description: open
+                            close:
+                              type: string
+                              example: '18:00'
+                              description: close
+                        description: tuesday
+                    description: business_hours
+                  location:
+                    type: object
+                    properties:
+                      address_line:
+                        type: string
+                        example: Caseros 3039 Belgrano Capital Federal
+                        description: address_line
+                      latitude:
+                        type: number
+                        example: -32.8897322
+                        description: latitude
+                      longitude:
+                        type: number
+                        example: -68.8443275
+                        description: longitude
+                      reference:
+                        type: string
+                        example: 3er Piso
+                        description: reference
+                    description: location
+                  external_id:
+                    type: string
+                    example: 1234
+                    description: external_id
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - INVALID_USER_ID--USER-ID-must-be-number-
+                      - UNKNOWN_FIELD--Unknown-field-
+                      - INVALID_NAME--Name-must-be-string-
+                      - >-
+                        INVALID_BUSINESS_HOURS--BUSINESS-HOURS-must-be-json-object-
+                      - INVALID_DAY--Day-must-be-json-array-
+                      - INVALID_LOCATION--LOCATION-must-be-json-object-
+                      - INVALID_STREET_NAME--STREET-NAME-must-be-string-
+                      - INVALID_STREET_NUMBER--STREET-NUMBER-must-be-string-
+                      - INVALID_ZIP_CODE--ZIP-CODE-must-be-string-
+                      - INVALID_CITY_NAME--CITY-NAME-must-be-string-
+                      - INVALID_STATE_NAME--STATE-NAME-must-be-string-
+                      - INVALID_LATITUDE--LATITUDE-must-be-number-
+                      - INVALID_LONGITUDE--LONGITUDE-must-be-number-
+                      - INVALID_REFERENCE--REFERENCE-must-be-string-
+  /users/{user_id}/stores/search:
+    get:
+      tags:
+        - $ref: '#/tags/qr-code'
+      summary: Search stores
+      description: Find all the information of the stores generated through specific filters
+      parameters:
+        - name: user_id
+          in: path
+          description: User Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: external_id
+          in: query
+          description: Unique identifier of the store defined by integrator system
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    paging:
+                      type: object
+                      properties:
+                        total:
+                          type: number
+                          example: 2
+                          description: total
+                        offset:
+                          type: number
+                          example: 0
+                          description: offset
+                        limit:
+                          type: number
+                          example: 30
+                          description: limit
+                      description: paging
+                    results:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          id:
+                            type: string
+                            example: 30163646
+                            description: id
+                          name:
+                            type: string
+                            example: Sucursal Instore
+                            description: name
+                          date_creation:
+                            type: string
+                            format: date-time
+                            example: 2019-09-09T09:25:56.000Z
+                            description: date_creation
+                          business_hours:
+                            type: object
+                            properties:
+                              monday:
+                                type: array
+                                items:
+                                  type: object
+                                  properties:
+                                    open:
+                                      type: string
+                                      example: '08:00'
+                                      description: open
+                                    close:
+                                      type: string
+                                      example: '13:00'
+                                      description: close
+                                description: monday
+                              tuesday:
+                                type: array
+                                items:
+                                  type: object
+                                  properties:
+                                    open:
+                                      type: string
+                                      example: '08:00'
+                                      description: open
+                                    close:
+                                      type: string
+                                      example: '18:00'
+                                      description: close
+                                description: tuesday
+                              wednesday:
+                                type: array
+                                items:
+                                  type: object
+                                  properties:
+                                    open:
+                                      type: string
+                                      example: '07:00'
+                                      description: open
+                                    close:
+                                      type: string
+                                      example: '10:00'
+                                      description: close
+                                description: wednesday
+                            description: business_hours
+                          location:
+                            type: object
+                            properties:
+                              address_line:
+                                type: string
+                                example: >-
+                                  Caseros 3039 Belgrano Capital Federal
+                                  Argentina
+                                description: address_line
+                              reference:
+                                type: string
+                                example: 3er Piso
+                                description: reference
+                              latitude:
+                                type: number
+                                example: -32.8897322
+                                description: latitude
+                              longitude:
+                                type: number
+                                example: -68.8443275
+                                description: longitude
+                            description: location
+                          external_id:
+                            type: string
+                            example: SUC001
+                            description: external_id
+                      description: results
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - INVALID_USER_ID--USER-ID-must-be-number-
+                      - INVALID_OFFSET--OFFSET-must-be-number-
+                      - INVALID_LIMIT--LIMIT-must-be-number-
+                      - INVALID_EXTERNAL_ID--EXTERNAL-ID-must-be-alphanumeric-
+  /users/{user_id}/stores/{id}:
+    put:
+      tags:
+        - $ref: '#/tags/qr-code'
+      summary: Update a Store
+      description: Renew the data of a physical shop. Indicate the ID of the seller and the store and send the parameters with the information you want to update
+      parameters:
+        - name: user_id
+          in: path
+          description: User Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: id
+          in: path
+          description: Store's Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                  description: Store identifier, numerical and self-generated.
+                user_id:
+                  type: string
+                  description: User identifier.
+                name:
+                  type: string
+                  description: Store name.
+                business_hours:
+                  type: string
+                  description: >-
+                    Business hours. They are divided by day of the week and up
+                    to two opening and closing times per day are allowed.
+                location:
+                  type: object
+                  description: Store location.
+                  properties:
+                    zip_code:
+                      type: string
+                      description: Zip code.
+                    street_number:
+                      type: number
+                      description: Number.
+                    street_name:
+                      type: string
+                      description: Street name.
+                    city_name:
+                      type: string
+                      description: City.
+                    state_name:
+                      type: object
+                      description: State.
+                    latitude:
+                      type: string
+                      description: Latitude.
+                    logitude:
+                      type: string
+                      description: Longitude.
+                    reference:
+                      type: string
+                      description: Reference.
+      responses:
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - INVALID_USER_ID--USER-ID-must-be-number-
+                      - UNKNOWN_FIELD--Unknown-field-
+                      - INVALID_STORE_ID--Invaliud-store-id-
+                      - INVALID_NAME--NAME-must-be-string-
+                      - >-
+                        INVALID_BUSINESS_HOURS--BUSINESS-HOURS-must-be-json-object-
+                      - INVALID_DAY--Day-must-be-json-array-
+                      - INVALID_LOCATION--LOCATION-must-be-json-object-
+                      - INVALID_STREET_NAME--STREET-NAME-must-be-string-
+                      - INVALID_STREET_NUMBER--STREET-NUMBER-must-be-string-
+                      - INVALID_ZIP_CODE--ZIP-CODE-must-be-string-
+                      - INVALID_CITY_NAME--CITY-NAME-must-be-string-
+                      - INVALID_STATE_NAME--STATE-NAME-must-be-string-
+                      - INVALID_LATITUDE--LATITUDE-must-be-number-
+                      - INVALID_LONGITUDE--LONGITUDE-must-be-number-
+                      - INVALID_REFERENCE--REFERENCE-must-be-string-
+    delete:
+      tags:
+        - $ref: '#/tags/qr-code'
+      summary: Delete a Store
+      description: Delete a physical shop whenever you need it with the ID of the store
+      parameters:
+        - name: user_id
+          in: path
+          description: User Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: id
+          in: path
+          description: Store's Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+      responses:
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - INVALID_USER_ID--USER-ID-must-be-number-
+                      - INVALID_STORE_ID--STORE-ID-must-be-number-
+                      - UNKNOWN_FIELD--Unknow-field-

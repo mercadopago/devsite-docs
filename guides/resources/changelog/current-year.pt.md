@@ -5,7 +5,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 ---
 ## Março 2021
 
-### 29 de março
+### 31 de março
 
 > CHANGELOG
 >
@@ -18,7 +18,6 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 ----[mlb]----
 Integra Checkout Transparente mais simples e rápido com a nova funcionalidade CardForm, que permite autogerar a lógica de negócio no seu formulário de pagamentos com cartão e melhorar a compatibilidade com os distintos navegadores.
 ------------
-
 ----[mla, mlm, mco, mlc, mlu]----
 Integra Checkout API mais simples e rápido com a nova funcionalidade CardForm, que permite autogerar a lógica de negócio no seu formulário de pagamentos com cartão e melhorar a compatibilidade com os distintos navegadores.
 ------------
@@ -30,6 +29,75 @@ Integra Checkout API mais simples e rápido com a nova funcionalidade CardForm, 
 > GitHub
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-js).
+
+### 25 de março
+
+> CHANGELOG
+>
+> Nova versão SDK .Net
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK .NET
+
+Lançamos a nova versão 2.0.0 do SDK .Net.
+
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-dotnet/releases/tag/2.0.0).
+
+> CHANGELOG
+>
+> Nova versão SDK Ruby
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK RUBY
+
+Lançamos a nova versão 2.0.0 do SDK Ruby.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-ruby/releases/tag/2.0.0).
+
+> CHANGELOG
+>
+> Nova versão SDK Python
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK PYTHON
+
+Lançamos a nova versão 2.0.0 do SDK Python.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-python/releases/tag/2.0.0).
+
+### 22 de março
+
+> CHANGELOG
+>
+> Nova versão SDK NodeJS
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK NODEJS
+
+Lançamos a nova versão 1.5.6 do SDK NodeJS.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.6).
 
 ### 10 de março
 
@@ -97,13 +165,13 @@ Agora, você pode adicionar Pix como meio de pagamento para começar a receber d
 >
 > PRODUCT: SDK JAVA
 
-Lançamos uma nova versão do SDK Java 1.9.0.
+Lançamos a nova versão 1.9.0. do SDK Java.
 
 > GIT
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-java/releases/tag/1.9.0).
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/java/releases/tag/1.9.0).
 
 > CHANGELOG
 >
@@ -113,7 +181,7 @@ Lançamos uma nova versão do SDK Java 1.9.0.
 >
 > PRODUCT: SDK .NET
 
-Lançamos uma nova versão do SDK .NET 1.10.0.
+Lançamos a nova versão 1.10.0 do SDK .NET.
 
 > GIT
 >
@@ -354,7 +422,7 @@ Lançamos a nova versão 4.4.1 para PrestaShop.
 >
 > PRODUCT: SDK PHP
 
-Lançamos uma nova versão do SDK PHP 1.10.0.
+Lançamos a nova versão 1.10.0 do SDK PHP.
 
 > GIT
 >
@@ -372,7 +440,7 @@ Lançamos uma nova versão do SDK PHP 1.10.0.
 >
 > PRODUCT: SDK NODEJS
 
-Lançamos uma nova versão do SDK NodeJS 1.5.3.
+Lançamos a nova versão 1.5.3 do SDK NodeJS.
 
 > GIT
 >

@@ -44,7 +44,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 headers = {
     'accept': 'application/json',
@@ -184,7 +184,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 
 headers = {
@@ -365,7 +365,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 
 headers = {
@@ -542,7 +542,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 
 headers = {
@@ -618,7 +618,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 
 headers = { 
@@ -700,7 +700,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 
 headers = {
@@ -792,7 +792,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 
 headers = {
@@ -884,7 +884,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 
 headers = {
@@ -969,7 +969,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 
 headers = {

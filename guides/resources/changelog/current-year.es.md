@@ -5,7 +5,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 ---
 ## Marzo 2021
 
-### 29 de marzo
+### 31 de marzo
 
 > CHANGELOG
 >
@@ -18,7 +18,6 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 ----[mlb]----
 Integra Checkout Transparente más simple y rápido con la nueva funcionalidad CardForm, que te permite autogenerar la lógica de negocio en tu formulario de pagos con tarjeta y mejorar la compatibilidad con los distintos navegadores.
 ------------
-
 ----[mla, mlm, mco, mlc, mlu]----
 Integra Checkout API más simple y rápido con la nueva funcionalidad CardForm, que te permite autogenerar la lógica de negocio en tu formulario de pagos con tarjeta y mejorar la compatibilidad con los distintos navegadores.
 ------------
@@ -30,6 +29,74 @@ Integra Checkout API más simple y rápido con la nueva funcionalidad CardForm, 
 > GitHub
 >
 > Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/sdk-js).
+
+### 25 de marzo
+
+> CHANGELOG
+>
+> Nueva versión SDK .Net
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK .NET
+
+Lanzamos una nueva versión del SDK .Net 2.0.0.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-dotnet/releases/tag/2.0.0).
+
+> CHANGELOG
+>
+> Nueva versión SDK Ruby
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK RUBY
+
+Lanzamos una nueva versión del SDK Ruby 2.0.0.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-ruby/releases/tag/2.0.0).
+
+> CHANGELOG
+>
+> Nueva versión SDK Python
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK PYTHON
+
+Lanzamos una nueva versión del SDK Python 2.0.0.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-python/releases/tag/2.0.0).
+
+### 22 de marzo
+
+> CHANGELOG
+>
+> Nueva versión SDK NodeJS
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK NODEJS
+
+Lanzamos una nueva versión del SDK NodeJS 1.5.6.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.6).
 
 ### 10 de marzo
 

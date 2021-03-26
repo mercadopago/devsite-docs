@@ -1,0 +1,91 @@
+openapi: 3.0.0
+servers:
+  - url: https://api.mercadopago.com
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
+paths:
+  /chargebacks/{id}:
+    get:
+      tags:
+        - $ref: '#/tags/marketplace'
+      summary: Get a chargeback
+      description: Check all the information related to a chargeback for your product or service with the ID of the chargeback you want
+      parameters:
+        - name: id
+          in: path
+          description: Chargeback Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    description: Chargeback identifier
+                  payments:
+                    type: array
+                    description: List of payments ids associated to the case
+                    items:
+                      type: number
+                  currency:
+                    type: string
+                    description: 'Amount''s currency '
+                  amount:
+                    type: number
+                    description: Chargeback's amount
+                  coverage_applied:
+                    type: boolean
+                    description: Whether the seller has been covered or not
+                  coverage_elegible:
+                    type: boolean
+                    description: >-
+                      Whether the chargeback complies with the conditions to be
+                      covered
+                  documentation_required:
+                    type: boolean
+                    description: >-
+                      Whether the seller needs to send documentation for this
+                      chargeback
+                  documentation_status:
+                    type: string
+                    description: Detail of decision taken for the documentation
+                  documentation:
+                    type: array
+                    description: List of documentation received from the seller
+                    items:
+                      type: object
+                      properties:
+                        type:
+                          type: string
+                          description: Documentation's file type
+                        url:
+                          type: string
+                          description: Url to see the documentation file
+                        description:
+                          type: string
+                          description: Documentation's description
+                  date_documentation_deadline:
+                    type: string
+                    format: date
+                    description: Chargeback's last day to send documentation
+                  date_created:
+                    type: string
+                    format: date
+                    description: Chargeback’s creation date
+                  date_last_updated:
+                    type: string
+                    format: date
+                    description: Chargeback's last modified date
+                  live_mode:
+                    type: boolean
+                    description: >-
+                      Whether the chargeback will be processed in sandbox or in
+                      production mode

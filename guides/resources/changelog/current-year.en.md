@@ -5,7 +5,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 ---
 ## March 2021
 
-### March 29th
+### March 31th
 
 > CHANGELOG
 >
@@ -24,6 +24,74 @@ Integrate Checkout API simpler and faster with the new CardForm functionality, w
 > GitHub
 >
 > [Check GitHub](https://github.com/mercadopago/sdk-js) for further details regarding this release.
+
+### March 25th
+
+> CHANGELOG
+>
+> New version of SDK .Net
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK .NET
+
+We have released a new version of SDK .Net 2.0.0.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-dotnet/releases/tag/2.0.0) for further details regarding this release.
+
+> CHANGELOG
+>
+> New version of SDK Ruby
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK RUBY
+
+We have released a new version of SDK Ruby 2.0.0.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-ruby/releases/tag/2.0.0) for further details regarding this release.
+
+> CHANGELOG
+>
+> New version of SDK Python
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK PYTHON
+
+We have released a new version of SDK Python 2.0.0.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-python/releases/tag/2.0.0) for further details regarding this release.
+
+### March 22th
+
+> CHANGELOG
+>
+> New version of SDK NodeJS
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK NODEJS
+
+We have released a new version of SDK NodeJS 1.5.6.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.6) for further details regarding this release.
 
 ### March 10th
 
@@ -64,7 +132,6 @@ We have released the new version 4.5.1 for PrestaShop.
 > GitHub
 >
 > [Check GitHub](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.5.1) for further details regarding this release.
-
 
 ### March 4th
 

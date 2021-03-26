@@ -1,0 +1,523 @@
+openapi: 3.0.0
+servers:
+  - url: https://api.mercadopago.com
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
+paths:
+  /pos:
+    post:
+      tags:
+        - $ref: '#/tags/qr-code'
+      summary: Create a POS
+      description: Generate a Point of Sale in a store. Each POS will have a unique QR Code linked to it
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: Name of the POS.
+                fixed_amount:
+                  type: boolean
+                  description: Define if the customer can insert the amount to be paid.
+                category:
+                  type: number
+                  description: >-
+                    MCC code that indicates the category of the Point of Sale.
+                    If not specified, it remains as a generic category.
+                store_id:
+                  type: string
+                  description: Store identifier to which the point of sale belongs.
+                external_store_id:
+                  type: string
+                  description: >-
+                    External_id of the store to which the pos belongs defined by
+                    integrator system.
+                external_id:
+                  type: string
+                  description: Unique identifier of the pos defined by integrator system.
+                url:
+                  type: string
+                  description: >-
+                    URL to get the order of the integrator system. It is
+                    optional and is used only in the unattended integration
+                    model.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: number
+                    example: 2711382
+                    description: id
+                  qr:
+                    type: object
+                    properties:
+                      image:
+                        type: string
+                        example: >-
+                          https://www.mercadopago.com/instore/merchant/qr/2711382/0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.png
+                        description: image
+                      template_document:
+                        type: string
+                        example: >-
+                          https://www.mercadopago.com/instore/merchant/qr/2711382/template_0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.pdf
+                        description: template_document
+                      template_image:
+                        type: string
+                        example: >-
+                          https://www.mercadopago.com/instore/merchant/qr/2711382/template_0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.png
+                        description: template_image
+                    description: qr
+                  status:
+                    type: string
+                    example: active
+                    description: status
+                  date_created:
+                    type: string
+                    example: 2019-08-22T14:11:12.000Z
+                    description: date_created
+                  date_last_updated:
+                    type: string
+                    example: 2019-08-22T14:11:12.000Z
+                    description: date_last_updated
+                  uuid:
+                    type: string
+                    example: >-
+                      0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1
+                    description: uuid
+                  user_id:
+                    type: number
+                    example: 446566691
+                    description: user_id
+                  name:
+                    type: string
+                    example: Caja Principal
+                    description: name
+                  fixed_amount:
+                    type: boolean
+                    description: fixed_amount
+                  category:
+                    type: number
+                    example: 621102
+                    description: category
+                  store_id:
+                    type: string
+                    example: 12345678
+                    description: store_id
+                  external_store_id:
+                    type: string
+                    example: BK021
+                    description: external_store_id
+                  url:
+                    type: string
+                    example: https://www.miempresa.com/MP?locationId=6232&positionId=01
+                    description: url
+                  external_id:
+                    type: string
+                    example: 4lph4num3r1c
+                    description: external_id
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - MISSING_BODY--HTTP-body-is-required-to-create-pos-
+                      - >-
+                        UNKNOWN_FIELD_EXCEPTION--The-indicated-field-is-not-allowed-for-this-operation-or-is-unknown-
+                      - INVALID_NAME--NAME-must-be-string-
+                      - NAME_TOO_LONG--The-NAME-must-be-less-than-45-characters-
+                      - INVALID_FIXED_AMOUNT--FIXED-AMOUNT-must-be-boolean-
+                      - INVALID_CATEGORY--CATEGORY-must-be-numeric-
+                      - >-
+                        UNKNOWN_MCC--The-CATEGORY-must-be-valid-for-the-user-s-site-
+                      - INVALID_STORE_ID--STORE-ID-must-be-numeric-
+                      - >-
+                        INVALID_EXTERNAL_STORE_ID--EXTERNAL-STORE-ID-must-be-string-
+                      - >-
+                        EXTERNAL_STORE_ID_NOT_MATCH--The-EXTERNAL-STORE-ID-does-not-refer-to-the-indicated-STORE-ID-
+                      - >-
+                        INEXISTENT_EXTERNAL_STORE_ID--The-EXTERNAL-STORE-ID-does-not-refer-to-any-existing-store-
+                      - >-
+                        INVALID_EXTERNAL_ID--The-EXTERNAL-ID-field-must-be-alphanumeric--only-letters-and-numbers--No-spaces-or-hyphens--or-special-characters-
+                      - >-
+                        EXTERNAL_ID_TOO_LONG--The-EXTERNAL-ID-must-be-less-than-40-characters-
+                      - >-
+                        INVALID_URL--The-URL-must-be-string-and-must-have-the-format-of-a-valid-url-
+                      - URL_TOO_LONG--The-URL-must-be-less-than-300-characters-
+                      - >-
+                        FIXED_AMOUNT_FALSE--If-the-URL-field-is-indicated--the-FIXED-AMOUNT-field-must-be-true--We-do-not-support-the-open-amount-modality-in-this-case-
+        '403':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - >-
+                        1--If-you-are-using-the-URL-field--the-host-must-be-enabled-by-Mercado-Pago--If-it-is-not--you-will-receive-this-error--Please-contact-your-assigned-technical-advisor-
+        '404':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - >-
+                        1--If-the-POS-does-not-exist-for-an-indicated-ID-or-EXTERNAL-ID-and-user-
+        '409':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 1--A-pos-with-the-same-EXTERNAL-ID-already-exists-
+    get:
+      tags:
+        - $ref: '#/tags/qr-code'
+      summary: Get all POS
+      description: Get the information about all of your stores
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    paging:
+                      type: object
+                      properties:
+                        total:
+                          type: number
+                          example: 2
+                          description: total
+                        offset:
+                          type: number
+                          example: 0
+                          description: offset
+                        limit:
+                          type: number
+                          example: 0
+                          description: limit
+                      description: paging
+                    results:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          user_id:
+                            type: number
+                            example: 446566691
+                            description: user_id
+                          name:
+                            type: string
+                            example: Caja Principal
+                            description: name
+                          fixed_amount:
+                            type: boolean
+                            description: fixed_amount
+                          category:
+                            type: number
+                            example: 621102
+                            description: category
+                          store_id:
+                            type: string
+                            example: 12345678
+                            description: store_id
+                          external_id:
+                            type: string
+                            example: CAJA001
+                            description: external_id
+                          id:
+                            type: number
+                            example: 1988157
+                            description: id
+                          qr:
+                            type: object
+                            properties:
+                              image:
+                                type: string
+                                example: >-
+                                  https://www.mercadopago.com/instore/merchant/qr/1988157/1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.png
+                                description: image
+                              template_document:
+                                type: string
+                                example: >-
+                                  https://www.mercadopago.com/instore/merchant/qr/1988157/template_1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.pdf
+                                description: template_document
+                              template_image:
+                                type: string
+                                example: >-
+                                  https://www.mercadopago.com/instore/merchant/qr/1988157/template_1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.png
+                                description: template_image
+                            description: qr
+                          date_created:
+                            type: string
+                            example: 2019-06-24T13:31:56.000Z
+                            description: date_created
+                          date_last_updated:
+                            type: string
+                            example: 2019-08-07T21:07:26.000Z
+                            description: date_last_updated
+                          external_store_id:
+                            type: string
+                            example: SUC001
+                            description: external_store_id
+                      description: results
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - INVALID_CATEGORY--The-CATEGORY-must-be-numeric-
+                      - INVALID_STORE_ID--The-STORE-ID-must-be-numeric-
+                      - >-
+                        INVALID_EXTERNAL_STORE_ID--The-EXTERNAL-STORE-ID-must-be-string-
+                      - >-
+                        INEXISTENT_EXTERNAL_STORE_ID--The-EXTERNAL-STORE-ID-does-not-refer-to-an-existing-Store-
+                      - >-
+                        INVALID_EXTERNAL_ID--The-EXTERNAL-ID-field-must-be-alphanumeric--only-letters-and-numbers--No-spaces-or-hyphens--or-special-characters-
+                      - >-
+                        EXTERNAL_ID_TOO_LONG--The-EXTERNAL-ID-must-be-less-than-40-characters-
+                      - INVALID_LIMIT--The-LIMIT-must-be-numeric-
+                      - INVALID_OFFSET--The-OFFSET-must-be-numeric-
+  /pos/{id}:
+    get:
+      tags:
+        - $ref: '#/tags/qr-code'
+      summary: Get a POS
+      description: Check all the information of a Point of Sale with the ID of the POS you want
+      parameters:
+        - name: id
+          in: path
+          description: POS Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    description: POS identifier, numerical and self-generated.
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - >-
+                        INVALID_POS_ID--The-ID-of-the-pos-is-invalid--it-must-be-numeric-
+                      - >-
+                        INVALID_EXTERNAL_ID--The-EXTERNAL-ID-field-must-be-alphanumeric--only-letters-and-numbers--No-spaces-or-hyphens--or-special-characters-
+                      - >-
+                        EXTERNAL_ID_TOO_LONG--The-EXTERNAL-ID-must-be-less-than-40-characters-
+        '404':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - >-
+                        1--If-the-POS-does-not-exist-for-an-indicated-ID-or-EXTERNAL-ID-and-user-
+    put:
+      tags:
+        - $ref: '#/tags/qr-code'
+      summary: Update a POS
+      description: Renew the data of a Point of Sale. Indicate the ID of the POS and send the parameters with the information you want to update
+      parameters:
+        - name: id
+          in: path
+          description: POS Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                  description: POS identifier, numerical and self-generated.
+                name:
+                  type: string
+                  description: Name of the POS.
+                fixed_amount:
+                  type: boolean
+                  description: Define if the customer can insert the amount to be paid.
+                category:
+                  type: number
+                  description: >-
+                    MCC code that indicates the category of the Point of Sale.
+                    If not specified, it remains as a generic category.
+                store_id:
+                  type: string
+                  description: Store identifier to which the point of sale belongs.
+                external_store_id:
+                  type: string
+                  description: >-
+                    External_id of the store to which the pos belongs defined by
+                    integrator system.
+                url:
+                  type: string
+                  description: >-
+                    URL to get the order of the integrator system. It is
+                    optional and is used only in the unattended integration
+                    model.
+      responses:
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - MISSING_BODY--HTTP-body-is-required-to-modify-pos-
+                      - >-
+                        UNKNOWN_FIELD_EXCEPTION--The-indicated-field-is-not-allowed-for-this-operation-or-is-unknown-
+                      - >-
+                        INVALID_POS_ID--The-ID-of-the-pos-is-invalid--it-must-be-numeric-
+                      - INVALID_NAME--NAME-must-be-string-
+                      - NAME_TOO_LONG--The-NAME-must-be-less-than-45-characters-
+                      - INVALID_FIXED_AMOUNT--FIXED-AMOUNT-must-be-boolean-
+                      - INVALID_CATEGORY--CATEGORY-must-be-numeric-
+                      - >-
+                        POS_UNKNOWN_MCC--The-CATEGORY-must-be-valid-for-the-user-s-site-
+                      - POS_INVALID_STORE_ID--STORE-ID-must-be-numeric-
+                      - >-
+                        INVALID_EXTERNAL_STORE_ID--EXTERNAL-STORE-ID-must-be-string-
+                      - >-
+                        EXTERNAL_STORE_ID_NOT_MATCH--The-EXTERNAL-STORE-ID-does-not-refer-to-the-indicated-STORE-ID-
+                      - >-
+                        INEXISTENT_EXTERNAL_STORE_ID--The-EXTERNAL-STORE-ID-does-not-refer-to-an-existing-Store-
+                      - >-
+                        INVALID_EXTERNAL_ID--The-EXTERNAL-ID-field-must-be-alphanumeric--only-letters-and-numbers--No-spaces-or-hyphens--or-special-characters-
+                      - >-
+                        EXTERNAL_ID_TOO_LONG--The-EXTERNAL-ID-must-be-less-than-40-characters-
+                      - >-
+                        INVALID_URL--The-URL-must-be-string-and-must-have-the-format-of-a-valid-url-
+                      - URL_TOO_LONG--The-URL-must-be-less-than-300-characters-
+                      - >-
+                        FIXED_AMOUNT_FALSE--If-the-URL-field-is-indicated--the-FIXED-AMOUNT-field-must-be-true--We-do-not-support-the-open-amount-modality-in-this-case-
+        '403':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - >-
+                        1--If-you-are-using-the-URL-field--the-host-must-be-enabled-by-Mercado-Pago--If-it-is-not--you-will-receive-this-error--Please-contact-your-assigned-technical-advisor-
+        '404':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - >-
+                        1--If-the-POS-does-not-exist-for-an-indicated-ID-or-EXTERNAL-ID-and-user-
+        '409':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 1--A-pos-with-the-same-EXTERNAL-ID-already-exists-
+    delete:
+      tags:
+        - $ref: '#/tags/qr-code'
+      summary: Delete a POS
+      description: Delete a Point of Sale whenever you need it with the ID of the POS
+      parameters:
+        - name: id
+          in: path
+          description: POS Id
+          required: true
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+      responses:
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - >-
+                        INVALID_POS_ID--The-ID-of-the-pos-is-invalid--it-must-be-numeric-
+        '404':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 1--If-there-is-no-pos-for-the-indicated-ID-and-user-
