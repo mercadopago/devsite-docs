@@ -36,7 +36,7 @@ paths:
                       example: 123123-ABD123DIGKBKI991-123
                     date_registered:
                       type: string
-                      description: Nao sei o que é
+                      description: 
                     date_created:
                       type: string
                       format: date
@@ -219,10 +219,10 @@ paths:
             schema:
               type: object
               properties:
-                date_registered:
+                token:
                   type: string
-                  description: Nao sei o que é
-                  example: 16/02/1991
+                  description: Card Token
+                  example: 9b2d63e00d66a8c721607214ceda233a
       responses:
         '200':
           description: success
@@ -454,7 +454,7 @@ paths:
                     description: Card ID.
                   date_registered:
                     type: string
-                    description: Nao sei o que é
+                    description: 
                   date_created:
                     type: string
                     format: date
@@ -644,9 +644,10 @@ paths:
             schema:
               type: object
               properties:
-                date_registered:
+                token:
                   type: string
-                  description: Nao sei o que é
+                  description: Card Token
+                  example: 9b2d63e00d66a8c721607214ceda233a
       responses:
         '400':
           description: Error
