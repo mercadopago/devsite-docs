@@ -749,11 +749,11 @@ paths:
                           qr_code_base64:
                             type: string
                             example: iVBORw0KGgoAAAANSUhEUgAABRQAAAUUCAYAAACu5p7oAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAIABJREFUeJzs2luO3LiWQNFmI+Y/Zd6vRt36KGNXi7ZOBtcagHD4kNLeiLX33v8DAAAAABD879sDAAAAAAA/h6AIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCAAAAAJmgCAAAAABkgiIAAAAAkAmKAAAAAEAmKAIAAAAAmaAIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCA...
-                            description: Data to render the QR code
+                            description: Base64 representation of the image of the QR code to be scanned to finalize the payment
                           qr_code:
                             type: string
                             example: 00020126600014br.gov.bcb.pix0117test@testuser.com0217dados adicionais520400005303986540510.005802BR5913Maria Silva6008Brasilia62070503***6304E2CA
-                            description: Data to build a payment code to copy and paste
+                            description: Alphanumeric code to copy and paste, used to finalize the payment
                         description: Information on the pending payment that was generated
                     description: Information from the application that processes the payment and receives regulatory data
         '400':
