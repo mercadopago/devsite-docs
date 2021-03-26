@@ -11,6 +11,7 @@ paths:
         - $ref: '#/tags/marketplace'
       summary: Create Payments
       description: Create Payments.
+      deprecated: true
       requestBody:
         content:
           application/json:
@@ -368,6 +369,7 @@ paths:
         - $ref: '#/tags/marketplace'
       summary: Get a Payment
       description: Get a Payment
+      deprecated: true
       parameters:
         - name: id
           in: path
@@ -777,6 +779,7 @@ paths:
         - $ref: '#/tags/marketplace'
       summary: Update a Payment
       description: Update a Payment
+      deprecated: true
       parameters:
         - name: id
           in: path
@@ -903,6 +906,7 @@ paths:
         - $ref: '#/tags/marketplace'
       summary: Search a Payment
       description: Search a Payment
+      deprecated: true
       parameters:
         - name: sort
           in: query
@@ -1349,6 +1353,7 @@ paths:
         - $ref: '#/tags/marketplace'
       summary: Refund a Payment
       description: Refund a Payment
+      deprecated: true
       parameters:
         - name: id
           in: path
@@ -1472,6 +1477,7 @@ paths:
         - $ref: '#/tags/marketplace'
       summary: Change release date of a Disbursement
       description: Change release date of a Disbursement
+      deprecated: true
       parameters:
         - name: id
           in: path
@@ -1595,6 +1601,7 @@ paths:
         - $ref: '#/tags/marketplace'
       summary: Parcial refund of an Advanced Payment
       description: Parcial refund of an Advanced Payment
+      deprecated: true
       parameters:
         - name: id
           in: path
@@ -1725,6 +1732,7 @@ paths:
         - $ref: '#/tags/marketplace'
       summary: Change release date os all Disbursements
       description: Change release date os all Disbursements
+      deprecated: true
       parameters:
         - name: id
           in: path
@@ -1855,6 +1863,7 @@ paths:
         - $ref: '#/tags/marketplace'
       summary: Search a payment
       description: Search a payment
+      deprecated: true
       parameters:
         - name: id
           in: path
