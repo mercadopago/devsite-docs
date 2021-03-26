@@ -32,13 +32,13 @@ Lançamos a nova versão 2.0.0 do SDK .Net.
 >
 > PRODUCT: SDK RUBY
 
-Lançamos a nova versão 2.0.0 do SDK Ruby.
+Lançamos a nova versão 2.0.1 do SDK Ruby.
 
 > GIT
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-ruby/releases/tag/2.0.0).
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-ruby/releases/tag/2.0.1).
 
 > CHANGELOG
 >
@@ -48,13 +48,13 @@ Lançamos a nova versão 2.0.0 do SDK Ruby.
 >
 > PRODUCT: SDK PYTHON
 
-Lançamos a nova versão 2.0.0 do SDK Python.
+Lançamos a nova versão 2.0.6 do SDK Python.
 
 > GIT
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-python/releases/tag/2.0.0).
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-python/releases/tag/2.0.6).
 
 ### 22 de março
 
