@@ -1314,6 +1314,333 @@ paths:
                       type: number
                       description: Differential pricing ID.
       responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  additional_info:
+                    type: string
+                    example: null
+                    description: additional_info
+                  auto_return:
+                    type: string
+                    example: null
+                    description: auto_return
+                  back_urls:
+                    type: object
+                    properties:
+                      failure:
+                        type: string
+                        example: null
+                        description: failure
+                      pending:
+                        type: string
+                        example: null
+                        description: pending
+                      success:
+                        type: string
+                        example: null
+                        description: success
+                    description: back_urls
+                  binary_mode:
+                    type: boolean
+                    example: false
+                  client_id:
+                    type: string
+                    example: 6295877106812064
+                    description: client_id
+                  collector_id:
+                    type: number
+                    example: 202809963
+                    description: collector_id
+                  coupon_code:
+                    type: object
+                    properties: null
+                  coupon_labels:
+                    type: object
+                    properties: null
+                  date_created:
+                    type: string
+                    example: '2018-02-02T19:22:23.535Z'
+                    description: date_created
+                  date_of_expiration:
+                    type: object
+                    properties: null
+                  expiration_date_from:
+                    type: string
+                    properties: null
+                    format: nullable
+                    description: expiration_date_from
+                  expiration_date_to:
+                    type: string
+                    properties: null
+                    format: nullable
+                    description: expiration_date_to
+                  expires:
+                    type: boolean
+                    example: false
+                    description: expires
+                  external_reference:
+                    type: string
+                    example: null
+                    description: external_reference
+                  id:
+                    type: string
+                    example: 202809963-920c288b-4ebb-40be-966f-700250fa5370
+                    description: id
+                  init_point:
+                    type: string
+                    example: >-
+                      https://www.mercadopago.com/mla/checkout/start?pref_id=202809963-920c288b-4ebb-40be-966f-700250fa5370
+                    description: init_point
+                  internal_metadata:
+                    type: object
+                    properties: null
+                  items:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          example: null
+                          description: id
+                        picture_url:
+                          type: string
+                          example: null
+                          description: picture_url
+                        title:
+                          type: string
+                          example: Dummy Item
+                          description: title
+                        description:
+                          type: string
+                          example: Multicolor Item
+                          description: description
+                        category_id:
+                          type: string
+                          example: null
+                          description: category_id
+                        currency_id:
+                          type: string
+                          example: $
+                          description: currency_id
+                        quantity:
+                          type: number
+                          example: 1
+                          description: quantity
+                        unit_price:
+                          type: number
+                          example: 10
+                          description: unit_price
+                    description: items
+                  marketplace:
+                    type: string
+                    example: MP-MKT-6295877106812064
+                    description: marketplace
+                  marketplace_fee:
+                    type: number
+                    example: 0
+                    description: marketplace_fee
+                  metadata:
+                    type: object
+                  notification_url:
+                    type: string
+                    example: https://url.com.br/notificacao
+                    format: nullable
+                    description: notification_url
+                  operation_type:
+                    type: string
+                    example: regular_payment
+                    description: operation_type
+                  payer:
+                    type: object
+                    properties:
+                      phone:
+                        type: object
+                        properties:
+                          area_code:
+                            type: string
+                            example: null
+                            description: area_code
+                          number:
+                            type: string
+                            example: null
+                            description: number
+                        description: phone
+                      address:
+                        type: object
+                        properties:
+                          zip_code:
+                            type: string
+                            example: null
+                            description: zip_code
+                          street_name:
+                            type: string
+                            example: null
+                            description: street_name
+                          street_number:
+                            type: string
+                            example: '7304'
+                            format: nullable
+                            description: street_number
+                        description: address
+                      email:
+                        type: string
+                        example: null
+                        description: email
+                      identification:
+                        type: object
+                        properties:
+                          number:
+                            type: string
+                            example: null
+                            description: number
+                          type:
+                            type: string
+                            example: null
+                            description: type
+                        description: identification
+                      name:
+                        type: string
+                        example: null
+                        description: name
+                      surname:
+                        type: string
+                        example: null
+                        description: surname
+                      date_created:
+                        type: string
+                        properties: null
+                        example: null
+                        description: date_created
+                      last_purchase:
+                        type: object
+                        properties: null
+                    description: payer
+                  payment_methods:
+                    type: object
+                    properties:
+                      default_card_id:
+                        type: object
+                        properties: null
+                      default_payment_method_id:
+                        type: string
+                        properties: null
+                        format: nullable
+                        description: default_payment_method_id
+                      excluded_payment_methods:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: string
+                              example: ''
+                              description: id
+                        description: excluded_payment_methods
+                      excluded_payment_types:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: string
+                              example: ''
+                              description: id
+                        description: excluded_payment_types
+                      installments:
+                        type: string
+                        properties: null
+                        format: nullable
+                        description: installments
+                      default_installments:
+                        type: string
+                        properties: null
+                        format: nullable
+                        description: default_installments
+                    description: payment_methods
+                  processing_modes:
+                    type: object
+                    properties: null
+                  product_id:
+                    type: object
+                    properties: null
+                  redirect_urls:
+                    type: object
+                    properties:
+                      failure:
+                        type: string
+                        example: ''
+                      pending:
+                        type: string
+                        example: ''
+                      success:
+                        type: string
+                        example: ''
+                  sandbox_init_point:
+                    type: string
+                    example: >-
+                      https://sandbox.mercadopago.com/mla/checkout/pay?pref_id=202809963-920c288b-4ebb-40be-966f-700250fa5370
+                    description: sandbox_init_point
+                  site_id:
+                    type: string
+                    example: MLB
+                  shipments:
+                    type: object
+                    properties:
+                      default_shipping_method:
+                        type: object
+                        properties: null
+                      receiver_address:
+                        type: object
+                        properties:
+                          zip_code:
+                            type: string
+                            example: null
+                            description: zip_code
+                          street_name:
+                            type: string
+                            example: null
+                            description: street_name
+                          street_number:
+                            type: string
+                            properties: null
+                            format: nullable
+                            description: street_number
+                          floor:
+                            type: string
+                            example: null
+                            description: floor
+                          apartment:
+                            type: string
+                            example: null
+                            description: apartment
+                          city_name:
+                            type: object
+                            properties: null
+                          state_name:
+                            type: object
+                            properties: null
+                          country_name:
+                            type: object
+                            properties: null
+                        description: receiver_address
+                    description: shipments
+                  total_amount:
+                    type: object
+                    properties: null
+                  last_updated:
+                    type: object
+                    properties: null
+                  statement_descriptor:
+                    type: string
+                    example: MERCADOPAGO
+                    description: statement_descriptor
+
         '400':
           description: Error
           content:

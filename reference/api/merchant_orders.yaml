@@ -917,15 +917,15 @@ paths:
                           description: operation_type
                         date_approved:
                           type: string
-                          example: 2019-04-02T18:35:35.000Z
+                          example: '2019-04-02T18:35:35.000Z'
                           description: date_approved
                         date_created:
                           type: string
-                          example: 2019-04-02T18:35:34.000Z
+                          example: '2019-04-02T18:35:34.000Z'
                           description: date_created
                         last_modified:
                           type: string
-                          example: 2019-04-02T18:35:35.000Z
+                          example: '2019-04-02T18:35:35.000Z'
                           description: last_modified
                         amount_refunded:
                           type: number
@@ -989,15 +989,15 @@ paths:
                           description: items
                         date_created:
                           type: string
-                          example: 2019-04-02T18:20:46.000Z
+                          example: '2019-04-02T18:20:46.000Z'
                           description: date_created
                         last_modified:
                           type: string
-                          example: 2019-04-12T19:36:48.000Z
+                          example: '2019-04-12T19:36:48.000Z'
                           description: last_modified
                         date_first_printed:
                           type: string
-                          example: 2019-04-02T18:35:40.000Z
+                          example: '2019-04-02T18:35:40.000Z'
                           description: date_first_printed
                         service_id:
                           type: number
@@ -1123,7 +1123,7 @@ paths:
                               properties:
                                 date:
                                   type: string
-                                  example: 2019-04-11T03:00:00.000Z
+                                  example: '2019-04-11T03:00:00.000Z'
                                   description: date
                                 time_from:
                                   type: string
@@ -1156,6 +1156,8 @@ paths:
                               description: speed
                           description: shipping_option
                     description: shipments
+                  payouts:
+                    type: object
                   collector:
                     type: object
                     properties:
@@ -1163,8 +1165,12 @@ paths:
                         type: number
                         example: 999999999
                         description: id
+                      email:
+                        type: string
+                        example: vendedor+329653108@adf12.com.br
                       nickname:
                         type: string
+                        example: TESTRPEHE21Q
                         format: nullable
                         description: nickname
                     description: collector
@@ -1174,18 +1180,20 @@ paths:
                     description: marketplace
                   notification_url:
                     type: string
+                    properties: null
                     format: nullable
                     description: notification_url
                   date_created:
                     type: string
-                    example: 2018-09-14T17:11:31.000Z
+                    example: '2018-09-14T17:11:31.000Z'
                     description: date_created
                   last_updated:
                     type: string
-                    example: 2018-09-14T17:11:43.000Z
+                    example: '2018-09-14T17:11:43.000Z'
                     description: last_updated
                   sponsor_id:
                     type: string
+                    properties: null
                     format: nullable
                     description: sponsor_id
                   shipping_cost:
@@ -1260,6 +1268,7 @@ paths:
                     description: items
                   cancelled:
                     type: boolean
+                    example: false
                     description: cancelled
                   additional_info:
                     type: string
@@ -1267,12 +1276,14 @@ paths:
                     description: additional_info
                   application_id:
                     type: number
+                    properties: null
                     example: 10000000000000000
                     description: application_id
                   order_status:
                     type: string
                     example: paid
                     description: order_status
+
         '400':
           description: Error
           content:
@@ -1545,6 +1556,161 @@ paths:
                         type: string
                         description: Item title.
       responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: number
+                    example: 9999999999
+                    description: id
+                  status:
+                    type: string
+                    example: closed
+                    description: status
+                  external_reference:
+                    type: string
+                    example: default
+                    description: external_reference
+                  preference_id:
+                    type: string
+                    example: Preference identification
+                    description: preference_id
+                  payments:
+                    type: object
+                  shipments:
+                    type: object
+                  payouts:
+                    type: object
+                  collector:
+                    type: object
+                    properties:
+                      id:
+                        type: number
+                        example: 999999999
+                        description: id
+                      email:
+                        type: string
+                        example: ''
+                      nickname:
+                        type: string
+                        example: TESTRPEHE21Q
+                        format: nullable
+                        description: nickname
+                    description: collector
+                  marketplace:
+                    type: string
+                    example: NONE
+                    description: marketplace
+                  notification_url:
+                    type: string
+                    properties: null
+                    format: nullable
+                    description: notification_url
+                  date_created:
+                    type: string
+                    example: '2018-09-14T17:11:31.000Z'
+                    description: date_created
+                  last_updated:
+                    type: string
+                    example: '2018-09-14T17:11:43.000Z'
+                    description: last_updated
+                  sponsor_id:
+                    type: string
+                    properties: null
+                    format: nullable
+                    description: sponsor_id
+                  shipping_cost:
+                    type: number
+                    example: 0
+                    description: shipping_cost
+                  total_amount:
+                    type: number
+                    example: 5
+                    description: total_amount
+                  site_id:
+                    type: string
+                    example: mla
+                    description: site_id
+                  paid_amount:
+                    type: number
+                    example: 5
+                    description: paid_amount
+                  refunded_amount:
+                    type: number
+                    example: 0
+                    description: refunded_amount
+                  payer:
+                    type: object
+                    properties:
+                      id:
+                        type: number
+                        example: 999999999
+                        description: id
+                      email:
+                        type: string
+                        example: null
+                        description: email
+                    description: payer
+                  items:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          example: item id
+                          description: id
+                        category_id:
+                          type: string
+                          example: item category
+                          description: category_id
+                        currency_id:
+                          type: string
+                          example: $
+                          description: currency_id
+                        description:
+                          type: string
+                          example: item description
+                          description: description
+                        picture_url:
+                          type: string
+                          example: item picture url
+                          description: picture_url
+                        title:
+                          type: string
+                          example: item title
+                          description: title
+                        quantity:
+                          type: number
+                          example: 1
+                          description: quantity
+                        unit_price:
+                          type: number
+                          example: 5
+                          description: unit_price
+                    description: items
+                  cancelled:
+                    type: boolean
+                    example: false
+                    description: cancelled
+                  additional_info:
+                    type: string
+                    example: additional information
+                    description: additional_info
+                  application_id:
+                    type: number
+                    properties: null
+                    example: 10000000000000000
+                    description: application_id
+                  order_status:
+                    type: string
+                    example: payment_required
+                    description: order_status
+
         '400':
           description: Error
           content:

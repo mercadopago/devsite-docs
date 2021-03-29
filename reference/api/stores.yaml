@@ -509,6 +509,70 @@ paths:
                       type: string
                       description: Reference.
       responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: 1234567
+                    description: id
+                  name:
+                    type: string
+                    example: Sucursal Instore
+                    description: name
+                  date_creation:
+                    type: string
+                    example: '2021-03-16T20:27:26.732Z'
+                  business_hours:
+                    type: object
+                    properties:
+                      monday:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: '08:00'
+                              description: open
+                            close:
+                              type: string
+                              example: '12:00'
+                              description: close
+                        description: monday
+                    description: business_hours
+                  location:
+                    type: object
+                    properties:
+                      address_line:
+                        type: string
+                        example: Caseros 3039 Belgrano Capital Federal
+                        description: address_line
+                      latitude:
+                        type: number
+                        example: -32.8897322
+                        description: latitude
+                      longitude:
+                        type: number
+                        example: -68.8443275
+                        description: longitude
+                      reference:
+                        type: string
+                        example: 3er Piso
+                        description: reference
+                    description: location
+                  external_id:
+                    type: string
+                    example: 1234
+                    description: external_id
+                  date_created:
+                    type: string
+                    example: '2019-08-08T19:29:45.019Z'
+                    description: date_created
         '400':
           description: Error
           content:
@@ -556,6 +620,19 @@ paths:
             type: string
             example: 12123adfasdf123u4u
       responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  store:
+                    type: number
+                    example: 30148503
+                  user:
+                    type: number
+                    example: 329653108
         '400':
           description: Error
           content:
