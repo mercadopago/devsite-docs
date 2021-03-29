@@ -39,7 +39,7 @@ Activa el checkout que quieras ofrecer a tus clientes según tus preferencias y 
  * Usa Checkout Pro para soportar pagos con tarjetas, ----[mlb]---- PIX,------------ en efectivo y dinero en cuenta de Mercado Pago.
  * Usa el Checkout Personalizado para tener control sobre otras configuraciones y acepta pagos con tarjeta de crédito, ----[mlb]---- PIX,------------ boleta de pago y en persona.
 
-* Elige los [medios de pago disponibles](https://www.mercadopago.com.ar/developers/es/guides/resources/localization/payment-methods/) para tus clientes según el país en el que operes y el tipo de checkout que estés configurando. 
+* Elige los [medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods/) para tus clientes según el país en el que operes y el tipo de checkout que estés configurando. 
 
 * Establece el máximo de cuotas en el que podrán pagarte.
 
@@ -90,7 +90,7 @@ Elige qué experiencia de compra tendrán tus clientes a la hora de pagar:
 >
 > Nota
 >
-> Consulta la [documentación del Checkout Pro](https://www.mercadopago.com.ar/developers/es/guides/online-payments/checkout-pro/introduction/) para conocer mejor todas sus características y funcionalidades.
+> Consulta la [documentación del Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction/) para conocer mejor todas sus características y funcionalidades.
 
 | Configuración | Descripción |
 | --- | --- |

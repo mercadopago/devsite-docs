@@ -76,9 +76,9 @@ Veja o passo a passo para configurar o módulo para aceitar pagamentos via Cart�
 > Existem dois tipos de credenciais:
 > * Modo Sandbox: As credenciais desse modo são utilizadas para realizar testes.
 > * Modo Produção: As credenciais desse modo são utilizadas para receber os pagamentos em Produção. Para utilizar as credenciais do Modo Produção é necessário ativar suas credenciais.
-> * Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago.com.br/developers/pt/guides/resources/faqs/credentials/).
+> * Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials/).
 
-3. Com as credenciais preenchidas, o próximo passo é habilitar os métodos de pagamento.
+3) Com as credenciais preenchidas, o próximo passo é habilitar os métodos de pagamento.
 Primeiro, acesse o método que você deseja ativar.
 
 Para habilitar pagamentos por cartão > **Checkout - Credit and Debit Card**.
@@ -101,7 +101,7 @@ Ao acessar, clique no botão **Configure** para visualizar as opções de config
 
 ![Mercado Pago Custom Checkout Configuration](images/magento2/mercadopago_custom_checkout_configuration.png)
 
-4. Pronto! O meio de pagamento será habilitado com sucesso no checkout!
+4) Pronto! O meio de pagamento será habilitado com sucesso no checkout!
 
 
 ## Configurações de Basic Checkout

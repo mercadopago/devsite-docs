@@ -37,7 +37,7 @@ Activate the checkout you want to offer your customers according to your prefere
   * Use Checkout Pro to support payments with cards, ----[mlb]---- PIX,------------ cash and money in the Mercado Pago account.
   * Use the Custom Checkout to have control over other settings and accept payments with credit card, ----[mlb]---- PIX,------------ bank slip and in-person.
 
-* Choose the [payment methods available](https://www.mercadopago.com.ar/developers/en/guides/resources/localization/payment-methods/) to your customers according to the marketplace in which you operate and the type of checkout you are configuring.
+* Choose the [payment methods available](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/) to your customers according to the marketplace in which you operate and the type of checkout you are configuring.
 
 * Set the maximum number of installments in which they can pay you.
 
@@ -88,7 +88,7 @@ Choose what shopping experience your customers will have when paying:
 >
 > Nota
 >
-> Check out the [Checkout Pro documentation](https://www.mercadopago.com.ar/developers/en/guides/online-payments/checkout-pro/introduction/) to learn more about all its features and functionalities.
+> Check out the [Checkout Pro documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction/) to learn more about all its features and functionalities.
 
 | Configuration | Description |
 | --- | --- |

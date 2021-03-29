@@ -3,6 +3,7 @@
 Find out everything about the new versions and updates of Mercado Pago integrations.
 
 ---
+## March 2021
 
 ### March 29th
 
@@ -23,8 +24,6 @@ We have released the new version 3.8.0 for Magento 2.
 > GitHub
 >
 > [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.0) for further details regarding this release.
-
-## March 2021
 
 ### March 29th
 

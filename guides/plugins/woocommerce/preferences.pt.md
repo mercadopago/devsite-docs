@@ -37,7 +37,7 @@ Ative o checkout que quer oferecer aos seus clientes conforme suas preferências
   * Use o Checkout Pro para aceitar pagamentos com cartões, ----[mlb]---- PIX,------------ em dinheiro e saldo na conta do Mercado Pago.
   * Use o Checkout Personalizado para controlar outras configurações e aceitar pagamentos com cartões de crédito, ----[mlb]---- PIX,------------ boleto e pagamentos presenciais.
 
-* Escolha os [meios de pagamento disponíveis](https://www.mercadopago.com.br/developers/pt/guides/resources/localization/payment-methods/) para seus clientes conforme o país onde operam e o tipo de checkout que esteja configurando.
+* Escolha os [meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods/) para seus clientes conforme o país onde operam e o tipo de checkout que esteja configurando.
 
 * Estabeleça o máximo de parcelas que poderão pagar.
 
@@ -52,7 +52,7 @@ Ative o checkout que quer oferecer aos seus clientes conforme suas preferências
 >
 > - [Baixar a última versão](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) para atualizar seu plugin do Mercado Pago.
 >
-> - Cadastrar sua chave no Mercado Pago. Se isso não for feito, seus clientes não conseguirão finalizar a compra. [Veja como fazer](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required).
+> - Cadastrar sua chave no Mercado Pago. Se isso não for feito, seus clientes não conseguirão finalizar a compra. [Veja como fazer](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required).
 
 <span></span>
 ------------ 
@@ -88,7 +88,7 @@ Escolha qual experiência de compra seus clientes terão na hora de pagar:
 >
 > Nota
 >
-> Veja a [documentação do Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/introduction/) para conhecer melhor todas as suas características e funcionalidades.
+> Veja a [documentação do Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction/) para conhecer melhor todas as suas características e funcionalidades.
 
 | Configuração | Descrição |
 | --- | --- |
