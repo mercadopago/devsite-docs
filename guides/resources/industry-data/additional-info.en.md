@@ -2,6 +2,12 @@
 
 Check what fields you can submit according to your industry to improve your approval.
 
+> WARNING 
+> 
+> Using the examples
+> 
+> The following curls only apply for the preferences API.
+
 ## Apparel
 
 ### Fields to send
