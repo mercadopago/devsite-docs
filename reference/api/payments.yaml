@@ -1305,24 +1305,31 @@ paths:
                           id:
                             type: string
                             description: Item code.
+                            example: PR0001
                           title:
                             type: string
                             description: Item name.
+                            example: Point Mini
                           description:
                             type: string
                             description: Long item description.
+                            example: Producto Point para cobros con tarjetas mediante bluetooth
                           picture_url:
                             type: string
                             description: Image URL.
+                            example: https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium@2x.png
                           category_id:
                             type: string
                             description: Category of the item.
+                            example: electronics
                           quantity:
                             type: number
                             description: Item's quantity.
+                            example: 1
                           unit_price:
                             type: number
                             description: Unit price.
+                            example: 58.8
                     payer:
                       type: object
                       description: Buyer's information.
@@ -1330,9 +1337,11 @@ paths:
                         first_name:
                           type: string
                           description: Buyer's name.
+                          example: Test
                         last_name:
                           type: string
                           description: Buyer's last name.
+                          example: Test
                         phone:
                           type: object
                           description: Buyer's phone.
@@ -1340,9 +1349,11 @@ paths:
                             area_code:
                               type: string
                               description: Area code.
+                              example: 11
                             number:
                               type: string
                               description: Phone number.
+                              example: '987654321'
                         address:
                           type: object
                           description: Address.
@@ -1371,18 +1382,23 @@ paths:
                             zip_code:
                               type: string
                               description: Zip code.
+                              example: 12312-123
                             state_name:
                               type: string
                               description: State.
+                              example: Rio de Janeiro
                             city_name:
                               type: string
                               description: City Name.
+                              example: Buzios
                             street_name:
                               type: string
                               description: Street name.
+                              example: Av das Nacoes Unidas
                             street_number:
                               type: number
                               description: Number
+                              example: 3003
                             floor:
                               type: string
                               description: Floor.
@@ -1435,6 +1451,7 @@ paths:
                 description:
                   type: string
                   description: Payment reason or item title.
+                  example: Payment for product
                 differential_pricing_id:
                   type: number
                   description: Id of the scheme for the absorption of financing fee.
@@ -1445,9 +1462,11 @@ paths:
                 external_reference:
                   type: string
                   description: ID given by the merchant in their system.
+                  example: MP0001
                 installments:
                   type: number
                   description: Selected quantity of installments.
+                  example: 1
                 issuer_id:
                   type: string
                   description: Payment method issuer.
@@ -1521,6 +1540,7 @@ paths:
                 payment_method_id:
                   type: string
                   description: Payment method chosen to do the payment.
+                  example: visa
                 statement_descriptor:
                   type: string
                   description: >-
@@ -1532,6 +1552,7 @@ paths:
                 transaction_amount:
                   type: number
                   description: Product cost.
+                  example: 58.8
       responses:
         '400':
           description: Error
