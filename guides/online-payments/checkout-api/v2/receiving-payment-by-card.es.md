@@ -97,7 +97,7 @@ Utiliza el siguiente formulario y agrega los estilos que desees.
 > 
 > Referencia técnica
 > 
-> Encuentra información sobre los distintos atributos en la [referencia técnica](https://github.com/mercadopago/sdk-js).
+> Encuentra información sobre los distintos atributos en las [referencias técnicas](https://github.com/mercadopago/sdk-js).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Integra el formulario con la librería MercadoPago.js
 
@@ -213,7 +213,7 @@ La opción de callbacks acepta diferentes funciones que son activadas en diverso
 > 
 > Referencia técnica
 > 
-> Conoce más información sobre los callbacks en las [referencia técnica](https://github.com/mercadopago/sdk-js).
+> Conoce más información sobre los callbacks en las [referencias técnicas](https://github.com/mercadopago/sdk-js).
 
 Antes de enviar el formulario, generamos un token con la representación segura de la tarjeta y lo guardaremos en un `input` oculto que llamaremos `MPHiddenInputToken` para luego enviar el formulario a tus servidores.
 

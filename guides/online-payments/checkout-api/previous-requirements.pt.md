@@ -40,7 +40,7 @@ Recomendamos que utilize as bibliotecas oficais para sua integração. Isso perm
 > Utilize a biblioteca MercadoPago.js V2 para atualizar para a versão mais recente, autogerar a lógica de negócio no seu formulário de pagamentos com cartão e melhorar a compatibilidade com os distintos navegadores.<br><br>[Integrar Checkout API com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v2/previous-requirements)
 ------------
 
-MercadoPago.js te permite utilizar com segurança os dados do cartão, cumprindo os requisitos de segurança e evitando o envio destes dados sensíveis aos seus servidores, operando com segurança Pode-se utiliza-lo adicionando o seguinte código ao seu site:
+MercadoPago.js te permite gerenciar os dados do cartão para cumprir com os requerimentos de segurança necessários e evitar o envio de dados sensíveis para seus servidores. Para isso, nossa biblioteca gera um token que representa esta informação e te permite operar de forma segura. Pode-se utiliza-lo adicionando o seguinte código ao seu site:
 
 ```html
 <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>

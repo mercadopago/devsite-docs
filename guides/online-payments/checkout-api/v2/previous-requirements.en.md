@@ -25,7 +25,7 @@ We recommend that you use our official libraries for your integration. This help
 >
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Include MercadoPago.js
 
-MercadoPago.js allows you to create a payment token to send card data to your backend securely. You can use it by adding the following code to your website:
+MercadoPago.js allows you to manage the card data to comply with the necessary security requirements and avoid sending sensitive data to your servers. For this, our library generates a payment token that represents this information and allows you to operate safely. You can use it by adding the following code to your website:
 
 ```html
 <script src="https://sdk.mercadopago.com/js/v2"></script>

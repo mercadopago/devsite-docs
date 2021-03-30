@@ -142,7 +142,7 @@ Ahora, **solo debes inicializar nuestro CardForm relacionando el ID de cada camp
 > 
 > Referencia técnica
 > 
-> Encuentra información sobre los distintos atributos en la [referencia técnica](https://github.com/mercadopago/sdk-js).
+> Encuentra información sobre los distintos atributos en las [referencias técnicas](https://github.com/mercadopago/sdk-js).
 
 ---
 ### Próximos pasos

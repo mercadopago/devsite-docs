@@ -24,7 +24,7 @@ Te recomendamos usar las librerías oficiales para tu integración. Esto permite
 >
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Incluye MercadoPago.js
 
-MercadoPago.js te permite usar de forma segura los datos de tarjeta, cumpliendo con requerimientos de seguridad y evitando enviar estos datos sensibles a tus servidores, para operar de forma segura. Puedes utilizarla sumando el siguiente código en tu sitio:
+MercadoPago.js te permite gestionar los datos de la tarjeta para cumplir con los requerimientos de seguridad necesarios y evitar el envío de datos sensibles a tus servidores. Para ello, nuestra librería genera un token que representa esta información y te permite operar de forma segura. Puedes utilizarla sumando el siguiente código en tu sitio:
 
 ```html
 <script src="https://sdk.mercadopago.com/js/v2"></script>
