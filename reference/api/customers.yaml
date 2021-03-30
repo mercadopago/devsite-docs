@@ -80,13 +80,11 @@ paths:
                         description: street_name
                       street_number:
                         type: string
-                        properties: null
                         format: nullable
                         description: street_number
                     description: address
                   date_registered:
                     type: string
-                    properties: null
                     format: nullable
                     description: date_registered
                   description:
@@ -99,7 +97,6 @@ paths:
                     description: date_created
                   date_last_updated:
                     type: string
-                    properties: null
                     format: nullable
                     description: date_last_updated
                   metadata:
@@ -111,7 +108,6 @@ paths:
                     description: metadata
                   default_card:
                     type: string
-                    properties: null
                     format: nullable
                     description: default_card
                   default_address:
@@ -497,12 +493,10 @@ paths:
                         description: Street name.
                       street_number:
                         type: string
-                        properties: null
                         description: Street number.
                     description: Default address's information.
                   date_registered:
                     type: string
-                    properties: null
                     format: date
                     description: Customer's registration date.
                   description:
@@ -516,7 +510,6 @@ paths:
                     description: Customer's date created.
                   date_last_updated:
                     type: string
-                    properties: null
                     format: date
                     description: Last modified date.
                   metadata:
@@ -528,7 +521,6 @@ paths:
                     description: Customer's metadata.
                   default_card:
                     type: string
-                    properties: null
                     description: Customer's default card.
                   default_address:
                     type: string

@@ -1180,7 +1180,6 @@ paths:
                     description: marketplace
                   notification_url:
                     type: string
-                    properties: null
                     format: nullable
                     description: notification_url
                   date_created:
@@ -1193,7 +1192,6 @@ paths:
                     description: last_updated
                   sponsor_id:
                     type: string
-                    properties: null
                     format: nullable
                     description: sponsor_id
                   shipping_cost:
@@ -1276,7 +1274,6 @@ paths:
                     description: additional_info
                   application_id:
                     type: number
-                    properties: null
                     example: 10000000000000000
                     description: application_id
                   order_status:
@@ -1607,7 +1604,6 @@ paths:
                     description: marketplace
                   notification_url:
                     type: string
-                    properties: null
                     format: nullable
                     description: notification_url
                   date_created:
@@ -1620,7 +1616,6 @@ paths:
                     description: last_updated
                   sponsor_id:
                     type: string
-                    properties: null
                     format: nullable
                     description: sponsor_id
                   shipping_cost:
@@ -1703,7 +1698,6 @@ paths:
                     description: additional_info
                   application_id:
                     type: number
-                    properties: null
                     example: 10000000000000000
                     description: application_id
                   order_status:
