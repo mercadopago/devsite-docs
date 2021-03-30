@@ -28,7 +28,7 @@ paths:
                     description: id
                   email:
                     type: string
-                    example: bruno@gmail.com
+                    example: jhon@doe.com
                     description: email
                   first_name:
                     type: string
@@ -67,6 +67,7 @@ paths:
                     properties:
                       id:
                         type: string
+                        example: '1162600094'
                         format: nullable
                         description: id
                       zip_code:
@@ -88,11 +89,11 @@ paths:
                     description: date_registered
                   description:
                     type: string
-                    example: Lorem Ipsum
+                    example: This is my description
                     description: description
                   date_created:
                     type: string
-                    example: 2018-02-20T15:36:23.541Z
+                    example: '2018-02-20T15:36:23.541Z'
                     description: date_created
                   date_last_updated:
                     type: string
@@ -100,6 +101,10 @@ paths:
                     description: date_last_updated
                   metadata:
                     type: object
+                    properties:
+                      source_sync:
+                        type: string
+                        example: source_ws
                     description: metadata
                   default_card:
                     type: string
@@ -107,6 +112,7 @@ paths:
                     description: default_card
                   default_address:
                     type: string
+                    example: '1162600094'
                     format: nullable
                     description: default_address
                   cards:
@@ -121,6 +127,7 @@ paths:
                     description: addresses
                   live_mode:
                     type: boolean
+                    example: true
                     description: live_mode
         '400':
           description: Error
@@ -220,6 +227,113 @@ paths:
       requestBody:
         $ref: '#/schemas/customer'
       responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: 000000001-sT93QZFAsfxU9P5
+                    description: id
+                  email:
+                    type: string
+                    example: jhon@doe.com
+                    description: email
+                  first_name:
+                    type: string
+                    example: Bruce
+                    description: first_name
+                  last_name:
+                    type: string
+                    example: Wayne
+                    description: last_name
+                  phone:
+                    type: object
+                    properties:
+                      area_code:
+                        type: string
+                        example: 23
+                        description: area_code
+                      number:
+                        type: string
+                        example: 12345678
+                        description: number
+                    description: phone
+                  identification:
+                    type: object
+                    properties:
+                      type:
+                        type: string
+                        example: DNI
+                        description: type
+                      number:
+                        type: string
+                        example: 12345678
+                        description: number
+                    description: identification
+                  address:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        format: nullable
+                        description: id
+                      zip_code:
+                        type: string
+                        example: SG1 2AX
+                        description: zip_code
+                      street_name:
+                        type: string
+                        example: Old Knebworth Ln
+                        description: street_name
+                      street_number:
+                        type: string
+                        format: nullable
+                        description: street_number
+                    description: address
+                  date_registered:
+                    type: string
+                    format: nullable
+                    description: date_registered
+                  description:
+                    type: string
+                    example: This is my description
+                    description: description
+                  date_created:
+                    type: string
+                    example: 2018-02-20T15:36:23.541Z
+                    description: date_created
+                  date_last_updated:
+                    type: string
+                    format: nullable
+                    description: date_last_updated
+                  metadata:
+                    type: object
+                    description: metadata
+                  default_card:
+                    type: string
+                    format: nullable
+                    description: default_card
+                  default_address:
+                    type: string
+                    format: nullable
+                    description: default_address
+                  cards:
+                    type: array
+                    items:
+                      type: object
+                    description: cards
+                  addresses:
+                    type: array
+                    items:
+                      type: object
+                    description: addresses
+                  live_mode:
+                    type: boolean
+                    description: live_mode
         '400':
           description: Error
           content:
@@ -324,64 +438,74 @@ paths:
                 properties:
                   id:
                     type: string
+                    example: 470183340-cpunOI7UsIHlHr
                     description: Customer ID.
                   email:
                     type: string
+                    example: comprador_mlb01+470183340@asdf12.com.br
                     description: Customer's email.
                   first_name:
                     type: string
+                    example: Customer
                     description: Customer's name.
                   last_name:
                     type: string
+                    example: Tester
                     description: Customer's last name.
                   phone:
                     type: object
-                    description: Customer phone's information.
                     properties:
                       area_code:
                         type: string
+                        example: '11'
                         description: Phone's area code.
                       number:
                         type: string
+                        example: '97654321'
                         description: Phone's number.
+                    description: Customer phone's information.
                   identification:
                     type: object
-                    description: Customer identification's information.
                     properties:
                       type:
                         type: string
+                        example: CPF
                         description: Identification's type.
                       number:
                         type: string
+                        example: '19119119100'
                         description: Identification's number.
-                  default_address:
-                    type: string
-                    description: Customer's default address.
+                    description: Customer identification's information.
                   address:
                     type: object
-                    description: Default address's information.
                     properties:
                       id:
                         type: string
+                        example: '1162600213'
                         description: Address ID.
                       zip_code:
                         type: string
+                        example: '05187010'
                         description: Zip code.
                       street_name:
                         type: string
+                        example: Caetano Poli, 12
                         description: Street name.
                       street_number:
                         type: string
                         description: Street number.
+                    description: Default address's information.
                   date_registered:
                     type: string
                     format: date
                     description: Customer's registration date.
                   description:
                     type: string
+                    example: Customer Test
                     description: Customer's description.
                   date_created:
                     type: string
+                    example: '2021-03-16T15:45:17.000-04:00'
                     format: date
                     description: Customer's date created.
                   date_last_updated:
@@ -390,13 +514,20 @@ paths:
                     description: Last modified date.
                   metadata:
                     type: object
+                    properties:
+                      source_sync:
+                        type: string
+                        example: source_ws
                     description: Customer's metadata.
                   default_card:
                     type: string
                     description: Customer's default card.
+                  default_address:
+                    type: string
+                    example: '1162600213'
+                    description: Customer's default address.
                   cards:
                     type: object
-                    description: Customer's cards.
                     properties:
                       id:
                         type: string
@@ -483,13 +614,14 @@ paths:
                         type: string
                         format: date
                         description: Card's last modified date.
+                    description: Customer's cards.
                   addresses:
                     type: object
-                    description: Customer's addresses.
                     properties:
                       id:
                         type: string
                         description: Address ID.
+                        example: '1162600213'
                       phone:
                         type: string
                         description: Phone number.
@@ -505,12 +637,14 @@ paths:
                       street_name:
                         type: string
                         description: Street name.
+                        example: Caetano Poli, 12
                       street_number:
                         type: number
                         description: Street number.
                       zip_code:
                         type: string
                         description: Postal code of an Address.
+                        example: '05187010'
                       city:
                         type: object
                         description: City information.
@@ -518,9 +652,11 @@ paths:
                           id:
                             type: string
                             description: City ID.
+                            example: BR-SP-44
                           name:
                             type: string
                             description: City name.
+                            example: São Paulo
                       state:
                         type: object
                         description: State information.
@@ -528,9 +664,11 @@ paths:
                           id:
                             type: string
                             description: State ID.
+                            example: BR-SP
                           name:
                             type: string
                             description: State name.
+                            example: São Paulo
                       country:
                         type: object
                         description: Country information.
@@ -538,9 +676,11 @@ paths:
                           id:
                             type: string
                             description: Country ID.
+                            example: BR
                           name:
                             type: string
                             description: Country name.
+                            example: Brasil
                       neighborhood:
                         type: object
                         description: Neighborhood information.
@@ -551,6 +691,7 @@ paths:
                           name:
                             type: string
                             description: Neighborhood name.
+                            example: Jardim Ipanema (Zona Oeste)
                       municipality:
                         type: object
                         description: Municipality information.
@@ -567,11 +708,12 @@ paths:
                       date_created:
                         type: string
                         description: Address date created.
+                        example: '2021-03-16T15:45:17.000-04:00'
+                    description: Customer's addresses.
                   live_mode:
                     type: boolean
-                    description: >-
-                      Whether the customers will be in sandbox or in production
-                      mode.
+                    example: true
+                    description: Whether the customers will be in sandbox or in production mode.
         '400':
           description: Error
           content:
@@ -703,10 +845,12 @@ paths:
                               type: string
                               format: nullable
                               description: id
+                              example: '1162600213'
                             street_name:
                               type: string
                               format: nullable
                               description: street_name
+                              example: Caetano Poli, 12
                             street_number:
                               type: string
                               format: nullable
@@ -715,6 +859,7 @@ paths:
                               type: string
                               format: nullable
                               description: zip_code
+                              example: '05187010'
                           description: address
                         addresses:
                           type: array
@@ -742,6 +887,7 @@ paths:
                           type: string
                           format: nullable
                           description: default_address
+                          example: '1162600213'
                         default_card:
                           type: string
                           example: 1493990563105
@@ -756,8 +902,8 @@ paths:
                           description: email
                         first_name:
                           type: string
-                          format: nullable
                           description: first_name
+                          example: Customer
                         id:
                           type: string
                           example: 123456789-jxOV430go9fx2e
@@ -769,18 +915,22 @@ paths:
                               type: string
                               format: nullable
                               description: number
+                              example: '19119119100'
                             type:
                               type: string
                               format: nullable
                               description: type
+                              example: CPF
                           description: identification
                         last_name:
                           type: string
                           format: nullable
                           description: last_name
+                          example: Tester
                         live_mode:
                           type: boolean
                           description: live_mode
+                          example: true
                         metadata:
                           type: object
                           description: metadata
@@ -791,10 +941,12 @@ paths:
                               type: string
                               format: nullable
                               description: area_code
+                              example: '11'
                             number:
                               type: string
                               format: nullable
                               description: number
+                              example: '987654321'
                           description: phone
                     description: results
         '400':

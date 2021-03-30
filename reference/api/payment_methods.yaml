@@ -24,28 +24,34 @@ paths:
                   properties:
                     id:
                       type: string
+                      example: visa
                       description: Payment method identifier.
                     name:
                       type: string
+                      example: Visa
                       description: Name of the payment method.
                     payment_type_id:
                       type: string
+                      example: credit_card
                       description: Types of payment methods.
                     status:
                       type: string
+                      example: active
                       description: Payment methods status.
                     secure_thumbnail:
                       type: string
+                      example: https://www.mercadopago.com/org-img/MP3/API/logos/visa.gif
                       description: Logo to display on secure sites.
                     thumbnail:
                       type: string
+                      example: http://img.mlstatic.com/org-img/MP3/API/logos/visa.gif
                       description: Logo to show.
                     deferred_capture:
                       type: string
+                      example: supported
                       description: Whether the capture can be delayed or not.
                     settings:
                       type: object
-                      description: Payment method settings.
                       properties:
                         bin:
                           type: object
@@ -53,19 +59,19 @@ paths:
                           properties:
                             pattern:
                               type: string
-                              description: >-
-                                Regular expression representing the accepted
-                                bins.
+                              example: ^(4)
+                              description: Regular expression representing the accepted bins.
                             exclusion_pattern:
                               type: string
-                              description: >-
-                                Regular expression representing the excluded
-                                bins.
+                              description: Regular expression representing the excluded bins.
+                              example: >-
+                                    ^(400163|400176|400178|400185|400199|423808|439267|471233|473200|476332|482481|451416|438935|(40117[8-9])|(45763[1-2])|457393|431274)
                             installments_pattern:
                               type: string
+                              example: ^(?!(417401|453998|426398|462437|451212|456188))
                               description: >-
-                                Regular expression representing bins allowed to
-                                pay with more than one installment.
+                                Regular expression representing bins allowed to pay with more than
+                                one installment.
                         card_number:
                           type: object
                           description: card_number
@@ -73,58 +79,64 @@ paths:
                             length:
                               type: string
                               description: Card number length.
+                              example: 16
                             validation:
                               type: string
+                              example: standard
                               description: >-
-                                Whether the card number can be validated using a
-                                checksum algorithm (usually Luhn)
+                                Whether the card number can be validated using a checksum algorithm
+                                (usually Luhn)
                         security_code:
                           type: object
                           description: security_code
                           properties:
                             mode:
                               type: string
+                              example: mandatory
                               description: Whether the security code is mandatory or not.
                             length:
                               type: number
                               description: Security code length.
+                              example: 3
                             card_location:
                               type: string
+                              example: back
                               description: >-
-                                Whether the security code is located in the back
-                                or in the front of the card.
+                                Whether the security code is located in the back or in the front of
+                                the card.
+                      description: Payment method settings.
                     additional_info_needed:
                       type: array
-                      description: >-
-                        List of additional information that must be supplied by
-                        the payer.
+                      description: List of additional information that must be supplied by the payer.
                     min_allowed_amount:
                       type: number
-                      description: >-
-                        Minimum amount that can be processed with this payment
-                        method.
+                      example: 0.5
+                      description: Minimum amount that can be processed with this payment method.
                     max_allowed_amount:
                       type: number
-                      description: >-
-                        Maximum amount that can be processed with this payment
-                        method.
+                      example: 60000
+                      description: Maximum amount that can be processed with this payment method.
                     accreditation_time:
                       type: number
-                      description: >-
-                        How many time in minutes could happen until processing
-                        of the payment.
+                      example: 2880
+                      description: How many time in minutes could happen until processing of the payment.
                     financial_institutions:
                       type: object
-                      description: Finantial institution processing this payment method.
                       properties:
                         id:
                           type: number
-                          description: >-
-                            External financial institution identifier (e.g.:
-                            company id for atm)
+                          description: 'External financial institution identifier (e.g.: company id for atm)'
                         description:
                           type: string
                           description: Descriptive finantial institution name.
+                      description: Finantial institution processing this payment method.
+                    processing_modes:
+                      type: object
+                      properties:
+                        '0':
+                          type: string
+                          example: aggregator
+
         '400':
           description: Error
           content:

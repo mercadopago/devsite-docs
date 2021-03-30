@@ -33,33 +33,40 @@ paths:
                     id:
                       type: string
                       description: Card ID.
-                      example: 123123-ABD123DIGKBKI991-123
+                      example: '277090284'
                     date_registered:
                       type: string
-                      description: 
+                      description: null
                     date_created:
                       type: string
                       format: date
                       description: Card's date created.
+                      example: '2018-07-18T13:28:32.000-04:00'
                     date_last_updated:
                       type: string
                       format: date
                       description: Card's last modified date.
+                      example: '2018-08-07T12:21:32.243-04:00'
                     customer_id:
                       type: string
                       description: Customer ID.
+                      example: 329653963-byLEdchVPhPc4H
                     expiration_month:
                       type: number
                       description: Card's expiration month.
+                      example: 11
                     expiration_year:
                       type: number
                       description: Card's expiration year.
+                      example: 2020
                     first_six_digits:
                       type: string
                       description: Card's first six digits.
+                      example: '423564'
                     last_four_digits:
                       type: string
                       description: Card's last four digits.
+                      example: '5682'
                     payment_method:
                       type: object
                       description: Payment method information.
@@ -67,18 +74,23 @@ paths:
                         id:
                           type: string
                           description: Payment method ID.
+                          example: visa
                         name:
                           type: string
                           description: Payment method name.
+                          example: Visa
                         payment_type_id:
                           type: string
                           description: Payment method type.
+                          example: credit_card
                         thumbnail:
                           type: string
                           description: Payment method thumbnail.
+                          example: http://img.mlstatic.com/org-img/MP3/API/logos/visa.gif
                         secure_thumbnail:
                           type: string
                           description: Payment method secure thumbnail.
+                          example: https://www.mercadopago.com/org-img/MP3/API/logos/visa.gif
                     security_code:
                       type: object
                       description: Security code information.
@@ -86,9 +98,11 @@ paths:
                         length:
                           type: number
                           description: Security code's length.
+                          example: 3
                         card_location:
                           type: string
                           description: Security code's card location.
+                          example: back
                     issuer:
                       type: object
                       description: Issuer information.
@@ -96,29 +110,40 @@ paths:
                         id:
                           type: number
                           description: Issuer Id.
+                          example: 25
                         name:
                           type: string
                           description: Issuer name.
+                          example: Visa
                     cardholder:
                       type: object
                       description: Card holder information.
                       properties:
                         name:
-                          type: number
+                          type: string
                           description: Card holder name.
+                          example: APRO
                         identification:
-                          type: number
+                          type: object
                           description: Identification information.
                           properties:
                             number:
-                              type: number
+                              type: string
                               description: Identification number.
+                              example: '19119119100'
                             subtype:
                               type: string
                               description: Identification subtype.
                             type:
                               type: string
                               description: Identification type.
+                              example: CPF
+                    user_id:
+                      type: string
+                      example: '12123adfasdf123u4u'
+                    live_mode:
+                      type: boolean
+                      example: true
         '400':
           description: Error
           content:
@@ -272,8 +297,7 @@ paths:
                         description: thumbnail
                       secure_thumbnail:
                         type: string
-                        example: >-
-                          https://www.mercadopago.com/org-img/MP3/API/logos/visa.gif
+                        example: https://www.mercadopago.com/org-img/MP3/API/logos/visa.gif
                         description: secure_thumbnail
                     description: payment_method
                   security_code:
@@ -322,11 +346,11 @@ paths:
                     description: cardholder
                   date_created:
                     type: string
-                    example: 2019-07-03T21:15:35.000Z
+                    example: '2019-07-03T21:15:35.000Z'
                     description: date_created
                   date_last_updated:
                     type: string
-                    example: 2019-07-03T21:19:18.000Z
+                    example: '2019-07-03T21:19:18.000Z'
                     description: date_last_updated
                   customer_id:
                     type: string
@@ -338,6 +362,7 @@ paths:
                     description: user_id
                   live_mode:
                     type: boolean
+                    example: true
                     description: live_mode
         '400':
           description: Error
@@ -452,32 +477,40 @@ paths:
                   id:
                     type: string
                     description: Card ID.
+                    example: '8987269652'
                   date_registered:
                     type: string
-                    description: 
+                    description: null
                   date_created:
                     type: string
                     format: date
                     description: Card's date created.
+                    example: '2021-03-16T16:08:20.592-04:00'
                   date_last_updated:
                     type: string
                     format: date
                     description: Card's last modified date.
+                    example: '2021-03-16T16:08:20.592-04:00'
                   customer_id:
                     type: string
                     description: Customer ID.
+                    example: 470183340-cpunOI7UsIHlHr
                   expiration_month:
                     type: number
                     description: Card's expiration month.
+                    example: 6
                   expiration_year:
                     type: number
                     description: Card's expiration year.
+                    example: 2023
                   first_six_digits:
                     type: string
                     description: Card's first six digits.
+                    example: '503143'
                   last_four_digits:
                     type: string
                     description: Card's last four digits.
+                    example: '6351'
                   payment_method:
                     type: object
                     description: Payment method information.
@@ -485,18 +518,23 @@ paths:
                       id:
                         type: string
                         description: Payment method ID.
+                        example: master
                       name:
                         type: string
                         description: Payment method name.
+                        example: Mastercard
                       payment_type_id:
                         type: string
                         description: Payment method type.
+                        example: credit_card
                       thumbnail:
                         type: string
                         description: Payment method thumbnail.
+                        example: http://img.mlstatic.com/org-img/MP3/API/logos/master.gif
                       secure_thumbnail:
                         type: string
                         description: Payment method secure thumbnail.
+                        example: https://www.mercadopago.com/org-img/MP3/API/logos/master.gif
                   security_code:
                     type: object
                     description: Security code information.
@@ -504,9 +542,11 @@ paths:
                       length:
                         type: number
                         description: Security code's length.
+                        example: 3
                       card_location:
                         type: string
                         description: Security code's card location.
+                        example: back
                   issuer:
                     type: object
                     description: Issuer information.
@@ -514,29 +554,41 @@ paths:
                       id:
                         type: number
                         description: Issuer Id.
+                        example: 24
                       name:
                         type: string
                         description: Issuer name.
+                        example: Mastercard
                   cardholder:
                     type: object
                     description: Card holder information.
                     properties:
                       name:
-                        type: number
+                        type: string
                         description: Card holder name.
+                        example: APRO
                       identification:
-                        type: number
+                        type: object
                         description: Identification information.
                         properties:
                           number:
-                            type: number
+                            type: string
                             description: Identification number.
+                            example: '19119119100'
                           subtype:
                             type: string
                             description: Identification subtype.
                           type:
                             type: string
                             description: Identification type.
+                            example: CPF
+                  user_id:
+                    type: string
+                    example: '470183340'
+                  live_mode:
+                    type: boolean
+                    example: true
+
         '400':
           description: Error
           content:
@@ -649,6 +701,95 @@ paths:
                   description: Card Token
                   example: 9b2d63e00d66a8c721607214ceda233a
       responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: '8987269652'
+                  expiration_month:
+                    type: number
+                    example: 7
+                  expiration_year:
+                    type: number
+                    example: 2023
+                  first_six_digits:
+                    type: string
+                    example: '503143'
+                  last_four_digits:
+                    type: string
+                    example: '6351'
+                  payment_method:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        example: master
+                      name:
+                        type: string
+                        example: Mastercard
+                      payment_type_id:
+                        type: string
+                        example: credit_card
+                      thumbnail:
+                        type: string
+                        example: http://img.mlstatic.com/org-img/MP3/API/logos/master.gif
+                      secure_thumbnail:
+                        type: string
+                        example: https://www.mercadopago.com/org-img/MP3/API/logos/master.gif
+                  security_code:
+                    type: object
+                    properties:
+                      length:
+                        type: number
+                        example: 3
+                      card_location:
+                        type: string
+                        example: back
+                  issuer:
+                    type: object
+                    properties:
+                      id:
+                        type: number
+                        example: 24
+                      name:
+                        type: string
+                        example: Mastercard
+                  cardholder:
+                    type: object
+                    properties:
+                      name:
+                        type: string
+                        example: APRO
+                      identification:
+                        type: object
+                        properties:
+                          number:
+                            type: string
+                            example: '19119119100'
+                          type:
+                            type: string
+                            example: CPF
+                  date_created:
+                    type: string
+                    example: '2021-03-16T16:08:21.000-04:00'
+                  date_last_updated:
+                    type: string
+                    example: '2021-03-16T16:11:54.294-04:00'
+                  customer_id:
+                    type: string
+                    example: 470183340-cpunOI7UsIHlHr
+                  user_id:
+                    type: string
+                    example: '470183340'
+                  live_mode:
+                    type: boolean
+                    example: true
+        
         '400':
           description: Error
           content:
@@ -751,6 +892,95 @@ paths:
             type: string
             example: 12123adfasdf123u4u
       responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: '8987269652'
+                  expiration_month:
+                    type: number
+                    example: 7
+                  expiration_year:
+                    type: number
+                    example: 2023
+                  first_six_digits:
+                    type: string
+                    example: '503143'
+                  last_four_digits:
+                    type: string
+                    example: '6351'
+                  payment_method:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        example: master
+                      name:
+                        type: string
+                        example: Mastercard
+                      payment_type_id:
+                        type: string
+                        example: credit_card
+                      thumbnail:
+                        type: string
+                        example: http://img.mlstatic.com/org-img/MP3/API/logos/master.gif
+                      secure_thumbnail:
+                        type: string
+                        example: https://www.mercadopago.com/org-img/MP3/API/logos/master.gif
+                  security_code:
+                    type: object
+                    properties:
+                      length:
+                        type: number
+                        example: 3
+                      card_location:
+                        type: string
+                        example: back
+                  issuer:
+                    type: object
+                    properties:
+                      id:
+                        type: number
+                        example: 24
+                      name:
+                        type: string
+                        example: Mastercard
+                  cardholder:
+                    type: object
+                    properties:
+                      name:
+                        type: string
+                        example: APRO
+                      identification:
+                        type: object
+                        properties:
+                          number:
+                            type: string
+                            example: '19119119100'
+                          type:
+                            type: string
+                            example: CPF
+                  date_created:
+                    type: string
+                    example: '2021-03-16T16:08:21.000-04:00'
+                  date_last_updated:
+                    type: string
+                    example: '2021-03-16T16:14:40.962-04:00'
+                  customer_id:
+                    type: string
+                    example: 470183340-cpunOI7UsIHlHr
+                  user_id:
+                    type: string
+                    example: '470183340'
+                  live_mode:
+                    type: boolean
+                    example: true
+
         '400':
           description: Error
           content:

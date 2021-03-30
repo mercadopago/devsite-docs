@@ -205,90 +205,88 @@ paths:
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  type: object
-                  properties:
-                    paging:
+                type: object
+                properties:
+                  paging:
+                    type: object
+                    properties:
+                      total:
+                        type: number
+                        example: 2
+                        description: total
+                      offset:
+                        type: number
+                        example: 0
+                        description: offset
+                      limit:
+                        type: number
+                        example: 0
+                        description: limit
+                    description: paging
+                  results:
+                    type: array
+                    items:
                       type: object
                       properties:
-                        total:
+                        user_id:
                           type: number
-                          example: 2
-                          description: total
-                        offset:
+                          example: 446566691
+                          description: user_id
+                        name:
+                          type: string
+                          example: Caja Principal
+                          description: name
+                        fixed_amount:
+                          type: boolean
+                          description: fixed_amount
+                        category:
                           type: number
-                          example: 0
-                          description: offset
-                        limit:
+                          example: 621102
+                          description: category
+                        store_id:
+                          type: string
+                          example: 12345678
+                          description: store_id
+                        external_id:
+                          type: string
+                          example: CAJA001
+                          description: external_id
+                        id:
                           type: number
-                          example: 0
-                          description: limit
-                      description: paging
-                    results:
-                      type: array
-                      items:
-                        type: object
-                        properties:
-                          user_id:
-                            type: number
-                            example: 446566691
-                            description: user_id
-                          name:
-                            type: string
-                            example: Caja Principal
-                            description: name
-                          fixed_amount:
-                            type: boolean
-                            description: fixed_amount
-                          category:
-                            type: number
-                            example: 621102
-                            description: category
-                          store_id:
-                            type: string
-                            example: 12345678
-                            description: store_id
-                          external_id:
-                            type: string
-                            example: CAJA001
-                            description: external_id
-                          id:
-                            type: number
-                            example: 1988157
-                            description: id
-                          qr:
-                            type: object
-                            properties:
-                              image:
-                                type: string
-                                example: >-
-                                  https://www.mercadopago.com/instore/merchant/qr/1988157/1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.png
-                                description: image
-                              template_document:
-                                type: string
-                                example: >-
-                                  https://www.mercadopago.com/instore/merchant/qr/1988157/template_1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.pdf
-                                description: template_document
-                              template_image:
-                                type: string
-                                example: >-
-                                  https://www.mercadopago.com/instore/merchant/qr/1988157/template_1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.png
-                                description: template_image
-                            description: qr
-                          date_created:
-                            type: string
-                            example: 2019-06-24T13:31:56.000Z
-                            description: date_created
-                          date_last_updated:
-                            type: string
-                            example: 2019-08-07T21:07:26.000Z
-                            description: date_last_updated
-                          external_store_id:
-                            type: string
-                            example: SUC001
-                            description: external_store_id
-                      description: results
+                          example: 1988157
+                          description: id
+                        qr:
+                          type: object
+                          properties:
+                            image:
+                              type: string
+                              example: >-
+                                https://www.mercadopago.com/instore/merchant/qr/1988157/1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.png
+                              description: image
+                            template_document:
+                              type: string
+                              example: >-
+                                https://www.mercadopago.com/instore/merchant/qr/1988157/template_1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.pdf
+                              description: template_document
+                            template_image:
+                              type: string
+                              example: >-
+                                https://www.mercadopago.com/instore/merchant/qr/1988157/template_1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.png
+                              description: template_image
+                          description: qr
+                        date_created:
+                          type: string
+                          example: '2019-06-24T13:31:56.000Z'
+                          description: date_created
+                        date_last_updated:
+                          type: string
+                          example: '2019-08-07T21:07:26.000Z'
+                          description: date_last_updated
+                        external_store_id:
+                          type: string
+                          example: SUC001
+                          description: external_store_id
+                    description: results
         '400':
           description: Error
           content:
@@ -335,7 +333,60 @@ paths:
                 properties:
                   id:
                     type: string
+                    example: 2852128
                     description: POS identifier, numerical and self-generated.
+                  qr:
+                    type: object
+                    properties:
+                      image:
+                        type: string
+                        example: >-
+                          https://www.mercadopago.com/instore/merchant/qr/2852128/c955a5618d874e998c8399e3515fed3a00b8cc0ca401448ca56e2f2e18f4ba68.png
+                      template_document:
+                        type: string
+                        example: >-
+                          https://www.mercadopago.com/instore/merchant/qr/2852128/template_c955a5618d874e998c8399e3515fed3a00b8cc0ca401448ca56e2f2e18f4ba68.pdf
+                      template_image:
+                        type: string
+                        example: >-
+                          https://www.mercadopago.com/instore/merchant/qr/2852128/template_c955a5618d874e998c8399e3515fed3a00b8cc0ca401448ca56e2f2e18f4ba68.png
+                  status:
+                    type: string
+                    example: active
+                  date_created:
+                    type: string
+                    example: '2019-09-03T13:13:54.000-04:00'
+                  date_last_updated:
+                    type: string
+                    example: '2020-09-30T08:38:58.000-04:00'
+                  uuid:
+                    type: string
+                    example: c955a5618d874e998c8399e3515fed3a00b8cc0ca401448ca56e2f2e18f4ba68
+                  compatible_id:
+                    type: string
+                    example: >-
+                      4be87a269a7b863fd043658d2a0d7b3fa2f32334138ff651e2408d3f8191d6c9f67a4dc297e9efc70d1adfbb31f7c21c29c9059ac905a359e39114c9871afef9
+                  user_id:
+                    type: number
+                    example: 329653108
+                  name:
+                    type: string
+                    example: loja1
+                  fixed_amount:
+                    type: boolean
+                    example: false
+                  external_id:
+                    type: string
+                    example: loja1
+                  site:
+                    type: string
+                    example: MLB
+                  qr_code:
+                    type: string
+                    example: >-
+                      00020101021226940014BR.GOV.BCB.PIX2572pix-qr-h.mercadopago.com/instore/h/p/v2/c955a5618d874e998c8399e3515fed3a43520016com.mercadolibre0128https://mpago.la/pos/28521285204000053039865802BR5924VICTOR
+                      CORREA DE ALMEIDA6008CAMPINAS62070503***6304367C
+
         '400':
           description: Error
           content:
@@ -412,6 +463,93 @@ paths:
                     optional and is used only in the unattended integration
                     model.
       responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: number
+                    example: 2711382
+                    description: id
+                  qr:
+                    type: object
+                    properties:
+                      image:
+                        type: string
+                        example: >-
+                          https://www.mercadopago.com/instore/merchant/qr/2711382/0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.png
+                        description: image
+                      template_document:
+                        type: string
+                        example: >-
+                          https://www.mercadopago.com/instore/merchant/qr/2711382/template_0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.pdf
+                        description: template_document
+                      template_image:
+                        type: string
+                        example: >-
+                          https://www.mercadopago.com/instore/merchant/qr/2711382/template_0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.png
+                        description: template_image
+                    description: qr
+                  status:
+                    type: string
+                    example: active
+                    description: status
+                  date_created:
+                    type: string
+                    example: '2019-08-22T14:11:12.000Z'
+                    description: date_created
+                  date_last_updated:
+                    type: string
+                    example: '2019-08-22T14:11:12.000Z'
+                    description: date_last_updated
+                  uuid:
+                    type: string
+                    example: 0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1
+                    description: uuid
+                  user_id:
+                    type: number
+                    example: 446566691
+                    description: user_id
+                  name:
+                    type: string
+                    example: Caja Principal
+                    description: name
+                  fixed_amount:
+                    type: boolean
+                    example: true
+                    description: fixed_amount
+                  category:
+                    type: number
+                    example: 621102
+                    description: category
+                  store_id:
+                    type: string
+                    example: 12345678
+                    description: store_id
+                  external_store_id:
+                    type: string
+                    example: BK021
+                    description: external_store_id
+                  url:
+                    type: string
+                    example: https://www.miempresa.com/MP?locationId=6232&positionId=01
+                    description: url
+                  external_id:
+                    type: string
+                    example: 4lph4num3r1c
+                    description: external_id
+                  site:
+                    type: string
+                    example: MLB
+                  qr_code:
+                    type: string
+                    example: >-
+                      00020101021226940014BR.GOV.BCB.PIX2572pix-qr-h.mercadopago.com/instore/h/p/v2/db12b6e2ec4844839825c6dce7cd2f2243530016com.mercadolibre0129https://mpago.la/pos/212798995204000053039865802BR5924VICTOR
+                      CORREA DE ALMEIDA6008CAMPINAS62070503***63040B44
+        
         '400':
           description: Error
           content:
