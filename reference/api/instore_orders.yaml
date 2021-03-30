@@ -155,7 +155,6 @@ paths:
                           properties:
                             id:
                               type: string
-                              example: null
                               description: id
                         description: excluded_payment_methods
                       excluded_payment_types:
@@ -190,15 +189,12 @@ paths:
                     properties:
                       success:
                         type: string
-                        example: null
                         description: success
                       pending:
                         type: string
-                        example: null
                         description: pending
                       failure:
                         type: string
-                        example: null
                         description: failure
                     description: back_urls
                   payer:
@@ -210,18 +206,15 @@ paths:
                         description: id
                       email:
                         type: string
-                        example: null
                         description: email
                       identification:
                         type: object
                         properties:
                           number:
                             type: string
-                            example: null
                             description: number
                           type:
                             type: string
-                            example: null
                             description: type
                         description: identification
                       address:
@@ -232,7 +225,6 @@ paths:
                             description: primary
                           zip:
                             type: string
-                            example: null
                             description: zip
                         description: address
                       phone:
@@ -240,11 +232,9 @@ paths:
                         properties:
                           area_code:
                             type: string
-                            example: null
                             description: area_code
                           number:
                             type: string
-                            example: null
                             description: number
                         description: phone
                     description: payer
@@ -253,7 +243,6 @@ paths:
                     description: expires
                   additional_info:
                     type: string
-                    example: null
                     description: additional_info
                   site_id:
                     type: string

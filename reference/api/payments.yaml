@@ -413,7 +413,6 @@ paths:
                             description: number
                           extension:
                             type: string
-                            example: null
                             description: extension
                         description: phone
                       type:
@@ -729,7 +728,6 @@ paths:
                         description: Payment type identifier
                       sub_type:
                         type: string
-                        example: null
                         description: Secondary identifier of the payment type
                       application_data:
                         type: object

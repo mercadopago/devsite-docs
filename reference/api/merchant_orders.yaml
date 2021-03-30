@@ -173,7 +173,6 @@ paths:
                         description: id
                       email:
                         type: string
-                        example: null
                         description: email
                     description: payer
                   items:
@@ -750,7 +749,6 @@ paths:
                               description: id
                             email:
                               type: string
-                              example: null
                               description: email
                           description: payer
                         items:
@@ -1223,7 +1221,6 @@ paths:
                         description: id
                       email:
                         type: string
-                        example: null
                         description: email
                     description: payer
                   items:
@@ -1647,7 +1644,6 @@ paths:
                         description: id
                       email:
                         type: string
-                        example: null
                         description: email
                     description: payer
                   items:
