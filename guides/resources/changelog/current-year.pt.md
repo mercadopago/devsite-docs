@@ -5,6 +5,31 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 ---
 ## Março 2021
 
+### 31 de março
+
+> CHANGELOG
+>
+> Nova versão do MercadoPago.js
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MERCADOPAGO.JS
+
+----[mlb]----
+Integra Checkout Transparente mais simples e rápido com a nova funcionalidade CardForm, que permite autogerar a lógica de negócio no seu formulário de pagamentos com cartão e melhorar a compatibilidade com os distintos navegadores.
+------------
+----[mla, mlm, mco, mlc, mlu]----
+Integra Checkout API mais simples e rápido com a nova funcionalidade CardForm, que permite autogerar a lógica de negócio no seu formulário de pagamentos com cartão e melhorar a compatibilidade com os distintos navegadores.
+------------
+
+[Ir para a documentação de MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v2/receiving-payment-by-card)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-js).
+
 ### 25 de março
 
 > CHANGELOG

@@ -48,7 +48,7 @@ Añade el siguiente script en tu sitio:
 Inicializa la librería con la [Public Key]([FAKER][CREDENTIALS][URL]) de la cuenta que estés integrando así podemos identificarla al conectar con Mercado Pago.
 
 ```javascript
-const mercadopago = new MercadoPago('PUBLIC_KEY')
+const mercadopago = new MercadoPago('YOUR_PUBLIC_KEY')
 ```
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Actualiza tu formulario de pago
@@ -142,7 +142,7 @@ Ahora, **solo debes inicializar nuestro CardForm relacionando el ID de cada camp
 > 
 > Referencia técnica
 > 
-> Encuentra información sobre los distintos atributos en la [referencia técnica](https://github.com/mercadopago/sdk-js).
+> Encuentra información sobre los distintos atributos en las [referencias técnicas](https://github.com/mercadopago/sdk-js).
 
 ---
 ### Próximos pasos

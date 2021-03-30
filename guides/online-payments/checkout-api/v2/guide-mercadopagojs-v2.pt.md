@@ -48,7 +48,7 @@ Adicione o seguinte script no seu site:
 Inicialize a biblioteca com a [Public Key]([FAKER][CREDENTIALS][URL]) da conta que estiver integrando para que possamos identificá-la ao conectar com Mercado Pago.
 
 ```javascript
-const mercadopago = new MercadoPago('PUBLIC_KEY')
+const mercadopago = new MercadoPago('YOUR_PUBLIC_KEY')
 ```
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Atualize seu formulário de pagamento

@@ -165,7 +165,6 @@ curl -X POST \
           },
           "capture": "false"
     }'
-```    
 ]]]
 
 A resposta indica que o pagamento se encontra autorizado e pendente de captura.
@@ -400,6 +399,7 @@ curl -X PUT \
 }
 ```
 
+
 > NOTE
 >
 > Nota
@@ -503,11 +503,11 @@ curl -X PUT \
 
 > LEFT_BUTTON_REQUIRED_PT
 >
-> Requisitos para entrar em produção
+> Requisitos para ir a produção
 >
 > Conheça os requisitos necessários para começar a receber pagamentos.
 >
-> [Requisitos para entrar em produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/goto-production)
+> [Requisitos para ir a produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v2/goto-production)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >

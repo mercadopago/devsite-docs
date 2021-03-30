@@ -436,6 +436,12 @@ And you can prepare the form like this:
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Capture security code
 
+> INFO
+>
+> New MercadoPago.js version
+>
+> Use MercadoPago .js V2 library to create your card form and to auto generate your business logics needed to make the payment.<br><br>[Integrate Checkout API with MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/advanced-integration)
+
 The customer needs to enter the security code in a flow similar to [card data capture](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card/#bookmark_card_data_capture). You need to create a token by submitting the form with card ID and security code.
 
 ```javascript
