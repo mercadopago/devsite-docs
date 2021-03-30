@@ -20,9 +20,11 @@ paths:
                 name:
                   type: string
                   description: Name of the POS.
+                  example: First POS 
                 fixed_amount:
                   type: boolean
                   description: Define if the customer can insert the amount to be paid.
+                  example: false
                 category:
                   type: number
                   description: >-
@@ -31,6 +33,7 @@ paths:
                 store_id:
                   type: string
                   description: Store identifier to which the point of sale belongs.
+                  example: 123123ASDD0919ASDF912
                 external_store_id:
                   type: string
                   description: >-
@@ -437,12 +440,15 @@ paths:
                 id:
                   type: string
                   description: POS identifier, numerical and self-generated.
+                  example: 123123ASDFDE123123
                 name:
                   type: string
                   description: Name of the POS.
+                  example: First POS 
                 fixed_amount:
                   type: boolean
                   description: Define if the customer can insert the amount to be paid.
+                  example: false
                 category:
                   type: number
                   description: >-
@@ -451,6 +457,7 @@ paths:
                 store_id:
                   type: string
                   description: Store identifier to which the point of sale belongs.
+                  example: 123123123ADFDSE123
                 external_store_id:
                   type: string
                   description: >-

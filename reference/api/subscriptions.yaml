@@ -24,41 +24,49 @@ paths:
                     frequency:
                       type: number
                       description: Recurring frecuency.
+                      example: 1
                     frequency_type:
                       type: string
                       description: Recurring frecuency type (days or months).
+                      example: months
                     transaction_amount:
                       type: number
                       description: Recurring amount.
+                      example: 10
                     currency_id:
                       type: string
                       description: Currency Id.
+                      example: ARS
                     start_date:
                       type: string
                       format: date
                       description: preapproval's start date.
+                      example: '2020-06-02T13:07:14.260Z'
                     end_date:
                       type: string
                       format: date
                       description: preapproval's end date.
+                      example: '2022-07-20T15:59:52.581Z'
                 back_url:
                   type: string
                   description: Return URL.
+                  example: https://www.mercadopago.com.ar
                 collector_id:
                   type: string
                   description: Seller ID.
+                  exmaple: 100200300
                 external_reference:
                   type: string
                   description: Preapproval reference value.
+                  example: 23546246234
                 payer_email:
                   type: string
                   description: Customer's e-mail.
+                  example: test_user@testuser.com
                 reason:
                   type: string
                   description: Preapproval titlte.
-                status:
-                  type: string
-                  description: Preapproval status.
+                  exampe: Suscripcion Particular
       responses:
         '200':
           description: Success
