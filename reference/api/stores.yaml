@@ -147,38 +147,37 @@ paths:
                   example: Sucursal Instore
                 business_hours:
                   description: >-
-                    Business hours. They are divided by day of the week and up
-                    to two opening and closing times per day are allowed.
+                    Business hours. They are divided by day of the week and up to two opening and closing times per day are allowed.
                   type: object
-                    properties:
-                      monday:
-                        type: array
-                        items:
-                          type: object
-                          properties:
-                            open:
-                              type: string
-                              example: '08:00'
-                              description: open
-                            close:
-                              type: string
-                              example: '12:00'
-                              description: close
-                        description: monday
-                      tuesday:
-                        type: array
-                        items:
-                          type: object
-                          properties:
-                            open:
-                              type: string
-                              example: '09:00'
-                              description: open
-                            close:
-                              type: string
-                              example: '18:00'
-                              description: close
-                        description: tuesday
+                  properties:
+                    monday:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          open:
+                            type: string
+                            example: '08:00'
+                            description: open
+                          close:
+                            type: string
+                            example: '12:00'
+                            description: close
+                      description: monday
+                    tuesday:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          open:
+                            type: string
+                            example: '09:00'
+                            description: open
+                          close:
+                            type: string
+                            example: '18:00'
+                            description: close
+                      description: tuesday
                 external_id:
                   type: string
                   description: Unique identifier of the store defined by integrator system.
@@ -508,38 +507,37 @@ paths:
                   example: Sucursal Instore
                 business_hours:
                   description: >-
-                    Business hours. They are divided by day of the week and up
-                    to two opening and closing times per day are allowed.
+                    Business hours. They are divided by day of the week and up to two opening and closing times per day are allowed.
                   type: object
-                    properties:
-                      monday:
-                        type: array
-                        items:
-                          type: object
-                          properties:
-                            open:
-                              type: string
-                              example: '08:00'
-                              description: open
-                            close:
-                              type: string
-                              example: '12:00'
-                              description: close
-                        description: monday
-                      tuesday:
-                        type: array
-                        items:
-                          type: object
-                          properties:
-                            open:
-                              type: string
-                              example: '09:00'
-                              description: open
-                            close:
-                              type: string
-                              example: '18:00'
-                              description: close
-                        description: tuesday
+                  properties:
+                    monday:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          open:
+                            type: string
+                            example: '08:00'
+                            description: open
+                          close:
+                            type: string
+                            example: '12:00'
+                            description: close
+                      description: monday
+                    tuesday:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          open:
+                            type: string
+                            example: '09:00'
+                            description: open
+                          close:
+                            type: string
+                            example: '18:00'
+                            description: close
+                      description: tuesday
                 external_id:
                   type: string
                   description: Unique identifier of the store defined by integrator system.
