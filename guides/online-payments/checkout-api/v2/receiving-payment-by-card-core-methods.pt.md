@@ -111,7 +111,7 @@ Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
 ```javascript
 
 <script>
-const mp = new MercadoPago('PUBLIC_KEY');
+const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 
 // Add Step #getIdentificationTypes
 // Add Step #getPaymentMethods

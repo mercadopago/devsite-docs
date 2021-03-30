@@ -15,7 +15,7 @@ Para poder encontrá-las, veja a [seção de Credenciais]([FAKER][CREDENTIALS][U
 > Têm dúvidas sobre credenciais? Acesse nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials).
 
 ## Sempre utilize nossas bibliotecas
-É importante que sempre utilize nossas bibliotecas oficiais para sua integração. Isso permite cuidar dos dados sensíveis dos seus cliente, cumprir com os padrões de segurança requeridos e estar sempre atualizado.
+Recomendamos que utilize as bibliotecas oficais para sua integração. Isso permite cuidar dos dados sensíveis dos seus cliente, cumprir com os padrões de segurança requeridos e estar sempre atualizado.
 
 <br>
 
@@ -25,7 +25,7 @@ Para poder encontrá-las, veja a [seção de Credenciais]([FAKER][CREDENTIALS][U
 >
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inclua MercadoPago.js
 
-MercadoPago.js te permite criar um token de pagamento para enviar os dados dos cartões ao seu backend de forma segura. Pode-se utiliza-lo adicionando o seguinte código ao seu site:
+MercadoPago.js te permite utilizar com segurança os dados do cartão, cumprindo os requisitos de segurança e evitando o envio destes dados sensíveis aos seus servidores, operando com segurança. Pode-se utiliza-lo adicionando o seguinte código ao seu site:
 
 ```html
 <script src="https://sdk.mercadopago.com/js/v2"></script>

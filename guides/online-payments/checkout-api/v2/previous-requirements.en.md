@@ -15,7 +15,7 @@ To find them, go to the [Credentials section]([FAKER][CREDENTIALS][URL]).
 
 
 ## Always use our libraries
-Remember to always use our official libraries for your integration. This helps protect your customer's sensitive data, meet the required security standards, and keep yourself up to date.
+We recommend that you use our official libraries for your integration. This helps protect your customer's sensitive data, meet the required security standards, and keep yourself up to date.
 
 <br>
 

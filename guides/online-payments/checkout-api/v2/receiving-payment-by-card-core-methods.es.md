@@ -109,7 +109,7 @@ Agrega tu [clave pública]([FAKER][CREDENTIALS][URL]) de la siguiente manera:
 
 ```javascript
 <script>
-const mp = new MercadoPago('PUBLIC_KEY');
+const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 
 // Add Step #getIdentificationTypes
 // Add Step #getPaymentMethods

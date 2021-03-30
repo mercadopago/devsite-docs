@@ -44,7 +44,7 @@ Add the following script to your site:
 Initialize the library with the [Public Key]([FAKER][CREDENTIALS][URL]) of the account to be integrated for identification when connecting to Mercado Pago.
 
 ```javascript
-const mercadopago = new MercadoPago('PUBLIC_KEY')
+const mercadopago = new MercadoPago('YOUR_PUBLIC_KEY')
 ```
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Update your payment form

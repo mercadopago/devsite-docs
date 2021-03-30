@@ -15,7 +15,7 @@ To find them, go to the [Credentials section]([FAKER][CREDENTIALS][URL]).
 
 
 ## Always use our libraries
-Remember to always use our official libraries for your integration. This helps protect your customer's sensitive data, meet the required security standards, and keep yourself up to date.
+We recommend that you use our official libraries for your integration. This helps protect your customer's sensitive data, meet the required security standards, and keep yourself up to date.
 
 <br>
 
@@ -31,7 +31,7 @@ Remember to always use our official libraries for your integration. This helps p
 >
 > Use MercadoPago.js V2 library to update to the latest version; auto generate your business logics in your card payment form and improve compatibility with different browsers.<br><br>[Integrate Checkout API with MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/previous-requirements)
 
-MercadoPago.js allows you to create a payment token to send card data to your backend securely. You can use it by adding the following code to your website:
+MercadoPago.js allows you to safely use card data, complying with security requirements and avoiding sending sensitive data to your servers, thus operating safely. You can use it by adding the following code to your website:
 
 ```html
 <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>

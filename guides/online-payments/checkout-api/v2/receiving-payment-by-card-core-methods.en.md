@@ -95,7 +95,7 @@ Add your [public key]([FAKER][CREDENTIALS][URL]) like this:
 
 ```javascript
 <script>
-const mp = new MercadoPago('PUBLIC_KEY');
+const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 
 // Add Step #getIdentificationTypes
 // Add Step #getPaymentMethods
