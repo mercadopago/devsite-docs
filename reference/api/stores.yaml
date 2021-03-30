@@ -141,23 +141,48 @@ paths:
             schema:
               type: object
               properties:
-                id:
-                  type: string
-                  description: Store identifier, numerical and self-generated.
-                user_id:
-                  type: string
-                  description: User identifier.
                 name:
                   type: string
                   description: Store name.
+                  example: Sucursal Instore
                 business_hours:
-                  type: string
                   description: >-
                     Business hours. They are divided by day of the week and up
                     to two opening and closing times per day are allowed.
+                  type: object
+                    properties:
+                      monday:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: '08:00'
+                              description: open
+                            close:
+                              type: string
+                              example: '12:00'
+                              description: close
+                        description: monday
+                      tuesday:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: '09:00'
+                              description: open
+                            close:
+                              type: string
+                              example: '18:00'
+                              description: close
+                        description: tuesday
                 external_id:
                   type: string
                   description: Unique identifier of the store defined by integrator system.
+                  example: 1234
                 location:
                   type: object
                   description: Store location.
@@ -171,6 +196,7 @@ paths:
                     street_name:
                       type: string
                       description: Street name.
+                      example: Caseros 3039 Belgrano Capital Federal
                     city_name:
                       type: string
                       description: City.
@@ -180,12 +206,15 @@ paths:
                     latitude:
                       type: string
                       description: Latitude.
+                      example: -32.8897322
                     logitude:
                       type: string
                       description: Longitude.
+                      example: -68.8443275
                     reference:
                       type: string
                       description: Reference.
+                      example: 3er Piso
       responses:
         '200':
           description: Success
@@ -469,17 +498,52 @@ paths:
                 id:
                   type: string
                   description: Store identifier, numerical and self-generated.
+                  example: 123
                 user_id:
                   type: string
                   description: User identifier.
                 name:
                   type: string
                   description: Store name.
+                  example: Sucursal Instore
                 business_hours:
-                  type: string
                   description: >-
                     Business hours. They are divided by day of the week and up
                     to two opening and closing times per day are allowed.
+                  type: object
+                    properties:
+                      monday:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: '08:00'
+                              description: open
+                            close:
+                              type: string
+                              example: '12:00'
+                              description: close
+                        description: monday
+                      tuesday:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: '09:00'
+                              description: open
+                            close:
+                              type: string
+                              example: '18:00'
+                              description: close
+                        description: tuesday
+                external_id:
+                  type: string
+                  description: Unique identifier of the store defined by integrator system.
+                  example: 1234
                 location:
                   type: object
                   description: Store location.
@@ -493,6 +557,7 @@ paths:
                     street_name:
                       type: string
                       description: Street name.
+                      example: Caseros 3039 Belgrano Capital Federal
                     city_name:
                       type: string
                       description: City.
@@ -502,12 +567,15 @@ paths:
                     latitude:
                       type: string
                       description: Latitude.
+                      example: -32.8897322
                     logitude:
                       type: string
                       description: Longitude.
+                      example: -68.8443275
                     reference:
                       type: string
                       description: Reference.
+                      example: 3er Piso
       responses:
         '200':
           description: success

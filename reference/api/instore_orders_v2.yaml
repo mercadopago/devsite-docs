@@ -213,20 +213,25 @@ paths:
                 user_id:
                   type: string
                   description: User identifier.
+                  example: FJ12399-123JAF
                 external_store_id:
                   type: string
                   description: External_id of the store defined by integrator system.
+                  example: 123123ABIOPPQ1
                 external_pos_id:
                   type: string
                   description: >-
                     External_id of the point of sale defined by integrator
                     system.
+                  example: 928GAO199DB
                 external_reference:
                   type: string
                   description: Reference you can synchronize with your sale system.
+                  example: 12345
                 title:
                   type: string
                   description: Purchase title.
+                  example: Product order
                 description:
                   type: string
                   description: Purchase description.
@@ -235,12 +240,14 @@ paths:
                   description: >-
                     URL where you'd like to receive a payment or merchant_order
                     notification.
+                  example: www.yourserver.com
                 expiration_date:
                   type: string
                   description: Expiration date with format "2020-08-22T16:34:56.559-04:00"
                 total_amount:
                   type: number
                   description: Total amount of the transaction in local currency.
+                  example: 100
                 items:
                   type: array
                   description: Information on the products involved in the order.
@@ -250,27 +257,34 @@ paths:
                       sku_number:
                         type: string
                         description: Item code.
+                        example: A123K9191938
                       category:
                         type: string
                         description: Item category.
+                        example: marketplace
                       title:
                         type: string
                         description: Item title.
+                        example: Point Mini
                       description:
                         type: string
                         description: Item description.
+                        example: This is the Point Mini
                       unit_price:
                         type: number
                         description: Unit price of the item (maximum 2 decimals).
+                        example: 100
                       quantity:
                         type: number
                         description: Number of item units.
+                        example: 1
                       unit_measure:
                         type: string
                         description: Unit of measure of the item.
                       total_amount:
                         type: string
-                        description: Item image URL.
+                        description: Item total.
+                        example: 100
                 sponsor:
                   type: object
                   description: Integrator information.

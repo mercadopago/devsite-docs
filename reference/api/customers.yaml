@@ -13,7 +13,91 @@ paths:
       summary: Create a customer
       description: Create a customer with all its data and save the cards used to simplify the payment process
       requestBody:
-        $ref: '#/schemas/customer'
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: String
+                  example: "jhon@doe.com"
+                  description: Customer's email. 
+                first_name:
+                  type: String
+                  example: Jhon
+                  description: Customer's name. 
+                last_name:
+                  type: String
+                  example: Doe
+                  description: Customer's last name.
+                phone:
+                  type: object
+                  description: Customer phone's information.
+                  properties:
+                    area_code:
+                      type: String
+                      example: '55'
+                      description:
+                        en: Phone's area code.
+                    number:
+                      type: String
+                      example: '991234567'
+                      description:
+                        en: Phone's number.
+                identification:
+                  type: object
+                  description: Customer identification's information.
+                  properties:
+                    type:
+                      type: String
+                      example: 'CPF'
+                      description:
+                        en: Identification's type.
+                    number:
+                      type: String
+                      example: '12345678900'
+                      description:
+                        en: Identification's number.
+                default_address:
+                  type: String
+                  example: "Home"
+                  description: Customer's default address.
+                address:
+                  type: object
+                  description: Default address's information.
+                  properties:
+                    id:
+                      type: String
+                      example: '123123'
+                      description:
+                        en: Address ID.
+                    zip_code:
+                      type: String
+                      example: '01234567'
+                      description:
+                        en: Zip code.
+                    street_name:
+                      type: String
+                      example: 'Rua Exemplo'
+                      description:
+                        en: Street name.
+                    street_number:
+                      type: String
+                      example: '123 A'
+                      description:
+                        en: Street number.
+                date_registered:
+                  type: Date(ISO_8601)
+                  example: '2000-01-18'
+                  description: Customer's registration date.
+                description:
+                  type: String
+                  example: 'Description del user'
+                  description: Customer's description.
+                default_card:
+                  type: String
+                  example: 'None'
+                  description: Customer's default card.       
       responses:
         '200':
           description: success
@@ -225,7 +309,91 @@ paths:
             type: number
             example: 123123
       requestBody:
-        $ref: '#/schemas/customer'
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: String
+                  example: "jhon@doe.com"
+                  description: Customer's email. 
+                first_name:
+                  type: String
+                  example: Jhon
+                  description: Customer's name. 
+                last_name:
+                  type: String
+                  example: Doe
+                  description: Customer's last name.
+                phone:
+                  type: object
+                  description: Customer phone's information.
+                  properties:
+                    area_code:
+                      type: String
+                      example: '55'
+                      description:
+                        en: Phone's area code.
+                    number:
+                      type: String
+                      example: '991234567'
+                      description:
+                        en: Phone's number.
+                identification:
+                  type: object
+                  description: Customer identification's information.
+                  properties:
+                    type:
+                      type: String
+                      example: 'CPF'
+                      description:
+                        en: Identification's type.
+                    number:
+                      type: String
+                      example: '12345678900'
+                      description:
+                        en: Identification's number.
+                default_address:
+                  type: String
+                  example: "Home"
+                  description: Customer's default address.
+                address:
+                  type: object
+                  description: Default address's information.
+                  properties:
+                    id:
+                      type: String
+                      example: '123123'
+                      description:
+                        en: Address ID.
+                    zip_code:
+                      type: String
+                      example: '01234567'
+                      description:
+                        en: Zip code.
+                    street_name:
+                      type: String
+                      example: 'Rua Exemplo'
+                      description:
+                        en: Street name.
+                    street_number:
+                      type: String
+                      example: '123 A'
+                      description:
+                        en: Street number.
+                date_registered:
+                  type: Date(ISO_8601)
+                  example: '2000-01-18'
+                  description: Customer's registration date.
+                description:
+                  type: String
+                  example: 'Description del user'
+                  description: Customer's description.
+                default_card:
+                  type: String
+                  example: 'None'
+                  description: Customer's default card. 
       responses:
         '200':
           description: success
