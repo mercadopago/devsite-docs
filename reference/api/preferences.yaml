@@ -811,10 +811,7 @@ paths:
                         description:
                           type: string
                           example: >-
-                            Lorem ipsum dolor sit amet consectetur adipiscing
-                            elit. Sed ultricies est sed elit interdum quis
-                            consectetur libero mollis. Phasellus posuere sed
-                            eros vel volutpat.
+                            This is my description
                           description: description
                         category_id:
                           type: string

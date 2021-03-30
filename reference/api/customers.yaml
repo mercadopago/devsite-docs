@@ -28,7 +28,7 @@ paths:
                     description: id
                   email:
                     type: string
-                    example: bruno@gmail.com
+                    example: jhon@doe.com
                     description: email
                   first_name:
                     type: string
@@ -89,7 +89,7 @@ paths:
                     description: date_registered
                   description:
                     type: string
-                    example: Lorem Ipsum
+                    example: This is my description
                     description: description
                   date_created:
                     type: string
@@ -240,7 +240,7 @@ paths:
                     description: id
                   email:
                     type: string
-                    example: bruno@gmail.com
+                    example: jhon@doe.com
                     description: email
                   first_name:
                     type: string
@@ -300,7 +300,7 @@ paths:
                     description: date_registered
                   description:
                     type: string
-                    example: Lorem Ipsum
+                    example: This is my description
                     description: description
                   date_created:
                     type: string
