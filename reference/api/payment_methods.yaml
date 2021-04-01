@@ -34,10 +34,20 @@ paths:
                       type: string
                       example: credit_card
                       description: Types of payment methods.
+                      enum:
+                        - ticket -- Printed ticket
+                        - atm -- Payment by ATM
+                        - credit_card -- Payment by credit card
+                        - debit_card -- Payment by debit card
+                        - prepaid_card -- Payment by prepaid card
                     status:
                       type: string
                       example: active
                       description: Payment methods status.
+                      enum:
+                        - active -- Available for use.
+                        - deactive -- Decommissioned, we don't support it anymore.
+                        - temporally_deactive -- Unavailable for use, possible interruption of the service.
                     secure_thumbnail:
                       type: string
                       example: https://www.mercadopago.com/org-img/MP3/API/logos/visa.gif
@@ -50,6 +60,10 @@ paths:
                       type: string
                       example: supported
                       description: Whether the capture can be delayed or not.
+                      enum:
+                        - supported -- This payment method supports authorization and capture operations.
+                        - unsupported -- Deferred capture is not available for this payment method.
+                        - does_not_apply -- Cash payment methods don't allow deferred capture.
                     settings:
                       type: object
                       properties:
@@ -86,6 +100,9 @@ paths:
                               description: >-
                                 Whether the card number can be validated using a checksum algorithm
                                 (usually Luhn)
+                              enum:
+                                - standard -- The card number should validate Luhn's algorithm.
+                                - none -- There is no algorithm to validate the checksum.
                         security_code:
                           type: object
                           description: security_code
@@ -94,6 +111,9 @@ paths:
                               type: string
                               example: mandatory
                               description: Whether the security code is mandatory or not.
+                              enum:
+                                - mandatory -- The security code should be given to process the payment.
+                                - optional -- A payment could be issued without the security code.
                             length:
                               type: number
                               description: Security code length.
@@ -104,10 +124,18 @@ paths:
                               description: >-
                                 Whether the security code is located in the back or in the front of
                                 the card.
+                              enum:
+                                - back -- The security code is located in the back of the card.
+                                - front -- The security code is located in the front of the card.
                       description: Payment method settings.
                     additional_info_needed:
                       type: array
                       description: List of additional information that must be supplied by the payer.
+                      enum:
+                        - cardholder_identification_number -- Identification number of the card owner.
+                        - cardholder_identification_type -- Identification type of the card owner.
+                        - cardholder_name -- Name as seen in the card of the card owner.
+                        - issuer_id -- Id of the card issuing entity.
                     min_allowed_amount:
                       type: number
                       example: 0.5
@@ -131,11 +159,8 @@ paths:
                           description: Descriptive finantial institution name.
                       description: Finantial institution processing this payment method.
                     processing_modes:
-                      type: object
-                      properties:
-                        '0':
-                          type: string
-                          example: aggregator
+                      type: string
+                      example: aggregator
 
         '400':
           description: Error

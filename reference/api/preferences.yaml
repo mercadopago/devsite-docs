@@ -152,8 +152,7 @@ paths:
                   description: Shipments information.
                   properties:
                     mode:
-                      type: string
-                      description: Shipment mode.
+                      $ref: '#/components/schemas/shipment_mode'
                     local_pickup:
                       type: boolean
                       description: >-
@@ -236,10 +235,7 @@ paths:
                   type: string
                   description: Additional information.
                 auto_return:
-                  type: string
-                  description: >-
-                    If specified, your buyers will be redirected back to your
-                    site immediately after completing the purchase.
+                  $ref: '#/components/schemas/auto_return'
                 external_reference:
                   type: string
                   description: Reference you can synchronize with your payment system.
@@ -284,6 +280,10 @@ paths:
                       type:
                         type: string
                         description: Track type. Specifies which tool the values belong to.
+                        example: google_ad
+                        enum:
+                          - google_ad -- Allows configurations for GTM's Google Ads Conversion Tracking tag. Necessary values as conversion_id and conversion_label.
+                          - facebook_ad -- Allows configurations for Facebook Pixel. Necessary values as pixel_id.
                       values:
                         type: string
                         description: Configuration values according the track type.
@@ -300,9 +300,7 @@ paths:
                     example: 202809963
                     description: collector_id
                   operation_type:
-                    type: string
-                    example: regular_payment
-                    description: operation_type
+                    $ref: '#/components/schemas/operation_type'
                   items:
                     type: array
                     items:
@@ -402,8 +400,7 @@ paths:
                         description: failure
                     description: back_urls
                   auto_return:
-                    type: string
-                    description: auto_return
+                    $ref: '#/components/schemas/auto_return'
                   payment_methods:
                     type: object
                     properties:
@@ -651,9 +648,7 @@ paths:
                           example: NONE
                           description: marketplace
                         operation_type:
-                          type: string
-                          example: regular_payment
-                          description: operation_type
+                          $ref: '#/components/schemas/operation_type'
                         payer_email:
                           type: string
                           description: payer_email
@@ -737,8 +732,7 @@ paths:
                     type: string
                     description: additional_info
                   auto_return:
-                    type: string
-                    description: auto_return
+                    $ref: '#/components/schemas/auto_return'
                   back_urls:
                     type: object
                     properties:
@@ -842,9 +836,7 @@ paths:
                     example: MERCADOPAGO
                     description: statement_descriptor
                   operation_type:
-                    type: string
-                    example: regular_payment
-                    description: operation_type
+                    $ref: '#/components/schemas/operation_type'
                   payer:
                     type: object
                     properties:
@@ -1146,8 +1138,7 @@ paths:
                   description: Shipments information.
                   properties:
                     mode:
-                      type: string
-                      description: Shipment mode.
+                      $ref: '#/components/schemas/shipment_mode'
                     local_pickup:
                       type: boolean
                       description: >-
@@ -1225,10 +1216,7 @@ paths:
                   type: string
                   description: Additional information.
                 auto_return:
-                  type: string
-                  description: >-
-                    If specified, your buyers will be redirected back to your
-                    site immediately after completing the purchase.
+                  $ref: '#/components/schemas/auto_return'
                 external_reference:
                   type: string
                   description: Reference you can synchronize with your payment system.
@@ -1274,8 +1262,7 @@ paths:
                     type: string
                     description: additional_info
                   auto_return:
-                    type: string
-                    description: auto_return
+                    $ref: '#/components/schemas/auto_return'
                   back_urls:
                     type: object
                     properties:
@@ -1387,9 +1374,7 @@ paths:
                     format: nullable
                     description: notification_url
                   operation_type:
-                    type: string
-                    example: regular_payment
-                    description: operation_type
+                    $ref: '#/components/schemas/operation_type'
                   payer:
                     type: object
                     properties:
@@ -1575,3 +1560,25 @@ paths:
                       - invalid_access_token--access-denied
                       - >-
                         invalid_shipments--invalid-type---type---for-field-shipments-cost-
+
+components:
+  schemas:
+    shipment_mode:
+      type: string
+      description: Shipment mode.
+      enum:
+        - custom -- Custom shipping.
+        - me2 -- Mercado Envíos.
+        - not_specified -- Shipping mode not specified.
+    operation_type:
+      type: String
+      description: Operation data_type.
+      enum:
+        - regular_payment -- Normal payment.
+        - money_transfer -- Money request.
+    auto_return:
+      type: String
+      description: If specified, your buyers will be redirected back to your site immediately after completing the purchase.
+      enum:
+        - approved -- The redirection takes place only for approved payments.
+        - all -- The redirection takes place only for approved payments, forward compatibility only if we change the default behavior

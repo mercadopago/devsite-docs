@@ -57,6 +57,13 @@ paths:
                   documentation_status:
                     type: string
                     description: Detail of decision taken for the documentation
+                    enum:
+                      - pending -- No documentation has been received
+                      - review_pending -- Documentation received, waiting for decision to be taken
+                      - valid -- The documentation received is valid
+                      - invalid -- The documentation received is invalid
+                      - not_supplied -- The documentation wasn't supplied on time
+                      - not_applicable -- Documentation wasn't needed for this chargeback
                   documentation:
                     type: array
                     description: List of documentation received from the seller

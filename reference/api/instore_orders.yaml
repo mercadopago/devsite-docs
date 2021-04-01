@@ -67,9 +67,7 @@ paths:
                       example: Shampoo
                       description: Item title.
                     currency_id:
-                      type: string
-                      example: $
-                      description: Currency identifier in ISO_4217 format.
+                      $ref: '#/components/schemas/currency_id'
                     unit_price:
                       type: number
                       description: Unit price of the item (maximum 2 decimals).
@@ -112,9 +110,7 @@ paths:
                           example: 78123172
                           description: id
                         currency_id:
-                          type: string
-                          example: $
-                          description: currency_id
+                          $ref: '#/components/schemas/currency_id'
                         unit_price:
                           type: number
                           example: 120
@@ -318,3 +314,19 @@ paths:
                     enum:
                       - invalid_collector_id--COLLECTOR-ID-invalid-
                       - invalid_access_token--access-denied-
+
+
+components:
+  schemas:
+    currency_id:
+      type: string
+      example: $
+      description: Currency identifier in ISO_4217 format.
+      enum: 
+        - ARS -- Argentine peso.
+        - BRL -- Brazil real.
+        - CLP -- Chilean peso.
+        - MXN -- Mexican peso.
+        - COP -- Colombian peso.
+        - PEN -- Peruvian sol.
+        - UYU -- Uruguayan peso.

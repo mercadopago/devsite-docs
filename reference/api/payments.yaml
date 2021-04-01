@@ -146,8 +146,7 @@ paths:
                       description: Barcode information.
                       properties:
                         type:
-                          type: string
-                          description: Encoding type.
+                          $ref: '#/components/schemas/barcode_type'
                         content:
                           type: string
                           description: Barcode generated.
@@ -221,8 +220,7 @@ paths:
                   description: Order identifier.
                   properties:
                     type:
-                      type: string
-                      description: Type of order.
+                      $ref: '#/components/schemas/order_type'
                     id:
                       type: number
                       description: Id of the associated purchase order.
@@ -231,13 +229,9 @@ paths:
                   description: Identifies the buyer.
                   properties:
                     entity_type:
-                      type: string
-                      description: Entity type of the payer (only for bank transfers).
+                      $ref: '#/components/schemas/entity_type'
                     type:
-                      type: string
-                      description: >-
-                        Identification type of the associated payer (mandatory
-                        if the Payer is a Customer).
+                      $ref: '#/components/schemas/payer_type'
                     id:
                       type: string
                       description: Identification of the associated payer.
@@ -322,9 +316,7 @@ paths:
                     example: 2019-07-24T14:47:58.000Z
                     description: money_release_date
                   operation_type:
-                    type: string
-                    example: regular_payment
-                    description: operation_type
+                    $ref: '#/components/schemas/operation_type'
                   issuer_id:
                     type: string
                     example: 25
@@ -334,21 +326,15 @@ paths:
                     example: visa
                     description: payment_method_id
                   payment_type_id:
-                    type: string
-                    example: credit_card
-                    description: payment_type_id
+                    $ref: '#/components/schemas/payment_type_id'
                   status:
-                    type: string
-                    example: approved
-                    description: status
+                   $ref: '#/components/schemas/status'
                   status_detail:
                     type: string
                     example: accredited
                     description: status_detail
                   currency_id:
-                    type: string
-                    example: $
-                    description: currency_id
+                    $ref: '#/components/schemas/currency_id'
                   description:
                     type: string
                     example: >-
@@ -437,13 +423,9 @@ paths:
                             description: extension
                         description: phone
                       type:
-                        type: string
-                        example: guest
-                        description: type
+                        $ref: '#/components/schemas/payer_type'
                       entity_type:
-                        type: string
-                        format: nullable
-                        description: entity_type
+                        $ref: '#/components/schemas/entity_type'
                       id:
                         type: string
                         format: nullable
@@ -638,17 +620,13 @@ paths:
                       type: object
                       properties:
                         type:
-                          type: string
-                          example: mercadopago_fee
-                          description: type
+                          $ref: '#/components/schemas/fee_details_type'
                         amount:
                           type: number
                           example: 2.64
                           description: amount
                         fee_payer:
-                          type: string
-                          example: collector
-                          description: fee_payer
+                          $ref: '#/components/schemas/fee_payer'
                     description: fee_details
                   captured:
                     type: boolean
@@ -951,9 +929,7 @@ paths:
                     example: 2017-09-14T11:26:38.000Z
                     description: money_release_date
                   operation_type:
-                    type: string
-                    example: money_transfer
-                    description: operation_type
+                    $ref: '#/components/schemas/operation_type'
                   issuer_id:
                     type: string
                     format: nullable
@@ -963,21 +939,15 @@ paths:
                     example: account_money
                     description: payment_method_id
                   payment_type_id:
-                    type: string
-                    example: account_money
-                    description: payment_type_id
+                    $ref: '#/components/schemas/payment_type_id'
                   status:
-                    type: string
-                    example: approved
-                    description: status
+                    $ref: '#/components/schemas/status'
                   status_detail:
                     type: string
                     example: accredited
                     description: status_detail
                   currency_id:
-                    type: string
-                    example: $
-                    description: currency_id
+                    $ref: '#/components/schemas/currency_id'
                   description:
                     type: string
                     example: Pago Pizza
@@ -1009,9 +979,7 @@ paths:
                     type: object
                     properties:
                       type:
-                        type: string
-                        example: registered
-                        description: type
+                        $ref: '#/components/schemas/payer_type'
                       id:
                         type: string
                         example: 1
@@ -1057,9 +1025,7 @@ paths:
                         example: LastName
                         description: last_name
                       entity_type:
-                        type: string
-                        format: nullable
-                        description: entity_type
+                        $ref: '#/components/schemas/entity_type'
                     description: payer
                   metadata:
                     type: object
@@ -1410,8 +1376,7 @@ paths:
                       description: Barcode information.
                       properties:
                         type:
-                          type: string
-                          description: Encoding type.
+                          $ref: '#/components/schemas/barcode_type'
                         content:
                           type: string
                           description: Barcode generated.
@@ -1485,8 +1450,7 @@ paths:
                   description: Order identifier.
                   properties:
                     type:
-                      type: string
-                      description: Type of order.
+                      $ref: '#/components/schemas/order_type'
                     id:
                       type: number
                       description: Id of the associated purchase order.
@@ -1495,13 +1459,9 @@ paths:
                   description: Identifies the buyer.
                   properties:
                     entity_type:
-                      type: string
-                      description: Entity type of the payer (only for bank transfers).
+                      $ref: '#/components/schemas/entity_type'
                     type:
-                      type: string
-                      description: >-
-                        Identification type of the associated payer (mandatory
-                        if the Payer is a Customer).
+                      $ref: '#/components/schemas/payer_type'
                     id:
                       type: string
                       description: Identification of the associated payer.
@@ -1730,9 +1690,7 @@ paths:
                             example: 2017-09-14T11:26:38.000Z
                             description: money_release_date
                           operation_type:
-                            type: string
-                            example: money_transfer
-                            description: operation_type
+                            $ref: '#/components/schemas/operation_type'
                           issuer_id:
                             type: string
                             format: nullable
@@ -1742,21 +1700,15 @@ paths:
                             example: account_money
                             description: payment_method_id
                           payment_type_id:
-                            type: string
-                            example: account_money
-                            description: payment_type_id
+                            $ref: '#/components/schemas/payment_type_id'
                           status:
-                            type: string
-                            example: approved
-                            description: status
+                            $ref: '#/components/schemas/status'
                           status_detail:
                             type: string
                             example: accredited
                             description: status_detail
                           currency_id:
-                            type: string
-                            example: $
-                            description: currency_id
+                            $ref: '#/components/schemas/currency_id'
                           description:
                             type: string
                             example: Pago Pizza
@@ -1788,9 +1740,7 @@ paths:
                             type: object
                             properties:
                               type:
-                                type: string
-                                example: registered
-                                description: type
+                                $ref: '#/components/schemas/payer_type'
                               id:
                                 type: string
                                 example: 1
@@ -1836,9 +1786,7 @@ paths:
                                 example: LastName
                                 description: last_name
                               entity_type:
-                                type: string
-                                format: nullable
-                                description: entity_type
+                                $ref: '#/components/schemas/entity_type'
                             description: payer
                           metadata:
                             type: object
@@ -2045,3 +1993,111 @@ paths:
                     type: string
                     enum:
                       - 2000--Payment-not-found-
+
+components:
+  schemas:
+    operation_type:
+      type: string
+      description: Payment type.
+      enum:
+        - regular_payment -- Typification by default of a purchase being paid using Mercado Pago.
+        - money_transfer -- Funds transfer between two users.
+        - recurring_payment -- Automatic recurring payment due to an active user subscription.
+        - account_fund -- Money income in the user's account.
+        - payment_addition -- Addition of money to an existing payment, done in Mercado Pago's site.
+        - cellphone_recharge -- Recharge of a user's cellphone account.
+        - pos_payment -- Payment done through a Point Of Sale.
+    entity_type:
+      type: string
+      description: Entity type of the payer (only for bank transfers).
+      example: individual
+      enum:
+        - individual -- Payer is individual.
+        - association -- Payer is an association.
+    payer_type:
+      type: string
+      description: Identification type of the associated payer (mandatory if the Payer is a Customer).
+      example: customer
+      enum:
+        - customer -- Payer is a Customer and belongs to the collector.
+        - registered -- The account corresponds to a Mercado Pago registered user.
+        - guest -- The payer doesn't have an account.
+    order_type:
+      type: String
+      description: Type of order.
+      example: mercadolibre
+      enum:
+        - mercadolibre -- The order is from Mercado Libre.
+        - mercadopago -- It is a Mercado Pago merchant_order.
+    currency_id:
+      type: string
+      description: ID of the currency used in the payment.
+      example: BRL
+      enum:
+        - ARS -- Argentine peso.
+        - BRL -- Brazilian real.
+        - CLP -- Chilean peso.
+        - MXN -- Mexican peso.
+        - COP -- Colombian peso.
+        - PEN -- Peruvian sol.
+        - UYU -- Uruguayan peso.
+    fee_details_type:
+      type: string
+      description: Fee detail.
+      example: coupon_fee
+      enum:
+        - mercadopago_fee -- Cost for using Mercado Pago.
+        - coupon_fee -- Discount given by a coupon.
+        - financing_fee -- Cost of financing.
+        - shipping_fee -- Shipping cost.
+        - application_fee -- Marketplace comision for the service.
+        - discount_fee -- Discount given by the seller through cost absorption.
+    fee_payer:
+      type: string
+      description: Who absorbs the cost.
+      example: payer
+      enum:
+        - collector -- The seller absorbs the cost.
+        - payer -- The buyer absorbs the cost.
+    status:
+      type: string
+      example: approved
+      description: Payment status.
+      enum:
+        - pending -- The user has not yet completed the payment process.
+        - approved -- The payment has been approved and accredited.
+        - authorized -- The payment has been authorized but not captured yet.
+        - in_process -- Payment is being reviewed.
+        - in_mediation -- Users have initiated a dispute.
+        - rejected -- Payment was rejected. The user may retry payment.
+        - cancelled -- Payment was cancelled by one of the parties or because time for payment has expired
+        - refunded -- Payment was refunded to the user.
+        - charged_back -- Was made a chargeback in the buyer’s credit card.
+    payment_type_id:
+      type: string
+      description: Type of payment method chosen.
+      example: credit_card
+      enum:
+        - account_money -- Money in the MercadoPago account.
+        - ticket -- Printed ticket.
+        - bank_transfer -- Wire transfer.
+        - atm -- Payment by ATM.
+        - credit_card -- Payment by credit card.
+        - debit_card -- Payment by debit card.
+        - prepaid_card -- Payment by prepaid card.
+    refund_source_type:
+      type: string
+      description: Type of user who issued the refund.
+      example: collector
+      enum:
+        - collector -- The collector issued the refund.
+        - operator -- The refund was made by an account's operator.
+        - admin -- The refund was made by a Mercado Pago administrator.
+        - bpp -- The refund was made by the Mercado Pago's Buyer Protection Program
+    barcode_type:
+      type: String
+      description: Encoding type.
+      enum:
+        - UCC/EAN 128 -- Encodes data using the Code 128 symbology.
+        - Code128C -- High-density alphanumeric code.
+        - Code39 -- Media density code.
