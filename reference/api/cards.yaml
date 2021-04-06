@@ -5,7 +5,7 @@ info:
   title: Mercado Pago API Reference
   version: '1.0'
 paths:
-  /customers/{customer_id}/cards:
+  /v1/customers/{customer_id}/cards:
     get:
       tags:
         - $ref: '#/tags/checkout-pro'
@@ -444,7 +444,7 @@ paths:
                     type: string
                     enum:
                       - not_found--not-found-
-  /customers/{customer_id}/cards/{id}:
+  /v1/customers/{customer_id}/cards/{id}:
     get:
       tags:
         - $ref: '#/tags/checkout-pro'
