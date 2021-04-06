@@ -5,7 +5,7 @@ info:
   title: Mercado Pago API Reference
   version: '1.0'
 paths:
-  /chargebacks/{id}:
+  /v1/chargebacks/{id}:
     get:
       tags:
         - $ref: '#/tags/marketplace'
