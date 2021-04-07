@@ -28,7 +28,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | SHIPPING_FEE_AMOUNT | Custo de envio. |
 | TAXES_AMOUNT | Impostos recebidos. |
 | INSTALLMENTS | Número de parcelas em que a transação foi realizada. |
-| TAX_DETAIL | <br/> Descrição do imposto retido por operação no `TAXES_AMOUNT`. <br/><br/> |
+| TAX_DETAIL | Descrição do imposto retido por operação no `TAXES_AMOUNT`. ----[mla]---- <br><br>Você pode considerar os seguintes valores conforme a jurisdição: <br>cordoba<br>corrientes<br>mendoza<br>la_pampa<br>santa_fe<br>tucuman<br>entre_rios<br>catamarca<br>neuquen<br>santiago_del_estero<br>rio_negro<br>jujuy ------------ <br><br> |
 | POS_ID | ID do caixa, se o pagamento é feito através de um comércio físico. |
 | POS_NAME | Nome do caixa para o pagamento realizado em um comércio físico. |
 | EXTERNAL_POS_ID | ID do caixa definido pelo usuário para o pagamento realizado em um comércio físico. |
