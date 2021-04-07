@@ -1609,7 +1609,7 @@ components:
       description: Operation data_type.
       enum:
         - regular_payment -- Typification by default of a purchase being paid using Mercado Pago.
-        - payment_addition -- Addition of money to an existing payment, done in Mercado Pago's site.
+        - payment_addition -- Addition of money to an existing payment, made through a Mercado Pago account.
         - money_transfer -- Funds transfer between two users.
         - recurring_payment -- Automatic recurring payment due to an active user subscription.
         - account_fund -- Money income in the user's account.
