@@ -2078,7 +2078,7 @@ components:
       description: Type of payment method chosen.
       example: credit_card
       enum:
-        - account_money -- Money in the MercadoPago account.
+        - account_money -- Money in the Mercado Pago account.
         - ticket -- Printed ticket.
         - bank_transfer -- Wire transfer.
         - atm -- Payment by ATM.
