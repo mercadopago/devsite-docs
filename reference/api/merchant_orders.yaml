@@ -1614,7 +1614,7 @@ components:
         - recurring_payment -- Automatic recurring payment due to an active user subscription.
         - account_fund -- Money income in the user's account.
         - cellphone_recharge -- Recharge of a user's cellophone account.
-        - pos_payment -- Payment done through a Point Of Sale.
+        - pos_payment -- Payment done through a Point of Sale.
     order_status:
       type: string
       description: Current merchant order status given the payments status.
