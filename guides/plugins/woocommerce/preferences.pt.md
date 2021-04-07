@@ -51,7 +51,6 @@ Ative o checkout que quer oferecer aos seus clientes conforme suas preferências
 > **Antes de configurar o PIX como meio de pagamento, lembre-se de:**
 >
 > - [Baixar a última versão](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) para atualizar seu plugin do Mercado Pago.
->
 > - Cadastrar sua chave no Mercado Pago. Se isso não for feito, seus clientes não conseguirão finalizar a compra. [Veja como fazer](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required).
 
 <span></span>
@@ -116,7 +115,7 @@ Escolha qual experiência de compra seus clientes terão na hora de pagar:
 | Configuração | Descrição |
 | --- | --- |
 | Vencimento do PIX |  Defina o prazo de validade do código enviado ao cliente após a realização do pedido. Este será o período que o cliente terá para pagar a compra. |
-| Descontos no Mercado pago | Ative esta opção quando quiser selecionar um valor percentual para descontar dos seus clientes que pagarem com Mercado Pago. |
+| Descontos no Mercado Pago | Ative esta opção quando quiser selecionar um valor percentual para descontar dos seus clientes que pagarem com Mercado Pago. |
 | Comissão por compra com Mercado Pago | Ative esta opção quando quiser selecionar um valor adicional para cobrar dos seus clientes que pagarem com Mercado Pago, em forma de tarifa. |
 ------------ 
 

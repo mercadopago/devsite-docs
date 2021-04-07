@@ -51,7 +51,6 @@ Activate the checkout you want to offer your customers according to your prefere
 > **Before setting up PIX as a payment method, remember to:**
 >
 > - [Download the latest version](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) to update your Mercado Pago plugin.
->
 > - Register your key in Mercado Pago. If this is not done, your customers will not be able to finalize the purchase. [See how to do it](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required).
 
 <span></span>
@@ -116,7 +115,7 @@ Choose what shopping experience your customers will have when paying:
 | Configuration | Description |
 | --- | --- |
 | PIX Expiration | Set the expiration time for the code sent to the customer after the order is placed. This is the period in which the customer will have to pay for the purchase. |
-| Discounts in Mercado pago | Enable this option when you want to select a percentage amount to discount from your customers who pay with Mercado Pago. |
+| Discounts in Mercado Pago | Enable this option when you want to select a percentage amount to discount from your customers who pay with Mercado Pago. |
 | Commission for purchases with Mercado Pago | Enable this option when you want to select an additional amount to charge your customers who pay with Mercado Pago, as a fee. |
 ------------
 
