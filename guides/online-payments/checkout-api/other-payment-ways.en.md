@@ -3687,7 +3687,8 @@ To show the payment code for copy and paste, you can add `qr_code` like this:
 >  * By default, the customer has 24 hours to make payment.
 >  * The code can be used once only.
 >  * The code will be shown provided that it is current per date of expiration.
-<br>
+
+> If you need to refund a payment made by a Pix transfer, you can find this information in [Refunds and cancellations.](https://www.mercadopago.com.br/developers/en/guides/manage-account/account/cancellations-and-refunds)
 
 
 > SERVER_SIDE
@@ -3946,7 +3947,7 @@ In the `external_resource_url` field you will find an address with payment instr
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pix payments
 
-By default, Pix payments expire in 24 hours. You can change this field `date_of_expiration` when creating the payment. The set date should be between 1 and 30 days from issue date.
+By default, Pix payments expire in 24 hours. You can change this field `date_of_expiration` when creating the payment. The set date should be between 30 minutes and up to 30 days from issue date.
 
 [[[
 ```php
