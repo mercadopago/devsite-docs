@@ -135,7 +135,7 @@ paths:
                         - cardholder_identification_number -- Identification number of the card owner.
                         - cardholder_identification_type -- Identification type of the card owner.
                         - cardholder_name -- Name as seen in the card of the card owner.
-                        - issuer_id -- Id of the card issuing entity.
+                        - issuer_id -- ID of the card issuing entity.
                     min_allowed_amount:
                       type: number
                       example: 0.5
