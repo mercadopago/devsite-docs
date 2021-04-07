@@ -3703,7 +3703,7 @@ Para mostrar la opción que te permitirá copiar y pegar el código de pago, pue
 >  * El código se va a mostrar siempre que esté vigente según la fecha de expiración.
 <span></span>
 
-> Si necesitas devolver un pago realizado a través de una transferencia Pix, puedes encontrar esta información en [Devoluciones y cancelaciones](https://www.mercadopago.com.br/developers/es/guides/manage-account/account/cancellations-and-refunds).
+> Si necesitas devolver un pago realizado a través de una transferencia Pix, puedes encontrar esta información en [Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).
 
 
 > SERVER_SIDE

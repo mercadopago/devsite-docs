@@ -3688,7 +3688,7 @@ To show the payment code for copy and paste, you can add `qr_code` like this:
 >  * The code can be used once only.
 >  * The code will be shown provided that it is current per date of expiration.
 
-> If you need to refund a payment made by a Pix transfer, you can find this information in [Refunds and cancellations.](https://www.mercadopago.com.br/developers/en/guides/manage-account/account/cancellations-and-refunds)
+> If you need to refund a payment made by a Pix transfer, you can find this information in [Refunds and cancellations.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
 
 
 > SERVER_SIDE
