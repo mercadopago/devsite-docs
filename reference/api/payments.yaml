@@ -2006,7 +2006,7 @@ components:
         - account_fund -- Money income in the user's account.
         - payment_addition -- Addition of money to an existing payment, made through a Mercado Pago account.
         - cellphone_recharge -- Recharge of a user's cellphone account.
-        - pos_payment -- Payment done through a Point Of Sale.
+        - pos_payment -- Payment done through a Point of Sale.
     entity_type:
       type: string
       description: Entity type of the payer (only for bank transfers).
