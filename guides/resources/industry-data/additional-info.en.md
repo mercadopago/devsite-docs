@@ -4,7 +4,7 @@ Check what fields you can submit according to your industry to improve your appr
 
 > WARNING 
 > 
-> Using the examples
+> Use of examples
 > 
 > The following curls only apply for the preferences API.
 
