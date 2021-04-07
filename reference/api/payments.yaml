@@ -2004,7 +2004,7 @@ components:
         - money_transfer -- Funds transfer between two users.
         - recurring_payment -- Automatic recurring payment due to an active user subscription.
         - account_fund -- Money income in the user's account.
-        - payment_addition -- Addition of money to an existing payment, done in Mercado Pago's site.
+        - payment_addition -- Addition of money to an existing payment, made through a Mercado Pago account.
         - cellphone_recharge -- Recharge of a user's cellphone account.
         - pos_payment -- Payment done through a Point Of Sale.
     entity_type:
