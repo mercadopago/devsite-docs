@@ -6,7 +6,7 @@ Revisa que campos puedes enviar según tu industria para mejorar tu aprobación.
 > 
 > Uso de ejemplos
 > 
-> Los siguientes curls solo funcionan para la API de Preferencias.
+> Los siguientes curls solo funcionan para la API de preferencias.
 
 ## Apparel
 
