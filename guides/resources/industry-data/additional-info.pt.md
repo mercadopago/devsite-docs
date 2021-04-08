@@ -2,6 +2,12 @@
 
 Verifique quais campos você pode enviar de acordo com o seu setor para melhorar sua aprovação.
 
+> WARNING 
+> 
+> Uso de exemplos
+> 
+> Essas informações funcionam apenas para a API de Preferências.
+
 ## Apparel
 
 ### Campos para enviar
