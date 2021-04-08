@@ -6,7 +6,7 @@ Verifique quais campos você pode enviar de acordo com o seu setor para melhorar
 > 
 > Uso de exemplos
 > 
-> Os curls a seguir funcionam somente para a API de preferências.
+> Essas informações funcionam apenas para a API de Preferências.
 
 ## Apparel
 
