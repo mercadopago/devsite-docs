@@ -13,7 +13,7 @@ Instala el procesador de pagos en WooCommerce y lleva tus ventas a otro nivel co
 | --- | --- |
 | Financiación | Vende en cuotas y ofrece las promociones que desees. |
 | Liberación de dinero | Al instante o con las tasas y plazos que mejor se adapten al negocio. |
-| Medios de pago | Acepta pagos con tarjeta de crédito y débito, ----[mlb]---- PIX,------------ pagos en efectivo y con dinero en cuenta de Mercado Pago. |
+| Medios de pago | Acepta pagos con tarjeta de crédito y débito, ----[mlb]---- Pix,------------ pagos en efectivo y con dinero en cuenta de Mercado Pago. |
 | Tipos de checkout | Checkout Pro, Checkout personalizado |
 | Pago como invitado | Los usuarios no necesitan estar registrados en Mercado Pago para poder pagar en WooCommerce. |
 | Devolución de pagos | Devuelve pagos desde la plataforma. |
@@ -38,7 +38,7 @@ Con estas opciones de pago cubrimos las necesidades de cada negocio. Revisa las 
 
 | Características | Checkout Pro | Checkout personalizado |
 | --- | --- | --- |
-| Medios de pago | Pagos con tarjetas, ----[mlb]---- Pix,------------ en efectivo y con dinero en cuenta de Mercado Pago. | Pagos con tarjetas de débito y crédito, ----[mlb]---- PIX,------------ boleto bancario o pagos presenciales. |
+| Medios de pago | Pagos con tarjetas, ----[mlb]---- Pix,------------ en efectivo y con dinero en cuenta de Mercado Pago. | Pagos con tarjetas de débito y crédito, ----[mlb]---- Pix,------------ boleto bancario o pagos presenciales. |
 | Experiencia de pago | Tus clientes pagan desde la página de Mercado Pago con un formato redirect (fuera de tu tienda) o modal (dentro de tu tienda). | Tus clientes pagan como invitados sin salir de tu tienda. |
 | Usuarios invitados | Tus clientes pueden pagar con o sin cuenta en Mercado Pago. | Tus clientes pagan como invitados, sin cuenta en Mercado Pago. |
 

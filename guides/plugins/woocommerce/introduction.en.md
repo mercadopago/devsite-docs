@@ -38,7 +38,7 @@ With these payment options we cover the needs of each business. Review the featu
 
 | Characteristics | Checkout Pro | Custom Checkout |
 | --- | --- | --- |
-| Payment methods | Payments with cards, ----[mlb]---- Pix,------------ cash and money in Mercado Pago account. | Payments with debit and credit cards, ----[mlb]---- PIX,------------ bank slip or in-person payments. |
+| Payment methods | Payments with cards, ----[mlb]---- Pix,------------ cash and money in Mercado Pago account. | Payments with debit and credit cards, ----[mlb]---- Pix,------------ boleto or in-person payments. |
 | Payment experience | Your customers pay from the Mercado Pago page with a redirect (outside your store) or modal (inside your store) format. | Your customers pay without leaving your online store. |
 | Guest users | Your customers can pay with or without an account in Mercado Pago. | Your customers pay as guests, without a Mercado Pago account. |
 

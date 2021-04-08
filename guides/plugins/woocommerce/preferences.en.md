@@ -34,8 +34,8 @@ Enter the **name of the business** to appear on your customers' invoice and make
 Activate the checkout you want to offer your customers according to your preferences and choose the payment methods with which they can make the purchase.
 
 * Activate a checkout type.
-  * Use Checkout Pro to support payments with cards, ----[mlb]---- PIX,------------ cash and money in the Mercado Pago account.
-  * Use the Custom Checkout to have control over other settings and accept payments with credit card, ----[mlb]---- PIX,------------ bank slip and in-person.
+  * Use Checkout Pro to support payments with cards, ----[mlb]---- Pix,------------ cash and money in the Mercado Pago account.
+  * Use the Custom Checkout to have control over other settings and accept payments with credit card, ----[mlb]---- Pix,------------ bank slip and in-person.
 
 * Choose the [payment methods available](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/) to your customers according to the marketplace in which you operate and the type of checkout you are configuring.
 
@@ -48,7 +48,7 @@ Activate the checkout you want to offer your customers according to your prefere
 >
 > Important
 >
-> **Before setting up PIX as a payment method, remember to:**
+> Before setting up Pix as a payment method, remember to:
 >
 > - [Download the latest version](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) to update your Mercado Pago plugin.
 > - Register your key in Mercado Pago. If this is not done, your customers will not be able to finalize the purchase. [See how to do it](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required).
@@ -87,7 +87,7 @@ Choose what shopping experience your customers will have when paying:
 >
 > Nota
 >
-> Check out the [Checkout Pro documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction/) to learn more about all its features and functionalities.
+> Check out the [Checkout Pro documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction) to learn more about all its features and functionalities.
 
 | Configuration | Description |
 | --- | --- |
@@ -110,11 +110,11 @@ Choose what shopping experience your customers will have when paying:
 | Reduce inventory | Activate this option when you want to automate the inventory reduction for each purchase order that is approved after a payment with Mercado Pago. |
 
 ----[mlb]----
-#### Payments with PIX
+#### Payments with Pix
 
 | Configuration | Description |
 | --- | --- |
-| PIX Expiration | Set the expiration time for the code sent to the customer after the order is placed. This is the period in which the customer will have to pay for the purchase. |
+| Pix Expiration | Set the expiration time for the code sent to the customer after the order is placed. This is the period in which the customer will have to pay for the purchase. |
 | Discounts in Mercado Pago | Enable this option when you want to select a percentage amount to discount from your customers who pay with Mercado Pago. |
 | Commission for purchases with Mercado Pago | Enable this option when you want to select an additional amount to charge your customers who pay with Mercado Pago, as a fee. |
 ------------

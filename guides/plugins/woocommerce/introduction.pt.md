@@ -38,7 +38,7 @@ Com estas opções de pagamento nós cobrimos as necessidades de cada negócio. 
 
 | Características | Checkout Pro | Checkout personalizado |
 | --- | --- | --- |
-| Meios de pagamento | Pagamento com cartões, ----[mlb]---- PIX,------------ em dinheiro e com saldo na conta do Mercado Pago. | Pagamento com cartões de crédito,  ----[mlb]---- PIX,------------ boleto e pagamentos presenciais. |
+| Meios de pagamento | Pagamento com cartões, ----[mlb]---- Pix,------------ em dinheiro e com saldo na conta do Mercado Pago. | Pagamento com cartões de crédito,  ----[mlb]---- Pix,------------ boleto e pagamentos presenciais. |
 | Experiência de pagamento | Seus clientes pagam na página do Mercado Pago com um formato redirect (fora da sua loja) ou modal (dentro da sua loja). | Seus clientes pagam sem sair da sua loja virtual. |
 | Usuários convidados | Seus clientes podem pagar tendo ou não uma conta no Mercado Pago. | Seus clientes pagam como convidados, sem ter uma conta no Mercado Pago.|
 
