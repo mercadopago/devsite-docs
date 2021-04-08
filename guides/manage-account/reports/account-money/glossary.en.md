@@ -29,7 +29,7 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | TAXES_AMOUNT | Taxes charged for gross income withholdings. |
 | INSTALLMENTS | Number of installments in which the operation was carried out. |
 | TAX_AMOUNT_TELCO | The value of the tax on telecommunications companies that is deducted from the gross value. |
-| TAX_DETAIL | Description of the tax withheld by operation in TAXES_AMOUNT. |
+| TAX_DETAIL | Description of the tax withheld by operation in `TAXES_AMOUNT`. ----[mla]---- <br><br>You can consider the following values depending on the jurisdiction: <br>cordoba<br>corrientes<br>mendoza<br>la_pampa<br>santa_fe<br>tucuman<br>entre_rios<br>catamarca<br>neuquen<br>santiago_del_estero<br>rio_negro<br>jujuy ------------ <br><br> |
 | POS_ID | Cash ID if the payment is made through a physical commerce. |
 | POS_NAME | Cash name for the payment made through a physical commerce. |
 | EXTERNAL_POS_ID | User-defined cashier ID for payment made through a physical commerce. |
