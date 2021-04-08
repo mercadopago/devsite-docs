@@ -6,7 +6,7 @@ Check what fields you can submit according to your industry to improve your appr
 > 
 > Use of examples
 > 
-> This information apply only for the Preferences API.
+> This information applies only for the Preferences API.
 
 ## Apparel
 
