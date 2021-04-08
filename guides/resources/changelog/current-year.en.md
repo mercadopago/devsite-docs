@@ -25,6 +25,26 @@ Integrate Checkout API simpler and faster with the new CardForm functionality, w
 >
 > [Check GitHub](https://github.com/mercadopago/sdk-js) for further details regarding this release.
 
+### March 29th
+
+> CHANGELOG
+>
+> New WooCommerce plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+
+We have released the new version 5.1.0 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.1.0) for further details regarding this release.
+
 ### March 25th
 
 > CHANGELOG
