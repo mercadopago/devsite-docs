@@ -13,7 +13,7 @@ Instale nosso gateway de pagamento no WooCommerce e leve suas vendas para outro 
 | --- | --- |
 | Financiamento | Venda parcelado e ofereça as promoções que deseja. |
 | Liberação de dinheiro | Instantaneamente ou com as taxas e termos que melhor se adequam ao negócio. |
-| Meios de pagamento | Aceite pagamentos com cartão de crédito, boleto, ----[mlb]---- PIX,------------ pagamento em lotérica e saldo na conta do Mercado Pago. |
+| Meios de pagamento | Aceite pagamentos com cartão de crédito, boleto, ----[mlb]---- Pix,------------ pagamento em lotérica e saldo na conta do Mercado Pago. |
 | Tipos de checkout | Checkout Pro, Checkout personalizado. |
 | Pague como convidado | Os usuários não precisam estar registrados no Mercado Pago para pagar no WooCommerce. |
 | Devolução de pagamentos | Devolva pagamentos pela plataforma. |
