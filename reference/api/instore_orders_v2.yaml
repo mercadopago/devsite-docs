@@ -90,33 +90,31 @@ paths:
                     items:
                       type: array
                       items:
+                        type: object
                         properties:
-                          type: object
-                          properties:
-                            sku_number:
-                              type: string
-                              example: KS955RUR
-                            category:
-                              type: string
-                              example: COMIDA
-                            title:
-                              type: string
-                              example: Pasta
-                            description:
-                              type: string
-                              example: Compra en Mercado Pago
-                            unit_measure:
-                              type: string
-                              example: unit
-                            quantity:
-                              type: number
-                              example: 5
-                            unit_price:
-                              type: number
-                              example: 20
-                            total_amount:
-                              type: number
-                              example: 100
+                          sku_number:
+                            type: string
+                            example: KS955RUR
+                          category:
+                            type: string
+                            example: COMIDA
+                          title:
+                            type: string
+                            example: Pasta
+                          description:
+                            type: string
+                            example: Compra en Mercado Pago
+                          unit_measure:
+                            $ref: '#/components/schemas/unit_measure'
+                          quantity:
+                            type: number
+                            example: 5
+                          unit_price:
+                            type: number
+                            example: 20
+                          total_amount:
+                            type: number
+                            example: 100
                     title:
                       type: string
                       example: Compra
@@ -279,8 +277,7 @@ paths:
                         description: Number of item units.
                         example: 1
                       unit_measure:
-                        type: string
-                        description: Unit of measure of the item.
+                        $ref: '#/components/schemas/unit_measure'
                       total_amount:
                         type: string
                         description: Item total.
@@ -354,3 +351,13 @@ paths:
                     type: string
                     enum:
                       - in_store_order_creation_error--Failed-to-create-order-
+
+components:
+  schemas:
+    unit_measure:
+      type: string
+      description: Unit of measure of the item.
+      example: unit
+      enum: 
+        - unit -- Unit
+        - pack -- Pack

@@ -33,6 +33,9 @@ paths:
                       description: >-
                         Type of identification of the associated payer (required
                         if the payer is a customer).
+                      enum:
+                        - customer -- The payer is a client and belongs to the collector
+                        - registered -- The account corresponds to a registered user of Mercado Pago
                     identification:
                       type: object
                       description: Personal identification.
@@ -110,6 +113,9 @@ paths:
                         description: >-
                           Method of processing the payments (aggregator by
                           default).
+                        enum:
+                          - aggregator -- Processes the payment using the commerce number of Mercado Pago
+                          - gateway -- Processes the payment using the commerce number of the Seller
                       issuer_id:
                         type: string
                         description: Identifier of the issuer of the payment method.
@@ -800,6 +806,14 @@ paths:
                 status:
                   type: string
                   description: Advanced Payment status.
+                  enum: 
+                    - pending -- The user has not finalized the payment process yet.
+                    - approved -- The payment was approved and accredited.
+                    - rejected -- The payment was rejected. The user could retry the payment.
+                    - cancelled -- The payment was canceled by one of the parties or has expired.
+                    - refunded -- The payment was returned to the user.
+                    - partially_refunded -- Part of the payment was returned to the user.
+                    - charged_back -- A chargeback has been made on the buyer's credit card.
       responses:
         '400':
           description: Error

@@ -26,10 +26,7 @@ paths:
                   description: Define if the customer can insert the amount to be paid.
                   example: false
                 category:
-                  type: number
-                  description: >-
-                    MCC code that indicates the category of the Point of Sale.
-                    If not specified, it remains as a generic category.
+                  $ref: '#/components/schemas/category'
                 store_id:
                   type: string
                   description: Store identifier to which the point of sale belongs.
@@ -108,9 +105,7 @@ paths:
                     type: boolean
                     description: fixed_amount
                   category:
-                    type: number
-                    example: 621102
-                    description: category
+                    $ref: '#/components/schemas/category'
                   store_id:
                     type: string
                     example: 12345678
@@ -243,9 +238,7 @@ paths:
                           type: boolean
                           description: fixed_amount
                         category:
-                          type: number
-                          example: 621102
-                          description: category
+                          $ref: '#/components/schemas/category'
                         store_id:
                           type: string
                           example: 12345678
@@ -450,10 +443,7 @@ paths:
                   description: Define if the customer can insert the amount to be paid.
                   example: false
                 category:
-                  type: number
-                  description: >-
-                    MCC code that indicates the category of the Point of Sale.
-                    If not specified, it remains as a generic category.
+                  $ref: '#/components/schemas/category'
                 store_id:
                   type: string
                   description: Store identifier to which the point of sale belongs.
@@ -529,9 +519,7 @@ paths:
                     example: true
                     description: fixed_amount
                   category:
-                    type: number
-                    example: 621102
-                    description: category
+                    $ref: '#/components/schemas/category'
                   store_id:
                     type: string
                     example: 12345678
@@ -666,3 +654,25 @@ paths:
                     type: string
                     enum:
                       - 1--If-there-is-no-pos-for-the-indicated-ID-and-user-
+
+components:
+  schemas:
+    category:
+      type: number
+      example: 621102
+      description: MCC code that indicates the category of the Point of Sale. If not specified, it remains as a generic category.
+      enum:
+        - 621102 -- Argentina Gastronomy
+        - 473000 -- Argentina Gas station
+        - 5611203 -- Brazil Gastronomy
+        - 4731300 -- Brazil Gas station
+        - 5812 -- Mexico Gastronomy
+        - 468419 -- Mexico Gas station
+        - 5611 -- Colombia Gastronomy
+        - 4731 -- Colombia Gas station
+        - 5520 -- Peru Gastronomy
+        - 5050 -- Peru Gas station
+        - 56101 -- Uruguay Gastronomy
+        - 47300 -- Uruguay Gas station
+        - 561000 -- Chile Gastronomy
+        - 473001 -- Chile Gas station

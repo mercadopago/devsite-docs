@@ -72,9 +72,7 @@ paths:
                         description: Item category.
                         example: item category
                       currency_id:
-                        type: string
-                        description: ID of the currency used in the item price.
-                        example: $
+                        $ref: '#/components/schemas/currency_id'
                       description:
                         type: string
                         description: Item description.
@@ -115,9 +113,7 @@ paths:
                     example: 9999999999
                     description: id
                   status:
-                    type: string
-                    example: closed
-                    description: status
+                    $ref: '#/components/schemas/status'
                   external_reference:
                     type: string
                     example: default
@@ -203,9 +199,7 @@ paths:
                           example: item category
                           description: category_id
                         currency_id:
-                          type: string
-                          example: $
-                          description: currency_id
+                          $ref: '#/components/schemas/currency_id'
                         description:
                           type: string
                           example: item description
@@ -239,9 +233,7 @@ paths:
                     example: 10000000000000000
                     description: application_id
                   order_status:
-                    type: string
-                    example: payment_required
-                    description: order_status
+                    $ref: '#/components/schemas/order_status'
         '400':
           description: Error
           content:
@@ -413,9 +405,7 @@ paths:
                           example: 9999999999
                           description: id
                         status:
-                          type: string
-                          example: closed
-                          description: status
+                          $ref: '#/components/schemas/status'
                         external_reference:
                           type: string
                           example: default
@@ -446,21 +436,15 @@ paths:
                                 example: 0
                                 description: shipping_cost
                               currency_id:
-                                type: string
-                                example: $
-                                description: currency_id
+                                $ref: '#/components/schemas/currency_id'
                               status:
-                                type: string
-                                example: approved
-                                description: status
+                                $ref: '#/components/schemas/payment_status'
                               status_detail:
                                 type: string
                                 example: accredited
                                 description: status_detail
                               operation_type:
-                                type: string
-                                example: regular_payment
-                                description: operation_type
+                                $ref: '#/components/schemas/operation_type'
                               date_approved:
                                 type: string
                                 example: 2019-04-02T18:35:35.000Z
@@ -657,9 +641,7 @@ paths:
                                     example: 0
                                     description: cost
                                   currency_id:
-                                    type: string
-                                    example: $
-                                    description: currency_id
+                                    $ref: '#/components/schemas/currency_id'
                                   shipping_method_id:
                                     type: number
                                     example: 99999
@@ -779,9 +761,7 @@ paths:
                                 example: item category
                                 description: category_id
                               currency_id:
-                                type: string
-                                example: $
-                                description: currency_id
+                                $ref: '#/components/schemas/currency_id'
                               description:
                                 type: string
                                 example: item description
@@ -815,9 +795,7 @@ paths:
                           example: 10000000000000000
                           description: application_id
                         order_status:
-                          type: string
-                          example: paid
-                          description: order_status
+                          $ref: '#/components/schemas/order_status'
                     description: elements
                   next_offset:
                     type: number
@@ -879,9 +857,7 @@ paths:
                     example: 9999999999
                     description: id
                   status:
-                    type: string
-                    example: closed
-                    description: status
+                    $ref: '#/components/schemas/status'
                   external_reference:
                     type: string
                     example: default
@@ -912,21 +888,15 @@ paths:
                           example: 0
                           description: shipping_cost
                         currency_id:
-                          type: string
-                          example: $
-                          description: currency_id
+                          $ref: '#/components/schemas/currency_id'
                         status:
-                          type: string
-                          example: approved
-                          description: status
+                          $ref: '#/components/schemas/payment_status'
                         status_detail:
                           type: string
                           example: accredited
                           description: status_detail
                         operation_type:
-                          type: string
-                          example: regular_payment
-                          description: operation_type
+                          $ref: '#/components/schemas/operation_type'
                         date_approved:
                           type: string
                           example: '2019-04-02T18:35:35.000Z'
@@ -1123,9 +1093,7 @@ paths:
                               example: 0
                               description: cost
                             currency_id:
-                              type: string
-                              example: $
-                              description: currency_id
+                              $ref: '#/components/schemas/currency_id'
                             shipping_method_id:
                               type: number
                               example: 99999
@@ -1251,9 +1219,7 @@ paths:
                           example: item category
                           description: category_id
                         currency_id:
-                          type: string
-                          example: $
-                          description: currency_id
+                          $ref: '#/components/schemas/currency_id'
                         description:
                           type: string
                           example: item description
@@ -1288,9 +1254,7 @@ paths:
                     example: 10000000000000000
                     description: application_id
                   order_status:
-                    type: string
-                    example: paid
-                    description: order_status
+                    $ref: '#/components/schemas/order_status'
 
         '400':
           description: Error
@@ -1389,9 +1353,7 @@ paths:
                         description: Item category.
                         example: item category
                       currency_id:
-                        type: string
-                        description: ID of the currency used in the item price.
-                        example: $
+                        $ref: '#/components/schemas/currency_id'
                       description:
                         type: string
                         description: Item description.
@@ -1432,9 +1394,7 @@ paths:
                     example: 9999999999
                     description: id
                   status:
-                    type: string
-                    example: closed
-                    description: status
+                    $ref: '#/components/schemas/status'
                   external_reference:
                     type: string
                     example: default
@@ -1530,9 +1490,7 @@ paths:
                           example: item category
                           description: category_id
                         currency_id:
-                          type: string
-                          example: $
-                          description: currency_id
+                          $ref: '#/components/schemas/currency_id'
                         description:
                           type: string
                           example: item description
@@ -1567,9 +1525,7 @@ paths:
                     example: 10000000000000000
                     description: application_id
                   order_status:
-                    type: string
-                    example: payment_required
-                    description: order_status
+                    $ref: '#/components/schemas/order_status'
 
         '400':
           description: Error
@@ -1612,3 +1568,63 @@ paths:
                     enum:
                       - invalid_token--access-denied-
                       - invalid_caller_id--invalid-caller-id
+components:
+  schemas:
+    status:
+      type: string
+      description: Show the current merchant order state.
+      example: closed
+      enum:
+        - opened -- Order without payments.
+        - closed -- Order with payments covering total amount.
+        - expired -- Canceled order that does not have approved or pending payments (all rejected or returned).
+    currency_id:
+      type: string
+      description: ID of the currency used in the payment.
+      example: BRL
+      enum:
+        - ARS -- Argentine peso.
+        - BRL -- Brazil real.
+        - CLP -- Chilean peso.
+        - MXN -- Mexican peso.
+        - COP -- Colombian peso.
+        - PEN -- Peruvian sol.
+        - UYU -- Uruguayan peso.
+    payment_status:
+      type: string
+      description: Payment status.
+      example: approved
+      enum:
+        - pending -- The user has not yet completed the payment process.
+        - approved -- The payment has been approved and accredited.
+        - authorized -- The payment has been authorized but not captured yet.
+        - in_process -- Payment is being reviewed.
+        - in_mediation -- Users have initiated a dispute.
+        - rejected -- Payment was rejected. The user may retry payment.
+        - cancelled -- Payment was cancelled by one of the parties or because time for payment has expired.
+        - refunded -- Payment was refunded to the user.
+        - charged_back -- Was made a chargeback in the buyer's credit card.
+    operation_type:
+      type: string
+      description: Operation data_type.
+      enum:
+        - regular_payment -- Typification by default of a purchase being paid using Mercado Pago.
+        - payment_addition -- Addition of money to an existing payment, made through a Mercado Pago account.
+        - money_transfer -- Funds transfer between two users.
+        - recurring_payment -- Automatic recurring payment due to an active user subscription.
+        - account_fund -- Money income in the user's account.
+        - cellphone_recharge -- Recharge of a user's cellophone account.
+        - pos_payment -- Payment done through a Point of Sale.
+    order_status:
+      type: string
+      description: Current merchant order status given the payments status.
+      example: paid
+      enum:
+        - payment_required -- Order without payments or with all payments "rejected" or "cancelled".
+        - reverted -- Order with all payments "refunded" or "chargeback".
+        - paid -- Order with the sum of all payments "approved", "chargeback" or "in_mediation" covers the order total amount.
+        - partially_reverted -- Order with at least one payment "refunded" or "chargeback".
+        - partially_paid -- Order with at least one payment "approved" and not covering order total amount.
+        - payment_in_process -- Order with payments "in_process", "pending" or "authorized".
+        - undefined -- Order created before the existence of the order_status status.
+        - expired -- Canceled order that does not have approved or pending payments (all rejected or returned).
