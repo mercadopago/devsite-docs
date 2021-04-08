@@ -116,7 +116,7 @@ Elige qué experiencia de compra tendrán tus clientes a la hora de pagar:
 
 | Configuración | Descripción |
 | --- | --- |
-| Vencimiento del PIX | Establece el tiempo de expiración del código que se envía al cliente después de realizar el pedido. Este es el periodo en el que el cliente tendrá que pagar la compra. |
+| Vencimiento PIX | Establece el tiempo de expiración del código que se envía al cliente después de realizar el pedido. Este es el periodo en el que el cliente tendrá que pagar la compra. |
 | Descuentos en Mercado Pago | Habilita esta opción cuando quieras seleccionar un monto porcentual a descontar de tus clientes que pagan con Mercado Pago. |
 | Comisión por compras con Mercado Pago | Habilita esta opción cuando quieras seleccionar un monto adicional para cobrar de tus clientes que pagan con Mercado Pago, como una tasa. |
 ------------
