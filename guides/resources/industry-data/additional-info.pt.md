@@ -4,7 +4,7 @@ Verifique quais campos você pode enviar de acordo com o seu setor para melhorar
 
 > WARNING 
 > 
-> Uso de Exemplos
+> Uso de exemplos
 > 
 > Os curls a seguir funcionam somente para a API de preferências.
 
