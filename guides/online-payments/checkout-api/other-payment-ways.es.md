@@ -3701,8 +3701,9 @@ Para mostrar la opción que te permitirá copiar y pegar el código de pago, pue
 >  * Por defecto, el cliente tiene 24 horas para realizar el pago.
 >  * El código puede ser utilizado una sola vez.
 >  * El código se va a mostrar siempre que esté vigente según la fecha de expiración.
-<br>
 <span></span>
+
+> Si necesitas devolver un pago realizado a través de una transferencia Pix, puedes encontrar esta información en [Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).
 
 
 > SERVER_SIDE
@@ -3962,7 +3963,7 @@ En el campo `external_resource_url` vas a encontrar una dirección que contiene 
 ## Fecha de vencimiento para pagos
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pagos con Pix
-Por defecto, la fecha de vencimiento para los pagos con Pix es de 24 horas. Si quieres, puedes cambiarla enviando el campo `date_of_expiration` en la solicitud de creación de pago. La fecha configurada debe ser entre 1 y 30 días a partir de la fecha de emisión.
+Por defecto, la fecha de vencimiento para los pagos con Pix es de 24 horas. Si quieres, puedes cambiarla enviando el campo `date_of_expiration` en la solicitud de creación de pago. La fecha configurada debe ser entre 30 minutos y hasta 30 días a partir de la fecha de emisión.
 
 [[[
 ```php
