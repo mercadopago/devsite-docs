@@ -13,7 +13,7 @@ Install the payment processor in WooCommerce and take your sales to another leve
 | --- | --- |
 | Installments | Sell in installments and offer the promotions you want. |
 | Money release | Instantly or with the rates and terms that best suit the business. |
-| Payment methods | Accept payments by credit and debit card, ----[mlb]---- PIX,------------ cash and payments with Mercado Pago account money. |
+| Payment methods | Accept payments by credit and debit card, ----[mlb]---- Pix,------------ cash and payments with Mercado Pago account money. |
 | Checkout types | Checkout Pro, Custom Checkout |
 | Payment as a guest | Users don’t need to be registered in Mercado Pago in order to pay in WooCommerce. |
 | Payment refunds | Refund payments directly from the platform. |
