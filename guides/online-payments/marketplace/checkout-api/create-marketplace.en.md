@@ -31,7 +31,7 @@ To operate in Mercado Pago on behalf of your seller, you need to request their a
 
 `http://www.URL_de_retorno.com?code=AUTHORIZATION_CODE`
 
-This `AUTHORIZATION_CODE` must be used to create the credentials that allow you to operate on behalf of the seller. This code will be valid for 10 minutes since its reception.
+This `AUTHORIZATION_CODE` must be used to create the credentials that allow you to operate on behalf of the seller. This code will be valid for 10 minutes since it's reception.
 
 <br>
 2.3. You can also include the `state` parameter in the URL authorization to identify who is responsible for the code you received. Do this in a safe manner and assign a random identifier in the parameter which is unique for each attempt.
