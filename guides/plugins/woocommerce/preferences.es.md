@@ -112,7 +112,7 @@ Elige qué experiencia de compra tendrán tus clientes a la hora de pagar:
 | Reducir inventario | Activa esta opción cuando quieras automatizar la reducción del inventario por cada orden de compra que se aprueba tras un pago con Mercado Pago. |
 
 ----[mlb]----
-#### Pagos con PIX
+#### Pagos con Pix
 
 | Configuración | Descripción |
 | --- | --- |
