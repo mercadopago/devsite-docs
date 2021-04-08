@@ -38,7 +38,7 @@ Con estas opciones de pago cubrimos las necesidades de cada negocio. Revisa las 
 
 | Características | Checkout Pro | Checkout personalizado |
 | --- | --- | --- |
-| Medios de pago | Pagos con tarjetas, ----[mlb]---- PIX,------------ en efectivo y con dinero en cuenta de Mercado Pago. | Pagos con tarjetas de débito y crédito, ----[mlb]---- PIX,------------ boleta de pago o pagos presenciales. |
+| Medios de pago | Pagos con tarjetas, ----[mlb]---- Pix,------------ en efectivo y con dinero en cuenta de Mercado Pago. | Pagos con tarjetas de débito y crédito, ----[mlb]---- PIX,------------ boleto bancario o pagos presenciales. |
 | Experiencia de pago | Tus clientes pagan desde la página de Mercado Pago con un formato redirect (fuera de tu tienda) o modal (dentro de tu tienda). | Tus clientes pagan como invitados sin salir de tu tienda. |
 | Usuarios invitados | Tus clientes pueden pagar con o sin cuenta en Mercado Pago. | Tus clientes pagan como invitados, sin cuenta en Mercado Pago. |
 
