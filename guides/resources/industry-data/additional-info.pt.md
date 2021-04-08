@@ -2,6 +2,12 @@
 
 Verifique quais campos você pode enviar de acordo com o seu setor para melhorar sua aprovação.
 
+> WARNING 
+> 
+> Uso de Exemplos
+> 
+> Os curls a seguir funcionam somente para a API de preferências.
+
 ## Apparel
 
 ### Campos para enviar
