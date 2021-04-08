@@ -9,16 +9,14 @@
 
 Para comenzar debes:
 
-1. Dar de alta una aplicación de tipo _Marketplace_.
+1. Dar de alta una aplicación y luego editar su **Redirect URI**.
 2. Solicitar a tus vendedores que se vinculen.
 3. Crear preferencias de pago en nombre de tus vendedores.
 
 
 ## 1. Cómo crear tu aplicación
 
-[Crea tu aplicación](https://applications.mercadopago.com/), marcando la opción **MP Connect / Marketplace mode** y los **scopes** `read`, `write` y `offline_access`.
-
-También debes completar una **Redirect URI** donde serán redireccionados los vendedores para poder ser vinculados correctamente.
+[Crea tu aplicación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel), y luego edita su configuración avanzada completando la **Redirect URI** donde serán redireccionados los vendedores al finalizar el proceso de vinculación.
 
 Una vez creada, obtendrás el `APP_ID` (identificador de aplicación) necesario para el siguiente paso.
 
@@ -26,16 +24,16 @@ Una vez creada, obtendrás el `APP_ID` (identificador de aplicación) necesario 
 
 Para operar en Mercado Pago en nombre de tu vendedor, debes primero solicitarle autorización.
 
-2.1. Para esto, redirige al usuario a la siguiente URL reemplazando en `client_id`, el valor de `APP_ID` y la misma `redirect_uri` que configuraste en el paso anterior:
+2.1. Para esto, redirige al vendedor a la siguiente URL reemplazando en `client_id`, el valor de `APP_ID` y la misma `redirect_uri` que configuraste en el paso anterior:
 
 `https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http://www.URL_de_retorno.com`
 
 <br>
-2.2. Recibirás el código de autorización en la URL que especificaste:
+2.2. Cuando el vendedor acepte, se hará una última redirección y recibirás el código de autorización en la URL que especificaste:
 
 `http://www.URL_de_retorno.com?code=AUTHORIZATION_CODE`
 
-El `AUTHORIZATION_CODE` será utilizado para crear las credenciales y tiene un tiempo de validez de 10 minutos.
+El `AUTHORIZATION_CODE` tiene un tiempo de validez de 10 minutos y deberá ser utilizado para crear las credenciales que te permitan operar en nombre del vendedor.
 
 <br>
 2.3. También puedes incluir el parámetro `state` en la URL de autorización para identificar a quién corresponde el código que recibiste. Realiza esto de manera segura, asignando en dicho parámetro un identificador aleatorio que sea único por cada intento.
