@@ -8,15 +8,13 @@
 
 To begin, you need to:
 
-1. Register a Marketplace application.
+1. Register an application and then edit its **Redirect URI**.
 2. Request your sellers to connect.
 3. Create payment preferences on behalf of your sellers.
 
 ## 1. How to create your application
 
-Create your application by accessing [this link](https://applications.mercadopago.com/), checking the option **MP Connect / Marketplace Mode** and the scopes `read`, `write` and `offline_access`.
-
-You must also complete a **Redirect URI** where the sellers will be redirected in order to be linked correctly.
+Create your application by accessing [this link](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel), then edit its settings and complete the **Redirect URI** where the sellers will be redirected in order to be linked correctly.
 
 Once the application has been created, you will get the `APP_ID` (application identifier) required for the next step.
 
@@ -29,11 +27,11 @@ To operate in Mercado Pago on behalf of your seller, you need to request their a
 `https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http://www.URL_de_retorno.com`
 
 <br>
-2.2. You'll receive the authorization code in the URL that you specified:
+2.2. When the seller accepts, a last redirect is made and you will receive the authorization code in the URL that you specified:
 
 `http://www.URL_de_retorno.com?code=AUTHORIZATION_CODE`
 
-This `AUTHORIZATION_CODE` will be used to create the credentials and will be valid for 10 minutes.
+This `AUTHORIZATION_CODE` must be used to create the credentials that allow you to operate on behalf of the seller. This code will be valid for 10 minutes since it's reception.
 
 <br>
 2.3. You can also include the `state` parameter in the URL authorization to identify who is responsible for the code you received. Do this in a safe manner and assign a random identifier in the parameter which is unique for each attempt.
