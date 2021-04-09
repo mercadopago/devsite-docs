@@ -172,18 +172,25 @@ Respuesta del Servidor:
 
 ## Recibir un pago de un Customer
 
-Para que puedas recibir un pago utilizando una tarjeta almacenada, es necesario incluir en el código HTML el ID del customer y los IDs de las tarjetas del usuario a través de los atributos `data-customer-id` y `data-card-ids`. Por ejemplo:
+Para que puedas recibir un pago utilizando una tarjeta almacenada, es necesario incluir en el código de integración el ID del customer y los ID de las tarjetas del usuario a través de los atributos `customerId` y `cardIds` dentro del parámetro `savedCards`. Por ejemplo:
 
 ```html
-<form action="/procesar-pago" method="POST">
-  <script
-    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
-    data-public-key="ENV_PUBLIC_KEY"
-    data-transaction-amount="100.00"
-    data-customer-id="209277402-FqRqgEc3XItrxs"
-    data-card-ids="1518023392627,1518023332143">
-  </script>
-</form>
+<script>
+  mp.checkout({
+    tokenizer: {
+        totalAmount: 4000,
+        backUrl: 'https://www.mi-sitio.com/process',
+        savedCards: {
+            cardIds: '1518023392627,1518023332143' // ids de las tarjetas
+            customerId: '209277402-FqRqgEc3XItrxs' // tu customer id
+        }
+    },
+    render: {
+        container: ‘.tokenizer-container’,
+        label: ‘Pagar’
+    }
+  });
+</script>
 ```
 
 > NOTE
