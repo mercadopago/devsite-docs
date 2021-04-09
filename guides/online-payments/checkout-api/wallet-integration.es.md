@@ -206,12 +206,27 @@ Luego, desde tu frontend, agrega el siguiente código para mostrar el botón de 
 </script>
 ```
 ```node
-<script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-  data-preference-id="<%= global.id %>"
-  data-button-label="Pagar con Mercado Pago"
-  data-button-type="wallet">
+// SDK client side Mercado Pago
+<script src="https://sdk.mercadopago.com/js/v2"></script>    
+<script>
+// Agrega credenciales de SDK 
+const mp = new MercadoPago('PUBLIC_KEY', {
+      locale: 'es-AR'
+});
+
+// Inicializa el checkout 
+mp.checkout({
+    preference: {
+      id: '239656545-89accc4d-3fc9-4835-828b-b8fa16b2fdce'
+    },
+    render: {
+      container: '.cho-container', // Indica dónde se mostrará el botón de pago
+      label: 'Pagar con Mercado Pago', // Cambia el texto del botón de pago (opcional)
+      type: 'wallet', // Aplica el branding de Mercado Pago al botón
+    }
+});
 </script>
+
 ```
 ```java
 <script
