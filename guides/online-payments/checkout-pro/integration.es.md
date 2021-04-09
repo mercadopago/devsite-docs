@@ -24,7 +24,13 @@ Usa los [ejemplos descargables](#bookmark_ejemplos_descargables) para conocer la
 
 Instalar el Checkout Pro consta de dos pasos:
 
-### 1. Genera tu preferencia 
+<span></span>
+
+> SERVER_SIDE
+>
+> h3
+>
+> &nbsp;1. Genera tu preferencia
 
 Desde tu backend, escribe el siguiente código que consta de dos partes: 
 
@@ -411,7 +417,14 @@ curl -X POST \
 >
 > Si quieres aceptar pagos únicamente de usuarios registrados, con tarjetas y dinero en cuenta de Mercado Pago, ingresa en [esta sección](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations/#bookmark_aceptar_pagos_únicamente_de_usuarios_registrados) para más información. 
 
-### 2. Suma el Checkout Pro a tu sitio
+<span></span>
+
+> CLIENT_SIDE
+>
+> h3
+>
+> &nbsp;2. Suma el Checkout Pro a tu sitio
+
 
 Ahora desde tu frontend, sigue estos pasos para poder sumar el checkout a tu sitio: 
 
