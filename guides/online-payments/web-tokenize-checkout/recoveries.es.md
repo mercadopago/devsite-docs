@@ -34,17 +34,7 @@ Por ejemplo:
 
 Otra posibilidad, en caso de que un pago fuese rechazado, es invocar al *Web Tokenize Checkout* con el formulario ya abierto en el contexto donde originalmente el usuario cargó los datos.
 
-La opción de abrir el checkout por defecto es controlada desde el atributo `data-open` y sólo es cuestión de setear el atributo en `true`.
+La opción de abrir el checkout por defecto es controlada desde el atributo `autoOpen` y sólo es cuestión de setear el atributo en `true`.
 
-Por ejemplo:
+Puedes encontrar más información sobre cómo configurar la apertura automática del checkout desde la [sección de Personalizaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/web-tokenize-checkout/personalization#bookmark_apertura_del_web_tokenize_checkout)
 
-```html
-<form action="/procesar-pago" method="POST">
-  <script
-    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
-    data-public-key="ENV_PUBLIC_KEY"
-    data-transaction-amount="100.00"
-    data-open="true"> <!-- Abierto por defecto -->
-  </script>
-</form>
-```

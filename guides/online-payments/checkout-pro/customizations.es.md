@@ -243,8 +243,8 @@ theme: {
 
 #### Color del texto
 
-El color del texto de los botones y encabezado, será determinado automáticamente dependiendo del [contraste](https://24ways.org/2010/calculating-color-contrast) del color definido.
-Para un color de elemento claro, el color del texto será negro o #000. Por ejemplo:
+El color del texto de los botones y encabezado, **será determinado automáticamente** dependiendo del [contraste](https://24ways.org/2010/calculating-color-contrast) del color definido.
+Para un color de elemento *claro*, el color del texto será *negro* o `#000`. Por ejemplo:
 
 ```node
 theme: {
@@ -254,7 +254,7 @@ theme: {
 
 ![Light Color Button](/images/web-payment-checkout/light_color_button.png)
 
-<br/>Para un color de elementos oscuro, el color del texto será blanco o #fff. Por ejemplo:
+<br/>Para un color de elementos *oscuro*, el color del texto será *blanco* o `#fff`. Por ejemplo:
 
 ```node
 theme: {
