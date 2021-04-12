@@ -50,7 +50,7 @@ Se quiser saber mais sobre o **Mercado Pago** acesse nossa [página principal](h
 
 ![Xtech Configuration Page](/images/xtech/xtech_config04.png)
 
-O Mercado pago está instalado porém **desativado**, siga os passos abaixo para realizar as configurações do módulo.
+O Mercado Pago está instalado porém **desativado**, siga os passos abaixo para realizar as configurações do módulo.
 
 ### Configurando o Mercado Pago
 
