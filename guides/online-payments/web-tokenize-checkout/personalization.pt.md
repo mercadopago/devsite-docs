@@ -16,7 +16,7 @@ Por padrão o botão contém o texto *"Pagar"*. Você pode modificar o texto do 
 data-button-label="Comprar"
 ```
 
-![Payment button mercado pago - modified label](/images/paybutton-modified-label.png)
+![Payment button Mercado Pago - modified label](/images/paybutton-modified-label.png)
 
 #### Estilo
 
