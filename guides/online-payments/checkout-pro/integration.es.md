@@ -107,14 +107,6 @@ $preference->save();
 ?>
 ```
 ```node
-// SDK de Mercado Pago
-const mercadopago = require ('mercadopago');
-
-// Agrega credenciales
-mercadopago.configure({
-  access_token: 'PROD_ACCESS_TOKEN'
-});
-
 // Crea un objeto de preferencia
 let preference = {
   items: [
@@ -135,12 +127,6 @@ mercadopago.preferences.create(preference)
 });
 ```
 ```java
-// SDK de Mercado Pago
-import com.mercadopago.MercadoPago;
-
-// Agrega credenciales
-MercadoPago.SDK.setAccessToken("PROD_ACCESS_TOKEN");
-
 // Crea un objeto de preferencia
 Preference preference = new Preference();
 

@@ -9,16 +9,17 @@ Puedes personalizar de qué forma abrir el checkout a través de funciones y atr
 Usa el método `open` para <b>abrir el checkout sin mostrar el botón de pago</b>. Esto te permite conectarlo al elemento de tu página web desde el que prefieras realizar la apertura del Checkout Pro. 
 
 [[[
-```node
-// Inicializa el checkout 
+```html
+<!-- Inicializa el checkout -->
+<script>
 const checkout = mp.checkout({
   preference: {
       id: '239656545-89accc4d-3fc9-4835-828b-b8fa16b2fdce'
   }
 });
-(...)
-// Llama a la función ‘open’ desde el elemento de tu página que desees
-// Por ejemplo: un radio button
+</script>
+<!-- Llama a la función ‘open’ desde el elemento de tu página que desees -->
+<!-- Por ejemplo: un radio button --> 
 <input type="radio" id="checkout-open-radio" onclick="checkout.open()">
 ```
 ]]]
@@ -193,7 +194,7 @@ Redirige al 'init_point' de la preferencia
 Agrega el atributo `theme` de la siguiente manera a las opciones de inicialización para personalizar el color de algunos elementos y el encabezado de la interfaz del checkout. 
 
 [[[
-```node
+```html
 <script>
   mp.checkout({
     preference: {...},
@@ -215,7 +216,7 @@ Agrega el atributo `theme` de la siguiente manera a las opciones de inicializaci
 ### Encabezado
 Modifica el color del encabezado agregando el atributo `headerColor` al objeto `theme`. El valor del atributo deberá ser en formato hexadecimal. Por ejemplo:
 [[[
-```node
+```javascript
 theme: {
   headerColor: '#c0392b'
 }```
@@ -232,7 +233,7 @@ Los elementos que puedes personalizar son:
 
 Modifica el color de esos elementos agregando el atributo `elementsColor ` al objeto `theme`. El valor del atributo debe estar en formato hexadecimal. Por ejemplo:
 
-```node
+```javascript
 theme: {
   elementsColor: '#c0392b'
 }
@@ -246,7 +247,7 @@ theme: {
 El color del texto de los botones y encabezado, **será determinado automáticamente** dependiendo del [contraste](https://24ways.org/2010/calculating-color-contrast) del color definido.
 Para un color de elemento *claro*, el color del texto será *negro* o `#000`. Por ejemplo:
 
-```node
+```javascript
 theme: {
     elementsColor: '#81ecec' // Color claro
 }
@@ -256,7 +257,7 @@ theme: {
 
 <br/>Para un color de elementos *oscuro*, el color del texto será *blanco* o `#fff`. Por ejemplo:
 
-```node
+```javascript
 theme: {
     elementsColor: '#8e44ad' // Color oscuro
 }
