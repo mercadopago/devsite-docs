@@ -446,7 +446,7 @@ Ahora desde tu frontend, sigue estos pasos para poder sumar el checkout a tu sit
 2.2. Agrega las credenciales de la SDK para su uso e inicializa tu checkout con el ID de la preferencia creada previamente y el identificador del elemento donde deberá mostrarse el botón de pago.
 
 [[[
-```node
+```html
 <script>
 // Agrega credenciales de SDK 
   const mp = new MercadoPago('PUBLIC_KEY', {

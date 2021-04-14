@@ -11,7 +11,7 @@ Puedes personalizar de qué forma abrir el checkout a través de funciones y atr
 Usa el método `open` para <b>abrir el checkout sin mostrar el botón de pago</b>. Esto te permite conectarlo al elemento de tu página web desde el que prefieras realizar la apertura del Web Tokenize Checkout. 
 
 [[[
-```node
+```javascript
 // Inicializa el checkout
 const checkout = mp.checkout({
   tokenizer: {
@@ -42,9 +42,9 @@ Puedes utilizar este método de dos formas distintas:
 * Invocando a la función `render` posteriormente, desde el lugar que prefieras dentro de tu código, con sus respectivos parámetros.
 
 [[[
-  ```node
+  ```javascript
  // Dentro de las opciones de inicialización 
-mp.checkout({
+const checkout = mp.checkout({
 tokenizer: {
   totalAmount: 4000,
   backUrl: 'https://www.mi-sitio.com/process'
@@ -56,7 +56,7 @@ render: {
 });
 
 // Invocando la función posteriormente
-mp.checkout.render({
+checkout.render({
   container: '.tokenizer-container',
   label: 'Pagar'
 });
@@ -97,7 +97,7 @@ button.mercadopago-button {
 Añade el parámetro `autoOpen` a tus opciones de inicialización del checkout en tu integración para <b>mostrar automáticamente el Web Tokenize Checkout</b>, sin necesitar de la interacción con un botón u otro elemento para su apertura.
 
 [[[
-```node
+```javascript
 // Inicializa el checkout 
 const checkout = mp.checkout({
   tokenizer: {
@@ -114,7 +114,7 @@ const checkout = mp.checkout({
 Agrega el atributo `theme` de la siguiente manera a las opciones de inicialización para personalizar el color de algunos elementos y el encabezado de la interfaz del checkout. 
 
 [[[
-```node
+```html
 <script>
   mp.checkout({
     tokenizer: {...},
@@ -138,7 +138,7 @@ Agrega el atributo `theme` de la siguiente manera a las opciones de inicializaci
 
 Modifica el color del encabezado agregando el atributo `headerColor` al objeto `theme`. El valor del atributo deberá ser en formato hexadecimal. Por ejemplo:
 [[[
-```node
+```javascript
 theme: {
   headerColor: '#c0392b'
 }```
@@ -163,7 +163,7 @@ Los elementos que puedes personalizar son:
 
 Modifica el color de esos elementos agregando el atributo `elementsColor ` al objeto `theme`. El valor del atributo debe estar en formato hexadecimal. Por ejemplo:
 
-```node
+```javascript
 theme: {
   elementsColor: '#c0392b'
 }
@@ -178,7 +178,7 @@ El color del texto de los botones y encabezado, **será determinado automáticam
 
 Para un color de elemento *claro*, el color del texto será *negro* o `#000`. Por ejemplo:
 
-```node
+```javascript
 theme: {
     elementsColor: '#81ecec' // Color claro
 }
@@ -188,7 +188,7 @@ theme: {
 
 Para un color de elementos *oscuro*, el color del texto será *blanco* o `#fff`. Por ejemplo:
 
-```node
+```javascript
 theme: {
     elementsColor: '#8e44ad' // Color oscuro
 }
@@ -208,7 +208,7 @@ theme: {
 Puedes agregar y modificar elementos al detalle de la compra sumando el atributo `summary` dentro del objeto `tokenizer` en tus configuraciones de inicialización de la siguiente manera: 
 
 [[[
-  ```node
+  ```javascript
 mp.checkout({
   tokenizer: {
       …
@@ -235,7 +235,7 @@ Los atributos que pueden agregarse y modificarse son los siguientes:
 
 Con  el atributo `productLabel` puedes especificar el texto que aparece como *"Productos"* en el detalle de la compra. Por ejemplo, puedes agregar el detalle de lo que se está pagando:
 
-```node
+```javascript
 summary: {
      productLabel: ‘4 productos’
 }
@@ -243,7 +243,7 @@ summary: {
 
 Mediante el atributo `product` puedes especificar el monto en el detalle de la compra. Por ejemplo:
 
-```node
+```javascript
 summary: {
      product: 654
 }
@@ -253,16 +253,15 @@ summary: {
 
 Personaliza los límites de cuotas sumando el atributo `installments` dentro del objeto tokenizer en tus configuraciones de inicialización, y agregando `minInstallments` o `maxInstallments` para establecer la cantidad mínima y máxima de cuotas respectivamente. Por ejemplo: 
 
-```node
+```javascript
 mp.checkout({
-tokenizer: {
-    …
+  tokenizer: {
     installments: {
         minInstallments: 1,
         maxInstallments: 12,
     }, 
-},
-render: {...},
+  },
+  render: {...},
 });
 ```
 
@@ -273,7 +272,7 @@ render: {...},
 
 Usa el atributo `discountLabel` para  especificar el texto que aparece como *"Descuento"* en el detalle de la compra. Por ejemplo, puedes agregar el porcentaje de descuento:
 
-```node
+```javascript
 summary: {
      discountLabel: ‘Descuento 10%’
 }
@@ -281,7 +280,7 @@ summary: {
 
 Mediante el atributo `discount`, agrega el monto de descuento en el detalle de la compra. Por ejemplo:
 
-```node
+```javascript
 summary: {
      discount: 70
 }
@@ -298,7 +297,7 @@ summary: {
 
 Con el atributo `shipping` puedes especificar el monto de envío en el detalle de la compra. Por ejemplo:
 
-```node
+```javascript
 summary: {
      shipping: 100
 }
@@ -315,7 +314,7 @@ summary: {
 
 Usa el atributo `charge` para especificar el monto de recargos en el detalle de la compra. Por ejemplo:
 
-```node
+```javascript
 summary: {
       charge: 10
 }
@@ -328,7 +327,7 @@ Aparecerá en el detalle de la compra bajo el concepto de *"Recargos"*.
 
 Con el atributo `taxes` puedes especificar el monto de impuestos en el detalle de la compra. Por ejemplo:
 
-```node
+```javascript
 summary: {
       taxes: 10
 }
@@ -340,7 +339,7 @@ Aparecerá en el detalle de la compra bajo el concepto de *"Impuestos"*.
 
 Agrega el atributo `arrears` para especificar el monto de saldo pendiente en el detalle de la compra. Por ejemplo:
 
-```node
+```javascript
 summary: {
       arrears: 10
 }

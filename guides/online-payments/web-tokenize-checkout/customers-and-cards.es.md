@@ -269,19 +269,26 @@ Con esta información de tarjetas puedes invocar el *Web Tokenize Checkout*.
 Por ejemplo:
 
 ```html
-<form action="/procesar-pago" method="POST">
-  <script
-    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
-    data-public-key="ENV_PUBLIC_KEY"
-    data-transaction-amount="100.00"
-    data-customer-id="209277402-FqRqgEc3XItrxs"
-    data-card-ids="<?php
-      foreach ($cards["response"] as $card) {
-        echo $card["id"];
-      }
-    ?>">
-  </script>
-</form>
+<script>
+// obtén los ids de las cards obtenidas al llamar a la api en el paso anterior
+  const customerCardIds = cardsResponse.map(card => card.id); 
+
+// inicializa  el checkout
+  mp.checkout({
+    tokenizer: {
+        totalAmount: 4000,
+        backUrl: 'https://www.mi-sitio.com/process',
+        savedCards: {
+            cardIds: customerCardIds, // cardIds obtenidos
+            customerId: '209277402-FqRqgEc3XItrxs' // tu customer id
+        }
+    },
+    render: {
+        container: ‘.tokenizer-container’,
+        label: ‘Pagar’
+    }
+  });
+</script>
 ```
 
 

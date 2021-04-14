@@ -40,7 +40,7 @@ Puedes utilizar este método de dos formas distintas:
 * Invocando a la función `render` posteriormente, desde el lugar que prefieras dentro de tu código, con sus respectivos parámetros.
 
 [[[
-  ```node
+  ```javascript
  // Dentro de las opciones de inicialización 
 mp.checkout({
    preference: {
@@ -72,7 +72,7 @@ mp.checkout.render({
 Añade el parámetro `autoOpen` a tus opciones de inicialización del checkout en tu integración para <b>mostrar automáticamente el Checkout Pro</b>, sin necesitar de la interacción con un botón u otro elemento para su apertura.
 
 [[[
-```node
+```javascript
 // Inicializa el checkout 
 const checkout = mp.checkout({
   preference: {
