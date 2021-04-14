@@ -34,6 +34,26 @@ Integra Checkout API más simple y rápido con la nueva funcionalidad CardForm, 
 
 > CHANGELOG
 >
+> Nueva versión Magento 2
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: MAGENTO 2
+
+Lanzamos la nueva versión 3.8.0 para Magento 2.
+
+[Ir a documentación de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.0).
+
+### 29 de marzo
+
+> CHANGELOG
+>
 > Nueva versión WooCommerce
 >
 > NEW_VERSION: NUEVA VERSIÓN

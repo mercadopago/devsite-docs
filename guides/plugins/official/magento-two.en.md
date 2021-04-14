@@ -65,9 +65,9 @@ This process will explain the installation of the Mercado Pago module via Compos
 6) Very Good! The module of Mercado Pago was successfully installed.
 
 
-## Credit Card and Ticket Configuration (Custom Checkout)
+## Credit Card----[mlb]----, PIX------------ and Ticket Configuration (Custom Checkout)
 
-This process will explain how to configure the module to accept payments with Checkout Custom with Credit Card and Tickets:
+Here is how to set up the module to accept Credit Car ----[mlb]----, PIX------------ and Boleto payments in Custom Checkout (Transparent).
 
 1) Go to **Stores > Configuration > Sales > Payment Methods**.
 
@@ -76,12 +76,32 @@ This process will explain how to configure the module to accept payments with Ch
 > There are two types of credentials:
 > * Trial credentials: The credentials in this way are used for testing.
 > * Productive credentials: The credentials in this way are used to receive payments in production. To use the credentials of the production mode you must activate your credentials.
+> * Find all the information about your credentials in our [frequently asked questions](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/faqs/credentials/).
 
-3) With your credentials filled, you need to enable payment methods. Go to **Custom Checkout - Credit And Debit Card**, click in **Configure** and check **Enable** as **Yes**. Make this process for **Custom Checkout - Offline Payments Methods (Ticket)** too and then click on **Save Config**.
+3) With your credentials filled, you need to enable payment methods.
+First, access the method that you want to enable.
+
+To enable payments via credit card > **Checkout - Credit and Debit Card**.
+To enable payments via ticket > C**ustom Checkout - Offline Payment Methods (Ticket)**.
+----[mlb]----To enable payments via PIX  > **Custom Checkout - PIX**.------------
+
+----[mlb]----
+> WARNING
+>
+> Important
+>
+> **Before setting up PIX as a payment method, remember to:**
+>
+> - [Download the latest version](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) to update your Mercado Pago plugin.
+>
+> - Register your key in Mercado Pago. If this is not done, your customers will not be able to finalize the purchase. [See how to do it](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required).
+------------
+
+Once logged in, click on the button **Configure** to view the configuration options. Select the options as you prefer and mark the **Enabled** field as **Yes**. Then click **Save Config**.
 
 ![Mercado Pago Custom Checkout Configuration](images/magento2/mercadopago_custom_checkout_configuration.png)
 
-4) Very good! The Checkout Custom with Credit Card and Ticket has been configured and enabled successfully!
+4) That's it! The payment method will be successfully enabled in the checkout!
 
 
 ## Basic Checkout Configuration

@@ -45,25 +45,43 @@ Este proceso explicará la instalación del módulo Mercado Pago vía Composer:
 6) ¡Listo! El módulo del Mercado Pago fue instalado con éxito.
 
 
-## Configuración de la tarjeta de crédito y tickets (Custom Checkout)
+## Configuración de la tarjeta de crédito----[mlb]----, PIX------------ y tickets (Custom Checkout)
 
-Este proceso explicará cómo configurar el módulo para aceptar pagos con Checkout Personalizado con tarjeta de crédito y tickets:
+Aprende el proceso paso a paso para configurar el módulo para aceptar pagos a través de Tarjeta de Crédito----[mlb]----, PIX------------ y Ticket en Custom Checkout (Transparente). 
 
 1) Vaya al menú **Stores > Configuration > Sales > Payment Methods**:
 
 2) Para configurar las credenciales acceda a la opción **Mercado Pago** > **Credenciales**, aparecerá el campo **Public key** y el campo **Access token**. Obtén tus credenciales en la sección [Credenciales]([FAKER][CREDENTIALS][URL]).
 
-
 > Existen dos tipos de credenciales:
 > * Modo Sandbox: Las credenciales de este modo se utilizan para realizar pruebas.
 > * Modo Producción: Las credenciales de este modo se utilizan para recibir los pagos en Producción. Para utilizar las credenciales del modo de producción debe activar tus credenciales.
-> * Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials).
+> * Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials/).
 
-3) Con las credenciales completadas, debe habilitar los métodos de pago. Acceda a la opción **Checkout Custom - Credit And Debit Card**, haga un clic en el botón **Configure** y marque la opción **Enable** como **Yes**. Siga este proceso para ** Checkout Custom - Credit And Debit Card** y para **Checkout Custom - Offline Payment Methods (Ticket)** haga un clic en **Save Config** para guardar la configuración.
+3) Con las credenciales completadas, el siguiente paso es habilitar los métodos de pago.
+En primer lugar, ve al método que quieres habilitar.
+
+Para habilitar pagos con tarjeta > **Checkout - Credit and Debit Card**.
+Para habilitar pagos con ticket > **Custom Checkout - Offline Payment Methods (Ticket)**.
+----[mlb]----Para habilitar pagos con PIX  > **Custom Checkout - PIX**.------------
+
+----[mlb]----
+> WARNING
+>
+> Importante
+>
+> **Antes de configurar el PIX como método de pago, recuerda hacer esto:**
+>
+> - [Descarga la última versión](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) para actualizar tu plugin de Mercado Pago.
+>
+> - Registra tu clave en Mercado Pago. Si no lo haces, tus clientes no podrán finalizar la compra. [Aprende a hacerlo](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required).
+------------
+
+Al acceder, haz clic en el botón **Configure** para ver las opciones de configuración. Selecciona las opciones que prefieras y marca el campo **Enabled** como **Yes**. A continuación, haz clic en **Save Config**.
 
 ![Mercado Pago Custom Checkout Configuration](images/magento2/mercadopago_custom_checkout_configuration.png)
 
-4) ¡Listo! El Checkout Custom con Tarjeta de crédito y Ticket ha sido configurado y habilitado con éxito!
+4) ¡Listo! El método de pago se habilitará correctamente en el checkout.
 
 
 ## Configuración de Basic Checkout
