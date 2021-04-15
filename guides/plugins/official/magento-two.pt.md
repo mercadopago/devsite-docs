@@ -20,7 +20,7 @@
 
 O módulo do Mercado Pago para o Magento esta integrado com as seguintes funcionalidades e soluções de pagamento:
 
-* [Checkout básico (Checkout Pro)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction)
+* [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction)
     * [Pagamento com dois cartões](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_pagamentos_com_2_cartão_de_crédito)
     * [Devolução de Pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds)
 
@@ -104,7 +104,7 @@ Ao acessar, clique no botão **Configure** para visualizar as opções de config
 4) Pronto! O meio de pagamento será habilitado com sucesso no checkout!
 
 
-## Configurações de Basic Checkout
+## Configurações do Checkout Pro
 
 Esse processo irá explicar como configurar o módulo para aceitar pagamentos com o Checkout Clássico no Redirect, Iframe ou Lightbox:
 

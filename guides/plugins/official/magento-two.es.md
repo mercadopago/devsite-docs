@@ -84,9 +84,9 @@ Al acceder, haz clic en el botón **Configure** para ver las opciones de configu
 4) ¡Listo! El método de pago se habilitará correctamente en el checkout.
 
 
-## Configuración de Basic Checkout
+## Configuración del Checkout Pro
 
-Este proceso explicará cómo configurar el módulo para aceptar pagos con el Checkout Básico en Redirect, Iframe o Lightbox:
+Este proceso explicará cómo configurar el módulo para aceptar pagos con el Checkout Pro en Redirect, Iframe o Lightbox:
 
 1) Vaya al menú **Stores > Configuration > Sales > Payment Methods**.
 
@@ -96,7 +96,7 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con el Ch
 
 ![Checkout Pro Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
 
-4) ¡Listo! El Checkout Básico ha sido configurado y habilitado con éxito!
+4) ¡Listo! El Checkout Pro ha sido configurado y habilitado con éxito!
 
 
 ## Configuración de estado de las notificaciones de Pago

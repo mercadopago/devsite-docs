@@ -20,7 +20,7 @@
 
 The module of Mercado Pago to Magento is integrated with the features and payment solutions:
 
-* [Basic Checkout (Checkout Pro)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction)
+* [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction)
     * [Split payments (Two cards)](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations/#bookmark_payments_with_two_credit_cards)
     * [Refunds of Payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds)
 
@@ -104,9 +104,9 @@ Once logged in, click on the button **Configure** to view the configuration opti
 4) That's it! The payment method will be successfully enabled in the checkout!
 
 
-## Basic Checkout Configuration
+## Checkout Pro Configuration
 
-This process will explain how to configure the module to accept payments with Basic Checkout in Redirect, Iframe or Lightbox:
+This process will explain how to configure the module to accept payments with Checkout Pro in Redirect, Iframe or Lightbox:
 
 1) Go to **Stores > Configuration > Sales > Payment Methods**.
 
@@ -116,7 +116,7 @@ This process will explain how to configure the module to accept payments with Ba
 
 ![Checkout Pro Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
 
-4) Very good! The Basic Checkout with Credit Card and Ticket has been configured and enable successfully!
+4) Very good! The Checkout Pro with Credit Card and Ticket has been configured and enable successfully!
 
 
 ## Payment Notification status settings
