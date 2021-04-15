@@ -192,7 +192,7 @@ También puede resultar rechazada o quedar pendiente. Ten en cuenta que los fond
 > * La reserva tendrá una validez de 7 días. Si no la capturas hasta ese momento, será cancelada.
 > * Debes guardar el ID del pago para poder finalizar el proceso.
 ------------
-----[mlpe]----
+----[mpe]----
 > WARNING
 >
 > Importante
