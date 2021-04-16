@@ -1,6 +1,6 @@
 # Recibir un pago con tarjeta
 
-Con Mercado Pago puedes capturar los datos de la tarjeta de forma segura a través del Tokenizer.
+Con Mercado Pago puedes capturar los datos de la tarjeta de forma segura a través del Web Tokenize Checkout.
 
 
 ### Paso 1: Incorporar datos del viewport

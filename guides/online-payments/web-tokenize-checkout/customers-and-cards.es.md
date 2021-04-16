@@ -270,7 +270,7 @@ Por ejemplo:
 
 ```html
 <script>
-// obtén los ids de las cards obtenidas al llamar a la api en el paso anterior
+// obtén los IDs de las cards obtenidas al llamar a la api en el paso anterior
   const customerCardIds = cardsResponse.map(card => card.id); 
 
 // inicializa  el checkout

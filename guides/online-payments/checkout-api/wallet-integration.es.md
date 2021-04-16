@@ -198,11 +198,27 @@ Luego, desde tu frontend, agrega el siguiente código para mostrar el botón de 
 
 [[[
 ```php
-<script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-  data-preference-id="<?php echo $preference->id; ?>"
-  data-button-label="Pagar con Mercado Pago"
-  data-button-type="wallet">
+// SDK client side Mercado Pago
+<script src="https://sdk.mercadopago.com/js/v2"></script>    
+<script>
+// Agrega credenciales de SDK 
+const mp = new MercadoPago('PUBLIC_KEY', {
+      locale: 'es-AR'
+});
+
+const preferenceId = "<?php echo $preference->id; ?>"
+
+// Inicializa el checkout 
+mp.checkout({
+    preference: {
+      id: 'YOUR_PREFERENCE_ID'
+    },
+    render: {
+      container: '.cho-container', // Indica dónde se mostrará el botón de pago
+      label: 'Pagar con Mercado Pago', // Cambia el texto del botón de pago (opcional)
+      type: 'wallet', // Aplica el branding de Mercado Pago al botón
+    }
+});
 </script>
 ```
 ```node
@@ -217,7 +233,7 @@ const mp = new MercadoPago('PUBLIC_KEY', {
 // Inicializa el checkout 
 mp.checkout({
     preference: {
-      id: '239656545-89accc4d-3fc9-4835-828b-b8fa16b2fdce'
+      id: 'YOUR_PREFERENCE_ID'
     },
     render: {
       container: '.cho-container', // Indica dónde se mostrará el botón de pago
@@ -229,35 +245,99 @@ mp.checkout({
 
 ```
 ```java
-<script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-  data-preference-id="${preference.id}"
-  data-button-label="Pagar con Mercado Pago"
-  data-button-type="wallet">
+// SDK client side Mercado Pago
+<script src="https://sdk.mercadopago.com/js/v2"></script>    
+<script>
+// Agrega credenciales de SDK 
+const mp = new MercadoPago('PUBLIC_KEY', {
+      locale: 'es-AR'
+});
+
+const preferenceId = ${preference.id};
+
+// Inicializa el checkout 
+mp.checkout({
+    preference: {
+      id: 'YOUR_PREFERENCE_ID'
+    },
+    render: {
+      container: '.cho-container', // Indica dónde se mostrará el botón de pago
+      label: 'Pagar con Mercado Pago', // Cambia el texto del botón de pago (opcional)
+      type: 'wallet', // Aplica el branding de Mercado Pago al botón
+    }
+});
 </script>
 ```
 ```ruby
-<script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-  data-preference-id="<%= @preference_id %>"
-  data-button-label="Pagar con Mercado Pago"
-  data-button-type="wallet">
+# SDK client side Mercado Pago
+<script src="https://sdk.mercadopago.com/js/v2"></script>    
+<script>
+# Agrega credenciales de SDK 
+const mp = new MercadoPago('PUBLIC_KEY', {
+      locale: 'es-AR'
+});
+
+const preferenceId = "<%= @preference_id %>";
+
+# Inicializa el checkout 
+mp.checkout({
+    preference: {
+      id: 'YOUR_PREFERENCE_ID'
+    },
+    render: {
+      container: '.cho-container', # Indica dónde se mostrará el botón de pago
+      label: 'Pagar con Mercado Pago', # Cambia el texto del botón de pago (opcional)
+      type: 'wallet', # Aplica el branding de Mercado Pago al botón
+    }
+});
 </script>
 ```
 ```csharp
-<script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-  data-preference-id="@Html.DisplayFor(model => model.id)"
-  data-button-label="Pagar con Mercado Pago"
-  data-button-type="wallet">
+// SDK client side Mercado Pago
+<script src="https://sdk.mercadopago.com/js/v2"></script>    
+<script>
+// Agrega credenciales de SDK 
+const mp = new MercadoPago('PUBLIC_KEY', {
+      locale: 'es-AR'
+});
+
+const preferenceId = @Html.DisplayFor(model => model.id);
+
+// Inicializa el checkout 
+mp.checkout({
+    preference: {
+      id: 'YOUR_PREFERENCE_ID'
+    },
+    render: {
+      container: '.cho-container', // Indica dónde se mostrará el botón de pago
+      label: 'Pagar con Mercado Pago', // Cambia el texto del botón de pago (opcional)
+      type: 'wallet', // Aplica el branding de Mercado Pago al botón
+    }
+});
 </script>
 ```
 ```python
-<script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-  data-preference-id="{{ preference_id }}"
-  data-button-label="Pagar con Mercado Pago"
-  data-button-type="wallet">
+# SDK client side Mercado Pago
+<script src="https://sdk.mercadopago.com/js/v2"></script>    
+<script>
+# Agrega credenciales de SDK 
+const mp = new MercadoPago('PUBLIC_KEY', {
+      locale: 'es-AR'
+});
+
+const preferenceId = {{ preference_id }}
+
+# Inicializa el checkout 
+mp.checkout({
+    preference: {
+      id: 'YOUR_PREFERENCE_ID'
+    },
+    render: {
+      container: '.cho-container', # Indica dónde se mostrará el botón de pago
+      label: 'Pagar con Mercado Pago', # Cambia el texto del botón de pago (opcional)
+      type: 'wallet', # Aplica el branding de Mercado Pago al botón
+    }
+});
 </script>
 ```
 ]]]

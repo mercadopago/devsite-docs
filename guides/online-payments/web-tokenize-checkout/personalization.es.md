@@ -161,7 +161,7 @@ Los elementos que puedes personalizar son:
 * Elementos de transiciones: spinners y barras de progreso
 * Bordes
 
-Modifica el color de esos elementos agregando el atributo `elementsColor ` al objeto `theme`. El valor del atributo debe estar en formato hexadecimal. Por ejemplo:
+Modifica el color de esos elementos agregando el atributo `elementsColor` al objeto `theme`. El valor del atributo debe estar en formato hexadecimal. Por ejemplo:
 
 ```javascript
 theme: {

@@ -14,7 +14,7 @@ Usa el método `open` para <b>abrir el checkout sin mostrar el botón de pago</b
 <script>
 const checkout = mp.checkout({
   preference: {
-      id: '239656545-89accc4d-3fc9-4835-828b-b8fa16b2fdce'
+      id: 'YOUR_PREFERENCE_ID'
   }
 });
 </script>
@@ -44,7 +44,7 @@ Puedes utilizar este método de dos formas distintas:
  // Dentro de las opciones de inicialización 
 mp.checkout({
    preference: {
-       id: '239656545-89accc4d-3fc9-4835-828b-b8fa16b2fdce'
+       id: 'YOUR_PREFERENCE_ID'
    },
    render: {
        container: '.cho-container',
@@ -76,7 +76,7 @@ Añade el parámetro `autoOpen` a tus opciones de inicialización del checkout e
 // Inicializa el checkout 
 const checkout = mp.checkout({
   preference: {
-      id: '239656545-89accc4d-3fc9-4835-828b-b8fa16b2fdce'
+      id: 'YOUR_PREFERENCE_ID'
   },
   autoOpen: true, // habilita la apertura automática del Checkout Pro
 });
@@ -231,7 +231,7 @@ Los elementos que puedes personalizar son:
 * Elementos de transiciones: spinners y barras de progreso
 * Bordes
 
-Modifica el color de esos elementos agregando el atributo `elementsColor ` al objeto `theme`. El valor del atributo debe estar en formato hexadecimal. Por ejemplo:
+Modifica el color de esos elementos agregando el atributo `elementsColor` al objeto `theme`. El valor del atributo debe estar en formato hexadecimal. Por ejemplo:
 
 ```javascript
 theme: {

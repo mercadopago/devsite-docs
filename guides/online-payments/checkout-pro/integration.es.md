@@ -456,7 +456,7 @@ Ahora desde tu frontend, sigue estos pasos para poder sumar el checkout a tu sit
   // Inicializa el checkout 
   mp.checkout({
       preference: {
-          id: '239656545-89accc4d-3fc9-4835-828b-b8fa16b2fdce'
+          id: 'YOUR_PREFERENCE_ID'
       },
       render: {
             container: '.cho-container', // Indica dónde se mostrará el botón de pago
