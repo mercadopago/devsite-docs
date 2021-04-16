@@ -6,27 +6,35 @@ Use our [sample projects](#bookmark_sample_projects) for a complete integration.
 
 ## How do I integrate?
 
-![Integration](/images/web-payment-checkout/flow-v2.png)
+![Integration](/images/web-payment-checkout/flow-v2-2.png)
 
 1. Generate your preference
 
-	1.1 Add the SDK downloaded from Mercado Pago in your project.
+	1.1 Add the SDK downloaded from Mercado Pago in your project and the credentials to enable its use.
 
-	1.2 Add the credentials to enable the use of the Mercado Pago SDK.
-
-	1.3 Set the preference according to your product or service.
+	1.2 Set the preference according to your product or service.
 
 2. Add the checkout to your website
+   
+	2.1 Add the MercadoPago.js V2 SDK to your frontend.
+
+	2.2 Add the credentials to enable the use of the SDK and initialize the checkout with the created preference.
 
 ## Steps to integrate
 
 Installing the Checkout Pro consists of two steps:
 
-### 1. Generate your preference
+<span></span>
 
-Write the following code consisting of three parts:
+> SERVER_SIDE
+>
+> h3
+>
+> &nbsp; 1. Generate your preference
 
-1.1 Add the [Mercado Pago SDK](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/previous-requirements#bookmark_previous_requirements) in your project:
+Write the following code consisting of two parts:
+
+1.1 Add the [Mercado Pago SDK](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/previous-requirements#bookmark_previous_requirements) in your project and the credentials to enable its use:
 
 [[[
 ```php
@@ -451,48 +459,64 @@ curl -X POST \
 
 ### 2. Add the checkout to your website
 
-Finally, add the following code to show the payment button of your Checkout Pro in the place you want it to appear.
+Finally, follow these steps to add the checkout to your website.
+
+2.1. Add the MercadoPago.js V2 SDK to your project:
 
 [[[
 ```php
-<script
-  src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
-  data-preference-id="<?php echo $preference->id; ?>">
-</script>
+// SDK MercadoPago.js V2 
+<script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 ```node
-<script
-  src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
-  data-preference-id='<%= global.id %>'>
-</script>
+// SDK MercadoPago.js V2 
+<script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 ```java
-<script
-  src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
-  data-preference-id="${preference.id}">
-</script>
+// SDK MercadoPago.js V2 
+<script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 ```ruby
-<script
-  src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
-  data-preference-id="<%= @preference_id %>">
-</script>
+# SDK MercadoPago.js V2 
+<script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 ```csharp
-<script
-  src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
-  data-preference-id="@Html.DisplayFor(model => model.id)">
-</script>
+// SDK MercadoPago.js V2 
+<script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 ```python
-<script
-  src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
-  data-preference-id="{{ preference_id }}">
+# SDK MercadoPago.js V2 
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+```
+]]]
+
+2.2. Add the SDK credentials to enable its use and initialize the checkout using the ID from the preference created earlier and the ID or selector for the element where the payment button should be displayed. 
+
+[[[
+```html
+<script>
+// Add the SDK credentials
+  const mp = new MercadoPago('PUBLIC_KEY', {
+        locale: 'es-AR'
+  });
+  
+  // Initialize the checkout
+  mp.checkout({
+    preference: {
+        id: 'YOUR_PREFERENCE_ID'
+    },
+    render: {
+      container: '.cho-container', // Indicates where the payment button is going to be rendered
+      label: 'Pagar', // Changes the button label (optional)
+    }
+});
 </script>
 ```
 ]]]
 
+This will display a payment button that will open the Checkout Pro. 
 
+You can check other ways to open the checkout in the [Customizations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/customizations).
 > WARNING
 >
 > Important
