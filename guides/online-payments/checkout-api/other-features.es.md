@@ -184,7 +184,7 @@ La respuesta indica que el pago se encuentra autorizado y pendiente de captura.
 
 También puede resultar rechazada o quedar pendiente. Ten en cuenta que los fondos autorizados no podrán ser utilizados por tu cliente hasta que no sean capturados. Te recomendamos realizar la captura lo antes posible.
 
-----[mla,mlm]----
+----[mla, mlm]----
 > WARNING
 >
 > Importante
@@ -192,6 +192,7 @@ También puede resultar rechazada o quedar pendiente. Ten en cuenta que los fond
 > * La reserva tendrá una validez de 7 días. Si no la capturas hasta ese momento, será cancelada.
 > * Debes guardar el ID del pago para poder finalizar el proceso.
 ------------
+
 ----[mpe]----
 > WARNING
 >
@@ -199,7 +200,9 @@ También puede resultar rechazada o quedar pendiente. Ten en cuenta que los fond
 >
 > * La reserva tendrá una validez de 22 días. Si no la capturas hasta ese momento, será cancelada.
 > * Debes guardar el ID del pago para poder finalizar el proceso.
+
 ------------
+
 ----[mlb]----
 > WARNING
 >
@@ -207,6 +210,7 @@ También puede resultar rechazada o quedar pendiente. Ten en cuenta que los fond
 >
 > * La reserva tendrá una validez de 5 días. Si no la capturas hasta ese momento, será cancelada.
 > * Debes guardar el ID del pago para poder finalizar el proceso.
+
 ------------
 
 ## Captura un pago autorizado
