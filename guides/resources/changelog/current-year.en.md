@@ -3,7 +3,23 @@
 Find out everything about the new versions and updates of Mercado Pago integrations.
 
 ---
+
 ## April 2021
+
+
+### April 20th
+
+> CHANGELOG
+>
+> We have improved our checkouts’ integration experience
+>
+> NEWS: FEATURE
+>
+> Product: MERCADO PAGO
+
+Integrate Checkout Pro and Web Tokenize Checkout in a simpler way and from a single source using the new MercadoPago.js V2 SDK. Now you can open the checkout without the need of a payment button and use a more fitting option for your website instead.
+
+Go to [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/integration) o [Web Tokenize Checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/web-tokenize-checkout/introduction) documentation.
 
 ### April 9th
 
@@ -24,6 +40,8 @@ We have released the new version 3.8.2 for Magento 2.
 > GitHub
 >
 > [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.2) for further details regarding this release.
+
+---
 
 ## March 2021
 
@@ -48,6 +66,24 @@ Integrate Checkout API simpler and faster with the new CardForm functionality, w
 > [Check GitHub](https://github.com/mercadopago/sdk-js) for further details regarding this release.
 
 ### March 29th
+
+> CHANGELOG
+>
+> New Magento 2 plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: MAGENTO 2
+
+We have released the new version 3.8.0 for Magento 2.
+
+[Go to Magento 2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.0) for further details regarding this release.
 
 > CHANGELOG
 >

@@ -1,5 +1,88 @@
 # Customizações
 
+## Abertura do Checkout Pro
+
+Você pode personalizar como abrir o checkout através de funções e atributos que podem ser adicionados à configuração no código de sua integração:
+
+### Sem botão de pagamento
+
+Use o método `open` para abrir o checkout sem mostrar o botão de pagamento. Permite conectar ao elemento em seu site a partir do qual você prefere fazer a abertura do Checkout Pro.
+
+[[[
+```html
+<!-- Inicializa o checkout -->
+<script>
+const checkout = mp.checkout({
+  preference: {
+      id: 'YOUR_PREFERENCE_ID'
+  }
+});
+</script>
+<!-- Chama a função ‘open' a partir do item da tua página que desejas  -->
+<!-- Por exemplo: um radio button -->
+<input type="radio" id="checkout-open-radio" onclick="checkout.open()">
+```
+]]]
+
+### Com botão de pagamento
+
+Ao usar o método `render` um botão de pagamento é mostrado para abrir o Checkout Pro.</b> Para isso, você deve incluir os seguintes parâmetros:
+
+| Parâmetro | Tipo de dado | Descrição |
+| --- | --- | --- |
+| `container` | string | CSS Selector (identificador) do elemento onde se deseja mostrar o botão de pagamento. Permite definir o tipo de botão. |
+| `type` (opcional) | string | Permite definir o tipo de botão. Atualmente, só aceita o valor ’wallet’ que mostra um botão de pagamento com a marca do Mercado Pago. **Valor por padrão**: botão de pagamento simples. |
+| `label` (opcional) | string | Valor do texto do botão. **Por padrão**: “Pagar” |
+
+Você pode usar este método de duas maneiras diferentes:
+
+* Incluindo a opção `render` com seus respectivos parâmetros dentro das opções de inicialização do checkout.
+* Invocando a função `render` posteriormente, do lugar que você preferir dentro de seu código, com seus respectivos parâmetros.
+
+[[[
+  ```javascript
+ // Dentro das opções de inicialização
+mp.checkout({
+   preference: {
+       id: 'YOUR_PREFERENCE_ID'
+   },
+   render: {
+       container: '.cho-container',
+       label: 'Pagar',
+    }
+});
+
+// Invocando a função posteriormente
+mp.checkout.render({
+    container: '.cho-container',
+    label: 'Pagar'
+});
+  ```
+]]]
+
+#### Botão de pagamento padrão:
+
+![Default Label Button](/images/web-payment-checkout/default_label_button.png)<br/>
+
+#### Personalizado:
+
+![Custom Label Button](/images/web-payment-checkout/custom_label_button.png)<br/><br/>
+
+### Abertura automática do Checkout Pro
+
+Adicione o parâmetro `autoOpen` às suas opções de inicialização do checkout em sua integração para **exibir automaticamente o Checkout Pro**, sem precisar da interação com um botão ou outro elemento para sua abertura
+
+[[[
+```javascript
+// Inicializa o checkout
+const checkout = mp.checkout({
+  preference: {
+      id: 'YOUR_PREFERENCE_ID'
+  },
+  autoOpen: true, // Habilita a abertura automática do Checkout Pro
+});
+```
+]]]
 
 ## Esquema redirect
 
@@ -92,23 +175,51 @@ Redireciona ao 'init_point' da preferência
 <!doctype html>
 <html>
   <head>
-    <title>Pay</title>
+    <title>Pagar</title>
   </head>
   <body>
-    <a href="{{ init_point }}" target="_blank">Pay with Mercado Pago</a>
+    <a href="{{ init_point }}" target="_blank">Pagar com Mercado Pago</a>
   </body>
 </html>
 ```
 ]]]
 
+## Cores do cabeçalho e elementos
 
-## Cores
+Adicione o atributo `theme` da seguinte maneira às opções de inicialização para personalizar a cor de alguns elementos e o cabeçalho da interface de checkout.
+
+[[[
+```html
+<script>
+  mp.checkout({
+    preference: {...},
+    render: {...},
+    theme: {
+        elementsColor: ''.
+        headerColor: '',
+    }
+  });
+</script>
+```
+]]]
 
 > NOTE
 >
 > Nota
 >
 > válido somente para o esquema modal.
+
+### Cabeçalho
+
+Muda a cor do cabeçalho adicionando o atributo `headerColor` no objeto `theme`. O valor do atributo deve estar no formato hexadecimal. Por exemplo:
+
+[[[
+```javascript
+theme: {
+  headerColor: '#c0392b'
+}
+```
+]]]
 
 ### Elementos
 
@@ -119,53 +230,40 @@ Os elementos que podem ser customizados são:
 * Elementos de transição: spinners e barras de progresso
 * Bordas
 
-Você pode mudar a cor desses elementos adicionando o atributo `data-elements-color` no código HTML.
-O valor do atributo deve estar em formato hexadecimal. Por exemplo:
+Você pode mudar a cor desses elementos adicionando o atributo `elementsColor` no objeto `theme`.
+O valor do atributo deve estar no formato hexadecimal. Por exemplo:
 
-
-```html
-data-header-color="#c0392b"
+```javascript
+theme: {
+  elementsColor: '#c0392b'
+}
 ```
+
 ![Custom-Component](/images/web-payment-checkout/custom_components-br.gif)
-</p><br/>
 
-#### Textos
+#### Cores do texto
 
-A cor do texto dos botões será determinado automaticamente dependendo do contraste da cor definida.
+A cor do texto dos botões e cabeçalho será determinada automaticamente dependendo do [contraste](https://24ways.org/2010/calculating-color-contrast) da cor definida.
+
 Para uma cor de elemento claro, a cor do texto será preta ou #000. Por exemplo:
 
-
-```html
-data-elements-color="#81ecec" <!-- Cor clara -->
+```javascript
+theme: {
+    elementsColor: '#81ecec' // Cor clara
+}
 ```
 
 ![Light Color Button](/images/web-payment-checkout/light_color_button.png)
 
-<br/>Para uma cor de elemento escuro, a cor do texto será branca ou #fff. Por exemplo:
+Para uma cor de elemento escuro, a cor do texto será branca ou #fff. Por exemplo:
 
-```html
-data-elements-color="#8e44ad" <!-- Cor escura -->
+```javascript
+theme: {
+    elementsColor: '#8e44ad' // Cor escura
+}
 ```
 
 ![Dark Color Button](/images/web-payment-checkout/dark_color_button.png)
-
-## Botões
-
-### Texto
-
-Por padrão, o botão mostra o texto “Pagar”. Você pode alterar o texto do botão adicionando o atributo `data-button-label` no código HTML. Por exemplo:
-
-```html
-data-button-label="Comprar"
-```
-
-### Por padrão:
-
-![Default Label Button](/images/web-payment-checkout/default_label_button.png)<br/>
-
-### Customizado:
-
-![Custom Label Button](/images/web-payment-checkout/custom_label_button.png)<br/><br/>
 
 ---
 
