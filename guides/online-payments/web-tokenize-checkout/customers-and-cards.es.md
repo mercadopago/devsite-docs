@@ -172,7 +172,9 @@ Respuesta del Servidor:
 
 ## Recibir un pago de un Customer
 
-Para que puedas recibir un pago utilizando una tarjeta almacenada, es necesario incluir en el código de integración el ID del customer y los ID de las tarjetas del usuario a través de los atributos `customerId` y `cardIds` dentro del parámetro `savedCards`. Por ejemplo:
+Para que puedas recibir un pago utilizando una tarjeta almacenada, es necesario incluir en el código de integración el ID del customer y los ID de las tarjetas del usuario a través de los atributos `customerId` y `cardIds` dentro del parámetro `savedCards`.
+
+Por ejemplo:
 
 ```html
 <script>
@@ -181,8 +183,8 @@ Para que puedas recibir un pago utilizando una tarjeta almacenada, es necesario 
         totalAmount: 4000,
         backUrl: 'https://www.mi-sitio.com/process',
         savedCards: {
-            cardIds: '1518023392627,1518023332143' // ids de las tarjetas
-            customerId: '209277402-FqRqgEc3XItrxs' // tu customer id
+            cardIds: '1518023392627,1518023332143' // IDs de las tarjetas
+            customerId: '209277402-FqRqgEc3XItrxs' // Tu customer ID
         }
     },
     render: {

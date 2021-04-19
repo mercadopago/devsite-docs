@@ -179,10 +179,10 @@ For example:
   mp.checkout({
     tokenizer: {
         totalAmount: 4000,
-        backUrl: 'https://www.mi-sitio.com/process',
+        backUrl: 'https://www.my-store.com/process',
         savedCards: {
-            cardIds: '1518023392627,1518023332143'
-            customerId: '209277402-FqRqgEc3XItrxs'
+            cardIds: '1518023392627,1518023332143' // Card IDs
+            customerId: '209277402-FqRqgEc3XItrxs'// Your customer ID
         }
     },
     render: {
