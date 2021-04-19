@@ -45,8 +45,6 @@ We have released the new version 3.8.0 for Magento 2.
 >
 > [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.0) for further details regarding this release.
 
-### March 29th
-
 > CHANGELOG
 >
 > New WooCommerce plugin version

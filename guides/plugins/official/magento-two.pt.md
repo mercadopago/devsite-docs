@@ -81,20 +81,20 @@ Veja o passo a passo para configurar o módulo para aceitar pagamentos via Cart�
 3) Com as credenciais preenchidas, o próximo passo é habilitar os métodos de pagamento.
 Primeiro, acesse o método que você deseja ativar.
 
-Para habilitar pagamentos por cartão > **Checkout - Credit and Debit Card**.
-Para habilitar pagamentos por boleto > **Custom Checkout - Offline Payment Methods (Ticket)**.
+Para habilitar pagamentos por cartão > **Checkout - Credit and Debit Card**.<br>
+Para habilitar pagamentos por boleto > **Custom Checkout - Offline Payment Methods (Ticket)**.<br>
 ----[mlb]----Para habilitar pagamentos por Pix  > **Custom Checkout - Pix**.------------
 
 ----[mlb]----
+
 > WARNING
 >
 > Importante
 >
-> **Antes de configurar o Pix como meio de pagamento, lembre-se de**:
->
-> - [Baixar a última versão](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) para atualizar seu plugin do Mercado Pago.
->
+> Antes de configurar o Pix como meio de pagamento, lembre-se de:<br><br>
+> - [Baixar a última versão](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) para atualizar seu plugin do Mercado Pago.<br>
 > - Cadastrar sua chave no Mercado Pago. Se isso não for feito, seus clientes não conseguirão finalizar a compra. [Veja como fazer](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required).
+
 ------------ 
 
 Ao acessar, clique no botão **Configure** para visualizar as opções de configuração. Selecione as opções conforme preferir e marque o campo **Enabled** como **Yes**. Em seguida, clique em **Save Config**.
@@ -117,7 +117,7 @@ Aproveite e também configure o Tipo do Checkout (**Type Checkout**) e se o usu�
 
 ![Checkout Pro Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
 
-4)  Pronto! o Checkout Clássico com Cartão de crédito e Boleto foi configurado e habilitado com sucesso!
+4)  Pronto! Checkout Pro com Cartão de crédito e Boleto foi configurado e habilitado com sucesso!
 
 
 ## Configurações de status de Notificações de Pagamento

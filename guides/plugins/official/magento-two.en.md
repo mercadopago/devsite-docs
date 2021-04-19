@@ -81,8 +81,8 @@ Here is how to set up the module to accept Credit Car ----[mlb]----, Pix--------
 3) With your credentials filled, you need to enable payment methods.
 First, access the method that you want to enable.
 
-To enable payments via credit card > **Checkout - Credit and Debit Card**.
-To enable payments via ticket > C**ustom Checkout - Offline Payment Methods (Ticket)**.
+To enable payments via credit card > **Checkout - Credit and Debit Card**.<br>
+To enable payments via ticket > C**ustom Checkout - Offline Payment Methods (Ticket)**.<br>
 ----[mlb]----To enable payments via Pix  > **Custom Checkout - Pix**.------------
 
 ----[mlb]----
@@ -90,10 +90,8 @@ To enable payments via ticket > C**ustom Checkout - Offline Payment Methods (Tic
 >
 > Important
 >
-> **Before setting up Pix as a payment method, remember to:**
->
-> - [Download the latest version](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) to update your Mercado Pago plugin.
->
+> Before setting up Pix as a payment method, remember to:<br><br>
+> - [Download the latest version](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) to update your Mercado Pago plugin.<br>
 > - Register your key in Mercado Pago. If this is not done, your customers will not be able to finalize the purchase. [See how to do it](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required).
 ------------
 

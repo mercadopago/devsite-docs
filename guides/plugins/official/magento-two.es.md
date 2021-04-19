@@ -58,11 +58,11 @@ Aprende el proceso paso a paso para configurar el módulo para aceptar pagos a t
 > * Modo Producción: Las credenciales de este modo se utilizan para recibir los pagos en Producción. Para utilizar las credenciales del modo de producción debe activar tus credenciales.
 > * Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials/).
 
-3) Con las credenciales completadas, el siguiente paso es habilitar los métodos de pago.
-En primer lugar, ve al método que quieres habilitar.
+3) Con las credenciales completadas, el siguiente paso es habilitar los medios de pago.
+En primer lugar, ve al medio que quieres habilitar.
 
-Para habilitar pagos con tarjeta > **Checkout - Credit and Debit Card**.
-Para habilitar pagos con ticket > **Custom Checkout - Offline Payment Methods (Ticket)**.
+Para habilitar pagos con tarjeta > **Checkout - Credit and Debit Card**.<br>
+Para habilitar pagos con ticket > **Custom Checkout - Offline Payment Methods (Ticket)**.<br>
 ----[mlb]----Para habilitar pagos con Pix  > **Custom Checkout - Pix**.------------
 
 ----[mlb]----
@@ -70,10 +70,8 @@ Para habilitar pagos con ticket > **Custom Checkout - Offline Payment Methods (T
 >
 > Importante
 >
-> **Antes de configurar el Pix como método de pago, recuerda hacer esto**:
->
-> - [Descarga la última versión](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) para actualizar tu plugin de Mercado Pago.
->
+> Antes de configurar el Pix como medio de pago, ten en cuenta:<br><br>
+> - [Descarga la última versión](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) para actualizar tu plugin de Mercado Pago.<br>
 > - Registra tu clave en Mercado Pago. Si no lo haces, tus clientes no podrán finalizar la compra. [Aprende a hacerlo](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required).
 ------------
 
@@ -92,7 +90,7 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con el Ch
 
 2) Para configurar las credenciales acceda a la opción **Mercado Pago - Classic Checkout**, haga un clic en **Configure**. Aparecerá el campo **Client id** y el campo **Client secret**. Obtén tus credenciales en la sección [Credenciales]([FAKER][CREDENTIALS][URL]).
 
-3) Con las credenciales llenadas, ahora es necesario habilitar el método de pago. Vaya a la opción **Enable** y marque como **Yes**. Aproveche y configure el Tipo de Checkout (**Type Checkout**) y si el usuario debe volver automáticamente a su tienda al finalizar el pago (**Auto Redirect**).
+3) Con las credenciales llenadas, ahora es necesario habilitar el medio de pago. Vaya a la opción **Enable** y marque como **Yes**. Aproveche y configure el Tipo de Checkout (**Type Checkout**) y si el usuario debe volver automáticamente a su tienda al finalizar el pago (**Auto Redirect**).
 
 ![Checkout Pro Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
 
