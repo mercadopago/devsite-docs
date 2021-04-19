@@ -10,7 +10,7 @@ En el caso de que un pago fuese rechazado puedes ofrecerle al comprador la opci�
 
 En ese momento recibirás como respuesta el estado del pago *rechazado* (`rejected`) y es recomendable informarle al usuario dicho estado.
 
-Junto con la comunicación puedes ofrecer además la posibilidad de volver a ingresar los datos de tarjeta, **usando nuevamente el _Web Tokenize Checkout_**. También tienes la posibilidad de [cambiar el texto del botón](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/web-tokenize-checkout/personalization) mediante el atributo `data-button-label` para complementar la comunicación.
+Junto con la comunicación puedes ofrecer además la posibilidad de volver a ingresar los datos de tarjeta, **usando nuevamente el _Web Tokenize Checkout_**. También tienes la posibilidad de [cambiar el texto del botón](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/web-tokenize-checkout/personalization) mediante el atributo `buttonLabel` para complementar la comunicación.
 
 Por ejemplo:
 
@@ -18,14 +18,23 @@ Por ejemplo:
 <h1>¡Algo salió mal!</h1>
 <p>Ha ocurrido un error con el pago. Por favor vuelve a intentarlo:</p>
 
-<form action="/procesar-pago" method="POST">
-  <script
-    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
-    data-public-key="ENV_PUBLIC_KEY"
-    data-transaction-amount="100.00"
-    data-button-label="Reintentar"> <!-- Texto del botón -->
-  </script>
-</form>
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+
+<script>
+const mp = new MercadoPago('PUBLIC_KEY', {locale: 'es-AR'});
+
+// Inicializa el Web Tokenize Checkout
+mp.checkout({
+  tokenizer: {
+    totalAmount: 4000,
+    backUrl: 'https://www.mi-sitio.com/process'
+  },
+ render: {
+    container: '.tokenizer-container',
+    label: 'Reintentar’ 
+ }
+});
+</script>
 ```
 
 ![Recuperos Mercado Pago Web Tokenize Checkout](/images/cow/cow-recovery-page.png)
@@ -34,17 +43,7 @@ Por ejemplo:
 
 Otra posibilidad, en caso de que un pago fuese rechazado, es invocar al *Web Tokenize Checkout* con el formulario ya abierto en el contexto donde originalmente el usuario cargó los datos.
 
-La opción de abrir el checkout por defecto es controlada desde el atributo `data-open` y sólo es cuestión de setear el atributo en `true`.
+La opción de abrir el checkout por defecto es controlada desde el atributo `autoOpen` y sólo es cuestión de setear el atributo en `true`.
 
-Por ejemplo:
+Puedes encontrar más información sobre cómo configurar la apertura automática del checkout desde la [sección de Personalizaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/web-tokenize-checkout/personalization#bookmark_apertura_del_web_tokenize_checkout)
 
-```html
-<form action="/procesar-pago" method="POST">
-  <script
-    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
-    data-public-key="ENV_PUBLIC_KEY"
-    data-transaction-amount="100.00"
-    data-open="true"> <!-- Abierto por defecto -->
-  </script>
-</form>
-```

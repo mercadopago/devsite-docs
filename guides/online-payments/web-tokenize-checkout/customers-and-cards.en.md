@@ -170,20 +170,27 @@ Server response:
 
 ## Receive a payment from a Customer
 
-In order to receive a payment from a stored card, it is necessary to include in the HTML code the customer ID and the IDs of the user cards through the attributes `data-customer-id` and `data-card-ids` . 
+In order to receive a payment from a stored card, it is necessary to include in your integration code the customer ID and the IDs of the user cards through the attributes `customerId` and `cardIds` in the `savedCards` parameter. 
 
 For example:
 
 ```html
-<form action="/procesar-pago" method="POST">
-  <script
-    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
-    data-public-key="ENV_PUBLIC_KEY"
-    data-transaction-amount="100.00"
-    data-customer-id="209277402-FqRqgEc3XItrxs"
-    data-card-ids="1518023392627,1518023332143">
-  </script>
-</form>
+<script>
+  mp.checkout({
+    tokenizer: {
+        totalAmount: 4000,
+        backUrl: 'https://www.mi-sitio.com/process',
+        savedCards: {
+            cardIds: '1518023392627,1518023332143'
+            customerId: '209277402-FqRqgEc3XItrxs'
+        }
+    },
+    render: {
+        container: ‘.tokenizer-container’,
+        label: ‘Pay’
+    }
+  });
+</script>
 ```
 
 > NOTE
@@ -262,19 +269,26 @@ With this card information you can invoke the *Web Tokenize Checkout*.
 For example:
 
 ```html
-<form action="/procesar-pago" method="POST">
-  <script
-    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
-    data-public-key="ENV_PUBLIC_KEY"
-    data-transaction-amount="100.00"
-    data-customer-id="209277402-FqRqgEc3XItrxs"
-    data-card-ids="<?php
-      foreach ($cards["response"] as $card) {
-        echo $card["id"];
-      }
-    ?>">
-  </script>
-</form>
+<script>
+// Get the IDs from the cards obtained from calling the api in the previous step 
+  const customerCardIds = cardsResponse.map(card => card.id); 
+
+// Initialize the checkout
+  mp.checkout({
+    tokenizer: {
+        totalAmount: 4000,
+        backUrl: 'https://www.mi-sitio.com/process',
+        savedCards: {
+            cardIds: customerCardIds, // obtained cardIds
+            customerId: '209277402-FqRqgEc3XItrxs'
+        }
+    },
+    render: {
+        container: ‘.tokenizer-container’,
+        label: ‘Pagar’
+    }
+  });
+</script>
 ```
 
 

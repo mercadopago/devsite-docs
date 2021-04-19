@@ -1,6 +1,6 @@
 # Receive card payments
 
-With Mercado Pago you can collect card information in a secure way through our Tokenizer.
+With Mercado Pago you can collect card information in a secure way through our Web Tokenize Checkout.
 
 ### Step 1: Add viewport data
 
@@ -10,19 +10,47 @@ Set the viewport by adding the following code inside the `<head>` tag of your we
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 ```
 
-### Step 2: Add HTML code
+### Step 2: Add the Web Tokenize Checkout to your website
 
-This _fragment of HTML code_ will insert a payment button. When the buyer presses the button, the checkout will be displayed. Include the following code in the place where the button will be located within your website:
+In order to add the Web Tokenize Checkout to your website you need to follow these steps.
+
+The following code will insert a payment button. When the buyer presses the button, the checkout will be displayed.
+
+1. Add the MercadoPago.js V2 SDK to your project:
 
 ```html
-<form action="https://www.my-site.com/process-payment" method="POST">
-  <script
-    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
-    data-public-key="ENV_PUBLIC_KEY"
-    data-transaction-amount="100.00">
-  </script>
-</form>
+<html>
+  <body>
+    ...
+    <!-- Mercado Pago Client-Side SDK -->
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+  </body>
+</html>
 ```
+
+2. Add the SDK credentials to enable its use and initialize the checkout using the ID from the preference created earlier and the ID or selector for the element where the payment button should be displayed. 
+
+```html
+<script>
+// Add the SDK credentials
+const mp = new MercadoPago('PUBLIC_KEY', {locale: 'es-AR'});
+
+// Initialize the Web Tokenize Checkout
+mp.checkout({
+  tokenizer: {
+    totalAmount: 4000,
+    backUrl: 'https://www.mi-sitio.com/process'
+  },
+ render: {
+    container: '.tokenizer-container', // Indicates where the payment button is going to be rendered
+    label: 'Pagar' // Changes the button label (optional)
+ }
+});
+</script>
+```
+This will display a payment button that will open the Web Tokenize Checkout. 
+You can check other ways to open the checkout in the [Customization section](https://www.mercadopago[FAKER][URl][DOMAIN]/developers/en/guides/online-payments/web-tokenize-checkout/personalization).
+
 You can find the Public Key in the [Credentials section]([FAKER][CREDENTIALS][URL]) page.
 
 > Find all the information about your credentials in our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/faqs/credentials).
