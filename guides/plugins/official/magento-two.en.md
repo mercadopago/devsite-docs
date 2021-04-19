@@ -67,7 +67,7 @@ This process will explain the installation of the Mercado Pago module via Compos
 
 ## Credit Card----[mlb]----, Pix------------ and Ticket Configuration (Custom Checkout)
 
-Here is how to set up the module to accept Credit Car ----[mlb]----, Pix------------ and Boleto payments in Custom Checkout (Transparent).
+Here is how to set up the module to accept Credit Card ----[mlb]----, Pix------------ and Boleto payments in Custom Checkout (Transparent).
 
 1) Go to **Stores > Configuration > Sales > Payment Methods**.
 
