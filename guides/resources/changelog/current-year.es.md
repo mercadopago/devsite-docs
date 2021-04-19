@@ -6,6 +6,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Abril 2021
 
+
 ### 20 de abril
 
 > CHANGELOG
@@ -19,6 +20,26 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 Integra Checkout Pro y Web Tokenize Checkout de forma más simple y desde un solo lugar utilizando la nueva SDK MercadoPago.js V2. Ahora, puedes abrir el checkout sin depender de un botón de pago y usar la opción que necesites según tu sitio.
 
 Ir a documentación de [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/integration) o [Web Tokenize Checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/web-tokenize-checkout/introduction).
+
+### 9 de abril
+
+> CHANGELOG
+>
+> Nueva versión Magento 2
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: MAGENTO 2
+
+Lanzamos la nueva versión 3.8.2 para Magento 2.
+
+[Ir a documentación de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.2).
 
 ---
 
