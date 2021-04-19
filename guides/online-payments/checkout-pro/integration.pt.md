@@ -28,7 +28,7 @@ Instalar o Checkout Pro requer duas etapas:
 >
 > h3
 >
-> 1. Crie sua preferência
+> &nbsp;1. Crie sua preferência
 
 No seu backend, escreva o seguinte código que consiste em duas partes:
 
@@ -77,11 +77,11 @@ sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 ```
 ]]]
 
-<br/><br/>1.2 Configure a preferência conforme seu produto ou serviço:<br/>
+1.2 Configure a preferência conforme seu produto ou serviço:
 
 ----[mla, mlb, mlu, mpe, mlm]----
 
-> Por favor considere que é necessário configurar as `back_urls` se você quiser retornar ao seu site ao final do pagamento. Para mais informações, visite a seção [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/advanced-integration#bookmark_url_de_retorno). 
+> Por favor considere que é necessário configurar as `back_urls` se você quiser retornar ao seu site ao final do pagamento. Para mais informações, visite a seção [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/advanced-integration#bookmark_url_de_retorno).
 
 [[[
  ```php
@@ -408,6 +408,7 @@ curl -X POST \
 > O valor de `unit_price` deve ser um número inteiro.
 
 ------------
+
 <span></span>
 
 > NOTE
@@ -422,7 +423,7 @@ curl -X POST \
 >
 > h3
 >
-> 2. Adicione o Checkout Pro ao seu site
+> &nbsp;2. Adicione o Checkout Pro ao seu site
 
 Agora no seu frontend, siga estas etapas para adicionar o checkout ao seu site:
 

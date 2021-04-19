@@ -30,7 +30,7 @@ Instalar el Checkout Pro consta de dos pasos:
 >
 > h3
 >
-> 1. Genera tu preferencia
+> &nbsp;1. Genera tu preferencia
 
 Desde tu backend, escribe el siguiente código que consta de dos partes: 
 
@@ -395,6 +395,7 @@ curl -X POST \
 > El valor de `unit_price` debe ser entero.
 
 ------------
+
 <span></span>
 
 > NOTE
@@ -409,8 +410,7 @@ curl -X POST \
 >
 > h3
 >
-> 2. Suma el Checkout Pro a tu sitio
-
+> &nbsp;2. Suma el Checkout Pro a tu sitio
 
 Ahora desde tu frontend, sigue estos pasos para poder sumar el checkout a tu sitio:
 

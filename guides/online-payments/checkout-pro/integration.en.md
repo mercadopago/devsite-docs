@@ -30,7 +30,7 @@ Installing the Checkout Pro consists of two steps:
 >
 > h3
 >
-> 1. Generate your preference
+> &nbsp;1. Generate your preference
 
 Write the following code consisting of two parts:
 
@@ -65,7 +65,7 @@ import mercadopago
 ```
 ]]]
 
-<br/><br/>1.2 Add the [credentials]([FAKER][CREDENTIALS][URL]) to enable the use of the Mercado Pago SDK:<br/>
+1.2 Add the [credentials]([FAKER][CREDENTIALS][URL]) to enable the use of the Mercado Pago SDK:
 
 [[[
 ```php
@@ -117,7 +117,7 @@ sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 ]]]
 
 
-<br/><br/>1.3 Set the preference according to your product or service:<br/>
+1.3 Set the preference according to your product or service:
 
 ----[mla, mlb, mlu, mpe, mlm]----
 
@@ -449,6 +449,7 @@ curl -X POST \
 > The value of `unit_price` must be an integer.
 
 ------------
+
 <span></span>
 
 > NOTE
@@ -457,9 +458,16 @@ curl -X POST \
 >
 > If you want to accept payments only from registered users, with cards and money in Mercado Pago account, review [this section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations/#bookmark_accept_payments_from_registered_users_only) for more information.
 
-### 2. Add the checkout to your website
+<span></span>
 
-Finally, follow these steps to add the checkout to your website.
+> CLIENT_SIDE
+>
+> h3
+>
+> &nbsp;2. Add the Checkout Pro to your website
+
+
+Finally, from your frontend, follow these steps to add the checkout to your website.
 
 2.1. Add the MercadoPago.js V2 SDK to your project:
 
