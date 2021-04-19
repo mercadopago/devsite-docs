@@ -291,7 +291,6 @@ Por exemplo:
 </script>
 ```
 
-
 ## Adicione novos cartões a um Customer
 
 É possível adicionar novos cartões ao seu `Customer`. Para isto deve criar um `token` e fazer um request `HTTP POST` ao `Customer`.

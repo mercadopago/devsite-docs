@@ -270,8 +270,8 @@ For example:
 
 ```html
 <script>
-// Get the IDs from the cards obtained from calling the api in the previous step 
-  const customerCardIds = cardsResponse.map(card => card.id); 
+// Get the IDs from the cards obtained from calling the API in the previous step
+  const customerCardIds = cardsResponse.map(card => card.id);
 
 // Initialize the checkout
   mp.checkout({
@@ -279,8 +279,8 @@ For example:
         totalAmount: 4000,
         backUrl: 'https://www.mi-sitio.com/process',
         savedCards: {
-            cardIds: customerCardIds, // obtained cardIds
-            customerId: '209277402-FqRqgEc3XItrxs'
+            cardIds: customerCardIds, // Obtained cardIds
+            customerId: '209277402-FqRqgEc3XItrxs' // Your customer ID
         }
     },
     render: {
@@ -290,7 +290,6 @@ For example:
   });
 </script>
 ```
-
 
 ## Adding new cards to a customer
 

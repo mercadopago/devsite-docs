@@ -293,7 +293,6 @@ Por ejemplo:
 </script>
 ```
 
-
 ## Agregar nuevas tarjetas a un Customer
 
 Es posible agregar nuevas tarjetas a tu `Customer`. Para esto debes crear un `token` y hacer un request `HTTP POST` al `Customer`.
