@@ -483,7 +483,6 @@ Neste caso, será mostrado um botão de pagamento que abrirá o Checkout Pro.
 
 Você pode consultar outras maneiras de abrir o checkout na [seção de Personalizações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/customizations).
 
-
 > WARNING
 >
 > Importante
