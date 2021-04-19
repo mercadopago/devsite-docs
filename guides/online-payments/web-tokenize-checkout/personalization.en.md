@@ -18,7 +18,7 @@ By default the button contains the text *"Pay"*. You can modify the text of the 
 data-button-label="Pay"
 ```
 
-![Payment button mercado pago - modified label](/images/paybutton-modified-label.png)
+![Payment button Mercado Pago - modified label](/images/paybutton-modified-label.png)
 
 #### Style
 
