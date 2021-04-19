@@ -170,18 +170,27 @@ Retorno do Servidor:
 
 ## Receber pagamento de um Customer
 
-Para que possa receber um pagamento utilizando um cartão armazenado, é necessário incluir no código HTML o ID do customer e os IDs dos cartões do usuário através dos atributos `data-customer-id` e `data-card-ids`. Por exemplo:
+Para que possa receber um pagamento utilizando um cartão armazenado, é necessário incluir no código de integração o ID do customer e os ID dos cartões do usuário através dos atributos `customerId` e `cardIds` no parâmetro `savedCards`.
+
+Por exemplo:
 
 ```html
-<form action="/processar-pagamento" method="POST">
-  <script
-    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
-    data-public-key="ENV_PUBLIC_KEY"
-    data-transaction-amount="100.00"
-    data-customer-id="209277402-FqRqgEc3XItrxs"
-    data-card-ids="1518023392627,1518023332143">
-  </script>
-</form>
+<script>
+  mp.checkout({
+    tokenizer: {
+        totalAmount: 4000,
+        backUrl: 'https://www.minha-loja.com/process',
+        savedCards: {
+            cardIds: '1518023392627,1518023332143' // IDs dos cartões
+            customerId: '209277402-FqRqgEc3XItrxs' // Seu customer ID
+        }
+    },
+    render: {
+        container: ‘.tokenizer-container’,
+        label: ‘Pagar’
+    }
+  });
+</script>
 ```
 
 > NOTE
@@ -260,21 +269,27 @@ Com esta informação de cartão poderá chamar o *Web Tokenize Checkout*.
 Por exemplo:
 
 ```html
-<form action="/procesar-pago" method="POST">
-  <script
-    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
-    data-public-key="ENV_PUBLIC_KEY"
-    data-transaction-amount="100.00"
-    data-customer-id="209277402-FqRqgEc3XItrxs"
-    data-card-ids="<?php
-      foreach ($cards["response"] as $card) {
-        echo $card["id"];
-      }
-    ?>">
-  </script>
-</form>
-```
+<script>
+// Obtenha os IDs dos cartões obtidos ao chamar a API na etapa anterior
+  const customerCardIds = cardsResponse.map(card => card.id);
 
+// Inicializa o checkout
+  mp.checkout({
+    tokenizer: {
+        totalAmount: 4000,
+        backUrl: 'https://www.mi-sitio.com/process',
+        savedCards: {
+            cardIds: customerCardIds, // cardIds obtidos
+            customerId: '209277402-FqRqgEc3XItrxs' // Seu customer ID
+        }
+    },
+    render: {
+        container: ‘.tokenizer-container’,
+        label: ‘Pagar’
+    }
+  });
+</script>
+```
 
 ## Adicione novos cartões a um Customer
 

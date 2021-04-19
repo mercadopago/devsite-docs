@@ -2,26 +2,76 @@
 
 # Web Tokenize Checkout - Personalización
 
-## Botón
+## Apertura del Web Tokenize Checkout
 
-### Estado por defecto
+Puedes personalizar de qué forma abrir el checkout a través de funciones y atributos que pueden agregarse a la configuración en el código de tu integración:
 
-![Botón de pago por defecto de Mercado Pago en Web Tokenize Checkout](/images/paybutton.png)
+### Sin botón de pago
 
-### Personalización
+Usa el método `open` para **abrir el checkout sin mostrar el botón de pago**. Esto te permite conectarlo al elemento de tu página web desde el que prefieras realizar la apertura del Web Tokenize Checkout. 
 
-#### Texto
-
-Por defecto el botón contiene el texto *"Pagar"*. Puedes modificar el texto del botón agregando el atributo `data-button-label` al fragmento de código HTML. Por ejemplo:
-
-```html
-data-button-label="Comprar"
+[[[
+```javascript
+// Inicializa el checkout
+const checkout = mp.checkout({
+  tokenizer: {
+    totalAmount: 4000,
+    backUrl: 'https://www.mi-sitio.com/process'
+  },
+});
+(...)
+// Llama a la función ‘open’ desde el elemento de tu página que desees
+// Por ejemplo: un radio button
+<input type="radio" id="tokenizer-open-radio" onclick="checkout.open()">
 ```
+]]]
 
-![Botón de pago con personalización de texto Mercado Pago en Web Tokenize Checkout](/images/paybutton-modified-label.png)
+### Con botón de pago
+
+Utiliza el método `render` para mostrar un <b>botón de pago que permita la apertura del Web Tokenize Checkout</b>. Para ello, debes incluir los siguientes parámetros: 
+
+| Parámetro | Tipo de dato | Descripción |
+| --- | --- | --- |
+| `container` | string | CSS Selector (identificador) del elemento donde se quiere mostrar el botón de pago. |
+| `type` (opcional) | string | Permite definir el tipo de botón. Actualmente solo acepta el valor ‘wallet’ que muestra un botón de pago con la marca de Mercado Pago. **Valor por defecto**: botón de pago simple. |
+| `label` (opcional) | string | Valor del texto del botón. **Por defecto**: “Pagar” |
+
+Puedes utilizar este método de dos formas distintas: 
+
+* Incluyendo la opción `render` con sus respectivos parámetros dentro de las opciones de inicialización del checkout.
+* Invocando a la función `render` posteriormente, desde el lugar que prefieras dentro de tu código, con sus respectivos parámetros.
+
+[[[
+  ```javascript
+ // Dentro de las opciones de inicialización 
+const checkout = mp.checkout({
+tokenizer: {
+  totalAmount: 4000,
+  backUrl: 'https://www.mi-sitio.com/process'
+},
+render: {
+  container: '.tokenizer-container', // Indica dónde se mostrará el botón
+  label: 'Pagar' // Cambia el texto del botón de pago (opcional)
+ }
+});
+
+// Invocando la función posteriormente
+checkout.render({
+  container: '.tokenizer-container',
+  label: 'Pagar'
+});
+  ```
+]]]
+
+#### Botón de pago por defecto:
+
+![Default Label Button](/images/web-payment-checkout/default_label_button.png)<br/>
+
+#### Personalizado:
+
+![Custom Label Button](/images/web-payment-checkout/custom_label_button.png)<br/>
 
 #### Estilo
-
 Para utilizar tu propio estilo, incluye el siguiente código CSS:
 
 ```css
@@ -43,34 +93,40 @@ button.mercadopago-button {
 
 ![Botón de pago con estilo personalizado Mercado Pago Web Tokenize Checkout](/images/paybutton-modified-css.png)
 
+### Apertura automática del Web Tokenize Checkout
+Añade el parámetro `autoOpen` a tus opciones de inicialización del checkout en tu integración para **mostrar automáticamente el Web Tokenize Checkout**, sin necesitar de la interacción con un botón u otro elemento para su apertura.
 
-## Colores en la interfaz
-
-### Elementos
-
-#### Estado por defecto
-
-![Interfaz por defecto Mercado Pago Web Tokenize Checkout](/images/cow/cow-ui-elements.png)
-
-#### Personalización
-
-Los elementos que pueden personalizarse son:
-
-- Botones
-- Campos de ingreso de datos: inputs
-- Elementos de transiciones: spinners y barras de progreso
-- Bordes
-
-Puedes modificar el color de esos elementos agregando el atributo `data-elements-color` al fragmento de código HTML.
-
-El valor del atributo deberá ser en formato hexadecimal. Por ejemplo:
-
-```html
-data-elements-color="#c0392b"
+[[[
+```javascript
+// Inicializa el checkout
+const checkout = mp.checkout({
+  tokenizer: {
+    totalAmount: 4000,
+    backUrl: 'https://www.mi-sitio.com/process'
+  },
+  autoOpen: true, // Habilita la apertura automática del checkout
+});
 ```
+]]]
 
-![Interfaz personalizada Mercado Pago Web Tokenize Checkout](/images/cow/cow-ui-elements--custom.png)
+## Colores para encabezado y elementos
 
+Agrega el atributo `theme` de la siguiente manera a las opciones de inicialización para personalizar el color de algunos elementos y el encabezado de la interfaz del checkout.
+
+[[[
+```html
+<script>
+  mp.checkout({
+    tokenizer: {...},
+    render: {...},
+    theme: {
+        elementsColor: ''.
+        headerColor: '',
+    }
+  });
+</script>
+```
+]]]
 
 ### Encabezado
 
@@ -80,15 +136,42 @@ data-elements-color="#c0392b"
 
 #### Personalización
 
-Puedes modificar el color del encabezado agregando el atributo `data-header-color` al fragmento de código HTML.
+Modifica el color del encabezado agregando el atributo `headerColor` al objeto `theme`. El valor del atributo deberá ser en formato hexadecimal. Por ejemplo:
 
-El valor del atributo deberá ser en formato hexadecimal. Por ejemplo:
-
-```html
-data-header-color="#c0392b"
+[[[
+```javascript
+theme: {
+  headerColor: '#c0392b'
+}
 ```
+]]]
 
 ![Encabezado personalizado Mercado Pago Web Tokenize Checkout](/images/cow/cow-ui-header--custom.png)
+
+### Elementos
+
+#### Estado por defecto
+
+![Interfaz por defecto Mercado Pago Web Tokenize Checkout](/images/cow/cow-ui-elements.png)
+
+#### Personalización
+
+Los elementos que puedes personalizar son:
+
+* Botones
+* Campos de ingreso de datos
+* Elementos de transiciones: spinners y barras de progreso
+* Bordes
+
+Modifica el color de esos elementos agregando el atributo `elementsColor` al objeto `theme`. El valor del atributo debe estar en formato hexadecimal. Por ejemplo:
+
+```javascript
+theme: {
+  elementsColor: '#c0392b'
+}
+```
+
+![Interfaz personalizada Mercado Pago Web Tokenize Checkout](/images/cow/cow-ui-elements--custom.png)
 
 
 ### Color de texto
@@ -97,16 +180,20 @@ El color del texto de los botones y encabezado, **será determinado automáticam
 
 Para un color de elemento *claro*, el color del texto será *negro* o `#000`. Por ejemplo:
 
-```html
-data-elements-color="#81ecec" <!-- Color claro -->
+```javascript
+theme: {
+    elementsColor: '#81ecec' // Color claro
+}
 ```
 
 ![Personalización del color de fuente Mercado Pago Web Tokenize Checkout](/images/cow/cow-ui-fontcolor__light.png)
 
 Para un color de elementos *oscuro*, el color del texto será *blanco* o `#fff`. Por ejemplo:
 
-```html
-data-elements-color="#8e44ad" <!-- Color oscuro -->
+```javascript
+theme: {
+    elementsColor: '#8e44ad' // Color oscuro
+}
 ```
 
 ![Personalización de color de fuente en elementos oscuros Mercado Pago Web Tokenize Checkout](/images/cow/cow-ui-fontcolor__dark.png)
@@ -120,48 +207,64 @@ data-elements-color="#8e44ad" <!-- Color oscuro -->
 
 ### Personalización
 
-Los atributos que pueden agregarse y modificarse son los siguientes.
+Puedes agregar y modificar elementos al detalle de la compra sumando el atributo `summary` dentro del objeto `tokenizer` en tus configuraciones de inicialización de la siguiente manera: 
 
-**Montos numéricos:**
+[[[
+  ```javascript
+mp.checkout({
+  tokenizer: {
+      …
+      summary: {...}, 
+  },
+  render: {...},
+})
+  ```
+]]]
 
-- Productos: `data-summary-product`
-- Cantidad mínima de cuotas: `data-min-installments`
-- Cantidad máxima de cuotas: `data-max-installments`
-- Descuento: `data-summary-discount`
-- Envío: `data-summary-shipping`
-- Recargos: `data-summary-charge`
-- Impuestos: `data-summary-taxes`
-- Saldo pendiente: `data-summary-arrears`
+Los atributos que pueden agregarse y modificarse son los siguientes: 
 
-**Textos:**
-
-- Para modificar el título "Productos": `data-summary-product-label`
-- Para modificar el título "Descuento": `data-summary-discount-label`
-
+| Atributo | Descripción |
+| --- | --- |
+| `productLabel` <br> `product`| Productos |
+| `installments` | Cantidad de cuotas |
+| `discount` <br> `discountLabel`| Descuento |
+| `shipping` | Envío |
+| `charge` | Recargo |
+| `taxes` | Impuestos |
+| `arrears` | Saldo pendiente |
 
 #### Productos
 
-Usando el atributo `data-summary-product-label`, puedes especificar el texto que aparece como *"Productos"* en el detalle de la compra. Por ejemplo, puedes agregar el detalle de lo que se está pagando:
+Con  el atributo `productLabel` puedes especificar el texto que aparece como *"Productos"* en el detalle de la compra. Por ejemplo, puedes agregar el detalle de lo que se está pagando:
 
-```html
-data-summary-product-label="4 productos"
+```javascript
+summary: {
+     productLabel: ‘4 productos’
+}
 ```
 
-Mediante el atributo `data-summary-product`, puedes especificar el monto en el detalle de la compra. Por ejemplo:
+Mediante el atributo `product` puedes especificar el monto en el detalle de la compra. Por ejemplo:
 
-```html
-data-summary-product="654"
+```javascript
+summary: {
+     product: 654
+}
 ```
 
 #### Cantidad mínima y máxima de cuotas
 
-Usando el atributo `data-min-installments` o `data-max-installments`, puedes limitar el mínimo y máximo de la cantidad de cuotas que deseas ofrecer a tu pagador. 
-Por ejemplo:
+Personaliza los límites de cuotas sumando el atributo `installments` dentro del objeto tokenizer en tus configuraciones de inicialización, y agregando `minInstallments` o `maxInstallments` para establecer la cantidad mínima y máxima de cuotas respectivamente. Por ejemplo: 
 
-```html
-data-min-installments = 1
-
-data-max-installments = 6
+```javascript
+mp.checkout({
+  tokenizer: {
+    installments: {
+        minInstallments: 1,
+        maxInstallments: 12,
+    }, 
+  },
+  render: {...},
+});
 ```
 
 > El valor mínimo para ambos atributos es `1`. Si completas los atributos con el mismo valor, se salteará la sección de cuotas del checkout.
@@ -169,16 +272,20 @@ data-max-installments = 6
 
 #### Descuento
 
-Usando el atributo `data-summary-discount-label`, puedes especificar el texto que aparece como *"Descuento"* en el detalle de la compra. Por ejemplo, puedes agregar el porcentaje de descuento:
+Usa el atributo `discountLabel` para  especificar el texto que aparece como *"Descuento"* en el detalle de la compra. Por ejemplo, puedes agregar el porcentaje de descuento:
 
-```html
-data-summary-discount-label="Descuento 10%"
+```javascript
+summary: {
+     discountLabel: ‘Descuento 10%’
+}
 ```
 
-Mediante el atributo `data-summary-discount`, puedes especificar el monto de descuento en el detalle de la compra. Por ejemplo:
+Mediante el atributo `discount`, agrega el monto de descuento en el detalle de la compra. Por ejemplo:
 
-```html
-data-summary-discount="65.4"
+```javascript
+summary: {
+     discount: 70
+}
 ```
 
 > NOTE
@@ -190,10 +297,12 @@ data-summary-discount="65.4"
 
 #### Envío
 
-Usando el atributo `data-summary-shipping`, puedes especificar el monto de envío en el detalle de la compra. Por ejemplo:
+Con el atributo `shipping` puedes especificar el monto de envío en el detalle de la compra. Por ejemplo:
 
-```html
-data-summary-shipping="10"
+```javascript
+summary: {
+     shipping: 100
+}
 ```
 
 > NOTE
@@ -205,10 +314,12 @@ data-summary-shipping="10"
 
 #### Recargos
 
-Usando el atributo `data-summary-charge`, puedes especificar el monto de recargos en el detalle de la compra. Por ejemplo:
+Usa el atributo `charge` para especificar el monto de recargos en el detalle de la compra. Por ejemplo:
 
-```html
-data-summary-charge="10"
+```javascript
+summary: {
+      charge: 10
+}
 ```
 
 Aparecerá en el detalle de la compra bajo el concepto de *"Recargos"*.
@@ -216,20 +327,24 @@ Aparecerá en el detalle de la compra bajo el concepto de *"Recargos"*.
 
 #### Impuestos
 
-Usando el atributo `data-summary-taxes`, puedes especificar el monto de impuestos en el detalle de la compra. Por ejemplo:
+Con el atributo `taxes` puedes especificar el monto de impuestos en el detalle de la compra. Por ejemplo:
 
-```html
-data-summary-taxes="10"
+```javascript
+summary: {
+      taxes: 10
+}
 ```
 
 Aparecerá en el detalle de la compra bajo el concepto de *"Impuestos"*.
 
 #### Saldo pendiente
 
-Usando el atributo `data-summary-arrears`, puedes especificar el monto de saldo pendiente en el detalle de la compra. Por ejemplo:
+Agrega el atributo `arrears` para especificar el monto de saldo pendiente en el detalle de la compra. Por ejemplo:
 
-```html
-data-summary-arrears="10"
+```javascript
+summary: {
+      arrears: 10
+}
 ```
 
 Aparecerá en el detalle de la compra bajo el concepto de *"Saldo pendiente"*.

@@ -198,57 +198,151 @@ Depois, do seu frontend, adicione o seguinte código para exibir o botão de pag
 
 [[[
 ```php
-<script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-  data-preference-id="<?php echo $preference->id; ?>"
-  data-button-label="Paga com Mercado Pago"
-  data-button-type="wallet">
+// SDK Client-Side Mercado Pago
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script>
+// Adicione as credenciais do SDK
+const mp = new MercadoPago('PUBLIC_KEY', {
+      locale: 'es-AR'
+});
+
+const preferenceId = "<?php echo $preference->id; ?>"
+
+// Inicializa o checkout
+mp.checkout({
+    preference: {
+      id: 'YOUR_PREFERENCE_ID'
+    },
+    render: {
+      container: '.cho-container', // Indica onde o botão de pagamento será exibido
+      label: 'Pagar com Mercado Pago', // Muda o texto do botão de pagamento (opcional)
+      type: 'wallet', // Aplica a marca do Mercado Pago ao botão
+    }
+});
 </script>
 ```
 ```node
-<script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-  data-preference-id="<%= global.id %>"
-  data-button-label="Paga com Mercado Pago"
-  data-button-type="wallet">
+// SDK Client-Side Mercado Pago
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script>
+// Adicione as credenciais do SDK
+const mp = new MercadoPago('PUBLIC_KEY', {
+      locale: 'es-AR'
+});
+
+// Inicializa o checkout
+mp.checkout({
+    preference: {
+      id: 'YOUR_PREFERENCE_ID'
+    },
+    render: {
+      container: '.cho-container', // Indica onde o botão de pagamento será exibido
+      label: 'Pagar com Mercado Pago', // Muda o texto do botão de pagamento (opcional)
+      type: 'wallet', // Aplica a marca do Mercado Pago ao botão
+    }
+});
 </script>
+
 ```
 ```java
-<script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-  data-preference-id="${preference.id}"
-  data-button-label="Paga com Mercado Pago"
-  data-button-type="wallet">
+// SDK Client-Side Mercado Pago
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script>
+// Adicione as credenciais do SDK
+const mp = new MercadoPago('PUBLIC_KEY', {
+      locale: 'es-AR'
+});
+
+const preferenceId = ${preference.id};
+
+// Inicializa o checkout
+mp.checkout({
+    preference: {
+      id: 'YOUR_PREFERENCE_ID'
+    },
+    render: {
+      container: '.cho-container', // Indica onde o botão de pagamento será exibido
+      label: 'Pagar com Mercado Pago', // Muda o texto do botão de pagamento (opcional)
+      type: 'wallet', // Aplica a marca do Mercado Pago ao botão
+    }
+});
 </script>
 ```
 ```ruby
-<script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-  data-preference-id="<%= @preference_id %>"
-  data-button-label="Paga com Mercado Pago"
-  data-button-type="wallet">
+# SDK Client-Side Mercado Pago
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script>
+# Adicione as credenciais do SDK
+const mp = new MercadoPago('PUBLIC_KEY', {
+      locale: 'es-AR'
+});
+
+const preferenceId = "<%= @preference_id %>";
+
+# Inicializa o checkout
+mp.checkout({
+    preference: {
+      id: 'YOUR_PREFERENCE_ID'
+    },
+    render: {
+      container: '.cho-container', # Indica onde o botão de pagamento será exibido
+      label: 'Pagar com Mercado Pago', # Muda o texto do botão de pagamento (opcional)
+      type: 'wallet', # Aplica a marca do Mercado Pago ao botão
+    }
+});
 </script>
 ```
 ```csharp
-<script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-  data-preference-id="@Html.DisplayFor(model => model.id)"
-  data-button-label="Paga com Mercado Pago"
-  data-button-type="wallet">
+// SDK Client-Side Mercado Pago
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script>
+// Adicione as credenciais do SDK
+const mp = new MercadoPago('PUBLIC_KEY', {
+      locale: 'es-AR'
+});
+
+const preferenceId = @Html.DisplayFor(model => model.id);
+
+// Inicializa o checkout
+mp.checkout({
+    preference: {
+      id: 'YOUR_PREFERENCE_ID'
+    },
+    render: {
+      container: '.cho-container', // Indica onde o botão de pagamento será exibido
+      label: 'Pagar com Mercado Pago', // Muda o texto do botão de pagamento (opcional)
+      type: 'wallet', // Aplica a marca do Mercado Pago ao botão
+    }
+});
 </script>
 ```
 ```python
-<script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-  data-preference-id="{{ preference_id }}"
-  data-button-label="Paga com Mercado Pago"
-  data-button-type="wallet">
+# SDK Client-Side Mercado Pago
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script>
+# Adicione as credenciais do SDK
+const mp = new MercadoPago('PUBLIC_KEY', {
+      locale: 'es-AR'
+});
+
+const preferenceId = {{ preference_id }}
+
+# Inicializa o checkout
+mp.checkout({
+    preference: {
+      id: 'YOUR_PREFERENCE_ID'
+    },
+    render: {
+      container: '.cho-container', # Indica onde o botão de pagamento será exibido
+      label: 'Pagar com Mercado Pago', # Muda o texto do botão de pagamento (opcional)
+      type: 'wallet', # Aplica a marca do Mercado Pago ao botão
+    }
+});
 </script>
 ```
 ]]]
 
-
-Para mais informações sobre cada atributo, confira a [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/preferences/_checkout_preferences/post). 
+Para mais informações sobre cada atributo, confira a [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/preferences/_checkout_preferences/post).
 
 Pronto! você já tem a carteira do Mercado Pago integrada no seu site.
 
@@ -256,7 +350,7 @@ Pronto! você já tem a carteira do Mercado Pago integrada no seu site.
 >
 > Importante
 >
-> Para testar, não esqueça de acessar de outro navegador ou encerrar a sessão da sua conta Mercado Pago já que você não pode fazer um pagamento para si mesmo.<br/> 
+> Para testar, não esqueça de acessar de outro navegador ou encerrar a sessão da sua conta Mercado Pago já que você não pode fazer um pagamento para si mesmo.<br/>
 
 ---
 
