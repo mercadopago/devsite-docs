@@ -72,6 +72,7 @@ checkout.render({
 
 ![Custom Label Button](/images/web-payment-checkout/custom_label_button.png)<br/><br/>
 
+
 #### Style
 
 To use your own style, include the following CSS code:
