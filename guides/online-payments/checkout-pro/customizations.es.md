@@ -208,6 +208,7 @@ Agrega el atributo `theme` de la siguiente manera a las opciones de inicializaci
 </script>
 ```
 ]]]
+
 > NOTE
 >
 > Nota

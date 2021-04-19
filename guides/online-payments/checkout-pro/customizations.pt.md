@@ -209,6 +209,18 @@ Adicione o atributo `theme` da seguinte maneira às opções de inicialização 
 >
 > válido somente para o esquema modal.
 
+### Cabeçalho
+
+Muda a cor do cabeçalho adicionando o atributo `headerColor` no objeto `theme`. O valor do atributo deve estar no formato hexadecimal. Por exemplo:
+
+[[[
+```javascript
+theme: {
+  headerColor: '#c0392b'
+}
+```
+]]]
+
 ### Elementos
 
 Os elementos que podem ser customizados são:
