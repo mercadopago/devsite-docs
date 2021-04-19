@@ -211,7 +211,7 @@ const preferenceId = "<?php echo $preference->id; ?>"
 // Inicializa o checkout
 mp.checkout({
     preference: {
-      id: 'YOUR_PREFERENCE_ID'
+      id: preferenceId
     },
     render: {
       container: '.cho-container', // Indica onde o botão de pagamento será exibido
@@ -258,7 +258,7 @@ const preferenceId = ${preference.id};
 // Inicializa o checkout
 mp.checkout({
     preference: {
-      id: 'YOUR_PREFERENCE_ID'
+      id: preferenceId
     },
     render: {
       container: '.cho-container', // Indica onde o botão de pagamento será exibido
@@ -282,7 +282,7 @@ const preferenceId = "<%= @preference_id %>";
 # Inicializa o checkout
 mp.checkout({
     preference: {
-      id: 'YOUR_PREFERENCE_ID'
+      id: preferenceId
     },
     render: {
       container: '.cho-container', # Indica onde o botão de pagamento será exibido
@@ -306,7 +306,7 @@ const preferenceId = @Html.DisplayFor(model => model.id);
 // Inicializa o checkout
 mp.checkout({
     preference: {
-      id: 'YOUR_PREFERENCE_ID'
+      id: preferenceId
     },
     render: {
       container: '.cho-container', // Indica onde o botão de pagamento será exibido
@@ -330,7 +330,7 @@ const preferenceId = {{ preference_id }}
 # Inicializa o checkout
 mp.checkout({
     preference: {
-      id: 'YOUR_PREFERENCE_ID'
+      id: preferenceId
     },
     render: {
       container: '.cho-container', # Indica onde o botão de pagamento será exibido

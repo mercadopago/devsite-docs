@@ -42,7 +42,7 @@ Puedes utilizar este método de dos formas distintas:
 [[[
   ```javascript
  // Dentro de las opciones de inicialización 
-mp.checkout({
+const checkout = mp.checkout({
    preference: {
        id: 'YOUR_PREFERENCE_ID'
    },
@@ -53,7 +53,7 @@ mp.checkout({
 });
 
 // Invocando la función posteriormente
-mp.checkout.render({
+checkout.render({
     container: '.cho-container',
     label: 'Pagar'
 });
