@@ -45,9 +45,9 @@ Este proceso explicará la instalación del módulo Mercado Pago vía Composer:
 6) ¡Listo! El módulo del Mercado Pago fue instalado con éxito.
 
 
-## Configuración de la tarjeta de crédito----[mlb]----, PIX------------ y tickets (Custom Checkout)
+## Configuración de la tarjeta de crédito----[mlb]----, Pix------------ y tickets (Custom Checkout)
 
-Aprende el proceso paso a paso para configurar el módulo para aceptar pagos a través de Tarjeta de Crédito----[mlb]----, PIX------------ y Ticket en Custom Checkout (Transparente). 
+Aprende el proceso paso a paso para configurar el módulo para aceptar pagos a través de Tarjeta de Crédito----[mlb]----, Pix------------ y Ticket en Custom Checkout (Transparente). 
 
 1) Vaya al menú **Stores > Configuration > Sales > Payment Methods**:
 
@@ -63,14 +63,14 @@ En primer lugar, ve al método que quieres habilitar.
 
 Para habilitar pagos con tarjeta > **Checkout - Credit and Debit Card**.
 Para habilitar pagos con ticket > **Custom Checkout - Offline Payment Methods (Ticket)**.
-----[mlb]----Para habilitar pagos con PIX  > **Custom Checkout - PIX**.------------
+----[mlb]----Para habilitar pagos con Pix  > **Custom Checkout - Pix**.------------
 
 ----[mlb]----
 > WARNING
 >
 > Importante
 >
-> **Antes de configurar el PIX como método de pago, recuerda hacer esto:**
+> **Antes de configurar el Pix como método de pago, recuerda hacer esto**:
 >
 > - [Descarga la última versión](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) para actualizar tu plugin de Mercado Pago.
 >
@@ -81,7 +81,7 @@ Al acceder, haz clic en el botón **Configure** para ver las opciones de configu
 
 ![Mercado Pago Custom Checkout Configuration](images/magento2/mercadopago_custom_checkout_configuration.png)
 
-4) ¡Listo! El método de pago se habilitará correctamente en el checkout.
+4) ¡Listo! El medio de pago se habilitará correctamente en el checkout.
 
 
 ## Configuración del Checkout Pro
@@ -96,7 +96,7 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con el Ch
 
 ![Checkout Pro Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
 
-4) ¡Listo! El Checkout Pro ha sido configurado y habilitado con éxito!
+4) ¡Listo! Checkout Pro ha sido configurado y habilitado con éxito.
 
 
 ## Configuración de estado de las notificaciones de Pago

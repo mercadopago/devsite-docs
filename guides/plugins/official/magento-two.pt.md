@@ -65,9 +65,9 @@ Esse processo irá explicar a instalação do módulo Mercado Pago via Composer:
 6) Pronto! o módulo do Mercado Pago foi instalado com sucesso.
 
 
-## Configurações de Cartão de Crédito----[mlb]----, PIX------------ e Boleto (Custom Checkout)
+## Configurações de Cartão de Crédito----[mlb]----, Pix------------ e Boleto (Custom Checkout)
 
-Veja o passo a passo para configurar o módulo para aceitar pagamentos via Cartão de crédito----[mlb]----, PIX------------ e Boleto no Custom Checkout (Transparente). 
+Veja o passo a passo para configurar o módulo para aceitar pagamentos via Cartão de crédito----[mlb]----, Pix------------ e Boleto no Custom Checkout (Transparente). 
 
 1) Vá até o menu **Stores > Configuration > Sales > Payment Methods**:
 
@@ -83,14 +83,14 @@ Primeiro, acesse o método que você deseja ativar.
 
 Para habilitar pagamentos por cartão > **Checkout - Credit and Debit Card**.
 Para habilitar pagamentos por boleto > **Custom Checkout - Offline Payment Methods (Ticket)**.
-----[mlb]----Para habilitar pagamentos por PIX  > **Custom Checkout - PIX**.------------
+----[mlb]----Para habilitar pagamentos por Pix  > **Custom Checkout - Pix**.------------
 
 ----[mlb]----
 > WARNING
 >
 > Importante
 >
-> **Antes de configurar o PIX como meio de pagamento, lembre-se de:**
+> **Antes de configurar o Pix como meio de pagamento, lembre-se de**:
 >
 > - [Baixar a última versão](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) para atualizar seu plugin do Mercado Pago.
 >

@@ -65,9 +65,9 @@ This process will explain the installation of the Mercado Pago module via Compos
 6) Very Good! The module of Mercado Pago was successfully installed.
 
 
-## Credit Card----[mlb]----, PIX------------ and Ticket Configuration (Custom Checkout)
+## Credit Card----[mlb]----, Pix------------ and Ticket Configuration (Custom Checkout)
 
-Here is how to set up the module to accept Credit Car ----[mlb]----, PIX------------ and Boleto payments in Custom Checkout (Transparent).
+Here is how to set up the module to accept Credit Car ----[mlb]----, Pix------------ and Boleto payments in Custom Checkout (Transparent).
 
 1) Go to **Stores > Configuration > Sales > Payment Methods**.
 
@@ -83,14 +83,14 @@ First, access the method that you want to enable.
 
 To enable payments via credit card > **Checkout - Credit and Debit Card**.
 To enable payments via ticket > C**ustom Checkout - Offline Payment Methods (Ticket)**.
-----[mlb]----To enable payments via PIX  > **Custom Checkout - PIX**.------------
+----[mlb]----To enable payments via Pix  > **Custom Checkout - Pix**.------------
 
 ----[mlb]----
 > WARNING
 >
 > Important
 >
-> **Before setting up PIX as a payment method, remember to:**
+> **Before setting up Pix as a payment method, remember to:**
 >
 > - [Download the latest version](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) to update your Mercado Pago plugin.
 >
@@ -116,7 +116,7 @@ This process will explain how to configure the module to accept payments with Ch
 
 ![Checkout Pro Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
 
-4) Very good! The Checkout Pro with Credit Card and Ticket has been configured and enable successfully!
+4) Very good! Checkout Pro with Credit Card and Ticket has been configured and enable successfully.
 
 
 ## Payment Notification status settings
