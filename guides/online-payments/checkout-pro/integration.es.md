@@ -15,7 +15,7 @@ Usa los [ejemplos descargables](#bookmark_ejemplos_descargables) para conocer la
 	1.2 Configura la preferencia según tu producto o servicio.
 
 2. Suma el checkout a tu sitio
-   
+
 	2.1 Suma la SDK MercadoPago.js V2 en tu frontend.
 
 	2.2 Agrega las credenciales de la SDK para habilitar su uso e inicializa el checkout con la preferencia creada.
@@ -30,7 +30,7 @@ Instalar el Checkout Pro consta de dos pasos:
 >
 > h3
 >
-> &nbsp;1. Genera tu preferencia
+> 1. Genera tu preferencia
 
 Desde tu backend, escribe el siguiente código que consta de dos partes: 
 
@@ -83,7 +83,7 @@ sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 
 ----[mla, mlb, mlu, mpe, mlm]----
 
-> Ten en cuenta que es necesario configurar las `back_urls` si deseas volver a tu sitio al finalizar el pago. Para más información, puedes visitar la sección [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/advanced-integration#bookmark_url_de_retorno). 
+> Ten en cuenta que es necesario configurar las `back_urls` si deseas volver a tu sitio al finalizar el pago. Para más información, puedes visitar la sección [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/advanced-integration#bookmark_url_de_retorno).
 
 [[[
  ```php
@@ -409,65 +409,65 @@ curl -X POST \
 >
 > h3
 >
-> &nbsp;2. Suma el Checkout Pro a tu sitio
+> 2. Suma el Checkout Pro a tu sitio
 
 
-Ahora desde tu frontend, sigue estos pasos para poder sumar el checkout a tu sitio: 
+Ahora desde tu frontend, sigue estos pasos para poder sumar el checkout a tu sitio:
 
-2.1. Agrega la SDK MercadoPago.js V2 a tu proyecto: 
+2.1. Agrega la SDK MercadoPago.js V2 a tu proyecto:
 
 [[[
 ```php
-// SDK MercadoPago.js V2 
+// SDK MercadoPago.js V2
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 ```node
-// SDK MercadoPago.js V2 
+// SDK MercadoPago.js V2
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 ```java
-// SDK MercadoPago.js V2 
+// SDK MercadoPago.js V2
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 ```ruby
-# SDK MercadoPago.js V2 
+# SDK MercadoPago.js V2
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 ```csharp
-// SDK MercadoPago.js V2 
+// SDK MercadoPago.js V2
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 ```python
-# SDK MercadoPago.js V2 
+# SDK MercadoPago.js V2
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 ]]]
 
-2.2. Agrega las credenciales de la SDK para su uso e inicializa tu checkout con el ID de la preferencia creada previamente y el identificador del elemento donde deberá mostrarse el botón de pago.
+2.2. Configura las credenciales de la SDK para su uso e inicializa tu checkout con el ID de la preferencia creada previamente y el identificador del elemento donde deberá mostrarse el botón de pago.
 
 [[[
 ```html
 <script>
-// Agrega credenciales de SDK 
+// Agrega credenciales de SDK
   const mp = new MercadoPago('PUBLIC_KEY', {
         locale: 'es-AR'
   });
-  
-  // Inicializa el checkout 
+
+  // Inicializa el checkout
   mp.checkout({
       preference: {
           id: 'YOUR_PREFERENCE_ID'
       },
       render: {
             container: '.cho-container', // Indica dónde se mostrará el botón de pago
-            label: 'Pagar', // Cambia el texto del botón de pago (opcional) 
+            label: 'Pagar', // Cambia el texto del botón de pago (opcional)
       }
 });
 </script>
 ```
 ]]]
 
-En este caso, se mostrará un botón de pago que abrirá el Checkout Pro. 
+En este caso, se mostrará un botón de pago que abrirá el Checkout Pro.
 
 Puedes consultar otras maneras de abrir el checkout en la [sección de Personalizaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/customizations).
 
@@ -475,9 +475,10 @@ Puedes consultar otras maneras de abrir el checkout en la [sección de Personali
 >
 > Importante
 >
-> No te olvides de acceder desde otro navegador o cerrar la sesión de tu cuenta de Mercado Pago antes de probarlo. No puedes pagar con la misma cuenta que creaste el formulario de pago.<br/> 
+> No te olvides de acceder desde otro navegador o cerrar la sesión de tu cuenta de Mercado Pago antes de probarlo. No puedes pagar con la misma cuenta que creaste el formulario de pago.<br/>
 
 #### ¡Excelente! Terminaste tu integración.
+
 _Haz clic en el link dentro de tu sitio y [prueba la integración de tu Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/test-integration)_.<br/><br/>
 
 ## Ejemplos descargables
