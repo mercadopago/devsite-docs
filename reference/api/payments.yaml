@@ -11,7 +11,6 @@ paths:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
-        - $ref: '#/tags/qr-code'
         - $ref: '#/tags/subscriptions'
       summary: Create payments
       description: Create a payment and add all the information you need. Remember to add the payment details and the payer's information
@@ -1234,7 +1233,6 @@ paths:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
-        - $ref: '#/tags/qr-code'
         - $ref: '#/tags/subscriptions'
       summary: Update a payment
       description: Renew the details of a payment when you need it. Indicate the payment ID and send the parameters with the information you want to update

@@ -187,41 +187,27 @@ paths:
           required: true
           schema:
             type: string
-            example: 12123adfasdf123u4u
+            example: 446566691
         - name: external_store_id
           in: path
           description: External Store Id
           required: true
           schema:
             type: string
-            example: 12123adfasdf123u4u
+            example: SUC001
         - name: external_pos_id
           in: path
           description: External POS Id
           required: true
           schema:
             type: string
-            example: 12123adfasdf123u4u
+            example: SUC001POS001
       requestBody:
         content:
           application/json:
             schema:
               type: object
               properties:
-                user_id:
-                  type: string
-                  description: User identifier.
-                  example: FJ12399-123JAF
-                external_store_id:
-                  type: string
-                  description: External_id of the store defined by integrator system.
-                  example: 123123ABIOPPQ1
-                external_pos_id:
-                  type: string
-                  description: >-
-                    External_id of the point of sale defined by integrator
-                    system.
-                  example: 928GAO199DB
                 external_reference:
                   type: string
                   description: Reference you can synchronize with your sale system.
@@ -289,9 +275,10 @@ paths:
                     id:
                       type: number
                       description: Mercado Pago's USER_ID of the integrator system.
+                      example: 446566691
                 cash_out:
                   type: object
-                  description: Cash withdrawal.
+                  description: Cash withdrawal (Commercial contact required)
                   properties:
                     amount:
                       type: number
