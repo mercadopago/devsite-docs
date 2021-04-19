@@ -10,19 +10,49 @@ Defina o viewport adicionando o seguinte código dentro da tag `<head>` de seu s
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 ```
 
-### Passo 2: Incorporar o código javascript
+### Passo 2: Incorporar o Web Tokenize Checkout ao seu site
 
-Este _fragmento de código javascript_ criará um botão de pagamento. Quando o comprador pressionar o botão aparecerá o checkout. Inclua o seguinte código no lugar onde deverá estar o botão dentro de seu site:
+Para adicionar o Web Tokenize Checkout deve seguir os seguintes passos:
+
+Quando você tiver adicionado o código ao seu site, será adicionado um botão de pagamento que inicializará o checkout ao ser pressionado.
+
+1. Adicione o SDK MercadoPago.js V2:
 
 ```html
-<form action="https://www.meu-site.com/processar-pagamento" method="POST">
-  <script
-    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
-    data-public-key="ENV_PUBLIC_KEY"
-    data-transaction-amount="100.00">
-  </script>
-</form>
+<html>
+  <body>
+    ...
+    <!-- SDK Client-Side Mercado Pago -->
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+  </body>
+</html>
 ```
+
+2. Configure as credenciais do SDK para seu uso e inicializa seu checkout com o ID da preferência criada previamente e o identificador do elemento onde deverá ser apresentado o botão de pagamento:
+
+```html
+<script>
+// Adicione as credenciais do SDK
+const mp = new MercadoPago('PUBLIC_KEY', {locale: 'es-AR'});
+
+// Inicializa o Web Tokenize Checkout
+mp.checkout({
+  tokenizer: {
+    totalAmount: 4000,
+    backUrl: 'https://www.minha-loja.com/process'
+  },
+ render: {
+    container: '.tokenizer-container', // Indica onde o botão de pagamento será exibido
+    label: 'Pagar' // Muda o texto do botão de pagamento (opcional)
+ }
+});
+</script>
+```
+
+Neste caso, será mostrado um botão de pagamento que abrirá o Web Tokenize Checkout.
+
+Você pode consultar outras maneiras de abrir o checkout na [seção de Personalizações](https://www.mercadopago[FAKER][URl][DOMAIN]/developers/pt/guides/online-payments/web-tokenize-checkout/personalization).
+
 Você pode encontrar sua Public key na [seção "Credenciais"]([FAKER][CREDENTIALS][URL]).
 
 > Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials).

@@ -28,7 +28,7 @@ The following code will insert a payment button. When the buyer presses the butt
 </html>
 ```
 
-2. Add the SDK credentials to enable its use and initialize the checkout using the ID from the preference created earlier and the ID or selector for the element where the payment button should be displayed. 
+2. Add the SDK credentials to enable its use and initialize the checkout using the ID from the preference created earlier and the ID or selector for the element where the payment button should be displayed:
 
 ```html
 <script>
@@ -39,16 +39,18 @@ const mp = new MercadoPago('PUBLIC_KEY', {locale: 'es-AR'});
 mp.checkout({
   tokenizer: {
     totalAmount: 4000,
-    backUrl: 'https://www.mi-sitio.com/process'
+    backUrl: 'https://www.my-store.com/process'
   },
  render: {
     container: '.tokenizer-container', // Indicates where the payment button is going to be rendered
-    label: 'Pagar' // Changes the button label (optional)
+    label: 'Pay' // Changes the button label (optional)
  }
 });
 </script>
 ```
-This will display a payment button that will open the Web Tokenize Checkout. 
+
+This will display a payment button that will open the Web Tokenize Checkout.
+
 You can check other ways to open the checkout in the [Customization section](https://www.mercadopago[FAKER][URl][DOMAIN]/developers/en/guides/online-payments/web-tokenize-checkout/personalization).
 
 You can find the Public Key in the [Credentials section]([FAKER][CREDENTIALS][URL]) page.

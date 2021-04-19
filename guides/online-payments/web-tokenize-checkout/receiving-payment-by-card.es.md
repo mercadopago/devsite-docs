@@ -29,7 +29,7 @@ Una vez hayas sumado el código a tu sitio, se agregará un botón de pago que m
 </html>
 ```
 
-2. Configura las credenciales de la SDK para su uso e inicializa tu checkout con el ID de la preferencia creada previamente y el identificador del elemento donde deberá mostrarse el botón de pago.
+2. Configura las credenciales de la SDK para su uso e inicializa tu checkout con el ID de la preferencia creada previamente y el identificador del elemento donde deberá mostrarse el botón de pago:
 
 ```html
 <script>
@@ -49,7 +49,9 @@ mp.checkout({
 });
 </script>
 ```
-En este caso, se mostrará un botón de pago que abrirá el Web Tokenize Checkout. 
+
+En este caso, se mostrará un botón de pago que abrirá el Web Tokenize Checkout.
+
 Puedes consultar otras maneras de abrir el checkout en la [sección de Personalizaciones](https://www.mercadopago[FAKER][URl][DOMAIN]/developers/es/guides/online-payments/web-tokenize-checkout/personalization).
 
 Puedes encontrar tu Public key en la [sección de credenciales]([FAKER][CREDENTIALS][URL]).
