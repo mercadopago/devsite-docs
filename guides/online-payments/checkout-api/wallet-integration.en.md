@@ -203,8 +203,8 @@ Then, from your frontend, add the following code to display the Checkout Pro Wal
 
 [[[
 ```php
-// Client side Mercado Pago SDK
-<script src="https://sdk.mercadopago.com/js/v2"></script>    
+// Client-Side Mercado Pago SDK
+<script src="https://sdk.mercadopago.com/js/v2"></script>
 <script>
 // Add the SDK credentials
 const mp = new MercadoPago('PUBLIC_KEY', {
@@ -226,8 +226,8 @@ mp.checkout({
 </script>
 ```
 ```node
-// Client side Mercado Pago SDK
-<script src="https://sdk.mercadopago.com/js/v2"></script>    
+// Client-Side Mercado Pago SDK
+<script src="https://sdk.mercadopago.com/js/v2"></script>
 <script>
 // Add the SDK credentials
 const mp = new MercadoPago('PUBLIC_KEY', {
@@ -248,8 +248,8 @@ mp.checkout({
 </script>
 ```
 ```java
-// Client side Mercado Pago SDK
-<script src="https://sdk.mercadopago.com/js/v2"></script>    
+// Client-Side Mercado Pago SDK
+<script src="https://sdk.mercadopago.com/js/v2"></script>
 <script>
 // Add the SDK credentials
 const mp = new MercadoPago('PUBLIC_KEY', {
@@ -272,8 +272,8 @@ mp.checkout({
 </script>
 ```
 ```ruby
-# Client side Mercado Pago SDK
-<script src="https://sdk.mercadopago.com/js/v2"></script>    
+# Client-Side Mercado Pago SDK
+<script src="https://sdk.mercadopago.com/js/v2"></script>
 <script>
 # Add the SDK credentials
 const mp = new MercadoPago('PUBLIC_KEY', {
@@ -296,8 +296,8 @@ mp.checkout({
 </script>
 ```
 ```csharp
-// Client side Mercado Pago SDK
-<script src="https://sdk.mercadopago.com/js/v2"></script>    
+// Client-Side Mercado Pago SDK
+<script src="https://sdk.mercadopago.com/js/v2"></script>
 <script>
 // Add the SDK credentials
 const mp = new MercadoPago('PUBLIC_KEY', {
@@ -320,8 +320,8 @@ mp.checkout({
 </script>
 ```
 ```python
-# Client side Mercado Pago SDK
-<script src="https://sdk.mercadopago.com/js/v2"></script>    
+# Client-Side Mercado Pago SDK
+<script src="https://sdk.mercadopago.com/js/v2"></script>
 <script>
 # Add the SDK credentials
 const mp = new MercadoPago('PUBLIC_KEY', {
@@ -346,15 +346,15 @@ mp.checkout({
 ]]]
 
 
-For more information on each attribute, please check the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/preferences/_checkout_preferences/post). 
+For more information on each attribute, please check the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/preferences/_checkout_preferences/post).
 
-Done! You already have the Mercado Pago wallet integrated on your website. 
+Done! You already have the Mercado Pago wallet integrated on your website.
 
 > WARNING
 >
 > Important
 >
-> To test it, don't forget to log in from another browser or log out from your Mercado Pago account, as you can't pay yourself.<br/> 
+> To test it, don't forget to log in from another browser or log out from your Mercado Pago account, as you can't pay yourself.<br/>
 
 ---
 
