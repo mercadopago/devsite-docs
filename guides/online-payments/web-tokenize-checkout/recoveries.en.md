@@ -31,7 +31,7 @@ mp.checkout({
   },
  render: {
     container: '.tokenizer-container',
-    label: 'Reintentar' // button text 
+    label: 'Retry' // button text
  }
 });
 </script>

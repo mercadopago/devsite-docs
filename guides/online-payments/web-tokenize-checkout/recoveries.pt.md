@@ -18,14 +18,24 @@ Por exemplo:
 <h1>Algo não ocorreu conforme o esperado!</h1>
 <p>Ocorreu um erro com o pagamento. Por favor tente novamente mais tarde:</p>
 
-<form action="/procesar-pago" method="POST">
-  <script
-    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
-    data-public-key="ENV_PUBLIC_KEY"
-    data-transaction-amount="100.00"
-    data-button-label="Tente Novamente"> <!-- Texto do botão -->
-  </script>
-</form>
+
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+
+<script>
+const mp = new MercadoPago('PUBLIC_KEY', {locale: 'es-AR'});
+
+// IInicializa o Web Tokenize Checkout
+mp.checkout({
+  tokenizer: {
+    totalAmount: 4000,
+    backUrl: 'https://www.minha-loja.com/process'
+  },
+ render: {
+    container: '.tokenizer-container',
+    label: 'Tentar novamente'
+ }
+});
+</script>
 ```
 
 ![Retrieve the sale button Mercado Pago](/images/cow/cow-recovery-page__pt.png)
@@ -34,17 +44,7 @@ Por exemplo:
 
 Outra possibilidade, caso um pagamento seja recusado, ao chamar o *Web Tokenize Checkout* com o formulário já aberto no contexto onde originalmente o usuário carrega os dados.
 
-A opção de abrir o checkout por padrão é controlada a partir do atributo `data-open` e sendo somente questão de definir o atributo como `true`.
+A opção de abrir o checkout por padrão é controlada desde o atributo `autoOpen`, configurando o atributo como `true`.
 
-Por exemplo:
+Você pode encontrar mais informações sobre como configurar a abertura automática do checkout na [seção de Personalizações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/web-tokenize-checkout/personalization#bookmark_abertura_do_web_tokenize_checkout).
 
-```html
-<form action="/processar-pagamento" method="POST">
-  <script
-    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
-    data-public-key="ENV_PUBLIC_KEY"
-    data-transaction-amount="100.00"
-    data-open="true"> <!-- Aberto por padrão -->
-  </script>
-</form>
-```

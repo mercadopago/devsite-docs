@@ -59,7 +59,7 @@ render: {
 // Calling the function after configuring the initialization options
 checkout.render({
   container: '.tokenizer-container',
-  label: 'Pagar'
+  label: 'Pay'
 });
   ```
 ]]]

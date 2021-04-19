@@ -31,7 +31,7 @@ mp.checkout({
   },
  render: {
     container: '.tokenizer-container',
-    label: 'Reintentar’ 
+    label: 'Reintentar'
  }
 });
 </script>

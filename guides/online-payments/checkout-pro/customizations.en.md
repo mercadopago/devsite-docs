@@ -48,14 +48,14 @@ mp.checkout({
    },
    render: {
        container: '.cho-container',
-       label: 'Pagar',
+       label: 'Pay',
     }
 });
 
 // Calling the function after configuring the initialization options
 mp.checkout.render({
     container: '.cho-container',
-    label: 'Pagar'
+    label: 'Pay'
 });
   ```
 ]]]
