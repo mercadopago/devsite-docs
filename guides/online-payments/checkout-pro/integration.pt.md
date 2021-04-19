@@ -12,7 +12,7 @@ Use os [exemplos para download](#bookmark_exemplos_para_download) para conhecer 
 
 	1.1 Adicione o SDK do Mercado Pago no seu backend e adicione as credenciais para permitir seu uso.
 
-	1.2 Configure a preferência conforme seu produto ou serviço.
+	1.2 Configure a preferência conforme seu produto ou serviço.<br><br>
 
 2. Adicione o Checkout Pro ao seu site
 

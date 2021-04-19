@@ -4,9 +4,9 @@
 
 Puedes personalizar de qué forma abrir el checkout a través de funciones y atributos que pueden agregarse a la configuración en el código de tu integración:
 
-### Sin botón de pago 
+### Sin botón de pago
 
-Usa el método `open` para <b>abrir el checkout sin mostrar el botón de pago</b>. Esto te permite conectarlo al elemento de tu página web desde el que prefieras realizar la apertura del Checkout Pro. 
+Usa el método `open` para *abrir el checkout sin mostrar el botón de pago*. Esto te permite conectarlo al elemento de tu página web desde el que prefieras realizar la apertura del Checkout Pro.
 
 [[[
 ```html
@@ -26,13 +26,13 @@ const checkout = mp.checkout({
 
 ### Con botón de pago
 
-Utiliza el método `render` para mostrar un <b>botón de pago que permita la apertura del Checkout Pro</b>. Para ello, debes incluir los siguientes parámetros: 
+Utiliza el método `render` para mostrar un **botón de pago que permita la apertura del Checkout Pro**. Para ello, debes incluir los siguientes parámetros: 
 
 | Parámetro | Tipo de dato | Descripción |
 | --- | --- | --- |
-|`container`|string|CSS Selector (identificador) del elemento donde se quiere mostrar el botón de pago.|
-|`type` (opcional)|string|Permite definir el tipo de botón. Actualmente solo acepta el valor ‘wallet’ que muestra un botón de pago con el branding de Mercado Pago. <b>Valor por defecto:</b> botón de pago simple.|
-|`label` (opcional)|string|Valor del texto del botón. <b>Por defecto:</b> “Pagar”
+| `container` | string | CSS Selector (identificador) del elemento donde se quiere mostrar el botón de pago. |
+| `type` (opcional) | string | Permite definir el tipo de botón. Actualmente solo acepta el valor ‘wallet’ que muestra un botón de pago con la marca de Mercado Pago. **Valor por defecto**: botón de pago simple. |
+| `label` (opcional) | string | Valor del texto del botón. **Por defecto**: “Pagar” |
 
 Puedes utilizar este método de dos formas distintas: 
 
@@ -68,17 +68,18 @@ mp.checkout.render({
 
 ![Custom Label Button](/images/web-payment-checkout/custom_label_button.png)<br/><br/>
 
-### Apertura automática del Checkout Pro 
-Añade el parámetro `autoOpen` a tus opciones de inicialización del checkout en tu integración para <b>mostrar automáticamente el Checkout Pro</b>, sin necesitar de la interacción con un botón u otro elemento para su apertura.
+### Apertura automática del Checkout Pro
+
+Añade el parámetro `autoOpen` a tus opciones de inicialización del checkout en tu integración para **mostrar automáticamente el Checkout Pro**, sin necesitar de la interacción con un botón u otro elemento para su apertura.
 
 [[[
 ```javascript
-// Inicializa el checkout 
+// Inicializa el checkout
 const checkout = mp.checkout({
   preference: {
       id: 'YOUR_PREFERENCE_ID'
   },
-  autoOpen: true, // habilita la apertura automática del Checkout Pro
+  autoOpen: true, // Habilita la apertura automática del Checkout Pro
 });
 ```
 ]]]
@@ -214,12 +215,15 @@ Agrega el atributo `theme` de la siguiente manera a las opciones de inicializaci
 > Válido solo para el esquema modal.
 
 ### Encabezado
-Modifica el color del encabezado agregando el atributo `headerColor` al objeto `theme`. El valor del atributo deberá ser en formato hexadecimal. Por ejemplo:
+Modifica el color del encabezado agregando el atributo `headerColor` al objeto `theme`. 
+El valor del atributo deberá ser en formato hexadecimal. Por ejemplo:
+
 [[[
 ```javascript
 theme: {
   headerColor: '#c0392b'
-}```
+}
+```
 ]]]
 
 ### Elementos
@@ -240,11 +244,12 @@ theme: {
 ```
 
 ![Custom-Component](/images/web-payment-checkout/custom_components.gif)
-</p><br/>
+
 
 #### Color del texto
 
 El color del texto de los botones y encabezado, **será determinado automáticamente** dependiendo del [contraste](https://24ways.org/2010/calculating-color-contrast) del color definido.
+
 Para un color de elemento *claro*, el color del texto será *negro* o `#000`. Por ejemplo:
 
 ```javascript

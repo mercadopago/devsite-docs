@@ -12,7 +12,7 @@ Use our [sample projects](#bookmark_sample_projects) for a complete integration.
 
 	1.1 Add the SDK downloaded from Mercado Pago in your project and the credentials to enable its use.
 
-	1.2 Set the preference according to your product or service.
+	1.2 Set the preference according to your product or service.<br><br>
 
 2. Add the checkout to your website
 
@@ -466,8 +466,7 @@ curl -X POST \
 >
 > &nbsp;2. Add the Checkout Pro to your website
 
-
-Finally, from your frontend, follow these steps to add the checkout to your website.
+Finally, follow these steps to add the checkout to your website.
 
 2.1. Add the MercadoPago.js V2 SDK to your project:
 

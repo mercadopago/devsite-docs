@@ -6,7 +6,7 @@ You can customize how to open the checkout through the use of functions and attr
 
 ### Without payment button 
 
-Use the `open` function to <b>open the checkout without displaying a payment button</b>. This allows you to connect it to any element of your website from which you prefer to trigger the Checkout Pro opening. 
+Use the `open` function to **open the checkout without displaying a payment button**. This allows you to connect it to any element of your website from which you prefer to trigger the Checkout Pro opening. 
 
 [[[
 ```html
@@ -26,15 +26,15 @@ const checkout = mp.checkout({
 
 ### With a payment button 
 
-Use the `render` function to display a <b>payment button that allows the opening of the Checkout Pro</b>. In order to do this, you need add the following parameters: 
+Use the `render` function to display a **payment button that allows the opening of the Checkout Pro**. In order to do this, you need add the following parameters: 
 
 | Parameter | Type | Description |
 | --- | --- | --- |
-|`container`|string|CSS Selector (identifier) for the element in which you want the payment button to be displayed.|
-|`type` (optional)|string|Allows you to define the button type. Currently only the 'wallet' value is accepted, which shows a payment button with Mercado Pago branding. <b>Default value:</b> basic payment button.|
-|`label` (optional)|string|Value for the button's text. <b>Default value:</b> “Pay”
+|`container` |string| CSS Selector (identifier) for the element in which you want the payment button to be displayed. |
+| `type` (optional) | string | Allows you to define the button type. Currently only the 'wallet' value is accepted, which shows a payment button with Mercado Pago branding. **Default value**: basic payment button. |
+| `label` (optional) | string | Value for the button's text. **Default value**: “Pay” |
 
-You can use this method in two different ways: 
+You can use this method in two different ways:
 
 * Including the `render` option with its corresponding parameters along with the rest of the initialization options for the checkout.
 * Calling the `render` function with its corresponding parameters after the initialization, from wherever you prefer inside your code.
@@ -69,7 +69,8 @@ mp.checkout.render({
 ![Custom Label Button](/images/web-payment-checkout/custom_label_button.png)<br/><br/>
 
 ### Opening the Checkout Pro automatically
-Add the `autoOpen` parameter to your checkout initialization options to <b>automatically display the Checkout Pro</b>, without the need of any interactions with buttons or other elements for its opening.
+
+Add the `autoOpen` parameter to your checkout initialization options to **automatically display the Checkout Pro**, without the need of any interactions with buttons or other elements for its opening.
 
 [[[
 ```javascript
@@ -78,7 +79,7 @@ const checkout = mp.checkout({
   preference: {
       id: 'YOUR_PREFERENCE_ID'
   },
-  autoOpen: true, // allow the Checkout Pro to open automatically
+  autoOpen: true, // Allow the Checkout Pro to open automatically
 });
 ```
 ]]]
@@ -183,10 +184,9 @@ Redirect to the 'init_point' of the preference.
 ```
 ]]]
 
-
 ## Header and elements colors
 
-Add the `theme` attribute to your initialization options as shown below to customize colors for some of the checkout's UI elements and header. 
+Add the `theme` attribute to your initialization options as shown below to customize colors for some of the checkout's UI elements and header.
 
 [[[
 ```html
@@ -210,13 +210,15 @@ Add the `theme` attribute to your initialization options as shown below to custo
 > Valid only for modal scheme.
 
 ### Header 
-Modify the header's color by adding the `headerColor` attribute to the `theme` object. Its value must be in hexadecimal format. For example: 
+Modify the header's color by adding the `headerColor` attribute to the `theme` object. 
+Its value must be in hexadecimal format. For example: 
 
 [[[
 ```javascript
 theme: {
   headerColor: '#c0392b'
-}```
+}
+```
 ]]]
 
 ### Elements
@@ -236,12 +238,22 @@ theme: {
 }
 ```
 
+----[mla, mlc, mco, mpe, mlm]----
+
+![Custom-Component](/images/web-payment-checkout/custom_components.gif)
+
+------------
+
+----[mlb]----
+
 ![Custom-Component](/images/web-payment-checkout/custom_components-br.gif)
-</p><br/>
+
+------------
 
 #### Text color
 
-The color of the button text will be **determined automatically** depending on the [contrast]((https://24ways.org/2010/calculating-color-contrast)) of the defined color.
+The color of the button text will be **determined automatically** depending on the [contrast](https://24ways.org/2010/calculating-color-contrast) of the defined color.
+
 For a light element *color*, the text color will be *black* or `#000`. For example:
 
 ```javascript

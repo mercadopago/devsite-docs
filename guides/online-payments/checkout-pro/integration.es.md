@@ -12,7 +12,7 @@ Usa los [ejemplos descargables](#bookmark_ejemplos_descargables) para conocer la
 
 	1.1 Suma la SDK de Mercado Pago en tu backend y agrega las credenciales para habilitar su uso.
 
-	1.2 Configura la preferencia según tu producto o servicio.
+	1.2 Configura la preferencia según tu producto o servicio.<br><br>
 
 2. Suma el checkout a tu sitio
 
