@@ -6,9 +6,9 @@
 
 Puedes personalizar de qué forma abrir el checkout a través de funciones y atributos que pueden agregarse a la configuración en el código de tu integración:
 
-### Sin botón de pago 
+### Sin botón de pago
 
-Usa el método `open` para <b>abrir el checkout sin mostrar el botón de pago</b>. Esto te permite conectarlo al elemento de tu página web desde el que prefieras realizar la apertura del Web Tokenize Checkout. 
+Usa el método `open` para **abrir el checkout sin mostrar el botón de pago**. Esto te permite conectarlo al elemento de tu página web desde el que prefieras realizar la apertura del Web Tokenize Checkout. 
 
 [[[
 ```javascript
@@ -32,9 +32,9 @@ Utiliza el método `render` para mostrar un <b>botón de pago que permita la ape
 
 | Parámetro | Tipo de dato | Descripción |
 | --- | --- | --- |
-|`container`|string|CSS Selector (identificador) del elemento donde se quiere mostrar el botón de pago.|
-|`type` (opcional)|string|Permite definir el tipo de botón. Actualmente solo acepta el valor ‘wallet’ que muestra un botón de pago con el branding de Mercado Pago. <b>Valor por defecto:</b> botón de pago simple.|
-|`label` (opcional)|string|Valor del texto del botón. <b>Por defecto:</b> “Pagar”
+| `container` | string | CSS Selector (identificador) del elemento donde se quiere mostrar el botón de pago. |
+| `type` (opcional) | string | Permite definir el tipo de botón. Actualmente solo acepta el valor ‘wallet’ que muestra un botón de pago con la marca de Mercado Pago. **Valor por defecto**: botón de pago simple. |
+| `label` (opcional) | string | Valor del texto del botón. **Por defecto**: “Pagar” |
 
 Puedes utilizar este método de dos formas distintas: 
 
@@ -94,24 +94,24 @@ button.mercadopago-button {
 ![Botón de pago con estilo personalizado Mercado Pago Web Tokenize Checkout](/images/paybutton-modified-css.png)
 
 ### Apertura automática del Web Tokenize Checkout
-Añade el parámetro `autoOpen` a tus opciones de inicialización del checkout en tu integración para <b>mostrar automáticamente el Web Tokenize Checkout</b>, sin necesitar de la interacción con un botón u otro elemento para su apertura.
+Añade el parámetro `autoOpen` a tus opciones de inicialización del checkout en tu integración para **mostrar automáticamente el Web Tokenize Checkout**, sin necesitar de la interacción con un botón u otro elemento para su apertura.
 
 [[[
 ```javascript
-// Inicializa el checkout 
+// Inicializa el checkout
 const checkout = mp.checkout({
   tokenizer: {
     totalAmount: 4000,
     backUrl: 'https://www.mi-sitio.com/process'
   },
-  autoOpen: true, // habilita la apertura automática del checkout
+  autoOpen: true, // Habilita la apertura automática del checkout
 });
 ```
 ]]]
 
 ## Colores para encabezado y elementos
 
-Agrega el atributo `theme` de la siguiente manera a las opciones de inicialización para personalizar el color de algunos elementos y el encabezado de la interfaz del checkout. 
+Agrega el atributo `theme` de la siguiente manera a las opciones de inicialización para personalizar el color de algunos elementos y el encabezado de la interfaz del checkout.
 
 [[[
 ```html
@@ -137,11 +137,13 @@ Agrega el atributo `theme` de la siguiente manera a las opciones de inicializaci
 #### Personalización
 
 Modifica el color del encabezado agregando el atributo `headerColor` al objeto `theme`. El valor del atributo deberá ser en formato hexadecimal. Por ejemplo:
+
 [[[
 ```javascript
 theme: {
   headerColor: '#c0392b'
-}```
+}
+```
 ]]]
 
 ![Encabezado personalizado Mercado Pago Web Tokenize Checkout](/images/cow/cow-ui-header--custom.png)

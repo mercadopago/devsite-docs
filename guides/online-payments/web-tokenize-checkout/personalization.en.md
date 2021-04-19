@@ -4,11 +4,11 @@
 
 ## Ways to open the Web Tokenize Checkout
 
-You can customize how to open the checkout through the use of functions and attributes that can be added to your integration's configuration: 
+You can customize how to open the checkout through the use of functions and attributes that can be added to your integration's configuration:
 
-### Without payment button 
+### Without payment button
 
-Use the `open` function to <b>open the checkout without displaying a payment button</b>. This allows you to connect it to any element of your website from which you prefer to trigger the Web Tokenize Checkout opening. 
+Use the `open` function to **open the checkout without displaying a payment button**. This allows you to connect it to any element of your website from which you prefer to trigger the Web Tokenize Checkout opening.
 
 [[[
 ```html
@@ -17,7 +17,7 @@ Use the `open` function to <b>open the checkout without displaying a payment but
 const checkout = mp.checkout({
   tokenizer: {
     totalAmount: 4000,
-    backUrl: 'https://www.mi-sitio.com/process'
+    backUrl: 'https://www.my-store.com/process'
   },
 });
 </script>
@@ -33,9 +33,9 @@ Use the `render` function to display a <b>payment button that allows the opening
 
 | Parameter | Type | Description |
 | --- | --- | --- |
-|`container`|string|CSS Selector (identifier) for the element in which you want the payment button to be displayed.|
-|`type` (optional)|string|Allows you to define the button type. Currently only the 'wallet' value is accepted, which shows a payment button with Mercado Pago branding. <b>Default value:</b> basic payment button.|
-|`label` (optional)|string|Value for the button's text. <b>Default value:</b> “Pay”
+|`container` |string| CSS Selector (identifier) for the element in which you want the payment button to be displayed. |
+| `type` (optional) | string | Allows you to define the button type. Currently only the 'wallet' value is accepted, which shows a payment button with Mercado Pago branding. **Default value**: basic payment button. |
+| `label` (optional) | string | Value for the button's text. **Default value**: “Pay” |
 
 You can use this method in two different ways: 
 
@@ -48,11 +48,11 @@ You can use this method in two different ways:
 const checkout = mp.checkout({
 tokenizer: {
   totalAmount: 4000,
-  backUrl: 'https://www.mi-sitio.com/process'
+  backUrl: 'https://www.my-store.com/process'
 },
 render: {
   container: '.tokenizer-container',
-  label: 'Pagar'
+  label: 'Pay'
  }
 });
 
@@ -96,7 +96,7 @@ button.mercadopago-button {
 ![Payment button Mercado Pago modified CSS](/images/paybutton-modified-css.png)
 
 ### Opening the Web Tokenize Checkout automatically
-Add the `autoOpen` parameter to your checkout initialization options to <b>automatically display the Web Tokenize Checkout</b>, without the need of any interactions with buttons or other elements for its opening.
+Add the `autoOpen` parameter to your checkout initialization options to **automatically display the Web Tokenize Checkout**, without the need of any interactions with buttons or other elements for its opening.
 
 [[[
 ```javascript
@@ -105,7 +105,7 @@ const checkout = mp.checkout({
   preference: {
       id: 'YOUR_PREFERENCE_ID'
   },
-  autoOpen: true, // allow the Web Tokenize Checkout to open automatically
+  autoOpen: true, // Allow the Web Tokenize Checkout to open automatically
 });
 ```
 ]]]
@@ -133,26 +133,57 @@ Add the `theme` attribute to your initialization options as shown below to custo
 
 #### Default state
 
+----[mla, mlc, mco, mpe, mlm]----
+
 ![Standard status header Mercado Pago](/images/cow/cow-ui-header.png)
+
+------------
+
+----[mlb]----
+
+![Standard status header Mercado Pago](/images/cow/cow-ui-header__pt.png)
+
+------------
 
 #### Personalization
 
-Modify the header's color by adding the `headerColor` attribute to the `theme` object. Its value must be in hexadecimal format. For example: 
+Modify the header's color by adding the `headerColor` attribute to the `theme` object. Its value must be in hexadecimal format. For example:
 
 [[[
 ```javascript
 theme: {
   headerColor: '#c0392b'
-}```
+}
+```
 ]]]
 
+----[mla, mlc, mco, mpe, mlm]----
+
 ![Header customization Mercado Pago](/images/cow/cow-ui-header--custom.png)
+
+------------
+
+![Header customization Mercado Pago](/images/cow/cow-ui-header--custom__pt.png)
+
+----[mlb]----
+------------
 
 ### Elements
 
 #### Default state
 
+----[mla, mlc, mco, mpe, mlm]----
+
 ![Standard status elements](/images/cow/cow-ui-elements.png)
+
+------------
+
+----[mlb]----
+
+![Standard status elements](/images/cow/cow-ui-elements__pt.png)
+
+------------
+
 
 #### Customization
 
@@ -171,7 +202,17 @@ theme: {
 }
 ```
 
+----[mla, mlc, mco, mpe, mlm]----
+
 ![Customization elements](/images/cow/cow-ui-elements--custom.png)
+
+------------
+
+----[mlb]----
+
+![Customization elements](/images/cow/cow-ui-elements--custom__pt.png)
+
+------------
 
 ### Text color
 
@@ -201,7 +242,17 @@ theme: {
 
 ### Default state
 
+----[mla, mlc, mco, mpe, mlm]----
+
 ![Purchase detail standard status](/images/cow/cow-summary.png)
+
+------------
+
+----[mlb]----
+
+![Purchase detail standard status](/images/cow/cow-summary__pt.png)
+
+------------
 
 
 ### Customization
@@ -238,7 +289,7 @@ Using the attribute `productLabel`, you can specify the text that appears as *"P
 
 ```javascript
 summary: {
-     productLabel: ‘4 productos’
+     productLabel: ‘4 products’
 }
 ```
 
@@ -333,7 +384,7 @@ summary: {
       taxes: 10
 }
 ```
- 
+
 It will appear in the detail of the purchase under the concept of *"Taxes"*.
 
 #### Outstanding balance

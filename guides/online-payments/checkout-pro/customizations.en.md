@@ -238,7 +238,7 @@ theme: {
 }
 ```
 
-----[mla, mlc, mco, mpe, mlm]----
+----[mla, mlc, mco, mpe, mlm, mlu]----
 
 ![Custom-Component](/images/web-payment-checkout/custom_components.gif)
 

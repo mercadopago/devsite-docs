@@ -32,7 +32,7 @@ Ao usar o método `render` um botão de pagamento é mostrado para abrir o Check
 | --- | --- | --- |
 | `container` | string | CSS Selector (identificador) do elemento onde se deseja mostrar o botão de pagamento. Permite definir o tipo de botão. |
 | `type` (opcional) | string | Permite definir o tipo de botão. Atualmente, só aceita o valor ’wallet’ que mostra um botão de pagamento com a marca do Mercado Pago. **Valor por padrão**: botão de pagamento simples. |
-| `label` (opcional) | string | Valor do texto do botão. **Por defecto**: “Pagar” |
+| `label` (opcional) | string | Valor do texto do botão. **Por padrão**: “Pagar” |
 
 Você pode usar este método de duas maneiras diferentes:
 
