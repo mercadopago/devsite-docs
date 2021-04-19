@@ -19,7 +19,7 @@ const checkout = mp.checkout({
 });
 </script>
 <!-- Chama a função ‘open' a partir do item da tua página que desejas  -->
-<!-- Por exemplo: um radio button --> 
+<!-- Por exemplo: um radio button -->
 <input type="radio" id="checkout-open-radio" onclick="checkout.open()">
 ```
 ]]]
@@ -175,10 +175,10 @@ Redireciona ao 'init_point' da preferência
 <!doctype html>
 <html>
   <head>
-    <title>Pay</title>
+    <title>Pagar</title>
   </head>
   <body>
-    <a href="{{ init_point }}" target="_blank">Pay with Mercado Pago</a>
+    <a href="{{ init_point }}" target="_blank">Pagar com Mercado Pago</a>
   </body>
 </html>
 ```
@@ -235,37 +235,23 @@ A cor do texto dos botões e cabeçalho será determinada automaticamente depend
 
 Para uma cor de elemento claro, a cor do texto será preta ou #000. Por exemplo:
 
-```html
-data-elements-color="#81ecec" <!-- Cor clara -->
+```javascript
+theme: {
+    elementsColor: '#81ecec' // Cor clara
+}
 ```
 
 ![Light Color Button](/images/web-payment-checkout/light_color_button.png)
 
 Para uma cor de elemento escuro, a cor do texto será branca ou #fff. Por exemplo:
 
-```html
-data-elements-color="#8e44ad" <!-- Cor escura -->
+```javascript
+theme: {
+    elementsColor: '#8e44ad' // Cor escura
+}
 ```
 
 ![Dark Color Button](/images/web-payment-checkout/dark_color_button.png)
-
-## Botões
-
-### Texto
-
-Por padrão, o botão mostra o texto “Pagar”. Você pode alterar o texto do botão adicionando o atributo `data-button-label` no código HTML. Por exemplo:
-
-```html
-data-button-label="Comprar"
-```
-
-### Por padrão:
-
-![Default Label Button](/images/web-payment-checkout/default_label_button.png)<br/>
-
-### Customizado:
-
-![Custom Label Button](/images/web-payment-checkout/custom_label_button.png)<br/><br/>
 
 ---
 

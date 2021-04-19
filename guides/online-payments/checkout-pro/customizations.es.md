@@ -19,7 +19,7 @@ const checkout = mp.checkout({
 });
 </script>
 <!-- Llama a la función ‘open’ desde el elemento de tu página que desees -->
-<!-- Por ejemplo: un radio button --> 
+<!-- Por ejemplo: un radio button -->
 <input type="radio" id="checkout-open-radio" onclick="checkout.open()">
 ```
 ]]]
@@ -215,6 +215,7 @@ Agrega el atributo `theme` de la siguiente manera a las opciones de inicializaci
 > Válido solo para el esquema modal.
 
 ### Encabezado
+
 Modifica el color del encabezado agregando el atributo `headerColor` al objeto `theme`. 
 El valor del atributo deberá ser en formato hexadecimal. Por ejemplo:
 
