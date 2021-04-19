@@ -3,6 +3,26 @@
 Find out everything about the new versions and updates of Mercado Pago integrations.
 
 ---
+
+## April 2021
+
+
+### April 20th
+
+> CHANGELOG
+>
+> We have improved our checkouts’ integration experience
+>
+> NEWS: FEATURE
+>
+> Product: MERCADO PAGO
+
+Integrate Checkout Pro and Web Tokenize Checkout in a simpler way and from a single source using the new MercadoPago.js V2 SDK. Now you can open the checkout without the need of a payment button and use a more fitting option for your website instead.
+
+Go to [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/integration) o [Web Tokenize Checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/web-tokenize-checkout/introduction) documentation.
+
+---
+
 ## March 2021
 
 ### March 31th
