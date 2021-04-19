@@ -272,17 +272,17 @@ Por ejemplo:
 
 ```html
 <script>
-// obtén los IDs de las cards obtenidas al llamar a la api en el paso anterior
-  const customerCardIds = cardsResponse.map(card => card.id); 
+// Obtén los IDs de las cards obtenidas al llamar a la API en el paso anterior
+  const customerCardIds = cardsResponse.map(card => card.id);
 
-// inicializa  el checkout
+// Inicializa  el checkout
   mp.checkout({
     tokenizer: {
         totalAmount: 4000,
         backUrl: 'https://www.mi-sitio.com/process',
         savedCards: {
             cardIds: customerCardIds, // cardIds obtenidos
-            customerId: '209277402-FqRqgEc3XItrxs' // tu customer id
+            customerId: '209277402-FqRqgEc3XItrxs' // Tu customer id
         }
     },
     render: {
