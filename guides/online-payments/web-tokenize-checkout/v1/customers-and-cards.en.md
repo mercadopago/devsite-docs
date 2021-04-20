@@ -1,31 +1,29 @@
-
-
-# Clientes y tarjetas almacenadas
+# Customers and stored cards
 
 > WARNING
 >
-> Pre-requisitos
+> Pre-requisites
 >
-> * Tener implementada la [captura de datos de tarjeta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card#captura_los_datos_de_la_tarjeta).
+> * Have the [card data capture](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/web-tokenize-checkout/receiving-payment-by-card) implemented.
 
-Los clientes y tarjetas (*customers & cards*) son la forma de almacenar datos de tarjeta de tus clientes de **manera segura** para mejorar la experiencia de compra.
+Customers and cards are the way to store card data of your customers **safely** to improve the shopping experience.
 
-Esto permitiría que tus clientes finalicen sus compras mucho más rápido y de forma más sencilla, ya que no deberán completar nuevamente sus datos de tarjeta.
+This will allow your customers to complete their purchases much faster and easily, since they will not have to complete their card data again.
 
-Los *customers* representan a tus clientes. Las tarjetas que almacenes serán para este cliente específico.
+The *customers* represent your customers. The cards that you store will be valid for this specific customer.
 
-## Creación de un customer y una card
+## Creation of a customer and a card
 
-Para crear un `Customer` y una `Card` al mismo tiempo es necesario enviar por lo menos los campos `email` y `token`.
+To create a `Customer` and a `Card` at the same time it is necessary to send at least the `email` and `token` fields.
 
-El `token` es el que capturas cuando haces el [manejo de la respuesta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/handling-responses) del *Web Tokenize Checkout*.
+The `token` is the one you capture when you [handle the answer](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card) of the *Web Tokenize Checkout*.
 
 
 > NOTE
 >
-> Nota
+> Note
 >
-> Recomendamos almacenar los datos de tarjeta luego de que hayas realizado un pago de forma exitosa, para asegurarte de que los mismos sean correctos.
+> We recommend storing the card data after you have made a payment successfully, to make sure they are correct.
 
 
 
@@ -75,7 +73,7 @@ mercadopago.customers.create(customer_data).then(function (customer) {
 
   card_data = {
     "token": "9b2d63e00d66a8c721607214cedaecda",
-    "customer_id": customer.body.id 
+    "customer_id": customer.body.id
   }
 
   mercadopago.card.create(card_data).then(function (card) {
@@ -142,7 +140,7 @@ card = card_response["response"]
 ```
 ]]]
 
-Respuesta del Servidor:
+Server response:
 
 ```json
 {
@@ -166,46 +164,46 @@ Respuesta del Servidor:
 
 > NOTE
 >
-> Nota
+> Note
 >
-> Para las tarjetas `master` también se debe enviar el campo `issuer_id` a la hora de crearle la tarjeta a un customer.
+> All payment methods with `master` as the payment_method_id value, must send a `issuer_id` when created. `issuer_id` is the identifier of the issuing bank.
 
-## Recibir un pago de un Customer
+## Receive a payment from a Customer
 
-Para que puedas recibir un pago utilizando una tarjeta almacenada, es necesario incluir en el código de integración el ID del customer y los ID de las tarjetas del usuario a través de los atributos `customerId` y `cardIds` dentro del parámetro `savedCards`.
+> WARNING
+>
+> Important
+>
+> This documentation uses the old library version. To see the new version, go to [Customers and stored cards section with MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/web-tokenize-checkout/customers-and-cards).
 
-Por ejemplo:
+
+In order to receive a payment from a stored card, it is necessary to include in the HTML code the customer ID and the IDs of the user cards through the attributes `data-customer-id` and `data-card-ids` . 
+
+For example:
 
 ```html
-<script>
-  mp.checkout({
-    tokenizer: {
-        totalAmount: 4000,
-        backUrl: 'https://www.mi-sitio.com/process',
-        savedCards: {
-            cardIds: '1518023392627,1518023332143' // IDs de las tarjetas
-            customerId: '209277402-FqRqgEc3XItrxs' // Tu customer ID
-        }
-    },
-    render: {
-        container: ‘.tokenizer-container’,
-        label: ‘Pagar’
-    }
-  });
-</script>
+<form action="/procesar-pago" method="POST">
+  <script
+    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
+    data-public-key="ENV_PUBLIC_KEY"
+    data-transaction-amount="100.00"
+    data-customer-id="209277402-FqRqgEc3XItrxs"
+    data-card-ids="1518023392627,1518023332143">
+  </script>
+</form>
 ```
 
 > NOTE
 >
-> Nota
+> Note
 >
-> Los IDs de tarjetas deberán separarse por coma.
+> Card IDs should be separated by commas.
 
-### 1. Obtener los IDs de las tarjetas almacenadas
+### 1. Get the IDs of the stored cards
 
-Puedes listar las tarjetas almacenadas en el *Web Tokenize Checkout* para que tu cliente elija con cuál quiere pagar.
+You can list the stored cards in the *Web Tokenize Checkout* so your customer can choose which one he wants to pay with.
 
-Puedes obtener el listado completo de `Cards` de un cliente realizando un request `HTTP GET`:
+You can get the complete list of `Cards` from a customer by doing a `HTTP GET` request:
 
 [[[
 ```php
@@ -251,7 +249,7 @@ cards = cards_response["response"]
 ```
 ]]]
 
-Datos de una tarjeta guardada:
+Stored card information:
 
 ```json
 [{
@@ -264,41 +262,32 @@ Datos de una tarjeta guardada:
 }]
 ```
 
-### 2. Usar los IDs de las tarjetas en el checkout
+### 2. Use the card ids in the checkout
 
-Con esta información de tarjetas puedes invocar el *Web Tokenize Checkout*.
+With this card information you can invoke the *Web Tokenize Checkout*.
 
-Por ejemplo:
+For example:
 
 ```html
-<script>
-// Obtén los IDs de las cards obtenidas al llamar a la API en el paso anterior
-  const customerCardIds = cardsResponse.map(card => card.id);
-
-// Inicializa  el checkout
-  mp.checkout({
-    tokenizer: {
-        totalAmount: 4000,
-        backUrl: 'https://www.mi-sitio.com/process',
-        savedCards: {
-            cardIds: customerCardIds, // cardIds obtenidos
-            customerId: '209277402-FqRqgEc3XItrxs' // Tu customer id
-        }
-    },
-    render: {
-        container: ‘.tokenizer-container’,
-        label: ‘Pagar’
-    }
-  });
-</script>
+<form action="/procesar-pago" method="POST">
+  <script
+    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
+    data-public-key="ENV_PUBLIC_KEY"
+    data-transaction-amount="100.00"
+    data-customer-id="209277402-FqRqgEc3XItrxs"
+    data-card-ids="<?php
+      foreach ($cards["response"] as $card) {
+        echo $card["id"];
+      }
+    ?>">
+  </script>
+</form>
 ```
 
-> Esta documentación utiliza la nueva versión de la librería. Para ver la versión anterior, ve a la [sección de Clientes y tarjetas almacenadas con MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/web-tokenize-checkout/v1/customers-and-cards).
 
+## Adding new cards to a customer
 
-## Agregar nuevas tarjetas a un Customer
-
-Es posible agregar nuevas tarjetas a tu `Customer`. Para esto debes crear un `token` y hacer un request `HTTP POST` al `Customer`.
+It is possible to add new cards to your `Customer`. For this you must create a `token` and make a `HTTP POST` request to `Customer`.
 
 
 [[[
@@ -392,7 +381,7 @@ var cardRequest = new CustomerCardCreateRequest
 {
     Token = "9b2d63e00d66a8c721607214cedaecda",
 };
-CustomerCard card = await customerClient.CreateCardAsync(customer.Id, cardRequest);
+CustomerCard card = customerClient.CreateCardAsync(customer.Id, cardRequest);
 
 Console.WriteLine(card.Id);
 ```
@@ -414,7 +403,7 @@ print(card)
 ]]]
 
 
-Respuesta:
+Response:
 
 ```json
 {
@@ -453,16 +442,16 @@ Respuesta:
 }
 ```
 
-## Buscar un Customer
+## Search a Customer
 
-En el caso en el que no sepas cuál es el `id` de tu `Customer`, puedes utilizar la API de `Customer Search` realizando un request `HTTP GET`. El parámetro requerido para esto es `email`:
+In case you do not know what the `id` of your `Customer` is, you can use the `Customer Search` API by doing a `HTTP GET` request. The required parameter for this is `email`:
 
 [[[
 ```php
 <?php
 
   $filters = array(
-    "email"=>"test@test.com"
+    "id"=>"247711297-jxOV430go9fx2e"
   );
 
   $customers = MercadoPago\Customer::search($filters);
@@ -520,7 +509,7 @@ customers = customers_response["response"]
 ```
 ]]]
 
-Respuesta:
+Response:
 
 ```json
 {
@@ -568,9 +557,9 @@ Respuesta:
 }
 ```
 
-## Obtener las Cards de un Customer
+## Get the Cards of a Customer
 
-Puedes obtener el listado completo de `Cards` de un cliente realizando un request `HTTP GET`:
+You can get the complete list of `Cards` of a client by making a `HTTP GET` request:
 
 [[[
 ```php
@@ -616,7 +605,7 @@ cards = cards_response["response"]
 ```
 ]]]
 
-Respuesta:
+Response:
 
 ```json
 [{

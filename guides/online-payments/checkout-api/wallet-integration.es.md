@@ -343,6 +343,8 @@ mp.checkout({
 ```
 ]]]
 
+> Esta documentación utiliza la nueva versión de la librería. Para ver la versión anterior, ve a la [sección de Recibe pagos con la billetera de Mercado Pago con MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v1/wallet-integration).
+
 Para más información sobre cada atributo, consulta la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/preferences/_checkout_preferences/post).
 
 ¡Y listo! Ya tienes integrada la billetera de Mercado Pago en tu sitio.

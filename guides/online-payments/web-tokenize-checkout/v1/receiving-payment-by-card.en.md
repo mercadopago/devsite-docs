@@ -1,79 +1,53 @@
-# Recibir un pago con tarjeta
+# Receive card payments
 
-Con Mercado Pago puedes capturar los datos de la tarjeta de forma segura a través del Web Tokenize Checkout.
+With Mercado Pago you can collect card information in a secure way through our Tokenizer.
 
+### Step 1: Add viewport data
 
-### Paso 1: Incorporar datos del viewport
-
-Establece el viewport agregando el siguiente código dentro de la etiqueta `<head>` de tu sitio Web:
+Set the viewport by adding the following code inside the `<head>` tag of your website:
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 ```
 
-### Paso 2: Incorpora el Web Tokenize Checkout a tu sitio
+### Step 2: Add HTML code
 
-Para incorporar el Web Tokenize Checkout a tu sitio debes seguir los siguientes pasos. 
+> WARNING
+>
+> Important
+>
+> This documentation uses the old library version. To see the new version, go to [Receive card payments with MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/web-tokenize-checkout/receiving-payment-by-card).
 
-Una vez hayas sumado el código a tu sitio, se agregará un botón de pago que mostrará el checkout cuando el comprador lo presione. 
 
-1. Agrega la SDK MercadoPago.js V2: 
-
-```html
-<html>
-  <body>
-    ...
-    <!-- SDK Client-Side Mercado Pago -->
-    <script src="https://sdk.mercadopago.com/js/v2"></script>
-  </body>
-</html>
-```
-
-2. Configura las credenciales de la SDK para su uso e inicializa tu checkout con el ID de la preferencia creada previamente y el identificador del elemento donde deberá mostrarse el botón de pago:
+This _fragment of HTML code_ will insert a payment button. When the buyer presses the button, the checkout will be displayed. Include the following code in the place where the button will be located within your website:
 
 ```html
-<script>
-// Agrega credenciales de SDK 
-const mp = new MercadoPago('PUBLIC_KEY', {locale: 'es-AR'});
-
-// Inicializa el Web Tokenize Checkout
-mp.checkout({
-  tokenizer: {
-    totalAmount: 4000,
-    backUrl: 'https://www.mi-sitio.com/process'
-  },
- render: {
-    container: '.tokenizer-container', // Indica dónde se mostrará el botón
-    label: 'Pagar' // Cambia el texto del botón de pago (opcional)
- }
-});
-</script>
+<form action="https://www.my-site.com/process-payment" method="POST">
+  <script
+    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
+    data-public-key="ENV_PUBLIC_KEY"
+    data-transaction-amount="100.00">
+  </script>
+</form>
 ```
+You can find the Public Key in the [Credentials section]([FAKER][CREDENTIALS][URL]) page.
 
-En este caso, se mostrará un botón de pago que abrirá el Web Tokenize Checkout.
+> Find all the information about your credentials in our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/faqs/credentials).
 
-Puedes consultar otras maneras de abrir el checkout en la [sección de Personalizaciones](https://www.mercadopago[FAKER][URl][DOMAIN]/developers/es/guides/online-payments/web-tokenize-checkout/personalization).
+### Step 3: Get the data
 
-Puedes encontrar tu Public key en la [sección de credenciales]([FAKER][CREDENTIALS][URL]).
+*Web Tokenize Checkout* will do a `POST` to the URL that you have defined in the `action` attribute of the HTML code snippet (In the example: **/process-payment**) with certain data. You must use this information to make the payment.
 
-> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials).
+#### Data:
 
-> Esta documentación utiliza la nueva versión de la librería. Para ver la versión anterior, ve a la [sección de Recibir un pago con tarjeta con MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/web-tokenize-checkout/v1/receiving-payment-by-card).
-
-### Paso 3: Obtener los datos
-
-El *Web Tokenize Checkout* hará un `POST` a la URL que hayas definido en el atributo `action` del fragmento de código HTML (En el ejemplo: **/procesar-pago**) con ciertos datos. Debes utilizar dichos datos para realizar el pago.
-
-#### Los datos son:
-
-| Dato | Descripción |
+| Data | Description |
 | --- | --- |
-| **token** | Identificador único de la tarjeta tokenizada. |
-| **payment_method_id** | Medio de pago elegido por el comprador. |
-| **installments** | Cantidad de cuotas elegidas por el comprador. |
-| **issuer_id** | ID del emisor de la tarjeta del comprador. |
+| **token** | Unique identifier of the tokenized card. |
+| **payment_method_id** | Payment method chosen by the buyer. |
+| **installments** | Amount of installments chosen by the buyer. |
+| **issuer_id** | ID of the issuer of the buyer's card. |
 
-_No recibirás ni el **transaction_amount** ni el **payer.email** por cuestiones de seguridad._
+_You will not receive the **transaction_amount** neither the **payer.email** for security reasons._
 
 [[[
 ```php
@@ -116,15 +90,15 @@ issuer_id = request.POST.get("issuer_id")
 ```
 ]]]
 
-### Paso 4: Realizar el pago
+### Step 4: Creating the payment
 
-Para realizar el pago, debes realizar un API call usando el [SDK de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/sdks) que corresponda con el lenguaje de programación que estés utilizando en tu sitio.
+To make the payment, you must perform an API call using the [SDK de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks) that corresponds with the programming language that you are using on your site.
 
-Solamente debes realizar un *API call* incluyendo los datos que recibiste del checkout:
+You should only make an *API call* including the data you received from the checkout:
 
 [[[
 ```php
-<?php
+<?php  
     require_once 'vendor/autoload.php';
 
     MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
@@ -159,10 +133,10 @@ payment.setTransactionAmount(100f)
        .setIssuerId(issuer_id)
        .setPayer(new Payer()
          .setEmail("john@yourdomain.com"));
-// Guarda y postea el pago
+// Save and create the payment
 payment.save();
 //...
-// Imprime el estado del pago
+// Shows payment stauts
 System.out.println(payment.getStatus());
 //...
 ```
@@ -182,10 +156,10 @@ var payment_data = {
   }
 };
 
-// Guarda y postea el pago
+// Save and do the payment POST
 mercadopago.payment.save(payment_data).then(function (data) {
   // ...    
-  // Imprime el estado del pago
+  // Shows payment stauts
   Console.log(data.status);
 }).catch(function (error) {
   // ...
@@ -231,11 +205,11 @@ var paymentRequest = new PaymentCreateRequest
         Email = "john@yourdomain.com",
     },
 };
-// Crea el pago
+// Create the payment
 var client = new PaymentClient();
 Payment payment = await client.CreateAsync(paymentRequest);
 // ...
-// Imprime el estado del pago
+// Shows payment status
 Console.WriteLine(payment.Status);
 // ...
 ```
@@ -252,15 +226,15 @@ payment_data = {
     }
 }
 
-# Guarda y postea el pago
+# Save and create the payment
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
 ```
 ]]]
 
-> Los campos requeridos a enviar son `token`, `transaction_amount`, `payment_method_id` y el `payer.email`.
+> The fields required to send are `token`, `transaction_amount`, `payment_method_id` and the `payer.email`.
 
-Respuesta:
+Response:
 
 ```json
 {
@@ -278,12 +252,12 @@ Respuesta:
 }
 ```
 
-## Recomendaciones adicionales
+## Additional recommendations
 
-### Tarjetas de prueba
+### Test cards
 
-Para realizar pagos de prueba (con tus credenciales de TEST), es necesario que utilices [tarjetas de prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/testing).
+To make testing payments (with your TEST credentials), you need to use [test cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/testing).
 
-### Promociones
+### Installments offer
 
-Te recomendamos incluir el [link de promociones](https://www.mercadopago.com.ar/promociones) de **Mercado Pago**, o bien implementar uno de nuestros [banners de medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/banners/introduction).
+We recommend you include the [installments offer link](https://www.mercadopago.com.ar/promociones) of **Mercado Pago**, or implement one of our [payment methods banner](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/banners/introduction).
