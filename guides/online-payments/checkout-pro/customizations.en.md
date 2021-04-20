@@ -274,7 +274,7 @@ theme: {
 
 ![Dark Color Button](/images/web-payment-checkout/dark_color_button.png)
 
-> This documentation uses the new library version. To see the previous version, go to the [old Customization section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/v1/receiving-payment-by-card).
+> This documentation uses the new library version. To see the previous version, go to the [old Customization section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/v1/customizations).
 
 ---
 

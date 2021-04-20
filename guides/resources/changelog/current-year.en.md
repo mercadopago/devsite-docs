@@ -19,7 +19,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 Integrate Checkout Pro and Web Tokenize Checkout in a simpler way and from a single source using the new MercadoPago.js V2 SDK. Now you can open the checkout without the need of a payment button and use a more fitting option for your website instead.
 
-Go to [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/integration) o [Web Tokenize Checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/web-tokenize-checkout/introduction) documentation.
+Go to [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/integration) or [Web Tokenize Checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/web-tokenize-checkout/introduction) documentation.
 
 ### April 9th
 
