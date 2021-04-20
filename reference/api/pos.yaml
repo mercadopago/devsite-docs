@@ -685,7 +685,7 @@ components:
       example: 621102
       description: MCC code that indicates the category of the Point of Sale. If not specified, it remains as a generic category.
       enum:
-        - Gastronomy
+        - Gastronomy -- 
         - 621102 -- Argentina
         - 5611203 -- Brazil 
         - 5812 -- Mexico
@@ -693,7 +693,7 @@ components:
         - 5520 -- Peru 
         - 56101 -- Uruguay
         - 561000 -- Chile
-        - Gas station
+        - Gas station -- 
         - 473000 -- Argentina
         - 4731300 -- Brazil
         - 468419 -- Mexico
@@ -701,5 +701,3 @@ components:
         - 5050 -- Peru
         - 47300 -- Uruguay
         - 473001 -- Chile
-        - Generic
-        - null
