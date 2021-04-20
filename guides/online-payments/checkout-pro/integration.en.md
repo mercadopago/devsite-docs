@@ -41,38 +41,6 @@ Write the following code consisting of two parts:
 <?php
 // Mercado Pago SDK
 require __DIR__ .  '/vendor/autoload.php';
-?>
-```
-```node
-// Mercado Pago SDK
-const mercadopago = require ('mercadopago');
-```
-```java
-// Mercado Pago SDK
-import com.mercadopago.MercadoPago;
-```
-```ruby
-# Mercado Pago SDK
-require 'mercadopago'
-```
-```csharp
-// Mercado Pago SDK
- using MercadoPago.Config;
-```
-```python
-# Mercado Pago SDK
-import mercadopago
-```
-]]]
-
-1.2 Add the [credentials]([FAKER][CREDENTIALS][URL]) to enable the use of the Mercado Pago SDK:
-
-[[[
-```php
-<?php
-// Mercado Pago SDK
-require __DIR__ .  '/vendor/autoload.php';
-
 // Add Your credentials
 MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 ?>
@@ -80,7 +48,6 @@ MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 ```node
 // Mercado Pago SDK
 const mercadopago = require ('mercadopago');
-
 // Add Your credentials
 mercadopago.configure({
   access_token: 'PROD_ACCESS_TOKEN'
@@ -89,35 +56,30 @@ mercadopago.configure({
 ```java
 // Mercado Pago SDK
 import com.mercadopago.MercadoPago;
-
 // Add Your credentials
 MercadoPago.SDK.setAccessToken("PROD_ACCESS_TOKEN");
 ```
 ```ruby
 # Mercado Pago SDK
 require 'mercadopago'
-
 # Add Your credentials
 sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
 ```
 ```csharp
 // Mercado Pago SDK
-using MercadoPago.Config;
-
-// Add Your credentials
+ using MercadoPago.Config;
+ // Add Your credentials
 MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
 ```
 ```python
 # Mercado Pago SDK
 import mercadopago
-
 # Add Your credentials
 sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 ```
 ]]]
 
-
-1.3 Set the preference according to your product or service:
+1.2 Set the preference according to your product or service:
 
 ----[mla, mlb, mlu, mpe, mlm]----
 
@@ -126,12 +88,6 @@ sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 [[[
  ```php
 <?php
-// Mercado Pago SDK
-require __DIR__ .  '/vendor/autoload.php';
-
-// Add Your credentials
-MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
-
 // Create a preference object
 $preference = new MercadoPago\Preference();
 
@@ -145,14 +101,6 @@ $preference->save();
 ?>
 ```
 ```node
-// Mercado Pago SDK
-const mercadopago = require ('mercadopago');
-
-// Add Your credentials
-mercadopago.configure({
-  access_token: 'PROD_ACCESS_TOKEN'
-});
-
 // Create a preference object
 let preference = {
   items: [
@@ -173,12 +121,6 @@ mercadopago.preferences.create(preference)
 });
 ```
 ```java
-// Mercado Pago SDK
-import com.mercadopago.MercadoPago;
-
-// Add Your credentials
-MercadoPago.SDK.setAccessToken("PROD_ACCESS_TOKEN");
-
 // Create a preference object
 Preference preference = new Preference();
 
@@ -191,12 +133,6 @@ preference.appendItem(item);
 preference.save();
 ```
 ```ruby
-# Mercado Pago SDK
-require 'mercadopago'
-
-# Add Your credentials
-sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
-
 # Create a preference request
 preference_data = {
   items: [
@@ -214,14 +150,6 @@ preference = preference_response[:response]
 @preference_id = preference['id']
 ```
 ```csharp
-// Mercado Pago SDK
-using MercadoPago.Config;
-using MercadoPago.Client.Preference;
-using MercadoPago.Resource.Preference;
-
-// Add Your credentials
-MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
-
 // Create the preference request object
 var request = new PreferenceRequest
 {
@@ -242,12 +170,6 @@ var client = new PreferenceClient();
 Preference preference = await client.CreateAsync(request);
 ```
 ```python
-# Mercado Pago SDK
-import mercadopago
-
-# Add Your credentials
-sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
-
 # Create a preference item
 preference_data = {
     "items": [
@@ -287,12 +209,6 @@ curl -X POST \
 [[[
  ```php
 <?php
-// Mercado Pago SDK
-require __DIR__ .  '/vendor/autoload.php';
-
-// Add Your credentials
-MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
-
 // Create a preference object
 $preference = new MercadoPago\Preference();
 
@@ -306,14 +222,6 @@ $preference->save();
 ?>
 ```
 ```node
-// Mercado Pago SDK
-const mercadopago = require ('mercadopago');
-
-// Add Your credentials
-mercadopago.configure({
-  access_token: 'PROD_ACCESS_TOKEN'
-});
-
 // Create a preference object
 let preference = {
   items: [
@@ -334,12 +242,6 @@ mercadopago.preferences.create(preference)
 });
 ```
 ```java
-// Mercado Pago SDK
-import com.mercadopago.MercadoPago;
-
-// Add Your credentials
-MercadoPago.SDK.setAccessToken("PROD_ACCESS_TOKEN");
-
 // Create a preference object
 Preference preference = new Preference();
 
@@ -352,12 +254,6 @@ preference.appendItem(item);
 preference.save();
 ```
 ```ruby
-# Mercado Pago SDK
-require 'mercadopago'
-
-# Add Your credentials
-sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
-
 # Create a preference request
 preference_data = {
   items: [
@@ -375,14 +271,6 @@ preference = preference_response[:response]
 @preference_id = preference['id']
 ```
 ```csharp
-// Mercado Pago SDK
-using MercadoPago.Config;
-using MercadoPago.Client.Preference;
-using MercadoPago.Resource.Preference;
-
-// Add Your credentials
-MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
-
 // Create the preference request object
 var request = new PreferenceRequest
 {
@@ -403,12 +291,6 @@ var client = new PreferenceClient();
 Preference preference = await client.CreateAsync(request);
 ```
 ```python
-# Mercado Pago SDK
-import mercadopago
-
-# Add Your credentials
-sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
-
 # Create a preference object
 preference_data = {
     "items": [
