@@ -343,3 +343,5 @@ summary: {
 ```
 
 Aparecerá no detalhe da compra abaixo o atributo de *"Saldo pendente"*.
+
+> Esta documentação utiliza a nova versão da biblioteca. Para ver a versão anterior, vá para a [seção de Personalização com MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/web-tokenize-checkout/v1/personalization).

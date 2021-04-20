@@ -196,164 +196,73 @@ curl -X POST \
 
 Luego, desde tu frontend, agrega el siguiente código para mostrar el botón de pago de Checkout Pro modo billetera en el lugar que quieras que aparezca.
 
-
 [[[
 ```php
-// SDK Client-Side Mercado Pago
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-<script>
-// Agrega credenciales de SDK
-const mp = new MercadoPago('PUBLIC_KEY', {
-      locale: 'es-AR'
-});
-
-const preferenceId = "<?php echo $preference->id; ?>"
-
-// Inicializa el checkout
-mp.checkout({
-    preference: {
-      id: 'YOUR_PREFERENCE_ID'
-    },
-    render: {
-      container: '.cho-container', // Indica dónde se mostrará el botón de pago
-      label: 'Pagar con Mercado Pago', // Cambia el texto del botón de pago (opcional)
-      type: 'wallet', // Aplica la marca de Mercado Pago al botón
-    }
-});
+<script
+  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id="<?php echo $preference->id; ?>"
+  data-button-label="Pagar con Mercado Pago"
+  data-button-type="wallet">
 </script>
 ```
 ```node
-// SDK Client-Side Mercado Pago
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-<script>
-// Agrega credenciales de SDK
-const mp = new MercadoPago('PUBLIC_KEY', {
-      locale: 'es-AR'
-});
-
-// Inicializa el checkout
-mp.checkout({
-    preference: {
-      id: 'YOUR_PREFERENCE_ID'
-    },
-    render: {
-      container: '.cho-container', // Indica dónde se mostrará el botón de pago
-      label: 'Pagar con Mercado Pago', // Cambia el texto del botón de pago (opcional)
-      type: 'wallet', // Aplica la marca de Mercado Pago al botón
-    }
-});
+<script
+  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id="<%= global.id %>"
+  data-button-label="Pagar con Mercado Pago"
+  data-button-type="wallet">
 </script>
-
 ```
 ```java
-// SDK Client-Side Mercado Pago
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-<script>
-// Agrega credenciales de SDK
-const mp = new MercadoPago('PUBLIC_KEY', {
-      locale: 'es-AR'
-});
-
-const preferenceId = ${preference.id};
-
-// Inicializa el checkout
-mp.checkout({
-    preference: {
-      id: 'YOUR_PREFERENCE_ID'
-    },
-    render: {
-      container: '.cho-container', // Indica dónde se mostrará el botón de pago
-      label: 'Pagar con Mercado Pago', // Cambia el texto del botón de pago (opcional)
-      type: 'wallet', // Aplica la marca de Mercado Pago al botón
-    }
-});
+<script
+  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id="${preference.id}"
+  data-button-label="Pagar con Mercado Pago"
+  data-button-type="wallet">
 </script>
 ```
 ```ruby
-# SDK Client-Side Mercado Pago
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-<script>
-# Agrega credenciales de SDK
-const mp = new MercadoPago('PUBLIC_KEY', {
-      locale: 'es-AR'
-});
-
-const preferenceId = "<%= @preference_id %>";
-
-# Inicializa el checkout
-mp.checkout({
-    preference: {
-      id: 'YOUR_PREFERENCE_ID'
-    },
-    render: {
-      container: '.cho-container', # Indica dónde se mostrará el botón de pago
-      label: 'Pagar con Mercado Pago', # Cambia el texto del botón de pago (opcional)
-      type: 'wallet', # Aplica la marca de Mercado Pago al botón
-    }
-});
+<script
+  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id="<%= @preference_id %>"
+  data-button-label="Pagar con Mercado Pago"
+  data-button-type="wallet">
 </script>
 ```
 ```csharp
-// SDK Client-Side Mercado Pago
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-<script>
-// Agrega credenciales de SDK
-const mp = new MercadoPago('PUBLIC_KEY', {
-      locale: 'es-AR'
-});
-
-const preferenceId = @Html.DisplayFor(model => model.id);
-
-// Inicializa el checkout
-mp.checkout({
-    preference: {
-      id: 'YOUR_PREFERENCE_ID'
-    },
-    render: {
-      container: '.cho-container', // Indica dónde se mostrará el botón de pago
-      label: 'Pagar con Mercado Pago', // Cambia el texto del botón de pago (opcional)
-      type: 'wallet', // Aplica la marca de Mercado Pago al botón
-    }
-});
+<script
+  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id="@Html.DisplayFor(model => model.id)"
+  data-button-label="Pagar con Mercado Pago"
+  data-button-type="wallet">
 </script>
 ```
 ```python
-# SDK Client-Side Mercado Pago
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-<script>
-# Agrega credenciales de SDK
-const mp = new MercadoPago('PUBLIC_KEY', {
-      locale: 'es-AR'
-});
-
-const preferenceId = {{ preference_id }}
-
-# Inicializa el checkout
-mp.checkout({
-    preference: {
-      id: 'YOUR_PREFERENCE_ID'
-    },
-    render: {
-      container: '.cho-container', # Indica dónde se mostrará el botón de pago
-      label: 'Pagar con Mercado Pago', # Cambia el texto del botón de pago (opcional)
-      type: 'wallet', # Aplica la marca de Mercado Pago al botón
-    }
-});
+<script
+  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+  data-preference-id="{{ preference_id }}"
+  data-button-label="Pagar con Mercado Pago"
+  data-button-type="wallet">
 </script>
 ```
 ]]]
-
-> Esta documentación utiliza la nueva versión de la librería. Para ver la versión anterior, ve a la [sección de Recibe pagos con la billetera de Mercado Pago con MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v1/wallet-integration).
-
-Para más información sobre cada atributo, consulta la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/preferences/_checkout_preferences/post).
-
-¡Y listo! Ya tienes integrada la billetera de Mercado Pago en tu sitio.
 
 > WARNING
 >
 > Importante
 >
-> Para probarlo, no te olvides de acceder desde otro navegador o cerrar la sesión de tu cuenta de Mercado Pago ya que no puedes pagarte a ti mismo.<br/>
+> Esta documentación utiliza la antigua versión de la librería. Para ver la versión nueva, ve a la [sección de Recibe pagos con la billetera de Mercado Pago con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/wallet-integration).
+
+
+Para más información sobre cada atributo, consulta la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/preferences/_checkout_preferences/post). 
+
+¡Y listo! Ya tienes integrada la billetera de Mercado Pago en tu sitio. 
+
+> WARNING
+>
+> Importante
+>
+> Para probarlo, no te olvides de acceder desde otro navegador o cerrar la sesión de tu cuenta de Mercado Pago ya que no puedes pagarte a ti mismo.<br/> 
 
 ---
 

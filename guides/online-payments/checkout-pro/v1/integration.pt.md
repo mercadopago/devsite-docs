@@ -6,87 +6,119 @@ Use os [exemplos para download](#bookmark_exemplos_para_download) para conhecer 
 
 ## Como me integro?
 
-![Integration](/images/web-payment-checkout/flow-v2-2.png)
+![Integration](/images/web-payment-checkout/flow-v2.png)
 
-1. Crie sua preferência
+1. Gere sua preferência
 
-	1.1 Adicione o SDK do Mercado Pago no seu backend e adicione as credenciais para permitir seu uso.
+	1.1 Adicione o SDK baixado do Mercado Pago no seu projeto.
 
-	1.2 Configure a preferência conforme seu produto ou serviço.<br><br>
+	1.2 Adicione as credenciais para habilitar o uso do SDK do Mercado Pago.
 
-2. Adicione o Checkout Pro ao seu site
+	1.3 Configure a preferência conforme seu produto ou serviço.
 
-	2.1 Inclui o SDK MercadoPago.js V2 em seu frontend.
-
-	2.2 Configure as credenciais para habilitar o uso do SDK e inicialize o checkout com a preferência criada.
+2. Adicione o checkout ao seu site
 
 ## Etapas para se integrar
 
 Instalar o Checkout Pro requer duas etapas:
 
-> SERVER_SIDE
->
-> h3
->
-> &nbsp;1. Crie sua preferência
+### 1. Gere sua preferência
 
-No seu backend, escreva o seguinte código que consiste em duas partes:
+Insira o seguinte código que consta de três partes:
 
-1.1 Adicione o [SDK do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/previous-requirements#bookmark_pré-requisitos) ao seu projeto e configure as [credenciais]([FAKER][CREDENTIALS][URL]) para habilitar seu uso:
+1.1 Adicione o [SDK do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/previous-requirements#bookmark_pré-requisitos) no seu projeto:
 
 [[[
 ```php
 <?php
-// SDK do Mercado Pago
+// SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
-// Adicione as credenciais
+?>
+```
+```node
+// SDK de Mercado Pago
+const mercadopago = require ('mercadopago');
+```
+```java
+// SDK de Mercado Pago
+import com.mercadopago.MercadoPago;
+```
+```ruby
+# SDK de Mercado Pago
+require 'mercadopago'
+```
+```csharp
+// SDK de Mercado Pago
+ using MercadoPago.Config;
+```
+```python
+# SDK de Mercado Pago
+import mercadopago
+```
+]]]
+
+<br/><br/>1.2 Adicione as [credenciais]([FAKER][CREDENTIALS][URL]) para habilitar o uso do SDK do Mercado Pago:<br/>
+
+[[[
+```php
+<?php
+// SDK de Mercado Pago
+require __DIR__ .  '/vendor/autoload.php';
+
+// Configura credenciais
 MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 ?>
 ```
 ```node
-// SDK do Mercado Pago
+// SDK de Mercado Pago
 const mercadopago = require ('mercadopago');
-// Adicione as credenciais
+
+// Configura credenciais
 mercadopago.configure({
   access_token: 'PROD_ACCESS_TOKEN'
 });
 ```
 ```java
-// SDK do Mercado Pago
+// SDK de Mercado Pago
 import com.mercadopago.MercadoPago;
-// Adicione as credenciais
+
+// Configura credenciais
 MercadoPago.SDK.setAccessToken("PROD_ACCESS_TOKEN");
 ```
 ```ruby
-# SDK do Mercado Pago
-require 'mercadopago'
-# Adicione as credenciais
+# SDK de Mercado Pago
+require 'mercadopago.rb'
+
+# Configura credenciais
 sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
 ```
 ```csharp
-// SDK do Mercado Pago
- using MercadoPago.Config;
- // Adicione as credenciais
+// SDK de Mercado Pago
+using MercadoPago.Config;
+
+// Configura credenciais
 MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
 ```
 ```python
-# SDK do Mercado Pago
+# SDK de Mercado Pago  
 import mercadopago
-# Adicione as credenciais
+
+# Configura credenciais
 sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 ```
 ]]]
 
-1.2 Configure a preferência conforme seu produto ou serviço:
+
+<br/><br/>1.3 Configure a preferência conforme seu produto ou serviço:<br/>
 
 ----[mla, mlb, mlu, mpe, mlm]----
 
-> Por favor considere que é necessário configurar as `back_urls` se você quiser retornar ao seu site ao final do pagamento. Para mais informações, visite a seção [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/advanced-integration#bookmark_url_de_retorno).
+> Por favor considere que é necessário configurar as `back_urls` se você quiser retornar ao seu site ao final do pagamento. Para mais informações, visite a seção [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/advanced-integration#bookmark_url_de_retorno). 
 
 [[[
  ```php
 <?php
-// SDK do Mercado Pago
+// SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
 
 // Configura credenciais
@@ -105,7 +137,7 @@ $preference->save();
 ?>
 ```
 ```node
-// SDK do Mercado Pago
+// SDK de Mercado Pago
 const mercadopago = require ('mercadopago');
 
 // Configura credenciais
@@ -133,7 +165,7 @@ mercadopago.preferences.create(preference)
 });
 ```
 ```java
-// SDK do Mercado Pago
+// SDK de Mercado Pago
 import com.mercadopago.MercadoPago;
 
 // Configura credenciais
@@ -151,7 +183,7 @@ preference.appendItem(item);
 preference.save();
 ```
 ```ruby
-# SDK do Mercado Pago
+# SDK de Mercado Pago
 require 'mercadopago'
 
 # Configura credenciais
@@ -174,7 +206,7 @@ preference = preference_response[:response]
 @preference_id = preference['id']
 ```
 ```csharp
-// SDK do Mercado Pago
+// SDK de Mercado Pago
 using MercadoPago.Config;
 using MercadoPago.Client.Preference;
 using MercadoPago.Resource.Preference;
@@ -202,7 +234,7 @@ var client = new PreferenceClient();
 Preference preference = await client.CreateAsync(request);
 ```
 ```python
-# SDK do Mercado Pago
+# SDK de Mercado Pago
 import mercadopago
 
 # Configura credenciais
@@ -247,7 +279,7 @@ curl -X POST \
 [[[
  ```php
 <?php
-// SDK do Mercado Pago
+// SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
 
 // Configura credenciais
@@ -266,7 +298,7 @@ $preference->save();
 ?>
 ```
 ```node
-// SDK do Mercado Pago
+// SDK de Mercado Pago
 const mercadopago = require ('mercadopago');
 
 // Configura credenciais
@@ -294,7 +326,7 @@ mercadopago.preferences.create(preference)
 });
 ```
 ```java
-// SDK do Mercado Pago
+// SDK de Mercado Pago
 import com.mercadopago.MercadoPago;
 
 // Configura credenciais
@@ -312,7 +344,7 @@ preference.appendItem(item);
 preference.save();
 ```
 ```ruby
-# SDK do Mercado Pago
+# SDK de Mercado Pago
 require 'mercadopago'
 
 # Configura credenciais
@@ -335,7 +367,7 @@ preference = preference_response[:response]
 @preference_id = preference['id']
 ```
 ```csharp
-// SDK do Mercado Pago
+// SDK de Mercado Pago
 using MercadoPago.Config;
 using MercadoPago.Client.Preference;
 using MercadoPago.Resource.Preference;
@@ -363,7 +395,7 @@ var client = new PreferenceClient();
 Preference preference = await client.CreateAsync(request);
 ```
 ```python
-# SDK do Mercado Pago
+# SDK de Mercado Pago
 import mercadopago
 
 # Configura credenciais
@@ -408,7 +440,6 @@ curl -X POST \
 > O valor de `unit_price` deve ser um número inteiro.
 
 ------------
-
 <span></span>
 
 > NOTE
@@ -417,74 +448,54 @@ curl -X POST \
 >
 > Se quiser aceitar pagamentos apenas de usuários cadastrados, com cartão e saldo no Mercado Pago, entre [nesta seção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados) para mais informações.
 
-<span></span>
+### 2. Adicione o checkout ao seu site
 
-> CLIENT_SIDE
->
-> h3
->
-> &nbsp;2. Adicione o Checkout Pro ao seu site
-
-Agora no seu frontend, siga estas etapas para adicionar o checkout ao seu site:
-
-2.1. Inclua o SDK MercadoPago.js V2 no seu projeto:
+Por último, adicione o seguinte código para mostrar o botão de pagamento do seu Checkout Pro onde você quiser que ele apareça.
 
 [[[
 ```php
-// SDK MercadoPago.js V2
-<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script
+  src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
+  data-preference-id="<?php echo $preference->id; ?>">
+</script>
 ```
 ```node
-// SDK MercadoPago.js V2
-<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script
+  src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
+  data-preference-id='<%= global.id %>'>
+</script>
 ```
 ```java
-// SDK MercadoPago.js V2
-<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script
+  src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
+  data-preference-id="${preference.id}">
+</script>
 ```
 ```ruby
-# SDK MercadoPago.js V2
-<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script
+  src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
+  data-preference-id="<%= @preference_id %>">
+</script>
 ```
 ```csharp
-// SDK MercadoPago.js V2
-<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script
+  src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
+  data-preference-id="@Html.DisplayFor(model => model.id)">
+</script>
 ```
 ```python
-# SDK MercadoPago.js V2
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-```
-]]]
-
-2.2. Configure as credenciais do SDK para seu uso e inicialize seu checkout com o ID da preferência criada anteriormente e o identificador do elemento onde o botão de pagamento deve ser exibido.
-
-[[[
-```html
-<script>
-// Adicione as credenciais do SDK
-  const mp = new MercadoPago('PUBLIC_KEY', {
-        locale: 'es-AR'
-  });
-
-  // Inicialize o checkout
-  mp.checkout({
-      preference: {
-          id: 'YOUR_PREFERENCE_ID'
-      },
-      render: {
-            container: '.cho-container', // Indica onde o botão de pagamento será exibido
-            label: 'Pagar', // Muda o texto do botão de pagamento (opcional)
-      }
-});
+<script
+  src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-payment-checkout.js"
+  data-preference-id="{{ preference_id }}">
 </script>
 ```
 ]]]
 
-Neste caso, será mostrado um botão de pagamento que abrirá o Checkout Pro.
-
-Você pode consultar outras maneiras de abrir o checkout na [seção de Personalizações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/customizations).
-
-> Esta documentação utiliza a nova versão da biblioteca. Para ver a versão anterior, vá para a [seção de Integre o Checkout Pro antiga](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/v1/integration).
+> WARNING
+>
+> Importante
+>
+> Esta documentação utiliza a antiga versão da biblioteca. Para ver a versão nova, vá para a [seção de Integre o Checkout Pro com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/integration).
 
 > WARNING
 >
@@ -493,7 +504,6 @@ Você pode consultar outras maneiras de abrir o checkout na [seção de Personal
 > Não esqueça de acessar de outro navegador ou de encerrar a sessão da sua conta do Mercado Pago antes de fazer os testes. Você não pode pagar com a mesma conta que criou o formulário de pagamento.<br/>
 
 #### Excelente! Você concluiu sua integração.
-
 _Clique no link dentro do seu site e [teste a integração do seu Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration)_.<br/><br/>
 
 ## Exemplos para download

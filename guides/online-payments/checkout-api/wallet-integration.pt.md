@@ -342,6 +342,8 @@ mp.checkout({
 ```
 ]]]
 
+> Esta documentação utiliza a nova versão da biblioteca. Para ver a versão anterior, vá para a [seção de Receba pagamentos com a carteira do Mercado Pago com MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v1/wallet-integration).
+
 Para mais informações sobre cada atributo, confira a [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/preferences/_checkout_preferences/post).
 
 Pronto! você já tem a carteira do Mercado Pago integrada no seu site.

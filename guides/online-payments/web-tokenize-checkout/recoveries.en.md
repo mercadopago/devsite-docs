@@ -46,3 +46,5 @@ Another possibility, in case a payment is rejected, is to invoke the *Web Tokeni
 The option to open the checkout by default is controlled from the `autoOpen` attribute and it is only a matter of setting its value to `true`.
 
 Find out more information on how to configure the checkout to open automatically in the [Customizations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/web-tokenize-checkout/personalization#bookmark_ways_to_open_the_web_tokenize_checkout).
+
+> This documentation uses the new library version. To see the previous version, go to [Recoveries section with MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/web-tokenize-checkout/v1/recoveries).

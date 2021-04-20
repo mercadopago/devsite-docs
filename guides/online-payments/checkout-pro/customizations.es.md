@@ -272,6 +272,8 @@ theme: {
 
 ![Dark Color Button](/images/web-payment-checkout/dark_color_button.png)
 
+> Esta documentación utiliza la nueva versión de la librería. Para ver la versión anterior, ve a la [sección de Personalizaciones antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/v1/customizations).
+
 ---
 
 ### Próximos pasos

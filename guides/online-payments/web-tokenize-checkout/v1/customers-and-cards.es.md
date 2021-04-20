@@ -172,27 +172,24 @@ Respuesta del Servidor:
 
 ## Recibir un pago de un Customer
 
-Para que puedas recibir un pago utilizando una tarjeta almacenada, es necesario incluir en el código de integración el ID del customer y los ID de las tarjetas del usuario a través de los atributos `customerId` y `cardIds` dentro del parámetro `savedCards`.
+> WARNING
+>
+> Importante
+>
+> Esta documentación utiliza la antigua versión de la librería. Para ver la versión nueva, ve a la [sección de Clientes y tarjetas almacenadas con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/web-tokenize-checkout/customers-and-cards).
 
-Por ejemplo:
+Para que puedas recibir un pago utilizando una tarjeta almacenada, es necesario incluir en el código HTML el ID del customer y los IDs de las tarjetas del usuario a través de los atributos `data-customer-id` y `data-card-ids`. Por ejemplo:
 
 ```html
-<script>
-  mp.checkout({
-    tokenizer: {
-        totalAmount: 4000,
-        backUrl: 'https://www.mi-sitio.com/process',
-        savedCards: {
-            cardIds: '1518023392627,1518023332143' // IDs de las tarjetas
-            customerId: '209277402-FqRqgEc3XItrxs' // Tu customer ID
-        }
-    },
-    render: {
-        container: ‘.tokenizer-container’,
-        label: ‘Pagar’
-    }
-  });
-</script>
+<form action="/procesar-pago" method="POST">
+  <script
+    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
+    data-public-key="ENV_PUBLIC_KEY"
+    data-transaction-amount="100.00"
+    data-customer-id="209277402-FqRqgEc3XItrxs"
+    data-card-ids="1518023392627,1518023332143">
+  </script>
+</form>
 ```
 
 > NOTE
@@ -271,29 +268,20 @@ Con esta información de tarjetas puedes invocar el *Web Tokenize Checkout*.
 Por ejemplo:
 
 ```html
-<script>
-// Obtén los IDs de las cards obtenidas al llamar a la API en el paso anterior
-  const customerCardIds = cardsResponse.map(card => card.id);
-
-// Inicializa  el checkout
-  mp.checkout({
-    tokenizer: {
-        totalAmount: 4000,
-        backUrl: 'https://www.mi-sitio.com/process',
-        savedCards: {
-            cardIds: customerCardIds, // cardIds obtenidos
-            customerId: '209277402-FqRqgEc3XItrxs' // Tu customer id
-        }
-    },
-    render: {
-        container: ‘.tokenizer-container’,
-        label: ‘Pagar’
-    }
-  });
-</script>
+<form action="/procesar-pago" method="POST">
+  <script
+    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
+    data-public-key="ENV_PUBLIC_KEY"
+    data-transaction-amount="100.00"
+    data-customer-id="209277402-FqRqgEc3XItrxs"
+    data-card-ids="<?php
+      foreach ($cards["response"] as $card) {
+        echo $card["id"];
+      }
+    ?>">
+  </script>
+</form>
 ```
-
-> Esta documentación utiliza la nueva versión de la librería. Para ver la versión anterior, ve a la [sección de Clientes y tarjetas almacenadas con MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/web-tokenize-checkout/v1/customers-and-cards).
 
 
 ## Agregar nuevas tarjetas a un Customer

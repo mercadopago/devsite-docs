@@ -57,6 +57,8 @@ You can find the Public Key in the [Credentials section]([FAKER][CREDENTIALS][UR
 
 > Find all the information about your credentials in our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/faqs/credentials).
 
+> This documentation uses the new library version. To see the previous version, go to [Receive card payments with MercadoPago.js V1 section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/web-tokenize-checkout/v1/receiving-payment-by-card).
+
 ### Step 3: Get the data
 
 *Web Tokenize Checkout* will do a `POST` to the URL that you have defined in the `action` attribute of the HTML code snippet (In the example: **/process-payment**) with certain data. You must use this information to make the payment.

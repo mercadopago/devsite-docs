@@ -291,6 +291,9 @@ For example:
 </script>
 ```
 
+> This documentation uses the new library version. To see the previous version, go to [Customers and stored cards with MercadoPago.js V1 section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/web-tokenize-checkout/v1/customers-and-cards).
+
+
 ## Adding new cards to a customer
 
 It is possible to add new cards to your `Customer`. For this you must create a `token` and make a `HTTP POST` request to `Customer`.

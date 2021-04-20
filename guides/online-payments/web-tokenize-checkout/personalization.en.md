@@ -399,3 +399,5 @@ summary: {
 ```
 
 It will appear in the detail of the purchase under the concept of *"Outstanding balance"*.
+
+> This documentation uses the new library version. To see the previous version, go to [Customization section with MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/web-tokenize-checkout/v1/personalization).

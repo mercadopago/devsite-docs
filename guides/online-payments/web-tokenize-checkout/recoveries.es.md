@@ -47,3 +47,4 @@ La opción de abrir el checkout por defecto es controlada desde el atributo `aut
 
 Puedes encontrar más información sobre cómo configurar la apertura automática del checkout desde la [sección de Personalizaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/web-tokenize-checkout/personalization#bookmark_apertura_del_web_tokenize_checkout)
 
+> Esta documentación utiliza la nueva versión de la librería. Para ver la versión anterior, ve a la [sección de Recuperos con MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/web-tokenize-checkout/v1/recoveries).
