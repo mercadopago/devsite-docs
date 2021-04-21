@@ -353,7 +353,7 @@ Finally, follow these steps to add the checkout to your website.
 2.1. Add the MercadoPago.js V2 SDK to your project:
 
 ```html
-# SDK MercadoPago.js V2
+// SDK MercadoPago.js V2
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 

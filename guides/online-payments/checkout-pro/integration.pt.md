@@ -350,7 +350,7 @@ Agora no seu frontend, siga estas etapas para adicionar o checkout ao seu site:
 2.1. Inclua o SDK MercadoPago.js V2 no seu projeto:
 
 ```html
-# SDK MercadoPago.js V2
+// SDK MercadoPago.js V2
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
