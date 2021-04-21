@@ -112,7 +112,7 @@ Ao configurar uma data de cobrança, você pode escolher entre cobrar ou não um
 > 
 > Apenas para exemplificar, os códigos abaixo exibem o dia 10 como data de cobrança. Qualquer dia entre __1 e 28__ pode ser selecionado, usando o parâmetro __billing_day__.
 
-__Plano com data de cobrança para o dia 10 e com pagamento proporcional__
+#### Plano com data de cobrança para o dia 10 e com pagamento proporcional
 
 ```json
 {
@@ -136,7 +136,7 @@ __Plano com data de cobrança para o dia 10 e com pagamento proporcional__
 
 Para não cobrar o pagamento proporcional, faça a seguinte chamada: 
 
-__Plano com data de cobrança para o dia 10 e sem pagamento proporcional__
+#### Plano com data de cobrança para o dia 10 e sem pagamento proporcional
 
 ```json
 {

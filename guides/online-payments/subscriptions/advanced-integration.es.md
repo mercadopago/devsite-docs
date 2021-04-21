@@ -114,7 +114,7 @@ Cuando se establece una fecha de facturación, se puede elegir si se va a cobrar
 > 
 > A modo de ejemplo, los códigos de abajo muestran el día 10 como fecha de facturación. Se puede seleccionar cualquier día entre el __1 y el 28__, utilizando el parámetro __billing_day__.
 
-__Plan con fecha de facturación para el día 10 (con pago proporcional)__
+#### Plan con fecha de facturación para el día 10 (con pago proporcional)
 
 ```json
 {
@@ -138,7 +138,7 @@ __Plan con fecha de facturación para el día 10 (con pago proporcional)__
 
 Para no cobrar el pago proporcional, haz la siguiente llamada: 
 
-__Plan con fecha de facturación para el día 10 (sin pago proporcional)__
+#### Plan con fecha de facturación para el día 10 (sin pago proporcional)
 
 ```json
 {
