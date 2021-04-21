@@ -77,7 +77,7 @@ The complete process for testing the checkout is as follows:
     * **CONT**: Pending payment.  
     * **CALL**: Payment declined, call to authorize.  
     * **FUND**: Payment declined due to insufficient funds.  
-    * **SECU**: Payment declined by security code.  
+    * **SECU**: Payment declined by the card security code.  
     * **EXPI**: Payment declined by expiration date.  
     * **FORM**: Payment declined due to error in form.  
     * **OTHE**: General decline.
