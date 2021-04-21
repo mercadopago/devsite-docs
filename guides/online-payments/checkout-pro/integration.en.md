@@ -352,32 +352,10 @@ Finally, follow these steps to add the checkout to your website.
 
 2.1. Add the MercadoPago.js V2 SDK to your project:
 
-[[[
-```php
-// SDK MercadoPago.js V2
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-```
-```node
-// SDK MercadoPago.js V2
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-```
-```java
-// SDK MercadoPago.js V2
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-```
-```ruby
-# SDK MercadoPago.js V2
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-```
-```csharp
-// SDK MercadoPago.js V2
-<script src="https://sdk.mercadopago.com/js/v2"></script>
-```
-```python
+```html
 # SDK MercadoPago.js V2
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
-]]]
 
 2.2. Add the SDK credentials to enable its use and initialize the checkout using the ID from the preference created earlier and the ID or selector for the element where the payment button should be displayed.
 
