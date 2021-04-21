@@ -32,6 +32,7 @@ Para poder integrar suscripciones, es necesario que conozcas cuatro conceptos cl
 | Suscripción o preapproval | Autorización del pagador para cobros recurrentes con un medio de pago definido que va ser la base para crear cuotas según la recurrencia que se defina. Tiene características similares al template, ya que puede crearse una suscripción a partir de un plan. |
 | Pago autorizado o authorized payment | Es la cuota de una suscripción que se genera y se cobra en base a la recurrencia definida. El motor de suscripciones calendariza y genera los pagos de forma automática. |
 | Cobro de verificación | Se trata de un cobro mínimo, que se realiza en el momento de la adhesión del pagador solo para verificar que la tarjeta utilizada para pagar la suscripción es válida. Enseguida, este monto se reembolsa al pagador. |
+| Fecha de facturación | Es la fecha que el vendedor puede establecer para recibir los cobros de una suscripción con una frecuencia de pago mensual. |
 
 
 ------------

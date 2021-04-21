@@ -102,6 +102,64 @@ curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPRO
 }'
 ```
 
+### Fecha de facturación
+
+Si tienes una suscripción mensual, puedes establecer un día fijo del mes para recibir los cobros de una suscripción mensual. 
+
+Cuando se establece una fecha de facturación, se puede elegir si se va a cobrar o no un monto proporcional a los pagadores que se adhieren a esa suscripción en fechas distintas a la elegida.
+
+> NOTE
+> 
+> Nota
+> 
+> A modo de ejemplo, los códigos de abajo muestran el día 10 como fecha de facturación. Se puede seleccionar cualquier día entre el __1 y el 28__, utilizando el parámetro __billing_day__.
+
+__Plan con fecha de facturación para el día 10 (con pago proporcional)__
+
+```json
+{
+"back_url": "https://www.mercadopago.com.ar",
+	"reason": "Plan Pase Gym Gold",
+	"auto_recurring": {
+		"frequency": "1",
+		"frequency_type": "months",
+    "transaction_amount": 1100,
+		"currency_id": "ARS",
+		"repetitions": 12,
+    "billing_day": 10,
+    "billing_day_proportional": true,
+		"free_trial": {
+			"frequency_type": "months",
+			"frequency": "1"
+		}
+	}
+}
+```
+
+Para no cobrar el pago proporcional, haz la siguiente llamada: 
+
+__Plan con fecha de facturación para el día 10 (sin pago proporcional)__
+
+```json
+{
+	"back_url": "https://www.mercadopago.com.ar",
+	"reason": "Plan Pase Gym Gold",
+	"auto_recurring": {
+	  "frequency": "1",
+		"frequency_type": "months",
+    "transaction_amount": 1100,
+		"currency_id": "ARS",
+		"repetitions": 12,
+    "billing_day": 10,
+    "billing_day_proportional": false,
+		"free_trial": {
+		  "frequency_type": "months",
+		  "frequency": "1"
+		}
+	}
+}
+```
+
 >Puedes obtener más información sobre los campos en la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference).
 
 

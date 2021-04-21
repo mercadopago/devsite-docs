@@ -100,6 +100,64 @@ curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPRO
 }'
 ```
 
+### Data de cobrança
+
+Se você tem uma assinatura mensal, você pode definir um dia fixo do mês para receber as cobranças de uma assinatura mensal. 
+
+Ao configurar uma data de cobrança, você pode escolher entre cobrar ou não um valor proporcional dos pagadores que se inscrevem para essa assinatura em datas diferentes da escolhida.
+
+> NOTE
+> 
+> Nota
+> 
+> Apenas para exemplificar, os códigos abaixo exibem o dia 10 como data de cobrança. Qualquer dia entre __1 e 28__ pode ser selecionado, usando o parâmetro __billing_day__.
+
+__Plano com data de cobrança para o dia 10 e com pagamento proporcional__
+
+```json
+{
+"back_url": "https://www.mercadopago.com.br",
+	"reason": "Plano Pase Gym Gold",
+	"auto_recurring": {
+		"frequency": "1",
+		"frequency_type": "months",
+    "transaction_amount": 1100,
+		"currency_id": "BRL",
+		"repetitions": 12,
+    "billing_day": 10,
+    "billing_day_proportional": true,
+		"free_trial": {
+			"frequency_type": "months",
+			"frequency": "1"
+		}
+	}
+}
+```
+
+Para não cobrar o pagamento proporcional, faça a seguinte chamada: 
+
+__Plano com data de cobrança para o dia 10 e sem pagamento proporcional__
+
+```json
+{
+	"back_url": "https://www.mercadopago.com.br",
+	"reason": "Plano Pase Gym Gold",
+	"auto_recurring": {
+	  "frequency": "1",
+		"frequency_type": "months",
+    "transaction_amount": 1100,
+		"currency_id": "BRL",
+		"repetitions": 12,
+    "billing_day": 10,
+    "billing_day_proportional": false,
+		"free_trial": {
+		  "frequency_type": "months",
+		  "frequency": "1"
+		}
+	}
+}
+```
+
 >Para saber mais sobre os campos disponíveis, confira as [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference).
 
 
