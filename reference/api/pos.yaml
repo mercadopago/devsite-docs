@@ -25,20 +25,22 @@ paths:
                   type: boolean
                   description: Define if the customer can insert the amount to be paid.
                   example: false
-                category:
-                  $ref: '#/components/schemas/category'
                 store_id:
                   type: string
                   description: Store identifier to which the point of sale belongs.
-                  example: 123123ASDD0919ASDF912
+                  example: 1234567
                 external_store_id:
                   type: string
                   description: >-
                     External_id of the store to which the pos belongs defined by
                     integrator system.
+                  example: SUC001
                 external_id:
                   type: string
                   description: Unique identifier of the pos defined by integrator system.
+                  example: SUC001POS001
+                category:
+                  $ref: '#/components/schemas/category'
                 url:
                   type: string
                   description: >-
@@ -99,28 +101,28 @@ paths:
                     description: user_id
                   name:
                     type: string
-                    example: Caja Principal
+                    example: First POS
                     description: name
                   fixed_amount:
                     type: boolean
+                    example: false
                     description: fixed_amount
                   category:
                     $ref: '#/components/schemas/category'
                   store_id:
                     type: string
-                    example: 12345678
+                    example: 1234567
                     description: store_id
                   external_store_id:
                     type: string
-                    example: BK021
+                    example: SUC001
                     description: external_store_id
                   url:
                     type: string
-                    example: https://www.miempresa.com/MP?locationId=6232&positionId=01
                     description: url
                   external_id:
                     type: string
-                    example: 4lph4num3r1c
+                    example: SUC001POS001
                     description: external_id
         '400':
           description: Error
@@ -197,6 +199,32 @@ paths:
         - $ref: '#/tags/qr-code'
       summary: Get all POS
       description: Get the information about all of your stores
+      parameters:
+        - name: external_id
+          in: query
+          description: External ID
+          required: false
+          schema:
+            type: string
+            example: SUC001POS001
+        - name: external_store_id
+          in: query
+          description: External Store ID
+          required: false
+          schema:
+            type: string
+        - name: store_id
+          in: query
+          description: Store ID
+          required: false
+          schema:
+            type: string
+        - name: category
+          in: query
+          description: Category
+          required: false
+          schema:
+            type: string
       responses:
         '200':
           description: Success
@@ -210,7 +238,7 @@ paths:
                     properties:
                       total:
                         type: number
-                        example: 2
+                        example: 1
                         description: total
                       offset:
                         type: number
@@ -241,11 +269,11 @@ paths:
                           $ref: '#/components/schemas/category'
                         store_id:
                           type: string
-                          example: 12345678
+                          example: 1234567
                           description: store_id
                         external_id:
                           type: string
-                          example: CAJA001
+                          example: SUC001POS001
                           description: external_id
                         id:
                           type: number
@@ -318,7 +346,7 @@ paths:
           required: true
           schema:
             type: string
-            example: 12123adfasdf123u4u
+            example: 1988157
       responses:
         '200':
           description: Success
@@ -329,7 +357,7 @@ paths:
                 properties:
                   id:
                     type: string
-                    example: 2852128
+                    example: 1988157
                     description: POS identifier, numerical and self-generated.
                   qr:
                     type: object
@@ -367,13 +395,13 @@ paths:
                     example: 329653108
                   name:
                     type: string
-                    example: loja1
+                    example: POS001
                   fixed_amount:
                     type: boolean
                     example: false
                   external_id:
                     type: string
-                    example: loja1
+                    example: SUC001POS002
                   site:
                     type: string
                     example: MLB
@@ -423,17 +451,13 @@ paths:
           required: true
           schema:
             type: string
-            example: 12123adfasdf123u4u
+            example: 1988157
       requestBody:
         content:
           application/json:
             schema:
               type: object
               properties:
-                id:
-                  type: string
-                  description: POS identifier, numerical and self-generated.
-                  example: 123123ASDFDE123123
                 name:
                   type: string
                   description: Name of the POS.
@@ -447,7 +471,7 @@ paths:
                 store_id:
                   type: string
                   description: Store identifier to which the point of sale belongs.
-                  example: 123123123ADFDSE123
+                  example: 1234567
                 external_store_id:
                   type: string
                   description: >-
@@ -512,29 +536,28 @@ paths:
                     description: user_id
                   name:
                     type: string
-                    example: Caja Principal
+                    example: First POS
                     description: name
                   fixed_amount:
                     type: boolean
-                    example: true
+                    example: false
                     description: fixed_amount
                   category:
                     $ref: '#/components/schemas/category'
                   store_id:
                     type: string
-                    example: 12345678
+                    example: 1234567
                     description: store_id
                   external_store_id:
                     type: string
-                    example: BK021
+                    example: SUC001
                     description: external_store_id
                   url:
                     type: string
-                    example: https://www.miempresa.com/MP?locationId=6232&positionId=01
                     description: url
                   external_id:
                     type: string
-                    example: 4lph4num3r1c
+                    example: SUC001POS002
                     description: external_id
                   site:
                     type: string
@@ -662,17 +685,19 @@ components:
       example: 621102
       description: MCC code that indicates the category of the Point of Sale. If not specified, it remains as a generic category.
       enum:
-        - 621102 -- Argentina Gastronomy
-        - 473000 -- Argentina Gas station
-        - 5611203 -- Brazil Gastronomy
-        - 4731300 -- Brazil Gas station
-        - 5812 -- Mexico Gastronomy
-        - 468419 -- Mexico Gas station
-        - 5611 -- Colombia Gastronomy
-        - 4731 -- Colombia Gas station
-        - 5520 -- Peru Gastronomy
-        - 5050 -- Peru Gas station
-        - 56101 -- Uruguay Gastronomy
-        - 47300 -- Uruguay Gas station
-        - 561000 -- Chile Gastronomy
-        - 473001 -- Chile Gas station
+        - Gastronomy -- 
+        - 621102 -- Argentina
+        - 5611203 -- Brazil 
+        - 5812 -- Mexico
+        - 5611 -- Colombia
+        - 5520 -- Peru 
+        - 56101 -- Uruguay
+        - 561000 -- Chile
+        - Gas station -- 
+        - 473000 -- Argentina
+        - 4731300 -- Brazil
+        - 468419 -- Mexico
+        - 4731 -- Colombia
+        - 5050 -- Peru
+        - 47300 -- Uruguay
+        - 473001 -- Chile
