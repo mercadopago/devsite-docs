@@ -32,7 +32,7 @@ In order to integrate subscriptions, you need to know four key concepts:
 | Subscription or pre-approval | Payer authorization for recurring payments with a defined payment method that will be the basis for creating installments according to the recurrence that is defined. It has similar characteristics to the template, since a subscription can be created from a plan. |
 | Authorized payment | It is the installment of a subscription that is generated and charged based on the defined recurrence. The subscription engine schedules and generates payments automatically. |
 | Verification payment | This is a minimum charge, which is made at the time of the payer's subscription only to verify that the card used to pay the subscription is a valid one. This amount is immediately refunded to the payer. |
-
+| Billing date | This is the date that the seller can set for receiving the charges for a subscription with a monthly payment frequency. |
 
 ------------
 ### Next steps
