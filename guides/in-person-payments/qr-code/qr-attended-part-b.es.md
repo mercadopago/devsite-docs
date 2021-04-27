@@ -124,7 +124,7 @@ La respuesta será un `HTTP 204 No Content`.
 
 Las notificaciones IPN (Instant Payment Notification) son la **forma automática de aviso de la creación de nuevas órdenes y las actualizaciones de sus estados**. Por ejemplo si fueron aprobados, rechazados o si se encuentran pendientes.
 
-Implementa IPN de `merchant_order` junto con una búsqueda de la orden por `external_reference` como método de contigencia.
+Implementa IPN de `merchant_order` junto con una búsqueda de la orden por `external_reference` como método de contingencia.
 
 [Recibir notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn)
 

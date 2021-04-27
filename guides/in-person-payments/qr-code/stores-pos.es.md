@@ -135,6 +135,14 @@ Una vez creada la caja, podremos ver en el _Response_ los links a distintos entr
 >
 > Integrar QR modelo atendido
 >
-> Conoce paso a paso cómo integrar este modelo.
+> Conoce paso a paso cómo asociar una orden a la caja para realizar cobros. 
+>
+> [Integrar QR modelo atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/qr-attended-part-b)
+
+> RIGHT_BUTTON_RECOMMENDED_ES
+>
+> Integrar QR modelo dinámico
+>
+> Ofrece la opción de pagar con el monto a cobrar ya incluido en el código QR.
 >
 > [Integrar QR modelo atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/qr-attended-part-b)

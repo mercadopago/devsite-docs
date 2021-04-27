@@ -36,12 +36,22 @@ Para continuar, es necesario realizar los siguientes pasos:
 Para poder comenzar la integración, es necesario **contar con una cuenta de Mercado Pago o Mercado Libre**. 
 Si aún no tienes una, puedes [crear una cuenta de Mercado Pago](https://www.mercadopago.com.ar) cuando quieras.
 
+### 2. Crea una aplicación
+
+Necesitarás crear una aplicación por cada solución para tener todo organizado y llevar un control que te facilite la gestión. Crea una aplicación para obtener credenciales y configurar notificaciones webhooks. 
+
+Es fácil, te contamos cómo hacerlo:
+
+1. Ingresa a [Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications).
+2. Elige “Nueva aplicación” o “Crear tu primera aplicación”.
+3. Ponle un nombre con el que puedas identificarla más adelante.
+4. Acepta nuestros Términos y Condiciones. ¡Y listo! 
+
 > NOTE
 >
 > Nota
 >
 > Si vas a operar en nombre de otros, puedes trabajar con las credenciales de ellos de una forma más fácil y segura por [Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/marketplace/checkout-api/introduction).
-
 
 ### 2. Generar usuarios de prueba
 
