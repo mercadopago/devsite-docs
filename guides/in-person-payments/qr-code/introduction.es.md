@@ -48,7 +48,7 @@ Para recibir pagos con QR en tu negocio **puedes imprimirlo y pegarlo en un luga
 > 
 > Si tu modelo no requiere de una integración con un sistema de punto de venta,  puedes consultar toda la información disponible en [generar QR desde el panel de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/integrations-front). 
 
-Tipos de integración
+## Tipos de integración
 
 Tipo | Descripción
 ----------------- | -----------------
