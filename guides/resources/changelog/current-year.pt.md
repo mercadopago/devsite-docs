@@ -69,6 +69,18 @@ Integra Checkout API mais simples e rápido com a nova funcionalidade CardForm, 
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-js).
 
+> CHANGELOG
+>
+> Nova versão do gateway MercadoPagoV2 para VTEX
+>
+> NEWS: FEATURE
+>
+> Product: MERCADO PAGO VTEX
+
+Agora você pode incluir Pix como meio de pagamento com o gateway MercadoPagoV2 para VTEX.
+
+Ir para a documentação [Vtex](https://www.mercadopago.com.br/developers/pt/guides/plugins/unofficial/vtex).
+
 ### 29 de março
 
 > CHANGELOG
