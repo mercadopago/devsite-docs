@@ -103,7 +103,65 @@ curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPRO
 }'
 ```
 
->To get more information about the available fields, view the [API references](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
+## Billing date
+
+If you have a monthly subscription, you can set a fixed day of the month to receive your billings. 
+
+By setting a billing date, you can choose whether or not to charge a proportional amount to payers who sign up for that subscription on dates different from the one you chose.
+
+> NOTE
+> 
+> Note
+> 
+> Just as an example, the codes below display the 10th as billing date. Any day between __1 and 28__ can be selected, using the `billing_day` parameter.
+
+### Plan with billing date for the 10th and with proportional payment
+
+```json
+{
+"back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]",
+	"reason": "Plano Pase Gym Gold",
+	"auto_recurring": {
+		"frequency": "1",
+		"frequency_type": "months",
+    "transaction_amount": 1100,
+		"currency_id": "[FAKER][CURRENCY][ACRONYM]",
+		"repetitions": 12,
+    "billing_day": 10,
+    "billing_day_proportional": true,
+		"free_trial": {
+			"frequency_type": "months",
+			"frequency": "1"
+		}
+	}
+}
+```
+
+To not charge the proportional payment: 
+
+### Plan with billing date for the 10th and without proportional payment
+
+```json
+{
+	"back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]",
+	"reason": "Plano Pase Gym Gold",
+	"auto_recurring": {
+	  "frequency": "1",
+		"frequency_type": "months",
+    "transaction_amount": 1100,
+		"currency_id": "[FAKER][CURRENCY][ACRONYM]",
+		"repetitions": 12,
+    "billing_day": 10,
+    "billing_day_proportional": false,
+		"free_trial": {
+		  "frequency_type": "months",
+		  "frequency": "1"
+		}
+	}
+}
+```
+
+> To get more information about the available fields, view the [API references](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
 
 
 ------------
