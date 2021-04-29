@@ -161,7 +161,7 @@ To not charge the proportional payment:
 }
 ```
 
->To get more information about the available fields, view the [API references](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
+> To get more information about the available fields, view the [API references](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
 
 
 ------------
