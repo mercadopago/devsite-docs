@@ -1,14 +1,3 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
-  - mlb
----
-
 # Requisitos prévios para se integrar
 
 ## Glossário
@@ -37,13 +26,24 @@ Para poder começar a integração, é necessário **contar com uma conta de Mer
 
 Você pode [Entrar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/pre-requisites) em uma conta existente ou [Criar uma nova conta](https://www.mercadopago[FAKER][URL][DOMAIN]).
 
+### 2. Crie uma aplicação
+
+Você precisará criar uma aplicação para cada solução, a fim de ter tudo organizado e manter um controle que facilite a gestão. Crie uma aplicação para obter as credenciais e configurar notificações de webhooks.
+
+É fácil e explicamos como fazer isso:
+
+1. Entre em [Suas integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications).
+2. Selecione “Nova aplicação” ou “Criar sua primeira aplicação”.
+3. Dê a ela um nome com o qual você possa identificá-la mais tarde.
+4. Aceite nossos Termos e condições. E pronto!
+
 > NOTE
 > 
 > Nota
-> 
+>
 > Se for operar em nome de outros, você pode trabalhar com credenciais deles de uma forma mais fácil e segura por [Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/marketplace/checkout-api/introduction).
 
-### 2. Gere usuários de teste
+### 3. Gerar usuários de teste
 
 Para realizar os testes, é necessário que você tenha, no mínimo, dois usuários: um comprador e um vendedor. 
 

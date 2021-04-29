@@ -1,15 +1,4 @@
----
-sites_supported:
-- mla
-- mpe
-- mco
-- mlu
-- mlm
-- mlc
-- mlb
----
-
-#  How to integrate QR attended model
+# How to integrate QR attended model
 
 To charge with a QR attended model, you’ll have to create and order and then associate it with a Point of Sale.
 
@@ -21,7 +10,7 @@ We explain how the attended model works:
 
 <span></span>
 
-1. The point of sale registers an order (1a) and creates an order assigned to a checkout (1b). At this moment the order is available to be scanned (2).
+1. The Point of Sale registers an order (1a) and creates an order assigned to a checkout (1b). At this moment the order is available to be scanned (2).
 2. When the customer scans the QR (3) with the order and makes the payment (5), an IPN notification (4a and 6b) is received to the seller's server. With these data, the status of the order (7a) is obtained, to validate that it is closed or is still open, pending payment.
 
 

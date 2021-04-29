@@ -123,5 +123,5 @@ Luego, muestra el QR a tu cliente del modo que prefieras para que lo pueda pagar
 >
 > Conoce las opciones que dispones para llevar tu integración al siguiente nivel.
 >
-> [Integrar modelo QR dinamico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/advanced-integration)
+> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/advanced-integration)
 

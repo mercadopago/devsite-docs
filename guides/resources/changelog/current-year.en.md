@@ -6,6 +6,20 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## April 2021
 
+### April 30th
+
+> CHANGELOG
+>
+> New dynamic model for QR Code integration
+>
+> NEWS: NEW DOCUMENTATION
+>
+> Product: QR CODE
+
+Use the dynamic model to integrate the QR Code to include the amount to be collected directly in the code. This model can be included in payment tickets and desk services, among others.
+
+[Go to dynamic model documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/qr-dynamic/introduction)
+
 ### April 22nd
 
 > CHANGELOG
