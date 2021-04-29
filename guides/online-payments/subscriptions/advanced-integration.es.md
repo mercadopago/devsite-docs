@@ -138,7 +138,7 @@ Cuando se establece una fecha de facturación, se puede elegir si se va a cobrar
 
 Para no cobrar el pago proporcional, haz la siguiente llamada: 
 
-#### Plan con fecha de facturación para el día 10 (sin pago proporcional)
+### Plan con fecha de facturación para el día 10 sin pago proporcional
 
 ```json
 {
