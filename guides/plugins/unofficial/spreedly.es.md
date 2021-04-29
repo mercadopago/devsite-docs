@@ -27,7 +27,7 @@ A su vez, también es necesario ingresar el código de país:
 - PE - Peru
 - UY - Uruguay
 
-Finalmente, para operar con Mercado pago es necesario que nos envies los datos de identificación del dueño de la tarjeta (a excepción de México). Debes enviar como datos específicos del gateway:
+Finalmente, para operar con Mercado Pago es necesario que nos envies los datos de identificación del dueño de la tarjeta (a excepción de México). Debes enviar como datos específicos del gateway:
 
 - cardholder_identification_type.
 - cardholder_identification_number.

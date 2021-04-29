@@ -1,0 +1,16 @@
+properties:
+  id:
+    type: String
+    description: Identification type id.
+  name:
+    type: String
+    description: Identification type name.
+  type:
+    type: String
+    description: Identification number data type.
+  min_length:
+    type: number
+    description: Identification number min length.
+  max_length:
+    type: number
+    description: Identification number max length.

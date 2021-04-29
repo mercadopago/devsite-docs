@@ -97,7 +97,7 @@ Não é possível remover um meio de pagamento. Apenas desativá-lo.
 
 ### De Mercado Pago (Modelo Agregador)
 
-Daqui você poderá gerenciar os meios de pagamento Mercado pago
+Daqui você poderá gerenciar os meios de pagamento Mercado Pago
 
 ![Medios de pago agregador](/images/gateway/payment_methods_aggregator.png)
 

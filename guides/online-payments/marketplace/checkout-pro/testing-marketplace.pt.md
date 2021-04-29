@@ -56,7 +56,7 @@ curl -X POST \
 | Brasil | 4235 6477 2802 5682 | 5031 4332 1540 6351 | 3753 651535 56885 |
 | Chile | 4168 8188 4444 7115 | 5416 7526 0258 2580 | 3757 781744 61804 |
 | Colômbia | 4013 5406 8274 6260 | 5254 1336 7440 3564 | 3743 781877 55283 |
-| México | 4075 5957 1648 3764 | 5474 9254 3267 0366 | indisponível |
+| México | 4075 5957 1648 3764 | indisponível | indisponível |
 | Peru | 4009 1753 3280 6176 | indisponível | indisponível |
 | Uruguai | 4157 2362 1173 6486 |5161 4413 1585 2061 | indisponível |
 
@@ -76,7 +76,7 @@ O processo completo para testar o checkout é o seguinte:
     * **CONT**: Pagamento pendente.  
     * **CALL**: Recusado, ligar para autorizar.  
     * **FUND**: Recusado por saldo insuficiente.
-    * **SECU**: Recusado por código de segurança.  
+    * **SECU**: Recusado por código de segurança do cartão.  
     * **EXPI**: Recusado por data de validade.
     * **FORM**: Recusado por erro no formulário.  
     * **OTHE**: Recusado geral.

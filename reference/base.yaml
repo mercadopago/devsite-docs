@@ -1,0 +1,48 @@
+#UTILIZAR TAGS PARA SER "PRODUTOS"
+tags:
+  checkout-pro:
+    description:
+      pt: 'Checkout Pro'
+      en: 'Checkout Pro'
+      es: 'Checkout Pro'
+    externalDocs: 
+      url: '/guides/online-payments/checkout-pro/introduction'
+  payment-link:
+    description:
+      pt: 'Link de pagamento'
+      en: 'Payment Link'
+      es: 'Link de pago'
+    externalDocs: 
+      url: '/guides/online-payments/payment-link/intro-button'
+  subscriptions:
+    description:
+      pt: 'Assinaturas'
+      en: 'Subscriptions'
+      es: 'Suscripciones'
+    externalDocs: 
+      url: '/guides/online-payments/subscriptions/introduction'
+  marketplace: 
+    description:
+      pt: 'Marketplace'
+      en: 'Marketplace'
+      es: 'Marketplace'
+    externalDocs: 
+      url: '/guides/online-payments/marketplace/checkout-pro/introduction'
+  mobile-checkout:
+    description:
+      pt: 'Mobile Checkout'
+      en: 'Mobile Checkout'
+      es: 'Mobile Checkout'
+    externalDocs: 
+      url: '/guides/online-payments/mobile-checkout/introduction'
+  qr-code:
+    description:
+      pt: 'Código QR'
+      en: 'QR Code'
+      es: 'Código QR'
+    externalDocs: 
+      url: '/guides/in-person-payments/qr-code/introduction'
+  
+#------DEFAULT - ALL ARCHIVES - END------
+
+schemas: !!inc/dir [ 'devsite-docs/reference/schemas', { recursive: false, allowEmpty: false }]

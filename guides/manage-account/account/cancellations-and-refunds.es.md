@@ -56,9 +56,21 @@ mercadopago.payment.update({
 
 ```
 ```ruby
-payment = MercadoPago::Payment.find_by_id(paymentId)
-payment.status = "cancelled"
-payment.update()
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+request = {
+  status: 'cancelled'
+}
+result = sdk.payment.update(payment_id, request)
+```
+```python
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+payment_data = {
+    "status": "cancelled"
+}
+
+payment_response = sdk.payment().update(payment_id, payment_data)
+payment = payment_response["response"]
 ```
 ```curl
 curl -X PUT \
@@ -84,8 +96,11 @@ Puedes devolver un pago dentro de los **180 días** desde su acreditación.
 ----[mlc]----
 Puedes devolver un pago dentro de los **330 días** desde su acreditación.
 ------------
-----[mlu, mpe, mco]----
+----[mlu, mpe]----
 Puedes devolver un pago dentro de los **90 días** desde su acreditación.
+------------
+----[mco]----
+Puedes devolver un pago dentro de los **180 días** desde su acreditación.
 ------------
 
 Debes poseer suficiente dinero disponible en tu cuenta para devolver el monto del pago satisfactoriamente. De lo contrario obtendrás un error `400 Bad Request`.
@@ -116,6 +131,10 @@ mercadopago.payment.refund(payment_id)
   .catch(function (error) {
     //Manejar el error...
   });
+```
+```python
+refund_response = sdk.refund().create(payment_id)
+refund = refund_response["response"]
 ```
 ```curl
 curl -X POST \
@@ -176,9 +195,20 @@ mercadopago.payment.refundPartial({ payment_id: id, amount: Number(amount) })
     //Manejar el error...
   });
 ```
+```python
+refund_data = {
+  "amount": 10.5
+}
+
+refund_response = sdk.refund().create(payment_id, refund_data)
+refund = refund_response["response"]
+```
 ```ruby
-payment = MercadoPago::Payment.find_by_id(paymnentId)
-payment.refund(10.5);
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+request = {
+  amount: 10.5
+}
+result = sdk.refund.create(payment_id, request)
 ```
 ```curl
 curl -X POST \
@@ -210,9 +240,14 @@ mercadopago.payment.refund(paymentId).then(function(data) {}
   //Do Stuff ..
 });
 ```
+```python
+refunds_response = sdk.refund().list_all(payment_id)
+refunds = refunds_response["response"]
+```
 ```ruby
-payment = MercadoPago::Payment.find_by_id(payment_id)
-refunds = payment.refund()
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+result = sdk.refund.list(payment_id)
+refunds = result[:response]
 ```
 ```curl
 curl -X GET \

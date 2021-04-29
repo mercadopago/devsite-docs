@@ -1,4 +1,4 @@
-# Requisitos para ir a producción
+# Requisitos para salir a producción
 
 Cuando tengas lista tu integración y quieras comenzar a recibir pagos, tienes que [activar tus credenciales]([FAKER][CREDENTIALS][URL]).
 
@@ -21,7 +21,7 @@ Estas medidas permiten cuidar los datos sensibles, cumplir con los estándares d
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No te olvides de contar con un certificado SSL
 
-Para que seas seguro y que puedas cuidar los datos, es necesario que tengas un certificado SSL válido y que el formulario de pagos sea disponibilizado en una página HTTPS. Esto permite proteger las transacciones que realicen los compradores y sus datos. Durante las pruebas puedes no tenerlo pero es obligatorio para ir a producción.
+Para que seas seguro y que puedas cuidar los datos, es necesario que tengas un certificado SSL válido y que el formulario de pagos sea disponibilizado en una página HTTPS. Esto permite proteger las transacciones que realicen los compradores y sus datos. Durante las pruebas puedes no tenerlo pero es obligatorio para salir a producción.
 
 ## Envío de información
 

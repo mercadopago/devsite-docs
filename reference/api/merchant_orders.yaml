@@ -1,0 +1,1628 @@
+openapi: 3.0.0
+servers:
+  - url: https://api.mercadopago.com
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
+paths:
+  /merchant_orders:
+    post:
+      tags:
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
+      summary: Create an order
+      description: Generate an order to associate it with the payment preference and obtain the necessary URL to start the payment flow
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                external_reference:
+                  type: string
+                  description: Reference you can synchronize with your payment system.
+                  example: default
+                preference_id:
+                  type: string
+                  description: >-
+                    Payment preference identifier associated to the merchant
+                    order.
+                  example: Preference identification
+                marketplace:
+                  type: string
+                  description: 'Origin of the payment. Default value: ''NONE'''
+                notification_url:
+                  type: string
+                  description: URL where you'd like to receive a payment notification.
+                sponsor_id:
+                  type: number
+                  description: Sponsor ID in Mercado Pago.
+                payer:
+                  type: object
+                  description: Buyer Information.
+                  properties:
+                    id:
+                      type: number
+                      description: Buyer id.
+                      example: 123
+                    email:
+                      type: string
+                      description: Deprecated field, will return an empty string.
+                    nickname:
+                      type: string
+                      description: Buyer nickname.
+                      example: JOHN
+                site_id:
+                  type: string
+                  description: Country identifier that merchant order belongs to.
+                  example: MLA
+                items:
+                  type: array
+                  description: items information.
+                  items:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        description: Item id.
+                        example: item id
+                      category_id:
+                        type: string
+                        description: Item category.
+                        example: item category
+                      currency_id:
+                        $ref: '#/components/schemas/currency_id'
+                      description:
+                        type: string
+                        description: Item description.
+                        example: item description
+                      picture_url:
+                        type: string
+                        description: Item picture URL.
+                        example: item picture
+                      quantity:
+                        type: number
+                        description: Item quantity.
+                        example: 1
+                      unit_price:
+                        type: number
+                        description: Item unit price.
+                        example: 5
+                      title:
+                        type: string
+                        description: Item title.
+                        example: item title
+                additional_info:
+                  type: string
+                  description: Additional information.
+                application_id:
+                  type: string
+                  description: application identifier.
+                  example: 10000000000000000
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: number
+                    example: 9999999999
+                    description: id
+                  status:
+                    $ref: '#/components/schemas/status'
+                  external_reference:
+                    type: string
+                    example: default
+                    description: external_reference
+                  preference_id:
+                    type: string
+                    example: Preference identification
+                    description: preference_id
+                  collector:
+                    type: object
+                    properties:
+                      id:
+                        type: number
+                        example: 999999999
+                        description: id
+                      nickname:
+                        type: string
+                        format: nullable
+                        description: nickname
+                    description: collector
+                  marketplace:
+                    type: string
+                    example: NONE
+                    description: marketplace
+                  notification_url:
+                    type: string
+                    format: nullable
+                    description: notification_url
+                  date_created:
+                    type: string
+                    example: 2018-09-14T17:11:31.000Z
+                    description: date_created
+                  last_updated:
+                    type: string
+                    example: 2018-09-14T17:11:43.000Z
+                    description: last_updated
+                  sponsor_id:
+                    type: string
+                    format: nullable
+                    description: sponsor_id
+                  shipping_cost:
+                    type: number
+                    example: 0
+                    description: shipping_cost
+                  total_amount:
+                    type: number
+                    example: 5
+                    description: total_amount
+                  site_id:
+                    type: string
+                    example: mla
+                    description: site_id
+                  paid_amount:
+                    type: number
+                    example: 5
+                    description: paid_amount
+                  refunded_amount:
+                    type: number
+                    example: 0
+                    description: refunded_amount
+                  payer:
+                    type: object
+                    properties:
+                      id:
+                        type: number
+                        example: 999999999
+                        description: id
+                      email:
+                        type: string
+                        description: email
+                    description: payer
+                  items:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          example: item id
+                          description: id
+                        category_id:
+                          type: string
+                          example: item category
+                          description: category_id
+                        currency_id:
+                          $ref: '#/components/schemas/currency_id'
+                        description:
+                          type: string
+                          example: item description
+                          description: description
+                        picture_url:
+                          type: string
+                          example: item picture url
+                          description: picture_url
+                        title:
+                          type: string
+                          example: item title
+                          description: title
+                        quantity:
+                          type: number
+                          example: 1
+                          description: quantity
+                        unit_price:
+                          type: number
+                          example: 5
+                          description: unit_price
+                    description: items
+                  cancelled:
+                    type: boolean
+                    description: cancelled
+                  additional_info:
+                    type: string
+                    example: additional information
+                    description: additional_info
+                  application_id:
+                    type: number
+                    example: 10000000000000000
+                    description: application_id
+                  order_status:
+                    $ref: '#/components/schemas/order_status'
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - invalid_user_id--invalid-users-involved-
+                      - >-
+                        invalid_order_state--the-action-requested-is-not-valid-for-the-current-merchant-order-state-
+                      - invalid_string--string-too-long-
+                      - invalid_application_id--internal-server-error-
+                      - invalid_items--invalid-unit-price-
+                      - user_not_allowed--user-not-allowed-to-operate-
+                      - invalid_operation_type--invalid-operation-type-
+                      - invalid_payer--invalid-payer-identifier-
+                      - invalid_id--invalid-preference-id-
+                      - invalid_expired--the-preference-id-has-expired-
+                      - invalid_sponsor_id--invalid-sponsor-id-
+                      - invalid_marketplace--invalid-marketplace-
+                      - >-
+                        unmarshal_error--could-not-unmarshal-request-body-into-merchant-order-struct-
+                      - invalid_url--invalid-URL--Isn-t-HTTP-or-HTTPS-
+                      - communication_error--Error-when-calling---
+        '401':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - invalid_token--access-denied-
+                      - invalid_caller_id--invalid-caller-id
+  /merchant_orders/search:
+    get:
+      tags:
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
+        - $ref: '#/tags/qr-code'
+      summary: Search for orders
+      description: Find all the information of the orders generated through specific filters or a specific date range
+      parameters:
+        - name: status
+          in: query
+          description: Merchant order state.
+          required: false
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: preference_id
+          in: query
+          description: Payment preference identifier associated to the merchant order.
+          required: false
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: application_id
+          in: query
+          description: application identifier.
+          required: false
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: payer_id
+          in: query
+          description: Buyer's Id
+          required: false
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: sponsor_id
+          in: query
+          description: Sponsor ID in Mercado Pago.
+          required: false
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: external_reference
+          in: query
+          description: Reference you can synchronize with your payment system.
+          required: false
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: site_id
+          in: query
+          description: Country identifier that merchant order belongs to.
+          required: false
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: marketplace
+          in: query
+          description: 'Origin of the payment. Default value: ''NONE'''
+          required: false
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: date_created_from
+          in: query
+          description: Order's creation date (start search)
+          required: false
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: date_created_to
+          in: query
+          description: Order's creation date (end search)
+          required: false
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: last_updated_from
+          in: query
+          description: Order's last update date (start search)
+          required: false
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: last_updated_to
+          in: query
+          description: Order's last update date (end search)
+          required: false
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: items
+          in: query
+          description: items information.
+          required: false
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: limit
+          in: query
+          description: Qtd of max itens to return
+          required: false
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+        - name: offset
+          in: query
+          description: Qtd of itens to 'offset'
+          required: false
+          schema:
+            type: string
+            example: 12123adfasdf123u4u
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  elements:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: number
+                          example: 9999999999
+                          description: id
+                        status:
+                          $ref: '#/components/schemas/status'
+                        external_reference:
+                          type: string
+                          example: default
+                          description: external_reference
+                        preference_id:
+                          type: string
+                          example: Preference identification
+                          description: preference_id
+                        payments:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              id:
+                                type: number
+                                example: 9999999999
+                                description: id
+                              transaction_amount:
+                                type: number
+                                example: 1
+                                description: transaction_amount
+                              total_paid_amount:
+                                type: number
+                                example: 1
+                                description: total_paid_amount
+                              shipping_cost:
+                                type: number
+                                example: 0
+                                description: shipping_cost
+                              currency_id:
+                                $ref: '#/components/schemas/currency_id'
+                              status:
+                                $ref: '#/components/schemas/payment_status'
+                              status_detail:
+                                type: string
+                                example: accredited
+                                description: status_detail
+                              operation_type:
+                                $ref: '#/components/schemas/operation_type'
+                              date_approved:
+                                type: string
+                                example: 2019-04-02T18:35:35.000Z
+                                description: date_approved
+                              date_created:
+                                type: string
+                                example: 2019-04-02T18:35:34.000Z
+                                description: date_created
+                              last_modified:
+                                type: string
+                                example: 2019-04-02T18:35:35.000Z
+                                description: last_modified
+                              amount_refunded:
+                                type: number
+                                example: 0
+                                description: amount_refunded
+                          description: payments
+                        shipments:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              id:
+                                type: number
+                                example: 99999999999
+                                description: id
+                              shipment_type:
+                                type: string
+                                example: shipping
+                                description: shipment_type
+                              shipping_mode:
+                                type: string
+                                example: me2
+                                description: shipping_mode
+                              picking_type:
+                                type: string
+                                format: nullable
+                                description: picking_type
+                              status:
+                                type: string
+                                example: delivered
+                                description: status
+                              substatus:
+                                type: string
+                                format: nullable
+                                description: substatus
+                              items:
+                                type: array
+                                items:
+                                  type: object
+                                  properties:
+                                    id:
+                                      type: string
+                                      example: not specified
+                                      description: id
+                                    description:
+                                      type: string
+                                      example: shipment item description
+                                      description: description
+                                    quantity:
+                                      type: number
+                                      example: 1
+                                      description: quantity
+                                    dimensions:
+                                      type: string
+                                      example: 1.0x10.0x23.0100.0
+                                      description: dimensions
+                                    dimensions_source:
+                                      type: string
+                                      format: nullable
+                                      description: dimensions_source
+                                description: items
+                              date_created:
+                                type: string
+                                example: 2019-04-02T18:20:46.000Z
+                                description: date_created
+                              last_modified:
+                                type: string
+                                example: 2019-04-12T19:36:48.000Z
+                                description: last_modified
+                              date_first_printed:
+                                type: string
+                                example: 2019-04-02T18:35:40.000Z
+                                description: date_first_printed
+                              service_id:
+                                type: number
+                                example: 999
+                                description: service_id
+                              sender_id:
+                                type: number
+                                example: 999999999
+                                description: sender_id
+                              receiver_id:
+                                type: number
+                                example: 999999999
+                                description: receiver_id
+                              receiver_address:
+                                type: object
+                                properties:
+                                  id:
+                                    type: number
+                                    example: 9999999999
+                                    description: id
+                                  address_line:
+                                    type: string
+                                    example: address line
+                                    description: address_line
+                                  city:
+                                    type: object
+                                    properties:
+                                      id:
+                                        type: string
+                                        format: nullable
+                                        description: id
+                                      name:
+                                        type: string
+                                        example: City Name
+                                        description: name
+                                    description: city
+                                  state:
+                                    type: object
+                                    properties:
+                                      id:
+                                        type: string
+                                        example: AR-X
+                                        description: id
+                                      name:
+                                        type: string
+                                        example: state name
+                                        description: name
+                                    description: state
+                                  country:
+                                    type: object
+                                    properties:
+                                      id:
+                                        type: string
+                                        example: AR
+                                        description: id
+                                      name:
+                                        type: string
+                                        example: Argentina
+                                        description: name
+                                    description: country
+                                  latitude:
+                                    type: string
+                                    example: 0
+                                    description: latitude
+                                  longitude:
+                                    type: string
+                                    example: 0
+                                    description: longitude
+                                  comment:
+                                    type: string
+                                    example: shipment comment
+                                    description: comment
+                                  contact:
+                                    type: string
+                                    example: shipment contact
+                                    description: contact
+                                  phone:
+                                    type: string
+                                    example: 9999999999
+                                    description: phone
+                                  zip_code:
+                                    type: string
+                                    example: 9999
+                                    description: zip_code
+                                  street_name:
+                                    type: string
+                                    example: Street name
+                                    description: street_name
+                                  street_number:
+                                    type: string
+                                    example: 999
+                                    description: street_number
+                                  floor:
+                                    type: string
+                                    format: nullable
+                                    description: floor
+                                  apartment:
+                                    type: string
+                                    format: nullable
+                                    description: apartment
+                                description: receiver_address
+                              shipping_option:
+                                type: object
+                                properties:
+                                  id:
+                                    type: number
+                                    example: 999999999
+                                    description: id
+                                  cost:
+                                    type: number
+                                    example: 0
+                                    description: cost
+                                  currency_id:
+                                    $ref: '#/components/schemas/currency_id'
+                                  shipping_method_id:
+                                    type: number
+                                    example: 99999
+                                    description: shipping_method_id
+                                  estimated_delivery:
+                                    type: object
+                                    properties:
+                                      date:
+                                        type: string
+                                        example: 2019-04-11T03:00:00.000Z
+                                        description: date
+                                      time_from:
+                                        type: string
+                                        format: nullable
+                                        description: time_from
+                                      time_to:
+                                        type: string
+                                        format: nullable
+                                        description: time_to
+                                    description: estimated_delivery
+                                  name:
+                                    type: string
+                                    example: Normal a domicilio
+                                    description: name
+                                  list_cost:
+                                    type: number
+                                    example: 0
+                                    description: list_cost
+                                  speed:
+                                    type: object
+                                    properties:
+                                      handling:
+                                        type: number
+                                        example: 72
+                                        description: handling
+                                      shipping:
+                                        type: number
+                                        example: 72
+                                        description: shipping
+                                    description: speed
+                                description: shipping_option
+                          description: shipments
+                        collector:
+                          type: object
+                          properties:
+                            id:
+                              type: number
+                              example: 999999999
+                              description: id
+                            nickname:
+                              type: string
+                              format: nullable
+                              description: nickname
+                          description: collector
+                        marketplace:
+                          type: string
+                          example: NONE
+                          description: marketplace
+                        notification_url:
+                          type: string
+                          format: nullable
+                          description: notification_url
+                        date_created:
+                          type: string
+                          example: 2018-09-14T17:11:31.000Z
+                          description: date_created
+                        last_updated:
+                          type: string
+                          example: 2018-09-14T17:11:43.000Z
+                          description: last_updated
+                        sponsor_id:
+                          type: string
+                          format: nullable
+                          description: sponsor_id
+                        shipping_cost:
+                          type: number
+                          example: 0
+                          description: shipping_cost
+                        total_amount:
+                          type: number
+                          example: 5
+                          description: total_amount
+                        site_id:
+                          type: string
+                          example: MLA
+                          description: site_id
+                        paid_amount:
+                          type: number
+                          example: 5
+                          description: paid_amount
+                        refunded_amount:
+                          type: number
+                          example: 0
+                          description: refunded_amount
+                        payer:
+                          type: object
+                          properties:
+                            id:
+                              type: number
+                              example: 999999999
+                              description: id
+                            email:
+                              type: string
+                              description: email
+                          description: payer
+                        items:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              id:
+                                type: string
+                                example: item id
+                                description: id
+                              category_id:
+                                type: string
+                                example: item category
+                                description: category_id
+                              currency_id:
+                                $ref: '#/components/schemas/currency_id'
+                              description:
+                                type: string
+                                example: item description
+                                description: description
+                              picture_url:
+                                type: string
+                                example: item picture url
+                                description: picture_url
+                              title:
+                                type: string
+                                example: item title
+                                description: title
+                              quantity:
+                                type: number
+                                example: 1
+                                description: quantity
+                              unit_price:
+                                type: number
+                                example: 5
+                                description: unit_price
+                          description: items
+                        cancelled:
+                          type: boolean
+                          description: cancelled
+                        additional_info:
+                          type: string
+                          example: additional information
+                          description: additional_info
+                        application_id:
+                          type: number
+                          example: 10000000000000000
+                          description: application_id
+                        order_status:
+                          $ref: '#/components/schemas/order_status'
+                    description: elements
+                  next_offset:
+                    type: number
+                    example: 1
+                    description: next_offset
+                  total:
+                    type: number
+                    example: 1
+                    description: total
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - ds_search_query--invalid-query-
+        '401':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - invalid_token--invalid-token-
+                      - invalid_caller_id--invalid-caller-id
+  /merchant_orders/{id}:
+    get:
+      tags:
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
+        - $ref: '#/tags/qr-code'
+      summary: Get an order
+      description: Check the payment information for a product or service with the ID of the order you want
+      parameters:
+        - name: id
+          in: path
+          description: Order identifier
+          required: true
+          schema:
+            type: number
+            example: 123123123
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: number
+                    example: 9999999999
+                    description: id
+                  status:
+                    $ref: '#/components/schemas/status'
+                  external_reference:
+                    type: string
+                    example: default
+                    description: external_reference
+                  preference_id:
+                    type: string
+                    example: Preference identification
+                    description: preference_id
+                  payments:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: number
+                          example: 9999999999
+                          description: id
+                        transaction_amount:
+                          type: number
+                          example: 1
+                          description: transaction_amount
+                        total_paid_amount:
+                          type: number
+                          example: 1
+                          description: total_paid_amount
+                        shipping_cost:
+                          type: number
+                          example: 0
+                          description: shipping_cost
+                        currency_id:
+                          $ref: '#/components/schemas/currency_id'
+                        status:
+                          $ref: '#/components/schemas/payment_status'
+                        status_detail:
+                          type: string
+                          example: accredited
+                          description: status_detail
+                        operation_type:
+                          $ref: '#/components/schemas/operation_type'
+                        date_approved:
+                          type: string
+                          example: '2019-04-02T18:35:35.000Z'
+                          description: date_approved
+                        date_created:
+                          type: string
+                          example: '2019-04-02T18:35:34.000Z'
+                          description: date_created
+                        last_modified:
+                          type: string
+                          example: '2019-04-02T18:35:35.000Z'
+                          description: last_modified
+                        amount_refunded:
+                          type: number
+                          example: 0
+                          description: amount_refunded
+                    description: payments
+                  shipments:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: number
+                          example: 99999999999
+                          description: id
+                        shipment_type:
+                          type: string
+                          example: shipping
+                          description: shipment_type
+                        shipping_mode:
+                          type: string
+                          example: me2
+                          description: shipping_mode
+                        picking_type:
+                          type: string
+                          format: nullable
+                          description: picking_type
+                        status:
+                          type: string
+                          example: delivered
+                          description: status
+                        substatus:
+                          type: string
+                          format: nullable
+                          description: substatus
+                        items:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              id:
+                                type: string
+                                example: not specified
+                                description: id
+                              description:
+                                type: string
+                                example: shipment item description
+                                description: description
+                              quantity:
+                                type: number
+                                example: 1
+                                description: quantity
+                              dimensions:
+                                type: string
+                                example: 1.0x10.0x23.0100.0
+                                description: dimensions
+                              dimensions_source:
+                                type: string
+                                format: nullable
+                                description: dimensions_source
+                          description: items
+                        date_created:
+                          type: string
+                          example: '2019-04-02T18:20:46.000Z'
+                          description: date_created
+                        last_modified:
+                          type: string
+                          example: '2019-04-12T19:36:48.000Z'
+                          description: last_modified
+                        date_first_printed:
+                          type: string
+                          example: '2019-04-02T18:35:40.000Z'
+                          description: date_first_printed
+                        service_id:
+                          type: number
+                          example: 999
+                          description: service_id
+                        sender_id:
+                          type: number
+                          example: 999999999
+                          description: sender_id
+                        receiver_id:
+                          type: number
+                          example: 999999999
+                          description: receiver_id
+                        receiver_address:
+                          type: object
+                          properties:
+                            id:
+                              type: number
+                              example: 9999999999
+                              description: id
+                            address_line:
+                              type: string
+                              example: address line
+                              description: address_line
+                            city:
+                              type: object
+                              properties:
+                                id:
+                                  type: string
+                                  format: nullable
+                                  description: id
+                                name:
+                                  type: string
+                                  example: City Name
+                                  description: name
+                              description: city
+                            state:
+                              type: object
+                              properties:
+                                id:
+                                  type: string
+                                  example: AR-X
+                                  description: id
+                                name:
+                                  type: string
+                                  example: state name
+                                  description: name
+                              description: state
+                            country:
+                              type: object
+                              properties:
+                                id:
+                                  type: string
+                                  example: AR
+                                  description: id
+                                name:
+                                  type: string
+                                  example: Argentina
+                                  description: name
+                              description: country
+                            latitude:
+                              type: string
+                              example: 0
+                              description: latitude
+                            longitude:
+                              type: string
+                              example: 0
+                              description: longitude
+                            comment:
+                              type: string
+                              example: shipment comment
+                              description: comment
+                            contact:
+                              type: string
+                              example: shipment contact
+                              description: contact
+                            phone:
+                              type: string
+                              example: 9999999999
+                              description: phone
+                            zip_code:
+                              type: string
+                              example: 9999
+                              description: zip_code
+                            street_name:
+                              type: string
+                              example: Street name
+                              description: street_name
+                            street_number:
+                              type: string
+                              example: 999
+                              description: street_number
+                            floor:
+                              type: string
+                              format: nullable
+                              description: floor
+                            apartment:
+                              type: string
+                              format: nullable
+                              description: apartment
+                          description: receiver_address
+                        shipping_option:
+                          type: object
+                          properties:
+                            id:
+                              type: number
+                              example: 999999999
+                              description: id
+                            cost:
+                              type: number
+                              example: 0
+                              description: cost
+                            currency_id:
+                              $ref: '#/components/schemas/currency_id'
+                            shipping_method_id:
+                              type: number
+                              example: 99999
+                              description: shipping_method_id
+                            estimated_delivery:
+                              type: object
+                              properties:
+                                date:
+                                  type: string
+                                  example: '2019-04-11T03:00:00.000Z'
+                                  description: date
+                                time_from:
+                                  type: string
+                                  format: nullable
+                                  description: time_from
+                                time_to:
+                                  type: string
+                                  format: nullable
+                                  description: time_to
+                              description: estimated_delivery
+                            name:
+                              type: string
+                              example: Normal a domicilio
+                              description: name
+                            list_cost:
+                              type: number
+                              example: 0
+                              description: list_cost
+                            speed:
+                              type: object
+                              properties:
+                                handling:
+                                  type: number
+                                  example: 72
+                                  description: handling
+                                shipping:
+                                  type: number
+                                  example: 72
+                                  description: shipping
+                              description: speed
+                          description: shipping_option
+                    description: shipments
+                  payouts:
+                    type: object
+                  collector:
+                    type: object
+                    properties:
+                      id:
+                        type: number
+                        example: 999999999
+                        description: id
+                      email:
+                        type: string
+                        example: vendedor+329653108@adf12.com.br
+                      nickname:
+                        type: string
+                        example: TESTRPEHE21Q
+                        format: nullable
+                        description: nickname
+                    description: collector
+                  marketplace:
+                    type: string
+                    example: NONE
+                    description: marketplace
+                  notification_url:
+                    type: string
+                    format: nullable
+                    description: notification_url
+                  date_created:
+                    type: string
+                    example: '2018-09-14T17:11:31.000Z'
+                    description: date_created
+                  last_updated:
+                    type: string
+                    example: '2018-09-14T17:11:43.000Z'
+                    description: last_updated
+                  sponsor_id:
+                    type: string
+                    format: nullable
+                    description: sponsor_id
+                  shipping_cost:
+                    type: number
+                    example: 0
+                    description: shipping_cost
+                  total_amount:
+                    type: number
+                    example: 5
+                    description: total_amount
+                  site_id:
+                    type: string
+                    example: mla
+                    description: site_id
+                  paid_amount:
+                    type: number
+                    example: 5
+                    description: paid_amount
+                  refunded_amount:
+                    type: number
+                    example: 0
+                    description: refunded_amount
+                  payer:
+                    type: object
+                    properties:
+                      id:
+                        type: number
+                        example: 999999999
+                        description: id
+                      email:
+                        type: string
+                        description: email
+                    description: payer
+                  items:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          example: item id
+                          description: id
+                        category_id:
+                          type: string
+                          example: item category
+                          description: category_id
+                        currency_id:
+                          $ref: '#/components/schemas/currency_id'
+                        description:
+                          type: string
+                          example: item description
+                          description: description
+                        picture_url:
+                          type: string
+                          example: item picture url
+                          description: picture_url
+                        title:
+                          type: string
+                          example: item title
+                          description: title
+                        quantity:
+                          type: number
+                          example: 1
+                          description: quantity
+                        unit_price:
+                          type: number
+                          example: 5
+                          description: unit_price
+                    description: items
+                  cancelled:
+                    type: boolean
+                    example: false
+                    description: cancelled
+                  additional_info:
+                    type: string
+                    example: additional information
+                    description: additional_info
+                  application_id:
+                    type: number
+                    example: 10000000000000000
+                    description: application_id
+                  order_status:
+                    $ref: '#/components/schemas/order_status'
+
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - invalid_format--invalid-caller-id-
+        '401':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - invalid_token--access-denied-
+                      - invalid_caller_id--invalid-caller-id
+    put:
+      tags:
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
+      summary: Update an order
+      description: Renew the details of a payment. Indicate the ID of the order and send the parameters with the information you want to update
+      parameters:
+        - name: id
+          in: path
+          description: Order identifier
+          required: true
+          schema:
+            type: number
+            example: 123123123
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                external_reference:
+                  type: string
+                  description: Reference you can synchronize with your payment system.
+                  example: default
+                preference_id:
+                  type: string
+                  description: >-
+                    Payment preference identifier associated to the merchant
+                    order.
+                  example: Preference identification
+                marketplace:
+                  type: string
+                  description: 'Origin of the payment. Default value: ''NONE'''
+                notification_url:
+                  type: string
+                  description: URL where you'd like to receive a payment notification.
+                sponsor_id:
+                  type: number
+                  description: Sponsor ID in Mercado Pago.
+                payer:
+                  type: object
+                  description: Buyer Information.
+                  properties:
+                    id:
+                      type: number
+                      description: Buyer id.
+                      example: 123
+                    email:
+                      type: string
+                      description: Deprecated field, will return an empty string.
+                    nickname:
+                      type: string
+                      description: Buyer nickname.
+                      example: JOHN
+                site_id:
+                  type: string
+                  description: Country identifier that merchant order belongs to.
+                  example: MLA
+                items:
+                  type: array
+                  description: items information.
+                  items:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        description: Item id.
+                        example: item id
+                      category_id:
+                        type: string
+                        description: Item category.
+                        example: item category
+                      currency_id:
+                        $ref: '#/components/schemas/currency_id'
+                      description:
+                        type: string
+                        description: Item description.
+                        example: item description
+                      picture_url:
+                        type: string
+                        description: Item picture URL.
+                        example: item picture
+                      quantity:
+                        type: number
+                        description: Item quantity.
+                        example: 1
+                      unit_price:
+                        type: number
+                        description: Item unit price.
+                        example: 5
+                      title:
+                        type: string
+                        description: Item title.
+                        example: item title
+                additional_info:
+                  type: string
+                  description: Additional information.
+                application_id:
+                  type: string
+                  description: application identifier.
+                  example: 10000000000000000
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: number
+                    example: 9999999999
+                    description: id
+                  status:
+                    $ref: '#/components/schemas/status'
+                  external_reference:
+                    type: string
+                    example: default
+                    description: external_reference
+                  preference_id:
+                    type: string
+                    example: Preference identification
+                    description: preference_id
+                  payments:
+                    type: object
+                  shipments:
+                    type: object
+                  payouts:
+                    type: object
+                  collector:
+                    type: object
+                    properties:
+                      id:
+                        type: number
+                        example: 999999999
+                        description: id
+                      email:
+                        type: string
+                        example: ''
+                      nickname:
+                        type: string
+                        example: TESTRPEHE21Q
+                        format: nullable
+                        description: nickname
+                    description: collector
+                  marketplace:
+                    type: string
+                    example: NONE
+                    description: marketplace
+                  notification_url:
+                    type: string
+                    format: nullable
+                    description: notification_url
+                  date_created:
+                    type: string
+                    example: '2018-09-14T17:11:31.000Z'
+                    description: date_created
+                  last_updated:
+                    type: string
+                    example: '2018-09-14T17:11:43.000Z'
+                    description: last_updated
+                  sponsor_id:
+                    type: string
+                    format: nullable
+                    description: sponsor_id
+                  shipping_cost:
+                    type: number
+                    example: 0
+                    description: shipping_cost
+                  total_amount:
+                    type: number
+                    example: 5
+                    description: total_amount
+                  site_id:
+                    type: string
+                    example: mla
+                    description: site_id
+                  paid_amount:
+                    type: number
+                    example: 5
+                    description: paid_amount
+                  refunded_amount:
+                    type: number
+                    example: 0
+                    description: refunded_amount
+                  payer:
+                    type: object
+                    properties:
+                      id:
+                        type: number
+                        example: 999999999
+                        description: id
+                      email:
+                        type: string
+                        description: email
+                    description: payer
+                  items:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          example: item id
+                          description: id
+                        category_id:
+                          type: string
+                          example: item category
+                          description: category_id
+                        currency_id:
+                          $ref: '#/components/schemas/currency_id'
+                        description:
+                          type: string
+                          example: item description
+                          description: description
+                        picture_url:
+                          type: string
+                          example: item picture url
+                          description: picture_url
+                        title:
+                          type: string
+                          example: item title
+                          description: title
+                        quantity:
+                          type: number
+                          example: 1
+                          description: quantity
+                        unit_price:
+                          type: number
+                          example: 5
+                          description: unit_price
+                    description: items
+                  cancelled:
+                    type: boolean
+                    example: false
+                    description: cancelled
+                  additional_info:
+                    type: string
+                    example: additional information
+                    description: additional_info
+                  application_id:
+                    type: number
+                    example: 10000000000000000
+                    description: application_id
+                  order_status:
+                    $ref: '#/components/schemas/order_status'
+
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - invalid_user_id--invalid-users-involved-
+                      - >-
+                        invalid_order_state--the-action-requested-is-not-valid-for-the-current-merchant-order-state-
+                      - invalid_string--string-too-long-
+                      - invalid_application_id--internal-server-error-
+                      - >-
+                        invalid_items--only-the-item-quantity-of-an-item-can-be-modified-
+                      - user_not_allowed--user-not-allowed-to-operate-
+                      - invalid_payment_id--invalid-payment-identifier-
+                      - invalid_operation_type--invalid-operation-type-
+                      - invalid_payer--invalid-payer-identifier-
+                      - invalid_shipment_id--invalid-shipment-identifier-
+                      - invalid_sponsor_id--invalid-sponsor-id-
+                      - invalid_marketplace--invalid-marketplace-
+                      - >-
+                        unmarshall_error--could-not-unmarshal-request-body-into-merchant-order-struct-
+                      - invalid_format--invalid-merchant-order-id-
+                      - invalid_url--invalid-URL--Isn-t-HTTP-or-HTTPS-
+                      - communication_error--Error-when-calling---
+        '401':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - invalid_token--access-denied-
+                      - invalid_caller_id--invalid-caller-id
+components:
+  schemas:
+    status:
+      type: string
+      description: Show the current merchant order state.
+      example: closed
+      enum:
+        - opened -- Order without payments.
+        - closed -- Order with payments covering total amount.
+        - expired -- Canceled order that does not have approved or pending payments (all rejected or returned).
+    currency_id:
+      type: string
+      description: ID of the currency used in the payment.
+      example: BRL
+      enum:
+        - ARS -- Argentine peso.
+        - BRL -- Brazil real.
+        - CLP -- Chilean peso.
+        - MXN -- Mexican peso.
+        - COP -- Colombian peso.
+        - PEN -- Peruvian sol.
+        - UYU -- Uruguayan peso.
+    payment_status:
+      type: string
+      description: Payment status.
+      example: approved
+      enum:
+        - pending -- The user has not yet completed the payment process.
+        - approved -- The payment has been approved and accredited.
+        - authorized -- The payment has been authorized but not captured yet.
+        - in_process -- Payment is being reviewed.
+        - in_mediation -- Users have initiated a dispute.
+        - rejected -- Payment was rejected. The user may retry payment.
+        - cancelled -- Payment was cancelled by one of the parties or because time for payment has expired.
+        - refunded -- Payment was refunded to the user.
+        - charged_back -- Was made a chargeback in the buyer's credit card.
+    operation_type:
+      type: string
+      description: Operation data_type.
+      enum:
+        - regular_payment -- Typification by default of a purchase being paid using Mercado Pago.
+        - payment_addition -- Addition of money to an existing payment, made through a Mercado Pago account.
+        - money_transfer -- Funds transfer between two users.
+        - recurring_payment -- Automatic recurring payment due to an active user subscription.
+        - account_fund -- Money income in the user's account.
+        - cellphone_recharge -- Recharge of a user's cellophone account.
+        - pos_payment -- Payment done through a Point of Sale.
+    order_status:
+      type: string
+      description: Current merchant order status given the payments status.
+      example: paid
+      enum:
+        - payment_required -- Order without payments or with all payments "rejected" or "cancelled".
+        - reverted -- Order with all payments "refunded" or "chargeback".
+        - paid -- Order with the sum of all payments "approved", "chargeback" or "in_mediation" covers the order total amount.
+        - partially_reverted -- Order with at least one payment "refunded" or "chargeback".
+        - partially_paid -- Order with at least one payment "approved" and not covering order total amount.
+        - payment_in_process -- Order with payments "in_process", "pending" or "authorized".
+        - undefined -- Order created before the existence of the order_status status.
+        - expired -- Canceled order that does not have approved or pending payments (all rejected or returned).

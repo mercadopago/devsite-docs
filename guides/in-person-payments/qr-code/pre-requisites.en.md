@@ -18,12 +18,13 @@ We know some concepts may be new for you. Before starting, here's a cheatsheet.
 
 ## Previous requirements
 
-To continue, you must:
+Keep these aspects in mind before you start:
 
-### 1. Access to Mercado Pago or Mercado Libre account
+### 1. Access to an account
 
-To start the integration, you must have a Mercado Pago or Mercado Libre account. 
-If you don't have an account yet, you can [create one here](https://www.mercadopago.com.ar).
+To start the integration, you must **have a Mercado Pago or Mercado Libre account**. 
+
+You can [Sign in](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/pre-requisites) with an existing account or [Create a new account](https://www.mercadopago[FAKER][URL][DOMAIN]).
 
 ### 2. Create an application
 

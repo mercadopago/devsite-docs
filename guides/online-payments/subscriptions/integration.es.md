@@ -219,6 +219,13 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 }
 ```
 
+> NOTE
+> 
+> Pago de validación
+> 
+> Para comprobar que la tarjeta sea válida, realizamos un pago de validación con un monto mínimo. Si el pago es exitoso, procedemos a realizar la devolución de ese pago. El monto puede diferir según cada país. 
+
+
 ### Crear suscripción con pago pendiente
 
 Puedes crear una suscripción con estado `pending` y sin medio de pago asociado. 

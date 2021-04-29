@@ -15,13 +15,15 @@ We know some terms are new. Before getting started, we'll give you a hand.
 
 ## Previous requirements
 
-To continue, check the necessary prerequisites:
+Keep these aspects in mind before you start integrating:
 
-### 1. Access to the Mercado Pago or Mercado Libre account
-In order to start the integration, it is necessary to **have a Mercado Pago or Mercado Libre account.**.
-If you don't have one yet, you can [create a Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]) whenever you want.
+### 1. Access to an account
 
-### 2. Installations of Mercado Pago SDK
+In order to start the integration, it is necessary to **have a Mercado Pago or Mercado Libre account**.
+
+You can [Sign in](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/previous-requirements) with an existing account or [Create a new account](https://www.mercadopago[FAKER][URL][DOMAIN]).
+
+### 2. Install Mercado Pago SDK
 **Install the official SDK** to simplify your interaction with our APIs.
 
 [[[
@@ -58,16 +60,30 @@ gem install mercadopago-sdk
 ```csharp
 ===
 ----[mlb]----
-Use [NuGet](https://docs.microsoft.com/pt-pt/nuget/install-nuget-client-tools) to install the Mercado Pago SDK .NET.
+Use [NuGet](https://docs.microsoft.com/pt-br/nuget/reference/nuget-exe-cli-reference) to install the Mercado Pago SDK .NET.
 ------------
-----[mla, mco, mlu, mlc, mlm, mpe]----
-Use [NuGet](https://docs.microsoft.com/es-es/nuget/install-nuget-client-tools) to install the Mercado Pago SDK .NET.
+----[mla, mco, mlu, mlc, mlm]----
+Use [NuGet](https://docs.microsoft.com/es-es/nuget/reference/nuget-exe-cli-reference) to install the Mercado Pago SDK .NET.
 ------------
-To do this, run the following command in the NuGet Package Manager console:
+To do this, run the following command on your terminal:
 ===
-PM> Install-Package mercadopago-sdk -Version 1.0.57
+nuget install mercadopago-sdk
+```
+```python
+===
+The Mercado Pago SDK is available as a [pip](https://pypi.org/project/mercadopago/), to install it you must execute the following code on the command line:
+===
+pip3 install mercadopago
 ```
 ]]]
+
+### 3. Have your credentials handy
+
+Your credentials are the **keys we provide you to configure your integrations**.
+
+To find them, go to the [Credentials section]([FAKER][CREDENTIALS][URL]).
+
+> Do you have any questions about credentials? Check our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/faqs/credentials).
 
  ---
 

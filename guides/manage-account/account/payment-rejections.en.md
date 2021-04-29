@@ -165,7 +165,7 @@ We recommend initializing it in the _didFinishLaunchingWithOptions_ event of the
 ===
 We recommend initializing it in the _MainApplication_ class.
 ===
-import com.mercadolibre.android.devices.sdk.DeviceSDK;
+import com.mercadolibre.android.device.sdk.DeviceSDK;
 
 
 DeviceSDK.getInstance().execute(this);
@@ -323,59 +323,76 @@ payer.setName("Charles")
 ```
 ```ruby
 # ...
-payer = MercadoPago::Payer.new({
-  name: "Charles"
-  surname: "Luevano"
-  email: "charles@hotmail.com"
-  date_created: Time.now
-  phone: MercadoPago::Phone.new({
-    area_code: "",
-    number: "949 128 866"
-  })
+payer = {
+  name: "Charles",
+  surname: "Luevano",
+  email: "charles@hotmail.com",
+  date_created: Time.now,
   ----[mla, mlb, mlu, mco, mlc, mpe]----
-  identification: MercadoPago::Identification.new({
+  identification: {
     type: "DNI",
     number: "12345678"
-  })
+  },
   ------------
-  address: MercadoPago::Address.new ({
+  address: {
     street_name: "Cuesta Miguel Armendáriz",
     street_number: "1004",
     zip_code: "11020"
-  })
-})
+  }
+}
 # ...
 ```
 ```csharp
-using MercadoPago;
-using MercadoPago.Resources;
-using MercadoPago.DataStructures.Preference;
+using System.Collections.Generic;
+using MercadoPago.Client.Common;
+using MercadoPago.Client.Preference;
 // ...
-Payer payer = new Payer()
+var payer = new PreferencePayerRequest
 {
     Name = "Charles",
     Surname = "Luevano",
     Email = "charles@hotmail.com",
-    Phone = new Phone()
+    Phone = new PhoneRequest
     {
         AreaCode = "",
-        Number = "949 128 866"
+        Number = "949 128 866",
     },
     ----[mla, mlb, mlu, mco, mlc, mpe]----
-    Identification = new Identification()
+    Identification = new IdentificationRequest
     {
         Type = "DNI",
-        Number = "12345678"
+        Number = "12345678",
     },
     ------------
-    Address = new Address()
+    Address = new AddressRequest
     {
         StreetName = "Cuesta Miguel Armendáriz",
-        StreetNumber = int.Parse("1004"),
-        ZipCode = "11020"
-    }
+        StreetNumber = "1004",
+        ZipCode = "11020",
+    },
 };
 // ...
+```
+```python
+# ...
+payer_data = {
+    "name": "Charles",
+    "surname": "Luevano",
+    "email": "charles@hotmail.com",
+    "date_created": "2015-06-02T12:58:41.425-04:00",
+    ----[mla, mlb, mlu, mco, mlc, mpe]----
+    "identification": {
+        "type": "DNI",
+        "number": "12345678"
+    },
+    ------------
+    "address": {
+        "street_name": "Cuesta Miguel Armendáriz",
+        "street_number": "1004",
+        "zip_code": "11020"
+    }
+}
+# ...
 ```
 ]]]
 
@@ -417,27 +434,47 @@ item.setId("1234")
 ```
 ```ruby
 # ...
-item = MercadoPago::Item.new({
+item = {
   id: "1234",
   title: "Lightweight Paper Table",
   quantity: 3,
   currency_id: "[FAKER][CURRENCY][ACRONYM]",
   unit_price: 55.41
-})# ...
+}# ...
 ```
 ```csharp
 // ...
-preference.Items.Add(
-  new Item()
-  {
-    Id = "1234",
-    Title = "Lightweight Paper Table",
-    Quantity = 3,
-    CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
-    UnitPrice = (float)55.41
-  }
-);
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Id = "1234",
+            Title = "Lightweight Paper Table",
+            Quantity = 3,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 55.41m,
+        }
+    },
+};
 // ...
+```
+```python
+# ...
+preference_data = {
+    "items": [
+        {
+            "id": '1234',
+            "title": 'Lightweight Paper Table',
+            "quantity": 3,
+            "currency_id": '[FAKER][CURRENCY][ACRONYM]',
+            "unit_price": 55.41
+        }
+    ]
+    # ...
+}
+# ...
 ```
 ]]]
 

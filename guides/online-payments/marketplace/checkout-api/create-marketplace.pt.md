@@ -8,16 +8,14 @@
 
 Para começar, você deve:
 
-1. Registrar uma aplicação tipo Marketplace.
+1. Registrar uma aplicação e na sequência editar sua **Redirect URI**.
 2. Solicitar aos seus fornecedores que se vinculem a ela.
 3. Criar pagamentos em nome de seus vendedores.
 
 
 ## 1. Como criar sua aplicação
 
-Crie sua aplicação a partir deste [link](https://applications.mercadopago.com/), marcando a opção **MP Connect / Marketplace mode** e os **scopes** `read`, `write` y `offline_access`.
-
-Você também deve completar uma **Redirect URI** a partir da qual os vendedores serão redirecionados para serem vinculados corretamente.
+[Crie uma aplicação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel), e na sequência edite sua configuração avançada completando a **Redirect URI** onde serão redirecionados os vendedores ao finalizar o processo de vinculação.
 
 Assim que criar a aplicação, você obterá o `APP_ID` (identificador de aplicação) necessário para o próximo passo.
 
@@ -25,16 +23,16 @@ Assim que criar a aplicação, você obterá o `APP_ID` (identificador de aplica
 
 Para operar no Mercado Pago em nome do seu vendedor, primeiro você deverá lhe solicitar uma autorização. 
 
-2.1. Para isso, redirecione o usuário para a seguinte URL substituindo em `client_id`, o valor de `APP_ID` e a `redirect_uri` que configurou no passo anterior:
+2.1. Para isso, redirecione o vendedor para a seguinte URL substituindo em `client_id`, o valor de `APP_ID` e a `redirect_uri` que configurou no passo anterior:
 
 `https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http://www.URL_de_retorno.com`
 
 <br>
-2.2. Você receberá o código de autorização na URL que especificou:
+2.2. Quando o vendedor aceitar, será feita um último redirecionamento e você receberá o código de autorização na URL que especificou:
 
 `http://www.URL_de_retorno.com?code=AUTHORIZATION_CODE`
 
-O `AUTHORIZATION_CODE` será utilizado para criar as credenciais, e será válido durante 10 minutos.
+O `AUTHORIZATION_CODE` possui um tempo de validade de 10 minutos e deve ser utilizado para criar as credenciais, que irão te permitir operar em nome do vendedor.
 
 <br>
 2.3. Você também pode incluir o parâmetro `state` na URL de autorização para identificar a quem corresponde o código que recebeu. Faça isso com segurança, atribuindo neste parâmetro um identificador aleatório exclusivo para cada tentativa.
@@ -220,19 +218,66 @@ mercadopago.payment.create(payment_data).then(function (data) {
 ```ruby
 
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 100
-payment.token = 'ff8080814c11e237014c1ff593b57b4d'
-payment.description = 'Title of what you are paying for'
-payment.installments = 1
-payment.payment_method_id = "visa"
-payment.payer = {
-  email: "test_user_19653727@testuser.com"
+payment_data = { 
+  transaction_amount: 100,
+  token: 'ff8080814c11e237014c1ff593b57b4d',
+  description: 'Title of what you are paying for',
+  installments: 1,
+  payment_method_id: 'visa',
+  payer: {
+    email: 'test_user_19653727@testuser.com'
+  }
 }
 
-payment.save()
+payment_response = sdk.payment.create(payment_data)
+payment = payment_response[:response]
+
+```
+```csharp
+
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
+
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var paymentRequest = new PaymentCreateRequest
+{
+    TransactionAmount = 100,
+    Token = "ff8080814c11e237014c1ff593b57b4d",
+    Description = "Title of what you are paying for",
+    Installments = 1,
+    PaymentMethodId = "visa",
+    Payer = new PaymentPayerRequest
+    {
+        Email = "test_user_19653727@testuser.com",
+    },
+    ApplicationFee = 5,
+};
+
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(paymentRequest);
+```
+```python
+
+import mercadopago
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+payment_data = {
+    "transaction_amount": 100,
+    "token": 'ff8080814c11e237014c1ff593b57b4d',
+    "description": "Title of what you are paying for",
+    "installments": 1,
+    "payment_method_id": "visa",
+    "payer": {
+        "email": "test_user_19653727@testuser.com"
+    }
+}
+
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
 
 ```
 ]]]
@@ -251,7 +296,7 @@ O vendedor receberá a diferença entre o valor total e as comissões, tanto a d
 
 É necessário que envie sua `notification_url`, onde receberá um aviso de todos os novos pagamentos e atualizações de status gerados, bem como alta e baixa de usuários no Marketplace.
 
-Você pode receber notificações quando seus clientes autorizarem ou desautorizarem sua aplicação, [configurando a URL](https://www.mercadopago.com/mlb/account/webhooks) em sua conta.
+Você pode receber notificações quando seus clientes autorizarem ou desautorizarem sua aplicação, [configurando a URL](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) em sua conta.
 
 Para mais informações, consulte a seção de [notificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks).
 

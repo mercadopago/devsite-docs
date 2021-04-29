@@ -1,0 +1,198 @@
+openapi: 3.0.0
+servers:
+  - url: https://api.mercadopago.com
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
+paths:
+  /payment_methods:
+    get:
+      tags:
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
+        - $ref: '#/tags/subscriptions'
+      summary: Get the payment methods
+      description: Consult all the available payment methods and obtain a list with the details of each one and its properties
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  properties:
+                    id:
+                      type: string
+                      example: visa
+                      description: Payment method identifier.
+                    name:
+                      type: string
+                      example: Visa
+                      description: Name of the payment method.
+                    payment_type_id:
+                      type: string
+                      example: credit_card
+                      description: Types of payment methods.
+                      enum:
+                        - ticket -- Printed ticket
+                        - atm -- Payment by ATM
+                        - credit_card -- Payment by credit card
+                        - debit_card -- Payment by debit card
+                        - prepaid_card -- Payment by prepaid card
+                    status:
+                      type: string
+                      example: active
+                      description: Payment methods status.
+                      enum:
+                        - active -- Available for use.
+                        - deactive -- Decommissioned, we don't support it anymore.
+                        - temporally_deactive -- Unavailable for use, possible interruption of the service.
+                    secure_thumbnail:
+                      type: string
+                      example: https://www.mercadopago.com/org-img/MP3/API/logos/visa.gif
+                      description: Logo to display on secure sites.
+                    thumbnail:
+                      type: string
+                      example: http://img.mlstatic.com/org-img/MP3/API/logos/visa.gif
+                      description: Logo to show.
+                    deferred_capture:
+                      type: string
+                      example: supported
+                      description: Whether the capture can be delayed or not.
+                      enum:
+                        - supported -- This payment method supports authorization and capture operations.
+                        - unsupported -- Deferred capture is not available for this payment method.
+                        - does_not_apply -- Cash payment methods don't allow deferred capture.
+                    settings:
+                      type: object
+                      properties:
+                        bin:
+                          type: object
+                          description: bin
+                          properties:
+                            pattern:
+                              type: string
+                              example: ^(4)
+                              description: Regular expression representing the accepted bins.
+                            exclusion_pattern:
+                              type: string
+                              description: Regular expression representing the excluded bins.
+                              example: >-
+                                    ^(400163|400176|400178|400185|400199|423808|439267|471233|473200|476332|482481|451416|438935|(40117[8-9])|(45763[1-2])|457393|431274)
+                            installments_pattern:
+                              type: string
+                              example: ^(?!(417401|453998|426398|462437|451212|456188))
+                              description: >-
+                                Regular expression representing bins allowed to pay with more than
+                                one installment.
+                        card_number:
+                          type: object
+                          description: card_number
+                          properties:
+                            length:
+                              type: string
+                              description: Card number length.
+                              example: 16
+                            validation:
+                              type: string
+                              example: standard
+                              description: >-
+                                Whether the card number can be validated using a checksum algorithm
+                                (usually Luhn)
+                              enum:
+                                - standard -- The card number should validate Luhn's algorithm.
+                                - none -- There is no algorithm to validate the checksum.
+                        security_code:
+                          type: object
+                          description: security_code
+                          properties:
+                            mode:
+                              type: string
+                              example: mandatory
+                              description: Whether the security code is mandatory or not.
+                              enum:
+                                - mandatory -- The security code should be given to process the payment.
+                                - optional -- A payment could be issued without the security code.
+                            length:
+                              type: number
+                              description: Security code length.
+                              example: 3
+                            card_location:
+                              type: string
+                              example: back
+                              description: >-
+                                Whether the security code is located in the back or in the front of
+                                the card.
+                              enum:
+                                - back -- The security code is located in the back of the card.
+                                - front -- The security code is located in the front of the card.
+                      description: Payment method settings.
+                    additional_info_needed:
+                      type: array
+                      description: List of additional information that must be supplied by the payer.
+                      enum:
+                        - cardholder_identification_number -- Identification number of the card owner.
+                        - cardholder_identification_type -- Identification type of the card owner.
+                        - cardholder_name -- Name as seen in the card of the card owner.
+                        - issuer_id -- ID of the card issuing entity.
+                    min_allowed_amount:
+                      type: number
+                      example: 0.5
+                      description: Minimum amount that can be processed with this payment method.
+                    max_allowed_amount:
+                      type: number
+                      example: 60000
+                      description: Maximum amount that can be processed with this payment method.
+                    accreditation_time:
+                      type: number
+                      example: 2880
+                      description: How many time in minutes could happen until processing of the payment.
+                    financial_institutions:
+                      type: object
+                      properties:
+                        id:
+                          type: number
+                          description: 'External financial institution identifier (e.g.: company id for atm)'
+                        description:
+                          type: string
+                          description: Descriptive finantial institution name.
+                      description: Finantial institution processing this payment method.
+                    processing_modes:
+                      type: string
+                      example: aggregator
+
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 1000--the-credentials-are-required-
+                      - 1001--public-key-not-found-
+        '401':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - unauthorized--unauthorized-
+        '404':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - not_found--not-found-

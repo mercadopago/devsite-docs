@@ -15,13 +15,14 @@ Sabemos que alguns termos são novos. Antes de começar, os deixamos à mão.
 
 ## Pré-requisitos
 
-Para continuar, confira os pré-requisitos:
+Observe estes pontos antes de começar a integração:
 
-### 1. Acesso à conta do Mercado Pago ou do Mercado Livre
+### 1. Acesse uma conta
 Para poder começar a integração, é necessário **contar com uma conta do Mercado Pago ou do Mercado Livre.**
-Caso você ainda não tenha uma, pode [criar uma conta do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]) quando quiser.
 
-### 2.  Instalação do SDK do Mercado Pago
+Você pode [Entrar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/previous-requirements) em uma conta existente ou [Criar uma nova conta](https://www.mercadopago[FAKER][URL][DOMAIN]).
+
+### 2. Instale do SDK do Mercado Pago
 **Instale o SDK oficial** para simplificar sua integração com as nossas APIs.
 
 [[[
@@ -56,17 +57,31 @@ gem install mercadopago-sdk
 ```
 ```csharp
 ===
-----[mla, mco, mlu, mlc, mlm, mpe]----
-Use o [NuGet](https://docs.microsoft.com/es-es/nuget/install-nuget-client-tools) para instalar o SDK .NET do Mercado Pago.
-------------
 ----[mlb]----
-Use o [NuGet](https://docs.microsoft.com/pt-pt/nuget/install-nuget-client-tools) para instalar o SDK .NET do Mercado Pago.
+Use [NuGet](https://docs.microsoft.com/pt-br/nuget/reference/nuget-exe-cli-reference) para instalar o SDK .NET de Mercado Pago.
 ------------
-Para isso, execute o seguinte comando no console do NuGet Package Manager:
+----[mla, mlm, mco, mlc, mlu]----
+Use [NuGet](https://docs.microsoft.com/es-es/nuget/reference/nuget-exe-cli-reference) para instalar el SDK .NET de Mercado Pago.
+------------
+Execute o seguinte comando no seu terminal:
 ===
-PM> Install-Package mercadopago-sdk -Version 1.0.57
+nuget install mercadopago-sdk
+```
+```python
+===
+O SDK do Mercado Pago está disponível como [pip](https://pypi.org/project/mercadopago/), para instalá-la, você deve executar o seguinte código na linha de comandos:
+===
+pip3 install mercadopago
 ```
 ]]]
+
+### 3. Obtenha suas credenciais
+
+As credenciais são as **chaves que te oferecemos para que possa configurar sua integração**.
+
+Para poder encontrá-las, veja a [seção de Credenciais]([FAKER][CREDENTIALS][URL]).
+
+> Têm dúvidas sobre credenciais? Acesse nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials).
 
 ---
 

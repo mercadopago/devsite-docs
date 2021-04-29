@@ -8,7 +8,7 @@ As **lojas** e **caixas** são os conceitos que você usará no Mercado Pago par
 
 ## Lojas
 
-É um **estabelecimiento físico** onde seus clientes podem adquirir seus produtos ou serviços. Você pode ter várias lojas numa mesma conta.
+É um **estabelecimento físico** onde seus clientes podem adquirir seus produtos ou serviços. Você pode ter várias lojas numa mesma conta.
 
 ### Quais são os benefícios de criar lojas?
 

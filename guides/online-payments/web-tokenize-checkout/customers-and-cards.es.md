@@ -92,34 +92,53 @@ mercadopago.customers.create(customer_data).then(function (customer) {
 ```ruby
 
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCES_TOKEN')
 
-customer = MercadoPago::Customer.new()
-customer.email = "test@test.com"
-customer.save
+customer_data = {
+  email: 'test@test.com',
+}
+customer_response = sdk.customer.create(customer_data)
+customer = customer_response[:response]
 
-card = MercadoPago::Card.new()
-card.token = "9b2d63e00d66a8c721607214cedaecda"
-card.customer_id = customer.id
-card.save
+card_data = {
+  token: '9b2d63e00d66a8c721607214cedaecda',
+  customer_id: customer['id']
+}
+card_response = sdk.card.create(card_data)
+card = card_response[:response]
 
 ```
 ```csharp
-MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
+MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
 
-  Customer customer = new Customer()
-    {
-      Email = "test@test.com"
-    };
-    customer.Save();
+var customerRequest = new CustomerRequest
+{
+    Email = "test@test.com",
+};
+var customerClient = new CustomerClient();
+Customer customer = await customerClient.CreateAsync(customerRequest);
 
-  Card card = new Card()
-    {
-      Token = "9b2d63e00d66a8c721607214cedaecda",
-      CustomerId = customer.Id
-    };
+var cardRequest = new CustomerCardCreateRequest
+{
+    Token = "9b2d63e00d66a8c721607214cedaecda",
+};
+CustomerCard card = await customerClient.CreateCardAsync(customer.Id, cardRequest);
+```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
-      card.Save();
+customer_data = {
+  "email": "test@test.com"
+}
+customer_response = sdk.customer().create(customer_data)
+customer = customer_response["response"]
+
+card_data = {
+  "token": "9b2d63e00d66a8c721607214cedaecda"
+}
+card_response = sdk.card().create(customer["id"], card_data)
+card = card_response["response"]
 ```
 ]]]
 
@@ -153,18 +172,27 @@ Respuesta del Servidor:
 
 ## Recibir un pago de un Customer
 
-Para que puedas recibir un pago utilizando una tarjeta almacenada, es necesario incluir en el código HTML el ID del customer y los IDs de las tarjetas del usuario a través de los atributos `data-customer-id` y `data-card-ids`. Por ejemplo:
+Para que puedas recibir un pago utilizando una tarjeta almacenada, es necesario incluir en el código de integración el ID del customer y los ID de las tarjetas del usuario a través de los atributos `customerId` y `cardIds` dentro del parámetro `savedCards`.
+
+Por ejemplo:
 
 ```html
-<form action="/procesar-pago" method="POST">
-  <script
-    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
-    data-public-key="ENV_PUBLIC_KEY"
-    data-transaction-amount="100.00"
-    data-customer-id="209277402-FqRqgEc3XItrxs"
-    data-card-ids="1518023392627,1518023332143">
-  </script>
-</form>
+<script>
+  mp.checkout({
+    tokenizer: {
+        totalAmount: 4000,
+        backUrl: 'https://www.mi-sitio.com/process',
+        savedCards: {
+            cardIds: '1518023392627,1518023332143' // IDs de las tarjetas
+            customerId: '209277402-FqRqgEc3XItrxs' // Tu customer ID
+        }
+    },
+    render: {
+        container: ‘.tokenizer-container’,
+        label: ‘Pagar’
+    }
+  });
+</script>
 ```
 
 > NOTE
@@ -209,13 +237,17 @@ Puedes obtener el listado completo de `Cards` de un cliente realizando un reques
 ```
 ```ruby
 
-	customer = MercadoPago::Customer.load(customer_id);
-  cards = customer.cards;
+cards_response = sdk.card.list(customer_id)
+cards = cards_response[:response]
 
 ```
 ```csharp
-customer = Customer.FindById("customer.Id");
-List<Card> cards = customer.Cards; 
+var customerClient = new CustomerClient();
+ResourcesList<CustomerCard> customerCards = await customerClient.ListCardsAsync("CUSTOMER_ID");
+```
+```python
+cards_response = sdk.card().list_all(customer_id)
+cards = cards_response["response"]
 ```
 ]]]
 
@@ -239,20 +271,29 @@ Con esta información de tarjetas puedes invocar el *Web Tokenize Checkout*.
 Por ejemplo:
 
 ```html
-<form action="/procesar-pago" method="POST">
-  <script
-    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
-    data-public-key="ENV_PUBLIC_KEY"
-    data-transaction-amount="100.00"
-    data-customer-id="209277402-FqRqgEc3XItrxs"
-    data-card-ids="<?php
-      foreach ($cards["response"] as $card) {
-        echo $card["id"];
-      }
-    ?>">
-  </script>
-</form>
+<script>
+// Obtén los IDs de las cards obtenidas al llamar a la API en el paso anterior
+  const customerCardIds = cardsResponse.map(card => card.id);
+
+// Inicializa  el checkout
+  mp.checkout({
+    tokenizer: {
+        totalAmount: 4000,
+        backUrl: 'https://www.mi-sitio.com/process',
+        savedCards: {
+            cardIds: customerCardIds, // cardIds obtenidos
+            customerId: '209277402-FqRqgEc3XItrxs' // Tu customer id
+        }
+    },
+    render: {
+        container: ‘.tokenizer-container’,
+        label: ‘Pagar’
+    }
+  });
+</script>
 ```
+
+> Esta documentación utiliza la nueva versión de la librería. Para ver la versión anterior, ve a la [sección de Clientes y tarjetas almacenadas con MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/web-tokenize-checkout/v1/customers-and-cards).
 
 
 ## Agregar nuevas tarjetas a un Customer
@@ -326,32 +367,49 @@ mercadopago.customers.search({
 ```ruby
 
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCES_TOKEN')
 
-customer = MercadoPago::Customer.load("247711297-jxOV430go9fx2e")
+customer_response = sdk.customer.get('247711297-jxOV430go9fx2e')
+customer = customer_response[:response]
 
-card = MercadoPago::Card.new()
-card.token = "9b2d63e00d66a8c721607214cedaecda"
-card.customer_id = customer.id
-card.save
+card_data = {
+  token: '9b2d63e00d66a8c721607214cedaecda',
+  customer_id: customer['id']
+}
+card_response = sdk.card.create(card_data)
+card = card_response[:response]
 
 puts card
 
 ```
 ```csharp
-MercadoPago.SDK.AccessToken = "ENV_ACCESS_TOKEN";
+MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
 
-  Customer customer = Customer.FindById("247711297-jxOV430go9fx2e");
+var customerClient = new CustomerClient();
+Customer customer = await customerClient.GetAsync("247711297-jxOV430go9fx2e");
 
-  Card card = new Card()
-    {
-      Token = "9b2d63e00d66a8c721607214cedaecda",
-      CustomerId = customer.Id
-    };
+var cardRequest = new CustomerCardCreateRequest
+{
+    Token = "9b2d63e00d66a8c721607214cedaecda",
+};
+CustomerCard card = await customerClient.CreateCardAsync(customer.Id, cardRequest);
 
-  card.Save();
+Console.WriteLine(card.Id);
+```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
-  Console.WriteLine(card.Id);
+customer_response = sdk.customer().get("247711297-jxOV430go9fx2e")
+customer = customer_response["response"]
+
+card_data = {
+  "token": "9b2d63e00d66a8c721607214cedaecda"
+}
+card_response = sdk.card().create(customer["id"], card_data)
+card = card_response["response"]
+
+print(card)
 ```
 ]]]
 
@@ -437,14 +495,28 @@ En el caso en el que no sepas cuál es el `id` de tu `Customer`, puedes utilizar
 ```
 ```ruby
 
-	customers = MercadoPago::Customer.search(email: "test@test.com");
+customers_response = sdk.customer.search(filters: { email: 'test@test.com' })
+customer = customer_response[:response]
 
 ```
 ```csharp
-Dictionary<string, string> filters = new Dictionary<string, string>();
-filters.Add("email", "test@test.com");
+var searchRequest = new SearchRequest
+{
+    Filters = new Dictionary<string, object>
+    {
+        ["email"] = "test@test.com",
+    },
+};
+ResultsResourcesPage<Customer> results = await customerClient.SearchAsync(searchRequest);
+IList<Customer> customers = results.Results;
+```
+```python
+filters = {
+    "email": "test@test.com"
+}
 
-List<Customer> customers = Customer.Search(filters);
+customers_response = sdk.customer().search(filters=filters)
+customers = customers_response["response"]
 ```
 ]]]
 
@@ -530,13 +602,17 @@ Puedes obtener el listado completo de `Cards` de un cliente realizando un reques
 ```
 ```ruby
 
-	customer = MercadoPago::Customer.load(customer_id);
-  cards = customer.cards;
+cards_response = sdk.card.list(customer_id)
+cards = cards_response[:response]
 
 ```
 ```csharp
-Customer customer = Customer.FindById("customer.Id");
-List<Card> cards = customer.Cards;
+var customerClient = new CustomerClient();
+ResourcesList<CustomerCard> customerCards = await customerClient.ListCardsAsync("CUSTOMER_ID");
+```
+```python
+cards_response = sdk.card().list_all(customer_id)
+cards = cards_response["response"]
 ```
 ]]]
 
