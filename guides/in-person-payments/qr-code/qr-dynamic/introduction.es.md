@@ -36,6 +36,6 @@ Sus principales características son:
 >
 > Conoce paso a paso cómo integrar este modelo.
 >
-> [Cómo integrar QR modelo atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/qr-dinamic-part-b)
+> [Cómo integrar QR modelo atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/qr/dynamic/integrations)
 
 
