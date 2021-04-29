@@ -139,7 +139,7 @@ By setting a billing date, you can choose whether or not to charge a proportiona
 
 To not charge the proportional payment: 
 
-#### Plan with billing date for the 10th and without proportional payment
+### Plan with billing date for the 10th and without proportional payment
 
 ```json
 {
