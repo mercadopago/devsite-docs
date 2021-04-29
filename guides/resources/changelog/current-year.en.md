@@ -26,6 +26,23 @@ We have released the new version 3.8.3 for Magento 2.
 >
 > [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.3) for further details regarding this release.
 
+
+> New WooCommerce plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+
+We have released the new version 5.1.1 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.1.1) for further details regarding this release.
+
 ### April 20th
 
 > CHANGELOG
