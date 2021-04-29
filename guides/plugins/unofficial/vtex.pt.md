@@ -1,3 +1,16 @@
+----[mla, mlm, mlu, mlc, mco, mpe]----
+
+<!-- -->
+> WARNING
+>
+> Important
+>
+> We're sorry. This page is currently not available in English.<br>
+> [View documentation in Spanish](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex)
+
+------------
+
+----[mlb]----
 # VTEX
 
 ## O que é VTEX?
@@ -278,3 +291,5 @@ Os erros mais comuns são os seguintes:
 
 <!-- -->
 > Para mais informação, visite o site [oficial da VTEX](https://help.vtex.com/) e o [site de status da Vtex](https://status.vtex.com/).
+
+------------
