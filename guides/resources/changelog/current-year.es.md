@@ -3,6 +3,21 @@
 Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones de Mercado Pago.
 
 ---
+
+### 30 de abril
+ 
+> CHANGELOG
+>
+> Nuevo modelo dinámico para integrar Código QR
+>
+> NEWS: NUEVA DOCUMENTACIÓN
+>
+> Product: CÓDIGO QR
+
+Usa el modelo dinámico para integrar Código QR que te permite incluir el monto a cobrar directamente en el código. Puedes usarlo para incluirlo en los tickets de pago, servicios de mesa, entre otros.
+
+[Ir a documentación de modelo dinámico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/qr-dynamic/introduction)
+
 ## Febrero 2021
 
 ### 12 de febrero
