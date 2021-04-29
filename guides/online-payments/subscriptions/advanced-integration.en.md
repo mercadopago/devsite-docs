@@ -149,7 +149,7 @@ To not charge the proportional payment:
 	  "frequency": "1",
 		"frequency_type": "months",
     "transaction_amount": 1100,
-		"currency_id": "BRL",
+		"currency_id": "[FAKER][CURRENCY][ACRONYM]",
 		"repetitions": 12,
     "billing_day": 10,
     "billing_day_proportional": false,
