@@ -19,7 +19,7 @@ Os **passos para começar a operar com Mercado Pago**, são os seguintes:
 ## Cadastre uma afiliações de gateway
 
 Uma afiliação de gateway é um conjunto de configurações que representam o processamento de seus pagamentos com o Mercado Pago.
-Você poderá utilizar a **afiliação de gateway [MercadoPagoV1](#bookmark_criando_afiliação_de_gateway_mercadopagov1)**, onde possibilita processar pagamentos com [cartão de crédito](#bookmark_condição_de_pagamento_cartão_de_crédito), [boleto bancário](#bookmark_condição_de_pagamento_boleto_bancário) ou [Checkout Pro](#bookmark_condição_de_pagamento_checkout_pro), e também adicionar a **afiliação de gateway [MercadoPagoV2](#bookmark_criando_afiliação_de_gateway_mercadopagov2_com_pix)** para o processamento de pagamento [Pix](#bookmark_condição_de_pagamento_Pix).
+Você poderá utilizar a **afiliação de gateway [MercadoPagoV1](#bookmark_criando_afiliação_de_gateway_mercadopagov1)**, onde possibilita processar pagamentos com cartão de crédito, boleto bancário ou Checkout Pro, e também adicionar a **afiliação de gateway [MercadoPagoV2](#bookmark_criando_afiliação_de_gateway_mercadopagov2_com_pix)** para o processamento de pagamento [Pix](#bookmark_condição_de_pagamento_pix).
 
 ### Criando afiliação de gateway MercadoPagoV1
 
