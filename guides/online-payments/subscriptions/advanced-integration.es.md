@@ -160,7 +160,7 @@ Para no cobrar el pago proporcional, haz la siguiente llamada:
 }
 ```
 
->Puedes obtener más información sobre los campos en la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference).
+> Puedes obtener más información sobre los campos en la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/subscriptions/_preapproval/post).
 
 
 ------------
