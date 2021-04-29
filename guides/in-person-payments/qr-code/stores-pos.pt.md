@@ -138,3 +138,11 @@ Uma vez criado o caixa, poderemos ver no _Response_ os links para diferentes ent
 > Aprenda passo a passo como integrar este modelo.
 >
 > [Integrar o modelo QR atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/qr-attended-part-b)
+
+> RIGHT_BUTTON_RECOMMENDED_PT
+>
+> Integrar o modelo QR dinâmico
+>
+> Oferece a opção de pagar com o valor a ser cobrado já incluído no código QR.
+>
+> [Integrar o modelo QR dinâmico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/qr-dynamic-part-b)

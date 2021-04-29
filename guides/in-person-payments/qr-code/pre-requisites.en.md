@@ -36,13 +36,25 @@ To continue, you must:
 To start the integration, you must have a Mercado Pago or Mercado Libre account. 
 If you don't have an account yet, you can [create one here](https://www.mercadopago.com.ar).
 
+### 2. Create an application
+
+You will need to create an application for each solution in order to have everything organized and to keep a record that facilitates its management. Create an application to get credentials and set up webhook notifications.
+
+It's easy and we explain how to do it:
+
+1. Enter [Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications).
+2. Select “New application” or “Create your first application”.
+3. Give it a name so you can identify it later on.
+4. Accept our Terms and Conditions. Done!
+
+
 > NOTE
 > 
 > Note
 > 
 > If you were to operate in behalf of others, you can work with their credentials safer and easier through [Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/marketplace/checkout-api/introduction).
 
-### 2. Generate test users
+### 3. Generate test users
 
 To make tests is necessary to have at least two users: a buyer and a seller. 
 

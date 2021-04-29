@@ -137,3 +137,11 @@ Once Point of Sale is created, you’ll be able to see the QR files in the _Resp
 > Learn step by step how to integrate this model.
 >
 > [Integrate QR attended model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/qr-attended-part-b)
+
+> RIGHT_BUTTON_RECOMMENDED_EN
+>
+> Integrate QR dynamic model
+>
+> Offer the option to pay with the amount receivable already included in the QR code.
+>
+> [Integrate QR dynamic model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/qr-dynamic-part-b)

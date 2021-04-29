@@ -26,42 +26,6 @@ The main characteristics are:
 - Operator can see the completed payment on its system.
 
 
-## Model flow
-
-Here's an explanation of how this model works:
-
-![Flujo de pago en punto de venta QR Mercado Pago](/images/mobile/qr-user-flow.en.png)
-
-<span></span>
-
-> NOTE
->
-> Note
->
-> `pos_id` is an unique identifier of a POS inside Mercado Pago. You’ll get it at the same moment you create a POS and it’ll have an associated QR.
-
-1. (A) Point of Sale (POS) logs the order and sends the data to merchant server.<br/>
-(B) Merchant server sends order to Mercado Pago server with a `pos_id`. 
-2. Order is linked to a QR code and ready for the client to scan. 
-3. Client scans QR and Mercado Pago looks for the order through `pos_id`. If the client scans before the start of the order registration, flow is not affected.
-4. (A) Then, merchant server gets a notification for the order. <br/>
-(B) Reception is confirmed.<br/>
-(C) The client will see the order to complete payment inside the app. <br/>
-5. Finally, the client pays the order. 
-6. (A) Client will see a payment confirmation. <br/>
-(B) merchant server will receive a notification for the order. <br/>
-(C) And seller will confirm reception.
-7. (A) merchant server asks for order status with ID received in the last notification to know if it’s closed or still remains open.<br/>
-(B) Mercado Pago returns respective data like status and payment information, among others. 
-8. Once order is **closed**, receipt can be printed.
-
-
-> NOTE
-> 
-> Note
-> 
-> On point 4 you’ll have to follow steps 7A and 7B to get order status.
-
 ### Next steps
 
 

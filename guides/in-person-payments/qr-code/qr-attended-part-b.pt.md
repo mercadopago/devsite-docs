@@ -21,7 +21,7 @@ Explicamos como funciona o modelo atendido:
 
 <span></span>
 
-1. O ponto de venda registra um pedido (1a) e cria um pedido atribuído a uma caixa (1b). Neste momento, o pedido está disponível para leitura (2).
+1. O Ponto de Venda registra um pedido (1a) e cria um pedido atribuído a uma caixa (1b). Neste momento, o pedido está disponível para leitura (2).
 2. Quando o cliente escaneia o QR (3) com o pedido e faz o pagamento (5), uma notificação IPN (4a e 6b) é recebida no servidor do vendedor. Com estes dados obtém-se o estado da encomenda (7a), para validar se está encerrada ou ainda em aberto, com pagamento pendente.
 
 ## Criar um pedido

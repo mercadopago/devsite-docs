@@ -50,10 +50,10 @@ Para recibir pagos con QR en tu negocio **puedes imprimirlo y pegarlo en un luga
 
 ## Tipos de integración
 
-Tipo | Descripción
------------------ | -----------------
-QR Modelo atendido | Modelo de integración donde la caja publica una orden a un QR desde su propio sistema de punto de venta. El cliente ve la orden desde la App y realiza el pago. 
-QR Modelo dinámico | Modelo de integración donde se genera un QR por transacción. Usado para modelos de QR en ticket. 
+| Tipo | Descripción |
+| ----------------- | ----------------- |
+| QR Modelo atendido | Modelo de integración donde la caja publica una orden a un QR desde su propio sistema de punto de venta. El cliente ve la orden desde la App y realiza el pago. |
+|QR Modelo dinámico | Modelo de integración donde se genera un QR por transacción. Usado para modelos de QR en ticket. |
 
 
 En base a tu modelo de negocio, puedes escoger alguna de las opciones para ofrecer a tus clientes una buena experiencia de compra en tus tiendas físicas.

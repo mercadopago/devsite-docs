@@ -26,7 +26,7 @@ Te explicamos cómo funciona el modelo dinámico:
 
 ## Crea la orden
 
-Primero, genera la publicación de orden. En cuanto se envíen los datos a Mercado Pago, se pondrá a disposición una cadena de datos con estándar EMVCo.
+Primero, genera la publicación de orden. En cuanto se envíen los datos a Mercado Pago, se pondrá a disposición una cadena de datos con estándar [EMVCo](https://www.emvco.com/emv-technologies/qrcodes/).
 
 Ejecuta la siguiente llamada a la API para generar una orden. En la respuesta recibirás el dato necesario para crear el código QR.
 
@@ -89,11 +89,9 @@ Por exemplo:
 
 ## Asocia la orden a una caja
 
-Este método suma a las funcionalidades del modelo la posibilidad de asociar la orden al código QR declarado en el servicio.
+Además de la generación del código QR, también tienes la opción de crear y asignar la misma orden al código QR fijo de la caja.
 
-El servicio será el mismo que el método *POST* pero se necesita cambiar el método a *PUT* para que se asigne la orden al código QR fijo de la caja.
-
-Ejecuta la siguiente llamada a la API para generar la orden. En la respuesta recibirás el dato necesario para crear el código QR y se asociará al QR declarado. 
+Ejecuta la siguiente llamada a la API para generar la orden y la asignación a la caja. En la respuesta recibirás el dato necesario para crear el código QR y se asociará al QR declarado. 
 
 ```curl
 curl -X PUT \
