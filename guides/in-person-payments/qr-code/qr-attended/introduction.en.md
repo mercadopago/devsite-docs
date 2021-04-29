@@ -1,15 +1,3 @@
----
-sites_supported:
-- mla
-- mpe
-- mco
-- mlu
-- mlm
-- mlc
-- mlb
-indexable: false
----
-
 # QR attended model
 
 ## What’s QR attended model?
@@ -25,9 +13,9 @@ The main characteristics are:
 - For a client to make a payment, an order needs to be linked to a POS.
 - Operator can see the completed payment on its system.
 
+---
 
 ### Next steps
-
 
 > LEFT_BUTTON_REQUIRED_EN
 >
@@ -35,4 +23,4 @@ The main characteristics are:
 >
 > Learn to integrate this model step by step.
 >
-> [How to Integrate attended model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/qr-code/qr-attended-part-b)
+> [How to Integrate attended model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/qr-code/qr-attended/integrations)

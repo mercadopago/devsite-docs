@@ -1,14 +1,3 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
-  - mlb
----
-
 # QR dynamic model
 
 ## What is the dynamic QR model?
@@ -26,10 +15,9 @@ The main characteristics are:
 - The QR code printed on a ticket or screen can be shown. A fixed QR code at the cashier's is not required.
 - You may collect several orders at the same time with different codes.
 
-
+---
 
 ### Next steps
-
 
 > LEFT_BUTTON_REQUIRED_EN
 >
@@ -38,5 +26,3 @@ The main characteristics are:
 > Learn about the step by step for model integration.
 >
 > [How to integrate dynamic model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/qr-code/qr-dynamic/integrations)
-
-

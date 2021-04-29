@@ -1,15 +1,4 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
-  - mlb
----
-
-#  Integrar o modelo QR atendido
+# Integrar o modelo QR atendido
 
 Para receber por meio de um código QR modelo atendido, deverá criar um pedido e associá-lo ao caixa onde quiser receber. 
 
@@ -126,6 +115,7 @@ Implementa IPN de `merchant_order` junto com uma busca do pedido por `external_r
 [Receber notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn)
 
 ---
+
 ### Próximos passos
 
 

@@ -1,14 +1,3 @@
----
-sites_supported:
-- mla
-- mpe
-- mco
-- mlu
-- mlm
-- mlc
-- mlb
----
-
 # Previous requirements to integrate
 
 ## Glossary
@@ -49,14 +38,14 @@ It's easy and we explain how to do it:
 
 
 > NOTE
-> 
+>
 > Note
-> 
+>
 > If you were to operate in behalf of others, you can work with their credentials safer and easier through [Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/marketplace/checkout-api/introduction).
 
 ### 3. Generate test users
 
-To make tests is necessary to have at least two users: a buyer and a seller. 
+To make tests is necessary to have at least two users: a buyer and a seller.
 
 Execute the following command to generate a test user:
 

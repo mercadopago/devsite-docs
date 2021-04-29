@@ -1,14 +1,3 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
-  - mlb
----
-
 # Sucursales y Cajas
 
 ## Introducción
@@ -122,9 +111,9 @@ Puedes obtener más información en la [Referencias de API](https://www.mercadop
 > 
 > Importante
 > 
-> A partir del 20 de abril de 2021, no se podrán crear cajas sin una sucursal asignada. 
+> A partir del 20 de abril de 2021, no se podrán crear cajas sin una sucursal asignada.
 
-Una vez creada la caja, podremos ver en el _Response_ los links a distintos entregables del QR, junto con otros datos relevantes de la caja. 
+Una vez creada la caja, podremos ver en el _Response_ los links a distintos entregables del QR, junto con otros datos relevantes de la caja.
 
 
 ---
@@ -135,9 +124,9 @@ Una vez creada la caja, podremos ver en el _Response_ los links a distintos entr
 >
 > Integrar QR modelo atendido
 >
-> Conoce paso a paso cómo asociar una orden a la caja para realizar cobros. 
+> Conoce paso a paso cómo asociar una orden a la caja para realizar cobros.
 >
-> [Integrar QR modelo atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/qr-attended-part-b)
+> [Integrar QR modelo atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/qr-attended/introduction)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -145,4 +134,4 @@ Una vez creada la caja, podremos ver en el _Response_ los links a distintos entr
 >
 > Ofrece la opción de pagar con el monto a cobrar ya incluido en el código QR.
 >
-> [Integrar QR modelo atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/qr-attended-part-b)
+> [Integrar QR modelo dinámico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/qr-dynamic/introduction)

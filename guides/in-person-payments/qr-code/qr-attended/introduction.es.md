@@ -1,14 +1,3 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
-  - mlb
----
-
 # Pagos QR modelo atendido
 
 ## ¿Qué es QR por modelo atendido?
@@ -24,15 +13,14 @@ Las características principales son:
 - Para que el cliente realice el pago, es necesario asociar una orden a la caja. 
 - El operador ve el cobro impactado en su sistema.
 
-### Próximos pasos
+---
 
+### Próximos pasos
 
 > LEFT_BUTTON_REQUIRED_ES
 >
 > Cómo integrar QR modelo atendido
 >
-> Conoce paso a paso como integrar este modelo.
+> Conoce paso a paso cómo integrar este modelo.
 >
-> [Cómo integrar QR modelo atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/qr-attended-part-b)
-
-
+> [Cómo integrar QR modelo atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/qr-code/qr-attended/integrations)

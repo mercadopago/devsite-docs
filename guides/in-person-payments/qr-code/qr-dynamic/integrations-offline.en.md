@@ -127,4 +127,4 @@ Then, it shows QR code to your customer the way he/she prefers to pay.  And read
 >
 > Learn about your options for your integration to reach the next level.
 >
-> [Integrar modelo QR dinamico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/advanced-integration)
+> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/advanced-integration)

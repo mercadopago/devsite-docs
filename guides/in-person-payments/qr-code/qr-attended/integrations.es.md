@@ -1,15 +1,4 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
-  - mlb
----
-
-#  Cómo integrar QR modelo atendido
+# Cómo integrar QR modelo atendido
 
 Para cobrar a través de un código QR modelo atendido, deberás crear una orden y asociarla a la caja en la quieras cobrar.
 

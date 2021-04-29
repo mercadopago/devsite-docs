@@ -1,15 +1,4 @@
----
-sites_supported:
-- mla
-- mpe
-- mco
-- mlu
-- mlm
-- mlc
-- mlb
----
-
-#  How to integrate QR attended model
+# How to integrate QR attended model
 
 To charge with a QR attended model, you’ll have to create and order and then associate it with a Point of Sale.
 

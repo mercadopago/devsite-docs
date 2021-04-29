@@ -1,15 +1,4 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
-  - mlb
----
-
-#  Como integrar QR modelo dinâmico
+# Como integrar QR modelo dinâmico
 
 Para cobrar através de um código QR modelo dinâmico, você deverá criar uma ordem e, a partir da resposta obtida, criar um código com algum serviço externo.
 
@@ -22,8 +11,6 @@ Veja o passo a passo do modelo dinâmico:
 2. Na resposta, você vai encontrar uma string de dados sob o atributo `qr_data`.
 3. Gere um código QR com o atributo recebido. 
 4. Por último, disponibilize o código QR para o cliente como você preferir para ele realizar o pagamento.
-
-
 
 ## Crie a ordem
 
@@ -65,7 +52,7 @@ Você pode obter mais informações nas [Referências de API](https://www.mercad
 > 
 > Nota
 > 
-> O modelo não tem a opção de deletar a ordem. Por isso, recomendamos configurar uma data de expiração com o atributo *expiration_date*.
+> O modelo não tem a opção de deletar a ordem. Por isso, recomendamos configurar uma data de expiração com o atributo `expiration_date`.
 
 Resposta
 
@@ -80,12 +67,14 @@ A resposta será uma string com o padrão EMVCo. Use o `qr_data` para disponibil
 
 Se você tiver configurada uma **chave Pix em sua conta do Mercado Pago**, a estrutura da string de dados conterá dados referidos a Pix. 
 Por exemplo: 
+
 ```json
 {
    "qr_data": "00020101021226940014BR.GOV.BCB.PIX2572pix-qr.mercadopago.com/instore/o/v2/fdf9ece0-6137-4e1e-a49d-94f55ec9eee25204000053039865802BR5925FELIPE AAAAAA AAAAA 6009SAO PAULO62070503***6304B61D"
 }
 ```
---------
+
+------------
 
 
 ## Associa a ordem a uma caixa
@@ -124,7 +113,7 @@ curl -X PUT \
 
 ## Receba notificações de suas ordens 
 
-As [notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn) (Instant Payment Notification) são a **forma automática de aviso da criação de novas ordens e as atualizações de seus estados**. Por exemplo, se foram aprovadas, recusadas ou se estiverem pendentes. 
+As notificações IPN (Instant Payment Notification) são a **forma automática de aviso da criação de novas ordens e as atualizações de seus estados**. Por exemplo, se foram aprovadas, recusadas ou se estiverem pendentes. 
 
 Implementa IPN de `merchant_order` junto com uma busca do pedido por `external_reference` como método de contingência.
 

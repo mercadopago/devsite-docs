@@ -1,18 +1,6 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
-  - mlb
----
-
-#  Cómo integrar QR modelo dinámico
+# Cómo integrar QR modelo dinámico
 
 Para cobrar a través de un código QR modelo dinámico, deberás crear una orden y, a partir de la respuesta obtenida, crear un código con algún servicio externo.
-
 
 ## Flujo del modelo
 
@@ -22,7 +10,6 @@ Te explicamos cómo funciona el modelo dinámico:
 2. En la respuesta, encontrarás un string de datos bajo el atributo `qr_data`.
 3. Genera un código QR con el atributo recibido. 
 4. Por último, disponibiliza el código QR al cliente como prefieras para que realice el pago.
-
 
 ## Crea la orden
 
@@ -64,7 +51,7 @@ Puedes obtener más información en la [Referencias de API](https://www.mercadop
 > 
 > Nota
 > 
-> El modelo no tiene la opción de eliminar la orden. Por eso, te recomendamos configurar una fecha de expiración con el atributo *expiration_date*.
+> El modelo no tiene la opción de eliminar la orden. Por eso, te recomendamos configurar una fecha de expiración con el atributo `expiration_date`.
 
 Respuesta
 
@@ -77,14 +64,16 @@ La respuesta será un string con el estándar EMVCo. Usa el `qr_data` para dispo
 
 ----[mlb]----
 
-Se sua conta do Mercado Pago **possui uma chave de PIX configurada**, a estrutura da string de dados terá dados referente ao PIX.
-Por exemplo: 
+Si en su cuenta de Mercado Pago **tiene una llave PIX configurada**, la estrutura del string de datos tendran datos referentes a Pix. 
+Por ejemplo.
+
 ```json
 {
    "qr_data": "00020101021226940014BR.GOV.BCB.PIX2572pix-qr.mercadopago.com/instore/o/v2/fdf9ece0-6137-4e1e-a49d-94f55ec9eee25204000053039865802BR5925FELIPE AAAAAA AAAAA 6009SAO PAULO62070503***6304B61D"
 }
 ```
---------
+
+------------
 
 
 ## Asocia la orden a una caja

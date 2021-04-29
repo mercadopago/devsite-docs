@@ -1,14 +1,3 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
-  - mlb
----
-
 # Pagos QR modelo dinámico
 
 ## ¿Qué es QR por modelo dinámico?
@@ -27,8 +16,9 @@ Sus principales características son:
 - Puedes cobrar varias órdenes en el mismo momento con diferentes códigos.
 
 
-### Próximos pasos
+---
 
+### Próximos pasos
 
 > LEFT_BUTTON_REQUIRED_ES
 >

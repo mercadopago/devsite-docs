@@ -1,15 +1,3 @@
----
-sites_supported:
-- mla
-- mpe
-- mco
-- mlu
-- mlm
-- mlc
-- mlb
----
-
-
 # O que é o código QR?
 
 O QR é um **código único vinculado à sua conta de Mercado Pago**, que lhe permite receber pagamentos de uma forma simples, rápida e segura. 
@@ -52,7 +40,7 @@ Para receber pagamentos com QR em seu negócio, **você pode imprimi-lo e colá-
 ## Tipos de integração
 
 | Tipo | Descrição |
-| ----------------- | ----------------- |
+| --- | --- |
 | QR Modelo atendido | Modelo de integração em que o caixa publica uma ordem para um QR de seu próprio sistema de ponto de venda. O cliente visualiza a ordem do App e realiza o pagamento. |
 |QR Modelo dinâmico | Modelo de integração em que é gerado um QR por transação. Usado para modelos de QR em tíquete.  |
 

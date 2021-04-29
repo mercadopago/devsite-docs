@@ -1,15 +1,3 @@
----
-sites_supported:
-- mla
-- mpe
-- mco
-- mlu
-- mlm
-- mlc
-- mlb
----
-
-
 # What’s a QR code?
 
 A QR is an **unique code linked to your Mercado Pago account**. It’ll allow you to receive payments in a simple, fast and secure way.
@@ -39,7 +27,7 @@ A QR is an **unique code linked to your Mercado Pago account**. It’ll allow yo
 
 In order to receive payments with QR, you can **print it and paste it in a visible place or display it on your phone**.
 
-> ![Flujo QR](/images/mobile/qr_flujo.en.png)
+![Flujo QR](/images/mobile/qr_flujo.en.png)
 
 <span></span>
 > NOTE

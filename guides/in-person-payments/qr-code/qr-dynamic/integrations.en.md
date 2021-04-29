@@ -1,18 +1,6 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
-  - mlb
----
-
-#  How to Integrate the QR dynamic model
+# How to integrate the QR dynamic model
 
 For collection using the QR code dynamic model, you should create both an order and a code with an external service, based on the relevant response.
-
 
 ## Model flow
 
@@ -20,7 +8,7 @@ Find below how this model works:
 
 1. An order with all required payment data is created.
 2. The response will include a data string under the attribute `qr_data`.
-3. A QR code with the received attribute is generated. 
+3. A QR code with the received attribute is generated.
 4. Finally, the QR code is made available to the customer, at your choice, to make the payment.
 
 ## Create an order
@@ -39,17 +27,17 @@ curl -X POST \
    "items": [
        {
            "sku_number": "KS955RUR",
-           "category": "LIBRERIA",
-           "title": "Lapicera",
-           "description": "Lapicera verde",
+           "category": "BOOKSTORE",
+           "title": "Pen",
+           "description": "Green pen",
            "quantity": 2,
            "unit_measure": "unit",
            "unit_price": 20,
            "total_amount": 40
        }
    ],
-   "title": "Compra en Librería",
-   "description": "Compra + Retiro",
+   "title": "Purchase in Bookstore",
+   "description": "Purchase + shipping",
    "sponsor": {
        "id": 446566691
    },
@@ -60,10 +48,10 @@ curl -X POST \
 For further information, refer to [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put).
 
 > NOTE
-> 
+>
 > Note
-> 
-> The model does not include a **delete order** option. Therefore, we recommend setting an expiration date using the *expiration_date* attribute.
+>
+> The model does not include a **delete order** option. Therefore, we recommend setting an expiration date using the `expiration_date` attribute.
 
 Response
 
@@ -84,7 +72,8 @@ For example:
    "qr_data": "00020101021226940014BR.GOV.BCB.PIX2572pix-qr.mercadopago.com/instore/o/v2/fdf9ece0-6137-4e1e-a49d-94f55ec9eee25204000053039865802BR5925FELIPE AAAAAA AAAAA 6009SAO PAULO62070503***6304B61D"
 }
 ```
---------
+
+------------
 
 
 ## Associate the order with a Point of Sale
@@ -104,17 +93,17 @@ curl -X PUT \
    "items": [
        {
            "sku_number": "KS955RUR",
-           "category": "LIBRERIA",
-           "title": "Lapicera",
-           "description": "Lapicera verde",
+           "category": "BOOKSTORE",
+           "title": "Pen",
+           "description": "Green pen",
            "quantity": 2,
            "unit_measure": "unit",
            "unit_price": 20,
            "total_amount": 40
        }
    ],
-   "title": "Compra en Librería",
-   "description": "Compra + Retiro",
+   "title": "Purchase in Bookstore",
+   "description": "Purchase + shipping",
    "sponsor": {
        "id": 446566691
    },
@@ -124,7 +113,7 @@ curl -X PUT \
 
 ## Receive notifications of your orders
 
-[IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn) are an **automatic way of receiving notifications for order creation and status updates**. I.e.: when orders are approved, rejected or pending. 
+IPN notifications are an **automatic way of receiving notifications for order creation and status updates**. I.e.: when orders are approved, rejected or pending.
 
 Implement IPN `merchant_order` with an order search by `external_reference` as a contingency method.
 
