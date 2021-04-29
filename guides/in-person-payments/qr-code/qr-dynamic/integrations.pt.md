@@ -14,7 +14,7 @@ Veja o passo a passo do modelo dinâmico:
 
 ## Crie a ordem
 
-Primeiro, gera a publicação de ordem. Assim que os dados sejam enviados para o Mercado Pago, ficará disponível uma cadeia de dados com padrão [EMVCo](https://www.emvco.com/emv-technologies/qrcodes/).
+Primeiro, gera a publicação de ordem. Assim que os dados sejam enviados para o Mercado Pago, ficará disponível uma cadeia de dados com padrão [EMVCo](https://www.emvco.com/emv-technologies/qrcodes).
 
 Execute a seguinte chamada para a API a fim de gerar uma ordem. Na resposta, você vai receber o dado necessário para criar o código QR.
 
@@ -28,16 +28,16 @@ curl -X POST \
    "items": [
        {
            "sku_number": "KS955RUR",
-           "category": "LIBRERIA",
-           "title": "Lapicera",
-           "description": "Lapicera verde",
+           "category": "LIVRARIA",
+           "title": "Caneta",
+           "description": "Caneta verde",
            "quantity": 2,
            "unit_measure": "unit",
            "unit_price": 20,
            "total_amount": 40
        }
    ],
-   "title": "Compra en Librería",
+   "title": "Compra em Livraria",
    "description": "Compra + Retiro",
    "sponsor": {
        "id": 446566691
@@ -93,16 +93,16 @@ curl -X PUT \
    "items": [
        {
            "sku_number": "KS955RUR",
-           "category": "LIBRERIA",
-           "title": "Lapicera",
-           "description": "Lapicera verde",
+           "category": "LIVRARIA",
+           "title": "Caneta",
+           "description": "Caneta verde",
            "quantity": 2,
            "unit_measure": "unit",
            "unit_price": 20,
            "total_amount": 40
        }
    ],
-   "title": "Compra en Librería",
+   "title": "Compra em Livraria",
    "description": "Compra + Retiro",
    "sponsor": {
        "id": 446566691

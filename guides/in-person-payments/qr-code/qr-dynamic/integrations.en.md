@@ -13,7 +13,7 @@ Find below how this model works:
 
 ## Create an order
 
-First, generate the order publication. Once data is sent to Mercado Pago, a data string with [EMVCo](https://www.emvco.com/emv-technologies/qrcodes/) standard will be made available.
+First, generate the order publication. Once data is sent to Mercado Pago, a data string with [EMVCo](https://www.emvco.com/emv-technologies/qrcodes) standard will be made available.
 
 Execute the next API call to create an order. The response will include the data required to create the QR code.
 

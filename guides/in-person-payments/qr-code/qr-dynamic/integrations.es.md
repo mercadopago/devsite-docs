@@ -13,7 +13,7 @@ Te explicamos cómo funciona el modelo dinámico:
 
 ## Crea la orden
 
-Primero, genera la publicación de orden. En cuanto se envíen los datos a Mercado Pago, se pondrá a disposición una cadena de datos con estándar [EMVCo](https://www.emvco.com/emv-technologies/qrcodes/).
+Primero, genera la publicación de orden. En cuanto se envíen los datos a Mercado Pago, se pondrá a disposición una cadena de datos con estándar [EMVCo](https://www.emvco.com/emv-technologies/qrcodes).
 
 Ejecuta la siguiente llamada a la API para generar una orden. En la respuesta recibirás el dato necesario para crear el código QR.
 
@@ -64,7 +64,7 @@ La respuesta será un string con el estándar EMVCo. Usa el `qr_data` para dispo
 
 ----[mlb]----
 
-Si en su cuenta de Mercado Pago **tiene una llave PIX configurada**, la estrutura del string de datos tendran datos referentes a Pix. 
+Si en tu cuenta de Mercado Pago **tiene una llave PIX configurada**, la estrutura del string de datos tendrá datos referentes a Pix. 
 Por ejemplo.
 
 ```json
