@@ -56,16 +56,6 @@ Las características principales son:
 - Para que el cliente realice el pago, es necesario asociar una orden a la caja. 
 - El operador ve el cobro impactado en su sistema.
 
----
-
-> NOTE
-> 
-> Nota
-> 
-> Esta documentación refiere a la nueva versión de Código QR. Para ver la versión anterior, ve a la sección de [Código QR antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code-legacy/introduction).
-
----
-
 ### Próximos pasos
 
 
