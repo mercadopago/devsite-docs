@@ -20,7 +20,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 Ahora puedes incluir Pix como medio de pago con el gateway MercadoPagoV2 para VTEX.
 
-[Ir a la documentación de VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex)
+[Ir a la documentación de VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/#bookmark_criando_afiliação_de_gateway_mercadopagov2)
 ------------
 
 ### 20 de abril

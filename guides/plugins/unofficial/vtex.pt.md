@@ -19,7 +19,7 @@ Os **passos para começar a operar com Mercado Pago**, são os seguintes:
 ## Cadastre uma afiliações de gateway
 
 Uma afiliação de gateway é um conjunto de configurações que representam o processamento de seus pagamentos com o Mercado Pago.
-Você poderá utilizar a **afiliação de gateway [MercadoPagoV1](#bookmark_criando_afiliação_de_gateway_mercadopagov1)**, onde possibilita processar pagamentos com cartão de crédito, boleto bancário ou Checkout Pro, e também adicionar a **afiliação de gateway [MercadoPagoV2](#bookmark_criando_afiliação_de_gateway_mercadopagov2_com_pix)** para o processamento de pagamento [Pix](#bookmark_condição_de_pagamento_pix).
+Você poderá utilizar a **afiliação de gateway [MercadoPagoV1](#bookmark_criando_afiliação_de_gateway_mercadopagov1)**, onde possibilita processar pagamentos com cartão de crédito, boleto bancário ou Checkout Pro, e também adicionar a **afiliação de gateway [MercadoPagoV2](#bookmark_criando_afiliação_de_gateway_mercadopagov2)** para o processamento de pagamento [Pix](#bookmark_condição_de_pagamento_pix).
 
 ### Criando afiliação de gateway MercadoPagoV1
 
@@ -132,7 +132,7 @@ Para criar uma **condição de pagamento boleto bancário utilizando sua afilia�
 
 ### Condição de pagamento Pix
 
-Para **criar uma condição de pagamento Pix utilizando sua afiliação com o [MercadoPagoV2](#bookmark_criando_afiliação_de_gateway_mercadopagov2_com_pix)**, siga os passos abaixo:
+Para **criar uma condição de pagamento Pix utilizando sua afiliação com o [MercadoPagoV2](#bookmark_criando_afiliação_de_gateway_mercadopagov2)**, siga os passos abaixo:
 
 1. No painel de administração de sua loja, acesse "Configurações" do módulo de pagamentos.
 2. Na aba "Condições de pagamento", clique no botão "+".
