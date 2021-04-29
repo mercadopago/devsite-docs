@@ -56,15 +56,7 @@ The main characteristics are:
 - For a client to make a payment, an order needs to be linked to a POS.
 - Operator can see the completed payment on its system.
 
----
 
-> NOTE
-> 
-> Note
-> 
-> This documentation refers to the new version of QR Code. To see the previous version, go to the [Old QR Code section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code-legacy/introduction).
-
----
 ### Next steps
 
 
