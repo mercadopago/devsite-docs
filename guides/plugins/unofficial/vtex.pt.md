@@ -57,22 +57,22 @@ Para criar uma **afiliação de gateway de pagamento com o Mercado Pago**, siga 
 
 E pronto! Sua afiliação com o Mercado Pago já está ativa!
 
-### Criando afiliação de gateway MercadoPagoV2 com Pix
+### Criando afiliação de gateway MercadoPagoV2
 
 #### Requisito prévio
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha uma chave Pix
 
-Para começar, você deve ter cadastrada uma chave Pix na conta do vendedor. Este dado é único, serve para identificar sua conta e permitirá que você utilize as funcionalidades do meio de pagamento.
+Para configurar Pix como condição de pagamento, você deve ter cadastrada uma chave Pix na conta do vendedor. Este dado é único, serve para identificar sua conta e permitirá que você utilize as funcionalidades do meio de pagamento.
 
 [Conheça como criar uma chave Pix](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required)
 
 > Considere que o registro da chave Pix pode levar alguns minutos.
 
-Para criar uma **afiliação de gateway de pagamento Pix com o MercadoPagoV2**, siga os passos abaixo:
+Para criar uma **afiliação de gateway MercadoPagoV2**, siga os passos abaixo:
 
 1. No painel de administração de sua loja, acesse "Configurações" do módulo de pagamentos.
 2. Na aba "Afiliações de Gateways", clique no botão "+".
-3. Clique no conector MercadoPagoV1.
+3. Clique no conector MercadoPagoV2.
 4. Preencha os campos correspondentes e clique em "Salvar".
 
 | Campos | Dados necessários |
