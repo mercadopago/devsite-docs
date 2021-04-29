@@ -112,7 +112,7 @@ Cuando se establece una fecha de facturación, se puede elegir si se va a cobrar
 > 
 > Nota
 > 
-> A modo de ejemplo, los códigos de abajo muestran el día 10 como fecha de facturación. Se puede seleccionar cualquier día entre el __1 y el 28__, utilizando el parámetro __billing_day__.
+> A modo de ejemplo, los códigos de abajo muestran el día 10 como fecha de facturación. Se puede seleccionar cualquier día entre el __1 y el 28__, utilizando el parámetro `billing_day`.
 
 ### Plan con fecha de facturación para el día 10 con pago proporcional
 
