@@ -20,7 +20,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 Now you can include Pix as a payment method with the gateway MercadoPagoV2 for VTEX.
 
-Go to [VTEX](https://www.mercadopago.com.br/developers/pt/guides/plugins/unofficial/vtex) documentation
+[Go to VTEX documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex)
 ------------
 
 ### April 20th
