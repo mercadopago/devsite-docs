@@ -6,6 +6,22 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Abril 2021
 
+----[mlb]----
+### 29 de abril
+
+> CHANGELOG
+>
+> Nova versão do gateway MercadoPagoV2 para VTEX
+>
+> NEWS: FEATURE
+>
+> Product: VTEX
+
+Agora você pode incluir Pix como meio de pagamento com o gateway MercadoPagoV2 para VTEX.
+
+[Ir para a documentação VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/#bookmark_criando_afiliação_de_gateway_mercadopagov2)
+------------
+
 ### 22 de abril
 
 > CHANGELOG
@@ -42,6 +58,7 @@ Lançamos a nova versão 5.1.1 para WooCommerce.
 > GitHub
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.1.1).
+
 
 ### 20 de abril
 
