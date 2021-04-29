@@ -41,8 +41,8 @@ Para receber pagamentos com QR em seu negócio, **você pode imprimi-lo e colá-
 
 | Tipo | Descrição |
 | --- | --- |
-| QR Modelo atendido | Modelo de integração em que o caixa publica uma ordem para um QR de seu próprio sistema de ponto de venda. O cliente visualiza a ordem do App e realiza o pagamento. |
-| QR Modelo dinâmico | Modelo de integração em que é gerado um QR por transação. Usado para modelos de QR em tíquete. |
+| QR modelo atendido | Modelo de integração em que o caixa publica uma ordem para um QR de seu próprio sistema de ponto de venda. O cliente visualiza a ordem do App e realiza o pagamento. |
+| QR modelo dinâmico | Modelo de integração em que é gerado um QR por transação. Usado para modelos de QR em tíquete. |
 
 
 Dependendo do seu modelo de negócio, você pode escolher alguma das opções para oferecer aos seus clientes uma boa experiência de compra em suas lojas físicas.
