@@ -103,7 +103,7 @@ curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPRO
 }'
 ```
 
-### Billing date
+## Billing date
 
 If you have a monthly subscription, you can set a fixed day of the month to receive your billings. 
 
@@ -113,13 +113,13 @@ By setting a billing date, you can choose whether or not to charge a proportiona
 > 
 > Note
 > 
-> Just as an example, the codes below display the 10th as billing date. Any day between __1 and 28__ can be selected, using the __billing_day__ parameter.
+> Just as an example, the codes below display the 10th as billing date. Any day between __1 and 28__ can be selected, using the `billing_day` parameter.
 
-#### Plan with billing date for the 10th and with proportional payment
+### Plan with billing date for the 10th and with proportional payment
 
 ```json
 {
-"back_url": "https://www.mercadopago.com.br",
+"back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]",
 	"reason": "Plano Pase Gym Gold",
 	"auto_recurring": {
 		"frequency": "1",
@@ -143,7 +143,7 @@ To not charge the proportional payment:
 
 ```json
 {
-	"back_url": "https://www.mercadopago.com.br",
+	"back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]",
 	"reason": "Plano Pase Gym Gold",
 	"auto_recurring": {
 	  "frequency": "1",

@@ -100,7 +100,7 @@ curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPRO
 }'
 ```
 
-### Data de cobrança
+## Data de cobrança
 
 Se você tem uma assinatura mensal, você pode definir um dia fixo do mês para receber as cobranças de uma assinatura mensal. 
 
@@ -110,19 +110,19 @@ Ao configurar uma data de cobrança, você pode escolher entre cobrar ou não um
 > 
 > Nota
 > 
-> Apenas para exemplificar, os códigos abaixo exibem o dia 10 como data de cobrança. Qualquer dia entre __1 e 28__ pode ser selecionado, usando o parâmetro __billing_day__.
+> Apenas para exemplificar, os códigos abaixo exibem o dia 10 como data de cobrança. Qualquer dia entre __1 e 28__ pode ser selecionado, usando o parâmetro `billing_day`.
 
-#### Plano com data de cobrança para o dia 10 e com pagamento proporcional
+### Plano com data de cobrança para o dia 10 e com pagamento proporcional
 
 ```json
 {
-"back_url": "https://www.mercadopago.com.br",
+"back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]",
 	"reason": "Plano Pase Gym Gold",
 	"auto_recurring": {
 		"frequency": "1",
 		"frequency_type": "months",
     "transaction_amount": 1100,
-		"currency_id": "BRL",
+		"currency_id": "[FAKER][CURRENCY][ACRONYM]",
 		"repetitions": 12,
     "billing_day": 10,
     "billing_day_proportional": true,
@@ -136,17 +136,17 @@ Ao configurar uma data de cobrança, você pode escolher entre cobrar ou não um
 
 Para não cobrar o pagamento proporcional, faça a seguinte chamada: 
 
-#### Plano com data de cobrança para o dia 10 e sem pagamento proporcional
+### Plano com data de cobrança para o dia 10 e sem pagamento proporcional
 
 ```json
 {
-	"back_url": "https://www.mercadopago.com.br",
+	"back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]",
 	"reason": "Plano Pase Gym Gold",
 	"auto_recurring": {
 	  "frequency": "1",
 		"frequency_type": "months",
     "transaction_amount": 1100,
-		"currency_id": "BRL",
+		"currency_id": "[FAKER][CURRENCY][ACRONYM]",
 		"repetitions": 12,
     "billing_day": 10,
     "billing_day_proportional": false,
@@ -158,7 +158,7 @@ Para não cobrar o pagamento proporcional, faça a seguinte chamada:
 }
 ```
 
->Para saber mais sobre os campos disponíveis, confira as [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference).
+> Para saber mais sobre os campos disponíveis, confira as [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/subscriptions/_preapproval/post).
 
 
 ------------

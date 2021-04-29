@@ -118,13 +118,13 @@ Cuando se establece una fecha de facturación, se puede elegir si se va a cobrar
 
 ```json
 {
-"back_url": "https://www.mercadopago.com.ar",
+"back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]",
 	"reason": "Plan Pase Gym Gold",
 	"auto_recurring": {
 		"frequency": "1",
 		"frequency_type": "months",
     "transaction_amount": 1100,
-		"currency_id": "ARS",
+		"currency_id": "[FAKER][CURRENCY][ACRONYM]",
 		"repetitions": 12,
     "billing_day": 10,
     "billing_day_proportional": true,
@@ -142,13 +142,13 @@ Para no cobrar el pago proporcional, haz la siguiente llamada:
 
 ```json
 {
-	"back_url": "https://www.mercadopago.com.ar",
+	"back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]",
 	"reason": "Plan Pase Gym Gold",
 	"auto_recurring": {
 	  "frequency": "1",
 		"frequency_type": "months",
     "transaction_amount": 1100,
-		"currency_id": "ARS",
+		"currency_id": "[FAKER][CURRENCY][ACRONYM]",
 		"repetitions": 12,
     "billing_day": 10,
     "billing_day_proportional": false,
