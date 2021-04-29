@@ -102,7 +102,7 @@ curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPRO
 }'
 ```
 
-### Fecha de facturación
+## Fecha de facturación
 
 Si tienes una suscripción mensual, puedes establecer un día fijo del mes para recibir los cobros de una suscripción mensual. 
 
