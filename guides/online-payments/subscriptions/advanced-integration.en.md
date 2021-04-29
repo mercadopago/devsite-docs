@@ -111,7 +111,7 @@ By setting a billing date, you can choose whether or not to charge a proportiona
 
 > NOTE
 > 
-> Nota
+> Note
 > 
 > Just as an example, the codes below display the 10th as billing date. Any day between __1 and 28__ can be selected, using the __billing_day__ parameter.
 
