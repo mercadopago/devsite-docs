@@ -39,15 +39,14 @@ In order to receive payments with QR, you can **print it and paste it in a visib
 ## Integration Types
 
 | Type | Description |
-| ----------------- | ----------------- |
+| --- | --- |
 | QR attended model | Integration model in which the cashier's Point oOf Sale system posts an order to a QR. The customer views and pays the order in the App.  |
-|QR dynamic model  | Integration model that generates a QR per transaction. Used for ticket QR models.  |
+| QR dynamic model  | Integration model that generates a QR per transaction. Used for ticket QR models.  |
 
 Based on your business model, you can choose one of these options to offer your customers a smooth shopping experience at your physical stores.
 
 ---
 ### Next steps
-
 
 > LEFT_BUTTON_REQUIRED_EN
 >

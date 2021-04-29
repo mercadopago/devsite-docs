@@ -47,8 +47,8 @@ Para recibir pagos con QR en tu negocio **puedes imprimirlo y pegarlo en un luga
 En base a tu modelo de negocio, puedes escoger alguna de las opciones para ofrecer a tus clientes una buena experiencia de compra en tus tiendas físicas.
 
 
+---
 ### Próximos pasos
-
 
 > LEFT_BUTTON_REQUIRED_ES
 >
