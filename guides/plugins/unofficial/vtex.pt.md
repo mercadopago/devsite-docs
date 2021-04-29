@@ -26,7 +26,7 @@ Você poderá utilizar a **afiliação de gateway [MercadoPagoV1](#bookmark_cria
 Para criar uma **afiliação de gateway de pagamento com o Mercado Pago**, siga os passos abaixo:
 
 1. No painel de administração de sua loja, acesse "Configurações" do módulo de pagamentos.
-2. Na aba Afiliações de Gateways, clique no botão "+".
+2. Na aba "Afiliações de Gateways", clique no botão "+".
 3. Clique no conector MercadoPagoV1.
 4. Preencha os campos correspondentes e clique em "Salvar".
 
@@ -59,19 +59,19 @@ E pronto! Sua afiliação com o Mercado Pago já está ativa!
 
 ### Criando afiliação de gateway MercadoPagoV2 com Pix
 
-### Requisito prévio
+#### Requisito prévio
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha uma chave Pix
 
 Para começar, você deve ter cadastrada uma chave Pix na conta do vendedor. Este dado é único, serve para identificar sua conta e permitirá que você utilize as funcionalidades do meio de pagamento.
 
-[Conheça como criar uma chave Pix](https://www.mercadopago.com.br/ajuda/17843)
+[Conheça como criar uma chave Pix](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required)
 
 > Considere que o registro da chave Pix pode levar alguns minutos.
 
 Para criar uma **afiliação de gateway de pagamento Pix com o MercadoPagoV2**, siga os passos abaixo:
 
 1. No painel de administração de sua loja, acesse "Configurações" do módulo de pagamentos.
-2. Na aba Afiliações de Gateways, clique no botão "+".
+2. Na aba "Afiliações de Gateways", clique no botão "+".
 3. Clique no conector MercadoPagoV1.
 4. Preencha os campos correspondentes e clique em "Salvar".
 
@@ -88,7 +88,7 @@ E pronto! Sua afiliação com o Mercado Pago já está ativa!
 >
 > Importante
 >
-> Lembre-se que o gateway [MercadoPagoV2](#bookmark_criando_afiliação_de_gateway_mercadopagov2_com_pix) por enquanto adiciona apenas o Pix como meio de pagamento. Para configurar outros métodos de pagamento, crie uma afiliação de gateway [MercadoPagoV1](#bookmark_criando_afiliação_de_gateway_mercadopagov1).
+> Lembre-se que o gateway MercadoPagoV2 por enquanto adiciona apenas o Pix como meio de pagamento. Para configurar outros métodos de pagamento, crie uma afiliação de gateway [MercadoPagoV1](#bookmark_criando_afiliação_de_gateway_mercadopagov1).
 
 ## Configurar condições de pagamento
 
@@ -136,9 +136,9 @@ Para **criar uma condição de pagamento Pix utilizando sua afiliação com o [M
 
 1. No painel de administração de sua loja, acesse "Configurações" do módulo de pagamentos.
 2. Na aba "Condições de pagamento", clique no botão "+".
-3. Na seção "Boleto", escolha "Boleto Bancário" para adicionar ao meio de pagamento.
+3. Na seção “Pagamento Instantâneo”, escolha o meio de pagamento Pix.
 4. Informe o "nome da regra" para facilitar a identificação e ative a condição de pagamento no campo "Status".
-5. Informe sua afiliação com o **[MercadoPagoV2](#bookmark_criando_afiliação_de_gateway_mercadopagov2_com_pix)**, no campo "Processar com a afiliação".
+5. Informe sua afiliação com o MercadoPagoV2, no campo "Processar com a afiliação".
 6. Clique em "Salvar".
 <p>&nbsp;</p>
 
@@ -146,7 +146,7 @@ Para **criar uma condição de pagamento Pix utilizando sua afiliação com o [M
 
 ### Condição de pagamento Checkout Pro
 
-O [Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/introduction) é a integração que te permite cobrar através do Mercado Pago, contando com as meios de pagamentos como Pix, boleto parcelado, débito virtual da Caixa e carteira digital do Mercado Pago.
+O [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction) é a integração que te permite cobrar através do Mercado Pago, contando com as meios de pagamentos como Pix, boleto parcelado, débito virtual da Caixa e carteira digital do Mercado Pago.
 
 #### Configuração do meio de pagamento Mercado Pago
 
@@ -200,11 +200,11 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 >
 > Importante
 >
-> Caso as condições de pagamento MercadoPagoPro e MercadoPagoWallet não estiverem disponíveis para adicioná-las, certifique em sua loja de aplicativos da VTEX que o App Mercado Pago Payment APP esteja instalado ou solicite a instalação pela equipe VTEX sob demanda através de ticket no [Support VTEX](https://support.vtex.com/). <br>
+> Caso as condições de pagamento MercadoPagoPro e MercadoPagoWallet não estiverem disponíveis para adicioná-las, certifique em sua loja de aplicativos da VTEX que o App Mercado Pago Payment APP esteja instalado ou solicite a instalação pela equipe VTEX sob demanda através de ticket no [Support VTEX](https://support.vtex.com). <br>
 
 ## Configurando o parcelamento em sua conta Mercado Pago
 
-1. Acesse sua [conta Mercado Pago](https://www.mercadopago.com.br/business/) e clique em "Seu negócio"
+1. Acesse sua [conta Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/business) e clique em "Seu negócio"
 2. Clique na opção "Configurações", navegue até o campo "Oferecer parcelas sem acréscimo" e clique em "Ativar".
 3. Escolha "Quantas parcelas você quer oferecer?" e clique em "Ativar" para confirmar as alterações.
 <p>&nbsp;</p>
