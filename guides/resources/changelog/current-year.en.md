@@ -20,6 +20,22 @@ Use the dynamic model to integrate the QR Code to include the amount to be colle
 
 [Go to dynamic model documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/qr-dynamic/introduction)
 
+----[mlb]----
+### April 29th
+
+> CHANGELOG
+>
+> New version of MercadoPagoV2 gateway for VTEX
+>
+> NEWS: FEATURE
+>
+> Product: VTEX
+
+Now you can include Pix as a payment method with the gateway MercadoPagoV2 for VTEX.
+
+[Go to VTEX documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/#bookmark_criando_afiliação_de_gateway_mercadopagov2)
+------------
+
 ### April 22nd
 
 > CHANGELOG
@@ -40,7 +56,8 @@ We have released the new version 3.8.3 for Magento 2.
 >
 > [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.3) for further details regarding this release.
 
-
+> CHANGELOG
+>
 > New WooCommerce plugin version
 >
 > NEW_VERSION: NEW VERSION
@@ -56,22 +73,6 @@ We have released the new version 5.1.1 for WooCommerce.
 > GitHub
 >
 > [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.1.1) for further details regarding this release.
-
-----[mlb]----
-### April 29th
-
-> CHANGELOG
->
-> New version of MercadoPagoV2 gateway for VTEX
->
-> NEWS: FEATURE
->
-> Product: VTEX
-
-Now you can include Pix as a payment method with the gateway MercadoPagoV2 for VTEX.
-
-[Go to VTEX documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/#bookmark_criando_afiliação_de_gateway_mercadopagov2)
-------------
 
 ### April 20th
 

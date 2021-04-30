@@ -25,4 +25,4 @@ The main characteristics are:
 >
 > Learn about the step by step for model integration.
 >
-> [How to integrate dynamic model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/qr-code/qr-dynamic/integrations)
+> [How to integrate dynamic model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/qr-dynamic/integrations)
