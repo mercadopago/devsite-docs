@@ -136,7 +136,7 @@ Para criar uma **condição de pagamento boleto bancário utilizando sua afilia�
 1. No painel de administração de sua loja, acesse "Configurações" do módulo de pagamentos.
 2. Na aba "Condições de pagamento", clique no botão "+".
 3. Na seção "Boleto", escolha "Boleto Bancário" para adicionar ao meio de pagamento.
-4. Informe o "nome da regra" para facilitar a identificação e ative a condição de pagamento no campo "Status".
+4. Informe o "Nome da regra" para facilitar a identificação e ative a condição de pagamento no campo "Status".
 5. Informe sua afiliação com o MercadoPagoV1, no campo "Processar com a afiliação".
 6. Clique em "Salvar".
 <p>&nbsp;</p>
@@ -150,7 +150,7 @@ Para **criar uma condição de pagamento Pix utilizando sua afiliação com o [M
 1. No painel de administração de sua loja, acesse "Configurações" do módulo de pagamentos.
 2. Na aba "Condições de pagamento", clique no botão "+".
 3. Na seção “Pagamento Instantâneo”, escolha o meio de pagamento Pix.
-4. Informe o "nome da regra" para facilitar a identificação e ative a condição de pagamento no campo "Status".
+4. Informe o "Nome da regra" para facilitar a identificação e ative a condição de pagamento no campo "Status".
 5. Informe sua afiliação com o MercadoPagoV2, no campo "Processar com a afiliação".
 6. Clique em "Salvar".
 <p>&nbsp;</p>

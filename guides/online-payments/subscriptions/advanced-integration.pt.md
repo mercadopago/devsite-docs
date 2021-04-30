@@ -117,7 +117,7 @@ Ao configurar uma data de cobrança, você pode escolher entre cobrar ou não um
 ```json
 {
 "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]",
-	"reason": "Plano Pase Gym Gold",
+	"reason": "Plano Gym Gold",
 	"auto_recurring": {
 		"frequency": "1",
 		"frequency_type": "months",
@@ -141,7 +141,7 @@ Para não cobrar o pagamento proporcional, faça a seguinte chamada:
 ```json
 {
 	"back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]",
-	"reason": "Plano Pase Gym Gold",
+	"reason": "Plano Gym Gold",
 	"auto_recurring": {
 	  "frequency": "1",
 		"frequency_type": "months",

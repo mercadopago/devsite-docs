@@ -1,15 +1,3 @@
----
-sites_supported:
-- mla
-- mpe
-- mco
-- mlu
-- mlm
-- mlc
-- mlb
----
-
-
 # Test your integration
 
 ## How to test your integration?
@@ -88,4 +76,4 @@ Afterwards, Mercado Pago will be able to audit your website, app or Point of Sal
 ## Why is this process needed?
 
 By following these steps, we can guarantee security for your clients’ data and achieve the best buying experience, helping maximizing conversion. 
-Breaching these norms can cause being unable to process payments and even legal actions, as stated in our [Terms & Conditions](https://www.mercadopago.com.ar/ayuda/terminos-y-condiciones_299).
+Breaching these norms can cause being unable to process payments and even legal actions, as stated in our [Terms and Conditions](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/terminos-y-condiciones_299).

@@ -37,7 +37,7 @@ curl -X POST \
        }
    ],
    "title": "Compra en Librería",
-   "description": "Compra + Retiro",
+   "description": "Compra y retiro",
    "sponsor": {
        "id": 446566691
    },
@@ -102,7 +102,7 @@ curl -X PUT \
        }
    ],
    "title": "Compra en Librería",
-   "description": "Compra + Retiro",
+   "description": "Compra y retiro",
    "sponsor": {
        "id": 446566691
    },

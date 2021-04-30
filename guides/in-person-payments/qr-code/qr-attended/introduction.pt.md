@@ -1,6 +1,6 @@
 # Pagamentos QR modelo atendido
 
-## O que é QR por modelo atendido?
+## O que é QR modelo atendido?
 
 Depois de ter recebido o pedido de um cliente, **este modelo permite que o operador associe um pedido ao caixa** para a cobrança. É recomendado para lojas de produtos, restaurantes de fast-food, entre outros.
 
@@ -22,4 +22,4 @@ As características principais são:
 >
 > Conheça passo a passo como integrar este modelo.
 >
-> [Integrar o modelo QR atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/qr-code/qr-attended/integrations)
+> [Integrar o modelo QR atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/qr-attended/integrations)

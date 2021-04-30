@@ -38,7 +38,7 @@ curl -X POST \
        }
    ],
    "title": "Compra em Livraria",
-   "description": "Compra + Retiro",
+   "description": "Compra e retiro",
    "sponsor": {
        "id": 446566691
    },
@@ -103,7 +103,7 @@ curl -X PUT \
        }
    ],
    "title": "Compra em Livraria",
-   "description": "Compra + Retiro",
+   "description": "Compra e retiro",
    "sponsor": {
        "id": 446566691
    },
@@ -121,7 +121,7 @@ Implementa IPN de `merchant_order` junto com uma busca do pedido por `external_r
 
 
 ---
-### Próximos pasos
+### Próximos passos
 
 
 > LEFT_BUTTON_REQUIRED_PT

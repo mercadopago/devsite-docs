@@ -37,7 +37,7 @@ curl -X POST \
        }
    ],
    "title": "Purchase in Bookstore",
-   "description": "Purchase + shipping",
+   "description": "Purchase and shipping",
    "sponsor": {
        "id": 446566691
    },
@@ -103,7 +103,7 @@ curl -X PUT \
        }
    ],
    "title": "Purchase in Bookstore",
-   "description": "Purchase + shipping",
+   "description": "Purchase and shipping",
    "sponsor": {
        "id": 446566691
    },

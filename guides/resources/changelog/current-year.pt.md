@@ -56,7 +56,8 @@ Lançamos a nova versão 3.8.3 para Magento 2.
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.3).
 
-
+> CHANGELOG
+>
 > Nova versão WooCommerce
 >
 > NEW_VERSION: NOVA VERSÃO

@@ -120,7 +120,7 @@ By setting a billing date, you can choose whether or not to charge a proportiona
 ```json
 {
 "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]",
-	"reason": "Plano Pase Gym Gold",
+	"reason": "Plan Gym Gold",
 	"auto_recurring": {
 		"frequency": "1",
 		"frequency_type": "months",
@@ -144,7 +144,7 @@ To not charge the proportional payment:
 ```json
 {
 	"back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]",
-	"reason": "Plano Pase Gym Gold",
+	"reason": "Plan Gym Gold",
 	"auto_recurring": {
 	  "frequency": "1",
 		"frequency_type": "months",
@@ -161,7 +161,7 @@ To not charge the proportional payment:
 }
 ```
 
-> To get more information about the available fields, view the [API references](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
+> To get more information about the available fields, view the [API references](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/subscriptions/_preapproval/post).
 
 
 ------------

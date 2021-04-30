@@ -1,6 +1,6 @@
 # QR attended model
 
-## What’s QR attended model?
+## What is the QR attended model?
 
 After taking a client’s order, this **model allows an operator to connect the order with a Point of Sale** to complete the transaction.
 This system is recommended for retail and restaurants, among others.
@@ -23,4 +23,4 @@ The main characteristics are:
 >
 > Learn to integrate this model step by step.
 >
-> [How to Integrate attended model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/qr-code/qr-attended/integrations)
+> [How to Integrate attended model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/qr-attended/integrations)

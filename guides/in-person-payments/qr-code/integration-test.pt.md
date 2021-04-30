@@ -1,14 +1,3 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
-  - mlb
----
-
 # Teste sua integração
 
 ## Como testar sua integração? 
@@ -85,4 +74,4 @@ Posteriormente, Mercado Pago poderá auditar seu website, app ou Software de Pon
 
 ## Por que este processo é necessário? 
 
-Porque assim podemos garantir a segurança dos dados de seus clientes e conseguir a melhor experiência de compra, que contribua para maximizar a conversão dos pagamentos que receba. O inadimplemento destas normas pode acarretar desde o não processamento de pagamentos até ações legais conforme o estabelecido nos [termos e condições](https://www.mercadopago.com.br/ajuda/termos-e-condicoes_300). 
+Porque assim podemos garantir a segurança dos dados de seus clientes e conseguir a melhor experiência de compra, que contribua para maximizar a conversão dos pagamentos que receba. O inadimplemento destas normas pode acarretar desde o não processamento de pagamentos até ações legais conforme o estabelecido nos [Termos e Condições](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/termos-e-condicoes_300). 
