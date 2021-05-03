@@ -3401,7 +3401,7 @@ After [capturing the data for payment](#bookmark_data_capture_for_payment) in th
 
  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
- $payment = new MercadoPago\Payment();sssss
+ $payment = new MercadoPago\Payment();
  $payment->transaction_amount = 100;
  $payment->description = "Product Title";
  $payment->payment_method_id = "pix";
