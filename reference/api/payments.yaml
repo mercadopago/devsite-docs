@@ -382,14 +382,11 @@ paths:
                   payer:
                     type: object
                     properties:
-                      first_name:
+                      id:
                         type: string
-                        example: Test
-                        description: first_name
-                      last_name:
-                        type: string
-                        example: Test
-                        description: last_name
+                        format: nullable
+                        example: 123
+                        description: id
                       email:
                         type: string
                         example: test_user_80507629@testuser.com
@@ -406,29 +403,8 @@ paths:
                             example: CPF
                             description: type
                         description: identification
-                      phone:
-                        type: object
-                        properties:
-                          area_code:
-                            type: string
-                            example: 11
-                            description: area_code
-                          number:
-                            type: string
-                            example: 987654321
-                            description: number
-                          extension:
-                            type: string
-                            description: extension
-                        description: phone
                       type:
                         $ref: '#/components/schemas/payer_type'
-                      entity_type:
-                        $ref: '#/components/schemas/entity_type'
-                      id:
-                        type: string
-                        format: nullable
-                        description: id
                     description: payer
                   metadata:
                     type: object
@@ -476,42 +452,6 @@ paths:
                       payer:
                         type: object
                         properties:
-                          phone:
-                            type: object
-                            properties:
-                              area_code:
-                                type: string
-                                example: 11
-                                description: area_code
-                              number:
-                                type: string
-                                example: 987654321
-                                description: number
-                            description: phone
-                          address:
-                            type: object
-                            properties:
-                              zip_code:
-                                type: string
-                                example: 06233-200
-                                description: zip_code
-                              street_name:
-                                type: string
-                                example: Av das Nacoes Unidas
-                                description: street_name
-                              street_number:
-                                type: string
-                                example: 3003
-                                description: street_number
-                            description: address
-                          first_name:
-                            type: string
-                            example: Nome
-                            description: first_name
-                          last_name:
-                            type: string
-                            example: Sobrenome
-                            description: last_name
                           registration_date:
                             type: string
                             example: 2019-01-01T15:01:01.000Z
@@ -977,11 +917,9 @@ paths:
                   payer:
                     type: object
                     properties:
-                      type:
-                        $ref: '#/components/schemas/payer_type'
                       id:
                         type: string
-                        example: 1
+                        example: 123
                         description: id
                       email:
                         type: string
@@ -999,32 +937,8 @@ paths:
                             example: 12345678
                             description: number
                         description: identification
-                      phone:
-                        type: object
-                        properties:
-                          area_code:
-                            type: string
-                            format: nullable
-                            description: area_code
-                          number:
-                            type: string
-                            example: 11123456789
-                            description: number
-                          extension:
-                            type: string
-                            format: nullable
-                            description: extension
-                        description: phone
-                      first_name:
-                        type: string
-                        example: Name
-                        description: first_name
-                      last_name:
-                        type: string
-                        example: LastName
-                        description: last_name
-                      entity_type:
-                        $ref: '#/components/schemas/entity_type'
+                      type:
+                        $ref: '#/components/schemas/payer_type'
                     description: payer
                   metadata:
                     type: object
@@ -1737,11 +1651,9 @@ paths:
                           payer:
                             type: object
                             properties:
-                              type:
-                                $ref: '#/components/schemas/payer_type'
                               id:
                                 type: string
-                                example: 1
+                                example: 123
                                 description: id
                               email:
                                 type: string
@@ -1759,32 +1671,8 @@ paths:
                                     example: 12345678
                                     description: number
                                 description: identification
-                              phone:
-                                type: object
-                                properties:
-                                  area_code:
-                                    type: string
-                                    format: nullable
-                                    description: area_code
-                                  number:
-                                    type: string
-                                    example: 11123456789
-                                    description: number
-                                  extension:
-                                    type: string
-                                    format: nullable
-                                    description: extension
-                                description: phone
-                              first_name:
-                                type: string
-                                example: Name
-                                description: first_name
-                              last_name:
-                                type: string
-                                example: LastName
-                                description: last_name
-                              entity_type:
-                                $ref: '#/components/schemas/entity_type'
+                              type:
+                                $ref: '#/components/schemas/payer_type'
                             description: payer
                           metadata:
                             type: object

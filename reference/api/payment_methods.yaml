@@ -5,7 +5,7 @@ info:
   title: Mercado Pago API Reference
   version: '1.0'
 paths:
-  /payment_methods:
+  /v1/payment_methods:
     get:
       tags:
         - $ref: '#/tags/checkout-pro'
