@@ -3417,7 +3417,7 @@ Após [capturar os dados](#bookmark_capture_os_dados_para_pagamento) com o formu
 
  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
- $payment = new MercadoPago\Payment();sssss
+ $payment = new MercadoPago\Payment();
  $payment->transaction_amount = 100;
  $payment->description = "Título do produto";
  $payment->payment_method_id = "pix";
