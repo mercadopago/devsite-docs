@@ -19,7 +19,7 @@ Execute the next API call to create an order. The response will include the data
 
 ```curl
 curl -X POST \
- https://api.mercadopago.com/instore/orders/qr/seller/collector/USER_ID/pos/EXTERNAL_POS_ID/qrs \
+ https://api.mercadopago.com/instore/orders/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/qrs \
   -H 'Authorization: Bearer ACCESS_TOKEN' \
  -d '{
    "external_reference": "order-id-1234",
@@ -85,7 +85,7 @@ Execute the next API call to create an order and assign the Point of Sale. The r
 
 ```curl
 curl -X PUT \
- https://api.mercadopago.com/instore/orders/qr/seller/collector/USER_ID/pos/EXTERNAL_POS_ID/qrs \
+ https://api.mercadopago.com/instore/orders/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/qrs \
   -H 'Authorization: Bearer ACCESS_TOKEN' \
  -d '{
    "external_reference": "order-id-1234",

@@ -20,7 +20,7 @@ Execute a seguinte chamada para a API a fim de gerar uma ordem. Na resposta, voc
 
 ```curl
 curl -X POST \
- https://api.mercadopago.com/instore/orders/qr/seller/collector/USER_ID/pos/EXTERNAL_POS_ID/qrs \
+ https://api.mercadopago.com/instore/orders/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/qrs \
   -H 'Authorization: Bearer ACCESS_TOKEN' \
  -d '{
    "external_reference": "order-id-1234",
@@ -85,7 +85,7 @@ Execute a seguinte chamada para a API a fim de gerar uma ordem e a atribuição 
 
 ```curl
 curl -X PUT \
- https://api.mercadopago.com/instore/orders/qr/seller/collector/USER_ID/pos/EXTERNAL_POS_ID/qrs \
+ https://api.mercadopago.com/instore/orders/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/qrs \
   -H 'Authorization: Bearer ACCESS_TOKEN' \
  -d '{
    "external_reference": "order-id-1234",

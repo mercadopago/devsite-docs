@@ -206,7 +206,7 @@ paths:
                       type: number
                       description: Latitude.
                       example: -32.8897322
-                    logitude:
+                    longitude:
                       type: number
                       description: Longitude.
                       example: -68.8443275
@@ -557,11 +557,11 @@ paths:
                       description: State.
                       example: Capital Federal
                     latitude:
-                      type: string
+                      type: number
                       description: Latitude.
                       example: -32.8897322
-                    logitude:
-                      type: string
+                    longitude:
+                      type: number
                       description: Longitude.
                       example: -68.8443275
                     reference:
