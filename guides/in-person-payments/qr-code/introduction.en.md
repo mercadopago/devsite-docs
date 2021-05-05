@@ -34,7 +34,7 @@ A QR is an **unique code linked to your Mercado Pago account**. It’ll allow yo
 * Allows to charge with the main [payment methods](https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264) in your country. 
 * **Lowest transaction fees** in the market.
 * Offers a **secure buying experience from any mobile device** with Mercado Pago and Mercado Libre apps.
-* Accept payments via **PIX**, [more information](https://www.mercadopago.com.br/pix/).
+* Accept payments by **PIX**, [more information](https://www.mercadopago.com.br/pix/).
 
 ## How does it work?
 
