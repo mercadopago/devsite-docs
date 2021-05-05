@@ -1,7 +1,3 @@
----
-indexable: false
----
-
 # How to generate QR codes
 
 Depending on your business needs, you have different options when it comes to creating QR codes. You can also combine methods to offer your client a unique buying experience in your physical store.
