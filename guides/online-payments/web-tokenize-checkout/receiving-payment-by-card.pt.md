@@ -28,7 +28,7 @@ Quando você tiver adicionado o código ao seu site, será adicionado um botão 
 </html>
 ```
 
-1. Configure as credenciais do SDK para seu uso e inicializa seu checkout com o identificador do elemento onde deverá ser apresentado o botão de pagamento:
+2. Configure as credenciais do SDK para seu uso e inicializa seu checkout com o identificador do elemento onde deverá ser apresentado o botão de pagamento:
 
 ```html
 <script>
