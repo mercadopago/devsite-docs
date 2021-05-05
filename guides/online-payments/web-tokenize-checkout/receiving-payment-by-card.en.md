@@ -28,7 +28,7 @@ The following code will insert a payment button. When the buyer presses the butt
 </html>
 ```
 
-2. Add the SDK credentials to enable its use and initialize the checkout using the ID from the preference created earlier and the ID or selector for the element where the payment button should be displayed:
+1. Add the SDK credentials to enable its use and initialize the checkout using the ID or selector for the element where the payment button should be displayed:
 
 ```html
 <script>
@@ -39,7 +39,7 @@ const mp = new MercadoPago('PUBLIC_KEY', {locale: 'es-AR'});
 mp.checkout({
   tokenizer: {
     totalAmount: 4000,
-    backUrl: 'https://www.my-store.com/process'
+    backUrl: 'https://www.my-store.com/process-payment'
   },
  render: {
     container: '.tokenizer-container', // Indicates where the payment button is going to be rendered
@@ -61,7 +61,7 @@ You can find the Public Key in the [Credentials section]([FAKER][CREDENTIALS][UR
 
 ### Step 3: Get the data
 
-*Web Tokenize Checkout* will do a `POST` to the URL that you have defined in the `action` attribute of the HTML code snippet (In the example: **/process-payment**) with certain data. You must use this information to make the payment.
+*Web Tokenize Checkout* will do a `POST` to the URL that you have defined in the `backUrl` attribute of the HTML code snippet (In the example: **/process-payment**) with certain data. You must use this information to make the payment.
 
 #### Data:
 

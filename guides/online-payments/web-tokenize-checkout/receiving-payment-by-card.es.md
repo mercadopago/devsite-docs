@@ -29,7 +29,7 @@ Una vez hayas sumado el código a tu sitio, se agregará un botón de pago que m
 </html>
 ```
 
-2. Configura las credenciales de la SDK para su uso e inicializa tu checkout con el ID de la preferencia creada previamente y el identificador del elemento donde deberá mostrarse el botón de pago:
+1. Configura las credenciales de la SDK para su uso e inicializa tu checkout con el identificador del elemento donde deberá mostrarse el botón de pago:
 
 ```html
 <script>
@@ -40,7 +40,7 @@ const mp = new MercadoPago('PUBLIC_KEY', {locale: 'es-AR'});
 mp.checkout({
   tokenizer: {
     totalAmount: 4000,
-    backUrl: 'https://www.mi-sitio.com/process'
+    backUrl: 'https://www.mi-sitio.com/procesar-pago'
   },
  render: {
     container: '.tokenizer-container', // Indica dónde se mostrará el botón
@@ -62,7 +62,7 @@ Puedes encontrar tu Public key en la [sección de credenciales]([FAKER][CREDENTI
 
 ### Paso 3: Obtener los datos
 
-El *Web Tokenize Checkout* hará un `POST` a la URL que hayas definido en el atributo `action` del fragmento de código HTML (En el ejemplo: **/procesar-pago**) con ciertos datos. Debes utilizar dichos datos para realizar el pago.
+El *Web Tokenize Checkout* hará un `POST` a la URL que hayas definido en el atributo `backUrl` del fragmento de código HTML (En el ejemplo: **/procesar-pago**) con ciertos datos. Debes utilizar dichos datos para realizar el pago.
 
 #### Los datos son:
 
