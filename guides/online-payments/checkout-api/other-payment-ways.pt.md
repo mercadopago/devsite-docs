@@ -3401,7 +3401,7 @@ Ofereça a opção de receber pagamentos no instante com Pix de qualquer banco o
 
 Para começar, você deve ter cadastrada uma chave Pix na conta do vendedor. Este dado é único, serve para identificar sua conta e permitirá que você utilize as funcionalidades do meio de pagamento.
 
-[Conheça como criar uma chave Pix](https://www.mercadopago.com.br/ajuda/17843)
+[Conheça como criar uma chave Pix](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required)
 
 > Considere que o registro da chave Pix pode levar alguns minutos.
 
@@ -3635,7 +3635,7 @@ A resposta mostrará o status pendente do pagamento e todas as informações que
 >
 > Importante
 >
-> Lembre-se de que, para gerar pagamentos, você deve primeiro [criar uma chave Pix](https://www.mercadopago.com.br/ajuda/17843).
+> Lembre-se de que, para gerar pagamentos, você deve primeiro [criar uma chave Pix](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required).
 
 
 O valor `transaction_data` oferecerá os dados para disponibilizar a opção de pagamento através de um código QR. Você vai encontrar os atributos abaixo:
