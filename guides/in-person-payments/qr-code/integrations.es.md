@@ -1,7 +1,3 @@
----
-  - indexable: false
----
-
 # ¿Cómo generar el QR?
 
 Según lo que tu negocio necesite, tienes distintas opciones para generar tu QR. También puedes combinarlas para oferecer a tus clientes la mejor experiencia de compra en tus tiendas físicas.
