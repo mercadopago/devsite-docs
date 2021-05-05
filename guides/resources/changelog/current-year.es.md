@@ -26,6 +26,8 @@ Lanzamos la nueva versión 3.8.4 para Magento 2.
 >
 > Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.4).
 
+---
+
 ## Abril 2021
 
 ### 30 de abril
