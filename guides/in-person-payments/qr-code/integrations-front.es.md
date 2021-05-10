@@ -1,15 +1,3 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
-  - mlb
----
-
-
 # Generar QR desde el panel de Mercado Pago
 
 ## ¿Cómo hago un cobro con QR?

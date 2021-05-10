@@ -1,15 +1,3 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
-  - mlb
----
-
-
 # Prueba tu integración 
 
 ## ¿Cómo probar tu integración?
@@ -89,4 +77,4 @@ Luego, Mercado Pago podrá auditar tu sitio, app o Software de Punto de Venta y 
 ## ¿Por qué es necesario este proceso?
 
 Porque así podemos garantizar la seguridad de los datos de tus clientes y lograr la mejor experiencia de compra, que ayude a maximizar la conversión de los pagos que recibas.
-El incumplimiento de estas normas puede implicar desde el no procesamiento de pagos, hasta acciones legales de acuerdo a lo establecido en los [términos y condiciones](https://www.mercadopago.com.ar/ayuda/terminos-y-condiciones_299).
+El incumplimiento de estas normas puede implicar desde el no procesamiento de pagos, hasta acciones legales de acuerdo a lo establecido en los [Términos y Condiciones](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/terminos-y-condiciones_299).

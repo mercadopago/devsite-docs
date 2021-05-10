@@ -10,7 +10,6 @@ paths:
       tags:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/marketplace'
-        - $ref: '#/tags/qr-code'
       summary: Create an order
       description: Generate an order to associate it with the payment preference and obtain the necessary URL to start the payment flow
       requestBody:
@@ -285,105 +284,105 @@ paths:
         - name: status
           in: query
           description: Merchant order state.
-          required: true
+          required: false
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: preference_id
           in: query
           description: Payment preference identifier associated to the merchant order.
-          required: true
+          required: false
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: application_id
           in: query
           description: application identifier.
-          required: true
+          required: false
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: payer_id
           in: query
           description: Buyer's Id
-          required: true
+          required: false
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: sponsor_id
           in: query
           description: Sponsor ID in Mercado Pago.
-          required: true
+          required: false
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: external_reference
           in: query
           description: Reference you can synchronize with your payment system.
-          required: true
+          required: false
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: site_id
           in: query
           description: Country identifier that merchant order belongs to.
-          required: true
+          required: false
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: marketplace
           in: query
           description: 'Origin of the payment. Default value: ''NONE'''
-          required: true
+          required: false
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: date_created_from
           in: query
           description: Order's creation date (start search)
-          required: true
+          required: false
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: date_created_to
           in: query
           description: Order's creation date (end search)
-          required: true
+          required: false
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: last_updated_from
           in: query
           description: Order's last update date (start search)
-          required: true
+          required: false
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: last_updated_to
           in: query
           description: Order's last update date (end search)
-          required: true
+          required: false
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: items
           in: query
           description: items information.
-          required: true
+          required: false
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: limit
           in: query
           description: Qtd of max itens to return
-          required: true
+          required: false
           schema:
             type: string
             example: 12123adfasdf123u4u
         - name: offset
           in: query
           description: Qtd of itens to 'offset'
-          required: true
+          required: false
           schema:
             type: string
             example: 12123adfasdf123u4u
@@ -1283,7 +1282,6 @@ paths:
       tags:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/marketplace'
-        - $ref: '#/tags/qr-code'
       summary: Update an order
       description: Renew the details of a payment. Indicate the ID of the order and send the parameters with the information you want to update
       parameters:

@@ -123,7 +123,7 @@ Expected response:
 
 ## 3. Integrate the checkout
 
-To collect on behalf of your sellers you must integrate the [Checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction), generating the payment preferences with the Access Token of each seller for your application.
+To collect on behalf of your sellers you must integrate the [Checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction), generating the payment preferences with the Access Token you obtained by linking each seller to your application.
 
 If you want to charge a fee for each payment processed by your application on behalf of your seller, simply add that amount to the marketplace_fee  parameter when creating the preference:
 

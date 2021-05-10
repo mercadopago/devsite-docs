@@ -4,8 +4,99 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ---
 
+## May 2021
+
+### May 3rd
+
+> CHANGELOG
+>
+> New Magento 2 plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: MAGENTO 2
+
+We have released the new version 3.8.4 for Magento 2.
+
+[Go to Magento 2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.4) for further details regarding this release.
+
+---
+
 ## April 2021
 
+### April 30th
+
+> CHANGELOG
+>
+> New dynamic model for QR Code integration
+>
+> NEWS: NEW DOCUMENTATION
+>
+> Product: QR CODE
+
+Use the dynamic model to integrate the QR Code to include the amount to be collected directly in the code. This model can be included in payment tickets and desk services, among others.
+
+[Go to dynamic model documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/qr-dynamic/introduction)
+
+----[mlb]----
+### April 29th
+
+> CHANGELOG
+>
+> New version of MercadoPagoV2 gateway for VTEX
+>
+> NEWS: FEATURE
+>
+> Product: VTEX
+
+Now you can include Pix as a payment method with the gateway MercadoPagoV2 for VTEX.
+
+[Go to VTEX documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/#bookmark_criando_afiliação_de_gateway_mercadopagov2)
+------------
+
+### April 22nd
+
+> CHANGELOG
+>
+> New Magento 2 plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: MAGENTO 2
+
+We have released the new version 3.8.3 for Magento 2.
+
+[Go to Magento 2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.3) for further details regarding this release.
+
+> CHANGELOG
+>
+> New WooCommerce plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+
+We have released the new version 5.1.1 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.1.1) for further details regarding this release.
 
 ### April 20th
 
@@ -19,7 +110,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 Integrate Checkout Pro and Web Tokenize Checkout in a simpler way and from a single source using the new MercadoPago.js V2 SDK. Now you can open the checkout without the need of a payment button and use a more fitting option for your website instead.
 
-Go to [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/integration) o [Web Tokenize Checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/web-tokenize-checkout/introduction) documentation.
+Go to [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/integration) or [Web Tokenize Checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/web-tokenize-checkout/introduction) documentation.
 
 ### April 9th
 

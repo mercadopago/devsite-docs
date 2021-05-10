@@ -1,15 +1,3 @@
----
-sites_supported:
-- mla
-- mpe
-- mco
-- mlu
-- mlm
-- mlc
-- mlb
----
-
-
 # Generation QR by the Mercado Pago panel
 
 ## How to charge with QR

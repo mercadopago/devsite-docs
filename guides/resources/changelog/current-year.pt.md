@@ -4,7 +4,100 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
+## Maio 2021
+
+### 3 de maio
+
+> CHANGELOG
+>
+> Nova versão Magento 2
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MAGENTO 2
+
+Lançamos a nova versão 3.8.4 para Magento 2.
+
+[Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.4).
+
+---
+
 ## Abril 2021
+
+### 30 de abril
+
+> CHANGELOG
+>
+> Novo modelo dinâmico para integrar Código QR
+>
+> NEWS: NOVA DOCUMENTAÇÃO
+>
+> Product: CÓDIGO QR
+
+Use o modelo dinâmico para integrar Código QR que permite incluir o montante a cobrar diretamente no código. Você pode usá-lo para incluir nos tíquetes de pagamento, serviços de mesa, entre outros.
+
+[Ir para a documentação de modelo dinâmico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/qr-dynamic/introduction)
+
+----[mlb]----
+### 29 de abril
+
+> CHANGELOG
+>
+> Nova versão do gateway MercadoPagoV2 para VTEX
+>
+> NEWS: FEATURE
+>
+> Product: VTEX
+
+Agora você pode incluir Pix como meio de pagamento com o gateway MercadoPagoV2 para VTEX.
+
+[Ir para a documentação VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/#bookmark_criando_afiliação_de_gateway_mercadopagov2)
+------------
+
+### 22 de abril
+
+> CHANGELOG
+>
+> Nova versão Magento 2
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MAGENTO 2
+
+Lançamos a nova versão 3.8.3 para Magento 2.
+
+[Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.3).
+
+> CHANGELOG
+>
+> Nova versão WooCommerce
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: WOOCOMMERCE
+
+Lançamos a nova versão 5.1.1 para WooCommerce.
+
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.1.1).
+
 
 ### 20 de abril
 

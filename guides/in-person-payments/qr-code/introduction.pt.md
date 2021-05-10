@@ -1,15 +1,3 @@
----
-sites_supported:
-- mla
-- mpe
-- mco
-- mlu
-- mlm
-- mlc
-- mlb
----
-
-
 # O que é o código QR?
 
 O QR é um **código único vinculado à sua conta de Mercado Pago**, que lhe permite receber pagamentos de uma forma simples, rápida e segura. 
@@ -34,6 +22,9 @@ O QR é um **código único vinculado à sua conta de Mercado Pago**, que lhe pe
 * Permite receber com os principais [meios de pagamento](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_264) de seu país.
 * Cobranças com **o custo mais baixo do mercado**.
 * Oferecer uma **experiência de compra segura desde qualquer dispositivo móvel** com o app de Mercado Pago ou Mercado Livre.
+----[mlb]----
+* [Aceitar pagamentos com Pix](https://www.mercadopago.com.br/pix) para começar a receber dinheiro no instante, todos os dias e de qualquer banco ou carteira.
+------------
 
 ## Como funciona?
 
@@ -49,26 +40,18 @@ Para receber pagamentos com QR em seu negócio, **você pode imprimi-lo e colá-
 >
 > Caso seu modelo não necessite de integração com sistema de ponto de venda, você pode consultar todas as informações disponíveis em [geração de QR pelo painel do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/integrations-front).
 
-## Características do modelo
+## Tipos de integração
 
-As características principais são:
+| Tipo | Descrição |
+| --- | --- |
+| QR modelo atendido | Modelo de integração em que o caixa publica uma ordem para um QR de seu próprio sistema de ponto de venda. O cliente visualiza a ordem do App e realiza o pagamento. |
+| QR modelo dinâmico | Modelo de integração em que é gerado um QR por transação. Usado para modelos de QR em tíquete. |
 
-- O operador sempre trabalha desde seu sistema de ponto de venda onde a modalidade de Receber com Mercado Pago foi inclusa. Dessa opção, envia-se uma ordem ao caixa associado. 
-- Para o cliente realizar o pagamento, é preciso associar um pedido ao caixa. 
-- O operador vê a cobrança impactada em seu sistema. 
 
-
----
-
-> NOTE
-> 
-> Nota
-> 
-> Esta documentação refere-se à nova versão do QR Code. Para ver a versão anterior, vá para a seção [Código QR antigo](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code-legacy/introduction).
+Dependendo do seu modelo de negócio, você pode escolher alguma das opções para oferecer aos seus clientes uma boa experiência de compra em suas lojas físicas.
 
 ---
 ### Próximos passos
-
 
 > LEFT_BUTTON_REQUIRED_PT
 >
