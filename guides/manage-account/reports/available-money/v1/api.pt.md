@@ -86,25 +86,19 @@ Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
 {
     "file_name_prefix": "bank-report-USER_ID",
     "include_withdrawal_at_end": false,
-    "scheduled": false,
+    "detailed": true,
+    "scheduled": true,
     "execute_after_withdrawal": true,
-    "separator": ",",
-    "frequency": {
-        "hour": 0,
-        "type": "monthly",
-        "value": 1
+    "v1": {
+        "language": null,
+        "generate_bank_report": false
     },
-    "columns": [
-        {
-            "key": "DATE"
-        },
-        {
-            "key": "SOURCE_ID"
-        },
-        {
-            "key": "EXTERNAL_REFERENCE"
-        }
-    ]
+    "extended": true,
+    "frequency": {
+        "hour": 3,
+        "type": "daily",
+        "value": {}
+    }
 }
 ```
 
@@ -122,16 +116,13 @@ curl -X POST \
     -d '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
+            "detailed": true,
             "execute_after_withdrawal": true,
+            "extended": true,
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
                 "value": 1
-            },
-            "columns": {
-                "key": "DATE",
-                "key": "SOURCE_ID",
-                "key": "EXTERNAL_REFERENCE"
             }
     }'
 ```
@@ -147,16 +138,13 @@ $headers = array(
 $data = '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
+            "detailed": true,
             "execute_after_withdrawal": true,
+            "extended": true,
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
                 "value": 1
-            },
-            "columns": {
-                "key": "DATE",
-                "key": "SOURCE_ID",
-                "key": "EXTERNAL_REFERENCE"
             }
     }';
 $response = Requests::post('https://api.mercadopago.com/v1/account/bank_report/config', $headers, $data);
@@ -176,16 +164,14 @@ connection.setDoOutput(true);
 String body = "{
                 \\"file_name_prefix\\": \\"bank-report-USER_ID\\",
                 \\"include_withdrawal_at_end\\": false,
+                \\"detailed\\": true,
                 \\"execute_after_withdrawal\\": true,
+                \\"extended\\": true,
                 \\"frequency\\": {
                     \\"hour\\": 0,
                     \\"type\\": \\"monthly\\",
                     \\"value\\": 1
-                },
-                \\"columns\\": [
-                   { \\"key\\": \\"DATE\\" },
-                   { \\"key\\": \\"SOURCE_ID\\" },
-                   { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
+                }
                 }";
 
 try(OutputStream os = connection.getOutputStream()) {
@@ -209,17 +195,10 @@ headers = {
 data = '{  
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
+            "detailed": true,
             "execute_after_withdrawal": true,
-            "frequency": {
-                "hour": 0,
-                "type": "monthly",
-                "value": 1
-            },
-            "columns": {
-                "key": "DATE",
-                "key": "SOURCE_ID",
-                "key": "EXTERNAL_REFERENCE"
-            }
+            "extended": true,
+            "frequency": {"hour": 0,"type": "monthly","value": 1}
         }'
 
 response = requests.post('https://api.mercadopago.com/v1/account/bank_report/config', headers=headers, data=data)
@@ -236,16 +215,13 @@ var headers = {
 var dataString = '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
+            "detailed": true,
             "execute_after_withdrawal": true,
+            "extended": true,
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
                 "value": 1
-            },
-            "columns": {
-                "key": "DATE",
-                "key": "SOURCE_ID",
-                "key": "EXTERNAL_REFERENCE"
             }
     }';
 
@@ -272,25 +248,19 @@ Como resposta, você receberá um  `HTTP STATUS 201 (Created)`
 {
     "file_name_prefix": "bank-report-USER_ID",
     "include_withdrawal_at_end": false,
+    "detailed": true,
     "scheduled": false,
     "execute_after_withdrawal": true,
-    "separator": ",",
-    "frequency": {
-        "hour": 0,
-        "type": "monthly",
-        "value": 1
+    "v1": {
+        "language": null,
+        "generate_bank_report": false
     },
-    "columns": [
-        {
-            "key": "DATE"
-        },
-        {
-            "key": "SOURCE_ID"
-        },
-        {
-            "key": "EXTERNAL_REFERENCE"
-        }
-    ]
+    "extended": true,
+    "frequency": {
+        "hour": 3,
+        "type": "daily",
+        "value": {}
+    }
 }
 ```
 
@@ -307,19 +277,16 @@ curl -X PUT \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/account/bank_report/config' \
     -d '{
-            "file_name_prefix": "bank-report-USER_ID",
-            "include_withdrawal_at_end": false,
-            "execute_after_withdrawal": true,
-            "frequency": {
-                "hour": 0,
-                "type": "monthly",
-                "value": 1
-            },
-            "columns": {
-                "key": "DATE",
-                "key": "SOURCE_ID",
-                "key": "EXTERNAL_REFERENCE"
-            }
+        "file_name_prefix": "bank-report-USER_ID",
+        "include_withdrawal_at_end": false,
+        "detailed": true,
+        "execute_after_withdrawal": true,
+        "extended": true,
+        "frequency": {
+            "hour": 0,
+            "type": "monthly",
+            "value": 1
+        }
     }'
 ```
 ```php
@@ -332,19 +299,16 @@ $headers = array(
     'Authorization' => 'Bearer ENV_ACCESS_TOKEN'
 );
 $data = '{
-            "file_name_prefix": "bank-report-USER_ID",
-            "include_withdrawal_at_end": false,
-            "execute_after_withdrawal": true,
-            "frequency": {
-                "hour": 0,
-                "type": "monthly",
-                "value": 1
-            },
-            "columns": {
-                "key": "DATE",
-                "key": "SOURCE_ID",
-                "key": "EXTERNAL_REFERENCE"
-            }
+        "file_name_prefix": "bank-report-USER_ID",
+        "include_withdrawal_at_end": false,
+        "detailed": true,
+        "execute_after_withdrawal": true,
+        "extended": true,
+        "frequency": {
+            "hour": 0,
+            "type": "monthly",
+            "value": 1
+        }
     }';
 $response = Requests::put('https://api.mercadopago.com/v1/account/bank_report/config', $headers, $data);
 ```
@@ -363,16 +327,14 @@ connection.setDoOutput(true);
 String body = "{
                 \\"file_name_prefix\\": \\"bank-report-USER_ID\\",
                 \\"include_withdrawal_at_end\\": false,
+                \\"detailed\\": true,
                 \\"execute_after_withdrawal\\": true,
+                \\"extended\\": true,
                 \\"frequency\\": {
                     \\"hour\\": 0,
                     \\"type\\": \\"monthly\\",
                     \\"value\\": 1
-                },
-                \\"columns\\": [
-                   { \\"key\\": \\"DATE\\" },
-                   { \\"key\\": \\"SOURCE_ID\\" },
-                   { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
+                }
             }";
 
 try(OutputStream os = connection.getOutputStream()) {
@@ -393,20 +355,14 @@ headers = {
     'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 }
 
-data = '{  
+data = '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
+            "detailed": true,
             "execute_after_withdrawal": true,
-            "frequency": {
-                "hour": 0,
-                "type": "monthly",
-                "value": 1
-            },
-            "columns": {
-                "key": "DATE",
-                "key": "SOURCE_ID",
-                "key": "EXTERNAL_REFERENCE"
-            }
+            "extended": true,
+            "frequency": {"hour": 0,"type": "monthly","value": 1}
+
         }'
 
 response = requests.put('https://api.mercadopago.com/v1/account/bank_report/config', headers=headers, data=data)
@@ -421,19 +377,16 @@ var headers = {
 };
 
 var dataString = '{
-            "file_name_prefix": "bank-report-USER_ID",
-            "include_withdrawal_at_end": false,
-            "execute_after_withdrawal": true,
-            "frequency": {
-                "hour": 0,
-                "type": "monthly",
-                "value": 1
-            },
-            "columns": {
-                "key": "DATE",
-                "key": "SOURCE_ID",
-                "key": "EXTERNAL_REFERENCE"
-            }
+        "file_name_prefix": "bank-report-USER_ID",
+        "include_withdrawal_at_end": false,
+        "detailed": true,
+        "execute_after_withdrawal": true,
+        "extended": true,
+        "frequency": {
+            "hour": 0,
+            "type": "monthly",
+            "value": 1
+        }
     }';
 
 var options = {
@@ -460,25 +413,19 @@ Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
 {
     "file_name_prefix": "bank-report-USER_ID",
     "include_withdrawal_at_end": false,
+    "detailed": true,
     "scheduled": false,
     "execute_after_withdrawal": true,
-    "separator": ",",
-    "frequency": {
-        "hour": 0,
-        "type": "monthly",
-        "value": 1
+    "v1": {
+        "language": null,
+        "generate_bank_report": false
     },
-    "columns": [
-        {
-            "key": "DATE"
-        },
-        {
-            "key": "SOURCE_ID"
-        },
-        {
-            "key": "EXTERNAL_REFERENCE"
-        }
-    ]
+    "extended": true,
+    "frequency": {
+        "hour": 3,
+        "type": "daily",
+        "value": {}
+    }
 }
 ```
 
@@ -493,10 +440,11 @@ Confira os campos que você pode configurar para ajustar suas preferências ante
 | --- | --- |
 | `sftp_info` (opcional) | <br/>Indica os dados para subir a SFTP quando precisar.<br/><br/> |
 | `separator` (opcional) | <br/>Separador que pode ser usado no arquivo .csv quando não quiser que o separador seja uma vírgula (‘,’). <br/><br/> |
+| `extended` (opcional) | <br/>Inclui o detalhe das comissões no relatório.<br/><br/> |
 | `refund_detailed` (opcional) | <br/>Mostra o código de referência (external_reference) do reembolso em vez do código de referência (external_reference) do pagamento.<br/><br/> |
 | `include_withdrawal` (opcional) | <br/>Inclui as retiradas de dinheiro no relatório.<br/><br/> |
 | `coupon_detailed` (opcional) | <br/>Inclui uma coluna para mostrar os detalhes dos cupons de desconto.<br/><br/> |
-| `columns` | <br/>Agregar link a glosario<br/><br/>|
+| `detailed` | <br/>Inclui colunas com informações mais detalhadas sobre suas operações:<br/> - Comissão do Mercado Pago (`mp_fee_amount`)<br/> - Comissão por oferecer parcelas sem juros (`financing_fee_amount`)<br/> - Valor bruto da transação (`gross_amount`)<br/> - Meios de pagamento (`payment_method`)<br/> - Parcelas (`installments`)<br/> - Cupom de desconto (`coupon_amount`) <br/> - Custos de envio (`shipping_fee_amount`) <br/> - Impostos cobrados por retenções de IIBB (`taxes_amount`) <br/> - Valor recebido por compras com split (`seller_amount`)<br/><br/>|
 | `file_name_prefix` | <br/>Prefixo que compõe o nome do relatório assim que estiver gerado e pronto para baixar.<br/><br/> |
 | `frequency` | <br/>Indica a frequência diária, semanal ou mensal dos relatórios programados.<br/><br/> - `frequency` aplica type *monthly* ao dia do mês ou *weekly* ao dia da semana<br/> - `hour` hora do dia que o relatório deve ser gerado<br/> - `type` indica o tipo de frequência: *daily* (diária), *weekly* (semanal) y *monthly* (mensal).<br/><br/> |
 | `scheduled` (read_only) | <br/>Campo informativo que indica se já existem relatórios programados na conta do usuário.<br/><br/> |
@@ -958,7 +906,11 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 2018-04-17T15:38:40.000-04:00,,,release,payment,850.00,0.00,850.00,0.00,0.00,0.00,0.00,0.00,1,account_money
 ```
 
-> Esta documentação utiliza a nova versão da biblioteca. Para ver a versão anterior, vá para a [seção de Configurar seus relatórios via API antiga](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/v1/api).
+> WARNING
+>
+> Importante
+>
+> Esta documentação utiliza a antiga versão da biblioteca. Para ver a versão nova, vá para a [seção de Configurar seus relatórios via API antiga](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/api).
 
 <hr/>
 
