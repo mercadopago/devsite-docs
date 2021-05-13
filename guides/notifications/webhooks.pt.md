@@ -72,6 +72,11 @@ A notificação tem o seguinte formato:
 
 Isso indica que foi criado o pagamento **999999999** para o usuário **44444** em modo de produção com a versão V1 da API. Este evento ocorreu na data **2016-03-25T10:04:58.396-04:00**.
 
+> WARNING
+>
+> Importante
+>
+> Lembre-se de que, não é possível receber notificações em ambiente de teste.
 
 ## O que devo fazer ao receber uma notificação?
 
