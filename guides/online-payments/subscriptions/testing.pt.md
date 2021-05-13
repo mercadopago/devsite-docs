@@ -1,10 +1,3 @@
----
-sites_supported:
-  - mla
-  - mlm
-  - mlb
----
-
 # Teste de assinaturas
 
 Explicamos como usar nossos cartões e usuários de teste para verificar se suas assinaturas foram criadas corretamente.
