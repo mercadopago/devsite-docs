@@ -12,7 +12,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 >
 > Changes in the availability of payer data
 >
-> FIX: NEWS
+> NEWS: NEWS
 >
 > PRODUCT: MERCADO PAGO
 

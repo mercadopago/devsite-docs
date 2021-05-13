@@ -12,7 +12,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 >
 > Cambios en la disponibilidad de datos de los pagadores
 >
-> FIX: NOVEDADES
+> NEWS: NOVEDADES
 >
 > PRODUCT: MERCADO PAGO
 
