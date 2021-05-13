@@ -130,7 +130,7 @@ Respuesta esperada:
 
 ## 3. Integra la API para recibir pagos
 
-Para recibir pagos en nombre de tus vendedores debes integrar la [API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction), utilizando el `access_token` de cada vendedor para tu aplicación.
+Para recibir pagos en nombre de tus vendedores debes integrar la [API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction), generando los pagos con el Access Token que se obtiene al vincular a cada vendedor con tu aplicación.
 
 Si deseas cobrar una comisión por cada cobro que procesa tu aplicación en nombre de tu usuario, sólo debes agregar dicho monto en el parámetro `application_fee` al crear el pago:
 
