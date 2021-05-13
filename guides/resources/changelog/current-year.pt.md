@@ -6,6 +6,20 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Maio 2021
 
+### 14 de maio
+
+> CHANGELOG
+>
+> Mudanças na disponibilidade dados de compradores
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: MERCADO PAGO
+
+Para assegurar o cuidado com os dados pessoais dos nossos usuários, modificamos a informação que enviamos dos compradores através da API de Pagamentos e relatórios disponíveis na conta. Agora somente será possível ver a informação pessoal dos compradores necessária para contato, que são o e-mail, tipo e número de documento.
+
+Se precisar de outro tipo de informação para seu negócio, como telefone ou endereço do comprador, você terá que capturá-la diretamente na sua aplicação, já que por razões de segurança vamos manter a confidencialidade desses dados.
+
 ### 3 de maio
 
 > CHANGELOG

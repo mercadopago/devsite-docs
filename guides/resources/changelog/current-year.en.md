@@ -6,6 +6,20 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## May 2021
 
+### May 14th
+
+> CHANGELOG
+>
+> Changes in the availability of payer data
+>
+> NEWS: NEWS
+>
+> PRODUCT: MERCADO PAGO
+
+To ensure the care of our users' personal data, we modified the information we send from the payers through the Payments API and reports available in the account. Now you will only see the necessary personal information of the payers for your contact who are the e-mail and type and number of document.
+
+If you need other types of information for your business, such as the payer’s phone or address, you will have to manage it exclusively in your integration, since we will maintain the confidentiality of this data for security reasons. 
+
 ### May 3rd
 
 > CHANGELOG
