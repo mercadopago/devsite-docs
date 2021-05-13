@@ -6,6 +6,20 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Mayo 2021
 
+### 14 de mayo
+
+> CHANGELOG
+>
+> Cambios en la disponibilidad de datos de los pagadores
+>
+> FIX: NOVEDADES
+>
+> PRODUCT: MERCADO PAGO
+
+Para asegurar el cuidado de datos personales de nuestros usuarios, modificamos la información que enviamos de los pagadores a través de la API de Pagos y reportes disponibles en la cuenta. Ahora solamente verás la información personal necesaria de los pagadores para su contacto que son el e-mail y tipo y número de documento.
+
+Si necesitas otro tipo de información para tu negocio, como el teléfono o dirección del pagador, tendrás que gestionarla exclusivamente en tu integración, ya que por razones de seguridad vamos a mantener la confidencialidad de estos datos.
+
 ### 3 de mayo
 
 > CHANGELOG
