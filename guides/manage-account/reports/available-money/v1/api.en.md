@@ -896,7 +896,7 @@ Download the file with this command:
 >
 >Important
 >
-> This documentation uses the old library version. To see the new version, go to the [new Set up your reports through API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/api).
+> This documentation uses the old API version. To see the new version, go to the [new Generating through API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/api).
 
 <hr/>
 

@@ -910,7 +910,7 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 >
 > Importante
 >
-> Esta documentação utiliza a antiga versão da biblioteca. Para ver a versão nova, vá para a [seção de Configurar seus relatórios via API antiga](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/api).
+> Esta documentação utiliza a antiga versão da API. Para ver a versão nova, vá para a [seção de Geração via API antiga](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/api).
 
 <hr/>
 

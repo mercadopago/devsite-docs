@@ -944,7 +944,7 @@ Download the file with this command:
     GET /v1/account/bank_report/:file_name
 ```
 
-> This documentation uses the new library version. To see the previous version, go to the [old Set up your reports through API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/v1/api).
+> This documentation uses the new API version. To see the previous version, go to the [old Generating through API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/v1/api).
 
 <hr/>
 
