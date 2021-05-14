@@ -307,7 +307,7 @@ preference_data = {
 
 | Atributo | Descripción |
 | --- | --- |
-| `type` | Identificador del impuesto. Solo se admiten los valores IVA e INC. |
+| `type` | Identificador del impuesto. Solo se admite IVA. |
 | `value` | Monto del impuesto. Se admite un máximo de dos decimales. Para ítems excentos de impuestos se debe informar cero. |
 
  ```json
