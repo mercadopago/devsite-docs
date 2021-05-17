@@ -4,6 +4,12 @@
 
 Ganá tiempo y automatizá la **frecuencia de generación** del reporte de Dinero retirado las veces que quieras, tanto de forma manual como de forma programada. 
 
+> WARNING
+> 
+> Nota
+> 
+> Ten en cuenta que próximamente los reportes de Dinero retirado serán deprecados. Te recomendamos utilizar el [Reporte de liquidaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar tus transacciones que afectan el disponible en tu cuenta.
+
 
 ## Configurar tus reportes
 
