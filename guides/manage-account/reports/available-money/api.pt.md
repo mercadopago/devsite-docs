@@ -174,18 +174,18 @@ connection.setRequestProperty("Authorization", "Bearer ENV_ACCESS_TOKEN");
 connection.setDoOutput(true);
 
 String body = "{
-                \\"file_name_prefix\\": \\"bank-report-USER_ID\\",
-                \\"include_withdrawal_at_end\\": false,
-                \\"execute_after_withdrawal\\": true,
-                \\"frequency\\": {
-                    \\"hour\\": 0,
-                    \\"type\\": \\"monthly\\",
-                    \\"value\\": 1
-                },
-                \\"columns\\": [
-                   { \\"key\\": \\"DATE\\" },
-                   { \\"key\\": \\"SOURCE_ID\\" },
-                   { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
+                    \\"file_name_prefix\\": \\"bank-report-USER_ID\\",
+                    \\"include_withdrawal_at_end\\": false,
+                    \\"execute_after_withdrawal\\": true,
+                    \\"frequency\\": {
+                        \\"hour\\": 0,
+                        \\"type\\": \\"monthly\\",
+                        \\"value\\": 1
+                    },
+                    \\"columns\\": [
+                    { \\"key\\": \\"DATE\\" },
+                    { \\"key\\": \\"SOURCE_ID\\" },
+                    { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
                 }";
 
 try(OutputStream os = connection.getOutputStream()) {
@@ -361,18 +361,18 @@ connection.setRequestProperty("Authorization", "Bearer ENV_ACCESS_TOKEN");
 connection.setDoOutput(true);
 
 String body = "{
-                \\"file_name_prefix\\": \\"bank-report-USER_ID\\",
-                \\"include_withdrawal_at_end\\": false,
-                \\"execute_after_withdrawal\\": true,
-                \\"frequency\\": {
-                    \\"hour\\": 0,
-                    \\"type\\": \\"monthly\\",
-                    \\"value\\": 1
-                },
-                \\"columns\\": [
-                   { \\"key\\": \\"DATE\\" },
-                   { \\"key\\": \\"SOURCE_ID\\" },
-                   { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
+                    \\"file_name_prefix\\": \\"bank-report-USER_ID\\",
+                    \\"include_withdrawal_at_end\\": false,
+                    \\"execute_after_withdrawal\\": true,
+                    \\"frequency\\": {
+                        \\"hour\\": 0,
+                        \\"type\\": \\"monthly\\",
+                        \\"value\\": 1
+                    },
+                    \\"columns\\": [
+                    { \\"key\\": \\"DATE\\" },
+                    { \\"key\\": \\"SOURCE_ID\\" },
+                    { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
             }";
 
 try(OutputStream os = connection.getOutputStream()) {

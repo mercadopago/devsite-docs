@@ -42,6 +42,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | PACK_ID | ----[mla, mlm]---- Identificador del paquete en el carrito. ------------ |
 | TAXES_DISAGGREGATED | Impuestos desagregados en formato JSON. |
 | POI_ID | ID del lector si el pago se realiza a través de un comercio físico. |
+| SELLER_AMOUNT | Monto recibido por compras por split. |
 
 <hr/>
 

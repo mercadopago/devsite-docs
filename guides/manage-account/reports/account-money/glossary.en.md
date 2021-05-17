@@ -42,6 +42,7 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | PACK_ID | Package identification in the cart. |
 | TAXES_DISAGGREGATED | Taxes disaggregated in JSON format. |
 | POI_ID | Point ID if payment is made through a physical retailer. |
+| SELLER_AMOUNT | Amount received for split purchases. |
 
 <hr/>
 
