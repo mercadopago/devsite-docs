@@ -36,6 +36,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | TAXES_DISAGGREGATED | Impostos desagregados no formato JSON. |
 | EFFECTIVE_COUPON_AMOUNT | Custo de oferecer desconto. |
 | POI_ID | ID da maquininha se o pagamento é feito em uma loja física. |
+| SELLER_AMOUNT | Valor recebido por compras com split. |
 
 <hr/>
 

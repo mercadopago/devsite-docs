@@ -36,6 +36,7 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | TAXES_DISAGGREGATED | Taxes disaggregated in JSON format. |
 | EFFECTIVE_COUPON_AMOUNT | Cost for offering discount. |
 | POI_ID | Point ID if payment is made through a physical retailer. |
+| SELLER_AMOUNT | Amount received for split purchases. |
 
 <hr/>
 
