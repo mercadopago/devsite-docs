@@ -281,6 +281,29 @@ preference_data = {
 ```
 ]]]
 
+----[mco]----
+### Differentiated IVA
+
+You can modify the value of the tax for the Dirección de Impuestos y Aduanas Nacionales (DIAN) that applies according to the product or service you offer. If you do not differentiate this value, 19% will be applied by default.
+
+| Attribute | Description |
+| --- | --- |
+| `type` | Tax identifier. Only IVA is allowed. |
+| `value` | Tax amount. A maximum of two decimals is allowed. For items exempt from taxes zero must be reported. |
+
+ ```json
+===
+Use the taxes attribute to define the corresponding value
+===
+"taxes": [
+	{
+		"type": "IVA",
+		"value": 16
+	}
+]
+```
+------------
+
 ----[mla, mlb, mco]----
 
 ### Expiration date of cash payment
