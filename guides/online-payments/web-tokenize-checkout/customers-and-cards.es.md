@@ -295,9 +295,9 @@ Por ejemplo:
 
 ## Bin compartidos para Customers
 
-Cuando hay dos medios de pagos activos(tarjetas de credito y debito) con el  "bin compartido" (primeros 6 digitos de las tarjetas), para ello deberían adicionalmente enviar esos dos campos [issuer_id] y [payment_method_id]
+Cuando hay dos medios de pagos activos(tarjetas de credito y debito) con el "bin compartido" (primeros 6 digitos de las tarjetas), para estos casos se deberá adicionalmente enviar dos campos [issuer_id] y [payment_method_id]
 
-En el caso de que actualizan algún bin para que sea compartido y no son posteados esos dos campos se devolvera un statuCode 4XX
+En el caso de que actualizan algún bin para que sea compartido y como no son posteados esos dos campos se devolvera un statuCode 4XX
 
 Por ejemplo de dos pagos activos con bin compartidos:
 ```json
