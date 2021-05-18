@@ -293,6 +293,34 @@ Por ejemplo:
 </script>
 ```
 
+## Bin compartidos para Customers
+
+Cuando hay dos medios de pagos activos(tarjetas de credito y debito) con el  "bin compartido" (primeros 6 digitos de las tarjetas), para ello deberían adicionalmente enviar esos dos campos [issuer_id] y [payment_method_id]
+
+En el caso de que actualizan algún bin para que sea compartido y no son posteados esos dos campos se devolvera un statuCode 4XX
+
+Por ejemplo de dos pagos activos con bin compartidos:
+```json
+{
+      "id": "user",
+      "issuer": {
+        "default": false,
+        "id": 12345,
+        "name": "Banco"
+      },
+      "payment_type_id": "credit_card"
+    },
+    {
+      "id": "user",
+      "issuer": {
+        "default": false,
+        "id": 12345,
+        "name": "Banco"
+      },
+      "payment_type_id": "debit_card"
+    },
+```
+
 > Esta documentación utiliza la nueva versión de la librería. Para ver la versión anterior, ve a la [sección de Clientes y tarjetas almacenadas con MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/web-tokenize-checkout/v1/customers-and-cards).
 
 
