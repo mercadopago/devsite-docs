@@ -6,6 +6,30 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Mayo 2021
 
+### 19 de mayo
+
+> CHANGELOG
+>
+> Nueva versión SDK PHP
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK PHP
+
+Lanzamos una nueva versión del SDK PHP 1.11.0 y 2.3.0.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-php/releases/tag/1.11.0).
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-php/releases/tag/2.3.0).
+
 ### 14 de mayo
 
 > CHANGELOG

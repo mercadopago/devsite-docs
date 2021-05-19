@@ -6,20 +6,29 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## May 2021
 
-### May 14th
+### May 19th
 
 > CHANGELOG
 >
-> Changes in the availability of payer data
+> New version of SDK PHP
 >
-> NEWS: NEWS
+> NEW_VERSION: NEW VERSION
 >
-> PRODUCT: MERCADO PAGO
+> PRODUCT: SDK PHP
 
-To ensure the care of our users' personal data, we modified the information we send from the payers through the Payments API and reports available in the account. Now you will only see the necessary personal information of the payers for your contact who are the e-mail and type and number of document.
+We have released a new version of SDK PHP 1.11.0 and 2.3.0
 
-If you need other types of information for your business, such as the payer’s phone or address, you will have to manage it exclusively in your integration, since we will maintain the confidentiality of this data for security reasons. 
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/dx-php/releases/tag/1.11.0) for further details regarding this release.
 
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/dx-php/releases/tag/2.3.0) for further details regarding this release.
 ### May 3rd
 
 > CHANGELOG
