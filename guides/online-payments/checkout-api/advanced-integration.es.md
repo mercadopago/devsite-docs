@@ -337,7 +337,7 @@ curl -X POST \
 
 Para que un cliente pueda hacer un pago con sus datos guardados, es necesario volver a capturar el código de seguridad. Mercado Pago no puede almacenar esa información por cuestiones de seguridad.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bin compartidos para Customers
+## Bin compartidos para Customers
 
 Cuando hay dos medios de pagos activos(tarjetas de credito y debito) con el "bin compartido" (primeros 6 digitos de las tarjetas), por ello es necesario enviar siempre los campos [issuer_id] y [payment_method_id]
 
