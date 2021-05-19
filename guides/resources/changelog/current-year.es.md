@@ -5,7 +5,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 ---
 ## Mayo 2021
 
-### 30 de mayo
+### 19 de mayo
 
 > CHANGELOG
 >
@@ -21,7 +21,7 @@ Renovamos la documentación para generar tus reportes de Dinero retirado vía AP
 
 ## Mayo 2021
 
-### 30 de mayo
+### 19 de mayo
 
 > CHANGELOG
 >
