@@ -291,7 +291,8 @@ You can modify the value of the tax for the Dirección de Impuestos y Aduanas Na
 | `type` | Tax identifier. Only IVA is allowed. |
 | `value` | Tax amount. A maximum of two decimals is allowed. For items exempt from taxes zero must be reported. |
 
- ```json
+[[[
+```json
 ===
 Use the taxes attribute to define the corresponding value
 ===
@@ -302,6 +303,7 @@ Use the taxes attribute to define the corresponding value
 	}
 ]
 ```
+]]]
 ------------
 
 ----[mla, mlb, mco]----

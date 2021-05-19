@@ -310,7 +310,8 @@ preference_data = {
 | `type` | Identificador del impuesto. Solo se admite IVA. |
 | `value` | Monto del impuesto. Se admite un máximo de dos decimales. Para ítems excentos de impuestos se debe informar cero. |
 
- ```json
+[[[
+```json
 ===
 Usa el atributo taxes para definir el valor que corresponda
 ===
@@ -321,6 +322,7 @@ Usa el atributo taxes para definir el valor que corresponda
 	}
 ]
 ```
+]]]
 
 ------------
 
