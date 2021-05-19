@@ -337,22 +337,6 @@ curl -X POST \
 
 Para que un cliente pueda hacer un pago con sus datos guardados, es necesario volver a capturar el código de seguridad. Mercado Pago no puede almacenar esa información por cuestiones de seguridad.
 
-## Bin compartidos para Customers
-
-Cuando hay dos medios de pagos activos(tarjetas de credito y debito) con el "bin compartido" (primeros 6 digitos de las tarjetas), por ello es necesario enviar siempre los campos [issuer_id] y [payment_method_id]
-
-En el caso de que actualize algún bin para que sea compartido y como no son posteados esos dos campos se devolvera un statuCode 4XX
-
-Ejemplo de datos a enviar:
-```json
-{
-  ...
-  "issuer_id": "32",
-  "payment_method_id": "visa",
-  "payment_type_id": "credit_card"
-  ...
-}
-```
 <br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Muestra las tarjetas guardadas a tu cliente
@@ -826,6 +810,23 @@ curl -X GET \
     "last_four_digits": "0001",
     ...
 }]
+```
+
+## Bin compartidos para Customers
+
+Cuando hay dos medios de pagos activos(tarjetas de credito y debito) con el "bin compartido" (primeros 6 digitos de las tarjetas), por ello es necesario enviar siempre los campos [issuer_id] y [payment_method_id]
+
+En el caso de que actualize algún bin para que sea compartido y como no son posteados esos dos campos se devolvera un statuCode 4XX
+
+Ejemplo de datos a enviar:
+```json
+{
+  ...
+  "issuer_id": "32",
+  "payment_method_id": "visa",
+  "payment_type_id": "credit_card"
+  ...
+}
 ```
 
 ## Cancelaciones y devoluciones
