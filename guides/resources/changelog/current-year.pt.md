@@ -6,6 +6,24 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Maio 2021
 
+----[mpe]----
+
+### 20 de maio
+
+> CHANGELOG
+>
+> Atualizamos as devoluções dos pagamentos
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: MERCADO PAGO
+
+Agora você só pode realizar devoluções totais dos pagamentos.
+
+[Ir para a documentação de Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds#bookmark_devoluções)
+
+------------
+
 ### 14 de maio
 
 > CHANGELOG
