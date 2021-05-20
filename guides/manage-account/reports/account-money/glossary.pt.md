@@ -15,6 +15,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | TRANSACTION_TYPE | Tipo de operação. Pode ser:<br><br> *SETTLEMENT*: pagamento aprovado.<br>*REFUND*: pagamento devolvido total ou parcial.<br>*CHARGEBACK*: o comprador fez uma contestação (desconhece o pagamento) no seu cartão de crédito.<br>*DISPUTE*: o comprador iniciou uma reclamação por esse pagamento.<br>*WITHDRAWAL*: retirada para a conta bancária.<br>*WITHDRAWAL_CANCEL*: retirada para a conta bancária que foi cancelada.<br>*PAYOUT*: saque em dinheiro disponível no Mercado Pago. ----[mlb]---- <br>*TRAVA_DE_RECEBIVEL*: trava de recebível. ------------ <br><br> |
 | TRANSACTION_AMOUNT | Valor bruto da transação. |
 | TRANSACTION_CURRENCY | Moeda:<br><br>MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>EN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br><br> |
+| SELLER_AMOUNT | Valor recebido por compras com split. |
 | TRANSACTION_DATE | Data de aprovação da transação. |
 | FEE_AMOUNT | É a somatória das tarifas de processamento, shipping, financiamento e boleto, se foi assumido pelo vendedor. |
 | SETTLEMENT_NET_AMOUNT | Valor líquido da transação que impactou o dinheiro em conta. Foram descontadas todas as comissões envolvidas da `TRANSACTION_AMOUNT`. |
@@ -41,7 +42,6 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | PACK_ID | Identificador do pacote no carrinho. |
 | TAXES_DISAGGREGATED | Impostos desagregados no formato JSON. |
 | POI_ID | ID da maquininha se o pagamento é feito em uma loja física. |
-| SELLER_AMOUNT | Valor recebido por compras com split. |
 
 <hr/>
 

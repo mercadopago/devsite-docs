@@ -5,7 +5,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 ---
 ## Mayo 2021
 
-### 19 de mayo
+### 27 de mayo
 
 > CHANGELOG
 >
@@ -15,13 +15,13 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 >
 > Product: REPORTES
 
-Renovamos la documentación para generar tus reportes de Dinero retirado vía API. Ahora puedes personalizar tus reportes seleccionado los campos o atributos que necesites.
+Renovamos la documentación para generar tus reportes de **Dinero retirado** vía API. Ahora puedes personalizar tus reportes seleccionado los campos o atributos que necesites.
 
 [Ir a documentación de Generación de reportes por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/api)
 
 ## Mayo 2021
 
-### 19 de mayo
+### 27 de mayo
 
 > CHANGELOG
 >
@@ -31,7 +31,7 @@ Renovamos la documentación para generar tus reportes de Dinero retirado vía AP
 >
 > Product: REPORTES
 
-Renovamos la documentación para generar tus reportes de Todas las transacciones vía API. Ahora puedes personalizar tus reportes seleccionado los campos o atributos que necesites.
+Renovamos la documentación para generar tus reportes de **Todas las transacciones** vía API. Ahora puedes personalizar tus reportes seleccionado los campos o atributos que necesites.
 
 [Ir a documentación de Generación de reportes por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/api)
 
