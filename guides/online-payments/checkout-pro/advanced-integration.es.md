@@ -388,8 +388,15 @@ Evita pagos rechazados con nuestras recomendaciones y [mejora la aprobación de 
 
 ## Cancelaciones y devoluciones
 
+----[mla, mlm, mco, mlu, mlb, mlc]----
 Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes de la fecha de vencimiento y el vendedor decide cancelarlo.
 Y las devoluciones suceden cuando el pago se realizó pero el vendedor decide anularlo total o parcialmente.
+------------
+
+----[mpe]----
+Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes de la fecha de vencimiento y el vendedor decide cancelarlo.
+Y las devoluciones suceden cuando el pago se realizó pero el vendedor decide anularlo totalmente.
+------------
 
 Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).
 
