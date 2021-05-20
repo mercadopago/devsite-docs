@@ -16,19 +16,14 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 >
 > PRODUCT: SDK PHP
 
-We have released a new version of SDK PHP 1.11.0 and 2.3.0
+We have released a new version of SDK PHP 1.11.0 and 2.3.0.
 
 > GIT
 >
 > GitHub
 >
-> [Check GitHub](https://github.com/mercadopago/dx-php/releases/tag/1.11.0) for further details regarding this release.
+> [Check GitHub](https://github.com/mercadopago/sdk-php/releases) for further details regarding this release.
 
-> GIT
->
-> GitHub
->
-> [Check GitHub](https://github.com/mercadopago/dx-php/releases/tag/2.3.0) for further details regarding this release.
 ### May 14th
 
 > CHANGELOG

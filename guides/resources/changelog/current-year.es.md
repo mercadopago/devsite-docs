@@ -16,19 +16,13 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 >
 > PRODUCT: SDK PHP
 
-Lanzamos una nueva versión del SDK PHP 1.11.0 y 2.3.0.
+Lanzamos una nueva versión de la SDK PHP 1.11.0 y 2.3.0.
 
 > GIT
 >
 > GitHub
 >
-> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-php/releases/tag/1.11.0).
-
-> GIT
->
-> GitHub
->
-> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/dx-php/releases/tag/2.3.0).
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-php/releases).
 
 ### 14 de mayo
 
