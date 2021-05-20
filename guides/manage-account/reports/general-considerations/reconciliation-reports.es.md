@@ -16,6 +16,6 @@ Con estos informes buscamos cubrir las distintas necesidades de nuestros usuario
 
 > NOTE
 > 
-> Nota
+> El reporte de Dinero retirado será deprecado
 > 
-> Ten en cuenta que próximamente los reportes de **Dinero retirado** serán deprecados. Te recomendamos utilizar el reporte de [Liquidaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar tus transacciones que afectan el disponible en tu cuenta.
+> Te recomendamos utilizar el reporte de [Liquidaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar tus transacciones que afectan el disponible en tu cuenta. Próximamente los reportes de **Dinero retirado** dejarán de estar disponibles.
