@@ -1,3 +1,13 @@
+---
+sites_supported:
+  - mla
+  - mlm
+  - mlb
+  - mlc
+  - mpe
+  - mlu
+---
+
 # How to integrate the QR dynamic model
 
 For collection using the QR code dynamic model, you should create both an order and a code with an external service, based on the relevant response.

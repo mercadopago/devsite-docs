@@ -1,3 +1,13 @@
+---
+sites_supported:
+  - mla
+  - mlm
+  - mlb
+  - mlc
+  - mpe
+  - mlu
+---
+
 # QR dynamic model
 
 ## What is the dynamic QR model?

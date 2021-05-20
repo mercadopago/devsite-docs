@@ -1,3 +1,13 @@
+---
+sites_supported:
+  - mla
+  - mlm
+  - mlb
+  - mlc
+  - mpe
+  - mlu
+---
+
 # Pagos QR modelo dinámico
 
 ## ¿Qué es QR modelo dinámico?

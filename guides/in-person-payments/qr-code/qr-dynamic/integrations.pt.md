@@ -1,3 +1,13 @@
+---
+sites_supported:
+  - mla
+  - mlm
+  - mlb
+  - mlc
+  - mpe
+  - mlu
+---
+
 # Como integrar QR modelo dinâmico
 
 Para cobrar através de um código QR modelo dinâmico, você deverá criar uma ordem e, a partir da resposta obtida, criar um código com algum serviço externo.
