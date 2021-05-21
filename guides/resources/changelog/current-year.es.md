@@ -6,6 +6,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Mayo 2021
 
+
 ----[mpe]----
 
 ### 20 de mayo
@@ -24,6 +25,25 @@ Ahora solamente puedes realizar devoluciones totales de los pagos.
 
 ------------
 
+### 19 de mayo
+
+> CHANGELOG
+>
+> Nueva versión SDK PHP
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK PHP
+
+Lanzamos una nueva versión de la SDK PHP 1.11.0 y 2.3.0.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-php/releases).
+
+------------
 
 ### 14 de mayo
 
