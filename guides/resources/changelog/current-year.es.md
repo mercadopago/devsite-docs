@@ -3,35 +3,35 @@
 Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones de Mercado Pago.
 
 ---
+
 ## Mayo 2021
 
 ### 27 de mayo
 
 > CHANGELOG
 >
-> Mejoramos la configuración de tus reportes via API
+> Mejoramos la configuración del reporte Dinero retirado vía API
 >
 > NEWS: FEATURE
 >
 > Product: REPORTES
 
-Renovamos la documentación para generar tus reportes de **Dinero retirado** vía API. Ahora puedes personalizar tus reportes seleccionado los campos o atributos que necesites.
+Crea reportes personalizados con los campos o atributos que necesites.
 
 [Ir a documentación de Generación de reportes por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/api)
 
-## Mayo 2021
 
 ### 27 de mayo
 
 > CHANGELOG
 >
-> Mejoramos la configuración de tus reportes via API
+> Nueva configuración del reporte Todas las transacciones vía API
 >
 > NEWS: FEATURE
 >
 > Product: REPORTES
 
-Renovamos la documentación para generar tus reportes de **Todas las transacciones** vía API. Ahora puedes personalizar tus reportes seleccionado los campos o atributos que necesites.
+Elije los campos o atributos que necesites para crear un reporte personalizado.
 
 [Ir a documentación de Generación de reportes por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/api)
 

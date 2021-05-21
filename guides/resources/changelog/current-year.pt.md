@@ -4,6 +4,37 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
+## Maio 2021
+
+### 27 de maio
+
+> CHANGELOG
+>
+> Melhoramos a configuração do relatório Dinheiro disponível via API
+>
+> NEWS: FEATURE
+>
+> Product: RELATÓRIOS
+
+Crie relatórios personalizados com os campos ou características que precisar.
+
+[Ir para documentação de Geração de relatórios por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/api)
+
+
+### 27 de maio
+
+> CHANGELOG
+>
+> Nova configuração do relatório Dinheiro em conta via API
+>
+> NEWS: FEATURE
+>
+> Product: RELATÓRIOS
+
+Escolha os campos ou características que precisar e crie um relatório personalizado.
+
+[Ir para documentação de Geração de relatórios por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/api)
+
 ## Abril 2021
 
 ### 30 de abril

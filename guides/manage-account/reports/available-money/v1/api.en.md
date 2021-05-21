@@ -892,11 +892,11 @@ Download the file with this command:
     GET /v1/account/bank_report/:file_name
 ```
 
->WARNING
+> WARNING
 >
->Important
+> This documentation corresponds to a previous version of the API
 >
-> This documentation uses the old API version. To see the new version, go to the [new Generating through API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/api).
+> To check the most recent version, please go to the [new API Generation section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/api).
 
 <hr/>
 

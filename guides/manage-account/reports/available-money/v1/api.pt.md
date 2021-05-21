@@ -908,9 +908,9 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 
 > WARNING
 >
-> Importante
+> Esta documentação corresponde a uma versão anterior da API
 >
-> Esta documentação utiliza a antiga versão da API. Para ver a versão nova, vá para a [seção de Geração via API antiga](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/api).
+> Para consultar a versão mais recente, por favor, acesse a [seção Geração por API nova](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/api).
 
 <hr/>
 
