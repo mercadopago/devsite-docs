@@ -6,6 +6,25 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Mayo 2021
 
+
+----[mpe]----
+
+### 20 de mayo
+
+> CHANGELOG
+>
+> Actualizamos las devoluciones de los pagos
+>
+> NEWS: NOVEDADES
+>
+> PRODUCT: MERCADO PAGO
+
+Ahora solamente puedes realizar devoluciones totales de los pagos.
+
+[Ir a documentación de Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds#bookmark_devoluciones)
+
+------------
+
 ### 19 de mayo
 
 > CHANGELOG
@@ -23,6 +42,8 @@ Lanzamos una nueva versión de la SDK PHP 1.11.0 y 2.3.0.
 > GitHub
 >
 > Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-php/releases).
+
+------------
 
 ### 14 de mayo
 

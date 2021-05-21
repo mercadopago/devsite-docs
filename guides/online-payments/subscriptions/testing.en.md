@@ -1,10 +1,3 @@
----
-sites_supported:
-  - mla
-  - mlm
-  - mlb
----
-
 # Test your subscriptions
 
 We explain how to use our cards and test users to verify that your subscriptions are created correctly.

@@ -164,6 +164,8 @@ curl -X POST \
 }
 ```
 
+----[mla, mlm, mco, mlu, mlb, mlc]----
+
 ### Issue a partial refund
 
 You can issue up to 20 partial refunds for one single payment. Upon completion, the payment `status` will be `approved` with a `status_detail` in `partially_refunded`.
@@ -215,6 +217,7 @@ curl -X POST \
 ```
 ]]]
 
+------------
 
 ### Get the refunds made
 
