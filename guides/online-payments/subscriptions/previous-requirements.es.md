@@ -1,10 +1,3 @@
----
-sites_supported:
-  - mla
-  - mlm
-  - mlb
----
-
 # Requisitos previos para comenzar
 
 ## Consideraciones y restricciones

@@ -1,10 +1,3 @@
----
-sites_supported:
-  - mla
-  - mlm
-  - mlb
----
-
 # Atualização de assinaturas
 
 Para atualizar, pausar, cancelar ou reativar uma assinatura já criada, é necessário usar o `preapproval_id` que retorna após a [criação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/introduction). 

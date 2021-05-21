@@ -1,10 +1,3 @@
----
-sites_supported:
-  - mla
-  - mlm
-  - mlb
----
-
 # Integrar suscripciones   
 
 ## Tipos de integraciones

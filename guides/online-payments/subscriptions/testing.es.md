@@ -1,10 +1,3 @@
----
-sites_supported:
-  - mla
-  - mlm
-  - mlb
----
-
 # Prueba tus suscripciones
 
 Te explicamos cómo utilizar nuestras tarjetas y usuarios de prueba para verificar que tus suscripciones sean creadas correctamente.
