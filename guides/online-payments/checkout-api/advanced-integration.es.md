@@ -814,9 +814,7 @@ curl -X GET \
 
 ## Bin compartidos para Customers
 
-Cuando hay dos medios de pagos activos(tarjetas de credito y debito) con el "bin compartido" (primeros 6 digitos de las tarjetas), por ello es necesario enviar siempre los campos [issuer_id] y [payment_method_id]
-
-En el caso de que actualize algún bin para que sea compartido y como no son posteados esos dos campos se devolvera un statuCode 4XX
+Al haber mas de un medio de pago activo con "bin compartido" (primeros 6 dígitos de las tarjetas de crédito y debito). Por lo cual es necesario enviar siempre los campos [issuer_id] y [payment_method_id]
 
 Ejemplo de datos a enviar:
 ```json
@@ -824,11 +822,20 @@ Ejemplo de datos a enviar:
   ...
   "issuer_id": "32",
   "payment_method_id": "visa",
-  "payment_type_id": "credit_card"
   ...
 }
 ```
 
+En caso de no enviar dichos campos se generarán errores que luego se retornará con un statuCode 4XX
+Ejemplo de respuesta:
+```json
+{
+    "message": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id",
+    "error": "bad_request",
+    "status": 400,
+    "cause": []
+}
+```
 ## Cancelaciones y devoluciones
 
 Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes de la fecha de vencimiento y el vendedor decide cancelarlo. Y las devoluciones suceden cuando el pago se realizó pero el vendedor decide anularlo total o parcialmente.
