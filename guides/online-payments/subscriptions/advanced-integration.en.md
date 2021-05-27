@@ -1,10 +1,3 @@
----
-sites_supported:
-  - mla
-  - mlm
-  - mlb
----
-
 # Subscription updates
 
 To update, pause, cancel or reactivate a subscription already created, you need to use the `preapproval_id` that returns after the [creation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/introduction). 

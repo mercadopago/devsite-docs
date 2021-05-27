@@ -127,7 +127,7 @@ Expected response:
 
 ## 3. Integrate the API
 
-To collect on behalf of your sellers you must integrate the [API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction), using the `access_token` of each seller for your application.
+To collect on behalf of your sellers you must integrate the [API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction), generating the payment with the Access Token you obtained by linking each seller to your application.
 
 If you want to charge a fee for each payment processed by your application on behalf of your seller, simply add that amount to the `application_fee` parameter when creating the preference:
 

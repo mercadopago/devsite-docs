@@ -1,10 +1,3 @@
----
-sites_supported:
-  - mla
-  - mlm
-  - mlb
----
-
 # Teste de assinaturas
 
 Explicamos como usar nossos cartões e usuários de teste para verificar se suas assinaturas foram criadas corretamente.
@@ -30,7 +23,7 @@ Execute o curl a seguir para gerar um usuário de teste:
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
--H "Authorization: Bearer ENV_ACCESS_TOKEN" \
+-H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
 "https://api.mercadopago.com/users/test_user" \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```

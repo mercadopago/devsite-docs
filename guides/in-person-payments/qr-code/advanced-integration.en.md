@@ -2,8 +2,17 @@
 
 ## Refunds
 
+----[mla, mlm, mco, mlu, mlb, mlc]----
+
 Refunds happen when a payment was completed but the seller decides to cancel it partially or totally. You can find information in [Refunds and cancellations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds) section.
 
+------------
+
+----[mpe]----
+
+Refunds happen when a payment was completed but the seller decides to cancel it totally. You can find information in [Refunds and cancellations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds) section.
+
+------------
 > WARNING
 > 
 > Note

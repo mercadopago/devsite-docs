@@ -4,9 +4,9 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ---
 
-## Mayo 2021
+## Junio 2021
 
-### 27 de mayo
+### 3 de junio
 
 > CHANGELOG
 >
@@ -21,7 +21,7 @@ Crea reportes personalizados con los campos o atributos que necesites.
 [Ir a documentación de Generación de reportes por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/api)
 
 
-### 27 de mayo
+### 3 de junio
 
 > CHANGELOG
 >
@@ -34,6 +34,84 @@ Crea reportes personalizados con los campos o atributos que necesites.
 Elije los campos o atributos que necesites para crear un reporte personalizado.
 
 [Ir a documentación de Generación de reportes por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/api)
+
+
+## Mayo 2021
+
+
+----[mpe]----
+
+### 20 de mayo
+
+> CHANGELOG
+>
+> Actualizamos las devoluciones de los pagos
+>
+> NEWS: NOVEDADES
+>
+> PRODUCT: MERCADO PAGO
+
+Ahora solamente puedes realizar devoluciones totales de los pagos.
+
+[Ir a documentación de Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds#bookmark_devoluciones)
+
+------------
+
+### 19 de mayo
+
+> CHANGELOG
+>
+> Nueva versión SDK PHP
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK PHP
+
+Lanzamos una nueva versión de la SDK PHP 1.11.0 y 2.3.0.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-php/releases).
+
+------------
+
+### 14 de mayo
+
+> CHANGELOG
+>
+> Cambios en la disponibilidad de datos de los pagadores
+>
+> NEWS: NOVEDADES
+>
+> PRODUCT: MERCADO PAGO
+
+Para asegurar el cuidado de datos personales de nuestros usuarios, modificamos la información que enviamos de los pagadores a través de la API de Pagos y reportes disponibles en la cuenta. Ahora solamente verás la información personal necesaria de los pagadores para su contacto que son el e-mail y tipo y número de documento.
+
+Si necesitas otro tipo de información para tu negocio, como el teléfono o dirección del pagador, tendrás que gestionarla exclusivamente en tu integración, ya que por razones de seguridad vamos a mantener la confidencialidad de estos datos.
+
+### 3 de mayo
+
+> CHANGELOG
+>
+> Nueva versión Magento 2
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: MAGENTO 2
+
+Lanzamos la nueva versión 3.8.4 para Magento 2.
+
+[Ir a documentación de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.4).
+
+---
 
 ## Abril 2021
 

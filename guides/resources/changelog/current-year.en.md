@@ -4,9 +4,9 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ---
 
-## May 2021
+## June 2021
 
-### May 27th
+### June 3rd
 
 > CHANGELOG
 >
@@ -21,7 +21,7 @@ Create customized reports with the fields or attributes you need.
 [Go to the API Report Generation documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/api)
 
 
-### May 27th
+### June 3rd
 
 > CHANGELOG
 >
@@ -34,6 +34,83 @@ Create customized reports with the fields or attributes you need.
 Choose the fields or attributes you need and create a customized report.
 
 [Go to the API Report Generation documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/api)
+
+
+## May 2021
+
+----[mpe]----
+
+### May 20th
+
+> CHANGELOG
+>
+> Updates on the refunds of payments
+>
+> NEWS: NEWS
+>
+> PRODUCT: MERCADO PAGO
+
+Now you can only make total returns of payments.
+
+[Go to Refunds and cancellations documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds#bookmark_refunds)
+
+------------
+
+### May 19th
+
+> CHANGELOG
+>
+> New version of SDK PHP
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK PHP
+
+We have released a new version of SDK PHP 1.11.0 and 2.3.0.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-php/releases) for further details regarding this release.
+
+------------
+
+### May 14th
+
+> CHANGELOG
+>
+> Changes in the availability of payer data
+>
+> NEWS: NEWS
+>
+> PRODUCT: MERCADO PAGO
+
+To ensure the care of our users' personal data, we modified the information we send from the payers through the Payments API and reports available in the account. Now you will only see the necessary personal information of the payers for your contact who are the e-mail and type and number of document.
+
+If you need other types of information for your business, such as the payer’s phone or address, you will have to manage it exclusively in your integration, since we will maintain the confidentiality of this data for security reasons. 
+
+### May 3rd
+
+> CHANGELOG
+>
+> New Magento 2 plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: MAGENTO 2
+
+We have released the new version 3.8.4 for Magento 2.
+
+[Go to Magento 2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.4) for further details regarding this release.
+
+---
 
 ## April 2021
 

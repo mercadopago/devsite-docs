@@ -4,9 +4,9 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
-## Maio 2021
+## Junho 2021
 
-### 27 de maio
+### 3 de junho
 
 > CHANGELOG
 >
@@ -21,7 +21,7 @@ Crie relatórios personalizados com os campos ou características que precisar.
 [Ir para documentação de Geração de relatórios por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/api)
 
 
-### 27 de maio
+### 3 de junho
 
 > CHANGELOG
 >
@@ -34,6 +34,83 @@ Crie relatórios personalizados com os campos ou características que precisar.
 Escolha os campos ou características que precisar e crie um relatório personalizado.
 
 [Ir para documentação de Geração de relatórios por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/api)
+
+## Maio 2021
+
+
+----[mpe]----
+
+### 20 de maio
+
+> CHANGELOG
+>
+> Atualizamos as devoluções dos pagamentos
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: MERCADO PAGO
+
+Agora você só pode realizar devoluções totais dos pagamentos.
+
+[Ir para a documentação de Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds#bookmark_devoluções)
+
+------------
+
+### 19 de maio
+
+> CHANGELOG
+>
+> Nova versão SDK PHP
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK PHP
+
+Lançamos a nova versão 1.11.0 e 2.3.0 do SDK PHP.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-php/releases).
+
+------------
+
+### 14 de maio
+
+> CHANGELOG
+>
+> Mudanças na disponibilidade dados de compradores
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: MERCADO PAGO
+
+Para assegurar o cuidado com os dados pessoais dos nossos usuários, modificamos a informação que enviamos dos compradores através da API de Pagamentos e relatórios disponíveis na conta. Agora somente será possível ver a informação pessoal dos compradores necessária para contato, que são o e-mail, tipo e número de documento.
+
+Se precisar de outro tipo de informação para seu negócio, como telefone ou endereço do comprador, você terá que capturá-la diretamente na sua aplicação, já que por razões de segurança vamos manter a confidencialidade desses dados.
+
+### 3 de maio
+
+> CHANGELOG
+>
+> Nova versão Magento 2
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MAGENTO 2
+
+Lançamos a nova versão 3.8.4 para Magento 2.
+
+[Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.4).
+
+---
 
 ## Abril 2021
 

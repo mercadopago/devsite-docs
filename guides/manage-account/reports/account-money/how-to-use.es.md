@@ -14,13 +14,13 @@ El reporte está compuesto por distintos tipo de transacciones que puedes ver en
 | Transacciones | Tipo de operación |
 | --- | --- |
 | *SETTLEMENT* |<br/> Operación aprobada.<br/><br/>|
-| *REFUND* |<br/> Devolución total o parcial de dinero.<br/><br/> |
+| *REFUND* | ----[mla, mlm, mco, mlu, mlb, mlc]---- <br/> Devolución total o parcial de dinero.<br/><br/> ------------ ----[mpe]---- <br/> Devolución total de dinero.<br/><br/> ------------ |
 | *CHARGEBACK* |<br/> Contracargo.<br/><br/> |
 | *DISPUTE* |<br/> Operación en reclamo.<br/><br/>|
 | *WITHDRAWAL* |<br/> Retiro de dinero.<br/><br/>|
 | *CASHBACK* |<br/> Devolución de dinero.<br/><br/> |
 | *SETTLEMENT_SHIPPING* |<br/> Envíos aprobados.<br/><br/> |
-| *REFUND_SHIPPING* |<br/> Devolución total o parcial de costos de envíos.<br/><br/> |
+| *REFUND_SHIPPING* | ----[mla, mlm, mco, mlu, mlb, mlc]---- <br/> Devolución total o parcial de costos de envíos.<br/><br/> ------------ ----[mpe]---- <br/> Devolución de costos de envíos.<br/><br/> ------------|
 | *CHARGEBACK_SHIPPING* |<br/> Contracargo de envíos.<br/><br/> |
 | *DISPUTE_SHIPPING* |<br/> Envíos en reclamo.<br/><br/> |
 

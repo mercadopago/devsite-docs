@@ -46,7 +46,7 @@ curl -X PUT \
         "detailed": true,
         "execute_after_withdrawal": true,
         "extended": true,
-        "schedule":true,
+        "scheduled": true,
         "frequency": {
             "hour": 0,
             "type": "monthly",
@@ -69,7 +69,7 @@ $data = '{
         "detailed": true,
         "execute_after_withdrawal": true,
         "extended": true,
-        "schedule":true,
+        "scheduled": true,
         "frequency": {
             "hour": 0,
             "type": "monthly",
@@ -128,7 +128,7 @@ data = '{
             "detailed": true,
             "execute_after_withdrawal": true,
             "extended": true,
-            "schedule":true,
+            "scheduled": true,
             "frequency": {"hour": 0,"type": "monthly","value": 1}
 
         }'
@@ -150,7 +150,7 @@ var dataString = '{
         "detailed": true,
         "execute_after_withdrawal": true,
         "extended": true,
-        "schedule":true,
+        "scheduled": true,
         "frequency": {
             "hour": 0,
             "type": "monthly",

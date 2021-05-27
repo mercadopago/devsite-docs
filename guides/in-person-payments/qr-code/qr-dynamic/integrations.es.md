@@ -19,7 +19,7 @@ Ejecuta la siguiente llamada a la API para generar una orden. En la respuesta re
 
 ```curl
 curl -X POST \
- https://api.mercadopago.com/instore/orders/qr/seller/collector/USER_ID/pos/EXTERNAL_POS_ID/qrs \
+ https://api.mercadopago.com/instore/orders/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/qrs \
   -H 'Authorization: Bearer ACCESS_TOKEN' \
  -d '{
    "external_reference": "order-id-1234",
@@ -64,8 +64,8 @@ La respuesta será un string con el estándar EMVCo. Usa el `qr_data` para dispo
 
 ----[mlb]----
 
-Si en tu cuenta de Mercado Pago **tiene una llave PIX configurada**, la estrutura del string de datos tendrá datos referentes a Pix. 
-Por ejemplo.
+Si en tu cuenta de Mercado Pago **tiene una llave Pix configurada**, la estructura del string de datos tendrá datos referentes a Pix. 
+Por ejemplo:
 
 ```json
 {
@@ -84,7 +84,7 @@ Ejecuta la siguiente llamada a la API para generar la orden y la asignación a l
 
 ```curl
 curl -X PUT \
- https://api.mercadopago.com/instore/orders/qr/seller/collector/USER_ID/pos/EXTERNAL_POS_ID/qrs \
+ https://api.mercadopago.com/instore/orders/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/qrs \
   -H 'Authorization: Bearer ACCESS_TOKEN' \
  -d '{
    "external_reference": "order-id-1234",

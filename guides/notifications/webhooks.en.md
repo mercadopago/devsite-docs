@@ -71,6 +71,11 @@ The notification sent has the following format:
 ```
 This indicates that payment **999999999** was created for the user **44444** in **production mode** with the V1 version of the API. That event took place on **2016-03-25T10:04:58.396-04:00**.
 
+> WARNING
+>
+> Important
+>
+> Please note that it is not possible to receive notifications in a test environment.
 
 ## What should I do when I receive a notification?
 
