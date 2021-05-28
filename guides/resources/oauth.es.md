@@ -11,8 +11,8 @@ Puedes hacerlo a través de OAuth, una funcionalidad de vinculación segura que 
 ###### Cómo incorporar OAuth 
 
 Para poder hacer una vinculación entre la cuenta de tu aplicación y las de tus vendedores es necesario realizar la autorización a través de OAuth.
-Para comenzar, sigue estos pasos:
 
+Para comenzar, sigue estos pasos:
 1. Crea o configura tu aplicación
 2. Vincula una cuenta de Mercado Pago con tu aplicación
 3. Genera las credenciales para operar
@@ -20,9 +20,11 @@ Para comenzar, sigue estos pasos:
 ## 1. Crea y configura tu aplicación
 
 Primero debes tener creada tu aplicación con un nombre único que la identifique.
+
 Luego, necesitarás **configurar una Redirect URL para tu aplicación**. Para eso, ve a [Tus Aplicaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel), haz clic en el menú de opciones de tu aplicación y selecciona Editar. En el campo Redirect URL, agrega la dirección a la que quieres redirigir a los vendedores luego de ser vinculados correctamente. 
 
 Ten en cuenta que la dirección que agregues es a donde recibirás los códigos de autorización de cada uno de ellos para la creación de las credenciales.
+
 Finalmente, debes obtener el ID de tu aplicación en [Tus Integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).  
 
 ## 2. Vincula una cuenta de Mercado Pago con tu aplicación
@@ -34,7 +36,7 @@ Para esto, debes incluir en tu aplicación una URL que redirija al vendedor al s
 Te compartimos la URL base que debes utilizar y el detalle de los parámetros con los que tienes que completarla.
 
 ```url
-https://auth.mercadopago.com.ar/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com
+https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com
 ```
 
 | Parámetro | Dato a completar |
@@ -60,6 +62,7 @@ https://www.redirect-url.com?code=CODE&state=RANDOM_ID
 Para crear las credenciales necesarias para que tu aplicación pueda operar en nombre de un vendedor, deberás enviar el `CODE` que obtuviste en el paso anterior a través de la API de OAuth.
 
 Los parámetros que debes incluir son:
+
 | Parámetro | Dato a completar |
 | ----------------- | ----------------- |
 | `client_secret` | Este es tu `ACCESS_TOKEN`. Puedes obtenerlo desde [Tus Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials). |
@@ -111,7 +114,7 @@ Además, recibirás la `public_key` del vendedor, que es la credencial o clave p
 **Los datos que recibes de tus vendedores tienen una validez de 180 días**. Una vez transcurrido ese tiempo, deberás volver a solicitar la autorización al vendedor.
 Para evitarlo, renueva los datos antes de ese periodo de tiempo para asegurarte que siempre estén vigentes. 
 
-Para renovarlos, deberás realizar el siguiente llamado a la API de OAuth.
+Para renovarlos, deberás realizar el siguiente llamado a la API de OAuth:
 
 ```curl
 curl -X POST \
@@ -127,7 +130,7 @@ curl -X POST \
 | ----------------- | ----------------- |
 | `client_secret` | Utiliza tu `ACCESS_TOKEN`. |
 | `grant_type` | Incluye `refresh_token`, que no se modifica. |
-| `code` | Valor que recibiste junto con los datos del vendedor. | 
+| `refresh_token` | Valor que recibiste junto con los datos del vendedor. | 
 
 Recibirás la siguiente respuesta:
 
@@ -145,7 +148,7 @@ Recibirás la siguiente respuesta:
 > 
 > Nota
 > 
-> Recuerda que cada vez que renueves las credenciales, el refresh_token también cambiará, por lo que deberás almacenarlo nuevamente.
+> Recuerda que cada vez que renueves las credenciales, el `refresh_token` también cambiará, por lo que deberás almacenarlo nuevamente.
 >
 > En caso de encontrar algún error a la hora de renovar las credenciales, recuerda que puedes consultarlo en la [referencia de códigos de error](https://developers.mercadolibre[FAKER][URL][DOMAIN]/es_ar/autenticacion-y-autorizacion).
 
@@ -153,7 +156,7 @@ Recibirás la siguiente respuesta:
 
 Puedes recibir notificaciones cada vez que un vendedor se vincule o desvincule de tu aplicación. Para configurarlas, sigue estos pasos:
 
-1. Ingresa a Tus aplicaciones y selecciona la aplicación que utilizas para el flujo de OAuth.
+1. Ingresa a [Tus aplicaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel) y selecciona la aplicación que utilizas para el flujo de OAuth.
 
 2. Ve a la pestaña "Notificaciones Webhooks". Una vez dentro de la sección, ve al campo "Modo Producción" y agrega la URL a la cual deberán llegar las notificaciones. Si lo deseas, puedes hacer clic en el botón "Probar" para comprobar que la URL que asignaste reciba correctamente las Notificaciones Webhooks.
 
@@ -166,7 +169,7 @@ Estos son algunos de los datos que podrás encontrar dentro de las notificacione
 | Atributo | Valor o tipo | Descripción |
 | ----------------- | ----------------- | --------------- |
 | `type` | `mp-connect` | Identifica a la notificación del tipo vinculación de cuentas. |
-| `action` | application.authorized | Informa que el vendedor se ha vinculado a la aplicación. |
+| `action` | `application.authorized` | Informa que el vendedor se ha vinculado a la aplicación. |
 | `action` | `application.deauthorized` | Confirma que el vendedor se ha desvinculado de la aplicación. |
 | `data.id`| `string`| ID del vendedor vinculado a la aplicación. |
 
