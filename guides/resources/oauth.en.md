@@ -55,7 +55,11 @@ https://www.redirect-url.com?code=CODE&state=RANDOM_ID
 
 > Remember that the `code` value lasts for 10 minutes.
 
-## 3. Generate credentials to operate
+> SERVER_SIDE
+>
+> h2
+>
+> 3. Generate credentials to operate
 
 To create the necessary credentials to operate your application in the name of a seller, send the `CODE` you got in the previous step via OAuth API.
 
@@ -83,7 +87,6 @@ In the response, you will get the `access_token` of the linked seller.
 You will also get a `refresh_token` to be later used to refresh your sellers' credentials. 
 
 You will also receive the seller's `public_key`, which is the credential or public key to be used for your frontend account identification. 
- 
 
 ```json
 {

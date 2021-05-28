@@ -57,7 +57,11 @@ https://www.redirect-url.com?code=CODE&state=RANDOM_ID
 
 > Ten en cuenta que el valor `code` tiene un tiempo de validez de 10 minutos.
 
-## 3. Genera las credenciales para operar
+> SERVER_SIDE
+>
+> h2
+>
+> 3. Genera las credenciales para operar
 
 Para crear las credenciales necesarias para que tu aplicación pueda operar en nombre de un vendedor, deberás enviar el `CODE` que obtuviste en el paso anterior a través de la API de OAuth.
 
