@@ -62,7 +62,7 @@ https://www.redirect-url.com?code=CODE&state=RANDOM_ID
 >
 > h2
 >
-> ## 3. Gere as credenciais para operar
+> 3. Gere as credenciais para operar
 
 Para criar as credenciais necessárias para que seu aplicativo possa operar em nome de um vendedor, você terá que enviar o `CODE` obtido no passo anterior através da API de OAuth.
 
