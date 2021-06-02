@@ -4,8 +4,27 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ---
 
-## Mayo 2021
+## Junio 2021
 
+----[mlc]----
+
+### 3 de junio
+
+> CHANGELOG
+>
+> Crea suscripciones para cobrar de forma recurrente
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: SUSCRIPCIONES
+
+Las suscripciones de Mercado Pago te permiten recibir pagos de forma recurrente, con tarjeta de crédito y débito. Puedes establecer la periodicidad de cobro que deseas y el tiempo en el que quieres mantener activa la suscripción.
+
+[Crear suscripciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/introduction)
+
+------------
+
+## Mayo 2021
 
 ----[mpe]----
 
@@ -43,7 +62,6 @@ Lanzamos una nueva versión de la SDK PHP 1.11.0 y 2.3.0.
 >
 > Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-php/releases).
 
-------------
 
 ### 14 de mayo
 

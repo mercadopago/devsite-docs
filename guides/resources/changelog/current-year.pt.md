@@ -4,8 +4,28 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
-## Maio 2021
+## Junho 2021
 
+----[mlc]----
+
+### 5 de junho
+
+> CHANGELOG
+>
+> Crie assinaturas para cobrar de forma recorrente
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: ASSINATURAS
+
+As assinaturas do Mercado Pago permitem que você receba pagamentos recorrentes com cartão. Você pode definir a frequência de pagamento desejada e o período de tempo que quer manter a assinatura ativa.
+
+[Criar assinaturas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/introduction)
+
+------------
+
+
+## Maio 2021
 
 ----[mpe]----
 
@@ -43,7 +63,6 @@ Lançamos a nova versão 1.11.0 e 2.3.0 do SDK PHP.
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-php/releases).
 
-------------
 
 ### 14 de maio
 

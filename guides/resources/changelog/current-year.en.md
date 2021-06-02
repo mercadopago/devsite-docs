@@ -4,8 +4,27 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ---
 
-## May 2021
+## June 2021
 
+----[mlc]----
+
+### June 3rd
+
+> CHANGELOG
+>
+> Create subscriptions for recurring billing
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: SUBSCRIPTIONS
+
+Mercado Pago subscriptions allow you to receive recurring payments by credit and debit card. You can set the periodicity of collection you want and the time you want to keep the subscription active.
+
+[Create subscriptions](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/introduction)
+
+------------
+
+## May 2021
 
 ----[mpe]----
 
@@ -43,7 +62,6 @@ We have released a new version of SDK PHP 1.11.0 and 2.3.0.
 >
 > [Check GitHub](https://github.com/mercadopago/sdk-php/releases) for further details regarding this release.
 
-------------
 
 ### May 14th
 
