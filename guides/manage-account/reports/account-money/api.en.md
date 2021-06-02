@@ -105,7 +105,6 @@ You will receive an `HTTP STATUS 200 (OK)` in response.
         }
     ]
 }
-}
 ```
 
 ### Create configuration 
