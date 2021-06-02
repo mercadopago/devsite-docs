@@ -127,11 +127,17 @@ curl -X POST \
                 "type": "monthly",
                 "value": 1
             },
-            "columns": {
-                "key": "DATE",
-                "key": "SOURCE_ID",
-                "key": "EXTERNAL_REFERENCE"
-            }
+            "columns": [
+                {
+                    "key": "DATE"
+                },
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
     }'
 ```
 ```php
@@ -155,11 +161,17 @@ $data = '{
                 "type": "monthly",
                 "value": 1
             },
-            "columns": {
-                "key": "DATE",
-                "key": "SOURCE_ID",
-                "key": "EXTERNAL_REFERENCE"
-            }
+            "columns": [
+                {
+                    "key": "DATE"
+                },
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
         }';
 $response = Requests::post('https://api.mercadopago.com/v1/account/settlement_report/config', $headers, $data);
 ```
@@ -188,9 +200,10 @@ String body = "{
                         \\"value\\": 1
                     },
                     \\"columns\\": [
-                    { \\"key\\": \\"DATE\\" },
-                    { \\"key\\": \\"SOURCE_ID\\" },
-                    { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
+                        { \\"key\\": \\"DATE\\" },
+                        { \\"key\\": \\"SOURCE_ID\\" },
+                        { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
+                    ]
                 }";
 
 try(OutputStream os = connection.getOutputStream()) {
@@ -223,11 +236,17 @@ data = '{
                 "type": "monthly",
                 "value": 1
             },
-            "columns": {
-                "key": "DATE",
-                "key": "SOURCE_ID",
-                "key": "EXTERNAL_REFERENCE"
-            }
+            "columns": [
+                {
+                    "key": "DATE"
+                },
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
         }'
 
 response = requests.post('https://api.mercadopago.com/v1/account/settlement_report/config', headers=headers, data=data)
@@ -253,11 +272,17 @@ var dataString = '{
                 "type": "monthly",
                 "value": 1
             },
-            "columns": {
-                "key": "DATE",
-                "key": "SOURCE_ID",
-                "key": "EXTERNAL_REFERENCE"
-            }
+            "columns": [
+                {
+                    "key": "DATE"
+                },
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
     }';
 
 var options = {
@@ -331,11 +356,17 @@ curl -X PUT \
             "type": "monthly",
             "value": 1
         },
-        "columns": {
-            "key": "DATE",
-            "key": "SOURCE_ID",
-            "key": "EXTERNAL_REFERENCE"
-        }
+        "columns": [
+            {
+                "key": "DATE"
+            },
+            {
+                "key": "SOURCE_ID"
+            },
+            {
+                "key": "EXTERNAL_REFERENCE"
+            }
+        ]
     }'
 ```
 ```PHP
@@ -359,11 +390,17 @@ $data = '{
             "type": "monthly",
             "value": 1
         },
-        "columns": {
-            "key": "DATE",
-            "key": "SOURCE_ID",
-            "key": "EXTERNAL_REFERENCE"
-        }
+        "columns": [
+            {
+                "key": "DATE"
+            },
+            {
+                "key": "SOURCE_ID"
+            },
+            {
+                "key": "EXTERNAL_REFERENCE"
+            }
+        ]
     }';
 $response = Requests::put('https://api.mercadopago.com/v1/account/settlement_report/config', $headers, $data);
 ```
@@ -391,10 +428,11 @@ String body = "{
                         \\"type\\": \\"monthly\\",
                         \\"value\\": 1
                     },
-                    \\"columns\\": [
-                    { \\"key\\": \\"DATE\\" },
-                    { \\"key\\": \\"SOURCE_ID\\" },
-                    { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
+                        \\"columns\\": [
+                        { \\"key\\": \\"DATE\\" },
+                        { \\"key\\": \\"SOURCE_ID\\" },
+                        { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
+                    ]
             }";
 
 try(OutputStream os = connection.getOutputStream()) {
@@ -427,11 +465,17 @@ data = '{
                 "type": "monthly",
                 "value": 1
             },
-            "columns": {
-                "key": "DATE",
-                "key": "SOURCE_ID",
-                "key": "EXTERNAL_REFERENCE"
-            }
+            "columns": [
+                {
+                    "key": "DATE"
+                },
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
         }'
 
 response = requests.put('https://api.mercadopago.com/v1/account/settlement_report/config', headers=headers, data=data)
@@ -457,11 +501,17 @@ var dataString = '{
             "type": "monthly",
             "value": 1
         },
-        "columns": {
-            "key": "DATE",
-            "key": "SOURCE_ID",
-            "key": "EXTERNAL_REFERENCE"
-        }
+        "columns": [
+            {
+                "key": "DATE"
+            },
+            {
+                "key": "SOURCE_ID"
+            },
+            {
+                "key": "EXTERNAL_REFERENCE"
+            }
+        ]
     }';
 
 var options = {
@@ -521,7 +571,7 @@ Confira os campos que você pode configurar para ajustar suas preferências ante
 | Campos configuráveis | Descrição |
 | --- | --- |
 | *`coupon_detailed` (opcional)* | <br/>Inclui uma coluna para mostrar os detalhes dos cupons de desconto.<br/><br/> |
-| `columns` | <br/>Campo com os detalhes das colunas a serem incluídas no seu relatório. Encontre todos os valores possíveis na seção [Glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/glossary).<br/><br/>|
+| `columns` | <br/>Campo com os detalhes das colunas a serem incluídas no seu relatório. Encontre todos os valores possíveis na seção [Glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/glossary).<br/><br/>|
 | `file_name_prefix` | <br/>Prefixo que compõe o nome do relatório assim que estiver gerado e pronto para baixar.<br/><br/> |
 | `frequency` | <br/>Indica a frequência diária, semanal ou mensal dos relatórios programados.<br/><br/> - `frequency` aplica type *monthly* ao dia do mês ou weekly ao dia da semana<br/> - `hour` hora do dia que o relatório deve ser gerado <br/> - `type` indica o tipo de frequência: *daily* (diária), *weekly* (semanal) e *monthly* (mensal).<br/><br/> |
 | *`refund_detailed` (opcional)* | <br/>Mostra o código de referência (`external_reference`) do reembolso em vez do código de referência (`external_reference`) do pagamento.<br/><br/> |
