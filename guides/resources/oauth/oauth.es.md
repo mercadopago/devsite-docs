@@ -1,7 +1,3 @@
----
-indexable: false  
----
-
 # Autoriza y vincula cuentas en tus aplicaciones
 
 Si en tu integración necesitas gestionar varias cuentas de Mercado Pago a la vez, solo tienes que realizar una vinculación entre tu aplicación y las cuentas de otras personas.
