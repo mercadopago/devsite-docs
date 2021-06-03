@@ -29,7 +29,7 @@ Crie relatórios personalizados com os campos ou características que precisar.
 >
 > NEWS: FEATURE
 >
-> Product: RELATÓRIOS
+> PRODUCT: RELATÓRIOS
 
 Escolha os campos ou características que precisar e crie um relatório personalizado.
 
