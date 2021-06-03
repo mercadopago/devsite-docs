@@ -1,14 +1,10 @@
----
-indexable: false  
----
-
 # Authorize and link accounts to your applications
 
 If your integration needs to manage several Mercado Pago accounts at the same time, you only need to link your application to other people's accounts.
 
 You can use OAuth, a feature for secure linking that allows sellers to access their Mercado Pago account to authorize and enable your application to work under their name. 
 
-###### How to add OAuth 
+## How to add OAuth 
 
 To link your application account to your sellers' accounts, you need to make an authorization through OAuth.
 
@@ -17,17 +13,19 @@ To start, follow these steps:
 2. Link a Mercado Pago account to your application
 3. Generate credentials to operate
 
-## 1. Create and set up your application
+<br>
 
-First you need to have your application created with a unique ID name.
+### Create and set up your application
 
-Then, you need to **set up a Redirect URL for your application**. Go to [Your Applications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel), click on your application's options and select Edit. In Redirect URL field add the URL to where you would like to redirect your sellers after they are correctly linked.
+First you need to have your [application created](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications/create-app) with a unique ID name.
 
-Remember that you will receive each of your sellers' authorization codes for their credentials in the URL you added.
+Then, you need to **set up a Redirect URL for your application**. Go to [Your Applications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel), click on your application's options and select Edit. 
+
+In Redirect URL field add the URL to where you would like to redirect your sellers after they are correctly linked. Remember that you will receive each of your sellers' authorization codes for their credentials in the URL you added.
 
 Lastly, you need to get your application ID in [Your Integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).   
 
-## 2. Link a Mercado Pago account to your application
+### Link a Mercado Pago account to your application
 
 To operate on your sellers' name via their Mercado Pago accounts you need to request their authorization first.
 
@@ -45,9 +43,16 @@ https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&resp
 | `state` | Identify who the code to be received belongs to; so replace `RANDOM_ID` value with a unique ID for each attempt without sensitive data. |
 | `redirect_uri` | Add the URL you entered in the Redirect URL field when you set up your application. | 
 
-When entering this URL, the seller will be redirected to Mercado Pago to log in his/her account and authorize the link to your application.
+When entering this URL, the seller will be redirected to Mercado Pago to log in their account and authorize the link to your application.
 
-Once the seller has authorized your application to link with his/her Mercado Pago account, you will receive an authorization code in the specified Redirect URL. It will appear like this: 
+----[mla, mlm, mlc, mco, mpe, mlu]----
+![FlujoOAuth-es](/images/oauth/oauth-es.png)
+------------
+----[mlb]----
+![FlujoOAuth-pt](/images/oauth/oauth-pt.png)
+------------
+
+Once the seller has authorized your application to link with their Mercado Pago account, you will receive an authorization code in the specified Redirect URL. It will appear like this: 
 
 ```url
 https://www.redirect-url.com?code=CODE&state=RANDOM_ID
@@ -57,9 +62,9 @@ https://www.redirect-url.com?code=CODE&state=RANDOM_ID
 
 > SERVER_SIDE
 >
-> h2
+> h3
 >
-> 3. Generate credentials to operate
+> Generate credentials to operate
 
 To create the necessary credentials to operate your application in the name of a seller, send the `CODE` you got in the previous step via OAuth API.
 
@@ -107,14 +112,14 @@ You will also receive the seller's `public_key`, which is the credential or publ
 > 
 > Remember that you will be using your seller's sensitive information.  Secure a backup and do not include it in your link URLs; manage such information from your server only.
 
-Ready! You already linked your seller's account to your application via OAuth. 
+Done! You already linked your seller's account to your application via OAuth. 
 
-> Remember that these steps need to be repeated with each account to link. 
+> Remember that these steps need to be repeated with each account you want to link. 
 
-## Refresh credentials
+## Renew credentials
 
 **Your sellers' data that you received last 180 days**.  After that, you need to request the seller's authorization again.
-To avoid this, refresh data before the deadline to ensure they are always current. 
+To avoid this, renew data before the deadline to ensure they are always current. 
 
 To refresh them, use the following OAuth API call:
 
@@ -148,25 +153,25 @@ You will receive the following response:
 
 > NOTE
 > 
-> Nota
+> Note
 > 
 > Remember that every time you refresh your credentials, the `refresh_token` will also change so you will need to store it again.
 >
->In case of errors when refreshing your credentials, remember that you can query them in the [error code reference](https://developers.mercadolibre[FAKER][URL][DOMAIN]/es_ar/autenticacion-y-autorizacion).
+> In case of errors when refreshing your credentials, remember that you can query them in the [error code reference](https://developers.mercadolibre.com.ar/en_us/authentication-and-authorization).
 
 ## Set up notifications
 
-You can get notifications every time a seller links to or unlinks from your application.  For setup, follow these steps:
+You can get notifications every time a seller links to or unlinks from your application. For setup, follow these steps:
 
 1. Access [Your Applications]((https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel)) and select the application used for OAuth flow.
 
-2. Go to "Notification Webhooks" tab. In this section, go to "Production Mode" and add the URL to receive notifications.  If you want, you can click on "Test" button to test that the assigned URL will receive Webhooks Notifications correctly.
+2. Go to "Webhooks Notifications" tab. In this section, go to "Production Mode" and add the URL to receive notifications.  If you want, you can click on "Test" button to test that the assigned URL will receive Webhooks Notifications correctly.
 
 3. Then, in "Events" field, select "Application Linking" option.  Lastly, click on save. 
 
-Ready! Every time a seller links or unlinks, a notification will be received in your assigned URL.
+Done! Every time a seller links or unlinks, a notification will be received in your assigned URL.
 
-Some data you can find in notifications are:
+These are some of the data that you can find within the notifications:
 
 | Attribute | Value or type | Description |
 | ----------------- | ----------------- | --------------- |
@@ -175,4 +180,4 @@ Some data you can find in notifications are:
 | `action` | `application.deauthorized` | Confirms that seller unlinked from application. |
 | `data.id`| `string`| ID of seller linked to application. |
 
-For more information, go to [Webhooks Notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks).
+For more information, go to [Webhooks Notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks).

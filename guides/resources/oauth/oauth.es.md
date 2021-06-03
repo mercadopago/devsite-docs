@@ -4,7 +4,7 @@ Si en tu integración necesitas gestionar varias cuentas de Mercado Pago a la ve
 
 Puedes hacerlo a través de OAuth, una funcionalidad de vinculación segura que permite que el vendedor ingrese a su cuenta de Mercado Pago, autorice la vinculación y habilite a tu aplicación para operar en su nombre. 
 
-###### Cómo incorporar OAuth 
+## Cómo incorporar OAuth 
 
 Para poder hacer una vinculación entre la cuenta de tu aplicación y las de tus vendedores es necesario realizar la autorización a través de OAuth.
 
@@ -13,17 +13,19 @@ Para comenzar, sigue estos pasos:
 2. Vincula una cuenta de Mercado Pago con tu aplicación
 3. Genera las credenciales para operar
 
-## 1. Crea y configura tu aplicación
+<br>
 
-Primero debes tener creada tu aplicación con un nombre único que la identifique.
+### Crea y configura tu aplicación
 
-Luego, necesitarás **configurar una Redirect URL para tu aplicación**. Para eso, ve a [Tus Aplicaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel), haz clic en el menú de opciones de tu aplicación y selecciona Editar. En el campo Redirect URL, agrega la dirección a la que quieres redirigir a los vendedores luego de ser vinculados correctamente. 
+Primero debes tener creada [tu aplicación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications/create-app) con un nombre único que la identifique.
 
-Ten en cuenta que la dirección que agregues es a donde recibirás los códigos de autorización de cada uno de ellos para la creación de las credenciales.
+Luego, necesitarás **configurar una Redirect URL para tu aplicación**. Para eso, ve a [Tus Aplicaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel), haz clic en el menú de opciones de tu aplicación y selecciona Editar. 
+
+En el campo Redirect URL, agrega la dirección a la que quieres redirigir a los vendedores luego de ser vinculados correctamente. Ten en cuenta que la dirección que agregues es a donde recibirás los códigos de autorización de cada uno de ellos para la creación de las credenciales.
 
 Finalmente, debes obtener el ID de tu aplicación en [Tus Integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).  
 
-## 2. Vincula una cuenta de Mercado Pago con tu aplicación
+### Vincula una cuenta de Mercado Pago con tu aplicación
 
 Para operar en nombre de tus vendedores a través de sus cuentas de Mercado Pago, primero debes solicitarles su autorización.
 
@@ -55,9 +57,9 @@ https://www.redirect-url.com?code=CODE&state=RANDOM_ID
 
 > SERVER_SIDE
 >
-> h2
+> h3
 >
-> 3. Genera las credenciales para operar
+> Genera las credenciales para operar
 
 Para crear las credenciales necesarias para que tu aplicación pueda operar en nombre de un vendedor, deberás enviar el `CODE` que obtuviste en el paso anterior a través de la API de OAuth.
 
@@ -82,6 +84,7 @@ curl -X POST \
 ```
 
 En la respuesta obtendrás el `access_token` del vendedor que se ha vinculado. 
+
 También recibirás el `refresh_token`, que más adelante te servirá para renovar las credenciales de tus vendedores. 
 
 Además, recibirás la `public_key` del vendedor, que es la credencial o clave pública que usarás para identificar la cuenta en tu frontend. 
