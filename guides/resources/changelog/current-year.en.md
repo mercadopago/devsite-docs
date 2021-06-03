@@ -14,7 +14,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 >
 > NEWS: FEATURE
 >
-> Product: REPORTS
+> PRODUCT: REPORTS
 
 Create customized reports with the fields or attributes you need.
 
