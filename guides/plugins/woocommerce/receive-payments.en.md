@@ -6,7 +6,7 @@
 >
 > Importante
 >
-> The payment statuses in woocommerce are not updated in test mode, once you are in productive mode you will be able to see them reflected.
+> The payment statuses in WooCommerce are not updated in test mode, you will be able to see them reflected once you are in productive mode.
 
 The Mercado Pago module comes with the Sandbox environment active by default. Simulate payments in the store with this testing environment and verify that everything works well before you start receiving real payments from your customers.
  

@@ -6,7 +6,7 @@
 >
 > Importante
 >
-> Los estados de pago en woocommerce no se actualizan en modo de prueba, una vez que te encuentres en modo productivo si podrás verlos reflejados.
+> Los estados de pago en WooCommerce no se actualizan en modo de prueba, podrás verlos reflejados una vez que te encuentres en modo productivo.
 
 El módulo de Mercado Pago viene con el entorno Sandbox activo por defecto. Simula pagos en la tienda con este entorno de pruebas y verifica que todo funciona bien antes de empezar a recibir pagos reales de tus clientes. 
  
