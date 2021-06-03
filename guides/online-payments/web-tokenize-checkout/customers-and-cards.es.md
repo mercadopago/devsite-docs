@@ -630,20 +630,22 @@ Respuesta:
 ```
 ## Modificar un Customer
 
-//esto es linea ejemplo
-En el caso en el que no sepas cuál es el `id` de tu `Customer`, puedes utilizar la API de `Customer Search` realizando un request `HTTP GET`. El parámetro requerido para esto es `email`:
+Para modificar un customer es necesario enviar el customer_id, el token y los campos que se vayan a modificar. Realizando un solicitud/request `HTTP PUT`.
 
-//lineas que yo agrego 
-Para modificar un customer es necesario enviar el customer_id, el token y los campos que se vayan a modificar
+De no enviar el parametro customer_id, se obtendra como resultado el mensaje `missing customer id`, ó si el parametro es equivocado retornará `customer id not found`.
 
 Ejemplo para el `body` con los campos `nuevos`:
 ```json
 {
-  "first_name": "nimbre modificado",
+  "first_name": "nombre",
   "address": {
     "zip_code": "12345678",
     "street_name": "street_name",
     "street_number": 2
+  },
+  "phone": {
+    "area_code": "11",
+    "number": "001234567"
   },
   "identification": {
     "type": "DNI",
@@ -651,10 +653,11 @@ Ejemplo para el `body` con los campos `nuevos`:
   },
   "metadata": {
     "metadata1": "asdsd",
-    "metadata2": 23
+    "metadata2": "23"
   }
 }
 ```
+
 [[[
 ```curl
 
@@ -663,30 +666,58 @@ curl -X PUT \
     -H 'Authorization: Bearer ACCESS_TOKEN_ENV' \ 
     -d '{
   "email": "user@user.com",
-  "first_name": "nombre modificado",
+  "first_name": "nombre",
   "last_name": "surname",
+  "address": {
+    "zip_code": "12345678",
+    "street_name": "street_name",
+    "street_number": "2"
+  },
   "phone": {
     "area_code": "11",
     "number": "001234567"
   },
   "identification": {
     "type": "DNI",
-    "number": "12345678900"
+    "number": "12341234"
   },
-  "default_address": "Home",
-  "address": {
-    "id": "123123",
-    "zip_code": "01234567",
-    "street_name": "Rua Exemplo",
-    "street_number": "123 A"
-  },
-  "date_registered": "2000-01-18",
-  "description": "Description del user",
-  "default_card": "None"
+  "description": "informacion" 
 }'
 
 ```
 ]]]
+
+Ejemplo de respuesta:
+```json
+{
+  "id": "xxxxxxxxxxxxxxxxxxxxx",
+  "email": "user@user.com",
+  "first_name": "nombre",
+  "last_name": "surname",
+  "phone": {
+    "area_code": "11",
+    "number": 001234567
+  },
+  "identification": {
+    "type": "DNI",
+    "number": 12341234
+  },
+  "address": {
+    "zip_code": "12345678",
+    "street_name": "street_name",
+    "street_number": 2
+  },
+  "description": "informacion",
+  "date_created": "2021-05-25T15:36:23.541Z",
+  "metadata": {},
+  "cards": [
+    {}
+  ],
+  "addresses": [
+    {}
+  ]
+}
+```
 > NOTE
 >
 > Nota

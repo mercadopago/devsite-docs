@@ -812,6 +812,82 @@ curl -X GET \
 }]
 ```
 
+## Modificar un Customer
+
+Para modificar un customer es necesario enviar el customer_id(en caso contrario retornara un mensaje `missing customer id` ), el token y los campos que se vayan a modificar. Realizando un solicitud/request `HTTP PUT`.
+
+[[[
+```curl
+
+curl -X PUT \
+    'https://api.mercadopago.com/v1/customers/{id}' \
+    -H 'Authorization: Bearer ACCESS_TOKEN_ENV' \ 
+    -d '{
+  "email": "user@user.com",
+  "first_name": "nombre",
+  "last_name": "surname",
+  "address": {
+    "zip_code": "12345678",
+    "street_name": "street_name",
+    "street_number": "2"
+  },
+  "phone": {
+    "area_code": "11",
+    "number": "001234567"
+  },
+  "identification": {
+    "type": "DNI",
+    "number": "12341234"
+  },
+  "description": "informacion" 
+}'
+
+```
+]]]
+
+Ejemplo de Respuesta obtenida para el envio correcto del `customer_id`:
+```json
+{
+  "id": "xxxxxxxxxxxxxxxxxxxxx",
+  "email": "user@user.com",
+  "first_name": "nombre",
+  "last_name": "surname",
+  "phone": {
+    "area_code": "11",
+    "number": 001234567
+  },
+  "identification": {
+    "type": "DNI",
+    "number": 12341234
+  },
+  "address": {
+    "zip_code": "12345678",
+    "street_name": "street_name",
+    "street_number": 2
+  },
+  "description": "informacion",
+  "date_created": "2021-05-25T15:36:23.541Z",
+  "metadata": {},
+  "cards": [
+    {}
+  ],
+  "addresses": [
+    {}
+  ]
+}
+```
+Ejemplo de respuesta al request sin el parametro `customers_id`:
+```json
+{
+  "message": "missing customer id"
+}
+```
+> NOTE
+>
+> Nota
+>
+> (si no puede determinar el `customer_id`, consulte a la API de `Customer Search` generando un request `HTTP GET`, enviando el parametro `email`)
+
 ## Cancelaciones y devoluciones
 
 Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes de la fecha de vencimiento y el vendedor decide cancelarlo. Y las devoluciones suceden cuando el pago se realizó pero el vendedor decide anularlo total o parcialmente.
