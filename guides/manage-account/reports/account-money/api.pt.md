@@ -428,7 +428,7 @@ String body = "{
                         \\"type\\": \\"monthly\\",
                         \\"value\\": 1
                     },
-                        \\"columns\\": [
+                    \\"columns\\": [
                         { \\"key\\": \\"DATE\\" },
                         { \\"key\\": \\"SOURCE_ID\\" },
                         { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
