@@ -4,9 +4,9 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ---
 
-## Junio 2021
-
 ----[mlc]----
+
+## Junio 2021
 
 ### 3 de junio
 
@@ -26,9 +26,9 @@ Las suscripciones de Mercado Pago te permiten recibir pagos de forma recurrente,
 
 ## Mayo 2021
 
-----[mpe]----
-
 ### 20 de mayo
+
+----[mpe]----
 
 > CHANGELOG
 >
@@ -43,6 +43,24 @@ Ahora solamente puedes realizar devoluciones totales de los pagos.
 [Ir a documentación de Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds#bookmark_devoluciones)
 
 ------------
+
+> CHANGELOG
+>
+> Nueva versión Magento 2
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: MAGENTO 2
+
+Lanzamos la nueva versión 3.8.5 para Magento 2.
+
+[Ir a documentación de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.5).
 
 ### 19 de mayo
 
