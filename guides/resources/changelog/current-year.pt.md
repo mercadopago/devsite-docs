@@ -4,6 +4,26 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
+----[mlc]----
+
+## Junho 2021
+
+### 3 de junho
+
+> CHANGELOG
+>
+> Crie assinaturas para cobrar de forma recorrente
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: ASSINATURAS
+
+As assinaturas do Mercado Pago permitem que você receba pagamentos recorrentes com cartão de crédito e débito. Você pode definir a frequência de pagamento desejada e o período de tempo que quer manter a assinatura ativa.
+
+[Criar assinaturas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/introduction)
+
+------------
+
 ## Maio 2021
 
 ### 31 de maio
@@ -12,7 +32,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 >
 > Nova versão PrestaShop
 >
-> NEW_VERSION: NOVA VERSÃO
+> FEATURE: FEATURE
 >
 > PRODUCT: PRESTASHOP
 

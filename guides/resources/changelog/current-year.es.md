@@ -4,6 +4,26 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ---
 
+----[mlc]----
+
+## Junio 2021
+
+### 3 de junio
+
+> CHANGELOG
+>
+> Crea suscripciones para cobrar de forma recurrente
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: SUSCRIPCIONES
+
+Las suscripciones de Mercado Pago te permiten recibir pagos de forma recurrente, con tarjeta de crédito y débito. Puedes establecer la periodicidad de cobro que deseas y el tiempo en el que quieres mantener activa la suscripción.
+
+[Crear suscripciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/introduction)
+
+------------
+
 ## Mayo 2021
 
 ### 31 de mayo
@@ -12,7 +32,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 >
 > Nueva versión PrestaShop
 >
-> NEW_VERSION: NUEVA VERSIÓN
+> FEATURE: FEATURE
 >
 > PRODUCT: PRESTASHOP
 
@@ -25,7 +45,6 @@ Lanzamos la nueva versión 4.6.0 para PrestaShop.
 > GitHub
 >
 > Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.6.0).
-
 
 ### 20 de mayo
 
