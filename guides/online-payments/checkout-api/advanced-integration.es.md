@@ -820,14 +820,23 @@ Ejemplo de datos a enviar:
 ```json
 {
   ...
-  "issuer_id": "32",
+  "issuer_id": "61",
   "payment_method_id": "visa",
   ...
 }
 ```
+Respuesta:
+```json
+{
+  "issuer_id": "61",
+	"issuer_name": "user",
+	"payment_method_id":"visa",
+	"payment_type_id": "debit_card"
+}
+```
 
 En caso de no enviar dichos campos se generarán errores que luego se retornará con un statuCode 4XX
-Ejemplo de respuesta:
+Ejemplo de respuesta en caso de error:
 ```json
 {
     "message": "invalid parameter. Cannot resolve the payment method of card, check the payment_method_id and issuer_id",

@@ -312,6 +312,16 @@ Ejemplo de datos a enviar:
 }
 ```
 
+Respuesta:
+```json
+{
+  "issuer_id": "32",
+	"issuer_name": "name",
+	"payment_method_id":"visa",
+	"payment_type_id": "credit_card"
+}
+```
+
 > Esta documentación utiliza la nueva versión de la librería. Para ver la versión anterior, ve a la [sección de Clientes y tarjetas almacenadas con MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/web-tokenize-checkout/v1/customers-and-cards).
 
 
