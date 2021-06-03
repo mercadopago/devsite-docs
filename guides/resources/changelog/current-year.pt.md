@@ -6,7 +6,43 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Maio 2021
 
+### 31 de maio
+
+> CHANGELOG
+>
+> Nova versão PrestaShop
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: PRESTASHOP
+
+Lançamos a nova versão 4.6.0 para PrestaShop.
+
+[Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.6.0).
+
 ### 20 de maio
+
+----[mpe]----
+
+> CHANGELOG
+>
+> Atualizamos as devoluções dos pagamentos
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: MERCADO PAGO
+
+Agora você só pode realizar devoluções totais dos pagamentos.
+
+[Ir para a documentação de Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds#bookmark_devoluções)
+
+------------
 
 > CHANGELOG
 >
@@ -26,24 +62,6 @@ Lançamos a nova versão 3.8.5 para Magento 2.
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.5).
 
-----[mpe]----
-
-### 20 de maio
-
-> CHANGELOG
->
-> Atualizamos as devoluções dos pagamentos
->
-> NEWS: NOVIDADES
->
-> PRODUCT: MERCADO PAGO
-
-Agora você só pode realizar devoluções totais dos pagamentos.
-
-[Ir para a documentação de Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds#bookmark_devoluções)
-
-------------
-
 ### 19 de maio
 
 > CHANGELOG
@@ -61,8 +79,6 @@ Lançamos a nova versão 1.11.0 e 2.3.0 do SDK PHP.
 > GitHub
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-php/releases).
-
-------------
 
 ### 14 de maio
 

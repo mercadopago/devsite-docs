@@ -6,7 +6,43 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## May 2021
 
+### May 31st
+
+> CHANGELOG
+>
+> New PrestaShop plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: PRESTASHOP
+
+We have released the new version 4.6.0 for PrestaShop.
+
+[Go to PrestaShop documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.6.0) for further details regarding this release.
+
 ### May 20th
+
+----[mpe]----
+
+> CHANGELOG
+>
+> Updates on the refunds of payments
+>
+> NEWS: NEWS
+>
+> PRODUCT: MERCADO PAGO
+
+Now you can only make total returns of payments.
+
+[Go to Refunds and cancellations documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds#bookmark_refunds)
+
+------------
 
 > CHANGELOG
 >
@@ -26,24 +62,6 @@ We have released the new version 3.8.5 for Magento 2.
 >
 > [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.5) for further details regarding this release.
 
-----[mpe]----
-
-### May 20th
-
-> CHANGELOG
->
-> Updates on the refunds of payments
->
-> NEWS: NEWS
->
-> PRODUCT: MERCADO PAGO
-
-Now you can only make total returns of payments.
-
-[Go to Refunds and cancellations documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds#bookmark_refunds)
-
-------------
-
 ### May 19th
 
 > CHANGELOG
@@ -61,8 +79,6 @@ We have released a new version of SDK PHP 1.11.0 and 2.3.0.
 > GitHub
 >
 > [Check GitHub](https://github.com/mercadopago/sdk-php/releases) for further details regarding this release.
-
-------------
 
 ### May 14th
 
