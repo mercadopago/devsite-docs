@@ -26,10 +26,9 @@ Lançamos a nova versão 4.6.0 para PrestaShop.
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.6.0).
 
+### 20 de maio
 
 ----[mpe]----
-
-### 20 de maio
 
 > CHANGELOG
 >
@@ -44,6 +43,24 @@ Agora você só pode realizar devoluções totais dos pagamentos.
 [Ir para a documentação de Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds#bookmark_devoluções)
 
 ------------
+
+> CHANGELOG
+>
+> Nova versão Magento 2
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MAGENTO 2
+
+Lançamos a nova versão 3.8.5 para Magento 2.
+
+[Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.5).
 
 ### 19 de maio
 
@@ -62,8 +79,6 @@ Lançamos a nova versão 1.11.0 e 2.3.0 do SDK PHP.
 > GitHub
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-php/releases).
-
-------------
 
 ### 14 de maio
 
