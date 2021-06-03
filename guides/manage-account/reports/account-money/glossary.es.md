@@ -15,6 +15,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | TRANSACTION_TYPE | Tipo de operación. <br><br>Puede ser:<br><br>*SETTLEMENT*: pago aprobado.<br> ----[mlu, mla, mlm, mco, mlc, mlb]---- *REFUND*: pago devuelto total o parcialmente.------------ ----[mpe]---- *REFUND*: pago devuelto totalmente.------------ <br>*CHARGEBACK*: el comprador hizo un contracargo (desconocimiento del pago) en su tarjeta de crédito.<br>*DISPUTE*: el comprador inició un reclamo por ese pago.<br>*WITHDRAWAL*: retiro a la cuenta bancaria.<br>*WITHDRAWAL_CANCEL*: retiro a la cuenta bancaria que fue cancelado.<br>*PAYOUT*: extracción en efectivo de dinero disponible en Mercado Pago. ----[mlb]----  <br>*TRAVA_DE_RECEBIVEL*: bloqueo por cobrar. ------------ <br><br> |
 | TRANSACTION_AMOUNT | Monto bruto de la operación. |
 | TRANSACTION_CURRENCY | Puede tomar algunos de estos valores según corresponda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasilero)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br><br> |
+| SELLER_AMOUNT | Monto recibido por compras por split. |
 | TRANSACTION_DATE | Fecha de acreditación de la operación. |
 | FEE_AMOUNT | Sumatoria de las comisiones de procesamiento, envíos, financiamiento y cupones si fue asumido por el vendedor. Incluyen IVA. |
 | SETTLEMENT_NET_AMOUNT | Monto neto de la operación que impactó en el dinero. Se le descontaron todas las comisiones involucradas del `TRANSACTION_AMOUNT`. |

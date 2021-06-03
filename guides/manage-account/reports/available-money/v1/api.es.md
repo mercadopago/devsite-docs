@@ -1,19 +1,18 @@
 
-# Geração via API
+# Generación por API
 
 
-Você pode gerar seu relatório via API, tanto de forma manual quanto programada.
-Ganhe tempo e automatize a **frequência de geração** do relatório de Dinheiro disponível sempre que quiser.
+Gana tiempo y automatiza la **frecuencia de generación** del reporte de Dinero retirado las veces que quieras, tanto de forma manual como de forma programada. 
 
 
-## Configurar seus relatórios
+## Configurar tus reportes
 
-Execute o curl que você precisa para consultar, gerar e atualizar seus relatórios.
+Ejecuta el curl que necesites para consultar, crear y actualizar tus reportes.
 
 
-### Consultar configurações
+### Consultar configuración
 
-Consulte a configuração dos seus relatórios via API da seguinte maneira:
+Consulta la configuración de tus reportes por API de esta forma:
 
 [[[
 ```curl
@@ -80,37 +79,31 @@ request(options, callback);
 ```
 ]]]
 
-Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
+Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 
 ```json
 {
     "file_name_prefix": "bank-report-USER_ID",
     "include_withdrawal_at_end": false,
-    "scheduled": false,
+    "detailed": true,
+    "scheduled": true,
     "execute_after_withdrawal": true,
-    "separator": ",",
-    "frequency": {
-        "hour": 0,
-        "type": "monthly",
-        "value": 1
+    "v1": {
+        "language": null,
+        "generate_bank_report": false
     },
-    "columns": [
-        {
-            "key": "DATE"
-        },
-        {
-            "key": "SOURCE_ID"
-        },
-        {
-            "key": "EXTERNAL_REFERENCE"
-        }
-    ]
+    "extended": true,
+    "frequency": {
+        "hour": 3,
+        "type": "daily",
+        "value": {}
+    }
 }
 ```
 
-### Criar configuração
+### Crear configuración
 
-Crie suas preferências de geração via API para exportar colunas, nomear seus arquivos e configurar outros ajustes:
+Crea tus preferencias de generación por API para exportar columnas, nombrar a tus archivos y configurar otros ajustes:
 
 [[[
 ```curl
@@ -122,23 +115,14 @@ curl -X POST \
     -d '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
+            "detailed": true,
             "execute_after_withdrawal": true,
+            "extended": true,
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
                 "value": 1
-            },
-            "columns": [
-                {
-                    "key": "DATE"
-                },
-                {
-                    "key": "SOURCE_ID"
-                },
-                {
-                    "key": "EXTERNAL_REFERENCE"
-                }
-            ]
+            }
     }'
 ```
 ```php
@@ -153,23 +137,14 @@ $headers = array(
 $data = '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
+            "detailed": true,
             "execute_after_withdrawal": true,
+            "extended": true,
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
                 "value": 1
-            },
-            "columns": [
-                {
-                    "key": "DATE"
-                },
-                {
-                    "key": "SOURCE_ID"
-                },
-                {
-                    "key": "EXTERNAL_REFERENCE"
-                }
-            ]
+            }
     }';
 $response = Requests::post('https://api.mercadopago.com/v1/account/bank_report/config', $headers, $data);
 ```
@@ -188,18 +163,15 @@ connection.setDoOutput(true);
 String body = "{
                 \\"file_name_prefix\\": \\"bank-report-USER_ID\\",
                 \\"include_withdrawal_at_end\\": false,
+                \\"detailed\\": true,
                 \\"execute_after_withdrawal\\": true,
+                \\"extended\\": true,
                 \\"frequency\\": {
                     \\"hour\\": 0,
                     \\"type\\": \\"monthly\\",
                     \\"value\\": 1
-                },
-                \\"columns\\": [
-                    { \\"key\\": \\"DATE\\" },
-                    { \\"key\\": \\"SOURCE_ID\\" },
-                    { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
-                ]
-            }";
+                }
+                }";
 
 try(OutputStream os = connection.getOutputStream()) {
     byte[] input = body.getBytes("utf-8");
@@ -222,23 +194,10 @@ headers = {
 data = '{  
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
+            "detailed": true,
             "execute_after_withdrawal": true,
-            "frequency": {
-                "hour": 0,
-                "type": "monthly",
-                "value": 1
-            },
-            "columns": [
-                {
-                    "key": "DATE"
-                },
-                {
-                    "key": "SOURCE_ID"
-                },
-                {
-                    "key": "EXTERNAL_REFERENCE"
-                }
-            ]
+            "extended": true,
+            "frequency": {"hour": 0,"type": "monthly","value": 1}
         }'
 
 response = requests.post('https://api.mercadopago.com/v1/account/bank_report/config', headers=headers, data=data)
@@ -255,23 +214,14 @@ var headers = {
 var dataString = '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
+            "detailed": true,
             "execute_after_withdrawal": true,
+            "extended": true,
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
                 "value": 1
-            },
-            "columns": [
-                {
-                    "key": "DATE"
-                },
-                {
-                    "key": "SOURCE_ID"
-                },
-                {
-                    "key": "EXTERNAL_REFERENCE"
-                }
-            ]
+            }
     }';
 
 var options = {
@@ -291,37 +241,31 @@ request(options, callback);
 ```
 ]]]
 
-Como resposta, você receberá um  `HTTP STATUS 201 (Created)`
+Recibirás como respuesta un `HTTP STATUS 201 (Created)`
 
 ```json
 {
     "file_name_prefix": "bank-report-USER_ID",
     "include_withdrawal_at_end": false,
+    "detailed": true,
     "scheduled": false,
     "execute_after_withdrawal": true,
-    "separator": ",",
-    "frequency": {
-        "hour": 0,
-        "type": "monthly",
-        "value": 1
+    "v1": {
+        "language": null,
+        "generate_bank_report": false
     },
-    "columns": [
-        {
-            "key": "DATE"
-        },
-        {
-            "key": "SOURCE_ID"
-        },
-        {
-            "key": "EXTERNAL_REFERENCE"
-        }
-    ]
+    "extended": true,
+    "frequency": {
+        "hour": 3,
+        "type": "daily",
+        "value": {}
+    }
 }
 ```
 
-### Atualizar configuração
+### Actualizar configuración
 
-Quando precisar atualizar sua configuração, você pode ajustar os seguintes atributos:
+Cuando necesites actualizar tu configuración, puedes ajustar los siguientes atributos:
 
 
 [[[
@@ -332,25 +276,16 @@ curl -X PUT \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/account/bank_report/config' \
     -d '{
-            "file_name_prefix": "bank-report-USER_ID",
-            "include_withdrawal_at_end": false,
-            "execute_after_withdrawal": true,
-            "frequency": {
-                "hour": 0,
-                "type": "monthly",
-                "value": 1
-            },
-            "columns": [
-                {
-                    "key": "DATE"
-                },
-                {
-                    "key": "SOURCE_ID"
-                },
-                {
-                    "key": "EXTERNAL_REFERENCE"
-                }
-            ]
+        "file_name_prefix": "bank-report-USER_ID",
+        "include_withdrawal_at_end": false,
+        "detailed": true,
+        "execute_after_withdrawal": true,
+        "extended": true,
+        "frequency": {
+            "hour": 0,
+            "type": "monthly",
+            "value": 1
+        }
     }'
 ```
 ```php
@@ -363,25 +298,16 @@ $headers = array(
     'Authorization' => 'Bearer ENV_ACCESS_TOKEN'
 );
 $data = '{
-            "file_name_prefix": "bank-report-USER_ID",
-            "include_withdrawal_at_end": false,
-            "execute_after_withdrawal": true,
-            "frequency": {
-                "hour": 0,
-                "type": "monthly",
-                "value": 1
-            },
-            "columns": [
-                {
-                    "key": "DATE"
-                },
-                {
-                    "key": "SOURCE_ID"
-                },
-                {
-                    "key": "EXTERNAL_REFERENCE"
-                }
-            ]
+        "file_name_prefix": "bank-report-USER_ID",
+        "include_withdrawal_at_end": false,
+        "detailed": true,
+        "execute_after_withdrawal": true,
+        "extended": true,
+        "frequency": {
+            "hour": 0,
+            "type": "monthly",
+            "value": 1
+        }
     }';
 $response = Requests::put('https://api.mercadopago.com/v1/account/bank_report/config', $headers, $data);
 ```
@@ -400,17 +326,14 @@ connection.setDoOutput(true);
 String body = "{
                 \\"file_name_prefix\\": \\"bank-report-USER_ID\\",
                 \\"include_withdrawal_at_end\\": false,
+                \\"detailed\\": true,
                 \\"execute_after_withdrawal\\": true,
+                \\"extended\\": true,
                 \\"frequency\\": {
                     \\"hour\\": 0,
                     \\"type\\": \\"monthly\\",
                     \\"value\\": 1
-                },
-                \\"columns\\": [
-                    { \\"key\\": \\"DATE\\" },
-                    { \\"key\\": \\"SOURCE_ID\\" },
-                    { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
-                ]
+                }
             }";
 
 try(OutputStream os = connection.getOutputStream()) {
@@ -431,26 +354,14 @@ headers = {
     'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 }
 
-data = '{  
+data = '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
+            "detailed": true,
             "execute_after_withdrawal": true,
-            "frequency": {
-                "hour": 0,
-                "type": "monthly",
-                "value": 1
-            },
-            "columns": [
-                {
-                    "key": "DATE"
-                },
-                {
-                    "key": "SOURCE_ID"
-                },
-                {
-                    "key": "EXTERNAL_REFERENCE"
-                }
-            ]
+            "extended": true,
+            "frequency": {"hour": 0,"type": "monthly","value": 1}
+
         }'
 
 response = requests.put('https://api.mercadopago.com/v1/account/bank_report/config', headers=headers, data=data)
@@ -465,25 +376,16 @@ var headers = {
 };
 
 var dataString = '{
-            "file_name_prefix": "bank-report-USER_ID",
-            "include_withdrawal_at_end": false,
-            "execute_after_withdrawal": true,
-            "frequency": {
-                "hour": 0,
-                "type": "monthly",
-                "value": 1
-            },
-            "columns": [
-                {
-                    "key": "DATE"
-                },
-                {
-                    "key": "SOURCE_ID"
-                },
-                {
-                    "key": "EXTERNAL_REFERENCE"
-                }
-            ]
+        "file_name_prefix": "bank-report-USER_ID",
+        "include_withdrawal_at_end": false,
+        "detailed": true,
+        "execute_after_withdrawal": true,
+        "extended": true,
+        "frequency": {
+            "hour": 0,
+            "type": "monthly",
+            "value": 1
+        }
     }';
 
 var options = {
@@ -504,69 +406,64 @@ request(options, callback);
 ]]]
 
 
-Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
+Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 
 ```json
 {
     "file_name_prefix": "bank-report-USER_ID",
     "include_withdrawal_at_end": false,
+    "detailed": true,
     "scheduled": false,
     "execute_after_withdrawal": true,
-    "separator": ",",
-    "frequency": {
-        "hour": 0,
-        "type": "monthly",
-        "value": 1
+    "v1": {
+        "language": null,
+        "generate_bank_report": false
     },
-    "columns": [
-        {
-            "key": "DATE"
-        },
-        {
-            "key": "SOURCE_ID"
-        },
-        {
-            "key": "EXTERNAL_REFERENCE"
-        }
-    ]
+    "extended": true,
+    "frequency": {
+        "hour": 3,
+        "type": "daily",
+        "value": {}
+    }
 }
 ```
 
 
 
-## Atributos configuráveis
+## Atributos configurables
 
-Confira os campos que você pode configurar para ajustar suas preferências antes de começar:
+Conoce los campos que puedes configurar para ajustar tus preferencias antes de empezar:
 
 
-| Campos configuráveis | Descrição |
+| Campos configurables | Descripción |
 | --- | --- |
-| `sftp_info` (opcional) | <br/>Indica os dados para subir a SFTP quando precisar.<br/><br/> |
-| `separator` (opcional) | <br/>Separador que pode ser usado no arquivo .csv quando não quiser que o separador seja uma vírgula (‘,’). <br/><br/> |
-| `refund_detailed` (opcional) | <br/>Mostra o código de referência (external_reference) do reembolso em vez do código de referência (external_reference) do pagamento.<br/><br/> |
-| `include_withdrawal` (opcional) | <br/>Inclui as retiradas de dinheiro no relatório.<br/><br/> |
-| `coupon_detailed` (opcional) | <br/>Inclui uma coluna para mostrar os detalhes dos cupons de desconto.<br/><br/> |
-| `columns` | <br/>Campo com os detalhes das colunas a serem incluídas no seu relatório. Encontre todos os valores possíveis na seção [Glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/glossary).<br/><br/>|
-| `file_name_prefix` | <br/>Prefixo que compõe o nome do relatório assim que estiver gerado e pronto para baixar.<br/><br/> |
-| `frequency` | <br/>Indica a frequência diária, semanal ou mensal dos relatórios programados.<br/><br/> - `frequency` aplica type *monthly* ao dia do mês ou *weekly* ao dia da semana<br/> - `hour` hora do dia que o relatório deve ser gerado<br/> - `type` indica o tipo de frequência: *daily* (diária), *weekly* (semanal) y *monthly* (mensal).<br/><br/> |
-| `scheduled` (read_only) | <br/>Campo informativo que indica se já existem relatórios programados na conta do usuário.<br/><br/> |
+| `sftp_info` (opcional) | <br/>Indica los datos de subida a SFTP cuando lo necesites.<br/><br/> |
+| `separator` (opcional) | <br/>Separador que puedes usar en el archivo .csv cuando no quieras que el separador sea una coma. <br/><br/> |
+| `extended` (opcional) | <br/>Incluye el detalle de las comisiones en el reporte.<br/><br/> |
+| `refund_detailed` (opcional) | <br/>Muestra el código de referencia (external_reference) del reembolso en vez del código de referencia (external_reference) del pago.<br/><br/> |
+| `include_withdrawal` (opcional) | <br/>Incluye los retiros de dinero en el reporte.<br/><br/> |
+| `coupon_detailed` (opcional) | <br/>Suma una columna para mostrar el detalle de los cupones de descuento.<br/><br/> |
+| `detailed` | <br/>Incluye columnas con información más detallada sobre tus operaciones:<br/> - Comisión de Mercado Pago (`mp_fee_amount`)<br/> - Comisión por ofrecer cuotas sin interés (`financing_fee_amount`)<br/> - Monto bruto de la operación (`gross_amount`)<br/> - Medios de pago (`payment_method`)<br/> - Cuotas (`installments`)<br/> - Cupón de descuento (`coupon_amount`) <br/> - Costos de envío (`shipping_fee_amount`) <br/> - Impuestos cobrados por retenciones de IIBB (`taxes_amount`) <br/> - Monto recibido por compras con split (`seller_amount`)<br/><br/>|
+| `file_name_prefix` | <br/>Prefijo que compone el nombre del reporte una vez generado y listo para descargar.<br/><br/> |
+| `frequency` | <br/>Indica la frecuencia diaria, semanal o mensual de los reportes programados.<br/><br/> - `frequency` aplica type *monthly* al día del mes o *weekly* el día de la semana<br/> - `hour` hora del día en la que generar el reporte <br/> - `type` indica el tipo de frecuencia *daily* (diaria), *weekly* (semanal) y *monthly* (mensual).<br/><br/> |
+| `scheduled` (read_only) | <br/>Campo informativo que indica si ya existen reportes programados en la cuenta de usuario.<br/><br/> |
 
 
 > NOTE
 >
 > Nota
 >
-> Tenha em mãos o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/glossary) de Dinheiro Disponível para consultá-lo quando precisar ou queira conferir algum termo técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/glossary) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 
 
-## Gerar de forma manual
+## Generar de forma manual
 
-Gere seus relatórios de forma manual configurando três cenários: geração, pesquisa e download.
+Genera tus reportes de forma manual configurando tres instancias: generación, búsqueda y descarga.
 
-### 1. Geração
+### 1. Generación
 
-Faça o POST à API especificando as datas de início e fim, assim:
+Haz el POST a la API especificando las fechas de inicio y fin de la siguiente manera:
 
 [[[
 ```curl
@@ -636,7 +533,7 @@ var request = require('request');
 
 var headers = { 
     'accept': 'application/json', 
-    'content-type': 'application/json', 
+    'content-type': 'application/json',
     'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 };
 
@@ -657,11 +554,11 @@ request(options, callback);
 ```
 ]]]
 
-Como resposta, você receberá um `HTTP STATUS 202 (Accepted)`, e o relatório será gerado de forma assincrônica.
+Recibirás como respuesta un `HTTP STATUS 202 (Accepted)`, y el reporte se generará de manera asincrónica.
 
-### 2. Busca
+### 2. Búsqueda
 
-Para ver se a geração de relatórios está pronta, consulte a API desta forma: 
+Consulta la API para ver si la generación de reportes quedó lista:
 
 [[[
 ```curl
@@ -698,7 +595,7 @@ System.out.println(connection.getInputStream());
 import requests
 
 headers = { 
-    'accept': 'application/json', 
+    'accept': 'application/json',
     'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 }
 
@@ -723,7 +620,7 @@ request(options, callback);
 ```
 ]]]
 
-Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
+Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 
 ```json
 [
@@ -742,9 +639,9 @@ Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
 ]
 ```
 
-### 3. Download
+### 3. Descarga
 
-Usando o atributo `file_name`, você pode baixar o relatório na seguinte URL:
+Utilizando el atributo `file_name`, puedes descargar el reporte desde la siguiente URL:
 
 [[[
 ```curl
@@ -792,10 +689,9 @@ var headers = {
     'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 };
 
-
 var options = {
     url: 'https://api.mercadopago.com/v1/account/bank_report/:file_name',
-    headers: headers,
+    headers: headers
 };
 
 function callback(error, response, body) {
@@ -809,7 +705,7 @@ request(options, callback);
 ]]]
 
 
-Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
+Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 
 ```csv
 DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD
@@ -822,28 +718,104 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 ```
 
 
-## Gerar de forma programada
+## Generar de forma programada
 
-Gere seus relatórios de forma programada configurando três instâncias: geração, configuração e download.
+Genera tus reportes de forma programada configurando tres instancias: generación, configuración y descarga.
 
-### 1. Geração
+### 1. Generación
 
-Programe a geração automática do relatório usando a frequência do recurso de configuração. Atualize o atributo *`scheduled`* na configuração *`true`*:
+Programa la generación automática del reporte utilizando la frecuencia en el recurso de configuración. Actualiza el atributo *`scheduled`* en la configuración a *`true`*:
 
-```plain
-    POST /v1/account/bank_report/schedule
+[[[
+```curl
+curl -X POST \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/account/bank_report/schedule'
+```
+```php
+<?php
+include('vendor/rmccue/requests/library/Requests.php');
+Requests::register_autoloader();
+$headers = array(
+    'accept' => 'application/json',
+    'content-type' => 'application/json',
+    'Authorization' => 'Bearer ENV_ACCESS_TOKEN'
+);
+$response = Requests::post('https://api.mercadopago.com/v1/account/bank_report/schedule', $headers);
+```
+```java
+URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/schedule");
+
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+
+connection.setRequestMethod("POST");
+connection.setRequestProperty("Accept", "application/json");
+connection.setRequestProperty("Content-Type", "application/json");
+connection.setRequestProperty("Authorization", "Bearer ENV_ACCESS_TOKEN");
+
+System.out.println(connection.getResponseCode());
+System.out.println(connection.getResponseMessage());
+System.out.println(connection.getInputStream());
+```
+```python
+import requests
+
+headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json',
+    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
+}
+
+response = requests.post('https://api.mercadopago.com/v1/account/bank_report/schedule', headers=headers)
+```
+```node
+var request = require('request');
+
+var headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json',
+    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
+};
+
+var options = {
+    url: 'https://api.mercadopago.com/v1/account/bank_report/schedule',
+    method: 'POST',
+    headers: headers
+};
+
+function callback(error, response, body) {
+    if (!error && response.statusCode == 200) {
+        console.log(body);
+    }
+}
+
+request(options, callback);
+```
+]]]
+
+Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
+
+```json
+{
+    "id": 2541818,
+    "user_id": "USER-ID",
+    "begin_date": "2019-07-01T06:00:00Z",
+    "end_date": "2019-08-01T05:59:59Z",
+    "created_from": "schedule",
+    "status": "pending",
+    "report_type": "bank",
+    "generation_date": "2019-08-01T06:00:00.000Z",
+    "last_modified": "2019-07-24T13:45:33.479-04:00",
+    "retries": 0
+}
 ```
 
-Pare a geração automática do relatório. Atualize o atributo scheduled na configuração para false:
 
-```plain
-    DELETE /v1/account/bank_report/schedule
-```
+### 2. Configuración
 
-
-### 2. Configuração
-
-Execute o curl que precisar para iniciar e cancelar a geração programada dos seus relatórios.
+Ejecuta el curl que necesites para cancelar la generación programada de tus reportes.
 
 
 [[[
@@ -861,7 +833,7 @@ include('vendor/rmccue/requests/library/Requests.php');
 Requests::register_autoloader();
 $headers = array(
     'accept' => 'application/json',
-    'content-type' => 'application/json',    
+    'content-type' => 'application/json',
     'Authorization' => 'Bearer ENV_ACCESS_TOKEN'
 );
 $response = Requests::delete('https://api.mercadopago.com/v1/account/bank_report/schedule', $headers);
@@ -933,9 +905,9 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 }
 ```
 
-### 3. Download
+### 3. Descarga
 
-Baixe o arquivo com este comando: 
+Descarga el archivo con este comando:
 
 
 [[[
@@ -958,7 +930,7 @@ URL url = new URL("https://api.mercadopago.com/v1/account/bank_report/:file_name
 
 HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
 
-connection.setRequestMethod("GET");
+connection.setRequestMethod("GET");\
 connection.setRequestProperty("Authorization", "Bearer ENV_ACCESS_TOKEN");
 
 System.out.println(connection.getResponseCode());
@@ -983,7 +955,7 @@ var headers = {
 
 var options = {
     url: 'https://api.mercadopago.com/v1/account/bank_report/:file_name',
-    headers: headers
+    headers: headers,
 };
 
 function callback(error, response, body) {
@@ -996,7 +968,7 @@ request(options, callback);
 ```
 ]]]
 
-Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
+Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 
 ```csv
 DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD
@@ -1008,28 +980,28 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 2018-04-17T15:38:40.000-04:00,,,release,payment,850.00,0.00,850.00,0.00,0.00,0.00,0.00,0.00,1,account_money
 ```
 
-> NOTE
+> WARNING
 >
-> Esta documentação corresponde à nova versão da API
+> Esta documentación corresponde a una versión anterior de la API.
 >
-> Para consultar a versão anterior, por favor, acesse a [seção Geração por API antiga](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/v1/api).
+> Para ver la versión más reciente, visita la [sección de Generación por API nueva](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/api).
 
 <hr/>
 
-### Próximos passos
+### Próximos pasos
 
-> LEFT_BUTTON_RECOMMENDED_PT
+> LEFT_BUTTON_RECOMMENDED_ES
 >
-> Geração a partir do Mercado Pago
+> Generación desde Mercado Pago
 >
-> Gere seus relatórios de Dinheiro Disponível a partir do painel do Mercado Pago em 3 etapas simples.
+> Puedes generar tus reportes de Dinero retirado desde el panel de Mercado Pago en tres simples pasos.
 >
-> [Geração a partir do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/panel)
+> [Generación desde Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/panel)
 
-> RIGHT_BUTTON_RECOMMENDED_PT
+> RIGHT_BUTTON_RECOMMENDED_ES
 >
-> Geração por retirada
+> Generación por retiro
 >
-> Gere um relatório a cada vez que retirar dinheiro para uma conta bancária.
+> Puedes generar un reporte cada vez que retires dinero a una cuenta bancaria.
 >
-> [Geração por retirada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/withdrawal)
+> [Generación por retiro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/withdrawal)

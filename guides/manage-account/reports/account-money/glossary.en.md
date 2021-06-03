@@ -15,6 +15,7 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | TRANSACTION_TYPE | Transaction type. <br><br>It can be:<br><br> *SETTLEMENT*: approved payment.<br> ----[mlu, mla, mlm, mco, mlc, mlb]---- *REFUND*: payment returned in whole or in part.------------ ----[mpe]---- *REFUND*: payment fully returned.------------ <br>*CHARGEBACK*: the buyer made a chargeback (unrecognized payment) on his credit card.<br>*DISPUTE*: the buyer initiated a claim for that payment. <br>*WITHDRAWAL*: withdrawal to a bank account.<br>*WITHDRAWAL_CANCEL*: canceled withdrawal to a bank account.<br>*PAYOUT*: money withdrawal available at Mercado Pago. ----[mlb]----  <br>*TRAVA_DE_RECEBIVEL*: block receivable. ------------ <br><br>|
 | TRANSACTION_AMOUNT | Gross amount of the transaction. |
 | TRANSACTION_CURRENCY | You can take some of these values as appropriate: <br><br> MXN (Mexican Peso) <br> CLP (Chilean Peso) <br> ARS (Argentine Peso) <br> BRL (Brazilian Real) <br> COP (Colombian Peso) <br> PEN (Peruvian Sun) <br> UYU (Uruguayan Peso) <br> VES (Venezuelan Bolivar) <br><br> |
+| SELLER_AMOUNT | Amount received for split purchases. |
 | TRANSACTION_DATE | Date of transaction accreditation. |
 | FEE_AMOUNT | Sum of processing fees, shipments, financing and coupons if assumed by the seller. |
 | SETTLEMENT_NET_AMOUNT | Net amount of the transaction that impacted the account balance. All commissions involved from `TRANSACTION_AMOUNT` were discounted. |

@@ -4,11 +4,37 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ---
 
-----[mlc]----
-
 ## June 2021
 
 ### June 3rd
+
+> CHANGELOG
+>
+> We have improved the configuration of the Available Money report via API
+>
+> NEWS: FEATURE
+>
+> PRODUCT: REPORTS
+
+Create customized reports with the fields or attributes you need.
+
+[Go to the API Report Generation documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/api)
+
+
+> CHANGELOG
+>
+> New configuration of the Account Money report via API
+>
+> NEWS: FEATURE
+>
+> PRODUCT: REPORTS
+
+Choose the fields or attributes you need and create a customized report.
+
+[Go to the API Report Generation documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/api)
+
+
+----[mlc]----
 
 > CHANGELOG
 >
