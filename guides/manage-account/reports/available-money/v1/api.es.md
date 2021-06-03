@@ -2,7 +2,7 @@
 # Generación por API
 
 
-Ganá tiempo y automatizá la **frecuencia de generación** del reporte de Dinero retirado las veces que quieras, tanto de forma manual como de forma programada. 
+Gana tiempo y automatiza la **frecuencia de generación** del reporte de Dinero retirado las veces que quieras, tanto de forma manual como de forma programada. 
 
 
 ## Configurar tus reportes
