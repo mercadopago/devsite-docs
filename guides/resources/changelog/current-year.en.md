@@ -26,6 +26,26 @@ Mercado Pago subscriptions allow you to receive recurring payments by credit and
 
 ## May 2021
 
+### May 31st
+
+> CHANGELOG
+>
+> New PrestaShop plugin version
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: PRESTASHOP
+
+We have released the new version 4.6.0 for PrestaShop.
+
+[Go to PrestaShop documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.6.0) for further details regarding this release.
+
 ### May 20th
 
 ----[mpe]----
@@ -79,7 +99,6 @@ We have released a new version of SDK PHP 1.11.0 and 2.3.0.
 > GitHub
 >
 > [Check GitHub](https://github.com/mercadopago/sdk-php/releases) for further details regarding this release.
-
 
 ### May 14th
 

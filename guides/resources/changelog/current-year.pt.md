@@ -8,7 +8,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Junho 2021
 
-### 5 de junho
+### 3 de junho
 
 > CHANGELOG
 >
@@ -25,6 +25,26 @@ As assinaturas do Mercado Pago permitem que você receba pagamentos recorrentes 
 ------------
 
 ## Maio 2021
+
+### 31 de maio
+
+> CHANGELOG
+>
+> Nova versão PrestaShop
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: PRESTASHOP
+
+Lançamos a nova versão 4.6.0 para PrestaShop.
+
+[Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.6.0).
 
 ### 20 de maio
 
@@ -79,7 +99,6 @@ Lançamos a nova versão 1.11.0 e 2.3.0 do SDK PHP.
 > GitHub
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-php/releases).
-
 
 ### 14 de maio
 
