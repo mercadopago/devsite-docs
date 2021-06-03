@@ -29,7 +29,7 @@ Create customized reports with the fields or attributes you need.
 >
 > NEWS: FEATURE
 >
-> Product: REPORTS
+> PRODUCT: REPORTS
 
 Choose the fields or attributes you need and create a customized report.
 
