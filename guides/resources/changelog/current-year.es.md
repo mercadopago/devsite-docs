@@ -29,7 +29,7 @@ Crea reportes personalizados con los campos o atributos que necesites.
 >
 > NEWS: FEATURE
 >
-> Product: REPORTES
+> PRODUCT: REPORTES
 
 Elije los campos o atributos que necesites para crear un reporte personalizado.
 
