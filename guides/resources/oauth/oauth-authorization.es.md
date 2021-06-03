@@ -9,9 +9,9 @@ Puedes hacerlo a través de OAuth, una funcionalidad de vinculación segura que 
 Para poder hacer una vinculación entre la cuenta de tu aplicación y las de tus vendedores es necesario realizar la autorización a través de OAuth.
 
 Para comenzar, sigue estos pasos:
-1. Crea o configura tu aplicación
-2. Vincula una cuenta de Mercado Pago con tu aplicación
-3. Genera las credenciales para operar
+1. Crea o configura tu aplicación.
+2. Vincula una cuenta de Mercado Pago con tu aplicación.
+3. Genera las credenciales para operar.
 
 <br>
 
@@ -19,7 +19,7 @@ Para comenzar, sigue estos pasos:
 
 Primero debes tener creada [tu aplicación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications/create-app) con un nombre único que la identifique.
 
-Luego, necesitarás **configurar una Redirect URL para tu aplicación**. Para eso, ve a [Tus Aplicaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel), haz clic en el menú de opciones de tu aplicación y selecciona Editar. 
+Luego, necesitarás **configurar una Redirect URL para tu aplicación**. Para eso, ve a [Tus Aplicaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel), haz clic en el menú de opciones de tu aplicación y selecciona "Editar". 
 
 En el campo Redirect URL, agrega la dirección a la que quieres redirigir a los vendedores luego de ser vinculados correctamente. Ten en cuenta que la dirección que agregues es a donde recibirás los códigos de autorización de cada uno de ellos para la creación de las credenciales.
 

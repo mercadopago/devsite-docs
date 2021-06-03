@@ -1,4 +1,4 @@
-# Autorize e vincule contas em seus aplicações
+# Autorize e vincule contas em suas aplicações
 
 Se você precisa gerenciar várias contas do Mercado Pago ao mesmo tempo em sua integração, só tem que vincular seu aplicação e as contas de outras pessoas.
 
@@ -9,9 +9,9 @@ Pode fazer isso através do OAuth, uma funcionalidade de vinculação segura que
 Para poder vincular a conta do seu aplicação e a dos seus vendedores, é necessário realizar a autorização através de OAuth;
 
 Para começar, siga estes passos:
-1. Crie ou configure seu aplicação
-2. Vincule uma conta do Mercado Pago ao seu aplicação
-3. Crie as credenciais para operar
+1. Crie ou configure seu aplicação.
+2. Vincule uma conta do Mercado Pago ao seu aplicação.
+3. Crie as credenciais para operar.
 
 <br>
 
@@ -19,7 +19,7 @@ Para começar, siga estes passos:
 
 Primeiramente, você deve ter criado [seu aplicação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications/create-app) com um nome único que o identifique.
 
-Depois, você terá que **configurar um Redirect URL para seu aplicação**. Para isso, vá para [Seus Aplicações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel), clique no menu de opções do seu aplicação e selecione Editar. 
+Depois, você terá que **configurar um Redirect URL para seu aplicação**. Para isso, vá para [Suas Aplicações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel), clique no menu de opções do seu aplicação e selecione Editar. 
 
 No campo Redirect URL, adicione o endereço ao qual você quer encaminhar os vendedores após tê-los vinculado corretamente. Lembre que no endereço que você adicionar você vai receber os códigos de autorização de cada um deles para a criação das credenciais.
 
@@ -159,7 +159,7 @@ Você receberá a seguinte resposta:
 
 Você pode receber notificações sempre que um vendedor se vincule ou desvincule do seu aplicação. Para configurá-las, siga estes passos:
 
-1. Acesse [Seus aplicações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel) e selecione o aplicação que você utiliza para o fluxo de OAuth.
+1. Acesse [Suas aplicações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel) e selecione o aplicação que você utiliza para o fluxo de OAuth.
 
 2. Vá para a aba "Notificações Webhooks". Já dentro da seção, vá para o campo "Modo Produção" e adicione a URL onde quer receber as notificações. Se quiser, você pode clicar no botão "Testar" para conferir que a URL escolhida recebe corretamente as Notificações Webhooks.
 
