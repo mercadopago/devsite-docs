@@ -14,7 +14,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 >
 > NEWS: FEATURE
 >
-> Product: RELATÓRIOS
+> PRODUCT: RELATÓRIOS
 
 Crie relatórios personalizados com os campos ou características que precisar.
 
