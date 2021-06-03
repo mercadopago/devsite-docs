@@ -1084,7 +1084,7 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 
 > NOTE
 >
-> Esta documentación corresponde a la nueva versión de la API.
+> Esta documentación corresponde a la nueva versión de la API
 >
 > Para consultar la versión anterior, visita la sección de [sección de Generación por API antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/v1/api).
 
