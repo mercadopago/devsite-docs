@@ -996,7 +996,7 @@ Download the file with this command:
 
 > NOTE
 >
-> This documentation corresponds to the new version of the API.
+> This documentation corresponds to the new version of the API
 >
 > To check the previous version, please go to the [old API Generation section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/v1/api).
 
