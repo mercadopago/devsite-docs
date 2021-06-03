@@ -151,16 +151,25 @@ curl -X POST \
 
 ```json
 {
-	"id": REFUND_ID,
-	"payment_id": ID,
-	"amount": 73.48,
-	"metadata": {},
-	"source": {
-		"id": "130379930",
-		"name": "Firstname Lastname",
-		"type": "collector"
-	},
-	"date_created": "2014-12-11T11:26:40.537-04:00"
+    "id": PAYMENT_ID,
+    ...
+
+    "refunds": [
+      {
+        "id": 111,
+        "payment_id": PAYMENT_ID,
+        "amount": 16.98,
+        "metadata": {
+        },
+        "source": {
+            "id": "130379930",
+            "name": "Firstname Lastname",
+            "type": "collector"
+        },
+        "date_created": "2014-12-04T17:00:03.000-04:00",
+        "unique_sequence_number": null
+      }
+    ]
 }
 ```
 
