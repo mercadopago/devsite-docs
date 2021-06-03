@@ -635,6 +635,7 @@ Para modificar un customer es necesario enviar el customer_id, el token y los ca
 De no enviar el parametro customer_id, se obtendra como resultado el mensaje `missing customer id`, ó si el parametro es equivocado retornará `customer id not found`.
 
 Ejemplo para el `body` con los campos `nuevos`:
+
 ```json
 {
   "first_name": "nombre",
