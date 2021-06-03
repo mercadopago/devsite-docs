@@ -157,7 +157,7 @@ You will receive the following response:
 > 
 > Remember that every time you refresh your credentials, the `refresh_token` will also change so you will need to store it again.
 >
-> In case of errors when refreshing your credentials, remember that you can query them in the [error code reference](https://developers.mercadolibre.com.ar/en_us/authentication-and-authorization).
+> In case of errors when refreshing your credentials, remember that you can query them in the [error code reference](https://developers.mercadolibre[FAKER][URL][DOMAIN]/en_us/authentication-and-authorization#Error-codes-reference).
 
 ## Set up notifications
 
