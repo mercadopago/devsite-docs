@@ -14,7 +14,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 >
 > NEWS: FEATURE
 >
-> Product: REPORTES
+> PRODUCT: REPORTES
 
 Crea reportes personalizados con los campos o atributos que necesites.
 
