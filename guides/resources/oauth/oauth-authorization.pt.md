@@ -69,7 +69,7 @@ Os parâmetros que você deve incluir são:
 | ----------------- | ----------------- |
 | `client_secret` | Esse é seu `ACCESS_TOKEN`. Você pode obtê-lo em [Suas Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials). |
 | `grant_type` | Diz respeito ao tipo de operação a ser realizada para obter as credenciais. Este parâmetro é fixo e seu valor é `authorization_code`. |
-| `code` | O código de autorização ou `CODE` que você obtém em seu servidor ao realizar a vinculação. Será similar a este valor: `TG-60357f5d0cd06d000740646d-643464554` | 
+| `code` | O código de autorização ou `CODE` que você obtém em seu servidor ao realizar a vinculação. Será similar a este valor: `TG-60357f5d0cd06d000740646d-643464554`. | 
 | `redirect_uri` | É a URL que você configurou no campo Redirect URL em seu aplicação.|
 
 ```curl

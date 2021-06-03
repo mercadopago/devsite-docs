@@ -69,7 +69,7 @@ Los parámetros que debes incluir son:
 | ----------------- | ----------------- |
 | `client_secret` | Este es tu `ACCESS_TOKEN`. Puedes obtenerlo desde [Tus Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials). |
 | `grant_type` | Indica el tipo de operación a realizar para obtener las credenciales. Este parámetro es fijo y lleva como valor `authorization_code`. |
-| `code` | El código de autorización o `CODE` que obtienes en tu servidor al realizar la vinculación. Deberá verse similar a este valor: `TG-60357f5d0cd06d000740646d-643464554` | 
+| `code` | El código de autorización o `CODE` que obtienes en tu servidor al realizar la vinculación. Deberá verse similar a este valor: `TG-60357f5d0cd06d000740646d-643464554`. | 
 | `redirect_uri` | Es la URL que configuraste en el campo Redirect URL en tu aplicación. |
 
 ```curl

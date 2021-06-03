@@ -74,7 +74,7 @@ These are the parameters to include:
 | ----------------- | ----------------- |
 | `client_secret` | This is your `ACCESS_TOKEN`. You can get it in [Your Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials). |
 | `grant_type` | Specify type of operation to perform to get your credentials. This is a fixed parameter with an `authorization_code` value. |
-| `code` | The authorization code or `CODE` you get in your server for linking. It will be similar to this value: `TG-60357f5d0cd06d000740646d-643464554` | 
+| `code` | The authorization code or `CODE` you get in your server for linking. It will be similar to this value: `TG-60357f5d0cd06d000740646d-643464554`. | 
 | `redirect_uri` | This is the URL you set up in the Redirect URL field in your application. |
 
 ```curl
