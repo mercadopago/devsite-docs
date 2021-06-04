@@ -27,8 +27,7 @@ Lastly, you need to get your application ID in [Your Integrations](https://www.m
 
 ### Link a Mercado Pago account to your application
 
-To operate on your seller's name via their Mercado Pago accounts you need to request their authorization first.
-
+To operate on your seller's name via their Mercado Pago accounts you need to request their authorization first. 
 To do this, you need to include a URL in your application to redirect sellers to the authorization site. 
 
 This is the example URL you can use. You will also find the details of parameters to fill it out.
@@ -163,7 +162,7 @@ You will receive the following response:
 
 You can get notifications every time a seller links to or unlinks from your application. For setup, follow these steps:
 
-1. Access [Your Applications]((https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel)) and select the application used for OAuth flow.
+1. Access [Your Applications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel) and select the application used for OAuth flow.
 
 2. Go to "Webhooks Notifications" tab. In this section, go to "Production Mode" and add the URL to receive notifications. If you want, you can click on "Test" button to test that the assigned URL will receive Webhooks Notifications correctly.
 

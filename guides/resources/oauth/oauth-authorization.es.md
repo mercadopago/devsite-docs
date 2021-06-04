@@ -28,7 +28,6 @@ Finalmente, debes obtener el ID de tu aplicación en [Tus Integraciones](https:/
 ### Vincula una cuenta de Mercado Pago con tu aplicación
 
 Para operar en nombre de tus vendedores a través de sus cuentas de Mercado Pago, primero debes solicitarles su autorización.
-
 Para esto, debes incluir en tu aplicación una URL que redirija al vendedor al sitio de autorización. 
 
 Te compartimos la URL base que debes utilizar y el detalle de los parámetros con los que tienes que completarla.
