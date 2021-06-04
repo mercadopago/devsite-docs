@@ -1019,7 +1019,7 @@ EXTERNAL_REFERENCE;SOURCE_ID;USER_ID;PAYMENT_METHOD_TYPE;PAYMENT_METHOD;SITE;TRA
 
 > WARNING
 >
-> Esta documentación corresponde a una versión anterior de la API.
+> Esta documentación corresponde a una versión anterior de la API
 >
 > Para ver la versión más reciente, visita la [sección de Generación por API nueva](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/api).
 
