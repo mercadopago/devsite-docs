@@ -3,6 +3,12 @@
 
 Genera tus reportes de Dinero retirado desde tu panel de Mercado Pago. Podrás programar que se genere el reporte por cada vez que hagas un retiro de tu saldo a una cuenta bancaria.
 
+> WARNING
+> 
+> El reporte de Dinero Retirado será deshabilitado próximamente
+> 
+> Puedes usar el reporte de [Liquidaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar las transacciones que afectan el dinero disponible en tu cuenta, incluidos tus retiros bancarios.
+
 Sigue estos pasos para generar tus reportes:
 
 1. Desde tu cuenta de Mercado Pago, ve a [tus Informes](https://www.mercadopago.com.ar/balance/reports) y elige la opción de *Reportes*.

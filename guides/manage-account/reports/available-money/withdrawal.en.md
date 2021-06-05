@@ -4,6 +4,12 @@
 
 You can create an Available Balance report automatically every time you transfer money from your Mercado Pago account to a bank account. Set up this option from your Mercado Pago panel or via API.
 
+> WARNING
+> 
+> The Available money report will be disabled soon
+> 
+> You can use the [Releases](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/released-money/introduction) report to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
+
 ## Generating from the Mercado Pago panel
 
 From the Mercado Pago Reports section, schedule the generation of reports by withdrawal following these steps:

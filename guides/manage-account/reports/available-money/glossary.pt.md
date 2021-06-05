@@ -1,5 +1,11 @@
 # Glossário
 
+> WARNING
+> 
+> O relatório de Dinheiro disponível será desabilitado em breve 
+> 
+> Você pode usar o relatório de [Liberações](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
+
 
 Sabemos que alguns termos são técnicos e você pode não estar familiarizado com todos eles. Use este glossário para não se perder!
 

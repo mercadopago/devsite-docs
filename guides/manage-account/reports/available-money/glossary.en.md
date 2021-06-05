@@ -1,5 +1,11 @@
 # Glossary
 
+> WARNING
+> 
+> The Available money report will be disabled soon
+> 
+> You can use the [Releases](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/released-money/introduction) report to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
+
 
 We know, some terms are technical and you may not be familiar with all of them. Use this glossary to not get lost!
 

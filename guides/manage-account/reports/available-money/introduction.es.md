@@ -4,6 +4,12 @@
 
 El reporte de Dinero retirado es un **informe descargable que te permite conocer cómo está compuesto el dinero que retiraste de Mercado Pago.** Contiene el **detalle de todos los fondos involucrados en dicho retiro,** tanto para casos de liberación de dinero como para bloqueos o desbloqueos.
 
+> WARNING
+> 
+> El reporte de Dinero Retirado será deshabilitado próximamente
+> 
+> Puedes usar el reporte de [Liquidaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar las transacciones que afectan el dinero disponible en tu cuenta, incluidos tus retiros bancarios.
+
 ## ¿Cómo descargo el reporte?
 
 Ten en cuenta que la generación del reporte lleva unos minutos dependiendo de cuánta información quieras que incluya. No siempre estará listo al instante y, hasta que lo esté, verás el estado *En preparación* en la pantalla.

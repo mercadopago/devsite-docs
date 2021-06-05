@@ -1,5 +1,11 @@
 # Glosario
 
+> WARNING
+> 
+> El reporte de Dinero Retirado será deshabilitado próximamente
+> 
+> Puedes usar el reporte de [Liquidaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar las transacciones que afectan el dinero disponible en tu cuenta, incluidos tus retiros bancarios.
+
 
 Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado con todos ellos. ¡Usa este glosario para no perderte!
 

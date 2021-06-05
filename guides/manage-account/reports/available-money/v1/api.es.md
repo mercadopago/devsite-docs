@@ -2,7 +2,13 @@
 # Generación por API
 
 
-Gana tiempo y automatiza la **frecuencia de generación** del reporte de Dinero retirado las veces que quieras, tanto de forma manual como de forma programada. 
+Gana tiempo y automatiza la **frecuencia de generación** del reporte de Dinero retirado las veces que quieras, tanto de forma manual como de forma programada.
+
+> WARNING
+> 
+> El reporte de Dinero Retirado será deshabilitado próximamente
+> 
+> Puedes usar el reporte de [Liquidaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar las transacciones que afectan el dinero disponible en tu cuenta, incluidos tus retiros bancarios.
 
 
 ## Configurar tus reportes

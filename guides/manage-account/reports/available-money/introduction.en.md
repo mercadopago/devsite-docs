@@ -4,6 +4,12 @@
 
 The Available Balance report is a **downloadable report that allows you to know the liquidity of your business**, that is, how much money you have to use. It contains the **detail of the released payments** that are ready to withdraw to a bank account, invest in Mercado Pago or use as balance in the Mercado Pago prepaid card.
 
+> WARNING
+> 
+> The Available money report will be disabled soon
+> 
+> You can use the [Releases](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/released-money/introduction) report to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
+
 ## How do I download the report?
 
 Keep in mind that the report generation takes a few minutes depending on how much information you want it to include. It will not always be ready instantly and, until it is, you will see the status *In preparation* on the screen.
