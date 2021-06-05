@@ -29,13 +29,19 @@ If your application is not available or takes too long to respond, Mercado Pago 
 
 Mercado Pago will notify to this URL whenever a resource is created or when orders or payment status are updated, with two parameters:
 
-| Field 		| Description 				 |
-| ---- 		| ---- 				 |
-| `topic` | Identifies the type of resource. It may be `payment`, `chargebacks` or `merchant_order` |
+| Field | Description |
+| --- | --- |
+| `topic` | Identifies the type of resource. It may be `payment`, `chargebacks` or `merchant_order`. |
 | `id` | A unique identification of the notified resource. |
 
 
 Example: If you have configured the URL:  `https://www.yoursite.com/notifications`, you will receive payment notifications as follows:  `https://www.yoursite.com/notifications?topic=payment&id=123456789`
+
+> WARNING
+>
+> Important
+>
+> Please note that it is not possible to receive notifications in a test environment.
 
 ## What should I do after receiving a notification?
 

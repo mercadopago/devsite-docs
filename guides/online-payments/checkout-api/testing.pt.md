@@ -119,8 +119,8 @@ Inicie sua integração configurada com as credenciais do seu usuário de teste 
 
 | Cartão | Número | Código de segurança | Data de vencimento |
 | :--- | :---: | :---: | :---: |
-| Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
-| Visa | 4509 9535 6623 3704 | 123 | 11/25 |
+| Mastercard |  5808 8877 7464 1586 | 123 | 11/25 |
+| Visa | 4104 2962 6235 5432 | 123 | 11/25 |
 
 ------------
 ----[mpe]----

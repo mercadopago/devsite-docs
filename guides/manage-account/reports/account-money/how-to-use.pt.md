@@ -14,13 +14,13 @@ O relatório está composto por diferentes tipos de transações que você pode 
 | Transações | Tipo de operação |
 | --- | --- |
 | *SETTLEMENT* |<br/> Aprovadas<br/><br/>|
-| *REFUND* |<br/> Devoluções totais ou parciais.<br/><br/> |
+| *REFUND* | ----[mla, mlm, mco, mlu, mlb, mlc]---- <br/> Devoluções totais ou parciais.<br/><br/> ------------ ----[mpe]---- <br/> Devoluções totais.<br/><br/> ------------ |
 | *CHARGEBACK* | <br/>Contestação<br/><br/> |
 | *DISPUTE* |<br/> Estão com reclamação.<br/><br/>|
 | *WITHDRAWAL* | <br/>Dinheiro retirado.<br/><br/>|
 | *CASHBACK* | <br/> Devolução de dinheiro.<br/><br/> |
 | *SETTLEMENT_SHIPPING* | <br/> Envios aprovados.<br/><br/> |
-| *REFUND_SHIPPING* | <br/> Devoluções totais ou parciais de custos de envio.<br/><br/> |
+| *REFUND_SHIPPING* | ----[mla, mlm, mco, mlu, mlb, mlc]---- <br/> Devoluções totais ou parciais de custos de envio.<br/><br/> ------------ ----[mpe]---- <br/> Devoluções de custos de envio.<br/><br/> ------------|
 | *CHARGEBACK_SHIPPING* | <br/> Contestação de envios.<br/><br/> |
 | *DISPUTE_SHIPPING* | <br/> O envio está com reclamação.<br/><br/> |
 

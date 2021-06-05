@@ -4,6 +4,164 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
+## Junho 2021
+
+### 3 de junho
+
+> CHANGELOG
+>
+> Melhoramos a configuração do relatório Dinheiro disponível via API
+>
+> NEWS: FEATURE
+>
+> PRODUCT: RELATÓRIOS
+
+Crie relatórios personalizados com os campos ou características que precisar.
+
+[Ir para documentação de Geração de relatórios por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/api)
+
+
+> CHANGELOG
+>
+> Nova configuração do relatório Dinheiro em conta via API
+>
+> NEWS: FEATURE
+>
+> PRODUCT: RELATÓRIOS
+
+Escolha os campos ou características que precisar e crie um relatório personalizado.
+
+[Ir para documentação de Geração de relatórios por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/api)
+
+
+----[mlc]----
+
+> CHANGELOG
+>
+> Crie assinaturas para cobrar de forma recorrente
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: ASSINATURAS
+
+As assinaturas do Mercado Pago permitem que você receba pagamentos recorrentes com cartão de crédito e débito. Você pode definir a frequência de pagamento desejada e o período de tempo que quer manter a assinatura ativa.
+
+[Criar assinaturas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/introduction)
+
+------------
+
+## Maio 2021
+
+### 31 de maio
+
+> CHANGELOG
+>
+> Nova versão PrestaShop
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: PRESTASHOP
+
+Lançamos a nova versão 4.6.0 para PrestaShop.
+
+[Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.6.0).
+
+### 20 de maio
+
+----[mpe]----
+
+> CHANGELOG
+>
+> Atualizamos as devoluções dos pagamentos
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: MERCADO PAGO
+
+Agora você só pode realizar devoluções totais dos pagamentos.
+
+[Ir para a documentação de Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds#bookmark_devoluções)
+
+------------
+
+> CHANGELOG
+>
+> Nova versão Magento 2
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MAGENTO 2
+
+Lançamos a nova versão 3.8.5 para Magento 2.
+
+[Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.5).
+
+### 19 de maio
+
+> CHANGELOG
+>
+> Nova versão SDK PHP
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK PHP
+
+Lançamos a nova versão 1.11.0 e 2.3.0 do SDK PHP.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-php/releases).
+
+### 14 de maio
+
+> CHANGELOG
+>
+> Mudanças na disponibilidade dados de compradores
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: MERCADO PAGO
+
+Para assegurar o cuidado com os dados pessoais dos nossos usuários, modificamos a informação que enviamos dos compradores através da API de Pagamentos e relatórios disponíveis na conta. Agora somente será possível ver a informação pessoal dos compradores necessária para contato, que são o e-mail, tipo e número de documento.
+
+Se precisar de outro tipo de informação para seu negócio, como telefone ou endereço do comprador, você terá que capturá-la diretamente na sua aplicação, já que por razões de segurança vamos manter a confidencialidade desses dados.
+
+### 3 de maio
+
+> CHANGELOG
+>
+> Nova versão Magento 2
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MAGENTO 2
+
+Lançamos a nova versão 3.8.4 para Magento 2.
+
+[Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.4).
+
+---
+
 ## Abril 2021
 
 ### 30 de abril

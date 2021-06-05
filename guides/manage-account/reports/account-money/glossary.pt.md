@@ -12,17 +12,18 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | PAYMENT_METHOD | Confira os [meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods) de acordo com o país no qual você opera com o Mercado Pago. |
 | PAYMENT_METHOD_TYPE | Tipo de meio de pagamento.<br><br> Pode ser:<br>*credit_card*: cartão de crédito.<br>*debit_card*: cartão de débito.<br>*bank_transfer*: transferência.<br>*atm*: caixa eletrônico.<br>*ticket*: à vista<br>*account_money*: dinheiro em conta.<br><br> |
 | SITE | MLB: Brasil |
-| TRANSACTION_TYPE | Tipo de operação. Pode ser:<br><br> *SETTLEMENT*: pagamento aprovado.<br>*REFUND*: pagamento devolvido total ou parcial.<br>*CHARGEBACK*: o comprador fez uma contestação (desconhece o pagamento) no seu cartão de crédito.<br>*DISPUTE*: o comprador iniciou uma reclamação por esse pagamento.<br>*WITHDRAWAL*: retirada para a conta bancária.<br>*WITHDRAWAL_CANCEL*: retirada para a conta bancária que foi cancelada.<br>*PAYOUT*: saque em dinheiro disponível no Mercado Pago. ----[mlb]---- <br>*TRAVA_DE_RECEBIVEL*: trava de recebível. ------------ <br><br> |
+| TRANSACTION_TYPE | Tipo de operação. Pode ser:<br><br> *SETTLEMENT*: pagamento aprovado.<br> ----[mlu, mla, mlm, mco, mlc, mlb]---- *REFUND*: pagamento totalmente devolvido total ou parcial.------------ ----[mpe]---- *REFUND*: pagamento totalmente devolvido.------------<br>*CHARGEBACK*: o comprador fez uma contestação (desconhece o pagamento) no seu cartão de crédito.<br>*DISPUTE*: o comprador iniciou uma reclamação por esse pagamento.<br>*WITHDRAWAL*: retirada para a conta bancária.<br>*WITHDRAWAL_CANCEL*: retirada para a conta bancária que foi cancelada.<br>*PAYOUT*: saque em dinheiro disponível no Mercado Pago. ----[mlb]---- <br>*TRAVA_DE_RECEBIVEL*: trava de recebível. ------------ <br><br> |
 | TRANSACTION_AMOUNT | Valor bruto da transação. |
 | TRANSACTION_CURRENCY | Moeda:<br><br>MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>EN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br><br> |
+| SELLER_AMOUNT | Valor recebido por compras com split. |
 | TRANSACTION_DATE | Data de aprovação da transação. |
 | FEE_AMOUNT | É a somatória das tarifas de processamento, shipping, financiamento e boleto, se foi assumido pelo vendedor. |
 | SETTLEMENT_NET_AMOUNT | Valor líquido da transação que impactou o dinheiro em conta. Foram descontadas todas as comissões envolvidas da `TRANSACTION_AMOUNT`. |
 | SETTLEMENT_CURRENCY | Moeda:<br><br> MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>PEN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br><br> |
 | SETTLEMENT_DATE | Data em que o valor da transação foi creditada. |
 | REAL_AMOUNT | Valor líquido da transação, se é um settlement, os valores para estornos, reclamações ou devoluções são descontados. |
-| COUPON_AMOUNT | Valor do cupom de desconto. **Apenas o valor bruto** (`TRANSACTION_AMOUNT`) **é descontado se fornecido pelo vendedor.**. |
-| METADATA | Dados adicionais como, por exemplo, o ID das devoluções parciais ou dados informados pelo vendedor em caso de integração externa. |
+| COUPON_AMOUNT | Valor do cupom de desconto. **Apenas o valor bruto** (`TRANSACTION_AMOUNT`) **é descontado se fornecido pelo vendedor**. |
+| METADATA | ----[mlu, mla, mlm, mco, mlc, mlb]---- Dados adicionais como, por exemplo, o ID das devoluções parciais ou dados informados pelo vendedor em caso de integração externa. ------------ ----[mpe]---- Dados adicionais como, por exemplo, ou dados informados pelo vendedor em caso de integração externa. ------------|
 | MKP_FEE_AMOUNT | Comissão do Mercado Livre. |
 | FINANCING_FEE_AMOUNT | Custo de oferecer parcelamento sem juros. |
 | SHIPPING_FEE_AMOUNT | Custo de envio. |

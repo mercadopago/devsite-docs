@@ -3,10 +3,10 @@
 <!-- -->
 > WARNING
 >
-> Important
+> Importante
 >
-> We're sorry. This page is currently not available in English.<br>
-> [View documentation in Spanish](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex)
+> Desculpe! No momento, esta página não está disponível em português.<br>
+> [Ver documentação em espanhol](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex)
 
 ------------
 

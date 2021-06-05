@@ -286,10 +286,11 @@ Você pode modificar o valor do imposto para a Dirección de Impuestos y Aduanas
 
 | Atributo | Descrição |
 | --- | --- |
-| `type` | Identificador do imposto. Permitido somente os valores IVA e INC. |
+| `type` | Identificador do imposto. Apenas é permitido o IVA. |
 | `value` | Valor do imposto. Permitido o máximo de duas casas decimais. Para itens isentos de imposto,deve ser informado zero. |
 
- ```json
+[[[
+```json
 ===
 É usado o atributo taxes para definir o valor correspondente
 ===
@@ -300,6 +301,7 @@ Você pode modificar o valor do imposto para a Dirección de Impuestos y Aduanas
   }
 ]
 ```
+]]]
 
 ------------
 
