@@ -8,7 +8,7 @@ You can create an Available Balance report automatically every time you transfer
 > 
 > The Available money report will be disabled soon
 > 
-> You can use the [Releases](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/released-money/introduction) report to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
+> You can use the [Releases](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction) report to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
 
 ## Generating from the Mercado Pago panel
 

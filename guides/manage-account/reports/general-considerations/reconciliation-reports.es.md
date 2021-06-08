@@ -16,6 +16,6 @@ Con estos informes buscamos cubrir las distintas necesidades de nuestros usuario
 
 > NOTE
 > 
-> El reporte de Dinero Retirado será deshabilitado próximamente
+> El reporte de Dinero retirado será deshabilitado próximamente
 > 
-> Puedes usar el reporte de [Liquidaciones](https://www.mercadopago.com.ar/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar las transacciones que afectan el dinero disponible en tu cuenta, incluidos tus retiros bancarios.
+> Puedes usar el [reporte de ----[mla]---- Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberaciones------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.

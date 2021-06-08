@@ -8,7 +8,7 @@ O relatório de Dinheiro disponível é um **relatório para ser baixado que te 
 > 
 > O relatório de Dinheiro disponível será desabilitado em breve 
 > 
-> Você pode usar o relatório de [Liberações](https://www.mercadopago.com.ar/developers/pt/guides/manage-account/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
+> Você pode usar o relatório de [Liberações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
 
 ## Como baixar o relatório?
 

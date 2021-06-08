@@ -7,7 +7,7 @@ Generate your Available Balance reports from your Mercado Pago panel. You can sc
 > 
 > The MAvailable money report will be disabled soon
 > 
-> You can use the [Releases](https://www.mercadopago.com.ar/developers/en/guides/manage-account/reports/released-money/introduction) report to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
+> You can use the [Releases](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction) report to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
 
 Follow these steps to generate your reports:
 
