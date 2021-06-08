@@ -814,7 +814,7 @@ curl -X GET \
 
 ## Bin compartidos para Customers
 
-Al haber mas de un medio de pago activo con "bin compartido" (primeros 6 dígitos de las tarjetas de crédito y debito). Por lo cual es necesario enviar siempre los campos [issuer_id] y [payment_method_id]
+Al haber varios medios de pagos activos con el "bin compartido" (primeros 6 dígitos de las tarjetas). Los campos [issuer_id] y [payment_method_id] siempre deben enviarse. Si estos campos no se envían, se generará un error y se devolverá un código de estado 4XX
 
 Ejemplo de datos a enviar:
 ```json
@@ -835,7 +835,6 @@ Respuesta:
 }
 ```
 
-En caso de no enviar dichos campos se generarán errores que luego se retornará con un statuCode 4XX
 Ejemplo de respuesta en caso de error:
 ```json
 {
