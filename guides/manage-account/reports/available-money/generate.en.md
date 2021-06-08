@@ -3,7 +3,7 @@
 
 > WARNING
 > 
-> The Available money report will be disabled soon
+> The Available Money report will be disabled soon
 > 
 > You can use the [Releases](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction) report to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
 
