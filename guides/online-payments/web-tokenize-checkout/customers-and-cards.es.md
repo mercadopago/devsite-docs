@@ -295,7 +295,7 @@ Por ejemplo:
 
 ## Bin compartidos para Customers
 
-Cuando hay mas de un medios de pago activo con el "bin compartido" (primeros 6 dígitos de las tarjetas). Es necesario enviar siempre los campos [issuer_id] y [payment_method_id]. Caso contrario, se retornara un statusCode 4XX 
+Cuando hay mas de un medio de pago activo con el "bin compartido" (primeros 6 dígitos de la tarjeta). Es necesario enviar siempre los campos [issuer_id] y [payment_method_id]. Caso contrario, se retornara un statusCode 4XX 
 
 Adicionalmente notificará el error al omitir un campo o ambos por ejemplo:
  - "the payment_method_id is required"
@@ -312,7 +312,7 @@ Ejemplo de datos a enviar:
 }
 ```
 
-Respuesta:
+Respuesta-OK:
 ```json
 {
   "issuer_id": "32",
