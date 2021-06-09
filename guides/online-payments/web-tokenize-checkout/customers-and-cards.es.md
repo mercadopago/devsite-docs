@@ -16,7 +16,7 @@ Los *customers* representan a tus clientes. Las tarjetas que almacenes serán pa
 
 ## Creación de un customer y una card
 
-Para crear un `Customer` y una `Card` al mismo tiempo es necesario enviar por lo menos los campos `email` y `token`.
+Para crear un `Customer` y una `Card` al mismo tiempo es necesario enviar por lo menos los campos `email`,`payment_method_id`, `issuer_id` y `token`.
 
 El `token` es el que capturas cuando haces el [manejo de la respuesta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/handling-responses) del *Web Tokenize Checkout*.
 
@@ -43,7 +43,7 @@ El `token` es el que capturas cuando haces el [manejo de la respuesta](https://w
   $card = new MercadoPago\Card();
   $card->token = "9b2d63e00d66a8c721607214cedaecda";
   $card->customer_id = $customer->id();
-  $card->issuer_id = "23";
+  $card->issuer_id = "2353146";
   $card->payment_method_id = "debit_card";
   $card->save();
 
@@ -61,7 +61,7 @@ customer.save();
 Card card = new Card();
 card.setToken("9b2d63e00d66a8c721607214cedaecda");
 card.setCustomerId(customer.getId());
-card.setIssuerId("23");
+card.setIssuerId("2353146");
 card.setPaymentMethodId("debit_card");
 card.save();
 
@@ -80,7 +80,7 @@ mercadopago.customers.create(customer_data).then(function (customer) {
   card_data = {
     "token": "9b2d63e00d66a8c721607214cedaecda",
     "customer_id": customer.body.id,
-    "issuer_id": "23",
+    "issuer_id": "2353146",
     "payment_method_id": "debit_card"  
   }
 
@@ -109,7 +109,7 @@ customer = customer_response[:response]
 card_data = {
   token: '9b2d63e00d66a8c721607214cedaecda',
   customer_id: customer['id'],
-  issuer_id: '23',
+  issuer_id: '2353146',
   payment_method_id: 'debit_card'
 }
 card_response = sdk.card.create(card_data)
@@ -129,8 +129,8 @@ Customer customer = await customerClient.CreateAsync(customerRequest);
 var cardRequest = new CustomerCardCreateRequest
 {
     Token = "9b2d63e00d66a8c721607214cedaecda",
-    issuer_id = "23",
-    payment_method_id = "debit_card"
+    IssuerId = "2353146",
+    PaymentMethodId = "debit_card"
 };
 CustomerCard card = await customerClient.CreateCardAsync(customer.Id, cardRequest);
 ```
@@ -146,7 +146,7 @@ customer = customer_response["response"]
 
 card_data = {
   "token": "9b2d63e00d66a8c721607214cedaecda",
-  "issuer_id": "23",
+  "issuer_id": "2353146",
   "payment_method_id": "debit_card"
 }
 card_response = sdk.card().create(customer["id"], card_data)
@@ -186,7 +186,7 @@ Respuesta del Servidor:
 > 
 > Importante
 > 
-> En caso de recibir un error con statusCode 4xx es debido a la falta de campos requeridos
+> Si recibimos un mensaje de este tipo `"invalid parameter"` con statusCode 4XX es por falta de los campos `payment_method_id` y `issuer_id`
 
 ## Recibir un pago de un Customer
 
@@ -331,7 +331,7 @@ Es posible agregar nuevas tarjetas a tu `Customer`. Para esto debes crear un `to
   $card = new MercadoPago\Card();
   $card->token = "9b2d63e00d66a8c721607214cedaecda";
   $card->customer_id = $customer->id;
-  $card->issuer_id = "23";
+  $card->issuer_id = "2332451";
   $card->payment_method_id = "debit_card";
   $card->save();
 
@@ -349,7 +349,7 @@ Customer customer = Customer.load("247711297-jxOV430go9fx2e")
 Card card = new Card();
 card.setToken("9b2d63e00d66a8c721607214cedaecda");
 card.setCustomerId(customer.getID());
-card.setIssuerId("23");
+card.setIssuerId("2332451");
 card.setPaymentMethodId("debit_card");
 card.save();
 
@@ -373,7 +373,7 @@ mercadopago.customers.search({
   card_data = {
     "token": "9b2d63e00d66a8c721607214cedaecda",
     "customer": customer.id,
-    "issuer_id": "23",
+    "issuer_id": "2332451",
     "payment_method_id": "debit_card"
   }
 
@@ -399,7 +399,7 @@ customer = customer_response[:response]
 card_data = {
   token: '9b2d63e00d66a8c721607214cedaecda',
   customer_id: customer['id'],
-  issuer_id: '23',
+  issuer_id: '2332451',
   payment_method_id: 'debit_card'
 }
 card_response = sdk.card.create(card_data)
@@ -417,8 +417,8 @@ Customer customer = await customerClient.GetAsync("247711297-jxOV430go9fx2e");
 var cardRequest = new CustomerCardCreateRequest
 {
     Token = "9b2d63e00d66a8c721607214cedaecda",
-    issuer_id = "23",
-    payment_method_id = "debit_card"
+    IssuerId = "2332451",
+    PaymentMethodId = "debit_card"
 };
 CustomerCard card = await customerClient.CreateCardAsync(customer.Id, cardRequest);
 
@@ -433,7 +433,7 @@ customer = customer_response["response"]
 
 card_data = {
   "token": "9b2d63e00d66a8c721607214cedaecda",
-  "issuer_id": "23",
+  "issuer_id": "2332451",
   "payment_method_id": "debit_card"
 }
 card_response = sdk.card().create(customer["id"], card_data)
@@ -487,8 +487,7 @@ Respuesta:
 > 
 > Importante
 > 
-> En caso de recibir un error con statusCode 4xx es debido a la falta de campos requeridos
-
+> Si recibimos un mensaje de este tipo `"invalid parameter"` con statusCode 4XX es por falta de los campos `payment_method_id` y `issuer_id` 
 ## Buscar un Customer
 
 En el caso en el que no sepas cuál es el `id` de tu `Customer`, puedes utilizar la API de `Customer Search` realizando un request `HTTP GET`. El parámetro requerido para esto es `email`:

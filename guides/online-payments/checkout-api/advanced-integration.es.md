@@ -23,7 +23,7 @@ Vas a sumar a cada cliente con el valor `customer` y a la tarjeta como `card`.
   $card = new MercadoPago\Card();
   $card->token = "9b2d63e00d66a8c721607214cedaecda";
   $card->customer_id = $customer->id();
-  $card->issuer_id = "23";
+  $card->issuer_id = "3245612";
   $card->payment_method_id = "debit_card";
   $card->save();
 
@@ -67,7 +67,7 @@ customer.save();
 Card card = new Card();
 card.setToken("9b2d63e00d66a8c721607214cedaecda");
 card.setCustomerId(customer.getId());
-card.setIssuerId("23");
+card.setIssuerId("3245612");
 card.setPaymentMethodId("debit_card");
 card.save();
 
@@ -86,7 +86,7 @@ customer = customer_response[:response]
 
 card_request = {
   token: '9b2d63e00d66a8c721607214cedaecda',
-  issuer_id: '23',
+  issuer_id: '3245612',
   payment_method_id: 'debit_card'
 }
 card_response = sdk.card.create(customer['id'], card_request)
@@ -107,8 +107,8 @@ Customer customer = await customerClient.CreateAsync(customerRequest);
 var cardRequest = new CustomerCardCreateRequest
 {
     Token = "9b2d63e00d66a8c721607214cedaecda",
-    issuer_id = "23",
-    payment_method_id = "debit_card"
+    IssuerId = "3245612",
+    PaymentMethodId = "debit_card"
 };
 CustomerCard card = await customerClient.CreateCardAsync(customer.Id, cardRequest);
 
@@ -126,7 +126,7 @@ customer = customer_response["response"]
 
 card_data = {
   "token": "9b2d63e00d66a8c721607214cedaecda",
-  "issuer_id": "23",
+  "issuer_id": "3245612",
   "payment_method_id": "debit_card"
 }
 card_response = sdk.card().create(customer["id"], card_data)
@@ -139,7 +139,7 @@ curl -X POST \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
-  -d '{"token": "9b2d63e00d66a8c721607214cedaecda", "issuer_id": "23", "payment_method_id": "debit_card"}'
+  -d '{"token": "9b2d63e00d66a8c721607214cedaecda", "issuer_id": "3245612", "payment_method_id": "debit_card"}'
 
 ```
 ]]]
@@ -177,7 +177,7 @@ curl -X POST \
 > 
 > Importante
 > 
-> En caso de recibir un error con statusCode 4xx es debido a la falta de campos requeridos 
+> Si recibimos un mensaje de este tipo `"invalid parameter"` con statusCode 4XX es por falta de los campos `payment_method_id` y `issuer_id` 
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agrega nuevas tarjetas a un cliente
 
@@ -195,7 +195,7 @@ Para agregar nuevas tarjetas a un cliente, debes crear un token y hacer un `HTTP
   $card = new MercadoPago\Card();
   $card->token = "9b2d63e00d66a8c721607214cedaecda";
   $card->customer_id = $customer->id;
-  $card->issuer_id = "23";
+  $card->issuer_id = "3245612";
   $card->payment_method_id = "debit_card";
   $card->save();
 
@@ -221,7 +221,7 @@ mercadopago.customers.search({
   card_data = {
     "token": "9b2d63e00d66a8c721607214cedaecda",
     "customer": customer.id,
-    "issuer_id": "23",
+    "issuer_id": "3245612",
     "payment_method_id": "debit_card"
   }
 
@@ -242,7 +242,7 @@ Customer customer = Customer.load("247711297-jxOV430go9fx2e")
 Card card = new Card();
 card.setToken("9b2d63e00d66a8c721607214cedaecda");
 card.setCustomerId(customer.getID());
-card.setIssuerId("23");
+card.setIssuerId("3245612");
 card.setPaymentMethodId("debit_card");
 card.save();
 
@@ -260,7 +260,7 @@ customer = customer_response[:response]
 
 card_request = {
   token: '9b2d63e00d66a8c721607214cedaecda',
-  issuer_id: '23',
+  issuer_id: '3245612',
   payment_method_id: 'debit_card'
 }
 card_response = sdk.card.create(customer['id'], card_request)
@@ -278,8 +278,8 @@ Customer customer = await customerClient.GetAsync("247711297-jxOV430go9fx2e");
 var cardRequest = new CustomerCardCreateRequest
 {
     Token = "9b2d63e00d66a8c721607214cedaecda",
-    issuer_id = "23",
-    payment_method_id = "debit_card"
+    IssuerId = "3245612",
+    PaymentMethodId = "debit_card"
 };
 CustomerCard card = await customerClient.CreateCardAsync(customer.Id, cardRequest);
 
@@ -296,7 +296,7 @@ customer = customer_response["response"]
 
 card_data = {
   "token": "9b2d63e00d66a8c721607214cedaecda",
-  "issuer_id": "23",
+  "issuer_id": "3245612",
   "payment_method_id": "debit_card"
 }
 card_response = sdk.card().create(customer["id"], card_data)
@@ -317,7 +317,7 @@ curl -X POST \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
-  -d '{"token": "9b2d63e00d66a8c721607214cedaecda", "issuer_id": "23", "payment_method_id":"debit_card"}'
+  -d '{"token": "9b2d63e00d66a8c721607214cedaecda", "issuer_id": "3245612", "payment_method_id":"debit_card"}'
 
 ```
 ]]]
