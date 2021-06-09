@@ -23,8 +23,8 @@ Vas a sumar a cada cliente con el valor `customer` y a la tarjeta como `card`.
   $card = new MercadoPago\Card();
   $card->token = "9b2d63e00d66a8c721607214cedaecda";
   $card->customer_id = $customer->id();
-  $card->issuer_id = "3245612";
-  $card->payment_method_id = "debit_card";
+  $card->issuer = array("id" => "3245612");
+  $card->payment_method array("id" => "debit_card");
   $card->save();
 
 ?>
@@ -64,10 +64,13 @@ Customer customer = new Customer();
 customer.setEmail("john@yourdomain.com");
 customer.save();
 
+Issuer issuer = new Issuer();
+issuer.setId("3245612");
+
 Card card = new Card();
 card.setToken("9b2d63e00d66a8c721607214cedaecda");
 card.setCustomerId(customer.getId());
-card.setIssuerId("3245612");
+card.setIssuer(issuer);
 card.setPaymentMethodId("debit_card");
 card.save();
 
@@ -106,9 +109,7 @@ Customer customer = await customerClient.CreateAsync(customerRequest);
 
 var cardRequest = new CustomerCardCreateRequest
 {
-    Token = "9b2d63e00d66a8c721607214cedaecda",
-    IssuerId = "3245612",
-    PaymentMethodId = "debit_card"
+    Token = "9b2d63e00d66a8c721607214cedaecda"
 };
 CustomerCard card = await customerClient.CreateCardAsync(customer.Id, cardRequest);
 
@@ -177,7 +178,7 @@ curl -X POST \
 > 
 > Importante
 > 
-> Si recibimos un mensaje de este tipo `"invalid parameter"` con statusCode 4XX es por falta de los campos `payment_method_id` y `issuer_id` 
+> Si recibes un mensaje de error del tipo `"invalid parameter"` con código de estado HTTP 400, asegúrate de estar completando correctamente los campos `payment_method_id` e `issuer_id`
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agrega nuevas tarjetas a un cliente
 
