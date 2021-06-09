@@ -8,10 +8,10 @@ Una vez listo y descargado el reporte, tendrás un archivo para consultar las pl
 Para consultar el reporte te recomendamos descargarlo en formato .csv para abrirlo en el programa que lo visualices. Configura tu programa para que soporte el formato UTF-8, así evitas problemas de lectura.
 
 > WARNING
-> 
-> El reporte de Dinero Retirado será deshabilitado próximamente
-> 
-> Puedes usar el [reporte de ----[mla]---- Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberaciones------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.
+>
+> El reporte de Dinero retirado será deshabilitado próximamente
+>
+> Puedes usar el [reporte de ----[mla]----Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberaciones------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.
 
 ## ¿Qué contiene el reporte?
 

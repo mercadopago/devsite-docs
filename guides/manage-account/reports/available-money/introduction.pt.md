@@ -5,10 +5,10 @@
 O relatório de Dinheiro disponível é um **relatório para ser baixado que te permite saber a liquidez do seu negócio**, ou seja, quanto você tem para usar. Ele contém **detalhes dos pagamentos liberados** que estão prontos para serem retirados para uma conta bancária, render no Mercado Pago ou para usar saldo no cartão pré-pago Cartão Mercado Pago.
 
 > WARNING
-> 
-> O relatório de Dinheiro Disponível será desabilitado em breve 
-> 
-> Você pode usar o relatório de [Liberações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
+>
+> O relatório de Dinheiro disponível será desabilitado em breve
+>
+> Você pode usar o [relatório de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberações------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
 
 ## Como baixar o relatório?
 

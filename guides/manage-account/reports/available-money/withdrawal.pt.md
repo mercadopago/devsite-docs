@@ -5,10 +5,10 @@
 Você pode criar um relatório de Dinheiro disponível de forma automática cada vez que fizer uma retirada de dinheiro da sua conta do Mercado Pago para uma conta bancária. Programe esta opção a partir do seu painel do Mercado Pago ou via API. 
 
 > WARNING
-> 
-> O relatório de Dinheiro Disponível será desabilitado em breve 
-> 
-> Você pode usar o relatório de [Liberações](https://www.mercadopago[FAKER][URL][DOMAIN]developers/pt/guides/manage-account/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
+>
+> O relatório de Dinheiro disponível será desabilitado em breve
+>
+> Você pode usar o [relatório de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberações------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
 
 ## Gerar a partir do painel do Mercado Pago
 
