@@ -24,7 +24,7 @@ Vas a sumar a cada cliente con el valor `customer` y a la tarjeta como `card`.
   $card->token = "9b2d63e00d66a8c721607214cedaecda";
   $card->customer_id = $customer->id();
   $card->issuer = array("id" => "3245612");
-  $card->payment_method array("id" => "debit_card");
+  $card->payment_method = array("id" => "debit_card");
   $card->save();
 
 ?>
@@ -196,8 +196,8 @@ Para agregar nuevas tarjetas a un cliente, debes crear un token y hacer un `HTTP
   $card = new MercadoPago\Card();
   $card->token = "9b2d63e00d66a8c721607214cedaecda";
   $card->customer_id = $customer->id;
-  $card->issuer_id = "3245612";
-  $card->payment_method_id = "debit_card";
+  $card->issuer = array("id" => "3245612");
+  $card->payment_method = array("id" => "debit_card");
   $card->save();
 
   print_r($card);
@@ -240,10 +240,13 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Customer customer = Customer.load("247711297-jxOV430go9fx2e")
 
+Issuer issuer = new Issuer();
+issuer.setId("3245612");
+
 Card card = new Card();
 card.setToken("9b2d63e00d66a8c721607214cedaecda");
 card.setCustomerId(customer.getID());
-card.setIssuerId("3245612");
+card.setIssuer(issuer);
 card.setPaymentMethodId("debit_card");
 card.save();
 
@@ -278,9 +281,7 @@ Customer customer = await customerClient.GetAsync("247711297-jxOV430go9fx2e");
 
 var cardRequest = new CustomerCardCreateRequest
 {
-    Token = "9b2d63e00d66a8c721607214cedaecda",
-    IssuerId = "3245612",
-    PaymentMethodId = "debit_card"
+    Token = "9b2d63e00d66a8c721607214cedaecda"
 };
 CustomerCard card = await customerClient.CreateCardAsync(customer.Id, cardRequest);
 

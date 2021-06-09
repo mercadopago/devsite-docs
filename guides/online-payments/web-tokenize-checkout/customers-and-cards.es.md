@@ -44,7 +44,7 @@ El `token` es el que capturas cuando haces el [manejo de la respuesta](https://w
   $card->token = "9b2d63e00d66a8c721607214cedaecda";
   $card->customer_id = $customer->id();
   $card->issuer = array("id" => "3245612");
-  $card->payment_method array("id" => "debit_card");
+  $card->payment_method = array("id" => "debit_card");
   $card->save();
 
 ?>
@@ -332,8 +332,8 @@ Es posible agregar nuevas tarjetas a tu `Customer`. Para esto debes crear un `to
   $card = new MercadoPago\Card();
   $card->token = "9b2d63e00d66a8c721607214cedaecda";
   $card->customer_id = $customer->id;
-  $card->issuer_id = "2332451";
-  $card->payment_method_id = "debit_card";
+  $card->issuer = array("id" => "3245612");
+  $card->payment_method = array("id" => "debit_card");
   $card->save();
 
   print_r($card);
@@ -347,10 +347,13 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Customer customer = Customer.load("247711297-jxOV430go9fx2e")
 
+Issuer issuer = new Issuer();
+issuer.setId("3245612");
+
 Card card = new Card();
 card.setToken("9b2d63e00d66a8c721607214cedaecda");
 card.setCustomerId(customer.getID());
-card.setIssuerId("2332451");
+card.setIssuer(issuer);
 card.setPaymentMethodId("debit_card");
 card.save();
 
@@ -417,9 +420,7 @@ Customer customer = await customerClient.GetAsync("247711297-jxOV430go9fx2e");
 
 var cardRequest = new CustomerCardCreateRequest
 {
-    Token = "9b2d63e00d66a8c721607214cedaecda",
-    IssuerId = "2332451",
-    PaymentMethodId = "debit_card"
+    Token = "9b2d63e00d66a8c721607214cedaecda"
 };
 CustomerCard card = await customerClient.CreateCardAsync(customer.Id, cardRequest);
 
@@ -488,7 +489,7 @@ Respuesta:
 > 
 > Importante
 > 
-> Si recibimos un mensaje de este tipo `"invalid parameter"` con statusCode 4XX es por falta de los campos `payment_method_id` y `issuer_id` 
+> Si recibes un mensaje de error del tipo `"invalid parameter"` con código de estado HTTP 400, asegúrate de estar completando correctamente los campos `payment_method_id` e `issuer_id` 
 ## Buscar un Customer
 
 En el caso en el que no sepas cuál es el `id` de tu `Customer`, puedes utilizar la API de `Customer Search` realizando un request `HTTP GET`. El parámetro requerido para esto es `email`:
