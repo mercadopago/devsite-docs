@@ -14,7 +14,7 @@ Com estes relatórios, procuramos cobrir as diferentes necessidades dos nossos u
     + [Dinheiro em conta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/introduction)
     + [Dinheiro disponível](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/introduction)
 
-> WARNING
+> NOTE
 >
 > O relatório de Dinheiro disponível será desabilitado em breve
 >

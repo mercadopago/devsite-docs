@@ -9,7 +9,7 @@ With these reports we seek to cover the different needs of our users:
     + [Account Balance](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/introduction)
     + [Available Balance](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/introduction)
 
-> WARNING
+> NOTE
 >
 > The Available Balance report will be disabled soon
 >

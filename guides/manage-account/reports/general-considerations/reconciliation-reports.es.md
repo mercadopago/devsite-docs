@@ -14,7 +14,7 @@ Con estos informes buscamos cubrir las distintas necesidades de nuestros usuario
     + [Todas las transacciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/introduction)
     + [Dinero retirado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/introduction)
 
-> WARNING
+> NOTE
 >
 > El reporte de Dinero retirado será deshabilitado próximamente
 >
