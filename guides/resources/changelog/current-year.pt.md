@@ -6,6 +6,26 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Junho 2021
 
+### 10 de junho
+
+> CHANGELOG
+>
+> Nova versão PrestaShop
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: PRESTASHOP
+
+Lançamos a nova versão 4.6.1 para PrestaShop.
+
+[Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.6.1).
+
 ### 3 de junho
 
 > CHANGELOG
