@@ -16,7 +16,7 @@ Los *customers* representan a tus clientes. Las tarjetas que almacenes serán pa
 
 ## Creación de un customer y una card
 
-Para crear un `Customer` y una `Card` al mismo tiempo es necesario enviar por lo menos los campos `email` y `token`.
+Para crear un `Customer` y una `Card` al mismo tiempo es necesario enviar por lo menos los campos `email`,`payment_method_id`, `issuer_id` y `token`.
 
 El `token` es el que capturas cuando haces el [manejo de la respuesta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/handling-responses) del *Web Tokenize Checkout*.
 
@@ -43,6 +43,8 @@ El `token` es el que capturas cuando haces el [manejo de la respuesta](https://w
   $card = new MercadoPago\Card();
   $card->token = "9b2d63e00d66a8c721607214cedaecda";
   $card->customer_id = $customer->id();
+  $card->issuer = array("id" => "3245612");
+  $card->payment_method = array("id" => "debit_card");
   $card->save();
 
 ?>
@@ -56,9 +58,14 @@ Customer customer = new Customer();
 customer.setEmail("john@yourdomain.com");
 customer.save();
 
+Issuer issuer = new Issuer();
+issuer.setId("3245612");
+
 Card card = new Card();
 card.setToken("9b2d63e00d66a8c721607214cedaecda");
 card.setCustomerId(customer.getId());
+card.setIssuer(issuer);
+card.setPaymentMethodId("debit_card");
 card.save();
 
 ```
@@ -75,7 +82,9 @@ mercadopago.customers.create(customer_data).then(function (customer) {
 
   card_data = {
     "token": "9b2d63e00d66a8c721607214cedaecda",
-    "customer_id": customer.body.id 
+    "customer_id": customer.body.id,
+    "issuer_id": "2353146",
+    "payment_method_id": "debit_card"  
   }
 
   mercadopago.card.create(card_data).then(function (card) {
@@ -102,7 +111,9 @@ customer = customer_response[:response]
 
 card_data = {
   token: '9b2d63e00d66a8c721607214cedaecda',
-  customer_id: customer['id']
+  customer_id: customer['id'],
+  issuer_id: '2353146',
+  payment_method_id: 'debit_card'
 }
 card_response = sdk.card.create(card_data)
 card = card_response[:response]
@@ -120,7 +131,7 @@ Customer customer = await customerClient.CreateAsync(customerRequest);
 
 var cardRequest = new CustomerCardCreateRequest
 {
-    Token = "9b2d63e00d66a8c721607214cedaecda",
+    Token = "9b2d63e00d66a8c721607214cedaecda"
 };
 CustomerCard card = await customerClient.CreateCardAsync(customer.Id, cardRequest);
 ```
@@ -135,7 +146,9 @@ customer_response = sdk.customer().create(customer_data)
 customer = customer_response["response"]
 
 card_data = {
-  "token": "9b2d63e00d66a8c721607214cedaecda"
+  "token": "9b2d63e00d66a8c721607214cedaecda",
+  "issuer_id": "2353146",
+  "payment_method_id": "debit_card"
 }
 card_response = sdk.card().create(customer["id"], card_data)
 card = card_response["response"]
@@ -169,6 +182,12 @@ Respuesta del Servidor:
 > Nota
 >
 > Para las tarjetas `master` también se debe enviar el campo `issuer_id` a la hora de crearle la tarjeta a un customer.
+
+> WARNING 
+> 
+> Importante
+> 
+> Si recibes un mensaje de error del tipo `"invalid parameter"` con código de estado HTTP 400, asegúrate de estar completando correctamente los campos `payment_method_id` e `issuer_id`.
 
 ## Recibir un pago de un Customer
 
@@ -313,6 +332,8 @@ Es posible agregar nuevas tarjetas a tu `Customer`. Para esto debes crear un `to
   $card = new MercadoPago\Card();
   $card->token = "9b2d63e00d66a8c721607214cedaecda";
   $card->customer_id = $customer->id;
+  $card->issuer = array("id" => "3245612");
+  $card->payment_method = array("id" => "debit_card");
   $card->save();
 
   print_r($card);
@@ -326,9 +347,14 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Customer customer = Customer.load("247711297-jxOV430go9fx2e")
 
+Issuer issuer = new Issuer();
+issuer.setId("3245612");
+
 Card card = new Card();
 card.setToken("9b2d63e00d66a8c721607214cedaecda");
 card.setCustomerId(customer.getID());
+card.setIssuer(issuer);
+card.setPaymentMethodId("debit_card");
 card.save();
 
 System.out.print(card.toString());
@@ -350,7 +376,9 @@ mercadopago.customers.search({
 }).then(function (customer) {
   card_data = {
     "token": "9b2d63e00d66a8c721607214cedaecda",
-    "customer": customer.id
+    "customer": customer.id,
+    "issuer_id": "2332451",
+    "payment_method_id": "debit_card"
   }
 
   mercadopago.cards.create(card_data).then(function (card) {
@@ -374,7 +402,9 @@ customer = customer_response[:response]
 
 card_data = {
   token: '9b2d63e00d66a8c721607214cedaecda',
-  customer_id: customer['id']
+  customer_id: customer['id'],
+  issuer_id: '2332451',
+  payment_method_id: 'debit_card'
 }
 card_response = sdk.card.create(card_data)
 card = card_response[:response]
@@ -390,7 +420,7 @@ Customer customer = await customerClient.GetAsync("247711297-jxOV430go9fx2e");
 
 var cardRequest = new CustomerCardCreateRequest
 {
-    Token = "9b2d63e00d66a8c721607214cedaecda",
+    Token = "9b2d63e00d66a8c721607214cedaecda"
 };
 CustomerCard card = await customerClient.CreateCardAsync(customer.Id, cardRequest);
 
@@ -404,7 +434,9 @@ customer_response = sdk.customer().get("247711297-jxOV430go9fx2e")
 customer = customer_response["response"]
 
 card_data = {
-  "token": "9b2d63e00d66a8c721607214cedaecda"
+  "token": "9b2d63e00d66a8c721607214cedaecda",
+  "issuer_id": "2332451",
+  "payment_method_id": "debit_card"
 }
 card_response = sdk.card().create(customer["id"], card_data)
 card = card_response["response"]
@@ -453,6 +485,11 @@ Respuesta:
 }
 ```
 
+> WARNING 
+> 
+> Importante
+> 
+> Si recibes un mensaje de error del tipo `"invalid parameter"` con código de estado HTTP 400, asegúrate de estar completando correctamente los campos `payment_method_id` e `issuer_id`. 
 ## Buscar un Customer
 
 En el caso en el que no sepas cuál es el `id` de tu `Customer`, puedes utilizar la API de `Customer Search` realizando un request `HTTP GET`. El parámetro requerido para esto es `email`:
