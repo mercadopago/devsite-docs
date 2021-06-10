@@ -183,9 +183,9 @@ Server response:
 
 > WARNING 
 > 
-> Importante
+> Important
 > 
-> Si recibes un mensaje de error del tipo `"invalid parameter"` con código de estado HTTP 400, asegúrate de estar completando correctamente los campos `payment_method_id` e `issuer_id`
+> If you receive an error message of type `"invalid parameter"` with HTTP 400 status code, make sure you are completing the fields `payment_method_id` and `issuer_id` correctly.
 
 ## Receive a payment from a Customer
 
@@ -485,9 +485,9 @@ Response:
 
 > WARNING 
 > 
-> Importante
+> Important
 > 
-> Si recibes un mensaje de error del tipo `"invalid parameter"` con código de estado HTTP 400, asegúrate de estar completando correctamente los campos `payment_method_id` e `issuer_id`
+> If you receive an error message of type `"invalid parameter"` with HTTP 400 status code, make sure you are completing the fields `payment_method_id` and `issuer_id` correctly.
 
 ## Search a Customer
 

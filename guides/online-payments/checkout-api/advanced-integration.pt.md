@@ -6,7 +6,7 @@ Use nossas APIs para guardar a referência dos cartões dos seus clientes e pode
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Crie um cliente e um cartão
 
-Para criar um cliente e associá-lo ao seu cartão, é preciso enviar, payment_method_id, issuer_id o campo do e-mail e o token gerado.
+Para criar um cliente e associá-lo ao seu cartão, é preciso enviar o campo do e-mail, o tipo de meio de pagamento, o ID do banco emissor e o token gerado.
 Cada cliente será guardado com o valor `customer` e cada cartão com o valor `card`.
 
 [[[
@@ -177,7 +177,7 @@ curl -X POST \
 > 
 > Importante
 > 
-> Si recibes un mensaje de error del tipo `"invalid parameter"` con código de estado HTTP 400, asegúrate de estar completando correctamente los campos `payment_method_id` e `issuer_id`
+> Se você receber uma mensagem de erro do tipo `"invalid parameter"` com código de estado HTTP 400, certifique-se de que está preenchendo corretamente os campos `payment_method_id` e `issuer_id`.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adicione novos cartões a um cliente
 

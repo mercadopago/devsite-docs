@@ -6,7 +6,7 @@ Use our APIs to save your customer's card references and offer them a better exp
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create customers and cards
 
-To create customers and cards, submit the e-mail field payment_method_id, issuer_id and generated token.
+To create customers and cards, submit the e-mail field, type of payment method, issuing bank ID and generated token.
 You will add every customer using the `customer` value, and cards as `card`.
 
 [[[
@@ -176,9 +176,9 @@ curl -X POST \
 
 > WARNING 
 > 
-> Importante
+> Important
 > 
-> Si recibes un mensaje de error del tipo `"invalid parameter"` con código de estado HTTP 400, asegúrate de estar completando correctamente los campos `payment_method_id` e `issuer_id`
+> If you receive an error message of type `"invalid parameter"` with HTTP 400 status code, make sure you are completing the fields `payment_method_id` and `issuer_id` correctly.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new cards to a customer
 
