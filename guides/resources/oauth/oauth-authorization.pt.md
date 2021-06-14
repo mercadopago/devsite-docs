@@ -34,6 +34,8 @@ Compartilhamos a URL base que você deve utilizar e o detalhe dos parâmetros co
 
 ```url
 https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com
+
+
 ```
 
 | Parâmetro | Dado a completar |
