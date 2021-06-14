@@ -88,6 +88,7 @@ Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
     "coupon_detailed": true,
     "shipping_detail": true,
     "refund_detailed": true,
+    "display_timezone": "GMT-04",
     "frequency": {
         "hour": 0,
         "type": "monthly",
@@ -122,6 +123,7 @@ curl -X POST \
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
+            "display_timezone": "GMT-04",
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -156,6 +158,7 @@ $data = '{
             "coupon_detailed": true,
             "shipping_detail": true,
             "refund_detailed": true,
+            "display_timezone": "GMT-04",
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -194,6 +197,7 @@ String body = "{
                     \\"coupon_detailed\\": true,
                     \\"shipping_detail\\": true,
                     \\"refund_detailed\\": true,
+                    \\"display_timezone\\": \\"GMT-04\\",
                     \\"frequency\\": {
                         \\"hour\\": 0,
                         \\"type\\": \\"monthly\\",
@@ -231,6 +235,7 @@ data = '{
             "coupon_detailed": true,
             "shipping_detail": true,
             "refund_detailed": true,
+            "display_timezone": "GMT-04",
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -267,6 +272,7 @@ var dataString = '{
             "coupon_detailed": true,
             "shipping_detail": true,
             "refund_detailed": true,
+            "display_timezone": "GMT-04",
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -313,6 +319,7 @@ Como resposta, você receberá um `HTTP STATUS 201 (Created)`
     "coupon_detailed": true,
     "shipping_detail": true,
     "refund_detailed": true,
+    "display_timezone": "GMT-04",
     "frequency": {
         "hour": 0,
         "type": "monthly",
@@ -351,6 +358,7 @@ curl -X PUT \
         "coupon_detailed": true,
         "shipping_detail": true,
         "refund_detailed": true,
+        "display_timezone": "GMT-04",
         "frequency": {
             "hour": 0,
             "type": "monthly",
@@ -385,6 +393,7 @@ $data = '{
         "coupon_detailed": true,
         "shipping_detail": true,
         "refund_detailed": true,
+        "display_timezone": "GMT-04",
         "frequency": {
             "hour": 0,
             "type": "monthly",
@@ -423,6 +432,7 @@ String body = "{
                     \\"coupon_detailed\\": true,
                     \\"shipping_detail\\": true,
                     \\"refund_detailed\\": true,
+                    \\"display_timezone\\": \\"GMT-04\\",
                     \\"frequency\\": {
                         \\"hour\\": 0,
                         \\"type\\": \\"monthly\\",
@@ -460,6 +470,7 @@ data = '{
             "coupon_detailed": true,
             "shipping_detail": true,
             "refund_detailed": true,
+            "display_timezone": "GMT-04",
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -496,6 +507,7 @@ var dataString = '{
         "coupon_detailed": true,
         "shipping_detail": true,
         "refund_detailed": true,
+        "display_timezone": "GMT-04",
         "frequency": {
             "hour": 0,
             "type": "monthly",
@@ -543,6 +555,7 @@ Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
     "coupon_detailed": true,
     "shipping_detail": true,
     "refund_detailed": true,
+    "display_timezone": "GMT-04",
     "frequency": {
         "hour": 0,
         "type": "monthly",

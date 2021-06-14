@@ -93,6 +93,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
     "scheduled": false,
     "execute_after_withdrawal": true,
     "separator": ",",
+    "display_timezone": "GMT-04",
     "frequency": {
         "hour": 0,
         "type": "monthly",
@@ -127,6 +128,7 @@ curl -X POST \
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
+            "display_timezone": "GMT-04",
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -158,6 +160,7 @@ $data = '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
+            "display_timezone": "GMT-04",
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -193,6 +196,7 @@ String body = "{
                 \\"file_name_prefix\\": \\"bank-report-USER_ID\\",
                 \\"include_withdrawal_at_end\\": false,
                 \\"execute_after_withdrawal\\": true,
+                \\"display_timezone\\": \\"GMT-04\\",
                 \\"frequency\\": {
                     \\"hour\\": 0,
                     \\"type\\": \\"monthly\\",
@@ -227,6 +231,7 @@ data = '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
+            "display_timezone": "GMT-04",
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -260,6 +265,7 @@ var dataString = '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
+            "display_timezone": "GMT-04",
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -303,6 +309,7 @@ Recibirás como respuesta un `HTTP STATUS 201 (Created)`
     "include_withdrawal_at_end": false,
     "scheduled": false,
     "execute_after_withdrawal": true,
+    "display_timezone": "GMT-04",
     "separator": ",",
     "frequency": {
         "hour": 0,
@@ -339,6 +346,7 @@ curl -X PUT \
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
+            "display_timezone": "GMT-04",
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -370,6 +378,7 @@ $data = '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
+            "display_timezone": "GMT-04",
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -405,6 +414,7 @@ String body = "{
                 \\"file_name_prefix\\": \\"bank-report-USER_ID\\",
                 \\"include_withdrawal_at_end\\": false,
                 \\"execute_after_withdrawal\\": true,
+                \\"display_timezone\\": \\"GMT-04\\",
                 \\"frequency\\": {
                     \\"hour\\": 0,
                     \\"type\\": \\"monthly\\",
@@ -439,6 +449,7 @@ data = '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
+            "display_timezone": "GMT-04",
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -472,6 +483,7 @@ var dataString = '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
+            "display_timezone": "GMT-04",
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -517,6 +529,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
     "scheduled": false,
     "execute_after_withdrawal": true,
     "separator": ",",
+    "display_timezone": "GMT-04",
     "frequency": {
         "hour": 0,
         "type": "monthly",
