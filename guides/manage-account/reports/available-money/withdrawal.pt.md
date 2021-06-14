@@ -49,15 +49,24 @@ curl -X PUT \
     -d '{
         "file_name_prefix": "bank-report-USER_ID",
         "include_withdrawal_at_end": false,
-        "detailed": true,
         "execute_after_withdrawal": true,
-        "extended": true,
-        "scheduled": true,
+        "display_timezone": "GMT-04",
         "frequency": {
             "hour": 0,
             "type": "monthly",
             "value": 1
-        }
+        },
+        "columns": [
+            {
+                "key": "DATE"
+            },
+            {
+                "key": "SOURCE_ID"
+            },
+            {
+                "key": "EXTERNAL_REFERENCE"
+            }
+        ]
     }'
 ```
 ```php
@@ -70,17 +79,26 @@ $headers = array(
     'Authorization' => 'Bearer ENV_ACCESS_TOKEN'
 );
 $data = '{
-        "file_name_prefix": "bank-report-USER_ID",
-        "include_withdrawal_at_end": false,
-        "detailed": true,
-        "execute_after_withdrawal": true,
-        "extended": true,
-        "scheduled": true,
-        "frequency": {
-            "hour": 0,
-            "type": "monthly",
-            "value": 1
-        }
+            "file_name_prefix": "bank-report-USER_ID",
+            "include_withdrawal_at_end": false,
+            "execute_after_withdrawal": true,
+            "display_timezone": "GMT-04",
+            "frequency": {
+                "hour": 0,
+                "type": "monthly",
+                "value": 1
+            },
+            "columns": [
+                {
+                    "key": "DATE"
+                },
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
     }';
 $response = Requests::put('https://api.mercadopago.com/v1/account/bank_report/config', $headers, $data);
 ```
@@ -99,15 +117,18 @@ connection.setDoOutput(true);
 String body = "{
                 \\"file_name_prefix\\": \\"bank-report-USER_ID\\",
                 \\"include_withdrawal_at_end\\": false,
-                \\"detailed\\": true,
                 \\"execute_after_withdrawal\\": true,
-                \\"extended\\": true,
-                \\"schedule\\":true,
+                \\"display_timezone\\": \\"GMT-04\\",
                 \\"frequency\\": {
                     \\"hour\\": 0,
                     \\"type\\": \\"monthly\\",
                     \\"value\\": 1
-                }
+                },
+                \\"columns\\": [
+                   { \\"key\\": \\"DATE\\" },
+                   { \\"key\\": \\"SOURCE_ID\\" },
+                   { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
+                ]
             }";
 
 try(OutputStream os = connection.getOutputStream()) {
@@ -128,15 +149,27 @@ headers = {
     'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 }
 
-data = '{
+data = '{  
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
-            "detailed": true,
             "execute_after_withdrawal": true,
-            "extended": true,
-            "scheduled": true,
-            "frequency": {"hour": 0,"type": "monthly","value": 1}
-
+            "display_timezone": "GMT-04",
+            "frequency": {
+                "hour": 0,
+                "type": "monthly",
+                "value": 1
+            },
+            "columns": [
+                {
+                    "key": "DATE"
+                },
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
         }'
 
 response = requests.put('https://api.mercadopago.com/v1/account/bank_report/config', headers=headers, data=data)
@@ -151,17 +184,26 @@ var headers = {
 };
 
 var dataString = '{
-        "file_name_prefix": "bank-report-USER_ID",
-        "include_withdrawal_at_end": false,
-        "detailed": true,
-        "execute_after_withdrawal": true,
-        "extended": true,
-        "scheduled": true,
-        "frequency": {
-            "hour": 0,
-            "type": "monthly",
-            "value": 1
-        }
+            "file_name_prefix": "bank-report-USER_ID",
+            "include_withdrawal_at_end": false,
+            "execute_after_withdrawal": true,
+            "display_timezone": "GMT-04",
+            "frequency": {
+                "hour": 0,
+                "type": "monthly",
+                "value": 1
+            },
+            "columns": [
+                {
+                    "key": "DATE"
+                },
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
     }';
 
 var options = {
@@ -187,15 +229,25 @@ Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
 {
     "file_name_prefix": "bank-report-USER_ID",
     "include_withdrawal_at_end": false,
-    "detailed": true,
     "scheduled": true,
     "execute_after_withdrawal": true,
-    "extended": true,
+    "display_timezone": "GMT-04",
     "frequency": {
         "hour": 3,
         "type": "daily",
         "value": {}
-    }
+    },
+    "columns": [
+        {
+            "key": "DATE"
+        },
+        {
+            "key": "SOURCE_ID"
+        },
+        {
+            "key": "EXTERNAL_REFERENCE"
+        }
+    ]
 }
 ```
 
