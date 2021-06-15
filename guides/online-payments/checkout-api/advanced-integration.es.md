@@ -816,6 +816,19 @@ curl -X GET \
 
 Para modificar un customer es necesario enviar el `customer_id` y los campos que se vayan a modificar. Realizando un solicitud `HTTP PUT`. 
 
+Campos que pueden modificarse:
+Atributo | Informacion
+-------- | -----------
+address | (Información sobre la dirección por defecto del cliente)
+default_address | Dirección por defecto del cliente
+default_card | Tarjeta por defecto del cliente
+description | Descripción del cliente
+email | Email del cliente
+first_name | Nombre del cliente
+last_name | Apellido del cliente
+phone | Teléfono del cliente
+identification | Tipo de Documentacion y numero
+
 [[[
 ```php
 
