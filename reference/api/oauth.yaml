@@ -7,25 +7,32 @@ info:
 paths:
   /oauth/token:
     post:
+      tags:
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
+        - $ref: '#/tags/mobile-checkout'
+        - $ref: '#/tags/subscriptions'
       summary: Generate credentials
       description: To create or refresh the necessary credentials to operate your application in the name of a seller
       requestBody:
         content:
-          application/x-www-form-urlencoded:
+          application/json:
             schema:
               type: object
               properties:
                 client_secret:
                   type: string
                   description: This is your application Access Token. 
+                  required: true
                   example: 'ACCESS_TOKEN'
                 grant_type:
                   type: string
-                  description: Specify type of operation to perform to get your credentials. <br>**grant_type = authorization_code** in case you want to obtain credentials for the first time.<br>**grant_type = refresh_token** in case you want to refresh existing token.
+                  description: Specify type of operation to perform to get your credentials.
+                  required: true
                   example: 'authorization_code'
                   enum:
-                    - authorization_code
-                    - refresh_token
+                    - authorization_code -- In case you want to obtain credentials for the first time
+                    - refresh_token -- In case you want to refresh existing token
                 code:
                   type: string
                   description: The authorization code you get in your server for linking. Only required when grant_type is equal to authorization_code.
@@ -36,9 +43,6 @@ paths:
                 refresh_token:
                   type: string
                   description: Value received when expiring credentials were created. Only required when grant_type is equal to refresh_token.
-              required:
-                - client_secret
-                - grant_type
       responses:
         '200':
           description: Success
@@ -50,27 +54,35 @@ paths:
                   access_token:
                     type: string
                     example: 'APP_USR-4934588586838432-XXXXXXXX-241983636'
+                    description: access_token
                   token_type:
                     type: string
                     example: 'bearer'
+                    description: token_type
                   expires_in:
                     type: number
                     example: 15552000
+                    description: expires_in
                   scope:
                     type: string
                     example: 'offline_access read write'
+                    description: scope
                   user_id:
                     type: number
                     example: 241983636
+                    description: user_id
                   refresh_token:
                     type: string
                     example: 'TG-XXXXXXXX-241983636'
+                    description: refresh_token
                   public_key:
                     type: string
                     example: 'APP_USR-d0a26210-XXXXXXXX-479f0400869e'
+                    description: public_key
                   live_mode: 
                     type: boolean
                     example: true
+                    description: live_mode
         '400':
           description: Error
           content:
@@ -84,7 +96,7 @@ paths:
                   status:
                     type: number
                     example: 400
-                  error:
+                  errorKey:
                     type: string
                     example: 'expired_grant'
                     enum:
