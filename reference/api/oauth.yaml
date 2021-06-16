@@ -105,7 +105,7 @@ paths:
                       - invalid_scope -- 
                       - invalid_request -- 
                       - unsupported_grant_type -- 
-                      - forbidden
+                      - forbidden -- 
                       - unauthorized_client -- 
                   cause:
                     type: array
