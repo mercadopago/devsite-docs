@@ -101,7 +101,7 @@ paths:
                     example: 'expired_grant'
                     enum:
                       - invalid_client -- 
-                      - invalid_grant
+                      - invalid_grant -- 
                       - invalid_scope
                       - invalid_request
                       - unsupported_grant_type
