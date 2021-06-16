@@ -92,7 +92,7 @@ Para habilitar pagamentos por boleto > **Custom Checkout - Offline Payment Metho
 > Importante
 >
 > Antes de configurar o Pix como meio de pagamento, lembre-se de:<br><br>
-> - [Baixar a última versão](https://marketplace.magento.com/mercadopago-core.html#product.info.details.release_notes) para atualizar seu plugin do Mercado Pago.<br>
+> - [Verifique a última versão](https://marketplace.magento.com/mercadopago-core.html#product.info.details.release_notes) e atualize seu plugin do Mercado Pago.<br>
 > - Cadastrar sua chave no Mercado Pago. Se isso não for feito, seus clientes não conseguirão finalizar a compra. [Veja como fazer](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required).
 
 ------------ 
