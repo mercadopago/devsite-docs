@@ -106,7 +106,7 @@ paths:
                       - invalid_request
                       - unsupported_grant_type
                       - forbidden
-                      - unauthorized_client
+                      - unauthorized_client -- 
                   cause:
                     type: array
                     items:
