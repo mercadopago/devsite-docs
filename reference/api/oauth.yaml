@@ -103,7 +103,7 @@ paths:
                       - invalid_client -- 
                       - invalid_grant -- 
                       - invalid_scope -- 
-                      - invalid_request
+                      - invalid_request -- 
                       - unsupported_grant_type
                       - forbidden
                       - unauthorized_client -- 
