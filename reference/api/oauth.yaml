@@ -104,7 +104,7 @@ paths:
                       - invalid_grant -- 
                       - invalid_scope -- 
                       - invalid_request -- 
-                      - unsupported_grant_type
+                      - unsupported_grant_type -- 
                       - forbidden
                       - unauthorized_client -- 
                   cause:
