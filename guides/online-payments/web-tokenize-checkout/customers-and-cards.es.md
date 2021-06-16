@@ -630,20 +630,54 @@ Respuesta:
 ```
 ## Modificar un Customer
 
-Para modificar un customer es necesario enviar el customer_id, el token y los campos que se vayan a modificar. Realizando un solicitud/request `HTTP PUT`.
+Para modificar un customer es necesario enviar el customer_id, el token y los campos que se vayan a modificar. Realizando un solicitud `HTTP PUT`.
 
-De no enviar el parametro customer_id, se obtendra como resultado el mensaje `missing customer id`, ó si el parametro es equivocado retornará `customer id not found`.
+Campos que pueden modificarse:
+Atributo | Información
+-------- | -----------
+address | Información sobre la dirección por defecto del cliente
+default_address | Dirección por defecto del cliente
+default_card | Tarjeta por defecto del cliente
+description | Descripción del cliente
+email | Email del cliente
+first_name | Nombre del cliente
+last_name | Apellido del cliente
+phone | Teléfono del cliente
+identification | Tipo de Documentación y Numero
 
-Ejemplo para el `body` con los campos `nuevos`:
+[[[
+```php
 
-```json
-{
-  "first_name": "nombre",
-  "address": {
-    "zip_code": "12345678",
-    "street_name": "street_name",
-    "street_number": 2
-  },
+<?php
+
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+  $customer = new MercadoPago\Customer();
+  $customer->email = "user@user.com";
+  $customer->first_name = "john";
+  $customer->last_name = "wagner";
+  $customer->phone = array("area_code" => "11", "number" => "001234567");
+  $customer->identification = array("type" => "DNI", "number" => "12341234");
+  $customer->default_address = "Home";
+  $customer->address = array("zip_code" => "12345678", "street_name" => "street_name", "street_number" => "2");
+  $customer->description = "esta es mi informacion";
+  $customer->default_card = "None";
+  $customer->update();
+
+?>
+
+```
+```node
+
+var mercadopago = require('mercadopago');
+mercadopago.configure({
+    access_token: 'ENV_ACCESS_TOKEN'
+});
+
+var customer_data = { 
+  "email": "test@test.com",
+  "first_name": ,
+  "last_name": ,
   "phone": {
     "area_code": "11",
     "number": "001234567"
@@ -651,15 +685,154 @@ Ejemplo para el `body` con los campos `nuevos`:
   "identification": {
     "type": "DNI",
     "number": "12341234"
+  }, 
+  "default_address": "Home",
+  "address": {
+    "zip_code": "12345678"
+    "street_name": "street_name"
+    "street_number": "2"
   },
-  "metadata": {
-    "metadata1": "asdsd",
-    "metadata2": "23"
-  }
-}
+  "description": "esta es mi informacion"
+  "default_card": "None
+ }
+
+mercadopago.customers.update(customer_data).then(function (customer) {
+ // code ...
+});
+
 ```
 
-[[[
+```java
+
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+Phone phone = new Phone();
+phone.setAreaCode("11");
+phone.setNumber("001234567");
+
+DefaultAddress defaultAddress = new DefaultAddress();
+defaultAddress.setZipCode("12345678");
+defaultAddress.setStreetName("street_name");
+defaultAddress.setStreetNumber(2);
+
+Identification identification = new Identification();
+identification.setType("DNI");
+identification.setNumber(12341234)
+
+Customer customer = new Customer();
+customer.setEmail("user@user.com");
+customer.setFirstName("john");
+customer.setLastName("wagner");
+customer.setDefaultAddress("Home");
+customer.setPhone(phone);
+customer.setIdentification(identification)
+customer.setDescription("esta es mi informacion");
+customer.setDefaultCard("None")
+cusotmer.setAddress(defaultAddress)
+customer.update();
+
+```
+```ruby
+
+require 'mercadopago'
+
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+
+customer_request = {
+  email: 'user@user.com',
+  first_name: 'john',
+  last_name: 'wagner',
+  default_address: 'home',
+  phone: {
+    area_code: '11',
+    number: '001234567'
+  },
+  identification: {
+    type: 'DNI',
+    number: '12341234'
+  },
+  address: {
+    zip_code: '12345678',
+    street_name: 'street_name',
+    street_number: '2'
+  },
+  description: 'esta es mi informacion',
+  default_card: 'None'
+}
+customer_response = sdk.customer.update(customer_id ,customer_request)
+customer = customer_response[:response]
+
+```
+```csharp
+
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+var phoneRequest = new PhoneRequest
+{
+  AreaCode = "11",
+  Number = "001234567"
+};
+
+var identificationRequest = new IdentificationRequest
+{
+  Type = "DNI",
+  Number = "12341234"
+};
+
+var addressRequest = new AddressRequest
+{
+  ZipCode = "12345678",
+  StreetName = "street_name",
+  StreetNumber = "2"
+};
+
+var customerRequest = new CustomerRequest
+{
+    Email = "test@test.com",
+    FirstName = "john",
+    LastName = "wagner",
+    DefaultAddress = "home",
+    Description = "esta es mi informacion",
+    DefaultCard = "None"
+    Phone = phoneRequest,
+    Identification = identificationRequest,
+    Address = addressRequest
+
+};
+var customerClient = new CustomerClient();
+Customer customer = await customerClient.Update(customerRequest);
+
+```
+```python
+
+import mercadopago
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+customer_data = {
+  "email": 'user@user.com',
+  "first_name": 'john',
+  "last_name": 'wagner',
+  "default_address": 'home',
+  "phone": {
+    "area_code": '11',
+    "number": '001234567'
+  },
+  "identification": {
+    "type": 'DNI',
+    "number": '12341234'
+  },
+  "address": {
+    "zip_code": '12345678',
+    "street_name": 'street_name',
+    "street_number": '2'
+  },
+  "description": 'esta es mi informacion',
+  "default_card": 'None'
+}
+customer_response = sdk.customer().update(customer_id, customer_data)
+customer = customer_response["response"]
+
+```
 ```curl
 
 curl -X PUT \
@@ -667,8 +840,9 @@ curl -X PUT \
     -H 'Authorization: Bearer ACCESS_TOKEN_ENV' \ 
     -d '{
   "email": "user@user.com",
-  "first_name": "nombre",
-  "last_name": "surname",
+  "first_name": "john",
+  "last_name": "wagner",
+  "default_address": 'home',
   "address": {
     "zip_code": "12345678",
     "street_name": "street_name",
@@ -682,7 +856,8 @@ curl -X PUT \
     "type": "DNI",
     "number": "12341234"
   },
-  "description": "informacion" 
+  "description": "esta es mi información",
+  "default_card": 'None' 
 }'
 
 ```
@@ -708,7 +883,7 @@ Ejemplo de respuesta:
     "street_name": "street_name",
     "street_number": 2
   },
-  "description": "informacion",
+  "description": "esta es mi información",
   "date_created": "2021-05-25T15:36:23.541Z",
   "metadata": {},
   "cards": [
@@ -723,4 +898,4 @@ Ejemplo de respuesta:
 >
 > Nota
 >
-> (si no puede identificar el ID, recurra a la API de `Customer Search` generando un request `HTTP GET`, enviando el parametro `email`)
+> De no enviar el parametro customer_id, se obtendra como resultado el mensaje `missing customer id`, ó si el parametro es equivocado retornará `customer id not found`.(en caso de no pueder identificar el ID, recurra a la API de `Customer Search` generando un request `HTTP GET`, enviando el parametro `email`)
