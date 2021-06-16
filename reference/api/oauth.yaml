@@ -102,7 +102,7 @@ paths:
                     enum:
                       - invalid_client -- 
                       - invalid_grant -- 
-                      - invalid_scope
+                      - invalid_scope -- 
                       - invalid_request
                       - unsupported_grant_type
                       - forbidden
