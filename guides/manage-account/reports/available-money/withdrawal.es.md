@@ -51,6 +51,7 @@ curl -X PUT \
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
+            "scheduled": true,
             "display_timezone": "GMT-04",
             "frequency": {
                 "hour": 0,
@@ -83,6 +84,7 @@ $data = '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
+            "scheduled": true,
             "display_timezone": "GMT-04",
             "frequency": {
                 "hour": 0,
@@ -119,6 +121,7 @@ String body = "{
                 \\"file_name_prefix\\": \\"bank-report-USER_ID\\",
                 \\"include_withdrawal_at_end\\": false,
                 \\"execute_after_withdrawal\\": true,
+                \\"schedule\\": true,
                 \\"display_timezone\\": \\"GMT-04\\",
                 \\"frequency\\": {
                     \\"hour\\": 0,
@@ -150,10 +153,11 @@ headers = {
     'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 }
 
-data = '{  
+data = '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
+            "scheduled": true,
             "display_timezone": "GMT-04",
             "frequency": {
                 "hour": 0,
@@ -188,6 +192,7 @@ var dataString = '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
+            "scheduled": true,
             "display_timezone": "GMT-04",
             "frequency": {
                 "hour": 0,
