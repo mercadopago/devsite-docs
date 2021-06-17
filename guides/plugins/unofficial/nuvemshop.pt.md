@@ -12,7 +12,7 @@
 ## O que é Nuvemshop?
 
 Nuvemshop é uma **plataforma e-commerce para sua loja virtual, que permite processar pagamentos através do Mercado Pago.**
-Você poderá oferecer aos seus clientes a possibilidade de pagar com cartão de crédito e boleto bancário no [próprio checkout da sua loja](#bookmark_checkout_transparente) ou [redirecionado para o site do Mercado Pago](#bookmark_checkout_pro).
+Você poderá oferecer aos seus clientes a possibilidade de pagar com cartão de crédito, boleto e Pix bancário no [próprio checkout da sua loja](#bookmark_checkout_transparente) ou [redirecionado para o site do Mercado Pago](#bookmark_checkout_pro).
 
 ## Etapas para configurar
 
@@ -58,17 +58,27 @@ Pronto! Sua conta Mercado Pago já está ativa!
 
 ## Configurar as formas de pagamento
 
-Você poderá escolher qual **tipo de integração utilizar em sua loja**. Você pode optar por um processo de compra diretamente em seu site ou no site do Mercado Pago, sendo possível ativar um ou outro.
+Você poderá escolher qual **tipo de integração utilizar em sua loja**. Você pode optar por um [processo de compra diretamente em seu site](#bookmark_checkout_transparente) ou [no site do Mercado Pago](#bookmark_checkout_pro), sendo possível ativar um ou outro.
 
 Além disso, você pode [configurar parcelas sem juros](#bookmark_configurando_o_parcelamento_em_sua_conta_mercado_pago) e consultar e configurar as [taxas e prazos](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) de suas vendas online quando quiser.
 
 ### Checkout Transparente
 
-É o checkout em que seu **cliente finaliza o pagamento no ambiente da sua loja**, sem ser redirecionado para outro site.
+É o checkout em que seu **cliente finaliza o pagamento no ambiente da sua loja** sem ser redirecionado para outro site, onde possibilita processar pagamentos com cartão de crédito, boleto bancário, Pix e Checkout Pro.
+
+> WARNING
+>
+> Importante
+>
+> Para oferecer a opção de pagamento Pix, você deve ter cadastrada uma chave Pix na conta do vendedor. Este dado é único, serve para identificar sua conta e permitirá que você utilize as funcionalidades do meio de pagamento. 
+>
+> [Conheça como criar uma chave Pix](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required)
 
 1. Acesse as [configurações de meios de pagamentos](https://lojavirtualnuvem.com.br/admin/payments/), no painel de administração de sua loja, localize o "Mercado Pago" na lista de meios de pagamentos e clique em "Editar".
 2. No item "Tipo de integração" altere para "Processo de compra sem sair da loja".
-3. Clique em "Salvar alterações".
+3. Selecione quais os tipos de pagamento que deseja oferecer em seu checkout, sendo eles: Cartão de crédito, Boleto bancário e PIX.
+4. Caso deseje que o pagamento com boleto bancário tenha desconto, informe a porcentagem de desconto no campo “Desconto para pagamentos com boleto”.
+5. Clique em "Salvar alterações".
 <p>&nbsp;</p>
 
 ![Payments Checkout Transparente - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_transparente_2.gif)
@@ -76,11 +86,12 @@ Além disso, você pode [configurar parcelas sem juros](#bookmark_configurando_o
 
 ### Checkout Pro
 
-**O comprador será redirecionado ao site do Mercado Pago** e uma vez finalizado o processo, voltará para sua loja.
+**O comprador será redirecionado ao site do Mercado Pago** e uma vez finalizado o processo, voltará para sua loja, contando com meios de pagamentos como Pix, boleto parcelado, débito virtual da Caixa e carteira digital do Mercado Pago.
 
 1. Acesse as [configurações de meios de pagamentos](https://lojavirtualnuvem.com.br/admin/payments/), no painel de administração de sua loja, localize o "Mercado Pago" na lista de meios de pagamentos e clique em "Editar".
 2. No item "Tipo de integração" altere para "Processo de compra no site do Mercado Pago".
-3. Clique em "Salvar alterações".
+3. Selecione quais os tipos de pagamento que deseja oferecer em seu checkout, sendo eles: Cartão de crédito, Boleto bancário e PIX.
+4. Clique em "Salvar alterações".
 <p>&nbsp;</p>
 
 ![Payments Checkout Pro - Nuvem Shop](/images/nuvemshop/nuvemshop_checkout_redirect_3.gif)
@@ -90,18 +101,19 @@ Além disso, você pode [configurar parcelas sem juros](#bookmark_configurando_o
 >
 > Nota
 >
-> Ao instalar o Mercado Pago, as modalidades de pagamento "Cartão de crédito" e "Boleto bancário" estarão habilitadas por padrão em sua loja.
+> Ao instalar o Mercado Pago, as modalidades de pagamento "Cartão de crédito", "Boleto bancário" e "Pix" estarão habilitadas por padrão em sua loja.
 
 ## Configuração de parcelamento
 
 A Nuvemshop utiliza as informações de **parcelamento diretamente de sua conta Mercado Pago.**
 As alterações feitas nas configurações de parcelamento em sua conta "Mercado Pago" serão refletidas na sua loja online em até 24h.
 
-Caso queira **sincronização suas alterações manualmente**, realize os seguintes passos:
+Caso queira **sincronizar suas alterações manualmente** ou aplicar um valor mínimo da parcela, realize os seguintes passos:
 
 1. Acesse as [configurações de meios de pagamentos](https://lojavirtualnuvem.com.br/admin/payments/), no painel de administração de sua loja, localize o "Mercado Pago" na lista de meios de pagamentos e clique em "Editar".
-2. No item "Parcelas" clique em "Ativar agora".
-3. Clique em "Salvar alterações".
+2. Caso deseje aplicar um valor mínimo de parcela para pagamento transparente, informe o valor no campo “Parcelas”.
+3. No item "Parcelas" clique em "Ativar agora".
+4. Clique em "Salvar alterações".
 <p>&nbsp;</p>
 
 ![Payments Installment - Nuvem Shop](/images/nuvemshop/nuvemshop_installments_4.gif)

@@ -6,6 +6,24 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Junio 2021
 
+----[mlb]----
+
+### 3 de junio
+
+> CHANGELOG
+>
+> Nuevo método de pago Pix para Nuvemshop 
+>
+> NEWS: FEATURE
+>
+> Product: Nuvemshop
+
+Ahora puedes incluir Pix como método de pago para Nuvemshop.
+
+[Ir para a documentação Nuvemshop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/nuvemshop)
+
+------------
+
 ### 3 de junio
 
 > CHANGELOG

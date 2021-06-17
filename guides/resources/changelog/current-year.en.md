@@ -6,6 +6,24 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## June 2021
 
+----[mlb]----
+
+### June 3rd
+
+> CHANGELOG
+>
+> New Pix payment method for ----[mlb]----Nuvemshop------------ ----[mla, mlm, mlc, mco]----Tiendanube------------ 
+>
+> NEWS: FEATURE
+>
+> Product: Nuvemshop
+
+Now you can include Pix as a payment method for Nuvemshop.
+
+[Ir para a documentação Nuvemshop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/nuvemshop)
+
+------------
+
 ### June 3rd
 
 > CHANGELOG
