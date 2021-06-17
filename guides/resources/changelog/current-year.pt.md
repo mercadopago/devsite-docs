@@ -6,7 +6,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Junho 2021
 
-### 23 de junho
+### 24 de junho
 
 > CHANGELOG
 >

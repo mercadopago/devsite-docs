@@ -6,7 +6,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Junio 2021
 
-### 23 de junio
+### 24 de junio
 
 > CHANGELOG
 >

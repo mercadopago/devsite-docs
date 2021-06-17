@@ -174,7 +174,7 @@ data = '{
                 "key": "EXTERNAL_REFERENCE"
             }
         ]
-        }'
+    }'
 
 response = requests.put('https://api.mercadopago.com/v1/account/bank_report/config', headers=headers, data=data)
 ```
