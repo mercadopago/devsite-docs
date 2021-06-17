@@ -59,6 +59,7 @@ curl -X POST \
      -H 'content-type: application/x-www-form-urlencoded' \
      'https://api.mercadopago.com/oauth/token' \
      -d 'client_secret=ACCESS_TOKEN' \
+     -d 'client_id=APP_ID' \
      -d 'grant_type=authorization_code' \
      -d 'code=AUTHORIZATION_CODE' \
      -d 'redirect_uri=REDIRECT_URI'
@@ -66,6 +67,7 @@ curl -X POST \
 The parameters you need to include are:
 
 * `client_secret`: Your `ACCESS_TOKEN`. You can get it from the detail of your [application]([FAKER][CREDENTIALS][URL]).
+* `client_id`: Your `APP_ID`. It is the APP ID of the application that was created.
 * `code`: The authorization code you got when redirecting the user back to your site.
 * `redirect_uri`: It must be the same Redirect URI that you set up in your application.
 
@@ -104,6 +106,7 @@ curl -X POST \
      -H 'content-type: application/x-www-form-urlencoded' \
      'https://api.mercadopago.com/oauth/token' \
      -d 'client_secret= ACCESS_TOKEN' \
+     -d 'client_id=APP_ID' \
      -d 'grant_type=refresh_token' \
      -d 'refresh_token=USER_RT'
 ```

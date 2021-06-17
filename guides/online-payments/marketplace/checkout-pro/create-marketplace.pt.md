@@ -60,6 +60,7 @@ curl -X POST \
      -H 'content-type: application/x-www-form-urlencoded' \
      'https://api.mercadopago.com/oauth/token' \
      -d 'client_secret=ACCESS_TOKEN' \
+     -d 'client_id=APP_ID' \
      -d 'grant_type=authorization_code' \
      -d 'code=AUTHORIZATION_CODE' \
      -d 'redirect_uri=REDIRECT_URI'
@@ -67,6 +68,7 @@ curl -X POST \
 Os parâmetros que você deve incluir são:
 
 * `client_secret`: seu `ACCESS_TOKEN`. Pode obter apartir das configurações da sua [aplicação]([FAKER][CREDENTIALS][URL]).
+* `client_id`: seu `APP_ID`. é o APP ID do aplicativo que foi criado.
 * `code`: O código de autorização obtido ao redirecionar o usuário de volta para o seu site.
 * `redirect_uri`: Deve ser a mesmo Redirect URI que você configurou na sua aplicação.
 
