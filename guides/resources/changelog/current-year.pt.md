@@ -6,6 +6,23 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Junho 2021
 
+### 23 de junho
+
+> CHANGELOG
+>
+> Use o atributo configurável display_timezone para facilitar a experiência dos nossos usuários ao fazerem reconciliações
+>
+> NEWS: FEATURE
+>
+> PRODUCT: RELATÓRIOS
+
+Com o atributo display_timezone, é possível configurar o fuso horário em que um determinado negócio funciona. Assim, os relatórios mostrarão as datas e horários de acordo com o fuso em questão.
+
+Os relatórios continuarão mostrando os dados de acordo com o fuso GMT-04 caso o fuso horário não seja ajustado.
+
+Ir para documentação dos relatórios [Dinheiro disponível](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/api#bookmark_atributos_configuráveis) ou [Dinheiro em conta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/api#bookmark_atributos_configuráveis)
+
+
 ### 3 de junho
 
 > CHANGELOG
