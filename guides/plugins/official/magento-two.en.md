@@ -91,7 +91,7 @@ To enable payments via ticket > C**ustom Checkout - Offline Payment Methods (Tic
 > Important
 >
 > Before setting up Pix as a payment method, remember to:<br><br>
-> - [Download the latest version](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) to update your Mercado Pago plugin.<br>
+> - [Verify the latest version](https://marketplace.magento.com/mercadopago-core.html#product.info.details.release_notes) and update your Mercado Pago plugin.<br>
 > - Register your key in Mercado Pago. If this is not done, your customers will not be able to finalize the purchase. [See how to do it](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required).
 ------------
 

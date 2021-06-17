@@ -6,6 +6,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## June 2021
 
+
 ### June 24th
 
 > CHANGELOG
@@ -21,6 +22,46 @@ The customizable attribute display_timezone allows to set the time zone in which
 If the time zone is not modified, the reports will keep displaying data based on GMT-04.
 
 Go to [Available Balance](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/api#bookmark_configurable_attributes) or [Account Balance](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/api#bookmark_configurable_attributes) reports documentation
+
+### June 10th
+
+> CHANGELOG
+>
+> New PrestaShop plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: PRESTASHOP
+
+We have released the new version 4.6.1 for PrestaShop.
+
+[Go to PrestaShop documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.6.1) for further details regarding this release.
+
+
+> CHANGELOG
+>
+> New Magento 2 plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: MAGENTO 2
+
+We have released the new version 3.9.0 for Magento 2.
+
+[Go to Magento 2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.0) for further details regarding this release.
+
 
 ### June 3rd
 

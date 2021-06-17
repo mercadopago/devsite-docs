@@ -6,6 +6,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Junho 2021
 
+
 ### 24 de junho
 
 > CHANGELOG
@@ -21,6 +22,46 @@ Com o atributo display_timezone, é possível configurar o fuso horário em que 
 Os relatórios continuarão mostrando os dados de acordo com o fuso GMT-04 caso o fuso horário não seja ajustado.
 
 Ir para documentação dos relatórios [Dinheiro disponível](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/api#bookmark_atributos_configuráveis) ou [Dinheiro em conta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/api#bookmark_atributos_configuráveis)
+
+
+### 10 de junho
+
+> CHANGELOG
+>
+> Nova versão PrestaShop
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: PRESTASHOP
+
+Lançamos a nova versão 4.6.1 para PrestaShop.
+
+[Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.6.1).
+
+
+> CHANGELOG
+>
+> Nova versão Magento 2
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MAGENTO 2
+
+Lançamos a nova versão 3.9.0 para Magento 2.
+
+[Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.0).
 
 
 ### 3 de junho
