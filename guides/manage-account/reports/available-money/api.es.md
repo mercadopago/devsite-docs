@@ -470,6 +470,10 @@ var headers = {
 
 var dataString = '{
             "file_name_prefix": "bank-report-USER_ID",
+            "notification_email_list": [
+                "example@email.com",
+                "pepito@gmail.com"
+            ],
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
             "frequency": {
@@ -547,6 +551,7 @@ Conoce los campos que puedes configurar para ajustar tus preferencias antes de e
 | --- | --- |
 | `sftp_info` (opcional) | <br/>Indica los datos de subida a SFTP cuando lo necesites.<br/><br/> |
 | `separator` (opcional) | <br/>Separador que puedes usar en el archivo .csv cuando no quieras que el separador sea una coma. <br/><br/> |
+| `notification_email_list` (opcional) | <br/>Lista de correos electrónicos donde recibirás las notificaciones cuando los reportes se hayan generado<br/><br/> |
 | `refund_detailed` (opcional) | <br/>Muestra el código de referencia (external_reference) del reembolso en vez del código de referencia (external_reference) del pago.<br/><br/> |
 | `include_withdrawal` (opcional) | <br/>Incluye los retiros de dinero en el reporte.<br/><br/> |
 | `coupon_detailed` (opcional) | <br/>Suma una columna para mostrar el detalle de los cupones de descuento.<br/><br/> |
