@@ -1,10 +1,3 @@
----
-sites_supported:
-  - mla
-  - mlm
-  - mlb
----
-
 # Collection reattempt logic
 
 By automating the recurrence of your collections, authorized payments that will have a debit date configured based on the periodicity that was defined in the subscription are created.

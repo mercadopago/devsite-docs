@@ -2,6 +2,12 @@
 
 ## Como testar o módulo
 
+> WARNING
+>
+> Importante
+>
+> Os status de pagamento no WooCommerce não são atualizados no modo de teste, você poderá vê-los refletidos uma vez que você está no modo produtivo.
+
 O módulo do Mercado Pago vem com um Sandbox teste ativo por padrão. Simule pagamentos na loja neste ambiente de teste e veja se tudo está funcionando bem antes de começar a receber pagamentos reais dos seus clientes. 
 
 Aqui é onde entram em jogo as credenciais de teste que estarão copiadas no módulo no momento de [integrar Mercado Pago à sua loja](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/integration). Você precisará delas para poder testar o módulo.
@@ -13,6 +19,81 @@ Quando fizer os testes, confira se o fluxo de pagamentos está funcionando corre
 > Nota
 > 
 > Todos os nossos módulos contam com uma licença de código aberto. Quer participar da criação? [Sugira melhorias e edições](https://github.com/mercadopago/cart-woocommerce) no Github.
+
+## Cartões de teste
+
+----[mla]----
+
+| Cartão | Número | Código de segurança | Data de vencimento |
+| :--- | :---: | :---: | :---: |
+| Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
+| Visa | 4509 9535 6623 3704 | 123 | 11/25 |
+| American Express | 3711 803032 57522 | 1234 | 11/25 |
+
+------------
+----[mlb]----
+
+| Cartão | Número | Código de segurança | Data de vencimento |
+| :--- | :---: | :---: | :---: |
+| Mastercard | 5031 4332 1540 6351 | 123 | 11/25 |
+| Visa | 4235 6477 2802 5682 | 123 | 11/25 |
+| American Express | 3753 651535 56885 | 1234 | 11/25 |
+
+------------
+----[mlc]----
+
+| Cartão | Número | Código de segurança | Data de vencimento |
+| :--- | :---: | :---: | :---: |
+| Mastercard | 5416 7526 0258 2580 | 123 | 11/25 |
+| Visa | 4168 8188 4444 7115 | 123 | 11/25 |
+| American Express | 3757 781744 61804 | 1234 | 11/25 |
+
+------------
+----[mco]----
+
+| Cartão | Número | Código de segurança | Data de vencimento |
+| :--- | :---: | :---: | :---: |
+| Mastercard | 5254 1336 7440 3564 | 123 | 11/25 |
+| Visa | 4013 5406 8274 6260 | 123 | 11/25 |
+| American Express | 3743 781877 55283 | 1234 | 11/25 |
+
+------------
+----[mlm]----
+
+| Cartão | Número | Código de segurança | Data de vencimento |
+| :--- | :---: | :---: | :---: |
+| Visa | 4075 5957 1648 3764 | 123 | 11/25 |
+
+------------
+----[mlu]----
+
+| Cartão | Número | Código de segurança | Data de vencimento |
+| :--- | :---: | :---: | :---: |
+| Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
+| Visa | 4509 9535 6623 3704 | 123 | 11/25 |
+
+------------
+----[mpe]----
+
+| Cartão | Número | Código de segurança | Data de vencimento |
+| :--- | :---: | :---: | :---: |
+| Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
+| Visa | 4009 1753 3280 6176 | 123 | 11/25 |
+| American Express | 3711 803032 57522 | 1234 | 11/25 |
+
+------------
+
+
+Para **testar diferentes resultados de pagamento**, preencha o dado que quiser no nome do titular do cartão:
+
+- APRO: Pagamento aprovado.
+- CONT: Pagamento pendente.
+- OTHE: Recusado por erro geral.
+- CALL: Recusado com validação para autorizar.
+- FUND: Recusado por quantia insuficiente.
+- SECU: Recusado por código de segurança inválido.
+- EXPI: Recusado por problema com a data de vencimento.
+- FORM: Recusado por erro no formulário.
 
 ## Ir à produção
 

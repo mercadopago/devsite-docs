@@ -384,8 +384,15 @@ Evite pagamentos recusados com nossas recomendações e [melhore a aprovação d
 
 ## Cancelamentos e estornos
 
+----[mla, mlm, mco, mlu, mlb, mlc]----
 Os cancelamentos são feitos quando o pagamento não foi concluído antes da data de vencimento e o vendedor decide cancelá-lo.
 As devoluções acontecem quando o pagamento foi feito, mas o vendedor decide estorná-lo, total ou parcialmente.
+------------
+
+----[mpe]----
+Os cancelamentos são feitos quando o pagamento não foi concluído antes da data de vencimento e o vendedor decide cancelá-lo.
+As devoluções acontecem quando o pagamento foi feito, mas o vendedor decide estorná-lo totalmente.
+------------
 
 Você pode encontrar todas as informações na [ seção de Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 

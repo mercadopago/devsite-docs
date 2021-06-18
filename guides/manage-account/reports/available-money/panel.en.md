@@ -3,6 +3,12 @@
 
 Generate your Available Balance reports from your Mercado Pago panel. You can schedule the generation of an Available Balance report for each time you make a withdrawal from your balance to a bank account.
 
+> WARNING
+>
+> The Available Balance report will be disabled soon
+>
+> You can use the [Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
+
 Follow these steps to generate your reports:
 
 1. From your Mercado Pago account, go to [your reports](https://www.mercadopago.com.ar/balance/reports) and select the *Reports* option.

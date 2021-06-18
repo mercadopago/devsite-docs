@@ -4,7 +4,166 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ---
 
+## June 2021
+
+### June 10th
+
+> CHANGELOG
+>
+> New PrestaShop plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: PRESTASHOP
+
+We have released the new version 4.6.1 for PrestaShop.
+
+[Go to PrestaShop documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.6.1) for further details regarding this release.
+
+
+> CHANGELOG
+>
+> New Magento 2 plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: MAGENTO 2
+
+We have released the new version 3.9.0 for Magento 2.
+
+[Go to Magento 2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.0) for further details regarding this release.
+
+### June 3rd
+
+> CHANGELOG
+>
+> We have improved the configuration of the Available Money report via API
+>
+> NEWS: FEATURE
+>
+> PRODUCT: REPORTS
+
+Create customized reports with the fields or attributes you need.
+
+[Go to the API Report Generation documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/api)
+
+
+> CHANGELOG
+>
+> New configuration of the Account Money report via API
+>
+> NEWS: FEATURE
+>
+> PRODUCT: REPORTS
+
+Choose the fields or attributes you need and create a customized report.
+
+[Go to the API Report Generation documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/api)
+
+
+----[mlc]----
+
+> CHANGELOG
+>
+> Create subscriptions for recurring billing
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: SUBSCRIPTIONS
+
+Mercado Pago subscriptions allow you to receive recurring payments by credit and debit card. You can set the periodicity of collection you want and the time you want to keep the subscription active.
+
+[Create subscriptions](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/introduction)
+
+------------
+
 ## May 2021
+
+### May 31st
+
+> CHANGELOG
+>
+> New PrestaShop plugin version
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: PRESTASHOP
+
+We have released the new version 4.6.0 for PrestaShop.
+
+[Go to PrestaShop documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.6.0) for further details regarding this release.
+
+### May 20th
+
+----[mpe]----
+
+> CHANGELOG
+>
+> Updates on the refunds of payments
+>
+> NEWS: NEWS
+>
+> PRODUCT: MERCADO PAGO
+
+Now you can only make total returns of payments.
+
+[Go to Refunds and cancellations documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds#bookmark_refunds)
+
+------------
+
+> CHANGELOG
+>
+> New Magento 2 plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: MAGENTO 2
+
+We have released the new version 3.8.5 for Magento 2.
+
+[Go to Magento 2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.5) for further details regarding this release.
+
+### May 19th
+
+> CHANGELOG
+>
+> New version of SDK PHP
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK PHP
+
+We have released a new version of SDK PHP 1.11.0 and 2.3.0.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-php/releases) for further details regarding this release.
 
 ### May 14th
 

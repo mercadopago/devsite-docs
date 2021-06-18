@@ -386,8 +386,15 @@ Avoid rejected payments with our recommendations and [improve the approval proce
 
 ## Cancellations and Returns
 
+----[mla, mlm, mco, mlu, mlb, mlc]----
 Cancellations are made when the cash payment was not completed before the expiration date and the seller decides to cancel it.
 And the returns happen when the payment was made but the seller decides to cancel it totally or partially.
+------------
+
+----[mpe]----
+Cancellations are made when the cash payment was not completed before the expiration date and the seller decides to cancel it.
+And the returns happen when the payment was made but the seller decides to cancel it totally.
+------------
 
 You can find all the information in the [Returns and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
 
