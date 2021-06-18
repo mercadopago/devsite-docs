@@ -142,7 +142,7 @@ Permite que el **cliente finalice la compra en tu tienda**, sin ser redirecciona
 
 Tiendanube utiliza la configuración de financiación de tu cuenta de Mercado Pago. Si hiciste cambios, ten en cuenta que se van a ver reflejados en tu tienda en las próximas 24 hs.
 
-----[mla]----
+----[mlb]----
 Si deseas sincronizar tus configuraciones manualmente  o aplicar un monto mínimo de cuotas, realiza los siguientes pasos: ------------
 ----[mla, mlm, mlc, mlu, mpe, mco]----
 También puedes sincronizar los últimos cambios manualmente de la siguiente manera: ------------
