@@ -6,10 +6,11 @@ Usa nuestras APIs para guardar la referencia de las tarjetas de tus clientes y p
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Crear un cliente y una tarjeta
 
-Para crear un cliente y su tarjeta tienes que enviar el campo del e-mail, el tipo de medio de pago, el ID del banco emisor y el token generado.
+Para crear un cliente y su tarjeta tienes que enviar el campo del e-mail y el token generado.
 Vas a sumar a cada cliente con el valor `customer` y a la tarjeta como `card`.
 
 [[[
+
 ```php
 
 <?php
@@ -23,8 +24,6 @@ Vas a sumar a cada cliente con el valor `customer` y a la tarjeta como `card`.
   $card = new MercadoPago\Card();
   $card->token = "9b2d63e00d66a8c721607214cedaecda";
   $card->customer_id = $customer->id();
-  $card->issuer = array("id" => "3245612");
-  $card->payment_method = array("id" => "debit_card");
   $card->save();
 
 ?>
@@ -43,9 +42,7 @@ mercadopago.customers.create(customer_data).then(function (customer) {
 
   var card_data = {
     "token": "9b2d63e00d66a8c721607214cedaecda",
-    "customer": customer.id,
-    "issuer_id": "23",
-    "payment_method_id": "debit_card"
+    "customer": customer.id
   }
 
   mercadopago.cards.create(card_data).then(function (card) {
@@ -64,14 +61,9 @@ Customer customer = new Customer();
 customer.setEmail("john@yourdomain.com");
 customer.save();
 
-Issuer issuer = new Issuer();
-issuer.setId("3245612");
-
 Card card = new Card();
 card.setToken("9b2d63e00d66a8c721607214cedaecda");
 card.setCustomerId(customer.getId());
-card.setIssuer(issuer);
-card.setPaymentMethodId("debit_card");
 card.save();
 
 ```
@@ -88,9 +80,7 @@ customer_response = sdk.customer.create(customer_request)
 customer = customer_response[:response]
 
 card_request = {
-  token: '9b2d63e00d66a8c721607214cedaecda',
-  issuer_id: '3245612',
-  payment_method_id: 'debit_card'
+  token: '9b2d63e00d66a8c721607214cedaecda'
 }
 card_response = sdk.card.create(customer['id'], card_request)
 card = card_response[:response]
@@ -109,7 +99,7 @@ Customer customer = await customerClient.CreateAsync(customerRequest);
 
 var cardRequest = new CustomerCardCreateRequest
 {
-    Token = "9b2d63e00d66a8c721607214cedaecda"
+    Token = "9b2d63e00d66a8c721607214cedaecda",
 };
 CustomerCard card = await customerClient.CreateCardAsync(customer.Id, cardRequest);
 
@@ -126,9 +116,7 @@ customer_response = sdk.customer().create(customer_data)
 customer = customer_response["response"]
 
 card_data = {
-  "token": "9b2d63e00d66a8c721607214cedaecda",
-  "issuer_id": "3245612",
-  "payment_method_id": "debit_card"
+  "token": "9b2d63e00d66a8c721607214cedaecda"
 }
 card_response = sdk.card().create(customer["id"], card_data)
 card = card_response["response"]
@@ -140,9 +128,10 @@ curl -X POST \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
-  -d '{"token": "9b2d63e00d66a8c721607214cedaecda", "issuer_id": "3245612", "payment_method_id": "debit_card"}'
+  -d '{"token": "9b2d63e00d66a8c721607214cedaecda"}'
 
 ```
+
 ]]]
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
@@ -173,20 +162,12 @@ curl -X POST \
 >
 > Te recomendamos almacenar los datos de tarjeta luego de realizar un pago de forma exitosa para guardar datos correctos.
 
-
-> WARNING 
-> 
-> Importante
-> 
-> Si recibes un mensaje de error del tipo `"invalid parameter"` con código de estado HTTP 400, asegúrate de estar completando correctamente los campos `payment_method_id` e `issuer_id`.
-
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agrega nuevas tarjetas a un cliente
 
 Para agregar nuevas tarjetas a un cliente, debes crear un token y hacer un `HTTP POST` al `customer`.
 
 [[[
 ```php
-
 <?php
 
   MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
@@ -196,8 +177,6 @@ Para agregar nuevas tarjetas a un cliente, debes crear un token y hacer un `HTTP
   $card = new MercadoPago\Card();
   $card->token = "9b2d63e00d66a8c721607214cedaecda";
   $card->customer_id = $customer->id;
-  $card->issuer = array("id" => "3245612");
-  $card->payment_method = array("id" => "debit_card");
   $card->save();
 
   print_r($card);
@@ -221,9 +200,7 @@ mercadopago.customers.search({
 }).then(function (customer) {
   card_data = {
     "token": "9b2d63e00d66a8c721607214cedaecda",
-    "customer": customer.id,
-    "issuer_id": "3245612",
-    "payment_method_id": "debit_card"
+    "customer": customer.id
   }
 
   mercadopago.cards.create(card_data).then(function (card) {
@@ -240,14 +217,9 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Customer customer = Customer.load("247711297-jxOV430go9fx2e")
 
-Issuer issuer = new Issuer();
-issuer.setId("3245612");
-
 Card card = new Card();
 card.setToken("9b2d63e00d66a8c721607214cedaecda");
 card.setCustomerId(customer.getID());
-card.setIssuer(issuer);
-card.setPaymentMethodId("debit_card");
 card.save();
 
 System.out.print(card.toString());
@@ -263,9 +235,7 @@ customer_response = sdk.customer.get('247711297-jxOV430go9fx2e')
 customer = customer_response[:response]
 
 card_request = {
-  token: '9b2d63e00d66a8c721607214cedaecda',
-  issuer_id: '3245612',
-  payment_method_id: 'debit_card'
+  token: '9b2d63e00d66a8c721607214cedaecda'
 }
 card_response = sdk.card.create(customer['id'], card_request)
 card = card_response[:response]
@@ -281,7 +251,7 @@ Customer customer = await customerClient.GetAsync("247711297-jxOV430go9fx2e");
 
 var cardRequest = new CustomerCardCreateRequest
 {
-    Token = "9b2d63e00d66a8c721607214cedaecda"
+    Token = "9b2d63e00d66a8c721607214cedaecda",
 };
 CustomerCard card = await customerClient.CreateCardAsync(customer.Id, cardRequest);
 
@@ -297,9 +267,7 @@ customer_response = sdk.customer().get("247711297-jxOV430go9fx2e")
 customer = customer_response["response"]
 
 card_data = {
-  "token": "9b2d63e00d66a8c721607214cedaecda",
-  "issuer_id": "3245612",
-  "payment_method_id": "debit_card"
+  "token": "9b2d63e00d66a8c721607214cedaecda"
 }
 card_response = sdk.card().create(customer["id"], card_data)
 card = card_response["response"]
@@ -308,7 +276,6 @@ print(card)
 
 ```
 ```curl
-
 curl -X POST \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
@@ -319,9 +286,9 @@ curl -X POST \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
-  -d '{"token": "9b2d63e00d66a8c721607214cedaecda", "issuer_id": "3245612", "payment_method_id":"debit_card"}'
-
+  -d '{"token": "9b2d63e00d66a8c721607214cedaecda"}'
 ```
+
 ]]]
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
@@ -429,6 +396,7 @@ curl -X GET \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
 ```
+
 ]]]
 
 Respuesta de datos de una tarjeta guardada:
@@ -448,56 +416,66 @@ Y puedes armar el formulario de la siguiente manera:
 
 ```html
 <li>
-    <label>Payment Method:</label>
-    <select id="cardId" name="cardId" data-checkout='cardId'>
-    <?php foreach ($cards["response"] as $card) { ?>
-        <option value="<?php echo $card["id"]; ?>"
-            first_six_digits="<?php echo $card["first_six_digits"]; ?>"
-            security_code_length="<?php echo $card["security_code"]["length"]; ?>">
-                <?php echo $card["payment_method"]["name"]; ?> ended in <?php echo $card["last_four_digits"]; ?>
-        </option>
-    <?php } ?>
-    </select>
+   <label>Payment Method:</label>
+   <select id="cardId" name="cardId"></select>
 </li>
 <li id="cvv">
-    <label for="cvv">Security code:</label>
-    <input type="text" id="cvv" data-checkout="securityCode" placeholder="123" />
+   <label for="cvv">Security code:</label>
+   <input type="text" id="cvv" placeholder="123" />
 </li>
+<script>
+   const customerCards = [{
+       "id": "3502275482333",
+       "last_four_digits": "9999",
+       "payment_method": {
+           "name": "amex",
+       },
+       "security_code": {
+           "length": 4,
+       }
+   }];
+
+   // Append customer cards to select element
+   const selectElement = document.getElementById('cardId');
+   const tmpFragment = document.createDocumentFragment();
+   customerCards.forEach(({id, last_four_digits, payment_method}) => {
+       const optionElement = document.createElement('option');
+       optionElement.setAttribute('value', id)
+       optionElement.textContent = `${payment_method.name} ended in ${last_four_digits}`
+       tmpFragment.appendChild(optionElement);
+   })
+   selectElement.appendChild(tmpFragment)
+</script>
 ```
 <br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Captura el código de seguridad
 
-----[mlb]----
-> INFO
->
-> Nueva versión MercadoPago.js
->
-> Utiliza la librería MercadoPago.js V2 para tu formulario de tarjeta y autogenera toda la lógica de negocio necesaria para realizar el pago.<br><br>[Integrar Checkout Transparente con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/advanced-integration)
-------------
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> INFO
->
-> Nueva versión MercadoPago.js
->
-> Utiliza la librería MercadoPago.js V2 para tu formulario de tarjeta y autogenera toda la lógica de negocio necesaria para realizar el pago.<br><br>[Integrar Checkout API con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/advanced-integration)
-------------
-
 El cliente tiene que ingresar el código de seguridad en un flujo similar al que realizaste para la [captura de los datos de la tarjeta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card/#bookmark_captura_los_datos_de_la_tarjeta). Debes crear un token enviando el formulario con el ID de la tarjeta y el código de seguridad.
 
 ```javascript
-doSubmit = false;
-addEvent(document.querySelector('#pay'),'submit', doPay);function doPay(event){
-    event.preventDefault();
-    if(!doSubmit){
-        var $form = document.querySelector('#pay');
+(async function createToken() {
+       try {
+           const token = await mp.createCardToken({
+               cardId: document.getElementById('cardId').value,
+               securityCode: document.getElementById('cvv').value,
+           })
 
-        Mercadopago.createToken($form, sdkResponseHandler);
-
-        return false;
-    }
-};
+            // Use the received token to make a POST request to your backend
+           console.log('token received: ', token.id)
+       }catch(e) {
+           console.error('error creating token: ', e)
+       }
+   })()
 ```
+
+----[mla, mlm, mpe, mco, mlu, mlc]----
+> Esta documentación utiliza la nueva versión de MercadoPago.js. Para ver la versión anterior, ve a la [sección de Checkout API antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v1/advanced-integration).
+------------
+----[mlb]----
+> Esta documentación utiliza la nueva versión de MercadoPago.js. Para ver la versión anterior, ve a la [sección de Checkout Transparente antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v1/advanced-integration).
+------------
+
 <br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Crea el pago
@@ -643,6 +621,7 @@ curl -X POST \
 }'
 
 ```
+
 ]]]
 
 
@@ -724,7 +703,9 @@ curl -X GET \
   -d '{
     "email": "test_user_19653727@testuser.com"
 }'
+
 ```
+
 ]]]
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
@@ -830,6 +811,7 @@ curl -X GET \
   'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards/' \
 
 ```
+
 ]]]
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
@@ -844,6 +826,7 @@ curl -X GET \
     ...
 }]
 ```
+
 ## Cancelaciones y devoluciones
 
 ----[mla, mlm, mco, mlu, mlb, mlc]----
