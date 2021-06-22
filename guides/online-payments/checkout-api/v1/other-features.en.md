@@ -6,17 +6,17 @@
       - mpe
 ---
 
-# Autorización y captura de pagos
+# Payment authorization and capture
 
-Suma funcionalidades específicas a tu integración según las necesidades de tu negocio.
+Add specific features to your integration based on your business needs.
 
-Ofrece la posibilidad de realizar una autorización antes de generar una captura de un pago. Esto te permite hacer una reserva de fondos en la tarjeta de tu comprador sin efectuar el pago.
+Offer the possibility of granting an authorization before payment capture. This allows you to make a fund reserve in your buyer's card without making a payment.
 
-Por ejemplo, para realizar una autorización a la hora de reservar un auto o con un precio estimado de una compra previo a su confirmación.
+For example, to grant an authorization when you reserve a car, or for an estimated purchase price prior to confirmation.
 
-## Realiza una reserva de fondos
+## Reserve Funds
 
-Para hacer una autorización de reserva de fondos solo tienes que agregar el atributo `capture=false` de la siguiente manera:
+For fund reserve authorization, you just need to add the `capture=false` attribute like this:
 
 [[[
 ```php
@@ -92,7 +92,7 @@ sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 payment_request = {
   transaction_amount: 100,
   token: 'ff8080814c11e237014c1ff593b57b4d',
-  description: 'Título de producto',
+  description: 'Title of what you are paying for',
   installments: 1,
   payment_method_id: 'visa',
   payer: {
@@ -146,13 +146,13 @@ payment_data = {
 }
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
-```
+```   
 ```curl
 
 curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
-    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    -H 'Authorization: Bearer ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/payments' \
     -d '{
           "transaction_amount": 100,
@@ -165,9 +165,10 @@ curl -X POST \
           },
           "capture": "false"
     }'
+```
 ]]]
 
-La respuesta indica que el pago se encuentra autorizado y pendiente de captura.
+The response indicates that the payment is authorized and pending to capture.
 
 ```json
 {
@@ -181,22 +182,42 @@ La respuesta indica que el pago se encuentra autorizado y pendiente de captura.
 }
 ```
 
-También puede resultar rechazada o quedar pendiente. Ten en cuenta que los fondos autorizados no podrán ser utilizados por tu cliente hasta que no sean capturados. Te recomendamos realizar la captura lo antes posible.
+It can be rejected or remain pending. Take into account that authorized funds cannot be used by your customer until captured. You need to make the capture as soon as possible.
 
+----[mla, mlm]----
 > WARNING
 >
-> Importante
+> Important
 >
-> * La reserva tendrá una validez de 7 días. Si no la capturas hasta ese momento, será cancelada.
-> * Debes guardar el ID del pago para poder finalizar el proceso.
+> * The reserve will be valid for 7 days. If you don't capture it within this term, it will be cancelled.
+> * You need to save the payment ID to complete the process.
+------------
 
-## Captura un pago autorizado
+----[mpe]----
+> WARNING
+>
+> Important
+>
+> * The reserve will be valid for 22 days. If you don't capture it within this term, it will be cancelled.
+> * You need to save the payment ID to complete the process.
+------------
 
-Para finalizar el pago, es necesario capturar los fondos que reservaste a tu cliente. Puede realizarse por el monto total o uno parcial.
+----[mlb]----
+> WARNING
+>
+> Important
+>
+> * The reserve will be valid for 5 days. If you don't capture it within this term, it will be cancelled.
+> * You need to save the payment ID to complete the process.
+------------
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Capturar el monto total de una reserva
+## Capture an authorized payment
 
-Para hacer la captura por el monto total solo debes enviar el atributo `capture` como `true`.
+To complete the payment, you need to capture the funds reserved for your customer. You can capture the amount, entirely or partially.
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Capture the entire amount
+
+To capture the full amount, you just need to submit the `capture` attribute as `true`.
 
 [[[
 ```php
@@ -269,7 +290,7 @@ curl -X PUT \
 ```
 ]]]
 
-La respuesta va a devolver que el pago se encuentra aprobado y acreditado.
+The answer will return that the payment is approved and accredited.
 
 ```json
 {
@@ -284,21 +305,21 @@ La respuesta va a devolver que el pago se encuentra aprobado y acreditado.
 
 > NOTE
 >
-> Nota
+> Note
 >
-> Si no agregas un monto, se capturará el total reservado.
+> If you don't add an amount, the total reserved amount will be captured.
 
-## Captura un pago por un monto menor al reservado
+## Capture payments for less than the reserved amount
 
 ----[mla]----
 > WARNING
 >
-> Importante
+> Important
 >
-> Solo disponible para Visa, Cabal, Master y American Express.
+> Only available for Visa, Cabal, Master, and American Express.
 ------------
 
-Para capturar un monto menor al que reservaste, tienes que sumar el envío del atributo  `transaction_amount` con el nuevo valor.
+To capture an amount lower than the reserve, you need to submit the `transaction_amount` attribute with the new value.
 
 [[[
 ```php
@@ -383,7 +404,7 @@ curl -X PUT \
 ```
 ]]]
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
 
 ```json
 {
@@ -398,16 +419,15 @@ curl -X PUT \
 }
 ```
 
-
 > NOTE
 >
-> Nota
+> Note
 >
-> No es posible capturar un monto mayor al reservado, para eso es necesario cancelar la reserva y generar una nueva.
+> You cannot capture an amount higher than the reserve; to do so, you need to cancel and make a new reserve.
 
-## Cancelar una reserva
+## Cancel a reserve
 
-Puedes cancelar la reserva y liberar el dinero de la tarjeta al actualizar el atributo `status` del pago al estado `cancelled`.
+If you update payment `status` to `cancelled`, you can cancel a reserve and release the card money.
 
 [[[
 ```php
@@ -451,7 +471,7 @@ request = {
   status: 'canceled'
 }
 
-payment_response = sdk.payment.update(payment_id, request)
+payment_reponse = sdk.payment.update(payment_id, request)
 payment = payment_response[:response]
 ```
 ```csharp
@@ -484,7 +504,7 @@ curl -X PUT \
 ```
 ]]]
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
 
 ```json
 {
@@ -496,22 +516,21 @@ curl -X PUT \
   ...
 }
 ```
-
 ---
-### Próximos pasos
+### Next steps
 
-> LEFT_BUTTON_REQUIRED_ES
+> LEFT_BUTTON_REQUIRED_EN
 >
-> Requisitos para ir a producción
+> Requirements to go to production
 >
-> Conoce los requisitos necesarios para comenzar a recibir pago.
+> Learn all the requirements needed to start receiving payments.
 >
-> [Requisitos para ir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/goto-production)
+> [Requirements to go to production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/goto-production)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON_RECOMMENDED_EN
 >
-> Referencias de API
+> API References
 >
-> Encuentra toda la información necesaria para interactuar con nuestras APIs.
+> Find all the information required to interact with our APIs.
 >
-> [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference)
+> [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference)

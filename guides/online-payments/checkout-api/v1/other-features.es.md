@@ -165,6 +165,7 @@ curl -X POST \
           },
           "capture": "false"
     }'
+```
 ]]]
 
 La respuesta indica que el pago se encuentra autorizado y pendiente de captura.
@@ -183,12 +184,34 @@ La respuesta indica que el pago se encuentra autorizado y pendiente de captura.
 
 También puede resultar rechazada o quedar pendiente. Ten en cuenta que los fondos autorizados no podrán ser utilizados por tu cliente hasta que no sean capturados. Te recomendamos realizar la captura lo antes posible.
 
+----[mla, mlm]----
 > WARNING
 >
 > Importante
 >
 > * La reserva tendrá una validez de 7 días. Si no la capturas hasta ese momento, será cancelada.
 > * Debes guardar el ID del pago para poder finalizar el proceso.
+------------
+
+----[mpe]----
+> WARNING
+>
+> Importante
+>
+> * La reserva tendrá una validez de 22 días. Si no la capturas hasta ese momento, será cancelada.
+> * Debes guardar el ID del pago para poder finalizar el proceso.
+
+------------
+
+----[mlb]----
+> WARNING
+>
+> Importante
+>
+> * La reserva tendrá una validez de 5 días. Si no la capturas hasta ese momento, será cancelada.
+> * Debes guardar el ID del pago para poder finalizar el proceso.
+
+------------
 
 ## Captura un pago autorizado
 
@@ -398,7 +421,6 @@ curl -X PUT \
 }
 ```
 
-
 > NOTE
 >
 > Nota
@@ -502,11 +524,11 @@ curl -X PUT \
 
 > LEFT_BUTTON_REQUIRED_ES
 >
-> Requisitos para ir a producción
+> Requisitos para salir a producción
 >
 > Conoce los requisitos necesarios para comenzar a recibir pago.
 >
-> [Requisitos para ir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/goto-production)
+> [Requisitos para salir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v1/goto-production)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
