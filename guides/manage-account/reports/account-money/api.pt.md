@@ -577,6 +577,7 @@ Confira os campos que você pode configurar para ajustar suas preferências ante
 | *`refund_detailed` (opcional)* | <br/>Mostra o código de referência (`external_reference`) do reembolso em vez do código de referência (`external_reference`) do pagamento.<br/><br/> |
 | `scheduled` (read_only) | <br/>Campo informativo que indica se já existem relatórios programados na conta do usuário.<br/><br/> |
 | *`separator` (opcional)* | <br/>Separador que pode ser usado no arquivo .csv quando não quiser que o separador seja uma vírgula. <br/><br/> |
+| `notification_email_list` (opcional) | <br/>Permite adicionar um grupo de destinatários de e-mail para que recebam uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta Mercado Pago para que você também receba as notificações.<br/><br/> |
 | *`sftp_info` (opcional)* | <br/>Indica os dados para subir a SFTP quando precisar.<br/><br/> |
 | *`shipping_detail` (opcional)* | <br/> Inclui os detalhes dos envios. <br/> <br/>|
 | *`show_chargeback_cancel` (opcional)* | <br/> Inclui os detalhes dos cancelamentos das contestações. <br/> <br/>|

@@ -552,6 +552,7 @@ Know the fields you can configure to adjust your preferences before you start:
 | --- | --- |
 | `sftp_info` (optional) | <br/>Indicates the uploaded data to SFTP when you need it.<br/><br/> |
 | `separator` (optional) | <br/>Separator that you can use in the .csv file when you don't want the separator to be a comma. <br/><br/> |
+| `notification_email_list` (otional) | <br/>Allows you to add a group of email recipients to be notified when a report is ready and available for download. Make sure to include the email linked to your Mercado Pago account so you can be notified as well. <br/><br/> |
 | `refund_detailed` (optional) | <br/>Displays the reference code (external_reference) of the refund instead of the reference code (external_reference) of the payment.<br/><br/> |
 | `include_withdrawal` (optional) | <br/>Includes withdrawals in the report.<br/><br/> |
 | `coupon_detailed` (optional) | <br/>Includes a column to show the detail of the discount coupons.<br/><br/> |
