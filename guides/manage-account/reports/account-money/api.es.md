@@ -118,25 +118,32 @@ curl -X POST \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/account/settlement_report/config' \
     -d '{
-                "file_name_prefix": "bank-report-USER_ID",
-                "include_withdrawal_at_end": false,
-                "execute_after_withdrawal": true,
-                "frequency": {
-                    "hour": 0,
-                    "type": "monthly",
-                    "value": 1
+            "file_name_prefix": "settlement-report-USER_ID",
+            "show_fee_prevision": false,
+            "show_chargeback_cancel": true,
+            "coupon_detailed": true,
+            "shipping_detail": true,
+            "refund_detailed": true,
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
+            "frequency": {
+                "hour": 0,
+                "type": "monthly",
+                "value": 1
+            },
+            "columns": [
+                {
+                    "key": "DATE"
                 },
-                 "columns": [
-                    {
-                        "key": "DATE"
-                    },
-                    {
-                        "key": "SOURCE_ID"
-                    },
-                    {
-                        "key": "EXTERNAL_REFERENCE"
-                    }
-                ]
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
         }'
 ```
 ```php
@@ -193,6 +200,10 @@ String body = "{
                     \\"coupon_detailed\\": true,
                     \\"shipping_detail\\": true,
                     \\"refund_detailed\\": true,
+                    \\"notification_email_list\\": [
+                        \\"example@email.com\\",
+                        \\"john@example.com\\",
+                    ],
                     \\"frequency\\": {
                         \\"hour\\": 0,
                         \\"type\\": \\"monthly\\",
@@ -422,6 +433,10 @@ String body = "{
                     \\"coupon_detailed\\": true,
                     \\"shipping_detail\\": true,
                     \\"refund_detailed\\": true,
+                    \\"notification_email_list\\": [
+                        \\"example@email.com\\",
+                        \\"john@example.com\\",
+                    ],
                     \\"frequency\\": {
                         \\"hour\\": 0,
                         \\"type\\": \\"monthly\\",

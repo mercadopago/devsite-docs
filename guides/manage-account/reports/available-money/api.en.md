@@ -134,6 +134,10 @@ curl -X POST \
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -165,6 +169,10 @@ $data = '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -200,6 +208,10 @@ String body = "{
                 \\"file_name_prefix\\": \\"bank-report-USER_ID\\",
                 \\"include_withdrawal_at_end\\": false,
                 \\"execute_after_withdrawal\\": true,
+                \\"notification_email_list\\": [
+                    \\"example@email.com\\",
+                    \\"john@example.com\\",
+                ],
                 \\"frequency\\": {
                     \\"hour\\": 0,
                     \\"type\\": \\"monthly\\",
@@ -234,6 +246,10 @@ data = '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -267,6 +283,10 @@ var dataString = '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -311,6 +331,10 @@ You will receive an `HTTP STATUS 201 (Created)` in response.
     "scheduled": false,
     "execute_after_withdrawal": true,
     "separator": ",",
+    "notification_email_list": [
+        "example@email.com",
+        "john@example.com"
+    ],
     "frequency": {
         "hour": 0,
         "type": "monthly",
@@ -345,6 +369,10 @@ curl -X PUT \
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -376,6 +404,10 @@ $data = '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -411,6 +443,10 @@ String body = "{
                 \\"file_name_prefix\\": \\"bank-report-USER_ID\\",
                 \\"include_withdrawal_at_end\\": false,
                 \\"execute_after_withdrawal\\": true,
+                \\"notification_email_list\\": [
+                    \\"example@email.com\\",
+                    \\"john@example.com\\",
+                ],
                 \\"frequency\\": {
                     \\"hour\\": 0,
                     \\"type\\": \\"monthly\\",
@@ -445,6 +481,10 @@ data = '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -478,6 +518,10 @@ var dataString = '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -522,6 +566,10 @@ You will receive an `HTTP STATUS 200 (OK)` in response.
     "scheduled": false,
     "execute_after_withdrawal": true,
     "separator": ",",
+    "notification_email_list": [
+        "example@email.com",
+        "john@example.com"
+    ],
     "frequency": {
         "hour": 0,
         "type": "monthly",
