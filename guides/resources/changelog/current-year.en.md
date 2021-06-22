@@ -20,7 +20,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 Now you can include Pix as a payment method for Nuvemshop.
 
-[Ir para a documentação Nuvemshop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/nuvemshop)
+[Go to Nuvemshop documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/nuvemshop)
 
 ------------
 

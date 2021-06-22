@@ -18,9 +18,9 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 >
 > Product: Nuvemshop
 
-Ahora puedes incluir Pix como método de pago para Nuvemshop.
+Ahora puedes incluir Pix como método de pago para Tiendanube.
 
-[Ir para a documentação Nuvemshop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/nuvemshop)
+[Ir a documentación de Tiendanube](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/nuvemshop)
 
 ------------
 
