@@ -129,6 +129,10 @@ curl -X POST \
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
             "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -161,6 +165,10 @@ $data = '{
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
             "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -197,6 +205,10 @@ String body = "{
                 \\"include_withdrawal_at_end\\": false,
                 \\"execute_after_withdrawal\\": true,
                 \\"display_timezone\\": \\"GMT-04\\",
+                \\"notification_email_list\\": [
+                    \\"example@email.com\\",
+                    \\"john@example.com\\",
+                ],
                 \\"frequency\\": {
                     \\"hour\\": 0,
                     \\"type\\": \\"monthly\\",
@@ -232,6 +244,10 @@ data = '{
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
             "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -266,6 +282,10 @@ var dataString = '{
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
             "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -311,6 +331,10 @@ Recibirás como respuesta un `HTTP STATUS 201 (Created)`
     "execute_after_withdrawal": true,
     "display_timezone": "GMT-04",
     "separator": ",",
+    "notification_email_list": [
+        "example@email.com",
+        "john@example.com"
+    ],
     "frequency": {
         "hour": 0,
         "type": "monthly",
@@ -347,6 +371,10 @@ curl -X PUT \
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
             "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -379,6 +407,10 @@ $data = '{
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
             "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -415,6 +447,10 @@ String body = "{
                 \\"include_withdrawal_at_end\\": false,
                 \\"execute_after_withdrawal\\": true,
                 \\"display_timezone\\": \\"GMT-04\\",
+                \\"notification_email_list\\": [
+                    \\"example@email.com\\",
+                    \\"john@example.com\\",
+                ],
                 \\"frequency\\": {
                     \\"hour\\": 0,
                     \\"type\\": \\"monthly\\",
@@ -450,6 +486,10 @@ data = '{
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
             "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -484,6 +524,10 @@ var dataString = '{
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
             "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -530,12 +574,16 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
     "execute_after_withdrawal": true,
     "separator": ",",
     "display_timezone": "GMT-04",
+    "notification_email_list": [
+        "example@email.com",
+        "john@example.com"
+    ],
     "frequency": {
         "hour": 0,
         "type": "monthly",
         "value": 1
     },
-   "columns": [
+    "columns": [
         {
             "key": "DATE"
         },
@@ -561,6 +609,7 @@ Conoce los campos que puedes configurar para ajustar tus preferencias antes de e
 | `sftp_info` (opcional) | <br/>Indica los datos de subida a SFTP cuando lo necesites.<br/><br/> |
 | `separator` (opcional) | <br/>Separador que puedes usar en el archivo .csv cuando no quieras que el separador sea una coma. <br/><br/> |
 | `display_timezone` (opcional) | <br/>Este campo determina la fecha y la hora que se visualiza en los reportes. Si no configuras este campo con una zona horaria, el sistema tomará por defecto el valor GMT-04. Si eliges una zona horaria que utiliza horario de verano, es necesario que hagas el ajuste manual cuando cambie la hora.<br/><br/> |
+| `notification_email_list` (opcional) | <br/>Permite agregar un grupo de destinatarios de correo electrónico para que reciban una notificación cuando un reporte está listo y disponible para descargar. Asegúrate de incluir el correo asociado a tu cuenta de Mercado Pago para que también recibas las notificaciones.<br/><br/> |
 | `refund_detailed` (opcional) | <br/>Muestra el código de referencia (external_reference) del reembolso en vez del código de referencia (external_reference) del pago.<br/><br/> |
 | `include_withdrawal` (opcional) | <br/>Incluye los retiros de dinero en el reporte.<br/><br/> |
 | `coupon_detailed` (opcional) | <br/>Suma una columna para mostrar el detalle de los cupones de descuento.<br/><br/> |

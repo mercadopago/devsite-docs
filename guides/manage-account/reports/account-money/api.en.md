@@ -120,26 +120,33 @@ curl -X POST \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/account/settlement_report/config' \
     -d '{
-            "file_name_prefix": "bank-report-USER_ID",
-                "include_withdrawal_at_end": false,
-                "execute_after_withdrawal": true,
-                "display_timezone": "GMT-04",
-                "frequency": {
-                    "hour": 0,
-                    "type": "monthly",
-                    "value": 1
+            "file_name_prefix": "settlement-report-USER_ID",
+            "show_fee_prevision": false,
+            "show_chargeback_cancel": true,
+            "coupon_detailed": true,
+            "shipping_detail": true,
+            "refund_detailed": true,
+            "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
+            "frequency": {
+                "hour": 0,
+                "type": "monthly",
+                "value": 1
+            },
+            "columns": [
+                {
+                    "key": "DATE"
                 },
-                "columns": [
-                    {
-                        "key": "DATE"
-                    },
-                    {
-                        "key": "SOURCE_ID"
-                    },
-                    {
-                        "key": "EXTERNAL_REFERENCE"
-                    }
-                ]
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
     }'
 ```
 ```php
@@ -159,6 +166,10 @@ $data = '{
             "shipping_detail": true,
             "refund_detailed": true,
             "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -198,6 +209,10 @@ String body = "{
                     \\"shipping_detail\\": true,
                     \\"refund_detailed\\": true,
                     \\"display_timezone\\": \\"GMT-04\\",
+                    \\"notification_email_list\\": [
+                         \\"example@email.com\\",
+                         \\"john@example.com\\",
+                    ],
                     \\"frequency\\": {
                         \\"hour\\": 0,
                         \\"type\\": \\"monthly\\",
@@ -236,6 +251,10 @@ data = '{
             "shipping_detail": true,
             "refund_detailed": true,
             "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -273,6 +292,10 @@ var dataString = '{
             "shipping_detail": true,
             "refund_detailed": true,
             "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -320,6 +343,10 @@ You will receive an `HTTP STATUS 201 (Created)` in response.
     "shipping_detail": true,
     "refund_detailed": true,
     "display_timezone": "GMT-04",
+    "notification_email_list": [
+        "example@email.com",
+        "john@example.com"
+    ],
     "frequency": {
         "hour": 0,
         "type": "monthly",
@@ -358,6 +385,10 @@ curl -X PUT \
             "shipping_detail": true,
             "refund_detailed": true,
             "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -393,6 +424,10 @@ $data = '{
         "shipping_detail": true,
         "refund_detailed": true,
         "display_timezone": "GMT-04",
+        "notification_email_list": [
+            "example@email.com",
+            "john@example.com"
+        ],
         "frequency": {
             "hour": 0,
             "type": "monthly",
@@ -432,6 +467,10 @@ String body = "{
                 \\"shipping_detail\\": true,
                 \\"refund_detailed\\": true,
                 \\"display_timezone\\": \\"GMT-04\\",
+                \\"notification_email_list\\": [
+                    \\"example@email.com\\",
+                    \\"john@example.com\\",
+                ],
                 \\"frequency\\": {
                     \\"hour\\": 0,
                     \\"type\\": \\"monthly\\",
@@ -470,6 +509,10 @@ data = '{
             "shipping_detail": true,
             "refund_detailed": true,
             "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -507,6 +550,10 @@ var dataString = '{
         "shipping_detail": true,
         "refund_detailed": true,
         "display_timezone": "GMT-04",
+        "notification_email_list": [
+            "example@email.com",
+            "john@example.com"
+        ],
         "frequency": {
             "hour": 0,
             "type": "monthly",
@@ -554,6 +601,10 @@ You will receive an `HTTP STATUS 200 (OK)` in response.
     "shipping_detail": true,
     "refund_detailed": true,
     "display_timezone": "GMT-04",
+    "notification_email_list": [
+        "example@email.com",
+        "john@example.com"
+    ],
     "frequency": {
         "hour": 0,
         "type": "monthly",
@@ -587,6 +638,7 @@ Know the fields you can configure to adjust your preferences before you start:
 | *`refund_detailed` (optional)* | <br/> Displays the reference code (`external_reference`) of the refund instead of the reference code (`external_reference`) of the payment.<br/><br/> |
 | `scheduled` (read_only) | <br/> Informative field that indicates if there are already scheduled reports in the user account. <br/><br/> |
 | *`separator` (optional)* | <br/> Separator that you can use in the .csv file when you don't want the separator to be a comma. <br/><br/> |
+| `notification_email_list` (otional) | <br/>Allows you to add a group of email recipients to be notified when a report is ready and available for download. Make sure to include the email linked to your Mercado Pago account so you can be notified as well. <br/><br/> |
 | *`sftp_info` (optional)* | <br/> Indicates the uploaded data to SFTP when you need it. <br/><br/> |
 | *`shipping_detail` (optional)* | <br/> Includes the detail of the shipments. <br/> <br/>|
 | *`show_chargeback_cancel` (optional)* | <br/> Includes the detail of cancellations of chargebacks. <br/> <br/>|

@@ -136,6 +136,10 @@ curl -X POST \
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
             "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -168,6 +172,10 @@ $data = '{
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
             "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -204,6 +212,10 @@ String body = "{
                 \\"include_withdrawal_at_end\\": false,
                 \\"execute_after_withdrawal\\": true,
                 \\"display_timezone\\": \\"GMT-04\\",
+                \\"notification_email_list\\": [
+                    \\"example@email.com\\",
+                    \\"john@example.com\\",
+                ],
                 \\"frequency\\": {
                     \\"hour\\": 0,
                     \\"type\\": \\"monthly\\",
@@ -239,6 +251,10 @@ data = '{
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
             "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -273,6 +289,10 @@ var dataString = '{
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
             "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -318,6 +338,10 @@ You will receive an `HTTP STATUS 201 (Created)` in response.
     "execute_after_withdrawal": true,
     "separator": ",",
     "display_timezone": "GMT-04",
+    "notification_email_list": [
+        "example@email.com",
+        "john@example.com"
+    ],
     "frequency": {
         "hour": 0,
         "type": "monthly",
@@ -353,6 +377,10 @@ curl -X PUT \
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
             "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -385,6 +413,10 @@ $data = '{
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
             "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -421,6 +453,10 @@ String body = "{
                 \\"include_withdrawal_at_end\\": false,
                 \\"execute_after_withdrawal\\": true,
                 \\"display_timezone\\": \\"GMT-04\\",
+                \\"notification_email_list\\": [
+                    \\"example@email.com\\",
+                    \\"john@example.com\\",
+                ],
                 \\"frequency\\": {
                     \\"hour\\": 0,
                     \\"type\\": \\"monthly\\",
@@ -456,6 +492,10 @@ data = '{
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
             "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -490,6 +530,10 @@ var dataString = '{
             "include_withdrawal_at_end": false,
             "execute_after_withdrawal": true,
             "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -535,6 +579,10 @@ You will receive an `HTTP STATUS 200 (OK)` in response.
     "execute_after_withdrawal": true,
     "separator": ",",
     "display_timezone": "GMT-04",
+    "notification_email_list": [
+        "example@email.com",
+        "john@example.com"
+    ],
     "frequency": {
         "hour": 0,
         "type": "monthly",
@@ -566,6 +614,7 @@ Know the fields you can configure to adjust your preferences before you start:
 | `sftp_info` (optional) | <br/>Indicates the uploaded data to SFTP when you need it.<br/><br/> |
 | `separator` (optional) | <br/>Separator that you can use in the .csv file when you don't want the separator to be a comma. <br/><br/> |
 | `display_timezone` (optional) | <br/>This field determines the date and time displayed in the reports. If you do not set a time zone in this field, the system will consider GMT-04 as default. If you choose a time zone which adopts daylight saving time, you will need to adjust it manually when the time changes.<br/><br/> |
+| `notification_email_list` (otional) | <br/>Allows you to add a group of email recipients to be notified when a report is ready and available for download. Make sure to include the email linked to your Mercado Pago account so you can be notified as well. <br/><br/> |
 | `refund_detailed` (optional) | <br/>Displays the reference code (external_reference) of the refund instead of the reference code (external_reference) of the payment.<br/><br/> |
 | `include_withdrawal` (optional) | <br/>Includes withdrawals in the report.<br/><br/> |
 | `coupon_detailed` (optional) | <br/>Includes a column to show the detail of the discount coupons.<br/><br/> |
