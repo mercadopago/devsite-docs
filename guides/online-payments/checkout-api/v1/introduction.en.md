@@ -5,6 +5,12 @@
 
 Use our APIs to create your own payment experience on your website or mobile application. From basic to advanced configurations, you control the whole experience.
 
+> WARNING
+>
+> Warning
+>
+> Version 1 of the MercadoPago.js SDK discontinued
+
 You can use the official SDKs or interact directly with our APIs.
 
 <br>

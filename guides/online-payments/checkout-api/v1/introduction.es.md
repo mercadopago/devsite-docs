@@ -11,6 +11,12 @@ Usa nuestras APIs para construir tu propia experiencia de pago en tu sitio web o
 
 Puedes usar las SDKs oficiales o interactuar directamente con nuestras APIs.
 
+> WARNING
+>
+> Aviso
+>
+> Versión 1 de la SDK MercadoPago.js descontinuada
+
 <br>
 
 ![API-payment](/images/api/api-intro-es.jpg)
