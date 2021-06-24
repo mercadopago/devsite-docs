@@ -13,7 +13,7 @@ paths:
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/subscriptions'
       summary: Generate credentials
-      description: To create or refresh the necessary credentials to allow your application to operate in the name of a seller.
+      description: To create or refresh the necessary credentials to operate your application in the name of a seller
       requestBody:
         content:
           application/json:
