@@ -12,7 +12,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 > CHANGELOG
 >
-> New Pix payment method for ----[mlb]----Nuvemshop------------ ----[mla, mlm, mlc, mco]----Tiendanube------------ 
+> New Pix payment method for Nuvemshop
 >
 > NEWS: FEATURE
 >

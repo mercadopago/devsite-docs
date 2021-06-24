@@ -131,7 +131,7 @@ It allows the **client to complete the purchase on your site**, without being re
 
 ### Checkout Pro
 
-**The buyer will be redirected to Mercado Pago** to make the payment and complete the purchase ----[mlb]---- using payment methods such as Pix, boleto parcelado, Caixa’s virtual debit and money from a Mercado Pago account. Once the payment is complete, the buyer will return to your site ------------.
+**The buyer will be redirected to Mercado Pago** to make the payment and complete the purchase----[mlb]---- using payment methods such as Pix, boleto parcelado, Caixa’s virtual debit and money from a Mercado Pago account. Once the payment is complete, the buyer will return to your site ------------.
 
 1. Access the payment ----[mlb]---- [methods settings](https://lojavirtualnuvem.com.br/admin/payments/) ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- [methods settings](https://mitiendanube.com/admin/payments/) ------------ on your site menu,look for "Mercado Pago" and select "Edit".
 2. In the item "Type of integration" change to the option "Purchase process on Mercado Pago site".
@@ -167,7 +167,7 @@ If you want to **manually sync your settings** or apply a minimum amount of inst
 ----[mla, mlm, mlc, mlu, mpe, mco]----
 You can also manually synchronize the latest changes in the following way: ------------
 
-1. Access the payment ----[mlb]---- [methods settings](https://lojavirtualnuvem.com.br/admin/payments/) ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- [methods settings](https://mitiendanube.com/admin/payments/) ------------ on your site menu,look for "Mercado Pago" and select "Edit".
+1. Access the payment ----[mlb]---- [methods settings](https://lojavirtualnuvem.com.br/admin/payments/) ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- [methods settings](https://mitiendanube.com/admin/payments/) ------------ on your site menu, look for "Mercado Pago" and select "Edit".
 2. In the installments section, click on "Show now".
 3. Finally, click on "Save changes".
 <p>&nbsp;</p>
