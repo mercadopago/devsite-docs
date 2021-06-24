@@ -17,7 +17,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 >
 > PRODUCT: REPORTES
 
-El atributo configurable display_timezone permite configurar la zona horaria en la que opera un negocio para que los reportes muestren la fecha y la hora ajustadas a dicha zona.
+El atributo configurable `display_timezone` permite configurar la zona horaria en la que opera un negocio para que los reportes muestren la fecha y la hora ajustadas a dicha zona.
 
 De no modificar la zona horaria, los reportes seguirán mostrando los datos en GMT-04.
 
