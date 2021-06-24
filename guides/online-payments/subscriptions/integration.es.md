@@ -303,7 +303,7 @@ Atributos
 | `auto_recurring.frequency_type` | Indica el tipo de frecuencia. Puede ser por mes (months) o días (days). En conjunto con la frecuencia, definen el ciclo de cuotas que va a tener una suscripción.<br><br> Por ejemplo, si cada quince días se necesita generar una cuota para ser cobrada quedaría de la siguiente forma: `auto_recurring.frequency`: 15 y `auto_recurring.frequency_type`: days |
 | `auto_recurring.transaction_amount` | Monto que se aplica a la suscripción. |
 | `auto_recurring.currency_id` | Identifica la moneda que corresponde al país. |
-| `auto_recurring.start_date` | Indica la fecha de inicio de la suscripción, en caso de no especificarlo comienza en el momento. |
+| `auto_recurring.start_date` | Indica la fecha de inicio de la suscripción. En el caso de no especificarla, comienza en el momento. |
 | `auto_recurring.end_date` | Indica si la suscripción va a tener un límite. Si no se especifica no tiene límite. |
 | `auto_recurring.free_trial.frequency` | Define un período de prueba inicial durante el cual podrás retrasar el primer cobro, indica la cantidad de tiempo que no se va a cobrar por el servicio en base al tipo de frecuencia. Tiene que ser consistente con `auto_recurring.frequency`. |
 | `auto_recurring.free_trial.frequency_type` | Indica la cantidad de cuotas que no se van a cobrar por el servicio. Tiene que ser consistente con `auto_recurring.frequency_type`. |
