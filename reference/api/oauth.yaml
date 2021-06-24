@@ -31,8 +31,8 @@ paths:
                   required: true
                   example: 'authorization_code'
                   enum:
-                    - authorization_code -- In case you want to obtain credentials for the first time
-                    - refresh_token -- In case you want to refresh existing token
+                    - authorization_code -- In case you want to obtain credentials for the first time.
+                    - refresh_token -- In case you want to refresh existing token.
                 code:
                   type: string
                   description: The authorization code you get in your server for linking. Only required when grant_type is equal to authorization_code.
