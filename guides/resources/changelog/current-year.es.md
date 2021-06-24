@@ -39,7 +39,7 @@ El atributo configurable `display_timezone` permite configurar la zona horaria e
 
 De no modificar la zona horaria, los reportes seguirán mostrando los datos en GMT-04.
 
-Ir a documentación de los reportes [Dinero retirado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/api#bookmark_atributos_configurables) o [Todas las transacciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/api#bookmark_atributos_configurables)
+Ir a documentación de los reportes [Dinero retirado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/api#bookmark_atributos_configurables) o [Todas las transacciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/api#bookmark_atributos_configurables).
 
 ### 10 de junio
 

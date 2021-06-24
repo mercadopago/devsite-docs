@@ -26,9 +26,9 @@ Tiendanube es una **plataforma de e-commerce que permite recibir pagos con Merca
 Los **pasos para comenzar a cobrar con Mercado Pago** son los siguientes:
 
 
-1. Crea una ----[mlb]---- [cuenta vendedor](https://www.mercadopago.com.br/activities) ------------ ----[mla]---- [cuenta vendedor](https://www.mercadopago.com.ar/activities) ------------ ----[mlm]---- [cuenta vendedor](https://www.mercadopago.com.mx/activities) ------------ ----[mlc]---- [cuenta vendedor](https://www.mercadopago.cl/activities) ------------ ----[mlu]---- [cuenta vendedor](https://www.mercadopago.com.uy/activities) ------------ ----[mpe]---- [cuenta vendedor](https://www.mercadopago.com.pe/activities) ------------ ----[mco]---- [cuenta vendedor](https://www.mercadopago.com.co/activities) ------------ en Mercado Pago si todavía no tienes una.
-2. Instala la aplicación dentro de la tienda.
-3. Configura las formas de pago con Mercado Pago
+1. Crea una [cuenta vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) en Mercado Pago si todavía no tienes una.
+1. Instala la aplicación dentro de la tienda.
+1. Configura las formas de pago con Mercado Pago.
 
 ## Activa Mercado Pago en tu tienda
 
@@ -36,7 +36,7 @@ Para **vincular tu cuenta de Mercado Pago a Tiendanube**, sigue estos pasos:
 
 1. Accede a las ----[mlb]---- [configuraciones de medios de pago](https://lojavirtualnuvem.com.br/admin/payments/) ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- [configuraciones de medios de pago](https://mitiendanube.com/admin/payments/) ------------ en el menú de tu tienda.
 2. Busca en la lista de medios de pago a Mercado Pago.
-3. Haz clic en "Configurar" y luego en "Activar"
+3. Haz clic en "Configurar" y luego en "Activar".
 4. Vas a ser redirigido a Mercado Pago para que ingreses con los datos de tu cuenta. Para autorizar la conexión, haz clic en "Permitir".
 <p>&nbsp;</p>
 ----[mlb]----
@@ -74,7 +74,7 @@ Para **vincular tu cuenta de Mercado Pago a Tiendanube**, sigue estos pasos:
 
 **Elige cómo integrar Mercado Pago en tu tienda.** Puedes [recibir los pagos directamente en tu tienda](#bookmark_checkout_transparente) o cobrar a través del [sitio de Mercado Pago](#bookmark_checkout_pro). Solo es posible activar una de las dos opciones.
 
-También tienes la opción de [ofrecer cuotas sin interés](#bookmark_configura_las_cuotas_sin_interés_en_tu_cuenta_de_mercado_pago) y configurar las ----[mlb]---- [tasas y plazos](https://www.mercadopago.com.br/settings/release-options) ------------ ----[mla]---- [tasas y plazos](https://www.mercadopago.com.ar/settings/release-options) ------------ ----[mlm]---- [tasas y plazos](https://www.mercadopago.com.mx/settings/release-options) ------------ ----[mlc]---- [tasas y plazos](https://www.mercadopago.cl/settings/release-options) ------------ ----[mlu]---- [tasas y plazos](https://www.mercadopago.com.uy/settings/release-options) ------------ ----[mpe]---- [tasas y plazos](https://www.mercadopago.com.pe/settings/release-options) ------------ ----[mco]---- [tasas y plazos](https://www.mercadopago.com.co/settings/release-options) ------------ de tus ventas online cuando quieras.
+También tienes la opción de ----[mlm]---- [ofrecer cuotas sin interés](#bookmark_configura_las_cuotas_sin_interés_en_tu_cuenta_de_mercado_pago) ------------ ----[mla, mlb, mlc, mlu, mpe, mco]---- [ofrecer mensualidades sin interés](#bookmark_configura_las_mensualidades_sin_interés_en_tu_cuenta_de_mercado_pago) ------------ y configurar las [tasas y plazos](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options) de tus ventas online cuando quieras.
 
 
 ### Checkout Transparente

@@ -38,7 +38,7 @@ The customizable attribute `display_timezone` allows to set the time zone in whi
 
 If the time zone is not modified, the reports will keep displaying data based on GMT-04.
 
-Go to [Available Balance](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/api#bookmark_configurable_attributes) or [Account Balance](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/api#bookmark_configurable_attributes) reports documentation
+Go to [Available Balance](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/api#bookmark_configurable_attributes) or [Account Balance](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/api#bookmark_configurable_attributes) reports documentation.
 
 
 ### June 10th
