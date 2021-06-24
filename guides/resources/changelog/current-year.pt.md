@@ -17,7 +17,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 >
 > PRODUCT: RELATÓRIOS
 
-Com o atributo display_timezone, é possível configurar o fuso horário em que um determinado negócio funciona. Assim, os relatórios mostrarão as datas e horários de acordo com o fuso em questão.
+Com o atributo `display_timezone`, é possível configurar o fuso horário em que um determinado negócio funciona. Assim, os relatórios mostrarão as datas e horários de acordo com o fuso em questão.
 
 Os relatórios continuarão mostrando os dados de acordo com o fuso GMT-04 caso o fuso horário não seja ajustado.
 
