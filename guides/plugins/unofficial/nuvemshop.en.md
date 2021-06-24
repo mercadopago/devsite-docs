@@ -32,9 +32,9 @@
 ## Setting steps
 
 The **steps to start charging with Mercado Pago** are the following:
-1. Create a ----[mlb]---- [seller account](https://www.mercadopago.com.br/activities) ------------ ----[mla]---- [seller account](https://www.mercadopago.com.ar/activities) ------------ ----[mlm]---- [seller account](https://www.mercadopago.com.mx/activities) ------------ ----[mlc]---- [seller account](https://www.mercadopago.cl/activities) ------------ ----[mlu]---- [seller account](https://www.mercadopago.com.uy/activities) ------------ ----[mpe]---- [seller account](https://www.mercadopago.com.pe/activities) ------------ ----[mco]---- [seller account](https://www.mercadopago.com.co/activities) ------------ in Mercado Pago if you do not yet have one.
-2. Install the app on your site.
-3. Set the payment methods with Mercado Pago.
+1. Create a [seller account](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) in Mercado Pago if you do not yet have one.
+1. Install the app on your site.
+1. Set the payment methods with Mercado Pago.
 
 ## Activate Mercado Pago on your site
 
@@ -93,8 +93,7 @@ Done! Mercado Pago is installed on your site.
 
 **Choose how to integrate Mercado Pago on your site.**  You can [receive payments directly on your site](#bookmark_transparent_checkout) or charge through the [Mercado Pago site](#bookmark_checkout_pro). Only one of the options can be activated.
 
-You also have the option to offer [interest-free installments](#bookmark_set_interest-free_installments_in_your_mercado_pago_account) and set the ----[mlb]---- [rates and terms](https://www.mercadopago.com.br/settings/release-options) ------------ ----[mla]---- [rates and terms](https://www.mercadopago.com.ar/settings/release-options) ------------ ----[mlm]---- [rates and terms](https://www.mercadopago.com.mx/settings/release-options) ------------ ----[mlc]---- [rates and terms](https://www.mercadopago.cl/settings/release-options) ------------ ----[mlu]---- [rates and terms](https://www.mercadopago.com.uy/settings/release-options) ------------ ----[mpe]---- [rates and terms](https://www.mercadopago.com.pe/settings/release-options) ------------ ----[mco]---- [rates and terms](https://www.mercadopago.com.co/settings/release-options) ------------ for your online sales whenever you want.
-
+You also have the option to offer [interest-free installments](#bookmark_set_interest-free_installments_in_your_mercado_pago_account) and set the [rates and terms](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options) for your online sales whenever you want.
 
 ### Transparent Checkout
 
