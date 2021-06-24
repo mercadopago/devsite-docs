@@ -163,7 +163,7 @@ It allows the **client to complete the purchase on your site**, without being re
 ----[mlb]---- Nuvemshop ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- Tiendanube ------------ uses your Mercado Pago account financing settings. If you have made any changes, take into consideration that they will show on your site in the next 24 hours.
 
 ----[mlb]----
-If you want to manually sync your settings or apply a minimum amount of installments, please follow these steps: ------------
+If you want to **manually sync your settings** or apply a minimum amount of installments, please follow these steps: ------------
 ----[mla, mlm, mlc, mlu, mpe, mco]----
 You can also manually synchronize the latest changes in the following way: ------------
 
