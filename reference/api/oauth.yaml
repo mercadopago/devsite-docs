@@ -13,7 +13,7 @@ paths:
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/subscriptions'
       summary: Generate credentials
-      description: To create or refresh the necessary credentials to operate your application in the name of a seller
+      description: To create or refresh the necessary credentials to allow your application to operate in the name of a seller.
       requestBody:
         content:
           application/json:
@@ -27,7 +27,7 @@ paths:
                   example: 'ACCESS_TOKEN'
                 grant_type:
                   type: string
-                  description: Specify type of operation to perform to get your credentials.
+                  description: Specifies the type of operation to perform to get your credentials.
                   required: true
                   example: 'authorization_code'
                   enum:
