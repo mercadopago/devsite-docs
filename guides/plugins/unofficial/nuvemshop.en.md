@@ -85,7 +85,7 @@ Done! Mercado Pago is installed on your site.
 >
 > 1. Close your Mercado Pago account if you have it open in your browser.
 > 2. Click "Options Menu" and then "Exit".
-> 3. Access the payment ----[mlb]---- [methods settings](https://lojavirtualnuvem.com.br/admin/payments/) ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- [methods settings](https://mitiendanube.com/admin/payments/) ------------ on your site menu,look for "Mercado Pago" and select "Edit".
+> 3. Access the payment ----[mlb]---- [methods settings](https://lojavirtualnuvem.com.br/admin/payments/) ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- [methods settings](https://mitiendanube.com/admin/payments/) ------------ on your site menu, look for "Mercado Pago" and select "Edit".
 > 4. Finally, click on "Change user" to unlink your current account.
 > 5. Done! The unlinking was successful and now you can [add a new account](#bookmark_activate_mercado_pago_on_your_site).
 
@@ -109,7 +109,7 @@ It allows the **client to complete the purchase on your site**, without being re
 > [Learn how to create a Pix key](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required)
 ------------
 
-1. Access the payment ----[mlb]---- [methods settings](https://lojavirtualnuvem.com.br/admin/payments/) ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- [methods settings](https://mitiendanube.com/admin/payments/) ------------ on your site menu,look for "Mercado Pago" and select "Edit".
+1. Access the payment ----[mlb]---- [methods settings](https://lojavirtualnuvem.com.br/admin/payments/) ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- [methods settings](https://mitiendanube.com/admin/payments/) ------------ on your site menu, look for "Mercado Pago" and select "Edit".
 2. In the item "Type of integration" change to the option "Purchase process without leaving the site".
 ----[mlb]----
 3. Select the payment options you want to offer in your site. These can be Credit Card, Boleto Bancario and PIX.
@@ -133,7 +133,7 @@ It allows the **client to complete the purchase on your site**, without being re
 
 **The buyer will be redirected to Mercado Pago** to make the payment and complete the purchase----[mlb]---- using payment methods such as Pix, boleto parcelado, Caixa’s virtual debit and money from a Mercado Pago account. Once the payment is complete, the buyer will return to your site ------------.
 
-1. Access the payment ----[mlb]---- [methods settings](https://lojavirtualnuvem.com.br/admin/payments/) ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- [methods settings](https://mitiendanube.com/admin/payments/) ------------ on your site menu,look for "Mercado Pago" and select "Edit".
+1. Access the payment ----[mlb]---- [methods settings](https://lojavirtualnuvem.com.br/admin/payments/) ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- [methods settings](https://mitiendanube.com/admin/payments/) ------------ on your site menu, look for "Mercado Pago" and select "Edit".
 2. In the item "Type of integration" change to the option "Purchase process on Mercado Pago site".
 ----[mlb]---- 
 3. Select which types of payment you want to offer at your checkout. These can be Credit Card, Boleto Bancario and PIX.
