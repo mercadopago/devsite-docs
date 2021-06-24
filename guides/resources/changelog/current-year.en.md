@@ -8,7 +8,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ----[mlb]----
 
-### June 3rd
+### June 25th
 
 > CHANGELOG
 >
@@ -16,7 +16,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 >
 > NEWS: FEATURE
 >
-> Product: Nuvemshop
+> PRODUCT: NUVEMSHOP
 
 Now you can include Pix as a payment method for Nuvemshop.
 

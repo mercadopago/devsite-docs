@@ -168,8 +168,13 @@ If you want to **manually sync your settings** or apply a minimum amount of inst
 You can also manually synchronize the latest changes in the following way: ------------
 
 1. Access the payment ----[mlb]---- [methods settings](https://lojavirtualnuvem.com.br/admin/payments/) ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- [methods settings](https://mitiendanube.com/admin/payments/) ------------ on your site menu, look for "Mercado Pago" and select "Edit".
+----[mlb]----
+2. If you want to apply a minimum amount of installments for payments with Transparent Checkout, inform the amount in the "Installments" field.
+3. In the installments section, click on "Show now".
+4. Finally, click on "Save changes". ------------
+----[mla, mlc, mlu, mpe, mco, mlm]----
 2. In the installments section, click on "Show now".
-3. Finally, click on "Save changes".
+3. Finally, click on "Save changes". ------------
 <p>&nbsp;</p>
 
 ----[mlb]----

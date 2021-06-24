@@ -8,7 +8,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ----[mlb]----
 
-### 3 de junho
+### 25 de junho
 
 > CHANGELOG
 >
@@ -16,7 +16,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 >
 > NEWS: FEATURE
 >
-> Product: Nuvemshop
+> PRODUCT: NUVEMSHOP
 
 Agora você pode incluir Pix como meio de pagamento para Nuvemshop.
 

@@ -8,15 +8,15 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ----[mlb]----
 
-### 3 de junio
+### 25 de junio
 
 > CHANGELOG
 >
-> Nuevo método de pago Pix para Nuvemshop 
+> Nuevo medio de pago Pix para Nuvemshop
 >
 > NEWS: FEATURE
 >
-> Product: Nuvemshop
+> PRODUCT: NUVEMSHOP
 
 Ahora puedes incluir Pix como método de pago para Nuvemshop.
 

@@ -100,7 +100,7 @@ Além disso, você pode [configurar parcelas sem juros](#bookmark_configurando_o
 >
 > Nota
 >
-> Ao instalar o Mercado Pago, as modalidades de pagamento "Cartão de crédito", "Boleto bancário" e "Pix" estarão habilitadas por padrão em sua loja.
+> Ao instalar o Mercado Pago, todos os meios de pagamento estarão ativos por padrão.
 
 ## Configuração de parcelamento
 
