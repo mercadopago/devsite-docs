@@ -29,7 +29,7 @@ Agora você pode incluir Pix como meio de pagamento para Nuvemshop.
 
 > CHANGELOG
 >
-> onfigure o fuso horário dos seus relatórios
+> Configure o fuso horário dos seus relatórios
 >
 > NEWS: FEATURE
 >
