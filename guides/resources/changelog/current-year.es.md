@@ -29,7 +29,7 @@ Ahora puedes incluir Pix como método de pago para Nuvemshop.
 
 > CHANGELOG
 >
-> Usa el atributo configurable display_timezone para facilitar la experiencia de conciliación de nuestros usuarios
+> Configura la zona horaria de tus reportes
 >
 > NEWS: FEATURE
 >

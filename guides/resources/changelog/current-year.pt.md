@@ -13,7 +13,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 > CHANGELOG
 >
-> Novo meio de pagamento Pix para Nuvemshop
+> Configure o fuso horário dos seus relatórios
 >
 > NEWS: FEATURE
 >

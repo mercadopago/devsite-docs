@@ -28,7 +28,7 @@ Now you can include Pix as a payment method for Nuvemshop.
 
 > CHANGELOG
 >
-> Use the customizable attribute display_timezone to make our users' reconciliation experience easier
+> Set the time zone of your reports
 >
 > NEWS: FEATURE
 >
