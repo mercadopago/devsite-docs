@@ -86,7 +86,7 @@ Permite que el **cliente finalice la compra en tu tienda**, sin ser redirecciona
 >
 > Importante
 >
-> Para ofrecer la opción de pago con Pix, debes tener registrada una llave Pix en la cuenta del vendedor. Este dato es único, sirve para identificar tu cuenta y te permitirá utilizar las funcionalidades del medio de pago.
+> Para ofrecer la opción de pago con Pix, debes tener registrada una llave Pix en la cuenta del vendedor. Este dato es único, sirve para identificar tu cuenta y te permitirá utilizar las funcionalidades del medio de pago.<br><br>
 > [Conoce cómo crear una llave Pix](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required)
 ------------
 
