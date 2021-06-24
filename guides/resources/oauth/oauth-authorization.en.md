@@ -34,6 +34,8 @@ This is the example URL you can use. You will also find the details of parameter
 
 ```url
 https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com
+
+
 ```
 
 | Parameter | Data to fill out |

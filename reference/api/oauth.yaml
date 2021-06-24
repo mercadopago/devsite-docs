@@ -1,0 +1,115 @@
+openapi: 3.0.0
+servers:
+  - url: https://api.mercadopago.com
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
+paths:
+  /oauth/token:
+    post:
+      tags:
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
+        - $ref: '#/tags/mobile-checkout'
+        - $ref: '#/tags/subscriptions'
+      summary: Generate credentials
+      description: To create or refresh the necessary credentials to allow your application to operate in the name of a seller.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                client_secret:
+                  type: string
+                  description: This is your application Access Token. 
+                  required: true
+                  example: 'ACCESS_TOKEN'
+                grant_type:
+                  type: string
+                  description: Specifies the type of operation to perform to get your credentials.
+                  required: true
+                  example: 'authorization_code'
+                  enum:
+                    - authorization_code -- In case you want to obtain credentials for the first time
+                    - refresh_token -- In case you want to refresh existing token
+                code:
+                  type: string
+                  description: The authorization code you get in your server for linking. Only required when grant_type is equal to authorization_code.
+                  example: 'TG-XXXXXXXX-241983636'
+                redirect_uri:
+                  type: string
+                  description: This is the URL you set up in the Redirect URL field of your application. Only required when grant_type is equal to authorization_code.
+                refresh_token:
+                  type: string
+                  description: Value received when expiring credentials were created. Only required when grant_type is equal to refresh_token.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  access_token:
+                    type: string
+                    example: 'APP_USR-4934588586838432-XXXXXXXX-241983636'
+                    description: access_token
+                  token_type:
+                    type: string
+                    example: 'bearer'
+                    description: token_type
+                  expires_in:
+                    type: number
+                    example: 15552000
+                    description: expires_in
+                  scope:
+                    type: string
+                    example: 'offline_access read write'
+                    description: scope
+                  user_id:
+                    type: number
+                    example: 241983636
+                    description: user_id
+                  refresh_token:
+                    type: string
+                    example: 'TG-XXXXXXXX-241983636'
+                    description: refresh_token
+                  public_key:
+                    type: string
+                    example: 'APP_USR-d0a26210-XXXXXXXX-479f0400869e'
+                    description: public_key
+                  live_mode: 
+                    type: boolean
+                    example: true
+                    description: live_mode
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: 'Error validating grant. Your authorization code or refresh token may be expired or it was already used.'
+                  status:
+                    type: number
+                    example: 400
+                  errorKey:
+                    type: string
+                    example: 'expired_grant'
+                    enum:
+                      - invalid_client -- 
+                      - invalid_grant -- 
+                      - invalid_scope -- 
+                      - invalid_request -- 
+                      - unsupported_grant_type -- 
+                      - forbidden -- 
+                      - unauthorized_client -- 
+                  cause:
+                    type: array
+                    items:
+                      type: string
+                    example: []
+  
