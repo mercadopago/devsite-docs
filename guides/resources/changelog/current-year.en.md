@@ -17,7 +17,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 >
 > PRODUCT: REPORTS
 
-The customizable attribute display_timezone allows to set the time zone in which a business operates so the reports display the date and time adjusted to such time zone.
+The customizable attribute `display_timezone` allows to set the time zone in which a business operates so the reports display the date and time adjusted to such time zone.
 
 If the time zone is not modified, the reports will keep displaying data based on GMT-04.
 
