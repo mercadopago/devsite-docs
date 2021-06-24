@@ -6,6 +6,24 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## June 2021
 
+----[mlb]----
+
+### June 25th
+
+> CHANGELOG
+>
+> New Pix payment method for Nuvemshop
+>
+> NEWS: FEATURE
+>
+> PRODUCT: NUVEMSHOP
+
+Now you can include Pix as a payment method for Nuvemshop.
+
+[Go to Nuvemshop documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/nuvemshop)
+
+------------
+
 ### June 10th
 
 > CHANGELOG
@@ -25,7 +43,6 @@ We have released the new version 4.6.1 for PrestaShop.
 > GitHub
 >
 > [Check GitHub](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.6.1) for further details regarding this release.
-
 
 > CHANGELOG
 >

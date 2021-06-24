@@ -6,6 +6,24 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Junho 2021
 
+----[mlb]----
+
+### 25 de junho
+
+> CHANGELOG
+>
+> Novo meio de pagamento Pix para Nuvemshop
+>
+> NEWS: FEATURE
+>
+> PRODUCT: NUVEMSHOP
+
+Agora você pode incluir Pix como meio de pagamento para Nuvemshop.
+
+[Ir para a documentação Nuvemshop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/nuvemshop)
+
+------------
+
 ### 10 de junho
 
 > CHANGELOG

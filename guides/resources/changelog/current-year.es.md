@@ -6,6 +6,24 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Junio 2021
 
+----[mlb]----
+
+### 25 de junio
+
+> CHANGELOG
+>
+> Nuevo medio de pago Pix para Nuvemshop
+>
+> NEWS: FEATURE
+>
+> PRODUCT: NUVEMSHOP
+
+Ahora puedes incluir Pix como método de pago para Nuvemshop.
+
+[Ir a documentación de Nuvemshop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/nuvemshop)
+
+------------
+
 ### 10 de junio
 
 > CHANGELOG
@@ -25,7 +43,6 @@ Lanzamos la nueva versión 4.6.1 para PrestaShop.
 > GitHub
 >
 > Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.6.1).
-
 
 > CHANGELOG
 >
