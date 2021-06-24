@@ -13,7 +13,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 > CHANGELOG
 >
-> Configure o fuso horário dos seus relatórios
+> Novo meio de pagamento Pix para Nuvemshop
 >
 > NEWS: FEATURE
 >
@@ -29,7 +29,7 @@ Agora você pode incluir Pix como meio de pagamento para Nuvemshop.
 
 > CHANGELOG
 >
-> Use o atributo configurável display_timezone para facilitar a experiência dos nossos usuários ao fazerem reconciliações
+> onfigure o fuso horário dos seus relatórios
 >
 > NEWS: FEATURE
 >
