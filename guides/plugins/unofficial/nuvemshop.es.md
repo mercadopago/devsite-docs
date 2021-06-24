@@ -209,4 +209,4 @@ También puedes sincronizar los últimos cambios manualmente de la siguiente man
 ------------
 
 <!-- -->
-> Para más información, visita el ----[mlb]---- [sitio oficial de Tiendanube](https://www.nuvemshop.com.br/). ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- [sitio oficial de Tiendanube](https://www.tiendanube.com/). ------------
+> Para más información, visita el ----[mlb]---- [sitio oficial de Tiendanube](https://www.nuvemshop.com.br). ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- [sitio oficial de Tiendanube](https://www.tiendanube.com). ------------

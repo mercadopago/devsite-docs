@@ -196,7 +196,7 @@ You can also manually synchronize the latest changes in the following way: -----
 ![Payments Installments - Nuvem Shop](/images/nuvemshop/ar_tiendanube_account_installments_cropped.gif)
 ------------
 ----[mlm, mlc, mlu, mpe, mco]----
-![Payments Installments - Nuvem Shop](/images/nuvemshop/mx_tiendanube-account_installments_cropped.gif)
+![Payments Installments - Nuvem Shop](/images/nuvemshop/mx_tiendanube_account_installments_cropped.gif)
 ------------
 
 <p>&nbsp;</p>
@@ -214,4 +214,4 @@ Done! You are offering installment interest-free, assuming the installment charg
 ------------
 
 <!-- -->
-> For more information, visit the ----[mlb]---- [official Nuvemshop site](https://www.nuvemshop.com.br/). ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- [official Tiendanube site](https://www.tiendanube.com/). ------------
+> For more information, visit the ----[mlb]---- [official Nuvemshop site](https://www.nuvemshop.com.br). ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- [official Tiendanube site](https://www.tiendanube.com). ------------

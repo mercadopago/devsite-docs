@@ -142,4 +142,4 @@ E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarif
 ------------
 
 <!-- -->
-> Para mais informação, visite o [site oficial da Nuvemshop](https://www.nuvemshop.com.br/).
+> Para mais informação, visite o ----[mlb]---- [site oficial da Nuvemshop](https://www.nuvemshop.com.br). ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- [site oficial da Nuvemshop](https://www.tiendanube.com). ------------
