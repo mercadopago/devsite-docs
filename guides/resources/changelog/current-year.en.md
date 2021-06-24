@@ -24,6 +24,23 @@ Now you can include Pix as a payment method for Nuvemshop.
 
 ------------
 
+### June 24th
+
+> CHANGELOG
+>
+> Set the time zone of your reports
+>
+> NEWS: FEATURE
+>
+> PRODUCT: REPORTS
+
+The customizable attribute `display_timezone` allows to set the time zone in which a business operates so the reports display the date and time adjusted to such time zone.
+
+If the time zone is not modified, the reports will keep displaying data based on GMT-04.
+
+Go to [Available Balance](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/api#bookmark_configurable_attributes) or [Account Balance](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/api#bookmark_configurable_attributes) reports documentation
+
+
 ### June 10th
 
 > CHANGELOG
@@ -61,6 +78,7 @@ We have released the new version 3.9.0 for Magento 2.
 > GitHub
 >
 > [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.0) for further details regarding this release.
+
 
 ### June 3rd
 

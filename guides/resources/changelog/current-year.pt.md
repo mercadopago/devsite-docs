@@ -6,6 +6,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Junho 2021
 
+
 ----[mlb]----
 
 ### 25 de junho
@@ -23,6 +24,23 @@ Agora você pode incluir Pix como meio de pagamento para Nuvemshop.
 [Ir para a documentação Nuvemshop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/nuvemshop)
 
 ------------
+
+### 24 de junho
+
+> CHANGELOG
+>
+> Configure o fuso horário dos seus relatórios
+>
+> NEWS: FEATURE
+>
+> PRODUCT: RELATÓRIOS
+
+Com o atributo `display_timezone`, é possível configurar o fuso horário em que um determinado negócio funciona. Assim, os relatórios mostrarão as datas e horários de acordo com o fuso em questão.
+
+Os relatórios continuarão mostrando os dados de acordo com o fuso GMT-04 caso o fuso horário não seja ajustado.
+
+Ir para documentação dos relatórios [Dinheiro disponível](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/api#bookmark_atributos_configuráveis) ou [Dinheiro em conta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/api#bookmark_atributos_configuráveis)
+
 
 ### 10 de junho
 
@@ -62,6 +80,7 @@ Lançamos a nova versão 3.9.0 para Magento 2.
 > GitHub
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.0).
+
 
 ### 3 de junho
 
