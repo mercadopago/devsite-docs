@@ -146,7 +146,7 @@ payment_data = {
 }
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
-```   
+```
 ```curl
 
 curl -X POST \
@@ -165,7 +165,6 @@ curl -X POST \
           },
           "capture": "false"
     }'
-```
 ]]]
 
 The response indicates that the payment is authorized and pending to capture.
@@ -184,32 +183,12 @@ The response indicates that the payment is authorized and pending to capture.
 
 It can be rejected or remain pending. Take into account that authorized funds cannot be used by your customer until captured. You need to make the capture as soon as possible.
 
-----[mla, mlm]----
 > WARNING
 >
 > Important
 >
 > * The reserve will be valid for 7 days. If you don't capture it within this term, it will be cancelled.
 > * You need to save the payment ID to complete the process.
-------------
-
-----[mpe]----
-> WARNING
->
-> Important
->
-> * The reserve will be valid for 22 days. If you don't capture it within this term, it will be cancelled.
-> * You need to save the payment ID to complete the process.
-------------
-
-----[mlb]----
-> WARNING
->
-> Important
->
-> * The reserve will be valid for 5 days. If you don't capture it within this term, it will be cancelled.
-> * You need to save the payment ID to complete the process.
-------------
 
 ## Capture an authorized payment
 
@@ -419,6 +398,7 @@ curl -X PUT \
 }
 ```
 
+
 > NOTE
 >
 > Note
@@ -516,16 +496,17 @@ curl -X PUT \
   ...
 }
 ```
+
 ---
 ### Next steps
 
 > LEFT_BUTTON_REQUIRED_EN
 >
-> Requirements to go to production
+> Requirements for the production environment
 >
 > Learn all the requirements needed to start receiving payments.
 >
-> [Requirements to go to production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production)
+> [Requirements for the production environment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >

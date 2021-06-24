@@ -6,10 +6,11 @@ Use our APIs to save your customer's card references and offer them a better exp
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create customers and cards
 
-To create customers and cards, submit the e-mail field, type of payment method, issuing bank ID and generated token.
+To create customers and cards, submit the e-mail field and generated token.
 You will add every customer using the `customer` value, and cards as `card`.
 
 [[[
+
 ```php
 
 <?php
@@ -23,8 +24,6 @@ You will add every customer using the `customer` value, and cards as `card`.
   $card = new MercadoPago\Card();
   $card->token = "9b2d63e00d66a8c721607214cedaecda";
   $card->customer_id = $customer->id();
-  $card->issuer = array("id" => "3245612");
-  $card->payment_method = array("id" => "debit_card");
   $card->save();
 
 ?>
@@ -43,9 +42,7 @@ mercadopago.customers.create(customer_data).then(function (customer) {
 
   var card_data = {
     "token": "9b2d63e00d66a8c721607214cedaecda",
-    "customer": customer.id,
-    "issuer_id": "23",
-    "payment_method_id": "debit_card"
+    "customer": customer.id
   }
 
   mercadopago.cards.create(card_data).then(function (card) {
@@ -64,14 +61,9 @@ Customer customer = new Customer();
 customer.setEmail("john@yourdomain.com");
 customer.save();
 
-Issuer issuer = new Issuer();
-issuer.setId("3245612");
-
 Card card = new Card();
 card.setToken("9b2d63e00d66a8c721607214cedaecda");
 card.setCustomerId(customer.getId());
-card.setIssuer(issuer);
-card.setPaymentMethodId("debit_card");
 card.save();
 
 ```
@@ -88,9 +80,7 @@ customer_response = sdk.customer.create(customer_request)
 customer = customer_response[:response]
 
 card_request = {
-  token: '9b2d63e00d66a8c721607214cedaecda',
-  issuer_id: '3245612',
-  payment_method_id: 'debit_card'
+  token: '9b2d63e00d66a8c721607214cedaecda'
 }
 card_response = sdk.card.create(customer['id'], card_request)
 card = card_response[:response]
@@ -109,7 +99,7 @@ Customer customer = await customerClient.CreateAsync(customerRequest);
 
 var cardRequest = new CustomerCardCreateRequest
 {
-    Token = "9b2d63e00d66a8c721607214cedaecda"
+    Token = "9b2d63e00d66a8c721607214cedaecda",
 };
 CustomerCard card = await customerClient.CreateCardAsync(customer.Id, cardRequest);
 
@@ -126,9 +116,7 @@ customer_response = sdk.customer().create(customer_data)
 customer = customer_response["response"]
 
 card_data = {
-  "token": "9b2d63e00d66a8c721607214cedaecda",
-  "issuer_id": "3245612",
-  "payment_method_id": "debit_card"
+  "token": "9b2d63e00d66a8c721607214cedaecda"
 }
 card_response = sdk.card().create(customer["id"], card_data)
 card = card_response["response"]
@@ -140,9 +128,10 @@ curl -X POST \
     -H 'Content-Type: application/json' \
     -H 'Authorization: Bearer ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
-    -d '{"token": "9b2d63e00d66a8c721607214cedaecda", "issuer_id": "3245612", "payment_method_id": "debit_card"}'
+    -d '{"token": "9b2d63e00d66a8c721607214cedaecda"}'
 
 ```
+
 ]]]
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
@@ -173,20 +162,12 @@ curl -X POST \
 >
 > For correct data, we recommend saving card data after making a successful payment.
 
-
-> WARNING 
-> 
-> Important
-> 
-> If you receive an error message of type `"invalid parameter"` with HTTP 400 status code, make sure you are completing the fields `payment_method_id` and `issuer_id` correctly.
-
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new cards to a customer
 
 To add new cards to a customer, create a token and make a `HTTP POST` to the `customer`.
 
 [[[
 ```php
-
 <?php
 
   MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
@@ -196,8 +177,6 @@ To add new cards to a customer, create a token and make a `HTTP POST` to the `cu
   $card = new MercadoPago\Card();
   $card->token = "9b2d63e00d66a8c721607214cedaecda";
   $card->customer_id = $customer->id;
-  $card->issuer = array("id" => "3245612");
-  $card->payment_method = array("id" => "debit_card");
   $card->save();
 
   print_r($card);
@@ -221,15 +200,14 @@ mercadopago.customers.search({
 }).then(function (customer) {
   card_data = {
     "token": "9b2d63e00d66a8c721607214cedaecda",
-    "customer": customer.id,
-    "issuer_id": "3245612",
-    "payment_method_id": "debit_card"
+    "customer": customer.id
   }
 
   mercadopago.cards.create(card_data).then(function (card) {
     console.log(card);
   });
 });
+
 
 ```
 ```java
@@ -239,14 +217,9 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Customer customer = Customer.load("247711297-jxOV430go9fx2e")
 
-Issuer issuer = new Issuer();
-issuer.setId("3245612");
-
 Card card = new Card();
 card.setToken("9b2d63e00d66a8c721607214cedaecda");
 card.setCustomerId(customer.getID());
-card.setIssuer(issuer);
-card.setPaymentMethodId("debit_card");
 card.save();
 
 System.out.print(card.toString());
@@ -262,9 +235,7 @@ customer_response = sdk.customer.get('247711297-jxOV430go9fx2e')
 customer = customer_response[:response]
 
 card_request = {
-  token: '9b2d63e00d66a8c721607214cedaecda',
-  issuer_id: '3245612',
-  payment_method_id: 'debit_card'
+  token: '9b2d63e00d66a8c721607214cedaecda'
 }
 card_response = sdk.card.create(customer['id'], card_request)
 card = card_response[:response]
@@ -297,9 +268,7 @@ customer_response = sdk.customer().get("247711297-jxOV430go9fx2e")
 customer = customer_response["response"]
 
 card_data = {
-  "token": "9b2d63e00d66a8c721607214cedaecda",
-  "issuer_id": "3245612",
-  "payment_method_id": "debit_card"
+  "token": "9b2d63e00d66a8c721607214cedaecda"
 }
 card_response = sdk.card().create(customer["id"], card_data)
 card = card_response["response"]
@@ -308,7 +277,6 @@ print(card)
 
 ```
 ```curl
-
 curl -X POST \
     -H 'Content-Type: application/json' \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
@@ -319,9 +287,9 @@ curl -X POST \
     -H 'Content-Type: application/json' \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
-    -d '{"token": "9b2d63e00d66a8c721607214cedaecda", "issuer_id": "3245612", "payment_method_id":"debit_card"}'
-
+    -d '{"token": "9b2d63e00d66a8c721607214cedaecda"}'
 ```
+
 ]]]
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
@@ -428,8 +396,8 @@ cards = cards_response["response"]
 curl -X GET \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
-
 ```
+
 ]]]
 
 Saved card data response:
@@ -449,47 +417,61 @@ And you can prepare the form like this:
 
 ```html
 <li>
-    <label>Payment Method:</label>
-    <select id="cardId" name="cardId" data-checkout='cardId'>
-    <?php foreach ($cards["response"] as $card) { ?>
-        <option value="<?php echo $card["id"]; ?>"
-            first_six_digits="<?php echo $card["first_six_digits"]; ?>"
-            security_code_length="<?php echo $card["security_code"]["length"]; ?>">
-                <?php echo $card["payment_method"]["name"]; ?> ended in <?php echo $card["last_four_digits"]; ?>
-        </option>
-    <?php } ?>
-    </select>
+   <label>Payment Method:</label>
+   <select id="cardId" name="cardId"></select>
 </li>
 <li id="cvv">
-    <label for="cvv">Security code:</label>
-    <input type="text" id="cvv" data-checkout="securityCode" placeholder="123" />
+   <label for="cvv">Security code:</label>
+   <input type="text" id="cvv" placeholder="123" />
 </li>
+<script>
+   const customerCards = [{
+       "id": "3502275482333",
+       "last_four_digits": "9999",
+       "payment_method": {
+           "name": "amex",
+       },
+       "security_code": {
+           "length": 4,
+       }
+   }];
+
+   // Append customer cards to select element
+   const selectElement = document.getElementById('cardId');
+   const tmpFragment = document.createDocumentFragment();
+   customerCards.forEach(({id, last_four_digits, payment_method}) => {
+       const optionElement = document.createElement('option');
+       optionElement.setAttribute('value', id)
+       optionElement.textContent = `${payment_method.name} ended in ${last_four_digits}`
+       tmpFragment.appendChild(optionElement);
+   })
+   selectElement.appendChild(tmpFragment)
+</script>
 ```
 <br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Capture security code
 
-> INFO
->
-> New MercadoPago.js version
->
-> Use MercadoPago .js V2 library to create your card form and to auto generate your business logics needed to make the payment.<br><br>[Integrate Checkout API with MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/advanced-integration)
-
 The customer needs to enter the security code in a flow similar to [card data capture](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card/#bookmark_card_data_capture). You need to create a token by submitting the form with card ID and security code.
 
 ```javascript
-doSubmit = false;
-addEvent(document.querySelector('#pay'),'submit', doPay);function doPay(event){
-    event.preventDefault();
-    if(!doSubmit){
-        var $form = document.querySelector('#pay');
+(async function createToken() {
+       try {
+           const token = await mp.createCardToken({
+               cardId: document.getElementById('cardId').value,
+               securityCode: document.getElementById('cvv').value,
+           })
 
-        Mercadopago.createToken($form, sdkResponseHandler);
-
-        return false;
-    }
-};
+            // Use the received token to make a POST request to your backend
+           console.log('token received: ', token.id)
+       }catch(e) {
+           console.error('error creating token: ', e)
+       }
+   })()
 ```
+
+> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/advanced-integration).
+
 <br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Create payment
@@ -635,6 +617,7 @@ curl -X POST \
 }'
 
 ```
+
 ]]]
 
 
@@ -718,6 +701,7 @@ curl -X GET \
 }'
 
 ```
+
 ]]]
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
@@ -823,6 +807,7 @@ curl -X GET \
   'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
 
 ```
+
 ]]]
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
