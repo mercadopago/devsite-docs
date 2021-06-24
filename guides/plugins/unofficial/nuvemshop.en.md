@@ -98,7 +98,7 @@ You also have the option to offer [interest-free installments](#bookmark_set_int
 
 ### Transparent Checkout
 
-It allows the **client to complete the purchase on your site**, without being redirected ----[mlb]---- and making it possible to receive payments with credit card, boleto, Pix and Checkout Pro ------------.
+It allows the **client to complete the purchase on your site**, without being redirected ----[mlb]----and making it possible to receive payments with credit card, boleto, Pix and Checkout Pro------------.
 
 ----[mlb]----
 > WARNING
