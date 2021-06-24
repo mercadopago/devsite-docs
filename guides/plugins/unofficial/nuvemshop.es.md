@@ -74,7 +74,7 @@ Para **vincular tu cuenta de Mercado Pago a Tiendanube**, sigue estos pasos:
 
 **Elige cómo integrar Mercado Pago en tu tienda.** Puedes [recibir los pagos directamente en tu tienda](#bookmark_checkout_transparente) o cobrar a través del [sitio de Mercado Pago](#bookmark_checkout_pro). Solo es posible activar una de las dos opciones.
 
-También tienes la opción de [ofrecer cuotas sin interés](#bookmark_configura_las_cuotas_sin_interés_en_tu_cuenta_de_mercado_pago) y configurar las [tasas y plazos](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options) de tus ventas online cuando quieras.
+También tienes la opción de ----[mlm]---- [ofrecer cuotas sin interés](#bookmark_configura_las_cuotas_sin_interés_en_tu_cuenta_de_mercado_pago) ------------ ----[mla, mlb, mlc, mlu, mpe, mco]---- [ofrecer mensualidades sin interés](#bookmark_configura_las_mensualidades_sin_interés_en_tu_cuenta_de_mercado_pago) ------------ y configurar las [tasas y plazos](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options) de tus ventas online cuando quieras.
 
 
 ### Checkout Transparente
