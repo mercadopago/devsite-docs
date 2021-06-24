@@ -36,7 +36,7 @@ Para **vincular tu cuenta de Mercado Pago a Tiendanube**, sigue estos pasos:
 
 1. Accede a las ----[mlb]---- [configuraciones de medios de pago](https://lojavirtualnuvem.com.br/admin/payments/) ------------ ----[mla, mlm, mlc, mlu, mpe, mco]---- [configuraciones de medios de pago](https://mitiendanube.com/admin/payments/) ------------ en el menú de tu tienda.
 2. Busca en la lista de medios de pago a Mercado Pago.
-3. Haz clic en "Configurar" y luego en "Activar"
+3. Haz clic en "Configurar" y luego en "Activar".
 4. Vas a ser redirigido a Mercado Pago para que ingreses con los datos de tu cuenta. Para autorizar la conexión, haz clic en "Permitir".
 <p>&nbsp;</p>
 ----[mlb]----
