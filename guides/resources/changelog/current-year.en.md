@@ -6,6 +6,23 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## June 2021
 
+----[mlb]----
+
+### June 25th
+
+> CHANGELOG
+>
+> New Pix payment method for Nuvemshop
+>
+> NEWS: FEATURE
+>
+> PRODUCT: NUVEMSHOP
+
+Now you can include Pix as a payment method for Nuvemshop.
+
+[Go to Nuvemshop documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/nuvemshop)
+
+------------
 
 ### June 24th
 
@@ -22,6 +39,7 @@ The customizable attribute `display_timezone` allows to set the time zone in whi
 If the time zone is not modified, the reports will keep displaying data based on GMT-04.
 
 Go to [Available Balance](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/api#bookmark_configurable_attributes) or [Account Balance](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/api#bookmark_configurable_attributes) reports documentation
+
 
 ### June 10th
 
@@ -42,7 +60,6 @@ We have released the new version 4.6.1 for PrestaShop.
 > GitHub
 >
 > [Check GitHub](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.6.1) for further details regarding this release.
-
 
 > CHANGELOG
 >
