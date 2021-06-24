@@ -39,7 +39,7 @@ Com o atributo `display_timezone`, é possível configurar o fuso horário em qu
 
 Os relatórios continuarão mostrando os dados de acordo com o fuso GMT-04 caso o fuso horário não seja ajustado.
 
-Ir para documentação dos relatórios [Dinheiro disponível](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/api#bookmark_atributos_configuráveis) ou [Dinheiro em conta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/api#bookmark_atributos_configuráveis)
+Ir para documentação dos relatórios [Dinheiro disponível](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/api#bookmark_atributos_configuráveis) ou [Dinheiro em conta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/api#bookmark_atributos_configuráveis).
 
 
 ### 10 de junho
