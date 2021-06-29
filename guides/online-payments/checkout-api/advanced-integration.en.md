@@ -1108,6 +1108,7 @@ Ejemplo de respuesta al request sin el parametro `customers_id`:
   "message": "missing customer id"
 }
 ```
+
 > NOTE
 >
 > Nota
