@@ -6,6 +6,41 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Junio 2021
 
+
+----[mlb]----
+
+### 25 de junio
+
+> CHANGELOG
+>
+> Nuevo medio de pago Pix para Nuvemshop
+>
+> NEWS: FEATURE
+>
+> PRODUCT: NUVEMSHOP
+
+Ahora puedes incluir Pix como método de pago para Nuvemshop.
+
+[Ir a documentación de Nuvemshop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/nuvemshop)
+
+------------
+
+### 24 de junio
+
+> CHANGELOG
+>
+> Configura la zona horaria de tus reportes
+>
+> NEWS: FEATURE
+>
+> PRODUCT: REPORTES
+
+El atributo configurable `display_timezone` permite configurar la zona horaria en la que opera un negocio para que los reportes muestren la fecha y la hora ajustadas a dicha zona.
+
+De no modificar la zona horaria, los reportes seguirán mostrando los datos en GMT-04.
+
+Ir a documentación de los reportes [Dinero retirado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/api#bookmark_atributos_configurables) o [Todas las transacciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/api#bookmark_atributos_configurables).
+
 ### 10 de junio
 
 > CHANGELOG
@@ -26,7 +61,6 @@ Lanzamos la nueva versión 4.6.1 para PrestaShop.
 >
 > Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.6.1).
 
-
 > CHANGELOG
 >
 > Nueva versión Magento 2
@@ -44,6 +78,7 @@ Lanzamos la nueva versión 3.9.0 para Magento 2.
 > GitHub
 >
 > Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.0).
+
 
 ### 3 de junio
 

@@ -88,6 +88,7 @@ Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
     "coupon_detailed": true,
     "shipping_detail": true,
     "refund_detailed": true,
+    "display_timezone": "GMT-04",
     "frequency": {
         "hour": 0,
         "type": "monthly",
@@ -119,9 +120,17 @@ curl -X POST \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/account/settlement_report/config' \
     -d '{
-            "file_name_prefix": "bank-report-USER_ID",
-            "include_withdrawal_at_end": false,
-            "execute_after_withdrawal": true,
+            "file_name_prefix": "settlement-report-USER_ID",
+            "show_fee_prevision": false,
+            "show_chargeback_cancel": true,
+            "coupon_detailed": true,
+            "shipping_detail": true,
+            "refund_detailed": true,
+            "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -156,6 +165,11 @@ $data = '{
             "coupon_detailed": true,
             "shipping_detail": true,
             "refund_detailed": true,
+            "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -194,6 +208,11 @@ String body = "{
                     \\"coupon_detailed\\": true,
                     \\"shipping_detail\\": true,
                     \\"refund_detailed\\": true,
+                    \\"display_timezone\\": \\"GMT-04\\",
+                    \\"notification_email_list\\": [
+                        \\"example@email.com\\",
+                        \\"john@example.com\\",
+                    ],
                     \\"frequency\\": {
                         \\"hour\\": 0,
                         \\"type\\": \\"monthly\\",
@@ -231,6 +250,11 @@ data = '{
             "coupon_detailed": true,
             "shipping_detail": true,
             "refund_detailed": true,
+            "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -267,6 +291,11 @@ var dataString = '{
             "coupon_detailed": true,
             "shipping_detail": true,
             "refund_detailed": true,
+            "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -313,6 +342,11 @@ Como resposta, você receberá um `HTTP STATUS 201 (Created)`
     "coupon_detailed": true,
     "shipping_detail": true,
     "refund_detailed": true,
+    "display_timezone": "GMT-04",
+    "notification_email_list": [
+        "example@email.com",
+        "john@example.com"
+    ],
     "frequency": {
         "hour": 0,
         "type": "monthly",
@@ -351,6 +385,11 @@ curl -X PUT \
         "coupon_detailed": true,
         "shipping_detail": true,
         "refund_detailed": true,
+        "display_timezone": "GMT-04",
+        "notification_email_list": [
+            "example@email.com",
+            "john@example.com"
+        ],
         "frequency": {
             "hour": 0,
             "type": "monthly",
@@ -385,6 +424,11 @@ $data = '{
         "coupon_detailed": true,
         "shipping_detail": true,
         "refund_detailed": true,
+        "display_timezone": "GMT-04",
+        "notification_email_list": [
+            "example@email.com",
+            "john@example.com"
+        ],
         "frequency": {
             "hour": 0,
             "type": "monthly",
@@ -423,6 +467,11 @@ String body = "{
                     \\"coupon_detailed\\": true,
                     \\"shipping_detail\\": true,
                     \\"refund_detailed\\": true,
+                    \\"display_timezone\\": \\"GMT-04\\",
+                    \\"notification_email_list\\": [
+                        \\"example@email.com\\",
+                        \\"john@example.com\\",
+                    ],
                     \\"frequency\\": {
                         \\"hour\\": 0,
                         \\"type\\": \\"monthly\\",
@@ -460,6 +509,11 @@ data = '{
             "coupon_detailed": true,
             "shipping_detail": true,
             "refund_detailed": true,
+            "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
@@ -496,6 +550,11 @@ var dataString = '{
         "coupon_detailed": true,
         "shipping_detail": true,
         "refund_detailed": true,
+        "display_timezone": "GMT-04",
+        "notification_email_list": [
+            "example@email.com",
+            "john@example.com"
+        ],
         "frequency": {
             "hour": 0,
             "type": "monthly",
@@ -543,6 +602,11 @@ Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
     "coupon_detailed": true,
     "shipping_detail": true,
     "refund_detailed": true,
+    "display_timezone": "GMT-04",
+    "notification_email_list": [
+        "example@email.com",
+        "john@example.com"
+    ],
     "frequency": {
         "hour": 0,
         "type": "monthly",
@@ -574,9 +638,11 @@ Confira os campos que você pode configurar para ajustar suas preferências ante
 | `columns` | <br/>Campo com os detalhes das colunas a serem incluídas no seu relatório. Encontre todos os valores possíveis na seção [Glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/glossary).<br/><br/>|
 | `file_name_prefix` | <br/>Prefixo que compõe o nome do relatório assim que estiver gerado e pronto para baixar.<br/><br/> |
 | `frequency` | <br/>Indica a frequência diária, semanal ou mensal dos relatórios programados.<br/><br/> - `frequency` aplica type *monthly* ao dia do mês ou weekly ao dia da semana<br/> - `hour` hora do dia que o relatório deve ser gerado <br/> - `type` indica o tipo de frequência: *daily* (diária), *weekly* (semanal) e *monthly* (mensal).<br/><br/> |
+| `display_timezone` (opcional) | <br/>Este campo determina a data e o horário mostrados nos relatórios. Se você não configurar um fuso horário para esse campo, o sistema considerará o fuso GMT-04 como padrão. Caso escolha um fuso que adote horário de verão, você precisará fazer o ajuste manual quando o horário mudar.<br/><br/> |
 | *`refund_detailed` (opcional)* | <br/>Mostra o código de referência (`external_reference`) do reembolso em vez do código de referência (`external_reference`) do pagamento.<br/><br/> |
 | `scheduled` (read_only) | <br/>Campo informativo que indica se já existem relatórios programados na conta do usuário.<br/><br/> |
 | *`separator` (opcional)* | <br/>Separador que pode ser usado no arquivo .csv quando não quiser que o separador seja uma vírgula. <br/><br/> |
+| `notification_email_list` (opcional) | <br/>Permite adicionar um grupo de destinatários de e-mail para que recebam uma notificação quando um relatório estiver pronto e disponível para download. Certifique-se de incluir o e-mail associado à sua conta Mercado Pago para que você também receba as notificações.<br/><br/> |
 | *`sftp_info` (opcional)* | <br/>Indica os dados para subir a SFTP quando precisar.<br/><br/> |
 | *`shipping_detail` (opcional)* | <br/> Inclui os detalhes dos envios. <br/> <br/>|
 | *`show_chargeback_cancel` (opcional)* | <br/> Inclui os detalhes dos cancelamentos das contestações. <br/> <br/>|
