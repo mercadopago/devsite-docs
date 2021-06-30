@@ -667,20 +667,20 @@ Respuesta:
 ```
 ## Modificar un Customer
 
-Para modificar un customer es necesario enviar el customer_id, el token y los campos que se vayan a modificar. Realizando un solicitud `HTTP PUT`.
+Para modificar un cliente es necesario enviar el `customer_id` y los campos que se quieran actualizar en una solicitud `HTTP PUT`. 
 
-Campos que pueden modificarse:
-Atributo | Información
--------- | -----------
-address | Información sobre la dirección por defecto del cliente
-default_address | Dirección por defecto del cliente
-default_card | Tarjeta por defecto del cliente
-description | Descripción del cliente
-email | Email del cliente
-first_name | Nombre del cliente
-last_name | Apellido del cliente
-phone | Teléfono del cliente
-identification | Tipo de Documentación y Numero
+Los campos que se pueden modificar de un cliente son:
+| Atributo | Descripción |
+| -------- | ----------- |
+| `address` | Dirección. |
+| `default_address` | Dirección por defecto. |
+| `default_card` | Tarjeta por defecto. |
+| `description` | Descripción. |
+| `email` | E-mail de la cuenta. |
+| `first_name` | Nombre. |
+| `last_name` | Apellido. |
+| `phone` | Teléfono registrado. |
+| `identification` | Tipo de documento y número. |
 
 [[[
 ```php
@@ -693,11 +693,11 @@ identification | Tipo de Documentación y Numero
   $customer->email = "user@user.com";
   $customer->first_name = "john";
   $customer->last_name = "wagner";
-  $customer->phone = array("area_code" => "11", "number" => "001234567");
-  $customer->identification = array("type" => "DNI", "number" => "12341234");
+  $customer->phone = array("area_code" => "[FAKER][PHONE_NUMBER][AREA_CODE]", "number" => "001234567");
+  $customer->identification = array("type" => "[FAKER][IDENTIFICATION][TYPE]", "number" => "12341234");
   $customer->default_address = "Home";
-  $customer->address = array("zip_code" => "12345678", "street_name" => "street_name", "street_number" => "2");
-  $customer->description = "esta es mi informacion";
+  $customer->address = array("zip_code" => "[FAKER][ADDRESS][ZIP_CODE]", "street_name" => "[FAKER][ADDRESS][STREET_NAME]", "street_number" => "2");
+  $customer->description = "Información del cliente";
   $customer->default_card = "None";
   $customer->update();
 
@@ -713,23 +713,23 @@ mercadopago.configure({
 
 var customer_data = { 
   "email": "test@test.com",
-  "first_name": ,
-  "last_name": ,
+  "first_name": "john" ,
+  "last_name": "wagner",
   "phone": {
-    "area_code": "11",
+    "area_code": "[FAKER][PHONE_NUMBER][AREA_CODE]",
     "number": "001234567"
   },
   "identification": {
-    "type": "DNI",
+    "type": "[FAKER][IDENTIFICATION][TYPE]",
     "number": "12341234"
   }, 
   "default_address": "Home",
   "address": {
-    "zip_code": "12345678"
-    "street_name": "street_name"
+    "zip_code": "[FAKER][ADDRESS][ZIP_CODE]"
+    "street_name": "[FAKER][ADDRESS][STREET_NAME]"
     "street_number": "2"
   },
-  "description": "esta es mi informacion"
+  "description": "Información del cliente"
   "default_card": "None
  }
 
@@ -745,16 +745,16 @@ import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Phone phone = new Phone();
-phone.setAreaCode("11");
+phone.setAreaCode("[FAKER][PHONE_NUMBER][AREA_CODE]");
 phone.setNumber("001234567");
 
 DefaultAddress defaultAddress = new DefaultAddress();
-defaultAddress.setZipCode("12345678");
-defaultAddress.setStreetName("street_name");
+defaultAddress.setZipCode("[FAKER][ADDRESS][ZIP_CODE]");
+defaultAddress.setStreetName("[FAKER][ADDRESS][STREET_NAME]");
 defaultAddress.setStreetNumber(2);
 
 Identification identification = new Identification();
-identification.setType("DNI");
+identification.setType("[FAKER][IDENTIFICATION][TYPE]");
 identification.setNumber(12341234)
 
 Customer customer = new Customer();
@@ -764,7 +764,7 @@ customer.setLastName("wagner");
 customer.setDefaultAddress("Home");
 customer.setPhone(phone);
 customer.setIdentification(identification)
-customer.setDescription("esta es mi informacion");
+customer.setDescription("Información del cliente");
 customer.setDefaultCard("None")
 cusotmer.setAddress(defaultAddress)
 customer.update();
@@ -782,19 +782,19 @@ customer_request = {
   last_name: 'wagner',
   default_address: 'home',
   phone: {
-    area_code: '11',
+    area_code: '[FAKER][PHONE_NUMBER][AREA_CODE]',
     number: '001234567'
   },
   identification: {
-    type: 'DNI',
+    type: '[FAKER][IDENTIFICATION][TYPE]',
     number: '12341234'
   },
   address: {
-    zip_code: '12345678',
-    street_name: 'street_name',
+    zip_code: '[FAKER][ADDRESS][ZIP_CODE]',
+    street_name: '[FAKER][ADDRESS][STREET_NAME]',
     street_number: '2'
   },
-  description: 'esta es mi informacion',
+  description: 'Información del cliente',
   default_card: 'None'
 }
 customer_response = sdk.customer.update(customer_id ,customer_request)
@@ -806,20 +806,20 @@ customer = customer_response[:response]
 MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 var phoneRequest = new PhoneRequest
 {
-  AreaCode = "11",
+  AreaCode = "[FAKER][PHONE_NUMBER][AREA_CODE]",
   Number = "001234567"
 };
 
 var identificationRequest = new IdentificationRequest
 {
-  Type = "DNI",
+  Type = "[FAKER][IDENTIFICATION][TYPE]",
   Number = "12341234"
 };
 
 var addressRequest = new AddressRequest
 {
-  ZipCode = "12345678",
-  StreetName = "street_name",
+  ZipCode = "[FAKER][ADDRESS][ZIP_CODE]",
+  StreetName = "[FAKER][ADDRESS][STREET_NAME]",
   StreetNumber = "2"
 };
 
@@ -829,7 +829,7 @@ var customerRequest = new CustomerRequest
     FirstName = "john",
     LastName = "wagner",
     DefaultAddress = "home",
-    Description = "esta es mi informacion",
+    Description = "Información del cliente",
     DefaultCard = "None"
     Phone = phoneRequest,
     Identification = identificationRequest,
@@ -851,19 +851,19 @@ customer_data = {
   "last_name": 'wagner',
   "default_address": 'home',
   "phone": {
-    "area_code": '11',
+    "area_code": '[FAKER][PHONE_NUMBER][AREA_CODE]',
     "number": '001234567'
   },
   "identification": {
-    "type": 'DNI',
+    "type": '[FAKER][IDENTIFICATION][TYPE]',
     "number": '12341234'
   },
   "address": {
-    "zip_code": '12345678',
-    "street_name": 'street_name',
+    "zip_code": '[FAKER][ADDRESS][ZIP_CODE]',
+    "street_name": '[FAKER][ADDRESS][STREET_NAME]',
     "street_number": '2'
   },
-  "description": 'esta es mi informacion',
+  "description": 'Información del cliente',
   "default_card": 'None'
 }
 customer_response = sdk.customer().update(customer_id, customer_data)
@@ -879,48 +879,46 @@ curl -X PUT \
   "email": "user@user.com",
   "first_name": "john",
   "last_name": "wagner",
-  "default_address": 'home',
   "address": {
-    "zip_code": "12345678",
-    "street_name": "street_name",
+    "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
+    "street_name": "[FAKER][ADDRESS][STREET_NAME]",
     "street_number": "2"
   },
   "phone": {
-    "area_code": "11",
+    "area_code": "[FAKER][PHONE_NUMBER][AREA_CODE]",
     "number": "001234567"
   },
   "identification": {
-    "type": "DNI",
+    "type": "[FAKER][IDENTIFICATION][TYPE]",
     "number": "12341234"
   },
-  "description": "esta es mi información",
-  "default_card": 'None' 
+  "description": "Información del cliente" 
 }'
 
 ```
 ]]]
 
-Ejemplo de respuesta:
+Ejemplo de respuesta con el envío del `customer_id`:
 ```json
 {
   "id": "xxxxxxxxxxxxxxxxxxxxx",
   "email": "user@user.com",
-  "first_name": "nombre",
-  "last_name": "surname",
+  "first_name": "john",
+  "last_name": "wagner",
   "phone": {
-    "area_code": "11",
+    "area_code": "[FAKER][PHONE_NUMBER][AREA_CODE]",
     "number": 001234567
   },
   "identification": {
-    "type": "DNI",
+    "type": "[FAKER][IDENTIFICATION][TYPE]",
     "number": 12341234
   },
   "address": {
-    "zip_code": "12345678",
-    "street_name": "street_name",
+    "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
+    "street_name": "[FAKER][ADDRESS][STREET_NAME]",
     "street_number": 2
   },
-  "description": "esta es mi información",
+  "description": "Información del cliente",
   "date_created": "2021-05-25T15:36:23.541Z",
   "metadata": {},
   "cards": [
@@ -931,8 +929,14 @@ Ejemplo de respuesta:
   ]
 }
 ```
+Ejemplo de respuesta sin incluir el parámetro `customers_id`:
+```json
+{
+  "message": "missing customer id"
+}
+```
 > NOTE
 >
 > Nota
 >
-> De no enviar el parametro customer_id, se obtendra como resultado el mensaje `missing customer id`, ó si el parametro es equivocado retornará `customer id not found`.(en caso de no pueder identificar el ID, recurra a la API de `Customer Search` generando un request `HTTP GET`, enviando el parametro `email`)
+> Si no tienes el `customer_id`, [consulta la API de Clientes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/customers/_customers_search/get) y genera una solicitud `HTTP GET` utilizando el parámetro `email` para obtenerlo.
