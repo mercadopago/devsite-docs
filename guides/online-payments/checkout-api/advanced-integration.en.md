@@ -902,7 +902,7 @@ var customer_data = {
     "street_name": "[FAKER][ADDRESS][STREET_NAME]",
     "street_number": "2"
   },
-  "description": "Información del cliente",
+  "description": "Customer information",
   "default_card": "None
  }
 
@@ -937,7 +937,7 @@ customer.setLastName("wagner");
 customer.setDefaultAddress("Home");
 customer.setPhone(phone);
 customer.setIdentification(identification);
-customer.setDescription("Información del cliente");
+customer.setDescription("Customer information");
 customer.setDefaultCard("None");
 cusotmer.setAddress(defaultAddress);
 customer.update();
@@ -1002,7 +1002,7 @@ var customerRequest = new CustomerRequest
     FirstName = "john",
     LastName = "wagner",
     DefaultAddress = "home",
-    Description = "Información del cliente",
+    Description = "Customer information",
     DefaultCard = "None",
     Phone = phoneRequest,
     Identification = identificationRequest,
