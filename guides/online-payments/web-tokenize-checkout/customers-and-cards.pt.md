@@ -660,22 +660,22 @@ Retorno:
 	...
 }]
 ```
-## Modificar un Customer
+## Modificar um cliente
 
-Para modificar un cliente es necesario enviar el `customer_id` y los campos que se quieran actualizar en una solicitud `HTTP PUT`. 
+Para modificar um cliente é necessário enviar o `customer_id` e os campos a serem atualizados em uma solicitação `HTTP PUT`.
 
-Los campos que se pueden modificar de un cliente son:
-| Atributo | Descripción |
+Os campos que podem ser modificados de um cliente são:
+| Atributo | Descrição |
 | -------- | ----------- |
-| `address` | Dirección. |
-| `default_address` | Dirección por defecto. |
-| `default_card` | Tarjeta por defecto. |
-| `description` | Descripción. |
-| `email` | E-mail de la cuenta. |
-| `first_name` | Nombre. |
-| `last_name` | Apellido. |
-| `phone` | Teléfono registrado. |
-| `identification` | Tipo de documento y número. |
+| `address` | Endereço. |
+| `default_address` | Endereço padrão. |
+| `default_card` | Cartão padrão. |
+| `description` | Descrição. |
+| `email` | E-mail da conta. |
+| `first_name` | Nome. |
+| `last_name` | Sobrenome. |
+| `phone` | Telefone cadastrado. |
+| `identification` | Tipo e número do documento. |
 
 [[[
 ```php
@@ -690,9 +690,9 @@ Los campos que se pueden modificar de un cliente son:
   $customer->last_name = "wagner";
   $customer->phone = array("area_code" => "[FAKER][PHONE_NUMBER][AREA_CODE]", "number" => "001234567");
   $customer->identification = array("type" => "[FAKER][IDENTIFICATION][TYPE]", "number" => "12341234");
-  $customer->default_address = "Home";
+  $customer->default_address = "Casa";
   $customer->address = array("zip_code" => "[FAKER][ADDRESS][ZIP_CODE]", "street_name" => "[FAKER][ADDRESS][STREET_NAME]", "street_number" => "2");
-  $customer->description = "Información del cliente";
+  $customer->description = "Informações do cliente";
   $customer->default_card = "None";
   $customer->update();
 
@@ -718,7 +718,7 @@ var customer_data = {
     "type": "[FAKER][IDENTIFICATION][TYPE]",
     "number": "12341234"
   }, 
-  "default_address": "Home",
+  "default_address": "Casa",
   "address": {
     "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
     "street_name": "[FAKER][ADDRESS][STREET_NAME]",
@@ -756,7 +756,7 @@ Customer customer = new Customer();
 customer.setEmail("user@user.com");
 customer.setFirstName("john");
 customer.setLastName("wagner");
-customer.setDefaultAddress("Home");
+customer.setDefaultAddress("Casa");
 customer.setPhone(phone);
 customer.setIdentification(identification);
 customer.setDescription("Información del cliente");
@@ -775,7 +775,7 @@ customer_request = {
   email: 'user@user.com',
   first_name: 'john',
   last_name: 'wagner',
-  default_address: 'home',
+  default_address: 'Casa',
   phone: {
     area_code: '[FAKER][PHONE_NUMBER][AREA_CODE]',
     number: '001234567'
@@ -789,7 +789,7 @@ customer_request = {
     street_name: '[FAKER][ADDRESS][STREET_NAME]',
     street_number: '2'
   },
-  description: 'Información del cliente',
+  description: 'Informações do cliente',
   default_card: 'None'
 }
 customer_response = sdk.customer.update(customer_id ,customer_request)
@@ -844,7 +844,7 @@ customer_data = {
   "email": 'user@user.com',
   "first_name": 'john',
   "last_name": 'wagner',
-  "default_address": 'home',
+  "default_address": 'Casa',
   "phone": {
     "area_code": '[FAKER][PHONE_NUMBER][AREA_CODE]',
     "number": '001234567'
@@ -858,7 +858,7 @@ customer_data = {
     "street_name": '[FAKER][ADDRESS][STREET_NAME]',
     "street_number": '2'
   },
-  "description": 'Información del cliente',
+  "description": 'Informações do cliente',
   "default_card": 'None'
 }
 customer_response = sdk.customer().update(customer_id, customer_data)
@@ -887,13 +887,13 @@ curl -X PUT \
     "type": "[FAKER][IDENTIFICATION][TYPE]",
     "number": "12341234"
   },
-  "description": "Información del cliente" 
+  "description": "Informações do cliente" 
 }'
 
 ```
 ]]]
 
-Ejemplo de respuesta con el envío del `customer_id`:
+Exemplo de resposta com o envio do `customer_id`:
 ```json
 {
   "id": "xxxxxxxxxxxxxxxxxxxxx",
@@ -913,7 +913,7 @@ Ejemplo de respuesta con el envío del `customer_id`:
     "street_name": "[FAKER][ADDRESS][STREET_NAME]",
     "street_number": 2
   },
-  "description": "Información del cliente",
+  "description": "Informações do cliente",
   "date_created": "2021-05-25T15:36:23.541Z",
   "metadata": {},
   "cards": [
@@ -924,7 +924,7 @@ Ejemplo de respuesta con el envío del `customer_id`:
   ]
 }
 ```
-Ejemplo de respuesta sin incluir el parámetro `customers_id`:
+Exemplo de resposta sem o parâmetro `customers_id`:
 ```json
 {
   "message": "missing customer id"
@@ -934,4 +934,4 @@ Ejemplo de respuesta sin incluir el parámetro `customers_id`:
 >
 > Nota
 >
-> Si no tienes el `customer_id`, [consulta la API de Clientes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/customers/_customers_search/get) y genera una solicitud `HTTP GET` utilizando el parámetro `email` para obtenerlo.
+> Se você não tiver o `customer_id`, [verifique a API de Clientes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/customers/_customers_search/get) e gere uma solicitação` HTTP GET` usando o parâmetro `email` para obtê-lo.
