@@ -898,11 +898,11 @@ var customer_data = {
   }, 
   "default_address": "Home",
   "address": {
-    "zip_code": "[FAKER][ADDRESS][ZIP_CODE]"
-    "street_name": "[FAKER][ADDRESS][STREET_NAME]"
+    "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
+    "street_name": "[FAKER][ADDRESS][STREET_NAME]",
     "street_number": "2"
   },
-  "description": "Información del cliente"
+  "description": "Información del cliente",
   "default_card": "None
  }
 
@@ -928,7 +928,7 @@ defaultAddress.setStreetNumber(2);
 
 Identification identification = new Identification();
 identification.setType("[FAKER][IDENTIFICATION][TYPE]");
-identification.setNumber(12341234)
+identification.setNumber(12341234);
 
 Customer customer = new Customer();
 customer.setEmail("user@user.com");
@@ -936,10 +936,10 @@ customer.setFirstName("john");
 customer.setLastName("wagner");
 customer.setDefaultAddress("Home");
 customer.setPhone(phone);
-customer.setIdentification(identification)
+customer.setIdentification(identification);
 customer.setDescription("Información del cliente");
-customer.setDefaultCard("None")
-cusotmer.setAddress(defaultAddress)
+customer.setDefaultCard("None");
+cusotmer.setAddress(defaultAddress);
 customer.update();
 
 ```
@@ -1003,7 +1003,7 @@ var customerRequest = new CustomerRequest
     LastName = "wagner",
     DefaultAddress = "home",
     Description = "Información del cliente",
-    DefaultCard = "None"
+    DefaultCard = "None",
     Phone = phoneRequest,
     Identification = identificationRequest,
     Address = addressRequest
