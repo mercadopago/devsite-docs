@@ -695,7 +695,7 @@ Los campos que se pueden modificar de un cliente son:
   $customer->last_name = "wagner";
   $customer->phone = array("area_code" => "[FAKER][PHONE_NUMBER][AREA_CODE]", "number" => "001234567");
   $customer->identification = array("type" => "[FAKER][IDENTIFICATION][TYPE]", "number" => "12341234");
-  $customer->default_address = "Home";
+  $customer->default_address = "Casa";
   $customer->address = array("zip_code" => "[FAKER][ADDRESS][ZIP_CODE]", "street_name" => "[FAKER][ADDRESS][STREET_NAME]", "street_number" => "2");
   $customer->description = "Información del cliente";
   $customer->default_card = "None";
@@ -723,7 +723,7 @@ var customer_data = {
     "type": "[FAKER][IDENTIFICATION][TYPE]",
     "number": "12341234"
   }, 
-  "default_address": "Home",
+  "default_address": "Casa",
   "address": {
     "zip_code": "[FAKER][ADDRESS][ZIP_CODE]"
     "street_name": "[FAKER][ADDRESS][STREET_NAME]"
@@ -761,7 +761,7 @@ Customer customer = new Customer();
 customer.setEmail("user@user.com");
 customer.setFirstName("john");
 customer.setLastName("wagner");
-customer.setDefaultAddress("Home");
+customer.setDefaultAddress("Casa");
 customer.setPhone(phone);
 customer.setIdentification(identification)
 customer.setDescription("Información del cliente");
@@ -780,7 +780,7 @@ customer_request = {
   email: 'user@user.com',
   first_name: 'john',
   last_name: 'wagner',
-  default_address: 'home',
+  default_address: 'Casa',
   phone: {
     area_code: '[FAKER][PHONE_NUMBER][AREA_CODE]',
     number: '001234567'
@@ -828,7 +828,7 @@ var customerRequest = new CustomerRequest
     Email = "test@test.com",
     FirstName = "john",
     LastName = "wagner",
-    DefaultAddress = "home",
+    DefaultAddress = "Casa",
     Description = "Información del cliente",
     DefaultCard = "None"
     Phone = phoneRequest,
@@ -849,7 +849,7 @@ customer_data = {
   "email": 'user@user.com',
   "first_name": 'john',
   "last_name": 'wagner',
-  "default_address": 'home',
+  "default_address": 'Casa',
   "phone": {
     "area_code": '[FAKER][PHONE_NUMBER][AREA_CODE]',
     "number": '001234567'
