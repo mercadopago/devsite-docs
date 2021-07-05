@@ -247,19 +247,6 @@ paths:
                         number:
                           type: string
                           description: Identification number.
-                    phone:
-                      type: object
-                      description: Phone of the associated payer.
-                      properties:
-                        area_code:
-                          type: string
-                          description: Phone area code.
-                        number:
-                          type: string
-                          description: Phone number.
-                        extension:
-                          type: string
-                          description: Phone number's extension.
                     first_name:
                       type: string
                       description: First name of the associated payer.
