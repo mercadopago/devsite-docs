@@ -46,20 +46,20 @@ This is how the QR unattended model works:
 1. Clients scan QR code from their app. 
 2. Using the associated URL, Mercado Pago searches for the order in the merchant server.
 3. (A) Point of sale informs status to the merchant server. <br/>
-(B) If information is not available, merchant server will answer with a `HTTP 400`.<br/>
-(C) Mercado Pago shows a waiting screen on the app.<br/>
-(D) And searches again for the order in merchant server. 
+   (B) If information is not available, merchant server will answer with a `HTTP 400`.<br/>
+   (C) Mercado Pago shows a waiting screen on the app.<br/>
+   (D) And searches again for the order in merchant server. 
 4. (A) Point of sale sends order data to the merchant server.<br/> 
-(B) When order is available, merchant server answers a  `HTTP 200` with the payment information needed to charge clients.
+   (B) When order is available, merchant server answers a  `HTTP 200` with the payment information needed to charge clients.
 5. (A) Next, shows a payment screen on the client app. <br/>
-(B) Merchant server receives an order notification.<br/>
-(C) And confirms reception.
+   (B) Merchant server receives an order notification.<br/>
+   (C) And confirms reception.
 6. Finally, the client pays the order.
 7. (A) The client sees a payment confirmation.<br/>
-(B) Merchant server receives an order notification.<br/>
-(C) And confirms reception.
+   (B) Merchant server receives an order notification.<br/>
+   (C) And confirms reception.
 8. (A) Merchant server consults order status with the received ID from the last notification to know if it’s closed or still pending.<br/>
-(B) Mercado Pago returns respective data like status and payment information, among others. 
+   (B) Mercado Pago returns respective data like status and payment information, among others. 
 9. Once order is **closed**, receipt can be printed.
 
 > NOTE
