@@ -1,13 +1,13 @@
-# Integración avanzada
+# Advanced Integration
 
-## Recuerda tus clientes y sus tarjetas
+## Remember your customers and cards
 
-Usa nuestras APIs para guardar la referencia de las tarjetas de tus clientes y poder brindarles una mejor experiencia. De esta manera, tus clientes no tienen que completar sus datos cada vez y pueden finalizar sus pagos más rápido.
+Use our APIs to save your customer's card references and offer them a better experience. This way, your customers won't need to fill out their data every time and their payments will be completed faster.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Crear un cliente y una tarjeta
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create customers and cards
 
-Para crear un cliente y su tarjeta tienes que enviar el campo del e-mail, el tipo de medio de pago, el ID del banco emisor y el token generado.
-Vas a sumar a cada cliente con el valor `customer` y a la tarjeta como `card`.
+To create customers and cards, submit the e-mail field, type of payment method, issuing bank ID and generated token.
+You will add every customer using the `customer` value, and cards as `card`.
 
 [[[
 ```php
@@ -137,15 +137,15 @@ card = card_response["response"]
 ```curl
 
 curl -X POST \
-  -H 'Content-Type: application/json' \
-  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-  'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
-  -d '{"token": "9b2d63e00d66a8c721607214cedaecda", "issuer_id": "3245612", "payment_method_id": "debit_card"}'
+    -H 'Content-Type: application/json' \
+    -H 'Authorization: Bearer ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
+    -d '{"token": "9b2d63e00d66a8c721607214cedaecda", "issuer_id": "3245612", "payment_method_id": "debit_card"}'
 
 ```
 ]]]
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
 
 ```json
 {
@@ -169,20 +169,20 @@ curl -X POST \
 
 > NOTE
 >
-> Nota
+> Note
 >
-> Te recomendamos almacenar los datos de tarjeta luego de realizar un pago de forma exitosa para guardar datos correctos.
+> For correct data, we recommend saving card data after making a successful payment.
 
 
 > WARNING 
 > 
-> Importante
+> Important
 > 
-> Si recibes un mensaje de error del tipo `"invalid parameter"` con código de estado HTTP 400, asegúrate de estar completando correctamente los campos `payment_method_id` e `issuer_id`.
+> If you receive an error message of type `"invalid parameter"` with HTTP 400 status code, make sure you are completing the fields `payment_method_id` and `issuer_id` correctly.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agrega nuevas tarjetas a un cliente
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new cards to a customer
 
-Para agregar nuevas tarjetas a un cliente, debes crear un token y hacer un `HTTP POST` al `customer`.
+To add new cards to a customer, create a token and make a `HTTP POST` to the `customer`.
 
 [[[
 ```php
@@ -231,7 +231,6 @@ mercadopago.customers.search({
   });
 });
 
-
 ```
 ```java
 
@@ -271,6 +270,7 @@ card_response = sdk.card.create(customer['id'], card_request)
 card = card_response[:response]
 
 puts card
+
 ```
 ```csharp
 
@@ -281,7 +281,7 @@ Customer customer = await customerClient.GetAsync("247711297-jxOV430go9fx2e");
 
 var cardRequest = new CustomerCardCreateRequest
 {
-    Token = "9b2d63e00d66a8c721607214cedaecda"
+    Token = "9b2d63e00d66a8c721607214cedaecda",
 };
 CustomerCard card = await customerClient.CreateCardAsync(customer.Id, cardRequest);
 
@@ -310,21 +310,21 @@ print(card)
 ```curl
 
 curl -X POST \
-  -H 'Content-Type: application/json' \
-  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-  'https://api.mercadopago.com/v1/customers' \
-  -d '{"email": "test@test.com"}'
+    -H 'Content-Type: application/json' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/customers' \
+    -d '{"email": "test@test.com"}'
 
 curl -X POST \
-  -H 'Content-Type: application/json' \
-  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-  'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
-  -d '{"token": "9b2d63e00d66a8c721607214cedaecda", "issuer_id": "3245612", "payment_method_id":"debit_card"}'
+    -H 'Content-Type: application/json' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
+    -d '{"token": "9b2d63e00d66a8c721607214cedaecda", "issuer_id": "3245612", "payment_method_id":"debit_card"}'
 
 ```
 ]]]
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
 
 
 ```json
@@ -366,15 +366,15 @@ curl -X POST \
 }
 ```
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Usa las tarjetas guardadas para un pago
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use saved cards for payments
 
-Para que un cliente pueda hacer un pago con sus datos guardados, es necesario volver a capturar el código de seguridad. Mercado Pago no puede almacenar esa información por cuestiones de seguridad.
+For customers to make payments with their saved data, you need to capture the security code again. For security reasons, Mercado Pago can't save that information.
 
 <br>
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Muestra las tarjetas guardadas a tu cliente
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Display saved cards to your customer
 
-Primero, obtén el listado de guardadas para que tu cliente pueda elegir con cuál quiere pagar:
+First, get the saved card list so that your customer can choose one to make the payment:
 
 [[[
 
@@ -426,12 +426,13 @@ cards = cards_response["response"]
 ```curl
 
 curl -X GET \
-  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-  'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
+
 ```
 ]]]
 
-Respuesta de datos de una tarjeta guardada:
+Saved card data response:
 
 ```json
 [{
@@ -444,7 +445,7 @@ Respuesta de datos de una tarjeta guardada:
 }]
 ```
 
-Y puedes armar el formulario de la siguiente manera:
+And you can prepare the form like this:
 
 ```html
 <li>
@@ -466,24 +467,15 @@ Y puedes armar el formulario de la siguiente manera:
 ```
 <br>
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Captura el código de seguridad
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Capture security code
 
-----[mlb]----
 > INFO
 >
-> Nueva versión MercadoPago.js
+> New MercadoPago.js version
 >
-> Utiliza la librería MercadoPago.js V2 para tu formulario de tarjeta y autogenera toda la lógica de negocio necesaria para realizar el pago.<br><br>[Integrar Checkout Transparente con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/advanced-integration)
-------------
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> INFO
->
-> Nueva versión MercadoPago.js
->
-> Utiliza la librería MercadoPago.js V2 para tu formulario de tarjeta y autogenera toda la lógica de negocio necesaria para realizar el pago.<br><br>[Integrar Checkout API con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/advanced-integration)
-------------
+> Use MercadoPago .js V2 library to create your card form and to auto generate your business logics needed to make the payment.<br><br>[Integrate Checkout API with MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/advanced-integration)
 
-El cliente tiene que ingresar el código de seguridad en un flujo similar al que realizaste para la [captura de los datos de la tarjeta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card/#bookmark_captura_los_datos_de_la_tarjeta). Debes crear un token enviando el formulario con el ID de la tarjeta y el código de seguridad.
+The customer needs to enter the security code in a flow similar to [card data capture](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card/#bookmark_card_data_capture). You need to create a token by submitting the form with card ID and security code.
 
 ```javascript
 doSubmit = false;
@@ -500,9 +492,9 @@ addEvent(document.querySelector('#pay'),'submit', doPay);function doPay(event){
 ```
 <br>
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Crea el pago
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Create payment
 
-Una vez obtenido el token, puedes generar el pago por el monto correspondiente. Al ser un pago con tarjeta guardada, debes enviar el ID del cliente junto al token.
+Once you get the token, you can generate the payment for the relevant amount. As the payment is made using saved card data, you need to send the customer ID along with the token.
 
 [[[
 ```php
@@ -536,7 +528,7 @@ var payment_data = {
   token: 'ff8080814c11e237014c1ff593b57b4d',
   installments: 1,
   payer: {
-    type: "customer",
+    type: "customer"
     id: "123456789-jxOV430go9fx2e"
   }
 };
@@ -630,7 +622,7 @@ payment = payment_response["response"]
 
 curl -X POST \
   -H 'Content-Type: application/json' \
-  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \ 
   'https://api.mercadopago.com/v1/payments' \
   -d '{
   transaction_amount: 100,
@@ -646,9 +638,9 @@ curl -X POST \
 ]]]
 
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Busca un cliente creado
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search for an existing customer
 
-Puedes buscar información sobre tu cliente si lo necesitas. Por ejemplo, en el caso que no sepas cuál es el ID asignado. El parámetro requerido para obtenerlo es el e-mail.
+You can search for customer information, if needed; for example, when you don't know the assigned ID. The e-mail is the required parameter to get it.
 
 [[[
 
@@ -724,10 +716,11 @@ curl -X GET \
   -d '{
     "email": "test_user_19653727@testuser.com"
 }'
+
 ```
 ]]]
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
 
 ```json
 {
@@ -775,7 +768,7 @@ curl -X GET \
 }
 ```
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Consulta el listado de tarjetas de un cliente
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check customer's card list
 
 [[[
 ```php
@@ -827,12 +820,12 @@ cards = cards_response["response"]
 
 curl -X GET \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-  'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards/' \
+  'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
 
 ```
 ]]]
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Respuesta
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
 
 ```json
 [{
@@ -844,22 +837,23 @@ curl -X GET \
     ...
 }]
 ```
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Modificar un cliente
 
-Para modificar un cliente es necesario enviar el `customer_id` y los campos que se quieran actualizar en una solicitud `HTTP PUT`. 
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Modify a customer
 
-Los campos que se pueden modificar de un cliente son:
-| Atributo | Descripción |
+To modify a client you need to send the `customer_id` and the fields you want to update in a `HTTP PUT` request. 
+
+The fields that can be modified from a client are:
+| Attribute | Description |
 | -------- | ----------- |
-| `address` | Dirección. |
-| `default_address` | Dirección por defecto. |
-| `default_card` | Tarjeta por defecto. |
-| `description` | Descripción. |
-| `email` | E-mail de la cuenta. |
-| `first_name` | Nombre. |
-| `last_name` | Apellido. |
-| `phone` | Teléfono registrado. |
-| `identification` | Tipo de documento y número. |
+| `address` | Address. |
+| `default_address` | Default address. |
+| `default_card` | Default card. |
+| `description` | Description. |
+| `email` | Account e-mail. |
+| `first_name` | First name. |
+| `last_name` | Last name. |
+| `phone` | Registered phone. |
+| `identification` | Document type and number. |
 
 [[[
 ```php
@@ -874,9 +868,9 @@ Los campos que se pueden modificar de un cliente son:
   $customer->last_name = "wagner";
   $customer->phone = array("area_code" => "[FAKER][PHONE_NUMBER][AREA_CODE]", "number" => "001234567");
   $customer->identification = array("type" => "[FAKER][IDENTIFICATION][TYPE]", "number" => "12341234");
-  $customer->default_address = "Casa";
+  $customer->default_address = "Home";
   $customer->address = array("zip_code" => "[FAKER][ADDRESS][ZIP_CODE]", "street_name" => "[FAKER][ADDRESS][STREET_NAME]", "street_number" => "2");
-  $customer->description = "Información del cliente";
+  $customer->description = "Customer information";
   $customer->default_card = "None";
   $customer->update();
 
@@ -902,13 +896,13 @@ var customer_data = {
     "type": "[FAKER][IDENTIFICATION][TYPE]",
     "number": "12341234"
   }, 
-  "default_address": "Casa",
+  "default_address": "Home",
   "address": {
     "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
     "street_name": "[FAKER][ADDRESS][STREET_NAME]",
     "street_number": "2"
   },
-  "description": "Información del cliente",
+  "description": "Customer information",
   "default_card": "None
  }
 
@@ -940,10 +934,10 @@ Customer customer = new Customer();
 customer.setEmail("user@user.com");
 customer.setFirstName("john");
 customer.setLastName("wagner");
-customer.setDefaultAddress("Casa");
+customer.setDefaultAddress("Home");
 customer.setPhone(phone);
 customer.setIdentification(identification);
-customer.setDescription("Información del cliente");
+customer.setDescription("Customer information");
 customer.setDefaultCard("None");
 cusotmer.setAddress(defaultAddress);
 customer.update();
@@ -959,7 +953,7 @@ customer_request = {
   email: 'user@user.com',
   first_name: 'john',
   last_name: 'wagner',
-  default_address: 'Casa',
+  default_address: 'home',
   phone: {
     area_code: '[FAKER][PHONE_NUMBER][AREA_CODE]',
     number: '001234567'
@@ -973,7 +967,7 @@ customer_request = {
     street_name: '[FAKER][ADDRESS][STREET_NAME]',
     street_number: '2'
   },
-  description: 'Información del cliente',
+  description: 'Customer information',
   default_card: 'None'
 }
 customer_response = sdk.customer.update(customer_id ,customer_request)
@@ -1007,8 +1001,8 @@ var customerRequest = new CustomerRequest
     Email = "test@test.com",
     FirstName = "john",
     LastName = "wagner",
-    DefaultAddress = "Casa",
-    Description = "Información del cliente",
+    DefaultAddress = "home",
+    Description = "Customer information",
     DefaultCard = "None",
     Phone = phoneRequest,
     Identification = identificationRequest,
@@ -1028,7 +1022,7 @@ customer_data = {
   "email": 'user@user.com',
   "first_name": 'john',
   "last_name": 'wagner',
-  "default_address": 'Casa',
+  "default_address": 'home',
   "phone": {
     "area_code": '[FAKER][PHONE_NUMBER][AREA_CODE]',
     "number": '001234567'
@@ -1042,7 +1036,7 @@ customer_data = {
     "street_name": '[FAKER][ADDRESS][STREET_NAME]',
     "street_number": '2'
   },
-  "description": 'Información del cliente',
+  "description": 'Customer information',
   "default_card": 'None'
 }
 customer_response = sdk.customer().update(customer_id, customer_data)
@@ -1071,13 +1065,13 @@ curl -X PUT \
     "type": "[FAKER][IDENTIFICATION][TYPE]",
     "number": "12341234"
   },
-  "description": "Información del cliente" 
+  "description": "Customer information" 
 }'
 
 ```
 ]]]
 
-Ejemplo de respuesta con el envío del `customer_id`:
+Example of response with sending the `customer_id`:
 ```json
 {
   "id": "xxxxxxxxxxxxxxxxxxxxx",
@@ -1097,7 +1091,7 @@ Ejemplo de respuesta con el envío del `customer_id`:
     "street_name": "[FAKER][ADDRESS][STREET_NAME]",
     "street_number": 2
   },
-  "description": "Información del cliente",
+  "description": "Customer information",
   "date_created": "2021-05-25T15:36:23.541Z",
   "metadata": {},
   "cards": [
@@ -1108,7 +1102,7 @@ Ejemplo de respuesta con el envío del `customer_id`:
   ]
 }
 ```
-Ejemplo de respuesta sin incluir el parámetro `customers_id`:
+Example of response without including the `customers_id` parameter:
 ```json
 {
   "message": "missing customer id"
@@ -1116,37 +1110,37 @@ Ejemplo de respuesta sin incluir el parámetro `customers_id`:
 ```
 > NOTE
 >
-> Nota
+> Note
 >
-> Si no tienes el `customer_id`, [consulta la API de Clientes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/customers/_customers_search/get) y genera una solicitud `HTTP GET` utilizando el parámetro `email` para obtenerlo. 
+> If you don't have the `customer_id`, [check the Customers API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/customers/_customers_search/get) and generate an` HTTP GET` request using the `email` parameter to get it.
 
-## Cancelaciones y devoluciones
+## Cancellations and refunds
 
 ----[mla, mlm, mco, mlu, mlb, mlc]----
-Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes de la fecha de vencimiento y el vendedor decide cancelarlo. Y las devoluciones suceden cuando el pago se realizó pero el vendedor decide anularlo total o parcialmente.
+Cancellations occur when a cash payment is not completed before the expiration date, and the seller decides to cancel it. And refunds occur when the payment is made, but the seller decides to cancel it, partially or entirely.
 ------------
 
 ----[mpe]----
-Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes de la fecha de vencimiento y el vendedor decide cancelarlo. Y las devoluciones suceden cuando el pago se realizó pero el vendedor decide anularlo totalmente.
+Cancellations occur when a cash payment is not completed before the expiration date, and the seller decides to cancel it. And refunds occur when the payment is made, but the seller decides to cancel it entirely.
 ------------
 
-Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
 
 ---
-### Próximos pasos
+### Next steps
 
 > LEFT_BUTTON
 >
-> Otras funcionalidades
+> Other features
 >
-> Adapta la integración a las necesidades específicas de tu negocio.
+> Set up your payment and adapt the integration of Mercado Pago to your business.
 >
-> [Otras funcionalidades](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-features)
+> [Other features](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-features)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> RIGHT_BUTTON_RECOMMENDED_EN
 >
-> Referencias de API
+> API References
 >
-> Encuentra toda la información necesaria para interactuar con nuestras APIs.
+> Find all the information required to interact with our APIs.
 >
-> [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference)
+> [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference)
