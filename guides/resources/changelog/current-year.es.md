@@ -3,6 +3,7 @@
 Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones de Mercado Pago.
 
 ---
+
 ## Julio 2021
 
 ### 1 de julio
@@ -24,6 +25,8 @@ Lanzamos la nueva versión 3.9.1 para Magento 2.
 > GitHub
 >
 > Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.1).
+
+---
 
 ## Junio 2021
 
@@ -144,6 +147,8 @@ Las suscripciones de Mercado Pago te permiten recibir pagos de forma recurrente,
 [Crear suscripciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/introduction)
 
 ------------
+
+---
 
 ## Mayo 2021
 

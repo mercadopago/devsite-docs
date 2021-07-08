@@ -3,6 +3,7 @@
 Find out everything about the new versions and updates of Mercado Pago integrations.
 
 ---
+
 ## July 2021
 
 ### July 1st
@@ -24,6 +25,8 @@ We have released the new version 3.9.1 for Magento 2.
 > GitHub
 >
 > [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.1) for further details regarding this release.
+
+---
 
 ## June 2021
 
@@ -144,6 +147,8 @@ Mercado Pago subscriptions allow you to receive recurring payments by credit and
 [Create subscriptions](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/introduction)
 
 ------------
+
+---
 
 ## May 2021
 
