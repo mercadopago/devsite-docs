@@ -153,7 +153,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in Obtain the available payment methods to create the payment options you want to offer.
 
 Add the following form with the styles you want.
 
