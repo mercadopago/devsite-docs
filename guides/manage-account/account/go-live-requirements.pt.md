@@ -1,10 +1,10 @@
 # Requisitos para entrar em produção
 
-Quando sua integração estiver pronta e quiser começar a receber pagamentos, você deve [ative as credenciais]([FAKER][CREDENTIALS][URL]) de produção e substitua as credenciais de teste, se necessário.
+Quando sua integração estiver pronta e você quiser começar a receber pagamentos, você deve [ativar as credenciais]([FAKER][CREDENTIALS][URL]) de produção e substituir as credenciais de teste, se necessário.
 
 ## Não se esqueça de ter um certificado SSL
 
-Para que você esteja seguro e possa cuidar dos dados, **é necessário ter um certificado SSL e que a forma de pagamento seja disponibilizada em uma página HTTPS**. Isso permite proteger as transações realizadas pelos compradores e seus dados.
+Para que você esteja seguro e possa proteger os dados, **é necessário ter um certificado SSL e que a forma de pagamento seja disponibilizada em uma página HTTPS**. Isso permite proteger as transações realizadas pelos compradores e seus dados.
 Durante os testes, você pode não ter um, mas é obrigatório para entrar em produção.
 
 ## Por que este processo é necessário?
