@@ -1,7 +1,7 @@
 # Outras funcionalidades
 
 
-Você pode adaptar a integração ao seu negócio adicionando atributos na preferência. Há muitos [dados em uma preferência](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/preferences/resource) que podem ser configurados, mas lembre-se sempre do quê seus negócios precisam.
+Você pode adaptar a integração ao seu negócio adicionando atributos na preferência. Há muitos [dados em uma preferência](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/preferences/_checkout_preferences/post) que podem ser configurados, mas lembre-se sempre do quê seus negócios precisam.
 
 ----[mla, mlb]----
 Se você oferece compras de valores altos, por exemplo, você pode aceitar [pagamentos com dois cartões de crédito](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_pagamentos_com_2_cartão_de_crédito) ou tambén, [excluir meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_atributos_para_a_preferência) que você não quiser aceitar
@@ -222,34 +222,60 @@ preference.setPaymentMethods(paymentMethods);
 //...
 ```
 ```ruby
-preference = MercadoPago::Preference.new
 #...
-preference.payment_methods = {
-  excluded_payment_methods: [id: "master"],
-  excluded_payment_types: [id: "ticket"],
-  installments: 12
+preference_data = {
+  # ...
+  payment_methods: {
+    excluded_payment_methods: [
+      { id: 'master' }
+    ],
+    excluded_payment_types: [
+      { id: 'ticket' }
+    ],
+    installments: 12
+  }
+  # ...
 }
 #...
 ```
 ```csharp
-Preference preference = new Preference();
+var paymentMethods = new PreferencePaymentMethodsRequest
+{
+    ExcludedPaymentMethods = new List<PreferencePaymentMethodRequest>
+    {
+        new PreferencePaymentMethodRequest
+        {
+            Id = "master",
+        },
+    },
+    ExcludedPaymentTypes = new List<PreferencePaymentTypeRequest>
+    {
+        new PreferencePaymentTypeRequest
+        {
+            Id = "ticket",
+        },
+    },
+    Installments = 12,
+};
 
-PaymentMethods paymentmethods = new PaymentMethods();
-
-List<PaymentMethod> excludedPaymentMethod = new List<PaymentMethod>();
-excludedPaymentMethod.Add(new PaymentMethod()
-  {
-    Id = "master"
-  });    
-paymentmethods.excludedPaymentType = excludedPaymentMethod;
-
-List<PaymentType> ExcludedPaymentType = new List<PaymentType>();
-excludedPaymentType.Add(new PaymentType()
-  {
-    Id = "ticket"
-  });
-paymentmethods.ExcludedPaymentTypes = excludedPaymentType;
-paymentmethods.Installments = 12;
+var request = new PreferenceRequest
+{
+    // ...
+    PaymentMethods = paymentMethods,
+};
+```
+```python
+#...
+preference_data = {
+    "excluded_payment_methods": [
+        { "id": "master" }
+    ],
+    "excluded_payment_types": [
+        { "id": "ticket" }
+    ],
+    "installments": 12
+}
+#...
 ```
 ]]]
 
@@ -260,10 +286,11 @@ Você pode modificar o valor do imposto para a Dirección de Impuestos y Aduanas
 
 | Atributo | Descrição |
 | --- | --- |
-| `type` | Identificador do imposto. Permitido somente os valores IVA e INC. |
+| `type` | Identificador do imposto. Apenas é permitido o IVA. |
 | `value` | Valor do imposto. Permitido o máximo de duas casas decimais. Para itens isentos de imposto,deve ser informado zero. |
 
- ```json
+[[[
+```json
 ===
 É usado o atributo taxes para definir o valor correspondente
 ===
@@ -274,6 +301,7 @@ Você pode modificar o valor do imposto para a Dirección de Impuestos y Aduanas
   }
 ]
 ```
+]]]
 
 ------------
 
@@ -413,45 +441,78 @@ preference.appendItem(item1, item2);
 preference.save();
 ```
 ```ruby
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+# Create preference data with items
+preference_data = {
+  items: [
+    {
+      title: 'Meu produto 1',
+      quantity: 1,
+      currency_id: '[FAKER][CURRENCY][ACRONYM]',
+      unit_price: 75.56
+    },
+    {
+      title: 'Meu produto 2',
+      quantity: 2,
+      currency_id: '[FAKER][CURRENCY][ACRONYM]',
+      unit_price: 96.56
+    }
+  ]
+}
+
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
+```
+```python
 # Cria itens na preferência
-item = MercadoPago::Item.new({
-  title:        "Meu produto",
-  quantity:     1,
-  unit_price:   75.56
-})
-item2 = MercadoPago::Item.new({
-  title:        "Meu produto2",
-  quantity:     2,
-  unit_price:   96.56
-})
-# Cria um objeto preferência
-preference = MercadoPago::Preference.new({
-  items: [item, item2]
-})
-preference.save()
+preference_data = {
+    "items": [
+        {
+            "title": "Mi producto",
+            "quantity": 1,
+            "unit_price": 75.56
+        },
+        {
+            "title": "Mi producto2",
+            "quantity": 2,
+            "unit_price": 96.56
+        }
+    ]
+}
+
+# Cria a preferência
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
 ```
 ```csharp
-// Cria um objeto preferência
-Preference preference = new Preference();
+// Cria o request com múltiplos itens
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Meu produto 1",
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75.56m,
+        },
+        new PreferenceItemRequest
+        {
+            Title = "Meu produto 2",
+            Quantity = 2,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 96.56m,
+        },
+        // ...
+    },
+};
 
-// Cria itens na preferência
-reference.Items.Add(
-  new Item()
-  {
-    Title = "Meu produto",
-    Quantity = 1,
-    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
-    UnitPrice = (decimal)75.56
-  },
-  new Item()
-  {
-    Title = "Meu produto 2",
-    Quantity = 2,
-    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
-    UnitPrice = (decimal)96.56
-  }
-);
-preference.Save()
+// Cria um objeto client
+var client = new PreferenceClient();
+
+// Cria a preferência
+Preference preference = await client.CreateAsync(request);
 ```
 ```curl
 curl -X POST \
@@ -622,25 +683,47 @@ preference.save();
 ===
 Adicione o código na preferência e substitua o valor pixel_id pelo seu identificador.
 ===
-List<Track> tracks = new List<Track>();
-  // Associar seu pixel do Facebook
-tracks.Add(
-    new Track
+// Associe seu pixel do Facebook
+var tracks = new List<PreferenceTrackRequest>
+{
+    new PreferenceTrackRequest
     {
         Type = "facebook_ad",
-        Values = new JObject
+        Values = new PreferenceTrackValuesRequest
         {
-            { "pixel_id", "PIXEL_ID" }
-        }
-    });
-
-MercadoPago.Resources.Preference preference = new MercadoPago.Resources.Preference
-{
-    // ...
-    Tracks = tracks
+            PixelId = "PIXEL_ID",
+        },
+    },
 };
 
-preference.Save();
+var request = new PreferenceRequest
+{
+    // ...
+    Tracks = tracks,
+};
+
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
+```
+```python
+===
+Adicione o código na preferência e substitua o valor pixel_id pelo seu identificador.
+===
+# Associar seu pixel do Facebook
+preference_data = {
+    # ...
+    "tracks": [
+        {
+            "type": "facebook_ad",
+            "values": {
+                "pixel_id": "PIXEL_ID"
+            }
+        }
+    ]
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
 ```
 ```curl
 ===
@@ -758,26 +841,49 @@ preference.save();
 ===
 Adicione o código na preferência e substitua os valores CONVERSION\_ID e CONVERSION\_LABEL pelos dados da sua tag.
 ===
-List<Track> tracks = new List<Track>();
-  // Associar sua tag do Google ads
-tracks.Add(
-    new Track
-    {
-        Type = "google_ad",
-        Values = new JObject
-        {
-            { "conversion_id", "CONVERSION_ID" },
-            { "conversion_label", "CONVERSION_LABEL" }
-        }
-    });
-
-MercadoPago.Resources.Preference preference = new MercadoPago.Resources.Preference
+// Associe sua tag do Google ads
+var tracks = new List<PreferenceTrackRequest>
 {
-    ...
-    Tracks = tracks
+    new PreferenceTrackRequest
+    {
+        Type = "facebook_ad",
+        Values = new PreferenceTrackValuesRequest
+        {
+            ConversionId = "CONVERSION_ID",
+            ConversionLabel = "CONVERSION_LABEL",
+        },
+    },
 };
 
-preference.Save();
+var request = new PreferenceRequest
+{
+    // ...
+    Tracks = tracks,
+};
+
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
+```
+```python
+===
+Adicione o código na preferência e substitua os valores CONVERSION_ID e CONVERSION_LABEL pelos dados da sua tag.
+===
+# Associar sua tag do Google ads
+preference_data = {
+    # ...
+    "tracks": [
+        {
+            "type": "google_ad",
+            "values": {
+                "conversion_id": "CONVERSION_ID",
+                "conversion_label": "CONVERSION_LABEL"
+            }
+        }
+    ]
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
 ```
 ```curl
 ===
@@ -862,17 +968,34 @@ MercadoPago.SDK.setCorporationId("CORPORATION_ID");
 ===
 Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
 ===
-$mp.set_platform_id("PLATFORM_ID")
-$mp.set_integrator_id("INTERATOR_ID")
-$mp.set_corporation_id("CORPORATION_ID")
+request_options = Mercadopago::RequestOptions.new()
+request_options.platform_id = 'PLATFORM_ID'
+request_options.integrator_id = 'INTEGRATOR_ID'
+request_options.corporation_id = 'CORPORATION_ID'
+
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN', request_options: request_options)
 ```
 ```csharp
 ===
 Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
 ===
-MercadoPago.SDK.PlatformId    = "PLATFORM_ID";
-MercadoPago.SDK.IntegratorId  = "INTEGRATOR_ID";
-MercadoPago.SDK.CorporationId = "CORPORATION_ID";
+MercadoPagoConfig.PlatformId    = "PLATFORM_ID";
+MercadoPagoConfig.IntegratorId  = "INTEGRATOR_ID";
+MercadoPagoConfig.CorporationId = "CORPORATION_ID";
+```
+```python
+===
+Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION_ID, INTEGRATOR_ID e PLATFORM_ID.
+===
+import mercadopago
+from mercadopago.config import RequestOptions
+
+request_options = RequestOptions(
+    corporation_id="CORPORATION_ID",
+    integrator_id="INTEGRATOR_ID",
+    platform_id="PLATFORM_ID"
+)
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN", request_options=request_options)
 ```
 ```curl
 ===

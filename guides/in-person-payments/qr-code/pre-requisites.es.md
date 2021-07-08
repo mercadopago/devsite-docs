@@ -1,14 +1,3 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
-  - mlb
----
-
 # Requisitos previos para integrarte
 
 ## Glosario
@@ -29,12 +18,24 @@ Sabemos que algunos términos son nuevos. Antes de empezar, te los dejamos a man
 
 ## Requisitos previos
 
-Para continuar, es necesario realizar los siguientes pasos:
+Ten en cuenta estos aspectos antes de empezar:
 
-### 1. Acceso a cuenta de Mercado Pago o Mercado Libre
+### 1. Accede a una cuenta
 
 Para poder comenzar la integración, es necesario **contar con una cuenta de Mercado Pago o Mercado Libre**. 
-Si aún no tienes una, puedes [crear una cuenta de Mercado Pago](https://www.mercadopago.com.ar) cuando quieras.
+
+Puedes [Ingresar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/pre-requisites) a una cuenta que ya exista o [Crear una cuenta nueva](https://www.mercadopago[FAKER][URL][DOMAIN]).
+
+### 2. Crea una aplicación
+
+Necesitarás crear una aplicación por cada solución para tener todo organizado y llevar un control que te facilite la gestión. Crea una aplicación para obtener credenciales y configurar notificaciones webhooks.
+
+Es fácil, te contamos cómo hacerlo:
+
+1. Ingresa a [Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications).
+2. Elige “Nueva aplicación” o “Crear tu primera aplicación”.
+3. Ponle un nombre con el que puedas identificarla más adelante.
+4. Acepta nuestros Términos y Condiciones. ¡Y listo!
 
 > NOTE
 >
@@ -42,12 +43,11 @@ Si aún no tienes una, puedes [crear una cuenta de Mercado Pago](https://www.mer
 >
 > Si vas a operar en nombre de otros, puedes trabajar con las credenciales de ellos de una forma más fácil y segura por [Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/marketplace/checkout-api/introduction).
 
-
-### 2. Generar usuarios de prueba
+### 3. Generar usuarios de prueba
 
 Para comenzar la integración es necesario que tengas como mínimo dos usuarios: un comprador y un vendedor.
 
-Ejecuta el siguiente comando para generar un usuario de prueba:  
+Ejecuta el siguiente comando para generar un usuario de prueba:
 
 ```curl
 curl -X POST \

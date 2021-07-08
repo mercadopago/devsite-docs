@@ -15,7 +15,7 @@ To find them, go to the [Credentials section]([FAKER][CREDENTIALS][URL]).
 
 
 ## Always use our libraries
-Remember to always use our official libraries for your integration. This helps protect your customer's sensitive data, meet the required security standards, and keep yourself up to date.
+We recommend that you use our official libraries for your integration. This helps protect your customer's sensitive data, meet the required security standards, and keep yourself up to date.
 
 <br>
 
@@ -25,7 +25,13 @@ Remember to always use our official libraries for your integration. This helps p
 >
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Include MercadoPago.js
 
-MercadoPago.js allows you to create a payment token to send card data to your backend securely. You can use it by adding the following code to your website:
+> INFO
+>
+> New MercadoPago.js version
+>
+> Use MercadoPago.js V2 library to update to the latest version; auto generate your business logics in your card payment form and improve compatibility with different browsers.<br><br>[Integrate Checkout API with MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/previous-requirements)
+
+MercadoPago.js allows you to manage the card data to comply with the necessary security requirements and avoid sending sensitive data to your servers. For this, our library generates a payment token that represents this information and allows you to operate safely. You can use it by adding the following code to your website:
 
 ```html
 <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
@@ -75,14 +81,20 @@ gem install mercadopago-sdk
 ```csharp
 ===
 ----[mlb]----
-Use [NuGet](https://docs.microsoft.com/pt-pt/nuget/install-nuget-client-tools) to install the Mercado Pago SDK .NET.
+Use [NuGet](https://docs.microsoft.com/pt-br/nuget/reference/nuget-exe-cli-reference) to install the Mercado Pago SDK .NET.
 ------------
 ----[mla, mco, mlu, mlc, mlm]----
-Use [NuGet](https://docs.microsoft.com/es-es/nuget/install-nuget-client-tools) to install the Mercado Pago SDK .NET.
+Use [NuGet](https://docs.microsoft.com/es-es/nuget/reference/nuget-exe-cli-reference) to install the Mercado Pago SDK .NET.
 ------------
-To do this, run the following command in the NuGet Package Manager console:
+To do this, run the following command on your terminal:
 ===
-PM> Install-Package mercadopago-sdk -Version 1.0.57
+nuget install mercadopago-sdk
+```
+```python
+===
+The Mercado Pago SDK is available as a [pip](https://pypi.org/project/mercadopago/), to install it you must execute the following code on the command line:
+===
+pip3 install mercadopago
 ```
 ]]]
 
@@ -90,9 +102,9 @@ PM> Install-Package mercadopago-sdk -Version 1.0.57
 
 If you can't use our official SDKs, you will have all the information about data queries and responses available to interact directly with our APIs in [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post).
 
-## Meet the requirements for the production environment
+## Meet the requirements to go to production
 
-When you develop your integration, consider all the [requirements for the production environment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production). This process can ensure your customer's data security, compliance with legal standards or provisions in each country, and the best shopping experience for your customers.
+When you develop your integration, consider all the [requirements to go to production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production). This process can ensure your customer's data security, compliance with legal standards or provisions in each country, and the best shopping experience for your customers.
 
 Once your integration is ready, you just need to fill out the form for to go to production in the [Credentials section]([FAKER][CREDENTIALS][URL]) to start receiving payments.
 

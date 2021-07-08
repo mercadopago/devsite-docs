@@ -14,7 +14,7 @@ Para poder encontrarlas, ve la [sección de Credenciales]([FAKER][CREDENTIALS][U
 > ¿Tienes dudas sobre credenciales? Puedes consultar nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials).
 
 ## Utiliza nuestras librerías siempre
-Es importante que siempre utilices nuestras librerías oficiales para tu integración. Esto permite cuidar los datos sensibles de tus clientes, cumplir con los estándares de seguridad requeridos y estar siempre actualizado.
+Te recomendamos usar las librerías oficiales para tu integración. Esto permite cuidar los datos sensibles de tus clientes, cumplir con los estándares de seguridad requeridos y estar siempre actualizado.
 
 <br>
 
@@ -24,7 +24,22 @@ Es importante que siempre utilices nuestras librerías oficiales para tu integra
 >
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Incluye MercadoPago.js
 
-MercadoPago.js te permite crear un token de pago para enviar los datos de las tarjetas a tu backend de forma segura. Puedes utilizarla sumando el siguiente código en tu sitio:
+----[mlb]----
+> INFO
+>
+> Nueva versión MercadoPago.js
+>
+> Utiliza la librería MercadoPago.js V2 para actualizarte a la última versión, autogenerar la lógica de negocio en tu formulario de pagos con tarjeta y mejorar la compatibilidad con los distintos navegadores.<br><br>[Integrar Checkout Transparente con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/previous-requirements)
+------------
+----[mla, mlm, mco, mlc, mlu]----
+> INFO
+>
+> Nueva versión MercadoPago.js
+>
+> Utiliza la librería MercadoPago.js V2 para actualizarte a la última versión, autogenerar la lógica de negocio en tu formulario de pagos con tarjeta y mejorar la compatibilidad con los distintos navegadores.<br><br>[Integrar Checkout API con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/previous-requirements)
+------------
+
+MercadoPago.js te permite gestionar los datos de la tarjeta para cumplir con los requerimientos de seguridad necesarios y evitar el envío de datos sensibles a tus servidores. Para ello, nuestra librería genera un token que representa esta información y te permite operar de forma segura. Puedes utilizarla sumando el siguiente código en tu sitio:
 
 ```html
 <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
@@ -51,13 +66,13 @@ php composer.phar require "mercadopago/dx-php"
 ```
 ```node
 ===
-Para instalar el SDK debes ejecutar el siguiente código en la línea de comandos de tu terminal usando [npm](https://www.npmjs.com/get-npm):
+Para instalar la SDK debes ejecutar el siguiente código en la línea de comandos de tu terminal usando [npm](https://www.npmjs.com/get-npm):
 ===
 npm install mercadopago
 ```
 ```java
 ===
-Para instalar el SDK en tu proyecto [Maven](http://maven.apache.org/install.html) agrega la siguiente dependencia en tu archivo pom.xml y luego ejecuta 'maven install'.
+Para instalar la SDK en tu proyecto [Maven](http://maven.apache.org/install.html) agrega la siguiente dependencia en tu archivo pom.xml y luego ejecuta 'maven install'.
 ===
 <dependency>
             <groupId> com.mercadopago </groupId>
@@ -67,31 +82,37 @@ Para instalar el SDK en tu proyecto [Maven](http://maven.apache.org/install.html
 ```
 ```ruby
 ===
-El SDK de Mercado Pago está disponible como [gema](https://rubygems.org/gems/mercadopago-sdk), para instalarla debes ejecutar el siguiente código en la línea de comandos:
+La SDK de Mercado Pago está disponible como [gema](https://rubygems.org/gems/mercadopago-sdk), para instalarla debes ejecutar el siguiente código en la línea de comandos:
 ===
 gem install mercadopago-sdk
 ```
 ```csharp
 ===
 ----[mlb]----
-Usa [NuGet](https://docs.microsoft.com/pt-pt/nuget/install-nuget-client-tools) para instalar el SDK .NET de Mercado Pago.
+Usa [NuGet](https://docs.microsoft.com/pt-br/nuget/reference/nuget-exe-cli-reference) para instalar la SDK .NET de Mercado Pago.
 ------------
 ----[mla, mlm, mco, mlc, mlu]----
-Usa [NuGet](https://docs.microsoft.com/es-es/nuget/install-nuget-client-tools) para instalar el SDK .NET de Mercado Pago.
+Usa [NuGet](https://docs.microsoft.com/es-es/nuget/reference/nuget-exe-cli-reference) para instalar la SDK .NET de Mercado Pago.
 ------------
-Para hacerlo ejecuta el siguiente comando en la consola del NuGet Package Manager:
+Para hacerlo ejecuta el siguiente comando en tu terminal:
 ===
-PM> Install-Package mercadopago-sdk -Version 1.0.57
+nuget install mercadopago-sdk
+```
+```python
+===
+El SDK de Mercado Pago está disponible como [pip](https://pypi.org/project/mercadopago/), para instalarla debes ejecutar el siguiente código en la línea de comandos:
+===
+pip3 install mercadopago
 ```
 ]]]
 
 ## Conoce nuestras Referencias de API
 
-Si no puedes utilizar nuestros SDK oficiales, tienes disponible toda la información sobre consultas y respuestas de datos para interactuar directamente con nuestras APIs en [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments/post).
+Si no puedes utilizar nuestras SDK oficiales, tienes disponible toda la información sobre consultas y respuestas de datos para interactuar directamente con nuestras APIs en [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments/post).
 
-## Cumple los requisitos para ir a producción
+## Cumple los requisitos para salir a producción
 
-Al realizar tu integración, es necesario que tengas en cuenta todos los [requisitos para ir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/goto-production). Con este proceso, se puede garantizar la seguridad de lo datos de tus clientes, el cumplimiento de las normas o disposiciones legales de cada país y lograr la mejor experiencia de compra para tus ventas.
+Al realizar tu integración, es necesario que tengas en cuenta todos los [requisitos para salir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/goto-production). Con este proceso, se puede garantizar la seguridad de lo datos de tus clientes, el cumplimiento de las normas o disposiciones legales de cada país y lograr la mejor experiencia de compra para tus ventas.
 
 Cuando tengas lista tu integración y quieras comenzar a recibir pagos, solo tienes que completar el formulario para ir producción desde la [sección de Credenciales]([FAKER][CREDENTIALS][URL]).
 

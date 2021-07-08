@@ -4,6 +4,12 @@
 
 Save time and automate the **generating frequency** of the Available Balance report as many times as you want, both manually and on a scheduled basis.
 
+> WARNING
+>
+> The Available Balance report will be disabled soon
+>
+> You can use the [Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
+
 > NOTE
 >
 > Note
@@ -53,7 +59,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 headers = {
     'accept': 'application/json',
@@ -91,19 +97,26 @@ You will receive an `HTTP STATUS 200 (OK)` in response.
 {
     "file_name_prefix": "bank-report-USER_ID",
     "include_withdrawal_at_end": false,
-    "detailed": true,
-    "scheduled": true,
+    "scheduled": false,
     "execute_after_withdrawal": true,
-    "v1": {
-        "language": null,
-        "generate_bank_report": false
-    },
-    "extended": true,
+    "separator": ",",
+    "display_timezone": "GMT-04",
     "frequency": {
-        "hour": 3,
-        "type": "daily",
-        "value": {}
-    }
+        "hour": 0,
+        "type": "monthly",
+        "value": 1
+    },
+    "columns": [
+        {
+            "key": "DATE"
+        },
+        {
+            "key": "SOURCE_ID"
+        },
+        {
+            "key": "EXTERNAL_REFERENCE"
+        }
+    ]
 }
 ```
 
@@ -121,14 +134,28 @@ curl -X POST \
     -d '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
-            "detailed": true,
             "execute_after_withdrawal": true,
-            "extended": true,
+            "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
                 "value": 1
-            }
+            },
+            "columns": [
+                {
+                    "key": "DATE"
+                },
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
     }'
 ```
 ```php
@@ -143,14 +170,28 @@ $headers = array(
 $data = '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
-            "detailed": true,
             "execute_after_withdrawal": true,
-            "extended": true,
+            "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
                 "value": 1
-            }
+            },
+            "columns": [
+                {
+                    "key": "DATE"
+                },
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
     }';
 $response = Requests::post('https://api.mercadopago.com/v1/account/bank_report/config', $headers, $data);
 ```
@@ -169,15 +210,23 @@ connection.setDoOutput(true);
 String body = "{
                 \\"file_name_prefix\\": \\"bank-report-USER_ID\\",
                 \\"include_withdrawal_at_end\\": false,
-                \\"detailed\\": true,
                 \\"execute_after_withdrawal\\": true,
-                \\"extended\\": true,
+                \\"display_timezone\\": \\"GMT-04\\",
+                \\"notification_email_list\\": [
+                    \\"example@email.com\\",
+                    \\"john@example.com\\",
+                ],
                 \\"frequency\\": {
                     \\"hour\\": 0,
                     \\"type\\": \\"monthly\\",
                     \\"value\\": 1
-                }
-                }";
+                },
+                \\"columns\\": [
+                        { \\"key\\": \\"DATE\\" },
+                        { \\"key\\": \\"SOURCE_ID\\" },
+                        { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
+                ]
+            }";
 
 try(OutputStream os = connection.getOutputStream()) {
     byte[] input = body.getBytes("utf-8");
@@ -188,7 +237,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 
 headers = {
@@ -200,10 +249,28 @@ headers = {
 data = '{  
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
-            "detailed": true,
             "execute_after_withdrawal": true,
-            "extended": true,
-            "frequency": {"hour": 0,"type": "monthly","value": 1}
+            "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
+            "frequency": {
+                "hour": 0,
+                "type": "monthly",
+                "value": 1
+            },
+            "columns": [
+                {
+                    "key": "DATE"
+                },
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
         }'
 
 response = requests.post('https://api.mercadopago.com/v1/account/bank_report/config', headers=headers, data=data)
@@ -220,14 +287,28 @@ var headers = {
 var dataString = '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
-            "detailed": true,
             "execute_after_withdrawal": true,
-            "extended": true,
+            "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
                 "value": 1
-            }
+            },
+            "columns": [
+                {
+                    "key": "DATE"
+                },
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
     }';
 
 var options = {
@@ -253,19 +334,30 @@ You will receive an `HTTP STATUS 201 (Created)` in response.
 {
     "file_name_prefix": "bank-report-USER_ID",
     "include_withdrawal_at_end": false,
-    "detailed": true,
     "scheduled": false,
     "execute_after_withdrawal": true,
-    "v1": {
-        "language": null,
-        "generate_bank_report": false
-    },
-    "extended": true,
+    "separator": ",",
+    "display_timezone": "GMT-04",
+    "notification_email_list": [
+        "example@email.com",
+        "john@example.com"
+    ],
     "frequency": {
-        "hour": 3,
-        "type": "daily",
-        "value": {}
-    }
+        "hour": 0,
+        "type": "monthly",
+        "value": 1
+    },
+    "columns": [
+        {
+            "key": "DATE"
+        },
+        {
+            "key": "SOURCE_ID"
+        },
+        {
+            "key": "EXTERNAL_REFERENCE"
+        }
+    ]
 }
 ```
 
@@ -281,16 +373,30 @@ curl -X PUT \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/account/bank_report/config' \
     -d '{
-        "file_name_prefix": "bank-report-USER_ID",
-        "include_withdrawal_at_end": false,
-        "detailed": true,
-        "execute_after_withdrawal": true,
-        "extended": true,
-        "frequency": {
-            "hour": 0,
-            "type": "monthly",
-            "value": 1
-        }
+            "file_name_prefix": "bank-report-USER_ID",
+            "include_withdrawal_at_end": false,
+            "execute_after_withdrawal": true,
+            "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
+            "frequency": {
+                "hour": 0,
+                "type": "monthly",
+                "value": 1
+            },
+            "columns": [
+                {
+                    "key": "DATE"
+                },
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
     }'
 ```
 ```php
@@ -303,16 +409,30 @@ $headers = array(
     'Authorization' => 'Bearer ENV_ACCESS_TOKEN'
 );
 $data = '{
-        "file_name_prefix": "bank-report-USER_ID",
-        "include_withdrawal_at_end": false,
-        "detailed": true,
-        "execute_after_withdrawal": true,
-        "extended": true,
-        "frequency": {
-            "hour": 0,
-            "type": "monthly",
-            "value": 1
-        }
+            "file_name_prefix": "bank-report-USER_ID",
+            "include_withdrawal_at_end": false,
+            "execute_after_withdrawal": true,
+            "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
+            "frequency": {
+                "hour": 0,
+                "type": "monthly",
+                "value": 1
+            },
+            "columns": [
+                {
+                    "key": "DATE"
+                },
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
     }';
 $response = Requests::put('https://api.mercadopago.com/v1/account/bank_report/config', $headers, $data);
 ```
@@ -331,14 +451,22 @@ connection.setDoOutput(true);
 String body = "{
                 \\"file_name_prefix\\": \\"bank-report-USER_ID\\",
                 \\"include_withdrawal_at_end\\": false,
-                \\"detailed\\": true,
                 \\"execute_after_withdrawal\\": true,
-                \\"extended\\": true,
+                \\"display_timezone\\": \\"GMT-04\\",
+                \\"notification_email_list\\": [
+                    \\"example@email.com\\",
+                    \\"john@example.com\\",
+                ],
                 \\"frequency\\": {
                     \\"hour\\": 0,
                     \\"type\\": \\"monthly\\",
                     \\"value\\": 1
-                }
+                },
+                \\"columns\\": [
+                   { \\"key\\": \\"DATE\\" },
+                   { \\"key\\": \\"SOURCE_ID\\" },
+                   { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
+                ]
             }";
 
 try(OutputStream os = connection.getOutputStream()) {
@@ -350,7 +478,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 
 headers = {
@@ -359,14 +487,31 @@ headers = {
     'Authorization': 'Bearer ENV_ACCESS_TOKEN'
 }
 
-data = '{
+data = '{  
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
-            "detailed": true,
             "execute_after_withdrawal": true,
-            "extended": true,
-            "frequency": {"hour": 0,"type": "monthly","value": 1}
-
+            "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
+            "frequency": {
+                "hour": 0,
+                "type": "monthly",
+                "value": 1
+            },
+            "columns": [
+                {
+                    "key": "DATE"
+                },
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
         }'
 
 response = requests.put('https://api.mercadopago.com/v1/account/bank_report/config', headers=headers, data=data)
@@ -381,16 +526,30 @@ var headers = {
 };
 
 var dataString = '{
-        "file_name_prefix": "bank-report-USER_ID",
-        "include_withdrawal_at_end": false,
-        "detailed": true,
-        "execute_after_withdrawal": true,
-        "extended": true,
-        "frequency": {
-            "hour": 0,
-            "type": "monthly",
-            "value": 1
-        }
+            "file_name_prefix": "bank-report-USER_ID",
+            "include_withdrawal_at_end": false,
+            "execute_after_withdrawal": true,
+            "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
+            "frequency": {
+                "hour": 0,
+                "type": "monthly",
+                "value": 1
+            },
+            "columns": [
+                {
+                    "key": "DATE"
+                },
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
     }';
 
 var options = {
@@ -416,19 +575,30 @@ You will receive an `HTTP STATUS 200 (OK)` in response.
 {
     "file_name_prefix": "bank-report-USER_ID",
     "include_withdrawal_at_end": false,
-    "detailed": true,
     "scheduled": false,
     "execute_after_withdrawal": true,
-    "v1": {
-        "language": null,
-        "generate_bank_report": false
-    },
-    "extended": true,
+    "separator": ",",
+    "display_timezone": "GMT-04",
+    "notification_email_list": [
+        "example@email.com",
+        "john@example.com"
+    ],
     "frequency": {
-        "hour": 3,
-        "type": "daily",
-        "value": {}
-    }
+        "hour": 0,
+        "type": "monthly",
+        "value": 1
+    },
+    "columns": [
+        {
+            "key": "DATE"
+        },
+        {
+            "key": "SOURCE_ID"
+        },
+        {
+            "key": "EXTERNAL_REFERENCE"
+        }
+    ]
 }
 ```
 
@@ -443,11 +613,12 @@ Know the fields you can configure to adjust your preferences before you start:
 | --- | --- |
 | `sftp_info` (optional) | <br/>Indicates the uploaded data to SFTP when you need it.<br/><br/> |
 | `separator` (optional) | <br/>Separator that you can use in the .csv file when you don't want the separator to be a comma. <br/><br/> |
-| `extended` (optional) | <br/>Includes the details of the commissions in the report.<br/><br/> |
+| `display_timezone` (optional) | <br/>This field determines the date and time displayed in the reports. If you do not set a time zone in this field, the system will consider GMT-04 as default. If you choose a time zone which adopts daylight saving time, you will need to adjust it manually when the time changes.<br/><br/> |
+| `notification_email_list` (optional) | <br/>Allows you to add a group of e-mail recipients to be notified when a report is ready and available for download. Make sure to include the email linked to your Mercado Pago account so you can be notified as well. <br/><br/> |
 | `refund_detailed` (optional) | <br/>Displays the reference code (external_reference) of the refund instead of the reference code (external_reference) of the payment.<br/><br/> |
 | `include_withdrawal` (optional) | <br/>Includes withdrawals in the report.<br/><br/> |
 | `coupon_detailed` (optional) | <br/>Includes a column to show the detail of the discount coupons.<br/><br/> |
-| `detailed` | <br/>Includes columns with more detailed information about your operations:<br/> - Mercado Pago Fee (`mp_fee_amount`)<br/> - Fee for offering interest-free installments (`financing_fee_amount`)<br/> - Gross amount of the operation (`gross_amount`)<br/> - Payment methods (`payment_method`)<br/> - Installments (`installments`)<br/> - Discount coupon (`coupon_amount`) <br/> - Shipping Costs (`shipping_fee_amount`) <br/> - Taxes charged for withholdings of IIBB (`taxes_amount`) <br/> - Amount received for split purchases (`seller_amount`)<br/><br/>|
+| `columns` | <br/>Field with the details of columns to be included in your report. Find all possible values in the [Glossary section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/glossary).<br/><br/>|
 | `file_name_prefix` | <br/>Prefix that composes the report name once generated and ready for download.<br/><br/> |
 | `frequency` | <br/>Indicates the daily, weekly or monthly frequency of scheduled reports.<br/><br/> - `frequency` applies type *monthly* to the day of the month or *weekly* to the day of the week.<br/> - `hour` Hour Time of day to generate the report. <br/> - `type` Type indicates the type of frequency *daily*, *weekly* and *monthly*.<br/><br/> |
 | `scheduled` (read_only) | <br/>Informative field that indicates if there are already scheduled reports in the user account.<br/><br/> |
@@ -512,7 +683,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 
 headers = {
@@ -588,7 +759,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 
 headers = { 
@@ -670,7 +841,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 
 headers = {
@@ -774,7 +945,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 
 headers = {
@@ -846,7 +1017,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 
 headers = {
@@ -891,6 +1062,12 @@ Download the file with this command:
 ```plain
     GET /v1/account/bank_report/:file_name
 ```
+
+> NOTE
+>
+> This documentation corresponds to the new version of the API
+>
+> To check the previous version, please go to the [old API Generation section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/v1/api).
 
 <hr/>
 

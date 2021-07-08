@@ -29,7 +29,7 @@ Debes efectuar la siguiente llamada a la API para crear cada uno de los usuarios
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
--H 'Authorization: Bearer ACCESS_TOKEN' \
+-H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
 "https://api.mercadopago.com/users/test_user" \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
@@ -55,7 +55,7 @@ curl -X POST \
 | Brasil | 4235 6477 2802 5682 | 5031 4332 1540 6351 | 3753 651535 56885 |
 | Chile | 4168 8188 4444 7115 | 5416 7526 0258 2580 | 3757 781744 61804 |
 | Colombia | 4013 5406 8274 6260 | 5254 1336 7440 3564 | 3743 781877 55283 |
-| México | 4075 5957 1648 3764 | 5474 9254 3267 0366 | no disponible |
+| México | 4075 5957 1648 3764 | no disponible | no disponible |
 | Perú | 4009 1753 3280 6176 | no disponible | no disponible |
 | Uruguay | 4157 2362 1173 6486 | 5161 4413 1585 2061 | no disponible |
 
@@ -76,7 +76,7 @@ El proceso completo para probar el checkout es el siguiente:
     * **CONT**: Pago pendiente.  
     * **CALL**: Rechazo llamar para autorizar.  
     * **FUND**: Rechazo por monto insuficiente.  
-    * **SECU**: Rechazo por código de seguridad.  
+    * **SECU**: Rechazo por código de seguridad de la tarjeta.  
     * **EXPI**: Rechazo por fecha de expiración.
     * **FORM**: Rechazo por error en formulario.  
     * **OTHE**: Rechazo general.

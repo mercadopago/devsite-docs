@@ -1,14 +1,3 @@
----
-sites_supported:
-- mla
-- mpe
-- mco
-- mlu
-- mlm
-- mlc
-- mlb
----
-
 # Previous requirements to integrate
 
 ## Glossary
@@ -29,22 +18,35 @@ We know some concepts may be new for you. Before starting, here's a cheatsheet.
 
 ## Previous requirements
 
-To continue, you must:
+Keep these aspects in mind before you start:
 
-### 1. Access to Mercado Pago or Mercado Libre account
+### 1. Access to an account
 
-To start the integration, you must have a Mercado Pago or Mercado Libre account. 
-If you don't have an account yet, you can [create one here](https://www.mercadopago.com.ar).
+To start the integration, you must **have a Mercado Pago or Mercado Libre account**. 
+
+You can [Sign in](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/pre-requisites) with an existing account or [Create a new account](https://www.mercadopago[FAKER][URL][DOMAIN]).
+
+### 2. Create an application
+
+You will need to create an application for each solution in order to have everything organized and to keep a record that facilitates its management. Create an application to get credentials and set up webhook notifications.
+
+It's easy and we explain how to do it:
+
+1. Enter [Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications).
+2. Select “New application” or “Create your first application”.
+3. Give it a name so you can identify it later on.
+4. Accept our Terms and Conditions. Done!
+
 
 > NOTE
-> 
+>
 > Note
-> 
+>
 > If you were to operate in behalf of others, you can work with their credentials safer and easier through [Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/marketplace/checkout-api/introduction).
 
-### 2. Generate test users
+### 3. Generate test users
 
-To make tests is necessary to have at least two users: a buyer and a seller. 
+To make tests is necessary to have at least two users: a buyer and a seller.
 
 Execute the following command to generate a test user:
 

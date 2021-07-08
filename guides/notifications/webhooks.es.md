@@ -2,7 +2,7 @@
 
 Un **webhook** es una notificación que se envía de un servidor a otro mediante una llamada `HTTP POST` en relación a tus transacciones.
 
-Para recibir las notificaciones de los eventos en tu plataforma, debes [configurar previamente una URL a la cual Mercado Pago tenga acceso](https://www.mercadopago.com/mla/account/webhooks).
+Para recibir las notificaciones de los eventos en tu plataforma, debes [configurar previamente una URL a la cual Mercado Pago tenga acceso](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications).
 
 También puedes configurar la notificación cuando hagas el POST del pago, indicandola en el campo notificaction_url:
 
@@ -14,7 +14,6 @@ También puedes configurar la notificación cuando hagas el POST del pago, indic
     ....
 }
 ```
-
 
 ## Eventos
 
@@ -72,6 +71,11 @@ La notificación enviada tiene el siguiente formato:
 
 Esto indica que se creó el pago **999999999** para el usuario **44444** en **modo productivo** con la versión V1 de la API. Dicho evento ocurrió en la fecha **2016-03-25T10:04:58.396-04:00**.
 
+> WARNING
+>
+> Importante
+>
+> Ten en cuenta que no es posible recibir notificaciones en entorno de pruebas.
 
 ## ¿Qué debo hacer al recibir una notificación?
 

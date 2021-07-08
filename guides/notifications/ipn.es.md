@@ -4,7 +4,7 @@
 
 **IPN** (_Instant Payment Notification_) es una notificación que se envía de un servidor a otro mediante una llamada `HTTP POST` en relación a tus transacciones.
 
-Para recibir las notificaciones de los eventos en tu plataforma, puedes [configurar previamente una notification_url a la cual Mercado Pago tenga acceso](https://www.mercadopago[FAKER][URL][DOMAIN]/ipn-notifications).
+Para recibir las notificaciones de los eventos en tu plataforma, puedes [configurar previamente una notification_url a la cual Mercado Pago tenga acceso](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
 
 
 ## Eventos
@@ -31,13 +31,19 @@ Si la aplicación no está disponible o demora en responder más de 22 segundos,
 
 Mercado Pago informará a esta `notification_url` tanto en la creación como actualización de los estados de pagos u ordenes con dos parámetros:
 
-| Campo 		| Descripción 				 |
-| ---- 		| ---- 				 |
-| `topic` | Identifica de qué se trata. Puede ser `payment`, `chargebacks` o `merchant_order ` |
+| Campo | Descripción |
+| --- | --- |
+| `topic` | Identifica de qué se trata. Puede ser `payment`, `chargebacks` o `merchant_order `. |
 | `id` | Es un identificador único del recurso notificado. |
 
 
 Ejemplo: Si configuraste la notification_url: `https://www.yoursite.com/notifications`, recibirás notificaciones de pago de esta manera: `https://www.yoursite.com/notifications?topic=payment&id=123456789`
+
+> WARNING
+>
+> Importante
+>
+> Ten en cuenta que no es posible recibir notificaciones en entorno de pruebas.
 
 ## ¿Qué debo hacer al recibir una notificación?
 
@@ -60,6 +66,7 @@ Con esta información puedes realizar las actualizaciones necesarias en tu plata
 > Importante
 >
 > Ten en cuenta que si se exceden los tiempos de respuesta es posible recibir notificaciones duplicadas de un evento.
+
 
 ### Notificaciones de merchant_orders
 

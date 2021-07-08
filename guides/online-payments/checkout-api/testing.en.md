@@ -113,7 +113,6 @@ Start your integration with your test seller user credentials:
 
 | Card | Number | CVV | Expiration Date |
 | :---  | :---: | :---: | :---: |
-| Mastercard | 5474 9254 3267 0366 | 123 | 11/25 |
 | Visa | 4075 5957 1648 3764 | 123 | 11/25 |
 
 ------------
@@ -121,8 +120,8 @@ Start your integration with your test seller user credentials:
 
 | Card | Number | CVV | Expiration Date |
 | :--- | :---: | :---: | :---: |
-| Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
-| Visa | 4509 9535 6623 3704 | 123 | 11/25 |
+| Mastercard |  5808 8877 7464 1586| 123 | 11/25 |
+| Visa | 4104 2962 6235 5432 | 123 | 11/25 |
 
 ------------
 ----[mpe]----
@@ -154,7 +153,7 @@ To **test different payment results,** complete the information you want in the 
 
 ## Start receiving payments
 
-To start charging, you need to meet the [production environment requirements](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production), and must [activate your credentials]([FAKER][CREDENTIALS][URL]).
+To start charging, you need to meet the [requirements to go to production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production), and must [activate your credentials]([FAKER][CREDENTIALS][URL]).
 
 Before activating them, verify that the credentials in your integration are those of the account that receives the money from the sales.<br/>
 

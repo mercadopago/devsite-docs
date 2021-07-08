@@ -16,54 +16,56 @@ Você pode ativar a opção de [vender diretamente em seu site](#bookmark_config
 Os **passos para começar a operar com Mercado Pago** são os seguintes:
 
 1. Crie uma [conta de vendedor](https://www.mercadopago.com.br/activities) no Mercado Pago caso ainda não tenha uma.
-2. Instale o aplicativo dentro da loja.
+2. Sincronize sua conta Mercado Pago em sua loja.
 3. Configure as formas de pagamento Mercado Pago.
 
-## Instalar Mercado Pago em sua loja
+## Sincronize o Mercado Pago em sua loja
 
-Para **vincular sua conta do Mercado Pago à Loja Integrada**, siga os passos abaixo:
+Para **sincronizar sua conta do Mercado Pago à Loja Integrada**, siga os passos abaixo:
 
 1. Acesse as [configurações de formas de pagamento](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) no menu da Loja Integrada.
-2. Clique em “Mercado Pago” e depois em “Instalar aplicativo do Mercado Pago”.
+2. Clique em “Mercado Pago” e depois em "Sincronizar conta do Mercado Pago”.
 3. Você será redirecionado para uma página do Mercado Pago para acessar com seus dados. Clique em “Permitir” para autorizar a conexão.
 
 
 ![Installing Mercado Pago - Loja Integrada](/images/lojaintegrada/lojaintegrada-connect-1.gif)
 
 
-E pronto! O aplicativo do Mercado Pago já está instalado na sua loja e você pode começar a receber pagamentos.
+E pronto! Sua conta Mercado Pago já está sincronizada em sua loja e você pode começar a receber pagamentos.
 
 
 > NOTE
 >
 > Alterar conta do Mercado Pago
 >
-> Se quiser alterar a conta do Mercado Pago do seu site, é necessário sair e reinstalar o aplicativo.
+> Se quiser alterar a conta do Mercado Pago do seu site, é necessário sair da conta ativa e sincronizar utilizando a nova conta.
 > 1. Desconectar de sua conta Mercado Pago, caso conectada em um navegador.
 > 2. Clique no "Menu de opções" e depois em "Sair".
-> 3. Acesse as [configurações de formas de pagamento](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) no menu da Loja Integrada e clique em “Mercado Pago” e depois em "Desinstalar aplicativo".
-> 4. Repita o procedimento para [Instalar Mercado Pago em sua loja](#bookmark_instalar_mercado_pago_em_sua_loja) com a nova conta.
+> 3. Acesse as [configurações de formas de pagamento](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) no menu da Loja Integrada e clique em “Mercado Pago” e depois em "Dessincronizar conta do Mercado Pago".
+> 4. Repita o procedimento para [Sincronizar o Mercado Pago em sua loja](#bookmark_sincronize_o_mercado_pago_em_sua_loja) com a nova conta.
 
 ## Configurar as formas de pagamento
 
-Após vincular sua conta, você tem a **opção de ativar dois tipos de checkout**, são eles: Checkout Transparente e Mercado Pago Redirect. Você precisa ativar um ou outro. Além disso, você pode [configurar pagamentos por boleto](#bookmark_configuração_boleto) e [parcelas sem juros](#bookmark_configuração_de_parcelamento).
+Após vincular sua conta, você tem a opção de **ativar dois tipos de checkout ao mesmo tempo**, são eles: Checkout Transparente e Checkout Pro. Além disso, você pode [configurar pagamentos por boleto](#bookmark_configuração_boleto) e [parcelas sem juros](#bookmark_configuração_de_parcelamento).
 
 Você pode consultar e configurar as [taxas e prazos](https://www.mercadopago.com.br/settings/release-options) de suas vendas online quando quiser.
 
 ### Checkout Transparente
 
-É o checkout em que seu **cliente finaliza o pagamento no ambiente da sua loja**, sem ser redirecionado para outro site.
+Este produto permite ao **cliente efetuar o pagamento no ambiente da loja**, sem ser redirecionado para outro site.
 
 1. Acesse as [configurações de formas de pagamento](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) no menu da Loja Integrada e clique em “Mercado Pago”.
 2. No item “Checkout Transparente” alterar de “Desativado” para “Ativado”.
 3. Clique em “Salvar alterações”.
 
-### Mercado Pago Redirect
+### Checkout Pro
 
-O **comprador é direcionado ao Mercado Pago para fazer o pagamento** e concluir a compra.
+O Checkout Pro é a **integração que te permite cobrar no ambiente do Mercado Pago**, contando com as **formas de pagamentos adicionais** como: Pix, boleto parcelado, débito virtual da Caixa e carteira digital do Mercado Pago.
+
+> Conheça mais sobre as opções de pagamentos que o [Checkout Pro oferece](https://conteudo.mercadopago.com.br/o-que-e-o-checkout-mercado-pago).
 
 1. Acesse as [configurações de formas de pagamento](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) no menu da Loja Integrada e clique em “Mercado Pago”.
-2. No item “Mercado Pago Redirect” alterar de “Desativado” para “Ativado”.
+2. No item “Checkout Pro” alterar de “Desativado” para “Ativado”.
 3. Clique em “Salvar alterações”.
 
 
@@ -121,4 +123,4 @@ Operar com **boleto do Mercado Pago como opção de pagamento**:
 	![Setting account installment - Loja Integrada](/images/lojaintegrada/lojaintegrada-account-installment-1.gif)
 
 
-> Para mais informação, visite o [site oficial do Loja integrada](https://lojaintegrada.com.br/).
+> Para mais informações, visite o [site oficial do Loja integrada](https://lojaintegrada.com.br/).

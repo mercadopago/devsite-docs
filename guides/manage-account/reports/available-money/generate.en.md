@@ -1,6 +1,12 @@
 
 # How to generate your Available Balance report?
 
+> WARNING
+>
+> The Available Balance report will be disabled soon
+>
+> You can use the [Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
+
 
 ## Generating channels
 

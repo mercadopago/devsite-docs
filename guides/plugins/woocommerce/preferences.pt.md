@@ -33,21 +33,28 @@ Insira o **nome do seu negócio** para que apareça na fatura dos seus clientes 
 
 Ative o checkout que quer oferecer aos seus clientes conforme suas preferências e escolha os meios de pagamento com os quais eles podem comprar.
 
-* Ative um tipo de checkout
-  * Use o Checkout Pro para aceitar pagamentos com cartões, em dinheiro e saldo na conta do Mercado Pago. 
-  * Use o Checkout Personalizado para ter controle sobre outras configurações. 
-
-<!-- > WARNING
->
-> Importante
->
-> Lembre-se de que o [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction) é excludente do Checkout Personalizado e viceversa. Você pode usar os de checkout personalizados ao mesmo tempo para oferecer todos os meios de pagamento. -->
+* Ative um tipo de checkout.
+  * Use o Checkout Pro para aceitar pagamentos com cartões, ----[mlb]---- Pix,------------ em dinheiro e saldo na conta do Mercado Pago.
+  * Use o Checkout Personalizado para controlar outras configurações e aceitar pagamentos com cartões de crédito, ----[mlb]---- Pix,------------ boleto e pagamentos presenciais.
 
 * Escolha os [meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods) para seus clientes conforme o país onde operam e o tipo de checkout que esteja configurando.
 
-* Estableça o máximo de parcelas que poderão pagar.
+* Estabeleça o máximo de parcelas que poderão pagar.
 
-* Ativar conversão de moeda do Mercado Pago.
+* Ative a conversão de moeda do Mercado Pago.
+
+----[mlb]----
+> WARNING
+>
+> Importante
+>
+> **Antes de configurar o Pix como meio de pagamento, lembre-se de:**
+>
+> - [Baixar a última versão](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) para atualizar seu plugin do Mercado Pago.
+> - Cadastrar sua chave no Mercado Pago. Se isso não for feito, seus clientes não conseguirão finalizar a compra. [Saiba como fazer](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required).
+
+<span></span>
+------------ 
 
 > NOTE
 >
@@ -101,6 +108,16 @@ Escolha qual experiência de compra seus clientes terão na hora de pagar:
 | --- | --- |
 | Cupons de desconto | Ative esta opção quando quiser oferecer descontos aos seus clientes. Aparecerá um campo no formulário onde poderão inserir seu cupom. |
 | Reduzir inventário | Ative esta opção quando quiser automatizar a diminuição do inventário por cada ordem de compra aprovada após um pagamento com Mercado Pago. |
+
+----[mlb]----
+#### Pagamentos com Pix
+
+| Configuração | Descrição |
+| --- | --- |
+| Vencimento do Pix |  Defina o prazo de validade do código enviado ao cliente após a realização do pedido. Este será o período que o cliente terá para pagar a compra. |
+| Descontos no Mercado Pago | Ative esta opção quando quiser selecionar um valor percentual para descontar dos seus clientes que pagarem com Mercado Pago. |
+| Comissão por compra com Mercado Pago | Ative esta opção quando quiser selecionar um valor adicional para cobrar dos seus clientes que pagarem com Mercado Pago, em forma de tarifa. |
+------------ 
 
 ---
 

@@ -104,41 +104,61 @@ preference.save();
 ===
 The wallet mode works by adding the _purpose_ attribute to the preference.
 ===
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 # Create a preference object
 preference_data = {
-  "items": [
+  items: [
     {
-      "title": "My Item",
-      "unit_price": 100,
-      "quantity": 1
+      title: 'My Item',
+      unit_price: 100,
+      quantity: 1
     }
   ],
-  "purpose": "wallet_purchase"
+  purpose: 'wallet_purchase'
 }
-preference = $mp.create_preference(preference_data)
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
 
 # This value replaces the String "<%= @preference_id %>" in your HTML
-@preference_id = preference["response"]["id"]
+@preference_id = preference['id']
 ```
 ```csharp
 ===
 The wallet mode works by adding the _purpose_ attribute to the preference.
 ===
-// Create a preference object
-Preference preference = new Preference();
+// Create the preference request object
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "My Item",
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75m,
+        },
+    },
+    Purpose = "wallet_purchase",
+};
+// Create the preference
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
+```
+```python
+preference_data = {
+    "items": [
+        {
+            "title": "My Item",
+            "unit_price": 100,
+            "quantity": 1
+        }
+    ],
+    "purpose": "wallet_purchase"
+}
 
-// Create a preference item
-preference.Items.Add(
-  new Item()
-  {
-    Title = "My Item",
-    Quantity = 1,
-    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
-    UnitPrice = (decimal)75
-  }
-);
-preference.Purpose = "wallet_purchase"
-preference.Save();
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
 ```
 ```curl
 ===
@@ -183,57 +203,159 @@ Then, from your frontend, add the following code to display the Checkout Pro Wal
 
 [[[
 ```php
-<script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-  data-preference-id="<?php echo $preference->id; ?>"
-  data-button-label="Pay with Mercado Pago"
-  data-button-type="wallet">
+// Client-Side Mercado Pago SDK
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script>
+// Add the SDK credentials
+const mp = new MercadoPago('PUBLIC_KEY', {
+      locale: 'en-US'
+});
+
+const preferenceId = "<?php echo $preference->id; ?>"
+// Initialize the checkout
+mp.checkout({
+    preference: {
+      id: preferenceId,
+    },
+    render: {
+      container: '.cho-container', // Indicates where the button will be displayed
+      label: 'Pay with Mercado Pago', // Changes the payment button text (optional)
+      type: 'wallet', // Applies the Mercado Pago branding to the button
+    }
+});
 </script>
 ```
 ```node
-<script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-  data-preference-id="<%= global.id %>"
-  data-button-label="Pagar con Mercado Pago"
-  data-button-type="wallet">
+// Client-Side Mercado Pago SDK
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script>
+// Add the SDK credentials
+const mp = new MercadoPago('PUBLIC_KEY', {
+      locale: 'en-US'
+});
+
+// Initialize the checkout
+mp.checkout({
+    preference: {
+      id: 'YOUR_PREFERENCE_ID'
+    },
+    render: {
+      container: '.cho-container', // Indicates where the button will be displayed
+      label: 'Pay with Mercado Pago', // Changes the payment button text (optional)
+      type: 'wallet', // Applies the Mercado Pago branding to the button
+    }
+});
 </script>
 ```
 ```java
-<script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-  data-preference-id="${preference.id}"
-  data-button-label="Pay with Mercado Pago"
-  data-button-type="wallet">
+// Client-Side Mercado Pago SDK
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script>
+// Add the SDK credentials
+const mp = new MercadoPago('PUBLIC_KEY', {
+      locale: 'en-US'
+});
+
+const preferenceId = ${preference.id};
+
+// Initialize the checkout
+mp.checkout({
+    preference: {
+      id: preferenceId,
+    },
+    render: {
+      container: '.cho-container', // Indicates where the button will be displayed
+      label: 'Pay with Mercado Pago', // Changes the payment button text (optional)
+      type: 'wallet', // Applies the Mercado Pago branding to the button
+    }
+});
 </script>
 ```
 ```ruby
-<script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-  data-preference-id="<%= @preference_id %>"
-  data-button-label="Pay with Mercado Pago"
-  data-button-type="wallet">
+# Client-Side Mercado Pago SDK
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script>
+# Add the SDK credentials
+const mp = new MercadoPago('PUBLIC_KEY', {
+      locale: 'en-US'
+});
+
+const preferenceId = "<%= @preference_id %>";
+
+// Initialize the checkout
+mp.checkout({
+    preference: {
+      id: preferenceId,
+    },
+    render: {
+      container: '.cho-container', // Indicates where the button will be displayed
+      label: 'Pay with Mercado Pago', // Changes the payment button text (optional)
+      type: 'wallet', // Applies the Mercado Pago branding to the button
+    }
+});
 </script>
 ```
 ```csharp
-<script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-  data-preference-id="@Html.DisplayFor(model => model.id)"
-  data-button-label="Pay with Mercado Pago"
-  data-button-type="wallet">
+// Client-Side Mercado Pago SDK
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script>
+// Add the SDK credentials
+const mp = new MercadoPago('PUBLIC_KEY', {
+      locale: 'en-US'
+});
+
+const preferenceId = @Html.DisplayFor(model => model.id);
+
+// Initialize the checkout
+mp.checkout({
+    preference: {
+      id: preferenceId,
+    },
+    render: {
+      container: '.cho-container', // Indicates where the button will be displayed
+      label: 'Pay with Mercado Pago', // Changes the payment button text (optional)
+      type: 'wallet', // Applies the Mercado Pago branding to the button
+    }
+});
+</script>
+```
+```python
+# Client-Side Mercado Pago SDK
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script>
+# Add the SDK credentials
+const mp = new MercadoPago('PUBLIC_KEY', {
+      locale: 'en-US'
+});
+
+const preferenceId = {{ preference_id }}
+
+# Initialize the checkout
+mp.checkout({
+    preference: {
+      id: preferenceId,
+    },
+    render: {
+      container: '.cho-container', # Indicates where the button will be displayed
+      label: 'Pay with Mercado Pago', # Changes the payment button text (optional)
+      type: 'wallet', # Applies the Mercado Pago branding to the button
+    }
+});
 </script>
 ```
 ]]]
 
+> This documentation uses the new library version. To see the previous version, go to [Receive payments by Mercado Pago wallet section with MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/wallet-integration).
 
-For more information on each attribute, please check the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/preferences/_checkout_preferences/post). 
+For more information on each attribute, please check the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/preferences/_checkout_preferences/post).
 
-Done! You already have the Mercado Pago wallet integrated on your website. 
+Done! You already have the Mercado Pago wallet integrated on your website.
 
 > WARNING
 >
 > Important
 >
-> To test it, don't forget to log in from another browser or log out from your Mercado Pago account, as you can't pay yourself.<br/> 
+> To test it, don't forget to log in from another browser or log out from your Mercado Pago account, as you can't pay yourself.<br/>
 
 ---
 

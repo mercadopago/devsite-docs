@@ -1,10 +1,3 @@
----
-sites_supported:
-  - mla
-  - mlm
-  - mlb
----
-
 # Integrar assinaturas   
 
 ## Tipos de integração
@@ -156,7 +149,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 ```
 >Você pode obter mais informações sobre os campos na [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference).
 
-Prono! Você criou uma assinatura com um plano associado.
+Pronto! Você criou uma assinatura com um plano associado.
 
 
 ## Assinaturas sem plano associado
@@ -218,6 +211,13 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
     "version": 0
 }
 ```
+
+> NOTE
+> 
+> Pagamento de validação
+> 
+> Para comprovar a validade do cartão, realizamos um pagamento com um valor mínimo. Se o pagamento obter sucesso, procedemos com a realização da devolução desse pagamento. O valor pode diferir conforme cada país.
+
 
 ### Criar assinatura com pagamento pendente
 
@@ -296,6 +296,7 @@ Atributos
 | `auto_recurring.frequency_type` | Indica o tipo de frequência. Pode ser por mês (months) ou dias (days). Juntamente com a frequência, definem o ciclo de parcelas que uma assinatura terá.<br><br> Por exemplo, se a cada duas semanas fosse necessário gerar uma parcela para ser cobrada, ficaria da seguinte forma: `auto_recurring.frequency`: 15 y `auto_recurring.frequency_type`: days |
 | `auto_recurring.transaction_amount` | Valor aplicado à assinatura. |
 | `auto_recurring.currency_id` | Identifica a moeda que corresponde ao país. |
+| `auto_recurring.start_date` | Indica a data de início da assinatura. Se não for especificada, começa no momento. |
 | `auto_recurring.end_date` | Indica se a assinatura terá um limite. Se não especificado, não há limite. |
 | `auto_recurring.free_trial.frequency` | Indica o tempo pelo qual o serviço não será cobrado. Deve ser consistente com `auto_recurring.frequency` |
 | `auto_recurring.free_trial.frequency_type` | Indica o número de parcelas que não serão cobradas pelo serviço. Deve ser consistente com `auto_recurring.frequency_type`. |

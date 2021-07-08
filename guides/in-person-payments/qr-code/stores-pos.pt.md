@@ -1,14 +1,3 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
-  - mlb
----
-
 # Lojas e Caixas
 
 ## Introdução
@@ -19,7 +8,7 @@ As **lojas** e **caixas** são os conceitos que você usará no Mercado Pago par
 
 ## Lojas
 
-É um **estabelecimiento físico** onde seus clientes podem adquirir seus produtos ou serviços. Você pode ter várias lojas numa mesma conta.
+É um **estabelecimento físico** onde seus clientes podem adquirir seus produtos ou serviços. Você pode ter várias lojas numa mesma conta.
 
 ### Quais são os benefícios de criar lojas?
 
@@ -137,4 +126,12 @@ Uma vez criado o caixa, poderemos ver no _Response_ os links para diferentes ent
 >
 > Aprenda passo a passo como integrar este modelo.
 >
-> [Integrar o modelo QR atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/qr-attended-part-b)
+> [Integrar o modelo QR atendido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/qr-attended/introduction)
+
+> RIGHT_BUTTON_RECOMMENDED_PT
+>
+> Integrar o modelo QR dinâmico
+>
+> Oferece a opção de pagar com o valor a ser cobrado já incluído no código QR.
+>
+> [Integrar o modelo QR dinâmico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/qr-dynamic/introduction)

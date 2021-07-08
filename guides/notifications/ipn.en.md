@@ -2,7 +2,7 @@
 
 **IPN** (Instant Payment Notification) is a notification sent from one server to another through an `HTTP POST` request informing your transactions.
 
-To receive event notifications on your platform, you can [previously configure a notification_url accessible for Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/ipn-notifications).
+To receive event notifications on your platform, you can [previously configure a notification_url accessible for Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
 
 
 ## Events
@@ -29,13 +29,19 @@ If your application is not available or takes too long to respond, Mercado Pago 
 
 Mercado Pago will notify to this URL whenever a resource is created or when orders or payment status are updated, with two parameters:
 
-| Field 		| Description 				 |
-| ---- 		| ---- 				 |
-| `topic` | Identifies the type of resource. It may be `payment`, `chargebacks` or `merchant_order` |
+| Field | Description |
+| --- | --- |
+| `topic` | Identifies the type of resource. It may be `payment`, `chargebacks` or `merchant_order`. |
 | `id` | A unique identification of the notified resource. |
 
 
 Example: If you have configured the URL:  `https://www.yoursite.com/notifications`, you will receive payment notifications as follows:  `https://www.yoursite.com/notifications?topic=payment&id=123456789`
+
+> WARNING
+>
+> Important
+>
+> Please note that it is not possible to receive notifications in a test environment.
 
 ## What should I do after receiving a notification?
 

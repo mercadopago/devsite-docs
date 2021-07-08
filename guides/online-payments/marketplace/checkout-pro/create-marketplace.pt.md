@@ -8,16 +8,14 @@
 
 Para começar, você deve:
 
-1. Registrar uma aplicação tipo Marketplace
+1. Registrar uma aplicação e na sequência editar sua **Redirect URI**.
 2. Solicitar aos seus vendedores que se vinculem a ela
 3. Criar preferências de pagamento em nome de seus vendedores
 
 
 ## 1. Como criar sua aplicação
 
-Crie sua aplicação a partir deste [link](https://applications.mercadopago.com/), marcando a opção **MP Connect / Marketplace Mode** e os **scopes** `read`, `write` e `offline_access`.
-
-Você também deve preencher uma **Redirect URI** a partir da qual os vendedores serão redirecionados para serem vinculados corretamente.
+[Crie uma aplicação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel), e na sequência edite sua configuração avançada completando a **Redirect URI** onde serão redirecionados os vendedores ao finalizar o processo de vinculação.
 
 Assim que criar a aplicação, você obterá o `APP_ID` (identificador de aplicação) necessário para o próximo passo.
 
@@ -25,16 +23,16 @@ Assim que criar a aplicação, você obterá o `APP_ID` (identificador de aplica
 
 Para operar no Mercado Pago em nome do seu vendedor, primeiro você deverá lhe solicitar uma autorização.
 
-2.1. Para isso, redirecione o usuário para a seguinte URL substituindo em `client_id`, o valor de `APP_ID` e a `redirect_uri` que configurou no passo anterior:
+2.1. Para isso, redirecione o vendedor para a seguinte URL substituindo em `client_id`, o valor de `APP_ID` e a `redirect_uri` que configurou no passo anterior:
 
 `https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http://www.URL_de_retorno.com`
 
 <br>
-2.2. Você receberá o código de autorização na URL que especificou:
+2.2. Quando o vendedor aceitar, será feita um último redirecionamento e você receberá o código de autorização na URL que especificou:
 
 `http://www.URL_de_retorno.com?code=AUTHORIZATION_CODE`
 
-O `AUTHORIZATION_CODE` será utilizado para criar as credenciais, e será válido durante 10 minutos.
+O `AUTHORIZATION_CODE` possui um tempo de validade de 10 minutos e deve ser utilizado para criar as credenciais, que irão te permitir operar em nome do vendedor.
 
 <br>
 2.3. Você também pode incluir o parâmetro `state` na URL de autorização para identificar a quem corresponde o código que recebeu. Faça isso com segurança, atribuindo neste parâmetro um identificador aleatório exclusivo para cada tentativa.
@@ -45,7 +43,7 @@ Incluindo esse parâmetro, a URL de redirecionamento ficaria da seguinte forma:
 
 Agora você receberá o código de autorização e o identificador seguro na URL de retorno especificada:
 
-`http://www.URL_de_retorno.com?code=AUTHORIZATION_CODE&id=RANDOM_ID`
+`https://www.URL_de_retorno.com?code=AUTHORIZATION_CODE&id=RANDOM_ID`
 
 > Não envie informações confidenciais ou credenciais da conta Mercado Pago.
 
@@ -127,7 +125,7 @@ Resposta esperada:
 
 ## 3. Integre o checkout
 
-Para realizar a cobrança em nome de seus vendedores, você deve integrar o [Checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction), gerando as preferências de pagamento com o Access Token de cada vendedor para a sua aplicação.
+Para realizar a cobrança em nome de seus vendedores, você deve integrar o [Checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction), gerando as preferências de pagamento com o Access Token que você obteve vinculando cada vendedor ao seu aplicativo.
 
 Se deseja cobrar uma comissão por cada pagamento processado pela sua aplicação em nome do seu vendedor, simplesmente adicione esse valor no parâmetro `marketplace_fee` ao criar a preferência:
 
@@ -229,23 +227,74 @@ preference.save();
 ```
 ```ruby
 
-preference = MercadoPago::Preference.new()
+sdk = Mercadopago::SDK.new('ENV_ACCES_TOKEN')
 
-item = MercadoPago::Item.new()
-item.title="Blue shirt"
-item.quantity= 10
-item.currency_id = '[FAKER][CURRENCY][ACRONYM]'
-item.unit_price = [FAKER][COMMERCE][PRICE]
+preference_data = {
+  items: [
+    {
+      title: 'Blue shirt',
+      description: 'Multicolor Item',
+      quantity: 10,
+      currency_id: '[FAKER][CURRENCY][ACRONYM]',
+      unit_price: [FAKER][COMMERCE][PRICE]
+    }
+  ],
+  payer: {
+    email: 'john@yourdomain.com'
+  },
+  marketplace_fee: 2.56,
+  notification_url: 'http://urlmarketplace.com/notification_ipn'
+}
 
-payer = MercadoPago::Payer.new()
-payer.email="john@yourdomain.com"
+preference_response = sdk.preference.create(preference_data);
+preference = preference_response[:response]
 
-preference.items = [item]
-preference.payer = payer
-preference.marketplace_fee = 2.56
-preference.notification_url = "http://urlmarketplace.com/notification_ipn"
+```
+```csharp
 
-preference.save
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Blue shirt",
+            Quantity = 10,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = [FAKER][COMMERCE][PRICE]m,
+        },
+    },
+    Payer = new PreferencePayerRequest
+    {
+        Email = "john@yourdomain.com",
+    },
+    MarketplaceFee = 2.56m,
+    NotificationUrl = "http://urlmarketplace.com/notification_ipn",
+};
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
+
+```
+```python
+
+preference_data = {
+    "items": [
+        {
+            "title": "Blue shirt",
+            "quantity": 10,
+            "currency_id": "[FAKER][CURRENCY][ACRONYM]",
+            "unit_price": [FAKER][COMMERCE][PRICE],
+        }
+    ],
+    "payer": {
+        "email": "john@yourdomain.com"
+    },
+    "marketplace_fee": 2.56,
+    "notification_url": "http://urlmarketplace.com/notification_ipn"
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
 
 ```
 ]]]

@@ -1,20 +1,20 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
-  - mlb
----
-
 # Integración avanzada
 
 ## Devoluciones de tus pagos
 
+----[mla, mlm, mco, mlu, mlb, mlc]----
+
 Las devoluciones suceden cuando el pago se realizó pero el vendedor decide anularlo total o parcialmente.
 Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).
+
+------------
+
+----[mpe]----
+
+Las devoluciones suceden cuando el pago se realizó pero el vendedor decide anularlo totalmente.
+Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).
+
+------------
 
 > WARNING
 > 

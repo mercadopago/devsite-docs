@@ -4,34 +4,33 @@
 
 We know, some terms are technical and you may not be familiar with all of them. Use this glossary to not get lost!
 
-| Name on the report column | --- | --- || What it means |
+| Name on the report column | What it means |
 | --- | --- |
 | EXTERNAL_REFERENCE | <br/> ID that helps identify the origin of the operation. For example, it can be the sale through the order ID or the shipment (if it is a cart purchase) or the own ID provided by the seller in case of an external integration. <br/><br/> Keep in mind that it is possible that this field is empty for some cases such as ticket payment or money transfer, among others. <br/> <br/> |
 | SOURCE_ID | Operation ID in Mercado Pago (for example, the payment of a sale). |
 | USER_ID | Seller account code (Cust ID). |
 | PAYMENT_METHOD | Review the ----[mla]---- [available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_argentina)  ------------ ----[mlb]---- [available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_brasil) ------------ ----[mpe]---- [available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_perú)  ------------ ----[mco]---- [available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_colombia)  ------------ ----[mlm]---- [available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_méxico) ------------ ----[mlu]---- [available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_uruguay) ------------ ----[mlc]---- [available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods/#bookmark_chile) ------------ according to the country with which you operate in Mercado Pago. |
-| PAYMENT_METHOD_TYPE | <table style="border:none;background:none;font-size:16px;height:auto" ><tr style="border:none;background:none;"><td style="border:none;background:none;"> Payment method type. <br/><br/> It can be: <br/><ul><li>*credit_card*: credit card.</li><li>*debit_card*: debit card.</li><li>*bank_transfer*: transfer.</li><li>*atm*: ATM. </li><li>*ticket*: cash.</li><li>*account_money*: account money. </li></ul></td></tr></table> |
-| SITE | <table style="border:none;background:none;font-size:16px;height:auto" ><tr style="border:none;background:none;"><td style="border:none;background:none;"> Country to which the Mercado Pago account belongs: <br/><ul><li> MLA: Argentina </li><li> MLB: Brasil </li><li> MLM: México </li><li> MLV: Venezuela </li><li> MLC: Chile </li><li> MCO: Colombia </li><li> MLU: Uruguay </li><li> MPE: Peru </li></ul></td></tr></table> |
-| TRANSACTION_TYPE | <table style="border:none;background:none;font-size:16px;height:auto" ><tr style="border:none;background:none;"><td style="border:none;background:none;"> Transaction type. It can be:<br/><ul><li> *SETTLEMENT*: Approved payment. </li><li> *REFUND*: Payment returned in whole or in part. </li><li> *CHARGEBACK*: The buyer made a chargeback (unrecognized payment) on his credit card. </li><li> *DISPUTE*: The buyer initiated a claim for that payment. </li><li> *WITHDRAWAL*: Withdrawal to a bank account. </li><li> *WITHDRAWAL_CANCEL*: Canceled withdrawal to a bank account. </li><li>*PAYOUT*: Money withdrawal available at Mercado Pago.</li></ul></td></tr></table> |
+| PAYMENT_METHOD_TYPE | Payment method type. <br><br> It can be: <br><br> *credit_card*: credit card.<br>*debit_card*: debit card.<br>*bank_transfer*: transfer.<br>*atm*: ATM. <br>*ticket*: cash.<br>*account_money*: account money. <br><br>|
+| SITE | Country to which the Mercado Pago account belongs: <br><br> MLA: Argentina <br> MLB: Brasil <br> MLM: México <br> MLV: Venezuela <br> MLC: Chile <br> MCO: Colombia <br> MLU: Uruguay <br> MPE: Peru <br><br>|
+| TRANSACTION_TYPE | Transaction type. <br><br>It can be:<br><br> *SETTLEMENT*: approved payment.<br> ----[mlu, mla, mlm, mco, mlc, mlb]---- *REFUND*: payment returned in whole or in part.------------ ----[mpe]---- *REFUND*: payment fully returned.------------ <br>*CHARGEBACK*: the buyer made a chargeback (unrecognized payment) on his credit card.<br>*DISPUTE*: the buyer initiated a claim for that payment. <br>*WITHDRAWAL*: withdrawal to a bank account.<br>*WITHDRAWAL_CANCEL*: canceled withdrawal to a bank account.<br>*PAYOUT*: money withdrawal available at Mercado Pago. ----[mlb]----  <br>*TRAVA_DE_RECEBIVEL*: block receivable. ------------ <br><br>|
 | TRANSACTION_AMOUNT | Gross amount of the transaction. |
-| TRANSACTION_CURRENCY | <table style="border:none;background:none;font-size:16px;height:auto" ><tr style="border:none;background:none;"><td style="border:none;background:none;"> You can take some of these values as appropriate: <br/><ul><li> MXN (Mexican Peso) </li><li> CLP (Chilean Peso) </li><li> ARS (Argentine Peso) </li><li> BRL (Brazilian Real) </li><li>COP (Colombian Peso) </li><li> PEN (Peruvian Sun) </li><li> UYU (Uruguayan Peso) </li><li> VES (Venezuelan Bolivar)
-</li></ul></td></tr></table> |
+| TRANSACTION_CURRENCY | You can take some of these values as appropriate: <br><br> MXN (Mexican Peso) <br> CLP (Chilean Peso) <br> ARS (Argentine Peso) <br> BRL (Brazilian Real) <br> COP (Colombian Peso) <br> PEN (Peruvian Sun) <br> UYU (Uruguayan Peso) <br> VES (Venezuelan Bolivar) <br><br> |
+| SELLER_AMOUNT | Amount received for split purchases. |
 | TRANSACTION_DATE | Date of transaction accreditation. |
 | FEE_AMOUNT | Sum of processing fees, shipments, financing and coupons if assumed by the seller. |
 | SETTLEMENT_NET_AMOUNT | Net amount of the transaction that impacted the account balance. All commissions involved from `TRANSACTION_AMOUNT` were discounted. |
-| SETTLEMENT_CURRENCY | <table style="border:none;background:none;font-size:16px;height:auto" ><tr style="border:none;background:none;"><td style="border:none;background:none;"> You can take some of these values as appropriate: <br/><ul><li> MXN (Mexican Peso) </li><li> CLP (Chilean Peso) </li><li> ARS (Argentine Peso) </li><li> BRL (Brazilian Real) </li><li>COP (Colombian Peso) </li><li> PEN (Peruvian Sun) </li><li> UYU (Uruguayan Peso) </li><li> VES (Venezuelan Bolivar)
-</li></ul></td></tr></table> |
+| SETTLEMENT_CURRENCY | You can take some of these values as appropriate: <br><br> MXN (Mexican Peso) <br> CLP (Chilean Peso) <br> ARS (Argentine Peso) <br> BRL (Brazilian Real) <br> COP (Colombian Peso) <br> PEN (Peruvian Sun) <br> UYU (Uruguayan Peso) <br> VES (Venezuelan Bolivar) <br><br> |
 | SETTLEMENT_DATE | Date the transaction money was credited. |
 | REAL_AMOUNT | Net amount of the transaction, if it is a settlement, the amounts for chargebacks, claims or returns are discounted. |
 | COUPON_AMOUNT | Discount coupon amount. **Only the gross amount** (`TRANSACTION_AMOUNT`) **is discounted if provided by the seller**. |
-| METADATA | Extra data such as the ID of partial returns or data provided by the seller in case of having an external integration. |
+| METADATA | ----[mlu, mla, mlm, mco, mlc, mlb]---- Extra data such as the ID of partial returns or data provided by the seller in case of having an external integration. ------------ ----[mpe]---- Extra data such as data provided by the seller in case of having an external integration. ------------|
 | MKP_FEE_AMOUNT | Mercado Libre Fee. |
 | FINANCING_FEE_AMOUNT | Cost for offering interest-free installments. |
 | SHIPPING_FEE_AMOUNT | Shipping cost. |
 | TAXES_AMOUNT | Taxes charged for gross income withholdings. |
 | INSTALLMENTS | Number of installments in which the operation was carried out. |
 | TAX_AMOUNT_TELCO | The value of the tax on telecommunications companies that is deducted from the gross value. |
-| TAX_DETAIL | Description of the tax withheld by operation in TAXES_AMOUNT. |
+| TAX_DETAIL | Description of the tax withheld by operation in `TAXES_AMOUNT`. ----[mla]---- <br><br>You can consider the following values depending on the jurisdiction: <br>cordoba<br>corrientes<br>mendoza<br>la_pampa<br>santa_fe<br>tucuman<br>entre_rios<br>catamarca<br>neuquen<br>santiago_del_estero<br>rio_negro<br>jujuy ------------ <br><br> |
 | POS_ID | Cash ID if the payment is made through a physical commerce. |
 | POS_NAME | Cash name for the payment made through a physical commerce. |
 | EXTERNAL_POS_ID | User-defined cashier ID for payment made through a physical commerce. |
@@ -43,6 +42,7 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | SHIPMENT_MODE | Shipping Mode. |
 | PACK_ID | Package identification in the cart. |
 | TAXES_DISAGGREGATED | Taxes disaggregated in JSON format. |
+| POI_ID | Point ID if payment is made through a physical retailer. |
 
 <hr/>
 

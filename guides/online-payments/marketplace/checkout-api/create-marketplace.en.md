@@ -8,15 +8,13 @@
 
 To begin, you need to:
 
-1. Register a Marketplace application.
+1. Register an application and then edit its **Redirect URI**.
 2. Request your sellers to connect.
 3. Create payments on behalf of your sellers.
 
 ## 1. How to create your application
 
-Create your application by accessing [this link](https://applications.mercadopago.com/), checking the option **MP Connect / Marketplace Mode** and the scopes `read`, `write` and `offline_access`.
-
-You must also complete a **Redirect URI** where the sellers will be redirected in order to be linked correctly.
+Create your application by accessing [this link](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel), then edit its settings and complete the **Redirect URI** where the sellers will be redirected in order to be linked correctly.
 
 Once the application has been created, you will get the `APP_ID` (application identifier) required for the next step.
 
@@ -29,11 +27,11 @@ To operate in Mercado Pago on behalf of your seller, you need to request their a
 `https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http://www.URL_de_retorno.com`
 
 <br>
-2.2. You'll receive the authorization code in the URL that you specified:
+2.2. When the seller accepts, a last redirect is made and you will receive the authorization code in the URL that you specified:
 
 `http://www.URL_de_retorno.com?code=AUTHORIZATION_CODE`
 
-This `AUTHORIZATION_CODE` will be used to create the credentials and will be valid for 10 minutes.
+This `AUTHORIZATION_CODE` must be used to create the credentials that allow you to operate on behalf of the seller. This code will be valid for 10 minutes since it's reception.
 
 <br>
 2.3. You can also include the `state` parameter in the URL authorization to identify who is responsible for the code you received. Do this in a safe manner and assign a random identifier in the parameter which is unique for each attempt.
@@ -129,7 +127,7 @@ Expected response:
 
 ## 3. Integrate the API
 
-To collect on behalf of your sellers you must integrate the [API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction), using the `access_token` of each seller for your application.
+To collect on behalf of your sellers you must integrate the [API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction), generating the payment with the Access Token you obtained by linking each seller to your application.
 
 If you want to charge a fee for each payment processed by your application on behalf of your seller, simply add that amount to the `application_fee` parameter when creating the preference:
 
@@ -198,19 +196,66 @@ mercadopago.payment.create(payment_data).then(function (data) {
 ```ruby
 
 require 'mercadopago'
-MercadoPago::SDK.configure(ACCESS_TOKEN: ENV_ACCESS_TOKEN)
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 100
-payment.token = 'ff8080814c11e237014c1ff593b57b4d'
-payment.description = 'Title of what you are paying for'
-payment.installments = 1
-payment.payment_method_id = "visa"
-payment.payer = {
-  email: "test_user_19653727@testuser.com"
+payment_data = { 
+  transaction_amount: 100,
+  token: 'ff8080814c11e237014c1ff593b57b4d',
+  description: 'Title of what you are paying for',
+  installments: 1,
+  payment_method_id: 'visa',
+  payer: {
+    email: 'test_user_19653727@testuser.com'
+  }
 }
 
-payment.save()
+payment_response = sdk.payment.create(payment_data)
+payment = payment_response[:response]
+
+```
+```csharp
+
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
+
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+
+var paymentRequest = new PaymentCreateRequest
+{
+    TransactionAmount = 100,
+    Token = "ff8080814c11e237014c1ff593b57b4d",
+    Description = "Title of what you are paying for",
+    Installments = 1,
+    PaymentMethodId = "visa",
+    Payer = new PaymentPayerRequest
+    {
+        Email = "test_user_19653727@testuser.com",
+    },
+    ApplicationFee = 5,
+};
+
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(paymentRequest);
+```
+```python
+
+import mercadopago
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+payment_data = {
+    "transaction_amount": 100,
+    "token": 'ff8080814c11e237014c1ff593b57b4d',
+    "description": "Title of what you are paying for",
+    "installments": 1,
+    "payment_method_id": "visa",
+    "payer": {
+        "email": "test_user_19653727@testuser.com"
+    }
+}
+
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
 
 ```
 ]]]
@@ -221,7 +266,7 @@ The seller will receive the difference between the total amount and the fees, bo
 
 You need to send your `notification_url`, where you will receive a notification of all new payments and status updates generated.
 
-In order to receive notifications when your clients authorize your application, you can [configure the url](https://www.mercadopago.com/mla/account/webhooks) in your account.
+In order to receive notifications when your clients authorize your application, you can [configure the url](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) in your account.
 
 For more information, go to the [notifications section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks).
 
