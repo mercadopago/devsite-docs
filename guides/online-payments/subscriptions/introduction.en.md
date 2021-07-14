@@ -12,7 +12,7 @@ There are two roles involved:
 > 
 > Do you want to offer subscriptions quickly and easily?
 > 
-> Enter the [Subscriptions](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans) section on your Mercado Pago account panel, set the data you need and that's it!
+> Enter the [Subscription plans](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans) section on your Mercado Pago account panel, set the data you need and that's it!
 
 
 ## Key concepts
