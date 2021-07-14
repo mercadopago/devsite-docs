@@ -30,7 +30,7 @@ You must make the following API request to create each of the users.
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
--H 'Authorization: Bearer ACCESS_TOKEN' \
+-H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
 "https://api.mercadopago.com/users/test_user" \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
@@ -56,7 +56,7 @@ curl -X POST \
 | Brazil | 4235 6477 2802 5682 | 5031 4332 1540 6351 | 3753 651535 56885 |
 | Chile | 4168 8188 4444 7115 | 5416 7526 0258 2580 | 3757 781744 61804 |
 | Colombia | 4013 5406 8274 6260 | 5254 1336 7440 3564 | 3743 781877 55283 |
-| Mexico | 4075 5957 1648 3764 | 5474 9254 3267 0366 | unavailable |
+| Mexico | 4075 5957 1648 3764 | unavailable | unavailable |
 | Peru | 4009 1753 3280 6176 | unavailable | unavailable |
 | Uruguay | 4157 2362 1173 6486 | 5161 4413 1585 2061 | unavailable |
 
@@ -77,7 +77,7 @@ The complete process for testing the checkout is as follows:
     * **CONT**: Pending payment.  
     * **CALL**: Payment declined, call to authorize.  
     * **FUND**: Payment declined due to insufficient funds.  
-    * **SECU**: Payment declined by security code.  
+    * **SECU**: Payment declined by the card security code.  
     * **EXPI**: Payment declined by expiration date.  
     * **FORM**: Payment declined due to error in form.  
     * **OTHE**: General decline.

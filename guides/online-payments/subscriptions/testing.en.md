@@ -1,10 +1,3 @@
----
-sites_supported:
-  - mla
-  - mlm
-  - mlb
----
-
 # Test your subscriptions
 
 We explain how to use our cards and test users to verify that your subscriptions are created correctly.
@@ -30,7 +23,7 @@ Run the following curl to generate a test user:
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
--H "Authorization: Bearer ENV_ACCESS_TOKEN" \
+-H 'Authorization: Bearer PROD_ACCESS_TOKEN' \
 "https://api.mercadopago.com/users/test_user" \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```

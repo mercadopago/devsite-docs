@@ -10,26 +10,59 @@ Defina o viewport adicionando o seguinte código dentro da tag `<head>` de seu s
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 ```
 
-### Passo 2: Incorporar o código javascript
+### Passo 2: Incorporar o Web Tokenize Checkout ao seu site
 
-Este _fragmento de código javascript_ criará um botão de pagamento. Quando o comprador pressionar o botão aparecerá o checkout. Inclua o seguinte código no lugar onde deverá estar o botão dentro de seu site:
+Para adicionar o Web Tokenize Checkout deve seguir os seguintes passos:
+
+Quando você tiver adicionado o código ao seu site, será adicionado um botão de pagamento que inicializará o checkout ao ser pressionado.
+
+1. Adicione o SDK MercadoPago.js V2:
 
 ```html
-<form action="https://www.meu-site.com/processar-pagamento" method="POST">
-  <script
-    src="https://www.mercadopago[FAKER][URL][DOMAIN]/integrations/v1/web-tokenize-checkout.js"
-    data-public-key="ENV_PUBLIC_KEY"
-    data-transaction-amount="100.00">
-  </script>
-</form>
+<html>
+  <body>
+    ...
+    <!-- SDK Client-Side Mercado Pago -->
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+  </body>
+</html>
 ```
+
+2. Configure as credenciais do SDK para seu uso e inicializa seu checkout com o identificador do elemento onde deverá ser apresentado o botão de pagamento:
+
+```html
+<script>
+// Adicione as credenciais do SDK
+const mp = new MercadoPago('PUBLIC_KEY', {locale: 'es-AR'});
+
+// Inicializa o Web Tokenize Checkout
+mp.checkout({
+  tokenizer: {
+    totalAmount: 4000,
+    backUrl: 'https://www.minha-loja.com/processar-pagamento'
+  },
+ render: {
+    container: '.tokenizer-container', // Indica onde o botão de pagamento será exibido
+    label: 'Pagar' // Muda o texto do botão de pagamento (opcional)
+ }
+});
+</script>
+```
+
+Neste caso, será mostrado um botão de pagamento que abrirá o Web Tokenize Checkout.
+
+Você pode consultar outras maneiras de abrir o checkout na [seção de Personalizações](https://www.mercadopago[FAKER][URl][DOMAIN]/developers/pt/guides/online-payments/web-tokenize-checkout/personalization).
+
 Você pode encontrar sua Public key na [seção "Credenciais"]([FAKER][CREDENTIALS][URL]).
 
 > Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials).
 
+> Esta documentação utiliza a nova versão da biblioteca. Para ver a versão anterior, vá para a [seção de Receba um pagamento com cartão com MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/web-tokenize-checkout/v1/receiving-payment-by-card).
+
+
 ### Paso 3: Obter todos os dados
 
-O *Web Tokenize Checkout* fará um `POST` para a URL que tenha definido no atributo `action` no fragmento de código javascript (Exemplo em: **/processar-pagamento**) com certos dados. Você deve utilizar os seguintes dados para realizar o pagamento.
+O *Web Tokenize Checkout* fará um `POST` para a URL que tenha definido no atributo `backUrl` no fragmento de código javascript (Exemplo em: **/processar-pagamento**) com certos dados. Você deve utilizar os seguintes dados para realizar o pagamento.
 
 #### Os dados são:
 
@@ -64,16 +97,22 @@ const installments = req.body.installments;
 const issuer_id = req.body.issuer_id;
 ```
 ```ruby
-token = request.body.token
-payment_method_id = request.body.payment_method_id
-installments = request.body.installments
-issuer_id = request.body.issuer_id
+token = params[:token]
+payment_method_id = params[:payment_method_id]
+installments = params[:installments]
+issuer_id = params[:issuer_id]
 ```
 ```csharp
 token = Request["token"]
 payment_method_id = Request["payment_method_id"]
 installments = Request["installments"]
 issuer_id = Request["issuer_id"]
+```
+```python
+token = request.POST.get("token")
+payment_method_id = request.POST.get("payment_method_id")
+installments = request.POST.get("installments")
+issuer_id = request.POST.get("issuer_id")
 ```
 ]]]
 
@@ -155,47 +194,67 @@ mercadopago.payment.save(payment_data).then(function (data) {
 ```
 ```ruby
 require 'mercadopago'
-MercadoPago::SDK.access_token = "ENV_ACCESS_TOKEN";
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 
-payment = MercadoPago::Payment.new()
-payment.transaction_amount = 100
-payment.token = token
-payment.description = 'Blue shirt'
-payment.installments = installments
-payment.payment_method_id = payment_method_id
-payment.issuer_id = issuer_id
-payment.payer = {
-  email: "john@yourdomain.com"
+payment_object = {
+   transaction_amount: 100,
+   token: token,
+   description: 'Blue shirt',
+   installments: installments,
+   payment_method_id: payment_method_id,
+   issuer_id: issuer_id,
+   payer: {
+      email: 'john@yourdomain.com'
+  }
 }
-# Armazena e envia o pagamento
-payment.save()
+payment_response = sdk.payment.create(payment_object)
+payment = payment_response[:response]
 
 ```
 ```csharp
-using MercadoPago;
-using MercadoPago.DataStructures.Payment;
-using MercadoPago.Resources;
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
 // ...
-MercadoPago.SDK.SetAccessToken(ENV_ACCESS_TOKEN);
-//...
-Payment payment = new Payment()
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+// ...
+var paymentRequest = new PaymentCreateRequest
 {
-    TransactionAmount = float.Parse("100"),
+    TransactionAmount = 100,
     Token = token,
     Description = "Blue shirt",
     Installments = installments,
     PaymentMethodId = payment_method_id,
     IssuerId = issuer_id,
-    Payer = new Payer(){
-        Email = "john@yourdomain.com"
-    }
+    Payer = new PaymentPayerRequest
+    {
+        Email = "john@yourdomain.com",
+    },
 };
-// Armazena e envia o pagamento
-payment.Save();
-//...
+// Cria o pagamento
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(paymentRequest);
+// ...
 // Imprime o status do pagamento
-Console.log(payment.Status);
-//...
+Console.WriteLine(payment.Status);
+// ...
+```
+```python
+payment_data = {
+    "transaction_amount": 100,
+    "token": token,
+    "description": "Blue shirt",
+    "installments": installments,
+    "payment_method_id": payment_method_id,
+    "issuer_id": issuer_id,
+    "payer": {
+        "email": "john@yourdomain.com"
+    }
+}
+
+# Armazena e envia o pagamento
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
 ```
 ]]]
 

@@ -99,41 +99,61 @@ preference.save();
 ===
 O modo carteira funciona adicionando o atributo _purpose_ na preferência.
 ===
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 # Cria um objeto de preferência
 preference_data = {
-  "items": [
+  items: [
     {
-      "title": "Meu produto",
-      "unit_price": 100,
-      "quantity": 1
+      title: 'Meu produto',
+      unit_price: 100,
+      quantity: 1
     }
   ],
-  "purpose": "wallet_purchase"
+  purpose: 'wallet_purchase'
 }
-preference = $mp.create_preference(preference_data)
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
 
 # Este valor substituirá a string "<%= @preference_id %>" no seu HTML
-@preference_id = preference["response"]["id"]
+@preference_id = preference['id']
 ```
 ```csharp
 ===
 O modo carteira funciona adicionando o atributo _purpose_ na preferência.
 ===
-// Cria um objeto de preferência
-Preference preference = new Preference();
+// Cria o objeto de request da preferência
+var request = new PreferenceRequest
+{
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Meu produto,
+            Quantity = 1,
+            CurrencyId = "[FAKER][CURRENCY][ACRONYM]",
+            UnitPrice = 75m,
+        },
+    },
+    Purpose = "wallet_purchase",
+};
+// Cria a preferência
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
+```
+```python
+preference_data = {
+    "items": [
+        {
+            "title": "Meu produto",
+            "unit_price": 100,
+            "quantity": 1
+        }
+    ],
+    "purpose": "wallet_purchase"
+}
 
-// Cria um item na preferência
-preference.Items.Add(
-  new Item()
-  {
-    Title = "Meu produto",
-    Quantity = 1,
-    CurrencyId = CurrencyId.[FAKER][CURRENCY][ACRONYM],
-    UnitPrice = (decimal)75
-  }
-);
-preference.Purpose = "wallet_purchase"
-preference.Save();
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
 ```
 ```curl
 ===
@@ -178,49 +198,153 @@ Depois, do seu frontend, adicione o seguinte código para exibir o botão de pag
 
 [[[
 ```php
-<script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-  data-preference-id="<?php echo $preference->id; ?>"
-  data-button-label="Paga com Mercado Pago"
-  data-button-type="wallet">
+// SDK Client-Side Mercado Pago
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script>
+// Adicione as credenciais do SDK
+const mp = new MercadoPago('PUBLIC_KEY', {
+      locale: 'es-AR'
+});
+
+const preferenceId = "<?php echo $preference->id; ?>"
+
+// Inicializa o checkout
+mp.checkout({
+    preference: {
+      id: preferenceId
+    },
+    render: {
+      container: '.cho-container', // Indica onde o botão de pagamento será exibido
+      label: 'Pagar com Mercado Pago', // Muda o texto do botão de pagamento (opcional)
+      type: 'wallet', // Aplica a marca do Mercado Pago ao botão
+    }
+});
 </script>
 ```
 ```node
-<script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-  data-preference-id="<%= global.id %>"
-  data-button-label="Paga com Mercado Pago"
-  data-button-type="wallet">
+// SDK Client-Side Mercado Pago
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script>
+// Adicione as credenciais do SDK
+const mp = new MercadoPago('PUBLIC_KEY', {
+      locale: 'es-AR'
+});
+
+// Inicializa o checkout
+mp.checkout({
+    preference: {
+      id: 'YOUR_PREFERENCE_ID'
+    },
+    render: {
+      container: '.cho-container', // Indica onde o botão de pagamento será exibido
+      label: 'Pagar com Mercado Pago', // Muda o texto do botão de pagamento (opcional)
+      type: 'wallet', // Aplica a marca do Mercado Pago ao botão
+    }
+});
 </script>
+
 ```
 ```java
-<script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-  data-preference-id="${preference.id}"
-  data-button-label="Paga com Mercado Pago"
-  data-button-type="wallet">
+// SDK Client-Side Mercado Pago
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script>
+// Adicione as credenciais do SDK
+const mp = new MercadoPago('PUBLIC_KEY', {
+      locale: 'es-AR'
+});
+
+const preferenceId = ${preference.id};
+
+// Inicializa o checkout
+mp.checkout({
+    preference: {
+      id: preferenceId
+    },
+    render: {
+      container: '.cho-container', // Indica onde o botão de pagamento será exibido
+      label: 'Pagar com Mercado Pago', // Muda o texto do botão de pagamento (opcional)
+      type: 'wallet', // Aplica a marca do Mercado Pago ao botão
+    }
+});
 </script>
 ```
 ```ruby
-<script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-  data-preference-id="<%= @preference_id %>"
-  data-button-label="Paga com Mercado Pago"
-  data-button-type="wallet">
+# SDK Client-Side Mercado Pago
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script>
+# Adicione as credenciais do SDK
+const mp = new MercadoPago('PUBLIC_KEY', {
+      locale: 'es-AR'
+});
+
+const preferenceId = "<%= @preference_id %>";
+
+# Inicializa o checkout
+mp.checkout({
+    preference: {
+      id: preferenceId
+    },
+    render: {
+      container: '.cho-container', # Indica onde o botão de pagamento será exibido
+      label: 'Pagar com Mercado Pago', # Muda o texto do botão de pagamento (opcional)
+      type: 'wallet', # Aplica a marca do Mercado Pago ao botão
+    }
+});
 </script>
 ```
 ```csharp
-<script
-  src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-  data-preference-id="@Html.DisplayFor(model => model.id)"
-  data-button-label="Paga com Mercado Pago"
-  data-button-type="wallet">
+// SDK Client-Side Mercado Pago
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script>
+// Adicione as credenciais do SDK
+const mp = new MercadoPago('PUBLIC_KEY', {
+      locale: 'es-AR'
+});
+
+const preferenceId = @Html.DisplayFor(model => model.id);
+
+// Inicializa o checkout
+mp.checkout({
+    preference: {
+      id: preferenceId
+    },
+    render: {
+      container: '.cho-container', // Indica onde o botão de pagamento será exibido
+      label: 'Pagar com Mercado Pago', // Muda o texto do botão de pagamento (opcional)
+      type: 'wallet', // Aplica a marca do Mercado Pago ao botão
+    }
+});
+</script>
+```
+```python
+# SDK Client-Side Mercado Pago
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script>
+# Adicione as credenciais do SDK
+const mp = new MercadoPago('PUBLIC_KEY', {
+      locale: 'es-AR'
+});
+
+const preferenceId = {{ preference_id }}
+
+# Inicializa o checkout
+mp.checkout({
+    preference: {
+      id: preferenceId
+    },
+    render: {
+      container: '.cho-container', # Indica onde o botão de pagamento será exibido
+      label: 'Pagar com Mercado Pago', # Muda o texto do botão de pagamento (opcional)
+      type: 'wallet', # Aplica a marca do Mercado Pago ao botão
+    }
+});
 </script>
 ```
 ]]]
 
+> Esta documentação utiliza a nova versão da biblioteca. Para ver a versão anterior, vá para a [seção de Receba pagamentos com a carteira do Mercado Pago com MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v1/wallet-integration).
 
-Para mais informações sobre cada atributo, confira a [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/preferences/_checkout_preferences/post). 
+Para mais informações sobre cada atributo, confira a [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/preferences/_checkout_preferences/post).
 
 Pronto! você já tem a carteira do Mercado Pago integrada no seu site.
 
@@ -228,7 +352,7 @@ Pronto! você já tem a carteira do Mercado Pago integrada no seu site.
 >
 > Importante
 >
-> Para testar, não esqueça de acessar de outro navegador ou encerrar a sessão da sua conta Mercado Pago já que você não pode fazer um pagamento para si mesmo.<br/> 
+> Para testar, não esqueça de acessar de outro navegador ou encerrar a sessão da sua conta Mercado Pago já que você não pode fazer um pagamento para si mesmo.<br/>
 
 ---
 

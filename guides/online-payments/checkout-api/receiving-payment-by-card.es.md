@@ -42,6 +42,21 @@ Tanto para el frontend como para el backend, recomendamos utilizar [nuestras lib
 >
 > Captura los datos de la tarjeta
 
+----[mlb]----
+> INFO
+>
+> Nueva versión MercadoPago.js
+>
+> Utiliza la librería MercadoPago.js V2 para crear tu formulario de tarjeta con la funcionalidad CardForm y autogenerar la lógica de negocio necesaria para realizar el pago.<br><br>[Integrar Checkout Transparente con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/receiving-payment-by-card)
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+> INFO
+>
+> Nueva versión MercadoPago.js
+>
+> Utiliza la librería MercadoPago.js V2 para crear tu formulario de tarjeta con la funcionalidad CardForm y autogenerar la lógica de negocio necesaria para realizar el pago.<br><br>[Integrar Checkout API con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/receiving-payment-by-card)
+------------
+
 Para crear un pago es necesario hacer la captura de los datos de la tarjeta a través del navegador del comprador. Por cuestiones de seguridad, **es muy importante que los datos nunca lleguen a tus servidores**.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Incluye la librería MercadoPago.js
@@ -423,24 +438,25 @@ System.out.println(payment.getStatus());
 Puedes encontrar el estado del pago en el valor _status_.
 ===
 require 'mercadopago'
-$mp = MercadoPago.new('YOUR_ACCESS_TOKEN')
+sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
 
 payment_data = {
-  "transaction_amount": request.body.transactionAmount.to_f,
-  "token": request.body.token,
-  "description": request.body.description,
-  "installments": request.body.installments.to_i,
-  "payment_method_id": request.body.paymentMethodId,
-  "payer": {
-    "email": request.body.email,
-    "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
-      "type": request.body.docType,------------
-      "number": request.body.docNumber
+  transaction_amount: params[:transactionAmount].to_f,
+  token: params[:token],
+  description: params[:description],
+  installments: params[:installments].to_i,
+  payment_method_id: params[:paymentMethodId],
+  payer: {
+    email: params[:email],
+    identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
+      type: params[:docType],------------
+      number: params[:docNumber]
     }
   }
 }
 
-payment = $mp.post('/v1/payments', payment_data)
+payment_response = sdk.payment.create(payment_data)
+payment = payment_response[:response]
 
 puts payment
 
@@ -449,32 +465,64 @@ puts payment
 ===
 Puedes encontrar el estado del pago en el valor _status_.
 ===
-using MercadoPago;
-using MercadoPago.DataStructures.Payment;
-using MercadoPago.Resources;
+using System;
+using MercadoPago.Client.Common;
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
 
-MercadoPago.SDK.SetAccessToken("YOUR_ACCESS_TOKEN");
+MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
 
-Payment payment = new Payment()
+var paymentRequest = new PaymentCreateRequest
 {
-    TransactionAmount = float.Parse(Request["transactionAmount"]),
+    TransactionAmount = decimal.Parse(Request["transactionAmount"]),
     Token = Request["token"],
     Description = Request["description"],
     Installments = int.Parse(Request["installments"]),
     PaymentMethodId = Request["paymentMethodId"],
-    Payer = new Payer(){
+    Payer = new PaymentPayerRequest
+    {
         Email = Request["email"],
-        Identification = new Identification(){----[mla, mlb, mlu, mlc, mpe, mco]----
-          Type = Request["docType"],------------
-          Number = Request["docNumber"]
-        }
-    }
+        Identification = new IdentificationRequest
+        {----[mla, mlb, mlu, mlc, mpe, mco]----
+            Type = Request["docType"],------------
+            Number = Request["docNumber"],
+        },
+    },
 };
 
-payment.Save();
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(paymentRequest);
 
-console.log(payment.Status);
+Console.WriteLine(payment.Status);
 
+```
+```python
+===
+Puedes encontrar el estado del pago en el valor _status_.
+===
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_data = {
+    "transaction_amount": float(request.POST.get("transaction_amount")),
+    "token": request.POST.get("token"),
+    "description": request.POST.get("description"),
+    "installments": int(request.POST.get("installments")),
+    "payment_method_id": request.POST.get("payment_method_id"),
+    "payer": {
+        "email": request.POST.get("email"),
+        "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
+            "type": request.POST.get("type"), ------------
+            "number": request.POST.get("number")
+        }
+    }
+}
+
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
+
+print(payment)
 ```
 ```curl
 ===
@@ -553,7 +601,7 @@ Por último, es importante que estés siempre informado sobre la creación de nu
 >
 > Checkout Transparente
 >
-> Te dejamos <a href="http://github.com/mercadopago/card-payment-sample" target="_blank">ejemplos completos de integración</a> en GitHub para PHP o NodeJS para que puedas descargar al instante.
+> Te dejamos [ejemplos completos de integración](http://github.com/mercadopago/card-payment-sample) en GitHub para PHP o NodeJS para que puedas descargar al instante.
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > GIT

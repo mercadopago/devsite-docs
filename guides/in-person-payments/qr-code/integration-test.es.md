@@ -1,15 +1,3 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
-  - mlb
----
-
-
 # Prueba tu integración 
 
 ## ¿Cómo probar tu integración?
@@ -74,7 +62,7 @@ Comprueba que hayas recibido las notificaciones del estado de la orden en tu sis
 | **Devolución de pago**. Se hace una devolución de un pago desde el Punto de Venta.| En la cuenta del comprador se impacta la devolución.| Ver [devoluciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds/#bookmark_devoluciones). |
 | **Cancelar orden**. El usuario se arrepiente y decide pagar en efectivo. | Se elimina la orden, y por ende al escanear el QR sólo se muestra la pantalla de espera. | Eliminar la orden de la caja. |
 
-## Quiero ir a producción
+## Quiero salir a producción
 
 Cuando tengas la aplicación **lista y funcionando** en modalidad de prueba y quieras empezar a procesar pagos reales, debes [activar tus credenciales]([FAKER][CREDENTIALS][URL]). 
 
@@ -89,4 +77,4 @@ Luego, Mercado Pago podrá auditar tu sitio, app o Software de Punto de Venta y 
 ## ¿Por qué es necesario este proceso?
 
 Porque así podemos garantizar la seguridad de los datos de tus clientes y lograr la mejor experiencia de compra, que ayude a maximizar la conversión de los pagos que recibas.
-El incumplimiento de estas normas puede implicar desde el no procesamiento de pagos, hasta acciones legales de acuerdo a lo establecido en los [términos y condiciones](https://www.mercadopago.com.ar/ayuda/terminos-y-condiciones_299).
+El incumplimiento de estas normas puede implicar desde el no procesamiento de pagos, hasta acciones legales de acuerdo a lo establecido en los [Términos y Condiciones](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/terminos-y-condiciones_299).

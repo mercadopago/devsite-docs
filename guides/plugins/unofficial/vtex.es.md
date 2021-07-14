@@ -60,7 +60,7 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | Time Zone | Indica la región que define tu horario local. |
 | Mercado Pago 3P payment due date | Deshabilitar. |
 | 3P payment due date after Mercad Pago expiration | Deshabilitar. |
-| MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado pago. |
+| MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado Pago. |
 | Categoria Principal | Selecciona la categoría correspondiente a su tienda. |
 | Refund Method | Elige _Online refund if possible_ para hacer las devoluciones desde VTEX. Si las quieres desde Mercado Pago, deshabilitar. |
 | Plan ahora 12 | Dejar en blanco. |
@@ -258,7 +258,7 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | Mercado Pago 3P payment due date | Deshabilitar. |
 | 3P payment due date after Mercado Pago expiration. | Deshabilitar. |
 | OrderExpirationHours | Elegir `1 hora`. Este campo define cada cuántas horas quieres que el sistema verifique el estado del pedido antes de que caduque. Si esta opción no se cumple, se configura al patrón de 192 horas.|
-| MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado pago. |
+| MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado Pago. |
 | Categoria Principal | Selecciona la categoría correspondiente a su tienda. |
 | Refund Method | Elige _Online refund if possible_ para hacer las devoluciones desde VTEX. Si las quieres desde Mercado Pago, deshabilitar. |
 | Binary Mode | Si se desea operar sin estados pendientes, activarlo. De caso contrario, dejarlo deshabilitado. |
@@ -416,7 +416,7 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | Time Zone | Indica la región que define tu horario local. |
 | Mercado Pago 3P payment due date | Elegir `1 hora`. Este campo define cada cuántas horas quieres que el sistema verifique el estado del pedido antes de que caduque. Si esta opción no se cumple, se configura al patrón de 192 horas.|
 | 3P payment due date after Mercado Pago expiration | Elegir `12 horas`. Tiempo para el vencimiento del pago en VTEX después del vencimiento del pago 3P en Mercado Pago. Si no se completa, se utilizará el tiempo estándar de 7 días después de la creación del pedido.|
-| MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado pago. |
+| MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado Pago. |
 | Categoria Principal | Selecciona la categoría correspondiente a su tienda. |
 | Refund Method | Elegir Online. Si selecciona Reembolso Online, ejecutaremos la llamada de la API de reembolso al procesador. Si se selecciona la opción Offline, enviaremos un correo electrónico al administrador para realizar un reembolso manual. Utilice esta opción con cuidado. |
 | Binary mode | Cuando está activo, los pagos solo pueden ser devueltos en el status `authorised` o `denied` (no se permite `in_process`). |
@@ -608,7 +608,7 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | Antifraud | Elegir `Yes / Sí`. |
 | Time Zone | Indica la región que define tu horario local. |
 | OrderExpirationHours | Elegir `1 hora`. Este campo define cada cuántas horas quieres que el sistema verifique el estado del pedido antes de que caduque. Si esta opción no se cumple, se configura al patrón de 192 horas.|
-| MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado pago. |
+| MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado Pago. |
 | Categoria Principal | Selecciona la categoría correspondiente a su tienda. |
 | Early Security Capture | Puede desactivar la función o elegir en cuánto tiempo desea realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
 
@@ -826,7 +826,7 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | Mercado Pago 3P payment due date | Deshabilitado. |
 | 3P payment due date after Mercado Pago expiration | Deshabilitado. |
 | OrderExpirationHours | Elegir `1 hora`. Este campo define cada cuántas horas quieres que el sistema verifique el estado del pedido antes de que caduque. Si esta opción no se cumple, se configura al patrón de 192 horas.|
-| MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado pago. |
+| MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado Pago. |
 | Categoria Principal | Selecciona la categoría correspondiente a su tienda. |
 | Early Security Capture | Puede desactivar la función o elegir en cuánto tiempo desea realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
 
@@ -989,7 +989,7 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | Mercado Pago 3P payment due date | Deshabilitado. |
 | 3P payment due date after Mercado Pago expiration | Deshabilitado. |
 | OrderExpirationHours | Elegir `1 hora`. Este campo define cada cuántas horas quieres que el sistema verifique el estado del pedido antes de que caduque. Si esta opción no se cumple, se configura al patrón de 192 horas.|
-| MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado pago. |
+| MaxInstallments | Elige la cantidad de cuotas máximas que quieres ofrecer en Mercado Pago. |
 | Categoria Principal | Selecciona la categoría correspondiente a su tienda. |
 | Early Security Capture | Puede desactivar la función o elegir en cuánto tiempo desea realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
 

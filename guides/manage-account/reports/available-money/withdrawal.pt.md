@@ -4,6 +4,12 @@
 
 Você pode criar um relatório de Dinheiro disponível de forma automática cada vez que fizer uma retirada de dinheiro da sua conta do Mercado Pago para uma conta bancária. Programe esta opção a partir do seu painel do Mercado Pago ou via API. 
 
+> WARNING
+>
+> O relatório de Dinheiro disponível será desabilitado em breve
+>
+> Você pode usar o [relatório de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberações------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
+
 ## Gerar a partir do painel do Mercado Pago
 
 A partir da seção "Relatórios" do Mercado Pago, programe a geração de relatórios por retirada seguindo estas etapas: 
@@ -43,15 +49,25 @@ curl -X PUT \
     -d '{
         "file_name_prefix": "bank-report-USER_ID",
         "include_withdrawal_at_end": false,
-        "detailed": true,
         "execute_after_withdrawal": true,
-        "extended": true,
-        "schedule":true,
+        "scheduled": true,
+        "display_timezone": "GMT-04",
         "frequency": {
             "hour": 0,
             "type": "monthly",
             "value": 1
-        }
+        },
+        "columns": [
+            {
+                "key": "DATE"
+            },
+            {
+                "key": "SOURCE_ID"
+            },
+            {
+                "key": "EXTERNAL_REFERENCE"
+            }
+        ]
     }'
 ```
 ```php
@@ -64,17 +80,27 @@ $headers = array(
     'Authorization' => 'Bearer ENV_ACCESS_TOKEN'
 );
 $data = '{
-        "file_name_prefix": "bank-report-USER_ID",
-        "include_withdrawal_at_end": false,
-        "detailed": true,
-        "execute_after_withdrawal": true,
-        "extended": true,
-        "schedule":true,
-        "frequency": {
-            "hour": 0,
-            "type": "monthly",
-            "value": 1
-        }
+            "file_name_prefix": "bank-report-USER_ID",
+            "include_withdrawal_at_end": false,
+            "execute_after_withdrawal": true,
+            "scheduled": true,
+            "display_timezone": "GMT-04",
+            "frequency": {
+                "hour": 0,
+                "type": "monthly",
+                "value": 1
+            },
+            "columns": [
+                {
+                    "key": "DATE"
+                },
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
     }';
 $response = Requests::put('https://api.mercadopago.com/v1/account/bank_report/config', $headers, $data);
 ```
@@ -93,15 +119,19 @@ connection.setDoOutput(true);
 String body = "{
                 \\"file_name_prefix\\": \\"bank-report-USER_ID\\",
                 \\"include_withdrawal_at_end\\": false,
-                \\"detailed\\": true,
                 \\"execute_after_withdrawal\\": true,
-                \\"extended\\": true,
-                \\"schedule\\":true,
+                \\"schedule\\": true,
+                \\"display_timezone\\": \\"GMT-04\\",
                 \\"frequency\\": {
                     \\"hour\\": 0,
                     \\"type\\": \\"monthly\\",
                     \\"value\\": 1
-                }
+                },
+                \\"columns\\": [
+                   { \\"key\\": \\"DATE\\" },
+                   { \\"key\\": \\"SOURCE_ID\\" },
+                   { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
+                ]
             }";
 
 try(OutputStream os = connection.getOutputStream()) {
@@ -113,7 +143,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 
 headers = {
@@ -125,12 +155,25 @@ headers = {
 data = '{
             "file_name_prefix": "bank-report-USER_ID",
             "include_withdrawal_at_end": false,
-            "detailed": true,
             "execute_after_withdrawal": true,
-            "extended": true,
-            "schedule":true,
-            "frequency": {"hour": 0,"type": "monthly","value": 1}
-
+            "scheduled": true,
+            "display_timezone": "GMT-04",
+            "frequency": {
+                "hour": 0,
+                "type": "monthly",
+                "value": 1
+            },
+            "columns": [
+                {
+                    "key": "DATE"
+                },
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
         }'
 
 response = requests.put('https://api.mercadopago.com/v1/account/bank_report/config', headers=headers, data=data)
@@ -145,17 +188,27 @@ var headers = {
 };
 
 var dataString = '{
-        "file_name_prefix": "bank-report-USER_ID",
-        "include_withdrawal_at_end": false,
-        "detailed": true,
-        "execute_after_withdrawal": true,
-        "extended": true,
-        "schedule":true,
-        "frequency": {
-            "hour": 0,
-            "type": "monthly",
-            "value": 1
-        }
+            "file_name_prefix": "bank-report-USER_ID",
+            "include_withdrawal_at_end": false,
+            "execute_after_withdrawal": true,
+            "scheduled": true,
+            "display_timezone": "GMT-04",
+            "frequency": {
+                "hour": 0,
+                "type": "monthly",
+                "value": 1
+            },
+            "columns": [
+                {
+                    "key": "DATE"
+                },
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
     }';
 
 var options = {
@@ -181,15 +234,25 @@ Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
 {
     "file_name_prefix": "bank-report-USER_ID",
     "include_withdrawal_at_end": false,
-    "detailed": true,
     "scheduled": true,
     "execute_after_withdrawal": true,
-    "extended": true,
+    "display_timezone": "GMT-04",
     "frequency": {
         "hour": 3,
         "type": "daily",
         "value": {}
-    }
+    },
+    "columns": [
+        {
+            "key": "DATE"
+        },
+        {
+            "key": "SOURCE_ID"
+        },
+        {
+            "key": "EXTERNAL_REFERENCE"
+        }
+    ]
 }
 ```
 

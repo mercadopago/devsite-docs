@@ -2,7 +2,7 @@
 
 O **IPN** (_Instant Payment Notification_) é uma notificação enviada de um servidor a outro mediante uma chamada `HTTP POST` para informar sobre suas transações.
 
-Para receber notificações de eventos na sua plataforma, você pode [configurar previamente uma notification_url à qual Mercado Pago tiver acesso](https://www.mercadopago[FAKER][URL][DOMAIN]/ipn-notifications).
+Para receber notificações de eventos na sua plataforma, você pode [configurar previamente uma notification_url à qual Mercado Pago tiver acesso](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
 
 ## Eventos
 
@@ -28,12 +28,18 @@ Se a aplicação não estiver disponível ou demorar para responder, o Mercado P
 
 O Mercado Pago informará essa URL quando um recurso for criado ou quando houver atualização do status dos pagamentos ou pedidos, com dois parâmetros:
 
-| Campo 		| Descrição   				 |
-| ---- 		| ---- 				 |
-| `topic` | Identifica do que se trata o recurso. Pode ser `payment`, `chargebacks` ou `merchant_order ` |
+| Campo | Descrição |
+| --- | --- |
+| `topic` | Identifica do que se trata o recurso. Pode ser `payment`, `chargebacks` ou `merchant_order `. |
 | `id` | É um identificador único do recurso notificado. |
 
 Exemplo: Se configurar a URL: `https://www.yoursite.com/notifications`, você receberá as notificações de pagamento desta maneira: `https://www.yoursite.com/notifications?topic=payment&id=123456789`.
+
+> WARNING
+>
+> Importante
+>
+> Lembre-se de que, não é possível receber notificações em ambiente de teste.
 
 ## O que devo fazer ao receber uma notificação?
 
@@ -118,8 +124,6 @@ Dentro da ordem, no objeto payments, você vai encontrar todos os pagamentos del
 > Para obter seu `ACCESS_TOKEN`, verifique a seção de [Credenciais]([FAKER][CREDENTIALS][URL])
 
 ## Pesquisa da ordem
-
-**Si estas integrando pagos presenciales**, se debe implementar como método de contingencia, la  **búsqueda de la orden** utilizando el `external_reference` de la misma como criterio de búsqueda.
 
 **Se você estiver integrando pagamentos presenciais**, é necessário aplicar como método de contingência a **pesquisa da ordem** utilizando o seu `external_reference` como critério de pesquisa.
 

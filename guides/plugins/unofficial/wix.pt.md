@@ -15,7 +15,7 @@ Com ela você poderá, oferecer aos seus clientes a possibilidade de pagar [dire
 
 Os passos para **começar a receber com Mercado Pago**, são os seguintes:
 
-1. Crie uma [conta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) no Mercado Pago caso ainda não tenha uma.
+1. Crie uma [conta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) no Mercado Pago, caso ainda não tenha uma.
 1. Adicione o Mercado Pago como meio de pagamento dentro da sua loja.
 1. Configure a forma de pagamento.
 
@@ -34,7 +34,7 @@ Para **adicionar o Mercado Pago em sua loja**, siga os passos abaixo:
 
 ## Configure a forma de pagamento
 
-A Wix te permite receber através do Checkout Pro, onde o comprador será redirecionado ao Mercado Pago para realizar o pagamento, e voltará para sua loja assim que finalizar esse processo.
+A Wix te permite receber através do Checkout Pro, no qual o comprador será redirecionado ao Mercado Pago para realizar o pagamento, e voltará para sua loja assim que finalizar esse processo.
 
 Além disso, você pode [configurar parcelas sem juros](#bookmark_configurando_o_parcelamento_na_sua_conta_do_mercado_pago), consultar e configurar as [taxas e prazos](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) de suas vendas online quando quiser.
 

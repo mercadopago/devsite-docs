@@ -27,7 +27,6 @@ curl -X POST \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
 
-
 ### Respuesta
 
 ```json
@@ -122,7 +121,6 @@ Al abrir el checkout creado con los datos de tu usuario vendedor:
 
 | Tarjeta | Número | Código de seguridad | Fecha de vencimiento |
 | :--- | :---: | :---: | :---: |
-| Mastercard | 5474 9254 3267 0366 | 123 | 11/25 |
 | Visa | 4075 5957 1648 3764 | 123 | 11/25 |
 
 ------------

@@ -22,13 +22,7 @@ Este proceso explicará la instalación del módulo Mercado Pago vía Composer:
 
 **Instalación vía Composer**
 
-1) En el momento tenemos dos versiones de módulos, donde cada una de ellas tendrá un tipo de checkout:
-
-* Si desea procesar pagos con **Checkout Redireccionado**, deberá instalar la versión 2.x del módulo del Mercado Pago. Para instalar ejecute el comando:
-
-> composer require mercadopago/magento2-plugin:2.*
-
-* Si desea procesar pagos con **Checkout Transparente (Custom)** con Tarjeta de Crédito o Ticket, utilice la versión 3.x del módulo. Esta versión esta mejor optimizada para este tipo de checkout. Para instalar ejecute el comando:
+1) Ejecutar el comando para descargar el plugin con Composer: 
 
 > composer require mercadopago/magento2-plugin:3.*
 
@@ -51,40 +45,56 @@ Este proceso explicará la instalación del módulo Mercado Pago vía Composer:
 6) ¡Listo! El módulo del Mercado Pago fue instalado con éxito.
 
 
-## Configuración de la tarjeta de crédito y tickets (Custom Checkout)
+## Configuración de la tarjeta de crédito----[mlb]----, Pix------------ y tickets (Custom Checkout)
 
-Este proceso explicará cómo configurar el módulo para aceptar pagos con Checkout Personalizado con tarjeta de crédito y tickets:
+Aprende el proceso paso a paso para configurar el módulo para aceptar pagos a través de Tarjeta de Crédito----[mlb]----, Pix------------ y Ticket en Custom Checkout (Transparente). 
 
 1) Vaya al menú **Stores > Configuration > Sales > Payment Methods**:
 
 2) Para configurar las credenciales acceda a la opción **Mercado Pago** > **Credenciales**, aparecerá el campo **Public key** y el campo **Access token**. Obtén tus credenciales en la sección [Credenciales]([FAKER][CREDENTIALS][URL]).
 
-
 > Existen dos tipos de credenciales:
 > * Modo Sandbox: Las credenciales de este modo se utilizan para realizar pruebas.
 > * Modo Producción: Las credenciales de este modo se utilizan para recibir los pagos en Producción. Para utilizar las credenciales del modo de producción debe activar tus credenciales.
-> * Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials).
+> * Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials/).
 
-3) Con las credenciales completadas, debe habilitar los métodos de pago. Acceda a la opción **Checkout Custom - Credit And Debit Card**, haga un clic en el botón **Configure** y marque la opción **Enable** como **Yes**. Siga este proceso para ** Checkout Custom - Credit And Debit Card** y para **Checkout Custom - Offline Payment Methods (Ticket)** haga un clic en **Save Config** para guardar la configuración.
+3) Con las credenciales completadas, el siguiente paso es habilitar los medios de pago.
+En primer lugar, ve al medio que quieres habilitar.
+
+Para habilitar pagos con tarjeta > **Checkout - Credit and Debit Card**.<br>
+Para habilitar pagos con ticket > **Custom Checkout - Offline Payment Methods (Ticket)**.<br>
+----[mlb]----Para habilitar pagos con Pix  > **Custom Checkout - Pix**.------------
+
+----[mlb]----
+> WARNING
+>
+> Importante
+>
+> Antes de configurar Pix como medio de pago, ten en cuenta:<br><br>
+> - [Verifica la última versión](https://marketplace.magento.com/mercadopago-core.html#product.info.details.release_notes) y actualiza tu plugin de Mercado Pago.<br>
+> - Registra tu clave en Mercado Pago. Si no lo haces, tus clientes no podrán finalizar la compra. [Aprende a hacerlo](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required).
+------------
+
+Al acceder, haz clic en el botón **Configure** para ver las opciones de configuración. Selecciona las opciones que prefieras y marca el campo **Enabled** como **Yes**. A continuación, haz clic en **Save Config**.
 
 ![Mercado Pago Custom Checkout Configuration](images/magento2/mercadopago_custom_checkout_configuration.png)
 
-4) ¡Listo! El Checkout Custom con Tarjeta de crédito y Ticket ha sido configurado y habilitado con éxito!
+4) ¡Listo! El medio de pago se habilitará correctamente en el checkout.
 
 
-## Configuración de Basic Checkout
+## Configuración del Checkout Pro
 
-Este proceso explicará cómo configurar el módulo para aceptar pagos con el Checkout Básico en Redirect, Iframe o Lightbox:
+Este proceso explicará cómo configurar el módulo para aceptar pagos con el Checkout Pro en Redirect, Iframe o Lightbox:
 
 1) Vaya al menú **Stores > Configuration > Sales > Payment Methods**.
 
 2) Para configurar las credenciales acceda a la opción **Mercado Pago - Classic Checkout**, haga un clic en **Configure**. Aparecerá el campo **Client id** y el campo **Client secret**. Obtén tus credenciales en la sección [Credenciales]([FAKER][CREDENTIALS][URL]).
 
-3) Con las credenciales llenadas, ahora es necesario habilitar el método de pago. Vaya a la opción **Enable** y marque como **Yes**. Aproveche y configure el Tipo de Checkout (**Type Checkout**) y si el usuario debe volver automáticamente a su tienda al finalizar el pago (**Auto Redirect**).
+3) Con las credenciales llenadas, ahora es necesario habilitar el medio de pago. Vaya a la opción **Enable** y marque como **Yes**. Aproveche y configure el Tipo de Checkout (**Type Checkout**) y si el usuario debe volver automáticamente a su tienda al finalizar el pago (**Auto Redirect**).
 
 ![Checkout Pro Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
 
-4) ¡Listo! El Checkout Básico ha sido configurado y habilitado con éxito!
+4) ¡Listo! Checkout Pro ha sido configurado y habilitado con éxito.
 
 
 ## Configuración de estado de las notificaciones de Pago

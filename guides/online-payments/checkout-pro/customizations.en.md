@@ -1,5 +1,88 @@
 # Customization
 
+## Ways to open the Checkout Pro
+
+You can customize how to open the checkout through the use of functions and attributes that can be added to your integration's configuration: 
+
+### Without payment button 
+
+Use the `open` function to **open the checkout without displaying a payment button**. This allows you to connect it to any element of your website from which you prefer to trigger the Checkout Pro opening. 
+
+[[[
+```html
+<!-- Initialize the checkout -->
+<script>
+const checkout = mp.checkout({
+  preference: {
+      id: 'YOUR_PREFERENCE_ID'
+  }
+});
+</script>
+<!-- Call the 'open' function from the element of your preference -->
+<!-- For instance: a radio button --> 
+<input type="radio" id="checkout-open-radio" onclick="checkout.open()">
+```
+]]]
+
+### With a payment button 
+
+Use the `render` function to display a **payment button that allows the opening of the Checkout Pro**. In order to do this, you need add the following parameters: 
+
+| Parameter | Type | Description |
+| --- | --- | --- |
+|`container` |string| CSS Selector (identifier) for the element in which you want the payment button to be displayed. |
+| `type` (optional) | string | Allows you to define the button type. Currently only the 'wallet' value is accepted, which shows a payment button with Mercado Pago branding. **Default value**: basic payment button. |
+| `label` (optional) | string | Value for the button's text. **Default value**: “Pay” |
+
+You can use this method in two different ways:
+
+* Including the `render` option with its corresponding parameters along with the rest of the initialization options for the checkout.
+* Calling the `render` function with its corresponding parameters after the initialization, from wherever you prefer inside your code.
+
+[[[
+  ```javascript
+ // Along with the initialization options
+const checkout = mp.checkout({
+   preference: {
+       id: 'YOUR_PREFERENCE_ID'
+   },
+   render: {
+       container: '.cho-container',
+       label: 'Pay',
+    }
+});
+
+// Calling the function after configuring the initialization options
+checkout.render({
+    container: '.cho-container',
+    label: 'Pay'
+});
+  ```
+]]]
+
+### Default payment button:
+
+![Default Label Button](/images/web-payment-checkout/default_label_button.png)<br/>
+
+### Customized:
+
+![Custom Label Button](/images/web-payment-checkout/custom_label_button.png)<br/><br/>
+
+### Opening the Checkout Pro automatically
+
+Add the `autoOpen` parameter to your checkout initialization options to **automatically display the Checkout Pro**, without the need of any interactions with buttons or other elements for its opening.
+
+[[[
+```javascript
+// Initialize the checkout
+const checkout = mp.checkout({
+  preference: {
+      id: 'YOUR_PREFERENCE_ID'
+  },
+  autoOpen: true, // Allow the Checkout Pro to open automatically
+});
+```
+]]]
 
 ## Redirect Scheme
 
@@ -85,16 +168,58 @@ Redirect to the 'init_point' of the preference.
   </body>
 </html>
 ```
+```python
+===
+Redirect to the 'init_point' of the preference.
+===
+<!doctype html>
+<html>
+  <head>
+    <title>Pay</title>
+  </head>
+  <body>
+    <a href="{{ init_point }}" target="_blank">Pay with Mercado Pago</a>
+  </body>
+</html>
+```
 ]]]
 
+## Header and elements colors
 
-## Colors
+Add the `theme` attribute to your initialization options as shown below to customize colors for some of the checkout's UI elements and header.
+
+[[[
+```html
+<script>
+  mp.checkout({
+    preference: {...},
+    render: {...},
+    theme: {
+        elementsColor: ''.
+        headerColor: '',
+    }
+  });
+</script>
+```
+]]]
 
 > NOTE
 >
 > Note
 >
 > Valid only for modal scheme.
+
+### Header 
+Modify the header's color by adding the `headerColor` attribute to the `theme` object. 
+Its value must be in hexadecimal format. For example: 
+
+[[[
+```javascript
+theme: {
+  headerColor: '#c0392b'
+}
+```
+]]]
 
 ### Elements
 
@@ -105,53 +230,51 @@ The elements that can be customized are:
 * Transition Elements: spinners and progress bars
 * Borders
 
-You can modify the color of those elements by adding the `data-elements-color attribute in the HTML code.
-The attribute value must be in hexadecimal format. For example:
+You can modify the color of those elements by adding the `elementsColor` attribute to the `theme` object. Its value must be in hexadecimal format. For example:
 
-
-```html
-data-header-color="#c0392b"
+```javascript
+theme: {
+  elementsColor: '#c0392b'
+}
 ```
+
+----[mla, mlc, mco, mpe, mlm, mlu]----
+
+![Custom-Component](/images/web-payment-checkout/custom_components.gif)
+
+------------
+
+----[mlb]----
+
 ![Custom-Component](/images/web-payment-checkout/custom_components-br.gif)
-</p><br/>
 
-#### Texts
+------------
 
-The color of the button text will be determined automatically depending on the contrast of the defined color.
-For a light element color, the text color will be black or #000. For example:
+#### Text color
 
+The color of the button text will be **determined automatically** depending on the [contrast](https://24ways.org/2010/calculating-color-contrast) of the defined color.
 
-```html
-data-elements-color="#81ecec" <!-- Light color -->
+For a light element *color*, the text color will be *black* or `#000`. For example:
+
+```javascript
+theme: {
+    elementsColor: '#81ecec' // Light color
+}
 ```
 
 ![Light Color Button](/images/web-payment-checkout/light_color_button.png)
 
-<br/>For a dark element color, the text color will be white or #fff. For example:
+<br/>For a *dark* element color, the text color will be *white* or `#fff`. For example:
 
-```html
-data-elements-color="#8e44ad" <!-- Dark color -->
+```javascript
+theme: {
+    elementsColor: '#8e44ad' // Dark color
+}
 ```
 
 ![Dark Color Button](/images/web-payment-checkout/dark_color_button.png)
 
-## Buttons
-
-### Text
-
-By default, the button shows the text “Pay”. You can modify the text of the button by adding the `data-button-label` attribute in the HTML code. For example:
-
-```html
-data-button-label="Buy"
-```
-
-### By default:
-
-![Default Label Button](/images/web-payment-checkout/default_label_button.png)<br/>
-
-### Customized:
-
-![Custom Label Button](/images/web-payment-checkout/custom_label_button.png)<br/><br/>
+> This documentation uses the new library version. To see the previous version, go to the [old Customization section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/v1/customizations).
 
 ---
 

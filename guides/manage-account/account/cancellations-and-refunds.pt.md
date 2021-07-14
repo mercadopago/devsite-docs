@@ -55,9 +55,21 @@ mercadopago.payment.update({
 
 ```
 ```ruby
-preapproval = MercadoPago::Payment.find_by_id(paymentId)
-preapproval.status = "cancelled"
-preapproval.update()
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+request = {
+  status: 'cancelled'
+}
+result = sdk.payment.update(payment_id, request)
+```
+```python
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+payment_data = {
+    "status": "cancelled"
+}
+
+payment_response = sdk.payment().update(payment_id, payment_data)
+payment = payment_response["response"]
 ```
 ```curl
 curl -X PUT \
@@ -83,8 +95,11 @@ curl -X PUT \
 ----[mlc]----
 É possível devolver um pagamento dentro de **330 dias** a partir de sua data de aprovação.
 ------------
-----[mlu, mpe, mco]----
+----[mlu, mpe]----
 É possível devolver um pagamento dentro de **90 dias** a partir de sua data de aprovação.
+------------
+----[mco]----
+É possível devolver um pagamento dentro de **180 dias** a partir de sua data de aprovação.
 ------------
 
 Deve haver saldo suficiente disponível em sua conta para efetuar a devolução do valor do pagamento com sucesso. Caso contrário, obterá um erro `400 Bad Request`.
@@ -114,6 +129,10 @@ mercadopago.payment.refund(payment_id)
     // manipular o erro ...
   });
 ```
+```python
+refund_response = sdk.refund().create(payment_id)
+refund = refund_response["response"]
+```
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
@@ -132,18 +151,29 @@ curl -X POST \
 
 ```json
 {
-	"id": REFUND_ID,
-	"payment_id": ID,
-	"amount": 73.48,
-	"metadata": {},
-	"source": {
-		"id": "130379930",
-		"name": "Firstname Lastname",
-		"type": "collector"
-	},
-	"date_created": "2014-12-11T11:26:40.537-04:00"
+    "id": PAYMENT_ID,
+    ...
+
+    "refunds": [
+      {
+        "id": 111,
+        "payment_id": PAYMENT_ID,
+        "amount": 16.98,
+        "metadata": {
+        },
+        "source": {
+            "id": "130379930",
+            "name": "Firstname Lastname",
+            "type": "collector"
+        },
+        "date_created": "2014-12-04T17:00:03.000-04:00",
+        "unique_sequence_number": null
+      }
+    ]
 }
 ```
+
+----[mla, mlm, mco, mlu, mlb, mlc]----
 
 ### Efetue uma devolução parcial
 
@@ -173,8 +203,19 @@ mercadopago.payment.refundPartial({ payment_id: id, amount: Number(amount) })
   });
 ```
 ```ruby
-payment = MercadoPago::Payment.find_by_id(paymnentId)
-payment.refund(10.5);
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+request = {
+  amount: 10.5
+}
+result = sdk.refund.create(payment_id, request)
+```
+```python
+refund_data = {
+  "amount": 10.5
+}
+
+refund_response = sdk.refund().create(payment_id, refund_data)
+refund = refund_response["response"]
 ```
 ```curl
 curl -X POST \
@@ -185,6 +226,7 @@ curl -X POST \
 ```
 ]]]
 
+------------
 
 ### Obtenha as devoluções realizadas
 
@@ -207,8 +249,13 @@ mercadopago.payment.refund(paymentId).then(function(data) {}
 });
 ```
 ```ruby
-payment = MercadoPago::Payment.find_by_id(payment_id)
-refunds = payment.refund()
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+result = sdk.refund.list(payment_id)
+refunds = result[:response]
+```
+```python
+refunds_response = sdk.refund().list_all(payment_id)
+refunds = refunds_response["response"]
 ```
 ```curl
 curl -X GET \

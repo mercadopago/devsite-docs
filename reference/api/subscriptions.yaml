@@ -1,0 +1,354 @@
+openapi: 3.0.0
+servers:
+  - url: https://api.mercadopago.com
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
+paths:
+  /preapproval:
+    post:
+      tags:
+        - $ref: '#/tags/subscriptions'
+      summary: Create a subscription
+      description: Generate a subscription with all the settings you need
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                auto_recurring:
+                  type: object
+                  description: Recurring data.
+                  properties:
+                    frequency:
+                      type: number
+                      description: Recurring frecuency.
+                      example: 1
+                    frequency_type:
+                      type: string
+                      description: Recurring frecuency type (days or months).
+                      example: months
+                    transaction_amount:
+                      type: number
+                      description: Recurring amount.
+                      example: 10
+                    currency_id:
+                      type: string
+                      description: Currency Id.
+                      example: ARS
+                    start_date:
+                      type: string
+                      format: date
+                      description: preapproval's start date.
+                      example: '2020-06-02T13:07:14.260Z'
+                    end_date:
+                      type: string
+                      format: date
+                      description: preapproval's end date.
+                      example: '2022-07-20T15:59:52.581Z'
+                back_url:
+                  type: string
+                  description: Return URL.
+                  example: https://www.mercadopago.com.ar
+                collector_id:
+                  type: string
+                  description: Seller ID.
+                  exmaple: 100200300
+                external_reference:
+                  type: string
+                  description: Preapproval reference value.
+                  example: 23546246234
+                payer_email:
+                  type: string
+                  description: Customer's e-mail.
+                  example: test_user@testuser.com
+                reason:
+                  type: string
+                  description: Preapproval titlte.
+                  exampe: Suscripcion Particular
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: 2c938084726fca480172750000000000
+                    description: id
+                  payer_id:
+                    type: number
+                    example: 123123123
+                    description: payer_id
+                  payer_email:
+                    type: string
+                    example: test_user@testuser.com
+                    description: payer_email
+                  back_url:
+                    type: string
+                    example: https://www.mercadopago.com.ar
+                    description: back_url
+                  collector_id:
+                    type: number
+                    example: 100200300
+                    description: collector_id
+                  application_id:
+                    type: number
+                    example: 1234567812345678
+                    description: application_id
+                  status:
+                    type: string
+                    example: pending
+                    description: status
+                  reason:
+                    type: string
+                    example: Suscripcion Particular
+                    description: reason
+                  external_reference:
+                    type: string
+                    example: 23546246234
+                    description: external_reference
+                  date_created:
+                    type: string
+                    example: 2020-06-02T13:07:14.260Z
+                    description: date_created
+                  last_modified:
+                    type: string
+                    example: 2020-06-02T13:07:14.263Z
+                    description: last_modified
+                  init_point:
+                    type: string
+                    example: >-
+                      https://www.mercadopago.com/MLB/debits/new?preapproval_id=2c938084726fca480172750000000000
+                    description: init_point
+                  sandbox_init_point:
+                    type: string
+                    example: >-
+                      https://sandbox.mercadopago.com/MLB/debits/new?preapproval_id=2c938084726fca480172750000000000
+                    description: sandbox_init_point
+                  auto_recurring:
+                    type: object
+                    properties:
+                      frequency:
+                        type: number
+                        example: 1
+                        description: frequency
+                      frequency_type:
+                        type: string
+                        example: months
+                        description: frequency_type
+                      transaction_amount:
+                        type: number
+                        example: 10
+                        description: transaction_amount
+                      currency_id:
+                        type: string
+                        example: ARS
+                        description: currency_id
+                      start_date:
+                        type: string
+                        example: 2020-06-02T13:07:14.260Z
+                        description: start_date
+                      end_date:
+                        type: string
+                        example: 2022-07-20T15:59:52.581Z
+                        description: end_date
+                    description: auto_recurring
+                  version:
+                    type: number
+                    example: 0
+                    description: version
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - >-
+                        Card token was used, please generate
+                        new--Card-token-was-used--please-generate-new-
+                      - >-
+                        Card token was generated without cvv
+                        validation--Card-token-was-generated-without-cvv-validation-
+                      - >-
+                        Subscriptions are not available for this country
+                        yet--Subscriptions-are-not-available-for-this-country-yet-
+                      - >-
+                        The payment method account money is not available in
+                        your
+                        country--The-payment-method-account-money-is-not-available-in-your-country-
+                      - >-
+                        Collector and Application cannot be from different
+                        countries--Collector-and-Application-cannot-be-from-different-countries-
+                      - card_token_id is required--card-token-id-is-required-
+                      - payer_email is required--payer-email-is-required-
+                      - >-
+                        Invalid value for payer_email, must be a valid email
+                        address--Invalid-value-for-payer-email--must-be-a-valid-email-address-
+                      - >-
+                        Invalid value for transaction amount, must be a positive
+                        number--Invalid-value-for-transaction-amount--must-be-a-positive-number-
+                      - >-
+                        Invalid value for transaction amount, only two decimals
+                        are
+                        allowed--Invalid-value-for-transaction-amount--only-two-decimals-are-allowed-
+                      - >-
+                        Cannot pay an amount lower than ${currency_id} ${min
+                        amount}--Cannot-pay-an-amount-lower-than---currency-id----min-amount--
+                      - >-
+                        Cannot pay an amount greater than ${currency_id} ${max
+                        amount}--Cannot-pay-an-amount-greater-than---currency-id----max-amount--
+                      - >-
+                        The transaction_amount must be the same as
+                        preapproval_plan--The-transaction-amount-must-be-the-same-as-preapproval-plan-
+                      - >-
+                        You cannot create a new preapproval from a
+                        cancelled/inactive
+                        template--You-cannot-create-a-new-preapproval-from-a-cancelled-inactive-template-
+                      - back_url is required--back-url-is-required-
+                      - >-
+                        Invalid value for back url, must be a valid
+                        URL--Invalid-value-for-back-url--must-be-a-valid-URL-
+                      - reason is required--reason-is-required-
+                      - >-
+                        reason has more than 255
+                        characters--reason-has-more-than-255-characters-
+                      - >-
+                        reason has unsupported
+                        characters--reason-has-unsupported-characters-
+                      - >-
+                        auto_recurring.frequency is
+                        required--auto-recurring-frequency-is-required-
+                      - >-
+                        Invalid value for frequency, must be a positive
+                        integer--Invalid-value-for-frequency--must-be-a-positive-integer-
+                      - >-
+                        Invalid value for frequency type, valid ones are [days,
+                        months]--Invalid-value-for-frequency-type--valid-ones-are--days--months--
+                      - >-
+                        auto_recurring.frequency_type is
+                        required--auto-recurring-frequency-type-is-required-
+                      - >-
+                        auto_recurring.transaction_amount is
+                        required--auto-recurring-transaction-amount-is-required-
+                      - >-
+                        auto_recurring.currency_id is
+                        required--auto-recurring-currency-id-is-required-
+                      - >-
+                        Invalid field ->
+                        auto_recurring.currency_id--Invalid-field----auto-recurring-currency-id-
+                      - >-
+                        Invalid value for auto_recurring.end_date, the date must
+                        be after
+                        today--Invalid-value-for-auto-recurring-end-date--the-date-must-be-after-today-
+                      - >-
+                        auto_recurring.end_date must be after
+                        auto_recurring.start_date--auto-recurring-end-date-must-be-after-auto-recurring-start-date-
+                      - >-
+                        Invalid value for auto_recurring.start_date, the date
+                        must be after
+                        today--Invalid-value-for-auto-recurring-start-date--the-date-must-be-after-today-
+                      - >-
+                        Invalid format in auto_recurring.start_date or
+                        auto_recurring.end_date--Invalid-format-in-auto-recurring-start-date-or-auto-recurring-end-date-
+                      - >-
+                        external_reference has more than 255
+                        characters--external-reference-has-more-than-255-characters-
+                      - >-
+                        external_reference has unsupported
+                        characters--external-reference-has-unsupported-characters-
+                      - >-
+                        Already exists a preapproval for user ${payer_email} and
+                        application
+                        ${application_id}--Already-exists-a-preapproval-for-user---payer-email--and-application---application-id--
+                      - >-
+                        Cannot operate between different
+                        countries--Cannot-operate-between-different-countries-
+                      - >-
+                        Payer and collector cannot be the same
+                        user--Payer-and-collector-cannot-be-the-same-user-
+                      - >-
+                        Both payer and collector must be real or test
+                        users--Both-payer-and-collector-must-be-real-or-test-users-
+                      - >-
+                        This preapproval cannot be created: The seller does not
+                        accept
+                        account_money--This-preapproval-cannott-be-created--The-seller-does-not-accept-account-money-
+                      - >-
+                        This preapproval cannot be created only with payment
+                        method
+                        account_money--This-preapproval-can-t-be-created-only-with-payment-method-account-money-
+                      - >-
+                        You cannot create a preapproval with payment_method in
+                        status
+                        pending--You-cannot-create-a-preapproval-with-payment-method-in-status-pending-
+                      - >-
+                        Cannot create preapproval pending, the feature with
+                        account money is disabled for your
+                        country.--Cannot-create-preapproval-pending--the-feature-with-account-money-is-disabled-for-your-country-
+                      - Invalid request data--Invalid-request-data-
+        '401':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - >-
+                        CC_VAL_433--CC-VAL-433-Credit-card-validation-has-failed-
+                      - >-
+                        Verification of collectors personal data is in process,
+                        come back
+                        later--Verification-of-collector-s-personal-data-is-in-process--come-back-later-
+                      - >-
+                        Unauthorized access to
+                        resource--Unauthorized-access-to-resource-
+                      - >-
+                        This app cannot create preapprovals without a
+                        plan--This-app-can-t-create-preapprovals-without-a-plan-
+        '403':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - >-
+                        The collector does not meet the personal data
+                        verification
+                        requirements--The-collector-does-not-meet-the-personal-data-verification-requirements-
+                      - >-
+                        The caller is not authorized to access this
+                        resource--The-caller-is-not-authorized-to-access-this-resource-
+                      - >-
+                        AM_VAL_01 Unauthorized seller for this
+                        feature--AM-VAL-01-Unauthorized-seller-for-this-feature--account-money---
+        '404':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - >-
+                        The preapproval with id ${preapproval id} does not
+                        exist--The-preapproval-with-id---preapproval-id--does-not-exist-
+                      - >-
+                        Card token service not
+                        found--Card-token-service-not-found-

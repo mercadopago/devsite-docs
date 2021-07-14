@@ -1,10 +1,3 @@
----
-sites_supported:
-  - mla
-  - mlm
-  - mlb
----
-
 # Integrate subscriptions  
 
 ## Integration types
@@ -219,6 +212,12 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 }
 ```
 
+> NOTE
+> 
+> Validation payment
+> 
+> To prove that the card is valid, we make a validation payment with a minimum amount. If the payment is successful, we proceed with the return of that payment. The amount may differ according to each country.
+
 ### Create subscription with pending payment
 
 You can create a subscription with `pending` status and no associated payment method. 
@@ -296,6 +295,7 @@ Attributes
 | `auto_recurring.frequency_type` | Indicates the type of frequency. It can be by month (months) or day (days). Along with the frequency, they define the installment cycle that a subscription will have.<br><br> For example, if every fifteen days you need to generate an instalment to be collected it would look as follows: `auto_recurring.frequency`: 15 y `auto_recurring.frequency_type`: days |
 | `auto_recurring.transaction_amount` | Amount applicable to the subscription. |
 | `auto_recurring.currency_id` | Identifies the currency that corresponds to the country. |
+| `auto_recurring.start_date` | Indicates the start date of the subscription. If not specified, it starts at the moment. |
 | `auto_recurring.end_date` | Indicates if the subscription will have a limit. If not specified, there is no limit. |
 | `auto_recurring.free_trial.frequency` | Indicates the length of time that the service will not be charged. It must be consistent with `auto_recurring.frequency`. |
 | `auto_recurring.free_trial.frequency_type` | Indicates the amount of installments that will not be charged for the service. It must be consistent with `auto_recurring.frequency_type`. |

@@ -2,7 +2,7 @@
 
 A **webhook** is a notification sent from one server to another through an `HTTP POST` request informing your transactions.
 
-In order to receive notifications about the events in your platform, you have to [previously configure an URL to which Mercado Pago has access](https://www.mercadopago.com/mla/account/webhooks).
+In order to receive notifications about the events in your platform, you have to [previously configure an URL to which Mercado Pago has access](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications).
 
 
 You can also configure the notification when you do the POST of the payment, indicating the URL in the field notificaction_url:
@@ -71,6 +71,11 @@ The notification sent has the following format:
 ```
 This indicates that payment **999999999** was created for the user **44444** in **production mode** with the V1 version of the API. That event took place on **2016-03-25T10:04:58.396-04:00**.
 
+> WARNING
+>
+> Important
+>
+> Please note that it is not possible to receive notifications in a test environment.
 
 ## What should I do when I receive a notification?
 

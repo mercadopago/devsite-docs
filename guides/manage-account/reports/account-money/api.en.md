@@ -45,7 +45,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 headers = {
     'accept': 'application/json',
@@ -84,17 +84,27 @@ You will receive an `HTTP STATUS 200 (OK)` in response.
     "file_name_prefix": "settlement-report-USER_ID",
     "show_fee_prevision": false,
     "show_chargeback_cancel": true,
-    "detailed": true,
     "scheduled": false,
     "coupon_detailed": true,
     "shipping_detail": true,
     "refund_detailed": true,
-    "extended": false,
+    "display_timezone": "GMT-04",
     "frequency": {
         "hour": 0,
         "type": "monthly",
         "value": 1
-    }
+    },
+     "columns": [
+        {
+            "key": "DATE"
+        },
+        {
+            "key": "SOURCE_ID"
+        },
+        {
+            "key": "EXTERNAL_REFERENCE"
+        }
+    ]
 }
 ```
 
@@ -110,16 +120,33 @@ curl -X POST \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/account/settlement_report/config' \
     -d '{
-            "file_name_prefix": "bank-report-USER_ID",
-            "include_withdrawal_at_end": false,
-            "detailed": true,
-            "execute_after_withdrawal": true,
-            "extended": true,
+            "file_name_prefix": "settlement-report-USER_ID",
+            "show_fee_prevision": false,
+            "show_chargeback_cancel": true,
+            "coupon_detailed": true,
+            "shipping_detail": true,
+            "refund_detailed": true,
+            "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
                 "value": 1
-            }
+            },
+            "columns": [
+                {
+                    "key": "DATE"
+                },
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
     }'
 ```
 ```php
@@ -135,16 +162,30 @@ $data = '{
             "file_name_prefix": "settlement-report-USER_ID",
             "show_fee_prevision": false,
             "show_chargeback_cancel": true,
-            "detailed": true,
             "coupon_detailed": true,
             "shipping_detail": true,
             "refund_detailed": true,
-            "extended": false,
+            "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
                 "value": 1
-            }
+            },
+            "columns": [
+                {
+                    "key": "DATE"
+                },
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
         }';
 $response = Requests::post('https://api.mercadopago.com/v1/account/settlement_report/config', $headers, $data);
 ```
@@ -164,16 +205,24 @@ String body = "{
                     \\"file_name_prefix\\": \\"settlement-report-USER_ID\\",
                     \\"show_fee_prevision\\": false,
                     \\"show_chargeback_cancel\\": true,
-                    \\"detailed\\": true,
                     \\"coupon_detailed\\": true,
                     \\"shipping_detail\\": true,
                     \\"refund_detailed\\": true,
-                    \\"extended\\": false,
+                    \\"display_timezone\\": \\"GMT-04\\",
+                    \\"notification_email_list\\": [
+                         \\"example@email.com\\",
+                         \\"john@example.com\\",
+                    ],
                     \\"frequency\\": {
                         \\"hour\\": 0,
                         \\"type\\": \\"monthly\\",
                         \\"value\\": 1
-                    }
+                    },
+                    \\"columns\\": [
+                        { \\"key\\": \\"DATE\\" },
+                        { \\"key\\": \\"SOURCE_ID\\" },
+                        { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
+                    ]
                 }";
 
 try(OutputStream os = connection.getOutputStream()) {
@@ -185,7 +234,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 
 headers = {
@@ -198,16 +247,30 @@ data = '{
             "file_name_prefix": "settlement-report-USER_ID",
             "show_fee_prevision": false,
             "show_chargeback_cancel": true,
-            "detailed": true,
             "coupon_detailed": true,
             "shipping_detail": true,
             "refund_detailed": true,
-            "extended": false,
+            "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
                 "value": 1
-            }
+            },
+            "columns": [
+                {
+                    "key": "DATE"
+                },
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
         }'
 
 response = requests.post('https://api.mercadopago.com/v1/account/settlement_report/config', headers=headers, data=data)
@@ -225,16 +288,30 @@ var dataString = '{
             "file_name_prefix": "settlement-report-USER_ID",
             "show_fee_prevision": false,
             "show_chargeback_cancel": true,
-            "detailed": true,
             "coupon_detailed": true,
             "shipping_detail": true,
             "refund_detailed": true,
-            "extended": false,
+            "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
                 "value": 1
-            }
+            },
+            "columns": [
+                {
+                    "key": "DATE"
+                },
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
     }';
 
 var options = {
@@ -261,17 +338,31 @@ You will receive an `HTTP STATUS 201 (Created)` in response.
     "file_name_prefix": "settlement-report-USER_ID",
     "show_fee_prevision": false,
     "show_chargeback_cancel": true,
-    "detailed": true,
     "scheduled": false,
     "coupon_detailed": true,
     "shipping_detail": true,
     "refund_detailed": true,
-    "extended": false,
+    "display_timezone": "GMT-04",
+    "notification_email_list": [
+        "example@email.com",
+        "john@example.com"
+    ],
     "frequency": {
         "hour": 0,
         "type": "monthly",
         "value": 1
-    }
+    },
+    "columns": [
+        {
+            "key": "DATE"
+        },
+        {
+            "key": "SOURCE_ID"
+        },
+        {
+            "key": "EXTERNAL_REFERENCE"
+        }
+    ]
 }
 ```
 
@@ -287,20 +378,34 @@ curl -X PUT \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/account/settlement_report/config' \
     -d '{
-        "file_name_prefix": "settlement-report-USER_ID",
-        "show_fee_prevision": false,
-        "show_chargeback_cancel": true,
-        "detailed": true,
-        "coupon_detailed": true,
-        "shipping_detail": true,
-        "refund_detailed": true,
-        "extended": false,
-        "frequency": {
-            "hour": 0,
-            "type": "monthly",
-            "value": 1
-        }
-    }'
+            "file_name_prefix": "settlement-report-USER_ID",
+            "show_fee_prevision": false,
+            "show_chargeback_cancel": true,
+            "coupon_detailed": true,
+            "shipping_detail": true,
+            "refund_detailed": true,
+            "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
+            "frequency": {
+                "hour": 0,
+                "type": "monthly",
+                "value": 1
+            },
+            "columns": [
+                {
+                    "key": "DATE"
+                },
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
+        }'
 ```
 ```PHP
 <?php
@@ -315,16 +420,30 @@ $data = '{
         "file_name_prefix": "settlement-report-USER_ID",
         "show_fee_prevision": false,
         "show_chargeback_cancel": true,
-        "detailed": true,
         "coupon_detailed": true,
         "shipping_detail": true,
         "refund_detailed": true,
-        "extended": false,
+        "display_timezone": "GMT-04",
+        "notification_email_list": [
+            "example@email.com",
+            "john@example.com"
+        ],
         "frequency": {
             "hour": 0,
             "type": "monthly",
             "value": 1
-        }
+        },
+         "columns": [
+            {
+                "key": "DATE"
+            },
+            {
+                "key": "SOURCE_ID"
+            },
+            {
+                "key": "EXTERNAL_REFERENCE"
+            }
+        ]
     }';
 $response = Requests::put('https://api.mercadopago.com/v1/account/settlement_report/config', $headers, $data);
 ```
@@ -341,19 +460,27 @@ connection.setRequestProperty("Authorization", "Bearer ENV_ACCESS_TOKEN");
 connection.setDoOutput(true);
 
 String body = "{
-                    \\"file_name_prefix\\": \\"settlement-report-USER_ID\\",
-                    \\"show_fee_prevision\\": false,
-                    \\"show_chargeback_cancel\\": true,
-                    \\"detailed\\": true,
-                    \\"coupon_detailed\\": true,
-                    \\"shipping_detail\\": true,
-                    \\"refund_detailed\\": true,
-                    \\"extended\\": false,
-                    \\"frequency\\": {
-                        \\"hour\\": 0,
-                        \\"type\\": \\"monthly\\",
-                        \\"value\\": 1
-                    }
+                \\"file_name_prefix\\": \\"settlement-report-USER_ID\\",
+                \\"show_fee_prevision\\": false,
+                \\"show_chargeback_cancel\\": true,
+                \\"coupon_detailed\\": true,
+                \\"shipping_detail\\": true,
+                \\"refund_detailed\\": true,
+                \\"display_timezone\\": \\"GMT-04\\",
+                \\"notification_email_list\\": [
+                    \\"example@email.com\\",
+                    \\"john@example.com\\",
+                ],
+                \\"frequency\\": {
+                    \\"hour\\": 0,
+                    \\"type\\": \\"monthly\\",
+                    \\"value\\": 1
+                },
+                \\"columns\\": [
+                    { \\"key\\": \\"DATE\\" },
+                    { \\"key\\": \\"SOURCE_ID\\" },
+                    { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
+                ]
             }";
 
 try(OutputStream os = connection.getOutputStream()) {
@@ -365,7 +492,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 
 headers = {
@@ -378,16 +505,30 @@ data = '{
             "file_name_prefix": "settlement-report-USER_ID",
             "show_fee_prevision": false,
             "show_chargeback_cancel": true,
-            "detailed": true,
             "coupon_detailed": true,
             "shipping_detail": true,
             "refund_detailed": true,
-            "extended": false,
+            "display_timezone": "GMT-04",
+            "notification_email_list": [
+                "example@email.com",
+                "john@example.com"
+            ],
             "frequency": {
                 "hour": 0,
                 "type": "monthly",
                 "value": 1
-            }
+            },
+            "columns": [
+                {
+                    "key": "DATE"
+                },
+                {
+                    "key": "SOURCE_ID"
+                },
+                {
+                    "key": "EXTERNAL_REFERENCE"
+                }
+            ]
         }'
 
 response = requests.put('https://api.mercadopago.com/v1/account/settlement_report/config', headers=headers, data=data)
@@ -405,16 +546,30 @@ var dataString = '{
         "file_name_prefix": "settlement-report-USER_ID",
         "show_fee_prevision": false,
         "show_chargeback_cancel": true,
-        "detailed": true,
         "coupon_detailed": true,
         "shipping_detail": true,
         "refund_detailed": true,
-        "extended": false,
+        "display_timezone": "GMT-04",
+        "notification_email_list": [
+            "example@email.com",
+            "john@example.com"
+        ],
         "frequency": {
             "hour": 0,
             "type": "monthly",
             "value": 1
-        }
+        },
+        "columns": [
+            {
+                "key": "DATE"
+            },
+            {
+                "key": "SOURCE_ID"
+            },
+            {
+                "key": "EXTERNAL_REFERENCE"
+            }
+        ]
     }';
 
 var options = {
@@ -441,17 +596,31 @@ You will receive an `HTTP STATUS 200 (OK)` in response.
     "file_name_prefix": "settlement-report-USER_ID",
     "show_fee_prevision": false,
     "show_chargeback_cancel": true,
-    "detailed": true,
     "scheduled": false,
     "coupon_detailed": true,
     "shipping_detail": true,
     "refund_detailed": true,
-    "extended": false,
+    "display_timezone": "GMT-04",
+    "notification_email_list": [
+        "example@email.com",
+        "john@example.com"
+    ],
     "frequency": {
         "hour": 0,
         "type": "monthly",
         "value": 1
-    }
+    },
+    "columns": [
+        {
+            "key": "DATE"
+        },
+        {
+            "key": "SOURCE_ID"
+        },
+        {
+            "key": "EXTERNAL_REFERENCE"
+        }
+    ]
 }
 ```
 
@@ -462,13 +631,14 @@ Know the fields you can configure to adjust your preferences before you start:
 | Configurable fields | Description |
 | --- | --- |
 | *`coupon_detailed` (optional)* | <br/>Includes a column to show the detail of the discount coupons.<br/><br/> |
-| `detailed` | <br/>Includes columns with more detailed information about your operations:<br/> - Mercado Libre Fee (`mkp_fee_amount`)<br/> - Fee for offering interest-free installments (`financing_fee_amount`)<br/> - Shipping Costs (`shipping_fee_amount`)<br/>  ----[mla]---- - Taxes charged for gross income withholdings (`taxes_amount`)<br/> ------------ - Installments (`installments`)<br/> <br/><br/>|
-| *`extended` (optional)* | <br/>Includes the details of the commissions in the report:<br/> - Tax detail (`tax_detail`)<br/> - Tax detail (`tax_amount_telco`)<br/> - Point of sale ID  (`pos_id`)<br/> - Store ID (`store_id`)<br/> - Branch name (`store_name`)<br/> - Point of sale external ID (`external_pos_id`)<br/> - Point of sale name (`pos_name`)<br/> - Branch external ID (`external_store_id`)<br/> <br/><br/> |
+| `columns` | <br/>Field with the details of columns to be included in your report. Find all possible values in the [Glossary section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/glossary).<br/><br/>|
 | `file_name_prefix` | <br/>Prefix that composes the report name once generated and ready for download.<br/><br/> |
 | `frequency` | <br/>Indicates the daily, weekly or monthly frequency of scheduled reports.<br/><br/> - `frequency` applies type *monthly* to the day of the month or *weekly* to the day of the week.<br/> - `hour` time of day to generate the report. <br/> - `type` indicates the type of frequency *daily*, *weekly* and *monthly*.<br/><br/> |
+| `display_timezone` (optional) | <br/>This field determines the date and time displayed in the reports. If you do not set a time zone in this field, the system will consider GMT-04 as default. If you choose a time zone which adopts daylight saving time, you will need to adjust it manually when the time changes.<br/><br/> |
 | *`refund_detailed` (optional)* | <br/> Displays the reference code (`external_reference`) of the refund instead of the reference code (`external_reference`) of the payment.<br/><br/> |
 | `scheduled` (read_only) | <br/> Informative field that indicates if there are already scheduled reports in the user account. <br/><br/> |
 | *`separator` (optional)* | <br/> Separator that you can use in the .csv file when you don't want the separator to be a comma. <br/><br/> |
+| `notification_email_list` (optional) | <br/>Allows you to add a group of e-mail recipients to be notified when a report is ready and available for download. Make sure to include the email linked to your Mercado Pago account so you can be notified as well. <br/><br/> |
 | *`sftp_info` (optional)* | <br/> Indicates the uploaded data to SFTP when you need it. <br/><br/> |
 | *`shipping_detail` (optional)* | <br/> Includes the detail of the shipments. <br/> <br/>|
 | *`show_chargeback_cancel` (optional)* | <br/> Includes the detail of cancellations of chargebacks. <br/> <br/>|
@@ -539,7 +709,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 
 headers = {
@@ -615,7 +785,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 
 headers = { 
@@ -697,7 +867,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 
 headers = { 
@@ -789,7 +959,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 
 headers = {
@@ -879,7 +1049,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 
 headers = {
@@ -963,7 +1133,7 @@ System.out.println(connection.getResponseCode());
 System.out.println(connection.getResponseMessage());
 System.out.println(connection.getInputStream());
 ```
-```Python
+```python
 import requests
 
 headers = {
@@ -1010,6 +1180,12 @@ EXTERNAL_REFERENCE;SOURCE_ID;USER_ID;PAYMENT_METHOD_TYPE;PAYMENT_METHOD;SITE;TRA
 2112736008;5067314803;123456789;digital_currency;consumer_credits;MLB;SETTLEMENT;79.00;BRL;2019-08-11T20:48:08.000-04:00;-8.85;70.15;BRL;2019-08-11T20:48:15.000-04:00;70.15;0.00;[{}];-8.85;0.00;0.00;0.00;1;2112736008;;;
 2112729919;5067463621;123456789;credit_card;master;MLB;SETTLEMENT;79.00;BRL;2019-08-11T20:41:46.000-04:00;-8.85;70.15;BRL;2019-08-11T20:41:55.000-04:00;70.15;0.00;[{}];-8.85;0.00;0.00;0.00;1;2112729919;;;
 ```
+
+> NOTE
+>
+> This documentation corresponds to the new version of the API
+>
+> To check the previous version, please go to the [old API Generation section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/v1/api).
 
 <hr/>
 

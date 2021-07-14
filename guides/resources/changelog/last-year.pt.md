@@ -4,32 +4,6 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
-## Fevereiro 2021
-
-### 12 de fevereiro
-
-> CHANGELOG
->
-> Mudança de nome da SDK NodeJs
->
-> PRODUCT: SDK NODEJS
-
-Mudamos o nome de nossa SDK NodeJs de dx-nodejs para sdk-nodejs
-
-[Ir para a documentação das SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/sdks)
-
-### 11 de fevereiro
-
-> CHANGELOG
->
-> Mudança de nome da SDK Java
->
-> PRODUCT: SDK JAVA
-
-Mudamos o nome de nossa SDK Java de dx-java para sdk-java
-
-[Ir para a documentação das SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/sdks)
-
 ## Dezembro 2020
 
 ### 12 de dezembro

@@ -28,9 +28,9 @@ Ao usar nosso Checkout API do Mercado Pago, é importante ter em conta duas inst
 ------------
 
 1. Primeiro, é preciso um frontend para coletar os dados do cartão e gerar um token de segurança com a informação para poder criar o pagamento.
-2. Segundo, um backend que tome o token gerado e os dados do pagamento, como por exemplo o valor e o ítem, e possa confirmar e efetuar o pagamento.
+2. Segundo, um backend que tome o token gerado e os dados do pagamento, como por exemplo o valor e o item, e possa confirmar e efetuar o pagamento.
 
-Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
+Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
 
 > Obtenha mais informações nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference).
 
@@ -41,6 +41,22 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 > h2
 >
 > Capture os dados de cartão
+
+----[mlb]----
+> INFO
+>
+> Nova versão de MercadoPago.js
+>
+> Utilize a biblioteca MercadoPago.js V2 para criar seu formulário de cartão com a funcionalidade CardForm e autogerar a lógica de negócio necessária para fazer o pagamento.<br><br>[Integrar Checkout Transparente com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v2/receiving-payment-by-card)
+------------
+----[mla, mlm, mpe, mco, mlu, mlc]----
+> INFO
+>
+> Nova versão de MercadoPago.js
+>
+> Utilize a biblioteca MercadoPago.js V2 para criar seu formulário de cartão com a funcionalidade CardForm e autogerar a lógica de negócio necessária para fazer o pagamento.<br><br>[Integrar Checkout API com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v2/receiving-payment-by-card)
+------------
+
 
 Para criar um pagamento é necessário fazer a captura dos dados do cartão através do navegador do comprador. Por questões de segurança, **é muito importante que os dados nunca cheguem aos seus servidores**.
 
@@ -427,24 +443,25 @@ System.out.println(payment.getStatus());
 Encontre o estado do pagamento no campo _status_.
 ===
 require 'mercadopago'
-$mp = MercadoPago.new('YOUR_ACCESS_TOKEN')
+sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
 
 payment_data = {
-  "transaction_amount": request.body.transactionAmount.to_f,
-  "token": request.body.token,
-  "description": request.body.description,
-  "installments": request.body.installments.to_i,
-  "payment_method_id": request.body.paymentMethodId,
-  "payer": {
-    "email": request.body.email,
-    "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
-      "type": request.body.docType,------------
-      "number": request.body.docNumber
+  transaction_amount: params[:transactionAmount].to_f,
+  token: params[:token],
+  description: params[:description],
+  installments: params[:installments].to_i,
+  payment_method_id: params[:paymentMethodId],
+  payer: {
+    email: params[:email],
+    identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
+      type: params[:docType],------------
+      number: params[:docNumber]
     }
   }
 }
 
-payment = $mp.post('/v1/payments', payment_data)
+payment_response = sdk.payment.create(payment_data)
+payment = payment_response[:response]
 
 puts payment
 
@@ -453,33 +470,64 @@ puts payment
 ===
 Encontre o estado do pagamento no campo _status_.
 ===
+using System;
+using MercadoPago.Client.Common;
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
 
-using MercadoPago;
-using MercadoPago.DataStructures.Payment;
-using MercadoPago.Resources;
+MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
 
-MercadoPago.SDK.SetAccessToken("YOUR_ACCESS_TOKEN");
-
-Payment payment = new Payment()
+var paymentRequest = new PaymentCreateRequest
 {
-    TransactionAmount = float.Parse(Request["transactionAmount"]),
+    TransactionAmount = decimal.Parse(Request["transactionAmount"]),
     Token = Request["token"],
     Description = Request["description"],
     Installments = int.Parse(Request["installments"]),
     PaymentMethodId = Request["paymentMethodId"],
-    Payer = new Payer(){
+    Payer = new PaymentPayerRequest
+    {
         Email = Request["email"],
-        Identification = new Identification(){----[mla, mlb, mlu, mlc, mpe, mco]----
-          Type = Request["docType"],------------
-          Number = Request["docNumber"]
-        }
-    }
+        Identification = new IdentificationRequest
+        {----[mla, mlb, mlu, mlc, mpe, mco]----
+            Type = Request["docType"],------------
+            Number = Request["docNumber"],
+        },
+    },
 };
 
-payment.Save();
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(paymentRequest);
 
-console.log(payment.Status);
+Console.WriteLine(payment.Status);
 
+```
+```python
+===
+Encontre o estado do pagamento no campo _status_.
+===
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_data = {
+    "transaction_amount": float(request.POST.get("transaction_amount")),
+    "token": request.POST.get("token"),
+    "description": request.POST.get("description"),
+    "installments": int(request.POST.get("installments")),
+    "payment_method_id": request.POST.get("payment_method_id"),
+    "payer": {
+        "email": request.POST.get("email"),
+        "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
+            "type": request.POST.get("type"), ------------
+            "number": request.POST.get("number")
+        }
+    }
+}
+
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
+
+print(payment)
 ```
 ```curl
 ===
@@ -559,7 +607,7 @@ Por último, é importante que esteja sempre informado sobre a criação nos nov
 >
 > Checkout Transparente
 >
-> Disponibilizamos <a href="http://github.com/mercadopago/card-payment-sample" target="_blank">exemplos completos de integração</a> no GitHub para PHP ou NodeJS para que você possa fazer o download imediatamente.
+> Disponibilizamos [exemplos completos de integração](http://github.com/mercadopago/card-payment-sample) no GitHub para PHP ou NodeJS para que você possa fazer o download imediatamente.
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > GIT
@@ -575,7 +623,7 @@ Por último, é importante que esteja sempre informado sobre a criação nos nov
 >
 > Formulário de pagamento
 >
-> Se você deseja implementar seu servidor com alguma outra tecnologia, te deixamos um [exemplo completo do formulário de pagamento ](https://github.com/mercadopago/card-payment-sample/tree/master/client) no GitHub para que possa baixar.
+> Se você deseja implementar seu servidor com alguma outra tecnologia, te deixamos um [exemplo completo do formulário de pagamento](https://github.com/mercadopago/card-payment-sample/tree/master/client) no GitHub para que possa baixar.
 
 ---
 ### Próximos passos

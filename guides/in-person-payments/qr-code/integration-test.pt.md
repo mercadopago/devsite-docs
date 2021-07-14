@@ -1,14 +1,3 @@
----
-sites_supported:
-  - mla
-  - mpe
-  - mco
-  - mlu
-  - mlm
-  - mlc
-  - mlb
----
-
 # Teste sua integração
 
 ## Como testar sua integração? 
@@ -71,7 +60,7 @@ Comprove que tenha recebido as notificações do estado do pedido em seu sistema
 | **Restituição de pagamento**. Uma restituição é realizada desde o Ponto de Venda. | Na conta do comprador impacta a restituição. | Ver [devoluções](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds/#bookmark_devolu%C3%A7%C3%B5es). |
 | **Cancelar ordem**. O usuário se arrepende e decide pagar em dinheiro.  | O pedido é eliminado e, portanto, ao escanear o QR somente é mostrada a tela de espera. | Remover a ordem de pagamento do caixa. |
 
-## Quero ir para produção
+## Quero entrar em produção
 
 Quando tiver o aplicativo **pronto e funcionando** na modalidade de teste e quiser começar a processar pagamentos reais, deverá [ativar suas credenciais]([FAKER][CREDENTIALS][URL]). 
 
@@ -85,4 +74,4 @@ Posteriormente, Mercado Pago poderá auditar seu website, app ou Software de Pon
 
 ## Por que este processo é necessário? 
 
-Porque assim podemos garantir a segurança dos dados de seus clientes e conseguir a melhor experiência de compra, que contribua para maximizar a conversão dos pagamentos que receba. O inadimplemento destas normas pode acarretar desde o não processamento de pagamentos até ações legais conforme o estabelecido nos [termos e condições](https://www.mercadopago.com.br/ajuda/termos-e-condicoes_300). 
+Porque assim podemos garantir a segurança dos dados de seus clientes e conseguir a melhor experiência de compra, que contribua para maximizar a conversão dos pagamentos que receba. O inadimplemento destas normas pode acarretar desde o não processamento de pagamentos até ações legais conforme o estabelecido nos [Termos e Condições](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/termos-e-condicoes_300). 

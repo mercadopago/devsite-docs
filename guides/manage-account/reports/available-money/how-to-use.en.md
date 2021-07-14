@@ -6,6 +6,12 @@ Once the report is ready and downloaded, you will have a file to review the spre
 
 To review the report we recommend downloading it in .csv format to open it in the program that you view it. Configure your program to support the UTF-8 format, so you avoid reading problems.
 
+> WARNING
+>
+> The Available Balance report will be disabled soon
+>
+> You can use the [Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
+
 ## What does the report contain?
 
 The report is composed by:

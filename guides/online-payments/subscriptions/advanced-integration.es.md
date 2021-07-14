@@ -1,10 +1,3 @@
----
-sites_supported:
-  - mla
-  - mlm
-  - mlb
----
-
 # Actualización de suscripciones
 
 Para actualizar, pausar, cancelar o reactivar una suscripción ya creada, es necesario usar el `preapproval_id` que retorna luego de la [creación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/introduction).
@@ -102,7 +95,65 @@ curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPRO
 }'
 ```
 
->Puedes obtener más información sobre los campos en la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference).
+## Fecha de facturación
+
+Si tienes una suscripción mensual, puedes establecer un día fijo del mes para recibir los cobros de una suscripción mensual. 
+
+Cuando se establece una fecha de facturación, se puede elegir si se va a cobrar o no un monto proporcional a los pagadores que se adhieren a esa suscripción en fechas distintas a la elegida.
+
+> NOTE
+> 
+> Nota
+> 
+> A modo de ejemplo, los códigos de abajo muestran el día 10 como fecha de facturación. Se puede seleccionar cualquier día entre el __1 y el 28__, utilizando el parámetro `billing_day`.
+
+### Plan con fecha de facturación para el día 10 con pago proporcional
+
+```json
+{
+"back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]",
+	"reason": "Plan Gym Gold",
+	"auto_recurring": {
+		"frequency": "1",
+		"frequency_type": "months",
+    "transaction_amount": 1100,
+		"currency_id": "[FAKER][CURRENCY][ACRONYM]",
+		"repetitions": 12,
+    "billing_day": 10,
+    "billing_day_proportional": true,
+		"free_trial": {
+			"frequency_type": "months",
+			"frequency": "1"
+		}
+	}
+}
+```
+
+Para no cobrar el pago proporcional, haz la siguiente llamada: 
+
+### Plan con fecha de facturación para el día 10 sin pago proporcional
+
+```json
+{
+	"back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]",
+	"reason": "Plan Gym Gold",
+	"auto_recurring": {
+	  "frequency": "1",
+		"frequency_type": "months",
+    "transaction_amount": 1100,
+		"currency_id": "[FAKER][CURRENCY][ACRONYM]",
+		"repetitions": 12,
+    "billing_day": 10,
+    "billing_day_proportional": false,
+		"free_trial": {
+		  "frequency_type": "months",
+		  "frequency": "1"
+		}
+	}
+}
+```
+
+> Puedes obtener más información sobre los campos en la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/subscriptions/_preapproval/post).
 
 
 ------------

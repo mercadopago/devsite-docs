@@ -14,13 +14,13 @@ The report is made up of different types of transactions that you can see in the
 | Transactions | Transaction type |
 | --- | --- |
 | *SETTLEMENT* |<br/> Approved <br/><br/>|
-| *REFUND* |<br/> Total or partial returns <br/><br/> |
+| *REFUND* |----[mla, mlm, mco, mlu, mlb, mlc]---- <br/> Total or partial returns <br/><br/> ------------ ----[mpe]---- <br/> Total returns <br/><br/> ------------|
 | *CHARGEBACK* | <br/> Chargeback <br/><br/> |
 | *DISPUTE* |<br/> In a complaint <br/><br/>|
 | *WITHDRAWAL* | <br/> Money withdrawn <br/><br/>|
 | *CASHBACK* | <br/> Cashback <br/><br/> |
 | *SETTLEMENT_SHIPPING* | <br/> Approved shipments <br/><br/> |
-| *REFUND_SHIPPING* | <br/> Total or partial returns of shipping costs <br/><br/> |
+| *REFUND_SHIPPING* | ----[mla, mlm, mco, mlu, mlb, mlc]---- <br/> Total or partial returns of shipping costs <br/><br/> ------------ ----[mpe]---- Returns of shipping costs ------------ |
 | *CHARGEBACK_SHIPPING* | <br/> Shipping chargeback <br/><br/> |
 | *DISPUTE_SHIPPING* | <br/> The shipment is in claim <br/><br/> |
 

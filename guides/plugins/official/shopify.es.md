@@ -32,6 +32,7 @@ Instala la [app extension de nuestro checkout transparente](https://apps.shopify
 | Medios de pago | Acepta pagos con tarjeta de crédito y débito, efectivo y dinero en cuenta de Mercado Pago. |
 | Financiación | Vende en cuotas y ofrece las promociones disponibles. |
 | Pago como invitado | Permite que tus clientes paguen sin necesidad de tener cuenta en Mercado Pago. |
+| Descuentos | Ofrece promociones a tus clientes creando cupones y descuentos automáticos. |
 
 
 ### ¿Cómo instalar el checkout transparente?
@@ -80,7 +81,7 @@ Cuando hagas pruebas, revisa que el flujo de pagos funcione correctamente.
 
 Para empezar a cobrar debes [activar tus credenciales]([FAKER][CREDENTIALS][URL]).
 
-> Consulta los [requisitos para ir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/goto-production) si tienes alguna duda con el proceso.
+> Consulta los [requisitos para salir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/goto-production) si tienes alguna duda con el proceso.
 
 Al activarlas, asegúrate que las credenciales de Producción ingresadas sean las de la cuenta que reciba el dinero de las ventas. 
 
