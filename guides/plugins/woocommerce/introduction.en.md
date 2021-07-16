@@ -20,6 +20,7 @@ Install the payment processor in WooCommerce and take your sales to another leve
 | Payment cancellations | Cancel the pending payments directly from the platform |
 | Binary mode | Approve or reject payments instantly and automatically. |
 | Currency conversion | No more compatibility issues. Convert the currency you use in WooCommerce to the currency of your Mercado Pago account. |
+| Payment with card stored in Mercado Pago  | Payment with card stored in Mercado Pago function, for Mercado Pago customers to buy without having to fill in card data at the store's checkout. |
 
 >**Are you a developer?**
 >This guide is also designed to speed up the installation, integration and configuration of our module in the most recognized e-commerce platforms worldwide.
