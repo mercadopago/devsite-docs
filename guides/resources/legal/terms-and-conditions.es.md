@@ -203,27 +203,27 @@ En el caso de que los sistemas del Desarrollador interactúen con los sistemas d
 
 El Desarrollador, sin carácter taxativo, deberá:
 
-(i) 	Contar con una política de seguridad informática adecuada aplicable a sus empleados, dependientes, contratistas y/o proveedores que permita resguardar y garantizar la seguridad de la información confidencial a la que acceda.
+(i) Contar con una política de seguridad informática adecuada aplicable a sus empleados, dependientes, contratistas y/o proveedores que permita resguardar y garantizar la seguridad de la información confidencial a la que acceda.
 
-(ii) 	Ceñirse a las buenas prácticas de la norma ISO/IEC 27552:2019 (“Gestión de la Privacidad”) o bien 270012:2013 (“Código de Prácticas aplicables a la Gestión de Seguridad de la Información”) en su última versión vigente (en adelante las "Normas ISO ISMSs" - ISMS, sigla en inglés correspondiente a Information Security Management System).
+(ii) Ceñirse a las buenas prácticas de la norma ISO/IEC 27552:2019 (“Gestión de la Privacidad”) o bien 270012:2013 (“Código de Prácticas aplicables a la Gestión de Seguridad de la Información”) en su última versión vigente (en adelante las "Normas ISO ISMSs" - ISMS, sigla en inglés correspondiente a _Information Security Management System_).
 
-(iii) 	Construir y mantener una red segura, utilizando firewalls y proxies cuando corresponda e implementando una política de contraseñas apropiada.
+(iii) Construir y mantener una red segura, utilizando firewalls y proxies cuando corresponda e implementando una política de contraseñas apropiada.
 
-(iv) 	Proteger los datos de los titulares de las tarjetas utilizando conexiones cifradas para la transmisión de datos e información confidencial de los titulares a través de redes públicas abiertas y tomando las medidas pertinentes para el cuidado de la información personal.
+(iv) Proteger los datos de los titulares de las tarjetas utilizando conexiones cifradas para la transmisión de datos e información confidencial de los titulares a través de redes públicas abiertas y tomando las medidas pertinentes para el cuidado de la información personal.
 
-(v) 	Mantener un programa de gestión de vulnerabilidades, utilizando antivirus, sistemas operativos y aplicaciones de soporte actualizadas en su última versión, manteniendo procedimientos seguros de desarrollo y realizando auditorías internas.
+(v) Mantener un programa de gestión de vulnerabilidades, utilizando antivirus, sistemas operativos y aplicaciones de soporte actualizadas en su última versión, manteniendo procedimientos seguros de desarrollo y realizando auditorías internas.
 
-(vi) 	Crear medidas sólidas de control de acceso, implementando políticas de acceso, tanto lógico como físico, para los sistemas e instalaciones del Desarrollador.
+(vi) Crear medidas sólidas de control de acceso, implementando políticas de acceso, tanto lógico como físico, para los sistemas e instalaciones del Desarrollador.
 
-(vii) 	Monitorear y evaluar constantemente el estado de la seguridad en las redes informáticas.
+(vii) Monitorear y evaluar constantemente el estado de la seguridad en las redes informáticas.
 
-(viii)	Dar cumplimiento a la norma PCI-DSS en caso de que las operaciones por año superen, los dos millones y medio (2.500.000) de transacciones con tarjetas American Express o seis millones (6.000.000) de transacciones con otras tarjetas. En este sentido, anualmente el Desarrollador deberá disponibilizar, previa solicitud de Mercado Pago, evidencia de su certificación vigente PCI-DSS.
+(viii) Dar cumplimiento a la norma PCI-DSS en caso de que las operaciones por año superen, los dos millones y medio (2.500.000) de transacciones con tarjetas American Express o seis millones (6.000.000) de transacciones con otras tarjetas. En este sentido, anualmente el Desarrollador deberá disponibilizar, previa solicitud de Mercado Pago, evidencia de su certificación vigente PCI-DSS.
 
-(ix) 	Cuando el usuario no supere anualmente las seis  millones (6.000.000) de transacciones o las dos millones y medio (2.500.000) de transacciones con tarjetas American Express, deberá completar el SAQ (“Self assessment Questionnaire”) proporcionado por Mercado Pago anualmente.
+(ix) Cuando el usuario no supere anualmente las seis  millones (6.000.000) de transacciones o las dos millones y medio (2.500.000) de transacciones con tarjetas American Express, deberá completar el SAQ (“Self assessment Questionnaire”) proporcionado por Mercado Pago anualmente.
 
-(x) 	Clasificar los datos en función a su criticidad, controles y tratamientos adecuados.
+(x) Clasificar los datos en función a su criticidad, controles y tratamientos adecuados.
 
-Incidentes
+**Incidentes**
 
 Al momento de tomar conocimiento de un incidente de seguridad informática, el Desarrollador deberá notificarlo a Mercado Pago a las casillas de mail irsec@mercadolibre.com y seguridad.mp@mercadolibre.com, de manera expeditiva, dentro de un plazo que en ningún caso podrá exceder el término de veinticuatro (24) horas, detallando las circunstancias y particularidades del caso e incluyendo toda la información disponible y relevante. En caso de corresponder, dentro de las veinticuatro (24) horas de la recepción de la referida notificación, el Desarrollador deberá proporcionar a Mercado Pago una copia de toda comunicación escrita emanada de entes gubernamentales y/o regulatorios y de toda demanda y/o petición presentada ante la justicia y/o ante entes gubernamentales y/o regulatorios, que guarden relación o se originen a raíz del incidente.
 
@@ -235,30 +235,30 @@ Declaraciones Públicas. El Desarrollador no podrá emitir comunicados de prensa
 
 En el caso de producirse un incidente de seguridad informática o en el supuesto que Mercado Pago y/o sus subsidiarias, afiliadas, vinculadas y/o controladas se vean afectadas por publicidad de carácter negativa a raíz de un incidente de seguridad informática, Mercado Pago podrá a su criterio suspender o terminar la relación contractual con el Desarrollador, con carácter inmediato, mediante notificación escrita al Desarrollador.
 
-10.1. “Incidente”: se refiere a: (i) todo incumplimiento detectado en las instalaciones, equipo, sistemas o personas contratadas o empleadas por el Desarrollador, que en términos razonables pueda esperarse tenga un efecto adverso sobre la seguridad, confidencialidad o integridad de los datos y de los sistemas involucrados; (ii)  toda apropiación de datos, y/o situación que implique o constituya un uso o alteración no autorizado de los datos y de los sistemas y/o servidores involucrados; como así también toda situación que implique una afectación a su seguridad o constituya un uso no autorizado de los datos.
+10.1. “Incidente”: se refiere a: (i) todo incumplimiento detectado en las instalaciones, equipo, sistemas o personas contratadas o empleadas por el Desarrollador, que en términos razonables pueda esperarse tenga un efecto adverso sobre la seguridad, confidencialidad o integridad de los datos y de los sistemas involucrados; (ii) toda apropiación de datos, y/o situación que implique o constituya un uso o alteración no autorizado de los datos y de los sistemas y/o servidores involucrados; como así también toda situación que implique una afectación a su seguridad o constituya un uso no autorizado de los datos.
 
 En el caso de que los sistemas del Desarrollador interactúen con los sistemas de Mercado Pago, o que Mercado Pago interactúe con los sistemas del Desarrollador en donde se cargue, incluya o se de acceso a información confidencial de Mercado Pago y/o sus afiliadas, el Desarrollador deberá contar con una adecuada política que incluya mecanismos que garanticen la seguridad de la información confidencial.
 El Desarrollador, sin carácter taxativo, deberá:
 
-(i)    Contar con una política de seguridad informática adecuada aplicable a sus empleados, dependientes, contratistas y/o proveedores que permita resguardar y garantizar la seguridad de la información confidencial a la que acceda.
+(i) Contar con una política de seguridad informática adecuada aplicable a sus empleados, dependientes, contratistas y/o proveedores que permita resguardar y garantizar la seguridad de la información confidencial a la que acceda.
 
-(ii)    Ceñirse a las buenas prácticas de la norma ISO/IEC 27552:2019 (“Gestión de la Privacidad”) o bien 270012:2013 (“_Código de Prácticas aplicables a la Gestión de Seguridad de la Información_”) en su última versión vigente (en adelante las "<u>Normas ISO ISMSs</u>" - ISMS, sigla en inglés correspondiente a _Information Security Management System_).
+(ii) Ceñirse a las buenas prácticas de la norma ISO/IEC 27552:2019 (“Gestión de la Privacidad”) o bien 270012:2013 (“_Código de Prácticas aplicables a la Gestión de Seguridad de la Información_”) en su última versión vigente (en adelante las "<u>Normas ISO ISMSs</u>" - ISMS, sigla en inglés correspondiente a _Information Security Management System_).
 
-(iii)   Construir y mantener una red segura, utilizando firewalls y proxies cuando corresponda e implementando una política de contraseñas apropiada.
+(iii) Construir y mantener una red segura, utilizando firewalls y proxies cuando corresponda e implementando una política de contraseñas apropiada.
 
-(iv)   Proteger los datos de los titulares de las tarjetas utilizando conexiones cifradas para la transmisión de datos e información confidencial de los titulares a través de redes públicas abiertas y tomando las medidas pertinentes para el cuidado de la información personal.
+(iv) Proteger los datos de los titulares de las tarjetas utilizando conexiones cifradas para la transmisión de datos e información confidencial de los titulares a través de redes públicas abiertas y tomando las medidas pertinentes para el cuidado de la información personal.
 
-(v)   Mantener un programa de gestión de vulnerabilidades, utilizando antivirus, sistemas operativos y aplicaciones de soporte actualizadas en su última versión, manteniendo procedimientos seguros de desarrollo y realizando auditorías internas.
+(v) Mantener un programa de gestión de vulnerabilidades, utilizando antivirus, sistemas operativos y aplicaciones de soporte actualizadas en su última versión, manteniendo procedimientos seguros de desarrollo y realizando auditorías internas.
 
-(vi)   Crear medidas sólidas de control de acceso, implementando políticas de acceso, tanto lógico como físico, para los sistemas e instalaciones del Desarrollador.
+(vi) Crear medidas sólidas de control de acceso, implementando políticas de acceso, tanto lógico como físico, para los sistemas e instalaciones del Desarrollador.
 
 (vii) Monitorear y evaluar constantemente el estado de la seguridad en las redes informáticas.
 
-(viii)  Dar cumplimiento a la norma PCI-DSS en caso de que las operaciones por año superen, los dos millones y medio (2.500.000) de transacciones con tarjetas American Express o seis millones (6.000.000) de transacciones con otras tarjetas. En este sentido, anualmente el Desarrollador deberá disponibilizar, previa solicitud de Mercado Pago, evidencia de su certificación vigente PCI-DSS.
+(viii) Dar cumplimiento a la norma PCI-DSS en caso de que las operaciones por año superen, los dos millones y medio (2.500.000) de transacciones con tarjetas American Express o seis millones (6.000.000) de transacciones con otras tarjetas. En este sentido, anualmente el Desarrollador deberá disponibilizar, previa solicitud de Mercado Pago, evidencia de su certificación vigente PCI-DSS.
 
-(ix)   Cuando el usuario no supere anualmente las seis millones (6.000.000) de transacciones o las dos millones y medio (2.500.000) de transacciones con tarjetas American Express, deberá completar el SAQ (“_Self assessment Questionnaire_”) proporcionado por Mercado Pago anualmente.
+(ix) Cuando el usuario no supere anualmente las seis millones (6.000.000) de transacciones o las dos millones y medio (2.500.000) de transacciones con tarjetas American Express, deberá completar el SAQ (“_Self assessment Questionnaire_”) proporcionado por Mercado Pago anualmente.
 
-(x)   Clasificar los datos en función a su criticidad, controles y tratamientos adecuados.
+(x) Clasificar los datos en función a su criticidad, controles y tratamientos adecuados.
 
 Incidentes
 
@@ -558,7 +558,7 @@ O Desenvolvedor, sem caráter taxativo, deverá:
 
 (i) Contar com uma política de segurança cibernética adequada aplicável a seus funcionários, dependentes, empreiteiros e/ou fornecedores que permita proteger e garantir a segurança da informação confidencial a qual tenha acesso.
 
-(ii) Respeitar as boas práticas da norma ISO/IEC 27552:2019 (“Gestão da Privacidade”) ou 270012:2013 (“Código de Práticas aplicáveis à Gestão de Segurança da Informação”) em sua última versão em vigor (doravante, “Normas ISO ISMSs” - ISMS, siglas em inglês para Information Security Management Sistem).
+(ii) Respeitar as boas práticas da norma ISO/IEC 27552:2019 (“Gestão da Privacidade”) ou 270012:2013 (“Código de Práticas aplicáveis à Gestão de Segurança da Informação”) em sua última versão em vigor (doravante, “Normas ISO ISMSs” - ISMS, siglas em inglês para _Information Security Management System_).
 
 (iii) Construir e manter uma rede segura, utilizando firewalls e proxies quando for o caso e implementando uma política de senhas apropriada.
 
@@ -570,25 +570,25 @@ O Desenvolvedor, sem caráter taxativo, deverá:
 
 (vii) Monitorar e avaliar permanentemente o status de segurança nas redes de TI.
 
-(viii)  Cumprir a norma PCI-DSS caso as operações por ano superem os dois milhões e meio (2.500.000) de transações com cartões American Express ou seis milhões (6.000.000) de transações com outros cartões. Nesse sentido, anualmente, o Desenvolvedor deverá disponibilizar, prévia solicitação do Mercado Pago, evidência de sua certificação em vigor PCI-DSS.
+(viii) Cumprir a norma PCI-DSS caso as operações por ano superem os dois milhões e meio (2.500.000) de transações com cartões American Express ou seis milhões (6.000.000) de transações com outros cartões. Nesse sentido, anualmente, o Desenvolvedor deverá disponibilizar, prévia solicitação do Mercado Pago, evidência de sua certificação em vigor PCI-DSS.
 
 (ix) Quando o usuário não superar anualmente os seis milhões (6.000.000) de transações ou os dois milhões e meio (2.500.000) de transações com cartões American Express, deverá preencher o SAQ (“Self Assessment Questionnaire”) fornecido anualmente pelo Mercado Pago.
 
 (x) Classificar os dados em função de sua criticidade, controles e tratamentos adequados.
 
-Incidentes
+**Incidentes**
 
 No momento de tomar conhecimento de um incidente de segurança cibernética, o Desenvolvedor deverá notificar o Mercado Pago através de seus e-mails irsec@mercadolibre.com e seguridad.mp@mercadolibre.com, de maneira imediata, dentro de um prazo que não poderá ultrapassar, em nenhum caso, as vinte e quatro (24) horas, detalhando as circunstâncias e particularidades do caso e incluindo todas as informações disponíveis e relevantes. Se couber, dentro das vinte e quatro (24) horas do recebimento da referida notificação, o Desenvolvedor deverá fornecer ao Mercado Pago uma cópia de toda comunicação escrita emanada de entidades governamentais e/ou reguladoras e de toda demanda e/ou petição apresentada perante a Justiça e/ou junto a entidades governamentais e/ou reguladoras, que tenham relação ou sejam originadas a partir do incidente.
 
-Medidas corretivas. Caso ocorra um incidente de segurança cibernética, o Desenvolvedor deverá adotar as ações de correção e de ressarcimento que o Mercado Pago pudesse razoavelmente solicitar e que resultem habituais para as circunstâncias do caso (por exemplo: encaminhar comunicações de incumprimento aos indivíduos afetados), e continuar com as fases de detecção, análise e mitigação, e erradicação e recuperação; sendo que, em cada uma das fases, o Mercado Pago deverá ser notificado ao e-mail irsec@mercadolibre.com sobre o avanço das medidas implementadas, bem como sobre a análise realizada que explique a abrangência do incidente.
+<u>Medidas corretivas</u>. Caso ocorra um incidente de segurança cibernética, o Desenvolvedor deverá adotar as ações de correção e de ressarcimento que o Mercado Pago pudesse razoavelmente solicitar e que resultem habituais para as circunstâncias do caso (por exemplo: encaminhar comunicações de incumprimento aos indivíduos afetados), e continuar com as fases de detecção, análise e mitigação, e erradicação e recuperação; sendo que, em cada uma das fases, o Mercado Pago deverá ser notificado ao e-mail irsec@mercadolibre.com sobre o avanço das medidas implementadas, bem como sobre a análise realizada que explique a abrangência do incidente.
 
 O Desenvolvedor deverá realizar o estorno ao Mercado Pago de maneira expedita e sob petição escrita deste (acompanhando o detalhe respectivo) dos custos e despesas razoavelmente realizados pelo Mercado Pago para efeitos da implementação de medidas de correção e de ressarcimento adicionais, adotadas em razão de um Incidente.
 
-Declarações Públicas. O Desenvolvedor não poderá emitir comunicações à imprensa, enviar notificações escritas a indivíduos que forem afetados ou realizar declarações públicas a respeito de um incidente de segurança cibernética sem ter obtido previamente a anuência escrita pelo Mercado Pago quanto ao formato, conteúdo e momento de tal anúncio. O Desenvolvedor deverá cooperar em boa-fé com o Mercado Pago, respondendo rapidamente a todas as consultas relacionadas a incidentes de segurança cibernética.
+<u>Declarações Públicas</u>. O Desenvolvedor não poderá emitir comunicações à imprensa, enviar notificações escritas a indivíduos que forem afetados ou realizar declarações públicas a respeito de um incidente de segurança cibernética sem ter obtido previamente a anuência escrita pelo Mercado Pago quanto ao formato, conteúdo e momento de tal anúncio. O Desenvolvedor deverá cooperar em boa-fé com o Mercado Pago, respondendo rapidamente a todas as consultas relacionadas a incidentes de segurança cibernética.
 
 Caso ocorra um incidente de segurança cibernética ou, na suposição de que o Mercado Pago e/ou suas contratadas, filiadas, vinculadas e/ou controladas sejam afetadas por publicidade negativa em razão de um incidente de segurança cibernética, o Mercado Pago poderá suspender ou finalizar, ao seu critério, a relação contratual com o Desenvolvedor, com caráter imediato, mediante notificação escrita ao Desenvolvedor.
 
-10.1. “Incidente” se refere a: (I) qualquer descumprimento detectado nas instalações, equipamento, sistemas ou pessoas contratadas ou empregadas pelo Desenvolvedor que, em termos razoáveis, possa se esperar que tenha um efeito adverso sobre a segurança, confidencialidade ou integridade dos dados e dos sistemas envolvidos; (ii) toda apropriação de dados, e/ou situação que signifique ou constitua um uso ou alteração não autorizado dos dados e dos sistemas e/ou servidores envolvidos; bem como toda situação que afete sua segurança ou constitua um uso não autorizado dos dados.
+10.1. “<u>Incidente</u>” se refere a: (I) qualquer descumprimento detectado nas instalações, equipamento, sistemas ou pessoas contratadas ou empregadas pelo Desenvolvedor que, em termos razoáveis, possa se esperar que tenha um efeito adverso sobre a segurança, confidencialidade ou integridade dos dados e dos sistemas envolvidos; (ii) toda apropriação de dados, e/ou situação que signifique ou constitua um uso ou alteração não autorizado dos dados e dos sistemas e/ou servidores envolvidos; bem como toda situação que afete sua segurança ou constitua um uso não autorizado dos dados.
 
 
 ## 11. Titularidade
