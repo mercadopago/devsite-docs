@@ -965,7 +965,7 @@ Los términos en mayúscula que no estén definidos en estos Términos y Condici
 ----[mco]----
 # Términos y Condiciones para Desarrolladores de Mercado Pago
 
-_Última modificación: 15/06/2020_
+_Última modificación: 15/07/2021_
 
 Estos términos y condiciones, incluyendo sus anexos (los “Términos y Condiciones”), constituyen un contrato donde se establecen las reglas para que cualquier persona natural y/o jurídica pueda participar como Desarrollador y pueda acceder y/o usar la API de Mercado Pago Colombia Ltda., N.I.T.: 900116319-8 (“Mercado Pago”) (la “API”). Al acceder y/o usar la API, los Desarrolladores aceptan estos Términos y Condiciones.
  
@@ -1095,11 +1095,11 @@ A los efectos de estos Términos y Condiciones, por “Información Personal” 
 
 Los Desarrolladores podrán acceder a Información Personal siempre y cuando obtengan el consentimiento de su titular de conformidad con la legislación aplicable e informen a los mismos de manera clara y expresa que quien recibe la información es el Desarrollador y no Mercado Pago. Los Desarrolladores podrán obtener y utilizar dicha información únicamente con el alcance autorizado por los titulares de los datos. 
 
-Los Desarrolladores deberán cumplir con todas las leyes aplicables en materia de protección de datos personales y sus políticas de privacidad deberán cumplir con los estándares legales aplicables e informar con claridad a los Usuarios de la Aplicación el tipo de información recolectada por la Aplicación, el uso que harán de esa información, con qué terceros compartirán la información y como podrán ejercer sobre dicha información los derechos de acceso, rectificación cancelación y oposición, dejando en claro que quien recaba la información es el Desarrollador y no Mercado Pago.
+Los Desarrolladores deberán cumplir con todas las leyes aplicables en materia de protección de datos personales y sus políticas de privacidad deberán cumplir con los estándares legales aplicables. Asimismo, deberán, como mínimo, informar con claridad a los Usuarios de la Aplicación el tipo de información recolectada por la Aplicación, el uso que harán de esa información, con qué terceros compartirán la información y como podrán ejercer sobre dicha información los derechos de acceso, rectificación cancelación y oposición, dejando en claro que quien recaba la información es el Desarrollador y no Mercado Pago.
 
-Los Desarrolladores protegerán la Información Personal de cualquier acceso o uso no autorizado y notificarán a Mercado Pago cualquier acceso o uso no autorizado de dicha información como así también a los Usuarios de la Aplicación en la medida que lo requiera la ley aplicable.
+Los Desarrolladores protegerán la Información Personal de cualquier procesamiento, pérdida, uso, divulgación, adquisición o acceso no autorizados y notificarán a Mercado Pago cualquier acceso o uso no autorizado de dicha información como así también a los Usuarios de la Aplicación y autoridad competente, en la medida que lo requiera la ley aplicable.
 
-El Desarrollador deberá abstenerse de comunicar, divulgar, transferir o ceder la Información Personal a terceros, salvo que cuente con la autorización previa, expresa y por escrito de Mercado Pago y de los titulares de los datos.
+El Desarrollador deberá abstenerse de comunicar, divulgar, transferir o ceder la Información Personal a terceros, salvo que cuente con la autorización previa, expresa y por escrito de Mercado Pago y/o de los titulares de los datos.
 
 En caso de que el Desarrollador decida subcontratar el tratamiento de la Información Personal, deberá asegurarse de que el proveedor del servicio limite el uso que hacen de ésta a las finalidades previstas en la subcontratación, que tenga la capacidad de mantener segura y confidencial la Información Personal y de cumplir con los requisitos de tratamiento de datos de Mercado Pago y de la normativa de protección de datos personales, siendo en todo momento el Desarrollador el responsable del tratamiento de los Datos Personales como lo indica la normativa aplicable.
  
@@ -1155,13 +1155,47 @@ Mercado Pago le proporcionará al Desarrollador resultados detallados de cualqui
 
 ## 10. Requisitos de Seguridad
 
-Los Desarrolladores deberán cumplir e implementar prácticas de seguridad informática y de datos razonables de acuerdo a los estándares de la industria.
+Los Desarrolladores deberán cumplir y hacer cumplir a sus empleados, dependientes, contratistas y/o proveedores los requisitos de seguridad detallados en la presente sección, e implementar prácticas de seguridad informática y de datos razonables de acuerdo a los estándares de la industria (como los mencionados en el ítem (ii) del tercer párrafo).
 
-En particular, y sin limitar las obligaciones previstas en el párrafo anterior, deberán mantener precauciones razonables para proteger la seguridad de la siguiente información, sea proporcionada por un Usuario de Mercado Pago u obtenida de Mercado Pago mediante la API:
-Nombre y Apellido, direcciones de correo electrónico de los Usuarios de Mercado Pago o cualquier otro dato del Usuario al cual llegue a tener acceso,
-Credenciales de validación de identidad,
-Apodos de los Usuarios de Mercado Pago (inclusive el apodo del Desarrollador de la API, apodo de la Aplicación, y apodo del Certificado), y
-Cualquier otro requisito que Mercado Pago considere aplicable.
+En particular, y sin limitar las obligaciones previstas en el párrafo anterior, deberán mantener las medidas necesarias para proteger la seguridad de la siguiente información: nombre y apellido, direcciones de correo electrónico de los usuarios, credenciales de validación de identidad, apodos de los Usuarios de Mercado Pago (inclusive el apodo del Desarrollador de la API, apodo de la Aplicación, y apodo del certificado), o cualquier otro dato del usuario al cual llegue a tener acceso; sea proporcionada por un Usuario de Mercado Pago u obtenida de Mercado Pago mediante la API, así como cualquier otro requisito que Mercado Pago considere aplicable.
+
+En el caso de que los sistemas del Desarrollador interactúen con los sistemas de Mercado Pago, o que Mercado Pago interactúe con los sistemas del Desarrollador en donde se cargue, incluya o se de acceso a información confidencial de Mercado Pago y/o sus afiliadas, el Desarrollador deberá contar con una adecuada política que incluya mecanismos que garanticen la seguridad de la información confidencial.
+
+El Desarrollador, sin carácter taxativo, deberá:
+
+(i) Contar con una política de seguridad informática adecuada aplicable a sus empleados, dependientes, contratistas y/o proveedores que permita resguardar y garantizar la seguridad de la información confidencial a la que acceda.
+
+(ii) Ceñirse a las buenas prácticas de la norma ISO/IEC 27552:2019 (“Gestión de la Privacidad”) o bien 270012:2013 (“Código de Prácticas aplicables a la Gestión de Seguridad de la Información”) en su última versión vigente (en adelante las "Normas ISO ISMSs" - ISMS, sigla en inglés correspondiente a _Information Security Management System_).
+
+(iii) Construir y mantener una red segura, utilizando firewalls y proxies cuando corresponda e implementando una política de contraseñas apropiada.
+
+(iv) Proteger los datos de los titulares de las tarjetas utilizando conexiones cifradas para la transmisión de datos e información confidencial de los titulares a través de redes públicas abiertas y tomando las medidas pertinentes para el cuidado de la información personal.
+
+(v) Mantener un programa de gestión de vulnerabilidades, utilizando antivirus, sistemas operativos y aplicaciones de soporte actualizadas en su última versión, manteniendo procedimientos seguros de desarrollo y realizando auditorías internas.
+
+(vi) Crear medidas sólidas de control de acceso, implementando políticas de acceso, tanto lógico como físico, para los sistemas e instalaciones del Desarrollador.
+
+(vii) Monitorear y evaluar constantemente el estado de la seguridad en las redes informáticas.
+
+(viii) Dar cumplimiento a la norma PCI-DSS en caso de que las operaciones por año superen, los dos millones y medio (2.500.000) de transacciones con tarjetas American Express o seis millones (6.000.000) de transacciones con otras tarjetas. En este sentido, anualmente el Desarrollador deberá disponibilizar, previa solicitud de Mercado Pago, evidencia de su certificación vigente PCI-DSS.
+
+(ix) Cuando el usuario no supere anualmente las seis millones (6.000.000) de transacciones o las dos millones y medio (2.500.000) de transacciones con tarjetas American Express, deberá completar el SAQ (“_Self assessment Questionnaire_”) proporcionado por Mercado Pago anualmente.
+
+(x) Clasificar los datos en función a su criticidad, controles y tratamientos adecuados.
+
+**Incidentes**
+
+Al momento de tomar conocimiento de un incidente de seguridad informática, el Desarrollador deberá notificarlo a Mercado Pago a las casillas de mail irsec@mercadolibre.com y seguridad.mp@mercadolibre.com, de manera expeditiva, dentro de un plazo que en ningún caso podrá exceder el término de veinticuatro (24) horas, detallando las circunstancias y particularidades del caso e incluyendo toda la información disponible y relevante. En caso de corresponder, dentro de las veinticuatro (24) horas de la recepción de la referida notificación, el Desarrollador deberá proporcionar a Mercado Pago una copia de toda comunicación escrita emanada de entes gubernamentales y/o regulatorios y de toda demanda y/o petición presentada ante la justicia y/o ante entes gubernamentales y/o regulatorios, que guarden relación o se originen a raíz del incidente.
+
+<u>Medidas correctivas</u>. En el caso de ocurrencia de un incidente de seguridad informática, el Desarrollador deberá tomar aquellas acciones correctivas y resarcitorias que Mercado Pago pudiera razonablemente solicitar y que resulten habituales para las circunstancias del caso (como por ejemplo: cursar notificaciones de incumplimiento a los individuos afectados), y seguir las fases de detección, análisis y mitigación, y erradicación y recuperación; donde en cada una de las fases se notificará a Mercado Pago, a la casilla irsec@mercadolibre.com, el avance de las medidas implementadas, así como el análisis realizado que explique el alcance del incidente.
+
+El Desarrollador deberá proceder a reembolsar a Mercado Pago de manera expeditiva y por pedido escrito de ésta (acompañado del correspondiente detalle) los costos y gastos razonablemente incurridos por Mercado Pago a los efectos de la implementación de medidas correctivas y resarcitorias adicionales, adoptadas a raíz de un Incidente.
+
+<u>Declaraciones Públicas</u>. El Desarrollador no podrá emitir comunicados de prensa, cursar notificaciones por escrito a individuos que resultaran afectados o realizar declaraciones públicas respecto a un incidente de seguridad informática sin haber obtenido previamente el consentimiento escrito por parte de Mercado Pago respecto al formato, contenido y momento de dicho anuncio. El Desarrollador deberá prestar su cooperación de buena fe a Mercado Pago respondiendo de forma expeditiva a todas las consultas inherentes a incidentes de seguridad informática.
+
+En el caso de producirse un incidente de seguridad informática o en el supuesto que Mercado Pago y/o sus subsidiarias, afiliadas, vinculadas y/o controladas se vean afectadas por publicidad de carácter negativa a raíz de un incidente de seguridad informática, Mercado Pago podrá a su criterio suspender o terminar la relación contractual con el Desarrollador, con carácter inmediato, mediante notificación escrita al Desarrollador.
+
+10.1. “<u>Incidente</u>”: se refiere a: (i) todo incumplimiento detectado en las instalaciones, equipo, sistemas o personas contratadas o empleadas por el Desarrollador, que en términos razonables pueda esperarse tenga un efecto adverso sobre la seguridad, confidencialidad o integridad de los datos y de los sistemas involucrados; (ii)  toda apropiación de datos, y/o situación que implique o constituya un uso o alteración no autorizado de los datos y de los sistemas y/o servidores involucrados; como así también toda situación que implique una afectación a su seguridad o constituya un uso no autorizado de los datos.
 
 ## 11. Titularidad
 
