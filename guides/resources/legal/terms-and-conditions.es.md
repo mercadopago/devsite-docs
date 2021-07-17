@@ -205,7 +205,7 @@ El Desarrollador, sin carácter taxativo, deberá:
 
 (i) Contar con una política de seguridad informática adecuada aplicable a sus empleados, dependientes, contratistas y/o proveedores que permita resguardar y garantizar la seguridad de la información confidencial a la que acceda.
 
-(ii) Ceñirse a las buenas prácticas de la norma ISO/IEC 27552:2019 (“Gestión de la Privacidad”) o bien 270012:2013 (“Código de Prácticas aplicables a la Gestión de Seguridad de la Información”) en su última versión vigente (en adelante las "Normas ISO ISMSs" - ISMS, sigla en inglés correspondiente a _Information Security Management System_).
+(ii) Ceñirse a las buenas prácticas de la norma ISO/IEC 27552:2019 (“_Gestión de la Privacidad_”) o bien 270012:2013 (“_Código de Prácticas aplicables a la Gestión de Seguridad de la Información_”) en su última versión vigente (en adelante las "<u>Normas ISO ISMSs</u>" - ISMS, sigla en inglés correspondiente a _Information Security Management System_).
 
 (iii) Construir y mantener una red segura, utilizando firewalls y proxies cuando corresponda e implementando una política de contraseñas apropiada.
 
@@ -219,48 +219,11 @@ El Desarrollador, sin carácter taxativo, deberá:
 
 (viii) Dar cumplimiento a la norma PCI-DSS en caso de que las operaciones por año superen, los dos millones y medio (2.500.000) de transacciones con tarjetas American Express o seis millones (6.000.000) de transacciones con otras tarjetas. En este sentido, anualmente el Desarrollador deberá disponibilizar, previa solicitud de Mercado Pago, evidencia de su certificación vigente PCI-DSS.
 
-(ix) Cuando el usuario no supere anualmente las seis  millones (6.000.000) de transacciones o las dos millones y medio (2.500.000) de transacciones con tarjetas American Express, deberá completar el SAQ (“Self assessment Questionnaire”) proporcionado por Mercado Pago anualmente.
+(ix) Cuando el usuario no supere anualmente las seis millones (6.000.000) de transacciones o las dos millones y medio (2.500.000) de transacciones con tarjetas American Express, deberá completar el SAQ (“_Self assessment Questionnaire_") proporcionado por Mercado Pago anualmente.
 
 (x) Clasificar los datos en función a su criticidad, controles y tratamientos adecuados.
 
 **Incidentes**
-
-Al momento de tomar conocimiento de un incidente de seguridad informática, el Desarrollador deberá notificarlo a Mercado Pago a las casillas de mail irsec@mercadolibre.com y seguridad.mp@mercadolibre.com, de manera expeditiva, dentro de un plazo que en ningún caso podrá exceder el término de veinticuatro (24) horas, detallando las circunstancias y particularidades del caso e incluyendo toda la información disponible y relevante. En caso de corresponder, dentro de las veinticuatro (24) horas de la recepción de la referida notificación, el Desarrollador deberá proporcionar a Mercado Pago una copia de toda comunicación escrita emanada de entes gubernamentales y/o regulatorios y de toda demanda y/o petición presentada ante la justicia y/o ante entes gubernamentales y/o regulatorios, que guarden relación o se originen a raíz del incidente.
-
-Medidas correctivas. En el caso de ocurrencia de un incidente de seguridad informática, el Desarrollador deberá tomar aquellas acciones correctivas y resarcitorias que Mercado Pago pudiera razonablemente solicitar y que resulten habituales para las circunstancias del caso (como por ejemplo: cursar notificaciones de incumplimiento a los individuos afectados), y seguir las fases de detección, análisis y mitigación, y erradicación y recuperación; donde en cada una de las fases se notificará a Mercado Pago, a la casilla irsec@mercadolibre.com, el avance de las medidas implementadas, así como el análisis realizado que explique el alcance del incidente.
-
-El Desarrollador deberá proceder a reembolsar a Mercado Pago de manera expeditiva y por pedido escrito de ésta (acompañado del correspondiente detalle) los costos y gastos razonablemente incurridos por Mercado Pago a los efectos de la implementación de medidas correctivas y resarcitorias adicionales, adoptadas a raíz de un Incidente.
-
-Declaraciones Públicas. El Desarrollador no podrá emitir comunicados de prensa, cursar notificaciones por escrito a individuos que resultaran afectados o realizar declaraciones públicas respecto a un incidente de seguridad informática sin haber obtenido previamente el consentimiento escrito por parte de Mercado Pago respecto al formato, contenido y momento de dicho anuncio. El Desarrollador deberá prestar su cooperación de buena fe a Mercado Pago respondiendo de forma expeditiva a todas las consultas inherentes a incidentes de seguridad informática.
-
-En el caso de producirse un incidente de seguridad informática o en el supuesto que Mercado Pago y/o sus subsidiarias, afiliadas, vinculadas y/o controladas se vean afectadas por publicidad de carácter negativa a raíz de un incidente de seguridad informática, Mercado Pago podrá a su criterio suspender o terminar la relación contractual con el Desarrollador, con carácter inmediato, mediante notificación escrita al Desarrollador.
-
-10.1. “Incidente”: se refiere a: (i) todo incumplimiento detectado en las instalaciones, equipo, sistemas o personas contratadas o empleadas por el Desarrollador, que en términos razonables pueda esperarse tenga un efecto adverso sobre la seguridad, confidencialidad o integridad de los datos y de los sistemas involucrados; (ii) toda apropiación de datos, y/o situación que implique o constituya un uso o alteración no autorizado de los datos y de los sistemas y/o servidores involucrados; como así también toda situación que implique una afectación a su seguridad o constituya un uso no autorizado de los datos.
-
-En el caso de que los sistemas del Desarrollador interactúen con los sistemas de Mercado Pago, o que Mercado Pago interactúe con los sistemas del Desarrollador en donde se cargue, incluya o se de acceso a información confidencial de Mercado Pago y/o sus afiliadas, el Desarrollador deberá contar con una adecuada política que incluya mecanismos que garanticen la seguridad de la información confidencial.
-El Desarrollador, sin carácter taxativo, deberá:
-
-(i) Contar con una política de seguridad informática adecuada aplicable a sus empleados, dependientes, contratistas y/o proveedores que permita resguardar y garantizar la seguridad de la información confidencial a la que acceda.
-
-(ii) Ceñirse a las buenas prácticas de la norma ISO/IEC 27552:2019 (“Gestión de la Privacidad”) o bien 270012:2013 (“_Código de Prácticas aplicables a la Gestión de Seguridad de la Información_”) en su última versión vigente (en adelante las "<u>Normas ISO ISMSs</u>" - ISMS, sigla en inglés correspondiente a _Information Security Management System_).
-
-(iii) Construir y mantener una red segura, utilizando firewalls y proxies cuando corresponda e implementando una política de contraseñas apropiada.
-
-(iv) Proteger los datos de los titulares de las tarjetas utilizando conexiones cifradas para la transmisión de datos e información confidencial de los titulares a través de redes públicas abiertas y tomando las medidas pertinentes para el cuidado de la información personal.
-
-(v) Mantener un programa de gestión de vulnerabilidades, utilizando antivirus, sistemas operativos y aplicaciones de soporte actualizadas en su última versión, manteniendo procedimientos seguros de desarrollo y realizando auditorías internas.
-
-(vi) Crear medidas sólidas de control de acceso, implementando políticas de acceso, tanto lógico como físico, para los sistemas e instalaciones del Desarrollador.
-
-(vii) Monitorear y evaluar constantemente el estado de la seguridad en las redes informáticas.
-
-(viii) Dar cumplimiento a la norma PCI-DSS en caso de que las operaciones por año superen, los dos millones y medio (2.500.000) de transacciones con tarjetas American Express o seis millones (6.000.000) de transacciones con otras tarjetas. En este sentido, anualmente el Desarrollador deberá disponibilizar, previa solicitud de Mercado Pago, evidencia de su certificación vigente PCI-DSS.
-
-(ix) Cuando el usuario no supere anualmente las seis millones (6.000.000) de transacciones o las dos millones y medio (2.500.000) de transacciones con tarjetas American Express, deberá completar el SAQ (“_Self assessment Questionnaire_”) proporcionado por Mercado Pago anualmente.
-
-(x) Clasificar los datos en función a su criticidad, controles y tratamientos adecuados.
-
-Incidentes
 
 Al momento de tomar conocimiento de un incidente de seguridad informática, el Desarrollador deberá notificarlo a Mercado Pago a las casillas de mail irsec@mercadolibre.com y seguridad.mp@mercadolibre.com, de manera expeditiva, dentro de un plazo que en ningún caso podrá exceder el término de veinticuatro (24) horas, detallando las circunstancias y particularidades del caso e incluyendo toda la información disponible y relevante. En caso de corresponder, dentro de las veinticuatro (24) horas de la recepción de la referida notificación, el Desarrollador deberá proporcionar a Mercado Pago una copia de toda comunicación escrita emanada de entes gubernamentales y/o regulatorios y de toda demanda y/o petición presentada ante la justicia y/o ante entes gubernamentales y/o regulatorios, que guarden relación o se originen a raíz del incidente.
 
@@ -272,7 +235,7 @@ El Desarrollador deberá proceder a reembolsar a Mercado Pago de manera expediti
 
 En el caso de producirse un incidente de seguridad informática o en el supuesto que Mercado Pago y/o sus subsidiarias, afiliadas, vinculadas y/o controladas se vean afectadas por publicidad de carácter negativa a raíz de un incidente de seguridad informática, Mercado Pago podrá a su criterio suspender o terminar la relación contractual con el Desarrollador, con carácter inmediato, mediante notificación escrita al Desarrollador.
 
-10.1. “<u>Incidente</u>”: se refiere a: (i) todo incumplimiento detectado en las instalaciones, equipo, sistemas o personas contratadas o empleadas por el Desarrollador, que en términos razonables pueda esperarse tenga un efecto adverso sobre la seguridad, confidencialidad o integridad de los datos y de los sistemas involucrados; (ii)  toda apropiación de datos, y/o situación que implique o constituya un uso o alteración no autorizado de los datos y de los sistemas y/o servidores involucrados; como así también toda situación que implique una afectación a su seguridad o constituya un uso no autorizado de los datos.
+10.1. “<u>Incidente</u>”: se refiere a: (i) todo incumplimiento detectado en las instalaciones, equipo, sistemas o personas contratadas o empleadas por el Desarrollador, que en términos razonables pueda esperarse tenga un efecto adverso sobre la seguridad, confidencialidad o integridad de los datos y de los sistemas involucrados; (ii) toda apropiación de datos, y/o situación que implique o constituya un uso o alteración no autorizado de los datos y de los sistemas y/o servidores involucrados; como así también toda situación que implique una afectación a su seguridad o constituya un uso no autorizado de los datos.
 
 ## 11. Titularidad
 
@@ -330,10 +293,10 @@ Este acuerdo será regido en todos sus puntos por las leyes vigentes en Argentin
 
 17.6 Anexos: Forman parte integral e inseparable de los Términos y Condiciones incorporados en este acuerdo, los siguientes documentos, los cuales se podrán consultar dentro del Sitio mediante el enlace abajo provisto o accediendo directamente a las páginas correspondientes:
 
-[Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.ar/ayuda/_299) <br>
-[Términos y Condiciones de Uso de Código QR](https://www.mercadopago.com.ar/ayuda/_4269) <br>
-[Términos y condiciones de uso de Mercado Pago Gateway](https://www.mercadopago.com.ar/ayuda/_3145) <br>
-[Términos y condiciones de uso de Mercado Pago Point](https://www.mercadopago.com.ar/ayuda/_2772) <br>
+* [Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.ar/ayuda/_299) <br>
+* [Términos y Condiciones de Uso de Código QR](https://www.mercadopago.com.ar/ayuda/_4269) <br>
+* [Términos y condiciones de uso de Mercado Pago Gateway](https://www.mercadopago.com.ar/ayuda/_3145) <br>
+* [Términos y condiciones de uso de Mercado Pago Point](https://www.mercadopago.com.ar/ayuda/_2772) <br>
 
 ## 18. Modificaciones a los Términos y Condiciones
 
@@ -558,7 +521,7 @@ O Desenvolvedor, sem caráter taxativo, deverá:
 
 (i) Contar com uma política de segurança cibernética adequada aplicável a seus funcionários, dependentes, empreiteiros e/ou fornecedores que permita proteger e garantir a segurança da informação confidencial a qual tenha acesso.
 
-(ii) Respeitar as boas práticas da norma ISO/IEC 27552:2019 (“Gestão da Privacidade”) ou 270012:2013 (“Código de Práticas aplicáveis à Gestão de Segurança da Informação”) em sua última versão em vigor (doravante, “Normas ISO ISMSs” - ISMS, siglas em inglês para _Information Security Management System_).
+(ii) Respeitar as boas práticas da norma ISO/IEC 27552:2019 (“_Gestão da Privacidade_”) ou 270012:2013 (“_Código de Práticas aplicáveis à Gestão de Segurança da Informação_”) em sua última versão em vigor (doravante, “<u>Normas ISO ISMSs</u>” - ISMS, siglas em inglês para _Information Security Management System_).
 
 (iii) Construir e manter uma rede segura, utilizando firewalls e proxies quando for o caso e implementando uma política de senhas apropriada.
 
@@ -589,7 +552,6 @@ O Desenvolvedor deverá realizar o estorno ao Mercado Pago de maneira expedita e
 Caso ocorra um incidente de segurança cibernética ou, na suposição de que o Mercado Pago e/ou suas contratadas, filiadas, vinculadas e/ou controladas sejam afetadas por publicidade negativa em razão de um incidente de segurança cibernética, o Mercado Pago poderá suspender ou finalizar, ao seu critério, a relação contratual com o Desenvolvedor, com caráter imediato, mediante notificação escrita ao Desenvolvedor.
 
 10.1. “<u>Incidente</u>” se refere a: (I) qualquer descumprimento detectado nas instalações, equipamento, sistemas ou pessoas contratadas ou empregadas pelo Desenvolvedor que, em termos razoáveis, possa se esperar que tenha um efeito adverso sobre a segurança, confidencialidade ou integridade dos dados e dos sistemas envolvidos; (ii) toda apropriação de dados, e/ou situação que signifique ou constitua um uso ou alteração não autorizado dos dados e dos sistemas e/ou servidores envolvidos; bem como toda situação que afete sua segurança ou constitua um uso não autorizado dos dados.
-
 
 ## 11. Titularidade
 
@@ -646,8 +608,8 @@ Este acordo será regido em todos seus termos pelas leis vigentes na República 
 
 17.6 Anexos: Os documentos a seguir fazem parte integrante e indissociável dos Termos e Condições, sendo a eles incorporados, podendo ser consultados no Website mediante o link fornecido abaixo ou acessando diretamente as páginas correspondentes:
 
-[Termos e Condições Gerais de Uso do Mercado Pago](https://www.mercadopago.com.br/ajuda/_299) <br>
-[Termos e condições do Mercado Pago Point](https://www.mercadopago.com.br/ajuda/_1772) <br>
+* [Termos e Condições Gerais de Uso do Mercado Pago](https://www.mercadopago.com.br/ajuda/_299) <br>
+* [Termos e condições do Mercado Pago Point](https://www.mercadopago.com.br/ajuda/_1772) <br>
 
 ## 18. Modificações dos Termos e Condições
 
@@ -862,13 +824,13 @@ El Desarrollador, sin carácter taxativo, deberá:
 
 (i) Contar con una política de seguridad informática adecuada aplicable a sus empleados, dependientes, contratistas y/o proveedores que permita resguardar y garantizar la seguridad de la información confidencial a la que acceda.
 
-(ii) Ceñirse a las buenas prácticas de la norma ISO/IEC 27552:2019 (“Gestión de la Privacidad”) o bien 270012:2013 (“Código de Prácticas aplicables a la Gestión de Seguridad de la Información”) en su última versión vigente (en adelante las "Normas ISO ISMSs" - ISMS, sigla en inglés correspondiente a _Information Security Management System_).
+(ii) Ceñirse a las buenas prácticas de la norma ISO/IEC 27552:2019 (“_Gestión de la Privacidad_”) o bien 270012:2013 (“_Código de Prácticas aplicables a la Gestión de Seguridad de la Información_”) en su última versión vigente (en adelante las "<u>Normas ISO ISMSs</u>" - ISMS, sigla en inglés correspondiente a _Information Security Management System_).
 
 (iii) Construir y mantener una red segura, utilizando firewalls y proxies cuando corresponda e implementando una política de contraseñas apropiada.
 
 (iv) Proteger los datos de los titulares de las tarjetas utilizando conexiones cifradas para la transmisión de datos e información confidencial de los titulares a través de redes públicas abiertas y tomando las medidas pertinentes para el cuidado de la información personal.
 
-(v)   Mantener un programa de gestión de vulnerabilidades, utilizando antivirus, sistemas operativos y aplicaciones de soporte actualizadas en su última versión, manteniendo procedimientos seguros de desarrollo y realizando auditorías internas.
+(v) Mantener un programa de gestión de vulnerabilidades, utilizando antivirus, sistemas operativos y aplicaciones de soporte actualizadas en su última versión, manteniendo procedimientos seguros de desarrollo y realizando auditorías internas.
 
 (vi) Crear medidas sólidas de control de acceso, implementando políticas de acceso, tanto lógico como físico, para los sistemas e instalaciones del Desarrollador.
 
@@ -892,7 +854,7 @@ El Desarrollador deberá proceder a reembolsar a Mercado Pago de manera expediti
 
 En el caso de producirse un incidente de seguridad informática o en el supuesto que Mercado Pago y/o sus subsidiarias, afiliadas, vinculadas y/o controladas se vean afectadas por publicidad de carácter negativa a raíz de un incidente de seguridad informática, Mercado Pago podrá a su criterio suspender o terminar la relación contractual con el Desarrollador, con carácter inmediato, mediante notificación escrita al Desarrollador.
 
-10.1. “<u>Incidente</u>”: se refiere a: (i) todo incumplimiento detectado en las instalaciones, equipo, sistemas o personas contratadas o empleadas por el Desarrollador, que en términos razonables pueda esperarse tenga un efecto adverso sobre la seguridad, confidencialidad o integridad de los datos y de los sistemas involucrados; (ii)  toda apropiación de datos, y/o situación que implique o constituya un uso o alteración no autorizado de los datos y de los sistemas y/o servidores involucrados; como así también toda situación que implique una afectación a su seguridad o constituya un uso no autorizado de los datos.
+10.1. “<u>Incidente</u>”: se refiere a: (i) todo incumplimiento detectado en las instalaciones, equipo, sistemas o personas contratadas o empleadas por el Desarrollador, que en términos razonables pueda esperarse tenga un efecto adverso sobre la seguridad, confidencialidad o integridad de los datos y de los sistemas involucrados; (ii) toda apropiación de datos, y/o situación que implique o constituya un uso o alteración no autorizado de los datos y de los sistemas y/o servidores involucrados; como así también toda situación que implique una afectación a su seguridad o constituya un uso no autorizado de los datos.
 
 ## 11. Titularidad
 
@@ -950,7 +912,7 @@ Este acuerdo será regido en todos sus puntos por las leyes vigentes en Chile. C
 
 17.6 Anexos: Forman parte integral e inseparable de los Términos y Condiciones incorporados en este acuerdo, los siguientes documentos, los cuales se podrán consultar dentro del Sitio mediante el enlace abajo provisto o accediendo directamente a las páginas correspondientes:
 
-[Términos y Condiciones de Mercado Pago](https://www.mercadopago.cl/ayuda/_299) <br>
+* [Términos y Condiciones de Mercado Pago](https://www.mercadopago.cl/ayuda/_299) <br>
 
 ## 18. Modificaciones a los Términos y Condiciones
 
@@ -1165,7 +1127,7 @@ El Desarrollador, sin carácter taxativo, deberá:
 
 (i) Contar con una política de seguridad informática adecuada aplicable a sus empleados, dependientes, contratistas y/o proveedores que permita resguardar y garantizar la seguridad de la información confidencial a la que acceda.
 
-(ii) Ceñirse a las buenas prácticas de la norma ISO/IEC 27552:2019 (“Gestión de la Privacidad”) o bien 270012:2013 (“Código de Prácticas aplicables a la Gestión de Seguridad de la Información”) en su última versión vigente (en adelante las "Normas ISO ISMSs" - ISMS, sigla en inglés correspondiente a _Information Security Management System_).
+(ii) Ceñirse a las buenas prácticas de la norma ISO/IEC 27552:2019 (“_Gestión de la Privacidad_”) o bien 270012:2013 (“_Código de Prácticas aplicables a la Gestión de Seguridad de la Información_”) en su última versión vigente (en adelante las "<u>Normas ISO ISMSs</u>" - ISMS, sigla en inglés correspondiente a _Information Security Management System_).
 
 (iii) Construir y mantener una red segura, utilizando firewalls y proxies cuando corresponda e implementando una política de contraseñas apropiada.
 
@@ -1195,7 +1157,7 @@ El Desarrollador deberá proceder a reembolsar a Mercado Pago de manera expediti
 
 En el caso de producirse un incidente de seguridad informática o en el supuesto que Mercado Pago y/o sus subsidiarias, afiliadas, vinculadas y/o controladas se vean afectadas por publicidad de carácter negativa a raíz de un incidente de seguridad informática, Mercado Pago podrá a su criterio suspender o terminar la relación contractual con el Desarrollador, con carácter inmediato, mediante notificación escrita al Desarrollador.
 
-10.1. “<u>Incidente</u>”: se refiere a: (i) todo incumplimiento detectado en las instalaciones, equipo, sistemas o personas contratadas o empleadas por el Desarrollador, que en términos razonables pueda esperarse tenga un efecto adverso sobre la seguridad, confidencialidad o integridad de los datos y de los sistemas involucrados; (ii)  toda apropiación de datos, y/o situación que implique o constituya un uso o alteración no autorizado de los datos y de los sistemas y/o servidores involucrados; como así también toda situación que implique una afectación a su seguridad o constituya un uso no autorizado de los datos.
+10.1. “<u>Incidente</u>”: se refiere a: (i) todo incumplimiento detectado en las instalaciones, equipo, sistemas o personas contratadas o empleadas por el Desarrollador, que en términos razonables pueda esperarse tenga un efecto adverso sobre la seguridad, confidencialidad o integridad de los datos y de los sistemas involucrados; (ii) toda apropiación de datos, y/o situación que implique o constituya un uso o alteración no autorizado de los datos y de los sistemas y/o servidores involucrados; como así también toda situación que implique una afectación a su seguridad o constituya un uso no autorizado de los datos.
 
 ## 11. Titularidad
 
@@ -1252,8 +1214,8 @@ Este acuerdo será regido en todos sus puntos por las leyes vigentes en Colombia
 
 17.6 Anexos: Forman parte integral e inseparable de los Términos y Condiciones incorporados en este acuerdo, los siguientes documentos, los cuales se podrán consultar dentro del Sitio mediante el enlace abajo provisto o accediendo directamente a las páginas correspondientes:
 
-[Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.co/ayuda/_299) <br>
-[Términos y Condiciones de Mercado Pago Gateway](https://www.mercadopago.com.co/ayuda/3145) <br>
+* [Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.co/ayuda/_299) <br>
+* [Términos y Condiciones de Mercado Pago Gateway](https://www.mercadopago.com.co/ayuda/3145) <br>
 
 ## 18. Modificaciones a los Términos y Condiciones
 
@@ -1470,7 +1432,7 @@ El Desarrollador, sin carácter taxativo, deberá:
 
 (i) Contar con una política de seguridad informática adecuada aplicable a sus empleados, dependientes, contratistas y/o proveedores que permita resguardar y garantizar la seguridad de la información confidencial a la que acceda.
 
-(ii) Ceñirse a las buenas prácticas de la norma ISO/IEC 27552:2019 (“Gestión de la Privacidad”) o bien 270012:2013 (“Código de Prácticas aplicables a la Gestión de Seguridad de la Información”) en su última versión vigente (en adelante las "Normas ISO ISMSs" - ISMS, sigla en inglés correspondiente a _Information Security Management System)_.
+(ii) Ceñirse a las buenas prácticas de la norma ISO/IEC 27552:2019 (“_Gestión de la Privacidad_”) o bien 270012:2013 (“_Código de Prácticas aplicables a la Gestión de Seguridad de la Información_”) en su última versión vigente (en adelante las "<u>Normas ISO ISMSs</u>" - ISMS, sigla en inglés correspondiente a _Information Security Management System_).
 
 (iii) Construir y mantener una red segura, utilizando firewalls y proxies cuando corresponda e implementando una política de contraseñas apropiada.
 
@@ -1485,6 +1447,7 @@ El Desarrollador, sin carácter taxativo, deberá:
 (viii) Dar cumplimiento a la norma PCI-DSS en caso de que las operaciones por año superen, los dos millones y medio (2.500.000) de transacciones con tarjetas American Express o seis millones (6.000.000) de transacciones con otras tarjetas. En este sentido, anualmente el Desarrollador deberá disponibilizar, previa solicitud de Mercado Pago, evidencia de su certificación vigente PCI-DSS.
 
 (ix) Cuando el usuario no supere anualmente las seis millones (6.000.000) de transacciones o las dos millones y medio (2.500.000) de transacciones con tarjetas American Express, deberá completar el SAQ (“_Self assessment Questionnaire_”) proporcionado por Mercado Pago anualmente.
+
 (x) Clasificar los datos en función a su criticidad, controles y tratamientos adecuados.
 
 **Incidentes**
@@ -1499,8 +1462,7 @@ El Desarrollador deberá proceder a reembolsar a Mercado Pago de manera expediti
 
 En el caso de producirse un incidente de seguridad informática o en el supuesto que Mercado Pago y/o sus subsidiarias, afiliadas, vinculadas y/o controladas se vean afectadas por publicidad de carácter negativa a raíz de un incidente de seguridad informática, Mercado Pago podrá a su criterio suspender o terminar la relación contractual con el Desarrollador, con carácter inmediato, mediante notificación escrita al Desarrollador.
 
-10.1. “<u>Incidente</u>”: se refiere a: (i) todo incumplimiento detectado en las instalaciones, equipo, sistemas o personas contratadas o empleadas por el Desarrollador, que en términos razonables pueda esperarse tenga un efecto adverso sobre la seguridad, confidencialidad o integridad de los datos y de los sistemas involucrados; (ii)  toda apropiación de datos, y/o situación que implique o constituya un uso o alteración no autorizado de los datos y de los sistemas y/o servidores involucrados; como así también toda situación que implique una afectación a su seguridad o constituya un uso no autorizado de los datos.
-
+10.1. “<u>Incidente</u>”: se refiere a: (i) todo incumplimiento detectado en las instalaciones, equipo, sistemas o personas contratadas o empleadas por el Desarrollador, que en términos razonables pueda esperarse tenga un efecto adverso sobre la seguridad, confidencialidad o integridad de los datos y de los sistemas involucrados; (ii) toda apropiación de datos, y/o situación que implique o constituya un uso o alteración no autorizado de los datos y de los sistemas y/o servidores involucrados; como así también toda situación que implique una afectación a su seguridad o constituya un uso no autorizado de los datos.
 
 ## 11. Titularidad
 
@@ -1558,8 +1520,8 @@ Este acuerdo será regido en todos sus puntos por las leyes vigentes en la Repú
 
 17.6 Anexos: Forman parte integral e inseparable de los Términos y Condiciones incorporados en este acuerdo, los siguientes documentos, los cuales se podrán consultar dentro del Sitio mediante el enlace abajo provisto o accediendo directamente a las páginas correspondientes:
 
-[Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.pe/ayuda/_299) <br>
-[Términos y condiciones de uso de Mercado Pago Gateway](https://www.mercadopago.com.pe/ayuda/_3529) <br>
+* [Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.pe/ayuda/_299) <br>
+* [Términos y condiciones de uso de Mercado Pago Gateway](https://www.mercadopago.com.pe/ayuda/_3529) <br>
 
 ## 18. Modificaciones a los Términos y Condiciones
 
@@ -1769,7 +1731,7 @@ El Desarrollador, sin carácter taxativo, deberá:
 
 (i) Contar con una política de seguridad informática adecuada aplicable a sus empleados, dependientes, contratistas y/o proveedores que permita resguardar y garantizar la seguridad de la información confidencial a la que acceda.
 
-(ii) Ceñirse a las buenas prácticas de la norma ISO/IEC 27552:2019 (“Gestión de la Privacidad”) o bien 270012:2013 (“Código de Prácticas aplicables a la Gestión de Seguridad de la Información”) en su última versión vigente (en adelante las "Normas ISO ISMSs" - ISMS, sigla en inglés correspondiente a _Information Security Management System_).
+(ii) Ceñirse a las buenas prácticas de la norma ISO/IEC 27552:2019 (“_Gestión de la Privacidad_”) o bien 270012:2013 (“_Código de Prácticas aplicables a la Gestión de Seguridad de la Información_”) en su última versión vigente (en adelante las "<u>Normas ISO ISMSs</u>" - ISMS, sigla en inglés correspondiente a _Information Security Management System_).
 
 (iii) Construir y mantener una red segura, utilizando firewalls y proxies cuando corresponda e implementando una política de contraseñas apropiada.
 
@@ -1857,10 +1819,10 @@ Este acuerdo será regido en todos sus puntos por las leyes vigentes en los Esta
 
 17.6 Anexos: Forman parte integral e inseparable de los Términos y Condiciones incorporados en este acuerdo, los siguientes documentos, los cuales se podrán consultar dentro del Sitio mediante el enlace abajo provisto o accediendo directamente a las páginas correspondientes:
 
-[Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.mx/ayuda/_299) <br>
-[Términos y Condiciones de Uso de Código QR](https://www.mercadopago.com.mx/ayuda/_4269) <br>
-[Términos y condiciones de uso de Mercado Pago Gateway](https://www.mercadopago.com.mx/ayuda/_3529) <br>
-[Términos y condiciones de uso de Mercado Pago Point](https://www.mercadopago.com.mx/ayuda/_1772) <br>
+* [Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.mx/ayuda/_299) <br>
+* [Términos y Condiciones de Uso de Código QR](https://www.mercadopago.com.mx/ayuda/_4269) <br>
+* [Términos y condiciones de uso de Mercado Pago Gateway](https://www.mercadopago.com.mx/ayuda/_3529) <br>
+* [Términos y condiciones de uso de Mercado Pago Point](https://www.mercadopago.com.mx/ayuda/_1772) <br>
 
 ## 18. Modificaciones a los Términos y Condiciones
 
@@ -2078,7 +2040,7 @@ El Desarrollador, sin carácter taxativo, deberá:
 
 (i) Contar con una política de seguridad informática adecuada aplicable a sus empleados, dependientes, contratistas y/o proveedores que permita resguardar y garantizar la seguridad de la información confidencial a la que acceda.
 
-(ii) Ceñirse a las buenas prácticas de la norma ISO/IEC 27552:2019 (“Gestión de la Privacidad”) o bien 270012:2013 (“Código de Prácticas aplicables a la Gestión de Seguridad de la Información”) en su última versión vigente (en adelante las "Normas ISO ISMSs" - ISMS, sigla en inglés correspondiente a _Information Security Management System_).
+(ii) Ceñirse a las buenas prácticas de la norma ISO/IEC 27552:2019 (“_Gestión de la Privacidad_”) o bien 270012:2013 (“_Código de Prácticas aplicables a la Gestión de Seguridad de la Información_”) en su última versión vigente (en adelante las "<u>Normas ISO ISMSs</u>" - ISMS, sigla en inglés correspondiente a _Information Security Management System_).
 
 (iii) Construir y mantener una red segura, utilizando firewalls y proxies cuando corresponda e implementando una política de contraseñas apropiada.
 
@@ -2090,9 +2052,10 @@ El Desarrollador, sin carácter taxativo, deberá:
 
 (vii) Monitorear y evaluar constantemente el estado de la seguridad en las redes informáticas.
 
-(vii) Dar cumplimiento a la norma PCI-DSS en caso de que las operaciones por año superen, los dos millones y medio (2.500.000) de transacciones con tarjetas American Express o seis millones (6.000.000) de transacciones con otras tarjetas. En este sentido, anualmente el Desarrollador deberá disponibilizar, previa solicitud de Mercado Pago, evidencia de su certificación vigente PCI-DSS.
+(viii) Dar cumplimiento a la norma PCI-DSS en caso de que las operaciones por año superen, los dos millones y medio (2.500.000) de transacciones con tarjetas American Express o seis millones (6.000.000) de transacciones con otras tarjetas. En este sentido, anualmente el Desarrollador deberá disponibilizar, previa solicitud de Mercado Pago, evidencia de su certificación vigente PCI-DSS.
 
 (ix) Cuando el usuario no supere anualmente las seis millones (6.000.000) de transacciones o las dos millones y medio (2.500.000) de transacciones con tarjetas American Express, deberá completar el SAQ (“_Self assessment Questionnaire_”) proporcionado por Mercado Pago anualmente.
+
 (x) Clasificar los datos en función a su criticidad, controles y tratamientos adecuados.
 
 **Incidentes**
@@ -2165,7 +2128,7 @@ Este acuerdo estará regido en todos sus puntos por las leyes vigentes en la Rep
 
 17.6 Anexos: Forman parte integral e inseparable de los Términos y Condiciones incorporados en este acuerdo, los siguientes documentos, los cuales se podrán consultar dentro del Sitio mediante el enlace abajo provisto o accediendo directamente a las páginas correspondientes:
 
-[Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.uy/ayuda/_299) <br>
+*  [Términos y Condiciones de Mercado Pago](https://www.mercadopago.com.uy/ayuda/_299) <br>
 
 ## 18. Modificaciones a los Términos y Condiciones
 
