@@ -23,8 +23,8 @@ Wix te permite recibir pagos con Checkout Pro, donde el comprador será redirecc
 Para **agregar Mercado Pago en tu tienda**, sigue estos pasos:
 
 1. En tu Panel de Control ingresa en "Opciones" y haz clic en "Acepta pagos".
-1. En la lista de medios de pago, da clic en 'Conectar' en Mercado Pago.
-1. Completa los campos Client ID y Client Secret con las [credenciales de producción]([FAKER][CREDENTIALS][URL]) de tu cuenta de Mercado Pago.
+1. En la lista de medios de pago, busca a Mercado Pago y haz clic en "Conectar".
+1. En la sección "Información de la cuenta", completa los campos Client ID y Client Secret con las [credenciales de producción]([FAKER][CREDENTIALS][URL]) de tu cuenta de Mercado Pago.
 1. Por último, haz clic en “Conectar”.
 ------------
 
@@ -33,8 +33,8 @@ Para **agregar Mercado Pago en tu tienda**, sigue estos pasos:
 
 1. En tu Panel de Control ingresa en "Opciones" y haz clic en "Acepta pagos".
 1. En la parte inferior, da clic en "Ver más opciones de pago".
-1. En la lista de medios de pago, da clic en 'Conectar' en Mercado Pago.
-1. Completa los campos Client ID y Client Secret con las [credenciales de producción]([FAKER][CREDENTIALS][URL]) de tu cuenta de Mercado Pago.
+1. En la lista de medios de pago, busca a Mercado Pago y haz clic en "Conectar".
+1. En la sección "Información de la cuenta", completa los campos Client ID y Client Secret con las [credenciales de producción]([FAKER][CREDENTIALS][URL]) de tu cuenta de Mercado Pago.
 1. Por último, haz clic en “Conectar”.
 
 ------------
