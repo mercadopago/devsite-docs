@@ -16,7 +16,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 >
 > PRODUCT: WIX
 
-Agora você pode integrar o Mercado Pago em sua loja Wix. Com ele, você pode oferecer aos seus clientes a possibilidade de pagar diretamente no site do Mercado Pago.
+Agora você pode integrar o Mercado Pago em sua loja Wix. Com esta plataforma virtual, você pode oferecer aos seus clientes a possibilidade de pagar diretamente no site do Mercado Pago.
 
 [Ir para a documentação de Wix](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/wix)
 
