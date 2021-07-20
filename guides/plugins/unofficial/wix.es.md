@@ -88,7 +88,7 @@ Para **agregar Mercado Pago en tu tienda**, sigue estos pasos:
 
 ------------
 
-----[mla, mlb, mlu, mlc]----
+----[mla, mlb, mlu, mlc, mpe]----
 ## Configura las cuotas sin interés en tu cuenta de Mercado Pago
  
 1. Ingresa a [tu cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]) y ve a "Tu negocio".

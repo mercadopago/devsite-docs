@@ -81,7 +81,7 @@ To **connect Mercado Pago to your store**, follow the steps below:
 
 >  Find all the information about your credentials in our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/faqs/credentials).
 
-----[mla, mlb, mlu, mlc, mlm]----
+----[mla, mlb, mlu, mlc, mlm, mpe]----
 ## Set up interest-free instalments in your Mercado Pago account
  
 1. Log in [your Mercado Libre account]((https://www.mercadopago[FAKER][URL][DOMAIN]), and go to "Your business".

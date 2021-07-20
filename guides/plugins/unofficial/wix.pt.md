@@ -83,7 +83,7 @@ Para **conectar o Mercado Pago em sua loja**, siga os passos abaixo:
 > Encontre todas as informações sobre suas credenciais em [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/faqs/credentials).
 
 
-----[mla, mlb, mlu, mlc, mlm]----
+----[mla, mlb, mlu, mlc, mlm, mpe]----
 ## Configurando o parcelamento na sua conta do Mercado Pago
  
 1. Acesse sua [conta do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]) e clique em "Seu negócio".
