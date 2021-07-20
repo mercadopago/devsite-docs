@@ -16,7 +16,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 >
 > PRODUCT: WIX
 
-Now you can integrate Mercado Pago into your Wix store. With it, you can offer your customers the possibility to pay directly on the Mercado Pago site.
+Now you can integrate Mercado Pago into your Wix store. With this virtual platform, you can offer your customers the possibility to pay directly on the Mercado Pago site.
 
 [Go to Wix documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/wix)
 
