@@ -12,25 +12,27 @@ With it, you can offer your customers to pay directly from Mercado Pago site.
 These are the *steps to start receiving payments with Mercado Pago**:
 
 1. [Log in](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/previous-requirements&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/wix) to a Mercado Pago or Mercado Libre account or create a new account if you don't have one yet.
-2. Add Mercado Pago as a method of payment in your store.
+2. Add Mercado Pago as a payment method in your store.
 
-## Add Mercado Pago as method of payment
+## Add Mercado Pago as a payment method
  
 Wix allows you to receive payments with Checkout Pro, where the buyer will be redirected to Mercado Pago to make the payment and will return to your store when the purchase is completed.
  
 ----[mla, mlc, mlu, mpe, mco]----
 To **add Mercado Pago to your store**, follow these steps:
  
-1. In your Control Panel, go to "Options" and click on "Accept Payments."
-1. On the methods of payment list, click on 'Connect' in Mercado Pago.
-1. Fill out Client ID and Client Secret fields with your Mercado Pago account production credentials.
+1. Access "Settings" from your control panel of your website.
+1. In the "eCommerce & Finance" section, click "Accept Payments".
+1. In the payment method list, find Mercado pago and click on "Connect".
+1. In the "Account information" section, fill out Client ID and Client Secret fields with your Mercado Pago account production credentials.
 1. Finally, click on "Connect".
 ------------
 
 ----[mlm]----
 To **add Mercado Pago to your store**, follow these steps:
  
-1. In your Control Panel, go to "Options" and click on "Accept Payments.".
+1. Access "Settings" from your control panel of your website.
+1. In the "eCommerce & Finance" section, click "Accept Payments".
 1. In the lower part, click on "See more payment options."
 1. On the methods of payment list, click on 'Connect' in Mercado Pago.
 1. Fill out Client ID and Client Secret fields with your Mercado Pago account production credentials.
@@ -58,7 +60,7 @@ To **connect Mercado Pago to your store**, follow the steps below:
 ----[mlb]----
 <p>&nbsp;</p>
 
-![Setting connect in Wix](/images/wix/wix_es_connect_configuration_mlb.gif.gif)
+![Setting connect in Wix](/images/wix/wix_es_connect_configuration_mlb.gif)
 <p>&nbsp;</p>
 ------------
 
@@ -82,7 +84,7 @@ To **connect Mercado Pago to your store**, follow the steps below:
 ----[mla, mlb, mlu, mlc, mlm]----
 ## Set up interest-free instalments in your Mercado Pago account
  
-1. Log in your Mercado Libre account, and go to "Your business".
+1. Log in [your Mercado Libre account]((https://www.mercadopago[FAKER][URL][DOMAIN]), and go to "Your business".
 2. Go to "Costs" section, browse up to "interest free instalments" and click on the activation switch.
 3. Select the maximum number of interest free instalments you want to offer.
 ------------

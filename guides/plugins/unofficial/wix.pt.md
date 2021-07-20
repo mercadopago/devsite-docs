@@ -10,7 +10,7 @@ Com ela você poderá, oferecer aos seus clientes a possibilidade de pagar diret
 
 Os passos para **começar a receber pagamentos com Mercado Pago**, são os seguintes:
 
-1. [Entre](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/previous-requirements&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/wix) uma conta do Mercado Pago ou Mercado Libre ou [crie uma nova](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) se ainda não tenha uma.
+1. [Entre](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/previous-requirements&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/wix) uma conta do Mercado Pago ou [crie uma nova](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) se ainda não tenha uma.
 2. Adicione o Mercado Pago como meio de pagamento dentro da sua loja.
 
 
@@ -21,9 +21,10 @@ A Wix te permite receber através do Checkout Pro, no qual o comprador será red
 ----[mla, mlc, mlu, mpe]----
 Para **adicionar Mercado Pago à sua loja**, siga estas etapas:
  
-1. No seu Painel de Controle, vá em "Opções" e clique em "Aceitar pagamentos".
-1. Na lista de métodos de pagamento, clique em 'Conectar' no Mercado Pago.
-1. Preencha os campos Client ID e Client Secret com as [credenciais de produção] ([FAKER] [CREDENCIAIS] [URL]) de sua conta no Mercado Pago.
+1. Acesse "Configurações" do seu painel de controle de seu site.
+1. Na seção "eCommerce e finanças", clique em "Aceitar pagamentos".
+1. Localize o "Mercado Pago" na lista de opções de pagamentos e clique em "Conectar".
+1. Na seção "Informações da conta", complete os campos Client ID e Client Secret com as [credenciais de produção]([FAKER][CREDENCIAIS][URL]) de sua conta no Mercado Pago.
 1. Por fim, clique em "Conectar".
 
 ------------
@@ -31,10 +32,11 @@ Para **adicionar Mercado Pago à sua loja**, siga estas etapas:
 ----[mlm]----
 Para **adicionar Mercado Pago à sua loja**, siga estas etapas:
  
-1. No seu Painel de Controle, vá em "Opções" e clique em "Aceitar pagamentos".
+1. Acesse "Configurações" do seu painel de controle de seu site.
+1. Na seção "eCommerce e finanças", clique em "Aceitar pagamentos".
 1. Na parte inferior, clique em "Ver mais opções de pagamento".
-1. Na lista de métodos de pagamento, clique em 'Conectar' no Mercado Pago.
-1. Preencha os campos Client ID e Client Secret com as [credenciais de produção] ([FAKER] [CREDENCIAIS] [URL]) de sua conta no Mercado Pago.
+1. Localize o "Mercado Pago" na lista de opções de pagamentos e clique em "Conectar".
+1. Na seção "Informações da conta", complete os campos Client ID e Client Secret com as [credenciais de produção]([FAKER][CREDENCIAIS][URL]) de sua conta no Mercado Pago.
 1. Por fim, clique em "Conectar".
 
 ------------
@@ -45,8 +47,8 @@ Para **conectar o Mercado Pago em sua loja**, siga os passos abaixo:
 1. Acesse "Configurações" do seu painel de controle de seu site.
 1. Na seção "eCommerce e finanças", clique em "Aceitar pagamentos".
 1. Localize o "Mercado Pago" na lista de opções de pagamentos e clique em "Conectar".
-1. Complete os campos Client ID e Client Secret com as [credenciais de produção]([FAKER][CREDENTIALS][URL]) de sua conta do Mercado Pago.
-1. Clique em "Conectar". Sua conta MercadoPago será conectada à sua loja.
+1. Na seção "Informações da conta", complete os campos Client ID e Client Secret com as [credenciais de produção]([FAKER][CREDENTIALS][URL]) de sua conta do Mercado Pago.
+1. Por fim, clique em "Conectar".
 ------------
 
 ----[mla, mlc, mlu, mpe]----
@@ -84,7 +86,7 @@ Para **conectar o Mercado Pago em sua loja**, siga os passos abaixo:
 ----[mla, mlb, mlu, mlc, mlm]----
 ## Configurando o parcelamento na sua conta do Mercado Pago
  
-1. Acesse sua [conta do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/business/) e clique em "Seu negócio".
+1. Acesse sua [conta do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]) e clique em "Seu negócio".
 2. Acesse a seção "Custos", navegue até "Parcelas sem acréscimo" e clique no botão para ativá-las.
 3. Selecione o valor máximo de parcelas sem acréscimo que você deseja oferecer.
 ------------
@@ -92,22 +94,18 @@ Para **conectar o Mercado Pago em sua loja**, siga os passos abaixo:
 
 ----[mla]----
 E pronto! Agora você está oferecendo parcelamento sem acréscimo, assumindo as [tarifas de parcelamento](https://www.mercadopago.com.ar/ayuda/cuotas-sin-interes_3299) que você configurou.
-
 ------------
 
 ----[mlb]----
 E pronto! Agora você está oferecendo parcelamento sem acréscimo, assumindo as [tarifas de parcelamento](https://www.mercadopago.com.br/ajuda/oferecer-parcelas-sem-juros-para-compradores_454) que você configurou.
-
 ------------
 
 ----[mlc]----
 E pronto! Agora você está oferecendo parcelamento sem acréscimo, assumindo as [tarifas de parcelamento](https://www.mercadopago.cl/ayuda/3299) que você configurou.
-
 ------------
 
 ----[mpe]----
 E pronto! Agora você está oferecendo parcelamento sem acréscimo, assumindo as [tarifas de parcelamento](https://www.mercadopago.com.pe/ayuda/3299) que você configurou.
-
 ------------
 
 
