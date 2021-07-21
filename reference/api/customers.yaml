@@ -75,8 +75,8 @@ paths:
                       example: 'Rua Exemplo'
                       description: Street name.
                     street_number:
-                      type: String
-                      example: '123 A'
+                      type: number
+                      example: 123
                       description: Street number.
                 date_registered:
                   type: Date(ISO_8601)
@@ -155,7 +155,7 @@ paths:
                         example: Old Knebworth Ln
                         description: street_name
                       street_number:
-                        type: string
+                        type: number
                         format: nullable
                         description: street_number
                     description: address
@@ -363,8 +363,8 @@ paths:
                       example: 'Rua Exemplo'
                       description: Street name.
                     street_number:
-                      type: String
-                      example: '123 A'
+                      type: number
+                      example: 123
                       description: Street number.
                 date_registered:
                   type: Date(ISO_8601)
@@ -442,7 +442,7 @@ paths:
                         example: Old Knebworth Ln
                         description: street_name
                       street_number:
-                        type: string
+                        type: number
                         format: nullable
                         description: street_number
                     description: address
@@ -644,7 +644,7 @@ paths:
                         example: Caetano Poli, 12
                         description: Street name.
                       street_number:
-                        type: string
+                        type: number
                         description: Street number.
                     description: Default address's information.
                   date_registered:
@@ -1004,7 +1004,7 @@ paths:
                               description: street_name
                               example: Caetano Poli, 12
                             street_number:
-                              type: string
+                              type: number
                               format: nullable
                               description: street_number
                             zip_code:
