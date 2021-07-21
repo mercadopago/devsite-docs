@@ -119,8 +119,8 @@ Inicie sua integração configurada com as credenciais do seu usuário de teste 
 
 | Cartão | Número | Código de segurança | Data de vencimento |
 | :--- | :---: | :---: | :---: |
-| Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
-| Visa | 4509 9535 6623 3704 | 123 | 11/25 |
+| Mastercard |  5808 8877 7464 1586| 123 | 11/25 |
+| Visa | 4104 2962 6235 5432 | 123 | 11/25 |
 
 ------------
 ----[mpe]----
@@ -152,7 +152,7 @@ Para **testar resultados diferentes de pagamento**, complete o dado que queira n
 
 ## Começar a receber pagamentos
 
-Para começar a cobrar, você deve cumprir os [requisitos para entrar em produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/goto-production) e [ativar suas credenciais]([FAKER][CREDENTIALS][URL]).
+Para começar a cobrar, você deve cumprir os [requisitos para entrar em produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v2/goto-production) e [ativar suas credenciais]([FAKER][CREDENTIALS][URL]).
 
 Antes de ativá-las, certifique-se de que as credenciais na sua integração sejam as da conta que recebe o dinheiro das vendas.<br/>
 
@@ -165,7 +165,7 @@ Antes de ativá-las, certifique-se de que as credenciais na sua integração sej
 >
 > Ajude seus clientes a completar seus pagamentos sem erros.
 >
-> [Mensagens de resposta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/handling-responses)
+> [Mensagens de resposta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v2/handling-responses)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >

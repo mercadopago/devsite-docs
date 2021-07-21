@@ -184,12 +184,30 @@ A resposta indica que o pagamento se encontra autorizado e pendente de captura.
 Também pode resultar rejeitado ou ficar pendente. Tenha em conta que os valores autorizados não poderão ser utilizados pelo seu cliente até que não sejam capturados. Recomendamos realizar a captura o quanto antes.
 
 
+----[mla, mlm]----
 > WARNING
 >
 > Importante
 >
 > * A reserva terá validade de 7 dias. Se não capturá-la nesse período, será cancelada.
 > * Deve guardar o ID do pagamento para poder finalizar o processo.
+------------
+----[mpe]----
+> WARNING
+>
+> Importante
+>
+> * A reserva terá validade de 22 dias. Se não capturá-la nesse período, será cancelada.
+> * Deve guardar o ID do pagamento para poder finalizar o processo.
+------------
+----[mlb]----
+> WARNING
+>
+> Importante
+>
+> * A reserva terá validade de 5 dias. Se não capturá-la nesse período, será cancelada.
+> * Deve guardar o ID do pagamento para poder finalizar o processo.
+------------
 
 ## Capture um pagamento autorizado
 
@@ -507,7 +525,7 @@ curl -X PUT \
 >
 > Conheça os requisitos necessários para começar a receber pagamentos.
 >
-> [Requisitos para ir a produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/goto-production)
+> [Requisitos para ir a produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v2/goto-production)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
