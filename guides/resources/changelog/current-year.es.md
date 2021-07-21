@@ -4,7 +4,147 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ---
 
+## Julio 2021
+
+### 15 de julio
+
+----[mla, mlc, mco, mpe, mlu, mlm]----
+> CHANGELOG
+> 
+> Disponibilizamos Wix como medio de pago
+>
+> NEWS: NOVEDADES
+>
+> PRODUCT: WIX
+
+Ahora puedes integrar Mercado Pago en tu comercio Wix. Con esta plataforma virtual puedes ofrecer a tus clientes la posibilidad de pagar directamente en el sitio de Mercado Pago.
+
+[Ir a la documentación de Wix](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/wix)
+
+------------
+
+----[mlb]----
+> CHANGELOG
+>
+> Nueva documentación de Wix
+>
+> NEW_DOCUMENTATION: NUEVA DOCUMENTACIÓN
+>
+> PRODUCT: WIX
+
+Actualizamos la experiencia de integración de Mercado Pago como medio de pago en tu tienda Wix.
+
+[Ir a la documentación de Wix](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/wix)
+------------
+
+> CHANGELOG
+>
+> Nueva versión SDK PHP
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK PHP
+Lanzamos una nueva versión de la SDK PHP 1.12.0 y 2.4.0.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-php/releases).
+
+> CHANGELOG
+>
+> Nueva versión SDK Java
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK JAVA
+Lanzamos una nueva versión de la SDK Java 1.10.0.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-java/releases).
+
+### 14 de julio
+
+> CHANGELOG
+>
+> Nueva versión Magento 2
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: MAGENTO 2
+
+Lanzamos la nueva versión 3.9.2 para Magento 2.
+
+[Ir a documentación de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.2).
+
+### 1 de julio
+
+> CHANGELOG
+>
+> Nueva versión Magento 2
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: MAGENTO 2
+
+Lanzamos la nueva versión 3.9.1 para Magento 2.
+
+[Ir a documentación de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.1).
+
+---
+
 ## Junio 2021
+
+
+----[mlb]----
+
+### 25 de junio
+
+> CHANGELOG
+>
+> Nuevo medio de pago Pix para Nuvemshop
+>
+> NEWS: FEATURE
+>
+> PRODUCT: NUVEMSHOP
+
+Ahora puedes incluir Pix como método de pago para Nuvemshop.
+
+[Ir a documentación de Nuvemshop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/nuvemshop)
+
+------------
+
+### 24 de junio
+
+> CHANGELOG
+>
+> Configura la zona horaria de tus reportes
+>
+> NEWS: FEATURE
+>
+> PRODUCT: REPORTES
+
+El atributo configurable `display_timezone` permite configurar la zona horaria en la que opera un negocio para que los reportes muestren la fecha y la hora ajustadas a dicha zona.
+
+De no modificar la zona horaria, los reportes seguirán mostrando los datos en GMT-04.
+
+Ir a documentación de los reportes [Dinero retirado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/api#bookmark_atributos_configurables) o [Todas las transacciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/api#bookmark_atributos_configurables).
 
 ### 10 de junio
 
@@ -26,7 +166,6 @@ Lanzamos la nueva versión 4.6.1 para PrestaShop.
 >
 > Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.6.1).
 
-
 > CHANGELOG
 >
 > Nueva versión Magento 2
@@ -44,6 +183,7 @@ Lanzamos la nueva versión 3.9.0 para Magento 2.
 > GitHub
 >
 > Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.0).
+
 
 ### 3 de junio
 
@@ -88,6 +228,8 @@ Las suscripciones de Mercado Pago te permiten recibir pagos de forma recurrente,
 [Crear suscripciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/introduction)
 
 ------------
+
+---
 
 ## Mayo 2021
 

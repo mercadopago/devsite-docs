@@ -6,11 +6,10 @@ Use our APIs to save your customer's card references and offer them a better exp
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create customers and cards
 
-To create customers and cards, submit the e-mail field and generated token.
+To create customers and link them with their cards, submit the e-mail field, type of payment method, ID of the issuing bank and the generated token.
 You will add every customer using the `customer` value, and cards as `card`.
 
 [[[
-
 ```php
 
 <?php
@@ -24,6 +23,8 @@ You will add every customer using the `customer` value, and cards as `card`.
   $card = new MercadoPago\Card();
   $card->token = "9b2d63e00d66a8c721607214cedaecda";
   $card->customer_id = $customer->id();
+  $card->issuer = array("id" => "3245612");
+  $card->payment_method = array("id" => "debit_card");
   $card->save();
 
 ?>
@@ -42,7 +43,9 @@ mercadopago.customers.create(customer_data).then(function (customer) {
 
   var card_data = {
     "token": "9b2d63e00d66a8c721607214cedaecda",
-    "customer": customer.id
+    "customer": customer.id,
+    "issuer_id": "23",
+    "payment_method_id": "debit_card"
   }
 
   mercadopago.cards.create(card_data).then(function (card) {
@@ -61,9 +64,14 @@ Customer customer = new Customer();
 customer.setEmail("john@yourdomain.com");
 customer.save();
 
+Issuer issuer = new Issuer();
+issuer.setId("3245612");
+
 Card card = new Card();
 card.setToken("9b2d63e00d66a8c721607214cedaecda");
 card.setCustomerId(customer.getId());
+card.setIssuer(issuer);
+card.setPaymentMethodId("debit_card");
 card.save();
 
 ```
@@ -80,7 +88,9 @@ customer_response = sdk.customer.create(customer_request)
 customer = customer_response[:response]
 
 card_request = {
-  token: '9b2d63e00d66a8c721607214cedaecda'
+  token: '9b2d63e00d66a8c721607214cedaecda',
+  issuer_id: '3245612',
+  payment_method_id: 'debit_card'
 }
 card_response = sdk.card.create(customer['id'], card_request)
 card = card_response[:response]
@@ -99,7 +109,7 @@ Customer customer = await customerClient.CreateAsync(customerRequest);
 
 var cardRequest = new CustomerCardCreateRequest
 {
-    Token = "9b2d63e00d66a8c721607214cedaecda",
+    Token = "9b2d63e00d66a8c721607214cedaecda"
 };
 CustomerCard card = await customerClient.CreateCardAsync(customer.Id, cardRequest);
 
@@ -116,7 +126,9 @@ customer_response = sdk.customer().create(customer_data)
 customer = customer_response["response"]
 
 card_data = {
-  "token": "9b2d63e00d66a8c721607214cedaecda"
+  "token": "9b2d63e00d66a8c721607214cedaecda",
+  "issuer_id": "3245612",
+  "payment_method_id": "debit_card"
 }
 card_response = sdk.card().create(customer["id"], card_data)
 card = card_response["response"]
@@ -128,10 +140,9 @@ curl -X POST \
     -H 'Content-Type: application/json' \
     -H 'Authorization: Bearer ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
-    -d '{"token": "9b2d63e00d66a8c721607214cedaecda"}'
+    -d '{"token": "9b2d63e00d66a8c721607214cedaecda", "issuer_id": "3245612", "payment_method_id": "debit_card"}'
 
 ```
-
 ]]]
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
@@ -162,12 +173,20 @@ curl -X POST \
 >
 > For correct data, we recommend saving card data after making a successful payment.
 
+
+> WARNING 
+> 
+> Important
+> 
+> If you receive an error message of type `"invalid parameter"` with HTTP 400 status code, make sure you are completing the fields `payment_method_id` and `issuer_id` correctly.
+
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new cards to a customer
 
 To add new cards to a customer, create a token and make a `HTTP POST` to the `customer`.
 
 [[[
 ```php
+
 <?php
 
   MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
@@ -177,6 +196,8 @@ To add new cards to a customer, create a token and make a `HTTP POST` to the `cu
   $card = new MercadoPago\Card();
   $card->token = "9b2d63e00d66a8c721607214cedaecda";
   $card->customer_id = $customer->id;
+  $card->issuer = array("id" => "3245612");
+  $card->payment_method = array("id" => "debit_card");
   $card->save();
 
   print_r($card);
@@ -200,14 +221,15 @@ mercadopago.customers.search({
 }).then(function (customer) {
   card_data = {
     "token": "9b2d63e00d66a8c721607214cedaecda",
-    "customer": customer.id
+    "customer": customer.id,
+    "issuer_id": "3245612",
+    "payment_method_id": "debit_card"
   }
 
   mercadopago.cards.create(card_data).then(function (card) {
     console.log(card);
   });
 });
-
 
 ```
 ```java
@@ -217,9 +239,14 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Customer customer = Customer.load("247711297-jxOV430go9fx2e")
 
+Issuer issuer = new Issuer();
+issuer.setId("3245612");
+
 Card card = new Card();
 card.setToken("9b2d63e00d66a8c721607214cedaecda");
 card.setCustomerId(customer.getID());
+card.setIssuer(issuer);
+card.setPaymentMethodId("debit_card");
 card.save();
 
 System.out.print(card.toString());
@@ -235,7 +262,9 @@ customer_response = sdk.customer.get('247711297-jxOV430go9fx2e')
 customer = customer_response[:response]
 
 card_request = {
-  token: '9b2d63e00d66a8c721607214cedaecda'
+  token: '9b2d63e00d66a8c721607214cedaecda',
+  issuer_id: '3245612',
+  payment_method_id: 'debit_card'
 }
 card_response = sdk.card.create(customer['id'], card_request)
 card = card_response[:response]
@@ -268,7 +297,9 @@ customer_response = sdk.customer().get("247711297-jxOV430go9fx2e")
 customer = customer_response["response"]
 
 card_data = {
-  "token": "9b2d63e00d66a8c721607214cedaecda"
+  "token": "9b2d63e00d66a8c721607214cedaecda",
+  "issuer_id": "3245612",
+  "payment_method_id": "debit_card"
 }
 card_response = sdk.card().create(customer["id"], card_data)
 card = card_response["response"]
@@ -277,6 +308,7 @@ print(card)
 
 ```
 ```curl
+
 curl -X POST \
     -H 'Content-Type: application/json' \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
@@ -287,9 +319,9 @@ curl -X POST \
     -H 'Content-Type: application/json' \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
-    -d '{"token": "9b2d63e00d66a8c721607214cedaecda"}'
-```
+    -d '{"token": "9b2d63e00d66a8c721607214cedaecda", "issuer_id": "3245612", "payment_method_id":"debit_card"}'
 
+```
 ]]]
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
@@ -396,8 +428,8 @@ cards = cards_response["response"]
 curl -X GET \
     -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
     'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
-```
 
+```
 ]]]
 
 Saved card data response:
@@ -617,7 +649,6 @@ curl -X POST \
 }'
 
 ```
-
 ]]]
 
 
@@ -701,7 +732,6 @@ curl -X GET \
 }'
 
 ```
-
 ]]]
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
@@ -807,7 +837,6 @@ curl -X GET \
   'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
 
 ```
-
 ]]]
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
@@ -822,6 +851,282 @@ curl -X GET \
     ...
 }]
 ```
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Modify a customer
+
+To modify a client you need to send the `customer_id` and the fields you want to update in a `HTTP PUT` request. 
+
+The fields that can be modified from a client are:
+| Attribute | Description |
+| -------- | ----------- |
+| `address` | Address. |
+| `default_address` | Default address. |
+| `default_card` | Default card. |
+| `description` | Description. |
+| `email` | Account e-mail. |
+| `first_name` | First name. |
+| `last_name` | Last name. |
+| `phone` | Registered phone. |
+| `identification` | Document type and number. |
+
+[[[
+```php
+
+<?php
+
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+
+  $customer = new MercadoPago\Customer();
+  $customer->email = "user@user.com";
+  $customer->first_name = "john";
+  $customer->last_name = "wagner";
+  $customer->phone = array("area_code" => "[FAKER][PHONE_NUMBER][AREA_CODE]", "number" => "001234567");
+  $customer->identification = array("type" => "[FAKER][IDENTIFICATION][TYPE]", "number" => "12341234");
+  $customer->default_address = "Home";
+  $customer->address = array("zip_code" => "[FAKER][ADDRESS][ZIP_CODE]", "street_name" => "[FAKER][ADDRESS][STREET_NAME]", "street_number" => "2");
+  $customer->description = "Customer information";
+  $customer->default_card = "None";
+  $customer->update();
+
+?>
+
+```
+```node
+
+var mercadopago = require('mercadopago');
+mercadopago.configure({
+    access_token: 'ENV_ACCESS_TOKEN'
+});
+
+var customer_data = { 
+  "email": "test@test.com",
+  "first_name": "john" ,
+  "last_name": "wagner",
+  "phone": {
+    "area_code": "[FAKER][PHONE_NUMBER][AREA_CODE]",
+    "number": "001234567"
+  },
+  "identification": {
+    "type": "[FAKER][IDENTIFICATION][TYPE]",
+    "number": "12341234"
+  }, 
+  "default_address": "Home",
+  "address": {
+    "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
+    "street_name": "[FAKER][ADDRESS][STREET_NAME]",
+    "street_number": "2"
+  },
+  "description": "Customer information",
+  "default_card": "None
+ }
+
+mercadopago.customers.update(customer_data).then(function (customer) {
+ // code ...
+});
+
+```
+
+```java
+
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+Phone phone = new Phone();
+phone.setAreaCode("[FAKER][PHONE_NUMBER][AREA_CODE]");
+phone.setNumber("001234567");
+
+DefaultAddress defaultAddress = new DefaultAddress();
+defaultAddress.setZipCode("[FAKER][ADDRESS][ZIP_CODE]");
+defaultAddress.setStreetName("[FAKER][ADDRESS][STREET_NAME]");
+defaultAddress.setStreetNumber(2);
+
+Identification identification = new Identification();
+identification.setType("[FAKER][IDENTIFICATION][TYPE]");
+identification.setNumber(12341234);
+
+Customer customer = new Customer();
+customer.setEmail("user@user.com");
+customer.setFirstName("john");
+customer.setLastName("wagner");
+customer.setDefaultAddress("Home");
+customer.setPhone(phone);
+customer.setIdentification(identification);
+customer.setDescription("Customer information");
+customer.setDefaultCard("None");
+cusotmer.setAddress(defaultAddress);
+customer.update();
+
+```
+```ruby
+
+require 'mercadopago'
+
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+
+customer_request = {
+  email: 'user@user.com',
+  first_name: 'john',
+  last_name: 'wagner',
+  default_address: 'home',
+  phone: {
+    area_code: '[FAKER][PHONE_NUMBER][AREA_CODE]',
+    number: '001234567'
+  },
+  identification: {
+    type: '[FAKER][IDENTIFICATION][TYPE]',
+    number: '12341234'
+  },
+  address: {
+    zip_code: '[FAKER][ADDRESS][ZIP_CODE]',
+    street_name: '[FAKER][ADDRESS][STREET_NAME]',
+    street_number: '2'
+  },
+  description: 'Customer information',
+  default_card: 'None'
+}
+customer_response = sdk.customer.update(customer_id ,customer_request)
+customer = customer_response[:response]
+
+```
+```csharp
+
+MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
+var phoneRequest = new PhoneRequest
+{
+  AreaCode = "[FAKER][PHONE_NUMBER][AREA_CODE]",
+  Number = "001234567"
+};
+
+var identificationRequest = new IdentificationRequest
+{
+  Type = "[FAKER][IDENTIFICATION][TYPE]",
+  Number = "12341234"
+};
+
+var addressRequest = new AddressRequest
+{
+  ZipCode = "[FAKER][ADDRESS][ZIP_CODE]",
+  StreetName = "[FAKER][ADDRESS][STREET_NAME]",
+  StreetNumber = "2"
+};
+
+var customerRequest = new CustomerRequest
+{
+    Email = "test@test.com",
+    FirstName = "john",
+    LastName = "wagner",
+    DefaultAddress = "home",
+    Description = "Customer information",
+    DefaultCard = "None",
+    Phone = phoneRequest,
+    Identification = identificationRequest,
+    Address = addressRequest
+
+};
+var customerClient = new CustomerClient();
+Customer customer = await customerClient.Update(customerRequest);
+
+```
+```python
+
+import mercadopago
+sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
+
+customer_data = {
+  "email": 'user@user.com',
+  "first_name": 'john',
+  "last_name": 'wagner',
+  "default_address": 'home',
+  "phone": {
+    "area_code": '[FAKER][PHONE_NUMBER][AREA_CODE]',
+    "number": '001234567'
+  },
+  "identification": {
+    "type": '[FAKER][IDENTIFICATION][TYPE]',
+    "number": '12341234'
+  },
+  "address": {
+    "zip_code": '[FAKER][ADDRESS][ZIP_CODE]',
+    "street_name": '[FAKER][ADDRESS][STREET_NAME]',
+    "street_number": '2'
+  },
+  "description": 'Customer information',
+  "default_card": 'None'
+}
+customer_response = sdk.customer().update(customer_id, customer_data)
+customer = customer_response["response"]
+
+```
+```curl
+
+curl -X PUT \
+    'https://api.mercadopago.com/v1/customers/{id}' \
+    -H 'Authorization: Bearer ACCESS_TOKEN_ENV' \ 
+    -d '{
+  "email": "user@user.com",
+  "first_name": "john",
+  "last_name": "wagner",
+  "address": {
+    "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
+    "street_name": "[FAKER][ADDRESS][STREET_NAME]",
+    "street_number": "2"
+  },
+  "phone": {
+    "area_code": "[FAKER][PHONE_NUMBER][AREA_CODE]",
+    "number": "001234567"
+  },
+  "identification": {
+    "type": "[FAKER][IDENTIFICATION][TYPE]",
+    "number": "12341234"
+  },
+  "description": "Customer information" 
+}'
+
+```
+]]]
+
+Example of response with sending the `customer_id`:
+```json
+{
+  "id": "xxxxxxxxxxxxxxxxxxxxx",
+  "email": "user@user.com",
+  "first_name": "john",
+  "last_name": "wagner",
+  "phone": {
+    "area_code": "[FAKER][PHONE_NUMBER][AREA_CODE]",
+    "number": 001234567
+  },
+  "identification": {
+    "type": "[FAKER][IDENTIFICATION][TYPE]",
+    "number": 12341234
+  },
+  "address": {
+    "zip_code": "[FAKER][ADDRESS][ZIP_CODE]",
+    "street_name": "[FAKER][ADDRESS][STREET_NAME]",
+    "street_number": 2
+  },
+  "description": "Customer information",
+  "date_created": "2021-05-25T15:36:23.541Z",
+  "metadata": {},
+  "cards": [
+    {}
+  ],
+  "addresses": [
+    {}
+  ]
+}
+```
+Example of response without including the `customers_id` parameter:
+```json
+{
+  "message": "missing customer id"
+}
+```
+> NOTE
+>
+> Note
+>
+> If you don't have the `customer_id`, [check the Customers API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/customers/_customers_search/get) and generate an` HTTP GET` request using the `email` parameter to get it.
 
 ## Cancellations and refunds
 

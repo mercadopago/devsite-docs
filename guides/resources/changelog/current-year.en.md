@@ -4,7 +4,148 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ---
 
+## July 2021
+
+### July 15th
+----[mla, mlc, mco, mpe, mlu, mlm]----
+> CHANGELOG
+> 
+> Wix as a new payment method in Checkout Pro
+>
+> NEWS: NEWS
+>
+> PRODUCT: WIX
+
+Now you can integrate Mercado Pago into your Wix store. With this virtual platform, you can offer your customers the possibility to pay directly on the Mercado Pago site.
+
+[Go to Wix documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/wix)
+
+------------
+
+----[mlb]----
+> CHANGELOG
+> 
+> New Wix documentation
+>
+> NEW_DOCUMENTATION: NEW DOCUMENTATION
+>
+> PRODUCT: WIX
+
+We've updated the experience of integrating Mercado Pago as a payment method in your Wix store.
+
+[Go to Wix documentation](https://www.mercadopago.com.br/developers/en/guides/plugins/unofficial/wix)
+
+------------
+
+
+> CHANGELOG
+>
+> New version of SDK PHP
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK PHP
+We have released a new version of SDK PHP 1.12.0 and 2.4.0.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-php/releases) for further details regarding this release.
+
+> CHANGELOG
+>
+> New version of SDK Java
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK JAVA
+We have released a new version of SDK Java 1.10.0.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-java/releases) for further details regarding this release.
+
+### July 14th
+
+> CHANGELOG
+>
+> New Magento 2 plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: MAGENTO 2
+
+We have released the new version 3.9.2 for Magento 2.
+
+[Go to Magento 2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.2) for further details regarding this release.
+
+### July 1st
+
+> CHANGELOG
+>
+> New Magento 2 plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: MAGENTO 2
+
+We have released the new version 3.9.1 for Magento 2.
+
+[Go to Magento 2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.1) for further details regarding this release.
+
+---
+
 ## June 2021
+
+----[mlb]----
+
+### June 25th
+
+> CHANGELOG
+>
+> New Pix payment method for Nuvemshop
+>
+> NEWS: FEATURE
+>
+> PRODUCT: NUVEMSHOP
+
+Now you can include Pix as a payment method for Nuvemshop.
+
+[Go to Nuvemshop documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/nuvemshop)
+
+------------
+
+### June 24th
+
+> CHANGELOG
+>
+> Set the time zone of your reports
+>
+> NEWS: FEATURE
+>
+> PRODUCT: REPORTS
+
+The customizable attribute `display_timezone` allows to set the time zone in which a business operates so the reports display the date and time adjusted to such time zone.
+
+If the time zone is not modified, the reports will keep displaying data based on GMT-04.
+
+Go to [Available Balance](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/api#bookmark_configurable_attributes) or [Account Balance](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/api#bookmark_configurable_attributes) reports documentation.
+
 
 ### June 10th
 
@@ -26,7 +167,6 @@ We have released the new version 4.6.1 for PrestaShop.
 >
 > [Check GitHub](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.6.1) for further details regarding this release.
 
-
 > CHANGELOG
 >
 > New Magento 2 plugin version
@@ -44,6 +184,7 @@ We have released the new version 3.9.0 for Magento 2.
 > GitHub
 >
 > [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.0) for further details regarding this release.
+
 
 ### June 3rd
 
@@ -88,6 +229,8 @@ Mercado Pago subscriptions allow you to receive recurring payments by credit and
 [Create subscriptions](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/subscriptions/introduction)
 
 ------------
+
+---
 
 ## May 2021
 

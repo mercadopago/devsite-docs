@@ -4,7 +4,148 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
+## Julho 2021
+
+### 15 de julho
+----[mla, mlc, mco, mpe, mlu, mlm]----
+> CHANGELOG
+> 
+> Wix como um novo meio de pagamento em Checkout Pro
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: WIX
+
+Agora você pode integrar o Mercado Pago em sua loja Wix. Com esta plataforma virtual, você pode oferecer aos seus clientes a possibilidade de pagar diretamente no site do Mercado Pago.
+
+[Ir para a documentação de Wix](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/wix)
+
+------------
+
+----[mlb]----
+> CHANGELOG
+> 
+> Nova documentação do Wix
+>
+> NEW_DOCUMENTATION: NOVA DOCUMENTAÇÃO
+>
+> PRODUCT: WIX
+
+Atualizamos a experiência de integração do Mercado Pago como meio de pagamento em sua loja Wix.
+
+[Ir para a documentação de Wix](https://www.mercadopago.com.br/developers/pt/guides/plugins/unofficial/wix)
+------------
+
+
+> CHANGELOG
+>
+> Nova versão SDK PHP
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK PHP
+Lançamos a nova versão 1.12.0 e 2.4.0 do SDK PHP.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-php/releases).
+
+> CHANGELOG
+>
+> Nova versão SDK Java
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK JAVA
+Lançamos a nova versão 1.10.0 do SDK Java.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-java/releases).
+
+### 14 de julho
+
+> CHANGELOG
+>
+> Nova versão Magento 2
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MAGENTO 2
+
+Lançamos a nova versão 3.9.2 para Magento 2.
+
+[Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.2).
+
+### 1 de julho
+
+> CHANGELOG
+>
+> Nova versão Magento 2
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MAGENTO 2
+
+Lançamos a nova versão 3.9.1 para Magento 2.
+
+[Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.1).
+
+---
+
 ## Junho 2021
+
+
+----[mlb]----
+
+### 25 de junho
+
+> CHANGELOG
+>
+> Novo meio de pagamento Pix para Nuvemshop
+>
+> NEWS: FEATURE
+>
+> PRODUCT: NUVEMSHOP
+
+Agora você pode incluir Pix como meio de pagamento para Nuvemshop.
+
+[Ir para a documentação Nuvemshop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/nuvemshop)
+
+------------
+
+### 24 de junho
+
+> CHANGELOG
+>
+> Configure o fuso horário dos seus relatórios
+>
+> NEWS: FEATURE
+>
+> PRODUCT: RELATÓRIOS
+
+Com o atributo `display_timezone`, é possível configurar o fuso horário em que um determinado negócio funciona. Assim, os relatórios mostrarão as datas e horários de acordo com o fuso em questão.
+
+Os relatórios continuarão mostrando os dados de acordo com o fuso GMT-04 caso o fuso horário não seja ajustado.
+
+Ir para documentação dos relatórios [Dinheiro disponível](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/api#bookmark_atributos_configuráveis) ou [Dinheiro em conta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/api#bookmark_atributos_configuráveis).
+
 
 ### 10 de junho
 
@@ -44,6 +185,7 @@ Lançamos a nova versão 3.9.0 para Magento 2.
 > GitHub
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.0).
+
 
 ### 3 de junho
 
@@ -88,6 +230,8 @@ As assinaturas do Mercado Pago permitem que você receba pagamentos recorrentes 
 [Criar assinaturas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/introduction)
 
 ------------
+
+---
 
 ## Maio 2021
 

@@ -10,9 +10,9 @@ Existen dos roles involucrados:
 
 > NOTE
 > 
-> ¿Quieres crear suscripciones de forma rápida y simple?
+> ¿Quieres ofrecer suscripciones de forma rápida y simple?
 > 
-> Ingresa en la sección de [Suscripciones](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans) en el panel de tu cuenta de Mercado Pago, configura tus datos ¡y listo!
+> Ingresa en la sección de [Planes de suscripción](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans) en el panel de tu cuenta de Mercado Pago, configura tus datos ¡y listo!
 
 
 ## Conceptos claves
@@ -21,7 +21,7 @@ Para poder integrar suscripciones, es necesario que conozcas cuatro conceptos cl
 
 | Concepto | Descripción |
 | --- |	--- |
-| Plan o template | Es una plantilla que permite definir, entre otros atributos, el título, monto y frecuencia de las suscripciones creadas por el vendedor. Sirve para establecer características generales en las suscripciones que se creen a partir de esta entidad. Es importante aclarar que aquí todavía no se configura ningún medio de pago.|
+| Plan de suscripción o template | Es una plantilla que permite definir, entre otros atributos, el título, monto y frecuencia de las suscripciones creadas por el vendedor. Sirve para establecer características generales en las suscripciones que se creen a partir de esta entidad. Es importante aclarar que aquí todavía no se configura ningún medio de pago.|
 | Suscripción o preapproval | Autorización del pagador para cobros recurrentes con un medio de pago definido que va ser la base para crear cuotas según la recurrencia que se defina. Tiene características similares al template, ya que puede crearse una suscripción a partir de un plan. |
 | Pago autorizado o authorized payment | Es la cuota de una suscripción que se genera y se cobra en base a la recurrencia definida. El motor de suscripciones calendariza y genera los pagos de forma automática. |
 | Cobro de verificación | Se trata de un cobro mínimo, que se realiza en el momento de la adhesión del pagador solo para verificar que la tarjeta utilizada para pagar la suscripción es válida. Enseguida, este monto se reembolsa al pagador. |
