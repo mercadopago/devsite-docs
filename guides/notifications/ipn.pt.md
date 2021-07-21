@@ -125,8 +125,6 @@ Dentro da ordem, no objeto payments, você vai encontrar todos os pagamentos del
 
 ## Pesquisa da ordem
 
-**Si estas integrando pagos presenciales**, se debe implementar como método de contingencia, la  **búsqueda de la orden** utilizando el `external_reference` de la misma como criterio de búsqueda.
-
 **Se você estiver integrando pagamentos presenciais**, é necessário aplicar como método de contingência a **pesquisa da ordem** utilizando o seu `external_reference` como critério de pesquisa.
 
 ```curl
