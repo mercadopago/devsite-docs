@@ -177,7 +177,7 @@ curl -X POST \
 > 
 > Importante
 > 
-> Se você receber uma mensagem de erro do tipo `"invalid parameter"` com código de estado HTTP 400, certifique-se de que está preenchendo corretamente os campos `payment_method_id` e `issuer_id`.
+> Se você receber uma mensagem de erro do tipo `"invalid parameter"` com código de estado HTTP 400, certifique-se de que está completando corretamente os campos `payment_method_id` e `issuer_id`.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adicione novos cartões a um cliente
 
