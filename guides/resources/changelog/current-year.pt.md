@@ -7,6 +7,35 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 ## Julho 2021
 
 ### 15 de julho
+----[mla, mlc, mco, mpe, mlu, mlm]----
+> CHANGELOG
+> 
+> Wix como um novo meio de pagamento em Checkout Pro
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: WIX
+
+Agora você pode integrar o Mercado Pago em sua loja Wix. Com esta plataforma virtual, você pode oferecer aos seus clientes a possibilidade de pagar diretamente no site do Mercado Pago.
+
+[Ir para a documentação de Wix](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/wix)
+
+------------
+
+----[mlb]----
+> CHANGELOG
+> 
+> Nova documentação do Wix
+>
+> NEW_DOCUMENTATION: NOVA DOCUMENTAÇÃO
+>
+> PRODUCT: WIX
+
+Atualizamos a experiência de integração do Mercado Pago como meio de pagamento em sua loja Wix.
+
+[Ir para a documentação de Wix](https://www.mercadopago.com.br/developers/pt/guides/plugins/unofficial/wix)
+------------
+
 
 > CHANGELOG
 >

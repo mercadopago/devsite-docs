@@ -8,6 +8,35 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ### 15 de julio
 
+----[mla, mlc, mco, mpe, mlu, mlm]----
+> CHANGELOG
+> 
+> Disponibilizamos Wix como medio de pago
+>
+> NEWS: NOVEDADES
+>
+> PRODUCT: WIX
+
+Ahora puedes integrar Mercado Pago en tu comercio Wix. Con esta plataforma virtual puedes ofrecer a tus clientes la posibilidad de pagar directamente en el sitio de Mercado Pago.
+
+[Ir a la documentación de Wix](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/wix)
+
+------------
+
+----[mlb]----
+> CHANGELOG
+>
+> Nueva documentación de Wix
+>
+> NEW_DOCUMENTATION: NUEVA DOCUMENTACIÓN
+>
+> PRODUCT: WIX
+
+Actualizamos la experiencia de integración de Mercado Pago como medio de pago en tu tienda Wix.
+
+[Ir a la documentación de Wix](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/wix)
+------------
+
 > CHANGELOG
 >
 > Nueva versión SDK PHP
