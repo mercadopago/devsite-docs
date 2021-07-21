@@ -6,7 +6,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Julho 2021
 
-## 15 de julho
+### 15 de julho
 ----[mla, mlc, mco, mpe, mlu, mlm]----
 > CHANGELOG
 > 
@@ -27,7 +27,7 @@ Agora você pode integrar o Mercado Pago em sua loja Wix. Com esta plataforma vi
 > 
 > Nova documentação do Wix
 >
-> NEW_VERSION: NOVA VERSÃO
+> NEW_DOCUMENTATION: NOVA DOCUMENTAÇÃO
 >
 > PRODUCT: WIX
 

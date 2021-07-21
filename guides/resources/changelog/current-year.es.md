@@ -28,7 +28,7 @@ Ahora puedes integrar Mercado Pago en tu comercio Wix. Con esta plataforma virtu
 >
 > Nueva documentación de Wix
 >
-> NEW_VERSION: NUEVA VERSIÓN
+> NEW_DOCUMENTATION: NUEVA DOCUMENTASIÓN
 >
 > PRODUCT: WIX
 

@@ -6,7 +6,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## July 2021
 
-## July 15th
+### July 15th
 ----[mla,mlc,mco,mpe,mlu]----
 > CHANGELOG
 > 
@@ -27,7 +27,7 @@ Now you can integrate Mercado Pago into your Wix store. With this virtual platfo
 > 
 > New Wix documentation
 >
-> NEW_VERSION: NEW VERSION
+> NEW_DOCUMENTATION: NEW DOCUMENTATION
 >
 > PRODUCT: WIX
 
