@@ -155,7 +155,6 @@ En VTEX, al seleccionar Boleto Bancario se incluyen todos los medios de pagos di
 | --- | --- |
 | `ticket` | Rapipago |
 | `ticket` | Pago Fácil |
-| `ticket` | Provincia NET Pagos |
 | `atm` | Red Link |
 
 > Los medios de pago Carga Virtual y Cobro Express no están disponibles para el Checkout de VTEX.
