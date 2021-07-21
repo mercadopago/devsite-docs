@@ -524,7 +524,7 @@ curl -X PUT \
 >
 > Conoce los requisitos necesarios para comenzar a recibir pago.
 >
-> [Requisitos para ir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/goto-production)
+> [Requisitos para ir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/goto-production)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >

@@ -503,10 +503,10 @@ O cliente precisa inserir o código se segurança em um fluxo similar ao que rea
 ```
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-> Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout API anterior](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/advanced-integration).
+> Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout API anterior](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v1/advanced-integration).
 ------------
 ----[mlb]----
-> Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout Transparente anterior](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/advanced-integration).
+> Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout Transparente anterior](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v1/advanced-integration).
 ------------
 
 <br>
@@ -1153,7 +1153,7 @@ Encontre mais informações na [seção de Devoluções e cancelamentos](https:/
 >
 > Configure seus pagamentos e adapte a integração do Mercado Pago ao seu negócio.
 >
-> [Outras funcionalidades](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v2/other-features)
+> [Outras funcionalidades](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-features)
 
 > RIGHT_BUTTON
 >

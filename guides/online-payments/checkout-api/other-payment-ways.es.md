@@ -16,7 +16,7 @@ Para recibir otros medios de pago, tienes que tener en cuenta dos instancias:
 1. Primero, necesitas un frontend para que recolecte el e-mail y documento de tu cliente y el método de pago y detalle del monto.
 1. Segundo, un backend que tome los datos del pago y pueda confirmar y efectuar el pago.
 
-Tanto para el frontend como para el backend, recomendamos utilizar [nuestras librerías](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/previous-requirements#bookmark_utiliza_nuestras_librerías_siempre) para poder recolectar los datos sensibles de tus usuarios de manera segura.
+Tanto para el frontend como para el backend, recomendamos utilizar [nuestras librerías](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements#bookmark_utiliza_nuestras_librerías_siempre) para poder recolectar los datos sensibles de tus usuarios de manera segura.
 
 ## Consulta los medios de pago disponibles
 
@@ -100,7 +100,7 @@ curl -X GET \
 
 El resultado será un listado con los medios de pago y sus propiedades. Por ejemplo, los medios de pago del `payment_type_id` que tienen como valor `ticket` refieren a medio de pago en efectivo.
 
-Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tienes que filtrar los medios que quieras ofrecer según la [lista de medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_medios_de_pago).
+Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tienes que filtrar los medios que quieras ofrecer según la [lista de medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_medios_de_pago).
 
 ```json
 [
@@ -151,13 +151,13 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-> Esta documentación utiliza la nueva versión de MercadoPago.js. Para ver la versión anterior, ve a la [sección de Checkout API antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways).
+> Esta documentación utiliza la nueva versión de MercadoPago.js. Para ver la versión anterior, ve a la [sección de Checkout API antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v1/other-payment-ways).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Agrega el formulario de pago
 
 Para realizar la captura de datos sensibles de tus clientes, es muy importante que utilices nuestro formulario con los atributos correspondientes para garantizar la seguridad de la información.
 
-Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
+Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
 
 Agrega el siguiente formulario con los estilos que desees.
 
@@ -525,7 +525,7 @@ Para recibir otros medios de pago, tienes que tener en cuenta dos instancias:
 1. Primero, necesitas un frontend para que recolecte el e-mail y documento de tu cliente y el método de pago y detalle del monto.
 1. Segundo, un backend que tome los datos del pago y pueda confirmar y efectuar el pago.
 
-Tanto para el frontend como para el backend, recomendamos utilizar [nuestras librerías](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/previous-requirements#bookmark_utiliza_nuestras_librerías_siempre) para poder recolectar los datos sensibles de tus usuarios de manera segura.
+Tanto para el frontend como para el backend, recomendamos utilizar [nuestras librerías](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements#bookmark_utiliza_nuestras_librerías_siempre) para poder recolectar los datos sensibles de tus usuarios de manera segura.
 
 ## Consulta los medios de pago disponibles
 
@@ -608,7 +608,7 @@ curl -X GET \
 
 El resultado será un listado con los medios de pago y sus propiedades. Por ejemplo, los medios de pago del `payment_type_id` que tienen como valor `ticket` refieren a medio de pago en efectivo.
 
-Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tienes que filtrar los medios que quieras ofrecer según la [lista de medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_medios_de_pago).
+Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tienes que filtrar los medios que quieras ofrecer según la [lista de medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_medios_de_pago).
 
 ```json
 [
@@ -743,13 +743,13 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-> Esta documentación utiliza la nueva versión de MercadoPago.js. Para ver la versión anterior, ve a la [sección de Checkout API antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways).
+> Esta documentación utiliza la nueva versión de MercadoPago.js. Para ver la versión anterior, ve a la [sección de Checkout API antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v1/other-payment-ways).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Agrega el formulario de pago
 
 Para realizar la captura de datos sensibles de tus clientes, es muy importante que utilices nuestro formulario con los atributos correspondientes para garantizar la seguridad de la información.
 
-Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
+Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
 
 Agrega el siguiente formulario con los estilos que desees.
 
@@ -1023,7 +1023,7 @@ Para recibir otros medios de pago, tienes que tener en cuenta dos instancias:
 1. Primero, necesitas un frontend para que recolecte el e-mail y documento de tu cliente y el método de pago y detalle del monto.
 1. Segundo, un backend que tome los datos del pago y pueda confirmar y efectuar el pago.
 
-Tanto para el frontend como para el backend, recomendamos utilizar [nuestras librerías](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/previous-requirements#bookmark_utiliza_nuestras_librerías_siempre) para poder recolectar los datos sensibles de tus usuarios de manera segura.
+Tanto para el frontend como para el backend, recomendamos utilizar [nuestras librerías](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements#bookmark_utiliza_nuestras_librerías_siempre) para poder recolectar los datos sensibles de tus usuarios de manera segura.
 
 ## Consulta los medios de pago disponibles
 
@@ -1103,7 +1103,7 @@ curl -X GET \
 
 El resultado será un listado con los medios de pago y sus propiedades. Por ejemplo, los medios de pago del `payment_type_id` que tienen como valor `ticket` refieren a medio de pago en efectivo.
 
-Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tienes que filtrar los medios que quieras ofrecer según la [lista de medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_medios_de_pago).
+Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tienes que filtrar los medios que quieras ofrecer según la [lista de medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_medios_de_pago).
 
 ```json
 
@@ -1170,13 +1170,13 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-> Esta documentación utiliza la nueva versión de MercadoPago.js. Para ver la versión anterior, ve a la [sección de Checkout API antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways).
+> Esta documentación utiliza la nueva versión de MercadoPago.js. Para ver la versión anterior, ve a la [sección de Checkout API antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v1/other-payment-ways).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Agrega el formulario de pago
 
 Para realizar la captura de datos sensibles de tus clientes, es muy importante que utilices nuestro formulario con los atributos correspondientes para garantizar la seguridad de la información.
 
-Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
+Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
 
 Agrega el siguiente formulario con los estilos que desees.
 
@@ -1480,7 +1480,7 @@ Para recibir otros medios de pago, tienes que tener en cuenta dos instancias:
 1. Primero, necesitas un frontend para que recolecte el e-mail y documento de tu cliente y el método de pago y detalle del monto.
 1. Segundo, un backend que tome los datos del pago y pueda confirmar y efectuar el pago.
 
-Tanto para el frontend como para el backend, recomendamos utilizar [nuestras librerías](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/previous-requirements#bookmark_utiliza_nuestras_librerías_siempre) para poder recolectar los datos sensibles de tus usuarios de manera segura.
+Tanto para el frontend como para el backend, recomendamos utilizar [nuestras librerías](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements#bookmark_utiliza_nuestras_librerías_siempre) para poder recolectar los datos sensibles de tus usuarios de manera segura.
 
 ## Consulta los medios de pago disponibles
 
@@ -1562,7 +1562,7 @@ curl -X GET \
 
 El resultado será un listado con los medios de pago y sus propiedades. Por ejemplo, los medios de pago del `payment_type_id` que tienen como valor `ticket` refieren a medio de pago en efectivo.
 
-Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tienes que filtrar los medios que quieras ofrecer según la [lista de medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_medios_de_pago).
+Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tienes que filtrar los medios que quieras ofrecer según la [lista de medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_medios_de_pago).
 
 ```json
 [
@@ -1646,13 +1646,13 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-> Esta documentación utiliza la nueva versión de MercadoPago.js. Para ver la versión anterior, ve a la [sección de Checkout API antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways).
+> Esta documentación utiliza la nueva versión de MercadoPago.js. Para ver la versión anterior, ve a la [sección de Checkout API antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v1/other-payment-ways).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Agrega el formulario de pago
 
 Para realizar la captura de datos sensibles de tus clientes, es muy importante que utilices nuestro formulario con los atributos correspondientes para garantizar la seguridad de la información.
 
-Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
+Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
 
 Agrega el siguiente formulario con los estilos que desees.
 
@@ -2203,7 +2203,7 @@ Para recibir otros medios de pago, tienes que tener en cuenta dos instancias:
 1. Primero, necesitas un frontend para que recolecte el e-mail y documento de tu cliente y el método de pago y detalle del monto.
 1. Segundo, un backend que tome los datos del pago y pueda confirmar y efectuar el pago.
 
-Tanto para el frontend como para el backend, recomendamos utilizar [nuestras librerías](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/previous-requirements#bookmark_utiliza_nuestras_librerías_siempre) para poder recolectar los datos sensibles de tus usuarios de manera segura.
+Tanto para el frontend como para el backend, recomendamos utilizar [nuestras librerías](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements#bookmark_utiliza_nuestras_librerías_siempre) para poder recolectar los datos sensibles de tus usuarios de manera segura.
 
 ## Consulta los medios de pago disponibles
 
@@ -2283,7 +2283,7 @@ curl -X GET \
 
 El resultado será un listado con los medios de pago y sus propiedades. Por ejemplo, los medios de pago del `payment_type_id` que tienen como valor `ticket` refieren a medio de pago en efectivo.
 
-Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tienes que filtrar los medios que quieras ofrecer según la [lista de medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_medios_de_pago).
+Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tienes que filtrar los medios que quieras ofrecer según la [lista de medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_medios_de_pago).
 
 ```json
 [
@@ -2352,13 +2352,13 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-> Esta documentación utiliza la nueva versión de MercadoPago.js. Para ver la versión anterior, ve a la [sección de Checkout API antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways).
+> Esta documentación utiliza la nueva versión de MercadoPago.js. Para ver la versión anterior, ve a la [sección de Checkout API antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v1/other-payment-ways).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Agrega el formulario de pago
 
 Para realizar la captura de datos sensibles de tus clientes, es muy importante que utilices nuestro formulario con los atributos correspondientes para garantizar la seguridad de la información.
 
-Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
+Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
 
 Agrega el siguiente formulario con los estilos que desees.
 
@@ -2853,7 +2853,7 @@ Para recibir otros medios de pago, tienes que tener en cuenta dos instancias:
 1. Primero, necesitas un frontend para que recolecte el e-mail y documento de tu cliente y el método de pago y detalle del monto.
 1. Segundo, un backend que tome los datos del pago y pueda confirmar y efectuar el pago.
 
-Tanto para el frontend como para el backend, recomendamos utilizar [nuestras librerías](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/previous-requirements#bookmark_utiliza_nuestras_librerías_siempre) para poder recolectar los datos sensibles de tus usuarios de manera segura.
+Tanto para el frontend como para el backend, recomendamos utilizar [nuestras librerías](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements#bookmark_utiliza_nuestras_librerías_siempre) para poder recolectar los datos sensibles de tus usuarios de manera segura.
 
 ## Consulta los medios de pago disponibles
 
@@ -2932,7 +2932,7 @@ curl -X GET \
 
 El resultado será un listado con los medios de pago y sus propiedades. Por ejemplo, los medios de pago del `payment_type_id` que tienen como valor `ticket` refieren a medio de pago en efectivo.
 
-Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tienes que filtrar los medios que quieras ofrecer según la [lista de medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_medios_de_pago).
+Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tienes que filtrar los medios que quieras ofrecer según la [lista de medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_medios_de_pago).
 
 ```json
 [
@@ -2976,13 +2976,13 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-> Esta documentación utiliza la nueva versión de MercadoPago.js. Para ver la versión anterior, ve a la [sección de Checkout API antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways).
+> Esta documentación utiliza la nueva versión de MercadoPago.js. Para ver la versión anterior, ve a la [sección de Checkout API antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v1/other-payment-ways).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Agrega el formulario de pago
 
 Para realizar la captura de datos sensibles de tus clientes, es muy importante que utilices nuestro formulario con los atributos correspondientes para garantizar la seguridad de la información.
 
-Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
+Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
 
 Agrega el siguiente formulario con los estilos que desees.
 
@@ -3294,7 +3294,7 @@ Para recibir otros medios de pago, tienes que tener en cuenta dos instancias:
 1. Primero, necesitas un frontend para que recolecte los datos necesarios para realizar el pago.
 1. Segundo, un backend que tome los datos del pago y pueda confirmar y efectuar el pago.
 
-Tanto para el frontend como para el backend, recomendamos utilizar [nuestras librerías](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/previous-requirements#bookmark_utiliza_nuestras_librerías_siempre) para poder recolectar los datos sensibles de tus usuarios de manera segura.
+Tanto para el frontend como para el backend, recomendamos utilizar [nuestras librerías](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements#bookmark_utiliza_nuestras_librerías_siempre) para poder recolectar los datos sensibles de tus usuarios de manera segura.
 
 ## Consulta los medios de pago disponibles
 
@@ -3375,7 +3375,7 @@ curl -X GET \
 
 El resultado será un listado con los medios de pago y sus propiedades. Por ejemplo, los medios de pago del `payment_type_id` que tienen como valor `ticket` refieren a medio de pago en efectivo y los de `bank_transfer` a transferencias bancarias.
 
-Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tienes que filtrar los medios que quieras ofrecer según la [lista de medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_medios_de_pago).
+Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tienes que filtrar los medios que quieras ofrecer según la [lista de medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_medios_de_pago).
 
 ```json
 [
@@ -3437,13 +3437,13 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-> Esta documentación utiliza la nueva versión de MercadoPago.js. Para ver la versión anterior, ve a la [sección de Checkout Transparente antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways).
+> Esta documentación utiliza la nueva versión de MercadoPago.js. Para ver la versión anterior, ve a la [sección de Checkout Transparente antigua](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v1/other-payment-ways).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Agrega el formulario de pago
 
 Para realizar la captura de datos sensibles de tus clientes, es muy importante que utilices nuestro formulario con los atributos correspondientes para garantizar la seguridad de la información.
 
-Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
+Utiliza la lista que consultaste en [Obtén los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtén_los_medios_de_pago_disponibles) para crear las opciones de pagos que quieres ofrecer.
 
 Agrega el siguiente formulario con los estilos que desees.
 
@@ -4270,7 +4270,7 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 >
 > Revisa que esté todo bien en tu integración con los usuarios de prueba.
 >
-> [Pruebas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/testing)
+> [Pruebas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/testing)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
@@ -4278,4 +4278,4 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 >
 > Optimiza tu integración y mejora la gestión de tus ventas.
 >
-> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/advanced-integration)
+> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/advanced-integration)

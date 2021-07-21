@@ -502,7 +502,7 @@ The customer needs to enter the security code in a flow similar to [card data ca
    })()
 ```
 
-> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/advanced-integration).
+> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/advanced-integration).
 
 <br>
 
@@ -1149,7 +1149,7 @@ For more information, check the [Refunds and Cancellations section](https://www.
 >
 > Set up your payment and adapt the integration of Mercado Pago to your business.
 >
-> [Other features](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/other-features)
+> [Other features](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-features)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >

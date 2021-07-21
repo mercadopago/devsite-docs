@@ -12,7 +12,7 @@ To receive other payment methods, you should take into account two aspects:
 1. First, you need a frontend to collect customer's e-mail and document, amount and payment method.
 1. Then, you need a backend that takes the payment data and can confirm and make the payment.
 
-Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
+Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
 
 ## Check the available payment methods
 
@@ -96,7 +96,7 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method.
 
-Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_payment_methods).
+Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_payment_methods).
 
 ```json
 [
@@ -147,13 +147,13 @@ Keep in mind that the answer will return all the payments methods. For this reas
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways).
+> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/other-payment-ways).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 Add the following form with the styles you want.
 
@@ -522,7 +522,7 @@ To receive other payment methods, you should take into account two aspects:
 1. First, you need a frontend to collect customer's e-mail and document, amount and payment method.
 1. Then, you need a backend that takes the payment data and can confirm and make the payment.
 
-Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
+Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
 
 ## Check the available payment methods
 
@@ -605,7 +605,7 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method.
 
-Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_payment_methods).
+Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_payment_methods).
 
 ```json
 [
@@ -740,13 +740,13 @@ Keep in mind that the answer will return all the payments methods. For this reas
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways).
+> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/other-payment-ways).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 Add the following form with the styles you want.
 
@@ -1019,7 +1019,7 @@ To receive other payment methods, you should take into account two aspects:
 1. First, you need a frontend to collect customer's e-mail and document, amount and payment method.
 1. Then, you need a backend that takes the payment data and can confirm and make the payment.
 
-Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
+Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
 
 ## Check the available payment methods
 
@@ -1099,7 +1099,7 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method.
 
-Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_payment_methods).
+Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_payment_methods).
 
 ```json
 
@@ -1166,13 +1166,13 @@ Keep in mind that the answer will return all the payments methods. For this reas
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways).
+> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/other-payment-ways).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 Add the following form with the styles you want.
 
@@ -1476,7 +1476,7 @@ To receive other payment methods, you should take into account two aspects:
 1. First, you need a frontend to collect customer's e-mail and document, amount and payment method.
 1. Then, you need a backend that takes the payment data and can confirm and make the payment.
 
-Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
+Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
 
 ## Check the available payment methods
 
@@ -1558,7 +1558,7 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method.
 
-Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_payment_methods).
+Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_payment_methods).
 
 ```json
 [
@@ -1642,13 +1642,13 @@ Keep in mind that the answer will return all the payments methods. For this reas
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways).
+> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/other-payment-ways).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 Add the following form with the styles you want.
 
@@ -2199,7 +2199,7 @@ To receive other payment methods, you should take into account two aspects:
 1. First, you need a frontend to collect customer's e-mail and document, amount and payment method.
 1. Then, you need a backend that takes the payment data and can confirm and make the payment.
 
-Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
+Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
 
 ## Check the available payment methods
 
@@ -2280,7 +2280,7 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method.
 
-Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_payment_methods).
+Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_payment_methods).
 
 ```json
 [
@@ -2349,13 +2349,13 @@ Keep in mind that the answer will return all the payments methods. For this reas
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways).
+> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/other-payment-ways).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 Add the following form with the styles you want.
 
@@ -2850,7 +2850,7 @@ To receive other payment methods, you should take into account two aspects:
 1. First, you need a frontend to collect customer's e-mail and document, amount and payment method.
 1. Then, you need a backend that takes the payment data and can confirm and make the payment.
 
-Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
+Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
 
 ## Check the available payment methods
 
@@ -2930,7 +2930,7 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method.
 
-Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_payment_methods).
+Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_payment_methods).
 
 ```json
 [
@@ -2974,13 +2974,13 @@ Keep in mind that the answer will return all the payments methods. For this reas
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways).
+> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/other-payment-ways).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 Add the following form with the styles you want.
 
@@ -3293,7 +3293,7 @@ To receive other payment methods, you should take into account two aspects:
 
 1. Then, you need a backend that takes the payment data and can confirm and make the payment.
 
-Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
+Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
 
 ## Check the available payment methods
 
@@ -3374,7 +3374,7 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method and `bank_transfer` refer to bank transfers.
 
-Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_payment_methods).
+Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_payment_methods).
 
 ```json
 [
@@ -3435,13 +3435,13 @@ Keep in mind that the answer will return all the payments methods. For this reas
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways).
+> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/other-payment-ways).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 Add the following form with the styles you want.
 
@@ -4265,7 +4265,7 @@ Check [credit times by payment method](https://www.mercadopago.com.br/ajuda/meio
 >
 > Check that everything works in your integration with test users.
 >
-> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/testing)
+> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/testing)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
@@ -4273,4 +4273,4 @@ Check [credit times by payment method](https://www.mercadopago.com.br/ajuda/meio
 >
 > Enhance your integration and improve your sales management.
 >
-> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/advanced-integration)
+> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/advanced-integration)
