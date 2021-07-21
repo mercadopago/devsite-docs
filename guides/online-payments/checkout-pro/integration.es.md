@@ -371,7 +371,7 @@ Ahora desde tu frontend, sigue estos pasos para poder sumar el checkout a tu sit
           id: 'YOUR_PREFERENCE_ID'
       },
       render: {
-            container: '.cho-container', // Indica dónde se mostrará el botón de pago
+            container: '.cho-container', // Indica el nombre de la clase donde se mostrará el botón de pago
             label: 'Pagar', // Cambia el texto del botón de pago (opcional)
       }
 });
