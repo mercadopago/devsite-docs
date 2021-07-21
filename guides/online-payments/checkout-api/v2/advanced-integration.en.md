@@ -6,7 +6,7 @@ Use our APIs to save your customer's card references and offer them a better exp
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create customers and cards
 
-To create customers and cards, submit the e-mail field, type of payment method, issuing bank ID and generated token.
+To create customers and link them with their cards, submit the e-mail field, type of payment method, ID of the issuing bank and the generated token.
 You will add every customer using the `customer` value, and cards as `card`.
 
 [[[
