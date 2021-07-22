@@ -120,7 +120,7 @@ Inicia tu integración configurada con las credenciales de tu usuario de prueba 
 
 | Tarjeta | Número | Código de seguridad | Fecha de vencimiento |
 | :--- | :---: | :---: | :---: |
-| Mastercard |  5808 8877 7464 1586| 123 | 11/25 |
+| Mastercard | 5808 8877 7464 1586 | 123 | 11/25 |
 | Visa | 4104 2962 6235 5432 | 123 | 11/25 |
 
 ------------
