@@ -11,7 +11,7 @@ With it, you can offer your customers to pay directly from Mercado Pago site.
 
 These are the *steps to start receiving payments with Mercado Pago**:
 
-1. [Log in](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/previous-requirements&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/wix) to a Mercado Pago or Mercado Libre account or create a new account if you don't have one yet.
+1. [Log in](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/wix) to a Mercado Pago account or [create a new account](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) if you don't have one yet.
 2. Add Mercado Pago as a payment method in your store.
 
 ## Add Mercado Pago as a payment method
@@ -54,28 +54,24 @@ To **connect Mercado Pago to your store**, follow the steps below:
 <p>&nbsp;</p>
 
 ![Setting active in Wix](/images/wix/wix_en_connect_configuration_mla_mlc_mlu_mpe.gif)
-<p>&nbsp;</p>
 ------------
 
 ----[mlb]----
 <p>&nbsp;</p>
 
 ![Setting connect in Wix](/images/wix/wix_es_connect_configuration_mlb.gif)
-<p>&nbsp;</p>
 ------------
 
 ----[mco]----
 <p>&nbsp;</p>
 
 ![Setting active in Wix](/images/wix/wix_en_connect_configuration_mco.gif)
-<p>&nbsp;</p>
 ------------
 
 ----[mlm]----
 <p>&nbsp;</p>
 
 ![Setting active in Wix](/images/wix/wix_en_connect_configuration_mlm.gif)
-<p>&nbsp;</p>
 ------------
 
 
@@ -84,9 +80,10 @@ To **connect Mercado Pago to your store**, follow the steps below:
 ----[mla, mlb, mlu, mlc, mlm, mpe]----
 ## Set up interest-free instalments in your Mercado Pago account
  
-1. Log in [your Mercado Libre account]((https://www.mercadopago[FAKER][URL][DOMAIN]), and go to "Your business".
-2. Go to "Costs" section, browse up to "interest free instalments" and click on the activation switch.
-3. Select the maximum number of interest free instalments you want to offer.
+1. Log in [your Mercado Libre account](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp), and go to "Your business".
+1. Go to "Costs" section.
+1. Browse up to "interest free instalments" and click on the activation switch.
+1. Select the maximum number of interest free instalments you want to offer.
 ------------
 
 
