@@ -39,12 +39,13 @@ Actualizamos la experiencia de integración de Mercado Pago como medio de pago e
 
 > CHANGELOG
 >
-> Nueva versión SDK PHP
+> Nuevas versiones SDK PHP
 >
 > NEW_VERSION: NUEVA VERSIÓN
 >
 > PRODUCT: SDK PHP
-Lanzamos una nueva versión de la SDK PHP 1.12.0 y 2.4.0.
+
+Lanzamos nuevas versiones de las SDK PHP 1.12.0 y 2.4.0.
 
 > GIT
 >

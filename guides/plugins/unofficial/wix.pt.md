@@ -10,7 +10,7 @@ Com ela você poderá, oferecer aos seus clientes a possibilidade de pagar diret
 
 Os passos para **começar a receber pagamentos com Mercado Pago**, são os seguintes:
 
-1. [Entre](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/previous-requirements&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/wix) uma conta do Mercado Pago ou [crie uma nova](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) se ainda não tenha uma.
+1. [Acesse](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/wix) sua conta Mercado Pago ou [crie uma](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) caso ainda não tenha.
 2. Adicione o Mercado Pago como meio de pagamento dentro da sua loja.
 
 
@@ -18,7 +18,7 @@ Os passos para **começar a receber pagamentos com Mercado Pago**, são os segui
 
 A Wix te permite receber através do Checkout Pro, no qual o comprador será redirecionado ao Mercado Pago para realizar o pagamento, e voltará para sua loja assim que finalizar esse processo.
 
-----[mla, mlc, mlu, mpe]----
+----[mla, mlc, mlu, mpe, mco]----
 Para **adicionar Mercado Pago à sua loja**, siga estas etapas:
  
 1. Acesse "Configurações" do seu painel de controle de seu site.
@@ -55,28 +55,24 @@ Para **conectar o Mercado Pago em sua loja**, siga os passos abaixo:
 <p>&nbsp;</p>
 
 ![Setting active in Wix](/images/wix/wix_pt_connect_configuration_mla_mlc_mlu_mpe.gif)
-<p>&nbsp;</p>
 ------------
 
 ----[mlb]----
 <p>&nbsp;</p>
 
 ![Setting connect in Wix](/images/wix/wix_pt_connect_configuration_mlb.gif)
-<p>&nbsp;</p>
 ------------
 
 ----[mco]----
 <p>&nbsp;</p>
 
 ![Setting active in Wix](/images/wix/wix_pt_connect_configuration_mco.gif)
-<p>&nbsp;</p>
 ------------
 
 ----[mlm]----
 <p>&nbsp;</p>
 
 ![Setting active in Wix](/images/wix/wix_pt_connect_configuration_mlm.gif)
-<p>&nbsp;</p>
 ------------
 
 
@@ -84,11 +80,12 @@ Para **conectar o Mercado Pago em sua loja**, siga os passos abaixo:
 
 
 ----[mla, mlb, mlu, mlc, mlm, mpe]----
-## Configurando o parcelamento na sua conta do Mercado Pago
+## Configure os parcelamentos sem acréscimo na sua conta do Mercado Pago
  
-1. Acesse sua [conta do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]) e clique em "Seu negócio".
-2. Acesse a seção "Custos", navegue até "Parcelas sem acréscimo" e clique no botão para ativá-las.
-3. Selecione o valor máximo de parcelas sem acréscimo que você deseja oferecer.
+1. Acesse sua [conta do Mercado Pago](https://www.mercadolivre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp) e clique em "Seu negócio".
+1. Acesse a seção "Custos".
+1. Navegue até "Parcelas sem acréscimo" e clique no botão para ativá-las.
+1. Selecione o valor máximo de parcelas sem acréscimo que você deseja oferecer.
 ------------
 
 

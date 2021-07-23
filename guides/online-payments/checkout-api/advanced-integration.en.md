@@ -1112,7 +1112,7 @@ Example of response without including the `customers_id` parameter:
 >
 > Note
 >
-> If you don't have the `customer_id`, [check the Customers API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/customers/_customers_search/get) and generate an` HTTP GET` request using the `email` parameter to get it.
+> If you don't have the `customer_id`, [check the Customers API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/customers/_customers_search/get) and generate an `HTTP GET` request using the `email` parameter to get it.
 
 ## Cancellations and refunds
 
