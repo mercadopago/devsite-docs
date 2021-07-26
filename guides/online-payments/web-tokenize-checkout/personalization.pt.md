@@ -34,8 +34,6 @@ Ao usar o método `render` um **botão de pagamento é mostrado para abrir o Web
 | `type` (opcional) | string | Permite definir o tipo de botão. Atualmente, só aceita o valor ’wallet’ que mostra um botão de pagamento com a marca do Mercado Pago. **Valor por padrão**: botão de pagamento simples. |
 | `label` (opcional) | string | Valor do texto do botão. **Por padrão**: “Pagar” |
 
-Puedes utilizar este método de dos formas distintas:
-
 Você pode usar este método de duas maneiras diferentes:
 
 * Incluindo a opção `render` com seus respectivos parâmetros dentro das opções de inicialização do checkout.
