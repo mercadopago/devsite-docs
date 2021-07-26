@@ -118,7 +118,6 @@ The payment methods available for each country are shown below.
 | Cabal Debit | `debit_card` | `debcabal` |
 | Pago Fácil | `ticket` | `pagofacil` |
 | RapiPago | `ticket` | `rapipago` |
-| Provincia Pagos | `ticket` | `bapropagos` |
 | Carga Virtual | `ticket` | `cargavirtual` |
 | Cobro Express | `ticket` | `cobroexpress` |
 | Red Link | `atm` | `redlink` |
