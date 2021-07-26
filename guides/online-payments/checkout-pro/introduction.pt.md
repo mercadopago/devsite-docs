@@ -40,7 +40,7 @@ O Checkout Pro é a integração que **te permite cobrar através do nosso formu
 ----[mla, mlb]----
 |                                       | Checkout Pro | Web Tokenize Checkout | API |
 | :--- | :---: | :---: | :---: |
-| Dificuldade de integração             | Baixa | Media | Alta |
+| Dificuldade de integração             | Baixa | Média | Alta |
 | Design UI/UX                          | ✔ | ✔ |   |
 | Otimizado para a melhor conversão     | ✔ | ✔ |   |
 | Otimizado para melhorar a aprovação   | ✔ |   |   |

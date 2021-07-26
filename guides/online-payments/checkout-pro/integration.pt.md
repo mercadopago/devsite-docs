@@ -16,7 +16,7 @@ Use os [exemplos para download](#bookmark_exemplos_para_download) para conhecer 
 
 2. Adicione o Checkout Pro ao seu site
 
-	2.1 Inclui o SDK MercadoPago.js V2 em seu frontend.
+	2.1 Inclua o SDK MercadoPago.js V2 em seu frontend.
 
 	2.2 Configure as credenciais para habilitar o uso do SDK e inicialize o checkout com a preferência criada.
 

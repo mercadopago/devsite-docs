@@ -4,10 +4,10 @@
 Você pode adaptar a integração ao seu negócio adicionando atributos na preferência. Há muitos [dados em uma preferência](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/preferences/_checkout_preferences/post) que podem ser configurados, mas lembre-se sempre do quê seus negócios precisam.
 
 ----[mla, mlb]----
-Se você oferece compras de valores altos, por exemplo, você pode aceitar [pagamentos com dois cartões de crédito](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_pagamentos_com_2_cartão_de_crédito) ou tambén, [excluir meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_atributos_para_a_preferência) que você não quiser aceitar
+Se você oferece compras de valores altos, por exemplo, você pode aceitar [pagamentos com dois cartões de crédito](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_pagamentos_com_2_cartão_de_crédito) ou também, [excluir meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_atributos_para_a_preferência) que você não quiser aceitar.
 ------------
 ----[mlm, mlc, mlu, mco, mpe]----
-Se você oferece compras de valores altos, por exemplo, você pode [excluir meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_atributos_para_a_preferência) que você não quiser aceitar
+Se você oferece compras de valores altos, por exemplo, você pode [excluir meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_atributos_para_a_preferência) que você não quiser aceitar.
 ------------
 
 Através da preferência, você pode [obter informações de negócio](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_saiba_mais_sobre_seu_negócio). Além disso, você pode mensurar a efetividade das suas publicidades, bem como acompanhá-las integrando um [pixel do Facebook](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_associar_um_pixel_do_facebook) ou [associando seus anúncios do Google](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_associar_uma_tag_do_google_ads).
@@ -940,7 +940,7 @@ Nossos [Partners](https://partners.mercadopago.com/) poderão obter métricas de
 [[[
 ```php
 ===
-Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
+Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID e PLATFORM_ID.
 ===
 MercadoPago\SDK::setPlatformId("PLATFORM_ID");
 MercadoPago\SDK::setIntegratorId("INTEGRATOR_ID");
@@ -948,7 +948,7 @@ MercadoPago\SDK::setCorporationId("CORPORATION_ID");
 ```
 ```node
 ===
-Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
+Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID e PLATFORM_ID.
 ===
 mercadopago.configure({
     platform_id: 'PLATFORM_ID',
@@ -958,7 +958,7 @@ mercadopago.configure({
 ```
 ```java
 ===
-Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
+Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID e PLATFORM_ID.
 ===
 MercadoPago.SDK.setPlatformId("PLATFORM_ID");
 MercadoPago.SDK.setIntegratorId("INTEGRATOR_ID");
@@ -966,7 +966,7 @@ MercadoPago.SDK.setCorporationId("CORPORATION_ID");
 ```
 ```ruby
 ===
-Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
+Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID e PLATFORM_ID.
 ===
 request_options = Mercadopago::RequestOptions.new()
 request_options.platform_id = 'PLATFORM_ID'
@@ -977,7 +977,7 @@ sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN', request_options: request_options)
 ```
 ```csharp
 ===
-Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
+Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID e PLATFORM_ID.
 ===
 MercadoPagoConfig.PlatformId    = "PLATFORM_ID";
 MercadoPagoConfig.IntegratorId  = "INTEGRATOR_ID";
@@ -999,7 +999,7 @@ sdk = mercadopago.SDK("ENV_ACCESS_TOKEN", request_options=request_options)
 ```
 ```curl
 ===
-Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
+Adicione os códigos de identificação e substitua os valores que quiser: CORPORATION\_ID, INTEGRATOR\_ID e PLATFORM_ID.
 ===
 curl -X POST \
 'https://api.mercadopago.com/checkout/preferences' \
