@@ -65,7 +65,7 @@ To install the SDK in your [Maven](http://maven.apache.org/install.html) project
 <dependency>
             <groupId> com.mercadopago </groupId>
             <artifactId> sdk-java </artifactId>
-            <version> 1.8.0 </version>
+            <version> 1.9.0 </version>
 </dependency>
 ```
 ```ruby
