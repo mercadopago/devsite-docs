@@ -551,6 +551,6 @@ Por último, é importante que esteja sempre informado sobre a criação nos nov
 >
 > Integrar outros meios de pagamento
 >
-> Conheça todas as opções de pagamentos disponíveis e como oferê-las.
+> Conheça todas as opções de pagamentos disponíveis e como oferecê-las.
 >
 > [Integrar outros meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways)
