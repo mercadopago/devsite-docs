@@ -562,8 +562,8 @@ import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Payer payer = new Payer();
-payer.type = "customer";
-payer.id = "123456789-jxOV430go9fx2e";
+payer.setType(Payer.type.customer);
+payer.setId("123456789-jxOV430go9fx2e");
 
 Payment payment = new Payment();
 payment.setTransactionAmount(100f);
