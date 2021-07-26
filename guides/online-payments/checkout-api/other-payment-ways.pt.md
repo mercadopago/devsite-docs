@@ -13,7 +13,7 @@ Com o Checkout API do Mercado Pago você pode oferecer **outras alternativas de 
 
 Para receber outros meios de pagamento, é importante ter em conta duas instâncias:
 
-1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e o método de pagamento e detalhe do valor.
 1. Segundo, um backend que tome os dados do pagamento e pode confirmar e fazer o pagamento.
 
 Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
@@ -231,7 +231,7 @@ Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
 window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
 ```
 
-> Se ainda não possui conta para ver suas credenciais, [regístre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+> Se ainda não possui conta para ver suas credenciais, [registre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtenha os dados para seu formulário
 
@@ -256,7 +256,7 @@ window.Mercadopago.getIdentificationTypes();
 >
 > Envie o pagamento ao Mercado Pago
 
-Para receber pagamentos em dinheiro envie o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+Para receber pagamentos em dinheiro envie o e-mail e documento do seu cliente e o método de pagamento e detalhe do valor.
 
 Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs.
 
@@ -414,7 +414,7 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 >
 > Nota
 >
-> O cliente tem entre 3 e 5 días para pagar, dependendo do meio de pagamento. Após esse tempo, deve cancelá-lo.
+> O cliente tem entre 3 e 5 dias para pagar, dependendo do meio de pagamento. Após esse tempo, deve cancelá-lo.
 
 ## Data de expiração de meios de pagamento em dinheiro
 
@@ -484,15 +484,15 @@ Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago
 
 ## Cancelar um pagamento
 
-É importante que possa cancelar pagamentos assim que vençam para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 días úteis de acordo com o tempo de cada um.
+É importante que possa cancelar pagamentos assim que vençam para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 dias úteis de acordo com o tempo de cada um.
 
-Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
+Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 dias, o cancelamento é automático e o estado final será cancelado ou expirado.
 
 Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
 ## Tempos de creditação do pagamento
 
-Cada meio de pagamento possui sua própria data de creditação, em alguns casos é imediata e em outros pode demorar até 3 días úteis.
+Cada meio de pagamento possui sua própria data de creditação, em alguns casos é imediata e em outros pode demorar até 3 dias úteis.
 
 Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) sempre que necessite.
 
@@ -504,7 +504,7 @@ Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago
 
 Para receber outros meios de pagamento, é importante ter em conta duas instâncias:
 
-1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e o método de pagamento e detalhe do valor.
 1. Segundo, um backend que tome os dados do pagamento e pode confirmar e fazer o pagamento.
 
 Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
@@ -792,7 +792,7 @@ Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
 window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
 ```
 
-> Se ainda não possui conta para ver suas credenciais, [regístre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+> Se ainda não possui conta para ver suas credenciais, [registre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
 <br>
 <span></span>
@@ -803,7 +803,7 @@ window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
 >
 > Envie o pagamento ao Mercado Pago
 
-Para receber pagamentos em dinheiro envie o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+Para receber pagamentos em dinheiro envie o e-mail e documento do seu cliente e o método de pagamento e detalhe do valor.
 
 Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs.
 
@@ -964,19 +964,19 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 >
 > Nota
 >
-> O cliente tem entre 3 e 5 días para pagar, dependendo do meio de pagamento. Após esse tempo, deve cancelá-lo.
+> O cliente tem entre 3 e 5 dias para pagar, dependendo do meio de pagamento. Após esse tempo, deve cancelá-lo.
 
 ## Cancelar um pagamento
 
-É importante que possa cancelar pagamentos assim que vençam para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 días úteis de acordo com o tempo de cada um.
+É importante que possa cancelar pagamentos assim que vençam para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 dias úteis de acordo com o tempo de cada um.
 
-Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
+Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 dias, o cancelamento é automático e o estado final será cancelado ou expirado.
 
 Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
 ## Tempos de creditação do pagamento
 
-Cada meio de pagamento possui sua própria data de creditação, em alguns casos é imediata e em outros pode demorar até 3 días úteis.
+Cada meio de pagamento possui sua própria data de creditação, em alguns casos é imediata e em outros pode demorar até 3 dias úteis.
 
 Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) sempre que necessite.
 
@@ -1004,7 +1004,7 @@ Ao finalizar, é importante que compartilhe com seus clientes a informação dos
 
 Para receber outros meios de pagamento, é importante ter em conta duas instâncias:
 
-1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e o método de pagamento e detalhe do valor.
 1. Segundo, um backend que tome os dados do pagamento e pode confirmar e fazer o pagamento.
 
 Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
@@ -1222,7 +1222,7 @@ Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
 window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
 ```
 
-> Se ainda não possui conta para ver suas credenciais, [regístre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+> Se ainda não possui conta para ver suas credenciais, [registre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtenha os dados para seu formulário
 
@@ -1246,7 +1246,7 @@ window.Mercadopago.getIdentificationTypes();
 >
 > Envie o pagamento ao Mercado Pago
 
-Para receber pagamentos em dinheiro envie o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+Para receber pagamentos em dinheiro envie o e-mail e documento do seu cliente e o método de pagamento e detalhe do valor.
 
 Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs.
 
@@ -1405,19 +1405,19 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 >
 > Nota
 >
-> O cliente tem entre 3 e 5 días para pagar, dependendo do meio de pagamento. Após esse tempo, deve cancelá-lo.
+> O cliente tem entre 3 e 5 dias para pagar, dependendo do meio de pagamento. Após esse tempo, deve cancelá-lo.
 
 ## Cancelar um pagamento
 
-É importante que possa cancelar pagamentos assim que vençam para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 días úteis de acordo com o tempo de cada um.
+É importante que possa cancelar pagamentos assim que vençam para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 dias úteis de acordo com o tempo de cada um.
 
-Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
+Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 dias, o cancelamento é automático e o estado final será cancelado ou expirado.
 
 Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
 ## Tempos de creditação do pagamento
 
-Cada meio de pagamento possui sua própria data de creditação, em alguns casos é imediata e em outros pode demorar até 3 días úteis.
+Cada meio de pagamento possui sua própria data de creditação, em alguns casos é imediata e em outros pode demorar até 3 dias úteis.
 
 Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) sempre que necessite.
 
@@ -1429,7 +1429,7 @@ Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago
 
 Para receber outros meios de pagamento, é importante ter em conta duas instâncias:
 
-1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e o método de pagamento e detalhe do valor.
 1. Segundo, um backend que tome os dados do pagamento e pode confirmar e fazer o pagamento.
 
 Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
@@ -1666,7 +1666,7 @@ Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
 window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
 ```
 
-> Se ainda não possui conta para ver suas credenciais, [regístre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+> Se ainda não possui conta para ver suas credenciais, [registre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtenha os dados para seu formulário
 
@@ -1691,7 +1691,7 @@ window.Mercadopago.getIdentificationTypes();
 >
 > Envie o pagamento ao Mercado Pago
 
-Para receber pagamentos em dinheiro envie o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+Para receber pagamentos em dinheiro envie o e-mail e documento do seu cliente e o método de pagamento e detalhe do valor.
 
 Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs.
 
@@ -1851,7 +1851,7 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 >
 > Nota
 >
-> O cliente tem entre 3 e 5 días para pagar, dependendo do meio de pagamento. Após esse tempo, deve cancelá-lo.
+> O cliente tem entre 3 e 5 dias para pagar, dependendo do meio de pagamento. Após esse tempo, deve cancelá-lo.
 
 ## Data de expiração de meios de pagamento em dinheiro
 
@@ -2101,15 +2101,15 @@ Ao concluir o pagamento, o cliente será redirecionado para o `callback_url` que
 
 ## Cancelar um pagamento
 
-É importante que possa cancelar pagamentos assim que vençam para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 días úteis de acordo com o tempo de cada um.
+É importante que possa cancelar pagamentos assim que vençam para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 dias úteis de acordo com o tempo de cada um.
 
-Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
+Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 dias, o cancelamento é automático e o estado final será cancelado ou expirado.
 
 Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
 ## Tempos de creditação do pagamento
 
-Cada meio de pagamento possui sua própria data de creditação, em alguns casos é imediata e em outros pode demorar até 3 días úteis.
+Cada meio de pagamento possui sua própria data de creditação, em alguns casos é imediata e em outros pode demorar até 3 dias úteis.
 
 Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) sempre que necessite.
 
@@ -2121,7 +2121,7 @@ Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago
 
 Para receber outros meios de pagamento, é importante ter em conta duas instâncias:
 
-1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e o método de pagamento e detalhe do valor.
 1. Segundo, um backend que tome os dados do pagamento e pode confirmar e fazer o pagamento.
 
 Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
@@ -2344,7 +2344,7 @@ Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
 window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
 ```
 
-> Se ainda não possui conta para ver suas credenciais, [regístre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+> Se ainda não possui conta para ver suas credenciais, [registre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtenha os dados para seu formulário
 
@@ -2369,7 +2369,7 @@ window.Mercadopago.getIdentificationTypes();
 >
 > Envie o pagamento ao Mercado Pago
 
-Para receber pagamentos em dinheiro envie o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+Para receber pagamentos em dinheiro envie o e-mail e documento do seu cliente e o método de pagamento e detalhe do valor.
 
 Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs.
 
@@ -2528,7 +2528,7 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 >
 > Nota
 >
-> O cliente tem entre 3 e 5 días para pagar, dependendo do meio de pagamento. Após esse tempo, deve cancelá-lo.
+> O cliente tem entre 3 e 5 dias para pagar, dependendo do meio de pagamento. Após esse tempo, deve cancelá-lo.
 
 ## Receba com Webpay
 
@@ -2717,9 +2717,9 @@ Ao concluir o pagamento, o cliente será redirecionado para o `callback_url` que
 
 ## Cancelar um pagamento
 
-É importante que possa cancelar pagamentos assim que vençam para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 días úteis de acordo com o tempo de cada um.
+É importante que possa cancelar pagamentos assim que vençam para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 dias úteis de acordo com o tempo de cada um.
 
-Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
+Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 dias, o cancelamento é automático e o estado final será cancelado ou expirado.
 
 > WARNING
 >
@@ -2731,7 +2731,7 @@ Encontre toda informação na [seção Devoluções e cancelamentos](https://www
 
 ## Tempos de creditação do pagamento
 
-Cada meio de pagamento possui sua própria data de creditação, em alguns casos é imediata e em outros pode demorar até 3 días úteis.
+Cada meio de pagamento possui sua própria data de creditação, em alguns casos é imediata e em outros pode demorar até 3 dias úteis.
 
 Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago.cl/ayuda/Medios-de-pago-y-acreditaci-n_221) sempre que necessite.
 
@@ -2744,7 +2744,7 @@ Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago
 
 Para receber outros meios de pagamento, é importante ter em conta duas instâncias:
 
-1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+1. Primeiro, é preciso um frontend para coletar o e-mail e documento do seu cliente e o método de pagamento e detalhe do valor.
 1. Segundo, um backend que tome os dados do pagamento e pode confirmar e fazer o pagamento.
 
 Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/previous-requirements/#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
@@ -2938,7 +2938,7 @@ Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
 window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
 ```
 
-> Se ainda não possui conta para ver suas credenciais, [regístre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+> Se ainda não possui conta para ver suas credenciais, [registre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtenha os dados para seu formulário
 
@@ -2963,7 +2963,7 @@ window.Mercadopago.getIdentificationTypes();
 >
 > Envie o pagamento ao Mercado Pago
 
-Para receber pagamentos em dinheiro envie o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+Para receber pagamentos em dinheiro envie o e-mail e documento do seu cliente e o método de pagamento e detalhe do valor.
 
 Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs.
 
@@ -3130,19 +3130,19 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 >
 > Nota
 >
-> O cliente tem entre 3 e 5 días para pagar, dependendo do meio de pagamento. Após esse tempo, deve cancelá-lo.
+> O cliente tem entre 3 e 5 dias para pagar, dependendo do meio de pagamento. Após esse tempo, deve cancelá-lo.
 
 ## Cancelar um pagamento
 
-É importante que possa cancelar pagamentos assim que vençam para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 días úteis de acordo com o tempo de cada um.
+É importante que possa cancelar pagamentos assim que vençam para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 dias úteis de acordo com o tempo de cada um.
 
-Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
+Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 dias, o cancelamento é automático e o estado final será cancelado ou expirado.
 
 Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
 ## Tempos de creditação do pagamento
 
-Cada meio de pagamento possui sua própria data de creditação, em alguns casos é imediata e em outros pode demorar até 3 días úteis.
+Cada meio de pagamento possui sua própria data de creditação, em alguns casos é imediata e em outros pode demorar até 3 dias úteis.
 
 Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-para-tus-compradores_2433) sempre que necessite.
 
@@ -3370,7 +3370,7 @@ Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
 window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
 ```
 
-> Se ainda não possui conta para ver suas credenciais, [regístre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+> Se ainda não possui conta para ver suas credenciais, [registre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtenha os dados para seu formulário
 
@@ -3713,7 +3713,7 @@ Para mostrar a opção que permitirá copiar e colar o código de pagamento, voc
 >
 > Receber pagamentos com boleto bancário ou em lotéricas
 
-Após [capturar os dados](#bookmark_capture_os_dados_para_pagamento) com o formulário, con el formulario, para receber pagamentos em boleto ou pagamento em lotérica envie o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+Após [capturar os dados](#bookmark_capture_os_dados_para_pagamento) com o formulário, para receber pagamentos em boleto ou pagamento em lotérica envie o e-mail e documento do seu cliente e o método de pagamento e detalhe do valor.
 
 Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs.
 
@@ -3957,7 +3957,7 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 >
 > Nota
 >
-> O cliente tem entre 3 e 5 días para pagar, dependendo do meio de pagamento. Após esse tempo, deve cancelá-lo.
+> O cliente tem entre 3 e 5 dias para pagar, dependendo do meio de pagamento. Após esse tempo, deve cancelá-lo.
 
 
 ## Data de vencimento para pagamentos
@@ -4079,16 +4079,16 @@ O prazo de aprovação do boleto é de até 48h úteis. Por isso recomenda-se co
 
 ## Cancelar um pagamento
 
-É importante que possa cancelar pagamentos assim que vençam para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 días úteis de acordo com o tempo de cada um.
+É importante que possa cancelar pagamentos assim que vençam para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 dias úteis de acordo com o tempo de cada um.
 
-Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 días, o cancelamento é automático e o estado final será cancelado ou expirado.
+Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 dias, o cancelamento é automático e o estado final será cancelado ou expirado.
 
 Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
 
 ## Prazo de aprovação de pagamento
 
-Cada meio de pagamento possui sua própria data de aprovação, em alguns casos a aprovação é imediata e em outros pode demorar até 3 días úteis.
+Cada meio de pagamento possui sua própria data de aprovação, em alguns casos a aprovação é imediata e em outros pode demorar até 3 dias úteis.
 
 Revise os [tempos de aprovação por meio de pagamento](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265) sempre que necessite.
 

@@ -76,7 +76,7 @@ Para realizar a captura dos dados sensíveis dos cartões dos seus clientes, **�
 
 Você pode adicionar tudo o que necessite, modificar o atributo `label` sugerido e adicionar o estilo que queira sem problemas.
 
-No seguinte exemplo se assume que os dados `transactionAmount` e `description` formam obtidos em um passo anterior onde o cliente selecionou o produto ou serviço que deseja pagar.
+No seguinte exemplo se assume que os dados `transactionAmount` e `description` foram obtidos em um passo anterior onde o cliente selecionou o produto ou serviço que deseja pagar.
 
 ```html
 <form action="/process_payment" method="post" id="paymentForm">
@@ -165,7 +165,7 @@ Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
 window.Mercadopago.setPublishableKey("YOUR_PUBLIC_KEY");
 ```
 
-> Se ainda não possui conta para ver suas credenciais, [regístre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+> Se ainda não possui conta para ver suas credenciais, [registre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtenha os dados para seu formulário
@@ -215,9 +215,9 @@ function setPaymentMethod(status, response) {
 }
 ```
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha a banco emissor
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha o banco emissor
 
-No momento do preenchimento o formulário, é importante identificar o banco emissor do cartão para evitar conflitos entre os diferentes emissores e poder oferecer as opções corretas de parcelamento.
+No momento do preenchimento do formulário, é importante identificar o banco emissor do cartão para evitar conflitos entre os diferentes emissores e poder oferecer as opções corretas de parcelamento.
 
 Adicione o seguinte código para obter o `issuer_id`:
 
@@ -329,7 +329,7 @@ O método `createToken` devolverá um `card_token` com a representação segura 
 
 Para continuar o processo de pagamento ao Mercado Pago, é necessário que seu backend possa receber a informação do formulário com o token gerado e os dados completos.
 
-Segundo o exemplo dado, seu backend devería diponibilizar um endpoint `/process_payment`, que foi definido no atributo `action` do formulário, para receber nele, todos os dados assim que realizar a ação `submit`.
+Segundo o exemplo dado, seu backend deveria diponibilizar um endpoint `/process_payment`, que foi definido no atributo `action` do formulário, para receber nele, todos os dados assim que realizar a ação `submit`.
 
 Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs. Os campos mínimos requeridos para enviar são: `token`, `transaction_amount`, `installments`, `payment_method_id` e o `payer.email`.
 
@@ -640,6 +640,6 @@ Por último, é importante que esteja sempre informado sobre a criação nos nov
 >
 > Integrar outros meios de pagamento
 >
-> Conheça todas as opções de pagamentos disponíveis e como oferê-las.
+> Conheça todas as opções de pagamentos disponíveis e como oferecê-las.
 >
 > [Integrar outros meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways)
