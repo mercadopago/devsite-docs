@@ -238,7 +238,7 @@ mercadopago.customers.search({
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-Customer customer = Customer.load("247711297-jxOV430go9fx2e")
+Customer customer = Customer.findById("247711297-jxOV430go9fx2e");
 
 Issuer issuer = new Issuer();
 issuer.setId("3245612");
@@ -401,7 +401,7 @@ Primero, obtén el listado de guardadas para que tu cliente pueda elegir con cu�
 ```
 ```java
 
-  Customer customer = Customer.load(customerId)
+  Customer customer = Customer.findById(customerId);
   ArrayList<Cards> cards = customer.getCards();
 
 ```
@@ -693,7 +693,7 @@ Puedes buscar información sobre tu cliente si lo necesitas. Por ejemplo, en el 
   Map<String, String> filters = new HashMap<>();
   filters.put("email", "test@test.com");
 
-  ArrayList<Customer> customers = MercadoPago\Customer::search(filters).resources();
+  ArrayList<Customer> customers = Customer.search(filters, false).resources();
 
 
 ```
@@ -811,7 +811,7 @@ curl -X GET \
 ```
 ```java
 
-  Customer customer = Customer.load(customerId)
+  Customer customer = Customer.findById(customerId);
   ArrayList<Cards> cards = customer.getCards();
 
 ```

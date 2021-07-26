@@ -213,7 +213,7 @@ Puedes obtener el listado completo de `Cards` de un cliente realizando un reques
 ```
 ```java
 
-  Customer customer = Customer.load(customerId)
+  Customer customer = Customer.findById(customerId);
   ArrayList<Cards> cards = customer.getCards();
 
 ```
@@ -312,7 +312,7 @@ Es posible agregar nuevas tarjetas a tu `Customer`. Para esto debes crear un `to
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-Customer customer = Customer.load("247711297-jxOV430go9fx2e")
+Customer customer = Customer.findById("247711297-jxOV430go9fx2e");
 
 Card card = new Card();
 card.setToken("9b2d63e00d66a8c721607214cedaecda");
@@ -462,7 +462,7 @@ En el caso en el que no sepas cuál es el `id` de tu `Customer`, puedes utilizar
   Map<String, String> filters = new HashMap<>();
   filters.put("email", "test@test.com");
 
-  ArrayList<Customer> customers = MercadoPago\Customer::search(filters).resources();
+  ArrayList<Customer> customers = Customer.search(filters, false).resources();
 
 
 ```
@@ -569,7 +569,7 @@ Puedes obtener el listado completo de `Cards` de un cliente realizando un reques
 ```
 ```java
 
-  Customer customer = Customer.load(customerId)
+  Customer customer = Customer.findById(customerId);
   ArrayList<Cards> cards = customer.getCards();
 
 ```
