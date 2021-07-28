@@ -10,7 +10,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 > CHANGELOG
 >
-> Nuevas versiones SDK PHP
+> Nueva versión SDK PHP
 >
 > NEW_VERSION: NUEVA VERSIÓN
 >

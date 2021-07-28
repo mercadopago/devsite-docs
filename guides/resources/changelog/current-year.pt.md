@@ -10,7 +10,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 > CHANGELOG
 >
-> Novas versões SDK PHP
+> Nova versão SDK PHP
 >
 > NEW_VERSION: NOVA VERSÃO
 >
