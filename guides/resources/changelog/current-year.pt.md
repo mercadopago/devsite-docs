@@ -6,6 +6,40 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Julho 2021
 
+### 27 de julho
+
+> CHANGELOG
+>
+> Novas versões SDK PHP
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK PHP
+Lançamos a nova versão 2.4.1 do SDK PHP.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-php/releases).
+
+### 21 de julho
+
+> CHANGELOG
+>
+> Nova versão SDK Java
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK JAVA
+Lançamos a nova versão 1.10.1 do SDK Java.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-java/releases).
+
 ### 15 de julho
 ----[mla, mlc, mco, mpe, mlu, mlm]----
 > CHANGELOG

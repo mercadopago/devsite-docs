@@ -6,6 +6,41 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Julio 2021
 
+### 27 de julio
+
+> CHANGELOG
+>
+> Nuevas versiones SDK PHP
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK PHP
+
+Lanzamos una nueva versión de la SDK PHP 2.4.1.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-php/releases).
+
+### 21 de julio
+
+> CHANGELOG
+>
+> Nueva versión SDK Java
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK JAVA
+Lanzamos una nueva versión de la SDK Java 1.10.1.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-java/releases).
+
 ### 15 de julio
 
 ----[mla, mlc, mco, mpe, mlu, mlm]----
