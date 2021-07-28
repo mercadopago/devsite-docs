@@ -6,6 +6,20 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## July 2021
 
+### July 19th
+
+----[mla]----
+> CHANGELOG
+> 
+> We removed Provincia Net Pagos as a payment method
+>
+> NEWS: NEWS
+
+As of July 29, Provincia Net Pagos will not be available as a payment method for Mercado Pago. Remember that you can offer other payment methods on your site.
+
+[See the available payment methods on your site](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods).
+------------
+
 ### July 15th
 ----[mla, mlc, mco, mpe, mlu, mlm]----
 > CHANGELOG
