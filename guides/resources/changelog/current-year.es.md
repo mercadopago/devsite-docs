@@ -11,11 +11,11 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 ----[mla]----
 > CHANGELOG
 > 
-> Desactivamos Provincia Net Pagos como medio de pago disponible
+> Desactivamos Provincia NET Pagos como medio de pago disponible
 >
 > NEWS: NOVEDADES
 
-A partir del 29 de julio, Provincia Net Pagos no estará disponible como medio de pago para Mercado Pago. Recuerda que puedes ofrecer otros medios de pago en tu sitio.
+A partir del 29 de julio, Provincia NET Pagos no estará disponible como medio de pago para Mercado Pago. Recuerda que puedes ofrecer otros medios de pago en tu sitio.
 
 [Conoce los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods).
 
