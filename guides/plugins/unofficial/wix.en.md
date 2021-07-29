@@ -11,7 +11,7 @@ With it, you can offer your customers to pay directly from Mercado Pago site.
 
 These are the *steps to start receiving payments with Mercado Pago**:
 
-1. [Log in](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/previous-requirements&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/wix) to a Mercado Pago or Mercado Libre account or create a new account if you don't have one yet.
+1. [Log in](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/wix) to a Mercado Pago account or [create a new account](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) if you don't have one yet.
 2. Add Mercado Pago as a payment method in your store.
 
 ## Add Mercado Pago as a payment method
