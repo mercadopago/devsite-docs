@@ -6,6 +6,20 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## July 2021
 
+### July 30th
+
+> CHANGELOG
+>
+> Fraud prevention when using MercadoPago.js V2
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: MERCADO PAGO
+
+MercadoPago.js V2 uses our Device ID as a fraud prevention system to detect and analyze unusual customer behavior, prevent suspicious payout and improve payment approval.
+
+We will never save or share your customer data but if you prefer not to use the device ID, know how to disable it in the [technical reference](https://github.com/mercadopago/sdk-js).
+
 ### July 14th
 
 > CHANGELOG
