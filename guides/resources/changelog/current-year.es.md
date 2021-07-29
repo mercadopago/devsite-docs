@@ -41,6 +41,24 @@ Lanzamos una nueva versión de la SDK Java 1.10.1.
 >
 > Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-java/releases).
 
+
+----[mla]----
+### 19 de julio
+
+> CHANGELOG
+> 
+> Desactivamos Provincia NET Pagos como medio de pago disponible
+>
+> NEWS: NOVEDADES
+>
+> PRODUCT: ALL
+
+A partir del 29 de julio, Provincia NET Pagos no estará disponible como medio de pago para Mercado Pago. Recuerda que puedes ofrecer otros medios de pago en tu sitio.
+
+[Conoce los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods).
+
+------------
+
 ### 15 de julio
 
 ----[mla, mlc, mco, mpe, mlu, mlm]----

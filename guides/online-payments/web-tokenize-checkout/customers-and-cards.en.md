@@ -233,7 +233,7 @@ You can get the complete list of `Cards` from a customer by doing a `HTTP GET` r
 ```
 ```java
 
-  Customer customer = Customer.load(customerId)
+  Customer customer = Customer.findById(customerId);
   ArrayList<Cards> cards = customer.getCards();
 
 ```
@@ -343,7 +343,7 @@ It is possible to add new cards to your `Customer`. For this you must create a `
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-Customer customer = Customer.load("247711297-jxOV430go9fx2e")
+Customer customer = Customer.findById("247711297-jxOV430go9fx2e");
 
 Issuer issuer = new Issuer();
 issuer.setId("3245612");
@@ -510,7 +510,7 @@ In case you do not know what the `id` of your `Customer` is, you can use the `Cu
   Map<String, String> filters = new HashMap<>();
   filters.put("email", "test@test.com");
 
-  ArrayList<Customer> customers = MercadoPago\Customer::search(filters).resources();
+  ArrayList<Customer> customers = Customer.search(filters, false).resources();
 
 
 ```
@@ -617,7 +617,7 @@ You can get the complete list of `Cards` of a client by making a `HTTP GET` requ
 ```
 ```java
 
-  Customer customer = Customer.load(customerId)
+  Customer customer = Customer.findById(customerId);
   ArrayList<Cards> cards = customer.getCards();
 
 ```

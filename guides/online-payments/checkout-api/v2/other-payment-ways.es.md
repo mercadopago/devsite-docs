@@ -28,7 +28,6 @@ Además de tarjetas, también existen otras opciones de pago que puedes ofrecer 
 | --- | --- |
 | `ticket` | Rapipago |
 | `ticket` | Pago Fácil |
-| `ticket` | Provincia NET Pagos |
 | `ticket` | Carga Virtual |
 | `ticket` | Cobro Express |
 | `atm` | Red Link |

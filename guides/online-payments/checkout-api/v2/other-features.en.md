@@ -232,7 +232,7 @@ import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Payment payment = Payment.load(paymentId);
-payment.capture = true;
+payment.setCapture(true);
 payment.update();
 ```
 ```node
@@ -336,8 +336,8 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 
 Payment payment = Payment.load(paymentId);
-payment.transaction_amount = 75;
-payment.capture = true;
+payment.setTransactionAmount((float) 75);
+payment.setCapture(true);
 payment.update();
 ```
 ```node
@@ -444,7 +444,7 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 
 Payment payment = Payment.load(paymentId);
-payment.status = "canceled";
+payment.setStatus(Status.cancelled);
 payment.update();
 ```
 ```node
