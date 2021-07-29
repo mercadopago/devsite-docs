@@ -75,9 +75,10 @@ Para **agregar Mercado Pago en tu tienda**, sigue estos pasos:
 ----[mlm]----
 ## Configura las mensualidades sin interés en tu cuenta de Mercado Pago
  
-1. Ingresa a [tu cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]) y ve a "Tu negocio".
-2. Accede en la sección "Costos", navega hasta "mensualidades sin intereses" y haz clic en el switch para activarlos.
-3. Selecciona la cantidad máxima de mensualidades sin intereses que deseas ofrecer.
+1. Ingresa a [tu cuenta de Mercado Pago](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp) y ve a "Tu negocio".
+2. Accede en la sección "Costos".
+3. Navega hasta "mensualidades sin intereses" y haz clic en el switch para activarlos.
+4. Selecciona la cantidad máxima de mensualidades sin intereses que deseas ofrecer.
 
 <p>&nbsp;</p>
  
