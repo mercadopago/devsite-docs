@@ -11,7 +11,7 @@ Con ella, puedes ofrecer a tus clientes la posibilidad de pagar directamente en 
 
 Los **pasos para comenzar a cobrar con Mercado Pago** son los siguientes:
 
-1. [Ingresa](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/previous-requirements&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/wix) a una cuenta de Mercado Pago o [crea una nueva](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) si todavía no tienes una.
+1. [Ingresa](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/wix) a una cuenta de Mercado Pago o ----[mla, mlb, mlm, mlc]----[crea una nueva](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing)------------ ----[mco, mpe]----[crea una nueva](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp)------------ si todavía no tienes una.
 2. Agrega a Mercado Pago como medio de pago dentro de tu tienda.
 
 
