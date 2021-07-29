@@ -232,7 +232,7 @@ Podendo obter uma lista completa de `Cards` de um cliente realizando um request 
 ```
 ```java
 
-  Customer customer = Customer.load(customerId)
+  Customer customer = Customer.findById(customerId);
   ArrayList<Cards> cards = customer.getCards();
 
 ```
@@ -342,7 +342,7 @@ Por exemplo:
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-Customer customer = Customer.load("247711297-jxOV430go9fx2e")
+Customer customer = Customer.findById("247711297-jxOV430go9fx2e");
 
 Card card = new Card();
 card.setToken("9b2d63e00d66a8c721607214cedaecda");
@@ -506,7 +506,7 @@ No caso em que não saiba qual é o `id` de seu `Customer`, poderá utilizar a A
   Map<String, String> filters = new HashMap<>();
   filters.put("email", "test@test.com");
 
-  ArrayList<Customer> customers = MercadoPago\Customer::search(filters).resources();
+  ArrayList<Customer> customers = Customer.search(filters, false).resources();
 
 
 ```
@@ -613,7 +613,7 @@ Poderá obter uma lista completa de `Cards` de um cliente realizando um request 
 ```
 ```java
 
-  Customer customer = Customer.load(customerId)
+  Customer customer = Customer.findById(customerId);
   ArrayList<Cards> cards = customer.getCards();
 
 ```

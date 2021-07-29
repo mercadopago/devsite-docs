@@ -101,6 +101,7 @@ Choose what shopping experience your customers will have when paying:
 | Configuration | Description |
 | --- | --- |
 | Discount coupon | Activate this option when you want to offer discounts to your customers. A field will appear on the form where they can enter their coupon. |
+| Payment with stored cards | Allows customers to use their card data saved in Mercado Pago without having to fill in card data at the store's checkout. |
 
 #### Pay with cash
 

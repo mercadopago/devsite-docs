@@ -19,6 +19,119 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 MercadoPago.js V2 usa nosso device ID como sistema de prevenção à fraude para detectar e analisar comportamentos incomuns dos clientes, evitar movimentos suspeitos e melhorar a aprovação dos pagamentos.
 
 Nunca guardaremos ou compartilharemos os dados de seus clientes, mas se preferir não utilizar o device ID, saiba como desabilitá-lo na [referência técnica](https://github.com/mercadopago/sdk-js).
+### 27 de julho
+
+> CHANGELOG
+>
+> Nova versão SDK PHP
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK PHP
+Lançamos a nova versão 2.4.1 do SDK PHP.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-php/releases).
+
+### 21 de julho
+
+> CHANGELOG
+>
+> Nova versão SDK Java
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK JAVA
+Lançamos a nova versão 1.10.1 do SDK Java.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-java/releases).
+
+
+----[mla]----
+### 19 de julho
+
+> CHANGELOG
+> 
+> Desativamos Provincia NET Pagos como meio de pagamento disponível
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: SDK JAVA
+
+A partir de 29 de julho, o Provincia NET Pagos não estará mais disponível como meio de pagamento para o Mercado Pago. Lembre-se que você pode oferecer outros meios de pagamento em seu site.
+
+[Conheça os meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods).
+
+------------
+
+### 15 de julho
+----[mla, mlc, mco, mpe, mlu, mlm]----
+> CHANGELOG
+> 
+> Wix como um novo meio de pagamento em Checkout Pro
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: WIX
+
+Agora você pode integrar o Mercado Pago em sua loja Wix. Com esta plataforma virtual, você pode oferecer aos seus clientes a possibilidade de pagar diretamente no site do Mercado Pago.
+
+[Ir para a documentação de Wix](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/wix)
+
+------------
+
+----[mlb]----
+> CHANGELOG
+> 
+> Nova documentação do Wix
+>
+> NEW_DOCUMENTATION: NOVA DOCUMENTAÇÃO
+>
+> PRODUCT: WIX
+
+Atualizamos a experiência de integração do Mercado Pago como meio de pagamento em sua loja Wix.
+
+[Ir para a documentação de Wix](https://www.mercadopago.com.br/developers/pt/guides/plugins/unofficial/wix)
+------------
+
+
+> CHANGELOG
+>
+> Novas versões SDK PHP
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK PHP
+Lançamos as novas versões 1.12.0 e 2.4.0 do SDK PHP.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-php/releases).
+
+> CHANGELOG
+>
+> Nova versão SDK Java
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK JAVA
+Lançamos a nova versão 1.10.0 do SDK Java.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-java/releases).
+
 ### 14 de julho
 
 > CHANGELOG

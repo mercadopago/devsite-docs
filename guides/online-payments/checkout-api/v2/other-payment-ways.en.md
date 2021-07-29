@@ -24,7 +24,6 @@ In addition to cards, you can offer other payment choices on your website.
 | --- | --- |
 | `ticket` | Rapipago |
 | `ticket` | Pago Fácil |
-| `ticket` | Provincia NET Pagos |
 | `ticket` | Carga Virtual |
 | `ticket` | Cobro Express |
 | `atm` | Red Link |
@@ -4049,6 +4048,12 @@ curl -X POST \
 
 The response will show the pending payment status and all the information needed to show to the buyer.
 
+> WARNING
+>
+> Important
+>
+> Remember that in order to generate payments, you must first [create a Pix key](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required).
+
 The `transaction_data` will provide the data to make the payment available via QR code. These are the attributes: 
 
 | Attributes| Description |
@@ -4081,7 +4086,7 @@ The `transaction_data` will provide the data to make the payment available via Q
             },
             "transaction_data": {
                 "qr_code_base64": "iVBORw0KGgoAAAANSUhEUgAABRQAAAUUCAYAAACu5p7oAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAIABJREFUeJzs2luO3LiWQNFmI+Y/Zd6vRt36KGNXi7ZOBtcagHD4kNLeiLX33v8DAAAAABD879sDAAAAAAA/h6AIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCAAAAAJmgCAAAAABkgiIAAAAAkAmKAAAAAEAmKAIAAAAAmaAIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCA...",
-                "qr_code": "00020126600014br.gov.bcb.pix0117test@testuser.com0217additional data520400005303986540510.005802BR5913Maria Silva6008Brasilia62070503***6304E2CA",
+                "qr_code": "00020126600014br.gov.bcb.pix0117john@yourdomain.com0217additional data520400005303986540510.005802BR5913Maria Silva6008Brasilia62070503***6304E2CA",
             }
         }
     }
@@ -4114,7 +4119,8 @@ To show the payment code for copy and paste, you can add `qr_code` like this:
 >  * By default, the customer has 24 hours to make payment.
 >  * The code can be used once only.
 >  * The code will be shown provided that it is current per date of expiration.
-<br>
+
+> If you need to refund a payment made by a Pix transfer, you can find this information in [Refunds and cancellations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
 
 
 ## Payments date of expiration
@@ -4179,7 +4185,7 @@ The deadline for approval of the boleto is up to 48 working hours. Therefore, we
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pix payments
 
-By default, Pix payments expire in 24 hours. You can change this field `date_of_expiration` when creating the payment. The set date should be between 1 and 30 days from issue date.
+By default, Pix payments expire in 24 hours. You can change this field `date_of_expiration` when creating the payment. The set date should be between 30 minutes and up to 30 days from issue date.
 
 [[[
 ```php

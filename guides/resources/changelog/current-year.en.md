@@ -19,6 +19,119 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 MercadoPago.js V2 uses our Device ID as a fraud prevention system to detect and analyze unusual customer behavior, prevent suspicious payout and improve payment approval.
 
 We will never save or share your customer data but if you prefer not to use the device ID, know how to disable it in the [technical reference](https://github.com/mercadopago/sdk-js).
+### July 27th
+
+> CHANGELOG
+>
+> New version of SDK PHP
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK PHP
+We have released a new version of SDK PHP 2.4.1.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-php/releases) for further details regarding this release.
+
+### July 21st
+
+> CHANGELOG
+>
+> New version of SDK Java
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK JAVA
+We have released a new version of SDK Java 1.10.1.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-java/releases) for further details regarding this release.
+
+
+----[mla]----
+### July 19th
+
+> CHANGELOG
+> 
+> We removed Provincia NET Pagos as a payment method
+>
+> NEWS: NEWS
+>
+> PRODUCT: ALL
+
+As of July 29, Provincia NET Pagos will not be available as a payment method for Mercado Pago. Remember that you can offer other payment methods on your site.
+
+[See the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods).
+------------
+
+
+### July 15th
+----[mla, mlc, mco, mpe, mlu, mlm]----
+> CHANGELOG
+> 
+> Wix as a new payment method in Checkout Pro
+>
+> NEWS: NEWS
+>
+> PRODUCT: WIX
+
+Now you can integrate Mercado Pago into your Wix store. With this virtual platform, you can offer your customers the possibility to pay directly on the Mercado Pago site.
+
+[Go to Wix documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/wix)
+
+------------
+
+----[mlb]----
+> CHANGELOG
+> 
+> New Wix documentation
+>
+> NEW_DOCUMENTATION: NEW DOCUMENTATION
+>
+> PRODUCT: WIX
+
+We've updated the experience of integrating Mercado Pago as a payment method in your Wix store.
+
+[Go to Wix documentation](https://www.mercadopago.com.br/developers/en/guides/plugins/unofficial/wix)
+
+------------
+
+
+> CHANGELOG
+>
+> New version of SDK PHP
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK PHP
+We have released new versions of SDK PHP 1.12.0 and 2.4.0.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-php/releases) for further details regarding this release.
+
+> CHANGELOG
+>
+> New version of SDK Java
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK JAVA
+We have released a new version of SDK Java 1.10.0.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-java/releases) for further details regarding this release.
 
 ### July 14th
 

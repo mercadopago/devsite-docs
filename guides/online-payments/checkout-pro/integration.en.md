@@ -373,7 +373,7 @@ Finally, follow these steps to add the checkout to your website.
         id: 'YOUR_PREFERENCE_ID'
     },
     render: {
-      container: '.cho-container', // Indicates where the payment button is going to be rendered
+      container: '.cho-container', // Indicates the name of the class where the payment button will be displayed
       label: 'Pagar', // Changes the button label (optional)
     }
 });

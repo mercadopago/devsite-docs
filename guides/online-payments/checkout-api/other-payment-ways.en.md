@@ -24,7 +24,6 @@ In addition to cards, you can offer other payment choices on your website.
 | --- | --- |
 | `ticket` | Rapipago |
 | `ticket` | Pago Fácil |
-| `ticket` | Provincia NET Pagos |
 | `ticket` | Carga Virtual |
 | `ticket` | Cobro Express |
 | `atm` | Red Link |

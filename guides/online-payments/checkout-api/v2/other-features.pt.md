@@ -184,12 +184,30 @@ A resposta indica que o pagamento se encontra autorizado e pendente de captura.
 Também pode resultar rejeitado ou ficar pendente. Tenha em conta que os valores autorizados não poderão ser utilizados pelo seu cliente até que não sejam capturados. Recomendamos realizar a captura o quanto antes.
 
 
+----[mla, mlm]----
 > WARNING
 >
 > Importante
 >
 > * A reserva terá validade de 7 dias. Se não capturá-la nesse período, será cancelada.
 > * Deve guardar o ID do pagamento para poder finalizar o processo.
+------------
+----[mpe]----
+> WARNING
+>
+> Importante
+>
+> * A reserva terá validade de 22 dias. Se não capturá-la nesse período, será cancelada.
+> * Deve guardar o ID do pagamento para poder finalizar o processo.
+------------
+----[mlb]----
+> WARNING
+>
+> Importante
+>
+> * A reserva terá validade de 5 dias. Se não capturá-la nesse período, será cancelada.
+> * Deve guardar o ID do pagamento para poder finalizar o processo.
+------------
 
 ## Capture um pagamento autorizado
 
@@ -215,7 +233,7 @@ import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Payment payment = Payment.load(paymentId);
-payment.capture = true;
+payment.setCapture(true);
 payment.update();
 ```
 ```node
@@ -319,8 +337,8 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 
 Payment payment = Payment.load(paymentId);
-payment.transaction_amount = 75;
-payment.capture = true;
+payment.setTransactionAmount((float) 75);
+payment.setCapture(true);
 payment.update();
 ```
 ```node
@@ -427,7 +445,7 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 
 Payment payment = Payment.load(paymentId);
-payment.status = "canceled";
+payment.setStatus(Status.cancelled);
 payment.update();
 ```
 ```node

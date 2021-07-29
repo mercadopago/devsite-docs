@@ -183,12 +183,30 @@ The response indicates that the payment is authorized and pending to capture.
 
 It can be rejected or remain pending. Take into account that authorized funds cannot be used by your customer until captured. You need to make the capture as soon as possible.
 
+----[mla, mlm]----
 > WARNING
 >
 > Important
 >
 > * The reserve will be valid for 7 days. If you don't capture it within this term, it will be cancelled.
 > * You need to save the payment ID to complete the process.
+------------
+----[mpe]----
+> WARNING
+>
+> Important
+>
+> * The reserve will be valid for 22 days. If you don't capture it within this term, it will be cancelled.
+> * You need to save the payment ID to complete the process.
+------------
+----[mlb]----
+> WARNING
+>
+> Important
+>
+> * The reserve will be valid for 5 days. If you don't capture it within this term, it will be cancelled.
+> * You need to save the payment ID to complete the process.
+------------
 
 ## Capture an authorized payment
 
@@ -214,7 +232,7 @@ import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 Payment payment = Payment.load(paymentId);
-payment.capture = true;
+payment.setCapture(true);
 payment.update();
 ```
 ```node
@@ -318,8 +336,8 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 
 Payment payment = Payment.load(paymentId);
-payment.transaction_amount = 75;
-payment.capture = true;
+payment.setTransactionAmount((float) 75);
+payment.setCapture(true);
 payment.update();
 ```
 ```node
@@ -426,7 +444,7 @@ MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
 
 Payment payment = Payment.load(paymentId);
-payment.status = "canceled";
+payment.setStatus(Status.cancelled);
 payment.update();
 ```
 ```node
