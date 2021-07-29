@@ -165,6 +165,7 @@ curl -X POST \
           },
           "capture": "false"
     }'
+```
 ]]]
 
 A resposta indica que o pagamento se encontra autorizado e pendente de captura.

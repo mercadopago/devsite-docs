@@ -165,6 +165,7 @@ curl -X POST \
           },
           "capture": "false"
     }'
+```
 ]]]
 
 The response indicates that the payment is authorized and pending to capture.
