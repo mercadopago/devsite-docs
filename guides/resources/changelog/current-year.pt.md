@@ -6,6 +6,19 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Julho 2021
 
+### 30 de julho
+
+> CHANGELOG
+>
+> Prevenção à fraude ao usar o MercadoPago.js V2
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: MERCADO PAGO
+
+O MercadoPago.js V2 inclui dentro de suas funcionalidades um sistema para prevenção de fraudes. Seu objetivo é detectar e analisar comportamentos incomuns dos clientes, evitar movimentos suspeitos e melhorar a aprovação dos pagamentos.
+
+Nunca guardaremos ou compartilharemos os dados de seus clientes, mas se preferir não utilizar o device ID, saiba como desabilitá-lo na [referência técnica](https://github.com/mercadopago/sdk-js).
 ### 27 de julho
 
 > CHANGELOG
