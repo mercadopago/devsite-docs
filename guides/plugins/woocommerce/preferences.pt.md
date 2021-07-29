@@ -101,7 +101,7 @@ Escolha qual experiência de compra seus clientes terão na hora de pagar:
 | Configuração | Descrição |
 | --- | --- |
 | Cupons de desconto | Ative esta opção quando quiser oferecer descontos aos seus clientes. Aparecerá um campo no formulário onde poderão inserir seu cupom. |
-| Pagamento com cartões salvos | Função Pagamento com cartão salvo no Mercado Pago, para clientes do Mercado Pago comprarem sem precisar preencher dados do cartão no checkout da loja |
+| Pagamento com cartões salvos | Permite que os clientes comprem com os dados do cartão guardados no Mercado Pago, sem precisar preencher dados do cartão no checkout da loja. |
 
 #### Pagamentos presenciais
 
