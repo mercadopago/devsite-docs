@@ -20,7 +20,7 @@ Instala el procesador de pagos en WooCommerce y lleva tus ventas a otro nivel co
 | Cancelación de pagos | Cancela los pagos pendientes desde la plataforma. |
 | Modo binario | Aprueba o rechaza pagos al instante y de forma automática. |
 | Conversión de moneda | No más problemas de compatibilidad. Convierte la moneda que usas en WooCommerce a la moneda de tu cuenta de Mercado Pago.|
-| Pago con tarjetas guardadas en Mercado Pago | Función de Pago con tarjeta guardada en Mercado Pago, para que los clientes de Mercado Pago puedan comprar sin tener que rellenar los datos de tarjeta en el checkout de la tienda. |
+| Pago con tarjetas guardadas en Mercado Pago | Permite que los clientes puedan comprar con los datos guardados de su tarjeta en Mercado Pago, sin tener que rellenar los datos en el checkout de la tienda. |
 
 >**¿Eres desarrollador?**
 >Esta guía también está pensada para que hagas más rápido tu trabajo de instalación, integración y configuración de nuestro módulo en las plataformas de e-commerce más reconocidas a nivel mundial. 
