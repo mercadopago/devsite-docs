@@ -19,7 +19,7 @@ Los **pasos para comenzar a cobrar con Mercado Pago** son los siguientes:
 
 Wix te permite recibir pagos con Checkout Pro, donde el comprador será redireccionado a Mercado Pago para realizar el pago y volverá a tu tienda al completarse la compra.
 
-----[mla, mlb, mlc, mlu, mpe]----
+----[mla, mlb, mlc, mlu, mpe, mco]----
 Para **agregar Mercado Pago en tu tienda**, sigue estos pasos:
 
 1. Accede a "Configuración" desde el panel de control de tu sitio. 
