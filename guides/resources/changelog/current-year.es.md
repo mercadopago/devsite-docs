@@ -6,6 +6,21 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Julio 2021
 
+### 19 de julio
+
+----[mla]----
+> CHANGELOG
+> 
+> Desactivamos Provincia NET Pagos como medio de pago disponible
+>
+> NEWS: NOVEDADES
+
+A partir del 29 de julio, Provincia NET Pagos no estará disponible como medio de pago para Mercado Pago. Recuerda que puedes ofrecer otros medios de pago en tu sitio.
+
+[Conoce los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods).
+
+------------
+
 ### 15 de julio
 
 ----[mla, mlc, mco, mpe, mlu, mlm]----
