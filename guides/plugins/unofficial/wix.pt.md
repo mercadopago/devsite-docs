@@ -86,9 +86,10 @@ Para **conectar o Mercado Pago em sua loja**, siga os passos abaixo:
 ----[mla, mlb, mlu, mlc, mlm, mpe]----
 ## Configurando o parcelamento na sua conta do Mercado Pago
  
-1. Acesse sua [conta do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]) e clique em "Seu negócio".
-2. Acesse a seção "Custos", navegue até "Parcelas sem acréscimo" e clique no botão para ativá-las.
-3. Selecione o valor máximo de parcelas sem acréscimo que você deseja oferecer.
+1. Acesse sua [conta do Mercado Pago](https://www.mercadolivre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp) e clique em "Seu negócio".
+2. Acesse a seção "Custos".
+3. Navegue até "Parcelas sem acréscimo" e clique no botão para ativá-las.
+4. Selecione o valor máximo de parcelas sem acréscimo que você deseja oferecer.
 ------------
 
 
