@@ -16,7 +16,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 >
 > PRODUCT: MERCADO PAGO
 
-MercadoPago.js V2 usa nuestro device ID como sistema de prevención de fraudes para detectar y analizar comportamientos inusuales de los clientes, evitar movimientos sospechosos y mejorar la aprobación de los pagos. 
+MercadoPago.js V2 incluye dentro de sus funcionalidades un sistema para prevención de fraudes. Su objetivo es detectar y analizar comportamientos inusuales de los clientes, evitar movimientos sospechosos y mejorar la aprobación de los pagos. 
 
 Nunca guardaremos ni compartiremos los datos de tus clientes pero si prefieres no utilizar el device ID, conoce cómo deshabilitarlo en la [referencia técnica](https://github.com/mercadopago/sdk-js).
 ### 27 de julio
