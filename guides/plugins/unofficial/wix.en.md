@@ -84,9 +84,10 @@ To **connect Mercado Pago to your store**, follow the steps below:
 ----[mla, mlb, mlu, mlc, mlm, mpe]----
 ## Set up interest-free instalments in your Mercado Pago account
  
-1. Log in [your Mercado Libre account]((https://www.mercadopago[FAKER][URL][DOMAIN]), and go to "Your business".
-2. Go to "Costs" section, browse up to "interest free instalments" and click on the activation switch.
-3. Select the maximum number of interest free instalments you want to offer.
+1. Log in [your Mercado Libre account](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp), and go to "Your business".
+2. Go to "Costs" section.
+3. Browse up to "interest free instalments" and click on the activation switch.
+4. Select the maximum number of interest free instalments you want to offer.
 ------------
 
 
