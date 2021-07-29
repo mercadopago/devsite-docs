@@ -103,6 +103,7 @@ Elige qué experiencia de compra tendrán tus clientes a la hora de pagar:
 | Configuración | Descripción |
 | --- | --- |
 | Cupon de descuento | Activa esta opción cuando quieras ofrecer descuentos a tus clientes. Aparecerá un campo en el formulario donde podrán ingresar su cupón. |
+| Pago con tarjetas guardadas | Permite que los clientes puedan comprar con los datos guardados de su tarjeta en Mercado Pago, sin tener que rellenar los datos en el checkout de la tienda. |
 
 #### Pagos presenciales
 

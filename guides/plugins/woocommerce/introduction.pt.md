@@ -20,6 +20,7 @@ Instale nosso gateway de pagamento no WooCommerce e leve suas vendas para outro 
 | Cancelamento de pagamentos | Cancele pagamentos pendentes pela plataforma. |
 | Modo binário | Aprovar ou rejeitar pagamentos instantaneamente. |
 | Conversão de moeda | Não há mais problemas de compatibilidade. Faça a conversão da moeda que você usa no WooCommerce para a moeda da sua conta do Mercado Pago.|
+| Pagamento com cartões salvos no Mercado Pago  | Permite que os clientes comprem com os dados do cartão guardados no Mercado Pago, sem precisar preencher dados do cartão no checkout da loja. |
 
 >**Você é desenvolvedor?**
 >Este manual também foi pensado para que você faça a instalação, integração e configuração mais rapidamente. Você não vai precisar escrever uma linha de códigos sequer para instalá-lo nas lojas dos seus clientes. 
