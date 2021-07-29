@@ -6,14 +6,51 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Julho 2021
 
-### 19 de julho
+### 27 de julho
+
+> CHANGELOG
+>
+> Nova versão SDK PHP
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK PHP
+Lançamos a nova versão 2.4.1 do SDK PHP.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-php/releases).
+
+### 21 de julho
+
+> CHANGELOG
+>
+> Nova versão SDK Java
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK JAVA
+Lançamos a nova versão 1.10.1 do SDK Java.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-java/releases).
+
 
 ----[mla]----
+### 19 de julho
+
 > CHANGELOG
 > 
 > Desativamos Provincia NET Pagos como meio de pagamento disponível
 >
 > NEWS: NOVIDADES
+>
+> PRODUCT: SDK JAVA
 
 A partir de 29 de julho, o Provincia NET Pagos não estará mais disponível como meio de pagamento para o Mercado Pago. Lembre-se que você pode oferecer outros meios de pagamento em seu site.
 

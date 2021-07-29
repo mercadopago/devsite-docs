@@ -6,19 +6,57 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## July 2021
 
-### July 19th
+### July 27th
+
+> CHANGELOG
+>
+> New version of SDK PHP
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK PHP
+We have released a new version of SDK PHP 2.4.1.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-php/releases) for further details regarding this release.
+
+### July 21st
+
+> CHANGELOG
+>
+> New version of SDK Java
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK JAVA
+We have released a new version of SDK Java 1.10.1.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-java/releases) for further details regarding this release.
+
 
 ----[mla]----
+### July 19th
+
 > CHANGELOG
 > 
 > We removed Provincia NET Pagos as a payment method
 >
 > NEWS: NEWS
+>
+> PRODUCT: ALL
 
 As of July 29, Provincia NET Pagos will not be available as a payment method for Mercado Pago. Remember that you can offer other payment methods on your site.
 
 [See the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods).
 ------------
+
 
 ### July 15th
 ----[mla, mlc, mco, mpe, mlu, mlm]----
