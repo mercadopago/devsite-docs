@@ -50,7 +50,7 @@ Lançamos a nova versão 1.10.1 do SDK Java.
 >
 > NEWS: NOVIDADES
 >
-> PRODUCT: SDK JAVA
+> PRODUCT: ALL
 
 A partir de 29 de julho, o Provincia NET Pagos não estará mais disponível como meio de pagamento para o Mercado Pago. Lembre-se que você pode oferecer outros meios de pagamento em seu site.
 
