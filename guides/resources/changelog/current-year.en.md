@@ -110,7 +110,7 @@ We've updated the experience of integrating Mercado Pago as a payment method in 
 > NEW_VERSION: NEW VERSION
 >
 > PRODUCT: SDK PHP
-We have released new versions of SDK PHP 1.12.0 and 2.4.0.
+We have released a new version of SDK PHP 1.12.0 and 2.4.0.
 
 > GIT
 >

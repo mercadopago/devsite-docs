@@ -54,24 +54,28 @@ To **connect Mercado Pago to your store**, follow the steps below:
 <p>&nbsp;</p>
 
 ![Setting active in Wix](/images/wix/wix_en_connect_configuration_mla_mlc_mlu_mpe.gif)
+<p>&nbsp;</p>
 ------------
 
 ----[mlb]----
 <p>&nbsp;</p>
 
 ![Setting connect in Wix](/images/wix/wix_es_connect_configuration_mlb.gif)
+<p>&nbsp;</p>
 ------------
 
 ----[mco]----
 <p>&nbsp;</p>
 
 ![Setting active in Wix](/images/wix/wix_en_connect_configuration_mco.gif)
+<p>&nbsp;</p>
 ------------
 
 ----[mlm]----
 <p>&nbsp;</p>
 
 ![Setting active in Wix](/images/wix/wix_en_connect_configuration_mlm.gif)
+<p>&nbsp;</p>
 ------------
 
 
@@ -81,9 +85,9 @@ To **connect Mercado Pago to your store**, follow the steps below:
 ## Set up interest-free instalments in your Mercado Pago account
  
 1. Log in [your Mercado Libre account](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp), and go to "Your business".
-1. Go to "Costs" section.
-1. Browse up to "interest free instalments" and click on the activation switch.
-1. Select the maximum number of interest free instalments you want to offer.
+2. Go to "Costs" section.
+3. Browse up to "interest free instalments" and click on the activation switch.
+4. Select the maximum number of interest free instalments you want to offer.
 ------------
 
 

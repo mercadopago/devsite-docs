@@ -36,7 +36,7 @@ Use nossos SDKs oficiais ou interaja diretamente com nossas APIs.
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
-> Referéncias de API
+> Referências de API
 >
 > Encontre toda a informação necessária para interagir com nossas APIs.
 >

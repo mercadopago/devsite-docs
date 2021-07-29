@@ -16,7 +16,7 @@ Utilize cartões e usuários de teste para verificar que seus pagamentos sejam c
 > SERVER_SIDE
 >
 > h2
-> 
+>
 > Como criar usuários
 
 Para começar, é necessário que tenha no mínimo dois usuários de teste: um comprador e um vendedor.
@@ -49,7 +49,7 @@ curl -X POST \
 >
 > * Tanto o comprador como o vendedor devem ser usuários de teste.
 > * É possível gerar até 10 contas de usuários de teste simultâneamente. Por isso sugerimos que guarde o _email_ e _password_ de cada um.
-> * Os usuários de teste caducam após 60 días sem atividade no Mercado Pago.
+> * Os usuários de teste caducam após 60 dias sem atividade no Mercado Pago.
 > * Para criar pagamentos de teste te recomendamos usar valores baixos.
 > * Os valores devem respeitar os ----[mla]---- [valores mínimos e máximos](https://www.mercadopago.com.ar/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlm]---- [valores mínimos e máximos](hhttps://www.mercadopago.com.mx/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlu]---- [valores mínimos e máximos](hhttps://www.mercadopago.com.uy/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mco]---- [valores mínimos e máximos](https://www.mercadopago.com.uy/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mpe]---- [valores mínimos e máximos](https://www.mercadopago.com.pe/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlc]---- [valores mínimos e máximos](https://www.mercadopago.cl/ayuda/monto-minimo-maximo-medios-de-pago_620) ------------ ----[mlb]---- [valores mínimos e máximos](https://www.mercadopago.com.br/ajuda/minimo-maximo-posso-pagar_324) ------------ para cada meio de pagamento.
 
@@ -119,7 +119,7 @@ Inicie sua integração configurada com as credenciais do seu usuário de teste 
 
 | Cartão | Número | Código de segurança | Data de vencimento |
 | :--- | :---: | :---: | :---: |
-| Mastercard |  5808 8877 7464 1586 | 123 | 11/25 |
+| Mastercard | 5808 8877 7464 1586 | 123 | 11/25 |
 | Visa | 4104 2962 6235 5432 | 123 | 11/25 |
 
 ------------
@@ -152,7 +152,7 @@ Para **testar resultados diferentes de pagamento**, complete o dado que queira n
 
 ## Começar a receber pagamentos
 
-Para começar a cobrar, você deve cumprir os [requisitos para entrar em produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/goto-production) e [ativar suas credenciais]([FAKER][CREDENTIALS][URL]).
+Para começar a cobrar, você deve cumprir os [requisitos para entrar em produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/goto-production) e [ativar suas credenciais]([FAKER][CREDENTIALS][URL]).
 
 Antes de ativá-las, certifique-se de que as credenciais na sua integração sejam as da conta que recebe o dinheiro das vendas.<br/>
 

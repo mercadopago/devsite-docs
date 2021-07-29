@@ -146,7 +146,7 @@ payment_data = {
 }
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
-```   
+```
 ```curl
 
 curl -X POST \
@@ -192,7 +192,6 @@ It can be rejected or remain pending. Take into account that authorized funds ca
 > * The reserve will be valid for 7 days. If you don't capture it within this term, it will be cancelled.
 > * You need to save the payment ID to complete the process.
 ------------
-
 ----[mpe]----
 > WARNING
 >
@@ -201,7 +200,6 @@ It can be rejected or remain pending. Take into account that authorized funds ca
 > * The reserve will be valid for 22 days. If you don't capture it within this term, it will be cancelled.
 > * You need to save the payment ID to complete the process.
 ------------
-
 ----[mlb]----
 > WARNING
 >
@@ -419,6 +417,7 @@ curl -X PUT \
 }
 ```
 
+
 > NOTE
 >
 > Note
@@ -516,16 +515,17 @@ curl -X PUT \
   ...
 }
 ```
+
 ---
 ### Next steps
 
 > LEFT_BUTTON_REQUIRED_EN
 >
-> Requirements to go to production
+> Requirements for the production environment
 >
 > Learn all the requirements needed to start receiving payments.
 >
-> [Requirements to go to production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production)
+> [Requirements for the production environment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production)
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >

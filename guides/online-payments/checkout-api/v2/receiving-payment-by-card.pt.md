@@ -99,7 +99,7 @@ Utilize o formulário seguinte e adicione os estilos que desejar.
 
 > GIT
 > 
-> Referencia técnica
+> Referência técnica
 > 
 > Procure informações acerca dos distintos atributos nas [referências técnicas](https://github.com/mercadopago/sdk-js).
 
@@ -217,7 +217,7 @@ A opção de callbacks aceita diferentes funções que são ativadas em diversos
 
 > GIT
 > 
-> Referencia técnica
+> Referência técnica
 > 
 > Obtenha mais informações acerca dos callbacks nas [referências técnicas](https://github.com/mercadopago/sdk-js).
 

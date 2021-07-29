@@ -370,7 +370,7 @@ Agora no seu frontend, siga estas etapas para adicionar o checkout ao seu site:
           id: 'YOUR_PREFERENCE_ID'
       },
       render: {
-            container: '.cho-container', // Indica o nome da class onde será exibido o botão de pagamento
+            container: '.cho-container', // Indique o nome da class onde será exibido o botão de pagamento
             label: 'Pagar', // Muda o texto do botão de pagamento (opcional)
       }
 });
