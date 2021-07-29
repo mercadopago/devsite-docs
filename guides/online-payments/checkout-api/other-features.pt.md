@@ -165,7 +165,7 @@ curl -X POST \
           },
           "capture": "false"
     }'
-```    
+```
 ]]]
 
 A resposta indica que o pagamento se encontra autorizado e pendente de captura.
@@ -184,6 +184,7 @@ A resposta indica que o pagamento se encontra autorizado e pendente de captura.
 
 Também pode resultar rejeitado ou ficar pendente. Tenha em conta que os valores autorizados não poderão ser utilizados pelo seu cliente até que não sejam capturados. Recomendamos realizar a captura o quanto antes.
 
+
 ----[mla, mlm]----
 > WARNING
 >
@@ -192,7 +193,6 @@ Também pode resultar rejeitado ou ficar pendente. Tenha em conta que os valores
 > * A reserva terá validade de 7 dias. Se não capturá-la nesse período, será cancelada.
 > * Deve guardar o ID do pagamento para poder finalizar o processo.
 ------------
-
 ----[mpe]----
 > WARNING
 >
@@ -201,7 +201,6 @@ Também pode resultar rejeitado ou ficar pendente. Tenha em conta que os valores
 > * A reserva terá validade de 22 dias. Se não capturá-la nesse período, será cancelada.
 > * Deve guardar o ID do pagamento para poder finalizar o processo.
 ------------
-
 ----[mlb]----
 > WARNING
 >
@@ -419,6 +418,7 @@ curl -X PUT \
 }
 ```
 
+
 > NOTE
 >
 > Nota
@@ -522,11 +522,11 @@ curl -X PUT \
 
 > LEFT_BUTTON_REQUIRED_PT
 >
-> Requisitos para entrar em produção
+> Requisitos para ir a produção
 >
 > Conheça os requisitos necessários para começar a receber pagamentos.
 >
-> [Requisitos para entrar em produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/goto-production)
+> [Requisitos para ir a produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/goto-production)
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >

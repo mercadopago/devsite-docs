@@ -55,24 +55,28 @@ Para **conectar o Mercado Pago em sua loja**, siga os passos abaixo:
 <p>&nbsp;</p>
 
 ![Setting active in Wix](/images/wix/wix_pt_connect_configuration_mla_mlc_mlu_mpe.gif)
+<p>&nbsp;</p>
 ------------
 
 ----[mlb]----
 <p>&nbsp;</p>
 
 ![Setting connect in Wix](/images/wix/wix_pt_connect_configuration_mlb.gif)
+<p>&nbsp;</p>
 ------------
 
 ----[mco]----
 <p>&nbsp;</p>
 
 ![Setting active in Wix](/images/wix/wix_pt_connect_configuration_mco.gif)
+<p>&nbsp;</p>
 ------------
 
 ----[mlm]----
 <p>&nbsp;</p>
 
 ![Setting active in Wix](/images/wix/wix_pt_connect_configuration_mlm.gif)
+<p>&nbsp;</p>
 ------------
 
 
@@ -80,12 +84,12 @@ Para **conectar o Mercado Pago em sua loja**, siga os passos abaixo:
 
 
 ----[mla, mlb, mlu, mlc, mlm, mpe]----
-## Configure os parcelamentos sem acréscimo na sua conta do Mercado Pago
+## Configurando o parcelamento na sua conta do Mercado Pago
  
 1. Acesse sua [conta do Mercado Pago](https://www.mercadolivre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp) e clique em "Seu negócio".
-1. Acesse a seção "Custos".
-1. Navegue até "Parcelas sem acréscimo" e clique no botão para ativá-las.
-1. Selecione o valor máximo de parcelas sem acréscimo que você deseja oferecer.
+2. Acesse a seção "Custos".
+3. Navegue até "Parcelas sem acréscimo" e clique no botão para ativá-las.
+4. Selecione o valor máximo de parcelas sem acréscimo que você deseja oferecer.
 ------------
 
 

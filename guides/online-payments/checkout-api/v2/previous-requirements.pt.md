@@ -15,7 +15,7 @@ Para poder encontrá-las, veja a [seção de Credenciais]([FAKER][CREDENTIALS][U
 > Têm dúvidas sobre credenciais? Acesse nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials).
 
 ## Sempre utilize nossas bibliotecas
-Recomendamos que utilize as bibliotecas oficais para sua integração. Isso permite cuidar dos dados sensíveis dos seus cliente, cumprir com os padrões de segurança requeridos e estar sempre atualizado.
+Recomendamos que utilize as bibliotecas oficais para sua integração. Isso permite cuidar dos dados sensíveis dos seus clientes, cumprir com os padrões de segurança requeridos e estar sempre atualizado.
 
 <br>
 
@@ -25,7 +25,7 @@ Recomendamos que utilize as bibliotecas oficais para sua integração. Isso perm
 >
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inclua MercadoPago.js
 
-MercadoPago.js te permite gerenciar os dados do cartão para cumprir com os requerimentos de segurança necessários e evitar o envio de dados sensíveis para seus servidores. Para isso, nossa biblioteca gera um token que representa esta informação e te permite operar de forma segura. Pode-se utiliza-lo adicionando o seguinte código ao seu site:
+MercadoPago.js te permite gerenciar os dados do cartão para cumprir com os requerimentos de segurança necessários e evitar o envio de dados sensíveis para seus servidores. Para isso, nossa biblioteca gera um token que representa esta informação e te permite operar de forma segura. Pode-se utilizá-lo adicionando o seguinte código ao seu site:
 
 ```html
 <script src="https://sdk.mercadopago.com/js/v2"></script>
@@ -106,7 +106,7 @@ Se não pode utilizar nossos SDKs oficiais, tenha disponível toda a informaçã
 ## Cumpra com os requisitos para ir a produção
 
 Ao finalizar sua integração, é necessário que tenha em conta todos os [requisitos para ir a produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v2/goto-production).
-Com esse processo, garante-se a segurança dos dados dos seus cliente, o cumprimento das normas e disposições legais de cada país e ofereça a melhor experiência de compra para suas vendas.
+Com esse processo, garante-se a segurança dos dados dos seus clientes, o cumprimento das normas e disposições legais de cada país e ofereça a melhor experiência de compra para suas vendas.
 
 Quando sua integração estiver pronta e quiser começar a receber pagamentos, complete o formulário para ir a produção na [seção de Credenciais]([FAKER][CREDENTIALS][URL]).
 

@@ -120,7 +120,7 @@ Start your integration with your test seller user credentials:
 
 | Card | Number | CVV | Expiration Date |
 | :--- | :---: | :---: | :---: |
-| Mastercard |  5808 8877 7464 1586| 123 | 11/25 |
+| Mastercard | 5808 8877 7464 1586 | 123 | 11/25 |
 | Visa | 4104 2962 6235 5432 | 123 | 11/25 |
 
 ------------

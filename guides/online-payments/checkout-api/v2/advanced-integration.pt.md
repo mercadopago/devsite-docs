@@ -171,7 +171,7 @@ curl -X POST \
 >
 > Nota
 >
-> Te recomendamos armazenas os dados do cartão assim que realizar um pagamento de forma exitosa para guardar os dados corretos.
+> Te recomendamos armazenar os dados do cartão assim que realizar um pagamento de forma exitosa para guardar os dados corretos.
 
 > WARNING 
 > 
@@ -1120,7 +1120,7 @@ Exemplo de resposta com o envio do `customer_id`:
   ]
 }
 ```
-Exemplo de resposta sem o parâmetro `customers_id`:
+Exemplo de resposta sem o parâmetro `customer_id`:
 ```json
 {
   "message": "missing customer id"

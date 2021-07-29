@@ -171,13 +171,13 @@ curl -X POST \
 >
 > Nota
 >
-> Te recomendamos armazenas os dados do cartão assim que realizar um pagamento de forma exitosa para guardar os dados corretos.
+> Te recomendamos armazenar os dados do cartão assim que realizar um pagamento de forma exitosa para guardar os dados corretos.
 
 > WARNING 
 > 
 > Importante
 > 
-> Se você receber uma mensagem de erro do tipo `"invalid parameter"` com código de estado HTTP 400, certifique-se de que está preenchendo corretamente os campos `payment_method_id` e `issuer_id`.
+> Se você receber uma mensagem de erro do tipo `"invalid parameter"` com código de estado HTTP 400, certifique-se de que está completando corretamente os campos `payment_method_id` e `issuer_id`.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adicione novos cartões a um cliente
 
@@ -449,57 +449,66 @@ E pode criar um formulário da seguinte maneira:
 
 ```html
 <li>
-    <label>Payment Method:</label>
-    <select id="cardId" name="cardId" data-checkout='cardId'>
-    <?php foreach ($cards["response"] as $card) { ?>
-        <option value="<?php echo $card["id"]; ?>"
-            first_six_digits="<?php echo $card["first_six_digits"]; ?>"
-            security_code_length="<?php echo $card["security_code"]["length"]; ?>">
-                <?php echo $card["payment_method"]["name"]; ?> ended in <?php echo $card["last_four_digits"]; ?>
-        </option>
-    <?php } ?>
-    </select>
+   <label>Payment Method:</label>
+   <select id="cardId" name="cardId"></select>
 </li>
 <li id="cvv">
-    <label for="cvv">Security code:</label>
-    <input type="text" id="cvv" data-checkout="securityCode" placeholder="123" />
+   <label for="cvv">Security code:</label>
+   <input type="text" id="cvv" placeholder="123" />
 </li>
+<script>
+   const customerCards = [{
+       "id": "3502275482333",
+       "last_four_digits": "9999",
+       "payment_method": {
+           "name": "amex",
+       },
+       "security_code": {
+           "length": 4,
+       }
+   }];
+
+   // Append customer cards to select element
+   const selectElement = document.getElementById('cardId');
+   const tmpFragment = document.createDocumentFragment();
+   customerCards.forEach(({id, last_four_digits, payment_method}) => {
+       const optionElement = document.createElement('option');
+       optionElement.setAttribute('value', id)
+       optionElement.textContent = `${payment_method.name} ended in ${last_four_digits}`
+       tmpFragment.appendChild(optionElement);
+   })
+   selectElement.appendChild(tmpFragment)
+</script>
 ```
 <br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Capture o código de segurança
 
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> INFO
->
-> Nova versão de MercadoPago.js
->
-> Utilize a biblioteca MercadoPago.js V2 para seu formulário de cartão e autogere toda a lógica de negócio necessária para fazer o pagamento.<br><br>[Integrar Checkout API com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v2/advanced-integration)
-------------
-----[mlb]----
-> INFO
->
-> Nova versão de MercadoPago.js
->
-> Utilize a biblioteca MercadoPago.js V2 para seu formulário de cartão e autogere toda a lógica de negócio necessária para fazer o pagamento.<br><br>[Integrar Checkout Transparente com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v2/advanced-integration)
-------------
-
-
 O cliente precisa inserir o código se segurança em um fluxo similar ao que realizou para a [captura dos dados do cartão](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card/#bookmark_capture_os_dados_de_cartão). Deve criar um token enviando o formulário com o ID do cartão e o código de segurança.
 
 ```javascript
-doSubmit = false;
-addEvent(document.querySelector('#pay'),'submit', doPay);function doPay(event){
-    event.preventDefault();
-    if(!doSubmit){
-        var $form = document.querySelector('#pay');
+(async function createToken() {
+       try {
+           const token = await mp.createCardToken({
+               cardId: document.getElementById('cardId').value,
+               securityCode: document.getElementById('cvv').value,
+           })
 
-        Mercadopago.createToken($form, sdkResponseHandler);
-
-        return false;
-    }
-};
+            // Use the received token to make a POST request to your backend
+           console.log('token received: ', token.id)
+       }catch(e) {
+           console.error('error creating token: ', e)
+       }
+   })()
 ```
+
+----[mla, mlm, mpe, mco, mlu, mlc]----
+> Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout API anterior](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v1/advanced-integration).
+------------
+----[mlb]----
+> Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout Transparente anterior](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v1/advanced-integration).
+------------
+
 <br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Crie o pagamento
@@ -1111,7 +1120,7 @@ Exemplo de resposta com o envio do `customer_id`:
   ]
 }
 ```
-Exemplo de resposta sem o parâmetro `customers_id`:
+Exemplo de resposta sem o parâmetro `customer_id`:
 ```json
 {
   "message": "missing customer id"

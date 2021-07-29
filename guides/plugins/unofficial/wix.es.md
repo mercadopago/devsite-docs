@@ -44,24 +44,28 @@ Para **agregar Mercado Pago en tu tienda**, sigue estos pasos:
 <p>&nbsp;</p>
 
 ![Setting active in Wix](/images/wix/wix_es_connect_configuration_mla_mlc_mlu_mpe.gif)
+<p>&nbsp;</p>
 ------------
 
 ----[mlb]----
 <p>&nbsp;</p>
 
 ![Setting active in Wix](/images/wix/wix_es_connect_configuration_mlb.gif)
+<p>&nbsp;</p>
 ------------
 
 ----[mco]----
 <p>&nbsp;</p>
 
 ![Setting active in Wix](/images/wix/wix_es_connect_configuration_mco.gif)
+<p>&nbsp;</p>
 ------------
 
 ----[mlm]----
 <p>&nbsp;</p>
 
 ![Setting active in Wix](/images/wix/wix_es_connect_configuration_mlm.gif)
+<p>&nbsp;</p>
 ------------
 
 
@@ -72,9 +76,9 @@ Para **agregar Mercado Pago en tu tienda**, sigue estos pasos:
 ## Configura las mensualidades sin interés en tu cuenta de Mercado Pago
  
 1. Ingresa a [tu cuenta de Mercado Pago](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp) y ve a "Tu negocio".
-1. Accede en la sección "Costos".
-1. Navega hasta "mensualidades sin intereses" y haz clic en el switch para activarlos.
-1. Selecciona la cantidad máxima de mensualidades sin intereses que deseas ofrecer.
+2. Accede en la sección "Costos".
+3. Navega hasta "mensualidades sin intereses" y haz clic en el switch para activarlos.
+4. Selecciona la cantidad máxima de mensualidades sin intereses que deseas ofrecer.
 
 <p>&nbsp;</p>
  
@@ -88,10 +92,9 @@ Para **agregar Mercado Pago en tu tienda**, sigue estos pasos:
 ----[mla, mlb, mlu, mlc, mpe]----
 ## Configura las cuotas sin interés en tu cuenta de Mercado Pago
  
-1. Ingresa a [tu cuenta de Mercado Pago](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp) y ve a "Tu negocio".
-1. Accede en la sección "Costos".
-1. Navega hasta "Cuotas sin intereses" y haz clic en el switch para activarlos.
-1. Selecciona la cantidad máxima de cuotas sin intereses que deseas ofrecer.
+1. Ingresa a [tu cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]) y ve a "Tu negocio".
+2. Accede en la sección "Costos", navega hasta "Cuotas sin intereses" y haz clic en el switch para activarlos.
+3. Selecciona la cantidad máxima de cuotas sin intereses que deseas ofrecer.
 ------------
 
 

@@ -192,7 +192,6 @@ También puede resultar rechazada o quedar pendiente. Ten en cuenta que los fond
 > * La reserva tendrá una validez de 7 días. Si no la capturas hasta ese momento, será cancelada.
 > * Debes guardar el ID del pago para poder finalizar el proceso.
 ------------
-
 ----[mpe]----
 > WARNING
 >
@@ -200,9 +199,7 @@ También puede resultar rechazada o quedar pendiente. Ten en cuenta que los fond
 >
 > * La reserva tendrá una validez de 22 días. Si no la capturas hasta ese momento, será cancelada.
 > * Debes guardar el ID del pago para poder finalizar el proceso.
-
 ------------
-
 ----[mlb]----
 > WARNING
 >
@@ -210,7 +207,6 @@ También puede resultar rechazada o quedar pendiente. Ten en cuenta que los fond
 >
 > * La reserva tendrá una validez de 5 días. Si no la capturas hasta ese momento, será cancelada.
 > * Debes guardar el ID del pago para poder finalizar el proceso.
-
 ------------
 
 ## Captura un pago autorizado
@@ -421,6 +417,7 @@ curl -X PUT \
 }
 ```
 
+
 > NOTE
 >
 > Nota
@@ -524,11 +521,11 @@ curl -X PUT \
 
 > LEFT_BUTTON_REQUIRED_ES
 >
-> Requisitos para salir a producción
+> Requisitos para ir a producción
 >
 > Conoce los requisitos necesarios para comenzar a recibir pago.
 >
-> [Requisitos para salir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/goto-production)
+> [Requisitos para ir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/goto-production)
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >

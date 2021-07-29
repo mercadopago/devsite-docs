@@ -6,7 +6,7 @@ Use our APIs to save your customer's card references and offer them a better exp
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create customers and cards
 
-To create customers and cards, submit the e-mail field, type of payment method, issuing bank ID and generated token.
+To create customers and link them with their cards, submit the e-mail field, type of payment method, ID of the issuing bank and the generated token.
 You will add every customer using the `customer` value, and cards as `card`.
 
 [[[
@@ -449,47 +449,61 @@ And you can prepare the form like this:
 
 ```html
 <li>
-    <label>Payment Method:</label>
-    <select id="cardId" name="cardId" data-checkout='cardId'>
-    <?php foreach ($cards["response"] as $card) { ?>
-        <option value="<?php echo $card["id"]; ?>"
-            first_six_digits="<?php echo $card["first_six_digits"]; ?>"
-            security_code_length="<?php echo $card["security_code"]["length"]; ?>">
-                <?php echo $card["payment_method"]["name"]; ?> ended in <?php echo $card["last_four_digits"]; ?>
-        </option>
-    <?php } ?>
-    </select>
+   <label>Payment Method:</label>
+   <select id="cardId" name="cardId"></select>
 </li>
 <li id="cvv">
-    <label for="cvv">Security code:</label>
-    <input type="text" id="cvv" data-checkout="securityCode" placeholder="123" />
+   <label for="cvv">Security code:</label>
+   <input type="text" id="cvv" placeholder="123" />
 </li>
+<script>
+   const customerCards = [{
+       "id": "3502275482333",
+       "last_four_digits": "9999",
+       "payment_method": {
+           "name": "amex",
+       },
+       "security_code": {
+           "length": 4,
+       }
+   }];
+
+   // Append customer cards to select element
+   const selectElement = document.getElementById('cardId');
+   const tmpFragment = document.createDocumentFragment();
+   customerCards.forEach(({id, last_four_digits, payment_method}) => {
+       const optionElement = document.createElement('option');
+       optionElement.setAttribute('value', id)
+       optionElement.textContent = `${payment_method.name} ended in ${last_four_digits}`
+       tmpFragment.appendChild(optionElement);
+   })
+   selectElement.appendChild(tmpFragment)
+</script>
 ```
 <br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Capture security code
 
-> INFO
->
-> New MercadoPago.js version
->
-> Use MercadoPago .js V2 library to create your card form and to auto generate your business logics needed to make the payment.<br><br>[Integrate Checkout API with MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/advanced-integration)
-
 The customer needs to enter the security code in a flow similar to [card data capture](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card/#bookmark_card_data_capture). You need to create a token by submitting the form with card ID and security code.
 
 ```javascript
-doSubmit = false;
-addEvent(document.querySelector('#pay'),'submit', doPay);function doPay(event){
-    event.preventDefault();
-    if(!doSubmit){
-        var $form = document.querySelector('#pay');
+(async function createToken() {
+       try {
+           const token = await mp.createCardToken({
+               cardId: document.getElementById('cardId').value,
+               securityCode: document.getElementById('cvv').value,
+           })
 
-        Mercadopago.createToken($form, sdkResponseHandler);
-
-        return false;
-    }
-};
+            // Use the received token to make a POST request to your backend
+           console.log('token received: ', token.id)
+       }catch(e) {
+           console.error('error creating token: ', e)
+       }
+   })()
 ```
+
+> This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/advanced-integration).
+
 <br>
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Create payment
@@ -1112,7 +1126,7 @@ Example of response without including the `customers_id` parameter:
 >
 > Note
 >
-> If you don't have the `customer_id`, [check the Customers API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/customers/_customers_search/get) and generate an `HTTP GET` request using the `email` parameter to get it.
+> If you don't have the `customer_id`, [check the Customers API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/customers/_customers_search/get) and generate an` HTTP GET` request using the `email` parameter to get it.
 
 ## Cancellations and refunds
 
