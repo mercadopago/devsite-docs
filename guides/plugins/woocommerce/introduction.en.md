@@ -16,8 +16,6 @@ Install the payment processor in WooCommerce and take your sales to another leve
 | Payment methods | Accept payments by credit and debit card, ----[mlb]---- Pix,------------ cash and payments with Mercado Pago account money. |
 | Checkout types | Checkout Pro, Custom Checkout |
 | Payment as a guest | Users don’t need to be registered in Mercado Pago in order to pay in WooCommerce. |
-| Payment refunds | Refund payments directly from the platform. |
-| Payment cancellations | Cancel the pending payments directly from the platform |
 | Binary mode | Approve or reject payments instantly and automatically. |
 | Currency conversion | No more compatibility issues. Convert the currency you use in WooCommerce to the currency of your Mercado Pago account. |
 | Payment with card stored in Mercado Pago  | Allows customers to use their card data saved in Mercado Pago without having to fill in card data at the store's checkout. |
