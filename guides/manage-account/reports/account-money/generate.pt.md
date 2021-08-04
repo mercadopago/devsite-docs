@@ -76,7 +76,7 @@ Todas as opções disponíveis na hora de baixar seu relatório.
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
-> Generação via API
+> Geração via API
 >
 > Crie relatórios de forma programada e manual através de uma integração com o Mercado Pago.
 >
