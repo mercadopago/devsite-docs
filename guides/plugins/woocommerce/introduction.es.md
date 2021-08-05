@@ -9,7 +9,7 @@ Si ya utilizas WooCommerce para crear sitios e-commerce en WordPress, uno de los
 >
 > Importante
 >
-> Aviso: El 13/07/21, WooCommerce notificó a sus clientes que algunas de sus versiones resultan vulnerables. Las correcciones necesarias ya se han realizado en la última actualización. Por lo tanto, es **muy importante que tu tienda tenga la última versión de WooCommerce actualizada** para evitar la exposición de información sensible. Más información en el [WooCommerce blog.](https://woocommerce.com/pt-br/posts/critical-vulnerability-detected-july-2021/)
+> El 13 de julio del 2021, WooCommerce notificó a sus clientes que algunas de sus versiones resultan vulnerables. Las correcciones necesarias ya se han realizado en la última actualización. Por lo tanto, es **muy importante que tu tienda tenga la última versión de WooCommerce actualizada** para evitar la exposición de información sensible. Para más información, consulta el [blog de WooCommerce](https://woocommerce.com/pt-br/posts/critical-vulnerability-detected-july-2021).
 
 ## Qué puedo hacer con Mercado Pago en WooCommerce
 
