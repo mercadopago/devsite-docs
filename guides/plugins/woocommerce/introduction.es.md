@@ -16,8 +16,6 @@ Instala el procesador de pagos en WooCommerce y lleva tus ventas a otro nivel co
 | Medios de pago | Acepta pagos con tarjeta de crédito y débito, ----[mlb]---- Pix,------------ pagos en efectivo y con dinero en cuenta de Mercado Pago. |
 | Tipos de checkout | Checkout Pro, Checkout personalizado |
 | Pago como invitado | Los usuarios no necesitan estar registrados en Mercado Pago para poder pagar en WooCommerce. |
-| Devolución de pagos | Devuelve pagos desde la plataforma. |
-| Cancelación de pagos | Cancela los pagos pendientes desde la plataforma. |
 | Modo binario | Aprueba o rechaza pagos al instante y de forma automática. |
 | Conversión de moneda | No más problemas de compatibilidad. Convierte la moneda que usas en WooCommerce a la moneda de tu cuenta de Mercado Pago.|
 | Pago con tarjetas guardadas en Mercado Pago | Permite que los clientes puedan comprar con los datos guardados de su tarjeta en Mercado Pago, sin tener que rellenar los datos en el checkout de la tienda. |

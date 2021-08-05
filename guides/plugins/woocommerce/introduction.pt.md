@@ -16,8 +16,6 @@ Instale nosso gateway de pagamento no WooCommerce e leve suas vendas para outro 
 | Meios de pagamento | Aceite pagamentos com cartão de crédito, boleto, ----[mlb]---- Pix,------------ pagamento em lotérica e saldo na conta do Mercado Pago. |
 | Tipos de checkout | Checkout Pro, Checkout personalizado. |
 | Pague como convidado | Os usuários não precisam estar registrados no Mercado Pago para pagar no WooCommerce. |
-| Devolução de pagamentos | Devolva pagamentos pela plataforma. |
-| Cancelamento de pagamentos | Cancele pagamentos pendentes pela plataforma. |
 | Modo binário | Aprovar ou rejeitar pagamentos instantaneamente. |
 | Conversão de moeda | Não há mais problemas de compatibilidade. Faça a conversão da moeda que você usa no WooCommerce para a moeda da sua conta do Mercado Pago.|
 | Pagamento com cartões salvos no Mercado Pago  | Permite que os clientes comprem com os dados do cartão guardados no Mercado Pago, sem precisar preencher dados do cartão no checkout da loja. |
