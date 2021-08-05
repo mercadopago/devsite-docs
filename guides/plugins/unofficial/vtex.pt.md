@@ -84,7 +84,7 @@ E pronto! Sua afiliação com o MercadoPagoV1 já está ativa!
 >
 > Importante
 >
-> Lembre-se que o gateway MercadoPagoV2 por enquanto adiciona apenas as condições de pagamento Boleto Bancário, Pix, Mercado Pago Offline e Checkout Pro.
+> Lembre-se que o gateway MercadoPagoV2 por enquanto adiciona apenas as condições de pagamento boleto bancário, Pix, Mercado Pago Offline e Checkout Pro.
 
 Para criar uma **afiliação de gateway MercadoPagoV2**, siga os passos abaixo:
 
