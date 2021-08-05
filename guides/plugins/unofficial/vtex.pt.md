@@ -124,7 +124,7 @@ Após ter criado sua afiliação com o Mercado Pago, você tem a opção de ofer
 >
 > Importante
 >
-> Certifique em sua loja de aplicativos da VTEX se o App **Mercado Pago Payment APP** esteja instalado para utilização das condições de pagamento **MercadoPagoOff, MercadoPagoPro e MercadoPagoWallet** ou solicite a instalação pela equipe VTEX sob demanda através de ticket no [Support VTEX](https://support.vtex.com). <br>
+> Certifique em sua loja de aplicativos da VTEX se o app **Mercado Pago Payment APP** esteja instalado para utilização das condições de pagamento **MercadoPagoOff, MercadoPagoPro e MercadoPagoWallet** ou solicite a instalação pela equipe VTEX sob demanda através de ticket no [Support VTEX](https://support.vtex.com). <br>
 
 <!-- -->
 > NOTE
