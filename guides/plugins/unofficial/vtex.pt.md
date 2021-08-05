@@ -187,7 +187,7 @@ Para **criar uma condição de pagamento Pix utilizando sua afiliação com o [M
 
 ### Condição de pagamento Mercado Pago Offline
 
-Para criar uma **condição de pagamento Mercado Pago Offline, onde poderá contar com Boleto Bancário e Pagamentos com PEC (em lotéricas), utilizando sua afiliação com o MercadoPagoV2**, siga os passos abaixo:
+Para criar uma **condição de pagamento Mercado Pago Offline, onde poderá contar com boleto bancário e pagamentos com PEC (em lotéricas), utilizando sua afiliação com o MercadoPagoV2**, siga os passos abaixo:
 
 1. No painel de administração de sua loja, acesse "Configurações" do módulo de pagamentos.
 2. Na aba "Condições de pagamento", clique no botão "+".
