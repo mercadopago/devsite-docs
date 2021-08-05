@@ -40,7 +40,7 @@ Você poderá utilizar a **afiliação de gateway [MercadoPagoV1](#bookmark_cria
 >
 > Importante
 >
-> Lembre-se que o gateway MercadoPagoV1 adiciona apenas a condição de pagamento Cartão de Crédito.
+> Lembre-se que o gateway MercadoPagoV1 adiciona apenas a condição de pagamento cartão de crédito.
 
 Para criar uma **afiliação de gateway de pagamento com o Mercado Pago**, siga os passos abaixo:
 
