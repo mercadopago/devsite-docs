@@ -88,7 +88,7 @@ E pronto! Sua afiliação com o MercadoPagoV1 já está ativa!
 
 Para criar uma **afiliação de gateway MercadoPagoV2**, siga os passos abaixo:
 
-1. No painel de administração de sua loja, acesse "Configurações" do módulo de pagamentos.
+1. No painel de administração de sua loja, acesse “Configurações do módulo de pagamentos”.
 2. Na aba "Afiliações de Gateways", clique no botão "+".
 3. Clique no conector MercadoPagoV2.
 4. Preencha os campos correspondentes:
