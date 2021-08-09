@@ -216,7 +216,7 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 
 #### Configuração do meio de pagamento Mercado Pago PRO
 
-**O comprador finalizará o pagamento no Mercado Pago via formulário web modal** diretamente em sua loja.
+O comprador finalizará o pagamento no Mercado Pago via formulário web modal diretamente em sua loja.
 
 Para criar essa condição de pagamento, siga os passos abaixo:
 
@@ -232,7 +232,7 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 
 #### Configuração do meio de pagamento Mercado Pago Wallet
 
-**O comprador finaliza o pagamento com a carteira do Mercado Pago exclusivamente de usuários cadastrados** e uma vez concluído o processo, voltará para sua loja.
+O comprador finaliza o pagamento com a carteira do Mercado Pago exclusivamente de usuários cadastrados e uma vez concluído o processo, voltará para sua loja.
 
 Para criar essa condição de pagamento, siga os passos abaixo:
 
