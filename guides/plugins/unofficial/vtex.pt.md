@@ -126,13 +126,6 @@ Após ter criado sua afiliação com o Mercado Pago, você tem a opção de ofer
 >
 > Certifique em sua loja de aplicativos da VTEX se o app **Mercado Pago Payment APP** esteja instalado para utilização das condições de pagamento **MercadoPagoOff, MercadoPagoPro e MercadoPagoWallet** ou solicite a instalação pela equipe VTEX sob demanda através de ticket no [Support VTEX](https://support.vtex.com). <br>
 
-<!-- -->
-> NOTE
-> 
-> Nota
->
-> As mudanças nas Condições de pagamento podem levar até 10 minutos para serem aplicadas. <br>
-
 ### Condição de pagamento cartão de crédito
 
 Para criar uma **condição de pagamento cartão de crédito** utilizando sua afiliação com o MercadoPagoV1, siga os passos abaixo:
@@ -253,6 +246,12 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 
 ![Setting payments in VTEX](/images/vtex/vtex_condicao_wallet_4.gif)
 
+<!-- -->
+> NOTE
+> 
+> Nota
+>
+> As mudanças nas Condições de pagamento podem levar até 10 minutos para serem aplicadas. <br>
 
 ## Configurando o parcelamento em sua conta Mercado Pago
 
