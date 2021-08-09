@@ -103,8 +103,8 @@ Para criar uma **afiliação de gateway MercadoPagoV2**, siga os passos abaixo:
 | Categoría principal da loja - Categoría principal de la tienda | Categoria da loja. |
 | Reembolso automático / manual | Selecionar se deseja que o Mercado Pago realize automaticamente o reembolso em caso de cancelamento ou se deseja reter o valor pago para o cliente usar em compras futuras. |
 | Modo binário - binário | Configura se o pagamento poderá passar por revisão manual ou não. |
-| Métodos de pagamento excluídos - Métodos de pago excluídos (visa, paypal, bolbradesco, oxxo...) | Métodos de pagamento a serem excluídos no momento da compra. |
-| Tipos de pagamento excluídos - Tipos de pago excluidos (credit_card, bank_transfer, ticket...) | Tipos de pagamento a serem excluídos no momento da compra. |
+| Métodos de pagamento excluídos - Métodos de pago excluídos (Visa, Paypal, Bolbradesco, OXXO e outros) | Métodos de pagamento a serem excluídos no momento da compra. |
+| Tipos de pagamento excluídos - Tipos de pago excluidos (credit_card, bank_transfer, ticket e outros) | Tipos de pagamento a serem excluídos no momento da compra. |
 | Modo de processamento - Modo de procesamiento | Configura se o pagamento será gateway ou agregador. |
 | Integrator ID | Para programadores ou agências que realizam a integração. |
 | Moeda - Moneda | Moeda a ser configurada (USD ou Local). |
