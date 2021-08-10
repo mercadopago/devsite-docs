@@ -124,7 +124,7 @@ Após ter criado sua afiliação com o Mercado Pago, você tem a opção de ofer
 >
 > Importante
 >
-> Certifique em sua loja de aplicativos da VTEX se o app **Mercado Pago Payment APP** esteja instalado para utilização das condições de pagamento **MercadoPagoOff, MercadoPagoPro e MercadoPagoWallet** ou solicite a instalação pela equipe VTEX sob demanda através de ticket no [Support VTEX](https://support.vtex.com). <br>
+> Para utilizar as condições de pagamento do Mercado Pago0ff, MercadoPagoPro e MercadoPagoWallet, é preciso que o aplicativo “Mercado Pago Payment APP” esteja instalado em sua loja. Caso não esteja, [acesse na página de suporte da VTEX](https://support.vtex.com) e solicite a instalação. <br>
 
 ### Condição de pagamento cartão de crédito
 
