@@ -2678,7 +2678,7 @@ email: 'test_user_15748052@testuser.com',
 entity_type: "individual"
 },
 transaction_details: {
-financial_institution: 1234
+financial_institution: "1234"
 },
 additional_info: {
 ip_address: "127.0.0.1"
