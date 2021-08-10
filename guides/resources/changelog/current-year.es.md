@@ -4,6 +4,24 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ---
 
+## Agosto 2021
+
+----[mlb]----
+### 10 de agosto
+
+> CHANGELOG
+>
+> Nueva versión de gateway MercadoPagoV2 para VTEX
+>
+> NEWS: FEATURE
+>
+> Product: VTEX
+
+Ahora puedes incluir Boleto Bancário, Checkout Pro, Mercado Pago Wallet y Mercado Pago Offline como medio de pago con el gateway MercadoPagoV2 para VTEX.
+
+[Ir a la documentación de VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/#bookmark_criando_afiliação_de_gateway_mercadopagov2)
+------------
+
 ## Julio 2021
 
 ### 30 de julio
