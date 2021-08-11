@@ -5,6 +5,12 @@ The Mercado Pago module for WooCommerce allows you to expand the functionalities
 
 If you already use WooCommerce to create e-commerce sites in WordPress, one of the most popular content managers worldwide, you can count on our module to add a trusted payment processor on your website or that of your clients.
 
+> WARNING
+>
+> Important announcement
+>
+> On July 13th 2021, WooCommerce notified its customers that some of its versions were vulnerable. The necessary fixes were already made in the last update. Therefore, it is **very important that your store has the latest version of WooCommerce updated** to prevent exposure of sensitive information. For more information, see the [WooCommerce blog.](https://woocommerce.com/pt-br/posts/critical-vulnerability-detected-july-2021/)
+
 ## What can I do with Mercado Pago on WooCommerce
 
 Install the payment processor in WooCommerce and take your sales to another level with the best shopping experience:
