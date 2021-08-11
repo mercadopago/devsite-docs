@@ -7,7 +7,7 @@ Se você já usa o WooCommerce para criar sites de e-commerce no WordPress, um d
 
 > WARNING
 >
-> Importante
+> Aviso importante
 > 
 > Atenção: Em 13/07/21, o WooCommerce notificou seus clientes de que algumas de suas versões estão vulneráveis. As correções necessárias já foram feitas na última atualização. Por isso, é **muito importante que sua loja esteja com a última versão do WooCommerce atualizada** para prevenir a exposição de informações sensíveis. Mais informações no [blog do Woocommerce](https://woocommerce.com/pt-br/posts/critical-vulnerability-detected-july-2021/).
 

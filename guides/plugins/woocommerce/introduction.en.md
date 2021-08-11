@@ -7,9 +7,9 @@ If you already use WooCommerce to create e-commerce sites in WordPress, one of t
 
 > WARNING
 >
-> Important
+> Important announcement
 >
-> Attention: On 7/13/21, WooCommerce notified its customers that some of its versions are vulnerable. The necessary fixes were already made in the last update. Therefore, it is **very important that your store has the latest version of WooCommerce updated** to prevent exposure of sensitive information. More information on the [WooCommerce blog.](https://woocommerce.com/pt-br/posts/critical-vulnerability-detected-july-2021/)
+> On July 13th 2021, WooCommerce notified its customers that some of its versions were vulnerable. The necessary fixes were already made in the last update. Therefore, it is **very important that your store has the latest version of WooCommerce updated** to prevent exposure of sensitive information. For more information, see the [WooCommerce blog.](https://woocommerce.com/pt-br/posts/critical-vulnerability-detected-july-2021/)
 
 ## What can I do with Mercado Pago on WooCommerce
 
