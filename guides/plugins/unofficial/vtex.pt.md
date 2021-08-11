@@ -17,7 +17,7 @@
 
 VTEX é uma **plataforma e-commerce para sua loja virtual**, que permite processar pagamentos através do Mercado Pago.
 
-Você poderá oferecer aos seus clientes a possibilidade de pagar com [cartão de crédito](#bookmark_condição_de_pagamento_cartão_de_crédito), [boleto bancário](#bookmark_condição_de_pagamento_boleto_bancário) e [Pix](#bookmark_condição_de_pagamento_pix) no próprio checkout da sua loja ou [redirecionado para o site do Mercado Pago](#bookmark_condição_de_pagamento_checkout_pro).
+Você poderá oferecer aos seus clientes a possibilidade de pagar com [cartão de crédito](#bookmark_condição_de_pagamento_cartão_de_crédito), [boleto bancário](#bookmark_condição_de_pagamento_boleto_bancário), [Pix](#bookmark_condição_de_pagamento_pix), [Mercado Pago Offline](#bookmark_condição_de_pagamento_mercado_pago_offline) no próprio checkout da sua loja ou [redirecionado para o site do Mercado Pago](#bookmark_condição_de_pagamento_checkout_pro).
 
 
 ## Etapas para configurar
@@ -32,16 +32,22 @@ Os **passos para começar a operar com Mercado Pago**, são os seguintes:
 ## Cadastre uma afiliações de gateway
 
 Uma afiliação de gateway é um conjunto de configurações que representam o processamento de seus pagamentos com o Mercado Pago.
-Você poderá utilizar a **afiliação de gateway [MercadoPagoV1](#bookmark_criando_afiliação_de_gateway_mercadopagov1)**, onde possibilita processar pagamentos com cartão de crédito, boleto bancário ou Checkout Pro, e também adicionar a **afiliação de gateway [MercadoPagoV2](#bookmark_criando_afiliação_de_gateway_mercadopagov2)** para o processamento de pagamento [Pix](#bookmark_condição_de_pagamento_pix).
+Você poderá utilizar a **afiliação de gateway [MercadoPagoV1](#bookmark_criando_afiliação_de_gateway_mercadopagov1)**, onde possibilita processar pagamentos com cartão de crédito e também adicionar a **afiliação de gateway [MercadoPagoV2](#bookmark_criando_afiliação_de_gateway_mercadopagov2)** para o processamento de pagamento com [boleto bancário](#bookmark_condição_de_pagamento_boleto_bancário), [Pix](#bookmark_condição_de_pagamento_pix), [Mercado Pago Offline](#bookmark_condição_de_pagamento_mercado_pago_offline) e [Checkout Pro](#bookmark_condição_de_pagamento_checkout_pro).
 
 ### Criando afiliação de gateway MercadoPagoV1
+
+> WARNING
+>
+> Importante
+>
+> Lembre-se que o gateway MercadoPagoV1 adiciona apenas a condição de pagamento cartão de crédito.
 
 Para criar uma **afiliação de gateway de pagamento com o Mercado Pago**, siga os passos abaixo:
 
 1. No painel de administração de sua loja, acesse "Configurações" do módulo de pagamentos.
 2. Na aba "Afiliações de Gateways", clique no botão "+".
 3. Clique no conector MercadoPagoV1.
-4. Preencha os campos correspondentes e clique em "Salvar".
+4. Preencha os campos correspondentes:
 
 | Campos | Dados necessários |
 | --- | --- |
@@ -66,57 +72,63 @@ Para criar uma **afiliação de gateway de pagamento com o Mercado Pago**, siga 
 | Categoria Principal | Escolha a categoria que mais se encaixa com sua loja. |
 | Captura de segurança antecipada | Você pode desativar a função ou escolher em quanto tempo quer realizar a captura (depois da aprovação da transação e da análise do antifraude). |
 
+5. Clique em "Salvar".
+
 ![Setting affiliation in VTEX](/images/vtex/vtex_afiliacao_gateway_1.gif)
 
-E pronto! Sua afiliação com o Mercado Pago já está ativa!
+E pronto! Sua afiliação com o MercadoPagoV1 já está ativa!
 
 ### Criando afiliação de gateway MercadoPagoV2
-
-#### Requisito prévio
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha uma chave Pix
-
-Para configurar Pix como condição de pagamento, você deve ter cadastrada uma chave Pix na conta do vendedor. Este dado é único, serve para identificar sua conta e permitirá que você utilize as funcionalidades do meio de pagamento.
-
-[Conheça como criar uma chave Pix](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required)
-
-> Considere que o registro da chave Pix pode levar alguns minutos.
-
-Para criar uma **afiliação de gateway MercadoPagoV2**, siga os passos abaixo:
-
-1. No painel de administração de sua loja, acesse "Configurações" do módulo de pagamentos.
-2. Na aba "Afiliações de Gateways", clique no botão "+".
-3. Clique no conector MercadoPagoV2.
-4. Preencha os campos correspondentes e clique em "Salvar".
-
-| Campos | Dados necessários |
-| --- | --- |
-| Application Key | Refere-se às suas [credenciais]([FAKER][CREDENTIALS][URL]) do Mercado Pago. Complete com sua Public Key. |
-| Application Token | Refere-se às suas [credenciais]([FAKER][CREDENTIALS][URL]) do Mercado Pago. Complete com seu Access Token. |
-
-![Setting affiliation in VTEX](/images/vtex/vtex_afiliacao_gateway_v2.gif)
-
-E pronto! Sua afiliação com o Mercado Pago já está ativa!
 
 > WARNING
 >
 > Importante
 >
-> Lembre-se que o gateway MercadoPagoV2 por enquanto adiciona apenas o Pix como meio de pagamento. Para configurar outros métodos de pagamento, crie uma afiliação de gateway [MercadoPagoV1](#bookmark_criando_afiliação_de_gateway_mercadopagov1).
+> Lembre-se que o gateway MercadoPagoV2 por enquanto adiciona apenas as condições de pagamento boleto bancário, Pix, Mercado Pago Offline e Checkout Pro.
+
+Para criar uma **afiliação de gateway MercadoPagoV2**, siga os passos abaixo:
+
+1. No painel de administração de sua loja, acesse “Configurações do módulo de pagamentos”.
+2. Na aba "Afiliações de Gateways", clique no botão "+".
+3. Clique no conector MercadoPagoV2.
+4. Preencha os campos correspondentes:
+
+| Campos | Dados necessários |
+| --- | --- |
+| Application Key | Refere-se às suas [credenciais]([FAKER][CREDENTIALS][URL]) do Mercado Pago. Complete com sua Public Key. |
+| Application Token | Refere-se às suas [credenciais]([FAKER][CREDENTIALS][URL]) do Mercado Pago. Complete com seu Access Token. |
+| Prazo de vencimento do boleto - Periodo de vencimiento del ticket | Prazo, em dias úteis, de vencimento do boleto. Caso o cliente efetue o pagamento após o prazo, o dinheiro será depositado na conta do mesmo no Mercado Pago. |
+| Nome da loja - Nombre para resúmenes | Nome da loja, o valor deste campo aparecerá na fatura do cartão do cliente. |
+| Parcelamento máximo - Cuotas máximas | Número máximo de parcelas disponíveis. |
+| Categoría principal da loja - Categoría principal de la tienda | Categoria da loja. |
+| Reembolso automático / manual | Selecionar se deseja que o Mercado Pago realize automaticamente o reembolso em caso de cancelamento ou se deseja reter o valor pago para o cliente usar em compras futuras. |
+| Modo binário - binário | Configura se o pagamento poderá passar por revisão manual ou não. |
+| Métodos de pagamento excluídos - Métodos de pago excluídos (Visa, Paypal, Bolbradesco, OXXO e outros) | Métodos de pagamento a serem excluídos no momento da compra. |
+| Tipos de pagamento excluídos - Tipos de pago excluidos (credit_card, bank_transfer, ticket e outros) | Tipos de pagamento a serem excluídos no momento da compra. |
+| Modo de processamento - Modo de procesamiento | Configura se o pagamento será gateway ou agregador. |
+| Integrator ID | Para programadores ou agências que realizam a integração. |
+| Moeda - Moneda | Moeda a ser configurada (USD ou Local). |
+
+5. Clique em "Salvar".
+
+![Setting affiliation in VTEX](/images/vtex/vtex_afiliacao_gateway_v2.gif)
+
+E pronto! Sua afiliação com o MercadoPagoV2 já está ativa!
+
 
 ## Configurar condições de pagamento
 
-Após ter criado sua afiliação com o Mercado Pago, você tem a opção de oferecer em sua loja pagamentos com [cartão de crédito](#bookmark_condição_de_pagamento_cartão_de_crédito), [boleto bancário](#bookmark_condição_de_pagamento_boleto_bancário), pagamentos via [Checkout Pro](#bookmark_condição_de_pagamento_checkout_pro) e também [Pix](#bookmark_condição_de_pagamento_pix).
+Após ter criado sua afiliação com o Mercado Pago, você tem a opção de oferecer em sua loja pagamentos com [cartão de crédito](#bookmark_condição_de_pagamento_cartão_de_crédito), [boleto bancário](#bookmark_condição_de_pagamento_boleto_bancário), [Pix](#bookmark_condição_de_pagamento_pix), [Mercado Pago Offline](#bookmark_condição_de_pagamento_mercado_pago_offline) e também pagamentos via [Checkout Pro](#bookmark_condição_de_pagamento_checkout_pro).
 
-<!-- -->
-> NOTE
-> 
-> Nota
+> WARNING
 >
-> As mudanças nas Condições de pagamento podem levar até 10 minutos para serem aplicadas. <br>
+> Importante
+>
+> Para utilizar as condições de pagamento do Mercado Pago0ff, MercadoPagoPro e MercadoPagoWallet, é preciso que o aplicativo “Mercado Pago Payment APP” esteja instalado em sua loja. Caso não esteja, [acesse na página de suporte da VTEX](https://support.vtex.com) e solicite a instalação. <br>
 
 ### Condição de pagamento cartão de crédito
 
-Para criar uma **condição de pagamento cartão de crédito** utilizando sua afiliação com o Mercado Pago, siga os passos abaixo:
+Para criar uma **condição de pagamento cartão de crédito** utilizando sua afiliação com o MercadoPagoV1, siga os passos abaixo:
 
 1. No painel de administração de sua loja, acesse "Configurações" do módulo de pagamentos.
 2. Na aba "Condições de pagamento", clique no botão "+".
@@ -137,13 +149,22 @@ Para criar uma **condição de pagamento boleto bancário utilizando sua afilia�
 2. Na aba "Condições de pagamento", clique no botão "+".
 3. Na seção "Boleto", escolha "Boleto Bancário" para adicionar ao meio de pagamento.
 4. Informe o "Nome da regra" para facilitar a identificação e ative a condição de pagamento no campo "Status".
-5. Informe sua afiliação com o MercadoPagoV1, no campo "Processar com a afiliação".
+5. Informe sua afiliação com o MercadoPagoV2, no campo "Processar com a afiliação".
 6. Clique em "Salvar".
 <p>&nbsp;</p>
 
 ![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_boleto_3.gif)
 
 ### Condição de pagamento Pix
+
+#### Requisito prévio
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha uma chave Pix
+
+Para configurar Pix como condição de pagamento, você deve ter cadastrada uma chave Pix na conta do vendedor. Este dado é único, serve para identificar sua conta e permitirá que você utilize as funcionalidades do meio de pagamento.
+
+[Conheça como criar uma chave Pix](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required)
+
+> Considere que o registro da chave Pix pode levar alguns minutos.
 
 Para **criar uma condição de pagamento Pix utilizando sua afiliação com o [MercadoPagoV2](#bookmark_criando_afiliação_de_gateway_mercadopagov2)**, siga os passos abaixo:
 
@@ -156,6 +177,22 @@ Para **criar uma condição de pagamento Pix utilizando sua afiliação com o [M
 <p>&nbsp;</p>
 
 ![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_pix.gif)
+
+### Condição de pagamento Mercado Pago Offline
+
+Para criar uma **condição de pagamento Mercado Pago Offline, onde poderá contar com boleto bancário e pagamentos com PEC (em lotéricas), utilizando sua afiliação com o MercadoPagoV2**, siga os passos abaixo:
+
+1. No painel de administração de sua loja, acesse "Configurações" do módulo de pagamentos.
+2. Na aba "Condições de pagamento", clique no botão "+".
+3. Na seção Outro, selecione a condição de pagamento "MercadoPagoOff".
+4. Informe o "Nome da regra" para facilitar a identificação e ative a condição de pagamento no campo "Status".
+5. Informe sua afiliação com o MercadoPagoV2, no campo "Processar com a afiliação".
+6. Clique em "Salvar".
+<p>&nbsp;</p>
+
+![Setting payments in VTEX](/images/vtex/vtex_condicao_mercado_pago_offline.gif)
+
+E pronto! Sua condição de pagamento Mercado Pago Offline já está ativa!
 
 ### Condição de pagamento Checkout Pro
 
@@ -179,7 +216,7 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 
 #### Configuração do meio de pagamento Mercado Pago PRO
 
-**O comprador finalizará o pagamento no Mercado Pago via formulário web modal** diretamente em sua loja.
+O comprador finalizará o pagamento no Mercado Pago via formulário web modal diretamente em sua loja.
 
 Para criar essa condição de pagamento, siga os passos abaixo:
 
@@ -187,7 +224,7 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 2. Na aba "Condições de pagamento", clique no botão "+".
 3. Na seção "Outro", selecione a condição de pagamento "MercadoPagoPro ".
 4. Informe o "Nome da regra" para facilitar a identificação e ative a condição de pagamento no campo "Status".
-5. Informe sua afiliação com o MercadoPagoV1, no campo "Processar com a afiliação".
+5. Informe sua afiliação com o MercadoPagoV2, no campo "Processar com a afiliação".
 6. Clique em "Salvar".
 <p>&nbsp;</p>
 
@@ -195,7 +232,7 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 
 #### Configuração do meio de pagamento Mercado Pago Wallet
 
-**O comprador finaliza o pagamento com a carteira do Mercado Pago exclusivamente de usuários cadastrados** e uma vez concluído o processo, voltará para sua loja.
+O comprador finaliza o pagamento com a carteira do Mercado Pago exclusivamente de usuários cadastrados e uma vez concluído o processo, voltará para sua loja.
 
 Para criar essa condição de pagamento, siga os passos abaixo:
 
@@ -203,17 +240,18 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 2. Na aba "Condições de pagamento", clique no botão "+".
 3. Na seção "Outro", selecione a condição de pagamento "MercadoPagoWallet".
 4. Informe o "Nome da regra" para facilitar a identificação e ative a condição de pagamento no campo "Status".
-5. Informe sua afiliação com o MercadoPagoV1, no campo "Processar com a afiliação".
+5. Informe sua afiliação com o MercadoPagoV2, no campo "Processar com a afiliação".
 6. Clique em "Salvar".
 <p>&nbsp;</p>
 
 ![Setting payments in VTEX](/images/vtex/vtex_condicao_wallet_4.gif)
 
-> WARNING
+<!-- -->
+> NOTE
+> 
+> Nota
 >
-> Importante
->
-> Caso as condições de pagamento MercadoPagoPro e MercadoPagoWallet não estiverem disponíveis para adicioná-las, certifique em sua loja de aplicativos da VTEX que o App Mercado Pago Payment APP esteja instalado ou solicite a instalação pela equipe VTEX sob demanda através de ticket no [Support VTEX](https://support.vtex.com). <br>
+> As mudanças nas Condições de pagamento podem levar até 10 minutos para serem aplicadas. <br>
 
 ## Configurando o parcelamento em sua conta Mercado Pago
 
