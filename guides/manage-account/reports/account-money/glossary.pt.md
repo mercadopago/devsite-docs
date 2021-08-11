@@ -27,7 +27,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | MKP_FEE_AMOUNT | Comissão do Mercado Livre. |
 | FINANCING_FEE_AMOUNT | Custo de oferecer parcelamento sem juros. |
 | SHIPPING_FEE_AMOUNT | Custo de envio. |
-| TAXES_AMOUNT | Impostos recebidos. |
+| TAXES_AMOUNT | ----[mla]---- Impostos cobrados por retenção de Receita Bruta na fonte, IVA, Lucros; e impostos sobre Créditos e Débitos, entre outros. [Saiba mais sobre retenções e impostos.](https://vendedores.mercadolibre.com.ar/nota/retenciones-y-percepciones-sobre-tus-ventas-lo-que-debes-saber/) ------------ ----[mlm, mlc, mlu, mlb, mco, mpe]----Impostos recebidos.------------  |
 | INSTALLMENTS | Número de parcelas em que a transação foi realizada. |
 | TAX_DETAIL | Descrição do imposto retido por operação no `TAXES_AMOUNT`. ----[mla]---- <br><br>Você pode considerar os seguintes valores conforme a jurisdição: <br>cordoba<br>corrientes<br>mendoza<br>la_pampa<br>santa_fe<br>tucuman<br>entre_rios<br>catamarca<br>neuquen<br>santiago_del_estero<br>rio_negro<br>jujuy ------------ <br><br> |
 | POS_ID | ID do caixa, se o pagamento é feito através de um comércio físico. |
