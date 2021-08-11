@@ -23,7 +23,21 @@ Lançamos a nova versão 1.12.1 e 2.4.2 do SDK PHP.
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-php/releases).
 
----
+----[mlb]----
+### 10 de agosto
+
+> CHANGELOG
+>
+> Nova versão do gateway MercadoPagoV2 para VTEX
+>
+> NEWS: FEATURE
+>
+> Product: VTEX
+
+Agora você pode incluir Boleto Bancário, Checkout Pro, Mercado Pago Wallet y Mercado Pago Offline como meio de pagamento utilizando o gateway MercadoPagoV2 para VTEX.
+
+[Ir para a documentação VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/#bookmark_criando_afiliação_de_gateway_mercadopagov2)
+------------
 
 ## Julho 2021
 
