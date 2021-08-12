@@ -111,7 +111,7 @@ Para criar uma **afiliação de gateway MercadoPagoV2**, siga os passos abaixo:
 
 5. Clique em "Salvar".
 
-![Setting affiliation in VTEX](/images/vtex/vtex_afiliacao_gateway_v2.gif)
+![Setting affiliation in VTEX](/images/vtex/vtex_afiliacao_gateway_v2-2.gif)
 
 E pronto! Sua afiliação com o MercadoPagoV2 já está ativa!
 
@@ -153,7 +153,7 @@ Para criar uma **condição de pagamento boleto bancário utilizando sua afilia�
 6. Clique em "Salvar".
 <p>&nbsp;</p>
 
-![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_boleto_3.gif)
+![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_boleto_3-2.gif)
 
 ### Condição de pagamento Pix
 
@@ -228,7 +228,7 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 6. Clique em "Salvar".
 <p>&nbsp;</p>
 
-![Setting payments in VTEX](/images/vtex/vtex_condicao_pro_4.gif)
+![Setting payments in VTEX](/images/vtex/vtex_condicao_pro_4-2.gif)
 
 #### Configuração do meio de pagamento Mercado Pago Wallet
 
@@ -244,7 +244,7 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 6. Clique em "Salvar".
 <p>&nbsp;</p>
 
-![Setting payments in VTEX](/images/vtex/vtex_condicao_wallet_4.gif)
+![Setting payments in VTEX](/images/vtex/vtex_condicao_wallet_4-2.gif)
 
 <!-- -->
 > NOTE
