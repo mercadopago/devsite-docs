@@ -9,7 +9,7 @@ Checkout Pro es la integración que **te permite cobrar a través de nuestro for
 ![Basic-Checkout](/images/web-payment-checkout/checkout-modal-sv.png)
 ------------
 
-## Checkout Pro ofrece muchas cosas:
+## Checkout Pro ofrece varios beneficios, como por ejemplo:
 
 ----[mla]----
 * Pagar con los principales [medios de pago](https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264) del país.
