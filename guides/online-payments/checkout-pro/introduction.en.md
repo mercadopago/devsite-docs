@@ -9,7 +9,7 @@ Checkout Pro is an integration that allows you to **charge your customers throug
 ![Basic-Checkout](/images/web-payment-checkout/checkout-modal-sv.png)
 ------------
 
-## Checkout Pro offers a lot of things:
+## Checkout Pro offers so many things:
 
 ----[mla]----
 * The most popular [payment methods](https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264) in the country.
