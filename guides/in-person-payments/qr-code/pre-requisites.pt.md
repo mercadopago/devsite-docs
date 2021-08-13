@@ -14,7 +14,7 @@ Sabemos que alguns termos são novos. Antes de começar, os deixamos perto de su
 | Caixa (POS) | É um **ponto de venda** que existe numa sucursal ou loja física. Cada caixa terá um código QR unívoco vinculado. |
 | Ordem | É o pedido realizado pelo seu cliente. Contém uma relação de produtos com seu valor associado. |
 
-> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials).
+> Leia [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/credentials/credentials) para maiores informações. 
 
 ## Requisitos prévios
 

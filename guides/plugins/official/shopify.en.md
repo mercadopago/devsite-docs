@@ -79,7 +79,7 @@ When you test, check that the payment flow works correctly.
 
 ### Go to production
 
-To start receiving payments, you must [activate your credentials]([FAKER][CREDENTIALS][URL]/).
+To start receiving payments, you must activate your credentials.
 
 > Check the [requirements to go to production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/goto-production) if you have any questions about the process.
 

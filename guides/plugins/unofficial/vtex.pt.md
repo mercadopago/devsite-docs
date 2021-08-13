@@ -287,7 +287,7 @@ Os erros mais comuns são os seguintes:
 >
 > Importante
 >
-> Antes de iniciar sua operação em produção, você deve [ativar suas credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials). Caso já tenha realizado este passo o link não será apresentado.
+> Antes de iniciar sua operação em produção, você deve ativar suas credenciais. Caso já tenha realizado este passo o link não será apresentado.
 
 <!-- -->
 > Para mais informação, visite o site [oficial da VTEX](https://help.vtex.com/) e o [site de status da Vtex](https://status.vtex.com/).

@@ -30,7 +30,7 @@ The credentials are the **keys that we provide you with, so that you can configu
 
 To find them, go to the [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developer/panel/credentials) section.
 
->Do you have questions about credentials? You can check our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials).
+>Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/credentials/credentials) for more information.
 
 
 ### Use our official library

@@ -24,7 +24,7 @@ To **add Mercado Pago to your store**, follow these steps:
 1. Access "Settings" from your control panel of your website.
 1. In the "eCommerce & Finance" section, click "Accept Payments".
 1. In the payment method list, find Mercado pago and click on "Connect".
-1. In the "Account information" section, fill out Client ID and Client Secret fields with your Mercado Pago account production credentials.
+1. In the "Account information" section, fill out Client ID and Client Secret fields with your Mercado Pago account production [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/credentials/credentials).
 1. Finally, click on "Connect".
 ------------
 
@@ -35,7 +35,7 @@ To **add Mercado Pago to your store**, follow these steps:
 1. In the "eCommerce & Finance" section, click "Accept Payments".
 1. In the lower part, click on "See more payment options."
 1. On the methods of payment list, click on 'Connect' in Mercado Pago.
-1. Fill out Client ID and Client Secret fields with your Mercado Pago account production credentials.
+1. Fill out Client ID and Client Secret fields with your Mercado Pago account production [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/credentials/credentials).
 1. Finally, click on "Connect".
 ------------
 
@@ -45,7 +45,7 @@ To **connect Mercado Pago to your store**, follow the steps below:
 1. Access "Settings" from your control panel of your website.
 1. In the "eCommerce & Finance" section, click "Accept Payments".
 1. Locate "Mercado Pago" in the list of payment options and click "Connect".
-1. Complete the Client ID and Client Secret fields with the [production credentials]([FAKER][CREDENTIALS][URL]) from your Mercado Pago account.
+1. Complete the Client ID and Client Secret fields with the production [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/credentials/credentials) from your Mercado Pago account.
 1. Click "Connect". Your MercadoPago account will be connected to your store.
 ------------
 
@@ -77,9 +77,6 @@ To **connect Mercado Pago to your store**, follow the steps below:
 ![Setting active in Wix](/images/wix/wix_en_connect_configuration_mlm.gif)
 <p>&nbsp;</p>
 ------------
-
-
->  Find all the information about your credentials in our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/faqs/credentials).
 
 ----[mla, mlb, mlu, mlc, mlm, mpe]----
 ## Set up interest-free instalments in your Mercado Pago account

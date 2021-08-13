@@ -14,7 +14,7 @@ Sabemos que algunos términos son nuevos. Antes de empezar, te los dejamos a man
 | Caja (POS) | Es un **punto de venta** que existe en una sucursal o tienda física. Cada caja tendrá vinculado un código QR unívoco. |
 | Orden | Es el pedido realizado por tu cliente. Contiene un listado de productos con su monto asociado. |
 
-> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials).
+> Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/credentials/credentials) para obtener más información..
 
 ## Requisitos previos
 

@@ -34,7 +34,7 @@ Este _fragmento de código HTML_ insertará un botón de pago. Cuando el comprad
 Puedes encontrar tu Public key en la [sección de credenciales]([FAKER][CREDENTIALS][URL]).
 
 
-> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials).
+> Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/credentials/credentials) para obtener más información.
 
 
 ### Paso 3: Obtener los datos

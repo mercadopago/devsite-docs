@@ -32,7 +32,7 @@ This _fragment of HTML code_ will insert a payment button. When the buyer presse
 ```
 You can find the Public Key in the [Credentials section]([FAKER][CREDENTIALS][URL]) page.
 
-> Find all the information about your credentials in our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/faqs/credentials).
+> Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/credentials/credentials) fore more information.
 
 ### Step 3: Get the data
 

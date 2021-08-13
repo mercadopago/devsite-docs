@@ -24,7 +24,7 @@ Para **adicionar Mercado Pago à sua loja**, siga estas etapas:
 1. Acesse "Configurações" do seu painel de controle de seu site.
 1. Na seção "eCommerce e finanças", clique em "Aceitar pagamentos".
 1. Localize o "Mercado Pago" na lista de opções de pagamentos e clique em "Conectar".
-1. Na seção "Informações da conta", complete os campos Client ID e Client Secret com as [credenciais de produção]([FAKER][CREDENCIAIS][URL]) de sua conta no Mercado Pago.
+1. Na seção "Informações da conta", complete os campos Client ID e Client Secret com as [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/credentials/credentials) de produção de sua conta no Mercado Pago.
 1. Por fim, clique em "Conectar".
 
 ------------
@@ -36,7 +36,7 @@ Para **adicionar Mercado Pago à sua loja**, siga estas etapas:
 1. Na seção "eCommerce e finanças", clique em "Aceitar pagamentos".
 1. Na parte inferior, clique em "Ver mais opções de pagamento".
 1. Localize o "Mercado Pago" na lista de opções de pagamentos e clique em "Conectar".
-1. Na seção "Informações da conta", complete os campos Client ID e Client Secret com as [credenciais de produção]([FAKER][CREDENCIAIS][URL]) de sua conta no Mercado Pago.
+1. Na seção "Informações da conta", complete os campos Client ID e Client Secret com as [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/credentials/credentials) de produção de sua conta no Mercado Pago.
 1. Por fim, clique em "Conectar".
 
 ------------
@@ -47,7 +47,7 @@ Para **conectar o Mercado Pago em sua loja**, siga os passos abaixo:
 1. Acesse "Configurações" do seu painel de controle de seu site.
 1. Na seção "eCommerce e finanças", clique em "Aceitar pagamentos".
 1. Localize o "Mercado Pago" na lista de opções de pagamentos e clique em "Conectar".
-1. Na seção "Informações da conta", complete os campos Client ID e Client Secret com as [credenciais de produção]([FAKER][CREDENTIALS][URL]) de sua conta do Mercado Pago.
+1. Na seção "Informações da conta", complete os campos Client ID e Client Secret com as [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/credentials/credentials) de produção de sua conta do Mercado Pago.
 1. Por fim, clique em "Conectar".
 ------------
 
@@ -78,9 +78,6 @@ Para **conectar o Mercado Pago em sua loja**, siga os passos abaixo:
 ![Setting active in Wix](/images/wix/wix_pt_connect_configuration_mlm.gif)
 <p>&nbsp;</p>
 ------------
-
-
-> Encontre todas as informações sobre suas credenciais em [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/faqs/credentials).
 
 
 ----[mla, mlb, mlu, mlc, mlm, mpe]----

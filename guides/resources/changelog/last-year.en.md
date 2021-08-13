@@ -450,7 +450,7 @@ We have released a new version of SDK .NET 1.8.1.
 
 Are you going to integrate Mercado Pago for another account? Now you can request access to their credentials quickly and safely.
 
-[Learn more about how to request credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/faqs/credentials)
+[Learn more about how to request credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/credentials/credentials)
 
 ---
 
