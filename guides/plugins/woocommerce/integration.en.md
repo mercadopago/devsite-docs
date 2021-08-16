@@ -23,7 +23,7 @@ Done! With this you can capture the payments you receive in WooCommerce with you
 >
 > Important
 >
-> The [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/credentials/credentials) are the keys that uniquely identify you within the platform. To operate in a **test environment** with which to simulate online payments, use the test credentials. Use **production** credentials to receive real payments.
+> The [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/credentials/credentials) are the keys that uniquely identify you within the platform. To operate in a **test environment** in order to simulate online payments, use the test credentials. To receive real payments, use **production** credentials.
 
 
 ---
