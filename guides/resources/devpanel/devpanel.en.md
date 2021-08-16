@@ -26,7 +26,7 @@ To every application created, a new card containing the application's name, desc
 
 
 ## Application details
-By clicking on an application card, you will have access to application details, including:
+By clicking on an application card, you will have access to it's details, including:
 
 - **My credentials** - Unique passwords with which we identify an integration in your account. The passwords are responsible for capturing payments in online stores and other applications. Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/credentials/credentials) for more information.
 - **Webhook notifications** - Notifications received via HTTP POST calls whenever there is a transaction-related event in your application. Read [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks) for more information.
