@@ -20,7 +20,7 @@ Para criar uma aplicação siga os passos abaixo.
 4. Aceite nossos Termos e Condições.
 5. Crie a aplicação clicando no botão "Criar aplicação".
 
-A cada aplicação criada, um card novo é automaticamente criado na página inicial do painel do desenvolvedor que contém o nome, descrição e o ID da aplicação.
+A cada aplicação criada, um card novo contendo o nome, descrição e ID da aplicação é automaticamente criado na página inicial do painel do desenvolvedor.
 
 
 ## Detalhes da aplicação
