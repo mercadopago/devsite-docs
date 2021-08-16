@@ -23,7 +23,7 @@ Pronto! Assim você poderá capturar os pagamentos que receber no WooCommerce co
 >
 > Importante
 >
-> As [credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/credentials/credentials) são a senhas que te identificam de forma única dentro da plataforma. Para operar em um **ambiente de testes** para simular pagamentos on-line, utilize as credenciais de teste. Use as credenciais de **produção** para receber pagamentos reais.
+> As [credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/credentials/credentials) são a senhas que te identificam de forma única dentro da plataforma. Para operar em um **ambiente de testes** e simular pagamentos on-line, utilize as credenciais de teste. Para receber pagamentos reais, use as credenciais de **produção**.
 
 ---
 
