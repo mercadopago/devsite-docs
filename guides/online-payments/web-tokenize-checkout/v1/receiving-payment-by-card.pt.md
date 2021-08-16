@@ -32,7 +32,7 @@ Este _fragmento de código javascript_ criará um botão de pagamento. Quando o 
 ```
 Você pode encontrar sua Public key na [seção "Credenciais"]([FAKER][CREDENTIALS][URL]).
 
-> Leia [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/credentials/credentials) para maiores informações. 
+> Leia [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/credentials/credentials) para mais informações. 
 
 ### Paso 3: Obter todos os dados
 
