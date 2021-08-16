@@ -1,7 +1,7 @@
 # Developer Panel
 The [Developer Panel](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel) is your application management environment. It is automatically created with a user ID for you when you open a Mercado Pago account. 
 
-Applications are nothing more than the different integrations one or more stores have. You can create an application for each solution implemented to have everything organized and maintain control to facilitate your management. 
+Applications are nothing more than different integrations that one or more stores have. You can create an application for each solution implemented, so you have everything organized and maintain control to facilitate your management. 
 
 Each application has a set of credentials and the possibility to configure its notifications. Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/credentials/credentials) and [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks) for more information.
 
