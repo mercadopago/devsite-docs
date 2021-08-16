@@ -3,7 +3,7 @@ O [Painel do Desenvolvedor](https://mercadopago[FAKER][URL][DOMAIN]/developers/p
 
 As aplicações nada mais são do que as diferentes integrações contidas em uma ou mais lojas. Você pode criar uma aplicação para cada solução que implementar, a fim de ter tudo organizado e manter um controle que facilite a gestão. 
 
-Cada aplicação possui um conjunto de credenciais e a possibilidade de configurar suas próprias notificações. Leia [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/credentials/credentials) e [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks) para maiores informações.
+Cada aplicação possui um conjunto de credenciais e a possibilidade de configurar suas próprias notificações. Leia [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/credentials/credentials) e [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks) para mais informações.
 
 > WARNING 
 > 
