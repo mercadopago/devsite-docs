@@ -55,7 +55,7 @@ Si por alguna razón necesitas eliminar una aplicación, simplemente haz clic en
 
 
 ## Cuentas que integras
-Puedes integrar soluciones para cuentas distintas a la tuya. Al integrar soluciones para otras cuentas, puedes solicitar acceso a las credenciales de estas cuentas para mantener la seguridad de los datos. Esta sección contiene las credenciales de estas otras cuentas. Para solicitar acceso, simplemente:
+Puedes integrar soluciones para cuentas distintas a la tuya. Al integrar soluciones para otras cuentas, puedes solicitar acceso a las credenciales de estas cuentas para mantener la seguridad de los datos. Esta sección contiene las credenciales de estas otras cuentas. Para solicitar acceso, se necesita:
 1. Haz clic en el botón "Solicitar credenciales".
 2. Completa el correo electrónico de la cuenta para la que se solicitaste las credenciales.
 3. Confirma la solicitud de credenciales.
