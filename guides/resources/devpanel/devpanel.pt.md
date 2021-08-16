@@ -35,7 +35,7 @@ Depois de criar sua aplicação, você pode clicar no botão "Editar" para ver a
   - **Nome da aplicação**.
   - **Descrição da aplicação**.
   - **Permissões da aplicação**. Este campo apresenta as opções de acesso da sua aplicação. Por padrão, sua aplicação é criada com todas as permissões ativadas, mas você pode desativar uma permissão clicando na caixa de seleção referente à permissão que você deseja alterar. 
-  - **Redirect URL**. Este campo define a URL na qual você deseja receber o código de autorização quando sua integração for configurada como Marketplace ou for realizada através de OAuth.
+  - **Redirect URL**. Este campo define a URL na qual você deseja receber o código de autorização quando sua integração for configurada como Marketplace ou realizada através de OAuth.
 
 - **Produto a ser integrado**. Esta seção define o produto a ser integrado na sua aplicação. O campo "Produtos disponíveis" apresenta a lista de produtos disponíveis a serem integrados. Por padrão, o valor deste campo é preenchido com o valor inserido no momento da criação da aplicação, mas você pode alterar o produto escolhido sem a necessidade de reconfigurar a integração. Este campo serve como um campo informativo do produto ao qual a aplicação se refere.
 
