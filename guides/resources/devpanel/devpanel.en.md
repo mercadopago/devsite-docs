@@ -21,7 +21,7 @@ To create an application, follow the steps below:
 4. Accept our Terms and Conditions.
 5. Create the application by clicking on the button "Create application".
 
-To every application created, a new card is also automatically created on the Developer Panel's homepage, containing the application's name, description, and ID.
+To every application created, a new card containing the application's name, description and ID is automatically created on the Developer Panel's homepage.
 
 
 
