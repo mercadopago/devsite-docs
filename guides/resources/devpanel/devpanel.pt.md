@@ -51,7 +51,7 @@ Caso você precise por algum motivo, excluir uma aplicação, basta clicar em "E
 
 
 ## Contas que você integra
-Você pode integrar soluções para outras contas além da sua própria. Quando estiver integrando soluções para outras contas, você pode solicitar acesso às credenciais desta conta de forma a manter a segurança dos dados. Nesta seção constam as credenciais dessas outras contas. Para solicitar acesso, basta:
+Você pode integrar soluções para outras contas além da sua própria. Quando estiver integrando soluções para outras contas, você pode solicitar acesso às credenciais desta conta de forma a manter a segurança dos dados. Nesta seção, constam as credenciais dessas outras contas. Para solicitar acesso, basta:
 1. Clicar no botão "Solicitar credenciais".
 2. Preencher o email da conta para a qual as credenciais serão solicitadas.
 3. Confirmar a solicitação das credenciais.
