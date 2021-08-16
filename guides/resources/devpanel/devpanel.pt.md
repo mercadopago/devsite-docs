@@ -9,7 +9,7 @@ Cada aplicação possui um conjunto de credenciais e a possibilidade de configur
 > 
 > Atenção
 > 
-> Se você não é desenvolvedor, recomendamos que você integre o Mercado Pago à sua loja através de [plugins e plataformas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins) e recupere suas credenciais através da sua conta Mercado Pago em [Seu negócio > Configurações > Gestão e Administração > Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials). Leia [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/credentials/credentials) para maiores informações.
+> Se você não é desenvolvedor, recomendamos que você integre o Mercado Pago à sua loja através de [plugins e plataformas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins) e recupere suas credenciais através da sua conta Mercado Pago em [Seu negócio > Configurações > Gestão e Administração > Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials). Leia [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/credentials/credentials) para mais informações.
 
 
 ## Criar aplicação
