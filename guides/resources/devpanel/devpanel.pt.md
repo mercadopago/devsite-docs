@@ -26,7 +26,7 @@ A cada aplicação criada, um card novo contendo o nome, descrição e ID da apl
 ## Detalhes da aplicação
 Ao clicar no card de uma aplicação, você terá acesso aos seus detalhes, incluindo:
 - **Minhas credenciais**. Senhas únicas com as quais identificamos uma integração na sua conta. Servem para capturar pagamentos em lojas online e outras aplicações. Leia [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/credentials/credentials) para mais informações.
-- **Notificações webhook**. Eventos que você pode receber através chamadas POST HTTP toda vez que houver um evento relacionado à transações na sua aplicação. Leia [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks) para maiores informações para maiores informações.
+- **Notificações webhook**. Eventos que você pode receber através chamadas POST HTTP toda vez que houver um evento relacionado a transações na sua aplicação. Leia [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks) para maiores informações para mais informações.
 
 
 ## Editar aplicação
