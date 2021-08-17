@@ -49,7 +49,7 @@ Ambos os tipos de credenciais são compostas por dois pares de chaves que você 
 > 
 > Observação
 >
->Você tem a opção de renovar suas credenciais por motivos de segurança ou quaisquer que sejam. Para renová-las basta clicar clicar em Mais opções > Renovar.
+>Você tem a opção de renovar suas credenciais por motivos de segurança ou quaisquer que sejam. Para renová-las, basta clicar clicar em Mais opções > Renovar.
 
 
 ## Compartilhar credenciais
