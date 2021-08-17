@@ -22,20 +22,10 @@ Both types of credentials are composed by two pairs of keys that you must use ac
 | Public key | Application's public key that will usually be used in the frontend. It allows you to know the means of payment and to encrypt card data. |
 | Access token | Application's private key that will always be used in the backend to generate payments. It is very important that this data is protected in your servers and is not accessible for any system user or attacker. |
 
-<table>
-  <tr>
-   <td>Client ID
-   </td>
-   <td>Unique ID that identifies your integration.
-   </td>
-  </tr>
-  <tr>
-   <td>Client secret
-   </td>
-   <td>Private key to be used in some plugins to generate payments. It is very important that this data is protected in your servers and is not accessible for any system user or attacker.
-   </td>
-  </tr>
-</table>
+| Type | Description |
+| :--- | :--- |
+| Client ID | Unique ID that identifies your integration. |
+| Client secret | Private key to be used in some plugins to generate payments. It is very important that this data is protected in your servers and is not accessible for any system user or attacker. |
 
 > NOTE
 > 

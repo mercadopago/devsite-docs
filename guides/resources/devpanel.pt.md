@@ -1,5 +1,5 @@
 # Dashboard
-O [Dashboard](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel) é o seu ambiente de gerenciamento de aplicações. Ao abrir uma conta Mercado Pago, ele é automaticamente criado para você com um User ID que o identifica. 
+O [Dashboard](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel) é o seu ambiente de gerenciamento de integração criado automaticamente com um ID de usuário para você quando você abre uma conta no Mercado Pago. Nele, você pode criar, editar e excluir aplicativos.
 
 As aplicações nada mais são do que as diferentes integrações contidas em uma ou mais lojas. Você pode criar uma aplicação para cada solução que implementar, a fim de ter tudo organizado e manter um controle que facilite a gestão. 
 

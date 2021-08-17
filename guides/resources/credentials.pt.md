@@ -15,35 +15,15 @@ Existem dois tipos diferentes de credenciais:
 
 Ambos os tipos de credenciais são compostas por dois pares de chaves que você deve utilizar de acordo com o produto escolhido (veja a documentação de cada produto para detalhes de quais chaves utilizar).
 
-<table>
-  <tr>
-   <td>Public key
-   </td>
-   <td>Chave pública da aplicação que normalmente será usada no frontend e permitirá, por exemplo, conhecer os meios de pagamento e criptografar os dados do cartão.
-   </td>
-  </tr>
-  <tr>
-   <td>Access token
-   </td>
-   <td>Chave privada da aplicação que sempre será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.
-   </td>
-  </tr>
-</table>
+| Tipo | Descrição |
+| :--- | :--- |
+| Public key | Chave pública da aplicação que normalmente será usada no frontend e permitirá, por exemplo, conhecer os meios de pagamento e criptografar os dados do cartão. |
+| Access token | Chave privada da aplicação que sempre será usada no backend para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor. |
 
-<table>
-  <tr>
-   <td>Client ID
-   </td>
-   <td>ID único que identifica sua integração.
-   </td>
-  </tr>
-  <tr>
-   <td>Client secret
-   </td>
-   <td>Chave privada para ser utilizada em alguns plugins para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor.
-   </td>
-  </tr>
-</table>
+| Tipo | Descrição |
+| :--- | :--- |
+| Client ID | ID único que identifica sua integração. |
+| Client secret | Chave privada para ser utilizada em alguns plugins para gerar pagamentos. É muito importante que este dado fique protegido em seus servidores e não seja acessível por nenhum usuário do sistema ou invasor. |
 
 > NOTE
 > 
