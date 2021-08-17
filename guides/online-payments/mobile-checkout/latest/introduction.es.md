@@ -31,7 +31,7 @@ Ofrece a tus usuarios la mejor experiencia de pago, tanto en Android como en iOS
 3. Inicia el proceso de pago desde un botón en tu aplicación.
 4. Enterate del pago escuchando las notificaciones que te enviamos.
 
-> Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/credentials/credentials) para obtener más información.
+> Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) para obtener más información.
 
 ## Añade la dependencia a tu proyecto
 [[[

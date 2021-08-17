@@ -31,7 +31,7 @@ Offer the best payment experience to your users, on Android or iOS.
 3. Start the payment process with a button on your application.
 4. Get to know when a payment is made with the notifications we send you.
 
-> Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/credentials/credentials) for more information. 
+> Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) for more information. 
 
 ## Add the dependency to your project
 [[[

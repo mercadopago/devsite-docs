@@ -56,7 +56,7 @@ Aprende el proceso paso a paso para configurar el módulo para aceptar pagos a t
 > Existen dos tipos de credenciales:
 > * Modo Sandbox: Las credenciales de este modo se utilizan para realizar pruebas.
 > * Modo Producción: Las credenciales de este modo se utilizan para recibir los pagos en Producción. Para utilizar las credenciales del modo de producción debe activar tus credenciales.
-> * Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/credentials/credentials) para obtener más información.
+> * Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) para obtener más información.
 
 3) Con las credenciales completadas, el siguiente paso es habilitar los medios de pago.
 En primer lugar, ve al medio que quieres habilitar.

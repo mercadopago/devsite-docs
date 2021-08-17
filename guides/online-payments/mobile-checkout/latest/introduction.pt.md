@@ -32,7 +32,7 @@ Ofereça aos seus usuários a melhor experiência de pagamento, tanto no Android
 3. Inicie o processo de pagamento a partir de um botão em sua aplicação.
 4. Receba as notificações de pagamento que lhe enviamos.
 
-> Leia [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/credentials/credentials) para mais informações. 
+> Leia [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) para mais informações. 
 
 ## Adicione a dependência ao seu projeto
 [[[

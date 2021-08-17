@@ -1,15 +1,15 @@
-# Panel de Desarrolladores
-El [Panel de Desarrolladores](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel) es tu entorno de gestión de aplicaciones. Cuando abres una cuenta de Mercado Pago, este se crea automáticamente para ti con un User ID que te identifica. 
+# Dashboard
+El [Dashboard](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel) es tu entorno de gestión de aplicaciones. Cuando abres una cuenta de Mercado Pago, este se crea automáticamente para ti con un User ID que te identifica. 
 
 Las aplicaciones no son más que las diferentes integraciones que puedan tener una o más tiendas. Puedes crear una aplicación para cada solución que implementes, con el fin de tener todo organizado y mantener un control que te facilite su administración. 
 
-Cada aplicación tiene un conjunto de credenciales y cuenta con la posibilidad de configurar sus propias notificaciones. Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/credentials/credentials) y [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks) para obtener más información.
+Cada aplicación tiene un conjunto de credenciales y cuenta con la posibilidad de configurar sus propias notificaciones. Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) y [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks) para obtener más información.
 
 > WARNING 
 > 
 > Atención
 > 
-> Si no eres desarrollador, te recomendamos que integres Mercado Pago a tu tienda a través de [plugins y plataformas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins). Puedes recuperar tus credenciales a través de tu cuenta de Mercado Pago en[Tu negocio> Configuración> Gestión y administración> Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials). Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/credentials/credentials) para obtener más información.
+> Si no eres desarrollador, te recomendamos que integres Mercado Pago a tu tienda a través de [plugins y plataformas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins). Puedes recuperar tus credenciales a través de tu cuenta de Mercado Pago en[Tu negocio> Configuración> Gestión y administración> Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials). Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) para obtener más información.
 
 
 ## Crea una aplicación
@@ -28,7 +28,7 @@ Con cada aplicación creada, se crea automáticamente una nueva tarjeta en la p�
 ## Detalles de la aplicación
 Al hacer clic en la tarjeta de una aplicación, tendrás acceso a los detalles de la aplicación, que incluyen:
 
-- **Mis credenciales**. Contraseñas únicas con las que identificamos una integración en tu cuenta. Sirven para capturar pagos en tiendas online y otras aplicaciones. Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/credentials/credentials) para obtener más información.
+- **Mis credenciales**. Contraseñas únicas con las que identificamos una integración en tu cuenta. Sirven para capturar pagos en tiendas online y otras aplicaciones. Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) para obtener más información.
 - **Notificaciones de webhook**. Notificaciones que puedes recibir a través de llamadas HTTP POST siempre que haya un evento relacionado con una transacción en tu aplicación. Lee [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks) para obtener más información.
 
 

@@ -55,7 +55,7 @@ You can check other ways to open the checkout in the [Customization section](htt
 
 You can find the Public Key in the [Credentials section]([FAKER][CREDENTIALS][URL]) page.
 
-> Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/credentials/credentials) fore more information.
+> Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) fore more information.
 
 > This documentation uses the new library version. To see the previous version, go to [Receive card payments with MercadoPago.js V1 section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/web-tokenize-checkout/v1/receiving-payment-by-card).
 

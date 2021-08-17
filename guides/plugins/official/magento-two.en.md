@@ -76,7 +76,7 @@ Here is how to set up the module to accept Credit Card ----[mlb]----, Pix-------
 > There are two types of credentials:
 > * Trial credentials: The credentials in this way are used for testing.
 > * Productive credentials: The credentials in this way are used to receive payments in production. To use the credentials of the production mode you must activate your credentials.
-> * Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]//developers/en/guides/credentials/credentials) for more information.
+> * Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]//developers/en/guides/resources/credentials) for more information.
 
 3) With your credentials filled, you need to enable payment methods.
 First, access the method that you want to enable.

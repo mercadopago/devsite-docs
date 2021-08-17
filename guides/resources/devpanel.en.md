@@ -1,15 +1,15 @@
-# Developer Panel
-The [Developer Panel](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel) is your application management environment. It is automatically created with a user ID for you when you open a Mercado Pago account. 
+# Dashboard
+The [Dashboard](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel) is your application management environment. It is automatically created with a user ID for you when you open a Mercado Pago account. 
 
 Applications are nothing more than different integrations that one or more stores have. You can create an application for each solution implemented, so you have everything organized and maintain control to facilitate your management. 
 
-Each application has a set of credentials and the possibility to configure its notifications. Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/credentials/credentials) and [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks) for more information.
+Each application has a set of credentials and the possibility to configure its notifications. Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) and [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks) for more information.
 
 > WARNING 
 > 
 > Warning
 > 
-> If you are not a developer, we recommend that you integrate Mercado Pago to your store through [plugins and platforms](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins) and retrieve your credentials through your Mercado Pago account in [Your business > Settings > Management and Administration > Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials). Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/credentials/credentials) for more information.
+> If you are not a developer, we recommend that you integrate Mercado Pago to your store through [plugins and platforms](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins) and retrieve your credentials through your Mercado Pago account in [Your business > Settings > Management and Administration > Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials). Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) for more information.
 
 
 ## Create application
@@ -28,7 +28,7 @@ To every application created, a new card containing the application's name, desc
 ## Application details
 By clicking on an application card, you will have access to it's details, including:
 
-- **My credentials** - Unique passwords with which we identify an integration in your account. The passwords are responsible for capturing payments in online stores and other applications. Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/credentials/credentials) for more information.
+- **My credentials** - Unique passwords with which we identify an integration in your account. The passwords are responsible for capturing payments in online stores and other applications. Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) for more information.
 - **Webhook notifications** - Notifications received via HTTP POST calls whenever there is a transaction-related event in your application. Read [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks) for more information.
 
 

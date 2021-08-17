@@ -12,7 +12,7 @@ Conecta una cuenta de Mercado Pago al módulo para capturar los cobros de tus ve
 Una vez instalado el módulo, sigue estos pasos para integrar:
 
 1. Crea una [cuenta vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-company?confirmation_url=https%3A%2F%2Fwww.mercadopago[FAKER][URL][DOMAIN]%2Fcomo-cobrar) en Mercado Pago si todavía no tienes una.
-2. Obtén el par de [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/credentials/credentials) Access Token y Public Key y pégalas en los campos de Producción y Pruebas que encontrarás en la configuración del módulo.
+2. Obtén el par de [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) Access Token y Public Key y pégalas en los campos de Producción y Pruebas que encontrarás en la configuración del módulo.
 3. Homologa la cuenta para [salir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/goto-production) y recibir el dinero de tus ventas en Mercado Pago.
 
 ¡Y listo! Con esto podrás capturar los pagos que recibas en WooCommerce con tu cuenta de Mercado Pago.
@@ -23,7 +23,7 @@ Una vez instalado el módulo, sigue estos pasos para integrar:
 >
 > Importante
 >
-> Las [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/credentials/credentials) son las claves que te identifican de forma única dentro de la plataforma. Para operar en un **entorno de pruebas** con el que simular pagos online, utiliza las credenciales de prueba. Para recibir pagos reales, usa las credenciales de **producción**.
+> Las [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) son las claves que te identifican de forma única dentro de la plataforma. Para operar en un **entorno de pruebas** con el que simular pagos online, utiliza las credenciales de prueba. Para recibir pagos reales, usa las credenciales de **producción**.
 
 ---
 
