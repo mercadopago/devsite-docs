@@ -23,7 +23,7 @@ Una vez instalado el módulo, sigue estos pasos para integrar:
 >
 > Importante
 >
-> Las  [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) son las claves que te identifican de forma única dentro de la plataforma. Para operar en un **entorno de pruebas** y simular pagos online, utiliza las credenciales de prueba. Para recibir pagos reales, usa las credenciales de **producción**.
+> Las [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) son las claves que te identifican de forma única dentro de la plataforma. Para operar en un **entorno de pruebas** y simular pagos online, utiliza las credenciales de prueba. Para recibir pagos reales, usa las credenciales de **producción**.
 
 ### Próximo paso
 
