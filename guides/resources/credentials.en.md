@@ -12,7 +12,7 @@ Credentials are unique passwords responsible for capturing payments in online st
 
 There are two different types of credentials:
 
-* **Test credentials**. Test credentials test your integrations and can be used together with test credit cards to simulate card receipts. We recommend you to use them before production credentials to ensure that integrations work properly.
+* **Test credentials**. Test credentials check your integrations and can be used together with test users and test credit cards to simulate card receipts. We recommend you to use them before production credentials to ensure that integrations work properly.
 * **Production credentials**. Production credentials receive payments. Before going to production, check out the [requirements to go to production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/go-live-requirements).
 
 Both types of credentials are composed by two pairs of keys that you must use according to the chosen product (see each product's documentation for details on which keys should be used).
