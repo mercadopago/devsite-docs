@@ -1,5 +1,5 @@
 # Dashboard
-The [Dashboard](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel) is your integration management environment automatically created with a user ID for you when you open a Mercado Pago account. In it you can create, edit and delete applications.
+The [Dashboard](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel) is your integration management environment automatically created with an user ID for you when you open a Mercado Pago account. In it you can create, edit and delete applications.
 
 Applications are nothing more than different integrations that one or more stores have. You can create an application for each solution implemented, so you have everything organized and maintain control to facilitate your management. 
 
