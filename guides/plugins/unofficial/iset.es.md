@@ -98,7 +98,7 @@ Para **activar los dos checkouts**, sigue estos pasos:
 1. Busca en la lista de medios de pago a Mercado Pago e ingresa en “Opciones de configuración”.
 1. En la sección Modelo de checkout elige la opción “Ambos”.
 1. Agrega el [e-mail de tu cuenta de Mercado Pago](https://www.mercadopago.com.br/profile#from-section=menu) en “E-mail de registro en Mercado Pago”.
-1. Completa los campos “Cliend ID, Clien Secret y Public Key” con las [credenciales de tu cuenta de Mercado Pago]((https://www.mercadopago[FAKER][URL][DOMAIN]developers/es/guides/resources/faqs/credentials)).
+1. Completa los campos “Cliend ID, Clien Secret y Public Key” con las [credenciales de tu cuenta de Mercado Pago]((https://www.mercadopago[FAKER][URL][DOMAIN]developers/es/guides/resources/credentials)).
 1. Haz clic en “Cerrar” y después en “Guardar cambios”.
 <p>&nbsp;</p>
 
