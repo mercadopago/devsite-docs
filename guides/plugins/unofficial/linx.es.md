@@ -45,7 +45,7 @@ Después de agregar el medio de pago, **configura los datos para tu integración
 
 1. Accede a la pestaña “Integración” y completa los campos Public Key y Access Token Key que corresponden a las [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) de producción de tu cuenta de Mercado Pago.
 1. Completa el nombre que aparecerá en la factura de tu cliente para que pueda reconocerte.
-1. Si quieres probar tus pagos, en la sección Modo de prueba, selecciona la opción “Sí”. Luego, completa los campos Public Key y Access Token key con las  [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) de prueba de tu cuenta de Mercado Pago. 
+1. Si quieres probar tus pagos, en la sección Modo de prueba, selecciona la opción “Sí”. Luego, completa los campos Public Key y Access Token key con las [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) de prueba de tu cuenta de Mercado Pago. 
 1. En la sección de Cuotas, selecciona “Externo (API de Mercado Pago) para utilizar las configuraciones de cuotas directamente de tu cuenta de Mercado Pago. 
 1. Por último, haz clic en “Guardar”.
 <p>&nbsp;</p>
