@@ -17,20 +17,10 @@ There are two different types of credentials:
 
 Both types of credentials are composed by two pairs of keys that you must use according to the chosen product (see each product's documentation for details on which keys should be used).
 
-<table>
-  <tr>
-   <td>Public key
-   </td>
-   <td>Application's public key that will usually be used in the frontend. It allows you to know the means of payment and to encrypt card data.
-   </td>
-  </tr>
-  <tr>
-   <td>Access token
-   </td>
-   <td>Application's private key that will always be used in the backend to generate payments. It is very important that this data is protected in your servers and is not accessible for any system user or attacker.
-   </td>
-  </tr>
-</table>
+| Type | Description |
+| :--- | :--- |
+| Public key | Application's public key that will usually be used in the frontend. It allows you to know the means of payment and to encrypt card data. |
+| Access token | Application's private key that will always be used in the backend to generate payments. It is very important that this data is protected in your servers and is not accessible for any system user or attacker. |
 
 <table>
   <tr>
