@@ -2653,7 +2653,7 @@ Para receber pagamentos com Webpay, você deve enviar o endereço IP do comprado
 >
 > Importante
 >
-> Em breve, a integração com o WebPay será descontinuada. Para processar suas vendas, recomendamos que utilize [outra solução de pagamento](https://www.mercadopago.cl/developers/pt/guides/resources/localization/payment-methods#bookmark_chile).
+> Em breve, a integração com o WebPay será descontinuada. Recomendamos **fortemente** que utilize [outra solução de pagamento](https://www.mercadopago.cl/developers/pt/guides/resources/localization/payment-methods#bookmark_chile) para evitar problemas futuros.
 
 [[[
 ```php
