@@ -12,10 +12,8 @@ Conecte uma conta do Mercado Pago ao módulo para capturar os recebimentos das s
 Quando o módulo estiver instalado, siga estas etapas para integrá-lo:
 
 1. Crie uma [conta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-company?confirmation_url=https%3A%2F%2Fwww.mercadopago[FAKER][URL][DOMAIN]%2Fcomo-cobrar) no Mercado Pago caso ainda não tenha uma.
-2. Obtenha suas [credenciais]([FAKER][CREDENTIALS][URL]) Access Token e Public Key e cole-as nos campos de Produção e Testes que estarão na configuração do módulo.
+2. Obtenha suas [credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) Access Token e Public Key e cole-as nos campos de Produção e Testes que estarão na configuração do módulo.
 3. Homologue a conta para [entrar em produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/goto-production) e receber o dinheiro das suas vendas no Mercado Pago.
-
-> Encontre toda a informação sobre suas credenciais em nossas [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/faqs/credentials).
 
 Pronto! Assim você poderá capturar os pagamentos que receber no WooCommerce com a sua conta do Mercado Pago.
 
@@ -25,7 +23,7 @@ Pronto! Assim você poderá capturar os pagamentos que receber no WooCommerce co
 >
 > Importante
 >
-> As [credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/credentials) são a senhas que te identificam de forma única dentro da plataforma. Para operar em um **ambiente de testes** para simular pagamentos on-line, utilize as credenciais de teste. Use as credenciais de **produção** para receber pagamentos reais.
+> As [credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) são a senhas que te identificam de forma única dentro da plataforma. Para operar em um **ambiente de testes** e simular pagamentos on-line, utilize as credenciais de teste. Para receber pagamentos reais, use as credenciais de **produção**.
 
 ---
 

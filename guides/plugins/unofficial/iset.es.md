@@ -64,7 +64,7 @@ Para activar este modelo, sigue estos pasos:
 1. Busca en la lista de medios de pago a Mercado Pago e ingresa en “Opciones de configuración”.
 1. En la sección Modelo de checkout, elige la opción “Patrón”.
 1. Agrega el [e-mail de tu cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/profile#from-section=menu) en “E-mail de registro en Mercado Pago”.
-1. Completa los campos Client ID y Client Secret con las [credenciales]([FAKER][CREDENTIALS][URL]) de tu cuenta de Mercado Pago.
+1. Completa los campos Client ID y Client Secret con las [credenciales]([(https://www.mercadopago[FAKER][URL][DOMAIN]developers/es/guides/resources/credentials)) de tu cuenta de Mercado Pago.
 1. Haz clic en “Cerrar” y después en “Guardar cambios”.
 <p>&nbsp;</p>
 
@@ -81,7 +81,7 @@ Para activar este modelo, sigue estos pasos:
 1. Busca en la lista de medios de pago a Mercado Pago e ingresa en “Opciones de configuración”.
 1. En la sección Modelo de checkout, elige la opción “Transparente”.
 1. Completa el [e-mail de tu cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/profile#from-section=menu) en “E-mail de registro en Mercado Pago”.
-1. Completa en los campos Client ID, Client Secret y Public Key, las [credenciales]([FAKER][CREDENTIALS][URL]) de tu cuenta de Mercado Pago.
+1. Completa en los campos Client ID, Client Secret y Public Key, las [credenciales]((https://www.mercadopago[FAKER][URL][DOMAIN]developers/es/guides/resources/credentials)) de tu cuenta de Mercado Pago.
 1. Haz clic en “Cerrar” y después en “Guardar cambios”.
 <p>&nbsp;</p>
 
@@ -98,14 +98,12 @@ Para **activar los dos checkouts**, sigue estos pasos:
 1. Busca en la lista de medios de pago a Mercado Pago e ingresa en “Opciones de configuración”.
 1. En la sección Modelo de checkout elige la opción “Ambos”.
 1. Agrega el [e-mail de tu cuenta de Mercado Pago](https://www.mercadopago.com.br/profile#from-section=menu) en “E-mail de registro en Mercado Pago”.
-1. Completa los campos “Cliend ID, Clien Secret y Public Key” con las [credenciales de tu cuenta de Mercado Pago]([FAKER][CREDENTIALS][URL]).
+1. Completa los campos “Cliend ID, Clien Secret y Public Key” con las [credenciales de tu cuenta de Mercado Pago]((https://www.mercadopago[FAKER][URL][DOMAIN]developers/es/guides/resources/credentials)).
 1. Haz clic en “Cerrar” y después en “Guardar cambios”.
 <p>&nbsp;</p>
 
 ![Payments Connect - iSET](/images/iset/iset_configuration_checkout_ambos_5.gif)
 <p>&nbsp;</p>
-
-> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials).
 
 ## Configuración de cuotas
 
