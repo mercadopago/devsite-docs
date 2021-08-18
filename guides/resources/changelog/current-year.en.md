@@ -6,7 +6,25 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## August 2021
 
-### August 11st
+### August 11th
+
+> CHANGELOG
+>
+> New WooCommerce plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+
+We have released the new version 5.3.0 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.3.0) for further details regarding this release.
 
 > CHANGELOG
 >
@@ -16,7 +34,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 >
 > PRODUCT: SDK PHP
 We have released a new version of SDK PHP 1.12.1 and 2.4.2.
-
+>
 > GIT
 >
 > GitHub
