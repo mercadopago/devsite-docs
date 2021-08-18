@@ -1,55 +1,25 @@
 # Wix
- 
-## O que é Wix?
- 
-Wix é uma **plataforma virtual que te permite receber pagamentos com o Mercado Pago**.
- 
-Com ela você poderá, oferecer aos seus clientes a possibilidade de pagar diretamente no site do Mercado Pago.
 
- ## Etapas para configurar
+Wix é uma plataforma que permite criar, desenhar, gerenciar e desenvolver uma loja online na qual você pode oferecer aos clientes da sua loja a possibilidade de efetuar pagamentos utilizando o [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/ferramentas-para-vender/cobrar?utm_experiment=optimize&matt_tool=69348836&matt_word=MLB_MP_G_XP_OP_COW_SEARCH_SELL_TXS_Checkout-Transparente-Branded-NovaLP&gclid=CjwKCAjw3_KIBhA2EiwAaAAlinz2stvLcjAuKbXruVqdJtI_cAemAj6CaP3Q3yxbxbiumdlbgMsynhoCeLsQAvD_BwE) do Mercado Pago.
 
-Os passos para **começar a receber pagamentos com Mercado Pago**, são os seguintes:
+Com o **Checkout Pro**, o seu cliente é direcionado para o site do Mercado Pago para realizar o pagamento e é redirecionado para a sua loja assim que o pagamento for realizado. Tudo isso de forma simples, rápida e segura. 
 
-1. [Acesse](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/wix) sua conta Mercado Pago ou [crie uma](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) caso ainda não tenha.
-2. Adicione o Mercado Pago como meio de pagamento dentro da sua loja.
+## Requisitos
+Para oferecer o Mercado Pago como meio de pagamento na sua loja online Wix, você precisará ter os itens descritos abaixo.
+ - **Conta Mercado Pago**: ao ter uma conta do Mercado Pago, você terá acesso às suas credenciais. Você precisará delas para configurar a conexão do Mercado Pago como provedor de pagamento na sua loja Wix. Caso você ainda não tenha uma, basta [criar](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
 
+>NOTE
+>
+>Importante
+>
+>Quer saber mais sobre as credenciais? Encontre mais informações em [credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials).
 
-## Adicione o Mercado Pago como meio de pagamento
+## Conexão e configuração
+A conexão e configuração do Mercado Pago como meio de pagamento na sua loja Wix é feita em duas etapas simples e rápidas. Na primeira, é feita a conexão do Mercado Pago como meio de pagamento na sua loja Wix e na segunda, a configuração do conector com as suas credenciais de produção.
+1. Realize a conexão conforme descrito [nesta documentação](https://support.wix.com/pt/article/conectando-mercadopago-como-provedor-de-pagamento) do Wix. Você será direcionado automaticamente para a página de configuração do conector.
+2. Na página de configuração, preencha os campos com as suas [credenciais de produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) (note que as credenciais solicitadas pelo Wix são o Client ID e o Client Secret) e confirme a conexão.
 
-A Wix te permite receber através do Checkout Pro, no qual o comprador será redirecionado ao Mercado Pago para realizar o pagamento, e voltará para sua loja assim que finalizar esse processo.
-
-----[mla, mlc, mlu, mpe, mco]----
-Para **adicionar Mercado Pago à sua loja**, siga estas etapas:
- 
-1. Acesse "Configurações" do seu painel de controle de seu site.
-1. Na seção "eCommerce e finanças", clique em "Aceitar pagamentos".
-1. Localize o "Mercado Pago" na lista de opções de pagamentos e clique em "Conectar".
-1. Na seção "Informações da conta", complete os campos Client ID e Client Secret com as [credenciais de produção]([FAKER][CREDENCIAIS][URL]) de sua conta no Mercado Pago.
-1. Por fim, clique em "Conectar".
-
-------------
-
-----[mlm]----
-Para **adicionar Mercado Pago à sua loja**, siga estas etapas:
- 
-1. Acesse "Configurações" do seu painel de controle de seu site.
-1. Na seção "eCommerce e finanças", clique em "Aceitar pagamentos".
-1. Na parte inferior, clique em "Ver mais opções de pagamento".
-1. Localize o "Mercado Pago" na lista de opções de pagamentos e clique em "Conectar".
-1. Na seção "Informações da conta", complete os campos Client ID e Client Secret com as [credenciais de produção]([FAKER][CREDENCIAIS][URL]) de sua conta no Mercado Pago.
-1. Por fim, clique em "Conectar".
-
-------------
-
-----[mlb]----
-Para **conectar o Mercado Pago em sua loja**, siga os passos abaixo:
-
-1. Acesse "Configurações" do seu painel de controle de seu site.
-1. Na seção "eCommerce e finanças", clique em "Aceitar pagamentos".
-1. Localize o "Mercado Pago" na lista de opções de pagamentos e clique em "Conectar".
-1. Na seção "Informações da conta", complete os campos Client ID e Client Secret com as [credenciais de produção]([FAKER][CREDENTIALS][URL]) de sua conta do Mercado Pago.
-1. Por fim, clique em "Conectar".
-------------
+E pronto, sua integração está configurada e você já está oferecendo o Mercado Pago como meio de pagamento na sua loja.
 
 ----[mla, mlc, mlu, mpe]----
 <p>&nbsp;</p>
@@ -77,44 +47,4 @@ Para **conectar o Mercado Pago em sua loja**, siga os passos abaixo:
 
 ![Setting active in Wix](/images/wix/wix_pt_connect_configuration_mlm.gif)
 <p>&nbsp;</p>
-------------
-
-
-> Encontre todas as informações sobre suas credenciais em [perguntas frequentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/faqs/credentials).
-
-
-----[mla, mlb, mlu, mlc, mlm, mpe]----
-## Configurando o parcelamento na sua conta do Mercado Pago
- 
-1. Acesse sua [conta do Mercado Pago](https://www.mercadolivre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp) e clique em "Seu negócio".
-2. Acesse a seção "Custos".
-3. Navegue até "Parcelas sem acréscimo" e clique no botão para ativá-las.
-4. Selecione o valor máximo de parcelas sem acréscimo que você deseja oferecer.
-------------
-
-
-----[mla]----
-E pronto! Agora você está oferecendo parcelamento sem acréscimo, assumindo as [tarifas de parcelamento](https://www.mercadopago.com.ar/ayuda/cuotas-sin-interes_3299) que você configurou.
-------------
-
-----[mlb]----
-E pronto! Agora você está oferecendo parcelamento sem acréscimo, assumindo as [tarifas de parcelamento](https://www.mercadopago.com.br/ajuda/oferecer-parcelas-sem-juros-para-compradores_454) que você configurou.
-------------
-
-----[mlc]----
-E pronto! Agora você está oferecendo parcelamento sem acréscimo, assumindo as [tarifas de parcelamento](https://www.mercadopago.cl/ayuda/3299) que você configurou.
-------------
-
-----[mpe]----
-E pronto! Agora você está oferecendo parcelamento sem acréscimo, assumindo as [tarifas de parcelamento](https://www.mercadopago.com.pe/ayuda/3299) que você configurou.
-------------
-
-
-<!-- -->
-----[mla, mlc, mco, mpe, mlm, mlu]----
-> Para mais informações, visite o [site oficial da Wix](https://es.wix.com/ecommerce/tienda-online).
-------------
-
-----[mlb]----
-> Para mais informações, visite o [site oficial da Wix](https://pt.wix.com/ecommerce/loja-virtual).
 ------------

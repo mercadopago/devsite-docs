@@ -1,118 +1,54 @@
 # Wix
 
-## What is Wix?
- 
-Wix is a **virtual platform that enables you to receive payments with Mercado Pago**.
+Wix is ​​a platform that allows you to create, design, manage and develop an online store in which you can offer your store's customers the possibility of making payments using Mercado Pago [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/ferramentas-para-vender/cobrar?utm_experiment=optimize&matt_tool=69348836&matt_word=MLB_MP_G_XP_OP_COW_SEARCH_SELL_TXS_Checkout-Transparente-Branded-NovaLP&gclid=CjwKCAjw3_KIBhA2EiwAaAAlinz2stvLcjAuKbXruVqdJtI_cAemAj6CaP3Q3yxbxbiumdlbgMsynhoCeLsQAvD_BwE).
 
-With it, you can offer your customers to pay directly from Mercado Pago site.
+With **Checkout Pro**, your customer is directed to the Mercado Pago website to make the payment and is redirected to your store as soon as the payment is done. All this simply, quickly and securely. 
  
 
-## Settings Steps
+## Requirements
+In order to offer Mercado Pago as a payment method in your Wix online store, you will need to have the items described below.
+ - **Mercado Pago Account**: when you have a Mercado Pago account, you will have access to your credentials. You will need them to set up the Mercado Pago connection as a payment provider in your Wix store. If you don't have one yet, just [create](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
 
-These are the *steps to start receiving payments with Mercado Pago**:
+>NOTE
+>
+>Important
+>
+>Want to learn more about credentials? Find more information under [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials).
 
-1. [Log in](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/wix) to a Mercado Pago account or [create a new account](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) if you don't have one yet.
-2. Add Mercado Pago as a payment method in your store.
+## Connection and configuration
+Connecting and configuring Mercado Pago as a payment method in your Wix store is done in two simple and quick steps. In the first, you connect Mercado Pago as a payment method in your Wix store and in the second, you configure the connector with your production credentials.
 
-## Add Mercado Pago as a payment method
- 
-Wix allows you to receive payments with Checkout Pro, where the buyer will be redirected to Mercado Pago to make the payment and will return to your store when the purchase is completed.
- 
-----[mla, mlc, mlu, mpe, mco]----
-To **add Mercado Pago to your store**, follow these steps:
- 
-1. Access "Settings" from your control panel of your website.
-1. In the "eCommerce & Finance" section, click "Accept Payments".
-1. In the payment method list, find Mercado pago and click on "Connect".
-1. In the "Account information" section, fill out Client ID and Client Secret fields with your Mercado Pago account production credentials.
-1. Finally, click on "Connect".
-------------
+1. Make the connection as described in [this Wix documentation](https://support.wix.com/en/article/conectando-mercadopago-como-provedor-de-pagamento) You will automatically be taken to the connector's configuration page.
 
-----[mlm]----
-To **add Mercado Pago to your store**, follow these steps:
- 
-1. Access "Settings" from your control panel of your website.
-1. In the "eCommerce & Finance" section, click "Accept Payments".
-1. In the lower part, click on "See more payment options."
-1. On the methods of payment list, click on 'Connect' in Mercado Pago.
-1. Fill out Client ID and Client Secret fields with your Mercado Pago account production credentials.
-1. Finally, click on "Connect".
-------------
+2. On the configuration page, fill in the fields with your [production credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) (note that the credentials requested by Wix are Client ID and Client Secret) and confirm the connection.
 
-----[mlb]----
-To **connect Mercado Pago to your store**, follow the steps below:
 
-1. Access "Settings" from your control panel of your website.
-1. In the "eCommerce & Finance" section, click "Accept Payments".
-1. Locate "Mercado Pago" in the list of payment options and click "Connect".
-1. Complete the Client ID and Client Secret fields with the [production credentials]([FAKER][CREDENTIALS][URL]) from your Mercado Pago account.
-1. Click "Connect". Your MercadoPago account will be connected to your store.
-------------
-
+And that is it! Your integration is set up and you are already offering Mercado Pago as a payment method in your store.
 
 ----[mla, mlc, mlu, mpe]----
 <p>&nbsp;</p>
 
-![Setting active in Wix](/images/wix/wix_en_connect_configuration_mla_mlc_mlu_mpe.gif)
+![Setting active in Wix](/images/wix/wix_pt_connect_configuration_mla_mlc_mlu_mpe.gif)
 <p>&nbsp;</p>
 ------------
 
 ----[mlb]----
 <p>&nbsp;</p>
 
-![Setting connect in Wix](/images/wix/wix_es_connect_configuration_mlb.gif)
+![Setting connect in Wix](/images/wix/wix_pt_connect_configuration_mlb.gif)
 <p>&nbsp;</p>
 ------------
 
 ----[mco]----
 <p>&nbsp;</p>
 
-![Setting active in Wix](/images/wix/wix_en_connect_configuration_mco.gif)
+![Setting active in Wix](/images/wix/wix_pt_connect_configuration_mco.gif)
 <p>&nbsp;</p>
 ------------
 
 ----[mlm]----
 <p>&nbsp;</p>
 
-![Setting active in Wix](/images/wix/wix_en_connect_configuration_mlm.gif)
+![Setting active in Wix](/images/wix/wix_pt_connect_configuration_mlm.gif)
 <p>&nbsp;</p>
-------------
-
-
->  Find all the information about your credentials in our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/faqs/credentials).
-
-----[mla, mlb, mlu, mlc, mlm, mpe]----
-## Set up interest-free instalments in your Mercado Pago account
- 
-1. Log in [your Mercado Libre account](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp), and go to "Your business".
-2. Go to "Costs" section.
-3. Browse up to "interest free instalments" and click on the activation switch.
-4. Select the maximum number of interest free instalments you want to offer.
-------------
-
-
-----[mla]----
-Ready! You are already offering interest free instalments with the configured [financing cost](https://www.mercadopago.com.ar/ayuda/cuotas-sin-interes_3299).
-------------
-
-----[mlb]----
-Ready! You are already offering interest free instalments with the configured [financing cost](https://www.mercadopago.com.br/ajuda/oferecer-parcelas-sem-juros-para-compradores_454).
-------------
-
-----[mlc]----
-Ready! You are already offering interest free instalments with the configured [financing cost](https://www.mercadopago.cl/ayuda/3299).
-------------
-
-----[mpe]----
-Ready! You are already offering interest free instalments with the configured [financing cost](https://www.mercadopago.com.pe/ayuda/3299).
-------------
-
-
-<!-- -->
-----[mla, mlc, mco, mpe, mlm, mlu]----
-> For more information, go to our [official Wix site](https://es.wix.com/ecommerce/tienda-online).
-------------
-
-----[mlb]----
-> For more information, go to our [official Wix site](https://pt.wix.com/ecommerce/loja-virtual).
 ------------
