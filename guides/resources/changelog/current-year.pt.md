@@ -6,7 +6,29 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Agosto 2021
 
+
 ### 12 de agosto
+
+----[mlb]----
+
+> CHANGELOG
+>
+> Nova versão Magento 2
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MAGENTO 2
+
+Lançamos a nova versão 3.9.3 para Magento 2.
+
+[Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.3).
+------------
 
 > CHANGELOG
 >
@@ -63,26 +85,6 @@ Lançamos a nova versão 1.12.1 e 2.4.2 do SDK PHP.
 
 ----[mlb]----
 
-### 12 de agosto
-
-> CHANGELOG
->
-> Nova versão Magento 2
->
-> NEW_VERSION: NOVA VERSÃO
->
-> PRODUCT: MAGENTO 2
-
-Lançamos a nova versão 3.9.3 para Magento 2.
-
-[Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
-
-> GIT
->
-> GitHub
->
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.3).
-
 ### 10 de agosto
 
 > CHANGELOG
@@ -96,7 +98,8 @@ Lançamos a nova versão 3.9.3 para Magento 2.
 Agora você pode incluir Boleto Bancário, Checkout Pro, Mercado Pago Wallet y Mercado Pago Offline como meio de pagamento utilizando o gateway MercadoPagoV2 para VTEX.
 
 [Ir para a documentação VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/#bookmark_criando_afiliação_de_gateway_mercadopagov2)
-------------
+--------
+
 
 ## Julho 2021
 
