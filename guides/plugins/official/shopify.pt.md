@@ -79,7 +79,7 @@ Ao fazer o teste, confira se o fluxo de pagamento funciona corretamente.
 
 ### Ir a produção
 
-Para começar a receber pagamentos, você deve [ativar suas credenciais]([FAKER][CREDENTIALS][URL]).
+Para começar a receber pagamentos, você deve ativar suas credenciais.
 
 > Confira os [requisitos para entrar em produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/payments/api/goto-production) se você tem alguma dúvida em relação ao processo.
 

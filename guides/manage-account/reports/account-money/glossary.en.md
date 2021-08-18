@@ -27,7 +27,7 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | MKP_FEE_AMOUNT | Mercado Libre Fee. |
 | FINANCING_FEE_AMOUNT | Cost for offering interest-free installments. |
 | SHIPPING_FEE_AMOUNT | Shipping cost. |
-| TAXES_AMOUNT | Taxes charged for gross income withholdings. |
+| TAXES_AMOUNT | ----[mla]---- Tax collected for withholdings of Gross Income, VAT, Profits; and taxes on Credits and Debits, among others. [Learn more about withholdings and perceptions.](https://vendedores.mercadolibre.com.ar/nota/retenciones-y-percepciones-sobre-tus-ventas-lo-que-debes-saber/) ------------  ----[mlm, mlc, mlu, mlb, mco, mpe]---- Taxes charged for gross income withholdings. ------------ |
 | INSTALLMENTS | Number of installments in which the operation was carried out. |
 | TAX_AMOUNT_TELCO | The value of the tax on telecommunications companies that is deducted from the gross value. |
 | TAX_DETAIL | Description of the tax withheld by operation in `TAXES_AMOUNT`. ----[mla]---- <br><br>You can consider the following values depending on the jurisdiction: <br>cordoba<br>corrientes<br>mendoza<br>la_pampa<br>santa_fe<br>tucuman<br>entre_rios<br>catamarca<br>neuquen<br>santiago_del_estero<br>rio_negro<br>jujuy ------------ <br><br> |
