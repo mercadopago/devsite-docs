@@ -25,7 +25,7 @@ Para **agregar Mercado Pago en tu tienda**, sigue estos pasos:
 1. Accede a "Configuración" desde el panel de control de tu sitio. 
 1. En la sección "eCommerce y finanzas", haz clic en "Acepta pagos".
 1. Busca a Mercado Pago en la lista de medios de pago y haz clic en "Agregar".
-1. En la sección "Información de la cuenta", completa los campos Client ID y Client Secret con las [credenciales de producción]([FAKER][CREDENTIALS][URL]) de tu cuenta de Mercado Pago.
+1. En la sección "Información de la cuenta", completa los campos Client ID y Client Secret con las [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) de producción de tu cuenta de Mercado Pago.
 1. Por último, haz clic en “Conectar”.
 ------------
 
@@ -36,7 +36,7 @@ Para **agregar Mercado Pago en tu tienda**, sigue estos pasos:
 1. En la sección "eCommerce y finanzas", haz clic en "Acepta pagos".
 1. En la parte inferior, da clic en "Ver más opciones de pago".
 1. Busca a Mercado Pago en la lista de medios de pago y haz clic en "Agregar".
-1. En la sección "Información de la cuenta", completa los campos Client ID y Client Secret con las [credenciales de producción]([FAKER][CREDENTIALS][URL]) de tu cuenta de Mercado Pago.
+1. En la sección "Información de la cuenta", completa los campos Client ID y Client Secret con las [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) de producción de tu cuenta de Mercado Pago.
 1. Por último, haz clic en “Conectar”.
 ------------
 
@@ -67,10 +67,6 @@ Para **agregar Mercado Pago en tu tienda**, sigue estos pasos:
 ![Setting active in Wix](/images/wix/wix_es_connect_configuration_mlm.gif)
 <p>&nbsp;</p>
 ------------
-
-
-> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/faqs/credentials).
-
 
 ----[mlm]----
 ## Configura las mensualidades sin interés en tu cuenta de Mercado Pago
