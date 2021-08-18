@@ -2644,7 +2644,7 @@ Para poder recibir pagos con Webpay, tienes que enviar la dirección IP del comp
 >
 > Importante
 >
-> Muy pronto la integración con WebPay será deprecada. Para procesar tus ventas, te recomendamos que utilices [otra solución de pago](https://www.mercadopago.cl/developers/es/guides/resources/localization/payment-methods#bookmark_chile). 
+> La integración de WebPay será deprecada pronto. Te **pedimos** que utilices [otra solución de pago](https://www.mercadopago.cl/developers/es/guides/resources/localization/payment-methods#bookmark_chile) para evitar que experimentes problemas en tus integraciones. 
 
 
 [[[
