@@ -2520,7 +2520,7 @@ To receive payments with Webpay, you have to send the IP address of the buyer, t
 >
 > Important
 >
-> The integration with WebPay will soon be discontinued. To process your sales, we recommend that you use [another payment solution](https://www.mercadopago.cl/developers/en/guides/resources/localization/payment-methods#bookmark_chile).
+> The WebPay integration will be discontinued shortly. We **strongly** recommend you to use [another payment solution](https://www.mercadopago.cl/developers/en/guides/resources/localization/payment-methods#bookmark_chile) to avoid integration problems in the near future.
 
 
 [[[
