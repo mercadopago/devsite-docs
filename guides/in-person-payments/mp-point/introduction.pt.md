@@ -1,35 +1,84 @@
 ---
 sites_supported:
-  - mla
-  - mlb
-  - mlm
+- mla
+- mlb
+- mlm
 ---
+## ¿Qué es Mercado Pago Point?
 
-# Cobranças presenciais com Point
-Você pode aumentar suas vendas no mundo físico cobrando com o dispositivo Mercado Pago Point.
+Es el **servicio de gestión y procesamiento electrónico de pagos** que permite a vendedores realizar cobros
+de forma presencial con las principales tarjetas de crédito y débito aceptadas por **Mercado Pago**.
 
-O Aplicativo móvel do Mercado Pago junto com o Point permite cobrar de maneira segura cartões de crédito e cartões de débito. Suas principais funcionalidades são:
+----[mla]----
+![Pagos Mercado Pago Point](/images/mobile/banner-mp-point.png)
+------------
+----[mlb]----
+![Pagos Mercado Pago Point](/images/mobile/point-mlb.png)
+------------
+----[mlm]----
+![Pagos Mercado Pago Point](/images/mobile/banner-mlm.png)
+------------
 
-- Cobrar utilizando uma referência do pedido para que você possa conciliá-lo.
+## ¿Cuáles son los beneficios?
+* Potencia tus ventas en el mundo físico cobrando a través de los dispositivos **Mercado Pago Point**.
+* Dinero disponible al instante en tu cuenta de **Mercado Pago**.
+* Permite cobrar con los principales [medios de pago](https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264) de tu país.
+* Ofrece una **experiencia de compra segura desde cualquier dispositivo de Mercado Pago Point**.
 
-- Manter um catálogo de produtos para agilizar a venda.
 
-Seus vendedores usando o aplicativo móvel do Mercado Pago passam o cartão do cliente no Point efetuando a cobrança. Assim, você pode oferecer em suas lojas físicas parcelamento sem juros e todos os benefícios oferecidos pelo Mercado Pago.
+## ¿Cómo funciona?
 
-Para poder cobrar, é necessário que adquira o dispositivo Mercado Pago Point:
+Puedes elegir entre dos tipos de dispositivos según tus necesidades de negocio:
 
-> [Comprar Point](https://www.mercadopago.com/mp-brasil/point#products)  
+* **mPOS**: se conectan via Bluetooth con la aplicación de **Mercado Pago** y requieren de un teléfono móvil para funcionar.
+  <span></span>
+* **POS**: se conectan por red wifi o celular y funcionan de forma autónoma, permiten la integración de sistemas PDV por medio de la API de integraciones Point.
 
-Além disso, você deverá baixar o aplicativo no **store** do seu dispositivo móvel:
+----[mla]----
+> INFO
+>
+> Para poder cobrar, es necesario que adquieras el dispositivo de Mercado Pago Point:
+>
+> - [Point Smart (POS)](https://www.mercadopago.com.ar/point-smart?ref=devsite)
+> - [Point Plus (POS)](https://www.mercadopago.com.ar/point-plus?ref=devsite)
+> - [Point Bluetooth (mPOS)](https://www.mercadopago.com.ar/point-bluetooth?ref=devsite)
+------------
+----[mlm]----
+> INFO
+>
+> Para poder cobrar, es necesario que adquieras el dispositivo de Mercado Pago Point:
+>
+> - [Point Smart (POS)](https://www.mercadopago.com.mx/point-smart?ref=devsite)
+> - [Point Blue (mPOS)](https://www.mercadopago.com.mx/point-blue?ref=devsite)
+------------
+----[mlb]----
+> INFO
+>
+> Para poder cobrar, es necesario que adquieras el dispositivo de Mercado Pago Point:
+>
+> - [Point Smart (POS)](https://www.mercadopago.com.br/point-smart?ref=devsite)
+> - [Point Pro 2 (POS)](https://www.mercadopago.com.br/point-pro-2?ref=devsite)
+> - [Point Mini Chip (POS)](https://www.mercadopago.com.br/point-mini-chip?ref=devsite)
+> - [Point Mini (mPOS)](https://www.mercadopago.com.br/point-mini?ref=devsite)
+------------
 
-> [<img src="/developers/bundles/images/GooglePlayBadge.pt.png" alt="Android Play Store" width="200"/>](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419) [<img src="/developers/bundles/images/AppStoreBadge.pt.svg" alt="iOS App Store" width="158" style="margin:0.8em"/>](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8)
+Con base en tu modelo de negocio, puedes escoger alguna de las opciones para ofrecer a tus clientes una buena experiencia de compra en tus tiendas físicas.
 
-Existem distintas alternativas para que possa cobrar através do Mercado Pago Point:
+### Próximos pasos
 
-* Cobrando de forma não integrada. O vendedor informa a origem e o valor da transação manualmente. Em seguida, insere o cartão do comprador no dispositivo Point, informa o CVV, o proprietário do cartão assina na tela do dispositivo móvel e depois termina a operação.
+> LEFT_BUTTON_RECOMMENDED_EN
+>
+> Integración mPOS
+>
+> Integra Mercado Point con la app de MercadoPago
+>
+> [Integración mPOS](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/mp-point/how-to-integrate)
 
-* Integrando seu aplicativo para fazer cobranças via Point. Seu aplicativo gera uma ordem de pagamento com o valor e uma descrição e chama o aplicativo do Mercado Pago para que o vendedor diretamente insira o cartão comprador e faça a cobrança. Uma vez que o pagamento é processado, ele é retornado ao seu aplicativo.
-
-* Integrando o seu sistema de gestão na modalidade de cobranças via Point. A partir do seu sistema uma ordem de cobrança é gerada com o valor, uma descrição e o dispositivo pelo qual deseja receber tal ordem. A ordem será automaticamente carregada no aplicativo do Mercado Pago para que o vendedor diretamente insira o cartão do comprador e pague. Uma vez processado o pagamento, o pedido será encerrado. 
-
-Com base no seu modelo de negócio, você pode escolher uma das opções ou combiná-las para oferecer aos seus clientes uma boa experiência de compra em suas lojas físicas.
+> RIGHT_BUTTON_RECOMMENDED_EN
+>
+> Integración POS
+>
+> Integra Mercado Point con tu sistema PDV utilizando nuestra Api de integraciones
+>
+>
+> [Integración POS](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/mp-point/integration-api/introduction)

@@ -6,16 +6,34 @@ sites_supported:
 ---
 
 
-# Cómo integrar Mercado Pago Point
+# Cobros con Point usando la App
 
-Para poder cobrar de manera integrada con nuestro dispositivo Point es necesario descargar la aplicación de Mercado Pago disponible en los marketplaces de iOS y Android.
+----[mla]----
+> INFO
+> 
+> Dispositivos soportados con esta integración:
+> 
+> - [Point Bluetooth](https://www.mercadopago.com.ar/point-bluetooth?ref=devsite)
+------------
+
+> WARNING
+>
+> Para poder cobrar de manera integrada con nuestro dispositivo Point es necesario descargar la aplicación de Mercado Pago disponible en los marketplaces de iOS y Android.
+ 
+> [<img src="/mobile/GooglePlayBadge.es.png" alt="Android Play Store" width="200"/>](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419)
+> [<img src="/mobile/AppStoreBadge.es.svg" alt="iOS App Store" width="158" style="margin:0.8em"/>](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8)
+
+**Características:**
+
+* Integrando tu aplicación la modalidad de cobros vía Point. Tu aplicación genera una orden de pago con el monto y una descripción y llama a la aplicación de Mercado Pago para que el vendedor directamente deslice la tarjeta del pagador y cobre. Una vez procesado el pago, se retorna a tu aplicación.
+
+* Integrando a tu sistema de gestión la modalidad de cobros vía Point. Desde tu sistema se genera una orden de cobro con el monto, una descripción y el dispositivo que quieras que reciba dicha orden. Automáticamente se levantará la aplicación de Mercado Pago para que el vendedor directamente deslice la tarjeta del pagador y cobre. Una vez procesado el pago, se cerrará la orden.
 
 Existen dos grandes mundos a la hora de integrar Point:
 
-1) Cuando la aplicación se puede utilizar desde el mismo dispositivo (celular o tablet) donde esta instalada la aplicación de Mercado Pago. Esto se puede lograr con una integración de deep linking o intent-based mediante
+1) Cuando la aplicación se puede utilizar desde el mismo dispositivo (celular o tablet) donde está instalada la aplicación de Mercado Pago. Esto se puede lograr mediante una integración de [Deep Linking](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/mp-point/how-to-integrate#bookmark_integraci%C3%B3n_v%C3%ADa_deep_linking) o [Intent-Based](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/mp-point/how-to-integrate#bookmark_integraci%C3%B3n_v%C3%ADa_intent-based).
 
-2) Cuando la aplicación no se puede utilizar desde el mismo dispositivo (celular o tablet) donde esta instalada la aplicación de Mercado Pago. Esto se puede lograr con una integración vía API.
-
+2) Cuando la aplicación no se puede utilizar desde el mismo dispositivo (celular o tablet) donde está instalada la aplicación de Mercado Pago. Esto se puede lograr con una integración vía API.
 
 > WARNING
 >
@@ -142,7 +160,7 @@ Los parámetros que se pueden incluir son:
 >
 > * Los campos marcados con (\*) son campos obligatorios.
 
-La respuesta tendra el siguiente formato:
+La respuesta tendrá el siguiente formato:
 
 ```json
 {
@@ -164,7 +182,7 @@ curl -X GET \
 'https://api.mercadopago.com/point/services/integrations/v1/:ID'
 ```
 
-Si el status de la orden es `OPEN` quiere decir que la misma todavía no se pago. Si el status es `CLOSED` quiere decir que la orden ya se pago y por lo tanto obtendrás el `payment_id` con el resto de la información. La respuesta tendra el siguiente formato.
+Si el status de la orden es `OPEN` quiere decir que la misma todavía no se pago. Si el status es `CLOSED` quiere decir que la orden ya se pago y por lo tanto obtendrás el `payment_id` con el resto de la información. La respuesta tendrá el siguiente formato.
 
 ```json
 {
@@ -192,7 +210,7 @@ curl -X DELETE \
 'https://api.mercadopago.com/point/services/integrations/v1/attempt/device/:DEVICE_NAME'
 ```
 
-La respuesta tendra el siguiente formato.
+La respuesta tendrá el siguiente formato.
 
 ```json
 {
@@ -225,7 +243,7 @@ curl -X GET \
 'https://api.mercadopago.com/point/services/integrations/v1/devices'
 ```
 
-Si el status del device es `FREE` quiere decir que el dispositivo puede recibir una orden nueva. Si el status es `BUSY` quiere decir que el dispostivo ya tiene asignado una orden. La respuesta tendra el siguiente formato.
+Si el status del device es `FREE` quiere decir que el dispositivo puede recibir una orden nueva. Si el status es `BUSY` quiere decir que el dispostivo ya tiene asignado una orden. La respuesta tendrá el siguiente formato.
 
 ```json
 {
@@ -256,7 +274,7 @@ curl -X DELETE \
 'https://api.mercadopago.com/point/services/integrations/v1/devices/:DEVICE_NAME'
 ```
 
-La respuesta tendra el siguiente formato.
+La respuesta tendrá el siguiente formato.
 
 ```json
 {
@@ -287,7 +305,7 @@ curl -X GET \
 https://api.mercadopago.com/point/services/payment/<payment_id>
 ```
 
-La respuesta tendra el siguiente formato:
+La respuesta tendrá el siguiente formato:
 
 ```json
 {
