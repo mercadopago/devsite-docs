@@ -927,7 +927,9 @@ Desta forma, quando um pagamento é aprovado por meio do seu Checkout Pro, será
 
 ## Saiba mais sobre seu negócio
 
-Nossos [Partners](https://partners.mercadopago.com/) poderão obter métricas de negócio. Utilize `headers` na sua preferência de pagamento agregando o código de identificação para o caso que corresponda. Não é obrigatório completar os três campos mencionados.
+Nossos membros certificados no [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) podem obter métricas de negócio. 
+
+Utilize `headers` na sua preferência de pagamento agregando o código de identificação para o caso que corresponda. Não é obrigatório completar os três campos mencionados.
 
 | Header | Tipo de código | Identificadores |
 | --- | --- | --- |
@@ -935,7 +937,7 @@ Nossos [Partners](https://partners.mercadopago.com/) poderão obter métricas de
 | `x-platform-id` | Plataforma | Para as plataformas ou módulos que oferecem Mecado Pago em suas soluções. |
 | `x-corporation-id` | Corporações | Para contas associadas a uma conta vendedor ou grupo econômico. |
 
-> Se você precisa do seu `integrator_id` ou `platform_id`, [solicite seu código já](https://docs.google.com/forms/d/19gEyBhtdFuw_W7ycp464bwcmzYKVA-yWGyRzZfjt6vk/edit). 
+> Não deixe de adicionr o `integrator_id` em suas integrações para receber benefícios adicionais do programa. Você consegue encontrar seu  `integrator_id` no [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel). 
 
 [[[
 ```php
