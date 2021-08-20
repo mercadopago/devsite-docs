@@ -36,7 +36,7 @@ Ambos tipos de credenciales se componen de dos pares de llaves que debes usar se
 
 ## Compartir credenciales
 
-Comparte tus credenciales de forma segura con quien te ayude a integrar o configurar tus canales de pago. Para hacerlo, acceda a tu cuenta de Mercado Pago y en [Tu negocio> Configuraciones> Gestión y Administración> Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials), elige la opción “Compartir mis credenciales” e ingresa el correo electrónico de la persona a la que quieres darle acceso. 
+Comparte tus credenciales de forma segura con quien te ayude a integrar o configurar tus canales de pago. Para hacerlo, accede a tu cuenta de Mercado Pago y en [Tu negocio> Configuraciones> Gestión y Administración> Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials), elige la opción “Compartir mis credenciales” e ingresa el correo electrónico de la persona a la que quieres darle acceso. 
 Recuerda que el correo electrónico de la persona debe estar asociado a una cuenta de Mercado Pago. 
 
 
