@@ -58,7 +58,7 @@ To activate this model, follow these steps:
 1. Search in the payment methods list for Mercado Pago and go to “Setting options”.
 1. In the section Checkout model, choose the option “Pattern”. 
 1. Enter the [e-mail from your Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/profile#from-section=menu) in “Registered e-mail in Mercado Pago”.
-1. Complete the fields Client ID and Client Secret with the [credentials of your Mercado Pago account]((https://www.mercadopago[FAKER][URL][DOMAIN]developers/en/guides/resources/credentials)).
+1. Complete the fields Client ID and Client Secret with the [credentials of your Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]developers/en/guides/resources/credentials).
 1. Click on “Close” and then on “Save changes”.
 <p>&nbsp;</p>
 

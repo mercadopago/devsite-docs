@@ -1,7 +1,7 @@
 # Dashboard
-El [Dashboard](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel) es su entorno de gestión de integración creado automáticamente con una identificación de usuario para usted cuando abre una cuenta de Mercado Pago. En él puedes crear, editar y eliminar aplicaciones.
+El [Dashboard](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel) es tu entorno de gestión de integración. Es creado automáticamente con una identificación de usuario para tí con solo abrir una cuenta de Mercado Pago. En él puedes crear, editar y eliminar aplicaciones.
 
-Las aplicaciones no son más que las diferentes integraciones que puedan tener una o más tiendas. Puedes crear una aplicación para cada solución que implementes, con el fin de tener todo organizado y mantener un control que te facilite su administración. 
+Las aplicaciones no son más que las diferentes integraciones que pueden contener una o más tiendas. Puedes crear una aplicación para cada solución que implementes, con el fin de tener todo organizado y mantener un control que te facilite su administración. 
 
 Cada aplicación tiene un conjunto de credenciales y cuenta con la posibilidad de configurar sus propias notificaciones. Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) y [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks) para obtener más información.
 
@@ -55,16 +55,16 @@ Si por alguna razón necesitas eliminar una aplicación, simplemente haz clic en
 
 
 ## Cuentas que integras
-Puedes integrar soluciones para cuentas distintas a la tuya. Al integrar soluciones para otras cuentas, puedes solicitar acceso a las credenciales de estas cuentas para mantener la seguridad de los datos. Esta sección contiene las credenciales de estas otras cuentas. Para solicitar acceso, se necesita:
+Puedes integrar soluciones para cuentas distintas a la tuya. Al integrar soluciones para otras cuentas, puedes solicitar acceso a las credenciales de estas cuentas para mantener la seguridad de los datos. Esta sección contiene las credenciales de estas otras cuentas. Para solicitar acceso, necesitarás seguir estos pasos:
 1. Haz clic en el botón "Solicitar credenciales".
 2. Completa el correo electrónico de la cuenta para la que se solicitaste las credenciales.
 3. Confirma la solicitud de credenciales.
-Una vez que se otorgue el acceso a las credenciales, puede usarlas para integrar soluciones. Cuando se completen las integraciones, elimina los permisos de acceso para las credenciales que se compartieron y cuida la seguridad de los datos.
+Una vez que se otorgue el acceso a las credenciales, puedes usarlas para integrar soluciones. Cuando se completen las integraciones, elimina los permisos de acceso para las credenciales que se compartieron y cuida la seguridad de los datos.
 
 
 
 ## ID de integrador
-El panel del desarrollador también contiene tu ID de integrador. El ID del integrador es un número único que lo identifica como miembro del &lt;dev&gt;program. 
+El panel del desarrollador también contiene tu ID de integrador. El ID del integrador es un número único que te identifica como miembro del &lt;dev&gt;program. 
 
 El &lt;dev&gt;program es un programa de beneficios para desarrolladores exclusivo y gratuito, diseñado para que seas parte de nuestra comunidad y recibas beneficios adicionales. Para participar, debes aprobar algunas de las certificaciones oficiales de Mercado Pago. 
 
