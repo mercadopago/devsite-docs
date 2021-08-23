@@ -6,7 +6,7 @@ Com o **Checkout Pro**, o seu cliente é direcionado para o site do Mercado Pago
 
 ## Requisitos
 Para oferecer o Mercado Pago como meio de pagamento na sua loja online Wix, você precisará ter os itens descritos abaixo.
- - **Conta Mercado Pago**: ao ter uma conta do Mercado Pago, você terá acesso às suas credenciais. Você precisará delas para configurar a conexão do Mercado Pago como provedor de pagamento na sua loja Wix. Caso você ainda não tenha uma, basta [criar](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
+ - **Conta do Mercado Pago**: ao ter uma conta do Mercado Pago, você terá acesso às suas credenciais. Você precisará delas para configurar a conexão do Mercado Pago como provedor de pagamento na sua loja Wix. Caso você ainda não tenha uma, basta [criar-la](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
 
 >NOTE
 >
