@@ -21,7 +21,7 @@ The [input validation](https://cheatsheetseries.owasp.org/cheatsheets/Input_Vali
 
 In this way, we prevent incorrect data from persisting in our databases and as a consequence, causing a malfunction in our system. All data from unreliable sources should be subject to this validation. 
 
-For its implementation, any programming technique is used that allows the effective application of input data correction: 
+For its implementation, any programming technique that allows the efficient application of input-data correction is used, namely:
 
 * Validators of data types available natively in web application frameworks.
 * Validation against the JSON schema and XML schema for input in these formats.
