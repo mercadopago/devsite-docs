@@ -33,7 +33,7 @@ It is important to ensure that any input validation performed on the client must
 
 ## Server-Side Request Forgery (SSRF)
 
-[Server-Side Request Forgery](https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html) (SSRF) is an attack vector that abuses an application to interact with the internal and / or external network, or with our application machine itself. Depending on the functionality and requirements of the application, there are two use cases in which SSRF can occur:
+[Server-Side Request Forgery](https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html) (SSRF) is an attack vector that abuses an application to interact with the internal and/or external network, or with our application machine itself. Depending on the functionality and requirements of the application, there are two use cases in which SSRF can occur:
 
 
 1. **The application can send a request only to identified and trusted applications**.
