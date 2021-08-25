@@ -1,121 +1,50 @@
 # Wix
  
-## ¿Qué es Wix?
- 
-Wix es una **plataforma virtual que te permite recibir pagos con Mercado Pago**.
- 
-Con ella, puedes ofrecer a tus clientes la posibilidad de pagar directamente en el sitio de Mercado Pago.
- 
- 
-## Pasos para configurar
+Wix es una plataforma que te permite crear, diseñar, administrar y desarrollar una tienda online en la que puedes ofrecer a tus clientes la posibilidad de realizar pagos mediante [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/ferramentas-para-vender/cobrar?utm_experiment=optimize&matt_tool=69348836&matt_word=MLB_MP_G_XP_OP_COW_SEARCH_SELL_TXS_Checkout-Transparente-Branded-NovaLP&gclid=CjwKCAjw3_KIBhA2EiwAaAAlinz2stvLcjAuKbXruVqdJtI_cAemAj6CaP3Q3yxbxbiumdlbgMsynhoCeLsQAvD_BwE) de Mercado Pago.
 
-Los **pasos para comenzar a cobrar con Mercado Pago** son los siguientes:
+Con **Checkout Pro**, tu cliente es dirigido al sitio web de Mercado Pago para realizar el pago y es redirigido a tu tienda tan pronto como se realiza el pago. Todo esto de forma sencilla, rápida y segura.  
 
-1. [Ingresa](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/wix) a una cuenta de Mercado Pago o ----[mla, mlb, mlm, mlc]----[crea una nueva](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing)------------ ----[mco, mpe]----[crea una nueva](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp)------------ si todavía no tienes una.
-2. Agrega a Mercado Pago como medio de pago dentro de tu tienda.
+## Requisitos
+Para poder ofrecer Mercado Pago como método de pago en tu tienda Wix, necesitarás tener los requisitos que se describen a continuación.
+ - **Cuenta de Mercado Pago**: con una cuenta Mercado Pago, tendrás acceso a tus credenciales. Las necesitarás para configurar la conexión de Mercado Pago como proveedor de pago en tu tienda Wix. Si aún no tienes una, simplemente [créala](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing).
 
+>NOTE
+>
+>Importante
+>
+>¿Quieres saber más sobre las credenciales? Encuentra más información en [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials).
 
-## Agrega a Mercado Pago como medio de pago
+## Conexión y configuración
+La conexión y configuración de Mercado Pago como medio de pago en tu tienda Wix se realiza en dos etapas sencillas y rápidas. En la primera, conectarás Mercado Pago como medio de pago en tu tienda Wix y en la segunda, configurarás el conector con tus credenciales de producción.
+1. Haz la conexión tal como se describe [en esta documentación de Wix](https://support.wix.com/pt/article/conectando-mercadopago-como-provedor-de-pagamento). Serás redirigido automáticamente a la página de configuración del conector.
 
-Wix te permite recibir pagos con Checkout Pro, donde el comprador será redireccionado a Mercado Pago para realizar el pago y volverá a tu tienda al completarse la compra.
+2. En la página de configuración, completa los campos con tus [credenciales de producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) (ten en cuenta que las credenciales solicitadas por Wix son Client ID y Client Secret) y confirma la conexión.
 
-----[mla, mlb, mlc, mlu, mpe, mco]----
-Para **agregar Mercado Pago en tu tienda**, sigue estos pasos:
-
-1. Accede a "Configuración" desde el panel de control de tu sitio. 
-1. En la sección "eCommerce y finanzas", haz clic en "Acepta pagos".
-1. Busca a Mercado Pago en la lista de medios de pago y haz clic en "Agregar".
-1. En la sección "Información de la cuenta", completa los campos Client ID y Client Secret con las [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) de producción de tu cuenta de Mercado Pago.
-1. Por último, haz clic en “Conectar”.
-------------
-
-----[mlm]----
-Para **agregar Mercado Pago en tu tienda**, sigue estos pasos:
-
-1. Accede a "Configuración" desde el panel de control de tu sitio. 
-1. En la sección "eCommerce y finanzas", haz clic en "Acepta pagos".
-1. En la parte inferior, da clic en "Ver más opciones de pago".
-1. Busca a Mercado Pago en la lista de medios de pago y haz clic en "Agregar".
-1. En la sección "Información de la cuenta", completa los campos Client ID y Client Secret con las [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) de producción de tu cuenta de Mercado Pago.
-1. Por último, haz clic en “Conectar”.
-------------
+Y listo, tu integración está configurada y ya estás ofreciendo Mercado Pago como método de pago en tu tienda.
 
 ----[mla, mlc, mlu, mpe]----
 <p>&nbsp;</p>
 
-![Setting active in Wix](/images/wix/wix_es_connect_configuration_mla_mlc_mlu_mpe.gif)
+![Setting active in Wix](/images/wix/wix_pt_connect_configuration_mla_mlc_mlu_mpe.gif)
 <p>&nbsp;</p>
 ------------
 
 ----[mlb]----
 <p>&nbsp;</p>
 
-![Setting active in Wix](/images/wix/wix_es_connect_configuration_mlb.gif)
+![Setting connect in Wix](/images/wix/wix_pt_connect_configuration_mlb.gif)
 <p>&nbsp;</p>
 ------------
 
 ----[mco]----
 <p>&nbsp;</p>
 
-![Setting active in Wix](/images/wix/wix_es_connect_configuration_mco.gif)
+![Setting active in Wix](/images/wix/wix_pt_connect_configuration_mco.gif)
 <p>&nbsp;</p>
 ------------
 
 ----[mlm]----
 <p>&nbsp;</p>
 
-![Setting active in Wix](/images/wix/wix_es_connect_configuration_mlm.gif)
-<p>&nbsp;</p>
-------------
-
-----[mlm]----
-## Configura las mensualidades sin interés en tu cuenta de Mercado Pago
- 
-1. Ingresa a [tu cuenta de Mercado Pago](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp) y ve a "Tu negocio".
-2. Accede en la sección "Costos".
-3. Navega hasta "mensualidades sin intereses" y haz clic en el switch para activarlos.
-4. Selecciona la cantidad máxima de mensualidades sin intereses que deseas ofrecer.
-
-<p>&nbsp;</p>
- 
-![Setting active in Wix](/images/wix/wix_es_config_account_msi_mlm.gif)
-<p>&nbsp;</p>
-
-¡Y listo! Ya estás ofreciendo mensualidades sin interés con el [costo de financiación](https://www.mercadopago.com.mx/ayuda/mensualidades-sin-intereses_2255) que hayas configurado.
-
-------------
-
-----[mla, mlb, mlu, mlc, mpe]----
-## Configura las cuotas sin interés en tu cuenta de Mercado Pago
- 
-1. Ingresa a [tu cuenta de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]) y ve a "Tu negocio".
-2. Accede en la sección "Costos", navega hasta "Cuotas sin intereses" y haz clic en el switch para activarlos.
-3. Selecciona la cantidad máxima de cuotas sin intereses que deseas ofrecer.
-------------
-
-
-----[mla]----
-¡Y listo! Ya estás ofreciendo cuotas sin interés con el [costo de financiación](https://www.mercadopago.com.ar/ayuda/cuotas-sin-interes_3299) que hayas configurado.
-------------
-
-----[mlb]----
-¡Y listo! Ya estás ofreciendo cuotas sin interés con el [costo de financiación](https://www.mercadopago.com.br/ajuda/oferecer-parcelas-sem-juros-para-compradores_454) que hayas configurado.
-------------
-
-----[mlc]----
-¡Y listo! Ya estás ofreciendo cuotas sin interés con el [costo de financiación](https://www.mercadopago.cl/ayuda/3299) que hayas configurado.
-------------
-
-----[mpe]----
-¡Y listo! Ya estás ofreciendo cuotas sin interés con el [costo de financiación](https://www.mercadopago.com.pe/ayuda/3299) que hayas configurado.
-------------
-
-
-<!-- -->
-----[mla, mlc, mco, mpe, mlm, mlu]----
-> Para más información, visita el [sitio oficial de Wix](https://es.wix.com/ecommerce/tienda-online).
-------------
-
-----[mlb]----
-> Para más información, visita el [sitio oficial de Wix](https://pt.wix.com/ecommerce/loja-virtual).
+![Setting active in Wix](/images/wix/wix_pt_connect_configuration_mlm.gif)
 ------------
