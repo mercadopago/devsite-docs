@@ -40,8 +40,8 @@ It is important to ensure that any input validation performed on the client must
 
       This case occurs when an application needs to make a request to another, which is usually located on another network, to perform a specific task. In this case, it is possible to use an app-allowed-list approach. We can protect ourselves through the Application and Network layers. 
 
-     * **Application Layer**: Through input validation, we can apply the allowed applications list approach. The format of the information expected from the user is already known. In this context, validations can also be added to ensure that the input string respects the expected format. 
-     * **Network Layer:** the goal is to prevent arbitrary application calls from being made. Firewall can be used to limit application access, and in turn limit the impact of an application vulnerable to SSRF. 
+     * **Application Layer**: Through input validation, we can apply the approach of the allowed-applications list. The format of the information expected from the user is already known. In this context, validations can also be added to ensure that the input string respects the expected format. 
+     * **Network Layer:** the goal is to prevent arbitrary calls from applications. A firewall can be used to limit application access and, in turn, limit the impact of an application vulnerable to SSRF. 
 
 
 2. **The application can send requests to any external IP address or domain name**.
