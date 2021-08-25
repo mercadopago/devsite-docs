@@ -949,7 +949,7 @@ De este modo, cuando se apruebe un pago a través de tu Checkout Pro, se asociar
 
 Nuestros miembros certificados en el programa [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) pueden obtener métricas comerciales. 
 
-Utiliza `headers` en tu preferencia de pago agregando el código de identificación que te brindamos para el caso que corresponda. No es obligatorio completar este campo, por lo que si no sos Partner debes dejarlo vacío.
+Para obtener métricas comerciales, utiliza `headers` en tu preferencia de pago. Solo debes agregar los códigos de identificación, según corresponda. No es obligatorio completar este campo.
 
 | Header | Tipo de código | Identificadores |
 | --- | --- | --- |
