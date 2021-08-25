@@ -32,7 +32,7 @@ Las [credenciales]([FAKER][CREDENTIALS][URL]) son las **claves que te proporcion
 
 * La clave privada, o Access token, te va a permitir llamar al resto de las APIs. Por ejemplo, cómo procesar un pago, realizar un reembolso o almacenar tarjetas.
 
-> ¿Tienes dudas? Consulta nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials).
+> ¿Tienes dudas? Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) para obtener más información.
 
 
 #### [Comenzar a crear mi Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/marketplace/checkout-pro/create-marketplace)

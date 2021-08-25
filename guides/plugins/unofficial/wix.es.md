@@ -47,5 +47,4 @@ Y listo, tu integración está configurada y ya estás ofreciendo Mercado Pago c
 <p>&nbsp;</p>
 
 ![Setting active in Wix](/images/wix/wix_pt_connect_configuration_mlm.gif)
-<p>&nbsp;</p>
 ------------

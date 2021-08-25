@@ -14,7 +14,7 @@ We know some concepts may be new for you. Before starting, here's a cheatsheet.
 | Point of sale (POS) | A **place to perform a transaction** on a store or physical shop. Each POS will be linked with a unique QR code. |
 | Order | A purchase made by your client. Contains a list of product with an associated cost. |
 
-> Do you have any questions? Check our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/faqs/credentials).
+> Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) for more information.
 
 ## Previous requirements
 

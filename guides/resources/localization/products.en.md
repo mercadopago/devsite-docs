@@ -81,7 +81,7 @@ Subscriptions | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debm
 | :--- | :--- | :--- |
 | Payments | Payment link | N/A |
 | Payments | Checkout Pro | N/A |
-| Payments | Mobile Checkout | `account_money`,`khipu`,`servipag`,`webpay` |
+| Payments | Mobile Checkout | `account_money`,`khipu`,`servipag`|
 | Payments | Checkout API | `khipu` |
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | `khipu` |

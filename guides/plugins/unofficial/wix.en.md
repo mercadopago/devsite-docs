@@ -1,6 +1,6 @@
 # Wix
 
-Wix is ​​a platform that allows you to create, design, manage and develop an online store in which you can offer your customers the possibility of making payments using Mercado Pago [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/ferramentas-para-vender/cobrar?utm_experiment=optimize&matt_tool=69348836&matt_word=MLB_MP_G_XP_OP_COW_SEARCH_SELL_TXS_Checkout-Transparente-Branded-NovaLP&gclid=CjwKCAjw3_KIBhA2EiwAaAAlinz2stvLcjAuKbXruVqdJtI_cAemAj6CaP3Q3yxbxbiumdlbgMsynhoCeLsQAvD_BwE).
+Wix is a platform that allows you to create, design, manage and develop an online store in which you can offer your customers the possibility of making payments using Mercado Pago [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/ferramentas-para-vender/cobrar?utm_experiment=optimize&matt_tool=69348836&matt_word=MLB_MP_G_XP_OP_COW_SEARCH_SELL_TXS_Checkout-Transparente-Branded-NovaLP&gclid=CjwKCAjw3_KIBhA2EiwAaAAlinz2stvLcjAuKbXruVqdJtI_cAemAj6CaP3Q3yxbxbiumdlbgMsynhoCeLsQAvD_BwE).
 
 With **Checkout Pro**, your customer is directed to the Mercado Pago website to make the payment and is redirected to your store as soon as the payment is done. All this simply, quickly and securely. 
  
@@ -19,9 +19,7 @@ In order to offer Mercado Pago as a payment method in your Wix online store, you
 Connecting and configuring Mercado Pago as a payment method in your Wix store can be done in two simple and quick steps. In the first, you connect Mercado Pago as a payment method in your Wix store and in the second, you configure the connector with your production credentials.
 
 1. Make the connection as described in [this Wix documentation](https://support.wix.com/en/article/conectando-mercadopago-como-provedor-de-pagamento) You will automatically be redirected to the connector's configuration page.
-
 2. On the configuration page, fill in the fields with your [production credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) (note that the credentials requested by Wix are Client ID and Client Secret) and confirm the connection.
-
 
 And that is it! Your integration is set up and you are already offering Mercado Pago as a payment method in your store.
 

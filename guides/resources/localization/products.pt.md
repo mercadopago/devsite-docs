@@ -139,7 +139,7 @@ Assinaturas | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmas
 | :--- | :--- | :--- |
 | Pagamentos | Link de pagamento | N/A |
 | Pagamentos | Checkout Pro | N/A |
-| Pagamentos | Mobile Checkout | `account_money`,`khipu`,`servipag`,`webpay` |
+| Pagamentos | Mobile Checkout | `account_money`,`khipu`,`servipag` |
 | Pagamentos | Checkout Transparente | `khipu` |
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout Transparente | `khipu` |
@@ -149,7 +149,7 @@ Assinaturas | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmas
 | :--- | :--- | :--- |
 | Pagamentos | Link de pagamento | N/A |
 | Pagamentos | Checkout Pro | N/A |
-| Pagamentos | Mobile Checkout | `account_money`,`khipu`,`servipag`,`webpay` |
+| Pagamentos | Mobile Checkout | `account_money`,`khipu`,`servipag` |
 | Pagamentos | Checkout API | `khipu` |
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | `khipu` |
