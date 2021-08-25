@@ -15,7 +15,7 @@ Devido à integração que você está fazendo com o Mercado Pago, para nos prot
 >É importante seguir boas práticas de codificação em todas as etapas do ciclo de vida de desenvolvimento do software, a fim de manter a segurança em todas as transações. 
 
 ## Input Validation
-A [input validation](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html) é realizada para garantir que todos os dados estão corretos (sintática e semanticamente) antes de entrar no workflow do nosso sistema, permitindo-nos detectar entradas não autorizadas antes de serem processadas pela aplicação.
+A [input validation](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html) é realizada para garantir que todos os dados estejam corretos (sintática e semanticamente) antes de entrar no workflow do nosso sistema, nos permitindo detectar entradas não autorizadas antes de serem processadas pela aplicação.
 
 Desta forma, evitamos que dados incorretos persistam em nossos bancos de dados e, como consequência, causem um mau funcionamento em nosso sistema. Todos os dados de fontes não confiáveis ​​devem estar sujeitos a esta validação. 
 Para sua implementação, qualquer técnica de programação que permita a aplicação efetiva da correção dos dados de entrada é utilizada: 
