@@ -1,6 +1,6 @@
 # OWASP
 
-No Mercado Pago protegemos os pagamentos dos nossos clientes/usuários para que sejam processados ​​com segurança em todas as plataformas web e mobile. Para fazer isso, implementamos controles de segurança que mantêm a confidencialidade, integridade e disponibilidade das informações que processamos por meio de integrações.
+No Mercado Pago protegemos os pagamentos dos nossos clientes/usuários para que sejam processados ​​com segurança em todas as plataformas web e mobile. Para isso, implementamos controles de segurança que mantêm a confidencialidade, integridade e disponibilidade das informações que processamos por meio de integrações.
     
 O Open Web Application Security Project (OWASP) é uma comunidade aberta que fornece ferramentas e padrões para desenvolver e manter aplicativos web seguros. Visa promover pesquisa e desenvolvimento de segurança de aplicativos. 
 
