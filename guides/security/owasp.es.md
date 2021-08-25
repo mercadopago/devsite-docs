@@ -34,7 +34,7 @@ Server-Side Request Forgery (SSRF) es un vector de ataque que abusa de una aplic
 
      Este caso ocurre cuando una aplicación necesita realizar una solicitud a otra, que suele estar ubicada en otra red, para realizar una tarea específica. En este caso es posible utilizar un enfoque de lista de aplicaciones permitidas. Podemos protegernos a través de las capas de Aplicación y de Red. 
 
-    **Capa de Aplicación**: a través de la validación de entrada, podemos aplicar el enfoque de lista de aplicaciones permitidos. El formato de la información que se espera del usuario ya es conocido. En este contexto, también se pueden agregar validaciones para garantizar que la cadena de entrada respete el formato esperado. 
+    **Capa de Aplicación**: a través de la validación de entrada, podemos aplicar el enfoque de lista de aplicaciones permitidas. El formato de la información que se espera del usuario ya es conocido. En este contexto, también se pueden agregar validaciones para garantizar que la cadena de entrada respete el formato esperado. 
 
     **Capa de Red**: el objetivo es evitar que se realicen llamadas a aplicaciones arbitrarias. Se puede utilizar el Firewall para limitar el acceso de la aplicación, y, a su vez, limitar el impacto de una aplicación vulnerable a SSRF. 
 
