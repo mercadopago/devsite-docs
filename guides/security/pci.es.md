@@ -33,7 +33,7 @@ TENER UNA POLÍTICA DE SEGURIDAD DE LA INFORMACIÓN | Tener una política que co
 
 Para cada uno de los 12 requisitos de PCI, existen básicamente cuatro niveles diferentes de cumplimiento que, por lo general, se basan en el volumen de transacciones con tarjeta que procese tu organización en forma anual y cada nivel tiene un conjunto de obligaciones.
 
-- **Nivel 1**: organizaciones que procesan más de 6 millones de transacciones al año de Visa o MasterCard, o más de 2,5 millones para American Express; o ha habido un filtración de datos; o son consideradas de nivel 1 por cualquier asociación de tarjetas.
+- **Nivel 1**: organizaciones que procesan más de 6 millones de transacciones al año de Visa o MasterCard, o más de 2,5 millones para American Express; o si ha habido una filtración de datos; o son consideradas de nivel 1 por cualquier asociación de tarjetas.
    - Informe anual sobre cumplimiento (ROC) a cargo de un evaluador de seguridad cualificado (QSA) o un auditor interno.
    - Escaneo trimestral de red a cargo de proveedor aprobado (ASV).
    - Certificación de cumplimiento (AOC).
