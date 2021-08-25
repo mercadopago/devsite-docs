@@ -23,7 +23,7 @@ Te recomendamos que puedas visitar el [sitio oficial de PCI](https://www.pcisecu
 ------------- | ---------------
 CREAR Y MANTENER SISTEMAS Y UNA RED SEGUROS | Instalar y mantener un firewall configurado para proteger los datos de los titulares de tarjeta. No usar los valores predeterminados suministrados por el proveedor para las contraseñas de los sistemas y otros parámetros de seguridad.|
 PROTEGER LOS DATOS DE LOS TITULARES DE TARJETA | Proteger los datos del titular almacenados. Cifrar la transmisión de los datos de titulares de tarjeta en las redes abiertas o públicas.
-MMANTENER UN PROGRAMA DE GESTIÓN DE VULNERABILIDADES | Proteger todos los sistemas contra software maliciosos y actualizar periódicamente el software antivirus. Desarrollar y mantener sistemas y aplicaciones seguros.
+MANTENER UN PROGRAMA DE GESTIÓN DE VULNERABILIDADES | Proteger todos los sistemas contra software maliciosos y actualizar periódicamente el software antivirus. Desarrollar y mantener sistemas y aplicaciones seguros.
 APLICAR MEDIDAS SÓLIDAS DE CONTROL DE ACCESO | Restringir el acceso a los datos conforme a la necesidad de saber que tenga la organización. Identificar y autenticar el acceso a los componentes del sistema. Restringir el acceso físico a los datos de titulares de tarjeta.
 VIGILAR Y VERIFICAR PERIÓDICAMENTE LAS REDES | Rastrear y monitorizar todo el acceso a los recursos de la red y los datos de titulares de tarjeta. Verificar periódicamente los sistemas y procesos de seguridad.
 TENER UNA POLÍTICA DE SEGURIDAD DE LA INFORMACIÓN | Tener una política que contemple la seguridad de la información para todo el personal.
