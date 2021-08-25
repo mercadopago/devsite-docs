@@ -25,7 +25,7 @@ Para su implementación, se utiliza cualquier técnica de programación que perm
 - Conversión de tipos de datos con un estricto manejo de excepciones.
 - Verificación de rango de valores mínimo y máximo para parámetros numéricos y fechas, verificación de longitud mínima y máxima para cadenas de caracteres.
 
-Es importante asegurar que cualquier validación de entrada realizada en el cliente también debe realizarse en el servidor, ya que las mismas podrían ser omitidas del lado del cliente por un atacante. 
+Es importante asegurar que cualquier validación de entrada realizada en el cliente también sea realizada en el servidor, ya que las mismas podrían ser omitidas del lado del cliente por un atacante. 
 
 ## Server-Side Request Forgery (SSRF)
 Server-Side Request Forgery (SSRF) es un vector de ataque que abusa de una aplicación para interactuar con la red interna y/o externa, o con la propia máquina de nuestra aplicación. Dependiendo de la funcionalidad y los requisitos de la aplicación, hay dos casos de uso en los que puede ocurrir SSRF:
