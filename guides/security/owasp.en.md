@@ -17,7 +17,7 @@ Due to the integration that you are doing with Mercado Pago, to protect us again
 
 ## Input validation
 
-The [input validation](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html) is carried out to guarantee that all the data is correct (syntactically and semantically) before entering the workflow of our system, allowing us to detect unauthorized inputs before they are processed by the application.
+The [input validation](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html) guarantees that all data is syntactically and semantically correct before entering our system's workflow, allowing us to detect unauthorized inputs before they are processed by the application.
 
 In this way, we prevent incorrect data from persisting in our databases and as a consequence, causing a malfunction in our system. All data from unreliable sources should be subject to this validation. 
 
