@@ -39,7 +39,7 @@ Server-Side Request Forgery (SSRF) es un vector de ataque que abusa de una aplic
     **Capa de Red**: el objetivo es evitar que se realicen llamadas a aplicaciones arbitrarias. Se puede utilizar el Firewall para limitar el acceso de la aplicación y, a su vez, limitar el impacto de una aplicación vulnerable a SSRF. 
 
 
-2. **La aplicación puede enviar solicitudes a cualquier dirección IP o nombre de dominio externo**.
+2. **La aplicación puede enviar solicitudes a cualquier dirección IP o nombre de dominio externo**
     Este caso ocurre cuando un usuario puede controlar una URL a un recurso externo y la aplicación hace una petición a esta URL. Al decir recurso externo, nos referimos a cualquier IP que no pertenezca a la red interna, y debe ser alcanzada por a través de Internet de forma pública. 
 
     En este caso, no es posible utilizar listas de aplicaciones permitidas ya que en principio se desconocen y cambian de forma dinámica. 
