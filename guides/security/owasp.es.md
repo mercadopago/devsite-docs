@@ -40,7 +40,7 @@ Server-Side Request Forgery (SSRF) es un vector de ataque que abusa de una aplic
 
 
 2. **La aplicación puede enviar solicitudes a cualquier dirección IP o nombre de dominio externo**
-    Este caso ocurre cuando un usuario puede controlar una URL a un recurso externo y la aplicación hace una petición a esta URL. Al decir recurso externo, nos referimos a cualquier IP que no pertenezca a la red interna, y debe ser alcanzada por a través de Internet de forma pública. 
+    Este caso ocurre cuando un usuario puede controlar una URL a un recurso externo y la aplicación hace una petición a esta URL. Un recurso externo es cualquier IP que no pertenezca a la red interna y que debe ser alcanzada a través de Internet de forma pública. 
 
     En este caso, no es posible utilizar listas de aplicaciones permitidas ya que en principio se desconocen y cambian de forma dinámica. 
 
