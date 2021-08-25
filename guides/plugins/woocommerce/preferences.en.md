@@ -19,7 +19,7 @@ Enter the **name of the business** to appear on your customers' invoice and make
 >
 > Important
 >
-> Do not forget to enter your `integrator_id` as a certified Mercado Pago [Partner](https://partners.mercadopago.com/). If you don't have it, you can [request it now](https://docs.google.com/forms/d/1EeO__nZuqHf4cb81NpwtDSybPT7COluSZVrXR4A8F7Q/viewform?edit_requested=true).
+> Do not forget to insert your `integrator_id` to get additional benefits if you are a certified member of our program. Want to be part of our program? Check [this](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) to know how to get certified in our products.
 
 <span></span>
 
