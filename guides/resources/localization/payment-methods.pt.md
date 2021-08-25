@@ -138,7 +138,6 @@ A seguir estão os meios de pagamento disponíveis para cada país.
 | Mastercard Débito | `debit_card` | `debmaster` |
 | Redcompra | `debit_card` | `redcompra` |
 | Servipag | `ticket` | `servipag` |
-| Red Compras (Webpay) | `bank_transfer` | `webpay` |
 | Khipu | `bank_transfer` | `khipu` |
 | Dinheiro em conta | `account_money` | `account_money` |
 
