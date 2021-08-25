@@ -6,7 +6,7 @@ Open Web Application Security Project (OWASP) is an open community that provides
 
 OWASP Top 10 is a classification of the most common vulnerabilities in conjunction with their mitigation to protect applications from these types of attacks. We recommend that you visit the [official Owasp Top 10 site](https://owasp.org/www-project-top-ten/) for more information.
 
-Due to the integration that you are doing with Mercado Pago, to protect us against the most common vulnerabilities, we suggest you follow the following tips about: Input Validation and Server-Side Request Forgery Prevention.  [See OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/index.html)for more information.
+Due to the integration you are doing with Mercado Pago, to protect us against the most common vulnerabilities, we suggest you follow the guidelines on Input Validation and Server-Side Request Forgery Prevention. [See OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/index.html)for more information.
 
 >NOTE
 >
