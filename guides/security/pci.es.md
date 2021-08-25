@@ -15,7 +15,7 @@ La normativa PCI establece un nivel básico de protección para los dueños de t
 El cumplimiento de la normativa PCI implica tres aspectos importantes:
 - Transmitir de forma segura la información correspondiente a los datos de tarjetahabientes.
 - Almacenar los datos acorde a las mejoras prácticas de seguridad de la industria, bajo 12 requisitos normativos que se incluyen en el Estándar PCI.
-V- alidación anual del cumplimiento de los controles de seguridad y formularios de evaluación propuestos por el Council de PCI. 
+- Validación anual del cumplimiento de los controles de seguridad y formularios de evaluación propuestos por el Council de PCI. 
 
 Te recomendamos que puedas visitar el [sitio oficial de PCI](https://www.pcisecuritystandards.org/) para más información. A continuación proporcionamos un resumen de los objetivos que tienen los controles de seguridad PCI.
 
