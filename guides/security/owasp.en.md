@@ -1,6 +1,6 @@
 # OWASP
 
-At Mercado Pago we protect the payments of our clients/users so that they are processed safely on all web and mobile platforms. To do this, we implement security controls that maintain the confidentiality, integrity, and availability of the information we process through integrations.
+At Mercado Pago, we protect the payments of our clients/users so that they are processed safely on all web and mobile platforms. To do this, we implement security controls that maintain the confidentiality, integrity, and availability of the information we process through integrations.
     
 Open Web Application Security Project (OWASP) is an open community that provides tools and standards for developing and maintaining secure web applications. It seeks to promote application security research and development. 
 
