@@ -4,7 +4,7 @@ En Mercado Pago aseguramos la Confidencialidad, Disponibilidad e Integridad de t
 
 Además, para que Mercado Pago pueda operar con tarjetas de crédito y débito debemos cumplir con uno de los estándares de seguridad más exigentes de la industria de pagos: Payment Card Industry Data Security Standard.
 
-Definición y contexto
+**Definición y contexto**
 Si alguna vez almancenaste, procesaste o trasmitiste datos de tarjeta en tu compañía, seguramente escuchaste hablar de PCI. Desde Mercado Pago queremos ayudarte y simplificar la tarea de entender esta normativa y las distintas responsabilidades asociadas.
 
 Como Proveedor de Servicios debemos cumplir responsabilidades normativas y de seguridad frente a las marcas de tarjetas y adquirentes, pero aún así, la seguridad en todo el proceso de pago es obligación de ambas partes. Comercios y/o plataformas de e-commerce que se integren con procesadores de pago como Mercado Pago deben cumplir requerimientos mínimos de seguridad para mitigar riesgos de fraude y fuga de información asegurando los datos de los usuarios.
