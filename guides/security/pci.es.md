@@ -12,7 +12,7 @@ Como Proveedor de Servicios debemos cumplir responsabilidades normativas y de se
 PCI DSS (Payment Card Industry Data Security Standard) es una normativa internacional de seguridad que deben cumplir todas las entidades que almacenan, procesan o transmiten datos de tarjeta.
 
 La normativa PCI establece un nivel básico de protección para los dueños de tarjetas (tarjetahabientes) y ayuda a reducir el fraude y las filtraciones de datos dentro de todo el ecosistema de pagos. 
-El cumplimiento de la normativa PCI implica 3 aspectos importantes:
+El cumplimiento de la normativa PCI implica tres aspectos importantes:
 - Transmitir de forma segura la información correspondiente a los datos de tarjetahabientes.
 - Almacenar los datos acorde a las mejoras prácticas de seguridad de la industria, bajo 12 requisitos normativos que se incluyen en el Estándar PCI.
 V- alidación anual del cumplimiento de los controles de seguridad y formularios de evaluación propuestos por el Council de PCI. 
