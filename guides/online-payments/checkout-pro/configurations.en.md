@@ -935,7 +935,7 @@ To get business metrics, use `headers` in your preference. You should only add i
 | `x-platform-id` | Platform | For the platforms or modules that offer Mercado Pago in their solutions. |
 | `x-corporation-id` | Corporations | For accounts associated with a seller's account or economic group. |
 
->Remember to add the `integrator_id` it to your integrations to receive additional benefits of the program. You can find your  `integrator_id` at the [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel).> 
+>Remember to add the `integrator_id` it to your integrations to receive additional benefits of the program. You can find your  `integrator_id` at the [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel).
 
 [[[
 ```php

@@ -937,7 +937,7 @@ Utilize `headers` na sua preferência de pagamento agregando o código de identi
 | `x-platform-id` | Plataforma | Para as plataformas ou módulos que oferecem Mecado Pago em suas soluções. |
 | `x-corporation-id` | Corporações | Para contas associadas a uma conta vendedor ou grupo econômico. |
 
-> Não deixe de adicionr o `integrator_id` em suas integrações para receber benefícios adicionais do programa. Você consegue encontrar seu  `integrator_id` no [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel). 
+> Não deixe de adicionar o `integrator_id` em suas integrações para receber benefícios adicionais do programa. Você consegue encontrar seu `integrator_id` no [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel). 
 
 [[[
 ```php

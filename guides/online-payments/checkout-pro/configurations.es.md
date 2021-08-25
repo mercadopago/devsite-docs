@@ -947,7 +947,7 @@ De este modo, cuando se apruebe un pago a través de tu Checkout Pro, se asociar
 
 ## Obtén información sobre tu negocio
 
-Nuestros miembros están certificados en el programa [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) pueden obtener métricas comerciales. 
+Nuestros miembros certificados en el programa [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) pueden obtener métricas comerciales. 
 
 Utiliza `headers` en tu preferencia de pago agregando el código de identificación que te brindamos para el caso que corresponda. No es obligatorio completar este campo, por lo que si no sos Partner debes dejarlo vacío.
 
@@ -957,7 +957,7 @@ Utiliza `headers` en tu preferencia de pago agregando el código de identificaci
 | `x-platform-id` | Plataforma | Para las plataformas o módulos que ofrecen Mercado Pago en sus soluciones. |
 | `x-corporation-id` | Corporaciones | Para cuentas asociadas a una cuenta vendedor o grupo económico. |
 
-> Recuerde agregar el `integrator_id` a sus integraciones para recibir beneficios adicionales del programa. Puedes encontrar su `integrator_id` en el [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel). 
+> Recuerda agregar el `integrator_id` a tus integraciones para recibir beneficios adicionales del programa. Puedes encontrar tu `integrator_id` en el [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel). 
 
 
 [[[
