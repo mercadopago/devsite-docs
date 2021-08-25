@@ -19,7 +19,7 @@ V- alidación anual del cumplimiento de los controles de seguridad y formularios
 
 Te recomendamos que puedas visitar el [sitio oficial de PCI](https://www.pcisecuritystandards.org/) para más información. A continuación proporcionamos un resumen de los objetivos que tienen los controles de seguridad PCI.
 
-**Objective** | **Requirement**
+**Objectivo** | **Requerimiento**
 ------------- | ---------------
 CREAR Y MANTENER SISTEMAS Y UNA RED SEGUROS | Instalar y mantener un firewall configurado para proteger los datos de los titulares de tarjeta. No usar los valores predeterminados suministrados por el proveedor para las contraseñas de los sistemas y otros parámetros de seguridad.|
 PROTEGER LOS DATOS DE LOS TITULARES DE TARJETA | Proteger los datos del titular almacenados. Cifrar la transmisión de los datos de titulares de tarjeta en las redes abiertas o públicas.
