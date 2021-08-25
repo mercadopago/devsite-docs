@@ -30,7 +30,7 @@ Para sua implementação, qualquer técnica de programação que permita a aplic
 [Server-Side Request Forgery](https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html) é um vetor de ataque que abusa de um aplicativo para interagir com a rede interna e/ou externa, ou com a própria máquina do aplicativo.
 
 Dependendo da funcionalidade e dos requisitos do aplicativo, há dois casos de uso em que o SSRF pode ocorrer:
-1. **A aplicação pode enviar uma solicitação apenas para aplicativos identificados e confiáveis**.
+1. **A aplicação pode enviar uma solicitação apenas para aplicativos identificados e confiáveis**
    Este caso ocorre quando um aplicativo precisa fazer uma solicitação a outro, que geralmente está localizado em outra rede, para realizar uma tarefa específica. Nesse caso, é possível usar uma abordagem de lista de permissões de aplicativos. Podemos nos proteger por meio das camadas de aplicativo e rede.
 
    * **Camada de aplicativo**: Por meio da validação de entrada, podemos aplicar a abordagem da lista de aplicativos permitidos. O formato das informações esperadas do usuário já é conhecido. Nesse contexto, as validações também podem ser adicionadas para garantir que a string de entrada respeite o formato esperado. 
