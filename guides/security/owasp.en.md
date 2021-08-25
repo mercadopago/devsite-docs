@@ -46,6 +46,6 @@ It is critical to ensure that any input validation performed on the client-side 
 
 2. **The application can send requests to any external IP address or domain name**.
 
-     This case occurs when a user can control a URL to an external resource and the application makes a request to this URL. When we say **external resource**, we mean any IP that does not belong to the internal network, and must be reached through the Internet in a public way. 
+This case occurs when a user can control a URL to an external resource, and the application requests this URL. When we say **external resource**, we mean any IP that does not belong to the internal network and must be reached through the Internet in a public way. 
 
      In this case, it is not possible to use lists of allowed applications as they are initially unknown and change dynamically. 
