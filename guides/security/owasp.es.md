@@ -30,7 +30,7 @@ Es importante asegurar que cualquier validación de entrada realizada en el clie
 ## Server-Side Request Forgery (SSRF)
 Server-Side Request Forgery (SSRF) es un vector de ataque que abusa de una aplicación para interactuar con la red interna y/o externa, o con la propia máquina de nuestra aplicación. Dependiendo de la funcionalidad y los requisitos de la aplicación, hay dos casos de uso en los que puede ocurrir SSRF:
 
-1. **La aplicación puede enviar una solicitud solo a las aplicaciones identificadas y de confianza**.
+1. **La aplicación puede enviar una solicitud solo a las aplicaciones identificadas y de confianza**
 
      Este caso ocurre cuando una aplicación necesita realizar una solicitud a otra, que suele estar ubicada en otra red, para realizar una tarea específica. En este caso es posible utilizar un enfoque de lista de aplicaciones permitidas. Podemos protegernos a través de las capas de Aplicación y de Red. 
 
