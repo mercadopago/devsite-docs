@@ -6,6 +6,26 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Agosto 2021
 
+### 19 de agosto
+
+> CHANGELOG
+>
+> Nueva versión PrestaShop
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: PRESTASHOP
+
+Lanzamos la nueva versión 4.7.0 para PrestaShop.
+
+[Ir a documentación de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.7.0).
+
 ### 12 de agosto
 
 ----[mlb]----
