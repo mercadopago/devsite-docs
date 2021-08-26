@@ -925,7 +925,7 @@ Once set up, you’ll see a conversion associated to the configured label everyt
 
 ## Get information about your business
 
-Our members certified in the [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) can obtain business metrics. 
+Our members certified in the [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/developer-program) can obtain business metrics. 
 
 To get business metrics, use `headers` in your preference. You should only add identification codes, as applicable. It is not required to complete the three fields mentioned.
 
