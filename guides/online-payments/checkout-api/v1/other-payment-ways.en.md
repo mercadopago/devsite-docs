@@ -47,7 +47,7 @@ var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
 var response = await mercadopago.get("/v1/payment_methods");
-payment_methods = response.body;
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -526,7 +526,7 @@ var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
 var response = await mercadopago.get("/v1/payment_methods");
-payment_methods = response.body;
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -1024,7 +1024,7 @@ var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
 var response = await mercadopago.get("/v1/payment_methods");
-payment_methods = response.body;
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -1453,7 +1453,7 @@ var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
 var response = await mercadopago.get("/v1/payment_methods");
-payment_methods = response.body;
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -2145,7 +2145,7 @@ var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
 var response = await mercadopago.get("/v1/payment_methods");
-payment_methods = response.body;
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -2765,7 +2765,7 @@ var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
 var response = await mercadopago.get("/v1/payment_methods");
-payment_methods = response.body;
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -3179,7 +3179,7 @@ var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
 var response = await mercadopago.get("/v1/payment_methods");
-payment_methods = response.body;
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
