@@ -84,7 +84,9 @@ request(options, callback);
 ```
 ]]]
 
-Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
+Recibirás como respuesta un `HTTP STATUS 200 (Ok)` si no se encuentra ningún error en la consulta. 
+
+El objeto de respuesta con los datos de la consulta tendrá una estructura similar al ejemplo siguiente:
 
 ```json
 {
@@ -321,7 +323,10 @@ request(options, callback);
 ```
 ]]]
 
-Recibirás como respuesta un `HTTP STATUS 201 (Created)`
+Recibirás como respuesta un `HTTP STATUS 201 (Created)` si no se encuentra ningún error en la creación. 
+
+El objeto de respuesta con los datos del nuevo reporte tendrá una estructura similar al ejemplo siguiente:
+
 
 ```json
 {
@@ -627,7 +632,7 @@ Conoce los campos que puedes configurar para ajustar tus preferencias antes de e
 
 
 
-## Generar de forma manual
+## Generar el reporte de forma manual 
 
 Genera tus reportes de forma manual configurando tres instancias: generación, búsqueda y descarga.
 
@@ -724,7 +729,7 @@ request(options, callback);
 ```
 ]]]
 
-Recibirás como respuesta un `HTTP STATUS 202 (Accepted)`, y el reporte se generará de manera asincrónica.
+Recibirás como respuesta un `HTTP STATUS 202 (Accepted)` si no se encuentra ningún error, y el reporte se generará de manera asincrónica.
 
 ### 2. Búsqueda
 
@@ -790,7 +795,9 @@ request(options, callback);
 ```
 ]]]
 
-Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
+Recibirás como respuesta un `HTTP STATUS 200 (Ok)` si no se encuentra ningún error en la búsqueda.
+
+La respuesta con los datos de la consulta tendrá una estructura similar al ejemplo siguiente:
 
 ```json
 [
@@ -965,7 +972,9 @@ request(options, callback);
 ```
 ]]]
 
-Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
+Recibirás como respuesta un `HTTP STATUS 200 (Ok)` si no se encuentra ningún error en la generación.
+
+La respuesta con los datos del reporte tendrá una estructura similar al ejemplo siguiente:
 
 ```json
 {
@@ -985,7 +994,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 
 ### 2. Configuración
 
-Ejecuta el curl que necesites para cancelar la generación programada de tus reportes.
+Ejecuta el curl para cancelar la generación programada de tus reportes:
 
 
 [[[
@@ -1058,7 +1067,9 @@ request(options, callback);
 ```
 ]]]
 
-Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
+Recibirás como respuesta un `HTTP STATUS 200 (Ok)` si no se encuentra ningún error para cancelar.
+
+La respuesta con los datos de la cancelación tendrá una estructura similar al ejemplo siguiente:
 
 ```json
 {
@@ -1077,7 +1088,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 
 ### 3. Descarga
 
-Descarga el archivo con este comando:
+Descarga el archivo generado con el siguiente comando:
 
 
 [[[
@@ -1138,7 +1149,9 @@ request(options, callback);
 ```
 ]]]
 
-Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
+Recibirás como respuesta un `HTTP STATUS 200 (Ok)` si no se encuentra ningún error en la descarga.
+
+La respuesta con los datos del archivo tendrá una estructura similar al ejemplo siguiente:
 
 ```csv
 DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD
