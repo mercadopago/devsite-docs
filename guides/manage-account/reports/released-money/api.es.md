@@ -1,14 +1,13 @@
 
 # Generación por API
 
-
-Ganá tiempo y automatizá la **frecuencia de generación** del reporte de Liberaciones las veces que quieras, tanto de forma manual como de forma programada. 
+Crea el reporte de Liberaciones de forma manual las veces que quieras o prográmalo según tus necesidades de frecuencia a través de nuestra API. 
 
 > WARNING
 >
-> El reporte de Dinero retirado será deshabilitado El próximo 22 de Marzo de 2022
+> El reporte de Dinero retirado será deshabilitado a partir del 22 de marzo de 2022
 >
-> Puedes usar el [reporte de ----[mla]----Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberaciones------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.
+> Usa el [reporte de ----[mla]----Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberaciones------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.
 
 ## Configurar tus reportes
 
@@ -569,7 +568,9 @@ request(options, callback);
 ]]]
 
 
-Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
+Recibirás como respuesta un `HTTP STATUS 200 (Ok)` si no se encuentra ningún error en la alteración. 
+
+La respuesta con los datos de la alteración tendrá una estructura similar al ejemplo siguiente:
 
 ```json
 {
@@ -895,9 +896,9 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 ```
 
 
-## Generar de forma programada
+## Genera tus reportes de forma programada
 
-Genera tus reportes de forma programada configurando tres instancias: generación, configuración y descarga.
+Puedes programar la creación de tus reportes. Solo debes configurar tres instancias: generación, configuración y descarga.
 
 ### 1. Generación
 
