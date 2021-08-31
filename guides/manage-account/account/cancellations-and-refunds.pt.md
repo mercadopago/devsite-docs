@@ -112,6 +112,7 @@ Para pagamentos realizados a partir de outros meios, o valor a ser devolvido ser
 
 Para realizar a devolução integral, faça a seguinte requisição indicando o `payment_id`:
 
+[[[
 ```php
 <?php
 
@@ -139,6 +140,7 @@ curl -X POST \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 'https://api.mercadopago.com/v1/payments/:ID/refunds'
 ```
+]]]
 
 > NOTE
 >
