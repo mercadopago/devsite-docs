@@ -8,7 +8,8 @@ You can generate a Release report from your Mercado Pago account:
 | Channels | Description |
 | --- | --- |
 | Mercado Pago panel | To manually generate the report from your Mercado Pago panel, go to [Reports](https://www.mercadopago[FAKER][URL][DOMAIN]/movements) and choose "Created reports".<br/><br/>Follow the step by step to [generate reports from your panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/panel).|
-| API integration | To manually generate the report or schedule one according to the desired frequency, your can use our API integration. <br/><br/> Read the documentation [generating reports through API](https://www.mercadopago[FAKER][URL][DOMAIN]/).` |
+| API integration | To manually generate the report or schedule one according to the desired frequency, your can use our API integration. <br/><br/> Read the documentation [generating reports through API](https://www.mercadopago[FAKER][URL][DOMAIN]/).|
+| API integration | <br/>Schedule the frequency of your report according to your needs. It can be both manually and on a scheduled basis.<br/><br/>Read the documentation to [generate reports through API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/api).|
 
 
 
