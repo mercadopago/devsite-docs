@@ -201,7 +201,7 @@ Para crear una condición de pago Pix usando tu afiliación con MercadoPagoV2, s
 
 ### Condición de pagos para Mercado Pago Offline
 
-Para crear una **condición de pago de Mercado Pago Offline usando tu afiliación con MercadoPagoV2, sigue estos pasos:
+Para crear una condición de pago de Mercado Pago Offline usando tu afiliación con MercadoPagoV2, sigue estos pasos:
 
 1. En el panel de administración, ingresa en Configuraciones de medios de pago.
 2. En la pestaña Condiciones de pago, haz clic en el botón "+".
