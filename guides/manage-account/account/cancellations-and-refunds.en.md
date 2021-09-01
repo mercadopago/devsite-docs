@@ -112,6 +112,7 @@ If the payment was made by other means, the amount will be deposited in the buye
 
 To issue a full refund, make the following request indicating the `payment_id`:
 
+[[[
 ```php
 <?php
 
@@ -139,6 +140,7 @@ curl -X POST \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 'https://api.mercadopago.com/v1/payments/:ID/refunds'
 ```
+]]]
 
 > NOTE
 >
