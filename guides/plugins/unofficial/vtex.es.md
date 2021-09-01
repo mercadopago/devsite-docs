@@ -10,7 +10,7 @@ Puedes ofrecer a tus clientes la posibilidad de pagar con [tarjetas de crédito]
 
 Los **pasos para comenzar a operar con Mercado Pago** son los siguientes:
 
-1. Crea una [cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) en Mercado Pago si aún no tiene una.
+1. Crea una [cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) en Mercado Pago si aún no tienes una.
 2. Registra la afiliación con Mercado Pago.
 3. Configura las condiciones de pago.
 4. Agrega el device fingerprint.
@@ -129,14 +129,14 @@ Luego de tener creada tu afiliación con MercadoPagoV2, puedes configurar pagos 
 
 #### Condición de pagos para tarjeta de crédito
 
-Para crear un plazo de pago con tarjeta de crédito utilizando su afiliación con Mercado Pago, sigue los pasos a continuación:
+Para crear un plazo de pago con tarjeta de crédito utilizando su afiliación con Mercado Pago, sigue estos pasos:
 
 1. En el panel de administración de tu tienda, accede a "Configuración" desde el módulo de pagos.
 2. En la pestaña "Condiciones de pago", haga clic en el botón "+".
 3. En la sección "Tarjeta de crédito", elija qué marca agregar al método de pago.
 4. Informa el "Nombre de la regla" para facilitar la identificación y activar el plazo de pago en el campo "Estado".
 5. Informa tu afiliación con MercadoPagoV1 en el campo "Proceso con afiliación".
-----[mla, mco, mpe, mlc, mlu]----
+----[mla, mco, mpe, mlc, mlu,mlb]----
 6. En las opciones de cuotas, elije “Automática” para utilizar las condiciones de las cuotas directamente desde tu cuenta de Mercado Pago.
 7. Haz clic en “Guardar".
 ------------
@@ -154,7 +154,7 @@ Para crear un plazo de pago con tarjeta de crédito utilizando su afiliación co
 
 ### Condición de pago boleto bancário
 
-Para crear un **plazo de pago usando boleto bancário con tu afiliación con MercadoPagoV2**, sigue los pasos a continuación:
+Para crear un **plazo de pago usando boleto bancário con tu afiliación con MercadoPagoV2**, sigue estos pasos:
 
 1. En el panel de administración de tu tienda, accede a "Configuración" desde el módulo de pagos.
 2. En la pestaña "Condiciones de pago", haz clic en el botón "+".
@@ -169,7 +169,7 @@ Para crear un **plazo de pago usando boleto bancário con tu afiliación con Mer
 
 ### Condición de pago de Pix
 
-Para crear una condición de pago Pix usando tu afiliación con MercadoPagoV2, sigue los pasos a continuación:
+Para crear una condición de pago Pix usando tu afiliación con MercadoPagoV2, sigue estos pasos:
 
 #### Requisito previo
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtén una llave Pix 
@@ -180,7 +180,7 @@ Para comenzar, debes tener registrada una llave Pix en la cuenta del vendedor. E
 
 > Ten en cuenta que el registro de la llave Pix puede demorar unos minutos.
 
-Para **crear una condición de pago Pix usando tu afiliación con MercadoPagoV2, sigue los pasos a continuación:
+Para **crear una condición de pago Pix usando tu afiliación con MercadoPagoV2, sigue estos pasos:
 
 1. En el panel de administración de tu tienda, accede a "Configuración" desde el módulo de pagos.
 2. En la pestaña Condiciones de pago, haga clic en el botón "+".
@@ -192,15 +192,17 @@ Para **crear una condición de pago Pix usando tu afiliación con MercadoPagoV2,
 
 ![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_pix_2.gif)
 
+------------
+
 ### Condición de pagos para Mercado Pago Offline
 
-Para crear una **condición de pago de Mercado Pago Offline usando tu afiliación con MercadoPagoV2, sigue los pasos a continuación:
+Para crear una **condición de pago de Mercado Pago Offline usando tu afiliación con MercadoPagoV2, sigue estos pasos:
 
 1. En el panel de administración, ingresa en Configuraciones de medios de pago.
 2. En la pestaña Condiciones de pago, haz clic en el botón "+".
 3. En la sección Otros, elige la condición de pago "MercadoPagoOff".
 4. Asígnale un nombre a la regla para facilitar la identificación. Luego, activa la condición en el campo "Status".
-5. Informe su afiliación a MercadoPagoV2 en el campo "Proceso con afiliación".
+5. Informa tu afiliación a MercadoPagoV2 en el campo "Proceso con afiliación".
 6. Haz clic en "Guardar."
 <p>&nbsp;</p>
 
@@ -208,56 +210,56 @@ Para crear una **condición de pago de Mercado Pago Offline usando tu afiliació
 
 > Los cambios en las condiciones de pago pueden tardar hasta 10 minutos en aplicarse.
 
-------------
 
 ### Condiciones de pago Checkout Pro
 
+----[mla, mco, mpe, mlc, mlu, mlm]----
+[Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction) es la integración que te permite cobrar a través de Mercado Pago, con métodos de pago como comprobante de pago y billetera digital de Mercado Pago.
+------------
+----[mlb]----
 [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction) es la integración que te permite cobrar a través de Mercado Pago, con métodos de pago como Pix, comprobante de pago, débito virtual de Caixa y billetera digital de Mercado Pago.
+------------
 
 #### Configura el método de pago de Mercado Pago
 
-**El comprador será redirigido a la web de Mercado Pago** y una vez finalizado el proceso, volverá a su tienda.
+**El comprador será redirigido a la web de Mercado Pago** y una vez finalizado el proceso, volverá a tu tienda.
 
-
-Para crear este plazo de pago, siga los pasos a continuación:
+Para crear este medio de pago, sigue los pasos a continuación:
 
 1. En el panel de administración de tu tienda, accede a "Configuración" desde el módulo de pagos.
-2. En la pestaña "Condiciones de pago", haga clic en el botón "+".
-3. En la sección Otros, seleccione el término de pago "Mercado Pagado".
-4. Informe el "Nombre de la regla" para una fácil identificación y active el plazo de pago en el campo Estado.
-5. Informe su afiliación con MercadoPagoV2 en el campo "Proceso con afiliación".
-6. Haga clic en "Guardar".
+2. En la pestaña "Condiciones de pago", haz clic en el botón "+".
+3. En la sección Otros, elige la condición de pago "Mercado Pago".
+4. Asígnale un nombre a la regla para facilitar la identificación. Luego, activa la condición en el campo "Status".
+5. Informa tu afiliación a MercadoPagoV2 en el campo "Proceso con afiliación".
+6. Haz clic en "Guardar".
 <p>&nbsp;</p>
 
 ![Setting payments in VTEX](/images/vtex/vtex-hispanos-cow-pro.gif)
 
-#### Condición de pagos para el MercadoPago Pro
+#### Condición de pagos para el MercadoPagoPro
 
-Para crear una condición de pago de MercadoPagoPro usando su afiliación con MercadoPagoV2, siga los pasos:
+Para crear una condición de pago de MercadoPagoPro usando la afiliación con MercadoPagoV2, sigue estos pasos:
 
-1. En el panel de administración, ingresa en Configuraciones de medios de pago.
-2. En la pestaña Condiciones de pago, haz clic en +.
-3. En la sección Otro, elige como condición de pago MercadoPagoPro.
-4. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status.
-5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV2.
+1. En el panel de administración, ingresa en "Configuraciones de medios de pago".
+2. En la pestaña Condiciones de pago, haz clic en el botón "+".
+3. En la sección Otro, elige como medio de pago "MercadoPagoPro".
+4. Asígnale un nombre a la regla para facilitar la identificación. Luego, activa la condición en el campo "Status".
+5. Informa tu afiliación a MercadoPagoV2 en el campo "Proceso con afiliación".
 6. Haz clic en Guardar.
 <p>&nbsp;</p>
 
 ![Setting payments in VTEX](/images/vtex/vtex-hispanos-cow.gif)
 
 
-¡Y listo! ¡Tu condición de pago de Checkout Pro Mercado Pago ya está activa!
+#### Condición de pagos para el MercadoPagoWallet
 
-
-#### Condición de pagos para el Mercado Pago Wallet
-
-Para crear una condición de pago de MercadoPagoWallet usando su afiliación con MercadoPagoV2, siga los pasos:
+Para crear una condición de pago de MercadoPagoWallet usando la afiliación con MercadoPagoV2, sigue estos pasos:
 
 1. En el panel de administración, ingresa en Configuraciones de medios de pago.
-2. En la pestaña Condiciones de pago, haz clic en +.
-3. En la sección Otro, elige como condición de pago MercadoPagoWallet.
-4. Nombra la regla para ayudar facilitar la identificación y activa la condición en el campo Status.
-5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV2.
+2. En la pestaña Condiciones de pago, haz clic en el botón "+".
+3. En la sección Otro, elige como medio de pago "MercadoPagoWallet".
+4. Asígnale un nombre a la regla para facilitar la identificación. Luego, activa la condición en el campo "Status".
+5. Informa tu afiliación a MercadoPagoV2 en el campo "Proceso con afiliación".
 6. Haz clic en Guardar.
 <p>&nbsp;</p>
 
@@ -270,28 +272,44 @@ Para crear una condición de pago de MercadoPagoWallet usando su afiliación con
 >
 > > Los cambios en las condiciones de pago pueden tardar hasta 10 minutos en aplicarse. <br>
 
-## Configurando el pago a plazos en tu cuenta de Mercado Pago.
+----[mla, mco, mpe, mlc, mlu, mlb]----
+## Configura pagos en cuotas sin interés en tu cuenta de Mercado Pago.
 
 1. Accede a tu cuenta de Mercado Pago y haz clic en "Tu negocio"
-2. Haga clic en la opción "Configuración", navegue hasta el campo "Ofrecer cuotas sin adición" y haga clic en "Activar".
-3. Elija "¿Cuántas cuotas desea ofrecer?" y haga clic en "Activar" para confirmar los cambios.
+2. Haz clic en la opción "Configuración". Luego, navega hasta el campo "Ofrecer cuotas sin interés" y haz clic en "Activar".
+3. Configura cuántas cuotas deseas ofrecer y haz clic en "Activar" para confirmar los cambios.
 
 <p>&nbsp;</p>
 
 ![Setting affiliation in VTEX](/images/vtex/vtex-hisp-cuotas.gif)
 
-¡Y pronto! No ofrece cuotas de recargo, asumiendo las tarifas de cuotas que ha establecido.
+¡Y listo! Ya estás ofreciendo cuotas sin interés.
+------------
 
-## Obtenga una aprobación más rápida enviando la huella digital del dispositivo
+----[mlm]----
+## Configura pagos en mensualidades sin interés en tu cuenta de Mercado Pago.
 
-Mercado Pago tiene sus propias herramientas de prevención de fraude. Siempre que sea posible, **le recomendamos que envíe información sobre el comportamiento del cliente para detectar movimientos inusuales y evitar transacciones fraudulentas**. No se preocupe, nos ocupamos de los datos de sus clientes y no los compartimos con nadie.
+1. Accede a tu cuenta de Mercado Pago y haz clic en "Tu negocio"
+2. Haz clic en la opción "Configuración", navegue hasta el campo "Ofrecer mensualidades sin interés" y haz clic en "Activar".
+3. Configura cuántas mensualidades sin interés deseas ofrecer y haz clic en "Activar" para confirmar los cambios.
 
-Para configurar la huella digital del dispositivo, siga los pasos a continuación:
+<p>&nbsp;</p>
 
-1. En el panel de administración de su tienda, acceda a Checkout desde el módulo "Configuración de la tienda".
-2. Haga clic en el icono "editar", refiriéndose a la configuración de su sitio.
-3. Vaya a la pestaña "Código" y haga clic en "checkout5-custom.js" en el módulo de archivos.
-4. Copie y pegue el siguiente código y haga clic en guardar.
+![Setting affiliation in VTEX](/images/vtex/vtex-hisp-cuotas.gif)
+
+¡Y listo! Ya estás ofreciendo mensualidades sin interés.
+------------
+
+## Obtén una aprobación más rápida enviando el device fingerprint
+
+Mercado Pago tiene sus propias herramientas de prevención de fraude. Siempre que sea posible, **te recomendamos que envíes información sobre el comportamiento del cliente para detectar movimientos inusuales y evitar transacciones fraudulentas**. No te preocupes, cuidamos los datos de tus clientes y no los compartimos con nadie.
+
+Para configurar el device fingerprint, sigue estos pasos:
+
+1. En el panel de administración de tu tienda, accede a Checkout desde el módulo "Configuración de la tienda".
+2. Haz clic en "editar". Esto te permitirá modificar la configuración de tu sitio.
+3. Ve a la pestaña "Código" y, dentro del módulo de archivos, haz clic en "checkout5-custom.js".
+4. Copia y pega el siguiente código y haz clic en guardar.
 <p>&nbsp;</p>
 
 ```javascript
