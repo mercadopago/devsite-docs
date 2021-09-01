@@ -52,7 +52,7 @@ Para cada uno de los 12 requisitos de PCI, existen básicamente cuatro niveles d
 
  >El [SAQ (Self-Assessment Questionnaire)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment) es un formulario de autoevaluación PCI que deben completar aquellos comercios o proveedores de servicio que no son elegibles para completar un Reporte de Cumplimiento Nivel 1, y que tiene como finalidad validar el cumplimiento normativo a través de una serie de controles resumidos en preguntas "sí" o "no". 
 
-# Cumplimiento
+## Cumplimiento
 Mercado Pago es responsable de asegurar la información de datos de tarjetahabiente una vez ingresan en su entorno, por lo que es importante que los comercios y/o plataformas de e-commerce cumplan con los controles de seguridad apropiados para transmitirlos de manera correcta. Como Proveedor de servicios, Mercado Pago puede validar el cumplimiento solicitando evidencia de la documentación PCI correspondiente de acuerdo al producto utilizado.
 
 Mercado Pago simplifica considerablemente la carga del cumplimiento de esta normativa para las organizaciones que adoptan Checkout Pro ya que utilizan un campo que se origina directamente en nuestros servidores en una zona segura para el ingreso de datos de tarjetas de parte del cliente. De esta manera la mayor parte de los requisitos de PCI DSS recaen sobre Mercado Pago y disminuyen considerablemente tu esfuerzo en controles de seguridad.
