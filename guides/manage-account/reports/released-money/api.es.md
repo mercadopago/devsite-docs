@@ -1184,8 +1184,8 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
-> Generación por retiro
+> Generación por API
 >
 > Puedes generar un reporte cada vez que retires dinero a una cuenta bancaria.
 >
-> [Generación por retiro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/withdrawal)
+> [Generación por api](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/api)
