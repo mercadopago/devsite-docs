@@ -2637,6 +2637,13 @@ In the `external_resource_url` field you will find an address with payment instr
 
 To receive payments with Webpay, you have to send the IP address of the buyer, the financial institution that processes the payment and, optionally, the RUT and the type of person.
 
+> WARNING
+>
+> Important
+>
+> The WebPay integration will be discontinued shortly. We **strongly** recommend you to use [another payment solution](https://www.mercadopago.cl/developers/en/guides/resources/localization/payment-methods#bookmark_chile) to avoid integration problems in the near future.
+
+
 [[[
 ```php
 <?php

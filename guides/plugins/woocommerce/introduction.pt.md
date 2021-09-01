@@ -5,6 +5,12 @@ O módulo do Mercado Pago para o WooCommerce permite expandir as funcionalidades
 
 Se você já usa o WooCommerce para criar sites de e-commerce no WordPress, um dos gerenciadores de conteúdo mais populares do mundo, pode contar com nosso módulo para adicionar um processador de pagamento confiável ao seu site ou de seus clientes.
 
+> WARNING
+>
+> Aviso importante
+> 
+> Em 13 de julho de 2021, o WooCommerce notificou seus clientes de que algumas de suas versões são vulneráveis. As correções necessárias já foram feitas na última atualização. Por isso, é **muito importante que sua loja esteja com a última versão do WooCommerce atualizada** para prevenir a exposição de informações sensíveis. Para obter mais informações, consulte o [blog do Woocommerce](https://woocommerce.com/pt-br/posts/critical-vulnerability-detected-july-2021/).
+
 ## O que posso fazer com o Mercado Pago no WooCommerce
 
 Instale nosso gateway de pagamento no WooCommerce e leve suas vendas para outro nível com a melhor experiência de compra:

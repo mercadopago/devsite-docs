@@ -2527,6 +2527,12 @@ En el campo `external_resource_url` vas a encontrar una dirección que contiene 
 
 Para poder recibir pagos con Webpay, tienes que enviar la dirección IP del comprador, la institución financiera que procesa el pago y, opcionalmente, el RUT y el tipo de persona.
 
+> WARNING
+>
+> Importante
+>
+> La integración de WebPay será deprecada pronto. Es **muy** recomendable que utilices [otra solución de pago](https://www.mercadopago.cl/developers/es/guides/resources/localization/payment-methods#bookmark_chile) para evitar que experimentes problemas en tus integraciones. 
+
 [[[
 ```php
 <?php

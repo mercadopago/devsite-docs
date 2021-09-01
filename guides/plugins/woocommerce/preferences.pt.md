@@ -19,8 +19,7 @@ Insira o **nome do seu negócio** para que apareça na fatura dos seus clientes 
 >
 > Importante
 >
-> Não esqueça de inserir seu `integrator_id` como [Parceiro](https://partners.mercadopago.com/) certificado do Mercado Pago. Se você não o possui, pode [solicitá-lo agora](https://docs.google.com/forms/d/e/1FAIpQLScTwPlLRVW2rB_BnCxekUnfJu9rn-tUMh8ENAnqpxLeB8ULUw/viewform?usp=sf_link).
-
+> Não esqueça de inserir seu `integrator_id` para receber benefício adicionais, se você for um membro certificado do nosso programa. Quer fazer parte do programa? Veja [aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) como obter a certificação em nossos produtos.
 <span></span>
 
 > NOTE
