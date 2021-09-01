@@ -1,6 +1,6 @@
 # OWASP
 
-En Mercado Pago protegemos los pagos de nuestros clientes/usuarios para que se procesen de forma segura en todas las plataformas web y mobile. Para ello, implementamos controles de seguridad que mantienen la confidencialidad, la integridad y la disponibilidad de la información que procesamos a través de las integraciones.
+En Mercado Pago protegemos los pagos de nuestros clientes y usuarios para que se procesen de forma segura en todas las plataformas web y mobile. Para ello, implementamos controles de seguridad que mantienen la confidencialidad, la integridad y la disponibilidad de la información que procesamos a través de las integraciones.
     
 Open Web Application Security Project (OWASP) es una comunidad abierta y segura que brinda herramientas y estándares para el desarrollo y mantenimiento de aplicaciones web. Busca fomentar la investigación y desarrollo de seguridad en aplicaciones. 
 
@@ -34,9 +34,10 @@ Server-Side Request Forgery (SSRF) es un vector de ataque que abusa de una aplic
 
      Este caso ocurre cuando una aplicación necesita realizar una solicitud a otra, que suele estar ubicada en otra red, para realizar una tarea específica. En este caso es posible utilizar un enfoque de lista de aplicaciones permitidas. Podemos protegernos a través de las capas de Aplicación y de Red. 
 
-    **Capa de Aplicación**: a través de la validación de entrada, podemos aplicar el enfoque de lista de aplicaciones permitidas. El formato de la información que se espera del usuario ya es conocido. En este contexto, también se pueden agregar validaciones para garantizar que la cadena de entrada respete el formato esperado. 
+    - **Capa de Aplicación**: a través de la validación de entrada, podemos aplicar el enfoque de lista de aplicaciones permitidas. El formato de la información que se espera del usuario ya es conocido. En este contexto, también se pueden agregar validaciones para garantizar que la cadena de entrada respete el formato esperado. 
 
-    **Capa de Red**: el objetivo es evitar que se realicen llamadas a aplicaciones arbitrarias. Se puede utilizar un firewall para limitar el acceso de la aplicación y, a su vez, limitar el impacto de una aplicación vulnerable a SSRF. 
+    - **Capa de Red**: el objetivo es evitar que se realicen llamadas a aplicaciones arbitrarias. Se puede utilizar un firewall para limitar el acceso de la aplicación y, a su vez, limitar el impacto de una aplicación vulnerable a SSRF. 
+    <br>
 
 
 2. **La aplicación puede enviar solicitudes a cualquier dirección IP o nombre de dominio externo**

@@ -1,6 +1,6 @@
 # OWASP
 
-At Mercado Pago, we protect the payments of our clients/users so that they are processed safely on all web and mobile platforms. To do this, we implement security controls that maintain the confidentiality, integrity, and availability of the information we process through integrations.
+At Mercado Pago, we protect the payments of our clients and users so that they are processed safely on all web and mobile platforms. To do this, we implement security controls that maintain the confidentiality, integrity, and availability of the information we process through integrations.
     
 Open Web Application Security Project (OWASP) is an open community that provides tools and standards for developing and maintaining secure web applications. It seeks to promote application security research and development. 
 
@@ -38,10 +38,11 @@ It is critical to ensure that any input validation performed on the client-side 
 
 1. **The application can send a request only to identified and trusted applications**
 
-This case occurs when an application needs to request another one, which is usually localized on another network, to perform a specific task. In this case, it is possible to use an app-allowed-list approach. We can protect ourselves through the Application and Network layers. 
+     This case occurs when an application needs to request another one, which is usually localized on another network, to perform a specific task. In this case, it is possible to use an app-allowed-list approach. We can protect ourselves through the Application and Network layers. 
 
-     * **Application Layer**: Through input validation, we can apply the approach of the allowed-applications list. The format of the information expected from the user is already known. In this context, validations can also be added to ensure that the input string respects the expected format. 
-     * **Network Layer:** the goal is to prevent arbitrary calls from applications. A firewall can be used to limit application access and, in turn, limit the impact of an application vulnerable to SSRF. 
+     - **Application Layer**: Through input validation, we can apply the approach of the allowed-applications list. The format of the information expected from the user is already known. In this context, validations can also be added to ensure that the input string respects the expected format. 
+     - **Network Layer:** the goal is to prevent arbitrary calls from applications. A firewall can be used to limit application access and, in turn, limit the impact of an application vulnerable to SSRF. 
+     <br>
 
 
 2. **The application can send requests to any external IP address or domain name**

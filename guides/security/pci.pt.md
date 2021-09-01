@@ -4,7 +4,7 @@ No Mercado Pago garantimos a Confidencialidade, Disponibilidade e Integridade de
 
 Além disso, para que o Mercado Pago possa operar com cartões de crédito e débito, devemos cumprir um dos mais exigentes padrões de segurança da indústria de pagamentos: o Payment Card Industry Data Security Standard.
 
-Definição e contexto
+## Definição e contexto
 Se você já armazenou, processou ou transmitiu dados de cartão em sua empresa, provavelmente já ouviu falar de PCI. Do Mercado Pago queremos ajudá-lo e simplificar a tarefa de compreensão deste regulamento e das diferentes responsabilidades associadas.
 
 Como Prestadora de Serviços, devemos cumprir as responsabilidades regulatórias e de segurança em relação às bandeiras e adquirentes de cartões, mas, ainda assim, a segurança em todo o processo de pagamento é obrigação de ambas as partes. Os comerciantes e / ou plataformas de e-commerce integradas a processadores de pagamentos, como o Mercado Pago, devem atender a requisitos mínimos de segurança para mitigar riscos de fraude e vazamento de informações, protegendo os dados do usuário.
@@ -21,20 +21,20 @@ Recomendamos que você visite o [site oficial do PCI](https://www.pcisecuritysta
 
 **Objetivo** | **Requisito**
 ------------- | ---------------
-CRIAR E MANTER SISTEMAS E REDE SEGUROS | Instalar e manter um firewall configurado para proteger os dados do portador do cartão. Não use padrões fornecidos pelo fornecedor para senhas do sistema e outros parâmetros de segurança. 
-PROTEJA OS DADOS DOS PORTADORES DE CARTÃO | Proteja os dados armazenados do titular do cartão. Criptografe a transmissão dos dados do titular do cartão em redes abertas ou públicas.
-MANTENHA UM PROGRAMA DE GERENCIAMENTO DE VULNERABILIDADE | Proteja todos os sistemas contra software malicioso e atualize regularmente o software antivírus. Desenvolva e mantenha sistemas e aplicativos seguros.
-MEDIDAS DE CONTROLE SÓLIDOS APLICANDO ACESSO | Restrinja o acesso aos dados de acordo com a necessidade de saber quem tem a organização. Identifique e autentique o acesso aos componentes do sistema. Restrinja o acesso físico aos dados do titular do cartão.
-MONITORE E VERIFIQUE PERIODICAMENTE AS REDES | Track and monitor all access to network resources and cardholder data. Periodically verify security systems and processes.
+CRIAR E MANTER SISTEMAS E REDE SEGUROS | Instalar e manter um firewall configurado para proteger os dados do portador do cartão. <br> <br>Não use padrões fornecidos pelo fornecedor para senhas do sistema e outros parâmetros de segurança. 
+PROTEJA OS DADOS DOS PORTADORES DE CARTÃO | Proteja os dados armazenados do titular do cartão. <br> <br>Criptografe a transmissão dos dados do titular do cartão em redes abertas ou públicas.
+MANTENHA UM PROGRAMA DE GERENCIAMENTO DE VULNERABILIDADE | Proteja todos os sistemas contra software malicioso e atualize regularmente o software antivírus. <br> <br>Desenvolva e mantenha sistemas e aplicativos seguros.
+MEDIDAS DE CONTROLE SÓLIDOS APLICANDO ACESSO | Restrinja o acesso aos dados de acordo com a necessidade de saber quem tem a organização. <br> <br>Identifique e autentique o acesso aos componentes do sistema. Restrinja o acesso físico aos dados do titular do cartão.
+MONITORE E VERIFIQUE PERIODICAMENTE AS REDES | Track and monitor all access to network resources and cardholder data. <br> <br>Periodically verify security systems and processes.
 TENHA UMA POLÍTICA DE SEGURANÇA DA INFORMAÇÃO | Tenha uma política que inclua a segurança da informação para todo o pessoal.
 
 > Leia o documento PCI DSS - Data Security Standard para obter mais detalhes. O documento está disponível na [biblioteca de documentos do site oficial do PCI](https://www.pcisecuritystandards.org/document_library).
 
 Para cada um dos doze requisitos de PCI, existem basicamente quatro níveis diferentes de conformidade, normalmente com base no volume de transações através de cartão que sua organização processa anualmente, e cada nível tem um conjunto de obrigações.
 
-- **Nível 1**: Organizações que processam mais de 6 milhões de transações por ano para Visa ou MasterCard, ou mais de 2,5 milhões para American Express; ou houve uma violação de dados; ou são considerados nível 1 por qualquer associação de cartão.
+- **Nível 1**: (i) Organizações que processam mais de 6 milhões de transações por ano para Visa ou MasterCard ou mais de 2,5 milhões para American Express; (ii) organizações que sofreram violação de dados; (iii) organizações consideradas nível 1 por qualquer associação de cartão.
    - Relatório Anual de Conformidade (ROC) por um Avaliador de Segurança Qualificado (QSA) ou Auditor Interno.
-   - Digitalização de rede trimestral por fornecedor aprovado (ASV).
+   - Digitalização de rede trimestral por fornecedor aprovado (ASV). 
    - Certificação de conformidade (AOC).
    <br>
 - **Nível 2**: Organizações que processam entre 1 e 6 milhões de transações por ano.
@@ -57,9 +57,9 @@ Para cada um dos doze requisitos de PCI, existem basicamente quatro níveis dife
 ## Compliance
 Mercado Pago é responsável por garantir as informações dos dados do titular do cartão assim que ele entrar em seu ambiente, por isso é importante que as empresas e / ou plataformas de comércio eletrônico realizem os controles de segurança apropriados para transmiti-los corretamente. Como prestador de serviços, o Mercado Pago pode validar a conformidade solicitando comprovação da documentação do PCI correspondente de acordo com o produto utilizado.
 
-O Mercado Pago simplifica consideravelmente o ônus do cumprimento deste regulamento para as organizações que adotam o Checkout Pro e Web Tokenize Checkout, uma vez que utilizam um campo que se origina diretamente de nossos servidores em uma área segura para a entrada de dados do cartão do cliente. Desta forma, a maioria dos requisitos do PCI DSS recai no Mercado Pago e isso reduzirá consideravelmente seus esforços em controles de segurança.
+O Mercado Pago simplifica consideravelmente o ônus do cumprimento deste regulamento para as organizações que adotam o Checkout Pro, uma vez que utilizam um campo que se origina diretamente de nossos servidores em uma área segura para a entrada de dados do cartão do cliente. Desta forma, a maioria dos requisitos do PCI DSS recai no Mercado Pago e isso reduzirá consideravelmente seus esforços em controles de segurança.
 
-Para estar em conformidade com o PCI DSS, demonstrar sua conformidade e, por sua vez, proteger os detalhes do cartão de seus clientes, é importante que eles usem uma de nossas integrações de pagamento recomendadas para coletar informações de pagamento (Checkout Pro ou Web Tokenize Checkout). Esses tipos de integração garantem os dados do titular do cartão para que não cheguem aos seus servidores.
+Para estar em conformidade com o PCI DSS, demonstrar sua conformidade e, por sua vez, proteger os detalhes do cartão de seus clientes, é importante utilizar integrações de pagamento seguras como o Checkout Pro para assegurar que os dados de portadores de cartão não cheguem a seus sevidores.
 
 Como vimos nas seções anteriores, para o nível 1, é necessário realizar uma auditoria com um consultor externo. Por outro lado, para os níveis 2 a 4, existem diferentes tipos de SAQ dependendo do método de integração de pagamento que você usa. Recomendamos que você complete o SAQ correspondente de acordo com o tipo de Caixa escolhido devido às obrigações impostas pelos regulamentos PCI. 
 

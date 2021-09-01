@@ -4,7 +4,7 @@ At Mercado Pago we ensure the Confidentiality, Availability and Integrity of all
 
 In addition, for Mercado Pago to be able to operate with credit and debit cards, we must comply with one of the most demanding security standards in the payment industry: Payment Card Industry Data Security Standard.
 
-Definition and context
+## Definition and context
 If you have ever stored, processed or transmitted card data in your company, you have probably heard of PCI. From Mercado Pago we want to help you and simplify the task of understanding these regulations and the different associated responsibilities.
 
 As a Service Provider, we must meet regulatory and security responsibilities vis-à-vis card brands and acquirers, but even so, security throughout the payment process is the obligation of both parties. Merchants and / or e-commerce platforms that are integrated with payment processors such as Mercado Pago must meet minimum security requirements to mitigate risks of fraud and information leakage, securing user data.
@@ -32,7 +32,7 @@ HAVE AN INFORMATION SECURITY POLICY | Have a policy that includes information se
 
 For each of the twelve PCI requirements, there are basically four different levels of compliance, typically based on the volume ofcard transactions yourprocesses organization annually, and each level has a set of obligations.
 
-* **Level 1:** Organizations that process more than 6 million transactions per year for Visa or MasterCard, or more than 2.5 million for American Express; or there has been a data breach; or they are considered level 1 by any card association.
+* **Level 1:** (i) Organizations that process more than 6 million transactions per year for Visa or MasterCard, or more than 2.5 million for American Express; (ii) organizations in which there has been a data breach; (iii) organizations considered level 1 by any card association.
     * Annual Compliance Report (ROC) by a Qualified Security Assessor (QSA) or Internal Auditor.
     * Quarterly Network Scanning by Approved Vendor (ASV).
     * Compliance Certification (AOC).
@@ -59,9 +59,9 @@ For each of the twelve PCI requirements, there are basically four different leve
 
 Mercado Pago is responsible for ensuring the cardholder data information once they enter its environment, so it is important that businesses and/or e-commerce platforms comply with the appropriate security controls to transmit them correctly. As a service provider, Mercado Pago can validate compliance by requesting evidence of the corresponding PCI documentation according to the product used.
 
-Mercado Pago considerably simplifies the burden of compliance with this regulation for organizations that adopt Checkout Pro and Web Tokenize Checkout since they use a field that originates directly from our servers in a secure area for the entry of card data from the client. In this way, most of the PCI DSS requirements fall on Mercado Pago and it will considerably reduce its efforts in security controls.
+Mercado Pago considerably simplifies the burden of compliance with this regulation for organizations that adopt Checkout Pro since they use a field that originates directly from our servers in a secure area for the entry of card data from the client. In this way, most of the PCI DSS requirements fall on Mercado Pago and it will considerably reduce its efforts in security controls.
 
-In order to be PCI DSS compliant, demonstrate your compliance and, in turn, secure your customers' card details, it is important that they use one of our integrations recommended payment to collect payment information (Checkout Pro or Web Tokenize Checkout). These types of integrations ensure cardholder data so that it does not reach your servers.
+To comply with PCI DSS, demonstrate your compliance, and in turn protect your customers' card details, it is important to use secure payment integrations like Checkou Pro to ensure that cardholder data does not reach your servers.
 
 As we saw in the previous sections, for level 1, it is necessary to perform an audit with an external consultant. On the other hand, for levels 2 to 4, there are different types of SAQ depending on which payment integration method you use. We Recommend that you complete the corresponding SAQ according to the type of Checkout chosen due to the obligations imposed by the PCI regulations. 
 

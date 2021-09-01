@@ -1,6 +1,6 @@
 # OWASP
 
-No Mercado Pago protegemos os pagamentos dos nossos clientes/usuários para que sejam processados ​​com segurança em todas as plataformas web e mobile. Para isso, implementamos controles de segurança que mantêm a confidencialidade, integridade e disponibilidade das informações que processamos por meio de integrações.
+No Mercado Pago protegemos os pagamentos dos nossos clientes e usuários para que sejam processados ​​com segurança em todas as plataformas web e mobile. Para isso, implementamos controles de segurança que mantêm a confidencialidade, integridade e disponibilidade das informações que processamos por meio de integrações.
     
 O Open Web Application Security Project (OWASP) é uma comunidade aberta que fornece ferramentas e padrões para desenvolver e manter aplicativos web seguros. Visa promover pesquisa e desenvolvimento de segurança de aplicativos. 
 
@@ -35,6 +35,7 @@ Dependendo da funcionalidade e dos requisitos do aplicativo, há dois casos de u
 
    * **Camada de aplicativo**: Por meio da validação de entrada, podemos aplicar a abordagem da lista de aplicativos permitidos. O formato das informações esperadas do usuário já é conhecido. Nesse contexto, as validações também podem ser adicionadas para garantir que a string de entrada respeite o formato esperado. 
    * **Camada de rede**: o objetivo é evitar que chamadas arbitrárias de aplicativos sejam feitas. O firewall pode ser usado para limitar o acesso ao aplicativo e, por sua vez, limitar o impacto de um aplicativo vulnerável ao SSRF. 
+   <br>
 
 
 2. **A aplicação pode enviar solicitações para qualquer endereço IP externo ou nome de domínio**.
