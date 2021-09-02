@@ -20,7 +20,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 Para evitar qualquer problema nas transações da sua loja, recomendamos que busque outros meios de pagamento.
 
-[Verifique outros métodos de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods?utm_source=newsletter&utm_campaign=R2Q32021&utm_medium=email#bookmark_chile)
+[Verifique outros meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods?utm_source=newsletter&utm_campaign=R2Q32021&utm_medium=email#bookmark_chile)
 ------------
 
 ### 2 de setembro
