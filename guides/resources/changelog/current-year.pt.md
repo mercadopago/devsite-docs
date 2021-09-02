@@ -4,6 +4,41 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
+## Setembro 2021
+
+----[mlc]----
+
+### 3 de setembro
+
+> CHANGELOG
+>
+> Deprecamos a integração dos meios de pagamento Servipag e Khipu
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: MERCADO PAGO
+
+Para evitar qualquer problema nas transações da sua loja, recomendamos que busque outros meios de pagamento.
+
+[Verifique outros meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods?utm_source=newsletter&utm_campaign=R2Q32021&utm_medium=email#bookmark_chile)
+------------
+
+### 2 de setembro
+
+> CHANGELOG
+>
+> Nova seção de segurança
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: SEGURANÇA
+
+Criamos a seção Segurança, na qual informamos em detalhes sobre os regulamentos para aplicativos da web (OWASP) e transações de cartão de crédito (PCI),
+para que você saiba como no Mercado Pago garantimos a segurança das transações de seus clientes.
+
+[Ir para a seção Segurança](https://mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/owasp)
+
+
 ## Agosto 2021
 
 ## 19 de agosto
