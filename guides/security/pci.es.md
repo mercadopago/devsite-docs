@@ -37,14 +37,17 @@ Para cada uno de los 12 requisitos de PCI, existen básicamente cuatro niveles d
    - Informe anual sobre cumplimiento (ROC) a cargo de un evaluador de seguridad cualificado (QSA) o un auditor interno.
    - Escaneo trimestral de red a cargo de proveedor aprobado (ASV).
    - Certificación de cumplimiento (AOC).
+   <br>
 - **Nivel 2**: organizaciones que procesan entre 1 y 6 millones de transacciones por año.
    - Cuestionario de autoevaluación (SAQ) anual de PCI correspondiente.
    - Escaneo trimestral de red a cargo de proveedor aprobado (ASV).
    - Certificación de cumplimiento (AOC) para cada uno de los SAQ correspondientes.
+   <br>
 - **Nivel 3**: organizaciones que procesan entre 20.000 y 1 millón de transacciones online por año y organizaciones que procesan menos de 1 millón de transacciones en total.
    - Cuestionario de autoevaluación (SAQ) anual de PCI correspondiente.
    - Escaneo trimestral de red a cargo de proveedor aprobado (ASV).
    - Certificación de cumplimiento (AOC) para cada uno de los SAQ correspondientes.
+   <br>
 - **Nivel 4**: Organizaciones que procesan menos de 20.000 transacciones online por año y organizaciones que procesan por año hasta 1 millón de transacciones en total. 
    - Cuestionario de autoevaluación (SAQ) anual de PCI correspondiente.
    - Escaneo trimestral de red a cargo de proveedor aprobado (ASV).
