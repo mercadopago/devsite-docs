@@ -903,7 +903,7 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 
 ## Genera tus reportes de forma programada
 
-Puedes programar la creación de tus reportes. Solo debes configurar tres instancias: generación, configuración y descarga.
+Programa la creación de tus reportes. Solo debes configurar tres instancias: generación, configuración y descarga.
 
 ### 1. Generación
 
