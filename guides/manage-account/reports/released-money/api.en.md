@@ -18,8 +18,7 @@ Generate the Released money report manually as many times as you want or schedul
 
 ## Set up your reports
 
-Execute the curl you need to review, create and update your reports.
-
+Execute the curl you need to check, create and update your reports.
 
 ### Check configuration 
 
