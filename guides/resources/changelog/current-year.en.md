@@ -15,11 +15,11 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 >
 > NEWS: NEWS
 >
-> PRODUCT: ALL
+> PRODUCT: MERCADO PAGO
 
 To avoid any problem in your store transactions, we recommend that you look for other payment methods.
 
-[Go to](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods?utm_source=newsletter&utm_campaign=R2Q32021&utm_medium=email#bookmark_chile)
+[Go to Other payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods?utm_source=newsletter&utm_campaign=R2Q32021&utm_medium=email#bookmark_chile)
 ------------
 
 ### September 2nd

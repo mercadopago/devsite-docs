@@ -15,7 +15,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 >
 > NEWS: NOVEDADES
 >
-> PRODUCT: Servipag
+> PRODUCT: MERCADO PAGO
 
 
 Para evitar cualquier problema con las transacciones de tu tienda, te recomendamos que integres otros medios de pago.

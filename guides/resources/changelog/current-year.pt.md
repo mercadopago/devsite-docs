@@ -16,7 +16,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 >
 > NEWS: NOVIDADES
 >
-> PRODUCT: ALL
+> PRODUCT: MERCADO PAGO
 
 Para evitar qualquer problema nas transações da sua loja, recomendamos que busque outros meios de pagamento.
 
