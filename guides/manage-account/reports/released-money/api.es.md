@@ -9,6 +9,11 @@ Genere el reporte de Liberaciones de forma manual las veces que quieras o progr�
 >
 > Usa el [reporte de ----[mla]----Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberaciones------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.
 
+> NOTE
+>
+> Nota
+>
+> Ten a mano el [Glosario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) para consultar algún término técnico durante la generacion de tus reportes.
 ## Configurar tus reportes
 
 Ejecuta el curl que necesites para consultar, crear y actualizar tus reportes.
