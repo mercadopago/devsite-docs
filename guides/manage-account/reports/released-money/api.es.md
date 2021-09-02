@@ -1,7 +1,7 @@
 
 # Generación por API
 
-Crea el reporte de Liberaciones de forma manual las veces que quieras o prográmalo según tus necesidades de frecuencia a través de nuestra API. 
+Genere el reporte de Liberaciones de forma manual las veces que quieras o prográmalo según tus necesidades de frecuencia a través de nuestra API. 
 
 > WARNING
 >
