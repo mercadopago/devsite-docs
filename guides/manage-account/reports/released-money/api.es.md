@@ -888,7 +888,9 @@ request(options, callback);
 ]]]
 
 
-Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
+Recibirás como respuesta un `HTTP STATUS 200 (Ok)` si no se encuentra ningún error.
+
+El objeto de respuesta tendrá una estructura similar al ejemplo siguiente:
 
 ```csv
 DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD
