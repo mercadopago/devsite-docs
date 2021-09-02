@@ -2,7 +2,7 @@
 # Generating through API
 
 
-Save time and automate the **generating frequency** of the Available Balance report as many times as you want, both manually and on a scheduled basis.
+Generate the Released money report manually as many times as you want or schedule it according to the desired frequency through our API.
 
 > WARNING
 >
