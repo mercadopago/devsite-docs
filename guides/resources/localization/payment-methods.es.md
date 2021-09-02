@@ -154,8 +154,6 @@ A continuación se indican los medios de pago disponibles para cada país.
 | Visa Débito | `debit_card` | `debvisa` |
 | Mastercard Débito | `debit_card` | `debmaster` |
 | Redcompra | `debit_card` | `redcompra` |
-| Servipag | `ticket` | `servipag` |
-| Khipu | `bank_transfer` | `khipu` |
 | Dinero en cuenta | `account_money` | `account_money` |
 
 ### Colombia

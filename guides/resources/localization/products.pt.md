@@ -139,20 +139,20 @@ Assinaturas | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmas
 | :--- | :--- | :--- |
 | Pagamentos | Link de pagamento | N/A |
 | Pagamentos | Checkout Pro | N/A |
-| Pagamentos | Mobile Checkout | `account_money`,`khipu`,`servipag` |
-| Pagamentos | Checkout Transparente | `khipu` |
+| Pagamentos | Mobile Checkout | `account_money` |
+| Pagamentos | Checkout Transparente | N/A|
 | Marketplace | Checkout Pro | N/A |
-| Marketplace | Checkout Transparente | `khipu` |
+| Marketplace | Checkout Transparente | N/A |
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 | Produto | Solução | Meios de pagamento não disponíveis |
 | :--- | :--- | :--- |
 | Pagamentos | Link de pagamento | N/A |
 | Pagamentos | Checkout Pro | N/A |
-| Pagamentos | Mobile Checkout | `account_money`,`khipu`,`servipag` |
-| Pagamentos | Checkout API | `khipu` |
+| Pagamentos | Mobile Checkout | `account_money`|
+| Pagamentos | Checkout API | N/A|
 | Marketplace | Checkout Pro | N/A |
-| Marketplace | Checkout API | `khipu` |
+| Marketplace | Checkout API | N/A |
 ------------
 
 
