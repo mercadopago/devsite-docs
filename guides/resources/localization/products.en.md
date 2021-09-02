@@ -81,10 +81,10 @@ Subscriptions | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debm
 | :--- | :--- | :--- |
 | Payments | Payment link | N/A |
 | Payments | Checkout Pro | N/A |
-| Payments | Mobile Checkout | `account_money`,`khipu`,`servipag`|
-| Payments | Checkout API | `khipu` |
+| Payments | Mobile Checkout | `account_money`|
+| Payments | Checkout API | N/A |
 | Marketplace | Checkout Pro | N/A |
-| Marketplace | Checkout API | `khipu` |
+| Marketplace | Checkout API | N/A|
 
 
 ### Colombia
