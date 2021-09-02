@@ -15,7 +15,8 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 >
 > NEWS: NOVEDADES
 >
-> PRODUCT: ALL
+> PRODUCT: Servipag
+
 
 Para evitar cualquier problema con las transacciones de tu tienda, te recomendamos que integres otros medios de pago.
 
@@ -30,7 +31,7 @@ Para evitar cualquier problema con las transacciones de tu tienda, te recomendam
 >
 > NEWS: NOVEDADES
 >
-> PRODUCT: ALL
+> PRODUCT: SEGURIDAD
 
 Creamos la sección Seguridad en donde te contamos en detalle cómo son las normativas para aplicaciones web (OWASP) y transacciones con tarjeta de crédito (PCI), para que estés al tanto de cómo en Mercado Pago garantizamos la seguridad de las transacciones de tus clientes.
 

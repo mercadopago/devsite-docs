@@ -30,7 +30,7 @@ To avoid any problem in your store transactions, we recommend that you look for 
 >
 > NEWS: NEWS
 >
-> PRODUCT: ALL
+> PRODUCT: SECURITY
 
 We created the Security section where we give you all the details about the regulations for web applications (OWASP) and credit card transactions (PCI), so that you are aware of how Mercado Pago guarantees the security of your customers' transactions.
 

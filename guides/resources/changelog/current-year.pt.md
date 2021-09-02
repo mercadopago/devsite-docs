@@ -31,7 +31,7 @@ Para evitar qualquer problema nas transações da sua loja, recomendamos que bus
 >
 > NEWS: NOVIDADES
 >
-> PRODUCT: ALL
+> PRODUCT: SEGURANÇA
 
 Criamos a seção Segurança, na qual informamos em detalhes sobre os regulamentos para aplicativos da web (OWASP) e transações de cartão de crédito (PCI),
 para que você saiba como no Mercado Pago garantimos a segurança das transações de seus clientes.
