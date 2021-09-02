@@ -154,6 +154,8 @@ The payment methods available for each country are shown below.
 | Visa Debit | `debit_card` | `debvisa` |
 | Mastercard Debit | `debit_card` | `debmaster` |
 | Redcompra | `debit_card` | `redcompra` |
+| Servipag | `ticket` | `servipag` |
+| Khipu | `bank_transfer` | `khipu` |
 | Account money | `account_money` | `account_money` |
 
 ### Colombia
