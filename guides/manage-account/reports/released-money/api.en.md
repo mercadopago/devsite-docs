@@ -122,7 +122,7 @@ The response object will have a similar structure to the following example:
 
 ### Create configuration
 
-Create your API generation preferences to export columns, name your files and configure other settings:
+Create your generation preferences through API to export columns, name your files and configure other settings:
 
 [[[
 ```curl
