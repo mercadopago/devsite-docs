@@ -69,6 +69,6 @@ Checkout Pro | A
 Web Tokenize Checkout | A-EP
 Checkout Transparente | D
 
-> Vea el documento **SAQ Instructions and Guidelines** de la [biblioteca oficial de documentos de PCI](https://www.pcisecuritystandards.org/document_library)para detalles de la descripción de cada SAQ.
+> Vea el documento **SAQ Instructions and Guidelines** de la [biblioteca oficial de documentos de PCI](https://www.pcisecuritystandards.org/document_library) para detalles de la descripción de cada SAQ.
 
 
