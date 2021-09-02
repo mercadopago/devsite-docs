@@ -16,7 +16,6 @@ Generate the Released money report manually as many times as you want or schedul
 >
 > Have the [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/release-money/glossary) of the Available Balance report on hand to review it when needed or want to review a technical term.
 
-
 ## Set up your reports
 
 Execute the curl you need to review, create and update your reports.
