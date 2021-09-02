@@ -6,10 +6,9 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Setembro 2021
 
+### 2 de setembro
+
 ----[mlc]----
-
-### 3 de setembro
-
 > CHANGELOG
 >
 > Deprecamos a integração dos meios de pagamento Servipag e Khipu
@@ -22,8 +21,6 @@ Para evitar qualquer problema nas transações da sua loja, recomendamos que bus
 
 [Verifique outros meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods?utm_source=newsletter&utm_campaign=R2Q32021&utm_medium=email#bookmark_chile)
 ------------
-
-### 2 de setembro
 
 > CHANGELOG
 >
