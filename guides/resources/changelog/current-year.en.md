@@ -3,12 +3,11 @@
 Find out everything about the new versions and updates of Mercado Pago integrations.
 
 ---
-## Septiembre 2021
+## September 2021
+
+### September 2nd
 
 ----[mlc]----
-
-### September 3rd
-
 > CHANGELOG
 >
 > We deprecate the integration of Servipag and Khipu payment methods
@@ -21,8 +20,6 @@ To avoid any problem in your store transactions, we recommend that you look for 
 
 [Go to Other payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods?utm_source=newsletter&utm_campaign=R2Q32021&utm_medium=email#bookmark_chile)
 ------------
-
-### September 2nd
 
 > CHANGELOG
 >
