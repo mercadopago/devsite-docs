@@ -3,6 +3,39 @@
 Find out everything about the new versions and updates of Mercado Pago integrations.
 
 ---
+# Septiembre 2021
+
+----[mlc]----
+
+### September 3rd
+
+> CHANGELOG
+>
+> We deprecate the integration of Servipag and Khipu payment methods
+>
+> NEWS: NEWS
+>
+> PRODUCT: ALL
+
+To avoid any problem in your store transactions, we recommend that you look for other payment methods.
+
+[Go to](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods?utm_source=newsletter&utm_campaign=R2Q32021&utm_medium=email#bookmark_chile)
+------------
+
+### September 2nd
+
+> CHANGELOG
+>
+> New security section
+>
+> NEWS: NEWS
+>
+> PRODUCT: ALL
+
+We created the Security section where we give you all the details about the regulations for web applications (OWASP) and credit card transactions (PCI), so that you are aware of how Mercado Pago guarantees the security of your customers' transactions.
+
+[Go to Security section](https://mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/owasp)
+
 
 ## August 2021
 

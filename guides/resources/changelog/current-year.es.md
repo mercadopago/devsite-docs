@@ -3,6 +3,40 @@
 Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones de Mercado Pago.
 
 ---
+## Septiembre 2021
+
+----[mlc]----
+
+### 3 de septiembre
+
+> CHANGELOG
+>
+> Deprecamos la integración de los medios de pago Servipag y Khipu
+>
+> NEWS: NOVEDADES
+>
+> PRODUCT: ALL
+
+Para evitar cualquier problema con las transacciones de tu tienda, te recomendamos que integres otros medios de pago.
+
+[Conoce otros medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods?utm_source=newsletter&utm_campaign=R2Q32021&utm_medium=email#bookmark_chile)
+------------
+
+### 2 de septiembre
+
+> CHANGELOG
+>
+> Nueva sección de seguridad
+>
+> NEWS: NOVEDADES
+>
+> PRODUCT: ALL
+
+Creamos la sección Seguridad en donde te contamos en detalle cómo son las normativas para aplicaciones web (OWASP) y transacciones con tarjeta de crédito (PCI), para que estés al tanto de cómo en Mercado Pago garantizamos la seguridad de las transacciones de tus clientes.
+
+[Ir a la sección Seguridad](https://mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/owasp)
+
+
 
 ## Agosto 2021
 
