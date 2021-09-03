@@ -624,7 +624,7 @@ Know the fields you can configure to adjust your preferences before you start:
 | `frequency` | <br/>Indicates the daily, weekly or monthly frequency of scheduled reports.<br/><br/> - `frequency` applies type *monthly* to the day of the month or *weekly* to the day of the week.<br/> - `hour` Hour Time of day to generate the report. <br/> - `type` Type indicates the type of frequency *daily*, *weekly* and *monthly*.<br/><br/> |
 | `scheduled` (read_only) | <br/>Informative field that indicates if there are already scheduled reports in the user account.<br/><br/> |
 
-## Generating manually 
+## Generating your reports manually 
 
 Generate your reports manually by configuring three instances: generation, search and download.
 
