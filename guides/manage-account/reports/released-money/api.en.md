@@ -606,8 +606,6 @@ The response object will have a similar structure to the following example:
 }
 ```
 
-
-
 #### Configurable attributes
 
 Know the fields you can configure to adjust your preferences before you start:
