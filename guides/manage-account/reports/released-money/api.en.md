@@ -889,7 +889,7 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 ```
 
 
-## Generating on a scheduled basis
+## Generating your reports automatically
 
 Generate your reports on a scheduled basis by configuring three instances: generation, configuration and download.
 
