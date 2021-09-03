@@ -610,7 +610,6 @@ El objeto de respuesta tendrá una estructura similar al ejemplo siguiente:
 
 Conoce los campos que puedes configurar para ajustar tus preferencias antes de empezar:
 
-
 | Campos configurables | Descripción |
 | --- | --- |
 | `sftp_info` (opcional) | <br/>Indica los datos de subida a SFTP cuando lo necesites.<br/><br/> |
