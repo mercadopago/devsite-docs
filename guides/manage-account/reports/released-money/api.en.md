@@ -328,7 +328,9 @@ request(options, callback);
 ```
 ]]]
 
-You will receive an `HTTP STATUS 201 (Created)` in response.
+You will receive an `HTTP STATUS 201 (Created)` in response if no error is found.
+
+The response object will have a similar structure to the following example:
 
 ```json
 {
