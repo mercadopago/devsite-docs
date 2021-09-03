@@ -326,9 +326,9 @@ request(options, callback);
 ```
 ]]]
 
-Recibirás como respuesta un `HTTP STATUS 201 (Created)` si no se encuentra ningún error en la creación. 
+Recibirás como respuesta un `HTTP STATUS 201 (Created)` si no se encuentra ningún error. 
 
-El objeto de respuesta con los datos del nuevo reporte tendrá una estructura similar al ejemplo siguiente:
+El objeto de respuesta tendrá una estructura similar al ejemplo siguiente:
 
 
 ```json
