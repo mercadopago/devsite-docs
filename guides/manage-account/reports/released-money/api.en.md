@@ -909,8 +909,6 @@ Stops automatic report generation. Update the *`scheduled`* attribute in the fal
     DELETE /v1/account/release_report/schedule
 ```
 
-
-
 ### 2. Configuration
 
 Execute the curl you need to start and cancel the scheduled generation of your reports.
