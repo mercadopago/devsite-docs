@@ -624,15 +624,6 @@ Conoce los campos que puedes configurar para ajustar tus preferencias antes de e
 | `frequency` | <br/>Indica la frecuencia diaria, semanal o mensual de los reportes programados.<br/><br/> - `frequency` aplica type *monthly* al día del mes o *weekly* el día de la semana<br/> - `hour` hora del día en la que generar el reporte <br/> - `type` indica el tipo de frecuencia *daily* (diaria), *weekly* (semanal) y *monthly* (mensual).<br/><br/> |
 | `scheduled` (read_only) | <br/>Campo informativo que indica si ya existen reportes programados en la cuenta de usuario.<br/><br/> |
 
-
-> NOTE
->
-> Nota
->
-> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
-
-
-
 ## Generar el reporte de forma manual 
 
 Genera tus reportes de forma manual configurando tres instancias: generación, búsqueda y descarga.
