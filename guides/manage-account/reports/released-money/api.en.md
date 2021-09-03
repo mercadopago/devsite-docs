@@ -911,7 +911,7 @@ Stops automatic report generation. Update the *`scheduled`* attribute in the fal
 
 ### 2. Configuration
 
-Execute the curl you need to start and cancel the scheduled generation of your reports.
+Execute the following curls to respectively start and cancel the scheduled generation of your reports, according to your desired scenario.
 
 #### Start scheduled generation
 
