@@ -895,7 +895,9 @@ Generate your reports on a scheduled basis by configuring three instances: gener
 
 ### 1. Generation
 
-Schedule the automatic report generation using the frequency in the configuration resource. Update the *`scheduled`* attribute in the configuration to *`true`*:
+Schedule the automatic generation of your report using the desired frequency in the configuration resource. 
+
+Keep in mind to update the *`scheduled`* attribute in the configuration to *`true`*:
 
 ```plain
     POST /v1/account/release_report/schedule
