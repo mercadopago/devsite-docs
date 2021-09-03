@@ -5,9 +5,9 @@ Genera tus reportes de Dinero retirado desde tu panel de Mercado Pago. Podrás p
 
 > WARNING
 >
-> El reporte de Dinero retirado será deshabilitado el próximo 01 marzo, 2022
+> El reporte de Dinero retirado será deshabilitado a partir del 01 de marzo de 2022.
 >
-> Puedes usar el [reporte de ----[mla]----Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberaciones------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.
+> Usa el [reporte de ----[mla]----Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberaciones------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.
 
 Sigue estos pasos para generar tus reportes:
 
