@@ -630,7 +630,7 @@ Generate your reports manually by configuring three instances: generation, searc
 
 ### 1. Generation
 
-Post to the API by specifying the start and end dates as follows:
+Perform a POST to the API by specifying the start and end dates as follows:
 
 [[[
 ```curl
