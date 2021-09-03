@@ -571,9 +571,9 @@ request(options, callback);
 ]]]
 
 
-Recibirás como respuesta un `HTTP STATUS 200 (Ok)` si no se encuentra ningún error en la alteración. 
+Recibirás como respuesta un `HTTP STATUS 200 (Ok)` si no se encuentra ningún error. 
 
-La respuesta con los datos de la alteración tendrá una estructura similar al ejemplo siguiente:
+El objeto de respuesta tendrá una estructura similar al ejemplo siguiente:
 
 ```json
 {
