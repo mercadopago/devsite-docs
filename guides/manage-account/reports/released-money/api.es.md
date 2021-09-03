@@ -606,7 +606,7 @@ El objeto de respuesta tendrá una estructura similar al ejemplo siguiente:
 }
 ```
 
-## Atributos configurables
+#### Atributos configurables
 
 Conoce los campos que puedes configurar para ajustar tus preferencias antes de empezar:
 
