@@ -721,7 +721,7 @@ request(options, callback);
 ```
 ]]]
 
-You will receive an `HTTP STATUS 202 (Accepted)` in response, and the report will be generated asynchronously.
+You will receive an `HTTP STATUS 202 (Accepted)` in response if no error is found, and the report will be generated asynchronously.
 
 ### 2. Search
 
