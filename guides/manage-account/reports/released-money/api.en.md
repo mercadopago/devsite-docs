@@ -1060,7 +1060,7 @@ request(options, callback);
 
 ### 3. Download
 
-Download the file with this command:
+Download the generated file with the following command:
 
 ```plain
     GET /v1/account/release_report/:file_name
