@@ -366,7 +366,6 @@ El objeto de respuesta con los datos del nuevo reporte tendrá una estructura si
 
 Cuando necesites actualizar tu configuración, puedes ajustar los siguientes atributos:
 
-
 [[[
 ```curl
 curl -X PUT \
