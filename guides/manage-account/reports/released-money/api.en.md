@@ -1056,8 +1056,6 @@ request(options, callback);
 ```
 ]]]
 
-
-
 ### 3. Download
 
 Download the generated file with the following command:
