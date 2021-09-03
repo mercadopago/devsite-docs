@@ -610,7 +610,6 @@ The response object will have a similar structure to the following example:
 
 Know the fields you can configure to adjust your preferences before you start:
 
-
 | Configurable fields | Description |
 | --- | --- |
 | `sftp_info` (optional) | <br/>Indicates the uploaded data to SFTP when you need it.<br/><br/> |
