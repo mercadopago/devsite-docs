@@ -725,7 +725,7 @@ You will receive an `HTTP STATUS 202 (Accepted)` in response, and the report wil
 
 ### 2. Search
 
-Check the API this way to see if the report generation is ready:
+Check the API according to the snippet below to see if the report generation is ready:
 
 [[[
 ```curl
