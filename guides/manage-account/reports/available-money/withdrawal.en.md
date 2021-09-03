@@ -6,9 +6,9 @@ You can create an Available Balance report automatically every time you transfer
 
 > WARNING
 >
-> The Available Balance report will be disabled next March 01, 2022
+> The Available Balance report will be disabled from next March 1st, 2022.
 >
-> You can use the [Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
+> Use the [Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
 
 ## Generating from the Mercado Pago panel
 
