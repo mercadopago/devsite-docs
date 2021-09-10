@@ -807,7 +807,7 @@ O objeto de resposta terá uma estrutura semelhante ao exemplo a seguir:
 ]
 ```
 
-### 3. Download
+### 3. *Download*
 
 Usando o atributo `file_name`, você pode baixar o relatório na seguinte URL:
 
