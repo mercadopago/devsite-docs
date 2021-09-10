@@ -628,7 +628,7 @@ Conoce los campos que puedes configurar para ajustar tus preferencias antes de e
 
 Genera tus reportes de forma manual configurando tres instancias: creación, consulta y descarga.
 
-### 1. Generación
+### 1. Creación
 
 Haz el POST a la API especificando las fechas de inicio y fin de la siguiente manera:
 
