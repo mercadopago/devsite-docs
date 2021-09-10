@@ -18,7 +18,7 @@ Genere el reporte de Liberaciones de forma manual las veces que quieras o progr�
 
 Ejecuta el curl que necesites para consultar, crear y actualizar tus reportes.
 
-### Consultar configuración
+### Consultar configuraciones
 
 Consulta la configuración de tus reportes por API de esta forma:
 
