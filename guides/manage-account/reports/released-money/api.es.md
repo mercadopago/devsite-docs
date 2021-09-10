@@ -630,7 +630,7 @@ Genera tus reportes de forma manual configurando tres instancias: creación, con
 
 ### 1. Creación
 
-Haz el POST a la API especificando las fechas de inicio y fin de la siguiente manera:
+Haz el POST a la API especificando las fechas deseadas para inicio y fin del reporte de la siguiente manera:
 
 [[[
 ```curl
