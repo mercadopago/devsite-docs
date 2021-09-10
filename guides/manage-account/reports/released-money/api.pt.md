@@ -902,7 +902,7 @@ Atualize o atributo *`scheduled`* na configuração para *`true`*:
     POST /v1/account/release_report/schedule
 ```
 
-Pare a geração automática do relatório. Atualize o atributo scheduled na configuração para false:
+Para parar a geração automática do relatório, atualize o atributo *`scheduled`* na configuração para *`false`*:
 
 ```plain
     DELETE /v1/account/release_report/schedule
