@@ -604,7 +604,7 @@ O objeto de resposta terá uma estrutura semelhante ao exemplo abaixo:
 
 Confira os campos que você pode configurar para ajustar as suas preferências antes de começar:
 
-| Campos configuráveis | Descrição |
+| Campo configurável | Descrição |
 | --- | --- |
 | `sftp_info` (opcional) | <br/>Indica os dados para subir a SFTP quando precisar.<br/><br/> |
 | `separator` (opcional) | <br/>Separador que pode ser usado no arquivo .csv quando não quiser que o separador seja uma vírgula (‘,’). <br/><br/> |
