@@ -891,9 +891,9 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 
 ## Generating your reports automatically
 
-Generate your reports on a scheduled basis by configuring three instances: generation, configuration and download.
+Generate your reports on a scheduled basis by configuring three instances: creation, configuration, and download.
 
-### 1. Generation
+### 1. Creation
 
 Schedule the automatic generation of your report using the desired frequency in the configuration resource. 
 
