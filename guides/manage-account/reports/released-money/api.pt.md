@@ -724,7 +724,7 @@ Você receberá um `HTTP STATUS 202 (Accepted)` como resposta se nenhum erro for
 
 ### 2. Busca
 
-Para ver se a geração de relatórios está pronta, consulte a API desta forma: 
+Para conferir se a criação do relatório está pronta, consulte a API desta forma: 
 
 [[[
 ```curl
