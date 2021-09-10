@@ -362,7 +362,7 @@ El objeto de respuesta tendrá una estructura similar al ejemplo siguiente:
 }
 ```
 
-### Actualizar configuración
+### Actualizar configuraciones
 
 Cuando necesites actualizar tu configuración, puedes ajustar los siguientes atributos:
 
