@@ -891,11 +891,19 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 
 ## Genera tus reportes de forma programada
 
-Programa la creación de tus reportes. Solo debes configurar tres instancias: generación, configuración y descarga.
+Programa la generación de tu reporte configurando tres instancias: creación, configuración y descarga.
 
-### 1. Generación
+### 1. Creación
 
-Programa la generación automática del reporte utilizando la frecuencia en el recurso de configuración. Actualiza el atributo *`scheduled`* en la configuración a *`true`*:
+Programa la generación automática del reporte utilizando la frecuencia deseada en el recurso de configuración. 
+
+Actualiza el atributo *`scheduled`* en la configuración a *`true`*:
+
+`POST /v1/account/release_report/schedule`
+
+Para parar a geração automática do relatório, atualize o atributo *`scheduled`* na configuração para *`false`*:
+
+`DELETE /v1/account/release_report/schedule`
 
 [[[
 ```curl
