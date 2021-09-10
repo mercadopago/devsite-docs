@@ -357,10 +357,9 @@ O objeto de resposta terá uma estrutura semelhante ao exemplo abaixo:
 }
 ```
 
-### Atualizar configuração
+### Atualizando configurações
 
-Quando precisar atualizar sua configuração, você pode ajustar os seguintes atributos:
-
+Quando precisar atualizar as configurações predefinidas de relatório, ajuste os seguintes atributos:
 
 [[[
 ```curl
