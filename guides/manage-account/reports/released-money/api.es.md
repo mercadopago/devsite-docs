@@ -118,7 +118,7 @@ El objeto de respuesta tendrá una estructura similar al ejemplo siguiente:
 }
 ```
 
-### Crear configuración
+### Crear configuraciones
 
 Crea tus preferencias de generación por API para exportar columnas, nombrar a tus archivos y configurar otros ajustes:
 
