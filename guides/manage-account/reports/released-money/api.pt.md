@@ -623,7 +623,7 @@ Confira os campos que você pode configurar para ajustar as suas preferências a
 | `frequency` | <br/>Indica a frequência diária, semanal ou mensal dos relatórios programados.<br/><br/> - `frequency` aplica type *monthly* ao dia do mês ou *weekly* ao dia da semana<br/> - `hour` hora do dia que o relatório deve ser gerado<br/> - `type` indica o tipo de frequência: *daily* (diária), *weekly* (semanal) y *monthly* (mensal).<br/><br/> |
 | `scheduled` (read_only) | <br/>Campo informativo que indica se já existem relatórios programados na conta do usuário.<br/><br/> |
 
-## Gerar de forma manual
+## Gerando os seus relatórios manualmente 
 
 Gere seus relatórios de forma manual configurando três cenários: geração, pesquisa e download.
 
