@@ -888,8 +888,7 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 2018-04-17T15:38:40.000-04:00,,,release,payment,850.00,0.00,850.00,0.00,0.00,0.00,0.00,0.00,1,account_money
 ```
 
-
-## Genera tus reportes de forma programada
+## Genera tu reporte automáticamente
 
 Programa la generación de tu reporte configurando tres instancias: creación, configuración y descarga.
 
