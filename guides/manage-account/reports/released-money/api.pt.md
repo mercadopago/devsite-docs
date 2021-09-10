@@ -625,11 +625,11 @@ Confira os campos que você pode configurar para ajustar as suas preferências a
 
 ## Gerando os seus relatórios manualmente 
 
-Gere seus relatórios de forma manual configurando três cenários: geração, pesquisa e download.
+Gere seus relatórios de forma manual configurando três instâncias: criação, consulta e *download*.
 
-### 1. Geração
+### 1. Criação
 
-Faça o POST à API especificando as datas de início e fim, assim:
+Faça o POST à API especificando as datas de início e fim desejadas, assim:
 
 [[[
 ```curl
