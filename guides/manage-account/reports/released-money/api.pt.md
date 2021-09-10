@@ -10,7 +10,6 @@ Gere o relatório de Dinheiro disponível manualmente quantas vezes quiser ou pr
 >
 > Você pode usar o [relatório de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberações------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
 
-
 ## Configurar seus relatórios
 
 Execute o curl que você precisa para consultar, gerar e atualizar seus relatórios.
