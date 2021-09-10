@@ -1006,10 +1006,9 @@ O objeto de resposta terá uma estrutura semelhante ao exemplo de cancelamento d
 }
 ```
 
-### 3. Download
+### 3. *Download*
 
-Baixe o arquivo com este comando: 
-
+Baixe o relatório criado com o seguinte comando: 
 
 [[[
 ```curl
