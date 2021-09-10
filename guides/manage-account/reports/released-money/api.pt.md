@@ -600,8 +600,6 @@ O objeto de resposta terá uma estrutura semelhante ao exemplo abaixo:
 }
 ```
 
-
-
 ## Atributos configuráveis
 
 Confira os campos que você pode configurar para ajustar suas preferências antes de começar:
