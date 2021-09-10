@@ -116,7 +116,7 @@ O objeto de resposta terá uma estrutura semelhante ao exemplo abaixo:
 
 ### Criar configuração
 
-Crie suas preferências de geração via API para exportar colunas, nomear seus arquivos e configurar outros ajustes:
+Crie as suas preferências de geração de relatório via API para exportar colunas, nomear seus arquivos e configurar outros ajustes:
 
 [[[
 ```curl
