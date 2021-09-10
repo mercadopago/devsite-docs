@@ -720,7 +720,7 @@ request(options, callback);
 ```
 ]]]
 
-Como resposta, você receberá um `HTTP STATUS 202 (Accepted)`, e o relatório será gerado de forma assincrônica.
+Você receberá um `HTTP STATUS 202 (Accepted)` como resposta se nenhum erro for encontrado, e o relatório será criado de forma assincrônica.
 
 ### 2. Busca
 
