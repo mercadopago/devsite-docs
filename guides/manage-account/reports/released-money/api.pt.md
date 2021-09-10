@@ -908,12 +908,15 @@ Para parar a geração automática do relatório, atualize o atributo *`schedule
     DELETE /v1/account/release_report/schedule
 ```
 
-
 ### 2. Configuração
 
-Execute o curl que precisar para iniciar e cancelar a geração programada dos seus relatórios.
+De acordo com o cenário desejado, execute os *curls* abaixo para iniciar e cancelar, respectivamente, a geração programada do seu relatório:
 
+#### Iniciar geração automática
 
+xxxxxxxx
+
+#### Cancelar geração automática
 [[[
 ```curl
 curl -X DELETE \
