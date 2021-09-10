@@ -722,7 +722,7 @@ request(options, callback);
 
 Você receberá um `HTTP STATUS 202 (Accepted)` como resposta se nenhum erro for encontrado, e o relatório será criado de forma assincrônica.
 
-### 2. Busca
+### 2. Consulta
 
 Para conferir se a criação do relatório está pronta, consulte a API desta forma: 
 
