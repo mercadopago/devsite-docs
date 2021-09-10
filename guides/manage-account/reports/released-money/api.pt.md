@@ -987,7 +987,9 @@ request(options, callback);
 ```
 ]]]
 
-Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
+Você receberá um `HTTP STATUS 200 (OK)` em resposta se nenhum erro for encontrado.
+
+O objeto de resposta terá uma estrutura semelhante ao exemplo de cancelamento de relatório a seguir:
 
 ```json
 {
