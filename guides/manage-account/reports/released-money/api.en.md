@@ -723,7 +723,7 @@ request(options, callback);
 
 You will receive an `HTTP STATUS 202 (Accepted)` in response if no error is found, and the report will be generated asynchronously.
 
-### 2. Search
+### 2. Query
 
 Check the API according to the snippet below to see if the report creation is ready:
 
