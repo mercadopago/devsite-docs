@@ -888,14 +888,15 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 2018-04-17T15:38:40.000-04:00,,,release,payment,850.00,0.00,850.00,0.00,0.00,0.00,0.00,0.00,1,account_money
 ```
 
+## Gerando o seu relatório automaticamente
 
-## Gerar de forma programada
+Gere seus relatórios de forma programada configurando três instâncias: criação, configuração e _download_.
 
-Gere seus relatórios de forma programada configurando três instâncias: geração, configuração e download.
+### 1. Criação
 
-### 1. Geração
+Programe a criação automática do seu relatório usando a frequência desejada no recurso de configuração. 
 
-Programe a geração automática do relatório usando a frequência do recurso de configuração. Atualize o atributo *`scheduled`* na configuração *`true`*:
+Atualize o atributo *`scheduled`* na configuração para *`true`*:
 
 ```plain
     POST /v1/account/release_report/schedule
