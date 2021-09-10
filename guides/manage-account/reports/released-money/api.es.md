@@ -626,7 +626,7 @@ Conoce los campos que puedes configurar para ajustar tus preferencias antes de e
 
 ## Generar tu reporte de forma manual 
 
-Genera tus reportes de forma manual configurando tres instancias: generación, búsqueda y descarga.
+Genera tus reportes de forma manual configurando tres instancias: creación, consulta y descarga.
 
 ### 1. Generación
 
