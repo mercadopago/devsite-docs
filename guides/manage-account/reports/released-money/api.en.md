@@ -626,11 +626,11 @@ Know the fields you can configure to adjust your preferences before you start:
 
 ## Generating your reports manually 
 
-Generate your reports manually by configuring three instances: generation, search and download.
+Generate your reports manually by configuring three instances: creation, query, and download.
 
-### 1. Generation
+### 1. Creation
 
-Perform a POST to the API by specifying the start and end dates as follows:
+Perform a POST to the API by specifying the desired start and end dates as follows:
 
 [[[
 ```curl
