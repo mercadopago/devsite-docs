@@ -17,6 +17,7 @@ First, generate the order publication. Once data is sent to Mercado Pago, a data
 
 Execute the next API call to create an order. The response will include the data required to create the QR code.
 
+----[mla, mpe, mlb, mlc, mlu, mlm]----
 ```curl
 curl -X POST \
  https://api.mercadopago.com/instore/orders/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/qrs \
@@ -27,23 +28,65 @@ curl -X POST \
    "items": [
        {
            "sku_number": "KS955RUR",
-           "category": "BOOKSTORE",
-           "title": "Pen",
-           "description": "Green pen",
+           "category": "LIBRERIA",
+           "title": "Lapicera",
+           "description": "Lapicera verde",
            "quantity": 2,
            "unit_measure": "unit",
            "unit_price": 20,
            "total_amount": 40
        }
    ],
-   "title": "Purchase in Bookstore",
-   "description": "Purchase and shipping",
+   "title": "Compra en Librería",
+   "description": "Compra y retiro",
    "sponsor": {
        "id": 446566691
    },
    "notification_url": "https://www.yourserver.com/notifications"
 }'
 ```
+------------
+
+----[mco]----
+```curl
+curl -X POST \
+ https://api.mercadopago.com/instore/orders/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/qrs \
+  -H 'Authorization: Bearer ACCESS_TOKEN' \
+ -d '{
+   "external_reference": "order-id-1234",
+   "total_amount": 100000,
+   "items": [
+       {
+           "sku_number": "KS955RUR",
+           "category": "LIBRERIA",
+           "title": "Libro",
+           "description": "Libro",
+           "quantity": 2,
+           "unit_measure": "unit",
+           "unit_price": 50000,
+           "total_amount": 100000
+       }
+   ],
+   "title": "Compra en Librería",
+   "description": "Compra y retiro",
+   "notification_url": "https://www.yourserver.com/notifications",
+   "sponsor": {
+                "id": 820480089
+    },
+   "taxes": [
+        {
+            "value": 15967,
+            "type": "IVA"
+        }
+    ]
+}'
+```
+
+------------
+
+----[mco]----
+> If you must pay IVA for the products in your order, visit the [Considerations IVA Colombia section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/iva-colombia).
+------------
 
 For further information, refer to [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put).
 
@@ -83,6 +126,7 @@ In addition to generating the QR code, you also have the option to create and as
 Execute the next API call to create an order and assign the Point of Sale. The response will include the data required to create the QR code.
 
 
+----[mla, mpe, mlb, mlc, mlu, mlm]----
 ```curl
 curl -X PUT \
  https://api.mercadopago.com/instore/orders/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/qrs \
@@ -93,23 +137,61 @@ curl -X PUT \
    "items": [
        {
            "sku_number": "KS955RUR",
-           "category": "BOOKSTORE",
-           "title": "Pen",
-           "description": "Green pen",
+           "category": "LIBRERIA",
+           "title": "Lapicera",
+           "description": "Lapicera verde",
            "quantity": 2,
            "unit_measure": "unit",
            "unit_price": 20,
            "total_amount": 40
        }
    ],
-   "title": "Purchase in Bookstore",
-   "description": "Purchase and shipping",
+   "title": "Compra en Librería",
+   "description": "Compra y retiro",
    "sponsor": {
        "id": 446566691
    },
    "notification_url": "https://www.yourserver.com/notifications"
 }'
 ```
+------------
+
+----[mco]----
+```curl
+curl -X PUT \
+ https://api.mercadopago.com/instore/orders/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/qrs \
+  -H 'Authorization: Bearer ACCESS_TOKEN' \
+ -d '{
+   "external_reference": "order-id-1234",
+   "total_amount": 100000,
+   "items": [
+       {
+           "sku_number": "KS955RUR",
+           "category": "LIBRERIA",
+           "title": "Libro",
+           "description": "Libro",
+           "quantity": 2,
+           "unit_measure": "unit",
+           "unit_price": 50000,
+           "total_amount": 100000
+       }
+   ],
+   "title": "Compra en Librería",
+   "description": "Compra y retiro",
+   "notification_url": "https://www.yourserver.com/notifications",
+   "sponsor": {
+                "id": 820480089
+    },
+   "taxes": [
+        {
+            "value": 15967,
+            "type": "IVA"
+        }
+    ]
+}'
+```
+
+------------
 
 ## Receive notifications of your orders
 

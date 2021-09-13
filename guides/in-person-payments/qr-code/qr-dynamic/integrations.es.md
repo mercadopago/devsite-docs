@@ -17,6 +17,7 @@ Primero, genera la publicación de orden. En cuanto se envíen los datos a Merca
 
 Ejecuta la siguiente llamada a la API para generar una orden. En la respuesta recibirás el dato necesario para crear el código QR.
 
+----[mla, mpe, mlb, mlc, mlu, mlm]----
 ```curl
 curl -X POST \
  https://api.mercadopago.com/instore/orders/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/qrs \
@@ -44,6 +45,48 @@ curl -X POST \
    "notification_url": "https://www.yourserver.com/notifications"
 }'
 ```
+------------
+
+----[mco]----
+```curl
+curl -X POST \
+ https://api.mercadopago.com/instore/orders/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/qrs \
+  -H 'Authorization: Bearer ACCESS_TOKEN' \
+ -d '{
+   "external_reference": "order-id-1234",
+   "total_amount": 100000,
+   "items": [
+       {
+           "sku_number": "KS955RUR",
+           "category": "LIBRERIA",
+           "title": "Libro",
+           "description": "Libro",
+           "quantity": 2,
+           "unit_measure": "unit",
+           "unit_price": 50000,
+           "total_amount": 100000
+       }
+   ],
+   "title": "Compra en Librería",
+   "description": "Compra y retiro",
+   "notification_url": "https://www.yourserver.com/notifications",
+   "sponsor": {
+                "id": 820480089
+    },
+   "taxes": [
+        {
+            "value": 15967,
+            "type": "IVA"
+        }
+    ]
+}'
+```
+
+------------
+
+----[mco]----
+> Si debes pagar IVA para los productos de tu orden, visita la [sección de Consideraciones IVA Colombia](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/iva-colombia).
+------------
 
 Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put).
 
@@ -82,6 +125,7 @@ Además de la generación del código QR, también tienes la opción de crear y 
 
 Ejecuta la siguiente llamada a la API para generar la orden y la asignación a la caja. En la respuesta recibirás el dato necesario para crear el código QR y se asociará al QR declarado. 
 
+----[mla, mpe, mlb, mlc, mlu, mlm]----
 ```curl
 curl -X PUT \
  https://api.mercadopago.com/instore/orders/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/qrs \
@@ -109,6 +153,44 @@ curl -X PUT \
    "notification_url": "https://www.yourserver.com/notifications"
 }'
 ```
+------------
+
+----[mco]----
+```curl
+curl -X PUT \
+ https://api.mercadopago.com/instore/orders/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/qrs \
+  -H 'Authorization: Bearer ACCESS_TOKEN' \
+ -d '{
+   "external_reference": "order-id-1234",
+   "total_amount": 100000,
+   "items": [
+       {
+           "sku_number": "KS955RUR",
+           "category": "LIBRERIA",
+           "title": "Libro",
+           "description": "Libro",
+           "quantity": 2,
+           "unit_measure": "unit",
+           "unit_price": 50000,
+           "total_amount": 100000
+       }
+   ],
+   "title": "Compra en Librería",
+   "description": "Compra y retiro",
+   "notification_url": "https://www.yourserver.com/notifications",
+   "sponsor": {
+                "id": 820480089
+    },
+   "taxes": [
+        {
+            "value": 15967,
+            "type": "IVA"
+        }
+    ]
+}'
+```
+
+------------
 
 ## Recibe notificaciones de tus órdenes
 
