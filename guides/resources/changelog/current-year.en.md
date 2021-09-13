@@ -15,7 +15,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 > NEW_VERSION: NEW VERSION
 >
 > PRODUCT: MAGENTO 2
-> We have released the new version 3.9.4 for Magento 2.
+> We have released the new version 3.10.0 for Magento 2.
 
 [Go to Magento 2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/official/magento-two)
 
@@ -23,7 +23,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 >
 > GitHub
 >
-> [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.4) for further details regarding this release.
+> [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.10.0) for further details regarding this release.
 
 ### September 2nd
 
