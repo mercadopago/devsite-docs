@@ -15,7 +15,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 > NEW_VERSION: NOVA VERSÃO
 >
 > PRODUCT: MAGENTO 2
-> Lançamos a nova versão 3.9.4 para Magento 2.
+> Lançamos a nova versão 3.10.0 para Magento 2.
 
 [Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
 
@@ -23,7 +23,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.4).
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.10.0).
 
 ### 2 de setembro
 
