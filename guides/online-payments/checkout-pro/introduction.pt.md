@@ -42,8 +42,8 @@ O Checkout Pro é a integração que **te permite cobrar através do nosso formu
 | :--- | :---: | :---: | :---: |
 | Dificuldade de integração             | Baixa | Média | Alta |
 | Design UI/UX                          | ✔ | ✔ |   |
-| Otimização para a melhor conversão     | ✔ | ✔ |   |
-| Otimização para melhorar a aprovação   | ✔ |   |   |
+| Conversão otimizada                   | ✔ | ✔ |   |
+| Aprovação otimizada                   | ✔ |   |   |
 | Pagamento de usuários convidados      | ✔ | ✔ | ✔ |
 | Pagamento de usuários cadastrados     | ✔ |   |   |
 | Prevenção de fraude                   | ✔ | ✔ | ✔ |
@@ -55,8 +55,8 @@ O Checkout Pro é a integração que **te permite cobrar através do nosso formu
 | :--- | :---: | :---: | :---: |
 | Dificuldade de integração             | Baixa | Media | Alta |
 | Design UI/UX                          | ✔ | ✔ |   |
-| Otimização para a melhor conversão     | ✔ | ✔ |   |
-| Otimização para melhorar a aprovação   | ✔ |   |   |
+| Conversão otimizada                   | ✔ | ✔ |   |
+| Aprovação otimizada                   | ✔ |   |   |
 | Pagamento de usuários convidados      | ✔ | ✔ | ✔ |
 | Pagamento de usuários cadastrados     | ✔ |   |   |
 | Prevenção de fraude                   | ✔ | ✔ | ✔ |
