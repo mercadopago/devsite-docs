@@ -17,18 +17,17 @@ Tenha em mãos os principais termos técnicos do fluxo da integração com o Che
 Siga os seguintes passos antes de começar a sua integração:
 
 ### 1. Acesse uma conta
-Para poder começar a integração, é necessário **ter uma conta do Mercado Pago ou do Mercado Livre.**
+Para poder começar a integração, é necessário ter uma conta do Mercado Pago ou do Mercado Livre.
 
 Você pode [entrar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/previous-requirements) em uma conta já existente ou [criar uma nova conta](https://www.mercadopago[FAKER][URL][DOMAIN]) do zero.
 
 ### 2. Instale o SDK do Mercado Pago
-**Instale o SDK oficial** do Mercado Pago para simplificar a integração com as nossas APIs.
+Instale o SDK oficial do Mercado Pago para simplificar a integração com as nossas APIs.
 
 [[[
 ```php
 ===
-[Instale o Composer](https://getcomposer.org/download) para usar o SDK.
-Em seguida, execute o seguinte código na linha de comandos do seu terminal:
+Para instalar o SDK, você deve executar o seguinte código na linha de comandos do seu terminal usando o [Composer](https://getcomposer.org/download):
 ===
 php composer.phar require "mercadopago/dx-php"
 ```
@@ -40,7 +39,7 @@ npm install mercadopago
 ```
 ```java
 ===
-Para instalar o SDK no seu projeto [Maven](http://maven.apache.org/install.html), adicione a seguinte dependência ao seu arquivo <code>pom.xml</code> e execute o código <code>maven install</code> na linha de comandos do seu terminal:
+Para instalar o SDK no seu projeto [Maven](http://maven.apache.org/install.html), você deve adicionar a seguinte dependência ao seu arquivo <code>pom.xml</code> e executar o código <code>maven install</code> na linha de comandos do seu terminal:
 ===
 <dependency>
             <groupId> com.mercadopago </groupId>
@@ -50,25 +49,22 @@ Para instalar o SDK no seu projeto [Maven](http://maven.apache.org/install.html)
 ```
 ```ruby
 ===
-O SDK do Mercado Pago está disponível como [gema](https://rubygems.org/gems/mercadopago-sdk). Para instalá-la, você deve executar o seguinte código na linha de comandos do seu terminal:
+Para instalar o SDK, você deve executar o seguinte código na linha de comandos do seu terminal usando [gema](https://rubygems.org/gems/mercadopago-sdk):
 ===
 gem install mercadopago-sdk
 ```
 ```csharp
 ===
 ----[mlb]----
-Use [NuGet](https://docs.microsoft.com/pt-br/nuget/reference/nuget-exe-cli-reference) para instalar o SDK .NET de Mercado Pago.
-------------
+Para instalar o SDK, você deve executar o seguinte código na linha de comandos do seu terminal usando [NuGet](https://docs.microsoft.com/pt-br/nuget/reference/nuget-exe-cli-reference):
 ----[mla, mlm, mco, mlc, mlu]----
-Use [NuGet](https://docs.microsoft.com/es-es/nuget/reference/nuget-exe-cli-reference) para instalar el SDK .NET de Mercado Pago.
-------------
-Execute o seguinte código na linha de comandos do seu terminal:
+Para instalar o SDK, você deve executar o seguinte código na linha de comandos do seu terminal usando [NuGet](https://docs.microsoft.com/es-es/nuget/reference/nuget-exe-cli-reference):
 ===
 nuget install mercadopago-sdk
 ```
 ```python
 ===
-O SDK do Mercado Pago está disponível como [pip](https://pypi.org/project/mercadopago/). Para instalá-la, você deve executar o seguinte código na linha de comandos do seu terminal:
+Para instalar o SDK, você deve executar o seguinte código na linha de comandos do seu terminal usando [pip](https://pypi.org/project/mercadopago/):
 ===
 pip3 install mercadopago
 ```
@@ -76,7 +72,7 @@ pip3 install mercadopago
 
 ### 3. Obtenha suas credenciais
 
-Credenciais são **chaves únicas que te fornecemos para que você possa configurar as suas integrações**.
+As credenciais são **chaves únicas que te fornecemos para que você possa configurar as suas integrações**.
 
 Para encontrá-las, veja a [seção de Credenciais]([FAKER][CREDENTIALS][URL]) no seu Painel de desenvolvedor.
 
