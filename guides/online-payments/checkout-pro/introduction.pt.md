@@ -1,6 +1,6 @@
 # O que é o Checkout Pro?
 
-O Checkout Pro é a integração que **te permite cobrar através do nosso formulário web de qualquer dispositivo** de forma simples, rápida e segura.
+O Checkout Pro é a integração que **te permite cobrar através do nosso formulário web a partir qualquer dispositivo** de forma simples, rápida e segura.
 
 ![Basic-Checkout](/images/web-payment-checkout/cho-introduction-br.png)
 
@@ -8,42 +8,42 @@ O Checkout Pro é a integração que **te permite cobrar através do nosso formu
 ## O Checkout Pro oferece:
 
 ----[mla]----
-* Pagar com os principais [meios de pagamento](https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264) do país.
+* **Integração com os principais [meios de pagamento](https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264)** do país.
 ------------
 ----[mlb]----
-* Pagar com os principais [meios de pagamento](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265) do país.
+* **Integração com os principais [meios de pagamento](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265)** do país.
 ------------
 ----[mlu]----
-* Pagar com os principais [meios de pagamento](https://www.mercadopago.com.uy/ayuda/medios-de-pago-cuotas-promociones_264) do país.
+* **Integração com os principais [meios de pagamento](https://www.mercadopago.com.uy/ayuda/medios-de-pago-cuotas-promociones_264)** do país.
 ------------
 ----[mlc]----
-* Pagar com os principais [meios de pagamento](https://www.mercadopago.cl/ayuda/medios-de-pago-cuotas-promociones_264) do país.
+* **Integração com os principais [meios de pagamento](https://www.mercadopago.cl/ayuda/medios-de-pago-cuotas-promociones_264)** do país.
 ------------
 ----[mco]----
-* Pagar com os principais [meios de pagamento](https://www.mercadopago.com.co/ayuda/medios-de-pago-cuotas-promociones_264) do país.
+* **Integração com os principais [meios de pagamento](https://www.mercadopago.com.co/ayuda/medios-de-pago-cuotas-promociones_264)** do país.
 ------------
 ----[mlm]----
-* Pagar com os principais [meios de pagamento](https://www.mercadopago.com.mx/ayuda/medios-de-pago-cuotas-promociones_264) do país.
+* **Integração com os principais [meios de pagamento](https://www.mercadopago.com.mx/ayuda/medios-de-pago-cuotas-promociones_264)** do país.
 ------------
 ----[mpe]----
-* Pagar com os principais [meios de pagamento](https://www.mercadopago.com.pe/ayuda/medios-de-pago-cuotas-promociones_264) do país.
+* **Integração com os principais [meios de pagamento](https://www.mercadopago.com.pe/ayuda/medios-de-pago-cuotas-promociones_264)** do país.
 ------------
-* Uma **experiência de compra adaptada** e acessível de qualquer celular ou computador no seu site.
-* **Compras em um clique.** Ao pagar com uma conta do Mercado Pago, os dados e cartões dos compradores são salvos, o que lhes permite pagar informando apenas o código de segurança ou dinheiro na conta.
-* **Compras de convidados.** Não é necessário criar uma conta do Mercado Pago para poder fazer o pagamento.
+* **Experiência de compra adaptada e acessível** a partir de qualquer dispositivo.
+* **Compras em um clique**: ao pagar com uma conta do Mercado Pago, os dados e cartões dos compradores ficam salvos, o que lhes permite pagar informando apenas o código de segurança ou dinheiro na conta.
+* **Compras por convidados**: não é necessário criar uma conta do Mercado Pago para realizar o pagamento.
 ----[mla, mlb]----
 * **Pagamento com dois cartões.** Por exemplo, para casos de valores altos.	 
 ------------
 
-## Diferenças do Checkout Pro com outras ferramentas do Mercado Pago
+## Diferenças do Checkout Pro para outras soluções do Mercado Pago
 
 ----[mla, mlb]----
 |                                       | Checkout Pro | Web Tokenize Checkout | API |
 | :--- | :---: | :---: | :---: |
 | Dificuldade de integração             | Baixa | Média | Alta |
 | Design UI/UX                          | ✔ | ✔ |   |
-| Otimizado para a melhor conversão     | ✔ | ✔ |   |
-| Otimizado para melhorar a aprovação   | ✔ |   |   |
+| Otimização para a melhor conversão     | ✔ | ✔ |   |
+| Otimização para melhorar a aprovação   | ✔ |   |   |
 | Pagamento de usuários convidados      | ✔ | ✔ | ✔ |
 | Pagamento de usuários cadastrados     | ✔ |   |   |
 | Prevenção de fraude                   | ✔ | ✔ | ✔ |
@@ -55,8 +55,8 @@ O Checkout Pro é a integração que **te permite cobrar através do nosso formu
 | :--- | :---: | :---: | :---: |
 | Dificuldade de integração             | Baixa | Media | Alta |
 | Design UI/UX                          | ✔ | ✔ |   |
-| Otimizado para a melhor conversão     | ✔ | ✔ |   |
-| Otimizado para melhorar a aprovação   | ✔ |   |   |
+| Otimização para a melhor conversão     | ✔ | ✔ |   |
+| Otimização para melhorar a aprovação   | ✔ |   |   |
 | Pagamento de usuários convidados      | ✔ | ✔ | ✔ |
 | Pagamento de usuários cadastrados     | ✔ |   |   |
 | Prevenção de fraude                   | ✔ | ✔ | ✔ |
