@@ -8,7 +8,7 @@ Para mais informações sobre os benefícios, tarifas, prazos e tipos de checkou
 >
 > Importante
 >
-> Em 13 de julho de 2021, o WooCommerce notificou seus clientes de que algumas de suas versões são vulneráveis. As correções necessárias já foram feitas na última atualização. Por isso, é muito importante que sua loja esteja com a última versão do WooCommerce atualizada para prevenir a exposição de informações sensíveis. Para obter mais informações, consulte o [blog do WooCommerce](https://woocommerce.com/pt-br/blog/).
+> Em 13 de julho de 2021, o WooCommerce notificou seus clientes de que algumas de suas versões são vulneráveis. As correções necessárias já foram feitas na última atualização. Por isso, é muito importante que sua loja esteja com a última versão do WooCommerce atualizada para prevenir a exposição de informações sensíveis. Para obter mais informações, consulte o [blog do WooCommerce](https://woocommerce.com/pt-br/posts/critical-vulnerability-detected-july-2021)).
 
 Nesta documentação, detalharemos todas as etapas necessárias para realizar a integração do Mercado Pago com o WooCommerce. 
 
@@ -20,4 +20,4 @@ Para completar a integração, siga os passos abaixo, mas lembre-se de conferir 
 >
 > Conheça os pré requisitos para realizar a integração.
 >
-> [Pré requisitos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/requirements)
+> [Pré requisitos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/previous-requirements)

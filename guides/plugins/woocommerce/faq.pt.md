@@ -6,7 +6,7 @@ Para instalar o plugin de forma manual, siga os passos abaixo:
 
 
 1. [Clique aqui](https://github.com/mercadopago/cart-woocommerce/archive/master.zip) e faça o download do arquivo .zip do nosso repositório.
-2. Renomeie o arquivo .zip baixado para **WooCommerce-mercadopago** (não descompacte o arquivo .zip antes de fazer o upload no WordPress. Para que o plugin seja instalado corretamente, é preciso que o formato original do arquivo seja enviado).
+2. Renomeie o arquivo .zip baixado para **woocommerce-mercadopago** (não descompacte o arquivo .zip antes de fazer o upload no WordPress. Para que o plugin seja instalado corretamente, é preciso que o formato original do arquivo seja enviado).
 3. Acesse o **Painel Administrativo** do WordPress e clique em **Plugins** **> Adicionar novo**.
 4. Em **Instalar plugins**, clique em **Enviar plugin**.
 5. Clique em **Escolher arquivo** e selecione a pasta que acabou de renomear.
@@ -26,8 +26,6 @@ Quer ser um parceiro, [clique aqui](https://www.mercadopago.com.br/developers/pt
 ### 3. Como configuro o parcelado sem juros e antecipação de meus recebíveis?
 
 Você pode configurar as opções de parcelamento e a forma como serão creditados seus recebíveis diretamente na sua área logada no Mercado Pago. Para isso, acesse sua conta do **Mercado Pago** e clique em **Seu negócio > Custos**.
-
-![Tela de custos](/images/woocomerce/pt_tela_custos.png)
 
 ### 4. Como faço para meus pedidos pendentes expirarem após um certo período de tempo?
 

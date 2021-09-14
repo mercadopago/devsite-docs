@@ -15,17 +15,18 @@ In the *País de operação* field, you must choose the country in which your Me
 
 ## Credentials activation
 
-In the *Add credentials to "Test Mode"or "Production Mode"* section you must fill with your **test** and **production** credentials.
-
-Test credential, because at first, it will be necessary to carry out tests to ensure the correct functioning of the purchase and payment flow.
+In the *Add credentials to "Test Mode"or "Production Mode"* section you must fill with your **production** and **test** credentials.
 
 Production credential, because at the end of the initial tests, we will enable the store to process actual sales and it is through this credential that the activation is done.
+
+Test credential, because at first, it will be necessary to carry out tests to ensure the correct functioning of the purchase and payment flow.
 
 To activate the credentials, follow the steps below.
 
 1. Scroll down to the _Credenciais_ section.
-2. On _Como você quer operar o checkout da sua loja_, choose _Ativar modo teste para checkouts Mercado Pago_. (By keeping this field enabled, your store will be in **test mode**, which will allow you to test the plugin before enabling the store for production).
-3. Enter your **test** and **production** credentials in the required fields. If you don't have this information, access the [Credentials](https://www.mercadopago.com.br/developers/en/guides/resources/credentials) documentation and follow the required steps. When finished filling in, click on **Save changes**.
+2. On **Add credentials to "Test Mode"or "Production Mode"**, choose **Activate Test Mode for Mercado Pago checkouts**. (By keeping this field enabled, your store will be in **test mode**, which will allow you to test the plugin before enabling the store for production).
+3. Enter your **test** and **production** credentials in the required fields. If you don't have this information, access the [Credentials](https://www.mercadopago.com.br/developers/en/guides/resources/credentials) documentation and follow the required steps. 
+4. When finished filling in, click on _Salvar alterações_.
 
 With the credentials filled in, set up the business information.
 
@@ -71,7 +72,7 @@ In addition to the settings above, you will find different options related to yo
 >
 > Important
 >
->Before configuring Pix as a payment method, we recommend [downloading the latest version](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) of the Mercado Pago plugin for WooCommerce and [registering your Pix key](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required) in Mercado Pago. 
+>Before configuring Pix as a payment method, we recommend [downloading the latest version](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) of the Mercado Pago plugin for WooCommerce and [registering your Pix key](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required) in Mercado Pago. **(Brazil only)**
 
 Done! Now, the Mercado Pago plugin with WooCommerce is integrated to your store and can be tested by making purchases that will only be for the purpose of validating the plugin's operation, but will not charge any value.
 
@@ -81,4 +82,4 @@ Done! Now, the Mercado Pago plugin with WooCommerce is integrated to your store 
 >
 > Learn how to perform a test purchase and ensure the integration works.
 >
-> [Purchase test](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/testing-purchases)
+> [Purchase test](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/testing)

@@ -16,17 +16,18 @@ No campo **País de operação** você deverá selecionar o país no qual sua co
 
 ## Ativação de credenciais
 
-Na seção **Ative suas credenciais de acordo com o que você quer fazer**, você deverá inserir suas credenciais de **teste** e **produção**.
+Na seção **Insira credenciais para Modo Teste ou Modo Produção**, você deverá inserir suas credenciais de **produção** e **teste**.
 
-De teste, porque em um primeiro momento, será necessário realizar testes para garantir o funcionamento correto do fluxo de compra e pagamentos.
+Credenciais de produção, porque ao finalizar os testes iniciais, habilitaremos a loja para o processamento de vendas reais e é por meio dessa credencial que a ativação é feita.
 
-De produção, porque ao finalizar os testes iniciais, habilitaremos a loja para o processamento de vendas reais e é por meio dessa credencial que a ativação é feita.
+Credenciais de teste, porque em um primeiro momento, será necessário realizar testes para garantir o funcionamento correto do fluxo de compra e pagamentos.
 
 Para ativar as credenciais, siga os passos a seguir.
 
 1. Desça a tela até a seção de **Credenciais**.
-2. Em **Como você quer operar o checkout da sua loja**, selecione a opção **Ativar modo teste para checkouts Mercado Pago**. (Mantendo este campo habilitado, sua loja estará em **modo teste**, o que permitirá testar o funcionamento do plugin antes de habilitar a loja para produção).
-3. Insira suas credenciais de **teste** e **produção** nos campos solicitados. Caso ainda não tenha essas informações, acesse nossa documentação [Credenciais](https://www.mercadopago.com.br/developers/pt/guides/resources/credentials) e siga o passo a passo para obtê-las. Ao finalizar o preenchimento, clique em **Salvar alterações**.
+2. Em **Como você quer operar os checkouts da sua loja?**, selecione a opção **Ativar modo teste para checkouts Mercado Pago**. (Mantendo este campo habilitado, sua loja estará em **modo teste**, o que permitirá testar o funcionamento do plugin antes de habilitar a loja para produção).
+3. Insira suas credenciais de **teste** e **produção** nos campos solicitados. Caso ainda não tenha essas informações, acesse nossa documentação [Credenciais](https://www.mercadopago.com.br/developers/pt/guides/resources/credentials) e siga o passo a passo para obtê-las. 
+4. Ao finalizar o preenchimento, clique em **Salvar alterações**.
 
 Com as credenciais preenchidas, configure as informações de negócio.
 
@@ -39,7 +40,7 @@ As informações de negócio são necessárias para identificar sua loja. Preenc
 3. **ID da loja:** Use um número ou prefixo para identificar pedidos e pagamentos provenientes da sua loja.
 4. **Integrator ID:** Insira seu *integrator_id* como parceiro do Mercado Pago. Caso ainda não seja um parceiro, [clique aqui](https://www.mercadopago.com.br/developers/pt/developer-program#dev-program-benefits) para mais informações.
 
-Em **ajustes avançados**, você configura opções relativas ao salvamento de informações em um arquivo para depurar problemas técnicos, além de configurar as [notificações IPN](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn). 
+Em **Ajustes avançados**, você configura opções relativas ao salvamento de informações em um arquivo para depurar problemas técnicos, além de configurar as [notificações IPN](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn). 
 
 ## Experiência de pagamento
 
@@ -82,4 +83,4 @@ Pronto! Agora o plugin do Mercado Pago com o WooCommerce está integrado à sua 
 >
 > Saiba como realizar uma compra teste e garantir o funcionamento da integração.
 >
-> [Teste de compras](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/purchase-test)
+> [Teste de compras](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/testing)
