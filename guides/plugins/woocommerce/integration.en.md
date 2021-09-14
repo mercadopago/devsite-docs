@@ -1,40 +1,84 @@
-# Integrate Mercado Pago
-<br/>
+# Integration setup
 
-Connect a Mercado Pago account to the module to capture your sales charges in WooCommerce. It’s easy! You only need to have a merchant account in Mercado Pago and obtain the test and production credentials.
+Currently, there are 4 types of checkout available for WooCommerce. If you want to configure all payment methods offered, the process must be done individually, otherwise, choose the one that best suits your business and configure it as follows:
+
+1. Access the WordPress **Panel**.
+2. Click on **Plugins > Installed Plugins**.
+3. Search for **Mercado Pago payments for WooCommerce** and click on _Configurar_.
+4. Select **1 or more checkouts/payment options** you want to offer and click on **Manage** to open the plugin management screen.
+
+In the plugin management screen, you will have to fill in the required fields according to your business information considering the sections below.
+
+## Country of operation
+
+In the *País de operação* field, you must choose the country in which your Mercado Pago account operates. 
+
+## Credentials activation
+
+In the *Add credentials to "Test Mode"or "Production Mode"* section you must fill with your **test** and **production** credentials.
+
+Test credential, because at first, it will be necessary to carry out tests to ensure the correct functioning of the purchase and payment flow.
+
+Production credential, because at the end of the initial tests, we will enable the store to process actual sales and it is through this credential that the activation is done.
+
+To activate the credentials, follow the steps below.
+
+1. Scroll down to the _Credenciais_ section.
+2. On _Como você quer operar o checkout da sua loja_, choose _Ativar modo teste para checkouts Mercado Pago_. (By keeping this field enabled, your store will be in **test mode**, which will allow you to test the plugin before enabling the store for production).
+3. Enter your **test** and **production** credentials in the required fields. If you don't have this information, access the [Credentials](https://www.mercadopago.com.br/developers/en/guides/resources/credentials) documentation and follow the required steps. When finished filling in, click on **Save changes**.
+
+With the credentials filled in, set up the business information.
+
+## Business information
+
+*Informações de negócio* is required to identify your store. Fill in the fields as below.
+
+1. **Nome da loja:** Enter the name of your store.
+2. **Categoria da loja:** Enter the category of your store's products.
+3. **Store ID:** Use a number or prefix to identify orders and payments from your store.
+4. **Integrator ID:** Enter your *integrator_id* as Mercado Pago partner. If you are not a partner yet, [click here](https://www.mercadopago.com.br/developers/en/developer-program#dev-program-benefits) for more information.
+
+In _Ajustes avançados_, you can configure options related to saving information to a file for debugging technical issues, as well as configuring [IPN notifications](https://www.mercadopago.com.br/developers/en/guides/notifications/ipn).
+
+## Payment experience
+
+In addition to the settings above, you will find different options related to your store's payment experience, depending on the type of checkout you have chosen to configure. Check below the main features you can offer.
 
 > NOTE
 >
-> Note
+> Important
 >
-> You don't need to know how to design or program to activate Mercado Pago in your WooCommerce store.
+> Remember that the availability of the settings described below is related to the type of checkout chosen.
 
-Once the module is installed, follow these steps to integrate:
-
-1. Create a [seller account](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-company?confirmation_url=https%3A%2F%2Fwww.mercadopago[FAKER][URL][DOMAIN]%2Fcomo-cobrar) in Mercado Pago if you don’t have one yet.
-2. Obtain the Access Token and Public Key [credencials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) and paste them into the Production and Testing fields that you will find in the module configuration.
-3. Approve the account to [go to production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production) and receive money from your sales in Mercado Pago.
-
-Done! With this you can capture the payments you receive in WooCommerce with your Mercado Pago account.
-
-![Credentials flow](/images/woocomerce/es_woo_credenciales.gif)
+1. **Ativar o checkout:** Select **Yes** to enable the experience of Mercado Pago on your store's checkout.
+2. **Título:** Keep the default text or change it to your own. This text will be displayed at the checkout, along with the payment options.
+3. **Meios de pagamento:** Choose the payment methods you want to offer.
+4. **Converter moeda:** Activate this option so that the currency value configured in WooCommerce matches the currency value you use in Mercado Pago.
+5. **Máximo de parcelas:** Select the maximum installments you want to offer in your store.
+6. **Experiência de pagamento:** Select between **Redirect** and **Modal**. In **Redirect**, customers will be redirected to a Mercado Pago page with the payment form to complete the purchase. In **Modal**, customers will have access to the Mercado Pago payment form without leaving your store.
+7. **Voltar à loja:** Select whether or not you want the customer to automatically return to your store after completing the payment.
+8. **URL de sucesso / URL de pagamento recusado / URL de pagamento pendente:** If you want to build a URL and customize the return page for the 3 statuses informed, just enter them in the requested field.
+9. **Modo binário:** Activate when you don't want to leave payments in pending or review status. With binary mode, payments will be accepted or declined automatically.
+10. **Cupons de desconto:** Select whether or not you want to offer discount coupons in your store.
+11. **Reduzir inventário:** Select **Yes** if you want the product to be taken out of stock during order creation, regardless of whether the payment is approved or not. Otherwise, keep **No** to have the product withdrawn from stock only when payment is approved. 
+12. **Desconto por comprar com Mercado Pago:** Set a percentage discount amount for customers who pay with Mercado Pago.
+13. **Comissão por compra com Mercado Pago:** Set an additional percentage amount that you want to charge as a fee to your customers for paying with Mercado Pago.
+14. **Pix:** If you want to offer Pix payments, you need to activate **Custom Checkout** **- Pay with Pix** and follow the steps described on the screen to complete the integration. **(Brazil only)**
+15. **Vencimento do Pix:** The validity period of the code sent to the customer after placing the order. This will be the period the customer will have to pay for the purchase. **(Brazil only)**
+16. **Pagamento com cartões salvos**: Allows customers to buy with their card details saved at Mercado Pago, without having to fill in card details at store checkout.
 
 > WARNING
 >
 > Important
 >
-> The [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) are the keys that uniquely identify you within the platform. To operate in a **test environment** in order to simulate online payments, use the test credentials. To receive real payments, use **production** credentials.
+>Before configuring Pix as a payment method, we recommend [downloading the latest version](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) of the Mercado Pago plugin for WooCommerce and [registering your Pix key](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required) in Mercado Pago. 
 
+Done! Now, the Mercado Pago plugin with WooCommerce is integrated to your store and can be tested by making purchases that will only be for the purpose of validating the plugin's operation, but will not charge any value.
 
----
-
-### Next steps
-
-> LEFT_BUTTON_REQUIRED_ES
+> LEFT_BUTTON_REQUIRED_EN
 >
-> Payment preferences
+> Purchase test
 >
-> Set your payment preferences and make adjustments according to the experience you want to offer your customers.
+> Learn how to perform a test purchase and ensure the integration works.
 >
->
-> [Preferences](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/preferences)
+> [Purchase test](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/testing-purchases)
