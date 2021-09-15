@@ -171,15 +171,15 @@ Add the following form with the styles you want.
     <div>
     <div>
         <label for="payerFirstName">Name</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Surname</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Document Type</label>
@@ -187,14 +187,14 @@ Add the following form with the styles you want.
       </div>
       <div>
         <label for="docNumber">Document Number</label>
-        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
+        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text">
       </div>
     </div>
 
     <div>
       <div>
-        <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
-        <input type="hidden" name="productDescription" id="productDescription" value="Product name" />
+        <input type="hidden" name="transactionAmount" id="transactionAmount" value="100">
+        <input type="hidden" name="productDescription" id="productDescription" value="Product name">
         <br>
         <button type="submit">Pay</button>
         <br>
@@ -764,15 +764,15 @@ Add the following form with the styles you want.
     <div>
     <div>
         <label for="payerFirstName">Name</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Surname</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Document Type</label>
@@ -1190,15 +1190,15 @@ Add the following form with the styles you want.
     <div>
     <div>
         <label for="payerFirstName">Name</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Surname</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Document Type</label>
@@ -1666,15 +1666,15 @@ Add the following form with the styles you want.
     <div>
     <div>
         <label for="payerFirstName">Name</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Surname</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Document Type</label>
@@ -2373,15 +2373,15 @@ Add the following form with the styles you want.
     <div>
     <div>
         <label for="payerFirstName">Name</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Surname</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Document Type</label>
@@ -3005,15 +3005,15 @@ Add the following form with the styles you want.
     <div>
     <div>
         <label for="payerFirstName">Name</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Surname</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Document Type</label>
@@ -3407,15 +3407,15 @@ Keep in mind that the answer will return all the payments methods. For this reas
         "additional_info_needed": []
     },
     {
-       "id": "pix",
-       "name": "PIX",
-       "payment_type_id": "bank_transfer",
-       "status": "active",
-       "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
-       "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
-       "deferred_capture": "does_not_apply",
-       "settings": [],
-       "additional_info_needed": []
+        "id": "pix",
+        "name": "PIX",
+        "payment_type_id": "bank_transfer",
+        "status": "active",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
+        "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
+        "deferred_capture": "does_not_apply",
+        "settings": [],
+        "additional_info_needed": []
     },
     {
         "...": "..."
@@ -3466,15 +3466,15 @@ Add the following form with the styles you want.
     <div>
     <div>
         <label for="payerFirstName">Name</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Surname</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Document Type</label>
@@ -3482,14 +3482,14 @@ Add the following form with the styles you want.
       </div>
       <div>
         <label for="docNumber">Document Number</label>
-        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
+        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text">
       </div>
     </div>
 
     <div>
       <div>
-        <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
-        <input type="hidden" name="productDescription" id="productDescription" value="Product name" />
+        <input type="hidden" name="transactionAmount" id="transactionAmount" value="100">
+        <input type="hidden" name="productDescription" id="productDescription" value="Product name">
         <br>
         <button type="submit">Pay</button>
         <br>

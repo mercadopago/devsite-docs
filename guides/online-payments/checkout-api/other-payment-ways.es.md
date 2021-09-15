@@ -175,15 +175,15 @@ Agrega el siguiente formulario con los estilos que desees.
     <div>
     <div>
         <label for="payerFirstName">Nombre</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Apellido</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Tipo de documento</label>
@@ -767,15 +767,15 @@ Agrega el siguiente formulario con los estilos que desees.
     <div>
     <div>
         <label for="payerFirstName">Nombre</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Apellido</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Tipo de documento</label>
@@ -1194,15 +1194,15 @@ Agrega el siguiente formulario con los estilos que desees.
     <div>
     <div>
         <label for="payerFirstName">Nombre</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Apellido</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Tipo de documento</label>
@@ -1670,15 +1670,15 @@ Agrega el siguiente formulario con los estilos que desees.
     <div>
     <div>
         <label for="payerFirstName">Nombre</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Apellido</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Tipo de documento</label>
@@ -2376,15 +2376,15 @@ Agrega el siguiente formulario con los estilos que desees.
     <div>
     <div>
         <label for="payerFirstName">Nombre</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Apellido</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Tipo de documento</label>
@@ -3007,15 +3007,15 @@ Agrega el siguiente formulario con los estilos que desees.
     <div>
     <div>
         <label for="payerFirstName">Nombre</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Apellido</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Tipo de documento</label>
@@ -3408,15 +3408,15 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
         "additional_info_needed": []
     },
     {
-     "id": "pix",
-       "name": "PIX",
-       "payment_type_id": "bank_transfer",
-       "status": "active",
-       "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
-       "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
-       "deferred_capture": "does_not_apply",
-       "settings": [],
-       "additional_info_needed": []
+        "id": "pix",
+        "name": "PIX",
+        "payment_type_id": "bank_transfer",
+        "status": "active",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
+        "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
+        "deferred_capture": "does_not_apply",
+        "settings": [],
+        "additional_info_needed": []
     },
     {
         "...": "..."
@@ -3468,15 +3468,15 @@ Agrega el siguiente formulario con los estilos que desees.
     <div>
     <div>
         <label for="payerFirstName">Nombre</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Apellido</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Tipo de documento</label>
@@ -3484,14 +3484,14 @@ Agrega el siguiente formulario con los estilos que desees.
       </div>
       <div>
         <label for="docNumber">Número de documento</label>
-        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
+        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text">
       </div>
     </div>
 
     <div>
       <div>
-        <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
-        <input type="hidden" name="productDescription" id="productDescription" value="Nombre del Producto" />
+        <input type="hidden" name="transactionAmount" id="transactionAmount" value="100">
+        <input type="hidden" name="productDescription" id="productDescription" value="Nombre del Producto">
         <br>
         <button type="submit">Pagar</button>
         <br>
