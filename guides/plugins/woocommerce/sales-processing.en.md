@@ -10,7 +10,7 @@ In this section, you will have access to details of the possible status and reas
 
 Every sale generates a payment status that shows the condition of the purchase, including confirmation, pending, or denial of payment and other important information about the transaction.
 
-There are two statuses in a WooCommerce sale: _status do pedido_ and _status do pagamento_. In the table below you can check the details on how this information correlates.
+There are two statuses in a WooCommerce sale: _status do pedido_ and _status do pagamento_. In the following table, you can check the details on how this information correlates.
 
 | Mercado Pago status (payment) | WooCommerce status (order) |
 |---|---|
