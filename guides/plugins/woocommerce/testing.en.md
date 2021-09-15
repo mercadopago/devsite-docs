@@ -1,6 +1,6 @@
 # Testing Purchases
 
-With the store in test mode, you can test a purchase before enabling it for the public. To do this, perform the entire purchase flow until completion at checkout and select the option **credit card payment**, as shown in the instructions below.
+With the store in test mode, you can test purchases before enabling them for the public. To do this, perform the entire purchase flow until completion at checkout and select the option **credit card payment**, as shown in the instructions below.
 
 1. Logout of your Mercado Pago account so that you can simulate the purchase as a customer not associated with Mercado Pago.
 2. Access your store's homepage on WordPress.
