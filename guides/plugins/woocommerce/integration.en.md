@@ -7,7 +7,7 @@ Currently, there are four types of checkout available for WooCommerce. If you wa
 3. Search for **Mercado Pago payments for WooCommerce** and click on _Configurar_.
 4. Select **1 or more checkouts/payment options** you want to offer and click on **Manage** to open the plugin management screen.
 
-In the plugin management screen, you will have to fill in the required fields according to your business information considering the sections below.
+On the plugin management screen, fill in the required fields according to your business information. Take into account the information in the sections below: 
 
 ## Country of operation
 
