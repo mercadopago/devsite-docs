@@ -29,7 +29,7 @@ In addition, you can have access to the details of each payment attempt that hap
 
 ## Reasons for refusals 
 
-Regarding the **approval of payments** in your store, there are three main reasons that can directly impact these results. 
+Regarding the **approval of payments** in your store, three main reasons can directly impact these results.  
 
 Below, we detail the factors that influence a payment refusal.
 
