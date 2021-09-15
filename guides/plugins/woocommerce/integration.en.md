@@ -28,7 +28,7 @@ To activate the credentials, follow the steps below.
 3. Enter your **test** and **production** credentials in the required fields. If you don't have this information, access the [Credentials](https://www.mercadopago.com.br/developers/en/guides/resources/credentials) documentation and follow the required steps. 
 4. When finished filling in, click on _Salvar alterações_.
 
-With the credentials filled in, set up the business information.
+Set up the business information as shown in the next section once you fill in the credentials. 
 
 ## Business information
 
