@@ -21,6 +21,6 @@ Pronto! Agora o módulo está ativo e você pode configurar sua integração.
 >
 > Configuração da integração
 >
-> Acesse o passo a passo para configurar a integração do plugin.
+> Acesse o passo-a-passo para configurar a integração do plugin.
 >
 > [Configuração da integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/integration)

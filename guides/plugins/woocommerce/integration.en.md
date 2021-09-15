@@ -1,13 +1,13 @@
 # Integration setup
 
-Currently, there are 4 types of checkout available for WooCommerce. If you want to configure all payment methods offered, the process must be done individually, otherwise, choose the one that best suits your business and configure it as follows:
+Currently, there are four types of checkout available for WooCommerce. If you want to configure all payment methods offered, you must do the processes individually. Otherwise, choose the one that best suits your business and configure it as follows:
 
 1. Access the WordPress **Panel**.
 2. Click on **Plugins > Installed Plugins**.
 3. Search for **Mercado Pago payments for WooCommerce** and click on _Configurar_.
 4. Select **1 or more checkouts/payment options** you want to offer and click on **Manage** to open the plugin management screen.
 
-In the plugin management screen, you will have to fill in the required fields according to your business information considering the sections below.
+On the plugin management screen, fill in the required fields according to your business information. Take into account the information in the sections below: 
 
 ## Country of operation
 
@@ -15,20 +15,20 @@ In the *País de operação* field, you must choose the country in which your Me
 
 ## Credentials activation
 
-In the *Add credentials to "Test Mode"or "Production Mode"* section you must fill with your **production** and **test** credentials.
+In the *Add credentials to "Test Mode" or "Production Mode"* section, you must fill in your **production** and **test** credentials.
 
-Production credential, because at the end of the initial tests, we will enable the store to process actual sales and it is through this credential that the activation is done.
+The Production credential will enable the store to process actual sales at the end of the initial tests. It is through this credential that the activation is complete.
 
-Test credential, because at first, it will be necessary to carry out tests to ensure the correct functioning of the purchase and payment flow.
+The Test credential will be necessary at first to carry out tests to ensure the correct functioning of the purchase and payment flow.
 
 To activate the credentials, follow the steps below.
 
 1. Scroll down to the _Credenciais_ section.
-2. On **Add credentials to "Test Mode"or "Production Mode"**, choose **Activate Test Mode for Mercado Pago checkouts**. (By keeping this field enabled, your store will be in **test mode**, which will allow you to test the plugin before enabling the store for production).
+2. On **Add credentials to "Test Mode"or "Production Mode"**, choose **Activate Test Mode for Mercado Pago checkouts**. (By keeping this field enabled, your store will be in **test mode**, which allows you to test the plugin before setting the store to production).
 3. Enter your **test** and **production** credentials in the required fields. If you don't have this information, access the [Credentials](https://www.mercadopago.com.br/developers/en/guides/resources/credentials) documentation and follow the required steps. 
 4. When finished filling in, click on _Salvar alterações_.
 
-With the credentials filled in, set up the business information.
+Set up the business information as shown in the next section once you fill in the credentials. 
 
 ## Business information
 
@@ -66,7 +66,7 @@ In addition to the settings above, you will find different options related to yo
 13. **Comissão por compra com Mercado Pago:** Set an additional percentage amount that you want to charge as a fee to your customers for paying with Mercado Pago.
 14. **Pix:** If you want to offer Pix payments, you need to activate **Custom Checkout** **- Pay with Pix** and follow the steps described on the screen to complete the integration. **(Brazil only)**
 15. **Vencimento do Pix:** The validity period of the code sent to the customer after placing the order. This will be the period the customer will have to pay for the purchase. **(Brazil only)**
-16. **Pagamento com cartões salvos**: Allows customers to buy with their card details saved at Mercado Pago, without having to fill in card details at store checkout.
+16. **Pagamento com cartões salvos**: Allows customers to buy with their card details saved at Mercado Pago, without having to fill in card details at the store checkout.
 
 > WARNING
 >
@@ -74,7 +74,7 @@ In addition to the settings above, you will find different options related to yo
 >
 >Before configuring Pix as a payment method, we recommend [downloading the latest version](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) of the Mercado Pago plugin for WooCommerce and [registering your Pix key](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required) in Mercado Pago. **(Brazil only)**
 
-Done! Now, the Mercado Pago plugin with WooCommerce is integrated to your store and can be tested by making purchases that will only be for the purpose of validating the plugin's operation, but will not charge any value.
+Done! The Mercado Pago plugin with WooCommerce is now integrated with your store and can be tested by making purchases that will only be for the purpose of validating the plugin's operation but will not charge any value.
 
 > LEFT_BUTTON_REQUIRED_EN
 >

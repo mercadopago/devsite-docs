@@ -17,7 +17,7 @@ Com o certificado ativado e os testes finalizados, você poderá tirar sua loja 
 4. Em **Como você quer operar os checkouts da sua loja**, selecione a opção **Ativar modo Produção para checkouts Mercado Pago**. 
 5. Clique em **Salvar alterações**.
 
-Pronto! Sua loja está em Produção e habilitada para transacionar suas vendas.
+Pronto! Sua loja está em Produção e habilitada para realizar suas vendas.
 
 > LEFT_BUTTON_REQUIRED_PT
 >
