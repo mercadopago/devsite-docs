@@ -24,7 +24,7 @@ The Test credential will be necessary at first to carry out tests to ensure the 
 To activate the credentials, follow the steps below.
 
 1. Scroll down to the _Credenciais_ section.
-2. On **Add credentials to "Test Mode"or "Production Mode"**, choose **Activate Test Mode for Mercado Pago checkouts**. (By keeping this field enabled, your store will be in **test mode**, which will allow you to test the plugin before enabling the store for production).
+2. On **Add credentials to "Test Mode"or "Production Mode"**, choose **Activate Test Mode for Mercado Pago checkouts**. (By keeping this field enabled, your store will be in **test mode**, which allows you to test the plugin before setting the store to production).
 3. Enter your **test** and **production** credentials in the required fields. If you don't have this information, access the [Credentials](https://www.mercadopago.com.br/developers/en/guides/resources/credentials) documentation and follow the required steps. 
 4. When finished filling in, click on _Salvar alterações_.
 
