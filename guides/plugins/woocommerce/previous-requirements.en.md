@@ -8,7 +8,7 @@ To use the Mercado Pago integration with WooCommerce in your WordPress, you must
 | WordPress | Online tool for stores, websites, and blog creation. [Click here](https://br.wordpress.org/about/) for more information. | Installation version required 4.9.10 or higher. Tested up to 5.8.x |
 | WooCommerce | WordPress Plugin that allows the creation of virtual stores from open source. [Click here](https://woocommerce.com/pt-br/woocommerce-features/) for more information. | Required 3.x or higher. Tested up to 5.6.x |
 | Environment | Hosting service. | MySQL, PHP, or equivalent service that supports WordPress installation. |
-| Operational system | System responsible for managing the computer's hardware. | Linux x86, Windows x86-64 |
+| Operational system | System that is responsible for managing the computer's hardware. | Linux x86, Windows x86-64 |
 | Web Server | Software responsible for accepting HTTP requests from clients, usually browsers, and serving them with HTTP responses. | Apache 2.x, Nginx 1.7.x |
 | PHP Version | PHP is a widely used programming language for web application development. For more information, [click here](https://www.php.net/). | PHP 5.6 and 7.x |
 | Database | Sets of files related to each other with records about people, places or things. | MySQL 5.6 or higher (Oracle or Percona), MariaDB 10.0 or higher.|
