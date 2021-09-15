@@ -1,6 +1,6 @@
 # Integration setup
 
-Currently, there are 4 types of checkout available for WooCommerce. If you want to configure all payment methods offered, the process must be done individually, otherwise, choose the one that best suits your business and configure it as follows:
+Currently, there are four types of checkout available for WooCommerce. If you want to configure all payment methods offered, you must do the processes individually. Otherwise, choose the one that best suits your business and configure it as follows:
 
 1. Access the WordPress **Panel**.
 2. Click on **Plugins > Installed Plugins**.
