@@ -1,37 +1,34 @@
 # Prerequisites to get started
 
-
 ## Glossary
 
-We know some terms are new. Before getting started, we'll give you a hand.
+Have the main technical terms for the Checkout Pro integration flow at hand before checking the prerequisites:
 
 | Term | Description |
 | --- | --- |
-| _Preference_ | It is the **information of the product or service that you want to offer.** Among the most important attributes of a preference are defined: the description, the amount and the items. When generating it, you get the URL to start the payment flow. |
-| _Credentials_ | Your credentials are the **keys we provide so you can configure your integrations.**<br/>There are two types:<br/><br/>**Public Key**. Public key of the application to know, for example, the payment methods and encrypt card details. You must use it only for your integrations.<br/>**Access Token**. Private key of the application to generate payments. You must use it only for your integrations.<br/><br/>To find them, go to your [credentials]([FAKER][CREDENTIALS][URL]) and select the productive ones.<br/><br/> |
-| _Initial Point (init_point)_ | **It is the URL obtained at the time of generating the preference** and that starts the payment flow of the Checkout Pro. |
-| _Ítem_ | It refers to the product or service you want to offer. It can be one or a list. |
-| _Application_ | The applications are used to process the seller's payments. **Each application identifies a particular integration**, since each one has its own [credentials]([FAKER][CREDENTIALS][URL]). One Mercado Pago account can have multiple applications.<br/><br/>You can find the information of each one in Credentials. Upon entering, one will be created automatically or you can [create an application](https://applications.mercadopago.com) every time you need one. |
+| _Preference_ | It is the **information of the product or service that you want to offer.** Among the most important attributes of a preference are, namely, the description, the amount and the items. When generating it, you get the URL to start the payment flow. |
+| _Credentials_ | Your credentials are the **unique keys we provide so you can configure your integrations.** There are two types: Public Key and Access Token. <br/><br/> **Public key is the application's public key** to know the payment methods and encrypt card details, for example. You must use it only for your integrations.<br/><br/> **Access Token is the application's private key** to generate payments. You must use it only for your integrations.<br/><br/>To find them, access the [Credentials]([FAKER][CREDENTIALS][URL]) section on the Developer panel from your Mercado Pago account and select the productive ones. |
+| _Initial Point (init_point)_ | It is the **URL obtained at the time of generating the preference** and that starts the payment flow of the Checkout Pro. |
+| _Ítem_ | It refers to the **product or service you want to offer**. It can be one or a list. |
+| _Application_ | The applications are used to process the seller's payments. **Each application identifies a particular integration**, since each one has its own credentials. One Mercado Pago account can have multiple applications.<br/><br/>You can find the information of each one in the [Credentials]([FAKER][CREDENTIALS][URL]) section on the Developer panel from your Mercado Pago account. Upon entering, an application will be created automatically or you can [create an application](https://applications.mercadopago.com) manually every time you need one. |
 
-## Previous requirements
+## Prerequisites
 
-Keep these aspects in mind before you start integrating:
+Follow the following steps before starting your integration:
 
-### 1. Access to an account
+### 1. Access an account
 
-In order to start the integration, it is necessary to **have a Mercado Pago or Mercado Libre account**.
+In order to start the integration, it is necessary to have a Mercado Pago or Mercado Libre account.
 
-You can [Sign in](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/previous-requirements) with an existing account or [Create a new account](https://www.mercadopago[FAKER][URL][DOMAIN]).
+You can [sign in](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/previous-requirements) to an existing account or [create a new account](https://www.mercadopago[FAKER][URL][DOMAIN]) from scratch.
 
-### 2. Install Mercado Pago SDK
-**Install the official SDK** to simplify your interaction with our APIs.
+### 2. Install the Mercado Pago SDK
+Install the official SDK to simplify your interaction with our APIs.
 
 [[[
 ```php
 ===
-[Install Composer](https://getcomposer.org/download) to use the SDK.
-
-Then run the following code on the command line:
+To install the SDK you must execute the following code on the command line of your terminal using [Composer](https://getcomposer.org/download):
 ===
 php composer.phar require "mercadopago/dx-php"
 ```
@@ -43,7 +40,7 @@ npm install mercadopago
 ```
 ```java
 ===
-To install the SDK in your [Maven](http://maven.apache.org/install.html) project, add the following dependency in your pom.xml file and then run ´maven install´.
+To install the SDK in your [Maven](http://maven.apache.org/install.html) project you must add the following dependency in your <code>pom.xml</code> file and then run <code>maven install</code> on the command line of your terminal: 
 ===
 <dependency>
             <groupId> com.mercadopago </groupId>
@@ -53,25 +50,22 @@ To install the SDK in your [Maven](http://maven.apache.org/install.html) project
 ```
 ```ruby
 ===
-The Mercado Pago SDK is available as a [gema](https://rubygems.org/gems/mercadopago-sdk), to install it you must execute the following code on the command line:
+To install the SDK you must execute the following code on the command line of your terminal using [gema](https://rubygems.org/gems/mercadopago-sdk): 
 ===
 gem install mercadopago-sdk
 ```
 ```csharp
 ===
 ----[mlb]----
-Use [NuGet](https://docs.microsoft.com/pt-br/nuget/reference/nuget-exe-cli-reference) to install the Mercado Pago SDK .NET.
-------------
+To install the SDK you must execute the following code on the command line of your terminal using [NuGet](https://docs.microsoft.com/pt-br/nuget/reference/nuget-exe-cli-reference):
 ----[mla, mco, mlu, mlc, mlm]----
-Use [NuGet](https://docs.microsoft.com/es-es/nuget/reference/nuget-exe-cli-reference) to install the Mercado Pago SDK .NET.
-------------
-To do this, run the following command on your terminal:
+To install the SDK you must execute the following code on the command line of your terminal using [NuGet](https://docs.microsoft.com/es-es/nuget/reference/nuget-exe-cli-reference): 
 ===
 nuget install mercadopago-sdk
 ```
 ```python
 ===
-The Mercado Pago SDK is available as a [pip](https://pypi.org/project/mercadopago/), to install it you must execute the following code on the command line:
+To install the SDK you must execute the following code on the command line of your terminal using [pip](https://pypi.org/project/mercadopago/):
 ===
 pip3 install mercadopago
 ```
@@ -79,11 +73,11 @@ pip3 install mercadopago
 
 ### 3. Have your credentials handy
 
-Your credentials are the **keys we provide you to configure your integrations**.
+Your credentials are unique keys we provide so you can configure your integrations.
 
-To find them, go to the [Credentials section]([FAKER][CREDENTIALS][URL]).
+You can find the information of each one in the [Credentials]([FAKER][CREDENTIALS][URL]) section on the Developer panel from your Mercado Pago account.
 
-> Do you have any questions about credentials? Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) for more information.
+> Do you still have any questions about this topic? Read our documentation on [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) for more information.
 
  ---
 
@@ -101,6 +95,6 @@ To find them, go to the [Credentials section]([FAKER][CREDENTIALS][URL]).
 >
 > Test your integration
 >
-> Check that everything works in your integration with test users.
+> Check if everything is properly working in your integration using test users.
 >
 > [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/test-integration)
