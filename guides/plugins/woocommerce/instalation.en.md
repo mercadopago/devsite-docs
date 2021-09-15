@@ -7,7 +7,7 @@ Installing the Mercado Pago plugin with WooCommerce can be done as follows:
 3. Search for **Mercado Pago payments for WooCommerce** and click on **Install** **now**.
 4. After the installation, click on **Activate**.
 
-Done! The module is now activated and you can configure your integration.
+Done! The module is now activated, and you can configure your integration.
 
 ![Plugin automatic installation](/images/woocomerce/en_plugin_installation_auto.gif)
 
