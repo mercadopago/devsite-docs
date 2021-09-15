@@ -15,7 +15,7 @@ Done! The module is now activated, and you can configure your integration.
 >
 > Important
 >
-> If you experience any problems during the plugin installation and need to contact our support, you may be asked to install it manually. See the FAQ for details on how to do this.
+> If you experience any problems during the plugin installation and need to contact our support, you may have to install it manually. See the FAQ for details on how to do this.
 
 > LEFT_BUTTON_REQUIRED_EN
 >
