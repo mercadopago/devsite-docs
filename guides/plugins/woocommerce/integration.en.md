@@ -17,9 +17,9 @@ In the *País de operação* field, you must choose the country in which your Me
 
 In the *Add credentials to "Test Mode" or "Production Mode"* section, you must fill in your **production** and **test** credentials.
 
-Production credential, because at the end of the initial tests, we will enable the store to process actual sales and it is through this credential that the activation is done.
+The Production credential will enable the store to process actual sales at the end of the initial tests. It is through this credential that the activation is complete.
 
-Test credential, because at first, it will be necessary to carry out tests to ensure the correct functioning of the purchase and payment flow.
+The Test credential will be necessary at first to carry out tests to ensure the correct functioning of the purchase and payment flow.
 
 To activate the credentials, follow the steps below.
 
