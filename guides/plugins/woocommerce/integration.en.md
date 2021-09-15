@@ -15,7 +15,7 @@ In the *País de operação* field, you must choose the country in which your Me
 
 ## Credentials activation
 
-In the *Add credentials to "Test Mode"or "Production Mode"* section you must fill with your **production** and **test** credentials.
+In the *Add credentials to "Test Mode" or "Production Mode"* section, you must fill in your **production** and **test** credentials.
 
 Production credential, because at the end of the initial tests, we will enable the store to process actual sales and it is through this credential that the activation is done.
 
