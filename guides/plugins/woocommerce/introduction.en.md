@@ -8,7 +8,7 @@ For more information about the benefits, taxes, terms, and types of checkout ava
 >
 > Important announcement
 >
-> On July 13th 2021, WooCommerce notified its customers that some of its versions were vulnerable. The necessary fixes were already made in the last update. Therefore, it is very important that your store has the latest version of WooCommerce updated to prevent exposure of sensitive information. For more information, see the [WooCommerce blog](https://woocommerce.com/pt-br/posts/critical-vulnerability-detected-july-2021).
+> On July 13th, 2021, WooCommerce notified its customers that some of its versions were vulnerable. The necessary fixes were already made in the last update. Therefore, it is very important that your store has the latest version of WooCommerce updated to prevent exposing sensitive information. For more information, see the [WooCommerce blog](https://woocommerce.com/pt-br/posts/critical-vulnerability-detected-july-2021).
 
 In this documentation, we will detail all the necessary steps to integrate Mercado Pago with WooCommerce. 
 
