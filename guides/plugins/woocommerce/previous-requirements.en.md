@@ -11,7 +11,7 @@ To use the Mercado Pago integration with WooCommerce in your WordPress, you must
 | Operational system | System that is responsible for managing the computer's hardware. | Linux x86, Windows x86-64 |
 | Web Server | Software responsible for accepting HTTP requests from clients, usually browsers, and serving them with HTTP responses. | Apache 2.x, Nginx 1.7.x |
 | PHP Version | PHP is a widely-used programming language for web application development. For more information, [click here](https://www.php.net/). | PHP 5.6 and 7.x |
-| Database | Sets of files related to each other with records about people, places or things. | MySQL 5.6 or higher (Oracle or Percona), MariaDB 10.0 or higher.|
+| Database | Sets of files related to each other with records about people, places, or things. | MySQL 5.6 or higher (Oracle or Percona), MariaDB 10.0 or higher.|
 | Extension Dependency | Extensions give new skills to PHP, adding more features. | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (for Webservices API). |
 | Additional configuration | Recommended settings for better performance and proper functioning of Wordpress, WooCommerce and Mercado Pago plugin. | [safe_mode](https://wordpress.org/plugins/safe-mode/) off* [memory_limit](https://docs.woocommerce.com/document/increasing-the-wordpress-memory-limit/) greater than 256MB (512MB recommended). |
 | SSL | Protocol that allows you to establish secure communications over the Internet for activities such as browsing, email, and other data transfers. | SSL Certificate. |
