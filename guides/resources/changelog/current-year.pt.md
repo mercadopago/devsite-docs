@@ -6,6 +6,23 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Setembro 2021
 
+### 10 de setembro
+
+> CHANGELOG
+>
+> Nova versão SDK Java
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK JAVA
+Lançamos a nova versão 1.10.2 do SDK Java.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-java/releases).
+
 ### 2 de setembro
 
 ----[mlc]----

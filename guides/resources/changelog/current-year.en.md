@@ -5,6 +5,23 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 ---
 ## September 2021
 
+### September 10th
+
+> CHANGELOG
+>
+> New version of SDK Java
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK JAVA
+We have released a new version of SDK Java 1.10.2.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-java/releases) for further details regarding this release.
+
 ### September 2nd
 
 ----[mlc]----
