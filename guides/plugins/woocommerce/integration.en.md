@@ -66,7 +66,7 @@ In addition to the settings above, you will find different options related to yo
 13. **Comissão por compra com Mercado Pago:** Set an additional percentage amount that you want to charge as a fee to your customers for paying with Mercado Pago.
 14. **Pix:** If you want to offer Pix payments, you need to activate **Custom Checkout** **- Pay with Pix** and follow the steps described on the screen to complete the integration. **(Brazil only)**
 15. **Vencimento do Pix:** The validity period of the code sent to the customer after placing the order. This will be the period the customer will have to pay for the purchase. **(Brazil only)**
-16. **Pagamento com cartões salvos**: Allows customers to buy with their card details saved at Mercado Pago, without having to fill in card details at store checkout.
+16. **Pagamento com cartões salvos**: Allows customers to buy with their card details saved at Mercado Pago, without having to fill in card details at the store checkout.
 
 > WARNING
 >
