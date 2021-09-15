@@ -27,7 +27,7 @@ Do you want to be a partner? [Click here](https://www.mercadopago.com.br/develop
 
 ## How do I set up interest-free installments and the anticipation of my receivables?
 
-You can configure the installment options and the way your receivables will be credited directly in your Mercado Pago logged in area. To do this, access your Mercado Pago account and click on _Seu negócio > Custos_.
+You can configure the installment options and the way your receivables will be credited directly in your Mercado Pago logged-in area. To do this, access your Mercado Pago account and click on _Seu negócio > Custos_.
 
 ## How do I get my pending orders to expire after a certain period of time?
 
