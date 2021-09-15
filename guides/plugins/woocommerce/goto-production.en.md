@@ -2,7 +2,7 @@
 
 The first step to activate production mode in your store is to **enable the SSL certificate** on your domain. This certificate is used to increase the security of the data shared by your store, in other words, your customers' personal information.
 
-Many hosting services offer, along with the domain, the SSL certificate. If your domain does not have this certificate, we recommend looking for a company that can help you with the purchase and installation. 
+Many hosting services offer, along with the domain, the SSL certificate. If your domain does not have this certificate, we recommend looking for a company that helps you with purchase and installation. 
 
 For more information, check our documentation [Requirements for the production environment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production).
 
