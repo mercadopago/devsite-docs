@@ -6,7 +6,7 @@ Many hosting services offer, along with the domain, the SSL certificate. If your
 
 For more information, check our documentation [Requirements for the production environment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production).
 
-With the certificate activated and testing completed, you can toggle your store out of Test mode and enable the **Production** environment. This will allow you to make actual sales.
+With the certificate activated and testing completed, you can toggle your store out of Test mode and enable the **Production** environment, allowing you to make actual sales.
 
 Follow the steps below to make the change:
 
