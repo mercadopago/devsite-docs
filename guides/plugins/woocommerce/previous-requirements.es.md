@@ -1,16 +1,16 @@
 # Requisitos previos
 
-Para utilizar la integración de Mercado Pago con WooCommerce en su WordPress, debe cumplir con los requisitos a continuación.
+Para utilizar la integración de Mercado Pago con WooCommerce en tu WordPress, debe cumplir con los requisitos a continuación.
 
 | Requisitos | Descripción | Especificaciones |
 |---|---|---|
-| Cuenta de vendedor Mercado Pago | Para realizar ventas se necesita una cuenta de vendedor en Mercado Pago. Si no es así, [haga clic aquí](https://www.mercadopago.com.br/hub/registration/landing) para crear. | Cuenta de vendedor en Mercado Pago. |
-| WordPress | Herramienta Online para creación de tiendas, sitios web y blogs. [Haga clic aquí](https://br.wordpress.org/about/) para obtener más información. | Versión de instalación requerida 4.9.10 o superior. Probado hasta 5.8.x |
-| WooCommerce | WordPress Plugin que permite la creación de tiendas virtuales desde código abierto. [Haga clic aquí](https://woocommerce.com/pt-br/woocommerce-features/) para obtener más información. | Requerido 3.xo superior. Probado hasta 5.6.x |
+| Cuenta de vendedor Mercado Pago | Para realizar ventas se necesita una cuenta de vendedor en Mercado Pago. Si aún no tienes una, [haz clic aquí](https://www.mercadopago.com.br/hub/registration/landing) para crearla. | Cuenta de vendedor en Mercado Pago. |
+| WordPress | Herramienta Online para creación de tiendas, sitios web y blogs. [Haz clic aquí](https://br.wordpress.org/about/) para obtener más información. | Versión de instalación requerida 4.9.10 o superior. Probado hasta 5.8.x |
+| WooCommerce | WordPress Plugin que permite crear tiendas virtuales desde código abierto. [Haz clic aquí](https://woocommerce.com/pt-br/woocommerce-features/) para obtener más información. | Requerido 3.xo superior. Probado hasta 5.6.x |
 | Ambiente | Servicio de alojamiento. | MySQL, PHP o servicio equivalente que admita la instalación de WordPress. |
 | Sistema operativo | Sistema responsable de administrar el hardware de la computadora. | Linux x86, Windows x86-64 |
 | Servidor web | Software responsable de aceptar solicitudes HTTP de clientes, generalmente navegadores, ycon respuestas HTTP. | Apache 2.x, Nginx 1.7.x |
-| Versión PHP | PHP es un lenguaje de programación ampliamente utilizado para el desarrollo de aplicaciones web. Para obtener más información, [haga clic aquí](https://www.php.net/). | PHP 5.6 y 7.x |
+| Versión PHP | PHP es un lenguaje de programación ampliamente utilizado para el desarrollo de aplicaciones web. Para obtener más información, [haz clic aquí](https://www.php.net/). | PHP 5.6 y 7.x |
 | Base de datos | Conjuntos de archivos relacionados entre sí con registros sobre personas, lugares o cosas. | MySQL 5.6 o superior (Oracle o Percona), MariaDB 10.0 o superiores.|
 | Dependencia de extensiones | Brindan nuevas habilidades a PHP, agregando más funciones. | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (para Webservices API). |
 | Configuraciones adicionales | Recomendadas para un mejor rendimiento y correcto funcionamiento del plugin Wordpress, WooCommerce y Mercado Pago. | [modo seguro](https://wordpress.org/plugins/safe-mode/) off* [memory_limit](https://docs.woocommerce.com/document/increasing-the-wordpress-memory-limit/) superior a 256 MB (se recomiendan 512 MB). |

@@ -1,6 +1,6 @@
 # Procesamiento de ventas 
 
-Completados todos los pasos, sus clientes podrán realizar compras en su tienda. Al realizar una transacción, es común que algunos mensajes regresen con información específica sobre la compra. 
+Completados todos los pasos, tus clientes podrán realizar compras en tu tienda. Al realizar una transacción, es común que algunos mensajes regresen con información específica sobre la compra. 
 
 Esta información está disponible en la sección **Notas del pedido** en el panel de WooCommerce. 
 
