@@ -1,6 +1,6 @@
 # Sales Processing
 
-With all steps completed, your customers will be able to make purchases from your store. When performing a transaction, it is commom for some messages to return with specific information about the purchase. These informations are  available in **Notas do Pedido** section of the WooCommerce panel.
+With all steps completed, your customers will be able to make purchases from your store. When performing a transaction, it is common for some messages to return with specific information about the purchase. This information is available in the **Notas do Pedido** section of the WooCommerce panel.
 
 ![Sales processing](/images/woocomerce/en_sales_processing.gif)
 
