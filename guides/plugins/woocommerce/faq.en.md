@@ -23,7 +23,7 @@ It is the identification number that a developer or partner of Mercado Pago rece
 
 This ID is not mandatory for the integration to work, but it is through it that we recognize which integrations were made by which partner.
 
-Do you want to be a partner, [click here](https://www.mercadopago.com.br/developers/pt/developer-program#dev-program-benefits) for more information.
+Do you want to be a partner? [Click here](https://www.mercadopago.com.br/developers/pt/developer-program#dev-program-benefits) for more information.
 
 ## How do I set up interest-free installments and the anticipation of my receivables?
 
