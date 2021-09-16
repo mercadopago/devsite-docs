@@ -8,7 +8,7 @@ Con la tienda en modo de prueba, puedes probar una compra antes de habilitarla p
 3. Selecciona un producto y haz clic en _Comprar > Ver carrinho_.
 4. Elige cualquier opción de envío y haz clic en _Concluir compra_.
 5. Completa la información solicitada y selecciona la opción de pago con la solución de Mercado Pago que haya configurado.
-6. Selecciona el pago con tarjeta de crédito y usa la información de tarjeta disponible en nuestra página [Tarjetas locales de prueba](https://www.mercadopago.com.br/developers/es/guides/resources/localization/local-cards).
+6. Selecciona el pago con tarjeta de crédito y usa la información de tarjeta disponible en nuestra página [Tarjetas locales de prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/local-cards).
 7. Al completar el llenado, haz clic en _Finalizar compra_.
 
 Si la prueba se ejecuta sin errores, significa que su tienda está lista para vender. Sin embargo, recomendamos realizar pruebas adicionales para que pueda ver los diferentes resultados de pago.
