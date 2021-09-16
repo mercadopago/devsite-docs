@@ -15,7 +15,7 @@ To use the Mercado Pago integration with WooCommerce in your WordPress, you must
 | Extension Dependency | Extensions give new skills to PHP, adding more features. | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (for Webservices API). |
 | Additional configuration | Recommended settings for better performance and proper functioning of WordPress, WooCommerce, and Mercado Pago plugin. | [safe_mode](https://wordpress.org/plugins/safe-mode/) off* [memory_limit](https://docs.woocommerce.com/document/increasing-the-wordpress-memory-limit/) greater than 256MB (512MB recommended). |
 | SSL | Protocol that allows you to establish secure communications over the Internet for activities such as browsing, email, and other data transfers. | SSL Certificate. |
-| Backup copy **(optional)**| Copy all your information to guarantee a version without any changes if necessary. | We advise you to back up the online store before making any changes. When copying is complete, delete all files related to the previous version of the module. |
+| Backup copy **(recommended)**| Copy all your information to guarantee a version without any changes if necessary. | We advise you to back up the online store before making any changes. When copying is complete, delete all files related to the previous version of the module. |
 
 If all prerequisites are met, you can install the plugin.
 
