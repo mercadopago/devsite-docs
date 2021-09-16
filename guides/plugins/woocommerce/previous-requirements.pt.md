@@ -15,7 +15,7 @@ Para utilizar a integração do Mercado Pago com o WooCommerce em seu WordPress,
 | Dependência de extensões | Extensões dão novas habilidades ao PHP, complementando com mais funções. | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (para Webservices API) |
 | Configuração adicional | Ajustes recomendados para uma melhor performance e funcionamento adequado do Wordpress, WooCommerce e ao plugin do Mercado Pago. | [safe_mode](https://wordpress.org/plugins/safe-mode/) desligado* [memory_limit](https://docs.woocommerce.com/document/increasing-the-wordpress-memory-limit/) maior que 256MB (512MB recomendado) |
 | SSL | Protocolo que permite estabelecer comunicações seguras na Internet para atividades como navegação, e-mail, e outras transferências de dados. | Certificado SSL |
-| Cópia de segurança **(opcional)** | Cópia de todas as informações da sua a fim de garantir uma versão sem qualquer alteração caso seja necessário. | Aconselhamos que você faça uma cópia de segurança da loja online antes de fazer qualquer alteração. Ao finalizar a cópia, exclua todos os arquivos relacionados à versão anterior do módulo. |
+| Cópia de segurança **(recomendado)** | Cópia de todas as informações da sua a fim de garantir uma versão sem qualquer alteração caso seja necessário. | Aconselhamos que você faça uma cópia de segurança da loja online antes de fazer qualquer alteração. Ao finalizar a cópia, exclua todos os arquivos relacionados à versão anterior do módulo. |
 
 Se todos os pré-requisitos foram atendidos, você pode instalar o plugin.
 
