@@ -39,7 +39,7 @@ Set up the business information as shown in the next section once you fill in th
 3. **Store ID:** Use a number or prefix to identify orders and payments from your store.
 4. **Integrator ID:** Enter your *integrator_id* as Mercado Pago partner. If you are not a partner yet, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/developer-program) for more information.
 
-In _Ajustes avançados_, you can configure options related to saving information to a file for debugging technical issues, as well as configuring [IPN notifications](https://www.mercadopago.com.br/developers/en/guides/notifications/ipn).
+In _Ajustes avançados_, you can configure options related to saving information to a file for debugging technical issues, as well as configuring [IPN notifications](https://www.mercadopago[FAKER][DOMAIN][URL]/developers/en/guides/notifications/ipn).
 
 ## Payment experience
 
