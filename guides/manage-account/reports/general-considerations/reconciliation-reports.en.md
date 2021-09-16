@@ -11,6 +11,8 @@ With these reports we seek to cover the different needs of our users:
 
 > NOTE
 >
-> The Available Balance report will be disabled soon
+> > WARNING
+>
+> The Available Balance report will be disabled next March O1, 2022
 >
 > You can use the [Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
