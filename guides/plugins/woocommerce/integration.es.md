@@ -19,7 +19,7 @@ En la sección _Ingresa las credenciales para el Modo Test o el Modo Producción
 
 Necesitarás las **credenciales de producción** porque al finalizar las pruebas iniciales habilitaremos la tienda para procesar las ventas reales y es a través de estas credenciales que se realiza la activación.
 
-Credenciales de test, porque en un primer momento será necesario realizar pruebas para asegurar el correcto funcionamiento del flujo de compra y pago.
+Las **credenciales de test** serán necesarias para realizar pruebas para asegurar el correcto funcionamiento del flujo de compra y pago.
 
 Para activar las credenciales, sigue estos pasos:
 
