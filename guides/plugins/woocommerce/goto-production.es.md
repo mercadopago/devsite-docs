@@ -13,7 +13,7 @@ Sigue este paso a paso para realizar el cambio:
 1. Accede a tu Panel de WordPress.
 2. En la columna del lado izquierdo, haz clic en **WooCommerce > Ajustes.**
 3. En **Pagos**, busca el pago que elegiste en el paso **Configuración de la integración**, y haz clic en **Gestionar**.
-4. En _¿Como quieres operar los checkouts de tu tienda?_, selecciona la opción _Activar Modo Producción para checkouts Mercado Pago_. 
+4. En **¿Como quieres operar los checkouts de tu tienda?**, selecciona la opción **Activar Modo Producción para checkouts Mercado Pago**. 
 5. Haz clic en _Salvar alterações_.
 
 ¡Listo! tu tienda está en producción y habilitada para processar tus ventas.
