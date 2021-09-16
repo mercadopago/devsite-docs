@@ -64,15 +64,19 @@ In addition to the settings above, you will find different options related to yo
 11. **Reduzir inventário:** Select **Yes** if you want the product to be taken out of stock during order creation, regardless of whether the payment is approved or not. Otherwise, keep **No** to have the product withdrawn from stock only when payment is approved. 
 12. **Desconto por comprar com Mercado Pago:** Set a percentage discount amount for customers who pay with Mercado Pago.
 13. **Comissão por compra com Mercado Pago:** Set an additional percentage amount that you want to charge as a fee to your customers for paying with Mercado Pago.
+----[mlb]----
 14. **Pix:** If you want to offer Pix payments, you need to activate **Custom Checkout** **- Pay with Pix** and follow the steps described on the screen to complete the integration. **(Brazil only)**
 15. **Vencimento do Pix:** The validity period of the code sent to the customer after placing the order. This will be the period the customer will have to pay for the purchase. **(Brazil only)**
+------------
 16. **Pagamento com cartões salvos**: Allows customers to buy with their card details saved at Mercado Pago, without having to fill in card details at the store checkout.
 
+----[mlb]----
 > WARNING
 >
 > Important
 >
 >Before configuring Pix as a payment method, we recommend [downloading the latest version](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) of the Mercado Pago plugin for WooCommerce and [registering your Pix key](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required) in Mercado Pago. **(Brazil only)**
+------------
 
 Done! The Mercado Pago plugin with WooCommerce is now integrated with your store and can be tested by making purchases that will only be for the purpose of validating the plugin's operation but will not charge any value.
 

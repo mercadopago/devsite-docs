@@ -65,15 +65,20 @@ Além das configurações anteriores, você encontra diferentes opções relacio
 11. **Reduzir inventário:** selecione **Sim** se deseja que o produto seja retirado do estoque durante a criação do pedido, independentemente do pagamento ser aprovado ou não. Caso contrário, mantenha **Não** para que o produto seja retirado do estoque somente quando o pagamento for aprovado. 
 12. **Desconto por comprar com Mercado Pago:** defina um valor percentual de desconto para os clientes que pagarem com Mercado Pago.
 13. **Comissão por compra com Mercado Pago:** defina um valor percentual adicional que quiser cobrar como tarifa dos seus clientes por pagar com Mercado Pago.
+----[mlb]----
 14. **Pix:** caso queira oferecer pagamentos por Pix, é preciso ativar o **Checkout Personalizado** **- Pague com Pix** e seguir os passos descritos na tela para concluir a integração.
 15. **Vencimento do Pix:** defina o prazo de validade do código enviado ao cliente após a realização do pedido. Este será o período que o cliente terá para pagar a compra.
+------------
+
 16. **Pagamento com cartões salvos**: permite que os clientes comprem com os dados do cartão guardados no Mercado Pago, sem precisar preencher dados do cartão no checkout da loja.
 
+----[mlb]----
 > WARNING
 >
 >Importante
 >
 > Antes de configurar o Pix como meio de pagamento, recomendamos [baixar a última versão](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) do plugin Mercado Pago para WooCommerce e [cadastrar sua chave Pix](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required) no Mercado Pago. 
+------------
 
 Pronto! Agora o plugin do Mercado Pago com o WooCommerce está integrado à sua loja e pode ser testado realizando compras que serão apenas para fim de validar o funcionamento do plugin, mas não movimentará qualquer valor.
 
