@@ -31,6 +31,6 @@ Puedes configurar las opciones de cuotas y cómo se acreditarán tus cuentas por
 
 ### ¿Cómo consigo que mis pedidos pendientes caduquen después de un cierto período de tiempo?
 
-WooCommerce permite a sus usuarios configurar cuánto tiempo permanecerá pendiente un pedido. Se puede acceder a esta funcionalidad a través del menú **Ajustes** de WooCommerce, en ß**Productos > Inventario**. 
+WooCommerce permite a sus usuarios configurar cuánto tiempo permanecerá pendiente un pedido. Se puede acceder a esta funcionalidad a través del menú **Ajustes** de WooCommerce, en **Productos > Inventario**. 
 
 Para obtener más información, accede a **inventario** en [el manual de la plataforma](https://docs.woocommerce.com/document/perguntas-frequentes-sobre-reservas/).
