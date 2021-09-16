@@ -23,6 +23,6 @@ Si se cumplen todos los requisitos previos, se puede instalar el complemento.
 >
 > Instalación del complemento
 >
-> Siga los pasos a continuación para instalar el complemento de Mercado Pago con WooCommerce.
+> Sigue los pasos a continuación para instalar el complemento de Mercado Pago con WooCommerce.
 >
 > [Instalación del complemento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/installation)
