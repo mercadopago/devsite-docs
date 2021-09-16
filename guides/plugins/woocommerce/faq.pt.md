@@ -29,6 +29,6 @@ Você pode configurar as opções de parcelamento e a forma como serão creditad
 
 ### 4. Como faço para meus pedidos pendentes expirarem após um certo período de tempo?
 
-O WooCommerce permite que seus usuários configurem por quanto tempo um pedido permanecerá como pendente. Essa funcionalidade pode ser acessada através do **menu de configurações** do WooCommerce, em  **produtos > inventário**.
+O WooCommerce permite que seus usuários configurem por quanto tempo um pedido permanecerá como pendente. Essa funcionalidade pode ser acessada através do **menu de configurações** do WooCommerce, em  **Produtos > Inventário**.
 
 Para mais informações, acesse o tópico **inventário**, no [manual da plataforma](https://docs.woocommerce.com/document/perguntas-frequentes-sobre-reservas/).
