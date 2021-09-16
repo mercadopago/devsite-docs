@@ -3,6 +3,7 @@
 Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones de Mercado Pago.
 
 ---
+
 ## Septiembre 2021
 
 ### 10 de septiembre
@@ -14,7 +15,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 > NEW_VERSION: NUEVA VERSIÓN
 >
 > PRODUCT: SDK JAVA
-Lanzamos una nueva versión de la SDK Java 1.10.2.
+> Lanzamos una nueva versión de la SDK Java 1.10.2.
 
 > GIT
 >
@@ -25,6 +26,7 @@ Lanzamos una nueva versión de la SDK Java 1.10.2.
 ### 2 de septiembre
 
 ----[mlc]----
+
 > CHANGELOG
 >
 > Deprecamos la integración de los medios de pago Servipag y Khipu
@@ -33,11 +35,9 @@ Lanzamos una nueva versión de la SDK Java 1.10.2.
 >
 > PRODUCT: MERCADO PAGO
 
-
 Para evitar cualquier problema con las transacciones de tu tienda, te recomendamos que integres otros medios de pago.
 
-[Conoce otros medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods?utm_source=newsletter&utm_campaign=R2Q32021&utm_medium=email#bookmark_chile)
-------------
+## [Conoce otros medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods?utm_source=newsletter&utm_campaign=R2Q32021&utm_medium=email#bookmark_chile)
 
 > CHANGELOG
 >
@@ -50,8 +50,6 @@ Para evitar cualquier problema con las transacciones de tu tienda, te recomendam
 Creamos la sección Seguridad en donde te contamos en detalle cómo son las normativas para aplicaciones web (OWASP) y transacciones con tarjeta de crédito (PCI), para que estés al tanto de cómo en Mercado Pago garantizamos la seguridad de las transacciones de tus clientes.
 
 [Ir a la sección Seguridad](https://mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/owasp)
-
-
 
 ## Agosto 2021
 
@@ -96,7 +94,8 @@ Lanzamos la nueva versión 3.9.3 para Magento 2.
 > GitHub
 >
 > Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.3).
-------------
+
+---
 
 > CHANGELOG
 >
@@ -136,7 +135,6 @@ Lanzamos la nueva versión 5.3.0 para WooCommerce.
 >
 > Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.3.0).
 
-
 > CHANGELOG
 >
 > Nueva versión SDK PHP
@@ -144,7 +142,7 @@ Lanzamos la nueva versión 5.3.0 para WooCommerce.
 > NEW_VERSION: NUEVA VERSIÓN
 >
 > PRODUCT: SDK PHP
-Lanzamos una nueva versión de la SDK PHP 1.12.1 y 2.4.2.
+> Lanzamos una nueva versión de la SDK PHP 1.12.1 y 2.4.2.
 
 > GIT
 >
@@ -166,8 +164,7 @@ Lanzamos una nueva versión de la SDK PHP 1.12.1 y 2.4.2.
 
 Ahora puedes incluir Boleto Bancário, Checkout Pro, Mercado Pago Wallet y Mercado Pago Offline como medio de pago con el gateway MercadoPagoV2 para VTEX.
 
-[Ir a la documentación de VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/#bookmark_criando_afiliação_de_gateway_mercadopagov2)
---------
+## [Ir a la documentación de VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/#bookmark_criando_afiliação_de_gateway_mercadopagov2)
 
 ## Julio 2021
 
@@ -181,9 +178,10 @@ Ahora puedes incluir Boleto Bancário, Checkout Pro, Mercado Pago Wallet y Merca
 >
 > PRODUCT: MERCADO PAGO
 
-MercadoPago.js V2 incluye dentro de sus funcionalidades un sistema para prevención de fraudes. Su objetivo es detectar y analizar comportamientos inusuales de los clientes, evitar movimientos sospechosos y mejorar la aprobación de los pagos. 
+MercadoPago.js V2 incluye dentro de sus funcionalidades un sistema para prevención de fraudes. Su objetivo es detectar y analizar comportamientos inusuales de los clientes, evitar movimientos sospechosos y mejorar la aprobación de los pagos.
 
 Nunca guardaremos ni compartiremos los datos de tus clientes pero si prefieres no utilizar el device ID, conoce cómo deshabilitarlo en la [referencia técnica](https://github.com/mercadopago/sdk-js).
+
 ### 27 de julio
 
 > CHANGELOG
@@ -211,7 +209,7 @@ Lanzamos una nueva versión de la SDK PHP 2.4.1.
 > NEW_VERSION: NUEVA VERSIÓN
 >
 > PRODUCT: SDK JAVA
-Lanzamos una nueva versión de la SDK Java 1.10.1.
+> Lanzamos una nueva versión de la SDK Java 1.10.1.
 
 > GIT
 >
@@ -219,12 +217,12 @@ Lanzamos una nueva versión de la SDK Java 1.10.1.
 >
 > Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-java/releases).
 
-
 ----[mla]----
+
 ### 19 de julio
 
 > CHANGELOG
-> 
+>
 > Desactivamos Provincia NET Pagos como medio de pago disponible
 >
 > NEWS: NOVEDADES
@@ -235,13 +233,14 @@ A partir del 29 de julio, Provincia NET Pagos no estará disponible como medio d
 
 [Conoce los medios de pago disponibles](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods).
 
-------------
+---
 
 ### 15 de julio
 
 ----[mla, mlc, mco, mpe, mlu, mlm]----
+
 > CHANGELOG
-> 
+>
 > Disponibilizamos Wix como medio de pago
 >
 > NEWS: NOVEDADES
@@ -252,9 +251,10 @@ Ahora puedes integrar Mercado Pago en tu comercio Wix. Con esta plataforma virtu
 
 [Ir a la documentación de Wix](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/wix)
 
-------------
+---
 
 ----[mlb]----
+
 > CHANGELOG
 >
 > Nueva documentación de Wix
@@ -265,8 +265,7 @@ Ahora puedes integrar Mercado Pago en tu comercio Wix. Con esta plataforma virtu
 
 Actualizamos la experiencia de integración de Mercado Pago como medio de pago en tu tienda Wix.
 
-[Ir a la documentación de Wix](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/wix)
-------------
+## [Ir a la documentación de Wix](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/wix)
 
 > CHANGELOG
 >
@@ -275,7 +274,7 @@ Actualizamos la experiencia de integración de Mercado Pago como medio de pago e
 > NEW_VERSION: NUEVA VERSIÓN
 >
 > PRODUCT: SDK PHP
-Lanzamos una nueva versión de la SDK PHP 1.12.0 y 2.4.0.
+> Lanzamos una nueva versión de la SDK PHP 1.12.0 y 2.4.0.
 
 > GIT
 >
@@ -290,7 +289,7 @@ Lanzamos una nueva versión de la SDK PHP 1.12.0 y 2.4.0.
 > NEW_VERSION: NUEVA VERSIÓN
 >
 > PRODUCT: SDK JAVA
-Lanzamos una nueva versión de la SDK Java 1.10.0.
+> Lanzamos una nueva versión de la SDK Java 1.10.0.
 
 > GIT
 >
@@ -342,7 +341,6 @@ Lanzamos la nueva versión 3.9.1 para Magento 2.
 
 ## Junio 2021
 
-
 ----[mlb]----
 
 ### 25 de junio
@@ -359,7 +357,7 @@ Ahora puedes incluir Pix como método de pago para Nuvemshop.
 
 [Ir a documentación de Nuvemshop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/nuvemshop)
 
-------------
+---
 
 ### 24 de junio
 
@@ -415,7 +413,6 @@ Lanzamos la nueva versión 3.9.0 para Magento 2.
 >
 > Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.0).
 
-
 ### 3 de junio
 
 > CHANGELOG
@@ -430,7 +427,6 @@ Crea reportes personalizados con los campos o atributos que necesites.
 
 [Ir a documentación de Generación de reportes por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/api)
 
-
 > CHANGELOG
 >
 > Nueva configuración del reporte Todas las transacciones vía API
@@ -442,7 +438,6 @@ Crea reportes personalizados con los campos o atributos que necesites.
 Elige los campos o atributos que necesites para crear un reporte personalizado.
 
 [Ir a documentación de Generación de reportes por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/api)
-
 
 ----[mlc]----
 
@@ -458,7 +453,7 @@ Las suscripciones de Mercado Pago te permiten recibir pagos de forma recurrente,
 
 [Crear suscripciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/subscriptions/introduction)
 
-------------
+---
 
 ---
 
@@ -500,7 +495,7 @@ Ahora solamente puedes realizar devoluciones totales de los pagos.
 
 [Ir a documentación de Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds#bookmark_devoluciones)
 
-------------
+---
 
 > CHANGELOG
 >
@@ -591,6 +586,7 @@ Usa el modelo dinámico para integrar Código QR que te permite incluir el monto
 [Ir a documentación de modelo dinámico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/qr-dynamic/introduction)
 
 ----[mlb]----
+
 ### 29 de abril
 
 > CHANGELOG
@@ -603,8 +599,7 @@ Usa el modelo dinámico para integrar Código QR que te permite incluir el monto
 
 Ahora puedes incluir Pix como medio de pago con el gateway MercadoPagoV2 para VTEX.
 
-[Ir a la documentación de VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/#bookmark_criando_afiliação_de_gateway_mercadopagov2)
-------------
+## [Ir a la documentación de VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/#bookmark_criando_afiliação_de_gateway_mercadopagov2)
 
 ### 22 de abril
 
@@ -694,10 +689,13 @@ Lanzamos la nueva versión 3.8.2 para Magento 2.
 
 ----[mlb]----
 Integra Checkout Transparente más simple y rápido con la nueva funcionalidad CardForm, que te permite autogenerar la lógica de negocio en tu formulario de pagos con tarjeta y mejorar la compatibilidad con los distintos navegadores.
-------------
+
+---
+
 ----[mla, mlm, mco, mlc, mlu]----
 Integra Checkout API más simple y rápido con la nueva funcionalidad CardForm, que te permite autogenerar la lógica de negocio en tu formulario de pagos con tarjeta y mejorar la compatibilidad con los distintos navegadores.
-------------
+
+---
 
 [Ir a documentación de MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/receiving-payment-by-card)
 
@@ -726,7 +724,6 @@ Lanzamos la nueva versión 3.8.0 para Magento 2.
 > GitHub
 >
 > Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.0).
-
 
 > CHANGELOG
 >
@@ -860,17 +857,17 @@ Lanzamos la nueva versión 4.5.1 para PrestaShop.
 
 > CHANGELOG
 >
-> Pix como nuevo medio de pago en Checkout Transparente 
+> Pix como nuevo medio de pago en Checkout Transparente
 >
 > NEWS: NOVEDADES
 >
-> PRODUCT: CHECKOUT TRANSPARENTE 
+> PRODUCT: CHECKOUT TRANSPARENTE
 
 Ahora puedes agregar a Pix como medio de pago para comenzar a recibir dinero al instante, todos los días y desde cualquier banco o billetera. Solo debes tener tu llave y sumar a Pix en tu formulario de pago.
 
 [Comenzar a recibir pagos con Pix](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_recibir_pagos_con_pix)
 
-------------
+---
 
 > CHANGELOG
 >
@@ -942,8 +939,7 @@ Lanzamos la nueva versión 3.7.2 para Magento 2.
 
 Extendimos los plazos de devoluciones a 180 días para todos los medios de pago.
 
-[Ir a documentación de Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds#bookmark_devoluciones)
-------------
+## [Ir a documentación de Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds#bookmark_devoluciones)
 
 ### 17 de febrero
 
