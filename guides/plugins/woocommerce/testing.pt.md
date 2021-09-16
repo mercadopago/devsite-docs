@@ -8,7 +8,7 @@ Com a loja em modo teste, é possível testar uma compra antes de habilitá-la p
 3. Selecione um produto e clique em **Comprar > Ver carrinho**.
 4. Escolha qualquer opção de frete e clique em **Concluir compra**.
 5. Preencha com as informações solicitadas e selecione a opção de pagamento com a solução do Mercado Pago que você configurou.
-6. Selecione o pagamento com cartão de crédito e utilize as informações de cartão disponíveis na nossa página [Cartões nacionais de teste](https://www.mercadopago.com.br/developers/pt/guides/resources/localization/local-cards).
+6. Selecione o pagamento com cartão de crédito e utilize as informações de cartão disponíveis na nossa página [Cartões nacionais de teste](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/local-cards).
 7. Ao concluir o preenchimento, clique em **Finalizar compra**.
 
 Se o teste correr sem erros, significa que sua loja está pronta para vender. Contudo, recomendamos realizar testes adicionais para que visualize os diferentes.
