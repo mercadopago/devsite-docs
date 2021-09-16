@@ -21,7 +21,7 @@ Ao concluir esses passos, o plugin do Mercado Pago para WooCommerce estará inst
 
 É o número de identificação que um desenvolvedor ou parceiro do Mercado Pago recebe ao fazer sua certificação. Esse ID não é obrigatório para que a integração funcione, porém é através dele que reconhecemos quais integrações foram feitas por qual parceiro.
 
-Quer ser um parceiro, [clique aqui](https://www.mercadopago.com.br/developers/pt/developer-program#dev-program-benefits) para mais informações
+Quer ser um parceiro, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) para mais informações
 
 ### 3. Como configuro o parcelado sem juros e antecipação de meus recebíveis?
 
