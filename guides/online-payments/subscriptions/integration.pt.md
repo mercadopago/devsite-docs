@@ -127,7 +127,6 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
     "id": "2c938084726e18d60172750000000000",
     "preapproval_plan_id": "2c938084726e18d60170001112223334",
     "payer_id": 100200300,
-    "payer_email": "test_user_XXXX@testuser.com",
     "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]/",
     "collector_id": 10101,
     "application_id": 1234567812345678,
@@ -188,7 +187,6 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 {
     "id": "2c938084726fca480172750000000000",
     "payer_id": 400500600,
-    "payer_email": "test_user_XXXX@testuser.com",
     "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]/",
     "collector_id": 100200300,
     "application_id": 1234567812345678,
@@ -260,7 +258,6 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 {
     "id": "2c938084726fca480172750000000000",
     "payer_id": 400500600,
-    "payer_email": "test_user_XXXX@testuser.com",
     "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]/",
     "collector_id": 100200300,
     "application_id": 1234567812345678,
