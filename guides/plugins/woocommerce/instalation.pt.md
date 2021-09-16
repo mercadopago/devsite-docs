@@ -15,7 +15,7 @@ Pronto! Agora o módulo está ativo e você pode configurar sua integração.
 >
 > Importante
 >
-> Caso você tenha problemas durante a instalação do plugin e precise entrar em contato com nosso suporte, é possível que você seja solicitado a realizar a instalação de forma manual. Veja a FAQ para detalhes de como fazê-lo.
+> Caso você tenha problemas durante a instalação do plugin e precise entrar em contato com nosso suporte, é possível que você seja solicitado a realizar a instalação de forma manual. Veja a [FAQ](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/faq) para detalhes de como fazê-lo.
 
 > LEFT_BUTTON_REQUIRED_PT
 >
