@@ -4,7 +4,7 @@ El primer paso para activar el modo de producción en su tienda es **habilitar e
 
 Muchos servicios de alojamiento ofrecen, junto con el dominio, el certificado SSL. Si tu dominio no tiene este certificado, te recomendamos buscar un servicio que pueda ayudarte con la compra e instalación. 
 
-Para obtener más información, visita nuestra documentación [Requisitos para salir a producción](https://www.mercadopago.com.br/developers/es/guides/online-payments/checkout-api/goto-production).
+Para obtener más información, visita nuestra documentación [Requisitos para salir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/goto-production).
 
 Con el certificado activado y la prueba completada, puedes sacar su tienda del modo de prueba y habilitar el modo de **producción**. Esto te permitirá realizar ventas reales.
 
