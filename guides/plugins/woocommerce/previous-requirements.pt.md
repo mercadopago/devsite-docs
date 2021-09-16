@@ -4,7 +4,7 @@ Para utilizar a integração do Mercado Pago com o WooCommerce em seu WordPress,
 
 | Requisitos | Descrição | Especificações |
 |---|---|---|
-| Conta de vendedor Mercado Pago | Para realizar vendas, é preciso uma conta vendedor no Mercado Pago. Caso não tenha, [clique aqui](https://www.mercadopago.com.br/hub/registration/landing) para criar.| Conta de vendedor no Mercado Pago |
+| Conta de vendedor Mercado Pago | Para realizar vendas, é preciso uma conta vendedor no Mercado Pago. Caso não tenha, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) para criar.| Conta de vendedor no Mercado Pago |
 | WordPress | Ferramenta online para criação de lojas, sites e blogs. [Clique aqui](https://br.wordpress.org/about/) para mais informações.| Versão de instalação requerida 4.9.10 ou superior. Testado até 5.8.x | 
 | WooCommerce | Plugin de WordPress que permite a criação de lojas virtuais a partir de códigos abertos. [Clique aqui](https://woocommerce.com/pt-br/woocommerce-features/) para mais informações. | Requerido 3.x ou superior. Testado até 5.6.x |
 | Ambiente | Serviço de hospedagem | MySQL, PHP ou serviço equivalente que suporte a instalação do WordPress. |
