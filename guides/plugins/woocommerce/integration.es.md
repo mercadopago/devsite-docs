@@ -71,6 +71,7 @@ Además de la configuración anterior, encontrarás diferentes opciones relacion
 16. **Vencimento do Pix:** elige un período de validez del código enviado al cliente después de realizar el pedido. Este será el período que el cliente deberá pagar por la compra.
 ------------
 
+----[mlb]----
 > WARNING
 >
 > Importante
