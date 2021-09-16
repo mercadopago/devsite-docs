@@ -65,6 +65,7 @@ Además de la configuración anterior, encontrarás diferentes opciones relacion
 11. **Reduzir inventário:** selecciona _Sim_ si deseas que el producto sea retirado durante la creación del pedido, independientemente de si el pago se aprueba o no. De lo contrario, mantén _Não_ para retirar el producto del stock solo cuando se apruebe el pago. 
 12. **Desconto por comprar com Mercado Pago:** elige un porcentaje de descuento para los clientes que pagan con Mercado Pago.
 13. **Comissão por compra com Mercado Pago:** elige un porcentaje adicional que desees cobrar como tarifa a sus clientes por pagar con Mercado Pago.
+14. **Pagamento com cartões salvos:** permite a los clientes comprar con los datos de su tarjeta guardados en Mercado Pago, sin tener que completar los datos de la tarjeta al momento de pagar en la tienda.
 14. **Pix:** si deseas ofrecer pagos de Pix, debes activar el **pago personalizado - Paga con Pix** y seguir los pasos descritos en pantalla para completar la integración. **(Solo para Brasil)**
 15. **Vencimento do Pix:** elige un período de validez del código enviado al cliente después de realizar el pedido. Este será el período que el cliente deberá pagar por la compra. **(Solo para Brasil)**
 16. **Pagamento com cartões salvos:** permite a los clientes comprar con los datos de su tarjeta guardados en Mercado Pago, sin tener que completar los datos de la tarjeta al momento de pagar en la tienda.
