@@ -13,7 +13,7 @@ Follow the steps below to make the change:
 1. Access your WordPress Panel.
 2. In the left side bar, click on **WooCommerce** **> Settings**.
 3. In **Payments**, search for the checkout you chose in step **Integration setup**, and click on **Manage**.
-4. In _Add credentials to "Test Mode" or "Production Mode"_, choose _Activate Production Mode for Mercado Pago checkouts_. 
+4. In **Add credentials to "Test Mode" or "Production Mode"**, choose **Activate Production Mode for Mercado Pago checkouts**. 
 5. Click on _Salvar alterações_.
 
 Done! Your store is in the Production environment and ready to process your sales.
