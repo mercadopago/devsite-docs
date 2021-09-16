@@ -38,7 +38,7 @@ As informações de negócio são necessárias para identificar sua loja. Preenc
 1. **Nome da loja:** insira o nome da sua loja.
 2. **Categoria da loja:** insira a categoria dos produtos de sua loja.
 3. **ID da loja:** Use um número ou prefixo para identificar pedidos e pagamentos provenientes da sua loja.
-4. **Integrator ID:** Insira seu *integrator_id* como parceiro do Mercado Pago. Caso ainda não seja um parceiro, [clique aqui](https://www.mercadopago.com.br/developers/pt/developer-program#dev-program-benefits) para mais informações.
+4. **Integrator ID:** Insira seu *integrator_id* como parceiro do Mercado Pago. Caso ainda não seja um parceiro, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) para mais informações.
 
 Em **Ajustes avançados**, você configura opções relativas ao salvamento de informações em um arquivo para depurar problemas técnicos, além de configurar as [notificações IPN](https://www.mercadopago.com.br/developers/pt/guides/notifications/ipn). 
 
