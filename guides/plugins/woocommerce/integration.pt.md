@@ -26,7 +26,7 @@ Para ativar as credenciais, siga os passos a seguir.
 
 1. Desça a tela até a seção de **Credenciais**.
 2. Em **Como você quer operar os checkouts da sua loja?**, selecione a opção **Ativar modo teste para checkouts Mercado Pago**. (Mantendo este campo habilitado, sua loja estará em **modo teste**, o que permitirá testar o funcionamento do plugin antes de habilitar a loja para produção).
-3. Insira suas credenciais de **teste** e **produção** nos campos solicitados. Caso ainda não tenha essas informações, acesse nossa documentação [Credenciais](https://www.mercadopago.com.br/developers/pt/guides/resources/credentials) e siga o passo a passo para obtê-las. 
+3. Insira suas credenciais de **teste** e **produção** nos campos solicitados. Caso ainda não tenha essas informações, acesse nossa documentação [Credenciais](https://www.mercadopago[FAKER][DOMAIN][URL]/developers/pt/guides/resources/credentials) e siga o passo a passo para obtê-las. 
 4. Ao finalizar o preenchimento, clique em **Salvar alterações**.
 
 Com as credenciais preenchidas, configure as informações de negócio.
