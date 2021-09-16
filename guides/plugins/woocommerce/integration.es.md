@@ -38,7 +38,7 @@ Se requiere información del negocio para identificar tu tienda. Completa los ca
 1. **Nome da loja:** ingresa el nombre de tu tienda.
 2. **Categoria da loja:** ingresa la categoría de los productos de tu tienda.
 3. **ID da loja:** usa un número o prefijo para identificar pedidos y pagos de tu tienda.
-4. **Integrator ID:** ingresa tu *integrator_id* como asociado de Mercado Pago. Si aún no eres un asociado, [haz clic aquí](https://www.mercadopago.com.br/developers/es/developer-program#dev-program-benefits) para obtener más información.
+4. **Integrator ID:** ingresa tu *integrator_id* como asociado de Mercado Pago. Si aún no eres un asociado, [haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/developer-program) para obtener más información.
 
 En *Ajustes avançados*, configura las opciones relacionadas con el almacenamiento de información en un archivo para depurar problemas técnicos, así como para configurar las [notificaciones de IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn).
 
