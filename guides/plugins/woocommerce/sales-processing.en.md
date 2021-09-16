@@ -23,7 +23,7 @@ There are two statuses in a WooCommerce sale: _status do pedido_ and _status do 
 | Refunded | Refunded |
 | Chargedback| Refunded|
 
-For more information, access the [Activities](https://www.mercadopago.com.br/activities) section of your Mercado Pago account and the [WooCommerce order manual](https://docs.woocommerce.com/document/como-gerenciar-pedidos/).
+For more information, access the [Activities](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) section of your Mercado Pago account and the [WooCommerce order manual](https://docs.woocommerce.com/document/como-gerenciar-pedidos/).
 
 In addition, you can have access to the details of each payment attempt that happened in your store. To do this, go to the WordPress panel, and then click **WooCommerce > Orders > Order Details**.
 
