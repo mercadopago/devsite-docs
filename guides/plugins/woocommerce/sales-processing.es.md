@@ -25,7 +25,7 @@ Hay dos estados en una venta de WooCommerce: **status del pedido** y **status de
 | Refunded | Refunded |
 | Chargedback| Refunded|
 
-Para obtener más información, accede a la sección [Actividades](https://www.mercadopago.com.br/activities) de tu cuenta de Mercado Pago y al [manual de pedidos de WooCommerce](https://docs.woocommerce.com/document/gestion-de-pedidos/).
+Para obtener más información, accede a la sección [Actividades](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) de tu cuenta de Mercado Pago y al [manual de pedidos de WooCommerce](https://docs.woocommerce.com/document/gestion-de-pedidos/).
 
 Además, puedes acceder a los detalles de cada intento de pago que ocurrió en su tienda. Para hacer esto, ve al panel de WordPress y luego haz clic en **WooCommerce > Pedidos > Detalles del pedido**.
 
