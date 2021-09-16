@@ -37,7 +37,7 @@ Set up the business information as shown in the next section once you fill in th
 1. **Nome da loja:** Enter the name of your store.
 2. **Categoria da loja:** Enter the category of your store's products.
 3. **Store ID:** Use a number or prefix to identify orders and payments from your store.
-4. **Integrator ID:** Enter your *integrator_id* as Mercado Pago partner. If you are not a partner yet, [click here](https://www.mercadopago.com.br/developers/en/developer-program#dev-program-benefits) for more information.
+4. **Integrator ID:** Enter your *integrator_id* as Mercado Pago partner. If you are not a partner yet, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/developer-program) for more information.
 
 In _Ajustes avançados_, you can configure options related to saving information to a file for debugging technical issues, as well as configuring [IPN notifications](https://www.mercadopago.com.br/developers/en/guides/notifications/ipn).
 
