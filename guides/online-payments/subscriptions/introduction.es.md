@@ -5,7 +5,7 @@ Las suscripciones de Mercado Pago te permiten recibir pagos de forma recurrente,
 ## Roles disponibles
 
 Existen dos roles involucrados:
-1. El __vendedor__ o __collector__, quien es dueño de la suscripción y acreedor de los importes que se debiten.
+1. El __vendedor__ o __collector__, quien es dueño del plan de suscripción y acreedor de los importes que se debiten.
 1. El __pagador__ o __payer__, quien abonará los importes de forma automática desde el medio de pago que haya elegido.
 
 > NOTE
@@ -26,7 +26,17 @@ Para poder integrar suscripciones, es necesario que conozcas cuatro conceptos cl
 | Pago autorizado o authorized payment | Es la cuota de una suscripción que se genera y se cobra en base a la recurrencia definida. El motor de suscripciones calendariza y genera los pagos de forma automática. |
 | Cobro de verificación | Se trata de un cobro mínimo, que se realiza en el momento de la adhesión del pagador solo para verificar que la tarjeta utilizada para pagar la suscripción es válida. Enseguida, este monto se reembolsa al pagador. |
 | Fecha de facturación | Es la fecha que el vendedor puede establecer para recibir los cobros de una suscripción con una frecuencia de pago mensual. |
+| Cobro prorrateado | Es el cobro proporcional relacionado con la diferencia de dias entre la fecha de alta de la suscripción y su fecha fija de cobro recurrente. |
+| Período de prueba | Es un período gratuito previo al inicio de la suscripcion, si la suscripcion es mensual el periodo gratuito inicial es de un mes. |
 
+
+### Fecha de facturación y cobro prorrateado
+
+En el siguiente gráfico vemos como actua la fecha de facturación y el eventual cobro prorrateado
+
+----[mla]----
+![Basic-subscriptions](/images/subscriptions/proportional-payment.png)
+------------
 
 ------------
 ### Próximos pasos

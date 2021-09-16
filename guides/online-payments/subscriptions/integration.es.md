@@ -8,6 +8,11 @@ Hay dos formas de integrar suscripciones:
 
 * __Sin un plan asociado__: Usa esta forma cuando sepas que las diferentes suscripciones no van a compartir ninguna característica porque van ser muy específicas o especializadas para cada pagador. Por ejemplo para una suscripción de un solo mes con un descuento particular.
 
+
+----[mla]----
+![Basic-subscriptions](/images/subscriptions/template-and-preapproval.png)
+------------
+
 > NOTE
 > 
 > Conceptos claves
@@ -305,6 +310,16 @@ Atributos
 | `card_token_id`| Si la suscripción ya fue autorizada, la información de la tarjeta será convertida en un token para enviar los datos de modo seguro. |
 
 
+### Search de preapprovals
+
+Este llamado permite obtener todas las suscripciones (preapprovals) asociados a un plan de suscripción.
+
+```curl 
+curl --location --request GET 'https://api.mercadopago.com/preapproval/search?caller.id=813642410&sort=date_created:desc&limit=55&status=authorized,paused,cancelled&offset=0&payerId=999888777' \
+--header 'X-Caller-Scopes: admin' \
+--header 'cache-control: no-cache' \
+--header 'x-auth-token: 2e79522a9eac0ecc68c4b00443cf617e5309984023442sdfdsfb81b3e96ad541acb2f7bc'
+```
 ------------
 ### Próximos pasos
 
