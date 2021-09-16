@@ -76,7 +76,7 @@ Además de la configuración anterior, encontrarás diferentes opciones relacion
 >
 > Importante
 >
-> Antes de configurar Pix como método de pago, te recomendamos descargar la última versión del plugin Mercado Pago para WooCommerce y registrar tu clave Pix en Mercado Pago. **(Solo para Brasil)**
+> Antes de configurar Pix como método de pago, te recomendamos descargar la última versión del plugin Mercado Pago para WooCommerce y registrar tu clave Pix en Mercado Pago. 
 ------------
 
 

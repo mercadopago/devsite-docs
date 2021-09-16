@@ -75,7 +75,7 @@ In addition to the settings above, you will find different options related to yo
 >
 > Important
 >
->Before configuring Pix as a payment method, we recommend [downloading the latest version](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) of the Mercado Pago plugin for WooCommerce and [registering your Pix key](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required) in Mercado Pago. **(Brazil only)**
+>Before configuring Pix as a payment method, we recommend [downloading the latest version](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) of the Mercado Pago plugin for WooCommerce and [registering your Pix key](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required) in Mercado Pago.
 ------------
 
 Done! The Mercado Pago plugin with WooCommerce is now integrated with your store and can be tested by making purchases that will only be for the purpose of validating the plugin's operation but will not charge any value.
