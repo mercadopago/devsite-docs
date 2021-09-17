@@ -9,7 +9,7 @@
 
 ## Crie usuários de teste 
 
-Para realizar os testes de integração, **é necessário que você tenha pelo menos dois usuários:** um comprador e um vendedor.
+Para realizar os testes de integração, **é necessário que você tenha pelo menos dois usuários:** um vendedor e um comprador.
 
 Execute o seguinte curl para gerar um usuário de teste:
 
@@ -21,7 +21,7 @@ curl -X POST \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
 
-A resposta terá estrutura similar ao do exemplo abaixo:
+A resposta terá estrutura similar a do exemplo abaixo:
 
 ```json
 {
