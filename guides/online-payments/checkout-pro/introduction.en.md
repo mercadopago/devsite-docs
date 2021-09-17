@@ -76,7 +76,7 @@ Checkout Pro is an integration that allows you to **charge your customers throug
 >
 > Integration requirements
 >
-> Prerequisites to get started
+> To integrate with Checkout Pro, you must meet some necessary requirements.
 >
 > [Integrations requirements](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/previous-requirements)
 >
