@@ -5,7 +5,7 @@
 | Tipo de usuários de teste | Descrição |
 | --- | --- |
 | Vendedor | É a conta que você usa para **configurar a aplicação e as credenciais para a cobrança**. |
-| Comprador | É a conta que você usa para **testar o processo de compra.**<br/><br/>Existem duas formas de fazer o pagamento: como **usuário convidado**, preenchendo apenas um endereço de e-mail de sua escolha, e como **usuário cadastrado**, acessando a conta do Mercado Pago com usuário e senha. Nesse último cenário, cartões previamente salvos e saldo disponível na conta estarão habilitados como meios de pagamento. |
+| Comprador | É a conta que você usa para **testar o processo de compra.**<br/><br/>Existem duas formas de fazer o pagamento: como **usuário convidado**, preenchendo apenas um endereço de e-mail de sua escolha, e como **usuário cadastrado**, acessando uma conta do Mercado Pago com usuário e senha. Nesse último cenário, cartões previamente salvos e saldo disponível na conta serão habilitados como meios de pagamento. |
 
 ## Crie usuários de teste 
 
@@ -43,11 +43,11 @@ A resposta terá estrutura similar a do exemplo abaixo:
 
 ## Teste o fluxo de pagamento
 
-### 1. Configure o checkout com os dados do usuário vendedor
+### 1. Configure o checkout com os dados do seu usuário vendedor
 
 Gere uma preferência com as [credenciais]([FAKER][CREDENTIALS][URL]) do usuário de teste que quiser usar como vendedor no fluxo de pagamento.
 
-### 2. Faça um pagamento de teste com o usuário comprador
+### 2. Faça um pagamento de teste com o seu usuário comprador
 
 #### Comprando como usuário convidado
 
@@ -61,15 +61,15 @@ Ao abrir o checkout criado com os dados do seu usuário vendedor:
 
 Ao abrir o checkout criado com os dados do seu usuário vendedor:
 
-1. Acesse a conta Mercado Pago usando o seu usuário de teste comprador.
+1. Acesse uma conta Mercado Pago usando o seu usuário de teste comprador.
 2. Selecione `Cartão` como meio de pagamento.
-3. Selecione um dos cartões previamente salvos ou insira os dados de um [cartão de teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration#bookmark_cartões_de_teste) novo.
+3. Selecione um dos cartões previamente salvos ou insira os dados de um [cartão de teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration#bookmark_cartões_de_teste).
 
 >WARNING
 >
 >Importante
 >
-> * Para fazer os pagamentos de teste, use valores baixos.
+> * Use valores baixos para fazer os pagamentos de teste.
 > * Use sempre cartões de teste, já que não é possível retirar o dinheiro.
 
 ### Cartões de teste
@@ -136,7 +136,7 @@ Ao abrir o checkout criado com os dados do seu usuário vendedor:
 ------------
 
 
-Para **testar diferentes resultados de pagamento** com o Checkout Pro, preencha o status desejado no nome do titular do cartão.
+Para **testar diferentes resultados de pagamento** com o Checkout Pro, preencha o status desejado no nome do titular do cartão:
 
 | Status de pagamento | Descrição |
 | --- | --- |
