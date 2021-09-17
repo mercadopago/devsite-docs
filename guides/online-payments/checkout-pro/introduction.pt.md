@@ -71,7 +71,7 @@ O Checkout Pro é a integração que **te permite cobrar através do nosso formu
 >
 > Requisitos para integrar
 >
-> Para realizar a integração, você deve atender os requisitos necessários.
+> Para realizar a integração com o Checkout Pro, você deve atender alguns requisitos necessários.
 >
 > [Requisitos para integrar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/previous-requirements)
 >
