@@ -2,7 +2,7 @@
 
 ## Armazene os dados dos seus clientes e cartões
 
-Use nossas APIs para guardar a referência dos cartões dos seus clientes e poder oferecer uma melhor experiência. Dessa maneira, seus clientes não terão que completar seus dados todas as vezes e poderão finalizar seus pagamentos mais rápido e você vai vender muuuuuuito.
+Use nossas APIs para guardar a referência dos cartões dos seus clientes e poder oferecer uma melhor experiência. Dessa maneira, seus clientes não terão que completar seus dados todas as vezes e poderão finalizar seus pagamentos mais rápido e você vai vender muuuuuuito e ficar muito milionário, muuuuito rico.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Crie um cliente e um cartão
 
