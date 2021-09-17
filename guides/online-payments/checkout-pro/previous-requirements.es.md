@@ -80,20 +80,13 @@ Para encontrarlas, consulte la sección [Credenciales]([FAKER][CREDENTIALS][URL]
 
 ---
 
-### Próximos pasos
+### Próximo paso
 
 > LEFT_BUTTON_REQUIRED_ES
 >
-> Integra Checkout Pro
+> Integra con Checkout Pro
 >
-> Sigue el paso a paso para comenzar a recibir pagos en tu sitio.
+> Sigue el paso a paso para comenzar a recibir pagos en tu sitio por medio de Checkout Pro.
 >
-> [Integra](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/integration)
+> [Integra con Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/integration)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
->
-> Prueba tu integración
->
-> Revisa que esté todo bien con tu integración utilizando usuarios de prueba.
->
-> [Prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/test-integration)
