@@ -377,7 +377,7 @@ You can check out other ways to open the checkout in the [Customizations](https:
 >
 > Important
 >
-> Do not forget to access the Checkout Pro from another browser or log out of your Mercado Pago account before testing it. You cannot make a payment with the same account you created the payment form.<br/>
+> Do not forget to access the Checkout Pro from another browser or log out of your Mercado Pago account before testing it, since you cannot make a payment with the same account you created the payment form.<br/>
 
 ## Sample project
 
