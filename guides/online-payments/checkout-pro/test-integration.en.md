@@ -165,4 +165,4 @@ Before activating them, verify if the credentials used in your integration are t
 >
 > Configure the attributes of your preferences and adapt the Checkout Pro to your business model.
 >
-> [Preferences configuration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations)
+> [Preferences configuration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations)
