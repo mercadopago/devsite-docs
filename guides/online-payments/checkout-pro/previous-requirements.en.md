@@ -81,20 +81,12 @@ You can find the information of each one in the [Credentials]([FAKER][CREDENTIAL
 
  ---
 
-### Next steps
+### Next step
 
 > LEFT_BUTTON_REQUIRED_EN
 >
-> Integrate Checkout Pro
+> Integrate with Checkout Pro
 >
-> Follow the step by step to start receiving payments on your website.
+> Follow the step by step to start receiving payments on your website through Checkout Pro.
 >
-> [Integrate Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/integration)
-
-> RIGHT_BUTTON_RECOMMENDED_EN
->
-> Test your integration
->
-> Check if everything is properly working in your integration using test users.
->
-> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/test-integration)
+> [Integrate with Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/integration)
