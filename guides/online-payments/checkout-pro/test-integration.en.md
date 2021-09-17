@@ -1,21 +1,17 @@
 # Test your integration
 
-## How to test my integration
+The **test users allow you to test your Checkout Pro** by generating payment flows as in an exact copy of your integration.
 
-**Test users allow you to test your Checkout Pro** by generating payment flows in an exact copy of your integration.
-
-| User types | Description |
+| Test users type | Description |
 | --- | --- |
-| Seller | It is the test account you use to **configure the application and credentials for collection**. |
-| Buyer | It is the test account you use to **test the purchase process.**<br/>There are two ways to make the payment:<br/><br/> **As a guest user:** you only need to complete the email address.<br/>**As a registered user:** you access the Mercado Pago account with the username and password. In case money is available in the account or there are saved cards, they will be enabled as payment methods. |
+| Seller | It is the account you use to **configure the application and credentials for collection**. |
+| Buyer | It is the account you use to **test the purchase process.**<br/><br/>There are two ways to make the payment: as a **guest user:**, using an email address of your choice, and as a **registered user**, using a Mercado Pago account with username and password. In this last scenario, money available in the account and presaved cards will be enabled as payment methods. |
 
+## Create users
 
-## How to create users
-To perform the tests **it is necessary that you have at least two users:** a buyer and a seller.
+To perform the tests **it is necessary that you have at least two users:** a seller and a buyer.
 
 Execute the following curl to generate a test user:
-
-### Request
 
 ```curl
 curl -X POST \
@@ -25,8 +21,7 @@ curl -X POST \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
 
-
-### Response
+The answer will have a structure similar to the following example:
 
 ```json
 {
@@ -44,10 +39,7 @@ curl -X POST \
 >
 > * You can generate up to 10 test user accounts simultaneously. Therefore, we recommend you _save each email and password._
 > * Test users expire after 60 days without activity in Mercado Pago.
-> * To make test payments we recommend using low amounts.
 > * Both buyer and seller must be test users.
-> * Use test cards, since it is not possible to withdraw money.
-
 
 ## Test the payment flow
 
@@ -57,28 +49,31 @@ Generate a preference with the [credentials]([FAKER][CREDENTIALS][URL]) of the t
 
 ### 2. Make a payment with your buyer user
 
-#### Purchase as a guest user
-
-Credit card tests
+#### Purchase as guest user
 
 When opening the checkout created with the data of your seller user:
 
-1. Select _Card_ as the payment method.
+1. Select `Card` as the payment method.
 2. Enter the details of a [test card](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/test-integration#bookmark_tarjetas_de_prueba).
-3. Complete the email and done!<br/><br/>
+3. Fill in the desired email.
 
-#### Buy as a registered user (with Mercado Pago account)
-
-Credit card tests
+#### Buy as registered user
 
 When opening the checkout created with the data of your seller user:
 
-1. Log in to Mercado Pago with your buyer test user account.
-2. Select _Card_ as the payment method.
-3. Choose a saved card or complete the details with a new one and done!
+1. Log in to a Mercado Pago account with your buyer test user.
+2. Select `Card` as the payment method.
+3. Choose a presaved card or enter the details of a new [test card](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/test-integration#bookmark_tarjetas_de_prueba).
+
+>WARNING
+>
+>Important
+>
+> * Use low amounts to make the payment tests.
+> * Always use test cards, since it is not possible to withdraw money.
 
 
-## Test Cards
+### Test Cards
 
 ----[mla]----
 
@@ -141,23 +136,24 @@ When opening the checkout created with the data of your seller user:
 
 ------------
 
+To **test different payment results,** fill in the desired status in the name of the cardholder:
 
-To **test different payment results,** complete the information you want in the name of the cardholder:
+| Payment status | Description |
+| --- | --- |
+| `APRO` | Payment approved |
+| `CONT` | Payment pending |
+| `OTHE` | Rejected by general error |
+| `CALL` | Rejected with validation to authorize |
+| `FUND` | Rejected for insufficient amount | 
+| `SECU` | Rejected by invalid security code | 
+| `EXPI` | Rejected due to problem with expiration date | 
+| `FORM` | Rejected by error in the form | 
 
-- APRO: Payment approved.
-- CONT: Payment pending.
-- OTHE: Rejected by general error.
-- CALL: Rejected with validation to authorize.
-- FUND: Rejected for insufficient amount.
-- SECU: Rejected by invalid security code.
-- EXPI: Rejected due to problem with expiration date.
-- FORM: Rejected by error in the form.
-
-## Start receiving payments
+## Receive payments
 
 To start charging, you must [activate your credentials]([FAKER][CREDENTIALS][URL]).
 
-To activate them, verify that the credentials in your integration are those of the account that receives the money from the sales.<br/>
+Before activating them, verify if the credentials used in your integration are the same as those of the account responsible for receiving the money from sales.
 
 ---
 
@@ -175,6 +171,6 @@ To activate them, verify that the credentials in your integration are those of t
 >
 > Customization
 >
-> Adapt the style of your brand in the buying experience.
+> Adapt the style of your brand in the buying experience with Checkout Pro.
 >
 > [Customization](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/customizations)
