@@ -324,9 +324,9 @@ curl -X POST \
 
 > NOTE
 >
-> Aceite pagamentos apenas de usuários cadastrados
+> Adapte a integração do Checkout Pro ao seu negócio
 >
-> Acesse a seção [Outras funcionalidades](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados) para saber como aceitar pagamentos apenas de usuários cadastrados, com cartão e saldo no Mercado Pago.
+> Acesse a seção [Configuração de Preferências](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados) para saber sobre os atributos de preferências, responsáveis adicionar novas funcionalidades ao Checkout Pro de acordo com o seu modelo negócio. 
 
 <span></span>
 
@@ -394,18 +394,10 @@ Confira o [exemplo completo de integração](http://github.com/mercadopago/check
 
 ### Próximos passos
 
-> LEFT_BUTTON_RECOMMENDED_PT
->
-> Teste sua integração
->
-> Confira se está tudo certo com a sua integração usando usuários de teste.
->
-> [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration)
-
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
-> Aceite a carteira Mercado Pago em seu _site_
+> Adapte a implementação do Checkout Pro ao seu modelo de negócio
 >
-> Configure o Checkout Pro para permitir pagamentos somente de usuários cadastrados no Mercado Pago, com cartão e saldo disponível.
+> Configure o seu Checkout Pro com funcionalidades extras de acordo com as necessidades do seu negócio.
 >
-> [Usuários cadastrados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados)
+> [Usuários cadastrados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/)
