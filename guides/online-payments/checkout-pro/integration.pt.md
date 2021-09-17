@@ -400,4 +400,4 @@ Confira o [exemplo completo de integração](http://github.com/mercadopago/check
 >
 > Configure o seu Checkout Pro com funcionalidades extras de acordo com as necessidades do seu negócio.
 >
-> [Usuários cadastrados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/)
+> [Configuração de preferências](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/)
