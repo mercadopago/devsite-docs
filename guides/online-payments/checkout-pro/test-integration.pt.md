@@ -5,7 +5,7 @@
 | Tipo de usuários de teste | Descrição |
 | --- | --- |
 | Vendedor | É a conta que você usa para **configurar a aplicação e as credenciais para a cobrança**. |
-| Comprador | É a conta que você usa para **testar o processo de compra.**<br/><br/>Existem duas formas de fazer o pagamento: como **usuário convidado**, preenchendo apenas o seu endereço de e-mail, e como **usuário cadastrado**, acessando a conta do Mercado Pago com usuário e senha. Nesse último cenário, cartões previamente salvos e saldo disponível na conta estarão habilitados como meios de pagamento. |
+| Comprador | É a conta que você usa para **testar o processo de compra.**<br/><br/>Existem duas formas de fazer o pagamento: como **usuário convidado**, preenchendo apenas um endereço de e-mail de sua escolha, e como **usuário cadastrado**, acessando a conta do Mercado Pago com usuário e senha. Nesse último cenário, cartões previamente salvos e saldo disponível na conta estarão habilitados como meios de pagamento. |
 
 ## Crie usuários de teste 
 
