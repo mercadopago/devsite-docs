@@ -1,56 +1,56 @@
-# How to Integrate the Marketplace via API
+# Integrate the Marketplace via API
 
 > WARNING
 >
 > Prerequisites
 >
-> * Have the [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction) implemented.
+> * You need to have the [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction) implemented.
 
-To begin, you need to:
+To start, follow these steps:
 
-1. Register an application and then edit its **Redirect URI**.
-2. Request your sellers to connect.
-3. Create payments on behalf of your sellers.
+1. Create and set up your application.
+2. Link your application with your sellers' accounts.
+3. Generate credentials to operate.
+4. Refresh your credentials.
+5. Test your integration.
 
-## 1. How to create your application
+## Create and set up your application.
 
-Create your application by accessing [this link](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel), then edit its settings and complete the **Redirect URI** where the sellers will be redirected in order to be linked correctly.
+First you must have your [application created](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications/create-app) with a unique name.
 
-Once the application has been created, you will get the `APP_ID` (application identifier) required for the next step.
+Then, you need to **set up a Redirect URL for your application**. Go to [Your Applications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel), click on your application's options and select "Edit". 
 
-## 2. Connecting accounts
+In Redirect URL field add the URL to where you would like to redirect your sellers after they are correctly linked. Remember that you will receive each of your sellers' authorization codes for their credentials in the URL you added.
 
-To operate in Mercado Pago on behalf of your seller, you need to request their authorization first. 
+Lastly, you need to get your application ID in [Your Integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
 
-2.1. To do so, redirect the user to the following URL replacing the value of `client_id` for the `APP_ID` and the same `redirect_uri` you set up in the previous step:
+## Link your Mercado Pago account with your sellers' accounts
 
-`https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http://www.URL_de_retorno.com`
+To operate in Mercado Pago on behalf of your seller, you need to request their authorization first. To manage several Mercado Pago accounts at the same time in your integration, you can do it through OAuth, a feature for secure linking that allows sellers to access their Mercado Pago account to authorize and enable your application to work under their name.
 
-<br>
-2.2. When the seller accepts, a last redirect is made and you will receive the authorization code in the URL that you specified:
+To do this, you need to include a URL in your application to redirect sellers to the authorization site. 
 
-`http://www.URL_de_retorno.com?code=AUTHORIZATION_CODE`
+This is the example URL you can use. You will also find the details of parameters to fill it out.
 
-This `AUTHORIZATION_CODE` must be used to create the credentials that allow you to operate on behalf of the seller. This code will be valid for 10 minutes since it's reception.
+```url
+https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com
 
-<br>
-2.3. You can also include the `state` parameter in the URL authorization to identify who is responsible for the code you received. Do this in a safe manner and assign a random identifier in the parameter which is unique for each attempt.
+> SERVER_SIDE
+>
+> h2
+>
+> Generate credentials to operate
 
-By including this parameter, the redirect URL will look like this:
+To create the necessary credentials to operate your application in the name of a seller, send the `CODE` you got in the previous step via OAuth API.
 
-`https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=id=RANDOM_ID=&redirect_uri=http://www.URL_de_retorno.com`
+These are the parameters to include:
 
-You will now receive the authorization code and the secure identifier at the specified return URL:
-
-`hhttp://www.URL_de_retorno.com?code=AUTHORIZATION_CODE&state=id=RANDOM_ID`
-
-> Don’t send confidential information or credentials of the Mercado Pago account.
-
-### Create your user’s credentials
-
-Use the authorization code you got in the previous step to get your user’s credentials through the OAuth API, so that you can operate on behalf of the user.
-
-Request:
+| Parameter | Data to fill out |
+| ----------------- | ----------------- |
+| `client_secret` | This is your `ACCESS_TOKEN`. You can get it in [Your Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials). |
+| `grant_type` | Specify type of operation to perform to get your credentials. This is a fixed parameter with an `authorization_code` value. |
+| `code` | The authorization code or `CODE` you get in your server for linking. It will be similar to this value: `TG-60357f5d0cd06d000740646d-643464554`. | 
+| `redirect_uri` | This is the URL you set up in the Redirect URL field in your application. |
 
 ```curl
 curl -X POST \
@@ -59,46 +59,44 @@ curl -X POST \
      'https://api.mercadopago.com/oauth/token' \
      -d 'client_secret=ACCESS_TOKEN' \
      -d 'grant_type=authorization_code' \
-     -d 'code=AUTHORIZATION_CODE' \
+     -d 'code=CODE' \
      -d 'redirect_uri=REDIRECT_URI'
 ```
 
-The parameters you need to include are:
+In the response, you will get the `access_token` of the linked seller. 
+You will also get a `refresh_token` to be later used to refresh your seller's credentials. 
 
-* `client_secret`: Your `ACCESS_TOKEN`. You can get it from the detail of your [application.]([FAKER][CREDENTIALS][URL])
-* `code`: The authorization code you got when redirecting the user back to your site.
-* `redirect_uri`: It must be the same Redirect URI that you set up in your application.
-
-Response:
+You will also receive the seller's `public_key`, which is the credential or public key to be used for your frontend account identification. 
 
 ```json
 {
-    "access_token": "MARKETPLACE_SELLER_TOKEN",
-    "public_key": "PUBLIC_KEY",
-    "refresh_token": "TG-XXXXXXXXX-XXXXX",
-    "live_mode": true,
-    "user_id": USER_ID,
-    "token_type": "bearer",
-    "expires_in": 15552000,
-    "scope": "offline_access payments write"
+"access_token":"APP_USR-4934588586838432-XXXXXXXX-241983636",
+"token_type": "bearer",
+"expires_in": 15552000,
+"scope": "offline_access read write",
+"user_id": 241983636,
+"refresh_token": "TG-XXXXXXXX-241983636",
+"public_key": "APP_USR-d0a26210-XXXXXXXX-479f0400869e",
+"live_mode": true
 }
 ```
 
-In the response, in addition to the `access_token` and `public_key` of the seller, you will get the `refresh_token` that you must use to periodically renew the user’s credentials.
+> WARNING 
+> 
+> Important
+> 
+> Remember that you will be using your seller's sensitive information. Secure a backup and do not include it in your link URLs; manage such information from your server only.
 
-> NOTE
->
-> Note
->
-> The credentials are **valid for 6 months.**
-> If you don´t renew your sellers credentials before the expiration period, **those credentials will lose valifity and you´ll have to do the authorization process all over again.**
-> Tip: Renew the credentials 5 months after you got them.
+Done! You already linked your seller's account to your application via OAuth. 
 
-### Refresh your user’s credentials
+> Keep in mind that these steps need to be repeated with each account you want to link. 
 
-This process must be performed periodically to ensure that the user’s credentials are stored in your system and valid, since they are valid for 6 months.
+## Refresh your credentials
 
-If you face, in the payment flow, an error related to the Access Token that you are using, we suggest you to automatically refresh and retry the payment, before showing an error to the customer.
+**Your sellers' data that you received last 180 days**. After that, you need to request the seller's authorization again.
+To avoid this, renew data before the deadline to ensure they are always current. 
+
+To refresh them, use the following OAuth API call:
 
 ```curl
 curl -X POST \
@@ -107,25 +105,37 @@ curl -X POST \
      'https://api.mercadopago.com/oauth/token' \
      -d 'client_secret= ACCESS_TOKEN' \
      -d 'grant_type=refresh_token' \
-     -d 'refresh_token=USER_RT'
+     -d 'refresh_token=USER_REFRESH_TOKEN'
 ```
 
-Expected response:
+| Parameter | Description |
+| ----------------- | ----------------- |
+| `client_secret` | Use your `ACCESS_TOKEN`. |
+| `grant_type` | Include `refresh_token` that remains unchanged. |
+| `refresh_token` | Value received with your seller's data. | 
+
+You will receive the following response:
 
 ```json
 {
-    "access_token": "MARKETPLACE_SELLER_TOKEN",
-    "public_key": "PUBLIC_KEY",
-    "refresh_token": "TG-XXXXXXXXX-XXXXX",
-    "live_mode": true,
-    "user_id": USER_ID,
+    "access_token": "APP_USR-4934588586838432-XXXXXXXX-241983636",
     "token_type": "bearer",
     "expires_in": 15552000,
-    "scope": "offline_access payments write"
+    "scope": "offline_access read write",
+    "refresh_token": "TG-XXXXXXXXXXXX-241983636"
 }
 ```
 
-## 3. Integrate the API
+> NOTE
+> 
+> Note
+> 
+> Remember that every time you refresh your credentials, the `refresh_token` will also change so you will need to store it again.
+>
+> In case of errors when refreshing your credentials, remember that you can query them in the [error code reference](https://developers.mercadolibre[FAKER][URL][DOMAIN]/en_us/authentication-and-authorization#Error-codes-reference).
+
+
+## Integrate the API to receive payments
 
 To collect on behalf of your sellers you must integrate the [API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction), generating the payment with the Access Token you obtained by linking each seller to your application.
 
@@ -262,15 +272,35 @@ payment = payment_response["response"]
 
 The seller will receive the difference between the total amount and the fees, both the fee of Mercado Pago and the Marketplace, as well as any other amount that should be deducted from the sale.
 
-### Notifications
+## Test your integration
 
-You need to send your `notification_url`, where you will receive a notification of all new payments and status updates generated.
+You can try your Marketplace using your Sandbox credentials to associate the sellers and to make the payments/refunds/cancellations.  
+[Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/testing)
 
-In order to receive notifications when your clients authorize your application, you can [configure the url](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) in your account.
+## Set up notifications
 
-For more information, go to the [notifications section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks).
+You can get notifications every time a seller links to or unlinks from your application. For setup, follow these steps:
 
-### Refunds and cancellations
+1. Access [Your Applications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel) and select the application used for OAuth flow.
+
+2. Go to "Webhooks Notifications" tab. In this section, go to "Production Mode" and add the URL to receive notifications. If you want, you can click on "Test" button to test that the assigned URL will receive Webhooks Notifications correctly.
+
+3. Then, in "Events" field, select "Application Linking" option. Lastly, click on save. 
+
+Done! Every time a seller links or unlinks, a notification will be received in your assigned URL.
+
+These are some of the data that you can find within the notifications:
+
+| Attribute | Value or type | Description |
+| ----------------- | ----------------- | --------------- |
+| `type` | `mp-connect` | Identifies the notification of account link type. |
+| `action` | `application.authorized` | Reports that seller linked to application. |
+| `action` | `application.deauthorized` | Confirms that seller unlinked from application. |
+| `data.id`| `string`| ID of seller linked to application. |
+
+For more information, go to [Webhooks Notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks).
+
+## Refunds and cancellations
 
 The cancellations and refunds can be made either by the marketplace or by the seller, via API or through the Mercado Pago account.
 In case the Marketplace is the one that does the refund/cancellation, you´ll have to use the credentials obtained for that user in the Oauth process.
@@ -278,8 +308,3 @@ In case the Marketplace is the one that does the refund/cancellation, you´ll ha
 Cancellations can only be made using the cancellation API.
 
 For more information, go to [refunds and cancellations.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds)
-
-### Test your integration
-
-You can try your Marketplace using your Sandbox credentials to associate the sellers and to make the payments/refunds/cancellations.  
-[Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/testing)

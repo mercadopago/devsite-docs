@@ -1,8 +1,13 @@
 # Autorize e vincule contas em suas aplicações
 
-Se você precisa gerenciar várias contas do Mercado Pago ao mesmo tempo em sua integração, só tem que vincular sua aplicação e as contas de outras pessoas.
+OAuth é um protocolo de autenticação que permite ao vendedor acessar sua conta do Mercado Pago, realizar a autenticação  e habilitar seu aplicativo para funcionar utilizando seu nome. Caso seja necessário gerenciar mais de uma conta do Mercado Pago ao mesmo tempo em sua integração, é possível fazê-lo através do OAuth.
 
-Pode fazer isso através do OAuth, uma funcionalidade de vinculação segura que permite que o vendedor acesse sua conta do Mercado Pago, autorize a vinculação e habilite sua aplicação para operar em seu nome. 
+> WARNING 
+> 
+> Importante
+> 
+> Caso você precise apenas gerenciar suas credenciais em sua integração, não é necessário vincular essa funcionalidade.
+Para mais informações, acesse nossa documentação [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials).
 
 ## Como incorporar OAuth  
 

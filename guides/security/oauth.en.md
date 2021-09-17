@@ -6,7 +6,7 @@ OAuth is a feature for secure linking that allows sellers to access their Mercad
 > 
 > Important
 > 
-> If you only need to manage your credentials in your integration, you don’t need to integrate this functionality. To learn more about the two types of credentials, go to the Credentials documentation.
+> If you only need to manage your credentials in your integration, you don’t need to integrate this functionality. To learn more about the two types of credentials, go to the [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) documentation.
 
 ## How to add OAuth 
 

@@ -6,6 +6,19 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Setembro 2021
 
+### 23 de septiembre
+
+> CHANGELOG
+>
+> Autorize e vincule contas em suas aplicações com OAuth
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: OAUTH
+Aprenda a gerenciar várias contas do Mercado Pago ao mesmo tempo em sua integração e com segurança através do OAuth. Essa funcionalidade de vinculação permite que o vendedor acesse sua conta do Mercado Pago, autorize a vinculação e habilite sua aplicação para operar em seu nome.
+
+[Ir para a documentação de OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/oauth)
+
 ### 10 de setembro
 
 > CHANGELOG

@@ -6,7 +6,7 @@ OAuth es una funcionalidad de vinculación segura que permite que el vendedor in
 > 
 > Importante
 > 
-> Si solo necesitas gestionar tus credenciales en tu integración, no es necesario que integres esta funcionalidad. Para conocer más sobre los dos tipos de credenciales, ve a la documentación de Credenciales. 
+> Si solo necesitas gestionar tus credenciales en tu integración, no es necesario que integres esta funcionalidad. Para conocer más sobre los dos tipos de credenciales, ve a la documentación de [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials). 
 
 ## Cómo incorporar OAuth 
 
