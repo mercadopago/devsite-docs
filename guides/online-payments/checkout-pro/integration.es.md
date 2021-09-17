@@ -323,9 +323,9 @@ curl -X POST \
 
 > NOTE
 >
-> Acepta pagos solo de usuarios registrados
+> Adapta la integración de Checkout Pro a tu negocio
 >
-> ingresa en la sección [Otras funcionalidads](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations/#bookmark_aceptar_pagos_únicamente_de_usuarios_registrados) para saber como aceptar pagos únicamente de usuarios registrados, con tarjetas y dinero en cuenta de Mercado Pago.
+> Acceda a la sección [Configuración de preferencias](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations) para saber como agregar nuevas funciones a Checkout Pro de acuerdo con tu modelo de negocio.
 
 <span></span>
 
