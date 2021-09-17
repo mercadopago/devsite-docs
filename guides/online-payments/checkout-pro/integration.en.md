@@ -397,7 +397,7 @@ Check out the [full integration example](http://github.com/mercadopago/checkout-
 
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
-> Accept payments by Mercado Pago wallet
+> Accept payments by Mercado Pago wallet on your website
 >
 > Set up your Checkout Pro to allow payments only from Mercado Pago registered users, with cards and available balance.
 >
