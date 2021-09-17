@@ -398,6 +398,6 @@ Confira o [exemplo completo de integração](http://github.com/mercadopago/check
 >
 > Adapte a implementação do Checkout Pro ao seu modelo de negócio
 >
-> Configure o seu Checkout Pro com funcionalidades extras de acordo com as necessidades do seu negócio.
+> Configure a sua integração com o Checkout Pro com funcionalidades extras de acordo com as necessidades do seu negócio.
 >
 > [Configuração de preferências](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/)
