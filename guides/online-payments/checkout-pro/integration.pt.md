@@ -326,7 +326,7 @@ curl -X POST \
 >
 > Adapte a integração do Checkout Pro ao seu negócio
 >
-> Acesse a seção [Configuração de Preferências](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados) para saber sobre os atributos de preferências, responsáveis adicionar novas funcionalidades ao Checkout Pro de acordo com o seu modelo negócio. 
+> Acesse a seção [Configuração de Preferências](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados) para saber sobre os atributos de preferências, responsáveis por adicionar novas funcionalidades ao Checkout Pro de acordo com o seu modelo negócio. 
 
 <span></span>
 
@@ -394,10 +394,11 @@ Confira o [exemplo completo de integração](http://github.com/mercadopago/check
 
 ### Próximos passos
 
-> RIGHT_BUTTON_RECOMMENDED_PT
+> LEFT_BUTTON_REQUIRED_PT
 >
-> Adapte a implementação do Checkout Pro ao seu modelo de negócio
+> Teste a sua integração
 >
-> Configure a sua integração com o Checkout Pro com funcionalidades extras de acordo com as necessidades do seu negócio.
+> Confira se a sua integração está funcionando corretamente com usuários de teste.
 >
-> [Configuração de preferências](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/)
+> [Teste a sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration)
+
