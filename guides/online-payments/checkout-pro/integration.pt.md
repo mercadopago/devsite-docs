@@ -396,7 +396,7 @@ Confira o [exemplo completo de integração](http://github.com/mercadopago/check
 
 > LEFT_BUTTON_REQUIRED_PT
 >
-> Teste a sua integração
+> Teste a sua integração com o Checkout Pro
 >
 > Confira se a sua integração está funcionando corretamente com usuários de teste.
 >
