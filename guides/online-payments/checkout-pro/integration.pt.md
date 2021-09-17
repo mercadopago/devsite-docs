@@ -382,7 +382,7 @@ Você pode consultar outras maneiras de abrir o checkout na seção [Customizaç
 Implemente a solução Checkout Pro em seu *site* com o nosso vídeo tutorial sobre a integração completa:
 
 <div class="embed-container">
-    <iframe width="1106" height="622" src="https://www.youtube.com/embed/anrwYq84RsU&ab" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+    <iframe width="1106" height="622" src="https://www.youtube.com/embed/anrwYq84RsU" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
     </iframe>
 </div>
 
@@ -406,6 +406,6 @@ Confira o [exemplo completo de integração](http://github.com/mercadopago/check
 >
 > Aceite a carteira Mercado Pago em seu _site_
 >
-> Confire o Checkout Pro para permitir pagamentos somente de usuários cadastrados no Mercado Pago, com cartão e saldo disponível.
+> Configure o Checkout Pro para permitir pagamentos somente de usuários cadastrados no Mercado Pago, com cartão e saldo disponível.
 >
 > [Usuários cadastrados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados)
