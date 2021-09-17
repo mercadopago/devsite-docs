@@ -99,7 +99,7 @@ Utilize o formulário seguinte e adicione os estilos que desejar.
 
 > GIT
 > 
-> Referencia técnica
+> Referencia técnica FIX
 > 
 > Procure informações acerca dos distintos atributos nas [referências técnicas](https://github.com/mercadopago/sdk-js).
 
