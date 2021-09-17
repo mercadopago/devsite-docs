@@ -15,7 +15,7 @@ En el campo _País de operação_, selecciona el país en el que opera tu cuenta
 
 ## Activación de credenciales
 
-En la sección _Ingresa las credenciales para el Modo Test o el Modo Producción_, se te pedirá que ingreses tus credenciales de **producción** y **test**.
+En la sección **Ingresa las credenciales para el Modo Test o el Modo Producción**, se te pedirá que ingreses tus credenciales de **producción** y **test**.
 
 Necesitarás las **credenciales de producción** porque al finalizar las pruebas iniciales habilitaremos la tienda para procesar las ventas reales y es a través de estas credenciales que se realiza la activación.
 
