@@ -72,7 +72,7 @@ Ao abrir o checkout criado com os dados do seu usuário vendedor:
 > * Para fazer os pagamentos de teste, use valores baixos.
 > * Use sempre cartões de teste, já que não é possível retirar o dinheiro.
 
-## Cartões de teste
+### Cartões de teste
 
 ----[mla]----
 
@@ -149,7 +149,7 @@ Para **testar diferentes resultados de pagamento** com o Checkout Pro, preencha 
 | `EXPI` | Recusado por problema com a data de vencimento | 
 | `FORM` | Recusado por erro no formulário | 
 
-## Receba pagamentos
+## Receba os pagamentos
 
 Para começar a cobrar, você deve [ativar as suas credenciais]([FAKER][CREDENTIALS][URL]).
 
