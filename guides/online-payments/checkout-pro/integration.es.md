@@ -391,20 +391,12 @@ Consulte el [ejemplo de integración completa](http://github.com/mercadopago/che
 
 ---
 
-### Próximos pasos
+### Próximo paso
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON_REQUIRED_ES
 >
-> Prueba tu integración
+> Prueba tu integración con Checkout Pro
 >
 > Revisa que esté todo bien con tu integración utilizando usuarios de prueba.
 >
-> [Pruebas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/test-integration)
-
-> RIGHT_BUTTON_RECOMMENDED_ES
->
-> Acepta pagos con la billetera de Mercado Pago en tu sitio
->
-> Configure el Checkout Pro para permitir pagos solo de usuarios registrados en Mercado Pago, con tarjetas y dinero disponible.
->
-> [Usuarios regsitrados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations/#bookmark_aceptar_pagos_únicamente_de_usuarios_registrados)
+> [Prueba tu integración con Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/test-integration)
