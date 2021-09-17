@@ -156,20 +156,12 @@ Antes de activarlas, verifica si las credenciales utlizadas en tu integración s
 
 ---
 
-### Próximos pasos
+### Próximo paso
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON_REQUIRED_PT
 >
-> Integración avanzada
+> Configuración de preferencias
 >
-> Optimiza tu integración y mejora la gestión de tus ventas.
+> Configura los atributos de tus preferencias y adapta el Checkout Pro a tu modelo de negocio.
 >
-> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/advanced-integration)
-
-> RIGHT_BUTTON
->
-> Personalizaciones
->
-> Adapta el estilo de tu marca en la experiencia de compra de Checkout Pro.
->
-> [Prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/customizations)
+> [Configuración de preferencias](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations)
