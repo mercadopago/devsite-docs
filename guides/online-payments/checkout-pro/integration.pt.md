@@ -392,7 +392,7 @@ Confira o [exemplo completo de integração](http://github.com/mercadopago/check
 
 ---
 
-### Próximos passos
+### Próximo passo
 
 > LEFT_BUTTON_REQUIRED_PT
 >
