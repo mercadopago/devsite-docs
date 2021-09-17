@@ -70,7 +70,7 @@ Checkout Pro is an integration that allows you to **charge your customers throug
 
 ---
 
-### Next steps
+### Next step
 
 > LEFT_BUTTON_REQUIRED_EN
 >
