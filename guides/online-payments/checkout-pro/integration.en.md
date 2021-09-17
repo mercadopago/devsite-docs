@@ -326,9 +326,9 @@ curl -X POST \
 
 > NOTE
 >
-> Accept payments only from registered users
+> Adapt the Checkout Pro integration to your business
 >
-> Access the [Other features](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations/#bookmark_accept_payments_from_registered_users_only) section to know how to accept payments only from registered users, with cards and money in Mercado Pago account. 
+> Access the [Preferences Configuration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations) section to know more about preference attributes, responsible for adding new features to the Checkout Pro according to your business model.
 
 <span></span>
 
@@ -385,20 +385,12 @@ Check out the [full integration example](http://github.com/mercadopago/checkout-
 
 ---
 
-### Next steps
+### Next step
 
-> LEFT_BUTTON_RECOMMENDED_EN
+> LEFT_BUTTON_REQUIRED_EN
 >
-> Test your integration
+> Test your integration with Checkout Pro
 >
-> Check if everything is properly working in your integration using test users.
+> Check if everything is properly working in your integration with test users.
 >
 > [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/test-integration)
-
-> RIGHT_BUTTON_RECOMMENDED_EN
->
-> Accept payments by Mercado Pago wallet on your website
->
-> Set up your Checkout Pro to allow payments only from Mercado Pago registered users, with cards and available balance.
->
-> [Registered users](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations/#bookmark_accept_payments_from_registered_users_only)
