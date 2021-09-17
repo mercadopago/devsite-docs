@@ -6,7 +6,7 @@ A integracão com a solução Checkout Pro do Mercado Pago te permite cobrar atr
 >
 > Boas práticas
 >
-> Use o nosso [vídeo instrucional](#bookmark_tutorial_em_vídeo) e o [exemplo de implementação básica](#bookmark_exemplos_para_download) para entender e conhecer mais a fundo a integração completa com o Checkout Pro.
+> Use o nosso [vídeo tutorial](#bookmark_vídeo_tutorial) e o [exemplo de implementação básica](#bookmark_exemplos_para_download) para entender mais a fundo a integração completa com o Checkout Pro.
 
 ## Passo a passo
 
@@ -375,11 +375,11 @@ Você pode consultar outras maneiras de abrir o checkout na seção [Customizaç
 >
 > Importante
 >
-> Não esqueça de acessar o Checkout Pro com outro navegador ou encerrar a sessão da sua conta do Mercado Pago antes de testá-lo. Você não poderá pagar com a mesma conta responsável por criar o formulário de pagamento.<br/>
+> Não esqueça de acessar o Checkout Pro com outro navegador ou encerrar a sessão da sua conta do Mercado Pago antes de testá-lo, já que você não poderá pagar com a mesma conta responsável por criar o formulário de pagamento.
 
-## Tutorial em vídeo 
+## Vídeo tutorial 
 
-Implemente a solução Checkout Pro em seu *site* com o nosso vídeo instrucional sobre a integração:
+Implemente a solução Checkout Pro em seu *site* com o nosso vídeo tutorial sobre a integração completa:
 
 <div class="embed-container">
     <iframe width="1106" height="622" src="https://www.youtube.com/embed/anrwYq84RsU&ab" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
@@ -388,7 +388,7 @@ Implemente a solução Checkout Pro em seu *site* com o nosso vídeo instruciona
 
 ## Exemplo de implementação básica
 
-Confira o [exemplo completo de integração](http://github.com/mercadopago/checkout-payment-sample) no GitHub para PHP ou NodeJS para fazer o *download* de um projeto básico para a implementção rápida do Checkout Pro em seu *site*.
+Confira o [exemplo completo de integração](http://github.com/mercadopago/checkout-payment-sample) no GitHub para PHP ou NodeJS para fazer o *download* de um projeto básico de implementção rápida do Checkout Pro em seu *site*.
 
 ---
 
