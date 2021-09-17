@@ -1,23 +1,17 @@
 # Prueba tu integración
 
+**Los usuarios de prueba te permiten probar tu Checkout Pro** generando flujos de pagos en una copia exacta de tu integración.
 
-
-## Cómo probar mi integración
-
-**Los usuarios de prueba te permiten probar tu Checkout Pro** al generar flujos de pagos en una copia exacta de tu integración.
-
-| Tipos de usuarios | Descripción |
+| Tipo de usuarios de prueba | Descripción |
 | --- | --- |
-| Vendedor | Es la cuenta de prueba que usas para **configurar la aplicación y credenciales para el cobro**. |
-| Comprador | Es la cuenta de prueba que usas para **probar el proceso de compra.**<br/>Existen dos formas de hacer el pago:<br/><br/> **Como usuario invitado:** solo necesitas completar la dirección de correo electrónico.<br/>**Como usuario registrado:** accedes a la cuenta de Mercado Pago con el usuario y clave. En caso de tener disponible dinero en cuenta o tarjetas guardadas, estarán habilitadas como medios de pago. |
+| Vendedor | Es la cuenta que usas para **configurar la aplicación y credenciales para el cobro**. |
+| Comprador | Es la cuenta que usas para **probar el proceso de compra.**<br/><br/>Existen dos formas de hacer el pago: como **usuario invitado**, completando la dirección de correo electrónico deseado, y como **usuario registrado**, accedendo a una cuenta de Mercado Pago con usuario y clave. En este último escenario se habilitarán como medio de pago las tarjetas previamente guardadas y el saldo disponible en la cuenta. |
 
+## Crea usuarios de prueba
 
-## Cómo crear usuarios
-Para realizar las pruebas **es necesario que tengas como mínimo dos usuarios**: un comprador y un vendedor.
+Para realizar las pruebas **es necesario que tengas como mínimo dos usuarios**: un vendedor y un comprador.
 
 Ejecuta el siguiente curl para generar un usuario de prueba:
-
-### Solicitud
 
 ```curl
 curl -X POST \
@@ -26,8 +20,7 @@ curl -X POST \
 "https://api.mercadopago.com/users/test_user" \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
-
-### Respuesta
+La respuesta tendrá una estructura similar al ejemplo siguiente:
 
 ```json
 {
@@ -45,10 +38,7 @@ curl -X POST \
 >
 > * Puedes generar hasta 10 cuentas de usuarios de prueba en simultáneo. Por eso, te recomendamos guardar el _email_ y _password_ de cada uno.
 > * Los usuarios de prueba caducan luego de 60 días sin actividad en Mercado Pago.
-> * Para hacer pagos de prueba te recomendamos usar montos bajos.
 > * Tanto el comprador como el vendedor deben ser usuarios de prueba.
-> * Usa tarjetas de pruebas, ya que no es posible retirar el dinero.
-
 
 ## Prueba el flujo de pago
 
@@ -60,26 +50,29 @@ Genera una preferencia con las [credenciales]([FAKER][CREDENTIALS][URL]) del usu
 
 #### Comprar como usuario invitado
 
-Pruebas con tarjeta de crédito
-
 Al abrir el checkout creado con los datos de tu usuario vendedor:
 
-1. Selecciona _Tarjeta_ como medio de pago.
+1. Selecciona `Tarjeta` como medio de pago.
 2. Ingresa los datos de una [tarjeta de prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/test-integration#bookmark_tarjetas_de_prueba).
-3. Completa el e-mail ¡y listo!<br/><br/>
+3. Completa el e-mail deseado.
 
-#### Comprar como usuario registrado (con cuenta de Mercado Pago)
-
-Pruebas con tarjeta de crédito
+#### Comprar como usuario registrado 
 
 Al abrir el checkout creado con los datos de tu usuario vendedor:
 
-1. Inicia sesión en Mercado Pago con la cuenta de tu usuario de prueba comprador.
-2. Selecciona _Tarjeta_ como medio de pago.
-3. Elige una tarjeta guardada o completa los datos con una nueva ¡y listo!
+1. Inicia sesión en una cuenta Mercado Pago con el usuario de prueba comprador.
+2. Selecciona `Tarjeta` como medio de pago.
+3. Elige una tarjeta guardada o ingresa los datos de una [tarjeta de prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/test-integration#bookmark_tarjetas_de_prueba).
 
 
-## Tarjetas de prueba
+>WARNING
+>
+>Importante
+>
+> * Usa montos bajos para hacer pagos de prueba.
+> * Usa siempre tarjetas de pruebas, ya que no es posible retirar el dinero.
+
+### Tarjetas de prueba
 
 ----[mla]----
 
@@ -142,22 +135,24 @@ Al abrir el checkout creado con los datos de tu usuario vendedor:
 
 ------------
 
-Para **probar distintos resultados de pago**, completa el dato que quieras en el nombre del titular de la tarjeta:
+Para **probar distintos resultados de pago** con Checkout Pro, completa el estado deseado en el nombre del titular de la tarjeta:
 
-- APRO: Pago aprobado.
-- CONT: Pago pendiente.
-- OTHE: Rechazado por error general.
-- CALL: Rechazado con validación para autorizar.
-- FUND: Rechazado por monto insuficiente.
-- SECU: Rechazado por código de seguridad inválido.
-- EXPI: Rechazado por problema con la fecha de expiración.
-- FORM: Rechazado por error en formulario.
+| Estado de pago | Descripción |
+| --- | --- |
+| `APRO` | Pago aprobado |
+| `CONT` | Pago pendiente |
+| `OTHE` | Rechazado por error general |
+| `CALL` | Rechazado con validación para autorizar |
+| `FUND` | Rechazado por monto insuficiente | 
+| `SECU` | Rechazado por código de seguridad inválido | 
+| `EXPI` | Rechazado por problema con la fecha de expiración | 
+| `FORM` | Rechazado por error en formulario | 
 
-## Comenzar a recibir pagos
+## Reciba los pagos
 
 Para empezar a cobrar, debes [activar tus credenciales]([FAKER][CREDENTIALS][URL]).
 
-Al activarlas, verifica que las credenciales en tu integración sean las de la cuenta que reciba el dinero de las ventas.<br/>
+Antes de activarlas, verifica si las credenciales utlizadas en tu integración son las de la cuenta que debería recibir el dinero de las ventas.
 
 ---
 
@@ -175,6 +170,6 @@ Al activarlas, verifica que las credenciales en tu integración sean las de la c
 >
 > Personalizaciones
 >
-> Adapta el estilo de tu marca en la experiencia de compra.
+> Adapta el estilo de tu marca en la experiencia de compra de Checkout Pro.
 >
 > [Prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/customizations)
