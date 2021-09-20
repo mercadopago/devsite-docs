@@ -542,11 +542,11 @@ Por último, es importante que estés siempre informado sobre la creación de nu
 ----[mlc]----
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
-> Prueba tu integración
+> Referencias de API
 >
-> Revisa que esté todo bien en tu integración con los usuarios de prueba.
+> Encuentra toda la información necesaria para interactuar con nuestras APIs.
 >
-> [Pruebas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/testing)
+> [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference)
 ------------
 
 ----[mla, mlb, mlm, mlu, mpe, mco]----
