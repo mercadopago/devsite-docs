@@ -547,6 +547,17 @@ Por último, é importante que esteja sempre informado sobre a criação nos nov
 >
 > [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/testing)
 
+----[mlc]----
+> RIGHT_BUTTON_RECOMMENDED_PT
+>
+> Teste sua integração
+>
+> Revise que esteja tudo bem com sua integração com usuários de teste.
+>
+> [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/testing)
+------------
+
+----[mla, mlb, mlm, mlu, mpe, mco]----
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
 > Integrar outros meios de pagamento
@@ -554,3 +565,4 @@ Por último, é importante que esteja sempre informado sobre a criação nos nov
 > Conheça todas as opções de pagamentos disponíveis e como oferecê-las.
 >
 > [Integrar outros meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways)
+------------
