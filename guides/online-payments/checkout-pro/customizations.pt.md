@@ -1,12 +1,16 @@
 # Customizações
 
+Customize o Checkout Pro de acordo com o modelo do seu negócio para oferecer a melhor experiência de compra possível para os seus compradores.
+
 ## Abertura do Checkout Pro
 
-Você pode personalizar como abrir o checkout através de funções e atributos que podem ser adicionados à configuração no código de sua integração:
+Você pode personalizar como abrir o Checkout Pro por meio de funções e atributos a serem adicionados à configuração da sua integração. 
 
-### Sem botão de pagamento
+### Abrindo o Checkout Pro sem botão de pagamento
 
-Use o método `open` para abrir o checkout sem mostrar o botão de pagamento. Permite conectar ao elemento em seu site a partir do qual você prefere fazer a abertura do Checkout Pro.
+Use o método `open` para abrir o Checkout a partir de qualquer elemento desejado do seu _site_, sem necessariamente mostrar o botão de pagamento para os seus compradores. 
+
+Por exemplo:
 
 [[[
 ```html
@@ -18,26 +22,28 @@ const checkout = mp.checkout({
   }
 });
 </script>
-<!-- Chama a função ‘open' a partir do item da tua página que desejas  -->
+<!-- Chame a função ‘open' a partir do elemento de página desejado  -->
 <!-- Por exemplo: um radio button -->
 <input type="radio" id="checkout-open-radio" onclick="checkout.open()">
 ```
 ]]]
 
-### Com botão de pagamento
+### Abrindo o Checkout Pro com botão de pagamento
 
-Ao usar o método `render` um botão de pagamento é mostrado para abrir o Checkout Pro.</b> Para isso, você deve incluir os seguintes parâmetros:
+Use o método `render` para renderizar um botão de pagamento responsável por abrir o Checkout Pro no seu _site_ com os seguintes parâmetros:
 
 | Parâmetro | Tipo de dado | Descrição |
 | --- | --- | --- |
-| `container` | string | CSS Selector (identificador) do elemento onde se deseja mostrar o botão de pagamento. Permite definir o tipo de botão. |
-| `type` (opcional) | string | Permite definir o tipo de botão. Atualmente, só aceita o valor ’wallet’ que mostra um botão de pagamento com a marca do Mercado Pago. **Valor por padrão**: botão de pagamento simples. |
-| `label` (opcional) | string | Valor do texto do botão. **Por padrão**: “Pagar” |
+| `container` | `string` | CSS Selector (identificador) do elemento HTML onde se deseja mostrar o botão de pagamento. Permite definir o tipo de botão desejado. |
+| `type` (opcional) | `string` | Define o tipo de botão desejado. Atualmente, aceita apenas o valor ’wallet’, que mostra um botão de pagamento com a marca do Mercado Pago. |
+| `label` (opcional) | `string` | Texto renderizado no botão. Valor padrão: `Pagar`. |
 
-Você pode usar este método de duas maneiras diferentes:
+Você pode usar o método `render` de duas maneiras diferentes:
 
-* Incluindo a opção `render` com seus respectivos parâmetros dentro das opções de inicialização do checkout.
-* Invocando a função `render` posteriormente, do lugar que você preferir dentro de seu código, com seus respectivos parâmetros.
+- Incluindo a opção `render` com seus respectivos parâmetros dentro das opções de inicialização do checkout.
+- Invocando a função `render` posteriormente, do lugar que você preferir dentro de seu código, com seus respectivos parâmetros.
+
+Por exemplo:
 
 [[[
   ```javascript
@@ -60,17 +66,17 @@ checkout.render({
   ```
 ]]]
 
-#### Botão de pagamento padrão:
+#### Botão de pagamento padrão
 
 ![Default Label Button](/images/web-payment-checkout/default_label_button.png)<br/>
 
-#### Personalizado:
+#### Botão de pagamento personalizado
 
 ![Custom Label Button](/images/web-payment-checkout/custom_label_button.png)<br/><br/>
 
-### Abertura automática do Checkout Pro
+### Abrindo o Checkout Pro automaticamente
 
-Adicione o parâmetro `autoOpen` às suas opções de inicialização do checkout em sua integração para **exibir automaticamente o Checkout Pro**, sem precisar da interação com um botão ou outro elemento para sua abertura
+Adicione o parâmetro `autoOpen` nas opções de inicialização do Checkout para exibir automaticamente o Checkout Pro, sem precisar que seus compradores interajam com um botão ou qualquer outro elemento para a sua abertura:
 
 [[[
 ```javascript
@@ -84,23 +90,23 @@ const checkout = mp.checkout({
 ```
 ]]]
 
-## Esquema redirect
+## Esquema de abertura
 
-O Checkout Pro permite alterar seu esquema de abertura.
+O Checkout Pro permite que você altere o seu esquema de abertura padrão.
 
-Os esquemas disponíveis atualmente são:
+Atualmente, os esquemas disponíveis são:
 
-* **Redirect**: abre o Checkout Pro em uma nova janela.
-* **Modal**: abre o Checkout Pro no seu site.
+- **Redirect**: abre o Checkout Pro em uma nova janela.
+- **Modal**: abre o Checkout Pro em seu _site_.
 
 ![Checkout-redirect](/images/web-payment-checkout/checkout-redirect-pt.png)
 
-Para integrar o esquema de redirecionamento, substitua o botão de pagamento que você fez na integração básica por este novo e adicione o link do Web Checkout ao seu site no local em que deseja que ele apareça.
+Para integrar o esquema de redirecionamento à sua integração, substitua o botão de pagamento configurado na implementação básica e adicione o link do Web Checkout ao seu _site_ no local em que deseja que ele apareça, como mostra o exemplo abaixo:
 
 [[[
 ```php
 ===
-Redireciona ao 'init_point' da preferência
+O Checkout Pro será aberto no 'init_point' definido pela preferência
 ===
 <!doctype html>
 <html>
@@ -114,7 +120,7 @@ Redireciona ao 'init_point' da preferência
 ```
 ```node
 ===
-Redireciona ao 'init_point' da preferência
+O Checkout Pro será aberto no 'init_point' definido pela preferência
 ===
 <!doctype html>
 <html>
@@ -128,7 +134,7 @@ Redireciona ao 'init_point' da preferência
 ```
 ```java
 ===
-Redireciona ao 'init_point' da preferência
+O Checkout Pro será aberto no 'init_point' definido pela preferência
 ===
 <!doctype html>
 <html>
@@ -142,7 +148,7 @@ Redireciona ao 'init_point' da preferência
 ```
 ```ruby
 ===
-Redireciona ao 'init_point' da preferência
+O Checkout Pro será aberto no 'init_point' definido pela preferência
 ===
 <!doctype html>
 <html>
@@ -156,7 +162,7 @@ Redireciona ao 'init_point' da preferência
 ```
 ```csharp
 ===
-Redireciona ao 'init_point' da preferência
+O Checkout Pro será aberto no 'init_point' definido pela preferência
 ===
 <!doctype html>
 <html>
@@ -170,7 +176,7 @@ Redireciona ao 'init_point' da preferência
 ```
 ```python
 ===
-Redireciona ao 'init_point' da preferência
+O Checkout Pro será aberto no 'init_point' definido pela preferência
 ===
 <!doctype html>
 <html>
@@ -184,9 +190,9 @@ Redireciona ao 'init_point' da preferência
 ```
 ]]]
 
-## Cores do cabeçalho e elementos
+## Cores e elementos
 
-Adicione o atributo `theme` da seguinte maneira às opções de inicialização para personalizar a cor de alguns elementos e o cabeçalho da interface de checkout.
+Adicione o atributo `theme`, de acordo com o exemplo abaixo, nas opções de inicialização do Checkout Pro para customizar a cor do cabeçalho e dos seus elementos:
 
 [[[
 ```html
@@ -203,15 +209,17 @@ Adicione o atributo `theme` da seguinte maneira às opções de inicialização 
 ```
 ]]]
 
-> NOTE
+> WARNING
 >
-> Nota
+> Importante
 >
-> válido somente para o esquema modal.
+> A customização de cores e elementos é válida somente para o esquema de abertura **modal**.
 
-### Cabeçalho
+### Customizando o cabeçalho 
 
-Muda a cor do cabeçalho adicionando o atributo `headerColor` no objeto `theme`. O valor do atributo deve estar no formato hexadecimal. Por exemplo:
+Mude a cor do cabeçalho adicionando o atributo `headerColor` no objeto `theme`. Note que o valor do atributo deve estar no formato hexadecimal. 
+
+Por exemplo:
 
 [[[
 ```javascript
@@ -221,17 +229,18 @@ theme: {
 ```
 ]]]
 
-### Elementos
+### Customizando os elementos
 
-Os elementos que podem ser customizados são:
+Os elementos do Checkout Pro que podem ser customizados são:
 
-* Botões
-* Campos para inserir dados
-* Elementos de transição: spinners e barras de progresso
-* Bordas
+- Botões;
+- Campos de dados;
+- Elementos de transição, como spinners e barras de progresso;
+- Bordas.
 
-Você pode mudar a cor desses elementos adicionando o atributo `elementsColor` no objeto `theme`.
-O valor do atributo deve estar no formato hexadecimal. Por exemplo:
+Você pode mudar a cor desses elementos adicionando o atributo `elementsColor` no objeto `theme`. Note que o valor do atributo deve estar no formato hexadecimal. 
+
+Por exemplo:
 
 ```javascript
 theme: {
@@ -241,11 +250,11 @@ theme: {
 
 ![Custom-Component](/images/web-payment-checkout/custom_components-br.gif)
 
-#### Cores do texto
+#### Cor de textos
 
-A cor do texto dos botões e cabeçalho será determinada automaticamente dependendo do [contraste](https://24ways.org/2010/calculating-color-contrast) da cor definida.
+A cor do texto dos botões e do cabeçalho do Checkout Pro será determinada automaticamente dependendo do [contraste](https://24ways.org/2010/calculating-color-contrast) da cor definida para esses mesmos elementos.
 
-Para uma cor de elemento claro, a cor do texto será preta ou #000. Por exemplo:
+Elementos de cor clara terão a cor de seu texto em preto ou `#000`. Por exemplo:
 
 ```javascript
 theme: {
@@ -255,7 +264,7 @@ theme: {
 
 ![Light Color Button](/images/web-payment-checkout/light_color_button.png)
 
-Para uma cor de elemento escuro, a cor do texto será branca ou #fff. Por exemplo:
+Elementos de cor escura terão a cor de seu texto em branco ou `#fff`. Por exemplo:
 
 ```javascript
 theme: {
@@ -264,26 +273,3 @@ theme: {
 ```
 
 ![Dark Color Button](/images/web-payment-checkout/dark_color_button.png)
-
-> Esta documentação utiliza a nova versão da biblioteca. Para ver a versão anterior, vá para a [seção de Customizações antiga](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/v1/customizations).
-
----
-
-### Próximos passos
-
-
-> LEFT_BUTTON_RECOMMENDED_PT
->
-> Outras funcionalidades
->
-> Configure seus pagamentos e adapte o Checkout Pro ao seu negócio.
->
-> [Outras funcionalidades](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations)
-
-> RIGHT_BUTTON_RECOMMENDED_PT
->
-> Integração avançada
->
-> Otimize sua integração e melhore o gerenciamento de suas vendas.
->
-> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/advanced-integration)
