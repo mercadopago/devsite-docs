@@ -9,9 +9,9 @@ Se você oferece compras de valores altos, por exemplo, pode aceitar [pagamentos
 Se você oferece compras de valores altos, por exemplo, pode [excluir meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_atributos_para_a_preferência) indesejados para a sua operação.
 ------------
 
-As configurações dos atributos de preferência te permitem ainda [obter informações de negócio](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_saiba_mais_sobre_seu_negócio)e mensurar a efetividade das suas publicidades, bem como acompanhá-las integrando um [pixel do Facebook](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_associar_um_pixel_do_facebook) ou [associando seus anúncios do Google](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_associar_uma_tag_do_google_ads).
+As configurações dos atributos de preferência te permitem ainda [obter informações de negócio](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_trabalhe_com_metricas_de_negocio) e [mensurar a efetividade dos seus anúncios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_otimize_a_conversao_dos_seus_anuncios) em plataformas como Facebook e Google. 
 
-## Exemplo de uma preferência completa
+## Exemplo de preferência completa
 
 ----[mlm, mla, mlb, mlc, mlu, mpe]----
 
@@ -164,8 +164,8 @@ Por padrão, todos os meios de pagamento são oferecidos no Checkout Pro. Por me
 | Atributo de preferência | Descrição |
 | --- | --- |
 | `payment_methods` | Classe que descreve os atributos e métodos de meios de pagamento do Checkout Pro. |
-| `excluded_payment_types` | Método que exclui [meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods#bookmark_meios_de_pagamento_por_país) indesejados: cartão de crédito, ticket (boleto ou pagamento em lotérica), entre outros. |
-| `excluded_payment_methods` | Método que exclui bandeiras específicas dos [meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods#bookmark_meios_de_pagamento_por_país): Visa, Mastercard, American Express, entre outros. |
+| `excluded_payment_types` | Método que exclui [meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods#bookmark_meios_de_pagamento_por_país) indesejados, como cartão de crédito, ticket (boleto ou pagamento em lotérica), entre outros. |
+| `excluded_payment_methods` | Método que exclui bandeiras específicas dos [meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods#bookmark_meios_de_pagamento_por_país), como visa, Mastercard, American Express, entre outros. |
 | `installments` | Método que define o número máximo de parcelas a serem ofertadas. |
 | `purpose` | Ao indicar o valor "wallet_purchase" neste método, o Checkout Pro apenas aceitará pagamentos de usuários cadastrados no Mercado Pago, com cartão e saldo em conta. |
 
@@ -376,7 +376,7 @@ A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 >
 > Nota
 >
-> O prazo de creditação está entre 1 dia e 2 dias úteis de acordo com o meio de pagamento. Por isso, recomendamos que você defina a data de expiração com no mínimo 3 dias para garantir que o pagamento seja realizado.
+> O prazo de creditação está entre 1 dia e 2 dias úteis de acordo com o meio de pagamento escolhido. Por isso, recomendamos que você defina a data de expiração com no mínimo 3 dias de intervalo para garantir a realização do pagamento.
 
 Revise os [tempos de creditação por meio de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/_265) para executar a configuração corretamente.
 
@@ -411,7 +411,7 @@ Defina um período de validade para as suas preferências de pagamento a partir 
 
 Note que a data deve seguir o formato `ISO 8601: yyyy-MM-dd'T'HH:mm:ssz`.
 
-## Envie descrição do negócio na fatura do cartão
+## Envie descrição na fatura do cartão comprador
 
 Você pode adicionar uma descrição para o seu negócio através do atributo `statement_descriptor` das preferências de pagamento, como mostra o exemplo abaixo: 
 
@@ -419,7 +419,7 @@ Você pode adicionar uma descrição para o seu negócio através do atributo `s
 "statement_descriptor": "MEUNEGOCIO"
 ```
 
-Dependendo da bandeira do cartão, a descrição (valor do atributo) aparecerá na fatura do cartão do comprador e o mesmo poderá saber onde a compra foi efetuada. 
+Dependendo da bandeira do cartão, a descrição (valor do atributo) aparecerá na fatura do cartão do comprador. 
 
 ## Defina uma preferência para diversos itens
 
@@ -592,9 +592,9 @@ curl -X POST \
 
 Lembre-se de que o valor total da preferência será a soma do valor do preço unitário de cada item listado.
 
-## Mostre valor do envio separadamente
+## Mostre o valor do envio separadamente
 
-Se você já possui o envio estimado pelo seu site, pode definir o valor do mesmo e mostrá-lo separadamente do total no momento do pagamento. 
+Se você já possui o envio estimado pelo seu site, pode definir o valor do mesmo e mostrá-lo separadamente do valor total no momento do pagamento. 
 
 Para configurar tal cenário, adicione o item `shipments` com o valor que quiser cobrar no atributo `cost` e o valor `not_specified` no atributo `mode`:
 
@@ -631,7 +631,7 @@ Por isso, oferecemos a possibilidade de integrar o Checkout Pro com as plataform
 
 ### Integre o Checkout Pro com o Faceboook Ads
 
-Ao criar uma preferência, você pode associar um pixel (identificator) para acompanhamento das conversões do Facebook Ads da seguinte maneira:
+Ao criar uma preferência, você pode associá-la a um _pixel_ (identificator) para acompanhamento das conversões do Facebook Ads:
 
 [[[
 ```php
@@ -773,17 +773,17 @@ curl -X POST \
 ```
 ]]]
 
-Ao concluir a configuração, um evento `Purchase` será associado ao pixel especificado quando um pagamento encaminhado pelo seu anúncio for aprovado.
+Ao concluir a configuração, um evento `Purchase` será associado ao _pixel_ especificado quando um pagamento encaminhado pelo seu anúncio for aprovado.
 
 > NOTE
 >
 > Nota
 >
-> Por enquanto, só é possível configurar um único pixel. Teste o funcionamento da sua integração utilizando a extensão do Chrome Facebook Pixel Helper. Para mais informações, visite o [site oficial do Facebook](https://www.facebook.com/business/help/742478679120153?id=1205376682832142).
+> Por enquanto, só é possível configurar um único _pixel_ por preferência. Teste o funcionamento da sua integração utilizando a extensão do Chrome Facebook Pixel Helper. Para mais informações, visite o [site oficial do Facebook](https://www.facebook.com/business/help/742478679120153?id=1205376682832142).
 
 ### Integre o Checkout Pro com o Google Ads
 
-Ao criar uma preferência, você pode associar uma *tag* (identificador) para acompanhamento das conversões do Google Ads da seguinte maneira:
+Ao criar uma preferência, você pode associá-la a uma _tag_ (identificador) para acompanhamento das conversões do Google Ads:
 
 [[[
 ```php
@@ -932,19 +932,19 @@ curl -X POST \
 ```
 ]]]
 
-Ao concluir a configuração, uma conversão será associada à tag especificada quando um pagamento encaminhado pelo seu anúncio for aprovado.
+Ao concluir a configuração, uma conversão será associada à _tag_ especificada quando um pagamento encaminhado pelo seu anúncio for aprovado.
 
 > NOTE
 >
 > Nota
 >
-> Por enquanto, só é possível configurar uma única tag. Para mais informações sobre as tags de conversões do Google Ads, visite o [site oficial do Google](https://support.google.com/google-ads?hl=es-419#topic=7456157).
+> Por enquanto, só é possível configurar uma única _tag_ por preferência. Para mais informações sobre as tags de conversões do Google Ads, visite o [site oficial do Google](https://support.google.com/google-ads?hl=es-419#topic=7456157).
 
-## Trabalhe com métricas do seu negócio
+## Trabalhe com métricas de negócio
 
-Nossos membros certificados no [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) podem obter métricas de negócio a partir do Checkout Pro. 
+Nossos membros certificados no [Dev Program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) podem obter métricas de negócio a partir do Checkout Pro. 
 
-Utilize `headers` na sua preferência de pagamento, agregando o código de identificação de acordo com o cenário desejado (não é obrigatório completar os três campos mencionados abaixo): 
+Para trabalhar com métricas, utilize _headers_ na sua preferência de pagamento, agregando o código de identificação de acordo com o cenário desejado (não é obrigatório completar os três campos mencionados abaixo): 
 
 | _Header_ | Tipo de código | Identificador |
 | --- | --- | --- |
@@ -956,7 +956,7 @@ Utilize `headers` na sua preferência de pagamento, agregando o código de ident
 >
 > Nota
 >
-> Não deixe de adicionar o `integrator_id` em suas integrações para receber benefícios adicionais do programa. Você consegue encontrar seu `integrator_id` no seu [Dashboard de desenvolvedor](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel). 
+> Não deixe de adicionar o _header_ `integrator_id` em suas integrações para receber benefícios adicionais do programa. Você consegue encontrar seu `integrator_id` no seu [Dashboard de desenvolvedor](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel). 
 
 [[[
 ```php
