@@ -106,7 +106,7 @@ Para integrar o esquema de redirecionamento à sua integração, substitua o bot
 [[[
 ```php
 ===
-O Checkout Pro será aberto no 'init_point' definido pela preferência
+O Checkout Pro será aberto no <code>init_point</code> definido pela preferência
 ===
 <!doctype html>
 <html>
@@ -120,7 +120,7 @@ O Checkout Pro será aberto no 'init_point' definido pela preferência
 ```
 ```node
 ===
-O Checkout Pro será aberto no 'init_point' definido pela preferência
+O Checkout Pro será aberto no <code>init_point</code> definido pela preferência
 ===
 <!doctype html>
 <html>
@@ -134,7 +134,7 @@ O Checkout Pro será aberto no 'init_point' definido pela preferência
 ```
 ```java
 ===
-O Checkout Pro será aberto no 'init_point' definido pela preferência
+O Checkout Pro será aberto no <code>init_point</code> definido pela preferência
 ===
 <!doctype html>
 <html>
@@ -148,7 +148,7 @@ O Checkout Pro será aberto no 'init_point' definido pela preferência
 ```
 ```ruby
 ===
-O Checkout Pro será aberto no 'init_point' definido pela preferência
+O Checkout Pro será aberto no <code>init_point</code> definido pela preferência
 ===
 <!doctype html>
 <html>
@@ -162,7 +162,7 @@ O Checkout Pro será aberto no 'init_point' definido pela preferência
 ```
 ```csharp
 ===
-O Checkout Pro será aberto no 'init_point' definido pela preferência
+O Checkout Pro será aberto no <code>init_point</code> definido pela preferência
 ===
 <!doctype html>
 <html>
@@ -176,7 +176,7 @@ O Checkout Pro será aberto no 'init_point' definido pela preferência
 ```
 ```python
 ===
-O Checkout Pro será aberto no 'init_point' definido pela preferência
+O Checkout Pro será aberto no <code>init_point</code> definido pela preferência
 ===
 <!doctype html>
 <html>
@@ -190,7 +190,7 @@ O Checkout Pro será aberto no 'init_point' definido pela preferência
 ```
 ]]]
 
-## Cores e elementos
+## Estilo de cores
 
 Adicione o atributo `theme`, de acordo com o exemplo abaixo, nas opções de inicialização do Checkout Pro para customizar a cor do cabeçalho e dos seus elementos:
 
@@ -215,7 +215,7 @@ Adicione o atributo `theme`, de acordo com o exemplo abaixo, nas opções de ini
 >
 > A customização de cores e elementos é válida somente para o esquema de abertura **modal**.
 
-### Customizando o cabeçalho 
+### Cabeçalho 
 
 Mude a cor do cabeçalho adicionando o atributo `headerColor` no objeto `theme`. Note que o valor do atributo deve estar no formato hexadecimal. 
 
@@ -229,7 +229,7 @@ theme: {
 ```
 ]]]
 
-### Customizando os elementos
+### Elementos
 
 Os elementos do Checkout Pro que podem ser customizados são:
 
@@ -250,7 +250,7 @@ theme: {
 
 ![Custom-Component](/images/web-payment-checkout/custom_components-br.gif)
 
-#### Cor de textos
+#### Textos
 
 A cor do texto dos botões e do cabeçalho do Checkout Pro será determinada automaticamente dependendo do [contraste](https://24ways.org/2010/calculating-color-contrast) da cor definida para esses mesmos elementos.
 
