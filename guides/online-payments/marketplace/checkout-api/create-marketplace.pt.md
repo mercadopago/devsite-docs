@@ -18,7 +18,7 @@ Para começar, siga estes passos:
 
 ## Crie ou configure sua aplicação.
 
-[Primeiramente, você deve ter criado [sua aplicação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications/create-app) com um nome único que o identifique.
+Primeiramente, você deve ter criado [sua aplicação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications/create-app) com um nome único que o identifique.
 
 Depois, você terá que **configurar um Redirect URL para sua aplicação**. Para isso, vá para [Suas Aplicações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel), clique no menu de opções do sua aplicação e selecione Editar. 
 

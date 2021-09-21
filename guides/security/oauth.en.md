@@ -79,7 +79,8 @@ These are the parameters to include:
 
 | Parameter | Data to fill out |
 | ----------------- | ----------------- |
-| `client_secret` | This is your `ACCESS_TOKEN`. You can get it in [Your Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials). |
+| `client_secret` | Private key to be used in some plugins to generate payments. You can get it in [Your credentials]([FAKER][CREDENTIALS][URL]). |
+| `client_id` | Unique ID that identifies your integration. You can get it in [Your credentials]([FAKER][CREDENTIALS][URL]). |
 | `grant_type` | Specify type of operation to perform to get your credentials. This is a fixed parameter with an `authorization_code` value. |
 | `code` | The authorization code or `CODE` you get in your server for linking. It will be similar to this value: `TG-60357f5d0cd06d000740646d-643464554`. | 
 | `redirect_uri` | This is the URL you set up in the Redirect URL field in your application. |
@@ -89,7 +90,8 @@ curl -X POST \
      -H 'accept: application/json' \
      -H 'content-type: application/x-www-form-urlencoded' \
      'https://api.mercadopago.com/oauth/token' \
-     -d 'client_secret=ACCESS_TOKEN' \
+     -d 'client_secret=CLIENT_SECRET' \
+     -d 'client_ID=CLIENT_ID' \
      -d 'grant_type=authorization_code' \
      -d 'code=CODE' \
      -d 'redirect_uri=REDIRECT_URI'
@@ -135,14 +137,16 @@ curl -X POST \
      -H 'accept: application/json' \
      -H 'content-type: application/x-www-form-urlencoded' \
      'https://api.mercadopago.com/oauth/token' \
-     -d 'client_secret= ACCESS_TOKEN' \
+     -d 'client_secret=CLIENT_SECRET' \
+     -d 'client_id=CLIENT_ID' \
      -d 'grant_type=refresh_token' \
      -d 'refresh_token=USER_REFRESH_TOKEN'
 ```
 
 | Parameter | Description |
 | ----------------- | ----------------- |
-| `client_secret` | Use your `ACCESS_TOKEN`. |
+| `client_secret` | Use your `client_secret` key. |
+| `client_id` | Use your `client_id` credential. |
 | `grant_type` | Include `refresh_token` that remains unchanged. |
 | `refresh_token` | Value received with your seller's data. | 
 

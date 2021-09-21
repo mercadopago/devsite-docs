@@ -74,7 +74,8 @@ Los parámetros que debes incluir son:
 
 | Parámetro | Dato a completar |
 | ----------------- | ----------------- |
-| `client_secret` | Este es tu `ACCESS_TOKEN`. Puedes obtenerlo desde [Tus Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials). |
+| `client_secret` | Llave privada que se utiliza en algunos complementos para generar pagos. Puedes obtenerlo desde [Tus Credenciales]([FAKER][CREDENTIALS][URL]). |
+| `client_id` | ID único que identifica tu integración. |
 | `grant_type` | Indica el tipo de operación a realizar para obtener las credenciales. Este parámetro es fijo y lleva como valor `authorization_code`. |
 | `code` | El código de autorización o `CODE` que obtienes en tu servidor al realizar la vinculación. Deberá verse similar a este valor: `TG-60357f5d0cd06d000740646d-643464554`. | 
 | `redirect_uri` | Es la URL que configuraste en el campo Redirect URL en tu aplicación. |
@@ -84,7 +85,8 @@ curl -X POST \
      -H 'accept: application/json' \
      -H 'content-type: application/x-www-form-urlencoded' \
      'https://api.mercadopago.com/oauth/token' \
-     -d 'client_secret=ACCESS_TOKEN' \
+     -d 'client_secret=CLIENT_SECRET' \
+     -d 'client_ID=CLIENT_ID' \
      -d 'grant_type=authorization_code' \
      -d 'code=CODE' \
      -d 'redirect_uri=REDIRECT_URI'
@@ -131,14 +133,16 @@ curl -X POST \
      -H 'accept: application/json' \
      -H 'content-type: application/x-www-form-urlencoded' \
      'https://api.mercadopago.com/oauth/token' \
-     -d 'client_secret= ACCESS_TOKEN' \
+     -d 'client_secret=CLIENT_SECRET' \
+     -d 'client_id=CLIENT_ID' \
      -d 'grant_type=refresh_token' \
      -d 'refresh_token=USER_REFRESH_TOKEN'
 ```
 
 | Parámetro | Dato a completar |
 | ----------------- | ----------------- |
-| `client_secret` | Utiliza tu `ACCESS_TOKEN`. |
+| `client_secret` | Utiliza tu llave `client_secret`. |
+| `client_id` | Utiliza tu credencial `client_id`. |
 | `grant_type` | Incluye `refresh_token`, que no se modifica. |
 | `refresh_token` | Valor que recibiste junto con los datos del vendedor. | 
 
