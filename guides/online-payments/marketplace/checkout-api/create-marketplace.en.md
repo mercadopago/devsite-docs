@@ -124,6 +124,11 @@ Expected response:
     "scope": "offline_access payments write"
 }
 ```
+### Unlink accounts
+
+The unlinking of the token associated with the account is from the [Mercado Pago portal](https://www.mercadopago[FAKER][URL][DOMAIN]/account/security/applications/connections)in: Your profile> Security> Connected apps.
+
+
 
 ## 3. Integrate the API
 

@@ -129,6 +129,12 @@ Resposta esperada:
 }
 ```
 
+### Desvinculação a conta
+
+A desvinculação do token associado à conta é feita no [portal do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/account/security/applications/connections) em: Seu perfil> Segurança> Aplicativos conectados.
+
+
+
 ## 3. Integre a API para receber pagamentos
 
 Para receber pagamentos em nome de seus vendedores, você deve integrar a [API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction), gerando os pagamentos com o Access Token que você obteve vinculando cada vendedor ao seu aplicativo.
