@@ -710,7 +710,7 @@ We have released the new version 3.8.2 for Magento 2.
 
 Integrate Checkout API simpler and faster with the new CardForm functionality, which allows you to auto generate your business logics in your card payment form and improve compatibility with different browsers.
 
-[Go to MercadoPago.js V2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/receiving-payment-by-card)
+[Go to MercadoPago.js V2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card)
 
 > GIT
 >

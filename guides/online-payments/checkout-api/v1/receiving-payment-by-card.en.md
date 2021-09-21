@@ -33,7 +33,7 @@ Both for frontend and backend, we recommend [our libraries](https://www.mercadop
 >
 > New MercadoPago.js version
 >
-> Use MercadoPago.js V2 library to create your card form with CardForm functionality, which includes all business logic needed to make the payment.<br><br>[Integrate Checkout API with MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/receiving-payment-by-card)
+> Use MercadoPago.js V2 library to create your card form with CardForm functionality, which includes all business logic needed to make the payment.<br><br>[Integrate Checkout API with MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card)
 
 To create a payment, you should capture card data through the buyer's browser. For security reasons, **never store data in your servers**.
 
