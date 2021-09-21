@@ -17,7 +17,7 @@ Vas a sumar a cada cliente con el valor `customer` y a la tarjeta como `card`.
   MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
 
   $customer = new MercadoPago\Customer();
-  $customer->email = "test@test.com";
+  $customer->email = "test_payer_12345@testuser.com";
   $customer->save();
 
   $card = new MercadoPago\Card();
@@ -37,7 +37,7 @@ mercadopago.configure({
     access_token: 'ENV_ACCESS_TOKEN'
 });
 
-var customer_data = { "email": "test@test.com" }
+var customer_data = { "email": "test_payer_12345@testuser.com" }
 
 mercadopago.customers.create(customer_data).then(function (customer) {
 
@@ -102,7 +102,7 @@ MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
 
 var customerRequest = new CustomerRequest
 {
-    Email = "test@test.com",
+    Email = "test_payer_12345@testuser.com",
 };
 var customerClient = new CustomerClient();
 Customer customer = await customerClient.CreateAsync(customerRequest);
@@ -120,7 +120,7 @@ import mercadopago
 sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 
 customer_data = {
-  "email": "test@test.com"
+  "email": "test_payer_12345@testuser.com"
 }
 customer_response = sdk.customer().create(customer_data)
 customer = customer_response["response"]
@@ -150,7 +150,7 @@ curl -X POST \
 ```json
 {
     "id": "123456789-jxOV430go9fx2e",
-    "email": "test@test.com",
+    "email": "test_payer_12345@testuser.com",
     ...
     "default_card": "1490022319978",
     "default_address": null,
@@ -308,12 +308,6 @@ print(card)
 
 ```
 ```curl
-
-curl -X POST \
-  -H 'Content-Type: application/json' \
-  -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-  'https://api.mercadopago.com/v1/customers' \
-  -d '{"email": "test@test.com"}'
 
 curl -X POST \
   -H 'Content-Type: application/json' \
@@ -609,7 +603,7 @@ var request = new PaymentCreateRequest
     Payer = new PaymentPayerRequest
     {
         Type = "customer",
-        Email = "test_payer_99999999@testuser.com",
+        Email = "test_payer_12345@testuser.com",
     },
 };
 
@@ -678,7 +672,7 @@ Puedes buscar información sobre tu cliente si lo necesitas. Por ejemplo, en el 
 ```node
 
   var filters = {
-    email: "test@test.com"
+    email: "test_payer_12345@testuser.com"
   };
 
   mercadopago.customers.search({
@@ -691,7 +685,7 @@ Puedes buscar información sobre tu cliente si lo necesitas. Por ejemplo, en el 
 ```java
 
   Map<String, String> filters = new HashMap<>();
-  filters.put("email", "test@test.com");
+  filters.put("email", "test_payer_12345@testuser.com");
 
   ArrayList<Customer> customers = Customer.search(filters, false).resources();
 
@@ -699,7 +693,7 @@ Puedes buscar información sobre tu cliente si lo necesitas. Por ejemplo, en el 
 ```
 ```ruby
 
-customers_response = sdk.customer.search(filters: { email: 'test@test.com' })
+customers_response = sdk.customer.search(filters: { email: 'test_payer_12345@testuser.com' })
 customers = customers_response[:response]
 
 ```
@@ -709,7 +703,7 @@ var searchRequest = new SearchRequest
 {
     Filters = new Dictionary<string, object>
     {
-        ["email"] = "test@test.com",
+        ["email"] = "test_payer_12345@testuser.com",
     },
 };
 ResultsResourcesPage<Customer> results = await customerClient.SearchAsync(searchRequest);
@@ -719,7 +713,7 @@ IList<Customer> customers = results.Results;
 ```python
 
 filters = {
-    "email": "test@test.com"
+    "email": "test_payer_12345@testuser.com"
 }
 
 customers_response = sdk.customer().search(filters=filters)
@@ -732,7 +726,7 @@ curl -X GET \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   'https://api.mercadopago.com/v1/customers/search' \
   -d '{
-    "email": "test_user_19653727@testuser.com"
+    "email": "test_payer_12345@testuser.com"
 }'
 ```
 ]]]
@@ -766,7 +760,7 @@ curl -X GET \
             "default_address": null,
             "default_card": "1493990563105",
             "description": null,
-            "email": "test@test.com",
+            "email": "test_payer_12345@testuser.com",
             "first_name": null,
             "id": "123456789-jxOV430go9fx2e",
             "identification": {
@@ -901,7 +895,7 @@ mercadopago.configure({
 });
 
 var customer_data = { 
-  "email": "test@test.com",
+  "email": "test_payer_12345@testuser.com",
   "first_name": "john" ,
   "last_name": "wagner",
   "phone": {
@@ -1014,7 +1008,7 @@ var addressRequest = new AddressRequest
 
 var customerRequest = new CustomerRequest
 {
-    Email = "test@test.com",
+    Email = "test_payer_12345@testuser.com",
     FirstName = "john",
     LastName = "wagner",
     DefaultAddress = "Casa",
