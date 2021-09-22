@@ -6,22 +6,24 @@ Tenha em mãos os principais termos técnicos do fluxo da integração com o Che
 
 | Termo | Descrição |
 | --- | --- |
-| _Preferência (preference)_ | São as **informações do produto ou serviço que você quer oferecer.** Entre os atributos mais importantes de uma preferência estão a descrição, o valor e os itens. Ao gerá-la, você obtém uma URL para iniciar o fluxo de pagamento. |
-| _Credenciais (credentials)_ | Suas credenciais são as **chaves únicas que te fornecemos para que você possa configurar as suas integrações.** Existem dois tipos de credenciais: Public key e Access Token. <br/><br/>**Public key é a chave pública da aplicação** para saber os meios de pagamento e criptografar os dados do cartão, por exemplo. Você deve usá-la somente para as suas integrações.<br/><br/>**Access token é a chave privada da aplicação** para gerar pagamentos. Você deve usá-la somente para suas integrações.<br/><br/>Para encontrá-las, confira a [seção de Credenciais]([FAKER][CREDENTIALS][URL]) no Painel de desenvolvedor da sua conta Mercado Pago e selecione as produtivas. |
-| _Ponto de inicio (init_point)_ | É a **URL obtida na hora de gerar uma preferência** e que dá início ao fluxo de pagamento do Checkout Pro. |
-| _Item (item)_ | Faz referência ao **produto ou serviço que se quer oferecer**. Pode ser um ou uma lista. |
-| _Aplicação (application)_ | As aplicações são usadas para processar os pagamentos do vendedor. **Cada aplicação identifica uma integração específica**, pois cada uma possui credenciais próprias. Uma conta do Mercado Pago pode ter diversas aplicações.<br/><br/>Você pode encontrar as informações de cada uma na seção de [Credenciais]([FAKER][CREDENTIALS][URL]) no seu Painel de desenvolvedor. Ao entrar na seção, uma aplicação será criada automaticamente ou você poderá [criar uma manualmente](https://applications.mercadopago.com) sempre que precisar. |
+| Preferência (`preference`) | São as **informações do produto ou serviço que você quer oferecer.** Entre os atributos mais importantes de uma preferência estão a descrição, o valor e os itens. Ao gerá-la, você obtém uma URL para iniciar o fluxo de pagamento. |
+| Credenciais (`credentials`) | Suas credenciais são as **chaves únicas que te fornecemos para que você possa configurar as suas integrações.** Existem dois tipos de credenciais: Public key e Access Token. <br/><br/>**Public key é a chave pública da aplicação** para saber os meios de pagamento e criptografar os dados do cartão, por exemplo. Você deve usá-la somente para as suas integrações.<br/><br/>**Access token é a chave privada da aplicação** para gerar pagamentos. Você deve usá-la somente para suas integrações.<br/><br/>Para encontrá-las, confira a [seção de Credenciais]([FAKER][CREDENTIALS][URL]) no Painel de desenvolvedor da sua conta Mercado Pago e selecione as produtivas. |
+| Ponto de inicio (`init_point`) | É a **URL obtida na hora de gerar uma preferência** e que dá início ao fluxo de pagamento do Checkout Pro. |
+| Item (`item`) | Faz referência ao **produto ou serviço que se quer oferecer**. Pode ser um ou uma lista. |
+| Aplicação (`application`) | As aplicações são usadas para processar os pagamentos do vendedor. **Cada aplicação identifica uma integração específica**, pois cada uma possui credenciais próprias. Uma conta do Mercado Pago pode ter diversas aplicações.<br/><br/>Você pode encontrar as informações de cada uma na seção de [Credenciais]([FAKER][CREDENTIALS][URL]) no seu Painel de desenvolvedor. Ao entrar na seção, uma aplicação será criada automaticamente ou você poderá [criar uma manualmente](https://applications.mercadopago.com) sempre que precisar. |
 
 ## Pré-requisitos
 
 Siga os seguintes passos antes de começar a sua integração:
 
 ### 1. Acesse uma conta
+
 Para poder começar a integração, é necessário ter uma conta do Mercado Pago ou do Mercado Livre.
 
 Você pode [entrar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/previous-requirements) em uma conta já existente ou [criar uma nova conta](https://www.mercadopago[FAKER][URL][DOMAIN]) do zero.
 
 ### 2. Instale o SDK do Mercado Pago
+
 Instale o SDK oficial do Mercado Pago para simplificar a integração com as nossas APIs.
 
 [[[
@@ -76,6 +78,10 @@ As credenciais são chaves únicas que te fornecemos para que você possa config
 
 Para encontrá-las, veja a [seção de Credenciais]([FAKER][CREDENTIALS][URL]) no seu Painel de desenvolvedor.
 
+> Note
+>
+> Nota
+> 
 > Ainda tem dúvidas sobre? Leia a nossa documentação de [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) para mais informações. 
 
 ---
