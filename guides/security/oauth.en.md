@@ -53,7 +53,7 @@ https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&resp
 When entering this URL, the seller will be redirected to Mercado Pago to log in their account and authorize the link to your application.
 
 ----[mla, mlm, mlc, mco, mpe, mlu]----
-![FlujoOAuth-es](/images/oauth/oauth-es.png)
+![FlujoOAuth-es](/images/oauth/oauth-es-v2.png)
 ------------
 ----[mlb]----
 ![FlujoOAuth-pt](/images/oauth/oauth-pt.png)

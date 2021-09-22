@@ -26,7 +26,7 @@ No campo Redirect URL, adicione o endereço ao qual você quer encaminhar os ven
 
 Finalmente, você deve obter a ID do sua aplicação em [Suas Integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
 
-## 2. Vincule seu aplicação à conta de seus vendedores.
+## Vincule seu aplicação à conta de seus vendedores.
 
 Para operar em nome dos seus vendedores através de suas contas do Mercado Pago, primeiramente, você deve solicitar sua autorização. Para gerenciar mais de uma conta do Mercado Pago ao mesmo tempo em sua integração, é possível fazê-lo através do OAuth, um um protocolo de autenticação que permite ao vendedor acessar sua conta do Mercado Pago, realizar a autenticação  e habilitar seu aplicativo para funcionar utilizando seu nome.
 
@@ -70,7 +70,8 @@ Os parâmetros que você deve incluir são:
 
 | Parâmetro | Dado a preencher |
 | ----------------- | ----------------- |
-| `client_secret` | Esse é seu `ACCESS_TOKEN`. Você pode obtê-lo em [Suas Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials). |
+| `client_secret` | Chave privada para ser utilizada em alguns plugins para gerar pagamentos. Você pode obtê-lo em [Suas Credenciais]([FAKER][CREDENTIALS][URL]). |
+| `client_id` | ID único que identifica sua integração. Você pode obtê-lo em [Suas Credenciais]([FAKER][CREDENTIALS][URL]). |
 | `grant_type` | Diz respeito ao tipo de operação a ser realizada para obter as credenciais. Este parâmetro é fixo e seu valor é `authorization_code`. |
 | `code` | O código de autorização ou `CODE` que você obtém em seu servidor ao realizar a vinculação. Será similar a este valor: `TG-60357f5d0cd06d000740646d-643464554`. | 
 | `redirect_uri` | É a URL que você configurou no campo Redirect URL em sua aplicação.|
@@ -80,11 +81,13 @@ curl -X POST \
      -H 'accept: application/json' \
      -H 'content-type: application/x-www-form-urlencoded' \
      'https://api.mercadopago.com/oauth/token' \
-     -d 'client_secret=ACCESS_TOKEN' \
+     -d 'client_secret=CLIENT_SECRET' \
+     -d 'client_ID=CLIENT_ID' \
      -d 'grant_type=authorization_code' \
      -d 'code=CODE' \
      -d 'redirect_uri=REDIRECT_URI'
 ```
+
 
 Na resposta você vai obter o `access_token` do vendedor vinculado. 
 
@@ -127,14 +130,16 @@ curl -X POST \
      -H 'accept: application/json' \
      -H 'content-type: application/x-www-form-urlencoded' \
      'https://api.mercadopago.com/oauth/token' \
-     -d 'client_secret= ACCESS_TOKEN' \
+     -d 'client_secret=CLIENT_SECRET' \
+     -d 'client_id=CLIENT_ID' \
      -d 'grant_type=refresh_token' \
      -d 'refresh_token=USER_REFRESH_TOKEN'
 ```
 
 | Parâmetro | Descrição |
 | ----------------- | ----------------- |
-| `client_secret` | Utilize seu `ACCESS_TOKEN`. |
+| `client_secret` | Utilize seu `client_secret`. |
+| `client_id` | Utilize seu `client_id`. |
 | `grant_type` | Inclua `refresh_token`, que não sofre alterações. |
 | `refresh_token` | Valor que você recebeu junto com os dados do vendedor. | 
 

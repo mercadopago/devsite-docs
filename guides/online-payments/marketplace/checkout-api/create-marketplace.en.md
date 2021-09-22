@@ -35,6 +35,29 @@ This is the example URL you can use. You will also find the details of parameter
 ```url
 https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com
 
+```
+| Parameter | Data to fill out |
+| ----------------- | ----------------- |
+| `client_id` | Replace `APP_ID` value with your application ID. |
+| `state` | Identify who the code to be received belongs to; so replace `RANDOM_ID` value with a unique ID for each attempt without sensitive data. |
+| `redirect_uri` | Add the URL you entered in the Redirect URL field when you set up your application. | 
+
+When entering this URL, the seller will be redirected to Mercado Pago to log in their account and authorize the link to your application.
+
+----[mla, mlm, mlc, mco, mpe, mlu]----
+![FlujoOAuth-es](/images/oauth/oauth-es-v2.png)
+------------
+----[mlb]----
+![FlujoOAuth-pt](/images/oauth/oauth-pt.png)
+------------
+
+Once the seller has authorized your application to link with their Mercado Pago account, you will receive an authorization code in the specified Redirect URL. It will appear like this: 
+
+```url
+https://www.redirect-url.com?code=CODE&state=RANDOM_ID
+```
+> Please note that the `code` value lasts for 10 minutes.
+
 > SERVER_SIDE
 >
 > h2
@@ -47,7 +70,8 @@ These are the parameters to include:
 
 | Parameter | Data to fill out |
 | ----------------- | ----------------- |
-| `client_secret` | This is your `ACCESS_TOKEN`. You can get it in [Your Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials). |
+| `client_secret` | Private key to be used in some plugins to generate payments. You can get it in [Your credentials]([FAKER][CREDENTIALS][URL]). |
+| `client_id` | Unique ID that identifies your integration. You can get it in [Your credentials]([FAKER][CREDENTIALS][URL]). |
 | `grant_type` | Specify type of operation to perform to get your credentials. This is a fixed parameter with an `authorization_code` value. |
 | `code` | The authorization code or `CODE` you get in your server for linking. It will be similar to this value: `TG-60357f5d0cd06d000740646d-643464554`. | 
 | `redirect_uri` | This is the URL you set up in the Redirect URL field in your application. |
@@ -57,7 +81,8 @@ curl -X POST \
      -H 'accept: application/json' \
      -H 'content-type: application/x-www-form-urlencoded' \
      'https://api.mercadopago.com/oauth/token' \
-     -d 'client_secret=ACCESS_TOKEN' \
+     -d 'client_secret=CLIENT_SECRET' \
+     -d 'client_ID=CLIENT_ID' \
      -d 'grant_type=authorization_code' \
      -d 'code=CODE' \
      -d 'redirect_uri=REDIRECT_URI'
@@ -103,14 +128,16 @@ curl -X POST \
      -H 'accept: application/json' \
      -H 'content-type: application/x-www-form-urlencoded' \
      'https://api.mercadopago.com/oauth/token' \
-     -d 'client_secret= ACCESS_TOKEN' \
+     -d 'client_secret=CLIENT_SECRET' \
+     -d 'client_id=CLIENT_ID' \
      -d 'grant_type=refresh_token' \
      -d 'refresh_token=USER_REFRESH_TOKEN'
 ```
 
 | Parameter | Description |
 | ----------------- | ----------------- |
-| `client_secret` | Use your `ACCESS_TOKEN`. |
+| `client_secret` | Use your `client_secret` key. |
+| `client_id` | Use your `client_id` credential. |
 | `grant_type` | Include `refresh_token` that remains unchanged. |
 | `refresh_token` | Value received with your seller's data. | 
 
