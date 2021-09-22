@@ -1,6 +1,6 @@
 # What's Checkout Pro?
 
-Checkout Pro is an integration that allows you to **charge your customers through our web form from any device in a simple, fast and secure way.**
+Checkout Pro is an integration that allows you to **charge your customers through our web form from any device in a simple, fast, and secure way.**
 
 ----[mla]----
 ![Basic-Checkout](/images/web-payment-checkout/cho-modal-mobile.png)
@@ -34,10 +34,10 @@ Checkout Pro is an integration that allows you to **charge your customers throug
 ------------
 
 * **Tailored shopping experience** accessible across devices.
-* **One-click purchases**: When paying with a Mercado Pago account, user information and cards can be saved, allowing payments that only requires a security code or money in your account.
+* **One-click purchases**: When paying with a Mercado Pago account, user information and cards can be saved, allowing payments that only require a security code or money in your account.
 * **Guest purchases**: Having a Mercado Pago account is not a requirement for users to make a payment.
 ----[mla, mlb]----
-* **Split payments** with two cards. Useful feature in scenarios with high amount transactions, for example.
+* **Split payments** with two cards. A useful feature in scenarios with high amount transactions, for example.
 ------------
 
 ## Checkout Pro vs. other Mercado Pago solutions
@@ -76,7 +76,7 @@ Checkout Pro is an integration that allows you to **charge your customers throug
 >
 > Integration requirements
 >
-> To integrate with Checkout Pro, you must meet some necessary requirements.
+> To integrate with Checkout Pro, you must meet some requirements.
 >
 > [Integrations requirements](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/previous-requirements)
 >
