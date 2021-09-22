@@ -127,9 +127,9 @@ Respuesta esperada:
     "scope": "offline_access payments write"
 }
 ```
-### Desvincular cuentas
+### Desvincula cuentas
 
-La desvinculación del token asociado a la cuenta es desde el [portal de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/account/security/applications/connections) en: Tu perfil > Seguridad > Apps conectadas.
+Para desvincular el token asociado a tu cuenta, debes hacerlodesde el [portal de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/account/security/applications/connections) ingresando a **Tu perfil > Seguridad > Apps conectadas**.
 
 
 ## 3. Integra la API para recibir pagos

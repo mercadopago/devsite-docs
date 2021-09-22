@@ -126,7 +126,7 @@ Expected response:
 ```
 ### Unlink accounts
 
-The unlinking of the token associated with the account is from the [Mercado Pago portal](https://www.mercadopago[FAKER][URL][DOMAIN]/account/security/applications/connections)in: Your profile> Security> Connected apps.
+To unlink a token associated with your account, you can do it from the [Mercado Pago portal](https://www.mercadopago[FAKER][URL][DOMAIN]/account/security/applications/connections) and at **Your profile> Security> Connected apps**.
 
 
 

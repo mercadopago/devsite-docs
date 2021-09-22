@@ -129,9 +129,9 @@ Resposta esperada:
 }
 ```
 
-### Desvinculação a conta
+### Desvincule uma conta
 
-A desvinculação do token associado à conta é feita no [portal do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/account/security/applications/connections) em: Seu perfil> Segurança> Aplicativos conectados.
+Para desvincular o token associado à sua conta, você deve fazer isso no [portal do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/account/security/applications/connections) em **Seu perfil> Segurança> Aplicativos conectados**.
 
 
 
