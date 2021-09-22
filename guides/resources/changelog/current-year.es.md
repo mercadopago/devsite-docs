@@ -5,6 +5,43 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 ---
 ## Septiembre 2021
 
+### 13 de Septiembre
+
+> CHANGELOG
+>
+> Nueva versión Magento 2
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: MAGENTO 2
+
+Lanzamos la nueva versión 3.10.1 para Magento 2.
+
+[Ir a documentación de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-magento2/releases/tag/v3.10.1).
+
+### 10 de septiembre
+
+> CHANGELOG
+>
+> Nueva versión SDK Java
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK JAVA
+Lanzamos una nueva versión de la SDK Java 1.10.2.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-java/releases).
+
 ### 2 de septiembre
 
 ----[mlc]----

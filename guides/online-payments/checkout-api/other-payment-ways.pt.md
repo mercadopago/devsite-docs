@@ -51,7 +51,8 @@ Consulte os meios de pagamento disponíveis sempre que necessite.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -127,15 +128,15 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
         "additional_info_needed": []
     },
     {
-       "id": "pix",
-       "name": "PIX",
-       "payment_type_id": "bank_transfer",
-       "status": "active",
-       "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
-       "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
-       "deferred_capture": "does_not_apply",
-       "settings": [],
-       "additional_info_needed": []
+        "id": "pix",
+        "name": "PIX",
+        "payment_type_id": "bank_transfer",
+        "status": "active",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
+        "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
+        "deferred_capture": "does_not_apply",
+        "settings": [],
+        "additional_info_needed": []
     },
     {
         "...": "..."
@@ -187,15 +188,15 @@ Adicione o seguinte formulário com os estilos que quiser.
     <div>
     <div>
         <label for="payerFirstName">Nome</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Sobrenome</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Tipo de documento</label>
@@ -568,7 +569,8 @@ Consulte os meios de pagamento disponíveis sempre que necessite.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -777,15 +779,15 @@ Adicione o seguinte formulário com os estilos que quiser.
     <div>
     <div>
         <label for="payerFirstName">Nome</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Sobrenome</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Tipo de documento</label>
@@ -1064,7 +1066,8 @@ Consulte os meios de pagamento disponíveis sempre que necessite.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -1204,15 +1207,15 @@ Adicione o seguinte formulário com os estilos que quiser.
     <div>
     <div>
         <label for="payerFirstName">Nome</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Sobrenome</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Tipo de documento</label>
@@ -1520,7 +1523,8 @@ Consulte os meios de pagamento disponíveis sempre que necessite.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -1678,15 +1682,15 @@ Adicione o seguinte formulário com os estilos que quiser.
     <div>
     <div>
         <label for="payerFirstName">Nome</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Sobrenome</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Tipo de documento</label>
@@ -2242,7 +2246,8 @@ Consulte os meios de pagamento disponíveis sempre que necessite.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -2385,15 +2390,15 @@ Adicione o seguinte formulário com os estilos que quiser.
     <div>
     <div>
         <label for="payerFirstName">Nome</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Sobrenome</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Tipo de documento</label>
@@ -2898,7 +2903,8 @@ Consulte os meios de pagamento disponíveis sempre que necessite.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -3016,15 +3022,15 @@ Adicione o seguinte formulário com os estilos que quiser.
     <div>
     <div>
         <label for="payerFirstName">Nome</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Sobrenome</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Tipo de documento</label>
@@ -3341,7 +3347,8 @@ Consulte os meios de pagamento disponíveis sempre que necessite.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -3417,15 +3424,15 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
         "additional_info_needed": []
     },
     {
-     "id": "pix",
-       "name": "PIX",
-       "payment_type_id": "bank_transfer",
-       "status": "active",
-       "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
-       "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
+        "id": "pix",
+        "name": "PIX",
+        "payment_type_id": "bank_transfer",
+        "status": "active",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
+        "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
         "deferred_capture": "does_not_apply",
-       "settings": [],
-       "additional_info_needed": []
+        "settings": [],
+        "additional_info_needed": []
     },
     {
         "...": "..."
@@ -3477,15 +3484,15 @@ Adicione o seguinte formulário com os estilos que quiser.
     <div>
     <div>
         <label for="payerFirstName">Nome</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Sobrenome</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Tipo de documento</label>
@@ -3493,14 +3500,14 @@ Adicione o seguinte formulário com os estilos que quiser.
       </div>
       <div>
         <label for="docNumber">Número do documento</label>
-        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
+        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text">
       </div>
     </div>
 
     <div>
       <div>
-        <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
-        <input type="hidden" name="productDescription" id="productDescription" value="Nome do Produto" />
+        <input type="hidden" name="transactionAmount" id="transactionAmount" value="100">
+        <input type="hidden" name="productDescription" id="productDescription" value="Nome do Produto">
         <br>
         <button type="submit">Pagar</button>
         <br>
@@ -3575,7 +3582,7 @@ function createSelectOptions(elem, options, labelsAndKeys = { label : "name", va
 >
 > Receber pagamentos com boleto bancário ou em lotéricas
 
-Após [capturar os dados](#bookmark_capture_os_dados_para_pagamento) com o formulário, con el formulario, para receber pagamentos em boleto ou pagamento em lotérica envie o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
+Após [capturar os dados](#bookmark_capture_os_dados_para_pagamento) com o formulário, para receber pagamentos em boleto ou pagamento em lotérica envie o e-mail e documento do seu cliente e a método de pagamento e detalhe do valor.
 
 Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs.
 
@@ -4064,6 +4071,7 @@ curl -X POST \
 
 A resposta mostrará o status pendente do pagamento e todas as informações que você precisa para mostrar ao comprador.
 
+> WARNING
 >
 > Importante
 >

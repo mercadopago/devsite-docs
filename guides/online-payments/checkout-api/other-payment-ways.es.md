@@ -50,7 +50,8 @@ Puedes consultar los medios de pago disponibles siempre que lo necesites.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -175,15 +176,15 @@ Agrega el siguiente formulario con los estilos que desees.
     <div>
     <div>
         <label for="payerFirstName">Nombre</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Apellido</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Tipo de documento</label>
@@ -558,7 +559,8 @@ Puedes consultar los medios de pago disponibles siempre que lo necesites.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -767,15 +769,15 @@ Agrega el siguiente formulario con los estilos que desees.
     <div>
     <div>
         <label for="payerFirstName">Nombre</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Apellido</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Tipo de documento</label>
@@ -1053,7 +1055,8 @@ Puedes consultar los medios de pago disponibles siempre que lo necesites.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -1194,15 +1197,15 @@ Agrega el siguiente formulario con los estilos que desees.
     <div>
     <div>
         <label for="payerFirstName">Nombre</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Apellido</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Tipo de documento</label>
@@ -1512,7 +1515,8 @@ Puedes consultar los medios de pago disponibles siempre que lo necesites.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -1670,15 +1674,15 @@ Agrega el siguiente formulario con los estilos que desees.
     <div>
     <div>
         <label for="payerFirstName">Nombre</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Apellido</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Tipo de documento</label>
@@ -2233,7 +2237,8 @@ Puedes consultar los medios de pago disponibles siempre que lo necesites.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -2376,15 +2381,15 @@ Agrega el siguiente formulario con los estilos que desees.
     <div>
     <div>
         <label for="payerFirstName">Nombre</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Apellido</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Tipo de documento</label>
@@ -2685,7 +2690,7 @@ email: 'test_user_15748052@testuser.com',
 entity_type: "individual"
 },
 transaction_details: {
-financial_institution: 1234
+financial_institution: "1234"
 },
 additional_info: {
 ip_address: "127.0.0.1"
@@ -2889,7 +2894,8 @@ Puedes consultar los medios de pago disponibles siempre que lo necesites.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -3007,15 +3013,15 @@ Agrega el siguiente formulario con los estilos que desees.
     <div>
     <div>
         <label for="payerFirstName">Nombre</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Apellido</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Tipo de documento</label>
@@ -3332,7 +3338,8 @@ Puedes consultar los medios de pago disponibles siempre que lo necesites.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -3408,15 +3415,15 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
         "additional_info_needed": []
     },
     {
-     "id": "pix",
-       "name": "PIX",
-       "payment_type_id": "bank_transfer",
-       "status": "active",
-       "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
-       "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
-       "deferred_capture": "does_not_apply",
-       "settings": [],
-       "additional_info_needed": []
+        "id": "pix",
+        "name": "PIX",
+        "payment_type_id": "bank_transfer",
+        "status": "active",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
+        "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
+        "deferred_capture": "does_not_apply",
+        "settings": [],
+        "additional_info_needed": []
     },
     {
         "...": "..."
@@ -3468,15 +3475,15 @@ Agrega el siguiente formulario con los estilos que desees.
     <div>
     <div>
         <label for="payerFirstName">Nombre</label>
-        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome"></select>
+        <input id="payerFirstName" name="payerFirstName" type="text" value="Nome">
       </div>
       <div>
         <label for="payerLastName">Apellido</label>
-        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome"></select>
+        <input id="payerLastName" name="payerLastName" type="text" value="Sobrenome">
       </div>
       <div>
         <label for="payerEmail">E-mail</label>
-        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com"></select>
+        <input id="payerEmail" name="payerEmail" type="text" value="test@test.com">
       </div>
       <div>
         <label for="docType">Tipo de documento</label>
@@ -3484,14 +3491,14 @@ Agrega el siguiente formulario con los estilos que desees.
       </div>
       <div>
         <label for="docNumber">Número de documento</label>
-        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
+        <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text">
       </div>
     </div>
 
     <div>
       <div>
-        <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
-        <input type="hidden" name="productDescription" id="productDescription" value="Nombre del Producto" />
+        <input type="hidden" name="transactionAmount" id="transactionAmount" value="100">
+        <input type="hidden" name="productDescription" id="productDescription" value="Nombre del Producto">
         <br>
         <button type="submit">Pagar</button>
         <br>
