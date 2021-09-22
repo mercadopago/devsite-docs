@@ -303,6 +303,16 @@ Atributos
 | `payer_email` | E-mail do pagador. |
 | `card_token_id` | Se a assinatura já foi autorizada, as informações do cartão serão convertidas em um token para enviar os dados com segurança. |
 
+### Search de preapprovals
+
+Esta chamada permite que você encontre todas as assinaturas (preapprovals) asociadas a um plano de assinatura.
+
+```curl 
+curl --location --request GET 'https://api.mercadopago.com/preapproval/search?caller.id=813642410&sort=date_created:desc&limit=55&status=authorized,paused,cancelled&offset=0&payerId=999888777' \
+--header 'X-Caller-Scopes: admin' \
+--header 'cache-control: no-cache' \
+--header 'x-auth-token: 2e79522a9eac0ecc68c4b00443cf617e5309984023442sdfdsfb81b3e96ad541acb2f7bc'
+```
 
 ------------
 ### Próximos passos

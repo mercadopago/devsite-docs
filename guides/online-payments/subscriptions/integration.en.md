@@ -306,6 +306,17 @@ Attributes
 | `card_token_id` | If the subscription was already authorized, the information on the card will be converted into a token to send the data securely. |
 
 
+### Search of preapprovals
+
+This call allows you to obtain all subscriptions (pre-approvals) associated with a subscription plan.
+
+```curl 
+curl --location --request GET 'https://api.mercadopago.com/preapproval/search?caller.id=813642410&sort=date_created:desc&limit=55&status=authorized,paused,cancelled&offset=0&payerId=999888777' \
+--header 'X-Caller-Scopes: admin' \
+--header 'cache-control: no-cache' \
+--header 'x-auth-token: 2e79522a9eac0ecc68c4b00443cf617e5309984023442sdfdsfb81b3e96ad541acb2f7bc'
+```
+
 ------------
 ### Next steps
 

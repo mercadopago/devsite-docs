@@ -311,7 +311,7 @@ Atributos
 
 ### Search de preapprovals
 
-Este llamado permite obtener todas las suscripciones (preapprovals) asociados a un plan de suscripción.
+Este llamado permite obtener todas las suscripciones (preapprovals) asociadas a un plan de suscripción.
 
 ```curl 
 curl --location --request GET 'https://api.mercadopago.com/preapproval/search?caller.id=813642410&sort=date_created:desc&limit=55&status=authorized,paused,cancelled&offset=0&payerId=999888777' \
