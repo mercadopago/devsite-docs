@@ -165,7 +165,7 @@ Por padrão, todos os meios de pagamento são oferecidos no Checkout Pro. Por me
 | --- | --- |
 | `payment_methods` | Classe que descreve os atributos e métodos de meios de pagamento do Checkout Pro. |
 | `excluded_payment_types` | Método que exclui [meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods#bookmark_meios_de_pagamento_por_país) indesejados, como cartão de crédito, ticket (boleto ou pagamento em lotérica), entre outros. |
-| `excluded_payment_methods` | Método que exclui bandeiras específicas dos [meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods#bookmark_meios_de_pagamento_por_país), como visa, Mastercard, American Express, entre outros. |
+| `excluded_payment_methods` | Método que exclui bandeiras específicas de cartões de crédito e débito, como Visa, Mastercard, American Express, entre outros. |
 | `installments` | Método que define o número máximo de parcelas a serem ofertadas. |
 | `purpose` | Ao indicar o valor "wallet_purchase" neste método, o Checkout Pro apenas aceitará pagamentos de usuários cadastrados no Mercado Pago, com cartão e saldo em conta. |
 
@@ -592,7 +592,7 @@ curl -X POST \
 
 Lembre-se de que o valor total da preferência será a soma do valor do preço unitário de cada item listado.
 
-## Mostre o valor do envio separadamente
+## Mostre o valor do envio 
 
 Se você já possui o envio estimado pelo seu site, pode definir o valor do mesmo e mostrá-lo separadamente do valor total no momento do pagamento. 
 
@@ -1040,9 +1040,8 @@ curl -X POST \
 ```
 ]]]
 
+-------------
 
-------------
----
 ### Próximo passo
 
 > LEFT_BUTTON_REQUIRED_PT
