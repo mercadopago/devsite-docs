@@ -34,9 +34,7 @@ Para poder integrar suscripciones, es necesario que conozcas cuatro conceptos cl
 
 En el siguiente gráfico muestra cómo actúa la fecha de facturación y el eventual cobro del monto proporcional (prorrateo) al suscriptor.
 
-----[mla, mlm, mpe, mco, mlu, mlc]----
 ![Basic-subscriptions](/images/subscriptions/linea-cobro-ES.png)
-------------
 
 ------------
 ### Próximos pasos
