@@ -55,6 +55,8 @@ curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPRO
 }'
 ```
 
+![Basic-subscriptions](/images/subscriptions/status-preapproval-en.png)
+
 ## Reactivate a paused subscription
 
 ### Activate subscription with end time

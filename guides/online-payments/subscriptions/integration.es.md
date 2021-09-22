@@ -93,6 +93,8 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval_plan' \
 
 ¡Listo! Ya podemos crear la suscripción y asociarla a tu plan.
 
+![Basic-subscriptions](/images/subscriptions/status-plan-es.png)
+
 
 ### Crear suscripción
 
@@ -154,7 +156,6 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 >Puedes obtener más información sobre los campos en la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference).
 
 ¡Y listo! Ya creaste una suscripción con un plan asociado.
-
 
 ## Suscripciones sin plan asociado
 

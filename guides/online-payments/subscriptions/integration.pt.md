@@ -91,6 +91,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval_plan' \
 
 Pronto! Agora podemos criar a assinatura e associá-la ao seu plano.
 
+![Basic-subscriptions](/images/subscriptions/status-plan-pt.png)
 
 ### Criar assinatura
 

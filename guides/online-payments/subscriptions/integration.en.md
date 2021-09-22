@@ -91,6 +91,8 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval_plan' \
 
 Done! We can now create the subscription and associate it to your plan.
 
+![Basic-subscriptions](/images/subscriptions/status-plan-en.png)
+
 
 ### Create subscription
 
