@@ -16,8 +16,8 @@ For example, if the card has insufficient balance, you can suggest trying again 
 | Status | `status_detail` | Suggested communication |
 | --- | --- | --- |
 | approved | `accredited` | Done! Your payment was credited. Your statement will show the `amount` charge as `statement_descriptor`. |
-| in_process | `pending_contingency` | We are processing your payment.<br/><br/>Don't worry! You will be notified via e-mail | if payment was credited in less than 2 business days. |
-| in_process | `pending_review_manual` | We are processing your payment.<br/><br/>Don't worry! You will be notified via email if it is credited or if we need more information in less than 2 business days. |
+| in_process | `pending_contingency` | We are processing your payment.<br/><br/>Don't worry! You will be notified via e-mail if payment was credited in less than 2 business days. |
+| in_process | `pending_review_manual` | We are processing your payment.<br/><br/>Don't worry! You will be notified via e-mail if it is credited or if we need more information in less than 2 business days. |
 | rejected | `cc_rejected_bad_filled_card_number` | Check card number. |
 | rejected | `cc_rejected_bad_filled_date` | Check expiration date. |
 | rejected | `cc_rejected_bad_filled_other` | Check data. |

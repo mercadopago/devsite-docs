@@ -129,7 +129,7 @@ You can simulate the creation of a payment using your `access_token` and `card_t
 
 If at the time of creation, you get an error associated with the payment method selected or the accounts in operation, you will receive an `HTTP Status 400 Bad Request` and the code detailing the error so that you can correct and retry the payment.
 
-Try all possible payment scenarios for payment approved, pending or declined. To do this, in the card_holder_name field of the form, enter any of the following prefixes:
+Try all possible payment scenarios for payment approved, pending or declined. To do this, in the `card_holder_name` field of the form, enter any of the following prefixes:
 
 - APRO: Payment approved.
 - CONT: Payment pending.

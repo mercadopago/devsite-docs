@@ -27,13 +27,15 @@ To operate in Mercado Pago on behalf of your seller, you need to request their a
 `https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http://www.URL_de_retorno.com`
 
 <br>
+
 2.2. When the seller accepts, a last redirect is made and you will receive the authorization code in the URL that you specified:
 
 `http://www.URL_de_retorno.com?code=AUTHORIZATION_CODE`
 
-This `AUTHORIZATION_CODE` must be used to create the credentials that allow you to operate on behalf of the seller. This code will be valid for 10 minutes since it's reception.
+This `AUTHORIZATION_CODE` must be used to create the credentials that allow you to operate on behalf of the seller. This code will be valid for 10 minutes since its reception.
 
 <br>
+
 2.3. You can also include the `state` parameter in the URL authorization to identify who is responsible for the code you received. Do this in a safe manner and assign a random identifier in the parameter which is unique for each attempt.
 
 By including this parameter, the redirect URL will look like this:
@@ -306,8 +308,8 @@ The seller will receive the difference between the total amount and the fees, bo
 >
 > Tip
 >
-> The more information you send us in the preference, the better our fraude prevention system will perform when it comes to payment approval.  
-> Create a checkout preference as complete as you can.
+> The more information you send us in the preference, the better our fraud prevention system will perform when it comes to payment approval.
+>  Create a checkout preference as complete as you can.
 
 ### Notifications
 

@@ -5,6 +5,7 @@ A **MarketPlace** is a website or application that allows sellers and buyers to 
 Mercado Pago allows you to collect payments on behalf of the sellers of your platform and optionally charge a commission for the transaction.
 
 When a payment is generated, the amount is immediately divided between the seller’s account and your account, in case you charge a fee.
+
 _Clarification: The payment split can only be done between two Mercado Pago accounts (Marketplace and the seller associated to it), no more._
 
 > NOTE
@@ -26,8 +27,7 @@ After creating the application, you only need to take the second and third steps
 
 Your [credentials]([FAKER][CREDENTIALS][URL]) are the **keys we provide so you can configure your integrations.**. 
 
-* The public key, or **Public Key**, is used to access the resources that your frontend needs. You will be able to collect credit card data and convert it into a representative token that you can safely store on your servers to create a payment.
-
+* The  **Public Key** is used to access the resources that your frontend needs. You will be able to collect credit card data and convert it into a representative token that you can safely store on your servers to create a payment.
 
 * The private key, or **Access Token**, will allow you to call the rest of the APIs. For example, how to process a payment, make a refund or store cards.
 

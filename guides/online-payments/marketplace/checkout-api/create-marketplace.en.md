@@ -27,6 +27,7 @@ To operate in Mercado Pago on behalf of your seller, you need to request their a
 `https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http://www.URL_de_retorno.com`
 
 <br>
+
 2.2. When the seller accepts, a last redirect is made and you will receive the authorization code in the URL that you specified:
 
 `http://www.URL_de_retorno.com?code=AUTHORIZATION_CODE`
@@ -34,6 +35,7 @@ To operate in Mercado Pago on behalf of your seller, you need to request their a
 This `AUTHORIZATION_CODE` must be used to create the credentials that allow you to operate on behalf of the seller. This code will be valid for 10 minutes since it's reception.
 
 <br>
+
 2.3. You can also include the `state` parameter in the URL authorization to identify who is responsible for the code you received. Do this in a safe manner and assign a random identifier in the parameter which is unique for each attempt.
 
 By including this parameter, the redirect URL will look like this:
@@ -91,7 +93,7 @@ In the response, in addition to the `access_token` and `public_key` of the selle
 > Note
 >
 > The credentials are **valid for 6 months.**
-> If you don´t renew your sellers credentials before the expiration period, **those credentials will lose valifity and you´ll have to do the authorization process all over again.**
+> If you don´t renew your sellers credentials before the expiration period, **those credentials will lose validity and you´ll have to do the authorization process all over again.**
 > Tip: Renew the credentials 5 months after you got them.
 
 ### Refresh your user’s credentials

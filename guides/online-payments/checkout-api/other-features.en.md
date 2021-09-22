@@ -213,7 +213,7 @@ It can be rejected or remain pending. Take into account that authorized funds ca
 
 To complete the payment, you need to capture the funds reserved for your customer. You can capture the amount, entirely or partially.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Capture the entire amount
+### Capture the entire amount
 
 To capture the full amount, you just need to submit the `capture` attribute as `true`.
 
@@ -402,7 +402,7 @@ curl -X PUT \
 ```
 ]]]
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
+### Response
 
 ```json
 {
@@ -503,7 +503,7 @@ curl -X PUT \
 ```
 ]]]
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
+### Response
 
 ```json
 {

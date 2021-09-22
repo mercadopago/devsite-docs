@@ -39,7 +39,7 @@ To create a payment, you should capture card data through the buyer's browser. F
 >
 > This documentation uses the new library version. To see the previous version, go to [integrate payment for cards with MercadoPago.js V1 section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/receiving-payment-by-card).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Include MercadoPago.js library
+### 1. Include MercadoPago.js library
 
 **Use our official library to access Mercado Pago API** from your application and collect data securely.
 
@@ -49,7 +49,7 @@ To create a payment, you should capture card data through the buyer's browser. F
 
 Card information will be turned into a token so that you can send data to your servers securely.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
+### 2. Add payment form
 
 To capture sensitive data from your customer's cards, please use our form with the corresponding attributes to ensure information security and correct token generation. For example, don't use the `name` attribute in fields containing sensitive data. This way your servers will never store these data.
 
@@ -89,7 +89,7 @@ The following example assumes that `transactionAmount` and `description` data we
 >
 > Consider that the form should be available before all the following steps for correct operation.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure your public key
+### 3. Configure your public key
 
 Add your [public key]([FAKER][CREDENTIALS][URL]) like this:
 
@@ -107,11 +107,11 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 
 >  If you still don't have an account to check your credentials, [sign in](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Get data for your form
+### 4. Get data for your form
 
 ----[mla, mlb, mlu, mco, mlc, mpe]----
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get document types
+#### Get document types
 
 Document type is one of the mandatory fields. Use the document list to fill out your data.
 
@@ -160,7 +160,7 @@ function createSelectOptions(elem, options, labelsAndKeys = { label : "name", va
 
 ------------
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get card payment method
+#### Get card payment method
 
 Avoid mistakes and offer the correct available installments by validating your customers' data as they fill it out. Use the code in the following example to identify payment method with the first 6 digits of the card.
 
@@ -199,7 +199,7 @@ cardNumberElement.addEventListener('keyup', async () => {
 });
 ```
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain issuer
+#### Obtain issuer
 
 When completing the form, it is important to identify card's issuing bank to avoid conflicts between the different issuers and to be able to provide the correct payment options in installments.
 
@@ -225,7 +225,7 @@ const getIssuers = async () => {
 };
 ```
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get number of installments
+#### Get number of installments
 
 The number of installments is also a mandatory field for credit card payments. You can use the function in the following example to fill out the _select_ type suggested field called `installments` and get the available installments.
 
@@ -249,7 +249,7 @@ const getInstallments = async () => {
 }
 ```
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. Create card token
+### 5. Create card token
 
 Before payment submission, you must create a token containing all card information securely. You should generate it as follows:
 
@@ -530,7 +530,7 @@ curl -X POST \
 ```
 ]]]
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
+#### Response
 
 ```json
 {

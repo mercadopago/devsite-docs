@@ -33,7 +33,7 @@ curl -X POST \
 ```
 
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
+### Response
 
 ```json
 {
@@ -57,13 +57,13 @@ curl -X POST \
 
 ## Test the payment flow
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Configure the integration with seller user data
+### 1. Configure the integration with seller user data
 
 Configure your seller user's [test public key]([FAKER][CREDENTIALS][URL]) at your application frontend, and the [test private key]([FAKER][CREDENTIALS][URL]) at the backend.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Make a payment with your buyer user
+### 2. Make a payment with your buyer user
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Credit card tests
+#### Credit card tests
 
 Start your integration with your test seller user credentials:
 

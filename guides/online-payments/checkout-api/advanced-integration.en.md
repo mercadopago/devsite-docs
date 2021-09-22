@@ -4,7 +4,7 @@
 
 Use our APIs to save your customer's card references and offer them a better experience. This way, your customers won't need to fill out their data every time and their payments will be completed faster.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create customers and cards
+### Create customers and cards
 
 To create customers and link them with their cards, submit the e-mail field, type of payment method, ID of the issuing bank and the generated token.
 You will add every customer using the `customer` value, and cards as `card`.
@@ -145,7 +145,7 @@ curl -X POST \
 ```
 ]]]
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
+#### Response
 
 ```json
 {
@@ -180,7 +180,7 @@ curl -X POST \
 > 
 > If you receive an error message of type `"invalid parameter"` with HTTP 400 status code, make sure you are completing the fields `payment_method_id` and `issuer_id` correctly.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new cards to a customer
+### Add new cards to a customer
 
 To add new cards to a customer, create a token and make a `HTTP POST` to the `customer`.
 
@@ -324,7 +324,7 @@ curl -X POST \
 ```
 ]]]
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
+#### Response
 
 
 ```json
@@ -366,13 +366,13 @@ curl -X POST \
 }
 ```
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use saved cards for payments
+### Use saved cards for payments
 
 For customers to make payments with their saved data, you need to capture the security code again. For security reasons, Mercado Pago can't save that information.
 
 <br>
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Display saved cards to your customer
+#### 1. Display saved cards to your customer
 
 First, get the saved card list so that your customer can choose one to make the payment:
 
@@ -482,7 +482,7 @@ And you can prepare the form like this:
 ```
 <br>
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Capture security code
+#### 2. Capture security code
 
 The customer needs to enter the security code in a flow similar to [card data capture](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card/#bookmark_card_data_capture). You need to create a token by submitting the form with card ID and security code.
 
@@ -506,7 +506,7 @@ The customer needs to enter the security code in a flow similar to [card data ca
 
 <br>
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Create payment
+#### 3. Create payment
 
 Once you get the token, you can generate the payment for the relevant amount. As the payment is made using saved card data, you need to send the customer ID along with the token.
 
@@ -652,7 +652,7 @@ curl -X POST \
 ]]]
 
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search for an existing customer
+### Search for an existing customer
 
 You can search for customer information, if needed; for example, when you don't know the assigned ID. The e-mail is the required parameter to get it.
 
@@ -734,7 +734,7 @@ curl -X GET \
 ```
 ]]]
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
+#### Response
 
 ```json
 {
@@ -782,7 +782,7 @@ curl -X GET \
 }
 ```
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check customer's card list
+### Check customer's card list
 
 [[[
 ```php
@@ -839,7 +839,7 @@ curl -X GET \
 ```
 ]]]
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response
+#### Response
 
 ```json
 [{
@@ -852,7 +852,7 @@ curl -X GET \
 }]
 ```
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Modify a customer
+### Modify a customer
 
 To modify a client you need to send the `customer_id` and the fields you want to update in a `HTTP PUT` request. 
 
@@ -1131,11 +1131,11 @@ Example of response without including the `customers_id` parameter:
 ## Cancellations and refunds
 
 ----[mla, mlm, mco, mlu, mlb, mlc]----
-Cancellations occur when a cash payment is not completed before the expiration date, and the seller decides to cancel it. And refunds occur when the payment is made, but the seller decides to cancel it, partially or entirely.
+Cancellations occur when a cash payment is not completed before the expiration date, and the seller decides to cancel it. Refunds occur when the payment is made, but the seller decides to cancel it, partially or entirely.
 ------------
 
 ----[mpe]----
-Cancellations occur when a cash payment is not completed before the expiration date, and the seller decides to cancel it. And refunds occur when the payment is made, but the seller decides to cancel it entirely.
+Cancellations occur when a cash payment is not completed before the expiration date, and the seller decides to cancel it. Refunds occur when the payment is made, but the seller decides to cancel it entirely.
 ------------
 
 For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).

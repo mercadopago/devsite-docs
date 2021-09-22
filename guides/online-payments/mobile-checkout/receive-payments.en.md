@@ -369,7 +369,7 @@ These are the most important payment attributes:
 - issuer_id: : Identifier of the card bank selected by your user.
 - installments: Number of installments selected.
 
-The posible payment status are:
+The posible payment statuses are:
 
 ![payment-status](/images/payments-status-transitions-diagram.png)
 
