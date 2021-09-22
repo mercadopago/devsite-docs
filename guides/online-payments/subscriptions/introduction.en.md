@@ -26,6 +26,10 @@ In order to integrate subscriptions, you need to know four key concepts:
 | Authorized payment | It is the installment of a subscription that is generated and charged based on the defined recurrence. The subscription engine schedules and generates payments automatically. |
 | Verification payment | This is a minimum charge, which is made at the time of the payer's subscription only to verify that the card used to pay the subscription is a valid one. This amount is immediately refunded to the payer. |
 | Billing date | This is the date that the seller can set for receiving the charges for a subscription with a monthly payment frequency. |
+| Proportional amount (pro-rata) | It is the amount charged to the subscriber if he/she initiates the subscription on a day other than the billing date established by the seller. This amount is proportional to the days elapsed between the beginning of the subscription and the date of the first monthly billing. |
+| Free trial | This is a free period that the seller can offer to the subscriber before the first billing. In this case, the subscriber is exempt from the first payment starts paying on the following charges. |
+
+
 
 ------------
 ### Next steps
