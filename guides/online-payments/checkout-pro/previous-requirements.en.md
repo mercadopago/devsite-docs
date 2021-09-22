@@ -6,11 +6,11 @@ Have the main technical terms for the Checkout Pro integration flow at hand befo
 
 | Term | Description |
 | --- | --- |
-| _Preference_ | It is the **information of the product or service that you want to offer.** Among the most important attributes of a preference are, namely, the description, the amount and the items. When generating it, you get the URL to start the payment flow. |
+| _Preference_ | It is the **information of the product or service that you want to offer.** Among the most important attributes of a preference are, namely, the description, the amount, and the items. When generating it, you get the URL to start the payment flow. |
 | _Credentials_ | Your credentials are the **unique keys we provide so you can configure your integrations.** There are two types: Public Key and Access Token. <br/><br/> **Public key is the application's public key** to know the payment methods and encrypt card details, for example. You must use it only for your integrations.<br/><br/> **Access Token is the application's private key** to generate payments. You must use it only for your integrations.<br/><br/>To find them, access the [Credentials]([FAKER][CREDENTIALS][URL]) section on the Developer panel from your Mercado Pago account and select the productive ones. |
 | _Initial Point (init_point)_ | It is the **URL obtained at the time of generating the preference** and that starts the payment flow of the Checkout Pro. |
 | _Ítem_ | It refers to the **product or service you want to offer**. It can be one or a list. |
-| _Application_ | The applications are used to process the seller's payments. **Each application identifies a particular integration**, since each one has its own credentials. One Mercado Pago account can have multiple applications.<br/><br/>You can find the information of each one in the [Credentials]([FAKER][CREDENTIALS][URL]) section on the Developer panel from your Mercado Pago account. Upon entering, an application will be created automatically or you can [create an application](https://applications.mercadopago.com) manually every time you need one. |
+| _Application_ | The applications are used to process the seller's payments. **Each application identifies a particular integration** since each one has its credentials. One Mercado Pago account can have multiple applications.<br/><br/>You can find the information of each one in the [Credentials]([FAKER][CREDENTIALS][URL]) section on the Developer panel from your Mercado Pago account. Upon entering, an application will be created automatically or you can [create an application](https://applications.mercadopago.com) manually every time you need one. |
 
 ## Prerequisites
 
@@ -18,7 +18,7 @@ Follow the following steps before starting your integration:
 
 ### 1. Access an account
 
-In order to start the integration, it is necessary to have a Mercado Pago or Mercado Libre account.
+It is necessary to have a Mercado Pago or Mercado Libre account to start your integration.
 
 You can [sign in](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/previous-requirements) to an existing account or [create a new account](https://www.mercadopago[FAKER][URL][DOMAIN]) from scratch.
 
