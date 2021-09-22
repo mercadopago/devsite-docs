@@ -4073,6 +4073,8 @@ A resposta mostrará o status pendente do pagamento e todas as informações que
 
 > WARNING
 >
+> WARNING
+>
 > Importante
 >
 > Lembre-se de que, para gerar pagamentos, você deve primeiro [criar uma chave Pix](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required).

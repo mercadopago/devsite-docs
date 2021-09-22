@@ -364,7 +364,7 @@ Finally, follow these steps to add the checkout to your website.
 <script>
 // Add the SDK credentials
   const mp = new MercadoPago('PUBLIC_KEY', {
-        locale: 'es-AR'
+        locale: 'en-US'
   });
   
   // Initialize the checkout
