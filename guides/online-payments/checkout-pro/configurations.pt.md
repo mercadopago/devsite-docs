@@ -3,10 +3,10 @@
 Você pode adaptar a integração do Checkout Pro ao seu modelo negócio configurando [atributos de preferência](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/preferences/_checkout_preferences/post). 
 
 ----[mla, mlb]----
-Se você oferece compras de valores altos, por exemplo, pode aceitar [pagamentos com dois cartões de crédito](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_pagamentos_com_2_cartão_de_crédito) ou ainda [excluir meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_atributos_para_a_preferência) indesejados para a sua operação.
+Se você oferece compras de valores altos, por exemplo, pode aceitar [pagamentos com dois cartões de crédito](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_aceite_pagamentos_com_2_cartoes_de_credito) ou ainda [excluir meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_defina_os_meios_de_pagamento_desejados) indesejados para a sua operação. 
 ------------
 ----[mlm, mlc, mlu, mco, mpe]----
-Se você oferece compras de valores altos, por exemplo, pode [excluir meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_atributos_para_a_preferência) indesejados para a sua operação.
+Se você oferece compras de valores altos, por exemplo, pode [excluir meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_defina_os_meios_de_pagamento_desejados) indesejados para a sua operação.
 ------------
 
 As configurações dos atributos de preferência te permitem ainda [obter informações de negócio](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_trabalhe_com_metricas_de_negocio) e [mensurar a efetividade dos seus anúncios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_otimize_a_conversao_dos_seus_anuncios) em plataformas como Facebook e Google. 
