@@ -1,10 +1,10 @@
 # Integrate with Checkout Pro
 
-The integration with Mercado Pago's Checkout Pro solution allows you to charge your customers through our web form from any device in a simple, fast and secure way.
+The integration with Mercado Pago's Checkout Pro solution allows you to charge your customers through our web form from any device in a simple, fast, and secure way.
 
 > NOTE
 >
-> Best practices
+> Note
 >
 > Use the [implementation example](#bookmark_sample_project) to understand and learn more about the complete integration with Checkout Pro.
 
@@ -377,7 +377,7 @@ You can check out other ways to open the checkout in the [Customizations](https:
 >
 > Important
 >
-> Do not forget to access the Checkout Pro from another browser or log out of your Mercado Pago account before testing it, since you cannot make a payment with the same account you created the payment form.<br/>
+> Do not forget to access the Checkout Pro from another browser or log out of your Mercado Pago account before testing it since you cannot make a payment with the same account you created the payment form.<br/>
 
 ## Sample project
 
