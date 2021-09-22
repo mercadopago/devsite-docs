@@ -18,7 +18,7 @@ A QR is an **unique code linked to your Mercado Pago account**. It’ll allow yo
 ## What are the benefits?
 
 * Generating QRs is free.
-* **Immediate payments**. Mercado Pago remembers buyer’s data and process payments right away.
+* **Immediate payments**. Mercado Pago remembers buyer’s data and processes payments right away.
 * Allows to charge with the main [payment methods](https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264) in your country. 
 * **Lowest transaction fees** in the market.
 * Offers a **secure buying experience from any mobile device** with Mercado Pago and Mercado Libre apps.
@@ -30,7 +30,7 @@ A QR is an **unique code linked to your Mercado Pago account**. It’ll allow yo
 
 In order to receive payments with QR, you can **print it and paste it in a visible place or display it on your phone**.
 
-![Flujo QR](/images/mobile/qr_flujo.en.png)
+![QR flow](/images/mobile/qr_flujo.en.png)
 
 <span></span>
 > NOTE
@@ -43,7 +43,7 @@ In order to receive payments with QR, you can **print it and paste it in a visib
 
 | Type | Description |
 | --- | --- |
-| QR attended model | Integration model in which the cashier's Point oOf Sale system posts an order to a QR. The customer views and pays the order in the App.  |
+| QR attended model | Integration model in which the cashier's Point of Sale system posts an order to a QR. The customer views and pays the order in the App.  |
 | QR dynamic model  | Integration model that generates a QR per transaction. Used for ticket QR models.  |
 
 Based on your business model, you can choose one of these options to offer your customers a smooth shopping experience at your physical stores.
