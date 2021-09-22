@@ -6,7 +6,7 @@ Customize o Checkout Pro de acordo com o modelo do seu negócio para oferecer a 
 
 Você pode personalizar como abrir o Checkout Pro por meio de funções e atributos a serem adicionados à configuração da sua integração. 
 
-### Abrindo o Checkout Pro sem botão de pagamento
+### Abra o Checkout Pro sem botão de pagamento
 
 Use o método `open` para abrir o Checkout a partir de qualquer elemento desejado do seu _site_, sem necessariamente mostrar o botão de pagamento para os seus compradores. 
 
@@ -28,14 +28,14 @@ const checkout = mp.checkout({
 ```
 ]]]
 
-### Abrindo o Checkout Pro com botão de pagamento
+### Abra o Checkout Pro com botão de pagamento
 
 Use o método `render` para renderizar um botão de pagamento responsável por abrir o Checkout Pro no seu _site_ com os seguintes parâmetros:
 
 | Parâmetro | Tipo de dado | Descrição |
 | --- | --- | --- |
 | `container` | `string` | CSS Selector (identificador) do elemento HTML onde se deseja mostrar o botão de pagamento. Permite definir o tipo de botão desejado. |
-| `type` (opcional) | `string` | Define o tipo de botão desejado. Atualmente, aceita apenas o valor ’wallet’, que mostra um botão de pagamento com a marca do Mercado Pago. |
+| `type` (opcional) | `string` | Define o tipo de botão desejado. Atualmente, aceita apenas o valor `wallet, que mostra um botão de pagamento com a marca do Mercado Pago. |
 | `label` (opcional) | `string` | Texto renderizado no botão. Valor padrão: `Pagar`. |
 
 Você pode usar o método `render` de duas maneiras diferentes:
@@ -74,7 +74,7 @@ checkout.render({
 
 ![Custom Label Button](/images/web-payment-checkout/custom_label_button.png)<br/><br/>
 
-### Abrindo o Checkout Pro automaticamente
+### Abra o Checkout Pro automaticamente
 
 Adicione o parâmetro `autoOpen` nas opções de inicialização do Checkout para exibir automaticamente o Checkout Pro, sem precisar que seus compradores interajam com um botão ou qualquer outro elemento para a sua abertura:
 
@@ -106,7 +106,7 @@ Para integrar o esquema de redirecionamento à sua integração, substitua o bot
 [[[
 ```php
 ===
-O Checkout Pro será aberto no <code>init_point</code> definido pela preferência
+O Checkout Pro será aberto no <code>init_point</code> definido pela preferência:
 ===
 <!doctype html>
 <html>
@@ -120,7 +120,7 @@ O Checkout Pro será aberto no <code>init_point</code> definido pela preferênci
 ```
 ```node
 ===
-O Checkout Pro será aberto no <code>init_point</code> definido pela preferência
+O Checkout Pro será aberto no <code>init_point</code> definido pela preferência:
 ===
 <!doctype html>
 <html>
@@ -134,7 +134,7 @@ O Checkout Pro será aberto no <code>init_point</code> definido pela preferênci
 ```
 ```java
 ===
-O Checkout Pro será aberto no <code>init_point</code> definido pela preferência
+O Checkout Pro será aberto no <code>init_point</code> definido pela preferência:
 ===
 <!doctype html>
 <html>
@@ -148,7 +148,7 @@ O Checkout Pro será aberto no <code>init_point</code> definido pela preferênci
 ```
 ```ruby
 ===
-O Checkout Pro será aberto no <code>init_point</code> definido pela preferência
+O Checkout Pro será aberto no <code>init_point</code> definido pela preferência:
 ===
 <!doctype html>
 <html>
@@ -162,7 +162,7 @@ O Checkout Pro será aberto no <code>init_point</code> definido pela preferênci
 ```
 ```csharp
 ===
-O Checkout Pro será aberto no <code>init_point</code> definido pela preferência
+O Checkout Pro será aberto no <code>init_point</code> definido pela preferência:
 ===
 <!doctype html>
 <html>
@@ -176,7 +176,7 @@ O Checkout Pro será aberto no <code>init_point</code> definido pela preferênci
 ```
 ```python
 ===
-O Checkout Pro será aberto no <code>init_point</code> definido pela preferência
+O Checkout Pro será aberto no <code>init_point</code> definido pela preferência:
 ===
 <!doctype html>
 <html>
