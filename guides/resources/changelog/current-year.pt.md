@@ -6,6 +6,26 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Setembro 2021
 
+### 13 de Setembro
+
+> CHANGELOG
+>
+> Nova versão Magento 2
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MAGENTO 2
+
+Lançamos a nova versão 3.10.1 para Magento 2.
+
+[Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.10.1).
+
 ### 10 de setembro
 
 > CHANGELOG

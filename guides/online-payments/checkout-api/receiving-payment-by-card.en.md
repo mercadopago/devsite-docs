@@ -520,6 +520,17 @@ Finally, you always need to be notified of new payments and status updates.  For
 >
 > [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/testing)
 
+----[mlc]----
+> RIGHT_BUTTON_RECOMMENDED_EN
+>
+> API References
+>
+> Find all the information required to interact with our APIs.
+>
+> [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference)
+------------
+
+----[mla, mlb, mlm, mlu, mpe, mco]----
 > RIGHT_BUTTON_RECOMMENDED_EN
 >
 > Integrate other payment methods
@@ -527,3 +538,4 @@ Finally, you always need to be notified of new payments and status updates.  For
 > Learn about all the available payment options and how to offer them.
 >
 > [Integrate other payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways)
+------------
