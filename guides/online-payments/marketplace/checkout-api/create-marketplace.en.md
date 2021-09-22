@@ -48,7 +48,7 @@ When entering this URL, the seller will be redirected to Mercado Pago to log in 
 ![FlujoOAuth-es](/images/oauth/oauth-es-v2.png)
 ------------
 ----[mlb]----
-![FlujoOAuth-pt](/images/oauth/oauth-pt.png)
+![FlujoOAuth-pt](/images/oauth/oauth-pt-v2.png)
 ------------
 
 Once the seller has authorized your application to link with their Mercado Pago account, you will receive an authorization code in the specified Redirect URL. It will appear like this: 

@@ -51,7 +51,7 @@ https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&resp
 
 Ao acessar essa URL, o vendedor será encaminhado para o Mercado Pago, onde deverá fazer o login com sua conta e autorizar a vinculação com sua aplicação.
 
-![FlujoOAuth-pt](/images/oauth/oauth-pt.png)
+![FlujoOAuth-pt](/images/oauth/oauth-pt-v2.png)
 
 Quando o vendedor tenha autorizado a vinculação do sua aplicação à sua conta do Mercado Pago, você vai receber no seu servidor o código de autorização na Redirect URL especificada. Você verá o seguinte: 
 
