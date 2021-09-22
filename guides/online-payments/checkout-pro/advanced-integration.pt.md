@@ -274,7 +274,7 @@ preference_data = {
 
 ## Redirecione o comprador para o seu *site*
 
-No final do processo de pagamento, você tem a opção de **redirecionar o comprador para o seu site** novamente. 
+No final do processo de pagamento, você tem a opção de redirecionar o comprador para o seu site novamente. 
 
 Para isso, adicione o atributo `back_urls` e defina, segundo o status do pagamento, a página desejada para redirecionar o seu comprador quando ele clicar no botão de retorno ao site.
 
@@ -307,6 +307,8 @@ Através das `back_urls`, serão retornados os seguintes parâmetros:
 > Nota
 > 
 > Alguns dos parâmetros guardam informações de compra apenas se o comprador completou todo o pagamento no Checkout Pro e não abandonou o fluxo antes de retornar ao seu site por meio da `back_urls` de `failure`.
+
+Por exemplo:
 
 [[[
 ```php
@@ -405,7 +407,7 @@ Encontre todas as informações necessárias para melhor gerenciar os cancelamen
 
 ## Gerencie contestações
 
-Uma contestação (ou *chargeback*) acontece quando o comprador entra em contato com a entidade emissora do cartão e desconhece o pagamento. Na prática, isso significa que o dinheiro desse pagamento será retido na conta do Mercado Pago até que seja a situação seja solucionada.
+Uma contestação (ou *chargeback*) acontece quando o comprador entra em contato com a entidade emissora do cartão e desconhece o pagamento. Na prática, isso significa que o dinheiro desse pagamento será retido da sua conta Mercado Pago até que seja a situação seja solucionada.
 
 Aprenda como gerenciar contestações de pagamentos com a nossa [documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/chargebacks).
 
