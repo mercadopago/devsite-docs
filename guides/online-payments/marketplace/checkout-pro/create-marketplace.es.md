@@ -154,7 +154,7 @@ Recibirás la siguiente respuesta:
 > 
 > Recuerda que cada vez que renueves las credenciales, el `refresh_token` también cambiará, por lo que deberás almacenarlo nuevamente.
 >
-> En caso de encontrar algún error a la hora de renovar las credenciales, recuerda que puedes consultarlo en la [referencia de códigos de error](https://developers.mercadolibre[FAKER][URL][DOMAIN]/es_ar/autenticacion-y-autorizacion#Referencia-de-codigos-de-error).
+>  En caso de encontrar algún error a la hora de renovar las credenciales, recuerda que puedes consultarlo en la [referencia de códigos de error](https://developers.mercadolibre[FAKER][URL][DOMAIN]/es_ar/autenticacion-y-autorizacion#Referencia-de-codigos-de-error).
 
 ## Integra el Checkout Pro
 

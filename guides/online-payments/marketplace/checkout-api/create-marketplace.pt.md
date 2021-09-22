@@ -161,7 +161,7 @@ Você receberá a seguinte resposta:
 > 
 > Lembre que, a cada vez que você renovar as credenciais, o `refresh_token` também vai mudar, porquanto, você deverá armazená-lo novamente.
 >
-> Caso haja algum erro na hora de renovar as credenciais, lembre que você pode consultar a [referência de códigos de erro](https://developers.mercadolivre.com.br/pt_br/autenticacao-e-autorizacao#Referencia-de-codigos-de-erro).
+>  Caso haja algum erro na hora de renovar as credenciais, lembre que você pode consultar a [referência de códigos de erro](https://developers.mercadolivre.com.br/pt_br/autenticacao-e-autorizacao#Referencia-de-codigos-de-erro).
 
 ## Teste seu Marketplace
 

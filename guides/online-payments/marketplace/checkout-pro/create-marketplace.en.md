@@ -94,7 +94,7 @@ Done! You already linked your seller's account to your application via OAuth.
 
 ## Refresh your credentials
 
-**Your sellers' data that you received last 180 days**. After that, you need to request the seller's authorization again.
+**Your sellers' data that you received lasts 180 days**. After that, you need to request the seller's authorization again.
 To avoid this, renew data before the deadline to ensure they are always current. 
 
 To refresh them, use the following OAuth API call:
@@ -133,7 +133,7 @@ You will receive the following response:
 > 
 > Remember that every time you refresh your credentials, the `refresh_token` will also change so you will need to store it again.
 >
-> In case of errors when refreshing your credentials, remember that you can query them in the [error code reference](https://developers.mercadolibre[FAKER][URL][DOMAIN]/en_us/authentication-and-authorization#Error-codes-reference).
+>  In case of errors when refreshing your credentials, remember that you can query them in the [error code reference](https://developers.mercadolibre[FAKER][URL][DOMAIN]/en_us/authentication-and-authorization#Error-codes-reference).
 
 
 ## Integrate the Checkout Pro
@@ -321,7 +321,7 @@ The seller will receive the difference between the total amount and the fees, bo
 >
 > Tip
 >
-> The more information you send us in the preference, the better our fraude prevention system will perform when it comes to payment approval.  
+> The more information you send us in the preference, the better our fraud prevention system will perform when it comes to payment approval.  
 > Create a checkout preference as complete as you can.
 
 ## Set up notifications
@@ -330,13 +330,13 @@ You can get notifications every time a seller links to or unlinks from your appl
 
 1. Access [Your Applications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel) and select the application used for OAuth flow.
 
-2. Go to "Webhooks Notifications" tab. In this section, go to "Production Mode" and add the URL to receive notifications. If you want, you can click on "Test" button to test that the assigned URL will receive Webhooks Notifications correctly.
+2. Go to "Webhooks Notifications" tab. In this section, go to "Production Mode" and add the URL to receive notifications. If you want, you can click on the "Test" button to test that the assigned URL will receive Webhooks Notifications correctly.
 
 3. Then, in "Events" field, select "Application Linking" option. Lastly, click on save. 
 
 Done! Every time a seller links or unlinks, a notification will be received in your assigned URL.
 
-These are some of the data that you can find within the notifications:
+This is some of the data that you can find within the notifications:
 
 | Attribute | Value or type | Description |
 | ----------------- | ----------------- | --------------- |

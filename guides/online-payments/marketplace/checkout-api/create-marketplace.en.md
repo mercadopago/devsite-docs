@@ -39,10 +39,10 @@ https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&resp
 | Parameter | Data to fill out |
 | ----------------- | ----------------- |
 | `client_id` | Replace `APP_ID` value with your application ID. |
-| `state` | Identify who the code to be received belongs to; so replace `RANDOM_ID` value with a unique ID for each attempt without sensitive data. |
+| `state` | Identify who the code to be received belongs to. In order to do this, replace `RANDOM_ID` value with a unique ID for each attempt without sensitive data. |
 | `redirect_uri` | Add the URL you entered in the Redirect URL field when you set up your application. | 
 
-When entering this URL, the seller will be redirected to Mercado Pago to log in their account and authorize the link to your application.
+When entering this URL, the seller will be redirected to Mercado Pago to log into their account and authorize the link to your application.
 
 ----[mla, mlm, mlc, mco, mpe, mlu]----
 ![FlujoOAuth-es](/images/oauth/oauth-es-v2.png)
@@ -118,7 +118,7 @@ Done! You already linked your seller's account to your application via OAuth.
 
 ## Refresh your credentials
 
-**Your sellers' data that you received last 180 days**. After that, you need to request the seller's authorization again.
+**Your sellers' data that you received lasts 180 days**. After that, you need to request the seller's authorization again.
 To avoid this, renew data before the deadline to ensure they are always current. 
 
 To refresh them, use the following OAuth API call:
@@ -159,7 +159,7 @@ You will receive the following response:
 > 
 > Remember that every time you refresh your credentials, the `refresh_token` will also change so you will need to store it again.
 >
-> In case of errors when refreshing your credentials, remember that you can query them in the [error code reference](https://developers.mercadolibre[FAKER][URL][DOMAIN]/en_us/authentication-and-authorization#Error-codes-reference).
+>  In case of errors when refreshing your credentials, remember that you can query them in the [error code reference](https://developers.mercadolibre[FAKER][URL][DOMAIN]/en_us/authentication-and-authorization#Error-codes-reference).
 
 
 ## Integrate the API to receive payments
@@ -316,14 +316,14 @@ You can get notifications every time a seller links to or unlinks from your appl
 
 Done! Every time a seller links or unlinks, a notification will be received in your assigned URL.
 
-These are some of the data that you can find within the notifications:
+This is some of the data that you can find within the notifications:
 
 | Attribute | Value or type | Description |
 | ----------------- | ----------------- | --------------- |
 | `type` | `mp-connect` | Identifies the notification of account link type. |
-| `action` | `application.authorized` | Reports that seller linked to application. |
-| `action` | `application.deauthorized` | Confirms that seller unlinked from application. |
-| `data.id`| `string`| ID of seller linked to application. |
+| `action` | `application.authorized` | Reports that the seller has been linked to the application. |
+| `action` | `application.deauthorized` | Confirms that the seller has been unlinked from the application. |
+| `data.id`| `string`| ID of the seller linked to the application. |
 
 For more information, go to [Webhooks Notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks).
 
