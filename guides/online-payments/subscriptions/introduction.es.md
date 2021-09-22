@@ -30,11 +30,16 @@ Para poder integrar suscripciones, es necesario que conozcas cuatro conceptos cl
 | Prueba gratis | Es un periodo gratuito que el vendedor puede ofrecer al suscriptor antes del primer cobro. En este caso, el suscriptor queda exento del primer pago y empieza a pagar en los cobros siguientes. |
 
 
-### Fecha de facturación y monto proporcional
+Fecha de facturación y monto proporcional
 
 En el siguiente gráfico muestra cómo actúa la fecha de facturación y el eventual cobro del monto proporcional (prorrateo) al suscriptor.
 
 ![Basic-subscriptions](/images/subscriptions/linea-cobro-ES.png)
+
+
+### Fecha de facturación y monto proporcional (con prueba grátis)
+
+Si estableces una fecha de facturación para una suscripción que también tiene un periodo de prueba gratuito establecido, el monto proporcional solo se cobrará al suscriptor un mes después de su adhesión, como se muestra en el siguiente gráfico.
 
 ------------
 ### Próximos pasos

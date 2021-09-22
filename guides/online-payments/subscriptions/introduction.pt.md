@@ -29,6 +29,16 @@ Para poder integrar assinaturas, você deve conhecer quatro conceitos-chave:
 | Valor proporcional (pró-rata) | É o valor cobrado do assinante caso ele comece a assinar em um dia diferente da data de cobrança definida pelo vendedor. Esse valor é proporcional aos dias entre a adesão à assinatura e a data da primeira cobrança mensal. |
 | Teste grátis | É um período gratuito que o vendedor pode oferecer ao assinante antes da primeira cobrança. Nesse caso, o assinante tem o primeiro pagamento abonado e começa a pagar nas cobranças seguintes. |
 
+### Data de cobrança e valor proporcional
+
+O gráfico a seguir mostra como funciona a data de cobrança e a eventual cobrança do valor proporcional (pró-rata) ao assinante.
+
+![Basic-subscriptions](/images/subscriptions/linea-cobro-PT.png)
+
+### Data de cobrança e valor proporcional (com teste grátis)
+
+Caso você defina uma data de cobrança para uma assinatura que também tem um período de teste grátis configurado, o valor proporcional só será cobrado do assinante um mês após a adesão, como mostra o gráfico a seguir.
+
 
 ------------
 ### Próximos passos

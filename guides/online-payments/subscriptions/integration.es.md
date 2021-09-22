@@ -9,9 +9,8 @@ Hay dos formas de integrar suscripciones:
 * __Sin un plan asociado__: Usa esta forma cuando sepas que las diferentes suscripciones no van a compartir ninguna característica porque van ser muy específicas o especializadas para cada pagador. Por ejemplo para una suscripción de un solo mes con un descuento particular.
 
 
-----[mla]----
-![Basic-subscriptions](/images/subscriptions/template-and-preapproval.png)
-------------
+![Basic-subscriptions](/images/subscriptions/integrations-ES.png)
+
 
 > NOTE
 > 

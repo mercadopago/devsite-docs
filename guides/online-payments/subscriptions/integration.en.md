@@ -8,6 +8,8 @@ There are two ways to integrate subscriptions:
 
 * __Without an associated plan__: Use this form when you know that different subscriptions will not share any features because they will be very specific or specialized for each payer. For example, for a single month subscription with a special discount.
 
+![Basic-subscriptions](/images/subscriptions/integrations-EN.png)
+
 > NOTE
 > 
 > Key concepts

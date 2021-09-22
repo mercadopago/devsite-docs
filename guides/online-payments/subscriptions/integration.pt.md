@@ -8,6 +8,8 @@ Há duas formas de integrar assinaturas:
 
 * __Sem um plano associado__: Use esta forma quando você souber que diferentes assinaturas não compartilharão nenhuma característica porque serão muito específicas ou especializadas para cada pagador. Por exemplo, para uma assinatura de um único mês com um desconto específico.
 
+![Basic-subscriptions](/images/subscriptions/integrations-PT.png)
+
 > NOTE
 > 
 > Conceitos-chave
