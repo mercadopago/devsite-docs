@@ -30,7 +30,7 @@ const checkout = mp.checkout({
 
 ### Abrir Checkout Pro con botón de pago
 
-Utilice el método `render` para generar un botón de pago responsable de abrir Checkout Pro en su sitio con los siguientes parámetros:
+Utiliza el método `render` para generar un botón de pago responsable de abrir Checkout Pro en tu sitio con los siguientes parámetros:
 
 | Parámetro | Tipo de datos | Descripción |
 | --- | --- | --- |
