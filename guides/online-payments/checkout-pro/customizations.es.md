@@ -259,7 +259,7 @@ theme: {
 
 El color del texto de los botones y el encabezado de Checkout Pro se determinará automáticamente según el [contraste](https://24ways.org/2010/calculating-color-contrast) del color definido para esos mismos elementos.
 
-Los elementos de color claro tendrán su color de texto negro o `#000`. Por ejemplo:
+Los elementos de color claro tendrán el texto en color negro o `#000`. Por ejemplo:
 
 ```javascript
 theme: {
