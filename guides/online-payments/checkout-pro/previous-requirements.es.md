@@ -74,7 +74,7 @@ pip3 install mercadopago
 ### 3. Ten a mano tus credenciales
 Las credenciales son claves únicas que te proporcionamos para que puedas configurar tus integraciones.
 
-Para encontrarlas, consulte la sección [Credenciales]([FAKER][CREDENTIALS][URL]) en el Panel de desarrollador de tu cuenta Mercado Pago
+Para encontrarlas, consulta la sección [Credenciales]([FAKER][CREDENTIALS][URL]) en el panel de desarrollador de tu cuenta Mercado Pago
 
 > ¿Aún tienes dudas sobre? Lee nuestra documentación de [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) para obtener más información.
 
