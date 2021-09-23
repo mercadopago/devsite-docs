@@ -12,7 +12,7 @@ Os avisos automáticos permitem que você administre seu estoque e mantenha seu 
 
 Melhore a aprovação dos pagamentos e a experiência de compra no Checkout Pro adicionando informações às suas preferências que detalhem o item comprado e o usuário comprador.
 
-As informações adicionais passíveis de serem adicionadas por você nas preferências são:
+Em Preferências, você pode inserir as seguintes informações adicionais:
 
 ### Dados pessoais do comprador
 
