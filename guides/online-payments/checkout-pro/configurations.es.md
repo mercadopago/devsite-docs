@@ -9,7 +9,7 @@ Si ofreces compras de alto valor, por ejemplo, puedes aceptar [pagos con dos tar
 Si ofreces compras de alto valor, por ejemplo, puedes [excluir métodos de pago](https: //www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#???) no deseado para tu operación.
 ------------
 
-La configuración de atributos de preferencia también te permite [obtener información comercial](https: //www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#???) y [medir la efectividad de sus anuncios](https: //www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#???) en plataformas como Facebook y Google.
+La configuración de atributos de preferencia también te permite [obtener información comercial](https: //www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#???) y [medir la efectividad de tus anuncios](https: //www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#???) en plataformas como Facebook y Google.
 
 ## Ejemplo de preferencia completa
 
