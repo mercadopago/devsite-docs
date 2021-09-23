@@ -197,7 +197,7 @@ Checkout Pro se abrirá en el <code>init_point</code> definido por la preferenci
 
 ## Estilo de color 
 
-Agregue el atributo `theme`, de acuerdo con el ejemplo a continuación, a las opciones de inicio de Checkout Pro para personalizar el color del encabezado y sus elementos:
+Agrega el atributo `theme`, de acuerdo con el ejemplo a continuación, a las opciones de inicio de Checkout Pro para personalizar el color del encabezado y tus elementos:
 
 [[[
 ```html
