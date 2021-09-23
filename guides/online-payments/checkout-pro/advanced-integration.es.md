@@ -6,7 +6,7 @@ Optimiza tu integración con funciones adicionales que te permitirán administra
 
 Las notificaciones IPN (_ Notificación de Pago Instantáneo_) son una forma automática de notificar la creación de nuevos pagos y las actualizaciones de su _estado_, es decir, si fueron aprobados, rechazados o si están pendientes.
 
-Las notificaciones automáticas le permiten administrar su inventario y mantener su sistema sincronizado con los flujos de pago de su negocio. Aprenda a recibir notificaciones IPN [aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn).
+Las notificaciones automáticas te permiten administrar tu inventario y mantener tu sistema sincronizado con los flujos de pago de tu negocio. Aprende a recibir notificaciones IPN [aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn).
 
 ## Agrega información adicional a la preferencia
 
