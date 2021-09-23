@@ -269,7 +269,7 @@ theme: {
 
 ![Light Color Button](/images/web-payment-checkout/light_color_button.png)
 
-Los elementos de color oscuro tendrán su color de texto en blanco o `#fff`. Por ejemplo:
+Los elementos de color oscuro tendrán el texto en color blanco o `#fff`. Por ejemplo:
 
 ```javascript
 theme: {
