@@ -1,8 +1,12 @@
 # Autoriza y vincula cuentas en tus aplicaciones
 
-Si en tu integración necesitas gestionar varias cuentas de Mercado Pago a la vez, solo tienes que realizar una vinculación entre tu aplicación y las cuentas de otras personas.
+OAuth es una funcionalidad de vinculación segura que permite que el vendedor ingrese a su cuenta de Mercado Pago, autorice la vinculación y habilite a tu aplicación para operar en su nombre. Si necesitas gestionar varias cuentas de Mercado Pago a la vez en tu integración, puedes hacerlo a través de OAuth.
 
-Puedes hacerlo a través de OAuth, una funcionalidad de vinculación segura que permite que el vendedor ingrese a su cuenta de Mercado Pago, autorice la vinculación y habilite a tu aplicación para operar en su nombre. 
+> WARNING 
+> 
+> Importante
+> 
+> Si solo necesitas gestionar tus credenciales en tu integración, no es necesario que integres esta funcionalidad. Para conocer más sobre los dos tipos de credenciales, ve a la documentación de [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials). 
 
 ## Cómo incorporar OAuth 
 
@@ -12,10 +16,12 @@ Para comenzar, sigue estos pasos:
 1. Crea o configura tu aplicación.
 2. Vincula una cuenta de Mercado Pago con tu aplicación.
 3. Genera las credenciales para operar.
+4. Renueva las credenciales
+5. Configura las notificaciones
 
 <br>
 
-### Crea y configura tu aplicación
+## Crea y configura tu aplicación
 
 Primero debes tener creada [tu aplicación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications/create-app) con un nombre único que la identifique.
 
@@ -25,7 +31,7 @@ En el campo Redirect URL, agrega la dirección a la que quieres redirigir a los 
 
 Finalmente, debes obtener el ID de tu aplicación en [Tus Integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).  
 
-### Vincula una cuenta de Mercado Pago con tu aplicación
+## Vincula una cuenta de Mercado Pago con tu aplicación
 
 Para operar en nombre de tus vendedores a través de sus cuentas de Mercado Pago, primero debes solicitarles su autorización.
 Para esto, debes incluir en tu aplicación una URL que redirija al vendedor al sitio de autorización. 
@@ -46,7 +52,7 @@ https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&resp
 
 Al ingresar a esta URL, el vendedor será redirigido a Mercado Pago, donde deberá iniciar sesión con su cuenta y autorizar la vinculación con tu aplicación.
 
-![FlujoOAuth-es](/images/oauth/oauth-es.png)
+![FlujoOAuth-es](/images/oauth/oauth-es-v2.png)
 
 Una vez que el vendedor haya autorizado a tu aplicación a vincularse con su cuenta de Mercado Pago, en tu servidor recibirás el código de autorización en la Redirect URL que especificaste. Se verá de esta manera: 
 
@@ -58,7 +64,7 @@ https://www.redirect-url.com?code=CODE&state=RANDOM_ID
 
 > SERVER_SIDE
 >
-> h3
+> h2
 >
 > Genera las credenciales para operar
 
@@ -68,7 +74,8 @@ Los parámetros que debes incluir son:
 
 | Parámetro | Dato a completar |
 | ----------------- | ----------------- |
-| `client_secret` | Este es tu `ACCESS_TOKEN`. Puedes obtenerlo desde [Tus Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials). |
+| `client_secret` | Llave privada que se utiliza en algunos complementos para generar pagos. Puedes obtenerlo desde [Tus Credenciales]([FAKER][CREDENTIALS][URL]). |
+| `client_id` | ID único que identifica tu integración. |
 | `grant_type` | Indica el tipo de operación a realizar para obtener las credenciales. Este parámetro es fijo y lleva como valor `authorization_code`. |
 | `code` | El código de autorización o `CODE` que obtienes en tu servidor al realizar la vinculación. Deberá verse similar a este valor: `TG-60357f5d0cd06d000740646d-643464554`. | 
 | `redirect_uri` | Es la URL que configuraste en el campo Redirect URL en tu aplicación. |
@@ -78,7 +85,8 @@ curl -X POST \
      -H 'accept: application/json' \
      -H 'content-type: application/x-www-form-urlencoded' \
      'https://api.mercadopago.com/oauth/token' \
-     -d 'client_secret=ACCESS_TOKEN' \
+     -d 'client_secret=CLIENT_SECRET' \
+     -d 'client_ID=CLIENT_ID' \
      -d 'grant_type=authorization_code' \
      -d 'code=CODE' \
      -d 'redirect_uri=REDIRECT_URI'
@@ -125,14 +133,16 @@ curl -X POST \
      -H 'accept: application/json' \
      -H 'content-type: application/x-www-form-urlencoded' \
      'https://api.mercadopago.com/oauth/token' \
-     -d 'client_secret= ACCESS_TOKEN' \
+     -d 'client_secret=CLIENT_SECRET' \
+     -d 'client_id=CLIENT_ID' \
      -d 'grant_type=refresh_token' \
      -d 'refresh_token=USER_REFRESH_TOKEN'
 ```
 
 | Parámetro | Dato a completar |
 | ----------------- | ----------------- |
-| `client_secret` | Utiliza tu `ACCESS_TOKEN`. |
+| `client_secret` | Utiliza tu llave `client_secret`. |
+| `client_id` | Utiliza tu credencial `client_id`. |
 | `grant_type` | Incluye `refresh_token`, que no se modifica. |
 | `refresh_token` | Valor que recibiste junto con los datos del vendedor. | 
 

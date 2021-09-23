@@ -1,21 +1,27 @@
 # Authorize and link accounts to your applications
 
-If your integration needs to manage several Mercado Pago accounts at the same time, you only need to link your application to other people's accounts.
+OAuth is a feature for secure linking that allows sellers to access their Mercado Pago account to authorize and enable your application to work under their name. If you need to manage several Mercado Pago accounts at the same time in your integration, you can do it through OAuth.
 
-You can use OAuth, a feature for secure linking that allows sellers to access their Mercado Pago account to authorize and enable your application to work under their name. 
+> WARNING 
+> 
+> Important
+> 
+> If you only need to manage your credentials in your integration, you don’t need to integrate this functionality. To learn more about the two types of credentials, go to the [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) documentation.
 
 ## How to add OAuth 
 
 To link your application account to your sellers' accounts, you need to make an authorization through OAuth.
 
 To start, follow these steps:
-1. Create or set up your application.
+1. Create and set up your application.
 2. Link a Mercado Pago account to your application.
 3. Generate credentials to operate.
+4. Refresh your credentials
+5. Set up notifications
 
 <br>
 
-### Create and set up your application
+## Create and set up your application
 
 First you must have your [application created](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications/create-app) with a unique name.
 
@@ -25,7 +31,7 @@ In Redirect URL field add the URL to where you would like to redirect your selle
 
 Lastly, you need to get your application ID in [Your Integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).   
 
-### Link a Mercado Pago account to your application
+## Link a Mercado Pago account to your application
 
 To operate on your seller's name via their Mercado Pago accounts you need to request their authorization first. 
 To do this, you need to include a URL in your application to redirect sellers to the authorization site. 
@@ -47,10 +53,10 @@ https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&resp
 When entering this URL, the seller will be redirected to Mercado Pago to log in their account and authorize the link to your application.
 
 ----[mla, mlm, mlc, mco, mpe, mlu]----
-![FlujoOAuth-es](/images/oauth/oauth-es.png)
+![FlujoOAuth-es](/images/oauth/oauth-es-v2.png)
 ------------
 ----[mlb]----
-![FlujoOAuth-pt](/images/oauth/oauth-pt.png)
+![FlujoOAuth-pt](/images/oauth/oauth-pt-v2.png)
 ------------
 
 Once the seller has authorized your application to link with their Mercado Pago account, you will receive an authorization code in the specified Redirect URL. It will appear like this: 
@@ -63,7 +69,7 @@ https://www.redirect-url.com?code=CODE&state=RANDOM_ID
 
 > SERVER_SIDE
 >
-> h3
+> h2
 >
 > Generate credentials to operate
 
@@ -73,7 +79,8 @@ These are the parameters to include:
 
 | Parameter | Data to fill out |
 | ----------------- | ----------------- |
-| `client_secret` | This is your `ACCESS_TOKEN`. You can get it in [Your Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials). |
+| `client_secret` | Private key to be used in some plugins to generate payments. You can get it in [Your credentials]([FAKER][CREDENTIALS][URL]). |
+| `client_id` | Unique ID that identifies your integration. You can get it in [Your credentials]([FAKER][CREDENTIALS][URL]). |
 | `grant_type` | Specify type of operation to perform to get your credentials. This is a fixed parameter with an `authorization_code` value. |
 | `code` | The authorization code or `CODE` you get in your server for linking. It will be similar to this value: `TG-60357f5d0cd06d000740646d-643464554`. | 
 | `redirect_uri` | This is the URL you set up in the Redirect URL field in your application. |
@@ -83,7 +90,8 @@ curl -X POST \
      -H 'accept: application/json' \
      -H 'content-type: application/x-www-form-urlencoded' \
      'https://api.mercadopago.com/oauth/token' \
-     -d 'client_secret=ACCESS_TOKEN' \
+     -d 'client_secret=CLIENT_SECRET' \
+     -d 'client_ID=CLIENT_ID' \
      -d 'grant_type=authorization_code' \
      -d 'code=CODE' \
      -d 'redirect_uri=REDIRECT_URI'
@@ -129,14 +137,16 @@ curl -X POST \
      -H 'accept: application/json' \
      -H 'content-type: application/x-www-form-urlencoded' \
      'https://api.mercadopago.com/oauth/token' \
-     -d 'client_secret= ACCESS_TOKEN' \
+     -d 'client_secret=CLIENT_SECRET' \
+     -d 'client_id=CLIENT_ID' \
      -d 'grant_type=refresh_token' \
      -d 'refresh_token=USER_REFRESH_TOKEN'
 ```
 
 | Parameter | Description |
 | ----------------- | ----------------- |
-| `client_secret` | Use your `ACCESS_TOKEN`. |
+| `client_secret` | Use your `client_secret` key. |
+| `client_id` | Use your `client_id` credential. |
 | `grant_type` | Include `refresh_token` that remains unchanged. |
 | `refresh_token` | Value received with your seller's data. | 
 
