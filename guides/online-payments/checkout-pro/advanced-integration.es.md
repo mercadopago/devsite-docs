@@ -2,7 +2,7 @@
 
 Optimiza tu integración con funciones adicionales que te permitirán administrar mejor tus pagos de ventas con Checkout Pro.
 
-## Reciba notificaciones de pago
+## Recibe notificaciones de pago
 
 Las notificaciones IPN (_ Notificación de Pago Instantáneo_) son una forma automática de notificar la creación de nuevos pagos y las actualizaciones de su _estado_, es decir, si fueron aprobados, rechazados o si están pendientes.
 
