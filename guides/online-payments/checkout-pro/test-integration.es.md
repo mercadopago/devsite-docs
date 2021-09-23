@@ -20,7 +20,7 @@ curl -X POST \
 "https://api.mercadopago.com/users/test_user" \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
-La respuesta tendrá una estructura similar al ejemplo siguiente:
+La respuesta tendrá una estructura similar al siguiente ejemplo:
 
 ```json
 {
