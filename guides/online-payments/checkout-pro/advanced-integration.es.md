@@ -277,7 +277,7 @@ preference_data = {
 
 Al final del proceso de pago, tienes la opción de redireccionar al comprador a tu sitio web nuevamente.
 
-Para hacer esto, agregue el atributo `back_urls` y defina, de acuerdo con el estado del pago, la página deseada para redirigir a su comprador cuando haga clic en el botón regresar al sitio.
+Para hacer esto, agrega el atributo `back_urls` y define, de acuerdo con el estado del pago, la página deseada para redireccionar a tu comprador cuando haga clic en el botón regresar al sitio.
 
 Si quieres que la redirección sea automática para los pagos aprobados, sin mostrar un botón de retorno, también debes agregar el atributo `auto_return` con el valor de `approved`.
 
