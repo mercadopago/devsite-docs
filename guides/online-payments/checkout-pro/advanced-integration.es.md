@@ -392,7 +392,7 @@ preference_data = {
 
 Un pago puede ser rechazado porque el emisor del medio de pago detecta un problema o porque no se cumple con los requisitos de seguridad necesarios.
 
-Evita pagos rechazados con nuestras mejores práticas y [mejora la aprobación de tus pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/payment-rejections).
+Evita pagos rechazados con nuestras mejores prácticas y [mejora la aprobación de tus pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/payment-rejections).
 
 ## Gestiona cancelaciones y devoluciones
 
