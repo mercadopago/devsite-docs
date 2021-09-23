@@ -20,9 +20,9 @@ A **physical shop** in which your clients can get products and services. You can
 
 ### How to create a store?
 
-To create a store, is importante to declare name, working hours, location and an identifier. 
+To create a store, it is important to declare name, working hours, location and an identifier. 
 
-Run the next code to generate a store: 
+Run the following code to generate a store: 
 
 [[[
  ```curl
@@ -111,9 +111,9 @@ Learn more with our [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/
 > 
 > Important
 > 
-> After April 20th, 2021, Point of Sales can not be created without an assigned store.
+> After April 20th, 2021, Point of Sales cannot be created without an assigned store.
 
-Once Point of Sale is created, you’ll be able to see the QR files in the _Response_ section, along with other relevant data. 
+Once the Point of Sale is created, you’ll be able to see the QR files in the _Response_ section, along with other relevant data. 
 
 
 ---
@@ -123,7 +123,7 @@ Once Point of Sale is created, you’ll be able to see the QR files in the _Resp
 >
 > Integrate QR attended model
 >
-> Learn step by step how to integrate this model.
+> Learn how to integrate this model step by step.
 >
 > [Integrate QR attended model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/qr-attended/introduction)
 

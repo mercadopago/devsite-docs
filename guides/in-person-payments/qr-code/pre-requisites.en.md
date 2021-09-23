@@ -80,11 +80,11 @@ Response:
 > 
 > IMPORTANT
 > 
-> * You can generate up to 10 test accounts at the same time. Because of that, we recommend to save email and password for each one. 
+> * You can generate up to 10 test accounts at the same time. Because of that, we recommend saving email and password for each one. 
 > * Test users expire after 60 days of no activity on Mercado Pago.
 > * To make test payments we recommend to use low amounts. 
 > * Both buyer and seller should test users. 
-> * Use test cards, because is not possible to withdraw money. 
+> * Use test cards, because it is not possible to withdraw money. 
 
 Once the test users are created, you can start with the integration and create the Stores and Point of Sale.
 
