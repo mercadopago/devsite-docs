@@ -171,7 +171,7 @@ De forma predeterminada, todos los métodos de pago se ofrecen en Checkout Pro. 
 | --- | --- |
 | `payment_methods` | Clase que describe los métodos y atributos de medios de pago de Checkout Pro. |
 | `excluded_payment_types` | Método que excluye tipos de [medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods#bookmark_medios_de_pago_por_país) no deseados, como efectivo, tarjetas de crédito, o débito. |
-| `excluded_payment_methods` | Método que excluye banderas de tarjetas de crédito o débito, como Visa, Mastercard o American Express, entre otras. |
+| `excluded_payment_methods` | Método que excluye marcas de tarjetas de crédito o débito, como Visa, Mastercard o American Express, entre otras. |
 | `installments` | Método que define la cantidad de cuotas máximas a ofrecer. |
 | `purpose` | Al indicar el valor "wallet_purchase" en este método, Checkout Pro solo aceptará pagos de usuarios registrados en Mercado Pago, con tarjeta y saldo de cuenta. |
 ------------
