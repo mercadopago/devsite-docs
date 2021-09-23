@@ -190,7 +190,7 @@ paths:
             example: 446566691
         - name: external_store_id
           in: path
-          description: custom id of the store asosiated to the purchase
+          description: Custom Store Id associated to the order.
           required: true
           schema:
             type: string
