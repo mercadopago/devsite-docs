@@ -21,7 +21,7 @@ If all prerequisites are met, you can install the plugin.
 
 > LEFT_BUTTON_REQUIRED_EN
 >
-> Plugin installation
+> Plugin installation.
 >
 > Follow the steps below to install the Mercado Pago plugin with WooCommerce.
 >
