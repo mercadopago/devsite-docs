@@ -222,7 +222,7 @@ Agrega el atributo `theme`, de acuerdo con el ejemplo a continuación, a las opc
 
 ### Encabezado
 
-Cambia el color del encabezado agregando el atributo `headerColor` al objeto` theme`. Tenga en cuenta que el valor del atributo debe estar en formato hexadecimal.
+Cambia el color del encabezado agregando el atributo `headerColor` al objeto` theme`. Ten en cuenta que el valor del atributo debe estar en formato hexadecimal.
 
 Por ejemplo:
 
