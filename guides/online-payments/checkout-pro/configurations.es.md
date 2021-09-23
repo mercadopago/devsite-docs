@@ -404,7 +404,7 @@ Ten en cuenta los [tiempos de acreditación por medio de pago](https://www.merca
 > Si el pago se realiza después de la fecha de vencimiento, el monto se devolverá a la cuenta de Mercado Pago del pagador.
 ------------
 
-## Habilita el modo binario
+## Activa el modo binario
 
 Puedes activar el modo binario si el modelo de negocio requiere que la aprobación del pago sea instantánea. De esta forma, el pago solo puede resultar aprobado o rechazado.
 
