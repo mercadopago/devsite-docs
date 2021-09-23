@@ -1,8 +1,8 @@
 # Sales Processing
 
-With all steps completed, your customers will be able to make purchases from your store. When performing a transaction, it is common for some messages to return with specific information about the purchase. This information is available in the **Notas do Pedido** section of the WooCommerce panel.
+With all steps completed, your customers will be able to make purchases from your store. When performing a transaction, it is common for some messages to return with specific information about the purchase. This information is available in the **Order notes** section of the WooCommerce panel.
 
-![Sales processing](/images/woocomerce/en_sales_processing.gif)
+![Sales processing](/images/woocomerce/en_order_notes_03.png)
 
 In this section, you will have access to details of the possible status and reasons for each return.
 
@@ -10,7 +10,7 @@ In this section, you will have access to details of the possible status and reas
 
 Every sale generates a payment status that shows the condition of the purchase, including confirmation, pending, or denial of payment and other important information about the transaction.
 
-There are two statuses in a WooCommerce sale: _status do pedido_ and _status do pagamento_. In the following table, you can check the details on how this information correlates.
+There are two statuses in a WooCommerce sale: **payment status** and **order status**. In the following table, you can check the details on how this information correlates.
 
 | Mercado Pago status (payment) | WooCommerce status (order) |
 |---|---|
@@ -23,7 +23,7 @@ There are two statuses in a WooCommerce sale: _status do pedido_ and _status do 
 | Refunded | Refunded |
 | Chargedback| Refunded|
 
-For more information, access the [Activities](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) section of your Mercado Pago account and the [WooCommerce order manual](https://docs.woocommerce.com/document/como-gerenciar-pedidos/).
+For more information, access the [Activities](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) section of your Mercado Pago account and the [WooCommerce order manual](https://docs.woocommerce.com/document/managing-orders/).
 
 In addition, you can have access to the details of each payment attempt that happened in your store. To do this, go to the WordPress panel, and then click **WooCommerce > Orders > Order Details**.
 
