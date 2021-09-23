@@ -410,7 +410,7 @@ Puedes activar el modo binario si el modelo de negocio requiere que la aprobaci�
 
 En caso de no estar activado el modo binario, el pago puede quedar en pendiente (en caso de requerir alguna acción por parte del comprador) o en proceso (si es necesaria una revisión manual).
 
-Para habilitarlo, solo debes configurar como `true` el atributo `binary_mode` de la preferencia de pago:
+Para activarlo, solo debes configurar como `true` el atributo `binary_mode` de la preferencia de pago:
 
 ```json
 "binary_mode": true
