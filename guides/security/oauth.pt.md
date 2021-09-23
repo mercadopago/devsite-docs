@@ -1,6 +1,6 @@
 # Autorize e vincule contas em suas aplicações
 
-OAuth é um protocolo de autenticação que permite ao vendedor acessar sua conta do Mercado Pago, realizar a autenticação  e habilitar seu aplicativo para funcionar utilizando seu nome. Caso seja necessário gerenciar mais de uma conta do Mercado Pago ao mesmo tempo em sua integração, é possível fazê-lo através do OAuth.
+OAuth é um protocolo de autenticação que permite ao vendedor acessar sua conta do Mercado Pago, realizar a autenticação  e habilitar seu aplicativo para funcionar utilizando seu nome. Caso seja necessário gerenciar mais de uma conta do Mercado Pago simultaneamente em sua integração, é possível fazê-lo através do OAuth.
 
 > WARNING 
 > 
