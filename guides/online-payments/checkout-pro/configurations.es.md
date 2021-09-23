@@ -440,7 +440,7 @@ El valor del atributo aparecerá en el resumen de la tarjeta de tu comprador dep
 
 ## Establece una preferencia para múltiples ítems
 
-Si se necesita crear una preferencia para más de un ítems, solo debes agregarlos como una lista, como se muestra en el siguiente ejemplo:
+Si se necesita crear una preferencia para más de un ítem, solo debes agregarlos como una lista, tal como se muestra en el siguiente ejemplo:
 
 [[[
 ```php
