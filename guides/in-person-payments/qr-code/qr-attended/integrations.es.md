@@ -16,39 +16,6 @@ Te explicamos cómo funciona el modelo atendido:
 
 ## Crear una orden
 
-----[mla, mpe, mlb, mlc, mlu, mlm]---- 
-```curl
-curl -X PUT \
--H 'Authorization: Bearer ACCESS_TOKEN' \
-https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/stores/EXTERNAL_STORE_ID/pos/EXTERNAL_POS_ID/orders \
--d \
-{
-    "external_reference": "order-id-1234",
-    "title": "Title",
-    "description": "Mercado Pago",
-    "notification_url": "www.yourserver.com",
-    "expiration_date": "2023-08-22T16:34:56.559-04:00",
-    "total_amount": 100.0,
-    "items": [
-        {
-            "sku_number": "KS955RUR",
-            "category": "FOOD",
-            "title": "Item1",
-            "description": "Item1 Mercado Pago",
-            "unit_price": 20,
-            "quantity": 5,
-            "unit_measure": "unit",
-            "total_amount": 100
-        }
-    ],
-    "sponsor": {
-        "id": 446566691
-    }
-}
-```
-------------
-
-----[mco]----
 ```curl
 curl -X PUT \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
@@ -60,31 +27,30 @@ https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/stores/EXTERNAL
     "description": "Mercado Pago",
     "notification_url": "https://www.yourserver.com",
     "expiration_date": "2023-08-22T16:34:56.559-04:00",
-    "total_amount": 11900,
+    "total_amount": 1190,
     "items": [
         {
             "sku_number": "KS955RUR",
             "category": "FOOD",
             "title": "Item1",
             "description": "Item1 Mercado Pago",
-            "unit_price": 2380,
+            "unit_price": 238,
             "quantity": 5,
             "unit_measure": "unit",
-            "total_amount": 11900
+            "total_amount": 1190
         }
     ],
     "sponsor": {
                 "id": 820480089
-            },
+            }----[mco]----,
     "taxes": [
         {
-            "value": 1900,
+            "value": 190,
             "type": "IVA"
         }
-    ]
+    ]------------
 }
 ```
-------------
 
 Puedes obtener más información en la [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put).
 

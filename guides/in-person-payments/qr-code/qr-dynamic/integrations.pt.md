@@ -18,72 +18,40 @@ Primeiro, gera a publicação de ordem. Assim que os dados sejam enviados para o
 
 Execute a seguinte chamada para a API a fim de gerar uma ordem. Na resposta, você vai receber o dado necessário para criar o código QR.
 
-----[mla, mpe, mlb, mlc, mlu, mlm]----
 ```curl
 curl -X POST \
  https://api.mercadopago.com/instore/orders/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/qrs \
   -H 'Authorization: Bearer ACCESS_TOKEN' \
  -d '{
-   "external_reference": "order-id-1234",
-   "total_amount": 40.0,
-   "items": [
-       {
-           "sku_number": "KS955RUR",
-           "category": "LIBRERIA",
-           "title": "Lapicera",
-           "description": "Lapicera verde",
-           "quantity": 2,
-           "unit_measure": "unit",
-           "unit_price": 20,
-           "total_amount": 40
-       }
-   ],
-   "title": "Compra en Librería",
-   "description": "Compra y retiro",
-   "sponsor": {
-       "id": 446566691
-   },
-   "notification_url": "https://www.yourserver.com/notifications"
-}'
-```
-------------
-
-----[mco]----
-```curl
-curl -X POST \
- https://api.mercadopago.com/instore/orders/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/qrs \
-  -H 'Authorization: Bearer ACCESS_TOKEN' \
- -d '{
-   "external_reference": "order-id-1234",
-   "total_amount": 100000,
-   "items": [
-       {
-           "sku_number": "KS955RUR",
-           "category": "LIBRERIA",
-           "title": "Libro",
-           "description": "Libro",
-           "quantity": 2,
-           "unit_measure": "unit",
-           "unit_price": 50000,
-           "total_amount": 100000
-       }
-   ],
-   "title": "Compra en Librería",
-   "description": "Compra y retiro",
-   "notification_url": "https://www.yourserver.com/notifications",
-   "sponsor": {
-                "id": 820480089
-    },
-   "taxes": [
+    "external_reference": "order-id-1234",
+    "title": "Title",
+    "description": "Mercado Pago",
+    "notification_url": "https://www.yourserver.com",
+    "expiration_date": "2023-08-22T16:34:56.559-04:00",
+    "total_amount": 1190,
+    "items": [
         {
-            "value": 15967,
+            "sku_number": "KS955RUR",
+            "category": "FOOD",
+            "title": "Item1",
+            "description": "Item1 Mercado Pago",
+            "unit_price": 238,
+            "quantity": 5,
+            "unit_measure": "unit",
+            "total_amount": 1190
+        }
+    ],
+    "sponsor": {
+                "id": 820480089
+            }----[mco]----,
+    "taxes": [
+        {
+            "value": 190,
             "type": "IVA"
         }
-    ]
+    ]------------
 }'
 ```
-
-------------
 
 ----[mco]----
 > Se você precisa pagar o IVA para os produtos do seu pedido, visite a [seção de Considerações IVA Colômbia](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/iva-colombia).
@@ -126,72 +94,40 @@ Além da geração do código QR, você também tem a opção de criar e atribui
 
 Execute a seguinte chamada para a API a fim de gerar uma ordem e a atribuição à caixa. Na resposta, você vai receber o dado necessário para criar o código QR.
 
-----[mla, mpe, mlb, mlc, mlu, mlm]----
 ```curl
 curl -X PUT \
  https://api.mercadopago.com/instore/orders/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/qrs \
   -H 'Authorization: Bearer ACCESS_TOKEN' \
  -d '{
-   "external_reference": "order-id-1234",
-   "total_amount": 40.0,
-   "items": [
-       {
-           "sku_number": "KS955RUR",
-           "category": "LIBRERIA",
-           "title": "Lapicera",
-           "description": "Lapicera verde",
-           "quantity": 2,
-           "unit_measure": "unit",
-           "unit_price": 20,
-           "total_amount": 40
-       }
-   ],
-   "title": "Compra en Librería",
-   "description": "Compra y retiro",
-   "sponsor": {
-       "id": 446566691
-   },
-   "notification_url": "https://www.yourserver.com/notifications"
-}'
-```
-------------
-
-----[mco]----
-```curl
-curl -X PUT \
- https://api.mercadopago.com/instore/orders/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/qrs \
-  -H 'Authorization: Bearer ACCESS_TOKEN' \
- -d '{
-   "external_reference": "order-id-1234",
-   "total_amount": 100000,
-   "items": [
-       {
-           "sku_number": "KS955RUR",
-           "category": "LIBRERIA",
-           "title": "Libro",
-           "description": "Libro",
-           "quantity": 2,
-           "unit_measure": "unit",
-           "unit_price": 50000,
-           "total_amount": 100000
-       }
-   ],
-   "title": "Compra en Librería",
-   "description": "Compra y retiro",
-   "notification_url": "https://www.yourserver.com/notifications",
-   "sponsor": {
-                "id": 820480089
-    },
-   "taxes": [
+    "external_reference": "order-id-1234",
+    "title": "Title",
+    "description": "Mercado Pago",
+    "notification_url": "https://www.yourserver.com",
+    "expiration_date": "2023-08-22T16:34:56.559-04:00",
+    "total_amount": 1190,
+    "items": [
         {
-            "value": 15967,
+            "sku_number": "KS955RUR",
+            "category": "FOOD",
+            "title": "Item1",
+            "description": "Item1 Mercado Pago",
+            "unit_price": 238,
+            "quantity": 5,
+            "unit_measure": "unit",
+            "total_amount": 1190
+        }
+    ],
+    "sponsor": {
+                "id": 820480089
+            }----[mco]----,
+    "taxes": [
+        {
+            "value": 190,
             "type": "IVA"
         }
-    ]
+    ]------------
 }'
 ```
-
-------------
 
 ## Receba notificações de suas ordens 
 
