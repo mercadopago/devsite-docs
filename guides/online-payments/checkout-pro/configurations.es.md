@@ -416,7 +416,7 @@ Para activarlo, solo debes configurar como `true` el atributo `binary_mode` de l
 "binary_mode": true
 ```
 
-## Establezca la vigencia de preferencias
+## Establece la vigencia de preferencias
 
 Si se quiere habilitar el pago de una preferencia con un tiempo de duración determinado, se puede activar un periodo de vigencia o concluir directamente con los atributos `expires`,` expiration_date_from` y `expiration_date_to`:
 
