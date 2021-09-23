@@ -296,7 +296,7 @@ Se deseja que o redirecionamento para os pagamentos aprovados seja automático, 
 Através das `back_urls`, serão retornados os seguintes parâmetros:
 
 | Parâmetro |	Descrição |
-| ------------ 	|	-------- | 
+| --- | --- | 
 | `payment_id` | ID (identificador) do pagamento do Mercado Pago. |
 | `status` | Estado do pagamento. Ex.: `approved` para um pagamento aprovado ou `pending` para um pagamento pendente. |
 | `external_reference` | Valor enviado no momento da criação da preferência de pagamento. |
