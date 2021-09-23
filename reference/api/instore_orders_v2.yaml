@@ -197,7 +197,7 @@ paths:
             example: SUC001
         - name: external_pos_id
           in: path
-          description: custom id of the POS asosiated to the purchase
+          description: Custom POS Id associated to the order.
           required: true
           schema:
             type: string
