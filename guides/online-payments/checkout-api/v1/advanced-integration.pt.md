@@ -474,14 +474,14 @@ E pode criar um formulário da seguinte maneira:
 >
 > Nova versão de MercadoPago.js
 >
-> Utilize a biblioteca MercadoPago.js V2 para seu formulário de cartão e autogere toda a lógica de negócio necessária para fazer o pagamento.<br><br>[Integrar Checkout API com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v2/advanced-integration)
+> Utilize a biblioteca MercadoPago.js V2 para seu formulário de cartão e autogere toda a lógica de negócio necessária para fazer o pagamento.<br><br>[Integrar Checkout API com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/advanced-integration)
 ------------
 ----[mlb]----
 > INFO
 >
 > Nova versão de MercadoPago.js
 >
-> Utilize a biblioteca MercadoPago.js V2 para seu formulário de cartão e autogere toda a lógica de negócio necessária para fazer o pagamento.<br><br>[Integrar Checkout Transparente com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v2/advanced-integration)
+> Utilize a biblioteca MercadoPago.js V2 para seu formulário de cartão e autogere toda a lógica de negócio necessária para fazer o pagamento.<br><br>[Integrar Checkout Transparente com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/advanced-integration)
 ------------
 
 

@@ -29,14 +29,14 @@ Te recomendamos usar las librerías oficiales para tu integración. Esto permite
 >
 > Nueva versión MercadoPago.js
 >
-> Utiliza la librería MercadoPago.js V2 para actualizarte a la última versión, autogenerar la lógica de negocio en tu formulario de pagos con tarjeta y mejorar la compatibilidad con los distintos navegadores.<br><br>[Integrar Checkout Transparente con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/previous-requirements)
+> Utiliza la librería MercadoPago.js V2 para actualizarte a la última versión, autogenerar la lógica de negocio en tu formulario de pagos con tarjeta y mejorar la compatibilidad con los distintos navegadores.<br><br>[Integrar Checkout Transparente con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements)
 ------------
 ----[mla, mlm, mco, mlc, mlu]----
 > INFO
 >
 > Nueva versión MercadoPago.js
 >
-> Utiliza la librería MercadoPago.js V2 para actualizarte a la última versión, autogenerar la lógica de negocio en tu formulario de pagos con tarjeta y mejorar la compatibilidad con los distintos navegadores.<br><br>[Integrar Checkout API con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/previous-requirements)
+> Utiliza la librería MercadoPago.js V2 para actualizarte a la última versión, autogenerar la lógica de negocio en tu formulario de pagos con tarjeta y mejorar la compatibilidad con los distintos navegadores.<br><br>[Integrar Checkout API con MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements)
 ------------
 
 MercadoPago.js te permite gestionar los datos de la tarjeta para cumplir con los requerimientos de seguridad necesarios y evitar el envío de datos sensibles a tus servidores. Para ello, nuestra librería genera un token que representa esta información y te permite operar de forma segura. Puedes utilizarla sumando el siguiente código en tu sitio:
