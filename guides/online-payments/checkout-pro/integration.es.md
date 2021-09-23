@@ -6,7 +6,7 @@ La integración con el Checkout Pro de Mercado Pago te permite cobrar a través 
 >
 > Buenas prácticas
 >
-> Utilice nuestro [video tutorial](#bookmark_video_tutorial) y el [ejemplo de implementación básica](#bookmark_ejemplos_descargables) para comprender más sobre la integración completa con Checkout Pro.
+> Utiliza nuestro [video tutorial](#bookmark_video_tutorial) y el [ejemplo de implementación básica](#bookmark_ejemplos_descargables) para comprender más sobre la integración completa con Checkout Pro.
 
 ## Paso a passo
 
