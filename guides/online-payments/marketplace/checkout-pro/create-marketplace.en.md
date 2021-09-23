@@ -27,28 +27,15 @@ Lastly, you need to get your application ID in [Your Integrations](https://www.m
 
 ## Link your application with your sellers' accounts.
 
-<<<<<<< HEAD
-<br>
-
-2.2. When the seller accepts, a last redirect is made and you will receive the authorization code in the URL that you specified:
-=======
 To operate in Mercado Pago on behalf of your seller, you need to request their authorization first. To manage several Mercado Pago accounts at the same time in your integration, you can do it through OAuth, a feature for secure linking that allows sellers to access their Mercado Pago account to authorize and enable your application to work under their name.
->>>>>>> 55612f33714f2706f96c2883e6ed5df99c9216bf
 
 To do this, you need to include a URL in your application to redirect sellers to the authorization site. 
 
-<<<<<<< HEAD
-This `AUTHORIZATION_CODE` must be used to create the credentials that allow you to operate on behalf of the seller. This code will be valid for 10 minutes since its reception.
-
-<br>
-
-2.3. You can also include the `state` parameter in the URL authorization to identify who is responsible for the code you received. Do this in a safe manner and assign a random identifier in the parameter which is unique for each attempt.
-=======
 This is the example URL you can use. You will also find the details of parameters to fill it out.
 
 ```url
 https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com
->>>>>>> 55612f33714f2706f96c2883e6ed5df99c9216bf
+```
 
 > SERVER_SIDE
 >
