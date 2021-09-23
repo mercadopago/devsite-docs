@@ -183,7 +183,7 @@ paths:
       parameters:
         - name: user_id
           in: path
-          description: Last digits after '-' symbol in seller's access token
+          description: Find the User Id in your developer dashboard at our devsite
           required: true
           schema:
             type: string
