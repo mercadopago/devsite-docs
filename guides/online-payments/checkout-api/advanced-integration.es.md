@@ -43,7 +43,7 @@ mercadopago.customers.create(customer_data).then(function (customer) {
 
   var card_data = {
     "token": "9b2d63e00d66a8c721607214cedaecda",
-    "customer": customer.id,
+    "customer_id": customer.id,
     "issuer_id": "23",
     "payment_method_id": "debit_card"
   }
@@ -221,7 +221,7 @@ mercadopago.customers.search({
 }).then(function (customer) {
   card_data = {
     "token": "9b2d63e00d66a8c721607214cedaecda",
-    "customer": customer.id,
+    "customer_id": customer.id,
     "issuer_id": "3245612",
     "payment_method_id": "debit_card"
   }

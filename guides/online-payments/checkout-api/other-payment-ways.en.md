@@ -165,7 +165,7 @@ Add the following form with the styles you want.
         <option>Select a payment form</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Buyer Details</h3>
@@ -759,7 +759,7 @@ Add the following form with the styles you want.
         <option>Select a payment form</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Buyer Details</h3>
@@ -1186,7 +1186,7 @@ Add the following form with the styles you want.
         <option>Select a payment form</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Buyer Details</h3>
@@ -1663,7 +1663,7 @@ Add the following form with the styles you want.
         <option>Select a payment form</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Buyer Details</h3>
@@ -2371,7 +2371,7 @@ Add the following form with the styles you want.
         <option>Select a payment form</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Buyer Details</h3>
@@ -3004,7 +3004,7 @@ Add the following form with the styles you want.
         <option>Select a payment form</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Buyer Details</h3>
@@ -3466,7 +3466,7 @@ Add the following form with the styles you want.
         <option>Select a payment form</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Buyer Details</h3>
