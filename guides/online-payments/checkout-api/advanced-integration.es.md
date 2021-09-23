@@ -48,7 +48,7 @@ mercadopago.customers.create(customer_data).then(function (customer) {
     "payment_method_id": "debit_card"
   }
 
-  mercadopago.cards.create(card_data).then(function (card) {
+  mercadopago.card.create(card_data).then(function (card) {
     console.log(card);
   });
 
@@ -226,7 +226,7 @@ mercadopago.customers.search({
     "payment_method_id": "debit_card"
   }
 
-  mercadopago.cards.create(card_data).then(function (card) {
+  mercadopago.card.create(card_data).then(function (card) {
     console.log(card);
   });
 });
