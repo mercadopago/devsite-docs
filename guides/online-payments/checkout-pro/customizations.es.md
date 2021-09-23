@@ -8,7 +8,7 @@ Puedes personalizar cómo abre Checkout Pro a través de roles y atributos para 
 
 ### Abrir Checkout Pro sin botón de pago
 
-Utilice el método `open` para abrir Checkout desde cualquier elemento deseado de su _sitio_, sin mostrar necesariamente el botón de pago a sus compradores.
+Utiliza el método `open` para abrir Checkout desde cualquier elemento deseado de tu _sitio_, sin mostrar necesariamente el botón de pago a tus compradores.
 
 Por ejemplo:
 
