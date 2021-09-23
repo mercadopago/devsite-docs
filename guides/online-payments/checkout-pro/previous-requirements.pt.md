@@ -74,7 +74,7 @@ pip3 install mercadopago
 
 ### 3. Obtenha suas credenciais
 
-As credenciais são chaves únicas que te fornecemos para que você possa configurar as suas integrações.
+As credenciais são chaves únicas que fornecemos para que você possa configurar as suas integrações.
 
 Para encontrá-las, veja a [seção de Credenciais]([FAKER][CREDENTIALS][URL]) no seu Painel de desenvolvedor.
 
