@@ -428,7 +428,7 @@ Si se quiere habilitar el pago de una preferencia con un tiempo de duración det
 
 Nota que la fecha usa el formato `ISO 8601: yyyy-MM-dd'T'HH:mm:ssz`.
 
-### Envia descripción en el resumen de la tarjeta
+### Envía una descripción en el resumen de la tarjeta
 
 Puede agregar una descripción para su negocio a través del atributo `statement_descriptor` de las preferencias de pago, como se muestra en el siguiente ejemplo:
 
