@@ -290,7 +290,7 @@ Se deseja que o redirecionamento para os pagamentos aprovados seja automático, 
 
 | Atributo |	Descrição |
 | ------------ 	|	-------- | 
-| `auto_return` | Redireciona automaticamente compradores para o _site_ quando o pagamento é finalizado como aprovado. O valor padrão é `approved`. |
+| `auto_return` | Os compradores são redirecionados automaticamente para o  _site_ quando o pagamento é aprovado. O valor padrão é `approved`. |
 | `back_urls` | URL de retorno ao site. Possíveis cenários são: `success`: URL de retorno perante pagamento aprovado.<br/><br/>`pending`: URL de retorno perante pagamento pendente.<br/><br/>`failure`: URL de retorno perante pagamento rejeitado.
 
 Através das `back_urls`, serão retornados os seguintes parâmetros:
