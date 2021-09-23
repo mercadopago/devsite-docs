@@ -1,6 +1,6 @@
 # Personalizaciones
 
-Personalice Checkout Pro según su modelo de negocio para ofrecer la mejor experiencia de compra posible a tus compradores.
+Personaliza Checkout Pro según tu modelo de negocio para ofrecer la mejor experiencia de compra posible a tus compradores.
 
 ## Apertura del Checkout Pro
 
