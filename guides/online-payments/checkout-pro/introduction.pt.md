@@ -38,7 +38,7 @@ O Checkout Pro é a integração que **te permite cobrar através do nosso formu
 ## Diferenças do Checkout Pro para outras soluções do Mercado Pago
 
 ----[mla, mlb]----
-|                                       | Checkout Pro | Web Tokenize Checkout | API |
+| Checkout Pro | Web Tokenize Checkout | API |
 | :--- | :---: | :---: | :---: |
 | Dificuldade de integração             | Baixa | Média | Alta |
 | Design UI/UX                          | ✔ | ✔ |   |
