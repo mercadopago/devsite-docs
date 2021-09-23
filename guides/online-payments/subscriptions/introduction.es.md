@@ -41,6 +41,8 @@ En el siguiente gráfico muestra cómo actúa la fecha de facturación y el even
 
 Si estableces una fecha de facturación para una suscripción que también tiene un periodo de prueba gratuito establecido, el monto proporcional solo se cobrará al suscriptor un mes después de su adhesión, como se muestra en el siguiente gráfico.
 
+![Basic-subscriptions](/images/subscriptions/linea-cobro-trial-ES.png)
+
 ------------
 ### Próximos pasos
 > LEFT_BUTTON_REQUIRED_ES
