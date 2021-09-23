@@ -378,7 +378,7 @@ Puedes consultar otras maneras de abrir el checkout en la sección de [Personali
 
 ## Video tutorial
 
-Implemente la solución Checkout Pro en su sitio con nuestro video tutorial sobre la integración:
+Implementa la solución Checkout Pro en tu sitio con nuestro video tutorial sobre la integración:
 
 <div class="embed-container">
     <iframe width="1106" height="622" src="https://www.youtube.com/embed/x1DCjagVUKY" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
