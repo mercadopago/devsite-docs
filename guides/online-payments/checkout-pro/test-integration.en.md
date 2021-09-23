@@ -5,11 +5,11 @@ The **test users allow you to test your Checkout Pro** by generating payment flo
 | Test users type | Description |
 | --- | --- |
 | Seller | It is the account you use to **configure the application and credentials for collection**. |
-| Buyer | It is the account you use to **test the purchase process.**<br/><br/>There are two ways to make the payment: as a **guest user**, using an email address of your choice, and as a **registered user**, using a Mercado Pago account with username and password. In this last scenario, money available in the account and presaved cards will be enabled as payment methods. |
+| Buyer | It is the account you use to **test the purchase process.**<br/><br/>There are two ways to make the payment: as a **guest user**, using an email address of your choice, and as a **registered user**, using a Mercado Pago account with username and password. In this last scenario, money available in the account and pre saved cards will be enabled as payment methods. |
 
-## Create users
+## Create test users
 
-To perform the tests **it is necessary that you have at least two users:** a seller and a buyer.
+To perform the tests, **you must have at least two users:** a seller and a buyer.
 
 Execute the following curl to generate a test user:
 
@@ -35,7 +35,7 @@ The answer will have a structure similar to the following example:
 
 >WARNING
 >
->Important
+> Important
 >
 > * You can generate up to 10 test user accounts simultaneously. Therefore, we recommend you _save each email and password._
 > * Test users expire after 60 days without activity in Mercado Pago.
@@ -49,7 +49,7 @@ Generate a preference with the [credentials]([FAKER][CREDENTIALS][URL]) of the t
 
 ### 2. Make a payment with your buyer user
 
-#### Purchase as guest user
+#### Purchase as a guest user
 
 When opening the checkout created with the data of your seller user:
 
@@ -57,13 +57,13 @@ When opening the checkout created with the data of your seller user:
 2. Enter the details of a [test card](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/test-integration#bookmark_tarjetas_de_prueba).
 3. Fill in the desired email.
 
-#### Buy as registered user
+#### Buy as a registered user
 
 When opening the checkout created with the data of your seller user:
 
 1. Log in to a Mercado Pago account with your buyer test user.
 2. Select `Card` as the payment method.
-3. Choose a presaved card or enter the details of a new [test card](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/test-integration#bookmark_tarjetas_de_prueba).
+3. Choose a pre saved card or enter the details of a new [test card](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/test-integration#bookmark_tarjetas_de_prueba).
 
 >WARNING
 >
@@ -161,8 +161,8 @@ Before activating them, verify if the credentials used in your integration are t
 
 > LEFT_BUTTON_REQUIRED_EN
 >
-> Preferences configuration
+> Preferences configurations
 >
 > Configure the attributes of your preferences and adapt the Checkout Pro to your business model.
 >
-> [Preferences configuration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations)
+> [Preferences configurations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations)
