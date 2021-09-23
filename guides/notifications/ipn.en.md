@@ -27,7 +27,7 @@ If your application is not available or takes too long to respond, Mercado Pago 
 4. Retry after 2 days.
 5. Retry after 4 days.
 
-Mercado Pago will notify to this URL whenever a resource is created or when orders or payment status are updated, with two parameters:
+Mercado Pago will notify this URL whenever a resource is created or when orders or payment status are updated, with two parameters:
 
 | Field | Description |
 | --- | --- |
