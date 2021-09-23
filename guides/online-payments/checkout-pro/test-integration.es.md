@@ -148,7 +148,7 @@ Para **probar distintos resultados de pago** con Checkout Pro, completa el estad
 | `EXPI` | Rechazado por problema con la fecha de expiración | 
 | `FORM` | Rechazado por error en formulario | 
 
-## Reciba los pagos
+## Recibe los pagos
 
 Para empezar a cobrar, debes [activar tus credenciales]([FAKER][CREDENTIALS][URL]).
 
