@@ -12,7 +12,7 @@ Las notificaciones automáticas te permiten administrar tu inventario y mantener
 
 Mejora la aprobación de pagos y la experiencia de Checkout Pro de tus compradores agregando información a sus preferencias que permita desglosar el artículo comprado y el usuario del comprador.
 
-La información adicional que puede agregar en las preferencias es:
+La información adicional que puedes agregar en las preferencias es:
 
 ### Datos personales del comprador
 
