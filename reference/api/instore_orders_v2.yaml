@@ -276,7 +276,7 @@ paths:
                     properties:
                       value:
                         type: number
-                        description: total amount of tax payed (this amount is not involved in the sum of order's total amount).
+                        description: total amount of tax payed (this amount is not included in the sum of order's total amount).
                         example: 19
                       type:
                         type: string
