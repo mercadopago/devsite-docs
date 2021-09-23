@@ -374,7 +374,7 @@ Puedes consultar otras maneras de abrir el checkout en la sección de [Personali
 >
 > Importante
 >
-> No te olvides de acceder al Checkout Pro desde otro navegador o cerrar la sesión de tu cuenta de Mercado Pago antes de probarlo, ya que no puedes pagar con la misma cuenta que creaste el formulario de pago.<br/>
+> No te olvides de acceder al Checkout Pro desde otro navegador o cerrar la sesión de tu cuenta de Mercado Pago antes de probarlo, ya que no puedes pagar con la misma cuenta con la que creaste el formulario de pago.<br/>
 
 ## Video tutorial
 
