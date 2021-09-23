@@ -18,7 +18,7 @@ Siga os seguintes passos antes de começar a sua integração:
 
 ### 1. Acesse uma conta
 
-Para poder começar a integração, é necessário ter uma conta do Mercado Pago ou do Mercado Livre.
+Para começar a integração, é necessário ter uma conta do Mercado Pago ou do Mercado Livre.
 
 Você pode [entrar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/previous-requirements) em uma conta já existente ou [criar uma nova conta](https://www.mercadopago[FAKER][URL][DOMAIN]) do zero.
 
