@@ -3,7 +3,7 @@
 Puedes adaptar la integración de Checkout Pro a tu modelo de negocio configurando [atributos de preferencia](https://www.mercadopago[FAKER][URL][DOMAIN]/ developers/es/reference/ferences/_checkout_preferences/post).
 
 ---- [mla, mlb] ----
-Si ofreces compras de alto valor, por ejemplo, puedes aceptar [pagos con dos tarjetas de crédito](https: //www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#???) o [eliminar métodos de pago](https: //www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#???) no deseados para su operación.
+Si ofreces compras de alto valor, por ejemplo, puedes aceptar [pagos con dos tarjetas de crédito](https: //www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#???) o [eliminar métodos de pago](https: //www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#???) no deseados para tu operación.
 ------------
 ---- [mlm, mlc, mlu, mco, mpe] ----
 Si ofreces compras de alto valor, por ejemplo, puedes [excluir métodos de pago](https: //www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#???) no deseado para su operación.
