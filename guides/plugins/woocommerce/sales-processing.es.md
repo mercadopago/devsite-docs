@@ -4,7 +4,7 @@ Completados todos los pasos, tus clientes podrán realizar compras en tu tienda.
 
 Esta información está disponible en la sección **Notas del pedido** en el panel de WooCommerce. 
 
-![Notas del pedido](/images/woocomerce/es-notas-del-pedido.gif)
+![Notas del pedido](/images/woocomerce/es_order_Notes_03.png)
 
 En esta sección, tendrás acceso a detalles del posible status y motivos de cada devolución.
 
@@ -12,7 +12,7 @@ En esta sección, tendrás acceso a detalles del posible status y motivos de cad
 
 Cada venta genera un status de pago que muestra la situación de la venta, incluida la confirmación, el pendiente o recusa del pago y otras informaciones importantes sobre la transacción. 
 
-Hay dos estados en una venta de WooCommerce: **status del pedido** y **status del pago**. En la siguiente tabla, podrás encontrar los detalles sobre cómo se correlaciona esta información.
+Hay dos estados en una venta de WooCommerce: **status del pago** y **status del pedido**. En la siguiente tabla, podrás encontrar los detalles sobre cómo se correlaciona esta información.
 
 | Mercado Pago status (pago) | WooCommerce status(pedido) |
 |---|---|
@@ -29,11 +29,11 @@ Para obtener más información, accede a la sección [Actividades](https://www.m
 
 Además, puedes acceder a los detalles de cada intento de pago que ocurrió en su tienda. Para hacer esto, ve al panel de WordPress y luego haz clic en **WooCommerce > Pedidos > Detalles del pedido**.
 
-## Motivos de las recusas
+## Motivos de los rechazos
 
 En cuanto a la **aprobación de pagos** en su tienda, hay tres razones principales que pueden afectar directamente estos resultados. 
 
-A continuación, detallamos los factores que influyen en la recusa de un pago:
+A continuación, detallamos los factores que influyen en lo rechazo de un pago:
 
 | Motivo | Situación | Cómo evitarlo |
 |---|---|---|
