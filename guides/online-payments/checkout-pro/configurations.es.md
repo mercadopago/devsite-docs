@@ -157,7 +157,7 @@ La configuración de atributos de preferencia también te permite [obtener infor
  ```
 ------------
 
-## Defina los medios de pago
+## Define los medios de pago
 
 ----[mla, mco, mlb, mlu, mlc, mpe]----
 De forma predeterminada, todos los métodos de pago se ofrecen en Checkout Pro. A través de la preferencia de pago, puede configurar un método de pago por defecto, eliminar los no deseados, o elegir un número máximo de cuotas que se ofrecerán.
