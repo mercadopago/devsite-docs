@@ -949,7 +949,7 @@ curl -X POST \
 ```
 ]]]
 
-Una vez completada la configuración, se asociará una conversión con la _tag_ especificada cuando se apruebe un pago reenviado para su anuncio.
+Una vez completada la configuración, se asociará una conversión con la _tag_ especificada cuando se apruebe un pago reenviado para tu anuncio.
 
 > NOTE
 >
