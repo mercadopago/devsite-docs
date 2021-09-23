@@ -240,7 +240,7 @@ Los elementos de Checkout Pro que se pueden personalizar son:
 
 - Botones;
 - Campos de información;
-- Elementos de transición como ruedas giratorias y barras de progreso;
+- Elementos de transición como spinners y barras de progreso;
 - Bordes.
 
 Puede cambiar el color de estos elementos agregando el atributo `elementsColor` al objeto` theme`. Tenga en cuenta que el valor del atributo debe estar en formato hexadecimal.
