@@ -346,7 +346,7 @@ Al hacerlo, tu preferencia tendría una estructura similar al ejemplo siguiente:
 ```
 ----[mco]----
 
-## Modifique la tasa de impuestos DIAN
+## Modifica la tasa de impuestos DIAN
 
 Puedes modificar el valor del impuesto para la Dirección de Impuestos y Aduanas Nacionales (DIAN), aplicado según el producto o servicio que ofrezcas. 
 
