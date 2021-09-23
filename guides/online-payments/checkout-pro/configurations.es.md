@@ -607,7 +607,7 @@ curl -X POST \
 ```
 ]]]
 
-Tenga en cuenta que el valor total de la preferencia será la suma del valor del precio unitario de cada ítem listado.
+Ten en cuenta que el valor total de la preferencia será la suma del valor del precio unitario de cada ítem listado.
 
 ## Muestra el monto del envío 
 
