@@ -379,7 +379,7 @@ Você pode consultar outras maneiras de abrir o checkout na seção [Customizaç
 
 ## Vídeo tutorial 
 
-Implemente a solução Checkout Pro em seu *site* com o nosso vídeo tutorial sobre a integração completa:
+Saiba como implementar a solução Checkout Pro em seu *site* com o nosso vídeo tutorial:
 
 <div class="embed-container">
     <iframe width="1106" height="622" src="https://www.youtube.com/embed/anrwYq84RsU" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
