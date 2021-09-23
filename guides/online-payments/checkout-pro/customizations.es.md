@@ -106,7 +106,7 @@ Actualmente, los esquemas disponibles son:
 ![Checkout-redirect](/images/web-payment-checkout/checkout-redirect-sv.png)
 ------------
 
-Para integrar el esquema de redireccionamiento en su integración, reemplace el botón de pago configurado en la implementación básica y agregue el enlace Web Checkout a su sitio donde desea que aparezca, como se muestra en el siguiente ejemplo:
+Para integrar el esquema de redireccionamiento en tu integración, reemplaza el botón de pago configurado en la implementación básica y agrega el enlace Web Checkout a tu sitio donde deseas que aparezca, como se muestra en el siguiente ejemplo:
 
 [[[
 ```php
