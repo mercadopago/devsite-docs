@@ -279,7 +279,7 @@ Al final del proceso de pago, tiene la opción de redirigir al comprador a su si
 
 Para hacer esto, agregue el atributo `back_urls` y defina, de acuerdo con el estado del pago, la página deseada para redirigir a su comprador cuando haga clic en el botón regresar al sitio.
 
-Si desea que la redirección sea automática para los pagos aprobados, sin mostrar un botón de retorno, también debe agregar el atributo `auto_return` con el valor de `approved`.
+Si quieres que la redirección sea automática para los pagos aprobados, sin mostrar un botón de retorno, también debes agregar el atributo `auto_return` con el valor de `approved`.
 
 > NOTE
 >
