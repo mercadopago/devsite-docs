@@ -15,7 +15,7 @@ Tenga a mano los principales términos técnicos del flujo de integración del C
 
 ## Requisitos previos
 
-Siga estos pasos antes de comenzar su integración:
+Sigue estos pasos antes de comenzar tu integración:
 
 ### 1. Accede a una cuenta
 Para poder comenzar la integración, es necesario contar con una cuenta de Mercado Pago o Mercado Libre.
