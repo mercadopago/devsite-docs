@@ -430,7 +430,7 @@ Nota que la fecha usa el formato `ISO 8601: yyyy-MM-dd'T'HH:mm:ssz`.
 
 ### Envía una descripción en el resumen de la tarjeta
 
-Puede agregar una descripción para su negocio a través del atributo `statement_descriptor` de las preferencias de pago, como se muestra en el siguiente ejemplo:
+Puedes agregar una descripción para tu negocio a través del atributo `statement_descriptor` de las preferencias de pago, como se muestra en el siguiente ejemplo:
 
 ```json
 "statement_descriptor": "MINEGOCIO"
