@@ -407,7 +407,7 @@ Para mais informações sobre como gerenciar os cancelamentos e estornos dos seu
 
 ## Gerencie contestações
 
-Uma contestação (ou *chargeback*) acontece quando o comprador entra em contato com a entidade emissora do cartão e desconhece o pagamento. Na prática, isso significa que o dinheiro desse pagamento será retido da sua conta Mercado Pago até que seja a situação seja solucionada.
+Uma contestação (ou *chargeback*) acontece quando o comprador entra em contato com a entidade emissora do cartão e desconhece o pagamento. Na prática, isso significa que o dinheiro desse pagamento será retido da sua conta Mercado Pago até que a situação seja solucionada.
 
 Aprenda como gerenciar contestações de pagamentos com a nossa [documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/chargebacks).
 
