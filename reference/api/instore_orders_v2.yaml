@@ -210,7 +210,7 @@ paths:
               properties:
                 external_reference:
                   type: string
-                  description: custom id of the purchase.
+                  description: Custom order id you can synchronize with your sale system.
                   example: 12345
                 title:
                   type: string
