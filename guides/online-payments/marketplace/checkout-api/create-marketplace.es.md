@@ -153,6 +153,10 @@ Recibirás la siguiente respuesta:
     "refresh_token": "TG-XXXXXXXXXXXX-241983636"
 }
 ```
+### Desvincula cuentas
+
+Para desvincular el token asociado a tu cuenta, debes hacerlodesde el [portal de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/account/security/applications/connections) ingresando a **Tu perfil > Seguridad > Apps conectadas**.
+
 
 > NOTE
 > 

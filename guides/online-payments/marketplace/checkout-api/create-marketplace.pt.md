@@ -155,6 +155,115 @@ Você receberá a seguinte resposta:
 }
 ```
 
+
+### Desvincule uma conta
+
+Para desvincular o token associado à sua conta, você deve fazer isso no [portal do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/account/security/applications/connections) em **Seu perfil> Segurança> Aplicativos conectados**.
+
+
+
+## 3. Integre a API para receber pagamentos
+
+Para receber pagamentos em nome de seus vendedores, você deve integrar a [API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction), gerando os pagamentos com o Access Token que você obteve vinculando cada vendedor ao seu aplicativo.
+
+Se deseja cobrar uma taxa de comissão por cada pagamento processado pela sua aplicação em nome do seu usuário, simplesmente adicione esse valor no parâmetro  `application_fee` ao criar pagamento:
+
+[[[
+```curl
+curl -X POST \
+        -H 'accept: application/json' \
+        -H 'content-type: application/json' \
+        -H 'Authorization: Bearer USER_AT' \
+        https://api.mercadopago.com/v1/payments \
+        -d '{
+                "transaction_amount": 100,
+                "token": "ff8080814c11e237014c1ff593b57b4d",
+                "description": "Title of what you are paying for",
+                "installments": 1,
+                "payer": {
+                        "id": "12345678"
+                },
+                "payment_method_id": "visa",
+                "application_fee": 2.56
+        }'
+```
+```php
+<?php  
+
+  require ('mercadopago.php');
+  MercadoPago\SDK::configure(['ACCESS_TOKEN' => 'ENV_ACCESS_TOKEN']);
+
+  $payment = new MercadoPago\Payment();
+
+  $payment->transaction_amount = 100;
+  $payment->token = "ff8080814c11e237014c1ff593b57b4d";
+  $payment->description = "Title of what you are paying for";
+  $payment->installments = 1;
+  $payment->payment_method_id = "visa";
+  $payment->payer = array(
+    "email" => "test_user_19653727@testuser.com"
+  );
+
+  $payment->save();
+
+?>
+```
+```java
+
+import com.mercadopago.*;
+MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+
+Payment payment = new Payment();
+
+payment.setTransactionAmount(100f)
+      .setToken('ff8080814c11e237014c1ff593b57b4d')
+      .setDescription('Title of what you are paying for')
+      .setInstallments(1)
+      .setPaymentMethodId("visa")
+      .setPayer(new Payer("test_user_19653727@testuser.com"));
+
+payment.save();
+
+```
+```node
+
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken(config.access_token);
+
+var payment_data = {
+  transaction_amount: 100,
+  token: 'ff8080814c11e237014c1ff593b57b4d'
+  description: 'Title of what you are paying for',
+  installments: 1,
+  payment_method_id: 'visa',
+  payer: {
+    email: 'test_user_3931694@testuser.com'
+  }
+};
+
+mercadopago.payment.create(payment_data).then(function (data) {
+  // Do Stuff...
+}).catch(function (error) {
+  // Do Stuff...
+});
+
+```
+```ruby
+
+require 'mercadopago'
+sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
+
+payment_data = { 
+  transaction_amount: 100,
+  token: 'ff8080814c11e237014c1ff593b57b4d',
+  description: 'Title of what you are paying for',
+  installments: 1,
+  payment_method_id: 'visa',
+  payer: {
+    email: 'test_user_19653727@testuser.com'
+  }
+}
+
 > NOTE
 > 
 > Nota
@@ -162,6 +271,7 @@ Você receberá a seguinte resposta:
 > > Lembre-se que, a cada vez que você renovar as credenciais, o `refresh_token` também mudará, por isso, você deverá armazená-lo novamente.
 >
 >  Caso haja algum erro na hora de renovar as credenciais, lembre-se que você pode consultar a [referência de códigos de erro](https://developers.mercadolivre.com.br/pt_br/autenticacao-e-autorizacao#Referencia-de-codigos-de-erro).
+
 
 ## Teste seu Marketplace
 

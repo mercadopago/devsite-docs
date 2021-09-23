@@ -152,6 +152,11 @@ You will receive the following response:
     "refresh_token": "TG-XXXXXXXXXXXX-241983636"
 }
 ```
+### Unlink accounts
+
+To unlink a token associated with your account, you can do it from the [Mercado Pago portal](https://www.mercadopago[FAKER][URL][DOMAIN]/account/security/applications/connections) and at **Your profile> Security> Connected apps**.
+
+
 
 > NOTE
 > 
