@@ -387,7 +387,7 @@ Implementa la solución Checkout Pro en tu sitio con nuestro video tutorial sobr
 
 ## Ejemplo de implementación básica
 
-Consulte el [ejemplo de integración completa](http://github.com/mercadopago/checkout-payment-sample) en GitHub para PHP o NodeJS para descargar un proyecto básico de implementación rápida de Checkout Pro en su sitio.
+Consulta el [ejemplo de integración completa](http://github.com/mercadopago/checkout-payment-sample) en GitHub para PHP o NodeJS para descargar un proyecto básico de implementación rápida de Checkout Pro en tu sitio.
 
 ---
 
