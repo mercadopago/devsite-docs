@@ -609,7 +609,7 @@ curl -X POST \
 
 Tenga en cuenta que el valor total de la preferencia será la suma del valor del precio unitario de cada ítem listado.
 
-## Mostra el monto del envío 
+## Muestra el monto del envío 
 
 Si ya tienes estimado el envio desde tu sitio, puedes enviar el monto y mostrarlo por separado del total al ofrecer el pago. 
 
