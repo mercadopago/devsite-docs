@@ -275,7 +275,7 @@ preference_data = {
 
 ## Redirigir al comprador a tu sitio web
 
-Al final del proceso de pago, tiene la opción de redirigir al comprador a su sitio web nuevamente.
+Al final del proceso de pago, tienes la opción de redireccionar al comprador a tu sitio web nuevamente.
 
 Para hacer esto, agregue el atributo `back_urls` y defina, de acuerdo con el estado del pago, la página deseada para redirigir a su comprador cuando haga clic en el botón regresar al sitio.
 
