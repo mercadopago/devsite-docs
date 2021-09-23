@@ -25,34 +25,21 @@ To activate the credentials, follow the steps below.
 
 1. Scroll down to the **Credentials** section.
 2. On **Add credentials to "Test Mode"or "Production Mode"**, choose **Activate Test Mode for Mercado Pago checkouts**. (By keeping this field enabled, your store will be in **test mode**, which allows you to test the plugin before setting the store to production).
-<<<<<<< HEAD
 3. Enter your **test** and **production** credentials in the required fields. If you don't have this information, access the [Credentials](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) documentation and follow the required steps. 
 4. When finished filling in, click on _Salvar alterações_.
-=======
-3. Enter your **test** and **production** credentials in the required fields. If you don't have this information, access the [Credentials](https://www.mercadopago.[FAKER][DOMAIN][URL]/developers/en/guides/resources/credentials) documentation and follow the required steps. 
-4. When finished filling in, click on **Save changes**.
->>>>>>> 55612f33714f2706f96c2883e6ed5df99c9216bf
 
 Set up the business information as shown in the next section once you fill in the credentials. 
 
 ## Business information
 
-<<<<<<< HEAD
 Business information, or *Informações de negócio*, is required to identify your store. Fill in the fields as shown below.
-=======
-Business information is required to identify your store. Fill in the fields as below.
->>>>>>> 55612f33714f2706f96c2883e6ed5df99c9216bf
 
 1. **Store name:** Enter the name of your store.
 2. **Store Category:** Enter the category of your store's products.
 3. **Store ID:** Use a number or prefix to identify orders and payments from your store.
 4. **Integrator ID:** Enter your **integrator_id** as Mercado Pago partner. If you are not a partner yet, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/developer-program) for more information.
 
-<<<<<<< HEAD
 In _Ajustes avançados_, you can configure options related to saving information to a file for debugging technical issues, as well as configuring [IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn).
-=======
-In **Advanced adjustment**, you can configure options related to saving information to a file for debugging technical issues, as well as configuring [IPN notifications](https://www.mercadopago[FAKER][DOMAIN][URL]/developers/en/guides/notifications/ipn).
->>>>>>> 55612f33714f2706f96c2883e6ed5df99c9216bf
 
 ## Payment experience
 

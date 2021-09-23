@@ -335,13 +335,8 @@ The seller will receive the difference between the total amount and the fees, bo
 >
 > Tip
 >
-<<<<<<< HEAD
 > The more information you send us in the preference, the better our fraud prevention system will perform when it comes to payment approval.
 >  Create a checkout preference as complete as you can.
-=======
-> The more information you send us in the preference, the better our fraud prevention system will perform when it comes to payment approval.  
-> Create a checkout preference as complete as you can.
->>>>>>> 55612f33714f2706f96c2883e6ed5df99c9216bf
 
 ## Set up notifications
 

@@ -28,31 +28,26 @@ Lastly, you need to get your application ID in [Your Integrations](https://www.m
 
 To operate in Mercado Pago on behalf of your seller, you need to request their authorization first. To manage several Mercado Pago accounts at the same time in your integration, you can do it through OAuth, a feature for secure linking that allows sellers to access their Mercado Pago account to authorize and enable your application to work under their name.
 
-<<<<<<< HEAD
 <br>
 
 2.2. When the seller accepts, a last redirect is made and you will receive the authorization code in the URL that you specified:
-=======
-To do this, you need to include a URL in your application to redirect sellers to the authorization site. 
->>>>>>> 55612f33714f2706f96c2883e6ed5df99c9216bf
 
 This is the example URL you can use. You will also find the details of parameters to fill it out.
 
 ```url
 https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com
+```
 
-<<<<<<< HEAD
 <br>
 
 2.3. You can also include the `state` parameter in the URL authorization to identify who is responsible for the code you received. Do this in a safe manner and assign a random identifier in the parameter which is unique for each attempt.
-=======
-```
+
+
 | Parameter | Data to fill out |
 | ----------------- | ----------------- |
 | `client_id` | Replace `APP_ID` value with your application ID. |
 | `state` | Identify who the code to be received belongs to. In order to do this, replace `RANDOM_ID` value with a unique ID for each attempt without sensitive data. |
 | `redirect_uri` | Add the URL you entered in the Redirect URL field when you set up your application. | 
->>>>>>> 55612f33714f2706f96c2883e6ed5df99c9216bf
 
 When entering this URL, the seller will be redirected to Mercado Pago to log into their account and authorize the link to your application.
 
@@ -124,7 +119,6 @@ You will also receive the seller's `public_key`, which is the credential or publ
 > 
 > Remember that you will be using your seller's sensitive information. Secure a backup and do not include it in your link URLs; manage such information from your server only.
 
-<<<<<<< HEAD
 > NOTE
 >
 > Note
@@ -132,11 +126,10 @@ You will also receive the seller's `public_key`, which is the credential or publ
 > The credentials are **valid for 6 months.**
 > If you don´t renew your sellers credentials before the expiration period, **those credentials will lose validity and you´ll have to do the authorization process all over again.**
 > Tip: Renew the credentials 5 months after you got them.
-=======
-Done! You already linked your seller's account to your application via OAuth. 
->>>>>>> 55612f33714f2706f96c2883e6ed5df99c9216bf
-
 > Keep in mind that these steps need to be repeated with each account you want to link. 
+
+
+Done! You already linked your seller's account to your application via OAuth. 
 
 ## Refresh your credentials
 
