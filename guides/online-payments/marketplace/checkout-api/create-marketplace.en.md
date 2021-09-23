@@ -24,7 +24,7 @@ In Redirect URL field add the URL to where you would like to redirect your selle
 
 Lastly, you need to get your application ID in [Your Integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
 
-## Link your Mercado Pago account with your sellers' accounts
+## Link your application with your sellers' accounts
 
 To operate in Mercado Pago on behalf of your seller, you need to request their authorization first. To manage several Mercado Pago accounts at the same time in your integration, you can do it through OAuth, a feature for secure linking that allows sellers to access their Mercado Pago account to authorize and enable your application to work under their name.
 
