@@ -34,7 +34,7 @@ Utiliza el método `render` para generar un botón de pago responsable de abrir 
 
 | Parámetro | Tipo de datos | Descripción |
 | --- | --- | --- |
-| `container` | `string` | Selector CSS (identificador) del elemento HTML donde desea mostrar el botón de pago. Le permite definir el tipo de botón que desea. |
+| `container` | `string` | Selector CSS (identificador) del elemento HTML donde desees mostrar el botón de pago. Te permite definir el tipo de botón que deseas. |
 | `type` (opcional) | `string` | Define el tipo de botón deseado. Actualmente, solo acepta el valor de 'billetera', que muestra un botón de pago con la marca Mercado Pago. |
 | `label` (opcional) | `string` | Texto representado en el botón. Valor predeterminado: `Pagar`. |
 
