@@ -394,7 +394,7 @@ Un pago puede ser rechazado porque el emisor del medio de pago detecta un proble
 
 Evita pagos rechazados con nuestras mejores práticas y [mejora la aprobación de tus pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/payment-rejections).
 
-## Maneje cancelaciones y devoluciones
+## Gestiona cancelaciones y devoluciones
 
 ----[mla, mlm, mco, mlu, mlb, mlc]----
 Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes de la fecha de vencimiento y el vendedor decide cancelarlo. Las devoluciones, a su vez, suceden cuando el pago se realizó pero el vendedor decide anularlo total o parcialmente.
