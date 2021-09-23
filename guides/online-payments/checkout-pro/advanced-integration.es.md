@@ -401,7 +401,7 @@ Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes 
 ------------
 
 ----[mpe]----
-Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes de la fecha de vencimiento y el vendedor decide cancelarlo. Las devoluciones, a sua vez, suceden cuando el pago se realizó pero el vendedor decide anularlo totalmente.
+Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes de la fecha de vencimiento y el vendedor decide cancelarlo. Las devoluciones, a su vez, suceden cuando el pago se realizó pero el vendedor decide anularlo totalmente.
 ------------
 
 Encuentra toda la información que necesitas para administrar mejor tus cancelaciones de pago y devoluciones de cargo en la documentación [Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds) de Mercado Pago.
