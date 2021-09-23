@@ -790,7 +790,7 @@ curl -X POST \
 ```
 ]]]
 
-Una vez completada la configuración, se asociará un evento de `purchase` con el _píxel_ especificado cuando se apruebe un pago reenviado por su anuncio.
+Una vez completada la configuración, se asociará un evento de `purchase` con el _píxel_ especificado cuando se apruebe un pago reenviado por tu anuncio.
 
 > NOTE
 >
