@@ -35,7 +35,7 @@ Use o método `render` para renderizar um botão de pagamento responsável por a
 | Parâmetro | Tipo de dado | Descrição |
 | --- | --- | --- |
 | `container` | `string` | CSS Selector (identificador) do elemento HTML onde se deseja mostrar o botão de pagamento. Permite definir o tipo de botão desejado. |
-| `type` (opcional) | `string` | Define o tipo de botão desejado. Atualmente, aceita apenas o valor `wallet, que mostra um botão de pagamento com a marca do Mercado Pago. |
+| `type` (opcional) | `string` | Define o tipo de botão desejado. Atualmente, aceita apenas o valor `wallet`, que mostra um botão de pagamento com a marca do Mercado Pago. |
 | `label` (opcional) | `string` | Texto renderizado no botão. Valor padrão: `Pagar`. |
 
 Você pode usar o método `render` de duas maneiras diferentes:
