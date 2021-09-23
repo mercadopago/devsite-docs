@@ -800,7 +800,7 @@ Una vez completada la configuración, se asociará un evento de `purchase` con e
 
 ### Integra Checkout Pro con Google Ads
 
-Al crear una preferencia, puede asociarla con una _tag_ (identificador) para realizar un seguimiento de las conversiones de Google Ads:
+Al crear una preferencia, puedes asociarla con una _tag_ (identificador) para realizar un seguimiento de las conversiones de Google Ads:
 
 [[[
 ```php
