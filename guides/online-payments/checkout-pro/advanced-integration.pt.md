@@ -389,7 +389,7 @@ preference_data = {
 
 ## Evite recusas de pagamentos
 
-Um pagamento pode ser recusado porque o emissor do meio de pagamento detectou um problema no fluxo ou porque o mesmo não preencheu os requisitos de segurança necessários.
+Um pagamento pode ser recusado porque o emissor do meio de pagamento detectou um problema no fluxo, como falta dos requisitos de segurança necessários.
 
 Evite pagamentos recusados com as nossas boas práticas e [melhore a taxa de aprovação dos seus pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/payment-rejections).
 
