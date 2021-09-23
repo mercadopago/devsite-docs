@@ -152,7 +152,7 @@ Para **probar distintos resultados de pago** con Checkout Pro, completa el estad
 
 Para empezar a cobrar, debes [activar tus credenciales]([FAKER][CREDENTIALS][URL]).
 
-Antes de activarlas, verifica si las credenciales utlizadas en tu integración son las de la cuenta que debería recibir el dinero de las ventas.
+Antes de activarlas, verifica si las credenciales utilizadas en tu integración son las de la cuenta que debería recibir el dinero de las ventas.
 
 ---
 
