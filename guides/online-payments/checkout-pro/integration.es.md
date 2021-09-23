@@ -325,7 +325,7 @@ curl -X POST \
 >
 > Adapta la integración de Checkout Pro a tu negocio
 >
-> Acceda a la sección [Configuración de preferencias](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations) para saber como agregar nuevas funciones a Checkout Pro de acuerdo con tu modelo de negocio.
+> Accede a la sección [Configuración de preferencias](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations) para saber cómo agregar nuevas funciones a Checkout Pro de acuerdo con tu modelo de negocio.
 
 <span></span>
 
