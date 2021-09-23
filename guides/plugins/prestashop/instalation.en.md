@@ -29,7 +29,7 @@ It is important that you review the requirements to install our module. Then fol
 >
 > Important
 >
-> You can use the HTTP protocol while in "Testing" mode and not making real transactions. When you go to Production you must have an **SSL certificate** to offer a **secure navigation** that protects your data and those of your customers. Once you have it, the path to your online store must respond to the **HTTPS protocol**.
+> You can use the HTTP protocol while in "Testing" mode and not making real transactions. When you go to Production you must have an **SSL certificate** to offer a **secure navigation** that protects your data and that of your customers. Once you have it, the path to your online store must respond to the **HTTPS protocol**.
 
 ## Automatic Installation
 

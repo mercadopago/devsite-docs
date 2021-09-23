@@ -114,7 +114,7 @@ This process will explain how to configure the module to accept payments with Ch
 
 ![Checkout Pro Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
 
-4) Very good! Checkout Pro with Credit Card and Ticket has been configured and enable successfully.
+4) Very good! Checkout Pro with Credit Card and Ticket has been configured and enabled successfully.
 
 
 ## Payment Notification status settings

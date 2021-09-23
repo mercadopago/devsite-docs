@@ -19,7 +19,7 @@ When you test, verify that the payment flow works correctly and that the payment
 
 To start charging you must complete the form [I want to go to Production](https://www.mercadopago.com/mla/account/credentials/).
 
-> Check the [requirements to go to production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production) if you have any doubts during the process
+> Check the [requirements to go to production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production) if you have any doubts during the process.
 
 Verify that the Production credentials of the module are those of the account that receives the money from the sales.
 
@@ -27,5 +27,5 @@ Activate the Production mode only when you are ready to sell and have tested the
 
 ![Production Homologation Flow](/images/prestashop/receive_payments_en.gif)
 
-### Done! The Mercado Pago module is ready to receive online payments.
+**Done! The Mercado Pago module is ready to receive online payments.**
 
