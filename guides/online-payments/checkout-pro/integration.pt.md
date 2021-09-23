@@ -12,7 +12,7 @@ A integração com o Checkout Pro do Mercado Pago te permite cobrar através do 
 
 ![Integration](/images/web-payment-checkout/flow-v2-2.png)
 
-Instalar o Checkout Pro requer duas principais etapas:
+Instalar o Checkout Pro requer duas etapas principais:
 
 1. Criar as preferências desejadas;
 2. Adicionar o Checkout Pro em seu *site*.
