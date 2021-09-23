@@ -41,7 +41,7 @@ Use o método `render` para renderizar um botão de pagamento responsável por a
 Você pode usar o método `render` de duas maneiras diferentes:
 
 - Incluindo a opção `render` com seus respectivos parâmetros dentro das opções de inicialização do checkout.
-- Invocando a função `render` posteriormente, do lugar que você preferir dentro de seu código, com seus respectivos parâmetros.
+- Usando a função `render` posteriormente, do lugar que você preferir dentro de seu código, com seus respectivos parâmetros.
 
 Por exemplo:
 
