@@ -22,9 +22,14 @@ paths:
               properties:
                 client_secret:
                   type: string
-                  description: This is your application Access Token. 
+                  description: Private key to be used in some plugins to generate payments. 
                   required: true
-                  example: 'ACCESS_TOKEN'
+                  example: 'client_secret'
+                client_id:
+                  type: string
+                  description: Unique ID that identifies your integration. 
+                  required: true
+                  example: 'client_id'
                 grant_type:
                   type: string
                   description: Specifies the type of operation to perform to get your credentials.
