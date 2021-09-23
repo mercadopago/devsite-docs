@@ -410,7 +410,7 @@ Encuentre toda la información que necesita para administrar mejor sus cancelaci
 
 Se produce un contracargo (o _chargeback_) cuando el comprador se comunica con la entidad que emitió su tarjeta y desconoce el pago. En la práctica, esto quiere decir que el dinero del vendedor por ese pago será retenido de su cuenta de Mercado Pago hasta que se solucione la situación.
 
-Aprenda a gestionar contracargos de pago con nuestra [documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/chargebacks).
+Aprende a gestionar contracargos de pago con nuestra [documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/chargebacks).
 
 ---
 
