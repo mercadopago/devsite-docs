@@ -307,7 +307,7 @@ A través de `back_urls`, se devolverán los siguientes parámetros:
 >
 > Nota
 >
-> Algunos de los parámetros mantienen la información de compra solo si el comprador ha completado el pago completo en Checkout Pro y no ha abandonado el flujo antes de regresar a su sitio a través de la `back_urls` de `failure`.
+> Algunos de los parámetros mantienen la información de compra solo si el comprador ha completado el pago completo en Checkout Pro y no ha abandonado el flujo antes de regresar a tu sitio a través de la `back_urls` de `failure`.
 
 Por ejemplo:
 
