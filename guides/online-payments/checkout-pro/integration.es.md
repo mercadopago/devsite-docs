@@ -14,7 +14,7 @@ La integración con el Checkout Pro de Mercado Pago te permite cobrar a través 
 
 Instalar el Checkout Pro consta de dos pasos:
 
-1. Generar las preferencias desesadas;
+1. Generar las preferencias deseadas;
 2. Sumar el Checkout Pro a tu sitio.
 
 > SERVER_SIDE
