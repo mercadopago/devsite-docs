@@ -33,4 +33,4 @@ You can configure the installment options and the way your receivables will be c
 
 WooCommerce allows it's users to configure how long an order will remain pending. This functionality can be accessed through the WooCommerce settings menu, under  **products > inventory**. 
 
-For more information, access the **Inventory** topic in [the platform manual](https://docs.woocommerce.com/document/perguntas-frequentes-sobre-reservas/).
+For more information, access the **Inventory** topic in [the platform manual](https://docs.woocommerce.com/document/bookings-faq/).
