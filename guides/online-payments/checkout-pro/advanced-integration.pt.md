@@ -403,7 +403,7 @@ Os cancelamentos são feitos quando o pagamento não foi concluído antes da dat
 Os cancelamentos são feitos quando o pagamento não foi concluído antes da data de vencimento e o vendedor decide então cancelá-lo. As devoluções, por sua vez, acontecem quando o pagamento foi feito pelo comprador, mas o vendedor decide estorná-lo totalmente.
 ------------
 
-Encontre todas as informações necessárias para melhor gerenciar os cancelamentos e estornos dos seus pagamentos na documentação [Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds) do Mercado Pago.
+Para mais informações sobre como gerenciar os cancelamentos e estornos dos seus pagamentos, acesse a documentação [Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds) do Mercado Pago.
 
 ## Gerencie contestações
 
