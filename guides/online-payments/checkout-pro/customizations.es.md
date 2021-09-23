@@ -74,7 +74,7 @@ checkout.render({
 
 ![Custom Label Button](/images/web-payment-checkout/custom_label_button.png)<br/><br/>
 
-### Abrir Checkout pro automáticamente
+### Abrir Checkout Pro automáticamente
 
 Agregue el parámetro `autoOpen` a las opciones de inicio de Checkout para mostrar automáticamente Checkout Pro, sin necesidad de que sus compradores interactúen con un botón o cualquier otro elemento para abrirlo:
 
