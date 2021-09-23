@@ -628,7 +628,7 @@ Para configurarlo, agrega el nodo `shipments` con el valor del monto que quieras
 
 Sabemos que es importante maximizar la efectividad y la capacidad de búsqueda de tus anuncios.
 
-Por eso, ofrecemos la posibilidad de integrar Checkout Pro con las plataformas de Facebook Ads y Google Ads para asociar los pagos a sus campañas comerciales.
+Por eso, ofrecemos la posibilidad de integrar Checkout Pro con las plataformas de Facebook Ads y Google Ads para asociar los pagos a tus campañas comerciales.
 
 ----[mla, mlb]----
 > NOTE
