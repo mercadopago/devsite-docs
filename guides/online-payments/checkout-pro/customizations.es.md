@@ -38,7 +38,7 @@ Utiliza el método `render` para generar un botón de pago responsable de abrir 
 | `type` (opcional) | `string` | Define el tipo de botón deseado. Actualmente, solo acepta el valor de 'billetera', que muestra un botón de pago con la marca Mercado Pago. |
 | `label` (opcional) | `string` | Texto representado en el botón. Valor predeterminado: `Pagar`. |
 
-Puede utilizar el método `render` de dos formas diferentes:
+Puedes utilizar el método `render` de dos formas diferentes:
 
 - Incluyendo la opción `render` con sus respectivos parámetros dentro de las opciones de inicialización de checkout.
 - Invocando la función `render` más tarde, desde el lugar que prefieras dentro de tu código, con sus respectivos parámetros.
