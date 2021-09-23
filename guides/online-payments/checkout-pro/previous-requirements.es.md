@@ -76,7 +76,7 @@ Las credenciales son claves únicas que te proporcionamos para que puedas config
 
 Para encontrarlas, consulta la sección [Credenciales]([FAKER][CREDENTIALS][URL]) en el panel de desarrollador de tu cuenta Mercado Pago
 
-> ¿Aún tienes dudas sobre? Lee nuestra documentación de [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) para obtener más información.
+> ¿Aún tienes dudas sobre credenciales? Lee [nuestra documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) para obtener más información.
 
 ---
 
