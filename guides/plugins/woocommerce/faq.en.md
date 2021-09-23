@@ -31,6 +31,6 @@ You can configure the installment options and the way your receivables will be c
 
 ## How do I get my pending orders to expire after a certain period of time?
 
-WooCommerce allows it's users to configure how long an order will remain pending. This functionality can be accessed through the WooCommerce settings menu, under  **products > inventory**. 
+WooCommerce allows its users to configure how long an order will remain pending. This functionality can be accessed through the WooCommerce settings menu, under  **products > inventory**. 
 
 For more information, access the **Inventory** topic in [the platform manual](https://docs.woocommerce.com/document/perguntas-frequentes-sobre-reservas/).
