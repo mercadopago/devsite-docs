@@ -92,7 +92,7 @@ const checkout = mp.checkout({
 
 ## Esquema de apertura
 
-Checkout Pro le permite cambiar su esquema de apertura predeterminado.
+Checkout Pro te permite cambiar tu esquema de apertura predeterminado.
 
 Actualmente, los esquemas disponibles son:
 
