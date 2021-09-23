@@ -76,7 +76,7 @@ checkout.render({
 
 ### Abrir Checkout Pro automáticamente
 
-Agregue el parámetro `autoOpen` a las opciones de inicio de Checkout para mostrar automáticamente Checkout Pro, sin necesidad de que sus compradores interactúen con un botón o cualquier otro elemento para abrirlo:
+Agrega el parámetro `autoOpen` a las opciones de inicio de Checkout para mostrar automáticamente Checkout Pro, sin necesidad de que tus compradores interactúen con un botón o cualquier otro elemento para abrirlo:
 
 [[[
 ```javascript
