@@ -4,7 +4,7 @@ Personaliza Checkout Pro según tu modelo de negocio para ofrecer la mejor exper
 
 ## Apertura del Checkout Pro
 
-Puede personalizar cómo abre Checkout Pro a través de roles y atributos para agregar a su configuración de integración.
+Puedes personalizar cómo abre Checkout Pro a través de roles y atributos para agregar a tu configuración de integración.
 
 ### Abrir Checkout Pro sin botón de pago
 
