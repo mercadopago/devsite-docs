@@ -648,7 +648,7 @@ Por eso, ofrecemos la posibilidad de integrar Checkout Pro con las plataformas d
 
 ### Integra Checkout Pro con anuncios de Facebook
 
-Al crear una preferencia, puede asociarla con un _pixel_ (identificador) para rastrear las conversiones de anuncios de Facebook:
+Al crear una preferencia, puedes asociarla con un _pixel_ (identificador) para rastrear las conversiones de anuncios de Facebook:
 
 [[[
 ```php
