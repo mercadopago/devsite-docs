@@ -8,7 +8,7 @@ As notificações IPN (_Instant Payment Notification_) são notificações autom
 
 Os avisos automáticos permitem que você administre seu estoque e mantenha seu sistema sincronizado com os fluxos de pagamento do seu negócio. Aprenda como receber as notificações IPN [aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn)
 
-## Adicione informações adicionais à preferência
+## Insira informações adicionais à preferência
 
 Melhore a aprovação dos pagamentos e a experiência dos seus compradores no Checkout Pro adicionando informações às suas preferências que possam detalhar sobre o item comprado e o usuário comprador.
 
