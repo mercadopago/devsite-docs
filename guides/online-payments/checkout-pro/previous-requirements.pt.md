@@ -82,7 +82,7 @@ Para encontrá-las, veja a [seção de Credenciais]([FAKER][CREDENTIALS][URL]) n
 >
 > Nota
 > 
-> Ainda tem dúvidas sobre? Leia a nossa documentação de [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) para mais informações. 
+> Ainda tem dúvidas? Leia a nossa documentação de [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) para mais informações. 
 
 ---
 
