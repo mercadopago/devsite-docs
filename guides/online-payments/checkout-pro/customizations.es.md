@@ -96,7 +96,7 @@ Checkout Pro te permite cambiar tu esquema de apertura predeterminado.
 
 Actualmente, los esquemas disponibles son:
 
-- **Redirigir**: abre Checkout Pro en una nueva ventana.
+- **Redirect**: abre Checkout Pro en una nueva ventana.
 - **Modal**: abre Checkout Pro en tu sitio.
 
 ----[mla]----
@@ -106,7 +106,7 @@ Actualmente, los esquemas disponibles son:
 ![Checkout-redirect](/images/web-payment-checkout/checkout-redirect-sv.png)
 ------------
 
-Para integrar el esquema de redireccionamiento en tu integración, reemplaza el botón de pago configurado en la implementación básica y agrega el enlace Web Checkout a tu sitio donde deseas que aparezca, como se muestra en el siguiente ejemplo:
+Para integrar el esquema de redireccionamiento en tu integración, reemplaza el botón de pago configurado en la implementación básica y agrega el enlace web Checkout a tu sitio donde deseas que aparezca, como se muestra en el siguiente ejemplo:
 
 [[[
 ```php
@@ -240,10 +240,10 @@ Los elementos de Checkout Pro que se pueden personalizar son:
 
 - Botones;
 - Campos de información;
-- Elementos de transición como spinners y barras de progreso;
+- Elementos de transición como _spinners_ y barras de progreso;
 - Bordes.
 
-Puedes cambiar el color de estos elementos agregando el atributo `elementsColor` al objeto` theme`. Ten en cuenta que el valor del atributo debe estar en formato hexadecimal.
+Puedes cambiar el color de estos elementos agregando el atributo `elementsColor` al objeto `theme`. Ten en cuenta que el valor del atributo debe estar en formato hexadecimal.
 
 Por ejemplo:
 
