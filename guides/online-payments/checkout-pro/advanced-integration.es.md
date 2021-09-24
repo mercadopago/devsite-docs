@@ -390,7 +390,7 @@ preference_data = {
 
 ## Previene pagos rechazados
 
-Un pago puede ser rechazado porque el emisor del medio de pago detecta un problema o porque no se cumple con los requisitos de seguridad necesarios.
+Un pago puede ser rechazado porque el emisor del medio de pago detecta un problema en el flujo, como no se cumplir con los requisitos de seguridad necesarios.
 
 Evita pagos rechazados con nuestras mejores prácticas y [mejora la aprobación de tus pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/payment-rejections).
 
@@ -404,7 +404,7 @@ Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes 
 Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes de la fecha de vencimiento y el vendedor decide cancelarlo. Las devoluciones, a su vez, suceden cuando el pago se realizó pero el vendedor decide anularlo totalmente.
 ------------
 
-Encuentra toda la información que necesitas para administrar mejor tus cancelaciones de pago y devoluciones de cargo en la documentación [Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds) de Mercado Pago.
+Para más informaciones, acceda nuestra documentación para [administrar mejor tus cancelaciones de pago y devoluciones de cargo](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).
 
 ## Gestiona contracargos
 
