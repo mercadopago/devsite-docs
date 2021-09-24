@@ -2,7 +2,7 @@
 
 Customize Checkout Pro to your business model to provide the best possible shopping experience for your shoppers.
 
-## Checkout Pro Open
+## Checkout Pro opening
 
 You can customize how you open Checkout Pro through functions and attributes to add to your integration configuration.
 
