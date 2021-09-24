@@ -133,7 +133,7 @@ You will receive the following response:
 > Note
 > 
 > Remember that every time you refresh your credentials, the `refresh_token` will also change so you will need to store it again.
->
+><br>
 >  In case of errors when refreshing your credentials, remember that you can query them in the [error code reference](https://developers.mercadolibre[FAKER][URL][DOMAIN]/en_us/authentication-and-authorization#Error-codes-reference).
 
 
@@ -323,6 +323,7 @@ The seller will receive the difference between the total amount and the fees, bo
 > Tip
 >
 > The more information you send us in the preference, the better our fraud prevention system will perform when it comes to payment approval.
+> <br>
 >  Create a checkout preference as complete as you can.
 
 ## Set up notifications

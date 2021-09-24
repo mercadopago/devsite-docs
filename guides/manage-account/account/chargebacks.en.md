@@ -6,7 +6,7 @@ Find all the information about chargebacks, how to prevent them, and how to mana
 
 A chargeback is created when a **customer disputes a credit or debit card charge with the card issuer bank and requests a money refund.**
 
-When that happens, we can withhold the collected money until the problem is solved and manage the case with the card issuer entity.  10 days are allowed to submit the transaction vouchers. and the validation process may take up to 130 days.
+When that happens, we can withhold the collected money until the problem is solved and manage the case with the card issuer entity.  10 days are allowed to submit the transaction vouchers, and the validation process may take up to 130 days.
 
 If the claim is accepted by the issuer entity, the buyer will have the money refunded.  But don't worry, if you meet the [Seller Protection Program](https://www.mercadopago.com.ar/ayuda/requisitos-programa-proteccion-vendedor_294) requirements we will cover the chargeback and will not discount the sales money.
 
@@ -22,7 +22,7 @@ You cannot avoid all chargebacks but you can reduce the likelihood of having a p
 
 ### Fill out your business data
 
-If the buyer doesn't recognize a charge in his/her credit card statement, a chargeback can be made.  To avoid these cases, fill out [your business data](https://www.mercadopago.com.uy/settings/account) to define how you want to appear in your card statements and payment confirmation SMS.
+If the buyer doesn't recognize a charge in their credit card statement, a chargeback can be made.  To avoid these cases, fill out [your business data](https://www.mercadopago.com.uy/settings/account) to define how you want to appear in your card statements and payment confirmation SMS.
 
 ### Add security code to your site
 
@@ -54,7 +54,7 @@ Send the payment voucher by e-mail or sms so that your customer remembers what t
 
 ### Detail all payment data
 
-For enhanced validation of payment security, send us as much information as possible when creating the payment.  For example, if you send us information about the buyer, we can detect if that buyer made any suspicious payment some other time and prevent it.
+For enhanced validation of payment security, send us as much information as possible when creating the payment.  For example, if you send us information about the buyer, we can detect if that buyer made any suspicious payments before and prevent it.
 Find more information about each attribute in [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments/post).
 
 ### Return suspicious payments
