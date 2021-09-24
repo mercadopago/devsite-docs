@@ -2,8 +2,6 @@
 
 OAuth is a feature for secure linking that allows sellers to access their Mercado Pago account to authorize and enable your application to work under their name. If you need to manage several Mercado Pago accounts at the same time in your integration, you can do it through OAuth.
 
-FIX THIS
-
 > WARNING 
 > 
 > Important
