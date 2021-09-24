@@ -1,6 +1,6 @@
 # Integración avanzada
 
-Optimiza tu integración con funciones adicionales que te permitirán administrar mejor tus pagos de ventas con Checkout Pro.
+Checkout Pro tiene características extra que te permiten optimizar su integración y mejorar la gestión de tus pagos de ventas.
 
 ## Recibe notificaciones de pago
 
