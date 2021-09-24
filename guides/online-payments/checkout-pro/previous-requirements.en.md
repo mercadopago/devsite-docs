@@ -79,7 +79,7 @@ You can find the information of each one in the [Credentials]([FAKER][CREDENTIAL
 
 > Do you still have any questions about this topic? Read our documentation on [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) for more information.
 
- ---
+---
 
 ### Next step
 
