@@ -40,8 +40,8 @@ O gráfico a seguir mostra como funciona a data de cobrança e a eventual cobran
 Caso você defina uma data de cobrança para uma assinatura que também tem um período de teste grátis configurado, o valor proporcional só será cobrado do assinante um mês após a adesão, como mostra o gráfico a seguir.
 
 ![Basic-subscriptions](/images/subscriptions/linea-cobro-trial-PT.png)
-------------
 
+------------
 ### Próximos passos
 > LEFT_BUTTON_REQUIRED_PT
 >

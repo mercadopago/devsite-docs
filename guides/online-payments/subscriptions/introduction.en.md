@@ -35,13 +35,13 @@ In the following chart you can see how the billing date and the eventual chargin
 
 ![Basic-subscriptions](/images/subscriptions/linea-cobro-EN.png)
 
-### Billing date and proportional amount (with free trial)
+### Billing date and proportional amount (with free trial)
 
 If you set a billing date for a subscription that also has a free trial period set up, the proportional amount will only be charged to the subscriber one month after the subscription is joined, as shown in the following graphic.
 
 ![Basic-subscriptions](/images/subscriptions/linea-cobro-trial-EN.png)
-------------
 
+------------
 ### Next steps
 > LEFT_BUTTON_REQUIRED_EN
 >
