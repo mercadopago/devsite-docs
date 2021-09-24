@@ -26,7 +26,7 @@ En el campo Redirect URL, agrega la dirección a la que quieres redirigir a los 
 
 Por último, debes obtener el ID de tu aplicación en [Tus Integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel). 
 
-## Vincula tu cuenta de Mercado Pago con la de tus vendedores
+## Vincula tu aplicación con la cuenta de tus vendedores
 
 Para operar en Mercado Pago en nombre de tu vendedor, primero debes solicitarle autorización. Para gestionar varias cuentas de Mercado Pago a la vez en tu integración, puedes hacerlo a través de OAuth, una funcionalidad de vinculación segura que permite que el vendedor ingrese a su cuenta de Mercado Pago, autorice la vinculación y habilite a tu aplicación para operar en su nombre. 
 
