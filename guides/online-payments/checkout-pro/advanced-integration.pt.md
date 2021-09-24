@@ -1,6 +1,6 @@
 # Integração avançada
 
-O **Checkout Pro** dispõe de funcionalidades extras que permitem otimizar sua integração e melhorar a gestão dos pagamentos de suas vendas.
+O Checkout Pro dispõe de funcionalidades extras que permitem otimizar sua integração e melhorar a gestão dos pagamentos de suas vendas.
 
 ## Receba notificações de pagamentos
 
@@ -272,7 +272,7 @@ preference_data = {
 > 
 > Você pode encontrar a lista de categorias do seu `item` [aqui](https://api.mercadopago.com/item_categories). Se não conseguir acessar os valores de categoria, envie o valor `others` no atributo `category_id`.
 
-## Redirecione o comprador para o seu _site*_
+## Redirecione o comprador para o seu _site_
 
 No final do processo de pagamento, você tem a opção de redirecionar o comprador para o seu _site_ novamente. 
 
@@ -291,7 +291,7 @@ Se deseja que o redirecionamento para os pagamentos aprovados seja automático, 
 | Atributo |	Descrição |
 | ------------ 	|	-------- | 
 | `auto_return` | Os compradores são redirecionados automaticamente para o  _site_ quando o pagamento é aprovado. O valor padrão é `approved`. |
-| `back_urls` | URL de retorno ao site. Possíveis cenários são: `success`: URL de retorno perante pagamento aprovado.<br/><br/>`pending`: URL de retorno perante pagamento pendente.<br/><br/>`failure`: URL de retorno perante pagamento rejeitado.
+| `back_urls` | URL de retorno ao site. Possíveis cenários são:<br/><br/>`success`: URL de retorno perante pagamento aprovado.<br/><br/>`pending`: URL de retorno perante pagamento pendente.<br/><br/>`failure`: URL de retorno perante pagamento rejeitado.
 
 Através das `back_urls`, serão retornados os seguintes parâmetros:
 
@@ -391,7 +391,7 @@ preference_data = {
 
 Um pagamento pode ser recusado porque o emissor do meio de pagamento detectou um problema no fluxo, como falta dos requisitos de segurança necessários.
 
-Evite pagamentos recusados com as nossas boas práticas e [melhore a taxa de aprovação dos seus pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/payment-rejections).
+Evite pagamentos recusados com as nossas [boas práticas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/payment-rejections) e melhore a taxa de aprovação dos seus pagamentos.
 
 ## Gerencie cancelamentos e estornos
 
@@ -403,7 +403,7 @@ Os cancelamentos são feitos quando o pagamento não foi concluído antes da dat
 Os cancelamentos são feitos quando o pagamento não foi concluído antes da data de vencimento e o vendedor decide então cancelá-lo. As devoluções, por sua vez, acontecem quando o pagamento foi feito pelo comprador, mas o vendedor decide estorná-lo totalmente.
 ------------
 
-Para mais informações sobre como gerenciar os cancelamentos e estornos dos seus pagamentos, acesse a documentação [Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds) do Mercado Pago.
+Para mais informações, acesse a nossa documentação sobre [gerenciar os cancelamentos e estornos dos seus pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
 ## Gerencie contestações
 
