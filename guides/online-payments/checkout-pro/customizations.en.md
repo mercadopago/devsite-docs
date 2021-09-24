@@ -1,12 +1,16 @@
-# Customization
+# Customizations
 
-## Ways to open the Checkout Pro
+Customize Checkout Pro to your business model to provide the best possible shopping experience for your shoppers.
 
-You can customize how to open the checkout through the use of functions and attributes that can be added to your integration's configuration: 
+## Checkout Pro Open
 
-### Without payment button 
+You can customize how you open Checkout Pro through functions and attributes to add to your integration configuration.
 
-Use the `open` function to **open the checkout without displaying a payment button**. This allows you to connect it to any element of your website from which you prefer to trigger the Checkout Pro opening. 
+### Open Checkout Pro without a payment button
+
+Use the `open` method to open Checkout from any desired element of your site, without necessarily showing the checkout button to your buyers.
+
+For example:
 
 [[[
 ```html
@@ -24,20 +28,22 @@ const checkout = mp.checkout({
 ```
 ]]]
 
-### With a payment button 
+### Open Checkout Pro with a payment button
 
-Use the `render` function to display a **payment button that allows the opening of the Checkout Pro**. In order to do this, you need add the following parameters: 
+Use the `render` method to render a payment button responsible for opening Checkout Pro on your site with the following parameters:
 
-| Parameter | Type | Description |
+| Parameter | Data Type | Description |
 | --- | --- | --- |
-|`container` |string| CSS Selector (identifier) for the element in which you want the payment button to be displayed. |
-| `type` (optional) | string | Allows you to define the button type. Currently only the 'wallet' value is accepted, which shows a payment button with Mercado Pago branding. **Default value**: basic payment button. |
-| `label` (optional) | string | Value for the button's text. **Default value**: “Pay” |
+| `container` | `string` | CSS Selector (identifier) of the HTML element where you want to show the payment button. It allows you to define the type of button you want. |
+| `type` (optional) | `string` | Defines the desired button type. Currently, it only accepts the `wallet` value, which shows a payment button with the Mercado Pago branding. |
+| `label` (optional) | `string` | Text to be rendered on the button. Default value: `Pay`. |
 
-You can use this method in two different ways:
+You can use the `render` method in two different ways:
 
-* Including the `render` option with its corresponding parameters along with the rest of the initialization options for the checkout.
-* Calling the `render` function with its corresponding parameters after the initialization, from wherever you prefer inside your code.
+- Including the `render` option with its respective parameters within the checkout initialization options.
+- Using the `render` function later, from the place you prefer within your code, with its respective parameters.
+
+For example:
 
 [[[
   ```javascript
@@ -60,17 +66,17 @@ checkout.render({
   ```
 ]]]
 
-### Default payment button:
+#### Default payment button
 
 ![Default Label Button](/images/web-payment-checkout/default_label_button.png)<br/>
 
-### Customized:
+#### Customized payment button
 
 ![Custom Label Button](/images/web-payment-checkout/custom_label_button.png)<br/><br/>
 
-### Opening the Checkout Pro automatically
+### Automatically open Checkout Pro
 
-Add the `autoOpen` parameter to your checkout initialization options to **automatically display the Checkout Pro**, without the need of any interactions with buttons or other elements for its opening.
+Add the `autoOpen` parameter to Checkout's launch options to automatically display Checkout Pro, without needing your customers to interact with a button or any other element to open it:
 
 [[[
 ```javascript
@@ -84,23 +90,23 @@ const checkout = mp.checkout({
 ```
 ]]]
 
-## Redirect Scheme
+## Opening scheme
 
-The Checkout Pro allows you to change your opening scheme.
+Checkout Pro allows you to change your default opening scheme.
 
-The schemes currently available are:
+Currently, the available schemes are:
 
-* **Redirect**: Opens the Checkout Pro in a new window.
-* **Modal**: Opens the Checkout Pro on your website.
+- **Redirect**: opens Checkout Pro in a new window.
+- **Modal**: open Checkout Pro on your site.
 
 ![Checkout-redirect](/images/web-payment-checkout/checkout-redirect.png)
 
-To integrate the redirect scheme, replace the payment button you made in the basic integration with the following snippet:
+To integrate the redirect scheme with your integration, replace the payment button configured in the basic implementation and add the Web Checkout link to your site where you want to display it, as shown in the example below:
 
 [[[
 ```php
 ===
-Redirect to the 'init_point' of the preference.
+Checkout Pro will open at the <code>init_point</code> defined by the preference:
 ===
 <!doctype html>
 <html>
@@ -114,7 +120,7 @@ Redirect to the 'init_point' of the preference.
 ```
 ```node
 ===
-Redirect to the 'init_point' of the preference.
+Checkout Pro will open at the <code>init_point</code> defined by the preference:
 ===
 <!doctype html>
 <html>
@@ -128,7 +134,7 @@ Redirect to the 'init_point' of the preference.
 ```
 ```java
 ===
-Redirect to the 'init_point' of the preference.
+Checkout Pro will open at the <code>init_point</code> defined by the preference:
 ===
 <!doctype html>
 <html>
@@ -142,7 +148,7 @@ Redirect to the 'init_point' of the preference.
 ```
 ```ruby
 ===
-Redirect to the 'init_point' of the preference.
+Checkout Pro will open at the <code>init_point</code> defined by the preference:
 ===
 <!doctype html>
 <html>
@@ -156,7 +162,7 @@ Redirect to the 'init_point' of the preference.
 ```
 ```csharp
 ===
-Redirect to the 'init_point' of the preference.
+Checkout Pro will open at the <code>init_point</code> defined by the preference:
 ===
 <!doctype html>
 <html>
@@ -170,7 +176,7 @@ Redirect to the 'init_point' of the preference.
 ```
 ```python
 ===
-Redirect to the 'init_point' of the preference.
+Checkout Pro will open at the <code>init_point</code> defined by the preference:
 ===
 <!doctype html>
 <html>
@@ -184,9 +190,9 @@ Redirect to the 'init_point' of the preference.
 ```
 ]]]
 
-## Header and elements colors
+## Color style
 
-Add the `theme` attribute to your initialization options as shown below to customize colors for some of the checkout's UI elements and header.
+According to the example below, add the `theme` attribute to the Checkout Pro initialization options to customize the color of its header and elements:
 
 [[[
 ```html
@@ -203,15 +209,17 @@ Add the `theme` attribute to your initialization options as shown below to custo
 ```
 ]]]
 
-> NOTE
+> WARNING
 >
-> Note
+> Important
 >
-> Valid only for modal scheme.
+> The customization of colors and elements is valid only for the **modal** opening scheme.
 
-### Header 
-Modify the header's color by adding the `headerColor` attribute to the `theme` object. 
-Its value must be in hexadecimal format. For example: 
+### Header
+
+Change the header color by adding the `headerColor` attribute to the `theme` object. Note that the attribute value must be in hexadecimal format.
+
+For example:
 
 [[[
 ```javascript
@@ -223,14 +231,16 @@ theme: {
 
 ### Elements
 
-The elements that can be customized are:
+You can customize the following elements of Checkout Pro:
 
-* Buttons
-* Data Entry Fields
-* Transition Elements: spinners and progress bars
-* Borders
+- Buttons;
+- Data fields;
+- Transition elements such as spinners and progress bars;
+- Edges.
 
-You can modify the color of those elements by adding the `elementsColor` attribute to the `theme` object. Its value must be in hexadecimal format. For example:
+You can change the color of these elements by adding the `elementsColor` attribute to the `theme` object. Note that the attribute value must be in hexadecimal format.
+
+For example:
 
 ```javascript
 theme: {
@@ -250,11 +260,11 @@ theme: {
 
 ------------
 
-#### Text color
+#### Texts
 
-The color of the button text will be **determined automatically** depending on the [contrast](https://24ways.org/2010/calculating-color-contrast) of the defined color.
+The text color of the Checkout Pro buttons and header will automatically be determined depending on the [contrast](https://24ways.org/2010/calculating-color-contrast) of the color defined for those same elements.
 
-For a light element *color*, the text color will be *black* or `#000`. For example:
+Light-colored elements will have their text color black or `#000`. For example:
 
 ```javascript
 theme: {
@@ -264,7 +274,7 @@ theme: {
 
 ![Light Color Button](/images/web-payment-checkout/light_color_button.png)
 
-<br/>For a *dark* element color, the text color will be *white* or `#fff`. For example:
+Dark-colored elements will have their text color in white or `#fff`. For example:
 
 ```javascript
 theme: {
@@ -273,26 +283,3 @@ theme: {
 ```
 
 ![Dark Color Button](/images/web-payment-checkout/dark_color_button.png)
-
-> This documentation uses the new library version. To see the previous version, go to the [old Customization section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/v1/customizations).
-
----
-
-### Next steps
-
-
-> LEFT_BUTTON_RECOMMENDED_EN
->
-> Other functionalities
->
-> Set up your payment and adapt Checkout Pro to your business.
->
-> [Other functionalities](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations)
-
-> RIGHT_BUTTON_RECOMMENDED_EN
->
-> Advanced Integration
->
-> Optimize your integration and improve the management of your sales.
->
-> [Advanced Integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/advanced-integration)
