@@ -1059,6 +1059,8 @@ curl -X POST \
 ```
 ]]]
 
+---
+
 ### Próximo paso
 
 > LEFT_BUTTON_REQUIRED_ES
