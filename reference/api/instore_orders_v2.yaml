@@ -270,7 +270,7 @@ paths:
                         example: 100
                 taxes:
                   type: array
-                  description: Information about the taxes payed.
+                  description: Information about the paid taxes.
                   items:
                     type: object
                     properties:
