@@ -1,19 +1,17 @@
-# Other functionalities
+# Preference configurations
 
-
-You can adapt the integration to your business by adding attributes in the preference. There is a lot of [details in a preference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/preferences/_checkout_preferences/post) that can be set, but always keep in mind what your business needs.
+You can adapt the Checkout Pro integration to your business model by setting [preference attributes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/preferences/_checkout_preferences/post).
 
 ----[mla, mlb]----
-If you offer purchases of high amounts, for example, you can accept [payments with two credit cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_payments_with_two_credit_cards) or, also, [exclude payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_attributes_for_the_preference) that you do not want to accept.
+If you offer high-value purchases, for example, you can accept [payments with two credit cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_accept_payments_with_2_credit_cards) or [delete undesired payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_define_the_desired_payment_methods) for your operation.
 ------------
 ----[mlm, mlc, mlu, mco, mpe]----
-If you offer purchases of high amounts, for example, you can [exclude payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_attributes_for_the_preference) that you do not want to accept.
+If you offer high-value purchases, for example, you can [exclude undesired payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_define_the_desired_payment_methods) for your operation.
 ------------
 
-You can [get business information](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_get_information_about_your_business) using preference. And you can also measure advertising effectiveness and track ads by [integration to Facebook Pixel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_associate_a_facebook_pixel) or [associate your Google Ads](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_associate_a_google_ads_tag).
+Preference attribute settings also allow you to [obtain business information](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_work_with_business_metrics) and [measure the effectiveness of your ads](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_optimize_your_ad_conversion) on platforms like Facebook and Google.
 
-
-## Example of a complete preference
+## Example of complete preference
 
 ----[mlm, mla, mlb, mlc, mlu, mpe]----
 
@@ -159,21 +157,19 @@ You can [get business information](https://www.mercadopago[FAKER][URL][DOMAIN]/d
  ```
 ------------
 
-## Attributes for the preference
+## Define the desired payment methods
 
-### Definition of Payment Methods
+By default, all payment methods are offered in Checkout Pro. Through payment preference, you can configure a default payment method to be rendered, delete unwanted ones, or choose a maximum number of installments to be offered.
 
-By default, all payment methods are offered. If you want to exclude any, it can be done from the payment preference.
-You can also set a payment method to appear by default or define the maximum number of installments to offer.
-
-
-| Attribute | Description |
+| Preference attribute | Description |
 | --- | --- |
-| `payment_methods` | Class that describes the attributes and methods of payment methods. |
-| `excluded_payment_methods` | Method that excludes by specific [payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods#bookmark_payment_methods_by_country): Visa, Mastercard or American Express, among others. |
-| `excluded_payment_types` | Method that excludes by type of [payment method](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods#bookmark_payment_methods_by_country): cash, credit or debit cards. |
-| `installments` | Method that defines the amount of maximum number of installments to offer. |
-| `purpose` | When the "wallet purchase" value is indicated, Checkout will accept payments exclusively from Mercado Pago registered users, with card and account balance. |
+| `payment_methods` | Class describing Checkout Pro's payment methods and attributes. |
+| `excluded_payment_types` | Method that excludes undesired [payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods#bookmark_payment_means_by_country) for your operation, such as credit card, ticket, among others. |
+| `excluded_payment_methods` | Method that excludes specific credit and debit card brands, such as Visa, Mastercard, American Express, among others. |
+| `installments` | Method that defines the maximum number of installments to be offered. |
+| `purpose` | By indicating the value "wallet_purchase" in this method, Checkout Pro will only accept payments from registered users in Mercado Pago, with card and account balance. |
+
+For example:
 
 [[[
 ```php
@@ -281,15 +277,70 @@ preference_data = {
 ```
 ]]]
 
+----[mla, mlb]----
+
+## Accept payments with 2 credit cards
+
+![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas.png)
+
+You can activate the option to offer payments with two credit cards from the Mercado Pago account.
+
+To activate this payment option, go to [`Business Options`](https://www.mercadopago.com.ar/settings/my-business) and select the option `Receive payments with 2 credit cards`.
+
+![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
+------------
+
+## Accept payments from registered users only
+
+----[mla, mlb]----
+You can accept payments with the Mercado Pago wallet only from registered users, with a credit card, money in account, or Mercado Crédito.
+------------
+----[mlm, mlc, mco, mpe, mlu]----
+You can accept payments with the Mercado Pago wallet only from registered users, with a credit card or money in account.
+------------
+
+This allows your customers to have their account information available instantly at the time of payment, such as their pre saved cards and addresses.
+
+> WARNING
+>
+> Important
+>
+> By adding this option, you will not be able to receive payments from users who do not have a Mercado Pago or Mercado Livre account, as well as you will not be able to receive payments via cash or transfer.
+
+To accept payments only from registered users, add the following attribute to your preferences:
+
+```json
+"purpose": "wallet_purchase"
+```
+
+Once you complete the action, your preference should have a structure similar to the example below:
+
+```json
+{
+    "purpose": "wallet_purchase",
+    "items": [
+        {
+            "title": "My product",
+            "quantity": 1,
+            "unit_price": 75.76
+        }
+    ],
+}
+```
+
 ----[mco]----
-### Differentiated IVA
+## Modify the DIAN tax rate
 
-You can modify the value of the tax for the Dirección de Impuestos y Aduanas Nacionales (DIAN) that applies according to the product or service you offer. If you do not differentiate this value, 19% will be applied by default.
+You can change the amount allocated to the Dirección de Impuestos y Aduanas Nacionales (DIAN) tax, applied according to the product or service you offer.
 
-| Attribute | Description |
+If the amount is not modified by you, a 19% fee will be applied by default.
+
+| Preference attribute | Description |
 | --- | --- |
-| `type` | Tax identifier. Only IVA is allowed. |
-| `value` | Tax amount. A maximum of two decimals is allowed. For items exempt from taxes zero must be reported. |
+| `type` | Tax identifier. This method only allows a `VAT` value. |
+| `value` | Tax amount. A maximum of two decimal places is allowed. For tax-exempt items, a zero value (`0`) must be entered. |
+
+For example:
 
 [[[
 ```json
@@ -308,9 +359,11 @@ Use the taxes attribute to define the corresponding value
 
 ----[mla, mlb, mco]----
 
-### Expiration date of cash payment
+## Change the due date for cash payments
 
-If you want, you can change the default due date of a cash payment by sending the `date_of_expiration` field in the preference creation request. The configured date must be between 1 and 30 days from the preference creation date.
+You can change the default expiration date for cash payments by sending the `date_of_expiration` field in the preference creation request. The date set by you must be between 1 day and 30 days from the date the payment is issued.
+
+For example:
 
 [[[
 ```json
@@ -321,32 +374,37 @@ The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-The deadline for approval of the cash payment is between 1 and 2 working days according to the payment method. Therefore, we recommend that you set the due date with at least 3 days to ensure that payment is made.
+> NOTE
+>
+> Note
+>
+> The crediting period is between one day and two working days, depending on the chosen payment method. Therefore, we recommend setting the expiration date at least three days apart to ensure that payment is made.
 
-Check [credit times by payment method](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_221) when configuring.
+Review the [credit times according to each payment method](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/_265) to perform the configuration correctly.
 
 > WARNING
 >
 > Important
 >
-> If the cash payment is paid after the expiration date, the amount will be refunded to the payer's Mercado Pago account.
+> If the payment is made after the expiration date, the amount will be refunded in the payer's Mercado Pago account.
+
 ------------
 
-### Binary Mode
+## Enable binary mode
 
-You can activate the binary mode if the business model requires payment approval to be instantaneous. This way, payment can only be approved or declined.
+You can enable the binary mode if the business model requires payment approval to be instantaneous. This way, the payment can only be approved or declined.
 
-In case the binary mode is not activated, the payment may be pending (in case of requiring any action by the buyer) or in process (if a manual review is necessary).
+The payment may be pending (if any action is required by the buyer) or processing (if a manual review is required) when the binary mode is disabled. 
 
-To activate it, you only have to set the _`binary_mode`_ attribute of the payment preference to `true`:
+To enable it, just set the payment preference's `binary_mode` attribute to `true`:
 
 ```json
 "binary_mode": true
 ```
 
-### Validity of Preferences
+## Set an expiration date for your preferences
 
-If you want to enable the payment of a preference with a certain duration, you can activate a period of validity or complete directly with the following attributes:
+Set an expiration period for your payment preferences in the `expires`, `expiration_date_from`, and `expiration_date_to` attributes:
 
 ```json
 "expires": true,
@@ -354,24 +412,20 @@ If you want to enable the payment of a preference with a certain duration, you c
 "expiration_date_to": "2017-02-28T12:00:00.000-04:00"
 ```
 
-### Description in the card summary
+Note that the date must follow the format `ISO 8601: yyyy-MM-dd'T'HH:mm:ssz`.
 
-You can send the name of your business in the attribute _`statement_descriptor`_ in this way in the summary of your payer's card the name of your business is shown and in this way the payer knows where made the purchase.
+## Send description on buyer card invoice
+
+You can add a description for your business via the `statement_descriptor` attribute of the payment preferences, as shown in the example below:
 
 ```json
 "statement_descriptor": "MYBUSINESS"
-```
 
-> NOTE
->
-> Note
->
-> Whether the value of the attribute is shown in the summary of your payer's card will depend on the brand of card used.
+Depending on the card brand, the description (attribute value) will appear on the buyer's card invoice.
 
-### Multiple Items
+## Set a preference for multiple items
 
-If you need to create a preference for more than one item, you should only add them as a list within _items_.
-Keep in mind that the total amount of the preference will be the sum of the amount for the unit price of each item.
+If you need to create a preference for more than one item, you must add them as a list, as shown in the example below:
 
 [[[
 ```php
@@ -538,49 +592,14 @@ curl -X POST \
 ```
 ]]]
 
-## Accept payments from registered users only
+Keep in mind that the total value of the preference will be the sum of the unit price value of each item listed.
 
-----[mla, mlb]----
-You can accept payments with the Mercado Pago wallet exclusively from registered users, with cards, money in account and Mercado Crédito.
-------------
-----[mlm, mlc, mco, mpe, mlu]----
-You can accept payments with the Mercado Pago wallet exclusively from registered users, with cards and money in account.
-------------
+## Show shipping cost
 
-This allows your customers to have their account information available instantly, such as their saved cards and addresses.
+If your website already calculates the shipment value, you can display it separately from the total amount at the time of payment.
 
-> WARNING
->
-> Important
->
-> Please note that by adding this option you will not be able to receive payments from users who do not have a Mercado Pago or Mercado Libre account and you will not be able to collect by cash or transfer.
+To configure such a scenario, add the item `shipments` with the value you want to charge in the `cost` attribute and the value `not_specified` in the `mode` attribute:
 
-To accept payments from registered users only, add the following attribute to your preferences:
-
-```json
-"purpose": "wallet_purchase"
-```
-
-In doing so, your preference would be as follows:
-
-```json
-{
-    "purpose": "wallet_purchase",
-    "items": [
-        {
-            "title": "My product",
-            "quantity": 1,
-            "unit_price": 75.76
-        }
-    ],
-}
-```
-
-## Shipment cost
-
-If you already have estimated shipping from your website, you can define the amount and show it separately from the total when offering payment.
-
-To configure it, add the node `shipments` with the value of the amount you want to charge in the attribute `cost`, and the value `not_specified` in the attribute `mode`.
 ```json
 {
     "shipments":{
@@ -590,16 +609,18 @@ To configure it, add the node `shipments` with the value of the amount you want 
 }
 ```
 
-## Optimize Ad Conversion
+## Optimize your ad conversion
 
-We know it’s important to maximize your ads effectiveness. For this reason, we offer you the choice integrating Checkout Pro with Facebook Ads and Google Ads platforms, in order to associate payments to your campaigns.
+We know it's important to maximize the effectiveness and findability of your ads.
+
+Therefore, we offer the possibility to integrate Checkout Pro with the Facebook Ads and Google Ads platforms to associate payments to your business campaigns.
 
 ----[mla, mlb]----
 > NOTE
 >
 > Note
 >
-> Only instantly approved payments with credit or debit cards, money in Mercado Pago or with Mercado Credits will be associated.
+> Only payments approved instantly with credit and debit cards, cash on Mercado Pago or Mercado Credits will be associated.
 ------------
 
 ----[mlm, mlc, mco, mpe, mlu]----
@@ -607,17 +628,17 @@ We know it’s important to maximize your ads effectiveness. For this reason, we
 >
 > Note
 >
-> Only instantly approved payments with credit or debit cards, or with money in Mercado Pago will be associated.
+> Only payments approved instantly with credit and debit cards, or with cash on Mercado Pago will be associated.
 ------------
 
-### Associate a Facebook Pixel
+### Integrate Checkout Pro with Facebook Ads
 
-When creating a preference, associate the corresponding identifier to your Facebook Pixel as follows:
+When creating a preference, you can associate it with a pixel (identifier) for tracking Facebook Ads conversions:
 
 [[[
 ```php
 ===
-Add the code in the preference and replace the value PIXEL_ID with your identifier.
+Add the following code in the preference and replace the <code>pixel_id</code> value with your identifier.
 ===
 <?php
   // Create a preference object
@@ -640,7 +661,7 @@ Add the code in the preference and replace the value PIXEL_ID with your identifi
 ```
 ```node
 ===
-Add the code in the preference and replace the value PIXEL_ID with your identifier.
+Add the following code in the preference and replace the <code>pixel_id</code> value with its identifier.
 ===
   // Create a preference object
 var preference = {
@@ -659,7 +680,7 @@ var preference = {
 ```
 ```java
 ===
-Add the code in the preference and replace the value PIXEL_ID with your identifier.
+Add the following code in the preference and replace the <code>pixel_id</code> value with its identifier.
 ===
   // Create a preference object
 Preference preference = new Preference();
@@ -679,7 +700,7 @@ preference.save();
 ```
 ```csharp
 ===
-Add the code in the preference and replace the value PIXEL_ID with your identifier.
+Add the following code in the preference and replace the <code>pixel_id</code> value with its identifier.
 ===
 // Associate your Facebook pixel
 var tracks = new List<PreferenceTrackRequest>
@@ -705,7 +726,7 @@ Preference preference = await client.CreateAsync(request);
 ```
 ```python
 ===
-Add the code in the preference and replace the value PIXEL_ID with your identifier.
+Add the following code in the preference and replace the <code>pixel_id</code> value with its identifier.
 ===
 # Associate your Facebook Pixel
 preference_data = {
@@ -725,7 +746,7 @@ preference = preference_response["response"]
 ```
 ```curl
 ===
-Add the code in the preference and replace the value PIXEL_ID with your identifier.
+Add the following code in the preference and replace the <code>pixel_id</code> value with its identifier.
 ===
 
 curl -X POST \
@@ -754,23 +775,22 @@ curl -X POST \
 ```
 ]]]
 
-Once set up, you’ll see a `Purchase` event for the specified Pixel everytime a payment is approved through your Checkout Pro.
+When your action is complete, a `Purchase` event will be associated with the _pixel_ specified in the code everytime a payment forwarded by your ad is approved in Checkout Pro.
 
 > NOTE
 >
 > Note
 >
-> At the moment, only one Pixel can be set. Test your integration’s performance with Facebook Pixel Helper extension, available on Chrome Store. For more information, visit [Facebook’s official website](https://www.facebook.com/business/help/742478679120153?id=1205376682832142).
+> For now, it is only possible to configure a single pixel per preference. Test your integration working using the Chrome Facebook Pixel Helper extension. For more information, visit the [official Facebook website](https://www.facebook.com/business/help/742478679120153?id=1205376682832142).
 
+### Integrate Checkout Pro with Google Ads
 
-### Associate a Google Ads tag
-
-When creating a preference, you can associate a Google Ads conversion tracking tag as follows:
+When creating a preference, you can associate it with a _tag_ (identifier) for tracking Google Ads conversions:
 
 [[[
 ```php
 ===
-Add the code in the preference and replace the values ​​CONVERSION\_ID y CONVERSION\_LABEL with your tag data.
+Add the code in the preference and replace the <code>CONVERSION\_ID</code> and <code>CONVERSION\_LABEL</code> values with the data from your tag.
 ===
 
 <?php
@@ -795,7 +815,7 @@ Add the code in the preference and replace the values ​​CONVERSION\_ID y CON
 ```
 ```node
 ===
-Add the code in the preference and replace the values ​​CONVERSION\_ID y CONVERSION\_LABEL with your tag data.
+Add the code in the preference and replace the <code>CONVERSION\_ID</code> and <code>CONVERSION\_LABEL</code> values with the data from your tag.
 ===
 // Configure your preference
 var preference = {
@@ -815,7 +835,7 @@ var preference = {
 ```
 ```java
 ===
-Add the code in the preference and replace the values ​​CONVERSION\_ID y CONVERSION\_LABEL with your tag data.
+Add the code in the preference and replace the <code>CONVERSION\_ID</code> and <code>CONVERSION\_LABEL</code> values with the data from your tag.
 ===
   // Create a preference object
 Preference preference = new Preference();
@@ -837,7 +857,7 @@ preference.save();
 ```
 ```csharp
 ===
-Add the code in the preference and replace the values ​​CONVERSION\_ID y CONVERSION\_LABEL with your tag data.
+Add the code in the preference and replace the <code>CONVERSION\_ID</code> and <code>CONVERSION\_LABEL</code> values with the data from your tag.
 ===
 // Associate your tag
 var tracks = new List<PreferenceTrackRequest>
@@ -864,7 +884,7 @@ Preference preference = await client.CreateAsync(request);
 ```
 ```python
 ===
-Add the code in the preference and replace the values ​​CONVERSION_ID y CONVERSION_LABEL with your tag data.
+Add the code in the preference and replace the <code>CONVERSION\_ID</code> and <code>CONVERSION\_LABEL</code> values with the data from your tag.
 ===
 # Associate your tag
 preference_data = {
@@ -885,7 +905,7 @@ preference = preference_response["response"]
 ```
 ```curl
 ===
-Add the code in the preference and replace the values ​​CONVERSION\_ID y CONVERSION\_LABEL with your tag data.
+Add the code in the preference and replace the <code>CONVERSION\_ID</code> and <code>CONVERSION\_LABEL</code> values with the data from your tag.
 ===
 curl -X POST \
   'https://api.mercadopago.com/checkout/preferences' \
@@ -914,33 +934,36 @@ curl -X POST \
 ```
 ]]]
 
-Once set up, you’ll see a conversion associated to the configured label everytime a payment is approved through your Checkout Pro.
+When your action is complete, a conversion will be associated with the specified tag everytime a payment forwarded for your ad is approved.
 
 > NOTE
 >
 > Note
 >
-> At the moment, only one label can be configured. For more information about Google Ads conversion tracking tags, visit the [Google's official website](https://support.google.com/google-ads?hl=es-419#topic=7456157).
+> For now, it is only possible to configure a single tag per preference. For more information about Google Ads conversion tags, visit the [official Google website](https://support.google.com/google-ads?hl=es-419#topic=7456157).
 
+## Work with business metrics
 
-## Get information about your business
+Our certified members in the [Dev Program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) can obtain business metrics from Checkout Pro.
 
-Our members certified in the [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/developer-program) can obtain business metrics. 
+Use headers in your payment preference to work with metrics, adding the identification code according to the desired scenario (it is not mandatory to complete the three fields mentioned below):
 
-To get business metrics, use `headers` in your preference. You should only add identification codes, as applicable. It is not required to complete the three fields mentioned.
-
-| Header | Code Type | Identifiers |
+| _Header_ | Code Type | Identifier |
 | --- | --- | --- |
-| `x-integrator-id` | Integrator | For developers or agencies that conducted the integration. |
-| `x-platform-id` | Platform | For the platforms or modules that offer Mercado Pago in their solutions. |
-| `x-corporation-id` | Corporations | For accounts associated with a seller's account or economic group. |
+| `x-integrator-id` | Integrator | For programmers or agencies that perform the integration. |
+| `x-platform-id` | Platform | For platforms or modules that offer Mercado Pago in their solutions. |
+| `x-corporation-id` | Corporations | For accounts associated with a seller account or an economic group. |
 
->Remember to add the `integrator_id` it to your integrations to receive additional benefits of the program. You can find your  `integrator_id` at the [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel).
+> NOTE
+>
+> Note
+>
+> Remember to add the `integrator_id` it to your integrations to receive additional benefits of the program. You can find your `integrator_id` in your [Developer Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/devpanel).
 
 [[[
 ```php
 ===
-Add identification codes and replace any value that you wish: CORPORATION\_ID, INTEGRATOR\_ID and PLATFORM_ID.
+Add the identification codes and replace the values according to the desired scenario: <code>CORPORATION\_ID</code>, <code>INTEGRATOR\_ID</code> and <code>PLATFORM_ID</code>.
 ===
 MercadoPago\SDK::setPlatformId("PLATFORM_ID");
 MercadoPago\SDK::setIntegratorId("INTEGRATOR_ID");
@@ -948,7 +971,7 @@ MercadoPago\SDK::setCorporationId("CORPORATION_ID");
 ```
 ```node
 ===
-Add identification codes and replace any value that you wish: CORPORATION\_ID, INTEGRATOR\_ID and PLATFORM_ID.
+Add the identification codes and replace the values according to the desired scenario: <code>CORPORATION\_ID</code>, <code>INTEGRATOR\_ID</code> and <code>PLATFORM_ID</code>.
 ===
 mercadopago.configure({
     platform_id: 'PLATFORM_ID',
@@ -958,7 +981,7 @@ mercadopago.configure({
 ```
 ```java
 ===
-Add identification codes and replace any value that you wish: CORPORATION\_ID, INTEGRATOR\_ID and PLATFORM_ID.
+Add the identification codes and replace the values according to the desired scenario: <code>CORPORATION\_ID</code>, <code>INTEGRATOR\_ID</code> and <code>PLATFORM_ID</code>.
 ===
 MercadoPago.SDK.setPlatformId("PLATFORM_ID");
 MercadoPago.SDK.setIntegratorId("INTEGRATOR_ID");
@@ -966,7 +989,7 @@ MercadoPago.SDK.setCorporationId("CORPORATION_ID");
 ```
 ```ruby
 ===
-Add identification codes and replace any value that you wish: CORPORATION\_ID, INTEGRATOR\_ID and PLATFORM_ID.
+Add the identification codes and replace the values according to the desired scenario: <code>CORPORATION\_ID</code>, <code>INTEGRATOR\_ID</code> and <code>PLATFORM_ID</code>.
 ===
 request_options = Mercadopago::RequestOptions.new()
 request_options.platform_id = 'PLATFORM_ID'
@@ -977,7 +1000,7 @@ sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN', request_options: request_options)
 ```
 ```csharp
 ===
-Add identification codes and replace any value that you wish: CORPORATION\_ID, INTEGRATOR\_ID and PLATFORM_ID.
+Add the identification codes and replace the values according to the desired scenario: <code>CORPORATION\_ID</code>, <code>INTEGRATOR\_ID</code> and <code>PLATFORM_ID</code>.
 ===
 MercadoPagoConfig.PlatformId    = "PLATFORM_ID";
 MercadoPagoConfig.IntegratorId  = "INTEGRATOR_ID";
@@ -985,7 +1008,7 @@ MercadoPagoConfig.CorporationId = "CORPORATION_ID";
 ```
 ```python
 ===
-Add identification codes and replace any value that you wish: CORPORATION_ID, INTEGRATOR_ID and PLATFORM_ID.
+Add the identification codes and replace the values according to the desired scenario: <code>CORPORATION\_ID</code>, <code>INTEGRATOR\_ID</code> and <code>PLATFORM_ID</code>.
 ===
 import mercadopago
 from mercadopago.config import RequestOptions
@@ -999,7 +1022,7 @@ sdk = mercadopago.SDK("ENV_ACCESS_TOKEN", request_options=request_options)
 ```
 ```curl
 ===
-Add identification codes and replace any value that you wish: CORPORATION\_ID, INTEGRATOR\_ID and PLATFORM_ID.
+Add the identification codes and replace the values according to the desired scenario: <code>CORPORATION\_ID</code>, <code>INTEGRATOR\_ID</code> and <code>PLATFORM_ID</code>.
 ===
 curl -X POST \
 'https://api.mercadopago.com/checkout/preferences' \
@@ -1019,34 +1042,15 @@ curl -X POST \
 ```
 ]]]
 
-
-----[mla, mlb]----
-
-## Payments with Two Credit Cards
-
-![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas.png)
-
-You can enable the option to offer to pay with two credit cards from the Mercado Pago account.
-To activate the payment option, go to your [business options](https://www.mercadopago.com.ar/settings/my-business) and choose the option _Receive payments with 2 credit cards_.
-
-![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
-
-------------
 ----
-### Next steps
+
+### Next step
 
 > LEFT_BUTTON_REQUIRED_EN
 >
 > Advanced Integration
 >
-> Optimize your integration and improve the management of your sales.
+> Optimize your integration with Checkout Pro and improve the management of your sales.
 >
 > [Advanced Integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/advanced-integration)
 
-> RIGHT_BUTTON_RECOMMENDED_EN
->
-> Customization
->
-> Adapt the style of your brand in the buying experience.
->
-> [Customization](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/customizations)
