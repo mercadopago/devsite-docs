@@ -1,134 +1,173 @@
-# Cómo integrar marketplace via API
+# Integra marketplace via API
 
 > WARNING
 >
-> Pre-requisitos
+> Requisito previo
 >
-> * Tener implementado ----[mla, mlm, mlc, mco, mlu, mpe]---- [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction). ------------ ----[mlb]---- [Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction). ------------
+> * Debes tener implementado ----[mla, mlm, mlc, mco, mlu, mpe]---- [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction). ------------ ----[mlb]---- [Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction). ------------
 
-Para comenzar debes:
+Para comenzar, sigue estos pasos:
 
-1. Dar de alta una aplicación y luego editar su **Redirect URI**.
-2. Solicitar a tus vendedores que se vinculen.
-3. Crear los pagos en nombre de tus vendedores.
-
-
-## 1. Cómo crear tu aplicación
-
-[Crea tu aplicación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel), y luego edita su configuración avanzada completando la **Redirect URI** donde serán redireccionados los vendedores al finalizar el proceso de vinculación.
-
-Una vez creada, obtendrás el `APP_ID` (identificador de aplicación) necesario para el siguiente paso.
-
-## 2. Vinculación de cuentas
-
-Para operar en Mercado Pago en nombre de tu vendedor, debes primero solicitarle autorización.
-
-2.1. Para esto, redirige al vendedor a la siguiente URL reemplazando en `client_id`, el valor de `APP_ID` y la misma `redirect_uri` que configuraste en el paso anterior:
-
-`https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&redirect_uri=http://www.URL_de_retorno.com`
-
-<br>
-2.2. Cuando el vendedor acepte, se hará una última redirección y recibirás el código de autorización en la URL que especificaste:
-
-`http://www.URL_de_retorno.com?code=AUTHORIZATION_CODE`
-
-El `AUTHORIZATION_CODE` tiene un tiempo de validez de 10 minutos y deberá ser utilizado para crear las credenciales que te permitan operar en nombre del vendedor.
-
-<br>
-2.3. También puedes incluir el parámetro `state` en la URL de autorización para identificar a quién corresponde el código que recibiste. Realiza esto de manera segura, asignando en dicho parámetro un identificador aleatorio que sea único por cada intento.
-
-Al incluir este parámetro, la URL de redirección quedaría de la siguiente forma:
+1. Crea y configura tu aplicación.
+2. Vincula tu aplicación con la cuenta de tus vendedores.
+3. Genera las credenciales para operar.
+4. Renueva tus credenciales.
+5. Crea los pagos en nombre de tus vendedores.
+6. Prueba tu marketplace.
 
 
-`https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=id=RANDOM_ID=&redirect_uri=http://www.URL_de_retorno.com`
+## Crea y configura tu aplicación
 
-Ahora recibirás en la URL de retorno especificada el código de autorización y también el identificador seguro:
+Primero debes tener creada [tu aplicación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications/create-app) con un nombre único que la identifique.
 
-`hhttp://www.URL_de_retorno.com?code=AUTHORIZATION_CODE&state=id=RANDOM_ID`
+Luego, necesitarás **configurar una Redirect URL para tu aplicación**. Para eso, ve a [Tus Aplicaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel), haz clic en el menú de opciones de tu aplicación y selecciona "Editar". 
 
-> No envíes información confidencial o credenciales de la cuenta de Mercado Pago.
+En el campo Redirect URL, agrega la dirección a la que quieres redirigir a los vendedores luego de ser vinculados correctamente. Ten en cuenta que la dirección que agregues es a donde recibirás los códigos de autorización de cada uno de ellos para la creación de las credenciales.
 
-### Crea las credenciales de tus vendedores
+Por último, debes obtener el ID de tu aplicación en [Tus Integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel). 
 
-Usa el código de autorización, obtenido en el paso anterior, para obtener las credenciales del usuario mediante la API de OAuth y así poder operar en su nombre.
+## Vincula tu cuenta de Mercado Pago con la de tus vendedores
 
-Request:
+Para operar en Mercado Pago en nombre de tu vendedor, primero debes solicitarle autorización. Para gestionar varias cuentas de Mercado Pago a la vez en tu integración, puedes hacerlo a través de OAuth, una funcionalidad de vinculación segura que permite que el vendedor ingrese a su cuenta de Mercado Pago, autorice la vinculación y habilite a tu aplicación para operar en su nombre. 
 
-```curl
-curl -X POST \
-     -H 'accept: application/json' \
-     -H 'content-type: application/x-www-form-urlencoded' \
-     'https://api.mercadopago.com/oauth/token' \
-     -d 'client_secret=ACCESS_TOKEN' \
-     -d 'grant_type=authorization_code' \
-     -d 'code=AUTHORIZATION_CODE' \
-     -d 'redirect_uri=REDIRECT_URI'
+Para esto, debes incluir en tu aplicación una URL que redirija al vendedor al sitio de autorización. 
+
+Te compartimos la URL base que debes utilizar y el detalle de los parámetros con los que tienes que completarla.
+
+```url
+https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com
+
+
 ```
+
+| Parámetro | Dato a completar |
+| ----------------- | ----------------- |
+| `client_id` | Reemplaza el valor `APP_ID` con el ID de tu aplicación. |
+| `state` | Identifica a quién corresponde el código que recibirás. Para eso, reemplaza el valor `RANDOM_ID` por un identificador que sea único por cada intento y que no contenga datos sensibles. |
+| `redirect_uri` | Agrega la URL que ingresaste en el campo Redirect URL al configurar tu aplicación. | 
+
+Al ingresar a esta URL, el vendedor será redirigido a Mercado Pago, donde deberá iniciar sesión con su cuenta y autorizar la vinculación con tu aplicación.
+
+![FlujoOAuth-es](/images/oauth/oauth-es-v2.png)
+
+Una vez que el vendedor haya autorizado a tu aplicación a vincularse con su cuenta de Mercado Pago, en tu servidor recibirás el código de autorización en la Redirect URL que especificaste. Se verá de esta manera: 
+
+```url
+https://www.redirect-url.com?code=CODE&state=RANDOM_ID
+```
+
+> Ten en cuenta que el valor `code` tiene un tiempo de validez de 10 minutos.
+
+> SERVER_SIDE
+>
+> h2
+>
+> Genera las credenciales para operar
+
+Para crear las credenciales necesarias para que tu aplicación pueda operar en nombre de un vendedor, deberás enviar el `CODE` que obtuviste en el paso anterior a través de la API de OAuth.
 
 Los parámetros que debes incluir son:
 
-* `client_secret`: Tu `ACCESS_TOKEN`. Puedes obtenerlo desde el detalle de tu [aplicación.]([FAKER][CREDENTIALS][URL])
-* `code`: El código de autorización que obtuviste al redirigir al usuario de vuelta a tu sitio.
-* `redirect_uri`: Debe ser la misma Redirect URI que configuraste en tu aplicación.
-
-
-_Response_:
-
-```json
-{
-    "access_token": "MARKETPLACE_SELLER_TOKEN",
-    "public_key": "PUBLIC_KEY",
-    "refresh_token": "TG-XXXXXXXXX-XXXXX",
-    "live_mode": true,
-    "user_id": USER_ID,
-    "token_type": "bearer",
-    "expires_in": 15552000,
-    "scope": "offline_access payments write"
-}
-```
-
-En la respuesta, además del `access_token` y `public_key` del vendedor que se ha vinculado, obtienes el `refresh_token` que debes utilizar para renovar periódicamente sus credenciales.
-
-> NOTE
->
-> Nota
->
-> Las credenciales tienen un **tiempo de validez de 6 meses**.
-> Si no se renuevan las credenciales de los vendedores antes de los 6 meses, **las mismas perderán vigencia y se deberá volver a autorizar al vendedor**.
-> Recomendación: Renovar las credenciales a los 5 meses de obtenerlas.
-
-### Renueva las credenciales de tus vendedores
-
-Este proceso debes efectuarlo periódicamente para asegurar tener almacenado en tu sistema credeciales de vendedores que estén vigentes, dado que son válidas por 6 meses.
-
-Sugerimos que si en el flujo de pago obtienes algún error relacionado al _Access Token_ que estás utilizando, refresques automáticamente y reintentes el pago, antes de mostrar un error al comprador.
+| Parámetro | Dato a completar |
+| ----------------- | ----------------- |
+| `client_secret` | Llave privada que se utiliza en algunos complementos para generar pagos. Puedes obtenerlo desde [Tus Credenciales]([FAKER][CREDENTIALS][URL]). |
+| `client_id` | ID único que identifica tu integración. |
+| `grant_type` | Indica el tipo de operación a realizar para obtener las credenciales. Este parámetro es fijo y lleva como valor `authorization_code`. |
+| `code` | El código de autorización o `CODE` que obtienes en tu servidor al realizar la vinculación. Deberá verse similar a este valor: `TG-60357f5d0cd06d000740646d-643464554`. | 
+| `redirect_uri` | Es la URL que configuraste en el campo Redirect URL en tu aplicación. |
 
 ```curl
 curl -X POST \
      -H 'accept: application/json' \
      -H 'content-type: application/x-www-form-urlencoded' \
      'https://api.mercadopago.com/oauth/token' \
-     -d 'client_secret= ACCESS_TOKEN' \
-     -d 'grant_type=refresh_token' \
-     -d 'refresh_token=USER_RT'
+     -d 'client_secret=CLIENT_SECRET' \
+     -d 'client_ID=CLIENT_ID' \
+     -d 'grant_type=authorization_code' \
+     -d 'code=CODE' \
+     -d 'redirect_uri=REDIRECT_URI'
 ```
 
-Respuesta esperada:
+En la respuesta obtendrás el `access_token` del vendedor que se ha vinculado. 
+
+También recibirás el `refresh_token`, que más adelante te servirá para renovar las credenciales de tus vendedores. 
+
+Además, recibirás la `public_key` del vendedor, que es la credencial o clave pública que usarás para identificar la cuenta en tu frontend. 
 
 ```json
 {
-    "access_token": "MARKETPLACE_SELLER_TOKEN",
-    "public_key": "PUBLIC_KEY",
-    "refresh_token": "TG-XXXXXXXXX-XXXXX",
-    "live_mode": true,
-    "user_id": USER_ID,
-    "token_type": "bearer",
-    "expires_in": 15552000,
-    "scope": "offline_access payments write"
+"access_token":"APP_USR-4934588586838432-XXXXXXXX-241983636",
+"token_type": "bearer",
+"expires_in": 15552000,
+"scope": "offline_access read write",
+"user_id": 241983636,
+"refresh_token": "TG-XXXXXXXX-241983636",
+"public_key": "APP_USR-d0a26210-XXXXXXXX-479f0400869e",
+"live_mode": true
 }
 ```
 
-## 3. Integra la API para recibir pagos
+> WARNING 
+> 
+> Importante
+> 
+> Recuerda que utilizarás información sensible de tus vendedores. Asegúrate de resguardarla de manera segura, no la incorpores en tus URLs de vinculación y gestiónala únicamente desde tu servidor.
+
+¡Y listo! Ya vinculaste la cuenta del vendedor a tu aplicación a través de OAuth. 
+
+> Ten en cuenta que estos pasos deben repetirse con cada cuenta que desees vincular.
+
+## Renueva las credenciales
+
+**Los datos que recibes de tus vendedores tienen una validez de 180 días**. Una vez transcurrido ese tiempo, deberás volver a solicitar la autorización al vendedor.
+Para evitarlo, renueva los datos antes de ese periodo de tiempo para asegurarte que siempre estén vigentes. 
+
+Para renovarlos, deberás realizar el siguiente llamado a la API de OAuth:
+
+```curl
+curl -X POST \
+     -H 'accept: application/json' \
+     -H 'content-type: application/x-www-form-urlencoded' \
+     'https://api.mercadopago.com/oauth/token' \
+     -d 'client_secret=CLIENT_SECRET' \
+     -d 'client_id=CLIENT_ID' \
+     -d 'grant_type=refresh_token' \
+     -d 'refresh_token=USER_REFRESH_TOKEN'
+```
+
+| Parámetro | Dato a completar |
+| ----------------- | ----------------- |
+| `client_secret` | Utiliza tu llave `client_secret`. |
+| `client_id` | Utiliza tu credencial `client_id`. |
+| `grant_type` | Incluye `refresh_token`, que no se modifica. |
+| `refresh_token` | Valor que recibiste junto con los datos del vendedor. | 
+
+Recibirás la siguiente respuesta:
+
+```json
+{
+    "access_token": "APP_USR-4934588586838432-XXXXXXXX-241983636",
+    "token_type": "bearer",
+    "expires_in": 15552000,
+    "scope": "offline_access read write",
+    "refresh_token": "TG-XXXXXXXXXXXX-241983636"
+}
+```
+### Desvincula cuentas
+
+Para desvincular el token asociado a tu cuenta, debes hacerlodesde el [portal de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/account/security/applications/connections) ingresando a **Tu perfil > Seguridad > Apps conectadas**.
+
+
+> NOTE
+> 
+> Nota
+> 
+> Recuerda que cada vez que renueves las credenciales, el `refresh_token` también cambiará, por lo que deberás almacenarlo nuevamente.
+>
+>  En caso de encontrar algún error a la hora de renovar las credenciales, recuerda que puedes consultarlo en la [referencia de códigos de error](https://developers.mercadolibre[FAKER][URL][DOMAIN]/es_ar/autenticacion-y-autorizacion#Referencia-de-codigos-de-error).
+
+
+## Integra la API para recibir pagos
 
 Para recibir pagos en nombre de tus vendedores debes integrar la [API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction), generando los pagos con el Access Token que se obtiene al vincular a cada vendedor con tu aplicación.
 
@@ -287,15 +326,37 @@ payment = payment_response["response"]
 
 El vendedor va a recibir la diferencia entre el monto total y las comisiones, tanto la de Mercado Pago, como la del _Marketplace_, así como cualquier otro importe que se deba descontar de la venta.
 
-### Notificaciones
+## Prueba tu Marketplace
 
-Es necesario que envíes tu `notification_url`, donde recibirás aviso de todos los nuevos pagos y actualizaciones de estados que se generen.
+Puedes probar tu Marketplace utilizando las credenciales de Sandbox de tu cuenta tanto para asociar a los vendedores como para realizar los cobros/cancelaciones y demás.
+Se podrá utilizar las tarjetas de test proporcionadas por Mercado Pago, y los distintos prefijos para manejar los mensajes de respuesta.
+[Prueba tu integración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/testing)
 
-Puedes recibir notificaciones cuando tus clientes autoricen o desautoricen tu aplicación, [configurando la URL](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) en tu cuenta.
+## Configura las notificaciones
 
-En el artículo de [notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks) puedes obtener más información.
+Puedes recibir notificaciones cada vez que un vendedor se vincule o desvincule de tu aplicación. Para configurarlas, sigue estos pasos:
 
-### Devoluciones y cancelaciones
+1. Ingresa a [Tus aplicaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel) y selecciona la aplicación que utilizas para el flujo de OAuth.
+
+2. Ve a la pestaña "Notificaciones Webhooks". Una vez dentro de la sección, ve al campo "Modo Producción" y agrega la URL a la cual deberán llegar las notificaciones. Si lo deseas, puedes hacer clic en el botón "Probar" para comprobar que la URL que asignaste reciba correctamente las Notificaciones Webhooks.
+
+3. Luego, en el campo "Eventos", selecciona la opción de "Vinculación de aplicaciones". Por último, presiona guardar. 
+
+¡Y listo! Cada vez que un vendedor se vincule o desvincule, recibirás una notificación a la URL que asignaste.
+
+Estos son algunos de los datos que podrás encontrar dentro de las notificaciones:
+
+| Atributo | Valor o tipo | Descripción |
+| ----------------- | ----------------- | --------------- |
+| `type` | `mp-connect` | Identifica a la notificación del tipo vinculación de cuentas. |
+| `action` | `application.authorized` | Informa que el vendedor se ha vinculado a la aplicación. |
+| `action` | `application.deauthorized` | Confirma que el vendedor se ha desvinculado de la aplicación. |
+| `data.id`| `string`| ID del vendedor vinculado a la aplicación. |
+
+Para más información, ve a [Notificaciones Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks).
+
+
+## Devoluciones y cancelaciones
 
 Las devoluciones y cancelaciones podrán ser realizadas tanto por el _marketplace_ como por el vendedor, vía API o desde la cuenta de Mercado Pago.
 En caso de que las cancelaciones las haga el Marketplace, se deben utilizar las obtenidas para el vendedor.
@@ -304,8 +365,3 @@ En el caso de las cancelaciones, solo podrán ser realizadas  utilizando la API 
 
 Puedes encontrar más información en el artículo sobre [devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).
 
-### Probá tu Marketplace
-
-Puedes probar tu Marketplace utilizando las credenciales de Sandbox de tu cuenta tanto para asociar a los vendedores como para realizar los cobros/cancelaciones y demás.
-Se podrá utilizar las tarjetas de test proporcionadas por Mercado Pago, y los distintos prefijos para manejar los mensajes de respuesta.
-[Probá tu integración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/testing)

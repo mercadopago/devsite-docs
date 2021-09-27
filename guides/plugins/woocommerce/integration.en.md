@@ -4,14 +4,14 @@ Currently, there are four types of checkout available for WooCommerce. If you wa
 
 1. Access the WordPress **Panel**.
 2. Click on **Plugins > Installed Plugins**.
-3. Search for **Mercado Pago payments for WooCommerce** and click on _Configurar_.
+3. Search for **Mercado Pago payments for WooCommerce** and click on **Set up**.
 4. Select **1 or more checkouts/payment options** you want to offer and click on **Manage** to open the plugin management screen.
 
 On the plugin management screen, fill in the required fields according to your business information. Take into account the information in the sections below: 
 
 ## Country of operation
 
-In the *País de operação* field, you must choose the country in which your Mercado Pago account operates. 
+In the **In which country does your Mercado Pago account operate?** field, you must choose the country in which your Mercado Pago account operates. 
 
 ## Credentials activation
 
@@ -23,23 +23,23 @@ The Test credential will be necessary at first to carry out tests to ensure the 
 
 To activate the credentials, follow the steps below.
 
-1. Scroll down to the _Credenciais_ section.
+1. Scroll down to the **Credentials** section.
 2. On **Add credentials to "Test Mode"or "Production Mode"**, choose **Activate Test Mode for Mercado Pago checkouts**. (By keeping this field enabled, your store will be in **test mode**, which allows you to test the plugin before setting the store to production).
 3. Enter your **test** and **production** credentials in the required fields. If you don't have this information, access the [Credentials](https://www.mercadopago.[FAKER][DOMAIN][URL]/developers/en/guides/resources/credentials) documentation and follow the required steps. 
-4. When finished filling in, click on _Salvar alterações_.
+4. When finished filling in, click on **Save changes**.
 
 Set up the business information as shown in the next section once you fill in the credentials. 
 
 ## Business information
 
-*Informações de negócio* is required to identify your store. Fill in the fields as below.
+Business information is required to identify your store. Fill in the fields as below.
 
-1. **Nome da loja:** Enter the name of your store.
-2. **Categoria da loja:** Enter the category of your store's products.
+1. **Store name:** Enter the name of your store.
+2. **Store Category:** Enter the category of your store's products.
 3. **Store ID:** Use a number or prefix to identify orders and payments from your store.
-4. **Integrator ID:** Enter your *integrator_id* as Mercado Pago partner. If you are not a partner yet, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/developer-program) for more information.
+4. **Integrator ID:** Enter your **integrator_id** as Mercado Pago partner. If you are not a partner yet, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/developer-program) for more information.
 
-In _Ajustes avançados_, you can configure options related to saving information to a file for debugging technical issues, as well as configuring [IPN notifications](https://www.mercadopago[FAKER][DOMAIN][URL]/developers/en/guides/notifications/ipn).
+In **Advanced adjustment**, you can configure options related to saving information to a file for debugging technical issues, as well as configuring [IPN notifications](https://www.mercadopago[FAKER][DOMAIN][URL]/developers/en/guides/notifications/ipn).
 
 ## Payment experience
 
@@ -51,24 +51,24 @@ In addition to the settings above, you will find different options related to yo
 >
 > Remember that the availability of the settings described below is related to the type of checkout chosen.
 
-1. **Ativar o checkout:** Select **Yes** to enable the experience of Mercado Pago on your store's checkout.
-2. **Título:** Keep the default text or change it to your own. This text will be displayed at the checkout, along with the payment options.
-3. **Meios de pagamento:** Choose the payment methods you want to offer.
-4. **Converter moeda:** Activate this option so that the currency value configured in WooCommerce matches the currency value you use in Mercado Pago.
-5. **Máximo de parcelas:** Select the maximum installments you want to offer in your store.
-6. **Experiência de pagamento:** Select between **Redirect** and **Modal**. In **Redirect**, customers will be redirected to a Mercado Pago page with the payment form to complete the purchase. In **Modal**, customers will have access to the Mercado Pago payment form without leaving your store.
-7. **Voltar à loja:** Select whether or not you want the customer to automatically return to your store after completing the payment.
-8. **URL de sucesso / URL de pagamento recusado / URL de pagamento pendente:** If you want to build a URL and customize the return page for the 3 statuses informed, just enter them in the requested field.
-9. **Modo binário:** Activate when you don't want to leave payments in pending or review status. With binary mode, payments will be accepted or declined automatically.
-10. **Cupons de desconto:** Select whether or not you want to offer discount coupons in your store.
-11. **Reduzir inventário:** Select **Yes** if you want the product to be taken out of stock during order creation, regardless of whether the payment is approved or not. Otherwise, keep **No** to have the product withdrawn from stock only when payment is approved. 
-12. **Desconto por comprar com Mercado Pago:** Set a percentage discount amount for customers who pay with Mercado Pago.
-13. **Comissão por compra com Mercado Pago:** Set an additional percentage amount that you want to charge as a fee to your customers for paying with Mercado Pago.
+1. **Activate checkout:** Select **Yes** to enable the experience of Mercado Pago on your store's checkout.
+2. **Title:** Keep the default text or change it to your own. This text will be displayed at the checkout, along with the payment options.
+3. **Payment methods:** Choose the payment methods you want to offer.
+4. **Convert Currency:** Activate this option so that the currency value configured in WooCommerce matches the currency value you use in Mercado Pago.
+5. **Max of installments:** Select the maximum installments you want to offer in your store.
+6. **Payment experience:** Select between **Redirect** and **Modal**. In **Redirect**, customers will be redirected to a Mercado Pago page with the payment form to complete the purchase. In **Modal**, customers will have access to the Mercado Pago payment form without leaving your store.
+7. **Return to the store:** Select whether or not you want the customer to automatically return to your store after completing the payment.
+8. **Success URL / Payment URL rejected / Payment URL peding:** If you want to build a URL and customize the return page for the 3 statuses informed, just enter them in the requested field.
+9. **Binary mode:** Activate when you don't want to leave payments in pending or review status. With binary mode, payments will be accepted or declined automatically.
+10. **Discount coupons:** Select whether or not you want to offer discount coupons in your store.
+11. **Reduce inventory:** Select **Yes** if you want the product to be taken out of stock during order creation, regardless of whether the payment is approved or not. Otherwise, keep **No** to have the product withdrawn from stock only when payment is approved. 
+12. **Discounts per purchase with Mercado Pago:** Set a percentage discount amount for customers who pay with Mercado Pago.
+13. **Commission for purchase with Mercado Pago:** Set an additional percentage amount that you want to charge as a fee to your customers for paying with Mercado Pago.
 ----[mlb]----
 14. **Pix:** If you want to offer Pix payments, you need to activate **Custom Checkout** **- Pay with Pix** and follow the steps described on the screen to complete the integration. **(Brazil only)**
 15. **Vencimento do Pix:** The validity period of the code sent to the customer after placing the order. This will be the period the customer will have to pay for the purchase. **(Brazil only)**
 ------------
-16. **Pagamento com cartões salvos**: Allows customers to buy with their card details saved at Mercado Pago, without having to fill in card details at the store checkout.
+16. **Payment with saved cards**: Allows customers to buy with their card details saved at Mercado Pago, without having to fill in card details at the store checkout.
 
 ----[mlb]----
 > WARNING

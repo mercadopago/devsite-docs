@@ -361,7 +361,7 @@ Agora no seu frontend, siga estas etapas para adicionar o checkout ao seu site:
 <script>
 // Adicione as credenciais do SDK
   const mp = new MercadoPago('PUBLIC_KEY', {
-        locale: 'es-AR'
+        locale: 'pt-BR'
   });
 
   // Inicialize o checkout
