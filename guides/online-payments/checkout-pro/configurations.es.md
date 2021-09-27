@@ -3,13 +3,13 @@
 Puedes adaptar la integración de Checkout Pro a tu modelo de negocio configurando [atributos de preferencia](https://www.mercadopago[FAKER][URL][DOMAIN]/ developers/es/reference/ferences/_checkout_preferences/post).
 
 ---- [mla, mlb] ----
-Si ofreces compras de alto valor, por ejemplo, puedes aceptar [pagos con dos tarjetas de crédito](https: //www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#???) o [eliminar métodos de pago](https: //www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#???) no deseados para tu operación.
+Si ofreces compras de alto valor, por ejemplo, puedes aceptar [pagos con dos tarjetas de crédito](https: //www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_acepta_pagos_con_2_tarjetas_de_credito) o [eliminar métodos de pago](https: //www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_define_los_medios_de_pago) no deseados para tu operación.
 ------------
 ---- [mlm, mlc, mlu, mco, mpe] ----
-Si ofreces compras de alto valor, por ejemplo, puedes [excluir métodos de pago](https: //www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#???) no deseado para tu operación.
+Si ofreces compras de alto valor, por ejemplo, puedes [excluir métodos de pago](https: //www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_define_los_medios_de_pago) no deseado para tu operación.
 ------------
 
-La configuración de atributos de preferencia también te permite [obtener información comercial](https: //www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#???) y [medir la efectividad de tus anuncios](https: //www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#???) en plataformas como Facebook y Google.
+La configuración de atributos de preferencia también te permite [obtener información comercial sobre tu negócio](https: //www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations###bookmark_obten_información_sobre_tu_negocio) y [medir la efectividad de tus anuncios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_optimiza_la_conversión_de_tus_anuncios) en plataformas como Facebook y Google.
 
 ## Ejemplo de preferencia completa
 
