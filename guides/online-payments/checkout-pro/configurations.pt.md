@@ -949,7 +949,7 @@ Para trabalhar com métricas, utilize _headers_ na sua preferência de pagamento
 | _Header_ | Tipo de código | Identificador |
 | --- | --- | --- |
 | `x-integrator-id` | Integrador | Para programadores ou agências que realizam a integração. |
-| `x-platform-id` | Plataforma | Para as plataformas ou módulos que oferecem Mecado Pago em suas soluções. |
+| `x-platform-id` | Plataforma | Para as plataformas ou módulos que oferecem Mercado Pago em suas soluções. |
 | `x-corporation-id` | Corporações | Para contas associadas a uma conta vendedor ou a um grupo econômico. |
 
 > NOTE
