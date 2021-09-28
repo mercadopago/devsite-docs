@@ -400,7 +400,7 @@ Avoid rejected payments with our [recommendations](https://www.mercadopago[FAKER
 ## Manage cancellations and returns
 
 ----[mla, mlm, mco, mlu, mlb, mlc]----
-Cancellations are made when payment has not been completed before the due date and the seller then decides to cancel it. Returns, in turn, happen when the buyer completes the payment, but the seller decides to cancel it totally or partially.
+Cancellations happen when a payment has not been completed before the due date and the seller then decides to cancel it. Returns, in turn, happen when the buyer completes the payment, but the seller decides to cancel it totally or partially.
 ------------
 
 ----[mpe]----
