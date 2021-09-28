@@ -183,21 +183,21 @@ paths:
       parameters:
         - name: user_id
           in: path
-          description: Find the User Id in your developer dashboard at our devsite
+          description: Find the User ID in your developer dashboard at our devsite
           required: true
           schema:
             type: string
             example: 446566691
         - name: external_store_id
           in: path
-          description: Custom Store Id associated to the order.
+          description: Custom Store ID associated to the order.
           required: true
           schema:
             type: string
             example: SUC001
         - name: external_pos_id
           in: path
-          description: Custom POS Id associated to the order.
+          description: Custom POS ID associated to the order.
           required: true
           schema:
             type: string
@@ -210,7 +210,7 @@ paths:
               properties:
                 external_reference:
                   type: string
-                  description: Custom order id you can synchronize with your sale system.
+                  description: Custom order ID you can synchronize with your sale system.
                   example: 12345
                 title:
                   type: string
@@ -276,7 +276,7 @@ paths:
                     properties:
                       value:
                         type: number
-                        description: total amount of tax payed (this amount is not included in the sum of order's total amount).
+                        description: Total amount of tax payed. This amount is not included in the total sum of the order.
                         example: 19
                       type:
                         type: string
