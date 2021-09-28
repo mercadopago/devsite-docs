@@ -653,7 +653,7 @@ Si realizaste los pasos de configuración del Webhook, es momento que revises tu
 
 ## Glosario
 
-Lo sabemos, algunos términos son nuevos y quizá  no estés familiarizado con ellos. ¡Usa este glosario para no perderte!
+Lo sabemos, algunos términos son nuevos y quizás no estés familiarizado con ellos. ¡Usa este glosario para no perderte!
 
 | Termino | Descripción |
 | --- | --- |
