@@ -12,7 +12,7 @@ Automatic notifications allow you to manage your inventory and keep your system 
 
 ## Enter additional information to the preference
 
-Improve the payment approval and shopping experience in Checkout Pro by adding information to your preferences that details the item purchased and the purchasing user.
+Improve the payment approval and shopping experience in Checkout Pro by adding information that details the item purchased and the purchasing user to your preferences.
 
 In Preferences, you can enter the following additional information:
 
