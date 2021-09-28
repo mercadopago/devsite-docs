@@ -44,7 +44,8 @@ curl -X POST \
 
 #### 1. Configura la suscripción con los datos de tu usuario vendedor
 
-Utiliza la  [clave pública de producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials) de tu usuario de prueba vendedor “.<br>
+Utiliza el `access_token` de las [credenciales productivas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials) de tu usuario de prueba. 
+<br>
 
 #### 2. Realiza un pago con tu usuario comprador
 

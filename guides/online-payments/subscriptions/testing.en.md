@@ -44,7 +44,8 @@ curl -X POST \
 
 #### 1. Set the subscription with the data of your seller user
 
-Use the [production public key](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials) of your user seller test.<br>
+Use the `access_token` of the [productive credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials) of your test user.
+<br>
 
 #### 2. Make a payment with your buyer user
 
