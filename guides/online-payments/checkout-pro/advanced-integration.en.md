@@ -404,7 +404,7 @@ Cancellations happen when a payment has not been completed before the due date a
 ------------
 
 ----[mpe]----
-Cancellations are made when payment has not been completed before the due date, and the seller then decides to cancel it. Returns, in turn, happen when the buyer completes the payment, but the seller decides to cancel it totally.
+Cancellations happen when payment has not been completed before the due date, and the seller then decides to cancel it. Returns, in turn, happen when the buyer completes the payment, but the seller decides to cancel it totally.
 ------------
 
 For more information, visit our documentation [on how to manage your payment cancellations and returns](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/ account/cancellations-and-refunds).
