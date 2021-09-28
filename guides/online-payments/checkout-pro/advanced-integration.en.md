@@ -1,6 +1,6 @@
 # Advanced Integration
 
-Checkout Pro has extra features that allow you to optimize its integration and improve the management of your sales payments.
+Checkout Pro has features that allow you to improve the management of your sales payments through an optimized integration.
 
 ## Receive payment notifications
 
