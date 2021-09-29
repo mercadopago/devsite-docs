@@ -35,11 +35,11 @@ A resposta terá estrutura similar a do exemplo abaixo:
 
 >WARNING
 >
->Importante
+> Importante
 >
-> * Você pode gerar até 10 contas de usuários de teste ao mesmo tempo. Por isso, recomendamos salvar o _e-mail_ e _senha_ de cada um.
-> * Os usuários de teste perdem a validade após 60 dias sem atividade no Mercado Pago.
-> * Tanto o comprador como o vendedor devem ser usuários de teste.
+> Você pode gerar até 10 contas de usuários de teste ao mesmo tempo. Por isso, recomendamos salvar o e-mail e senha de cada um.
+> Os usuários de teste perdem a validade após 60 dias sem atividade no Mercado Pago.
+> Tanto o comprador como o vendedor devem ser usuários de teste.
 
 ## Teste o fluxo de pagamento
 
