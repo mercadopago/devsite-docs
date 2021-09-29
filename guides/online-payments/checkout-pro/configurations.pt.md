@@ -403,7 +403,7 @@ Para ativá-lo, basta definir o atributo `binary_mode` da preferência de pagame
 >
 > Importante
 >
-> A ativação do modo binário simplifica a integração com o Checkout Pro, mas pode acarretar no decréscimo da taxa de porcentagem de pagamentos aprovados. Isto porque pagamentos pendentes ou ainda sendo processados, que poderiam ser aprovados tardiamente, serão por padrão automáticamente rejeitados para manter a instantaneidade do fluxo.  
+> A ativação do modo binário simplifica a integração com o Checkout Pro, mas pode acarretar no decréscimo da taxa de porcentagem de pagamentos aprovados. Isto porque, para manter o fluxo instantâneo, pagamentos pendentes ou ainda sendo processados serão por padrão automáticamente rejeitados. 
 
 ## Defina a vigência das suas preferências
 
