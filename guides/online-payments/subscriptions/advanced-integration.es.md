@@ -99,7 +99,7 @@ curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPRO
 
 ## Fecha de facturación
 
-Para suscripciones con frecuencia de pago mensual, puedes elegir un día fijo del mes para que sean hechos los cobros. En caso que no configures un día específico, los cobros serán hechos en el mismo día del mes en que el suscriptor dió de alta a la suscripción.
+Para suscripciones con frecuencia de pago mensual, puedes elegir un día fijo del mes para que se efectúen los cobros. En caso de que no configures un día específico, los cobros serán hechos en el mismo día del mes en que el suscriptor dió de alta a la suscripción.
 
 Cuando estableces una fecha de facturación, puedes elegir si se va a cobrar o no un __monto proporcional (prorrateo)__ a los pagadores que se adhieren a esa suscripción en fechas distintas a la que elegiste.
 
