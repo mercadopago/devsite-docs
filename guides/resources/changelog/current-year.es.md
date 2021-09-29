@@ -5,6 +5,56 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 ---
 ## Septiembre 2021
 
+### 23 de septiembre
+
+> CHANGELOG
+>
+> Autoriza y vincula cuentas en tus aplicaciones con OAuth
+>
+> NEWS: NOVEDADES
+>
+> PRODUCT: OAUTH
+Conoce cómo gestionar varias cuentas de Mercado Pago a la vez en tu integración y de manera segura a través de OAuth. Esta funcionalidad de vinculación permite que el vendedor ingrese a su cuenta de Mercado Pago, autorice la vinculación y habilite a tu aplicación para operar en su nombre.
+
+[Ir a la documentación de OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth)
+
+### 13 de Septiembre
+
+> CHANGELOG
+>
+> Nueva versión Magento 2
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: MAGENTO 2
+
+Lanzamos la nueva versión 3.10.1 para Magento 2.
+
+[Ir a documentación de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-magento2/releases/tag/v3.10.1).
+
+### 10 de septiembre
+
+> CHANGELOG
+>
+> Nueva versión SDK Java
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK JAVA
+Lanzamos una nueva versión de la SDK Java 1.10.2.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-java/releases).
+
 ### 2 de septiembre
 
 ----[mlc]----
@@ -682,7 +732,7 @@ Integra Checkout Transparente más simple y rápido con la nueva funcionalidad C
 Integra Checkout API más simple y rápido con la nueva funcionalidad CardForm, que te permite autogenerar la lógica de negocio en tu formulario de pagos con tarjeta y mejorar la compatibilidad con los distintos navegadores.
 ------------
 
-[Ir a documentación de MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v2/receiving-payment-by-card)
+[Ir a documentación de MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-card)
 
 > GIT
 >

@@ -15,7 +15,7 @@ Para poder encontrá-las, veja a [seção de Credenciais]([FAKER][CREDENTIALS][U
 > Tem dúvidas sobre credenciais? Leia [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) para mais informações. 
 
 ## Sempre utilize nossas bibliotecas
-Recomendamos que utilize as bibliotecas oficais para sua integração. Isso permite cuidar dos dados sensíveis dos seus clientes, cumprir com os padrões de segurança requeridos e estar sempre atualizado.
+Recomendamos que utilize as bibliotecas oficiais para sua integração. Isso permite cuidar dos dados sensíveis dos seus clientes, cumprir com os padrões de segurança requeridos e estar sempre atualizado.
 
 <br>
 

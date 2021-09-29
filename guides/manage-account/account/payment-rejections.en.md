@@ -129,7 +129,7 @@ pod ‘MercadoPagoDevicesSDK’
 Add the following code in the **build.gradle** file.
 ===
 dependencies {
-   implementation 'com.mercadolibre.android.device:sdk:2.0.0'
+   implementation 'com.mercadolibre.android.device:sdk:2.0.1'
 }
 ```
 ]]]

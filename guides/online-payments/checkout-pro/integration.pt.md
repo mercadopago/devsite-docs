@@ -350,7 +350,7 @@ Depois, configure as credenciais do SDK para seu uso individual, e inicialize se
 <script>
 // Adicione as credenciais do SDK
   const mp = new MercadoPago('PUBLIC_KEY', {
-        locale: 'es-AR'
+        locale: 'pt-BR'
   });
 
   // Inicialize o checkout

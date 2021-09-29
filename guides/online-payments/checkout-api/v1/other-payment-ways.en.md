@@ -46,7 +46,8 @@ You can check the available payment methods whenever you need.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -142,7 +143,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 >
 > New MercadoPago.js version
 >
-> Use MercadoPago.js V2 library to be updated to the latest version and to improve compatibility with different browsers.<br><br>[Integrate Checkout API with MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/other-payment-ways)
+> Use MercadoPago.js V2 library to be updated to the latest version and to improve compatibility with different browsers.<br><br>[Integrate Checkout API with MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways)
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
 **Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
@@ -524,7 +525,8 @@ You can check the available payment methods whenever you need.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -1021,7 +1023,8 @@ You can check the available payment methods whenever you need.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -1449,7 +1452,8 @@ You can check the available payment methods whenever you need.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -2140,7 +2144,8 @@ You can check the available payment methods whenever you need.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -2766,7 +2771,8 @@ You can check the available payment methods whenever you need.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -3179,7 +3185,8 @@ You can check the available payment methods whenever you need.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;

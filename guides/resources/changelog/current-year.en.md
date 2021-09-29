@@ -5,6 +5,57 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 ---
 ## September 2021
 
+### September 23rd
+
+> CHANGELOG
+>
+> Authorize and link accounts to your applications with OAuth
+>
+> NEWS: NEWS
+>
+> PRODUCT: OAUTH
+
+Learn how to manage several Mercado Pago accounts at the same time and safely in your integration using OAuth. This feature allows sellers to access their Mercado Pago account to authorize and enable your application to work under their name.
+
+[Go to OAuth documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/oauth)
+
+### September 13th
+
+> CHANGELOG
+>
+> New Magento 2 plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: MAGENTO 2
+
+We have released the new version 3.10.1 for Magento 2.
+
+[Go to Magento 2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.10.1) for further details regarding this release.
+
+### September 10th
+
+> CHANGELOG
+>
+> New version of SDK Java
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK JAVA
+We have released a new version of SDK Java 1.10.2.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-java/releases) for further details regarding this release.
+
 ### September 2nd
 
 ----[mlc]----
@@ -673,7 +724,7 @@ We have released the new version 3.8.2 for Magento 2.
 
 Integrate Checkout API simpler and faster with the new CardForm functionality, which allows you to auto generate your business logics in your card payment form and improve compatibility with different browsers.
 
-[Go to MercadoPago.js V2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/receiving-payment-by-card)
+[Go to MercadoPago.js V2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card)
 
 > GIT
 >

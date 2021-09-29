@@ -6,6 +6,56 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Setembro 2021
 
+### 23 de septiembre
+
+> CHANGELOG
+>
+> Autorize e vincule contas em suas aplicações com OAuth
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: OAUTH
+Aprenda a gerenciar várias contas do Mercado Pago simultaneamente e de forma segura através do OAuth. Essa funcionalidade de vinculação permite que o vendedor acesse sua conta do Mercado Pago, autorize a vinculação e habilite sua aplicação para operar em seu nome.
+
+[Ir para a documentação de OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/oauth)
+
+### 13 de setembro
+
+> CHANGELOG
+>
+> Nova versão Magento 2
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MAGENTO 2
+
+Lançamos a nova versão 3.10.1 para Magento 2.
+
+[Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.10.1).
+
+### 10 de setembro
+
+> CHANGELOG
+>
+> Nova versão SDK Java
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK JAVA
+Lançamos a nova versão 1.10.2 do SDK Java.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-java/releases).
+
 ### 2 de setembro
 
 ----[mlc]----
@@ -684,7 +734,7 @@ Integra Checkout Transparente mais simples e rápido com a nova funcionalidade C
 Integra Checkout API mais simples e rápido com a nova funcionalidade CardForm, que permite autogerar a lógica de negócio no seu formulário de pagamentos com cartão e melhorar a compatibilidade com os distintos navegadores.
 ------------
 
-[Ir para a documentação de MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v2/receiving-payment-by-card)
+[Ir para a documentação de MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card)
 
 > GIT
 >
