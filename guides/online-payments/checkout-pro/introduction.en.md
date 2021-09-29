@@ -11,28 +11,12 @@ Checkout Pro is an integration that allows you to **charge your customers throug
 
 ## Checkout Pro offers:
 
-----[mla]----
-* **Integration with the most popular [payment methods](https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264)** in the country.
-------------
-----[mlm]----
-*  **Integration with the most popular [payment methods](https://www.mercadopago.com.mx/ayuda/medios-de-pago-cuotas-promociones_264)** in the country.
-------------
-----[mlc]----
-* **Integration with the most popular [payment methods](https://www.mercadopago.cl/ayuda/medios-de-pago-cuotas-promociones_264)** in the country.
-------------
-----[mlu]----
-* **Integration with the most popular [payment methods](https://www.mercadopago.com.uy/ayuda/medios-de-pago-cuotas-promociones_264)** in the country.
-------------
-----[mco]----
-* **Integration with the most popular [payment methods](https://www.mercadopago.com.co/ayuda/medios-de-pago-cuotas-promociones_264)** in the country.
-------------
 ----[mlb]----
 * **Integration with the most popular [payment methods](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265)** in the country.
 ------------
-----[mpe]----
-* **Integration with the most popular [payment methods](https://www.mercadopago.com.pe/ayuda/medios-de-pago-cuotas-promociones_264)** in the country.
+----[mla, mlm, mlc, mpe, mco, mlu]----
+* **Integration with the most popular [payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/medios-de-pago-cuotas-promociones_264)** in the country.
 ------------
-
 * **Tailored shopping experience** accessible across devices.
 * **One-click purchases**: When paying with a Mercado Pago account, user information and cards can be saved, allowing payments that only require a security code or money in your account.
 * **Guest purchases**: Having a Mercado Pago account is not a requirement for users to make a payment.
