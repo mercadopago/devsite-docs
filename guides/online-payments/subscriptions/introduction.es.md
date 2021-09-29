@@ -32,7 +32,7 @@ Para poder integrar suscripciones, es necesario que conozcas cuatro conceptos cl
 
 ### Fecha de facturación y monto proporcional
 
-En el siguiente gráfico muestra cómo actúa la fecha de facturación y el eventual cobro del monto proporcional (prorrateo) al suscriptor.
+El siguiente gráfico muestra cómo actúa la fecha de facturación y el eventual cobro del monto proporcional (prorrateo) al suscriptor.
 
 ![Basic-subscriptions](/images/subscriptions/linea-cobro-ES.png)
 
