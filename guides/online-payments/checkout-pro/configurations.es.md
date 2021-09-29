@@ -416,6 +416,12 @@ Para activarlo, solo debes configurar como `true` el atributo `binary_mode` de l
 "binary_mode": true
 ```
 
+> WARNING
+>
+> Importante
+>
+> Al activar el modo binario se simplifica la integración con Checkout Pro, pero puede ocasionar una disminución en la tasa de porcentaje de pagos aprobados. Esto se debe a que, para mantener el flujo instantáneo, los pagos pendientes o en proceso se rechazarán automáticamente de forma predeterminada.
+
 ## Establece la vigencia de preferencias
 
 Si se quiere habilitar el pago de una preferencia con un tiempo de duración determinado, se puede activar un periodo de vigencia o concluir directamente con los atributos `expires`,` expiration_date_from` y `expiration_date_to`:
