@@ -272,9 +272,9 @@ preference_data = {
 
 ## Return URL
 
-At the end of the payment process you have the option to **redirect the buyer to your website.** In order to do this you need to add the `back_urls` attribute and define where you want the `return to site button to redirect the buyer depending on the payment status. 
+At the end of the payment process you have the option to **redirect the buyer to your website.** To do so, you need to add the `back_urls` attribute and define where you want the `return to site button to redirect the buyer depending on the payment status. 
 
-If you want this redirection to be made automatically you need to also add the `auto_return` attribute with value `approved`. 
+If you want this redirection to be made automatically, you also need to add the `auto_return` attribute with the value `approved`. 
 
 > NOTE
 >
@@ -396,7 +396,7 @@ Cancellations are made when the cash payment was not completed before the expira
 Refunds happen when the payment was made but the seller decides to cancel it totally.
 ------------
 
-You can find all the information in the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
+You can find all the information in the [Refunds and Cancellations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds) section.
 
 ## Manage Chargebacks
 

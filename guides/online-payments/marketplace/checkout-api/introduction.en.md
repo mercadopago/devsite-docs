@@ -25,7 +25,7 @@ After creating the application, you only need to take the second and third steps
 
 ### Credentials
 
-Your [credentials]([FAKER][CREDENTIALS][URL]) are the **keys we provide so you can configure your integrations.**. 
+Your [credentials]([FAKER][CREDENTIALS][URL]) are the **keys we provide for you to configure your integrations.**. 
 
 * The  **Public Key** is used to access the resources that your frontend needs. You will be able to collect credit card data and convert it into a representative token that you can safely store on your servers to create a payment.
 

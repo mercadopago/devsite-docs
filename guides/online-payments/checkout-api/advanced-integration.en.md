@@ -654,7 +654,7 @@ curl -X POST \
 
 ### Search for an existing customer
 
-You can search for customer information, if needed; for example, when you don't know the assigned ID. The e-mail is the required parameter to get it.
+You can search for customer information, if necessary; for example, when you don't know the assigned ID. The e-mail is the required parameter to get it.
 
 [[[
 
@@ -1131,14 +1131,14 @@ Example of response without including the `customers_id` parameter:
 ## Cancellations and refunds
 
 ----[mla, mlm, mco, mlu, mlb, mlc]----
-Cancellations occur when a cash payment is not completed before the expiration date, and the seller decides to cancel it. Refunds occur when the payment is made, but the seller decides to cancel it, partially or entirely.
+Cancellations happen when a cash payment is not completed before the expiration date, and the seller decides to cancel it. Refunds occur when the payment is made, but the seller decides to cancel it, partially or entirely.
 ------------
 
 ----[mpe]----
-Cancellations occur when a cash payment is not completed before the expiration date, and the seller decides to cancel it. Refunds occur when the payment is made, but the seller decides to cancel it entirely.
+Cancellations happen when a cash payment is not completed before the expiration date, and the seller decides to cancel it. Refunds occur when the payment is made, but the seller decides to cancel it entirely.
 ------------
 
-For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
+For more information, check the [Refunds and Cancellations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds) section.
 
 ---
 ### Next steps

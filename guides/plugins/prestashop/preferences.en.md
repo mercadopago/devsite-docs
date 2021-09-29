@@ -11,7 +11,7 @@ Find the payment preference settings in the *Configure* option once you have the
 
 ## Business Information
 
-Enter the name of the business to appear on your customers' invoice and make it easier for them to recognize the payment when a purchase summary arrives. Select which category the products or services offered by the store belong to, and make other adjustments according to your needs.
+Enter the business name to appear on your customers' invoice and make it easier for them to recognize the payment when a purchase summary arrives. Select which category the products or services offered by the store belong to, and make other adjustments according to your needs.
 
 ![Basic information](/images/prestashop/preferences_en.png)
 

@@ -8,11 +8,11 @@ sites_supported:
 
 # How to integrate Mercado Pago Point 
 
-In order to be able to process payments in the *integrated mode* with our Point devices, it is necessary to download the Mercado Pago application for Android and IOS.
+In order to process payments in the *integrated mode* with our Point devices, it is necessary to download the Mercado Pago application for Android and IOS.
 
 There are two different possible situations to integrate Point: 
 
-1) When you can access your application from the same device (smartphone or tablet) where the Mercado Pago application is installed. These integrations can be done vía Deep linking or Intent-based. 
+1) When you are able to access your application from the same device (smartphone or tablet) where the Mercado Pago application is installed. These integrations can be done via Deep linking or Intent-based. 
 
 2) When you can not use your application from the same device (smartphone or tablet) where the Mercado Pago application is installed. This integration can be done vía API. 
 
@@ -31,7 +31,7 @@ There are two different possible situations to integrate Point:
 
 One of the ways to integrate with Mercado Pago is via Deep Linking. When said _link_ is called, it is intercepted as a _Point-handled address_ by the Mercado Pago application.
 
-In the "call" to this _link_ you can send different parameters that will be taken by the Mercado Pago application and will impact in the payment. Once you´ve made that call to the previously defined link, the user will be redirected to the Mercado Pago appllication to swipe the card and make the purchase. 
+In the "call" to this _link_ you can send different parameters that will be taken by the Mercado Pago application and will impact the payment. Once you´ve made that call to the previously defined link, the user will be redirected to the Mercado Pago application to swipe the card and make the purchase. 
 
 Once the payment is proccesed, the user will be redirected to the `success_url` or `fail_url`, depending on the result. This must be intercepted to return the user to the application. 
 
@@ -48,7 +48,7 @@ The parameters that you can include are:
 
 * `amount`: The amount that will be charged to the client (\*).
 * `description`: Description of the operation (Máx.: 20 caracters) (\*).
-* `external_reference`: The `external_reference` is a reference code that will allow you to track the Mercado Pago `payment_id` in your system. 
+* `external_reference`: The `external_reference` is a reference code that allows you to track the Mercado Pago `payment_id` in your system. 
 * `notification_url`: The URL where you will receive the notifications.
 * `payer_email`: Email of the payer.
 * `success_url`: The URL where the user will be redirected when the payment succeeds.
@@ -104,7 +104,7 @@ In order to integrate through our APIs, you have to enable the integration optio
 
 Next, it is necessary to configure the `device_name` from the Mercado Pago application. It is used to identify your cell phone or tablet and relate it to your Mercado Pago account. In this way, you will know which device to send the payment order to.
 
-The next step consist in generating a payment order and sending it via API to the corresponding device. The user will see the order sent to the application in the screen of the device. This means that the user will be able to swipe the card at that moment and continue with the proccess. 
+The next step consist in generating a payment order and sending it via API to the corresponding device. The user will see the order sent to the application in the device's screen. It means that the user will be able to swipe the card at that moment and continue with the process. 
 
 Once the payment is processed, the user will see the result in the Mercado Pago application. Finally, the order will close and the corresponding payment will be created
 
@@ -127,8 +127,8 @@ The parameters that can be included are:
 * `description`: Description of the operation (Máx.: 20 caracters) (\*).
 * `device_name`: Name of the device in which you want to process the payment. (\*).
 * `cc_type`: Card type. Credit or debit card (\*).
-* `external_reference`: The `external_reference` is reference code that will allow you to track the Mercado Pago `payment_id` in your system. 
-* `disable_back_button`: True o False. This is used to define wether you want the order to close or not by clicking on the back button. 
+* `external_reference`: The `external_reference` is a reference code that allows you to track the Mercado Pago `payment_id` in your system. 
+* `disable_back_button`: True or False. This is used to define whether you want or not the order to close by clicking on the back button. 
 * `notification_url`: The URL where you will receive the notifications.
 * `payer_email`: Email of the payer.
 
@@ -267,12 +267,12 @@ The answer will have the following format.
 
 It is necessary that you send the `notification_url`, where you'll receive notifications about new payments and status updates generated.
 
-In the article [notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks) you could find more information about it.
+For more information, check the [notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks) article.
 
 
 ## Point payments
 
-Point payments can be searched in the Payments API. You can find more information in the following article: [API's](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get)
+Point payments can be searched in the Payments API. For more informatio, check the [API's](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) article.
 
 We also have an exclusive Point API that has some additional information about the payments: 
 

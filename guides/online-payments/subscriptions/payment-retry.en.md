@@ -8,7 +8,7 @@ The first installment is charged until the period of approximately one hour to s
 
 ----[mlb, mlm]----
 
-At the time the installment is collected, two alternatives may arise, based on the outcome of the payment:
+At the time the installment is collected, two alternatives may arise based on the outcome of the payment:
 
 * __Payment is successfully made__ so, the installment will remain as `processed` and will not be reattempted. 
 

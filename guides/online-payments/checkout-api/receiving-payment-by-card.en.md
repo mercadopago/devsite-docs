@@ -52,11 +52,11 @@ Card information will be turned into a token so that you can send data to your s
 
 >  If you still don't have an account to check your credentials, [sign in](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
-> This documentation uses the new library version. To see the previous version, go to [integrate credit card payment with MercadoPago.js V1 section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/receiving-payment-by-card).
+> This documentation uses the new library version. To see the previous version, go to [integrate credit card payment with MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/receiving-payment-by-card) section.
 
 ### 2. Add payment form
 
-To capture all the card data, first provide a form to load all the information. 
+Before capturing the card data, provide a form to load all the information.
 
 With MercadoPago.js V2 library CardForm functionality you can get and validate all the data needed to identify the type and name of payment method, issuing bank, number of installments and more. 
 

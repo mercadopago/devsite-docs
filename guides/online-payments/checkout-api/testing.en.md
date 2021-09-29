@@ -65,7 +65,7 @@ Configure your seller user's [test public key]([FAKER][CREDENTIALS][URL]) at you
 
 #### Credit card tests
 
-Start your integration with your test seller user credentials:
+Start the integration with your test seller user credentials:
 
 1. Fill out [test card data](#bookmark_test_cards).
 1. Enter your test buyer user e-mail.

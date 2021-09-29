@@ -40,7 +40,7 @@ https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&resp
 
 <br>
 
-2.3. You can also include the `state` parameter in the URL authorization to identify who is responsible for the code you received. Do this in a safe manner and assign a random identifier in the parameter which is unique for each attempt.
+2.3. You can also include the `state` parameter in the URL authorization to identify who is responsible for the code you received. Do it safely and assign a random identifier in the parameter which is unique for each attempt.
 
 
 | Parameter | Data to fill out |

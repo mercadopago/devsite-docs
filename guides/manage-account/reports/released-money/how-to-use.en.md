@@ -29,7 +29,7 @@ You will see the available balance from the released transactions in the `NET_CR
 
 **What happens if a transfer fails?**
 
-If this happens, the report is still valid. The money goes back to your account and the transaction will appear in the report as a new line in the `NET_CREDIT` column.
+If this happens, the report is still valid. The money returns to your account and the transaction will appear in the report as a new line in the `NET_CREDIT` column.
 
 
 > NOTE

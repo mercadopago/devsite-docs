@@ -41,7 +41,7 @@ To create a payment, you should capture card data through the buyer's browser. F
 
 ### 1. Include MercadoPago.js library
 
-**Use our official library to access Mercado Pago API** from your application and collect data securely.
+Use our **official library** to access Mercado Pago API from your application and collect data securely.
 
 ```html
 <script src="https://sdk.mercadopago.com/js/v2"></script>
@@ -87,7 +87,7 @@ The following example assumes that `transactionAmount` and `description` data we
 >
 > Note
 >
-> Consider that the form should be available before all the following steps for correct operation.
+> Before following the steps below, make sure that the form is available, so it can operate correctly.
 
 ### 3. Configure your public key
 
@@ -251,7 +251,7 @@ const getInstallments = async () => {
 
 ### 5. Create card token
 
-Before payment submission, you must create a token containing all card information securely. You should generate it as follows:
+Before submitting the payment, you must create a token containing all card information securely. You should generate it as follows:
 
 ```javascript
 // Step #createCardToken

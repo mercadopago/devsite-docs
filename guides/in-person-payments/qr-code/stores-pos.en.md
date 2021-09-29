@@ -123,7 +123,7 @@ Once the Point of Sale is created, you’ll be able to see the QR files in the _
 >
 > Integrate QR attended model
 >
-> Learn how to integrate this model step by step.
+> Check the steps to integrate this model.
 >
 > [Integrate QR attended model](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/qr-attended/introduction)
 

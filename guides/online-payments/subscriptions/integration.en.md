@@ -119,7 +119,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 > 
 > Important
 > 
-> ¿Do you have questions about how to create the payment token? Find all the information in the section of [Capture data from the card](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card#bookmark_card_data_capture).
+> Do you have questions about how to create the payment token? Find all the information in the [Capture data from the card](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card#bookmark_card_data_capture) section.
 
 #### Response 
 

@@ -6,15 +6,15 @@ sites_supported:
 indexable: false
 ---
 
-# Offer Mercado Envíos
+# Offer Mercado Envios
 
-Integrate Mercado Envíos to receive payment for your products and manage their shipment at the same time. You only have to add the necessary details in your preferences and configure your business data.
+Integrate Mercado Envios to receive payment for your products and manage their shipment at the same time. You only have to add the necessary details in your preferences and configure your business data.
 
 ## Previous requirement
 
-### Activate Mercado Envíos
+### Activate Mercado Envios
 
-From the seller's account, go to the [Your Business > Settings](https://www.mercadopago[FAKER][URL][DOMAIN]/business#shipping) section and activate the Mercado Envíos option.
+From the seller's account, go to the [Your Business > Settings](https://www.mercadopago[FAKER][URL][DOMAIN]/business#shipping) section and activate the Mercado Envios option.
 
 We will use the address you upload to show the delivery points close to where the seller will be able to take the packages, and calculate the shipping costs.
 
@@ -474,7 +474,7 @@ preference_data = {
 
 #### Shipping costs simulator
 
-You can simulate costs from the shipping calculator. To do this, you must replace the `sellerId`, `shippingMethod Id`, `price`, `zipCode`, `height`, `width`, `length`, `weight` values of your package
+You can simulate costs from the shipping calculator. To do so, you must replace the `sellerId`, `shippingMethod Id`, `price`, `zipCode`, `height`, `width`, `length`, `weight` values of your package
 
 > https://api.mercadolibre.com/users/_sellerId_/shipping_options?free_method=_shippingMethodId_&item_price=_price_&zip_code=_zipCode_&dimensions=_height_x_width_x_length_,_weight
 

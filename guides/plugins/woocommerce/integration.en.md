@@ -17,9 +17,9 @@ In the **In which country does your Mercado Pago account operate?** field, you m
 
 In the **Add credentials to "Test Mode" or "Production Mode"** section, you must fill in your **production** and **test** credentials.
 
-The *Production credential* will enable the store to process actual sales at the end of the initial tests. It is through this credential that the activation is complete.
+The **Production credential** will enable the store to process actual sales at the end of the initial tests. It is through this credential that the activation is complete.
 
-The *Test credential* will be necessary at first to carry out tests to ensure the correct functioning of the purchase and payment flow.
+The **Test credential** will be necessary at first to carry out tests to ensure the correct functioning of the purchase and payment flow.
 
 To activate the credentials, follow the steps below.
 

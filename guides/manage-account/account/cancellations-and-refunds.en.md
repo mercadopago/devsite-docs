@@ -18,7 +18,7 @@ There are different situations in which you may want to cancel a sale:
 
 ## Cancellations
 
-- Cancellations can be made only with `pending` and `in process` transactions
+- Cancellations can only be made with `pending` and `in process` transactions
 - It is important for offline payment methods
 - The expiration of a payment occurs after 30 days and the cancellation is automatic, is this case the final status of the payment is cancelled/expired
 

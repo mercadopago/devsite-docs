@@ -16,7 +16,7 @@ We will guide you so that you can charge:
 - Enter the amount and a description of what you are selling. The description will allow you to identify the sale in your backend.
 - Swipe the payer's credit or debit card through the Point device.
 - Enter the CVV of the card, the identification of the payer, and have it signed.
-- Ready! Already charged, now you can send the proof of the operation by email or sms.
+- Done! Already charged, now you can send the proof of the operation by email or sms.
 
 
 ### Product Catalog in Point

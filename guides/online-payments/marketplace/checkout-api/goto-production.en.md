@@ -15,7 +15,7 @@ In order to ensure both the best integration quality and user experience for the
 
 ### Use the official libraries and ensure data security
 
-On one hand, you need to use MercadoPago.js library, as provided by Mercado Pago. You can't change or host it on your servers. And, on the other, you need to make sure not to put the `name` attribute when creating a card form to take care of data security.
+On one hand, you need to use MercadoPago.js library, as provided by Mercado Pago. You can't change or host it on your servers. And, on the other hand, you need to make sure not to put the `name` attribute when creating a card form to take care of data security.
 
 These measures protect your customer's sensitive data, meet the required security standards, and keep yours up to date.
 

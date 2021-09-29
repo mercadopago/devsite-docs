@@ -21,7 +21,7 @@ These measures protect your customer's sensitive data, meet the required securit
 
 ### Don't forget to get an SSL certificate
 
-To ensure security and data protection, you need to have a valid SSL certificate and make the payment form available on an HTTPS page. This protects buyers' transactions and data. You may not have it while running tests, but it is mandatory for the production environment.
+To ensure security and data protection, you need a valid SSL certificate and make the payment form available on an HTTPS page. This protects buyers' transactions and data. You may not have it while running tests, but it is mandatory for the production environment.
 
 ## Sending information
 
@@ -41,7 +41,7 @@ By implementing these notifications, you will be able to find out all the update
 
 ### Response Handling
 
-As mentioned in the [Handling Responses section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses), you should be shown the messages corresponding to the client, depending on the result of the payment, so that they can act in the correct way.
+As mentioned in the [Handling Responses](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses) section, you should be shown the messages corresponding to the client, depending on the result of the payment, so that they can act in the correct way.
 
 ### Be transparent with promotions and financing
 

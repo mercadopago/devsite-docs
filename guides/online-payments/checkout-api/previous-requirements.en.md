@@ -9,7 +9,7 @@ Your credentials are the **keys we provide you to configure your integrations**.
 
 * The **Private Key**, or Access Token, will allow you to call the rest of the APIs from your servers. For example, to process a payment, make a refund, or save cards.
 
-To find them, go to the [Credentials section]([FAKER][CREDENTIALS][URL]).
+Check the [Credentials]([FAKER][CREDENTIALS][URL]) section to learn how to obtain these informations.
 
 > Do you have any questions about credentials? Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) for more information.
 

@@ -215,7 +215,7 @@ To complete the payment, you need to capture the funds reserved for your custome
 
 ### Capture the entire amount
 
-To capture the full amount, you just need to submit the `capture` attribute as `true`.
+To capture the full amount, you need to submit the `capture` attribute as `true`.
 
 [[[
 ```php

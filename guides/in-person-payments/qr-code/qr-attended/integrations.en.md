@@ -11,7 +11,7 @@ We explain how the *attended model* works:
 <span></span>
 
 1. The Point of Sale registers an order (1a) and creates an order assigned to a checkout (1b). At this moment the order is available to be scanned (2).
-2. When the customer scans the QR (3) with the order and makes the payment (5), an IPN notification (4a and 6b) is received to the seller's server. With this data, the status of the order (7a) is obtained, to validate that it is closed or is still open, pending payment.
+2. When the customer scans the QR (3) with the order and makes the payment (5), an IPN notification (4a and 6b) is received to the seller's server. With this data, the order status (7a) is obtained, to validate that it is closed or is still open, pending payment.
 
 
 ## Create an order
@@ -102,7 +102,7 @@ Once the order is created, it is available to be **scanned and paid**.
 
 ## Eliminate an order
 
-To delete a QR associated order before it’s closed or expires, you can use the following method:
+To delete a QR associated order before it’s closed or expired, you can use the following method:
 
 ```curl
 curl -X DELETE \
