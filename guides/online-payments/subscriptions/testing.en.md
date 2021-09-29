@@ -29,6 +29,7 @@ curl -X POST \
 ```
 
 ### Response
+
 `HTTP Status 200 OK`
 ```json
 {

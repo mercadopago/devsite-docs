@@ -64,7 +64,7 @@ Credit card tests
 When opening the checkout created with the data of your seller user:
 
 1. Select _Card_ as the payment method.
-2. Enter the details of a [test card](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/test-integration#bookmark_tarjetas_de_prueba).
+2. Enter the details of a [test card](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/test-integration#bookmark_test_cards).
 3. Complete the email and done!<br/><br/>
 
 #### Buy as a registered user (with Mercado Pago account)

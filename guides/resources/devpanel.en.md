@@ -26,7 +26,7 @@ To every application created, a new card containing the application's name, desc
 
 
 ## Application details
-By clicking on an application card, you will have access to it's details, including:
+By clicking on an application card, you will have access to its details, including:
 
 - **My credentials** - Unique passwords with which we identify an integration in your account. The passwords are responsible for capturing payments in online stores and other applications. Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) for more information.
 - **Webhook notifications** - Notifications received via HTTP POST calls whenever there is a transaction-related event in your application. Read [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks) for more information.
@@ -40,7 +40,7 @@ After creating your application, you can click on the "Edit" button to see the a
   - **Application name**.
   - **Application description**.
   - **Application permissions** - This field displays the access options for your application. By default, your application is created with all permissions enabled. You can disable permissions by clicking on their respective checkboxes.
-  - **Redirect URL** - This field defines the URL at which you want to receive the authorization code when your integration is configured as Marketplace or performed via OAuth.
+  - **Redirect URL** - This field defines the URL where you want to receive the authorization code when your integration is configured as Marketplace or performed via OAuth.
 - **Product to be integrated**. This section defines the product that should integrate with your application. The field "Available products" presents the list of available products to be integrated. By default, the value of this field is the value entered when creating the application, but you can change the chosen product without having to reconfigure the integration. This field works as an informational field for the product to which the application refers.
 
 
@@ -60,7 +60,7 @@ You can integrate solutions for accounts other than your own. When integrating s
 This section contains the credentials of these other accounts. To request access:
 
 1. Click on the "Request credentials" button.
-2. Fill in the account's email for which you want to request the credentials. 
+2. Fill in the account's email that you want to request the credentials for. 
 3. Confirm request for credentials.
 
 Once access to credentials is granted, you can use them to integrate solutions. When the integrations are complete, remove the access permissions for the requested credentials and take care of data security.
@@ -70,4 +70,4 @@ The Developers Panel also contains your integrator ID. The Integrator ID is a un
 
 The &lt;dev&gt;program is a free and exclusive developer program designed for you to join our community and receive extra benefits. To take part, you must have some of the official Mercado Pago certifications. 
 
-Check out the [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/developer-program) page and choose which product you want to earn your certification. Then, use your integrator ID and enter it into your integrations to receive extra benefits.
+Check out the [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/developer-program) page and choose which product you want to earn your certification for. Then, use your integrator ID and enter it into your integrations to receive extra benefits.

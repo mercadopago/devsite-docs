@@ -15,7 +15,7 @@ Find below how this model works:
 
 First, generate the order publication. Once data is sent to Mercado Pago, a data string with [EMVCo](https://www.emvco.com/emv-technologies/qrcodes) standard will be made available.
 
-Execute the next API call to create an order. The response will include the data required to create the QR code.
+Execute the following API call to create an order. The response will include the data required to create the QR code.
 
 ```curl
 curl -X POST \
@@ -60,7 +60,7 @@ Response
    "qr_data": "00020101021243650016COM.MERCADOLIBRE02013063638f1192a-5fd1-4180-a180-8bcae3556bc35204000053039865802BR5925IZABEL AAAA DE MELO6007BARUERI62070503***63040B6D"
 }
 ```
-The response will be a string with the EMVCo standard. Use the `qr_data` to make the QR code available using either a generator or your application.
+The response will be a string with the [EMVCo](https://www.emvco.com/emv-technologies/qrcodes) standard. Use the `qr_data` to make the QR code available using either a generator or your application.
 
 ----[mlb]----
 
@@ -80,7 +80,7 @@ For example:
 
 In addition to generating the QR code, you also have the option to create and assign the same command to the Point of Sale’s fixed QR code.
 
-Execute the next API call to create an order and assign the Point of Sale. The response will include the data required to create the QR code.
+Execute the following API call to create an order and assign the Point of Sale. The response will include the data required to create the QR code.
 
 
 ```curl

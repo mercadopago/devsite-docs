@@ -1,6 +1,6 @@
 
 
-# Credencials
+# Credentials
 
 Credentials are unique passwords that identify an integration in your account. They allow to capture payments in online stores and other applications securely. They can be found on the [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/devpanel) or in your Mercado Pago account by accessing [Your Business > Settings > Management and Administration > Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 
@@ -20,12 +20,12 @@ Both types of credentials are composed by two pairs of keys that you must use ac
 | Type | Description |
 | :--- | :--- |
 | Public key | Application's public key that will usually be used in the frontend. It allows you to know the means of payment and to encrypt card data. |
-| Access token | Application's private key that will always be used in the backend to generate payments. It is very important that this data is protected in your servers and is not accessible for any system user or attacker. |
+| Access token | Application's private key that will always be used in the backend to generate payments. It is very important that this data is protected in your servers and is not accessible to any system user or attacker. |
 
 | Type | Description |
 | :--- | :--- |
 | Client ID | Unique ID that identifies your integration. |
-| Client secret | Private key to be used in some plugins to generate payments. It is very important that this data is protected in your servers and is not accessible for any system user or attacker. |
+| Client secret | Private key to be used in some plugins to generate payments. It is very important that this data is protected in your servers and is not accessible to any system user or attacker. |
 
 > NOTE
 > 

@@ -1,17 +1,17 @@
 # How to integrate QR attended model
 
-To charge with a QR attended model, you’ll have to create and order and then associate it with a Point of Sale.
+To charge with a QR attended model, you’ll have to create an order and then associate it with a Point of Sale.
 
 ## Model flow
 
-We explain how the attended model works:
+We explain how the *attended model* works:
 
-![Payment flow at QR Mercado Pago point of sale](/images/mobile/qr-user-flow.en.png)
+![Payment flow at QR Mercado Pago Point of Sale](/images/mobile/qr-user-flow.en.png)
 
 <span></span>
 
 1. The Point of Sale registers an order (1a) and creates an order assigned to a checkout (1b). At this moment the order is available to be scanned (2).
-2. When the customer scans the QR (3) with the order and makes the payment (5), an IPN notification (4a and 6b) is received to the seller's server. With these data, the status of the order (7a) is obtained, to validate that it is closed or is still open, pending payment.
+2. When the customer scans the QR (3) with the order and makes the payment (5), an IPN notification (4a and 6b) is received to the seller's server. With this data, the order status (7a) is obtained, to validate that it is closed or is still open, pending payment.
 
 
 ## Create an order
@@ -102,14 +102,14 @@ Once the order is created, it is available to be **scanned and paid**.
 
 ## Eliminate an order
 
-To delete a QR associated order before it’s closed or expires, you can use this following method:
+To delete a QR associated order before it’s closed or expired, you can use the following method:
 
 ```curl
 curl -X DELETE \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/orders
 ```
-Answer will be `HTTP 204 No Content`.
+The response will be `HTTP 204 No Content`.
 
 ## Receive notifications of your orders
 

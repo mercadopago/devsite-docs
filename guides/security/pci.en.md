@@ -30,7 +30,7 @@ HAVE AN INFORMATION SECURITY POLICY | Have a policy that includes information se
 
 > Read the PCI DSS - Data Security Standard document for more details. The document is available in the [document library of the PCI official site](https://www.pcisecuritystandards.org/document_library).
 
-For each of the twelve PCI requirements, there are basically four different levels of compliance, typically based on the volume ofcard transactions yourprocesses organization annually, and each level has a set of obligations.
+For each of the twelve PCI requirements, there are basically four different levels of compliance, typically based on the volume of card transactions your processes organization annually, and each level has a set of obligations.
 
 * **Level 1:** (i) Organizations that process more than 6 million transactions per year for Visa or MasterCard, or more than 2.5 million for American Express; (ii) organizations in which there has been a data breach; (iii) organizations considered level 1 by any card association.
     * Annual Compliance Report (ROC) by a Qualified Security Assessor (QSA) or Internal Auditor.

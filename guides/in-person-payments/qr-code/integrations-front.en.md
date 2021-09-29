@@ -8,10 +8,10 @@ If you charge with a printed QR, you can enter the final amount in your computer
 
 ## How to enter an amount?
 
-1. Go to QR Code section from your [Mercado Pago account](https://www.mercadopago.com.ar/qr-code/amount).
-2. Select store and cash register you want to operate from. 
+1. Access the QR Code section from your [Mercado Pago account](https://www.mercadopago.com.ar/qr-code/amount).
+2. Select the store and cash register you want to operate from. 
 3. Type order amount.
-4. Ask your client to scan QR code from Mercado Libre or Mercado Pago apps. Your client will have to choose payment method.
+4. Ask your client to scan the QR code from Mercado Libre or Mercado Pago apps. Your client will have to choose a payment method.
 
 You’ll be able to see a confirmation of payment instantly, as well as activity details in your Mercado Pago account.
 

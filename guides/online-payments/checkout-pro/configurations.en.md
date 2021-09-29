@@ -1,7 +1,7 @@
 # Other functionalities
 
 
-You can adapt the integration to your business by adding attributes in the preference. There is a lot of [details in a preference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/preferences/_checkout_preferences/post) that can be set, but always keep in mind what your business needs.
+You can adapt the integration to your business by adding attributes in the preference. There are lots of [details in a preference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/preferences/_checkout_preferences/post) that can be set, but always keep in mind what your business needs.
 
 ----[mla, mlb]----
 If you offer purchases of high amounts, for example, you can accept [payments with two credit cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_payments_with_two_credit_cards) or, also, [exclude payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_attributes_for_the_preference) that you do not want to accept.
@@ -354,9 +354,9 @@ If you want to enable the payment of a preference with a certain duration, you c
 "expiration_date_to": "2017-02-28T12:00:00.000-04:00"
 ```
 
-### Description in the card summary
+### Description in the card statement
 
-You can send the name of your business in the attribute _`statement_descriptor`_ in this way in the summary of your payer's card the name of your business is shown and in this way the payer knows where made the purchase.
+You can send the name of your business in the attribute _`statement_descriptor`_ so that your business name appears in your payer's credit card statement, so the payer knows where the purchase was made.
 
 ```json
 "statement_descriptor": "MYBUSINESS"
@@ -366,7 +366,7 @@ You can send the name of your business in the attribute _`statement_descriptor`_
 >
 > Note
 >
-> Whether the value of the attribute is shown in the summary of your payer's card will depend on the brand of card used.
+> Whether the value of the attribute is shown in the statement of your payer's card will depend on the brand of card used.
 
 ### Multiple Items
 
@@ -592,7 +592,7 @@ To configure it, add the node `shipments` with the value of the amount you want 
 
 ## Optimize Ad Conversion
 
-We know it’s important to maximize your ads effectiveness. For this reason, we offer you the choice integrating Checkout Pro with Facebook Ads and Google Ads platforms, in order to associate payments to your campaigns.
+We know it’s important to maximize your ads effectiveness. For this reason, we offer you the choice of integrating Checkout Pro with Facebook Ads and Google Ads platforms, in order to associate payments to your campaigns.
 
 ----[mla, mlb]----
 > NOTE
@@ -754,7 +754,7 @@ curl -X POST \
 ```
 ]]]
 
-Once set up, you’ll see a `Purchase` event for the specified Pixel everytime a payment is approved through your Checkout Pro.
+Once set up, you’ll see a `Purchase` event for the specified Pixel every time a payment is approved through your Checkout Pro.
 
 > NOTE
 >
@@ -914,7 +914,7 @@ curl -X POST \
 ```
 ]]]
 
-Once set up, you’ll see a conversion associated to the configured label everytime a payment is approved through your Checkout Pro.
+Once set up, you’ll see a conversion associated to the configured label every time a payment is approved through your Checkout Pro.
 
 > NOTE
 >
