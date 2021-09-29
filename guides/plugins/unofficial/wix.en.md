@@ -13,15 +13,15 @@ In order to offer Mercado Pago as a payment method in your Wix online store, you
 >
 >Important
 >
->Want to learn more about credentials? Find more information under [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials).
+> For more information about credentials, access the [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) documentation.
 
 ## Connection and configuration
-Connecting and configuring Mercado Pago as a payment method in your Wix store can be done in two simple and quick steps. In the first, you connect Mercado Pago as a payment method in your Wix store and in the second, you configure the connector with your production credentials.
+Connecting and configuring Mercado Pago as a payment method in your Wix store can be done in two simple and quick steps. In the first one, you connect Mercado Pago as a payment method in your Wix store, and in the second one, you configure the connector with your production credentials.
 
-1. Make the connection as described in [this Wix documentation](https://support.wix.com/en/article/conectando-mercadopago-como-provedor-de-pagamento) You will automatically be redirected to the connector's configuration page.
+1. Make the connection as described in [this Wix documentation](https://support.wix.com/en/article/conectando-mercadopago-como-provedor-de-pagamento). You will automatically be redirected to the connector's configuration page.
 2. On the configuration page, fill in the fields with your [production credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) (note that the credentials requested by Wix are Client ID and Client Secret) and confirm the connection.
 
-And that is it! Your integration is set up and you are already offering Mercado Pago as a payment method in your store.
+And that's it! Your integration is set up and you are already offering Mercado Pago as a payment method in your store.
 
 ----[mla, mlc, mlu, mpe]----
 <p>&nbsp;</p>

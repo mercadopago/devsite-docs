@@ -20,9 +20,6 @@ Checkout Pro is an integration that allows you to **charge your customers throug
 * **Tailored shopping experience** accessible across devices.
 * **One-click purchases**: When paying with a Mercado Pago account, user information and cards can be saved, allowing payments that only require a security code or money in your account.
 * **Guest purchases**: Having a Mercado Pago account is not a requirement for users to make a payment.
-----[mla, mlb]----
-* **Split payments** with two cards. A useful feature in scenarios with high amount transactions, for example.
-------------
 
 ## Checkout Pro vs. other Mercado Pago solutions
 

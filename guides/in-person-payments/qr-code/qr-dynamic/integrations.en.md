@@ -15,35 +15,46 @@ Find below how this model works:
 
 First, generate the order publication. Once data is sent to Mercado Pago, a data string with [EMVCo](https://www.emvco.com/emv-technologies/qrcodes) standard will be made available.
 
-Execute the next API call to create an order. The response will include the data required to create the QR code.
+Execute the following API call to create an order. The response will include the data required to create the QR code.
 
 ```curl
 curl -X POST \
  https://api.mercadopago.com/instore/orders/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/qrs \
   -H 'Authorization: Bearer ACCESS_TOKEN' \
  -d '{
-   "external_reference": "order-id-1234",
-   "total_amount": 40.0,
-   "items": [
-       {
-           "sku_number": "KS955RUR",
-           "category": "BOOKSTORE",
-           "title": "Pen",
-           "description": "Green pen",
-           "quantity": 2,
-           "unit_measure": "unit",
-           "unit_price": 20,
-           "total_amount": 40
-       }
-   ],
-   "title": "Purchase in Bookstore",
-   "description": "Purchase and shipping",
-   "sponsor": {
-       "id": 446566691
-   },
-   "notification_url": "https://www.yourserver.com/notifications"
+    "external_reference": "order-id-1234",
+    "title": "Title",
+    "description": "Mercado Pago",
+    "notification_url": "https://www.yourserver.com",
+    "expiration_date": "2023-08-22T16:34:56.559-04:00",
+    "total_amount": 1190,
+    "items": [
+        {
+            "sku_number": "KS955RUR",
+            "category": "FOOD",
+            "title": "Item1",
+            "description": "Item1 Mercado Pago",
+            "unit_price": 238,
+            "quantity": 5,
+            "unit_measure": "unit",
+            "total_amount": 1190
+        }
+    ],
+    "sponsor": {
+                "id": 820480089
+            }----[mco]----,
+    "taxes": [
+        {
+            "value": 190,
+            "type": "IVA"
+        }
+    ]------------
 }'
 ```
+
+----[mco]----
+> If you must pay IVA for the products in your order, visit the [Considerations IVA Colombia section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/iva-colombia).
+------------
 
 For further information, refer to [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put).
 
@@ -60,7 +71,7 @@ Response
    "qr_data": "00020101021243650016COM.MERCADOLIBRE02013063638f1192a-5fd1-4180-a180-8bcae3556bc35204000053039865802BR5925IZABEL AAAA DE MELO6007BARUERI62070503***63040B6D"
 }
 ```
-The response will be a string with the EMVCo standard. Use the `qr_data` to make the QR code available using either a generator or your application.
+The response will be a string with the [EMVCo](https://www.emvco.com/emv-technologies/qrcodes) standard. Use the `qr_data` to make the QR code available using either a generator or your application.
 
 ----[mlb]----
 
@@ -80,7 +91,7 @@ For example:
 
 In addition to generating the QR code, you also have the option to create and assign the same command to the Point of Sale’s fixed QR code.
 
-Execute the next API call to create an order and assign the Point of Sale. The response will include the data required to create the QR code.
+Execute the following API call to create an order and assign the Point of Sale. The response will include the data required to create the QR code.
 
 
 ```curl
@@ -88,26 +99,33 @@ curl -X PUT \
  https://api.mercadopago.com/instore/orders/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/qrs \
   -H 'Authorization: Bearer ACCESS_TOKEN' \
  -d '{
-   "external_reference": "order-id-1234",
-   "total_amount": 40.0,
-   "items": [
-       {
-           "sku_number": "KS955RUR",
-           "category": "BOOKSTORE",
-           "title": "Pen",
-           "description": "Green pen",
-           "quantity": 2,
-           "unit_measure": "unit",
-           "unit_price": 20,
-           "total_amount": 40
-       }
-   ],
-   "title": "Purchase in Bookstore",
-   "description": "Purchase and shipping",
-   "sponsor": {
-       "id": 446566691
-   },
-   "notification_url": "https://www.yourserver.com/notifications"
+    "external_reference": "order-id-1234",
+    "title": "Title",
+    "description": "Mercado Pago",
+    "notification_url": "https://www.yourserver.com",
+    "expiration_date": "2023-08-22T16:34:56.559-04:00",
+    "total_amount": 1190,
+    "items": [
+        {
+            "sku_number": "KS955RUR",
+            "category": "FOOD",
+            "title": "Item1",
+            "description": "Item1 Mercado Pago",
+            "unit_price": 238,
+            "quantity": 5,
+            "unit_measure": "unit",
+            "total_amount": 1190
+        }
+    ],
+    "sponsor": {
+                "id": 820480089
+            }----[mco]----,
+    "taxes": [
+        {
+            "value": 190,
+            "type": "IVA"
+        }
+    ]------------
 }'
 ```
 

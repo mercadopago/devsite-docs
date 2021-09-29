@@ -29,7 +29,7 @@ const checkout = mp.checkout({
 
 ### With a payment button 
 
-Use the `render` function to display a <b>payment button that allows the opening of the Web Tokenize Checkout</b>. In order to do this, you need add the following parameters: 
+Use the `render` function to display a <b>payment button that allows the opening of the Web Tokenize Checkout</b>. In order to do this, you need to add the following parameters: 
 
 | Parameter | Type | Description |
 | --- | --- | --- |
@@ -97,6 +97,7 @@ button.mercadopago-button {
 ![Payment button Mercado Pago modified CSS](/images/paybutton-modified-css.png)
 
 ### Opening the Web Tokenize Checkout automatically
+
 Add the `autoOpen` parameter to your checkout initialization options to **automatically display the Web Tokenize Checkout**, without the need of any interactions with buttons or other elements for its opening.
 
 [[[
@@ -305,6 +306,7 @@ summary: {
 #### Minimum and maximum amount of installments
 
 Customize limits for installments by adding the `installments` attribute to the `tokenizer` object in your initialization configurations, and using `minInstallments` or `maxInstallments` to set the minimum or maximum amount of installments you want to offer your payer.
+
 For example:
 
 ```javascript
@@ -366,7 +368,7 @@ summary: {
 
 #### Surcharges
 
-Using the attribute `harge`, you can specify the amount of surcharges in the detail of the purchase. For example:
+Using the attribute `charge`, you can specify the amount of surcharges in the detail of the purchase. For example:
 
 ```javascript
 summary: {

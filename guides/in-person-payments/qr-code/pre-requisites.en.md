@@ -7,12 +7,12 @@ We know some concepts may be new for you. Before starting, here's a cheatsheet.
 | Term | Description |
 | --- | --- |
 | Credentials | Your credentials are the keys we give you so you can set up your integrations. To find them, go to your [credentials]([FAKER][CREDENTIALS][URL]) and select the productive ones. |
-| `ACCESS_TOKEN` | The private app key to generate payments. You'll find it on [credentials]([FAKER][CREDENTIALS][URL]) section. You must use it to identify yourself in your integrations. Always use the Production Mode credentials. |
-| `USER_ID` | Buyer's user ID in Mercado Pago, consist on the last digits on the `access_token`, after the last dash. Also known as the `COLLECTOR_ID`. |
-| `SPONSOR_ID` | Supplier's ID on the integrated system with Mercado Pago. Consist on the last digits of the `access_token`, after the last dash mark. `sponsor_ID` must be different than `USER_ID`. |
+| `ACCESS_TOKEN` | The private app key to generate payments. You'll find it on the [credentials]([FAKER][CREDENTIALS][URL]) section. You must use it to identify yourself in your integrations. Always use the Production Mode credentials. |
+| `USER_ID` | Buyer's user ID in Mercado Pago, consist of the last digits on the `access_token`, after the last dash. Also known as the `COLLECTOR_ID`. |
+| `SPONSOR_ID` | Supplier's ID on the integrated system with Mercado Pago. Consist of the last digits of the `access_token`, after the last dash mark. `sponsor_ID` must be different than `USER_ID`. |
 | Store | A **physical shop** in which your clients can get products and services. You can have multiple stores on one account. |
 | Point of sale (POS) | A **place to perform a transaction** on a store or physical shop. Each POS will be linked with a unique QR code. |
-| Order | A purchase made by your client. Contains a list of product with an associated cost. |
+| Order | A purchase made by your client. Contains a list of products with an associated cost. |
 
 > Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) for more information.
 
@@ -46,7 +46,7 @@ It's easy and we explain how to do it:
 
 ### 3. Generate test users
 
-To make tests is necessary to have at least two users: a buyer and a seller.
+To make tests it is necessary to have at least two users: a buyer and a seller.
 
 Execute the following command to generate a test user:
 
@@ -80,11 +80,11 @@ Response:
 > 
 > IMPORTANT
 > 
-> * You can generate up to 10 test accounts at the same time. Because of that, we recommend to save email and password for each one. 
+> * You can generate up to 10 test accounts at the same time. Because of that, we recommend saving email and password for each one. 
 > * Test users expire after 60 days of no activity on Mercado Pago.
 > * To make test payments we recommend to use low amounts. 
 > * Both buyer and seller should test users. 
-> * Use test cards, because is not possible to withdraw money. 
+> * Use test cards, because it is not possible to withdraw money. 
 
 Once the test users are created, you can start with the integration and create the Stores and Point of Sale.
 
