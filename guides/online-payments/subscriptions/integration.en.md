@@ -52,7 +52,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval_plan' \
 | --- | --- |
 | `reason` (required) | It is the description that the subscriber will see when making the subscription and the detail that will be seen in the card statement. |
 | `auto_recurring.frequency` (required) | Indicates the length of time or cycle based on the type of frequency. |
-| `auto_recurring.frequency_type` (required) | Indicates the type of frequency. It can be by month (months) or day (days). <br><br> Along with the frequency, they define the installment cycle that a subscription will have. <br><br>For example, if every fifteen days you need to generate an installment to be charged it would look like this: `auto_recurring.frequency`: 15 y `auto_recurring.frequency_type`: days |
+| `auto_recurring.frequency_type` (required) | Indicates the type of frequency. It can be monthy or daily. <br><br> Along with the frequency, they define the installment cycle that a subscription will have. <br><br>For example, if every fifteen days you need to generate an installment to be charged it would look like this: `auto_recurring.frequency`: 15 y `auto_recurring.frequency_type`: days |
 | `auto_recurring.transaction_amount` | If we indicate the amount, it is fixed. If this field is blank, it is understood as a variable amount. A maximum of two decimals separated by a period is allowed. |
 | `auto_recurring.currency_id` (required) | Identifies the currency that corresponds to the country. |
 | `auto_recurring.repetitions` | Indicates if the subscription will have a limit. If not specified, there is no limit. This limit is related to `auto_recurring.frequency` y `auto_recurring.frequency_type`. |

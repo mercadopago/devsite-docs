@@ -272,7 +272,7 @@ For more information, check the [notifications](https://www.mercadopago[FAKER][U
 
 ## Point payments
 
-Point payments can be searched in the Payments API. For more informatio, check the [API's](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) article.
+Point payments can be searched in the Payments API. For more information, check the [API's](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) article.
 
 We also have an exclusive Point API that has some additional information about the payments: 
 

@@ -123,9 +123,8 @@ You will also receive the seller's `public_key`, which is the credential or publ
 >
 > Note
 >
-> The credentials are **valid for 6 months.**
-> If you don´t renew your sellers credentials before the expiration period, **those credentials will lose validity and you´ll have to do the authorization process all over again.**
-> Tip: Renew the credentials 5 months after you got them.
+> The credentials are **valid for 6 months**, so if you don´t renew your sellers credentials before the expiration period, **you will have to do the authorization process all over again.** To avoid it, we recommend renewing the credentials 5 months after you got them.
+> <br>
 > Keep in mind that these steps need to be repeated with each account you want to link. 
 
 

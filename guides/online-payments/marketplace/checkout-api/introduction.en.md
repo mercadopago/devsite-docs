@@ -6,7 +6,12 @@ Mercado Pago allows you to collect payments on behalf of the sellers of your pla
 
 When a payment is generated, the amount is immediately divided between the seller’s account and your account, in case you charge a fee.
 
-_Clarification: The payment split can only be done between two Mercado Pago accounts (Marketplace and the seller associated to it), no more._
+>WARNING
+>
+>Important
+>
+>The payment split can only be done between two Mercado Pago accounts (Marketplace and the seller associated to it), no more.
+
 
 > NOTE
 >
