@@ -37,7 +37,7 @@ El siguiente gráfico muestra cómo actúa la fecha de facturación y el eventua
 ![Basic-subscriptions](/images/subscriptions/linea-cobro-ES.png)
 
 
-### Fecha de facturación y monto proporcional (con prueba grátis)
+### Fecha de facturación y monto proporcional (con prueba gratis)
 
 Si estableces una fecha de facturación para una suscripción que también tiene un periodo de prueba gratuito establecido, el monto proporcional solo se cobrará al suscriptor un mes después de su adhesión, como se muestra en el siguiente gráfico.
 
