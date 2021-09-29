@@ -169,7 +169,7 @@ Agrega el siguiente formulario con los estilos que desees.
         <option>Seleccione un medio de pago</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Detalles del comprador</h3>
@@ -785,7 +785,7 @@ Agrega el siguiente formulario con los estilos que desees.
         <option>Seleccione un medio de pago</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Detalles del comprador</h3>
@@ -1217,7 +1217,7 @@ Agrega el siguiente formulario con los estilos que desees.
         <option>Seleccione un medio de pago</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Detalles del comprador</h3>
@@ -1694,7 +1694,7 @@ Agrega el siguiente formulario con los estilos que desees.
         <option>Seleccione un medio de pago</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Detalles del comprador</h3>
@@ -2401,7 +2401,7 @@ Agrega el siguiente formulario con los estilos que desees.
         <option>Seleccione un medio de pago</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Detalles del comprador</h3>
@@ -3033,7 +3033,7 @@ Agrega el siguiente formulario con los estilos que desees.
         <option>Seleccione un medio de pago</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Detalles del comprador</h3>
@@ -3495,7 +3495,7 @@ Agrega el siguiente formulario con los estilos que desees.
         <option>Seleccione un medio de pago</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Detalles del comprador</h3>
