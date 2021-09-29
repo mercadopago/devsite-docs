@@ -402,6 +402,12 @@ To enable it, just set the payment preference's `binary_mode` attribute to `true
 "binary_mode": true
 ```
 
+> WARNING
+>
+> Important
+>
+> Activating the binary mode simplifies the integration with Checkout Pro, but it can cause a decrease in the percentage rate of approved payments. That is because pending and in-processing payments will automatically be rejected by default. 
+
 ## Set an expiration date for your preferences
 
 Set an expiration period for your payment preferences in the `expires`, `expiration_date_from`, and `expiration_date_to` attributes:
