@@ -11,26 +11,11 @@ Checkout Pro es la integración que **te permite cobrar a través de nuestro for
 
 ## Checkout Pro ofrece:
 
-----[mla]----
-* **Integración con los principales [medios de pago](https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264)** del país.
-------------
-----[mlm]----
-* **Integración con los principales [medios de pago](https://www.mercadopago.com.mx/ayuda/medios-de-pago-cuotas-promociones_264)** del país.
-------------
-----[mlu]----
-* **Integración con los principales [medios de pago](https://www.mercadopago.com.uy/ayuda/medios-de-pago-cuotas-promociones_264)** del país.
-------------
-----[mlc]----
-* **Integración con los principales [medios de pago](https://www.mercadopago.cl/ayuda/medios-de-pago-cuotas-promociones_264)** del país.
-------------
-----[mco]----
-* **Integración con los principales [medios de pago](https://www.mercadopago.com.co/ayuda/medios-de-pago-cuotas-promociones_264)** del país.
-------------
 ----[mlb]----
 * **Integración con los principales [medios de pago](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265)** del país.
 ------------
-----[mpe]----
-* **Integración con los principales [medios de pago](https://www.mercadopago.com.pe/ayuda/medios-de-pago-cuotas-promociones_264)** del país.
+----[mla, mlm, mlc, mpe, mco, mlu]----
+* **Integración con los principales [medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/medios-de-pago-cuotas-promociones_264)** del país.
 ------------
 * **Experiencia de compra adaptada y accesible** desde cualquier dispositivo.
 * **Compras en un click**: al pagar con una cuenta de Mercado Pago, se recuerdan los datos y tarjetas de los compradores, por lo que permite pagos ingresando solo el código de seguridad o dinero en cuenta.
