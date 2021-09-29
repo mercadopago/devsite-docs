@@ -37,7 +37,7 @@ Business information, or *Informações de negócio*, is required to identify yo
 1. **Store name:** Enter the name of your store.
 2. **Store Category:** Enter the category of your store's products.
 3. **Store ID:** Use a number or prefix to identify orders and payments from your store.
-4. **Integrator ID:** Enter your **integrator_id** as Mercado Pago partner. If you are not a partner yet, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/developer-program) for more information.
+4. **Integrator ID:** Enter your **integrator_id** as a Mercado Pago **&lt;dev&gt;program** member. If you are not a member yet, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/developer-program) for more information.
 
 In _Ajustes avançados_, you can configure options related to saving information to a file for debugging technical issues, as well as configuring [IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn).
 
