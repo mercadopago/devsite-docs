@@ -22,28 +22,39 @@ curl -X POST \
  https://api.mercadopago.com/instore/orders/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/qrs \
   -H 'Authorization: Bearer ACCESS_TOKEN' \
  -d '{
-   "external_reference": "order-id-1234",
-   "total_amount": 40.0,
-   "items": [
-       {
-           "sku_number": "KS955RUR",
-           "category": "BOOKSTORE",
-           "title": "Pen",
-           "description": "Green pen",
-           "quantity": 2,
-           "unit_measure": "unit",
-           "unit_price": 20,
-           "total_amount": 40
-       }
-   ],
-   "title": "Purchase in Bookstore",
-   "description": "Purchase and shipping",
-   "sponsor": {
-       "id": 446566691
-   },
-   "notification_url": "https://www.yourserver.com/notifications"
+    "external_reference": "order-id-1234",
+    "title": "Title",
+    "description": "Mercado Pago",
+    "notification_url": "https://www.yourserver.com",
+    "expiration_date": "2023-08-22T16:34:56.559-04:00",
+    "total_amount": 1190,
+    "items": [
+        {
+            "sku_number": "KS955RUR",
+            "category": "FOOD",
+            "title": "Item1",
+            "description": "Item1 Mercado Pago",
+            "unit_price": 238,
+            "quantity": 5,
+            "unit_measure": "unit",
+            "total_amount": 1190
+        }
+    ],
+    "sponsor": {
+                "id": 820480089
+            }----[mco]----,
+    "taxes": [
+        {
+            "value": 190,
+            "type": "IVA"
+        }
+    ]------------
 }'
 ```
+
+----[mco]----
+> If you must pay IVA for the products in your order, visit the [Considerations IVA Colombia section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/iva-colombia).
+------------
 
 For further information, refer to [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put).
 
@@ -88,26 +99,33 @@ curl -X PUT \
  https://api.mercadopago.com/instore/orders/qr/seller/collectors/USER_ID/pos/EXTERNAL_POS_ID/qrs \
   -H 'Authorization: Bearer ACCESS_TOKEN' \
  -d '{
-   "external_reference": "order-id-1234",
-   "total_amount": 40.0,
-   "items": [
-       {
-           "sku_number": "KS955RUR",
-           "category": "BOOKSTORE",
-           "title": "Pen",
-           "description": "Green pen",
-           "quantity": 2,
-           "unit_measure": "unit",
-           "unit_price": 20,
-           "total_amount": 40
-       }
-   ],
-   "title": "Purchase in Bookstore",
-   "description": "Purchase and shipping",
-   "sponsor": {
-       "id": 446566691
-   },
-   "notification_url": "https://www.yourserver.com/notifications"
+    "external_reference": "order-id-1234",
+    "title": "Title",
+    "description": "Mercado Pago",
+    "notification_url": "https://www.yourserver.com",
+    "expiration_date": "2023-08-22T16:34:56.559-04:00",
+    "total_amount": 1190,
+    "items": [
+        {
+            "sku_number": "KS955RUR",
+            "category": "FOOD",
+            "title": "Item1",
+            "description": "Item1 Mercado Pago",
+            "unit_price": 238,
+            "quantity": 5,
+            "unit_measure": "unit",
+            "total_amount": 1190
+        }
+    ],
+    "sponsor": {
+                "id": 820480089
+            }----[mco]----,
+    "taxes": [
+        {
+            "value": 190,
+            "type": "IVA"
+        }
+    ]------------
 }'
 ```
 

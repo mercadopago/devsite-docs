@@ -16,7 +16,6 @@ We explain how the *attended model* works:
 
 ## Create an order
 
-----[mla, mpe, mlb, mlc, mlu, mlm]----
 ```curl
 curl -X PUT \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
@@ -26,63 +25,32 @@ https://api.mercadopago.com/instore/qr/seller/collectors/USER_ID/stores/EXTERNAL
     "external_reference": "order-id-1234",
     "title": "Title",
     "description": "Mercado Pago",
-    "notification_url": "www.yourserver.com",
+    "notification_url": "https://www.yourserver.com",
     "expiration_date": "2023-08-22T16:34:56.559-04:00",
-    "total_amount": 100.0,
+    "total_amount": 1190,
     "items": [
         {
             "sku_number": "KS955RUR",
             "category": "FOOD",
             "title": "Item1",
             "description": "Item1 Mercado Pago",
-            "unit_price": 20,
+            "unit_price": 238,
             "quantity": 5,
             "unit_measure": "unit",
-            "total_amount": 100
+            "total_amount": 1190
         }
     ],
     "sponsor": {
-        "id": 446566691
-    }
-}
-```
-------------
-
-----[mco]----
-
-```curl
-curl -X POST \
--H 'Authorization: Bearer ACCESS_TOKEN' \
-https://api.mercadopago.com/mpmobile/instore/qr/USER_ID/EXTERNAL_ID \
--d \
-{
-    "external_reference": "order-id-1234",
-    "notification_url": "www.yourserver.com/yourendpoint",
-    "sponsor_id": 629437702,
-    "items": [
-        {
-            "title": "Item 1",
-            "currency_id": "COP",
-            "unit_price": 6000,
-            "quantity": 1
-        },
-        {
-            "title": "Item 2",
-            "currency_id": "COP",
-            "unit_price": 3000,
-            "quantity": 1
-        }
-    ],
+                "id": 820480089
+            }----[mco]----,
     "taxes": [
         {
-            "value": 1437,
+            "value": 190,
             "type": "IVA"
         }
-    ]
+    ]------------
 }
 ```
-
-------------
 
 Obtain more information in our [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put).
 
