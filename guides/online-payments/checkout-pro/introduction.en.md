@@ -11,6 +11,8 @@ Checkout Pro is an integration that allows you to **charge your customers throug
 
 ## Checkout Pro offers:
 
+[TXTSNIPPET][/snippets/resources/credentials]
+
 ----[mlb]----
 * **Integration with the most popular [payment methods](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265)** in the country.
 ------------
