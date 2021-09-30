@@ -16,7 +16,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 >
 > PRODUCT: MAGENTO 2
 
-Lançamos a nova versão 3.11.10 para Magento 2.
+Lançamos a nova versão 3.11.0 para Magento 2.
 
 [Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
 
