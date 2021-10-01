@@ -3,6 +3,31 @@
 Find out everything about the new versions and updates of Mercado Pago integrations.
 
 ---
+
+## October 2021
+
+### October 1st
+
+> CHANGELOG
+>
+> New Magento 2 plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: MAGENTO 2
+
+We have released the new version 3.11.1 for Magento 2.
+
+[Go to Magento 2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.11.1) for further details regarding this release.
+
+## September 2021
+
 ### September 29th
 
 > CHANGELOG
@@ -22,8 +47,6 @@ We have released the new version 3.11.0 for Magento 2.
 > GitHub
 >
 > [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.11.0) for further details regarding this release.
-
-## September 2021
 
 ### September 23rd
 
