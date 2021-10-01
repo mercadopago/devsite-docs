@@ -3,7 +3,7 @@
 
 ## Glosario
 
-Tenga a mano los principales términos técnicos del flujo de integración del Checkout Pro antes de verificar los requisitos previos:
+Ten a mano los principales términos técnicos del flujo de integración del Checkout Pro antes de verificar los requisitos previos:
 
 | Término | Descripción |
 | --- | --- |
@@ -50,16 +50,16 @@ Para instalar el SDK en tu proyecto [Maven](http://maven.apache.org/install.html
 ```
 ```ruby
 ===
-Para instalar el SDK debes ejecutar el siguiente código en la línea de comandos de tu terminal usando [gema](https://rubygems.org/gems/mercadopago-sdk):
+Para instalar la SDK, debes ejecutar el siguiente código en la línea de comandos de tu terminal usando [gema](https://rubygems.org/gems/mercadopago-sdk):
 ===
 gem install mercadopago-sdk
 ```
 ```csharp
 ===
 ----[mlb]----
-Para instalar el SDK debes ejecutar el siguiente código en la línea de comandos de tu terminal usando [NuGet](https://docs.microsoft.com/pt-br/nuget/reference/nuget-exe-cli-reference):
+Para instalar la SDK debes ejecutar el siguiente código en la línea de comandos de tu terminal usando [NuGet](https://docs.microsoft.com/pt-br/nuget/reference/nuget-exe-cli-reference):
 ----[mla, mlm, mco, mlc, mlu]----
-Para instalar el SDK debes ejecutar el siguiente código en la línea de comandos de tu terminal usando [NuGet](https://docs.microsoft.com/es-es/nuget/reference/nuget-exe-cli-reference):
+Para instalar la SDK debes ejecutar el siguiente código en la línea de comandos de tu terminal usando [NuGet](https://docs.microsoft.com/es-es/nuget/reference/nuget-exe-cli-reference):
 ===
 nuget install mercadopago-sdk
 ```
@@ -76,7 +76,7 @@ Las credenciales son claves únicas que te proporcionamos para que puedas config
 
 Para encontrarlas, consulta la sección [Credenciales]([FAKER][CREDENTIALS][URL]) en el panel de desarrollador de tu cuenta Mercado Pago
 
-> ¿Aún tienes dudas sobre credenciales? Lee [nuestra documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) para obtener más información.
+> ¿Tienes dudas sobre las credenciales? Lee [nuestra documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) para obtener más información.
 
 ---
 
