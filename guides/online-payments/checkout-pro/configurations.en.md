@@ -426,6 +426,7 @@ You can add a description for your business via the `statement_descriptor` attri
 
 ```json
 "statement_descriptor": "MYBUSINESS"
+```
 
 Depending on the card brand, the description (attribute value) will appear on the buyer's card invoice.
 
