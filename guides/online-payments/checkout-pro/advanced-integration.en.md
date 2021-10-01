@@ -1,19 +1,22 @@
 # Advanced Integration
 
-## Receive Payment Notifications
+Checkout Pro has features that allow you to improve the management of your sales payments through an optimized integration.
 
-IPN (Instant Payment Notification) notifications are the **automatic form of notice of the creation of new payments and updates of their status.** For example if they were approved, rejected or if they are pending.
-They allow you to manage your stock and keep your system in sync.
+## Receive payment notifications
+
+IPN notifications (_Instant Payment Notification_) are automatic notifications that can be sent when there are payments and/or status updates, letting you know if transactions have been approved, declined, or are pending.
 
 [Receive IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn)
 
-## Additional information for the preference
+Automatic notifications allow you to manage your inventory and keep your system in sync with your business payment flows. Learn how to receive IPN notifications [here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn)
 
-Improve the approval of payments and the experience of your buyers by adding information in your preference.
+## Enter additional information to the preference
 
-We recommend detailing all possible information about the item and the buyer.
+Improve the payment approval and shopping experience in Checkout Pro by adding information that details the item purchased and the purchasing user to your preferences.
 
-### Buyer Details
+In Preferences, you can enter the following additional information:
+
+### Buyer's personal data 
 
 [[[
 ```php
@@ -175,7 +178,7 @@ payer_data = {
 ```
 ]]]
 
-### Item Details
+### Item's general data
 
 [[[
 ```php
@@ -267,39 +270,49 @@ preference_data = {
 ]]]
 
 
-> You can find the list of categories for your `item` in the following [link](https://api.mercadopago.com/item_categories). If you cannot find the category of your product, send the value `others` as ` category_id`.
+> NOTE
+> 
+> Note
+> 
+> You can find the list of your item's categories [here](https://api.mercadopago.com/item_categories). If you cannot find the category values, send the value `others` in the `category_id` attribute.
 
+## Redirect the buyer to your site
 
-## Return URL
+At the end of the checkout process, you have the option to redirect the buyer to your site again.
 
-At the end of the payment process you have the option to **redirect the buyer to your website.** In order to do this you need to add the `back_urls` attribute and define where you want the return to site button to redirect the buyer depending on the payment status. 
+To do this, add the `back_urls` attribute and define the desired page to redirect your buyer when he clicks on the `Return to site` button, according to the payment status. 
 
-If you want this redirection to be made automatically you need to also add the `auto_return` attribute with value `approved`. 
+You can also add the `auto_return` attribute with the `approved` value if you want the redirect for approved payments to be automatic without rendering a return button.
 
 > NOTE
 >
 > Note
 >
-> Note that the `auto_return` only works for redirect and mobile mode. It does not work for [modal mode](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/integration) since the buyer stays on your website.
+> Note that the `auto_return` attribute only works for Checkout Pro's `redirect` and `mobile` mode. It does not work in [modal mode](https://www.mercadopago[FAKER][URL][ DOMAIN]/developers/pt/guides/online-payments/checkout-pro/integration) since in the latter the buyer remains on the site throughout the payment process.
 
 ![autoreturn](/images/web-payment-checkout/autoreturn-img.png)
 
-Attribute |	Description
------------- 	|	--------
-`auto_return` | Automatically redirect to your site when the payment is successful. Possible value is `approved`.
-| `back_urls` | `success`. Return URL for approved payment.<br><br>`pending`. Return URL for pending payment.<br><br>`failure`. Return URL for canceled payment.
+| Attribute | Description |
+| ------------ | -------- |
+| `auto_return` | Buyers are automatically redirected to the site when payment is approved. The default value is `approved`. |
+| `back_urls` | Return URL to site. Possible scenarios are:<br/><br/>`success`: Return URL upon payment approved.<br/><br/>`pending`: Return URL upon payment pending.<br/><br/>`failure`: Return URL upon payment payment rejected.
 
-Through the `back_urls` *the following parameters will return*:
+The `back_urls` will return the following parameters:
 
-Parameter |	Description
------------- 	|	--------
-`payment_id` | Payment ID of Mercado Pago. |
-`status` | Payment status. For example: `approved` for an approved payment or ` pending` for a pending payment. |
-`external_reference` | Value that you sent when creating the payment preference. |
-`merchant_order_id` | Payment order ID created in Mercado Pago. |
+| Parameter | Description |
+| --- | --- |
+| `payment_id` | ID (identifier) of the payment from Mercado Pago. |
+| `status` | Payment status. Ex.: `approved` for an approved payment or `pending` for pending payment. |
+| `external_reference` | Amount sent at the time when the payment preference was created. |
+| `merchant_order_id` | ID (identifier) of the payment order generated in Mercado Pago. |
 
-> The information of the parameters will depend on the finalization of the payment at the Checkout Pro and on the fact that the flow has not been abandoned before returning to your site through the `back_urls` of **_failure_**.
+> NOTE
+>
+> Note
+>
+> Some parameters hold purchase information only if the buyer has completed the entire payment in Checkout Pro and has not abandoned the flow before returning to your site via the `failure` `back_urls`.
 
+For example:
 
 [[[
 ```php
@@ -380,48 +393,37 @@ preference_data = {
 
 ## Prevent payment rejection
 
-A payment can be rejected because the issuer for the selected method detected a problem or because of non-compliance with security requirements.
+A payment can be rejected because the payment method issuer has detected a problem with the flow, such as a lack of necessary security requirements.
 
-Avoid rejected payments with our recommendations and [improve the approval process](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/payment-rejections).
+Avoid rejected payments with our [recommendations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/payment-rejections) and improve the approval process.
 
-## Cancellations and Returns
+## Manage cancellations and returns
 
 ----[mla, mlm, mco, mlu, mlb, mlc]----
-Cancellations are made when the cash payment was not completed before the expiration date and the seller decides to cancel it.
-And the returns happen when the payment was made but the seller decides to cancel it totally or partially.
+Cancellations happen when a payment has not been completed before the due date and the seller then decides to cancel it. Returns, in turn, happen when the buyer completes the payment, but the seller decides to cancel it totally or partially.
 ------------
 
 ----[mpe]----
-Cancellations are made when the cash payment was not completed before the expiration date and the seller decides to cancel it.
-And the returns happen when the payment was made but the seller decides to cancel it totally.
+Cancellations happen when payment has not been completed before the due date, and the seller then decides to cancel it. Returns, in turn, happen when the buyer completes the payment, but the seller decides to cancel it totally.
 ------------
 
-You can find all the information in the [Returns and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
+For more information, visit our documentation [on how to manage your payment cancellations and returns](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/ account/cancellations-and-refunds).
 
-## Manage Chargebacks
+## Manage chargebacks
 
-A _chargeback_ occurs when the buyer contacts the entity that issued the card and communicates that they do not recognize the payment.
-This means that the seller's money for that payment will be withheld from their Mercado Pago account until it is settled.
+A chargeback occurs when the buyer contacts the entity that the card issuer and communicates that they do not recognize the payment. In practice, this means that the money from this payment will be withheld from your Mercado Pago account until the situation is resolved.
 
-[Manage Chargebacks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/chargebacks)
+Access our [documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/chargebacks) and learn how to manage payment chargebacks.
 
 ---
 
-### Next steps
+### Next step
 
 
-> LEFT_BUTTON
->
-> Other functionalities
->
-> Set up your payment and adapt the Checkout Pro to your business.
->
-> [Other functionalities](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations)
-
-> RIGHT_BUTTON
->
+> LEFT_BUTTON_REQUIRED_EN
+> 
 > Customization
 >
-> Adapt the style of your brand in the shopping experience.
+> Adapt the style of your brand to the Checkout Pro shopping experience.
 >
 > [Customization](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/customizations)

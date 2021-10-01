@@ -1,30 +1,21 @@
-# Integrate Checkout Pro
+# Integrate with Checkout Pro
 
-Integrating Mercado Pago's Checkout Pro allows you to charge your customers through our web form from any device in a simple, fast and secure way.
+The integration with Mercado Pago's Checkout Pro solution allows you to charge your customers through our web form from any device in a simple, fast, and secure way.
 
-Use our [sample projects](#bookmark_sample_projects) for a complete integration. You can adapt them according to your needs.
+> NOTE
+>
+> Note
+>
+> Use the [implementation example](#bookmark_sample_project) to understand and learn more about the complete integration with Checkout Pro.
 
-## How do I integrate?
+## Step by step
 
 ![Integration](/images/web-payment-checkout/flow-v2-2.png)
 
-1. Generate your preference
+Installing the Checkout Pro consists of two main steps:
 
-	1.1 Add the SDK downloaded from Mercado Pago in your project and the credentials to enable its use.
-
-	1.2 Set the preference according to your product or service.<br><br>
-
-2. Add the checkout to your website
-
-	2.1 Add the MercadoPago.js V2 SDK to your frontend.
-
-	2.2 Add the credentials to enable the use of the SDK and initialize the checkout with the created preference.
-
-## Steps to integrate
-
-Installing the Checkout Pro consists of two steps:
-
-<span></span>
+1. Generating the desired preferences;
+2. Adding the Checkout Pro to your website.
 
 > SERVER_SIDE
 >
@@ -32,9 +23,8 @@ Installing the Checkout Pro consists of two steps:
 >
 > &nbsp;1. Generate your preference
 
-Write the following code consisting of two parts:
-
-1.1 Add the [Mercado Pago SDK](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/previous-requirements#bookmark_previous_requirements) in your project and the [credentials]([FAKER][CREDENTIALS][URL]) to enable its use:
+Add the [Mercado Pago SDK](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/previous-requirements#bookmark_previous_requirements) and the needed [credentials]([FAKER][CREDENTIALS][URL]) in your project to enable the use of preferences:
+:
 
 [[[
 ```php
@@ -79,11 +69,11 @@ sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 ```
 ]]]
 
-1.2 Set the preference according to your product or service:
+Then, set the preference according to your product or service:
 
 ----[mla, mlb, mlu, mpe, mlm]----
 
-> Note that you need to configure the `back_urls` if you want to return to your site at the end of the payment. For more information, you can visit the [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/advanced-integration#bookmark_return_url) section.
+> Note that you need to configure the `back_urls` if you want to return to your website at the end of the payment. For more information, visit the [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/advanced-integration#bookmark_return_url) section.
 
 [[[
  ```php
@@ -336,9 +326,9 @@ curl -X POST \
 
 > NOTE
 >
-> Accept payments only from registered users
+> Adapt the Checkout Pro integration to your business
 >
-> If you want to accept payments only from registered users, with cards and money in Mercado Pago account, review [this section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations/#bookmark_accept_payments_from_registered_users_only) for more information.
+> Access the [Preferences Configuration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations) section to know how to add new features to the Checkout Pro according to your business model.
 
 <span></span>
 
@@ -348,16 +338,14 @@ curl -X POST \
 >
 > &nbsp;2. Add the Checkout Pro to your website
 
-Finally, follow these steps to add the checkout to your website.
-
-2.1. Add the MercadoPago.js V2 SDK to your project:
+Add the MercadoPago.js V2 SDK to your project:
 
 ```html
 // SDK MercadoPago.js V2
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-2.2. Add the SDK credentials to enable its use and initialize the checkout using the ID from the preference created earlier and the ID or selector for the element where the payment button should be displayed.
+Then, add the SDK credentials to enable its use and initialize the checkout using the ID from the preference created earlier and the ID (or selector) for the element where the payment button should be displayed:
 
 [[[
 ```html
@@ -381,46 +369,28 @@ Finally, follow these steps to add the checkout to your website.
 ```
 ]]]
 
-This will display a payment button that will open the Checkout Pro.
+According to the example above, a payment button will be displayed and will be responsible for opening the Checkout Pro.
 
-You can check other ways to open the checkout in the [Customizations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/customizations).
-
-> This documentation uses the new library version. To see the previous version, go to the [old Integrate Checkout Pro section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/v1/integration).
+You can check out other ways to open the checkout in the [Customizations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/customizations) section.
 
 > WARNING
 >
 > Important
 >
-> Do not forget to access from another browser or log out of your Mercado Pago account before testing it. You cannot make a payment with the same account you created the payment form.<br/>
+> Do not forget to access the Checkout Pro from another browser or log out of your Mercado Pago account before testing it since you cannot make a payment with the same account you created the payment form.<br/>
 
-#### Excellent! You finished your integration.
+## Sample project
 
-_Click on the link within your site and [test the integration of your Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/test-integration)_.<br/><br/>
-
-## Sample projects
-
-> GIT
->
-> Checkout Pro
->
-> Use our [complete integration examples](http://github.com/mercadopago/checkout-payment-sample) on GitHub in PHP or NodeJS to download instantly.
+Check out the [full integration example](http://github.com/mercadopago/checkout-payment-sample) available on GitHub for PHP or NodeJS to download a basic sample project for quick implementation of Checkout Pro on your website.
 
 ---
 
-### Next steps
+### Next step
 
-> LEFT_BUTTON_RECOMMENDED_EN
+> LEFT_BUTTON_REQUIRED_EN
 >
-> Test your integration
+> Test your integration with Checkout Pro
 >
-> Check that everything works in your integration with test users.
+> Check if everything is properly working in your integration with test users.
 >
 > [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/test-integration)
-
-> RIGHT_BUTTON_RECOMMENDED_EN
->
-> Accepts payments by Mercado Pago wallet
->
-> It allows payments only from Mercado Pago registered users, with cards and available balance.
->
-> [Registered users](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations/#bookmark_accept_payments_from_registered_users_only)

@@ -35,8 +35,8 @@ This is the example URL you can use. You will also find the details of parameter
 
 ```url
 https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com
-
 ```
+
 | Parameter | Data to fill out |
 | ----------------- | ----------------- |
 | `client_id` | Replace `APP_ID` value with your application ID. |
@@ -166,7 +166,7 @@ To unlink a token associated with your account, you can do it from the [Mercado 
 > Note
 > 
 > Remember that every time you refresh your credentials, the `refresh_token` will also change so you will need to store it again.
->
+><br>
 >  In case of errors when refreshing your credentials, remember that you can query them in the [error code reference](https://developers.mercadolibre[FAKER][URL][DOMAIN]/en_us/authentication-and-authorization#Error-codes-reference).
 
 
@@ -355,8 +355,9 @@ The seller will receive the difference between the total amount and the fees, bo
 >
 > Tip
 >
-> The more information you send us in the preference, the better our fraud prevention system will perform when it comes to payment approval.  
-> Create a checkout preference as complete as you can.
+> The more information you send us in the preference, the better our fraud prevention system will perform when it comes to payment approval.
+> <br>
+>  Create a checkout preference as complete as you can.
 
 ## Set up notifications
 

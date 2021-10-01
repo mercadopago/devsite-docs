@@ -182,6 +182,7 @@ The payment methods available for each country are shown below.
 | Mastercard Debit | `debit_card`| `debmaster` |
 | Tarjeta Mercado Pago | `prepaid_card` | `mercadopagocard` |
 | Oxxo | `ticket` | `oxxo` |
+| PayCash | `ticket` | `paycash` |
 | BBVA Bancomer | `atm` | `bancomer` |
 | Banamex | `atm` | `banamex` |
 | Santander | `atm` | `serfin` |
