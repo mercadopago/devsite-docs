@@ -6,7 +6,7 @@ O Checkout Pro dispõe de funcionalidades extras que permitem otimizar sua integ
 
 As notificações IPN (_Instant Payment Notification_) são notificações automáticas sobre a criação de novos pagamentos e atualizações de status, informando se as transações foram aprovadas, recusadas ou estão pendentes.
 
-Os avisos automáticos permitem que você administre seu estoque e mantenha seu sistema sincronizado com os fluxos de pagamento do seu negócio. Aprenda como receber as notificações IPN [aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn)
+Os avisos automáticos permitem que você administre seu estoque e mantenha seu sistema sincronizado com os fluxos de pagamento do seu negócio. Aprenda como receber as notificações IPN [aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn).
 
 ## Insira informações adicionais à preferência
 
@@ -409,7 +409,7 @@ Para mais informações, acesse a nossa documentação sobre [gerenciar os cance
 
 Uma contestação (ou *chargeback*) acontece quando o comprador entra em contato com a entidade emissora do cartão e desconhece o pagamento. Na prática, isso significa que o dinheiro desse pagamento será retido da sua conta Mercado Pago até que a situação seja solucionada.
 
-Acesse nossa [documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/chargebacks) e saiba como gerenciar contestações de pagamentos.
+Acesse nossa [documentação de Gerenciamento de operações contestadas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/chargebacks) e saiba como gerenciar contestações de pagamentos.
 
 ---
 
