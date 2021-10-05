@@ -1,22 +1,21 @@
-# Teste sua integração
+# Teste a sua integração
 
 
 
-## Como testar minha integração
+## Como testar a minha integração
 
 **Os usuários de teste permitem que você faça testes no seu Checkout Pro** ao gerar fluxos de pagamento em uma cópia fiel da sua integração.
 
 | Tipos de usuários | Descrição |
 | --- | --- |
-| Vendedor | É a conta de testes que você usa para **configurar a aplicação e credenciais para a cobrança**. |
-| Comprador | É a conta de testes que você usa para **testar o processo de compra.**<br/>Existem duas formas de fazer o pagamento:<br/><br/> **Como usuário convidado:** basta preencher o endereço de e-mail.<br/>**Como usuário cadastrado:** acessa a conta do Mercado Pago com o usuário e senha. Caso tenha saldo disponível na conta ou cartões salvos, estarão habilitados como meios de pagamento. |
-
+| Vendedor | É a conta de testes que você utiliza para **configurar a aplicação e credenciais para a cobrança**. |
+| Comprador | É a conta de testes que você utiliza para **testar o processo de compra.** Existem duas formas de fazer o pagamento:<br/><br/> **Como usuário convidado:** basta preencher o endereço de e-mail.<br/>**Como usuário cadastrado:** acesse a conta do Mercado Pago com o usuário e senha e, caso exista saldo disponível na conta ou cartões salvos, ambos estarão habilitados como meios de pagamento. |
 
 
 ## Como criar usuários
-Para fazer os testes **é necessário que você tenha pelo menos dois usuários:** um comprador e um vendedor.
+Para fazer os testes **é necessário que você tenha pelo menos dois usuários**, sendo um como comprador e outro como vendedor.
 
-Execute o seguinte curl para gerar um usuário de teste:
+Execute o seguinte **curl** para gerar um usuário de teste:
 
 ### Solicitação
 
@@ -44,40 +43,40 @@ curl -X POST \
 >
 >Importante
 >
-> * Você pode gerar até 10 contas de usuários de teste ao mesmo tempo. Por isso, recomendamos salvar o _e-mail_ e _senha_ de cada um.
+> * Você pode gerar até 10 contas de usuários de teste ao mesmo tempo. Por isso, recomendamos salvar o _e-mail_ e a _senha_ de cada um.
 > * Os usuários de teste caducam após 60 dias sem atividade no Mercado Pago.
 > * Para fazer pagamentos de teste, recomendamos usar valore baixos.
 > * Tanto o comprador como o vendedor devem ser usuários de teste.
-> * Use cartões de teste, já que não é possível retirar o dinheiro.
+> * Use cartões de teste, visto que não é possível retirar o dinheiro.
 
 
 ## Teste o fluxo de pagamento
 
-### 1. Configure o checkout com os dados do seu usuário vendedor
+### 1. Configure o checkout com os dados do seu usuário vendedor:
 
-Gere uma preferência com as [credenciais]([FAKER][CREDENTIALS][URL]) do usuário de teste que quiser usar como vendedor.
+Gere uma preferência com as [credenciais]([FAKER][CREDENTIALS][URL]) do usuário de teste que desejar usar como vendedor.
 
-### 2. Faça um pagamento de teste com seu usuário comprador
+### 2. Faça um pagamento de teste com seu usuário comprador:
 
-#### Comprar como usuário convidado
+- #### Comprar como usuário convidado
 
-Testes com cartão de crédito
+##### Testes com cartão de crédito
 
 Ao abrir o checkout criado com os dados do seu usuário vendedor:
 
-1. Selecione Cartão como meio de pagamento.
+1. Selecione **cartão** como meio de pagamento.
 2. Insira os dados de um [cartão de teste.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/test-integration#bookmark_cartões_de_teste)
 3. Informe o e-mail e pronto!<br/><br/>
 
-#### Comprar como usuário cadastrado (com conta do Mercado Pago)
+- #### Comprar como usuário cadastrado (com conta do Mercado Pago)
 
-Testes com cartão de crédito
+##### Testes com cartão de crédito
 
 Ao abrir o checkout criado com os dados do seu usuário vendedor:
 
-1. Inicie sessão no Mercado Pago com a conta do seu usuário de teste comprador.
-2. Selecione _Cartão_ como meio de pagamento.
-3. Selecione um  cartão salvo ou preencha os dados um novo e pronto!
+1. Inicie uma sessão no Mercado Pago com a conta do seu usuário de teste comprador.
+2. Selecione **cartão** como meio de pagamento.
+3. Indique um cartão salvo ou preencha os dados um novo. Pronto!
 
 
 ## Cartões de teste
@@ -93,7 +92,7 @@ Ao abrir o checkout criado com os dados do seu usuário vendedor:
 ------------
 ----[mlb]----
 
-| Cartão | Número | Código de segurança | Data de vencimento |
+| Cartão | Número | Código de Segurança | Data de Vencimento |
 | :--- | :---: | :---: | :---: |
 | Mastercard | 5031 4332 1540 6351 | 123 | 11/25 |
 | Visa | 4235 6477 2802 5682 | 123 | 11/25 |
@@ -144,22 +143,20 @@ Ao abrir o checkout criado com os dados do seu usuário vendedor:
 ------------
 
 
-Para **testar diferentes resultados de pagamento**, preencha o dado que quiser no nome do titular do cartão:
+Para **testar diferentes resultados de pagamento**, preencha o dado que quiser no nome do titular do cartão, sendo:
 
-- APRO: Pagamento aprovado.
-- CONT: Pagamento pendente.
-- OTHE: Recusado por erro geral.
-- CALL: Recusado com validação para autorizar.
-- FUND: Recusado por quantia insuficiente.
-- SECU: Recusado por código de segurança inválido.
-- EXPI: Recusado por problema com a data de vencimento.
-- FORM: Recusado por erro no formulário.
+- APRO: pagamento aprovado.
+- CONT: pagamento pendente.
+- OTHE: recusado por erro geral.
+- CALL: recusado com validação para autorizar.
+- FUND: recusado por quantia insuficiente.
+- SECU: recusado por código de segurança inválido.
+- EXPI: recusado por problema com a data de vencimento.
+- FORM: recusado por erro no formulário.
 
 ## Começar a receber pagamentos
 
-Para começar a cobrar, você deve [ativar suas credenciais]([FAKER][CREDENTIALS][URL]).
-
-Para ativá-las, certifique-se de que as credenciais na sua integração sejam as da conta que recebe o dinheiro das vendas.<br/>
+Para começar a cobrar, você deve [ativar suas credenciais]([FAKER][CREDENTIALS][URL]). Para isso, certifique-se de que as credenciais na sua integração sejam as da conta que recebe o dinheiro das vendas.<br/>
 
 ---
 
@@ -167,7 +164,7 @@ Para ativá-las, certifique-se de que as credenciais na sua integração sejam a
 
 > LEFT_BUTTON_RECOMMENDED_PT
 >
-> Integração avançada
+> Integração Avançada
 >
 > Otimize sua integração e melhore o gerenciamento de suas vendas.
 >

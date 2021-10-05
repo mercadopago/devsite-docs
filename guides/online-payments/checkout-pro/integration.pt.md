@@ -1,22 +1,22 @@
 # Integre o Checkout Pro
 
-Integrar Checkout Pro do Mercado Pago te permite cobrar através do nosso formulário web de qualquer dispositivo de forma simples, rápida e segura.
+Integrar com o Checkout Pro do Mercado Pago permite que, **a partir de nosso formulário web acessível de qualquer dispositivo**, você cobre seus clientes de forma simples, rápida e segura.
 
-Use os [exemplos para download](#bookmark_exemplos_para_download) para conhecer a integração completa ou para adaptá-los de acordo com o que precisa.
+Use os [exemplos para download](#bookmark_exemplos_para_download) para conhecer a integração completa ou para adaptá-los de acordo com as suas necessidades.
 
 ## Como me integro?
 
 ![Integration](/images/web-payment-checkout/flow-v2-2.png)
 
-1. Crie sua preferência
+1. Crie a sua preferência:
 
-	1.1 Adicione o SDK do Mercado Pago no seu backend e adicione as credenciais para permitir seu uso.
+	1.1 Adicione o SDK do Mercado Pago no seu back-end e adicione as credenciais para permitir seu uso.
 
 	1.2 Configure a preferência conforme seu produto ou serviço.<br><br>
 
-2. Adicione o Checkout Pro ao seu site
+2. Adicione o Checkout Pro ao seu site:
 
-	2.1 Inclua o SDK MercadoPago.js V2 em seu frontend.
+	2.1 Inclua o SDK MercadoPago.js V2 em seu front-end.
 
 	2.2 Configure as credenciais para habilitar o uso do SDK e inicialize o checkout com a preferência criada.
 
@@ -28,11 +28,11 @@ Instalar o Checkout Pro requer duas etapas:
 >
 > h3
 >
-> &nbsp;1. Crie sua preferência
+> 1. Crie a sua preferência:
 
-No seu backend, escreva o seguinte código que consiste em duas partes:
+No seu back-end, escreva o seguinte código que consiste em duas partes:
 
-1.1 Adicione o [SDK do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/previous-requirements#bookmark_pré-requisitos) ao seu projeto e configure as [credenciais]([FAKER][CREDENTIALS][URL]) para habilitar seu uso:
+1.1 Adicione o [SDK do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/previous-requirements#bookmark_pré-requisitos) ao seu projeto e configure as [credenciais]([FAKER][CREDENTIALS][URL]) para habilitar seu uso.
 
 [[[
 ```php
@@ -77,11 +77,19 @@ sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 ```
 ]]]
 
-1.2 Configure a preferência conforme seu produto ou serviço:
+1.2 Configure a preferência conforme seu produto ou serviço.
 
 ----[mla, mlb, mlu, mpe, mlm]----
 
-> Por favor considere que é necessário configurar as `back_urls` se você quiser retornar ao seu site ao final do pagamento. Para mais informações, visite a seção [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/advanced-integration#bookmark_url_de_retorno).
+> NOTE
+>
+> Aceite pagamentos apenas de usuários cadastrados
+>
+> Se quiser aceitar pagamentos apenas de usuários cadastrados, com cartão e saldo no Mercado Pago, entre [nesta seção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados) para mais informações.
+>
+> Considere que é necessário configurar as `back_urls` se você quiser retornar ao seu site ao final do pagamento. Para mais informações, visite a seção [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/advanced-integration#bookmark_url_de_retorno).
+
+<span></span>
 
 [[[
  ```php
@@ -331,30 +339,22 @@ curl -X POST \
 
 <span></span>
 
-> NOTE
->
-> Aceite pagamentos apenas de usuários cadastrados
->
-> Se quiser aceitar pagamentos apenas de usuários cadastrados, com cartão e saldo no Mercado Pago, entre [nesta seção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados) para mais informações.
-
-<span></span>
-
 > CLIENT_SIDE
 >
 > h3
 >
-> &nbsp;2. Adicione o Checkout Pro ao seu site
+> 2. Adicione o Checkout Pro ao seu site:
 
-Agora no seu frontend, siga estas etapas para adicionar o checkout ao seu site:
+Em seu front-end, siga as etapas abaixo para adicionar o checkout ao seu site:
 
-2.1. Inclua o SDK MercadoPago.js V2 no seu projeto:
+2.1. Inclua o SDK MercadoPago.js V2 no seu projeto.
 
 ```html
 // SDK MercadoPago.js V2
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-2.2. Configure as credenciais do SDK para seu uso e inicialize seu checkout com o ID da preferência criada anteriormente e o identificador do elemento onde o botão de pagamento deve ser exibido.
+2.2. Configure as credenciais do SDK para seu uso e inicialize seu checkout com o **ID da preferência criado anteriormente** e o identificador do elemento onde o botão de pagamento deve ser exibido.
 
 [[[
 ```html
@@ -378,17 +378,15 @@ Agora no seu frontend, siga estas etapas para adicionar o checkout ao seu site:
 ```
 ]]]
 
-Neste caso, será mostrado um botão de pagamento que abrirá o Checkout Pro.
-
-Você pode consultar outras maneiras de abrir o checkout na [seção de Personalizações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/customizations).
-
-> Esta documentação utiliza a nova versão da biblioteca. Para ver a versão anterior, vá para a [seção de Integre o Checkout Pro antiga](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/v1/integration).
+Neste caso, será exibido um botão de pagamento que abrirá o Checkout Pro. Você pode consultar outras maneiras de abrir o checkout na [seção de Personalizações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/customizations).
 
 > WARNING
 >
 > Importante
 >
 > Não esqueça de acessar de outro navegador ou de encerrar a sessão da sua conta do Mercado Pago antes de fazer os testes. Você não pode pagar com a mesma conta que criou o formulário de pagamento.<br/>
+>
+> Esta documentação utiliza a nova versão da biblioteca. Para ver a versão anterior, vá para a [seção de Integre o Checkout Pro antiga](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/v1/integration).
 
 #### Excelente! Você concluiu sua integração.
 
@@ -408,7 +406,7 @@ _Clique no link dentro do seu site e [teste a integração do seu Checkout Pro](
 
 > LEFT_BUTTON_RECOMMENDED_PT
 >
-> Teste sua integração
+> Teste sua Integração
 >
 > Confira se está tudo em ordem na sua integração com os usuários de teste.
 >
@@ -416,8 +414,8 @@ _Clique no link dentro do seu site e [teste a integração do seu Checkout Pro](
 
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
-> Aceite a carteira Mercado Pago
+> Aceite a Carteira do Mercado Pago
 >
-> Permite pagamentos somente de usuários cadastrados no Mercado Pago, com cartão e saldo disponível.
+> Permite pagamentos somente de usuários cadastrados no Mercado Pago com cartão e saldo disponível.
 >
 > [Usuários cadastrados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados)

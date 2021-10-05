@@ -1,17 +1,17 @@
-# Integração avançada
+# Integração Avançada
 
 ## Receba notificações de pagamentos
 
- As notificações IPN (Instant Payment Notification) são a **forma automática de aviso da criação de novos pagamentos e as atualizações de seus status.** Por exemplo se foram aprovados, recusados ou se estão pendentes.
-Permitem que você administre seu estoque e mantenha seu sistema sincronizado.
+ As notificações IPN (Instant Payment Notification) são a **avisos automáticos relacionados à criação de novos pagamentos e as atualizações de seus status** como, por exemplo, se foram aprovados, recusados ou se estão pendentes.
+Os avisos auxiliam para que você administre seu estoque e mantenha seu sistema sincronizado.
 
 [Receber notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn)
 
-## Informações adicionais para a preferência
+## Informações adicionais para a sua preferência
 
 Melhore a aprovação dos pagamentos e a experiência dos seus compradores adicionando informações à sua preferência.
 
-Recomendamos detalhar todas as informações possíveis sobre o item e o comprador.
+Além disso, recomendamos detalhar todas as informações possíveis sobre o item e o comprador. 
 
 ### Dados do comprador
 
@@ -265,15 +265,19 @@ preference_data = {
 ```
 ]]]
 
-> Você pode encontrar a lista de categorias para o seu `item` no seguinte [link](https://api.mercadopago.com/item_categories). Se você não conseguir encontrar a categoria do seu produto, envie o valor `others` como `category_id`.
+> NOTE
+>
+> Nota
+>
+> Você pode encontrar a lista de categorias para o seu **item** clicando nesse[link](https://api.mercadopago.com/item_categories). Se você não conseguir encontrar a categoria do seu produto, envie o valor `others` como `category_id`.
 
 
 ## URL de retorno
 
-No final do processo de pagamento, você tem a opção de **redirecionar o comprador para o seu site.**
-Para isso, precisa adicionar o atributo `back_urls` e definir, segundo o status do pagamento, a onde quer que redirecionemos seu comprador quando ele clique no botão de voltar ao site.
+No final do processo de pagamento, você terá a opção de **redirecionar o comprador para o seu site.**
+Para isso, adicione o atributo `back_urls` e defina, segundo o status do pagamento, o local em que redirecionaremos seu comprador quando ele clicar no botão de voltar ao site.
 
-Se quer que o redirecionamento seja automático para os pagamentos aprovados, precisa adicionar também o atributo `auto_return` com valor `approved`. 
+Se quiser que o redirecionamento seja automático para os pagamentos aprovados, adicione também o atributo `auto_return` com o valor `approved`. 
 
 > NOTE
 >
