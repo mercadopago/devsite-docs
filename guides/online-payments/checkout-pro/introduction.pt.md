@@ -7,7 +7,7 @@ O Checkout Pro é a integração que **te permite cobrar através do nosso formu
 
 ## O Checkout Pro oferece:
 
-[TXTSNIPPET][/snippets/resources/credentials]
+[TXTSNIPPET][/guides/snippets/resources/credentials]
 
 ----[mlb]----
 * **Integração com os principais [meios de pagamento](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265)** do país.
