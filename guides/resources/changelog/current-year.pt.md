@@ -3,6 +3,26 @@
 Descubra tudo sobre as novas versões e atualizações das integrações do Mercado Pago.
 
 ---
+## Outubro 2021
+
+### 4 de outubro
+
+> CHANGELOG
+>
+> Nova versão SDK Java
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK JAVA
+Lançamos a nova versão 1.11.0 do SDK Java.
+
+A partir deste lançamento, não ofereceremos mais suporte para as versões 7 ou anteriores do Java.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-java/releases).
 
 
 ### 1 de outubro
@@ -27,7 +47,7 @@ Lançamos a nova versão 3.11.1 para Magento 2.
 
 ## Setembro 2021
 
-### 29 de setembro
+### 30 de septiembre
 
 > CHANGELOG
 >
@@ -47,7 +67,24 @@ Lançamos a nova versão 3.11.0 para Magento 2.
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.11.0).
 
-### 23 de septiembre
+### 29 de setembro
+
+> CHANGELOG
+>
+> Nova versão SDK PHP
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK PHP
+Lançamos a nova versão 1.12.2 e 2.4.3 do SDK PHP.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-php/releases).
+
+### 23 de setembro
 
 > CHANGELOG
 >
