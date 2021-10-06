@@ -54,6 +54,8 @@ curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPRO
 }'
 ```
 
+![Basic-subscriptions](/images/subscriptions/status-preapproval-pt.png)
+
 ## Reativar uma assinatura pausada
 
 ### Ativar assinatura com prazo final
@@ -95,9 +97,9 @@ curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPRO
 
 ## Data de cobrança
 
-Se você tem uma assinatura mensal, você pode definir um dia fixo do mês para receber as cobranças de uma assinatura mensal. 
+Para assinaturas com frequência de pagamento mensal, você pode escolher um dia fixo do mês para que sejam feitas as cobranças. Se você não configurar um dia específico, as cobranças serão feitas no mesmo dia do mês em que o assinante aderiu à assinatura. 
 
-Ao configurar uma data de cobrança, você pode escolher entre cobrar ou não um valor proporcional dos pagadores que se inscrevem para essa assinatura em datas diferentes da escolhida.
+Quando uma data de cobrança é definida, você pode escolher se será cobrado ou não um **valor proporcional (pró-rata)** aos clientes que aderirem à assinatura em datas diferentes da que você escolheu.
 
 > NOTE
 > 

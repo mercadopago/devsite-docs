@@ -8,6 +8,8 @@ There are two ways to integrate subscriptions:
 
 * __Without an associated plan__: Use this form when you know that different subscriptions will not share any features because they will be very specific or specialized for each payer. For example, for a single month subscription with a special discount.
 
+![Basic-subscriptions](/images/subscriptions/integrations-EN.png)
+
 > NOTE
 > 
 > Key concepts
@@ -89,6 +91,8 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval_plan' \
 ```
 
 Done! We can now create the subscription and associate it to your plan.
+
+![Basic-subscriptions](/images/subscriptions/status-plan-en.png)
 
 
 ### Create subscription
@@ -307,6 +311,15 @@ Attributes
 | `payer_email` | Payer's email address. |
 | `card_token_id` | If the subscription was already authorized, the information on the card will be converted into a token to send the data securely. |
 
+
+### Search of preapprovals
+
+This call allows you to obtain all subscriptions (pre-approvals) associated with a subscription plan.
+
+```curl 
+curl --location --request GET 'https://api.mercadopago.com/preapproval/search?sort=date_created:desc&limit=10&status=authorized,paused,cancelled&offset=0&payerId=100100100' \
+--header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+```
 
 ------------
 ### Next steps

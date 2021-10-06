@@ -8,6 +8,10 @@ Hay dos formas de integrar suscripciones:
 
 * __Sin un plan asociado__: Usa esta forma cuando sepas que las diferentes suscripciones no van a compartir ninguna característica porque van ser muy específicas o especializadas para cada pagador. Por ejemplo para una suscripción de un solo mes con un descuento particular.
 
+
+![Basic-subscriptions](/images/subscriptions/integrations-ES.png)
+
+
 > NOTE
 > 
 > Conceptos claves
@@ -89,6 +93,8 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval_plan' \
 
 ¡Listo! Ya podemos crear la suscripción y asociarla a tu plan.
 
+![Basic-subscriptions](/images/subscriptions/status-plan-es.png)
+
 
 ### Crear suscripción
 
@@ -150,7 +156,6 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 >Puedes obtener más información sobre los campos en la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference).
 
 ¡Y listo! Ya creaste una suscripción con un plan asociado.
-
 
 ## Suscripciones sin plan asociado
 
@@ -305,6 +310,14 @@ Atributos
 | `card_token_id`| Si la suscripción ya fue autorizada, la información de la tarjeta será convertida en un token para enviar los datos de modo seguro. |
 
 
+### Search de preapprovals
+
+Este llamado permite obtener todas las suscripciones (preapprovals) asociadas a un plan de suscripción.
+
+```curl 
+curl --location --request GET 'https://api.mercadopago.com/preapproval/search?sort=date_created:desc&limit=10&status=authorized,paused,cancelled&offset=0&payerId=100100100' \
+--header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+```
 ------------
 ### Próximos pasos
 

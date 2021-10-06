@@ -8,6 +8,8 @@ Há duas formas de integrar assinaturas:
 
 * __Sem um plano associado__: Use esta forma quando você souber que diferentes assinaturas não compartilharão nenhuma característica porque serão muito específicas ou especializadas para cada pagador. Por exemplo, para uma assinatura de um único mês com um desconto específico.
 
+![Basic-subscriptions](/images/subscriptions/integrations-PT.png)
+
 > NOTE
 > 
 > Conceitos-chave
@@ -89,6 +91,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval_plan' \
 
 Pronto! Agora podemos criar a assinatura e associá-la ao seu plano.
 
+![Basic-subscriptions](/images/subscriptions/status-plan-pt.png)
 
 ### Criar assinatura
 
@@ -127,7 +130,6 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
     "id": "2c938084726e18d60172750000000000",
     "preapproval_plan_id": "2c938084726e18d60170001112223334",
     "payer_id": 100200300,
-    "payer_email": "test_user_XXXX@testuser.com",
     "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]/",
     "collector_id": 10101,
     "application_id": 1234567812345678,
@@ -188,7 +190,6 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 {
     "id": "2c938084726fca480172750000000000",
     "payer_id": 400500600,
-    "payer_email": "test_user_XXXX@testuser.com",
     "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]/",
     "collector_id": 100200300,
     "application_id": 1234567812345678,
@@ -260,7 +261,6 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 {
     "id": "2c938084726fca480172750000000000",
     "payer_id": 400500600,
-    "payer_email": "test_user_XXXX@testuser.com",
     "back_url": "https://www.mercadopago[FAKER][URL][DOMAIN]/",
     "collector_id": 100200300,
     "application_id": 1234567812345678,
@@ -304,6 +304,14 @@ Atributos
 | `payer_email` | E-mail do pagador. |
 | `card_token_id` | Se a assinatura já foi autorizada, as informações do cartão serão convertidas em um token para enviar os dados com segurança. |
 
+### Search de preapprovals
+
+Esta chamada permite que você encontre todas as assinaturas (preapprovals) asociadas a um plano de assinatura.
+
+```curl 
+curl --location --request GET 'https://api.mercadopago.com/preapproval/search?sort=date_created:desc&limit=10&status=authorized,paused,cancelled&offset=0&payerId=100100100' \
+--header 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+```
 
 ------------
 ### Próximos passos

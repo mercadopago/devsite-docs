@@ -5,7 +5,7 @@ Las suscripciones de Mercado Pago te permiten recibir pagos de forma recurrente,
 ## Roles disponibles
 
 Existen dos roles involucrados:
-1. El __vendedor__ o __collector__, quien es dueño de la suscripción y acreedor de los importes que se debiten.
+1. El **vendedor** o **collector**, quien es dueño del plan de suscripción y acreedor de los importes que se debiten.
 1. El __pagador__ o __payer__, quien abonará los importes de forma automática desde el medio de pago que haya elegido.
 
 > NOTE
@@ -25,8 +25,23 @@ Para poder integrar suscripciones, es necesario que conozcas cuatro conceptos cl
 | Suscripción o preapproval | Autorización del pagador para cobros recurrentes con un medio de pago definido que va ser la base para crear cuotas según la recurrencia que se defina. Tiene características similares al template, ya que puede crearse una suscripción a partir de un plan. |
 | Pago autorizado o authorized payment | Es la cuota de una suscripción que se genera y se cobra en base a la recurrencia definida. El motor de suscripciones calendariza y genera los pagos de forma automática. |
 | Cobro de verificación | Se trata de un cobro mínimo, que se realiza en el momento de la adhesión del pagador solo para verificar que la tarjeta utilizada para pagar la suscripción es válida. Enseguida, este monto se reembolsa al pagador. |
-| Fecha de facturación | Es la fecha que el vendedor puede establecer para recibir los cobros de una suscripción con una frecuencia de pago mensual. |
+| Fecha de facturación | Es la fecha que el vendedor puede definir para efectuar los cobros de una suscripción con frecuencia de pago mensual. |
+| Monto proporcional (prorrateo) | Es el importe que se cobra al suscriptor si inicia la suscripción en un día distinto a la fecha de facturación establecida por el vendedor. Este monto es proporcional a los días transcurridos entre la adhesión y la fecha del primer cobro mensual. |
+| Prueba gratis | Es un periodo gratuito que el vendedor puede ofrecer al suscriptor antes del primer cobro. En este caso, el suscriptor queda exento del primer pago y empieza a pagar en los cobros siguientes. |
 
+
+### Fecha de facturación y monto proporcional
+
+El siguiente gráfico muestra cómo actúa la fecha de facturación y el eventual cobro del monto proporcional (prorrateo) al suscriptor.
+
+![Basic-subscriptions](/images/subscriptions/linea-cobro-ES.png)
+
+
+### Fecha de facturación y monto proporcional (con prueba gratis)
+
+Si estableces una fecha de facturación para una suscripción que también tiene un periodo de prueba gratuito establecido, el monto proporcional solo se cobrará al suscriptor un mes después de su adhesión, como se muestra en el siguiente gráfico.
+
+![Basic-subscriptions](/images/subscriptions/linea-cobro-trial-ES.png)
 
 ------------
 ### Próximos pasos
