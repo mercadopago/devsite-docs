@@ -272,7 +272,7 @@ preference_data = {
 > 
 > Você pode encontrar a lista de categorias do seu `item` [aqui](https://api.mercadopago.com/item_categories). Se não conseguir acessar os valores de categoria, envie o valor `others` no atributo `category_id`.
 
-## Redirecione o comprador para o seu _site_
+## Redirecione o comprador para o seu site
 
 No final do processo de pagamento, você tem a opção de redirecionar o comprador para o seu _site_ novamente. 
 
