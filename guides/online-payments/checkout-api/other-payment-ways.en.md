@@ -53,7 +53,8 @@ var payment_methods = response.body;
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+new PaymentMethod();
+MPResourceArray methods = PaymentMethod.all();
 
 ```
 ```ruby
@@ -564,7 +565,8 @@ var payment_methods = response.body;
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+new PaymentMethod();
+MPResourceArray methods = PaymentMethod.all();
 
 ```
 ```ruby
@@ -1085,7 +1087,8 @@ var payment_methods = response.body;
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+new PaymentMethod();
+MPResourceArray methods = PaymentMethod.all();
 
 ```
 ```ruby
@@ -1545,7 +1548,8 @@ var payment_methods = response.body;
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+new PaymentMethod();
+MPResourceArray methods = PaymentMethod.all();
 
 ```
 ```ruby
@@ -2268,7 +2272,8 @@ var payment_methods = response.body;
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+new PaymentMethod();
+MPResourceArray methods = PaymentMethod.all();
 
 ```
 ```ruby
@@ -2926,7 +2931,8 @@ var payment_methods = response.body;
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+new PaymentMethod();
+MPResourceArray methods = PaymentMethod.all();
 
 ```
 ```ruby
@@ -3371,7 +3377,8 @@ var payment_methods = response.body;
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+new PaymentMethod();
+MPResourceArray methods = PaymentMethod.all();
 
 ```
 ```ruby
