@@ -51,6 +51,23 @@ Lançamos a nova versão 3.11.1 para Magento 2.
 
 > CHANGELOG
 >
+> Nova versão SDK PHP
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK PHP
+Lançamos a nova versão 1.12.2 e 2.4.3 do SDK PHP.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-php/releases).
+
+### 29 de setembro
+
+> CHANGELOG
+>
 > Nova versão Magento 2
 >
 > NEW_VERSION: NOVA VERSÃO
@@ -66,23 +83,6 @@ Lançamos a nova versão 3.11.0 para Magento 2.
 > GitHub
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.11.0).
-
-### 29 de setembro
-
-> CHANGELOG
->
-> Nova versão SDK PHP
->
-> NEW_VERSION: NOVA VERSÃO
->
-> PRODUCT: SDK PHP
-Lançamos a nova versão 1.12.2 e 2.4.3 do SDK PHP.
-
-> GIT
->
-> GitHub
->
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-php/releases).
 
 ### 23 de setembro
 

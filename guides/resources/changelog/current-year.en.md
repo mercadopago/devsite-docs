@@ -74,6 +74,7 @@ We have released a new version of SDK PHP 1.12.2 and 2.4.3.
 > PRODUCT: MAGENTO 2
 
 We have released the new version 3.11.0 for Magento 2.
+
 [Go to Magento 2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/official/magento-two)
 
 > GIT
