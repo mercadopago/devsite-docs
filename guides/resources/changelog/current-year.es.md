@@ -4,7 +4,6 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ---
 
-## Octubre 2021
 
 ### 1 de octubre
 

@@ -4,7 +4,6 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
-## Outubro 2021
 
 ### 1 de outubro
 
