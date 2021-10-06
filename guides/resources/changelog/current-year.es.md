@@ -26,6 +26,23 @@ A partir de esta versión, ya no admitiremos las versiones 7 o inferiores de Jav
 
 ## Septiembre 2021
 
+### 30 de septiembre
+
+> CHANGELOG
+>
+> Nueva versión SDK PHP
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK PHP
+Lanzamos una nueva versión de la SDK PHP 1.12.2 y 2.4.3.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-php/releases).
+
 ### 23 de septiembre
 
 > CHANGELOG

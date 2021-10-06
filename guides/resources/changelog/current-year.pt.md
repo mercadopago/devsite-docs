@@ -26,6 +26,23 @@ A partir deste lançamento, não ofereceremos mais suporte para as versões 7 ou
 
 ## Setembro 2021
 
+### 30 de septiembre
+
+> CHANGELOG
+>
+> Nova versão SDK PHP
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK PHP
+Lançamos a nova versão 1.12.2 e 2.4.3 do SDK PHP.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-php/releases).
+
 ### 23 de setembro
 
 > CHANGELOG
