@@ -6,7 +6,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Octubre 2021
 
-### 01 de Octubre
+### 1 de octubre
 
 > CHANGELOG
 >
