@@ -99,7 +99,7 @@ curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPRO
 
 Para assinaturas com frequência de pagamento mensal, você pode escolher um dia fixo do mês para que sejam feitas as cobranças. Se você não configurar um dia específico, as cobranças serão feitas no mesmo dia do mês em que o assinante aderiu à assinatura. 
 
-Quando uma data de cobrança é definida, você pode escolher se será cobrado ou não um __valor proporcional (pró-rata)__ aos clientes que aderirem à assinatura em datas diferentes da que você escolheu.
+Quando uma data de cobrança é definida, você pode escolher se será cobrado ou não um **valor proporcional (pró-rata)** aos clientes que aderirem à assinatura em datas diferentes da que você escolheu.
 
 > NOTE
 > 
