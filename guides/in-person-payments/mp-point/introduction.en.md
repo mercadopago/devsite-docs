@@ -29,7 +29,7 @@ To be able to charge, it is necessary that you acquire the Mercado Pago Point de
 
 Also, you must download the App from the store of your mobile phone:
 
-> [<img src="/mobile/GooglePlayBadge.en.png" alt="Android Play Store" width="200"/>](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419) [<img src="/mobile/AppStoreBadge.en.svg" alt="iOS App Store" width="158" style="margin:0.8em"/>](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8)
+> [<img src="/mobile/GooglePlayBadge-EN.png" alt="Android Play Store" width="200"/>](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419) [<img src="/mobile/AppStoreBadge-EN.svg" alt="iOS App Store" width="158" style="margin:0.8em"/>](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8)
 
 
 There are different ways that you can charge through Mercado Pago Point:
