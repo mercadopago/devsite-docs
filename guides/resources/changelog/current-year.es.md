@@ -3,7 +3,86 @@
 Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones de Mercado Pago.
 
 ---
+## Octubre 2021
+
+### 4 de octubre
+
+> CHANGELOG
+>
+> Nueva versión SDK Java
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK JAVA
+Hemos lanzado una nueva versión de SDK Java 1.11.0.
+
+A partir de esta versión, ya no admitiremos las versiones 7 o inferiores de Java.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-java/releases).
+
+### 1 de octubre
+
+> CHANGELOG
+>
+> Nueva versión Magento 2
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: MAGENTO 2
+
+Lanzamos la nueva versión 3.11.1 para Magento 2.
+
+[Ir a documentación de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-magento2/releases/tag/v3.11.1).
+
+
 ## Septiembre 2021
+
+### 30 de septiembre
+
+> CHANGELOG
+>
+> Nueva versión SDK PHP
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK PHP
+Lanzamos una nueva versión de la SDK PHP 1.12.2 y 2.4.3.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-php/releases).
+
+### 29 de Septiembre
+
+> CHANGELOG
+>
+> Nueva versión Magento 2
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: MAGENTO 2
+
+Lanzamos la nueva versión 3.11.0 para Magento 2.
+
+[Ir a documentación de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-magento2/releases/tag/v3.11.0).
 
 ### 23 de septiembre
 

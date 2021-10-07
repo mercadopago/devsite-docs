@@ -14,7 +14,7 @@ Sigue este paso a paso para realizar el cambio:
 2. En la columna del lado izquierdo, haz clic en **WooCommerce > Ajustes.**
 3. En **Pagos**, busca el pago que elegiste en el paso **Configuración de la integración**, y haz clic en **Gestionar**.
 4. En **¿Como quieres operar los checkouts de tu tienda?**, selecciona la opción **Activar Modo Producción para checkouts Mercado Pago**. 
-5. Haz clic en _Salvar alterações_.
+5. Haz clic en **Guardar cambios**.
 
 ¡Listo! tu tienda está en producción y habilitada para processar tus ventas.
 

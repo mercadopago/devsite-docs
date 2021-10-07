@@ -4,7 +4,7 @@ To use the Mercado Pago integration with WooCommerce in your WordPress, you must
 
 | Requirements | Description | Specifications |
 |---|---|---|
-| Mercado Pago Seller account | To make sales, you need a seller account in Mercado Pago. If you don't have one, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) to create. | Seller account on Mercado Pago|
+| Mercado Pago Seller account | To make sales, you need a seller account in Mercado Pago. If you don't have one, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) to create. | Seller account in Mercado Pago|
 | WordPress | Online tool for stores, websites, and blog creation. [Click here](https://br.wordpress.org/about/) for more information. | Installation version required 4.9.10 or higher. Tested up to 5.8.x |
 | WooCommerce | WordPress Plugin that allows the creation of virtual stores from open source. [Click here](https://woocommerce.com/woocommerce-features/) for more information. | Required 3.x or higher. Tested up to 5.6.x |
 | Environment | Hosting service. | MySQL, PHP, or equivalent service that supports WordPress installation. |
@@ -21,7 +21,7 @@ If all prerequisites are met, you can install the plugin.
 
 > LEFT_BUTTON_REQUIRED_EN
 >
-> Plugin installation
+> Plugin installation.
 >
 > Follow the steps below to install the Mercado Pago plugin with WooCommerce.
 >

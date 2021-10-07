@@ -9,7 +9,7 @@
 Para começar, siga os passos abaixo:
 
 1. Crie ou configure sua aplicação.
-2. Vincule sua aplicação à conta dos seus vendedores.
+2. Vincule sua aplicação à conta de seus vendedores.
 3. Crie as credenciais para operar.
 4. Renove as credenciais.
 5. Integre a API para receber pagamentos.
@@ -162,7 +162,7 @@ Para desvincular o token associado à sua conta, você deve fazer isso no [porta
 
 
 
-## 3. Integre a API para receber pagamentos
+## Integre a API para receber pagamentos
 
 Para receber pagamentos em nome de seus vendedores, você deve integrar a [API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction), gerando os pagamentos com o Access Token que você obteve vinculando cada vendedor ao seu aplicativo.
 

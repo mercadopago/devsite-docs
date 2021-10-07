@@ -16,7 +16,7 @@ Both for frontend and backend, we recommend [our libraries](https://www.mercadop
 
 ## Check the available payment methods
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Methods
+### Payment Methods
 
 In addition to cards, you can offer other payment choices on your website.
 
@@ -28,7 +28,7 @@ In addition to cards, you can offer other payment choices on your website.
 | `ticket` | Cobro Express |
 | `atm` | Red Link |
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain the available payment methods
+### Obtain the available payment methods
 
 You can check the available payment methods whenever you need.
 
@@ -53,7 +53,8 @@ var payment_methods = response.body;
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+new PaymentMethod();
+MPResourceArray methods = PaymentMethod.all();
 
 ```
 ```ruby
@@ -96,7 +97,7 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method.
 
-Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_payment_methods).
+Keep in mind that the answer will return all the payment methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_payment_methods).
 
 ```json
 [
@@ -139,7 +140,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 >
 > Data capture for payment
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
+### 1. Use MercadoPago.js library
 
 **Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
 
@@ -149,7 +150,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 > This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/other-payment-ways).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
+### 2. Add payment form
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
@@ -165,7 +166,7 @@ Add the following form with the styles you want.
         <option>Select a payment form</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Buyer Details</h3>
@@ -204,7 +205,7 @@ Add the following form with the styles you want.
 </form>
 ```
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure your public key
+### 3. Configure your public key
 
 Add your [public key]([FAKER][CREDENTIALS][URL]) like this:
 
@@ -214,11 +215,11 @@ const mp = new MercadoPago("YOUR_PUBLIC_KEY");
 
 >  If you still don't have an account to check your credentials, [sign in](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Get data for your form
+### 4. Get data for your form
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get document types
+#### Get document types
 
-Document type is one of the mandatory fields. Use the document list to fill out your data.
+**Document type** is one of the mandatory fields. Use the document list to fill out your data.
 
 When you call the next function, MercadoPago.js will automatically fill out the available options, including the _select_ type element with `id = docType` in the form:
 
@@ -526,19 +527,20 @@ Both for frontend and backend, we recommend [our libraries](https://www.mercadop
 
 ## Check the available payment methods
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Methods
+### Payment Methods
 
 In addition to cards, you can offer other payment choices on your website.
 
 | Type of payment method | Payment method |
 | --- | --- |
 | `ticket` | OXXO |
+| `ticket` | PayCash |
 | `atm` | Citibanamex |
 | `atm` | Santander |
 | `atm` | BBVA Bancomer |
 | `prepaid_card` | Mercado Pago Card |
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain the available payment methods
+### Obtain the available payment methods
 
 You can check the available payment methods whenever you need.
 
@@ -563,7 +565,8 @@ var payment_methods = response.body;
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+new PaymentMethod();
+MPResourceArray methods = PaymentMethod.all();
 
 ```
 ```ruby
@@ -611,114 +614,136 @@ Keep in mind that the answer will return all the payments methods. For this reas
 ```json
 [
   {
-        "id": "oxxo",
-        "name": "OXXO",
-        "payment_type_id": "ticket",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/oxxo.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/oxxo.gif",
-        "deferred_capture": "does_not_apply",
-        "settings": [],
-        "additional_info_needed": [],
-        "min_allowed_amount": 5,
-        "max_allowed_amount": 10000,
-        "accreditation_time": 2880,
-        "financial_institutions": [],
-        "processing_modes": [
-            "aggregator"
-        ]
-    },
-{
-        "id": "banamex",
-        "name": "Citibanamex",
-        "payment_type_id": "atm",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/banamex.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/banamex.gif",
-        "deferred_capture": "does_not_apply",
-        "settings": [],
-        "additional_info_needed": [],
-        "min_allowed_amount": 5,
-        "max_allowed_amount": 40000,
-        "accreditation_time": 60,
-        "financial_institutions": [],
-        "processing_modes": [
-            "aggregator"
-        ]
-    },
-{
-        "id": "serfin",
-        "name": "Santander",
-        "payment_type_id": "atm",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/serfin.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/serfin.gif",
-        "deferred_capture": "does_not_apply",
-        "settings": [],
-        "additional_info_needed": [],
-        "min_allowed_amount": 5,
-        "max_allowed_amount": 40000,
-        "accreditation_time": 60,
-        "financial_institutions": [],
-        "processing_modes": [
-            "aggregator"
-        ]
-    },
- {
-        "id": "bancomer",
-        "name": "BBVA Bancomer",
-        "payment_type_id": "atm",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/bancomer.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/bancomer.gif",
-        "deferred_capture": "does_not_apply",
-        "settings": [],
-        "additional_info_needed": [],
-        "min_allowed_amount": 10,
-        "max_allowed_amount": 40000,
-        "accreditation_time": 60,
-        "financial_institutions": [],
-        "processing_modes": [
-            "aggregator"
-        ]
-    },
-{
-        "id": "mercadopagocard",
-        "name": "Tarjeta MercadoPago",
-        "payment_type_id": "prepaid_card",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/mercadopagocard.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/mercadopagocard.gif",
-        "deferred_capture": "supported",
-        "settings": [
-            {
-                "card_number": {
-                    "validation": "standard",
-                    "length": 16
-                },
-                "bin": {
-                    "pattern": "^539978",
-                    "installments_pattern": "^539978",
-                    "exclusion_pattern": null
-                },
-                "security_code": {
-                    "length": 3,
-                    "card_location": "back",
-                    "mode": "mandatory"
-                }
-            }
-        ],
-        "additional_info_needed": [
-            "cardholder_name"
-        ],
-        "min_allowed_amount": 5,
-        "max_allowed_amount": 300000,
-        "accreditation_time": 1440,
-        "financial_institutions": [],
-        "processing_modes": [
-            "aggregator"
-        ]
-    },
+    "id": "oxxo",
+    "name": "OXXO",
+    "payment_type_id": "ticket",
+    "status": "active",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/oxxo.gif",
+    "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/oxxo.gif",
+    "deferred_capture": "does_not_apply",
+    "settings": [],
+    "additional_info_needed": [],
+    "min_allowed_amount": 5,
+    "max_allowed_amount": 10000,
+    "accreditation_time": 2880,
+    "financial_institutions": [],
+    "processing_modes": [
+      "aggregator"
+    ]
+  },
+  {
+    "id": "paycash",
+    "name": "PayCash",
+    "payment_type_id": "ticket",
+    "status": "active",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/paycash.gif",
+    "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/paycash.gif",
+    "deferred_capture": "unsupported",
+    "settings": [],
+    "additional_info_needed": [
+      "identification_type",
+      "identification_number",
+      "entity_type"
+    ],
+    "min_allowed_amount": 20,
+    "max_allowed_amount": 60000,
+    "accreditation_time": 0,
+    "financial_institutions": [],
+    "processing_modes": [
+      "aggregator"
+    ]
+  },
+  {
+    "id": "banamex",
+    "name": "Citibanamex",
+    "payment_type_id": "atm",
+    "status": "active",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/banamex.gif",
+    "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/banamex.gif",
+    "deferred_capture": "does_not_apply",
+    "settings": [],
+    "additional_info_needed": [],
+    "min_allowed_amount": 5,
+    "max_allowed_amount": 40000,
+    "accreditation_time": 60,
+    "financial_institutions": [],
+    "processing_modes": [
+      "aggregator"
+    ]
+  },
+  {
+    "id": "serfin",
+    "name": "Santander",
+    "payment_type_id": "atm",
+    "status": "active",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/serfin.gif",
+    "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/serfin.gif",
+    "deferred_capture": "does_not_apply",
+    "settings": [],
+    "additional_info_needed": [],
+    "min_allowed_amount": 5,
+    "max_allowed_amount": 40000,
+    "accreditation_time": 60,
+    "financial_institutions": [],
+    "processing_modes": [
+      "aggregator"
+    ]
+  },
+  {
+    "id": "bancomer",
+    "name": "BBVA Bancomer",
+    "payment_type_id": "atm",
+    "status": "active",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/bancomer.gif",
+    "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/bancomer.gif",
+    "deferred_capture": "does_not_apply",
+    "settings": [],
+    "additional_info_needed": [],
+    "min_allowed_amount": 10,
+    "max_allowed_amount": 40000,
+    "accreditation_time": 60,
+    "financial_institutions": [],
+    "processing_modes": [
+      "aggregator"
+    ]
+  },
+  {
+    "id": "mercadopagocard",
+    "name": "Tarjeta MercadoPago",
+    "payment_type_id": "prepaid_card",
+    "status": "active",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/mercadopagocard.gif",
+    "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/mercadopagocard.gif",
+    "deferred_capture": "supported",
+    "settings": [
+      {
+        "card_number": {
+          "validation": "standard",
+          "length": 16
+        },
+        "bin": {
+          "pattern": "^539978",
+          "installments_pattern": "^539978",
+          "exclusion_pattern": null
+        },
+        "security_code": {
+          "length": 3,
+          "card_location": "back",
+          "mode": "mandatory"
+        }
+      }
+    ],
+    "additional_info_needed": [
+      "cardholder_name"
+    ],
+    "min_allowed_amount": 5,
+    "max_allowed_amount": 300000,
+    "accreditation_time": 1440,
+    "financial_institutions": [],
+    "processing_modes": [
+      "aggregator"
+    ]
+  },
 ]
 ```
 
@@ -733,7 +758,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 >
 > Data capture for payment
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
+### 1. Use MercadoPago.js library
 
 **Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
 
@@ -743,7 +768,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 > This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/other-payment-ways).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
+### 2. Add payment form
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
@@ -759,7 +784,7 @@ Add the following form with the styles you want.
         <option>Select a payment form</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Buyer Details</h3>
@@ -798,7 +823,7 @@ Add the following form with the styles you want.
 </form>
 ```
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure your public key
+### 3. Configure your public key
 
 Add your [public key]([FAKER][CREDENTIALS][URL]) like this:
 
@@ -1000,8 +1025,12 @@ Finally, you should share information about the different places where your cust
 | Payment method | Available stores |
 | --- | --- |
 | OXXO | OXXO
-| BBVA Bancomer | 7-Eleven |
-| BBVA Bancomer | K |
+| PayCash | 7-Eleven |
+| PayCash | Circle K |
+| PayCash | Soriana |
+| PayCash | Extra |
+| PayCash | Calimax |
+| PayCash | Santander |
 | BBVA Bancomer | Farmacias del Ahorro |
 | BBVA Bancomer | Casa Ley |
 | BBVA Bancomer | BBVA Bancomer |
@@ -1024,7 +1053,7 @@ Both for frontend and backend, we recommend [our libraries](https://www.mercadop
 
 ## Check the available payment methods
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Methods
+### Payment Methods
 
 In addition to cards, you can offer other payment choices on your website.
 
@@ -1033,7 +1062,7 @@ In addition to cards, you can offer other payment choices on your website.
 | `ticket` | Abitab |
 | `ticket` | Redpagos |
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain the available payment methods
+### Obtain the available payment methods
 
 You can check the available payment methods whenever you need.
 
@@ -1058,7 +1087,8 @@ var payment_methods = response.body;
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+new PaymentMethod();
+MPResourceArray methods = PaymentMethod.all();
 
 ```
 ```ruby
@@ -1160,7 +1190,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 >
 > Data capture for payment
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
+### 1. Use MercadoPago.js library
 
 **Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
 
@@ -1170,7 +1200,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 > This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/other-payment-ways).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
+### 2. Add payment form
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
@@ -1186,7 +1216,7 @@ Add the following form with the styles you want.
         <option>Select a payment form</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Buyer Details</h3>
@@ -1225,7 +1255,7 @@ Add the following form with the styles you want.
 </form>
 ```
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure your public key
+### 3. Configure your public key
 
 Add your [public key]([FAKER][CREDENTIALS][URL]) like this:
 
@@ -1235,9 +1265,9 @@ const mp = new MercadoPago("YOUR_PUBLIC_KEY");
 
 >  If you still don't have an account to check your credentials, [sign in](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Get data for your form
+### 4. Get data for your form
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get document types
+#### Get document types
 
 Document type is one of the mandatory fields. Use the document list to fill out your data.
 
@@ -1482,7 +1512,7 @@ Both for frontend and backend, we recommend [our libraries](https://www.mercadop
 
 ## Check the available payment methods
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Methods
+### Payment Methods
 
 In addition to cards, you can offer other payment choices on your website.
 
@@ -1493,7 +1523,7 @@ In addition to cards, you can offer other payment choices on your website.
 | `bank_transfer` | PSE |
 
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain the available payment methods
+### Obtain the available payment methods
 
 You can check the available payment methods whenever you need.
 
@@ -1518,7 +1548,8 @@ var payment_methods = response.body;
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+new PaymentMethod();
+MPResourceArray methods = PaymentMethod.all();
 
 ```
 ```ruby
@@ -1637,7 +1668,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 >
 > Data capture for payment
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
+### 1. Use MercadoPago.js library
 
 **Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
 
@@ -1647,7 +1678,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 > This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/other-payment-ways).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
+### 2. Add payment form
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
@@ -1663,7 +1694,7 @@ Add the following form with the styles you want.
         <option>Select a payment form</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Buyer Details</h3>
@@ -1702,7 +1733,7 @@ Add the following form with the styles you want.
 </form>
 ```
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure your public key
+### 3. Configure your public key
 
 Add your [public key]([FAKER][CREDENTIALS][URL]) like this:
 
@@ -1712,9 +1743,9 @@ const mp = new MercadoPago("YOUR_PUBLIC_KEY");
 
 >  If you still don't have an account to check your credentials, [sign in](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Get data for your form
+### 4. Get data for your form
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get document types
+#### Get document types
 
 Document type is one of the mandatory fields. Use the document list to fill out your data.
 
@@ -2206,7 +2237,7 @@ Both for frontend and backend, we recommend [our libraries](https://www.mercadop
 
 ## Check the available payment methods
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Methods
+### Payment Methods
 
 In addition to cards, you can offer other payment choices on your website.
 
@@ -2216,7 +2247,7 @@ In addition to cards, you can offer other payment choices on your website.
 | `bank_transfer` | Redcompra Webpay |
 
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain the available payment methods
+### Obtain the available payment methods
 
 You can check the available payment methods whenever you need.
 
@@ -2241,7 +2272,8 @@ var payment_methods = response.body;
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+new PaymentMethod();
+MPResourceArray methods = PaymentMethod.all();
 
 ```
 ```ruby
@@ -2345,7 +2377,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 >
 > Data capture for payment
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
+### 1. Use MercadoPago.js library
 
 **Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
 
@@ -2355,7 +2387,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 > This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/other-payment-ways).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
+### 2. Add payment form
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
@@ -2371,7 +2403,7 @@ Add the following form with the styles you want.
         <option>Select a payment form</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Buyer Details</h3>
@@ -2410,7 +2442,7 @@ Add the following form with the styles you want.
 </form>
 ```
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure your public key
+### 3. Configure your public key
 
 Add your [public key]([FAKER][CREDENTIALS][URL]) like this:
 
@@ -2420,9 +2452,9 @@ const mp = new MercadoPago("YOUR_PUBLIC_KEY");
 
 >  If you still don't have an account to check your credentials, [sign in](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Get data for your form
+### 4. Get data for your form
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get document types
+#### Get document types
 
 Document type is one of the mandatory fields. Use the document list to fill out your data.
 
@@ -2865,7 +2897,7 @@ Both for frontend and backend, we recommend [our libraries](https://www.mercadop
 
 ## Check the available payment methods
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Methods
+### Payment Methods
 
 In addition to cards, you can offer other payment choices on your website.
 
@@ -2874,7 +2906,7 @@ In addition to cards, you can offer other payment choices on your website.
 | `atm` | PagoEfectivo |
 
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain the available payment methods
+### Obtain the available payment methods
 
 You can check the available payment methods whenever you need.
 
@@ -2899,7 +2931,8 @@ var payment_methods = response.body;
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+new PaymentMethod();
+MPResourceArray methods = PaymentMethod.all();
 
 ```
 ```ruby
@@ -2978,7 +3011,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 >
 > Data capture for payment
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
+### 1. Use MercadoPago.js library
 
 **Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
 
@@ -2988,7 +3021,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 > This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/other-payment-ways).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
+### 2. Add payment form
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
@@ -3004,7 +3037,7 @@ Add the following form with the styles you want.
         <option>Select a payment form</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Buyer Details</h3>
@@ -3043,7 +3076,7 @@ Add the following form with the styles you want.
 </form>
 ```
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure your public key
+### 3. Configure your public key
 
 Add your [public key]([FAKER][CREDENTIALS][URL]) like this:
 
@@ -3053,9 +3086,9 @@ const mp = new MercadoPago("YOUR_PUBLIC_KEY");
 
 >  If you still don't have an account to check your credentials, [sign in](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Get data for your form
+### 4. Get data for your form
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get document types
+#### Get document types
 
 Document type is one of the mandatory fields. Use the document list to fill out your data.
 
@@ -3309,7 +3342,7 @@ Both for frontend and backend, we recommend [our libraries](https://www.mercadop
 
 ## Check the available payment methods
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Payment Methods
+### Payment Methods
 
 In addition to cards, you can offer other payment choices on your website.
 
@@ -3319,7 +3352,7 @@ In addition to cards, you can offer other payment choices on your website.
 | `ticket` | Pagamento em lotérica |
 | `bank_transfer` | Pix |
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain the available payment methods
+### Obtain the available payment methods
 
 You can check the available payment methods whenever you need.
 
@@ -3344,7 +3377,8 @@ var payment_methods = response.body;
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+new PaymentMethod();
+MPResourceArray methods = PaymentMethod.all();
 
 ```
 ```ruby
@@ -3440,7 +3474,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 >
 > Data capture for payment
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
+### 1. Use MercadoPago.js library
 
 **Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
 
@@ -3450,7 +3484,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 > This documentation uses the new MercadoPago.js V2 version. To see the previous version, go to the [old Checkout API section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/other-payment-ways).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Add payment form
+### 2. Add payment form
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
@@ -3466,7 +3500,7 @@ Add the following form with the styles you want.
         <option>Select a payment form</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Buyer Details</h3>
@@ -3505,7 +3539,7 @@ Add the following form with the styles you want.
 </form>
 ```
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure your public key
+### 3. Configure your public key
 
 Add your [public key]([FAKER][CREDENTIALS][URL]) like this:
 
@@ -3515,9 +3549,9 @@ const mp = new MercadoPago("YOUR_PUBLIC_KEY");
 
 >  If you still don't have an account to check your credentials, [sign in](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Get data for your form
+### 4. Get data for your form
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get document types
+#### Get document types
 
 Document type is one of the mandatory fields. Use the document list to fill out your data.
 
@@ -3839,7 +3873,7 @@ You can receive payment immediately with Pix from any bank or digital wallet usi
 
 ### Prerequisite
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get a Pix key
+#### Get a Pix key
 
 To start, you will need a Pix key registered in the seller's account. This is unique data for account identification to use the payment method functionality.
 
@@ -4139,7 +4173,7 @@ To show the payment code for copy and paste, you can add `qr_code` like this:
 
 ## Payments date of expiration
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boleto payments
+### Boleto payments
 
 The default expiration date for boleto payments is 3 days. If you want, you can change this date by sending the `date_of_expiration` field in the payment creation request. The configured date must be between 1 and 30 days from the issue date.
 
@@ -4197,7 +4231,7 @@ The deadline for approval of the boleto is up to 48 working hours. Therefore, we
 >
 > If the boleto is paid after the expiration date, the amount will be refunded to the payer's Mercado Pago account.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pix payments
+### Pix payments
 
 By default, Pix payments expire in 24 hours. You can change this field `date_of_expiration` when creating the payment. The set date should be between 30 minutes and up to 30 days from issue date.
 

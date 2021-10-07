@@ -5,11 +5,11 @@ Find out what you need to know to integrate our Checkout API.
 ## Have your credentials handy
 Your credentials are the **keys we provide you to configure your integrations**. In this case, you will use a public and a private key.
 
-* The Public Key grants access to the resources that your frontend needs. It allows you to collect credit card data and turn it into a representative token that you can send to your servers securely to create a payment.
+* The **Public Key** grants access to the resources that your frontend needs. It allows you to collect credit card data and turn it into a representative token that you can send to your servers securely to create a payment.
 
-* The private key, or Access Token, will allow you to call the rest of the APIs from your servers. For example, to process a payment, make a refund, or save cards.
+* The **Private Key**, or Access Token, will allow you to call the rest of the APIs from your servers. For example, to process a payment, make a refund, or save cards.
 
-To find them, go to the [Credentials section]([FAKER][CREDENTIALS][URL]).
+Check the [Credentials]([FAKER][CREDENTIALS][URL]) section to learn how to obtain these informations.
 
 > Do you have any questions about credentials? Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) for more information.
 

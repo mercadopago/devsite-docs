@@ -57,7 +57,8 @@ var payment_methods = response.body;
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+new PaymentMethod();
+MPResourceArray methods = PaymentMethod.all();
 
 ```
 ```ruby
@@ -169,7 +170,7 @@ Agrega el siguiente formulario con los estilos que desees.
         <option>Seleccione un medio de pago</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Detalles del comprador</h3>
@@ -536,6 +537,7 @@ Además de tarjetas, también existen otras opciones de pago que puedes ofrecer 
 | Tipo de medio de pago | Medio de pago |
 | --- | --- |
 | `ticket` | OXXO |
+| `ticket` | PayCash |
 | `atm` | Citibanamex |
 | `atm` | Santander |
 | `atm` | BBVA Bancomer |
@@ -566,7 +568,8 @@ var payment_methods = response.body;
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+new PaymentMethod();
+MPResourceArray methods = PaymentMethod.all();
 
 ```
 ```ruby
@@ -614,114 +617,136 @@ Ten en cuenta que la respuesta devolverá todos los medios de pago. Por eso, tie
 ```json
 [
   {
-        "id": "oxxo",
-        "name": "OXXO",
-        "payment_type_id": "ticket",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/oxxo.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/oxxo.gif",
-        "deferred_capture": "does_not_apply",
-        "settings": [],
-        "additional_info_needed": [],
-        "min_allowed_amount": 5,
-        "max_allowed_amount": 10000,
-        "accreditation_time": 2880,
-        "financial_institutions": [],
-        "processing_modes": [
-            "aggregator"
-        ]
-    },
-{
-        "id": "banamex",
-        "name": "Citibanamex",
-        "payment_type_id": "atm",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/banamex.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/banamex.gif",
-        "deferred_capture": "does_not_apply",
-        "settings": [],
-        "additional_info_needed": [],
-        "min_allowed_amount": 5,
-        "max_allowed_amount": 40000,
-        "accreditation_time": 60,
-        "financial_institutions": [],
-        "processing_modes": [
-            "aggregator"
-        ]
-    },
-{
-        "id": "serfin",
-        "name": "Santander",
-        "payment_type_id": "atm",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/serfin.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/serfin.gif",
-        "deferred_capture": "does_not_apply",
-        "settings": [],
-        "additional_info_needed": [],
-        "min_allowed_amount": 5,
-        "max_allowed_amount": 40000,
-        "accreditation_time": 60,
-        "financial_institutions": [],
-        "processing_modes": [
-            "aggregator"
-        ]
-    },
- {
-        "id": "bancomer",
-        "name": "BBVA Bancomer",
-        "payment_type_id": "atm",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/bancomer.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/bancomer.gif",
-        "deferred_capture": "does_not_apply",
-        "settings": [],
-        "additional_info_needed": [],
-        "min_allowed_amount": 10,
-        "max_allowed_amount": 40000,
-        "accreditation_time": 60,
-        "financial_institutions": [],
-        "processing_modes": [
-            "aggregator"
-        ]
-    },
-{
-        "id": "mercadopagocard",
-        "name": "Tarjeta MercadoPago",
-        "payment_type_id": "prepaid_card",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/mercadopagocard.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/mercadopagocard.gif",
-        "deferred_capture": "supported",
-        "settings": [
-            {
-                "card_number": {
-                    "validation": "standard",
-                    "length": 16
-                },
-                "bin": {
-                    "pattern": "^539978",
-                    "installments_pattern": "^539978",
-                    "exclusion_pattern": null
-                },
-                "security_code": {
-                    "length": 3,
-                    "card_location": "back",
-                    "mode": "mandatory"
-                }
-            }
-        ],
-        "additional_info_needed": [
-            "cardholder_name"
-        ],
-        "min_allowed_amount": 5,
-        "max_allowed_amount": 300000,
-        "accreditation_time": 1440,
-        "financial_institutions": [],
-        "processing_modes": [
-            "aggregator"
-        ]
-    },
+    "id": "oxxo",
+    "name": "OXXO",
+    "payment_type_id": "ticket",
+    "status": "active",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/oxxo.gif",
+    "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/oxxo.gif",
+    "deferred_capture": "does_not_apply",
+    "settings": [],
+    "additional_info_needed": [],
+    "min_allowed_amount": 5,
+    "max_allowed_amount": 10000,
+    "accreditation_time": 2880,
+    "financial_institutions": [],
+    "processing_modes": [
+      "aggregator"
+    ]
+  },
+  {
+    "id": "paycash",
+    "name": "PayCash",
+    "payment_type_id": "ticket",
+    "status": "active",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/paycash.gif",
+    "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/paycash.gif",
+    "deferred_capture": "unsupported",
+    "settings": [],
+    "additional_info_needed": [
+      "identification_type",
+      "identification_number",
+      "entity_type"
+    ],
+    "min_allowed_amount": 20,
+    "max_allowed_amount": 60000,
+    "accreditation_time": 0,
+    "financial_institutions": [],
+    "processing_modes": [
+      "aggregator"
+    ]
+  },
+  {
+    "id": "banamex",
+    "name": "Citibanamex",
+    "payment_type_id": "atm",
+    "status": "active",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/banamex.gif",
+    "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/banamex.gif",
+    "deferred_capture": "does_not_apply",
+    "settings": [],
+    "additional_info_needed": [],
+    "min_allowed_amount": 5,
+    "max_allowed_amount": 40000,
+    "accreditation_time": 60,
+    "financial_institutions": [],
+    "processing_modes": [
+      "aggregator"
+    ]
+  },
+  {
+    "id": "serfin",
+    "name": "Santander",
+    "payment_type_id": "atm",
+    "status": "active",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/serfin.gif",
+    "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/serfin.gif",
+    "deferred_capture": "does_not_apply",
+    "settings": [],
+    "additional_info_needed": [],
+    "min_allowed_amount": 5,
+    "max_allowed_amount": 40000,
+    "accreditation_time": 60,
+    "financial_institutions": [],
+    "processing_modes": [
+      "aggregator"
+    ]
+  },
+  {
+    "id": "bancomer",
+    "name": "BBVA Bancomer",
+    "payment_type_id": "atm",
+    "status": "active",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/bancomer.gif",
+    "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/bancomer.gif",
+    "deferred_capture": "does_not_apply",
+    "settings": [],
+    "additional_info_needed": [],
+    "min_allowed_amount": 10,
+    "max_allowed_amount": 40000,
+    "accreditation_time": 60,
+    "financial_institutions": [],
+    "processing_modes": [
+      "aggregator"
+    ]
+  },
+  {
+    "id": "mercadopagocard",
+    "name": "Tarjeta MercadoPago",
+    "payment_type_id": "prepaid_card",
+    "status": "active",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/mercadopagocard.gif",
+    "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/mercadopagocard.gif",
+    "deferred_capture": "supported",
+    "settings": [
+      {
+        "card_number": {
+          "validation": "standard",
+          "length": 16
+        },
+        "bin": {
+          "pattern": "^539978",
+          "installments_pattern": "^539978",
+          "exclusion_pattern": null
+        },
+        "security_code": {
+          "length": 3,
+          "card_location": "back",
+          "mode": "mandatory"
+        }
+      }
+    ],
+    "additional_info_needed": [
+      "cardholder_name"
+    ],
+    "min_allowed_amount": 5,
+    "max_allowed_amount": 300000,
+    "accreditation_time": 1440,
+    "financial_institutions": [],
+    "processing_modes": [
+      "aggregator"
+    ]
+  },
 ]
 ```
 
@@ -762,7 +787,7 @@ Agrega el siguiente formulario con los estilos que desees.
         <option>Seleccione un medio de pago</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Detalles del comprador</h3>
@@ -1004,8 +1029,12 @@ Al finalizar, es importante que compartas con tus clientes la información de lo
 | Medio de pago | Tiendas disponibles
 | --- | --- |
 | OXXO | OXXO
-| BBVA Bancomer | 7-Eleven |
-| BBVA Bancomer | K |
+| PayCash | 7-Eleven |
+| PayCash | Circle K |
+| PayCash | Soriana |
+| PayCash | Extra |
+| PayCash | Calimax |
+| PayCash | Santander |
 | BBVA Bancomer | Farmacias del Ahorro |
 | BBVA Bancomer | Casa Ley |
 | BBVA Bancomer | BBVA Bancomer |
@@ -1062,7 +1091,8 @@ var payment_methods = response.body;
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+new PaymentMethod();
+MPResourceArray methods = PaymentMethod.all();
 
 ```
 ```ruby
@@ -1190,7 +1220,7 @@ Agrega el siguiente formulario con los estilos que desees.
         <option>Seleccione un medio de pago</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Detalles del comprador</h3>
@@ -1522,7 +1552,8 @@ var payment_methods = response.body;
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+new PaymentMethod();
+MPResourceArray methods = PaymentMethod.all();
 
 ```
 ```ruby
@@ -1667,7 +1698,7 @@ Agrega el siguiente formulario con los estilos que desees.
         <option>Seleccione un medio de pago</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Detalles del comprador</h3>
@@ -2244,7 +2275,8 @@ var payment_methods = response.body;
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+new PaymentMethod();
+MPResourceArray methods = PaymentMethod.all();
 
 ```
 ```ruby
@@ -2374,7 +2406,7 @@ Agrega el siguiente formulario con los estilos que desees.
         <option>Seleccione un medio de pago</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Detalles del comprador</h3>
@@ -2901,7 +2933,8 @@ var payment_methods = response.body;
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+new PaymentMethod();
+MPResourceArray methods = PaymentMethod.all();
 
 ```
 ```ruby
@@ -3006,7 +3039,7 @@ Agrega el siguiente formulario con los estilos que desees.
         <option>Seleccione un medio de pago</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Detalles del comprador</h3>
@@ -3345,7 +3378,8 @@ var payment_methods = response.body;
 import com.mercadopago.*;
 MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
 
-payment_methods = MercadoPago.SDK.get("/v1/payment_methods");
+new PaymentMethod();
+MPResourceArray methods = PaymentMethod.all();
 
 ```
 ```ruby
@@ -3468,7 +3502,7 @@ Agrega el siguiente formulario con los estilos que desees.
         <option>Seleccione un medio de pago</option>
 
         <!-- Create an option for each payment method with their name and complete the ID in the attribute 'value'. -->
-        <option value="--PaymentTypeId--">--PaymentTypeName--</option>
+        <option value="--PaymentId--">--PaymentTypeName--</option>
       </select>
     </div>
     <h3>Detalles del comprador</h3>

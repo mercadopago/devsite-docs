@@ -179,7 +179,7 @@ Server response:
 >
 > Note
 >
-> All payment methods with `master` as the payment_method_id value, must send a `issuer_id` when created. `issuer_id` is the identifier of the issuing bank.
+> All payment methods with `master` as the payment_method_id value, must send an `issuer_id` when created. `issuer_id` is the identifier of the issuing bank.
 
 > WARNING 
 > 
@@ -489,9 +489,9 @@ Response:
 > 
 > If you receive an error message of type `"invalid parameter"` with HTTP 400 status code, make sure you are completing the fields `payment_method_id` and `issuer_id` correctly.
 
-## Search a Customer
+## Search for a Customer
 
-In case you do not know what the `id` of your `Customer` is, you can use the `Customer Search` API by doing a `HTTP GET` request. The required parameter for this is `email`:
+In case you do not know what the `id` of your `Customer` is, you can use the `Customer Search` API by doing an `HTTP GET` request. The required parameter for this is `email`:
 
 [[[
 ```php
@@ -606,7 +606,7 @@ Response:
 
 ## Get the Cards of a Customer
 
-You can get the complete list of `Cards` of a client by making a `HTTP GET` request:
+You can get the complete list of `Cards` of a client by making an `HTTP GET` request:
 
 [[[
 ```php
@@ -667,7 +667,7 @@ Response:
 
 ## Modify a customer
 
-To modify a client you need to send the `customer_id` and the fields you want to update in a `HTTP PUT` request. 
+To modify a client you need to send the `customer_id` and the fields you want to update in an `HTTP PUT` request. 
 
 The fields that can be modified from a client are:
 | Attribute | Description |

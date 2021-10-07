@@ -1,19 +1,20 @@
 # Integração avançada
 
+O Checkout Pro dispõe de funcionalidades extras que permitem otimizar sua integração e melhorar a gestão dos pagamentos de suas vendas.
+
 ## Receba notificações de pagamentos
 
- As notificações IPN (Instant Payment Notification) são a **forma automática de aviso da criação de novos pagamentos e as atualizações de seus status.** Por exemplo se foram aprovados, recusados ou se estão pendentes.
-Permitem que você administre seu estoque e mantenha seu sistema sincronizado.
+As notificações IPN (_Instant Payment Notification_) são notificações automáticas sobre a criação de novos pagamentos e atualizações de status, informando se as transações foram aprovadas, recusadas ou estão pendentes.
 
-[Receber notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn)
+Os avisos automáticos permitem que você administre seu estoque e mantenha seu sistema sincronizado com os fluxos de pagamento do seu negócio. Aprenda como receber as notificações IPN [aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn).
 
-## Informações adicionais para a preferência
+## Insira informações adicionais à preferência
 
-Melhore a aprovação dos pagamentos e a experiência dos seus compradores adicionando informações à sua preferência.
+Melhore a aprovação dos pagamentos e a experiência de compra no Checkout Pro adicionando informações às suas preferências que detalhem o item comprado e o usuário comprador.
 
-Recomendamos detalhar todas as informações possíveis sobre o item e o comprador.
+Em Preferências, você pode inserir as seguintes informações adicionais:
 
-### Dados do comprador
+### Dados pessoais do comprador
 
 [[[
 ```php
@@ -174,7 +175,7 @@ payer_data = {
 ```
 ]]]
 
-### Dados do item
+### Dados gerais do item
 
 [[[
 ```php
@@ -265,39 +266,49 @@ preference_data = {
 ```
 ]]]
 
-> Você pode encontrar a lista de categorias para o seu `item` no seguinte [link](https://api.mercadopago.com/item_categories). Se você não conseguir encontrar a categoria do seu produto, envie o valor `others` como `category_id`.
+> NOTE
+> 
+> Nota
+> 
+> Você pode encontrar a lista de categorias do seu `item` [aqui](https://api.mercadopago.com/item_categories). Se não conseguir acessar os valores de categoria, envie o valor `others` no atributo `category_id`.
 
+## Redirecione o comprador para o seu site
 
-## URL de retorno
+No final do processo de pagamento, você tem a opção de redirecionar o comprador para o seu _site_ novamente. 
 
-No final do processo de pagamento, você tem a opção de **redirecionar o comprador para o seu site.**
-Para isso, precisa adicionar o atributo `back_urls` e definir, segundo o status do pagamento, a onde quer que redirecionemos seu comprador quando ele clique no botão de voltar ao site.
+Para isso, adicione o atributo `back_urls` e defina, segundo o status do pagamento, a página desejada para redirecionar o seu comprador quando ele clicar no botão de retorno ao site.
 
-Se quer que o redirecionamento seja automático para os pagamentos aprovados, precisa adicionar também o atributo `auto_return` com valor `approved`. 
+Se deseja que o redirecionamento para os pagamentos aprovados seja automático, sem a renderização de um botão de retorno, é preciso adicionar também o atributo `auto_return` com valor `approved`. 
 
 > NOTE
 >
 > Nota
 >
-> Tenha em conta que o atributo `auto_return` só funciona para o modo 'redirect' e 'mobile'. Isso não funciona quando usa o [modo modal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/integration) já que o comprador está sempre no site.
+> Tenha em conta que o atributo `auto_return` só funciona para o modo `redirect` e `mobile` do Checkout Pro. O mesmo não funciona no [modo modal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/integration), já que nesse último o comprador segue no _site_ durante todo o processo de pagamento.
 
 ![autoreturn](/images/web-payment-checkout/autoreturn-img-br.png)
 
-Atributo |	Descrição
------------- 	|	--------
-`auto_return` | Redireciona automaticamente para o seu site quando o pagamento é finalizado como aprovado. O valor é `approved`.
-| `back_urls` | `success`. URL de retorno perante pagamento aprovado.<br/><br/>`pending`. URL de retorno perante pagamento pendente.<br/><br/>`failure`. URL de retorno perante pagamento rejeitado.
+| Atributo |	Descrição |
+| ------------ 	|	-------- | 
+| `auto_return` | Os compradores são redirecionados automaticamente para o  _site_ quando o pagamento é aprovado. O valor padrão é `approved`. |
+| `back_urls` | URL de retorno ao site. Possíveis cenários são:<br/><br/>`success`: URL de retorno perante pagamento aprovado.<br/><br/>`pending`: URL de retorno perante pagamento pendente.<br/><br/>`failure`: URL de retorno perante pagamento rejeitado.
 
-Através das `back_urls` *serão retornados os seguintes parâmetros*:
+Através das `back_urls`, serão retornados os seguintes parâmetros:
 
-Parâmetro |	Descrição
------------- 	|	--------
-`payment_id` | ID do pagamento do Mercado Pago. |
-`status` | Estado do pagamento. Ex.: `approved` para um pagamento aprovado ou `pending` para um pagamento pendente. |
-`external_reference` | Valor que foi enviado no momento da criação da preferência de pagamento. |
-`merchant_order_id` | ID da ordem de pagamento gerada no Mercado Pago. |
+| Parâmetro |	Descrição |
+| --- | --- | 
+| `payment_id` | ID (identificador) do pagamento do Mercado Pago. |
+| `status` | Estado do pagamento. Ex.: `approved` para um pagamento aprovado ou `pending` para um pagamento pendente. |
+| `external_reference` | Valor enviado no momento da criação da preferência de pagamento. |
+| `merchant_order_id` | ID (identificador) da ordem de pagamento gerada no Mercado Pago. |
 
-> Alguns dos parâmetros conterão informação apenas se o pagador realizou o pagamento no Checkout Pro e não abandonou o fluxo antes de retornar ao seu site através da `back_urls` de **_failure_**.
+> NOTE
+> 
+> Nota
+> 
+> Alguns dos parâmetros guardam informações de compra apenas se o comprador completou todo o pagamento no Checkout Pro e não abandonou o fluxo antes de retornar ao seu site por meio da `back_urls` de `failure`.
+
+Por exemplo:
 
 [[[
 ```php
@@ -378,48 +389,36 @@ preference_data = {
 
 ## Evite recusas de pagamentos
 
-Um pagamento pode ser recusado porque o emissor do meio de pagamento detecta um problema ou porque não preenche os requisitos de segurança necessários.
+Um pagamento pode ser recusado porque o emissor do meio de pagamento detectou um problema no fluxo, como falta dos requisitos de segurança necessários.
 
-Evite pagamentos recusados com nossas recomendações e [melhore a aprovação de seus pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/payment-rejections).
+Evite pagamentos recusados com as nossas [boas práticas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/payment-rejections) e melhore a taxa de aprovação dos seus pagamentos.
 
-## Cancelamentos e estornos
+## Gerencie cancelamentos e estornos
 
 ----[mla, mlm, mco, mlu, mlb, mlc]----
-Os cancelamentos são feitos quando o pagamento não foi concluído antes da data de vencimento e o vendedor decide cancelá-lo.
-As devoluções acontecem quando o pagamento foi feito, mas o vendedor decide estorná-lo, total ou parcialmente.
+Os cancelamentos são feitos quando o pagamento não foi concluído antes da data de vencimento e o vendedor decide então cancelá-lo. As devoluções, por sua vez, acontecem quando o pagamento foi feito pelo comprador, mas o vendedor decide estorná-lo, total ou parcialmente.
 ------------
 
 ----[mpe]----
-Os cancelamentos são feitos quando o pagamento não foi concluído antes da data de vencimento e o vendedor decide cancelá-lo.
-As devoluções acontecem quando o pagamento foi feito, mas o vendedor decide estorná-lo totalmente.
+Os cancelamentos são feitos quando o pagamento não foi concluído antes da data de vencimento e o vendedor decide então cancelá-lo. As devoluções, por sua vez, acontecem quando o pagamento foi feito pelo comprador, mas o vendedor decide estorná-lo totalmente.
 ------------
 
-Você pode encontrar todas as informações na [ seção de Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
+Para mais informações, acesse a nossa documentação sobre [gerenciar os cancelamentos e estornos dos seus pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
 ## Gerencie contestações
 
-Uma contestação ou chargeback acontece quando o comprador entra em contato com a entidade emissora do cartão e desconhece o pagamento.
-Isso significa que o dinheiro do vendedor, por esse pagamento, será retido da sua conta do Mercado Pago até que seja solucionada.
+Uma contestação (ou *chargeback*) acontece quando o comprador entra em contato com a entidade emissora do cartão e desconhece o pagamento. Na prática, isso significa que o dinheiro desse pagamento será retido da sua conta Mercado Pago até que a situação seja solucionada.
 
-[Gerenciar contestações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/chargebacks)
+Acesse nossa [documentação de Gerenciamento de operações contestadas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/chargebacks) e saiba como gerenciar contestações de pagamentos.
 
 ---
 
-### Próximos passos
+### Próximo passo
 
-
-> LEFT_BUTTON
->
-> Outras funcionalidades
->
-> Configure seus pagamentos e adapte o Checkout Pro ao seu negócio.
->
-> [Outras funcionalidades](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations)
-
-> RIGHT_BUTTON
+> LEFT_BUTTON_REQUIRED_PT
 >
 > Customizações
 >
-> Adapte o estilo da sua marca na experiência de compra.
+> Adapte o estilo da sua marca na experiência de compra do Checkout Pro.
 >
 > [Customizações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/customizations)
