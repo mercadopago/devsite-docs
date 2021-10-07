@@ -4,7 +4,7 @@ sites_supported:
   - mlb
   - mlm
 ---
-# ¿Qué es la API de Integraciones?
+## ¿Qué es la API de Integraciones?
 
 Es una interfaz que permite conectar tus **puntos de venta** (PDV) al ecosistema Point para recibir pagos en las terminales que tengas configuradas y garantizar una experiencia de cobro unificada.
 
@@ -35,7 +35,7 @@ Es una interfaz que permite conectar tus **puntos de venta** (PDV) al ecosistema
 - Administra tus ordenes de pago desde tu PDV.
 - Disminuye la posibilidad de errores al momento de cobrar.
 
-## Flujo de como funciona la API de Integraciones
+### Flujo de como funciona la API de Integraciones
 
 Te presentamos un diagrama de flujo con el cual puedas tener una mayor claridad de cómo funcionamos.
 
@@ -59,19 +59,19 @@ Te presentamos un diagrama de flujo con el cual puedas tener una mayor claridad 
 > Recuerda tener tu **ACCESS_TOKEN** a la mano. [API Reference](https://documenter.getpostman.com/view/16045907/TzzEoaMm)
 ------
 ------------
-### Requisitos previos
+# Requisitos previos
 
 Ten en cuenta estos aspectos antes de empezar:
 
 ## 1. Obtén las credenciales de identificación para tu integración 
 
-### 1.1 Accede a una cuenta
+#### 1.1 Accede a una cuenta
 
 Para poder comenzar la integración, es necesario **contar con una cuenta de Mercado Pago o Mercado Libre**.
 Puedes [Ingresar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/pre-requisites)
 a una cuenta ya existente o [Crear una cuenta nueva](https://www.mercadopago[FAKER][URL][DOMAIN]).
 
-### 1.2 Crea una aplicación
+#### 1.2 Crea una aplicación
 
 Necesitarás crear una aplicación por cada solución para tener todo organizado y llevar un control que te facilite la
 gestión. Crea una aplicación para obtener credenciales y configurar notificaciones webhooks.
@@ -93,46 +93,46 @@ Es fácil, te contamos cómo hacerlo:
 > Si vas a operar en nombre de otros, puedes trabajar con las credenciales de ellos de una forma más fácil y segura por [Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/marketplace/checkout-api/introduction).
 >
 
-### 1.3 Accede a las credenciales de tu aplicación
+#### 1.3 Accede a las credenciales de tu aplicación
 
 Una vez que tengas una aplicación
 creada, [podrás acceder a las credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials).
 Con ellas puedes conectar una integración a tu cuenta y configurarla a tu manera.
 
-### Genera usuarios de prueba (opcional)
+#### Generar usuarios de prueba (opcional)
 
 Puedes probar tus integraciones en un ambiente controlado mediante el uso de usuarios de prueba, para crearlos puedes
 hacerlo usando el siguiente comando:
 
 ----[mlb]----
 
-``` curl
+``` cURL
 curl -X POST \
 -H "Content-Type: application/json" \
 -H 'Authorization: Bearer ${PROD_ACCESS_TOKEN}' \
-"https://api.mercadopago.com/users/test_user" \
+"https://api.mercadopago.com/users/test_user"
 -d '{"site_id":"MLB"}'
 ```
 
 ------------
 ----[mla]----
 
-``` curl
+``` cURL
 curl -X POST \
 -H "Content-Type: application/json" \
 -H 'Authorization: Bearer ${PROD_ACCESS_TOKEN}' \
-"https://api.mercadopago.com/users/test_user" \
+"https://api.mercadopago.com/users/test_user"
 -d '{"site_id":"MLA"}'
 ```
 
 ------------
 ----[mlm]----
 
-``` curl
+``` cURL
 curl -X POST \
 -H "Content-Type: application/json" \
 -H 'Authorization: Bearer ${PROD_ACCESS_TOKEN}' \
-"https://api.mercadopago.com/users/test_user" \
+"https://api.mercadopago.com/users/test_user"
 -d '{"site_id":"MLM"}'
 ```
 
@@ -143,7 +143,7 @@ curl -X POST \
 >
 > IMPORTANTE
 >
-> * En el paso 1.2 te mostramos como obtener el `ACCESS_TOKEN` de tu nuevo usuario de pruebas.
+> * En el paso 1.2 te mostramos como obtener el ACCESS_TOKEN de tu nuevo usuario de pruebas.
 > * Puedes generar hasta 10 cuentas de usuarios de prueba en simultáneo. Por eso, te recomendamos guardar el email y password de cada uno.
 > * Los usuarios de prueba caducan luego de 60 días sin actividad en Mercado Pago.
 > * No es posible obtener pagos exitosos con usuarios de pruebas, es por eso que hemos diseñado un [Simulador Point](https://api.mercadopago.com/point/integrator-simulator/sandbox/?ignoreapidoc=true) que te ayudará a depurar la API.
@@ -151,18 +151,18 @@ curl -X POST \
 ## 2. Asocia tu dispositivo Point a tu cuenta de Mercado Pago
 > NOTE
 >
-> Para poder vincular tu dispositivo Point a tu cuenta de Mercado Pago es necesario descargar la aplicación en tu celular, la puedes encontrar en los marketplaces de [iOS](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8) y [Android](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419).
+> Para poder vincular tu dispositivo Point a tu cuenta de Mercado Pago es necesario descargar la aplicación en tu celular, la puedes encontrar en los marketplaces de iOS y Android.
  
+> [<img src="/mobile/GooglePlayBadge.es.png" alt="Android Play Store" width="200"/>](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419)
+> [<img src="/mobile/AppStoreBadge.es.svg" alt="iOS App Store" width="158" style="margin:0.8em"/>](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8)
 
-
-
-### 2.1. Escanea el código QR de tu dispositivo Point
+#### 2.1. Escanea el código QR de tu dispositivo Point
 Inicia sesión en la aplicación de Mercado Pago, oprime en el ícono QR y escanea el código que aparece al encender tu dispositivo Point, de esta forma tu dispositivo Point
 quedará vinculado a tu cuenta.
 
 ![Qr Point Scan](/images/mobile/point-qr-scan.png)
 
-### 2.2. Configura tu tienda y tu caja
+#### 2.2. Configura tu tienda y tu caja
 
 Una vez vinculado el dispositivo Point a tu cuenta de Mercado Pago, debes completar los datos de tu negocio y configurar tu caja.
 
@@ -174,7 +174,7 @@ Una vez vinculado el dispositivo Point a tu cuenta de Mercado Pago, debes comple
 ![Locales y Cajas](/images/mobile/tienda-caja.pt.png)
 ------------
 
-### 2.3. Activa el modo integrado en tu dispositivo Point
+#### 2.3. Activa el modo integrado en tu dispositivo Point
 ----[mla]----
 > INFO
 >
@@ -190,22 +190,23 @@ Una vez vinculado el dispositivo Point a tu cuenta de Mercado Pago, debes comple
 ----[mlb]----
 > INFO
 >
-> Recurso en desarrollo
+> Feature under development
 >
-> De manera temporal, consulte el siguiente manual [Configuración inicial Point Plus](https://docs.google.com/document/d/19s6PCYe2aQBIkVctrBid74YhFvj5--skeaGb6dpv0Gs/edit?usp=sharing) que le permitirá asociar su dispositivo Point Plus a su cuenta de Mercado Pago
+> De manera temporal consulte el siguiente manual que le permitirá asociar su dispositivo Point Plus a su cuenta de Mercado Pago
 >
-
+> - [Configuración inicial Point Plus](https://docs.google.com/document/d/19s6PCYe2aQBIkVctrBid74YhFvj5--skeaGb6dpv0Gs/edit?usp=sharing)
 ------------
 
 
-## 3. Prepara y configura tus notificaciones de Webhook (opcional)
-**¿Qué son las notificaciones de Webhooks?**
+## 3. Prepara y configura tu webhook (opcional)
+**¿Qué es un webhook?**
 <br/>
-Son notificaciones que se envían desde nuestra API de Integraciones a tu sistema receptor mediante una llamada HTTP en relación a los cambios de estado que presente una intención de pago.
+Es una notificación que se envía desde nuestra API de Integraciones a tu sistema receptor mediante una llamada HTTP en
+relación a los cambios de estado que presente una intención de pago.
 <br/>
 
 - **Obtén tu token:** Por medio de este endpoint puedes obtener tu token que te será útil al momento de configurar tu webhook.
-``` curl
+``` cURL
 curl --location --request GET 'https://api.mercadopago.com/point/integration-api/integrators' \
 --header 'Authorization: Bearer ${ACCESS_TOKEN}' \
 ```
@@ -274,7 +275,7 @@ Esta URL debe soportar las siguientes operaciones:
 ### 3.1. Registra tu webhook
 Una vez tengas listo tu sistema webhook puedes registrarlo en nuestra API de Integraciones
 
-``` curl
+``` cURL
 curl --location --request PATCH 'https://api.mercadopago.com/point/integration-api/integrators' \
 --header 'Authorization: Bearer ${ACCESS_TOKEN}' \
 --header 'Content-Type: application/json' \
@@ -289,7 +290,7 @@ La respuesta será un `HTTP 204 No Content`.
 
 Esta petición es necesaria para que MercadoPago Point pueda validar que el sistema webhook configurado le pertenece realmente al integrador, esto es requerido para evitar ataques de amplificación.
 
-``` curl
+``` cURL
 curl --location --request POST 'https://api.mercadopago.com/point/integration-api/integrators/check' \
 --header 'Authorization: Bearer ${ACCESS_TOKEN}'
 ```
@@ -305,7 +306,7 @@ La respuesta será un `HTTP 204 No Content`.
 ### 4.1. Obtén el listado de tus dispositivos disponibles
 Antes de crear una intención de pago, es necesario obtener los dispositivos Point asociados a tu cuenta.
 
-``` curl
+``` cURL
 curl --location --request GET 'https://api.mercadopago.com/point/integration-api/devices' \
 --header 'Authorization: Bearer ${ACCESS_TOKEN}' \
 ```
@@ -329,7 +330,7 @@ Ejemplo de respuesta:
 Puedes crear una intención de pago y asignarla a tu dispositivo Point obtenido en el paso anterior.
 
 ----[mla]----
-```curl
+```cURL
 curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents' \
 --header 'Authorization: Bearer ${ACCESS_TOKEN}' \
 --data-raw '{
@@ -365,7 +366,7 @@ Ejemplo de respuesta
 ------------
 
 ----[mlb]----
-```curl
+```cURL
 curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents' \
 --header 'Authorization: Bearer ${ACCESS_TOKEN}' \
 --data-raw '{
@@ -417,7 +418,7 @@ Ejemplo de respuesta
 
 Puedes cancelar una intención de pago asignada a un dispositivo Point
 
-``` curl
+``` cURL
 curl --location --request DELETE 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents/:paymentIntentId' \
 --header 'Authorization: Bearer ${ACCESS_TOKEN}' \
 ```
@@ -429,18 +430,18 @@ Ejemplo de respuesta
   "id": "7d8c70b6-2ac8-4c57-a441-c319088ca3ca"
 }
 ```
-## 5.  Procesa tu intención de pago
+##  Procesa tu intención de pago
 
 Una vez creada la intención de pago, puedes obtenerla desde tu dispositivo Point oprimiendo la tecla verde y continuar 
 con los pasos que se muestran en la pantalla para completar el pago.
 
-## 6. Recibe tu notificación
+## 5. Recibe tu notificación
 
 Si configuraste correctamente tu sistema webhook recibirás una notificación al finalizar el proceso de pago.
 Puedes consultar la tabla de [estados de una intención de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/mp-point/integration-api/glossary#bookmark_posibles_estados_de_una_intención_de_pago)
 
 
-## 7. Consulta el estado de tu intención de pago
+## 6. Consulta el estado de tu intención de pago
 
 Puedes consultar el estado actual, solo necesitas el `id` que fue retornado en la respuesta al momento de crear la intención de pago.
 
@@ -495,7 +496,8 @@ Ejemplo de respuesta:
 >
 > Consulta toda la información correspondiente al pago
 >
-> Toda la información del pago la puedes encontrar en nuestra [API de Pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get) donde necesitaras tú **ACCESS_TOKEN** y el número de referencia de pago el `payment.id` que es retornado en el **Webhook** (si lo tienes configurado) o por medio del servicio `consulta el estado de tu intención de pago`
+> Toda la información del pago la puedes encontrar en nuestra [API de Pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get)
+> donde necesitaras tú **ACCESS_TOKEN** y el número de referencia de pago el `payment.id` que es retornado en el **Webhook** (si lo tienes configurado) o por medio del servicio descrito en el numeral 4.
 
 
 ------
@@ -588,12 +590,12 @@ El simulador cuenta con dos modos de uso:
 
 ## Cómo usar el PDV Mode
 
-### 1. Configura tus credenciales
+**Paso 1. Configura tus credenciales** 
 
 Al utilizar el simulador por primera vez debes ingresar tu Access Token y seleccionar uno de tus dispositivos disponibles, si 
 estás utilizando un Access Token de prueba el simulador te asignará un dispositivo virtual.
 
-### 2. Crea una intención de pago
+**Paso 2. Crea una intención de pago**
 
 Hemos preparado distintos escenarios que te permiten simular una experiencia real, para ello debes seleccionar el monto de acuerdo con el estado que deseas obtener:
 
@@ -606,25 +608,25 @@ Hemos preparado distintos escenarios que te permiten simular una experiencia rea
 - **Successful:** Cualquier otro valor, diferente a los anteriores
 
 
-### 3. Obtén la intención de pago desde el dispositivo
+**Paso 3. Obtén la intención de pago desde el dispositivo**
 
 Una vez creada la intención de pago, debes dar clic en el botón verde del dispositivo virtual para obtener la intención de pago creada, una vez encontrado, puedes verificar que el monto ingresado inicialmente coincida con el mostrado en la pantalla del dispositivo.
 
-### 4. Desliza la tarjeta y procesa el pago
+**Paso 4. Desliza la tarjeta y procesa el pago**
 
 Si el paso anterior fue exitoso, puedes dar clic en la animación de la tarjeta, la cual representa el deslizamiento de la misma en el dispositivo, en seguida se iniciará el procesamiento y el dispositivo mostrará el respectivo resultado.
 
-### 5. Recibe la notificación
+**Paso 5. Recibe la notificación**
 
 Si realizaste los pasos de configuración del Webhook, es momento que revises tus logs, allí verás que fue enviada la notificación del estado de la transacción.
 
 ## Cómo usar el Device Mode
 
-### 1. Configura tus credenciales
+**Paso 1. Configura tus credenciales** 
 
 Al utilizar el simulador en Device Mode por primera vez debes ingresar tu Access Token y tu Device Id obtenido al [listar tus dispositivos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/mp-point/integration-api/create-payment-intent#bookmark_1._crea_una_intención_de_pago)
 
-### 2. Crea una intención de pago
+**Paso 2. Crea una intención de pago**
 
 Debes [crear una intención](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/mp-point/integration-api/create-payment-intent#bookmark_1._crea_una_intención_de_pago) con uno de los siguientes montos para simular el estado correspondiente.
 
@@ -637,15 +639,15 @@ Debes [crear una intención](https://www.mercadopago[FAKER][URL][DOMAIN]/develop
 - **Successful:** Cualquier otro valor, diferente a los anteriores
 
 
-### 3. Obtén la intención de pago desde el dispositivo
+**Paso 3. Obtén la intención de pago desde el dispositivo**
 
 Una vez creada la intención de pago, debes dar clic en el botón verde del dispositivo virtual para obtener la intención de pago creada, una vez encontrado, puedes verificar que el monto ingresado inicialmente coincida con el mostrado en la pantalla del dispositivo.
 
-### 4. Desliza la tarjeta y procesa el pago
+**Paso 4. Desliza la tarjeta y procesa el pago**
 
 Si el paso anterior fue exitoso, puedes dar clic en la animación de la tarjeta, la cual representa el deslizamiento de la misma en el dispositivo, en seguida se iniciará el procesamiento y el dispositivo mostrará el respectivo resultado.
 
-### 5. Recibe la notificación
+**Paso 5. Recibe la notificación**
 
 Si realizaste los pasos de configuración del Webhook, es momento que revises tus logs, allí verás que fue enviada la notificación del estado de la transacción.
 
@@ -653,7 +655,7 @@ Si realizaste los pasos de configuración del Webhook, es momento que revises tu
 
 ## Glosario
 
-Lo sabemos, algunos términos son nuevos y quizás no estés familiarizado con ellos. ¡Usa este glosario para no perderte!
+Lo sabemos, algunos términos son nuevos y quizá  no estés familiarizado con ellos. ¡Usa este glosario para no perderte!
 
 | Termino | Descripción |
 | --- | --- |
@@ -677,3 +679,26 @@ Lo sabemos, algunos términos son nuevos y quizás no estés familiarizado con e
 | Abandoned | Estado final de una intención de pago cuando no se procesa después de determinado tiempo |
 | Error | Estado final de una intención de pago cuando ocurre un error en la transacción |
 | Finished | Estado final de una intención de pago cuando finaliza la transacción |
+
+----------
+----------
+
+## Changelog 
+
+**2020-09-17** 
+
+- `new`: Endpoint para consultar la información del integrador: token, webhook, is_validated    
+- `removed`: Endpoint para el registro del integrador    
+- `improved`: Mensajes de error en la api     
+- `doc`: Se agrega documentación para la configuración del Point Plus    
+
+
+**2020-09-08**
+
+- `doc`: Se publica documentación de los endpoints en Postman    
+- `doc`: Se agregan diagramas de la integración e infografía    
+
+
+**2020-09-01**
+
+- `new`: Endpoint para consultar la intención de pago por ID    
