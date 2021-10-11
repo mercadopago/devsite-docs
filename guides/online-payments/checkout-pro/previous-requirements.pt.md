@@ -78,7 +78,7 @@ As credenciais são chaves únicas que fornecemos para que você possa configura
 
 Para encontrá-las, veja a [seção de Credenciais]([FAKER][CREDENTIALS][URL]) no seu Painel de desenvolvedor.
 
-> Note
+> NOTE
 >
 > Nota
 > 
