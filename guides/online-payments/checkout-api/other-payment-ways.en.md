@@ -4111,36 +4111,34 @@ The `transaction_data` will provide the data to make the payment available via Q
 
 
 ```json
-[
- {
-    ...,
-    "id": 5466310457,
-    "status": "pending",
-    "status_detail": "pending_waiting_transfer",
-    ...,
-    "transaction_details": {
-        "net_received_amount": 0,
-        "total_paid_amount": 100,
-        "overpaid_amount": 0,
-        "external_resource_url": "https://www.mercadopago.com/mlb/payments/bank_transfer/helper?payment_id=123456789&payment_method_reference_id= 123456789&caller_id=123456",
-        "installment_amount": 0,
-        "financial_institution": null,
-        "point_of_interaction": {
-            "type": "PIX",
-            "sub_type": null,
-            "application_data": {
-                "name": "NAME_SDK",
-                "version": "VERSION_NUMBER",
-            },
-            "transaction_data": {
-                "qr_code_base64": "iVBORw0KGgoAAAANSUhEUgAABRQAAAUUCAYAAACu5p7oAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAIABJREFUeJzs2luO3LiWQNFmI+Y/Zd6vRt36KGNXi7ZOBtcagHD4kNLeiLX33v8DAAAAABD879sDAAAAAAA/h6AIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCAAAAAJmgCAAAAABkgiIAAAAAkAmKAAAAAEAmKAIAAAAAmaAIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCA...",
-                "qr_code": "00020126600014br.gov.bcb.pix0117john@yourdomain.com0217additional data520400005303986540510.005802BR5913Maria Silva6008Brasilia62070503***6304E2CA",
-            }
-        }
-    }
-    ...,
+{
+  ...,
+  "id": 5466310457,
+  "status": "pending",
+  "status_detail": "pending_waiting_transfer",
+  ...,
+  "transaction_details": {
+      "net_received_amount": 0,
+      "total_paid_amount": 100,
+      "overpaid_amount": 0,
+      "external_resource_url": "https://www.mercadopago.com/mlb/payments/bank_transfer/helper?payment_id=123456789&payment_method_reference_id= 123456789&caller_id=123456",
+      "installment_amount": 0,
+      "financial_institution": null
+  },
+  "point_of_interaction": {
+      "type": "PIX",
+      "sub_type": null,
+      "application_data": {
+        "name": "NAME_SDK",
+        "version": "VERSION_NUMBER",
+      },
+      "transaction_data": {
+        "qr_code_base64": "iVBORw0KGgoAAAANSUhEUgAABRQAAAUUCAYAAACu5p7oAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAIABJREFUeJzs2luO3LiWQNFmI+Y/Zd6vRt36KGNXi7ZOBtcagHD4kNLeiLX33v8DAAAAABD879sDAAAAAAA/h6AIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCAAAAAJmgCAAAAABkgiIAAAAAkAmKAAAAAEAmKAIAAAAAmaAIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCA...",
+        "qr_code": "00020126600014br.gov.bcb.pix0117john@yourdomain.com0217additional data520400005303986540510.005802BR5913Maria Silva6008Brasilia62070503***6304E2CA",
+      }
   }
-]∫
+  ...,
+}
 ```
 
 ### Data to make payment
