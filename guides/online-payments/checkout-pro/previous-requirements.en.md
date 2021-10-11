@@ -77,6 +77,10 @@ Your credentials are unique keys we provide so you can configure your integratio
 
 You can find the information of each one in the [Credentials]([FAKER][CREDENTIALS][URL]) section on the Developer panel from your Mercado Pago account.
 
+> NOTE
+>
+> Note
+> 
 > Do you still have any questions about this topic? Read our documentation on [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) for more information.
 
 ---
