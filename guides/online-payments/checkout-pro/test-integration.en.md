@@ -6,6 +6,8 @@
 
 [TXTSNIPPET][/guides/snippets/test-integration/create-test-users]
 
+> There are two ways to make the payment: as a **guest user**, using an email address of your choice, and as a **registered user**, using a Mercado Pago account with username and password. In this last scenario, money available in the account and pre saved cards will be enabled as payment methods.
+
 ## Test the payment flow
 
 ### 1. Configure the checkout with the information of your selling user

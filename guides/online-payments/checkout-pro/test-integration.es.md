@@ -6,6 +6,8 @@
 
 [TXTSNIPPET][/guides/snippets/test-integration/create-test-users]
 
+> Existen dos formas de hacer el pago: como **usuario invitado**, completando la dirección de correo electrónico deseado, y como **usuario registrado**, accediendo a una cuenta de Mercado Pago con usuario y clave. En este último escenario se habilitarán como medio de pago las tarjetas previamente guardadas y el saldo disponible en la cuenta.
+
 ## Prueba el flujo de pago
 
 ### 1. Configura el checkout con los datos de tu usuario vendedor
