@@ -6,7 +6,7 @@ Find all the information about chargebacks, how to prevent them, and how to mana
 
 A chargeback is created when a **customer disputes a credit or debit card charge with the card issuer bank and requests a money refund.**
 
-When that happens, we can withhold the collected money until the problem is solved and manage the case with the card issuer entity.  10 days are allowed to submit the transaction vouchers, and the validation process may take up to 130 days.
+When that happens, we can withhold the collected money until the problem is solved and manage the case with the card issuer entity.  7 days are allowed to submit the transaction vouchers, and the validation process may take up to 150 days.
 
 If the claim is accepted by the issuer entity, the buyer will have the money refunded.  But don't worry, if you meet the [Seller Protection Program](https://www.mercadopago.com.ar/ayuda/requisitos-programa-proteccion-vendedor_294) requirements we will cover the chargeback and will not discount the sales money.
 

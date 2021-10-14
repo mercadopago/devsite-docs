@@ -6,7 +6,7 @@ Encontre toda a informação sobre contestação de pagamentos, como preveni-las
 
 Uma contestação é criada quando o **cliente reclama de uma cobrança no seu cartão de crédito ou débito perante o banco emissor do seu cartão e solicita a devolução do dinheiro.**
 
-Quando isso acontece, podemos reter o dinheiro da cobrança até o problema ser solucionado e gerenciamos o caso com a entidade emissora do cartão. Temos 10 dias para apresentação dos comprovantes da operação e o processo de validação pode demorar até 140 dias.
+Quando isso acontece, podemos reter o dinheiro da cobrança até o problema ser solucionado e gerenciamos o caso com a entidade emissora do cartão. Temos 7 dias para apresentação dos comprovantes da operação e o processo de validação pode demorar até 150 dias.
 
 Caso a reclamação seja aceita pela entidade emissora, o dinheiro será devolvido ao comprador. Mas não se preocupe, se você atender aos [requisitos do Programa de Proteção ao Vendedor](https://www.mercadopago.com.ar/ayuda/requisitos-programa-proteccion-vendedor_294), nós vamos realizar o estorno sem descontar o dinheiro da sua venda.
 
