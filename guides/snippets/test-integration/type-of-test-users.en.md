@@ -1,4 +1,4 @@
-The **test users allow you to test your checkout** by generating payment flows as in an exact copy of your integration.
+The **test users allow you to test your checkout** by generating payment flows in an exact copy of your integration.
 
 | Type of test users | Description |
 | --- | --- |
