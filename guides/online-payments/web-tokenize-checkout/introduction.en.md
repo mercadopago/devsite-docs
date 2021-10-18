@@ -2,17 +2,15 @@
 # Web Tokenize Checkout
 
 > WARNING
-> 
-> ATTENTION
-> 
+>
+> Importante
+>
 > **Web Tokenize Checkout** will be deprecated in August 2022.
 > 
 
-> INFO
->
-> What is tokenize?
->
-> Tokenization is the process by which a card number is encrypted securely.
+## What is tokenize?
+
+**Tokenization** is the process by which a card number is encrypted securely.
 
 With **Mercado Pago** *Web Tokenize Checkout* forget about the complexity of setting up your form for the selection of payment methods and tokenization. This simple integration provides you with a form with the design and the front-end ready.
 
