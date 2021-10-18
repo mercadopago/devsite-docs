@@ -1,6 +1,13 @@
 
 # Web Tokenize Checkout
 
+> WARNING
+> 
+> ATTENTION
+> 
+> **Web Tokenize Checkout** will be deprecated in August 2022.
+> 
+
 > INFO
 >
 > What is tokenize?
