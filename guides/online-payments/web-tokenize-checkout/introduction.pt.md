@@ -4,7 +4,7 @@
 >
 > Importante
 >
-> **Web Tokenize Checkout** terá deprecado em agosto de 2022.
+> **Web Tokenize Checkout** será descontinuado em agosto de 2022.
 > <br>
 > Você pode usar [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction) ou [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction) como alternativa.
 
