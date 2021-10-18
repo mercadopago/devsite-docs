@@ -128,17 +128,6 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
         "additional_info_needed": []
     },
     {
-       "id": "pix",
-       "name": "PIX",
-       "payment_type_id": "bank_transfer",
-       "status": "active",
-       "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
-       "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
-       "deferred_capture": "does_not_apply",
-       "settings": [],
-       "additional_info_needed": []
-    },
-    {
         "...": "..."
     }
 ]
