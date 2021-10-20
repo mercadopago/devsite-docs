@@ -5,6 +5,23 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 ---
 ## Octubre 2021
 
+### 20 de octubre
+
+> CHANGELOG
+>
+> Nueva versión SDK PHP
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK PHP
+Lanzamos una nueva versión de la SDK PHP 1.12.3 y 2.4.4.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-php/releases).
+
 ### 7 de octubre
 
 > CHANGELOG

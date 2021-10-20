@@ -5,6 +5,23 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 ---
 ## Outubro 2021
 
+### 20 de Outubro
+
+> CHANGELOG
+>
+> Nova versão SDK PHP
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK PHP
+Lançamos a nova versão 1.12.3 e 2.4.4 do SDK PHP.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-php/releases).
+
 ### 7 de outubro
 
 > CHANGELOG
@@ -67,7 +84,7 @@ Lançamos a nova versão 3.11.1 para Magento 2.
 
 ## Setembro 2021
 
-### 30 de septiembre
+### 30 de setembro
 
 > CHANGELOG
 >

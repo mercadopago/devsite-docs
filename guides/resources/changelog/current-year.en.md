@@ -5,6 +5,23 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 ---
 ## October 2021
 
+### October 20th
+
+> CHANGELOG
+>
+> New version of SDK PHP
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK PHP
+We have released a new version of SDK PHP 1.12.3 and 2.4.4.
+>
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-php/releases) for further details regarding this release.
+
 ### October 7th
 
 > CHANGELOG
