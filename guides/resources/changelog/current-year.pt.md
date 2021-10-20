@@ -5,7 +5,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 ---
 ## Outubro 2021
 
-### 20 de Outubro
+### 20 de outubro
 
 > CHANGELOG
 >
