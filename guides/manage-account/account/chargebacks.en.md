@@ -8,7 +8,7 @@ A chargeback is created when a **customer disputes a credit or debit card charge
 
 ----[mla, mlm, mpe, mco, mlu, mlb]----
 
-When that happens, we can withhold the collected money until the problem is solved and manage the case with the card issuer entity. 10 days are allowed to submit the transaction vouchers, and the validation process may take up to 130 days.
+When that happens, we can withhold the collected money until the problem is solved and manage the case with the card issuer entity. 10 days are allowed to submit the transaction vouchers, and the validation process may take up to 140 days.
 
 ------------
 
