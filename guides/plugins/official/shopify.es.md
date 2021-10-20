@@ -24,7 +24,7 @@ Instala la [app extension de nuestro checkout transparente](https://apps.shopify
 >
 > Importante
 >
-> Pronto, el checkout transparente de Mercado Pago para Shopify será deprecado para nuevos usuarios y reemplazado por un nuevo modelo, más personalizable y que permite ofrecer Pix. [Haga clic aquí](https://forms.gle/LEe9BC2RSxqaQFF49) y regístrese para recibir la comunicación de lanzamiento.
+> Pronto, el checkout transparente de Mercado Pago para Shopify será deprecado para nuevos usuarios y reemplazado por un nuevo modelo, más personalizable y que permite ofrecer Pix. [Haz clic aquí](https://forms.gle/LEe9BC2RSxqaQFF49) y regístrate para recibir la comunicación de lanzamiento.
 
 
 ### ¿Qué puedo hacer con el checkout transparente de Mercado Pago?
