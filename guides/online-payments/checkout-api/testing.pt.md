@@ -57,7 +57,7 @@ curl -X POST \
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Configure a integração com os dados do seu usuário vendedor
 
-Configure a [public key de produção]([FAKER][CREDENTIALS][URL]) do seu usuário vendedor de teste no frontend da sua aplicação e o [access token de produção]([FAKER][CREDENTIALS][URL]) do seu usuário vendedor de teste no seu backend.
+Configure a [public key de produção]([FAKER][CREDENTIALS][URL]) do seu **usuário de teste comprador** no frontend da sua aplicação e o [access token de produção]([FAKER][CREDENTIALS][URL]) do seu **usuário de teste vendedor** no seu backend.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Realize um pagamento com seu usuário comprador
 

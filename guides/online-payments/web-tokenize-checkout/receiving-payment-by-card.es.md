@@ -53,7 +53,7 @@ mp.checkout({
 >
 >Importante
 >
-> * Para mobile, ten en cuenta solamente ingresar el path en el atributo **backUrl**, ya que en mobile no debemos agregar el dominio completo. 
+> Para mobile, ten en cuenta que únicamente debes ingresar el path en el atributo `backUrl` en lugar del dominio completo. 
 
 En este caso, se mostrará un botón de pago que abrirá el Web Tokenize Checkout.
 
