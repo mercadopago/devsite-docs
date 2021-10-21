@@ -25,6 +25,22 @@ Lançamos a nova versão 5.5.0 para WooCommerce.
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.5.0).
 
+> CHANGELOG
+>
+> Nova versão SDK PHP
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK PHP
+Lançamos a nova versão 1.12.3 e 2.4.4 do SDK PHP.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-php/releases).
+
+
 ### 7 de outubro
 
 > CHANGELOG
@@ -87,7 +103,7 @@ Lançamos a nova versão 3.11.1 para Magento 2.
 
 ## Setembro 2021
 
-### 30 de septiembre
+### 30 de setembro
 
 > CHANGELOG
 >

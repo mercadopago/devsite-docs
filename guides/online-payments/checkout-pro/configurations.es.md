@@ -295,7 +295,7 @@ preference_data = {
 ```
 ]]]
 
----- [mla, mlb] ----
+----[mla, mlb]----
 
 ## Acepta pagos con 2 tarjetas de crédito
 

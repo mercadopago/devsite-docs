@@ -2,7 +2,7 @@
 
 La integración con el Checkout Pro de Mercado Pago te permite cobrar a través de nuestro formulario web desde cualquier dispositivo de manera simple, rápida y segura. 
 
-> NOTA
+> NOTE
 >
 > Buenas prácticas
 >

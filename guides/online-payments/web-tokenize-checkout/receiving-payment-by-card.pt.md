@@ -48,6 +48,11 @@ mp.checkout({
 });
 </script>
 ```
+>WARNING
+>
+>Importante
+>
+> Para mobile, insira o path no atributo `backUrl`, em vez do domínio completo.
 
 Neste caso, será mostrado um botão de pagamento que abrirá o Web Tokenize Checkout.
 

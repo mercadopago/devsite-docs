@@ -49,6 +49,12 @@ mp.checkout({
 </script>
 ```
 
+>WARNING
+>
+>Important
+>
+> For mobile, please note that you should only include the path under the attribute `backUrl`, instead of the full domain. 
+
 This will display a payment button that will open the Web Tokenize Checkout.
 
 You can check other ways to open the checkout in the [Customization section](https://www.mercadopago[FAKER][URl][DOMAIN]/developers/en/guides/online-payments/web-tokenize-checkout/personalization).
