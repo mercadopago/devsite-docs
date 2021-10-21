@@ -9,18 +9,39 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 > CHANGELOG
 >
+> Nueva versión WooCommerce
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: WOOCOMMERCE
+
+Lanzamos la nueva versión 5.5.0 para WooCommerce.
+
+[Ir a documentación de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.5.0).
+
+
+> CHANGELOG
+>
 > Nueva versión SDK PHP
 >
 > NEW_VERSION: NUEVA VERSIÓN
 >
 > PRODUCT: SDK PHP
 Lanzamos una nueva versión de la SDK PHP 1.12.3 y 2.4.4.
+ 
 
 > GIT
 >
 > GitHub
 >
 > Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-php/releases).
+
 
 ### 7 de octubre
 
