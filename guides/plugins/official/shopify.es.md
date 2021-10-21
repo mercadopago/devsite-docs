@@ -20,6 +20,12 @@ __Checkout redirect Mercado Pago__: configura Checkout Pro para que tus clientes
 
 Instala la [app extension de nuestro checkout transparente](https://apps.shopify.com/checkout-transparente) en tu tienda de Shopify y deja todo en nuestras manos: tus clientes podrán completar sus datos en un paso y finalizar la compra de forma rápida y segura.
 
+> WARNING
+>
+> Importante
+>
+> Pronto, el checkout transparente de Mercado Pago para Shopify será deprecado para nuevos usuarios y reemplazado por un nuevo modelo, más personalizable y que permite ofrecer Pix. [Haz clic aquí](https://forms.gle/LEe9BC2RSxqaQFF49) y regístrate para recibir la comunicación de lanzamiento.
+
 
 ### ¿Qué puedo hacer con el checkout transparente de Mercado Pago?
 
