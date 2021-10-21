@@ -174,29 +174,30 @@ Una vez vinculado el dispositivo Point a tu cuenta de Mercado Pago, debes comple
 ![Locales y Cajas](/images/mobile/tienda-caja.pt.png)
 ------------
 
-### 2.3. Activa el modo integrado en tu dispositivo Point
-----[mla]----
-> INFO
->
-> Feature under development
->
-> De manera temporal consulte el siguiente manual que le permitirá asociar su dispositivo Point Plus a su cuenta de Mercado Pago
->
-> - [Configuración inicial Point Plus](https://docs.google.com/document/d/19s6PCYe2aQBIkVctrBid74YhFvj5--skeaGb6dpv0Gs/edit?usp=sharing)
+### 2.3. Autoriza y vincula cuentas en tus aplicaciones
+Para poder gestionar vatias cuentas de Mercado Pago a la vez en tu integración,  realiza el proceso de [OAuth](https://www.mercadopago.com.ar/developers/es/guides/security/oauth). También dejamos un par de videos para que conozcas acerca de OAuth
 
++ [Introducción OAuth](https://www.youtube.com/watch?v=BBpRiaJUEAw)
++ [Integración OAuth](https://www.youtube.com/watch?v=hnLGGPZ_KNo)
 
-------------
+### 2.4. Activa el modo integrado en tu dispositivo Point
+Para poder iniciar a usar el dispositivo en modo integrado con nuestra API, activaremos el modo de operación `PDV`. Y si no queremos usar el modo integrado pondremos en el campo operating_mode: `STANDALONE` y así se procesarian pagos sin nuestra API.
 
-----[mlb]----
-> INFO
->
-> Recurso en desarrollo
->
-> De manera temporal, consulte el siguiente manual [Configuración inicial Point Plus](https://docs.google.com/document/d/19s6PCYe2aQBIkVctrBid74YhFvj5--skeaGb6dpv0Gs/edit?usp=sharing) que le permitirá asociar su dispositivo Point Plus a su cuenta de Mercado Pago
->
+``` curl
+curl --location -g --request PATCH 'https://api.mercadopago.com/point/integration-api/devices/{{device.id}}' \
+--header 'Authorization: Bearer <token>' \
+--header 'x-test-scope: sandbox' \
+--data-raw '{
+    "operating_mode":"PDV"
+}'
+```
+- **Ejemplo de respuesta** 
 
-------------
-
+``` json
+{
+  "operating_mode": "PDV"
+}
+```
 
 ## 3. Prepara y configura tus notificaciones de Webhook (opcional)
 **¿Qué son las notificaciones de Webhooks?**
@@ -305,9 +306,11 @@ La respuesta será un `HTTP 204 No Content`.
 ### 4.1. Obtén el listado de tus dispositivos disponibles
 Antes de crear una intención de pago, es necesario obtener los dispositivos Point asociados a tu cuenta.
 
+Podrás obtener la lista de dispositivos por caja y/o sucursal, es importante conocer los ID's para poder realizar este filtro. Para conocer los id's puedes usar los siguientes servicios [buscar cajas](https://www.mercadopago.com.ar/developers/es/reference/pos/_pos/get) y [buscar sucursales](https://www.mercadopago.com.ar/developers/es/reference/stores/_users_user_id_stores_search/get)
+
 ``` curl
 curl --location --request GET 'https://api.mercadopago.com/point/integration-api/devices' \
---header 'Authorization: Bearer ${ACCESS_TOKEN}' \
+--header 'Authorization: Bearer <token>' \
 ```
 
 Ejemplo de respuesta:
@@ -316,12 +319,19 @@ Ejemplo de respuesta:
 {
   "devices": [
     {
-      "id": "GERTEC_MP35P__8701012051261234"
+      "id": "GERTEC_MP35P__9876543210123456"
+      "operating_mode": "STANDALONE"
     },
     {
-      "id": "INGENICO_MOVE2500__87010121123456"
+      "id": "INGENICO_MOVE2500__ING-ARG-12345678",
+      "operating_mode": "PDV"
     }
-  ]
+  ],
+  "paging": {
+    "total": 2,
+    "limit": 50,
+    "offset": 0
+  }
 }
 ```
 
