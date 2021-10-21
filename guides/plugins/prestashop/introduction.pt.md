@@ -1,21 +1,24 @@
-# Mercado Pago para PrestaShop 1.6 & 1.7
+# PrestaShop 1.6 & 1.7
 
+**PrestaShop** é uma plataforma de e-commerce com software de código aberto, permitindo que qualquer usuário crie e desenvolva um site comercial. Sendo parceiros oficiais da PrestaShop, fornecemos maior segurança e eficiência à sua loja.
 
-Como você pode imaginar, um site sem processador de pagamento nada mais é do que um catálogo on-line. Seus clientes poderão ver seus produtos, mas não poderão pagar por eles.
+Características do PrestaShop:
 
-> **Sendo parceiros oficiais da PrestaShop**, fornecemos maior segurança e eficiência à sua loja.
+* Gratuito;
+* Instalação fácil e interface amigável;
+* SEO otimizado;
+* Gerenciamento da loja virtual (produtos, pedidos, clientes etc);
+* Personalização de temas da loja;
+* Marketplace com recursos adicionais (plugins);
+* Meios de pagamento (integração com Mercado Pago e outros).
+
+Essa documentação foi pensada para que você faça a instalação, a integração e a configuração mais rapidamente, sem precisar escrever uma linha de códigos sequer para instalar a plataforma nas lojas dos seus clientes.
 
 <span></span>
 
-> NOTE
->
-> Nota
->
-> **Você é desenvolvedor?** Este manual também foi pensado para que você faça a instalação, integração e configuração mais rapidamente. Você não vai precisar escrever uma linha de códigos sequer para instalá-lo nas lojas dos seus clientes.
+## O que posso fazer com a integração entre o Mercado Pago e o PrestaShop?
 
-## O que posso fazer com Mercado Pago para PrestaShop?
-
-Instale nosso gateway de pagamento e leve suas vendas para outro nível com a melhor experiência de compra:
+Instale nosso gateway de pagamento e leve suas vendas para outro nível com a melhor experiência de compra. Veja abaixo as características dessa integração:
 
 | Características | Descrição |
 | --- | --- |
@@ -32,29 +35,10 @@ Instale nosso gateway de pagamento e leve suas vendas para outro nível com a me
 >
 > Todos os nossos módulos contam com uma licença de código aberto. Quer participar da criação? [Sugira melhorias e edições no Github](https://github.com/mercadopago/cart-prestashop-7).
 
-## Tipos de checkout
-
-Com estas opções de pagamento nós cobrimos as necessidades de cada negócio. Confira as características para escolher aquela que se adapte melhor ao seu negócio.
-
-| Características | Checkout Pro | Checkout Personalizado | Ticket Checkout |
-| --- | --- | --- | --- |
-| Meios de pagamento | Pagamento com cartões, em dinheiro e com dinheiro na conta do Mercado Pago. | Pagamentos com cartões de crédito. | Pagamentos presenciais. |
-| Experiência de pagamento | Seus clientes pagam na página do Mercado Pago com um formato redirect (fora da sua loja) ou modal (dentro da sua loja). | Seus clientes pagam sem sair da sua loja virtual. | Seus clientes pagam sem sair da sua loja virtual. |
-| Usuários convidados | Seus clientes podem pagar tendo ou não uma conta no Mercado Pago. | Seus clientes pagam como convidados, sem ter uma conta no Mercado Pago. | Seus clientes pagam como convidados, sem ter uma conta no Mercado Pago. |
-
-> NOTE
->
-> Nota
->
-> Consulte a [documentação do Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction) para conhecer melhor todas as suas características e funcionalidades.
-
-### Próximo passo
-
 > LEFT_BUTTON_REQUIRED_PT
 >
-> Instalar Mercado Pago no PrestaShop
+> Pré requisitos
 >
-> Siga estas etapas para instalar o módulo do Mercado Pago na sua loja virtual.
+> Conheça os pré requisitos para realizar a integração.
 >
-> 
-> [Instalar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/instalation)
+> [Pré requisitos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/previous-requirements)
