@@ -34,11 +34,9 @@ Na seção **Credenciais**, você deverá inserir suas credenciais de:
 
 > NOTE
 >
-> Importante
+> Nota
 >
-> Não há problema em usar as mesmas credenciais em várias lojas.Entretanto, se o vendedor quiser rastrear cada uma de suas lojas, ele pode criar um [app-id](http://applications.mercadopago.com/) diferente, um para cada loja e usar as credenciais desse app-id especificado.
->
-> Caso ainda não tenha as informações das Credenciais, acesse nossa documentação [Credenciais](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) e siga o passo a passo para obtê-las. 
+> Não há problema em usar as mesmas credenciais em várias lojas.Entretanto, se o vendedor quiser rastrear cada uma de suas lojas, ele pode criar um [app-id](http://applications.mercadopago.com/) diferente, um para cada loja e usar as credenciais desse app-id especificado. Caso ainda não tenha as informações das Credenciais, acesse nossa documentação [Credenciais](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) e siga o passo a passo para obtê-las. 
 
 Com as credenciais preenchidas, configure as informações de negócio.
 
@@ -76,8 +74,8 @@ Pronto! Agora o plugin do Mercado Pago com o PrestaShop está integrado à sua l
 
 > LEFT_BUTTON_REQUIRED_PT
 >
-> Teste de compras
+> Teste de pagamentos
 >
 > Saiba como realizar uma compra teste e garantir o funcionamento da integração.
 >
-> [Teste de compras](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/testing)
+> [Teste de pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/testing)

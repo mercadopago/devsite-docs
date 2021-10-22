@@ -46,7 +46,7 @@ Abaixo, detalhamos os fatores que influenciam na recusa de um pagamento:
 > Nota
 >
 > Para mais informações sobre os motivos citados acima, acesse os artigos:
-
+>
 > * [Recusas de pagamento](https://conteudo.mercadopago.com.br/entenda-como-funcionam-as-recusas-de-aprovacao-de-pagamentos-no-mercado-pago) 
 > * [Como lidar com recusas de pagamento](https://conteudo.mercadopago.com.br/como-lidar-com-as-recusas-de-pagamento-do-cartao-de-credito-no-seu-e-commerce)
 

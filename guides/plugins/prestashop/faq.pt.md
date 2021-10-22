@@ -12,7 +12,7 @@ Para configurar o status do pedido para o plugin do Mercado Pago, siga os passos
 
 ### 2. Como validar as notificações?
 
-No plugin do PrestaShop são recebidas apenas notificações do tipo IPN. Para validar ESSAS notificações, é necessário usar o painel de pagamentos: https://payments.adminml.com/ipn_webhooks
+No plugin do PrestaShop são recebidas apenas notificações do tipo [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn). Para validar essas notificações, é necessário usar o [painel de pagamentos](https://payments.adminml.com/ipn_webhooks).
 
 ### 3. Como obter o relatório do sistema?
 
