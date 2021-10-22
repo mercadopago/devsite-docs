@@ -14,8 +14,6 @@ Características do PrestaShop:
 
 Essa documentação foi pensada para que você faça a instalação, a integração e a configuração mais rapidamente, sem precisar escrever uma linha de códigos sequer para instalar a plataforma nas lojas dos seus clientes.
 
-<span></span>
-
 ## O que posso fazer com a integração entre o Mercado Pago e o PrestaShop?
 
 Instale nosso gateway de pagamento e leve suas vendas para outro nível com a melhor experiência de compra. Veja abaixo as características dessa integração:
@@ -37,8 +35,8 @@ Instale nosso gateway de pagamento e leve suas vendas para outro nível com a me
 
 > LEFT_BUTTON_REQUIRED_PT
 >
-> Pré requisitos
+> Pré-requisitos
 >
-> Conheça os pré requisitos para realizar a integração.
+> Conheça os pré-requisitos para realizar a integração.
 >
-> [Pré requisitos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/previous-requirements)
+> [Pré-requisitos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/previous-requirements)

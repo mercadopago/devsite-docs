@@ -28,6 +28,6 @@ Se todos os pré-requisitos foram atendidos, você pode instalar o plugin do Mer
 >
 > Instalar o Mercado Pago no PrestaShop
 >
-> Siga estas etapas para instalar o módulo do Mercado Pago na sua loja virtual.
+> Siga estas etapas para instalar o plugin do Mercado Pago na sua loja virtual.
 >
 > [Instalar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/instalation)

@@ -14,7 +14,7 @@ O módulo do Mercado Pago vem com o **ambiente Sandbox** ativo por padrão. Ness
 >
 > Além disso, com `test_user` só é possível testar pagamentos utilizando o Checkout Pro no **modo Produção**, enquanto no Checkout Transparante o teste poderá ser realizado tanto no **modo Sandbox** quanto no de **Produção**.
 
-Entretanto, é importante salientear que para que seja possível utilizar o ambiente teste, é necessário que as [credenciais](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) estejam devidamente preechidas na seção **Credenciais**.
+> Importante salientear que para que seja possível utilizar o ambiente teste, é necessário que as [credenciais](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) estejam devidamente preechidas na seção **Credenciais**.
 
 Para realizar o teste, desça até a seção **Teste sua loja** e clique em **Quero testar minhas vendas**.
 

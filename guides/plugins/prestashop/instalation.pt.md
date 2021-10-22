@@ -26,9 +26,7 @@ Instale o módulo seguindo estas etapas:
 
 ## Manutenção
 
-Aconselhamos que você faça uma cópia de segurança da loja on-line antes de fazer qualquer alteração. Ao ter esta cópia pronta, exclua todos os arquivos relacionados à versão anterior do módulo. 
-
-A seguir, execute as etapas de uma nova instalação para atualizar sua loja com a última versão disponível do módulo. 
+Aconselhamos que você faça uma cópia de segurança da loja on-line antes de fazer qualquer alteração. Ao ter esta cópia pronta, exclua todos os arquivos relacionados à versão anterior do módulo. Em seguida, execute as etapas de uma nova instalação para atualizar sua loja com a última versão disponível do módulo. 
 
 > NOTE
 >
@@ -42,6 +40,6 @@ A seguir, execute as etapas de uma nova instalação para atualizar sua loja com
 >
 > Integrar o Mercado Pago no PrestaShop
 >
-> Conecte sua conta do Mercado Pago ao módulo e capture os pagamentos que você receber pelas suas vendas on-line.
+> Conecte sua conta do Mercado Pago ao plugin e capture os pagamentos que você receber pelas suas vendas on-line.
 >
 > [Integrar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/integration)

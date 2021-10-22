@@ -26,9 +26,9 @@ No campo **Localização** você deverá selecionar o país no qual sua conta do
 
 Na seção **Credenciais**, você deverá inserir suas credenciais de:
 
->**Teste**: em um primeiro momento, será necessário realizar testes para garantir o funcionamento correto do fluxo de pagamentos.
+* **Teste**: em um primeiro momento, será necessário realizar testes para garantir o funcionamento correto do fluxo de pagamentos.
 
->**Produção**: ao finalizar os testes iniciais, habilitaremos a loja para o processamento de vendas reais e é por meio dessa credencial que a ativação é feita.
+* **Produção**: ao finalizar os testes iniciais, habilitaremos a loja para o processamento de vendas reais e é por meio dessa credencial que a ativação é feita.
 
 ![Credenciais](/images/prestashop/credenciais_pt.png)
 
@@ -72,7 +72,7 @@ Além das configurações anteriores, você encontra diferentes opções relacio
 10. **Meios de pagamento presenciais:** selecione quais meios de pagamento serão oferecidos nos pagamentos realizados via Ticket Checkout.
 11. **Vencimento pagamento:** após a seleção dos meios de pagamento presenciais, indique em quantos dias estes vencerão após a sua emissão.
 
-Pronto! Agora o plugin do Mercado Pago com o PrestaShop está integrado à sua loja e pode ser testado apenas para fim de validar o seu funcionamento, mas sem movimentar qualquer valor.
+Pronto! Agora o plugin do Mercado Pago com o PrestaShop está integrado à sua loja e pode ser testado a fim de validar o seu funcionamento, mas sem movimentar qualquer valor.
 
 > LEFT_BUTTON_REQUIRED_PT
 >
