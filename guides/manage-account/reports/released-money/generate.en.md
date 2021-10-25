@@ -7,7 +7,7 @@ You can generate a Release report from your Mercado Pago account:
 
 | Channels | Description |
 | --- | --- |
-| Mercado Pago panel | It's very simple and fast. To generate ir from your account, go to [Reports](https://www.mercadopago[FAKER][URL][DOMAIN]/movements) and choose "Created reports".<br/><br/>Follow the step by step to [generate reports from your panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/panel).|
+| Mercado Pago panel | It's very simple and fast. To generate it from your Mercado Pago Account, go to [Reports](https://www.mercadopago.com.ar/balance/reports) and select the option *Reports*.<br/><br/>Follow the step by step to [generate reports from this panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/panel).<br/><br/> |
 | API integration | <br/>Schedule the frequency of your report according to your needs. It can be both manually and on a scheduled basis.<br/><br/>Read the documentation to [generate reports through API](https://www.mercadopago[FAKER][URL][DOMAIN]/
 
 

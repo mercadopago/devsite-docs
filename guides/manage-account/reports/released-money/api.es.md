@@ -1,14 +1,14 @@
 
 # Generación por API
 
+Genere el reporte de Liquidaciones de forma manual las veces que quieras o prográmalo según tus necesidades de frecuencia a través de nuestra API.
 
-Ganá tiempo y automatizá la **frecuencia de generación** del reporte de Dinero retirado las veces que quieras, tanto de forma manual como de forma programada. 
+>WARNING
+>
+>El reporte de Dinero retirado será deshabilitado a partir del 1 de marzo de 2022.
+>
+> Usa el [reporte de ----[mla]----Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberaciones------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction) ara conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.
 
-> WARNING
->
->El reporte de Dinero retirado será deshabilitado el próximo 01 marzo,2022
->
-> Puedes usar el [reporte de ----[mla]----Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberaciones------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.
 
 ## Configurar tus reportes
 

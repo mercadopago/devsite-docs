@@ -1,14 +1,13 @@
 
 # Geração via API
 
-
 Você pode gerar seu relatório via API, tanto de forma manual quanto programada.
 Ganhe tempo e automatize a **frequência de geração** do relatório de Dinheiro disponível sempre que quiser.
 
-> WARNING
->
-> O relatório de Dinheiro disponível será desabilitado em 01 de março, 2022
->
+>WARNING
+
+O relatório de Dinheiro disponível será desabilitado a partir de 1o de março de 2022.
+
 > Você pode usar o [relatório de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberações------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
 
 

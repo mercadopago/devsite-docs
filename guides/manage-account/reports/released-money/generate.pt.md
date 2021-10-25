@@ -1,8 +1,4 @@
-----[mla]----
-# Como gerar o seu relatório de Liquidações?
-------------
 
-----[mlm, mlb, mlc, mco, mlu, mpe]----
 # Como gerar o seu relatório de Liberações?
 ------------
 
@@ -13,7 +9,7 @@ Você pode gerar um relatório de ----[mla]---- Liquidações ------------ ----[
 
 | Canais | Descrição |
 | --- | --- |
-| Painel do Mercado Pago | É muito rápido e simples. Para gerar a partir da sua conta do Mercado Pago, vá até [Relatórios](https://www.mercadopago[FAKER][URL][DOMAIN]/movements) e selecione uma opção de "Relatórios criados".<br/><br/>Siga o paso a paso para [gerar seus relatórios a partir do painel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/panel). |
+| Painel do Mercado Pago | É muito rápido e simples. Para gerá-lo pela sua conta Mercado Pago, vá na [Relatórios](https://www.mercadopago.com.br/balance/reports) e escolha a opção *Relatórios*.<br/><br/>Siga o passo a passo para [gerar relatórios a partir do painel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/panel).<br/><br/>|
 | Integração via API | <br/>Programa a frequência do seu relatório de acordo com as suas necessidades. Pode ser tanto de forma manual como de forma programada.<br/><br/>Leia a documentação para [gerar relatórios por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/api)). <br/><br/>|
 
 ## Características técnicas do relatório

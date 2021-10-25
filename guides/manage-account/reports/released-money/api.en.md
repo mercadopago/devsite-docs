@@ -1,19 +1,14 @@
 
 # Generating through API
 
-
-Save time and automate the **generating frequency** of the Available Balance report as many times as you want, both manually and on a scheduled basis.
+Generate the Released money report manually as many times as you want or schedule it according to the desired frequency through our API.
 
 > WARNING
 >
-> The Available Balance report will be disabled next March 01, 2022
+> The Available Balance report will be disabled from March 1st, 2022.
 >
-> You can use the [Release report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
+> Use the [Release report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
 
-> NOTE
->
-> Note
->
 
 ## Set up your reports
 
