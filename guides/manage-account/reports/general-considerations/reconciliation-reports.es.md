@@ -1,6 +1,6 @@
 # Reportes
 
-Los reportes de Mercado Pago son conjuntos de información financiera que te ayudan a visualizar los movimientos de tu cuenta (saldo disponible, transacciones, liquidez), permitiéndote conciliar ventas y otras operaciones con tus sistemas de gestión internos.
+Los reportes de Mercado Pago son conjuntos de información financiera que te ayudan a visualizar los movimientos de tu cuenta (saldo disponible, transacciones, liquidez), permitiéndote combinar ventas y otras operaciones con tus sistemas de gestión interna.
 
 Consulte la tabla a continuación para obtener más detalles sobre los tipos de reportes disponibles.
 
