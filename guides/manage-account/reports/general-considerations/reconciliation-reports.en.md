@@ -1,6 +1,6 @@
 # Reports
 
-Mercado Pago reports are sets of financial informations that help you to visualize your account data (available balance, transactions, liquidity), allowing you to combine sales and other operations with your internal management systems.
+Mercado Pago reports are sets of financial information that help you visualize your account data (available balance, transactions, liquidity), allowing you to combine sales and other operations with your internal management systems.
 
 Check the table below for more details on the available report types.
 
