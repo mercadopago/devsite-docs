@@ -108,3 +108,11 @@ Este documento contém todos os tipos e métodos de pagamento que você pode esc
 |Redpagos|`redpagos`|`ticket`|MercadoPagoPro e MercadoPagoOff|
 
 ------------
+
+> LEFT_BUTTON_REQUIRED_PT
+>
+> Logs da VTEX
+>
+> Conheça os principais logs da VTEX.
+>
+> [Logs da VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/logs)

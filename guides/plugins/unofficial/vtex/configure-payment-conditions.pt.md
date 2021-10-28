@@ -24,8 +24,8 @@ IMG
 Para **criar uma condição de pagamento cartão de crédito utilizando sua afiliação com o Mercado Pago**, siga os passos abaixo:
 
 1. No painel de administração de sua loja, acesse **Configurações** do módulo de pagamentos.
-2. Na aba **Condições de pagamento**, clique no botão "+" (Adicionar nova condição de pagamento para...).
-3. Na seção **Cartão de Crédito**, escolha qual bandeira irá adicionar ao meio de pagamento (veja aqui as bandeiras disponíveis).
+2. Na aba **Condições de pagamento**, clique no botão "+" (*Adicionar nova condição de pagamento para...*).
+3. Na seção **Cartão de Crédito**, escolha qual bandeira irá adicionar ao meio de pagamento. Veja [aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/payment-methods) as bandeiras disponíveis.
 4. Informa o **Nome da regra** para facilitar a identificação e ative a condição de pagamento no campo `Status`.
 5. Informar sua afiliação com o MercadoPagoV2, no campo `Processar com a afiliação`.
 6. Em opções de parcelamento, escolha parcelamento **Automático**, onde utiliza as condições de parcelamento diretamente de sua conta Mercado Pago.
@@ -40,8 +40,8 @@ IMG
 Para **criar uma condição de pagamento cartão de débito utilizando sua afiliação com o Mercado Pago**, siga os passos abaixo:
 
 1. No painel de administração de sua loja, acesse **Configurações** do módulo de pagamentos.
-2. Na aba **Condições de pagamento**, clique no botão "+" (Adicionar nova condição de pagamento para...).
-3. Na seção **Cartão de Débito**, escolha qual bandeira irá adicionar ao meio de pagamento (veja aqui as bandeiras disponíveis).
+2. Na aba **Condições de pagamento**, clique no botão "+" (*Adicionar nova condição de pagamento para...*).
+3. Na seção **Cartão de Débito**, escolha qual bandeira irá adicionar ao meio de pagamento. Veja [aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/payment-methods) as bandeiras disponíveis.
 4. Informa o **Nome da regra** para facilitar a identificação e ative a condição de pagamento no campo `Status`.
 5. Informar sua afiliação com o MercadoPagoV2, no campo `Processar com a afiliação`.
 6. Clique em **Salvar**.
@@ -179,6 +179,10 @@ IMG
 
 IMG
 
-
-
-
+> LEFT_BUTTON_REQUIRED_PT
+>
+> Parcelamento
+>
+> Conheça como configurar o Parcelamento em sua conta Mercado Pago.
+>
+> [Parcelamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/configure-installments)

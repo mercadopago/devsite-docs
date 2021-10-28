@@ -18,3 +18,11 @@ document.body.appendChild(script);
 ```
 
 IMG
+
+> LEFT_BUTTON_REQUIRED_PT
+>
+> Tipos e Métodos de Pagamentos
+>
+> Conheça os tipos e meios de pagamento.
+>
+> [Tipos e Métodos de Pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/payment-methods)

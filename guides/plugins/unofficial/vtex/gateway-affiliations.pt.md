@@ -20,8 +20,8 @@ Para realizar a migração basta realizar os seguintes passos:
 
 Os passos para **migrar das versões antigas para a mais recente**, são os seguintes:
 
-1. Cadastre uma afiliação de gateway de pagamento com o "MercadoPagoV2".
-2. Nas Condições de Pagamento altere o "Processar com a afiliação" para a nova que criou.
+1. Cadastre uma afiliação de gateway de pagamento com o **MercadoPagoV2**.
+2. Nas Condições de Pagamento altere o **Processar com a afiliação** para a nova que criou.
 3. Realize a alteração em todas as condições existentes no seu e-commerce.
 
 &nbsp;
@@ -100,9 +100,9 @@ Os passos para **migrar das versões antigas para a mais recente**, são os segu
 
 Para criar uma **afiliação de gateway de pagamento com o MercadoPagoV2**, siga os passos abaixo:
 
-1. No painel de administração de sua loja, acesse “Configurações" do módulo de pagamentos.
-2. Na aba Afiliações de Gateways, clique no botão "+".
-3. Clique no conector “MercadoPagoV2”.
+1. No painel de **administração** de sua loja, acesse **Configurações** do módulo de pagamentos.
+2. Na aba **Afiliações de Gateways**, clique no botão "+".
+3. Clique no conector **MercadoPagoV2**.
 4. Preencha os campos correspondentes: 
 
 |Campos|Dados necessários|
@@ -115,8 +115,8 @@ Para criar uma **afiliação de gateway de pagamento com o MercadoPagoV2**, siga
 |Categoría principal da loja - Categoría principal de la tienda|Categoria da loja|
 |Reembolso automático / manual|Selecionar se deseja que o Mercado Pago realize automaticamente o reembolso em caso de cancelamento ou se deseja reter o valor pago para o cliente usar em compras futuras.|
 |Modo binário - binário|Configura se o pagamento poderá passar por revisão manual ou não.|
-|Métodos de pagamento excluídos - Métodos de pago excluídos (visa, paypal, bolbradesco, oxxo...)|Métodos de pagamento a serem excluídos no momento da compra. Veja as opções aqui.|
-|Tipos de pagamento excluídos - Tipos de pago excluidos (credit_card, bank_transfer, ticket...)|Tipos de pagamento a serem excluídos no momento da compra. Veja as opções aqui.|
+|Métodos de pagamento excluídos - Métodos de pago excluídos (visa, paypal, bolbradesco, oxxo...)|Métodos de pagamento a serem excluídos no momento da compra. [Veja as opções aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/payment-methods).|
+|Tipos de pagamento excluídos - Tipos de pago excluidos (credit_card, bank_transfer, ticket...)|Tipos de pagamento a serem excluídos no momento da compra. [Veja as opções aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/payment-methods).|
 |Modo de processamento - Modo de procesamiento|Configura se o pagamento será gateway ou agregador|
 |Integrator ID|Para programadores ou agências que realizam a integração.|
 |Moeda - Moneda|Moeda a ser configurada (USD ou Local)|
@@ -127,3 +127,10 @@ IMG
 
 E pronto! Sua afiliação com MercadoPagoV2 já está ativa!
 
+> LEFT_BUTTON_REQUIRED_PT
+>
+> Condições de pagamento
+>
+> Conheça como configurar condições de pagamento.
+>
+> [Condições de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/configure-payment-conditions)

@@ -7,3 +7,11 @@
 IMG
 
 E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarifas de parcelamento que você configurou.
+
+> LEFT_BUTTON_REQUIRED_PT
+>
+> Device Fingerprint
+>
+> Conheça como obter aprovação mais rápido enviando o device fingerprint.
+>
+> [Device Fingerprint](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/device-fingerprint)
