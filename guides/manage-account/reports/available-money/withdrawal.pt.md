@@ -6,9 +6,9 @@ Você pode criar um relatório de Dinheiro disponível de forma automática cada
 
 > WARNING
 >
-> O relatório de Dinheiro disponível será desabilitado em breve
+> O relatório de Dinheiro disponível será desabilitado a partir de 1º de março de 2022.
 >
-> Você pode usar o [relatório de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberações------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
+> Use o [relatório de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberações------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
 
 ## Gerar a partir do painel do Mercado Pago
 

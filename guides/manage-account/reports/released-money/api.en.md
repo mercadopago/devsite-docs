@@ -12,11 +12,117 @@ Generate the Released money report manually as many times as you want or schedul
 
 ## Set up your reports
 
-Execute the curl you need to create, review and update your reports.
+Execute the curl you need to check, create and update your reports.
+
+> NOTE
+>
+> Note
+>
+> Have the [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/release-money/glossary) at hand to review technical terms when managing your reports.
+
+### Check configuration 
+
+Check the configuration of your reports by API in this way:
+
+[[[
+```curl
+curl -X GET \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/account/release_report/config' \
+```
+```php
+<?php
+include('vendor/rmccue/requests/library/Requests.php');
+Requests::register_autoloader();
+$headers = array(
+    'accept' => 'application/json',
+    'content-type' => 'application/json',
+    'Authorization' => 'Bearer ENV_ACCESS_TOKEN'
+);
+$response = Requests::get('https://api.mercadopago.com/v1/account/release_report/config', $headers);
+```
+```java
+ URL url = new URL("https://api.mercadopago.com/v1/account/release_report/config");
+
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+
+connection.setRequestMethod("GET");
+connection.setRequestProperty("Accept", "application/json");
+connection.setRequestProperty("Content-Type", "application/json");
+connection.setRequestProperty("Authorization", "Bearer ENV_ACCESS_TOKEN");
+
+System.out.println(connection.getResponseCode());
+System.out.println(connection.getResponseMessage());
+System.out.println(connection.getInputStream());
+```
+```python
+import requests
+headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json',
+    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
+}
+
+response = requests.get('https://api.mercadopago.com/v1/account/release_report/config', headers=headers)
+```
+```node
+var request = require('request');
+
+var headers = {
+    'accept': 'application/json',
+    'content-type': 'application/json',
+    'Authorization': 'Bearer ENV_ACCESS_TOKEN'
+};
+
+var options = {
+    url: 'https://api.mercadopago.com/v1/account/release_report/config',
+    headers: headers
+};
+function callback(error, response, body) {
+    if (!error && response.statusCode == 200) {
+        console.log(body);
+    }
+}
+request(options, callback);
+```
+]]]
+
+You will receive an `HTTP STATUS 200 (OK)` in response if no error is found.
+
+The response object will have a similar structure to the following example:
+
+```json
+{
+    "file_name_prefix": "release-report-USER_ID",
+    "include_withdrawal_at_end": true,
+    "scheduled": false,
+    "execute_after_withdrawal": false,
+    "separator": ";",
+    "display_timezone": "GMT-04",
+    "frequency": {
+        "hour": 0,
+        "type": "monthly",
+        "value": 1
+    },
+    "columns": [
+        {
+            "key": "DATE"
+        },
+        {
+            "key": "SOURCE_ID"
+        },
+        {
+            "key": "EXTERNAL_REFERENCE"
+        }
+    ]
+}
+```
 
 ### Create configuration
 
-Create your API generation preferences to export columns, name your files and configure other settings:
+Create your generation preferences through API to export columns, name your files and configure other settings:
 
 [[[
 ```curl
@@ -222,7 +328,9 @@ request(options, callback);
 ```
 ]]]
 
-You will receive an `HTTP STATUS 201 (Created)` in response.
+You will receive an `HTTP STATUS 201 (Created)` in response if no error is found.
+
+The response object will have a similar structure to the following example:
 
 ```json
 {
@@ -562,7 +670,9 @@ request(options, callback);
 ```
 ]]]
 
-You will receive an `HTTP STATUS 200 (OK)` in response.
+You will receive an `HTTP STATUS 200 (OK)` in response if no error is found.
+
+The response object will have a similar structure to the following example:
 
 ```json
 {
@@ -594,12 +704,16 @@ You will receive an `HTTP STATUS 200 (OK)` in response.
     ]
 }
 ```
-## Configurable attributes
+
+#### Configurable attributes
 
 Know the fields you can configure to adjust your preferences before you start:
 
-| Configurable fields | Description |
+| Configurable field | Description |
 | --- | --- |
+| `columns` | <br/>Field with the details of columns to be included in your report. Find all possible values in the [Glossary section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/glossary).<br/><br/>|
+| `file_name_prefix` | <br/>Prefix that composes the report name once generated and ready for download.<br/><br/> |
+| `frequency` | <br/>Indicates the daily, weekly or monthly frequency of scheduled reports.<br/><br/> - `frequency` applies type *monthly* to the day of the month or *weekly* to the day of the week.<br/> - `hour` Hour Time of day to generate the report. <br/> - `type` Type indicates the type of frequency *daily*, *weekly* and *monthly*.<br/><br/> |
 | `sftp_info` (optional) | <br/>Indicates the uploaded data to SFTP when you need it.<br/><br/> |
 | `separator` (optional) | <br/>Separator that you can use in the .csv file when you don't want the separator to be a comma. <br/><br/> |
 | `display_timezone` (optional) | <br/>This field determines the date and time displayed in the reports. If you do not set a time zone in this field, the system will consider GMT-04 as default. If you choose a time zone which adopts daylight saving time, you will need to adjust it manually when the time changes.<br/><br/> |
@@ -607,25 +721,15 @@ Know the fields you can configure to adjust your preferences before you start:
 | `refund_detailed` (optional) | <br/>Displays the reference code (external_reference) of the refund instead of the reference code (external_reference) of the payment.<br/><br/> |
 | `include_withdrawal` (optional) | <br/>Includes withdrawals in the report.<br/><br/> |
 | `coupon_detailed` (optional) | <br/>Includes a column to show the detail of the discount coupons.<br/><br/> |
-| `columns` | <br/>Field with the details of columns to be included in your report. Find all possible values in the [Glossary section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/glossary).<br/><br/>|
-| `file_name_prefix` | <br/>Prefix that composes the report name once generated and ready for download.<br/><br/> |
-| `frequency` | <br/>Indicates the daily, weekly or monthly frequency of scheduled reports.<br/><br/> - `frequency` applies type *monthly* to the day of the month or *weekly* to the day of the week.<br/> - `hour` Hour Time of day to generate the report. <br/> - `type` Type indicates the type of frequency *daily*, *weekly* and *monthly*.<br/><br/> |
 | `scheduled` (read_only) | <br/>Informative field that indicates if there are already scheduled reports in the user account.<br/><br/> |
 
-> NOTE
->
-> Note
->
-> Have the [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/glossary) of the Available Balance report on hand to review it when needed or want to review a technical term.
+## Generating your reports manually 
 
+Generate your reports manually by configuring three instances: creation, query, and download.
 
-## Generating manually 
+### 1. Creation
 
-Generate your reports manually by configuring three instances: generation, search and download.
-
-### 1. Generation
-
-Post to the API by specifying the start and end dates as follows:
+Perform a POST to the API by specifying the desired start and end dates as follows:
 
 [[[
 ```curl
@@ -716,11 +820,11 @@ request(options, callback);
 ```
 ]]]
 
-You will receive an `HTTP STATUS 202 (Accepted)` in response, and the report will be generated asynchronously.
+You will receive an `HTTP STATUS 202 (Accepted)` in response if no error is found, and the report will be generated asynchronously.
 
-### 2. Search
+### 2. Query
 
-Check the API this way to see if the report generation is ready:
+Check the API according to the snippet below to see if the report creation is ready:
 
 [[[
 ```curl
@@ -782,7 +886,9 @@ request(options, callback);
 ```
 ]]]
 
-You will receive `HTTP STATUS 200 (OK)` in response:
+You will receive `HTTP STATUS 200 (OK)` in response if no error is found.
+
+The response object will have a similar structure to the following example:
 
 ```json
 [
@@ -867,7 +973,9 @@ request(options, callback);
 ```
 ]]]
 
-You will receive an `HTTP STATUS 200 (OK)` in response.
+You will receive an `HTTP STATUS 200 (OK)` in response if no error is found.
+
+The response object will have a similar structure to the following example:
 
 ```csv
 DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD
@@ -880,13 +988,29 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 ```
 
 
-## Generating on a scheduled basis
+## Generating your reports automatically
 
-Generate your reports on a scheduled basis by configuring three instances: generation, configuration and download.
+Generate your reports on a scheduled basis by configuring three instances: creation, configuration, and download.
 
-### 1. Generation
+### 1. Creation
 
-Schedule the automatic report generation using the frequency in the configuration resource. Update the *`scheduled`* attribute in the configuration to *`true`*:
+Schedule the automatic generation of your report using the desired frequency in the configuration resource. 
+
+Keep in mind to update the *`scheduled`* attribute in the configuration to *`true`*:
+
+```plain
+    POST /v1/account/release_report/schedule
+```
+
+Stops automatic report generation. Update the *`scheduled`* attribute in the false configuration:
+
+```plain
+    DELETE /v1/account/release_report/schedule
+```
+
+### 2. Configuration
+
+Execute the following curls to respectively start and cancel the scheduled generation of your reports, according to your desired scenario.
 
 #### Start scheduled generation
 
@@ -1033,7 +1157,7 @@ request(options, callback);
 
 ### 3. Download
 
-Download the file with this command:
+Download the generated file with the following command:
 
 [[[
 ```curl
@@ -1104,13 +1228,6 @@ DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_
 2018-04-17T15:38:40.000-04:00,,,release,payment,820.14,0.00,1099.00,-278.86,0.00,0.00,0.00,0.00,6,visa
 2018-04-17T15:38:40.000-04:00,,,release,payment,850.00,0.00,850.00,0.00,0.00,0.00,0.00,0.00,1,account_money
 ```
-
-
-> NOTE
->
-> This documentation corresponds to the new version of the API
->
-> To check the previous version, please go to the [old API Generation section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/v1/api).
 
 <hr/>
 
