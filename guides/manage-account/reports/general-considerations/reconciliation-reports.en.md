@@ -1,16 +1,12 @@
-# What are the reports?
+# Reports
 
-Mercado Pago reports are downloadable reports in .xlsx or .csv format that allow you to view your account movements and reconcile your sales and other operations with your internal management systems.
+Mercado Pago reports are sets of financial information that help you visualize your account data (available balance, transactions, liquidity), allowing you to combine sales and other operations with your internal management systems.
 
-With these reports we seek to cover the different needs of our users:
+Check the table below for more details on the available report types.
 
-* Accounting Reports
-    + [Released](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction)
-    + [Account Balance](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/introduction)
-    + [Available Balance](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/available-money/introduction)
+| Report type | Description |
+|---|---|
+| Releases report| Informs how the balance available in your account is composed, detailing all amounts involved in a period of time. For more information [click here](https://www.mercadopago.com.br/developers/en/guides/manage-account/reports/released-money/introduction). |
+| Account balance report| Informs the transactions/movements that affected your account balance. For more information [click here](https://www.mercadopago.com.br/developers/en/guides/manage-account/reports/account-money/introduction). |
+| Available balance report| Informs the liquidity of your business, showing the amount available for use in the account. [Click here](https://www.mercadopago.com.br/developers/en/guides/manage-account/reports/available-money/introduction) for more information. <br><br>* **This report will be deprecated soon**. We recommend using the [Released Report](https://www.mercadopago.com.br/developers/en/guides/manage-account/reports/released-money/introduction) to reconcile the transactions that compose the balance available in your account, including your bank withdrawals. |
 
-> NOTE
->
-> The Available Balance report will be disabled soon
->
-> You can use the [Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
