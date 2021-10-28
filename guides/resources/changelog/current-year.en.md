@@ -25,6 +25,24 @@ We have released the new version 3.12.1 for Magento 2.
 >
 > [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.12.1) for further details regarding this release.
 
+> CHANGELOG
+>
+> New PrestaShop plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: PRESTASHOP
+
+We have released the new version 4.8.0 for PrestaShop.
+
+[Go to PrestaShop documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.8.0) for further details regarding this release.
+
 ### October 20th
 
 > CHANGELOG
