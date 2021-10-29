@@ -1,4 +1,4 @@
-# Rreceber pagamentos
+# Receber pagamentos
 
 Após realizar a integração e fazer os devidos testes, sua loja já está apta para entrar em produção.
 
