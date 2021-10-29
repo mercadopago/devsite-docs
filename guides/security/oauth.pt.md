@@ -20,7 +20,7 @@ Para começar, siga estes passos:
 
 <br>
 
-### Crie e configure sua aplicação
+## Crie e configure sua aplicação
 
 Primeiramente, você deve ter criado [sua aplicação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications/create-app) com um nome único que o identifique.
 
@@ -30,7 +30,7 @@ No campo Redirect URL, adicione o endereço ao qual você quer encaminhar os ven
 
 Finalmente, você deve obter a ID do sua aplicação em [Suas Integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
 
-### Vincule uma conta do Mercado Pago ao sua aplicação
+## Vincule uma conta do Mercado Pago ao sua aplicação
 
 Para operar em nome dos seus vendedores através de suas contas do Mercado Pago, primeiramente, você deve solicitar sua autorização.
 Para isso, deve incluir em sua aplicação uma URL que encaminhe o vendedor para o site de autorização. 
@@ -63,7 +63,7 @@ https://www.redirect-url.com?code=CODE&state=RANDOM_ID
 
 > SERVER_SIDE
 >
-> h3
+> h2
 >
 > Crie as credenciais para operar
 
