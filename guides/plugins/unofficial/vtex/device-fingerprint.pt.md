@@ -19,7 +19,7 @@ document.body.appendChild(script);
 
 IMG
 
-> LEFT_BUTTON_REQUIRED_PT
+> LEFT_BUTTON
 >
 > Tipos e Métodos de Pagamentos
 >

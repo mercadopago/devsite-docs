@@ -1,13 +1,13 @@
 # Configurar condições de pagamento
 
-Após ter criado sua afiliação com o MercadoPagoV2, você tem a opção de oferecer em sua loja pagamentos com Cartões de Crédito, Cartão de Débito, Mercado Pago Offline e também pagamentos via Checkout Pro.
+Após ter criado sua afiliação com o **MercadoPagoV2**, você tem a opção de oferecer em sua loja pagamentos com **Cartões de Crédito, Cartão de Débito, Mercado Pago Offline e também pagamentos via Checkout Pro**.
 
 
 > WARNING
 >
 > Importante
 >
-> Certifique em sua loja de aplicativos da VTEX se o App **Mercado Pago Payment APP** esteja instalado para utilização das condições de pagamento **MercadoPagoPro, MercadoPagoWallet e MercadoPagoOff** ou solicite a instalação pela equipe VTEX através de ticket no Support VTEX.
+> Certifique em sua loja de aplicativos da VTEX se o App **Mercado Pago Payment APP** esteja instalado para utilização das condições de pagamento **MercadoPagoPro, MercadoPagoWallet e MercadoPagoOff** ou solicite a instalação pela equipe VTEX através de ticket no **Support VTEX**.
 
 IMG
 

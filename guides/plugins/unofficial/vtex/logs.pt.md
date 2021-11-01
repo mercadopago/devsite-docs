@@ -21,7 +21,7 @@ Quando confrontado com uma rejeição, é muito importante rever o status_detail
 
 Para mais informações acesse o link [Resultados da criação de uma cobrança](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/handling-responses).
 
-> LEFT_BUTTON_REQUIRED_PT
+> LEFT_BUTTON
 >
 > Erros comuns
 >
