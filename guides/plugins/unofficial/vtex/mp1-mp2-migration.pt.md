@@ -18,7 +18,7 @@ Os passos para **migrar das versões antigas para a mais recente**, são os segu
 
 &nbsp;
 
-> LEFT_BUTTON
+> LEFT_BUTTON_RECOMMENDED_PT
 >
 > Criando afiliação de gateway MercadoPagoV2
 >

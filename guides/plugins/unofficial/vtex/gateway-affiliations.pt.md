@@ -6,7 +6,7 @@ Você poderá utilizar a **afiliação de gateway MercadoPagoV2** para o process
 
 &nbsp;
 
-> LEFT_BUTTON
+> LEFT_BUTTON_RECOMMENDED_PT
 >
 > Migração de Mercado PagoV1 para Mercado PagoV2
 >
@@ -14,7 +14,7 @@ Você poderá utilizar a **afiliação de gateway MercadoPagoV2** para o process
 >
 > [Migração de Mercado PagoV1 para Mercado PagoV2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/mp1-mp2-migration)
 
-> RIGHT_BUTTON
+> RIGHT_BUTTON_RECOMMENDED_PT
 >
 > Criando afiliação de gateway MercadoPagoV2
 >

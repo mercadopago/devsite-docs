@@ -109,7 +109,7 @@ Este documento contém todos os tipos e métodos de pagamento que você pode esc
 
 ------------
 
-> LEFT_BUTTON
+> LEFT_BUTTON_RECOMMENDED_PT
 >
 > Logs da VTEX
 >
