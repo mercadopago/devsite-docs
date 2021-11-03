@@ -23,12 +23,19 @@ Ejemplo de respuesta:
 {
   "devices": [
     {
-      "id": "GERTEC_MP35P__8701012051261234"
+      "id": "GERTEC_MP35P__9876543210123456",
+      "operating_mode": "STANDALONE"
     },
     {
-      "id": "INGENICO_MOVE2500__87010121123456"
+      "id": "INGENICO_MOVE2500__ING-ARG-12345678",
+      "operating_mode": "PDV"
     }
-  ]
+  ],
+  "paging": {
+    "total": 2,
+    "limit": 50,
+    "offset": 0
+  }
 }
 ```
 
