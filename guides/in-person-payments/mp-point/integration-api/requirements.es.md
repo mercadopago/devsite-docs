@@ -152,6 +152,7 @@ Son notificaciones que se envían desde nuestra API de Integraciones a tu sistem
 <br/>
 
 - **Obtén tu token:** Por medio de este endpoint puedes obtener un token que será necesario al momento de configurar tu webhook.
+
 ``` cURL
 curl --location --request GET 'https://api.mercadopago.com/point/integration-api/integrators' \
 --header 'Authorization: Bearer ${ACCESS_TOKEN}' \
