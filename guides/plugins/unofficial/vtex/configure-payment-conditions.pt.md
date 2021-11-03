@@ -19,7 +19,7 @@ IMG
 
 &nbsp;
 
-## Condição de pagamento cartão de crédito
+## Cartão de crédito
 
 Para **criar uma condição de pagamento cartão de crédito utilizando sua afiliação com o Mercado Pago**, siga os passos abaixo:
 
@@ -35,7 +35,7 @@ IMG
 
 &nbsp;
 
-## Condição de pagamento cartão de débito
+## Cartão de débito
 
 Para **criar uma condição de pagamento cartão de débito utilizando sua afiliação com o Mercado Pago**, siga os passos abaixo:
 
@@ -52,7 +52,7 @@ IMG
 
 ----[mlb]----
 
-## Condição de pagamento boleto bancário
+## Boleto bancário
 
 Para **criar uma condição de pagamento boleto bancário utilizando sua afiliação com o Mercado Pago**, siga os passos abaixo:
 
@@ -67,7 +67,7 @@ IMG
 
 &nbsp;
 
-## Condição de pagamento Pix
+## Pix
 
 > **Requisito prévio: Obtenha uma chave Pix**
 > <br>
@@ -94,7 +94,7 @@ E pronto! Sua condição de pagamento Pix com Mercado Pago já está ativa!
 
 ------------
 
-## Condição de pagamento Mercado Pago Offline
+## Mercado Pago Offline
 
 ----[mlb]----
 
@@ -145,7 +145,7 @@ E pronto! Sua condição de pagamento Mercado Pago Offline já está ativa!
 
 &nbsp;
 
-## Condição de pagamento Checkout Mercado Pago
+## Checkout Mercado Pago
 
 Trata-se de uma solução que te permite cobrar através do Mercado Pago, contando com todos os meios de pagamentos disponíveis da plataforma. O MercadoPagoPro é a solução mais completa, enquanto o MercadoPagoWallet agrega a carteira Mercado Pago na sua loja.
 
