@@ -122,18 +122,37 @@ Una vez vinculado el dispositivo Point a tu cuenta de Mercado Pago, debes comple
 ![Locales y Cajas](/images/mobile/tienda-caja.pt.png)
 ------------
 
-#### 2.3. Activa el modo integrado en tu dispositivo Point
-------------------------***PENDIENTE***-------------------
+#### 2.3. Autoriza y vincula cuentas en tus aplicaciones
+Para gestionar varias cuentas de Mercado Pago a la vez en tu integración, realiza el proceso de [OAuth](https://www.mercadopago.com.ar/developers/es/guides/security/oauth). También dejamos un par de videos para que conozcas acerca de OAuth
++ [Introducción OAuth](https://www.youtube.com/watch?v=BBpRiaJUEAw)
++ [Integración OAuth](https://www.youtube.com/watch?v=hnLGGPZ_KNo)
 
+#### 2.4. Activa el modo integrado en tu dispositivo Point
+Los dispositivos Point por defecto se encuentran en modo de operación `STANDALONE`, para utilizar el dispositivo en modo integrado con nuestra API, es necesario activar el modo de operación `PDV` haciendo uso del siguiente cURL:
+``` curl
+curl --location -g --request PATCH 'https://api.mercadopago.com/point/integration-api/devices/{{device.id}}' \
+--header 'Authorization: Bearer <token>' \
+--header 'x-test-scope: sandbox' \
+--data-raw '{
+    "operating_mode":"PDV"
+}'
+```
+- **Ejemplo de respuesta** 
+
+``` json
+{
+  "operating_mode": "PDV"
+}
+```
 
 ## 3. Prepara y configura tu webhook (opcional)
-**¿Qué es un webhook?**
+**¿Qué son las notificaciones Webhooks?**
 <br/>
-Es una notificación que se envía desde nuestra API de Integraciones a tu sistema receptor mediante una llamada HTTP en
-relación a los cambios de estado que presente una intención de pago.
+Son notificaciones que se envían desde nuestra API de Integraciones a tu sistema receptor mediante una llamada HTTP en relación a los cambios de estado que presente una intención de pago.
 <br/>
 
-- **Obtén tu token:** Por medio de este endpoint puedes obtener tu token que te será útil al momento de configurar tu webhook.
+- **Obtén tu token:** Por medio de este endpoint puedes obtener un token que será necesario al momento de configurar tu webhook.
+
 ``` cURL
 curl --location --request GET 'https://api.mercadopago.com/point/integration-api/integrators' \
 --header 'Authorization: Bearer ${ACCESS_TOKEN}' \

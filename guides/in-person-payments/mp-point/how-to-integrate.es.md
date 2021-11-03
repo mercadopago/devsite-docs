@@ -18,18 +18,18 @@ sites_supported:
 
 > WARNING
 >
-> Para poder cobrar de manera integrada con nuestro dispositivo Point es necesario descargar la aplicación de Mercado Pago disponible en los marketplaces de iOS y Android.
- 
-> [<img src="/mobile/GooglePlayBadge.es.png" alt="Android Play Store" width="200"/>](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419)
-> [<img src="/mobile/AppStoreBadge.es.svg" alt="iOS App Store" width="158" style="margin:0.8em"/>](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8)
+> Para poder cobrar de manera integrada con nuestro dispositivo Point es necesario descargar la aplicación de Mercado Pago disponible en las tiendas de aplicaciones 
+> - [App Store](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8)
+> - [Google Play](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419)
 
-**Características:**
+## Características
 
-* Integrando tu aplicación la modalidad de cobros vía Point. Tu aplicación genera una orden de pago con el monto y una descripción y llama a la aplicación de Mercado Pago para que el vendedor directamente deslice la tarjeta del pagador y cobre. Una vez procesado el pago, se retorna a tu aplicación.
+* **Integrando tu aplicación la modalidad de cobros vía Point**: tu aplicación genera una orden de pago con el monto y una descripción y llama a la aplicación de Mercado Pago para que el vendedor directamente deslice la tarjeta del pagador y cobre. Una vez procesado el pago, se retorna a tu aplicación.
 
-* Integrando a tu sistema de gestión la modalidad de cobros vía Point. Desde tu sistema se genera una orden de cobro con el monto, una descripción y el dispositivo que quieras que reciba dicha orden. Automáticamente se levantará la aplicación de Mercado Pago para que el vendedor directamente deslice la tarjeta del pagador y cobre. Una vez procesado el pago, se cerrará la orden.
 
-Existen dos grandes mundos a la hora de integrar Point:
+* **Integrando a tu sistema de gestión la modalidad de cobros vía Point**: Desde tu sistema se genera una orden de cobro con el monto, una descripción y el dispositivo que quieras que reciba dicha orden. Automáticamente se levantará la aplicación de Mercado Pago para que el vendedor directamente deslice la tarjeta del pagador y cobre. Una vez procesado el pago, se cerrará la orden.
+
+**Existen dos grandes mundos a la hora de integrar Point**:
 
 1) Cuando la aplicación se puede utilizar desde el mismo dispositivo (celular o tablet) donde está instalada la aplicación de Mercado Pago. Esto se puede lograr mediante una integración de [Deep Linking](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/mp-point/how-to-integrate#bookmark_integraci%C3%B3n_v%C3%ADa_deep_linking) o [Intent-Based](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/mp-point/how-to-integrate#bookmark_integraci%C3%B3n_v%C3%ADa_intent-based).
 
