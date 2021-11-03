@@ -1,10 +1,17 @@
 
 # Web Tokenize Checkout
 
-> INFO
+> WARNING
 >
-> What is tokenize?
+> Important
 >
+> **Web Tokenize Checkout** will be deprecated in August 2022.
+> <br>
+> You are welcome to use either [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction) or [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction) as an alternative.
+> 
+
+> **What is tokenize?**
+> <br>
 > Tokenization is the process by which a card number is encrypted securely.
 
 With **Mercado Pago** *Web Tokenize Checkout* forget about the complexity of setting up your form for the selection of payment methods and tokenization. This simple integration provides you with a form with the design and the front-end ready.
