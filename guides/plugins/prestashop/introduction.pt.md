@@ -3,6 +3,12 @@
 
 Como você pode imaginar, um site sem processador de pagamento nada mais é do que um catálogo on-line. Seus clientes poderão ver seus produtos, mas não poderão pagar por eles.
 
+> WARNING
+>
+> Importante. Não corra riscos!
+>
+> Mantenha sua loja sempre atualizada com a última versão do Plugin Mercado Pago para prevenir a exposição de informações sensíveis. **Em Outubro de 2022 versões anteriores a 4.3.0 (Release: 06/11/2020), serão desligadas.**
+
 > **Sendo parceiros oficiais da PrestaShop**, fornecemos maior segurança e eficiência à sua loja.
 
 <span></span>

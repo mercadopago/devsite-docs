@@ -3,6 +3,12 @@
 
 As you can imagine, a website without a payment processor is nothing more than an online catalog. Your customers will be able to see your products but they won't be able to pay you for them.
 
+> WARNING
+>
+> Important: Do not take risks!
+>
+> Keep your store always up to date with the latest version of the Mercado Pago Plugin to avoid exposure of sensitive information. **In October, 2022, versions prior to 4.3.0 (Release: 11/06/2020), will be turned off.**
+
 > Being **official PrestaShop partners**, we provide greater security and efficiency to your store.
 
 <span></span>

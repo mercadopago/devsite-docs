@@ -2,6 +2,12 @@
 
 ## Requisitos para integrar
 
+> WARNING
+>
+> Importante. ¡No corras riesgos!
+>
+> Mantén tu tienda siempre actualizada con la última versión del Plugin Mercado Pago para prevenir la exposición de información sensible. **En octubre de 2022 las versiones anteriores a 3.5.0 (Release: 20/10/2020), serán desactivadas.**
+
 | Requisito | Descripción |
 | --- | --- |
 | Versión del Magento | 2.x |

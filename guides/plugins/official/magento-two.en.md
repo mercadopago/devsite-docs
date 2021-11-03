@@ -2,6 +2,12 @@
 
 ## Requirements to integrate
 
+> WARNING
+>
+> Important: Do not take risks!
+>
+> Keep your store always up to date with the latest version of the Mercado Pago Plugin to avoid exposure of sensitive information. **In October, 2022, versions prior to 3.5.0 (Release: 10/20/2020), will be turned off.**
+
 | Requirement | Description |
 | --- | --- |
 | Magento Version | 2.x |

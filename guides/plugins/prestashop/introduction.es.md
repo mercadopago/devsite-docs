@@ -8,6 +8,12 @@
 
 Como imaginarás, una página web sin un procesador de pagos no es más que un catálogo en línea. Tus clientes podrán ver tus productos pero no podrán pagarte por ellos.
 
+> WARNING
+>
+> Importante. ¡No corras riesgos!
+>
+> Mantén tu tienda siempre actualizada con la última versión del Plugin Mercado Pago para prevenir la exposición de información sensible. **En octubre de 2022 las versiones anteriores a 4.3.0 (Release: 06/11/2020), serán desactivadas.** 
+
 > Al ser **partners oficiales de PrestaShop**, le brindamos mayor seguridad y eficiencia a tu tienda.
 
 <span></span>
