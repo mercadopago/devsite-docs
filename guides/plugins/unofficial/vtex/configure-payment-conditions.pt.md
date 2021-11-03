@@ -134,7 +134,7 @@ Para **criar uma condição de pagamento Mercado Pago Offline, onde poderá cont
 
 1. No painel de administração de sua loja, acesse **Configurações** do módulo de pagamentos.
 2. Na aba **Condições de pagamento**, clique no botão "+".
-3. Na seção Outro, selecione a condição de pagamento **MercadoPagoOff**.
+3. Na seção **Outro**, selecione a condição de pagamento **MercadoPagoOff**.
 4. Informar o **Nome da regra** para facilitar a identificação e ative a condição de pagamento no campo `Status`.
 5. Informar sua afiliação com o **MercadoPagoV2**, no campo `Processar com a afiliação`.
 6. Clique em **Salvar**.
@@ -155,7 +155,7 @@ Trata-se de uma solução que te permite cobrar através do Mercado Pago, contan
 
 **Para criar essa condição de pagamento**, siga os passos abaixo:
 
-1. No painel de **administração** de sua loja, acesse **Configurações** do módulo de pagamentos.
+1. No painel de administração de sua loja, acesse **Configurações** do módulo de pagamentos.
 2. Na aba **Condições de pagamento**, clique no botão "+".
 3. Na seção **Outro**, selecione a condição de pagamento **MercadoPagoPro**.
 4. Informa o **Nome da regra** para facilitar a identificação e ative a condição de pagamento no campo `Status`.
@@ -170,7 +170,7 @@ IMG
 
 **Para criar essa condição de pagamento**, siga os passos abaixo:
 
-1. No painel de **administração** de sua loja, acesse **Configurações** do módulo de pagamentos.
+1. No painel de administração de sua loja, acesse **Configurações** do módulo de pagamentos.
 2. Na aba **Condições de pagamento**, clique no botão "+".
 3. Na seção **Outro**, selecione a condição de pagamento **MercadoPagoWallet**.
 4. Informa o **Nome da regra** para facilitar a identificação e ative a condição de pagamento no campo `Status`.

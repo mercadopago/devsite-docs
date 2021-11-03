@@ -1,8 +1,9 @@
 # Configurando o Parcelamento em sua conta Mercado Pago
 
 1. Acesse sua conta Mercado Pago e clique em **Seu negócio**.
-2. Clique na opção **Configurações**, navegue até o campo `Oferecer parcelas sem acréscimo` e clique em **Ativar**.
-3. Escolha **Quantas parcelas você quer oferecer?** e clique em **Ativar** para confirmar as alterações.
+2. Clique na opção **Configurações**, y seleccione **Ir para Custos**.
+3. Selecione a opção **Parcelamento sem juros** e clique no botão para ativar.
+4. Escolha quantas parcelas você quer oferecer.
 
 IMG
 
