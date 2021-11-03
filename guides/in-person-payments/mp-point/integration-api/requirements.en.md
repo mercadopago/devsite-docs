@@ -100,7 +100,6 @@ curl -X POST \
 > NOTE
 >
 > Para poder vincular tu dispositivo Point a tu cuenta de Mercado Pago es necesario descargar la aplicación en tu celular, la puedes encontrar en los marketplaces de iOS y Android.
- 
 > [<img src="/mobile/GooglePlayBadge.es.png" alt="Android Play Store" width="200"/>](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419)
 > [<img src="/mobile/AppStoreBadge.es.svg" alt="iOS App Store" width="158" style="margin:0.8em"/>](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8)
 
@@ -121,6 +120,7 @@ Una vez vinculado el dispositivo Point a tu cuenta de Mercado Pago, debes comple
 ----[mlb]----
 ![Locales y Cajas](/images/mobile/tienda-caja.pt.png)
 ------------
+
 
 #### 2.3. Autoriza y vincula cuentas en tus aplicaciones
 Para gestionar varias cuentas de Mercado Pago a la vez en tu integración, realiza el proceso de [OAuth](https://www.mercadopago.com.ar/developers/es/guides/security/oauth). También dejamos un par de videos para que conozcas acerca de OAuth
@@ -146,16 +146,18 @@ curl --location -g --request PATCH 'https://api.mercadopago.com/point/integratio
 ```
 
 ## 3. Prepara y configura tu webhook (opcional)
-**¿Qué son las notificaciones Webhooks?**
+**¿Qué es un webhook?**
 <br/>
-Son notificaciones que se envían desde nuestra API de Integraciones a tu sistema receptor mediante una llamada HTTP en relación a los cambios de estado que presente una intención de pago.
+Es una notificación que se envía desde nuestra API de Integraciones a tu sistema receptor mediante una llamada HTTP en
+relación a los cambios de estado que presente una intención de pago.
 <br/>
 
-- **Obtén tu token:** Por medio de este endpoint puedes obtener un token que será necesario al momento de configurar tu webhook.
+- **Obtén tu token:** Por medio de este endpoint puedes obtener tu token que te será útil al momento de configurar tu webhook.
 ``` cURL
 curl --location --request GET 'https://api.mercadopago.com/point/integration-api/integrators' \
 --header 'Authorization: Bearer ${ACCESS_TOKEN}' \
 ```
+
 - **Ejemplo de respuesta** 
 
 ``` json
@@ -207,7 +209,6 @@ Esta URL debe soportar las siguientes operaciones:
   ```
 
   Campo | Descripción
-    ------------------ | -----------------
   id                 | Identificador de la intención de pago
   created_at         | Fecha de creación de la intención de pago
   amount             | Monto total de la intención de pago
