@@ -10,6 +10,12 @@ Para obtener más información sobre los beneficios, tarifas, términos y tipos 
 >
 > El 13 de julio del 2021, WooCommerce notificó a sus clientes que algunas de sus versiones resultan vulnerables. Las correcciones necesarias ya se han realizado en la última actualización. Por lo tanto, es **muy importante que tu tienda tenga la última versión de WooCommerce actualizada** para evitar la exposición de información sensible. Para más información, consulta el [blog de WooCommerce](https://woocommerce.com/pt-br/posts/critical-vulnerability-detected-july-2021).
 
+> WARNING
+>
+> Importante. ¡No corras riesgos!
+>
+> Mantén tu tienda siempre actualizada con la última versión del Plugin Mercado Pago para prevenir la exposición de información sensible. ***En octubre de 2022 las versiones anteriores a 4.5.0 (Release: 26/10/2020), serán desactivadas.***
+
 En esta documentación, detallaremos todos los pasos necesarios para integrar Mercado Pago con WooCommerce. 
 
 Para completar la integración, sigue los pasos a continuación, pero recuerda verificar los requisitos previos antes de empezar.
