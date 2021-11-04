@@ -18,7 +18,7 @@ Uma outra tra característica da integração é a de poder aprovar ou recusar p
 
 > LEFT_BUTTON_REQUIRED_PT
 >
-> Pré-requisitos
+> Pré-requisitos da instalação
 >
 > Conheça os pré-requisitos para realizar a integração.
 >

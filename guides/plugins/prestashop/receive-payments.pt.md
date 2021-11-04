@@ -31,9 +31,7 @@ Com todas as etapas concluídas, seus clientes poderão realizar compras em sua 
 
 ## Motivos de recusas
 
-Com relação à **aprovação dos pagamentos** na sua loja, existem três principais motivos que podem impactar diretamente nesses resultados. 
-
-Abaixo, detalhamos os fatores que influenciam na recusa de um pagamento:
+Com relação à **aprovação dos pagamentos** na sua loja, existem três principais motivos que podem impactar diretamente nesses resultados. Abaixo, detalhamos os fatores que influenciam na recusa de um pagamento.
 
 | Motivo | Situação | Como evitar |
 |---|---|---|

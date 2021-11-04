@@ -28,9 +28,7 @@ Para realizar a integração com o Mercado Pago, siga os procedimentos abaixo.
 * **Categoria da loja:** insira a categoria dos produtos de sua loja.
 * **Integrator ID:** Insira seu *integrator_id* como membro do **&lt;dev&gt;program**, do Mercado Pago. Caso ainda não seja um membro, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) para mais informações.
 
-5. Por fim, configure as experiências de pagamento da sua loja de acordo com o tipo de checkout que você escolheu para configurar. Com o [Checkout Pro](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction) o pagamento é realizado na página do Mercado Pago (dentro ou fora da sua loja) com cartões (débito ou crédito) e dinheiro (saldo da conta do Mercado Pago ou boleto bancário), enquanto com o [Checkout Transparente](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction) o pagamento é realizado com cartão de crédito sem sair da sua loja virtual e, com o **Ticket Checkout**, os pagamentos são realizados presencialmente com dinheiro ou boleto bancário. 
-
- Verifique abaixo as principais funcionalidades que você pode oferecer.
+5. Por fim, configure as experiências de pagamento da sua loja de acordo com o tipo de checkout que você escolheu para configurar. Com o [Checkout Pro](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction) o pagamento é realizado na página do Mercado Pago (dentro ou fora da sua loja) com cartões (débito ou crédito) e dinheiro (saldo da conta do Mercado Pago ou boleto bancário), enquanto com o [Checkout Transparente](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction) o pagamento é realizado com cartão de crédito sem sair da sua loja virtual e, com o **Ticket Checkout**, os pagamentos são realizados presencialmente com dinheiro ou boleto bancário. Verifique abaixo as principais funcionalidades que você pode oferecer.
 
 > NOTE
 >
