@@ -3875,6 +3875,12 @@ En el campo `external_resource_url` vas a encontrar una dirección que contiene 
 
 Ofrece la opción de recibir pagos al instante con Pix desde cualquier banco o billetera digital a través de un código QR o un código de pago.
 
+> GIT
+>
+> Ejemplos de integración Pix
+>
+> Proporcionamos [ejemplos completos de integración](https://github.com/mercadopago/pix-payment-sample) en GitHub para que pueda descargarlo de inmediato.
+
 ### Requisito previo
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtén una llave Pix

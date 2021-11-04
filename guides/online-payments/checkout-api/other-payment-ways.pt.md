@@ -3870,27 +3870,11 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 
 Ofereça a opção de receber pagamentos no instante com Pix de qualquer banco ou carteira digital através de um código QR ou de um código de pagamento.
 
-<br>
-----[mlb]----
-
 > GIT
 >
 > Exemplos de integração Pix
 >
 > Disponibilizamos [exemplos completos de integração](https://github.com/mercadopago/pix-payment-sample) no GitHub para que você possa fazer o download imediatamente.
-
-------------
-
-----[mla, mlm, mpe, mco, mlu, mlc]----
-
-> GIT
->
-> Checkout API
->
-> Disponibilizamos [exemplos completos de integração](https://github.com/mercadopago/pix-payment-sample) no GitHub para que você possa fazer o download imediatamente.
-
-------------
-<br>
 
 ### Requisito prévio
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha uma chave Pix
