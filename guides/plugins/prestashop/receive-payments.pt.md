@@ -1,19 +1,19 @@
-# Rreceber pagamentos
+# Receber pagamentos
 
-Após realizar a integração e fazer os devidos testes, sua loja já está apta para entrar em produção.
+Após realizar a integração e fazer os devidos testes, sua loja já está pronta para entrar em produção.
 
 ## Ativação do modo produção
 
-Para começar a receber pagamentos é necessário ativar o modo Produçao. Para isso, siga os procedimentos abaixo:
+Para começar a receber pagamentos é necessário ativar o modo Produçao. Para isso, siga os procedimentos abaixo.
 
-1. Confirme se as credenciais de produção indicadas na seção **Credenciais** são as mesmas da conta que você recebe o dinheiro das vendas e preencha o formulario [Quero ir à produção](https://www.mercadopago.com/mlb/account/credentials/).
-2. Por fim, **ative o modo Produção** apenas quando você estiver pronto para vender e já tenha testado o módulo com pagamentos simulados no Sandbox.
+1. Na tela de gerenciamento do plugin (acesse o menu **Módulos e serviços** e clique em **configurar**), confirme se as [credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/go-live-requirements) de produção indicadas na seção **Credenciais** são as mesmas da conta que você recebe o dinheiro das vendas.
+2. Em seguida, clique em **sim** para ativar o modo Produção.
 
 > NOTE
 >
 > Nota
 >
-> Confira os [requisitos para entrar em produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/goto-production) se tiver alguma dúvida com o processo.
+> Confira os [requisitos para entrar em produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/go-live-requirements) se tiver alguma dúvida com o processo.
 
 Pronto! O módulo do Mercado Pago está pronto para receber pagamentos online.
 

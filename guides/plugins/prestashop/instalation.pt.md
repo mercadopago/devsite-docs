@@ -1,38 +1,22 @@
 # Instalação do plugin
 
-A instalação do plugin do Mercado Pago com o PrestaShop pode ser feita de duas formas, sendo:
+Instale o Mercado Pago para PrestaShop automaticamente seguindo as etapas abaixo.
 
-## Instalação automática
+1. No **Painel Administrador** da sua PrestaShop, acesse o **Catálogo de Módulos** e procure por Mercado Pago.
+2. Clique em Instalar e procure-o na seção **Gerenciador de módulos**.
+3. Clique em Ativar para começar a configurar o módulo na sua loja.
+4. Acesse o Catálogo de módulos, busque por Mercado Pago e clique em Instalar.
+5. **Ative-o** para começar a configurar o módulo em sua loja.
 
-Instale o Mercado Pago para PrestaShop automaticamente seguindo estas etapas na seção "Personalizar" do seu administrador:
-
-1. Vá ao **Catálogo de Módulos** e procure por "Mercado Pago" entre as ofertas dos módulos.
-2. Clique em **Instalar** e procure-o na seção "Módulos e serviços".
-3. **Ative-o** para começar a configurar o módulo na sua loja.
-
-Excelente! Você verá o módulo instalado na seção **Personalizar** do seu painel de administração.
-
-## Instalação manual
-
-Instale o módulo seguindo estas etapas:
-
-1. [Baixe o arquivo .zip](https://github.com/mercadopago/cart-prestashop-7/raw/master/mercadopago.zip) diretamente do nosso Github ou do [diretório](https://addons.prestashop.com/pt/pagamento-carta-carteira/23962-mercado-pago.html) de módulos do PrestaShop.
-2. Vá à seção "Módulos e serviços'", no menu "Módulos" do seu administrador.
-3. Clique no botão **Enviar um módulo** no canto superior direito.
-4. Selecione ou arraste o arquivo **Mercadopago.zip** baixado anteriormente.
-5. Pronto! O módulo do Mercado Pago será instalado na sua loja online.
-6. Verifique se tudo correu bem no seu painel do PrestaShop. Você verá o módulo entre os plugins instalados. 
-7. Por fim, ative o **módulo do Mercado Pago** para prosseguir para a integração da sua conta e as etapas de configuração.
-
-## Manutenção
-
-Aconselhamos que você faça uma cópia de segurança da loja on-line antes de fazer qualquer alteração. Ao ter esta cópia pronta, exclua todos os arquivos relacionados à versão anterior do módulo. Em seguida, execute as etapas de uma nova instalação para atualizar sua loja com a última versão disponível do módulo. 
+Pronto! Você verá o módulo instalado na seção **Personalizar** do seu painel de administração.
 
 > NOTE
 >
 > Importante
 >
-> Mantenha o módulo sempre atualizado com a última versão.
+> Caso você tenha problemas durante a instalação do plugin e precise entrar em contato com nosso suporte, é possível que você seja solicitado a realizar a instalação de forma manual. Veja a [FAQ](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/faq) para detalhes de como fazê-lo.
+>
+> Mantenha o plugin sempre atualizado com a última versão.
 
 <span></span>
 
