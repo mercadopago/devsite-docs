@@ -1,13 +1,20 @@
-# O que é VTEX?
+# VTEX
 
-VTEX é uma **plataforma e-commerce para sua loja virtual**, que permite processar pagamentos através do Mercado Pago. 
+VTEX é uma **plataforma e-commerce de lojas virtuais que permite processar pagamentos através do Mercado Pago**.
 
-Você poderá oferecer aos seus clientes a possibilidade de pagar com cartão de crédito, boleto bancário e Pix no próprio checkout da sua loja ou no ambiente do Mercado Pago.
+Integrando o Mercado Pago na sua loja VTEX, você instalará uma versão do [Checkout Pro e/ou do Checkout Transparente](https://www.mercadopago.com.br/ferramentas-para-vender/cobrar).
+
+Para integrar sua loja VTEX ao Mercado Pago, siga os passos:
+
+1. [Crie uma conta de vendedor no Mercado Pago caso ainda não tenha uma.](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing)
+2. [Cadastre uma afiliação de gateway de pagamento com o "Mercado Pago".]()
+3. [Configure as condições de pagamento Mercado Pago.]()
+4. [Configure device fingerprint.]()
 
 > LEFT_BUTTON_REQUIRED_PT
 >
-> Etapas para configurar
+> Afiliações de gateway
 >
-> Conheça as etapas para configurar.
+> Conheça como cadastrar afiliações de gateway.
 >
-> [Etapas para configurar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/configuration-steps)
+> [Afiliações de gateway](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/gateway-affiliations)

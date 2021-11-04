@@ -1,4 +1,4 @@
-# Migração de Mercado PagoV1 para Mercado PagoV2
+# Migração de versão de gateway
 
 > WARNING
 >

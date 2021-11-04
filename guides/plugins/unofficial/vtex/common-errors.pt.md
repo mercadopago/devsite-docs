@@ -1,4 +1,4 @@
-# Erros comuns
+# Glossário de erros
 
 Os erros mais comuns são os seguintes:
 

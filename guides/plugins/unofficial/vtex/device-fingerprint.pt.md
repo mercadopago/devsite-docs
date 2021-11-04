@@ -1,4 +1,4 @@
-# Obtenha aprovação mais rápida enviando o device fingerprint
+# Configuração de fingerprint
 
 O Mercado Pago possui suas próprias ferramentas de prevenção de fraudes. Sempre que possível, recomendamos que envie informações sobre o comportamento do cliente para detectar movimentos incomuns e evitar transações fraudulentas. Não se preocupe, cuidamos dos dados de seus clientes e não os compartilhamos com ninguém.
 

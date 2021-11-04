@@ -1,7 +1,6 @@
 # Configurar condições de pagamento
 
-Após ter criado sua afiliação com o **MercadoPagoV2**, você tem a opção de oferecer em sua loja pagamentos com **Cartões de Crédito, Cartão de Débito, Mercado Pago Offline e também pagamentos via Checkout Pro**.
-
+Após ter criado sua afiliação com o MercadoPagoV2, você deverá configurar as condições de pagamento que serão oferecidas aos compradores.
 
 > WARNING
 >
@@ -9,7 +8,25 @@ Após ter criado sua afiliação com o **MercadoPagoV2**, você tem a opção de
 >
 > Certifique em sua loja de aplicativos da VTEX se o App **Mercado Pago Payment APP** esteja instalado para utilização das condições de pagamento **MercadoPagoPro, MercadoPagoWallet e MercadoPagoOff** ou solicite a instalação pela equipe VTEX através de ticket no **Support VTEX**.
 
+A configuração das condições de pagamento é feita no portal do administrador da plataforma VTEX na aba **Condições de pagamento** do menu **Configurações**. 
+
+Nessa aba você deverá clicar no botão  "+" (*Adicionar nova condição de pagamento para...*) e selecionar uma condição de pagamento.
+
+Todas as condições de pagamento exigem que você preencha o `Nome da Regra`, para facilitar sua identificação, e clique em `Status` para ativar a condição de pagamento. Finalmente, no campo `Processar com afiliação`, você deve selecionar a opção **MercadoPagoV2** da lista de afiliações.
+
 IMG
+
+Você poderá configurar as seguintes condições de pagamento:
+
+* **Configuração de cartão de Crédito:** seção *Cartão de Crédito* da aba de *condições de pagamento* e selecione a bandera.
+* **Configuração de cartão de Débito:** seção *Cartão de Débito* da aba de *condições de pagamento* e selecione a bandera.
+----[mlb]----
+* **Configuração do Boleto Bancário:** eseção *Boleto* da aba de *condições de pagamento*.
+* **Configuração do PIX:** seção *Pagamento instantãneo* da aba de *condições de pagamento*.
+------------
+* **Configuração do Mercado Pago Off:** seção *Outro* da aba de *condições de pagamento*.
+* **Configuração do Checkout Pro:** eseção *Outro* da aba de *condições de pagamento*.
+
 
 > NOTE
 >
@@ -19,32 +36,19 @@ IMG
 
 &nbsp;
 
-## Cartão de crédito
+## Configuração de cartão de Crédito
 
-Para **criar uma condição de pagamento cartão de crédito utilizando sua afiliação com o Mercado Pago**, siga os passos abaixo:
+A configuração do **cartão de crédito** apresenta os seguintes campos adicionais:
 
-1. No painel de administração de sua loja, acesse **Configurações** do módulo de pagamentos.
-2. Na aba **Condições de pagamento**, clique no botão "+" (*Adicionar nova condição de pagamento para...*).
-3. Na seção **Cartão de Crédito**, escolha qual bandeira irá adicionar ao meio de pagamento. Veja [aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/payment-methods) as bandeiras disponíveis.
-4. Informa o **Nome da regra** para facilitar a identificação e ative a condição de pagamento no campo `Status`.
-5. Informar sua afiliação com o MercadoPagoV2, no campo `Processar com a afiliação`.
-6. Em opções de parcelamento, escolha parcelamento **Automático**, onde utiliza as condições de parcelamento diretamente de sua conta Mercado Pago.
-7. Clique em **Salvar**.
-
-IMG
-
-&nbsp;
-
-## Cartão de débito
-
-Para **criar uma condição de pagamento cartão de débito utilizando sua afiliação com o Mercado Pago**, siga os passos abaixo:
-
-1. No painel de administração de sua loja, acesse **Configurações** do módulo de pagamentos.
-2. Na aba **Condições de pagamento**, clique no botão "+" (*Adicionar nova condição de pagamento para...*).
-3. Na seção **Cartão de Débito**, escolha qual bandeira irá adicionar ao meio de pagamento. Veja [aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/payment-methods) as bandeiras disponíveis.
-4. Informa o **Nome da regra** para facilitar a identificação e ative a condição de pagamento no campo `Status`.
-5. Informar sua afiliação com o MercadoPagoV2, no campo `Processar com a afiliação`.
-6. Clique em **Salvar**.
+* **À vista ou parcelado?** 
+  * **À vista:** selecione para pagamentos à vista.
+  * **Parcelado:** selecione para pagamentos parcelados e preencha os campos conforme abaixo.
+    * **Total de Parcelas:** indique total de parcelas. As opções são **Intervalo** (1-12) ou **Únicas** (1,3,6,12).
+    * **Parcela mínima:**
+    * **Cobrança:**
+    * **Adicionar juros:**
+    * **Juros externo:** Esta opção está desativada por padrão. Clique para ativar.
+* **Adicionar condição especial:**
 
 IMG
 
@@ -52,22 +56,7 @@ IMG
 
 ----[mlb]----
 
-## Boleto bancário
-
-Para **criar uma condição de pagamento boleto bancário utilizando sua afiliação com o Mercado Pago**, siga os passos abaixo:
-
-1. No painel de administração de sua loja, acesse **Configurações** do módulo de pagamentos.
-2. Na aba **Condições de pagamento**, clique no botão "+" (Adicionar nova condição de pagamento para...).
-3. Na seção **Boleto**, escolha **Boleto Bancário** para adicionar ao meio de pagamento.
-4. Informa o **Nome da regra** para facilitar a identificação e ative a condição de pagamento no campo `Status`.
-5. Informar sua afiliação com o MercadoPagoV2, no campo `Processar com a afiliação`.
-6. Clique em **Salvar**.
-
-IMG
-
-&nbsp;
-
-## Pix
+## Configuração do PIX
 
 > **Requisito prévio: Obtenha uma chave Pix**
 > <br>
@@ -77,112 +66,14 @@ IMG
 > <br>
 > Considere que o registro da chave Pix pode levar alguns minutos.
 
-Para **criar uma condição de pagamento Pix utilizando sua afiliação com o MercadoPago V2**, siga os passos abaixo:
-
-1. No painel de administração de sua loja, acesse **Configurações** do módulo de pagamentos.
-2. Na aba **Condições de pagamento**, clique no botão "+".
-3. Na seção **Pagamento Instantâneo**, escolha o meio de pagamento Pix.
-4. Informar o **Nome da regra** para facilitar a identificação e ative a condição de pagamento no campo `Status`.
-5. Informar sua afiliação com o **MercadoPagoV2**, no campo `Processar com a afiliação`.
-6. Clique em **Salvar**.
-
-IMG
-
-E pronto! Sua condição de pagamento Pix com Mercado Pago já está ativa!
-
 &nbsp;
 
 ------------
-
-## Mercado Pago Offline
-
-----[mlb]----
-
-Para **criar uma condição de pagamento Mercado Pago Offline, onde poderá contar com Boleto Bancário e Pagamentos com PEC (em lotéricas), utilizando sua afiliação com o MercadoPago V2**, siga os passos abaixo:
-
-------------
-
-----[mla]----
-
-Para **criar uma condição de pagamento Mercado Pago Offline, onde poderá contar com Rapipago e Pago Fácil, utilizando sua afiliação com o MercadoPago V2**, siga os passos abaixo:
-
-------------
-
-----[mlm]----
-
-Para **criar uma condição de pagamento Mercado Pago Offline, onde poderá contar com 7-Eleven, Circle K, Soriana, Extra, Calimax, Santander, Citibanamex, Chedraui, Telecom, BBVA e Farmacias del Ahorro, utilizando sua afiliação com o MercadoPago V2**, siga os passos abaixo:
-
-------------
-
-----[mlu]----
-
-Para **criar uma condição de pagamento Mercado Pago Offline, onde poderá contar com RedPagos e Abitab, utilizando sua afiliação com o MercadoPago V2**, siga os passos abaixo:
-
-------------
-
-----[mco]----
-
-Para **criar uma condição de pagamento Mercado Pago Offline, onde poderá contar com Baloto e Efecty, utilizando sua afiliação com o MercadoPago V2**, siga os passos abaixo:
-
-------------
-
-----[mpe]----
-
-Para **criar uma condição de pagamento Mercado Pago Offline, onde poderá contar com BBVA, BCP, Interbank, Scotiabank, BanBif, Tambo, Kasnet, Western Union, e qualquer outro lugar que aceite PagoEfectivo utilizando sua afiliação com o MercadoPago V2**, siga os passos abaixo:
-
-------------
-
-1. No painel de administração de sua loja, acesse **Configurações** do módulo de pagamentos.
-2. Na aba **Condições de pagamento**, clique no botão "+".
-3. Na seção **Outro**, selecione a condição de pagamento **MercadoPagoOff**.
-4. Informar o **Nome da regra** para facilitar a identificação e ative a condição de pagamento no campo `Status`.
-5. Informar sua afiliação com o **MercadoPagoV2**, no campo `Processar com a afiliação`.
-6. Clique em **Salvar**.
-
-IMG
-
-E pronto! Sua condição de pagamento Mercado Pago Offline já está ativa!
-
-&nbsp;
-
-## Checkout Mercado Pago
-
-Trata-se de uma solução que te permite cobrar através do Mercado Pago, contando com todos os meios de pagamentos disponíveis da plataforma. O MercadoPagoPro é a solução mais completa, enquanto o MercadoPagoWallet agrega a carteira Mercado Pago na sua loja.
-
-### Configuração do meio de pagamento MercadoPagoPro
-
-**O comprador realizará o pagamento no ambiente do Mercado Pago via formulário web modal** diretamente em sua loja.
-
-**Para criar essa condição de pagamento**, siga os passos abaixo:
-
-1. No painel de administração de sua loja, acesse **Configurações** do módulo de pagamentos.
-2. Na aba **Condições de pagamento**, clique no botão "+".
-3. Na seção **Outro**, selecione a condição de pagamento **MercadoPagoPro**.
-4. Informa o **Nome da regra** para facilitar a identificação e ative a condição de pagamento no campo `Status`.
-5. Informar sua afiliação com o **MercadoPagoV2**, no campo `Processar com a afiliação`.
-6. Clique em `Salvar`.
-
-IMG
-
-### Configuração do meio de pagamento MercadoPagoWallet
-
-**O comprador finaliza o pagamento com a carteira do Mercado Pago exclusivamente de usuários cadastrados** e uma vez concluído o processo, voltará para sua loja.
-
-**Para criar essa condição de pagamento**, siga os passos abaixo:
-
-1. No painel de administração de sua loja, acesse **Configurações** do módulo de pagamentos.
-2. Na aba **Condições de pagamento**, clique no botão "+".
-3. Na seção **Outro**, selecione a condição de pagamento **MercadoPagoWallet**.
-4. Informa o **Nome da regra** para facilitar a identificação e ative a condição de pagamento no campo `Status`.
-5. Informar sua afiliação com o **MercadoPagoV2**, no campo `Processar com a afiliação`.
-6. Clique em **Salvar**.
-
-IMG
 
 > LEFT_BUTTON_REQUIRED_PT
 >
-> Parcelamento
+> Device Fingerprint
 >
-> Conheça como configurar o Parcelamento em sua conta Mercado Pago.
+> Conheça como configurar o fingerprint.
 >
-> [Parcelamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/configure-installments)
+> [Device Fingerprint](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/device-fingerprint)
