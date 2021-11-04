@@ -24,7 +24,7 @@ Install the [app extension of our transparent checkout](https://apps.shopify.com
 >
 > Important
 >
-> Soon, the Mercado Pago Transparent Checkout for Shopify will be deprecated for new users and replaced by a new model, more customizable and that allows offering Pix. [Click here](https://forms.gle/meBfN6KH6497rFSZ7) and register to receive the launch communication.
+> Soon, the Mercado Pago Transparent Checkout for Shopify will be deprecated for new users and replaced by a new model, more customizable and that allows offering Pix. 
 
 
 ### What can I do with Mercado Pago Transparent Checkout?
