@@ -20,7 +20,7 @@ Uma outra característica da integração é a de poder configurar a aprovação
 
 > LEFT_BUTTON_REQUIRED_PT
 >
-> Pré-requisitos da instalação
+> Pré-requisitos da integração
 >
 > Conheça os pré-requisitos para realizar a integração.
 >
