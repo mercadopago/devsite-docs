@@ -53,7 +53,17 @@ Nessa tela, encuentre estas **condições de pagamento** nas seguintes seções:
 
 Todas as condições de pagamento exigem que você preencha o `Nome da Regra`, para facilitar sua identificação, e clique em `Status` para ativar a condição de pagamento. Finalmente, no campo `Processar com afiliação`, você deve selecionar a opção **MercadoPagoV2** da lista de afiliações.
 
+Se necessário, você pode adicionar uma ou mais **condições especiais**:
+
+  * **Período:** de/até, recorrência.
+  * **País:** selecione o país de venda.
+  * **Política Comercial:** canal de venda.
+  * **Condição Comercial:**
+  * **Nome da conta:** selecione a conta para a qual a condição é válida.
+
 IMG
+
+Para finalizar a configuração, clique em **Salvar**.
 
 > NOTE
 >
@@ -75,7 +85,6 @@ A configuração do **cartão de crédito** apresenta os seguintes campos adicio
     * **Cobrança:**
     * **Adicionar juros:**
     * **Juros externo:** Esta opção está desativada por padrão. Clique para ativar.
-* **Adicionar condição especial:**
 
 IMG
 
