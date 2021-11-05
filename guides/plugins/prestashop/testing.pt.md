@@ -7,6 +7,7 @@ O módulo do Mercado Pago vem com o **ambiente Sandbox** ativo por padrão. Ness
 3. Em seguida, desça até a seção **Teste sua loja** e clique em **Quero testar minhas vendas**.
 
 ![Testando pagamentos](/images/prestashop/teste_pagto_pt.png)
+
 4. Na página inicial da sua loja na PrestaShop, selecione um produto e clique em adicionar.
 5. Com o produto selecionado, finalize o pedido.
 6. Preencha com as informações pessoais, indique um endereço de entrega e selecione um método de envio. Lembrando que todas essas informações são apenas para o teste.
@@ -19,7 +20,7 @@ Tudo está certo? Ative o **modo Produção** para receber pagamentos reais.
 
 > LEFT_BUTTON_REQUIRED_PT
 >
-> Receber pagamentos
+> Recebebimento de pagamentos
 >
 > Saiba como ativar sua loja para processar vendas reais.
 >
