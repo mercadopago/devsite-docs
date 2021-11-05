@@ -2,33 +2,25 @@
 
 Para realizar a integração com o Mercado Pago, siga os procedimentos abaixo.
 
-1. Na tela de gerenciamento do plugin (acesse o menu **Módulos e serviços** e clique em **configurar**), você deverá preencher os campos solicitados de acordo com suas informações de negócio.
+1. No Painel Administrativo da sua loja, acesse o menu **Módulos e serviços**, localize o plugin do Mercado Pago e clique em **configurar**. 
+
+2. Na tela de gerenciamento do plugin, preencha os campos solicitados de acordo com suas informações de negócio.
 
 ![Configurar integração](/images/prestashop/integracao_pt.gif)
 
-2. No campo **Localização**, selecione o país de operação da sua conta do Mercado Pago. 
+3. No campo **Localização**, selecione o país de operação da sua conta do Mercado Pago. 
 
-3. Na seção **Credenciais**, insira as suas credenciais de:
-
-* **Teste**: em um primeiro momento, será necessário realizar testes para garantir o funcionamento correto do fluxo de pagamentos.
-
-* **Produção**: ao finalizar os testes iniciais, habilitaremos a loja para o processamento de vendas reais e é por meio dessa credencial que a ativação é feita.
+4. Na seção **Credenciais**, confirme se os campos estão devidamente preenchidos de acordo com as [credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) indicadas em seu seu [Dashboard](https://www.mercadopago.com.br/developers/panel).
 
 ![Credenciais](/images/prestashop/credenciais_pt.png)
 
-> NOTE
->
-> Nota
->
-> Não há problema em usar as mesmas credenciais em várias lojas. Entretanto, se o vendedor quiser rastrear cada uma de suas lojas, ele pode criar um [app-id](http://applications.mercadopago.com/) diferente, um para cada loja e usar as credenciais desse app-id especificado. Caso ainda não tenha as informações das Credenciais, acesse nossa documentação [Credenciais](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) e siga o passo a passo para obtê-las. 
-
-4. Com as credenciais preenchidas, configure as informações de negócio necessárias para identificar sua loja.
+5. Em seguida, configure as informações de negócio necessárias para identificar sua loja.
 
 * **Nome da loja:** insira o nome da sua loja.
 * **Categoria da loja:** insira a categoria dos produtos de sua loja.
 * **Integrator ID:** Insira seu *integrator_id* como membro do **&lt;dev&gt;program**, do Mercado Pago. Caso ainda não seja um membro, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) para mais informações.
 
-5. Por fim, configure as experiências de pagamento da sua loja de acordo com o tipo de checkout que você escolheu para configurar. Com o [Checkout Pro](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction) o pagamento é realizado na página do Mercado Pago (dentro ou fora da sua loja) com cartões (débito ou crédito) e dinheiro (saldo da conta do Mercado Pago ou boleto bancário), enquanto com o [Checkout Transparente](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction) o pagamento é realizado com cartão de crédito sem sair da sua loja virtual e, com o **Ticket Checkout**, os pagamentos são realizados presencialmente com dinheiro ou boleto bancário. Verifique abaixo as principais funcionalidades que você pode oferecer.
+6. Por fim, configure as experiências de pagamento da sua loja de acordo com o tipo de checkout que você escolheu para configurar, podendo ser o [Checkout Pro](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction), o [Checkout Transparente](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction) e o **Ticket Checkout**.
 
 > NOTE
 >
@@ -48,7 +40,7 @@ Para realizar a integração com o Mercado Pago, siga os procedimentos abaixo.
 * **Meios de pagamento presenciais:** selecione quais meios de pagamento serão oferecidos nos pagamentos realizados via Ticket Checkout.
 * **Vencimento pagamento:** após a seleção dos meios de pagamento presenciais, indique em quantos dias estes vencerão após a sua emissão.
 
-Pronto! Agora o plugin do Mercado Pago com o PrestaShop está integrado à sua loja e, antes de colocar em produção para vendas reais, recomendamos testar a loja para validar o seu funcionamento
+Pronto! Agora o plugin do Mercado Pago com a PrestaShop está integrado à sua loja.
 
 > LEFT_BUTTON_REQUIRED_PT
 >
