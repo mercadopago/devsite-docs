@@ -12,62 +12,46 @@ A configuração das condições de pagamento é feita no portal do administrado
 
 Nessa aba você deverá clicar no botão  "+" (*Adicionar nova condição de pagamento para...*) e selecionar uma condição de pagamento.
 
+Para mais informações sobre como configurar as condições de pagamento na VTEX, clique [aqui](https://help.vtex.com/pt/tutorial/condicoes-de-pagamento--tutorials_455).
+
 IMG
 
-Você poderá configurar as seguintes condições de pagamento:
-
-* **Configuração de cartão de Crédito**
-* **Configuração de cartão de Débito**
-----[mlb]----
-* **Configuração do Boleto Bancário** 
-* **Configuração do PIX**
-------------
-* **Configuração do Mercado Pago Off**
-* **Configuração do Checkout Pro: MercadoPagoWallet e MercadoPagoPro**
-
-Nessa tela, encuentre estas **condições de pagamento** nas seguintes seções:
+A integração com o Mercado Pago permite configurar as seguintes condições de pagamento:
 
 ----[mlb]----
 
-|Condição de pagamento|Seção|
+|Condição de pagamento|Seção na aba condições de pagamento|
 |---|---|
 |Cartão de Crédito|Cartão de Crédito|
 |Cartão de Débito|Cartão de Débito|
-|Cartão de Débito|Boleto|
+|Boleto Bancário|Boleto|
 |PIX|Pagamento instantãneo|
-|Mercado Pago Off|Outro|
-|Checkout Pro|Outro|
+|MercadoPagoOff|Outro|
+|MercadoPagoWallet|Outro|
+|MercadoPagoPro|Outro|
 
 ------------
 
 ----[mla, mlu, mco, mlm, mlc, mpe]----
 
-|Condição de pagamento|Seção|
+|Condição de pagamento|Seção na aba condições de pagamento|
 |---|---|
 |Cartão de Crédito|Cartão de Crédito|
 |Cartão de Débito|Cartão de Débito|
-|Mercado Pago Off|Outro|
-|Checkout Pro|Outro|
+|MercadoPagoOff|Outro|
+|MercadoPagoWallet|Outro|
+|MercadoPagoPro|Outro|
 
 ------------
 
-Todas as condições de pagamento exigem que você preencha o `Nome da Regra`, para facilitar sua identificação, e clique em `Status` para ativar a condição de pagamento. Finalmente, no campo `Processar com afiliação`, você deve selecionar a opção **MercadoPagoV2** da lista de afiliações.
-
-Se necessário, você pode adicionar uma ou mais **condições especiais**:
-
-  * **Período:** de/até, recorrência.
-  * **País:** selecione o país de venda.
-  * **Política Comercial:** canal de venda.
-  * **Condição Comercial:**
-  * **Nome da conta:** selecione a conta para a qual a condição é válida.
-
-IMG
+Você também pode configurar **condições especiais** de pagamento. Clique [aqui](https://help.vtex.com/pt/tutorial/condicoes-especiais--tutorials_456?&utm_source=admin) para obter mais informações.
 
 Para finalizar a configuração, clique em **Salvar**.
 
-> NOTE
+
+> WARNING
 >
-> NOTA
+> Importante
 > 
 > As mudanças nas Condições de pagamento podem levar até 10 minutos para serem aplicadas.
 
@@ -75,16 +59,9 @@ Para finalizar a configuração, clique em **Salvar**.
 
 ## Configuração de cartão de Crédito
 
-A configuração do **cartão de crédito** apresenta os seguintes campos adicionais:
+A configuração das condições de pagamento com **cartão de crédito** requer que você selecione a bandeira do cartão de crédito que deseja adicionar. Além disso, sua configuração pode exigir que você preencha campos adicionais aos apresentados acima, dependendo se você selecionar **À vista** ou **Parcelado**. 
 
-* **À vista ou parcelado?** 
-  * **À vista:** selecione para pagamentos à vista.
-  * **Parcelado:** selecione para pagamentos parcelados e preencha os campos conforme abaixo.
-    * **Total de Parcelas:** indique total de parcelas. As opções são **Intervalo** (1-12) ou **Únicas** (1,3,6,12).
-    * **Parcela mínima:**
-    * **Cobrança:**
-    * **Adicionar juros:**
-    * **Juros externo:** Esta opção está desativada por padrão. Clique para ativar.
+Para mais informações sobre como configurar parcelas na VTEX, clique [aqui](https://help.vtex.com/pt/tutorial/condicoes-de-pagamento--tutorials_455#parcelado-sem-juros).
 
 IMG
 
@@ -94,15 +71,9 @@ IMG
 
 ## Configuração do PIX
 
-Você precisa de uma chave PIX para configurar esta condição de pagamento:
+Para configurar o PIX em sua integração com o Mercado Pago é necessário que sua chave PIX esteja configurada.
 
-> **Requisito prévio: Obtenha uma chave Pix**
-> <br>
-> Para começar, você deve ter cadastrada uma chave Pix na conta do vendedor. Este dado é único, serve para identificar sua conta e permitirá que você utilize as funcionalidades do meio de pagamento.
-> <br>
-> [Conheça como criar uma chave Pix](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required).
-> <br>
-> Considere que o registro da chave Pix pode levar alguns minutos.
+Para obter mais informações sobre como criar sua chave PIX, clique [aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required).
 
 Se você já tem sua chave PIX, o processo segue os passos comuns às demais condições de pagamento.
 
