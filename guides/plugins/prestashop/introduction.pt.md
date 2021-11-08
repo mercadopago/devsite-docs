@@ -1,6 +1,6 @@
 # PrestaShop
 
-O [PrestaShop](https://www.prestashop.com/pt/) é uma plataforma de e-commerce com software de código aberto, que permite a qualquer usuário criar e desenvolver um site comercial. Como parceiros oficiais da PrestaShop, fornecemos maior segurança e eficiência à sua loja.
+A [PrestaShop](https://www.prestashop.com/pt/) é uma plataforma de e-commerce com software de código aberto, que permite a qualquer usuário criar e desenvolver um site comercial. Como parceiros oficiais da PrestaShop, fornecemos maior segurança e eficiência à sua loja.
 
 Essa documentação foi pensada para que você faça toda a configurção necessária para integrar o plugin do Mercado Pago com sua loja na PrestaShop, sem precisar escrever uma linha de códigos sequer para instalá-lo nas lojas dos seus clientes.
 

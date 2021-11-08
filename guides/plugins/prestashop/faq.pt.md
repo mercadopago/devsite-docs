@@ -15,15 +15,15 @@ Para instalar o plugin de forma manual, siga os passos abaixo:
 
 ### 2. Como validar as notificações?
 
-No plugin do PrestaShop são recebidas apenas notificações do tipo IPN. Para mais informações, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn).
+No plugin da PrestaShop são recebidas apenas notificações do tipo IPN. Para mais informações, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn).
 
 ### 3. Oferecemos suporte para o modo de gateway?
 
-Ainda não oferecemos suporte ao **modo Gateway** no PrestaShop.
+Ainda não oferecemos suporte ao **modo Gateway** na PrestaShop.
 
 ### 4. O plugin faz conversão de moeda?
 
-Não, o plugin do PrestaShop não faz conversão de moeda.
+Não, o plugin da PrestaShop não faz conversão de moeda.
 
 ### 5. O que é o integrator ID?
 
