@@ -10,7 +10,7 @@ Com o plugin do Mercado Pago você pode configurar o pagamento utilizando o [Che
 
 Também há possibilidade de utilizar o [Checkout Transparente](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction), em que o pagamento é realizado com cartão de crédito sem sair da sua loja virtual e, o **Ticket Checkout**, com os pagamentos sendo realizados presencialmente com dinheiro ou boleto bancário. 
 
-Uma outra característica da integração é a de poder configurar a aprovação ou a recusa de pagamentos instantaneamente através da ativação do **modo binário**, além da possibilidade de que os usuários paguem na sua loja sem estarem obrigatoriamente cadastrados no Mercado Pago.
+Uma outra característica da integração é a possibilidade de ativação do modo binário, um recurso que permite configurar a aprovação ou a recusa automática de pagamentos. Além disso, os usuários também poderão pagar na sua loja sem estarem obrigatoriamente cadastrados no Mercado Pago.
 
 > NOTE
 >

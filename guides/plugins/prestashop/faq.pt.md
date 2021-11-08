@@ -8,12 +8,10 @@ Para instalar o plugin de forma manual, siga os passos abaixo:
 2. Vá à seção "Módulos e serviços'", no menu "Módulos" do seu administrador.
 3. Clique no botão **Enviar um módulo** no canto superior direito.
 4. Selecione ou arraste o arquivo **Mercadopago.zip** baixado anteriormente.
-5. Em seguida, verifique se tudo correu bem no seu painel do PrestaShop. Você verá o módulo entre os plugins instalados. 
-6. Por fim, ative o **módulo do Mercado Pago** para prosseguir para a integração da sua conta e as etapas de configuração.
+5. Em seguida, no Painel Administrativo da sua loja, acesse o menu **Módulos e serviços** e localize o plugin do Mercado Pago.
+6. Por fim, **ative o plugin** para prosseguir para a integração da sua conta e as etapas de configuração.
 
 ![Ativar plugin manualmente](/images/prestashop/instalacao_manual_pt.gif)
-
-Ao concluir esses passos, o plugin do Mercado Pago para PrestaShop estará instalado e ativado em sua loja e você poderá configurar sua integração.
 
 ### 2. Como validar as notificações?
 
