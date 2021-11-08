@@ -1,6 +1,8 @@
-# Tipos e Métodos de Pagamentos
+# Tipos e métodos de pagamentos
 
-Este documento contém todos os tipos e métodos de pagamento que você pode escolher para incluir ou excluir.
+Ao registar as afiliações de gateway, indicará os métodos e tipos de pagamento que deseja excluir, preenchendo os campos `Métodos de pagamento excluídos` e`Tipos de pagamento excluídos`, respectivamente.
+
+Este documento contém os métodos e tipos de pagamento disponíveis para sua integração.
 
 ----[mla]----
 

@@ -23,8 +23,8 @@ Para mais informações acesse o link [Resultados da criação de uma cobrança]
 
 > LEFT_BUTTON_RECOMMENDED_PT
 >
-> Erros comuns
+> Glossário de erros
 >
 > Conheça os erros mais comuns.
 >
-> [Erros comuns](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/common-errors)
+> [Glossário de erros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/common-errors)

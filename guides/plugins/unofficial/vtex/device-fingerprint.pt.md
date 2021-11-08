@@ -17,7 +17,7 @@ script.setAttribute("view","checkout");
 document.body.appendChild(script);
 ```
 
-IMG
+![Configuração de fingerprint](/images/vtex/devicefingerprint-pt.gif)
 
 > LEFT_BUTTON_RECOMMENDED_PT
 >

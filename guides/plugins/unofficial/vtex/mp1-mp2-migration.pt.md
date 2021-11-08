@@ -20,6 +20,6 @@ Para realizar a migração basta realizar os seguintes passos:
 >
 > Criando afiliação de gateway MercadoPagoV2
 >
-> Conheça como como criar uma afiliação com Mercado PagoV2.
+> Conheça como como criar uma afiliação com MercadoPagoV2.
 >
-> [Criando afiliação de gateway MercadoPagoV2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/mpv2-affiliation)
+> [Criando afiliação de gateway MercadoPagoV2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/gateway-affiliations)
