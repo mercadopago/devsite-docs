@@ -31,6 +31,7 @@ The following code will insert a payment button. When the buyer presses the butt
 2. Add the SDK credentials to enable its use and initialize the checkout using the ID or selector for the element where the payment button should be displayed:
 
 ```html
+<div class=tokenizer-container>
 <script>
 // Add the SDK credentials
 const mp = new MercadoPago('PUBLIC_KEY', {locale: 'es-AR'});
@@ -47,6 +48,7 @@ mp.checkout({
  }
 });
 </script>
+</div>
 ```
 
 >WARNING

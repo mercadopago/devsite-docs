@@ -31,6 +31,7 @@ Quando você tiver adicionado o código ao seu site, será adicionado um botão 
 2. Configure as credenciais do SDK para seu uso e inicializa seu checkout com o identificador do elemento onde deverá ser apresentado o botão de pagamento:
 
 ```html
+<div class=tokenizer-container>
 <script>
 // Adicione as credenciais do SDK
 const mp = new MercadoPago('PUBLIC_KEY', {locale: 'es-AR'});
@@ -47,7 +48,9 @@ mp.checkout({
  }
 });
 </script>
+</div>
 ```
+
 >WARNING
 >
 >Importante
