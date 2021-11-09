@@ -12,6 +12,8 @@ A configuração das condições de pagamento é feita no portal do administrado
 
 Nessa aba você deverá clicar no botão  "+" (*Adicionar nova condição de pagamento para...*) e selecionar uma condição de pagamento.
 
+Na próxima tela deve-se escrever o **Nome da Regra** para identificá-la facilmente, ativar a condição de pagamento no campo `Status`, selecionar **MercadoPagoV2** na lista ofrecida pelo campo ` Processar com a afiliação` e, finalmente, salvar suas alterações clicando em `Salvar`.
+
 Para mais informações sobre como configurar as condições de pagamento na VTEX, clique [aqui](https://help.vtex.com/pt/tutorial/condicoes-de-pagamento--tutorials_455).
 
 ![Configurar condições de pagamento](/images/vtex/paymentconditions-pt.gif)
@@ -54,6 +56,18 @@ Para finalizar a configuração, clique em **Salvar**.
 > Importante
 > 
 > As mudanças nas Condições de pagamento podem levar até 10 minutos para serem aplicadas.
+
+&nbsp;
+
+## Configuração do Checkout Mercado Pago
+
+Configure esta solução para cobrar através do **Mercado Pago**, contando com todos os meios de pagamentos disponíveis da plataforma.
+
+Se você configurar **MercadoPagoPro**, o comprador realizará o pagamento no ambiente do Mercado Pago via formulário web modal diretamente em sua loja.
+
+Se você configurar  **MercadoPagoWallet**, o comprador finaliza o pagamento com a carteira do Mercado Pago exclusivamente de usuários cadastrados e uma vez concluído o processo, voltará para sua loja.
+
+Você configura seguindo as mesmos passos comuns às demais condições de pagamento.
 
 &nbsp;
 

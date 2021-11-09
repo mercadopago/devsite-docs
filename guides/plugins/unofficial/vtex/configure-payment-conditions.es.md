@@ -13,6 +13,8 @@ La configuración de los planes de pago se realiza en el portal de administraci�
 
 En esta pestaña, debes hacer clic en el botón "+" (*Agregar nuevo plan de pago para ...*) y seleccionar un plan de pago.
 
+En la pantalla siguiente, debes escribir el **Nombre de la Regla** para identificarla fácilmente, activar la condición de pago desde el campo `Status`, seleccionar **MercadoPagoV2** en la lista que ofrece el campo `Proceso con la afiliación` y, finalmente, guardar tus cambios haciendo clic en `Salva`.
+
 Para obtener más información sobre cómo configurar los términos de pago en VTEX, haz clic [aquí](https://help.vtex.com/es/tutorial/condicoes-de-pagamento--tutorials_455).
 
 ![Configurar planes de pago](/images/vtex/paymentconditions-es.gif)
@@ -55,6 +57,18 @@ Para finalizar la configuración, haz clic en **Salva**.
 > NOTA
 > 
 > Los cambios en las Condiciones de pago pueden demorar hasta 10 minutos en aplicarse.
+
+&nbsp;
+
+## Configuración de Checkout Mercado Pago
+
+Configura esta solución para cobrar a través de **Mercado Pago**, utilizando todos los métodos de pago disponibles en la plataforma.
+
+Si configuras **MercadoPagoPro**, el comprador pagará en el entorno de Mercado Pago a través del formulario web modal directamente en tu tienda.
+
+Si configuras **MercadoPagoWallet**, el comprador completa el pago con la billetera de Mercado Pago exclusivamente para usuarios registrados y una vez finalizado el proceso, regresará a tu tienda.
+
+Se configura siguiendo los mismos pasos comunes a otras condiciones de pago.
 
 &nbsp;
 
