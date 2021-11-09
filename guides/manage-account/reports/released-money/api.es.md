@@ -93,7 +93,6 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)` si no se encuentra ningún e
 
 El objeto de respuesta tendrá una estructura similar al ejemplo siguiente:
 
-Ejecuta el curl que necesites para crear, consultar y actualizar tus reportes.
 
 ### Crear configuraciones
 
