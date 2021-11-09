@@ -577,7 +577,7 @@ O objeto de resposta terá uma estrutura semelhante ao exemplo abaixo:
 ```json
 {
     "file_name_prefix": "release-report-USER_ID",
-    "include_withdrawal_at_end": triue,
+    "include_withdrawal_at_end": true,
     "scheduled": false,
     "execute_after_withdrawal": false,
     "separator": ",",
