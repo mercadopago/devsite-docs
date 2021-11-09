@@ -6,7 +6,7 @@ Após ter criado sua afiliação com o **MercadoPagoV2**, você deverá configur
 >
 > Importante
 >
-> Certifique em sua loja de aplicativos da VTEX se o App **Mercado Pago Payment APP** esteja instalado para utilização das condições de pagamento **MercadoPagoPro, MercadoPagoWallet e MercadoPagoOff** ou solicite a instalação pela equipe VTEX através de ticket no **Support VTEX**.
+> Certifique em sua loja de aplicativos da VTEX se o App **Mercado Pago Payment APP** esteja instalado para utilização das condições de pagamento **MercadoPagoPro, MercadoPagoWallet e MercadoPagoOff** ou solicite a instalação pela equipe VTEX através de ticket no [Support VTEX](https://help.vtex.com/es/support).
 
 A configuração das condições de pagamento é feita no portal do administrador da plataforma VTEX na aba **Condições de pagamento** do menu **Configurações** no módulo de **Pagamentos**. 
 
