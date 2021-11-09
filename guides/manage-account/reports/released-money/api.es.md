@@ -701,7 +701,7 @@ Recibirás como respuesta un `HTTP STATUS 202 (Accepted)` si no se encuentra nin
 
 ### 2. Consulta
 
-Consulta la API para ver si la generación de reportes quedó lista:
+Consulta a la API para ver si la generación de reportes quedó lista:
 
 [[[
 ```curl
