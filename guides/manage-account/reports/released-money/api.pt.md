@@ -629,7 +629,7 @@ Gere seus relatórios de forma manual configurando três instâncias: criação,
 
 ### 1. Criação
 
-Faça o POST à API especificando as datas de início e fim desejadas, assim:
+Faça uma chamada POST à API especificando as datas de início e fim desejadas, assim:
 
 [[[
 ```curl
