@@ -94,7 +94,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)` si no se encuentra ningún e
 El objeto de respuesta tendrá una estructura similar al ejemplo siguiente:
 
 
-### Crear configuraciones
+### Crea tus configuraciones
 
 Crea tus preferencias de generación por API para exportar columnas, nombrar a tus archivos y configurar otros ajustes:
 
