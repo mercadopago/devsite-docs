@@ -1,12 +1,12 @@
-# Tipos y medios de pago
+# Tipos y métodos de pago
 
-Al registrar afiliaciones de gateway, indicarás los medios y tipos de pago que deseas excluír llenando los campos `Métodos de pago excluídos` y `Tipos de pago excluidos`, respectivamente.
+Al registrar afiliaciones de gateway, indicarás los métodos y tipos de pago que deseas excluír llenando los campos `Métodos de pago excluídos` y `Tipos de pago excluidos`, respectivamente.
 
 Este documento contiene los medios y tipos de pago disponibles para tu integración.
 
 ----[mla]----
 
-|Nombre|Medios de Pago|Tipos de Pago|Condiciones en VTEX|
+|Nombre|Métodos de Pago|Tipos de Pago|Condiciones en VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro y MercadoPagoWallet|
 |Mastercard|`master`|`credit_card`|Mastercard, MercadoPagoPro y MercadoPagoWallet|
@@ -25,7 +25,7 @@ Este documento contiene los medios y tipos de pago disponibles para tu integraci
 
 ----[mlb]----
 
-|Nombre|Medios de Pago|Tipos de Pago|Condiciones en VTEX|
+|Nombre|Métodos de Pago|Tipos de Pago|Condiciones en VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro y MercadoPagoWallet|
 |Mastercard|`master`|`credit_card`|Mastercard, MercadoPagoPro y MercadoPagoWallet|
@@ -42,7 +42,7 @@ Este documento contiene los medios y tipos de pago disponibles para tu integraci
 
 ----[mlc]----
 
-|Nombre|Medios de Pago|Tipos de Pago|Condiciones en VTEX|
+|Nombre|Métodos de Pago|Tipos de Pago|Condiciones en VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro y MercadoPagoWallet|
 |Mastercard|`master`|`credit_card`|Mastercard, MercadoPagoPro y MercadoPagoWallet|
@@ -55,7 +55,7 @@ Este documento contiene los medios y tipos de pago disponibles para tu integraci
 
 ----[mco]----
 
-|Nombre|Medios de Pago|Tipos de Pago|Condiciones en VTEX|
+|Nombre|Métodos de Pago|Tipos de Pago|Condiciones en VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro y MercadoPagoWallet|
 |Mastercard|`master`|`credit_card`|Mastercard, MercadoPagoPro y MercadoPagoWallet|
@@ -71,7 +71,7 @@ Este documento contiene los medios y tipos de pago disponibles para tu integraci
 
 ----[mlm]----
 
-|Nombre|Medios de Pago|Tipos de Pago|Condiciones en VTEX|
+|Nombre|Métodos de Pago|Tipos de Pago|Condiciones en VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro y MercadoPagoWallet|
 |Mastercard|`master`|`credit_card`|Mastercard, MercadoPagoPro y MercadoPagoWallet|
@@ -86,7 +86,7 @@ Este documento contiene los medios y tipos de pago disponibles para tu integraci
 
 ----[mpe]----
 
-|Nombre|Medios de Pago|Tipos de Pago|Condiciones en VTEX|
+|Nombre|Métodos de Pago|Tipos de Pago|Condiciones en VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro y MercadoPagoWallet|
 |Mastercard|`master`|`credit_card`|Mastercard, MercadoPagoPro y MercadoPagoWallet|
@@ -100,7 +100,7 @@ Este documento contiene los medios y tipos de pago disponibles para tu integraci
 
 ----[mlu]----
 
-|Nombre|Medios de Pago|Tipos de Pago|Condiciones en VTEX|
+|Nombre|Métodos de Pago|Tipos de Pago|Condiciones en VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro y MercadoPagoWallet|
 |Mastercard|`master`|`credit_card`|Mastercard, MercadoPagoPro y MercadoPagoWallet|

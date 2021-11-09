@@ -21,8 +21,8 @@ document.body.appendChild(script);
 
 > LEFT_BUTTON_RECOMMENDED_ES
 >
-> Tipos y Medios de Pago
+> Tipos y métodos de Pago
 >
-> Conoce los diferentes tipos y medios de pago.
+> Conoce los diferentes tipos y métodos de pago.
 >
-> [Tipos y Medios de Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/payment-methods)
+> [Tipos y métodos de Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/payment-methods)
