@@ -6,7 +6,7 @@ Gere o relatório de Liquidações manualmente quantas vezes quiser ou programe-
 
 > WARNING
 >
-> O relatório de Dinheiro disponível será desabilitado a partir de 1o de março de 2022.
+> A partir do dia 1º de março de 2022, o relatório Dinheiro disponível será desabilitado
 >
 > Use o [relatório de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberações------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
 
