@@ -623,7 +623,7 @@ Confira os campos que você pode configurar para ajustar as suas preferências a
 | `coupon_detailed` (opcional) | <br/>Inclui uma coluna para mostrar os detalhes dos cupons de desconto.<br/><br/> |
 | `scheduled` (read_only) | <br/>Campo informativo que indica se já existem relatórios programados na conta do usuário.<br/><br/> |
 
-## Gerando os seus relatórios manualmente 
+## Gerando seus relatórios manualmente 
 
 Gere seus relatórios de forma manual configurando três instâncias: criação, consulta e *download*.
 
