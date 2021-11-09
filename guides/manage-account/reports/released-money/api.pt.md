@@ -939,7 +939,7 @@ headers = {
 
 ### 2. Configuração
 
-De acordo com o cenário desejado, execute os *curls* abaixo para iniciar e cancelar, respectivamente, a geração programada do seu relatório:
+Use as chamadas de API necessárias para iniciar e cancelar a geração programada do seu relatório:
 
 #### Iniciar geração automática
 
