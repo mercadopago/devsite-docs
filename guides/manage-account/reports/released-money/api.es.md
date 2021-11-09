@@ -600,7 +600,7 @@ Conoce los campos que puedes configurar para ajustar tus preferencias antes de e
 | `coupon_detailed` (opcional) | <br/>Suma una columna para mostrar el detalle de los cupones de descuento.<br/><br/> |
 | `scheduled` (read_only) | <br/>Campo informativo que indica si ya existen reportes programados en la cuenta de usuario.<br/><br/> |
 
-## Generar tu reporte de forma manual 
+## Genera tu reporte de forma manual 
 
 Genera tus reportes de forma manual configurando tres instancias: creación, consulta y descarga.
 
