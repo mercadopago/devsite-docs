@@ -1,7 +1,6 @@
 
 # Geração via API
 
-Você pode gerar seu relatório via API, tanto de forma manual quanto programada.
 Ganhe tempo e automatize a **frequência de geração** do relatório de Dinheiro disponível sempre que quiser.
 
 >WARNING
