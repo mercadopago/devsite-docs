@@ -60,7 +60,7 @@ Para finalizar la configuración, haz clic en **Salva**.
 
 ## Configuración de tarjeta de crédito
 
-Configurar planes de pago con **tarjeta de crédito** requiere que selecciones la marca de tarjeta de crédito que deseas agregar. Además, su configuración puede requerir que completes campos adicionales a los presentados anteriormente, dependiendo de si seleccionas **A Vista** o **En Cuotas**.
+Configurar planes de pago con **tarjeta de crédito** requiere que [selecciones la marca de tarjeta de crédito](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/payment-methods) que deseas agregar. Además, su configuración puede requerir que completes campos adicionales a los presentados anteriormente, dependiendo de si seleccionas **A Vista** o **En Cuotas**.
 
 Para obtener más información sobre cómo configurar las cuotas en VTEX, haz clic [aquí](https://help.vtex.com/es/tutorial/condicoes-de-pagamento--tutorials_455#parcelado-sem-juros).
 

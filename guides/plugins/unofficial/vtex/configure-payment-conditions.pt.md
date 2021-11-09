@@ -59,7 +59,7 @@ Para finalizar a configuração, clique em **Salvar**.
 
 ## Configuração de cartão de Crédito
 
-A configuração das condições de pagamento com **cartão de crédito** requer que você selecione a bandeira do cartão de crédito que deseja adicionar. Além disso, sua configuração pode exigir que você preencha campos adicionais aos apresentados acima, dependendo se você selecionar **À vista** ou **Parcelado**. 
+A configuração das condições de pagamento com **cartão de crédito** requer que você [selecione a bandeira do cartão de crédito](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/payment-methods) que deseja adicionar. Além disso, sua configuração pode exigir que você preencha campos adicionais aos apresentados acima, dependendo se você selecionar **À vista** ou **Parcelado**. 
 
 Para mais informações sobre como configurar parcelas na VTEX, clique [aqui](https://help.vtex.com/pt/tutorial/condicoes-de-pagamento--tutorials_455#parcelado-sem-juros).
 
