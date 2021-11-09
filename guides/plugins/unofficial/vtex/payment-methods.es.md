@@ -30,8 +30,8 @@ Este documento contiene los medios y tipos de pago disponibles para tu integraci
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro y MercadoPagoWallet|
 |Mastercard|`master`|`credit_card`|Mastercard, MercadoPagoPro y MercadoPagoWallet|
 |American Express|`amex`|`credit_card`|American Express, MercadoPagoPro y MercadoPagoWallet|
-|Elo|`elo`|`credit_card`|American Express, MercadoPagoPro y MercadoPagoWallet|
-|Hipercard|`hipercard`|`credit_card`|American Express, MercadoPagoPro y MercadoPagoWallet|
+|Elo|`elo`|`credit_card`|Elo, MercadoPagoPro y MercadoPagoWallet|
+|Hipercard|`hipercard`|`credit_card`|Hipercard, MercadoPagoPro y MercadoPagoWallet|
 |Tarjeta de débito Caixa (marca Visa)|`debvisa`|`debit_card`|Tarjeta de débito virtual Caixa, MercadoPago Pro y MercadoPagoWallet|
 |Tarjeta de débito Caixa (marca Elo)|`debelo`|`debit_card`|Tarjeta de débito virtual Caixa, MercadoPago Pro y MercadoPagoWallet|
 |PEC|`pec`|`ticket`|MercadoPagoPro y MercadoPagoOff|
