@@ -765,7 +765,7 @@ request(options, callback);
 
 Recibirás como respuesta un `HTTP STATUS 200 (Ok)` si no se encuentra ningún error.
 
-El objeto de respuesta tendrá una estructura similar al ejemplo siguiente:
+El objeto de respuesta tendrá una estructura similar a este ejemplo:
 
 ```json
 [
