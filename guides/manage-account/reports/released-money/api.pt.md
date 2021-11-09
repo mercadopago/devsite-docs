@@ -19,7 +19,7 @@ Gere o relatório de Liquidações manualmente quantas vezes quiser ou programe-
 > Tenha em mãos o [Glossário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/glossary) para conferir termos técnicos durante a geração do seu relatório.
 Execute o _curl_ que você precisa para consultar, gerar e atualizar os seus relatórios.
 
-### Consultando configurações
+### Consulte seus configurações
 
 Consulte a configuração dos seus relatórios via API da seguinte maneira:
 
