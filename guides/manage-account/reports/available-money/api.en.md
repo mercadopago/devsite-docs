@@ -7,7 +7,7 @@ Generate the Released money report manually as many times as you want or schedul
 >
 > The Available Balance report will be disabled from March 1st, 2022.
 >
-> Use the [Release report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
+> You can use the [Release report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
 
 ## Set up your reports
 
