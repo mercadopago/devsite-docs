@@ -13,7 +13,7 @@ Generate the Released money report manually as many times as you want or schedul
 
 You can configure your reports according to your preferences. Up next, you'll find the API calls you can make to create, consult and update your reports.
 
-### Create configuration
+### Create your configuration
 
 Create your API generation preferences to export columns, name your files and configure other settings:
 
