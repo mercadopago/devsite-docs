@@ -2,6 +2,25 @@
 
 Descubra tudo sobre as novas versões e atualizações das integrações do Mercado Pago.
 
+## Novembro 2021
+
+### 10 de novembro
+
+> CHANGELOG
+>
+> Nova versão SDK Java
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK JAVA
+
+Lançamos a nova versão 1.11.1 do SDK Java.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-java/releases).
 ---
 ## Outubro 2021
 
