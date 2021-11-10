@@ -20,7 +20,7 @@ You can configure your reports according to your preferences. Up next, you'll fi
 >
 > Have the [Glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/release-money/glossary) at hand to review technical terms when managing your reports.
 
-### Check configuration 
+### Check the configuration 
 
 Check the configuration of your reports by API in this way:
 
