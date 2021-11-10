@@ -1,14 +1,14 @@
 # Notificações
  
-As notificações são respostas dadas pelo servidor a partir de transações (eventos) realizadas em sua plataforma. Com as notificações você terá um informativo em tempo real das mudanças produzidas nos diferentes recursos das APIs do Mercado Pago.
+As notificações são respostas dadas pelo servidor a partir de transações (eventos) realizadas em sua plataforma, sendo esses eventos quaisquer tipos de atualização no objeto relatado, incluindo alterações de status ou atributo. Com as notificações você terá um informativo em tempo real das mudanças produzidas nos diferentes recursos das APIs do Mercado Pago.
+
+Veja abaixo os tipos de notificações disponiveis para integração com o Mercado Pago.
  
 > WARNING
 >
 > Importante
 >
-> Lembre-se de que, não é possível receber notificações em ambiente de teste.
->
-> Um evento é qualquer tipo de atualização no objeto relatado, incluindo alterações de status ou atributo.
+> Não é possível receber notificações em ambiente de teste.
  
 ## Webhook
  
