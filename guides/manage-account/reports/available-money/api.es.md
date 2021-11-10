@@ -323,7 +323,7 @@ request(options, callback);
 ```
 ]]]
 
-Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
+Recibirás como respuesta un `HTTP STATUS 200 (Ok)`:
 
 ```json
 {
