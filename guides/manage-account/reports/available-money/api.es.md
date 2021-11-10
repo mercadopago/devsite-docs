@@ -352,7 +352,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
 }
 ```
 
-### Actualizar configuración
+### Actualiza tu configuración
 
 Cuando necesites actualizar tu configuración, puedes ajustar los siguientes atributos:
 
