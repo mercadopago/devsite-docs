@@ -254,7 +254,7 @@ You will receive an `HTTP STATUS 201 (Created)` in response.
 }
 ```
 
-### Check configuration 
+### Check the configuration 
 
 Check the configuration of your reports by API in this way:
 
