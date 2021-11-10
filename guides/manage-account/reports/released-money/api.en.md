@@ -22,7 +22,7 @@ You can configure your reports according to your preferences. Up next, you'll fi
 
 ### Check the configuration 
 
-Check the configuration of your reports by API in this way:
+You can check the configuration of your reports by API using these codes:
 
 [[[
 ```curl
