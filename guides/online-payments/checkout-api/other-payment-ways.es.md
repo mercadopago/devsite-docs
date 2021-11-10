@@ -3879,7 +3879,7 @@ Ofrece la opción de recibir pagos al instante con Pix desde cualquier banco o b
 >
 > Ejemplos de integración Pix
 >
-> Proporcionamos [ejemplos completos de integración](https://github.com/mercadopago/pix-payment-sample) en GitHub para que pueda descargarlo de inmediato.
+> Te dejamos [ejemplos completos de integración](https://github.com/mercadopago/pix-payment-sample) en GitHub para que puedas descargar al instante.
 
 ### Requisito previo
 
