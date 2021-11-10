@@ -3875,7 +3875,7 @@ You can receive payment immediately with Pix from any bank or digital wallet usi
 >
 > Pix integration examples
 >
-> We have [complete integration examples](https://github.com/mercadopago/pix-payment-sample) available on GitHub so you can download it immediately.
+> Use our [complete integration examples](https://github.com/mercadopago/pix-payment-sample) on GitHub to download instantly.
 
 ### Prerequisite
 
