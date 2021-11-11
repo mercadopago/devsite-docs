@@ -60,7 +60,7 @@ Para criar uma **afiliação de gateway de pagamento com o MercadoPagoV2**, siga
 |Modo de processamento - Modo de procesamiento|Configura se o pagamento será gateway ou agregador.|
 |Insira seu Integrator ID - Introduce tu Integrator ID|Para programadores ou agências que realizam a integração.|
 |Selecione a moeda das vendas - Seleccione la moneda de venta|Moeda a ser configurada (USD ou Local)|
-|Captura|Define quando capturar um pagamento de cartão de crédito aprovado. Será usado pelos sellers que tem antifraude externo.|
+|Prazo para captura de dados de cartão da compra -  Plazo para captura de datos de tarjetas de compra|Caso utilize um Anti Fraude externo complementar você pode configurar um prazo de captura automática de uma transação aprovada, para evitar cancelamentos desnecessários.|
 
 1. Clique em **Salvar**.
 
