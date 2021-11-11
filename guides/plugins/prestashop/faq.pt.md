@@ -1,4 +1,4 @@
-FAQ
+# FAQ
  
 ### 1. Como faço para instalar o plugin de forma manual?
  
@@ -17,7 +17,7 @@ Para instalar o plugin de forma manual, siga os passos abaixo:
  
 No plugin da PrestaShop são recebidas apenas notificações do tipo IPN. Para mais informações, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn).
  
-### 3. Oferecemos suporte para o modo de gateway?
+### 3. Oferecemos suporte para o modo de Gateway?
  
 Ainda não oferecemos suporte ao **modo Gateway** na PrestaShop.
  

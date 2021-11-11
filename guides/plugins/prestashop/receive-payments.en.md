@@ -1,31 +1,52 @@
-# Test and Receive payments
-
-
-## How to test the module
-
-The Mercado Pago module comes with the Sandbox environment active by default. Simulate payments in the store with this testing environment and verify that everything works well before you start receiving real payments from your customers.
+# Receiving of payments
  
-This is where the test credentials that you copied into the module come into play when [integrating Mercado Pago to your store](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/integration). You need them to be able to test the module.
-
-When you test, verify that the payment flow works correctly and that the payment preferences are what you have set. Do you see that everything is going well? Disable Sandbox mode and go to Production mode to receive real payments.
-
+After performing the integration and testing, your store is ready to go into production.
+ 
+## Activation of production mode
+ 
+To start receiving payments you need to activate Production mode. To do this, follow the procedures below.
+ 
+1. On your store's Administrative Panel, access the **Modules and Services** menu, find the Mercado Pago plugin and click in **configure**.
+2. On the plugin management screen, confirm that the production [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) are the same as the account that you get money from sales. This information can be viewed on your [Dashboard](https://www.mercadopago.com.br/developers/panel).
+3. Then click **yes** to activate Production mode.
+ 
 > NOTE
 >
-> Note
+> Important
 >
-> All our modules have an open source license. Do you want to participate in its construction? [Suggest improvements and editions in Github](https://github.com/mercadopago/cart-prestashop-7).
+> Check the [requirements to go into production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/go-live-requirements) if you have any questions with the process.
+ 
+Ready! The Mercado Pago plugin is ready to receive payments online.
+ 
+## Sales Processing
+ 
+With all the steps completed, your customers will be able to make purchases in your store. When performing a transaction, it is common for some messages to return with specific information about the purchase, as every sale generates a payment status that shows the status of the sale including confirmation, pending or denial of payment and other important information about the transaction.
+ 
+For more information, access the [Activities](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) section of your Mercado Pago account.
+ 
+![Payment status](/images/prestashop/status_en.png)
 
-## Go to Production
+## Reasons for refusals 
 
-To start charging you must complete the form [I want to go to Production](https://www.mercadopago.com/mla/account/credentials/).
+Regarding the **approval of payments** in your store, three main reasons can directly impact these results.  
 
-> Check the [requirements to go to production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production) if you have any doubts during the process.
+Below, we detail the factors that influence a payment refusal.
 
-Verify that the Production credentials of the module are those of the account that receives the money from the sales.
+| Reason | Situation | How to avoid |
+|---|---|---|
+| Buyer's mistakes | Errors in filling in address, CPF or card details. | Checkout with clear information in the step-by-step purchase. |
+| Banking refusals | Cards with an expiration date, lack of limit, insufficient funds, or disabled for online purchases. | Offer alternatives to other methods and/or payment terms. |
+| Fraud prevention | Mercado Pago's anti-fraud system protects your business against malicious attacks that can generate losses.| This type of refusal is beneficial to your store. |
 
-Activate the Production mode only when you are ready to sell and have tested the module with simulated payments in Sandbox. 
+For more information on the reasons mentioned above, visit the articles:
 
-![Production Homologation Flow](/images/prestashop/receive_payments_en.gif)
+* [Payment refusals](https://conteudo.mercadopago.com.br/entenda-como-funcionam-as-recusas-de-aprovacao-de-pagamentos-no-mercado-pago) 
+* [How to handle payment denials](https://conteudo.mercadopago.com.br/como-lidar-com-as-recusas-de-pagamento-do-cartao-de-credito-no-seu-e-commerce)
 
-**Done! The Mercado Pago module is ready to receive online payments.**
-
+> LEFT_BUTTON_RECOMMENDED_EN
+>
+> FAQ
+>
+> Check the main doubts about the integration.
+>
+> [FAQ](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/faq)
