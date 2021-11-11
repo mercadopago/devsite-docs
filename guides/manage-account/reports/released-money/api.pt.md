@@ -10,7 +10,7 @@ Gere o relatório de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, 
 >
 > Use o [relatório de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberações------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
 
-## Configurar os seus relatórios
+## Configure seus relatórios
 
 > NOTE
 >
@@ -119,7 +119,7 @@ O objeto de resposta terá uma estrutura semelhante ao exemplo abaixo:
 }
 ```
 
-### Criando configurações
+### Crie as configurações
 
 Crie suas preferências de geração de relatório via API para exportar colunas, nomear seus arquivos e configurar outros ajustes:
 
@@ -794,7 +794,7 @@ O objeto de resposta terá uma estrutura semelhante ao exemplo a seguir:
 [
     {
         "id": 12345678,
-        "user_id": USER-ID,
+        "user_id": "USER_ID",
         "begin_date": "2015-05-01T00:00:00Z",
         "end_date": "2015-06-01T23:59:59Z",
         "file_name": "release-report-USER_ID-2016-01-20-131015.csv",
@@ -945,7 +945,7 @@ Use as chamadas de API necessárias para iniciar e cancelar a geração programa
 
 xxxxxxxx
 
-#### Cancelar geração automática
+#### Cancele a geração automática
 [[[
 ```curl
 curl -X DELETE \
@@ -1035,7 +1035,7 @@ O objeto de resposta terá uma estrutura semelhante ao exemplo de cancelamento d
 }
 ```
 
-### 3. *Download*
+### 3. Download
 
 Baixe o relatório criado com o seguinte comando: 
 
