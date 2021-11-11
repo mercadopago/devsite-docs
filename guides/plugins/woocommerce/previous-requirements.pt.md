@@ -6,7 +6,7 @@
 >
 > Marque no seu calendário: dia 27 de novembro acontecerá o WordCamp, o evento online e gratuito sobre Desenvolvimento, Design, Negócios e Comunidade WordPress com brindes oficiais e palestras exclusivas Mercado Pago. 
 > 
-> [Garanta já o seu lugar](https://saopaulo.wordcamp.org/2021/ingressos/)!  
+> [Garanta já o seu lugar!](https://saopaulo.wordcamp.org/2021/ingressos/) 
 
 Para utilizar a integração do Mercado Pago com o WooCommerce em seu WordPress, é preciso atender aos requisitos abaixo. 
 
