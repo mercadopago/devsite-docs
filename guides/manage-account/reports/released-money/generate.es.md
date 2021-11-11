@@ -1,8 +1,4 @@
-----[mla]----
-# ¿Cómo generar tu reporte de Liquidaciones?
-------------
 
-----[mlm, mlb, mlc, mco, mlu, mpe]----
 # ¿Cómo generar tu reporte de Liberaciones?
 ------------
 
@@ -12,7 +8,9 @@ Puedes generar un reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, 
 
 | Canales | Descripción |
 | --- | --- |
-| Panel de Mercado Pago | Es muy simple y rápido. Para generarlo desde tu cuenta de Mercado Pago, ve a [Reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/movements) y elige la opción de "Ver reportes creados".<br/><br/>Sigue el paso a paso para [generar reportes desde el panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/panel). |
+| Panel de Mercado Pago | Para generar manualmente un reporte desde su panel de Mercado Pago, ve a [Reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/movements) y elige la opción de "Ver reportes creados".<br/><br/>Sigue el paso a paso para [generar reportes desde el panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/panel). |
+| Integración vía API | Para generar manualmente un reporte o programar la frecuencia de uno según tus necesidades, utiliza nuestra integración vía API. <br/><br/>Lee la documentación para [generar reportes por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/api). |
+
 
 ## Características técnicas del reporte
 
