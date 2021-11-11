@@ -1,18 +1,18 @@
 
 # Generación por API
 
-Genere el reporte de Liberaciones de forma manual las veces que quieras o prográmalo según tus necesidades de frecuencia a través de nuestra API. 
+Genera el reporte de ----[mla]----Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberaciones------------ de forma manual las veces que quieras o prográmalo según tus necesidades de frecuencia a través de nuestra API. 
 
 > WARNING
 >
-> El reporte de Dinero retirado será deshabilitado a partir del 1 de marzo de 2022.
+> El reporte de Dinero retirado será deshabilitado desde el 1 de marzo de 2022
 >
-> Usa el [reporte de ----[mla]----Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberaciones------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.
+> Puedes usar el [reporte de ----[mla]----Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberaciones------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.
 
 
-## Configurar tus reportes
+## Configura tus reportes
 
-Ejecuta el curl que necesites para consultar, crear y actualizar tus reportes.
+Puedes configurar tus reportes según lo que necesites. A continuación, te mencionamos cuáles son las llamadas a la API que puedes hacer para crear, consultar y actualizar tus reportes.
 
 > NOTE
 >
@@ -20,7 +20,7 @@ Ejecuta el curl que necesites para consultar, crear y actualizar tus reportes.
 >
 > Ten a mano el [Glosario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) para consultar algún término técnico durante la generacion de tus reportes.
 
-### Consultar configuraciones
+### Consulta tu configuración
 
 Consulta la configuración de tus reportes por API de esta forma:
 

@@ -12,7 +12,7 @@ Gere manualmente o relatório de dinheiro ----[mla]----liquidado------------ ---
 
 ## Configurar seus relatórios
 
-Execute o curl que você precisa para gerar, consultar e atualizar seus relatórios.
+É possível configurar seus relatórios de acordo com o que você precisa. A seguir, mostramos quais as chamadas de API necessárias para criar, consultar e atualizar seus relatórios.
 
 ### Criar configuração
 
@@ -324,7 +324,7 @@ request(options, callback);
 ```
 ]]]
 
-Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
+Como resposta, você receberá `HTTP STATUS 200 (Ok)`:
 
 ```json
 {
@@ -962,12 +962,12 @@ request(options, callback);
 ```
 ]]]
 
-Como resposta, você receberá um `HTTP STATUS 200 (Ok)`
+Como resposta, você receberá `HTTP STATUS 200 (Ok)`:
 
 ```json
 {
     "id": 2541818,
-    "user_id": "USER-ID",
+    "user_id": "USER_ID",
     "begin_date": "2019-07-01T06:00:00Z",
     "end_date": "2019-08-01T05:59:59Z",
     "created_from": "schedule",

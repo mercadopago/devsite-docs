@@ -11,9 +11,9 @@ Genera el informe de dinero liberado manualmente tantas veces como desees o prog
 
 ## Configura tus reportes
 
-Ejecuta el curl que necesites para crear, consultar y actualizar tus reportes.
+Puedes configurar tus reportes según lo que necesites. A continuación, te mencionamos cuáles son las llamadas a la API que puedes hacer para crear, consultar y actualizar tus reportes.
 
-### Crear configuración
+### Crea tus configuración
 
 Crea tus preferencias de generación por API para exportar columnas, nombrar a tus archivos y configurar otros ajustes:
 

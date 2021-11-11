@@ -363,9 +363,9 @@ The response object will have a similar structure to the following example:
 }
 ```
 
-### Check configuration 
+### Check the configuration 
 
-Check the configuration of your reports by API in this way:
+To check the configuration of your reports by API using these codes:
 
 [[[
 ```curl
@@ -432,7 +432,7 @@ request(options, callback);
 ```
 ]]]
 
-You will receive an `HTTP STATUS 200 (OK)` in response.
+You will receive an `HTTP STATUS 200 (OK)` in response:
 
 ```json
 {
@@ -1083,7 +1083,7 @@ request(options, callback);
 ```
 ]]]
 
-### 2. Cancel scheduled generation
+#### Cancel scheduled generation
 
 [[[
 ```curl
@@ -1217,7 +1217,7 @@ request(options, callback);
 ```
 ]]]
 
-You will receive an  `HTTP STATUS 200 (Ok)` in response.
+You will receive an  `HTTP STATUS 200 (Ok)` in response:
 
 ```csv
 DATE,SOURCE_ID,EXTERNAL_REFERENCE,RECORD_TYPE,DESCRIPTION,NET_CREDIT_AMOUNT,NET_DEBIT_AMOUNT,GROSS_AMOUNT,MP_FEE_AMOUNT,FINANCING_FEE_AMOUNT,SHIPPING_FEE_AMOUNT,TAXES_AMOUNT,COUPON_AMOUNT,INSTALLMENTS,PAYMENT_METHOD
