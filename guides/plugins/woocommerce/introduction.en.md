@@ -1,65 +1,23 @@
-# Mercado Pago on WooCommerce
-<br/>
+# WooCommerce
 
-The Mercado Pago module for WooCommerce allows you to expand the functionalities of your online store and offer a unique payment experience for your customers.
+[WooCommerce](https://woocommerce.com/) is a plugin that allows you to enable your [WordPress](https://wordpress.com/pt-br/create/?utm_source=google&utm_campaign=google_wpcom_search_brand_desktop_br_pt&utm_medium=paid_search&keyword=wordpress&creative=405409862800&campaignid=662299893&adgroupid=55904101192&matchtype=e&device=c&network=g&targetid=kwd-313411415&gclsrc=aw.ds&gclid=Cj0KCQjw6s2IBhCnARIsAP8RfAjJw-W6L7Lm5t3QdPwg8oRXUA783ncsLK4sSYBaU5ObfjUylCwwi20aAgLXEALw_wcB) website/blog to work as a virtual store capable of offering buyers the possibility to make payments using Mercado Pago through an integration.
 
-If you already use WooCommerce to create e-commerce sites in WordPress, one of the most popular content managers worldwide, you can count on our module to add a trusted payment processor on your website or that of your clients.
+For more information about the benefits, taxes, terms, and types of checkout available, access the [WooCommerce with Mercado Pago page](https://www.mercadopago.com.br/ferramentas-para-vender/link-de-pagamento-plugins-checkout/plugins/vender-woocommerce?utm_experiment=optimize&matt_tool=10047855&matt_word=MLB_MP_G_AO_OP_COW_SEARCH_SELL_TXS_Checkout-WooCommerce-Branded&gclid=Cj0KCQjw6s2IBhCnARIsAP8RfAjJHJVBE0is6oJv5K3_v9qiv44mYs52j7TlFtAMe2AVWKoJ-DAga_4aAuH7EALw_wcB).
 
 > WARNING
 >
 > Important announcement
 >
-> On July 13th 2021, WooCommerce notified its customers that some of its versions were vulnerable. The necessary fixes were already made in the last update. Therefore, it is **very important that your store has the latest version of WooCommerce updated** to prevent exposure of sensitive information. For more information, see the [WooCommerce blog.](https://woocommerce.com/pt-br/posts/critical-vulnerability-detected-july-2021/)
+> On July 13th, 2021, WooCommerce notified its customers that some of its versions were vulnerable. The necessary fixes were already made in the last update. Therefore, it is very important that your store is updated to the latest version of WooCommerce to prevent exposing sensitive information. For more information, see the [WooCommerce blog](https://woocommerce.com/pt-br/posts/critical-vulnerability-detected-july-2021).
 
-## What can I do with Mercado Pago on WooCommerce
+In this documentation, we will detail all the necessary steps to integrate Mercado Pago with WooCommerce. 
 
-Install the payment processor in WooCommerce and take your sales to another level with the best shopping experience:
+To complete the integration, follow the steps below, but remember to check the prerequisites before starting.
 
-| Characteristics | Description |
-| --- | --- |
-| Installments | Sell in installments and offer the promotions you want. |
-| Money release | Instantly or with the rates and terms that best suit the business. |
-| Payment methods | Accept payments by credit and debit card, ----[mlb]---- Pix,------------ cash and payments with Mercado Pago account money. |
-| Checkout types | Checkout Pro, Custom Checkout |
-| Payment as a guest | Users don’t need to be registered in Mercado Pago in order to pay in WooCommerce. |
-| Binary mode | Approve or reject payments instantly and automatically. |
-| Currency conversion | No more compatibility issues. Convert the currency you use in WooCommerce to the currency of your Mercado Pago account. |
-| Payment with card stored in Mercado Pago  | Allows customers to use their card data saved in Mercado Pago without having to fill in card data at the store's checkout. |
-
->**Are you a developer?**
->This guide is also designed to speed up the installation, integration and configuration of our module in the most recognized e-commerce platforms worldwide.
-
-<span></span>
-
-> NOTE
+> LEFT_BUTTON_REQUIRED_EN
 >
-> Note
+> Prerequisites
 >
-> All our modules have an open source license. **Do you want to participate in its construction?** [Suggest improvements and editions](https://github.com/mercadopago/cart-woocommerce) on Github.
-
-## Checkout types
-
-With these payment options we cover the needs of each business. Review the features to choose which one best suits your business.
-
-| Characteristics | Checkout Pro | Custom Checkout |
-| --- | --- | --- |
-| Payment methods | Payments with cards, ----[mlb]---- Pix,------------ cash and money in Mercado Pago account. | Payments with debit and credit cards, ----[mlb]---- Pix,------------ boleto or in-person payments. |
-| Payment experience | Your customers pay from the Mercado Pago page with a redirect (outside your store) or modal (inside your store) format. | Your customers pay without leaving your online store. |
-| Guest users | Your customers can pay with or without an account in Mercado Pago. | Your customers pay as guests, without a Mercado Pago account. |
-
-> NOTE
+> Check the prerequisites to perform the integration.
 >
-> Note
->
-> Check out the [Checkout Pro documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction) to learn more about all its characteristics and functionalities.
-
-### Next steps
-
-> LEFT_BUTTON_REQUIRED_ES
->
-> Install Mercado Pago in WooCommerce
->
-> Follow these steps to install the Mercado Pago module in your online store.
->
-> 
-> [Install](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/instalation)
+> [Prerequisites](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/previous-requirements)

@@ -6,7 +6,6 @@
 >
 > ¡Lo sentimos! Por el momento, esta página no se encuentra disponible en español.<br>
 > [Ir a documentación en portugués](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex)
-
 ------------
 
 ----[mla]----
@@ -14,28 +13,25 @@
 # VTEX
 
 ## ¿Qué es VTEX?
-
 [VTEX](https://www.vtex.com/es/) es una **plataforma de e-commerce que permite recibir pagos con Mercado Pago.**
 
 Puedes ofrecer a tus clientes la posibilidad de pagar con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), [tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito) [medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, tienes la opción de [recibir pagos directamente desde el sitio web de Mercado Pago](#bookmark_condición_de_pagos_con_checkout_pro).
-
 
 ## Etapas para configurar
 
 Los **pasos para comenzar a operar con Mercado Pago** son los siguientes:
 
-1. Crea una [cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) en Mercado Pago si aún no tiene una.
+1. Crea una [cuenta de vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) en Mercado Pago si aún no tienes una.
 2. Registra la afiliación con Mercado Pago.
 3. Configura las condiciones de pago.
 4. Agrega el device fingerprint.
-
 
 ## Configurar la afiliación de pasarela con Mercado Pago
 
 Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos pasos:
 
 1. Accede a las configuraciones del módulo en el panel de administración de tu tienda.
-2. En la pestaña de Afiliación de Gateway, haz clic en el botón +.
+2. En la pestaña de Afiliación de Gateway, haz clic en el botón "+".
 3. Ingresa en el conector MercadoPagoV1.
 4. Completa los campos correspondientes y guarda los cambios.
 
@@ -74,13 +70,12 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | Marketplace | Dejar en blanco. |
 | Marketplace fee | Dejar en blanco. |
 | Auto Settle | Dejar por defecto. |
-| Early Security Capture | Puede desactivar la función o elegir en cuánto tiempo quieres realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
+| Early Security Capture | Puedes desactivar la función o elegir en cuánto tiempo quieres realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
 
 ![Imagen Afiliación](/images/vtex/vtex-hisp-afiliacion-arg.gif)
 
 
 **¡Y listo! Tu afiliación con Mercado Pago ya se encuentra activa.**
-
 
 ## Configura las condiciones de pago
 
@@ -116,7 +111,6 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 > Importante
 >
 > Las cuotas deben quedar configuradas como automáticas para evitar problemas al procesar los pagos. Vamos a tomar las cuotas habilitadas en tu cuenta de Mercado Pago según corresponda. <br>
-
 
 ![Imagen tarjeta](/images/vtex/vtex-hispanos-credito.gif)
 
@@ -159,7 +153,6 @@ En VTEX, al seleccionar Boleto Bancario se incluyen todos los medios de pagos di
 
 > Los medios de pago Carga Virtual y Cobro Express no están disponibles para el Checkout de VTEX.
 
-
 ![Imagen efectivo](/images/vtex/vtex-hispanos-efectivo.gif)
 
 <br>
@@ -180,13 +173,11 @@ Para crear esta condición de pago, sigue estos pasos:
 8. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
 9. Haz clic en Guardar.
 
-
 > WARNING
 >
 > Importante
 >
 > Las cuotas deben quedar configuradas como automáticas para evitar problemas al procesar los pagos. Vamos a tomar las cuotas habilitadas en tu cuenta de Mercado Pago según corresponda. <br>
-
 <br>
 En VTEX, los medios de pago personalizados que se pueden agregar son:
 
@@ -203,7 +194,6 @@ En VTEX, los medios de pago personalizados que se pueden agregar son:
 ![Imagen personalizado](/images/vtex/vtex-hisp-personalizado.gif)
 
 ------------
-
 
 ----[mlm]----
 
@@ -265,7 +255,6 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | Marketplace fee | Dejar en blanco. |
 | Early Security Capture | Puede desactivar la función o elegir en cuánto tiempo desea realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
 
-
 > WARNING
 >
 > Importante
@@ -273,32 +262,23 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 > En el campo Antifraud selecciona la opción `No` porque sino en el Checkout se le pedirá al pagador un identification para avanzar con el pago.
 <br>
 
-
-![Imagen Afiliación](/images/vtex/vtex-hisp-afiliacion.gif)
-
-
 **¡Y listo! Tu afiliación con Mercado Pago ya se encuentra activa.**
-
 
 ## Configura las condiciones de pago
 Luego de tener creada tu afiliación con Mercado Pago, puedes ofrecer pagos con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), [tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito) o [medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, elegir la opción de [recibir pagos directamente en el Checkout Pro](#bookmark_condición_de_pagos_con_checkout_pro).
 
-
 ### Condición de pagos para el Checkout de VTEX
-
 Para poder utilizar este tipo de checkout se tienen que configurar los medios de pago por separado:
-
 
 1. [Tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito)
 2. [Tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito)
 3. [Efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo)
 
-
 <br>
 
 #### Condición de pagos para tarjeta de crédito
 
-Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
+ra crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 
 1. En el panel de administración, ingresa en Configuraciones de medios de pago.
 2. En la pestaña Condiciones de pago, haz clic en +.
@@ -314,9 +294,7 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 >
 > Las cuotas deben quedar configuradas como automáticas para evitar problemas al procesar los pagos. Vamos a tomar las cuotas habilitadas en tu cuenta de Mercado Pago según corresponda. <br>
 
-
 ![Imagen tarjeta](/images/vtex/vtex-hispanos-credito.gif)
-
 
 <br>
 
@@ -332,7 +310,6 @@ Para crear una condición de pagos con tarjeta de débito, sigue estos pasos:
 6. En la opción de cuotas, selecciona cuotas automáticas. Esto te permite usar la configuración de tu cuenta de Mercado Pago.
 7. Haz clic en Guardar.
 
-
 <br>
 
 #### Condición de pagos para medios de pago en efectivo
@@ -346,7 +323,6 @@ Para crear una condición de pago con medios de pago en efectivo, sigue estos pa
 5. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
 6. Haz clic en Guardar.
 
-
 En VTEX, al seleccionar Boleto Bancario se incluyen todos los medios de pagos disponibles del país:
 
 | Tipo de medio de pago | Medio de pago |
@@ -357,12 +333,9 @@ En VTEX, al seleccionar Boleto Bancario se incluyen todos los medios de pagos di
 
 > El medio de pago Serfin no está disponible para el Checkout de VTEX.
 
-
 ![Imagen efectivo](/images/vtex/vtex-hispanos-efectivo.gif)
 
-
 ------------
-
 
 ----[mlc]----
 
@@ -394,7 +367,6 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 3. Ingresa en el conector MercadoPagoV1.
 4. Completa los campos correspondientes y guarda los cambios.
 
-
 | Campos | Datos necesarios |
 | --- | --- |
 | Nombre de afiliación | Define el nombre que identificará a tu afiliación. |
@@ -423,7 +395,6 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 | Marketplace Fee | Comisión de cada pago en el modelo marketplace |
 | Captura de seguridad antecipada | Puede desactivar la función o elegir en cuánto tiempo desea realizar la captura (después de que se haya aprobado la transacción y se haya completado el análisis antifraude). |
 
-
 > WARNING
 >
 > Importante
@@ -433,17 +404,13 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 > El campo Early Security Capture no se encuentra disponible por el momento para Chile.
 <br>
 
-
 ![Imagen Afiliación](/images/vtex/vtex-hisp-afiliacion.gif)
 
-
 **¡Y listo! Tu afiliación con Mercado Pago ya se encuentra activa.**
-
 
 ## Configura las condiciones de pago
 
 Luego de tener creada tu afiliación con Mercado Pago, puedes ofrecer pagos con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), [transferencia bancaria](#bookmark_condición_de_pagos_para_medios_de_pago_por_transferencia_bancaria) o [medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, elegir la opción de [recibir pagos directamente en el Checkout Pro](#bookmark_condición_de_pagos_con_checkout_pro).
-
 
 ### Condición de pagos para el Checkout de VTEX
 
@@ -453,7 +420,6 @@ Para poder utilizar este tipo de checkout se tienen que configurar los medios de
 2. [Transferencia bancaria (WebPay)](#bookmark_condición_de_pagos_para_medios_de_pago_por_transferencia_bancaria)
 3. [Efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo)
 4. [Tarjetas de crédito locales](#bookmark_condición_de_pagos_con_medios_de_pagos_personalizados)
-
 
 <br>
 
@@ -472,8 +438,8 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 > WARNING
 >
 > Importante
->
 > Las cuotas deben quedar configuradas como automáticas para evitar problemas al procesar los pagos. Vamos a tomar las cuotas habilitadas en tu cuenta de Mercado Pago según corresponda. <br>
+
 
 
 ![Imagen tarjeta](/images/vtex/vtex-hispanos-credito.gif)
@@ -536,7 +502,6 @@ Para crear esta condición de pago, sigue estos pasos:
 8. En el campo Proceso con la afiliación, elige como afiliación a MercadoPagoV1.
 9. Haz clic en Guardar. 
 
-
 > WARNING
 >
 > Importante
@@ -551,12 +516,7 @@ En VTEX, los medios de pago personalizados que se pueden agregar son:
 | `credit_card` | Presto | Mastercard | 920000 - 920099 | presto |
 | `credit_card` | Magna | Mastercard | 568000 - 569099 | magna |
 
-
 ![Imagen personalizado](/images/vtex/vtex-hisp-personalizado.gif)
-
-
-------------
-
 
 ----[mco]----
 
@@ -567,7 +527,6 @@ En VTEX, los medios de pago personalizados que se pueden agregar son:
 [VTEX](https://www.vtex.com/es/) es una **plataforma de e-commerce que permite recibir pagos con Mercado Pago.**
 
 Puedes ofrecer a tus clientes la posibilidad de pagar con [tarjetas de crédito](#bookmark_condición_de_pagos_para_tarjeta_de_crédito), [tarjetas de débito](#bookmark_condición_de_pagos_para_tarjeta_de_débito), [transferencia bancaria](#bookmark_condición_de_pagos_para_medios_de_pago_por_transferencia_bancaria) o [medios de pago en efectivo](#bookmark_condición_de_pagos_para_medios_de_pago_en_efectivo). Como también, tienes la opción de [recibir pagos directamente desde el sitio web de Mercado Pago](#bookmark_condición_de_pagos_con_checkout_pro).
-
 
 ## Etapas para configurar
 
@@ -618,7 +577,6 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 >
 > Las cuotas deben quedar configuradas como automáticas para evitar problemas al procesar los pagos. Vamos a tomar las cuotas habilitadas en tu cuenta de Mercado Pago según corresponda. <br>
 
-
 ![Imagen Afiliación](/images/vtex/vtex-hisp-afiliacion.gif)
 
 
@@ -662,7 +620,6 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 > Importante
 >
 > Las cuotas deben quedar configuradas como automáticas para evitar problemas al procesar los pagos. Vamos a tomar las cuotas habilitadas en tu cuenta de Mercado Pago según corresponda. <br>
-
 
 ![Imagen tarjeta](/images/vtex/vtex-hispanos-credito.gif)
 
@@ -747,7 +704,6 @@ Para crear esta condición de pago, sigue estos pasos:
 > Importante
 >
 > Las cuotas deben quedar configuradas como automáticas para evitar problemas al procesar los pagos. Vamos a tomar las cuotas habilitadas en tu cuenta de Mercado Pago según corresponda. <br>
-
 <br>
 En VTEX, los medios de pago personalizados que se pueden agregar son:
 
@@ -836,7 +792,6 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 >
 > El campo Early Security Capture no se encuentra disponible por el momento para Perú.<br>
 
-
 ![Imagen Afiliación](/images/vtex/vtex-hisp-afiliacion.gif)
 
 
@@ -878,7 +833,6 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 >
 > Las cuotas deben quedar configuradas como automáticas para evitar problemas al procesar los pagos. Vamos a tomar las cuotas habilitadas en tu cuenta de Mercado Pago según corresponda. <br>
 
-
 ![Imagen tarjeta](/images/vtex/vtex-hispanos-credito.gif)
 
 
@@ -918,7 +872,6 @@ En VTEX, al seleccionar Boleto Bancario se incluyen todos los medios de pagos di
 | `atm` | Pago Efectivo |
 
 > El ticket será emitido por Pago Efectivo pero el mismo podrá abonarse presencialmente en diferentes agencias y bancos de forma online, para más información visita el [sitio oficial de PagoEfectivo](https://pagoefectivo.pe/pe).
-
 
 ![Imagen efectivo](/images/vtex/vtex-hispanos-efectivo.gif)
 
@@ -999,7 +952,6 @@ Para crear una **afiliación de pasarela de pago con Mercado Pago**, sigue estos
 >
 > El campo Early Security Capture no se encuentra disponible por el momento para Uruguay.
 
-
 ![Imagen Afiliación](/images/vtex/vtex-hisp-afiliacion.gif)
 
 
@@ -1039,7 +991,6 @@ Para crear una condición de pagos con tarjeta de crédito, sigue estos pasos:
 > Importante
 >
 > Las cuotas deben quedar configuradas como automáticas para evitar problemas al procesar los pagos. Vamos a tomar las cuotas habilitadas en tu cuenta de Mercado Pago según corresponda. <br>
-
 
 ![Imagen tarjeta](/images/vtex/vtex-hispanos-credito.gif)
 
@@ -1091,7 +1042,6 @@ Para crear esta condición de pago, sigue estos pasos:
 > Importante
 >
 > Las cuotas deben quedar configuradas como automáticas para evitar problemas al procesar los pagos. Vamos a tomar las cuotas habilitadas en tu cuenta de Mercado Pago según corresponda. <br>
-
 
 En VTEX, los medios de pago personalizados que se pueden agregar son:
 
@@ -1171,14 +1121,12 @@ Para crear esta condición de pago, sigue estos pasos:
 > Importante
 >
 > Si las condiciones de pago de MercadoPagoPro y MercadoPagoWallet no están disponibles para agregarlas, asegúrate de que en tu tienda de aplicaciones en VTEX esté instalada la App de Mercado Pago Payments APP o solicita la instalación al equipo de VTEX a través de un ticket en [Soporte VTEX](https://support.vtex.com/). <br>
-
 <!-- -->
 > NOTE
 > 
 > Nota
 >
 > Los cambios en las Condiciones de pago pueden demorar hasta 10 minutos en aplicarse. <br>
-
 ------------
 
 ----[mla, mlm, mlc, mco, mlu]----

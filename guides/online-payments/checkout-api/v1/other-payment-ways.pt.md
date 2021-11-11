@@ -51,7 +51,8 @@ Consulte os meios de pagamento disponíveis sempre que necessite.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -127,17 +128,6 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
         "additional_info_needed": []
     },
     {
-       "id": "pix",
-       "name": "PIX",
-       "payment_type_id": "bank_transfer",
-       "status": "active",
-       "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
-       "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
-       "deferred_capture": "does_not_apply",
-       "settings": [],
-       "additional_info_needed": []
-    },
-    {
         "...": "..."
     }
 ]
@@ -158,7 +148,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 >
 > Nova versão MercadoPago.js
 >
-> Utilize a biblioteca MercadoPago.js V2 para atualizar para a versão mais recente, autogerar a lógica de negócio no seu formulário de pagamentos com cartão e melhorar a compatibilidade com os distintos navegadores.<br><br>[Integrar Checkout API com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v2/other-payment-ways)
+> Utilize a biblioteca MercadoPago.js V2 para atualizar para a versão mais recente, autogerar a lógica de negócio no seu formulário de pagamentos com cartão e melhorar a compatibilidade com os distintos navegadores.<br><br>[Integrar Checkout API com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways)
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa a biblioteca MercadoPago.js
 
@@ -515,6 +505,7 @@ Além de cartões, também existem outras opções de pagamento que podem ser of
 | Tipo de meio de pagamento | Meio de pagamento |
 | --- | --- |
 | `ticket` | OXXO |
+| `ticket` | PayCash |
 | `atm` | Citibanamex |
 | `atm` | Santander |
 | `atm` | BBVA Bancomer |
@@ -538,7 +529,8 @@ Consulte os meios de pagamento disponíveis sempre que necessite.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -592,114 +584,136 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 ```json
 [
   {
-        "id": "oxxo",
-        "name": "OXXO",
-        "payment_type_id": "ticket",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/oxxo.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/oxxo.gif",
-        "deferred_capture": "does_not_apply",
-        "settings": [],
-        "additional_info_needed": [],
-        "min_allowed_amount": 5,
-        "max_allowed_amount": 10000,
-        "accreditation_time": 2880,
-        "financial_institutions": [],
-        "processing_modes": [
-            "aggregator"
-        ]
-    },
-{
-        "id": "banamex",
-        "name": "Citibanamex",
-        "payment_type_id": "atm",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/banamex.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/banamex.gif",
-        "deferred_capture": "does_not_apply",
-        "settings": [],
-        "additional_info_needed": [],
-        "min_allowed_amount": 5,
-        "max_allowed_amount": 40000,
-        "accreditation_time": 60,
-        "financial_institutions": [],
-        "processing_modes": [
-            "aggregator"
-        ]
-    },
-{
-        "id": "serfin",
-        "name": "Santander",
-        "payment_type_id": "atm",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/serfin.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/serfin.gif",
-        "deferred_capture": "does_not_apply",
-        "settings": [],
-        "additional_info_needed": [],
-        "min_allowed_amount": 5,
-        "max_allowed_amount": 40000,
-        "accreditation_time": 60,
-        "financial_institutions": [],
-        "processing_modes": [
-            "aggregator"
-        ]
-    },
- {
-        "id": "bancomer",
-        "name": "BBVA Bancomer",
-        "payment_type_id": "atm",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/bancomer.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/bancomer.gif",
-        "deferred_capture": "does_not_apply",
-        "settings": [],
-        "additional_info_needed": [],
-        "min_allowed_amount": 10,
-        "max_allowed_amount": 40000,
-        "accreditation_time": 60,
-        "financial_institutions": [],
-        "processing_modes": [
-            "aggregator"
-        ]
-    },
-{
-        "id": "mercadopagocard",
-        "name": "Tarjeta MercadoPago",
-        "payment_type_id": "prepaid_card",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/mercadopagocard.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/mercadopagocard.gif",
-        "deferred_capture": "supported",
-        "settings": [
-            {
-                "card_number": {
-                    "validation": "standard",
-                    "length": 16
-                },
-                "bin": {
-                    "pattern": "^539978",
-                    "installments_pattern": "^539978",
-                    "exclusion_pattern": null
-                },
-                "security_code": {
-                    "length": 3,
-                    "card_location": "back",
-                    "mode": "mandatory"
-                }
-            }
-        ],
-        "additional_info_needed": [
-            "cardholder_name"
-        ],
-        "min_allowed_amount": 5,
-        "max_allowed_amount": 300000,
-        "accreditation_time": 1440,
-        "financial_institutions": [],
-        "processing_modes": [
-            "aggregator"
-        ]
-    },
+    "id": "oxxo",
+    "name": "OXXO",
+    "payment_type_id": "ticket",
+    "status": "active",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/oxxo.gif",
+    "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/oxxo.gif",
+    "deferred_capture": "does_not_apply",
+    "settings": [],
+    "additional_info_needed": [],
+    "min_allowed_amount": 5,
+    "max_allowed_amount": 10000,
+    "accreditation_time": 2880,
+    "financial_institutions": [],
+    "processing_modes": [
+      "aggregator"
+    ]
+  },
+  {
+    "id": "paycash",
+    "name": "PayCash",
+    "payment_type_id": "ticket",
+    "status": "active",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/paycash.gif",
+    "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/paycash.gif",
+    "deferred_capture": "unsupported",
+    "settings": [],
+    "additional_info_needed": [
+      "identification_type",
+      "identification_number",
+      "entity_type"
+    ],
+    "min_allowed_amount": 20,
+    "max_allowed_amount": 60000,
+    "accreditation_time": 0,
+    "financial_institutions": [],
+    "processing_modes": [
+      "aggregator"
+    ]
+  },
+  {
+    "id": "banamex",
+    "name": "Citibanamex",
+    "payment_type_id": "atm",
+    "status": "active",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/banamex.gif",
+    "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/banamex.gif",
+    "deferred_capture": "does_not_apply",
+    "settings": [],
+    "additional_info_needed": [],
+    "min_allowed_amount": 5,
+    "max_allowed_amount": 40000,
+    "accreditation_time": 60,
+    "financial_institutions": [],
+    "processing_modes": [
+      "aggregator"
+    ]
+  },
+  {
+    "id": "serfin",
+    "name": "Santander",
+    "payment_type_id": "atm",
+    "status": "active",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/serfin.gif",
+    "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/serfin.gif",
+    "deferred_capture": "does_not_apply",
+    "settings": [],
+    "additional_info_needed": [],
+    "min_allowed_amount": 5,
+    "max_allowed_amount": 40000,
+    "accreditation_time": 60,
+    "financial_institutions": [],
+    "processing_modes": [
+      "aggregator"
+    ]
+  },
+  {
+    "id": "bancomer",
+    "name": "BBVA Bancomer",
+    "payment_type_id": "atm",
+    "status": "active",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/bancomer.gif",
+    "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/bancomer.gif",
+    "deferred_capture": "does_not_apply",
+    "settings": [],
+    "additional_info_needed": [],
+    "min_allowed_amount": 10,
+    "max_allowed_amount": 40000,
+    "accreditation_time": 60,
+    "financial_institutions": [],
+    "processing_modes": [
+      "aggregator"
+    ]
+  },
+  {
+    "id": "mercadopagocard",
+    "name": "Tarjeta MercadoPago",
+    "payment_type_id": "prepaid_card",
+    "status": "active",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/mercadopagocard.gif",
+    "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/mercadopagocard.gif",
+    "deferred_capture": "supported",
+    "settings": [
+      {
+        "card_number": {
+          "validation": "standard",
+          "length": 16
+        },
+        "bin": {
+          "pattern": "^539978",
+          "installments_pattern": "^539978",
+          "exclusion_pattern": null
+        },
+        "security_code": {
+          "length": 3,
+          "card_location": "back",
+          "mode": "mandatory"
+        }
+      }
+    ],
+    "additional_info_needed": [
+      "cardholder_name"
+    ],
+    "min_allowed_amount": 5,
+    "max_allowed_amount": 300000,
+    "accreditation_time": 1440,
+    "financial_institutions": [],
+    "processing_modes": [
+      "aggregator"
+    ]
+  },
 ]
 ```
 
@@ -718,7 +732,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 >
 > Nova versão MercadoPago.js
 >
-> Utilize a biblioteca MercadoPago.js V2 para atualizar para a versão mais recente, autogerar a lógica de negócio no seu formulário de pagamentos com cartão e melhorar a compatibilidade com os distintos navegadores.<br><br>[Integrar Checkout API com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v2/other-payment-ways)
+> Utilize a biblioteca MercadoPago.js V2 para atualizar para a versão mais recente, autogerar a lógica de negócio no seu formulário de pagamentos com cartão e melhorar a compatibilidade com os distintos navegadores.<br><br>[Integrar Checkout API com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways)
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa a biblioteca MercadoPago.js
 
@@ -986,8 +1000,12 @@ Ao finalizar, é importante que compartilhe com seus clientes a informação dos
 | Meio de pagamento | Lojas disponíveis
 | --- | --- |
 | OXXO | OXXO
-| BBVA Bancomer | 7-Eleven |
-| BBVA Bancomer | K |
+| PayCash | 7-Eleven |
+| PayCash | Circle K |
+| PayCash | Soriana |
+| PayCash | Extra |
+| PayCash | Calimax |
+| PayCash | Santander |
 | BBVA Bancomer | Farmacias del Ahorro |
 | BBVA Bancomer | Casa Ley |
 | BBVA Bancomer | BBVA Bancomer |
@@ -1038,7 +1056,8 @@ Consulte os meios de pagamento disponíveis sempre que necessite.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -1149,7 +1168,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 >
 > Nova versão MercadoPago.js
 >
-> Utilize a biblioteca MercadoPago.js V2 para atualizar para a versão mais recente, autogerar a lógica de negócio no seu formulário de pagamentos com cartão e melhorar a compatibilidade com os distintos navegadores.<br><br>[Integrar Checkout API com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v2/other-payment-ways)
+> Utilize a biblioteca MercadoPago.js V2 para atualizar para a versão mais recente, autogerar a lógica de negócio no seu formulário de pagamentos com cartão e melhorar a compatibilidade com os distintos navegadores.<br><br>[Integrar Checkout API com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways)
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa a biblioteca MercadoPago.js
 
@@ -1464,7 +1483,8 @@ Consulte os meios de pagamento disponíveis sempre que necessite.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -1593,7 +1613,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 >
 > Nova versão MercadoPago.js
 >
-> Utilize a biblioteca MercadoPago.js V2 para atualizar para a versão mais recente, autogerar a lógica de negócio no seu formulário de pagamentos com cartão e melhorar a compatibilidade com os distintos navegadores.<br><br>[Integrar Checkout API com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v2/other-payment-ways)
+> Utilize a biblioteca MercadoPago.js V2 para atualizar para a versão mais recente, autogerar a lógica de negócio no seu formulário de pagamentos com cartão e melhorar a compatibilidade com os distintos navegadores.<br><br>[Integrar Checkout API com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways)
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa a biblioteca MercadoPago.js
 
@@ -2156,7 +2176,8 @@ Consulte os meios de pagamento disponíveis sempre que necessite.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -2270,7 +2291,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 >
 > Nova versão MercadoPago.js
 >
-> Utilize a biblioteca MercadoPago.js V2 para atualizar para a versão mais recente, autogerar a lógica de negócio no seu formulário de pagamentos com cartão e melhorar a compatibilidade com os distintos navegadores.<br><br>[Integrar Checkout API com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v2/other-payment-ways)
+> Utilize a biblioteca MercadoPago.js V2 para atualizar para a versão mais recente, autogerar a lógica de negócio no seu formulário de pagamentos com cartão e melhorar a compatibilidade com os distintos navegadores.<br><br>[Integrar Checkout API com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways)
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa a biblioteca MercadoPago.js
 
@@ -2533,6 +2554,12 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 
 Para receber pagamentos com Webpay, você deve enviar o endereço IP do comprador, a instituição financeira que processa o pagamento e, opcionalmente, a RUT e o tipo de pessoa.
 
+> WARNING
+>
+> Importante
+>
+> Em breve, a integração com o WebPay será descontinuada. Recomendamos **fortemente** que utilize [outra solução de pagamento](https://www.mercadopago.cl/developers/pt/guides/resources/localization/payment-methods#bookmark_chile) para evitar problemas futuros.
+
 [[[
 ```php
 <?php
@@ -2776,7 +2803,8 @@ Consulte os meios de pagamento disponíveis sempre que necessite.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -2865,7 +2893,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 >
 > Nova versão MercadoPago.js
 >
-> Utilize a biblioteca MercadoPago.js V2 para atualizar para a versão mais recente, autogerar a lógica de negócio no seu formulário de pagamentos com cartão e melhorar a compatibilidade com os distintos navegadores.<br><br>[Integrar Checkout API com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v2/other-payment-ways)
+> Utilize a biblioteca MercadoPago.js V2 para atualizar para a versão mais recente, autogerar a lógica de negócio no seu formulário de pagamentos com cartão e melhorar a compatibilidade com os distintos navegadores.<br><br>[Integrar Checkout API com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways)
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa a biblioteca MercadoPago.js
 
@@ -3189,7 +3217,8 @@ Consulte os meios de pagamento disponíveis sempre que necessite.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -3296,7 +3325,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 >
 > Nova versão MercadoPago.js
 >
-> Utilize a biblioteca MercadoPago.js V2 para atualizar para a versão mais recente, autogerar a lógica de negócio no seu formulário de pagamentos com cartão e melhorar a compatibilidade com os distintos navegadores.<br><br>[Integrar Checkout Transparente com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v2/other-payment-ways)
+> Utilize a biblioteca MercadoPago.js V2 para atualizar para a versão mais recente, autogerar a lógica de negócio no seu formulário de pagamentos com cartão e melhorar a compatibilidade com os distintos navegadores.<br><br>[Integrar Checkout Transparente com MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways)
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa a biblioteca MercadoPago.js
 

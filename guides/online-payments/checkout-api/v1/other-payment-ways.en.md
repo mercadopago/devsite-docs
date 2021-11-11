@@ -46,7 +46,8 @@ You can check the available payment methods whenever you need.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -142,7 +143,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 >
 > New MercadoPago.js version
 >
-> Use MercadoPago.js V2 library to be updated to the latest version and to improve compatibility with different browsers.<br><br>[Integrate Checkout API with MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/other-payment-ways)
+> Use MercadoPago.js V2 library to be updated to the latest version and to improve compatibility with different browsers.<br><br>[Integrate Checkout API with MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways)
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Use MercadoPago.js library
 **Remember to use our official library to access Mercado Pago API** from your application and collect data securely.
@@ -501,6 +502,7 @@ In addition to cards, you can offer other payment choices on your website.
 | Type of payment method | Payment method |
 | --- | --- |
 | `ticket` | OXXO |
+| `ticket` | PayCash |
 | `atm` | Citibanamex |
 | `atm` | Santander |
 | `atm` | BBVA Bancomer |
@@ -524,7 +526,8 @@ You can check the available payment methods whenever you need.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -578,114 +581,136 @@ Keep in mind that the answer will return all the payments methods. For this reas
 ```json
 [
   {
-        "id": "oxxo",
-        "name": "OXXO",
-        "payment_type_id": "ticket",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/oxxo.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/oxxo.gif",
-        "deferred_capture": "does_not_apply",
-        "settings": [],
-        "additional_info_needed": [],
-        "min_allowed_amount": 5,
-        "max_allowed_amount": 10000,
-        "accreditation_time": 2880,
-        "financial_institutions": [],
-        "processing_modes": [
-            "aggregator"
-        ]
-    },
-{
-        "id": "banamex",
-        "name": "Citibanamex",
-        "payment_type_id": "atm",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/banamex.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/banamex.gif",
-        "deferred_capture": "does_not_apply",
-        "settings": [],
-        "additional_info_needed": [],
-        "min_allowed_amount": 5,
-        "max_allowed_amount": 40000,
-        "accreditation_time": 60,
-        "financial_institutions": [],
-        "processing_modes": [
-            "aggregator"
-        ]
-    },
-{
-        "id": "serfin",
-        "name": "Santander",
-        "payment_type_id": "atm",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/serfin.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/serfin.gif",
-        "deferred_capture": "does_not_apply",
-        "settings": [],
-        "additional_info_needed": [],
-        "min_allowed_amount": 5,
-        "max_allowed_amount": 40000,
-        "accreditation_time": 60,
-        "financial_institutions": [],
-        "processing_modes": [
-            "aggregator"
-        ]
-    },
- {
-        "id": "bancomer",
-        "name": "BBVA Bancomer",
-        "payment_type_id": "atm",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/bancomer.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/bancomer.gif",
-        "deferred_capture": "does_not_apply",
-        "settings": [],
-        "additional_info_needed": [],
-        "min_allowed_amount": 10,
-        "max_allowed_amount": 40000,
-        "accreditation_time": 60,
-        "financial_institutions": [],
-        "processing_modes": [
-            "aggregator"
-        ]
-    },
-{
-        "id": "mercadopagocard",
-        "name": "Tarjeta MercadoPago",
-        "payment_type_id": "prepaid_card",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/mercadopagocard.gif",
-        "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/mercadopagocard.gif",
-        "deferred_capture": "supported",
-        "settings": [
-            {
-                "card_number": {
-                    "validation": "standard",
-                    "length": 16
-                },
-                "bin": {
-                    "pattern": "^539978",
-                    "installments_pattern": "^539978",
-                    "exclusion_pattern": null
-                },
-                "security_code": {
-                    "length": 3,
-                    "card_location": "back",
-                    "mode": "mandatory"
-                }
-            }
-        ],
-        "additional_info_needed": [
-            "cardholder_name"
-        ],
-        "min_allowed_amount": 5,
-        "max_allowed_amount": 300000,
-        "accreditation_time": 1440,
-        "financial_institutions": [],
-        "processing_modes": [
-            "aggregator"
-        ]
-    },
+    "id": "oxxo",
+    "name": "OXXO",
+    "payment_type_id": "ticket",
+    "status": "active",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/oxxo.gif",
+    "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/oxxo.gif",
+    "deferred_capture": "does_not_apply",
+    "settings": [],
+    "additional_info_needed": [],
+    "min_allowed_amount": 5,
+    "max_allowed_amount": 10000,
+    "accreditation_time": 2880,
+    "financial_institutions": [],
+    "processing_modes": [
+      "aggregator"
+    ]
+  },
+  {
+    "id": "paycash",
+    "name": "PayCash",
+    "payment_type_id": "ticket",
+    "status": "active",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/paycash.gif",
+    "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/paycash.gif",
+    "deferred_capture": "unsupported",
+    "settings": [],
+    "additional_info_needed": [
+      "identification_type",
+      "identification_number",
+      "entity_type"
+    ],
+    "min_allowed_amount": 20,
+    "max_allowed_amount": 60000,
+    "accreditation_time": 0,
+    "financial_institutions": [],
+    "processing_modes": [
+      "aggregator"
+    ]
+  },
+  {
+    "id": "banamex",
+    "name": "Citibanamex",
+    "payment_type_id": "atm",
+    "status": "active",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/banamex.gif",
+    "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/banamex.gif",
+    "deferred_capture": "does_not_apply",
+    "settings": [],
+    "additional_info_needed": [],
+    "min_allowed_amount": 5,
+    "max_allowed_amount": 40000,
+    "accreditation_time": 60,
+    "financial_institutions": [],
+    "processing_modes": [
+      "aggregator"
+    ]
+  },
+  {
+    "id": "serfin",
+    "name": "Santander",
+    "payment_type_id": "atm",
+    "status": "active",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/serfin.gif",
+    "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/serfin.gif",
+    "deferred_capture": "does_not_apply",
+    "settings": [],
+    "additional_info_needed": [],
+    "min_allowed_amount": 5,
+    "max_allowed_amount": 40000,
+    "accreditation_time": 60,
+    "financial_institutions": [],
+    "processing_modes": [
+      "aggregator"
+    ]
+  },
+  {
+    "id": "bancomer",
+    "name": "BBVA Bancomer",
+    "payment_type_id": "atm",
+    "status": "active",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/bancomer.gif",
+    "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/bancomer.gif",
+    "deferred_capture": "does_not_apply",
+    "settings": [],
+    "additional_info_needed": [],
+    "min_allowed_amount": 10,
+    "max_allowed_amount": 40000,
+    "accreditation_time": 60,
+    "financial_institutions": [],
+    "processing_modes": [
+      "aggregator"
+    ]
+  },
+  {
+    "id": "mercadopagocard",
+    "name": "Tarjeta MercadoPago",
+    "payment_type_id": "prepaid_card",
+    "status": "active",
+    "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/mercadopagocard.gif",
+    "thumbnail": "http://img.mlstatic.com/org-img/MP3/API/logos/mercadopagocard.gif",
+    "deferred_capture": "supported",
+    "settings": [
+      {
+        "card_number": {
+          "validation": "standard",
+          "length": 16
+        },
+        "bin": {
+          "pattern": "^539978",
+          "installments_pattern": "^539978",
+          "exclusion_pattern": null
+        },
+        "security_code": {
+          "length": 3,
+          "card_location": "back",
+          "mode": "mandatory"
+        }
+      }
+    ],
+    "additional_info_needed": [
+      "cardholder_name"
+    ],
+    "min_allowed_amount": 5,
+    "max_allowed_amount": 300000,
+    "accreditation_time": 1440,
+    "financial_institutions": [],
+    "processing_modes": [
+      "aggregator"
+    ]
+  },
 ]
 ```
 
@@ -970,8 +995,12 @@ Finally, you should share information about the different places where your cust
 | Payment method | Available stores |
 | --- | --- |
 | OXXO | OXXO
-| BBVA Bancomer | 7-Eleven |
-| BBVA Bancomer | K |
+| PayCash | 7-Eleven |
+| PayCash | Circle K |
+| PayCash | Soriana |
+| PayCash | Extra |
+| PayCash | Calimax |
+| PayCash | Santander |
 | BBVA Bancomer | Farmacias del Ahorro |
 | BBVA Bancomer | Casa Ley |
 | BBVA Bancomer | BBVA Bancomer |
@@ -1021,7 +1050,8 @@ You can check the available payment methods whenever you need.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -1449,7 +1479,8 @@ You can check the available payment methods whenever you need.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -2140,7 +2171,8 @@ You can check the available payment methods whenever you need.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -2516,6 +2548,13 @@ In the `external_resource_url` field you will find an address with payment instr
 
 To receive payments with Webpay, you have to send the IP address of the buyer, the financial institution that processes the payment and, optionally, the RUT and the type of person.
 
+> WARNING
+>
+> Important
+>
+> The WebPay integration will be discontinued shortly. We **strongly** recommend you to use [another payment solution](https://www.mercadopago.cl/developers/en/guides/resources/localization/payment-methods#bookmark_chile) to avoid integration problems in the near future.
+
+
 [[[
 ```php
 <?php
@@ -2759,7 +2798,8 @@ You can check the available payment methods whenever you need.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;
@@ -3172,7 +3212,8 @@ You can check the available payment methods whenever you need.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-payment_methods = mercadopago.get("/v1/payment_methods");
+var response = await mercadopago.get("/v1/payment_methods");
+var payment_methods = response.body;
 ```
 ```java
 import com.mercadopago.*;

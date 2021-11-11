@@ -1,9 +1,16 @@
 # Web Tokenize Checkout
 
-> INFO
+> WARNING
 >
-> O que é tokenização?
+> Importante
 >
+> **Web Tokenize Checkout** será descontinuado em agosto de 2022.
+> <br>
+> Você pode usar [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction) ou [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction) como alternativa.
+
+
+> **O que é tokenização?**
+> <br>
 > Tokenização é o processo pelo qual se criptografa de maneira segura um cartão de crédito.
 
 Com o *Web Tokenize Checkout* do **Mercado Pago** esqueça a complexidade para estruturar um formulário de seleção de forma de pagamento e tokenização. Esta integração simples lhe proporcionará um formulário com design e front-end pronto.

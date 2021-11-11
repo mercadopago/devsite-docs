@@ -49,6 +49,11 @@ mp.checkout({
 });
 </script>
 ```
+>WARNING
+>
+>Importante
+>
+> Para mobile, ten en cuenta que únicamente debes ingresar el path en el atributo `backUrl` en lugar del dominio completo. 
 
 En este caso, se mostrará un botón de pago que abrirá el Web Tokenize Checkout.
 
@@ -56,7 +61,7 @@ Puedes consultar otras maneras de abrir el checkout en la [sección de Personali
 
 Puedes encontrar tu Public key en la [sección de credenciales]([FAKER][CREDENTIALS][URL]).
 
-> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/faqs/credentials).
+> Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) para obtener más información.
 
 > Esta documentación utiliza la nueva versión de la librería. Para ver la versión anterior, ve a la [sección de Recibir un pago con tarjeta con MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/web-tokenize-checkout/v1/receiving-payment-by-card).
 

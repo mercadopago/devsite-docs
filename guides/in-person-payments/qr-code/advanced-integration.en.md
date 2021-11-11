@@ -4,13 +4,13 @@
 
 ----[mla, mlm, mco, mlu, mlb, mlc]----
 
-Refunds happen when a payment was completed but the seller decides to cancel it partially or totally. You can find information in [Refunds and cancellations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds) section.
+Refunds happen when a payment was completed but the seller decides to cancel it partially or totally. You can find information in the [Refunds and cancellations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds) section.
 
 ------------
 
 ----[mpe]----
 
-Refunds happen when a payment was completed but the seller decides to cancel it totally. You can find information in [Refunds and cancellations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds) section.
+Refunds happen when a payment was completed but the seller decides to cancel it totally. You can find more information in the [Refunds and cancellations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds) section.
 
 ------------
 > WARNING
@@ -23,7 +23,7 @@ Refunds happen when a payment was completed but the seller decides to cancel it 
 
 ## Get order data
 
-If you want to get the order assigned to a POS, you can do it.
+If you want to assign an order to a POS, you can do it using the following:
 
 ```curl
 curl -X GET \
@@ -38,7 +38,7 @@ Integrate [Mercado Pago reports](https://www.mercadopago[FAKER][URL][DOMAIN]/dev
 
 ## Test and validate your integration 
 
-We detailed all necessary cases you should try to make sure your system is succesfully integrated with Mercado Pago. 
+We detailed all necessary scenarios you should test to ensure your system is successfully integrated with Mercado Pago. 
 Find all this information in the [Tests section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/qr-code/integration-test).
 
 ---

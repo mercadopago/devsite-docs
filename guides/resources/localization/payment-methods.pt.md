@@ -137,9 +137,6 @@ A seguir estão os meios de pagamento disponíveis para cada país.
 | Visa Débito | `debit_card` | `debvisa` |
 | Mastercard Débito | `debit_card` | `debmaster` |
 | Redcompra | `debit_card` | `redcompra` |
-| Servipag | `ticket` | `servipag` |
-| Red Compras (Webpay) | `bank_transfer` | `webpay` |
-| Khipu | `bank_transfer` | `khipu` |
 | Dinheiro em conta | `account_money` | `account_money` |
 
 ### Colômbia
@@ -168,6 +165,7 @@ A seguir estão os meios de pagamento disponíveis para cada país.
 | Mastercard Débito | `debit_card` | `debmaster` |
 | Tarjeta Mercado Pago | `prepaid_card` | `mercadopagocard` |
 | Oxxo | `ticket` | `oxxo` |
+| PayCash | `ticket` | `paycash` |
 | BBVA Bancomer | `atm` | `bancomer` |
 | Banamex | `atm` | `banamex` |
 | Santander | `atm` | `serfin` |

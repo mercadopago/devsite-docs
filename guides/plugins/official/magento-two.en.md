@@ -76,7 +76,7 @@ Here is how to set up the module to accept Credit Card ----[mlb]----, Pix-------
 > There are two types of credentials:
 > * Trial credentials: The credentials in this way are used for testing.
 > * Productive credentials: The credentials in this way are used to receive payments in production. To use the credentials of the production mode you must activate your credentials.
-> * Find all the information about your credentials in our [frequently asked questions](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/faqs/credentials/).
+> * Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]//developers/en/guides/resources/credentials) for more information.
 
 3) With your credentials filled, you need to enable payment methods.
 First, access the method that you want to enable.
@@ -114,7 +114,7 @@ This process will explain how to configure the module to accept payments with Ch
 
 ![Checkout Pro Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
 
-4) Very good! Checkout Pro with Credit Card and Ticket has been configured and enable successfully.
+4) Done! Checkout Pro with Credit Card and Ticket has been configured and enabled successfully.
 
 
 ## Payment Notification status settings

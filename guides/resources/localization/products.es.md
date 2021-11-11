@@ -139,20 +139,20 @@ Suscripciones | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debm
 | :--- | :--- | :--- |
 | Pagos | Link de pago | N/A |
 | Pagos | Checkout Pro | N/A |
-| Pagos | Mobile Checkout | `account_money`,`khipu`,`servipag`,`webpay` |
-| Pagos | Checkout Transparente | `khipu` |
+| Pagos | Mobile Checkout | `account_money` |
+| Pagos | Checkout Transparente | N/A |
 | Marketplace | Checkout Pro | N/A |
-| Marketplace | Checkout Transparente | `khipu` |
+| Marketplace | Checkout Transparente | N/A |
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 | Producto | Solución | Medios de pago no disponibles |
 | :--- | :--- | :--- |
 | Pagos | Link de pago | N/A |
 | Pagos | Checkout Pro | N/A |
-| Pagos | Mobile Checkout | `account_money`,`khipu`,`servipag`,`webpay` |
-| Pagos | Checkout API | `khipu` |
+| Pagos | Mobile Checkout | `account_money` |
+| Pagos | Checkout API | N/A |
 | Marketplace | Checkout Pro | N/A |
-| Marketplace | Checkout API | `khipu` |
+| Marketplace | Checkout API | N/A |
 ------------
 
 ### Colombia

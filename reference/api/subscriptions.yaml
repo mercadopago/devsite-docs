@@ -83,10 +83,6 @@ paths:
                     type: number
                     example: 123123123
                     description: payer_id
-                  payer_email:
-                    type: string
-                    example: test_user@testuser.com
-                    description: payer_email
                   back_url:
                     type: string
                     example: https://www.mercadopago.com.ar

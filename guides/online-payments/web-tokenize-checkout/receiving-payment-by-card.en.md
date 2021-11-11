@@ -49,13 +49,19 @@ mp.checkout({
 </script>
 ```
 
+>WARNING
+>
+>Important
+>
+> For mobile, please note that you should only include the path under the attribute `backUrl`, instead of the full domain. 
+
 This will display a payment button that will open the Web Tokenize Checkout.
 
 You can check other ways to open the checkout in the [Customization section](https://www.mercadopago[FAKER][URl][DOMAIN]/developers/en/guides/online-payments/web-tokenize-checkout/personalization).
 
 You can find the Public Key in the [Credentials section]([FAKER][CREDENTIALS][URL]) page.
 
-> Find all the information about your credentials in our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/faqs/credentials).
+> Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) for more information.
 
 > This documentation uses the new library version. To see the previous version, go to [Receive card payments with MercadoPago.js V1 section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/web-tokenize-checkout/v1/receiving-payment-by-card).
 

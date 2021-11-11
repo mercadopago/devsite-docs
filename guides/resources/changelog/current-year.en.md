@@ -3,8 +3,355 @@
 Find out everything about the new versions and updates of Mercado Pago integrations.
 
 ---
+## October 2021
+
+### October 25th
+
+> CHANGELOG
+>
+> New Magento 2 plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: MAGENTO 2
+
+We have released the new version 3.12.1 for Magento 2.
+
+[Go to Magento 2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.12.1) for further details regarding this release.
+
+> CHANGELOG
+>
+> New PrestaShop plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: PRESTASHOP
+
+We have released the new version 4.8.0 for PrestaShop.
+
+[Go to PrestaShop documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.8.0) for further details regarding this release.
+
+### October 20th
+
+> CHANGELOG
+>
+> New WooCommerce plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+We have released the new version 5.5.0 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.5.0) for further details regarding this release.
+
+> CHANGELOG
+>
+> New version of SDK PHP
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK PHP
+We have released a new version of SDK PHP 1.12.3 and 2.4.4.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-php/releases) for further details regarding this release.
+
+### October 7th
+
+> CHANGELOG
+>
+> New PrestaShop plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: PRESTASHOP
+
+We have released the new version 4.7.1 for PrestaShop.
+
+[Go to PrestaShop documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.7.1) for further details regarding this release.
+
+### October 4th
+
+> CHANGELOG
+>
+> New version of SDK Java
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK JAVA
+We have released a new version of SDK Java 1.11.0.
+
+As of this release, we will no longer support Java versions 7 or lower.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-java/releases) for further details regarding this release.
+
+### October 1st
+
+> CHANGELOG
+>
+> New Magento 2 plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: MAGENTO 2
+
+We have released the new version 3.11.1 for Magento 2.
+
+[Go to Magento 2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.11.1) for further details regarding this release.
+
+## September 2021
+
+### September 30th
+
+> CHANGELOG
+>
+> New version of SDK PHP
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK PHP
+We have released a new version of SDK PHP 1.12.2 and 2.4.3.
+>
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-php/releases) for further details regarding this release.
+
+### September 29th
+
+> CHANGELOG
+>
+> New Magento 2 plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: MAGENTO 2
+
+We have released the new version 3.11.0 for Magento 2.
+
+[Go to Magento 2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-java/releases) for further details regarding this release.
+
+### September 23rd
+
+> CHANGELOG
+>
+> Authorize and link accounts to your applications with OAuth
+>
+> NEWS: NEWS
+>
+> PRODUCT: OAUTH
+
+Learn how to manage several Mercado Pago accounts at the same time and safely in your integration using OAuth. This feature allows sellers to access their Mercado Pago account to authorize and enable your application to work under their name.
+
+[Go to OAuth documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/oauth)
+
+### September 13th
+
+> CHANGELOG
+>
+> New Magento 2 plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: MAGENTO 2
+
+We have released the new version 3.10.1 for Magento 2.
+
+[Go to Magento 2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.10.1) for further details regarding this release.
+
+### September 10th
+
+> CHANGELOG
+>
+> New version of SDK Java
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK JAVA
+We have released a new version of SDK Java 1.10.2.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-java/releases) for further details regarding this release.
+
+### September 2nd
+
+----[mlc]----
+> CHANGELOG
+>
+> We deprecate the integration of Servipag and Khipu payment methods
+>
+> NEWS: NEWS
+>
+> PRODUCT: MERCADO PAGO
+
+To avoid any problem in your store transactions, we recommend that you look for other payment methods.
+
+[Go to Other payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/payment-methods?utm_source=newsletter&utm_campaign=R2Q32021&utm_medium=email#bookmark_chile)
+------------
+
+> CHANGELOG
+>
+> New security section
+>
+> NEWS: NEWS
+>
+> PRODUCT: SECURITY
+
+We created the Security section where we give you all the details about the regulations for web applications (OWASP) and credit card transactions (PCI), so that you are aware of how Mercado Pago guarantees the security of your customers' transactions.
+
+[Go to Security section](https://mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/owasp)
+
 
 ## August 2021
+
+### August 19th
+
+> CHANGELOG
+>
+> New PrestaShop plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: PRESTASHOP
+
+We have released the new version 4.7.0 for PrestaShop.
+
+[Go to PrestaShop documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.7.0) for further details regarding this release.
+
+### August 12th
+
+----[mlb]----
+
+> CHANGELOG
+>
+> New Magento 2 plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: MAGENTO 2
+
+We have released the new version 3.9.3 for Magento 2.
+
+[Go to Magento 2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.3) for further details regarding this release.
+------------
+
+> CHANGELOG
+>
+> New WooCommerce plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+We have released the new version 5.3.1 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.3.1) for further details regarding this release.
+
+### August 11th
+
+> CHANGELOG
+>
+> New WooCommerce plugin version
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: WOOCOMMERCE
+
+We have released the new version 5.3.0 for WooCommerce.
+
+[Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.3.0) for further details regarding this release.
+
+> CHANGELOG
+>
+> New version of SDK PHP
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK PHP
+We have released a new version of SDK PHP 1.12.1 and 2.4.2.
+>
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-php/releases) for further details regarding this release.
+
 
 ----[mlb]----
 ### August 10th
@@ -547,7 +894,7 @@ We have released the new version 3.8.2 for Magento 2.
 
 Integrate Checkout API simpler and faster with the new CardForm functionality, which allows you to auto generate your business logics in your card payment form and improve compatibility with different browsers.
 
-[Go to MercadoPago.js V2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/receiving-payment-by-card)
+[Go to MercadoPago.js V2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card)
 
 > GIT
 >

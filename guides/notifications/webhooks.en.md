@@ -2,10 +2,10 @@
 
 A **webhook** is a notification sent from one server to another through an `HTTP POST` request informing your transactions.
 
-In order to receive notifications about the events in your platform, you have to [previously configure an URL to which Mercado Pago has access](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications).
+In order to receive notifications about the events in your platform, you will have to [previously configure a URL that Mercado Pago has access to](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications).
 
 
-You can also configure the notification when you do the POST of the payment, indicating the URL in the field notificaction_url:
+You can also configure the notification when you do the POST of the payment, indicating the URL in the field `notificaction_url`:
 
 ```json
 {
@@ -91,10 +91,10 @@ After this, you must obtain the complete information of the notified resource by
 
 | Type | URL | Documentation |
 | --- | --- | --- |
-| payment | https://api.mercadopago.com/v1/payments/[ID] | [see documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) |
-| plan | https://api.mercadopago.com/v1/plans/[ID] | - |
-| subscription | https://api.mercadopago.com/v1/subscriptions/[ID] | - |
-| invoice | https://api.mercadopago.com/v1/invoices/[ID] | - |
+| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [see documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) |
+| plan | `https://api.mercadopago.com/v1/plans/[ID]` | - |
+| subscription | `https://api.mercadopago.com/v1/subscriptions/[ID]` | - |
+| invoice | `https://api.mercadopago.com/v1/invoices/[ID]` | - |
 
 With this information you can make the necessary updates on your platform, such as registering an approved payment.
 
@@ -113,16 +113,16 @@ With this information you can make the necessary updates on your platform, such 
 
     switch($_POST["type"]) {
         case "payment":
-            $payment = MercadoPago\Payment.find_by_id($_POST["id"]);
+            $payment = MercadoPago\Payment::find_by_id($_POST["data"]["id"]);
             break;
         case "plan":
-            $plan = MercadoPago\Plan.find_by_id($_POST["id"]);
+            $plan = MercadoPago\Plan::find_by_id($_POST["data"]["id"]);
             break;
         case "subscription":
-            $plan = MercadoPago\Subscription.find_by_id($_POST["id"]);
+            $plan = MercadoPago\Subscription::find_by_id($_POST["data"]["id"]);
             break;
         case "invoice":
-            $plan = MercadoPago\Invoice.find_by_id($_POST["id"]);
+            $plan = MercadoPago\Invoice::find_by_id($_POST["data"]["id"]);
             break;
     }
 

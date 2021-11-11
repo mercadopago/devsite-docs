@@ -154,9 +154,6 @@ The payment methods available for each country are shown below.
 | Visa Debit | `debit_card` | `debvisa` |
 | Mastercard Debit | `debit_card` | `debmaster` |
 | Redcompra | `debit_card` | `redcompra` |
-| Servipag | `ticket` | `servipag` |
-| Red Compras (Webpay) | `bank_transfer` | `webpay` |
-| Khipu | `bank_transfer` | `khipu` |
 | Account money | `account_money` | `account_money` |
 
 ### Colombia
@@ -185,6 +182,7 @@ The payment methods available for each country are shown below.
 | Mastercard Debit | `debit_card`| `debmaster` |
 | Tarjeta Mercado Pago | `prepaid_card` | `mercadopagocard` |
 | Oxxo | `ticket` | `oxxo` |
+| PayCash | `ticket` | `paycash` |
 | BBVA Bancomer | `atm` | `bancomer` |
 | Banamex | `atm` | `banamex` |
 | Santander | `atm` | `serfin` |

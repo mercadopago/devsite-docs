@@ -43,17 +43,15 @@ También tienes la opción de [ofrecer cuotas sin interés](#bookmark_configura_
 
 Después de agregar el medio de pago, **configura los datos para tu integración con Mercado Pago** de la siguiente manera: 
 
-1. Accede a la pestaña “Integración” y completa los campos Public Key y Access Token Key que corresponden a las [credenciales de producción]([FAKER][CREDENTIALS][URL]) de tu cuenta de Mercado Pago.
+1. Accede a la pestaña “Integración” y completa los campos Public Key y Access Token Key que corresponden a las [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) de producción de tu cuenta de Mercado Pago.
 1. Completa el nombre que aparecerá en la factura de tu cliente para que pueda reconocerte.
-1. Si quieres probar tus pagos, en la sección Modo de prueba, selecciona la opción “Sí”. Luego, completa los campos Public Key y Access Token key con las [credenciales de prueba]([FAKER][CREDENTIALS][URL]) de tu cuenta de Mercado Pago. 
+1. Si quieres probar tus pagos, en la sección Modo de prueba, selecciona la opción “Sí”. Luego, completa los campos Public Key y Access Token key con las [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) de prueba de tu cuenta de Mercado Pago. 
 1. En la sección de Cuotas, selecciona “Externo (API de Mercado Pago) para utilizar las configuraciones de cuotas directamente de tu cuenta de Mercado Pago. 
 1. Por último, haz clic en “Guardar”.
 <p>&nbsp;</p>
 
 ![LINX Configuracao](/images/linx/linx_configurando_integracao-2.gif)
 <p>&nbsp;</p>
-
-> Encuentra toda la información sobre tus credenciales en nuestras [preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/faqs/credentials).
 
 ### Configura los datos para tarjetas de crédito 
 

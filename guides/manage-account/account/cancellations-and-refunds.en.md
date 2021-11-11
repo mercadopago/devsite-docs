@@ -18,11 +18,11 @@ There are different situations in which you may want to cancel a sale:
 
 ## Cancellations
 
-- Cancellations can be made only with pending and in process transactions
+- Cancellations can only be made with `pending` and `in process` transactions
 - It is important for offline payment methods
 - The expiration of a payment occurs after 30 days and the cancellation is automatic, is this case the final status of the payment is cancelled/expired
 
-Only` pending` or `in_process` payments can be cancelled. As soon as you cancel them, they will no longer be approved and you will be able to release the stock pending confirmation.
+Only `pending` or `in_process` payments can be cancelled. As soon as you cancel them, they will no longer be approved and you will be able to release the stock pending confirmation.
 
 Cancellations are mainly used with **cash payments**.
 
@@ -112,6 +112,7 @@ If the payment was made by other means, the amount will be deposited in the buye
 
 To issue a full refund, make the following request indicating the `payment_id`:
 
+[[[
 ```php
 <?php
 
@@ -139,6 +140,7 @@ curl -X POST \
 -H 'Authorization: Bearer ACCESS_TOKEN' \
 'https://api.mercadopago.com/v1/payments/:ID/refunds'
 ```
+]]]
 
 > NOTE
 >

@@ -11,7 +11,7 @@ Your credentials are the **keys we provide you to configure your integrations**.
 
 To find them, go to the [Credentials section]([FAKER][CREDENTIALS][URL]).
 
-> Do you have any questions about credentials? Check our [FAQs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/faqs/credentials).
+> Do you have any questions about credentials? Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) for more information.
 
 
 ## Always use our libraries
@@ -29,7 +29,7 @@ We recommend that you use our official libraries for your integration. This help
 >
 > New MercadoPago.js version
 >
-> Use MercadoPago.js V2 library to update to the latest version; auto generate your business logics in your card payment form and improve compatibility with different browsers.<br><br>[Integrate Checkout API with MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v2/previous-requirements)
+> Use MercadoPago.js V2 library to update to the latest version; auto generate your business logics in your card payment form and improve compatibility with different browsers.<br><br>[Integrate Checkout API with MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements)
 
 MercadoPago.js allows you to manage the card data to comply with the necessary security requirements and avoid sending sensitive data to your servers. For this, our library generates a payment token that represents this information and allows you to operate safely. You can use it by adding the following code to your website:
 

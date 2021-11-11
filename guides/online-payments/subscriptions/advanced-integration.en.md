@@ -55,6 +55,8 @@ curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPRO
 }'
 ```
 
+![Basic-subscriptions](/images/subscriptions/status-preapproval-en.png)
+
 ## Reactivate a paused subscription
 
 ### Activate subscription with end time
@@ -98,9 +100,9 @@ curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPRO
 
 ## Billing date
 
-If you have a monthly subscription, you can set a fixed day of the month to receive your billings. 
+For subscriptions with a monthly payment frequency, you can choose a fixed day of the month for charges to be made. If you do not set a specific day, charges will be made on the same day of the month that the subscriber joined the subscription. 
 
-By setting a billing date, you can choose whether or not to charge a proportional amount to payers who sign up for that subscription on dates different from the one you chose.
+When a billing date is set, you can choose whether or not you will charge a __proportional amount (pro-rata)__ to customers who subscribe on dates other than the one you have chosen.
 
 > NOTE
 > 

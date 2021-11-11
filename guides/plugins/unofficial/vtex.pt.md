@@ -74,7 +74,7 @@ Para criar uma **afiliação de gateway de pagamento com o Mercado Pago**, siga 
 
 5. Clique em "Salvar".
 
-![Setting affiliation in VTEX](/images/vtex/vtex_afiliacao_gateway_1.gif)
+![Setting affiliation in VTEX](/images/vtex/vtex_afiliacao_gateway_1_2.gif)
 
 E pronto! Sua afiliação com o MercadoPagoV1 já está ativa!
 
@@ -111,7 +111,7 @@ Para criar uma **afiliação de gateway MercadoPagoV2**, siga os passos abaixo:
 
 5. Clique em "Salvar".
 
-![Setting affiliation in VTEX](/images/vtex/vtex_afiliacao_gateway_v2.gif)
+![Setting affiliation in VTEX](/images/vtex/vtex_afiliacao_gateway_v2-2.gif)
 
 E pronto! Sua afiliação com o MercadoPagoV2 já está ativa!
 
@@ -139,7 +139,7 @@ Para criar uma **condição de pagamento cartão de crédito** utilizando sua af
 7. Clique em "Salvar".
 <p>&nbsp;</p>
 
-![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_cartao_2.gif)
+![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_cartao_2_2.gif)
 
 ### Condição de pagamento boleto bancário
 
@@ -153,7 +153,7 @@ Para criar uma **condição de pagamento boleto bancário utilizando sua afilia�
 6. Clique em "Salvar".
 <p>&nbsp;</p>
 
-![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_boleto_3.gif)
+![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_boleto_3_2.gif)
 
 ### Condição de pagamento Pix
 
@@ -176,7 +176,7 @@ Para **criar uma condição de pagamento Pix utilizando sua afiliação com o [M
 6. Clique em "Salvar".
 <p>&nbsp;</p>
 
-![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_pix.gif)
+![Setting payments in VTEX](/images/vtex/vtex_condicao_pagamento_pix_2.gif)
 
 ### Condição de pagamento Mercado Pago Offline
 
@@ -190,7 +190,7 @@ Para criar uma **condição de pagamento Mercado Pago Offline, onde poderá cont
 6. Clique em "Salvar".
 <p>&nbsp;</p>
 
-![Setting payments in VTEX](/images/vtex/vtex_condicao_mercado_pago_offline.gif)
+![Setting payments in VTEX](/images/vtex/vtex_condicao_mercado_pago_offline_2.gif)
 
 E pronto! Sua condição de pagamento Mercado Pago Offline já está ativa!
 
@@ -212,7 +212,7 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 6. Clique em "Salvar".
 <p>&nbsp;</p>
 
-![Setting payments in VTEX](/images/vtex/vtex_condicao_redirect_4.gif)
+![Setting payments in VTEX](/images/vtex/vtex_condicao_redirect_4_2.gif)
 
 #### Configuração do meio de pagamento Mercado Pago PRO
 
@@ -228,7 +228,7 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 6. Clique em "Salvar".
 <p>&nbsp;</p>
 
-![Setting payments in VTEX](/images/vtex/vtex_condicao_pro_4.gif)
+![Setting payments in VTEX](/images/vtex/vtex_condicao_pro_4_2.gif)
 
 #### Configuração do meio de pagamento Mercado Pago Wallet
 
@@ -244,7 +244,7 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 6. Clique em "Salvar".
 <p>&nbsp;</p>
 
-![Setting payments in VTEX](/images/vtex/vtex_condicao_wallet_4.gif)
+![Setting payments in VTEX](/images/vtex/vtex_condicao_wallet_4_2.gif)
 
 <!-- -->
 > NOTE
@@ -260,7 +260,7 @@ Para criar essa condição de pagamento, siga os passos abaixo:
 3. Escolha "Quantas parcelas você quer oferecer?" e clique em "Ativar" para confirmar as alterações.
 <p>&nbsp;</p>
 
-![Setting affiliation in VTEX](/images/vtex/vtex-account-installment-7.gif)
+![Setting affiliation in VTEX](/images/vtex/vtex_account_installment_7_2.gif)
 
 E pronto! Você está oferecendo parcelamento sem acréscimo, assumindo as tarifas de parcelamento que você configurou.
 
@@ -285,7 +285,7 @@ document.body.appendChild(script);
 ```
 <br>
 
-![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6.gif)
+![Setting deviceid in VTEX](/images/vtex/vtex_deviceid_6_2.gif)
 
 ## Entendendo sobre os principais logs da VTEX
 
@@ -325,7 +325,7 @@ Os erros mais comuns são os seguintes:
 >
 > Importante
 >
-> Antes de iniciar sua operação em produção, você deve [ativar suas credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials). Caso já tenha realizado este passo o link não será apresentado.
+> Antes de iniciar sua operação em produção, você deve ativar suas credenciais. Caso já tenha realizado este passo o link não será apresentado.
 
 <!-- -->
 > Para mais informação, visite o site [oficial da VTEX](https://help.vtex.com/) e o [site de status da Vtex](https://status.vtex.com/).
