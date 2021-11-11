@@ -1,5 +1,19 @@
 # WooCommerce
 
+> NOTE
+>
+> Desenvolva seus conhecimentos sobre WordPress
+>
+> Marque no seu calendário: dia 27 de novembro acontecerá o WordCamp, o evento online e gratuito sobre Desenvolvimento, Design, Negócios e Comunidade WordPress com brindes oficiais e palestras exclusivas Mercado Pago. 
+> 
+> [Garanta já o seu lugar](https://saopaulo.wordcamp.org/2021/ingressos/)!  
+
+> WARNING
+>
+> Proteja a sua integração!
+>
+> Em outubro de 2022, versões do plugin WooCommerce anteriores a 4.5.0 serão descontinuadas. Mantenha sua loja sempre atualizada com a versão mais recente para não suspender transações e expor dados sensíveis.
+
 [WooCommerce](https://woocommerce.com/) é um plugin que permite habilitar seu site/blog [WordPress](https://wordpress.com/pt-br/) para funcionar como uma loja virtual capaz de oferecer aos compradores a possibilidade de efetuarem pagamentos utilizando o Mercado Pago através de uma integração.
 
 Para mais informações sobre os benefícios, tarifas, prazos e tipos de checkout disponíveis, acesse a página [WooCommerce com Mercado Pago](https://www.mercadopago.com.br/ferramentas-para-vender/link-de-pagamento-plugins-checkout/plugins/vender-woocommerce?utm_experiment=optimize&matt_tool=10047855&matt_word=MLB_MP_G_AO_OP_COW_SEARCH_SELL_TXS_Checkout-WooCommerce-Branded&gclid=Cj0KCQjw6s2IBhCnARIsAP8RfAjJHJVBE0is6oJv5K3_v9qiv44mYs52j7TlFtAMe2AVWKoJ-DAga_4aAuH7EALw_wcB). 
