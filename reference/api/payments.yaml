@@ -1632,7 +1632,7 @@ paths:
         - $ref: '#/tags/qr-code'
         - $ref: '#/tags/subscriptions'
       summary: Find payments
-      description: Find all the information of the payments using specific filters or by searching a specific date range
+      description: Find all the information of the payments using specific filters or by searching a specific date range TEST TEST
       parameters:
         - name: sort
           in: query
