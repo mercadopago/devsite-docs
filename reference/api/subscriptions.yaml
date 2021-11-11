@@ -348,3 +348,126 @@ paths:
                       - >-
                         Card token service not
                         found--Card-token-service-not-found-
+    post:
+      tags:
+        - $ref: '#/tags/assinaturas'
+      summary: Criar plano
+      description: Create a plan to associate it with your subscription
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: <write object type here>
+              properties:
+                reason:
+                  type: string
+                  description: descrição que o assinante verá quando assinar e o detalhe que será visto na fatura do cartão.
+                  example: Plan Pase Mensual Gold
+                auto_recurring.frequency:
+                  type: string
+                  description: descrição que o assinante verá quando assinar e o detalhe que será visto na fatura do cartão.
+                  example: Plan Pase Mensual Gold
+                auto_recurring.frequency_type:
+                  type: string
+                  description: descrição que o assinante verá quando assinar e o detalhe que será visto na fatura do cartão.
+                  example: Plan Pase Mensual Gold
+                auto_recurring.transaction_amount:
+                  type: string
+                  description: descrição que o assinante verá quando assinar e o detalhe que será visto na fatura do cartão.
+                  example: Plan Pase Mensual Gold
+                auto_recurring.currency_id:
+                  type: string
+                  description: descrição que o assinante verá quando assinar e o detalhe que será visto na fatura do cartão.
+                  example: Plan Pase Mensual Gold
+                auto_recurring.repetitions:
+                  type: string
+                  description: descrição que o assinante verá quando assinar e o detalhe que será visto na fatura do cartão.
+                  example: Plan Pase Mensual Gold
+                auto_recurring.free_trial.frequency:
+                  type: string
+                  description: descrição que o assinante verá quando assinar e o detalhe que será visto na fatura do cartão.
+                  example: Plan Pase Mensual Gold
+                auto_recurring.free_trial.frequency_type:
+                  type: string
+                  description: descrição que o assinante verá quando assinar e o detalhe que será visto na fatura do cartão.
+                  example: Plan Pase Mensual Gold
+      responses:
+        '200':
+          description: Success response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    description: xxxxxxx
+                    example: 2c938084726e18d60172720000000000
+                  back_url:
+                    type: string
+                    description: xxxxxxx
+                    example: 'https://www.mercadopago.com.br'
+                  collector_id:
+                    type: string
+                    description: xxxxxxx
+                    example: 100200300
+                  application_id:
+                    type: string
+                    description: xxxxxxx
+                    example: 1234567812345678
+                  reason:
+                    type: string
+                    description: xxxxxxx
+                    example: Plan Pase Mensual Gold
+                  status:
+                    type: string
+                    description: xxxxxxx
+                    example: active
+                  date_created:
+                    type: string
+                    description: xxxxxxx
+                    example: '2020-06-01T20:14:35.008-04:00'
+                  last_modified:
+                    type: string
+                    description: xxxxxxx
+                    example: '2020-06-01T20:14:35.008-04:00'
+                  init_point:
+                    type: string
+                    description: xxxxxxx
+                    example: >-
+                    https://www.mercadopago.com/mlm/debits/new?preapproval_plan_id=2c938084726e18d60172720000000000
+                  sandbox_init_point:
+                    type: string
+                    description: xxxxxxx
+                    example: >-
+                    https://sandbox.mercadopago.com/mlm/debits/new?preapproval_plan_id=2c938084726e18d60172720000000000
+                  auto_recurring:
+                    frequency:
+                      type: string
+                      description: xxxxxxx
+                      example: 1
+                    frequency_type:
+                      type: string
+                      description: xxxxxxx
+                      example: months
+                    transaction_amount:
+                      type: string
+                      description: xxxxxxx
+                      example: 1100
+                    currency_id:
+                      type: string
+                      description: xxxxxxx
+                      example: BRL
+                    repetitions:
+                      type: string
+                      description: xxxxxxx
+                      example: 12
+                    free_trial:
+                      frequency:
+                        type: string
+                        description: xxxxxxx
+                        example: 1
+                      frequency_type:
+                        type: string
+                        description: xxxxxxx
+                        example: months
