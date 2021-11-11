@@ -23,7 +23,8 @@ paths:
       security:
         - bearerAuth: []
       tags:
-        - Device
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
       parameters:
         - in: query
           name: store_id
@@ -85,7 +86,8 @@ paths:
       security:
         - bearerAuth: []
       tags:
-        - Payment-Intent
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
       parameters:
         - in: header
           name: x-test-scope
@@ -153,7 +155,8 @@ paths:
       security:
         - bearerAuth: []
       tags:
-        - Payment-Intent
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
       parameters:
         - in: header
           name: x-test-scope
@@ -215,7 +218,8 @@ paths:
       security:
         - bearerAuth: []
       tags:
-        - Payment-Intent
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
       parameters:
         - in: header
           name: x-test-scope
@@ -270,7 +274,8 @@ paths:
       security:
         - bearerAuth: []
       tags:
-        - Payment-Intent
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
       parameters:
         - in: header
           name: x-test-scope
@@ -334,7 +339,8 @@ paths:
       security:
         - bearerAuth: []
       tags:
-        - Payment-Intent
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
       parameters:
         - in: header
           name: x-test-scope
@@ -397,7 +403,8 @@ paths:
       security:
         - bearerAuth: []
       tags:
-        - Config
+       - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
       responses:
         '200':
           description: Get Token Integrator
@@ -418,7 +425,8 @@ paths:
       security:
         - bearerAuth: []
       tags:
-        - Config
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
       requestBody:
         required: true
         content:
@@ -468,7 +476,8 @@ paths:
       security:
         - bearerAuth: []
       tags:
-        - Config
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
       responses:
         '204':
           description: Webhook successfully configured
@@ -512,7 +521,8 @@ paths:
       security:
         - bearerAuth: []
       tags:
-        - Device
+        - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/marketplace'
       requestBody:
         required: true
         content:
