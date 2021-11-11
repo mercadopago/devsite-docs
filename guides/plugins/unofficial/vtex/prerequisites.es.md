@@ -9,6 +9,7 @@ Para utilizar la integración de Mercado Pago con VTEX, debes cumplir con los si
 |Cuenta de vendedor Mercado Pago|Para realizar ventas se necesita una cuenta de vendedor en Mercado Pago. Si aún no tienes una, [haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) para crearla.|Cuenta de vendedor en Mercado Pago.|
 |Mercado Pago Payment APP instalada|Verifica en tu tienda de aplicaciones VTEX que la App **Mercado Pago Payment APP** este instalada para usar las condiciones de pago **MercadoPagoPro, MercadoPagoWallet y MercadoPagoOff** o solicita la instalación por parte del equipo de VTEX a través de un ticket en [Support VTEX](https://help.vtex.com/es/support).|Mercado Pago Payment APP instalada en tu tienda de aplicaciones VTEX.|
 |Cuenta de VTEX|Para realizar ventas se necesita una cuenta de VTEX. En caso de no tener una, haz clic [aquí](https://vtex.com/br-es/contato/).|Tener una cuenta de VTEX|
+|Llave PIX|Para configurar PIX en tu integración con Mercado Pago es necesario que tu llave PIX esté configurada. En caso de no tener una, haz clic [aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required).|Llave PIX|
 
 ------------
 
