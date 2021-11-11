@@ -4,7 +4,7 @@
 >
 > Protect your integration!
 >
-> In October 2022, the WooCommerce plugin's versions before 4.5.0 will be discontinued. Keep your store always up to date with the latest version so you don't have to suspend transactions and expose sensitive data.
+> In October 2022, the WooCommerce plugin versions before 4.5.0 will be discontinued. Keep your store always up to date with the latest version to avoid having to suspend transactions and exposing sensitive data.
 
 [WooCommerce](https://woocommerce.com/) is a plugin that allows you to enable your [WordPress](https://wordpress.com/pt-br/create/?utm_source=google&utm_campaign=google_wpcom_search_brand_desktop_br_pt&utm_medium=paid_search&keyword=wordpress&creative=405409862800&campaignid=662299893&adgroupid=55904101192&matchtype=e&device=c&network=g&targetid=kwd-313411415&gclsrc=aw.ds&gclid=Cj0KCQjw6s2IBhCnARIsAP8RfAjJw-W6L7Lm5t3QdPwg8oRXUA783ncsLK4sSYBaU5ObfjUylCwwi20aAgLXEALw_wcB) website/blog to work as a virtual store capable of offering buyers the possibility to make payments using Mercado Pago through an integration.
 
