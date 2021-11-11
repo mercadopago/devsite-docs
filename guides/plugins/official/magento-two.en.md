@@ -1,5 +1,11 @@
 # Magento 2
 
+> WARNING
+>
+> Protect your integration!
+>
+> In October 2022, the Magento plugin's versions before 3.5.0 will be discontinued. Keep your store always up to date with the latest version so you don't have to suspend transactions and expose sensitive data.
+
 ## Requirements to integrate
 
 | Requirement | Description |
@@ -14,7 +20,6 @@
 | Extension Dependencies | bc-math (Magento Commerce only)<br/>curl<br/>gd, ImageMagick 6.3.7 (or later) or both<br/>intl<br/>bstring<br/>mcrypt<br/>hash<br/>openssl<br/>PDO/MySQL<br/>SimpleXML<br/>soap<br/>xml<br/>xsl<br/>zip<br/> |
 | PHP 7 only | json<br/>iconv |
 | SSL | It is a requirement that you have an SSL certificate.<br/>During testing in Sandbox you will be able to run at http. |
-
 
 ## Features
 
