@@ -1,7 +1,8 @@
 # Registra afiliaciones de gateway
 
-Una afiliación de gateway es un conjunto de configuraciones que representan el procesamiento de tus pagos con Mercado Pago.
-**Afiliación de gateway MercadoPagoV2** para procesar pagos con Tarjeta de Crédito, Tarjeta de Débito, Mercado Pago Offline y Checkout Pro.
+Una **afiliación de gateway** es un conjunto de configuraciones que representan el procesamiento de tus pagos con una gateway de tu elección, en este caso **Mercado Pago**. Esto permite decidir por qué gateway se procesarán los diferentes tipos de transacciones en tu tienda VTEX.
+
+Podrás utilizar la **Afiliación de gateway MercadoPagoV2** para procesar pagos con Tarjeta de Crédito, Tarjeta de Débito, Mercado Pago Offline y Checkout Pro.
 
 ## Creando una afiliación de gateway MercadoPagoV2
 
@@ -58,7 +59,7 @@ Para crear una **afiliación de gateway de pago con MercadoPagoV2**, sigue los p
 |Modo de processamento - Modo de procesamiento|Configura si el pago será gateway o agregador.|
 |Insira seu Integrator ID - Introduce tu Integrator ID|Para programadores o agencias que realizan la integración.|
 |Selecione a moeda das vendas - Seleccione la moneda de venta|Moneda a configurar (USD ou Local)|
-|Prazo para captura de dados de cartão da compra -  Plazo para captura de datos de tarjetas de compra|Si utilizas un Antifraude externo complementario, puedes configurar una fecha límite de captura automática para una transacción aprobada, para evitar cancelaciones innecesarias.|
+|Prazo de captura de pagamento aprovado -  Plazo de captura de pagos aprobado|Si utilizas un Antifraude externo complementario, puedes configurar una fecha límite de captura automática para una transacción aprobada, para evitar cancelaciones innecesarias.|
 
 5. Haz clic en **Salva**.
 

@@ -1,7 +1,8 @@
 # Configura planes de pago
 
-Luego de haber creado tu afiliación con **MercadoPagoV2**, debes configurar los **planes de pago** que se ofrecerán a los compradores.
+Los **planes pago** son los métodos de pago que se muestran en el sitio web para la finalización de la compra. Permiten la configuración de cuotas, intereses, condiciones especiales, etc.
 
+Luego de haber creado tu afiliación con **MercadoPagoV2**, debes configurar los **planes de pago** que se ofrecerán a los compradores.
 
 > WARNING
 >

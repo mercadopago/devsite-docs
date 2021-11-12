@@ -1,6 +1,8 @@
 # Configuração de fingerprint
 
-O Mercado Pago possui suas próprias ferramentas de prevenção de fraudes. Sempre que possível, recomendamos que envie informações sobre o comportamento do cliente para detectar movimentos incomuns e evitar transações fraudulentas. Não se preocupe, cuidamos dos dados de seus clientes e não os compartilhamos com ninguém.
+O **Mercado Pago** possui suas próprias ferramentas de prevenção de fraudes. **Device Fingerprint** é um identificador que atua no processamento de um pagamento, tendo como objetivo melhorar a análise do risco de fraude em cada transação. 
+
+Sempre que possível, recomendamos que envie informações sobre o comportamento do cliente para detectar movimentos incomuns e evitar transações fraudulentas. Não se preocupe, cuidamos dos dados de seus clientes e não os compartilhamos com ninguém.
 
 **Para configurar o device fingerprint**, siga os passos abaixo:
 

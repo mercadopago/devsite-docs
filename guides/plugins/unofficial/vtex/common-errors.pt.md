@@ -2,12 +2,30 @@
 
 Os erros mais comuns são os seguintes:
 
+----[mlb]----
+
 |Mensagem|Significado|
 |---|---|
 |`unauthorized_use_of_live_credentials`|Isso significa que as credenciais da conta do Mercado Pago não estão ativadas. Você deve ir para a página de credenciais e ativá-las.|
 |`invalid installments`|Está sendo feita uma tentativa de processar o pagamento com uma taxa que não está ativada. Você deve acessar a configuração do método de pagamento e definir as taxas como "Automático".|
 |`invalid_users`|Você está tentando pagar com o mesmo usuário que está cobrando. Repetir o pagamento com um e-mail de pagador diferente.|
 |`Cannot infer Payment Method`|Você está tentando pagar com um cartão que não seja o tipo de cartão selecionado (por exemplo, um número de cartão de crédito foi inserido na opção de cartão de débito).|
+|`Invalid users involved`|Ocorre quando é utilizado as credencias produtivas em ambiente de teste ou vice-versa. **Exemplo:** Utilizar um email de teste no nó "payer" quando se está utilizando a credencial de produção de um usuário real.|
+`Collector user without key enabled for QR render`|Ocorre quando o seller ainda não realizou a criação de uma chave **Pix** junto a conta Mercado Pago.|
+
+------------
+
+----[mla, mlu, mlm, mlc, mco, mpe]----
+
+|Mensagem|Significado|
+|---|---|
+|`unauthorized_use_of_live_credentials`|Isso significa que as credenciais da conta do Mercado Pago não estão ativadas. Você deve ir para a página de credenciais e ativá-las.|
+|`invalid installments`|Está sendo feita uma tentativa de processar o pagamento com uma taxa que não está ativada. Você deve acessar a configuração do método de pagamento e definir as taxas como "Automático".|
+|`invalid_users`|Você está tentando pagar com o mesmo usuário que está cobrando. Repetir o pagamento com um e-mail de pagador diferente.|
+|`Cannot infer Payment Method`|Você está tentando pagar com um cartão que não seja o tipo de cartão selecionado (por exemplo, um número de cartão de crédito foi inserido na opção de cartão de débito).|
+|`Invalid users involved`|Ocorre quando é utilizado as credencias produtivas em ambiente de teste ou vice-versa. **Exemplo:** Utilizar um email de teste no nó "payer" quando se está utilizando a credencial de produção de um usuário real.|
+
+------------
 
 > WARNING
 >
