@@ -6,9 +6,9 @@ O relatório de Dinheiro disponível é um **relatório para ser baixado que te 
 
 > WARNING
 >
-> A partir do dia 1º de março de 2022, o relatório Dinheiro disponível será desabilitado
+> O relatório de Dinheiro disponível será desabilitado em breve
 >
-> Use o [relatório de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberações------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
+> Você pode usar o [relatório de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberações------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
 
 ## Como baixar o relatório?
 

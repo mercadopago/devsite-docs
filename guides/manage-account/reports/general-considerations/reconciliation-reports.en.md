@@ -10,11 +10,3 @@ Check the table below for more details on the available report types.
 | Account balance report| Informs the transactions/movements that affected your account balance. For more information [click here](https://www.mercadopago.com.br/developers/en/guides/manage-account/reports/account-money/introduction). |
 | Available balance report| Informs the liquidity of your business, showing the amount available for use in the account. [Click here](https://www.mercadopago.com.br/developers/en/guides/manage-account/reports/available-money/introduction) for more information. <br><br>* **This report will be deprecated soon**. We recommend using the [Released Report](https://www.mercadopago.com.br/developers/en/guides/manage-account/reports/released-money/introduction) to reconcile the transactions that compose the balance available in your account, including your bank withdrawals. |
 
-> NOTE
->
-> > WARNING
->
-> The Available Balance report will be disabled from March 1st, 2022
->
-> You can use the [Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
-
