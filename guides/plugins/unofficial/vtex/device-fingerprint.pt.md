@@ -23,8 +23,8 @@ document.body.appendChild(script);
 
 > LEFT_BUTTON_RECOMMENDED_PT
 >
-> Tipos e Métodos de Pagamentos
+> Verificação de logs
+> 
+>Conheça os principais registros VTEX.
 >
-> Conheça os tipos e meios de pagamento.
->
-> [Tipos e Métodos de Pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/payment-methods)
+> [Verificação de logs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/logs)

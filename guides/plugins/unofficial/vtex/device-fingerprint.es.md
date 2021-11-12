@@ -21,10 +21,10 @@ document.body.appendChild(script);
 
 ![Configuración de fingerprint](/images/vtex/devicefingerprint-es.gif)
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> LEFT_BUTTON_RECOMMENDED_PT
 >
-> Tipos y métodos de Pago
+> Verificación de logs
 >
-> Conoce los diferentes tipos y métodos de pago.
+> Conoce los principales logs de VTEX.
 >
-> [Tipos y métodos de Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/payment-methods)
+> [Verificación de logs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/logs)
