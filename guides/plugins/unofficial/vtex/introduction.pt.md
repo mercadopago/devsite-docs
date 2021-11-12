@@ -13,8 +13,8 @@ Para integrar sua loja VTEX ao Mercado Pago, siga os passos:
 
 > LEFT_BUTTON_REQUIRED_PT
 >
-> Afiliações de gateway
+> Pré-requisitos
 >
-> Conheça como cadastrar afiliações de gateway.
+> Conheça os pré-requisitos para sua integração.
 >
-> [Afiliações de gateway](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/gateway-affiliations)
+> [Pré-requisitos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/prerequisites)

@@ -22,21 +22,7 @@ Para obtener más información sobre cómo configurar los términos de pago en V
 
 La integración con Mercado Pago te permite configurar las siguientes condiciones de pago:
 
-----[mlb]----
 
-|Plan de pago|Sección en la pestaña Planes de Pago|
-|---|---|
-|Tarjeta de Crédito|Tarjeta de Crédito|
-|Tarjeta de Débito|Tarjeta de Débito|
-|Boleto Bancário|Boleto|
-|PIX|Pago Instantáneo|
-|MercadoPagoOff|Otro|
-|MercadoPagoWallet|Otro|
-|MercadoPagoPro|Otro|
-
-------------
-
-----[mla, mlu, mco, mlm, mlc, mpe]----
 
 |Plan de pago|Sección en la pestaña Planes de Pago|
 |---|---|
@@ -45,8 +31,8 @@ La integración con Mercado Pago te permite configurar las siguientes condicione
 |MercadoPagoOff|Otro|
 |MercadoPagoWallet|Otro|
 |MercadoPagoPro|Otro|
-
-------------
+----[mlb]----|Boleto Bancário|Boleto|
+|PIX|Pago Instantáneo|------------
 
 También puedes configurar **condiciones especiales** de pago. Haz clic [aquí](https://help.vtex.com/es/tutorial/condicoes-especiais--tutorials_456?&utm_source=admin) para obtener más información.
 

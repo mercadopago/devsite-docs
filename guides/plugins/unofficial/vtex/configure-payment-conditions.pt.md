@@ -22,21 +22,7 @@ Para mais informações sobre como configurar as condições de pagamento na VTE
 
 A integração com o Mercado Pago permite configurar as seguintes condições de pagamento:
 
-----[mlb]----
 
-|Condição de pagamento|Seção na aba condições de pagamento|
-|---|---|
-|Cartão de Crédito|Cartão de Crédito|
-|Cartão de Débito|Cartão de Débito|
-|Boleto Bancário|Boleto|
-|PIX|Pagamento instantãneo|
-|MercadoPagoOff|Outro|
-|MercadoPagoWallet|Outro|
-|MercadoPagoPro|Outro|
-
-------------
-
-----[mla, mlu, mco, mlm, mlc, mpe]----
 
 |Condição de pagamento|Seção na aba condições de pagamento|
 |---|---|
@@ -45,8 +31,8 @@ A integração com o Mercado Pago permite configurar as seguintes condições de
 |MercadoPagoOff|Outro|
 |MercadoPagoWallet|Outro|
 |MercadoPagoPro|Outro|
-
-------------
+----[mlb]----|Boleto Bancário|Boleto|
+|PIX|Pagamento instantãneo|------------
 
 Você também pode configurar **condições especiais** de pagamento. Clique [aqui](https://help.vtex.com/pt/tutorial/condicoes-especiais--tutorials_456?&utm_source=admin) para obter mais informações.
 
