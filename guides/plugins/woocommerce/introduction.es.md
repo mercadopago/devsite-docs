@@ -2,7 +2,7 @@
 
 > WARNING
 >
-> Protege tu integración!
+> ¡Protege tu integración!
 >
 > En octubre de 2022, se deprecarán las versiones del plugin WooCommerce anteriores a la 4.5.0. Mantén tu tienda siempre actualizada con la última versión para evitar la suspensión de las transacciones y la exposición de datos confidenciales.
 
