@@ -4,7 +4,7 @@
 >
 > Protect your integration!
 >
-> In October 2022, the Prestashop plugin versions before 4.3.0 will be discontinued. Keep your store always up to date with the latest version to avoid having to suspend transactions and exposing sensitive data.
+> In October 2022, the PrestaShop plugin versions before 4.3.0 will be discontinued. Keep your store always up to date with the latest version to avoid having to suspend transactions and exposing sensitive data.
 
 As you can imagine, a website without a payment processor is nothing more than an online catalog. Your customers will be able to see your products but they won't be able to pay you for them.
 
