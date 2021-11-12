@@ -872,11 +872,11 @@ Programa la generación de tu reporte configurando tres instancias: creación, c
 
 Programa la generación automática del reporte utilizando la frecuencia deseada en el recurso de configuración. 
 
-Actualiza el atributo *`scheduled`* en la configuración a *`true`*:
+Actualiza el atributo `scheduled` como `true` en la configuración:
 
 `POST /v1/account/release_report/schedule`
 
-Para parar a geração automática do relatório, atualize o atributo *`scheduled`* na configuração para *`false`*:
+Para detener la generación automática del reporte, actualiza el atributo`scheduled`como `false` en tu configuración:
 
 `DELETE /v1/account/release_report/schedule`
 
