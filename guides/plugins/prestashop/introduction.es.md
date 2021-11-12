@@ -4,7 +4,7 @@
 >
 > Protege tu integración!
 >
-> En octubre de 2022, se deprecarán las versiones del plugin Prestashop anteriores a la 4.3.0. Mantén tu tienda siempre actualizada con la última versión para evitar la suspensión de las transacciones y la exposición de datos confidenciales.
+> En octubre de 2022, se deprecarán las versiones del plugin PrestaShop anteriores a la 4.3.0. Mantén tu tienda siempre actualizada con la última versión para evitar la suspensión de las transacciones y la exposición de datos confidenciales.
 
 <center>
   <iframe width="100%" height="350" src="https://www.youtube.com/embed/-0QDOCWY_dE" frameborder="0" allow="encrypted-media; picture-in-picture"></iframe>
