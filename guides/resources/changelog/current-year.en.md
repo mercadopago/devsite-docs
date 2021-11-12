@@ -21,8 +21,7 @@ We have released a new version of SDK Java 1.11.1.
 > GitHub
 >
 > [Check GitHub](https://github.com/mercadopago/sdk-java/releases) for further details regarding this release.
----
-## November 2021
+
 
 ### November 5th
 
