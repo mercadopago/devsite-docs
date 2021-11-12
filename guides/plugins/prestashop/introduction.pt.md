@@ -1,5 +1,10 @@
 # Mercado Pago para PrestaShop 1.6 & 1.7
 
+> NOTE
+>
+> Proteja a sua integração!
+>
+> Em outubro de 2022, versões do plugin PrestaShop anteriores a 4.3.0 serão descontinuadas. Mantenha sua loja sempre atualizada com a versão mais recente para não suspender transações e expor dados sensíveis.
 
 Como você pode imaginar, um site sem processador de pagamento nada mais é do que um catálogo on-line. Seus clientes poderão ver seus produtos, mas não poderão pagar por eles.
 
