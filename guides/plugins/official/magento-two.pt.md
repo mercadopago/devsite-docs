@@ -4,7 +4,7 @@
 >
 > Proteja a sua integração!
 >
-> Em outubro de 2022, versões do plugin Magento anteriores a 3.5.0 serão descontinuadas. Mantenha sua loja sempre atualizada com a versão mais recente para não suspender transações e expor dados sensíveis.
+> Em outubro de 2022, versões do plugin Magento 2 anteriores a 3.5.0 serão descontinuadas. Mantenha sua loja sempre atualizada com a versão mais recente para não suspender transações e expor dados sensíveis.
 
 ## Requisitos para integrar
 
