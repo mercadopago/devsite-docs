@@ -8,45 +8,19 @@ paths:
   /preapproval:
     post:
       tags:
-        - $ref: '#/tags/subscriptions'
-      summary: Create a subscription
-      description: Generate a subscription with all the settings you need
+        - $ref: '#/tags/assinaturas'
+      summary: Create plan
+      description: generate a plan
       requestBody:
         content:
           application/json:
             schema:
               type: object
               properties:
-                auto_recurring:
-                  type: object
-                  description: Recurring data.
-                  properties:
-                    frequency:
-                      type: number
-                      description: Recurring frecuency.
-                      example: 1
-                    frequency_type:
-                      type: string
-                      description: Recurring frecuency type (days or months).
-                      example: months
-                    transaction_amount:
-                      type: number
-                      description: Recurring amount.
-                      example: 10
-                    currency_id:
-                      type: string
-                      description: Currency Id.
-                      example: ARS
-                    start_date:
-                      type: string
-                      format: date
-                      description: preapproval's start date.
-                      example: '2020-06-02T13:07:14.260Z'
-                    end_date:
-                      type: string
-                      format: date
-                      description: preapproval's end date.
-                      example: '2022-07-20T15:59:52.581Z'
+                reason:
+                  type: string
+                  description: REs la descripción que verá el suscriptor al realizar la suscripción y el detalle que se verá en el resumen de la tarjeta..
+                  example: Plan Pase Mensual Gold
                 back_url:
                   type: string
                   description: Return URL.
