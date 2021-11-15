@@ -12,7 +12,7 @@ Los datos más significativos son los siguientes:
 |`Payment_method_id`|visa|Medio de pago.|
 |`Payment_type_id`|credit_card|Medio de pago.|
 |`Status`|authorized|Estado del pago.|
-|`Status_detail`|pending_capture|DDetalle del estado del pago.|
+|`Status_detail`|pending_capture|Detalle del estado del pago.|
 |`External_reference`|503451|Identificador de VTEX enviado a Mercado Pago.|
 |`First_six_digits`|450995|Bin de tarjeta de credito.|
 |`Processing_mode`|agregador|Modo de procesamiento del pago.|

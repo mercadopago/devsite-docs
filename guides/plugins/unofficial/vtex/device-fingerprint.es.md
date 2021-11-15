@@ -21,10 +21,10 @@ document.body.appendChild(script);
 
 ![Configuración de fingerprint](/images/vtex/devicefingerprint-es.gif)
 
-> LEFT_BUTTON_RECOMMENDED_PT
+> LEFT_BUTTON_RECOMMENDED_ES
 >
 > Verificación de logs
 >
 > Conoce los principales logs de VTEX.
 >
-> [Verificación de logs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/logs)
+> [Verificación de logs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/logs)

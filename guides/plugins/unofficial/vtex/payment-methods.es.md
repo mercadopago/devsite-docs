@@ -6,7 +6,7 @@ Este documento contiene los medios y tipos de pago disponibles para tu integraci
 
 ----[mla]----
 
-|Nombre|Métodos de Pago|Tipos de Pago|Condiciones en VTEX|
+|Nombre|Métodos de Pago|Tipos de Pago|Planes en VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro y MercadoPagoWallet|
 |Mastercard|`master`|`credit_card`|Mastercard, MercadoPagoPro y MercadoPagoWallet|
@@ -25,7 +25,7 @@ Este documento contiene los medios y tipos de pago disponibles para tu integraci
 
 ----[mlb]----
 
-|Nombre|Métodos de Pago|Tipos de Pago|Condiciones en VTEX|
+|Nombre|Métodos de Pago|Tipos de Pago|Planes en VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro y MercadoPagoWallet|
 |Mastercard|`master`|`credit_card`|Mastercard, MercadoPagoPro y MercadoPagoWallet|
@@ -42,7 +42,7 @@ Este documento contiene los medios y tipos de pago disponibles para tu integraci
 
 ----[mlc]----
 
-|Nombre|Métodos de Pago|Tipos de Pago|Condiciones en VTEX|
+|Nombre|Métodos de Pago|Tipos de Pago|Planes en VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro y MercadoPagoWallet|
 |Mastercard|`master`|`credit_card`|Mastercard, MercadoPagoPro y MercadoPagoWallet|
@@ -55,7 +55,7 @@ Este documento contiene los medios y tipos de pago disponibles para tu integraci
 
 ----[mco]----
 
-|Nombre|Métodos de Pago|Tipos de Pago|Condiciones en VTEX|
+|Nombre|Métodos de Pago|Tipos de Pago|Planes en VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro y MercadoPagoWallet|
 |Mastercard|`master`|`credit_card`|Mastercard, MercadoPagoPro y MercadoPagoWallet|
@@ -71,7 +71,7 @@ Este documento contiene los medios y tipos de pago disponibles para tu integraci
 
 ----[mlm]----
 
-|Nombre|Métodos de Pago|Tipos de Pago|Condiciones en VTEX|
+|Nombre|Métodos de Pago|Tipos de Pago|Planes en VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro y MercadoPagoWallet|
 |Mastercard|`master`|`credit_card`|Mastercard, MercadoPagoPro y MercadoPagoWallet|
@@ -86,7 +86,7 @@ Este documento contiene los medios y tipos de pago disponibles para tu integraci
 
 ----[mpe]----
 
-|Nombre|Métodos de Pago|Tipos de Pago|Condiciones en VTEX|
+|Nombre|Métodos de Pago|Tipos de Pago|Planes en VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro y MercadoPagoWallet|
 |Mastercard|`master`|`credit_card`|Mastercard, MercadoPagoPro y MercadoPagoWallet|
@@ -100,7 +100,7 @@ Este documento contiene los medios y tipos de pago disponibles para tu integraci
 
 ----[mlu]----
 
-|Nombre|Métodos de Pago|Tipos de Pago|Condiciones en VTEX|
+|Nombre|Métodos de Pago|Tipos de Pago|Planes en VTEX|
 |---|---|---|---|
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro y MercadoPagoWallet|
 |Mastercard|`master`|`credit_card`|Mastercard, MercadoPagoPro y MercadoPagoWallet|

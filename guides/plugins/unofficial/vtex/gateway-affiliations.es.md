@@ -58,7 +58,7 @@ Para crear una **afiliación de gateway de pago con MercadoPagoV2**, sigue los p
 |Tipos de pagamento excluídos - Tipos de pago excluidos (formato: credti_card, bank_transfer etc.)|Tipos de pago que se excluirán en el momento de la compra. [Mira las opciones aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/payment-methods).|
 |Modo de processamento - Modo de procesamiento|Configura si el pago será gateway o agregador.|
 |Insira seu Integrator ID - Introduce tu Integrator ID|Para programadores o agencias que realizan la integración.|
-|Selecione a moeda das vendas - Seleccione la moneda de venta|Moneda a configurar (USD ou Local)|
+|Selecione a moeda das vendas - Seleccione la moneda de venta|Moneda a configurar (USD o Local)|
 |Prazo de captura de pagamento aprovado -  Plazo de captura de pagos aprobado|Si utilizas un Antifraude externo complementario, puedes configurar una fecha límite de captura automática para una transacción aprobada, para evitar cancelaciones innecesarias.|
 
 5. Haz clic en **Salva**.
@@ -71,7 +71,7 @@ Para crear una **afiliación de gateway de pago con MercadoPagoV2**, sigue los p
 >
 > Migración de versión de gateway
 >
-> Aprende a migrar migrar de MercadoPagoV1 a MercadoPagoV2.
+> Aprende a migrar de MercadoPagoV1 a MercadoPagoV2.
 >
 > [Migración de versión de gateway](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/mp1-mp2-migration)
 

@@ -11,10 +11,10 @@ Para integrar tu tienda VTEX a Mercado Pago, sigue los siguientes pasos:
 3. [Configurar los planes de pago Mercado Pago.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/configure-payment-conditions)
 4. [Configura device fingerprint.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/device-fingerprint)
 
-> LEFT_BUTTON_REQUIRED_PT
+> LEFT_BUTTON_REQUIRED_ES
 >
 > Prerrequisitos
 >
 > Conoce los prerrequisitos para tu integración.
 >
-> [Prerrequisitos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/prerequisites)
+> [Prerrequisitos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/prerequisites)
