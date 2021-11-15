@@ -18,3 +18,11 @@ The following errors are the most common ones:
 > Before starting your production operation, you must activate your credentials. If you have already done this step, the link will not be displayed.
 
 For more information, visit the [VTEX official site](https://help.vtex.com/) and the [VTEX status site](https://status.vtex.com/).
+
+> LEFT_BUTTON_RECOMMENDED_EN
+>
+> Logs verification
+>
+> Find out about the main VTEX logs.
+>
+> [Logs verification](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/logs)

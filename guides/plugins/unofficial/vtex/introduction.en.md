@@ -7,7 +7,7 @@ By integrating Mercado Pago in your VTEX store, you will install a version of [C
 To integrate your VTEX store into Mercado Pago, follow these steps:
 
 1. [Create a seller account in Mercado Pago if you don't have one yet.](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing)
-2. [RRegister a gateway affiliation with **Mercado Pago**.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/gateway-affiliations)
+2. [Register a gateway affiliation with **Mercado Pago**.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/gateway-affiliations)
 3. [Configure the Mercado Pago payment conditions.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/configure-payment-conditions)
 4. [Configure device fingerprint.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/device-fingerprint)
 

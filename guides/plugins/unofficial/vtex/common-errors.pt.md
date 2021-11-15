@@ -20,3 +20,11 @@ Os erros mais comuns são os seguintes:
 > Antes de iniciar sua operação em produção, você deve ativar suas credenciais. Caso já tenha realizado este passo o link não será apresentado.
 
 Para mais informação, visite o [site oficial da VTEX](https://help.vtex.com/) e o [site de status da VTEX](https://status.vtex.com/).
+
+> LEFT_BUTTON_RECOMMENDED_PT
+>
+> Verificação de logs
+> 
+>Conheça os principais registros VTEX.
+>
+> [Verificação de logs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/logs)
