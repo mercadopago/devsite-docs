@@ -62,7 +62,7 @@ Para criar uma **afiliação de gateway de pagamento com o MercadoPagoV2**, siga
 |Selecione a moeda das vendas - Seleccione la moneda de venta|Moeda a ser configurada (USD ou Local)|
 |Prazo de captura de pagamento aprovado -  Plazo de captura de pagos aprobado|Caso utilize um Anti Fraude externo complementar você pode configurar um prazo de captura automática de uma transação aprovada, para evitar cancelamentos desnecessários.|
 
-1. Clique em **Salvar**.
+5. Clique em **Salvar**.
 
 ![Criando afiliação de gateway MercadoPagoV2](/images/vtex/affiliationV2-pt.gif)
 

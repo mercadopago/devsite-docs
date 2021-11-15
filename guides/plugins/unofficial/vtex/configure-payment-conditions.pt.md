@@ -14,7 +14,7 @@ A configuração das condições de pagamento é feita no portal do administrado
 
 Nessa aba você deverá clicar no botão  "+" (*Adicionar nova condição de pagamento para...*) e selecionar uma condição de pagamento.
 
-Na próxima tela deve-se escrever o **Nome da Regra** para identificá-la facilmente, ativar a condição de pagamento no campo `Status`, selecionar **MercadoPagoV2** na lista ofrecida pelo campo ` Processar com a afiliação` e, finalmente, salvar suas alterações clicando em `Salvar`.
+Na próxima tela deve-se escrever o **Nome da Regra** para identificá-la facilmente, ativar a condição de pagamento no campo `Status`, selecionar **MercadoPagoV2** na lista oferecida pelo campo ` Processar com a afiliação` e, finalmente, salvar suas alterações clicando em `Salvar`.
 
 Para mais informações sobre como configurar as condições de pagamento na VTEX, clique [aqui](https://help.vtex.com/pt/tutorial/condicoes-de-pagamento--tutorials_455).
 
