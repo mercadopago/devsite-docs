@@ -192,6 +192,7 @@ Ejemplo de respuesta:
 > NOTE
 >
 > Nota
+>
 > Consulta toda la información correspondiente al pago en la sección [API de Pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get) de Referencia de API. 
 
 

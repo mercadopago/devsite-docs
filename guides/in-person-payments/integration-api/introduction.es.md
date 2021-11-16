@@ -8,6 +8,7 @@ La API de Integraciones te permite conectar tus puntos de venta (PDV) al ecosist
 > NOTE
 >
 > Nota
+>
 > Esta integración soporta los siguientes dispositivos:
 >
 > - [Point Smart (POS)](https://www.mercadopago.com.ar/point-smart?ref=devsite)

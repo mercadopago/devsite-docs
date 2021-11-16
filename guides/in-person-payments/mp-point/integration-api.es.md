@@ -1,9 +1,3 @@
----
-sites_supported:
-  - mla
-  - mlb
-  - mlm
----
 # ¿Qué es la API de Integraciones?
 
 Es una interfaz que permite conectar tus **puntos de venta** (PDV) al ecosistema Point para recibir pagos en las terminales que tengas configuradas y garantizar una experiencia de cobro unificada.

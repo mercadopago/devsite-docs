@@ -26,7 +26,7 @@ Luego, necesitarás crear una aplicación para obtener las credenciales. Es fác
 >
 > Nota
 >
-> Si vas a operar en nombre de otros vendedores, puedes gestionar la vinculación de manera segura integrando [OAuth]](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth).
+> Si vas a operar en nombre de otros vendedores, puedes gestionar la vinculación de manera segura integrando [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth).
 
 ### Accede a las credenciales de tu aplicación
 
@@ -76,7 +76,7 @@ Una vez que hayas vinculado tu dispositivo Point a tu cuenta de Mercado Pago, de
 >
 > Recurso en desarrollo
 >
-> Consulta el manual de [Configuración inicial Point Plus](https://docs.google.com/document/d/19s6PCYe2aQBIkVctrBid74YhFvj5--skeaGb6dpv0Gs/edit?usp=sharing)que te permitirá asociar su dispositivo Point Plus a tu cuenta de Mercado Pago.
+> Consulta el manual de [Configuración inicial Point Plus](https://docs.google.com/document/d/19s6PCYe2aQBIkVctrBid74YhFvj5--skeaGb6dpv0Gs/edit?usp=sharing) que te permitirá asociar su dispositivo Point Plus a tu cuenta de Mercado Pago.
 
 ## 3. Prepara y configura tus notificaciones de Webhook
 
@@ -86,7 +86,7 @@ Para integrar las notificaciones Webhook, pueden consultar [esta documentación]
 
 ### Registra y valida tu webhook
 
-Una vez tengas listo tu sistema webhook puedes registrarlo en nuestra API de Integraciones de la siguiente manera:
+Una vez tengas listo tus notificaciones de Webhook puedes registrarlo en nuestra API de Integraciones de la siguiente manera:
 
 ``` curl
 curl --location --request PATCH 'https://api.mercadopago.com/point/integration-api/integrators' \
