@@ -1,10 +1,10 @@
 # Verificação de logs
 
-Os logs permitem revisar a informação que retorna Mercado Pago e VTEX expõe para poder ter um maior entendimento de o que ocorreu com uma transação. Também em caso de modificação ou ativação de novos meios de pagamento, nos dão a possibilidade de poder validar se tudo está funcionando segundo o previsto. Por último, provém um maior entendimento às equipes comerciais para que possam dar um melhor suporte aos vendedores e converter se em uma primeira instância de suporte.
+Os logs provêm um maior entendimento às equipes para que possam ter um melhor suporte em uma primeira instância, pois permitem revisar a informação retornada na integração do Mercado Pago com a VTEX permitindo maior entendimento do que ocorreu com uma transação.
 
-Acesse a transação da VTEX, então busque pelo LOG que contenha o status response e clique em **ver mais**.
+Também em caso de modificação ou ativação de novos meios de pagamento, nos dão a possibilidade de poder validar se tudo está funcionando conforme o previsto.
 
-Os dados mais significativos são os seguintes:
+Para ter acesso aos logs, acesse o menu **Transações** do módulo **Pagamentos** do painel de administração de sua loja VTEX, então busque pelo LOG que contenha o `status response` e clique em **"ver mais"**. Os dados mais significativos são os seguintes:
 
 |Campo|Dado|Descrição|
 |---|---|---|
@@ -16,6 +16,12 @@ Os dados mais significativos são os seguintes:
 |`External_reference`|503451|Identificador da VTEX enviado a Mercado Pago.|
 |`First_six_digits`|450995|Bin do cartão de crédito.|
 |`Processing_mode`|agregador|Modo de processamento do pagamento.|
+
+> NOTE
+>
+> Nota
+>
+> [Este documento](https://help.vtex.com/pt/tutorial/checking-for-errors-or-problems-in-a-transaction--3QecZEdmzumGKe8WGmeI8a) explica em detalhes como encontrar erros ou problemas em uma transação.
 
 Quando confrontado com uma rejeição, é muito importante rever o `status_detail` que especifica o motivo do mesmo.
 

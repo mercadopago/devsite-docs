@@ -1,16 +1,11 @@
 # Registra afiliaciones de gateway
 
-Una **afiliación de gateway** es un conjunto de configuraciones que representan el procesamiento de tus pagos con una gateway de tu elección, en este caso **Mercado Pago**. Esto permite decidir por qué gateway se procesarán los diferentes tipos de transacciones en tu tienda VTEX.
+Una **afiliación de gateway** es un conjunto de configuraciones que representan el procesamiento de tus pagos con una gateway de tu elección, en este caso **Mercado Pago**. 
 
-Podrás utilizar la **Afiliación de gateway MercadoPagoV2** para procesar pagos con Tarjeta de Crédito, Tarjeta de Débito, Mercado Pago Offline y Checkout Pro.
+
+Con esto, puedes decidir por qué gateway de pagos se procesarán los diferentes tipos de transacciones de tu tienda VTEX, utilizando la **afiliación de gateway de MercadoPagoV2** para procesar pagos con Tarjeta de Crédito, Tarjeta de Débito, Mercado Pago Offline y Checkout Pro.
 
 ## Creando una afiliación de gateway MercadoPagoV2
-
-> WARNING
->
-> Importante
->
-> Si cuentas con una afiliación de gateway MercadoPagoV1, por cuestiones de seguridad te recomendamos [migrar a MercadoPagoV2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/mp1-mp2-migration).
 
 ----[mlb]----
 
@@ -29,6 +24,12 @@ La afiliación MercadoPagoV2 procesa los planes de pago con Tarjeta de crédito,
 La afiliación MercadoPagoV2 procesa los planes de pago con Tarjeta de crédito, Tarjeta de débito, y Checkout Pro.
 
 ------------
+
+> WARNING
+>
+> Importante
+>
+> Si cuentas con una afiliación de gateway MercadoPagoV1, por cuestiones de seguridad te recomendamos [migrar a MercadoPagoV2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/mp1-mp2-migration).
 
 Para crear una **afiliación de gateway de pago con MercadoPagoV2**, sigue los pasos a continuación:
 
@@ -52,8 +53,6 @@ Para crear una **afiliación de gateway de pago con MercadoPagoV2**, sigue los p
    * **Prazo de captura de pagamento aprovado -  Plazo de captura de pagos aprobado:** Si utilizas un Antifraude externo complementario, puedes configurar una fecha límite de captura automática para una transacción aprobada, para evitar cancelaciones innecesarias.
 5. Haz clic en **Salva**.
 
-![Creando una afiliación de gateway MercadoPagoV2](/images/vtex/affiliationV2-es.gif)
-
 ¡Y listo! ¡Tu afiliación con MercadoPagoV2 ya está activa!
 
 > NOTE
@@ -61,6 +60,8 @@ Para crear una **afiliación de gateway de pago con MercadoPagoV2**, sigue los p
 > Nota
 > 
 > Si tienes dificultades durante tu integración, consulta nuestro [glosario de errores](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/common-errors) y nuestro documento sobre [logs de VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/logs).
+
+![Creando una afiliación de gateway MercadoPagoV2](/images/vtex/affiliationV2-es.gif)
 
 > LEFT_BUTTON_RECOMMENDED_ES
 >

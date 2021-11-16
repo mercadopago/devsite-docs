@@ -1,16 +1,10 @@
 # Register gateway affiliations
 
-A **gateway affiliation** is a set of settings that represent the processing of your payments with a gateway of your choice, in this case **Mercado Pago**. This allows you to decide through which gateway the different types of transactions will be processed in your VTEX store.
+A **gateway affiliation** is a set of settings that represent the processing of your payments with a gateway of your choice, in this case **Mercado Pago**. 
 
-You can use the **MercadoPagoV2 gateway affiliation** to process payments with Credit Card, Debit Card, Mercado Pago Offline and Checkout Pro.
+With this, you can choose which payments gateway will process the different types of transactions from your VTEX store, using the **MercadoPagoV2 gateway affiliation** to process payments with Credit Card, Debit Card, Mercado Pago Offline and Checkout Pro.
 
 ## Creating a MercadoPagoV2 gateway affiliation
-
-> WARNING
->
-> Important
->
-> If you have a MercadoPagoV1 affiliation, we recommend that you [migrate to MercadoPagoV2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/mp1-mp2-migration). for security reasons.
 
 ----[mlb]----
 
@@ -29,6 +23,12 @@ The MercadoPagoV2 affiliation processes payment conditions with Credit Card, Deb
 The MercadoPagoV2 affiliation processes payment conditions with Credit Card, Debit Card, and Checkout Pro.
 
 ------------
+
+> WARNING
+>
+> Important
+>
+> If you have a MercadoPagoV1 affiliation, we recommend that you [migrate to MercadoPagoV2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/mp1-mp2-migration). for security reasons.
 
 To create a **payment gateway affiliation with MercadoPagoV2**, follow the steps below:
 
@@ -52,8 +52,6 @@ To create a **payment gateway affiliation with MercadoPagoV2**, follow the steps
    * **Prazo de captura de pagamento aprovado -  Plazo de captura de pagos aprobado:** If you use a complementary third-party Anti-Fraud, you can set an automatic capture deadline for approved transactions, to avoid unnecessary cancellations.
 5. Click on **Save**.
 
-![Creating a MercadoPagoV2 gateway affiliation](/images/vtex/affiliationV2-en.gif)
-
 And that's it! Your affiliation with MercadoPagoV2 is already active!
 
 > NOTE
@@ -61,6 +59,8 @@ And that's it! Your affiliation with MercadoPagoV2 is already active!
 > Note
 > 
 > If you have difficulties during your integration, check our [errors glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/common-errors), and our document about [VTEX logs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/logs).
+
+![Creating a MercadoPagoV2 gateway affiliation](/images/vtex/affiliationV2-en.gif)
 
 > LEFT_BUTTON_RECOMMENDED_EN
 >

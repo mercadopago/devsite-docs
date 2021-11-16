@@ -1,10 +1,10 @@
 # Logs verification
 
-Logs allow you to review the information that Mercado Pago returns and that VTEX exposes, to have a better understanding of what happened with a transaction. Also, in case of modification or activation of new payment methods, they give us the possibility to validate that everything is working as planned. Lastly, they provide greater insight to commercial teams so they can better support vendors and become a first instance of support.
+Logs provide the teams with a greater understanding so that they can have a better support in the first instance, since they allow to review the information returned in the integration of Mercado Pago with VTEX, allowing a better understanding of what happened with a transaction.
 
-Access the VTEX transactions, then find the LOG containing the response status and click on **see more**.
+Also, in case of modification or activation of new payment methods, they give us the possibility to validate that everything is working as planned.
 
-The most significant data is the following:
+To access the logs, access the **Transactions** menu of the **Payments** module from the administration panel of your VTEX store, then look for the LOG that contains the `status response` and click on **"see more"**. The most significant data is the following:
 
 |Field|Data|Description|
 |---|---|---|
@@ -16,6 +16,12 @@ The most significant data is the following:
 |`External_reference`|503451|VTEX identifier sent to Mercado Pago.|
 |`First_six_digits`|450995|Credit card Bin.|
 |`Processing_mode`|agregador|Payment processing method.|
+
+> NOTE
+>
+> Nota
+>
+> [This document](https://help.vtex.com/en/tutorial/checking-for-errors-or-problems-in-a-transaction--3QecZEdmzumGKe8WGmeI8a) explains in detail how to check for errors or problems in a transaction.
 
 In case of a rejection, it is very important to check the `status_detail` that specifies the reason for it.
 
