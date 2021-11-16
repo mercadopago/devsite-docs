@@ -4,7 +4,7 @@ Os logs provêm um maior entendimento às equipes para que possam ter um melhor 
 
 Também em caso de modificação ou ativação de novos meios de pagamento, nos dão a possibilidade de poder validar se tudo está funcionando conforme o previsto.
 
-Para ter acesso aos logs, acesse o menu **Transações** do módulo **Pagamentos** do painel de administração de sua loja VTEX, então busque pelo LOG que contenha o `status response` e clique em **"ver mais"**. Os dados mais significativos são os seguintes:
+Para ter acesso aos logs, acesse o menu **Transações** do módulo **Pagamentos** do painel de administração de sua loja VTEX, então busque pelo LOG que contenha o `status response` e clique em **"+ Informações"**. Os dados mais significativos são os seguintes:
 
 |Campo|Dado|Descrição|
 |---|---|---|
