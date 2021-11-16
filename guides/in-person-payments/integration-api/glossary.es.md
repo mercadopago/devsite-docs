@@ -2,7 +2,7 @@
 
 Algunos términos son nuevos y quizás no estés familiarizado con ellos. ¡Usa este glosario para no perderte!
 
-| Termino | Descripción |
+| Término | Descripción |
 | --- | --- |
 | PDV | Punto de venta.|
 | Integrador | Persona o entidad que quiere procesar un pago por medio de nuestra API.|
@@ -14,7 +14,7 @@ Algunos términos son nuevos y quizás no estés familiarizado con ellos. ¡Usa 
 
 ## Posibles estados de una intención de pago
 
-| Termino | Descripción |
+| Término | Descripción |
 | --- | --- |
 | Open | Estado inicial de una intención de pago al crearlo desde el PDV |
 | On Terminal | Estado intermedio de una intención de pago al momento de obtenerla desde el dispositivo Point |

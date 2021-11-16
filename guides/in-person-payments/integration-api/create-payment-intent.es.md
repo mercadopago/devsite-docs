@@ -112,6 +112,8 @@ Como respuesta, recibirás algo similar a esto:
     }
 }
 ```
+------------
+
 ## Cancela una intención de pago
 
 Puedes cancelar una intención de pago asignada a un dispositivo Point de la siguiente manera:
