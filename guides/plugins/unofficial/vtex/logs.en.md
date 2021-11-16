@@ -19,7 +19,7 @@ To access the logs, access the **Transactions** menu of the **Payments** module 
 
 > NOTE
 >
-> Nota
+> Note
 >
 > [This document](https://help.vtex.com/en/tutorial/checking-for-errors-or-problems-in-a-transaction--3QecZEdmzumGKe8WGmeI8a) explains in detail how to check for errors or problems in a transaction.
 
