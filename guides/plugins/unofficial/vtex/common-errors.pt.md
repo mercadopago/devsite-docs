@@ -1,8 +1,6 @@
 # Glossário de erros
 
-Os erros mais comuns são os seguintes:
-
-
+A seguir estão erros comuns que podem ocorrer durante sua integração:
 
 |Mensagem|Significado|
 |---|---|

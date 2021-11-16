@@ -1,6 +1,6 @@
 # Tipos e métodos de pagamentos
 
-Ao registar as afiliações de gateway, indicará os métodos e tipos de pagamento que deseja excluir, preenchendo os campos `Métodos de pagamento excluídos` e`Tipos de pagamento excluídos`, respectivamente.
+Ao [registar as afiliações de gateway](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/gateway-affiliations), indicará os métodos e tipos de pagamento que deseja excluir, preenchendo os campos `Métodos de pagamento excluídos` e`Tipos de pagamento excluídos`, respectivamente.
 
 Este documento contém os métodos e tipos de pagamento disponíveis para sua integração.
 

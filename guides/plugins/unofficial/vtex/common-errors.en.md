@@ -1,6 +1,6 @@
 # Errors glossary
 
-The following errors are the most common ones:
+The following are common errors that can occur during your integration:
 
 |Message|Description|
 |---|---|
