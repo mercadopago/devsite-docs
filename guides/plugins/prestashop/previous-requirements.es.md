@@ -5,7 +5,7 @@ Para integrar el Mercado Pago con PrestaShop, debes cumplir con los requisitos a
 | Requisitos | Descripción | Especificaciones |
 | --- | --- | --- |
 | Cuenta de vendedor pagada por el mercado | Para realizar ventas, necesitas una cuenta de vendedor en Mercado Pago. Si no la tienes, [haga clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) para crearla. | Cuenta de vendedor en Mercado Pago |
-| PrestaShop | Plataforma de comercio electrónico con software de código abierto, que permite a cualquier usuario crear y desarrollar un sitio web comercial. [Haga clic aquí](https://www.prestashop.com/pt/) para obtener más información. | Requerido 1.6.xo superior. |
+| PrestaShop | Plataforma de comercio electrónico con software de código abierto, que permite a cualquier usuario crear y desarrollar un sitio web comercial. [Haz clic aquí](https://www.prestashop.com/pt/) para obtener más información. | Requerido 1.6.xo superior. |
 | Credenciales | Las [credenciales](https://www.mercadopago[FAKER][URL][DOMINIO]/developers/es/guides/resources/credentials) son contraseñas únicas con las que identificamos una integración en tu cuenta y nos sirven para captar pagos en tiendas virtuales y otras aplicaciones de forma segura. | Para realizar pruebas y garantizar que la integración funcione, se requerirán **credenciales de prueba**. Después de este paso, necesitará **credenciales de producción** para recibir los pagos reales. |
 | Medio ambiente | Servicio de hospedaje | AMP (Linux, Apache, MySQL y PHP) o pila LNMP. |
 | Sistema operativo | Sistema responsable de la gestión del hardware informático. | Linux x86, Windows x86-64 |
