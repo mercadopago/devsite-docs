@@ -21,7 +21,7 @@ Para integrarte con Mercado Pago, sigue los procedimientos a continuación.
 >
 > Importante
 >
-> Recuerde que la disponibilidad de las configuraciones descritas abajo depende del tipo de pago elegido.
+> Recuerda que la disponibilidad de las configuraciones descritas abajo depende del tipo de pago elegido.
  
 * **Activar checkout:** selecciona **sí** para habilitar la experiencia de Mercado Pago en el pago de tu tienda.
 * **Medios de pago:** elija los métodos de pago que desea ofrecer.
