@@ -4,7 +4,7 @@ In order to integrate Mercado Pago with PrestaShop, you must meet the requiremen
  
 | Requirements | Description | Specifications |
 |---|---|---|
-| Market Paid Seller Account | To make sales, you need a seller account on Mercado Pago. If you don't have it, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) to create it.| Seller account on Mercado Pago |
+| Market Paid Seller Account | To make sales, you need a seller account on Mercado Pago. If you don't have one, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) to create it.| Seller account on Mercado Pago |
 | PrestaShop | E-commerce platform with open source software, which allows any user to create and develop a commercial website. [Click here](https://www.prestashop.com/en/) for more information. | Required 1.6.x or higher. |
 | Credentials | The [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) are unique passwords with which we identify an integration in your account and serve to capture payments in virtual stores and other applications securely. | To perform tests and ensure the integration works, **test credentials** will be required. After this step, you will need **production credentials** to receive actual payments. |
 | Environment | Hosting Service | AMP (Linux, Apache, MySQL, and PHP) or LNMP stack. |
