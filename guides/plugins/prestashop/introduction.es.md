@@ -16,7 +16,7 @@ Otra característica de la integración es la posibilidad de activar el modo bin
 >
 > Importante
 >
-> Todos nuestros módulos tienen una licencia de código abierto. ¿Quieres participar en la creación? [Sugerir mejoras y ediciones en Github](https://github.com/mercadopago/cart-prestashop-7).
+> Todos nuestros módulos tienen una licencia de código abierto. ¿Quieres participar en la creación? [Sugiere mejoras y ediciones en Github](https://github.com/mercadopago/cart-prestashop-7).
  
 > LEFT_BUTTON_REQUIRED_ES
 >
