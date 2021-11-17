@@ -36,7 +36,7 @@ Este documento contém os métodos e tipos de pagamento disponíveis para sua in
 |Cartão de débito Caixa (bandeira Elo)|`debelo`|`debit_card`|Cartão de débito virtual Caixa, MercadoPago Pro e MercadoPagoWallet|
 |PEC|`pec`|`ticket`|MercadoPagoPro e MercadoPagoOff|
 |Boleto|`bolbradesco`|`ticket`|Boleto Bancário, MercadoPagoPro e MercadoPagoOff|
-|PIX|`pix`|`bank_transfer`|PIX e MercadoPagoPro|
+|Pix|`pix`|`bank_transfer`|Pix e MercadoPagoPro|
 
 ------------
 

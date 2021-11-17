@@ -21,8 +21,7 @@ Nessa aba, você deverá clicar no botão  "+" (*Adicionar nova condição de pa
   * Se você configurar **MercadoPagoWallet**, o comprador finaliza o pagamento com a carteira do Mercado Pago exclusivamente de usuários cadastrados e uma vez concluído o processo, voltará para sua loja.
   * Se você configurar **MercadoPagoOff**, onde poderá contar com Boleto Bancário e Pagamentos com PEC (em lotéricas), utilizando sua afiliação com o MercadoPagoV2.----[mlb]----
 * **Boleto Bancário:** refere-se a transações com boleto bancário.
-* **PIX:**ação com o MercadoPagoV2.----[mlb]----
-* **Boleto Bancário:** refere-se a transações com PIX. Para configurar o PIX em sua integração com o Mercado Pago é necessário que sua chave PIX esteja configurada. Para obter mais informações sobre como criar sua chave PIX, clique [aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required). Se você já tem sua chave PIX, o processo segue os passos comuns às demais condições de pagamento. ------------
+* **Pix:** refere-se a transações com Pix. Para configurar o Pix em sua integração com o Mercado Pago é necessário que sua chave Pix esteja configurada. Para obter mais informações sobre como criar sua chave Pix, clique [aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required). Se você já tem sua chave Pix, o processo segue os passos comuns às demais condições de pagamento. ------------
 
 > NOTE
 >
@@ -53,7 +52,7 @@ Para mais informações sobre como configurar as condições de pagamento na VTE
 >
 > Nota
 > 
-> Se você tiver dificuldades durante sua integração, verifique nosso [glossário de erros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/common-errors) e nosso documento sobre [logs do VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/logs).
+> Se você tiver dificuldades durante sua integração, verifique nosso [lista de erros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/common-errors) e nosso documento sobre [logs do VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/logs).
 
 
 > LEFT_BUTTON_REQUIRED_PT

@@ -1,4 +1,4 @@
-# Glosario de errores
+# Lista de errores
 
 Los siguientes son errores comunes que pueden ocurrir durante tu integración:
 

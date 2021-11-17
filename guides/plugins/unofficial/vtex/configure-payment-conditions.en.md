@@ -21,7 +21,7 @@ In this tab, you must click on the "+" button (*Add new payment condition for ..
   * If you configure **MercadoPagoWallet**, the buyer completes the payment with the Mercado Pago wallet exclusively for registered users, and once the process is finished, they will return to your store.
   * If you configure **MercadoPagoOff**, you will have access to Boleto Bancário and Payments with PEC (lottery shops), using your MercadoPagoV2 affiliation.  ----[mlb]----
 * **Boleto Bancário:** this refers to boleto bancário transactions.
-* **PIX:** This refers to PIX transactions. To configure PIX in your integration with Mercado Pago, it is necessary for your PIX key to be configured as well. For more information on how to create your PIX key, click [here](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required). If you already have your PIX key, the process follows the steps common to the other payment plans. ------------
+* **Pix:** This refers to Pix transactions. To configure Pix in your integration with Mercado Pago, it is necessary for your Pix key to be configured as well. For more information on how to create your Pix key, click [here](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required). If you already have your Pix key, the process follows the steps common to the other payment plans. ------------
 
 ![Configure payment plans](/images/vtex/paymentconditions-en.gif)
 
@@ -39,6 +39,7 @@ On the following screen:
 4. Save your changes by clicking on `Save`.
 
 ![Credit card configuration](/images/vtex/paymentconditions-cc-en.gif)
+
 > WARNING
 >
 > Important
@@ -51,7 +52,7 @@ For more information on how to configure payment terms in VTEX, click [here](htt
 >
 > Note
 > 
-> If you have difficulties during your integration, check our [errors glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/common-errors), and our document about [VTEX logs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/logs).
+> If you have difficulties during your integration, check our [errors list](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/common-errors), and our document about [VTEX logs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/logs).
 
 > LEFT_BUTTON_REQUIRED_EN
 >

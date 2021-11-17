@@ -36,7 +36,7 @@ Este documento contiene los medios y tipos de pago disponibles para tu integraci
 |Tarjeta de débito Caixa (marca Elo)|`debelo`|`debit_card`|Tarjeta de débito virtual Caixa, MercadoPago Pro y MercadoPagoWallet|
 |PEC|`pec`|`ticket`|MercadoPagoPro y MercadoPagoOff|
 |Boleto|`bolbradesco`|`ticket`|Boleto Bancário, MercadoPagoPro y MercadoPagoOff|
-|PIX|`pix`|`bank_transfer`|PIX y MercadoPagoPro|
+|Pix|`pix`|`bank_transfer`|Pix y MercadoPagoPro|
 
 ------------
 

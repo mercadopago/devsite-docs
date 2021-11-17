@@ -29,8 +29,8 @@ For more information, access the link [Results of the creation of a position](ht
 
 > LEFT_BUTTON_RECOMMENDED_EN
 >
-> Errors glossary
+> Errors list
 >
 > Find out about the most common errors.
 >
-> [Errors glossary](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/common-errors)
+> [Errors list](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/common-errors)

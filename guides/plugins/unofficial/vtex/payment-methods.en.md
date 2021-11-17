@@ -36,7 +36,7 @@ This document contains the means and types of payment available for your integra
 |Caixa debit card (Elo brand)|`debelo`|`debit_card`|Caixa virtual debit card, MercadoPago Pro and MercadoPagoWallet|
 |PEC|`pec`|`ticket`|MercadoPagoPro and MercadoPagoOff|
 |Boleto|`bolbradesco`|`ticket`|Boleto Bancário, MercadoPagoPro and MercadoPagoOff|
-|PIX|`pix`|`bank_transfer`|PIX and MercadoPagoPro|
+|Pix|`pix`|`bank_transfer`|Pix and MercadoPagoPro|
 
 ------------
 

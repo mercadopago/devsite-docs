@@ -1,4 +1,4 @@
-# Errors glossary
+# Errors list
 
 The following are common errors that can occur during your integration:
 

@@ -21,7 +21,7 @@ En esta pestaña, debes hacer clic en el botón "+" (*Agregar nuevo plan de pago
   * Si configuras **MercadoPagoWallet**, el comprador completa el pago con la billetera de Mercado Pago exclusivamente para usuarios registrados y una vez finalizado el proceso, regresará a tu tienda.
   * Si configuras **MercadoPagoOff**, puedes contar con Boleto Bancário y Pagos con PEC (en tiendas de lotería), utilizando su afiliación con MercadoPagoV2. ----[mlb]----
 * **Boleto Bancário:** se refiere a transacciones con boleto bancário.
-* **PIX:** Se refiere a las transacciones con PIX. Para configurar PIX en tu integración con Mercado Pago es necesario que tu clave PIX esté configurada. Para obtener más información sobre cómo crear tu clave PIX, haz clic [aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required). Si ya tienes tu clave PIX, el proceso sigue los pasos comunes a los otros planes de pago. ------------
+* **Pix:** Se refiere a las transacciones con Pix. Para configurar Pix en tu integración con Mercado Pago es necesario que tu clave Pix esté configurada. Para obtener más información sobre cómo crear tu clave Pix, haz clic [aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required). Si ya tienes tu clave Pix, el proceso sigue los pasos comunes a los otros planes de pago. ------------
 
 > NOTE
 >
@@ -52,7 +52,7 @@ Para obtener más información sobre cómo configurar los términos de pago en V
 >
 > Nota
 > 
-> Si tienes dificultades durante tu integración, consulta nuestro [glosario de errores](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/common-errors) y nuestro documento sobre [logs de VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/logs).
+> Si tienes dificultades durante tu integración, consulta nuestro [lista de errores](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/common-errors) y nuestro documento sobre [logs de VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/logs).
 
 > LEFT_BUTTON_REQUIRED_ES
 >

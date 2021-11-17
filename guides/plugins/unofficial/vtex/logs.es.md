@@ -29,8 +29,8 @@ Para obtener más información, accede al enlace [Resultados de la creación de 
 
 > LEFT_BUTTON_RECOMMENDED_ES
 >
-> Glosario de errores
+> Lista de errores
 >
 > Conoce los errores más comunes.
 >
-> [Glosario de errores](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/common-errors)
+> [Lista de errores](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/common-errors)

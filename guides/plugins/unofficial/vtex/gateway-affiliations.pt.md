@@ -2,7 +2,7 @@
 
 Uma **afiliação de gateway** é um conjunto de configurações que representam o processamento de seus pagamentos com um gateway de pagamento de sua escolha, neste caso **Mercado Pago**. 
 
-Com isso, você pode possível decidir por qual gateway de pagamento serão processados os diferentes tipos de transações da sua loja VTEX podendo a **afiliação de gateway MercadoPagoV2** para o processamento de pagamentos com Cartão de Crédito, Cartão de Débito, Mercado Pago Offline e Checkout Pro.
+Com isso, é possível decidir por qual gateway de pagamento serão processados os diferentes tipos de transações da sua loja VTEX podendo a **afiliação de gateway MercadoPagoV2** para o processamento de pagamentos com Cartão de Crédito, Cartão de Débito, Mercado Pago Offline e Checkout Pro.
 
 ## Criando afiliação de gateway MercadoPagoV2
 
@@ -58,7 +58,7 @@ E pronto! Sua afiliação com MercadoPagoV2 já está ativa!
 >
 > Nota
 > 
-> Se você tiver dificuldades durante sua integração, verifique nosso [glossário de erros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/common-errors) e nosso documento sobre [logs do VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/logs).
+> Se você tiver dificuldades durante sua integração, verifique nosso [lista de erros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/common-errors) e nosso documento sobre [logs do VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/logs).
 
 ![Criando afiliação de gateway MercadoPagoV2](/images/vtex/affiliationV2-pt.gif)
 
