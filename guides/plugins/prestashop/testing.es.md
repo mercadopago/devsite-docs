@@ -12,7 +12,7 @@ El plugin del Mercado Pago tiene el **entorno de pruebas Sandbox** activo por de
 5. Con el producto seleccionado, complete el pedido.
 6. Complete con los datos personales, indique una dirección de envío y seleccione un método de envío. Recordando que toda esta información es solo para probar.
 7. Seleccione la opción de pago con la solución Mercado Pago que configuró.
-8. Utilice las [tarjetas de crédito de prueba](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/local-cards) para realizar el pago.
+8. Utiliza las [tarjetas de crédito de prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/local-cards) para realizar el pago.
 9. Al completar el llenado, **finalizrela compra**.
  
 Luego de completar los pasos anteriores, activa el **Modo de producción** para recibir pagos reales.
