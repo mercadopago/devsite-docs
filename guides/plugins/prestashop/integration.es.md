@@ -33,7 +33,7 @@ Para integrarte con Mercado Pago, sigue los procedimientos a continuación.
 * **Cancelación de preferencias de pago:** indica el período en el que se guardarán las preferencias de pago del cliente sin que el cliente tenga que volver a añadirlas.
 * **Descuento por comprar con Mercado Pago:** establece un porcentaje de descuento para los clientes que pagan con Mercado Pago.
 * **Métodos de pago en persona:** selecciona qué métodos de pago se ofrecerán para los pagos realizados a través de Ticket Checkout.
-* **Vencimento del pago:** después de seleccionar el medio de pago en persona, indique cuántos días caducarán después de su emisión.
+* **Vencimiento del pago:** después de seleccionar el medio de pago en persona, indica en cuántos días caducarán después de su emisión.
  
 ¡Listo! Ahora el plugin Mercado Pago con PrestaShop está integrado en tu tienda.
  
