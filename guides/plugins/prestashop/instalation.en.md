@@ -4,7 +4,7 @@ Install Mercado Pago for PrestaShop automatically by following the steps below.
  
 1. In the **Administrative Panel** of your PrestaShop store, access the **Modules Catalog** and search for Mercado Pago.
 2. Install the plugin and look for it in the **Modules & Services** section.
-3. Click on the Enable button to start configuring the plugin in your store.
+3. Click on the **Enable** button to start configuring the plugin in your store.
  
 Ready! You will see the plugin installed in the **Custom** section of your admin panel.
  
