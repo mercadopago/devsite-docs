@@ -31,7 +31,7 @@ Por exemplo, se o cartão não possui saldo suficiente para a compra, pode-se re
 | rejected | `cc_rejected_invalid_installments` | O `payment_method_id` não processa pagamentos em `installments` parcelas. |
 | rejected | `cc_rejected_max_attempts` | Você atingiu o limite de tentativas permitido.<br/><br/>Escolha outro cartão ou outra forma de pagamento. |
 | rejected | `cc_rejected_other_reason` | `payment_method_id` não processa o pagamento. | ----[mlb]----
-| rejected |  `cc_rejected_card_type_not_allowed` | O pagamento foi rejeitado porque o usuário não tem a função crédito habilitada em seu cartão. | ------------
+| rejected |  `cc_rejected_card_type_not_allowed` | O pagamento foi rejeitado porque o usuário não tem a função crédito habilitada em seu cartão multiplo (débito e crédito). | ------------
 
 > CLIENT_SIDE
 >
