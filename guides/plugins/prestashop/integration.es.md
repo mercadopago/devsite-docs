@@ -9,7 +9,7 @@ Para integrarse con Mercado Pago, siga los procedimientos a continuación.
  
 ![Credenciales](/images/prestashop/credenciais_es.png)
  
-5. A continuación, configure la información comercial necesaria para identificar su tienda.
+5. A continuación, configura la información comercial necesaria para identificar tu tienda.
  
 * **Nombre de la tienda:** ingresa el nombre de tu tienda.
 * **Categoría de tienda:** Ingresa la categoría de producto de tu tienda.
