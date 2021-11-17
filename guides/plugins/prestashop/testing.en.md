@@ -1,6 +1,6 @@
 # Payment test
  
-The Mercado Pago plugin comes with the **Sandbox teste environment** active by default. In this environment you'll be able to simulate in-store payments and see if everything is working correctly before you start receiving real payments from your customers. To perform the test, follow the steps below.
+The Mercado Pago plugin comes with the **Sandbox test environment** active by default. In this environment you'll be able to simulate in-store payments and see if everything is working correctly before you start receiving real payments from your customers. To perform the test, follow the steps below.
  
 1. On your store's Administrative Panel, access the Modules and Services menu, locate the Mercado Pago plugin and click **configure**.
 2. On the plugin management screen, confirm that the test [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) are properly filled in accordingly with the information available on its [Dashboard](https://www.mercadopago.com.br/developers/panel).
