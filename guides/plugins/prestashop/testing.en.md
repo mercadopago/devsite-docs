@@ -21,6 +21,6 @@ After completing the previous steps, activate **Production mode** to receive act
 >
 > Receiving payments
 >
-> Learn how to enable your store to process actual sales.
+> Learn how to enable your store to process real sales.
 >
 > [Receiving payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/receive-payments)
