@@ -31,7 +31,8 @@ Por ejemplo, si la tarjeta no tiene saldo suficiente para la compra, puedes reco
 | rejected | `cc_rejected_insufficient_amount` | Tu `payment_method_id` no tiene fondos suficientes. |
 | rejected | `cc_rejected_invalid_installments` | `payment_method_id` no procesa pagos en `installments` cuotas. |
 | rejected | `cc_rejected_max_attempts` | Llegaste al límite de intentos permitidos.<br/><br/>Elige otra tarjeta u otro medio de pago. |
-| rejected | `cc_rejected_other_reason` | `payment_method_id` no procesó el pago. |
+| rejected | `cc_rejected_other_reason` | `payment_method_id` no procesó el pago. | ----[mlb]----
+| rejected |  `cc_rejected_card_type_not_allowed` | El pago fue rechazado porque el usuario no tiene habilitada la función crédito en su tarjeta múltiple. | ------------
 
 > CLIENT_SIDE
 >
