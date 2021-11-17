@@ -1,6 +1,6 @@
 # Configuración de integración
  
-Para integrarse con Mercado Pago, siga los procedimientos a continuación.
+Para integrarte con Mercado Pago, sigue los procedimientos a continuación.
  
 1. En el Panel Administrativo de su tienda, acceda al menú **Módulos y Servicios**, localiza el plugin Mercado Pago y haga clic en **configure**.
 2. En la pantalla de administración de complementos, complete los campos obligatorios de acuerdo con la información de su empresa.
