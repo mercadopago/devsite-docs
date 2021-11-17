@@ -11,7 +11,7 @@ Para integrarse con Mercado Pago, siga los procedimientos a continuación.
  
 5. A continuación, configure la información comercial necesaria para identificar su tienda.
  
-* **Nombre de la tienda:** ingrese el nombre de su tienda.
+* **Nombre de la tienda:** ingresa el nombre de tu tienda.
 * **Categoría de tienda:** Ingresa la categoría de producto de tu tienda.
 * **Integrator ID** Ingresa tu *integrator_id* como miembro del **programa & lt; dev & gt;**, de Mercado Pago. Si aún no es miembro, [haga clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/developer-program) para obtener más información.
  
