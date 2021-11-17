@@ -17,7 +17,7 @@ Para integrarte con Mercado Pago, sigue los procedimientos a continuación.
  
 6. Por último, configura las experiencias de pago de tu tienda de acuerdo con el tipo de pago que has elegido configurar, que podría ser [Checkout Pro](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction), el [Checkout Personalizado](https://www.mercadopago.[FAKER][URL][DOMINIO]/developers/es/guides/online-payments/checkout-api/introduction) y **Ticket Checkout**.
  
-> NOTA
+> NOTE
 >
 > Importante
 >
