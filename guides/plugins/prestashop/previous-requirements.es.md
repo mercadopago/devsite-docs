@@ -17,7 +17,7 @@ Para integrar el Mercado Pago con PrestaShop, debes cumplir con los requisitos a
 | SSL | Protocolo que te permite establecer comunicaciones seguras a través de Internet para actividades como navegación, correo electrónico y otras transferencias de datos. | Certificado SSL |
 | Copia de seguridad de su tienda **(recomendado)** | Copia de toda la información de tu tienda para asegurar una versión sin cambios, si es necesario. | Te recomendamos que hagas una copia de seguridad de la tienda en línea antes de realizar cualquier cambio. Cuando termines de copiar, elimina todos los archivos relacionados con la versión anterior del plugin. |
  
-Si se cumplen todos los requisitos previos, puede instalar el plugin Mercado Pago en la plataforma PrestaShop.
+Si se cumplen todos los requisitos previos, puedes instalar el plugin Mercado Pago en la plataforma PrestaShop.
  
 > LEFT_BUTTON_REQUIRED_ES
 >
