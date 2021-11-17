@@ -14,7 +14,7 @@ Para comenzar a recibir pagos, debes activar el modo de producción. Para hacer 
 >
 > Importante
 >
-> Consulte los [requisitos para entrar en producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/go-live-requirements) si tiene preguntas con el proceso.
+> Consulta los [requisitos para entrar en producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/go-live-requirements) si tienes preguntas sobre el proceso.
  
 ¡Listo! El módulo Mercado Pago está listo para recibir pagos en línea.
  
