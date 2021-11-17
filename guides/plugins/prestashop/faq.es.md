@@ -2,9 +2,9 @@
 
 ### 1. ¿Cómo instalo el plugin manualmente?
  
-Para instalar el complemento manualmente, siga los pasos:
+Para instalar el plugin manualmente, siga los pasos:
  
-1. [Descarga el archivo .zip](https://github.com/mercadopago/cart-prestashop-7/raw/master/mercadopago.zip) directamente desde nuestro Github o desde el [directorio](https://addons.prestashop.com/es/pago-tarjeta-carteras-digitales/23962-mercado-pago.html) de los módulos de PrestaShop.
+1. [Descarga el archivo .zip](https://github.com/mercadopago/cart-prestashop-7/raw/master/mercadopago.zip) directamente desde nuestro Github o desde el [directorio](https://addons.prestashop.com/es/pago-tarjeta-carteras-digitales/23962-mercado-pago.html) de los plugins de PrestaShop.
 2. Vaya a la sección "Módulos y servicios" en el menú "Módulos" de su administrador.
 3. Haga clic en el botón **Update a module** en la esquina superior derecha.
 4. Seleccione o arrastre el archivo **Mercadopago.zip** descargado anteriormente.
@@ -15,7 +15,7 @@ Para instalar el complemento manualmente, siga los pasos:
 
 ### 2. ¿Cómo validar las notificaciones?
  
-El complemento PrestaShop solo recibe notificaciones del tipo IPN. Para obtener más información,[haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/Notifications/ipn).
+El plugin PrestaShop solo recibe notificaciones del tipo IPN. Para obtener más información,[haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/Notifications/ipn).
  
 ### 3. ¿Admitimos el modo de Gateway?
  
