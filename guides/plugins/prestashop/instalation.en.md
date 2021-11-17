@@ -14,7 +14,7 @@ Ready! You will see the plugin installed in the **Custom** section of your admin
 >
 > If you have problems installing the plugin and need to contact our support, you may be asked to install it manually. See the [FAQ](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/faq) for details on how to do this.
 > <br>
-> Keep the plugin always up to date with the latest version.
+> Always keep the plugin up to date with the latest version.
   
 > LEFT_BUTTON_REQUIRED_EN
 >
