@@ -8,7 +8,7 @@ Para comenzar a recibir pagos, debes activar el modo de producción. Para hacer 
  
 1. En el Panel Administrativo de tu tienda, accede al menú **Módulos y Servicios**, localiza el plugin Mercado Pago y haz clic en **configure**.
 2. En la pantalla de administración del plugin, confirma que las [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) de producción son las mismas que las de la cuenta de la cual que obtienes dinero por las ventas. Esta información se puede ver en tu [Dashboard](https://www.mercadopago.com.br/developers/panel).
-3. Luego haga clic en **sí** para activar el modo de producción.
+3. Luego haz clic en **sí** para activar el modo de producción.
  
 > NOTA
 >
