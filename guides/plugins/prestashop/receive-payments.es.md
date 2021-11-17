@@ -30,7 +30,7 @@ Para más información acceda a la sección [Actividades](https://www.mercadopag
 
 Respecto a la **aprobación de pagos** en tu tienda, hay tres razones principales que pueden afectar directamente estos resultados. 
 
-A continuación, detallamos los factores que influyen en lo rechazo de un pago:
+A continuación, se detallan los factores que influyen en el rechazo de un pago:
 
 | Motivo | Situación | Cómo evitarlo |
 |---|---|---|
