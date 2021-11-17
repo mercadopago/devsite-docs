@@ -1,6 +1,6 @@
 # Procesamiento de pagos
  
-Después de realizar la integración y las pruebas, su tienda está lista para entrar en producción.
+Después de realizar la integración y las pruebas, tu tienda está lista para entrar en producción.
  
 ## Activación del modo de producción
  
