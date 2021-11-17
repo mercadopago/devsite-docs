@@ -15,7 +15,7 @@ Para instalar el complemento manualmente, siga los pasos:
 
 ### 2. ¿Cómo validar las notificaciones?
  
-El complemento PrestaShop solo recibe notificaciones del tipo IPN. Para obtener más información,[haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/Notifications/ipn).
+El complemento PrestaShop solo recibe notificaciones del tipo IPN. Para obtener más información, [haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn).
  
 ### 3. ¿Admitimos el modo de Gateway?
  
