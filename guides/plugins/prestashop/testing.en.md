@@ -15,7 +15,7 @@ The Mercado Pago plugin comes with the **Sandbox teste environment** active by d
 8. Use the [test credit cards](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/local-cards) to make the payment.
 9. When completing the filling, **finalize the purchase**.
  
-After completing the previous steps, activate **Production mode** to receive actual payments.
+After completing the previous steps, activate **Production mode** to receive real payments.
  
 > LEFT_BUTTON_REQUIRED_EN
 >
