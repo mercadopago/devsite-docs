@@ -10,7 +10,7 @@ With the Mercado Pago plugin you can configure the payment using [Checkout Pro](
  
 There is also possibility to use the [Custom Checkout](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction), in which the payment it is carried out by credit card without leaving your virtual store and the **Ticket Checkout**, with payments being made in person with cash or boleto.
  
-Another feature of the integration is the possibility of activating binary mode, a feature that allows you to configure the automatic approval or rejection of payments. In addition, users will also be able to pay in your store without being obligatorily registered with Mercado Pago.
+Another feature of the integration is the possibility to activate binary mode, a feature that allows you to configure the automatic approval or rejection of payments. In addition, users will also be able to pay in your store without being obligatorily registered with Mercado Pago.
  
 > NOTE
 >
