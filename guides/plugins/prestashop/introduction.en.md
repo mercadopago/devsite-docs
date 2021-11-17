@@ -6,7 +6,7 @@ This documentation was designed so that you can perform all the necessary config
  
 ## Integration features
  
-With the Mercado Pago plugin you can configure the payment using [Checkout Pro](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction), where payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit) and cash (balance account in Mercado Pago and boleto).
+With the Mercado Pago plugin you can configure the payment using [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction), where payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit) and cash (balance account in Mercado Pago and boleto).
  
 There is also possibility to use the [Custom Checkout](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction), in which the payment it is carried out by credit card without leaving your virtual store and the **Ticket Checkout**, with payments being made in person with cash or boleto.
  
