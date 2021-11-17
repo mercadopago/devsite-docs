@@ -15,7 +15,7 @@ Para integrar el Mercado Pago con PrestaShop, debes cumplir con los requisitos a
 | Dependencia de la extensión | Las extensiones le dan a PHP nuevas habilidades y lo complementan con más funciones. | PDO_MySQL, simplexml, mcrypt, hash, GD, DOM, iconv, curl, SOAP (para API de servicios web) |
 | Configuración adicional | Ajustes recomendados para un mejor rendimiento y correcto funcionamiento del plugin PrestaShop y Mercado Pago. | safe_mode off memory_limit superior a 256 MB (se recomiendan 512 MB) |
 | SSL | Protocolo que le permite establecer comunicaciones seguras a través de Internet para actividades como navegación, correo electrónico y otras transferencias de datos. | Certificado SSL |
-| Copia de seguridad de su tienda **(recomendado)** | Copia de toda la información de su tienda para asegurar una versión sin cambios si es necesario. | Le recomendamos que haga una copia de seguridad de la tienda en línea antes de realizar cualquier cambio. Cuando termine de copiar, elimine todos los archivos relacionados con la versión anterior del complemento. |
+| Copia de seguridad de su tienda **(recomendado)** | Copia de toda la información de tu tienda para asegurar una versión sin cambios, si es necesario. | Te recomendamos que hagas una copia de seguridad de la tienda en línea antes de realizar cualquier cambio. Cuando termines de copiar, elimina todos los archivos relacionados con la versión anterior del plugin. |
  
 Si se cumplen todos los requisitos previos, puede instalar el plugin Mercado Pago en la plataforma PrestaShop.
  
