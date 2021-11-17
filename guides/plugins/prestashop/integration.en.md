@@ -26,7 +26,7 @@ To integrate with Mercado Pago, follow the procedures below.
 * **Activate Checkout:** select **yes** to enable the Mercado Pago experience at your store's checkout.
 * **Payment methods:** choose the payment methods you want to offer.
 * **Max installments:** select the maximum installments you want to offer in your store.
-* **Installment and interest:** [configure](https://www.mercadopago.com.br//costs-section#from-section=menu) the rate that will be paid on each purchase and also offer interest-free installments for your customers.
+* **Installment and interest:** [configure](https://www.mercadopago.com.br/costs-section#from-section=menu) the rate that will be paid on each purchase and also offer interest-free installments for your customers.
 * **Return to the store:** select whether or not you want the customer to automatically return to your store after completing the payment.
 * **Modal checkout:** define if customers will have access to the Mercado Pago payment form without leaving your store.
 * **Binary mode:** enable when you don't want to leave payments in pending or review status. With binary mode, payments will be accepted or declined automatically.
