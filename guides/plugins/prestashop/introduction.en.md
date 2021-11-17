@@ -2,7 +2,7 @@
  
 [PrestaShop](https://www.prestashop.com/en/) is an e-commerce platform with open source software that allows any user to create and develop a commercial website. As official PrestaShop partners, we provide greater security and efficiency to your store.
  
-This documentation was designed so that you can do all the necessary configuration to integrate the Mercado Pago plugin with your store on PrestaShop, without having to write a single line of code to install it in your customers' stores.
+This documentation was designed so that you can perform all the necessary configuration steps to integrate the Mercado Pago plugin with your store on PrestaShop, without having to write a single line of code to install it in your customers' stores.
  
 ## Integration features
  
