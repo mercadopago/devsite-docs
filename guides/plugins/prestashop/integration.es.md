@@ -13,7 +13,7 @@ Para integrarte con Mercado Pago, sigue los procedimientos a continuación.
  
 * **Nombre de la tienda:** ingresa el nombre de tu tienda.
 * **Categoría de tienda:** Ingresa la categoría de producto de tu tienda.
-* **Integrator ID** Ingresa tu *integrator_id* como miembro del **programa & lt; dev & gt;**, de Mercado Pago. Si aún no es miembro, [haga clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/developer-program) para obtener más información.
+* **Integrator ID** Ingresa tu *integrator_id* como miembro del **Dev Program**, de Mercado Pago. Si aún no eres miembro, [haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/developer-program) para obtener más información.
  
 6. Por último, configure las experiencias de pago de su tienda de acuerdo con el tipo de pago que ha elegido configurar, que podría ser [Checkout Pro](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/Introduction), el [Checkout Personalizado](https://www.mercadopago.[FAKER][URL][DOMINIO]/developers/es/guides/online-payments/checkout-api/introducción) y **Ticket Checkout**.
  
