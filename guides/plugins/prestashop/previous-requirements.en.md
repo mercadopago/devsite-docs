@@ -25,4 +25,4 @@ If all prerequisites are met, you can install the Mercado Pago plugin on the Pre
 >
 > Follow these steps to install the Mercado Pago plugin in your online store.
 >
-> [Install](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/installation)
+> [Install](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/instalation)
