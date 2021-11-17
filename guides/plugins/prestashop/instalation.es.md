@@ -1,6 +1,6 @@
 # Instalación del plugin
  
-Instale el Mercado Pago para PrestaShop automáticamente siguiendo los pasos:
+Instala Mercado Pago para PrestaShop automáticamente siguiendo los pasos a continuación:
  
 1. En el **Panel Administrativo** de su tienda PrestaShop, acceda al **Catálogo de Módulos** y busque Mercado Pago.
 2. Instale el plugin y búsquelo en la sección **Administrador de módulos**.
