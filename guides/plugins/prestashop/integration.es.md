@@ -27,7 +27,7 @@ Para integrarte con Mercado Pago, sigue los procedimientos a continuación.
 * **Medios de pago:** elige los métodos de pago que deseas ofrecer.
 * **Máximo de cuotas:** Seleccione las cuotas máximas que desea ofrecer en su tienda.
 * **Cuota y interés:** [configurar] (https://www.mercadopago.com.br//costs-section#from-section=menu) la tasa que se pagará en cada compra y también ofrecer cuotas sin intereses para sus clientes.
-* **Volver a la tienda:** seleccione si desea o no que el cliente regrese automáticamente a su tienda después de completar el pago.
+* **Volver a la tienda:** selecciona si deseas o no que el cliente regrese automáticamente a tu tienda después de completar el pago.
 * **Modal checkout:** define si los clientes tendrán acceso al formulario de pago de Mercado Pago sin salir de tu tienda.
 * **Modo binario:** habilítelo cuando no desee dejar los pagos en estado pendiente o de revisión. Con el modo binario, los pagos se aceptarán o rechazarán automáticamente.
 * **Cancelación de preferencias de pago:** indica el período en el que se guardarán las preferencias de pago del cliente sin que el cliente tenga que volver a añadirlas.
