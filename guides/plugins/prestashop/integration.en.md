@@ -15,7 +15,7 @@ To integrate with Mercado Pago, follow the procedures below.
 * **Store Category:** Enter your store's product category.
 * **Integrator ID:** Enter your *integrator_id* as a member of the **&lt;dev&gt;program**, Mercado Pago. If you are not a member yet, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/developer-program) for more information.
  
-6. Finally, configure your store's payment experiences according to the type of checkout you've chosen to configure, which could be [Checkout Pro](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction), the [Custom Checkout](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction) and the **Ticket Checkout**.
+6. Finally, configure your store's payment experiences according to the type of checkout you've chosen to configure, which could be [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction), the [Custom Checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction) and the **Ticket Checkout**.
  
 > NOTE
 >
