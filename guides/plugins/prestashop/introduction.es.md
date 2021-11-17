@@ -12,7 +12,7 @@ También existe la posibilidad de utilizar el [Checkout Personalizado](https://w
  
 Otra característica de la integración es la posibilidad de activar el modo binario, característica que permite configurar la aprobación o rechazo automático de pagos. Además, los usuarios también podrán pagar en tu tienda sin estar obligatoriamente registrados en Mercado Pago.
  
-> NOTA
+> NOTE
 >
 > Importante
 >
