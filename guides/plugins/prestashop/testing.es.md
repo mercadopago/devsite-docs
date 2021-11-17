@@ -8,7 +8,7 @@ El plugin del Mercado Pago tiene el **entorno de pruebas Sandbox** activo por de
  
 ![Prueba de pagos](/images/prestashop/teste_pagto_es.png)
 
-4. En la página de inicio de su tienda PrestaShop, seleccione un producto y clic para anãdir al carrito.
+4. En la página de inicio de tu tienda PrestaShop, selecciona un producto y haz clic para añadir al carrito.
 5. Con el producto seleccionado, complete el pedido.
 6. Complete con los datos personales, indique una dirección de envío y seleccione un método de envío. Recordando que toda esta información es solo para probar.
 7. Seleccione la opción de pago con la solución Mercado Pago que configuró.
