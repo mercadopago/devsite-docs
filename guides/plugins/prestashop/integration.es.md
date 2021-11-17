@@ -24,7 +24,7 @@ Para integrarte con Mercado Pago, sigue los procedimientos a continuación.
 > Recuerda que la disponibilidad de las configuraciones descritas abajo depende del tipo de pago elegido.
  
 * **Activar checkout:** selecciona **sí** para habilitar la experiencia de Mercado Pago en el pago de tu tienda.
-* **Medios de pago:** elija los métodos de pago que desea ofrecer.
+* **Medios de pago:** elige los métodos de pago que deseas ofrecer.
 * **Máximo de cuotas:** Seleccione las cuotas máximas que desea ofrecer en su tienda.
 * **Cuota y interés:** [configurar] (https://www.mercadopago.com.br//costs-section#from-section=menu) la tasa que se pagará en cada compra y también ofrecer cuotas sin intereses para sus clientes.
 * **Volver a la tienda:** seleccione si desea o no que el cliente regrese automáticamente a su tienda después de completar el pago.
