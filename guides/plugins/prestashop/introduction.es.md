@@ -10,7 +10,7 @@ Con el plugin Mercado Pago puedes configurar el pago usando [Checkout Pro](https
  
 También existe la posibilidad de utilizar el [Checkout Personalizado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction), con el cual el pago se realiza con tarjeta de crédito sin salir de tu tienda virtual y del **Ticket Checkout**, realizándose los pagos en persona con efectivo o comprobante bancario.
  
-Otra característica de la integración es la posibilidad de activar el modo binario, característica que permite configurar la aprobación o rechazo automático de pagos. Además, los usuarios también podrán pagar en su tienda sin estar obligatoriamente registrados en Mercado Pago.
+Otra característica de la integración es la posibilidad de activar el modo binario, característica que permite configurar la aprobación o rechazo automático de pagos. Además, los usuarios también podrán pagar en tu tienda sin estar obligatoriamente registrados en Mercado Pago.
  
 > NOTA
 >
