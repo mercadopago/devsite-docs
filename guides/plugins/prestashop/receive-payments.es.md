@@ -22,7 +22,7 @@ Para comenzar a recibir pagos, debes activar el modo de producción. Para hacer 
  
 Con todos los pasos completados, sus clientes podrán realizar compras en su tienda. Al realizar una transacción, es común que algunos mensajes regresen con información específica sobre la compra, ya que cada venta genera un estado de pago que muestra el estado de la venta incluyendo confirmación, pendiente o denegación de pago y otra información importante sobre la transacción.
  
-Para más información acceda a la sección [Actividades](https://www.mercadopago[FAKER][URL][DOMINIO]/actividades) de su cuenta de Mercado Pago.
+Para más información accede a la sección [Actividades](https://www.mercadopago[FAKER][URL][DOMINIO]/actividades) de tu cuenta de Mercado Pago.
  
 ![Estado de pago](/images/prestashop/status_es.png)
 
