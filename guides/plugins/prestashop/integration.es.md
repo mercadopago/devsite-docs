@@ -31,7 +31,7 @@ Para integrarte con Mercado Pago, sigue los procedimientos a continuación.
 * **Modal checkout:** define si los clientes tendrán acceso al formulario de pago de Mercado Pago sin salir de tu tienda.
 * **Modo binario:** habilítalo cuando no desees dejar los pagos en estado pendiente o de revisión. Con el modo binario, los pagos se aceptarán o rechazarán automáticamente.
 * **Cancelación de preferencias de pago:** indica el período en el que se guardarán las preferencias de pago del cliente sin que el cliente tenga que volver a añadirlas.
-* **Descuento por comprar con Mercado Pago:** establecer un porcentaje de descuento para los clientes que pagan con Mercado Pago.
+* **Descuento por comprar con Mercado Pago:** establece un porcentaje de descuento para los clientes que pagan con Mercado Pago.
 * **Métodos de pago en persona:** seleccione qué métodos de pago se ofrecerán para los pagos realizados a través de Ticket Checkout.
 * **Vencimento del pago:** después de seleccionar el medio de pago en persona, indique cuántos días caducarán después de su emisión.
  
