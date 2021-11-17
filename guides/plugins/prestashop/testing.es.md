@@ -21,6 +21,6 @@ Después de completar los pasos anteriores, active **Modo de producción** para 
 >
 > Procesamiento de pagos
 >
-> Aprenda a permitir que su tienda procese las ventas reales.
+> Aprende a permitir que tu tienda procese las ventas reales.
 >
 > [Procesamiento de pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/receive-payments)
