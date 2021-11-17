@@ -41,6 +41,6 @@ Para integrarte con Mercado Pago, sigue los procedimientos a continuación.
 >
 > Prueba de pago
 >
-> Descubra cómo realizar una compra de prueba y asegúrese de que la integración funcione.
+> Descubre cómo realizar una compra de prueba y asegúrate de que la integración funcione.
 >
 > [Prueba de pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/testing)
