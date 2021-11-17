@@ -9,7 +9,7 @@ To integrate with Mercado Pago, follow the procedures below.
  
 ![Credentials](/images/prestashop/credencials_en.png)
  
-5. Next, set up the business information necessary to identify your store.
+5. Next, set up the necessary business information to identify your store.
  
 * **Store Name:** enter your store name.
 * **Store Category:** Enter your store's product category.
