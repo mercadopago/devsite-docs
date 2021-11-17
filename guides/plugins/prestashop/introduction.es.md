@@ -24,4 +24,4 @@ Otra característica de la integración es la posibilidad de activar el modo bin
 >
 > Conocer los requisitos previos para realizar la integración.
 >
-> [Requisitos previos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/previous-requirements)
+> [Requisitos previos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/previous-requirements)
