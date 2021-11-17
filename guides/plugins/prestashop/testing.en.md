@@ -10,7 +10,7 @@ The Mercado Pago plugin comes with the **Sandbox test environment** active by de
  
 4. On your PrestaShop store home page, select a product and click to add to your cart.
 5. With the product selected, complete the order.
-6. Fill in with personal information, indicate a shipping address and select a shipping method. Remembering that all this information is just for testing.
+6. Fill in with personal information, indicate a shipping address and select a shipping method. Remember that all this information is just for testing.
 7. Select the payment option with the Mercado Pago solution you configured.
 8. Use the [test credit cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/localization/local-cards) to make the payment.
 9. When you've completed everything, **finalize the purchase**.
