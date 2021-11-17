@@ -6,7 +6,7 @@ Esta documentación fue diseñada para que puedas hacer toda la configuración n
  
 ## Funciones de la integración
  
-Con el plugin Mercado Pago puedes configurar el pago usando [Checkout Pro](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/Introduction), donde el pago se realiza en la página de Mercado Pago (dentro o fuera de tu tienda) con tarjetas (débito o crédito) y en efectivo (saldo de la cuenta Mercado Pago y comprobante bancário).
+Con el plugin Mercado Pago puedes configurar el pago usando [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction), con el cual el pago se realiza en la página de Mercado Pago (dentro o fuera de tu tienda) con tarjetas (débito o crédito) y en efectivo (saldo de la cuenta Mercado Pago y comprobante bancario).
  
 También existe la posibilidad de utilizar el [Checkout Personalizado](https://www.mercadopago.[FAKER][URL][DOMINIO]/developers/pt/guides/online-payments/checkout-api/Introduction), en que el pago se realiza con tarjeta de crédito sin salir de su tienda virtual y del **Ticket Checkout**, realizándose los pagos en persona con efectivo o comprobante bancario.
  
