@@ -1,6 +1,6 @@
 # Prueba de pago
  
-El plugin del Mercado Pago viene con el **entorno de pruebas Sandbox** activo por defecto. En este entorno, podrá simular pagos en la tienda y ver si todo funciona correctamente antes de comenzar a recibir pagos reales de sus clientes. Para realizar la prueba, siga los pasos a continuación.
+El plugin del Mercado Pago tiene el **entorno de pruebas Sandbox** activo por defecto. En este entorno, podrás simular pagos en la tienda y ver si todo funciona correctamente antes de comenzar a recibir pagos reales de tus clientes. Para realizar la prueba, sigue los pasos a continuación.
  
 1. En el Panel Administrativo de su tienda, acceda al menú Módulos y Servicios, localiza el plugin Mercado Pago y haga clic en **configure**.
 2. En la pantalla de administración de complementos, confirme que las [credenciales de prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) se hayan completado correctamente de acuerdo con la información disponible en su [Dashboard] (https://www.mercadopago.com.br/developers/panel).
