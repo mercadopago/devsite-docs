@@ -1,5 +1,11 @@
 # PrestaShop
  
+> NOTE
+>
+> ¡Protege tu integración!
+>
+> En octubre de 2022, se deprecarán las versiones del plugin PrestaShop anteriores a la 4.3.0. Mantén tu tienda siempre actualizada con la última versión para evitar la suspensión de las transacciones y la exposición de datos confidenciales.
+
 [PrestaShop](https://www.prestashop.com/es/) es una plataforma de comercio electrónico con software de código abierto que permite a cualquier usuario crear y desarrollar un sitio web comercial. Como socios oficiales de PrestaShop, brindamos mayor seguridad y eficiencia a tu tienda.
  
 Esta documentación fue diseñada para que puedas hacer toda la configuración necesaria para integrar el plugin Mercado Pago con tu tienda en PrestaShop, sin tener que escribir una sola línea de código para instalarlo en las tiendas de tus clientes.

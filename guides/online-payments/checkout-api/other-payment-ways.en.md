@@ -3871,6 +3871,12 @@ In the `external_resource_url` field you will find an address with payment instr
 
 You can receive payment immediately with Pix from any bank or digital wallet using QR code or payment code.
 
+> GIT
+>
+> Pix integration examples
+>
+> Use our [complete integration examples](https://github.com/mercadopago/pix-payment-sample) on GitHub to download instantly.
+
 ### Prerequisite
 
 #### Get a Pix key

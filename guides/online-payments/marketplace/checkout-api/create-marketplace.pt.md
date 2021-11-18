@@ -88,7 +88,6 @@ curl -X POST \
      -d 'redirect_uri=REDIRECT_URI'
 ```
 
-
 Na resposta você vai obter o `access_token` do vendedor vinculado. 
 
 Você também vai receber o `refresh_token`, que servirá para renovar as credenciais dos seus vendedores. 
@@ -263,6 +262,8 @@ payment_data = {
     email: 'test_user_19653727@testuser.com'
   }
 }
+````
+]]]
 
 > NOTE
 > 

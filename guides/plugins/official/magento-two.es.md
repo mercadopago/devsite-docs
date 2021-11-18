@@ -1,5 +1,11 @@
 # Magento 2
 
+> WARNING
+>
+> ¡Protege tu integración!
+>
+> En octubre de 2022, se deprecarán las versiones del plugin Magento 2 anteriores a la 3.5.0. Mantén tu tienda siempre actualizada con la última versión para evitar la suspensión de las transacciones y la exposición de datos confidenciales.
+
 ## Requisitos para integrar
 
 | Requisito | Descripción |
