@@ -40,7 +40,7 @@ Para criar uma **afiliação de gateway de pagamento com o MercadoPagoV2**, siga
    * **Application Token:** Refere-se às suas [credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) do Mercado Pago. Complete com seu Access Token.
    * **Prazo para finalizar pedido (dias) - Plazo para finalizar el pedido (días):** Prazo, em dias úteis, de vencimento do boleto. Caso o cliente efetue o pagamento após o prazo, o dinheiro será depositado na conta do mesmo no Mercado Pago.
    * **Nome da loja - Nombre de la tienda:** Nome da loja. O valor deste campo aparecerá na fatura do cartão do cliente
-   * **Número máximo de parcelas - Número máximo de cuotas/mensualidades sin interés** Número máximo de parcelas disponíveis.
+   * **Número máximo de parcelas - Número máximo de cuotas/mensualidades sin interés:** Número máximo de parcelas disponíveis.
    * **Categoría principal da loja - Categoría principal de la tienda:** Categoria da loja.
    * **Reembolso em vendas canceladas - Reembolso de las ventas anuladas:** Selecionar se deseja que o Mercado Pago realize automaticamente o reembolso em caso de cancelamento ou se deseja reter o valor pago para o cliente usar em compras futuras.
    * **Anti-fraude totalmente automático - Antifraude totalmente automático:** Configura se o pagamento poderá passar por revisão manual ou não.

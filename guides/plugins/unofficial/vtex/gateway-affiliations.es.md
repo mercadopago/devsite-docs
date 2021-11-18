@@ -37,8 +37,8 @@ Para crear una **afiliación de gateway de pago con MercadoPagoV2**, sigue los p
 2. En la pestaña **Afiliaciones**, haz clic en el botón "+".
 3. Haz clic en el conector **MercadoPagoV2**.
 4. Completa los campos correspondientes: 
-   * **Application Key:** Se refiere a tus [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) de Mercado Pago. Completea con tu Public Key.
-   * **Application Token:** Se refiere a tus [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) de Mercado Pago. Completea con tu Access Token.
+   * **Application Key:** Se refiere a tus [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) de Mercado Pago. Completa con tu Public Key.
+   * **Application Token:** Se refiere a tus [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) de Mercado Pago. Completa con tu Access Token.
    * **Prazo para finalizar pedido (dias) - Plazo para finalizar el pedido (días):** Plazo, en días hábiles, para el vencimiento del ticket. Si el cliente paga fuera de plazo, el dinero se depositará en su propia cuenta de Mercado Pago.
    * **Nome da loja - Nombre de la tienda:** Nombre de la tienda. El valor de este campo aparecerá en la factura de la tarjeta del cliente.
    * **Número máximo de parcelas - Número máximo de cuotas/mensualidades sin interés:** Número máximo de cuotas disponibles.
