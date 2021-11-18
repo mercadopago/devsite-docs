@@ -2,12 +2,9 @@
  
 El plugin del Mercado Pago tiene el **entorno de pruebas Sandbox** activo por defecto. En este entorno, podrás simular pagos en la tienda y ver si todo funciona correctamente antes de comenzar a recibir pagos reales de tus clientes. Para realizar la prueba, sigue los pasos a continuación.
  
-1. En el Panel Administrativo de tu tienda, accede al menú Módulos y Servicios, localiza el plugin Mercado Pago y haz clic en **configure**.
+1. En el Panel Administrativo de tu tienda PrestaShop, accede al menú Módulos y Servicios, localiza el plugin Mercado Pago y haz clic en **configure**.
 2. En la pantalla de administración de complementos, confirma que las [credenciales de prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) se hayan completado correctamente de acuerdo con la información disponible en tu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/devpanel).
 3. Luego, desplázate hacia abajo hasta la sección **Prueba tu tienda** y haz clic en **Quiero testear mis ventas**.
- 
-![Prueba de pagos](/images/prestashop/teste_pagto_es.png)
-
 4. En la página de inicio de tu tienda PrestaShop, selecciona un producto y haz clic para añadir al carrito.
 5. Con el producto seleccionado, completa el pedido.
 6. Completa con los datos personales, indica una dirección de envío y selecciona un método de envío. Recordando que toda esta información es solo para probar.
