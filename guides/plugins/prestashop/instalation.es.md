@@ -8,7 +8,7 @@ Instala Mercado Pago para PrestaShop automáticamente siguiendo los pasos a cont
  
 ¡Listo! Verás el complemento instalado en la sección **Personalizado** de tu panel de administración.
  
-> NOTA
+> NOTE
 >
 > Importante
 >
