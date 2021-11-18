@@ -66,12 +66,12 @@ Checkout Pro es la integración que **te permite cobrar a través de nuestro for
 | Prevención de fraude                  | ✔ | ✔ | ✔ |
 | Pantalla de finalización de pago      | ✔ |   |   |
 ------------
-
+ 
 ---
 
 ### Próximos pasos
 
-> LEFT_BUTTON_REQUIRED_ES
+> NEXT_STEP_CARD_ES
 >
 > Requisitos para integrar
 >

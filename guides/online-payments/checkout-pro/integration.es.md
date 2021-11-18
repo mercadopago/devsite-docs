@@ -408,7 +408,7 @@ _Haz clic en el link dentro de tu sitio y [prueba la integración de tu Checkout
 
 ### Próximos pasos
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> PREV_STEP_CARD_ES
 >
 > Prueba tu integración
 >
@@ -416,7 +416,15 @@ _Haz clic en el link dentro de tu sitio y [prueba la integración de tu Checkout
 >
 > [Pruebas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/test-integration)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
+> NEXT_STEP_CARD_ES
+>
+> Acepta pagos con la billetera de Mercado Pago
+>
+> Permite pagos solo de usuarios registrados en Mercado Pago, con tarjetas y dinero disponible.
+>
+> [Usuarios regsitrados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations/#bookmark_aceptar_pagos_únicamente_de_usuarios_registrados)
+
+> RELATED_DOCS_ES
 >
 > Acepta pagos con la billetera de Mercado Pago
 >
