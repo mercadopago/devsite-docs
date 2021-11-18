@@ -7,7 +7,7 @@ Após realizar a integração e fazer os devidos testes, sua loja já está pron
 Para começar a receber pagamentos é necessário ativar o modo Produção. Para isso, siga os procedimentos abaixo.
  
 1. No Painel Administrativo da sua loja, acesse o menu **Módulos e serviços**, localize o plugin do Mercado Pago e clique em **configurar**.
-2. Na tela de gerenciamento do plugin, confirme se as [credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) de produção são as mesmas da conta que você recebe o dinheiro das vendas. Essa informação poderá ser visualizada em seu [Dashboard](https://www.mercadopago.com.br/developers/panel).
+2. Na tela de gerenciamento do plugin, confirme se as [credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) de produção são as mesmas da conta que você recebe o dinheiro das vendas. Essa informação poderá ser visualizada em seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel).
 3. Em seguida, clique em **sim** para ativar o modo Produção.
  
 > NOTE
@@ -26,7 +26,7 @@ Para mais informações, acesse a seção [Atividades](https://www.mercadopago[F
  
 ![Status de pagamento](/images/prestashop/status_pt.png)
  
-## Motivos de recusas
+## Motivos de recusas de pagamentos
  
 Com relação à **aprovação dos pagamentos** na sua loja, existem três principais motivos que podem impactar diretamente nesses resultados. Abaixo, detalhamos os fatores que influenciam na recusa de um pagamento.
  

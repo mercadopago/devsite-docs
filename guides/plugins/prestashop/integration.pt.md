@@ -5,7 +5,7 @@ Para realizar a integração com o Mercado Pago, siga os procedimentos abaixo.
 1. No Painel Administrativo da sua loja, acesse o menu **Módulos e serviços**, localize o plugin do Mercado Pago e clique em **configurar**.
 2. Na tela de gerenciamento do plugin, preencha os campos solicitados de acordo com suas informações de negócio.
 3. No campo **Localização**, selecione o país de operação da sua conta do Mercado Pago.
-4. Na seção **Credenciais**, confirme se os campos estão devidamente preenchidos de acordo com as [credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) indicadas em seu seu [Dashboard](https://www.mercadopago.com.br/developers/panel).
+4. Na seção **Credenciais**, confirme se os campos estão devidamente preenchidos de acordo com as [credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) indicadas em seu seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel).
  
 ![Credenciais](/images/prestashop/credenciais_pt.png)
  

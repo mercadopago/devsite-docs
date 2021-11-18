@@ -2,20 +2,20 @@
  
 To integrate with Mercado Pago, follow the procedures below.
  
-1. On your store's Administrative Panel, access the **Modules and Services** menu, find the Mercado Pago plugin and click **configure**.
+1. On your store's Administrative Panel, access the **Modules and Services** menu, find the Mercado Pago plugin and click on **configure**.
 2. On the plugin management screen, fill in the required fields according to your business information.
-3. In the **Location** field, select the country of operation of your Mercado Pago account.
-4. In the **Credentials** section, confirm that the fields are properly filled in according to the [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) indicated in their [Dashboard](https://www.mercadopago.com.br/developers/panel).
+3. In the `Location` field, select the country of operation of your Mercado Pago account.
+4. In the **Credentials** section, confirm that the fields are properly filled in according to the [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) indicated in their [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/devpanel).
  
-![Credentials](/images/prestashop/credencials_en.png)
+![Credentials](/images/prestashop/credenciais_en.png)
  
-5. Next, set up the business information necessary to identify your store.
+5. Next, set up the necessary business information to identify your store.
  
 * **Store Name:** enter your store name.
 * **Store Category:** Enter your store's product category.
 * **Integrator ID:** Enter your *integrator_id* as a member of the **&lt;dev&gt;program**, Mercado Pago. If you are not a member yet, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/developer-program) for more information.
  
-6. Finally, configure your store's payment experiences according to the type of checkout you've chosen to configure, which could be [Checkout Pro](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction), the [Custom Checkout](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction) and the **Ticket Checkout**.
+6. Finally, configure your store's payment experiences according to the type of checkout you've chosen to configure, which could be [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction), the [Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction) and the **Ticket Checkout**.
  
 > NOTE
 >
@@ -26,7 +26,7 @@ To integrate with Mercado Pago, follow the procedures below.
 * **Activate Checkout:** select **yes** to enable the Mercado Pago experience at your store's checkout.
 * **Payment methods:** choose the payment methods you want to offer.
 * **Max installments:** select the maximum installments you want to offer in your store.
-* **Installment and interest:** [configure](https://www.mercadopago.com.br//costs-section#from-section=menu) the rate that will be paid on each purchase and also offer interest-free installments for your customers.
+* **Installment and interest:** [configure](https://www.mercadopago.com.br/costs-section#from-section=menu) the rate that will be paid on each purchase and also offer interest-free installments for your customers.
 * **Return to the store:** select whether or not you want the customer to automatically return to your store after completing the payment.
 * **Modal checkout:** define if customers will have access to the Mercado Pago payment form without leaving your store.
 * **Binary mode:** enable when you don't want to leave payments in pending or review status. With binary mode, payments will be accepted or declined automatically.
