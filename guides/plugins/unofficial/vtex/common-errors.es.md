@@ -15,7 +15,7 @@ Los siguientes son errores comunes que pueden ocurrir durante tu integración:
 >
 > Importante
 >
-> Antes de comenzar tu operación de producción, debes activar tus credenciales. Si ya has realizado este paso, el enlace no se mostrará.
+> Antes de comenzar tu operación de producción, debes activar tus [credenciales]([FAKER][CREDENTIALS][URL]).
 
 Para más información, visita el [site oficial de VTEX](https://help.vtex.com/) y el [site de status de VTEX](https://status.vtex.com/).
 
