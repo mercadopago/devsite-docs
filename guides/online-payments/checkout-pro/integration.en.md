@@ -373,7 +373,7 @@ Then, add the SDK credentials to enable its use and initialize the checkout usin
 >
 > Note
 >
-> Reemember to replace the value **US** for your country in the field `locale`.
+> Remember to replace the value **US** for your country in the field `locale`.
 
 According to the example above, a payment button will be displayed and will be responsible for opening the Checkout Pro.
 
