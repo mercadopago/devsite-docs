@@ -6,7 +6,7 @@ Para configurar as notificações IPN que você quiser receber através de um `H
  
 1. Clique na seta ao lado de sua conta para acessar a tela de [Notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
 2. Em seguida, configure a **URL** de **produção** da qual serão recebidas as notificações.
-3. Caso seja necessário indentificar múltiplas contas, no final da URL indicada você poderá indicar o parâmetro ***?cliente=(nomedovendedor) endpoint*** para indentificar os vendedores.
+3. Caso seja necessário indentificar múltiplas contas, no final da URL indicada você poderá indicar o parâmetro `?cliente=(nomedovendedor) endpoint` para indentificar os vendedores.
 4. Selecione os **eventos** dos quais você receberá notificações em formato `json` utilizando `HTTP POST` para a URL especificada anteriormente. Notificamos eventos relacionados aos seus pedidos (`merchant_orders`), estornos recebidos (`chargebacks`) ou pagamentos recebidos (`payment`).
  
 > NOTE
