@@ -4,17 +4,18 @@ Las notificaciones son respuestas dadas por el servidor de transacciones (evento
  
 Vea a continuación los tipos de notificaciones disponibles para la integración con Mercado Pago.
 
-> ADVERTENCIA
+> WARNING
 >
 > Importante
 >
-> No es posible recibir notificaciones en el entorno de prueba.
+> No es posible recibir notificaciones en el entorno de prueba/sandbox.
 
 ## Webhook
 
-El [Webhook](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks) (también conocido como devolución de llamada web o `HTTP POST`) es un método simple que hace es fácil para una aplicación o sistema proporcionar información en tiempo real cada vez que ocurre un evento, es decir, es una forma de recibir datos pasivamente entre dos sistemas. Esto hace posible que se creen programas simples e independientes únicamente con el propósito de trabajar en cadena mientras se ejecutan otros comandos.
+El [Webhook](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks) (también conocido como devolución de llamada web o `HTTP POST`) es un método simple que hace Es fácil para una aplicación o sistema proporcionar información en tiempo real cada vez que ocurre un evento, es decir, es una forma de recibir datos pasivamente entre dos sistemas. Esto permite crear programas simples e independientes exclusivamente con la intención de trabajar en cadena mientras se ejecutan otros comandos, y se puede configurar para una o más aplicaciones creadas en tu [Dashboard](https://www.mercadopago[FAKER][URL][DOMINIO]/developers/es/guides/resources/devpanel).
+
 Una vez instalado, el Webhook se enviará cada vez que ocurran uno o más eventos firmados, evitando un trabajo de búsqueda cada minuto en busca de una respuesta y, en consecuencia, evitando la sobrecarga del sistema y la pérdida de datos siempre que ocurra cualquier situación.
 
 ## IPN
 
-La [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn) (_Instant Payment Notification_) es un mecanismo que le permite a su tienda recibir notificaciones de un servidor. Mercado Pago informando el estado de un determinado pago, a través de una llamada `HTTP POST` para informar sobre sus transacciones.
+La [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/Notifications/ipn) (_Instant Payment Notification_) es un mecanismo que le permite a su tienda recibir notificaciones de un servidor. Mercado Pago informando el estado de un determinado pago, a través de una llamada `HTTP POST` para informar sobre sus transacciones. A diferencia de Webhook, las notificaciones de IPN se pueden configurar para una sola aplicación a la vez.

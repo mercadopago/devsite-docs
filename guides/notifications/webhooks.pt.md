@@ -2,28 +2,14 @@
 
 Para configurar as notificações Webhooks que você quiser receber através de um `HTTP POST` toda vez que houver um evento relacionado a suas transações, siga as informações abaixo.
 
-## Configuração
+## Configuração pelo painel
 
-> WARNING
->
-> Importante
->
-> Não é possível receber notificações em ambiente de teste.
+1. Primeiramente, uma aplicação deverá ser criada em seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel).
+2. Caso seja necessário indentificar múltiplas contas, no final da URL indicada você poderá indicar o parâmetro ***?cliente=(nomedovendedor) endpoint*** para indentificar os vendedores.
+3. Com a aplicação criada, acesse a aba Notificações Webhooks em seu Dashboard e configure as [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) de **produção** e **teste** da qual serão recebidas as notificações.
+4. Em seguida, selecione os **eventos** dos quais você receberá notificações em formato `jason` através de um `HTTP POST` para a URL especificada anteriormente. Um evento é qualquer tipo de atualização no objeto relatado, incluindo alterações de status ou atributo. Veja na tabela abaixo os eventos que poderão ser configurados.
 
-1. Primeiramente, uma aplicação deverá ser criada em seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/guides/resources/devpanel).
-2. Com a aplicação criada, acesse a aba Notificações Webhooks em seu Dashboard e configure a [URL acessível ao Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) de **produção** e **teste** da qual serão recebidas as notificações. Se deseja receber notificações apenas de Webhooks, e não de IPN, você pode adicionar na URL indicada o parâmetro `source_news=webhooks` (exemplo:`https://www.yourserver.com/notifications?source_news=webhooks`).
-
-![webhook](/images/notifications/webhook_pt.png)
-
-3. Em seguida, selecione os **eventos** que deverão ser notificados quando ocorrerem. Assim, sempre que ocorrer um evento, enviaremos uma notificação no formato `json` utilizando `HTTP POST` para a URL especificada anteriormente.
-
-> NOTE
->
-> Importante
->
-> Um evento é qualquer tipo de atualização no objeto relatado, incluindo alterações de status ou atributo.
 | Tipo de notificação | Ação | Descrição |
-
 | :--- | :--- | :--- |
 | `payment` | `payment.created` | Criação de pagamento |
 | `payment` | `payment.updated` | Atualização de pagamento |
@@ -33,18 +19,233 @@ Para configurar as notificações Webhooks que você quiser receber através de 
 | `subscription` | `application.authorized` | Vinculação de conta |
 | `invoice` | `application.authorized` | Vinculação de conta |
 
-4. Você também pode configurar a notificação quando fizer o POST do pagamento, indicando no campo `notificaction_url` como exemplificado abaixo.
+![webhook](/images/notifications/webhook_pt.png)
 
-```json
-{
-  "transaction_amount":100,
-  ....
-  "notification_url":"http://requestbin.fullcontact.com/1ogudgk1",
-  ....
-}
+## Configuração na criação do pagamento
+
+Caso a integração necessite que seja enviada uma notificação para mais de um lugar em uma mesma aplicação, veja no passo a passo abaixo como utilizar os SDKs para configurar a notificação quando fizer o POST do pagamento
+
+1. No campo `notificaction_url`, indique a URL da qual serão recebidas as notificações como exemplificado abaixo.
+
+[[[
+```php
+===
+<?php
+    require_once 'vendor/autoload.php';
+
+    MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
+
+    $payment = new MercadoPago\Payment();
+    $payment->transaction_amount = (float)$_POST['transactionAmount'];
+    $payment->token = $_POST['token'];
+    $payment->description = $_POST['description'];
+    $payment->installments = (int)$_POST['installments'];
+    $payment->payment_method_id = $_POST['paymentMethodId'];
+    $payment->issuer_id = (int)$_POST['issuer'];
+    $payment->notification_url = "http://requestbin.fullcontact.com/1ogudgk1";
+
+    $payer = new MercadoPago\Payer();
+    $payer->email = $_POST['email'];
+    $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
+        "type" => $_POST['docType'],------------
+        "number" => $_POST['docNumber']
+    );
+    $payment->payer = $payer;
+
+    $payment->save();
+
+    $response = array(
+        'status' => $payment->status,
+        'status_detail' => $payment->status_detail,
+        'id' => $payment->id
+    );
+    echo json_encode($response);
+
+?>
 ```
+```node
+===
 
-5. Implemente o receptor de notificações usando o seguinte código como exemplo:
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
+
+var payment_data = {
+  transaction_amount: Number(req.body.transactionAmount),
+  token: req.body.token,
+  description: req.body.description,
+  installments: Number(req.body.installments),
+  payment_method_id: req.body.paymentMethodId,
+  issuer_id: req.body.issuer,
+  notification_url: "http://requestbin.fullcontact.com/1ogudgk1",
+  payer: {
+    email: req.body.email,
+    identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
+      type: req.body.docType,------------
+      number: req.body.docNumber
+    }
+  }
+};
+
+mercadopago.payment.save(payment_data)
+  .then(function(response) {
+    res.status(response.status).json({
+      status: response.body.status,
+      status_detail: response.body.status_detail,
+      id: response.body.id
+≈    });
+  })
+  .catch(function(error) {
+    res.status(response.status).send(error);
+  });
+```
+```java
+===
+
+MercadoPago.SDK.setAccessToken("YOUR_ACCESS_TOKEN");
+
+Payment payment = new Payment();
+payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmount")))
+       .setToken(request.getParameter("token"))
+       .setDescription(request.getParameter("description"))
+       .setInstallments(Integer.valueOf(request.getParameter("installments")))
+       .setPaymentMethodId(request.getParameter("paymentMethodId"));
+
+Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
+identification.setType(request.getParameter("docType"))
+              .setNumber(request.getParameter("docNumber"));------------ ----[mlm]----
+identification.setNumber(request.getParameter("docNumber"));------------
+
+Payer payer = new Payer();
+payer.setEmail(request.getParameter("email"))
+     .setIdentification(identification);
+notification_url: "http://requestbin.fullcontact.com/1ogudgk1",
+     
+payment.setPayer(payer);
+
+payment.save();
+
+System.out.println(payment.getStatus());
+
+```
+```ruby
+===
+require 'mercadopago'
+sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
+
+payment_data = {
+  transaction_amount: params[:transactionAmount].to_f,
+  token: params[:token],
+  description: params[:description],
+  installments: params[:installments].to_i,
+  payment_method_id: params[:paymentMethodId],
+  notification_url: "http://requestbin.fullcontact.com/1ogudgk1",
+  payer: {
+    email: params[:email],
+    identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
+      type: params[:docType],------------
+      number: params[:docNumber]
+    }
+  }
+}
+
+payment_response = sdk.payment.create(payment_data)
+payment = payment_response[:response]
+
+puts payment
+
+```
+```csharp
+===
+Encontre o estado do pagamento no campo _status_.
+===
+using System;
+using MercadoPago.Client.Common;
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
+
+MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
+
+var paymentRequest = new PaymentCreateRequest
+{
+    TransactionAmount = decimal.Parse(Request["transactionAmount"]),
+    Token = Request["token"],
+    Description = Request["description"],
+    Installments = int.Parse(Request["installments"]),
+    PaymentMethodId = Request["paymentMethodId"],
+    Notification_url = Request["http://requestbin.fullcontact.com/1ogudgk1"],
+
+    Payer = new PaymentPayerRequest
+    {
+        Email = Request["email"],
+        Identification = new IdentificationRequest
+        {----[mla, mlb, mlu, mlc, mpe, mco]----
+            Type = Request["docType"],------------
+            Number = Request["docNumber"],
+        },
+    },
+};
+
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(paymentRequest);
+
+Console.WriteLine(payment.Status);
+
+```
+```python
+===
+Encontre o estado do pagamento no campo _status_.
+===
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_data = {
+    "transaction_amount": float(request.POST.get("transaction_amount")),
+    "token": request.POST.get("token"),
+    "description": request.POST.get("description"),
+    "installments": int(request.POST.get("installments")),
+    "payment_method_id": request.POST.get("payment_method_id"),
+    "payer": {
+        "email": request.POST.get("email"),
+        "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
+            "type": request.POST.get("type"), ------------
+            "number": request.POST.get("number")
+        }
+    }
+}
+
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
+notification_url =  "http://requestbin.fullcontact.com/1ogudgk1"
+
+print(payment)
+```
+```curl
+===
+
+curl -X POST \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/payments' \
+    -d '{
+          "transaction_amount": 100,
+          "token": "ff8080814c11e237014c1ff593b57b4d",
+          "description": "Blue shirt",
+          "installments": 1,
+          "payment_method_id": "visa",
+          "issuer_id": 310,
+          "notification_url": "http://requestbin.fullcontact.com/1ogudgk1",
+          "payer": {
+            "email": "test@test.com"
+
+          }
+    }'
+
+```
+]]]
+
+2. Implemente o receptor de notificações usando o seguinte código como exemplo:
 
 ```php
 <?php
@@ -66,7 +267,7 @@ Para configurar as notificações Webhooks que você quiser receber através de 
 ?>
 ```
 
-6. Feitas as devidas configurações, a notificação via Webhook terá o seguinte formato:
+2. Feitas as devidas configurações, a notificação via Webhook terá o seguinte formato:
 
 ```json
 {

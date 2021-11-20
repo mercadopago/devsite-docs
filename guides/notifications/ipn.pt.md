@@ -1,28 +1,24 @@
 # Notificações IPN
  
 Para configurar as notificações IPN que você quiser receber através de um `HTTP POST` toda vez que houver um evento relacionado a suas transações, siga as informações abaixo.
- 
-## Configuração
 
-> WARNING
->
-> Importante
->
-> Não é possível receber notificações em ambiente de teste.
+## Configuração pelo painel
  
-1. Primeiramente, configure a [URL acessível ao Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn) de **produção** da qual serão recebidas as notificações. Se deseja receber notificações apenas de Webhooks, e não de IPN, você pode adicionar na URL indicada o parâmetro `source_news=ipn` como, por exemplo,`https://www.yourserver.com/notifications?source_news=ipn`.
- 
-![ipn](/images/notifications/ipn_pt.png)
- 
-2. Em seguida, selecione os **eventos** que deverão ser notificados quando ocorrerem para que possamos enviar uma notificação no formato `json` utilizando `HTTP POST` para a URL especificada anteriormente. Notificamos eventos relacionados aos seus pedidos (`merchant_orders`), estornos recebidos (`chargebacks`) ou pagamentos recebidos (`payment`).
+1. Primeiramente, 
+
+2. Configure a [URL](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn) de **produção** da qual serão recebidas as notificações.
+3. Caso seja necessário indentificar múltiplas contas, no final da URL indicada você poderá indicar o parâmetro ***?cliente=(nomedovendedor) endpoint*** para indentificar os vendedores.
+4. Em seguida, selecione os **eventos** dos quais você receberá notificações em formato `json` utilizando `HTTP POST` para a URL especificada anteriormente. Notificamos eventos relacionados aos seus pedidos (`merchant_orders`), estornos recebidos (`chargebacks`) ou pagamentos recebidos (`payment`).
  
 > NOTE
 >
 > Importante
 >
 > Um evento é qualquer tipo de atualização no objeto relatado, incluindo alterações de status ou atributo.
+
+![ipn](/images/notifications/ipn_pt.png)
  
-3. Implemente o receptor de notificações usando o seguinte código como exemplo:
+5. Implemente o receptor de notificações usando o seguinte código como exemplo:
  
 ```php
 <?php
