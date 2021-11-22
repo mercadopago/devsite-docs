@@ -5,7 +5,7 @@ sites_supported:
   - mlm
 ---
 
-# Face to Face Sales with Point
+# Face to Face Sales with Point Elvis v1
 You can boost your sales in the physical world by charging through the Mercado Pago Point device.
 
 The Mercado Pago mobile application next to the Point allows you to charge securely with credit cards and debit cards. Its main functionalities are:
