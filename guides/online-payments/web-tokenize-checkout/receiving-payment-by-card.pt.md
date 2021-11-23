@@ -288,6 +288,12 @@ Retorno:
 
 ## Recomendações adicionais
 
+>WARNING
+>
+>Importante
+>
+> Ao abrir o tokenizer em uma nova aba, os URLs definidos em `backURLs` não são considerados e o usuário não retorna ao site, mas está em estado "em processamento".
+
 ### Cartões de teste
 
 Para realizar pagamentos de teste (com suas credenciais de TEST), é necessário que utilize [cartões de teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/testing).

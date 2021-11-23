@@ -287,6 +287,12 @@ Response:
 
 ## Additional recommendations
 
+>WARNING
+>
+>Important
+>
+> When opening tokenizer in a new tab, the URLs defined in `backURLs` are not taken into consideration and the user is not returned to the site, and is left in "processing" status.
+
 ### Test cards
 
 To make testing payments (with your TEST credentials), you need to use [test cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/testing).

@@ -288,6 +288,12 @@ Respuesta:
 
 ## Recomendaciones adicionales
 
+>WARNING
+>
+>Importante
+>
+> Al abrir el tokenizer en una nueva pestaña, las URLs definidas en `backURLs` no se tienen en consideración y el usuario no es devuelto al sitio sino que queda en estado "procesando".
+
 ### Tarjetas de prueba
 
 Para realizar pagos de prueba (con tus credenciales de TEST), es necesario que utilices [tarjetas de prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/testing).
