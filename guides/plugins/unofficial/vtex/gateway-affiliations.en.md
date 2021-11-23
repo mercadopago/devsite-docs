@@ -38,18 +38,17 @@ To create a **payment gateway affiliation with MercadoPagoV2**, follow the steps
 4. Complete the following fields: 
    * **Application Key:** This refers to your Mercado Pago [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials). Complete this with your Public Key.
    * **Application Token:** This refers to your Mercado Pago [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials). Complete this with your Access Token.
-   * **Prazo para finalizar pedido (dias) - Plazo para finalizar el pedido (días)** Term, in business days, for the expiration of the ticket. If the customer pays after the deadline, the money will be deposited into their own Mercado Pago account.
-   * **Nome da loja - Nombre de la tienda:** Name of the store. The value of this field will appear on the customer's card invoice.
-   * **Número máximo de parcelas - Número máximo de cuotas/mensualidades sin interés:** Maximum number of installments available.
+   * **Prazo de vencimento do boleto - Periodo de vencimiento del ticket:** Term, in business days, for the expiration of the ticket. If the customer pays after the deadline, the money will be deposited into their own Mercado Pago account.
+   * **Nome da loja - Nombre para resúmenes:** Name of the store. The value of this field will appear on the customer's card invoice.
+   * **Parcelamento máximo - Cuotas máximas** Maximum number of installments available.
    * **Categoría principal da loja - Categoría principal de la tienda:** Store's category.
-   * **Reembolso em vendas canceladas - Reembolso de las ventas anuladas** Select whether you want Mercado Pago to automatically reimburse in case of cancellation, or if you want to retain the amount paid for the customer to use in future purchases.
-   * **Anti-fraude totalmente automático - Antifraude totalmente automático:** Configure whether the payment can go through manual review or not.
-   * **Métodos de pagamento excluídos - Métodos de pago excluidos (formato: visa, paypal, etc.)** Payment methods to be excluded at the time of purchase. [Here are the options](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/payment-methods).
-   * **Tipos de pagamento excluídos - Tipos de pago excluidos (formato: credti_card, bank_transfer etc.):** Payment types to be excluded at the time of purchase. [Here are the options](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/payment-methods).
-   * **Modo de processamento - Modo de procesamiento:** Configure if the payment will be gateway of aggregator.
-   * **Insira seu Integrator ID - Introduce tu Integrator ID:** Para programadores o agencias que realizan la integración.
-   * **Selecione a moeda das vendas - Seleccione la moneda de venta:** Currency to be configured (USD or Local).
-   * **Prazo de captura de pagamento aprovado -  Plazo de captura de pagos aprobado:** If you use a complementary third-party Anti-Fraud, you can set an automatic capture deadline for approved transactions, to avoid unnecessary cancellations.
+   * **Reembolso automático / manual:** Select whether you want Mercado Pago to automatically reimburse in case of cancellation, or if you want to retain the amount paid for the customer to use in future purchases.
+   * **Modo binário - binário:** Configure whether the payment can go through manual review or not.
+   * **Métodos de pagamento excluídos - Métodos de pago excluídos (visa, paypal, bolbradesco, oxxo...):** Payment methods to be excluded at the time of purchase. [Here are the options](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/payment-methods).
+   * **Tipos de pagamento excluídos - Tipos de pago excluidos (credit_card, bank_transfer, ticket...):** Payment types to be excluded at the time of purchase. [Here are the options](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/payment-methods).
+   * **Modo de processamento - Modo de procesamiento** Configure if the payment will be gateway of aggregator.
+   * **Integrator ID:** Para programadores o agencias que realizan la integración.
+   * **Moeda - Moneda:** Currency to be configured (USD or Local).
 5. Click on **Save**.
 
 And that's it! Your affiliation with MercadoPagoV2 is already active!

@@ -11,7 +11,6 @@ Este documento contém os métodos e tipos de pagamento disponíveis para sua in
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro e MercadoPagoWallet|
 |Mastercard|`master`|`credit_card`|Mastercard, MercadoPagoPro e MercadoPagoWallet|
 |American Express|`amex`|`credit_card`|American Express, MercadoPagoPro e MercadoPagoWallet|
-|Naranja|`naranja`|`credit_card`|Naranja, MercadoPagoPro e MercadoPagoWallet|
 |Tarjeta Shopping|`tarshop`|`credit_card`|Shopping, MercadoPagoPro e MercadoPagoWallet|
 |Cabal|`cabal`|`credit_card`|Cabal, MercadoPagoPro e MercadoPagoWallet|
 |Diners|`diners`|`credit_card`|Diners, MercadoPagoPro e MercadoPagoWallet|
@@ -32,8 +31,6 @@ Este documento contém os métodos e tipos de pagamento disponíveis para sua in
 |American Express|`amex`|`credit_card`|American Express, MercadoPagoPro e MercadoPagoWallet|
 |Elo|`elo`|`credit_card`|Elo, MercadoPagoPro e MercadoPagoWallet|
 |Hipercard|`hipercard`|`credit_card`|Hipercard, MercadoPagoPro e MercadoPagoWallet|
-|Cartão de débito Caixa (bandeira Visa)|`debvisa`|`debit_card`|Cartão de débito virtual Caixa, MercadoPago Pro e MercadoPagoWallet|
-|Cartão de débito Caixa (bandeira Elo)|`debelo`|`debit_card`|Cartão de débito virtual Caixa, MercadoPago Pro e MercadoPagoWallet|
 |PEC|`pec`|`ticket`|MercadoPagoPro e MercadoPagoOff|
 |Boleto|`bolbradesco`|`ticket`|Boleto Bancário, MercadoPagoPro e MercadoPagoOff|
 |Pix|`pix`|`bank_transfer`|Pix e MercadoPagoPro|

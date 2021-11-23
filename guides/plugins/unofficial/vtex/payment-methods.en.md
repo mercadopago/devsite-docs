@@ -11,7 +11,6 @@ This document contains the means and types of payment available for your integra
 |Visa|`Visa`|`credit_card`|Visa, MercadoPagoPro and MercadoPagoWallet|
 |Mastercard|`master`|`credit_card`|Mastercard, MercadoPagoPro and MercadoPagoWallet|
 |American Express|`amex`|`credit_card`|American Express, MercadoPagoPro and MercadoPagoWallet|
-|Naranja|`naranja`|`credit_card`|Naranja, MercadoPagoPro and MercadoPagoWallet|
 |Tarjeta Shopping|`tarshop`|`credit_card`|Shopping, MercadoPagoPro and MercadoPagoWallet|
 |Cabal|`cabal`|`credit_card`|Cabal, MercadoPagoPro and MercadoPagoWallet|
 |Diners|`diners`|`credit_card`|Diners, MercadoPagoPro and MercadoPagoWallet|
@@ -32,8 +31,6 @@ This document contains the means and types of payment available for your integra
 |American Express|`amex`|`credit_card`|American Express, MercadoPagoPro and MercadoPagoWallet|
 |Elo|`elo`|`credit_card`|Elo, MercadoPagoPro y MercadoPagoWallet|
 |Hipercard|`hipercard`|`credit_card`|Hipercard, MercadoPagoPro y MercadoPagoWallet|
-|Caixa debit card (Visa brand)|`debvisa`|`debit_card`|Caixa virtual debit card, MercadoPago Pro and MercadoPagoWallet|
-|Caixa debit card (Elo brand)|`debelo`|`debit_card`|Caixa virtual debit card, MercadoPago Pro and MercadoPagoWallet|
 |PEC|`pec`|`ticket`|MercadoPagoPro and MercadoPagoOff|
 |Boleto|`bolbradesco`|`ticket`|Boleto Bancário, MercadoPagoPro and MercadoPagoOff|
 |Pix|`pix`|`bank_transfer`|Pix and MercadoPagoPro|
