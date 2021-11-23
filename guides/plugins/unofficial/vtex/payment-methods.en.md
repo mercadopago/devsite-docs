@@ -1,6 +1,6 @@
 # Payment types and methods
 
-When [registering gateway affiliations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/gateway-affiliations), you will indicate the payment methods and types you wish to exclude by filling in the `Excluded payment methods` and `Excluded payment types` fields, respectively.
+When [registering gateway affiliations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/gateway-affiliations), you will be able to indicate the payment methods and types you wish to exclude by filling in the `Excluded payment methods` and `Excluded payment types` fields, respectively.
 
 This document contains the means and types of payment available for your integration.
 

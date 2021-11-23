@@ -8,20 +8,18 @@ After you have created your affiliation with **MercadoPagoV2**, you must configu
 >
 > Important
 >
-> Verify in your VTEX application store that the App **Mercado Pago Payment APP** has been installed to use the **MercadoPagoPro, MercadoPagoWallet and MercadoPagoOff**  payment conditions, or request its installation by the VTEX team through a ticket in [VTEX Support](https://help.vtex.com/en/support).
+> Verify in your VTEX application store that the App **Mercado Pago Payment APP** has been installed to use the **MercadoPagoPro, MercadoPagoWallet and MercadoPagoOff**  payment conditions, or request its installation by the VTEX team through [VTEX Support](https://help.vtex.com/en/support).
 
-The configuration of **payment conditions** is done in the **Payment conditions** tab of the **Settings** menu in the **Payments** module in the VTEX platform administrator portal.
+The configuration of payment conditions is done in the **Payment conditions** tab of the **Settings** menu in the **Payments** module in the VTEX platform administrator portal. In this tab, you must click on the "+" button (*Add new payment condition for ...*) and select on eof the following payment conditions:
 
-In this tab, you must click on the "+" button (*Add new payment condition for ...*) and select on eof the following payment conditions:
-
-* **Credit Card:** this referers to credit card transactions. Configuring payment conditions with **credit card** requires that you select the credit card brand that you wish to add. [Click here to see what credit card brands you can select](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/payment-methods). In addition, its configuration may require you to complete additional fields to those presented above, depending on whether you select **Prepaid in full** or **In Installments**. For more information on how to configure installments in VTEX, click [here](https://help.vtex.com/en/tutorial/condicoes-de-pagamento--tutorials_455#parcelado-sem-juros).
-* **Debit Card:** his referers to debit card transactions.
-* **Other:** this may refer to transactions with  **MercadoPagoOff**, **MercadoPagoWallet**, or **MercadoPagoPro**.
-  * If you configure **MercadoPagoPro**, the buyer will pay in the Mercado Pago environment through the modal web form directly in your store.
-  * If you configure **MercadoPagoWallet**, the buyer completes the payment with the Mercado Pago wallet exclusively for registered users, and once the process is finished, they will return to your store.
-  * If you configure **MercadoPagoOff**, you will have access to Boleto Bancário and Payments with PEC (lottery shops), using your MercadoPagoV2 affiliation.  ----[mlb]----
-* **Boleto Bancário:** this refers to boleto bancário transactions.
-* **Pix:** This refers to Pix transactions. To configure Pix in your integration with Mercado Pago, it is necessary for your Pix key to be configured as well. For more information on how to create your Pix key, click [here](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required). If you already have your Pix key, the process follows the steps common to the other payment plans. ------------
+* **Credit Card:** this refers to credit card transactions directly on your store's website. This setup requires you to select each credit card brand that you want in your store. [Click here to see what credit card brands you can select](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/payment-methods). In addition, your configuration may require you to fill in additional fields depending on the payment terms you select (Cash or Installments). For more information on how to configure installments in VTEX, click [here](https://help.vtex.com/en/tutorial/condicoes-de-pagamento--tutorials_455#parcelado-sem-juros). ----[mla, mlu, mlc, mlm, mpe, mco]----
+* **Debit Card:** this referers to debit card transactions. ------------
+* **Other:** this refers to transactions with  **MercadoPagoOff**, **MercadoPagoWallet**, or **MercadoPagoPro**.
+  * If you configure **MercadoPagoPro**, the buyer will make the payment in the Mercado Pago environment, via a form presented directly in their store and will have access to all payment methods available on the platform.
+  * If you configure **MercadoPagoWallet**, the buyer will use their Mercado Pago wallet. This mode is exclusive to buyers registered in Mercado Pago or Mercado Libre and we suggest using it if you select **Credit Card Payment Condition**.
+  * If you configure **MercadoPagoOff**, you can use means of payment in cash, such as Boleto Bancário and PEC (payments at lottery outlets).  ----[mlb]----
+* **Boleto Bancário:** this refers to boleto bancário transactions **exclusively**.
+* **Pix:** This refers to transactions with Pix via **QR Code** or **Copy and Paste**. To configure this payment condition, you must have a Pix key registered in your Mercado Pago account. For more information on creating your Pix key, click [here](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required). ------------
 
 ![Configure payment plans](/images/vtex/paymentconditions-en.gif)
 

@@ -9,7 +9,7 @@ Con esto, es posible decidir por qué gateway de pagos se procesarán los difere
 
 ----[mlb]----
 
-La afiliación MercadoPagoV2 procesa los planes de pago con Tarjeta de Crédito, Tarjeta de Débito, Boleto Bancário, Pix, Mercado Pago Offline y Checkout Pro.
+La afiliación MercadoPagoV2 procesa los planes de pago con Tarjeta de Crédito, Boleto Bancário, Pix, Mercado Pago Offline y Checkout Pro.
 
 ------------
 
@@ -38,16 +38,16 @@ Para crear una **afiliación de gateway de pago con MercadoPagoV2**, sigue los p
 3. Haz clic en el conector **MercadoPagoV2**.
 4. Completa los campos correspondientes: 
    * **Application Key:** Se refiere a tus [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) de Mercado Pago. Completa con tu Public Key.
-   * **Application Token:**Se refiere a tus [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) de Mercado Pago. Completa con tu Access Token.
-   * **Prazo de vencimento do boleto - Periodo de vencimiento del ticket:** Plazo, en días hábiles, para el vencimiento del ticket. Si el cliente paga fuera de plazo, el dinero se depositará en su propia cuenta de Mercado Pago.
+   * **Application Token:** Se refiere a tus [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) de Mercado Pago. Completa con tu Access Token.
+   * **Prazo de vencimento do boleto - Periodo de vencimiento del ticket:** Plazo, en días hábiles, para el vencimiento de la orden de compra. También definirá el plazo del método de pago. Si el cliente paga fuera de plazo, el dinero se depositará en su cuenta de Mercado Pago.
    * **Nome da loja - Nombre para resúmenes:** Nombre de la tienda. El valor de este campo aparecerá en la factura de la tarjeta del cliente.
    * **Parcelamento máximo - Cuotas máximas** Número máximo de cuotas disponibles.
    * **Categoría principal da loja - Categoría principal de la tienda:** Categoría de la tienda.
    * **Reembolso automático / manual:** Selecciona si deseas que Mercado Pago reembolse automáticamente en caso de cancelación o si deseas retener el monto pagado para que el cliente lo use en futuras compras.
    * **Modo binário - binário:** Configura si el pago puede pasar por revisión manual o no.
-   * **Métodos de pagamento excluídos - Métodos de pago excluídos (visa, paypal, bolbradesco, oxxo...):** Métodos de pago que se excluirán en el momento de la compra. [Mira las opciones aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/payment-methods).
-   * **Tipos de pagamento excluídos - Tipos de pago excluidos (credit_card, bank_transfer, ticket...):** Tipos de pago que se excluirán en el momento de la compra. [Mira las opciones aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/payment-methods).
-   * **Modo de processamento - Modo de procesamiento** Configura si el pago será gateway o agregador.
+   * **Métodos de pagamento excluídos - Métodos de pago excluídos (visa, paypal, bolbradesco, oxxo...):** Métodos de pago que se excluirán en el momento de la compra. [Mira las opciones aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/payment-methods). Aplicable solo para MercadoPagoPRO, MercadoPagoWallet y MercadoPAgoOff.
+   * **Tipos de pagamento excluídos - Tipos de pago excluidos (credit_card, bank_transfer, ticket...):** Tipos de pago que se excluirán en el momento de la compra. [Mira las opciones aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/payment-methods). Aplicable solo para MercadoPagoPRO, MercadoPagoWallet y MercadoPAgoOff.
+   * **Modo de processamento - Modo de procesamiento** Configura si el pago será gateway o agregador. Para procesar pagos en modo Gateway, comunícate con tu Asesor de Mercado Pago.
    * **Integrator ID:** Para programadores o agencias que realizan la integración.
    * **Moeda - Moneda:** Moneda a configurar (USD o Local).
 5. Haz clic en **Salva**.
