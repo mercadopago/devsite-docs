@@ -5,9 +5,9 @@ Para configurar as notificações Webhooks que você quiser receber através de 
 ## Configuração pelo painel
 
 1. Primeiramente, uma aplicação deverá ser criada em seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel).
-2. Caso seja necessário indentificar múltiplas contas, no final da URL indicada você poderá indicar o parâmetro `?cliente=(nomedovendedor) endpoint` para indentificar os vendedores.
+2. Caso seja necessário identificar múltiplas contas, no final da URL indicada você poderá indicar o parâmetro `?cliente=(nomedovendedor) endpoint` para identificar os vendedores.
 3. Com a aplicação criada, acesse a aba Notificações Webhooks em seu Dashboard e configure as [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) de **produção** e **teste** da qual serão recebidas as notificações.
-4. Em seguida, selecione os **eventos** dos quais você receberá notificações em formato `jason` através de um `HTTP POST` para a URL especificada anteriormente. Veja na tabela abaixo os eventos que poderão ser configurados.
+4. Em seguida, selecione os **eventos** dos quais você receberá notificações em formato `json` através de um `HTTP POST` para a URL especificada anteriormente. Um evento é qualquer tipo de atualização no objeto relatado, incluindo alterações de status ou atributo. Veja na tabela abaixo os eventos que poderão ser configurados.
 
 | Tipo de notificação | Ação | Descrição |
 | :--- | :--- | :--- |
@@ -93,7 +93,8 @@ payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmou
        .setToken(request.getParameter("token"))
        .setDescription(request.getParameter("description"))
        .setInstallments(Integer.valueOf(request.getParameter("installments")))
-       .setPaymentMethodId(request.getParameter("paymentMethodId"));
+       .setPaymentMethodId(request.getParameter("paymentMethodId"))
+       .setNotificationUrl: "http://requestbin.fullcontact.com/1ogudgk1";
 
 Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
 identification.setType(request.getParameter("docType"))
@@ -103,7 +104,6 @@ identification.setNumber(request.getParameter("docNumber"));------------
 Payer payer = new Payer();
 payer.setEmail(request.getParameter("email"))
      .setIdentification(identification);
-notification_url: "http://requestbin.fullcontact.com/1ogudgk1",
      
 payment.setPayer(payer);
 
@@ -154,7 +154,7 @@ var paymentRequest = new PaymentCreateRequest
     Description = Request["description"],
     Installments = int.Parse(Request["installments"]),
     PaymentMethodId = Request["paymentMethodId"],
-    Notification_url = Request["http://requestbin.fullcontact.com/1ogudgk1"],
+    NotificationUrl = "http://requestbin.fullcontact.com/1ogudgk1",
 
     Payer = new PaymentPayerRequest
     {
@@ -183,6 +183,7 @@ payment_data = {
     "description": request.POST.get("description"),
     "installments": int(request.POST.get("installments")),
     "payment_method_id": request.POST.get("payment_method_id"),
+    "notification_url" =  "http://requestbin.fullcontact.com/1ogudgk1",
     "payer": {
         "email": request.POST.get("email"),
         "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
@@ -194,7 +195,6 @@ payment_data = {
 
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
-notification_url =  "http://requestbin.fullcontact.com/1ogudgk1"
 
 print(payment)
 ```
