@@ -406,8 +406,6 @@ _Haz clic en el link dentro de tu sitio y [prueba la integración de tu Checkout
 
 ---
 
-### Próximos pasos
-
 > PREV_STEP_CARD_ES
 >
 > Prueba tu integración
