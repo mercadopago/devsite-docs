@@ -119,7 +119,6 @@ identification.setNumber(request.getParameter("docNumber"));------------
 Payer payer = new Payer();
 payer.setEmail(request.getParameter("email"))
      .setIdentification(identification);
-notification_url: "http://requestbin.fullcontact.com/1ogudgk1",
      
 payment.setPayer(payer);
 
