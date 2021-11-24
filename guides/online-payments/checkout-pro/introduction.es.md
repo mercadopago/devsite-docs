@@ -69,8 +69,6 @@ Checkout Pro es la integración que **te permite cobrar a través de nuestro for
  
 ---
 
-### Próximos pasos
-
 > NEXT_STEP_CARD_ES
 >
 > Requisitos para integrar
