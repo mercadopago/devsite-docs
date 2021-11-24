@@ -1,6 +1,6 @@
 # PrestaShop
  
-> NOTE
+> WARNING
 >
 > Protect your integration!
 >
@@ -16,10 +16,6 @@ There is also possibility to use the [Custom Checkout](https://www.mercadopago[F
  
 Another feature of the integration is the possibility to activate binary mode, a feature that allows you to configure the automatic approval or rejection of payments. In addition, users will also be able to pay in your store without being obligatorily registered with Mercado Pago.
  
-> NOTE
->
-> Important
->
 > All our payment solutions have an open source license. Do you want to participate in the creation? [Suggest improvements and edits on Github](https://github.com/mercadopago/cart-prestashop-7).
  
 > LEFT_BUTTON_REQUIRED_EN
