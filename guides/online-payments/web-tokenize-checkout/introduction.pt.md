@@ -13,7 +13,7 @@
 > <br>
 > Tokenização é o processo pelo qual se criptografa de maneira segura um cartão de crédito.
 
-Com o *Web Tokenize Checkout* do **Mercado Pago** esqueça a complexidade para estruturar um formulário de seleção de cartões e tokenização. Esta integração simples lhe proporcionará um formulário com design e front-end pronto.
+Com o *Web Tokenize Checkout* do **Mercado Pago** esqueça a complexidade para estruturar um formulário de seleção de cartões e tokenização. Essa integração simples lhe disponibilizará um formulário com design e front-end pronto.
 
 Integre o  *Web Tokenize Checkout* em seu site para oferecer aos seus compradores uma experiência estilosa que o **Mercado Pago** mantém em melhoria contínua.
 
