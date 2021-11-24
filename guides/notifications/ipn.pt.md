@@ -59,7 +59,7 @@ Para configurar as notificações IPN que você quiser receber através de um `H
 ?>
 ```
  
-4. Feitas as configurações, o Mercado Pago informará essa URL (quando um recurso for criado, quando houver atualização do status dos pagamentos ou dos pedidos) com dois parâmetros, sendo:
+4. Feitas as configurações, o Mercado Pago notificará esse URL com dois parâmetros a cada vez que um recurso for criado, ou atualizado:
  
 | Campo | Descrição |
 | --- | --- |
@@ -161,6 +161,6 @@ Depois de dar um retorno à notificação, você obterá as informações comple
 | --- | --- | --- |
 | payment | `https://api.mercadopago.com/v1/payments/[ID]` | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get) |
 | chargebacks | `https://api.mercadopago.com/v1/chargebacks/[ID]` | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_chargebacks_id/get) |
-| merchant_orders | `https://api.mercadopago.com/merchant\_orders/[ID]` | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/merchant_orders/_merchant_orders_id/get) |
+| merchant_orders | `https://api.mercadopago.com/merchant_orders/[ID]` | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/merchant_orders/_merchant_orders_id/get) |
 
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma como, por exemplo, atualizar um pagamento aprovado o um pedido fechado
