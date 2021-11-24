@@ -10,12 +10,6 @@
 
 For more information about the benefits, taxes, terms, and types of checkout available, access the [WooCommerce with Mercado Pago page](https://www.mercadopago.com.br/ferramentas-para-vender/link-de-pagamento-plugins-checkout/plugins/vender-woocommerce?utm_experiment=optimize&matt_tool=10047855&matt_word=MLB_MP_G_AO_OP_COW_SEARCH_SELL_TXS_Checkout-WooCommerce-Branded&gclid=Cj0KCQjw6s2IBhCnARIsAP8RfAjJHJVBE0is6oJv5K3_v9qiv44mYs52j7TlFtAMe2AVWKoJ-DAga_4aAuH7EALw_wcB).
 
-> WARNING
->
-> Important announcement
->
-> On July 13th, 2021, WooCommerce notified its customers that some of its versions were vulnerable. The necessary fixes were already made in the last update. Therefore, it is very important that your store is updated to the latest version of WooCommerce to prevent exposing sensitive information. For more information, see the [WooCommerce blog](https://woocommerce.com/pt-br/posts/critical-vulnerability-detected-july-2021).
-
 In this documentation, we will detail all the necessary steps to integrate Mercado Pago with WooCommerce. 
 
 To complete the integration, follow the steps below, but remember to check the prerequisites before starting.
