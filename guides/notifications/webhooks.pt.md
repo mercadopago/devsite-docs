@@ -1,13 +1,18 @@
-# Notificações Webhooks
+# Webhook
 
-Para configurar as notificações Webhooks que você quiser receber através de um `HTTP POST` toda vez que houver um evento relacionado a suas transações, siga as informações abaixo.
+O Webhook (também conhecido como retorno de chamada web) é um método simples que facilita com que um app ou sistema forneça informações em tempo real sempre que um evento acontece, ou seja, é um modo de receber dados entre dois sistemas de forma passiva através de um `HTTP POST`. 
 
-## Configuração pelo painel
+As notificações Webhook poderão ser configuradas para uma ou mais aplicações criadas em seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel).
 
-1. Primeiramente, uma aplicação deverá ser criada em seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel).
-2. Caso seja necessário identificar múltiplas contas, no final da URL indicada você poderá indicar o parâmetro `?cliente=(nomedovendedor) endpoint` para identificar os vendedores.
-3. Com a aplicação criada, acesse a aba Notificações Webhooks em seu Dashboard e configure as [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) de **produção** e **teste** da qual serão recebidas as notificações.
-4. Em seguida, selecione os **eventos** dos quais você receberá notificações em formato `json` através de um `HTTP POST` para a URL especificada anteriormente. Um evento é qualquer tipo de atualização no objeto relatado, incluindo alterações de status ou atributo. Veja na tabela abaixo os eventos que poderão ser configurados.
+Uma vez configurado, o Webhook será enviado sempre que ocorrer um ou mais eventos cadastrados, evitando que haja um trabalho de pesquisa a cada minuto em busca de uma resposta e, por consequência, que ocorra uma sobrecarga do sistema e a perda de dados sempre que houver alguma situação.
+
+Você pode configurar de duas formas as notificações Webhooks que você irá receber toda vez que houver um evento relacionado a suas transações, sendo: através do Dashboard ou durante a criação de pagamentos.
+
+## Configuração através do Dashboard
+
+1. Primeiramente, uma aplicação deverá ser criada em seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
+2. Com a aplicação criada, acesse a aba Notificações Webhooks em seu Dashboard e configure as [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) de **produção** e **teste** da qual serão recebidas as notificações. Caso seja necessário identificar múltiplas contas, no final da URL indicada você poderá indicar o parâmetro `?cliente=(nomedovendedor) endpoint` para identificar os vendedores.
+3. Em seguida, selecione os **eventos** dos quais você receberá notificações em formato `json` através de um `HTTP POST` para a URL especificada anteriormente. Um evento é qualquer tipo de atualização no objeto relatado, incluindo alterações de status ou atributo. Veja na tabela abaixo os eventos que poderão ser configurados.
 
 | Tipo de notificação | Ação | Descrição |
 | :--- | :--- | :--- |
@@ -21,7 +26,7 @@ Para configurar as notificações Webhooks que você quiser receber através de 
 
 ![webhook](/images/notifications/webhook_pt.png)
 
-## Configuração na criação do pagamento
+## Configuração durante a criação de pagamentos
 
 Caso a integração necessite que seja enviada uma notificação para mais de um lugar em uma mesma aplicação, veja no passo a passo abaixo como utilizar os SDKs para configurar a notificação quando fizer o POST do pagamento.
 

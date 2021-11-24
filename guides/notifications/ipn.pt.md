@@ -1,8 +1,12 @@
-# Notificações IPN
- 
-Para configurar as notificações IPN que você quiser receber através de um `HTTP POST` toda vez que houver um evento relacionado a suas transações, siga as informações abaixo.
+# IPN
 
-## Configuração pelo painel
+O [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn) (_Instant Payment Notification_) é um mecanismo que permite que sua aplicação receba notificações do Mercado Pago informando o estado de um determinado pagamento, chargeback e merchant_order, mediante uma chamada `HTTP POST` para informar sobre suas transações. 
+
+Nas notificações por IPN poderá ser configurada apenas uma URL de notificação por conta (dependendo da aplicação, mais de uma aplicação pode usar essa URL). Além disso, também há a possibilidade de utilizar esse tipo de notificação a partir do campo `notification_url` do objeto, dessa forma a URL poderá ser diferente pra cada objeto ou aplicação.
+ 
+Você pode configurar as notificações IPN que você quiser receber toda vez que houver um evento relacionado a suas transações de duas formas: através do Dashboard ou durante a criação de pagamentos.
+
+## Configuração pelo Dashboard
  
 1. Clique na seta ao lado de sua conta para acessar a tela de [Notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
 2. Em seguida, configure o **URL** de **produção** no qual serão recebidas as notificações.
@@ -60,7 +64,7 @@ Para configurar as notificações IPN que você quiser receber através de um `H
 | `topic` | Identifica do que se trata o recurso, podendo ser `payment`, `chargebacks` ou `merchant_order `. |
 | `id` | É um identificador único do recurso notificado. |
  
-**Exemplo**: Se configurar a URL: `https://www.yoursite.com/notifications`, você receberá as notificações de pagamento desta maneira: `https://www.yoursite.com/notifications?topic=payment&id=123456789`.
+Por exemplo, se configurar a URL: `https://www.yoursite.com/notifications`, você receberá as notificações de pagamento desta maneira: `https://www.yoursite.com/notifications?topic=payment&id=123456789`.
  
 ## Notificações para pagamentos presenciais
  
