@@ -292,7 +292,7 @@ Retorno:
 >
 >Importante
 >
-> Ao abrir o tokenizer em uma nova aba, os URLs definidos em `backURLs` não são considerados e o usuário não retorna ao site, mas está em estado "em processamento".
+> Ao abrir o tokenizer em uma nova aba, os URLs definidos em `backURLs` não são considerados e o usuário não retorna ao site, mas o pagamento ficará com status de "em processamento".
 
 ### Cartões de teste
 
