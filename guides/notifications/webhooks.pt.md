@@ -205,6 +205,7 @@ payment_data = {
     "description": request.POST.get("description"),
     "installments": int(request.POST.get("installments")),
     "payment_method_id": request.POST.get("payment_method_id"),
+    "notification_url" =  "http://requestbin.fullcontact.com/1ogudgk1",
     "payer": {
         "email": request.POST.get("email"),
         "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
