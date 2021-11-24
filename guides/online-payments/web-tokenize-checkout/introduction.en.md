@@ -28,9 +28,7 @@ The sensitive data of the credit and debit cards are encrypted and stored by **M
 > 
 > Web Tokenize Checkout is only used with credit and debit cards.
 > <br>
-> If you want to implement using account money, access this [documentation](https://dev.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/advanced-integration).
-> <br>
-> If you want to implement cash payments, access this [documentation](https://dev.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways).
+> If you wish to integrate other payment methods, click [here](https://dev.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways).
 
 ------------
 
@@ -42,9 +40,7 @@ The sensitive data of the credit and debit cards are encrypted and stored by **M
 > 
 > Web Tokenize Checkout is only used with credit card.
 > <br>
-> If you want to implement using account money, access this[documentation](https://dev.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/advanced-integration).
-> <br>
-> If you want to implement cash payments, access this [documentation](https://dev.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways).
+> If you wish to integrate other payment methods, click [here](https://dev.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways).
 
 ------------
 

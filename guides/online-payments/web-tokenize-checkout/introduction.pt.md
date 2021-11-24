@@ -27,9 +27,7 @@ Os dados sensíveis dos cartões de crédito e débito são criptografados e arm
 > 
 > Web Tokenize Checkout é usado apenas para cartões de crédito e débito.
 > <br>
-> Se você deseja implementar dinheiro na conta, acesse esta [documentação](https://dev.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/advanced-integration).
-> <br>
-> Se você deseja implementar pagamentos em dinheiro, acesse esta [documentação](https://dev.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways).
+> Se você deseja integrar outros meios de pagamento, clique [aqui](https://dev.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways).
 
 ------------
 
@@ -41,9 +39,7 @@ Os dados sensíveis dos cartões de crédito e débito são criptografados e arm
 > 
 > Web Tokenize Checkout é usado apenas para cartões de crédito.
 > <br>
-> Se você deseja implementar dinheiro na conta, acesse esta [documentação](https://dev.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/advanced-integration).
-> <br>
-> Se você deseja implementar pagamentos em dinheiro, acesse esta [documentação](https://dev.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways).
+> Se você deseja integrar outros meios de pagamento, clique [aqui](https://dev.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways).
 
 ------------
 
