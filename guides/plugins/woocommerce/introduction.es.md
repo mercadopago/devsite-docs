@@ -10,12 +10,6 @@
 
 Para obtener más información sobre los beneficios, tarifas, términos y tipos de pago disponibles, visita la página [WooCommerce con Mercado Pago](https://www.mercadopago.com.br/ferramentas-para-vender/link-de-pagamento-plugins-checkout/plugins/vender-woocommerce?utm_experiment=optimize&matt_tool=10047855&matt_word=MLB_MP_G_AO_OP_COW_SEARCH_SELL_TXS_Checkout-WooCommerce-Branded&gclid=Cj0KCQjw6s2IBhCnARIsAP8RfAjJHJVBE0is6oJv5K3_v9qiv44mYs52j7TlFtAMe2AVWKoJ-DAga_4aAuH7EALw_wcB). 
 
-> WARNING
->
-> Aviso importante
->
-> El 13 de julio del 2021, WooCommerce notificó a sus clientes que algunas de sus versiones resultan vulnerables. Las correcciones necesarias ya se han realizado en la última actualización. Por lo tanto, es **muy importante que tu tienda tenga la última versión de WooCommerce actualizada** para evitar la exposición de información sensible. Para más información, consulta el [blog de WooCommerce](https://woocommerce.com/pt-br/posts/critical-vulnerability-detected-july-2021).
-
 En esta documentación, detallaremos todos los pasos necesarios para integrar Mercado Pago con WooCommerce. 
 
 Para completar la integración, sigue los pasos a continuación, pero recuerda verificar los requisitos previos antes de empezar.

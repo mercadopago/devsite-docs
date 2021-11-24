@@ -1,6 +1,6 @@
 # PrestaShop
 
-> NOTE
+> WARNING
 >
 > Proteja a sua integração!
 >
@@ -16,10 +16,6 @@ Também há possibilidade de utilizar o [Checkout Transparente](https://www.merc
  
 Uma outra característica da integração é a possibilidade de ativação do modo binário, um recurso que permite configurar a aprovação ou a recusa automática de pagamentos. Além disso, os usuários também poderão pagar na sua loja sem estarem obrigatoriamente cadastrados no Mercado Pago.
  
-> NOTE
->
-> Importante
->
 > Todas as nossas soluções de pagamento contam com uma licença de código aberto. Quer participar da criação? [Sugira melhorias e edições no Github](https://github.com/mercadopago/cart-prestashop-7).
  
 > LEFT_BUTTON_REQUIRED_PT
