@@ -59,7 +59,7 @@ Para configurar as notificações IPN que você quiser receber através de um `H
 ?>
 ```
  
-4. Feitas as configurações, o Mercado Pago informará essa URL (quando um recurso for criado, quando houver atualização do status dos pagamentos ou dos pedidos) com dois parâmetros, sendo:
+4. Feitas as configurações, o Mercado Pago notificará esse URL com dois parâmetros a cada vez que um recurso for criado, ou atualizado:
  
 | Campo | Descrição |
 | --- | --- |
