@@ -173,7 +173,7 @@ var paymentRequest = new PaymentCreateRequest
     Description = Request["description"],
     Installments = int.Parse(Request["installments"]),
     PaymentMethodId = Request["paymentMethodId"],
-    Notification_url = Request["http://requestbin.fullcontact.com/1ogudgk1"],
+    NotificationUrl = "http://requestbin.fullcontact.com/1ogudgk1",
 
     Payer = new PaymentPayerRequest
     {
