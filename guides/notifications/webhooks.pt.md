@@ -108,7 +108,8 @@ payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmou
        .setToken(request.getParameter("token"))
        .setDescription(request.getParameter("description"))
        .setInstallments(Integer.valueOf(request.getParameter("installments")))
-       .setPaymentMethodId(request.getParameter("paymentMethodId"));
+       .setPaymentMethodId(request.getParameter("paymentMethodId"))
+       .setNotificationUrl: "http://requestbin.fullcontact.com/1ogudgk1";
 
 Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
 identification.setType(request.getParameter("docType"))
