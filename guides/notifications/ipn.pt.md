@@ -8,12 +8,6 @@ Para configurar as notificações IPN que você quiser receber através de um `H
 2. Em seguida, configure o **URL** de **produção** no qual serão recebidas as notificações.
 3. Caso seja necessário indentificar múltiplas contas, no final da URL indicada você poderá indicar o parâmetro `?cliente=(nomedovendedor) endpoint` para indentificar os vendedores.
 4. Selecione os **eventos** dos quais você receberá notificações em formato `json` utilizando `HTTP POST` para a URL especificada anteriormente. Notificamos eventos relacionados aos seus pedidos (`merchant_orders`), estornos recebidos (`chargebacks`) ou pagamentos recebidos (`payment`).
- 
-> NOTE
->
-> Importante
->
-> Um evento é qualquer tipo de atualização no objeto relatado, incluindo alterações de status ou atributo.
 
 ![ipn](/images/notifications/ipn_pt.png)
  
@@ -155,7 +149,7 @@ Quando você recebe uma notificação na sua plataforma, o Mercado Pago aguarda 
 >
 > Se os prazos de resposta forem excedidos, é possível receber notificações duplicadas de um evento.
 
-Depois de dar um retorno à notificação, você obterá as informações completas do recurso notificado acessando o terminal correspondente da [API](https://api.mercadopago.com/):
+Depois de dar um retorno à notificação, você obterá as informações completas do recurso notificado acessando o terminal correspondente da API:
 
 | Tipo | URL | Documentação |
 | --- | --- | --- |

@@ -7,7 +7,7 @@ Para configurar as notificações Webhooks que você quiser receber através de 
 1. Primeiramente, uma aplicação deverá ser criada em seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel).
 2. Caso seja necessário indentificar múltiplas contas, no final da URL indicada você poderá indicar o parâmetro `?cliente=(nomedovendedor) endpoint` para indentificar os vendedores.
 3. Com a aplicação criada, acesse a aba Notificações Webhooks em seu Dashboard e configure as [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) de **produção** e **teste** da qual serão recebidas as notificações.
-4. Em seguida, selecione os **eventos** dos quais você receberá notificações em formato `jason` através de um `HTTP POST` para a URL especificada anteriormente. Um evento é qualquer tipo de atualização no objeto relatado, incluindo alterações de status ou atributo. Veja na tabela abaixo os eventos que poderão ser configurados.
+4. Em seguida, selecione os **eventos** dos quais você receberá notificações em formato `jason` através de um `HTTP POST` para a URL especificada anteriormente. Veja na tabela abaixo os eventos que poderão ser configurados.
 
 | Tipo de notificação | Ação | Descrição |
 | :--- | :--- | :--- |
@@ -23,13 +23,12 @@ Para configurar as notificações Webhooks que você quiser receber através de 
 
 ## Configuração na criação do pagamento
 
-Caso a integração necessite que seja enviada uma notificação para mais de um lugar em uma mesma aplicação, veja no passo a passo abaixo como utilizar os SDKs para configurar a notificação quando fizer o POST do pagamento
+Caso a integração necessite que seja enviada uma notificação para mais de um lugar em uma mesma aplicação, veja no passo a passo abaixo como utilizar os SDKs para configurar a notificação quando fizer o POST do pagamento.
 
 1. No campo `notificaction_url`, indique a URL da qual serão recebidas as notificações como exemplificado abaixo.
 
 [[[
 ```php
-===
 <?php
     require_once 'vendor/autoload.php';
 
@@ -42,18 +41,8 @@ Caso a integração necessite que seja enviada uma notificação para mais de um
     $payment->installments = (int)$_POST['installments'];
     $payment->payment_method_id = $_POST['paymentMethodId'];
     $payment->issuer_id = (int)$_POST['issuer'];
-    $payment->notification_url = "http://requestbin.fullcontact.com/1ogudgk1";
-
-    $payer = new MercadoPago\Payer();
-    $payer->email = $_POST['email'];
-    $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
-        "type" => $_POST['docType'],------------
-        "number" => $_POST['docNumber']
-    );
-    $payment->payer = $payer;
-
-    $payment->save();
-
+    $payment->notification_url = `"http://requestbin.fullcontact.com/1ogudgk1"`;
+    ...
     $response = array(
         'status' => $payment->status,
         'status_detail' => $payment->status_detail,
@@ -64,8 +53,6 @@ Caso a integração necessite que seja enviada uma notificação para mais de um
 ?>
 ```
 ```node
-===
-
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
 
@@ -99,8 +86,6 @@ mercadopago.payment.save(payment_data)
   });
 ```
 ```java
-===
-
 MercadoPago.SDK.setAccessToken("YOUR_ACCESS_TOKEN");
 
 Payment payment = new Payment();
@@ -128,7 +113,6 @@ System.out.println(payment.getStatus());
 
 ```
 ```ruby
-===
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
 
@@ -155,9 +139,6 @@ puts payment
 
 ```
 ```csharp
-===
-Encontre o estado do pagamento no campo _status_.
-===
 using System;
 using MercadoPago.Client.Common;
 using MercadoPago.Client.Payment;
@@ -193,9 +174,6 @@ Console.WriteLine(payment.Status);
 
 ```
 ```python
-===
-Encontre o estado do pagamento no campo _status_.
-===
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
 
@@ -221,8 +199,6 @@ notification_url =  "http://requestbin.fullcontact.com/1ogudgk1"
 print(payment)
 ```
 ```curl
-===
-
 curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
@@ -311,7 +287,7 @@ Quando você recebe uma notificação na sua plataforma, o Mercado Pago aguarda 
 >
 > Se os prazos de resposta forem excedidos, é possível receber notificações duplicadas de um evento.
 
-Depois de dar um retorno à notificação, você obterá as informações completas do recurso notificado acessando o terminal correspondente da [API](https://api.mercadopago.com/):
+Depois de dar um retorno à notificação, você obterá as informações completas do recurso notificado acessando o terminal correspondente da API:
 
 | Tipo | URL | Documentação |
 | --- | --- | --- |
