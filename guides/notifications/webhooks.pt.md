@@ -217,7 +217,6 @@ payment_data = {
 
 payment_response = sdk.payment().create(payment_data)
 payment = payment_response["response"]
-notification_url =  "http://requestbin.fullcontact.com/1ogudgk1"
 
 print(payment)
 ```
