@@ -3,12 +3,12 @@
 O [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn) (_Instant Payment Notification_) é um mecanismo que permite que sua aplicação receba notificações do Mercado Pago informando o estado de um determinado pagamento, chargeback e merchant_order, mediante uma chamada `HTTP POST` para informar sobre suas transações. 
 
 Nas notificações por IPN poderá ser configurada apenas uma URL de notificação por conta (dependendo da aplicação, mais de uma aplicação pode usar essa URL). Além disso, também há a possibilidade de utilizar esse tipo de notificação a partir do campo `notification_url` do objeto, dessa forma a URL poderá ser diferente pra cada objeto ou aplicação.
- 
-Você pode configurar as notificações IPN que você quiser receber toda vez que houver um evento relacionado a suas transações de duas formas: através do Dashboard ou durante a criação de pagamentos.
+
+Nessa documentação explicaremos as configurações necessárias para o recebimento das notificações IPN (através do Dashboard ou durante a criação de pagamentos), além de apresentar quais são as ações necessárias que você deverá ter para que o Mercado Pago valide que as mensagens foram devidamente recebidas.
 
 ## Configuração pelo Dashboard
  
-1. Clique na seta ao lado de sua conta para acessar a tela de [Notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
+1. Acesse a tela de [Notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
 2. Em seguida, configure o **URL** de **produção** no qual serão recebidas as notificações.
 3. Caso seja necessário indentificar múltiplas contas, no final da URL indicada você poderá indicar o parâmetro `?cliente=(nomedovendedor) endpoint` para indentificar os vendedores.
 4. Selecione os **eventos** dos quais você receberá notificações em formato `json` utilizando `HTTP POST` para a URL especificada anteriormente. Notificamos eventos relacionados aos seus pedidos (`merchant_orders`), estornos recebidos (`chargebacks`) ou pagamentos recebidos (`payment`).
@@ -66,92 +66,232 @@ Você pode configurar as notificações IPN que você quiser receber toda vez qu
  
 Por exemplo, se configurar a URL: `https://www.yoursite.com/notifications`, você receberá as notificações de pagamento desta maneira: `https://www.yoursite.com/notifications?topic=payment&id=123456789`.
  
-## Notificações para pagamentos presenciais
- 
-Se você estiver integrando pagamentos presenciais, recomendamos conferir os passos abaixo.
- 
-> WARNING
->
-> Importante
->
-> O Mercado Pago requer a integração de pagamentos presenciais que tiverem aplicada a notificação (IPN) como método principal para a homologação.
- 
-1. Utilize notificações IPN de topic `merchant_order`. Para isso, lembre das seguintes regras:
+## Configuração durante a criação de pagamentos
 
-* O campo `status` da `merchant_order` permanecerá em **opened** quando ainda não tiver pagamentos associados ou tiver pagamentos recusados/aprovados por um valor menor ao total da ordem.
-* O campo `status` da `merchant_order` será **closed** quando a soma dos pagamentos aprovados for igual ou superior ao total da ordem.
+É possível configurar a url de notificação de modo mais específico, para cada pagamento utilizando o campo `notification_url`. Veja abaixo como fazer isso com uso dos SDKs.
 
-2. Dentro da ordem, no objeto payments, você vai encontrar todos os pagamentos dela. É importante obter a ID dos pagamentos com status **approved** para [poder realizar restituições](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds). Quando o `status` da `merchant_order` for **closed**, certifique-se de que a soma dos pagamentos com `status` **approved** seja igual ou maior ao total da ordem.
-3. É necessário aplicar como método de contingência a **pesquisa da ordem** utilizando o seu `external_reference` como critério de pesquisa. A **pesquisa** pode ser realizada por `external_reference` de duas formas:
- 
-| Formas | Descrição |
-| --- | --- |
-| **Manual** | O ponto de venda deve incluir um botão para realizar a pesquisa. |
-| **Automática** | Após um tempo razoável sem ter recebido qualquer notificação, é iniciada uma pesquisa da ordem a cada um intervalo de, por exemplo, 5 segundos. |
- 
-> WARNING
->
-> Importante
->
-> A pesquisa de ordem por `external_reference` somente deverá ser utilizada como contingência caso não se receba notificações.
- 
-```curl
-curl -X GET \
-   -H 'Authorization: Bearer $ACCESS_TOKEN' \
-   https://api.mercadopago.com/merchant_orders?external_reference=$EXTERNAL_REFERENCE
+1. No campo `notificaction_url`, indique a URL da qual serão recebidas as notificações como exemplificado abaixo.
+
+[[[
+```php
+<?php
+    require_once 'vendor/autoload.php';
+
+    MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
+
+    $payment = new MercadoPago\Payment();
+    $payment->transaction_amount = (float)$_POST['transactionAmount'];
+    $payment->token = $_POST['token'];
+    $payment->description = $_POST['description'];
+    $payment->installments = (int)$_POST['installments'];
+    $payment->payment_method_id = $_POST['paymentMethodId'];
+    $payment->issuer_id = (int)$_POST['issuer'];
+    $payment->notification_url = `"http://requestbin.fullcontact.com/1ogudgk1"`;
+    ...
+    $response = array(
+        'status' => $payment->status,
+        'status_detail' => $payment->status_detail,
+        'id' => $payment->id
+    );
+    echo json_encode($response);
+
+?>
 ```
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
 
-4. Por cada escaneamento do QR é gerada uma `merchant_order` diferente. Lembre que caso o cliente faça mais de um escaneamento, uma ordem ficará em **open** por tempo indefinido e, para encerrar a transação, a `merchant_order` deve ter `status` = **closed**. Caso a pesquisa seja realizada **após o escaneamento do QR**, serão obtidos todos os dados referidos à ordem:
- 
-```json
-{
- "id": 1126664483,
- "status": "closed",
- "payments": [
-    {
-     "id": 4996721469,
-     "transaction_amount": 4,
-     "status": "rejected",
-     [...],
-   },
-    {
-     "id": 4996721476,
-     "transaction_amount": 4,
-     "status": "approved",
-     [...], },
+var payment_data = {
+  transaction_amount: Number(req.body.transactionAmount),
+  token: req.body.token,
+  description: req.body.description,
+  installments: Number(req.body.installments),
+  payment_method_id: req.body.paymentMethodId,
+  issuer_id: req.body.issuer,
+  notification_url: "http://requestbin.fullcontact.com/1ogudgk1",
+  payer: {
+    email: req.body.email,
+    identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
+      type: req.body.docType,------------
+      number: req.body.docNumber
+    }
+  }
+};
+
+mercadopago.payment.save(payment_data)
+  .then(function(response) {
+    res.status(response.status).json({
+      status: response.body.status,
+      status_detail: response.body.status_detail,
+      id: response.body.id
+≈    });
+  })
+  .catch(function(error) {
+    res.status(response.status).send(error);
+  });
 ```
- 
-Caso contrário e o QR no qual a ordem foi publicada ainda **não tenha sido escaneado**, a resposta será:
- 
-```json
-{
-  "elements": null,
-  "next_offset": 0,
-  "total": 0
+```java
+MercadoPago.SDK.setAccessToken("YOUR_ACCESS_TOKEN");
+
+Payment payment = new Payment();
+payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmount")))
+       .setToken(request.getParameter("token"))
+       .setDescription(request.getParameter("description"))
+       .setInstallments(Integer.valueOf(request.getParameter("installments")))
+       .setPaymentMethodId(request.getParameter("paymentMethodId"))
+       .setNotificationUrl: "http://requestbin.fullcontact.com/1ogudgk1";
+
+Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
+identification.setType(request.getParameter("docType"))
+              .setNumber(request.getParameter("docNumber"));------------ ----[mlm]----
+identification.setNumber(request.getParameter("docNumber"));------------
+
+Payer payer = new Payer();
+payer.setEmail(request.getParameter("email"))
+     .setIdentification(identification);
+     
+payment.setPayer(payer);
+
+payment.save();
+
+System.out.println(payment.getStatus());
+
+```
+```ruby
+require 'mercadopago'
+sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
+
+payment_data = {
+  transaction_amount: params[:transactionAmount].to_f,
+  token: params[:token],
+  description: params[:description],
+  installments: params[:installments].to_i,
+  payment_method_id: params[:paymentMethodId],
+  notification_url: "http://requestbin.fullcontact.com/1ogudgk1",
+  payer: {
+    email: params[:email],
+    identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
+      type: params[:docType],------------
+      number: params[:docNumber]
+    }
+  }
 }
+
+payment_response = sdk.payment.create(payment_data)
+payment = payment_response[:response]
+
+puts payment
+
 ```
+```csharp
+using System;
+using MercadoPago.Client.Common;
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
+
+MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
+
+var paymentRequest = new PaymentCreateRequest
+{
+    TransactionAmount = decimal.Parse(Request["transactionAmount"]),
+    Token = Request["token"],
+    Description = Request["description"],
+    Installments = int.Parse(Request["installments"]),
+    PaymentMethodId = Request["paymentMethodId"],
+    NotificationUrl = "http://requestbin.fullcontact.com/1ogudgk1",
+
+    Payer = new PaymentPayerRequest
+    {
+        Email = Request["email"],
+        Identification = new IdentificationRequest
+        {----[mla, mlb, mlu, mlc, mpe, mco]----
+            Type = Request["docType"],------------
+            Number = Request["docNumber"],
+        },
+    },
+};
+
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(paymentRequest);
+
+Console.WriteLine(payment.Status);
+
+```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_data = {
+    "transaction_amount": float(request.POST.get("transaction_amount")),
+    "token": request.POST.get("token"),
+    "description": request.POST.get("description"),
+    "installments": int(request.POST.get("installments")),
+    "payment_method_id": request.POST.get("payment_method_id"),
+    "notification_url" =  "http://requestbin.fullcontact.com/1ogudgk1",
+    "payer": {
+        "email": request.POST.get("email"),
+        "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
+            "type": request.POST.get("type"), ------------
+            "number": request.POST.get("number")
+        }
+    }
+}
+
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
+
+print(payment)
+```
+```curl
+curl -X POST \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/payments' \
+    -d '{
+          "transaction_amount": 100,
+          "token": "ff8080814c11e237014c1ff593b57b4d",
+          "description": "Blue shirt",
+          "installments": 1,
+          "payment_method_id": "visa",
+          "issuer_id": 310,
+          "notification_url": "http://requestbin.fullcontact.com/1ogudgk1",
+          "payer": {
+            "email": "test@test.com"
+
+          }
+    }'
+
+```
+]]]
+
+2. Implemente o receptor de notificações usando o seguinte código como exemplo:
+
+```php
+<?php
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+  switch($_POST["type"]) {
+      case "payment":
+          $payment = MercadoPago\Payment::find_by_id($_POST["data"]["id"]);
+          break;
+      case "plan":
+          $plan = MercadoPago\Plan::find_by_id($_POST["data"]["id"]);
+          break;
+      case "subscription":
+          $plan = MercadoPago\Subscription::find_by_id($_POST["data"]["id"]);
+          break;
+      case "invoice":
+          $plan = MercadoPago\Invoice::find_by_id($_POST["data"]["id"]);
+          break;
+  }
+?>
+```
+3. Caso deseje receber notificações apenas de IPN e não de Webhooks, você pode adicionar na `notification_url` o parâmetro `source_news=ipn`. Por exemplo: https://www.yourserver.com/notifications?source_news=ipn
  
 ## Ações necessárias após receber uma notificação
 
-Caso a aplicação não esteja disponível ou demore para responder, o Mercado Pago irá fazer tentativas de notificação nos seguintes intervalos:
-
-| Evento | Prazo após o primeiro envio |
-| --- | --- |
-| Primeira tentativa | 5 minutos |
-| Segunda tentativa | 45 minutos |
-| Terceira tentativa | 6 horas |
-| Quarta tentativa | 2 dias |
-| Quinta tentativa | 4 dias |
-
-Quando você recebe uma notificação na sua plataforma, o Mercado Pago aguarda uma resposta para validar que você a recebeu corretamente. Para isso, você deve retornar um `HTTP STATUS 200 (OK)` ou `201 (CREATED)` e, caso contrário, será entendido que você não o recebeu corretamente e você será notificado novamente.
-
-É recomendável que você responda a notificação antes de executar a lógica de negócios ou antes de acessar recursos externos, a fim de evitar exceder os prazos de resposta estimados. Essa comunicação é exclusiva entre os servidores do Mercado Pago e, portanto, não haverá usuário físico vendo nenhum tipo de resultado.
- 
-> WARNING
->
-> Importante
->
-> Se os prazos de resposta forem excedidos, é possível receber notificações duplicadas de um evento.
+[TXTSNIPPET][/guides/snippets/test-integration/notification-response]
 
 Depois de dar um retorno à notificação, você obterá as informações completas do recurso notificado acessando o terminal correspondente da API:
 

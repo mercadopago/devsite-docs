@@ -6,13 +6,17 @@ As notificações Webhook poderão ser configuradas para uma ou mais aplicaçõe
 
 Uma vez configurado, o Webhook será enviado sempre que ocorrer um ou mais eventos cadastrados, evitando que haja um trabalho de pesquisa a cada minuto em busca de uma resposta e, por consequência, que ocorra uma sobrecarga do sistema e a perda de dados sempre que houver alguma situação.
 
-Você pode configurar de duas formas as notificações Webhooks que você irá receber toda vez que houver um evento relacionado a suas transações, sendo: através do Dashboard ou durante a criação de pagamentos.
+Após receber uma notificação na sua plataforma, o Mercado Pago aguardará uma resposta para validar se você a recebeu corretamente
+
+Nessa documentação explicaremos as configurações necessárias para o recebimento das mensagens (através do Dashboard ou durante a criação de pagamentos), além de apresentar quais são as ações necessárias que você deverá ter para que o Mercado Pago valide que as notificações foram devidamente recebidas.
 
 ## Configuração através do Dashboard
 
-1. Primeiramente, uma aplicação deverá ser criada em seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
-2. Com a aplicação criada, acesse a aba Notificações Webhooks em seu Dashboard e configure as [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) de **produção** e **teste** da qual serão recebidas as notificações. Caso seja necessário identificar múltiplas contas, no final da URL indicada você poderá indicar o parâmetro `?cliente=(nomedovendedor) endpoint` para identificar os vendedores.
-3. Em seguida, selecione os **eventos** dos quais você receberá notificações em formato `json` através de um `HTTP POST` para a URL especificada anteriormente. Um evento é qualquer tipo de atualização no objeto relatado, incluindo alterações de status ou atributo. Veja na tabela abaixo os eventos que poderão ser configurados.
+Veja abaixo como indicar os URLs que serão notificados e configurar quais os eventos dos quais se receberá a notiticação.
+
+1. Primeiramente, uma aplicação deverá ser criada na página inicial de seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
+2. Com a aplicação criada, acesse a aba Notificações Webhooks em seu Dashboard e configure os [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) de **produção** e **teste** da qual serão recebidas as notificações. Caso seja necessário identificar múltiplas contas, no final do URL indicada você poderá indicar o parâmetro `?cliente=(nomedovendedor) endpoint` para identificar os vendedores.
+3. Em seguida, selecione os **eventos** dos quais você receberá notificações em formato `json` através de um `HTTP POST` para o URL especificada anteriormente. Um evento é qualquer tipo de atualização no objeto relatado, incluindo alterações de status ou atributo. Veja na tabela abaixo os eventos que poderão ser configurados.
 
 | Tipo de notificação | Ação | Descrição |
 | :--- | :--- | :--- |
@@ -28,7 +32,7 @@ Você pode configurar de duas formas as notificações Webhooks que você irá r
 
 ## Configuração durante a criação de pagamentos
 
-Caso a integração necessite que seja enviada uma notificação para mais de um lugar em uma mesma aplicação, veja no passo a passo abaixo como utilizar os SDKs para configurar a notificação quando fizer o POST do pagamento.
+É possível configurar a url de notificação de modo mais específico, para cada pagamento utilizando o campo `notification_url`. Veja abaixo como fazer isso com uso dos SDKs.
 
 1. No campo `notificaction_url`, indique a URL da qual serão recebidas as notificações como exemplificado abaixo.
 
@@ -271,28 +275,9 @@ Isso indica que foi criado o pagamento **999999999** para o usuário **44444** e
 
 ## Ações necessárias após receber uma notificação
 
-Caso haja a necessidade de enviar uma notificação, o Mercado Pago enviará de acordo com um cronograma de novas tentativas e prazos para sua confirmação:
+[TXTSNIPPET][/guides/snippets/test-integration/notification-response]
 
-| Evento | Prazo após o primeiro envio | Tempo de espera de confirmação |
-| --- | --- | --- |
-| Envio | - | 22 segundos |
-| Primeira tentativa | 5 minutos | 5 segundos |
-| Segunda tentativa | 45 minutos | 5 segundos |
-| Terceira tentativa | 6 horas | 5 segundos |
-| Quarta tentativa | 2 dias | 5 segundos |
-| Quinta tentativa | 4 dias | 5 segundos |
-
-Quando você recebe uma notificação na sua plataforma, o Mercado Pago aguarda uma resposta para validar que você a recebeu corretamente. Para isso, você deve retornar um `HTTP STATUS 200 (OK)` ou `201 (CREATED)` e, caso contrário, será entendido que você não o recebeu corretamente e você será notificado novamente.
-
-É recomendável que você responda a notificação antes de executar a lógica de negócios ou antes de acessar recursos externos, a fim de evitar exceder os prazos de resposta estimados. Essa comunicação é exclusiva entre os servidores do Mercado Pago e, portanto, não haverá usuário físico vendo nenhum tipo de resultado.
- 
-> WARNING
->
-> Importante
->
-> Se os prazos de resposta forem excedidos, é possível receber notificações duplicadas de um evento.
-
-Depois de dar um retorno à notificação, você obterá as informações completas do recurso notificado acessando o terminal correspondente da API:
+Depois de dar um retorno à notificação e confirmar o seu recebimento, você obterá as informações completas do recurso notificado acessando o terminal correspondente da API:
 
 | Tipo | URL | Documentação |
 | --- | --- | --- |
@@ -301,4 +286,4 @@ Depois de dar um retorno à notificação, você obterá as informações comple
 | subscription | `https://api.mercadopago.com/v1/subscriptions/[ID]` | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/subscriptions/_preapproval/post) |
 | invoice | `https://api.mercadopago.com/v1/invoices/[ID]` | - |
 
-Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma como, por exemplo, atualizar um pagamento aprovado.
+Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma como, por exemplo, atualizar um pagamento aprovado. 
