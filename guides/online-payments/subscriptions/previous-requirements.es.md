@@ -17,6 +17,11 @@ Ten en cuenta que el monto mínimo permitido para crear una suscripción es de $
 
 ------------
 
+----[mco]----
+Ten en cuenta que el monto mínimo permitido para crear una suscripción es de $ 1500 y el máximo es de $ 30.000.000.
+
+------------
+
 ## Primeros pasos
 
 ### Accede a una cuenta
