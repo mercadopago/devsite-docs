@@ -12,7 +12,7 @@ After you have created your affiliation with **MercadoPagoV2**, you must configu
 
 The configuration of payment conditions is done in the **Payment conditions** tab of the **Settings** menu in the **Payments** module in the VTEX platform administrator portal. In this tab, you must click on the "+" button (*Add new payment condition for ...*) and select on eof the following payment conditions:
 
-* **Credit Card:** this refers to credit card transactions directly on your store's website. This setup requires you to select each credit card brand that you want in your store. [Click here to see what credit card brands you can select](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/payment-methods). In addition, your configuration may require you to fill in additional fields depending on the payment terms you select (Cash or Installments). For more information on how to configure installments in VTEX, click [here](https://help.vtex.com/en/tutorial/condicoes-de-pagamento--tutorials_455#parcelado-sem-juros). ----[mla, mlu, mlc, mlm, mpe, mco]----
+* **Credit Card:** this refers to credit card transactions carried out on your store's website. This setup requires you to select each credit card brand that you want in your store. [Click here to see a list of available credit card brands](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/payment-methods). In addition, depending on the payment terms you select (Cash or Installments), your configuration may require you to fill in additional fields. For more information on how to configure installments in VTEX, click [here](https://help.vtex.com/en/tutorial/condicoes-de-pagamento--tutorials_455#parcelado-sem-juros). ----[mla, mlu, mlc, mlm, mpe, mco]----
 * **Debit Card:** this referers to debit card transactions. ------------
 * **Other:** this refers to transactions with  **MercadoPagoOff**, **MercadoPagoWallet**, or **MercadoPagoPro**.
   * If you configure **MercadoPagoPro**, the buyer will make the payment in the Mercado Pago environment, via a form presented directly in their store and will have access to all payment methods available on the platform.
@@ -50,6 +50,9 @@ For more information on how to configure payment terms in VTEX, click [here](htt
 >
 > Note
 > 
+> Rates and taxes must be configured on the platform, since Mercado Pago processes them according to the information provided by VTEX. Click [here](https://help.vtex.com/en/tutorial/creando-la-tasaimpuesto/) for more information.
+> <br>
+> <br>
 > If you have difficulties during your integration, check our [errors list](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/common-errors), and our document about [VTEX logs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/logs).
 
 > LEFT_BUTTON_REQUIRED_EN

@@ -36,7 +36,7 @@ To create a **payment gateway affiliation with MercadoPagoV2**, follow the steps
 2. In the **Gateway affiliations** tab, click on the "+" button.
 3. Click on the **MercadoPagoV2** connector.
 4. Complete the following fields: 
-   * **Application Key:** This refers to your Mercado Pago [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials). Complete this with your Public Key.
+   * **Application Key:** This refers to your Mercado Pago production [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials). Complete this with your Public Key.
    * **Application Token:** This refers to your Mercado Pago [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials). Complete this with your Access Token.
    * **Prazo de vencimento do boleto - Periodo de vencimiento del ticket:** Deadline, in business days, for the expiration of the purchase order. It will also define the deadline of the payment method. If the customer pays after the deadline, the money will be deposited in their Mercado Pago account.
    * **Nome da loja - Nombre para resúmenes:** Name of the store. The value of this field will appear on the customer's card invoice.

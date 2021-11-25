@@ -4,7 +4,7 @@ Logs provide the teams with a greater understanding so that they can have a bett
 
 Also, in case of modification or activation of new payment methods, they give us the possibility to validate that everything is working as planned.
 
-To access the logs, access the **Transactions** menu of the **Payments** module from the administration panel of your VTEX store, then look for the LOG that contains the `status response` and click on **"+ Information"**. The most significant data is the following:
+To access the logs, access the administration panel of your VTEX store, and click on **Payments > Transactions**, then look for the LOG that contains the `status response` and click on **"+ Information"**. The most significant data is the following:
 
 |Field|Data|Description|
 |---|---|---|

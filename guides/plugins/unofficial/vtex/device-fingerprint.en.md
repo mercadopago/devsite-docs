@@ -4,11 +4,11 @@
 
 Whenever possible, we recommend that you submit information on customer behavior to detect unusual movements and avoid fraudulent transactions. Don't worry, we take care of your customers' data and we don't share it with anyone.
 
-**To configure device fingerprint**, follow the steps below:
+To configure **Device Fingerprint**, follow the steps below:
 
-1. In your store's administration panel, select the **Checkout** option from the **Store Setup** module.
+1. In your store's administration panel, access **Checkout > **Store Setup**.
 2. Click on the **edit** icon to access the configuration of your site.
-3. Select the **Code** tab and click on **checkout6-custom.js** in the **Files** module.
+3. In the **Files** module, access the **Code** tab and click on **checkout6-custom.js**.
 4. Copy and paste the following code, then click on **Save**.
 
 ```javascript

@@ -50,6 +50,9 @@ Para mais informações sobre como configurar as condições de pagamento na VTE
 >
 > Nota
 > 
+> Taxas e impostos devem ser configurados na plataforma, pois o Mercado Pago os processa de acordo com as informações fornecidas pela VTEX. Clique [aqui](https://help.vtex.com/pt/tutorial/creando-la-tasaimpuesto/) para obter mais informações.
+> <br>
+> <br>
 > Caso tenha alguma dúvida durante a integração, acesse nossa [lista de erros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/common-errors) e nosso documento sobre [logs do VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/logs).
 
 
