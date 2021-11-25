@@ -2,14 +2,14 @@
 
 O **Mercado Pago** possui suas próprias ferramentas de prevenção de fraudes. **Device Fingerprint** é um identificador que atua no processamento de um pagamento, tendo como objetivo melhorar a análise do risco de fraude em cada transação. 
 
-Sempre que possível, recomendamos que envie informações sobre o comportamento do cliente para detectar movimentos incomuns e evitar transações fraudulentas. Não se preocupe, cuidamos dos dados de seus clientes e não os compartilhamos com ninguém.
+Sempre que possível, recomendamos que envie informações sobre o comportamento do cliente para detectar movimentos incomuns e evitar transações fraudulentas. Os dados recebidos são analisados de forma segura e não os compartilhamos com ninguém.
 
-**Para configurar o device fingerprint**, siga os passos abaixo:
+Para configurar o **Device Fingerprint**, siga os passos abaixo.
 
-1. No painel de administração de sua loja, acesse **Checkout** del módulo **Configurações da Loja**.
+1. No painel de administração de sua loja, acesse **Checkout > Configurações da Loja**.
 2. Clique no ícone **editar**, referente a configuração de seu site.
-3. Acessar a aba **Código** e clique em **checkout6-custom.js** no módulo **Arquivos**.
-4. Copiar e colar o seguinte código e clique em **Salvar**.
+3. No módulo **Arquivos**, acesse a aba **Código** e clique em **checkout6-custom.js**.
+4. Copie e cole o seguinte código e clique em **Salvar**.
 
 ```javascript
 var script = document.createElement("script");
