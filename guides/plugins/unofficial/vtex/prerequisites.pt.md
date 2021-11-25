@@ -16,6 +16,6 @@ Para utilizar a integração do Mercado Pago com o VTEX, é preciso atender aos 
 >
 > Cadastramento de afiliação
 >
-> Conheça como cadastrar uma afiliação.
+> Saiba como cadastrar uma afiliação.
 >
 > [Cadastramento de afiliação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/gateway-affiliations)

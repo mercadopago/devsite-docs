@@ -1,6 +1,6 @@
 # Cadastre uma afiliações de gateway
 
-Uma **afiliação de gateway** é um conjunto de configurações que representam o processamento de seus pagamentos com um gateway de pagamento de sua escolha, neste caso o **Mercado Pago**. 
+Uma **afiliação de gateway** é um conjunto de configurações que representam o processamento de seus pagamentos com um gateway de sua escolha, neste caso o **Mercado Pago**. 
 
 Com isso, é possível decidir por qual gateway de pagamento serão processados os diferentes tipos de transações da sua loja VTEX, podendo a **afiliação de gateway MercadoPagoV2** processar pagamentos com Cartão de Crédito, Cartão de Débito, Mercado Pago Offline e Checkout Pro.
 
@@ -46,12 +46,12 @@ Para criar uma **afiliação de gateway de pagamento com o MercadoPagoV2**, siga
    * **Modo binário - binário:** Escolha se o pagamento poderá passar por revisão manual ou não.
    * **Métodos de pagamento excluídos - Métodos de pago excluídos (visa, paypal, bolbradesco, oxxo...):** Métodos de pagamento a serem excluídos no momento da compra. [Veja as opções aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/payment-methods). Aplicável somente ao MercadoPagoPRO, MercadoPagoWallet e MercadoPAgoOff.
    * **Tipos de pagamento excluídos - Tipos de pago excluidos (credit_card, bank_transfer, ticket...):** Tipos de pagamento a serem excluídos no momento da compra. [Veja as opções aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/payment-methods). Aplicável somente ao MercadoPagoPRO, MercadoPagoWallet e MercadoPAgoOff.
-   * **Modo de processamento - Modo de procesamiento** Configura se o pagamento será gateway ou agregador. Para processar pagamentos em modo Gateway contate o seu Assessor do Mercado Pago.
+   * **Modo de processamento - Modo de procesamiento:** Selecione se o pagamento será gateway ou agregador. Para processar pagamentos em modo Gateway contate o seu Assessor do Mercado Pago.
    * **Integrator ID:** Para programadores ou agências que realizam a integração.
    * **Moeda - Moneda:** Moeda a ser configurada (USD ou Local).
 5. Clique em **Salvar**.
 
-E pronto! Sua afiliação com MercadoPagoV2 já está ativa!
+Pronto! Sua afiliação com MercadoPagoV2 já está ativada.
 
 > NOTE
 >
