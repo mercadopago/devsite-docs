@@ -17,7 +17,7 @@ The configuration of payment conditions is done in the **Payment conditions** ta
 * **Other:** this refers to transactions with  **MercadoPagoOff**, **MercadoPagoWallet**, or **MercadoPagoPro**.
   * If you configure **MercadoPagoPro**, the buyer will make the payment in the Mercado Pago environment, via a form presented directly in their store and will have access to all payment methods available on the platform.
   * If you configure **MercadoPagoWallet**, the buyer will use their Mercado Pago wallet. This mode is exclusive to buyers registered in Mercado Pago or Mercado Libre and we suggest using it if you select **Credit Card Payment Condition**.
-  * If you configure **MercadoPagoOff**, you can use means of payment in cash, such as Boleto Bancário and PEC (payments at lottery outlets).  ----[mlb]----
+  * If you configure **MercadoPagoOff**, you can use means of payment in cash.  ----[mlb]----
 * **Boleto Bancário:** this refers to boleto bancário transactions **exclusively**.
 * **Pix:** This refers to transactions with Pix via **QR Code** or **Copy and Paste**. To configure this payment condition, you must have a Pix key registered in your Mercado Pago account. For more information on creating your Pix key, click [here](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required). ------------
 
