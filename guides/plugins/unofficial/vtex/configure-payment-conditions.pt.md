@@ -43,6 +43,8 @@ Na próxima tela, deve-se:
 > Importante
 > 
 > As mudanças nas Condições de pagamento podem levar até 10 minutos para serem aplicadas.
+> <br>
+> Se sua loja possui customização de layout no checkout, ao adicionar um novo meio de pagamento, verifique se será necessário realizar novas customizações.
 
 Para mais informações sobre como configurar as condições de pagamento na VTEX, clique [aqui](https://help.vtex.com/pt/tutorial/condicoes-de-pagamento--tutorials_455).
 

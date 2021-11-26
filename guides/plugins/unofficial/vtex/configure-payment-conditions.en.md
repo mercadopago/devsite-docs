@@ -43,6 +43,8 @@ On the following screen:
 > Important
 > 
 > Changes to payment conditions can take up to 10 minutes to apply to the checkout flow.
+> <br>
+> If your store has layout customization at checkout, when adding a new payment method, check if it is necessary to perform new customizations.
 
 For more information on how to configure payment terms in VTEX, click [here](https://help.vtex.com/en/tutorial/condicoes-de-pagamento--tutorials_455).
 

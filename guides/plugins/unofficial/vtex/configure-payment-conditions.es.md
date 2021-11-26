@@ -43,6 +43,8 @@ En la pantalla siguiente, debes:
 > Importante
 > 
 > Los cambios en las Condiciones de pago pueden demorar hasta 10 minutos en aplicarse.
+> <br>
+> Si tu tienda tiene layout personalizado en el checkout, al agregar un nuevo plan de pago, verifica si resulta necesario realizar nuevas personalizaciones.
 
 Para obtener más información sobre cómo configurar los términos de pago en VTEX, haz clic [aquí](https://help.vtex.com/es/tutorial/condicoes-de-pagamento--tutorials_455).
 
