@@ -595,14 +595,14 @@ Por último, es importante que estés siempre informado sobre la creación de nu
 >
 > Checkout Transparente
 >
-> Te dejamos [ejemplos completos de integración](http://github.com/mercadopago/card-payment-sample) en GitHub para PHP o NodeJS para que puedas descargar al instante.
+> Te dejamos [ejemplos completos de integración](http://github.com/mercadopago/card-payment-sample) en GitHub para que puedas descargar al instante.
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > GIT
 >
 > Checkout API
 >
-> Te dejamos [ejemplos completos de integración](http://github.com/mercadopago/card-payment-sample) en GitHub para PHP o NodeJS para que puedas descargar al instante.
+> Te dejamos [ejemplos completos de integración](http://github.com/mercadopago/card-payment-sample) en GitHub para que puedas descargar al instante.
 ------------
 
 <span></span>
@@ -611,7 +611,7 @@ Por último, es importante que estés siempre informado sobre la creación de nu
 >
 > Formulario de pago
 >
-> Si quieres implementar tu servidor con alguna otra tecnología, te dejamos un [ejemplo completo del formulario de pago](https://github.com/mercadopago/card-payment-sample/tree/master/client) en GitHub para que puedas descargar.
+> Si quieres implementar tu servidor con alguna otra tecnología, te dejamos un [ejemplo completo del formulario de pago](https://github.com/mercadopago/card-payment-sample) en GitHub para que puedas descargarlo.
 
 ---
 ### Próximos pasos

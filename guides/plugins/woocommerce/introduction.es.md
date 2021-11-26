@@ -1,65 +1,23 @@
-# Mercado Pago en WooCommerce
-<br/>
-
-El módulo de Mercado Pago para WooCommerce te permite ampliar las funcionalidades de tu tienda online y ofrecer una experiencia de pago única para tus clientes. 
-
-Si ya utilizas WooCommerce para crear sitios e-commerce en WordPress, uno de los gestores de contenidos más populares a nivel mundial, puedes contar con nuestro módulo para sumar un procesador de pagos de confianza en tu página web o la de tus clientes.
+# WooCommerce
 
 > WARNING
 >
-> Aviso importante
+> ¡Protege tu integración!
 >
-> El 13 de julio del 2021, WooCommerce notificó a sus clientes que algunas de sus versiones resultan vulnerables. Las correcciones necesarias ya se han realizado en la última actualización. Por lo tanto, es **muy importante que tu tienda tenga la última versión de WooCommerce actualizada** para evitar la exposición de información sensible. Para más información, consulta el [blog de WooCommerce](https://woocommerce.com/pt-br/posts/critical-vulnerability-detected-july-2021).
+> En octubre de 2022, se deprecarán las versiones del plugin WooCommerce anteriores a la 4.5.0. Mantén tu tienda siempre actualizada con la última versión para evitar la suspensión de las transacciones y la exposición de datos confidenciales.
 
-## Qué puedo hacer con Mercado Pago en WooCommerce
+[WooCommerce](https://woocommerce.com/) es un complemento que te permite habilitar tu sitio web/blog de [WordPress](https://wordpress.com/pt-br/create/?utm_source=google&utm_campaign=google_wpcom_search_brand_desktop_br_pt&utm_medium=paid_search&keyword=wordpress&creative=405409862800&campaignid=662299893&adgroupid=55904101192&matchtype=e&device=c&network=g&targetid=kwd-313411415&gclsrc=aw.ds&gclid=Cj0KCQjw6s2IBhCnARIsAP8RfAjJw-W6L7Lm5t3QdPwg8oRXUA783ncsLK4sSYBaU5ObfjUylCwwi20aAgLXEALw_wcB) para que funcione como una tienda virtual con la tranquilidad de ofrecer a los compradores la posibilidad de realizar pagos utilizando Mercado Pago a través de una integración.
 
-Instala el procesador de pagos en WooCommerce y lleva tus ventas a otro nivel con la mejor experiencia de compra:
+Para obtener más información sobre los beneficios, tarifas, términos y tipos de pago disponibles, visita la página [WooCommerce con Mercado Pago](https://www.mercadopago.com.br/ferramentas-para-vender/link-de-pagamento-plugins-checkout/plugins/vender-woocommerce?utm_experiment=optimize&matt_tool=10047855&matt_word=MLB_MP_G_AO_OP_COW_SEARCH_SELL_TXS_Checkout-WooCommerce-Branded&gclid=Cj0KCQjw6s2IBhCnARIsAP8RfAjJHJVBE0is6oJv5K3_v9qiv44mYs52j7TlFtAMe2AVWKoJ-DAga_4aAuH7EALw_wcB). 
 
-| Características | Detalle |
-| --- | --- |
-| Financiación | Vende en cuotas y ofrece las promociones que desees. |
-| Liberación de dinero | Al instante o con las tasas y plazos que mejor se adapten al negocio. |
-| Medios de pago | Acepta pagos con tarjeta de crédito y débito, ----[mlb]---- Pix,------------ pagos en efectivo y con dinero en cuenta de Mercado Pago. |
-| Tipos de checkout | Checkout Pro, Checkout personalizado |
-| Pago como invitado | Los usuarios no necesitan estar registrados en Mercado Pago para poder pagar en WooCommerce. |
-| Modo binario | Aprueba o rechaza pagos al instante y de forma automática. |
-| Conversión de moneda | No más problemas de compatibilidad. Convierte la moneda que usas en WooCommerce a la moneda de tu cuenta de Mercado Pago.|
-| Pago con tarjetas guardadas en Mercado Pago | Permite que los clientes puedan comprar con los datos guardados de su tarjeta en Mercado Pago, sin tener que rellenar los datos en el checkout de la tienda. |
+En esta documentación, detallaremos todos los pasos necesarios para integrar Mercado Pago con WooCommerce. 
 
->**¿Eres desarrollador?**
->Esta guía también está pensada para que hagas más rápido tu trabajo de instalación, integración y configuración de nuestro módulo en las plataformas de e-commerce más reconocidas a nivel mundial. 
-
-<span></span>
-
-> NOTE
->
-> Nota
->
-> Todos nuestros módulos cuentan con una licencia de código abierto. ¿Quieres participar en su construcción? [Sugiere mejoras y ediciones](https://github.com/mercadopago/cart-woocommerce) en Github.
-
-## Tipos de checkout
-
-Con estas opciones de pago cubrimos las necesidades de cada negocio. Revisa las características para elegir cuál se adapta mejor al tuyo.
-
-| Características | Checkout Pro | Checkout personalizado |
-| --- | --- | --- |
-| Medios de pago | Pagos con tarjetas, ----[mlb]---- Pix,------------ en efectivo y con dinero en cuenta de Mercado Pago. | Pagos con tarjetas de débito y crédito, ----[mlb]---- Pix,------------ boleto bancario o pagos presenciales. |
-| Experiencia de pago | Tus clientes pagan desde la página de Mercado Pago con un formato redirect (fuera de tu tienda) o modal (dentro de tu tienda). | Tus clientes pagan como invitados sin salir de tu tienda. |
-| Usuarios invitados | Tus clientes pueden pagar con o sin cuenta en Mercado Pago. | Tus clientes pagan como invitados, sin cuenta en Mercado Pago. |
-
-> NOTE
->
-> Nota
->
-> Consulta la [documentación del Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction) para conocer mejor todas sus características y funcionalidades.
-
-### Próximos pasos
+Para completar la integración, sigue los pasos a continuación, pero recuerda verificar los requisitos previos antes de empezar.
 
 > LEFT_BUTTON_REQUIRED_ES
 >
-> Instalar Mercado Pago en WooCommerce
+> Requisitos previos
 >
-> Sigue estos pasos para instalar el módulo de Mercado Pago en tu tienda online.
+> Conoce los requisitos previos para realizar la integración.
 >
-> 
-> [Instalar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/woocommerce/instalation)
+> [Requisitos previos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/woocommerce/previous-requirements)

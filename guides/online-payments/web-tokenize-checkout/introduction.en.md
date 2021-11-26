@@ -1,17 +1,48 @@
 
 # Web Tokenize Checkout
 
-> INFO
+> WARNING
 >
-> What is tokenize?
+> Important
 >
+> **Web Tokenize Checkout** will be deprecated in August 2022.
+> <br>
+> You are welcome to use either [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction) or [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction) as an alternative.
+> 
+
+> **What is tokenize?**
+> <br>
 > Tokenization is the process by which a card number is encrypted securely.
 
-With **Mercado Pago** *Web Tokenize Checkout* forget about the complexity of setting up your form for the selection of payment methods and tokenization. This simple integration provides you with a form with the design and the front-end ready.
+With **Mercado Pago** *Web Tokenize Checkout* forget about the complexity of setting up your form for the selection of cards and tokenization. This simple integration provides you with a form with the design and the front-end ready.
 
 Integrate *Web Tokenize Checkout* on your site to give your buyers a stylized experience that **Mercado Pago** keeps in constant improvement.
 
 The sensitive data of the credit and debit cards are encrypted and stored by **Mercado Pago** (with its corresponding PCI compliance), without being transmitted to your servers.
+
+----[mlb, mla, mlu, mco, mpe, mlm]----
+
+> WARNING
+>
+> Important
+> 
+> Web Tokenize Checkout is only used with credit and debit cards.
+> <br>
+> If you wish to integrate other payment methods, click [here](https://dev.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways).
+
+------------
+
+----[mlc]----
+
+> WARNING
+>
+> Important
+> 
+> Web Tokenize Checkout is only used with credit card.
+> <br>
+> If you wish to integrate other payment methods, click [here](https://dev.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways).
+
+------------
 
 ---
 

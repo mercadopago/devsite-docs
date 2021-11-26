@@ -1,16 +1,47 @@
 # Web Tokenize Checkout
 
-> INFO
+> WARNING
 >
-> O que é tokenização?
+> Importante
 >
+> **Web Tokenize Checkout** será descontinuado em agosto de 2022.
+> <br>
+> Você pode usar [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction) ou [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction) como alternativa.
+
+
+> **O que é tokenização?**
+> <br>
 > Tokenização é o processo pelo qual se criptografa de maneira segura um cartão de crédito.
 
-Com o *Web Tokenize Checkout* do **Mercado Pago** esqueça a complexidade para estruturar um formulário de seleção de forma de pagamento e tokenização. Esta integração simples lhe proporcionará um formulário com design e front-end pronto.
+Com o *Web Tokenize Checkout* do **Mercado Pago** esqueça a complexidade para estruturar um formulário de seleção de cartões e tokenização. Essa integração simples lhe disponibilizará um formulário com design e front-end pronto.
 
 Integre o  *Web Tokenize Checkout* em seu site para oferecer aos seus compradores uma experiência estilosa que o **Mercado Pago** mantém em melhoria contínua.
 
 Os dados sensíveis dos cartões de crédito e débito são criptografados e armazenados pelo **Mercado Pago** (em conformidade com as normas da PCI), sem que sejam transmitidos aos seus servidores.
+
+----[mlb, mla, mlu, mco, mpe, mlm]----
+
+> WARNING
+>
+> Importante
+> 
+> Web Tokenize Checkout é usado apenas para cartões de crédito e débito.
+> <br>
+> Se você deseja integrar outros meios de pagamento, clique [aqui](https://dev.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways).
+
+------------
+
+----[mlc]----
+
+> WARNING
+>
+> Importante
+> 
+> Web Tokenize Checkout é usado apenas para cartões de crédito.
+> <br>
+> Se você deseja integrar outros meios de pagamento, clique [aqui](https://dev.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways).
+
+------------
 
 ---
 

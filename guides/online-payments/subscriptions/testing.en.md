@@ -29,6 +29,7 @@ curl -X POST \
 ```
 
 ### Response
+
 `HTTP Status 200 OK`
 ```json
 {
@@ -44,7 +45,8 @@ curl -X POST \
 
 #### 1. Set the subscription with the data of your seller user
 
-Use the [test public key](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials) of your seller user at the time of creating the subscription you want to test.<br>
+Use the `access_token` of the [productive credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials) of your test user.
+<br>
 
 #### 2. Make a payment with your buyer user
 

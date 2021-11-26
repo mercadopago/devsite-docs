@@ -23,7 +23,7 @@ You can see the payment status in the API response as `rejected` and the reason 
 }
 ```
 
-Also, you can find more information about payment details on [Mercado Pago activity section](https://www.mercadopago.com.ar/), where payments are being receive.
+Also, you can find more information about payment details on [Mercado Pago activity section](https://www.mercadopago.com.ar/), where payments are being received.
 
 > WARNING
 >
@@ -33,7 +33,7 @@ Also, you can find more information about payment details on [Mercado Pago activ
 
 ## Payments rejected due to fraud prevention
 
-We track transactions in real time and perform security validations, to recognize payments that weren’t authorize by the card owner and also to avoid chargebacks.
+We track transactions in real time and perform security validations, to recognize payments that weren’t authorized by the card owner and also to avoid chargebacks.
 
 When our fraud prevention system detects a suspicious payout, you'll be able to see the payment status in the API response as `rejected` and the rejection reason as `cc_rejected_high_risk`.
 
@@ -129,7 +129,7 @@ pod ‘MercadoPagoDevicesSDK’
 Add the following code in the **build.gradle** file.
 ===
 dependencies {
-   implementation 'com.mercadolibre.android.device:sdk:2.0.0'
+   implementation 'com.mercadolibre.android.device:sdk:2.0.1'
 }
 ```
 ]]]
@@ -244,7 +244,7 @@ Finally, send the information in the `device` field when creating the `card_toke
 
 ### Include all payment information
 
-In order to optimize payment security validation and avoid rejected payments, you can send us the customer and item data so we can analyze it. I.e., if you send us this information, we can detect if the buyer have done suspicious payments in the past.
+In order to optimize payment security validation and avoid rejected payments, you can send us the customer and item data so we can analyze it. I.e., if you send us this information, we can detect if the buyer has made suspicious payments in the past.
 
 #### Buyer Data
 

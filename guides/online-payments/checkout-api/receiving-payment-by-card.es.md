@@ -510,14 +510,14 @@ Por último, es importante que estés siempre informado sobre la creación de nu
 >
 > Checkout Transparente
 >
-> Te dejamos [ejemplos completos de integración](http://github.com/mercadopago/card-payment-sample) en GitHub para PHP o NodeJS para que puedas descargar al instante.
+> Te dejamos [ejemplos completos de integración](http://github.com/mercadopago/card-payment-sample) en GitHub para que puedas descargar al instante.
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > GIT
 >
 > Checkout API
 >
-> Te dejamos [ejemplos completos de integración](http://github.com/mercadopago/card-payment-sample) en GitHub para PHP o NodeJS para que puedas descargar al instante.
+> Te dejamos [ejemplos completos de integración](http://github.com/mercadopago/card-payment-sample) en GitHub para que puedas descargar al instante.
 ------------
 
 <span></span>
@@ -526,7 +526,7 @@ Por último, es importante que estés siempre informado sobre la creación de nu
 >
 > Formulario de pago
 >
-> Si quieres implementar tu servidor con alguna otra tecnología, te dejamos un [ejemplo completo del formulario de pago](https://github.com/mercadopago/card-payment-sample/tree/master/client) en GitHub para que puedas descargar.
+> Si quieres implementar tu servidor con alguna otra tecnología, te dejamos un [ejemplo completo del formulario de pago](https://github.com/mercadopago/card-payment-sample) en GitHub para que puedas descargar.
 
 ---
 ### Próximos pasos
@@ -539,6 +539,17 @@ Por último, es importante que estés siempre informado sobre la creación de nu
 >
 > [Prueba tu integración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/testing)
 
+----[mlc]----
+> RIGHT_BUTTON_RECOMMENDED_ES
+>
+> Referencias de API
+>
+> Encuentra toda la información necesaria para interactuar con nuestras APIs.
+>
+> [Referencias de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference)
+------------
+
+----[mla, mlb, mlm, mlu, mpe, mco]----
 > RIGHT_BUTTON_RECOMMENDED_ES
 >
 > Integra otros medios de pago
@@ -546,3 +557,4 @@ Por último, es importante que estés siempre informado sobre la creación de nu
 > Conoce todas las opciones de pago disponibles y cómo ofrecerlas.
 >
 > [Integra otros medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways)
+------------

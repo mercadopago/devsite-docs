@@ -1,5 +1,11 @@
 # Magento 2
 
+> WARNING
+>
+> Protect your integration!
+>
+> In October 2022, the Magento 2 plugin versions before 3.5.0 will be discontinued. Keep your store always up to date with the latest version to avoid having to suspend transactions and exposing sensitive data.
+
 ## Requirements to integrate
 
 | Requirement | Description |
@@ -14,7 +20,6 @@
 | Extension Dependencies | bc-math (Magento Commerce only)<br/>curl<br/>gd, ImageMagick 6.3.7 (or later) or both<br/>intl<br/>bstring<br/>mcrypt<br/>hash<br/>openssl<br/>PDO/MySQL<br/>SimpleXML<br/>soap<br/>xml<br/>xsl<br/>zip<br/> |
 | PHP 7 only | json<br/>iconv |
 | SSL | It is a requirement that you have an SSL certificate.<br/>During testing in Sandbox you will be able to run at http. |
-
 
 ## Features
 
@@ -114,7 +119,7 @@ This process will explain how to configure the module to accept payments with Ch
 
 ![Checkout Pro Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
 
-4) Very good! Checkout Pro with Credit Card and Ticket has been configured and enable successfully.
+4) Done! Checkout Pro with Credit Card and Ticket has been configured and enabled successfully.
 
 
 ## Payment Notification status settings

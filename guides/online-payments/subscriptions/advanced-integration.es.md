@@ -54,6 +54,8 @@ curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPRO
 }'
 ```
 
+![Basic-subscriptions](/images/subscriptions/status-preapproval-es.png)
+
 ## Reactivar una suscripción pausada
 
 ### Activar suscripción con tiempo de fin
@@ -97,9 +99,9 @@ curl --location --request PUT 'https://api.mercadopago.com/preapproval/<PREAPPRO
 
 ## Fecha de facturación
 
-Si tienes una suscripción mensual, puedes establecer un día fijo del mes para recibir los cobros de una suscripción mensual. 
+Para suscripciones con frecuencia de pago mensual, puedes elegir un día fijo del mes para que se efectúen los cobros. En caso de que no configures un día específico, los cobros serán hechos en el mismo día del mes en que el suscriptor dió de alta a la suscripción.
 
-Cuando se establece una fecha de facturación, se puede elegir si se va a cobrar o no un monto proporcional a los pagadores que se adhieren a esa suscripción en fechas distintas a la elegida.
+Cuando estableces una fecha de facturación, puedes elegir si se va a cobrar o no un __monto proporcional (prorrateo)__ a los pagadores que se adhieren a esa suscripción en fechas distintas a la que elegiste.
 
 > NOTE
 > 

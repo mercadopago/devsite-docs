@@ -182,6 +182,7 @@ A continuación se indican los medios de pago disponibles para cada país.
 | Mastercard Débito | `debit_card` | `debmaster` |
 | Tarjeta Mercado Pago | `prepaid_card` | `mercadopagocard` |
 | Oxxo | `ticket` | `oxxo` |
+| PayCash | `ticket` | `paycash` |
 | BBVA Bancomer | `atm` | `bancomer` |
 | Banamex | `atm` | `banamex` |
 | Santander | `atm` | `serfin` |

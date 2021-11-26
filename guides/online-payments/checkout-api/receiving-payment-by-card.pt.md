@@ -518,14 +518,14 @@ Por último, é importante que esteja sempre informado sobre a criação nos nov
 >
 > Checkout Transparente
 >
-> Disponibilizamos [exemplos completos de integração](http://github.com/mercadopago/card-payment-sample) no GitHub para PHP ou NodeJS para que você possa fazer o download imediatamente.
+> Disponibilizamos [exemplos completos de integração](http://github.com/mercadopago/card-payment-sample) no GitHub para que você possa fazer o download imediatamente.
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > GIT
 >
 > Checkout API
 >
-> Disponibilizamos [exemplos completos de integração](http://github.com/mercadopago/card-payment-sample) no GitHub para PHP ou NodeJS para que você possa fazer o download imediatamente.
+> Disponibilizamos [exemplos completos de integração](http://github.com/mercadopago/card-payment-sample) no GitHub para que você possa fazer o download imediatamente.
 ------------
 
 <span></span>
@@ -534,7 +534,7 @@ Por último, é importante que esteja sempre informado sobre a criação nos nov
 >
 > Formulário de pagamento
 >
-> Se você deseja implementar seu servidor com alguma outra tecnologia, te deixamos um [exemplo completo do formulário de pagamento](https://github.com/mercadopago/card-payment-sample/tree/master/client) no GitHub para que possa baixar.
+> Se você deseja implementar seu servidor com alguma outra tecnologia, te deixamos um [exemplo completo do formulário de pagamento](https://github.com/mercadopago/card-payment-sample) no GitHub para que possa baixar.
 
 ---
 ### Próximos passos
@@ -547,6 +547,17 @@ Por último, é importante que esteja sempre informado sobre a criação nos nov
 >
 > [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/testing)
 
+----[mlc]----
+> RIGHT_BUTTON_RECOMMENDED_PT
+>
+> Referências de API
+>
+> Encontre toda informação necessária para interagir com nossas APIs.
+>
+> [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference)
+------------
+
+----[mla, mlb, mlm, mlu, mpe, mco]----
 > RIGHT_BUTTON_RECOMMENDED_PT
 >
 > Integrar outros meios de pagamento
@@ -554,3 +565,4 @@ Por último, é importante que esteja sempre informado sobre a criação nos nov
 > Conheça todas as opções de pagamentos disponíveis e como oferecê-las.
 >
 > [Integrar outros meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways)
+------------

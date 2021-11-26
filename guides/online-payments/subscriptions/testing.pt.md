@@ -44,7 +44,8 @@ curl -X POST \
 
 #### 1. Configure a assinatura com os dados do seu usuário vendedo
 
-Use a [chave pública de teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials) do seu usuário vendedor na hora de criar a assinatura que quiser testar.<br>
+Use o `access_token` das [credenciais produtivas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/credentials) do seu usuário de teste. 
+<br>
 
 #### 2. Faça um pagamento com seu usuário comprador
 
