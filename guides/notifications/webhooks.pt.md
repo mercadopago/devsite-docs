@@ -6,7 +6,7 @@ As notificações Webhook poderão ser configuradas para uma ou mais aplicaçõe
 
 Uma vez configurado, o Webhook será enviado sempre que ocorrer um ou mais eventos cadastrados, evitando que haja um trabalho de pesquisa a cada minuto em busca de uma resposta e, por consequência, que ocorra uma sobrecarga do sistema e a perda de dados sempre que houver alguma situação.
 
-Após receber uma notificação na sua plataforma, o Mercado Pago aguardará uma resposta para validar se você a recebeu corretamente
+Após receber uma notificação na sua plataforma, o Mercado Pago aguardará uma resposta para validar se você a recebeu corretamente.
 
 Nessa documentação explicaremos as configurações necessárias para o recebimento das mensagens (através do Dashboard ou durante a criação de pagamentos), além de apresentar quais são as ações necessárias que você deverá ter para que o Mercado Pago valide que as notificações foram devidamente recebidas.
 
@@ -252,7 +252,7 @@ curl -X POST \
 ?>
 ```
 
-2. Feitas as devidas configurações, a notificação via Webhook terá o seguinte formato:
+3. Feitas as devidas configurações, a notificação via Webhook terá o seguinte formato:
 
 ```json
 {

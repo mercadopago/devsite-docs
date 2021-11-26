@@ -57,5 +57,5 @@ Se as notificações não forem recebidas, será necessário aplicar como métod
 ```curl
 curl -X GET \
    -H 'Authorization: Bearer $ACCESS_TOKEN' \
-   https://api.mercadopago.com/merchant_orders?external_reference=$EXTERNAL_REFERENCE
+   https://api.mercadopago.com/merchant_orders?external_reference=$EXTERNAL_REFERENCE 
 ```
