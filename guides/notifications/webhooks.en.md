@@ -272,6 +272,19 @@ curl -X POST \
 }
 ```
 
+| Attribute | Description |
+| --- | --- |
+| **id** | Notification ID |
+| **live_mode** | Type of notification received (paymentes, merchant_order, subscription, preapproval, etc) |
+| **date_created** | Payment creation date |
+| **application_id** | Application ID that received the payment |
+| **user_id** | Vendor UserID |
+| **version** | Number of times a notification was sent |
+| **api_version** | Indicates if it is a duplicate notification or not |
+| **action** | Type of notification received, indicating whether it is the update of a payment or the creation of a new payment |
+| **data** | - |
+| **id** | Payment ID or merchant_order |
+
 This indicates that payment **999999999** was created for user **44444** in production mode with API version V1 and that this event occurred on date **2016-03-25T10:04:58.396-04 :00**.
 
 ## Actions required after receiving notification

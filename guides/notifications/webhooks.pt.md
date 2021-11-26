@@ -270,6 +270,19 @@ curl -X POST \
   }
 }
 ```
+
+| Atributo | Descrição |
+| --- | --- |
+| **id** | ID de notificação |
+| **live_mode** | Tipo de notificação recebida (paymentes, merchant_order, subscription, preapproval, etc) |
+| **date_created** | Data de criação do pagamento |
+| **application_id** | ID do aplicativo que recebeu o pagamento |
+| **user_id**| UserID de vendedor |
+| **version** | Número de vezes que uma notificação foi enviada |
+| **api_version** | Indica se é uma notificação duplicada ou não |
+| **action** | Tipo de notificação recebida, indicando se se trata da atualização de um pagamento ou da criação de um novo pagamento |
+| **data** | - |
+| **id**  | ID do payment ou merchant_order |
  
 Isso indica que foi criado o pagamento **999999999** para o usuário **44444** em modo de produção com a versão V1 da API e que esse evento ocorreu na data **2016-03-25T10:04:58.396-04:00**.
 
