@@ -1,4 +1,4 @@
-# Prerrequisitos
+# Requisitos previos
 
 Para utilizar la integración de Mercado Pago con VTEX, debes cumplir con los siguientes requisitos.
 
