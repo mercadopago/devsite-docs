@@ -57,7 +57,7 @@ Nessa documentação explicaremos as configurações necessárias para o recebim
 ?>
 ```
  
-4. Feitas as configurações, o Mercado Pago notificará esse URL com dois parâmetros a cada vez que um recurso for criado, ou atualizado:
+6. Feitas as configurações, o Mercado Pago notificará esse URL com dois parâmetros a cada vez que um recurso for criado, ou atualizado:
  
 | Campo | Descrição |
 | --- | --- |
