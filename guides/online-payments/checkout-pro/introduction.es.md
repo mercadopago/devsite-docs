@@ -1,4 +1,4 @@
-# ¿Qué es el Checkout Pro?
+# ¿Qué es el Checkout Pro test?
 
 Checkout Pro es la integración que **te permite cobrar a través de nuestro formulario web desde cualquier dispositivo** de manera simple, rápida y segura.
 
