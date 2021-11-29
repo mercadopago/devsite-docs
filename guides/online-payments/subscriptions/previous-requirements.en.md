@@ -24,7 +24,7 @@ Please note that the minimum amount allowed to create a subscription is $1500 an
 
 ## First steps
 
-### Access to an account
+### Access an account
 
 To start the integration, it is necessary to **have a Mercado Pago or Mercado Libre account**.
 
