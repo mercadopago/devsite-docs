@@ -96,3 +96,138 @@ paths:
                     description: >-
                       Whether the chargeback will be processed in sandbox or in
                       production mode
+  /v1/payments/{id}/refunds:
+    post:
+      tags:
+        - $ref: "#/tags/marketplace"
+      summary: Estorno Completo
+      description: Realizar estorno completo de um pedido que você deseja.
+      parameters:
+        - name: id
+          in: path
+          description: ID do pedido
+          required: true
+          schema:
+            type: string
+            example: 12345678901
+        - name: X-Idempotency-Key
+          in: header
+          description: Chave de Idempotência. Quando definido um valor, evita que um estorno seja realizado em duplicidade.
+          schema:
+            type: string
+            example: 77e1c83b-7bb0-437b-bc50-a7a58e5660ac
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    description: Chargeback identifier
+                  payment_id:
+                    type: string
+                    description: Payment id associado ao pedido
+                  amount:
+                    type: number
+                    description: Valor estornado
+                  source:
+                    type: array
+                    description: Lista de fonte
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          description: Identificador
+                        name:
+                          type: string
+                          description: Nome
+                        type:
+                          type: string
+                          description: Tipo
+                  date_created:
+                    type: string
+                    format: date
+                    description: Data de criação do estorno
+                  unique_sequence_number:
+                    type: string
+                    description: Número de sequência
+                  refund_mode:
+                    type: string
+                    description: Modo de estorno
+                  adjustment_amount:
+                    type: number
+                    description: Ajuste do estorno
+                  status:
+                    type: string
+                    description: Status do estorno
+                  reason:
+                    type: string
+                    description: Motivo do estorno
+                  label:
+                    type: array
+                    description: Lista de rotulos
+                    items:
+                      type: object
+                  partition_details:
+                    type: array
+                    description: Detalhes
+                    items:
+                      type: object
+
+        '401':
+          description: Invalid Token
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  cause:
+                    type: array
+                    description: Lista de motivo
+                    items:
+                      type: object
+                  message:
+                    type: string
+                    description: Mensagem do erro
+                  error:
+                    type: string
+                    description: Erro
+                  status:
+                    type: number
+                    description: Status
+
+        '404':
+          description: Refund not found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    description: Mensagem de erro
+                  error:
+                    type: string
+                    description: Erro
+                  status:
+                    type: number
+                    description: Status
+                  cause:
+                    type: array
+                    description: Lista causas
+                    items:
+                      type: object
+                      properties:
+                        code:
+                          type: number
+                          description: Código do motivo
+                        description:
+                          type: string
+                          description: Descrição do erro
+                        data:
+                          type: string
+                          description: Dados referente ao erro
