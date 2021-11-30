@@ -100,12 +100,12 @@ paths:
     post:
       tags:
         - $ref: "#/tags/marketplace"
-      summary: Total chargeback
+      summary: Full chargeback
       description: Perform a full chargeback for a specific order
       parameters:
         - name: id
           in: path
-          description: ID do pedido
+          description: Order ID
           required: true
           schema:
             type: string
