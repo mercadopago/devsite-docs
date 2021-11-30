@@ -3863,23 +3863,85 @@ In the `external_resource_url` field you will find an address with payment instr
 >
 > Customers have 3 to 5 days to pay, depending on the payment method. After that, you should cancel it.
 
-> SERVER_SIDE
+## Payments date of expiration
+
+### Boleto payments
+
+The default expiration date for boleto payments is 3 days. If you want, you can change this date by sending the `date_of_expiration` field in the payment creation request. The configured date must be between 1 and 30 days from the issue date.
+
+[[[
+```php
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+$payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
+```
+```node
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```java
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
+```
+```ruby
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+date_of_expiration: '2020-05-30T23:59:59.000-04:00',
+```
+```csharp
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+paymentCreateRequest.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+```
+```python
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00"
+```
+```curl
+===
+The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00",
+```
+]]]
+
+The deadline for approval of the boleto is up to 48 working hours. Therefore, we recommend that you set the due date with at least 3 days to ensure that payment is made.
+
+> WARNING
 >
-> h2
+> Important
 >
-> Receive payments with Pix
+> If the boleto is paid after the expiration date, the amount will be refunded to the payer's Mercado Pago account.
 
-You can receive payment immediately with Pix from any bank or digital wallet using QR code or payment code.
+## Cancel payments
 
-### Prerequisite
+To avoid collection issues, you need to cancel expired payments. Cash payments should be paid within 3 to 5 business days, based on their relevant term.
 
-#### Get a Pix key
+Take into account that **you can only cancel payments in process or pending status**. If a payment expires after 30 days, the cancellation is automatic and the final status will be cancelled or expired.
 
-To start, you will need a Pix key registered in the seller's account. This is unique data for account identification to use the payment method functionality.
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
 
-[Learn how to create a Pix key](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required)
+## Payment credit times
 
-### Payment data
+Each payment method has its own credit times; it is immediate in some cases, while in others, it may take up to 3 business days.
+
+Check [credit times by payment method](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265) whenever you need to.
+
+[TXTSNIPPET][/guides/snippets/test-integration/pix-intro]
+
+After registering the Pix key, follow the documentation to perform the integration or, if you prefer, [see on Github](https://github.com/mercadopago/pix-payment-sample) for examples of how to add Pix payments by integrating with Checkout Transparente.
+
+### Configure a payment with Pix
 
 After [capturing the data for payment](#bookmark_data_capture_for_payment) in the form, to start getting Pix payments you will need to dend the buyer's email address, document type and number, method of payment and amount.
 
@@ -4092,23 +4154,7 @@ curl -X POST \
 ```
 ]]]
 
-<br>
-
-The response will show the pending payment status and all the information needed to show to the buyer.
-
-> WARNING
->
-> Important
->
-> Remember that in order to generate payments, you must first [create a Pix key](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required).
-
-The `transaction_data` will provide the data to make the payment available via QR code. These are the attributes: 
-
-| Attributes| Description |
-| --- | --- |
-| `qr_code_base64` | Data for QR code render.|
-| `qr_code` | Data to make payment code available for copy and paste. |
-
+The response will show the pending payment status and all the information needed to show to the buyer. The `transaction_data` will provide the data to make the payment available via QR code.
 
 ```json
 {
@@ -4140,98 +4186,7 @@ The `transaction_data` will provide the data to make the payment available via Q
   ...,
 }
 ```
-
-### Data to make payment
-
-To make the payment, render the QR code to show it. You can also add an option to copy and paste payment code to make the transaction via Internet Banking.
-
-Add `qr_code_base64` to show the QR code. For example, you can render it like this:
-
-```html
-<img src={`data:image/jpeg;base64,${qr_code_base64}`/>
-```
-
-To show the payment code for copy and paste, you can add `qr_code` like this:
-
-```html
-<label for="copy">Copy Hash:</label>
-<input type="text" id="copy"  value={qr_code}/>
-```
-
-> NOTE
->
-> To consider
->
->  * By default, the customer has 24 hours to make payment.
->  * The code can be used once only.
->  * The code will be shown provided that it is current per date of expiration.
-
-> If you need to refund a payment made by a Pix transfer, you can find this information in [Refunds and cancellations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
-
-
-## Payments date of expiration
-
-### Boleto payments
-
-The default expiration date for boleto payments is 3 days. If you want, you can change this date by sending the `date_of_expiration` field in the payment creation request. The configured date must be between 1 and 30 days from the issue date.
-
-[[[
-```php
-===
-The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
-===
-$payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
-```
-```node
-===
-The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
-===
-date_of_expiration: "2020-05-30T23:59:59.000-04:00",
-```
-```java
-===
-The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
-===
-payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
-```
-```ruby
-===
-The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
-===
-date_of_expiration: '2020-05-30T23:59:59.000-04:00',
-```
-```csharp
-===
-The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
-===
-paymentCreateRequest.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
-```
-```python
-===
-The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
-===
-
-"date_of_expiration": "2020-05-30T23:59:59.000-04:00"
-```
-```curl
-===
-The date uses the ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
-===
-"date_of_expiration": "2020-05-30T23:59:59.000-04:00",
-```
-]]]
-
-The deadline for approval of the boleto is up to 48 working hours. Therefore, we recommend that you set the due date with at least 3 days to ensure that payment is made.
-
-> WARNING
->
-> Important
->
-> If the boleto is paid after the expiration date, the amount will be refunded to the payer's Mercado Pago account.
-
-### Pix payments
-
-By default, Pix payments expire in 24 hours. You can change this field `date_of_expiration` when creating the payment. The set date should be between 30 minutes and up to 30 days from issue date.
+With Pix payment you can also define the validity period of the payment code sent to the customer after placing the order, this being the period the customer will have to pay for the purchase. By default, the expiration date for payments with Pix is 24 hours, but you can change it by sending the `date_of_expiration` field in the payment creation request, the configured date must be between 30 minutes and up to 30 days from the date of issue.
 
 [[[
 ```php
@@ -4285,21 +4240,35 @@ The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 >
 > If you try to make the payment after the date of expiration set, the transaction will be rejected.
 
-## Cancel payments
+ Attributes| Description |
+| --- | --- |
+| `qr_code_base64` | Data for QR code render.|
+| `qr_code` | Data to make payment code available for copy and paste. |
 
-To avoid collection issues, you need to cancel expired payments. Cash payments should be paid within 3 to 5 business days, based on their relevant term.
+## Data to make payment
 
-Take into account that **you can only cancel payments in process or pending status**. If a payment expires after 30 days, the cancellation is automatic and the final status will be cancelled or expired.
+To make the payment, render the QR code to show it. The code can only be used once and will be displayed as long as it is still valid.
 
-For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
+You can also add an option to copy and paste the payment code, which will allow you to carry out the transaction from Internet Banking. To render the QR code follow the steps below.
 
-## Payment credit times
+1. Add `qr_code_base64` to show the QR code. For example, you can render it like this:
 
-Each payment method has its own credit times; it is immediate in some cases, while in others, it may take up to 3 business days.
+```html
+<img src={`data:image/jpeg;base64,${qr_code_base64}`/>
+```
 
-Check [credit times by payment method](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265) whenever you need to.
+2. To show the payment code for copy and paste, you can add `qr_code` like this:
 
-------------
+```html
+<label for="copy">Copy Hash:</label>
+<input type="text" id="copy"  value={qr_code}/>
+```
+
+> NOTE
+>
+> Important
+>
+> If you need to refund a payment made by a Pix transfer, you can find this information in [Refunds and cancellations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
 
 ---
 ### Next steps

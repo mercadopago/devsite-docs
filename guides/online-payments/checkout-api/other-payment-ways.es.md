@@ -3864,28 +3864,87 @@ En el campo `external_resource_url` vas a encontrar una dirección que contiene 
 >
 > El cliente tiene entre 3 a 5 días para pagar según el medio de pago. Luego de este tiempo, debes cancelarlo.
 
-<br>
-<span></span>
+## Fecha de vencimiento para pagos
 
-> SERVER_SIDE
+### Pagos con boleto
+
+Por defecto, la fecha de vencimiento para los pagos con Pix es de 24 horas. Si quieres, puedes cambiarla enviando el campo `date_of_expiration` en la solicitud de creación de pago. La fecha configurada debe ser entre 30 minutos y hasta 30 días a partir de la fecha de emisión.
+
+[[[
+```php
+===
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+$payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
+```
+```node
+===
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+date_of_expiration: "2020-05-30T23:59:59.000-04:00",
+```
+```java
+===
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
+```
+```ruby
+===
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+date_of_expiration: '2020-05-30T23:59:59.000-04:00',
+```
+```csharp
+===
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+paymentCreateRequest.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
+```
+```python
+===
+La fecha usa el formato ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
+===
+
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00"
+```
+```curl
+===
+La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
+===
+"date_of_expiration": "2020-05-30T23:59:59.000-04:00",
+```
+]]]
+
+El período de acreditación del boleto es de 48h hábiles. Por lo tanto, te recomendamos establecer la fecha de vencimiento con al menos 3 días para asegurarse de que se realice el pago.
+
+> WARNING
 >
-> h2
+> Importante
 >
-> Recibir pagos con Pix
+> Si el pago se realiza después de la fecha de vencimiento, el monto se reembolsará a la cuenta de Mercado Pago del pagador.
 
-Ofrece la opción de recibir pagos al instante con Pix desde cualquier banco o billetera digital a través de un código QR o un código de pago.
+## Cancelar un pago
 
-### Requisito previo
+Es importante que puedas cancelar los pagos luego de su vencimiento para evitar problemas con el cobro. Los pagos de medios en efectivo deben ser pagados entre los 3 a 5 días hábiles según el tiempo de cada uno.
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtén una llave Pix
+Ten en cuenta que **solo puedes cancelar los pagos que se encuentren en estado pendiente o en proceso**. Si la expiración de un pago se produce a los 30 días, la cancelación es automática y el estado final será de cancelado o expirado.
 
-Para comenzar, debes tener registrada una llave Pix en la cuenta del vendedor. Este dato es único, sirve para identificar tu cuenta y te permitirá utilizar las funcionalidades del medio de pago.
+Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).
 
-[Conoce cómo crear una llave Pix](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required)
+## Tiempos de acreditación del pago
 
-### Datos para el pago
+Cada medio de pago tiene su propia fecha de acreditación, en algunos casos es inmediata y en otros puede demorar hasta 3 días hábiles.
 
-Luego de [capturar los datos](#bookmark_captura_los_datos_para_el_pago) con el formulario, para poder recibir pagos con Pix, debes enviar la dirección de e-mail del comprador, el tipo y número de documento, el medio de pago y el detalle del monto.
+Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265) siempre que lo necesites.
+
+[TXTSNIPPET][/guides/snippets/test-integration/pix-intro]
+
+Después de registrar la clave Pix, siga la documentación para realizar la integración o, si lo prefiere, [ver en Github](https://github.com/mercadopago/pix-payment-sample) para ver ejemplos de cómo agregar pagos Pix por integrarse con Checkout API.
+
+## Configurar el pago con Pix
+
+Después de registrar la clave Pix y capturar los datos de pago con el formulario, para recibir pagos con Pix debes reenviar el correo electrónico del comprador, tipo y número de documento, método de pago y detalle del valor.
 
 [[[
 ```php
@@ -4096,22 +4155,7 @@ curl -X POST \
 ```
 ]]]
 
-<br>
-
-La respuesta va a mostrar el estado pendiente del pago y toda la información que necesitas para mostrar al comprador.
-
-> WARNING
->
-> Importante
->
-> Recuerda que para poder generar pagos, antes debes [crear una llave Pix](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required).
-
-El valor `transaction_data` te brindará los datos para disponibilizar la opción de pago a través de un código QR. Vas a encontrar los siguientes atributos:
-
-| Atributos| Descripción |
-| --- | --- |
-| `qr_code_base64` | Dato para renderizar el código QR.|
-| `qr_code` | Dato para armar un código de pago para copiar y pegar. |
+La respuesta va a mostrar el estado pendiente del pago y toda la información que necesitas para mostrar al comprador. El valor `transaction_data` te brindará los datos para disponibilizar la opción de pago a través de un código QR. Vas a encontrar los siguientes atributos:
 
 ```json
 {
@@ -4144,98 +4188,7 @@ El valor `transaction_data` te brindará los datos para disponibilizar la opció
 }
 ```
 
-### Datos para efectuar el pago
-
-Para que se efectúe el pago, deberás renderizar el código QR para poder mostrarlo. También puedes agregar una opción para copiar y pegar el código de pago, que permitirá realizar la transacción desde una Banca por Internet.
-
-Tienes que agregar el `qr_code_base64` para poder mostrar el código QR. Por ejemplo, puedes renderizarlo de la siguiente manera:
-
-```html
-<img src={`data:image/jpeg;base64,${qr_code_base64}`/>
-```
-
-Para mostrar la opción que te permitirá copiar y pegar el código de pago, puedes sumar el `qr_code` de esta forma:
-
-```html
-<label for="copiar">Copiar Hash:</label>
-<input type="text" id="copiar"  value={qr_code}/>
-```
-
-> NOTE
->
-> Ten en cuenta
->
->  * Por defecto, el cliente tiene 24 horas para realizar el pago.
->  * El código puede ser utilizado una sola vez.
->  * El código se va a mostrar siempre que esté vigente según la fecha de expiración.
-
-> Si necesitas devolver un pago realizado a través de una transferencia Pix, puedes encontrar esta información en [Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).
-
-
-## Fecha de vencimiento para pagos
-
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pagos con boleto
-
-
-Por defecto, la fecha de vencimiento para los pagos con Pix es de 24 horas. Si quieres, puedes cambiarla enviando el campo `date_of_expiration` en la solicitud de creación de pago. La fecha configurada debe ser entre 30 minutos y hasta 30 días a partir de la fecha de emisión.
-
-[[[
-```php
-===
-La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
-===
-$payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
-```
-```node
-===
-La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
-===
-date_of_expiration: "2020-05-30T23:59:59.000-04:00",
-```
-```java
-===
-La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
-===
-payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
-```
-```ruby
-===
-La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
-===
-date_of_expiration: '2020-05-30T23:59:59.000-04:00',
-```
-```csharp
-===
-La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
-===
-paymentCreateRequest.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
-```
-```python
-===
-La fecha usa el formato ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
-===
-
-"date_of_expiration": "2020-05-30T23:59:59.000-04:00"
-```
-```curl
-===
-La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
-===
-"date_of_expiration": "2020-05-30T23:59:59.000-04:00",
-```
-]]]
-
-El período de acreditación del boleto es de 48h hábiles. Por lo tanto, te recomendamos establecer la fecha de vencimiento con al menos 3 días para asegurarse de que se realice el pago.
-
-> WARNING
->
-> Importante
->
-> Si el pago se realiza después de la fecha de vencimiento, el monto se reembolsará a la cuenta de Mercado Pago del pagador.
-
-
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pagos con Pix
-Por defecto, la fecha de vencimiento para los pagos con Pix es de 24 horas. Si quieres, puedes cambiarla enviando el campo `date_of_expiration` en la solicitud de creación de pago. La fecha configurada debe ser entre 1 y 30 días a partir de la fecha de emisión.
+Con el pago Pix también se puede definir el período de validez del código de pago enviado al cliente después de realizar el pedido, siendo este el período que el cliente tendrá que pagar por la compra. Por defecto, la fecha de vencimiento para pagos con Pix es de 24 horas, pero puedes cambiarla enviando el campo `date_of_expiration` en la solicitud de creación de pago, la fecha configurada debe estar entre 30 minutos y hasta 30 días a partir de la fecha. de emisión.
 
 [[[
 ```php
@@ -4289,22 +4242,30 @@ La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 >
 > Si el pago se intenta realizar fuera de la fecha de expiración establecida, la operación será rechazada.
 
+### Datos para efectuar el pago
 
-## Cancelar un pago
+Para que se efectúe el pago, deberás renderizar el código QR para poder mostrarlo. El código solo se puede usar una vez y se mostrará mientras siga siendo válido.
 
-Es importante que puedas cancelar los pagos luego de su vencimiento para evitar problemas con el cobro. Los pagos de medios en efectivo deben ser pagados entre los 3 a 5 días hábiles según el tiempo de cada uno.
+También puedes agregar una opción para copiar y pegar el código de pago, que permitirá realizar la transacción desde una Banca por Internet.
 
-Ten en cuenta que **solo puedes cancelar los pagos que se encuentren en estado pendiente o en proceso**. Si la expiración de un pago se produce a los 30 días, la cancelación es automática y el estado final será de cancelado o expirado.
+1. Tienes que agregar el `qr_code_base64` para poder mostrar el código QR. Por ejemplo, puedes renderizarlo de la siguiente manera:
 
-Puedes encontrar toda la información en la [sección Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).
+```html
+<img src={`data:image/jpeg;base64,${qr_code_base64}`/>
+```
 
-## Tiempos de acreditación del pago
+2. Para mostrar la opción que te permitirá copiar y pegar el código de pago, puedes sumar el `qr_code` de esta forma:
 
-Cada medio de pago tiene su propia fecha de acreditación, en algunos casos es inmediata y en otros puede demorar hasta 3 días hábiles.
+```html
+<label for="copiar">Copiar Hash:</label>
+<input type="text" id="copiar"  value={qr_code}/>
+```
 
-Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265) siempre que lo necesites.
-
-------------
+> NOTE
+>
+> Importante
+>
+> Si necesitas devolver un pago realizado a través de una transferencia Pix, puedes encontrar esta información en [Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).
 
 ---
 ### Próximos pasos
