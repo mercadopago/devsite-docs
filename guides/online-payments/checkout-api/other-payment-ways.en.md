@@ -4245,7 +4245,7 @@ The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 | `qr_code_base64` | Data for QR code render.|
 | `qr_code` | Data to make payment code available for copy and paste. |
 
-## Data to make payment
+## Data to make the payment
 
 To make the payment, render the QR code to show it. The code can only be used once and will be displayed as long as it is still valid.
 
