@@ -4250,7 +4250,9 @@ A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 
 Para o pagamento ser realizado, você deverá renderizar o código QR vigente, que deverá ser utilizado somente uma vez.
 
-Você também pode adicionar uma opção para copiar e colar o código de pagamento, que permitirá realizar a transação a partir de Internet Banking. Para renderizar o código QR siga os passos abaixo.
+Você também pode adicionar uma opção para copiar e colar o código de pagamento, o que permitirá realizar a transação a partir de Internet Banking. 
+
+Para renderizar o código QR siga os passos abaixo:
 
 1. Adicione o `qr_code_base64` para poder mostrar o código QR, como mostra o exemplo abaixo.
 
