@@ -4270,7 +4270,8 @@ Para renderizar o código QR siga os passos abaixo:
 > NOTE
 >
 > Importante
-Se você precisar devolver um pagamento feito por transferência Pix, você pode encontrar essas informações no artigo de [devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
+>
+> Encontre as informações necessárias para devolver um pagamento feito por transferência Pix no artigo de [devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
 ---
 ### Próximos passos
