@@ -3341,7 +3341,7 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 
 ## Consulta os meios de pagamento disponíveis
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meios de pagamento
+### Meios de pagamento
 
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
@@ -3940,7 +3940,7 @@ Revise os [tempos de aprovação por meio de pagamento](https://www.mercadopago.
 
 Após cadastrar a chave Pix, siga a documentação para realizar a integração ou, se preferir, [veja no Github](https://github.com/mercadopago/pix-payment-sample) os exemplos de como adicionar pagamentos Pix integrando com o Checkout Transparente. 
 
-## Configurar pagamento com Pix
+### Configurar pagamento com Pix
 
 Após cadastrar a chave Pix e capturar os dados para pagamento com o formulário, para poder receber pagamentos com Pix você deve encaminhar o e-mail do comprador, o tipo e número de documento, o meio de pagamento e o detalhe do valor. 
 
@@ -4186,7 +4186,7 @@ A resposta mostrará o status pendente do pagamento e todas as informações que
 ```
 Com o pagamento com Pix você também poderá definir o prazo de validade do código de pagamento enviado ao cliente após a realização do pedido, sendo este o período que o cliente terá para pagar a compra. Por default, a data de vencimento para os pagamentos com Pix é de 24 horas, mas você poderá alterá-la enviando o campo `date_of_expiration` na solicitação de criação de pagamento, sendo que a data configurada deve ser entre 30 minutos e até 30 dias a partir da data de emissão.
 
-[[
+[[[
 ```php
 ===
 A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
@@ -4262,6 +4262,7 @@ Você também pode adicionar uma opção para copiar e colar o código de pagame
 > Importante
 Se você precisar devolver um pagamento feito por transferência Pix, você pode encontrar essas informações no artigo de [devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
+------------
 ---
 ### Próximos passos
 

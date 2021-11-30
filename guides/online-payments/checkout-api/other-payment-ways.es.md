@@ -514,7 +514,7 @@ Puedes encontrar toda la información en la [sección Devoluciones y cancelacion
 
 Cada medio de pago tiene su propia fecha de acreditación, en algunos casos es inmediata y en otros puede demorar hasta 3 días hábiles.
 
-Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Medios-de-pago-y-acreditaci-n_221) siempre que lo necesites.
+Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.com.ar/ayuda/Medios-de-pago-y-acreditaci-n_221) siempre que lo necesites.
 
 ------------
 
@@ -3942,7 +3942,7 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 
 Después de registrar la clave Pix, siga la documentación para realizar la integración o, si lo prefiere, [ver en Github](https://github.com/mercadopago/pix-payment-sample) para ver ejemplos de cómo agregar pagos Pix por integrarse con Checkout API.
 
-## Configurar el pago con Pix
+### Configurar el pago con Pix
 
 Después de registrar la clave Pix y capturar los datos de pago con el formulario, para recibir pagos con Pix debes reenviar el correo electrónico del comprador, tipo y número de documento, método de pago y detalle del valor.
 
@@ -4267,6 +4267,7 @@ También puedes agregar una opción para copiar y pegar el código de pago, que 
 >
 > Si necesitas devolver un pago realizado a través de una transferencia Pix, puedes encontrar esta información en [Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).
 
+------------
 ---
 ### Próximos pasos
 

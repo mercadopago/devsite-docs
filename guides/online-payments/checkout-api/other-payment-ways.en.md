@@ -4270,6 +4270,7 @@ You can also add an option to copy and paste the payment code, which will allow 
 >
 > If you need to refund a payment made by a Pix transfer, you can find this information in [Refunds and cancellations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
 
+------------
 ---
 ### Next steps
 
