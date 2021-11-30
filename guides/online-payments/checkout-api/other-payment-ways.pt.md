@@ -3944,7 +3944,7 @@ Revise os [tempos de aprovação por meio de pagamento](https://www.mercadopago.
 
 [TXTSNIPPET][/guides/snippets/test-integration/pix-intro]
 
-Após cadastrar a chave Pix, siga a documentação para realizar a integração ou, se preferir, [veja no Github](https://github.com/mercadopago/pix-payment-sample) os exemplos de como adicionar pagamentos Pix integrando com o Checkout Transparente. 
+Após cadastrar a chave Pix, siga a documentação para realizar a integração ou, se preferir, [veja no Github](https://github.com/mercadopago/pix-payment-sample) os exemplos de como adicionar pagamentos Pix integrando com o Checkout API. 
 
 ## Configurar pagamento com Pix
 
