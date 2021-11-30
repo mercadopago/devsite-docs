@@ -3866,7 +3866,13 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 
 ### Pagamentos com boleto
 
-A data de expiração padrão para pagamentos de boleto é de 3 dias. Opcionalmente é possível alterar essa data enviando o campo `date_of_expiration` na requisição de criação do pagamento. A data configurada deve estar entre 1 e 30 dias a partir da data de emissão.
+A data de expiração padrão para pagamentos com boleto é de 3 dias. Opcionalmente, é possível alterar essa data enviando o campo `date_of_expiration` na requisição de criação do pagamento. 
+
+> NOTE
+>
+> Importante
+> 
+> A data configurada deve estar entre 1 e 30 dias a partir da data de emissão do boleto.
 
 [[[
 ```php
@@ -3914,7 +3920,7 @@ A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-O prazo de aprovação do boleto é de até 48h úteis. Por isso recomenda-se configurar a data de expiração com no mínimo 3 dias para garantir que o pagamento seja abonado.
+O prazo de aprovação do boleto é de até 48h úteis. Por isso, recomenda-se configurar a data de expiração com no mínimo 3 dias para garantir que o pagamento seja abonado.
 
 > WARNING
 >
@@ -3924,9 +3930,9 @@ O prazo de aprovação do boleto é de até 48h úteis. Por isso recomenda-se co
 
 ## Cancelar um pagamento
 
-É importante que possa cancelar pagamentos assim que vençam para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 dias úteis de acordo com o tempo de cada um.
+É importante que se possa cancelar pagamentos vencidos para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 dias úteis de acordo com o tempo de cada um.
 
-Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 dias, o cancelamento é automático e o estado final será cancelado ou expirado.
+Tenha em conta que **é possível cancelar apenas os pagamentos que se encontram pendentes ou em processo**. Se a expiração de um pagamento ocorre aos 30 dias, o cancelamento é automático e o estado final do mesmo será cancelado ou expirado.
 
 Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
@@ -3938,11 +3944,11 @@ Revise os [tempos de aprovação por meio de pagamento](https://www.mercadopago.
 
 [TXTSNIPPET][/guides/snippets/test-integration/pix-intro]
 
-Após cadastrar a chave Pix, siga a documentação para realizar a integração ou, se preferir, [veja no Github](https://github.com/mercadopago/pix-payment-sample) os exemplos de como adicionar pagamentos Pix integrando com o Checkout Transparente. 
+Após cadastrar a chave Pix, siga a documentação para realizar a integração ou, se preferir, [veja no Github](https://github.com/mercadopago/pix-payment-sample) os exemplos de como adicionar pagamentos Pix integrando com o Checkout API. 
 
 ### Configurar pagamento com Pix
 
-Após cadastrar a chave Pix e capturar os dados para pagamento com o formulário, para poder receber pagamentos com Pix você deve encaminhar o e-mail do comprador, o tipo e número de documento, o meio de pagamento e o detalhe do valor. 
+Após cadastrar a chave Pix e capturar os dados para pagamento com o formulário, você deve encaminhar o e-mail do comprador, o tipo e número de documento, o meio de pagamento utilizado e o detalhe do valor. 
 
 [[[
 ```php
@@ -4152,7 +4158,7 @@ curl -X POST \
 ```
 ]]]
 
-A resposta mostrará o status pendente do pagamento e todas as informações que você precisa para mostrar ao comprador. O valor `transaction_data` oferecerá os dados para QR code.
+A resposta mostrará o estado pendente do pagamento e todas as informações que você precisa para mostrar ao comprador. O valor `transaction_data` oferecerá os dados para código QR.
 
 ```json
 {
@@ -4184,7 +4190,9 @@ A resposta mostrará o status pendente do pagamento e todas as informações que
   ...,
 }
 ```
-Com o pagamento com Pix você também poderá definir o prazo de validade do código de pagamento enviado ao cliente após a realização do pedido, sendo este o período que o cliente terá para pagar a compra. Por default, a data de vencimento para os pagamentos com Pix é de 24 horas, mas você poderá alterá-la enviando o campo `date_of_expiration` na solicitação de criação de pagamento, sendo que a data configurada deve ser entre 30 minutos e até 30 dias a partir da data de emissão.
+Com Pix, você também pode escolher o prazo que o cliente terá para pagar a compra, definindo a validade do código de pagamento enviado a ele após a realização do pedido. 
+
+Por padrão, a data de vencimento para pagamentos com Pix é de 24 horas, mas você pode alterá-la enviando o campo `date_of_expiration` na solicitação de criação de pagamento. Note que a data configurada deve ser entre 30 minutos e até 30 dias a partir da data de emissão.
 
 [[[
 ```php
@@ -4240,9 +4248,11 @@ A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 
 ## Dados para realizar o pagamento
 
-Para o pagamento ser realizado, você deverá renderizar o código QR para poder mostrá-lo. O código pode ser utilizado somente uma vez e será exibido desde que ainda esteja vigente.
+Para o pagamento ser realizado, você deverá renderizar o código QR vigente, que deverá ser utilizado somente uma vez.
 
-Você também pode adicionar uma opção para copiar e colar o código de pagamento, que permitirá realizar a transação a partir de Internet Banking. Para renderizar o código QR siga os passos abaixo.
+Você também pode adicionar uma opção para copiar e colar o código de pagamento, o que permitirá realizar a transação a partir de Internet Banking. 
+
+Para renderizar o código QR siga os passos abaixo:
 
 1. Adicione o `qr_code_base64` para poder mostrar o código QR, como mostra o exemplo abaixo.
 
@@ -4250,7 +4260,7 @@ Você também pode adicionar uma opção para copiar e colar o código de pagame
 <img src={`data:image/jpeg;base64,${qr_code_base64}`/>
 ```
 
-2. Para apresentar a opção que permitirá copiar e colar o código de pagamento, você pode adicionar o `qr_code` da seguinte forma:
+2. Para apresentar a opção que permitirá copiar e colar o código de pagamento, adicione o `qr_code` da seguinte forma:
 
 ```html
 <label for="copiar">Copiar Hash:</label>
@@ -4260,7 +4270,8 @@ Você também pode adicionar uma opção para copiar e colar o código de pagame
 > NOTE
 >
 > Importante
-Se você precisar devolver um pagamento feito por transferência Pix, você pode encontrar essas informações no artigo de [devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
+>
+> Encontre as informações necessárias para devolver um pagamento feito por transferência Pix no artigo de [devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
 ------------
 ---

@@ -3916,7 +3916,7 @@ La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-El período de acreditación del boleto es de 48h hábiles. Por lo tanto, te recomendamos establecer la fecha de vencimiento con al menos 3 días para asegurarse de que se realice el pago.
+El período de acreditación del boleto es de 48h hábiles. Por lo tanto, te recomendamos establecer la fecha de vencimiento con al menos 3 días para asegurarte de que se realice el pago.
 
 > WARNING
 >
@@ -3940,7 +3940,7 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 
 [TXTSNIPPET][/guides/snippets/test-integration/pix-intro]
 
-Después de registrar la clave Pix, siga la documentación para realizar la integración o, si lo prefiere, [ver en Github](https://github.com/mercadopago/pix-payment-sample) para ver ejemplos de cómo agregar pagos Pix por integrarse con Checkout API.
+Después de registrar la clave Pix, sigue la documentación para realizar la integración o, si lo prefieres, [la puedes ver en Github](https://github.com/mercadopago/pix-payment-sample) para ver ejemplos de cómo agregar pagos Pix por integrarse con Checkout API.
 
 ### Configurar el pago con Pix
 
@@ -4188,7 +4188,7 @@ La respuesta va a mostrar el estado pendiente del pago y toda la información qu
 }
 ```
 
-Con el pago Pix también se puede definir el período de validez del código de pago enviado al cliente después de realizar el pedido, siendo este el período que el cliente tendrá que pagar por la compra. Por defecto, la fecha de vencimiento para pagos con Pix es de 24 horas, pero puedes cambiarla enviando el campo `date_of_expiration` en la solicitud de creación de pago, la fecha configurada debe estar entre 30 minutos y hasta 30 días a partir de la fecha. de emisión.
+Con el pago Pix también se puede definir el período de validez del código de pago enviado al cliente después de realizar el pedido, siendo este el período que el cliente tendrá que pagar por la compra. Por defecto, la fecha de vencimiento para pagos con Pix es de 24 horas, pero puedes cambiarla enviando el campo `date_of_expiration` en la solicitud de creación de pago. La fecha configurada debe estar entre 30 minutos y hasta 30 días a partir de la fecha de emisión.
 
 [[[
 ```php
