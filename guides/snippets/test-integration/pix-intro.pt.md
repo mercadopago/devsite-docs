@@ -1,6 +1,6 @@
 # Receber pagamentos com Pix
 
-Você pode oferecer a opção de receber pagamentos instantaneamente com Pix de qualquer banco ou carteira digital, seja através de um **código QR** ou de um **código de pagamento** em que você poderá definir um prazo de validade para que o pagamento seja efetuado.
+Você pode receber pagamentos instantaneamente com Pix de qualquer banco ou carteira digital, seja através de um **código QR** ou de um **código de pagamento** com um prazo de validade para que o pagamento seja efetuado.
 
 > WARNING
 >
