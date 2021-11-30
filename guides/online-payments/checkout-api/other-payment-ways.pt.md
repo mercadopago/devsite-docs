@@ -4158,7 +4158,7 @@ curl -X POST \
 ```
 ]]]
 
-A resposta mostrará o status pendente do pagamento e todas as informações que você precisa para mostrar ao comprador. O valor `transaction_data` oferecerá os dados para QR code.
+A resposta mostrará o estado pendente do pagamento e todas as informações que você precisa para mostrar ao comprador. O valor `transaction_data` oferecerá os dados para código QR.
 
 ```json
 {
