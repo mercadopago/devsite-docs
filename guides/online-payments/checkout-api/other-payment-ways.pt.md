@@ -4260,7 +4260,7 @@ Para renderizar o código QR siga os passos abaixo:
 <img src={`data:image/jpeg;base64,${qr_code_base64}`/>
 ```
 
-2. Para apresentar a opção que permitirá copiar e colar o código de pagamento, você pode adicionar o `qr_code` da seguinte forma:
+2. Para apresentar a opção que permitirá copiar e colar o código de pagamento, adicione o `qr_code` da seguinte forma:
 
 ```html
 <label for="copiar">Copiar Hash:</label>
