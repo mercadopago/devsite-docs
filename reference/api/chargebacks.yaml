@@ -117,7 +117,7 @@ paths:
             type: string
             example: 77e1c83b-7bb0-437b-bc50-a7a58e5660ac
       responses:
-        '201':
+        '200':
           description: Created
           content:
             application/json:
