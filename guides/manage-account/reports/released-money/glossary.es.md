@@ -3,6 +3,14 @@
 
 Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado con todos ellos. ¡Usa este glosario para no perderte!
 
+----[mpe]----
+> INFO
+>
+> Conoce los términos que necesitas para leer tu reporte.
+>
+> Usa este glosario para conocer los términos de los reportes que generes con fechas anteriores a (mes). Para los reportes que abarquen fechas posteriores consulta este Glosario(vinculo).
+------------
+
 | Nombre de la columna del reporte | Qué significa |
 | --- | --- |
 | DATE | Fecha de liberación, bloqueo o desbloqueo, según corresponda.|
