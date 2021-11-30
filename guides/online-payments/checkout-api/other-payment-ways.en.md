@@ -4186,7 +4186,7 @@ The response will show the pending payment status and all the information needed
   ...,
 }
 ```
-With Pix payment you can also define the validity period of the payment code sent to the customer after placing the order, this being the period the customer will have to pay for the purchase. By default, the expiration date for payments with Pix is 24 hours, but you can change it by sending the `date_of_expiration` field in the payment creation request, the configured date must be between 30 minutes and up to 30 days from the date of issue.
+With Pix payment you can also define the validity period of the payment code sent to the customer after placing the order, this being the period the customer will have to pay for the purchase. By default, the expiration date for payments with Pix is 24 hours, but you can change it by sending the `date_of_expiration` field in the payment creation request. The configured date must be between 30 minutes and up to 30 days from the date of issue.
 
 [[[
 ```php
