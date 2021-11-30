@@ -10,7 +10,7 @@ Você pode receber pagamentos instantaneamente com Pix de qualquer banco ou cart
 
 ## Cadastrar chave Pix
 
-Para começar a utilizar o Pix como forma de pagamento, é necessário ter cadastrada uma chave Pix na conta do vendedor, assim será possível identificar sua conta e permitirá também que você utilize todas as funcionalidades do meio de pagamento em questão. 
+Para começar a utilizar o Pix como forma de pagamento e se beneficiar de todas as suas funcionalidades, é necessário ter cadastrada uma chave Pix na conta do vendedor para fins de identificação.  
 
 Veja abaixo como cadastrar sua chave Pix:
 
