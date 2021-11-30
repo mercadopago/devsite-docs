@@ -100,8 +100,8 @@ paths:
     post:
       tags:
         - $ref: "#/tags/marketplace"
-      summary: Estorno Completo
-      description: Realizar estorno completo de um pedido que você deseja.
+      summary: Total chargeback
+      description: Perform a full chargeback for a specific order
       parameters:
         - name: id
           in: path
@@ -112,7 +112,7 @@ paths:
             example: 12345678901
         - name: X-Idempotency-Key
           in: header
-          description: Chave de Idempotência. Quando definido um valor, evita que um estorno seja realizado em duplicidade.
+          description: Idempotency key. Once a value has been defined, it prevents duplicated chargebacks
           schema:
             type: string
             example: 77e1c83b-7bb0-437b-bc50-a7a58e5660ac
@@ -129,55 +129,54 @@ paths:
                     description: Chargeback identifier
                   payment_id:
                     type: string
-                    description: Payment id associado ao pedido
+                    description: Payment id associated to the order
                   amount:
                     type: number
-                    description: Valor estornado
+                    description: Returned amount
                   source:
                     type: array
-                    description: Lista de fonte
+                    description: Fonts list
                     items:
                       type: object
                       properties:
                         id:
                           type: string
-                          description: Identificador
+                          description: Identifier
                         name:
                           type: string
-                          description: Nome
+                          description: Name
                         type:
                           type: string
-                          description: Tipo
+                          description: Type
                   date_created:
                     type: string
                     format: date
-                    description: Data de criação do estorno
+                    description: Chargeback creation data
                   unique_sequence_number:
                     type: string
-                    description: Número de sequência
+                    description: Sequence number
                   refund_mode:
                     type: string
-                    description: Modo de estorno
+                    description: Chargeback mode
                   adjustment_amount:
                     type: number
-                    description: Ajuste do estorno
+                    description: Chargeback adjustment
                   status:
                     type: string
-                    description: Status do estorno
+                    description: Chargeback status
                   reason:
                     type: string
-                    description: Motivo do estorno
+                    description: Chargeback reason
                   label:
                     type: array
-                    description: Lista de rotulos
+                    description: Labels list
                     items:
                       type: object
                   partition_details:
                     type: array
-                    description: Detalhes
+                    description: Details
                     items:
                       type: object
-
         '401':
           description: Invalid Token
           content:
@@ -187,19 +186,18 @@ paths:
                 properties:
                   cause:
                     type: array
-                    description: Lista de motivo
+                    description: Reasons list
                     items:
                       type: object
                   message:
                     type: string
-                    description: Mensagem do erro
+                    description: Error message
                   error:
                     type: string
-                    description: Erro
+                    description: Error
                   status:
                     type: number
                     description: Status
-
         '404':
           description: Refund not found
           content:
@@ -209,25 +207,25 @@ paths:
                 properties:
                   message:
                     type: string
-                    description: Mensagem de erro
+                    description: Error message
                   error:
                     type: string
-                    description: Erro
+                    description: Error
                   status:
                     type: number
                     description: Status
                   cause:
                     type: array
-                    description: Lista causas
+                    description: Reasons list
                     items:
                       type: object
                       properties:
                         code:
                           type: number
-                          description: Código do motivo
+                          description: Reason code
                         description:
                           type: string
-                          description: Descrição do erro
+                          description: Error description
                         data:
                           type: string
-                          description: Dados referente ao erro
+                          description: Error information
