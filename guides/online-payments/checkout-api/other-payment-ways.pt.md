@@ -4190,7 +4190,9 @@ A resposta mostrará o estado pendente do pagamento e todas as informações que
   ...,
 }
 ```
-Com o pagamento com Pix você também poderá definir o prazo de validade do código de pagamento enviado ao cliente após a realização do pedido, sendo este o período que o cliente terá para pagar a compra. Por default, a data de vencimento para os pagamentos com Pix é de 24 horas, mas você poderá alterá-la enviando o campo `date_of_expiration` na solicitação de criação de pagamento, sendo que a data configurada deve ser entre 30 minutos e até 30 dias a partir da data de emissão.
+Com Pix, você também pode escolher o prazo que o cliente terá para pagar a compra, definindo a validade do código de pagamento enviado a ele após a realização do pedido. 
+
+Por padrão, a data de vencimento para pagamentos com Pix é de 24 horas, mas você pode alterá-la enviando o campo `date_of_expiration` na solicitação de criação de pagamento. Note que a data configurada deve ser entre 30 minutos e até 30 dias a partir da data de emissão.
 
 [[
 ```php
