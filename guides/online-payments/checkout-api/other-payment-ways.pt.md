@@ -3920,7 +3920,7 @@ A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-O prazo de aprovação do boleto é de até 48h úteis. Por isso recomenda-se configurar a data de expiração com no mínimo 3 dias para garantir que o pagamento seja abonado.
+O prazo de aprovação do boleto é de até 48h úteis. Por isso, recomenda-se configurar a data de expiração com no mínimo 3 dias para garantir que o pagamento seja abonado.
 
 > WARNING
 >
