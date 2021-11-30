@@ -3866,7 +3866,13 @@ No campo `external_resource_url` você encontrará um endereço que contêm as i
 
 ### Pagamentos com boleto
 
-A data de expiração padrão para pagamentos de boleto é de 3 dias. Opcionalmente é possível alterar essa data enviando o campo `date_of_expiration` na requisição de criação do pagamento. A data configurada deve estar entre 1 e 30 dias a partir da data de emissão.
+A data de expiração padrão para pagamentos com boleto é de 3 dias. Opcionalmente, é possível alterar essa data enviando o campo `date_of_expiration` na requisição de criação do pagamento. 
+
+> NOTE
+>
+> Importante
+> 
+> A data configurada deve estar entre 1 e 30 dias a partir da data de emissão do boleto.
 
 [[[
 ```php
