@@ -3940,7 +3940,7 @@ Revisa los [tiempos de acreditación por medio de pago](https://www.mercadopago.
 
 [TXTSNIPPET][/guides/snippets/test-integration/pix-intro]
 
-Después de registrar la clave Pix, siga la documentación para realizar la integración o, si lo prefiere, [ver en Github](https://github.com/mercadopago/pix-payment-sample) para ver ejemplos de cómo agregar pagos Pix por integrarse con Checkout API.
+Después de registrar la clave Pix, sigue la documentación para realizar la integración o, si lo prefieres, [la puedes ver en Github](https://github.com/mercadopago/pix-payment-sample) para ver ejemplos de cómo agregar pagos Pix por integrarse con Checkout API.
 
 ## Configurar el pago con Pix
 
