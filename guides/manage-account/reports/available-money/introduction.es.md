@@ -10,6 +10,13 @@ El reporte de Dinero retirado es un **informe descargable que te permite conocer
 >
 > Usa el [reporte de ----[mla]----Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberaciones------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.
 
+----[mpe]----
+> WARNING
+>
+> Próximamente verás los registros de tus movimientos en orden cronológico.
+>
+> En los reportes que generes a partir de Diciembre vas a ver todos tus movimientos en el orden en que se realizaron para que puedas identificarlos más fácil y controlar mejor tus ventas.
+------------
 ## ¿Cómo descargo el reporte?
 
 Ten en cuenta que la generación del reporte lleva unos minutos dependiendo de cuánta información quieras que incluya. No siempre estará listo al instante y, hasta que lo esté, verás el estado *En preparación* en la pantalla.
