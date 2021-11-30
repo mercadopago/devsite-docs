@@ -4248,7 +4248,7 @@ A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 
 ## Dados para realizar o pagamento
 
-Para o pagamento ser realizado, você deverá renderizar o código QR para poder mostrá-lo. O código pode ser utilizado somente uma vez e será exibido desde que ainda esteja vigente.
+Para o pagamento ser realizado, você deverá renderizar o código QR vigente, que deverá ser utilizado somente uma vez.
 
 Você também pode adicionar uma opção para copiar e colar o código de pagamento, que permitirá realizar a transação a partir de Internet Banking. Para renderizar o código QR siga os passos abaixo.
 
