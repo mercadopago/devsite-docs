@@ -184,6 +184,10 @@ paths:
               schema:
                 type: object
                 properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 001--Error-Undefined
                   cause:
                     type: array
                     description: Reasons list
