@@ -4254,7 +4254,7 @@ Você também pode adicionar uma opção para copiar e colar o código de pagame
 
 Para renderizar o código QR siga os passos abaixo:
 
-1. Adicione o `qr_code_base64` para poder mostrar o código QR, como mostra o exemplo abaixo.
+1. Adicione o `qr_code_base64` para mostrar o código QR, como mostra o exemplo abaixo:
 
 ```html
 <img src={`data:image/jpeg;base64,${qr_code_base64}`/>
