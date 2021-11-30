@@ -3932,7 +3932,7 @@ O prazo de aprovação do boleto é de até 48h úteis. Por isso, recomenda-se c
 
 É importante que se possa cancelar pagamentos vencidos para evitar problemas de cobrança. Os pagamentos em dinheiro devem ser pagos entre 3 e 5 dias úteis de acordo com o tempo de cada um.
 
-Tenha em conta que **apenas se pode cancelar os pagamentos que se encontram com estado pendente ou em processo**. Se a expiração de um pagamento ocorre aos 30 dias, o cancelamento é automático e o estado final será cancelado ou expirado.
+Tenha em conta que **é possível cancelar apenas os pagamentos que se encontram pendentes ou em processo**. Se a expiração de um pagamento ocorre aos 30 dias, o cancelamento é automático e o estado final do mesmo será cancelado ou expirado.
 
 Encontre toda informação na [seção Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
