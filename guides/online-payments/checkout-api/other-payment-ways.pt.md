@@ -21,7 +21,7 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 
 ## Consulta os meios de pagamento disponíveis
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meios de pagamento
+### Meios de pagamento
 
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
@@ -3343,15 +3343,14 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 
 ### Meios de pagamento
 
-Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
+Além de cartões e Pix, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
 | Tipo de meio de pagamento | Meio de pagamento |
 | --- | --- |
 | `ticket` | Boleto |
 | `ticket` | Pagamento em lotérica |
-| `bank_transfer` | Pix |
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os meios de pagamento disponíveis
+### Obtenha os meios de pagamento disponíveis
 
 Consulte os meios de pagamento disponíveis sempre que necessite.
 
@@ -3446,20 +3445,6 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
         "settings": [],
         "additional_info_needed": []
     },
-    {
-        "id": "pix",
-        "name": "PIX",
-        "payment_type_id": "bank_transfer",
-        "status": "active",
-        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
-        "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
-        "deferred_capture": "does_not_apply",
-        "settings": [],
-        "additional_info_needed": []
-    },
-    {
-        "...": "..."
-    }
 ]
 ```
 
@@ -3474,7 +3459,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 >
 > Capture os dados para pagamento
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa a biblioteca MercadoPago.js
+### 1. Usa a biblioteca MercadoPago.js
 
 **Lembre-se usar nossa biblioteca oficial para acessar a API de Mercado Pago** no seu frontend e coletar os dados de forma segura.
 
@@ -3484,7 +3469,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 
 > Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout Transparente anterior](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v1/other-payment-ways).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o formulário de pagamento
+### 2. Adicione o formulário de pagamento
 
 Para realizar a captura dos dados sensíveis dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação.
 
@@ -3549,9 +3534,9 @@ const mp = new MercadoPago("YOUR_PUBLIC_KEY");
 
 > Se ainda não possui conta para ver suas credenciais, [registre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtenha os dados para seu formulário
+### 4. Obtenha os dados para seu formulário
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os tipos de documento
+#### Obtenha os tipos de documento
 
 Um dos campos obrigatórios é o tipo de documento. Utilize a lista de documentos no momento de completar os dados.
 
@@ -3941,337 +3926,6 @@ Encontre toda informação na [seção Devoluções e cancelamentos](https://www
 Cada meio de pagamento possui sua própria data de aprovação, em alguns casos a aprovação é imediata e em outros pode demorar até 3 dias úteis.
 
 Revise os [tempos de aprovação por meio de pagamento](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265) sempre que necessite.
-
-[TXTSNIPPET][/guides/snippets/test-integration/pix-intro]
-
-Após cadastrar a chave Pix, siga a documentação para realizar a integração ou, se preferir, [veja no Github](https://github.com/mercadopago/pix-payment-sample) os exemplos de como adicionar pagamentos Pix integrando com o Checkout API. 
-
-### Configurar pagamento com Pix
-
-Após cadastrar a chave Pix e capturar os dados para pagamento com o formulário, você deve encaminhar o e-mail do comprador, o tipo e número de documento, o meio de pagamento utilizado e o detalhe do valor. 
-
-[[[
-```php
-<?php
- require_once 'vendor/autoload.php';
-
- MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-
- $payment = new MercadoPago\Payment();
- $payment->transaction_amount = 100;
- $payment->description = "Título do produto";
- $payment->payment_method_id = "pix";
- $payment->payer = array(
-     "email" => "test@test.com",
-     "first_name" => "Test",
-     "last_name" => "User",
-     "identification" => array(
-         "type" => "CPF",
-         "number" => "19119119100"
-      ),
-     "address"=>  array(
-         "zip_code" => "06233200",
-         "street_name" => "Av. das Nações Unidas",
-         "street_number" => "3003",
-         "neighborhood" => "Bonfim",
-         "city" => "Osasco",
-         "federal_unit" => "SP"
-      )
-   );
-
- $payment->save();
-
-?>
-```
-```node
-var mercadopago = require('mercadopago');
-mercadopago.configurations.setAccessToken(config.access_token);
-
-var payment_data = {
-  transaction_amount: 100,
-  description: 'Título do produto',
-  payment_method_id: 'pix',
-  payer: {
-    email: 'test@test.com',
-    first_name: 'Test',
-    last_name: 'User',
-    identification: {
-        type: 'CPF',
-        number: '19119119100'
-    },
-    address:  {
-        zip_code: '06233200',
-        street_name: 'Av. das Nações Unidas',
-        street_number: '3003',
-        neighborhood: 'Bonfim',
-        city: 'Osasco',
-        federal_unit: 'SP'
-    }
-  }
-};
-
-mercadopago.payment.create(payment_data).then(function (data) {
-
-}).catch(function (error) {
-
-});
-
-```
-```java
-import com.mercadopago.*;
-
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
-
-Payment payment = new Payment();
-
-payment.setTransactionAmount(100f)
-       .setDescription("Título do produto")
-       .setPaymentMethodId("pix")
-       .setPayer(new Payer()
-           .setEmail("test@test.com")
-           .setFirstName("Test")
-           .setLastName("User")
-           .setIdentification(new Identification()
-               .setType("CPF")
-               .setNumber("19119119100"))
-           .setAddress(new Address()
-               .setZipCode("06233200")
-               .setStreetName("Av. das Nações Unidas")
-               .setStreetNumber(3003)
-               .setNeighborhood("Bonfim")
-               .setCity("Osasco")
-               .setFederalUnit("SP"))
-);
-
-payment.save();
-```
-```ruby
-require 'mercadopago'
-sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
-
-payment_request = {
-  transaction_amount: 100,
-  description: 'Título do produto',
-  payment_method_id: 'pix',
-  payer: {
-    email: 'test@test.com',
-    identification: {
-      type: 'CPF',
-      number: '19119119100',
-    }
-  }
-}
-
-payment_response = sdk.payment.create(payment_request)
-payment = payment_response[:response]
-
-```
-```csharp
-
-using MercadoPago.Config;
-using MercadoPago.Client.Common;
-using MercadoPago.Client.Payment;
-using MercadoPago.Resource.Payment;
-
-MercadoPagoConfig.AccessToken = "ENV_ACCESS_TOKEN";
-
-var request = new PaymentCreateRequest
-{
-    TransactionAmount = 105,
-    Description = "Título do produto",
-    PaymentMethodId = "pix",
-    Payer = new PaymentPayerRequest
-    {
-        Email = "test@test.com",
-        FirstName = "Test",
-        LastName = "User",
-        Identification = new IdentificationRequest
-        {
-            Type = "CPF",
-            Number = "191191191-00",
-        },
-    },
-};
-
-var client = new PaymentClient();
-Payment payment = await client.CreateAsync(request);
-
-```
-```python
-import mercadopago
-sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
-
-payment_data = {
-    "transaction_amount": 100,
-    "description": "Título do produto",
-    "payment_method_id": "pix",
-    "payer": {
-        "email": "test@test.com",
-        "first_name": "Test",
-        "last_name": "User",
-        "identification": {
-            "type": "CPF",
-            "number": "191191191-00"
-        },
-        "address": {
-            "zip_code": "06233-200",
-            "street_name": "Av. das Nações Unidas",
-            "street_number": "3003",
-            "neighborhood": "Bonfim",
-            "city": "Osasco",
-            "federal_unit": "SP"
-        }
-    }
-}
-
-payment_response = sdk.payment().create(payment_data)
-payment = payment_response["response"]
-```
-```curl
-curl -X POST \
-    -H 'accept: application/json' \
-    -H 'content-type: application/json' \
-    -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
-    'https://api.mercadopago.com/v1/payments' \
-    -d '{
-      "transaction_amount": 100,
-      "description": "Título do produto",
-      "payment_method_id": "pix",
-      "payer": {
-        "email": "test@test.com",
-        "first_name": "Test",
-        "last_name": "User",
-        "identification": {
-            "type": "CPF",
-            "number": "19119119100"
-        },
-        "address": {
-            "zip_code": "06233200",
-            "street_name": "Av. das Nações Unidas",
-            "street_number": "3003",
-            "neighborhood": "Bonfim",
-            "city": "Osasco",
-            "federal_unit": "SP"
-        }
-      }
-    }'
-```
-]]]
-
-A resposta mostrará o estado pendente do pagamento e todas as informações que você precisa para mostrar ao comprador. O valor `transaction_data` oferecerá os dados para código QR.
-
-```json
-{
-  ...,
-  "id": 5466310457,
-  "status": "pending",
-  "status_detail": "pending_waiting_transfer",
-  ...,
-  "transaction_details": {
-      "net_received_amount": 0,
-      "total_paid_amount": 100,
-      "overpaid_amount": 0,
-      "external_resource_url": "https://www.mercadopago.com/mlb/payments/bank_transfer/helper?payment_id=123456789&payment_method_reference_id= 123456789&caller_id=123456",
-      "installment_amount": 0,
-      "financial_institution": null
-  },
-  "point_of_interaction": {
-      "type": "PIX",
-      "sub_type": null,
-      "application_data": {
-        "name": "NAME_SDK",
-        "version": "VERSION_NUMBER",
-      },
-      "transaction_data": {
-        "qr_code_base64": "iVBORw0KGgoAAAANSUhEUgAABRQAAAUUCAYAAACu5p7oAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAIABJREFUeJzs2luO3LiWQNFmI+Y/Zd6vRt36KGNXi7ZOBtcagHD4kNLeiLX33v8DAAAAABD879sDAAAAAAA/h6AIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCAAAAAJmgCAAAAABkgiIAAAAAkAmKAAAAAEAmKAIAAAAAmaAIAAAAAGSCIgAAAACQCYoAAAAAQCYoAgAAAACZoAgAAAAAZIIiAAAAAJAJigAAAABAJigCA...",
-        "qr_code": "00020126600014br.gov.bcb.pix0117john@yourdomain.com0217additional data520400005303986540510.005802BR5913Maria Silva6008Brasilia62070503***6304E2CA",
-      }
-  }
-  ...,
-}
-```
-Com Pix, você também pode escolher o prazo que o cliente terá para pagar a compra, definindo a validade do código de pagamento enviado a ele após a realização do pedido. 
-
-Por padrão, a data de vencimento para pagamentos com Pix é de 24 horas, mas você pode alterá-la enviando o campo `date_of_expiration` na solicitação de criação de pagamento. Note que a data configurada deve ser entre 30 minutos e até 30 dias a partir da data de emissão.
-
-[[[
-```php
-===
-A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
-===
-$payment->date_of_expiration = "2020-05-30T23:59:59.000-04:00";
-```
-```node
-===
-A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
-===
-date_of_expiration: "2020-05-30T23:59:59.000-04:00",
-```
-```java
-===
-A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
-===
-payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
-```
-```ruby
-===
-A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
-===
-date_of_expiration: '2020-05-30T23:59:59.000-04:00',
-```
-```csharp
-===
-A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
-===
-paymentCreateRequest.DateOfExpiration = DateTime.Parse("2020-05-30T23:59:59.000-04:00");
-```
-```python
-===
-A data usa o formato ISO 8601 format: yyyy-MM-dd'T'HH:mm:ssz
-===
-
-"date_of_expiration": "2020-05-30T23:59:59.000-04:00"
-```
-```curl
-===
-A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
-===
-"date_of_expiration": "2020-05-30T23:59:59.000-04:00",
-```
-]]]
-
-> WARNING
->
-> Importante
->
-> Se o pagamento for realizado após a data de expiração marcada, a operação será rejeitada.
-
-## Dados para realizar o pagamento
-
-Para o pagamento ser realizado, você deverá renderizar o código QR vigente, que deverá ser utilizado somente uma vez.
-
-Você também pode adicionar uma opção para copiar e colar o código de pagamento, o que permitirá realizar a transação a partir de Internet Banking. 
-
-Para renderizar o código QR siga os passos abaixo:
-
-1. Adicione o `qr_code_base64` para poder mostrar o código QR, como mostra o exemplo abaixo.
-
-```html
-<img src={`data:image/jpeg;base64,${qr_code_base64}`/>
-```
-
-2. Para apresentar a opção que permitirá copiar e colar o código de pagamento, adicione o `qr_code` da seguinte forma:
-
-```html
-<label for="copiar">Copiar Hash:</label>
-<input type="text" id="copiar"  value={qr_code}/>
-```
-
-> NOTE
->
-> Importante
->
-> Encontre as informações necessárias para devolver um pagamento feito por transferência Pix no artigo de [devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
 ------------
 ---

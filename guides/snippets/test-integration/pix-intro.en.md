@@ -1,6 +1,6 @@
-## Receive payments with Pix
+# Integrate Checkout API payment for Pix
 
-You can offer the option to receive payments instantly with Pix from any bank or digital wallet, either via a **QR code** or a **payment code** where you can set an expiration date for the payment is made.
+You can offer the option to receive payments instantly with Pix (`bank_transfer`) from any bank or digital wallet, either via a **QR code** or a **payment code** where you can set an expiration date for the payment is made.
 
 > WARNING
 >
@@ -8,7 +8,26 @@ You can offer the option to receive payments instantly with Pix from any bank or
 >
 > Remember that, for the time being, the Central Bank of Brazil is open from Monday to Friday from 9:00 am to 6:00 pm, and if you request registration outside of these hours, we will confirm it on the next business day. In addition, there is no Pix value limit for the daytime (between 6 am and 8 pm) and, at night (between 8 pm and 6 am), there is a maximum limit of R$1,000 that can be moved during these hours.
 
-### Register Pix Key
+```json
+[
+    {
+        "id": "pix",
+        "name": "PIX",
+        "payment_type_id": "bank_transfer",
+        "status": "active",
+        "secure_thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
+        "thumbnail": "https://www.mercadopago.com/org-img/MP3/API/logos/pix.gif",
+        "deferred_capture": "does_not_apply",
+        "settings": [],
+        "additional_info_needed": []
+    },
+    {
+        "...": "..."
+    }
+]
+```
+
+## Register Pix Key
 
 To start using Pix as a method of payment, you must have registered a Pix key in the seller's account, this way it will be possible to identify your account and will also allow you to use all the functionalities of the payment method in question.
 
