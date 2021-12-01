@@ -1,13 +1,5 @@
 # Teste de compras
 
-> NOTE
->
-> Desenvolva seus conhecimentos sobre WordPress
->
-> Marque no seu calendário: dia 27 de novembro acontecerá o WordCamp, o evento online e gratuito sobre Desenvolvimento, Design, Negócios e Comunidade WordPress com brindes oficiais e palestras exclusivas Mercado Pago. 
-> 
-> [Garanta já o seu lugar!](https://saopaulo.wordcamp.org/2021/ingressos/) 
-
 Com a loja em modo teste, é possível testar uma compra antes de habilitá-la para o público. Para isso, realize todo o fluxo de compra até a conclusão no checkout e selecione a opção de **pagamento com cartão de crédito**, conforme o passo a passo abaixo. 
 
 
