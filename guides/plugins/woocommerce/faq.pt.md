@@ -1,3 +1,5 @@
+# FAQ
+
 ### 1. Como faço para instalar o plugin de forma manual?
 
 Para instalar o plugin de forma manual, siga os passos abaixo: 
