@@ -126,12 +126,15 @@ paths:
                 properties:
                   id:
                     type: string
+                    example: 1009042015
                     description: Chargeback identifier
                   payment_id:
                     type: string
+                    example: PAYMENT_ID
                     description: Payment id associated to the order
                   amount:
                     type: number
+                    example: 10
                     description: Returned amount
                   source:
                     type: array
@@ -141,44 +144,53 @@ paths:
                       properties:
                         id:
                           type: string
+                          example: "1003743392"
                           description: Identifier
                         name:
                           type: string
+                          example: "Firstname Lastname"
                           description: Name
                         type:
                           type: string
+                          example: "collector"
                           description: Type
                   date_created:
                     type: string
+                    example: "2021-11-24T13:58:49.312-04:00"
                     format: date
-                    description: Chargeback creation data
+                    description: Chargeback creation date
                   unique_sequence_number:
                     type: string
+                    example: null
                     description: Sequence number
                   refund_mode:
                     type: string
-                    description: Chargeback mode
+                    example: "standard"
+                    description: Type of chargeback
                   adjustment_amount:
                     type: number
+                    example: 0
                     description: Chargeback adjustment
                   status:
                     type: string
+                    example: "approved"
                     description: Chargeback status
                   reason:
                     type: string
+                    example: null
                     description: Chargeback reason
                   label:
                     type: array
-                    description: Labels list
+                    description: List of label
                     items:
                       type: object
                   partition_details:
                     type: array
-                    description: Details
+                    description: Detalhes
                     items:
                       type: object
-        '401':
-          description: Invalid Token
+        '400':
+          description: Error
           content:
             application/json:
               schema:
@@ -187,49 +199,26 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 001--Error-Undefined
-                  cause:
-                    type: array
-                    description: Reasons list
-                    items:
-                      type: object
-                  message:
-                    type: string
-                    description: Error message
-                  error:
-                    type: string
-                    description: Error
-                  status:
-                    type: number
-                    description: Status
-        '404':
-          description: Refund not found
+                    - The-action-requested-is-not-valid-for-the-current-payment-state--missing-information-on-header-           
+        '401':
+          description: Error
           content:
             application/json:
               schema:
                 type: object
                 properties:
-                  message:
+                  errorKey:
                     type: string
-                    description: Error message
-                  error:
+                    enum:
+                    - Invalid-token--Valid-token-required-
+        '404':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
                     type: string
-                    description: Error
-                  status:
-                    type: number
-                    description: Status
-                  cause:
-                    type: array
-                    description: Reasons list
-                    items:
-                      type: object
-                      properties:
-                        code:
-                          type: number
-                          description: Reason code
-                        description:
-                          type: string
-                          description: Error description
-                        data:
-                          type: string
-                          description: Error information
+                    enum:
+                    - Refund-not-found--X-Idempontency-key-already-used-
