@@ -11,8 +11,8 @@ La API de Integraciones te permite conectar tus puntos de venta (PDV) al ecosist
 >
 > Esta integración soporta los siguientes dispositivos:
 >
-> - [Point Smart (POS)](https://www.mercadopago.com.ar/point-smart?ref=devsite)
-> - [Point Plus (POS)](https://www.mercadopago.com.ar/point-plus?ref=devsite)
+> - [Point Smart](https://www.mercadopago.com.ar/point-smart?ref=devsite)
+
 ------------
 
 ----[mlb]----
@@ -20,8 +20,8 @@ La API de Integraciones te permite conectar tus puntos de venta (PDV) al ecosist
 >
 > Esta integración soporta los siguientes dispositivos:
 >
-> - [Point Pro2 (POS)](https://www.mercadopago.com.br/point-pro-2?ref=devsite)
-> - [Point Mini Chip (POS)](https://www.mercadopago.com.br/point-mini-chip?ref=devsite)
+> - [Point Pro 2](https://www.mercadopago.com.br/point-pro-2?ref=devsite)
+> - [Point Mini Chip](https://www.mercadopago.com.br/point-mini-chip?ref=devsite)
 ------------
 
 ### Conoce sus ventajas
@@ -31,7 +31,12 @@ La API de Integraciones te permite conectar tus puntos de venta (PDV) al ecosist
 * **Es ágil**, ya que te permite administrar tus ordenes de pago desde tu PDV.
 * **Es eficiente**, ya que disminuye la posibilidad de errores al momento de cobrar.
 
+En este diagrama de flujo te contamos cómo funciona la API:
+
+![Mercado Pago Point Flow](/images/mobile/MercadoPagoFlowPoint.png)
+
 > Si quieres conocer más detalles acerca de la API de Integraciones y los pedidos de información que puedes hacer, ingresa a [Referencia de API](https://www.mercadopago.com.ar/developers/es/reference)
+
 
 ### Próximos pasos
 
