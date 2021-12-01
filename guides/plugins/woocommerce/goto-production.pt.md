@@ -1,3 +1,5 @@
+# Ativação do modo produção
+
 O primeiro passo para ativar o modo produção na sua loja, é **habilitar o certificado SSL** no seu domínio. Esse certificado é usado para aumentar a segurança dos dados compartilhados pela sua loja, ou seja, as informações pessoais dos seus clientes.
 
 Muitos serviços de hospedagem oferecem, junto ao domínio, o certificado SSL. Caso seu domínio não tenha esse certificado, recomendamos buscar uma empresa que possa ajudar na compra e instalação. 
