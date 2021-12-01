@@ -366,6 +366,12 @@ Después, configura las credenciales de la SDK para su uso e inicializa tu check
 ```
 ]]]
 
+> NOTE
+>
+> Nota
+>
+> Recuerda reemplazar el valor **AR** por tu pais en el campo `locale`.
+
 En el ejemplo anterior, se mostrará un botón de pago, que a su vez abrirá el Checkout Pro.
 
 Puedes consultar otras maneras de abrir el checkout en la sección de [Personalizaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/customizations).
