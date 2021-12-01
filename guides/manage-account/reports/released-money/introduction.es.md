@@ -9,13 +9,6 @@
 
 El reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ es un **informe descargable que te permite conocer cómo está compuesto tu dinero disponible en Mercado Pago.** Contiene el **detalle de todos los fondos involucrados en un período de fechas,** e incluye los casos de ----[mla]---- liquidación ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberación ------------ de dinero como de bloqueos y desbloqueos.
 
-----[mpe]----
-> WARNING
->
-> Próximamente verás los registros de tus movimientos en orden cronológico.
->
-> En los reportes que generes a partir de Diciembre vas a ver todos tus movimientos en el orden en que se realizaron para que puedas identificarlos más fácil y controlar mejor tus ventas.
-------------
 ## ¿Cómo descargo el reporte?
 
 Ten en cuenta que la generación del reporte lleva unos minutos dependiendo de cuánta información quieras que incluya. No siempre estará listo al instante y, hasta que lo esté, verás el estado *En preparación* en la pantalla.
@@ -48,11 +41,22 @@ Genera el reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc
 
 Además, puedes usar el reporte para conocer el historial de dinero ----[mla]---- liquidado ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberado ------------ entre dos fechas, el detalle de los eventos que componen una transferencia bancaria, el detalle de disputas, reembolsos, envíos, contracargos, impuestos y otras operaciones. También verás el detalle de las cuotas liquidadas y las cuotas que aún faltan saldar.
 
+----[mpe]----
+> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de  Liberaciones para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+
+> INFO
+>
+> Próximamente verás los registros de tus movimientos en orden cronológico.
+>
+> En los reportes que generes a partir de Diciembre vas a ver todos tus movimientos en el orden en que se realizaron para que puedas identificarlos más fácil y controlar mejor tus ventas.
+------------
+----[mlm, mlb, mlc, mco, mlu, mla]----
 > NOTE
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de ------------ ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu]---- Liberaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mla]---- para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+------------
 
 <hr/>
 

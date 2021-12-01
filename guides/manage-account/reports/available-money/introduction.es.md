@@ -10,13 +10,6 @@ El reporte de Dinero retirado es un **informe descargable que te permite conocer
 >
 > Usa el [reporte de ----[mla]----Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberaciones------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.
 
-----[mpe]----
-> WARNING
->
-> Próximamente verás los registros de tus movimientos en orden cronológico.
->
-> En los reportes que generes a partir de Diciembre vas a ver todos tus movimientos en el orden en que se realizaron para que puedas identificarlos más fácil y controlar mejor tus ventas.
-------------
 ## ¿Cómo descargo el reporte?
 
 Ten en cuenta que la generación del reporte lleva unos minutos dependiendo de cuánta información quieras que incluya. No siempre estará listo al instante y, hasta que lo esté, verás el estado *En preparación* en la pantalla.
@@ -53,13 +46,22 @@ Usa el reporte de Dinero retirado **cuando quieras tener un informe detallado de
 ### Usa el reporte para conocer tu historial
 
 Además, puedes usar el reporte para conocer el historial de dinero retirado entre dos fechas o dos retiros de dinero, el detalle de los eventos que componen un retiro automático o manual (total o parcial), el detalle de disputas, reembolsos, envios, contracargos, impuestos y otras operaciones. También visualizarás el detalle de las cuotas liquidadas y las cuotas que aún faltan saldar.
-
+----[mlm, mlb, mlc, mco, mlu, mla]----
 > NOTE
 >
 > Nota
 >
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/glossary) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+------------
+----[mpe]----
+> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/glossary) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
+> NOTE
+>
+> Próximamente verás los registros de tus movimientos en orden cronológico.
+>
+> En los reportes que generes a partir de Diciembre vas a ver todos tus movimientos en el orden en que se realizaron para que puedas identificarlos más fácil y controlar mejor tus ventas.
+------------
 <hr/>
 
 ### Próximos pasos
