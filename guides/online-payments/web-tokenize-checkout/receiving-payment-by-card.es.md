@@ -32,6 +32,7 @@ Una vez hayas sumado el código a tu sitio, se agregará un botón de pago que m
 2. Configura las credenciales de la SDK para su uso e inicializa tu checkout con el identificador del elemento donde deberá mostrarse el botón de pago:
 
 ```html
+<div class=tokenizer-container>
 <script>
 // Agrega credenciales de SDK 
 const mp = new MercadoPago('PUBLIC_KEY', {locale: 'es-AR'});
@@ -48,7 +49,9 @@ mp.checkout({
  }
 });
 </script>
+</div>
 ```
+
 >WARNING
 >
 >Importante
@@ -284,6 +287,12 @@ Respuesta:
 ```
 
 ## Recomendaciones adicionales
+
+>WARNING
+>
+>Importante
+>
+> Al abrir el tokenizer en una nueva pestaña, las URLs definidas en `backURLs` no se tienen en consideración y el usuario no es devuelto al sitio sino que queda en estado "procesando".
 
 ### Tarjetas de prueba
 
