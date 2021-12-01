@@ -1,31 +1,52 @@
-# Prueba y recibe pagos
-
-
-## Cómo probar el módulo
-
-El módulo de Mercado Pago viene con el entorno Sandbox activo por defecto. Simula pagos en la tienda con este entorno de pruebas y verifica que todo funciona bien antes de empezar a recibir pagos reales de tus clientes. 
+# Procesamiento de pagos
  
-Aquí es donde entran en juego las credenciales de prueba que habrás copiado en el módulo al momento de [integrar Mercado Pago a tu tienda](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/integration). Las necesitas para poder probar el módulo.
-
-Cuando hagas pruebas, verifica que el flujo de pagos funcione correctamente y que las preferencias de pago sean las que hayas configurado. ¿Ves que todo va bien? Desactiva el modo Sandbox y ve al modo Producción para recibir pagos reales.
-
+Después de realizar la integración y las pruebas, tu tienda está lista para entrar en producción.
+ 
+## Activación del modo de producción
+ 
+Para comenzar a recibir pagos, debes activar el modo de producción. Para hacer esto, sigue los procedimientos a continuación.
+ 
+1. En el Panel Administrativo de tu tienda PrestaShop, accede al menú **Módulos y Servicios**, localiza el plugin Mercado Pago y haz clic en **configure**.
+2. En la pantalla de administración del plugin, confirma que las [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) de producción son las mismas que las de la cuenta de la cual que obtienes dinero por las ventas. Esta información se puede ver en tu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/devpanel).
+3. Luego haz clic en **sí** para activar el modo de producción.
+ 
 > NOTE
 >
-> Nota
+> Importante
 >
-> Todos nuestros módulos cuentan con una licencia de código abierto. ¿Quieres participar en su construcción? [Sugiere mejoras y ediciones en Github](https://github.com/mercadopago/cart-prestashop-7).
+> Consulta los [requisitos para entrar en producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/go-live-requirements) si tienes preguntas sobre el proceso.
+ 
+¡Listo! El módulo Mercado Pago está listo para recibir pagos en línea.
+ 
+## Procesamiento de ventas
+ 
+Con todos los pasos completados, tus clientes podrán realizar compras en tu tienda. Al realizar una transacción, es común que algunos mensajes regresen con información específica sobre la compra, ya que cada venta genera un estado de pago que muestra el estado de la venta incluyendo confirmación, pendiente o rechazo de pago y otra información importante sobre la transacción.
+ 
+Para más información accede a la sección [Actividades](https://www.mercadopago[FAKER][URL][DOMINIO]/actividades) de tu cuenta de Mercado Pago.
+ 
+![Estado de pago](/images/prestashop/status_es.png)
 
-## Ir a producción
+## Razones por las que se rechazan los pagos
 
-Para empezar a cobrar debes [activar tus credenciales](https://www.mercadopago.com/mla/account/credentials/).
+Respecto a la **aprobación de pagos** en tu tienda, hay tres razones principales que pueden afectar directamente estos resultados. 
 
-> Consulta los [requisitos para salir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/goto-production) si tienes alguna duda con el proceso.
+A continuación, se detallan los factores que influyen en el rechazo de un pago:
 
-Verifica que las credenciales de Producción del módulo sean las de la cuenta que reciba el dinero de las ventas. 
+| Motivo | Situación | Cómo evitarlo |
+|---|---|---|
+| Comprador | Errores en la cumplimentación de la dirección, CPF o datos de la tarjeta. | Checkout con información clara en el paso a paso de la compra. |
+| Rechazos bancarios | Tarjetas con fecha de vencimiento, falta de límite, saldo insuficiente o inhabilitadas para compras online.| Ofrecer alternativas a otros medios y/o condiciones de pago.|
+| Prevención del fraude | El sistema antifraude de Mercado Pago protege tu negocio contra ataques maliciosos que pueden generar pérdidas.| Este tipo de rechazo es beneficioso para tu tienda. |
 
-Activa el modo Producción solo cuando estés listo para vender y hayas puesto a prueba el módulo con pagos simulados en Sandbox.
+Para obtener más información sobre las razones mencionadas anteriormente, visita estos artículos:
 
-![Flow homologación producción](/images/prestashop/receive_payments_es.gif)
+* [Rechazos de pago](https://conteudo.mercadopago.com.br/entenda-como-funcionam-as-recusas-de-aprovacao-de-pagamentos-no-mercado-pago) 
+* [Manejar las denegaciones de pago](https://conteudo.mercadopago.com.br/como-lidar-com-as-recusas-de-pagamento-do-cartao-de-credito-no-seu-e-commerce)
 
-### ¡Listo! El módulo de Mercado Pago está preparado para recibir cobros online.
-
+> LEFT_BUTTON_RECOMMENDED_ES
+>
+> Preguntas frecuentes
+>
+> Consulta las principales dudas sobre la integración.
+>
+> [Preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/faq)

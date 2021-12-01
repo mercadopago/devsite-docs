@@ -82,12 +82,11 @@ curl -X POST \
      -H 'content-type: application/x-www-form-urlencoded' \
      'https://api.mercadopago.com/oauth/token' \
      -d 'client_secret=CLIENT_SECRET' \
-     -d 'client_ID=CLIENT_ID' \
+     -d 'client_id=CLIENT_ID' \
      -d 'grant_type=authorization_code' \
      -d 'code=CODE' \
      -d 'redirect_uri=REDIRECT_URI'
 ```
-
 
 Na resposta você vai obter o `access_token` do vendedor vinculado. 
 
@@ -263,6 +262,8 @@ payment_data = {
     email: 'test_user_19653727@testuser.com'
   }
 }
+````
+]]]
 
 > NOTE
 > 

@@ -3932,8 +3932,6 @@ For more information, check the [Refunds and Cancellations section](https://www.
 
 ## Payment credit times
 
-Each payment method has its own credit times; it is immediate in some cases, while in others, it may take up to 3 business days.
-
 Check [credit times by payment method](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265) whenever you need to.
 
 ------------

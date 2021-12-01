@@ -31,7 +31,9 @@ For example, if the card has insufficient balance, you can suggest trying again 
 | rejected | `cc_rejected_insufficient_amount` | Your `payment_method_id` does not have enough funds. |
 | rejected | `cc_rejected_invalid_installments` | `payment_method_id` does not process payments in `installments` installments. |
 | rejected | `cc_rejected_max_attempts` | You reached the allowed attempt limit.<br/><br/>Select a different card or payment method. |
-| rejected | `cc_rejected_other_reason` | `payment_method_id` did not process payment. |
+| rejected | `cc_rejected_other_reason` | `payment_method_id` did not process payment. | ----[mlb]----
+| rejected |  `cc_rejected_card_type_not_allowed` | The payment was rejected because the user does not have the credit function enabled on their multiple card (debit and credit). | ------------
+
 
 > CLIENT_SIDE
 >
