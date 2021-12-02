@@ -72,57 +72,6 @@ console.log("encrypted_challenge: ", encryptedChallenge);
 ]]]
 
 
-## Consulta el estado de tu intención de pago
-
-Puedes consultar el estado actual de tu intención de pago utilizando el `id` que recibiste en la respuesta al momento de crear la intención de pago.
-
-``` curl
-curl --location --request GET 'https://api.mercadopago.com/point/integration-api/payment-intents/:paymentIntentID' \
---header 'Authorization: Bearer ${ACCESS_TOKEN}'
-```
-
-Ejemplo de respuesta:
-
-----[mlb]----
-``` json
-{
-    "state": "FINISHED",
-    "id": "0591cb42-f69a-4334-908b-123456789012",
-    "device_id": "GERTEC_MP35P_8701012123456789",
-    "amount": 250,
-    "description": "Your payment description ",
-    "payment": {
-        "id": "16123456789",
-        "type": "debit_card",
-        "installments": 1,
-        "installments_cost": "seller"
-    },
-    "additional_info": {
-        "external_reference": "10a01a30-a6fe-4584-b22a-07e123456798",
-        "print_on_terminal": true
-    }
-}
-```
-------------
-
-----[mla, mlm]----
-
-``` json
-{
-    "state": "FINISHED",
-    "id": "0aa0519d-d985-4e83-b62d-dda123456789",
-    "device_id": "88731317_INGENICO_MOVE2500_ING-ARG-14123456",
-    "amount": 600,
-    "payment": {
-        "id": "11123456789"
-    },
-    "additional_info": {
-        "ticket_number": "123456789123456789"
-    }
-}
-```
-------------
-
 ### Próximos pasos
 
 > LEFT_BUTTON_RECOMMENDED_ES
