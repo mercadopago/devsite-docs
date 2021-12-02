@@ -105,7 +105,8 @@ Ejemplo de respuesta:
 ```
 ------------
 
-----[mla,mlm]----
+----[mla, mlm]----
+
 ``` json
 {
     "state": "FINISHED",
