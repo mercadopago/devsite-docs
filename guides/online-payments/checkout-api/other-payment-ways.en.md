@@ -3344,7 +3344,7 @@ Both for frontend and backend, we recommend [our libraries](https://www.mercadop
 
 ### Payment Methods
 
-In addition to cards e Pix, you can offer other payment choices on your website.
+In addition to cards and Pix, you can offer other payment choices on your website.
 
 | Type of payment method | Payment method |
 | --- | --- |
