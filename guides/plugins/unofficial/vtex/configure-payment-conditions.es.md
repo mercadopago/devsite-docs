@@ -36,7 +36,7 @@ En la pantalla siguiente, debes:
 3. Activar la condición de pago desde el campo `Status`. Debe estar activado para que tu selección en el campo `Proceso con la afiliación` funcione.
 4. Guardar tus cambios haciendo clic en `Salva`.
 
-![Configurar planes de pag con tarjeta de crédito crédito](/images/vtex/paymentconditions-cc-es.gif)
+![Configurar planes de pag con tarjeta de crédito](/images/vtex/paymentconditions-cc-es.gif)
 
 > WARNING
 >
