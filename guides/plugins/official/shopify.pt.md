@@ -125,6 +125,6 @@ Ao concluir essas configurações, faça uma compra teste para garantir o funcio
 
 ### Teste de compras
 
-[TXTSNIPPET][/guides/snippets/test-integration/shopify-test-purchase.pt.md]
+[TXTSNIPPET][/guides/snippets/test-integration/shopify-test-purchase]
 
 ------------
