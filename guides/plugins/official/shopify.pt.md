@@ -72,7 +72,7 @@ Ao finalizar essas configurações, passe para a próxima etapa e faça uma comp
 
 ## Teste de compras
 
-[TXTSNIPPET][/guides/snippets/test-integration/shopify-test-purchase.pt.md]
+[TXTSNIPPET][/guides/snippets/test-integration/shopify-test-purchase]
 
 ## Ativação do modo produção
 
