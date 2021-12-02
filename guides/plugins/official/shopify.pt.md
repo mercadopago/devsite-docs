@@ -38,7 +38,7 @@ Para instalar o Checkout Pro em sua Shopify, siga o passo a passo abaixo.
 6. Em **Modo teste**, selecione a opção **Habilite o modo de teste** caso queira manter sua loja em ambiente de teste antes de disponibilizá-la aos seus clientes, contudo, se preferir deixar sua loja habilitada para receber vendas reais, mantenha o campo desabilitado.
 7. Ao finalizar o preenchimento, clique em **Salvar alterações**.
 
-[TXTSNIPPET][/guides/snippets/test-integration/shopify-cpf-config.pt.md]
+[TXTSNIPPET][/guides/snippets/test-integration/shopify-cpf-config]
 
 Ao concluir essas configurações, faça uma compra teste para garantir o funcionamento correto do checkout.
 
