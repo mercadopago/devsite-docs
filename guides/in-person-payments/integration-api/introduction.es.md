@@ -31,7 +31,9 @@ La API de Integraciones te permite conectar tus puntos de venta (PDV) al ecosist
 * **Es ágil**, ya que te permite administrar tus ordenes de pago desde tu PDV.
 * **Es eficiente**, ya que disminuye la posibilidad de errores al momento de cobrar.
 
-En este diagrama de flujo te contamos cómo funciona la API:
+<br />
+
+### En este diagrama de flujo te contamos cómo funciona la API:
 
 ![Mercado Pago Point Flow](/images/mobile/MercadoPagoFlowPoint.png)
 

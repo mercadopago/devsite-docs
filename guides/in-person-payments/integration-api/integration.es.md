@@ -1,4 +1,4 @@
-# Integra la API de Integraciones
+# Integra la API a tus Puntos de Venta
 
 Sigue estos pasos para empezar a integrar la API de Integraciones a tus Puntos de Venta.
 
