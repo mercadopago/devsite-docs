@@ -122,6 +122,6 @@ Once you've completed these settings, make a test purchase to ensure the correct
 
 ### Test purchase
 
-[TXTSNIPPET][/guides/snippets/test-integration/shopify-test-purchase.en.md]
+[TXTSNIPPET][/guides/snippets/test-integration/shopify-test-purchase]
 
 ------------
