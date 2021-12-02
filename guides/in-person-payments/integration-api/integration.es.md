@@ -60,15 +60,7 @@ Primero, inicia sesión en la aplicación de Mercado Pago. Luego, oprime en el �
 
 ### Configura tu tienda y tu caja
 
-Una vez que hayas vinculado tu dispositivo Point a tu cuenta de Mercado Pago, debes completar los datos de tu negocio y configurar tu caja. 
-
-----[mla, mlm]----
-![Locales y Cajas](/images/mobile/tienda-caja.es.png)
-------------
-
-----[mlb]----
-![Locales y Cajas](/images/mobile/tienda-caja.pt.png)
-------------
+Una vez que hayas vinculado tu dispositivo Point a tu cuenta de Mercado Pago, debes completar los datos de tu negocio y configurar tu caja en el [sitio de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]). Para hacerlo, deberás ingresar en **Tu negocio > Locales y cajas**.
 
 ### Activa el modo integrado en tu dispositivo Point
 
