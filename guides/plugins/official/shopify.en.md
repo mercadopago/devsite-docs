@@ -65,7 +65,7 @@ To install the Checkout Api on your Shopify, follow the steps below.
 4. In **How do you want to operate**, select the option **I want to test my store**. This will allow you to carry out tests to ensure the checkout works.
 5. Click on **Save**.
 
-[TXTSNIPPET][/guides/snippets/test-integration/shopify-cpf-config.en.md]
+[TXTSNIPPET][/guides/snippets/test-integration/shopify-cpf-config]
 
 By finishing these settings, proceed to the next step and make a test purchase to ensure the checkout is working correctly.
 
