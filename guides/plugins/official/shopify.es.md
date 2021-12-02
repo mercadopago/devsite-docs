@@ -103,6 +103,6 @@ Una vez que haya completado estos ajustes, por favor haga una compra de prueba p
 
 ### Pruebas de compras
 
-[TXTSNIPPET][/guides/snippets/test-integration/shopify-test-purchase.es.md]
+[TXTSNIPPET][/guides/snippets/test-integration/shopify-test-purchase]
 
 ------------
