@@ -177,7 +177,7 @@ curl -X POST \
 }
 ```
 
-----[mla, mlm, mco, mlu, mlb, mlc]----
+----[mla, mpe, mpe, mlm, mco, mlu, mlb, mlc]----
 
 ### Realiza una devolución parcial
 
