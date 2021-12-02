@@ -71,7 +71,7 @@ By finishing these settings, proceed to the next step and make a test purchase t
 
 ### Test purchase
 
-[TXTSNIPPET][/guides/snippets/test-integration/shopify-test-purchase.en.md]
+[TXTSNIPPET][/guides/snippets/test-integration/shopify-test-purchase]
 
 ### Activating production mode
 
