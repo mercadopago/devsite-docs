@@ -66,7 +66,7 @@ Para instalar o Checkout Transparente em sua Shopify, siga o passo a passo abaix
 4. Em **Como você quer operar**, selecione a opção **Quero testar minha loja**. Isso permitirá realizar testes para garantir o funcionamento do checkout.
 5. Clique em **Salvar alterações**.
 
-[TXTSNIPPET][/guides/snippets/test-integration/shopify-cpf-config.pt.md]
+[TXTSNIPPET][/guides/snippets/test-integration/shopify-cpf-config]
 
 Ao finalizar essas configurações, passe para a próxima etapa e faça uma compra teste para garantir o funcionamento correto do checkout.
 
