@@ -96,3 +96,148 @@ paths:
                     description: >-
                       Whether the chargeback will be processed in sandbox or in
                       production mode
+  /v1/payments/{id}/refunds:
+    post:
+      tags:
+        - $ref: "#/tags/marketplace"
+      summary: Chargeback
+      description: Create Partial/Full Chargeback for a specific payment. If the amount field is filled, it will create a partial chargeback, if not, it will create a full chargeback.
+      parameters:
+        - name: id
+          in: path
+          description: Payment identifier
+          required: true
+          schema:
+            type: string
+            example: 12345678901
+        - name: X-Idempotency-Key
+          in: header
+          description: Idempotency key. When used, avoids duplicated chargingback
+          required: false
+          schema:
+            type: string
+            example: 77e1c83b-7bb0-437b-bc50-a7a58e5660ac
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                amount:
+                  type: number
+                  description: Chargeback amount. If this property (amount) is removed from body, it will create a full chargeback.
+                  example: 5
+      responses:
+        '200':
+          description: Sucess
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: number
+                    example: 1009042015
+                    description: Chargeback identifier
+                  payment_id:
+                    type: string
+                    example: PAYMENT_ID
+                    description: Payment identifier from the payment
+                  amount:
+                    type: number
+                    example: 10
+                    description: Chargeback amount
+                  metadata:
+                    type: array
+                    description: Metadata
+                    items:
+                      type: object
+                  source:
+                    type: array
+                    description: List of source
+                    items:
+                      type: object
+                      properties:
+                        name:
+                          type: string
+                          example: "Firstname Lastname"
+                          description: Name  
+                        id:
+                          type: string
+                          example: "1003743392"
+                          description: Identifier
+                        type:
+                          type: string
+                          example: "collector"
+                          description: Type
+                  date_created:
+                    type: string
+                    example: "2021-11-24T13:58:49.312-04:00"
+                    format: date
+                    description: Chargeback creation date
+                  unique_sequence_number:
+                    type: string
+                    example: null
+                    description: Sequence number
+                  refund_mode:
+                    type: string
+                    example: "standard"
+                    description: Type of chargeback
+                  adjustment_amount:
+                    type: number
+                    example: 0
+                    description: Chargeback adjustment
+                  status:
+                    type: string
+                    example: "approved"
+                    description: Chargeback status
+                  reason:
+                    type: string
+                    example: null
+                    description: Chargeback reason
+                  label:
+                    type: array
+                    description: List of label
+                    items:
+                      type: object
+                  partition_details:
+                    type: array
+                    description: Detalhes
+                    items:
+                      type: object        
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 2063--The-action-requested-is-not-valid-for-the-current-payment-state--missing-information-on-header-or-the-payment-was-fully-refund-            
+        '401':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401--Invalid-token--Valid-token-required-
+                      - 4040--amount-attribute-must-be-positive--Amount-should-be-more-than-0-
+                      - 4041--amount-attribute-must-be-numeric--Amount-should-be-a-number-
+        '404':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 2032--Refund-not-found--X-Idempontency-key-already-used-
+                      - 2000--Payment-not-found--Payment_Id_does_not_exist-
