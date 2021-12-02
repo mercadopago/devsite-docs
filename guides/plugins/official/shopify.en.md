@@ -59,7 +59,7 @@ Mercado Pago's Checkout Api allows the entire purchase process to take place in 
 
 To install the Checkout Api on your Shopify, follow the steps below.
 
-1. [Click here](xhttps://apps.shopify.com/checkout-transparente) to access the Mercado Pago Checkout Api app installation page.
+1. [Click here](https://apps.shopify.com/checkout-transparente) to access the Mercado Pago Checkout Api app installation page.
 2. In the lower right corner of the screen, click on **Install app**.
 3. On the next screen, you will be asked to enter your **Public key** and **Access token** credentials for **test** and **production**. [Click here](https://www.mercadopago.com.br/developers/en/guides/resources/credentials) and access our documentation to learn how to obtain this information.
 4. In **How do you want to operate**, select the option **I want to test my store**. This will allow you to carry out tests to ensure the checkout works.
