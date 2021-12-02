@@ -216,7 +216,7 @@ curl -X POST \
 ```
 ]]]
 
-La respuesta va a mostrar el estado pendiente del pago y toda la información que necesitas para mostrar al comprador. El valor `transaction_data` te brindará los datos para disponibilizar la opción de pago a través de un código QR. Vas a encontrar los siguientes atributos:
+La respuesta va a mostrar el estado pendiente del pago y toda la información que necesitas para mostrar al comprador. El valor `transaction_data` te brindará los datos para disponibilizar la opción de pago a través de un código QR. Encontrarás los siguientes atributos:
 
 ```json
 {
