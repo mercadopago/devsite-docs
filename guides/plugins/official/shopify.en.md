@@ -1,150 +1,127 @@
-# Mercado Pago for Shopify
-
-
-## Introduction
-
-Mercado Pago solutions in Shopify will allow you to collect online on your website, with no need to have technical or programming knowledge.
-
-> Mercado Pago is an official Shopify partner: we provide security to all payments made in your store.
+# Shopify
 
 ----[mlb]----
-## Integration types
 
-Choose the solution that best suits your business:
+[Shopify](https://www.shopify.com/?shpxid=76f6bf35-F67D-4311-0725-B4A8C1AC2254) is an e-commerce platform that offers all the features you need to make online sales.
 
-__Mercado Pago Transparent Checkout__: Shopify *app extension* that provides a fast and secure shopping experience, without leaving your store! You can install it from [Shopify app store](https://apps.shopify.com/).
+By integrating Mercado Pago into your Shopify, you will be able to receive payments through [Checkout Pro](https://www.mercadopago.com.br/developers/en/guides/online-payments/checkout-pro/introduction), where the buyer is redirected to a Mercado Pago page to complete the payment, or to the [Checkout Api](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/introduction) that allows the buyer to carry out the entire payment process within the environment of your store.
 
-__Mercado Pago Redirect Checkout__: configure Checkout Pro, so that your customers finalize their payment on our website. It is already pre-installed in your Shopify administrator.
+If you prefer, you can use only one type of checkout in your store (Checkout Pro or Checkout Api), however, **to offer Checkout Api, it is mandatory to integrate Checkout Pro first**.
 
-## Transparent Checkout
+To perform the integration, you will need to follow the steps below.
 
-Install the [app extension of our transparent checkout](https://apps.shopify.com/checkout-transparente) in your Shopify store and leave everything in our hands: your customers can enter their information in one step and complete the purchase quickly and safely.
+1. [Install Checkout Pro](#bookmark_checkout_pro)
+2. [Install Checkout Api](#bookmark_checkout_api)
+
+## Checkout Pro
+
+The first phase of the Mercado Pago integration with Shopify is the installation of Checkout Pro. In this checkout model, the customer is redirected to a Mercado Pago page where you must fill in the requested information and complete the payment.
+
+If you already have Checkout Pro installed, [click here](#bookmark_checkout_api) and follow the steps to install Checkout Api.
+
+> NOTE
+>
+> Important
+>
+> Mercado Pago's Checkout Pro is installed exclusively in **Production mode**, that is, it already allows the processing of real payments. This means that **you don't need to set up a production mode** to start receiving payments made in your store.
+
+### Installation
+
+1. Go to the Administration Panel of your store and click on **Settings > Payments**.
+2. In **Payment Providers**, click on **Choose a provider**.
+3. Search for Mercado Pago in the search bar and click on the available option.
+4. In _Client_id_ and _Client_secret_, enter your **Production** credentials. To learn how to obtain this information, access our [Credentials](https://www.mercadopago.com.br/developers/en/guides/resources/credentials) documentation.
+5. Select the images referring to the payment methods you want to display in your store. These images are for illustrative purposes only and do not imply activation of the selected payment method.
+6. In **Test Mode**, select the option **Enable test mode** if you want to keep your store in a test environment before making it available to your customers, however, if you prefer to leave your store enabled to receive real sales, keep the field disabled.
+7. When finished filling in, click on **Save**.
+
+[TXTSNIPPET][/guides/snippets/test-integration/shopify-cpf-config.en.md]
+
+Once you've completed these settings, make a test purchase to ensure the correct functioning of the checkout.
+
+### Test purchase
+
+[TXTSNIPPET][/guides/snippets/test-integration/shopify-test-purchase.en.md]
+
+## Checkout Api
+
+Mercado Pago's Checkout Api allows the entire purchase process to be finished in your store's environment, without the need to redirect to an external page to complete the payment.
+
+Mercado Pago's Checkout Api allows the entire purchase process to take place in your store's environment, without the need to redirect to an external page to complete the payment.
 
 > WARNING
 >
 > Important
 >
-> Soon, the Mercado Pago Transparent Checkout for Shopify will be deprecated for new users and replaced by a new model, more customizable and that allows offering Pix. 
+> If you already have a previous version Checkout Api installed, you will need to uninstall it before configuring the new version. To do this, go to your Shopify admin panel and click on **Apps > Delete Mercado Pago**.
 
+### Installation
 
-### What can I do with Mercado Pago Transparent Checkout?
+To install the Checkout Api on your Shopify, follow the steps below.
 
-| Characteristics | Description |
-| --- | --- |
-| One-step purchases | Offer a clear and fast shopping experience, developed within your store and on the same page. |
-| Mobile experience | Provides a thought and optimized purchase flow for mobile devices. |
-| Shipments | Connect the checkout with your shipping tool and offer deliveries during the purchase process. |
-| Ads tracking | Track your marketing campaigns in detail throughout the process. |
-| Payment methods | Accept payments with credit and debit card, cash and money in Mercado Pago account. |
-| Financing | Sell in installments and offer the promotions available. |
-| Payment as guest | Allow your customers to pay even if they don’t have a Mercado Pago account. |
-| Discounts | Offer promotions to your customers by creating automatic discounts and coupons. |
+1. [Click here](xhttps://apps.shopify.com/checkout-transparente) to access the Mercado Pago Checkout Api app installation page.
+2. In the lower right corner of the screen, click on **Install app**.
+3. On the next screen, you will be asked to enter your **Public key** and **Access token** credentials for **test** and **production**. [Click here](https://www.mercadopago.com.br/developers/en/guides/resources/credentials) and access our documentation to learn how to obtain this information.
+4. In **How do you want to operate**, select the option **I want to test my store**. This will allow you to carry out tests to ensure the checkout works.
+5. Click on **Save**.
 
+[TXTSNIPPET][/guides/snippets/test-integration/shopify-cpf-config.en.md]
 
-### How to install the Transparent Checkout?
+By finishing these settings, proceed to the next step and make a test purchase to ensure the checkout is working correctly.
 
-Install Mercado Pago for Shopify automatically by following these steps from [Shopify app store](https://apps.shopify.com/):
+### Test purchase
 
-1. Enter the website [https://apps.shopify.com/](https://apps.shopify.com/) from your browser and log in to your account. You can also access it from the Apps section of your Shopify panel.
-1. Search for “Mercado Pago Transparent Checkout” in the apps offer.
-1. Click on "Add app".
-1. Go to the Apps section of your admin panel.
+[TXTSNIPPET][/guides/snippets/test-integration/shopify-test-purchase.en.md]
 
-**Excellent! The checkout is already installed in your store, and you only need to activate it in order to start selling.**
+### Activating production mode
 
+Enabling production mode will allow your store to receive actual sales. To activate it, follow the steps below.
 
-### How to activate it with my Mercado Pago account?
+1. Access your store's **Administration Panel** and click on **Apps**.
+2. Click the option **Checkout Api**.
+3. In **How do you want to operate?**, select the option **I want to go to production**.
+4. Click on **Save**.
 
-Connect a Mercado Pago account to the app to capture the collections of your orders on Shopify. It’s easy! You only need to have a seller account in Mercado Pago and obtain the test and production credentials.
-
-Once the checkout is installed, follow these steps:
-
-1. Create a [seller account](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-company?confirmation_url=https%3A%2F%2Fwww.mercadopago[FAKER][URL][DOMAIN]%2Fcomo-cobrar) in Mercado Pago if you don’t have one yet.
-1. Get the **Public Key** and **Access Token** [credentials]([FAKER][CREDENTIALS][URL]), and paste them in the Production and Testing fields that you will find in the app settings.
-1. Approve the account to [go to Production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production) and receive the money from your sales in Mercado Pago.
-
-**Done! With this configuration you can start selling and get the payments you receive in your Mercado Pago account.**
-
-> WARNING
->
-> Importante
->
-> The [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/faqs/credentials) are the keys that uniquely identify you within Mercado Pago. They will allow you to simulate payments in a test environment and receive real payments once you are ready to go to production.
-
-
-### How to test the checkout?
-
-The Mercado Pago app extension comes with the default testing environment, so that you can simulate payments in the store and verify that everything works well before you start receiving real payments from your customers.
- 
-This is where the test credentials you entered in the module when integrating Mercado Pago to your store come into play.
-
-When you test, check that the payment flow works correctly.
-
-**When you see that everything is going well, deactivate the Tests mode and go to the Production mode to receive real payments.**
-
-
-### Go to production
-
-To start receiving payments, you must activate your credentials.
-
-> Check the [requirements to go to production](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/api/goto-production) if you have any questions about the process.
-
-To activate them, make sure that the production credentials entered are those of the account that you receive money from sales.
-
-Activate the Production mode only if you are ready to sell and you have tested the checkout with simulated payments in the testing phase.
-
-**Done! Mercado Pago Transparent Checkout is ready to receive payments online.**
+Done! Mercado Pago's Checkout Api is installed and working correctly. 
 
 ------------
 
+----[mla, mlm, mlu, mpe, mco, mlc]----
 
-## Mercado Pago Redirect Checkout
+[Shopify](https://www.shopify.com/?shpxid=76f6bf35-F67D-4311-0725-B4A8C1AC2254) is an e-commerce platform that offers all the features you need to make online sales.
 
-Configure our module to finalize the purchase on Mercado Pago site during the purchase process in your Shopify store.
+By integrating Mercado Pago into your Shopify, you will be able to receive payments through [Checkout Pro](https://www.mercadopago.com.br/developers/en/guides/online-payments/checkout-pro/introduction), where the buyer is redirected to a Mercado Pago page to complete the payment.
 
+For more information about Checkout Pro and its benefits, [click here](https://www.mercadopago.com.br/developers/en/guides/online-payments/checkout-pro/introduction) and access our documentation.
 
-### What can I do with Mercado Pago payment gateway?
+## Checkout Pro
 
-| Characteristics | Description |
-| --- | --- |
-| Mercado Pago Interface | We take care of it! You don't have to worry about implementing and designing a checkout. |
-| Ads tracking | Track your marketing campaigns in detail throughout the process. |
-| Payment methods | Accept payments with credit and debit card, cash and money in Mercado Pago account. |
-| Financing | Sell in installments and offer the promotions available. |
-| Payment as guest | Allow your customers to pay even if they don’t have a Mercado Pago account. |
-| Discounts | Use coupons to offer promotions to your customers. |
+When installing Checkout Pro, your customer will be redirected to a Mercado Pago page where you will have to fill in the requested information and make the payment, that is, the transaction is processed and completed outside your store's environment.
 
-
-### How to configure Mercado Pago module?
-
-Follow these steps to process payments with Checkout Pro:
-
-1. In Shopify admin panel, go to the *Payments* section under *Settings*.
-1. In the *Third-party providers* box, search for Mercado Pago and select it.
-1. Get the [credentials]([FAKER][CREDENTIALS][URL]) **Client id** e **Client secret**, and paste them into the corresponding fields.
-1. Choose the payment methods you want to offer your clients.
-1. Be sure to select Test mode to verify everything is working properly before going into production.
-1. Activate the module to save the changes.
-
-**Done! Mercado Pago was installed and configured. Once you have done tests, you can come to this same section to deactivate the test environment and receive real payments.**
+To install Checkout Pro, follow the steps below.
 
 > NOTE
 >
-> Nota
+> Important
 >
-> Check [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payments/web-payment-checkout/introduction) documentation to learn more about all its features and functionalities.
+> Mercado Pago's Checkout Pro is installed exclusively in **Production mode**, that is, it already allows the processing of real payments. This means that **you don't need to set up a production mode** to start receiving payments made in your store.
 
+### Installation
 
-### Payment status mapping
+1. Go to the Administration Panel of your store and click on **Settings > Payments**.
+2. In **Payment Providers**, click on **Choose a provider**.
+3. Search for Mercado Pago in the search space and click on the available option.
+4. In _Client_id_ and _Client_secret_, enter your **Production** credentials. To learn how to obtain this information, access our [Credentials](https://www.mercadopago.com.br/developers/en/guides/resources/credentials) documentation.
+5. Select the images referring to the payment methods you want to display in your store. These images are for illustrative purposes only and do not imply activation of the selected payment method.
+6. In **Test Mode**, select the option **Enable test mode** if you want to keep your store in a test environment before making it available to your customers, however, if you prefer to leave your store enabled to receive real sales, keep the field disabled.
+7. When finished filling in, click on **Save**.
 
-The following diagram represents the correlation between the status of a payment in Mercado Pago and the order status in Shopify.
+[TXTSNIPPET][/guides/snippets/test-integration/shopify-cpf-config.en.md]
 
-| Estado del pago | Mercado Pago status | Shopify order status |
-| --- | --- | --- |
-| Approved | Approved | Completed |
-| Pending | Pending | Pending |
-| In process | In process | Pending |
-| In mediation | In mediation | Pending |
-| Cancelled | Cancelled | Failed |
-| Refunded | Refunded | Failed |
-| Rejected | Rejected | Failed |
+Once you've completed these settings, make a test purchase to ensure the correct functioning of the checkout.
+
+### Test purchase
+
+[TXTSNIPPET][/guides/snippets/test-integration/shopify-test-purchase.en.md]
+
+------------
