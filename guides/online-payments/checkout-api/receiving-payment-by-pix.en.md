@@ -1,11 +1,10 @@
-----[mlb]----
 [TXTSNIPPET][/guides/snippets/test-integration/pix-intro]
 
 After registering the Pix key, follow the documentation to perform the integration or, if you prefer, [see on Github](https://github.com/mercadopago/pix-payment-sample) for examples of how to add Pix payments by integrating with Checkout Transparente.
 
 ## Configure a payment with Pix
 
-After [capturing the data for payment](#bookmark_data_capture_for_payment) in the form, to start getting Pix payments you will need to dend the buyer's email address, document type and number, method of payment and amount.
+After [capturing the data for payment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_data_capture_for_payment), in the form, to start getting Pix payments you will need to send the buyer's email address, document type and number, method of payment and amount.
 
 [[[
 ```php
@@ -302,16 +301,11 @@ The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 >
 > If you try to make the payment after the date of expiration set, the transaction will be rejected.
 
- Attributes| Description |
-| --- | --- |
-| `qr_code_base64` | Data for QR code render.|
-| `qr_code` | Data to make payment code available for copy and paste. |
-
 ## Data to make the payment
 
-To make the payment, render the QR code to show it. The code can only be used once and will be displayed as long as it is still valid.
+To make the payment, render the QR code to show it. The code can only be used once and will be displayed as long as it is still valid. You can also add an option to copy and paste the payment code, which will allow you to carry out the transaction from Internet Banking. To render the QR code follow the steps below.
 
-You can also add an option to copy and paste the payment code, which will allow you to carry out the transaction from Internet Banking. To render the QR code follow the steps below.
+To render the QR code and make the copy and paste resource available, follow the steps below.
 
 1. Add `qr_code_base64` to show the QR code. For example, you can render it like this:
 
@@ -331,5 +325,3 @@ You can also add an option to copy and paste the payment code, which will allow 
 > Important
 >
 > If you need to refund a payment made by a Pix transfer, you can find this information in [Refunds and cancellations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
-
-------------

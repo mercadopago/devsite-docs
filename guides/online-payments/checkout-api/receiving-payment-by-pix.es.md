@@ -5,7 +5,7 @@ Después de registrar la clave Pix, sigue la documentación para realizar la int
 
 ## Configurar el pago con Pix
 
-Después de registrar la clave Pix y capturar los datos de pago con el formulario, para recibir pagos con Pix debes reenviar el correo electrónico del comprador, tipo y número de documento, método de pago y detalle del valor.
+Después de registrar la clave Pix y [capturar los datos de pago con el formulario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_data_capture_for_payment), para recibir pagos con Pix debes reenviar el correo electrónico del comprador, tipo y número de documento, método de pago y detalle del valor.
 
 [[[
 ```php
@@ -305,9 +305,9 @@ La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 
 ### Datos para efectuar el pago
 
-Para que se efectúe el pago, deberás renderizar el código QR para poder mostrarlo. El código solo se puede usar una vez y se mostrará mientras siga siendo válido.
+Para que se efectúe el pago, deberás renderizar el código QR para poder mostrarlo. El código solo se puede usar una vez y se mostrará mientras siga siendo válido. También puedes agregar una opción para copiar y pegar el código de pago, que permitirá realizar la transacción desde una Banca por Internet.
 
-También puedes agregar una opción para copiar y pegar el código de pago, que permitirá realizar la transacción desde una Banca por Internet.
+Para renderizar el código QR y habilitar el recurso de copiar y pegar, sigue los pasos a continuación
 
 1. Tienes que agregar el `qr_code_base64` para poder mostrar el código QR. Por ejemplo, puedes renderizarlo de la siguiente manera:
 

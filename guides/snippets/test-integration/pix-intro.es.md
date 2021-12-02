@@ -2,7 +2,6 @@
 
 Puedes ofrecer la opción de recibir pagos instantáneamente con Pix (`bank_transfer`) desde cualquier banco o billetera digital, ya sea a través de un **código QR** o un **código de pago** donde puede establecer una fecha de vencimiento para que se realice el pago.
 
-
 ```json
 [
     {

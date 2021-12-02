@@ -1,11 +1,10 @@
-----[mlb]----
 [TXTSNIPPET][/guides/snippets/test-integration/pix-intro]
 
 Após cadastrar a chave Pix, siga a documentação para realizar a integração ou, se preferir, [veja no Github](https://github.com/mercadopago/pix-payment-sample) os exemplos de como adicionar pagamentos Pix integrando com o Checkout API. 
 
 ## Configurar pagamento com Pix
 
-Após cadastrar a chave Pix e capturar os dados para pagamento com o formulário, você deve encaminhar o e-mail do comprador, o tipo e número de documento, o meio de pagamento utilizado e o detalhe do valor. 
+Após cadastrar a chave Pix e [capturar os dados para pagamento com o formulário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_capture_os_dados_para_pagamento), você deve encaminhar o e-mail do comprador, o tipo e número de documento, o meio de pagamento utilizado e o detalhe do valor. 
 
 [[[
 ```php
@@ -305,11 +304,9 @@ A data usa o formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 
 ## Dados para realizar o pagamento
 
-Para o pagamento ser realizado, você deverá renderizar o código QR vigente, que deverá ser utilizado somente uma vez.
+Para o pagamento ser realizado, você deverá renderizar o código QR vigente que deverá ser utilizado somente uma vez. Você também pode adicionar uma opção para copiar e colar o código de pagamento, o que permitirá realizar a transação a partir de Internet Banking. 
 
-Você também pode adicionar uma opção para copiar e colar o código de pagamento, o que permitirá realizar a transação a partir de Internet Banking. 
-
-Para renderizar o código QR siga os passos abaixo:
+Para renderizar o QR code e disponibilizar o recurso de copia e cola, siga os passos abaixo.
 
 1. Adicione o `qr_code_base64` para exibir o código QR, como mostra o exemplo abaixo.
 
@@ -329,5 +326,3 @@ Para renderizar o código QR siga os passos abaixo:
 > Importante
 >
 > Encontre as informações necessárias para devolver um pagamento feito por transferência Pix no artigo de [devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
-
-------------
