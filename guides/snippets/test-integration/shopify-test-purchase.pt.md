@@ -4,7 +4,7 @@ Siga os passos abaixo para realizar uma compra teste em sua loja.
 
 1. Acesse a página inicial da sua loja e selecione um produto para compra.
 2. Clique em **Comprar** e prossiga para o carrinho.
-Insira um CEP para simular o frete e clique em **Continuar**.
+3. Insira um CEP para simular o frete e clique em **Continuar**.
 4. Preencha os campos solicitados e selecione o Mercado Pago como meio de pagamento.
 5. Clique em **Finalizar compra**.
 
