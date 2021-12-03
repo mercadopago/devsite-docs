@@ -20,8 +20,8 @@ La API de Integraciones te permite conectar tus puntos de venta (PDV) al ecosist
 >
 > Esta integración soporta los siguientes dispositivos:
 >
-> - [Point Pro 2](https://www.mercadopago.com.br/point-pro-2?ref=devsite)
-> - [Point Mini Chip](https://www.mercadopago.com.br/point-mini-chip?ref=devsite)
+> - Point Pro 1
+> - [Point Pro 2](https://www.mercadopago.com.br/point-pro-2)
 ------------
 
 ### Conoce sus ventajas

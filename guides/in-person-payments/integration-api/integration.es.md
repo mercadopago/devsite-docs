@@ -46,7 +46,6 @@ curl -X POST \
 Puedes generar hasta 10 cuentas de usuarios de prueba en simultáneo. Ten en cuenta que los usuarios de prueba caducan luego de 60 días sin actividad en Mercado Pago. 
 
 
-
 ## 2. Asocia tu dispositivo Point a tu cuenta de Mercado Pago
 
 Ahora vas a vincular tu dispositivo Point a tu cuenta de Mercado Pago. Para eso, necesitas contar con nuestra aplicación en tu celular. Puedes obtenerla para sistemas operativos [iOS](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8) y [Android](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419).
@@ -64,42 +63,26 @@ Una vez que hayas vinculado tu dispositivo Point a tu cuenta de Mercado Pago, de
 
 ### Activa el modo integrado en tu dispositivo Point
 
-> NOTE
->
-> Recurso en desarrollo
->
-> Consulta el manual de [Configuración inicial Point Plus](https://docs.google.com/document/d/19s6PCYe2aQBIkVctrBid74YhFvj5--skeaGb6dpv0Gs/edit?usp=sharing) que te permitirá asociar su dispositivo Point Plus a tu cuenta de Mercado Pago.
+Para integrar tu dispositivo Point con nuestra API es necesario activar el modo operativo punto de venta (PDV). Para lograrlo, ejecuta el siguiente comando:
 
-## 3. Prepara y configura tus notificaciones de Webhook
-
-Si quieres, puedes recibir notificaciones de Webhooks. Estas se envían desde nuestra API de Integraciones a tu sistema receptor mediante una llamada ´HTTP POST´ en relación a los cambios de estado que presente una intención de pago.
-
-Para integrar las notificaciones Webhook, pueden consultar [esta documentación](https://www.mercadopago.com.ar/developers/es/guides/notifications/webhooks)
-
-### Registra y valida tu webhook
-
-Una vez tengas listo tus notificaciones de Webhook puedes registrarlo en nuestra API de Integraciones de la siguiente manera:
-
-``` curl
-curl --location --request PATCH 'https://api.mercadopago.com/point/integration-api/integrators' \
+``` curl --location --request PATCH 'https://api.mercadopago.com/point/integration-api/devices/{{device.id}}' \
 --header 'Authorization: Bearer ${ACCESS_TOKEN}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "webhook": "http://your.server.ip.address:port/webhook"
+    "operating_mode": "PDV"
 }'
 ```
 
-La respuesta será un `HTTP 204 No Content`.
+Recibirás una respuesta como esta:
 
-
-Luego, deberás validar tus notificaciones Webhook. Esta petición es necesaria para que Mercado Pago Point pueda validar que el sistema webhook configurado le pertenece realmente al integrador, esto es requerido para evitar ataques de amplificación.
-
-``` curl
-curl --location --request POST 'https://api.mercadopago.com/point/integration-api/integrators/check' \
---header 'Authorization: Bearer ${ACCESS_TOKEN}'
+``` json 
+{
+"operating_mode": "PDV"
+}
 ```
 
-La respuesta será nuevamente un `HTTP 204 No Content`.
+> En caso de que requieras utilizar el dispositivo en el modo no integrado debes configurar el campo "operating_mode" con el valor `STANDALONE`.
+
 
 ### Próximos pasos
 

@@ -15,20 +15,28 @@ Recibirás una respuesta como esta:
 
 ```json
 {
-  "devices": [
-    {
-      "id": "GERTEC_MP35P__8701012051261234"
-    },
-    {
-      "id": "INGENICO_MOVE2500__87010121123456"
-    }
-  ]
+   "devices":[
+      {
+         "id":"GERTEC_MP35P__8701012051261234",
+         "operating_mode":"STANDALONE"
+      },
+      {
+         "id":"INGENICO_MOVE2500__87010121123456",
+         "operating_mode":"PDV"
+      }
+   ],
+   "paging":{
+      "total":2,
+      "limit":50,
+      "offset":0
+   }
 }
+
 ```
 ## Crea la intención de pago
 Puedes crear una intención de pago y asignarla a tu dispositivo Point de esta manera:
 
-----[mla, mlm]----
+----[mla]----
 ```curl
 curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents' \
 --header 'Authorization: Bearer ${ACCESS_TOKEN}' \
@@ -70,13 +78,12 @@ Como respuesta, recibirás algo similar a esto:
 curl --location --request POST 'https://api.mercadopago.com/point/integration-api/devices/:deviceId/payment-intents' \
 --header 'Authorization: Bearer ${ACCESS_TOKEN}' \
 --data-raw '{
-    "amount": 1400,
-    "description": "Your payment description",
+    "amount": 1500,
+    "description": “this is an example”,
     "payment": {
-        "type": "credit_card",
-        "installments": 1, 
-        "installments_cost": "seller"
-    },
+      "installments": 1,
+      "type": “credit_card”
+     },
     "additional_info": {
         "external_reference": "4561ads-das4das4-das4754-das456",
         "print_on_terminal": true
@@ -97,19 +104,18 @@ Como respuesta, recibirás algo similar a esto:
 
 ```json
 {
-    "id": "7d8c70b6-2ac8-4c57-a441-c319088ca3ca",
-    "device_id": "GERTEC_MP35P__8701012051267097",
-    "amount": 1400,
-    "description": "Your payment description",
-    "payment": {
-        "type": "credit_card",
-        "installments": 1, 
-        "installments_cost": "seller"
-    },
-    "additional_info": {
-        "external_reference": "4561ads-das4das4-das4754-das456",
-        "print_on_terminal": true
-    }
+  "id": "7d8c70b6-2ac8-4c57-a441-c319088ca3ca",
+  "device_id": "INGENICO_MOVE2500__ING-ARG-14886780",
+  "amount": 1500,
+  “description”: "this is an example”,
+  “payment”: {
+      “type”: "credit_card”,
+      “installments”: 1
+  },
+  "additional_info": {
+      "external_reference": "4561ads-das4das4-das4754-das456",
+      "print_on_terminal": true
+  }
 }
 ```
 ------------
@@ -156,20 +162,18 @@ Ejemplo de respuesta:
     "amount": 250,
     "description": "Your payment description ",
     "payment": {
-        "id": "16123456789",
         "type": "debit_card",
         "installments": 1,
-        "installments_cost": "seller"
     },
     "additional_info": {
-        "external_reference": "10a01a30-a6fe-4584-b22a-07e123456798",
+        "external_reference": "4561ads-das4das4-das4754-das456",
         "print_on_terminal": true
     }
 }
 ```
 ------------
 
-----[mla, mlm]----
+----[mla]----
 
 ``` json
 {

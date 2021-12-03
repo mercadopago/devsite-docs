@@ -1,13 +1,41 @@
 # Configura tus notificaciones
 
-Configura tus [notificaciones Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/integration-api/integration#bookmark_3._Prepara_y_configura_tus_notificaciones_de_Webhook), recibirás una notificación al finalizar el proceso de pago.
-Puedes consultar los [estados de una intención de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/integration-api/glossary#bookmark_posibles_estados_de_una_intención_de_pago) para conocer más acerca de las notificaciones que recibirás.
+Si quieres, puedes recibir notificaciones de Webhooks. Estas se envían desde nuestra API de Integraciones a tu sistema receptor mediante una llamada ´HTTP POST´ en relación a los cambios de estado que presente una intención de pago.
+
+Para integrar las notificaciones Webhook, sigue las instrucciones de [esta documentación](https://www.mercadopago.com.ar/developers/es/guides/notifications/webhooks).
+
+## Registra y valida tu webhook
+
+Una vez tengas listo tus notificaciones de Webhook puedes registrarlas en nuestra API de Integraciones de la siguiente manera:
+
+``` curl
+curl --location --request PATCH 'https://api.mercadopago.com/point/integration-api/integrators' \
+--header 'Authorization: Bearer ${ACCESS_TOKEN}' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "webhook": "http://your.server.ip.address:port/webhook"
+}'
+```
+
+La respuesta será un `HTTP 204 No Content`.
+
+
+Luego, deberás validar tus notificaciones Webhook. Esta petición es necesaria para que Mercado Pago Point pueda validar que el sistema webhook configurado le pertenece realmente al integrador, esto es requerido para evitar ataques de amplificación.
+
+``` curl
+curl --location --request POST 'https://api.mercadopago.com/point/integration-api/integrators/check' \
+--header 'Authorization: Bearer ${ACCESS_TOKEN}'
+```
+
+La respuesta será nuevamente un `HTTP 204 No Content`.
+
+> Puedes consultar los [estados de una intención de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/integration-api/glossary#bookmark_posibles_estados_de_una_intención_de_pago) para conocer más acerca de las notificaciones que recibirás.
 
 ## Ejemplos de implementación del algoritmo HMAC-SHA256
 
 Puedes desarrollar el sistema webhook en el lenguaje de programación de tu preferencia, para ello es necesario implementar una única URL que de respuesta a las peticiones `HTTP GET` para la validación del webhook y `HTTP POST` para la recepción de las notificaciones.
 
-### Implementación de HTTP GET - Validación de seguridad
+## Implementación de HTTP GET - Validación de seguridad
 
 Para implementar el sistema receptor de notificaciones webhook, es necesario implementar el algoritmo **HMAC-SHA256** para dar respuesta a la petición HTTP GET con el `challengeCode` encriptado en formato hexadecimal.
 
