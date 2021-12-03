@@ -27,7 +27,7 @@ Hemos preparado distintos escenarios que te permiten simular una experiencia rea
 | Reversed | $1100 |
 | Rejected | $1200 |
 | Error | $1300 |
-| Successfull | Cualquier otro valor diferente a los anteriores |
+| Successful | Cualquier otro valor diferente a los anteriores |
 
 
 ### 3. Obtén la intención de pago desde el dispositivo

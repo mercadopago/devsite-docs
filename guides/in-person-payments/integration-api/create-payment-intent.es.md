@@ -104,18 +104,18 @@ Como respuesta, recibirás algo similar a esto:
 
 ```json
 {
-  "id": "7d8c70b6-2ac8-4c57-a441-c319088ca3ca",
-  "device_id": "INGENICO_MOVE2500__ING-ARG-14886780",
-  "amount": 1500,
-  “description”: "this is an example”,
-  “payment”: {
-      “type”: "credit_card”,
-      “installments”: 1
-  },
-  "additional_info": {
-      "external_reference": "4561ads-das4das4-das4754-das456",
-      "print_on_terminal": true
-  }
+   "id":"7d8c70b6-2ac8-4c57-a441-c319088ca3ca",
+   "device_id":"INGENICO_MOVE2500__ING-ARG-14886780",
+   "amount":1500,
+   "description":"this is an example",
+   "payment":{
+      "type":"credit_card",
+      "installments":1
+   },
+   "additional_info":{
+      "external_reference":"4561ads-das4das4-das4754-das456",
+      "print_on_terminal":true
+   }
 }
 ```
 ------------
@@ -156,19 +156,19 @@ Ejemplo de respuesta:
 ----[mlb]----
 ``` json
 {
-    "state": "FINISHED",
-    "id": "0591cb42-f69a-4334-908b-123456789012",
-    "device_id": "GERTEC_MP35P_8701012123456789",
-    "amount": 250,
-    "description": "Your payment description ",
-    "payment": {
-        "type": "debit_card",
-        "installments": 1,
-    },
-    "additional_info": {
-        "external_reference": "4561ads-das4das4-das4754-das456",
-        "print_on_terminal": true
-    }
+   "state":"FINISHED",
+   "id":"f8f50814-a8c5-4524-95b6-672958523121",
+   "device_id":"GERTEC_MP35P__8701016695109435",
+   "description":"this is an example",
+   "amount":1500,
+   "payment":{
+      "type":"credit_card",
+      "installments":1
+   },
+   "additional_info":{
+      "external_reference":"4561ads-das4das4-das4754-das456",
+      "print_on_terminal":true
+   }
 }
 ```
 ------------
