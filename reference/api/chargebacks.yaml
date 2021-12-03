@@ -100,7 +100,7 @@ paths:
     post:
       tags:
         - $ref: "#/tags/marketplace"
-      summary: Chargeback
+      summary: Full and partial chargeback
       description: Create Partial/Full Chargeback for a specific payment. If the amount field is filled, it will create a partial chargeback, if not, it will create a full chargeback.
       parameters:
         - name: id
