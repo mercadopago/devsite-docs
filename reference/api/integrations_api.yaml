@@ -2,23 +2,18 @@ openapi: 3.0.0
 servers:
   - url: https://api.mercadopago.com
 info:
-  title: Integration API
-  version: 0.2.3
+  title: Mercado Pago API Reference
+  version: '1.0'
 paths:
   /point/integration-api/devices:
     get:
       tags:
-        - $ref: '#/tags/mercado-pago-point'
+        - $ref: '#/tags/mp-point'
       summary: Get paged devices list
-      description: "This endpoint allows you to get the devices.Devices can be filtered by pos and/or store, if you want to do it, you must know their ID's You can retrieve the pos and store ID's through the following endpoints: - [GET - POS ID](https://www.mercadopago.com.br/developers/en/reference/pos/_pos/get) - [GET - STORE ID](https://www.mercadopago.com.br/developers/en/reference/stores/_users_user_id_stores_search/get)"
-      operationId: getDevices
-      security:
-        - bearerAuth: []
-      tags:
-        - Device
+      description: This endpoint allows you to get the devices.Devices can be filtered by pos and/or store, if you want to do it, you must know their ID's You can retrieve the pos and store ID's through the following endpoints
       parameters:
-        - in: query
-          name: store_id
+        - name: store_id
+          in: query
           description: Devices Store Id filter (Optional)
           required: false
           example: "1235456678"
@@ -69,7 +64,7 @@ paths:
             application/json:
               schema:
                 "$ref": "#/components/schemas/Error"
-  "/point/integration-api/devices/{deviceId}/payment-intents":
+  /point/integration-api/devices/{deviceId}/payment-intents:
     post:
       summary: Create a payment intent
       description: This endpoint allows to create a payment intent for a device
@@ -137,7 +132,7 @@ paths:
             application/json:
               schema:
                 "$ref": "#/components/schemas/Error"
-  "/point/integration-api/devices/{deviceId}/payment-intents/{paymentIntentId}":
+  /point/integration-api/devices/{deviceId}/payment-intents/{paymentIntentId}:
     delete:
       summary: Cancel payment intent
       description: This endpoint allows to cancel a payment intent
@@ -199,7 +194,7 @@ paths:
             application/json:
               schema:
                 "$ref": "#/components/schemas/Error"
-  "/point/integration-api/payment-intents/{paymentIntentId}":
+  /point/integration-api/payment-intents/{paymentIntentId}:
     get:
       summary: Find information payment intent
       description: This endpoint allows to get information of payment intent.This endpoint will provide the payment intent’s information, its final status and the payment-id, which can be used to get the final status of the transaction in the [Payment-API](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get). The Webhook notifications are the main communication point of the payment intent information, then this endpoint should be used for testing and eventualities, and not for polling, because it has **restrictions** like consume by time, allows to get information one request per second.
@@ -254,7 +249,7 @@ paths:
             application/json:
               schema:
                 "$ref": "#/components/schemas/Error"
-  "/point/integration-api/payment-intents/events":
+  /point/integration-api/payment-intents/events:
     get:
       summary: Gets payment intents list with their final states
       description: This endpoint allows to get a list of payment intents with their final states between a date range. This endpoint has a restriction that the number of days between dates must not exceed 30
@@ -318,7 +313,7 @@ paths:
             application/json:
               schema:
                 "$ref": "#/components/schemas/Error"
-  "/point/integration-api/payment-intents/{paymentIntentId}/events":
+  /point/integration-api/payment-intents/{paymentIntentId}/events:
     get:
       summary: Find the last state of a payment intent
       description: This endpoint allows to find the last state of a payment intent
@@ -373,7 +368,7 @@ paths:
             application/json:
               schema:
                 "$ref": "#/components/schemas/Error"
-  "/point/integration-api/integrators":
+  /point/integration-api/integrators:
     parameters:
       - in: header
         name: x-test-scope
@@ -444,7 +439,7 @@ paths:
             application/json:
               schema:
                 "$ref": "#/components/schemas/Error"
-  "/point/integration-api/integrators/check":
+  /point/integration-api/integrators/check:
     parameters:
       - in: header
         name: x-test-scope
@@ -488,7 +483,7 @@ paths:
             application/json:
               schema:
                 "$ref": "#/components/schemas/Error"
-  "/point/integration-api/devices/{device-id}":
+  /point/integration-api/devices/{device-id}:
     parameters:
       - in: path
         name: device-id
@@ -678,23 +673,6 @@ components:
           format: int64
           example: 1500
           minimum: 1
-        description:
-          type: string
-          example: Description example
-        payment:
-          type: object
-          properties:
-            installments:
-              type: integer
-            type:
-              type: string
-              example: credit_card
-            installments_cost:
-              type: string
-              example: seller
-            voucher_type:
-              type: string
-              example: sodexo
         additional_info:
           type: object
           properties:
@@ -754,21 +732,6 @@ components:
           type: integer
           format: int64
           example: 1400
-        description:
-          type: string
-          example: "payment-intent from pdv"
-        payment:
-          type: object
-          properties:
-            installments:
-              type: integer
-              example: 2
-            type:
-              type: string
-              example: "credit_card"
-            installments_cost:
-              type: string
-              example: "seller"
         additional_info:
           type: object
           properties:
