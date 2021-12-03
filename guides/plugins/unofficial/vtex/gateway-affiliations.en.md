@@ -59,7 +59,7 @@ And that's it! Your affiliation with MercadoPagoV2 is already active!
 > 
 > If you have difficulties during your integration, check our [errors list](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/common-errors), and our document about [VTEX logs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/unofficial/vtex/logs).
 
-![Creating a MercadoPagoV2 gateway affiliation](/images/vtex/affiliationV2-en.gif)
+![Creating a MercadoPagoV2 gateway affiliation](/images/vtex/affiliationV2-imagenv2-en.gif)
 
 > LEFT_BUTTON_RECOMMENDED_EN
 >

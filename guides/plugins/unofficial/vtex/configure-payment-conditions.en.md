@@ -21,7 +21,7 @@ The configuration of payment conditions is done in the **Payment conditions** ta
 * **Boleto Bancário:** this refers to boleto bancário transactions **exclusively**.
 * **Pix:** This refers to transactions with Pix via **QR Code** or **Copy and Paste**. To configure this payment condition, you must have a Pix key registered in your Mercado Pago account. For more information on creating your Pix key, click [here](https://www.mercadopago[FAKER][URL][DOMAIN]/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required). ------------
 
-![Configure payment plans](/images/vtex/paymentconditions-en.gif)
+![Configure payment plans](/images/vtex/paymentconditions-imagenv2-en.gif)
 
 > NOTE
 >
@@ -36,7 +36,7 @@ On the following screen:
 3. Activate the payment condition from the `Status` field. This must be activated for your selection in the `Process with affiliation` field to work.
 4. Save your changes by clicking on `Save`.
 
-![Credit card configuration](/images/vtex/paymentconditions-cc-en.gif)
+![Credit card configuration](/images/vtex/paymentconditions-cc-imagenv2-en.gif)
 
 > WARNING
 >

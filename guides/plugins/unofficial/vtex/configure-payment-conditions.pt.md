@@ -27,7 +27,7 @@ A configuração das condições de pagamento é feita na aba **Condições de p
 > 
 > Você também pode configurar **condições especiais** de pagamento. Clique [aqui](https://help.vtex.com/pt/tutorial/condicoes-especiais--tutorials_456?&utm_source=admin) para mais informações.
 
-![Configurar condições de pagamento](/images/vtex/paymentconditions-pt.gif)
+![Configurar condições de pagamento](/images/vtex/paymentconditions-imagenv2-pt.gif)
 
 Na próxima tela, deve-se:
 
@@ -36,7 +36,7 @@ Na próxima tela, deve-se:
 3. Ativar a condição de pagamento no campo `Status`. Ele deve estar ativado para que sua seleção no campo `Processar com a afiliação` funcione.
 4. Salvar suas alterações clicando em `Salvar`.
 
-![Configurar condições de pagamento com cartão de crédito](/images/vtex/paymentconditions-cc-pt.gif)
+![Configurar condições de pagamento com cartão de crédito](/images/vtex/paymentconditions-cc-imagenv2-pt.gif)
 
 > WARNING
 >
