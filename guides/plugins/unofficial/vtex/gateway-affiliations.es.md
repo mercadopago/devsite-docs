@@ -60,7 +60,7 @@ Para crear una **afiliación de gateway de pago con MercadoPagoV2**, sigue los p
 > 
 > Si tienes dificultades durante tu integración, consulta nuestro [lista de errores](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/common-errors) y nuestro documento sobre [logs de VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/logs).
 
-![Creando una afiliación de gateway MercadoPagoV2](/images/vtex/affiliationV2-es.gif)
+![Creando una afiliación de gateway MercadoPagoV2](/images/vtex/affiliationV2-imagenv2-es.gif)
 
 > LEFT_BUTTON_RECOMMENDED_ES
 >

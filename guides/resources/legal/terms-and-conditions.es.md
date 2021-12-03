@@ -1,7 +1,7 @@
 ----[mla]----
 # Términos y Condiciones para Desarrolladores de Mercado Pago
 
-_Última modificación: 15/07/2021_
+_Última modificación: 03/12/2021_
 
 Estos términos y condiciones, incluyendo sus anexos (los “Términos y Condiciones”), constituyen un contrato donde se establecen las reglas para que cualquier persona humana y/o jurídica pueda participar como Desarrollador y pueda acceder y/o usar la API de la unidad de negocio “Mercado Pago” de MercadoLibre S.R.L., CUIT: 30-70308853-4 (“Mercado Pago”) (la “API”). Al acceder y/o usar la API, los Desarrolladores aceptan estos Términos y Condiciones.
 
@@ -23,7 +23,7 @@ Cualquier persona que no acepte estos Términos y Condiciones para Desarrollador
  
 **1.7 Información Personal:** Se refiere a cualquier información relativa a una persona identificada o identificable, incluida, sin que deba entenderse limitada, en archivos electrónicos y archivos impresos. Esta información, incluye Datos Sensibles (según definición establecida en esta cláusula) y puede comprender: nombre o iniciales, domicilio u otras direcciones físicas, número de teléfono móvil o fijo, correo electrónico, dirección IP, número de tarjeta de crédito, fotografías o cualquier otro dato o información sujeta a las Leyes de Protección de Datos Personales.
 
-**1.8 Leyes de Protección de Datos Personales:** Se refiere a todas las leyes, normas, reglamentos y órdenes de cualquier jurisdicción o subdivisión de la misma que guarden relación con la privacidad, seguridad, confidencialidad y/o integridad de la Información Personal que sean de aplicación al presente Acuerdo, incluidas, pero no limitadas a la Ley N° 29.733 del Perú y cualquier otra norma relativa a la protección de los datos personales que pueda resultar aplicable.
+**1.8 Leyes de Protección de Datos Personales:** Se refiere a todas las leyes, normas, reglamentos y órdenes de cualquier jurisdicción o subdivisión de la misma que guarden relación con la privacidad, seguridad, confidencialidad y/o integridad de la Información Personal que sean de aplicación al presente Acuerdo, incluidas, pero no limitadas a la Ley N° 25.326 de Argentina y cualquier otra norma relativa a la protección de los datos personales que pueda resultar aplicable.
  
 **1.9 Mercado Libre:** Es MercadoLibre S.R.L. y/o cualquiera de sus sociedades controladas, vinculadas o relacionadas.
  
@@ -651,7 +651,7 @@ Os termos em maiúscula que não estejam definidos nestes Termos e Condições t
 ----[mlc]----
 # Términos y Condiciones para Desarrolladores de Mercado Pago
 
-_Última modificación: 15/07/2021_
+_Última modificación: 03/12/2021_
 
 Estos términos y condiciones, incluyendo sus anexos (los “Términos y Condiciones”), constituyen un contrato donde se establecen las reglas para que cualquier persona natural y/o jurídica pueda participar como Desarrollador (según se define más adelante) y pueda acceder y/o usar la API de Mercado Pago S.A., R.U.T. 76.516.950-K (“Mercado Pago”) (la “API”). Al acceder y/o usar la API, los Desarrolladores aceptan estos Términos y Condiciones.
 
@@ -994,7 +994,7 @@ Los términos en mayúscula que no estén definidos en estos Términos y Condici
 ----[mco]----
 # Términos y Condiciones para Desarrolladores de Mercado Pago
 
-_Última modificación: 15/07/2021_
+_Última modificación: 03/12/2021_
 
 Estos términos y condiciones, incluyendo sus anexos (los “Términos y Condiciones”), constituyen un contrato donde se establecen las reglas para que cualquier persona natural y/o jurídica pueda participar como Desarrollador y pueda acceder y/o usar la API de Mercado Pago Colombia Ltda., N.I.T.: 900116319-8 (“Mercado Pago”) (la “API”). Al acceder y/o usar la API, los Desarrolladores aceptan estos Términos y Condiciones.
 
@@ -1017,7 +1017,7 @@ Cualquier persona que no acepte estos Términos y Condiciones para Desarrollador
 
 **1.7 Información Personal:** Se refiere a cualquier información relativa a una persona identificada o identificable, incluida, sin que deba entenderse limitada, en archivos electrónicos y archivos impresos. Esta información, incluye Datos Sensibles (según definición establecida en esta cláusula) y puede comprender: nombre o iniciales, domicilio u otras direcciones físicas, número de teléfono móvil o fijo, correo electrónico, dirección IP, número de tarjeta de crédito, fotografías o cualquier otro dato o información sujeta a las Leyes de Protección de Datos Personales.
 
-**1.8 Leyes de Protección de Datos Personales:** Se refiere a todas las leyes, normas, reglamentos y órdenes de cualquier jurisdicción o subdivisión de la misma que guarden relación con la privacidad, seguridad, confidencialidad y/o integridad de la Información Personal que sean de aplicación al presente Acuerdo, incluidas, pero no limitadas a la Ley N° 29.733 del Perú y cualquier otra norma relativa a la protección de los datos personales que pueda resultar aplicable.
+**1.8 Leyes de Protección de Datos Personales:** Se refiere a todas las leyes, normas, reglamentos y órdenes de cualquier jurisdicción o subdivisión de la misma que guarden relación con la privacidad, seguridad, confidencialidad y/o integridad de la Información Personal que sean de aplicación al presente Acuerdo, incluidas, pero no limitadas a la Ley N° 1.581 de Colombia y cualquier otra norma relativa a la protección de los datos personales que pueda resultar aplicable.
 
 **1.9 Mercado Libre:** Es MercadoLibre Colombia LTDA. y/o cualquiera de sus sociedades controladas, vinculadas o relacionadas.
 
@@ -1342,7 +1342,7 @@ Los términos en mayúscula que no estén definidos en estos Términos y Condici
 ----[mpe]----
 # Términos y Condiciones para Desarrolladores de Mercado Pago
 
-_Última modificación: 15/07/2021_
+_Última modificación: 03/12/2021_
 
 **1.1 API:** Es la Interfaz de Programación de Aplicaciones de Mercado Pago y toda otra herramienta puesta a disposición de los Desarrolladores.
 
@@ -1670,7 +1670,7 @@ Los términos en mayúscula que no estén definidos en estos Términos y Condici
 ----[mlm]----
 # Términos y Condiciones para Desarrolladores de Mercado Pago
 
-_Última modificación: 15/07/2021_
+_Última modificación: 03/12/2021_
 
 Estos términos y condiciones, incluyendo sus anexos (los “Términos y Condiciones”), constituyen un contrato donde se establecen las reglas para que cualquier persona física y/o moral que funge como Desarrollador pueda acceder y/o usar la interfaz de programación de aplicaciones de la unidad de negocio “Mercado Pago” de MercadoLibre, S. de R.L de C.V. (“Mercado Pago”) (la “API”). Al acceder y/o usar la API, los Desarrolladores aceptan estos Términos y Condiciones.
 
@@ -2001,7 +2001,7 @@ Los términos en mayúscula que no estén definidos en estos Términos y Condici
 ----[mlu]----
 # Términos y Condiciones para Desarrolladores de Mercado Pago
 
-_Última modificación: 15/07/2021_
+_Última modificación: 03/12/2021_
 
 Estos términos y condiciones, incluyendo sus anexos (los “Términos y Condiciones”), constituyen un contrato donde se establecen las reglas para que cualquier persona física y/o jurídica pueda participar como Desarrollador y pueda acceder y/o usar la API de la unidad de negocio “Mercado Pago” de Deremate.com de Uruguay S.R.L., R.U.T: 214111700011 (“Mercado Pago”) (la “API”). Al acceder y/o usar la API, los Desarrolladores aceptan estos Términos y Condiciones.
 
@@ -2023,7 +2023,7 @@ Cualquier persona que no acepte estos Términos y Condiciones para Desarrollador
 
 **1.7 Información Personal:** Se refiere a cualquier información relativa a una persona identificada o identificable, incluida, sin que deba entenderse limitada, en archivos electrónicos y archivos impresos. Esta información, incluye Datos Sensibles (según definición establecida en esta cláusula) y puede comprender: nombre o iniciales, domicilio u otras direcciones físicas, número de teléfono móvil o fijo, correo electrónico, dirección IP, número de tarjeta de crédito, fotografías o cualquier otro dato o información sujeta a las Leyes de Protección de Datos Personales.
 
-**1.8 Leyes de Protección de Datos Personales:** Se refiere a todas las leyes, normas, reglamentos y órdenes de cualquier jurisdicción o subdivisión de la misma que guarden relación con la privacidad, seguridad, confidencialidad y/o integridad de la Información Personal que sean de aplicación al presente Acuerdo, incluidas, pero no limitadas a la Ley N° 29.733 del Perú y cualquier otra norma relativa a la protección de los datos personales que pueda resultar aplicable.
+**1.8 Leyes de Protección de Datos Personales:** Se refiere a todas las leyes, normas, reglamentos y órdenes de cualquier jurisdicción o subdivisión de la misma que guarden relación con la privacidad, seguridad, confidencialidad y/o integridad de la Información Personal que sean de aplicación al presente Acuerdo, incluidas, pero no limitadas a la Ley N° 18.331 de Uruguay y cualquier otra norma relativa a la protección de los datos personales que pueda resultar aplicable.
 
 **1.9 Mercado Libre:** Es Deremate.com de Uruguay S.R.L. y/o cualquiera de sus sociedades controladas, vinculadas o relacionadas.
 

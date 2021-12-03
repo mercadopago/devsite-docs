@@ -59,7 +59,7 @@ Pronto! Sua afiliação com MercadoPagoV2 já está ativada.
 > 
 > Se você tiver dificuldades durante sua integração, verifique nossa [lista de erros](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/common-errors) e nosso documento sobre [logs do VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/logs).
 
-![Criando afiliação de gateway MercadoPagoV2](/images/vtex/affiliationV2-pt.gif)
+![Criando afiliação de gateway MercadoPagoV2](/images/vtex/affiliationV2-imagenv2-pt.gif)
 
 > LEFT_BUTTON_RECOMMENDED_PT
 >
