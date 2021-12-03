@@ -27,7 +27,7 @@ La configuración de los planes de pago se realiza en la pestaña **Planes de pa
 > 
 > También puedes configurar **condiciones especiales** de pago. Haz clic [aquí](https://help.vtex.com/es/tutorial/condicoes-especiais--tutorials_456?&utm_source=admin) para obtener más información.
 
-![Configurar planes de pago](/images/vtex/paymentconditions-es.gif)
+![Configurar planes de pago](/images/vtex/paymentconditions-imagenv2-es.gif)
 
 En la pantalla siguiente, debes:
 
@@ -36,7 +36,7 @@ En la pantalla siguiente, debes:
 3. Activar la condición de pago desde el campo `Status`. Debe estar activado para que tu selección en el campo `Proceso con la afiliación` funcione.
 4. Guardar tus cambios haciendo clic en `Salva`.
 
-![Configurar planes de pag con tarjeta de crédito](/images/vtex/paymentconditions-cc-es.gif)
+![Configurar planes de pag con tarjeta de crédito](/images/vtex/paymentconditions-cc-imagenv2-es.gif)
 
 > WARNING
 >
