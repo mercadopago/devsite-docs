@@ -11,7 +11,7 @@ In this documentation, we will explain the necessary settings for receiving IPN 
 1. Access the [IPN Notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
 2. Next, configure the **URL** of **production** where notifications will be received.
 3. If you need to identify multiple accounts, at the end of the indicated URL you can specify the parameter `?customer=(sellername) endpoint` to identify the sellers.
-4. Select the **events** from which you will receive notifications in `json` format using `HTTP POST` to the URL specified above. We notify you of events related to your orders (`merchant_orders`), chargebacks received (`chargebacks`) or payments received (`payment`).
+4. Select the **events** from which you will receive notifications in `json` format using `HTTP POST` to the URL specified above. We notify you of events related to your orders (`merchant_orders`), chargebacks received (`chargebacks`), payments received (`payment`) or Point integration (`point_integration_payment_intent_ipn`).
 
 ![ipn](/images/notifications/ipn_en.png)
  
@@ -301,5 +301,6 @@ After returning the notification, you will get the full information of the notif
 | payment | `https://api.mercadopago.com/v1/payments/[ID]` | [see documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) |
 | chargebacks | `https://api.mercadopago.com/v1/chargebacks/[ID]` | [see documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/chargebacks/_chargebacks_id/get) |
 | merchant_orders | `https://api.mercadopago.com/merchant_orders/[ID]` | [see documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/merchant_orders/_merchant_orders_id/get) |
+| point_integration_payment_intent_ipn | `https://api.mercadopago.com/v1/payments/[ID]` | [see documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) |
 
 With this information, you will be able to carry out the necessary updates to your platform, such as updating an approved payment or a closed order.

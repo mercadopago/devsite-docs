@@ -27,6 +27,7 @@ See below how to indicate the URLs that will be notified and configure which eve
 | `plan` | `application.authorized` | Account Linking |
 | `subscription` | `application.authorized` | Account Linking |
 | `invoice` | `application.authorized` | Account Linking |
+| `point_integration_payment_intent_webhook` | - | Point Integration |
 
 ![webhook](/images/notifications/webhook_en.png)
 
@@ -299,5 +300,6 @@ After returning the notification and confirming its receipt, you will obtain the
 | plan | `https://api.mercadopago.com/v1/plans/[ID]` | - |
 | subscription | `https://api.mercadopago.com/v1/subscriptions/[ID]` | [see documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/subscriptions/_preapproval/post) |
 | invoice | `https://api.mercadopago.com/v1/invoices/[ID]` | - |
+| point_integration_payment_intent_webhook | `https://api.mercadopago.com/v1/payments/[ID]` | [see documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) |
 
 With this information, you will be able to carry out the necessary updates to your platform, such as updating an approved payment.

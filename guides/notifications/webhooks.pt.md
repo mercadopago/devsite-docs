@@ -27,6 +27,7 @@ Veja abaixo como indicar os URLs que serão notificados e configurar quais os ev
 | `plan` | `application.authorized` | Vinculação de conta |
 | `subscription` | `application.authorized` | Vinculação de conta |
 | `invoice` | `application.authorized` | Vinculação de conta |
+| `point_integration_payment_intent_webhook` | - | Integrações Point |
 
 ![webhook](/images/notifications/webhook_pt.png)
 
@@ -298,5 +299,6 @@ Depois de dar um retorno à notificação e confirmar o seu recebimento, você o
 | plan | `https://api.mercadopago.com/v1/plans/[ID]` | - |
 | subscription | `https://api.mercadopago.com/v1/subscriptions/[ID]` | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/subscriptions/_preapproval/post) |
 | invoice | `https://api.mercadopago.com/v1/invoices/[ID]` | - |
+| point_integration_payment_intent_webhook | `https://api.mercadopago.com/v1/payments/[ID]` | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get) |
 
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma como, por exemplo, atualizar um pagamento aprovado. 

@@ -11,7 +11,7 @@ En esta documentación te explicaremos la configuración necesaria para recibir 
 1. Acceda a la pantalla [Notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
 2. A continuación, configure la **URL** de **producción** donde se recibirán las notificaciones.
 3. Si necesita identificar varias cuentas, al final de la URL indicada puede especificar el parámetro `?cliente=(nombredelvendedor) endpoint` para identificar a los vendedores.
-4. Seleccione los ** eventos ** de los que recibirá notificaciones en formato `json` usando` HTTP POST` a la URL especificada anteriormente. Le notificamos de los eventos relacionados con sus pedidos (`merchant_orders`), devoluciones de cargo recibidas (`chargebacks`) o pagos recibidos (`payment`).
+4. Seleccione los ** eventos ** de los que recibirá notificaciones en formato `json` usando` HTTP POST` a la URL especificada anteriormente. Le notificamos de los eventos relacionados con sus pedidos (`merchant_orders`), devoluciones de cargo recibidas (`chargebacks`), pagos recibidos (`payment`) o integraciones Point (`point_integration_payment_intent_ipn`).
 
 ![ipn](/images/notifications/ipn_pt.png)
  
@@ -297,8 +297,9 @@ Después de devolver la notificación, obtendrá la información completa del re
 
 | Tipo | URL | Documentación |
 | --- | --- | --- |
-| pago | `https://api.mercadopago.com/v1/payments/[ID]` | [ver documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get) |
-| devoluciones de cargo | `https://api.mercadopago.com/v1/chargebacks/[ID]` | [ver documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/chargebacks/_chargebacks_id/get) |
-| pedidos_comerciantes | `https://api.mercadopago.com/merchant_orders/[ID]` | [ver documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/merchant_orders/_merchant_orders_id/get) |
+| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [ver documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get) |
+| chargebacks | `https://api.mercadopago.com/v1/chargebacks/[ID]` | [ver documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/chargebacks/_chargebacks_id/get) |
+| merchant_orders | `https://api.mercadopago.com/merchant_orders/[ID]` | [ver documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/merchant_orders/_merchant_orders_id/get) |
+| point_integration_payment_intent_ipn | `https://api.mercadopago.com/v1/payments/[ID]` | [ver documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get) |
 
 Con esta información podrás realizar las actualizaciones necesarias a tu plataforma, como actualizar un pago aprobado o un pedido cerrado.
