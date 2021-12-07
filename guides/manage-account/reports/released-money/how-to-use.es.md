@@ -11,7 +11,7 @@ El reporte está compuesto por:
 | Composición del reporte | Descripción |
 | --- | --- |
 | Initial Available Balance |<br/> Balance inicial.<br/><br/>|
-| Release |<br/> El detalle de las ----[mla]---- liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberaciones ------------ de dinero que incluye el balance inicial.<br/><br/> |
+| Release |<br/> El detalle de las ----[mla]---- liquidaciones ------------ ----[mlm, mlb, mlc, mco, mec, mlu, mpe]---- liberaciones ------------ de dinero que incluye el balance inicial.<br/><br/> |
 | Block | <br/>Los bloqueos de dinero por disputas.<br/><br/> |
 | Unblock |<br/> Los desbloqueos por la resolución de las disputas.<br/><br/>|
 | Subtotal | <br/>Es la suma de las operaciones que componen a cada sección.<br/><br/>|
@@ -35,16 +35,16 @@ Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mec, mlu, mpe]---- Liberaciones ------------ para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 ## Ejemplo de un reporte
 
-Observa cómo está compuesto el reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ en este ejemplo para identificar las secciones y leer tus propios reportes:
+Observa cómo está compuesto el reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mec, mlu, mpe]---- Liberaciones ------------ en este ejemplo para identificar las secciones y leer tus propios reportes:
 
 ----[mla]----
 ![Reporte de liquidaciones](/images/manage-account/reports/example-release-es.jpg)
 ------------
-----[mlm, mlb, mlc, mco, mlu, mpe]----
+----[mlm, mlb, mlc, mco, mec, mlu, mpe]----
 ![Reporte de liberaciones](/images/manage-account/reports/example-release-es.jpg)
 ------------
 

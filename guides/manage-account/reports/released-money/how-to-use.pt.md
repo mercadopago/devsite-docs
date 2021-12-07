@@ -12,7 +12,7 @@ O relatório é composto por:
 | Composição do relatório | Descrição |
 | --- | --- |
 | Initial Available Balance |<br/> Saldo inicial.<br/><br/>|
-| Release |<br/>O detalhe das ----[mla]---- liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberações ------------ de dinheiro que inclui o saldo inicial.<br/><br/> |
+| Release |<br/>O detalhe das ----[mla]---- liquidaçoes ------------ ----[mlm, mlb, mlc, mco, mec, mlu, mpe]---- liberações ------------ de dinheiro que inclui o saldo inicial.<br/><br/> |
 | Block | <br/>Os bloqueios de dinheiro por disputas.<br/><br/> |
 | Unblock |<br/> Os desbloqueios após a resolução das disputas.<br/><br/>|
 | Subtotal | <br/>É a soma das transações que compõem cada seção.<br/><br/>|
@@ -37,16 +37,16 @@ Caso isso aconteça, o relatório continuará válido. O dinheiro voltará à su
 >
 > Nota
 >
-> Tenha em mãos o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/glossary) de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ para consultá-lo quando precisar ou queira conferir algum termo técnico.
+> Tenha em mãos o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/glossary) de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mec, mlu, mpe]---- Liberações ------------ para consultá-lo quando precisar ou queira conferir algum termo técnico.
 
 ## Exemplo de um relatório
 
-Observe como está composto o relatório de dinheiro ----[mla]---- liquidado ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- liberado ------------ neste exemplo para identificar as seções e analisar seus próprios relatórios:
+Observe como está composto o relatório de dinheiro ----[mla]---- liquidado ------------ ----[mlm, mlb, mlc, mco, mec, mlu, mpe]---- liberado ------------ neste exemplo para identificar as seções e analisar seus próprios relatórios:
 
 ----[mla]----
 ![Relatório de liquidaçoes](/images/manage-account/reports/example-release-pt.jpg)
 ------------
-----[mlm, mlb, mlc, mco, mlu, mpe]----
+----[mlm, mlb, mlc, mco, mec, mlu, mpe]----
 ![Relatório de liberações](/images/manage-account/reports/example-release-pt.jpg)
 ------------
 

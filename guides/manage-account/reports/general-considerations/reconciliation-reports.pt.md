@@ -8,14 +8,26 @@ Com estes relatórios, procuramos cobrir as diferentes necessidades dos nossos u
     ----[mla]----
     + [Liquidaçoes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction)
     ------------
-    ----[mlm, mlb, mlc, mco, mlu, mpe]----
+    ----[mlm, mlb, mlc, mco, mec, mlu, mpe]----
     + [Liberações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction)
     ------------
     + [Dinheiro em conta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/introduction)
+    ----[mla, mlm, mlb, mlc, mco, mlu, mpe]----
     + [Dinheiro disponível](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/introduction)
+    ------------
 
+----[mlm, mlb, mlc, mco, mlu, mpe]----
 > NOTE
 >
 > O relatório de Dinheiro disponível será desabilitado em breve
 >
-> Você pode usar o [relatório de ----[mla]----Liquidações------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberações------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
+> Você pode usar o [relatório de Liberações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
+------------
+
+----[mla]----
+> NOTE
+>
+> O relatório de Dinheiro disponível será desabilitado em breve
+>
+> Você pode usar o [relatório de Liquidações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/introduction) para fazer a reconciliação das transações que afetem o saldo disponível na sua conta, incluindo seus saques bancários.
+------------
