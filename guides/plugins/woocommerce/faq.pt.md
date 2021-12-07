@@ -1,13 +1,5 @@
 # FAQ
 
-> NOTE
->
-> Desenvolva seus conhecimentos sobre WordPress
->
-> Marque no seu calendário: dia 27 de novembro acontecerá o WordCamp, o evento online e gratuito sobre Desenvolvimento, Design, Negócios e Comunidade WordPress com brindes oficiais e palestras exclusivas Mercado Pago. 
-> 
-> [Garanta já o seu lugar!](https://saopaulo.wordcamp.org/2021/ingressos/)
-
 ### 1. Como faço para instalar o plugin de forma manual?
 
 Para instalar o plugin de forma manual, siga os passos abaixo: 

@@ -1,13 +1,5 @@
 # Configuração da integração
 
-> NOTE
->
-> Desenvolva seus conhecimentos sobre WordPress
->
-> Marque no seu calendário: dia 27 de novembro acontecerá o WordCamp, o evento online e gratuito sobre Desenvolvimento, Design, Negócios e Comunidade WordPress com brindes oficiais e palestras exclusivas Mercado Pago. 
-> 
-> [Garanta já o seu lugar!](https://saopaulo.wordcamp.org/2021/ingressos/) 
-
 Atualmente existem 4 tipos de checkout disponíveis para o WooCommerce. Caso queira configurar todas as formas de pagamento oferecidas, o processo deve ser feito individualmente, do contrário, escolha o que melhor se adequa ao seu negócio e configure conforme abaixo:
 
 1. Acesse o Painel do WordPress.
