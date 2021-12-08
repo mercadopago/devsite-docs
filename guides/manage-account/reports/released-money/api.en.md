@@ -722,6 +722,8 @@ Know the fields you can configure to adjust your preferences before you start:
 | `include_withdrawal` (optional) | <br/>Includes withdrawals in the report.<br/><br/> |
 | `coupon_detailed` (optional) | <br/>Includes a column to show the detail of the discount coupons.<br/><br/> |
 | `scheduled` (read_only) | <br/>Informative field that indicates if there are already scheduled reports in the user account.<br/><br/> |
+| `check_available_balance` (optional) | <br/>Balance before and after a cash withdrawal, which explains the account balance. (This configuration is only informative. It should not be considered for balance and/or account balance checks). <br/><br/> |
+| `compensate_detail` (optional) | <br/>Blocking and unblocking of money that offset each other and do not affect the final balance. Helps to understand how the final balance of the report is made up, in a chronological format. (This setting is recommended if you have a high volume of transactions). <br/><br/>|
 
 ## Generating your reports manually 
 
