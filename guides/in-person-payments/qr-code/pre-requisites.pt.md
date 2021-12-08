@@ -41,7 +41,7 @@ Você precisará criar uma aplicação para cada solução, a fim de ter tudo or
 > 
 > Nota
 >
-> Se for operar em nome de outros, você pode trabalhar com credenciais deles de uma forma mais fácil e segura por [Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/marketplace/checkout-api/introduction).
+> Se for operar em nome de outros, você pode trabalhar com credenciais deles de uma forma mais fácil e segura por [Oauth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/oauth).
 
 ### 3. Gerar usuários de teste
 
