@@ -87,6 +87,14 @@ Implementa IPN de `merchant_order` junto con una búsqueda de la orden por `exte
 
 [Recibir notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn)
 
+## Video tutorial
+
+Descubra cómo llevar a cabo el proceso transaccional con Serviced QR Model, vea nuestro video tutorial:
+<div class="embed-container">
+    <iframe width="1106" height="622" src="https://youtu.be/JsuMZw3Z5k4?list=PLCazXKuqZp3hGVY3bBhEO0ItFhIic5UpK" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+    </iframe>
+</div>
+
 ---
 ### Próximos pasos
 
