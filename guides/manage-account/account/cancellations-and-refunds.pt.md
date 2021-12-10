@@ -37,7 +37,7 @@ Antes de realizar uma devolução, é importante considerar os fatores abaixo.
 * **Saldo em conta:** é preciso ter saldo suficiente disponível em sua conta para efetuar a devolução do valor, caso contrário, a transação não será realizada.
 * **Meio de pagamento:** para pagamentos com cartão de crédito, o valor será devolvido diretamente na fatura. Para outros meios de pagamento como Pix, por exemplo, o valor será devolvido na conta do pagador.
 
-Para realizar devoluções integrais ou parciais de um pagamento e consultar as devoluções feitas em sua loja, visite nossa Referência Api e acesse as Apis de Devolução integral e parcial clicando nos links abaixo.
+Para realizar devoluções integrais ou parciais de um pagamento e consultar as devoluções feitas em sua loja, visite nossa Referência API e acesse as APIs de Devolução integral e parcial clicando nos links abaixo.
 
 - Devolução integral e parcial
 - Consultar Devoluções
