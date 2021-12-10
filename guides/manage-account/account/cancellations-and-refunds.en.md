@@ -37,4 +37,4 @@ Before performing a refund, it is important to consider the factors below.
 * **Account Balance:** You must have sufficient balance available in your account to refund the amount, otherwise the transaction will not be concluded.
 * **Payment method:** For payments by credit card, the amount will be refunded directly on the invoice. For other payment methods such as Pix, for example, the amount will be returned to the payer's account.
 
-To make full or partial refunds of a payment and check the refunds made in your store, visit our Api Reference and access the full and partial refunds Apis by clicking on the links below.
+To make full or partial refunds of a payment and check the refunds made in your store, visit our API Reference and access the full and partial refunds Apis by clicking on the links below.
