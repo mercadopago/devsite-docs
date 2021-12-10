@@ -91,7 +91,7 @@ Utilize o formulário seguinte e adicione os estilos que desejar.
    <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail"/>
    <div type="text" name="securityCode" id="form-checkout__securityCode"></div>
    <select name="issuer" id="form-checkout__issuer"></select>----[mla, mlb, mlu, mlc, mpe, mco]----
-   <select name="identificationType" id="form-checkout__identificationType"></select>-----------
+   <select name="identificationType" id="form-checkout__identificationType"></select>------------
    <input type="text" name="identificationNumber" id="form-checkout__identificationNumber"/>
    <select name="installments" id="form-checkout__installments"></select>
    <button type="submit" id="form-checkout__submit">Pagar</button>
@@ -157,7 +157,7 @@ let cardForm = mp.cardForm({
      identificationType: {
        id: 'form-checkout__identificationType',
        placeholder: 'Document type'
-     },-----------
+     },------------
      identificationNumber: {
        id: 'form-checkout__identificationNumber',
        placeholder: 'Document value'
@@ -200,7 +200,7 @@ let cardForm = mp.cardForm({
          token,
          installments,
          identificationNumber----[mla, mlb, mlu, mlc, mpe, mco]----,
-         identificationType-----------
+         identificationType------------
        } = cardForm.getCardFormData();
  
        console.log(cardForm.getCardFormData())
