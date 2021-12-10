@@ -7,7 +7,7 @@
 
 ![Fields](/images/api/api-integration-intro-es.png)
 
-[TXTSNIPPET][/guides/snippets/checkout-api/checkout-api-receiving-payment-by-card]
+[TXTSNIPPET][/guides/snippets/test-integration/checkout-api-receiving-payment-by-card]
 
 ## ¿Cómo funciona?
 

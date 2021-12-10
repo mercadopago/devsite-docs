@@ -7,7 +7,7 @@
 
 ![Fields](/images/api/api-integration-intro-es.png)
 
-[TXTSNIPPET][/guides/snippets/checkout-api/checkout-api-receiving-payment-by-card]
+[TXTSNIPPET][/guides/snippets/test-integration/checkout-api-receiving-payment-by-card]
 
 ## ¿Cómo funciona?
 
@@ -195,7 +195,7 @@ let cardForm = mp.cardForm({
          token,
          installments,
          identificationNumber----[mla, mlb, mlu, mlc, mpe, mco]----,
-         identificationType-----------
+         identificationType------------
        } = cardForm.getCardFormData();
  
        console.log(cardForm.getCardFormData())
@@ -279,35 +279,35 @@ Ten en cuenta que para que este paso funcione es necesario que configures tu [cl
 Encontre o estado do pagamento no campo _status_.
 ===
 <?php
-   require_once 'vendor/autoload.php';
- 
-   MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
- 
-   $payment = new MercadoPago\Payment();
-   $payment->transaction_amount = (float)$_POST['transactionAmount'];
-   $payment->token = $_POST['token'];
-   $payment->description = $_POST['description'];
-   $payment->installments = (int)$_POST['installments'];
-   $payment->payment_method_id = $_POST['paymentMethodId'];
-   $payment->issuer_id = (int)$_POST['issuer'];
- 
-   $payer = new MercadoPago\Payer();
-   $payer->email = $_POST['email'];
-   $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
+    require_once 'vendor/autoload.php';
+
+    MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
+
+    $payment = new MercadoPago\Payment();
+    $payment->transaction_amount = (float)$_POST['transactionAmount'];
+    $payment->token = $_POST['token'];
+    $payment->description = $_POST['description'];
+    $payment->installments = (int)$_POST['installments'];
+    $payment->payment_method_id = $_POST['paymentMethodId'];
+    $payment->issuer_id = (int)$_POST['issuer'];
+
+    $payer = new MercadoPago\Payer();
+    $payer->email = $_POST['email'];
+    $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
         "type" => $_POST['docType'],------------
         "number" => $_POST['docNumber']
     );
-   $payment->payer = $payer;
- 
-   $payment->save();
- 
-   $response = array(
-       'status' => $payment->status,
-       'status_detail' => $payment->status_detail,
-       'id' => $payment->id
-   );
-   echo json_encode($response);
- 
+    $payment->payer = $payer;
+
+    $payment->save();
+
+    $response = array(
+        'status' => $payment->status,
+        'status_detail' => $payment->status_detail,
+        'id' => $payment->id
+    );
+    echo json_encode($response);
+
 ?>
 ```
 ```node
