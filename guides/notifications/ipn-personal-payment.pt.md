@@ -51,7 +51,7 @@ Se as notificações não forem recebidas, será necessário aplicar como métod
 | Formas | Descrição |
 | --- | --- |
 | **Manual** | O ponto de venda deve incluir um botão para realizar a pesquisa. |
-| **Automática** | Após um tempo razoável sem ter recebido qualquer notificação, é iniciada uma pesquisa da ordem a cada um intervalo de, por exemplo, 5 segundos. |
+| **Automática** | Após 5 minutos sem se ter recebido qualquer notificação, é iniciada uma pesquisa da ordem a cada um intervalo de, por exemplo, 5 segundos. |
  
 ```curl
 curl -X GET \

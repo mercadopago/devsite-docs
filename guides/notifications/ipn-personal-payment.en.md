@@ -51,7 +51,7 @@ If notifications are not received, it will be necessary to apply the **order sea
 | Shapes | Description |
 | --- | --- |
 | **Manual** | The point of sale must include a button to perform the search. |
-| **Automatic** | After a reasonable amount of time without receiving any notification, an order search is started at every interval of, for example, 5 seconds. |
+| **Automatic** | After 5 minutes without receiving any notification, an order search is started at every interval of, for example, 5 seconds. |
 
 ```curl
 curl -X GET \

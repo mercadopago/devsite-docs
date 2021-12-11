@@ -2,7 +2,7 @@ When you receive a notification on your platform, Mercado Pago waits for a respo
 
 In the table below you can find the main events, deadlines and waiting time for receiving new notification attempts.
 
-| Event | Deadline after the first shipment | Confirmation waiting time |
+| Event | Deadline after the first dispatch | Confirmation waiting time |
 | --- | --- | --- |
 | Shipping | - | 22 seconds |
 | First try | 5 minutes | 5 seconds |

@@ -51,7 +51,7 @@ Si no se reciben notificaciones, será necesario aplicar como método de conting
 | Formas | Descripción |
 | --- | --- |
 | **Manual** | El punto de venta debe incluir un botón para realizar la búsqueda. |
-| **Automático** | Después de un período de tiempo razonable sin recibir ninguna notificación, se inicia una búsqueda de pedidos en cada intervalo de, por ejemplo, 5 segundos. |
+| **Automático** | Después de 5 minutos sin recibir ninguna notificación, se inicia una búsqueda de pedidos en cada intervalo de, por ejemplo, 5 segundos. |
 
 ```curl
 curl -X GET \
