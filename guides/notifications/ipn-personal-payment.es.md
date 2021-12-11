@@ -46,7 +46,7 @@ Si no se ha **escaneado** el QR en el que se publicó el pedido, la respuesta se
 }
 ```
 
-Si no se reciben notificaciones, será necesario aplicar como método de contingencia la ** búsqueda de pedidos ** utilizando su `external_reference` como criterio de búsqueda. La ** búsqueda ** se puede realizar mediante `external_reference` de dos formas:
+Si no se reciben notificaciones, será necesario aplicar como método de contingencia la **búsqueda de pedidos** utilizando su `external_reference` como criterio de búsqueda. La **búsqueda** se puede realizar mediante `external_reference` de dos formas:
  
 | Formas | Descripción |
 | --- | --- |
