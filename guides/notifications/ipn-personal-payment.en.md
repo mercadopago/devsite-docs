@@ -1,4 +1,4 @@
-# IPN notifications for in personal payments
+# IPN notifications for in-person payments
 
 If you are integrating in-person payments with QR code, below we will provide information about IPN notifications in this type of payment for each status (opened and closed). In addition, we will indicate how to consult the order with the external reference and what will be necessary to do if the customer scans the QR code twice (leaving an order always open).
  
