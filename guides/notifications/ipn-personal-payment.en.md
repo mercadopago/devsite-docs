@@ -46,7 +46,7 @@ If the QR in which the order was published has not been **scanned**, the respons
 }
 ```
 
-If notifications are not received, it will be necessary to apply as a contingency method the **order search** using its `external_reference` as search criteria. The **search** can be performed by `external_reference` in two ways:
+If notifications are not received, it will be necessary to apply the **order search** as a contingency method using its `external_reference` as search criteria. The **search** can be performed by `external_reference` in two ways:
  
 | Shapes | Description |
 | --- | --- |
