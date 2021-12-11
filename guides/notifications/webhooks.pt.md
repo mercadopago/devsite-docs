@@ -4,19 +4,21 @@ O Webhook (também conhecido como retorno de chamada web) é um método simples 
 
 As notificações Webhook poderão ser configuradas para uma ou mais aplicações criadas em seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel).
 
-Uma vez configurado, o Webhook será enviado sempre que ocorrer um ou mais eventos cadastrados, evitando que haja um trabalho de pesquisa a cada minuto em busca de uma resposta e, por consequência, que ocorra uma sobrecarga do sistema e a perda de dados sempre que houver alguma situação.
-
-Após receber uma notificação na sua plataforma, o Mercado Pago aguardará uma resposta para validar se você a recebeu corretamente.
+Uma vez configurado, o Webhook será enviado sempre que ocorrer um ou mais eventos cadastrados, evitando que haja um trabalho de pesquisa a cada minuto em busca de uma resposta e, por consequência, que ocorra uma sobrecarga do sistema e a perda de dados sempre que houver alguma situação. Após receber uma notificação na sua plataforma, o Mercado Pago aguardará uma resposta para validar se você a recebeu corretamente.
 
 Nessa documentação explicaremos as configurações necessárias para o recebimento das mensagens (através do Dashboard ou durante a criação de pagamentos), além de apresentar quais são as ações necessárias que você deverá ter para que o Mercado Pago valide que as notificações foram devidamente recebidas.
 
 ## Configuração através do Dashboard
 
-Veja abaixo como indicar os URLs que serão notificados e configurar quais os eventos dos quais se receberá a notiticação.
+Abaixo explicaremos como indicar os URLs que serão notificados e como configurar os eventos dos quais se receberá a notiticação.
 
-1. Primeiramente, uma aplicação deverá ser criada na página inicial de seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
-2. Com a aplicação criada, acesse a aba Notificações Webhooks em seu Dashboard e configure os [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) de **produção** e **teste** da qual serão recebidas as notificações. Caso seja necessário identificar múltiplas contas, no final do URL indicada você poderá indicar o parâmetro `?cliente=(nomedovendedor) endpoint` para identificar os vendedores.
-3. Em seguida, selecione os **eventos** dos quais você receberá notificações em formato `json` através de um `HTTP POST` para o URL especificada anteriormente. Um evento é qualquer tipo de atualização no objeto relatado, incluindo alterações de status ou atributo. Veja na tabela abaixo os eventos que poderão ser configurados.
+![webhook](/images/notifications/webhook_pt.png)
+
+1. Caso ainda não tenha, crie uma aplicação na página inicial de seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
+2. Com a aplicação criada, acesse a aba Notificações Webhooks em seu Dashboard e configure os [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) de **produção** e **teste** da qual serão recebidas as notificações. 
+3. Você também poderá experimentar e testar se a URL indicada está recebendo as notificações corretamente, podendo verificar a solicitação, a resposta dada pelo servidor e a descrição do evento.
+4. Caso seja necessário identificar múltiplas contas, no final do URL indicada você poderá indicar o parâmetro `?cliente=(nomedovendedor) endpoint` para identificar os vendedores.
+5. Em seguida, selecione os **eventos** dos quais você receberá notificações em formato `json` através de um `HTTP POST` para o URL especificada anteriormente. Um evento é qualquer tipo de atualização no objeto relatado, incluindo alterações de status ou atributo. Veja na tabela abaixo os eventos que poderão ser configurados.
 
 | Tipo de notificação | Ação | Descrição |
 | :--- | :--- | :--- |
@@ -27,9 +29,9 @@ Veja abaixo como indicar os URLs que serão notificados e configurar quais os ev
 | `plan` | `application.authorized` | Vinculação de conta |
 | `subscription` | `application.authorized` | Vinculação de conta |
 | `invoice` | `application.authorized` | Vinculação de conta |
-| `point_integration_payment_intent_webhook` | - | Integrações Point |
-
-![webhook](/images/notifications/webhook_pt.png)
+| `point_integration_wh` | `state_FINISHED`| Processo de pagamento concluído |
+| `point_integration_wh` | `state_CANCELED` | Processo de pagamento cancelado |
+| `point_integration_wh` | `state_ERROR`| Ocorreu um erro ao processar a tentativa de pagamento |
 
 ## Configuração durante a criação de pagamentos
 
@@ -249,11 +251,20 @@ curl -X POST \
       case "invoice":
           $plan = MercadoPago\Invoice::find_by_id($_POST["data"]["id"]);
           break;
+      case "point_integration_wh":
+          // $_POST contém as informações relacionadas à notificação.
+          break; 
   }
 ?>
 ```
 
 3. Feitas as devidas configurações, a notificação via Webhook terá o seguinte formato:
+
+> NOTE
+>
+> Importante
+>
+> Para o tipo de evento `point_integration_wh`, o formato da notificação muda.[Clique aqui](https://www.mercadopago[FAKER][URL][DOMÍNIO]/developers/pt/guides/in-person-payments/mp-point/introduction) para consultar a documentação do **Mercado Pago Point**.
 
 ```json
 {
@@ -275,17 +286,19 @@ curl -X POST \
 | Atributo | Descrição |
 | --- | --- |
 | **id** | ID de notificação |
-| **live_mode** | Tipo de notificação recebida (paymentes, merchant_order, subscription, preapproval, etc) |
+| **live_mode** | Indica se o URL indicado é valido |
+| **type** | Tipo de notificação recebida (paymentes, merchant_order, subscription, preapproval, etc) |
 | **date_created** | Data de criação do pagamento |
-| **application_id** | ID do aplicativo que recebeu o pagamento |
+| **application_id** | ID da aplicação que recebeu o pagamento |
 | **user_id**| UserID de vendedor |
 | **version** | Número de vezes que uma notificação foi enviada |
 | **api_version** | Indica se é uma notificação duplicada ou não |
 | **action** | Tipo de notificação recebida, indicando se se trata da atualização de um pagamento ou da criação de um novo pagamento |
-| **data** | - |
-| **id**  | ID do payment ou merchant_order |
+| **data - id** | ID do payment ou merchant_order |
  
 Isso indica que foi criado o pagamento **999999999** para o usuário **44444** em modo de produção com a versão V1 da API e que esse evento ocorreu na data **2016-03-25T10:04:58.396-04:00**.
+
+4. Caso deseje receber notificações apenas de Webhook e não de IPN, você pode adicionar na `notification_url` o parâmetro `source_news=webhook`. Por exemplo: https://www.yourserver.com/notifications?source_news=webhook
 
 ## Ações necessárias após receber uma notificação
 
@@ -299,6 +312,6 @@ Depois de dar um retorno à notificação e confirmar o seu recebimento, você o
 | plan | `https://api.mercadopago.com/v1/plans/[ID]` | - |
 | subscription | `https://api.mercadopago.com/v1/subscriptions/[ID]` | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/subscriptions/_preapproval/post) |
 | invoice | `https://api.mercadopago.com/v1/invoices/[ID]` | - |
-| point_integration_payment_intent_webhook | `https://api.mercadopago.com/v1/payments/[ID]` | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get) |
+| point_integration_wh | `https://api.mercadopago.com/v1/payments/[ID]` | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get) |
 
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma como, por exemplo, atualizar um pagamento aprovado. 

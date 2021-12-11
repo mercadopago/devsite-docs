@@ -1,23 +1,22 @@
 # Notificaciones IPN para pagos en persona
 
-Si está integrando pagos presenciales con código QR, a continuación le proporcionaremos información sobre las notificaciones de IPN en este tipo de pago para cada estado (opened e closed). Además, indicaremos cómo consultar el pedido con la referencia externa y qué será necesario hacer si el cliente escanea el código QR dos veces (dejando un pedido siempre abierto).
+Si está integrando pagos presenciales con código QR, a continuación le brindaremos información sobre las notificaciones de IPN en este tipo de pago para cada estado (abierto y cerrado). Además, indicaremos cómo consultar el pedido con la referencia externa y qué será necesario hacer si el cliente escanea el código QR dos veces (dejando un pedido siempre abierto).
  
 > WARNING
 >
 > Importante
 >
-> Mercado Pago requiere la integración de pagos presenciales que hayan aplicado la notificación (IPN) como principal método de aprobación.
+> Mercado Pago indica a las integraciones que utilicen este método de notificación IPN como método principal para recibir notificaciones de pago.
  
 ## Configuración
 
-La integración de pago con código QR utiliza el objeto `merchant_order`, que es básicamente un pedido con 1 o más artículos. Por lo tanto, para las notificaciones de IPN en pagos presenciales recuerde las siguientes reglas:
+La integración de pago con código QR utiliza el objeto `merchant_order`, que es la identificación del pedido en función de cada lectura realizada en el QR.
 
-* El campo `status` del `merchant_order` permanecerá en **opened** cuando aún no tenga pagos asociados o haya rechazado/aprobado pagos por un monto menor que el total del pedido.
-* El campo `status` del `merchant_order` estará ***closed** cuando la suma de los pagos aprobados sea igual o mayor que el total del pedido.
+En las notificaciones de IPN para pagos en persona, el campo `status` del `merchant_order` permanecerá con el estado **opened** hasta que se identifiquen los pagos aprobados y el monto del pago sea igual o mayor que el total del pedido.
 
-Dentro del pedido, en el objeto de pagos, encontrará todos sus pagos. Es importante obtener el ID de los pagos con estado **approved** para [puede hacer reembolsos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds). Cuando el `status` de `merchant_order` sea **closed**, asegúrese de que la suma de los pagos con el estado  **approved** sea igual o mayor que el total del pedido.
+Dentro del pedido, en el objeto de pagos, encontrará todos los pagos realizados, ya sean aprobados o rechazados. Es importante obtener el ID de los pagos con estado ** aprobado ** para poder realizar devoluciones/devoluciones.
 
-Para cada escaneo QR, se genera un "comerciante_orden" diferente. Recuerde que si el cliente hace más de un escaneo, un pedido será **opened** indefinidamente y, para cerrar la transacción, el `merchant_order` debe tener `status` = **closed**.
+Para cada escaneo QR, se genera un "comerciante_orden" diferente. Recuerde que si el cliente hace más de un escaneo, un pedido estará **opened** indefinidamente y, para cerrar la transacción, el `merchant_order` debe tener` status` = **closed**.
 
 ```json
 {

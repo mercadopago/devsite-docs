@@ -6,18 +6,17 @@ If you are integrating in-person payments with QR code, below we will provide in
 >
 > Important
 >
-> Mercado Pago requires the integration of in-person payments that have applied the notification (IPN) as the main method for approval.
+> Mercado Pago directs integrations to use this IPN notification method as the primary method to receive payment notifications.
  
 ## Configuration
 
-QR code payment integration uses the `merchant_order` object, which is basically an order with 1 or more items. Therefore, for IPN notifications in face-to-face payments remember the following rules:
+The integration of payment with QR code uses the object `merchant_order`, which is the identification of the order based on each reading performed on the QR.
 
-* The `status` field of the `merchant_order` will remain in **opened** when it doesn't have associated payments yet or has rejected/approved payments for an amount less than the order total.
-* The `status` field of the `merchant_order` will be **closed** when the sum of approved payments is equal to or greater than the order total.
+In IPN notifications for in-person payments, the `status` field of the `merchant_order` will remain with the status **opened** until approved payments are identified and the payment amount is equal to or greater than the order total.
 
-Inside the order, in the payments object, you will find all its payments. It is important to obtain the ID of payments with **approved** status in order to [can make refunds](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds). When the `status` of `merchant_order` is **closed**, make sure that the sum of payments with `status` **approved** is equal to or greater than the order total.
+Within the order, in the payments object, you will find all payments made, whether approved or rejected. It is important to obtain the ID of payments with **approved** status in order to carry out refunds/refunds.
 
-For each QR scan a different `merchant_order` is generated. Remember that if the customer does more than one scan, an order will be **open** indefinitely and, to close the transaction, the `merchant_order` must have `status` = **closed**.
+For each QR scan a different `merchant_order` is generated. Remember that if the customer does more than one scan, an order will be **opened** indefinitely and, to close the transaction, the `merchant_order` must have `status` = **closed**.
 
 ```json
 {

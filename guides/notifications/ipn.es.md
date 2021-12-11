@@ -1,6 +1,6 @@
 # IPN
 
-[IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn) (_Instant Payment Notification_) es un mecanismo que permite que tu aplicación reciba notificaciones de Mercado Pago. informando el estado de un determinado pago, contracargo y comerciante_order, a través de una llamada `HTTP POST` para informar sobre sus transacciones.
+**IPN (_Instant Payment Notification_)** es un mecanismo que permite que tu aplicación reciba notificaciones de Mercado Pago. informando el estado de un determinado pago, contracargo y comerciante_order, a través de una llamada `HTTP POST` para informar sobre sus transacciones.
 
 En las notificaciones de IPN, solo se puede configurar una URL de notificación por cuenta (según la aplicación, más de una aplicación puede usar esta URL). Además, también existe la posibilidad de utilizar este tipo de notificación desde el campo `notification_url` del objeto, de esta forma la URL puede ser diferente para cada objeto o aplicación.
 
@@ -8,67 +8,19 @@ En esta documentación te explicaremos la configuración necesaria para recibir 
 
 ## Configuración del Dashboard
  
+A continuación explicaremos cómo indicar las URL que serán notificadas y cómo configurar los eventos para los que se recibirán notificaciones.
+
+![ipn](/images/notifications/ipn_es.png)
+
 1. Acceda a la pantalla [Notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
 2. A continuación, configure la **URL** de **producción** donde se recibirán las notificaciones.
-3. Si necesita identificar varias cuentas, al final de la URL indicada puede especificar el parámetro `?cliente=(nombredelvendedor) endpoint` para identificar a los vendedores.
-4. Seleccione los ** eventos ** de los que recibirá notificaciones en formato `json` usando` HTTP POST` a la URL especificada anteriormente. Le notificamos de los eventos relacionados con sus pedidos (`merchant_orders`), devoluciones de cargo recibidas (`chargebacks`), pagos recibidos (`payment`) o integraciones Point (`point_integration_payment_intent_ipn`).
-
-![ipn](/images/notifications/ipn_pt.png)
- 
-5. Implemente el receptor de notificaciones usando el siguiente código como ejemplo:
- 
-```php
-<?php
-   MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
- 
-   $merchant_order = null;
- 
-   switch($_GET["topic"]) {
-       case "payment":
-           $payment = MercadoPago\Payment::find_by_id($_GET["id"]);
-           // Get the payment and the corresponding merchant_order reported by the IPN.
-           $merchant_order = MercadoPago\MerchantOrder::find_by_id($payment->order->id);
-           break;
-       case "merchant_order":
-           $merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
-           break;
-   }
- 
-   $paid_amount = 0;
-   foreach ($merchant_order->payments as $payment) {  
-       if ($payment['status'] == 'approved'){
-           $paid_amount += $payment['transaction_amount'];
-       }
-   }
-  
-   // If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items
-   if($paid_amount >= $merchant_order->total_amount){
-       if (count($merchant_order->shipments)>0) { // The merchant_order has shipments
-           if($merchant_order->shipments[0]->status == "ready_to_ship") {
-               print_r("Totally paid. Print the label and release your item.");
-           }
-       } else { // The merchant_order don't has any shipments
-           print_r("Totally paid. Release your item.");
-       }
-   } else {
-       print_r("Not paid yet. Do not release your item.");
-   }
-  
-?>
-```
- 
-6. Una vez realizada la configuración, Mercado Pago notificará esta URL con dos parámetros cada vez que se cree o actualice un recurso:
- 
-| Campo | Descripción |
-| --- | --- |
-| `topic` | Identifica cuál es el recurso, puede ser "pago", "devoluciones de cargo" o "pedido_comerciante". |
-| `id` | Es un identificador único del recurso notificado. |
- 
-Por ejemplo, si configura la URL: `https://www.yoursite.com/notifications`, recibirá notificaciones de pago como esta:` https://www.yoursite.com/notifications?topic=payment&id=123456789`.
+3. También podrás experimentar y probar si la URL indicada está recibiendo notificaciones correctamente, pudiendo verificar la solicitud, la respuesta dada por el servidor y la descripción del evento.
+4. Si necesita identificar varias cuentas, al final de la URL indicada puede especificar el parámetro `?cliente=(nombredelvendedor) endpoint` para identificar a los vendedores.
+5. Seleccione los ** eventos ** de los que recibirá notificaciones en formato `json` usando` HTTP POST` a la URL especificada anteriormente. Le notificamos de los eventos relacionados con sus pedidos (`merchant_orders`), devoluciones de cargo recibidas (`chargebacks`), pagos recibidos (`payment`) o intentos de pago (`point_integration_ipn`).
  
 ## Configuración al crear pagos
 
-Es posible configurar la URL de notificación de forma más específica para cada pago utilizando el campo `notification_url`. Vea a continuación cómo hacer esto usando los SDK.
+Es posible configurar el URL de notificación de forma más específica para cada pago utilizando el campo `notification_url`. Vea a continuación cómo hacer esto usando los SDK.
 
 1. En el campo `notification_url`, indique la URL desde la que se recibirán las notificaciones, como se muestra abajo.
 
@@ -265,29 +217,59 @@ curl -X POST \
 
 ```
 ]]]
-2. Implemente el receptor de notificaciones usando el siguiente código como ejemplo:
 
+2. Implemente el receptor de notificaciones usando el siguiente código como ejemplo:
+ 
 ```php
 <?php
-  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-  switch($_POST["type"]) {
-      case "payment":
-          $payment = MercadoPago\Payment::find_by_id($_POST["data"]["id"]);
-          break;
-      case "plan":
-          $plan = MercadoPago\Plan::find_by_id($_POST["data"]["id"]);
-          break;
-      case "subscription":
-          $plan = MercadoPago\Subscription::find_by_id($_POST["data"]["id"]);
-          break;
-      case "invoice":
-          $plan = MercadoPago\Invoice::find_by_id($_POST["data"]["id"]);
-          break;
-  }
+   MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+ 
+   $merchant_order = null;
+ 
+   switch($_GET["topic"]) {
+       case "payment":
+           $payment = MercadoPago\Payment::find_by_id($_GET["id"]);
+           // Get the payment and the corresponding merchant_order reported by the IPN.
+           $merchant_order = MercadoPago\MerchantOrder::find_by_id($payment->order->id);
+           break;
+       case "merchant_order":
+           $merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
+           break;
+   }
+ 
+   $paid_amount = 0;
+   foreach ($merchant_order->payments as $payment) {  
+       if ($payment['status'] == 'approved'){
+           $paid_amount += $payment['transaction_amount'];
+       }
+   }
+  
+   // If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items
+   if($paid_amount >= $merchant_order->total_amount){
+       if (count($merchant_order->shipments)>0) { // The merchant_order has shipments
+           if($merchant_order->shipments[0]->status == "ready_to_ship") {
+               print_r("Totally paid. Print the label and release your item.");
+           }
+       } else { // The merchant_order don't has any shipments
+           print_r("Totally paid. Release your item.");
+       }
+   } else {
+       print_r("Not paid yet. Do not release your item.");
+   }
+  
 ?>
 ```
+ 
+3. Una vez realizada la configuración, Mercado Pago notificará esta URL con dos parámetros cada vez que se cree o actualice un recurso:
+ 
+| Campo | Descripción |
+| --- | --- |
+| `topic` | Identifica cuál es el recurso, puede ser `payment`, `chargebacks`, `merchant_order ` o `point_integration_ipn`. |
+| `id` | Es un identificador único del recurso notificado. |
+ 
+Por ejemplo, si configura la URL: `https://www.yoursite.com/notifications`, recibirá notificaciones de pago como esta:` https://www.yoursite.com/notifications?topic=payment&id=123456789`.
 
-3. Si desea recibir notificaciones solo de IPN y no de Webhooks, puede agregar en el `notification_url` el parámetro`source_news=ipn`. Por ejemplo: https://www.yourserver.com/notifications?source_news=ipn
+4. Si desea recibir notificaciones solo de IPN y no de Webhooks, puede agregar en el `notification_url` el parámetro`source_news=ipn`. Por ejemplo: https://www.yourserver.com/notifications?source_news=ipn
  
 ## Acciones necesarias después de recibir la notificación
 

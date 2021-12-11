@@ -1,10 +1,22 @@
 # Notificações
 
-As notificações são mensagens enviadas pelo servidor do Mercado Pago a partir de eventos realizados em sua aplicação, sendo esses eventos as atualizações no objeto relatado como, por exemplo, a criação/atualização de pagamentos, a vinculação a um plano de assinatura, entre outros tipos de atualização interna na aplicação.
+As notificações são mensagens enviadas pelo servidor do Mercado Pago a partir de eventos realizados em sua aplicação. Você pode configurar sua integração para enviar notificações quando os seguintes eventos acontecerem:
 
-Com as notificações configuradas, você terá um informativo em tempo real das mudanças produzidas nos diferentes recursos das APIs do Mercado Pago.
- 
-Atualmente estão disponíveis para configuração as notificações:
+* Criação de pagamentos
+* Atualização de pagamentos
+* Criação de pedidos
+* Atualização de pedido
+* Vinculação de um plano de assinatura
+* Vinculação de assinatura
+* Vinculação de contas mp-connect
+* Desvinculação de contas mp-connect
+* Vinculação de invoice (Nota Fiscal)
+* Criação de estornos
 
-* [Webhook](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks)
-* [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn)
+Existe **dois tipos** de notificações disponíveis para configuração, que uma vez configurados, te permitem programar o backend da sua loja para, por exemplo atualizar o status de pedidos quando um pagamento for criado, enviar um email de confirmação de pedido realizado da loja quando um pedido for atualizado no Mercado Pago, atualizar o cadastro de um cliente quando um plano de assinatura for vinculado ou quaisquer outras ações decorrentes dos eventos listados acima. 
+
+
+| Tipo | Descrição |
+| --- | --- |
+| **Webhook** | Utiliza HTTP REST e notifica instantâneamente as atualizações. Para saber como configurar notificações webhook [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks). |
+| **IPN** | A notificação pode demorar alguns instantes para ser enviada. Para saber como configurar notificações IPN [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn). |
