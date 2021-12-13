@@ -1,6 +1,6 @@
 # Refunds and Cancellations
 
-**Refunds** are transactions made when a certain charge is reversed and the amounts paid are returned to the buyer. This means that the customer will receive back on their account or credit card statement, the amount paid for the purchase of a certain product or service.
+**Refunds** are transactions made when a certain charge is reversed and the amounts paid are returned to the buyer. This means that the customer will receive back the amount paid for the purchase of a certain product or service on their account or credit card statement.
 
 **Cancellations** happen when a purchase is made but the payment has not yet been approved for some reason. In this case, considering that the transaction was not processed and the establishment did not receive any amount, the purchase is canceled and there is no charge.
 
