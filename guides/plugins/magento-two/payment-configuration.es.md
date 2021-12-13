@@ -62,7 +62,6 @@ Te compartimos un detalle de las distintas opciones que encontrarás para config
 
 A continuación, haz clic en “Save Config” para guardar tus preferencias.
 
-![Mercado Pago Custom Checkout Configuration](images/magento2/mercadopago_custom_checkout_configuration.png)
 
 ## Configura el Checkout Custom - Medios de Pago OFF
 
