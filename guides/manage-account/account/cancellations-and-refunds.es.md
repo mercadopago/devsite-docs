@@ -13,7 +13,7 @@ En esta documentación, encontrarás las instrucciones y los links de las APIs n
 >
 > Importante
 >
-> Al ejecutar las API a las que se hace referencia en esta documentación, es posible que encuentre el atributo **X-Idempotency-Key**. Su finalización es importante para asegurar la ejecución y re-ejecución de solicitudes sin efectos secundarios como pagos duplicados en casos de reversión.
+> Al ejecutar las API a las que se hace referencia en esta documentación, es posible que encuentres el atributo **X-Idempotency-Key**. Completarlo es importante para asegurar la ejecución y re-ejecución de solicitudes sin efectos secundarios como pagos duplicados en casos de reversión.
 
 ## Cancelaciones
 
