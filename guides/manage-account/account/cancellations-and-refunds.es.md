@@ -6,7 +6,7 @@
 
 Si bien son transacciones similares, es importante tener en cuenta que la cancelación se realiza el mismo día en que se captura el pago, devolviendo el límite a la tarjeta del comprador dentro del plazo definido por el banco emisor. La devolución referente a la reversión se realiza directamente en la factura de la tarjeta de crédito, o en la cuenta corriente en los casos de pago vía Pix, boleto bancário o débito.
 
-En esta documentación, encontrará las instrucciones y los links de las APIs necesarias para realizar una devolución total, parcial y cancelar una compra en tu tienda.
+En esta documentación, encontrarás las instrucciones y los links de las APIs necesarias para realizar una devolución total, parcial y cancelar una compra en tu tienda.
 
 
 > WARNING
