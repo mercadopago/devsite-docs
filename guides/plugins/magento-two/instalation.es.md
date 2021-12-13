@@ -64,21 +64,9 @@ Puedes instalar la extensión de Mercado Pago sin costo a través de la tienda d
 
 4. Copia la carpeta **MercadoPago** que se encuentra la carpeta **code/src**.
 
-5. En tu terminal, ejecute el comando para actualizar la lista de plugins de Magento:
+5. Luego, sigue las instrucciones de [Instalación via Composer](#bookmark_Instalación_via_Composer)
 
-bin/magento setup:upgrade
-
-Ejecute el comando para limpiar el cache de Magento:
-
-bin/magento cache:clean
-
-Cuando la tienda está en modo productivo, es necesario generar los archivos static nuevamente: 
-
-bin/magento setup:static-content:deploy -f
-
-Si tiene problemas de permiso de carpeta al acceder a la tienda, debe renovar los permisos: 
-
-chmod 777 -R var/ pub/ generated/
+¡Y listo! Ya instalaste con éxito el plugin de Mercado Pago para Magento 2.
 
 
 ### Próximo paso

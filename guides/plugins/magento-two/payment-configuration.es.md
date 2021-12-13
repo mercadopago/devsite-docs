@@ -2,6 +2,9 @@
 
 Para configurar el módulo y aceptar pagos con tarjeta de crédito----[mlb]----, Pix------------ y ticket en el Custom Checkout, sigue estos pasos:
 
+## Configura tus credenciales
+
+Primero, deberás colocar tus credenciales para poder habilitar los medios de pago disponibles en el país de donde sea la tienda.
 
 1. Ve al menú Stores > Configuration > Sales > Payment Methods
 
@@ -13,12 +16,18 @@ Existen dos tipos de credenciales:
 - **Modo Producción:** Las credenciales de este modo se utilizan para recibir los pagos en Producción. Para utilizar las credenciales del modo de producción debe activar tus credenciales.
 - Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials)
 
-3. El siguiente paso es habilitar los medios de pago. Para eso, debes dirigirte al medio que deseas habilitar:
+3. Una vez que hayas colocado las credenciales, haz clic en el botón **Save Config** que se encuentra en la esquina superior derecha. 
 
-- Para habilitar **pagos con tarjeta**, ve a Checkout - Credit and Debit Card.
-- Para habilitar **pagos con ticket**, ve a Custom Checkout - Offline Payment Methods (Ticket).
+> Es importante que guardes tus credenciales antes de continuar, ya que esto habilitará los medios de pago disponibles para tu país.
+
+## Habilita los medios de pago
+
+El siguiente paso es habilitar los medios de pago. Para eso, debes dirigirte al medio que deseas habilitar:
+
+- Para habilitar **pagos con tarjeta**, ve a Checkout > Credit and Debit Card.
+- Para habilitar **pagos con ticket**, ve a Custom Checkout > Offline Payment Methods (Ticket).
 ----[mlb]----
-- Para habilitar pagos con Pix  > **Custom Checkout - Pix**.
+- Para habilitar **pagos con Pix**, ve a Custom Checkout > Pix.
 ------------
 
 ----[mlb]----
@@ -31,11 +40,59 @@ Existen dos tipos de credenciales:
 > - Registra tu clave en Mercado Pago. Si no lo haces, tus clientes no podrán finalizar la compra. Aquí te contamos [cómo hacerlo](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required).
 ------------
 
-Luego de acceder al medio de pago que deseas habilitar, haz clic en el botón “Configure” para ver las opciones de configuración. Allí, selecciona las opciones que prefieras y luego marca el campo “Enabled” como **Yes**. A continuación, haz clic en “Save Config” para guardar tus preferencias.
+## Configura los pagos con tarjetas de crédito y débito
+
+La configuración del Checkout Custom - Tarjetas de Crédito y Débito ofrecerá la opción del comprador realizar pagos con métodos de pago offline (Ticket y ATM) disponibles en su país.
+Te compartimos un detalle de las distintas opciones que encontrarás para configurarlo:
+
+
+## Configura tu Checkout Custom
+
+Te compartimos un detalle de las distintas opciones que encontrarás para configurar tu Checkout Custom
+
+| Campo | Descripción |
+|---|---|
+| Custom Checkout - Tarjetas de Crédito y Débito | La configuración de este campo ofrecerá la opción del comprador realizar pagos con tarjeta de crédito y débito disponibles en su país. Por defecto, el método de pago con tarjeta ya se encuentra activado. Para desactivarlo, solo es necesario cambiar la opción **Habilitad** por "Yes" a "No".  |
+| Título del método de pago  | Esta opción permite cambiar el titulo del método de pago que aparecerá para el comprador.  |
+| Identificación en la Factura de la Tarjeta de Crédito | Texto que identificará el pago en el resumen de tarjeta. Esta funcionalidad no está disponible en todos los países.  |
+| Modo binario  | Al habilitarlo, este modo de procesamiento solo tendrá como resultados de estado de un pago `approved` o `rejected`. No habrá estados intermedios como `in_proccess` o `pending`.  |
+| Banner Checkout | Por defecto, el módulo de Mercado Pago configurará un banner con los métodos disponibles de acuerdo a su país. Si deseas puedes personalizarlo cambiando la url de la imagen. |
+| Posición del método de pago | Permite cambiar la posición en la que el método pago está disponible para el comprador en el flujo de checkout.  |
+| Cupones de descuento de Mercado Pago | Si habilitas esta opción, aparecerá un campo en el que el comprador podrá ingresar su cupón de descuento creado en Mercado Pago. |
+
+A continuación, haz clic en “Save Config” para guardar tus preferencias.
 
 ![Mercado Pago Custom Checkout Configuration](images/magento2/mercadopago_custom_checkout_configuration.png)
 
-¡Listo! El medio de pago se habilitará correctamente en el checkout.
+## Configura el Checkout Custom - Medios de Pago OFF
+
+La configuración de este método de pago ofrecerá la opción del comprador realizar pagos con métodos de pago offline (Ticket y ATM) disponibles en su país.
+Te compartimos un detalle de las distintas opciones que encontrarás para configurar tu Checkout Custom:
+
+| Campo | Descripción |
+|---|---|
+| Custom Checkout - Medios de pago off (ticket) | La configuración de este campo ofrecerá la opción del comprador realizar pagos con medios de pago off disponibles en su país. Por defecto, el método de pago con tarjeta ya se encuentra activado. Para desactivarlo, solo es necesario cambiar la opción **Habilitad** por "Yes" a "No".  |
+| Título del método de pago  | Esta opción permite cambiar el titulo del método de pago que aparecerá para el comprador.  |
+| Banner Checkout | Por defecto, el módulo de Mercado Pago configurará un banner con los métodos disponibles de acuerdo a su país. Si deseas puedes personalizarlo cambiando la url de la imagen. |
+| Excluir métodos de pago | Por defecto, el módulo mostrará al comprador todos los métodos de pago del tipo Ticket y ATM. Puedes elegir solo lo métodos que deseas aceptar y dejar sin seleccionar aquellos que no deseas ofrecer. |
+| Posición del método de pago | Permite cambiar la posición en la que el método pago está disponible para el comprador en el flujo de checkout.  |
+| Posición del método de pago | Permite cambiar la posición en la que el método pago está disponible para el comprador en el flujo de checkout.  |
+| Cupones de descuento de Mercado Pago | Si habilitas esta opción, aparecerá un campo en el que el comprador podrá ingresar su cupón de descuento creado en Mercado Pago. |
+
+A continuación, haz clic en “Save Config” para guardar tus preferencias.
+
+## Devoluciones y cancelaciones
+
+Para **aceptar la devolución de pagos**, deberás activar la opción en la configuración de tu medio de pago seleccionando la opción "Yes" en el campo desplegable.
+
+Al habilitar esta opción, el módulo realizará la devolución parcial o total del pago en el Mercado Pago cuando se cree un memo de crédito en la órden. La devolución sólo se realiza en los pagos que tienen el estado Approved (aprobados).
+
+Si la devolución se realiza en el panel del Mercado Pago, el módulo no está preparado para crear memo de crédito automáticamente. Debido a esta limitación, es aconsejable que sea creado a partir de la tienda.
+
+Para **cancelar pagos**, deberás activar la opción en la configuración de tu medio de pago seleccionando la opción "Yes" en el campo desplegable. 
+Al habilitar esta opción, el módulo cancelará el pago en Mercado Pago cuando se cancele la órden.
+El pago se cancelará cuando el estado esté en `pending` o `in_process`, de lo contrario el módulo devolverá un mensaje de error.
+
 
 ### Próximo paso
 
