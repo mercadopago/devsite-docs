@@ -25,7 +25,7 @@ Antes de cancelar una compra, se deben tener en cuenta los siguientes factores:
 
 - **Boleto bancário**: Si expira el período de vigencia de un boleto bancário, el usuario puede volver a generarlo ingresando el ID de transacción de su cuenta de Mercado Pago. Sin embargo, si deseas evitar problemas de retención de inventario, por ejemplo, puedes optar por no hacer disponible una nueva emisión de este boleto. Para hacer esto, simplemente cancélalo.
 
-Teniendo en cuenta la información anterior, haga clic aquí y visite nuestra Referencia de API para acceder a la API de cancelación.
+Teniendo en cuenta la información anterior, haz clic aquí y visita nuestra Referencia de API para acceder a la API de cancelación.
 
 ## Devoluciones
 
