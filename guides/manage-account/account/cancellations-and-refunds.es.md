@@ -37,7 +37,7 @@ Antes de realizar una devolución, es importante considerar los siguientes facto
 - **Saldo de la cuenta:** debes tener suficiente saldo disponible en tu cuenta para reembolsar el monto, de lo contrario no se realizará la transacción.
 - **Forma de pago:** para pagos con tarjeta de crédito, el monto se reembolsará directamente en la factura. Para otros métodos de pago como Pix, por ejemplo, el monto se devolverá directamente a la cuenta del pagador.
 
-Para realizar devoluciones totales o parciales de un pago y verificar las devoluciones realizadas en su tienda, visite nuestra Referencia API y acceda a las APIs de devolución total y parcial haciendo clic en los links a continuación.
+Para realizar devoluciones totales o parciales de un pago y verificar las devoluciones realizadas en tu tienda, visita nuestra Referencia API y accede a las APIs de devolución total y parcial haciendo clic en los links a continuación.
 
 - Devolución total y parcial
 - Ver devoluciones
