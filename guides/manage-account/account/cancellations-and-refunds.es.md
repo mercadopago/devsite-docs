@@ -23,7 +23,7 @@ Antes de cancelar una compra, se deben tener en cuenta los siguientes factores:
 
 - **Fecha de vencimiento**: Un pago vence a los 30 días sin confirmación y la cancelación es automática. El status final de esta transacción aparecerá como *Cancelled* o *Expired*. Esta información se mostrará en la respuesta a la llamada de la API de cancelación, en los campos de, *Status* y *Status detail* respectivamente.
 
-- **Boleto bancário**: Si expira el período de vigencia de un boleto bancário, el usuario puede volver a generarlo ingresando el ID de transacción de su cuenta de Mercado Pago. Sin embargo, si desea evitar problemas de retención de inventario, por ejemplo, puede optar por no hacer disponible una nueva emisión de este boleto. Para hacer esto, simplemente cancélalo.
+- **Boleto bancário**: Si expira el período de vigencia de un boleto bancário, el usuario puede volver a generarlo ingresando el ID de transacción de su cuenta de Mercado Pago. Sin embargo, si deseas evitar problemas de retención de inventario, por ejemplo, puedes optar por no hacer disponible una nueva emisión de este boleto. Para hacer esto, simplemente cancélalo.
 
 Teniendo en cuenta la información anterior, haga clic aquí y visite nuestra Referencia de API para acceder a la API de cancelación.
 
