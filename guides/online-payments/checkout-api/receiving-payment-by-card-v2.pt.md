@@ -41,12 +41,12 @@ Para criar um pagamento é necessário fazer a captura dos dados do cartão atra
 
 Para capturar os dados do cartão, siga estas etapas:
 
-1. [Inclua e configure a biblioteca MercadoPago.js](#1-inclua-e-configure-a-biblioteca-mercadopagojs)
-2. [Adicione o formulário de pagamento](#2-adicione-o-formulário-de-pagamento)
-3. [Integre o formulário com a biblioteca MercadoPago.js](#3-integre-o-formulário-com-a-biblioteca-mercadopagojs)
+1. [Inclua e configure a biblioteca MercadoPago.js](#bookmark_inclua_e_configure_a_biblioteca_mercadopago.js)
+2. [Adicione o formulário de pagamento](#bookmark_adicione_o_formulário_de_pagamento)
+3. [Integre o formulário com a biblioteca MercadoPago.js](#bookmark_integre_o_formulário_com_a_biblioteca_mercadopago.js)
 
 
-### 1. Inclua e configure a biblioteca MercadoPago.js
+### Inclua e configure a biblioteca MercadoPago.js
 
 **Utilize nossa biblioteca oficial para acessar a API de Mercado Pago** desde seu frontend para coletar os dados de forma segura e configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da forma a seguir:
 
@@ -71,7 +71,7 @@ Se ainda não possui conta para ver suas credenciais, [registre-se](https://www.
 
 A informação do cartão será convertida em um token para que envie os dados aos seus servidores de modo seguro.
 
-### 2. Adicione o formulário de pagamento
+### Adicione o formulário de pagamento
 
 Para capturar os dados do cartão, primeiro deve oferecer um formulário para carregar toda a informação.
 
@@ -109,7 +109,7 @@ Utilize o formulário seguinte e adicione os estilos que desejar.
 > Procure informações acerca dos distintos atributos nas [referências técnicas](https://github.com/mercadopago/sdk-js).
 
 
-### 3. Integre o formulário com a biblioteca MercadoPago.js
+### Integre o formulário com a biblioteca MercadoPago.js
 
 
 Agora, para inicializar o CardForm, deve relacionar a ID de cada campo do formulário com os atributos correspondentes. A biblioteca será responsável pelo preenchimento, obtenção e validação de todos os dados necessários na hora de confirmar o pagamento.

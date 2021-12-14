@@ -39,11 +39,11 @@ Para crear un pago es necesario hacer la captura de los datos de la tarjeta a tr
 
 Para capturar datos de la tarjeta, siga estos pasos:
 
-1. [Incluye y configura la librería MercadoPago.js](#1-incluye-y-configura-la-librería-mercadopagojs)
-2. [Agrega el formulario de pago](#2-agrega-el-formulario-de-pago)
-3. [Integra el formulario con la librería MercadoPago.js](#3-integra-el-formulario-con-la-librería-mercadopagojs)
+1. [Incluye y configura la librería MercadoPago.js](#bookmark_incluye_y_configura_la_librería_mercadopago.js)
+2. [Agrega el formulario de pago](#bookmark_agrega_el_formulario_de_pago)
+3. [Integra el formulario con la librería MercadoPago.js](#bookmark_integra_el_formulario_con_la_librería_mercadopago.js)
 
-### 1. Incluye y configura la librería MercadoPago.js
+### Incluye y configura la librería MercadoPago.js
 
 **Usa nuestra librería oficial para acceder a la API de Mercado Pago** desde tu frontend para recolectar los datos de forma segura y configura tu [clave pública]([FAKER][CREDENTIALS][URL]) de la siguiente manera:
 
@@ -70,7 +70,7 @@ Si aún no tienes cuenta para ver tus credenciales, [regístrate](https://www.me
 
 La información de la tarjeta se convertirá en un token para que puedas enviar los datos a tus servidores de forma segura.
 
-### 2. Agrega el formulario de pago
+### Agrega el formulario de pago
 
 Para capturar los datos de la tarjeta, primero tienes que brindar un formulario para cargar toda la información.
 
@@ -106,7 +106,7 @@ Utiliza el siguiente formulario y agrega los estilos que desees.
 > 
 > Encuentra información sobre los distintos atributos en las [referencias técnicas](https://github.com/mercadopago/sdk-js).
 
-### 3. Integra el formulario con la librería MercadoPago.js
+### Integra el formulario con la librería MercadoPago.js
 
 Ahora, para inicializar el CardForm, tienes que relacionar el ID de cada campo del formulario con los atributos correspondientes. La librería va a ser la responsable de completar, obtener y validar todos los datos necesarios al momento de confirmar el pago.
 
