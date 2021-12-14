@@ -628,7 +628,7 @@ Es posible agregar otros eventos personalizados a las entradas, como focus, blur
 cardNumberElement.on("focus", () => console.log("Card Number received focus"));
 ```
 
-Si quieres saber más sobre otros eventos customizados, accede a nuestra documentación de [GitHub](https://github.com/mercadopago/sdk-js).
+Si quieres saber más sobre otros eventos customizados, accede a nuestra documentación de [GitHub](https://github.com/lucmantovani/sdk-js/tree/feature/fields-docs#field-instanceonevent-callback).
 
 ---
 ### Próximos pasos

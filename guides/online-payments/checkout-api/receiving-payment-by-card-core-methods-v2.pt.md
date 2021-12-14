@@ -630,7 +630,7 @@ curl -X POST \
 cardNumberElement.on("focus", () => console.log("Card Number received focus"));
 ```
 
-Se você quiser saber mais sobre outros eventos customizados, acesse nossa documentação do [GitHub](https://github.com/mercadopago/sdk-js).
+Se você quiser saber mais sobre outros eventos customizados, acesse nossa documentação do [GitHub](https://github.com/lucmantovani/sdk-js/tree/feature/fields-docs#field-instanceonevent-callback).
 
 ---
 ### Próximos passos
