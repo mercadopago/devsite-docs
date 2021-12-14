@@ -5,8 +5,6 @@
 # Integra Checkout API para pagos con tarjetas
 ------------
 
-![Fields](/images/api/api-integration-intro-es.png)
-
 [TXTSNIPPET][/guides/snippets/test-integration/receiving-payment-by-card]
 
 ## ¿Cómo funciona?
@@ -136,7 +134,7 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 
 ### 4. Crea los campos PCI
 
-En este paso se crean los campos seguros con **Fields**, alojados por **Mercado Pago**, y que hacen uso del elemento `HTML iframe`.
+En este paso se crean los campos seguros (cardNumber, expirationDate y CVV) con **Fields**, alojados por **Mercado Pago**, y que hacen uso del elemento `HTML iframe`.
 
 El segundo parámetro son las opciones, y se le pueden asignar valores para **placeholder** y **style**. El valor de **placeholder** debe ser un *string*, mientras que **style** es un *objeto* con las llaves siendo el nombre de la propiedad CSS y los valores un string con el estilo. Los valores no válidos se ignorarán y se mostrará una advertencia en la consola.
 
@@ -160,6 +158,14 @@ Un ejemplo de código con `cardNumber`, `expirationMonth`, `expirationYear` y `C
   ```
 
 ### 5. Obtén los datos para tu formulario
+
+Debes obtener los siguientes datos:
+
+----[mla, mlb, mlu, mlc, mpe, mco]----
+* [Tipos de documentos](#obtener-tipos-de-documentos) ------------
+* [Método de pago de la tarjeta](#obtener-método-de-pago-de-la-tarjeta)
+* [Banco emisor](#obtener-banco-emisor)
+* [Cantidad de cuotas](#obtener-cantidad-de-cuotas)
 
 ----[mla, mlb, mlu, mlc, mpe, mco]----
 #### Obtener tipos de documentos
@@ -582,29 +588,11 @@ curl -X POST \
 
 ## Mensajes de respuestas
 
-Los posibles estados de un pago son:
-
-![payment-status](/images/api/api-payment-status-es.png)
-<br>
-<br>
-
-Para ayudar a mejorar la aprobación de tus pagos, es fundamental que puedas comunicar correctamente a tus clientes los resultados al realizar o crear un pago.
-
-Esto ayudará a evitar casos de rechazos y contracargos en los casos de transacciones inicialmente aprobadas. Por ejemplo, permite que se puedan corregir los errores de carga de datos o ayudar a cambiar el medio de pago.
-
-Te recomendamos usar los [mensajes de respuesta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/handling-responses) y utilizar la comunicación sugerida en cada uno de los casos.
-
-> NOTE
->
-> Nota
->
-> Evita pagos rechazados con nuestras [recomendaciones para mejorar la aprobación de tus pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/payment-rejections).
+[TXTSNIPPET][/guides/snippets/test-integration/api-response-handling]
 
 ## Recibe notificaciones de pago
 
-Por último, es importante que estés siempre informado sobre la creación de nuevos pagos y las actualizaciones de sus estados. Por ejemplo si fueron aprobados, rechazados o si se encuentran pendientes.
-
-[Configura notificaciones webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks) o [notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn).
+[TXTSNIPPET][/guides/snippets/test-integration/api-payment-notifications]
 
 ## Ejemplos descargables
 

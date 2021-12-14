@@ -1,7 +1,5 @@
 # Integrate Checkout API payment for cards
 
-![Fields](/images/api/api-integration-intro-en.png)
-
 [TXTSNIPPET][/guides/snippets/test-integration/receiving-payment-by-card]
 
 ## How does it work?
@@ -127,7 +125,7 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 
 ### 4. Create the PCI fields
 
-Safe fields hosted by **Mercado Pago** are created in this step using **Fields**, using the `HTML iframe` element.
+Safe fields (cardNumber, expirationDate and CVV) hosted by **Mercado Pago** are created in this step with **Fields**, using the `HTML iframe` element.
 
 The second parameter is options, and can be assigned values ​​for **placeholder** and **style**. The value for **placeholder** must be a *string*, while **style** is an *object* with the keys being the CSS property name and the values ​​a string with the styling. Invalid values ​​will be ignored, with a warning displayed on the console.
 
@@ -151,6 +149,14 @@ A code example with `cardNumber`, `expirationMonth`, `expirationYear` and `CVV` 
   ```
 
 ### 5. Get data for your form
+
+You must get the following data:
+
+----[mla, mlb, mlu, mlc, mpe, mco]----
+* [Document types](#get-document-types) ------------
+* [Card payment method](#get-card-payment-method)
+* [Issuer](#obtain-issuer)
+* [Number of installments](#get-number-of-installments)
 
 ----[mla, mlb, mlu, mco, mlc, mpe]----
 
@@ -574,29 +580,11 @@ curl -X POST \
 
 ## Response Handling
 
-Possible payment statuses are:
-
-![payment-status](/images/api/api-payment-status-en.png)
-<br>
-<br>
-
-For improved payment approval, you need to correctly inform results to your customers when making or creating a payment.
-
-This will prevent rejections and chargebacks in the case of already approved transactions.  For example, this allows you to correct data upload mistakes or change payment methods.
-
-We recommend using [response handling](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses) and the suggested communication in each case.
-
-> NOTE
->
-> Note
->
-> Avoid rejected payments with our recommendations to [improve the approval process](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/payment-rejections).
+[TXTSNIPPET][/guides/snippets/test-integration/api-response-handling]
 
 ## Receive payment notifications
 
-Finally, you always need to be notified of new payments and status updates.  For example, if they were approved, rejected, or are pending.
-
-[Configure webhook notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks) or [IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn).
+[TXTSNIPPET][/guides/snippets/test-integration/api-payment-notifications]
 
 ## Sample projects
 

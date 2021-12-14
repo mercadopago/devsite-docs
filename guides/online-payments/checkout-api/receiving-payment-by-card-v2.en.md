@@ -1,7 +1,5 @@
 # Integrate Checkout API payment for cards
 
-![Fields](/images/api/api-integration-intro-en.png)
-
 [TXTSNIPPET][/guides/snippets/test-integration/receiving-payment-by-card]
 
 ## How does it work?
@@ -34,9 +32,10 @@ Both for frontend and backend, we recommend [our libraries](https://www.mercadop
 To create a payment, you should capture card data through the buyer's browser. For security reasons, **never store data in your servers**.
 
 To capture card data, follow these steps:
-1. Include and configure MercadoPago.js library
-2. Add payment form
-3. Integrate the form with MercadoPago.js library
+
+[1. Include and configure MercadoPago.js library](#1-include-and-configure-mercadopagojs-library)
+[2. Add payment form](#2-add-payment-form)
+[3. Integrate the form with MercadoPago.js library](#3-integrate-the-form-with-mercadopagojs-library)
 
 ### 1. Include and configure MercadoPago.js library
 
@@ -55,9 +54,15 @@ To capture card data, follow these steps:
 
 Card information will be turned into a token so that you can send data to your servers securely.
 
->  If you still don't have an account to check your credentials, [sign in](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+If you still don't have an account to check your credentials, [sign in](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
+> NOTE
+>
+> Note
+>
 > This documentation uses the new library version. To see the previous version, go to [integrate credit card payment with MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/receiving-payment-by-card) section.
+
+The card information will be converted into a token so you can send the data to your servers in a secure way.
 
 ### 2. Add payment form
 
@@ -242,6 +247,7 @@ The callbacks option accepts different functions that are activated in different
 > 
 > Learn more information about callbacks in the [technical references](https://github.com/mercadopago/sdk-js).
 
+When submitting the form, we generate a token as a secure representation of the card data. You can access this token using the `getCardFormData` function, as we showed in the previous example in the `onSubmit` callback. We will also store the token in a hidden `input` within your form which we will name `MPHiddenInputToken`.
 
 > WARNING
 >
@@ -507,29 +513,11 @@ curl -X POST \
 
 ## Response Handling
 
-Possible payment statuses are:
-
-![payment-status](/images/api/api-payment-status-en.png)
-<br>
-<br>
-
-For improved payment approval, you need to correctly inform results to your customers when making or creating a payment.
-
-This will prevent rejections and chargebacks in the case of already approved transactions.  For example, this allows you to correct data upload mistakes or change payment methods.
-
-We recommend using [response handling](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses) and the suggested communication in each case.
-
-> NOTE
->
-> Note
->
-> Avoid rejected payments with our recommendations to [improve the approval process](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/payment-rejections).
+[TXTSNIPPET][/guides/snippets/test-integration/api-response-handling]
 
 ## Receive payment notifications
 
-Finally, you always need to be notified of new payments and status updates.  For example, if they were approved, rejected, or are pending.
-
-[Configure webhook notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks) or [IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn).
+[TXTSNIPPET][/guides/snippets/test-integration/api-payment-notifications]
 
 ## Sample projects
 

@@ -5,8 +5,6 @@
 # Integra Checkout API para pagos con tarjetas
 ------------
 
-![Fields](/images/api/api-integration-intro-es.png)
-
 [TXTSNIPPET][/guides/snippets/test-integration/receiving-payment-by-card]
 
 ## ¿Cómo funciona?
@@ -41,9 +39,9 @@ Para crear un pago es necesario hacer la captura de los datos de la tarjeta a tr
 
 Para capturar datos de la tarjeta, siga estos pasos:
 
-1. Incluye y configura la librería MercadoPago.js
-2. Agrega el formulario de pago
-3. Integra el formulario con la librería MercadoPago.js
+1. [Incluye y configura la librería MercadoPago.js](#1-incluye-y-configura-la-librería-mercadopagojs)
+2. [Agrega el formulario de pago](#2-agrega-el-formulario-de-pago)
+3. [Integra el formulario con la librería MercadoPago.js](#3-integra-el-formulario-con-la-librería-mercadopagojs)
 
 ### 1. Incluye y configura la librería MercadoPago.js
 
@@ -62,9 +60,15 @@ Para capturar datos de la tarjeta, siga estos pasos:
 
 La información de la tarjeta será convertida en un token para que envíes los datos a tus servidores de modo seguro.
 
-> Si aún no tienes cuenta para ver tus credenciales, [regístrate](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+Si aún no tienes cuenta para ver tus credenciales, [regístrate](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
+> NOTE
+>
+> Nota
+>
 > Esta documentación utiliza la nueva versión de la librería. Para ver la versión anterior, ve a la [sección de Integrar pagos con tarjeta con MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v1/receiving-payment-by-card).
+
+La información de la tarjeta se convertirá en un token para que puedas enviar los datos a tus servidores de forma segura.
 
 ### 2. Agrega el formulario de pago
 
@@ -248,6 +252,7 @@ La opción de callbacks acepta diferentes funciones que son activadas en diverso
 > 
 > Conoce más información sobre los callbacks en las [referencias técnicas](https://github.com/mercadopago/sdk-js).
 
+Al realizar el submit del formulario, generamos un token como una representación segura de los datos de la tarjeta. Podrás a acceder a este token utilizando la función `getCardFormData`, como mostramos en el ejemplo anterior en el callback `onSubmit`.  También guardaremos el token en un `input` oculto dentro de tu formulario que denominaremos `MPHiddenInputToken`.
 
 > WARNING
 >
@@ -513,29 +518,11 @@ curl -X POST \
 
 ## Mensajes de respuestas
 
-Los posibles estados de un pago son:
-
-![payment-status](/images/api/api-payment-status-es.png)
-<br>
-<br>
-
-Para ayudar a mejorar la aprobación de tus pagos, es fundamental que puedas comunicar correctamente a tus clientes los resultados al realizar o crear un pago.
-
-Esto ayudará a evitar casos de rechazos y contracargos en los casos de transacciones inicialmente aprobadas. Por ejemplo, permite que se puedan corregir los errores de carga de datos o ayudar a cambiar el medio de pago.
-
-Te recomendamos usar los [mensajes de respuesta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/handling-responses) y utilizar la comunicación sugerida en cada uno de los casos.
-
-> NOTE
->
-> Nota
->
-> Evita pagos rechazados con nuestras [recomendaciones para mejorar la aprobación de tus pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/payment-rejections).
+[TXTSNIPPET][/guides/snippets/test-integration/api-response-handling]
 
 ## Recibe notificaciones de pago
 
-Por último, es importante que estés siempre informado sobre la creación de nuevos pagos y las actualizaciones de sus estados. Por ejemplo si fueron aprobados, rechazados o si se encuentran pendientes.
-
-[Configura notificaciones webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks) o [notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn).
+[TXTSNIPPET][/guides/snippets/test-integration/api-payment-notifications]
 
 ## Ejemplos descargables
 

@@ -5,8 +5,6 @@
 # Integre Checkout API para pagamentos com cartão
 ------------
 
-![Fields](/images/api/api-integration-intro-pt.png)
-
 [TXTSNIPPET][/guides/snippets/test-integration/receiving-payment-by-card]
 
 ## Como funciona?
@@ -42,9 +40,10 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 Para criar um pagamento é necessário fazer a captura dos dados do cartão através do navegador do comprador. Por questões de segurança, **é muito importante que os dados nunca cheguem aos seus servidores**.
 
 Para capturar os dados do cartão, siga estas etapas:
-1. Inclua e configure a biblioteca MercadoPago.js
-2. Adicione o formulário de pagamento
-3. Integre o formulário com a biblioteca MercadoPago.js
+
+1. [Inclua e configure a biblioteca MercadoPago.js](#1-inclua-e-configure-a-biblioteca-mercadopagojs)
+2. [Adicione o formulário de pagamento](#2-adicione-o-formulário-de-pagamento)
+3. [Integre o formulário com a biblioteca MercadoPago.js](#3-integre-o-formulário-com-a-biblioteca-mercadopagojs)
 
 
 ### 1. Inclua e configure a biblioteca MercadoPago.js
@@ -62,8 +61,12 @@ Para capturar os dados do cartão, siga estas etapas:
 </body>
 ```
 
-> Se ainda não possui conta para ver suas credenciais, [registre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
+Se ainda não possui conta para ver suas credenciais, [registre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
+> NOTE
+>
+> Nota
+>
 > Esta documentação utiliza a nova versão da biblioteca. Para ver a versão anterior, vá para a [seção de Integrar pagamentos com cartão com MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v1/receiving-payment-by-card).
 
 A informação do cartão será convertida em um token para que envie os dados aos seus servidores de modo seguro.
@@ -253,6 +256,7 @@ A opção de callbacks aceita diferentes funções que são ativadas em diversos
 > 
 > Obtenha mais informações acerca dos callbacks nas [referências técnicas](https://github.com/mercadopago/sdk-js).
 
+Ao enviar o formulário, geramos um token como uma representação segura dos dados do cartão. Você pode acessar este token usando a função `getCardFormData`, como mostramos no exemplo anterior no callback `onSubmit`. Também armazenaremos o token em um `input` oculto dentro do seu formulário, que chamaremos de `MPHiddenInputToken`.
 
 > WARNING
 >
@@ -518,29 +522,11 @@ curl -X POST \
 
 ## Mensagens de respostas
 
-Os possíveis estados de um pagamento são:
-
-![payment-status](/images/api/api-payment-status-pt.png)
-<br>
-<br>
-
-Para ajudar a melhorar a aprovação dos seus pagamentos, é fundamental que possa comunicar corretamente aos seus clientes os dados resultantes da criação de um pagamento.
-
-Isso ajudará a evitar casos de rejeição e estornos nos casos de transações inicialmente aprovadas. Por exemplo, permite que se possa corrigir os erros de carga de dados ou ajudar a alterar o meio de pagamento.
-
-Te recomendamos usar as [mensagens de respostas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/handling-responses) e utilizar a comunicação sugerida em cada um dos casos.
-
-> NOTE
->
-> Nota
->
-> Evite pagamentos rejeitados com nossas [recomendações para melhorar a aprovação dos seus pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/payment-rejections).
+[TXTSNIPPET][/guides/snippets/test-integration/api-response-handling]
 
 ## Receba notificações de pagamento
 
-Por último, é importante que esteja sempre informado sobre a criação nos novos pagamentos e as atualizações dos seus estados. Por exemplo se foram aprovados, rejeitados ou caso encontram-se pendentes.
-
-[Configure notificações webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks) ou [notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn).
+[TXTSNIPPET][/guides/snippets/test-integration/api-payment-notifications]
 
 ## Exemplos para download
 
