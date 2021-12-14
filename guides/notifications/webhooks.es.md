@@ -283,6 +283,8 @@ curl -X POST \
 }
 ```
 
+Esto indica que el pago **999999999** fue creado para el usuario **44444** en modo de producción con API versión V1 y que este evento ocurrió en la fecha **2016-03-25T10: 04: 58.396-04: 00**.
+
 | Atributo | Descripción |
 | --- | --- |
 | **id** | ID de la notificación |
@@ -295,8 +297,6 @@ curl -X POST \
 | **api_version** | Indica si es una notificación duplicada o no|
 | **action** | Tipo de notificación recebida, indicando si es la actualización de un pago o bien la creación de un pago nuevo |
 | **data - id**  | ID del payment o merchant_order |
-
-Esto indica que el pago **999999999** fue creado para el usuario **44444** en modo de producción con API versión V1 y que este evento ocurrió en la fecha **2016-03-25T10: 04: 58.396-04: 00**.
 
 4. Si desea recibir notificaciones solo de Webhook y no de IPN, puede agregar en el `notification_url` el parámetro`source_news=webhook`. Por ejemplo: https://www.yourserver.com/notifications?source_news=webhook
 
