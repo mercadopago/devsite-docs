@@ -139,23 +139,9 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 
 Nesse passo são criados os campos seguros com **Fields**, hospedados pelo **Mercado Pago**, e que fazem uso do elemento `HTML iframe`.
 
-O segundo parâmetro são opções, e pode receber valor para **placeholder** e **style**. O valor para **placeholder** e **style** deve ser uma *string*, sendo ignorado quando inválido, com a exibição de um warning no console. Já style, é um *objeto* com as chaves sendo o nome da propriedade CSS e os valores uma *string*.
+O segundo parâmetro são opções, e pode receber valor para **placeholder** e **style**. O valor para **placeholder** deve ser uma *string*, enquanto **style** é um *objeto* com as chaves sendo o nome da propriedade CSS e os valores uma string com a estilização. Valores inválidos serão ignorados, com a exibição de um warning no console.
 
 Para mais detalhes sobre os estilos permitidos, [consulte a referência técnica](https://github.com/lucmantovani/sdk-js/tree/feature/fields-docs#style).
-
-
-Exemplo:
-
-```javascript
-// Step #createInputs
- 
-const cardNumberElement = mp.fields.create('cardNumber', {
-    placeholder: "Card Number",
-    style: {
-      padding: "10px"
-    }
-  }).mount('form-checkout-cardNumber-container')
-  ```
 
 Um exemplo de código com `cardNumber`, `expirationMonth`, `expirationYear` e `CVV` seria:
 

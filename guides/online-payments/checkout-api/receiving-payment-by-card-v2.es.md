@@ -110,7 +110,7 @@ Para que el IFrame sea renderizado, es necesario pasar la opción `iframe` con e
 
 ```javascript
 // Step #3
-let cardForm = mp.cardForm({
+const cardForm = mp.cardForm({
    amount: '100.5',
    autoMount: true,
    iframe: true,
@@ -198,7 +198,6 @@ let cardForm = mp.cardForm({
          identificationType------------
        } = cardForm.getCardFormData();
  
-       console.log(cardForm.getCardFormData())
 	fetch('/process_payment', {
   method: 'POST',
          headers: {
@@ -213,8 +212,8 @@ let cardForm = mp.cardForm({
            description: 'product description',
            payer: {
              email,
-             identification: {
-               type: identificationType,
+             identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
+               type: identificationType,------------
                number: identificationNumber
              }
            }
