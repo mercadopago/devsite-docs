@@ -39,5 +39,5 @@ Antes de realizar um reembolso, é importante considerar os fatores abaixo.
 
 Para realizar reembolsos integrais ou parciais de um pagamento e consultar os reembolsos feitos em sua loja, visite nossa Referência API e acesse as APIs de Reembolso integral e parcial clicando nos links abaixo.
 
-- Devolução integral e parcial
+- Reembolsos integrais e parciais
 - Consultar Devoluções
