@@ -9,7 +9,7 @@ Las notificaciones son mensajes enviados por el servidor de Mercado Pago desde e
 * Vinculación a un plan de suscripción
 * Enlace de suscripción
 * Vinculación de cuentas mp-connect
-* Desvincular cuentas mp-connect
+* Desvinculación de cuentas mp-connect
 * Vinculación de facturas (factura)
 * Creación de contracargos
 
