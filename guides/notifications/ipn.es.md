@@ -218,7 +218,7 @@ curl -X POST \
 ```
 ]]]
 
-2. Implemente el receptor de notificaciones usando el siguiente código como ejemplo:
+2. Implementa el receptor de notificaciones usando el siguiente código como ejemplo:
  
 ```php
 <?php
