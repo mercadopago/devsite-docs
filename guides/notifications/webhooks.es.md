@@ -12,7 +12,7 @@ En esta documentación te explicaremos la configuración necesaria para recibir 
 
 A continuación explicaremos cómo indicar las URL que serán notificadas y cómo configurar los eventos para los que se recibirán notificaciones.
 
-![webhooks](/images/notifications/webhooks_es.png)
+![webhooks](/images/notifications/webhook_es.png)
 
 1. Primero, se debe crear una aplicación en la página de inicio de su [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
 2. Con la aplicación creada, ve a la pestaña Notificaciones de Webhooks en tu Panel de control y configura las [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) de **producción** y **prueba** de las que se recibirán notificaciones. 
