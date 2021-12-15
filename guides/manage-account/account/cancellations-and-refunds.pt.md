@@ -27,7 +27,7 @@ Antes de realizar o cancelamento de uma compra, é preciso atentar-se os seguint
 
 Considerando as informações acima, visite nossa Referência API para ter acesso à API de cancelamento.
 
-## Devoluções
+## Reembolsos
 
 Devoluções podem ser feitas de duas maneiras: **integral**, quando o valor total da venda é devolvido ao comprador ou **parcial**, quando apenas parte do valor pago é retornado ao comprador.
 
