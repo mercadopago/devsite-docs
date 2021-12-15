@@ -14,7 +14,7 @@ La integración de pago con código QR utiliza el objeto `merchant_order`, que e
 
 En las notificaciones de IPN para pagos en persona, el campo `status` del `merchant_order` permanecerá con el estado **opened** hasta que se identifiquen los pagos aprobados y el monto del pago sea igual o mayor que el total del pedido.
 
-Dentro del pedido, en el objeto de pagos, encontrarás todos los pagos realizados, ya sean aprobados o rechazados. Es importante obtener el ID de los pagos con estado **aprobado** para poder realizar devoluciones/devoluciones.
+Dentro del pedido, en el objeto de pagos, encontrarás todos los pagos realizados, ya sean aprobados o rechazados. Es importante obtener el ID de los pagos con estado **aprobado** para poder realizar devoluciones de cargo/reembolsos.
 
 Para cada escaneo QR, se genera un `merchant_order` diferente. Recuerda que si el cliente hace más de un escaneo, un pedido estará **opened** indefinidamente y, para cerrar la transacción, el `merchant_order` debe tener `status` = **closed**.
 

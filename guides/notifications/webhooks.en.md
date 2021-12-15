@@ -1,8 +1,8 @@
-# Webhook
+# Webhooks
 
 Webhook (also known as web callback) is a simple method that makes it easy for an app or system to provide real-time information whenever an event happens, that is, it is a way to passively receive data between two systems through of an `HTTP POST`.
 
-Webhook notifications can be configured for one or more applications created in your [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/devpanel).
+Webhooks notifications can be configured for one or more applications created in your [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/devpanel).
 
 Once configured, the Webhook will be sent whenever one or more registered events occur, avoiding a search job every minute in search of an answer and, consequently, a system overload and data loss whenever there is some situation. After receiving a notification on your platform, Mercado Pago will wait for a response to validate that you received it correctly
 
@@ -16,7 +16,7 @@ Below we will explain how to indicate the URLs that will be notified and how to 
 
 1. First, an application must be created on the home page of your [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
 2. With the application created, go to the Webhooks Notifications tab in your Dashboard and configure the [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) of **production**  and **test** from which notifications will be received. 
-3. También podrás experimentar y probar si la URL indicada está recibiendo notificaciones correctamente, pudiendo verificar la solicitud, la respuesta dada por el servidor y la descripción del evento.
+3. You will also be able to experiment and test if the indicated URL is receiving notifications correctly, being able to verify the request, the response given by the server and the description of the event.
 4. If you need to identify multiple accounts, at the end of the indicated URL you can indicate the parameter `?customer=(sellername) endpoint` to identify the sellers.
 5. Next, select the **events** from which you will receive notifications in `json` format via an `HTTP POST` to the URL specified above. An event is any type of update to the reported object, including status or attribute changes. See the events that can be configured in the table below.
 

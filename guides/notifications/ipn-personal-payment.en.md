@@ -14,7 +14,7 @@ The integration of payment with QR code uses the object `merchant_order`, which 
 
 In IPN notifications for in-person payments, the `status` field of the `merchant_order` will remain with the status **opened** until approved payments are identified and the payment amount is equal to or greater than the order total.
 
-Within the order, in the payments object, you will find all payments made, whether approved or rejected. It is important to obtain the ID of payments with **approved** status in order to carry out refunds/refunds.
+Within the order, in the payments object, you will find all payments made, whether approved or rejected. It is important to obtain the ID of payments with **approved** status in order to carry out chargebacks/refunds.
 
 For each QR scan a different `merchant_order` is generated. Remember that if the customer does more than one scan, an order will be **opened** indefinitely and, to close the transaction, the `merchant_order` must have `status` = **closed**.
 

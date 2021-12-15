@@ -1,8 +1,8 @@
-# Webhook
+# Webhooks
 
-O Webhook (também conhecido como retorno de chamada web) é um método simples que facilita com que um app ou sistema forneça informações em tempo real sempre que um evento acontece, ou seja, é um modo de receber dados entre dois sistemas de forma passiva através de um `HTTP POST`. 
+O Webhooks (também conhecido como retorno de chamada web) é um método simples que facilita com que um app ou sistema forneça informações em tempo real sempre que um evento acontece, ou seja, é um modo de receber dados entre dois sistemas de forma passiva através de um `HTTP POST`. 
 
-As notificações Webhook poderão ser configuradas para uma ou mais aplicações criadas em seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel).
+As notificações Webhooks poderão ser configuradas para uma ou mais aplicações criadas em seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel).
 
 Uma vez configurado, o Webhook será enviado sempre que ocorrer um ou mais eventos cadastrados, evitando que haja um trabalho de pesquisa a cada minuto em busca de uma resposta e, por consequência, que ocorra uma sobrecarga do sistema e a perda de dados sempre que houver alguma situação. Após receber uma notificação na sua plataforma, o Mercado Pago aguardará uma resposta para validar se você a recebeu corretamente.
 
@@ -12,7 +12,7 @@ Nessa documentação explicaremos as configurações necessárias para o recebim
 
 Abaixo explicaremos como indicar os URLs que serão notificados e como configurar os eventos dos quais se receberá a notiticação.
 
-![webhook](/images/notifications/webhook_pt.png)
+![webhooks](/images/notifications/webhook_pt.png)
 
 1. Caso ainda não tenha, crie uma aplicação na página inicial de seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
 2. Com a aplicação criada, acesse a aba Notificações Webhooks em seu Dashboard e configure os [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) de **produção** e **teste** da qual serão recebidas as notificações. 
@@ -258,7 +258,7 @@ curl -X POST \
 ?>
 ```
 
-3. Feitas as devidas configurações, a notificação via Webhook terá o seguinte formato:
+3. Feitas as devidas configurações, a notificação via Webhooks terá o seguinte formato:
 
 > NOTE
 >
