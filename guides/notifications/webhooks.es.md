@@ -295,7 +295,7 @@ Esto indica que el pago **999999999** fue creado para el usuario **44444** en mo
 | **user_id**| UserID del vendedor |
 | **version** | Cantidad de veces que se envió una notificación |
 | **api_version** | Indica si es una notificación duplicada o no|
-| **action** | Tipo de notificación recebida, indicando si es la actualización de un pago o bien la creación de un pago nuevo |
+| **action** | Tipo de notificación recibida, indicando si es la actualización de un pago o bien la creación de un pago nuevo |
 | **data - id**  | ID del payment o merchant_order |
 
 4. Si deseas recibir notificaciones solo de Webhook y no de IPN, puedes agregar en el `notification_url` el parámetro`source_news=webhook`. Por ejemplo: https://www.yourserver.com/notifications?source_news=webhook
