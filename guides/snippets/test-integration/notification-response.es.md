@@ -1,4 +1,4 @@
-Cuando recibes una notificación en tu plataforma, Mercado Pago espera una respuesta para validar que la recibiste correctamente. Para eso, debe devolver un `HTTP STATUS 200 (OK)` o `201 (CREATED)`. Si no se envía esta respuesta, se entenderá que no ha recibido la notificación y se realizará un nuevo intento de envío hasta que reciba la respuesta.
+Cuando recibes una notificación en tu plataforma, Mercado Pago espera una respuesta para validar que la recibiste correctamente. Para eso, debes devolver un `HTTP STATUS 200 (OK)` o `201 (CREATED)`. Si no se envía esta respuesta, se entenderá que no ha recibido la notificación y se realizará un nuevo intento de envío hasta que reciba la respuesta.
 
 En la siguiente tabla puedes encontrar los principales eventos, plazos y tiempo de espera para recibir nuevos intentos de notificación.
 
