@@ -27,7 +27,10 @@ A continuación explicaremos cómo indicar las URL que serán notificadas y cóm
 | `mp-connect` | `application.deauthorized` | Desvinculación de cuenta |
 | `mp-connect` | `application.authorized` | Vinculación de cuenta |
 | `plan` | `application.authorized` | Vinculación de cuenta |
+| `plan` | `subscription_preapproval_plan"` | Plan preaprobado |
 | `subscription` | `application.authorized` | Vinculación de cuenta |
+| `subscription` | `subscription_preapproval"` | Suscripción preaprobada |
+| `subscription` | `subscription_authorized_payment"` | Pago de suscripción autorizado |
 | `invoice` | `application.authorized` | Vinculación de cuenta |
 | `point_integration_wh` | `state_FINISHED`| Isento de pago finalizado |
 | `point_integration_wh` | `state_CANCELED` | Isento de pago cancelado |
