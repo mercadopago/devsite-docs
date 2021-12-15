@@ -29,7 +29,7 @@ Considerando as informações acima, visite nossa Referência API para ter acess
 
 ## Reembolsos
 
-Devoluções podem ser feitas de duas maneiras: **integral**, quando o valor total da venda é devolvido ao comprador ou **parcial**, quando apenas parte do valor pago é retornado ao comprador.
+Reembolsos podem ser feitos de duas maneiras: **integral**, quando o valor total da venda é devolvido ao comprador ou **parcial**, quando apenas parte do valor pago é retornado ao comprador.
 
 Antes de realizar uma devolução, é importante considerar os fatores abaixo.
 
