@@ -15,7 +15,7 @@ A continuación explicaremos cómo indicar las URL que serán notificadas y cóm
 1. Accede a la pantalla [Notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
 2. A continuación, configura la **URL** de **producción** donde se recibirán las notificaciones.
 3. También podrás experimentar y probar si la URL indicada está recibiendo notificaciones correctamente, pudiendo verificar la solicitud, la respuesta dada por el servidor y la descripción del evento.
-4. Si necesita identificar varias cuentas, al final de la URL indicada puede especificar el parámetro `?cliente=(nombredelvendedor) endpoint` para identificar a los vendedores.
+4. Si necesitas identificar varias cuentas, al final de la URL indicada puedes especificar el parámetro `?cliente=(nombredelvendedor) endpoint` para identificar a los vendedores.
 5. Seleccione los ** eventos ** de los que recibirá notificaciones en formato `json` usando` HTTP POST` a la URL especificada anteriormente. Le notificamos de los eventos relacionados con sus pedidos (`merchant_orders`), devoluciones de cargo recibidas (`chargebacks`), pagos recibidos (`payment`) o intentos de pago (`point_integration_ipn`).
  
 ## Configuración al crear pagos
