@@ -6,7 +6,7 @@
 
 Apesar de serem transações similares, é importante ter em mente que o cancelamento é feito no mesmo dia da captura do pagamento, devolvendo o limite ao cartão do comprador dentro do período definido pelo banco emissor. Já a devolução é feita diretamente na fatura do cartão de crédito ou na conta corrente em casos de pagamento via Pix, boleto ou débito.
 
-Nesta documentação, você encontra as instruções e os links das APIs necessárias para realizar uma devolução integral, parcial, e cancelar uma compra em sua loja.
+Nesta documentação, você encontra as instruções e os links das APIs necessárias para realizar uma reembolso integral, parcial, e cancelar uma compra em sua loja.
 
 
 > WARNING
