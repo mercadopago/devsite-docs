@@ -1,4 +1,4 @@
-# Devoluções e cancelamentos
+# Reembolsos e cancelamentos
 
 **Devoluções** são transações realizadas quando determinada cobrança é revertida e os valores pagos retornam para o comprador. Isso significa que o cliente receberá de volta em sua conta ou na fatura do cartão de crédito, o valor pago na aquisição de determinado produto ou serviço.
 
