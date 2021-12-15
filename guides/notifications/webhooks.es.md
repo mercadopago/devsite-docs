@@ -315,7 +315,7 @@ Luego de devolver la notificación y confirmar su recepción, obtendrás la info
 | plan | `https://api.mercadopago.com/v1/plans/[ID]` | - |
 | suscripción | `https://api.mercadopago.com/v1/subscriptions/[ID]` | [ver documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/subscriptions/_preapproval/post) |
 | invoice | `https://api.mercadopago.com/v1/invoices/[ID]` | - |
-| point_integration_wh| `https://api.mercadopago.com/v1/payments/[ID]` | [ver documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get) |
+| point_integration_wh| - | [ver documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/mp-point/introduction) |
 
 
 Con esta información podrás realizar las actualizaciones necesarias a tu plataforma, como actualizar un pago aprobado.

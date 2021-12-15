@@ -2,16 +2,16 @@
 
 Notifications are messages sent by the Mercado Pago server from events carried out in your application. You can configure your integration to send notifications when the following events happen:
 
-* Creation of payments
-* Payment update
-* Creating orders
-* Order update
-* Linking to a subscription plan
-* Subscription binding
-* Linking mp-connect accounts
-* Unlinking mp-connect accounts
-* Invoice binding (Invoice)
-* Creation of chargebacks
+* Creation and updating of payments;
+* Creation of orders;
+* Update of the order;
+* Linking to a subscription plan;
+* Subscription link;
+* Linking and unlinking mp-connect accounts;
+* Invoice binding (invoice);
+* Creation of countercharges;
+* Finalization and cancellation of paid intent;
+* Error while processing payment intent.
 
 There are **two types** of notifications available for configuration which ,once configured, allow you to program your store's backend to, for example, update the status of orders when a payment is created, send an order confirmation email from store when an order is updated on Mercado Pago, update a customer's record when a subscription plan is linked, or any other actions arising from the events listed above.
 

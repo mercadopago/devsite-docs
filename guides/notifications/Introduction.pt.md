@@ -2,16 +2,15 @@
 
 As notificações são mensagens enviadas pelo servidor do Mercado Pago a partir de eventos realizados em sua aplicação. Você pode configurar sua integração para enviar notificações quando os seguintes eventos acontecerem:
 
-* Criação de pagamentos
-* Atualização de pagamentos
-* Criação de pedidos
-* Atualização de pedido
-* Vinculação de um plano de assinatura
-* Vinculação de assinatura
-* Vinculação de contas mp-connect
-* Desvinculação de contas mp-connect
-* Vinculação de invoice (Nota Fiscal)
-* Criação de estornos
+* Criação e atualização de pagamentos;
+* Criação e atualização de pedidos;
+* Vinculação de um plano de assinatura;
+* Vinculação de assinatura;
+* Vinculação e desvinculação de contas mp-connect;
+* Vinculação de invoice (Nota Fiscal);
+* Criação de estornos;
+* Finalização e cancelamento da tentativa de pagamento;
+* Erro ao processar tentativa de pagamento.
 
 Existe **dois tipos** de notificações disponíveis para configuração, que uma vez configurados, te permitem programar o backend da sua loja para, por exemplo atualizar o status de pedidos quando um pagamento for criado, enviar um email de confirmação de pedido realizado da loja quando um pedido for atualizado no Mercado Pago, atualizar o cadastro de um cliente quando um plano de assinatura for vinculado ou quaisquer outras ações decorrentes dos eventos listados acima. 
 
