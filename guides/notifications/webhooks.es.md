@@ -260,7 +260,7 @@ curl -X POST \
 
 3. Una vez que se hayan realizado los ajustes necesarios, la notificación a través de Webhook tendrá el siguiente formato:
 
-> NOTE
+> NOTA
 >
 > Importante
 >
