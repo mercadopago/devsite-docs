@@ -1,6 +1,6 @@
 # Notificaciones
 
-Las notificaciones son mensajes enviados por el servidor de Mercado Pago de eventos que se realizan en su aplicación. Puede configurar su integración para enviar notificaciones cuando ocurran los siguientes eventos:
+Las notificaciones son mensajes enviados por el servidor de Mercado Pago desde eventos que se realizan en su aplicación. Puedes configurar tu integración para enviar notificaciones cuando ocurran los siguientes eventos:
 
 * Creación de pagos
 * Actualización de pago
