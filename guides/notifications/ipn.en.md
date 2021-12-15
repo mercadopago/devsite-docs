@@ -10,7 +10,7 @@ In this documentation, we will explain the necessary settings for receiving IPN 
  
 Below we will explain how to indicate the URLs that will be notified and how to configure the events for which notification will be received.
 
-![ipn](/images/notifications/ipn_en.png)
+![ipn](/images/notifications/ipn__en.png)
 
 1. Access the [IPN Notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
 2. Next, configure the **URL** of **production** where notifications will be received.

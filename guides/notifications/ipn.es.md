@@ -10,7 +10,7 @@ En esta documentación te explicaremos la configuración necesaria para recibir 
  
 A continuación explicaremos cómo indicar las URL que serán notificadas y cómo configurar los eventos para los que se recibirán notificaciones.
 
-![ipn](/images/notifications/ipn_es.png)
+![ipn](/images/notifications/ipn__es.png)
 
 1. Accede a la pantalla [Notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
 2. A continuación, configura la **URL** de **producción** donde se recibirán las notificaciones.

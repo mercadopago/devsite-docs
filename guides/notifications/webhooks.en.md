@@ -12,7 +12,7 @@ In this documentation, we will explain the necessary settings to receive message
 
 Below we will explain how to indicate the URLs that will be notified and how to configure the events for which notification will be received.
 
-![webhook](/images/notifications/webhook_en.png)
+![webhooks](/images/notifications/webhooks_en.png)
 
 1. First, an application must be created on the home page of your [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
 2. With the application created, go to the Webhooks Notifications tab in your Dashboard and configure the [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) of **production**  and **test** from which notifications will be received. 

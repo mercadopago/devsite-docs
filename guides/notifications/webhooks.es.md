@@ -12,7 +12,7 @@ En esta documentación te explicaremos la configuración necesaria para recibir 
 
 A continuación explicaremos cómo indicar las URL que serán notificadas y cómo configurar los eventos para los que se recibirán notificaciones.
 
-![webhook](/images/notifications/webhook_es.png)
+![webhooks](/images/notifications/webhooks_es.png)
 
 1. Primero, se debe crear una aplicación en la página de inicio de su [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
 2. Con la aplicación creada, ve a la pestaña Notificaciones de Webhooks en tu Panel de control y configura las [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) de **producción** y **prueba** de las que se recibirán notificaciones. 
@@ -21,7 +21,7 @@ A continuación explicaremos cómo indicar las URL que serán notificadas y cóm
 5. A continuación, selecciona los **eventos** de los que recibirás notificaciones en formato `json` a través de un `HTTP POST` a la URL especificada anteriormente. Un evento es cualquier tipo de actualización del objeto informado, incluidos los cambios de estado o atributos. Vea los eventos que se pueden configurar en la siguiente tabla.
 
 | Tipo de notificación | Acción | Descripción |
-| : --- | : --- | : --- |
+| :--- | :--- | :--- |
 | `payment` | `payment.created` | Creación de pagos |
 | `payment` | `payment.updated` | Actualización de pago |
 | `mp-connect` | `application.deauthorized` | Desvinculación de cuenta |
