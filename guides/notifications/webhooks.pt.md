@@ -27,10 +27,7 @@ Abaixo explicaremos como indicar os URLs que serão notificados e como configura
 | `mp-connect` | `application.deauthorized` | Desvinculação de conta |
 | `mp-connect` | `application.authorized` | Vinculação de conta |
 | `plan` | `application.authorized` | Vinculação de conta |
-| `plan` | `subscription_preapproval_plan"` | X |
 | `subscription` | `application.authorized` | Vinculação de conta |
-| `subscription` | `subscription_preapproval"` | X |
-| `subscription` | `subscription_authorized_payment"` | X |
 | `invoice` | `application.authorized` | Vinculação de conta |
 | `point_integration_wh` | `state_FINISHED`| Processo de pagamento concluído |
 | `point_integration_wh` | `state_CANCELED` | Processo de pagamento cancelado |
