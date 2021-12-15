@@ -12,7 +12,7 @@ A continuación explicaremos cómo indicar las URL que serán notificadas y cóm
 
 ![ipn](/images/notifications/ipn_es.png)
 
-1. Acceda a la pantalla [Notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
+1. Accede a la pantalla [Notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
 2. A continuación, configure la **URL** de **producción** donde se recibirán las notificaciones.
 3. También podrás experimentar y probar si la URL indicada está recibiendo notificaciones correctamente, pudiendo verificar la solicitud, la respuesta dada por el servidor y la descripción del evento.
 4. Si necesita identificar varias cuentas, al final de la URL indicada puede especificar el parámetro `?cliente=(nombredelvendedor) endpoint` para identificar a los vendedores.
