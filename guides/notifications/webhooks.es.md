@@ -289,7 +289,7 @@ Esto indica que el pago **999999999** fue creado para el usuario **44444** en mo
 | --- | --- |
 | **id** | ID de la notificación |
 | **live_mode** | Indica si la URL ingresada es válida.|
-| **type** | Tipo de notificacion recebida (paymentes, merchant_order, subscription, preapproval, etc) |
+| **type** | Tipo de notificacion recebida (payments, merchant_order, subscription, preapproval, etc) |
 | **date_created** | Fecha de creación de pago |
 | **application_id** | Aplication ID que recebió el pago |
 | **user_id**| UserID del vendedor |
