@@ -20,7 +20,7 @@ A continuación explicaremos cómo indicar las URL que serán notificadas y cóm
  
 ## Configuración al crear pagos
 
-Es posible configurar el URL de notificación de forma más específica para cada pago utilizando el campo `notification_url`. Vea a continuación cómo hacer esto usando los SDK.
+Es posible configurar la URL de notificación de forma más específica para cada pago utilizando el campo `notification_url`. Ve a continuación cómo hacer esto usando los SDK.
 
 1. En el campo `notification_url`, indique la URL desde la que se recibirán las notificaciones, como se muestra abajo.
 
