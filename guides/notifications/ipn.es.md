@@ -267,7 +267,7 @@ curl -X POST \
 | `topic` | Identifica cuál es el recurso, puede ser `payment`, `chargebacks`, `merchant_order ` o `point_integration_ipn`. |
 | `id` | Es un identificador único del recurso notificado. |
  
-Por ejemplo, si configura la URL: `https://www.yoursite.com/notifications`, recibirá notificaciones de pago como esta:` https://www.yoursite.com/notifications?topic=payment&id=123456789`.
+Por ejemplo, si configuras la URL: `https://www.yoursite.com/notifications`, recibirás notificaciones de pago como esta:` https://www.yoursite.com/notifications?topic=payment&id=123456789`.
 
 4. Si desea recibir notificaciones solo de IPN y no de Webhooks, puede agregar en el `notification_url` el parámetro`source_news=ipn`. Por ejemplo: https://www.yourserver.com/notifications?source_news=ipn
  
