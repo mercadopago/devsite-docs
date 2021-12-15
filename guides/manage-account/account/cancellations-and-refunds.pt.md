@@ -31,7 +31,7 @@ Considerando as informações acima, visite nossa Referência API para ter acess
 
 Reembolsos podem ser feitos de duas maneiras: **integral**, quando o valor total da venda é devolvido ao comprador ou **parcial**, quando apenas parte do valor pago é retornado ao comprador.
 
-Antes de realizar uma devolução, é importante considerar os fatores abaixo.
+Antes de realizar um reembolso, é importante considerar os fatores abaixo.
 
 * **Prazo de devolução:** é possível devolver um pagamento dentro de 180 dias a partir da sua data de aprovação.
 * **Saldo em conta:** é preciso ter saldo suficiente disponível em sua conta para efetuar a devolução do valor, caso contrário, a transação não será realizada.
