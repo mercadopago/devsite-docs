@@ -1,6 +1,6 @@
 # IPN
 
-**IPN (_Instant Payment Notification_)** es un mecanismo que permite que tu aplicación reciba notificaciones de Mercado Pago. informando el estado de un determinado pago, contracargo y comerciante_order, a través de una llamada `HTTP POST` para informar sobre sus transacciones.
+**IPN (_Instant Payment Notification_)** es un mecanismo que permite que tu aplicación reciba notificaciones de Mercado Pago, informando el estado de un determinado pago, contracargo y merchant_order, a través de una llamada `HTTP POST` para informar sobre sus transacciones.
 
 En las notificaciones de IPN, solo se puede configurar una URL de notificación por cuenta (según la aplicación, más de una aplicación puede usar esta URL). Además, también existe la posibilidad de utilizar este tipo de notificación desde el campo `notification_url` del objeto, de esta forma la URL puede ser diferente para cada objeto o aplicación.
 
