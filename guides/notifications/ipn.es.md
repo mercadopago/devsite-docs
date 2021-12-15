@@ -275,7 +275,7 @@ Por ejemplo, si configuras la URL: `https://www.yoursite.com/notifications`, rec
 
 [TXTSNIPPET][/guides/snippets/test-integration/notification-response]
 
-Después de devolver la notificación, obtendrá la información completa del recurso notificado yendo al punto final de la API correspondiente:
+Después de devolver la notificación, obtendrás la información completa del recurso notificado yendo al punto final de la API correspondiente:
 
 | Tipo | URL | Documentación |
 | --- | --- | --- |
