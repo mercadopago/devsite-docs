@@ -280,7 +280,7 @@ Ten en cuenta que para que este paso funcione es necesario que configures tu [cl
 [[[
 ```php
 ===
-Encontre o estado do pagamento no campo _status_.
+Encuentra el estado del pago en el campo _status_.
 ===
 <?php
    require_once 'vendor/autoload.php';
@@ -316,7 +316,7 @@ Encontre o estado do pagamento no campo _status_.
 ```
 ```node
 ===
-Encontre o estado do pagamento no campo _status_.
+Encuentra el estado del pago en el campo _status_.
 ===
  
 var mercadopago = require('mercadopago');
@@ -352,7 +352,7 @@ mercadopago.payment.save(payment_data)
 ```
 ```java
 ===
-Encontre o estado do pagamento no campo _status_.
+Encuentra el estado del pago en el campo _status_.
 ===
  
 MercadoPago.SDK.setAccessToken("YOUR_ACCESS_TOKEN");
@@ -382,7 +382,7 @@ System.out.println(payment.getStatus());
 ```
 ```ruby
 ===
-Encontre o estado do pagamento no campo _status_.
+Encuentra el estado del pago en el campo _status_.
 ===
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
@@ -410,7 +410,7 @@ puts payment
 ```
 ```csharp
 ===
-Encontre o estado do pagamento no campo _status_.
+Encuentra el estado del pago en el campo _status_.
 ===
 using System;
 using MercadoPago.Client.Common;
@@ -446,7 +446,7 @@ Console.WriteLine(payment.Status);
 ```
 ```python
 ===
-Encontre o estado do pagamento no campo _status_.
+Encuentra el estado del pago en el campo _status_.
 ===
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
@@ -473,7 +473,7 @@ print(payment)
 ```
 ```curl
 ===
-Encontre o estado do pagamento no campo _status_.
+Encuentra el estado del pago en el campo _status_.
 ===
  
 curl -X POST \
