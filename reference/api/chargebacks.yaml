@@ -101,7 +101,7 @@ paths:
       tags:
           - $ref: "#/tags/marketplace"
       summary: Get all Refunds
-      description: Get all Refunds for a specific payment.
+      description: Get all Refunds for a specific payment
       parameters:
         - name: id
           in: path
@@ -224,7 +224,7 @@ paths:
       tags:
         - $ref: "#/tags/marketplace"
       summary: Partial and full refund
-      description: Create Partial/Full Refund for a specific payment. If the amount field is filled, it will create a partial refund, if not, it will create a full refund.
+      description: Create Partial/Full Refund for a specific payment. If the amount field is filled, it will create a partial refund, if not, it will create a full refund
       parameters:
         - name: id
           in: path
@@ -265,7 +265,7 @@ paths:
                   payment_id:
                     type: number
                     example: 18552260055
-                    description: Payment identifier from the payment
+                    description: Payment identifier
                   amount:
                     type: number
                     example: 10
@@ -369,7 +369,7 @@ paths:
       tags:
         - $ref: "#/tags/marketplace"
       summary: Get a specific Refund
-      description: Get a specific Refund from a specific payment.
+      description: Get a specific Refund from a specific payment
       parameters:
         - name: id
           in: path
@@ -599,7 +599,7 @@ paths:
                   taxes_amount:
                     type: number
                     example: 0
-                    description: Taxe amount
+                    description: Tax amount
                   counter_currency:
                     type: string
                     example: 
@@ -627,7 +627,7 @@ paths:
                   platform_id:
                     type: string
                     example: 
-                    description: Plataform identifier
+                    description: Platform identifier
                   corporation_id:
                     type: string
                     example: 
@@ -728,11 +728,11 @@ paths:
                                 description: Identifier
                               title:
                                 type: string
-                                example: "Meu produto"
+                                example: "My product"
                                 description: Title
                               description:
                                 type: string
-                                example: "Celular de Tienda e-commerce"
+                                example: "E-commerce store cellphone"
                                 description: Description
                               picture_url:
                                 type: string
@@ -825,7 +825,7 @@ paths:
                           description: Identifier
                   external_reference:
                     type: string
-                    example: "luiz@gmail.com"
+                    example: "firstname@gmail.com"
                     description: External Reference
                   transaction_amount:
                     type: number
