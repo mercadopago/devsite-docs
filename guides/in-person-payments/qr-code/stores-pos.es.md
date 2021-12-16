@@ -84,7 +84,6 @@ Descubra cómo registrar la sucursal con nuestro video tutorial:
     </iframe>
 </div>
 
-
 ## Cajas
 
 Es un **punto de venta** que existe en una sucursal o tienda física. Cada caja tendrá vinculado un código QR unívoco.
