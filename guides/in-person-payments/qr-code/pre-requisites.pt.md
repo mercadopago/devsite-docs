@@ -37,7 +37,7 @@ Você precisará criar uma aplicação para cada solução, a fim de ter tudo or
 3. Dê a ela um nome com o qual você possa identificá-la mais tarde.
 4. Aceite nossos Termos e condições. E pronto!
 
-Caso não tenha nenhuma aplicação cadastrada, [veja o tutorial.](https://youtu.be/FFhHdiqpnEI?list=PLCazXKuqZp3g4WfhNlhsB3FL9-1z7gUny)
+Caso não tenha nenhuma aplicação cadastrada, [veja o tutorial](https://youtu.be/FFhHdiqpnEI?list=PLCazXKuqZp3g4WfhNlhsB3FL9-1z7gUny).
 
 > NOTE
 > 

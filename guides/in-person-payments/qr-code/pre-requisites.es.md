@@ -36,7 +36,7 @@ Es fácil, te contamos cómo hacerlo:
 3. Ponle un nombre con el que puedas identificarla más adelante.
 4. Acepta nuestros Términos y Condiciones. ¡Y listo!
 
-Si no tiene ninguna aplicación registrada, [vea el tutorial.](https://youtu.be/FB4aL9D0Of4?list=PLCazXKuqZp3hGVY3bBhEO0ItFhIic5UpK)
+Si no tiene ninguna aplicación registrada, [vea el tutorial](https://youtu.be/FB4aL9D0Of4?list=PLCazXKuqZp3hGVY3bBhEO0ItFhIic5UpK).
 
 > NOTE
 >
