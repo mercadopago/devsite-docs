@@ -22,7 +22,7 @@ Abaixo explicaremos como indicar os URLs que serão notificados e como configura
 
 É possível configurar o url de notificação de modo mais específico para cada pagamento utilizando o campo `notification_url`. Veja abaixo como realizar essa configuração com uso dos SDKs.
 
-1. No campo `notificaction_url`, indique a URL da qual serão recebidas as notificações como exemplificado abaixo.
+1. No campo `notificaction_url`, indique o URL do qual serão recebidas as notificações como exemplificado abaixo.
 
 [[[
 ```php
