@@ -40,4 +40,4 @@ Antes de realizar un reembolso, es importante considerar los siguientes factores
 Para realizar reembolsos totales o parciales de un pago y verificar los reembolsos realizados en tu tienda, visita nuestra Referencia API y accede a las APIs de devolución total y parcial haciendo clic en los links a continuación.
 
 - Reembolso total y parcial
-- Ver devoluciones
+- Ver reembolsos
