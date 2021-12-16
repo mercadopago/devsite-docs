@@ -133,7 +133,6 @@ Descubra cómo registrar el POS con nuestro video tutorial:
     </iframe>
 </div>
 
-
 ---
 ### Próximos pasos
 
