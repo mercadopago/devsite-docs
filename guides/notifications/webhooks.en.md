@@ -26,9 +26,9 @@ Below we will explain how to indicate the URLs that will be notified and how to 
 | `payment` | `payment.updated` | Payment update |
 | `mp-connect` | `application.deauthorized` | Account unbinding |
 | `mp-connect` | `application.authorized` | Account linking |
-| `plan` | `application.authorized` | Account linking |
-| `subscription` | `application.authorized` | Account linking |
-| `invoice` | `application.authorized` | Account linking |
+| `subscription_preapproval` | `created | updated` | Subscription |
+| `subscription_preapproval_plan` | `created | updated` | Subscription plan |
+| `subscription_authorized_payment` | `created | updated` | Recurring payment for a subscription |
 | `point_integration_wh` | `state_FINISHED` | Payment process completed |
 | `point_integration_wh` | `state_CANCELED` | Payment process canceled |
 | `point_integration_wh` | `state_ERROR` | An error occurred while processing the payment attempt |

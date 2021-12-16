@@ -26,11 +26,9 @@ A continuación explicaremos cómo indicar las URL que serán notificadas y cóm
 | `payment` | `payment.updated` | Actualización de pago |
 | `mp-connect` | `application.deauthorized` | Desvinculación de cuenta |
 | `mp-connect` | `application.authorized` | Vinculación de cuenta |
-| `plan` | `application.authorized` | Vinculación de cuenta |
-| `subscription_preapproval` | XXX | Suscripción preaprobada |
-| `subscription_preapproval_plan` | XXX | Plan preaprobado |
-| `subscription_authorized_payment` | XXX | Pago de suscripción autorizado|
-| `invoice` | `application.authorized` | Vinculación de cuenta |
+| `subscription_preapproval` | `created | updated` | Suscripción |
+| `subscription_preapproval_plan` | `created | updated` | Plan de suscripción |
+| `subscription_authorized_payment` | `created | updated` | Pago recurrente de una suscripción |
 | `point_integration_wh` | `state_FINISHED`| Isento de pago finalizado |
 | `point_integration_wh` | `state_CANCELED` | Isento de pago cancelado |
 | `point_integration_wh` | `state_ERROR`| Ocurrio un error al procesar el intento de pago |
