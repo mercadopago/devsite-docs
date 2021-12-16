@@ -23,7 +23,11 @@ Antes de realizar o cancelamento de uma compra, é preciso atentar-se os seguint
 
 - **Prazo de vencimento**: Um pagamento expira após 30 dias sem confirmação e o cancelamento é automático. O status final dessa transação aparecerá como *cancelled* ou *expired*. Essas informações serão exibidas na resposta da chamada à API de cancelamento, nos campos *Status* e *Status detail*, respectivamente. 
 
+
+----[mlb]----
 - **Boleto bancário**: Se o prazo de validade de um boleto expirar, o usuário poderá gerá-lo novamente inserindo o ID da transação da sua conta no Mercado Pago. Contudo, caso queira evitar problemas de retenção de estoque, por exemplo, é possível optar por não disponibilizar uma nova emissão deste boleto. Para isso, basta realizar seu cancelamento.
+
+------------
 
 Considerando as informações acima, visite nossa Referência API para ter acesso à API de cancelamento.
 
