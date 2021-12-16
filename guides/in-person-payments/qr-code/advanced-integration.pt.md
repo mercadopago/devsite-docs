@@ -20,7 +20,7 @@ As devoluções acontecem quando o pagamento foi realizado, porém, o vendedor d
 > 
 > Leve em consideração que para pagamentos presenciais somente poderá realizar devoluções, mas não cancelamentos. 
 
-Veja o processo de estorno para pagamentos via QR CODE, [neste vídeo tutorial.](https://youtu.be/6Zi1ayIaFqs?list=PLCazXKuqZp3g4WfhNlhsB3FL9-1z7gUny)
+Veja o processo de estorno para pagamentos via QR CODE [neste vídeo tutorial.](https://youtu.be/6Zi1ayIaFqs?list=PLCazXKuqZp3g4WfhNlhsB3FL9-1z7gUny)
 
 ## Obter dados do pedido
 
