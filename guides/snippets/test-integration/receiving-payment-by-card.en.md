@@ -4,7 +4,7 @@ Integrating Mercado Pago's Checkout API for cards allows you to offer a complete
 > 
 > Important
 > 
-> Your integration with Mercado Pago's transparent API may be eligible for [PCI SAQ A](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/pci). This category of PCI requires fewer requirements from the seller, which speeds up the certification process. To be eligible for this category, its integration must be done using card fields in Iframe format.
+> Your integration with Mercado Pago's transparent API may be eligible for [PCI SAQ A](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/pci-v2). This category of PCI requires fewer requirements from the seller, which speeds up the certification process. To be eligible for this category, its integration must be done using card fields in Iframe format.
 
 **Fields** uses HTML components allows PCI data (`cardNumber`, `CVV`, and `expirationDate`) to be inaccessible to third parties and processed by Mercado Pago servers, increasing security for buyers, vendors, and acquirers.
 
