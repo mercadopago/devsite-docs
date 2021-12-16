@@ -264,7 +264,7 @@ curl -X POST \
 >
 > Importante
 >
-> Para o tipo de evento `point_integration_wh`, o formato da notificação muda.[Clique aqui](https://www.mercadopago[FAKER][URL][DOMÍNIO]/developers/pt/guides/in-person-payments/mp-point/introduction) para consultar a documentação do **Mercado Pago Point**.
+> Para o tipo de evento `point_integration_wh`, o formato da notificação muda. [Clique aqui](https://www.mercadopago[FAKER][URL][DOMÍNIO]/developers/pt/guides/in-person-payments/mp-point/introduction) para consultar a documentação do **Mercado Pago Point**.
 
 ```json
 {
