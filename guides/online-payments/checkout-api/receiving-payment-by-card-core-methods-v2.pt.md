@@ -80,13 +80,11 @@ No exemplo a seguir, assume-se que os dados `transactionAmount` e `description` 
 
 ```html
 <form id="form-checkout" method="POST" action="/process_payment">
-  <div id="form-checkout-cardNumber-container"></div>
-  <div id="form-checkout-cardExpirationMonth-container"></div>
-  <div id="form-checkout-cardExpirationYear-container"></div>
+  <div id="form-checkout__cardNumber-container"></div>
   <div id="form-checkout__cardExpirationDate-container" class="input"></div>
   <input type="text" name="cardholderName" id="form-checkout__cardholderName" placeholder="Titular do cartão" />
   <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail" placeholder="E-mail" />
-  <div id="form-checkout-securityCode-container"></div>
+  <div id="form-checkout__securityCode-container"></div>
   <select name="issuer" id="form-checkout__issuer">
     <option value="" disabled selected>Selecione o emissor</option>
   </select>
@@ -100,7 +98,7 @@ No exemplo a seguir, assume-se que os dados `transactionAmount` e `description` 
   </select>
   <input id="MPHiddenInputToken" name="MPHiddenInputToken" type="hidden" />
   <input id="MPHiddenInputPaymentMethod" name="MPHiddenInputPaymentMethod" type="hidden" />
-  <input id="transactionAmmount" name="transactionAmmount" type="hidden" value="100" />
+  <input id="transactionAmount" name="transactionAmount" type="hidden" value="100" />
   <input id="description" name="description" type="hidden" value="product description" />
   <button type="submit" id="form-checkout__submit">Pagar</button>
 </form>
@@ -119,10 +117,10 @@ No exemplo a seguir, assume-se que os dados `transactionAmount` e `description` 
 Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
 
 ```javascript
-
+ 
 <script>
 const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-
+ 
 // Add Step #getIdentificationTypes
 // Add Step #getPaymentMethods
 // Add Step #getIssuers
@@ -145,18 +143,20 @@ Um exemplo de código com `cardNumber`, `expirationMonth`, `expirationYear` e `C
 
 ```javascript
   const cardNumberElement = mp.fields.create('cardNumber', {
-    placeholder: "Card Number"
-  }).mount('form-checkout-cardNumber-container');
+    placeholder: "Card Number",
+    style: {
+      // padding: "10px"
+    }
+  }).mount('form-checkout__cardNumber-container');
  
-  const expirationMonthElement = mp.fields.create('expirationMonth', {
-    placeholder: "MM"  }).mount('form-checkout-expirationMonth-container');
- 
-  const expirationYearElement = mp.fields.create('expirationYear', {
-    placeholder: "YYYY"  }).mount('form-checkout-expirationYear-container');
+  const expirationDateElement = mp.fields.create('expirationDate', {
+    placeholder: "MM/YYYY"
+  }).mount('form-checkout__cardExpirationDate-container');
  
   const securityCodeElement = mp.fields.create('CVV', {
-    placeholder: "CVV"  }).mount('form-checkout-securityCode-container');
-  ```
+    placeholder: "CVV"  
+  }).mount('form-checkout__securityCode-container');
+```
 
 ### Obtenha os dados para seu formulário
 

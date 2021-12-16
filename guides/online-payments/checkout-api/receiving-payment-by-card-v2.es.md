@@ -84,7 +84,7 @@ Utiliza el siguiente formulario y agrega los estilos que desees.
 
 ```html
 <!-- Step #2 -->
- <form id="form-checkout">
+<form id="form-checkout">
    <div type="text" name="cardNumber" id="form-checkout__cardNumber"></div>
 <div type="text" name="cardExpirationMonth"   id="form-checkout__cardExpirationMonth"></div>
    <div type="text" name="cardExpirationYear" id="form-checkout__cardExpirationYear"></div>
@@ -283,35 +283,35 @@ Ten en cuenta que para que este paso funcione es necesario que configures tu [cl
 Encontre o estado do pagamento no campo _status_.
 ===
 <?php
-    require_once 'vendor/autoload.php';
-
-    MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
-
-    $payment = new MercadoPago\Payment();
-    $payment->transaction_amount = (float)$_POST['transactionAmount'];
-    $payment->token = $_POST['token'];
-    $payment->description = $_POST['description'];
-    $payment->installments = (int)$_POST['installments'];
-    $payment->payment_method_id = $_POST['paymentMethodId'];
-    $payment->issuer_id = (int)$_POST['issuer'];
-
-    $payer = new MercadoPago\Payer();
-    $payer->email = $_POST['email'];
-    $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
-        "type" => $_POST['docType'],------------
-        "number" => $_POST['docNumber']
-    );
-    $payment->payer = $payer;
-
-    $payment->save();
-
-    $response = array(
-        'status' => $payment->status,
-        'status_detail' => $payment->status_detail,
-        'id' => $payment->id
-    );
-    echo json_encode($response);
-
+   require_once 'vendor/autoload.php';
+ 
+   MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
+ 
+   $payment = new MercadoPago\Payment();
+   $payment->transaction_amount = (float)$_POST['transactionAmount'];
+   $payment->token = $_POST['token'];
+   $payment->description = $_POST['description'];
+   $payment->installments = (int)$_POST['installments'];
+   $payment->payment_method_id = $_POST['paymentMethodId'];
+   $payment->issuer_id = (int)$_POST['issuer'];
+ 
+   $payer = new MercadoPago\Payer();
+   $payer->email = $_POST['email'];
+   $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
+       "type" => $_POST['docType'],------------
+       "number" => $_POST['docNumber']
+   );
+   $payment->payer = $payer;
+ 
+   $payment->save();
+ 
+   $response = array(
+       'status' => $payment->status,
+       'status_detail' => $payment->status_detail,
+       'id' => $payment->id
+   );
+   echo json_encode($response);
+ 
 ?>
 ```
 ```node

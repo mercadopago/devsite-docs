@@ -5,6 +5,7 @@ En Mercado Pago aseguramos la confidencialidad, disponibilidad e integridad de t
 Además, para que Mercado Pago pueda operar con tarjetas de crédito y débito debemos cumplir con uno de los estándares de seguridad más exigentes de la industria de pagos: Payment Card Industry Data Security Standard.
 
 ## Definición y contexto
+
 Si alguna vez almancenaste, procesaste o trasmitiste datos de tarjeta en tu compañía, seguramente escuchaste hablar de PCI. Desde Mercado Pago queremos ayudarte y simplificar la tarea de entender esta normativa y las distintas responsabilidades asociadas.
 
 Como Proveedor de Servicios debemos cumplir responsabilidades normativas y de seguridad frente a las marcas de tarjetas y adquirentes, pero aún así, la seguridad en todo el proceso de pago es obligación de ambas partes. Comercios y/o plataformas de e-commerce que se integren con procesadores de pago como Mercado Pago deben cumplir requerimientos mínimos de seguridad para mitigar riesgos de fraude y fuga de información asegurando los datos de los usuarios.
@@ -29,7 +30,7 @@ VIGILAR Y VERIFICAR PERIÓDICAMENTE LAS REDES | Rastrear y monitorizar todo el a
 TENER UNA POLÍTICA DE SEGURIDAD DE LA INFORMACIÓN | Tener una política que contemple la seguridad de la información para todo el personal.
 
 
->Lea el documento PCI DSS - Data Security Standard para más detalles. El documento está disponible en la [biblioteca de documentos del sitio oficial de PCI](https://www.pcisecuritystandards.org/document_library).
+>Lee el documento PCI DSS - Data Security Standard para más detalles. El documento está disponible en la [biblioteca de documentos del sitio oficial de PCI](https://www.pcisecuritystandards.org/document_library).
 
 Para cada uno de los 12 requisitos de PCI, existen básicamente cuatro niveles diferentes de cumplimiento que, por lo general, se basan en el volumen de transacciones con tarjeta que procese tu organización en forma anual y cada nivel tiene un conjunto de obligaciones.
 
@@ -73,6 +74,24 @@ Checkout Pro | A
 Web Tokenize Checkout | A-EP
 Checkout Transparente | A
 
-> Vea el documento **SAQ Instructions and Guidelines** de la [biblioteca oficial de documentos de PCI](https://www.pcisecuritystandards.org/document_library) para detalles de la descripción de cada SAQ.
+> Recuerda que Mercado Pago puede exigir esta documentación debido a su rol como PSP.
+
+## Ventajas de un SAQ-A
+
+El Self-Assessment Questionnaire A (SAQ A) es aplicable a los productos mencionados previamente, y es importante entender que la mayor ventaja de estas integraciones es que delegan casi en su totalidad los controles de seguridad a Mercado Pago, que se encuentra certificado en PCI-DSS.
+
+El documento posee únicamente 22 requerimientos de seguridad que se deben aplicar y auditar anualmente, tales como políticas, controles de accesos, mantenimiento de red y aplicaciones seguras, como también restricciones de acceso físico a entornos de datos de tarjeta en caso de que aplique.
+
+A diferencia de otro tipo de documentos como los Self-Assessment Questionnaire D(*) (aplicable a nuestras antiguas integraciones vía API) o Self-Assessment Questionnaire A-EP(**) estará reduciendo considerablemente su carga de trabajo en cuanto a controles de seguridad y delegando la responsabilidad en un tercero certificado.
+
+> (*) El Self-Assessment Questionnaire D para Comercios se compone de 250 requerimientos de seguridad que se deben auditar y cumplir anualmente.
+> <br>
+> (**) El Self-Assessment Questionnaire A-EP se compone de 191 requerimientos de seguridad que se deben auditar y cumplir anualmente.
+
+Además, baja considerablemente el riesgo de tu integración, dado que el entorno de datos de tarjeta se encuentra en una zona segura alojada por Mercado Pago y no necesitarás almacenar ningún tipo de información sensible de los tarjetahabientes. 
+
+Es importante que consideres migrar a la nueva solución de Checkout ----[mlb]----Transparente------------ ----[mla, mlu, mlm, mlc, mpe, mco]----API------------ con Secure Fields en caso de que te encuentres integrado vía API para poder facilitar tu cumplimiento PCI, asegurar el canal de pago, reduciendo el riesgo de cualquier tipo de ataque y afectación a los datos de tus clientes y de Mercado Pago.
+
+> Lee el documento **SAQ Instructions and Guidelines** de la [biblioteca oficial de documentos de PCI](https://www.pcisecuritystandards.org/document_library) para detalles de la descripción de cada SAQ.
 
 

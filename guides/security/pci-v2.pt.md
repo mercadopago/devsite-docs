@@ -5,6 +5,7 @@ No Mercado Pago garantimos a Confidencialidade, Disponibilidade e Integridade de
 Além disso, para que o Mercado Pago possa operar com cartões de crédito e débito, devemos cumprir um dos mais exigentes padrões de segurança da indústria de pagamentos: o Payment Card Industry Data Security Standard.
 
 ## Definição e contexto
+
 Se você já armazenou, processou ou transmitiu dados de cartão em sua empresa, provavelmente já ouviu falar de PCI. Do Mercado Pago queremos ajudá-lo e simplificar a tarefa de compreensão deste regulamento e das diferentes responsabilidades associadas.
 
 Como Prestadora de Serviços, devemos cumprir as responsabilidades regulatórias e de segurança em relação às bandeiras e adquirentes de cartões, mas, ainda assim, a segurança em todo o processo de pagamento é obrigação de ambas as partes. Os comerciantes e / ou plataformas de e-commerce integradas a processadores de pagamentos, como o Mercado Pago, devem atender a requisitos mínimos de segurança para mitigar riscos de fraude e vazamento de informações, protegendo os dados do usuário.
@@ -71,6 +72,24 @@ Aqui resumimos que tipo de SAQ você deve preencher para cada solução de integ
 Checkout Pro | A
 Web Tokenize Checkout | A-EP
 Transparent Checkout | A
+
+> Lembre-se que o Mercado Pago pode exigir esta documentação devido ao seu papel como PSP.
+
+## Vantagens de um SAQ-A
+
+O Questionário de Autoavaliação A (SAQ A) é aplicável aos produtos mencionados anteriormente, e é importante entender que a maior vantagem dessas integrações é que elas delegam quase que inteiramente os controles de segurança ao Mercado Pago, que é certificado em PCI-DSS.
+
+O documento possui apenas 22 requisitos de segurança que devem ser aplicados e auditados anualmente, como políticas, controles de acesso, manutenção de rede e aplicativos seguros, além de restrições de acesso físico a ambientes de dados de cartões, se aplicável.
+
+Ao contrário de outros tipos de documentos, como o Questionário de Autoavaliação D(*) (aplicável às nossas antigas integrações via API) ou Questionário de Autoavaliação A-EP(**), você estará reduzindo consideravelmente sua carga de trabalho em termos de controles de segurança e delegação de responsabilidade a um terceiro certificado.
+
+> (*) O Questionário de Autoavaliação D para Empresas consiste em 250 requisitos de segurança que devem ser auditados e atendidos anualmente.
+> <br>
+> (**) O Questionário de Autoavaliação A-EP é composto por 191 requisitos de segurança que devem ser auditados e atendidos anualmente.
+
+Além disso, reduz consideravelmente o risco de sua integração, uma vez que o ambiente de dados do cartão está localizado em uma área segura hospedada pelo Mercado Pago e você não precisará armazenar nenhum tipo de informação sigilosa do titular do cartão.
+
+É importante que você considere migrar para a nova solução Checkout ----[mlb]----Transparente------------ ----[mla, mlu, mlm, mlc, mpe, mco]----API------------ com Secure Fields caso esteja integrado via API, a fim de facilitar sua conformidade com PCI, proteger o canal de pagamento, reduzindo o risco de qualquer tipo de ataque e danos aos dados de seu clientes e Mercado Pago.
 
 >Consulte o documento **SAQ Instructions and Guidelines** da [biblioteca oficial do PCI](https://www.pcisecuritystandards.org/document_library) para obter detalhes sobre a descrição de cada SAQ.
 

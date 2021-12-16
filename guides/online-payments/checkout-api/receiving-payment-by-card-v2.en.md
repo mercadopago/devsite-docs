@@ -74,7 +74,7 @@ Use the following form and add the styles of your choice.
 
 ```html
 <!-- Step #2 -->
- <form id="form-checkout">
+<form id="form-checkout">
    <div type="text" name="cardNumber" id="form-checkout__cardNumber"></div>
 <div type="text" name="cardExpirationMonth"   id="form-checkout__cardExpirationMonth"></div>
    <div type="text" name="cardExpirationYear" id="form-checkout__cardExpirationYear"></div>

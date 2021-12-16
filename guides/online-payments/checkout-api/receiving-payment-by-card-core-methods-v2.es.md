@@ -45,7 +45,7 @@ Para crear un pago es necesario hacer la captura de los datos de la tarjeta a tr
 >
 > Esta documentación utiliza la nueva versión de la librería. Para ver la versión anterior, ve a la [sección de integrar pagos con tarjeta con MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v1/receiving-payment-by-card).
 
-Para capturar datos de la tarjeta, siga estos pasos:
+Para capturar datos de la tarjeta, sigue estos pasos:
 
 1. [Incluye la librería MercadoPago.js](#bookmark_incluye_la_librería_mercadopago.js)
 2. [Agrega el formulario de pago](#bookmark_agrega_el_formulario_de_pago)
@@ -81,13 +81,11 @@ En el siguiente ejemplo se asume que los datos `transactionAmount` y `descriptio
 
 ```html
 <form id="form-checkout" method="POST" action="/process_payment">
-  <div id="form-checkout-cardNumber-container"></div>
-  <div id="form-checkout-cardExpirationMonth-container"></div>
-  <div id="form-checkout-cardExpirationYear-container"></div>
+  <div id="form-checkout__cardNumber-container"></div>
   <div id="form-checkout__cardExpirationDate-container" class="input"></div>
   <input type="text" name="cardholderName" id="form-checkout__cardholderName" placeholder="Titular do cartão" />
   <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail" placeholder="E-mail" />
-  <div id="form-checkout-securityCode-container"></div>
+  <div id="form-checkout__securityCode-container"></div>
   <select name="issuer" id="form-checkout__issuer">
     <option value="" disabled selected>Selecione o emissor</option>
   </select>
@@ -101,7 +99,7 @@ En el siguiente ejemplo se asume que los datos `transactionAmount` y `descriptio
   </select>
   <input id="MPHiddenInputToken" name="MPHiddenInputToken" type="hidden" />
   <input id="MPHiddenInputPaymentMethod" name="MPHiddenInputPaymentMethod" type="hidden" />
-  <input id="transactionAmmount" name="transactionAmmount" type="hidden" value="100" />
+  <input id="transactionAmount" name="transactionAmount" type="hidden" value="100" />
   <input id="description" name="description" type="hidden" value="product description" />
   <button type="submit" id="form-checkout__submit">Pagar</button>
 </form>
@@ -144,18 +142,20 @@ Un ejemplo de código con `cardNumber`, `expirationMonth`, `expirationYear` y `C
 
 ```javascript
   const cardNumberElement = mp.fields.create('cardNumber', {
-    placeholder: "Card Number"
-  }).mount('form-checkout-cardNumber-container');
+    placeholder: "Card Number",
+    style: {
+      // padding: "10px"
+    }
+  }).mount('form-checkout__cardNumber-container');
  
-  const expirationMonthElement = mp.fields.create('expirationMonth', {
-    placeholder: "MM"  }).mount('form-checkout-expirationMonth-container');
- 
-  const expirationYearElement = mp.fields.create('expirationYear', {
-    placeholder: "YYYY"  }).mount('form-checkout-expirationYear-container');
+  const expirationDateElement = mp.fields.create('expirationDate', {
+    placeholder: "MM/YYYY"
+  }).mount('form-checkout__cardExpirationDate-container');
  
   const securityCodeElement = mp.fields.create('CVV', {
-    placeholder: "CVV"  }).mount('form-checkout-securityCode-container');
-  ```
+    placeholder: "CVV"  
+  }).mount('form-checkout__securityCode-container');
+```
 
 ### Obtén los datos para tu formulario
 

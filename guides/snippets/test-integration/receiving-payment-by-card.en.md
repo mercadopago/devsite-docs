@@ -8,7 +8,7 @@ Integrating Mercado Pago's Checkout API for cards allows you to offer a complete
 
 **Fields** uses HTML components allows PCI data (`cardNumber`, `CVV`, and `expirationDate`) to be inaccessible to third parties and processed by Mercado Pago servers, increasing security for buyers, vendors, and acquirers.
 
-![Fields](/images/api/api-integration-intro-en.png)
+![Fields](/images/api/api-integration-introv2-en.png)
 
 There are currently two ways to implement this solution. The first is through the use of **core methods**, where the integrator is responsible for the entire payment flow, allowing greater flexibility for fully customized experiences. The second one uses **cardForm**, a component created by us that facilitates the integration, carrying out some steps of the process automatically.
 

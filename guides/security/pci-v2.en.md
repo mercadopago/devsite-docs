@@ -73,6 +73,24 @@ Checkout Pro | A
 Web Tokenize Checkout | A-EP
 Checkout Transparente | A
 
+> Remember that Mercado Pago may require this documentation due to its role as a PSP.
+
+## Advantages of a SAQ-A
+
+The Self-Assessment Questionnaire A (SAQ A) is applicable to the previously mentioned products, and it is important to understand that the greatest advantage of these integrations is that they almost entirely delegate the security controls to Mercado Pago, which is certified in PCI-DSS.
+
+The document has only 22 security requirements that must be applied and audited annually, such as policies, access controls, network maintenance and secure applications, as well as restrictions on physical access to card data environments, if applicable.
+
+Unlike other types of documents such as the Self-Assessment Questionnaire D(*) (applicable to our old integrations via API) or Self-Assessment Questionnaire A-EP(**), you will considerably reduce your workload in terms of controls of security and delegating responsibility to a certified third party.
+
+> (*) The Self-Assessment Questionnaire D for Businesses consists of 250 security requirements that must be audited and met annually.
+> <br>
+> (**) The Self-Assessment Questionnaire A-EP is made up of 191 security requirements that must be audited and met annually.
+
+In addition, it considerably reduces the risk of your integration, since the card data environment is located in a secure area hosted by Mercado Pago and you will not need to store any type of sensitive cardholder information.
+
+It is important that you consider migrating to the new Checkout API solution with Secure Fields in case you are integrated via API in order to facilitate your PCI compliance, secure the payment channel, reducing the risk of any type of attack and damage to data of your clients and Mercado Pago.
+
 > See the **SAQ Instructions and Guidelines document** [official PCI library](https://www.pcisecuritystandards.org/document_library) for details of the description of each SAQ.
 
 
