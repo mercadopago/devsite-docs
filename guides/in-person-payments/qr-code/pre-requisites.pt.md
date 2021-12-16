@@ -86,7 +86,7 @@ Resposta:
 > * Para realizar pagamentos de teste, recomendamos que você utilize valores baixos.
 > * Tanto o comprador como o vendedor devem ser usuários de teste.
 > * Utiliza cartões de teste, já que não é possível sacar o dinheiro.
-> * Vídeo tutorial de como criar um [usuário teste](https://youtu.be/ejdnAM0A9jA?list=PLCazXKuqZp3g4WfhNlhsB3FL9-1z7gUny)
+> * Vídeo tutorial de como criar um [usuário teste.](https://youtu.be/ejdnAM0A9jA?list=PLCazXKuqZp3g4WfhNlhsB3FL9-1z7gUny)
 
 Uma vez que os usuários de teste são criados, você pode começar com a integração e criar as lojas e caixas.
 
