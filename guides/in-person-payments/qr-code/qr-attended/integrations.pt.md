@@ -84,6 +84,15 @@ Implementa IPN de `merchant_order` junto com uma busca do pedido por `external_r
 
 [Receber notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn)
 
+## Vídeo tutorial 
+
+Saiba como realizar o processo transacional com Modelo QR Atendido, veja nosso vídeo tutorial:
+
+<div class="embed-container">
+    <iframe width="1106" height="622" src="https://youtu.be/Q8BdL5m6SXc?list=PLCazXKuqZp3g4WfhNlhsB3FL9-1z7gUny" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+    </iframe>
+</div>
+
 ---
 
 ### Próximos passos
