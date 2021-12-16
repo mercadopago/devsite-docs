@@ -622,6 +622,8 @@ Confira os campos que você pode configurar para ajustar as suas preferências a
 | `include_withdrawal` (opcional) | <br/>Inclui as retiradas de dinheiro no relatório.<br/><br/> |
 | `coupon_detailed` (opcional) | <br/>Inclui uma coluna para mostrar os detalhes dos cupons de desconto.<br/><br/> |
 | `scheduled` (read_only) | <br/>Campo informativo que indica se já existem relatórios programados na conta do usuário.<br/><br/> |
+| `check_available_balance` (opcional) | <br/>Saldo antes e depois de fazer um saque, que explica o balanço da conta. (Essa configuração é meramente informativa. Ela não deve ser considerada para comprovação de balanço e/ou saldo da conta).<br/><br/> |
+| `compensate_detail` (opcional) | <br/>Bloqueio e desbloqueio de dinheiro que se compensam entre si e que não afetam o saldo final. Ajuda a entender como é feito o balanço final do relatório, em um formato cronológico. (Configuração recomendada caso você tenha um grande volume de transações). <br/><br/>|
 
 ## Gerando seus relatórios manualmente 
 

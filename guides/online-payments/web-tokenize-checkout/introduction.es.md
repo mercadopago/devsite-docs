@@ -15,11 +15,35 @@
 > <br>
 > La tokenización es el proceso por el cual se cifra de forma segura un número de tarjeta de crédito
 
-Con el *Web Tokenize Checkout* de **Mercado Pago** olvídate de la complejidad del armado de tu formulario para la selección de los medios de pago y la tokenización. Esta integración simple te proporciona un formulario con el diseño y el front-end listo.
+Con el *Web Tokenize Checkout* de **Mercado Pago** olvídate de la complejidad del armado de tu formulario para la selección de las tarjetas y la tokenización. Esta integración simple te proporciona un formulario con el diseño y el front-end listo.
 
 Integra el *Web Tokenize Checkout* en tu sitio para brindarle a tus compradores una estilizada experiencia que **Mercado Pago**  mantiene en constante mejora.
 
 Los datos sensibles de las tarjetas de crédito y débito son cifrados y almacenados por **Mercado Pago** (con su correspondiente cumplimiento PCI), sin que sean transmitidos a tus servidores.
+
+----[mlb, mla, mlu, mco, mpe, mlm]----
+
+> WARNING
+>
+> Importante
+> 
+> Web Tokenize Checkout solo se utiliza para tarjetas de crédito y débito.
+> <br>
+> Si quieres integrar otros medios de pago, haz clic [aquí](https://dev.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways).
+
+------------
+
+----[mlc]----
+
+> WARNING
+>
+> Importante
+> 
+> Web Tokenize Checkout solo se utiliza para tarjetas de crédito.
+> <br>
+> Si quieres integrar otros medios de pago, haz clic [aquí](https://dev.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways).
+
+------------
 
 ---
 
