@@ -38,7 +38,7 @@ Abaixo explicaremos como indicar os URLs que serão notificados e como configura
     $payment->installments = (int)$_POST['installments'];
     $payment->payment_method_id = $_POST['paymentMethodId'];
     $payment->issuer_id = (int)$_POST['issuer'];
-    $payment->notification_url = `"http://requestbin.fullcontact.com/1ogudgk1"`;
+    $payment->notification_url = 'http://requestbin.fullcontact.com/1ogudgk1';
     ...
     $response = array(
         'status' => $payment->status,
