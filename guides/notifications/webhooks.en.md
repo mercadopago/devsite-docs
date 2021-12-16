@@ -12,7 +12,7 @@ In this documentation, we will explain the necessary settings to receive message
 
 Below we will explain how to indicate the URLs that will be notified and how to configure the events for which notification will be received.
 
-![webhooks](/images/notifications/webhooks_en.png)
+![webhooks](/images/notifications/webhooks_es.png)
 
 1. First, an application must be created on the home page of your [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
 2. With the application created, go to the Webhooks Notifications tab in your Dashboard and configure the [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) of **production**  and **test** from which notifications will be received. 
@@ -53,7 +53,7 @@ It is possible to configure the notification URL more specifically for each paym
     $payment->installments = (int)$_POST['installments'];
     $payment->payment_method_id = $_POST['paymentMethodId'];
     $payment->issuer_id = (int)$_POST['issuer'];
-    $payment->notification_url = `"http://requestbin.fullcontact.com/1ogudgk1"`;
+    $payment->notification_url = `http://requestbin.fullcontact.com/1ogudgk1`;
     ...
     $response = array(
         'status' => $payment->status,
@@ -106,7 +106,7 @@ payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmou
        .setDescription(request.getParameter("description"))
        .setInstallments(Integer.valueOf(request.getParameter("installments")))
        .setPaymentMethodId(request.getParameter("paymentMethodId"))
-       .setNotificationUrl: "http://requestbin.fullcontact.com/1ogudgk1";
+       .setNotificationUrl("http://requestbin.fullcontact.com/1ogudgk1");
 
 Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
 identification.setType(request.getParameter("docType"))
@@ -289,12 +289,12 @@ This indicates that payment **999999999** was created for user **44444** in prod
 | --- | --- |
 | **id** | Notification ID |
 | **live_mode** | Indicates if the URL entered is valid. |
-| **date_created** | Payment creation date |
-| **application_id** | Application ID that received the payment |
+| **date_created** | Resorce (payments, merchant_order, subscription, preapproval, etc) creation date |
+| **application_id** | Application ID that received the resource (payments, merchant_order, subscription, preapproval, etc) |
 | **user_id** | Vendor UserID |
 | **version** | Number of times a notification was sent |
 | **api_version** | Indicates if it is a duplicate notification or not |
-| **action** | Type of notification received, indicating whether it is the update of a payment or the creation of a new payment |
+| **action** | Type of notification received, indicating whether it is the update of a resource or the creation of a new |
 | **data - id** | Payment ID or merchant_order |
 
 4. If you want to receive notifications only from Webhook and not from IPN, you can add in the `notification_url` the parameter `source_news=webhook`. For example: https://www.yourserver.com/notifications?source_news=webhook

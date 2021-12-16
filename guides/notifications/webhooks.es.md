@@ -27,10 +27,9 @@ A continuación explicaremos cómo indicar las URL que serán notificadas y cóm
 | `mp-connect` | `application.deauthorized` | Desvinculación de cuenta |
 | `mp-connect` | `application.authorized` | Vinculación de cuenta |
 | `plan` | `application.authorized` | Vinculación de cuenta |
-| `plan` | `subscription_preapproval_plan"` | Plan preaprobado |
-| `subscription` | `application.authorized` | Vinculación de cuenta |
-| `subscription` | `subscription_preapproval"` | Suscripción preaprobada |
-| `subscription` | `subscription_authorized_payment"` | Pago de suscripción autorizado |
+| `subscription_preapproval` | XXX | Suscripción preaprobada |
+| `subscription_preapproval_plan` | XXX | Plan preaprobado |
+| `subscription_authorized_payment` | XXX | Pago de suscripción autorizado|
 | `invoice` | `application.authorized` | Vinculación de cuenta |
 | `point_integration_wh` | `state_FINISHED`| Isento de pago finalizado |
 | `point_integration_wh` | `state_CANCELED` | Isento de pago cancelado |
@@ -56,7 +55,7 @@ Es posible configurar la URL de notificación de forma más específica para cad
     $payment->installments = (int)$_POST['installments'];
     $payment->payment_method_id = $_POST['paymentMethodId'];
     $payment->issuer_id = (int)$_POST['issuer'];
-    $payment->notification_url = `"http://requestbin.fullcontact.com/1ogudgk1"`;
+    $payment->notification_url = `http://requestbin.fullcontact.com/1ogudgk1`;
     ...
     $response = array(
         'status' => $payment->status,
@@ -109,7 +108,7 @@ payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmou
        .setDescription(request.getParameter("description"))
        .setInstallments(Integer.valueOf(request.getParameter("installments")))
        .setPaymentMethodId(request.getParameter("paymentMethodId"))
-       .setNotificationUrl: "http://requestbin.fullcontact.com/1ogudgk1";
+       .setNotificationUrl("http://requestbin.fullcontact.com/1ogudgk1");
 
 Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
 identification.setType(request.getParameter("docType"))
@@ -292,13 +291,13 @@ Esto indica que el pago **999999999** fue creado para el usuario **44444** en mo
 | --- | --- |
 | **id** | ID de la notificación |
 | **live_mode** | Indica si la URL ingresada es válida.|
-| **type** | Tipo de notificacion recebida (payments, merchant_order, subscription, preapproval, etc) |
-| **date_created** | Fecha de creación de pago |
-| **application_id** | Aplication ID que recebió el pago |
+| **type** | Tipo de notificacion recebida (payments, merchant_order, subscription, preapproval etc) |
+| **date_created** | Fecha de creación del recurso (payments, merchant_order, subscription, preapproval etc) |
+| **application_id** | Aplication ID que recebió el recurso (payments, merchant_order, subscription, preapproval etc) |
 | **user_id**| UserID del vendedor |
 | **version** | Cantidad de veces que se envió una notificación |
 | **api_version** | Indica si es una notificación duplicada o no|
-| **action** | Tipo de notificación recibida, indicando si es la actualización de un pago o bien la creación de un pago nuevo |
+| **action** | Tipo de notificación recibida, indicando si es la actualización de un recurso o bien la creación de un nuevo |
 | **data - id**  | ID del payment o merchant_order |
 
 4. Si deseas recibir notificaciones solo de Webhook y no de IPN, puedes agregar en el `notification_url` el parámetro`source_news=webhook`. Por ejemplo: https://www.yourserver.com/notifications?source_news=webhook

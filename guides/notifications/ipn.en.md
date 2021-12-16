@@ -10,7 +10,7 @@ In this documentation, we will explain the necessary settings for receiving IPN 
  
 Below we will explain how to indicate the URLs that will be notified and how to configure the events for which notification will be received.
 
-![ipn](/images/notifications/ipn__en.png)
+![ipn](/images/notifications/ipn__es.png)
 
 1. Access the [IPN Notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
 2. Next, configure the **URL** of **production** where notifications will be received.
@@ -38,7 +38,7 @@ It is possible to configure the notification URL more specifically for each paym
     $payment->installments = (int)$_POST['installments'];
     $payment->payment_method_id = $_POST['paymentMethodId'];
     $payment->issuer_id = (int)$_POST['issuer'];
-    $payment->notification_url = `"http://requestbin.fullcontact.com/1ogudgk1"`;
+    $payment->notification_url = `http://requestbin.fullcontact.com/1ogudgk1`;
     ...
     $response = array(
         'status' => $payment->status,
@@ -91,7 +91,7 @@ payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmou
        .setDescription(request.getParameter("description"))
        .setInstallments(Integer.valueOf(request.getParameter("installments")))
        .setPaymentMethodId(request.getParameter("paymentMethodId"))
-       .setNotificationUrl: "http://requestbin.fullcontact.com/1ogudgk1";
+       .setNotificationUrl("http://requestbin.fullcontact.com/1ogudgk1");
 
 Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
 identification.setType(request.getParameter("docType"))
@@ -180,7 +180,7 @@ payment_data = {
     "description": request.POST.get("description"),
     "installments": int(request.POST.get("installments")),
     "payment_method_id": request.POST.get("payment_method_id"),
-    "notification_url" =  "http://requestbin.fullcontact.com/1ogudgk1",
+    "notification_url": "http://requestbin.fullcontact.com/1ogudgk1",
     "payer": {
         "email": request.POST.get("email"),
         "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----

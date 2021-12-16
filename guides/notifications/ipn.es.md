@@ -14,7 +14,7 @@ A continuación explicaremos cómo indicar las URL que serán notificadas y cóm
 
 1. Accede a la pantalla [Notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
 2. A continuación, configura la **URL** de **producción** donde se recibirán las notificaciones.
-3. También podrás experimentar y probar si la URL indicada está recibiendo notificaciones correctamente, pudiendo verificar la solicitud, la respuesta dada por el servidor y la descripción del evento.
+3. También podrás experimentar y probar si el URL indicado está recibiendo notificaciones correctamente, pudiendo verificar la solicitud, la respuesta dada por el servidor y la descripción del evento.
 4. Si necesitas identificar varias cuentas, al final de la URL indicada puedes especificar el parámetro `?cliente=(nombredelvendedor) endpoint` para identificar a los vendedores.
 5. Selecciona los **eventos** de los que recibirás notificaciones en formato `json` usando `HTTP POST` a la URL especificada anteriormente. Te notificamos de los eventos relacionados con tus pedidos (`merchant_orders`), devoluciones de cargo recibidas (`chargebacks`), pagos recibidos (`payment`) o intentos de pago (`point_integration_ipn`).
  
@@ -22,7 +22,7 @@ A continuación explicaremos cómo indicar las URL que serán notificadas y cóm
 
 Es posible configurar la URL de notificación de forma más específica para cada pago utilizando el campo `notification_url`. Ve a continuación cómo hacer esto usando los SDK.
 
-1. En el campo `notification_url`, indica la URL desde la que se recibirán las notificaciones, como se muestra abajo.
+1. En el campo `notification_url`, indica el URL desde lo que se recibirán las notificaciones, como se muestra abajo.
 
 [[[
 ```php
@@ -38,7 +38,7 @@ Es posible configurar la URL de notificación de forma más específica para cad
     $payment->installments = (int)$_POST['installments'];
     $payment->payment_method_id = $_POST['paymentMethodId'];
     $payment->issuer_id = (int)$_POST['issuer'];
-    $payment->notification_url = `"http://requestbin.fullcontact.com/1ogudgk1"`;
+    $payment->notification_url = `http://requestbin.fullcontact.com/1ogudgk1`;
     ...
     $response = array(
         'status' => $payment->status,
@@ -91,7 +91,7 @@ payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmou
        .setDescription(request.getParameter("description"))
        .setInstallments(Integer.valueOf(request.getParameter("installments")))
        .setPaymentMethodId(request.getParameter("paymentMethodId"))
-       .setNotificationUrl: "http://requestbin.fullcontact.com/1ogudgk1";
+       .setNotificationUrl("http://requestbin.fullcontact.com/1ogudgk1");
 
 Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
 identification.setType(request.getParameter("docType"))
@@ -180,7 +180,7 @@ payment_data = {
     "description": request.POST.get("description"),
     "installments": int(request.POST.get("installments")),
     "payment_method_id": request.POST.get("payment_method_id"),
-    "notification_url" =  "http://requestbin.fullcontact.com/1ogudgk1",
+    "notification_url": "http://requestbin.fullcontact.com/1ogudgk1",
     "payer": {
         "email": request.POST.get("email"),
         "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----

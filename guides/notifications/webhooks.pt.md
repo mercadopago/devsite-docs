@@ -288,13 +288,13 @@ Isso indica que foi criado o pagamento **999999999** para o usuário **44444** e
 | --- | --- |
 | **id** | ID de notificação |
 | **live_mode** | Indica se o URL informado é valido |
-| **type** | Tipo de notificação recebida (paymentes, merchant_order, subscription, preapproval, etc) |
-| **date_created** | Data de criação do pagamento |
-| **application_id** | ID da aplicação que recebeu o pagamento |
+| **type** | Tipo de notificação recebida (payments, merchant_order, subscription, preapproval, etc) |
+| **date_created** | Data de criação do recurso (payments, merchant_order, subscription, preapproval, etc)|
+| **application_id** | ID da aplicação que recebeu o recurso (payments, merchant_order, subscription, preapproval, etc)|
 | **user_id**| UserID de vendedor |
 | **version** | Número de vezes que uma notificação foi enviada |
 | **api_version** | Indica se é uma notificação duplicada ou não |
-| **action** | Tipo de notificação recebida, indicando se se trata da atualização de um pagamento ou da criação de um novo pagamento |
+| **action** | Tipo de notificação recebida, indicando se se trata da atualização de um recurso ou da criação de um novo |
 | **data - id** | ID do payment ou merchant_order |
  
 4. Caso deseje receber notificações apenas de Webhook e não de IPN, você pode adicionar na `notification_url` o parâmetro `source_news=webhook`. Por exemplo: https://www.yourserver.com/notifications?source_news=webhook
