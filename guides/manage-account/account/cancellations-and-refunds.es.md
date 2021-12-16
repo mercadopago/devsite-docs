@@ -29,7 +29,7 @@ Teniendo en cuenta la información anterior, haz clic aquí y visita nuestra Ref
 
 ## Devoluciones
 
-Las devoluciones se pueden realizar de dos formas: **total**, cuando el monto total de la venta se devuelve al comprador, o **parcial**, cuando solo se devuelve al comprador una parte del monto pagado.
+Los reembolsos se pueden realizar de dos formas: **total**, cuando el monto total de la venta se devuelve al comprador, o **parcial**, cuando solo se devuelve al comprador una parte del monto pagado.
 
 Antes de realizar una devolución, es importante considerar los siguientes factores.
 
