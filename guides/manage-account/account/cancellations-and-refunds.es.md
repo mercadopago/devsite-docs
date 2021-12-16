@@ -33,7 +33,7 @@ Los reembolsos se pueden realizar de dos formas: **total**, cuando el monto tota
 
 Antes de realizar un reembolso, es importante considerar los siguientes factores.
 
-- **Fecha límite de devolución:** es posible devolver un pago dentro de los 180 días posteriores a la fecha de aprobación.
+- **Fecha límite de reembolso:** es posible devolver un pago dentro de los 180 días posteriores a la fecha de aprobación.
 - **Saldo de la cuenta:** debes tener suficiente saldo disponible en tu cuenta para reembolsar el monto, de lo contrario no se realizará la transacción.
 - **Forma de pago:** para pagos con tarjeta de crédito, el monto se reembolsará directamente en la factura. Para otros métodos de pago como Pix, por ejemplo, el monto se devolverá directamente a la cuenta del pagador.
 
