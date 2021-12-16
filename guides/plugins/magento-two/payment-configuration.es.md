@@ -42,7 +42,7 @@ El siguiente paso es habilitar los medios de pago. Para eso, debes dirigirte al 
 
 ## Configura los pagos con tarjetas de crédito y débito
 
-La configuración del Checkout Custom - Tarjetas de Crédito y Débito ofrecerá la opción del comprador realizar pagos con métodos de pago offline (Ticket y ATM) disponibles en su país.
+La configuración de este medio de pago ofrecerá la opción al comprador de realizar pagos con tarjeta de crédito y debito disponibles en su país.
 Te compartimos un detalle de las distintas opciones que encontrarás para configurarlo:
 
 
