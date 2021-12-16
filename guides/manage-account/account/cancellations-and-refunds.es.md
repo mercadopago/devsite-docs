@@ -1,19 +1,19 @@
-# Devoluciones y cancelaciones
+# Reembolsos y cancelaciones
 
-**Devoluciones** son transacciones que se realizan cuando un determinado cargo se revierte y las cantidades pagadas se devuelven al comprador. Esto significa que el cliente recibirá en su cuenta o en el extracto de su tarjeta de crédito el monto pagado por la compra de un determinado producto o servicio.
+**Reembolsos** son transacciones que se realizan cuando un determinado cargo se revierte y las cantidades pagadas se devuelven al comprador. Esto significa que el cliente recibirá en su cuenta o en el extracto de su tarjeta de crédito el monto pagado por la compra de un determinado producto o servicio.
 
 **Cancelaciones** ocurren cuando se realiza una compra pero el pago aún no ha sido aprobado por algún motivo. En este caso, considerando que la transacción no fue procesada y el establecimiento no recibió ningún monto, la compra se cancela y no hay cargo.
 
-Si bien son transacciones similares, es importante tener en cuenta que la cancelación se realiza el mismo día en que se captura el pago, devolviendo el límite a la tarjeta del comprador dentro del plazo definido por el banco emisor. La devolución referente a la reversión se realiza directamente en la factura de la tarjeta de crédito, o en la cuenta corriente en los casos de pago vía Pix, boleto bancário o débito.
+Si bien son transacciones similares, es importante tener en cuenta que la cancelación se realiza el mismo día en que se captura el pago, devolviendo el límite a la tarjeta del comprador dentro del plazo definido por el banco emisor. El reembolso referente a la reversión se realiza directamente en la factura de la tarjeta de crédito, o en la cuenta corriente en los casos de pago vía Pix, boleto bancário o débito.
 
-En esta documentación, encontrarás las instrucciones y los links de las APIs necesarias para realizar una devolución total, parcial y cancelar una compra en tu tienda.
+En esta documentación, encontrarás las instrucciones y los links de las APIs necesarias para realizar un reembolso total, parcial y cancelar una compra en tu tienda.
 
 
 > WARNING
 >
 > Importante
 >
-> Al ejecutar las API a las que se hace referencia en esta documentación, es posible que encuentres el atributo **X-Idempotency-Key**. Completarlo es importante para asegurar la ejecución y re-ejecución de solicitudes sin efectos secundarios como pagos duplicados en casos de reversión.
+> Al ejecutar las API a las que se hace referencia en esta documentación, es posible que encuentres el atributo **X-Idempotency-Key**. Completarlo es importante para asegurar la ejecución y re-ejecución de solicitudes sin efectos secundarios como pagos duplicados en casos de reembolso.
 
 ## Cancelaciones
 
@@ -29,15 +29,15 @@ Teniendo en cuenta la información anterior, haz clic aquí y visita nuestra Ref
 
 ## Devoluciones
 
-Las devoluciones se pueden realizar de dos formas: **total**, cuando el monto total de la venta se devuelve al comprador, o **parcial**, cuando solo se devuelve al comprador una parte del monto pagado.
+Los reembolsos se pueden realizar de dos formas: **total**, cuando el monto total de la venta se devuelve al comprador, o **parcial**, cuando solo se devuelve al comprador una parte del monto pagado.
 
-Antes de realizar una devolución, es importante considerar los siguientes factores.
+Antes de realizar un reembolso, es importante considerar los siguientes factores.
 
-- **Fecha límite de devolución:** es posible devolver un pago dentro de los 180 días posteriores a la fecha de aprobación.
+- **Fecha límite de reembolso:** es posible devolver un pago dentro de los 180 días posteriores a la fecha de aprobación.
 - **Saldo de la cuenta:** debes tener suficiente saldo disponible en tu cuenta para reembolsar el monto, de lo contrario no se realizará la transacción.
 - **Forma de pago:** para pagos con tarjeta de crédito, el monto se reembolsará directamente en la factura. Para otros métodos de pago como Pix, por ejemplo, el monto se devolverá directamente a la cuenta del pagador.
 
-Para realizar devoluciones totales o parciales de un pago y verificar las devoluciones realizadas en tu tienda, visita nuestra Referencia API y accede a las APIs de devolución total y parcial haciendo clic en los links a continuación.
+Para realizar reembolsos totales o parciales de un pago y verificar los reembolsos realizados en tu tienda, visita nuestra Referencia API y accede a las APIs de devolución total y parcial haciendo clic en los links a continuación.
 
-- Devolución total y parcial
-- Ver devoluciones
+- Reembolso total y parcial
+- Ver reembolsos
