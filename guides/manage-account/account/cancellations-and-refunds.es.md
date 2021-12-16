@@ -31,7 +31,7 @@ Teniendo en cuenta la información anterior, haz clic aquí y visita nuestra Ref
 
 Los reembolsos se pueden realizar de dos formas: **total**, cuando el monto total de la venta se devuelve al comprador, o **parcial**, cuando solo se devuelve al comprador una parte del monto pagado.
 
-Antes de realizar una devolución, es importante considerar los siguientes factores.
+Antes de realizar un reembolso, es importante considerar los siguientes factores.
 
 - **Fecha límite de devolución:** es posible devolver un pago dentro de los 180 días posteriores a la fecha de aprobación.
 - **Saldo de la cuenta:** debes tener suficiente saldo disponible en tu cuenta para reembolsar el monto, de lo contrario no se realizará la transacción.
