@@ -1,4 +1,4 @@
-# Devoluciones y cancelaciones
+# Reembolsos y cancelaciones
 
 **Devoluciones** son transacciones que se realizan cuando un determinado cargo se revierte y las cantidades pagadas se devuelven al comprador. Esto significa que el cliente recibirá en su cuenta o en el extracto de su tarjeta de crédito el monto pagado por la compra de un determinado producto o servicio.
 
