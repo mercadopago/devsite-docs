@@ -290,7 +290,7 @@ Esto indica que el pago **999999999** fue creado para el usuario **44444** en mo
 | **id** | ID de la notificación |
 | **live_mode** | Indica si la URL ingresada es válida.|
 | **type** | Tipo de notificacion recebida (payments, mp-connect, subscription etc) |
-| **date_created** | Fecha de creación del recurso (payments, merchant_order, subscription, preapproval etc) |
+| **date_created** | Fecha de creación del recurso (payments, mp-connect, subscription etc) |
 | **application_id** | Aplication ID que recebió el recurso (payments, mp-connect, subscription etc) |
 | **user_id**| UserID del vendedor |
 | **version** | Cantidad de veces que se envió una notificación |
