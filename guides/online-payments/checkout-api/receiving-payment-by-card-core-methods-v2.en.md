@@ -39,14 +39,14 @@ To create a payment, you should capture card data through the buyer's browser. F
 
 To capture card data, follow these steps:
 
-1. [Include MercadoPago.js library](#bookmark_include_mercadopago.js_library)
-2. [Add payment form](#bookmark_add_payment_form)
-3. [Configure your public key](#bookmark_configure_your_public_key)
-4. [Create PCI fields](#bookmark_create_the_pci_fields)
-5. [Get data for your form](#bookmark_get_data_for_your_form)
-6. [Create card token](#bookmark_create_card_token)
+1. [Include MercadoPago.js library](#bookmark_1._include_mercadopago.js_library)
+2. [Add payment form](#bookmark_2._add_payment_form)
+3. [Configure your public key](#bookmark_3._configure_your_public_key)
+4. [Create PCI fields](#bookmark_4._create_the_pci_fields)
+5. [Get data for your form](#bookmark_5._get_data_for_your_form)
+6. [Create card token](#bookmark_6._create_card_token)
 
-### Include MercadoPago.js library
+### 1. Include MercadoPago.js library
 
 Use our **official library** to access Mercado Pago API from your application and collect data securely.
 
@@ -56,7 +56,7 @@ Use our **official library** to access Mercado Pago API from your application an
 
 Card information will be turned into a token so that you can send data to your servers securely.
 
-### Add payment form
+### 2. Add payment form
 
 To capture sensitive data from your customer's cards, please use our form with the corresponding attributes to ensure information security and correct token generation. 
 
@@ -102,7 +102,7 @@ The following example assumes that `transactionAmount` and `description` data we
 >
 > Before following the steps below, make sure that the form is available, so it can operate correctly.
 
-### Configure your public key
+### 3. Configure your public key
 
 Add your [public key]([FAKER][CREDENTIALS][URL]) like this:
 
@@ -121,7 +121,7 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 
 >  If you still don't have an account to check your credentials, [sign in](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
-### Create the PCI fields
+### 4. Create the PCI fields
 
 Safe fields (cardNumber, expirationDate and CVV) hosted by **Mercado Pago** are created in this step with **Fields**, using the `HTML iframe` element.
 
@@ -148,7 +148,7 @@ A code example with `cardNumber`, `expirationMonth`, `expirationYear` and `CVV` 
   }).mount('form-checkout__securityCode-container');
 ```
 
-### Get data for your form
+### 5. Get data for your form
 
 You must get the following data:
 
@@ -282,7 +282,7 @@ const getInstallments = async (bin) => {
 
 From this point on, when entering a valid card number (eg 5031433215406351) in the `cardNumber` field, the `issuer` and `installments` fields should be completed automatically.
 
-### Create card token
+### 6. Create card token
 
 Before submitting the payment, you must create a token containing all card information securely. You should generate it as follows:
 

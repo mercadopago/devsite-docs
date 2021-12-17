@@ -47,14 +47,14 @@ Para criar um pagamento é necessário fazer a captura dos dados do cartão atra
 
 Para capturar os dados do cartão, siga estas etapas:
 
-1. [Inclua a biblioteca MercadoPago.js](#bookmark_inclua_a_biblioteca_mercadopago.js)
-2. [Adicione o formulário de pagamento](#bookmark_adicione_o_formulário_de_pagamento)
-3. [Configure sua chave pública](#bookmark_configure_sua_chave_pública)
-4. [Crie os campos PCI](#bookmark_crie_os_campos_pci)
-5. [Obtenha os dados para seu formulário](#bookmark_obtenha_os_dados_para_seu_formulário)
-6. [Crie o token do cartão](#bookmark_crie_o_token_do_cartão)
+1. [Inclua a biblioteca MercadoPago.js](#bookmark_1._inclua_a_biblioteca_mercadopago.js)
+2. [Adicione o formulário de pagamento](#bookmark_2._adicione_o_formulário_de_pagamento)
+3. [Configure sua chave pública](#bookmark_3._configure_sua_chave_pública)
+4. [Crie os campos PCI](#bookmark_4._crie_os_campos_pci)
+5. [Obtenha os dados para seu formulário](#bookmark_5._obtenha_os_dados_para_seu_formulário)
+6. [Crie o token do cartão](#bookmark_6._crie_o_token_do_cartão)
 
-### Inclua a biblioteca MercadoPago.js
+### 1. Inclua a biblioteca MercadoPago.js
 
 **Use nossa biblioteca oficial para acessar a API de Mercado Pago** no seu frontend e coletar os dados de forma segura.
 
@@ -64,7 +64,7 @@ Para capturar os dados do cartão, siga estas etapas:
 
 A informação do cartão será convertida em um token para que envie os dados aos seus servidores de modo seguro.
 
-### Adicione o formulário de pagamento
+### 2. Adicione o formulário de pagamento
 
 Para realizar a captura de dados sensíveis dos cartões dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação e a correta geração do token.
 
@@ -111,7 +111,7 @@ No exemplo a seguir, assume-se que os dados `transactionAmount` e `description` 
 > Lembre-se que é preciso ter o formulário antes de todos os passos seguintes para seu correto funcionamento.
 
 
-### Configure sua chave pública
+### 3. Configure sua chave pública
 
 
 Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
@@ -131,7 +131,7 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 
 > Se ainda não possui conta para ver suas credenciais, [registre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
-### Crie os campos PCI
+### 4. Crie os campos PCI
 
 Nesse passo são criados os campos seguros (cardNumber, expirationDate e CVV) com **Fields**, hospedados pelo **Mercado Pago**, e que fazem uso do elemento `HTML iframe`.
 
@@ -158,7 +158,7 @@ Um exemplo de código com `cardNumber`, `expirationMonth`, `expirationYear` e `C
   }).mount('form-checkout__securityCode-container');
 ```
 
-### Obtenha os dados para seu formulário
+### 5. Obtenha os dados para seu formulário
 
 Você deve obter os seguintes dados:
 
@@ -293,7 +293,7 @@ const getInstallments = async (bin) => {
 
 A partir desse ponto, ao inserir um número de cartão válido (ex: 5031433215406351) no campo `cardNumber`, os campos `issuer` e `installments` deverão ser preenchidos automaticamente.
 
-### Crie o token do cartão
+### 6. Crie o token do cartão
 
 Antes de enviar o pagamento, crie o token que conterá de maneira segura toda a informação do cartão. Você deve gerá-lo da seguinte forma:
 

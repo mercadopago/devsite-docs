@@ -29,11 +29,11 @@ To create a payment, you should capture card data through the buyer's browser. F
 
 To capture card data, follow these steps:
 
-1. [Include and configure MercadoPago.js library](#bookmark_include_and_configure_mercadopago.js_library)
-2. [Add payment form](#bookmark_add_payment_form)
-3. [Integrate the form with MercadoPago.js library](#bookmark_integrate_the_form_with_mercadopago.js_library)
+1. [Include and configure MercadoPago.js library](#bookmark_1._include_and_configure_mercadopago.js_library)
+2. [Add payment form](#bookmark_2._add_payment_form)
+3. [Integrate the form with MercadoPago.js library](#bookmark_3._integrate_the_form_with_mercadopago.js_library)
 
-### Include and configure MercadoPago.js library
+### 1. Include and configure MercadoPago.js library
 
 **Use our official library to access Mercado Pago API** from your frontend to collect data securely and to configure your [public key]([FAKER][CREDENTIALS][URL]) like this:
 
@@ -60,7 +60,7 @@ If you still don't have an account to check your credentials, [sign in](https://
 
 The card information will be converted into a token so you can send the data to your servers in a secure way.
 
-### Add payment form
+### 2. Add payment form
 
 Before capturing the card data, provide a form to load all the information.
 
@@ -96,7 +96,7 @@ Use the following form and add the styles of your choice.
 > 
 > Find information about the different attributes in the [technical references](https://github.com/mercadopago/sdk-js).
 
-### Integrate the form with MercadoPago.js library
+### 3. Integrate the form with MercadoPago.js library
 
 Now, to initialize the CardForm, relate each form field ID with the relevant attributes. The library will be responsible for filling out, getting and validating all the data needed for payment confirmation.
 
