@@ -308,9 +308,9 @@ Depois de dar um retorno à notificação e confirmar o seu recebimento, você o
 | Tipo | URL | Documentação |
 | --- | --- | --- |
 | payment | `https://api.mercadopago.com/v1/payments/[ID]` | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get) |
-| plan | `https://api.mercadopago.com/v1/plans/[ID]` | - |
-| subscription | `https://api.mercadopago.com/v1/subscriptions/[ID]` | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/subscriptions/_preapproval/post) |
-| invoice | `https://api.mercadopago.com/v1/invoices/[ID]` | - |
+| subscription_preapproval | `https://api.mercadopago.com/preapproval` | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/subscriptions/_preapproval/post) |
+| subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | - |
+| subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | - |
 | point_integration_wh | - | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/mp-point/introduction) |
 
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma como, por exemplo, atualizar um pagamento aprovado. 
