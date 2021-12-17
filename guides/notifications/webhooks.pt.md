@@ -288,9 +288,9 @@ Isso indica que foi criado o pagamento **999999999** para o usuário **44444** e
 | --- | --- |
 | **id** | ID de notificação |
 | **live_mode** | Indica se o URL informado é valido |
-| **type** | Tipo de notificação recebida (payments, merchant_order, subscription, preapproval, etc) |
-| **date_created** | Data de criação do recurso (payments, merchant_order, subscription, preapproval, etc)|
-| **application_id** | ID da aplicação que recebeu o recurso (payments, merchant_order, subscription, preapproval, etc)|
+| **type** | Tipo de notificação recebida (payments, mp-connect, subscription, etc) |
+| **date_created** | Data de criação do recurso (payments, mp-connect, subscription etc) |
+| **application_id** | ID da aplicação que recebeu o recurso (payments, mp-connect, subscription etc) |
 | **user_id**| UserID de vendedor |
 | **version** | Número de vezes que uma notificação foi enviada |
 | **api_version** | Indica se é uma notificação duplicada ou não |
