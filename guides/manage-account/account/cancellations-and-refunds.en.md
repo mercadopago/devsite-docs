@@ -28,8 +28,7 @@ Before canceling a purchase, the following factors must be considered:
 
 ------------
 
-Considering the above information, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/chargebacks/_payments_payment_id/put
-) and visit our API Reference to access the Cancellation API.
+Considering the above information, please visit our API Reference to access the Cancellation API.
 
 ## Refunds
 
@@ -42,6 +41,3 @@ Before performing a refund, it is important to consider the factors below.
 * **Payment method:** For payments by credit card, the amount will be refunded directly on the invoice. For other payment methods such as Pix, for example, the amount will be returned to the payer's account.
 
 To make full or partial refunds of a payment and check the refunds made in your store, visit our API Reference and access the full and partial refunds APIs by clicking on the links below.
-
-- [Post refunds](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/chargebacks/_payments_id_refunds/post)
-- [Check refunds list](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/chargebacks/_payments_id_refunds/get)

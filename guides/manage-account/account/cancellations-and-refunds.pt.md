@@ -29,8 +29,7 @@ Antes de realizar o cancelamento de uma compra, é preciso atentar-se os seguint
 
 ------------
 
-Considerando as informações acima, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_payments_payment_id/put
-) e visite nossa Referência API para ter acesso à API de cancelamento.
+Considerando as informações acima, visite nossa Referência API para ter acesso à API de cancelamento.
 
 ## Reembolsos
 
@@ -44,5 +43,5 @@ Antes de realizar um reembolso, é importante considerar os fatores abaixo.
 
 Para realizar reembolsos integrais ou parciais de um pagamento e consultar os reembolsos feitos em sua loja, visite nossa Referência API e acesse as APIs de Reembolso integral e parcial clicando nos links abaixo.
 
-- [Reembolsos integrais e parciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_payments_id_refunds/post)
-- [Consultar reembolsos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_payments_id_refunds/get)
+- Inserir reembolsos
+- Obter lista de reembolsos

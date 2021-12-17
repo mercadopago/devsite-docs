@@ -28,10 +28,9 @@ Antes de cancelar una compra, se deben tener en cuenta los siguientes factores:
 
 ------------
 
-Teniendo en cuenta la información anterior, [haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/chargebacks/_payments_payment_id/put
-) y visita nuestra Referencia de API para acceder a la API de cancelación.
+Teniendo en cuenta la información anterior, haz clic aquí y visita nuestra Referencia de API para acceder a la API de cancelación.
 
-## Devoluciones
+## Reembolsos
 
 Los reembolsos se pueden realizar de dos formas: **total**, cuando el monto total de la venta se devuelve al comprador, o **parcial**, cuando solo se devuelve al comprador una parte del monto pagado.
 
@@ -41,7 +40,7 @@ Antes de realizar un reembolso, es importante considerar los siguientes factores
 - **Saldo de la cuenta:** debes tener suficiente saldo disponible en tu cuenta para reembolsar el monto, de lo contrario no se realizará la transacción.
 - **Forma de pago:** para pagos con tarjeta de crédito, el monto se reembolsará directamente en la factura. Para otros métodos de pago como Pix, por ejemplo, el monto se devolverá directamente a la cuenta del pagador.
 
-Para realizar reembolsos totales o parciales de un pago y verificar los reembolsos realizados en tu tienda, visita nuestra Referencia API y accede a las APIs de devolución total y parcial haciendo clic en los links a continuación.
+Para realizar reembolsos totales o parciales de un pago y verificar los reembolsos realizados en tu tienda, visita nuestra Referencia API y accede a las APIs de reembolso total y parcial haciendo clic en los links a continuación.
 
-- [Reembolso parcial y total](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/chargebacks/_payments_id_refunds/post)
-- [Obtener lista de reembolsos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/chargebacks/_payments_id_refunds/get)
+- Inserir reembolsos
+- Obtener lista de reembolsos
