@@ -30,7 +30,7 @@ Antes de cancelar una compra, se deben tener en cuenta los siguientes factores:
 
 Teniendo en cuenta la información anterior, haz clic aquí y visita nuestra Referencia de API para acceder a la API de cancelación.
 
-## Devoluciones
+## Reembolsos
 
 Los reembolsos se pueden realizar de dos formas: **total**, cuando el monto total de la venta se devuelve al comprador, o **parcial**, cuando solo se devuelve al comprador una parte del monto pagado.
 
