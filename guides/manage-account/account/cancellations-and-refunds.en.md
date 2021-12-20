@@ -1,295 +1,43 @@
----
-  indexable: false
----
+# Refunds and Cancellations
 
-# Refunds and cancellations
+**Refunds** are transactions made when a certain charge is reversed and the amounts paid are returned to the buyer. This means that the customer will receive back the amount paid for the purchase of a certain product or service on their account or credit card statement.
 
-There are different situations in which you may want to cancel a sale:
+**Cancellations** happen when a purchase is made but the payment has not yet been approved for some reason. In this case, considering that the transaction was not processed and the establishment did not receive any amount, the purchase is canceled and there is no charge.
 
-* If the payment status is `pending` or `in_process`, it means that the buyer has not been charged yet, so you can make a cancellation.
+Although they are similar transactions, it is important to keep in mind that the cancellation is made on the same day as the payment is captured, returning the limit to the buyer's card within the period defined by the issuing bank. The return referring to the reversal is made directly on the credit card bill, or on the checking account in cases of payment via Pix, boleto bancário or debit.
 
-* If the payment `status` is `approved`, it means that the buyer was charged, so you can make a refund.
+In this documentation, you will find the necessary information to perform a full and partial refund, and cancel a purchase in your store.
+
 
 > WARNING
 >
-> WARNING
+> Important
 >
-> Note that for payments with QR and POINT, you can only make refunds but not cancellations.
+> When running the APIs referenced in this documentation, you may encounter the attribute **X-Idempotency-Key**. Its completion is important to ensure the execution and re-execution of requests without side effects such as duplicate payments in refund cases.
 
 ## Cancellations
 
-- Cancellations can only be made with `pending` and `in process` transactions
-- It is important for offline payment methods
-- The expiration of a payment occurs after 30 days and the cancellation is automatic, is this case the final status of the payment is cancelled/expired
+Before canceling a purchase, the following factors must be considered: 
 
-Only `pending` or `in_process` payments can be cancelled. As soon as you cancel them, they will no longer be approved and you will be able to release the stock pending confirmation.
+- **Payment status**: Cancellations can only be made if the payment status is Pending or In process. These statuses are displayed in the response of the Cancellation API call in the fields *Status* and *Status detail* respectively.
 
-Cancellations are mainly used with **cash payments**.
+- **Expiry date**: A payment expires after 30 days without confirmation and the cancellation is automatic. The final status of this transaction will appear as *Canceled* or *Expired*. This information will be displayed in the response of the Cancellation API call, in the fields *Status* and *Status detail* respectively.
 
-These payments do not expire automatically, so you need to cancel them.
+----[mlb]----
+- **Boleto bancário**: If the expiry date of a boleto bancário expires, the user can generate it again by entering the transaction ID of their Mercado Pago account. However, if you want to avoid stock retention problems, for example, you can choose not to make a new issue of this slip available. To do this, simply cancel it.
 
-To cancel, make the following request by submitting the `status` `cancelled`:
+------------
 
-[[[
-```php
-<?php
-
-  $payment = MercadoPago\Payment::find_by_id($payment_id);
-  $payment->status = "cancelled";
-  $payment->update();
-
-?>
-```
-```java
-Payment payment = Payment.findById(paymentId);
-payment.setStatus("cancelled");
-payment.update();
-
-```
-```node
-
-mercadopago.payment.update({
-  id: paymentId,
-  status: "cancelled"
-}).then().catch();
-
-```
-```ruby
-sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
-request = {
-  status: 'cancelled'
-}
-result = sdk.payment.update(payment_id, request)
-```
-```python
-sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
-
-payment_data = {
-    "status": "cancelled"
-}
-
-payment_response = sdk.payment().update(payment_id, payment_data)
-payment = payment_response["response"]
-```
-```curl
-curl -X PUT \
--H "Content-Type: application/json" \
--H 'Authorization: Bearer ACCESS_TOKEN' \
--d '{"status":"cancelled"}' \
-'https://api.mercadopago.com/v1/payments/:ID'
-```
-]]]
-
-**Response status code: 200 OK**
+Considering the above information, please visit our API Reference to access the Cancellation API.
 
 ## Refunds
-----[mla]----
-You can refund a payment within **360 days** after it was approved.
-------------
-----[mlb]----
-You can refund a payment within **180 days** after it was approved.
-------------
-----[mlm]----
-You can refund a payment within **180 days** after it was approved.
-------------
-----[mlc]----
-You can refund a payment within **330 days** after it was approved.
-------------
-----[mlu, mpe]----
-You can refund a payment within **90 days** after it was approved.
-------------
-----[mco]----
-You can refund a payment within **180 days** after it was approved.
-------------
 
-You must have sufficient funds in your account in order to successfully refund the payment amount. Otherwise, you will get a `400 Bad Request error`.
+Refunds can be made in two ways: **full**, when the total sale amount is returned to the buyer, or **partial**, when only part of the paid amount is returned to the buyer.
 
-If the buyer made the payment with card, the amount will be refunded directly to the card.
+Before performing a refund, it is important to consider the factors below.
 
-If the payment was made by other means, the amount will be deposited in the buyer’s Mercado Pago account. If the buyer has no account, we will create one using the buyer’s e-mail address.
+* **Refund Deadline:** It is possible to refund a payment within 180 days of its approval date.
+* **Account Balance:** You must have sufficient balance available in your account to refund the amount, otherwise the transaction will not be concluded.
+* **Payment method:** For payments by credit card, the amount will be refunded directly on the invoice. For other payment methods such as Pix, for example, the amount will be returned to the payer's account.
 
-### Issue a full refund
-
-To issue a full refund, make the following request indicating the `payment_id`:
-
-[[[
-```php
-<?php
-
-$payment = MercadoPago\Payment::find_by_id($payment_id);
-$payment->refund();
-
-?>
-```
-```node
-mercadopago.payment.refund(payment_id)
-  .then(function (response) {
-    //Process response...
-  })
-  .catch(function (error) {
-    //Handle the error ...
-  });
-```
-```python
-refund_response = sdk.refund().create(payment_id)
-refund = refund_response["response"]
-```
-```curl
-curl -X POST \
--H "Content-Type: application/json" \
--H 'Authorization: Bearer ACCESS_TOKEN' \
-'https://api.mercadopago.com/v1/payments/:ID/refunds'
-```
-]]]
-
-> NOTE
->
-> Note
->
-> The payment will be in `refunded` `status`.
-
-
-**Response status code: 201 Created**
-
-```json
-{
-    "id": PAYMENT_ID,
-    ...
-
-    "refunds": [
-      {
-        "id": 111,
-        "payment_id": PAYMENT_ID,
-        "amount": 16.98,
-        "metadata": {
-        },
-        "source": {
-            "id": "130379930",
-            "name": "Firstname Lastname",
-            "type": "collector"
-        },
-        "date_created": "2014-12-04T17:00:03.000-04:00",
-        "unique_sequence_number": null
-      }
-    ]
-}
-```
-
-----[mla, mlm, mco, mlu, mlb, mlc]----
-
-### Issue a partial refund
-
-You can issue up to 20 partial refunds for one single payment. Upon completion, the payment `status` will be `approved` with a `status_detail` in `partially_refunded`.
-
-You must indicate the amount to be refunded.
-
-[[[
-
-```php
-<?php
-  $payment = MercadoPago\Payment::find_by_id(paymentId);
-  $payment->refund(10.5);
-?>
-```
-```java
-Payment payment = Payment.findById(paymentId);
-payment.refund(10.5);
-```
-```node
-mercadopago.payment.refundPartial({ payment_id: id, amount: Number(amount) })
-  .then(function (response) {
-    //Process response...
-  })
-  .catch(function (error) {
-    //Handle the error ...
-  });
-```
-```ruby
-sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
-request = {
-  amount: 10.5
-}
-result = sdk.refund.create(payment_id, request)
-```
-```python
-refund_data = {
-  "amount": 10.5
-}
-
-refund_response = sdk.refund().create(payment_id, refund_data)
-refund = refund_response["response"]
-```
-```curl
-curl -X POST \
--H "Content-Type: application/json" \
--H 'Authorization: Bearer ACCESS_TOKEN' \
-'https://api.mercadopago.com/v1/payments/:ID/refunds' \
--d '{"amount":10.5}'
-```
-]]]
-
-------------
-
-### Get the refunds made
-
-You can view the refunds issued for a specific payment with the following request:
-
-[[[
-```php
-<?php
-  $payment = MercadoPago\Payment::find_by_id($payment_id);
-  $refunds = $payment->refund();
-?>
-```
-```java
-Payment payment = Payment.findById(paymentId);
-ArrayList<Refund> refunds = payment.refund();
-```
-```node
-mercadopago.payment.refund(paymentId).then(function(data) {}
-  //Do Stuff ..
-});
-```
-```ruby
-sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
-result = sdk.refund.list(payment_id)
-refunds = result[:response]
-```
-```python
-refunds_response = sdk.refund().list_all(payment_id)
-refunds = refunds_response["response"]
-```
-```curl
-curl -X GET \
--H "Content-Type: application/json" \
--H 'Authorization: Bearer ACCESS_TOKEN' \
-'https://api.mercadopago.com/v1/payments/:ID'
-```
-]]]
-
-
-Response:
-
-```json
-{
-    "id": PAYMENT_ID,
-    ...
-
-    "refunds": [
-      {
-        "id": 111,
-        "payment_id": PAYMENT_ID,
-        "amount": 16.98,
-        "metadata": {
-        },
-        "source": {
-            "id": "130379930",
-            "name": "Firstname Lastname",
-            "type": "collector"
-        },
-        "date_created": "2014-12-04T17:00:03.000-04:00",
-        "unique_sequence_number": null
-      }
-    ]
-}
-```
+To make full or partial refunds of a payment and check the refunds made in your store, visit our API Reference and access the full and partial refunds APIs by clicking on the links below.

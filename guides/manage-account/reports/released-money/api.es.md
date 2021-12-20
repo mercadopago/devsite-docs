@@ -599,6 +599,8 @@ Conoce los campos que puedes configurar para ajustar tus preferencias antes de e
 | `include_withdrawal` (opcional) | <br/>Incluye los retiros de dinero en el reporte.<br/><br/> |
 | `coupon_detailed` (opcional) | <br/>Suma una columna para mostrar el detalle de los cupones de descuento.<br/><br/> |
 | `scheduled` (read_only) | <br/>Campo informativo que indica si ya existen reportes programados en la cuenta de usuario.<br/><br/> |
+| `check_available_balance` (opcional) | <br/>Saldo antes y después de realizar un retiro de dinero que explica el balance de la cuenta. (Esta configuración es solo informativa. Debe excluirse para comprobaciones del balance y/o saldo de cuenta)<br/><br/> |
+| `compensate_detail` (opcional) | <br/>Bloqueos y desbloqueos de dinero que se compensan entre sí y que no afectan el saldo final. Ayuda a entender cómo se conforma el balance final del reporte, en una lectura cronológica (recomendado si tienes un volumen alto de transacciones).<br/><br/>|
 
 ## Genera tu reporte de forma manual 
 

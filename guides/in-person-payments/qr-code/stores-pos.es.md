@@ -115,7 +115,6 @@ Puedes obtener más información en la [Referencias de API](https://www.mercadop
 
 Una vez creada la caja, podremos ver en el _Response_ los links a distintos entregables del QR, junto con otros datos relevantes de la caja.
 
-
 ---
 ### Próximos pasos
 

@@ -20,6 +20,7 @@ As devoluções acontecem quando o pagamento foi realizado, porém, o vendedor d
 > 
 > Leve em consideração que para pagamentos presenciais somente poderá realizar devoluções, mas não cancelamentos. 
 
+Veja o processo de estorno para pagamentos via QR CODE [neste vídeo tutorial.](https://youtu.be/6Zi1ayIaFqs?list=PLCazXKuqZp3g4WfhNlhsB3FL9-1z7gUny)
 
 ## Obter dados do pedido
 
@@ -42,6 +43,8 @@ Integre os [relatórios de conciliação de Mercado Pago](https://www.mercadopag
 
 Detalhamos todos os casos necessários que deve comprovar para validar que seu sistema esteja integrado corretamente com Mercado Pago. 
 Você pode achar todos os casos na [seção de Testes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/integration-test).
+
+Veja mais detalhes neste [vídeo tutorial](https://youtu.be/izpBBw3Ivi4?list=PLCazXKuqZp3g4WfhNlhsB3FL9-1z7gUny).
 
 ---
 ### Próximos passos
