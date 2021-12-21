@@ -29,9 +29,9 @@ A continuación explicaremos cómo indicar las URL que serán notificadas y cóm
 | `subscription_preapproval` | `created - updated` | Suscripción |
 | `subscription_preapproval_plan` | `created - updated` | Plan de suscripción |
 | `subscription_authorized_payment` | `created - updated` | Pago recurrente de una suscripción |
-| `point_integration_wh` | `state_FINISHED`| Isento de pago finalizado |
-| `point_integration_wh` | `state_CANCELED` | Isento de pago cancelado |
-| `point_integration_wh` | `state_ERROR`| Ocurrio un error al procesar el intento de pago |
+| `point_integration_wh` | `state_FINISHED`| Intento de pago finalizado |
+| `point_integration_wh` | `state_CANCELED` | Intento de pago cancelado |
+| `point_integration_wh` | `state_ERROR`| Ocurrió un error al procesar el intento de pago |
 
 ## Configuración al crear pagos
 
