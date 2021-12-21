@@ -378,7 +378,7 @@ Encontre o estado do pagamento no campo _status_.
 ```
 ```node
 ===
-Encontre o estado do pagamento no campo _status_.
+Find the payment status in the _status_ field.
 ===
  
 var mercadopago = require('mercadopago');
@@ -414,7 +414,7 @@ mercadopago.payment.save(payment_data)
 ```
 ```java
 ===
-Encontre o estado do pagamento no campo _status_.
+Find the payment status in the _status_ field.
 ===
  
 MercadoPago.SDK.setAccessToken("YOUR_ACCESS_TOKEN");
@@ -444,7 +444,7 @@ System.out.println(payment.getStatus());
 ```
 ```ruby
 ===
-Encontre o estado do pagamento no campo _status_.
+Find the payment status in the _status_ field.
 ===
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
@@ -472,7 +472,7 @@ puts payment
 ```
 ```csharp
 ===
-Encontre o estado do pagamento no campo _status_.
+Find the payment status in the _status_ field.
 ===
 using System;
 using MercadoPago.Client.Common;
@@ -508,7 +508,7 @@ Console.WriteLine(payment.Status);
 ```
 ```python
 ===
-Encontre o estado do pagamento no campo _status_.
+Find the payment status in the _status_ field.
 ===
 import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
@@ -535,7 +535,7 @@ print(payment)
 ```
 ```curl
 ===
-Encontre o estado do pagamento no campo _status_.
+Find the payment status in the _status_ field.
 ===
  
 curl -X POST \
