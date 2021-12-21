@@ -37,7 +37,7 @@ Tanto para el frontend como para el backend, te recomendamos utilizar [nuestras 
 >
 > Captura los datos de la tarjeta
 
-Para crear un pago es necesario hacer la captura de los datos de la tarjeta a través del navegador del comprador. Por cuestiones de seguridad, **es muy importante que los datos sensibles de la tarjeta nunca lleguen a tus servidores.**.
+Para crear un pago es necesario hacer la captura de los datos de la tarjeta a través del navegador del comprador. Por cuestiones de seguridad, **es muy importante que los datos sensibles de la tarjeta nunca lleguen a tus servidores**.
 
 > NOTE
 >
