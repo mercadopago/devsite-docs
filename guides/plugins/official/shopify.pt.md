@@ -70,7 +70,7 @@ Para instalar o Checkout Transparente em sua Shopify, siga o passo a passo abaix
 
 Ao finalizar essas configurações, passe para a próxima etapa e faça uma compra teste para garantir o funcionamento correto do checkout.
 
-## Teste de compras
+### Teste de compras
 
 [TXTSNIPPET][/guides/snippets/test-integration/shopify-test-purchase]
 
