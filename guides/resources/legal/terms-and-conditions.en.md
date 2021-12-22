@@ -1,7 +1,7 @@
 ----[mla]----
 # Términos y Condiciones para Desarrolladores de Mercado Pago
 
-_Última modificación: 03/12/2021_
+_Última modificación: 20/12/2021_
 
 Estos términos y condiciones, incluyendo sus anexos (los “Términos y Condiciones”), constituyen un contrato donde se establecen las reglas para que cualquier persona humana y/o jurídica pueda participar como Desarrollador y pueda acceder y/o usar la API de la unidad de negocio “Mercado Pago” de MercadoLibre S.R.L., CUIT: 30-70308853-4 (“Mercado Pago”) (la “API”). Al acceder y/o usar la API, los Desarrolladores aceptan estos Términos y Condiciones.
 
@@ -254,9 +254,9 @@ El Desarrollador, sin carácter taxativo, deberá:
 
 **Incidentes**
 
-Al momento de tomar conocimiento de un incidente de seguridad informática, el Desarrollador deberá notificarlo a Mercado Pago a a la casilla de mail incidentes.seguridad@mercadolibre.com, de manera expeditiva, dentro de un plazo que en ningún caso podrá exceder el término de veinticuatro (24) horas, detallando las circunstancias y particularidades del caso e incluyendo toda la información disponible y relevante. En caso de corresponder, dentro de las veinticuatro (24) horas de la recepción de la referida notificación, el Desarrollador deberá proporcionar a Mercado Pago una copia de toda comunicación escrita emanada de entes gubernamentales y/o regulatorios y de toda demanda y/o petición presentada ante la justicia y/o ante entes gubernamentales y/o regulatorios, que guarden relación o se originen a raíz del incidente.
+Al momento de tomar conocimiento de un incidente de seguridad informática, el Desarrollador deberá notificarlo a Mercado Pago a través de [este formulario](https://docs.google.com/forms/d/e/1FAIpQLSeHWBN3reOqGm7H_ZqYtlLQBP9drp_KlekNH-4PAilGXru70g/viewform?usp=sf_link), de manera expeditiva, dentro de un plazo que en ningún caso podrá exceder el término de veinticuatro (24) horas, detallando las circunstancias y particularidades del caso e incluyendo toda la información disponible y relevante. En caso de corresponder, dentro de las veinticuatro (24) horas de la recepción de la referida notificación, el Desarrollador deberá proporcionar a Mercado Pago una copia de toda comunicación escrita emanada de entes gubernamentales y/o regulatorios y de toda demanda y/o petición presentada ante la justicia y/o ante entes gubernamentales y/o regulatorios, que guarden relación o se originen a raíz del incidente.
 
-<u>Medidas correctivas.</u> En el caso de ocurrencia de un incidente de seguridad informática, el Desarrollador deberá tomar aquellas acciones correctivas y resarcitorias que Mercado Pago pudiera razonablemente solicitar y que resulten habituales para las circunstancias del caso (como por ejemplo: cursar notificaciones de incumplimiento a los individuos afectados), y seguir las fases de detección, análisis y mitigación, y erradicación y recuperación; donde en cada una de las fases se notificará a Mercado Pago, a la casilla incidentes.seguridad@mercadolibre.com, el avance de las medidas implementadas, así como el análisis realizado que explique el alcance del incidente.
+<u>Medidas correctivas.</u> En el caso de ocurrencia de un incidente de seguridad informática, el Desarrollador deberá tomar aquellas acciones correctivas y resarcitorias que Mercado Pago pudiera razonablemente solicitar y que resulten habituales para las circunstancias del caso (como por ejemplo: cursar notificaciones de incumplimiento a los individuos afectados), y seguir las fases de detección, análisis y mitigación, y erradicación y recuperación; donde en cada una de las fases se notificará a Mercado Pago el avance de las medidas implementadas, así como el análisis realizado que explique el alcance del incidente.
 
 El Desarrollador deberá proceder a reembolsar a Mercado Pago de manera expeditiva y por pedido escrito de ésta (acompañado del correspondiente detalle) los costos y gastos razonablemente incurridos por Mercado Pago a los efectos de la implementación de medidas correctivas y resarcitorias adicionales, adoptadas a raíz de un Incidente.
 
@@ -344,7 +344,7 @@ Los fondos depositados en la cuenta de pago no constituyen depósitos en una ent
 ----[mlb]----
 # Termos e Condições para Desenvolvedores do Mercado Pago
 
-_Última modificação: 15/07/2021_
+_Última modificação: 20/12/2021_
 
 Estes termos e condições, incluindo os anexos (doravante denominados simplesmente como os “Termos e Condições”), constituem um contrato que determina as regras para que qualquer pessoa física e/ou jurídica possa participar como Desenvolvedor e possa acessar e/ou utilizar a API do Mercadopago.com Representações Ltda., CNPJ/ME nº 10.573.521/0001-91 (“Mercado Pago”) (“API”). O acesso e/ou uso da API pelos Desenvolvedores envolve sua aceitação destes Termos e Condições. 
  
@@ -568,9 +568,9 @@ O Desenvolvedor, sem caráter taxativo, deverá:
 
 **Incidentes**
 
-No momento de tomar conhecimento de um incidente de segurança cibernética, o Desenvolvedor deverá notificar o Mercado Pago através de seus e-mail incidentes.seguridad@mercadolibre.com, de maneira imediata, dentro de um prazo que não poderá ultrapassar, em nenhum caso, as vinte e quatro (24) horas, detalhando as circunstâncias e particularidades do caso e incluindo todas as informações disponíveis e relevantes. Se couber, dentro das vinte e quatro (24) horas do recebimento da referida notificação, o Desenvolvedor deverá fornecer ao Mercado Pago uma cópia de toda comunicação escrita emanada de entidades governamentais e/ou reguladoras e de toda demanda e/ou petição apresentada perante a Justiça e/ou junto a entidades governamentais e/ou reguladoras, que tenham relação ou sejam originadas a partir do incidente.
+No momento que tomar conhecimento de um incidente de segurança cibernética, o Desenvolvedor deverá notificar o Mercado Pago através [deste formulário](https://docs.google.com/forms/d/e/1FAIpQLSdnyVbe99JjH-_wafeFS7yI097YK0a2_1UcY4-agGR6gDAL0Q/viewform?usp=sf_link), de maneira imediata, dentro de um prazo que não poderá ultrapassar, em nenhum caso, as vinte e quatro (24) horas, detalhando as circunstâncias e particularidades do caso e incluindo todas as informações disponíveis e relevantes. Se couber, dentro das vinte e quatro (24) horas do recebimento da referida notificação, o Desenvolvedor deverá fornecer ao Mercado Pago uma cópia de toda comunicação escrita emanada de entidades governamentais e/ou reguladoras e de toda demanda e/ou petição apresentada perante a Justiça e/ou junto a entidades governamentais e/ou reguladoras, que tenham relação ou sejam originadas a partir do incidente.
 
-<u>Medidas corretivas</u>. Caso ocorra um incidente de segurança cibernética, o Desenvolvedor deverá adotar as ações de correção e de ressarcimento que o Mercado Pago pudesse razoavelmente solicitar e que resultem habituais para as circunstâncias do caso (por exemplo: encaminhar comunicações de incumprimento aos indivíduos afetados), e continuar com as fases de detecção, análise e mitigação, e erradicação e recuperação; sendo que, em cada uma das fases, o Mercado Pago deverá ser notificado ao e-mail incidentes.seguridad@mercadolibre.com sobre o avanço das medidas implementadas, bem como sobre a análise realizada que explique a abrangência do incidente.
+<u>Medidas corretivas</u>. Caso ocorra um incidente de segurança cibernética, o Desenvolvedor deverá adotar as ações de correção e de ressarcimento que o Mercado Pago pudesse razoavelmente solicitar e que resultem habituais para as circunstâncias do caso (por exemplo: encaminhar comunicações de incumprimento aos indivíduos afetados), e continuar com as fases de detecção, análise e mitigação, e erradicação e recuperação; sendo que, em cada uma das fases, o Mercado Pago deverá ser notificado sobre o avanço das medidas implementadas, bem como sobre a análise realizada que explique a abrangência do incidente.
 
 O Desenvolvedor deverá realizar o estorno ao Mercado Pago de maneira expedita e sob petição escrita deste (acompanhando o detalhe respectivo) dos custos e despesas razoavelmente realizados pelo Mercado Pago para efeitos da implementação de medidas de correção e de ressarcimento adicionais, adotadas em razão de um Incidente.
 
@@ -651,7 +651,7 @@ Os termos em maiúscula que não estejam definidos nestes Termos e Condições t
 ----[mlc]----
 # Términos y Condiciones para Desarrolladores de Mercado Pago
 
-_Última modificación: 03/12/2021_
+_Última modificación: 20/12/2021_
 
 Estos términos y condiciones, incluyendo sus anexos (los “Términos y Condiciones”), constituyen un contrato donde se establecen las reglas para que cualquier persona natural y/o jurídica pueda participar como Desarrollador (según se define más adelante) y pueda acceder y/o usar la API de Mercado Pago S.A., R.U.T. 76.516.950-K (“Mercado Pago”) (la “API”). Al acceder y/o usar la API, los Desarrolladores aceptan estos Términos y Condiciones.
 
@@ -907,9 +907,11 @@ El Desarrollador, sin carácter taxativo, deberá:
 
 (xi) Clasificar los datos en función a su criticidad, controles y tratamientos adecuados.
 
-<u>Incidentes.</u> Al momento de tomar conocimiento de un Incidente, el Desarrollador deberá notificarlo a Mercado Pago a a la casilla de mail incidentes.seguridad@mercadolibre.com, de manera expeditiva, dentro de un plazo que en ningún caso podrá exceder el término de veinticuatro (24) horas desde el Incidente, detallando las circunstancias y particularidades del caso e incluyendo toda la información disponible y relevante. En caso de corresponder, dentro de las veinticuatro (24) horas de la recepción de la referida notificación, el Desarrollador deberá proporcionar a Mercado Pago una copia de toda comunicación escrita emanada de entes gubernamentales y/o regulatorios y de toda demanda y/o petición presentada ante la justicia y/o ante entes gubernamentales y/o regulatorios, que guarden relación o se originen a raíz del Incidente.
+**Incidentes**
 
-<u>Medidas correctivas.</u> En el caso de ocurrencia de un Incidente, el Desarrollador deberá tomar aquellas acciones correctivas y resarcitorias que Mercado Pago pudiera razonablemente solicitar y que resulten habituales para las circunstancias del caso (como por ejemplo: cursar notificaciones de incumplimiento a los individuos afectados), y seguir las fases de detección, análisis y mitigación, y erradicación y recuperación; donde en cada una de las fases se notificará a Mercado Pago, a la casilla incidentes.seguridad@mercadolibre.com, el avance de las medidas implementadas, así como el análisis realizado que explique el alcance del Incidente.
+Al momento de tomar conocimiento de un incidente de seguridad informática, el Desarrollador deberá notificarlo a Mercado Pago a través de [este formulario](https://docs.google.com/forms/d/e/1FAIpQLSeHWBN3reOqGm7H_ZqYtlLQBP9drp_KlekNH-4PAilGXru70g/viewform?usp=sf_link), de manera expeditiva, dentro de un plazo que en ningún caso podrá exceder el término de veinticuatro (24) horas, detallando las circunstancias y particularidades del caso e incluyendo toda la información disponible y relevante. En caso de corresponder, dentro de las veinticuatro (24) horas de la recepción de la referida notificación, el Desarrollador deberá proporcionar a Mercado Pago una copia de toda comunicación escrita emanada de entes gubernamentales y/o regulatorios y de toda demanda y/o petición presentada ante la justicia y/o ante entes gubernamentales y/o regulatorios, que guarden relación o se originen a raíz del incidente.
+
+<u>Medidas correctivas.</u> En el caso de ocurrencia de un incidente de seguridad informática, el Desarrollador deberá tomar aquellas acciones correctivas y resarcitorias que Mercado Pago pudiera razonablemente solicitar y que resulten habituales para las circunstancias del caso (como por ejemplo: cursar notificaciones de incumplimiento a los individuos afectados), y seguir las fases de detección, análisis y mitigación, y erradicación y recuperación; donde en cada una de las fases se notificará a Mercado Pago el avance de las medidas implementadas, así como el análisis realizado que explique el alcance del incidente.
 
 El Desarrollador deberá proceder a reembolsar a Mercado Pago de manera expeditiva y por pedido escrito de ésta (acompañado del correspondiente detalle) los costos y gastos razonablemente incurridos por Mercado Pago a los efectos de la implementación de medidas correctivas y resarcitorias adicionales, adoptadas a raíz de un Incidente.
 
@@ -994,7 +996,7 @@ Los términos en mayúscula que no estén definidos en estos Términos y Condici
 ----[mco]----
 # Términos y Condiciones para Desarrolladores de Mercado Pago
 
-_Última modificación: 03/12/2021_
+_Última modificación: 20/12/2021_
 
 Estos términos y condiciones, incluyendo sus anexos (los “Términos y Condiciones”), constituyen un contrato donde se establecen las reglas para que cualquier persona natural y/o jurídica pueda participar como Desarrollador y pueda acceder y/o usar la API de Mercado Pago Colombia Ltda., N.I.T.: 900116319-8 (“Mercado Pago”) (la “API”). Al acceder y/o usar la API, los Desarrolladores aceptan estos Términos y Condiciones.
 
@@ -1256,9 +1258,9 @@ El Desarrollador, sin carácter taxativo, deberá:
 
 **Incidentes**
 
-Al momento de tomar conocimiento de un incidente de seguridad informática, el Desarrollador deberá notificarlo a Mercado Pago a a la casilla de mail incidentes.seguridad@mercadolibre.com, de manera expeditiva, dentro de un plazo que en ningún caso podrá exceder el término de veinticuatro (24) horas, detallando las circunstancias y particularidades del caso e incluyendo toda la información disponible y relevante. En caso de corresponder, dentro de las veinticuatro (24) horas de la recepción de la referida notificación, el Desarrollador deberá proporcionar a Mercado Pago una copia de toda comunicación escrita emanada de entes gubernamentales y/o regulatorios y de toda demanda y/o petición presentada ante la justicia y/o ante entes gubernamentales y/o regulatorios, que guarden relación o se originen a raíz del incidente.
+Al momento de tomar conocimiento de un incidente de seguridad informática, el Desarrollador deberá notificarlo a Mercado Pago a través de [este formulario](https://docs.google.com/forms/d/e/1FAIpQLSeHWBN3reOqGm7H_ZqYtlLQBP9drp_KlekNH-4PAilGXru70g/viewform?usp=sf_link), de manera expeditiva, dentro de un plazo que en ningún caso podrá exceder el término de veinticuatro (24) horas, detallando las circunstancias y particularidades del caso e incluyendo toda la información disponible y relevante. En caso de corresponder, dentro de las veinticuatro (24) horas de la recepción de la referida notificación, el Desarrollador deberá proporcionar a Mercado Pago una copia de toda comunicación escrita emanada de entes gubernamentales y/o regulatorios y de toda demanda y/o petición presentada ante la justicia y/o ante entes gubernamentales y/o regulatorios, que guarden relación o se originen a raíz del incidente.
 
-<u>Medidas correctivas.</u> En el caso de ocurrencia de un incidente de seguridad informática, el Desarrollador deberá tomar aquellas acciones correctivas y resarcitorias que Mercado Pago pudiera razonablemente solicitar y que resulten habituales para las circunstancias del caso (como por ejemplo: cursar notificaciones de incumplimiento a los individuos afectados), y seguir las fases de detección, análisis y mitigación, y erradicación y recuperación; donde en cada una de las fases se notificará a Mercado Pago, a la casilla incidentes.seguridad@mercadolibre.com, el avance de las medidas implementadas, así como el análisis realizado que explique el alcance del incidente.
+<u>Medidas correctivas.</u> En el caso de ocurrencia de un incidente de seguridad informática, el Desarrollador deberá tomar aquellas acciones correctivas y resarcitorias que Mercado Pago pudiera razonablemente solicitar y que resulten habituales para las circunstancias del caso (como por ejemplo: cursar notificaciones de incumplimiento a los individuos afectados), y seguir las fases de detección, análisis y mitigación, y erradicación y recuperación; donde en cada una de las fases se notificará a Mercado Pago el avance de las medidas implementadas, así como el análisis realizado que explique el alcance del incidente.
 
 El Desarrollador deberá proceder a reembolsar a Mercado Pago de manera expeditiva y por pedido escrito de ésta (acompañado del correspondiente detalle) los costos y gastos razonablemente incurridos por Mercado Pago a los efectos de la implementación de medidas correctivas y resarcitorias adicionales, adoptadas a raíz de un Incidente.
 
@@ -1342,7 +1344,7 @@ Los términos en mayúscula que no estén definidos en estos Términos y Condici
 ----[mpe]----
 # Términos y Condiciones para Desarrolladores de Mercado Pago
 
-_Última modificación: 03/12/2021_
+_Última modificación: 20/12/2021_
 
 **1.1 API:** Es la Interfaz de Programación de Aplicaciones de Mercado Pago y toda otra herramienta puesta a disposición de los Desarrolladores.
 
@@ -1588,9 +1590,9 @@ El Desarrollador, sin carácter taxativo, deberá:
 
 **Incidentes**
 
-Al momento de tomar conocimiento de un incidente de seguridad informática, el Desarrollador deberá notificarlo a Mercado Pago a a la casilla de mail incidentes.seguridad@mercadolibre.com, de manera expeditiva, dentro de un plazo que en ningún caso podrá exceder el término de veinticuatro (24) horas, detallando las circunstancias y particularidades del caso e incluyendo toda la información disponible y relevante. En caso de corresponder, dentro de las veinticuatro (24) horas de la recepción de la referida notificación, el Desarrollador deberá proporcionar a Mercado Pago una copia de toda comunicación escrita emanada de entes gubernamentales y/o regulatorios y de toda demanda y/o petición presentada ante la justicia y/o ante entes gubernamentales y/o regulatorios, que guarden relación o se originen a raíz del incidente.
+Al momento de tomar conocimiento de un incidente de seguridad informática, el Desarrollador deberá notificarlo a Mercado Pago a través de [este formulario](https://docs.google.com/forms/d/e/1FAIpQLSeHWBN3reOqGm7H_ZqYtlLQBP9drp_KlekNH-4PAilGXru70g/viewform?usp=sf_link), de manera expeditiva, dentro de un plazo que en ningún caso podrá exceder el término de veinticuatro (24) horas, detallando las circunstancias y particularidades del caso e incluyendo toda la información disponible y relevante. En caso de corresponder, dentro de las veinticuatro (24) horas de la recepción de la referida notificación, el Desarrollador deberá proporcionar a Mercado Pago una copia de toda comunicación escrita emanada de entes gubernamentales y/o regulatorios y de toda demanda y/o petición presentada ante la justicia y/o ante entes gubernamentales y/o regulatorios, que guarden relación o se originen a raíz del incidente.
 
-<u>Medidas correctivas.</u> En el caso de ocurrencia de un incidente de seguridad informática, el Desarrollador deberá tomar aquellas acciones correctivas y resarcitorias que Mercado Pago pudiera razonablemente solicitar y que resulten habituales para las circunstancias del caso (como por ejemplo: cursar notificaciones de incumplimiento a los individuos afectados), y seguir las fases de detección, análisis y mitigación, y erradicación y recuperación; donde en cada una de las fases se notificará a Mercado Pago, a la casilla incidentes.seguridad@mercadolibre.com, el avance de las medidas implementadas, así como el análisis realizado que explique el alcance del incidente.
+<u>Medidas correctivas.</u> En el caso de ocurrencia de un incidente de seguridad informática, el Desarrollador deberá tomar aquellas acciones correctivas y resarcitorias que Mercado Pago pudiera razonablemente solicitar y que resulten habituales para las circunstancias del caso (como por ejemplo: cursar notificaciones de incumplimiento a los individuos afectados), y seguir las fases de detección, análisis y mitigación, y erradicación y recuperación; donde en cada una de las fases se notificará a Mercado Pago el avance de las medidas implementadas, así como el análisis realizado que explique el alcance del incidente.
 
 El Desarrollador deberá proceder a reembolsar a Mercado Pago de manera expeditiva y por pedido escrito de ésta (acompañado del correspondiente detalle) los costos y gastos razonablemente incurridos por Mercado Pago a los efectos de la implementación de medidas correctivas y resarcitorias adicionales, adoptadas a raíz de un Incidente.
 
@@ -1670,7 +1672,7 @@ Los términos en mayúscula que no estén definidos en estos Términos y Condici
 ----[mlm]----
 # Términos y Condiciones para Desarrolladores de Mercado Pago
 
-_Última modificación: 03/12/2021_
+_Última modificación: 20/12/2021_
 
 Estos términos y condiciones, incluyendo sus anexos (los “Términos y Condiciones”), constituyen un contrato donde se establecen las reglas para que cualquier persona física y/o moral que funge como Desarrollador pueda acceder y/o usar la interfaz de programación de aplicaciones de la unidad de negocio “Mercado Pago” de MercadoLibre, S. de R.L de C.V. (“Mercado Pago”) (la “API”). Al acceder y/o usar la API, los Desarrolladores aceptan estos Términos y Condiciones.
 
@@ -1917,9 +1919,9 @@ El Desarrollador, sin carácter taxativo, deberá:
 
 **Incidentes**
 
-Al momento de tomar conocimiento de un incidente de seguridad informática, el Desarrollador deberá notificarlo a Mercado Pago a a la casilla de mail incidentes.seguridad@mercadolibre.com, de manera expeditiva, dentro de un plazo que en ningún caso podrá exceder el término de veinticuatro (24) horas, detallando las circunstancias y particularidades del caso e incluyendo toda la información disponible y relevante. En caso de corresponder, dentro de las veinticuatro (24) horas de la recepción de la referida notificación, el Desarrollador deberá proporcionar a Mercado Pago una copia de toda comunicación escrita emanada de entes gubernamentales y/o regulatorios y de toda demanda y/o petición presentada ante la justicia y/o ante entes gubernamentales y/o regulatorios, que guarden relación o se originen a raíz del incidente.
+Al momento de tomar conocimiento de un incidente de seguridad informática, el Desarrollador deberá notificarlo a Mercado Pago a través de [este formulario](https://docs.google.com/forms/d/e/1FAIpQLSeHWBN3reOqGm7H_ZqYtlLQBP9drp_KlekNH-4PAilGXru70g/viewform?usp=sf_link), de manera expeditiva, dentro de un plazo que en ningún caso podrá exceder el término de veinticuatro (24) horas, detallando las circunstancias y particularidades del caso e incluyendo toda la información disponible y relevante. En caso de corresponder, dentro de las veinticuatro (24) horas de la recepción de la referida notificación, el Desarrollador deberá proporcionar a Mercado Pago una copia de toda comunicación escrita emanada de entes gubernamentales y/o regulatorios y de toda demanda y/o petición presentada ante la justicia y/o ante entes gubernamentales y/o regulatorios, que guarden relación o se originen a raíz del incidente.
 
-<u>Medidas correctivas.</u> En el caso de ocurrencia de un incidente de seguridad informática, el Desarrollador deberá tomar aquellas acciones correctivas y resarcitorias que Mercado Pago pudiera razonablemente solicitar y que resulten habituales para las circunstancias del caso (como por ejemplo: cursar notificaciones de incumplimiento a los individuos afectados), y seguir las fases de detección, análisis y mitigación, y erradicación y recuperación; donde en cada una de las fases se notificará a Mercado Pago, a la casilla incidentes.seguridad@mercadolibre.com, el avance de las medidas implementadas, así como el análisis realizado que explique el alcance del incidente.
+<u>Medidas correctivas.</u> En el caso de ocurrencia de un incidente de seguridad informática, el Desarrollador deberá tomar aquellas acciones correctivas y resarcitorias que Mercado Pago pudiera razonablemente solicitar y que resulten habituales para las circunstancias del caso (como por ejemplo: cursar notificaciones de incumplimiento a los individuos afectados), y seguir las fases de detección, análisis y mitigación, y erradicación y recuperación; donde en cada una de las fases se notificará a Mercado Pago el avance de las medidas implementadas, así como el análisis realizado que explique el alcance del incidente.
 
 El Desarrollador deberá proceder a reembolsar a Mercado Pago de manera expeditiva y por pedido escrito de ésta (acompañado del correspondiente detalle) los costos y gastos razonablemente incurridos por Mercado Pago a los efectos de la implementación de medidas correctivas y resarcitorias adicionales, adoptadas a raíz de un Incidente.
 
@@ -2001,7 +2003,7 @@ Los términos en mayúscula que no estén definidos en estos Términos y Condici
 ----[mlu]----
 # Términos y Condiciones para Desarrolladores de Mercado Pago
 
-_Última modificación: 03/12/2021_
+_Última modificación: 20/12/2021_
 
 Estos términos y condiciones, incluyendo sus anexos (los “Términos y Condiciones”), constituyen un contrato donde se establecen las reglas para que cualquier persona física y/o jurídica pueda participar como Desarrollador y pueda acceder y/o usar la API de la unidad de negocio “Mercado Pago” de Deremate.com de Uruguay S.R.L., R.U.T: 214111700011 (“Mercado Pago”) (la “API”). Al acceder y/o usar la API, los Desarrolladores aceptan estos Términos y Condiciones.
 
@@ -2252,9 +2254,9 @@ El Desarrollador, sin carácter taxativo, deberá:
 
 **Incidentes**
 
-Al momento de tomar conocimiento de un incidente de seguridad informática, el Desarrollador deberá notificarlo a Mercado Pago a a la casilla de mail incidentes.seguridad@mercadolibre.com, de manera expeditiva, dentro de un plazo que en ningún caso podrá exceder el término de veinticuatro (24) horas, detallando las circunstancias y particularidades del caso e incluyendo toda la información disponible y relevante. En caso de corresponder, dentro de las veinticuatro (24) horas de la recepción de la referida notificación, el Desarrollador deberá proporcionar a Mercado Pago una copia de toda comunicación escrita emanada de entes gubernamentales y/o regulatorios y de toda demanda y/o petición presentada ante la justicia y/o ante entes gubernamentales y/o regulatorios, que guarden relación o se originen a raíz del incidente.
+Al momento de tomar conocimiento de un incidente de seguridad informática, el Desarrollador deberá notificarlo a Mercado Pago a través de [este formulario](https://docs.google.com/forms/d/e/1FAIpQLSeHWBN3reOqGm7H_ZqYtlLQBP9drp_KlekNH-4PAilGXru70g/viewform?usp=sf_link), de manera expeditiva, dentro de un plazo que en ningún caso podrá exceder el término de veinticuatro (24) horas, detallando las circunstancias y particularidades del caso e incluyendo toda la información disponible y relevante. En caso de corresponder, dentro de las veinticuatro (24) horas de la recepción de la referida notificación, el Desarrollador deberá proporcionar a Mercado Pago una copia de toda comunicación escrita emanada de entes gubernamentales y/o regulatorios y de toda demanda y/o petición presentada ante la justicia y/o ante entes gubernamentales y/o regulatorios, que guarden relación o se originen a raíz del incidente.
 
-<u>Medidas correctivas.</u> En el caso de ocurrencia de un incidente de seguridad informática, el Desarrollador deberá tomar aquellas acciones correctivas y resarcitorias que Mercado Pago pudiera razonablemente solicitar y que resulten habituales para las circunstancias del caso (como por ejemplo: cursar notificaciones de incumplimiento a los individuos afectados), y seguir las fases de detección, análisis y mitigación, y erradicación y recuperación; donde en cada una de las fases se notificará a Mercado Pago, a la casilla incidentes.seguridad@mercadolibre.com, el avance de las medidas implementadas, así como el análisis realizado que explique el alcance del incidente.
+<u>Medidas correctivas.</u> En el caso de ocurrencia de un incidente de seguridad informática, el Desarrollador deberá tomar aquellas acciones correctivas y resarcitorias que Mercado Pago pudiera razonablemente solicitar y que resulten habituales para las circunstancias del caso (como por ejemplo: cursar notificaciones de incumplimiento a los individuos afectados), y seguir las fases de detección, análisis y mitigación, y erradicación y recuperación; donde en cada una de las fases se notificará a Mercado Pago el avance de las medidas implementadas, así como el análisis realizado que explique el alcance del incidente.
 
 El Desarrollador deberá proceder a reembolsar a Mercado Pago de manera expeditiva y por pedido escrito de ésta (acompañado del correspondiente detalle) los costos y gastos razonablemente incurridos por Mercado Pago a los efectos de la implementación de medidas correctivas y resarcitorias adicionales, adoptadas a raíz de un Incidente.
 
