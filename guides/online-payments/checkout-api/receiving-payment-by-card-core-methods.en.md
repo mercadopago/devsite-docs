@@ -4,7 +4,7 @@ Integrating Mercado Pago's Checkout API for cards allows you to offer a complete
 
 Use our [sample projects](#bookmark_sample_projects) for a complete integration. You can adapt them according to your needs.
 
-## How does it work?
+## How it works
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-en.png)
 
@@ -21,6 +21,10 @@ With our Mercado Pago Checkout API, you should take into account two aspects: da
 
 Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
 
+> NOTE
+>
+> Note
+>
 > For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
 
 <br>

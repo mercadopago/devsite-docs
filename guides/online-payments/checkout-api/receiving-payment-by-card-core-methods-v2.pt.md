@@ -7,7 +7,7 @@
 
 [TXTSNIPPET][/guides/snippets/test-integration/receiving-payment-by-card]
 
-## Como funciona?
+## Funcionamento
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-v2-pt.png)
 
