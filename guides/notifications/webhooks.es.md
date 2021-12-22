@@ -10,7 +10,7 @@ En esta documentación te explicaremos la configuración necesaria para recibir 
 
 ## Configuración a través del Dashboard
 
-A continuación explicaremos cómo indicar las URL que serán notificadas y cómo configurar los eventos para los que se recibirán notificaciones.
+A continuación explicaremos cómo indicar las URLs que serán notificadas y cómo configurar los eventos para los que se recibirán notificaciones.
 
 ![webhooks](/images/notifications/webhook_es.png)
 

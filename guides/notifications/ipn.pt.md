@@ -8,21 +8,21 @@ Nessa documentação explicaremos as configurações necessárias para o recebim
 
 ## Configuração através do Dashboard
  
-Abaixo explicaremos como indicar os URLs que serão notificados e como configurar os eventos dos quais se receberá a notiticação.
+Abaixo explicaremos como indicar as URLs que serão notificados e como configurar os eventos dos quais se receberá a notiticação.
 
 ![ipn](/images/notifications/ipn__pt.png)
 
 1. Acesse a tela de [Notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
-2. Em seguida, configure o **URL** de **produção** no qual serão recebidas as notificações.
-3. Você também poderá experimentar e testar se o URL indicado está recebendo as notificações corretamente, podendo verificar a solicitação, a resposta dada pelo servidor e a descrição do evento.
+2. Em seguida, configure a **URL** de **produção** no qual serão recebidas as notificações.
+3. Você também poderá experimentar e testar se a URL indicado está recebendo as notificações corretamente, podendo verificar a solicitação, a resposta dada pelo servidor e a descrição do evento.
 4. Caso seja necessário identificar múltiplas contas, no final da URL indicada você poderá indicar o parâmetro `?cliente=(nomedovendedor) endpoint` para identificar os vendedores.
 5. Selecione os **eventos** dos quais você receberá notificações em formato `json` utilizando `HTTP POST` para a URL especificada anteriormente. Notificamos eventos relacionados aos seus pedidos (`merchant_orders`), estornos recebidos (`chargebacks`), pagamentos recebidos (`payment`) ou tentativas de pagamento (`point_integration_ipn`).
 
 ## Configuração durante a criação de pagamentos
 
-É possível configurar o url de notificação de modo mais específico para cada pagamento utilizando o campo `notification_url`. Veja abaixo como realizar essa configuração com uso dos SDKs.
+É possível configurar a URL de notificação de modo mais específico para cada pagamento utilizando o campo `notification_url`. Veja abaixo como realizar essa configuração com uso dos SDKs.
 
-1. No campo `notificaction_url`, indique o URL do qual serão recebidas as notificações como exemplificado abaixo.
+1. No campo `notificaction_url`, indique a URL do qual serão recebidas as notificações como exemplificado abaixo.
 
 [[[
 ```php
@@ -263,7 +263,7 @@ curl -X POST \
 ?>
 ```
 
-3. Feitas as configurações, o Mercado Pago notificará esse URL com dois parâmetros a cada vez que um recurso for criado, ou atualizado:
+3. Feitas as configurações, o Mercado Pago notificará essa URL com dois parâmetros a cada vez que um recurso for criado, ou atualizado:
  
 | Campo | Descrição |
 | --- | --- |

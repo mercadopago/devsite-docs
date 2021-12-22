@@ -8,13 +8,13 @@ En esta documentación te explicaremos la configuración necesaria para recibir 
 
 ## Configuración del Dashboard
  
-A continuación explicaremos cómo indicar las URL que serán notificadas y cómo configurar los eventos para los que se recibirán notificaciones.
+A continuación explicaremos cómo indicar las URLs que serán notificadas y cómo configurar los eventos para los que se recibirán notificaciones.
 
 ![ipn](/images/notifications/ipn__es.png)
 
 1. Accede a la pantalla [Notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
 2. A continuación, configura la **URL** de **producción** donde se recibirán las notificaciones.
-3. También podrás experimentar y probar si el URL indicado está recibiendo notificaciones correctamente, pudiendo verificar la solicitud, la respuesta dada por el servidor y la descripción del evento.
+3. También podrás experimentar y probar si la URL indicado está recibiendo notificaciones correctamente, pudiendo verificar la solicitud, la respuesta dada por el servidor y la descripción del evento.
 4. Si necesitas identificar varias cuentas, al final de la URL indicada puedes especificar el parámetro `?cliente=(nombredelvendedor) endpoint` para identificar a los vendedores.
 5. Selecciona los **eventos** de los que recibirás notificaciones en formato `json` usando `HTTP POST` a la URL especificada anteriormente. Te notificamos de los eventos relacionados con tus pedidos (`merchant_orders`), devoluciones de cargo recibidas (`chargebacks`), pagos recibidos (`payment`) o intentos de pago (`point_integration_ipn`).
  
@@ -22,7 +22,7 @@ A continuación explicaremos cómo indicar las URL que serán notificadas y cóm
 
 Es posible configurar la URL de notificación de forma más específica para cada pago utilizando el campo `notification_url`. Ve a continuación cómo hacer esto usando los SDK.
 
-1. En el campo `notification_url`, indica el URL desde lo que se recibirán las notificaciones, como se muestra abajo.
+1. En el campo `notification_url`, indica la URL desde lo que se recibirán las notificaciones, como se muestra abajo.
 
 [[[
 ```php

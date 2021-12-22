@@ -10,15 +10,15 @@ Nessa documentação explicaremos as configurações necessárias para o recebim
 
 ## Configuração através do Dashboard
 
-Abaixo explicaremos como indicar os URLs que serão notificados e como configurar os eventos dos quais se receberá a notiticação.
+Abaixo explicaremos como indicar as URLs que serão notificados e como configurar os eventos dos quais se receberá a notiticação.
 
 ![webhooks](/images/notifications/webhooks_pt.png)
 
 1. Caso ainda não tenha, crie uma aplicação na página inicial de seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
-2. Com a aplicação criada, acesse a aba Notificações Webhooks em seu Dashboard e configure os [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) de **produção** e **teste** da qual serão recebidas as notificações. 
+2. Com a aplicação criada, acesse a aba Notificações Webhooks em seu Dashboard e configure as [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) de **produção** e **teste** da qual serão recebidas as notificações. 
 3. Você também poderá experimentar e testar se a URL indicada está recebendo as notificações corretamente, podendo verificar a solicitação, a resposta dada pelo servidor e a descrição do evento.
 4. Caso seja necessário identificar múltiplas contas, no final do URL indicada você poderá indicar o parâmetro `?cliente=(nomedovendedor) endpoint` para identificar os vendedores.
-5. Em seguida, selecione os **eventos** dos quais você receberá notificações em formato `json` através de um `HTTP POST` para o URL especificada anteriormente. Um evento é qualquer tipo de atualização no objeto relatado, incluindo alterações de status ou atributo. Veja na tabela abaixo os eventos que poderão ser configurados.
+5. Em seguida, selecione os **eventos** dos quais você receberá notificações em formato `json` através de um `HTTP POST` para a URL especificada anteriormente. Um evento é qualquer tipo de atualização no objeto relatado, incluindo alterações de status ou atributo. Veja na tabela abaixo os eventos que poderão ser configurados.
 
 | Tipo de notificação | Ação | Descrição |
 | :--- | :--- | :--- |
@@ -35,7 +35,7 @@ Abaixo explicaremos como indicar os URLs que serão notificados e como configura
 
 ## Configuração durante a criação de pagamentos
 
-É possível configurar a url de notificação de modo mais específico, para cada pagamento utilizando o campo `notification_url`. Veja abaixo como fazer isso com uso dos SDKs.
+É possível configurar a URL de notificação de modo mais específico, para cada pagamento utilizando o campo `notification_url`. Veja abaixo como fazer isso com uso dos SDKs.
 
 1. No campo `notificaction_url`, indique a URL da qual serão recebidas as notificações como exemplificado abaixo.
 
@@ -287,7 +287,7 @@ Isso indica que foi criado o pagamento **999999999** para o usuário **44444** e
 | Atributo | Descrição |
 | --- | --- |
 | **id** | ID de notificação |
-| **live_mode** | Indica se o URL informado é valido |
+| **live_mode** | Indica se a URL informado é valido |
 | **type** | Tipo de notificação recebida (payments, mp-connect, subscription, etc) |
 | **date_created** | Data de criação do recurso (payments, mp-connect, subscription etc) |
 | **application_id** | ID da aplicação que recebeu o recurso (payments, mp-connect, subscription etc) |
