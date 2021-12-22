@@ -287,7 +287,7 @@ Isso indica que foi criado o pagamento **999999999** para o usuário **44444** e
 | Atributo | Descrição |
 | --- | --- |
 | **id** | ID de notificação |
-| **live_mode** | Indica se a URL informado é valido |
+| **live_mode** | Indica se a URL informada é valida |
 | **type** | Tipo de notificação recebida (payments, mp-connect, subscription, etc) |
 | **date_created** | Data de criação do recurso (payments, mp-connect, subscription etc) |
 | **application_id** | ID da aplicação que recebeu o recurso (payments, mp-connect, subscription etc) |
