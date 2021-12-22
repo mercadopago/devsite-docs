@@ -1,8 +1,8 @@
 ----[mlb]----
-# Integre Checkout Transparente para pagamentos com cartão
+# Integre o Checkout Transparente para pagamentos com cartão
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-# Integre Checkout API para pagamentos com cartão
+# Integre o Checkout API para pagamentos com cartão
 ------------
 
 [TXTSNIPPET][/guides/snippets/test-integration/receiving-payment-by-card]
@@ -16,14 +16,14 @@
 <br>
 
 ----[mlb]----
-Ao usar nosso Checkout Transparente do Mercado Pago, é importante ter em conta duas instâncias: a de captura de dados e envio de confirmação de pagamento.
+Ao utilizar o Checkout Transparente do Mercado Pago, é importante ter em conta duas instâncias: a de captura de dados e a de envio de confirmação de pagamento.
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-Ao usar nosso Checkout API do Mercado Pago, é importante ter em conta duas instâncias: a de captura de dados e envio de confirmação de pagamento.
+Ao utilizar o Checkout API do Mercado Pago, é importante ter em conta duas instâncias: a de captura de dados e a de envio de confirmação de pagamento.
 ------------
 
-1. Primeiro, é preciso um frontend para coletar os dados do cartão e gerar um token de segurança com a informação para poder criar o pagamento.
-2. Segundo, um backend que tome o token gerado e os dados do pagamento, como por exemplo o valor e o item, e possa confirmar e efetuar o pagamento.
+1. É preciso um frontend para coletar os dados do cartão e gerar um token de segurança com a informação para poder criar o pagamento.
+2. Tenha um backend que tome o token gerado e os dados do pagamento, como, por exemplo, o valor e o item, além de poder confirmar e efetuar o pagamento.
 
 Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/previous-requirements#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
 
@@ -35,7 +35,7 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 >
 > h2
 >
-> Capture os dados de cartão
+> Capture os dados do cartão
 
 Para criar um pagamento é necessário fazer a captura dos dados do cartão através do navegador do comprador. Por questões de segurança, **é muito importante que os dados nunca cheguem aos seus servidores**.
 
@@ -45,10 +45,9 @@ Para capturar os dados do cartão, siga estas etapas:
 2. [Adicione o formulário de pagamento](#bookmark_2._adicione_o_formulário_de_pagamento)
 3. [Integre o formulário com a biblioteca MercadoPago.js](#bookmark_3._integre_o_formulário_com_a_biblioteca_mercadopago.js)
 
-
 ### 1. Inclua e configure a biblioteca MercadoPago.js
 
-**Utilize nossa biblioteca oficial para acessar a API de Mercado Pago** desde seu frontend para coletar os dados de forma segura e configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da forma a seguir:
+**Utilize nossa biblioteca oficial para acessar a API de Mercado Pago** desde seu frontend para coletar os dados de forma segura e configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
 
 ```html
 <body>
@@ -67,21 +66,21 @@ Se ainda não possui conta para ver suas credenciais, [registre-se](https://www.
 >
 > Nota
 >
-> Esta documentação utiliza a nova versão da biblioteca. Para ver a versão anterior, vá para a [seção de Integrar pagamentos com cartão com MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v1/receiving-payment-by-card).
+> Esta documentação utiliza a nova versão da biblioteca. Para ver a versão anterior, vá para a [seção de Integrar pagamentos com cartão com o MercadoPago.js V1](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v1/receiving-payment-by-card).
 
-A informação do cartão será convertida em um token para que envie os dados aos seus servidores de modo seguro.
+A informação do cartão será convertida em um token para que os dados sejam enviados aos seus servidores de forma segura.
 
 ### 2. Adicione o formulário de pagamento
 
-Para capturar os dados do cartão, primeiro deve oferecer um formulário para carregar toda a informação.
+Para capturar os dados do cartão, primeiro você deve oferecer um formulário para carregar toda a informação.
 
-Com a **funcionalidade CardForm da biblioteca MercadoPago.js V2**, pode obter e validar todos os dados necessários, como identificar o tipo e nome do meio de pagamento, o banco emissor, o número de prestações e mais.
+Com a **funcionalidade CardForm da biblioteca MercadoPago.js V2**, você pode obter e validar todos os dados necessários, como identificar o tipo e o nome do meio de pagamento, o banco emissor, o número de prestações e mais.
 
-CardForm permite você ter uma implementação segura e uma correta tokenização da informação do cartão.
+CardForm permite que você tenha uma implementação segura e uma correta tokenização da informação do cartão.
 
 Para os campos PCI (**Card Number**, **Expiration Month**, **Expiration Year** e **CVV**) deve-se criar `divs` que servirão de containers para os `iFrames`.
 
-Utilize o formulário seguinte e adicione os estilos que desejar.
+Utilize o formulário abaixo e adicione os estilos que desejar.
 
 
 ```html
@@ -104,17 +103,16 @@ Utilize o formulário seguinte e adicione os estilos que desejar.
 
 > GIT
 > 
-> Referencia técnica
+> Referência técnica
 > 
-> Procure informações acerca dos distintos atributos nas [referências técnicas](https://github.com/mercadopago/sdk-js).
+> Procure mais informações sobre os diferentes atributos nas [referências técnicas](https://github.com/mercadopago/sdk-js).
 
 
 ### 3. Integre o formulário com a biblioteca MercadoPago.js
 
+Para inicializar o CardForm, deve-se relacionar o ID de cada campo do formulário com os atributos correspondentes. A biblioteca será responsável pelo preenchimento, obtenção e validação de todos os dados necessários na hora de confirmar o pagamento.
 
-Agora, para inicializar o CardForm, deve relacionar a ID de cada campo do formulário com os atributos correspondentes. A biblioteca será responsável pelo preenchimento, obtenção e validação de todos os dados necessários na hora de confirmar o pagamento.
-
-Para que o IFrame seja renderizado, é necessário passar a opção `iframe` com valor `true` no objeto de parâmetro recebido pelo cardForm. Também é possível passar o `style` para os elementos.
+Para que o IFrame seja renderizado, é necessário passar a opção `iframe` com valor `true` no objeto de parâmetro recebido pelo cardForm. Além disso, também é possível passar o `style` para os elementos.
 
 ```javascript
 // Step #3
