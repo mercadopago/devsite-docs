@@ -1,3 +1,3 @@
-Por último, é importante que esteja sempre informado sobre a criação nos novos pagamentos e as atualizações dos seus estados. Por exemplo se foram aprovados, rejeitados ou caso encontram-se pendentes.
+Por último, é importante que você esteja sempre informado sobre a criação de novos pagamentos e as atualizações dos seus estados. Por exemplo, se foram aprovados, rejeitados ou se ainda estão pendentes.
 
 [Configure notificações webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks) ou [notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn).

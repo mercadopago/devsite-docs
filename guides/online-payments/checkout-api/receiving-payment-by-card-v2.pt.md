@@ -250,17 +250,17 @@ A opção de callbacks aceita diferentes funções que são ativadas em diversos
 
 > GIT
 > 
-> Referencia técnica
+> Referência técnica
 > 
-> Obtenha mais informações acerca dos callbacks nas [referências técnicas](https://github.com/mercadopago/sdk-js).
+> Obtenha mais informações sobre os callbacks nas [referências técnicas](https://github.com/mercadopago/sdk-js).
 
-Ao enviar o formulário, geramos um token como uma representação segura dos dados do cartão. Você pode acessar este token usando a função `getCardFormData`, como mostramos no exemplo anterior no callback `onSubmit`. Também armazenaremos o token em um `input` oculto dentro do seu formulário, que chamaremos de `MPHiddenInputToken`.
+Ao enviar o formulário, geramos um token como uma representação segura dos dados do cartão. Você pode acessar este token usando a função `getCardFormData`, como mostramos anteriormente no callback `onSubmit`. Também armazenaremos o token em um `input` oculto dentro do seu formulário e o chamaremos de `MPHiddenInputToken`.
 
 > WARNING
 >
 > Importante
 >
-> Tenha em conta que o token tem uma validade de 7 dias e só pode ser usado uma única vez.
+> Tenha em conta que o token tem validade de 7 dias e só pode ser utilizado uma única vez.
 
 <br>
 <span></span>
@@ -273,11 +273,11 @@ Ao enviar o formulário, geramos um token como uma representação segura dos da
 
 Para continuar o processo de pagamento ao Mercado Pago, é necessário que seu backend possa receber a informação do formulário com o token gerado e os dados completos.
 
-Segundo o exemplo, seu backend deveria disponibilizar um endpoint `/process_payment`, para receber ali todos os dados depois de realizar a ação submit.
+Segundo o exemplo, seu backend deveria disponibilizar um endpoint `/process_payment` para receber todos os dados depois de realizar a ação submit.
 
-Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs. Os campos mínimos requeridos para enviar são: `token`, `transaction_amount`, `installments`, `payment_method_id` e o `payer.email`.
+Estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs. Os campos mínimos requeridos para enviar são: `token`, `transaction_amount`, `installments`, `payment_method_id` e o `payer.email`.
 
-Tenha em conta que para que esse passo funcione é necessário que configure sua [chave privada]([FAKER][CREDENTIALS][URL]) e que para interagir com nossas APIs recomendamos utilizar o [SDK oficial do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/previous-requirements#bookmark__instale_o_sdk_do_mercado_pago).
+Tenha em conta que para que esse passo funcione é necessário que configure sua [chave privada]([FAKER][CREDENTIALS][URL]) e que, para interagir com nossas APIs, recomendamos utilizar o [SDK oficial do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/previous-requirements#bookmark__instale_o_sdk_do_mercado_pago).
 
 [[[
 ```php
@@ -533,14 +533,14 @@ curl -X POST \
 >
 > Checkout Transparente
 >
-> Disponibilizamos [exemplos completos de integração](https://drive.google.com/file/d/12gSCPLfZCE36iKFbM4BTUwf6lnM7lVEL/view?usp=sharing) para que você possa fazer o download imediatamente.
+> Disponibilizamos [exemplos completos de integração](https://drive.google.com/file/d/12gSCPLfZCE36iKFbM4BTUwf6lnM7lVEL/view?usp=sharing) para que você possa fazer o download.
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 > NOTE
 >
 > Checkout API
 >
-> Disponibilizamos [exemplos completos de integração](https://drive.google.com/file/d/12gSCPLfZCE36iKFbM4BTUwf6lnM7lVEL/view?usp=sharing) para que você possa fazer o download imediatamente.
+> Disponibilizamos [exemplos completos de integração](https://drive.google.com/file/d/12gSCPLfZCE36iKFbM4BTUwf6lnM7lVEL/view?usp=sharing) para que você possa fazer o download.
 ------------
 
 <span></span>
@@ -549,7 +549,7 @@ curl -X POST \
 >
 > Formulário de pagamento
 >
-> Se você deseja implementar seu servidor com alguma outra tecnologia, te deixamos um [exemplo completo do formulário de pagamento](https://github.com/mercadopago/card-payment-sample) no GitHub para que possa baixar.
+> Se você deseja implementar seu servidor com alguma outra tecnologia, te deixamos um [exemplo completo do formulário de pagamento](https://github.com/mercadopago/card-payment-sample) no GitHub para que possa fazer o download.
 
 ---
 ### Próximos passos
@@ -558,7 +558,7 @@ curl -X POST \
 >
 > Teste sua integração
 >
-> Revise que esteja tudo bem com sua integração com os usuários de teste.
+> Confirme que está tudo bem com a sua integração e com os usuários de teste.
 >
 > [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/testing)
 
@@ -567,7 +567,7 @@ curl -X POST \
 >
 > Referências de API
 >
-> Encontre toda informação necessária para interagir com nossas APIs.
+> Encontre toda a informação necessária para interagir com nossas APIs.
 >
 > [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference)
 ------------
@@ -577,7 +577,7 @@ curl -X POST \
 >
 > Integrar outros meios de pagamento
 >
-> Conheça todas as opções de pagamentos disponíveis e como oferecê-las.
+> Conheça todas as opções de pagamentos disponíveis e veja como oferecê-las.
 >
 > [Integrar outros meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways)
 ------------
