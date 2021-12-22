@@ -1,8 +1,8 @@
 ----[mlb]----
-# Integre Checkout Transparente para pagamentos com cartão
+# Integre o Checkout Transparente para pagamentos com cartão
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-# Integre Checkout API para pagamentos com cartão
+# Integre o Checkout API para pagamentos com cartão
 ------------
 
 [TXTSNIPPET][/guides/snippets/test-integration/receiving-payment-by-card]
@@ -11,19 +11,19 @@
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-v2-pt.png)
 
-> Caso deseje realizar um fluxo de pagamento automatizado, recomendamos você [utilizar a funcionalidade CardForm de MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card-v2).
+> Caso deseje realizar um fluxo de pagamento automatizado, recomendamos você [utilizar a funcionalidade CardForm do MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card-v2).
 
 <br>
 
 ----[mlb]----
-Ao usar nosso Checkout Transparente do Mercado Pago, é importante ter em conta duas instâncias: a de captura de dados e envio de confirmação de pagamento.
+Ao utilizar o Checkout Transparente do Mercado Pago, é importante ter em conta duas instâncias: a de captura de dados e a de envio de confirmação de pagamento.
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-Ao usar nosso Checkout API do Mercado Pago, é importante ter em conta duas instâncias: a de captura de dados e envio de confirmação de pagamento.
+Ao utilizar nosso Checkout API do Mercado Pago, é importante ter em conta duas instâncias: a de captura de dados e a de envio de confirmação de pagamento.
 ------------
 
-1. Primeiro, é preciso um frontend para coletar os dados do cartão e gerar um token de segurança com a informação para poder criar o pagamento.
-2. Segundo, um backend que tome o token gerado e os dados do pagamento, como por exemplo o valor e o item, e possa confirmar e efetuar o pagamento.
+1. É preciso um frontend para coletar os dados do cartão e gerar um token de segurança com a informação para que se possa criar o pagamento.
+2. Tenha um backend que colete o token gerado e os dados do pagamento, como, por exemplo, o valor e o item, além de poder confirmar e efetuar o pagamento.
 
 Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/previous-requirements#bookmark_sempre_utilize_nossas_bibliotecas) para poder coletar os dados sensíveis dos seus usuários de maneira segura.
 
@@ -56,13 +56,13 @@ Para capturar os dados do cartão, siga estas etapas:
 
 ### 1. Inclua a biblioteca MercadoPago.js
 
-**Use nossa biblioteca oficial para acessar a API de Mercado Pago** no seu frontend e coletar os dados de forma segura.
+**Utilize nossa biblioteca oficial para acessar a API de Mercado Pago** no seu frontend e coletar os dados de forma segura.
 
 ```html
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 ```
 
-A informação do cartão será convertida em um token para que envie os dados aos seus servidores de modo seguro.
+A informação do cartão será convertida em um token para que os dados sejam enviados aos seus servidores de forma segura.
 
 ### 2. Adicione o formulário de pagamento
 
@@ -74,9 +74,9 @@ Para realizar a captura de dados sensíveis dos cartões dos seus clientes, **é
 >
 > Os campos seguros são `divs` porque as entradas verdadeiras estarão seguras dentro do iframe.
 
-Pode adicionar todo o que precisar, alterar o atributo `label` sugerido e somar-lhe o estilo que desejar sem problemas.
+Você pode adicionar tudo o que precisar, alterar o atributo `label` sugerido e inserir o estilo que desejar sem problemas.
 
-No exemplo a seguir, assume-se que os dados `transactionAmount` e `description` foram obtidos no passo prévio onde o cliente selecionou o produto ou serviço que deseja pagar.
+No exemplo a seguir, assume-se que os dados `transactionAmount` e `description` foram obtidos no passo anterior onde o cliente selecionou o produto ou serviço que deseja pagar.
 
 ```html
 <form id="form-checkout" method="POST" action="/process_payment">
@@ -114,7 +114,7 @@ No exemplo a seguir, assume-se que os dados `transactionAmount` e `description` 
 ### 3. Configure sua chave pública
 
 
-Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
+Configure a sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
 
 ```javascript
  
@@ -135,7 +135,7 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 
 Nesse passo são criados os campos seguros (cardNumber, expirationDate e CVV) com **Fields**, hospedados pelo **Mercado Pago**, e que fazem uso do elemento `HTML iframe`.
 
-O segundo parâmetro são opções, e pode receber valor para **placeholder** e **style**. O valor para **placeholder** deve ser uma *string*, enquanto **style** é um *objeto* com as chaves sendo o nome da propriedade CSS e os valores uma string com a estilização. Valores inválidos serão ignorados, com a exibição de um warning no console.
+O segundo parâmetro são as opções e pode receber valor para **placeholder** e **style**. O valor para **placeholder** deve ser uma *string*, enquanto **style** é um *objeto* com as chaves sendo o nome da propriedade CSS e os valores uma string com a estilização. Valores inválidos serão ignorados com a exibição de um warning no console.
 
 Para mais detalhes sobre os estilos permitidos, [consulte a referência técnica](https://github.com/lucmantovani/sdk-js/tree/feature/fields-docs#style).
 
@@ -175,7 +175,7 @@ Você deve obter os seguintes dados:
 
 Um dos campos obrigatórios é o tipo de documento. Utilize a lista de documentos no momento de completar os dados.
 
-Incluindo o elemento do tipo `select` com o id: `form-checkout__docType` que está no formulário, poderá preencher automaticamente as opções disponíveis quando chamar a função a seguir:
+Incluindo o elemento do tipo `select` com o id `form-checkout__docType` que está no formulário, será possível preencher automaticamente as opções disponíveis quando chamar a função a seguir:
 
 ```javascript
 // Step #getIdentificationTypes
@@ -219,7 +219,7 @@ function createSelectOptions(elem, options, labelsAndKeys = { label : "name", va
 
 ------------
 
-#### Obtenha o método de pagamento do cartão
+#### Obtenha o meio de pagamento do cartão
 
 Valide os dados dos seus clientes enquanto são preenchidos para evitar erros e oferecer corretamente as parcelas disponíveis. Use o seguinte código de exemplo para identificar o meio de pagamento com os primeiros 6 dígitos do cartão.
 
@@ -324,14 +324,14 @@ const formElement = document.getElementById('form-checkout');
 
 O método `createCardToken` retornará um token com a representação segura do cartão.
 
-Tomaremos o token ID da resposta e a salvaremos em um atributo oculto que denominaremos `MPHiddenInputToken`, para depois enviar o formulário para seus servidores.
+Receberemos o token ID da resposta e ao salvaremos em um atributo oculto denominado `MPHiddenInputToken` para depois enviar o formulário aos seus servidores.
 
 
 > WARNING
 >
 > Importante
 >
-> Tenha em conta que o token tem uma validade de 7 dias e só pode ser usado uma única vez.
+> Tenha em conta que o token tem uma validade de 7 dias e só pode ser utilizado uma única vez.
 
 <br>
 <span></span>
@@ -344,11 +344,11 @@ Tomaremos o token ID da resposta e a salvaremos em um atributo oculto que denomi
 
 Para continuar o processo de pagamento ao Mercado Pago, é necessário que seu backend possa receber a informação do formulário com o token gerado e os dados completos.
 
-Segundo o exemplo dado, seu backend devería diponibilizar um endpoint `/process_payment`, que foi definido no atributo `action` do formulário, para receber nele todos os dados assim que realizar a ação `submit`.
+Segundo o exemplo dado, seu backend deveria disponibilizar um endpoint `/process_payment`, que foi definido no atributo `action` do formulário, para receber nele todos os dados assim que realizar a ação `submit`.
 
 Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs. Os campos mínimos requeridos para enviar são: `token`, `transaction_amount`, `installments`, `payment_method_id` e o `payer.email`.
 
-Tenha em conta que para que esse passo funcione é necessário que configure sua [chave privada]([FAKER][CREDENTIALS][URL]) e que para interagir com nossas APIs recomendamos utilizar o [SDK oficial do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/previous-requirements#bookmark__instale_o_sdk_do_mercado_pago).
+Tenha em conta que para que esse passo funcione é necessário que tenha configurado a sua [chave privada]([FAKER][CREDENTIALS][URL]) e que, para interagir com nossas APIs, recomendamos utilizar o [SDK oficial do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/previous-requirements#bookmark__instale_o_sdk_do_mercado_pago).
 
 [[[
 ```php
@@ -620,7 +620,7 @@ curl -X POST \
 >
 > Formulário de pagamento
 >
-> Se você deseja implementar seu servidor com alguma outra tecnologia, te deixamos um [exemplo completo do formulário de pagamento](https://github.com/mercadopago/card-payment-sample) no GitHub para que possa baixar.
+> Se você deseja implementar seu servidor com alguma outra tecnologia, te deixamos um [exemplo completo do formulário de pagamento](https://github.com/mercadopago/card-payment-sample) no GitHub para que você possa fazer o download.
 
 ## Adicionar eventos customizados
 
@@ -639,7 +639,7 @@ Se você quiser saber mais sobre outros eventos customizados, acesse nossa docum
 >
 > Teste sua integração
 >
-> Revise que esteja tudo bem com sua integração com os usuários de teste.
+> Confirme que está tudo bem com a sua integração e com os usuários de teste.
 >
 > [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/testing)
 
