@@ -8,7 +8,7 @@ Nessa documentação explicaremos as configurações necessárias para o recebim
 
 ## Configuração através do Dashboard
  
-Abaixo explicaremos como indicar as URLs que serão notificados e como configurar os eventos dos quais se receberá a notiticação.
+Abaixo explicaremos como indicar as URLs que serão notificadas e como configurar os eventos dos quais se receberá a notiticação.
 
 ![ipn](/images/notifications/ipn__pt.png)
 
