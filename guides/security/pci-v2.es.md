@@ -62,7 +62,7 @@ Mercado Pago es responsable de asegurar la información de datos de tarjetahabie
 
 Mercado Pago simplifica considerablemente la carga del cumplimiento de esta normativa para las organizaciones que adoptan Checkout Pro y ----[mlb]---- Checkout Transparente ------------ ----[mla, mlu, mlm, mco, mpe, mlc]---- Checkout API ------------ ya que utilizan campos que se originan directamente en nuestros servidores en una zona segura para el ingreso de datos de tarjetas de parte del cliente. De esta manera la mayor parte de los requisitos de PCI DSS recaen sobre Mercado Pago y disminuyen considerablemente tu esfuerzo en controles de seguridad.
 
-Para poder ser PCI DSS compliance, demostrar tu cumplimiento y a su vez, asegurar los datos de tarjeta de tus clientes, es importante que utilices este tipo de integraciones para asegurar que los datos que ingresan los tarjetahabientes no lleguen a tus servidores.
+Para poder ser PCI DSS compliant, demostrar tu cumplimiento y a su vez, asegurar los datos de tarjeta de tus clientes, es importante que utilices este tipo de integraciones para asegurar que los datos que ingresan los tarjetahabientes no lleguen a tus servidores.
 
 Como vimos en las secciones anteriores, para el nivel 1, es necesario realizar una auditoría con un asesor externo. En cambio para los niveles 2 a 4, hay diferentes tipos de SAQ según qué método de integración de pagos uses. Te recomendamos que completes el SAQ que corresponda de acuerdo al tipo de Checkout elegido debido a las obligaciones que impone la normativa PCI. 
 
