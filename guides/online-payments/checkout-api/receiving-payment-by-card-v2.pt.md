@@ -208,23 +208,23 @@ const cardForm = mp.cardForm({
          identificationType------------
        } = cardForm.getCardFormData();
  
-	fetch('/process_payment', {
-  method: 'POST',
-         headers: {
-           'Content-Type': 'application/json'
-         },
-         body: JSON.stringify({
-           token,
-           issuer_id,
-           payment_method_id,
-           transaction_amount: Number(amount),
-           installments: Number(installments),
-           description: 'product description',
-           payer: {
-             email,
-             identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
-               type: identificationType,------------
-               number: identificationNumber
+        fetch('/process_payment', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            token,
+            issuer_id,
+            payment_method_id,
+            transaction_amount: Number(amount),
+            installments: Number(installments),
+            description: 'product description',
+            payer: {
+              email,
+              identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
+                type: identificationType,------------
+                number: identificationNumber
              }
            }
          })

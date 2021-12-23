@@ -12,7 +12,9 @@ As a Service Provider, we must meet regulatory and security responsibilities tow
 PCI DSS (Payment Card Industry Data Security Standard) is an international security standard that must be met by all entities that store, process or transmit card data.
 
 PCI regulations establish a basic level of protection for cardholders (cardholders) and help reduce fraud and data breaches within the entire payments ecosystem. 
+
 Compliance with PCI regulations involves 3 important aspects:
+
 - Securely transmit the information corresponding to cardholder data.
 - Store data according to the best security practices in the industry, under 12 regulatory requirements that are included in the PCI Standard.
 - Annual validation of compliance with the security controls and evaluation forms proposed by the PCI Council. 
