@@ -10,935 +10,675 @@ paths:
       tags:
         - $ref: '#/tags/mp-point'
       summary: Get paged devices list
-      description: This endpoint allows you to get the devices.Devices can be filtered by pos and/or store, if you want to do it, you must know their ID's You can retrieve the pos and store ID's through the following endpoints
+      description: This endpoint allows you to get the devices. Devices can be filtered by pos and/or store
       parameters:
         - name: store_id
           in: query
           description: Devices Store Id filter (Optional)
-          required: false
-          example: "1235456678"
           schema:
             type: string
-        - in: query
-          name: pos_id
+            example: "1235456678"
+        - name: pos_id
+          in: query
           description: Devices Pos Id filter (Optional)
-          required: false
-          example: 1235456678
           schema:
             type: integer
-        - in: header
-          name: x-test-scope
+            example: 1235456678
+        - name: x-test-scope
+          in: header
           description: This is a temporary header, it should be used just for development
-          required: false
-          example: sandbox
           schema:
             type: string
+            example: sandbox
       responses:
         '200':
-          description: Paged devices list
+          description: Success - Paged devices list
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/ListDevices"
+                type: object
+                properties:
+                  id:
+                    type: string
+                    description: 
+                  devices:
+                    type: array
+                    description:
+                    items:
+                      type: object
+                  operating_mode:
+                    type: string
+                    description:
+                  paging:
+                    type: object
+                    description:
+                  total:
+                    type: integer
+                    example: 10
+                    description:
+                  offset:
+                    type: integer
+                    example: 0    
+                    description:      
+                  limit:
+                    type: integer
+                    example: 50
+                    description:   
         '400':
-          description: Bad request. query param incorrect format
+          description: Error
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/BadRequestResponse"
+                type: object
+                properties:
+                  errorKey: 
+                    type: string
+                    enum:
+                      - 400--Bad-Request--query-param-incorrect-format-            
         '401':
-          description: Unauthorized. Token is invalid
+          description: Error
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/Unauthorized-InvalidedTokenResponse"
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 401--Unauthorized--token-is-invalid- 
         '403':
-          description: Forbidden. Integrator isn't registered
+          description: Error
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/ForbiddenUnregisteredResponse"
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 403--Forbidden--Integrator-isn't-registered- 
         '500':
-          description: Internal server error
+          description: Error
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/Error"
-  /point/integration-api/devices/{deviceId}/payment-intents:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Internal-server-error-
+  /point/integration-api/devices/{deviceid}/payment-intents:
     post:
+      tags:
+      - $ref: '#/tags/mp-point'
       summary: Create a payment intent
       description: This endpoint allows to create a payment intent for a device
-      operationId: createPaymentIntent
-      security:
-        - bearerAuth: []
-      tags:
-        - Payment-Intent
       parameters:
-        - in: header
-          name: x-test-scope
+        - name: Payment-Intent
+          in: header
           description: This is a temporary header, it should be used just for development
-          required: false
-          example: sandbox
           schema:
             type: string
-        - in: path
-          name: deviceId
+            example: sandbox
+        - name: deviceId
+          in: path
           description: DeviceId
           required: true
-          example: "{deviceId}"
           schema:
             type: string
+            example: "{deviceId}"
       requestBody:
         required: true
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/PaymentIntentCreateRequest'
+              type: object
+              properties:
+                amount:
+                  type: integer
+                  format: int64
+                  example: 1500
+                  minimum: 1
+                additional_info:
+                  type: object
+                  properties:
+                    external_reference:
+                      type: string
+                      example: "4561ads-das4das4-das4754-das456"
+                    print_on_terminal:
+                      type: boolean
+                      example: true
+                    ticket_number:
+                      type: string
+                      example: S0392JED
       responses:
-        '201':
-          description: Payment intent succesfully created
+        '200':
+          description: Success - Payment intent succesfully created
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/PaymentIntentCreateResponse"
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: "7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1"
+                  device_id:
+                    type: string
+                    example: "INGENICO_MOVE2500__12345678"
+                  amount:
+                    type: integer
+                    format: int64
+                    example: 1400
+                  additional_info:
+                    type: object
+                    properties:
+                      external_reference:
+                        type: string
+                        example: "someone-reference-from-your-application"
+                      print_on_terminal:
+                        type: boolean
+                        example: true
+                      ticket_number:
+                        type: string
+                        example: "S0392JED2"
         '401':
-            description: Unauthorized. Token is invalid
+            description: Error
             content:
               application/json:
                 schema:
-                  "$ref": "#/components/schemas/Unauthorized-InvalidedTokenResponse"
+                  type: object
+                  properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 401--Unauthorized--Token-is-invalid-
         '400':
-          description: Bad request. Field is missing or incorrect
+          description: Error
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/PaymentIntentBadResponse"
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 400--Bad-request--Field-is-missing-o-incorrect-
         '403':
-          description: Forbidden. Integrator isn't registered
+          description: Error
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/ForbiddenUnregisteredResponse"
+                type: object
+                properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 403--Forbidden--Integrator-isn't-registered-
         '409':
-          description: Conflict Error. Device has a queued payment intent
+          description: Error
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/PaymentIntentConflictResponse"
-
+                type: object
+                properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 409--Conflict-error--Device-has-a-queued-payment-intent-
         '500':
-          description: Internal server error
+          description: Error
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/Error"
-  /point/integration-api/devices/{deviceId}/payment-intents/{paymentIntentId}:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 500--Internal-server-error-
+  /point/integration-api/devices/{deviceid}/payment-intents/{paymentintentid}:
     delete:
+      tags:
+        - $ref: '#/tags/mp-point'
       summary: Cancel payment intent
       description: This endpoint allows to cancel a payment intent
-      operationId: cancelPaymentIntent
-      security:
-        - bearerAuth: []
-      tags:
-        - Payment-Intent
       parameters:
-        - in: header
-          name: x-test-scope
+        - name: x-test-scope
+          in: header
           description: This is a temporary header, it should be used just for development
-          required: false
-          example: sandbox
           schema:
             type: string
-        - in: path
-          name: deviceId
+            example: sandbox
+        - name: deviceId
+          in: path
           description: DeviceId
           required: true
-          example: "{deviceId}"
           schema:
             type: string
-        - in: path
-          name: paymentIntentId
+            example: "{deviceId}"
+        - name: paymentIntentId
+          in: path
           description: Payment Intent ID
           required: true
-          example: "{paymentIntentId}"
           schema:
             type: string
+            example: "{paymentIntentId}"
       responses:
         '200':
           description: Payment intent succesfully canceled
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/IdResponse"
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: "d71e88d6-6281-416b-b8ed-592c27352c99"
         '401':
-          description: Unauthorized. Token is invalid
+          description: Error
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/Unauthorized-InvalidedTokenResponse"
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401--Unauthorized--Token-is-invalid-
         '403':
-          description: Forbidden. Integrator isn't registered
+          description: Error
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/ForbiddenUnregisteredResponse"
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                      - 403--Forbidden--Integrator-isn't-registered-
         '409':
-          description: Conflict Error. Payment intent is blocked by terminal
+          description: Error
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/CancelConflictErrorResponse"
+                type: object
+                properties:
+                  errorkey:
+                    type: string
+                    enum:
+                      - 409--Conflict-error--Payment-intent-is-blocked-by-terminal-
         '500':
-          description: Internal server error
+          description: Error
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/Error"
-  /point/integration-api/payment-intents/{paymentIntentId}:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Internal-server-error-
+  /point/integration-api/payment-intents/{paymentintentid}:
     get:
-      summary: Find information payment intent
-      description: This endpoint allows to get information of payment intent.This endpoint will provide the payment intent’s information, its final status and the payment-id, which can be used to get the final status of the transaction in the [Payment-API](https://www.mercadopago.com.ar/developers/es/reference/payments/_payments_id/get). The Webhook notifications are the main communication point of the payment intent information, then this endpoint should be used for testing and eventualities, and not for polling, because it has **restrictions** like consume by time, allows to get information one request per second.
-      operationId: findPaymentIntent
-      security:
-        - bearerAuth: []
       tags:
-        - Payment-Intent
+        - $ref: '#/tags/mp-point'
+      summary: Find information payment intent
+      description: This endpoint allows to get information of payment intent
       parameters:
-        - in: header
-          name: x-test-scope
+        - name: x-test-scope
+          in: header
           description: This is a temporary header, it should be used just for development
           required: false
-          example: sandbox
           schema:
             type: string
-        - in: path
-          name: paymentIntentId
+            example: sandbox
+        - name: paymentIntentId
+          in: path
           description: Payment Intent Id
           required: true
-          example: "{paymentIntentId}"
           schema:
             type: string
+            example: "{paymentIntentId}"
       responses:
         '200':
-          description: Details of Payment Intent
+          description: success - Details of Payment Intent
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/PaymentIntentFindResponse"
+                type: object
+                properties:
+                  id:
+                    type: string
+                    description:
+                    example: "7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1"
+                  state:
+                    type: string
+                    description:
+                    example: "FINISHED"
+                  amount:
+                    type: integer
+                    format: int64
+                    description:
+                    example: 1400
+                  device_id:
+                    type: string
+                    description:
+                    example: "INGENICO_MOVE2500__ING-33976987"
+                  additional_info:
+                    type: object
+                    properties:
+                      external_reference:
+                        type: string
+                        description:
+                        example: "someone-reference-from-your-application"
+                      print_on_terminal:
+                        type: boolean
+                        description:
+                        example: true
+                      ticket_number:
+                        type: string
+                        description:
+                        example: "S0392JED2"
         '401':
-          description: Unauthorized. Token is invalid
+          description: Error
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/Unauthorized-InvalidedTokenResponse"
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401--Unauthorized--Token-is-invalid-
         '403':
-          description: Forbidden. Integrator isn't registered
+          description: Error
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/ForbiddenUnregisteredResponse"
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 403--Forbidden--Integrator-isn't-registered-
         '404':
-          description: Not Found. Payment Intent doesn't exists
+          description: Error
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/PaymentIntentNotFoundResponse"
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 404--Not-found--Payment-intent-doesn't-exists-
         '500':
-          description: Internal server error
+          description: Error
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/Error"
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Internal-server-error-
   /point/integration-api/payment-intents/events:
     get:
+      tags:
+        - $ref: '#/tags/mp-point'
       summary: Gets payment intents list with their final states
       description: This endpoint allows to get a list of payment intents with their final states between a date range. This endpoint has a restriction that the number of days between dates must not exceed 30
-      operationId: findEventsPaymentIntentByDates
-      security:
-        - bearerAuth: []
-      tags:
-        - Payment-Intent
       parameters:
-        - in: header
-          name: x-test-scope
+        - name: x-test-scope
+          in: header
           description: This is a temporary header, it should be used just for development
-          required: false
-          example: sandbox
           schema:
             type: string
-        - in: query
-          name: startDate
+            example: sandbox
+        - name: startDate
+          in: query
           description: Initial date (YYYY-MM-DD)
           required: true
-          example: 2020-01-01
           schema:
             type: string
             format: date
-        - in: query
-          name: endDate
+            example: 2020-01-01
+        - name: endDate
+          in: query
           description: End date (YYYY-MM-DD)
           required: true
-          example: 2020-01-30
           schema:
             type: string
             format: date
+            example: 2020-01-30
       responses:
         '200':
-          description: List of payment intents with their final states between a date range (startDate, endDate)
+          description: Success - List of payment intents with their final states between a date range (startDate, endDate)
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/ListStatePaymentIntentByDatesResponse"
+                type: object
+                properties:
+                  events:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        payment_intent_id:
+                          type: string
+                        status:
+                          type: string
+                        created_on:
+                          type: string
+                          format: date-time
         '400':
-          description: Bad Request. startDate and/or endDate are misssing or incorrect
+          description: Error
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/PaymentIntentByDatesBadErrorResponse"
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 400--Bad-Request--startDate-and/or-endDate-are-misssing-or-incorrect-
         '401':
-          description: Unauthorized. Token is invalid
+          description: Error
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/Unauthorized-InvalidedTokenResponse"
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401--Token is invalid-
         '403':
-          description: Forbidden. Integrator isn't registered
+          description: Error
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/ForbiddenUnregisteredResponse"
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 403--Forbidden-Integrator-isn't-registered-
         '500':
-          description: Internal server error
+          description: Error
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/Error"
-  /point/integration-api/payment-intents/{paymentIntentId}/events:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Internal-server-error-
+  /point/integration-api/payment-intents/{paymentintentid}/events:
     get:
-      summary: Find the last state of a payment intent
-      description: This endpoint allows to find the last state of a payment intent
-      operationId: findLastEventPaymentIntent
-      security:
-        - bearerAuth: []
       tags:
-        - Payment-Intent
+        - $ref: '#/tags/mp-point'
+      summary: Find payment intent
+      description: This endpoint allows to find the last state of a payment intent
       parameters:
-        - in: header
-          name: x-test-scope
+        - name: x-test-scope
+          in: header
           description: This is a temporary header, it should be used just for development
-          required: false
-          example: sandbox
           schema:
             type: string
-        - in: path
-          name: paymentIntentId
+            example: sandbox
+        - name: paymentIntentId
+          in: path
           description: Payment intent Id
           required: true
-          example: "{paymentIntentId}"
           schema:
             type: string
+            example: "{paymentIntentId}"
       responses:
         '200':
-          description: Last payment intent state
+          description: Success - Last payment intent state
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/LastStatePaymentIntentResponse"
+                  type: object
+                  properties:
+                    status:
+                      type: string
+                      description:
+                      example: "FINISHED"
+                    created_on:
+                      type: string
+                      description:
+                      format: date
+                      example: "2021-09-03T20:59:10Z"
         '401':
-          description: Unauthorized. Token is invalid
+          description: Error
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/Unauthorized-InvalidedTokenResponse"
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 100--Unauthorized--Token-is-invalid-
         '403':
-          description: Forbidden. Integrator isn't registered
+          description: Error
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/ForbiddenUnregisteredResponse"
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 403--Forbidden--Integrator-isn't-registered
         '404':
-          description: Not Found. Payment Intent doesn't exists
+          description: Error
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/PaymentIntentNotFoundResponse"
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 404--Not Found--Payment-Intent-doesn't-exists-
         '500':
-          description: Internal server error
+          description: Error
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/Error"
-  /point/integration-api/integrators:
-    parameters:
-      - in: header
-        name: x-test-scope
-        description: This is a temporary header, it should be used just for development
-        required: false
-        example: sandbox
-        schema:
-          type: string
-    get:
-      summary: Get Token Integrator
-      description: This endpoint allows you get integrator information, with this endpoint you can get the token for configure webhook.
-      operationId: getIntegratorData
-      security:
-        - bearerAuth: []
-      tags:
-        - Config
-      responses:
-        '200':
-          description: Get Token Integrator
-          content:
-            application/json:
-              schema:
-                "$ref": "#/components/schemas/GetIntegratorResponse"
-        '500':
-          description: Internal server error
-          content:
-            application/json:
-              schema:
-                "$ref": "#/components/schemas/Error"
-    patch:
-      summary: Configure an integrator's webhook
-      description: "This endpoint allows you to configure the webhook of an integrator <br> **Note**: the webhook URL must be public and accessible from our servers."
-      operationId: configureIntegrator
-      security:
-        - bearerAuth: []
-      tags:
-        - Config
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/ConfigureIntegratorRequest'
-      responses:
-        '204':
-          description: Webhook successfully configured
-        '400':
-          description: Bad Request. URI is invalid
-          content:
-            application/json:
-              schema:
-                "$ref": "#/components/schemas/WebhookUrlInvalidResponse"
-        '401':
-          description: Unauthorized. Token is invalid
-          content:
-            application/json:
-              schema:
-                "$ref": "#/components/schemas/Unauthorized-InvalidedTokenResponse"
-        '409':
-          description: Conflic Error. Webhook isn't responding correctly
-          content:
-            application/json:
-              schema:
-                "$ref": "#/components/schemas/WebhookIncorrectResponse"
-        '500':
-          description: Internal server error
-          content:
-            application/json:
-              schema:
-                "$ref": "#/components/schemas/Error"
-  /point/integration-api/integrators/check:
-    parameters:
-      - in: header
-        name: x-test-scope
-        description: This is a temporary header, it should be used just for development
-        required: false
-        example: sandbox
-        schema:
-          type: string
-    post:
-      summary: Validate the integrator's webhook configuration
-      description: This endpoint allows validating the integrator's webhook configuration
-      operationId: validateIntegrator
-      security:
-        - bearerAuth: []
-      tags:
-        - Config
-      responses:
-        '204':
-          description: Webhook successfully configured
-        '400':
-          description: Bad Request. URI is invalid
-          content:
-            application/json:
-              schema:
-                "$ref": "#/components/schemas/WebhookUrlInvalidResponse"
-        '401':
-          description: Unauthorized. Token is invalid
-          content:
-            application/json:
-              schema:
-                "$ref": "#/components/schemas/Unauthorized-InvalidedTokenResponse"
-        '409':
-          description: Conflic Error. Webhook isn't responding correctly
-          content:
-            application/json:
-              schema:
-                "$ref": "#/components/schemas/WebhookIncorrectResponse"
-        '500':
-          description: Internal server error
-          content:
-            application/json:
-              schema:
-                "$ref": "#/components/schemas/Error"
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Internal-server-error-
   /point/integration-api/devices/{device-id}:
-    parameters:
-      - in: path
-        name: device-id
-        description: DeviceId
-        required: true
-        example: "{deviceId}"
-        schema:
-          type: string
     patch:
+      tags:
+        - $ref: '#/tags/mp-point'
       summary: Change operating mode
       description: This endpoint allows you to change the device operating mode, the options for operating mode are PDV and STANDALONE. PDV is used when you want to use device in mode integration with our API and STANDALONE is used when you want to process payments without our API
-      operationId: changeOperatingMode
-      security:
-        - bearerAuth: []
-      tags:
-        - Device
+      parameters:
+        - name: device-id
+          in: path
+          description: DeviceId
+          required: true
+          schema:
+            type: string
+            example: "{deviceId}"
       requestBody:
         required: true
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/ChangeOperatingModeRequest'
+               type: object
+               properties:
+                  operating_mode:
+                    type: string
+                    nullable: false
+                    example: "PDV"
+                    enum: ["PDV", "STANDALONE"]
+                  GetIntegratorResponse:
+                    type: object
+                    properties:
+                      token:
+                        type: string
+                        example: "b6535740-198a-413e-8abe-a8edca123456"
+                      webhook:
+                        type: string
+                        example: ""
+                      is_valid_webhook:
+                        type: boolean
+                        example: false
       responses:
         '200':
-          description: Operating mode successfully changed
+          description: Success - Operating mode successfully changed
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/ChangeOperatingModeRequest"
+                type: object
+                properties:
+                  operating_mode:
+                    type: string
+                    nullable: false
+                    example: "PDV"
+                    enum: ["PDV", "STANDALONE"]
         '400':
-          description: Bad Request. Device id incorrect format
+          description: Error
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/BadRequestResponse"
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400--Bad-Request--Device-id-incorrect-format-
         '403':
-          description: Unauthorized. User no logged into the device
+          description: Error
           content:
             application/json:
               schema:
-                "$ref": "#/components/schemas/ForbiddenDeviceUnlogged"
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 403--Unauthorized--User-no-logged-into-the-device-
         '500':
-          description: Internal server error
-          content:
-            application/json:
-              schema:
-                "$ref": "#/components/schemas/Error"
-components:
-  securitySchemes:
-    bearerAuth:
-      type: http
-      scheme: bearer
-  schemas:
-    ConfigureIntegratorRequest:
-      type: object
-      properties:
-        webhook:
-          type: string
-          nullable: false
-          example: "https://my-domain.com/webhook"
-    ChangeOperatingModeRequest:
-      type: object
-      properties:
-        operating_mode:
-          type: string
-          nullable: false
-          example: "PDV"
-          enum: ["PDV", "STANDALONE"]
-    GetIntegratorResponse:
-      type: object
-      properties:
-        token:
-          type: string
-          example: "b6535740-198a-413e-8abe-a8edca123456"
-        webhook:
-          type: string
-          example: ""
-        is_valid_webhook:
-          type: boolean
-          example: false
-    ListDevices:
-      type: object
-      properties:
-        devices:
-          type: array
-          items:
-            type: object
-            properties:
-              id:
-                type: string
-              operating_mode:
-                type: string
-        paging:
-          type: object
-          properties:
-            total:
-                type: integer
-                example: 10
-            offset:
-                type: integer
-                example: 0          
-            limit:
-                type: integer
-                example: 50
-      example: {
-        "devices":[
-            { "id": "INGENICO_MOVE2500__ING-ARG-98765432", "operating_mode": "STANDALONE"},
-            { "id": "INGENICO_MOVE2500__ING-ARG-12345678", "operating_mode": "PDV"}
-        ],
-        "paging":{
-            "total": 2,
-            "limit": 50,
-            "offset": 0
-        }
-      }
-    ListStatePaymentIntentByDatesResponse:
-      type: object
-      properties:
-        events:
-          type: array
-          items:
-            type: object
-            properties:
-              payment_intent_id:
-                type: string
-              status:
-                type: string
-              created_on:
-                type: string
-                format: date-time
-          example: [
-            {
-              "payment_intent_id": "51374ba8-50e4-4633-a000-3e42ccd245f9",
-              "status": "PROCESSING",
-              "created_on": "2021-08-30T22:38:05Z"
-            },
-            {
-              "payment_intent_id": "fa2d12d5-db4e-4cc3-8777-69f2a3cf6542",
-              "status": "FINISHED",
-              "created_on": "2021-08-30T22:37:57Z"
-            },
-            {
-              "payment_intent_id": "10e96d57-b20e-420c-b0ff-85e66a0fe65d",
-              "status": "CANCELED",
-              "created_on": "2021-08-25T19:27:49Z"
-            }
-          ]
-    PaymentIntentByDatesBadErrorResponse:
-      type: object
-      properties:
-        message:
-          type: string
-          example: "startDate query param is required, endDate query param is required"
-        status:
-          type: integer
-          format: int32
-          example: 400
-        error:
-          type: string
-          example: "bad_request"
-        cause:
-          type: array
-          items:
-            type: string
-          example: [ ]
-    LastStatePaymentIntentResponse:
-      type: object
-      properties:
-        status:
-          type: string
-          example: "FINISHED"
-        created_on:
-          type: string
-          format: date
-          example: "2021-09-03T20:59:10Z"
-    IdResponse:
-      type: object
-      properties:
-        id:
-          type: string
-          example: "d71e88d6-6281-416b-b8ed-592c27352c99"
-    PaymentIntentCreateRequest:
-      type: object
-      properties:
-        amount:
-          type: integer
-          format: int64
-          example: 1500
-          minimum: 1
-        additional_info:
-          type: object
-          properties:
-            external_reference:
-              type: string
-              example: "4561ads-das4das4-das4754-das456"
-            print_on_terminal:
-              type: boolean
-              example: true
-            ticket_number:
-              type: string
-              example: S0392JED
-    PaymentIntentFindResponse:
-      type: object
-      properties:
-        id:
-          type: string
-          example: "7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1"
-        state:
-          type: string
-          example: "FINISHED"
-        amount:
-          type: integer
-          format: int64
-          example: 1400
-        device_id:
-          type: string
-          example: "INGENICO_MOVE2500__ING-33976987"
-        payment:
-          type: object
-          properties:
-            id:
-              type: integer
-              example: 16499678033
-        additional_info:
-          type: object
-          properties:
-            external_reference:
-              type: string
-              example: "someone-reference-from-your-application"
-            print_on_terminal:
-              type: boolean
-              example: true
-            ticket_number:
-              type: string
-              example: "S0392JED2"
-    PaymentIntentCreateResponse:
-      type: object
-      properties:
-        id:
-          type: string
-          example: "7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1"
-        device_id:
-          type: string
-          example: "INGENICO_MOVE2500__12345678"
-        amount:
-          type: integer
-          format: int64
-          example: 1400
-        additional_info:
-          type: object
-          properties:
-            external_reference:
-              type: string
-              example: "someone-reference-from-your-application"
-            print_on_terminal:
-              type: boolean
-              example: true
-            ticket_number:
-              type: string
-              example: "S0392JED2"
-    PaymentIntentConflictResponse:
-      type: object
-      properties:
-        message:
-          type: string
-          example: "There is already a queued payment intent for the device"
-        status:
-          type: integer
-          format: int32
-          example: 409
-        error:
-          type: string
-          example: "conflict_error"
-        cause:
-          type: array
-          items:
-            type: string
-          example: []
-    PaymentIntentBadResponse:
-      type: object
-      properties:
-        message:
-          type: string
-          example: "{field} is required"
-        status:
-          type: integer
-          format: int32
-          example: 400
-        error:
-          type: string
-          example: "bad_request"
-        cause:
-          type: array
-          items:
-            type: string
-          example: []
-    PaymentIntentNotFoundResponse:
-      type: object
-      properties:
-        message:
-          type: string
-          example: "That payment intent doesn't exist!"
-        status:
-          type: integer
-          format: int32
-          example: 404
-        error:
-          type: string
-          example: "not_found"
-        cause:
-          type: array
-          items:
-            type: string
-          example: []
-    CancelConflictErrorResponse:
-      type: object
-      properties:
-        message:
-          type: string
-          example: "Can't update Payment Intent ID d71e88d6-6281-416b-b8ed-592c27352c99 due to a conflict error"
-        status:
-          type: integer
-          format: int32
-          example: 409
-        error:
-          type: string
-          example: "conflict_error"
-        cause:
-          type: array
-          items:
-            type: string
-          example: []
-    WebhookIncorrectResponse:
-      type: object
-      properties:
-        message:
-          type: string
-          example: "The webhook is not responding correctly"
-        status:
-          type: integer
-          format: int32
-          example: 409
-        error:
-          type: string
-          example: "the verification of the challengeCode failed"
-        cause:
-          type: array
-          items:
-            type: string
-          example: []
-    WebhookUrlInvalidResponse:
-      type: object
-      properties:
-        message:
-          type: string
-          example: "parse {your-webhook-url} invalid URI for request"
-        status:
-          type: integer
-          format: int32
-          example: 400
-        error:
-          type: string
-          example: "bad_request"
-        cause:
-          type: array
-          items:
-            type: string
-          example: []
-    ForbiddenUnregisteredResponse:
-      type: object
-      properties:
-        message:
-          type: string
-          example: "Error when check device owner: user configuration, not found"
-        error:
-          type: string
-          example: "forbidden"
-        status:
-          type: integer
-          format: int32
-          example: 403        
-        cause:
-          type: array
-          items:
-            type: string
-          example: []
-    ForbiddenDeviceUnlogged:
-      type: object
-      properties:
-        message:
-          type: string
-          example: "Store id not found. Please check if your user is logged into the device"
-        error:
-          type: string
-          example: "forbidden"
-        status:
-          type: integer
-          format: int32
-          example: 403        
-        cause:
-          type: array
-          items:
-            type: string
-          example: []
-    Unauthorized-InvalidedTokenResponse:
-      type: object
-      properties:
-        message:
-          type: string
-          example: "invalid_token"
-        error:
-          type: string
-          example: "not_found"
-        status:
-          type: integer
-          format: int32
-          example: 401
-        cause:
-          type: array
-          items:
-            type: string
-          example: []
-    BadRequestResponse:
-      type: object
-      properties:
-        message:
-          type: string
-          example: "{parameter} is required or has an incorrect format"
-        error:
-          type: string
-          example: "bad_request"
-        status:
-          type: integer
-          format: int32
-          example: 400
-        cause:
-          type: array
-          items:
-            type: string
-          example: []
-    Error:
-      type: object
-      properties:
-        message:
-          type: string
-          example: "Oops! Something went wrong while <<action>>"
-        status:
-          type: integer
-          format: int32
-          example: 500
-        error:
-          type: string
-          example: "internal_error"
-        cause:
-          type: array
-          items:
-            type: string
-          example: []
+            description: Error
+            content:
+              application/json:
+                schema:
+                  type: object
+                  properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 403--Internal-server-error-

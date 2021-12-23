@@ -11,7 +11,9 @@ La API de Integraciones te permite conectar tus puntos de venta (PDV) al ecosist
 >
 > Esta integración soporta los siguientes dispositivos:
 >
-> - [Point Smart](https://www.mercadopago.com.ar/point-smart?ref=devsite)
+> - Point Plus (POS)
+>
+> Puedes adquirir tu dispositivo Point desde nuestra [tienda oficial](https://www.mercadopago.com.ar/point)
 
 ------------
 
@@ -21,7 +23,10 @@ La API de Integraciones te permite conectar tus puntos de venta (PDV) al ecosist
 > Esta integración soporta los siguientes dispositivos:
 >
 > - Point Pro 1
-> - [Point Pro 2](https://www.mercadopago.com.br/point-pro-2)
+> - Point Pro 2
+>
+> Puedes adquirir tu dispositivo Point desde nuestra [tienda oficial](https://www.mercadopago.com.br/point)
+
 ------------
 
 ### Conoce sus ventajas

@@ -15,23 +15,19 @@ Recibirás una respuesta como esta:
 
 ```json
 {
-   "devices":[
-      {
-         "id":"GERTEC_MP35P__8701012051261234",
-         "operating_mode":"STANDALONE"
-      },
-      {
-         "id":"INGENICO_MOVE2500__87010121123456",
-         "operating_mode":"PDV"
-      }
-   ],
-   "paging":{
-      "total":2,
-      "limit":50,
-      "offset":0
+   "id":"7d8c70b6-2ac8-4c57-a441-c319088ca3ca",
+   "device_id":"INGENICO_MOVE2500__ING-ARG-14886780",
+   "amount":1500,
+   "description":"this is an example",
+   "payment":{
+      "type":"credit_card",
+      "installments":1
+   },
+   "additional_info":{
+      "external_reference":"4561ads-das4das4-das4754-das456",
+      "print_on_terminal":true
    }
 }
-
 ```
 ## Crea la intención de pago
 Puedes crear una intención de pago y asignarla a tu dispositivo Point de esta manera:
@@ -52,7 +48,7 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
 
 Campo | Descripción
 :--- | :--- | 
-'amount'             | Monto total de la intención de pago. |
+'amount'             | Monto total de la intención de pago. **Importante**: este campo no admite puntos decimales, por lo tanto si deseas generar una intención de pago, debes contemplar los dos decimales del valor en su total. Por ejemplo: para generar orden de pago de valor "15,00" deberás ingresar "1500". |
 'external_reference' | Campo de uso exclusivo del integrador para incluir referencias propias de su sistema. |
 'print_on_terminal'  | Campo que determina si el dispositivo realiza la impresión del comprobante de pago. |
 'ticket_number'      | Número de ticket de la intención de pago. |
