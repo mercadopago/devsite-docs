@@ -15,6 +15,7 @@ PCI DSS (Payment Card Industry Data Security Standard) é um padrão de seguran�
 Os regulamentos PCI estabelecem um nível básico de proteção para os portadores de cartão (portadores de cartão) e ajudam a reduzir fraudes e violações de dados em todo o ecossistema de pagamentos. 
 
 A conformidade com os regulamentos PCI envolve 3 aspectos importantes:
+
 - Transmitir com segurança as informações correspondentes aos dados do titular do cartão.
 - Armazenar os dados de acordo com as melhores práticas de segurança do setor e com os 12 requisitos regulamentares incluídos no padrão PCI.
 - Validar anualmente a conformidade com os controles de segurança e formulários de avaliação propostos pelo PCI Council.
