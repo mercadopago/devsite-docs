@@ -75,6 +75,18 @@ Puedes obtener más información en la [Referencias de API](https://www.mercadop
 > 2. El `state_name` debe coincidir con los **estados** según el país en cuestión (https://api.mercadolibre.com/countries/$country_id).
 > 3. El `city_name` debe coincidir con las **ciudades** según sus estados. (https://api.mercadolibre.com/states/$state_id).
 
+## Video tutorial
+
+Descubra cómo registrar la sucursal con nuestro video tutorial:
+
+<div class="embed-container">
+    <iframe width="1106" height="622" src="https://www.youtube.com/embed/ipFMmRtLIJI" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+    </iframe>
+</div>
+
+<br/>
+<br/>
+
 ## Cajas
 
 Es un **punto de venta** que existe en una sucursal o tienda física. Cada caja tendrá vinculado un código QR unívoco.
@@ -114,6 +126,18 @@ Puedes obtener más información en la [Referencias de API](https://www.mercadop
 > A partir del 20 de abril de 2021, no se podrán crear cajas sin una sucursal asignada.
 
 Una vez creada la caja, podremos ver en el _Response_ los links a distintos entregables del QR, junto con otros datos relevantes de la caja.
+
+## Video tutorial
+
+Descubra cómo registrar el Punto de venta con nuestro video tutorial:
+
+<div class="embed-container">
+    <iframe width="1106" height="622" src="https://www.youtube.com/embed/ipFMmRtLIJI" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+    </iframe>
+</div>
+
+<br/>
+<br/>
 
 ---
 ### Próximos pasos

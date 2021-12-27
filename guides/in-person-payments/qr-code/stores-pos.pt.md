@@ -74,6 +74,19 @@ Você pode obter mais informações nas [Referências de API](https://www.mercad
 > 2. O `state_name` deve corresponder aos **estados** de acordo com o país em questão (https://api.mercadolibre.com/countries/$country_id).
 > 3. O `city_name` deve corresponder às **cidades** de acordo com seus estados. (https://api.mercadolibre.com/states/$state_id).
 
+## Vídeo tutorial 
+
+Saiba como realizar o cadastro da loja com o nosso vídeo tutorial:
+
+<div class="embed-container">
+    <iframe width="1106" height="622" src="https://www.youtube.com/embed/77C7WpP2xmk" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+    </iframe>
+</div>
+
+<br/>
+<br/>
+
+
 ## Caixas
 
 É um **ponto de venda** que existe numa sucursal ou loja física. Cada caixa terá um código QR unívoco vinculado.
@@ -113,6 +126,18 @@ Você pode obter mais informações em [Referências de API](https://www.mercado
 > A partir de 20 de abril de 2021, os caixas não poderão ser criados sem uma loja atribuída.
 
 Uma vez criado o caixa, poderemos ver no _Response_ os links para diferentes entregáveis do QR, junto com outros dados relevantes do caixa. 
+
+## Vídeo tutorial 
+
+Saiba como realizar o cadastro de Ponto de Venda com o nosso vídeo tutorial:
+
+<div class="embed-container">
+    <iframe width="1106" height="622" src="https://www.youtube.com/embed/g3eY16PeqoE" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+    </iframe>
+</div>
+
+<br/>
+<br/>
 
 ---
 ### Próximos passos
