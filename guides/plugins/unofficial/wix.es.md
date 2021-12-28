@@ -50,7 +50,7 @@ Para instalar el Checkout Pro en su tienda, siga los pasos a continuación.
 
 ### Activación del modo producción
 
-[TXTSNIPPET][/guides/snippets/test-integration/wix-production-mode.es.md
+[TXTSNIPPET][/guides/snippets/test-integration/wix-production-mode]
 
 ----[mlb, mlm]----
 ## Checkout API
