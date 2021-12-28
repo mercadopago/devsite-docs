@@ -46,7 +46,7 @@ Done! With Checkout Pro installed in your store, make a test purchase and ensure
 
 ### Test purchase
 
-[TXTSNIPPET][/guides/snippets/test-integration/wix-test-purchase.en.md]
+[TXTSNIPPET][/guides/snippets/test-integration/wix-test-purchase]
 
 
 ### Activating production mode
