@@ -18,7 +18,7 @@ Además de las notificaciones por correo electrónico, la nueva versión tambié
 >
 > Importante
 >
-> A diferencia de las notificaciones de Webhook, que debes configurar, el envío de correos electrónicos está habilitado automáticamente de forma predeterminada. Sin embargo, puedes solicitar el apagado manual de esta funcionalidad a través de Integraciones.
+> A diferencia de las notificaciones de Webhooks, que debes configurar, el envío de correos electrónicos está habilitado automáticamente de forma predeterminada. Sin embargo, puedes solicitar el apagado manual de esta funcionalidad a través de Integraciones.
 
 ## Migración
 
@@ -30,7 +30,8 @@ Cuando cuentes con el nuevo ID, puedes actualizar los IDs de tu plan, subscripti
 
 [[[
 ```curl
-curl --location --request GET 'https://api.mercadopago.com/subscriptions/migrations/<RESOURCE>/<ID>
+curl --location 
+--request GET 'https://api.mercadopago.com/subscriptions/migrations/<RESOURCE>/<ID>
 ```
 ]]]
 
@@ -39,8 +40,8 @@ curl --location --request GET 'https://api.mercadopago.com/subscriptions/migrati
 | Request | `plan` <br/> `subscription` <br/> `invoice` | Identificador único |
 | Response | `preapproval` <br/>`preapproval_plan` <br/> `authorized_payment`| Identificador único |
 
-> WARNING
+> NOTE
 >
-> Importante
+> Nota
 >
 > Te notificaremos por correo electrónico cuando llegue tu fecha límite de migración. Es importante que programes y tengas preparados los cambios para la migración, ya que todos los `Planes` y `Suscripciones` con estado **cancelado**, **inactivo** y/o **finalizado**, así como `Invoices` de más de seis meses no se migrarán.

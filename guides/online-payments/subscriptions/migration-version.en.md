@@ -30,7 +30,8 @@ Once you have the new ID, you can update your plan IDs, subscriptions and invoic
 
 [[[
 ```curl
-curl --location --request GET 'https://api.mercadopago.com/subscriptions/migrations/<RESOURCE>/<ID>
+curl --location 
+--request GET 'https://api.mercadopago.com/subscriptions/migrations/<RESOURCE>/<ID>
 ```
 ]]]
 
