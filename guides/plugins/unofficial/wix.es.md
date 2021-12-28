@@ -93,4 +93,4 @@ Para integrar el Checkout API en su tienda, siga los pasos a continuación.
 
 ### Activación del modo producción
 
-[TXTSNIPPET][/guides/snippets/test-integration/wix-production-mode.es.md
+[TXTSNIPPET][/guides/snippets/test-integration/wix-production-mode]
