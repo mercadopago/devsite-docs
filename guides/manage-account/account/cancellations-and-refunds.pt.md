@@ -1,296 +1,48 @@
----
-  indexable: false
----
+# Reembolsos e cancelamentos
 
-# Devoluções e cancelamentos
+**Reembolsos** são transações realizadas quando determinada cobrança é revertida e os valores pagos retornam para o comprador. Isso significa que o cliente receberá de volta em sua conta ou na fatura do cartão de crédito, o valor pago na aquisição de determinado produto ou serviço.
 
-Existem diferentes situações que podem dar origem ao cancelamento de uma venda:
+**Cancelamentos** acontecem quando uma compra é realizada mas o pagamento ainda não foi aprovado por algum motivo. Neste caso, considerando que a transação não foi processada e o estabelecimento não recebeu qualquer valor, a compra é cancelada e não ocorre cobrança.
 
-*	Se o status do pagamento for `pending` ou `in_process`, o valor ainda não foi cobrado do comprador, então pode-se realizar um cancelamento.
+Apesar de serem transações similares, é importante ter em mente que o cancelamento é feito no mesmo dia da captura do pagamento, devolvendo o limite ao cartão do comprador dentro do período definido pelo banco emissor. Já o reembolso é feito diretamente na fatura do cartão de crédito ou na conta corrente em casos de pagamento via Pix, boleto ou débito.
 
-*	Se o `status` do pagamento for `approved`, significa que o comprador efetuou o pagamento, e a devolução poderá ser realizada caso necessário.
+Nesta documentação, você encontra as instruções e os links das APIs necessárias para realizar uma reembolso integral, parcial, e cancelar uma compra em sua loja.
+
 
 > WARNING
 >
-> AVISO
+> Important
 >
-> Lembre que para pagamentos com QR e POINT você só pode realizar restituições, mas não cancelamentos.
+> Ao executar as APIs citadas nesta documentação, você poderá encontrar o atributo **X-Idempotency-Key**. Seu preenchimento é importante para garantir a execução e re-execução de requisições sem que haja efeitos colaterais como por exemplo, pagamentos em duplicidade em casos de reembolso.
 
 ## Cancelamentos
 
-- Os cancelamentos podem ser realizados somente com status pending e in process
-- É importante para meios de pagamento offline
-- A expiração de um pagamento ocorre após 30 dias e o cancelamento é automático, o status final deles será cancelled/expired.
+Antes de realizar o cancelamento de uma compra, é preciso atentar-se os seguintes fatores: 
 
-Somente é possível cancelar pagamentos que se encontrem com status `pending` ou `in_process`. Assim que forem cancelados, não poderão mais ser aprovados e o estoque pendente de confirmação poderá ser liberado.
+- **Status de pagamento**: Os cancelamentos somente poderão ser realizados caso o status de pagamento esteja como Pending ou In process. Esses status são exibidos na resposta da chamada à API de cancelamento nos campos *Status* e *Status detail*, respectivamente.
 
-Os cancelamentos são utilizados principalmente com **meios de pagamento em dinheiro**.
+- **Prazo de vencimento**: Um pagamento expira após 30 dias sem confirmação e o cancelamento é automático. O status final dessa transação aparecerá como *cancelled* ou *expired*. Essas informações serão exibidas na resposta da chamada à API de cancelamento, nos campos *Status* e *Status detail*, respectivamente. 
 
-Embora os tickets fora de mídia expirem, o usuário pode gerá-los novamente inserindo a transação de sua conta no Mercado Pago. Para cancelá-los definitivamente, sem a possibilidade de gerá-los novamente, evitando problemas de retenção de estoque por exemplo, é necessário que você execute o cancelamento deles.
 
-Para realizar o cancelamento, faça a seguinte requisição enviando o `status` `cancelled`:
-
-[[[
-```php
-<?php
-
-  $payment = MercadoPago\Payment::find_by_id($payment_id);
-  $payment->status = "cancelled";
-  $payment->update();
-
-?>
-```
-```java
-Payment payment = Payment.load(paymentId);
-payment.setStatus("cancelled");
-payment.update();
-
-```
-```node
-
-mercadopago.payment.update({
-  id: paymentId,
-  status: "cancelled"
-}).then().catch();
-
-```
-```ruby
-sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
-request = {
-  status: 'cancelled'
-}
-result = sdk.payment.update(payment_id, request)
-```
-```python
-sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
-
-payment_data = {
-    "status": "cancelled"
-}
-
-payment_response = sdk.payment().update(payment_id, payment_data)
-payment = payment_response["response"]
-```
-```curl
-curl -X PUT \
--H "Content-Type: application/json" \
--H 'Authorization: Bearer ACCESS_TOKEN' \
--d '{"status":"cancelled"}' \
-'https://api.mercadopago.com/v1/payments/:ID'
-```
-]]]
-
-**Response status code: 200 OK**
-
-## Devoluções
-----[mla]----
-É possível devolver um pagamento dentro de **360 dias** a partir de sua data de aprovação.
-------------
 ----[mlb]----
-É possível devolver um pagamento dentro de **180 dias** a partir de sua data de aprovação.
-------------
-----[mlm]----
-É possível devolver um pagamento dentro de **180 dias** a partir de sua data de aprovação.
-------------
-----[mlc]----
-É possível devolver um pagamento dentro de **330 dias** a partir de sua data de aprovação.
-------------
-----[mlu, mpe]----
-É possível devolver um pagamento dentro de **90 dias** a partir de sua data de aprovação.
-------------
-----[mco]----
-É possível devolver um pagamento dentro de **180 dias** a partir de sua data de aprovação.
-------------
-
-Deve haver saldo suficiente disponível em sua conta para efetuar a devolução do valor do pagamento com sucesso. Caso contrário, obterá um erro `400 Bad Request`.
-
-Caso o comprador tenha efetuado o pagamento com cartão, o valor será devolvido no próprio cartão.
-
-Para pagamentos realizados a partir de outros meios, o valor a ser devolvido será depositado na conta Mercado Pago do comprador. Caso não possua uma conta, criaremos uma utilizando o e-mail que foi utilizado para realizar o pagamento.
-
-### Efetue a devolução integral do pagamento
-
-Para realizar a devolução integral, faça a seguinte requisição indicando o `payment_id`:
-
-[[[
-```php
-<?php
-
-$payment = MercadoPago\Payment::find_by_id($payment_id);
-$payment->refund();
-
-?>
-```
-```node
-mercadopago.payment.refund(payment_id)
-  .then(function (response) {
-    // Resposta do processo ...
-  })
-  .catch(function (error) {
-    // manipular o erro ...
-  });
-```
-```python
-refund_response = sdk.refund().create(payment_id)
-refund = refund_response["response"]
-```
-```curl
-curl -X POST \
--H "Content-Type: application/json" \
--H 'Authorization: Bearer ACCESS_TOKEN' \
-'https://api.mercadopago.com/v1/payments/:ID/refunds'
-```
-]]]
-
-> NOTE
->
-> Nota
->
-> O pagamento permanecerá com o `status` `refunded`.
-
-
-**Response status code: 201 Created**
-
-```json
-{
-    "id": PAYMENT_ID,
-    ...
-
-    "refunds": [
-      {
-        "id": 111,
-        "payment_id": PAYMENT_ID,
-        "amount": 16.98,
-        "metadata": {
-        },
-        "source": {
-            "id": "130379930",
-            "name": "Firstname Lastname",
-            "type": "collector"
-        },
-        "date_created": "2014-12-04T17:00:03.000-04:00",
-        "unique_sequence_number": null
-      }
-    ]
-}
-```
-
-----[mla, mlm, mco, mlu, mlb, mlc]----
-
-### Efetue uma devolução parcial
-
-Pode-se realizar até 20 devoluções parciais de um mesmo pagamento. Assim que concluída, o `status` do pagamento será `approved` com um status_detail em `partially_refunded`.
-
-Deve-se indicar o valor a ser devolvido.
-
-[[[
-
-```php
-<?php
-  $payment = MercadoPago\Payment::find_by_id(paymentId);
-  $payment->refund(10.5);
-?>
-```
-```java
-Payment payment = Payment.findById(paymentId);
-payment.refund(10.5);
-```
-```node
-mercadopago.payment.refundPartial({ payment_id: id, amount: Number(amount) })
-  .then(function (response) {
-    // Resposta do processo ...
-  })
-  .catch(function (error) {
-    // manipular o erro ...
-  });
-```
-```ruby
-sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
-request = {
-  amount: 10.5
-}
-result = sdk.refund.create(payment_id, request)
-```
-```python
-refund_data = {
-  "amount": 10.5
-}
-
-refund_response = sdk.refund().create(payment_id, refund_data)
-refund = refund_response["response"]
-```
-```curl
-curl -X POST \
--H "Content-Type: application/json" \
--H 'Authorization: Bearer ACCESS_TOKEN' \
-'https://api.mercadopago.com/v1/payments/:ID/refunds' \
--d '{"amount":10.5}'
-```
-]]]
+- **Boleto bancário**: Se o prazo de validade de um boleto expirar, o usuário poderá gerá-lo novamente inserindo o ID da transação da sua conta no Mercado Pago. Contudo, caso queira evitar problemas de retenção de estoque, por exemplo, é possível optar por não disponibilizar uma nova emissão deste boleto. Para isso, basta realizar seu cancelamento.
 
 ------------
 
-### Obtenha as devoluções realizadas
+Considerando as informações acima, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_payments_payment_id/put
+) e visite nossa Referência API para ter acesso à API de cancelamento.
 
-É possível consultar as devoluções de um pagamento específico através da seguinte requisição:
+## Reembolsos
 
-[[[
-```php
-<?php
-  $payment = MercadoPago\Payment::find_by_id($payment_id);
-  $refunds = $payment->refund();
-?>
-```
-```java
-Payment payment = Payment.findById(paymentId);
-ArrayList<Refund> refunds = payment.refund();
-```
-```node
-mercadopago.payment.refund(paymentId).then(function(data) {}
-  //Do Stuff ..
-});
-```
-```ruby
-sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
-result = sdk.refund.list(payment_id)
-refunds = result[:response]
-```
-```python
-refunds_response = sdk.refund().list_all(payment_id)
-refunds = refunds_response["response"]
-```
-```curl
-curl -X GET \
--H "Content-Type: application/json" \
--H 'Authorization: Bearer ACCESS_TOKEN' \
-'https://api.mercadopago.com/v1/payments/:ID'
-```
-]]]
+Reembolsos podem ser feitos de duas maneiras: **integral**, quando o valor total da venda é devolvido ao comprador ou **parcial**, quando apenas parte do valor pago é retornado ao comprador.
 
+Antes de realizar um reembolso, é importante considerar os fatores abaixo.
 
+* **Prazo de reembolso:** é possível reembolsar um pagamento dentro de 180 dias a partir da sua data de aprovação.
+* **Saldo em conta:** é preciso ter saldo suficiente disponível em sua conta para efetuar a devolução do valor, caso contrário, a transação não será realizada.
+* **Meio de pagamento:** para pagamentos com cartão de crédito, o valor será devolvido diretamente na fatura. Para outros meios de pagamento como Pix, por exemplo, o valor será devolvido na conta do pagador.
 
-Resposta:
+Para realizar reembolsos integrais ou parciais de um pagamento e consultar os reembolsos feitos em sua loja, visite nossa Referência API e acesse as APIs de Reembolso integral e parcial clicando nos links abaixo.
 
-```json
-{
-    "id": PAYMENT_ID,
-    ...
-
-    "refunds": [
-      {
-        "id": 111,
-        "payment_id": PAYMENT_ID,
-        "amount": 16.98,
-        "metadata": {
-        },
-        "source": {
-            "id": "130379930",
-            "name": "Firstname Lastname",
-            "type": "collector"
-        },
-        "date_created": "2014-12-04T17:00:03.000-04:00",
-        "unique_sequence_number": null
-      }
-    ]
-}
-```
+- [Inserir reembolsos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_payments_id_refunds/post)
+- [Obter lista de reembolsos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_payments_id_refunds/get)

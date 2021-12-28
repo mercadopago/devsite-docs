@@ -74,7 +74,6 @@ Você pode obter mais informações nas [Referências de API](https://www.mercad
 > 2. O `state_name` deve corresponder aos **estados** de acordo com o país em questão (https://api.mercadolibre.com/countries/$country_id).
 > 3. O `city_name` deve corresponder às **cidades** de acordo com seus estados. (https://api.mercadolibre.com/states/$state_id).
 
-
 ## Caixas
 
 É um **ponto de venda** que existe numa sucursal ou loja física. Cada caixa terá um código QR unívoco vinculado.
@@ -114,7 +113,6 @@ Você pode obter mais informações em [Referências de API](https://www.mercado
 > A partir de 20 de abril de 2021, os caixas não poderão ser criados sem uma loja atribuída.
 
 Uma vez criado o caixa, poderemos ver no _Response_ os links para diferentes entregáveis do QR, junto com outros dados relevantes do caixa. 
-
 
 ---
 ### Próximos passos

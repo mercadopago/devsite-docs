@@ -30,12 +30,16 @@ Verás el dinero disponible de las operaciones liquidadas en las columnas `NET_C
 
 Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la operación aparecerá en el reporte como una nueva línea en la columna `NET_CREDIT`.
 
-
+----[mlm, mlb, mlc, mco, mlu, mla]----
 > NOTE
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de ------------ ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mla]---- para revisarlo cuando lo necesites o quieras consultar algún término técnico.------------
+
+----[mpe]----
+> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de Liberaciones para revisarlo cuando lo necesites o quieras consultar algún término técnico.
+------------
 
 ## Ejemplo de un reporte
 
@@ -49,6 +53,14 @@ Observa cómo está compuesto el reporte de ----[mla]---- Liquidaciones --------
 ------------
 
 La versión por defecto mostrará una vista extendida de las columnas. El informe final tendrá la mayor cantidad de detalle posible.
+
+----[mpe]----
+> INFO
+>
+> Próximamente verás los registros de tus movimientos en orden cronológico.
+>
+> En los reportes que generes a partir de Diciembre vas a ver todos tus movimientos en el orden en que se realizaron para que puedas identificarlos más fácil y controlar mejor tus ventas.
+------------
 
 <hr/>
 
