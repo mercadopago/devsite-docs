@@ -6,27 +6,27 @@ A partir del 8 de marzo de 2022, estará disponible una nueva versión del motor
 * **Subscription** (identificado por /v1/subscriptions en v1 y ahora por `preapproval` en v0)
 * **Invoice** (identificada por /v1/invoices en v1 y ahora por `authorized_payments` en v0)
 
-La nueva versión tiene una arquitectura superior y tiene notificaciones por correo electrónico enviadas con cada actualización de estado a:
+La nueva versión tiene una arquitectura superior y cuenta con notificaciones por correo electrónico enviadas con cada actualización de estado a:
 
 * Suscripciones (creación y cancelación);
 * Cargo por suscripción;
 * Cambio de planes.
 
-Además de las notificaciones por correo electrónico, la nueva versión también tiene [Webhooks] (https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks) para `plans`, `subscriptions` e `invoices`.
+Además de las notificaciones por correo electrónico, la nueva versión también tiene [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks) para `plans`, `subscriptions` e `invoices`.
 
 > WARNING
 >
 > Importante
 >
-> A diferencia de las notificaciones de Webhook, que debe configurar, el envío de correos electrónicos está habilitado automáticamente de forma predeterminada. Sin embargo, puede solicitar el apagado manual de esta funcionalidad a través de Integraciones.
+> A diferencia de las notificaciones de Webhook, que debes configurar, el envío de correos electrónicos está habilitado automáticamente de forma predeterminada. Sin embargo, puedes solicitar el apagado manual de esta funcionalidad a través de Integraciones.
 
 ## Migración
 
-Deberá migrar a este nuevo motor porque la versión 1 **también dejará de estar disponible el 8 de marzo de 2022**.
+Se requiere la migración a este motor, ya que la **versión 1 dejará de estar disponible a partir del 8 de marzo de 2022**.
 
-La migración se producirá automáticamente y todos los planes, suscripciones y facturas migrados permanecerán activos con una nueva ID. Para verificar las nuevas ID migradas, puede utilizar el **endpoint** a continuación, que permanecerá público a su disposición hasta julio de 2022.
+La migración se producirá automáticamente y todos los plans, subscriptions y invoices migrados permanecerán activos con un nuevo ID. Para verificar los nuevos ID migrados, puedes utilizar el **endpoint** a continuación, que permanecerá público a tu disposición hasta julio de 2022.
 
-Con la nueva identificación en la mano, puede actualizar las identificaciones de su plan, suscripciones y facturas como desee.
+Cuando cuentes con el nuevo ID, puedes actualizar los IDs de tu plan, subscriptions y invoice como desees.
 
 [[[
 ```curl
@@ -43,4 +43,4 @@ curl --location --request GET 'https://api.mercadopago.com/subscriptions/migrati
 >
 > Importante
 >
-> Le notificaremos por correo electrónico cuando se alcance su fecha límite de migración. Es importante que programe y tenga preparados los cambios para la migración, ya que todos los `Planes` y `Suscripciones` con estado **cancelado**, **inactivo** y/o **finalizado**, así como `Invoices` de más de seis meses no se migrarán.
+> Te notificaremos por correo electrónico cuando llegue tu fecha límite de migración. Es importante que programes y tengas preparados los cambios para la migración, ya que todos los `Planes` y `Suscripciones` con estado **cancelado**, **inactivo** y/o **finalizado**, así como `Invoices` de más de seis meses no se migrarán.

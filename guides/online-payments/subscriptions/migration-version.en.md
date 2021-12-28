@@ -22,11 +22,11 @@ In addition to email notifications, the new version also has [Webhooks](https://
 
 ## Migration
 
-You will need to migrate to this new engine because version 1 **will also cease to be available on March 8, 2022**.
+Migration to this engine is required, as **version 1 will no longer be available from March 8, 2022 onwards**.
 
 The migration will happen automatically and all migrated plans, subscriptions and invoices will remain active with a new ID. To verify the new migrated IDs, you can use the **endpoint** below which will remain public at your disposal until July 2022.
 
-With the new ID in hand, you can update your plan IDs, subscriptions and invoices as you wish.
+Once you have the new ID, you can update your plan IDs, subscriptions and invoices as you wish.
 
 [[[
 ```curl
