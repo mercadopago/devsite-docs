@@ -29,27 +29,27 @@ Checkout Pro es la integración que **te permite cobrar a través de nuestro for
 ----[mla, mlb]----
 |                                       | Checkout Pro | Web Tokenize Checkout | API |
 | :--- | :--: | :--: | :--: |
-| Dificultad de integración             | Baja | Media | Alta |
-| Diseño UI/UX                          | ✔ | ✔ |   |
-| Conversión optimizada                 | ✔ | ✔ |   |
-| Aprobación optimizada                 | ✔ |   |   |
-| Pago de usuarios invitados            | ✔ | ✔ | ✔ |
-| Pago de usuarios registrados          | ✔ |   |   |
-| Prevención de fraude                  | ✔ | ✔ | ✔ |
-| Pantalla de finalización de pago      | ✔ |   |   |
-| Pago con dos tarjetas                 | ✔ |   |   |
+| Dificultad de integración             | Baja | Alta |
+| Diseño UI/UX                          | ✔ |   |
+| Conversión optimizada                 | ✔ |   |
+| Aprobación optimizada                 | ✔ |   |
+| Pago de usuarios invitados            | ✔ | ✔ |
+| Pago de usuarios registrados          | ✔ |   |
+| Prevención de fraude                  | ✔ | ✔ |
+| Pantalla de finalización de pago      | ✔ |   |
+| Pago con dos tarjetas                 | ✔ |   |
 ------------
 ----[mlm, mlu, mco, mlc, mpe]----
-|                                       | Checkout Pro | Web Tokenize Checkout | API |
+|                                       | Checkout Pro | API |
 | :--- | :--: | :--: | :--: |
-| Dificultad de integración             | Baja | Media | Alta |
-| Diseño UI/UX                          | ✔ | ✔ |   |
-| Conversión optimizada                 | ✔ | ✔ |   |
-| Aprobación optimizada                 | ✔ |   |   |
-| Pago de usuarios invitados            | ✔ | ✔ | ✔ |
-| Pago de usuarios registrados          | ✔ |   |   |
-| Prevención de fraude                  | ✔ | ✔ | ✔ |
-| Pantalla de finalización de pago      | ✔ |   |   |
+| Dificultad de integración             | Baja | Alta |
+| Diseño UI/UX                          | ✔ |   |
+| Conversión optimizada                 | ✔ |   |
+| Aprobación optimizada                 | ✔ |   |
+| Pago de usuarios invitados            | ✔ | ✔ |
+| Pago de usuarios registrados          | ✔ |   |
+| Prevención de fraude                  | ✔ | ✔ |
+| Pantalla de finalización de pago      | ✔ |   |
 ------------
 
 ---
