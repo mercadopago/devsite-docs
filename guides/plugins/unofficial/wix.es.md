@@ -89,7 +89,7 @@ Para integrar el Checkout API en su tienda, siga los pasos a continuación.
 
 ### Prueba de compras
 
-[TXTSNIPPET][/guides/snippets/test-integration/wix-test-purchase.es.md
+[TXTSNIPPET][/guides/snippets/test-integration/wix-test-purchase]
 
 ### Activación del modo producción
 
