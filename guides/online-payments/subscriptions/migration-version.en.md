@@ -18,7 +18,7 @@ In addition to email notifications, the new version also has [Webhooks](https://
 >
 > Important
 >
-> Unlike Webhook notifications, which you need to set up, sending emails is automatically enabled by default. However, you can request manual shutdown of this functionality through Integrations.
+> Unlike Webhooks notifications, which you need to set up, sending emails is automatically enabled by default. However, you can request manual shutdown of this functionality through Integrations.
 
 ## Migration
 
@@ -39,8 +39,8 @@ curl --location --request GET 'https://api.mercadopago.com/subscriptions/migrati
 | Request | `plan` <br/> `subscription` <br/>`invoice` | Unique identifier |
 | Response | `preapproval` <br/> `preapproval_plan` <br/> `authorized_payment`| Unique identifier |
 
-> WARNING
+> NOTE
 >
-> Important
+> Note
 >
 > We will notify you by email when the due date for your migration is reached. It is important that you schedule and have the changes prepared for the migration, as all `Plans` and `Subscriptions` with status **cancelled**, **inactive** and/or **finished**, as well as `Invoices` older than six months will not be migrated.
