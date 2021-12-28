@@ -34,10 +34,10 @@ curl --location --request GET 'https://api.mercadopago.com/subscriptions/migrati
 ```
 ]]]
 
-| | Resource | ID |
+| - | Resource | ID |
 | :--- | :--- | :--- |
-| Request | `plan` </br> `subscription` </br> `invoice` | Unique identifier |
-| Response | `preapproval` </br> `preapproval_plan` </br> `authorized_payment`| Unique identifier |
+| Request | `plan` <br/> `subscription` <br/>`invoice` | Unique identifier |
+| Response | `preapproval` <br/> `preapproval_plan` <br/> `authorized_payment`| Unique identifier |
 
 > WARNING
 >
