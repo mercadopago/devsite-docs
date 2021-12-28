@@ -88,4 +88,4 @@ Pronto! Com o checkout transparente instalado em sua loja, faça uma compra test
 
 ### Ativação do modo produção
 
-[TXTSNIPPET][/guides/snippets/test-integration/wix-production-mode.pt.md]
+[TXTSNIPPET][/guides/snippets/test-integration/wix-production-mode]
