@@ -84,7 +84,7 @@ Pronto! Com o checkout transparente instalado em sua loja, faça uma compra test
 
 ### Teste de compras
 
-[TXTSNIPPET][/guides/snippets/test-integration/wix-test-purchase.pt.md]
+[TXTSNIPPET][/guides/snippets/test-integration/wix-test-purchase]
 
 ### Ativação do modo produção
 
