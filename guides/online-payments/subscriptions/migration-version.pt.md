@@ -42,6 +42,6 @@ curl --location
 
 > NOTE
 > 
-> Nota
+> Importante
 > 
 > Vamos notificá-lo por e-mail quando chegar a data limite da sua migração. É importante que você se programe e tenha as mudanças preparadas para a migração, pois todos os `Plans` e `Subscriptions`com status **cancelled**, **inactive** e/ou **finished**, bem como `Ìnvoices` com mais de seis meses, não serão migrados. 
