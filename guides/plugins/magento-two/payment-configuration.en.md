@@ -98,6 +98,7 @@ The payment will be canceled when the status is `pending` or` in_process`, other
 
 
 > PREV_STEP_CARD_EN
+>
 > Plugin installation
 >
 > Follow the steps to install the plugin.
