@@ -1,4 +1,4 @@
-# V1 to V0 migration
+# Migration from V1 to V0
 
 As of March 8, 2022 a new version of the signature engine related to the entities below will be available with new features.
 
