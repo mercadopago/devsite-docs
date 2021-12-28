@@ -41,7 +41,7 @@ Pronto! Com o Checkout Pro instalado em sua loja, faça uma compra teste e garan
 
 ### Teste de compras
 
-[TXTSNIPPET][/guides/snippets/test-integration/wix-test-purchase.pt.md]
+[TXTSNIPPET][/guides/snippets/test-integration/wix-test-purchase]
 
 
 ### Ativação do modo produção
