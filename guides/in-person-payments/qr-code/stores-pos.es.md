@@ -129,7 +129,7 @@ Una vez creada la caja, podremos ver en el _Response_ los links a distintos entr
 
 ## Video tutorial
 
-Descubra cómo registrar el Punto de venta con nuestro video tutorial:
+Descubra cómo registrar el Punto de Venta con nuestro video tutorial:
 
 <div class="embed-container">
     <iframe width="1106" height="622" src="https://www.youtube.com/embed/ipFMmRtLIJI" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">

@@ -89,7 +89,8 @@ Implementa IPN de `merchant_order` junto con una búsqueda de la orden por `exte
 
 ## Video tutorial
 
-Descubra cómo llevar a cabo el proceso transaccional con Serviced QR Model, vea nuestro video tutorial:
+Vea nuestro video tutorial y descubra cómo llevar a cabo el proceso transaccional con el Serviced QR Model:
+
 <div class="embed-container">
     <iframe width="1106" height="622" src="https://www.youtube.com/embed/JsuMZw3Z5k4" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
     </iframe>

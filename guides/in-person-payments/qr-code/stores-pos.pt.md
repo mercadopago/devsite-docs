@@ -86,7 +86,6 @@ Saiba como realizar o cadastro da loja com o nosso vídeo tutorial:
 <br/>
 <br/>
 
-
 ## Caixas
 
 É um **ponto de venda** que existe numa sucursal ou loja física. Cada caixa terá um código QR unívoco vinculado.

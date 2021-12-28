@@ -86,7 +86,8 @@ Implementa IPN de `merchant_order` junto com uma busca do pedido por `external_r
 
 ## Vídeo tutorial 
 
-Saiba como realizar o processo transacional com Modelo QR Atendido, veja nosso vídeo tutorial:
+Veja nosso vídeo tutorial e saiba como realizar o processo transacional com o Modelo QR Atendido:
+
 <div class="embed-container">
     <iframe width="1106" height="622" src="https://www.youtube.com/embed/Q8BdL5m6SXc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
     </iframe>
@@ -96,7 +97,6 @@ Saiba como realizar o processo transacional com Modelo QR Atendido, veja nosso v
 <br/>
 
 ---
-
 ### Próximos passos
 
 
