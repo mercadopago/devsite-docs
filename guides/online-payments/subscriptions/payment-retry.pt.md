@@ -55,7 +55,7 @@ Após 3 parcelas com pagamentos recusados a assinatura será automaticamente can
 
 > NOTE
 > 
-> Note
+> Nota
 > 
 > O resultado de uma assinatura não afeta a geração e o processamento das parcelas restantes para a mesma assinatura.
 
