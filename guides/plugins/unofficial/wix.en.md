@@ -95,4 +95,4 @@ Done! With Checkout API installed in your store, make a test purchase and ensure
 
 ### Activating production mode
 
-[TXTSNIPPET][/guides/snippets/test-integration/wix-production-mode.en.md]
+[TXTSNIPPET][/guides/snippets/test-integration/wix-production-mode]
