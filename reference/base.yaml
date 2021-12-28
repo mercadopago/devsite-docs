@@ -43,7 +43,6 @@ tags:
     externalDocs: 
       url: '/guides/in-person-payments/qr-code/introduction'
   
-  
 #------DEFAULT - ALL ARCHIVES - END------
 
 schemas: !!inc/dir [ 'devsite-docs/reference/schemas', { recursive: false, allowEmpty: false }]
