@@ -46,7 +46,7 @@ Pronto! Com o Checkout Pro instalado em sua loja, faça uma compra teste e garan
 
 ### Ativação do modo produção
 
-[TXTSNIPPET][/guides/snippets/test-integration/wix-production-mode.pt.md]
+[TXTSNIPPET][/guides/snippets/test-integration/wix-production-mode]
 
 ----[mlb, mlm]----
 ## Checkout Transparente
