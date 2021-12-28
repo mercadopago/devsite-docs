@@ -51,7 +51,7 @@ Done! With Checkout Pro installed in your store, make a test purchase and ensure
 
 ### Activating production mode
 
-[TXTSNIPPET][/guides/snippets/test-integration/wix-production-mode.en.md]
+[TXTSNIPPET][/guides/snippets/test-integration/wix-production-mode]
 
 ----[mlb, mlm]----
 ## Checkout API
