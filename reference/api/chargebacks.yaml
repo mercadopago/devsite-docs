@@ -100,7 +100,7 @@ paths:
     get:
       tags:
           - $ref: "#/tags/marketplace"
-      summary: Get all Refunds
+      summary: Check refunds list
       description: Get all Refunds for a specific payment
       parameters:
         - name: id
@@ -223,7 +223,7 @@ paths:
     post:
       tags:
         - $ref: "#/tags/marketplace"
-      summary: Partial and full refund
+      summary: Post refunds
       description: Create Partial/Full Refund for a specific payment. If the amount field is filled, it will create a partial refund, if not, it will create a full refund
       parameters:
         - name: id
@@ -368,7 +368,7 @@ paths:
     get:
       tags:
         - $ref: "#/tags/marketplace"
-      summary: Get a specific Refund
+      summary: Get specific refund
       description: Get a specific Refund from a specific payment
       parameters:
         - name: id
@@ -501,7 +501,7 @@ paths:
     put:
       tags:
         - $ref: '#/tags/marketplace'
-      summary: Cancel a sale
+      summary: Create a cancellation
       description: Cancel a sale for a specific payment
       parameters:
         - name: payment_id
