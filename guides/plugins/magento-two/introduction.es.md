@@ -10,9 +10,9 @@ Magento es una plataforma de comercio electrónico que te permite crear una tien
 
 Puedes cobrar con Mercado Pago en tu tienda online creada con Magento 2 con solo integrar nuestro plugin. Sigue estos pasos para comenzar a ofrecer el checkout de Mercado Pago. 
 
-### Próximo paso
+---
 
-> LEFT_BUTTON_REQUIRED_ES
+> NEXT_STEP_CARD_ES
 >
 > Requisitos previos de integración
 >

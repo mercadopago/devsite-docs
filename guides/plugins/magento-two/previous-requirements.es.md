@@ -17,13 +17,18 @@ Para utilizar la integración de Mercado Pago con Magento 2 en tu tienda, debes 
 
 > Este módulo está configurado para soportar los patrones de Magento 2. Te recomendamos no utilizar plugins o módulos que cambien las características y funcionamiento del patrón de Magento para evitar errores en el módulo o que éste deje de funcionar. 
 
-### Próximo paso
+> PREV_STEP_CARD_ES
+>
+> Introducción
+>
+> Conoce más acerca del plugin de Magento 2.
+>
+> [Introducción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/magento-two/introduction)
 
-> LEFT_BUTTON_REQUIRED_ES
+> NEXT_STEP_CARD_ES
 >
 > Instalación del plugin
 >
 > Sigue los pasos para instalar el plugin.
 >
-> 
 > [Instalación del plugin](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/magento-two/instalation)

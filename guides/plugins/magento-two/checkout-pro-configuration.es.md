@@ -12,13 +12,18 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con el Ch
 
 ¡Listo! Checkout Pro ha sido configurado y habilitado con éxito.
 
-### Próximo paso
+> PREV_STEP_CARD_ES
+>
+> Configuración de pagos
+>
+> Sigue los pasos para configurar los pagos de Custom Checkout (Transparente).
+>
+> [Configuración de pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/magento-two/payment-configuration)
 
-> LEFT_BUTTON_REQUIRED_ES
+> NEXT_STEP_CARD_ES
 >
 > Configura las notificaciones de pago
 >
 > Sigue los pasos para configurar el estado de pedido para las notificaciones de pago.
->
 > 
 > [Configuración de las notificaciones de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/magento-two/notifications-configuration)

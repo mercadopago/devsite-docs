@@ -68,14 +68,18 @@ Puedes instalar la extensión de Mercado Pago sin costo a través de la tienda d
 
 ¡Y listo! Ya instalaste con éxito el plugin de Mercado Pago para Magento 2.
 
+> PREV_STEP_CARD_ES
+>
+> Requisitos previos de integración
+>
+> Conoce los requisitos previos para realizar la integración.
+>
+> [Requisitos previos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/magento-two/previous-requirements)
 
-### Próximo paso
-
-> LEFT_BUTTON_REQUIRED_ES
+> NEXT_STEP_CARD_ES
 >
-> Configuración de pagos con tarjeta de crédito y tickets
+> Configuración de pagos
 >
-> Sigue los pasos para configurar los pagos de Custom Checkout.
+> Sigue los pasos para configurar los pagos de Custom Checkout (Transparente).
 >
-> 
-> [Configuración de pagos con tarjeta de crédito y tickets](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/magento-two/payment-configuration)
+> [Configuración de pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/magento-two/payment-configuration)

@@ -38,6 +38,7 @@ El siguiente paso es habilitar los medios de pago. Para eso, debes dirigirte al 
 > Antes de configurar Pix como medio de pago, ten en cuenta estos pasos:<br><br>
 > - [Verifica la última versión](https://marketplace.magento.com/mercadopago-core.html#product.info.details.release_notes) y actualiza tu plugin de Mercado Pago.<br>
 > - Registra tu clave en Mercado Pago. Si no lo haces, tus clientes no podrán finalizar la compra. Aquí te contamos [cómo hacerlo](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required).
+> [Haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-pix) para más información sobre pagos con Pix en Checkout Transparente. 
 ------------
 
 ## Configura los pagos con tarjetas de crédito y débito
@@ -92,14 +93,18 @@ Para **cancelar pagos**, deberás activar la opción en la configuración de tu 
 Al habilitar esta opción, el módulo cancelará el pago en Mercado Pago cuando se cancele la órden.
 El pago se cancelará cuando el estado esté en `pending` o `in_process`, de lo contrario el módulo devolverá un mensaje de error.
 
+> PREV_STEP_CARD_ES
+>
+> Instalación del plugin
+>
+> Sigue los pasos para instalar el plugin.
+>
+> [Instalación del plugin](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/magento-two/instalation)
 
-### Próximo paso
-
-> LEFT_BUTTON_REQUIRED_ES
+> NEXT_STEP_CARD_ES
 >
 > Configura Checkout Pro
 >
 > Configura el módulo para aceptar pagos con Checkout Pro.
->
 > 
 > [Configuración del Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/magento-two/checkout-pro-configuration)
