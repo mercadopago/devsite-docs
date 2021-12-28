@@ -42,6 +42,6 @@ curl --location
 
 > NOTE
 >
-> Note
+> Important
 >
 > We will notify you by email when the due date for your migration is reached. It is important that you schedule and have the changes prepared for the migration, as all `Plans` and `Subscriptions` with status **cancelled**, **inactive** and/or **finished**, as well as `Invoices` older than six months will not be migrated.
