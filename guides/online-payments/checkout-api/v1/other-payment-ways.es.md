@@ -50,7 +50,7 @@ Puedes consultar los medios de pago disponibles siempre que lo necesites.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-var response = await mercadopago.payment_methods.listAll()
+var response = await mercadopago.payment_methods.listAll();
 var payment_methods = response.body;
 ```
 ```java
@@ -531,7 +531,7 @@ Puedes consultar los medios de pago disponibles siempre que lo necesites.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-var response = await mercadopago.payment_methods.listAll()
+var response = await mercadopago.payment_methods.listAll();
 var payment_methods = response.body;
 ```
 ```java
@@ -1056,7 +1056,7 @@ Puedes consultar los medios de pago disponibles siempre que lo necesites.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-var response = await mercadopago.payment_methods.listAll()
+var response = await mercadopago.payment_methods.listAll();
 var payment_methods = response.body;
 ```
 ```java
@@ -1487,7 +1487,7 @@ Puedes consultar los medios de pago disponibles siempre que lo necesites.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-var response = await mercadopago.payment_methods.listAll()
+var response = await mercadopago.payment_methods.listAll();
 var payment_methods = response.body;
 ```
 ```java
@@ -2180,7 +2180,7 @@ Puedes consultar los medios de pago disponibles siempre que lo necesites.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-var response = await mercadopago.payment_methods.listAll()
+var response = await mercadopago.payment_methods.listAll();
 var payment_methods = response.body;
 ```
 ```java
@@ -2807,7 +2807,7 @@ Puedes consultar los medios de pago disponibles siempre que lo necesites.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-var response = await mercadopago.payment_methods.listAll()
+var response = await mercadopago.payment_methods.listAll();
 var payment_methods = response.body;
 ```
 ```java
@@ -3222,7 +3222,7 @@ Puedes consultar los medios de pago disponibles siempre que lo necesites.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-var response = await mercadopago.payment_methods.listAll()
+var response = await mercadopago.payment_methods.listAll();
 var payment_methods = response.body;
 ```
 ```java

@@ -46,7 +46,7 @@ You can check the available payment methods whenever you need.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-var response = await mercadopago.payment_methods.listAll()
+var response = await mercadopago.payment_methods.listAll();
 var payment_methods = response.body;
 ```
 ```java
@@ -558,7 +558,7 @@ You can check the available payment methods whenever you need.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-var response = await mercadopago.payment_methods.listAll()
+var response = await mercadopago.payment_methods.listAll();
 var payment_methods = response.body;
 ```
 ```java
@@ -1080,7 +1080,7 @@ You can check the available payment methods whenever you need.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-var response = await mercadopago.payment_methods.listAll()
+var response = await mercadopago.payment_methods.listAll();
 var payment_methods = response.body;
 ```
 ```java
@@ -1541,7 +1541,7 @@ You can check the available payment methods whenever you need.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-var response = await mercadopago.payment_methods.listAll()
+var response = await mercadopago.payment_methods.listAll();
 var payment_methods = response.body;
 ```
 ```java
@@ -2265,7 +2265,7 @@ You can check the available payment methods whenever you need.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-var response = await mercadopago.payment_methods.listAll()
+var response = await mercadopago.payment_methods.listAll();
 var payment_methods = response.body;
 ```
 ```java
@@ -2924,7 +2924,7 @@ You can check the available payment methods whenever you need.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-var response = await mercadopago.payment_methods.listAll()
+var response = await mercadopago.payment_methods.listAll();
 var payment_methods = response.body;
 ```
 ```java
@@ -3369,7 +3369,7 @@ You can check the available payment methods whenever you need.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken(config.access_token);
 
-var response = await mercadopago.payment_methods.listAll()
+var response = await mercadopago.payment_methods.listAll();
 var payment_methods = response.body;
 ```
 ```java
