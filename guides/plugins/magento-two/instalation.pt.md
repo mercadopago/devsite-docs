@@ -44,7 +44,7 @@ Pronto! Você instalou com sucesso o plugin Mercado Pago para Magento 2.
 
 ## Instalação via Magento Marketplace
 
-Através da loja Magento, você pode instalar gratuitamente a extensão do Mercado Pago de forma muito simples. Siga os passos abaixo.
+Através da loja Magento, você pode instalar gratuitamente o plugin do Mercado Pago de forma muito simples. Siga os passos abaixo.
 
 1. Acesse a [Loja Oficial Magento](https://marketplace.magento.com/). No mecanismo de busca, você deve colocar Mercado Pago e selecionar [a extensão oficial](https://marketplace.magento.com/mercadopago-core.html).
 2. Abra o menu **Edition** e selecione a edição necessária do plugin. Em seguida, abra o menu **Sua versão da loja** e selecione o tipo de versão de que você precisa para o seu negócio. Por fim, clique em **Adicionar ao carrinho** para adicionar o plugin ao carrinho.
