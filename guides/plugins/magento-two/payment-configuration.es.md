@@ -41,15 +41,10 @@ El siguiente paso es habilitar los medios de pago. Para eso, debes dirigirte al 
 > [Haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/receiving-payment-by-pix) para más información sobre pagos con Pix en Checkout Transparente. 
 ------------
 
-## Configura los pagos con tarjetas de crédito y débito
+## Configura tu Checkout para pagos con tarjetas de crédito y débito
 
-La configuración de este medio de pago ofrecerá la opción al comprador de realizar pagos con tarjeta de crédito y debito disponibles en su país.
+La configuración de este medio de pago ofrecerá la opción al comprador de realizar pagos con tarjeta de crédito y debito disponibles en el país donde esté configurada la tienda.
 Te compartimos un detalle de las distintas opciones que encontrarás para configurarlo:
-
-
-## Configura tu Checkout Custom
-
-Te compartimos un detalle de las distintas opciones que encontrarás para configurar tu Checkout Custom
 
 | Campo | Descripción |
 |---|---|
@@ -64,9 +59,9 @@ Te compartimos un detalle de las distintas opciones que encontrarás para config
 A continuación, haz clic en “Save Config” para guardar tus preferencias.
 
 
-## Configura el Checkout Custom - Medios de Pago OFF
+## Configura tu Checkout Custom para medios de Pago offline
 
-La configuración de este método de pago ofrecerá la opción del comprador realizar pagos con métodos de pago offline (Ticket y ATM) disponibles en su país.
+La configuración de este método de pago ofrecerá la opción del comprador realizar pagos con métodos de pago offline disponibles en el país donde esté configurada la tienda.
 Te compartimos un detalle de las distintas opciones que encontrarás para configurar tu Checkout Custom:
 
 | Campo | Descripción |
@@ -83,13 +78,23 @@ A continuación, haz clic en “Save Config” para guardar tus preferencias.
 
 ## Devoluciones y cancelaciones
 
-Para **aceptar la devolución de pagos**, deberás activar la opción en la configuración de tu medio de pago seleccionando la opción "Yes" en el campo desplegable.
+Las **devoluciones** son transacciones que se realizan cuando se revierte un determinado cargo y los importes abonados se devuelven al comprador. Esto significa que el cliente recibirá el monto pagado por la compra de un determinado producto o servicio en su cuenta o en el extracto de su tarjeta de crédito.
+
+Las **cancelaciones** ocurren cuando se realiza una compra pero el pago aún no ha sido aprobado por algún motivo. En este caso, considerando que la transacción no fue procesada y el establecimiento no recibió ningún monto, la compra se cancela y no ocurre ningún cargo.
+
+A continuación encontrarás los pasos necesarios para aceptar devoluciones y realizar cancelaciones en tu tienda.
+
+### Devoluciones
+
+Para aceptar la devolución de pagos en tu tienda, deberás activar la opción en la configuración de tu medio de pago seleccionando la opción "Yes" en el campo desplegable.
 
 Al habilitar esta opción, el módulo realizará la devolución parcial o total del pago en el Mercado Pago cuando se cree un memo de crédito en la órden. La devolución sólo se realiza en los pagos que tienen el estado Approved (aprobados).
 
-Si la devolución se realiza en el panel del Mercado Pago, el módulo no está preparado para crear memo de crédito automáticamente. Debido a esta limitación, es aconsejable que sea creado a partir de la tienda.
+> Si la devolución se realiza en el panel del Mercado Pago, el módulo no está preparado para crear memo de crédito automáticamente. Debido a esta limitación, es aconsejable que sea creado a partir de la tienda.
 
-Para **cancelar pagos**, deberás activar la opción en la configuración de tu medio de pago seleccionando la opción "Yes" en el campo desplegable. 
+### Cancelaciones
+
+Para cancelar pagos de transacciones reaizadas en tu tienda, deberás activar la opción en la configuración de tu medio de pago seleccionando la opción "Yes" en el campo desplegable. 
 Al habilitar esta opción, el módulo cancelará el pago en Mercado Pago cuando se cancele la órden.
 El pago se cancelará cuando el estado esté en `pending` o `in_process`, de lo contrario el módulo devolverá un mensaje de error.
 

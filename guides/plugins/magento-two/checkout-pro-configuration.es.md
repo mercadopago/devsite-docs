@@ -8,7 +8,7 @@ Este proceso explicará cómo configurar el módulo para aceptar pagos con el Ch
 
 3. Ahora puedes habilitar el medio de pago. Para eso, ve a la opción “Enable” y selecciona **Yes**. En este paso, también puedes configurar el **Tipo de Checkout** (Type Checkout) y si el usuario debe volver automáticamente a su tienda al finalizar el pago (Auto Redirect).
 
-![Checkout Pro Redirect Configuration](images/magento2/mercadopago_global_configuration.png)
+![Checkout Pro Redirect Configuration](images/magento2/magentotwo_classic_checkout.png)
 
 ¡Listo! Checkout Pro ha sido configurado y habilitado con éxito.
 

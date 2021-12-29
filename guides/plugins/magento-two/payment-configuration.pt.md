@@ -40,15 +40,11 @@ O próximo passo é habilitar o meio de pagamento. Para isso, você deve ir para
 > [Clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-pix) para mais informações sobre pagamentos com Pix no Checkout Transparente. 
 ------------
 
-## Configurar pagamentos com cartões de crédito e débito
+## Configurar o Checkout para pagamentos com cartões de crédito e débito
 
-Ao configurar essa forma de pagamento, o comprador poderá efetuar pagamentos com os cartões de crédito e débito disponíveis em seu país.
-
+Ao configurar essa forma de pagamento, o comprador poderá efetuar pagamentos com os cartões de crédito e débito disponíveis no país onde a loja foi instalada.
 Compartilhamos um detalhe das diferentes opções que você encontrará para configurá-lo:
 
-## Configure o seu Checkout Transparente
-
-Compartilhamos detalhes das diferentes opções que você encontrará para configurar o seu checkout personalizado:
 
 | Campo | Descrição
 | --- | --- |
@@ -63,9 +59,9 @@ Compartilhamos detalhes das diferentes opções que você encontrará para confi
 Em seguida, clique em "Save Config" para salvar suas preferências.
 
 
-## Configurar o Checkout Transparente - Métodos de pagamento OFF
+## Configurar o Checkout Transparente com métodos de pagamento offline
 
-A configuração dessa forma de pagamento oferecerá ao comprador a opção de realizar pagamentos com os meios de pagamento offline (Boleto e Caixa eletrônico) disponíveis no seu país.
+A configuração dessa forma de pagamento oferecerá ao comprador a opção de realizar pagamentos com os meios de pagamento offline (Boleto e Caixa eletrônico) disponíveis no país onde a loja foi instalada.
 Compartilhamos um detalhe das diferentes opções que você encontrará para configurar o seu checkout personalizado:
 
 | Campo | Descrição
