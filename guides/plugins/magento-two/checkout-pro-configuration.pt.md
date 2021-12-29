@@ -1,4 +1,4 @@
-# Configure o Checkout Pro
+# Configuração do Checkout Pro
 
 Este processo explicará como configurar o plugin para aceitar pagamentos com Checkout Pro em Redirect, Iframe ou Lightbox:
 
