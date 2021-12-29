@@ -7,7 +7,7 @@ Para utilizar la integración de Mercado Pago con Magento 2 en tu tienda, debes 
 | Versión del Magento | 2.x |
 | Ambiente | LAMP (Linux, Apache, MySQL, y PHP)<br/>LNMP stack |
 | Sistema Operativo | Linux x86-64 |
-| Memoria | Minimum 2GB of RAM |
+| Memoria | Mínimo 2GB de RAM |
 | Web Server | Apache 2.x<br/>Nginx 1.7.x |
 | Versión del PHP | 5.6.x<br/>7.0.2<br/>7.0.6–7.0.x<br/> |
 | Versión del MySQL | MySQL 5.6<br/>MariaDB y Percona son compatibles con Magento porque soportan las APIs de MySQL 5.6. |
