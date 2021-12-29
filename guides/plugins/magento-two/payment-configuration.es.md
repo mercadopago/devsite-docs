@@ -1,4 +1,4 @@
-# Configura los medios de pago (Custom Checkout)
+# Configura los medios de pago 
 
 Para configurar el módulo y aceptar pagos con tarjeta de crédito----[mlb]----, Pix------------ y ticket en el Custom Checkout, sigue estos pasos:
 

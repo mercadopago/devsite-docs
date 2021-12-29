@@ -1,4 +1,4 @@
-# Configure the payment methods (Custom Checkout)
+# Configure the payment methods 
 
 To configure the module and accept payments by credit card ----[mlb]----, Pix------------ and ticket in the Custom (Transparent), follow these steps:
 
