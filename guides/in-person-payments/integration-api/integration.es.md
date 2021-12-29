@@ -55,7 +55,6 @@ También deberás contar con un dispositivo Point.
 
 Primero, inicia sesión en la aplicación de Mercado Pago. Luego, oprime en el ícono QR y escanea el código que aparece al encender tu dispositivo Point. Y listo, tu dispositivo Point quedará vinculado a tu cuenta.
 
-![Qr Point Scan](/images/mobile/point-qr-scan.png)
 
 ### Configura tu tienda y tu caja
 

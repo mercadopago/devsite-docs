@@ -4,7 +4,7 @@ Para comenzar a procesar tus pagos, sigue estos pasos:
 
 ## Obtén el listado de tus dispositivos disponibles
 
-Antes de crear una intención de pago, debes obtener los dispositivos Point asociados a tu cuenta. Pueden hacerlo de esta manera:
+Antes de crear una intención de pago, debes obtener los dispositivos Point asociados a tu cuenta. Puedes hacerlo de esta manera:
 
 ``` curl
 curl --location --request GET 'https://api.mercadopago.com/point/integration-api/devices' \

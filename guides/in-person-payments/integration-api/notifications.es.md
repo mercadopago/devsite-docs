@@ -12,7 +12,7 @@ Para integrar las notificaciones Webhook, sigue las instrucciones de [esta docum
 
 ## Ejemplos de estados de notificaciones
 
-Una vez que hayas implementado las notificaciones y realizado los ajustes necesarios, estas tendrá el siguiente formato:
+Una vez que hayas implementado las notificaciones y realizado los ajustes necesarios, estas tendrán el siguiente formato:
 
 #### Estado Finished:
 

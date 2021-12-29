@@ -42,7 +42,6 @@ La API de Integraciones te permite conectar tus puntos de venta (PDV) al ecosist
 
 ![Mercado Pago Point Flow](/images/mobile/MercadoPagoFlowPoint.png)
 
-> Si quieres conocer más detalles acerca de la API de Integraciones y los pedidos de información que puedes hacer, ingresa a [Referencia de API](https://www.mercadopago.com.ar/developers/es/reference)
 
 
 ### Próximos pasos
@@ -51,7 +50,7 @@ La API de Integraciones te permite conectar tus puntos de venta (PDV) al ecosist
 >
 > Comienza a integrar la API de Integraciones
 >
-> Para realizar la integración, primero debes obtener las credenciales de identificación para tu integración.
+> Para realizar la integración, primero debes obtener las credenciales de identificación.
 >
 > [Integra la API de Integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/integration-api/integration)
 
