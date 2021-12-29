@@ -4,6 +4,24 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Dezembro 2021
 
+### 23 de dezembro
+
+> CHANGELOG
+>
+> Nova versão SDK NodeJS
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK NODEJS
+
+Lançamos a nova versão 1.5.10 do SDK NodeJS.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.10).
+
 ### 1 de dezembro
 
 > CHANGELOG
@@ -360,7 +378,7 @@ para que você saiba como no Mercado Pago garantimos a segurança das transaçõ
 
 ## Agosto 2021
 
-## 19 de agosto
+### 19 de agosto
 
 > CHANGELOG
 >

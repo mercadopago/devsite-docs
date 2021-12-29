@@ -4,6 +4,24 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Diciembre 2021
 
+### 23 de diciembre
+
+> CHANGELOG
+>
+> Nueva versión SDK NodeJS
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK NODEJS
+
+Lanzamos una nueva versión del SDK NodeJS 1.5.10.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.10).
+
 ### 1 de diciembre
 
 > CHANGELOG

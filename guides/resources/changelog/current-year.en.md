@@ -4,6 +4,24 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## December 2021
 
+### December 23rd
+
+> CHANGELOG
+>
+> New version of SDK NodeJS
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK NODEJS
+
+We have released a new version of SDK NodeJS 1.5.10.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.10) for further details regarding this release.
+
 ### December 1st
 
 > CHANGELOG
