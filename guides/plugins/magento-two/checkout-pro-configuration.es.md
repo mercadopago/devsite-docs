@@ -1,6 +1,6 @@
 # Configura Checkout Pro
 
-Este proceso explicará cómo configurar el módulo para aceptar pagos con el Checkout Pro en Redirect, Iframe o Lightbox:
+Este proceso explicará cómo configurar el módulo para aceptar pagos con el Checkout Pro utilizando los métodos Redirect, Iframe o Lightbox:
 
 1. Ve al menú Stores > Configuration > Sales > Payment Methods.
 
