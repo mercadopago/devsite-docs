@@ -18,5 +18,4 @@ Puedes cobrar con Mercado Pago en tu tienda online creada con Magento 2 con solo
 >
 > Conoce los requisitos previos para realizar la integración.
 >
-> 
 > [Requisitos previos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/magento-two/previous-requirements)
