@@ -53,7 +53,7 @@ Te compartimos un detalle de las distintas opciones que encontrarás para config
 
 | Campo | Descripción |
 |---|---|
-| Custom Checkout - Tarjetas de Crédito y Débito | La configuración de este campo ofrecerá la opción del comprador realizar pagos con tarjeta de crédito y débito disponibles en su país. Por defecto, el método de pago con tarjeta ya se encuentra activado. Para desactivarlo, solo es necesario cambiar la opción **Habilitad** por "Yes" a "No".  |
+| Custom Checkout - Tarjetas de Crédito y Débito | La configuración de este campo ofrecerá la opción del comprador realizar pagos con tarjeta de crédito y débito disponibles en su país. Por defecto, el método de pago con tarjeta ya se encuentra activado. Para desactivarlo, solo es necesario cambiar la opción **Habilitado** por "Yes" a "No".  |
 | Título del método de pago  | Esta opción permite cambiar el titulo del método de pago que aparecerá para el comprador.  |
 | Identificación en la Factura de la Tarjeta de Crédito | Texto que identificará el pago en el resumen de tarjeta. Esta funcionalidad no está disponible en todos los países.  |
 | Modo binario  | Al habilitarlo, este modo de procesamiento solo tendrá como resultados de estado de un pago `approved` o `rejected`. No habrá estados intermedios como `in_proccess` o `pending`.  |
@@ -71,7 +71,7 @@ Te compartimos un detalle de las distintas opciones que encontrarás para config
 
 | Campo | Descripción |
 |---|---|
-| Custom Checkout - Medios de pago off (ticket) | La configuración de este campo ofrecerá la opción del comprador realizar pagos con medios de pago off disponibles en su país. Por defecto, el método de pago con tarjeta ya se encuentra activado. Para desactivarlo, solo es necesario cambiar la opción **Habilitad** por "Yes" a "No".  |
+| Custom Checkout - Medios de pago off (ticket) | La configuración de este campo ofrecerá la opción del comprador realizar pagos con medios de pago off disponibles en su país. Por defecto, el método de pago con tarjeta ya se encuentra activado. Para desactivarlo, solo es necesario cambiar la opción **Habilitado** por "Yes" a "No".  |
 | Título del método de pago  | Esta opción permite cambiar el titulo del método de pago que aparecerá para el comprador.  |
 | Banner Checkout | Por defecto, el módulo de Mercado Pago configurará un banner con los métodos disponibles de acuerdo a su país. Si deseas puedes personalizarlo cambiando la url de la imagen. |
 | Excluir métodos de pago | Por defecto, el módulo mostrará al comprador todos los métodos de pago del tipo Ticket y ATM. Puedes elegir solo lo métodos que deseas aceptar y dejar sin seleccionar aquellos que no deseas ofrecer. |

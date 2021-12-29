@@ -60,7 +60,7 @@ Através da loja Magento, você pode instalar gratuitamente o plugin do Mercado 
 
 3. Para acessar a pasta **MercadoPago**, é necessário descompactar o arquivo *.zip*.
 
-4. Copie a pasta * MercadoPago**, localizada na pasta **code/src**.
+4. Copie a pasta **MercadoPago**, localizada na pasta **code/src**.
 
 5. Em seguida, siga as instruções em [Instalação via Composer](#bookmark_instalação_via_composer)
 

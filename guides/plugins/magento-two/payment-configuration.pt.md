@@ -4,7 +4,7 @@ Para configurar o módulo e aceitar pagamentos por cartão de crédito ----[mlb]
 
 ## Configure suas credenciais
 
-Primeiro, você deve inserir suas credenciais para poder habilitar os meios de pagamento disponíveis no país de origem da loja. Para isso:
+Primeiro, você deve inserir suas credenciais para poder habilitar os meios de pagamento disponíveis no país de origem da loja. Para isso, siga os passos abaixo.
 
 1. Vá para o menu Stores > Configuration > Sales > Payment Methods
 
@@ -24,7 +24,7 @@ Existem dois tipos de credenciais:
 O próximo passo é habilitar o meio de pagamento. Para isso, você deve ir para o meio que deseja habilitar:
 
 * Para ativar **pagamentos com cartão**, vá para Checkout > Credit and Debit Card.
-* Para habilitar ** pagamentos de bilhetes **, vá para Custom Checkout > Offline Payment Methods (Ticket).
+* Para habilitar **pagamentos de boleto**, vá para Custom Checkout > Offline Payment Methods (Ticket).
 ----[mlb]----
 * Para habilitar **pagamentos Pix**, vá para Custom Checkout > Pix.
 ------------
@@ -42,7 +42,7 @@ O próximo passo é habilitar o meio de pagamento. Para isso, você deve ir para
 
 ## Configurar pagamentos com cartões de crédito e débito
 
-A configuração dessa forma de pagamento oferecerá ao comprador a opção de efetuar pagamentos com os cartões de crédito e débito disponíveis em seu país.
+Ao configurar essa forma de pagamento, o comprador poderá efetuar pagamentos com os cartões de crédito e débito disponíveis em seu país.
 
 Compartilhamos um detalhe das diferentes opções que você encontrará para configurá-lo:
 
@@ -65,7 +65,7 @@ Em seguida, clique em "Save Config" para salvar suas preferências.
 
 ## Configurar o Checkout Transparente - Métodos de pagamento OFF
 
-A configuração dessa forma de pagamento oferecerá ao comprador a opção de realizar pagamentos com os meios de pagamento offline (Ticket e ATM) disponíveis no seu país.
+A configuração dessa forma de pagamento oferecerá ao comprador a opção de realizar pagamentos com os meios de pagamento offline (Boleto e Caixa eletrônico) disponíveis no seu país.
 Compartilhamos um detalhe das diferentes opções que você encontrará para configurar o seu checkout personalizado:
 
 | Campo | Descrição

@@ -12,7 +12,7 @@ Para definir o status do pedido para notificações de pagamento, siga estas eta
 >
 > Nota
 >
-> O módulo está preparado para receber notificações de pagamento automaticamente, ou seja, sem a necessidade de configurar sua conta no Mercado Pago ou o plugin.
+> O plugin está preparado para receber notificações de pagamento automaticamente, ou seja, sem a necessidade de configurar sua conta no Mercado Pago ou o plugin.
 >
 > [Clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/introduction) para mais informações sobre os tipos de notificações integradas pelo Mercado Pago.
 
@@ -22,6 +22,6 @@ Pronto! O status de notificação foi configurado com sucesso.
 >
 > Configuração do Checkout Pro
 >
-> Conheça como configurar o plugin para aceitar pagamentos com o Checkout Pro.
+> Saiba como configurar o plugin para aceitar pagamentos com o Checkout Pro.
 >
 > [Configuração do Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/magento-two/checkout-pro-configuration)
