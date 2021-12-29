@@ -13,8 +13,8 @@ Primero, deberás colocar tus credenciales para poder habilitar los medios de pa
 Existen dos tipos de credenciales:
 
 - **Modo Sandbox:** Las credenciales de este modo se utilizan para realizar pruebas.
-- **Modo Producción:** Las credenciales de este modo se utilizan para recibir los pagos en Producción. Para utilizar las credenciales del modo de producción debe activar tus credenciales.
-- Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials)
+- **Modo Producción:** Las credenciales de este modo se utilizan para recibir los pagos en Producción. Para utilizar las credenciales del modo de producción debes activar tus credenciales.
+- Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) para más información.
 
 3. Una vez que hayas colocado las credenciales, haz clic en el botón **Save Config** que se encuentra en la esquina superior derecha. 
 
@@ -57,7 +57,7 @@ Te compartimos un detalle de las distintas opciones que encontrarás para config
 | Título del método de pago  | Esta opción permite cambiar el titulo del método de pago que aparecerá para el comprador.  |
 | Identificación en la Factura de la Tarjeta de Crédito | Texto que identificará el pago en el resumen de tarjeta. Esta funcionalidad no está disponible en todos los países.  |
 | Modo binario  | Al habilitarlo, este modo de procesamiento solo tendrá como resultados de estado de un pago `approved` o `rejected`. No habrá estados intermedios como `in_proccess` o `pending`.  |
-| Banner Checkout | Por defecto, el módulo de Mercado Pago configurará un banner con los métodos disponibles de acuerdo a su país. Si deseas puedes personalizarlo cambiando la url de la imagen. |
+| Banner Checkout | Por defecto, el módulo de Mercado Pago configurará un banner con los métodos disponibles de acuerdo al país en donde esté configurada la tienda. Si deseas puedes personalizarlo cambiando la url de la imagen. |
 | Posición del método de pago | Permite cambiar la posición en la que el método pago está disponible para el comprador en el flujo de checkout.  |
 | Cupones de descuento de Mercado Pago | Si habilitas esta opción, aparecerá un campo en el que el comprador podrá ingresar su cupón de descuento creado en Mercado Pago. |
 

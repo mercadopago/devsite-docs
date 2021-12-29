@@ -5,7 +5,7 @@ Para utilizar la integración de Mercado Pago con Magento 2 en tu tienda, debes 
 | Requisitos | Descripción |
 | --- | --- |
 | Versión del Magento | 2.x |
-| Ambiente | LAMP (Linux, Apache, MySQL, and PHP)<br/>LNMP stack |
+| Ambiente | LAMP (Linux, Apache, MySQL, y PHP)<br/>LNMP stack |
 | Sistema Operativo | Linux x86-64 |
 | Memoria | Minimum 2GB of RAM |
 | Web Server | Apache 2.x<br/>Nginx 1.7.x |
