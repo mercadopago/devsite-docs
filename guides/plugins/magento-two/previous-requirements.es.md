@@ -11,7 +11,7 @@ Para utilizar la integración de Mercado Pago con Magento 2 en tu tienda, debes 
 | Web Server | Apache 2.x<br/>Nginx 1.7.x |
 | Versión del PHP | 5.6.x<br/>7.0.2<br/>7.0.6–7.0.x<br/> |
 | Versión del MySQL | MySQL 5.6<br/>MariaDB y Percona son compatibles con Magento porque soportan las APIs de MySQL 5.6. |
-| Dependencias de Extensiones | bc-math (Magento Commerce only)<br/>curl<br/>gd, ImageMagick 6.3.7 (or later) or both<br/>intl<br/>bstring<br/>mcrypt<br/>hash<br/>openssl<br/>PDO/MySQL<br/>SimpleXML<br/>soap<br/>xml<br/>xsl<br/>zip<br/> |
+| Dependencias de Extensiones | bc-math (solo Magento Commerce)<br/>curl<br/>gd, ImageMagick 6.3.7 (o superior) o ambos<br/>intl<br/>bstring<br/>mcrypt<br/>hash<br/>openssl<br/>PDO/MySQL<br/>SimpleXML<br/>soap<br/>xml<br/>xsl<br/>zip<br/> |
 | PHP 7 only | json<br/>iconv |
 | SSL | Es necesario tener un certificado SSL y que el formulario de pagos sea disponibilizado en una página HTTPS.<br/>Durante las pruebas en modo de Sandbox, podrás ejecutar las pruebas en HTTP. |
 

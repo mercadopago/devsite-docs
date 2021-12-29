@@ -1,6 +1,6 @@
 # Pré-requisitos
 
-Para usar a integração do Mercado Pago com o Magento 2 em sua loja, você deve atender aos requisitos detalhados a seguir.
+Para usar a integração do Mercado Pago com o Magento 2 em sua loja, você deve atender aos requisitos descritos na tabela abaixo.
 
 | Requisitos  | Descrição | 
 | --- | --- |

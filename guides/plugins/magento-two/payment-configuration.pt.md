@@ -93,7 +93,7 @@ O pagamento será cancelado quando o status estiver em `pending` ou `in_process`
 >
 > Instalação do plugin
 >
-> Siga as etapas para instalar o plugin.
+> Siga as etapas para instalar o plugin do Mercado Pago.
 >
 > [Instalação do plugin](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/magento-two/installation)
 
