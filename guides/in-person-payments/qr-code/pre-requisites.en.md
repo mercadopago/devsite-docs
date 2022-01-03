@@ -42,7 +42,7 @@ It's easy and we explain how to do it:
 >
 > Note
 >
-> If you were to operate in behalf of others, you can work with their credentials safer and easier through [Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/marketplace/checkout-api/introduction).
+> If you were to operate in behalf of others, you can work with their credentials safer and easier through [Oauth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/oauth).
 
 ### 3. Generate test users
 
