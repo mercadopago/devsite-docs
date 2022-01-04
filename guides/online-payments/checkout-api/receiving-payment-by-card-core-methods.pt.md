@@ -88,8 +88,8 @@ No exemplo a seguir, assume-se que os dados `transactionAmount` e `description` 
     <select name="installments" id="form-checkout__installments">
         <option value="" disabled selected>Escolha a quantidade de parcelas</option>
     </select>
-    <input id="MPHiddenInputToken" name="MPHiddenInputToken" type="hidden" />
-    <input id="MPHiddenInputPaymentMethod" name="MPHiddenInputPaymentMethod" type="hidden" />
+    <input id="token" name="token" type="hidden" />
+    <input id="paymentMethodId" name="paymentMethodId" type="hidden" />
     <input id="transactionAmount" name="transactionAmount" type="hidden" value="100"/>
     <input id="description" name="description" type="hidden" value="product description" />
     <button type="submit" id="form-checkout__submit">Pagar</button>
