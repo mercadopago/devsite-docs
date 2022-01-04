@@ -399,7 +399,7 @@ mercadopago.payment.save(payment_data)
     });
   })
   .catch(function(error) {
-    res.status(response.status).send(error);
+    console.error(error)
   });
 ```
 ```java
