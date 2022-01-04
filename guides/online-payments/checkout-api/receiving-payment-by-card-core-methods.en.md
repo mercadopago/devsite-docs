@@ -77,7 +77,7 @@ The following example assumes that `transactionAmount` and `description` data we
        </select>
        <input id="MPHiddenInputToken" name="MPHiddenInputToken" type="hidden" />
        <input id="MPHiddenInputPaymentMethod" name="MPHiddenInputPaymentMethod" type="hidden" />
-       <input id="transactionAmmount" name="transactionAmmount" type="hidden" value="100"/>
+       <input id="transactionAmount" name="transactionAmount" type="hidden" value="100"/>
        <input id="description" name="description" type="hidden" value="product description" />
        <button type="submit" id="form-checkout__submit">Pay</button>
    </form>
