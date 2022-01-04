@@ -1,6 +1,12 @@
 
 # Como gerar o seu relatório de Dinheiro em conta?
 
+> NOTE
+>
+> Gerencie suas vendas com código QR de um jeito fácil
+>
+> Criamos novas colunas que permitem que você identifique as carteiras digitais ou bancos que seus clientes usam ao pagarem com um código QR do Mercado Pago. Atualize suas preferências de configuração [no painel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement/settings) o [via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/api) para incluir as colunas nos seus relatórios.
+
 ## Canais de geração
 
 Há duas formas de gerar um relatório de Dinheiro em conta:

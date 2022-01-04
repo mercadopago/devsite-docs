@@ -1,6 +1,12 @@
 
 # ¿Cómo generar tu reporte de Todas las transacciones?
 
+> NOTE
+>
+> Lleva con facilidad el control de tus ventas con QR
+>
+> Creamos nuevas columnas que te permiten identificar las billeteras virtuales o los bancos que tus clientes usan para pagar cuando les ----[mla]----cobrás------------ ----[mlu, mpe, mlm, mco, mlc, mlb]----cobras------------ con un QR de Mercado Pago. ----[mla]----Actualizá------------ ----[mlu, mpe, mlm, mco, mlc, mlb]----Actualiza------------ tus preferencias de configuración [desde el panel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement/settings) o [vía API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/api) para incluir las columnas en tus reportes.
+
 ## Canales de generación
 
 Existen dos formas de generar un reporte de Todas las transacciones:
@@ -40,8 +46,7 @@ Conoce las características de los elementos que conforman tu reporte.
 | Moneda | <br/> Local (basada en el país donde esté registrada la cuenta de Mercado Pago) <br/> <br/> |
 | Zona horaria de las columnas con fechas | <br/> GMT-4 <br/> <br>Toma como referencia el lugar desde el que se descarga el reporte.<br/><br/> |
 | Selección de fechas vía API |<br/> Formato del timezone: UTC / GMT-0 <br/> <br/> |
-| Selección de fechas vía web | <br/> Debe basarse en el timezone de la cuenta. <br/>Por ejemplo, a la cuenta registrada en Brasil le corresponde el timezone de São Paulo. <br/> <br/> |
-
+| Selección de fechas vía web | <br/> Debe basarse en el timezone de la cuenta. <br/>Por ejemplo, a la cuenta registrada en Brasil le corresponde el timezone de São Paulo. <br/> |
 
 ### Exportación del reporte
 

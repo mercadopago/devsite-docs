@@ -42,6 +42,8 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | PACK_ID | Identificador do pacote no carrinho. |
 | TAXES_DISAGGREGATED | Impostos desagregados no formato JSON. |
 | POI_ID | ID da maquininha se o pagamento é feito em uma loja física. |
+| POI_WALLET_NAME | Nome da carteira digital de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago.|
+| POI_BANK_NAME | Nome da instituição bancária de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago.|
 
 <hr/>
 
