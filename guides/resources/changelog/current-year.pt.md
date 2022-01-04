@@ -20,7 +20,7 @@ Lançamos a nova versão 1.5.10 do SDK NodeJS.
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.10).
+> Confira no GitHub os detalhes das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.10).
 
 ### 1 de dezembro
 
