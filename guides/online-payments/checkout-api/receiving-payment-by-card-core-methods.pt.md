@@ -71,7 +71,7 @@ Pode adicionar todo o que precisar, alterar o atributo `label` sugerido e somar-
 No exemplo a seguir, assume-se que os dados `transactionAmount` e `description` foram obtidos no passo prévio onde o cliente selecionou o produto ou serviço que deseja pagar.
 
 ```html
-<form id="form-checkout">
+<form id="form-checkout" method="POST" action="/process_payment">
     <input type="text" id="form-checkout__cardNumber" placeholder="Número do cartão" />
     <input type="text" id="form-checkout__cardExpirationMonth" placeholder="Mês de vencimiento (MM)" />
     <input type="text" id="form-checkout__cardExpirationYear" placeholder="Ano de vencimiento (YY o YYYY)" />

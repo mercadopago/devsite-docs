@@ -72,7 +72,7 @@ En el siguiente ejemplo se asume que los datos `transactionAmount` y `descriptio
 
 
 ```html
-<form id="form-checkout">
+<form id="form-checkout" method="POST" action="/process_payment">
        <input type="text" id="form-checkout__cardNumber" placeholder="Numero de tarjeta" />
        <input type="text" id="form-checkout__cardExpirationMonth" placeholder="Mes de vencimiento (MM)" />
        <input type="text" id="form-checkout__cardExpirationYear" placeholder="Año de vencimiento (YY o YYYY)" />

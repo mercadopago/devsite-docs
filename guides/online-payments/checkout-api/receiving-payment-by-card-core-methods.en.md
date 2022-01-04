@@ -58,7 +58,7 @@ You can easily include anything you need, change the suggested `label` attribute
 The following example assumes that `transactionAmount` and `description` data were obtained in the previous step in which customers selected the product or service to be paid.
 
 ```html
-<form id="form-checkout">
+<form id="form-checkout" method="POST" action="/process_payment">
        <input type="text" id="form-checkout__cardNumber" placeholder="Card number" />
        <input type="text" id="form-checkout__cardExpirationMonth" placeholder="Expiration month (MM)" />
        <input type="text" id="form-checkout__cardExpirationYear" placeholder="Expiration year (YY or YYYY)" />
