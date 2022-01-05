@@ -20,7 +20,7 @@ Como as duas colunas são as últimas do relatório, não há nenhum conflito po
 
 Por padrão, essas colunas estão desativadas. Para que elas sejam mostradas no relatório **Dinheiro em conta**, é necessário atualizar as preferências de configuração pelo painel ou via API.
 
-Ir para a configuração pelo [panel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement/settings) o [via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/api).
+Acesse a configuração pelo [painel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement/settings) ou [via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/api).
 
 ### 1 de dezembro
 
