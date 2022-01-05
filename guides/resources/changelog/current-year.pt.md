@@ -18,7 +18,7 @@ As colunas `POI_WALLET_NAME` y `POI_BANK_NAME` permitem que os estabelecimentos 
 
 Como as duas colunas são as últimas do relatório, não há nenhum conflito por posição de referência (número da coluna) ou mapeamento da coluna por keys (cabeçalho).
 
-Como padrão, essas colunas estão desativadas. Para que elas sejam mostradas no relatório **"Dinheiro em conta"**, é necessário atualizar as preferências de configuração pelo painel ou via API.
+Por padrão, essas colunas estão desativadas. Para que elas sejam mostradas no relatório **Dinheiro em conta**, é necessário atualizar as preferências de configuração pelo painel ou via API.
 
 Ir para a configuração pelo [panel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement/settings) o [via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/api).
 
