@@ -90,12 +90,11 @@ Utilize o formulário abaixo e adicione os estilos que desejar.
 ```html
 <!-- Step #2 -->
 <form id="form-checkout">
-   <div type="text" name="cardNumber" id="form-checkout__cardNumber"></div>
-<div type="text" name="cardExpirationMonth"   id="form-checkout__cardExpirationMonth"></div>
-   <div type="text" name="cardExpirationYear" id="form-checkout__cardExpirationYear"></div>
+   <div type="text" name="cardNumber" id="form-checkout__cardNumber-container"></div>
+   <div type="text" name="cardExpirationDate" id="form-checkout__cardExpirationDate-container"></div>
    <input type="text" name="cardholderName" id="form-checkout__cardholderName"/>
    <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail"/>
-   <div type="text" name="securityCode" id="form-checkout__securityCode"></div>
+   <div type="text" name="securityCode" id="form-checkout__securityCode-container"></div>
    <select name="issuer" id="form-checkout__issuer"></select>----[mla, mlb, mlu, mlc, mpe, mco]----
    <select name="identificationType" id="form-checkout__identificationType"></select>------------
    <input type="text" name="identificationNumber" id="form-checkout__identificationNumber"/>
@@ -135,7 +134,7 @@ const cardForm = mp.cardForm({
        placeholder: 'E-mail'
      },
      cardNumber: {
-       id: 'form-checkout__cardNumber',
+       id: 'form-checkout__cardNumber-container',
        placeholder: 'Card Number',
        style: {
          // Style examples:
@@ -144,20 +143,16 @@ const cardForm = mp.cardForm({
        },
      },
      securityCode: {
-       id: 'form-checkout__securityCode',
+       id: 'form-checkout__securityCode-container',
        placeholder: 'CVV'
      },
      installments: {
        id: 'form-checkout__installments',
        placeholder: 'Installments'
      },
-     cardExpirationMonth: {
-       id: 'form-checkout__cardExpirationMonth',
-       placeholder: 'MM'
-     },
-     cardExpirationYear: {
-       id: 'form-checkout__cardExpirationYear',
-       placeholder: 'YYYY'
+     cardExpirationDate: {
+       id: 'form-checkout__cardExpirationDate-container',
+       placeholder: 'Data de vencimiento',
      },----[mla, mlb, mlu, mlc, mpe, mco]----
      identificationType: {
        id: 'form-checkout__identificationType',

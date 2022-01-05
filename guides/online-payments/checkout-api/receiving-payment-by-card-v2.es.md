@@ -90,8 +90,7 @@ Utiliza el siguiente formulario y agrega los estilos que desees.
 <!-- Step #2 -->
 <form id="form-checkout">
    <div type="text" name="cardNumber" id="form-checkout__cardNumber"></div>
-<div type="text" name="cardExpirationMonth"   id="form-checkout__cardExpirationMonth"></div>
-   <div type="text" name="cardExpirationYear" id="form-checkout__cardExpirationYear"></div>
+   <div type="text" name="cardExpirationDate" id="form-checkout__cardExpirationDate-container"></div>
    <input type="text" name="cardholderName" id="form-checkout__cardholderName"/>
    <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail"/>
    <div type="text" name="securityCode" id="form-checkout__securityCode"></div>
@@ -149,13 +148,9 @@ const cardForm = mp.cardForm({
        id: 'form-checkout__installments',
        placeholder: 'Installments'
      },
-     cardExpirationMonth: {
-       id: 'form-checkout__cardExpirationMonth',
-       placeholder: 'MM'
-     },
-     cardExpirationYear: {
-       id: 'form-checkout__cardExpirationYear',
-       placeholder: 'YYYY'
+     cardExpirationDate: {
+       id: 'form-checkout__cardExpirationDate-container',
+       placeholder: 'Data de vencimiento',
      },----[mla, mlb, mlu, mlc, mpe, mco]----
      identificationType: {
        id: 'form-checkout__identificationType',
