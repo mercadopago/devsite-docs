@@ -21,7 +21,7 @@ Pronto! Sua loja está em Produção e habilitada para realizar suas vendas.
 
 > LEFT_BUTTON_REQUIRED_PT
 >
-> Procesamento de vendas
+> Processamento de vendas
 >
 > Conheça os principais status durante o processamento das vendas.
 >

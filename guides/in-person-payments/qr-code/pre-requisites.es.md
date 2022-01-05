@@ -8,14 +8,13 @@ Sabemos que algunos términos son nuevos. Antes de empezar, te los dejamos a man
 | --- | --- |
 | Credenciales (Credentials) | Tus credenciales son las claves que te proporcionamos para que puedas configurar tus integraciones. Para poder encontrarlas, ve a tus [credenciales]([FAKER][CREDENTIALS][URL]) y selecciona las productivas. |
 | `ACCESS_TOKEN` | Es la clave privada de la aplicación para generar pagos, dentro de la sección [credenciales]([FAKER][CREDENTIALS][URL]). Debes usarla para identificarte en tus integraciones. Siempre usa las del Modo Producción. |
-| `USER_ID` | ID de la cuenta de Mercado Pago. Se compone por los últimos dígitos del `access_token` posteriores al último guión medio. También lo puedes encontrar como _`COLLECTOR_ID`_. |
-| `SPONSOR_ID` | Es el `USER_ID` del usuario proveedor del sistema integrado con Mercado Pago. El `SPONSOR_ID` no puede ser igual al `USER_ID`. |
+| `USER_ID` | ID de la cuenta de Mercado Pago. Se compone por los últimos dígitos del `access_token` posteriores al último guión medio. Entonces, por ejemplo, si tu `access_token` es **APP_USR-8499883828799661-062409-bf057c51fc05f87eba5608328f869879-446566691**, entonces tu `USER_ID` es **446566691**. También lo puedes encontrar como _`COLLECTOR_ID`_. |
+| `SPONSOR_ID` | Es el `USER_ID` del usuario proveedor del sistema integrado con Mercado Pago. Se compone por los últimos dígitos del `access_token` posteriores al último guión medio. Entonces, por ejemplo, si tu `access_token` es **APP_USR-8499883828799661-062409-bf057c51fc05f87eba5608328f869879-776566693**, entonces tu `USER_ID` es **776566693**.  El `SPONSOR_ID` no puede ser igual al `USER_ID`. |
 | Sucursal (Store) | Es una **tienda física** en la que tus clientes pueden adquirir tus productos o servicios. Puedes tener varias sucursales en una misma cuenta. |
 | Caja (POS) | Es un **punto de venta** que existe en una sucursal o tienda física. Cada caja tendrá vinculado un código QR unívoco. |
 | Orden | Es el pedido realizado por tu cliente. Contiene un listado de productos con su monto asociado. |
 
-> Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) para obtener más información..
-
+> Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) para obtener más información. 
 ## Requisitos previos
 
 Ten en cuenta estos aspectos antes de empezar:
@@ -37,11 +36,16 @@ Es fácil, te contamos cómo hacerlo:
 3. Ponle un nombre con el que puedas identificarla más adelante.
 4. Acepta nuestros Términos y Condiciones. ¡Y listo!
 
+Si no tiene ninguna aplicación registrada, [vea el tutorial](https://youtu.be/FB4aL9D0Of4?list=PLCazXKuqZp3hGVY3bBhEO0ItFhIic5UpK).
+
 > NOTE
 >
 > Nota
 >
-> Si vas a operar en nombre de otros, puedes trabajar con las credenciales de ellos de una forma más fácil y segura por [Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/marketplace/checkout-api/introduction).
+> Si vas a operar en nombre de otros, puedes trabajar con las credenciales de ellos de una forma más fácil y segura por [Oauth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth).
+
+
+
 
 ### 3. Generar usuarios de prueba
 
@@ -84,6 +88,7 @@ Respuesta:
 > * Para hacer pagos de prueba te recomendamos usar montos bajos.
 > * Tanto el comprador como el vendedor deben ser usuarios de prueba.
 > * Usa tarjetas de pruebas, ya que no es posible retirar el dinero.
+> * Video tutorial sobre cómo crear un [usuario de prueba](https://youtu.be/VgXsbJB6rY0?list=PLCazXKuqZp3hGVY3bBhEO0ItFhIic5UpK) 
 
 Una vez creados los usuarios de pruebas, ya puedes comenzar con la integración y crear las sucursales y cajas.
 

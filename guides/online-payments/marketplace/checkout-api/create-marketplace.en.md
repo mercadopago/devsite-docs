@@ -24,18 +24,25 @@ In Redirect URL field add the URL to where you would like to redirect your selle
 
 Lastly, you need to get your application ID in [Your Integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
 
-## Link your Mercado Pago account with your sellers' accounts
+## Link your application with your sellers' accounts
 
 To operate in Mercado Pago on behalf of your seller, you need to request their authorization first. To manage several Mercado Pago accounts at the same time in your integration, you can do it through OAuth, a feature for secure linking that allows sellers to access their Mercado Pago account to authorize and enable your application to work under their name.
 
-To do this, you need to include a URL in your application to redirect sellers to the authorization site. 
+<br>
+
+2.2. When the seller accepts, a last redirect is made and you will receive the authorization code in the URL that you specified:
 
 This is the example URL you can use. You will also find the details of parameters to fill it out.
 
 ```url
 https://auth.mercadopago[FAKER][URL][DOMAIN]/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com
-
 ```
+
+<br>
+
+2.3. You can also include the `state` parameter in the URL authorization to identify who is responsible for the code you received. Do it safely and assign a random identifier in the parameter which is unique for each attempt.
+
+
 | Parameter | Data to fill out |
 | ----------------- | ----------------- |
 | `client_id` | Replace `APP_ID` value with your application ID. |
@@ -82,7 +89,7 @@ curl -X POST \
      -H 'content-type: application/x-www-form-urlencoded' \
      'https://api.mercadopago.com/oauth/token' \
      -d 'client_secret=CLIENT_SECRET' \
-     -d 'client_ID=CLIENT_ID' \
+     -d 'client_id=CLIENT_ID' \
      -d 'grant_type=authorization_code' \
      -d 'code=CODE' \
      -d 'redirect_uri=REDIRECT_URI'
@@ -112,9 +119,16 @@ You will also receive the seller's `public_key`, which is the credential or publ
 > 
 > Remember that you will be using your seller's sensitive information. Secure a backup and do not include it in your link URLs; manage such information from your server only.
 
-Done! You already linked your seller's account to your application via OAuth. 
-
+> NOTE
+>
+> Note
+>
+> The credentials are **valid for 6 months**, so if you don´t renew your sellers credentials before the expiration period, **you will have to do the authorization process all over again.** To avoid it, we recommend renewing the credentials 5 months after you got them.
+> <br>
 > Keep in mind that these steps need to be repeated with each account you want to link. 
+
+
+Done! You already linked your seller's account to your application via OAuth. 
 
 ## Refresh your credentials
 

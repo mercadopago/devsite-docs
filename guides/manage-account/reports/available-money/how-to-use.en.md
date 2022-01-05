@@ -8,9 +8,9 @@ To review the report we recommend downloading it in .csv format to open it in th
 
 > WARNING
 >
-> The Available Balance report will be disabled soon
+> TThe Available Balance report will be disabled from March 01, 2022
 >
-> You can use the [Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
+> Use the [Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/introduction) to reconcile the transactions that affect the balance available in your account, including your bank withdrawals.
 
 ## What does the report contain?
 
@@ -28,7 +28,7 @@ The report is composed by:
 In addition, the report reflects the accounting concepts of *owe* (money you must pay) and *will have* (money you must collect) in two columns, one for each concept:
 
 > Your *will have* will be seen in the `NET_CREDIT` column
-> 
+> <br>
 > Your *owe* will be seen in the `NET_DEBIT` column
 
 You will see the available balance from the released transactions in the `NET_CREDIT` (credited) and `NET_DEBIT` (debited) columns, depending on whether the amount is positive or negative. You will also see there the gross amount and the financing costs, taxes and shipping costs that we deducted to reach the net amount.
@@ -60,7 +60,7 @@ The default version will show an extended view of the columns. The final report 
 > Important: differences between partial withdrawal and total withdrawal.
 >
 > When you withdraw all your available money, the total report will match that amount. On the other hand, when you make a partial withdrawal, which does not include all of your released account money, the total available balance and the total of the report will not match.
->
+><br>
 > For example, imagine that you have $ 3,000 available to withdraw to a bank account but only withdraw $ 2,000. The withdrawal is partial but the total value of the report will continue to show you the amount of the initial balance that was at the time of withdrawal, that is, the $ 3,000 you had available. On the other hand, if you withdraw the $ 3,000, the total value of the report will match the value of that withdrawal.
 
 <hr/>

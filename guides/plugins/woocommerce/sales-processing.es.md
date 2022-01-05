@@ -48,7 +48,7 @@ Para obtener más información sobre las razones mencionadas anteriormente, visi
 
 > LEFT_BUTTON_RECOMMENDED_ES
 >
-> FAQ
+> Preguntas frecuentes
 >
 > Consulta las principales dudas sobre la integración.
 >

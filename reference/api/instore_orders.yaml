@@ -314,7 +314,7 @@ components:
   schemas:
     currency_id:
       type: string
-      example: ARS
+      example: COP
       description: Currency identifier in ISO_4217 format.
       enum: 
         - ARS -- Argentine peso.

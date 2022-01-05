@@ -1,135 +1,317 @@
-# Notificaciones Webhooks
+# Webhooks
 
-Un **webhook** es una notificación que se envía de un servidor a otro mediante una llamada `HTTP POST` en relación a tus transacciones.
+Webhook (también conocido como devolución de llamada web) es un método simple que facilita que una aplicación o sistema proporcione información en tiempo real cada vez que ocurre un evento, es decir, es una forma de recibir datos pasivamente entre dos sistemas a través de un `HTTP POST`.
 
-Para recibir las notificaciones de los eventos en tu plataforma, debes [configurar previamente una URL a la cual Mercado Pago tenga acceso](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications).
+Las notificaciones de webhook se pueden configurar para una o más aplicaciones creadas en su [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/devpanel).
 
-También puedes configurar la notificación cuando hagas el POST del pago, indicandola en el campo notificaction_url:
+Una vez configurado, el Webhook se enviará siempre que se produzcan uno o más eventos registrados, evitando un trabajo de búsqueda cada minuto en busca de una respuesta y, en consecuencia, una sobrecarga del sistema y pérdida de datos siempre que se presente alguna situación. Luego de recibir una notificación en su plataforma, Mercado Pago esperará una respuesta para validar si la recibió correctamente.
 
-```json
-{
-	"transaction_amount":100,
-	....
-	"notification_url":"http://requestbin.fullcontact.com/1ogudgk1",
-    ....
-}
-```
+En esta documentación te explicaremos la configuración necesaria para recibir mensajes (a través del Dashboard o al momento de crear pagos), además de mostrar las acciones necesarias que debes realizar para que Mercado Pago valide que las notificaciones fueron recibidas correctamente.
 
-## Eventos
+## Configuración a través del Dashboard
 
-> WARNING
->
-> Importante
->
-> Un evento es cualquier tipo de actualización sobre el objeto notificado, incluyendo cambios de estado o de atributos.
+A continuación explicaremos cómo indicar las URLs que serán notificadas y cómo configurar los eventos para los que se recibirán notificaciones.
 
-Siempre que suceda un evento, te enviaremos una notificación en formato `json` usando `HTTP POST` a la URL que especificaste.
+![webhooks](/images/notifications/webhook_es.png)
 
-Notificaremos los siguientes eventos:
+1. Primero, se debe crear una aplicación en la página de inicio de su [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
+2. Con la aplicación creada, ve a la pestaña Notificaciones de Webhooks en tu Panel de control y configura las [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) de **producción** y **prueba** de las que se recibirán notificaciones. 
+3. También podrás experimentar y probar si la URL indicada está recibiendo notificaciones correctamente, pudiendo verificar la solicitud, la respuesta dada por el servidor y la descripción del evento.
+4. Si necesitas identificar varias cuentas, al final de la URL indicada puedes indicar el parámetro `?cliente=(nommbredelvendedor) endpoint` para identificar a los vendedores.
+5. A continuación, selecciona los **eventos** de los que recibirás notificaciones en formato `json` a través de un `HTTP POST` a la URL especificada anteriormente. Un evento es cualquier tipo de actualización del objeto informado, incluidos los cambios de estado o atributos. Vea los eventos que se pueden configurar en la siguiente tabla.
 
 | Tipo de notificación | Acción | Descripción |
 | :--- | :--- | :--- |
-| `payment` | `payment.created` | Creación de un pago |
-| `payment` | `payment.updated` | Actualización de un pago |
-| `mp-connect` | `application.deauthorized` | Desvinculación de una cuenta |
-| `mp-connect` | `application.authorized` | Vinculación de una cuenta |
-| `plan` | `application.authorized` | Vinculación de una cuenta |
-| `subscription` | `application.authorized` | Vinculación de una cuenta |
-| `invoice` | `application.authorized` | Vinculación de una cuenta |
+| `payment` | `payment.created` | Creación de pagos |
+| `payment` | `payment.updated` | Actualización de pago |
+| `mp-connect` | `application.deauthorized` | Desvinculación de cuenta |
+| `mp-connect` | `application.authorized` | Vinculación de cuenta |
+| `subscription_preapproval` | `created - updated` | Suscripción |
+| `subscription_preapproval_plan` | `created - updated` | Plan de suscripción |
+| `subscription_authorized_payment` | `created - updated` | Pago recurrente de una suscripción |
+| `point_integration_wh` | `state_FINISHED`| Intento de pago finalizado |
+| `point_integration_wh` | `state_CANCELED` | Intento de pago cancelado |
+| `point_integration_wh` | `state_ERROR`| Ocurrió un error al procesar el intento de pago |
 
-Mercado Pago enviará las notificaciones con el siguiente esquema de reintentos y tiempos por los que espera tu confirmación. Deberás retornar un `HTTP STATUS 200 (OK)` ó `201 (CREATED)` antes de que se termine el tiempo correspondiente. Si no lo haces, se asumirá que no lo recibiste correctamente y se te volverá a notificar.
+## Configuración al crear pagos
 
-Si necesitas más información, consulta la sección [¿Qué debo hacer al recibir una notificación?](#bookmark_¿qué_debo_hacer_al_recibir_una_notificación?)
+Es posible configurar la URL de notificación de forma más específica para cada pago utilizando el campo `notification_url`. Ve a continuación cómo hacer esto usando los SDK.
 
-| Evento | Tiempo después del primer envío | Tiempo de espera de confirmación |
-| --- | --- | --- |
-| Envío | - | 22 segundos |
-| Primer reintento | 5 minutos | 5 segundos |
-| Segundo reintento | 45 minutos | 5 segundos |
-| Tercer reintento | 6 horas | 5 segundos |
-| Cuarto reintento | 2 días | 5 segundos |
-| Quinto reintento | 4 días | 5 segundos |
+1. En el campo `notification_url`, indica la URL desde la que se recibirán las notificaciones, como se muestra a continuación.
 
-La notificación enviada tiene el siguiente formato:
-
-```json
-{
-    "id": 12345,
-    "live_mode": true,
-    "type": "payment",
-    "date_created": "2015-03-25T10:04:58.396-04:00",
-    "application_id": 123123123,
-    "user_id": 44444,
-    "version": 1,
-    "api_version": "v1",
-    "action": "payment.created",
-    "data": {
-        "id": "999999999"
-    }
-}
-```
-
-Esto indica que se creó el pago **999999999** para el usuario **44444** en **modo productivo** con la versión V1 de la API. Dicho evento ocurrió en la fecha **2016-03-25T10:04:58.396-04:00**.
-
-> WARNING
->
-> Importante
->
-> Ten en cuenta que no es posible recibir notificaciones en entorno de pruebas.
-
-## ¿Qué debo hacer al recibir una notificación?
-
-Cuando recibas una notificación en tu plataforma, Mercado Pago espera una respuesta para validar que la recibiste correctamente. Para esto, debes devolver un `HTTP STATUS 200 (OK)` ó `201 (CREATED)`.
-
-Es recomendable que respondas a la notificación antes de ejecutar lógica de negocio o previo al acceso de recursos externos para no exceder los [tiempos estimados de respuesta](#bookmark_eventos).
-
-Luego de esto, tienes que obtener la información completa del recurso notificado accediendo al endpoint correspondiente de la API:
-
-| Tipo | URL | Documentación |
-| --- | --- | --- |
-| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [Ver documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get) |
-| plan | `https://api.mercadopago.com/v1/plans/[ID]` | - |
-| subscription | `https://api.mercadopago.com/v1/subscriptions/[ID]` | - |
-| invoice | `https://api.mercadopago.com/v1/invoices/[ID]` | - |
-
-
-Con esta información puedes realizar las actualizaciones necesarias en tu plataforma, por ejemplo registrar un pago acreditado.
-
-> WARNING
->
-> Importante
->
-> Ten en cuenta que si se exceden los tiempos de respuesta es posible recibir notificaciones duplicadas de un evento.
-
-### Implementa el receptor de notificaciones tomando como ejemplo el siguiente código:
-
+[[[
 ```php
- <?php
+<?php
+    require_once 'vendor/autoload.php';
 
-    MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+    MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
 
-    switch($_POST["type"]) {
-        case "payment":
-            $payment = MercadoPago\Payment::find_by_id($_POST["data"]["id"]);
-            break;
-        case "plan":
-            $plan = MercadoPago\Plan::find_by_id($_POST["data"]["id"]);
-            break;
-        case "subscription":
-            $plan = MercadoPago\Subscription::find_by_id($_POST["data"]["id"]);
-            break;
-        case "invoice":
-            $plan = MercadoPago\Invoice::find_by_id($_POST["data"]["id"]);
-            break;
-    }
+    $payment = new MercadoPago\Payment();
+    $payment->transaction_amount = (float)$_POST['transactionAmount'];
+    $payment->token = $_POST['token'];
+    $payment->description = $_POST['description'];
+    $payment->installments = (int)$_POST['installments'];
+    $payment->payment_method_id = $_POST['paymentMethodId'];
+    $payment->issuer_id = (int)$_POST['issuer'];
+    $payment->notification_url = `http://requestbin.fullcontact.com/1ogudgk1`;
+    ...
+    $response = array(
+        'status' => $payment->status,
+        'status_detail' => $payment->status_detail,
+        'id' => $payment->id
+    );
+    echo json_encode($response);
 
 ?>
 ```
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
 
-## Recibir un solo tipo de notificación
+var payment_data = {
+  transaction_amount: Number(req.body.transactionAmount),
+  token: req.body.token,
+  description: req.body.description,
+  installments: Number(req.body.installments),
+  payment_method_id: req.body.paymentMethodId,
+  issuer_id: req.body.issuer,
+  notification_url: "http://requestbin.fullcontact.com/1ogudgk1",
+  payer: {
+    email: req.body.email,
+    identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
+      type: req.body.docType,------------
+      number: req.body.docNumber
+    }
+  }
+};
 
-Si quieres recibir solamente las notificaciones de Webhooks, y no de IPN, puedes agregar en la *notification_url* el parámetro `source_news=webhooks`. Como por ejemplo:
+mercadopago.payment.save(payment_data)
+  .then(function(response) {
+    res.status(response.status).json({
+      status: response.body.status,
+      status_detail: response.body.status_detail,
+      id: response.body.id
+≈    });
+  })
+  .catch(function(error) {
+    res.status(response.status).send(error);
+  });
+```
+```java
+MercadoPago.SDK.setAccessToken("YOUR_ACCESS_TOKEN");
 
-`https://www.yourserver.com/notifications?source_news=webhooks`
+Payment payment = new Payment();
+payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmount")))
+       .setToken(request.getParameter("token"))
+       .setDescription(request.getParameter("description"))
+       .setInstallments(Integer.valueOf(request.getParameter("installments")))
+       .setPaymentMethodId(request.getParameter("paymentMethodId"))
+       .setNotificationUrl("http://requestbin.fullcontact.com/1ogudgk1");
 
-> El cambio no afecta a los parámetros ya incluidos en la URL.
+Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
+identification.setType(request.getParameter("docType"))
+              .setNumber(request.getParameter("docNumber"));------------ ----[mlm]----
+identification.setNumber(request.getParameter("docNumber"));------------
+
+Payer payer = new Payer();
+payer.setEmail(request.getParameter("email"))
+     .setIdentification(identification);
+     
+payment.setPayer(payer);
+
+payment.save();
+
+System.out.println(payment.getStatus());
+
+```
+```ruby
+require 'mercadopago'
+sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
+
+payment_data = {
+  transaction_amount: params[:transactionAmount].to_f,
+  token: params[:token],
+  description: params[:description],
+  installments: params[:installments].to_i,
+  payment_method_id: params[:paymentMethodId],
+  notification_url: "http://requestbin.fullcontact.com/1ogudgk1",
+  payer: {
+    email: params[:email],
+    identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
+      type: params[:docType],------------
+      number: params[:docNumber]
+    }
+  }
+}
+
+payment_response = sdk.payment.create(payment_data)
+payment = payment_response[:response]
+
+puts payment
+
+```
+```csharp
+using System;
+using MercadoPago.Client.Common;
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
+
+MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
+
+var paymentRequest = new PaymentCreateRequest
+{
+    TransactionAmount = decimal.Parse(Request["transactionAmount"]),
+    Token = Request["token"],
+    Description = Request["description"],
+    Installments = int.Parse(Request["installments"]),
+    PaymentMethodId = Request["paymentMethodId"],
+    NotificationUrl = "http://requestbin.fullcontact.com/1ogudgk1",
+
+    Payer = new PaymentPayerRequest
+    {
+        Email = Request["email"],
+        Identification = new IdentificationRequest
+        {----[mla, mlb, mlu, mlc, mpe, mco]----
+            Type = Request["docType"],------------
+            Number = Request["docNumber"],
+        },
+    },
+};
+
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(paymentRequest);
+
+Console.WriteLine(payment.Status);
+
+```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_data = {
+    "transaction_amount": float(request.POST.get("transaction_amount")),
+    "token": request.POST.get("token"),
+    "description": request.POST.get("description"),
+    "installments": int(request.POST.get("installments")),
+    "payment_method_id": request.POST.get("payment_method_id"),
+    "notification_url" =  "http://requestbin.fullcontact.com/1ogudgk1",
+    "payer": {
+        "email": request.POST.get("email"),
+        "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
+            "type": request.POST.get("type"), ------------
+            "number": request.POST.get("number")
+        }
+    }
+}
+
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
+
+print(payment)
+```
+```curl
+curl -X POST \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/payments' \
+    -d '{
+          "transaction_amount": 100,
+          "token": "ff8080814c11e237014c1ff593b57b4d",
+          "description": "Blue shirt",
+          "installments": 1,
+          "payment_method_id": "visa",
+          "issuer_id": 310,
+          "notification_url": "http://requestbin.fullcontact.com/1ogudgk1",
+          "payer": {
+            "email": "test@test.com"
+
+          }
+    }'
+
+```
+]]]
+
+2. Implemente el receptor de notificaciones usando el siguiente código como ejemplo:
+
+```php
+<?php
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+  switch($_POST["type"]) {
+      case "payment":
+          $payment = MercadoPago\Payment::find_by_id($_POST["data"]["id"]);
+          break;
+      case "plan":
+          $plan = MercadoPago\Plan::find_by_id($_POST["data"]["id"]);
+          break;
+      case "subscription":
+          $plan = MercadoPago\Subscription::find_by_id($_POST["data"]["id"]);
+          break;
+      case "invoice":
+          $plan = MercadoPago\Invoice::find_by_id($_POST["data"]["id"]);
+          break;
+      case "point_integration_wh":
+          // $_POST contiene la informaciòn relacionada a la notificaciòn.
+          break;
+  }
+?>
+```
+
+3. Una vez que se hayan realizado los ajustes necesarios, la notificación a través de Webhook tendrá el siguiente formato:
+
+> NOTE
+>
+> Importante
+>
+> Para el tipo point_integration_wh el formato de notificación cambia. [Haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/mp-point/introduction) para consultar la documentación de **Mercado Pago Point**.
+
+```json
+{
+  "id": 12345,
+  "live_mode": true,
+  "type": "payment",
+  "date_created": "2015-03-25T10:04:58.396-04:00",
+  "application_id": 123123123,
+  "user_id": 44444,
+  "version": 1,
+  "api_version": "v1",
+  "action": "payment.created",
+  "data": {
+      "id": "999999999"
+  }
+}
+```
+
+Esto indica que el pago **999999999** fue creado para el usuario **44444** en modo de producción con API versión V1 y que este evento ocurrió en la fecha **2016-03-25T10: 04: 58.396-04: 00**.
+
+| Atributo | Descripción |
+| --- | --- |
+| **id** | ID de la notificación |
+| **live_mode** | Indica si la URL ingresada es válida.|
+| **type** | Tipo de notificacion recebida (payments, mp-connect, subscription etc) |
+| **date_created** | Fecha de creación del recurso (payments, mp-connect, subscription etc) |
+| **application_id** | Aplication ID que recebió el recurso (payments, mp-connect, subscription etc) |
+| **user_id**| UserID del vendedor |
+| **version** | Cantidad de veces que se envió una notificación |
+| **api_version** | Indica si es una notificación duplicada o no|
+| **action** | Tipo de notificación recibida, indicando si es la actualización de un recurso o bien la creación de un nuevo |
+| **data - id**  | ID del payment o merchant_order |
+
+4. Si deseas recibir notificaciones solo de Webhook y no de IPN, puedes agregar en el `notification_url` el parámetro`source_news=webhook`. Por ejemplo: https://www.yourserver.com/notifications?source_news=webhook
+
+## Acciones necesarias después de recibir la notificación
+
+[TXTSNIPPET][/guides/snippets/test-integration/notification-response]
+
+Luego de devolver la notificación y confirmar su recepción, obtendrás la información completa del recurso notificado accediendo al punto final de la API correspondiente:
+
+| Tipo | URL | Documentación |
+| --- | --- | --- |
+| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [ver documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get)  |
+| subscription_preapproval | `https://api.mercadopago.com/preapproval` | [ver documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/subscriptions/_preapproval/post) |
+| subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | - |
+| subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | - |
+| point_integration_wh| - | [ver documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/mp-point/introduction) |
+
+Con esta información podrás realizar las actualizaciones necesarias a tu plataforma, como actualizar un pago aprobado.

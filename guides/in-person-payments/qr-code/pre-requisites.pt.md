@@ -8,8 +8,8 @@ Sabemos que alguns termos são novos. Antes de começar, os deixamos perto de su
 | --- | --- |
 | Credenciais (Credentials) | Suas credenciais são as senhas que lhe fornecemos para que você possa configurar suas integrações. Para poder achá-las, vá para suas [credenciais]([FAKER][CREDENTIALS][URL]) e selecione as produtivas. |
 | `ACCESS_TOKEN` | É a senha privada do aplicativo para gerar pagamentos, dentro da secção [credenciais]([FAKER][CREDENTIALS][URL]). Deve utilizá-la para se identificar em suas integrações. Utiliza sempre as do **Modo Produção**. |
-| `USER_ID` | É o ID do usuário vendedor em Mercado Pago, são os últimos dígitos do access_token, posterior do último hífen. Também conhecido como `COLLECTOR_ID`. |
-| `SPONSOR_ID` | É o ID do usuário fornecedor do sistema integrado com Mercado Pago, são os últimos dígitos do `access_token`, posterior do último hífen. O `sponsor_ID` não pode ser igual que o `USER_ID`. |
+| `USER_ID` | É o ID do usuário vendedor no Mercado Pago. Este ID é composto pelos últimos dígitos do access_token após o último hífen. Isso significa que, se o seu `access_token` for **APP_USR-8499883828799661-062409-bf057c51fc05f87eba5608328f869879-446566691**, seu `USER_ID` será **446566691**. Também conhecido como `COLLECTOR_ID`. |
+| `SPONSOR_ID` | É o ID do usuário fornecedor do sistema integrado com Mercado Pago. Este ID é composto pelos últimos dígitos do `access_token` após o último hífen. Isso significa que, se seu `access_token` for **APP_USR-8499883828799661-062409-bf057c51fc05f87eba5608328f869879-776566693**, seu `USER_ID` será **776566693**. O `sponsor_ID` não pode ser igual ao `USER_ID`. |
 | Loja (Store) | É uma **loja física** onde seus clientes podem adquirir seus produtos ou serviços. Você pode ter várias lojas numa mesma conta. |
 | Caixa (POS) | É um **ponto de venda** que existe numa sucursal ou loja física. Cada caixa terá um código QR unívoco vinculado. |
 | Ordem | É o pedido realizado pelo seu cliente. Contém uma relação de produtos com seu valor associado. |
@@ -37,11 +37,13 @@ Você precisará criar uma aplicação para cada solução, a fim de ter tudo or
 3. Dê a ela um nome com o qual você possa identificá-la mais tarde.
 4. Aceite nossos Termos e condições. E pronto!
 
+Caso não tenha nenhuma aplicação cadastrada, [veja o tutorial](https://youtu.be/FFhHdiqpnEI?list=PLCazXKuqZp3g4WfhNlhsB3FL9-1z7gUny).
+
 > NOTE
 > 
 > Nota
 >
-> Se for operar em nome de outros, você pode trabalhar com credenciais deles de uma forma mais fácil e segura por [Marketplace](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/marketplace/checkout-api/introduction).
+> Se for operar em nome de outros, você pode trabalhar com credenciais deles de uma forma mais fácil e segura por [Oauth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/oauth).
 
 ### 3. Gerar usuários de teste
 
@@ -84,6 +86,7 @@ Resposta:
 > * Para realizar pagamentos de teste, recomendamos que você utilize valores baixos.
 > * Tanto o comprador como o vendedor devem ser usuários de teste.
 > * Utiliza cartões de teste, já que não é possível sacar o dinheiro.
+> * Vídeo tutorial de como criar um [usuário teste.](https://youtu.be/ejdnAM0A9jA?list=PLCazXKuqZp3g4WfhNlhsB3FL9-1z7gUny)
 
 Uma vez que os usuários de teste são criados, você pode começar com a integração e criar as lojas e caixas.
 

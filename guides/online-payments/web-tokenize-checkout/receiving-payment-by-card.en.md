@@ -31,6 +31,7 @@ The following code will insert a payment button. When the buyer presses the butt
 2. Add the SDK credentials to enable its use and initialize the checkout using the ID or selector for the element where the payment button should be displayed:
 
 ```html
+<div class=tokenizer-container>
 <script>
 // Add the SDK credentials
 const mp = new MercadoPago('PUBLIC_KEY', {locale: 'es-AR'});
@@ -47,7 +48,14 @@ mp.checkout({
  }
 });
 </script>
+</div>
 ```
+
+>WARNING
+>
+>Important
+>
+> For mobile, please note that you should only include the path under the attribute `backUrl`, instead of the full domain. 
 
 This will display a payment button that will open the Web Tokenize Checkout.
 
@@ -278,6 +286,12 @@ Response:
 ```
 
 ## Additional recommendations
+
+>WARNING
+>
+>Important
+>
+> When opening tokenizer in a new tab, the URLs defined in `backURLs` are not taken into consideration and the user is not returned to the site, and is left in "processing" status.
 
 ### Test cards
 

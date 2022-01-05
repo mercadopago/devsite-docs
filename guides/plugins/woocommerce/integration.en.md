@@ -17,29 +17,29 @@ In the **In which country does your Mercado Pago account operate?** field, you m
 
 In the **Add credentials to "Test Mode" or "Production Mode"** section, you must fill in your **production** and **test** credentials.
 
-The Production credential will enable the store to process actual sales at the end of the initial tests. It is through this credential that the activation is complete.
+The **Production credential** will enable the store to process actual sales at the end of the initial tests. It is through this credential that the activation is complete.
 
-The Test credential will be necessary at first to carry out tests to ensure the correct functioning of the purchase and payment flow.
+The **Test credential** will be necessary at first to carry out tests to ensure the correct functioning of the purchase and payment flow.
 
 To activate the credentials, follow the steps below.
 
 1. Scroll down to the **Credentials** section.
 2. On **Add credentials to "Test Mode"or "Production Mode"**, choose **Activate Test Mode for Mercado Pago checkouts**. (By keeping this field enabled, your store will be in **test mode**, which allows you to test the plugin before setting the store to production).
-3. Enter your **test** and **production** credentials in the required fields. If you don't have this information, access the [Credentials](https://www.mercadopago.[FAKER][DOMAIN][URL]/developers/en/guides/resources/credentials) documentation and follow the required steps. 
+3. Enter your **test** and **production** credentials in the required fields. If you don't have this information, access the [Credentials](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) documentation and follow the required steps. 
 4. When finished filling in, click on **Save changes**.
 
 Set up the business information as shown in the next section once you fill in the credentials. 
 
 ## Business information
 
-Business information is required to identify your store. Fill in the fields as below.
+Business information is required to identify your store. Fill in the fields as shown below.
 
 1. **Store name:** Enter the name of your store.
 2. **Store Category:** Enter the category of your store's products.
 3. **Store ID:** Use a number or prefix to identify orders and payments from your store.
-4. **Integrator ID:** Enter your **integrator_id** as Mercado Pago partner. If you are not a partner yet, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/developer-program) for more information.
+4. **Integrator ID:** Enter your **integrator_id** as a Mercado Pago **&lt;dev&gt;program** member. If you are not a member yet, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/developer-program) for more information.
 
-In **Advanced adjustment**, you can configure options related to saving information to a file for debugging technical issues, as well as configuring [IPN notifications](https://www.mercadopago[FAKER][DOMAIN][URL]/developers/en/guides/notifications/ipn).
+In **Advanced Settings**, you can configure options related to saving information to a file for debugging technical issues, as well as configuring [IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn).
 
 ## Payment experience
 
@@ -49,7 +49,7 @@ In addition to the settings above, you will find different options related to yo
 >
 > Important
 >
-> Remember that the availability of the settings described below is related to the type of checkout chosen.
+> Remember that the availability of the settings described below is related to the type of checkout selected.
 
 1. **Activate checkout:** Select **Yes** to enable the experience of Mercado Pago on your store's checkout.
 2. **Title:** Keep the default text or change it to your own. This text will be displayed at the checkout, along with the payment options.
@@ -75,7 +75,7 @@ In addition to the settings above, you will find different options related to yo
 >
 > Important
 >
->Before configuring Pix as a payment method, we recommend [downloading the latest version](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) of the Mercado Pago plugin for WooCommerce and [registering your Pix key](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required) in Mercado Pago.
+> Before configuring Pix as a payment method, we recommend [downloading the latest version](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) of the Mercado Pago plugin for WooCommerce and [registering your Pix key](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required) in Mercado Pago.
 ------------
 
 Done! The Mercado Pago plugin with WooCommerce is now integrated with your store and can be tested by making purchases that will only be for the purpose of validating the plugin's operation but will not charge any value.

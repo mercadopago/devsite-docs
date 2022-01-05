@@ -22,6 +22,8 @@ Puedes encontrar toda la información en la [sección Devoluciones y cancelacion
 > 
 > Ten en cuenta que para pagos presenciales, solo puedes efectuar devoluciones pero no cancelaciones.
 
+Vea el proceso de reversión de pagos a través de QR CODE, [en este video tutorial](https://youtu.be/JXzDIos_fRA?list=PLCazXKuqZp3hGVY3bBhEO0ItFhIic5UpK).
+
 
 ## Obtener datos de la orden
 
@@ -43,6 +45,8 @@ Integra los [reportes de conciliación de Mercado Pago](https://www.mercadopago[
 
 Detallamos todos los casos necesarios que debes probar para validar que tu sistema esté integrado correctamente con Mercado Pago. 
 Puedes encontrar todos los casos en la [sección de Pruebas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/qr-code/integration-test).
+
+Vea más detalles en este [video tutorial](https://youtu.be/oQqJkqyjegk?list=PLCazXKuqZp3hGVY3bBhEO0ItFhIic5UpK).
 
 ---
 ### Próximos pasos

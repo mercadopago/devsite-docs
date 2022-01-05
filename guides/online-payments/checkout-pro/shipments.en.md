@@ -6,25 +6,26 @@ sites_supported:
 indexable: false
 ---
 
-# Offer Mercado Envíos
-Integrate Mercado Envíos to receive payment for your products and manage their shipment at the same time. You only have to add the necessary details in your preferences and configure your business data.
+# Offer Mercado Envios
+
+Integrate Mercado Envios to receive payment for your products and manage their shipment at the same time. You only have to add the necessary details in your preferences and configure your business data.
 
 ## Previous requirement
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Activate Mercado Envíos
+### Activate Mercado Envios
 
-From the seller's account, go to the [Your Business > Settings](https://www.mercadopago[FAKER][URL][DOMAIN]/business#shipping) section and activate the Mercado Envíos option.
+From the seller's account, go to the [Your Business > Settings](https://www.mercadopago[FAKER][URL][DOMAIN]/business#shipping) section and activate the Mercado Envios option.
 
 We will use the address you upload to show the delivery points close to where the seller will be able to take the packages, and calculate the shipping costs.
 
 ## Add shipments in your preferences
 
-Configure in your preferences, the weight and dimensions of the packages as you see in the following code. 
+Configure the weight and dimensions of the packages in your preferences, as you see in the following code. 
 
 [[[
 ```php
 ===
- Respect the dimensions format, in centimeters and grams as appropriate: heightx width x length, weight. 
+ Respect the dimensions format, in centimeters and grams as appropriate: height x width x length, weight. 
 ===
 <?php
 
@@ -64,7 +65,7 @@ preference.setShipments(shipments);
 ```
 ```node
 ===
- Respect the dimensions format, in centimeters and grams as appropriate: heightx width x length, weight. 
+ Respect the dimensions format, in centimeters and grams as appropriate: height x width x length, weight. 
 ===
 var preference = {}
 
@@ -86,7 +87,7 @@ preference.shipments = shipments
 ```
 ```ruby
 ===
- Respect the dimensions format, in centimeters and grams as appropriate: heightx width x length, weight. 
+ Respect the dimensions format, in centimeters and grams as appropriate: height x width x length, weight. 
 ===
 # ...
 preference_data = {
@@ -108,7 +109,7 @@ preference_data = {
 ```
 ```csharp
 ===
- Respect the dimensions format, in centimeters and grams as appropriate: heightx width x length, weight. 
+ Respect the dimensions format, in centimeters and grams as appropriate: height x width x length, weight. 
 ===
 var request = new PreferenceRequest
 {
@@ -157,13 +158,13 @@ preference_data = {
 
 By default, you'll have shipping configured at the buyer's expense. If you want, you can offer free shipping and/or pickup.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Free shipping
+### Free shipping
 
 ----[mla]----
 The shipping cost will be debited from the seller’s account when the payment is received. 
 You can offer different shipping methods by changing the ID. Check the available [id shipping methods](https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][GLOBALIZE][UPPER_SITE_ID]&shipping_mode=me2&allow_free_shipping=true) to know which ones to add.
 
-For example, in the following code is added the `ID 73328` which refers to a normal home delivery of OCA and the `ID 504945` for normal home delivery of Adreani. 
+For example, in the following code the `ID 73328` is added, which refers to a normal home delivery by OCA and the `ID 504945` for normal home delivery by Adreani. 
 
 [[[
 ```php
@@ -267,7 +268,7 @@ preference_data = {
 The shipping cost will be debited from the seller’s account when the payment is received. 
 You can offer different shipping methods by changing the ID. Check the available [id shipping methods](https://api.mercadolibre.com/shipping_methods/search?site_id=[FAKER][GLOBALIZE][UPPER_SITE_ID]&shipping_mode=me2&allow_free_shipping=true) to know which ones to add.
 
-For example, in the following code is added the `ID 509247` which refers to a standard delivery to home and the `ID 509245` for priority delivery to a post office.
+For example, in the following code the `ID 509247` is added, which refers to a standard delivery to home and the `ID 509245` for priority delivery to a post office.
 
 [[[
 ```php
@@ -471,9 +472,9 @@ preference_data = {
 ]]]
 ------------
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Shipping costs simulator
+#### Shipping costs simulator
 
-You can simulate costs from the shipping calculator. To do this, you must replace the `sellerId`, `shippingMethod Id`, `price`, `zipCode`, `height`, `width`, `length`, `weight` values of your package
+You can simulate costs from the shipping calculator. To do so, you must replace the `sellerId`, `shippingMethod Id`, `price`, `zipCode`, `height`, `width`, `length`, `weight` values of your package
 
 > https://api.mercadolibre.com/users/_sellerId_/shipping_options?free_method=_shippingMethodId_&item_price=_price_&zip_code=_zipCode_&dimensions=_height_x_width_x_length_,_weight
 
@@ -485,7 +486,7 @@ curl --location --request GET 'http://api.mercadolibre.com/users/179504451/shipp
 ```
 ]]]
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Home pickup
+### Home pickup
 
 You can also offer the possibility of picking up the product at the address you set, informing the buyer when and where to pick it up.  
 

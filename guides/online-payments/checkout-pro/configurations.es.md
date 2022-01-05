@@ -1,18 +1,17 @@
-# Otras funcionalidades
+# Configuraciones de preferencia
 
-
-Puedes adaptar la integración a tu negocio sumando atributos en la preferencia. Hay muchos [datos en una preferencia](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/preferences/_checkout_preferences/post) que se pueden configurar, pero siempre ten en cuenta qué es lo que tu negocio necesita.
+Puedes adaptar la integración de Checkout Pro a tu modelo de negocio configurando [atributos de preferencia](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/preferences/_checkout_preferences/post).
 
 ----[mla, mlb]----
-Si ofreces compras de montos altos, por ejemplo, puedes aceptar [pagos con dos tarjetas de crédito](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_pagos_con_dos_tarjetas_de_crédito) o también, [excluir medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_atributos_para_la_preferencia) que no quieras aceptar.
+Si ofreces compras de alto valor, por ejemplo, puedes aceptar [pagos con dos tarjetas de crédito](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_acepta_pagos_con_2_tarjetas_de_credito) o [eliminar métodos de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_define_los_medios_de_pago) no deseados para tu operación.
 ------------
 ----[mlm, mlc, mlu, mco, mpe]----
-Si ofreces compras de montos bajos, por ejemplo, puedes [excluir medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_atributos_para_la_preferencia) que no quieras aceptar.
+Si ofreces compras de alto valor, por ejemplo, puedes [excluir métodos de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_define_los_medios_de_pago) no deseado para tu operación.
 ------------
 
-A través de la preferencia, puedes [obtener información de tu negocio](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_Obtén_información_sobre_tu_negocio). Y también, medir la efectividad de tus publicidades y darles seguimiento al [integrar un píxel de Facebook](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_asocia_un_píxel_de_facebook) o al [asociar tus anuncios de Google](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_asocia_una_etiqueta_de_google_ads).
+La configuración de atributos de preferencia también te permite [obtener información comercial sobre tu negócio](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_obten_información_sobre_tu_negocio) y [medir la efectividad de tus anuncios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_optimiza_la_conversión_de_tus_anuncios) en plataformas como Facebook y Google.
 
-## Ejemplo de una preferencia completa
+## Ejemplo de preferencia completa
 
 ----[mlm, mla, mlb, mlc, mlu, mpe]----
 
@@ -77,6 +76,7 @@ A través de la preferencia, puedes [obtener información de tu negocio](https:/
 ```
 
 ------------
+
 ----[mco]----
 
  ```json
@@ -158,41 +158,36 @@ A través de la preferencia, puedes [obtener información de tu negocio](https:/
  ```
 ------------
 
-## Atributos para la preferencia
-
-### Definición de medios de pago
+## Define los medios de pago
 
 ----[mla, mco, mlb, mlu, mlc, mpe]----
-Por defecto, se ofrecen todos los medios de pago. Si se quiere excluir alguno puede hacerse desde la preferencia de pago.
-También se puede definir un medio de pago para que aparezca por defecto o la cantidad de cuotas máximas a ofrecer.
+De forma predeterminada, todos los métodos de pago se ofrecen en Checkout Pro. A través de la preferencia de pago, puedes configurar un método de pago por defecto, eliminar los no deseados, o elegir un número máximo de cuotas que se ofrecerán.
 ------------
 ----[mlm]----
-Por defecto, se ofrecen todos los medios de pago. Si se quiere excluir alguno puede hacerse desde la preferencia de pago.
-También se puede definir un medio de pago para que aparezca por defecto o la cantidad de mensualidades máximas a ofrecer.
+De forma predeterminada, todos los métodos de pago se ofrecen en Checkout Pro. A través de la preferencia de pago, puedes configurar un método de pago por defecto, eliminar los no deseados, o elegir un número máximo de mensualidades que se ofrecerán.
 ------------
-
 
 ----[mla, mco, mlb, mlu, mlc, mpe]----
 | Atributo | Descripción |
 | --- | --- |
-| `payment_methods` | Clase que describe los atributos y métodos de medios de pago. |
-| `excluded_payment_methods` | Método que excluye por [medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods#bookmark_medios_de_pago_por_país) específicos: Visa, Mastercard o American Express, entre otras. |
-| `excluded_payment_types` | Método que excluye por tipo de [medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods#bookmark_medios_de_pago_por_país): efectivo, tarjetas de crédito o débito. |
+| `payment_methods` | Clase que describe los métodos y atributos de medios de pago de Checkout Pro. |
+| `excluded_payment_types` | Método que excluye tipos de [medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods#bookmark_medios_de_pago_por_país) no deseados, como efectivo, tarjetas de crédito, o débito. |
+| `excluded_payment_methods` | Método que excluye marcas de tarjetas de crédito o débito, como Visa, Mastercard o American Express, entre otras. |
 | `installments` | Método que define la cantidad de cuotas máximas a ofrecer. |
-| `purpose` | Cuando se indique el valor "wallet_purchase", el Checkout aceptará pagos exclusivamente de usuarios registrados en Mercado Pago, con tarjeta y dinero en cuenta. |
-
+| `purpose` | Al indicar el valor "wallet_purchase" en este método, Checkout Pro solo aceptará pagos de usuarios registrados en Mercado Pago, con tarjeta y saldo de cuenta. |
 ------------
 
 ----[mlm]----
 | Atributo | Descripción |
 | --- | --- |
-| `payment_methods` | Clase que describe los atributos y métodos de medios de pago. |
-| `excluded_payment_methods` | Método que excluye por [medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods#bookmark_medios_de_pago_por_país)  específicos: Visa, Mastercard o American Express, entre otras. |
-| `excluded_payment_types` | Método que excluye por tipo de [medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods#bookmark_medios_de_pago_por_país) : efectivo, tarjetas de crédito o débito. |
+| `payment_methods` | Clase que describe los métodos y atributos de medios de pago de Checkout Pro. |
+| `excluded_payment_types` | Método que excluye tipos de [medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/localization/payment-methods#bookmark_medios_de_pago_por_país) no deseados, como efectivo, tarjetas de crédito, o débito. |
+| `excluded_payment_methods` | Método que excluye marcas de tarjetas de crédito o débito, como Visa, Mastercard o American Express, entre otras. |
 | `installments` | Método que define la cantidad de mensualidades máximas a ofrecer. |
-| `purpose` | Cuando se indique el valor "wallet_purchase", el Checkout aceptará pagos exclusivamente de usuarios registrados en Mercado Pago, con tarjeta y dinero en cuenta.|
-
+| `purpose` | Al indicar el valor "wallet_purchase" en este método, Checkout Pro solo aceptará pagos de usuarios registrados en Mercado Pago, con tarjeta y saldo de cuenta. |
 ------------
+
+Por ejemplo:
 
 [[[
 ```php
@@ -300,21 +295,73 @@ preference_data = {
 ```
 ]]]
 
-----[mco]----
-### IVA diferenciado
+----[mla, mlb]----
 
- Puedes modificar el valor del impuesto para la Dirección de Impuestos y Aduanas Nacionales (DIAN) que aplique según el producto o servicio que ofrezcas. Si no diferencias este valor, se aplicará por defecto el 19%.
+## Acepta pagos con 2 tarjetas de crédito
+
+![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas.png)
+
+Puedes activar la opción de ofrecer pagos con dos tarjetas de crédito desde la cuenta de Mercado Pago.
+
+Para activar esta opción de pago, ve a tus [opciones de negocio](https://www.mercadopago.com.ar/settings/my-business) y elige la opción `Recibir pagos con 2 tarjetas de crédito`.
+
+![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
+------------
+
+## Acepta pagos únicamente de usuarios registrados
+
+----[mla, mlb]----
+Puedes aceptar pagos con la billetera de Mercado Pago exclusivamente de usuarios registrados, con tarjetas, dinero disponible y Mercado Crédito.
+------------
+----[mlm, mlc, mco, mpe, mlu]----
+Puedes aceptar pagos con la billetera de Mercado Pago exclusivamente de usuarios registrados, con tarjetas y dinero disponible.
+------------
+
+Esto permite que tus clientes tengan disponible la información de su cuenta al instante en el momento del pago, como sus tarjetas y domicilios guardados. 
+
+> WARNING
+>
+> Importante
+>
+> Ten en cuenta que agregando esta opción no podrás recibir pagos de usuarios que no tengan cuenta en Mercado Pago o Mercado Libre y tampoco podrás cobrar en efectivo ni transferencia.
+
+Para aceptar pagos exclusivamente de usuarios registrados, agrega el siguiente atributo en tu preferencia:
+
+```json
+"purpose": "wallet_purchase"
+```
+
+Al hacerlo, tu preferencia tendría una estructura similar al ejemplo siguiente:
+
+```json
+{
+    "purpose": "wallet_purchase",
+    "items": [
+        {
+            "title": "Mi producto",
+            "quantity": 1,
+            "unit_price": 75.76
+        }
+    ],
+}
+```
+----[mco]----
+
+## Modifica la tasa de impuestos DIAN
+
+Puedes modificar el valor del impuesto para la Dirección de Impuestos y Aduanas Nacionales (DIAN), aplicado según el producto o servicio que ofrezcas. 
+
+Si no diferencias este valor, se aplicará por defecto una tarifa de 19%.
 
 | Atributo | Descripción |
 | --- | --- |
-| `type` | Identificador del impuesto. Solo se admite IVA. |
-| `value` | Monto del impuesto. Se admite un máximo de dos decimales. Para ítems excentos de impuestos se debe informar cero. |
+| `type` | Identificador del impuesto. Solo se admite `IVA` como valor. |
+| `value` | Monto del impuesto. Se admite un máximo de dos decimales. Para ítems excentos de impuestos se debe informar cero (`0`). |
+
+Por ejemplo:
 
 [[[
 ```json
-===
-Usa el atributo taxes para definir el valor que corresponda
-===
 "taxes": [
 	{
 		"type": "IVA",
@@ -328,9 +375,11 @@ Usa el atributo taxes para definir el valor que corresponda
 
 ----[mla, mlb, mco]----
 
-### Fecha de vencimiento para pagos en efectivo
+## Cambia la fecha de vencimiento para pagos en efectivo
 
-Si quieres, puedes cambiarla la fecha de vencimiento por defecto de un pago en efectivo enviando el campo `date_of_expiration` en la solicitud de creación de la preferencia. La fecha configurada debe ser entre 1 y 30 días a partir de la fecha de creación de la preferencia de pago.
+Puedes cambiar la fecha de vencimiento por defecto de un pago en efectivo enviando el campo `date_of_expiration` en la solicitud de creación de la preferencia. La fecha configurada debe ser entre 1 y 30 días a partir de la fecha de creación de la preferencia de pago.
+
+Por ejemplo:
 
 [[[
 ```json
@@ -341,9 +390,13 @@ La fecha usa el formato ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ```
 ]]]
 
-El período de acreditación es de 1 y 2 días hábiles según el medio de pago. Por lo tanto, te recomendamos establecer la fecha de vencimiento con al menos 3 días para asegurarte de que se realice el pago.
+> NOTE
+>
+> Nota
+>
+> El período de acreditación es de 1 y 2 días hábiles, según el medio de pago. Por lo tanto, te recomendamos establecer la fecha de vencimiento con al menos 3 días para asegurarte de que se realice el pago.
 
-Ten en cuenta los [tiempos de acreditación por medio de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_221) para realizar la configuración.
+Ten en cuenta los [tiempos de acreditación por medio de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/_221) para realizar la configuración correctamente.
 
 > WARNING
 >
@@ -352,21 +405,27 @@ Ten en cuenta los [tiempos de acreditación por medio de pago](https://www.merca
 > Si el pago se realiza después de la fecha de vencimiento, el monto se devolverá a la cuenta de Mercado Pago del pagador.
 ------------
 
-### Modo binario
+## Activa el modo binario
 
 Puedes activar el modo binario si el modelo de negocio requiere que la aprobación del pago sea instantánea. De esta forma, el pago solo puede resultar aprobado o rechazado.
 
 En caso de no estar activado el modo binario, el pago puede quedar en pendiente (en caso de requerir alguna acción por parte del comprador) o en proceso (si es necesaria una revisión manual).
 
-Para activarlo, solo debes configurar como `true` el atributo _`binary_mode`_ de la preferencia de pago:
+Para activarlo, solo debes configurar como `true` el atributo `binary_mode` de la preferencia de pago:
 
 ```json
 "binary_mode": true
 ```
 
-### Vigencia de preferencias
+> WARNING
+>
+> Importante
+>
+> Al activar el modo binario se simplifica la integración con Checkout Pro, pero puede ocasionar una disminución en la tasa de porcentaje de pagos aprobados. Esto se debe a que, para mantener el flujo instantáneo, los pagos pendientes o en proceso se rechazarán automáticamente de forma predeterminada.
 
-Si se quiere habilitar el pago de una preferencia con un tiempo de duración determinado, se puede activar un periodo de vigencia o concluir directamente con los siguientes atributos:
+## Establece la vigencia de preferencias
+
+Si se quiere habilitar el pago de una preferencia con un tiempo de duración determinado, se puede activar un periodo de vigencia o concluir directamente con los atributos `expires`,` expiration_date_from` y `expiration_date_to`:
 
 ```json
 "expires": true,
@@ -374,25 +433,21 @@ Si se quiere habilitar el pago de una preferencia con un tiempo de duración det
 "expiration_date_to": "2017-02-28T12:00:00.000-04:00"
 ```
 
-### Descripción en el resumen de la tarjeta
+Nota que la fecha usa el formato `ISO 8601: yyyy-MM-dd'T'HH:mm:ssz`.
 
-Puedes enviar el nombre de tu negocio en el atributo _`statement_descriptor`_ para que en el resumen de la tarjeta de tu comprador aparezca el nombre de tu negocio y de esta manera sepa donde realizó la compra.
+### Envía una descripción en el resumen de la tarjeta
+
+Puedes agregar una descripción para tu negocio a través del atributo `statement_descriptor` de las preferencias de pago, como se muestra en el siguiente ejemplo:
 
 ```json
 "statement_descriptor": "MINEGOCIO"
 ```
 
-> NOTE
->
-> Nota
->
-> Que el valor del atributo se muestre en el resumen de la tarjeta de tu comprador dependerá de la marca de la tarjeta utilizada.
+El valor del atributo aparecerá en el resumen de la tarjeta de tu comprador dependiendo de la marca de la tarjeta utilizada.
 
+## Establece una preferencia para múltiples ítems
 
-### Múltiples ítems
-
-Si se necesita crear una preferencia para más de un ítems, solo debes agregarlos como una lista dentro de _items_.
-Ten en cuenta que el monto total de la preferencia será la suma de la cantidad por el precio unitario de cada ítem.
+Si se necesita crear una preferencia para más de un ítem, solo debes agregarlos como una lista, tal como se muestra en el siguiente ejemplo:
 
 [[[
 ```php
@@ -559,49 +614,13 @@ curl -X POST \
 ```
 ]]]
 
-## Aceptar pagos únicamente de usuarios registrados
+Ten en cuenta que el valor total de la preferencia será la suma del valor del precio unitario de cada ítem listado.
 
-----[mla, mlb]----
-Puedes aceptar pagos con la billetera de Mercado Pago exclusivamente de usuarios registrados, con tarjetas, dinero disponible y Mercado Crédito.
-------------
-----[mlm, mlc, mco, mpe, mlu]----
-Puedes aceptar pagos con la billetera de Mercado Pago exclusivamente de usuarios registrados, con tarjetas y dinero disponible.
-------------
-
-Esto permite que tus clientes puedan tener disponible la información de su cuenta al instante, como por ejemplo, sus tarjetas y domicilios guardados. 
-
-> WARNING
->
-> Importante
->
-> Ten en cuenta que agregando esta opción no podrás recibir pagos de usuarios que no tengan cuenta en Mercado Pago o Mercado Libre y tampoco podrás cobrar en efectivo ni transferencia.
-
-Para aceptar pagos exclusivamente de usuarios registrados, agrega el siguiente atributo en tu preferencia:
-
-```json
-"purpose": "wallet_purchase"
-```
-
-Al hacerlo, tu preferencia quedaría de la siguiente manera:
-
-```json
-{
-    "purpose": "wallet_purchase",
-    "items": [
-        {
-            "title": "Mi producto",
-            "quantity": 1,
-            "unit_price": 75.76
-        }
-    ],
-}
-```
-
-## Monto del envío
+## Muestra el monto del envío 
 
 Si ya tienes estimado el envio desde tu sitio, puedes enviar el monto y mostrarlo por separado del total al ofrecer el pago. 
 
-Para configurarlo, agrega el nodo `shipments` con el valor del monto que quieras cobrar en el atributo `cost` y el valor `not_specified` en el atributo `mode`.
+Para configurarlo, agrega el nodo `shipments` con el valor del monto que quieras cobrar en el atributo `cost` y el valor `not_specified` en el atributo `mode`:
 
 ```json
 {
@@ -611,9 +630,12 @@ Para configurarlo, agrega el nodo `shipments` con el valor del monto que quieras
   }
 }
 ```
+
 ## Optimiza la conversión de tus anuncios
 
-Sabemos que es importante maximizar la efectividad de tus anuncios. Por esto, te damos la posibilidad de integrar el Checkout Pro con las plataformas de Facebook Ads y Google Ads para asociar los pagos a tus campañas.
+Sabemos que es importante maximizar la efectividad y la capacidad de búsqueda de tus anuncios.
+
+Por eso, ofrecemos la posibilidad de integrar Checkout Pro con las plataformas de Facebook Ads y Google Ads para asociar los pagos a tus campañas comerciales.
 
 ----[mla, mlb]----
 > NOTE
@@ -631,14 +653,14 @@ Sabemos que es importante maximizar la efectividad de tus anuncios. Por esto, te
 > Solo se verán asociados los pagos aprobados al instante con tarjetas de crédito o débito, o con dinero en Mercado Pago.
 ------------
 
-### Asocia un píxel de Facebook
+### Integra Checkout Pro con anuncios de Facebook
 
-Al momento de crear una preferencia, asocia el identificador correspondiente a tu píxel de Facebook de la siguiente manera:
+Al crear una preferencia, puedes asociarla con un _pixel_ (identificador) para rastrear las conversiones de anuncios de Facebook:
 
 [[[
 ```php
 ===
-Agrega el código en la preferencia y reemplaza el valor PIXEL_ID por tu identificador.
+Agrega el código en la preferencia y reemplaza el valor <code>PIXEL_ID</code> por tu identificador.
 ===
 <?php
   // Crear un objeto preferencia
@@ -661,7 +683,7 @@ Agrega el código en la preferencia y reemplaza el valor PIXEL_ID por tu identif
 ```
 ```node
 ===
-Agrega el código en la preferencia y reemplaza el valor PIXEL_ID por tu identificador.
+Agrega el código en la preferencia y reemplaza el valor <code>PIXEL_ID</code> por tu identificador.
 ===
 // Configura tu preferencia
 var preference = {
@@ -680,7 +702,7 @@ var preference = {
 ```
 ```java
 ===
-Agrega el código en la preferencia y reemplaza el valor PIXEL_ID por tu identificador.
+Agrega el código en la preferencia y reemplaza el valor <code>PIXEL_ID</code> por tu identificador.
 ===
 // Crea un objeto preferencia
 Preference preference = new Preference();
@@ -700,7 +722,7 @@ preference.save();
 ```
 ```csharp
 ===
-Agrega el código en la preferencia y reemplaza el valor PIXEL_ID por tu identificador.
+Agrega el código en la preferencia y reemplaza el valor <code>PIXEL_ID</code> por tu identificador.
 ===
 // Asocia tu píxel de Facebook
 var tracks = new List<PreferenceTrackRequest>
@@ -726,7 +748,7 @@ Preference preference = await client.CreateAsync(request);
 ```
 ```python
 ===
-Agrega el código en la preferencia y reemplaza el valor PIXEL_ID por tu identificador.
+Agrega el código en la preferencia y reemplaza el valor <code>PIXEL_ID</code> por tu identificador.
 ===
 # Asocia tu píxel de Facebook
 preference_data = {
@@ -746,7 +768,7 @@ preference = preference_response["response"]
 ```
 ```curl
 ===
-Agrega el código en la preferencia y reemplaza el valor PIXEL_ID por tu identificador.
+Agrega el código en la preferencia y reemplaza el valor <code>PIXEL_ID</code> por tu identificador.
 ===
 
 curl -X POST \
@@ -775,24 +797,22 @@ curl -X POST \
 ```
 ]]]
 
-Al configurarlo, cuando se apruebe un pago a través de tu Checkout Pro, verás un evento `Purchase` asociado al píxel especificado.
+Una vez completada la configuración, se asociará un evento de `purchase` con el _píxel_ especificado cuando se apruebe un pago reenviado por tu anuncio.
 
 > NOTE
 >
 > Nota
 >
-> Por el momento, solo se puede configurar un píxel. Prueba el funcionamiento de tu integración utilizando la extensión de Chrome Facebook Pixel Helper. Para más información, visita el [sitio oficial de Facebook](https://www.facebook.com/business/help/742478679120153?id=1205376682832142).
+> Por el momento, solo se puede configurar un único píxel por preferencia. Prueba el funcionamiento de tu integración utilizando la extensión de Chrome Facebook Pixel Helper. Para más información, visita el [sitio oficial de Facebook](https://www.facebook.com/business/help/742478679120153?id=1205376682832142).
 
+### Integra Checkout Pro con Google Ads
 
-### Asocia una etiqueta de Google Ads
-
-Al crear una preferencia, puedes asociarle una etiqueta para seguimiento de conversiones de Google Ads de la siguiente manera:
-
+Al crear una preferencia, puedes asociarla con una _tag_ (identificador) para realizar un seguimiento de las conversiones de Google Ads:
 
 [[[
 ```php
 ===
-Agrega el código en la preferencia y reemplaza los valores CONVERSION\_ID y CONVERSION\_LABEL por los datos de tu etiqueta.
+Agrega el código en la preferencia y reemplaza los valores <code>CONVERSION\_ID</code> y <code>CONVERSION\_LABEL</code> por los datos de tu _tag_.
 ===
 
 <?php
@@ -817,7 +837,7 @@ Agrega el código en la preferencia y reemplaza los valores CONVERSION\_ID y CON
 ```
 ```node
 ===
-Agrega el código en la preferencia y reemplaza los valores CONVERSION\_ID y CONVERSION\_LABEL por los datos de tu etiqueta.
+Agrega el código en la preferencia y reemplaza los valores <code>CONVERSION\_ID</code> y <code>CONVERSION\_LABEL</code> por los datos de tu _tag_.
 ===
 // Configura tu preferencia
 var preference = {
@@ -837,7 +857,7 @@ var preference = {
 ```
 ```java
 ===
-Agrega el código en la preferencia y reemplaza los valores CONVERSION\_ID y CONVERSION\_LABEL por los datos de tu etiqueta.
+Agrega el código en la preferencia y reemplaza los valores <code>CONVERSION\_ID</code> y <code>CONVERSION\_LABEL</code> por los datos de tu _tag_.
 ===
 // Crea un objeto preferencia
 Preference preference = new Preference();
@@ -859,7 +879,7 @@ preference.save();
 ```
 ```csharp
 ===
-Agrega el código en la preferencia y reemplaza los valores CONVERSION\_ID y CONVERSION\_LABEL por los datos de tu etiqueta.
+Agrega el código en la preferencia y reemplaza los valores <code>CONVERSION\_ID</code> y <code>CONVERSION\_LABEL</code> por los datos de tu _tag_.
 ===
 // Asocia tu etiqueta
 var tracks = new List<PreferenceTrackRequest>
@@ -886,7 +906,7 @@ Preference preference = await client.CreateAsync(request);
 ```
 ```python
 ===
-Agrega el código en la preferencia y reemplaza los valores CONVERSION_ID y CONVERSION_LABEL por los datos de tu etiqueta.
+Agrega el código en la preferencia y reemplaza los valores <code>CONVERSION\_ID</code> y <code>CONVERSION\_LABEL</code> por los datos de tu _tag_.
 ===
 # Asocia tu etiqueta
 preference_data = {
@@ -907,7 +927,7 @@ preference = preference_response["response"]
 ```
 ```curl
 ===
-Agrega el código en la preferencia y reemplaza los valores CONVERSION\_ID y CONVERSION\_LABEL por los datos de tu etiqueta.
+Agrega el código en la preferencia y reemplaza los valores <code>CONVERSION\_ID</code> y <code>CONVERSION\_LABEL</code> por los datos de tu _tag_.
 ===
 curl -X POST \
   'https://api.mercadopago.com/checkout/preferences' \
@@ -936,34 +956,38 @@ curl -X POST \
 ```
 ]]]
 
-De este modo, cuando se apruebe un pago a través de tu Checkout Pro, se asociará una conversión a la etiqueta configurada.
+Una vez completada la configuración, se asociará una conversión con la _tag_ especificada cuando se apruebe un pago reenviado para tu anuncio.
 
 > NOTE
 >
 > Nota
 >
-> Por el momento, solo se puede configurar una etiqueta. Para más información sobre las etiquetas del seguimiento de conversiones de Google Ads, visita el [sitio oficial de Google](https://support.google.com/google-ads?hl=es-419#topic=7456157).
-
+> Por el momento, solo se puede configurar una única _tag_ por preferencia. Para más información sobre las etiquetas del seguimiento de conversiones de Google Ads, visita el [sitio oficial de Google](https://support.google.com/google-ads?hl=es-419#topic=7456157).
 
 ## Obtén información sobre tu negocio
 
-Nuestros miembros certificados en el programa [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/developer-program) pueden obtener métricas comerciales. 
+Nuestros miembros certificados en el [Dev Program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/developer-program) pueden obtener métricas comerciales a partir de Checkout Pro. 
 
-Para obtener métricas comerciales, utiliza `headers` en tu preferencia de pago. Solo debes agregar los códigos de identificación, según corresponda. No es obligatorio completar este campo.
+Para obtener métricas comerciales, utiliza _headers_ en tu preferencia de pago, agregando los códigos de identificación según corresponda (no es obligatorio completar con los 3 campos):
 
-| Header | Tipo de código | Identificadores |
+| _Header_ | Tipo de código | Identificadores |
 | --- | --- | --- |
 | `x-integrator-id` | Integrador | Para desarrolladores o agencias que realizaron la integración. |
 | `x-platform-id` | Plataforma | Para las plataformas o módulos que ofrecen Mercado Pago en sus soluciones. |
 | `x-corporation-id` | Corporaciones | Para cuentas asociadas a una cuenta vendedor o grupo económico. |
 
-> Recuerda agregar el `integrator_id` a tus integraciones para recibir beneficios adicionales del programa. Puedes encontrar tu `integrator_id` en el [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel). 
+> NOTE
+> 
+> Nota
+> 
+> Recuerda agregar el _header_ `integrator_id` a tus integraciones para recibir beneficios adicionales del programa. Puedes encontrar tu `integrator_id` en el [Developer Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel). 
 
+Por ejemplo:
 
 [[[
 ```php
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
+Agrega los códigos de identificación y reemplaza los valores que quieras: <code>CORPORATION\_ID</code>, <code>INTEGRATOR\_ID</code> y <code>PLATFORM_ID</code>.
 ===
 MercadoPago\SDK::setPlatformId("PLATFORM_ID");
 MercadoPago\SDK::setIntegratorId("INTEGRATOR_ID");
@@ -971,7 +995,7 @@ MercadoPago\SDK::setCorporationId("CORPORATION_ID");
 ```
 ```node
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
+Agrega los códigos de identificación y reemplaza los valores que quieras: <code>CORPORATION\_ID</code>, <code>INTEGRATOR\_ID</code> y <code>PLATFORM_ID</code>.
 ===
 mercadopago.configure({
     platform_id: 'PLATFORM_ID',
@@ -981,7 +1005,7 @@ mercadopago.configure({
 ```
 ```java
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
+Agrega los códigos de identificación y reemplaza los valores que quieras: <code>CORPORATION\_ID</code>, <code>INTEGRATOR\_ID</code> y <code>PLATFORM_ID</code>.
 ===
 MercadoPago.SDK.setPlatformId("PLATFORM_ID");
 MercadoPago.SDK.setIntegratorId("INTEGRATOR_ID");
@@ -989,7 +1013,7 @@ MercadoPago.SDK.setCorporationId("CORPORATION_ID");
 ```
 ```ruby
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
+Agrega los códigos de identificación y reemplaza los valores que quieras: <code>CORPORATION\_ID</code>, <code>INTEGRATOR\_ID</code> y <code>PLATFORM_ID</code>.
 ===
 request_options = Mercadopago::RequestOptions.new()
 request_options.platform_id = 'PLATFORM_ID'
@@ -1000,7 +1024,7 @@ sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN', request_options: request_options)
 ```
 ```csharp
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
+Agrega los códigos de identificación y reemplaza los valores que quieras: <code>CORPORATION\_ID</code>, <code>INTEGRATOR\_ID</code> y <code>PLATFORM_ID</code>.
 ===
 MercadoPagoConfig.PlatformId    = "PLATFORM_ID";
 MercadoPagoConfig.IntegratorId  = "INTEGRATOR_ID";
@@ -1008,7 +1032,7 @@ MercadoPagoConfig.CorporationId = "CORPORATION_ID";
 ```
 ```python
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION_ID, INTEGRATOR_ID y PLATFORM_ID.
+Agrega los códigos de identificación y reemplaza los valores que quieras: <code>CORPORATION\_ID</code>, <code>INTEGRATOR\_ID</code> y <code>PLATFORM_ID</code>.
 ===
 import mercadopago
 from mercadopago.config import RequestOptions
@@ -1022,7 +1046,7 @@ sdk = mercadopago.SDK("ENV_ACCESS_TOKEN", request_options=request_options)
 ```
 ```curl
 ===
-Agrega los códigos de identificación y reemplaza los valores que quieras: CORPORATION\_ID, INTEGRATOR\_ID y PLATFORM_ID.
+Agrega los códigos de identificación y reemplaza los valores que quieras: <code>CORPORATION\_ID</code>, <code>INTEGRATOR\_ID</code> y <code>PLATFORM_ID</code>.
 ===
 curl -X POST \
 'https://api.mercadopago.com/checkout/preferences' \
@@ -1042,34 +1066,15 @@ curl -X POST \
 ```
 ]]]
 
-
-----[mla, mlb]----
-
-## Pagos con dos tarjetas de crédito
-
-![Pago 2 tarjetas](/images/web-payment-checkout/pay_2_tarjetas.png)
-
-Se puede habilitar la opción de ofrecer pagar con dos tarjetas de crédito desde la cuenta de Mercado Pago.
-Para activar la opción de pago, ve a tus [opciones de negocio](https://www.mercadopago.com.ar/settings/my-business) y elige la opción _Recibir pagos con 2 tarjetas de crédito_.
-
-![Config pago 2 tarjetas](/images/web-payment-checkout/config_pago_dos_tarjetas.gif)
-
-------------
 ---
-### Próximos pasos
+
+### Próximo paso
 
 > LEFT_BUTTON_REQUIRED_ES
 >
 > Integración avanzada
 >
-> Optimiza tu integración y mejora la gestión de tus ventas.
+> Optimiza tu integración con Checkout Pro y mejora la gestión de tus ventas.
 >
-> [Otras funcionalidades](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/advanced-integration)
+> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/advanced-integration)
 
-> RIGHT_BUTTON_RECOMMENDED_ES
->
-> Personalizaciones
->
-> Adapta el estilo de tu marca en la experiencia de compra.
->
-> [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/customizations)

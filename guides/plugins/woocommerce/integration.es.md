@@ -25,7 +25,7 @@ Para activar las credenciales, sigue estos pasos:
 
 1. Accede a la sección de credenciales.
 2. En **Configura los pagos de la tienda para el modo Test o Producción**, selecciona la opción **Activar Modo Test para checkouts Mercado Pago**. Al mantener este campo habilitado, tu tienda estará en **modo test**, lo que te permitirá probar el funcionamiento del plugin antes de habilitar la tienda para producción.
-3. Ingresa tus credenciales de **test** y **producción** en los campos obligatorios. Si aún no tienes esta información, accede a nuestra documentación [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) y sigue el paso a paso para obtenerlas. 
+3. Ingresa tus credenciales de **test** y **producción** en los campos obligatorios. Si aún no tienes esta información, accede a nuestra documentación [Credenciales](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) y sigue el paso a paso para obtenerlas. 
 4. Cuando termines de completar los pasos, haz clic en **Guardar cambios**.
 
 Con las credenciales completadas, configura la información del negocio.
@@ -38,7 +38,7 @@ Se requiere información del negocio para identificar tu tienda. Completa los ca
 1. **Nombre de la tienda:** ingresa el nombre de tu tienda.
 2. **Categoría de la tienda:** ingresa la categoría de los productos de tu tienda.
 3. **ID de la tienda:** usa un número o prefijo para identificar pedidos y pagos de tu tienda.
-4. **Integrator ID:** ingresa tu *integrator_id* como asociado de Mercado Pago. Si aún no eres un asociado, [haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/developer-program) para obtener más información.
+4. **Integrator ID:** ingresa tu *integrator_id* como miembro del **&lt;dev&gt;program** de Mercado Pago. Si aún no eres un miembro, [haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/developer-program) para obtener más información.
 
 En **Ajustes avanzados**, configura las opciones relacionadas con el almacenamiento de información en un archivo para depurar problemas técnicos, así como para configurar las [notificaciones de IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn).
 

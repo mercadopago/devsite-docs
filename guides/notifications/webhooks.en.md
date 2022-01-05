@@ -1,138 +1,316 @@
-# Webhooks Notifications
+# Webhooks
 
-A **webhook** is a notification sent from one server to another through an `HTTP POST` request informing your transactions.
+Webhook (also known as web callback) is a simple method that makes it easy for an app or system to provide real-time information whenever an event happens, that is, it is a way to passively receive data between two systems through of an `HTTP POST`.
 
-In order to receive notifications about the events in your platform, you have to [previously configure an URL to which Mercado Pago has access](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications).
+Webhooks notifications can be configured for one or more applications created in your [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/devpanel).
 
+Once configured, the Webhook will be sent whenever one or more registered events occur, avoiding a search job every minute in search of an answer and, consequently, a system overload and data loss whenever there is some situation. After receiving a notification on your platform, Mercado Pago will wait for a response to validate that you received it correctly
 
-You can also configure the notification when you do the POST of the payment, indicating the URL in the field notificaction_url:
+In this documentation, we will explain the necessary settings to receive messages (through the Dashboard or when creating payments), in addition to showing the necessary actions that you must take for Mercado Pago to validate that the notifications were properly received.
 
-```json
-{
-	"transaction_amount":100,
-	....
-	"notification_url":"http://requestbin.fullcontact.com/1ogudgk1",
-    ....
-}
-```
+## Configuration via Dashboard
 
-## Events
+Below we will explain how to indicate the URLs that will be notified and how to configure the events for which notification will be received.
 
-> WARNING
->
-> Important
->
-> An event is any type of update on the reported object, including status or attribute changes.
+![webhooks](/images/notifications/webhooks_es.png)
 
-Whenever an event occurs, we will send you a notification in json format using HTTP POST to the URL that you specified.
+1. First, an application must be created on the home page of your [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
+2. With the application created, go to the Webhooks Notifications tab in your Dashboard and configure the [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) of **production**  and **test** from which notifications will be received. 
+3. You will also be able to experiment and test if the indicated URL is receiving notifications correctly, being able to verify the request, the response given by the server and the description of the event.
+4. If you need to identify multiple accounts, at the end of the indicated URL you can indicate the parameter `?customer=(sellername) endpoint` to identify the sellers.
+5. Next, select the **events** from which you will receive notifications in `json` format via an `HTTP POST` to the URL specified above. An event is any type of update to the reported object, including status or attribute changes. See the events that can be configured in the table below.
 
-We will notify the following events:
-
-| Notification type | Action | Description |
+| Notification Type | Action | Description |
 | :--- | :--- | :--- |
-| `payment` | `payment.created` | Payment created |
-| `payment` | `payment.updated` | Payment updated |
-| `mp-connect` | `application.deauthorized` | Account deauthorized |
-| `mp-connect` | `application.authorized` | Account authorized |
-| `plan` | `application.authorized` | Account authorized |
-| `subscription` | `application.authorized` | Account authorized |
-| `invoice` | `application.authorized` | Account authorized |
+| `payment` | `payment.created` | Payment creation |
+| `payment` | `payment.updated` | Payment update |
+| `mp-connect` | `application.deauthorized` | Account unbinding |
+| `mp-connect` | `application.authorized` | Account linking |
+| `subscription_preapproval` | `created - updated` | Subscription |
+| `subscription_preapproval_plan` | `created - updated` | Subscription plan |
+| `subscription_authorized_payment` | `created - updated` | Recurring payment for a subscription |
+| `point_integration_wh` | `state_FINISHED` | Payment process completed |
+| `point_integration_wh` | `state_CANCELED` | Payment process canceled |
+| `point_integration_wh` | `state_ERROR` | An error occurred while processing the payment attempt |
 
-Mercado Pago will send notifications with the following schedule of retries and confirmation awaiting times. You must return an `HTTP STATUS 200 (OK)` or `201 (CREATED)` before the corresponding time expires. If not, it will be assumed that you did not receive it correctly and you will be notified again.
+## Setup while creating payments
 
-If you need more information, please review the section [What should I do when I receive a notification?](#bookmark_what_should_i_do_after_receiving_a_notification?).
+It is possible to configure the notification URL more specifically for each payment using the `notification_url` field. See below how to do this using the SDKs.
 
-| Event| Time after the first dispatch | Confirmation waiting time |
-| --- | --- | --- |
-| Dispatch | - | 22 seconds |
-| First retry | 5 minutes | 5 seconds |
-| Second retry | 45 minutes | 5 seconds |
-| Third retry | 6 hours | 5 seconds |
-| Fourth retry | 2 days | 5 seconds |
-| Fifth retry | 4 days | 5 seconds |
+1. In the `notification_url` field, indicate the URL from which notifications will be received, as shown below.
 
-The notification sent has the following format:
+[[[
+```php
+<?php
+    require_once 'vendor/autoload.php';
 
-```json
+    MercadoPago\SDK::setAccessToken("YOUR_ACCESS_TOKEN");
+
+    $payment = new MercadoPago\Payment();
+    $payment->transaction_amount = (float)$_POST['transactionAmount'];
+    $payment->token = $_POST['token'];
+    $payment->description = $_POST['description'];
+    $payment->installments = (int)$_POST['installments'];
+    $payment->payment_method_id = $_POST['paymentMethodId'];
+    $payment->issuer_id = (int)$_POST['issuer'];
+    $payment->notification_url = `http://requestbin.fullcontact.com/1ogudgk1`;
+    ...
+    $response = array(
+        'status' => $payment->status,
+        'status_detail' => $payment->status_detail,
+        'id' => $payment->id
+    );
+    echo json_encode($response);
+
+?>
+```
+```node
+var mercadopago = require('mercadopago');
+mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
+
+var payment_data = {
+  transaction_amount: Number(req.body.transactionAmount),
+  token: req.body.token,
+  description: req.body.description,
+  installments: Number(req.body.installments),
+  payment_method_id: req.body.paymentMethodId,
+  issuer_id: req.body.issuer,
+  notification_url: "http://requestbin.fullcontact.com/1ogudgk1",
+  payer: {
+    email: req.body.email,
+    identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
+      type: req.body.docType,------------
+      number: req.body.docNumber
+    }
+  }
+};
+
+mercadopago.payment.save(payment_data)
+  .then(function(response) {
+    res.status(response.status).json({
+      status: response.body.status,
+      status_detail: response.body.status_detail,
+      id: response.body.id
+≈    });
+  })
+  .catch(function(error) {
+    res.status(response.status).send(error);
+  });
+```
+```java
+MercadoPago.SDK.setAccessToken("YOUR_ACCESS_TOKEN");
+
+Payment payment = new Payment();
+payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmount")))
+       .setToken(request.getParameter("token"))
+       .setDescription(request.getParameter("description"))
+       .setInstallments(Integer.valueOf(request.getParameter("installments")))
+       .setPaymentMethodId(request.getParameter("paymentMethodId"))
+       .setNotificationUrl("http://requestbin.fullcontact.com/1ogudgk1");
+
+Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
+identification.setType(request.getParameter("docType"))
+              .setNumber(request.getParameter("docNumber"));------------ ----[mlm]----
+identification.setNumber(request.getParameter("docNumber"));------------
+
+Payer payer = new Payer();
+payer.setEmail(request.getParameter("email"))
+     .setIdentification(identification);
+     
+payment.setPayer(payer);
+
+payment.save();
+
+System.out.println(payment.getStatus());
+
+```
+```ruby
+require 'mercadopago'
+sdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')
+
+payment_data = {
+  transaction_amount: params[:transactionAmount].to_f,
+  token: params[:token],
+  description: params[:description],
+  installments: params[:installments].to_i,
+  payment_method_id: params[:paymentMethodId],
+  notification_url: "http://requestbin.fullcontact.com/1ogudgk1",
+  payer: {
+    email: params[:email],
+    identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
+      type: params[:docType],------------
+      number: params[:docNumber]
+    }
+  }
+}
+
+payment_response = sdk.payment.create(payment_data)
+payment = payment_response[:response]
+
+puts payment
+
+```
+```csharp
+using System;
+using MercadoPago.Client.Common;
+using MercadoPago.Client.Payment;
+using MercadoPago.Config;
+using MercadoPago.Resource.Payment;
+
+MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
+
+var paymentRequest = new PaymentCreateRequest
 {
-    "id": 12345,
-    "live_mode": true,
-    "type": "payment",
-    "date_created": "2015-03-25T10:04:58.396-04:00",
-    "application_id": 123123123,
-    "user_id": 44444,
-    "version": 1,
-    "api_version": "v1",
-    "action": "payment.created",
-    "data": {
-        "id": "999999999"
+    TransactionAmount = decimal.Parse(Request["transactionAmount"]),
+    Token = Request["token"],
+    Description = Request["description"],
+    Installments = int.Parse(Request["installments"]),
+    PaymentMethodId = Request["paymentMethodId"],
+    NotificationUrl = "http://requestbin.fullcontact.com/1ogudgk1",
+
+    Payer = new PaymentPayerRequest
+    {
+        Email = Request["email"],
+        Identification = new IdentificationRequest
+        {----[mla, mlb, mlu, mlc, mpe, mco]----
+            Type = Request["docType"],------------
+            Number = Request["docNumber"],
+        },
+    },
+};
+
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(paymentRequest);
+
+Console.WriteLine(payment.Status);
+
+```
+```python
+import mercadopago
+sdk = mercadopago.SDK("ACCESS_TOKEN")
+
+payment_data = {
+    "transaction_amount": float(request.POST.get("transaction_amount")),
+    "token": request.POST.get("token"),
+    "description": request.POST.get("description"),
+    "installments": int(request.POST.get("installments")),
+    "payment_method_id": request.POST.get("payment_method_id"),
+    "notification_url" =  "http://requestbin.fullcontact.com/1ogudgk1",
+    "payer": {
+        "email": request.POST.get("email"),
+        "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
+            "type": request.POST.get("type"), ------------
+            "number": request.POST.get("number")
+        }
     }
 }
-```
-This indicates that payment **999999999** was created for the user **44444** in **production mode** with the V1 version of the API. That event took place on **2016-03-25T10:04:58.396-04:00**.
 
-> WARNING
+payment_response = sdk.payment().create(payment_data)
+payment = payment_response["response"]
+
+print(payment)
+```
+```curl
+curl -X POST \
+    -H 'accept: application/json' \
+    -H 'content-type: application/json' \
+    -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+    'https://api.mercadopago.com/v1/payments' \
+    -d '{
+          "transaction_amount": 100,
+          "token": "ff8080814c11e237014c1ff593b57b4d",
+          "description": "Blue shirt",
+          "installments": 1,
+          "payment_method_id": "visa",
+          "issuer_id": 310,
+          "notification_url": "http://requestbin.fullcontact.com/1ogudgk1",
+          "payer": {
+            "email": "test@test.com"
+
+          }
+    }'
+
+```
+]]]
+
+2. Implement the notifications receiver using the following code as an example:
+
+```php
+<?php
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+  switch($_POST["type"]) {
+      case "payment":
+          $payment = MercadoPago\Payment::find_by_id($_POST["data"]["id"]);
+          break;
+      case "plan":
+          $plan = MercadoPago\Plan::find_by_id($_POST["data"]["id"]);
+          break;
+      case "subscription":
+          $plan = MercadoPago\Subscription::find_by_id($_POST["data"]["id"]);
+          break;
+      case "invoice":
+          $plan = MercadoPago\Invoice::find_by_id($_POST["data"]["id"]);
+          break;
+      case "point_integrartion_wh":
+          // $_POST contains the information related to the notification.
+          break;    
+  }
+?>
+```
+
+3. Once the necessary settings have been made, the notification via Webhook will have the following format:
+
+> NOTE
 >
 > Important
 >
-> Please note that it is not possible to receive notifications in a test environment.
+> For the event type `point_integration_wh` the notification format changes. [Click here](https://www.mercadopago[FAKER][URL][DOMÍNIO]/developers/en/guides/in-person-payments/mp-point/introduction) to consult the documentation of **Mercado Pago Point**.
 
-## What should I do when I receive a notification?
+```json
+{
+  "id": 12345,
+  "live_mode": true,
+  "type": "payment",
+  "date_created": "2015-03-25T10:04:58.396-04:00",
+  "application_id": 123123123,
+  "user_id": 44444,
+  "version": 1,
+  "api_version": "v1",
+  "action": "payment.created",
+  "data": {
+      "id": "999999999"
+  }
+}
+```
 
+This indicates that payment **999999999** was created for user **44444** in production mode with API version V1 and that this event occurred on date **2016-03-25T10:04:58.396-04 :00**.
 
-When you receive a notification on your platform, Mercado Pago waits for a response to validate that you received it correctly. For this, you must return an `HTTP STATUS 200 (OK)` or `201 (CREATED)`.
+| Attribute | Description |
+| --- | --- |
+| **id** | Notification ID |
+| **live_mode** | Indicates if the URL entered is valid. |
+| **date_created** | Resorce (payments, mp-connect, subscription etc) creation date |
+| **application_id** | Application ID that received the resource (payments, merchant_order, subscription, preapproval, etc) |
+| **user_id** | Vendor UserID |
+| **version** | Number of times a notification was sent |
+| **api_version** | Indicates if it is a duplicate notification or not |
+| **action** | Type of notification received, indicating whether it is the update of a resource or the creation of a new |
+| **data - id** | Payment ID or merchant_order |
 
-It is recommended that you respond to the notification before executing business logic or prior to accessing external resources so as not to exceed [the estimated response times.](#bookmark_events)
+4. If you want to receive notifications only from Webhook and not from IPN, you can add in the `notification_url` the parameter `source_news=webhook`. For example: https://www.yourserver.com/notifications?source_news=webhook
 
-This communication is exclusively between the servers of Mercado Pago and your server, so there will not be a physical user seeing any type of result.
+## Actions required after receiving notification
 
-After this, you must obtain the complete information of the notified resource by accessing the corresponding endpoint of the API:
+[TXTSNIPPET][/guides/snippets/test-integration/notification-response]
 
+After returning the notification and confirming its receipt, you will obtain the full information of the notified resource by accessing the corresponding API endpoint:
 
 | Type | URL | Documentation |
 | --- | --- | --- |
 | payment | `https://api.mercadopago.com/v1/payments/[ID]` | [see documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) |
-| plan | `https://api.mercadopago.com/v1/plans/[ID]` | - |
-| subscription | `https://api.mercadopago.com/v1/subscriptions/[ID]` | - |
-| invoice | `https://api.mercadopago.com/v1/invoices/[ID]` | - |
+| subscription_preapproval | `https://api.mercadopago.com/preapproval` | [see documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/subscriptions/_preapproval/post) |
+| subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | - |
+| subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | - |
+| point_integration_wh | - | [see documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/mp-point/introduction) |
 
-With this information you can make the necessary updates on your platform, such as registering an approved payment.
-
-> WARNING
->
-> Important
->
-> Keep in mind that if the response times are exceeded, it is possible to receive duplicate notifications of an event.
-
-### Implement the receiver notification using the following code as example:
-
-```php
- <?php
-
-    MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
-
-    switch($_POST["type"]) {
-        case "payment":
-            $payment = MercadoPago\Payment::find_by_id($_POST["data"]["id"]);
-            break;
-        case "plan":
-            $plan = MercadoPago\Plan::find_by_id($_POST["data"]["id"]);
-            break;
-        case "subscription":
-            $plan = MercadoPago\Subscription::find_by_id($_POST["data"]["id"]);
-            break;
-        case "invoice":
-            $plan = MercadoPago\Invoice::find_by_id($_POST["data"]["id"]);
-            break;
-    }
-
-?>
-```
-
-## Receive only one type of notification
-
-If you want to receive notifications only from Webhooks, and not from IPN, you can add in the *notification_url* the parameter `source_news=webhooks`. For example:
-
-`https://www.yourserver.com/notifications?source_news=webhooks`
-
-> The change doesn't affect the parameters already included in the URL.
+With this information, you will be able to carry out the necessary updates to your platform, such as updating an approved payment.

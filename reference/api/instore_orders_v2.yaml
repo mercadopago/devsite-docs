@@ -183,21 +183,21 @@ paths:
       parameters:
         - name: user_id
           in: path
-          description: User Id
+          description: Find the User ID in your developer dashboard at our devsite
           required: true
           schema:
             type: string
             example: 446566691
         - name: external_store_id
           in: path
-          description: External Store Id
+          description: Custom Store ID associated to the order.
           required: true
           schema:
             type: string
             example: SUC001
         - name: external_pos_id
           in: path
-          description: External POS Id
+          description: Custom POS ID associated to the order.
           required: true
           schema:
             type: string
@@ -210,7 +210,7 @@ paths:
               properties:
                 external_reference:
                   type: string
-                  description: Reference you can synchronize with your sale system.
+                  description: Custom order ID you can synchronize with your sale system.
                   example: 12345
                 title:
                   type: string
@@ -268,7 +268,21 @@ paths:
                         type: string
                         description: Item total.
                         example: 100
-                sponsor:
+                taxes:
+                  type: array
+                  description: Information about the paid taxes.
+                  items:
+                    type: object
+                    properties:
+                      value:
+                        type: number
+                        description: Total amount of tax payed. This amount is not included in the total sum of the order.
+                        example: 19
+                      type:
+                        type: string
+                        description: type of tax payed.
+                        example: IVA
+                sponsor: 
                   type: object
                   description: Integrator information.
                   properties:

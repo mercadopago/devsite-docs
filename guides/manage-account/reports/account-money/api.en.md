@@ -771,7 +771,7 @@ $headers = array(
 $data = array(
     'access_token' => 'ENV_ACCESS_TOKEN'
 );
-$response = Requests::post('https://api.mercadopago.com/v1/account/settlement_report/list', $headers, $data);
+$response = Requests::get('https://api.mercadopago.com/v1/account/settlement_report/list', $headers, $data);
 ```
 ```java
 URL url = new URL("https://api.mercadopago.com/v1/account/settlement_report/list");
@@ -793,7 +793,7 @@ headers = {
     'Authorization: Bearer ENV_ACCESS_TOKEN'
 }
 
-response = requests.post('https://api.mercadopago.com/v1/account/settlement_report/list', headers=headers)
+response = requests.get('https://api.mercadopago.com/v1/account/settlement_report/list', headers=headers)
 ```
 ```node
 var request = require('request');
@@ -801,7 +801,7 @@ var headers = { 'accept': 'application/json'};
 var dataString = 'access_token=ENV_ACCESS_TOKEN';
 var options = {
     url: 'https://api.mercadopago.com/v1/account/settlement_report/list',
-    method: 'POST',
+    method: 'GET',
     headers: headers,
     body: dataString
 };
