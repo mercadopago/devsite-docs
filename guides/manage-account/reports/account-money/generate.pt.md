@@ -7,8 +7,8 @@ Há duas formas de gerar um relatório de Dinheiro em conta:
 
 | Canais | Descrição |
 | --- | --- |
-| Painel do Mercado Pago | <br/>É muito rápido e simples. Para gerar a partir da sua conta do Mercado Pago, vá até [seus Relatórios](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) e selecione uma opção de *Relatórios*.<br/><br/>Siga o passo a passo para [gerar relatórios a partir do painel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/panel).<br/><br/> |
-| Integração via API | <br/>Programa a frequência do seu relatório de acordo com as suas necessidades. Pode ser tanto de forma manual como de forma programada.<br/><br/>Leia a documentação para [gerar relatórios por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/api). <br/><br/> |
+| Painel do Mercado Pago | <br/>É muito rápido e simples. Para gerar a partir da sua conta do Mercado Pago, vá até [seus Relatórios](https://www.mercadopago.com.br/balance/reports?page=1#!/settlement-report) e selecione uma opção de *Relatórios*.<br/><br/>Por meio do painel é possível efetuar customizações e programação de geração automática do relatório.<br/><br/>Siga o passo a passo para [gerar relatórios a partir do painel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/panel).<br/><br/> |
+| Integração via API | <br/>Programa a frequência do seu relatório de acordo com as suas necessidades. Pode ser tanto de forma manual como de forma programada.<br/><br/>Como no painel, também é possível efetuar customizações no relatório.<br/><br/>Leia a documentação para [gerar relatórios por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/api). <br/><br/> |
 
 <br/>
 
@@ -24,7 +24,7 @@ Programe como e com que frequência você quer gerar seus relatórios.
 | Elemento | Características |
 | --- | --- |
 | Programação | <br/>- Diária<br/> - Semanal<br/>- Mensal<br/><br/> |
-| Geração | <br/>- Manual<br/><br/> |
+| Geração | <br/>- Manual<br/><br/> | <br/>- Automática<br/><br/> |
 
 
 ### Estrutura do relatório
@@ -34,11 +34,11 @@ Saiba as características dos elementos que compõem seu relatório.
 
 | Elemento ou ação | Características |
 | --- | --- |
-| Detalhes das tabelas | <br/>Os detalhes das tabelas compreende as informações no mínimo de 1 dia. Exceto nos relatórios gerados por retirada de dinheiro. <br/> <br/> |
+| Detalhes das tabelas | <br/>Os detalhes das tabelas compreende as informações no mínimo de 1 dia. <br/> <br/> |
 | Ordem das colunas |<br/> Fixa <br/> <br/> |
 | Período máximo | <br/> Relatórios com dados de até 60 dias. <br/> <br/> |
 | Moeda | <br/> Local (com base no país onde está cadastrada a conta do Mercado Pago) <br/> <br/> |
-| Fuso horário das colunas: | <br/> GMT-4 <br/> <br> Tome como referência o lugar de onde o relatório é baixado. <br/><br/> |
+| Fuso horário das colunas: | <br/> GMT-3 (Horário de Brasília) <br/> <br> Tome como referência o lugar de onde o relatório é baixado. <br/><br/> |
 | Seleção de datas via API |<br/> Formato do fuso horário: UTC / GMT-0 <br/> <br/> |
 | Seleção de datas via web | <br/> Deve ter como base o fuso horário da conta do usuário.<br/> Por exemplo, a conta do usuário cadastrada no Brasil corresponde ao fuso horário de São Paulo. <br/> <br/> |
 
