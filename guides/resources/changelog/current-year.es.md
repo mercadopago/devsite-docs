@@ -14,7 +14,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 >
 > PRODUCT: REPORTES
 
-Las columnas `POI_WALLET_NAME` y `POI_BANK_NAME` permiten que los negocios que cobran con un código QR de Mercado Pago, identifiquen desde qué otras billeteras virtuales o bancos recibieron sus pagos.
+Las columnas `POI_WALLET_NAME` y `POI_BANK_NAME` permiten que los negocios que cobren con un código QR de Mercado Pago, identifiquen desde qué otras billeteras virtuales o bancos recibieron sus pagos.
 
 Ambas conformarán las últimas columnas del reporte, razón por la cual no se genera ningún conflicto por posición de referencia (Número de columna) o mapeo de la columna por keys (Encabezado).
 
