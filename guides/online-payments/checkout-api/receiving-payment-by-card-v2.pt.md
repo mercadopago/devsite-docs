@@ -215,7 +215,9 @@ const cardForm = mp.cardForm({
        console.log('Fields are ready')
      },
      onValidityChange: function ({ field, messages }) {
-       console.log(`${field}:\n${messages.join('\n')}`);
+        messages.forEach(message => {
+          console.log(`${field}: ${message}`);
+        });
      },
    }
  });
