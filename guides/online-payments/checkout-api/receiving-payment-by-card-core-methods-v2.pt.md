@@ -226,7 +226,7 @@ Valide os dados dos seus clientes enquanto são preenchidos para evitar erros e 
 
 ```javascript
 // Step #getPaymentMethods
-cardNumberElement.on('change', async ({ data }) => {
+cardNumberElement.on('change', async (data) => {
     const { bin } = data;
     try {
       const paymentMethodElement = document.getElementById('MPHiddenInputPaymentMethod');

@@ -215,7 +215,7 @@ Avoid mistakes and offer the correct available installments by validating your c
 
 ```javascript
 // Step #getPaymentMethods
-cardNumberElement.on('change', async ({ data }) => {
+cardNumberElement.on('change', async (data) => {
     const { bin } = data;
     try {
       const paymentMethodElement = document.getElementById('MPHiddenInputPaymentMethod');
