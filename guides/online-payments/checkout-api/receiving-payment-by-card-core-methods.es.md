@@ -249,7 +249,7 @@ const getInstallments = async () => {
        const cardNumber = document.getElementById('form-checkout__cardNumber').value; 
 
        const installments = await mp.getInstallments({
-           amount: document.getElementById('transactionAmmount').value,
+           amount: document.getElementById('transactionAmount').value,
            bin: cardNumber.slice(0,6),
            paymentTypeId: 'credit_card'
        });

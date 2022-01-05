@@ -279,7 +279,7 @@ const getInstallments = async (bin) => {
     try {
       const installmentsElement = document.getElementById('form-checkout__installments')
       const installments = await mp.getInstallments({
-        amount: document.getElementById('transactionAmmount').value,
+        amount: document.getElementById('transactionAmount').value,
         bin,
         paymentTypeId: 'credit_card'
       });
