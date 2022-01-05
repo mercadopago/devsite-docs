@@ -5,7 +5,7 @@
 >
 > Lleva con facilidad el control de tus ventas con QR
 >
-> Creamos nuevas columnas que te permiten identificar las billeteras virtuales o los bancos que tus clientes usan para pagar cuando les ----[mla]----cobrás------------ ----[mlu, mpe, mlm, mco, mlc, mlb]----cobras------------ con un QR de Mercado Pago. ----[mla]----Actualizá------------ ----[mlu, mpe, mlm, mco, mlc, mlb]----Actualiza------------ tus preferencias de configuración [desde el panel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement/settings) o [vía API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/api) para incluir las columnas en tus reportes.
+> Creamos nuevas columnas que te permiten identificar las billeteras virtuales o los bancos que tus clientes usan para pagar cuando les cobras con un QR de Mercado Pago. Actualiza tus preferencias de configuración [desde el panel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement/settings) o [vía API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/api) para incluir las columnas en tus reportes.
 
 ## Canales de generación
 
