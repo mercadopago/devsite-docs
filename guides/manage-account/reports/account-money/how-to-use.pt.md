@@ -15,9 +15,10 @@ O relatório está composto por diferentes tipos de transações que você pode 
 | --- | --- |
 | *SETTLEMENT* |<br/> Aprovadas<br/><br/>|
 | *REFUND* | ----[mla, mlm, mco, mlu, mlb, mlc]---- <br/> Devoluções totais ou parciais.<br/><br/> ------------ ----[mpe]---- <br/> Devoluções totais.<br/><br/> ------------ |
-| *CHARGEBACK* | <br/>Contestação<br/><br/> |
-| *DISPUTE* |<br/> Estão com reclamação.<br/><br/>|
-| *WITHDRAWAL* | <br/>Dinheiro retirado.<br/><br/>|
+| *CHARGEBACK* | <br/>Transação em Contestação<br/><br/> |
+| *DISPUTE* |<br/> Transação em disputa.<br/><br/>|
+| *WITHDRAWAL* | <br/>Dinheiro sacado da Conta Mercado Pago via DOC/TED.<br/><br/>|
+| *PAYOUT* | <br/>Dinheiro sacado da Conta Mercado Pago via PIX.<br/><br/>|
 | *CASHBACK* | <br/> Devolução de dinheiro.<br/><br/> |
 | *SETTLEMENT_SHIPPING* | <br/> Envios aprovados.<br/><br/> |
 | *REFUND_SHIPPING* | ----[mla, mlm, mco, mlu, mlb, mlc]---- <br/> Devoluções totais ou parciais de custos de envio.<br/><br/> ------------ ----[mpe]---- <br/> Devoluções de custos de envio.<br/><br/> ------------|
@@ -31,7 +32,7 @@ Na coluna `SETTLEMENT_NET_AMOUNT` está o impacto real sobre o dinheiro da sua c
 >
 > Nota
 >
-> Ten a mano el [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/glossary) de Dinheiro em conta para consultá-lo quando precisar ou queira conferir algum termo técnico.
+> Utilize o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/glossary) de Dinheiro em conta para consultá-lo quando precisar, como por exemplo conferir algum termo técnico.
 
 ## Exemplo de um relatório
 
