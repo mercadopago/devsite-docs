@@ -8,7 +8,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 > CHANGELOG
 >
-> Nuevas columnas en reporte de Todas las transacciones
+> Nuevas columnas en reporte de "Todas las transacciones"
 >
 > NEWS: FEATURE
 >
