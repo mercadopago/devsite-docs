@@ -43,7 +43,7 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | PACK_ID | Package identification in the cart. |
 | TAXES_DISAGGREGATED | Taxes disaggregated in JSON format. |
 | POI_ID | Point ID if payment is made through a physical retailer. |
-| POI_WALLET_NAME | Name of the digital wallet from which a virtual payment comes from. Allows you to identify the origin of a transaction when you charge with a Mercado Pago QR Code.|
+| POI_WALLET_NAME | Name of the digital wallet that a virtual payment comes from. Allows you to identify the origin of a transaction when you charge with a Mercado Pago QR Code.|
 | POI_BANK_NAME | Name of the bank from which a virtual payment comes from. Allows you to identify the origin of a transaction when you charge with a Mercado Pago QR Code.|
 
 <hr/>
