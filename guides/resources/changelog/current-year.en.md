@@ -20,7 +20,7 @@ Both of them are the last columns of the report, which is why no conflict is gen
 
 By default, these columns are disabled. To display them in the **"All Transactions"** report it is necessary to update the settings preferences from the dashboard or via API.
 
-Go to settings [from the panel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement/settings) o [via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/api).
+Go to settings [from the panel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement/settings) or [via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/api).
 
 ### December 1st
 
