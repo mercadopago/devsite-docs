@@ -166,24 +166,6 @@ const cardForm = mp.cardForm({
      onFormMounted: function (error) {
        if (error) return console.log('Callback para tratar o erro: montando o cardForm ', error)
      },
-     onFormUnmounted: function (error) {
-       if (error) return console.log('Callback para tratar o erro: desmontando o cardForm ', error)
-     },
-     onIdentificationTypesReceived: function (error, identificationTypes) {
-       if (error) return console.log('Callback para tratar o erro: recebendo tipos de documento ', error)
-     },
-     onPaymentMethodsReceived: function (error, paymentMethods) {
-       if (error) return console.log('Callback para tratar o erro: recebendo payment methods ', error)
-     },
-     onIssuersReceived: function (error, issuers) {
-       if (error) return console.log('Callback para tratar o erro: recebendo emissores ', error)
-     },
-     onInstallmentsReceived: function (error, installments) {
-       if (error) return console.log('Callback para tratar o erro: recebendo parcelas ', error)
-     },
-     onCardTokenReceived: function (error, token) {
-       if (error) return console.log('Callback para tratar o erro: recebendo o token ', error)
-     },
      onSubmit: function (event) {
        event.preventDefault();
  
