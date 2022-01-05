@@ -234,7 +234,7 @@ theme: {
 You can customize the following elements of Checkout Pro:
 
 - Buttons;
-- Data fields;
+- Data fields;;
 - Transition elements such as spinners and progress bars;
 - Edges.
 
