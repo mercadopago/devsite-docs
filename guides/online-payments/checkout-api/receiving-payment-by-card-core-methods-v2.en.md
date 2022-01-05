@@ -138,9 +138,6 @@ A code example with `cardNumber`, `expirationMonth`, `expirationYear` and `CVV` 
 ```javascript
   const cardNumberElement = mp.fields.create('cardNumber', {
     placeholder: "Card Number",
-    style: {
-      // padding: "10px"
-    }
   }).mount('form-checkout__cardNumber-container');
  
   const expirationDateElement = mp.fields.create('expirationDate', {
