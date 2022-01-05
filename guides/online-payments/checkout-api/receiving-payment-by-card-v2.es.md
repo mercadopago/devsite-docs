@@ -134,11 +134,6 @@ const cardForm = mp.cardForm({
      cardNumber: {
        id: 'form-checkout__cardNumber',
        placeholder: 'Card Number',
-       style: {
-         // Style examples:
-         // "font-size": "18px",
-         // color: "blue"
-       },
      },
      securityCode: {
        id: 'form-checkout__securityCode',
