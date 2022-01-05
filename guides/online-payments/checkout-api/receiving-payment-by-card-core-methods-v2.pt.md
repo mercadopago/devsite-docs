@@ -304,12 +304,11 @@ const formElement = document.getElementById('form-checkout');
   formElement.addEventListener('submit', e => createCardToken(e));
   const createCardToken = async (event) => {
     try {
-      const tokenElement = document.getElementById('MPHiddenInputToken');
+      const tokenElement = document.getElementById('token');
       if (!tokenElement.value) {
         event.preventDefault();
         const token = await mp.fields.createCardToken({
           cardholderName: document.getElementById('form-checkout__cardholderName').value,
-          cardholderEmail: document.getElementById('form-checkout__cardholderEmail').value,----[mla, mlb, mlu, mlc, mpe, mco]----
           identificationType: document.getElementById('form-checkout__identificationType').value,------------
  
           identificationNumber: document.getElementById('form-checkout__identificationNumber').value,
