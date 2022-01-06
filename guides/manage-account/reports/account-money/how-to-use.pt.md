@@ -15,7 +15,7 @@ O relatório está composto por diferentes tipos de transações que você pode 
 | --- | --- |
 | *SETTLEMENT* |<br/> Aprovadas<br/><br/>|
 | *REFUND* | ----[mla, mlm, mco, mlu, mlb, mlc]---- <br/> Devoluções totais ou parciais.<br/><br/> ------------ ----[mpe]---- <br/> Devoluções totais.<br/><br/> ------------ |
-| *CHARGEBACK* | <br/>Transação em Contestação<br/><br/> |
+| *CHARGEBACK* | <br/>Transação em contestação<br/><br/> |
 | *DISPUTE* |<br/> Transação em disputa.<br/><br/>|
 | *WITHDRAWAL* | <br/>Dinheiro sacado da conta Mercado Pago via DOC/TED.<br/><br/>|
 | *PAYOUT* | <br/>Dinheiro sacado da Conta Mercado Pago via PIX.<br/><br/>|
