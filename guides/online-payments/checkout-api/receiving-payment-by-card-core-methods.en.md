@@ -170,7 +170,7 @@ const cardNumberElement = document.getElementById('form-checkout__cardNumber');
 
 cardNumberElement.addEventListener('keyup', async () => {
    try {
-      const paymentMethodElement = document.getElementById('MPHiddenInputPaymentMethod');
+      const paymentMethodElement = document.getElementById('paymentMethodId');
        let cardNumber = cardNumberElement.value;
 
        if (cardNumber.length < 6 && paymentMethodElement.value) return paymentMethodElement.value = "";
@@ -211,7 +211,7 @@ Add the following code to obtain the `issuer_id`:
 const getIssuers = async () => {
    try {
        const cardNumber = document.getElementById('form-checkout__cardNumber').value;
-       const paymentMethodId = document.getElementById('MPHiddenInputPaymentMethod').value;
+       const paymentMethodId = document.getElementById('paymentMethodId').value;
        const issuerElement = document.getElementById('form-checkout__issuer');
 
        const issuers = await mp.getIssuers({paymentMethodId: paymentMethodID, bin: cardNumber.slice(0,6)});
@@ -260,7 +260,7 @@ formElement.addEventListener('submit', e => createCardToken(e));
 
 const createCardToken = async (event) => {
    try {
-       const tokenElement = document.getElementById('MPHiddenInputToken');
+       const tokenElement = document.getElementById('token');
 
        if (!tokenElement.value) {
            event.preventDefault();
