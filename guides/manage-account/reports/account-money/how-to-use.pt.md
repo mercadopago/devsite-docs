@@ -32,7 +32,7 @@ Na coluna `SETTLEMENT_NET_AMOUNT` está o impacto real sobre o dinheiro da sua c
 >
 > Nota
 >
-> Utilize o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/glossary) de Dinheiro em conta para consultá-lo quando precisar, como por exemplo conferir algum termo técnico.
+> Utilize o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/glossary) de dinheiro em conta para consultá-lo quando precisar, como, por exemplo, conferir algum termo técnico.
 
 ## Exemplo de um relatório
 
