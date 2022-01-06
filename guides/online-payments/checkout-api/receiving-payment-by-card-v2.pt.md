@@ -121,7 +121,6 @@ Para que o IFrame seja renderizado, é necessário passar a opção `iframe` com
 // Step #3
 const cardForm = mp.cardForm({
    amount: '100.5',
-   autoMount: true,
    iframe: true,
    form: {
      id: 'form-checkout',

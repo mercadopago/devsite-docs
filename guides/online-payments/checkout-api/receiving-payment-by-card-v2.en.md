@@ -110,7 +110,6 @@ For the IFrame to be rendered, it is necessary to pass the `iframe` option with 
 // Step #3
 const cardForm = mp.cardForm({
    amount: '100.5',
-   autoMount: true,
    iframe: true,
    form: {
      id: 'form-checkout',
