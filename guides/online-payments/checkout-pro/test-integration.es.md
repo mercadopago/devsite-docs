@@ -54,7 +54,7 @@ Antes de activarlas, verifica si las credenciales utilizadas en tu integración 
 
 ### Próximo paso
 
-> LEFT_BUTTON_REQUIRED_PT
+> LEFT_BUTTON_REQUIRED_ES
 >
 > Configuración de preferencias
 >
