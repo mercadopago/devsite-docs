@@ -22,6 +22,24 @@ Por defecto, estas columnas están deshabilitadas. Para que se visualicen en el 
 
 Ir a configuración [desde el panel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement/settings) o [vía API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/api).
 
+### 23 de diciembre
+
+> CHANGELOG
+>
+> Nueva versión SDK NodeJS
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: SDK NODEJS
+
+Lanzamos una nueva versión del SDK NodeJS 1.5.10.
+
+> GIT
+>
+> GitHub
+>
+> Para más detalle, consulta en GitHub los [últimos cambios productivos](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.10).
+
 ### 1 de diciembre
 
 > CHANGELOG

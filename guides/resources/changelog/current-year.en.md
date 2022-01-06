@@ -22,6 +22,24 @@ By default, these columns are disabled. To display them in the **"All Transactio
 
 Go to settings [from the panel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement/settings) or [via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/api).
 
+### December 23rd
+
+> CHANGELOG
+>
+> New version of SDK NodeJS
+>
+> NEW_VERSION: NEW VERSION
+>
+> PRODUCT: SDK NODEJS
+
+We have released a new version of SDK NodeJS 1.5.10.
+
+> GIT
+>
+> GitHub
+>
+> [Check GitHub](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.10) for further details regarding this release.
+
 ### December 1st
 
 > CHANGELOG
@@ -58,6 +76,7 @@ We have released the new version 5.6.0 for WooCommerce.
 > GitHub
 >
 > [Check GitHub](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.6.0) for further details regarding this release.
+
 ## November 2021
 
 ### November 16th
@@ -97,7 +116,6 @@ We have released a new version of SDK Java 1.11.1.
 > GitHub
 >
 > [Check GitHub](https://github.com/mercadopago/sdk-java/releases) for further details regarding this release.
-
 
 ### November 5th
 

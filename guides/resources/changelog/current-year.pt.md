@@ -22,6 +22,24 @@ Por padrão, essas colunas estão desativadas. Para que elas sejam mostradas no 
 
 Acesse a configuração pelo [painel](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement/settings) ou [via API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/api).
 
+### 23 de dezembro
+
+> CHANGELOG
+>
+> Nova versão SDK NodeJS
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK NODEJS
+
+Lançamos a nova versão 1.5.10 do SDK NodeJS.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub os detalhes das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.10).
+
 ### 1 de dezembro
 
 > CHANGELOG
@@ -81,7 +99,6 @@ Lançamos a nova versão 3.12.3 para Magento 2.
 > GitHub
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.12.3).
-
 
 ### 10 de novembro
 
@@ -378,7 +395,7 @@ para que você saiba como no Mercado Pago garantimos a segurança das transaçõ
 
 ## Agosto 2021
 
-## 19 de agosto
+### 19 de agosto
 
 > CHANGELOG
 >
