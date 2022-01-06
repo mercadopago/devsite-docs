@@ -181,12 +181,22 @@ Valida los datos de tus clientes mientras los completan para evitar errores y qu
 // Step #getPaymentMethods
 const cardNumberElement = document.getElementById('form-checkout__cardNumber');
 
+function clearHTMLSelectChildrenFrom(element) {
+    const currOptions = [...element.children];
+    currOptions.forEach(child => child.remove());
+}
+
 cardNumberElement.addEventListener('keyup', async () => {
    try {
-      const paymentMethodElement = document.getElementById('paymentMethodId');
+       const paymentMethodElement = document.getElementById('paymentMethodId');
+       const installmentsElement = document.getElementById('form-checkout__installments')
        let cardNumber = cardNumberElement.value;
 
-       if (cardNumber.length < 6 && paymentMethodElement.value) return paymentMethodElement.value = "";
+       if (cardNumber.length < 6 && paymentMethodElement.value) {
+           clearHTMLSelectChildrenFrom(installmentsElement)
+           paymentMethodElement.value = "";
+           return
+       }
 
        if (cardNumber.length >= 6 && !paymentMethodElement.value) {
            let bin = cardNumber.substring(0,6);
