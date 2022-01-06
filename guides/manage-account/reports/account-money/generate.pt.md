@@ -34,7 +34,7 @@ Saiba as características dos elementos que compõem seu relatório.
 
 | Elemento ou ação | Características |
 | --- | --- |
-| Detalhes das tabelas | <br/>Os detalhes das tabelas compreende as informações no mínimo de 1 dia. <br/> <br/> |
+| Detalhes das tabelas | <br/>Os detalhes das tabelas compreendem as informações de, no mínimo, 1 dia. <br/> <br/> |
 | Ordem das colunas |<br/> Fixa <br/> <br/> |
 | Período máximo | <br/> Relatórios com dados de até 60 dias. <br/> <br/> |
 | Moeda | <br/> Local (com base no país onde está cadastrada a conta do Mercado Pago) <br/> <br/> |
