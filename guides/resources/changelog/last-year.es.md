@@ -2,6 +2,8 @@
 
 Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones de Mercado Pago.
 
+---
+
 ## Diciembre 2021
 
 ### 29 de diciembre
