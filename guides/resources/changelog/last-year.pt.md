@@ -4,19 +4,88 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
-## Dezembro 2020
+## Setembro 2021
 
-### 12 de dezembro
+### 13 de Setembro
 
 > CHANGELOG
 >
-> Nova versão do plugin para PrestaShop
+> Nova versão Magento 2
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MAGENTO 2
+
+Lançamos a nova versão 3.10.1 para Magento 2.
+
+[Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.10.1).
+
+### 10 de setembro
+
+> CHANGELOG
+>
+> Nova versão SDK Java
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK JAVA
+Lançamos a nova versão 1.10.2 do SDK Java.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-java/releases).
+
+### 2 de setembro
+
+----[mlc]----
+> CHANGELOG
+>
+> Deprecamos a integração dos meios de pagamento Servipag e Khipu
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: MERCADO PAGO
+
+Para evitar qualquer problema nas transações da sua loja, recomendamos que busque outros meios de pagamento.
+
+[Verifique outros meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods?utm_source=newsletter&utm_campaign=R2Q32021&utm_medium=email#bookmark_chile)
+------------
+
+> CHANGELOG
+>
+> Nova seção de segurança
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: SEGURANÇA
+
+Criamos a seção Segurança, na qual informamos em detalhes sobre os regulamentos para aplicativos da web (OWASP) e transações de cartão de crédito (PCI),
+para que você saiba como no Mercado Pago garantimos a segurança das transações de seus clientes.
+
+[Ir para a seção Segurança](https://mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/owasp)
+
+
+## Agosto 2021
+
+## 19 de agosto
+
+> CHANGELOG
+>
+> Nova versão PrestaShop
 >
 > NEW_VERSION: NOVA VERSÃO
 >
 > PRODUCT: PRESTASHOP
 
-Lançamos a nova versão 4.4.0 para PrestaShop.
+Lançamos a nova versão 4.7.0 para PrestaShop.
 
 [Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
 
@@ -24,28 +93,30 @@ Lançamos a nova versão 4.4.0 para PrestaShop.
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.4.0).
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.7.0).
 
-### 7 de dezembro
+### 12 de agosto
+
+----[mlb]----
 
 > CHANGELOG
 >
-> Nova versão SDK NodeJS
+> Nova versão Magento 2
 >
 > NEW_VERSION: NOVA VERSÃO
 >
-> PRODUCT: SDK NODEJS
+> PRODUCT: MAGENTO 2
 
-Lançamos uma nova versão do SDK NodeJS 1.5.2.
+Lançamos a nova versão 3.9.3 para Magento 2.
+
+[Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
 
 > GIT
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.2).
-
-
-### 1 de dezembro
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.3).
+------------
 
 > CHANGELOG
 >
@@ -55,7 +126,7 @@ Lançamos uma nova versão do SDK NodeJS 1.5.2.
 >
 > PRODUCT: WOOCOMMERCE
 
-Lançamos a nova versão 4.6.0 para WooCommerce.
+Lançamos a nova versão 5.3.1 para WooCommerce.
 
 [Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
 
@@ -63,46 +134,27 @@ Lançamos a nova versão 4.6.0 para WooCommerce.
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.6.0).
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.3.1).
 
----
-
-## Novembro 2020
-
-### 19 de novembro
+### 11 de Agosto
 
 > CHANGELOG
 >
-> Nova versão SDK NodeJS
+> Nova versão WooCommerce
 >
 > NEW_VERSION: NOVA VERSÃO
 >
-> PRODUCT: SDK NODEJS
+> PRODUCT: WOOCOMMERCE
 
-Lançamos uma nova versão do SDK NodeJS 1.5.1.
+Lançamos a nova versão 5.3.0 para WooCommerce.
+
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
 
 > GIT
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.1).
-
-### 16 de novembro
-
-> CHANGELOG
->
-> Fim do suporte para Magento 1
->
-> NEWS: NOVIDADES
->
-> PRODUCT: MAGENTO 1
-
-O módulo do Mercado Pago para Magento 1 deixou de processar pagamentos.
-
-[Ir para o anúncio](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento)
-
-
-### 13 de novembro
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.3.0).
 
 > CHANGELOG
 >
@@ -111,26 +163,251 @@ O módulo do Mercado Pago para Magento 1 deixou de processar pagamentos.
 > NEW_VERSION: NOVA VERSÃO
 >
 > PRODUCT: SDK PHP
-
-Lançamos uma nova versão do SDK PHP 2.2.1.
+Lançamos a nova versão 1.12.1 e 2.4.2 do SDK PHP.
 
 > GIT
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-php/releases/tag/2.2.1).
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-php/releases).
 
-### 12 de novembro
+----[mlb]----
+
+### 10 de agosto
 
 > CHANGELOG
 >
-> Nova versão do plugin para PrestaShop
+> Nova versão do gateway MercadoPagoV2 para VTEX
+>
+> NEWS: FEATURE
+>
+> Product: VTEX
+
+Agora você pode incluir Boleto Bancário, Checkout Pro, Mercado Pago Wallet y Mercado Pago Offline como meio de pagamento utilizando o gateway MercadoPagoV2 para VTEX.
+
+[Ir para a documentação VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/#bookmark_criando_afiliação_de_gateway_mercadopagov2)
+--------
+
+
+## Julho 2021
+
+### 30 de julho
+
+> CHANGELOG
+>
+> Prevenção à fraude ao usar o MercadoPago.js V2
+>
+> FEATURE: FEATURE
+>
+> PRODUCT: MERCADO PAGO
+
+O MercadoPago.js V2 inclui dentro de suas funcionalidades um sistema para prevenção de fraudes. Seu objetivo é detectar e analisar comportamentos incomuns dos clientes, evitar movimentos suspeitos e melhorar a aprovação dos pagamentos.
+
+Nunca guardaremos ou compartilharemos os dados de seus clientes, mas se preferir não utilizar o device ID, saiba como desabilitá-lo na [referência técnica](https://github.com/mercadopago/sdk-js).
+### 27 de julho
+
+> CHANGELOG
+>
+> Nova versão SDK PHP
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK PHP
+Lançamos a nova versão 2.4.1 do SDK PHP.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-php/releases).
+
+### 21 de julho
+
+> CHANGELOG
+>
+> Nova versão SDK Java
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK JAVA
+Lançamos a nova versão 1.10.1 do SDK Java.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-java/releases).
+
+
+----[mla]----
+### 19 de julho
+
+> CHANGELOG
+> 
+> Desativamos Provincia NET Pagos como meio de pagamento disponível
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: ALL
+
+A partir de 29 de julho, o Provincia NET Pagos não estará mais disponível como meio de pagamento para o Mercado Pago. Lembre-se que você pode oferecer outros meios de pagamento em seu site.
+
+[Conheça os meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods).
+
+------------
+
+### 15 de julho
+----[mla, mlc, mco, mpe, mlu, mlm]----
+> CHANGELOG
+> 
+> Wix como um novo meio de pagamento em Checkout Pro
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: WIX
+
+Agora você pode integrar o Mercado Pago em sua loja Wix. Com esta plataforma virtual, você pode oferecer aos seus clientes a possibilidade de pagar diretamente no site do Mercado Pago.
+
+[Ir para a documentação de Wix](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/wix)
+
+------------
+
+----[mlb]----
+> CHANGELOG
+> 
+> Nova documentação do Wix
+>
+> NEW_DOCUMENTATION: NOVA DOCUMENTAÇÃO
+>
+> PRODUCT: WIX
+
+Atualizamos a experiência de integração do Mercado Pago como meio de pagamento em sua loja Wix.
+
+[Ir para a documentação de Wix](https://www.mercadopago.com.br/developers/pt/guides/plugins/unofficial/wix)
+------------
+
+
+> CHANGELOG
+>
+> Nova versão SDK PHP
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK PHP
+Lançamos a nova versão 1.12.0 e 2.4.0 do SDK PHP.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-php/releases).
+
+> CHANGELOG
+>
+> Nova versão SDK Java
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK JAVA
+Lançamos a nova versão 1.10.0 do SDK Java.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-java/releases).
+
+### 14 de julho
+
+> CHANGELOG
+>
+> Nova versão Magento 2
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MAGENTO 2
+
+Lançamos a nova versão 3.9.2 para Magento 2.
+
+[Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.2).
+
+### 1 de julho
+
+> CHANGELOG
+>
+> Nova versão Magento 2
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MAGENTO 2
+
+Lançamos a nova versão 3.9.1 para Magento 2.
+
+[Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.1).
+
+---
+
+## Junho 2021
+
+
+----[mlb]----
+
+### 25 de junho
+
+> CHANGELOG
+>
+> Novo meio de pagamento Pix para Nuvemshop
+>
+> NEWS: FEATURE
+>
+> PRODUCT: NUVEMSHOP
+
+Agora você pode incluir Pix como meio de pagamento para Nuvemshop.
+
+[Ir para a documentação Nuvemshop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/nuvemshop)
+
+------------
+
+### 24 de junho
+
+> CHANGELOG
+>
+> Configure o fuso horário dos seus relatórios
+>
+> NEWS: FEATURE
+>
+> PRODUCT: RELATÓRIOS
+
+Com o atributo `display_timezone`, é possível configurar o fuso horário em que um determinado negócio funciona. Assim, os relatórios mostrarão as datas e horários de acordo com o fuso em questão.
+
+Os relatórios continuarão mostrando os dados de acordo com o fuso GMT-04 caso o fuso horário não seja ajustado.
+
+Ir para documentação dos relatórios [Dinheiro disponível](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/api#bookmark_atributos_configuráveis) ou [Dinheiro em conta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/api#bookmark_atributos_configuráveis).
+
+
+### 10 de junho
+
+> CHANGELOG
+>
+> Nova versão PrestaShop
 >
 > NEW_VERSION: NOVA VERSÃO
 >
 > PRODUCT: PRESTASHOP
 
-Lançamos a nova versão 4.3.0 para PrestaShop.
+Lançamos a nova versão 4.6.1 para PrestaShop.
 
 [Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
 
@@ -138,10 +415,57 @@ Lançamos a nova versão 4.3.0 para PrestaShop.
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.3.0).
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.6.1).
 
-----[mlm, mla, mlb]----
-### 5 de novembro
+
+> CHANGELOG
+>
+> Nova versão Magento 2
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MAGENTO 2
+
+Lançamos a nova versão 3.9.0 para Magento 2.
+
+[Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.9.0).
+
+
+### 3 de junho
+
+> CHANGELOG
+>
+> Melhoramos a configuração do relatório Dinheiro disponível via API
+>
+> NEWS: FEATURE
+>
+> PRODUCT: RELATÓRIOS
+
+Crie relatórios personalizados com os campos ou características que precisar.
+
+[Ir para documentação de Geração de relatórios por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/available-money/api)
+
+
+> CHANGELOG
+>
+> Nova configuração do relatório Dinheiro em conta via API
+>
+> NEWS: FEATURE
+>
+> PRODUCT: RELATÓRIOS
+
+Escolha os campos ou características que precisar e crie um relatório personalizado.
+
+[Ir para documentação de Geração de relatórios por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/api)
+
+
+----[mlc]----
 
 > CHANGELOG
 >
@@ -151,30 +475,177 @@ Lançamos a nova versão 4.3.0 para PrestaShop.
 >
 > PRODUCT: ASSINATURAS
 
-As assinaturas do Mercado Pago permitem que você receba pagamentos recorrentes com cartão. Você pode definir a frequência de pagamento desejada e o período de tempo que quer manter a assinatura ativa.
+As assinaturas do Mercado Pago permitem que você receba pagamentos recorrentes com cartão de crédito e débito. Você pode definir a frequência de pagamento desejada e o período de tempo que quer manter a assinatura ativa.
 
 [Criar assinaturas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/subscriptions/introduction)
+
 ------------
 
 ---
 
-## Outubro 2020
+## Maio 2021
 
-### 29 de outubro
+### 31 de maio
 
 > CHANGELOG
 >
-> Receba pagamentos somente com a carteira do Mercado Pago
+> Nova versão PrestaShop
 >
 > FEATURE: FEATURE
 >
-> PRODUCT: CHECKOUT PRO
+> PRODUCT: PRESTASHOP
 
-Agora, você pode adicionar a opção de receber pagamentos somente de usuários cadastrados com o Checkout Pro modo carteira. Isto significa que seus compradores pagarão exclusivamente com seus cartões salvos ou com saldo em conta.
+Lançamos a nova versão 4.6.0 para PrestaShop.
 
-[Receber pagamentos com a carteira do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados)
+[Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
 
-### 26 de outubro
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.6.0).
+
+### 20 de maio
+
+----[mpe]----
+
+> CHANGELOG
+>
+> Atualizamos as devoluções dos pagamentos
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: MERCADO PAGO
+
+Agora você só pode realizar devoluções totais dos pagamentos.
+
+[Ir para a documentação de Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds#bookmark_devoluções)
+
+------------
+
+> CHANGELOG
+>
+> Nova versão Magento 2
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MAGENTO 2
+
+Lançamos a nova versão 3.8.5 para Magento 2.
+
+[Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.5).
+
+### 19 de maio
+
+> CHANGELOG
+>
+> Nova versão SDK PHP
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK PHP
+
+Lançamos a nova versão 1.11.0 e 2.3.0 do SDK PHP.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-php/releases).
+
+### 14 de maio
+
+> CHANGELOG
+>
+> Mudanças na disponibilidade dados de compradores
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: MERCADO PAGO
+
+Para assegurar o cuidado com os dados pessoais dos nossos usuários, modificamos a informação que enviamos dos compradores através da API de Pagamentos e relatórios disponíveis na conta. Agora somente será possível ver a informação pessoal dos compradores necessária para contato, que são o e-mail, tipo e número de documento.
+
+Se precisar de outro tipo de informação para seu negócio, como telefone ou endereço do comprador, você terá que capturá-la diretamente na sua aplicação, já que por razões de segurança vamos manter a confidencialidade desses dados.
+
+### 3 de maio
+
+> CHANGELOG
+>
+> Nova versão Magento 2
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MAGENTO 2
+
+Lançamos a nova versão 3.8.4 para Magento 2.
+
+[Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.4).
+
+---
+
+## Abril 2021
+
+### 30 de abril
+
+> CHANGELOG
+>
+> Novo modelo dinâmico para integrar Código QR
+>
+> NEWS: NOVA DOCUMENTAÇÃO
+>
+> Product: CÓDIGO QR
+
+Use o modelo dinâmico para integrar Código QR que permite incluir o montante a cobrar diretamente no código. Você pode usá-lo para incluir nos tíquetes de pagamento, serviços de mesa, entre outros.
+
+[Ir para a documentação de modelo dinâmico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/qr-dynamic/introduction)
+
+----[mlb]----
+### 29 de abril
+
+> CHANGELOG
+>
+> Nova versão do gateway MercadoPagoV2 para VTEX
+>
+> NEWS: FEATURE
+>
+> Product: VTEX
+
+Agora você pode incluir Pix como meio de pagamento com o gateway MercadoPagoV2 para VTEX.
+
+[Ir para a documentação VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/#bookmark_criando_afiliação_de_gateway_mercadopagov2)
+------------
+
+### 22 de abril
+
+> CHANGELOG
+>
+> Nova versão Magento 2
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MAGENTO 2
+
+Lançamos a nova versão 3.8.3 para Magento 2.
+
+[Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.3).
 
 > CHANGELOG
 >
@@ -184,7 +655,7 @@ Agora, você pode adicionar a opção de receber pagamentos somente de usuários
 >
 > PRODUCT: WOOCOMMERCE
 
-Lançamos a nova versão 4.5.0 para WooCommerce.
+Lançamos a nova versão 5.1.1 para WooCommerce.
 
 [Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
 
@@ -192,25 +663,296 @@ Lançamos a nova versão 4.5.0 para WooCommerce.
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.5.0).
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.1.1).
 
-### 22 de outubro
- 
+
+### 20 de abril
+
 > CHANGELOG
 >
-> Melhoramos a experiência das URLs de retorno
+> Melhoraramos a experiência de integração de nossos checkouts
 >
 > NEWS: FEATURE
 >
-> Product: CHECKOUT PRO
+> Product: MERCADO PAGO
 
-Agora, para adicionar o botão ao seu site, você não precisa mais de um formulário ao incorporar o script e pode configurar como voltar ao seu site apenas com a sua preferência. 
+Integre Checkout Pro e Web Tokenize Checkout de forma mais simples e de um só lugar utilizando a nova SDK MercadoPago.js V2. Agora, você pode abrir o checkout sem depender de um botão de pagamento e usar a opção que você precisa de acordo com seu site.
 
-[Mais informações sobre URLs de retorno](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/advanced-integration#bookmark_url_de_retorno)
+Ir para a documentação de [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/integration) ou [Web Tokenize Checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/web-tokenize-checkout/introduction).
+
+### 9 de abril
+
+> CHANGELOG
+>
+> Nova versão Magento 2
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MAGENTO 2
+
+Lançamos a nova versão 3.8.2 para Magento 2.
+
+[Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.2).
+
+---
+
+## Março 2021
+
+### 31 de março
+
+> CHANGELOG
+>
+> Nova versão do MercadoPago.js
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MERCADOPAGO.JS
+
+----[mlb]----
+Integra Checkout Transparente mais simples e rápido com a nova funcionalidade CardForm, que permite autogerar a lógica de negócio no seu formulário de pagamentos com cartão e melhorar a compatibilidade com os distintos navegadores.
+------------
+----[mla, mlm, mco, mlc, mlu]----
+Integra Checkout API mais simples e rápido com a nova funcionalidade CardForm, que permite autogerar a lógica de negócio no seu formulário de pagamentos com cartão e melhorar a compatibilidade com os distintos navegadores.
+------------
+
+[Ir para a documentação de MercadoPago.js V2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v2/receiving-payment-by-card)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-js).
+
+### 29 de março
+
+> CHANGELOG
+>
+> Nova versão Magento 2
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MAGENTO 2
+
+Lançamos a nova versão 3.8.0 para Magento 2.
+
+[Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.8.0).
+
+> CHANGELOG
+>
+> Nova versão WooCommerce
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: WOOCOMMERCE
+
+Lançamos a nova versão 5.1.0 para WooCommerce.
+
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.1.0).
+
+### 25 de março
+
+> CHANGELOG
+>
+> Nova versão SDK .Net
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK .NET
+
+Lançamos a nova versão 2.0.0 do SDK .Net.
+
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-dotnet/releases/tag/2.0.0).
+
+> CHANGELOG
+>
+> Nova versão SDK Ruby
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK RUBY
+
+Lançamos a nova versão 2.0.1 do SDK Ruby.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-ruby/releases/tag/2.0.1).
+
+> CHANGELOG
+>
+> Nova versão SDK Python
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK PYTHON
+
+Lançamos a nova versão 2.0.6 do SDK Python.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-python/releases/tag/2.0.6).
+
+### 22 de março
+
+> CHANGELOG
+>
+> Nova versão SDK NodeJS
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK NODEJS
+
+Lançamos a nova versão 1.5.6 do SDK NodeJS.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.6).
+
+### 10 de março
+
+> CHANGELOG
+>
+> Nova versão WooCommerce
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: WOOCOMMERCE
+
+Lançamos a nova versão 5.0.1 para WooCommerce.
+
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.0.1).
+
+### 5 de março
+
+> CHANGELOG
+>
+> Nova versão PrestaShop
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: PRESTASHOP
+
+Lançamos a nova versão 4.5.1 para PrestaShop.
+
+[Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.5.1).
+
+### 4 de março
 
 ----[mlb]----
 
-### 15 de outubro
+> CHANGELOG
+>
+> Pix como novo meio de pagamento em Checkout Transparente
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: CHECKOUT TRANSPARENTE 
+
+Agora, você pode adicionar Pix como meio de pagamento para começar a receber dinheiro no instante, todos os dias e de qualquer banco ou carteira. Você só deve ter sua chave e adicionar Pix no seu formulário de pagamento.
+
+[Começar a receber pagamentos com Pix](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/other-payment-ways#bookmark_receber_pagamentos_com_pix)
+
+------------
+
+> CHANGELOG
+>
+> Nova versão SDK Java
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK JAVA
+
+Lançamos a nova versão 1.9.0. do SDK Java.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/java/releases/tag/1.9.0).
+
+> CHANGELOG
+>
+> Nova versão SDK .NET
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK .NET
+
+Lançamos a nova versão 1.10.0 do SDK .NET.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-dotnet/releases/tag/1.10.0).
+
+### 3 de março
+
+> CHANGELOG
+>
+> Nova versão Magento 2
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MAGENTO 2
+
+Lançamos a nova versão 3.7.2 para Magento 2.
+
+[Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.7.2).
+
+---
+
+## Fevereiro 2021
+
+----[mco]----
+
+### 25 de fevereiro
 
 > CHANGELOG
 >
@@ -225,37 +967,17 @@ Estendemos os prazos de devolução a 180 dias para todos os meios de pagamento.
 [Ir para a documentação de Devoluções e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds#bookmark_devoluções)
 ------------
 
----
-
-## Setembro 2020
-
-----[mlb]----
-### 29 de setembro
+### 17 de fevereiro
 
 > CHANGELOG
 >
-> Novo Checkout Transparente para Shopify
->
-> NEWS: NEWS
->
-> PRODUCT: SHOPIFY
-
-Lançamos um novo Checkout Transparente para Shopify.
-
-Veja todas as informações na [documentação oficial](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/shopify).
-------------
-
-### 25 de setembro
-
-> CHANGELOG
->
-> Nova versão do plugin para PrestaShop
+> Nova versão PrestaShop
 >
 > NEW_VERSION: NOVA VERSÃO
 >
 > PRODUCT: PRESTASHOP
 
-Lançamos a nova versão 4.2.0 para PrestaShop.
+Lançamos a nova versão 4.5.0 para PrestaShop.
 
 [Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
 
@@ -263,213 +985,49 @@ Lançamos a nova versão 4.2.0 para PrestaShop.
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.2.0).
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.5.0).
 
-<span></span>
-
-<br>
-----[mlm, mla, mlc, mco, mpe, mlu]----
-> CHANGELOG
->
-> Novos exemplos para download
->
-> FEATURE: FEATURE
->
-> PRODUCT: CHECKOUT API
-------------
-
-----[mlb]----
-> CHANGELOG
->
-> Novos exemplos para download
->
-> FEATURE: FEATURE
->
-> PRODUCT: CHECKOUT TRANSPARENTE
-------------
-
-Adicionamos exemplos de integração de pagamento com cartão para download, para você experimentar o Checkout Transparente instantaneamente. Você pode adaptá-los conforme necessário usando a documentação.
-
-[Ver exemplos para download](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/receiving-payment-by-card/#bookmark_exemplos_para_download)
-
-<br>
+### 16 de fevereiro
 
 > CHANGELOG
 >
-> Envio de Access Token por API
+> Mudanças na serialização do enum ShipmentMode
 >
-> NEWS: NOVIDADES
->
-> PRODUCT: MERCADO PAGO
-
-A partir de agora, você deve deixar de enviar seu Access Token por URL ao consumir nossas APIs e começar a adicioná-lo nos headers da solicitação para maior segurança. No momento, ambas as formas são válidas, mas recomendamos que comece a usar a nova. Se usa nossos SDKs oficiais, basta mantê-los atualizados com a versão mais recente.
-
-Veja todas as informações na [Referência da API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference).
-
-
-### 21 de setembro
-
-> CHANGELOG
->
-> Nova versão WooCommerce
->
-> NEW_VERSION: NOVA VERSÃO
->
-> PRODUCT: WOOCOMMERCE
-
-Lançamos a nova versão 4.4.0 para WooCommerce.
-
-[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
-
-> GIT
->
-> GitHub
->
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.4.0).
-
-
-### 17 de setembro
-
-> CHANGELOG
->
-> Alterações na API de ordens
->
-> FEATURE: FEATURE
->
-> PRODUCT: ORDENS
-
-Atualizamos nossas medidas de proteção de dados para atender aos mais altos padrões de segurança. A partir de segunda-feira, 12 de outubro, deixaremos de exibir o e-mail do comprador ao criar pedidos.
-
-Veja todas as informações na [Referência da API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/merchant_orders/resource).
-
-### 10 de setembro
-
-> CHANGELOG
->
-> Nova versão WooCommerce
->
-> NEW_VERSION: NOVA VERSÃO
->
-> PRODUCT: WOOCOMMERCE
-
-Lançamos a nova versão 4.3.1 para WooCommerce.
-
-[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
-
-> GIT
->
-> GitHub
->
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.3.1).
-
-### 3 de setembro
-
-> CHANGELOG
->
-> Otimize suas vendas aceitando pagamentos de usuários cadastrados
->
-> FEATURE: FEATURE
->
-> PRODUCT: CHECKOUT PRO
-
-Para que você possa otimizar suas vendas, adicionamos um novo atributo que permite receber pagamentos apenas de usuários cadastrados, no Checkout Pro. Isso significa que seus compradores pagarão exclusivamente com seus cartões salvos ou com saldo em conta.
-
-[Começar a receber pagamentos apenas de usuários cadastrados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations/#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados)
-
----
-
-## Agosto 2020
-
-### 31 de agosto
-
-> CHANGELOG
->
-> Nova versão WooCommerce
->
-> NEW_VERSION: NOVA VERSÃO
->
-> PRODUCT: WOOCOMMERCE
-
-Lançamos a nova versão 4.3.0 para WooCommerce.
-
-[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
-
-> GIT
->
-> GitHub
->
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.3.0).
-
-### 27 de agosto
-
-> CHANGELOG
->
-> Alteração no comprimento do Payment ID
->
-> NEWS: NOVIDADES
->
-> PRODUCT: MERCADO PAGO
-
-Os IDs de pagamento passarão de 10 para 11 dígitos. Nossas APIs e SDKs operam com um tipo de dado `long`, portanto não haverá impacto na operação com o Mercado Pago. 
-Caso tenha dúvidas, recomendamos que revise a administração e armazenamento do nosso Payment ID na sua integração para evitar qualquer inconveniente. 
-
-Veja todas as informações em [Referência API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments/post).
-
-### 13 de agosto
-
-> CHANGELOG
->
-> Nova versão SDK Java
->
-> NEW_VERSION: NOVA VERSÃO
->
-> PRODUCT: SDK JAVA
-
-Lançamos uma nova versão do SDK Java 1.7.1.
-
-> GIT
->
-> GitHub
->
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-java/releases/tag/1.7.1).
-
-### 12 de agosto
-
-> CHANGELOG
->
-> Nova versão SDK .NET
->
-> NEW_VERSION: NOVA VERSÃO
+> FIX: FIX
 >
 > PRODUCT: SDK .NET
 
-Lançamos uma nova versão do SDK .NET 1.8.1.
+Corrigimos a serialização do enum ShipmentMode no .Net C# SDK para gerar valores aceitos pela API de Preferências.
 
-> GIT
->
-> GitHub
->
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-dotnet/releases/tag/1.8.1).
+[Ir para a documentação das SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/sdks)
 
-### 7 de agosto
+### 12 de fevereiro
 
 > CHANGELOG
 >
-> Solicite as credenciais necessárias para integrar
+> Mudança de nome da SDK NodeJs
 >
 > NEWS: NOVIDADES
 >
-> PRODUCT: CREDENCIAIS
+> PRODUCT: SDK NODEJS
 
-Vai integrar Mercado Pago para outra pessoa? Agora você pode solicitar acesso a suas credenciais de forma rápida e segura.
+Mudamos o nome de nossa SDK NodeJs de **dx-nodejs** para **sdk-nodejs**.
 
-[Saiba mais sobre como solicitar credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials)
+[Ir para a documentação das SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/sdks)
 
----
+> CHANGELOG
+>
+> Mudança de nome da SDK Java
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: SDK JAVA
 
-## Julho 2020
+Mudamos o nome de nossa SDK Java de **dx-java** para **sdk-java**.
 
-### 27 de julho
+[Ir para a documentação das SDKs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/sdks)
+
+### 11 de fevereiro
 
 > CHANGELOG
 >
@@ -479,7 +1037,7 @@ Vai integrar Mercado Pago para outra pessoa? Agora você pode solicitar acesso a
 >
 > PRODUCT: WOOCOMMERCE
 
-Lançamos a nova versão 4.2.2 para WooCommerce.
+Lançamos a nova versão 4.6.4 para WooCommerce.
 
 [Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
 
@@ -487,59 +1045,111 @@ Lançamos a nova versão 4.2.2 para WooCommerce.
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.2.2).
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.6.4).
 
-### 8 de julho
-
-> CHANGELOG
->
-> Alterações na API de orders
->
-> FEATURE: FEATURE
->
-> PRODUCT: ODENS
-
-Atualizamos nossas medidas de proteção de dados para atender aos mais altos padrões de segurança. A partir de quarta-feira, 8 de julho, deixaremos de exibir o e-mail do vendedor ao criar pedidos. A mudança não deve gerar nenhum problema na integração, pois são informações da pessoa que está criando o pedido.
-
-Veja todas as informações na [Referência da API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/merchant_orders/resource).
-
-### 7 de julho
+### 5 de fevereiro
 
 > CHANGELOG
 >
-> Nova versão SDK NodeJS
+> Nova versão WooCommerce
 >
 > NEW_VERSION: NOVA VERSÃO
 >
-> PRODUCT: SDK NODEJS
+> PRODUCT: WOOCOMMERCE
 
-Lançamos uma nova versão do SDK NodeJS 1.3.2.
+Lançamos a nova versão 4.6.3 para WooCommerce.
+
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
 
 > GIT
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.3.2).
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.6.3).
 
-### 1 de julho
+
+---
+
+## Janeiro 2021
+
+### 28 de janeiro
 
 > CHANGELOG
 >
-> Nova versão SDK Java
+> Nova versão PrestaShop
 >
 > NEW_VERSION: NOVA VERSÃO
 >
-> PRODUCT: SDK JAVA
+> PRODUCT: PRESTASHOP
 
-Lançamos uma nova versão do SDK Java 1.7.0.
+Lançamos a nova versão 4.4.4 para PrestaShop.
+
+[Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
 
 > GIT
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-java/releases/tag/1.7.0).
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.4.4).
 
-<br>
+### 22 de janeiro
+
+> CHANGELOG
+>
+> Nova versão PrestaShop
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: PRESTASHOP
+Lançamos a nova versão 4.4.3 para PrestaShop.
+
+[Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.4.3).
+
+### 19 de janeiro
+
+> CHANGELOG
+>
+> Nova versão PrestaShop
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: PRESTASHOP
+Lançamos a nova versão 4.4.2 para PrestaShop.
+
+[Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.4.2).
+
+### 18 de janeiro
+
+> CHANGELOG
+>
+> Nova versão PrestaShop
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: PRESTASHOP
+Lançamos a nova versão 4.4.1 para PrestaShop.
+
+[Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.4.1).
+
+### 15 de janeiro
 
 > CHANGELOG
 >
@@ -549,275 +1159,31 @@ Lançamos uma nova versão do SDK Java 1.7.0.
 >
 > PRODUCT: SDK PHP
 
-Lançamos uma nova versão do SDK PHP 2.1.0.
+Lançamos a nova versão 1.10.0 do SDK PHP.
 
 > GIT
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-php/releases/tag/2.1.0).
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-php/releases/tag/1.10.0).
 
-<br>
+### 7 de janeiro
 
 > CHANGELOG
 >
-> Nova versão SDK .NET
+> Nova versão SDK NodeJS
 >
 > NEW_VERSION: NOVA VERSÃO
 >
-> PRODUCT: SDK .NET
+> PRODUCT: SDK NODEJS
 
-Lançamos uma nova versão do SDK .NET 1.8.0.
+Lançamos a nova versão 1.5.3 do SDK NodeJS.
 
 > GIT
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-dotnet/releases/tag/1.8.0).
-
----
-
-## Junho 2020
-
-### 11 de junho
-
-> CHANGELOG
->
-> Nova versão do Link de pagamento
->
-> NEW_VERSION: NOVA VERSÃO
->
-> PRODUCT: LINK DE PAGAMENTO
-
-Lançamos uma nova versão do Link de pagamento, totalmente atualizados. Criamos e implementamos uma nova experiência para a criação de links de pagamento para compartilhar on-line por chat, e-mail ou nas redes sociais.
-
-[Ir para a documentação de Link de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/payment-link/intro-button)
-
----
-
-## Maio 2020
-
-### 26 de maio
-
-> CHANGELOG
->
-> Nova versão SDK Javascript
->
-> NEW_VERSION: NOVA VERSÃO
->
-> PRODUCT: SDK JAVASCRIPT
-
-Lançamos uma nova versão do SDK Javascript 1.3.0. A partir de agora, é compatível com Internet Explorer 11 para que o possa usar em suas integrações sem problemas.
-[Ir para a documentação do SDK Javascript](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/sdks/official/js)
-
-### 18 de maio
-
-> CHANGELOG
->
-> Nova versão WooCommerce
->
-> NEW_VERSION: NOVA VERSÃO
->
-> PRODUCT: WOOCOMMERCE
-
-Lançamos a nova versão 4.2.1 para WooCommerce.
-
-[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
-
-> GIT
->
-> GitHub
->
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.2.1).
-
-### 13 de maio
-
-> CHANGELOG
->
-> Nova versão WooCommerce
->
-> NEW_VERSION: NOVA VERSÃO
->
-> PRODUCT: WOOCOMMERCE
-
-Lançamos a nova versão 4.2.0 para WooCommerce.
-
-[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
-
-> GIT
->
-> GitHub
->
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.2.0).
-
-
-### 6 de maio
-
-> CHANGELOG
->
-> Nova versão SDK Java
->
-> NEW_VERSION: NOVA VERSÃO
->
-> PRODUCT: SDK JAVA
-
-Lançamos uma nova versão do SDK Java 1.6.
-
-> GIT
->
-> GitHub
->
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-java/releases/tag/1.6.0).
-
-
-### 4 de maio
-
-> CHANGELOG
->
-> Nova versão SDK .NET
->
-> NEW_VERSION: NOVA VERSÃO
->
-> PRODUCT: SDK .NET
-
-Lançamos uma nova versão do SDK .NET.
-
-> GIT
->
-> GitHub
->
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/dx-dotnet/releases/tag/1.7.0).
-
----
-
-## Abril 2020
-
-### 3 de abril
-
-----[mlm, mla, mlc, mco, mpe, mlu]----
-> CHANGELOG
->
-> Atualização de documentação de Checkout API
->
-> NEW_DOCUMENTATION: NOVA DOCUMENTAÇÃO
->
-> PRODUCT: CHECKOUT API
-------------
-
-----[mlb]----
-> CHANGELOG
->
-> Atualização de documentação de Checkout Transparente
->
-> NEW_DOCUMENTATION: NOVA DOCUMENTAÇÃO
->
-> PRODUCT: CHECKOUT TRANSPARENTE
-------------
-
-Renovamos a documentação para usar nossas APIs de pagamento. Adicionamos um exemplo básico do formulário no frontend e também diagramas de funcionamento para te ajudar na hora de integrar.
-
-----[mlm, mla, mlc, mco, mpe, mlu]----
-[Ir para a documentação de Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction)
-------------
-
-----[mlb]----
-[Ir para a documentação de Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction)
-------------
-
----
-
-## Marco 2020
-
-### 27 de março
-
-> CHANGELOG
->
-> Melhoramos seus relatórios programados
->
-> FEATURE: FEATURE
->
-> PRODUCT: RELATÓRIOS
-
-Para ajudar a otimizar suas conciliações, implementamos melhorias na geração dos intervalos de datas para relatórios programados. A mudança é válida tanto para o relatório de Dinheiro retirado, como para o relatório de Todas as transações. Desde quarta-feira 1 de abril, para encontrar seus relatórios programados, busque-os por um segundo a menos.
-
-
-| Filtros do `search`| Data atual | Nova data |
-| --- | --- | --- |
-| begin_date | 01/01/2020 00:00:00 | 01/01/2020 00:00:00 |
-| end_date | 02/01/2020 00:00:00 | 01/01/2020 23:59:59 |
-
-
-Seu novo parâmetro ficaria da seguinte forma:
-
-```
-https://api.mercadolibre.com/account/bank_report/search?
-	created_from=schedule
-	&user_id=290477154
-	&begin_date=2020-01-01T00:00:00Z
-	&end_date=2020-01-01T23:59:59Z
-
-```
-
-> Para mais informações sobre a programação de relatórios, [consulte a documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/general-considerations/reconciliation-reports).
-
-
-### 19 de março
-
-> CHANGELOG
->
-> Nova versão Prestashop 1.6 & 1.7
->
-> NEW_VERSION: NOVA VERSÃO
->
-> PRODUCT: PRESTASHOP
-
-Lançamos uma nova versão do Prestashop 1.6 & 1.7. Disponibilizamos o Checkout Pro através de modal para que seus compradores possam comprar sem sair de seu site.
-
-[Ir para a documentação de Prestashop 1.6 & 1.7](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
-
-> GIT
->
-> GitHub
->
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases).
-
----
-
-## Janeiro 2020
-
-### 10 de janeiro
-
-> CHANGELOG
->
-> Nova versão WooCommerce
->
-> NEW_VERSION: NOVA VERSÃO
->
-> PRODUCT: WOOCOMMERCE
-
-Lançamos a nova versão 4.1.1 para WooCommerce.
-
-[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
-
-> GIT
->
-> GitHub
->
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.1.1).
-
-### 9 de janeiro
-
-> CHANGELOG
->
-> Obtenha informações sobre seu negócio
->
-> FEATURE: FEATURE
->
-> PRODUCT: CHECKOUT PRO
-
-Se você possui campanhas publicitárias para seu negócio, é importante acompanhá-las e ver se elas estão lhe ajudando a concretizar vendas. Para poder melhorá-las e sejam cada vez mais eficientes, acrescentamos a possibilidade de associar um pixel do Facebook e uma tag de acompanhamento de conversões do Google Ads aos pagamentos de seu Checkout Pro.
-
-[Começar a medir a conversão de seus anúncios](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations).
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-nodejs/releases/tag/1.5.3).
 
 ### 6 de janeiro
 
@@ -829,7 +1195,7 @@ Se você possui campanhas publicitárias para seu negócio, é importante acompa
 >
 > PRODUCT: WOOCOMMERCE
 
-Lançamos a nova versão 4.1.0 para WooCommerce.
+Lançamos a nova versão 4.6.2 para WooCommerce.
 
 [Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
 
@@ -837,4 +1203,24 @@ Lançamos a nova versão 4.1.0 para WooCommerce.
 >
 > GitHub
 >
-> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.1.0).
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.6.2).
+
+### 4 de janeiro
+
+> CHANGELOG
+>
+> Nova versão WooCommerce
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: WOOCOMMERCE
+
+Lançamos a nova versão 4.6.1 para WooCommerce.
+
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v4.6.1).
