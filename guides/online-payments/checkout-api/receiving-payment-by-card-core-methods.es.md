@@ -128,7 +128,7 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 
 Uno de los campos obligatorios es el tipo de número de documento. Utiliza la lista de documentos al momento de completar los datos.
 
-Incluyendo el elemento de tipo select con el `id: 'form-checkout__docType'` que se encuentra en el formulario, podrás completar automáticamente las opciones disponibles cuando llames a la siguiente función:
+Incluyendo el elemento de tipo select con el `id: 'form-checkout__identificationType'` que se encuentra en el formulario, podrás completar automáticamente las opciones disponibles cuando llames a la siguiente función:
 
 ```javascript
 // Step #getIdentificationTypes
@@ -159,9 +159,9 @@ function createSelectOptions(elem, options, labelsAndKeys = { label : "name", va
 (async function getIdentificationTypes () {
    try {
        const identificationTypes = await mp.getIdentificationTypes();
-       const docTypeElement = document.getElementById('form-checkout__identificationType');
+       const identificationTypeElement = document.getElementById('form-checkout__identificationType');
 
-       createSelectOptions(docTypeElement, identificationTypes)
+       createSelectOptions(identificationTypeElement, identificationTypes)
    }catch(e) {
        return console.error('Error getting identificationTypes: ', e);
    }
@@ -358,8 +358,8 @@ Puedes encontrar el estado del pago en el valor _status_.
     $payer = new MercadoPago\Payer();
     $payer->email = $_POST['email'];
     $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
-        "type" => $_POST['docType'],------------
-        "number" => $_POST['docNumber']
+        "type" => $_POST['identificationType'],------------
+        "number" => $_POST['identificationNumber']
     );
     $payment->payer = $payer;
 
@@ -391,8 +391,8 @@ var payment_data = {
   payer: {
     email: req.body.email,
     identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
-      type: req.body.docType,------------
-      number: req.body.docNumber
+      type: req.body.identificationType,------------
+      number: req.body.identificationNumber
     }
   }
 };
@@ -424,9 +424,9 @@ payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmou
        .setPaymentMethodId(request.getParameter("paymentMethodId"));
 
 Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
-identification.setType(request.getParameter("docType"))
-              .setNumber(request.getParameter("docNumber"));------------ ----[mlm]----
-identification.setNumber(request.getParameter("docNumber"));------------
+identification.setType(request.getParameter("identificationType"))
+              .setNumber(request.getParameter("identificationNumber"));------------ ----[mlm]----
+identification.setNumber(request.getParameter("identificationNumber"));------------
 
 Payer payer = new Payer();
 payer.setEmail(request.getParameter("email"))
@@ -455,8 +455,8 @@ payment_data = {
   payer: {
     email: params[:email],
     identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
-      type: params[:docType],------------
-      number: params[:docNumber]
+      type: params[:identificationType],------------
+      number: params[:identificationNumber]
     }
   }
 }
@@ -491,8 +491,8 @@ var paymentRequest = new PaymentCreateRequest
         Email = Request["email"],
         Identification = new IdentificationRequest
         {----[mla, mlb, mlu, mlc, mpe, mco]----
-            Type = Request["docType"],------------
-            Number = Request["docNumber"],
+            Type = Request["identificationType"],------------
+            Number = Request["identificationNumber"],
         },
     },
 };

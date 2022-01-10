@@ -257,8 +257,8 @@ Find the payment status in the _status_ field.
    $payer = new MercadoPago\Payer();
    $payer->email = $_POST['email'];
    $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
-       "type" => $_POST['docType'],------------
-       "number" => $_POST['docNumber']
+       "type" => $_POST['identificationType'],------------
+       "number" => $_POST['identificationNumber']
    );
    $payment->payer = $payer;
  
@@ -305,9 +305,9 @@ payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmou
       .setPaymentMethodId(request.getParameter("paymentMethodId"));
  
 Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
-identification.setType(request.getParameter("docType"))
-             .setNumber(request.getParameter("docNumber"));------------ ----[mlm]----
-identification.setNumber(request.getParameter("docNumber"));------------
+identification.setType(request.getParameter("identificationType"))
+             .setNumber(request.getParameter("identificationNumber"));------------ ----[mlm]----
+identification.setNumber(request.getParameter("identificationNumber"));------------
  
 Payer payer = new Payer();
 payer.setEmail(request.getParameter("email"))
@@ -336,8 +336,8 @@ payment_data = {
  payer: {
    email: params[:email],
    identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
-     type: params[:docType],------------
-     number: params[:docNumber]
+     type: params[:identificationType],------------
+     number: params[:identificationNumber]
    }
  }
 }
@@ -372,8 +372,8 @@ var paymentRequest = new PaymentCreateRequest
        Email = Request["email"],
        Identification = new IdentificationRequest
        {----[mla, mlb, mlu, mlc, mpe, mco]----
-           Type = Request["docType"],------------
-           Number = Request["docNumber"],
+           Type = Request["identificationType"],------------
+           Number = Request["identificationNumber"],
        },
    },
 };
