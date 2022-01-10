@@ -143,7 +143,7 @@ O segundo parâmetro são as opções e pode receber valor para **placeholder** 
 
 Para mais detalhes sobre os estilos permitidos, [consulte a referência técnica](https://github.com/lucmantovani/sdk-js/tree/feature/fields-docs#style).
 
-Um exemplo de código com `cardNumber`, `expirationMonth`, `expirationYear` e `CVV` seria:
+Um exemplo de código com `cardNumber`, `expirationDate` e `CVV` seria:
 
 ```javascript
   const cardNumberElement = mp.fields.create('cardNumber', {
@@ -151,7 +151,7 @@ Um exemplo de código com `cardNumber`, `expirationMonth`, `expirationYear` e `C
   }).mount('form-checkout__cardNumber-container');
  
   const expirationDateElement = mp.fields.create('expirationDate', {
-    placeholder: "MM/YYYY"
+    placeholder: "Data de vencimento (MM/YYYY)"
   }).mount('form-checkout__cardExpirationDate-container');
  
   const securityCodeElement = mp.fields.create('CVV', {
@@ -225,17 +225,31 @@ function createSelectOptions(elem, options, labelsAndKeys = { label : "name", va
 Valide os dados dos seus clientes enquanto são preenchidos para evitar erros e oferecer corretamente as parcelas disponíveis. Use o seguinte código de exemplo para identificar o meio de pagamento com os primeiros 6 dígitos do cartão.
 
 ```javascript
+function clearHTMLSelectChildrenFrom(element) {
+    const currOptions = [...element.children];
+    currOptions.forEach(child => child.remove());
+}
+
 // Step #getPaymentMethods
-cardNumberElement.on('change', async (data) => {
+cardNumberElement.on('binChange', async (data) => {
     const { bin } = data;
     try {
-      const paymentMethodElement = document.getElementById('MPHiddenInputPaymentMethod');
-      if (bin.length < 6 && paymentMethodElement.value) return paymentMethodElement.value = "";
-      if (bin.length === 6 && !paymentMethodElement.value) {
+      const paymentMethodElement = document.getElementById('paymentMethodId');
+      const issuerElement = document.getElementById('form-checkout__issuer');
+      const installmentsElement = document.getElementById('form-checkout__installments');
+
+      if (!bin && paymentMethodElement.value) {
+        clearHTMLSelectChildrenFrom(issuerElement)
+        clearHTMLSelectChildrenFrom(installmentsElement)
+        paymentMethodElement.value = "";
+        return
+      }
+
+      if (bin && !paymentMethodElement.value) {
         const paymentMethods = await mp.getPaymentMethods({ bin });
-        const { id: paymentMethodID, additional_info_needed, issuer } = paymentMethods.results[0];
+        const { id: paymentMethodId, additional_info_needed, issuer } = paymentMethods.results[0];
         // Assign payment method ID to a hidden input.
-        paymentMethodElement.value = paymentMethodID;
+        paymentMethodElement.value = paymentMethodId;
         // If 'issuer_id' is needed, we fetch all issuers (getIssuers()) from bin.
         // Otherwise we just create an option with the unique issuer and call getInstallments().
         additional_info_needed.includes('issuer_id') ? getIssuers(bin) : (() => {
@@ -260,7 +274,7 @@ Adicione o seguinte código para obter o `issuer_id`:
 // Step #getIssuers
 const getIssuers = async (bin) => {
     try {
-      const paymentMethodId = document.getElementById('MPHiddenInputPaymentMethod').value;
+      const paymentMethodId = document.getElementById('paymentMethodId').value;
       const issuerElement = document.getElementById('form-checkout__issuer');
       const issuers = await mp.getIssuers({ paymentMethodId, bin });
       createSelectOptions(issuerElement, issuers);
@@ -324,7 +338,7 @@ const formElement = document.getElementById('form-checkout');
 
 O método `createCardToken` retornará um token com a representação segura do cartão.
 
-Receberemos o token ID da resposta e ao salvaremos em um atributo oculto denominado `MPHiddenInputToken` para depois enviar o formulário aos seus servidores.
+Receberemos o token ID da resposta e ao salvaremos em um atributo oculto denominado `token` para depois enviar o formulário aos seus servidores.
 
 
 > WARNING

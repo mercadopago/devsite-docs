@@ -176,11 +176,13 @@ function clearHTMLSelectChildrenFrom(element) {
 cardNumberElement.addEventListener('keyup', async () => {
    try {
        const paymentMethodElement = document.getElementById('paymentMethodId');
-       const installmentsElement = document.getElementById('form-checkout__installments')
+       const issuerElement = document.getElementById('form-checkout__issuer');
+       const installmentsElement = document.getElementById('form-checkout__installments');
        let cardNumber = cardNumberElement.value;
 
        if (cardNumber.length < 6 && paymentMethodElement.value) {
-           clearHTMLSelectChildrenFrom(installmentsElement)
+           clearHTMLSelectChildrenFrom(issuerElement);
+           clearHTMLSelectChildrenFrom(installmentsElement);
            paymentMethodElement.value = "";
            return
        }
@@ -189,10 +191,10 @@ cardNumberElement.addEventListener('keyup', async () => {
            let bin = cardNumber.substring(0,6);
            const paymentMethods = await mp.getPaymentMethods({'bin': bin});
 
-           const { id: paymentMethodID, additional_info_needed, issuer } = paymentMethods.results[0];
+           const { id: paymentMethodId, additional_info_needed, issuer } = paymentMethods.results[0];
 
            // Assign payment method ID to a hidden input.
-           paymentMethodElement.value = paymentMethodID;
+           paymentMethodElement.value = paymentMethodId;
 
            // If 'issuer_id' is needed, we fetch all issuers (getIssuers()) from bin.
            // Otherwise we just create an option with the unique issuer and call getInstallments().
@@ -224,7 +226,7 @@ const getIssuers = async () => {
        const paymentMethodId = document.getElementById('paymentMethodId').value;
        const issuerElement = document.getElementById('form-checkout__issuer');
 
-       const issuers = await mp.getIssuers({paymentMethodId: paymentMethodID, bin: cardNumber.slice(0,6)});
+       const issuers = await mp.getIssuers({paymentMethodId, bin: cardNumber.slice(0,6)});
 
        createSelectOptions(issuerElement, issuers);
 
@@ -297,7 +299,7 @@ const createCardToken = async (event) => {
 
 The `createCardToken` method will return a token with the secure card display.
 
-We will take and save the response token ID in a hidden attribute called `MPHiddenInputToken` and then send the form to your servers.
+We will take and save the response token ID in a hidden attribute called `token` and then send the form to your servers.
 
 
 > WARNING

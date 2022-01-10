@@ -78,25 +78,25 @@ The following example assumes that `transactionAmount` and `description` data we
 <form id="form-checkout" method="POST" action="/process_payment">
   <div id="form-checkout__cardNumber-container"></div>
   <div id="form-checkout__cardExpirationDate-container" class="input"></div>
-  <input type="text" name="cardholderName" id="form-checkout__cardholderName" placeholder="Titular do cartão" />
+  <input type="text" name="cardholderName" id="form-checkout__cardholderName" placeholder="Cardholder name" />
   <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail" placeholder="E-mail" />
   <div id="form-checkout__securityCode-container"></div>
   <select name="issuer" id="form-checkout__issuer">
-    <option value="" disabled selected>Selecione o emissor</option>
+    <option value="" disabled selected>Issuer</option>
   </select>
   <select name="identificationType" id="form-checkout__identificationType">
-    <option value="" disabled selected>Tipo de documento</option>
+    <option value="" disabled selected>Document type</option>
   </select>
   <input type="text" name="identificationNumber" id="form-checkout__identificationNumber"
-    placeholder="N​ú​mero do documento​" />
+    placeholder="Document vaule" />
   <select name="installments" id="form-checkout__installments">
-    <option value="" disabled selected>Escolha a quantidade de parcelas</option>
+    <option value="" disabled selected>Choose the amount of installments</option>
   </select>
   <input id="token" name="token" type="hidden" />
   <input id="paymentMethodId" name="paymentMethodId" type="hidden" />
   <input id="transactionAmount" name="transactionAmount" type="hidden" value="100" />
   <input id="description" name="description" type="hidden" value="product description" />
-  <button type="submit" id="form-checkout__submit">Pagar</button>
+  <button type="submit" id="form-checkout__submit">Pay</button>
 </form>
 ```
 
@@ -133,11 +133,11 @@ The second parameter is options, and can be assigned values ​​for **placehol
 
 For more details on the allowed styles, [check out the technical reference](https://github.com/lucmantovani/sdk-js/tree/feature/fields-docs#style).
 
-A code example with `cardNumber`, `expirationMonth`, `expirationYear` and `CVV` would be:
+A code example with `cardNumber`, `expirationDate` and `CVV` would be:
 
 ```javascript
   const cardNumberElement = mp.fields.create('cardNumber', {
-    placeholder: "Card Number",
+    placeholder: "Card number",
   }).mount('form-checkout__cardNumber-container');
  
   const expirationDateElement = mp.fields.create('expirationDate', {
@@ -214,17 +214,31 @@ function createSelectOptions(elem, options, labelsAndKeys = { label : "name", va
 Avoid mistakes and offer the correct available installments by validating your customers' data as they fill it out. Use the code in the following example to identify payment method with the first 6 digits of the card.
 
 ```javascript
+function clearHTMLSelectChildrenFrom(element) {
+    const currOptions = [...element.children];
+    currOptions.forEach(child => child.remove());
+}
+
 // Step #getPaymentMethods
-cardNumberElement.on('change', async (data) => {
+cardNumberElement.on('binChange', async (data) => {
     const { bin } = data;
     try {
-      const paymentMethodElement = document.getElementById('MPHiddenInputPaymentMethod');
-      if (bin.length < 6 && paymentMethodElement.value) return paymentMethodElement.value = "";
-      if (bin.length === 6 && !paymentMethodElement.value) {
+      const paymentMethodElement = document.getElementById('paymentMethodId');
+      const issuerElement = document.getElementById('form-checkout__issuer');
+      const installmentsElement = document.getElementById('form-checkout__installments');
+
+      if (!bin && paymentMethodElement.value) {
+        clearHTMLSelectChildrenFrom(issuerElement)
+        clearHTMLSelectChildrenFrom(installmentsElement)
+        paymentMethodElement.value = "";
+        return
+      }
+      
+      if (bin && !paymentMethodElement.value) {
         const paymentMethods = await mp.getPaymentMethods({ bin });
-        const { id: paymentMethodID, additional_info_needed, issuer } = paymentMethods.results[0];
+        const { id: paymentMethodId, additional_info_needed, issuer } = paymentMethods.results[0];
         // Assign payment method ID to a hidden input.
-        paymentMethodElement.value = paymentMethodID;
+        paymentMethodElement.value = paymentMethodId;
         // If 'issuer_id' is needed, we fetch all issuers (getIssuers()) from bin.
         // Otherwise we just create an option with the unique issuer and call getInstallments().
         additional_info_needed.includes('issuer_id') ? getIssuers(bin) : (() => {
@@ -249,7 +263,7 @@ Add the following code to obtain the `issuer_id`:
 // Step #getIssuers
 const getIssuers = async (bin) => {
     try {
-      const paymentMethodId = document.getElementById('MPHiddenInputPaymentMethod').value;
+      const paymentMethodId = document.getElementById('paymentMethodId').value;
       const issuerElement = document.getElementById('form-checkout__issuer');
       const issuers = await mp.getIssuers({ paymentMethodId, bin });
       createSelectOptions(issuerElement, issuers);
@@ -313,7 +327,7 @@ const formElement = document.getElementById('form-checkout');
 
 The `createCardToken` method will return a token with the secure card display.
 
-We will take and save the response token ID in a hidden attribute called `MPHiddenInputToken` and then send the form to your servers.
+We will take and save the response token ID in a hidden attribute called `token` and then send the form to your servers.
 
 
 > WARNING

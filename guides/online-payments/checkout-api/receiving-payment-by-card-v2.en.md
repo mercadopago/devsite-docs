@@ -72,24 +72,24 @@ With MercadoPago.js V2 library CardForm functionality you can get and validate a
 
 CardForm provides secure implementation and correct token of card data. 
 
-For the PCI fields (**Card Number**, **Expiration Month**, **Expiration Year** and **CVV**) you must create `divs` that will serve as containers for the `iFrames`.
+For the PCI fields (**Card Number**, **Expiration Date** and **CVV**) you must create `divs` that will serve as containers for the `iFrames`.
 
 Use the following form and add the styles of your choice.
 
 ```html
 <!-- Step #2 -->
 <form id="form-checkout">
-   <div type="text" name="cardNumber" id="form-checkout__cardNumber"></div>
+   <div type="text" name="cardNumber" id="form-checkout__cardNumber-container"></div>
    <div type="text" name="cardExpirationDate" id="form-checkout__cardExpirationDate-container"></div>
    <input type="text" name="cardholderName" id="form-checkout__cardholderName"/>
    <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail"/>
-   <div type="text" name="securityCode" id="form-checkout__securityCode"></div>
+   <div type="text" name="securityCode" id="form-checkout__securityCode-container"></div>
    <select name="issuer" id="form-checkout__issuer"></select>----[mla, mlb, mlu, mlc, mpe, mco]----
    <select name="identificationType" id="form-checkout__identificationType"></select>------------
    <input type="text" name="identificationNumber" id="form-checkout__identificationNumber"/>
    <select name="installments" id="form-checkout__installments"></select>
-   <button type="submit" id="form-checkout__submit">Pagar</button>
-   <progress value="0" class="progress-bar">Carregando...</progress>
+   <button type="submit" id="form-checkout__submit">Pay</button>
+   <progress value="0" class="progress-bar">Loading...</progress>
  </form>
 ```
 
@@ -122,11 +122,11 @@ const cardForm = mp.cardForm({
        placeholder: 'E-mail'
      },
      cardNumber: {
-       id: 'form-checkout__cardNumber',
+       id: 'form-checkout__cardNumber-container',
        placeholder: 'Card Number',
      },
      securityCode: {
-       id: 'form-checkout__securityCode',
+       id: 'form-checkout__securityCode-container',
        placeholder: 'CVV'
      },
      installments: {
@@ -135,7 +135,7 @@ const cardForm = mp.cardForm({
      },
      cardExpirationDate: {
        id: 'form-checkout__cardExpirationDate-container',
-       placeholder: 'Expiration month',
+       placeholder: 'Expiration Date (MM/YYYY)',
      },----[mla, mlb, mlu, mlc, mpe, mco]----
      identificationType: {
        id: 'form-checkout__identificationType',
@@ -198,18 +198,9 @@ const cardForm = mp.cardForm({
        return () => {
          progressBar.setAttribute('value', '0')
        }
-     },
-     onReady: function () {
-       console.log('Fields are ready')
-     },
-     onValidityChange: function ({ field, messages }) {
-        messages.forEach(message => {
-          console.log(`${field}: ${message}`);
-        });
-     },
+     }
    }
  });
-}
 ```
 
 The callbacks option accepts different functions that are activated in different flow moments.
@@ -290,33 +281,14 @@ Find the payment status in the _status_ field.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
  
-var payment_data = {
- transaction_amount: Number(req.body.transactionAmount),
- token: req.body.token,
- description: req.body.description,
- installments: Number(req.body.installments),
- payment_method_id: req.body.paymentMethodId,
- issuer_id: req.body.issuer,
- payer: {
-   email: req.body.email,
-   identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
-     type: req.body.docType,------------
-     number: req.body.docNumber
-   }
- }
-};
- 
-mercadopago.payment.save(payment_data)
- .then(function(response) {
-   res.status(response.status).json({
-     status: response.body.status,
-     status_detail: response.body.status_detail,
-     id: response.body.id
-   });
- })
- .catch(function(error) {
-   res.status(response.status).send(error);
- });
+mercadopago.payment.save(req.body)
+  .then(function(response) {
+    const { status, status_detail, id } = response.body;
+    res.status(response.status).json({ status, status_detail, id });
+  })
+  .catch(function(error) {
+    console.error(error);
+  });
 ```
 ```java
 ===

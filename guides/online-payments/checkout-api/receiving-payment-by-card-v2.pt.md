@@ -82,7 +82,7 @@ Com a **funcionalidade CardForm da biblioteca MercadoPago.js V2**, você pode ob
 
 CardForm permite que você tenha uma implementação segura e uma correta tokenização da informação do cartão.
 
-Para os campos PCI (**Card Number**, **Expiration Month**, **Expiration Year** e **CVV**) deve-se criar `divs` que servirão de containers para os `iFrames`.
+Para os campos PCI (**Card Number**, **Expiration Date** e **CVV**) deve-se criar `divs` que servirão de containers para os `iFrames`.
 
 Utilize o formulário abaixo e adicione os estilos que desejar.
 
@@ -126,7 +126,7 @@ const cardForm = mp.cardForm({
      id: 'form-checkout',
      cardholderName: {
        id: 'form-checkout__cardholderName',
-       placeholder: "Card Holder",
+       placeholder: "Titular do cartão",
      },
      cardholderEmail: {
        id: 'form-checkout__cardholderEmail',
@@ -134,31 +134,31 @@ const cardForm = mp.cardForm({
      },
      cardNumber: {
        id: 'form-checkout__cardNumber-container',
-       placeholder: 'Card Number',
+       placeholder: 'Número do cartão',
      },
      securityCode: {
        id: 'form-checkout__securityCode-container',
-       placeholder: 'CVV'
+       placeholder: 'Código de segurança'
      },
      installments: {
        id: 'form-checkout__installments',
-       placeholder: 'Installments'
+       placeholder: 'Parcelas'
      },
      cardExpirationDate: {
        id: 'form-checkout__cardExpirationDate-container',
-       placeholder: 'Data de vencimiento',
+       placeholder: 'Data de vencimento (MM/YYYY)',
      },----[mla, mlb, mlu, mlc, mpe, mco]----
      identificationType: {
        id: 'form-checkout__identificationType',
-       placeholder: 'Document type'
+       placeholder: 'Tipo de documento'
      },------------
      identificationNumber: {
        id: 'form-checkout__identificationNumber',
-       placeholder: 'Document value'
+       placeholder: 'Número do documento'
      },
      issuer: {
        id: 'form-checkout__issuer',
-       placeholder: 'Issuer'
+       placeholder: 'Banco emissor'
      }
    },
    callbacks: {
@@ -209,18 +209,9 @@ const cardForm = mp.cardForm({
        return () => {
          progressBar.setAttribute('value', '0')
        }
-     },
-     onReady: function () {
-       console.log('Fields are ready')
-     },
-     onValidityChange: function ({ field, messages }) {
-        messages.forEach(message => {
-          console.log(`${field}: ${message}`);
-        });
-     },
+     }
    }
  });
-}
 ```
 
 A opção de callbacks aceita diferentes funções que são ativadas em diversos momentos do fluxo.
@@ -301,33 +292,14 @@ Encontre o estado do pagamento no campo _status_.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
  
-var payment_data = {
- transaction_amount: Number(req.body.transactionAmount),
- token: req.body.token,
- description: req.body.description,
- installments: Number(req.body.installments),
- payment_method_id: req.body.paymentMethodId,
- issuer_id: req.body.issuer,
- payer: {
-   email: req.body.email,
-   identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
-     type: req.body.docType,------------
-     number: req.body.docNumber
-   }
- }
-};
- 
-mercadopago.payment.save(payment_data)
- .then(function(response) {
-   res.status(response.status).json({
-     status: response.body.status,
-     status_detail: response.body.status_detail,
-     id: response.body.id
-   });
- })
- .catch(function(error) {
-   res.status(response.status).send(error);
- });
+mercadopago.payment.save(req.body)
+  .then(function(response) {
+    const { status, status_detail, id } = response.body;
+    res.status(response.status).json({ status, status_detail, id });
+  })
+  .catch(function(error) {
+    console.error(error);
+  });
 ```
 ```java
 ===

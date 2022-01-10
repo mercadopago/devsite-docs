@@ -82,24 +82,24 @@ Con la funcionalidad CardForm de la librería MercadoPago.js V2, puedes obtener 
 
 CardForm te permite tener una implementación segura y una correcta tokenización de la información de la tarjeta.
 
-Para los campos PCI (**Card Number**, **Expiration Month**, **Expiration Year** y **CVV**) debes crear `divs` que servirán como contenedores para los `iFrames`.
+Para los campos PCI (**Card Number**, **Expiration Date** y **CVV**) debes crear `divs` que servirán como contenedores para los `iFrames`.
 
 Utiliza el siguiente formulario y agrega los estilos que desees.
 
 ```html
 <!-- Step #2 -->
 <form id="form-checkout">
-   <div type="text" name="cardNumber" id="form-checkout__cardNumber"></div>
+   <div type="text" name="cardNumber" id="form-checkout__cardNumber-container"></div>
    <div type="text" name="cardExpirationDate" id="form-checkout__cardExpirationDate-container"></div>
    <input type="text" name="cardholderName" id="form-checkout__cardholderName"/>
    <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail"/>
-   <div type="text" name="securityCode" id="form-checkout__securityCode"></div>
+   <div type="text" name="securityCode" id="form-checkout__securityCode-container"></div>
    <select name="issuer" id="form-checkout__issuer"></select>----[mla, mlb, mlu, mlc, mpe, mco]----
    <select name="identificationType" id="form-checkout__identificationType"></select>------------
    <input type="text" name="identificationNumber" id="form-checkout__identificationNumber"/>
    <select name="installments" id="form-checkout__installments"></select>
    <button type="submit" id="form-checkout__submit">Pagar</button>
-   <progress value="0" class="progress-bar">Carregando...</progress>
+   <progress value="0" class="progress-bar">Cargando...</progress>
  </form>
 ```
 
@@ -124,39 +124,39 @@ const cardForm = mp.cardForm({
      id: 'form-checkout',
      cardholderName: {
        id: 'form-checkout__cardholderName',
-       placeholder: "Card Holder",
+       placeholder: "Titular de la tarjeta",
      },
      cardholderEmail: {
        id: 'form-checkout__cardholderEmail',
        placeholder: 'E-mail'
      },
      cardNumber: {
-       id: 'form-checkout__cardNumber',
-       placeholder: 'Card Number',
+       id: 'form-checkout__cardNumber-container',
+       placeholder: 'Número de la tarjeta',
      },
      securityCode: {
-       id: 'form-checkout__securityCode',
-       placeholder: 'CVV'
+       id: 'form-checkout__securityCode-container',
+       placeholder: 'Código de seguridad'
      },
      installments: {
        id: 'form-checkout__installments',
-       placeholder: 'Installments'
+       placeholder: 'Cuotas'
      },
      cardExpirationDate: {
        id: 'form-checkout__cardExpirationDate-container',
-       placeholder: 'Data de vencimiento',
+       placeholder: 'Data de vencimiento (MM/YYYY)',
      },----[mla, mlb, mlu, mlc, mpe, mco]----
      identificationType: {
        id: 'form-checkout__identificationType',
-       placeholder: 'Document type'
+       placeholder: 'Tipo de documento'
      },------------
      identificationNumber: {
        id: 'form-checkout__identificationNumber',
-       placeholder: 'Document value'
+       placeholder: 'Número de documento'
      },
      issuer: {
        id: 'form-checkout__issuer',
-       placeholder: 'Issuer'
+       placeholder: 'Banco emisor'
      }
    },
    callbacks: {
@@ -207,18 +207,9 @@ const cardForm = mp.cardForm({
        return () => {
          progressBar.setAttribute('value', '0')
        }
-     },
-     onReady: function () {
-       console.log('Fields are ready')
-     },
-     onValidityChange: function ({ field, messages }) {
-        messages.forEach(message => {
-          console.log(`${field}: ${message}`);
-        });
-     },
+     }
    }
  });
-}
 ```
 
 La opción de callbacks acepta diferentes funciones que son activadas en diversos momentos del flujo. 
@@ -299,33 +290,14 @@ Encuentra el estado del pago en el campo _status_.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
  
-var payment_data = {
- transaction_amount: Number(req.body.transactionAmount),
- token: req.body.token,
- description: req.body.description,
- installments: Number(req.body.installments),
- payment_method_id: req.body.paymentMethodId,
- issuer_id: req.body.issuer,
- payer: {
-   email: req.body.email,
-   identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
-     type: req.body.docType,------------
-     number: req.body.docNumber
-   }
- }
-};
- 
-mercadopago.payment.save(payment_data)
- .then(function(response) {
-   res.status(response.status).json({
-     status: response.body.status,
-     status_detail: response.body.status_detail,
-     id: response.body.id
-   });
- })
- .catch(function(error) {
-   res.status(response.status).send(error);
- });
+mercadopago.payment.save(req.body)
+  .then(function(response) {
+    const { status, status_detail, id } = response.body;
+    res.status(response.status).json({ status, status_detail, id });
+  })
+  .catch(function(error) {
+    console.error(error);
+  });
 ```
 ```java
 ===

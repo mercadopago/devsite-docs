@@ -123,7 +123,7 @@ const cardForm = mp.cardForm({
     },
     cardExpirationDate: {
       id: "form-checkout__cardExpirationDate",
-      placeholder: "Data de vencimiento",
+      placeholder: "Data de vencimiento (MM/YYYY)",
     },
     securityCode: {
       id: "form-checkout__securityCode",
@@ -197,7 +197,7 @@ const cardForm = mp.cardForm({
       return () => {
         progressBar.setAttribute("value", "0");
       };
-    },
+    }
   },
 });
 ```
@@ -280,33 +280,13 @@ Puedes encontrar el estado del pago en el valor _status_.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
 
-var payment_data = {
-  transaction_amount: Number(req.body.transactionAmount),
-  token: req.body.token,
-  description: req.body.description,
-  installments: Number(req.body.installments),
-  payment_method_id: req.body.paymentMethodId,
-  issuer_id: req.body.issuer,
-  payer: {
-    email: req.body.cardholderEmail,
-    identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
-      type: req.body.identificationType,------------
-      number: req.body.identificationNumber
-    },
-    first_name: req.body.cardholderName
-  }
-};
-
-mercadopago.payment.save(payment_data)
+mercadopago.payment.save(req.body)
   .then(function(response) {
-    res.status(response.status).json({
-      status: response.body.status,
-      status_detail: response.body.status_detail,
-      id: response.body.id
-    });
+    const { status, status_detail, id } = response.body;
+    res.status(response.status).json({ status, status_detail, id });
   })
   .catch(function(error) {
-    res.status(response.status).send(error);
+    console.error(error);
   });
 ```
 ```java
