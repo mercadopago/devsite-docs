@@ -83,8 +83,8 @@ Utiliza el siguiente formulario y agrega los estilos que desees.
    <input type="text" name="cardholderName" id="form-checkout__cardholderName"/>
    <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail"/>
    <input type="text" name="securityCode" id="form-checkout__securityCode" />
-   <select name="issuer" id="form-checkout__issuer"></select>
-   <select name="identificationType" id="form-checkout__identificationType"></select>
+   <select name="issuer" id="form-checkout__issuer"></select>----[mla, mlb, mlu, mlc, mpe, mco]----
+   <select name="identificationType" id="form-checkout__identificationType"></select>------------
    <input type="text" name="identificationNumber" id="form-checkout__identificationNumber"/>
    <select name="installments" id="form-checkout__installments"></select>
    <button type="submit" id="form-checkout__submit">Pagar</button>
@@ -132,11 +132,11 @@ const cardForm = mp.cardForm({
     installments: {
       id: "form-checkout__installments",
       placeholder: "Cuotas",
-    },
+    },----[mla, mlb, mlu, mlc, mpe, mco]----
     identificationType: {
       id: "form-checkout__identificationType",
       placeholder: "Tipo de documento",
-    },
+    },------------
     identificationNumber: {
       id: "form-checkout__identificationNumber",
       placeholder: "Número de documento",
@@ -161,8 +161,8 @@ const cardForm = mp.cardForm({
         amount,
         token,
         installments,
-        identificationNumber,
-        identificationType,
+        identificationNumber----[mla, mlb, mlu, mlc, mpe, mco]----,
+        identificationType,------------
       } = cardForm.getCardFormData();
 
       fetch("/process_payment", {
@@ -179,8 +179,8 @@ const cardForm = mp.cardForm({
           description: "Descripción del producto",
           payer: {
             email,
-            identification: {
-              type: identificationType,
+            identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
+              type: identificationType,------------
               number: identificationNumber,
             },
           },

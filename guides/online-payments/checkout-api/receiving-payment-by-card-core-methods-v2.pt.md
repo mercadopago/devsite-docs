@@ -91,10 +91,10 @@ No exemplo a seguir, assume-se que os dados `transactionAmount` e `description` 
   <div id="form-checkout__securityCode-container"></div>
   <select name="issuer" id="form-checkout__issuer">
     <option value="" disabled selected>Selecione o emissor</option>
-  </select>
+  </select>----[mla, mlb, mlu, mlc, mpe, mco]----
   <select name="identificationType" id="form-checkout__identificationType">
     <option value="" disabled selected>Tipo de documento</option>
-  </select>
+  </select>------------
   <input type="text" name="identificationNumber" id="form-checkout__identificationNumber"
     placeholder="N​ú​mero do documento​" />
   <select name="installments" id="form-checkout__installments">
@@ -124,8 +124,8 @@ Configure a sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
  
 <script>
 const mp = new MercadoPago('YOUR_PUBLIC_KEY');
- 
-// Add Step #getIdentificationTypes
+ ----[mla, mlb, mlu, mlc, mpe, mco]----
+// Add Step #getIdentificationTypes------------
 // Add Step #getPaymentMethods
 // Add Step #getIssuers
 // Add Step #getInstallments
@@ -322,9 +322,8 @@ const formElement = document.getElementById('form-checkout');
       if (!tokenElement.value) {
         event.preventDefault();
         const token = await mp.fields.createCardToken({
-          cardholderName: document.getElementById('form-checkout__cardholderName').value,
+          cardholderName: document.getElementById('form-checkout__cardholderName').value,----[mla, mlb, mlu, mlc, mpe, mco]----
           identificationType: document.getElementById('form-checkout__identificationType').value,------------
- 
           identificationNumber: document.getElementById('form-checkout__identificationNumber').value,
         });
         tokenElement.value = token.id;
