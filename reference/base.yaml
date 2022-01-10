@@ -42,14 +42,6 @@ tags:
       es: 'Código QR'
     externalDocs: 
       url: '/guides/in-person-payments/qr-code/introduction'
-  mp-point:
-    description:
-      pt: 'Mercado Pago Point'
-      en: 'Mercado Pago Point'
-      es: 'Mercado Pago Point'
-    externalDocs: 
-      url: '/guides/in-person-payments/mp-point/introduction'
-  
   
 #------DEFAULT - ALL ARCHIVES - END------
 
