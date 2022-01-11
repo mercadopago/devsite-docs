@@ -56,9 +56,9 @@ You must also have a Point device.
 First, log into the Mercado Pago application. Then, click on the QR icon and scan the code that displays when you turn on your Point device. And that’s it, your Point device will be linked to your account.
 
 
-### Configure your store and your checkout
+### Configure your store and your point of sale
 
-Once you have linked your Point device to your Mercado Pago account, you must complete your store data and configure your checkout on the [Mercado Pago site](https://www.mercadopago[FAKER][URL][DOMAIN]). To do this, you must access **Your business> Stores and checkout**.
+Once you have linked your Point device to your Mercado Pago account, you must complete your store data and configure your point of sale on the [Mercado Pago site](https://www.mercadopago[FAKER][URL][DOMAIN]). To do this, you must access **Your business> Stores and points of sale**.
 
 ### Activate the integrated mode on your Point device
 
