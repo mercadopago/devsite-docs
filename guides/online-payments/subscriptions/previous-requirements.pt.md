@@ -22,6 +22,16 @@ Observe que o valor mínimo permitido para criar uma assinatura é de $ 1500 e o
 
 ------------
 
+----[mlm]----
+Observe que o valor mínimo permitido para criar uma assinatura é de $ 2 e o máximo é de $ 1.500.
+
+------------
+
+----[mco]----
+Observe que o valor mínimo permitido para criar uma assinatura é de $ 15 e o máximo é de $ 300.000.
+
+
+
 
 ## Primeiros passos
 

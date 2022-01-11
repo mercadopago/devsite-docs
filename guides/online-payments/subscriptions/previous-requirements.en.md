@@ -18,7 +18,17 @@ Please note that the minimum amount allowed to create a subscription is $ 10 and
 ------------
 
 ----[mco]----
-Please note that the minimum amount allowed to create a subscription is $1500 and the maximum is $30.000.000.
+Please note that the minimum amount allowed to create a subscription is $ 1500 and the maximum is $ 30.000.000.
+
+------------
+
+----[mpe]----
+Please note that the minimum amount allowed to create a subscription is $ 2 and the maximum is $ 1.500.
+
+------------
+
+----[mlu]----
+Please note that the minimum amount allowed to create a subscription is $ 15 and the maximum is $ 300.000
 
 ------------
 
