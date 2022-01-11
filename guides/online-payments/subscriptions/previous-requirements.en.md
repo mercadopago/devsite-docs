@@ -22,6 +22,16 @@ Please note that the minimum amount allowed to create a subscription is $1500 an
 
 ------------
 
+----[mpe]----
+Please note that the minimum amount allowed to create a subscription $ 2.00 and the maximum is $ 1.500.
+
+------------
+
+----[mlu]----
+lease note that the minimum amount allowed to create a subscription $ 15.00 and the maximum is $ 300.000.
+
+------------
+
 ## First steps
 
 ### Access an account
