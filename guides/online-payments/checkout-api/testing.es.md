@@ -14,7 +14,7 @@ Te explicamos cómo utilizar nuestras tarjetas y usuarios de prueba para verific
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Configura la integración con los datos de tu usuario vendedor
 
-Configura la [public key de producción]([FAKER][CREDENTIALS][URL]) de tu **usuario de prueba vendedor** en el frontend de tu aplicación y el [access token de producción]([FAKER][CREDENTIALS][URL]) del **usuario de prueba comprador** en el backend.
+Configura la [public key de producción]([FAKER][CREDENTIALS][URL]) de tu **usuario de prueba vendedor** en el frontend de tu aplicación y el [access token de producción]([FAKER][CREDENTIALS][URL]) en el backend.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Realiza un pago con tu usuario comprador
 
@@ -25,7 +25,6 @@ Inicia tu integración configurada con las credenciales de tu usuario de prueba 
 1. Completa los datos de una [tarjeta de prueba](#bookmark_tarjetas_de_prueba).
 1. Ingresa el e-mail de tu usuario de prueba comprador.
 1. Confirma la compra, ¡y listo!
-
 
 ## Tarjetas de prueba
 
@@ -44,6 +43,7 @@ Para empezar a cobrar, debes cumplir los [requisitos para salir a producción](h
 Antes de activarlas, verifica que las credenciales en tu integración sean las de la cuenta que reciba el dinero de las ventas.<br/>
 
 ---
+
 ### Próximos pasos
 
 > LEFT_BUTTON_REQUIRED_ES
