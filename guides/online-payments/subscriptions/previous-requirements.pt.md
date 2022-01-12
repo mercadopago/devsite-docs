@@ -22,7 +22,7 @@ Observe que o valor mínimo permitido para criar uma assinatura é de $ 1500 e o
 
 ------------
 
-----[mlm]----
+----[mpe]----
 Observe que o valor mínimo permitido para criar uma assinatura é de $ 2 e o máximo é de $ 1.500.
 
 ------------
