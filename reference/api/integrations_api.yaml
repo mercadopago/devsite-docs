@@ -46,24 +46,31 @@ paths:
                     description:
                     items:
                       type: object
+                      properties:
+                        id:
+                          type: string
+                          example: "INGENICO_MOVE2500__ING-33976987"
+                        operating_mode:
+                          type: string
+                          example: "STANDALONE"
                   operating_mode:
                     type: string
                     description:
                   paging:
                     type: object
-                    description:
-                  total:
-                    type: integer
-                    example: 10
-                    description:
-                  offset:
-                    type: integer
-                    example: 0    
-                    description:      
-                  limit:
-                    type: integer
-                    example: 50
-                    description:   
+                    properties:
+                       total:
+                        type: integer
+                        example: 1
+                        description:
+                       offset:
+                        type: integer
+                        example: 0    
+                        description:      
+                       limit:
+                        type: integer
+                        example: 50
+                        description:   
         '400':
           description: Error
           content:
