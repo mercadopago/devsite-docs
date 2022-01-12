@@ -307,10 +307,10 @@ After returning the notification and confirming its receipt, you will obtain the
 
 | Type | URL | Documentation |
 | --- | --- | --- |
-| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [see documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) |
-| subscription_preapproval | `https://api.mercadopago.com/preapproval` | [see documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/subscriptions/_preapproval/post) |
+| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) |
+| subscription_preapproval | `https://api.mercadopago.com/preapproval` | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/subscriptions/_preapproval/post) |
 | subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | - |
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | - |
-| point_integration_wh | - | [see documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/mp-point/introduction) |
+| point_integration_wh | - | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/mp-point/introduction) |
 
 With this information, you will be able to carry out the necessary updates to your platform, such as updating an approved payment.

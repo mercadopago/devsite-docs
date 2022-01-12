@@ -72,25 +72,24 @@ With MercadoPago.js V2 library CardForm functionality you can get and validate a
 
 CardForm provides secure implementation and correct token of card data. 
 
-For the PCI fields (**Card Number**, **Expiration Month**, **Expiration Year** and **CVV**) you must create `divs` that will serve as containers for the `iFrames`.
+For the PCI fields (**Card Number**, **Expiration Date** and **CVV**) you must create `divs` that will serve as containers for the `iFrames`.
 
 Use the following form and add the styles of your choice.
 
 ```html
 <!-- Step #2 -->
 <form id="form-checkout">
-   <div type="text" name="cardNumber" id="form-checkout__cardNumber"></div>
-<div type="text" name="cardExpirationMonth"   id="form-checkout__cardExpirationMonth"></div>
-   <div type="text" name="cardExpirationYear" id="form-checkout__cardExpirationYear"></div>
+   <div type="text" id="form-checkout__cardNumber-container"></div>
+   <div type="text" id="form-checkout__cardExpirationDate-container"></div>
    <input type="text" name="cardholderName" id="form-checkout__cardholderName"/>
    <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail"/>
-   <div type="text" name="securityCode" id="form-checkout__securityCode"></div>
+   <div type="text" id="form-checkout__securityCode-container"></div>
    <select name="issuer" id="form-checkout__issuer"></select>----[mla, mlb, mlu, mlc, mpe, mco]----
    <select name="identificationType" id="form-checkout__identificationType"></select>------------
    <input type="text" name="identificationNumber" id="form-checkout__identificationNumber"/>
    <select name="installments" id="form-checkout__installments"></select>
-   <button type="submit" id="form-checkout__submit">Pagar</button>
-   <progress value="0" class="progress-bar">Carregando...</progress>
+   <button type="submit" id="form-checkout__submit">Pay</button>
+   <progress value="0" class="progress-bar">Loading...</progress>
  </form>
 ```
 
@@ -111,7 +110,6 @@ For the IFrame to be rendered, it is necessary to pass the `iframe` option with 
 // Step #3
 const cardForm = mp.cardForm({
    amount: '100.5',
-   autoMount: true,
    iframe: true,
    form: {
      id: 'form-checkout',
@@ -124,29 +122,20 @@ const cardForm = mp.cardForm({
        placeholder: 'E-mail'
      },
      cardNumber: {
-       id: 'form-checkout__cardNumber',
+       id: 'form-checkout__cardNumber-container',
        placeholder: 'Card Number',
-       style: {
-         // Style examples:
-         // "font-size": "18px",
-         // color: "blue"
-       },
      },
      securityCode: {
-       id: 'form-checkout__securityCode',
+       id: 'form-checkout__securityCode-container',
        placeholder: 'CVV'
      },
      installments: {
        id: 'form-checkout__installments',
        placeholder: 'Installments'
      },
-     cardExpirationMonth: {
-       id: 'form-checkout__cardExpirationMonth',
-       placeholder: 'MM'
-     },
-     cardExpirationYear: {
-       id: 'form-checkout__cardExpirationYear',
-       placeholder: 'YYYY'
+     cardExpirationDate: {
+       id: 'form-checkout__cardExpirationDate-container',
+       placeholder: 'Expiration Date (MM/YYYY)',
      },----[mla, mlb, mlu, mlc, mpe, mco]----
      identificationType: {
        id: 'form-checkout__identificationType',
@@ -164,24 +153,6 @@ const cardForm = mp.cardForm({
    callbacks: {
      onFormMounted: function (error) {
        if (error) return console.log('Callback para tratar o erro: montando o cardForm ', error)
-     },
-     onFormUnmounted: function (error) {
-       if (error) return console.log('Callback para tratar o erro: desmontando o cardForm ', error)
-     },
-     onIdentificationTypesReceived: function (error, identificationTypes) {
-       if (error) return console.log('Callback para tratar o erro: recebendo tipos de documento ', error)
-     },
-     onPaymentMethodsReceived: function (error, paymentMethods) {
-       if (error) return console.log('Callback para tratar o erro: recebendo payment methods ', error)
-     },
-     onIssuersReceived: function (error, issuers) {
-       if (error) return console.log('Callback para tratar o erro: recebendo emissores ', error)
-     },
-     onInstallmentsReceived: function (error, installments) {
-       if (error) return console.log('Callback para tratar o erro: recebendo parcelas ', error)
-     },
-     onCardTokenReceived: function (error, token) {
-       if (error) return console.log('Callback para tratar o erro: recebendo o token ', error)
      },
      onSubmit: function (event) {
        event.preventDefault();
@@ -227,16 +198,9 @@ const cardForm = mp.cardForm({
        return () => {
          progressBar.setAttribute('value', '0')
        }
-     },
-     onReady: function () {
-       console.log('Fields are ready')
-     },
-     onValidityChange: function ({ field, messages }) {
-       console.log(`${field}:\n${messages.join('\n')}`);
-     },
+     }
    }
  });
-}
 ```
 
 The callbacks option accepts different functions that are activated in different flow moments.
@@ -293,8 +257,8 @@ Find the payment status in the _status_ field.
    $payer = new MercadoPago\Payer();
    $payer->email = $_POST['email'];
    $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
-       "type" => $_POST['docType'],------------
-       "number" => $_POST['docNumber']
+       "type" => $_POST['identificationType'],------------
+       "number" => $_POST['identificationNumber']
    );
    $payment->payer = $payer;
  
@@ -317,33 +281,14 @@ Find the payment status in the _status_ field.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
  
-var payment_data = {
- transaction_amount: Number(req.body.transactionAmount),
- token: req.body.token,
- description: req.body.description,
- installments: Number(req.body.installments),
- payment_method_id: req.body.paymentMethodId,
- issuer_id: req.body.issuer,
- payer: {
-   email: req.body.email,
-   identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
-     type: req.body.docType,------------
-     number: req.body.docNumber
-   }
- }
-};
- 
-mercadopago.payment.save(payment_data)
- .then(function(response) {
-   res.status(response.status).json({
-     status: response.body.status,
-     status_detail: response.body.status_detail,
-     id: response.body.id
-   });
- })
- .catch(function(error) {
-   res.status(response.status).send(error);
- });
+mercadopago.payment.save(req.body)
+  .then(function(response) {
+    const { status, status_detail, id } = response.body;
+    res.status(response.status).json({ status, status_detail, id });
+  })
+  .catch(function(error) {
+    console.error(error);
+  });
 ```
 ```java
 ===
@@ -360,9 +305,9 @@ payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmou
       .setPaymentMethodId(request.getParameter("paymentMethodId"));
  
 Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
-identification.setType(request.getParameter("docType"))
-             .setNumber(request.getParameter("docNumber"));------------ ----[mlm]----
-identification.setNumber(request.getParameter("docNumber"));------------
+identification.setType(request.getParameter("identificationType"))
+             .setNumber(request.getParameter("identificationNumber"));------------ ----[mlm]----
+identification.setNumber(request.getParameter("identificationNumber"));------------
  
 Payer payer = new Payer();
 payer.setEmail(request.getParameter("email"))
@@ -391,8 +336,8 @@ payment_data = {
  payer: {
    email: params[:email],
    identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
-     type: params[:docType],------------
-     number: params[:docNumber]
+     type: params[:identificationType],------------
+     number: params[:identificationNumber]
    }
  }
 }
@@ -427,8 +372,8 @@ var paymentRequest = new PaymentCreateRequest
        Email = Request["email"],
        Identification = new IdentificationRequest
        {----[mla, mlb, mlu, mlc, mpe, mco]----
-           Type = Request["docType"],------------
-           Number = Request["docNumber"],
+           Type = Request["identificationType"],------------
+           Number = Request["identificationNumber"],
        },
    },
 };

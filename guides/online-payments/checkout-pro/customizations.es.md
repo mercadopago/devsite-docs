@@ -13,30 +13,32 @@ Utiliza el método `open` para abrir Checkout desde cualquier elemento deseado d
 Por ejemplo:
 
 [[[
+
 ```html
 <!-- Inicializa el checkout -->
 <script>
-const checkout = mp.checkout({
-  preference: {
-      id: 'YOUR_PREFERENCE_ID'
-  }
-});
+  const checkout = mp.checkout({
+    preference: {
+      id: "YOUR_PREFERENCE_ID",
+    },
+  });
 </script>
 <!-- Llama a la función ‘open’ desde el elemento de tu página que desees -->
 <!-- Por ejemplo: un radio button -->
-<input type="radio" id="checkout-open-radio" onclick="checkout.open()">
+<input type="radio" id="checkout-open-radio" onclick="checkout.open()" />
 ```
+
 ]]]
 
 ### Abrir Checkout Pro con botón de pago
 
 Utiliza el método `render` para generar un botón de pago responsable de abrir Checkout Pro en tu sitio con los siguientes parámetros:
 
-| Parámetro | Tipo de datos | Descripción |
-| --- | --- | --- |
-| `container` | `string` | Selector CSS (identificador) del elemento HTML donde desees mostrar el botón de pago. Te permite definir el tipo de botón que deseas. |
-| `type` (opcional) | `string` | Define el tipo de botón deseado. Actualmente, solo acepta el valor de 'billetera', que muestra un botón de pago con la marca Mercado Pago. |
-| `label` (opcional) | `string` | Texto representado en el botón. Valor predeterminado: `Pagar`. |
+| Parámetro          | Tipo de datos | Descripción                                                                                                                                |
+| ------------------ | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| `container`        | `string`      | Selector CSS (identificador) del elemento HTML donde desees mostrar el botón de pago. Te permite definir el tipo de botón que deseas.      |
+| `type` (opcional)  | `string`      | Define el tipo de botón deseado. Actualmente, solo acepta el valor de 'billetera', que muestra un botón de pago con la marca Mercado Pago. |
+| `label` (opcional) | `string`      | Texto representado en el botón. Valor predeterminado: `Pagar`.                                                                             |
 
 Puedes utilizar el método `render` de dos formas diferentes:
 
@@ -46,24 +48,26 @@ Puedes utilizar el método `render` de dos formas diferentes:
 Por ejemplo:
 
 [[[
-  ```javascript
- // Dentro de las opciones de inicialización 
+
+```javascript
+// Dentro de las opciones de inicialización
 const checkout = mp.checkout({
-   preference: {
-       id: 'YOUR_PREFERENCE_ID'
-   },
-   render: {
-       container: '.cho-container',
-       label: 'Pagar',
-    }
+  preference: {
+    id: "YOUR_PREFERENCE_ID",
+  },
+  render: {
+    container: ".cho-container",
+    label: "Pagar",
+  },
 });
 
 // Invocando la función posteriormente
 checkout.render({
-    container: '.cho-container',
-    label: 'Pagar'
+  container: ".cho-container",
+  label: "Pagar",
 });
-  ```
+```
+
 ]]]
 
 #### Botón de pago por defecto
@@ -79,15 +83,17 @@ checkout.render({
 Agrega el parámetro `autoOpen` a las opciones de inicio de Checkout para mostrar automáticamente Checkout Pro, sin necesidad de que tus compradores interactúen con un botón o cualquier otro elemento para abrirlo:
 
 [[[
+
 ```javascript
 // Inicializa el checkout
 const checkout = mp.checkout({
   preference: {
-      id: 'YOUR_PREFERENCE_ID'
+    id: "YOUR_PREFERENCE_ID",
   },
   autoOpen: true, // Habilita la apertura automática del Checkout Pro
 });
 ```
+
 ]]]
 
 ## Esquema de apertura
@@ -101,14 +107,18 @@ Actualmente, los esquemas disponibles son:
 
 ----[mla]----
 ![Checkout-redirect](/images/web-payment-checkout/checkout-redirect.png)
-------------
+
+---
+
 ----[mlc, mco, mlu, mlb, mlm]----
 ![Checkout-redirect](/images/web-payment-checkout/checkout-redirect-sv.png)
-------------
+
+---
 
 Para integrar el esquema de redireccionamiento en tu integración, reemplaza el botón de pago configurado en la implementación básica y agrega el enlace web Checkout a tu sitio donde deseas que aparezca, como se muestra en el siguiente ejemplo:
 
 [[[
+
 ```php
 ===
 Checkout Pro se abrirá en el <code>init_point</code> definido por la preferencia
@@ -123,6 +133,7 @@ Checkout Pro se abrirá en el <code>init_point</code> definido por la preferenci
   </body>
 </html>
 ```
+
 ```node
 ===
 Checkout Pro se abrirá en el <code>init_point</code> definido por la preferencia
@@ -133,10 +144,12 @@ Checkout Pro se abrirá en el <code>init_point</code> definido por la preferenci
     <title>Mi sitio</title>
   </head>
   <body>
-    <a href="$$init_point$$" target="_blank">Pagar</a>
+    <a href="{{ init_point }}" target="_blank">Pagar</a>
+    <!--Donde el valor que debe tomar href es el init_point de la preferencia creada en el Server-Side -->
   </body>
 </html>
 ```
+
 ```java
 ===
 Checkout Pro se abrirá en el <code>init_point</code> definido por la preferencia
@@ -151,6 +164,7 @@ Checkout Pro se abrirá en el <code>init_point</code> definido por la preferenci
   </body>
 </html>
 ```
+
 ```ruby
 ===
 Checkout Pro se abrirá en el <code>init_point</code> definido por la preferencia
@@ -165,6 +179,7 @@ Checkout Pro se abrirá en el <code>init_point</code> definido por la preferenci
   </body>
 </html>
 ```
+
 ```csharp
 ===
 Checkout Pro se abrirá en el <code>init_point</code> definido por la preferencia
@@ -179,6 +194,7 @@ Checkout Pro se abrirá en el <code>init_point</code> definido por la preferenci
   </body>
 </html>
 ```
+
 ```python
 ===
 Checkout Pro se abrirá en el <code>init_point</code> definido por la preferencia
@@ -193,13 +209,15 @@ Checkout Pro se abrirá en el <code>init_point</code> definido por la preferenci
   </body>
 </html>
 ```
+
 ]]]
 
-## Estilo de color 
+## Estilo de color
 
 Agrega el atributo `theme`, de acuerdo con el ejemplo a continuación, a las opciones de inicio de Checkout Pro para personalizar el color del encabezado y tus elementos:
 
 [[[
+
 ```html
 <script>
   mp.checkout({
@@ -212,6 +230,7 @@ Agrega el atributo `theme`, de acuerdo con el ejemplo a continuación, a las opc
   });
 </script>
 ```
+
 ]]]
 
 > WARNING
@@ -227,11 +246,13 @@ Cambia el color del encabezado agregando el atributo `headerColor` al objeto` th
 Por ejemplo:
 
 [[[
+
 ```javascript
 theme: {
-  headerColor: '#c0392b'
+  headerColor: "#c0392b";
 }
 ```
+
 ]]]
 
 ### Elementos
@@ -249,7 +270,7 @@ Por ejemplo:
 
 ```javascript
 theme: {
-  elementsColor: '#c0392b'
+  elementsColor: "#c0392b";
 }
 ```
 
@@ -263,7 +284,7 @@ Los elementos de color claro tendrán el texto en color negro o `#000`. Por ejem
 
 ```javascript
 theme: {
-    elementsColor: '#81ecec' // Color claro
+  elementsColor: "#81ecec"; // Color claro
 }
 ```
 
@@ -273,7 +294,7 @@ Los elementos de color oscuro tendrán el texto en color blanco o `#fff`. Por ej
 
 ```javascript
 theme: {
-    elementsColor: '#8e44ad' // Color oscuro
+  elementsColor: "#8e44ad"; // Color oscuro
 }
 ```
 

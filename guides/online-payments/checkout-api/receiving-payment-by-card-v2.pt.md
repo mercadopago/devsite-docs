@@ -82,7 +82,7 @@ Com a **funcionalidade CardForm da biblioteca MercadoPago.js V2**, você pode ob
 
 CardForm permite que você tenha uma implementação segura e uma correta tokenização da informação do cartão.
 
-Para os campos PCI (**Card Number**, **Expiration Month**, **Expiration Year** e **CVV**) deve-se criar `divs` que servirão de containers para os `iFrames`.
+Para os campos PCI (**Card Number**, **Expiration Date** e **CVV**) deve-se criar `divs` que servirão de containers para os `iFrames`.
 
 Utilize o formulário abaixo e adicione os estilos que desejar.
 
@@ -90,12 +90,11 @@ Utilize o formulário abaixo e adicione os estilos que desejar.
 ```html
 <!-- Step #2 -->
 <form id="form-checkout">
-   <div type="text" name="cardNumber" id="form-checkout__cardNumber"></div>
-<div type="text" name="cardExpirationMonth"   id="form-checkout__cardExpirationMonth"></div>
-   <div type="text" name="cardExpirationYear" id="form-checkout__cardExpirationYear"></div>
+   <div type="text" id="form-checkout__cardNumber-container"></div>
+   <div type="text" id="form-checkout__cardExpirationDate-container"></div>
    <input type="text" name="cardholderName" id="form-checkout__cardholderName"/>
    <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail"/>
-   <div type="text" name="securityCode" id="form-checkout__securityCode"></div>
+   <div type="text" id="form-checkout__securityCode-container"></div>
    <select name="issuer" id="form-checkout__issuer"></select>----[mla, mlb, mlu, mlc, mpe, mco]----
    <select name="identificationType" id="form-checkout__identificationType"></select>------------
    <input type="text" name="identificationNumber" id="form-checkout__identificationNumber"/>
@@ -122,77 +121,49 @@ Para que o IFrame seja renderizado, é necessário passar a opção `iframe` com
 // Step #3
 const cardForm = mp.cardForm({
    amount: '100.5',
-   autoMount: true,
    iframe: true,
    form: {
      id: 'form-checkout',
      cardholderName: {
        id: 'form-checkout__cardholderName',
-       placeholder: "Card Holder",
+       placeholder: "Titular do cartão",
      },
      cardholderEmail: {
        id: 'form-checkout__cardholderEmail',
        placeholder: 'E-mail'
      },
      cardNumber: {
-       id: 'form-checkout__cardNumber',
-       placeholder: 'Card Number',
-       style: {
-         // Style examples:
-         // "font-size": "18px",
-         // color: "blue"
-       },
+       id: 'form-checkout__cardNumber-container',
+       placeholder: 'Número do cartão',
      },
      securityCode: {
-       id: 'form-checkout__securityCode',
-       placeholder: 'CVV'
+       id: 'form-checkout__securityCode-container',
+       placeholder: 'Código de segurança'
      },
      installments: {
        id: 'form-checkout__installments',
-       placeholder: 'Installments'
+       placeholder: 'Parcelas'
      },
-     cardExpirationMonth: {
-       id: 'form-checkout__cardExpirationMonth',
-       placeholder: 'MM'
-     },
-     cardExpirationYear: {
-       id: 'form-checkout__cardExpirationYear',
-       placeholder: 'YYYY'
+     cardExpirationDate: {
+       id: 'form-checkout__cardExpirationDate-container',
+       placeholder: 'Data de vencimento (MM/YYYY)',
      },----[mla, mlb, mlu, mlc, mpe, mco]----
      identificationType: {
        id: 'form-checkout__identificationType',
-       placeholder: 'Document type'
+       placeholder: 'Tipo de documento'
      },------------
      identificationNumber: {
        id: 'form-checkout__identificationNumber',
-       placeholder: 'Document value'
+       placeholder: 'Número do documento'
      },
      issuer: {
        id: 'form-checkout__issuer',
-       placeholder: 'Issuer'
+       placeholder: 'Banco emissor'
      }
    },
    callbacks: {
      onFormMounted: function (error) {
        if (error) return console.log('Callback para tratar o erro: montando o cardForm ', error)
-     },
-     onFormUnmounted: function (error) {
-       if (error) return console.log('Callback para tratar o erro: desmontando o cardForm ', error)
-     },
-     onIdentificationTypesReceived: function (error, identificationTypes) {
-       if (error) return console.log('Callback para tratar o erro: recebendo tipos de documento ', error)
-     },
-     onPaymentMethodsReceived: function (error, paymentMethods) {
-       if (error) return console.log('Callback para tratar o erro: recebendo payment methods ', error)
-     },
-     onIssuersReceived: function (error, issuers) {
-       if (error) return console.log('Callback para tratar o erro: recebendo emissores ', error)
-     },
-     onInstallmentsReceived: function (error, installments) {
-       if (error) return console.log('Callback para tratar o erro: recebendo parcelas ', error)
-     },
-     onCardTokenReceived: function (error, token) {
-       if (error) return console.log('Callback para tratar o erro: recebendo o token ', error)
      },
      onSubmit: function (event) {
        event.preventDefault();
@@ -238,16 +209,9 @@ const cardForm = mp.cardForm({
        return () => {
          progressBar.setAttribute('value', '0')
        }
-     },
-     onReady: function () {
-       console.log('Fields are ready')
-     },
-     onValidityChange: function ({ field, messages }) {
-       console.log(`${field}:\n${messages.join('\n')}`);
-     },
+     }
    }
  });
-}
 ```
 
 A opção de callbacks aceita diferentes funções que são ativadas em diversos momentos do fluxo.
@@ -304,8 +268,8 @@ Encontre o estado do pagamento no campo _status_.
    $payer = new MercadoPago\Payer();
    $payer->email = $_POST['email'];
    $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
-       "type" => $_POST['docType'],------------
-       "number" => $_POST['docNumber']
+       "type" => $_POST['identificationType'],------------
+       "number" => $_POST['identificationNumber']
    );
    $payment->payer = $payer;
  
@@ -328,33 +292,14 @@ Encontre o estado do pagamento no campo _status_.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
  
-var payment_data = {
- transaction_amount: Number(req.body.transactionAmount),
- token: req.body.token,
- description: req.body.description,
- installments: Number(req.body.installments),
- payment_method_id: req.body.paymentMethodId,
- issuer_id: req.body.issuer,
- payer: {
-   email: req.body.email,
-   identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
-     type: req.body.docType,------------
-     number: req.body.docNumber
-   }
- }
-};
- 
-mercadopago.payment.save(payment_data)
- .then(function(response) {
-   res.status(response.status).json({
-     status: response.body.status,
-     status_detail: response.body.status_detail,
-     id: response.body.id
-   });
- })
- .catch(function(error) {
-   res.status(response.status).send(error);
- });
+mercadopago.payment.save(req.body)
+  .then(function(response) {
+    const { status, status_detail, id } = response.body;
+    res.status(response.status).json({ status, status_detail, id });
+  })
+  .catch(function(error) {
+    console.error(error);
+  });
 ```
 ```java
 ===
@@ -371,9 +316,9 @@ payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmou
       .setPaymentMethodId(request.getParameter("paymentMethodId"));
  
 Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
-identification.setType(request.getParameter("docType"))
-             .setNumber(request.getParameter("docNumber"));------------ ----[mlm]----
-identification.setNumber(request.getParameter("docNumber"));------------
+identification.setType(request.getParameter("identificationType"))
+             .setNumber(request.getParameter("identificationNumber"));------------ ----[mlm]----
+identification.setNumber(request.getParameter("identificationNumber"));------------
  
 Payer payer = new Payer();
 payer.setEmail(request.getParameter("email"))
@@ -402,8 +347,8 @@ payment_data = {
  payer: {
    email: params[:email],
    identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
-     type: params[:docType],------------
-     number: params[:docNumber]
+     type: params[:identificationType],------------
+     number: params[:identificationNumber]
    }
  }
 }
@@ -438,8 +383,8 @@ var paymentRequest = new PaymentCreateRequest
        Email = Request["email"],
        Identification = new IdentificationRequest
        {----[mla, mlb, mlu, mlc, mpe, mco]----
-           Type = Request["docType"],------------
-           Number = Request["docNumber"],
+           Type = Request["identificationType"],------------
+           Number = Request["identificationNumber"],
        },
    },
 };

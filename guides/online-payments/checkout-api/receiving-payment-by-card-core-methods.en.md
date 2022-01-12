@@ -58,7 +58,7 @@ You can easily include anything you need, change the suggested `label` attribute
 The following example assumes that `transactionAmount` and `description` data were obtained in the previous step in which customers selected the product or service to be paid.
 
 ```html
-<form id="form-checkout">
+<form id="form-checkout" method="POST" action="/process_payment">
        <input type="text" id="form-checkout__cardNumber" placeholder="Card number" />
        <input type="text" id="form-checkout__cardExpirationMonth" placeholder="Expiration month (MM)" />
        <input type="text" id="form-checkout__cardExpirationYear" placeholder="Expiration year (YY or YYYY)" />
@@ -67,17 +67,17 @@ The following example assumes that `transactionAmount` and `description` data we
        <input type="text" id="form-checkout__securityCode" placeholder="Security code"/>
        <select name="issuer" id="form-checkout__issuer">
            <option value="" disabled selected>Issuer</option>
-       </select>
+       </select>----[mla, mlb, mlu, mlc, mpe, mco]----
        <select name="identificationType" id="form-checkout__identificationType">
            <option value="" disabled selected>Document Type</option>
-       </select>
+       </select>------------
        <input type="text" name="identificationNumber" id="form-checkout__identificationNumber" placeholder="Número de documento" />
        <select name="installments" id="form-checkout__installments">
            <option value="" disabled selected>Choose the amount of installments</option>
        </select>
-       <input id="MPHiddenInputToken" name="MPHiddenInputToken" type="hidden" />
-       <input id="MPHiddenInputPaymentMethod" name="MPHiddenInputPaymentMethod" type="hidden" />
-       <input id="transactionAmmount" name="transactionAmmount" type="hidden" value="100"/>
+       <input id="token" name="token" type="hidden" />
+       <input id="paymentMethodId" name="paymentMethodId" type="hidden" />
+       <input id="transactionAmount" name="transactionAmount" type="hidden" value="100"/>
        <input id="description" name="description" type="hidden" value="product description" />
        <button type="submit" id="form-checkout__submit">Pay</button>
    </form>
@@ -96,8 +96,8 @@ Add your [public key]([FAKER][CREDENTIALS][URL]) like this:
 ```javascript
 <script>
 const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-
-// Add Step #getIdentificationTypes
+----[mla, mlb, mlu, mlc, mpe, mco]----
+// Add Step #getIdentificationTypes------------
 // Add Step #getPaymentMethods
 // Add Step #getIssuers
 // Add Step #getInstallments
@@ -115,7 +115,7 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 
 Document type is one of the mandatory fields. Use the document list to fill out your data.
 
-Including `select` type element with id `form-checkout__docType` contained in the form, you can automatically fill out the available choices when you call this function:
+Including `select` type element with id `form-checkout__identificationType` contained in the form, you can automatically fill out the available choices when you call this function:
 
 ```javascript
 
@@ -147,9 +147,9 @@ function createSelectOptions(elem, options, labelsAndKeys = { label : "name", va
 (async function getIdentificationTypes () {
    try {
        const identificationTypes = await mp.getIdentificationTypes();
-       const docTypeElement = document.getElementById('form-checkout__identificationType');
+       const identificationTypeElement = document.getElementById('form-checkout__identificationType');
 
-       createSelectOptions(docTypeElement, identificationTypes)
+       createSelectOptions(identificationTypeElement, identificationTypes)
    }catch(e) {
        return console.error('Error getting identificationTypes: ', e);
    }
@@ -168,21 +168,33 @@ Avoid mistakes and offer the correct available installments by validating your c
 // Step #getPaymentMethods
 const cardNumberElement = document.getElementById('form-checkout__cardNumber');
 
+function clearHTMLSelectChildrenFrom(element) {
+    const currOptions = [...element.children];
+    currOptions.forEach(child => child.remove());
+}
+
 cardNumberElement.addEventListener('keyup', async () => {
    try {
-      const paymentMethodElement = document.getElementById('MPHiddenInputPaymentMethod');
+       const paymentMethodElement = document.getElementById('paymentMethodId');
+       const issuerElement = document.getElementById('form-checkout__issuer');
+       const installmentsElement = document.getElementById('form-checkout__installments');
        let cardNumber = cardNumberElement.value;
 
-       if (cardNumber.length < 6 && paymentMethodElement.value) return paymentMethodElement.value = "";
+       if (cardNumber.length < 6 && paymentMethodElement.value) {
+           clearHTMLSelectChildrenFrom(issuerElement);
+           clearHTMLSelectChildrenFrom(installmentsElement);
+           paymentMethodElement.value = "";
+           return
+       }
 
        if (cardNumber.length >= 6 && !paymentMethodElement.value) {
            let bin = cardNumber.substring(0,6);
            const paymentMethods = await mp.getPaymentMethods({'bin': bin});
 
-           const { id: paymentMethodID, additional_info_needed, issuer } = paymentMethods.results[0];
+           const { id: paymentMethodId, additional_info_needed, issuer } = paymentMethods.results[0];
 
            // Assign payment method ID to a hidden input.
-           paymentMethodElement.value = paymentMethodID;
+           paymentMethodElement.value = paymentMethodId;
 
            // If 'issuer_id' is needed, we fetch all issuers (getIssuers()) from bin.
            // Otherwise we just create an option with the unique issuer and call getInstallments().
@@ -211,10 +223,10 @@ Add the following code to obtain the `issuer_id`:
 const getIssuers = async () => {
    try {
        const cardNumber = document.getElementById('form-checkout__cardNumber').value;
-       const paymentMethodId = document.getElementById('MPHiddenInputPaymentMethod').value;
+       const paymentMethodId = document.getElementById('paymentMethodId').value;
        const issuerElement = document.getElementById('form-checkout__issuer');
 
-       const issuers = await mp.getIssuers({paymentMethodId: paymentMethodID, bin: cardNumber.slice(0,6)});
+       const issuers = await mp.getIssuers({paymentMethodId, bin: cardNumber.slice(0,6)});
 
        createSelectOptions(issuerElement, issuers);
 
@@ -237,7 +249,7 @@ const getInstallments = async () => {
        const cardNumber = document.getElementById('form-checkout__cardNumber').value; 
 
        const installments = await mp.getInstallments({
-           amount: document.getElementById('transactionAmmount').value,
+           amount: document.getElementById('transactionAmount').value,
            bin: cardNumber.slice(0,6),
            paymentTypeId: 'credit_card'
        });
@@ -260,15 +272,15 @@ formElement.addEventListener('submit', e => createCardToken(e));
 
 const createCardToken = async (event) => {
    try {
-       const tokenElement = document.getElementById('MPHiddenInputToken');
+       const tokenElement = document.getElementById('token');
 
        if (!tokenElement.value) {
            event.preventDefault();
 
            const token = await mp.createCardToken({
                cardNumber: document.getElementById('form-checkout__cardNumber').value,
-               cardholderName: document.getElementById('form-checkout__cardholderName').value,
-               identificationType: document.getElementById('form-checkout__identificationType').value,
+               cardholderName: document.getElementById('form-checkout__cardholderName').value,----[mla, mlb, mlu, mlc, mpe, mco]----
+               identificationType: document.getElementById('form-checkout__identificationType').value,------------
                identificationNumber: document.getElementById('form-checkout__identificationNumber').value,
                securityCode: document.getElementById('form-checkout__securityCode').value,
                cardExpirationMonth: document.getElementById('form-checkout__cardExpirationMonth').value,
@@ -287,7 +299,7 @@ const createCardToken = async (event) => {
 
 The `createCardToken` method will return a token with the secure card display.
 
-We will take and save the response token ID in a hidden attribute called `MPHiddenInputToken` and then send the form to your servers.
+We will take and save the response token ID in a hidden attribute called `token` and then send the form to your servers.
 
 
 > WARNING
@@ -334,8 +346,8 @@ You can find payment status in _status_ value.
     $payer = new MercadoPago\Payer();
     $payer->email = $_POST['email'];
     $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
-        "type" => $_POST['docType'],------------
-        "number" => $_POST['docNumber']
+        "type" => $_POST['identificationType'],------------
+        "number" => $_POST['identificationNumber']
     );
     $payment->payer = $payer;
 
@@ -367,8 +379,8 @@ var payment_data = {
   payer: {
     email: req.body.email,
     identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
-      type: req.body.docType,------------
-      number: req.body.docNumber
+      type: req.body.identificationType,------------
+      number: req.body.identificationNumber
     }
   }
 };
@@ -382,7 +394,7 @@ mercadopago.payment.save(payment_data)
     });
   })
   .catch(function(error) {
-    res.status(response.status).send(error);
+    console.error(error)
   });
 ```
 ```java
@@ -400,9 +412,9 @@ payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmou
        .setPaymentMethodId(request.getParameter("paymentMethodId"));
 
 Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
-identification.setType(request.getParameter("docType"))
-              .setNumber(request.getParameter("docNumber"));------------ ----[mlm]----
-identification.setNumber(request.getParameter("docNumber"));------------
+identification.setType(request.getParameter("identificationType"))
+              .setNumber(request.getParameter("identificationNumber"));------------ ----[mlm]----
+identification.setNumber(request.getParameter("identificationNumber"));------------
 
 Payer payer = new Payer();
 payer.setEmail(request.getParameter("email"))
@@ -431,8 +443,8 @@ payment_data = {
   payer: {
     email: params[:email],
     identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
-      type: params[:docType],------------
-      number: params[:docNumber]
+      type: params[:identificationType],------------
+      number: params[:identificationNumber]
     }
   }
 }
@@ -467,8 +479,8 @@ var paymentRequest = new PaymentCreateRequest
         Email = Request["email"],
         Identification = new IdentificationRequest
         {----[mla, mlb, mlu, mlc, mpe, mco]----
-            Type = Request["docType"],------------
-            Number = Request["docNumber"],
+            Type = Request["identificationType"],------------
+            Number = Request["identificationNumber"],
         },
     },
 };
