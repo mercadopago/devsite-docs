@@ -32,7 +32,6 @@ Observe que o valor mínimo permitido para criar uma assinatura é de $ 15 e o m
 
 ------------
 
-
 ## Primeiros passos
 
 ### Acesse uma conta
