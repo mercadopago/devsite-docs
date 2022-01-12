@@ -103,7 +103,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 403--Forbidden--Integrator-isn't-registered- 
+                      - 403--Forbidden--Integrator-is-not-registered- 
         '500':
           description: Error
           content:
@@ -221,7 +221,7 @@ paths:
                     errorKey:
                       type: string
                       enum:
-                        - 403--Forbidden--Integrator-isn't-registered-
+                        - 403--Forbidden--Integrator-is-not-registered-
         '409':
           description: Error
           content:
@@ -303,7 +303,7 @@ paths:
                     errorKey:
                       type: string
                       enum:
-                      - 403--Forbidden--Integrator-isn't-registered-
+                      - 403--Forbidden--Integrator-is-not-registered-
         '409':
           description: Error
           content:
@@ -330,7 +330,7 @@ paths:
     get:
       tags:
         - $ref: '#/tags/mp-point'
-      summary: Find information payment intent
+      summary: Find information about payment intent
       description: This endpoint allows to get information of payment intent
       parameters:
         - name: x-test-scope
@@ -408,7 +408,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 403--Forbidden--Integrator-isn't-registered-
+                      - 403--Forbidden--Integrator-is-not-registered-
         '404':
           description: Error
           content:
@@ -419,7 +419,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 404--Not-found--Payment-intent-doesn't-exists-
+                      - 404--Not-found--Payment-intent-does-not-exists-
         '500':
           description: Error
           content:
@@ -512,7 +512,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 403--Forbidden-Integrator-isn't-registered-
+                      - 403--Forbidden-Integrator-is-not-registered-
         '500':
           description: Error
           content:
@@ -582,7 +582,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 403--Forbidden--Integrator-isn't-registered
+                      - 403--Forbidden--Integrator-is-not-registered
         '404':
           description: Error
           content:
@@ -593,7 +593,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 404--Not Found--Payment-Intent-doesn't-exists-
+                      - 404--Not Found--Payment-Intent-does-not-exists-
         '500':
           description: Error
           content:
