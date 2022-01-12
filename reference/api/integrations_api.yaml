@@ -147,18 +147,26 @@ paths:
                   format: int64
                   example: 1500
                   minimum: 1
+                  description: A positive integer representing how much to charge. The value must have two decimal places in the integer part (e.g., 175 to charge $1.75). The value must be between [100, 250000] (e.g., a value to charge between $1,00 to $250.000,00 AR
                 additional_info:
                   type: object
                   properties:
                     external_reference:
                       type: string
                       example: "some-reference-from-your-application"
+                      description: An alphanumeric value can be a identificator in your application. It will be returned in the Webhook notification
                     print_on_terminal:
                       type: boolean
                       example: true
+                      description: A boolean value that determines if you want to print the ticket on the device
                     ticket_number:
                       type: string
                       example: S0392JED
+                      description: An alphanumeric value to identify the invoice or ticket number. It will be printed on the device ticket
+                  required:
+                  - ticket_number
+              required: 
+               - amount
       responses:
         '200':
           description: Success - Payment intent succesfully created
@@ -221,7 +229,7 @@ paths:
                     errorKey:
                       type: string
                       enum:
-                        - 403--Forbidden--Integrator-is-not-registered-
+                        - 403--Forbidden--Integrator-isn't-registered-
         '409':
           description: Error
           content:

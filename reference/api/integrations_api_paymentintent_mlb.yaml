@@ -37,31 +37,48 @@ paths:
                   format: int64
                   example: 1500
                   minimum: 1
+                  description: A positive integer representing how much to charge. The value must have two decimal places in the integer part (e.g., 175 to charge $1.75). The value must be between [100, 5000000] (e.g., a value to charge between $1,00 to $50.000,00 R).
                 description:
                   type: string
                   example: "your payment intent description"
+                  description: 
                 payment:
                   type: object
                   properties:
                     installments:
                       type: integer
                       example: 1
-                      description: optional field
+                      description: An integer value that must be between 1 and 72, this value can be setted only if type field is equal to credit_card
                     type:
                       type: string
                       example: credit_card
+                      description: An alphanumeric value that must be one of this [credit_card, debit_card or voucher_card]
                     installments_cost:
                       type: string
                       example: "seller"
+                      description: A string value that must be one of this [seller or buyer], this value can be setted only if type field is equal to credit_card
+                    voucher_type:
+                      type: string
+                      description: A string value that must be one of this [sodexo or alelo], this value can be setted only if type field is equal to voucher_card
+                      example: ""
+                  example: 
+                   installments: 1
+                   type: "credit_card"
+                   installments_cost: "buyer"
                 additional_info:
                   type: object
                   properties:
                     external_reference:
                       type: string
                       example: "4561ads-das4das4-das4754-das456"
+                      description: An alphanumeric value can be an identificator in your application. It will be returned in the Webhook notification
                     print_on_terminal:
                       type: boolean
                       example: true
+                      description: A boolean value that determines if you want to print the ticket on the device
+              required: 
+               - amount
+
       responses:
         '200':
           description: Success - Payment intent succesfully created
