@@ -1,4 +1,4 @@
-### 1. What is the Integrator ID?
+### What is the Integrator ID?
 
 It is the identification number that a developer or partner of Mercado Pago receives when get their certification.
 

@@ -18,7 +18,7 @@ Uma outra característica da integração é a possibilidade de ativação do mo
  
 > Todas as nossas soluções de pagamento contam com uma licença de código aberto. Quer participar da criação? [Sugira melhorias e edições no Github](https://github.com/mercadopago/cart-prestashop-7).
  
-> LEFT_BUTTON_REQUIRED_PT
+> NEXT_STEP_CARD_PT
 >
 > Pré-requisitos da integração
 >

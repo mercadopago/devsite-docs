@@ -30,7 +30,6 @@ Para activar las credenciales, sigue estos pasos:
 
 Con las credenciales completadas, configura la información del negocio.
 
-
 ## Información del negocio
 
 Se requiere información del negocio para identificar tu tienda. Completa los campos como se muestra a continuación.
@@ -79,10 +78,22 @@ Además de la configuración anterior, encontrarás diferentes opciones relacion
 > Antes de configurar Pix como método de pago, te recomendamos descargar la última versión del plugin Mercado Pago para WooCommerce y registrar tu clave Pix en Mercado Pago. 
 ------------
 
+## Configurar e-mail de notificación
+
+Habiendo seleccionado el **Checkout API** para recibir pagos de tu tienda, es importante configurar el envío de los e-mails que notificarán al usuario de sus transacciones. Vea a continuación cómo personalizar el envío del **e-mail transaccional** en el panel de administración de WooCommerce.
+
+1. Accede al **Panel** de WordPress.
+2. En la columna del lado izquierdo, haz clic en **WooCommerce > Configuración**.
+3. En **E-mails**, habilitar la configuración del envío seleccionando la opción ˜activar este e-mail de notificación".
+4. Personalice la plantilla de correo electrónico con: destinatarios, asunto del correo electrónico y encabezado.
+5. Ingrese el **contenido** a enviar y seleccione el tipo de correo electrónico.
+6. Indique también el nombre y la dirección de correo electrónico del remitente, así como el logotipo y los colores de su tienda.
+7. Una vez realizadas las configuraciones necesarias, instale y configure un **servidor SMTP** de su elección para habilitar el envío de correos electrónicos.
+8. Envíe un **correo electrónico de prueba** para asegurarse de que la plataforma envíe los correos electrónicos correctamente.
 
 ¡Listo! Ahora el plugin Mercado Pago con WooCommerce está integrado en tu tienda y se puede probar realizando compras que solo serán con el propósito de validar el funcionamiento del plugin, pero que no moverán ningún valor.
 
-> LEFT_BUTTON_REQUIRED_ES
+> NEXT_STEP_CARD_ES
 >
 > Prueba de compra
 >

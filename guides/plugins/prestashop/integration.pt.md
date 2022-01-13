@@ -12,7 +12,7 @@ Para realizar a integração com o Mercado Pago, siga os procedimentos abaixo.
 * **Categoria da loja:** insira a categoria dos produtos de sua loja.
 * **Integrator ID:** Insira seu *integrator_id* como membro do **&lt;dev&gt;program**, do Mercado Pago. Caso ainda não seja um membro, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) para mais informações.
  
-6. Por fim, configure as experiências de pagamento da sua loja de acordo com o tipo de checkout que você escolheu para configurar, podendo ser o [Checkout Pro](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction), o [Checkout Transparente](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction) e o **Ticket Checkout**.
+6. Configure as experiências de pagamento da sua loja de acordo com o tipo de checkout que você escolheu para configurar, podendo ser o [Checkout Pro](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction), o [Checkout Transparente](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction) e o **Ticket Checkout**.
  
 * **Ativar o checkout:** selecione **Sim** para ativar a experiência do Mercado Pago no checkout da sua loja.
 * **Meios de pagamento:** escolha os meios de pagamento que deseja oferecer.
@@ -31,10 +31,17 @@ Para realizar a integração com o Mercado Pago, siga os procedimentos abaixo.
 > Importante
 >
 > Lembre-se que a disponibilidade das configurações descritas abaixo está condicionada ao tipo de checkout escolhido.
+
+7. Tendo selecionado o **Checkout Transparente** para receber os pagamento de sua loja, é importante configurar o envio de e-mails que notificarão o usuário de suas transações. Veja abaixo como personalizar o envio do **e-mail transacional** no painel de gerenciamento da PrestaShop.
+
+* No **Painel Administrativo** da sua loja na PrestaShop, clique em **International > Translation** e selecione o template que deseja alterar.
+* Feitas as devidas alterações, em **Shop Parameters > Order Settings > Statuses** você pode definir um template de email para cada status de pedido.
+* Para configurar o **servidor de SMTP** e viabilizar o envio dos e-mails, acesse **Advanced Parameters > E-mails** e selecione a opção "Definir meus próprios parâmetros de SMTP". Preencha com as informações do servidor responsável pelos envios. 
+* Envie um e-mail de teste para garantir que a plataforma está enviando os e-mails corretamente. 
  
 Pronto! Agora o plugin do Mercado Pago com a PrestaShop está integrado à sua loja.
  
-> LEFT_BUTTON_REQUIRED_PT
+> NEXT_STEP_CARD_PT
 >
 > Teste de pagamentos
 >

@@ -4,7 +4,6 @@
 
 Para instalar o plugin de forma manual, siga os passos abaixo: 
 
-
 1. [Clique aqui](https://github.com/mercadopago/cart-woocommerce/archive/master.zip) e faça o download do arquivo .zip do nosso repositório.
 2. Renomeie o arquivo .zip baixado para **woocommerce-mercadopago** (não descompacte o arquivo .zip antes de fazer o upload no WordPress. Para que o plugin seja instalado corretamente, é preciso que o formato original do arquivo seja enviado).
 3. Acesse o **Painel Administrativo** do WordPress e clique em **Plugins** **> Adicionar novo**.
@@ -17,11 +16,7 @@ Para instalar o plugin de forma manual, siga os passos abaixo:
 
 Ao concluir esses passos, o plugin do Mercado Pago para WooCommerce estará instalado e ativado em sua loja e você poderá configurar sua integração.
 
-### 2. O que é o integrator ID?
-
-É o número de identificação que um desenvolvedor ou parceiro do Mercado Pago recebe ao fazer sua certificação. Esse ID não é obrigatório para que a integração funcione, porém é através dele que reconhecemos quais integrações foram feitas por qual parceiro.
-
-Quer ser um parceiro, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) para mais informações
+[TXTSNIPPET][/guides/snippets/test-integration/faq-integration-ID]
 
 ### 3. Como configuro o parcelado sem juros e antecipação de meus recebíveis?
 
@@ -32,3 +27,11 @@ Você pode configurar as opções de parcelamento e a forma como serão creditad
 O WooCommerce permite que seus usuários configurem por quanto tempo um pedido permanecerá como pendente. Essa funcionalidade pode ser acessada através do **menu de configurações** do WooCommerce, em  **Produtos > Inventário**.
 
 Para mais informações, acesse o tópico **inventário**, no [manual da plataforma](https://docs.woocommerce.com/document/perguntas-frequentes-sobre-reservas/).
+
+> PREV_STEP_CARD_PT
+>
+> Processamento de vendas
+>
+> Conheça os principais status durante o processamento das vendas.
+>
+> [Processamento de vendas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/sales-processing)

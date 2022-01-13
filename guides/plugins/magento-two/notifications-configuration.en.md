@@ -19,6 +19,17 @@ For each payment status, you can select an order status. Then, when your store r
 
 Ready! Notification status has been configured successfully.
 
+## Notification email
+
+Having selected the **Checkout Transparente** to receive payments from your store, it is important to configure the sending of emails that will notify the user of their transactions. See below how to customize sending **transactional email** in Magento 2 management panel.
+
+1. Go to **Marketing > Communications > Email Templates > Add New Template** menu and create the new email template.
+2. In **Stores > Settings > Configuration > Sales > Sales Emails**, add the template created in the event settings on the platform (example: "payment approved").
+3. Once the necessary settings have been made, install and configure a **SMTP server** of your choice to enable the sending of e-mails.
+4. Send a **test email** to ensure the platform is sending emails correctly.
+
+Ready! Sending emails has been successfully configured.
+
 > PREV_STEP_CARD_EN
 >
 > Checkout Pro configuration

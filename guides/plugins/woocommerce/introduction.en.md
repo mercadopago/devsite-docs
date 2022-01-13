@@ -14,7 +14,7 @@ In this documentation, we will detail all the necessary steps to integrate Merca
 
 To complete the integration, follow the steps below, but remember to check the prerequisites before starting.
 
-> LEFT_BUTTON_REQUIRED_EN
+> NEXT_STEP_CARD_EN
 >
 > Prerequisites
 >

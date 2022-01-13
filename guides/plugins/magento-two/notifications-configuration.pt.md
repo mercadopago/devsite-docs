@@ -18,6 +18,17 @@ Para definir o status do pedido para notificações de pagamento, siga estas eta
 
 Pronto! O status de notificação foi configurado com sucesso.
 
+## E-mail de notificação
+
+Tendo selecionado o **Checkout Transparente** para receber os pagamento de sua loja, é importante configurar o envio de e-mails que notificarão o usuário de suas transações. Veja abaixo como personalizar o envio do **e-mail transacional** no painel de gerenciamento da Magento 2.
+
+1. Acesse o menu **Marketing > Communications > Emails Templates > Add New Template** e crie o novo template de e-mail.
+2. Em **Stores > Settings > Configuration > Sales > Sales Emails**, adicione o template criado nas configurações dos eventos na plataforma (exemplo: "pagamento aprovado").
+3. Feitas as devidas configurações, instale e configure um **servidor de SMTP** de sua preferência para viabilizar o envio dos e-mails. 
+4. Envie um **e-mail de teste** para garantir que a plataforma está enviando os e-mails corretamente.
+
+Pronto! O envio dos e-mails foi configurado com sucesso.
+
 > PREV_STEP_CARD_PT
 >
 > Configuração do Checkout Pro

@@ -1,8 +1,6 @@
 # Preguntas frecuentes
 
-[TXTSNIPPET][/guides/snippets/test-integration/faq-integration-ID]
-
-### 2. ¿Cómo instalo el plugin manualmente?
+### ¿Cómo instalo el plugin manualmente?
  
 Para instalar el plugin manualmente, siga los pasos:
  
@@ -15,14 +13,24 @@ Para instalar el plugin manualmente, siga los pasos:
 
 ![Activar manualmente el plugin](/images/prestashop/instalacao_manual_es.gif)
 
-### 3. ¿Cómo validar las notificaciones?
+[TXTSNIPPET][/guides/snippets/test-integration/faq-integration-ID]
+
+### ¿Cómo validar las notificaciones?
  
 El plugin PrestaShop solo recibe notificaciones del tipo IPN. Para obtener más información,[haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/Notifications/ipn).
  
-### 4. ¿Admitimos el modo de Gateway?
+### ¿Admitimos el modo de Gateway?
  
 Todavía no admitimos el **modo Gateway** en PrestaShop.
  
-### 5. ¿El plugin realiza conversión de moneda?
+### ¿El plugin realiza conversión de moneda?
  
 No, el plugin de PrestaShop no convierte moneda.
+
+> PREV_STEP_CARD_ES
+>
+> Procesamiento de pagos
+>
+> Aprende a permitir que tu tienda procese las ventas reales.
+>
+> [Procesamiento de pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/receive-payments)
