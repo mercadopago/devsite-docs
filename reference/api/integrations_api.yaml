@@ -146,6 +146,7 @@ paths:
                   type: integer
                   format: int64
                   example: 1500
+                  required: true
                   minimum: 1
                   description: A positive integer representing how much to charge. The value must have two decimal places in the integer part (e.g., 175 to charge $1.75). The value must be between [100, 250000] (e.g., a value to charge between $1,00 to $250.000,00 ARS)
                 additional_info:
@@ -162,12 +163,9 @@ paths:
                       description: A boolean value that determines if you want to print the ticket on the device
                     ticket_number:
                       type: string
+                      required: true
                       example: S0392JED
                       description: An alphanumeric value to identify the invoice or ticket number. It will be printed on the device ticket
-                  required:
-                  - ticket_number
-              required: 
-               - amount
       responses:
         '200':
           description: Success - Payment intent succesfully created
@@ -660,6 +658,7 @@ paths:
                properties:
                   operating_mode:
                     type: string
+                    required: true
                     nullable: false
                     example: "PDV"
                     enum:
