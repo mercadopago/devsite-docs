@@ -13,6 +13,12 @@ Para integrarte con Mercado Pago, sigue los procedimientos a continuación.
 * **Integrator ID** Ingresa tu *integrator_id* como miembro del **Dev Program**, de Mercado Pago. Si aún no eres miembro, [haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/developer-program) para obtener más información.
  
 6. Por último, configura las experiencias de pago de tu tienda de acuerdo con el tipo de pago que has elegido configurar, que podría ser [Checkout Pro](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction), el [Checkout API](https://www.mercadopago.[FAKER][URL][DOMINIO]/developers/es/guides/online-payments/checkout-api/introduction) y **Ticket Checkout**.
+
+> NOTE
+>
+> Importante
+>
+> Recuerda que la disponibilidad de las configuraciones descritas abajo depende del tipo de pago elegido.
  
 * **Activar checkout:** selecciona **sí** para habilitar la experiencia de Mercado Pago en el pago de tu tienda.
 * **Medios de pago:** elige los métodos de pago que deseas ofrecer.
@@ -25,12 +31,6 @@ Para integrarte con Mercado Pago, sigue los procedimientos a continuación.
 * **Descuento por comprar con Mercado Pago:** establece un porcentaje de descuento para los clientes que pagan con Mercado Pago.
 * **Métodos de pago en persona:** selecciona qué métodos de pago se ofrecerán para los pagos realizados a través de Ticket Checkout.
 * **Vencimiento del pago:** después de seleccionar el medio de pago en persona, indica en cuántos días caducarán después de su emisión.
-
-> NOTE
->
-> Importante
->
-> Recuerda que la disponibilidad de las configuraciones descritas abajo depende del tipo de pago elegido.
 
 7. Habiendo seleccionado el **Checkout API** para recibir pagos de tu tienda, es importante configurar el envío de los e-mails que notificarán al usuario de sus transacciones. Vea a continuación cómo personalizar el envío del **e-mail transaccional** en el panel de administración de PrestaShop.
 

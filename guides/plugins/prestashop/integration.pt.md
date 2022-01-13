@@ -13,6 +13,12 @@ Para realizar a integração com o Mercado Pago, siga os procedimentos abaixo.
 * **Integrator ID:** Insira seu *integrator_id* como membro do **&lt;dev&gt;program**, do Mercado Pago. Caso ainda não seja um membro, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) para mais informações.
  
 6. Configure as experiências de pagamento da sua loja de acordo com o tipo de checkout que você escolheu para configurar, podendo ser o [Checkout Pro](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction), o [Checkout Transparente](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction) e o **Ticket Checkout**.
+
+> NOTE
+>
+> Importante
+>
+> Lembre-se que a disponibilidade das configurações descritas abaixo está condicionada ao tipo de checkout escolhido.
  
 * **Ativar o checkout:** selecione **Sim** para ativar a experiência do Mercado Pago no checkout da sua loja.
 * **Meios de pagamento:** escolha os meios de pagamento que deseja oferecer.
@@ -25,12 +31,6 @@ Para realizar a integração com o Mercado Pago, siga os procedimentos abaixo.
 * **Desconto por comprar com Mercado Pago:** defina um valor percentual de desconto para os clientes que pagarem com Mercado Pago.
 * **Meios de pagamento presenciais:** selecione quais meios de pagamento serão oferecidos nos pagamentos realizados via Ticket Checkout.
 * **Vencimento pagamento:** após a seleção dos meios de pagamento presenciais, indique em quantos dias estes vencerão após a sua emissão.
-
-> NOTE
->
-> Importante
->
-> Lembre-se que a disponibilidade das configurações descritas abaixo está condicionada ao tipo de checkout escolhido.
 
 7. Tendo selecionado o **Checkout Transparente** para receber os pagamento de sua loja, é importante configurar o envio de e-mails que notificarão o usuário de suas transações. Veja abaixo como personalizar o envio do **e-mail transacional** no painel de gerenciamento da PrestaShop.
 
