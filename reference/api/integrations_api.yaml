@@ -662,7 +662,9 @@ paths:
                     type: string
                     nullable: false
                     example: "PDV"
-                    enum: ["PDV", "STANDALONE"]
+                    enum:
+                      - PDV --
+                      - STANDALONE --
       responses:
         '200':
           description: Success - Operating mode successfully changed
@@ -675,7 +677,9 @@ paths:
                     type: string
                     nullable: false
                     example: "PDV"
-                    enum: ["PDV", "STANDALONE"]
+                    enum:
+                      - PDV --
+                      - STANDALONE --
         '400':
           description: Error
           content:
