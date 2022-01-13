@@ -962,7 +962,7 @@ Para trabalhar com métricas, utilize _headers_ na sua preferência de pagamento
 >
 > Nota
 >
-> Não deixe de adicionar o _header_ `integrator_id` em suas integrações para receber benefícios adicionais do programa. Você consegue encontrar seu `integrator_id` no seu [Dashboard de desenvolvedor](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel). 
+> Não deixe de adicionar o _header_ `integrator_id` em suas integrações para receber benefícios adicionais do programa. Você consegue encontrar seu `integrator_id` no seu [Dashboard de desenvolvedor](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/dashboard). 
 
 [[[
 ```php

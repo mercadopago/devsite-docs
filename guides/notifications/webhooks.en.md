@@ -2,7 +2,7 @@
 
 Webhook (also known as web callback) is a simple method that makes it easy for an app or system to provide real-time information whenever an event happens, that is, it is a way to passively receive data between two systems through of an `HTTP POST`.
 
-Webhooks notifications can be configured for one or more applications created in your [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/devpanel).
+Webhooks notifications can be configured for one or more applications created in your [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard).
 
 Once configured, the Webhook will be sent whenever one or more registered events occur, avoiding a search job every minute in search of an answer and, consequently, a system overload and data loss whenever there is some situation. After receiving a notification on your platform, Mercado Pago will wait for a response to validate that you received it correctly
 
