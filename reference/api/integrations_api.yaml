@@ -663,8 +663,8 @@ paths:
                     nullable: false
                     example: "PDV"
                     enum:
-                      - PDV --
-                      - STANDALONE --
+                      - PDV -- point of sale, integrated mode with the API.
+                      - STANDALONE -- default device configuration, mode not integrated with api.
       responses:
         '200':
           description: Success - Operating mode successfully changed
@@ -678,8 +678,8 @@ paths:
                     nullable: false
                     example: "PDV"
                     enum:
-                      - PDV --
-                      - STANDALONE --
+                      - PDV -- point of sale, integrated mode with the API.
+                      - STANDALONE -- default device configuration, mode not integrated with api.
         '400':
           description: Error
           content:
