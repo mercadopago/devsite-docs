@@ -36,6 +36,7 @@ paths:
                   type: integer
                   format: int64
                   example: 1500
+                  required: true
                   minimum: 1
                   description: A positive integer representing how much to charge. The value must have two decimal places in the integer part (e.g., 175 to charge $1.75). The value must be between [100, 5000000] (e.g., a value to charge between $1,00 to $50.000,00 BRL).
                 description:
@@ -77,9 +78,6 @@ paths:
                       type: boolean
                       example: true
                       description: A boolean value that determines if you want to print the ticket on the device
-              required: 
-               - amount
-
       responses:
         '200':
           description: Success - Payment intent succesfully created
