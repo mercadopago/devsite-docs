@@ -9,6 +9,7 @@ Por ejemplo, si la tarjeta no tiene saldo suficiente para la compra, puedes reco
 > Importante
 >
 > Para conocer información sobre los posibles errores, consulta la [Referencia de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference).
+> <br/>
 > Puede configurar e-mails para enviar a los clientes con mensajes de estado del pedido, como pago aprobado. No obstante, la configuración de este envío deberá realizarse en sus respectivas plataformas. Consulte la documentación de [WooComerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/woocommerce/integration), [PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/woocommerce/integration) y [Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/magento-two/notifications-configuration) para obtener más detalles.
 
 ## Resultados de creación de un cobro
