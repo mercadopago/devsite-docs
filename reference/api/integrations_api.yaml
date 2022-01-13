@@ -26,7 +26,7 @@ paths:
             example: 1235456678
         - name: x-test-scope
           in: header
-          description: This is a temporary header, it should be used just for development
+          description: This is a temporary header, it should be used just for development with the value "sandbox"
           schema:
             type: string
             example: sandbox
@@ -49,7 +49,7 @@ paths:
                       properties:
                         id:
                           type: string
-                          example: "INGENICO_MOVE2500__ING-33976987"
+                          example: "INGENICO_MOVE2500__ING-23976989"
                         operating_mode:
                           type: string
                           example: "STANDALONE"
@@ -103,7 +103,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 403--Forbidden--Integrator-is-not-registered- 
+                      - 403--Forbidden--Integrator-isn't-registered- 
         '500':
           description: Error
           content:
@@ -122,15 +122,15 @@ paths:
       summary: Create a payment intent
       description: This endpoint allows to create a payment intent for a device
       parameters:
-        - name: Payment-Intent
+        - name: x-test-scope
           in: header
-          description: This is a temporary header, it should be used just for development
+          description: This is a temporary header, it should be used just for development with the value "sandbox"
           schema:
             type: string
             example: sandbox
         - name: deviceId
           in: path
-          description: DeviceId
+          description: identifier of the device that will have a payment intent queued
           required: true
           schema:
             type: string
@@ -147,9 +147,10 @@ paths:
                   format: int64
                   example: 1500
                   minimum: 1
-                  description: A positive integer representing how much to charge. The value must have two decimal places in the integer part (e.g., 175 to charge $1.75). The value must be between [100, 250000] (e.g., a value to charge between $1,00 to $250.000,00 AR
+                  description: A positive integer representing how much to charge. The value must have two decimal places in the integer part (e.g., 175 to charge $1.75). The value must be between [100, 250000] (e.g., a value to charge between $1,00 to $250.000,00 ARS)
                 additional_info:
                   type: object
+                  description: payment intent additional info
                   properties:
                     external_reference:
                       type: string
@@ -178,25 +179,31 @@ paths:
                   id:
                     type: string
                     example: "7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1"
+                    description: payment intent identifier
                   device_id:
                     type: string
-                    example: "INGENICO_MOVE2500__ING-33976987"
+                    example: "INGENICO_MOVE2500__ING-23976989"
+                    description: identifier of the device that have a payment intent queued
                   amount:
                     type: integer
                     format: int64
                     example: 1500
+                    description: payment intent amount
                   additional_info:
                     type: object
                     properties:
                       external_reference:
                         type: string
                         example: "some-reference-from-your-application"
+                        description: An alphanumeric value can be a identificator in your application. It will be returned in the Webhook notification
                       print_on_terminal:
                         type: boolean
                         example: true
+                        description: A boolean value that determines if you want to print the ticket on the device
                       ticket_number:
                         type: string
                         example: S0392JED
+                        description: An alphanumeric value to identify the invoice or ticket number. It will be printed on the device ticket
         '401':
             description: Error
             content:
@@ -261,13 +268,13 @@ paths:
       parameters:
         - name: x-test-scope
           in: header
-          description: This is a temporary header, it should be used just for development
+          description: This is a temporary header, it should be used just for development with the value "sandbox"
           schema:
             type: string
             example: sandbox
         - name: deviceId
           in: path
-          description: DeviceId
+          description: identifier of the device that will have a payment intent queued
           required: true
           schema:
             type: string
@@ -311,7 +318,7 @@ paths:
                     errorKey:
                       type: string
                       enum:
-                      - 403--Forbidden--Integrator-is-not-registered-
+                      - 403--Forbidden--Integrator-isn't-registered-
         '409':
           description: Error
           content:
@@ -338,12 +345,12 @@ paths:
     get:
       tags:
         - $ref: '#/tags/mp-point'
-      summary: Find information about payment intent
-      description: This endpoint allows to get information of payment intent
+      summary: Find information payment intent
+      description: This endpoint allows to get information of payment intent.This endpoint will provide the payment intent’s information, its final status and the payment-id, which can be used to get the final status of the transaction in the Payment-API. The Webhook notifications are the main communication point of the payment intent information, then this endpoint should be used for testing and eventualities, and not for polling, because it has restrictions like consume by time, allows to get information one request per second
       parameters:
         - name: x-test-scope
           in: header
-          description: This is a temporary header, it should be used just for development
+          description: This is a temporary header, it should be used just for development with the value "sandbox"
           required: false
           schema:
             type: string
@@ -375,26 +382,34 @@ paths:
                     type: integer
                     format: int64
                     description:
-                    example: 1400
+                    example: 1500
                   device_id:
                     type: string
                     description:
-                    example: "INGENICO_MOVE2500__ING-33976987"
+                    example: "INGENICO_MOVE2500__ING-23976989"
+                  payment:
+                    type: object
+                    properties:
+                      id:
+                       type: int
+                       example: 16499678033
+                  description:
+                    type: string
+                    example: "your payment intent description"
                   additional_info:
                     type: object
                     properties:
                       external_reference:
                         type: string
                         description:
-                        example: "someone-reference-from-your-application"
+                        example: "some-reference-from-your-application"
                       print_on_terminal:
                         type: boolean
                         description:
                         example: true
                       ticket_number:
                         type: string
-                        description:
-                        example: "S0392JED2"
+                        example: S0392JED
         '401':
           description: Error
           content:
@@ -416,7 +431,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 403--Forbidden--Integrator-is-not-registered-
+                      - 403--Forbidden--Integrator-isn't-registered-
         '404':
           description: Error
           content:
@@ -427,7 +442,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 404--Not-found--Payment-intent-does-not-exists-
+                      - 404--Not-found--Payment-intent-doesn't-exists-
         '500':
           description: Error
           content:
@@ -448,7 +463,7 @@ paths:
       parameters:
         - name: x-test-scope
           in: header
-          description: This is a temporary header, it should be used just for development
+          description: This is a temporary header, it should be used just for development with the value "sandbox"
           schema:
             type: string
             example: sandbox
@@ -456,18 +471,18 @@ paths:
           in: query
           description: Initial date (YYYY-MM-DD)
           required: true
+          example: "1948-01-16"
           schema:
             type: string
-            format: date
-            example: 2020-01-01
+            example: 1948-01-16
         - name: endDate
           in: query
           description: End date (YYYY-MM-DD)
           required: true
+          example: "2022-01-25"
           schema:
             type: string
-            format: date
-            example: 2020-01-30
+            example: 2022-01-25
       responses:
         '200':
           description: Success - List of payment intents with their final states between a date range (startDate, endDate)
@@ -483,11 +498,20 @@ paths:
                       properties:
                         payment_intent_id:
                           type: string
+                          example: "51374ba8-50e4-4633-a000-3e42ccd245f9"
                         status:
                           type: string
+                          example: "FINISHED"
                         created_on:
                           type: string
                           format: date-time
+                    example: 
+                     - payment_intent_id: "51374ba8-50e4-4633-a000-3e42ccd245f9"
+                       status: "FINISHED"
+                       created_on: "2021-08-30T22:37:57Z"
+                     - payment_intent_id: "41374ba8-50e4-4633-a000-3e42ccd245f8"
+                       status: "PROCESSING"
+                       created_on: "2021-08-30T22:38:05Z"
         '400':
           description: Error
           content:
@@ -520,7 +544,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 403--Forbidden-Integrator-is-not-registered-
+                      - 403--Forbidden-Integrator-isn't-registered-
         '500':
           description: Error
           content:
@@ -541,7 +565,7 @@ paths:
       parameters:
         - name: x-test-scope
           in: header
-          description: This is a temporary header, it should be used just for development
+          description: This is a temporary header, it should be used just for development with the value "sandbox"
           schema:
             type: string
             example: sandbox
@@ -590,7 +614,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 403--Forbidden--Integrator-is-not-registered
+                      - 403--Forbidden--Integrator-isn't-registered
         '404':
           description: Error
           content:
@@ -601,7 +625,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 404--Not Found--Payment-Intent-does-not-exists-
+                      - 404--Not Found--Payment-Intent-doesn't-exists-
         '500':
           description: Error
           content:
@@ -639,18 +663,6 @@ paths:
                     nullable: false
                     example: "PDV"
                     enum: ["PDV", "STANDALONE"]
-                  GetIntegratorResponse:
-                    type: object
-                    properties:
-                      token:
-                        type: string
-                        example: "b6535740-198a-413e-8abe-a8edca123456"
-                      webhook:
-                        type: string
-                        example: ""
-                      is_valid_webhook:
-                        type: boolean
-                        example: false
       responses:
         '200':
           description: Success - Operating mode successfully changed
