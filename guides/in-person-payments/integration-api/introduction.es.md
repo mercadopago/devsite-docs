@@ -1,6 +1,6 @@
-# Conoce la API de Integraciones
+# Conoce la API de Integraciones Point
 
-La API de Integraciones te permite conectar tus puntos de venta (PDV) al ecosistema Point para recibir pagos en las terminales que tengas configuradas y garantizar una experiencia de cobro unificada.
+La API de Integraciones Point te permite conectar tus puntos de venta (PDV) al ecosistema Point para recibir pagos en las terminales que tengas configuradas y garantizar una experiencia de cobro unificada.
 
 ![Diagrama 1](/images/mobile/pdv-flow.png)
 
