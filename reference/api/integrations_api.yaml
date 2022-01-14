@@ -353,8 +353,8 @@ paths:
     get:
       tags:
         - $ref: '#/tags/mp-point'
-      summary: Find information payment intent
-      description: This endpoint allows to get information of payment intent.This endpoint will provide the payment intent’s information, its final status and the payment-id, which can be used to get the final status of the transaction in the Payment-API. The Webhook notifications are the main communication point of the payment intent information, then this endpoint should be used for testing and eventualities, and not for polling, because it has restrictions like consume by time, allows to get information one request per second
+      summary: Find information about payment intent
+      description: This endpoint allows to get information of payment intent. This endpoint will provide the payment intent’s information, its final status and the payment-id, which can be used to get the final status of the transaction in the Payment-API. The Webhook notifications are the main communication point of the payment intent information, then this endpoint should be used for testing and eventualities, and not for polling, because it has restrictions like consume by time, allows to get information one request per second
       parameters:
         - name: x-test-scope
           in: header
@@ -447,7 +447,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 404-- Not-found - Payment intent doesn't exists
+                      - 404-- Not-found - Payment intent doesn't exist
         '500':
           description: Error
           content:
@@ -458,7 +458,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 500-- Internal server error-
+                      - 500-- Internal server error
   /point/integration-api/payment-intents/events:
     get:
       tags:
@@ -539,7 +539,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 401--Token is invalid-
+                      - 401-- Token is invalid
         '403':
           description: Error
           content:
@@ -631,7 +631,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 404-- Not Found - Payment Intent doesn't exists
+                      - 404-- Not Found - Payment Intent doesn't exist
         '500':
           description: Error
           content:
@@ -671,7 +671,7 @@ paths:
                     example: "PDV"
                     enum:
                       - PDV -- point of sale, integrated mode with the API.
-                      - STANDALONE -- default device configuration, mode not integrated with api.
+                      - STANDALONE -- default device configuration, mode not integrated with the API.
       responses:
         '200':
           description: Success - Operating mode successfully changed
@@ -687,7 +687,7 @@ paths:
                     example: "PDV"
                     enum:
                       - PDV -- point of sale, integrated mode with the API.
-                      - STANDALONE -- default device configuration, mode not integrated with api.
+                      - STANDALONE -- default device configuration, mode not integrated the API.
         '400':
           description: Error
           content:

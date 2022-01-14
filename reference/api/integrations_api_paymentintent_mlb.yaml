@@ -142,7 +142,7 @@ paths:
                     errorKey:
                       type: string
                       enum:
-                        - 401--Unauthorized--Token-is-invalid-
+                        - 401-- Unauthorized - Token is invalid
         '400':
           description: Error
           content:
@@ -153,7 +153,7 @@ paths:
                     errorKey:
                       type: string
                       enum:
-                        - 400-- Bad-request - Field is missing o incorrect
+                        - 400-- Bad request - Field is missing o incorrect
         '403':
           description: Error
           content:
@@ -164,7 +164,7 @@ paths:
                     errorKey:
                       type: string
                       enum:
-                        - 403-- Forbidden - Integrator-isn't registered
+                        - 403-- Forbidden - Integrator isn't registered
         '409':
           description: Error
           content:
@@ -175,7 +175,7 @@ paths:
                     errorKey:
                       type: string
                       enum:
-                        - 409-- Conflict-error - Device has a queued payment intent
+                        - 409-- Conflict error - Device has a queued payment intent
         '500':
           description: Error
           content:
