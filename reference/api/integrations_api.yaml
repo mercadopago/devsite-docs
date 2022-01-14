@@ -12,6 +12,12 @@ paths:
       summary: Get paged devices list
       description: This endpoint allows you to get the devices. Devices can be filtered by pos and/or store
       parameters:
+        - name: x-test-scope
+          in: header
+          description: This is a temporary header, it should be used just for development with the value "sandbox"
+          schema:
+            type: string
+            example: sandbox
         - name: store_id
           in: query
           description: Devices Store Id filter (Optional)
@@ -24,12 +30,19 @@ paths:
           schema:
             type: integer
             example: 1235456678
-        - name: x-test-scope
-          in: header
-          description: This is a temporary header, it should be used just for development with the value "sandbox"
+        - name: limit
+          in: query
+          description: pagination limit
           schema:
-            type: string
-            example: sandbox
+            type: integer
+            example: 50
+        - name: offset
+          in: query
+          description: pagination offset
+          schema:
+            type: integer
+            example: 0
+       
       responses:
         '200':
           description: Success - Paged devices list
@@ -38,9 +51,6 @@ paths:
               schema:
                 type: object
                 properties:
-                  id:
-                    type: string
-                    description: 
                   devices:
                     type: array
                     description:
@@ -53,9 +63,6 @@ paths:
                         operating_mode:
                           type: string
                           example: "STANDALONE"
-                  operating_mode:
-                    type: string
-                    description:
                   paging:
                     type: object
                     properties:
@@ -81,7 +88,7 @@ paths:
                   errorKey: 
                     type: string
                     enum:
-                      - 400--Bad-Request--query-param-incorrect-format-            
+                      - 400-- Bad Request - query param incorrect format            
         '401':
           description: Error
           content:
@@ -92,7 +99,7 @@ paths:
                     errorKey:
                       type: string
                       enum:
-                        - 401--Unauthorized--token-is-invalid- 
+                        - 401-- Unauthorized - token is invalid 
         '403':
           description: Error
           content:
@@ -103,7 +110,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 403--Forbidden--Integrator-isn't-registered- 
+                      - 403-- Forbidden Integrator isn't registered 
         '500':
           description: Error
           content:
@@ -114,7 +121,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 500--Internal-server-error-
+                      - 500-- Internal server error
   /point/integration-api/devices/{deviceid}/payment-intents:
     post:
       tags:
@@ -151,6 +158,7 @@ paths:
                   description: A positive integer representing how much to charge. The value must have two decimal places in the integer part (e.g., 175 to charge $1.75). The value must be between [100, 250000] (e.g., a value to charge between $1,00 to $250.000,00 ARS)
                 additional_info:
                   type: object
+                  required: true
                   description: payment intent additional info
                   properties:
                     external_reference:
@@ -166,6 +174,8 @@ paths:
                       required: true
                       example: S0392JED
                       description: An alphanumeric value to identify the invoice or ticket number. It will be printed on the device ticket
+                  
+      
       responses:
         '200':
           description: Success - Payment intent succesfully created
@@ -212,7 +222,7 @@ paths:
                     errorKey:
                       type: string
                       enum:
-                        - 401--Unauthorized--Token-is-invalid-
+                        - 401-- Unauthorized Token is invalid
         '400':
           description: Error
           content:
@@ -223,7 +233,7 @@ paths:
                     errorKey:
                       type: string
                       enum:
-                        - 400--Bad-request--Field-is-missing-o-incorrect-
+                        - 400-- Bad request - Field is missing o incorrect
         '403':
           description: Error
           content:
@@ -234,7 +244,7 @@ paths:
                     errorKey:
                       type: string
                       enum:
-                        - 403--Forbidden--Integrator-isn't-registered-
+                        - 403-- Forbidden - Integrator isn't registered
         '409':
           description: Error
           content:
@@ -245,7 +255,7 @@ paths:
                     errorKey:
                       type: string
                       enum:
-                        - 409--Conflict-error--Device-has-a-queued-payment-intent-
+                        - 409-- Conflict-error - Device has a queued payment intent
         '500':
           description: Error
           content:
@@ -256,7 +266,7 @@ paths:
                     errorKey:
                       type: string
                       enum:
-                        - 500--Internal-server-error-
+                        - 500-- Internal server error
   /point/integration-api/devices/{deviceid}/payment-intents/{paymentintentid}:
     delete:
       tags:
@@ -305,7 +315,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 401--Unauthorized--Token-is-invalid-
+                      - 401-- Unauthorized Token is invalid
         '403':
           description: Error
           content:
@@ -316,7 +326,7 @@ paths:
                     errorKey:
                       type: string
                       enum:
-                      - 403--Forbidden--Integrator-isn't-registered-
+                      - 403-- Forbidden - Integrator isn't registered
         '409':
           description: Error
           content:
@@ -327,7 +337,7 @@ paths:
                   errorkey:
                     type: string
                     enum:
-                      - 409--Conflict-error--Payment-intent-is-blocked-by-terminal-
+                      - 409-- Conflict error - Payment intent is blocked by terminal
         '500':
           description: Error
           content:
@@ -338,7 +348,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 500--Internal-server-error-
+                      - 500-- Internal server error
   /point/integration-api/payment-intents/{paymentintentid}:
     get:
       tags:
@@ -391,9 +401,6 @@ paths:
                       id:
                        type: int
                        example: 16499678033
-                  description:
-                    type: string
-                    example: "your payment intent description"
                   additional_info:
                     type: object
                     properties:
@@ -418,7 +425,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 401--Unauthorized--Token-is-invalid-
+                      - 401-- Unauthorized - Token is invalid
         '403':
           description: Error
           content:
@@ -429,7 +436,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 403--Forbidden--Integrator-isn't-registered-
+                      - 403-- Forbidden - Integrator isn't registered
         '404':
           description: Error
           content:
@@ -440,7 +447,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 404--Not-found--Payment-intent-doesn't-exists-
+                      - 404-- Not-found - Payment intent doesn't exists
         '500':
           description: Error
           content:
@@ -451,7 +458,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 500--Internal-server-error-
+                      - 500-- Internal server error-
   /point/integration-api/payment-intents/events:
     get:
       tags:
@@ -472,7 +479,7 @@ paths:
           example: "1948-01-16"
           schema:
             type: string
-            example: 1948-01-16
+            example: "1948-01-16"
         - name: endDate
           in: query
           description: End date (YYYY-MM-DD)
@@ -480,7 +487,7 @@ paths:
           example: "2022-01-25"
           schema:
             type: string
-            example: 2022-01-25
+            example: "2022-01-25"
       responses:
         '200':
           description: Success - List of payment intents with their final states between a date range (startDate, endDate)
@@ -503,6 +510,7 @@ paths:
                         created_on:
                           type: string
                           format: date-time
+                          example: "2021-08-30T22:38:05Z"
                     example: 
                      - payment_intent_id: "51374ba8-50e4-4633-a000-3e42ccd245f9"
                        status: "FINISHED"
@@ -520,7 +528,7 @@ paths:
                     errorKey:
                       type: string
                       enum:
-                        - 400--Bad-Request--startDate-and/or-endDate-are-misssing-or-incorrect-
+                        - 400-- Bad-Request - startDate and/or endDate are misssing or incorrect
         '401':
           description: Error
           content:
@@ -542,7 +550,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 403--Forbidden-Integrator-isn't-registered-
+                      - 403-- Forbidden - Integrator isn't registered
         '500':
           description: Error
           content:
@@ -553,7 +561,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 500--Internal-server-error-
+                      - 500-- Internal server error
   /point/integration-api/payment-intents/{paymentintentid}/events:
     get:
       tags:
@@ -601,7 +609,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 100--Unauthorized--Token-is-invalid-
+                      - 401-- Unauthorized - Token is invalid
         '403':
           description: Error
           content:
@@ -612,7 +620,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 403--Forbidden--Integrator-isn't-registered
+                      - 403-- Forbidden - Integrator isn't registered
         '404':
           description: Error
           content:
@@ -623,7 +631,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 404--Not Found--Payment-Intent-doesn't-exists-
+                      - 404-- Not Found - Payment Intent doesn't exists
         '500':
           description: Error
           content:
@@ -634,7 +642,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 500--Internal-server-error-
+                      - 500-- Internal server error
   /point/integration-api/devices/{device-id}:
     patch:
       tags:
@@ -675,6 +683,7 @@ paths:
                   operating_mode:
                     type: string
                     nullable: false
+                    required: true
                     example: "PDV"
                     enum:
                       - PDV -- point of sale, integrated mode with the API.
@@ -689,7 +698,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 400--Bad-Request--Device-id-incorrect-format-
+                      - 400-- Bad-Request - Device id incorrect format
         '403':
           description: Error
           content:
@@ -700,7 +709,7 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - 403--Unauthorized--User-no-logged-into-the-device-
+                      - 403-- Unauthorized - User not logged into the device
         '500':
             description: Error
             content:
@@ -711,4 +720,4 @@ paths:
                     errorKey:
                       type: string
                       enum:
-                        - 403--Internal-server-error-
+                        - 500-- Internal server error
