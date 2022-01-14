@@ -90,11 +90,11 @@ Utilize o formulário abaixo e adicione os estilos que desejar.
 ```html
 <!-- Step #2 -->
 <form id="form-checkout">
-   <div type="text" id="form-checkout__cardNumber-container"></div>
-   <div type="text" id="form-checkout__cardExpirationDate-container"></div>
+   <div id="form-checkout__cardNumber-container"></div>
+   <div id="form-checkout__cardExpirationDate-container"></div>
    <input type="text" name="cardholderName" id="form-checkout__cardholderName"/>
    <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail"/>
-   <div type="text" id="form-checkout__securityCode-container"></div>
+   <div id="form-checkout__securityCode-container"></div>
    <select name="issuer" id="form-checkout__issuer"></select>----[mla, mlb, mlu, mlc, mpe, mco]----
    <select name="identificationType" id="form-checkout__identificationType"></select>------------
    <input type="text" name="identificationNumber" id="form-checkout__identificationNumber"/>
