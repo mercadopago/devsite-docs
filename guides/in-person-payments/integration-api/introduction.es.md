@@ -33,7 +33,7 @@ La API de Integraciones Point te permite conectar tus puntos de venta (PDV) al e
 
 * **Es segura**, ya que todas las peticiones se hacen a través de HTTPS.
 * **Fácil de usar**, solo necesitas tus credenciales de acceso para utilizarla.
-* **Es ágil**, ya que te permite administrar tus ordenes de pago desde tu PDV.
+* **Es ágil**, ya que te permite administrar tus órdenes de pago desde tu PDV.
 * **Es eficiente**, ya que disminuye la posibilidad de errores al momento de cobrar.
 
 <br />
