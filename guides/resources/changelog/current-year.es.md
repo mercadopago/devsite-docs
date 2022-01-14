@@ -35,7 +35,7 @@ Lanzamos una nueva versión del SDK Ruby 2.1.0.
 
 Ampliamos las opciones de personalización en los reportes de Liberaciones y de Todas las transacciones.
 
-Con el nuevo atributo configurable Report_translation, es posible cambiar el idioma predeterminado de los encabezados de las columnas, para que puedas verlos en tu idioma favorito.
+Con el nuevo atributo configurable report_translation, es posible cambiar el idioma predeterminado de los encabezados de las columnas, para que puedas verlos en tu idioma favorito.
 
 Este atributo se encuentra deshabilitado por defecto pero puedes habilitarlo desde la pantalla de [Ajustes](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement/settings) en la opción Idioma del reporte. Una vez lo hagas, te recomendamos verificar que funcionen correctamente las integraciones con archivos de Excel (XLSX) que permiten conciliar de forma automática.
 
