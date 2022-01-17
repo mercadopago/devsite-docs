@@ -2,7 +2,7 @@
 
 ### ¿Cómo instalo el plugin manualmente?
  
-Para instalar el plugin manualmente, siga los pasos:
+Para instalar el plugin manualmente, sigue los pasos:
  
 1. [Descarga el archivo .zip](https://github.com/mercadopago/cart-prestashop-7/raw/master/mercadopago.zip) directamente desde nuestro Github o desde el [directorio](https://addons.prestashop.com/es/pago-tarjeta-carteras-digitales/23962-mercado-pago.html) de los módulos de PrestaShop.
 2. Ve a la sección "Módulos y servicios" en el menú "Módulos" de tu administrador.
