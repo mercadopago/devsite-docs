@@ -42,3 +42,12 @@ Se a etapa anterior foi bem-sucedida, você pode clicar na animação do cartão
 ### 5. Receba a notificação
 
 Se você executou as etapas de configuração para as [notificações de Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/integration-api/integration), é hora de você revisar seus registros. Lá você verá que a notificação do status da transação foi enviada.
+
+
+> PREV_STEP_CARD_PT
+>
+> Configure suas notificações
+>
+> Explicamos como começar a receber notificações de Webhooks.
+>
+> [Configure suas notificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/integration-api/notifications)

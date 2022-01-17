@@ -129,9 +129,16 @@ Once you have implemented the notifications and made the necessary adjustments, 
 ```
 ------------
 
-### Next steps
 
-> LEFT_BUTTON_RECOMMENDED_EN
+> PREV_STEP_CARD_EN
+>
+> Start processing your payments
+>
+> Create a payment intent and assign it to a Point device.
+>
+> [Start processing your payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/integration-api/create-payment-intent)
+
+> NEXT_STEP_CARD_EN
 >
 > Test your integration safely
 >

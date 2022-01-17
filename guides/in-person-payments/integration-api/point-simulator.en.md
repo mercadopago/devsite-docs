@@ -17,7 +17,7 @@ When using the simulator for the first time, you will need to enter your keys an
 
 To use **PDV Mode** you will need your Access Token key. If you are using a test Access Token, the simulator will assign you a virtual device.
 
-When using **Device Mode**, you must enter your Access Token and your Device Id obtained when [listing your devices](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/integration-api/create-payment-intent#bookmark_Create_the_payment_intent)
+When using **Device Mode**, you must enter your Access Token and your Device Id obtained when [listing your devices](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/integration-api/create-payment-intent#bookmark_create_the_payment_intent)
 
 ### 2. Simulate a payment intent
 
@@ -43,3 +43,11 @@ If the previous step was successful, you can click on the animation of the card,
 
 If you followed the configuration steps for the [Webhooks notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/integration-api/integration), it is time for you to review your records. There, you will see that the notification of the transaction status was sent.
 
+
+> PREV_STEP_CARD_EN
+>
+> Configure notifications
+>
+> We’ll explain how to start receiving notifications from Webhooks.
+>
+> [Configure notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/integration-api/notifications)

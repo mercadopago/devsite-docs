@@ -45,9 +45,7 @@ The Point Integrations API allows you to connect your points of sale (POS) to th
 
 
 
-### Next Steps
-
-> LEFT_BUTTON_REQUIRED_EN
+> NEXT_STEP_CARD_EN
 >
 > Start integrating the Integrations API
 >

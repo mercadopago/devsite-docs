@@ -43,10 +43,7 @@ La API de Integraciones Point te permite conectar tus puntos de venta (PDV) al e
 ![Mercado Pago Point Flow](/images/mobile/MercadoPagoFlowPoint.png)
 
 
-
-### Próximos pasos
-
-> LEFT_BUTTON_REQUIRED_ES
+> NEXT_STEP_CARD_ES
 >
 > Comienza a integrar la API de Integraciones
 >

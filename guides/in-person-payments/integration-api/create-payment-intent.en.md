@@ -194,10 +194,16 @@ Sample response:
 >
 > Check out all the information corresponding to the payment in the section [Payment API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) of our API Reference.
 
+> PREV_STEP_CARD_EN
+>
+> Start integrating the Integrations API
+>
+> To perform an integration, you must first obtain the identification credentials.
+>
+> [Integrate the Integrations API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/integration-api/integration)
 
-### Next steps
 
-> LEFT_BUTTON_RECOMMENDED_EN
+> NEXT_STEP_CARD_EN
 >
 > Configure notifications
 >

@@ -45,9 +45,7 @@ A API de integrações Point permite que você conecte seus pontos de venda (PDV
 
 
 
-### Próximos passos
-
-> LEFT_BUTTON_REQUIRED_PT
+> NEXT_STEP_CARD_PT
 >
 > Comece a integrar a API de integrações
 >

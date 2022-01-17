@@ -15,9 +15,9 @@ an existing account or [create a new one](https://www.mercadopago[FAKER][URL][DO
 Next, you will need to create an application to obtain the credentials. It's easy, we’ll tell you how to do it:
 
 1. Access [Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications).
-2. Within the **Your applications** section, click on the "+" symbol to create your first application, or choose "Create new application" if you already have others.
+2. Within the **Your applications** section, click on the "+" symbol to create your first application, or select "Create new application" if you already have others.
 3. Give your applications a name in order to easily find it later.
-4 Select "Mercado Pago Point" as the product you are going to integrate.
+4. Select "Mercado Pago Point" as the product you are going to integrate.
 5. Accept our Terms and Conditions.
 
 ¡And you’re done!
@@ -48,7 +48,7 @@ You can generate up to 10 test user accounts simultaneously. Keep in mind that t
 
 ## 2. Associate your Point device with your Mercado Pago account
 
-Now you are going to link your Point device to your Mercado Pago account. In order to do that, you need to have our application on your cell phone. You can get it for the operating systems [iOS](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419).
+Now you need to link your Point device to your Mercado Pago account. In order to do that, you need to have our application on your cell phone. You can get it for the operating systems [iOS](https://itunes.apple.com/ar/app/mercado-pago/id925436649?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.mercadopago.wallet&hl=es_419).
 You must also have a Point device.
 
 ### Scan the QR code of your Point device
@@ -80,12 +80,19 @@ You will receive a response like this:
 }
 ```
 
-> In case you need to use the device in non-integrated mode, you must configure the "operating_mode" field with the value `STANDALONE`.
+> In case you need to use the device in non-integrated mode, you must configure the `operating_mode` field with the value `STANDALONE`.
 
 
-### Next Steps
+> PREV_STEP_CARD_EN
+>
+> Introduction
+>
+> Read our Point Integrations API introduction.
+>
+> [Introduction](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/integration-api/introduction)
 
-> LEFT_BUTTON_RECOMMENDED_EN
+
+> NEXT_STEP_CARD_EN
 >
 > Start processing your payments
 >

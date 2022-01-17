@@ -129,9 +129,18 @@ Una vez que hayas implementado las notificaciones y realizado los ajustes necesa
 ```
 ------------
 
-### Próximos pasos
 
-> LEFT_BUTTON_RECOMMENDED_ES
+
+> PREV_STEP_CARD_ES
+>
+> Comienza a procesar tus pagos
+>
+> Crea una intención de pago y asígnala a un dispositivo Point.
+>
+> [Comienza a procesar tus pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/integration-api/create-payment-intent)
+
+
+> NEXT_STEP_CARD_ES
 >
 > Prueba tu integración de forma segura
 >

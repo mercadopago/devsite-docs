@@ -80,12 +80,19 @@ Você receberá uma resposta como esta:
 }
 ```
 
-> Caso necessite usar o dispositivo em modo não integrado, deve-se configurar o campo "operating_mode" com o valor `STANDALONE`.
+> Caso necessite usar o dispositivo em modo não integrado, deve-se configurar o campo `operating_mode` com o valor `STANDALONE`.
 
 
-### Próximos passos
+> PREV_STEP_CARD_PT
+>
+> Introdução
+>
+> Leia nossa introdução à API de integrações Point.
+>
+> [Introdução](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/integration-api/introduction)
 
-> LEFT_BUTTON_RECOMMENDED_PT
+
+> NEXT_STEP_CARD_PT
 >
 > Comece a processar seus pagamentos
 >

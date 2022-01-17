@@ -195,9 +195,16 @@ Exemplo de resposta:
 > Consulte todas as informações correspondentes ao pagamento na seção [API de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get) de Referência da API.
 
 
-### Próximos passos
+> PREV_STEP_CARD_PT
+>
+> Comece a integrar a API de integrações
+>
+> Para integrar, você deve primeiro obter as credenciais de identificação.
+>
+> [Integrar a API de integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/integration-api/integration)
 
-> LEFT_BUTTON_RECOMMENDED_PT
+
+> NEXT_STEP_CARD_PT
 >
 > Configure suas notificações
 >
