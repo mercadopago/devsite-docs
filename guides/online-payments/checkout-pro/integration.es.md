@@ -26,7 +26,6 @@ Instalar el Checkout Pro consta de dos pasos:
 Suma la [SDK de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/previous-requirements#bookmark_requisitos_previos) y las [credenciales]([FAKER][CREDENTIALS][URL]) necesarias en tu proyecto para habilitar el uso de preferencias:
 
 [[[
-
 ```php
 <?php
 // SDK de Mercado Pago
@@ -72,7 +71,6 @@ import mercadopago
 # Agrega credenciales
 sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 ```
-
 ]]]
 
 En seguida, configura la preferencia según tu producto o servicio:
@@ -82,7 +80,6 @@ En seguida, configura la preferencia según tu producto o servicio:
 > Ten en cuenta que es necesario configurar las `back_urls` si deseas volver a tu sitio al finalizar el pago. Para más información, visita la sección [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/advanced-integration#bookmark_url_de_retorno).
 
 [[[
-
 ```php
 <?php
 // Crea un objeto de preferencia
@@ -204,14 +201,12 @@ curl -X POST \
     ]
 }'
 ```
-
 ]]]
-
----
+------------
 
 ----[mlc, mco]----
-[[[
 
+[[[
 ```php
 <?php
 // Crea un objeto de preferencia
@@ -334,7 +329,6 @@ curl -X POST \
     ]
 }'
 ```
-
 ]]]
 
 > WARNING
@@ -342,8 +336,7 @@ curl -X POST \
 > Importante
 >
 > El valor de `unit_price` debe ser entero.
-
----
+------------
 
 <span></span>
 
