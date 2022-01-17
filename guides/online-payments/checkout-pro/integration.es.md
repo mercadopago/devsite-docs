@@ -26,7 +26,6 @@ Instalar el Checkout Pro consta de dos pasos:
 Suma la [SDK de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/previous-requirements#bookmark_requisitos_previos) y las [credenciales]([FAKER][CREDENTIALS][URL]) necesarias en tu proyecto para habilitar el uso de preferencias:
 
 [[[
-
 ```php
 <?php
 // SDK de Mercado Pago
@@ -72,7 +71,6 @@ import mercadopago
 # Agrega credenciales
 sdk = mercadopago.SDK("PROD_ACCESS_TOKEN")
 ```
-
 ]]]
 
 En seguida, configura la preferencia según tu producto o servicio:
@@ -82,7 +80,6 @@ En seguida, configura la preferencia según tu producto o servicio:
 > Ten en cuenta que es necesario configurar las `back_urls` si deseas volver a tu sitio al finalizar el pago. Para más información, visita la sección [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/advanced-integration#bookmark_url_de_retorno).
 
 [[[
-
 ```php
 <?php
 // Crea un objeto de preferencia
@@ -204,14 +201,13 @@ curl -X POST \
     ]
 }'
 ```
-
 ]]]
 
----
+------------
 
 ----[mlc, mco]----
-[[[
 
+[[[
 ```php
 <?php
 // Crea un objeto de preferencia
@@ -334,7 +330,6 @@ curl -X POST \
     ]
 }'
 ```
-
 ]]]
 
 > WARNING
@@ -343,7 +338,7 @@ curl -X POST \
 >
 > El valor de `unit_price` debe ser entero.
 
----
+------------
 
 <span></span>
 
@@ -371,7 +366,6 @@ Agrega la SDK MercadoPago.js V2 a tu proyecto:
 Después, configura las credenciales de la SDK para su uso e inicializa tu checkout con el ID de la preferencia creada previamente y el identificador del elemento donde deberá mostrarse el botón de pago:
 
 [[[
-
 ```html
 <script>
   // Agrega credenciales de SDK
@@ -391,7 +385,6 @@ Después, configura las credenciales de la SDK para su uso e inicializa tu check
   });
 </script>
 ```
-
 ]]]
 
 > NOTE
@@ -426,7 +419,7 @@ Implementa la solución Checkout Pro en tu sitio con nuestro video tutorial sobr
 
 Consulta el [ejemplo de integración completa](http://github.com/mercadopago/checkout-payment-sample) en GitHub para PHP o NodeJS para descargar un proyecto básico de implementación rápida de Checkout Pro en tu sitio.
 
----
+------------
 
 ### Próximo paso
 
