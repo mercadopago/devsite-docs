@@ -10,7 +10,7 @@ Por exemplo, se o cartão não possui saldo suficiente para a compra, pode-se re
 >
 > Para saber mais sobre os possíveis erros, confira a [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference).
 > <br/>
-> Você pode configurar o envio de e-mails aos clientes com mensagens de status dos pedidos como, por exemplo, de pagamento aprovado. Porém, a configuração deste envio deve ser feita em suas respectivas plataformas. Veja as documentações de [WooComerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/integration), [PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/integration) e [Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/magento-two/notifications-configuration) para mais detalhes.
+> Você pode configurar o envio de e-mails aos clientes com mensagens de status dos pedidos como, por exemplo, de pagamento aprovado. Porém, a configuração deste envio deve ser feita em suas respectivas plataformas. Veja as documentações de [WooComerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/integration),  [PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/email-customization) e [Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/magento-two/notifications-configuration) para mais detalhes.
 
 ## Resultados da criação de uma cobrança
 
