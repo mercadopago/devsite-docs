@@ -25,7 +25,7 @@ Having selected **Checkout API** to receive payments from your store, it is impo
 
 1. Go to **Marketing > Communications > Email Templates > Add New Template** menu and create the new email template.
 2. In **Stores > Settings > Configuration > Sales > Sales Emails**, add the template created in the event settings on the platform (example: "payment approved").
-3. Once the necessary settings have been made, install and configure a **SMTP server** of your choice to enable the sending of e-mails.
+3. Once the necessary settings have been made, install and configure a **SMTP server** of your choice to enable the e-mail notifications.
 4. Send a **test email** to ensure the platform is sending emails correctly.
 
 Ready! Sending emails has been successfully configured.
