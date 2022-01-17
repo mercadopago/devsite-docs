@@ -28,7 +28,7 @@ Having selected **Checkout API** to receive payments from your store, it is impo
 3. Once the necessary settings have been made, install and configure a **SMTP server** of your choice to enable the e-mail notifications.
 4. Send a **test email** to ensure the platform is sending emails correctly.
 
-Ready! Sending emails has been successfully configured.
+Ready! email notifications have been successfully configured.
 
 > PREV_STEP_CARD_EN
 >
