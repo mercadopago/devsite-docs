@@ -84,7 +84,7 @@ Having selected **Checkout API** to receive payments from your store, it is impo
 
 1. Access the WordPress **Panel**.
 2. In the left side column, click **WooCommerce > Settings**.
-3. In **E-mails**, enable the sending to be configured by selecting the option ˜activate this notification e-mail".
+3. In **E-mails**, enable the notifications to be configured by selecting the option ˜activate this notification e-mail".
 4. Customize the email template with: recipients, email subject and header.
 5. Enter the **content** to be sent and select the e-mail type.
 6. Also indicate the sender's name and email address, as well as your store's logo and colors.
