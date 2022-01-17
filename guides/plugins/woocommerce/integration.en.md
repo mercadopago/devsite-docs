@@ -80,7 +80,7 @@ In addition to the settings above, you will find different options related to yo
 
 ## Configure notification email
 
-Having selected the **Checkout Transparente** to receive payments from your store, it is important to configure the sending of emails that will notify the user of their transactions. See below how to customize the sending of the **transactional email** in the WooCommerce management panel.
+Having selected **Checkout API** to receive payments from your store, it is important to configure the email notifications that will notify the user of their transactions. See below how to customize  **transactional email** notifications in the WooCommerce management panel.
 
 1. Access the WordPress **Panel**.
 2. In the left side column, click **WooCommerce > Settings**.
