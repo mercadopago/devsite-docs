@@ -84,7 +84,7 @@ Habiendo seleccionado el **Checkout API** para recibir pagos de tu tienda, es im
 
 1. Accede al **Panel** de WordPress.
 2. En la columna del lado izquierdo, haz clic en **WooCommerce > Configuración**.
-3. En **E-mails**, habilitar la configuración del envío seleccionando la opción ˜activar este e-mail de notificación".
+3. En **E-mails**, habilita la configuración del envío seleccionando la opción ˜activar este e-mail de notificación".
 4. Personalice la plantilla de correo electrónico con: destinatarios, asunto del correo electrónico y encabezado.
 5. Ingrese el **contenido** a enviar y seleccione el tipo de correo electrónico.
 6. Indique también el nombre y la dirección de correo electrónico del remitente, así como el logotipo y los colores de su tienda.
