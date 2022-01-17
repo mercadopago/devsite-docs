@@ -2,7 +2,7 @@
 
 The Point Integrations API allows you to connect your points of sale (POS) to the Point ecosystem, in order to receive payments in the terminals that you have configured and guarantee a unified payment experience.
 
-![Diagram 1](/images/mobile/pdv-flow.png)
+![Diagram 1](/images/point-api/1-diagram-en.png)
 
 ----[mla]----
 > NOTE
@@ -41,7 +41,7 @@ The Point Integrations API allows you to connect your points of sale (POS) to th
 
 ### This flowchart explains how the API works:
 
-![Mercado Pago Point Flow](/images/mobile/MercadoPagoFlowPoint.png)
+![Mercado Pago Point Flow](/images/point-api/2-flow-diagram-en.png)
 
 
 
