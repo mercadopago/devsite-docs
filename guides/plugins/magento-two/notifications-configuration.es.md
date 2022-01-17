@@ -21,7 +21,7 @@ Para cada estado de pago, puedes elegir un estado de pedido. Entonces, cuando tu
 
 ## E-mail de notificación
 
-Habiendo seleccionado **Checkout API** para recibir pagos de tu tienda, es importante configurar el envío de correos electrónicos que notificarán al usuario de sus transacciones. Vea a continuación cómo personalizar el envío de **e-mail transaccional** en el panel de administración de Magento 2.
+Habiendo seleccionado **Checkout API** para recibir pagos de tu tienda, es importante configurar el envío de correos electrónicos que notificarán al usuario de sus transacciones. Ve a continuación cómo personalizar el envío de **e-mail transaccional** en el panel de administración de Magento 2.
 
 1. Ve al menú **Marketing > Communications > Email Templates > Add New Template** y cree la nueva plantilla de e-mail.
 2. En **Stores > Settings > Configuration > Sales > Sales Emails**, agregue la plantilla creada en los ajustes de eventos en la plataforma (ejemplo: "pago aprobado").
