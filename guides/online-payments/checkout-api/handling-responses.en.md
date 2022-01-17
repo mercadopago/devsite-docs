@@ -6,7 +6,7 @@ For example, if the card has insufficient balance, you can suggest trying again 
 
 > WARNING
 >
-> IMPORTANT
+> Important
 >
 > To get more information about the possible errors, view the [API reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
 > <br/>

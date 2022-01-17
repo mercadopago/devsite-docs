@@ -14,7 +14,7 @@ Para cada estado de pago, puedes elegir un estado de pedido. Entonces, cuando tu
 > Nota
 >
 > El módulo está preparado para recibir las notificaciones de pago de forma automática, es decir, sin la necesidad de configurar tu cuenta de Mercado Pago o el módulo.
-> 
+> <br/>
 > [Haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/introduction) para obtener más información sobre los tipos de notificaciones integradas por Mercado Pago.
 
 ¡Listo! El estado de notificación se ha configurado correctamente.

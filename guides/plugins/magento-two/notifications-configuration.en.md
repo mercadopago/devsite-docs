@@ -14,7 +14,7 @@ For each payment status, you can select an order status. Then, when your store r
 > Note
 >
 > The module is prepared to receive payment notifications automatically, that is, without the need to configure your Mercado Pago account or the module.
->
+> <br/>
 > [Click here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/introduction) for more information on the types of notifications integrated by Mercado Pago.
 
 Ready! Notification status has been configured successfully.
