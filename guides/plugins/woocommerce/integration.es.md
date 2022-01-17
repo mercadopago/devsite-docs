@@ -88,7 +88,7 @@ Habiendo seleccionado el **Checkout API** para recibir pagos de tu tienda, es im
 4. Personaliza la plantilla de correo electrónico con: destinatarios, asunto del correo electrónico y encabezado.
 5. Ingresa el **contenido** a enviar y selecciona el tipo de correo electrónico.
 6. Indica también el nombre y la dirección de correo electrónico del remitente, así como el logotipo y los colores de tu tienda.
-7. Una vez realizadas las configuraciones necesarias, instale y configure un **servidor SMTP** de su elección para habilitar el envío de correos electrónicos.
+7. Una vez realizadas las configuraciones necesarias, instala y configura un **servidor SMTP** de tu elección para habilitar el envío de correos electrónicos.
 8. Envíe un **correo electrónico de prueba** para asegurarse de que la plataforma envíe los correos electrónicos correctamente.
 
 ¡Listo! Ahora el plugin Mercado Pago con WooCommerce está integrado en tu tienda y se puede probar realizando compras que solo serán con el propósito de validar el funcionamiento del plugin, pero que no moverán ningún valor.
