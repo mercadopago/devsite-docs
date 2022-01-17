@@ -26,7 +26,7 @@ Habiendo seleccionado **Checkout API** para recibir pagos de tu tienda, es impor
 1. Ve al menú **Marketing > Communications > Email Templates > Add New Template** y crea la nueva plantilla de e-mail.
 2. En **Stores > Settings > Configuration > Sales > Sales Emails**, agrega la plantilla creada en los ajustes de eventos en la plataforma (ejemplo: "pago aprobado").
 3. Una vez realizadas las configuraciones necesarias, instala y configura un **servidor SMTP** de tu elección para habilitar el envío de correos electrónicos.
-4. Envíe un **e-mail de prueba** para asegurarse de que la plataforma está enviando correos electrónicos correctamente.
+4. Envía un **e-mail de prueba** para asegurarte de que la plataforma está enviando correos electrónicos correctamente.
 
 ¡Listo! El envío de correos electrónicos se ha configurado correctamente.
 
