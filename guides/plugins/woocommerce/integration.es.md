@@ -80,7 +80,7 @@ Además de la configuración anterior, encontrarás diferentes opciones relacion
 
 ## Configurar e-mail de notificación
 
-Habiendo seleccionado el **Checkout API** para recibir pagos de tu tienda, es importante configurar el envío de los e-mails que notificarán al usuario de sus transacciones. Vea a continuación cómo personalizar el envío del **e-mail transaccional** en el panel de administración de WooCommerce.
+Habiendo seleccionado el **Checkout API** para recibir pagos de tu tienda, es importante configurar el envío de los e-mails que notificarán al usuario de sus transacciones. Ve a continuación cómo personalizar el envío del **e-mail transaccional** en el panel de administración de WooCommerce.
 
 1. Accede al **Panel** de WordPress.
 2. En la columna del lado izquierdo, haz clic en **WooCommerce > Configuración**.
