@@ -55,7 +55,7 @@ Puedes integrar soluciones para cuentas distintas a la tuya. Al integrar solucio
 Una vez que se otorgue el acceso a las credenciales, puedes usarlas para integrar soluciones. Cuando se completen las integraciones, elimina los permisos de acceso para las credenciales que se compartieron y cuida la seguridad de los datos.
 
 ## ID de integrador
-El Dashboard (https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel) también contiene tu ID de integrador. El ID del integrador es un número único que te identifica como miembro del &lt;dev&gt;program. 
+El [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel) también contiene tu ID de integrador. El ID del integrador es un número único que te identifica como miembro del &lt;dev&gt;program. 
 
 El &lt;dev&gt;program es un programa de beneficios para desarrolladores exclusivo y gratuito, diseñado para que seas parte de nuestra comunidad y recibas beneficios adicionales. Para participar, debes aprobar algunas de las certificaciones oficiales de Mercado Pago. 
 
