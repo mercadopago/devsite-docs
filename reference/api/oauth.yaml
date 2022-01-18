@@ -107,9 +107,9 @@ paths:
                     enum:
                       - invalid_client -- The provided client_id and/or client_secret of your app is invalid.
                       - invalid_grant -- There are several reasons for this error, it could be because the authorization_code or refresh_token is invalid, expired or revoked, was sent in an incorrect flow, belongs to another client, or the redirect_uri used in the authorization flow does not match what your application has configured.
-                      - invalid_scope -- The requested scope is invalid, unknown, or wrongly formed. The allowed values ​​for the scope parameter are “offline_access”, ”write”, ”read”.
+                      - invalid_scope -- The requested scope is invalid, unknown, or wrongly formed. The allowed values for the scope parameter are “offline_access”, ”write”, ”read”.
                       - invalid_request -- The request does not include a required parameter, includes an unsupported parameter or parameter value, has a duplicated value, or is otherwise malformed.
-                      - unsupported_grant_type -- Allowed values ​​for grant_type are “authorization_code” or “refresh_token”.
+                      - unsupported_grant_type -- Allowed values for grant_type are “authorization_code” or “refresh_token”.
                       - forbidden -- The call does not authorize access, possibly another user's token is being used.
                       - unauthorized_client -- The application does not have a grant with the user or the permissions (scopes) that the application has with this user do not allow creating a token.
                   cause:
