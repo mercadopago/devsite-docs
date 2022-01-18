@@ -31,7 +31,7 @@ The Point Integrations API allows you to connect your points of sale (POS) to th
 
 ### Learn about its advantages
 
-* **It’s safe**, as all requests are made through HTTPS.
+* **It’s safe**, as all requests are made through HTTPS..
 * **Easy to use**, you only need your access credentials to use it.
 * **It’s agile**, as it allows you to manage your payment orders from your POS.
 * **It’s efficient**, as it reduces the possibility of errors when charging.
