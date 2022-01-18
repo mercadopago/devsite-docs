@@ -29,7 +29,7 @@ Você receberá uma resposta como esta:
   }
 }
 ```
-## Criar intenção de pagamento
+## Criar uma intenção de pagamento
 
 Você pode criar uma intenção de pagamento e atribuí-la ao seu dispositivo Point desta forma:
 
@@ -49,12 +49,12 @@ curl --location --request POST 'https://api.mercadopago.com/point/integration-ap
 
 Campo | Descrição
 :--- | :--- |
-'amount'             | Valor total da intenção de pagamento. **Importante**: este campo não admite vírgulas decimais, portanto se se deseja gerar uma intenção de pagamento deve-se considerar as duas casas decimais do valor em seu total. Por exemplo: para gerar o valor da ordem de pagamento "15,00" você deve inserir "1500". |
+'amount'             | Valor total da intenção de pagamento. **Importante**: este campo não admite vírgulas decimais, então se deseja gerar uma intenção de pagamento deve-se considerar as duas casas decimais do valor em seu total. Por exemplo: para gerar o valor da ordem de pagamento "15,00" você deve inserir "1500". |
 'external_reference' | Campo de uso exclusivo do integrador para incluir referências de seu sistema. |
 'print_on_terminal'  | Campo que determina se o dispositivo imprime o comprovante de pagamento. |
 'ticket_number'      | Número do bilhete da intenção de pagamento. |
 
-Em resposta, você receberá algo semelhante a este:
+Em resposta, você receberá algo semelhante a isso:
 
 ```json
 {
@@ -97,7 +97,7 @@ payment.installments_cost | Custo das parcelas de pagamento. |
 external_reference        | Campo de uso exclusivo do integrador para incluir referências de seu sistema. |
 print_on_terminal         | Campo que determina se o dispositivo imprime o comprovante de pagamento. |
 
-Em resposta, você receberá algo semelhante a este:
+Em resposta, você receberá algo semelhante a isso:
 
 ```json
 {
@@ -192,7 +192,7 @@ Exemplo de resposta:
 >
 > Nota
 >
-> Consulte todas as informações correspondentes ao pagamento na seção [API de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get) de Referência da API.
+> Consulte todas as informações correspondentes ao pagamento na seção [API de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get) de Referência da API.
 
 
 > PREV_STEP_CARD_PT
@@ -208,7 +208,7 @@ Exemplo de resposta:
 >
 > Configure suas notificações
 >
-> Explicamos como começar a receber notificações de Webhooks.
+> Explicamos como começar a receber notificações Webhooks.
 >
 > [Configure suas notificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/integration-api/notifications)
 

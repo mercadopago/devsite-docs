@@ -1,6 +1,6 @@
 ## Glossary
 
-Some terms are new and you may not be familiar with them. Use this glossary so you don't get lost!
+Some terms are new and you may not be familiar with them. Use this glossary so you don't get lost:
 
 | Term | Description |
 | --- | --- |

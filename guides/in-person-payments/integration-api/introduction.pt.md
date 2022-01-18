@@ -36,13 +36,11 @@ A API de integrações Point permite que você conecte seus pontos de venda (PDV
 * **É ágil**, pois permite gerenciar suas ordens de pagamento desde o seu PDV.
 * **É eficiente**, pois reduz a possibilidade de erros no carregamento.
 
-
-<br />
+<br/>
 
 ### Neste diagrama de fluxo, mostraremos como a API funciona:
 
 ![Mercado Pago Point Flow](/images/point-api/2-flow-diagram-pt.png)
-
 
 
 > NEXT_STEP_CARD_PT

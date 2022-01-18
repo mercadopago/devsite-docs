@@ -4,7 +4,7 @@ To start processing your payments, follow these steps:
 
 ## Get the list of your available devices
 
-Before creating a payment intent, you must obtain the Point devices associated with your account. You can do it in the following way:
+Before creating a payment intent, you must obtain the list of Point devices associated with your account. You can do it in the following way:
 
 ``` curl
 curl --location --request GET 'https://api.mercadopago.com/point/integration-api/devices' \

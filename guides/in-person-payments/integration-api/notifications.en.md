@@ -1,6 +1,6 @@
 # Configure notifications
 
-If you wish, you can receive notifications from Webhooks. These are sent from our Integrations API to your receiving system through an 'HTTP POST' call in relation to the status changes presented by a payment intent.
+If you wish, you can receive notifications from Webhooks. These are sent from our Integrations API to your receiving system through an `HTTP POST` call in relation to the status changes presented by a payment intent.
 
 To integrate Webhook notifications, follow the instructions shown in [this documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/introduction).
 

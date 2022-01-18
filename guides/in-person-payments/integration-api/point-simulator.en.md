@@ -7,7 +7,7 @@ The simulator has two modes of usage:
 
 
 * **PDV Mode**: simulates the integration of a complete system (device and POS) with our Integrations API. Access the [PDV Mode Simulator](https://api.mercadopago.com/point/integrator-simulator/sandbox/?ignoreapidoc=true)
-* **Device Mode**: simulates a virtual Point device so that you can test your integration from HTTP requests. Access the [Device Mode Simulator](https://api.mercadopago.com/point/integrator-simulator/sandbox/device?ignoreapidoc=true).
+* **Device Mode**: simulates a virtual Point device so that you can test your integration from HTTP requests. Access the [Device Mode Simulator](https://api.mercadopago.com/point/integrator-simulator/sandbox/device?ignoreapidoc=true)
 
 ## How to use the simulator
 
@@ -17,7 +17,7 @@ When using the simulator for the first time, you will need to enter your keys an
 
 To use **PDV Mode** you will need your Access Token key. If you are using a test Access Token, the simulator will assign you a virtual device.
 
-When using **Device Mode**, you must enter your Access Token and your Device Id obtained when [listing your devices](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/integration-api/create-payment-intent#bookmark_create_the_payment_intent)
+When using **Device Mode**, you must enter your Access Token and your Device Id obtained when [listing your devices](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/integration-api/create-payment-intent#bookmark_create_the_payment_intent).
 
 ### 2. Simulate a payment intent
 

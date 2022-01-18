@@ -5,7 +5,6 @@ Com este simulador, você poderá criar uma intenção de pagamento e processá-
 
 O simulador possui dois modos de uso:
 
-
 * **PDV Mode**: simula a integração de um sistema completo (dispositivo e PDV) com nossa API de Integrações. Acesse o [Simulador PDV Mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/?ignoreapidoc=true)
 * **Device Mode**: simula um dispositivo de ponto virtual para que você possa testar sua integração a partir de HTTP requests. Acesse o [Simulador Device Mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/device?ignoreapidoc=true).
 
@@ -30,10 +29,9 @@ Preparamos diversos cenários que permitem simular uma experiência real. Para f
 | Error | $1300 |
 | Successful | Qualquer outro valor diferente dos anteriores |
 
+### 3. Obter a intenção de pagamento no dispositivo
 
-### 3. Obter intenção de pagamento do dispositivo
-
-Uma vez criada a intenção de pagamento, deve-se clicar no botão verde do dispositivo virtual para obter a intenção de pagamento criada. Uma vez encontrado, você pode verificar se o valor inicialmente inserido corresponde ao mostrado na tela do dispositivo.
+Uma vez criada a intenção de pagamento, deve-se clicar no botão verde do dispositivo virtual para obter a intenção de pagamento criada. Uma vez encontrada, você pode verificar se o valor inicialmente inserido corresponde ao mostrado na tela do dispositivo.
 
 ### 4. Passe o cartão e processe o pagamento
 

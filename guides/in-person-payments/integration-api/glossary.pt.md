@@ -16,12 +16,12 @@ Alguns termos são novos e você pode não estar familiarizado com eles. Use est
 
 | Termo | Descrição |
 | --- | --- |
-| Open | Status inicial de uma intenção de pagamento ao criá-la a partir do PDV |
-| On Terminal | Status intermediário de uma intenção de pagamento ao obtê-la do dispositivo Point |
-| Processing | Declaração provisória de intenção de pagar no momento da reconciliação com uma instituição financeira |
-| Processed | Status provisório de intenção de pagamento no momento de finalizar a reconciliação com uma instituição financeira |
-| Canceled | Status final de uma intenção de pagamento quando ela é cancelada |
-| Abandoned | Status final de uma intenção de pagamento quando ela não é processada após um certo tempo |
-| Error | Status final de uma intenção de pagamento quando ocorre um erro de transação |
-| Finished | Status final de uma intenção de pagamento quando a transação termina |
+| Open | Status inicial de uma intenção de pagamento ao criá-la a partir do PDV. |
+| On Terminal | Status intermediário de uma intenção de pagamento ao obtê-la do dispositivo Point. |
+| Processing | Declaração provisória de intenção de pagar no momento da reconciliação com uma instituição financeira. |
+| Processed | Status provisório de intenção de pagamento no momento de finalizar a reconciliação com uma instituição financeira. |
+| Canceled | Status final de uma intenção de pagamento quando ela é cancelada. |
+| Abandoned | Status final de uma intenção de pagamento quando ela não é processada após um certo tempo. |
+| Error | Status final de uma intenção de pagamento quando ocorre um erro de transação. |
+| Finished | Status final de uma intenção de pagamento quando a transação termina. |
 
