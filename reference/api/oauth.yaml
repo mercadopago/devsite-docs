@@ -12,8 +12,8 @@ paths:
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/subscriptions'
-      summary: Generate credentials
-      description: To create or refresh the necessary credentials to operate your application in the name of a seller
+      summary: Generate token
+      description: To create or refresh the necessary token to operate your application in the name of a seller
       requestBody:
         content:
           application/json:
