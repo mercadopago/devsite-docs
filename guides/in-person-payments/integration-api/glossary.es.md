@@ -1,6 +1,6 @@
 ## Glosario
 
-Algunos términos son nuevos y quizás no estés familiarizado con ellos. ¡Usa este glosario para no perderte!
+Algunos términos son nuevos y quizás no estés familiarizado con ellos. ¡Usa este glosario para no perderte:
 
 | Término | Descripción |
 | --- | --- |

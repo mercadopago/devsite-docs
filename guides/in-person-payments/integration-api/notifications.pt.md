@@ -1,6 +1,6 @@
 # Configure suas notificações
 
-Se desejar, você pode receber notificações Webhooks. Estas são enviadas de nossa API de Integrações para o seu sistema de recebimento por meio de uma chamada 'HTTP POST' em relação às mudanças de status apresentadas por uma intenção de pagamento.
+Se desejar, você pode receber notificações Webhooks. Estas são enviadas de nossa API de Integrações para o seu sistema de recebimento por meio de uma chamada `HTTP POST` em relação às mudanças de status apresentadas por uma intenção de pagamento.
 
 Para integrar notificações Webhook, siga as instruções [nesta documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks).
 

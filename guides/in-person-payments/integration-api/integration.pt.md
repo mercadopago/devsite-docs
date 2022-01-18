@@ -41,7 +41,7 @@ curl -X POST \
 -H "Content-Type: application/json" \
 -H 'Authorization: Bearer ${PROD_ACCESS_TOKEN}' \
 "https://api.mercadopago.com/users/test_user" \
--d '{"site_id":----[mla]----"MLA"------------ ----[mlb]----"MLB""------------ ----[mlm]----"MLM"------------}'
+-d '{"site_id":----[mla]----"MLA"------------ ----[mlb]----"MLB"------------ ----[mlm]----"MLM"------------}'
 ```
 Você pode gerar até 10 contas de usuário de teste simultaneamente. Lembre-se de que os usuários de teste expiram após 60 dias sem atividade no Mercado Pago.
 

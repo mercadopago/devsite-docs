@@ -1,6 +1,6 @@
 ## Glossário
 
-Alguns termos são novos e você pode não estar familiarizado com eles. Use este glossário para não se perder!
+Alguns termos são novos e você pode não estar familiarizado com eles. Use este glossário para não se perder:
 
 | Termo | Descrição |
 | --- | --- |
