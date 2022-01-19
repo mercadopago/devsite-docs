@@ -3,6 +3,8 @@
 
 Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones de Mercado Pago.
 
+---
+
 ## Enero 2022
 
 ### 11 de enero
