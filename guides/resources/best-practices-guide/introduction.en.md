@@ -4,7 +4,7 @@ To boost your business, we have created a series of UX best practices for checko
 
 Build your own checkout experience by implementing the [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction) or our [Plugins and platforms](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins) solutions and put into practice our tips. 
 
-![en best practices introduction]()
+![en best practices introduction](/images/best-practices-guide/EngIntroduccionBuenasPracticas.png)
 
 > NEXT_STEP_CARD_EN
 >

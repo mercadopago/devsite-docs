@@ -4,7 +4,7 @@ Para potenciar tu negocio, creamos una serie de buenas prácticas de UX para che
 
 Construye tu propia experiencia de checkout a través de la implementación de [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction) o nuestras soluciones de [Plugins y plataformas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins) y lleva a la práctica estos consejos.
 
-![es Introduccion Buenas practicas](/images/best-practices-guide/es-introduccion-buenaspracticas.png)
+![es Introduccion Buenas practicas](/images/best-practices-guide/EspIntroduccion.png)
 
 
 > NEXT_STEP_CARD_ES
