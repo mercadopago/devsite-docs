@@ -14,7 +14,7 @@ En esta documentación, detallaremos todos los pasos necesarios para integrar Me
 
 Para completar la integración, sigue los pasos a continuación, pero recuerda verificar los requisitos previos antes de empezar.
 
-> LEFT_BUTTON_REQUIRED_ES
+> NEXT_STEP_CARD_ES
 >
 > Requisitos previos
 >

@@ -19,7 +19,7 @@ Para integrar el Mercado Pago con PrestaShop, debes cumplir con los requisitos a
  
 Si se cumplen todos los requisitos previos, puedes instalar el plugin Mercado Pago en la plataforma PrestaShop.
  
-> LEFT_BUTTON_REQUIRED_ES
+> NEXT_STEP_CARD_ES
 >
 > Instalación del plugin
 >

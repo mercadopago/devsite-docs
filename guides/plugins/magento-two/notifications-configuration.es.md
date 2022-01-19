@@ -14,10 +14,21 @@ Para cada estado de pago, puedes elegir un estado de pedido. Entonces, cuando tu
 > Nota
 >
 > El módulo está preparado para recibir las notificaciones de pago de forma automática, es decir, sin la necesidad de configurar tu cuenta de Mercado Pago o el módulo.
-> <br>
+> <br/>
 > [Haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/introduction) para obtener más información sobre los tipos de notificaciones integradas por Mercado Pago.
 
 ¡Listo! El estado de notificación se ha configurado correctamente.
+
+## E-mail de notificación
+
+Habiendo seleccionado **Checkout API** para recibir pagos de tu tienda, es importante configurar el envío de correos electrónicos que notificarán al usuario de sus transacciones. Ve a continuación cómo personalizar el envío de **e-mail transaccional** en el panel de administración de Magento 2.
+
+1. Ve al menú **Marketing > Communications > Email Templates > Add New Template** y crea la nueva plantilla de e-mail.
+2. En **Stores > Settings > Configuration > Sales > Sales Emails**, agrega la plantilla creada en los ajustes de eventos en la plataforma (ejemplo: "pago aprobado").
+3. Una vez realizadas las configuraciones necesarias, instala y configura un **servidor SMTP** de tu elección para habilitar el envío de correos electrónicos.
+4. Envía un **e-mail de prueba** para asegurarte de que la plataforma está enviando correos electrónicos correctamente.
+
+¡Listo! El envío de correos electrónicos se ha configurado correctamente.
 
 > PREV_STEP_CARD_ES
 >

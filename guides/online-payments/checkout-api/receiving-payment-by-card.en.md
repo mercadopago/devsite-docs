@@ -68,13 +68,12 @@ Use the following form and add the styles of your choice.
 <!-- Step #2 -->
 <form id="form-checkout" >
    <input type="text" name="cardNumber" id="form-checkout__cardNumber" />
-   <input type="text" name="cardExpirationMonth" id="form-checkout__cardExpirationMonth" />
-   <input type="text" name="cardExpirationYear" id="form-checkout__cardExpirationYear" />
+   <input type="text" name="cardExpirationDate" id="form-checkout__cardExpirationDate" />
    <input type="text" name="cardholderName" id="form-checkout__cardholderName"/>
    <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail"/>
    <input type="text" name="securityCode" id="form-checkout__securityCode" />
-   <select name="issuer" id="form-checkout__issuer"></select>
-   <select name="identificationType" id="form-checkout__identificationType"></select>
+   <select name="issuer" id="form-checkout__issuer"></select>----[mla, mlb, mlu, mlc, mpe, mco]----
+   <select name="identificationType" id="form-checkout__identificationType"></select>------------
    <input type="text" name="identificationNumber" id="form-checkout__identificationNumber"/>
    <select name="installments" id="form-checkout__installments"></select>
    <button type="submit" id="form-checkout__submit">Pay</button>
@@ -112,13 +111,9 @@ const cardForm = mp.cardForm({
       id: "form-checkout__cardNumber",
       placeholder: "Card Number",
     },
-    cardExpirationMonth: {
-      id: "form-checkout__cardExpirationMonth",
-      placeholder: "MM",
-    },
-    cardExpirationYear: {
-      id: "form-checkout__cardExpirationYear",
-      placeholder: "YYYY",
+    cardExpirationDate: {
+      id: "form-checkout__cardExpirationDate",
+      placeholder: "Expiration date (MM/YYYY)",
     },
     securityCode: {
       id: "form-checkout__securityCode",
@@ -127,11 +122,11 @@ const cardForm = mp.cardForm({
     installments: {
       id: "form-checkout__installments",
       placeholder: "Installments",
-    },
+    },----[mla, mlb, mlu, mlc, mpe, mco]----
     identificationType: {
       id: "form-checkout__identificationType",
       placeholder: "Document Type",
-    },
+    },------------
     identificationNumber: {
       id: "form-checkout__identificationNumber",
       placeholder: "Document Number",
@@ -156,8 +151,8 @@ const cardForm = mp.cardForm({
         amount,
         token,
         installments,
-        identificationNumber,
-        identificationType,
+        identificationNumber----[mla, mlb, mlu, mlc, mpe, mco]----,
+        identificationType,------------
       } = cardForm.getCardFormData();
 
       fetch("/process_payment", {
@@ -174,8 +169,8 @@ const cardForm = mp.cardForm({
           description: "Product description",
           payer: {
             email,
-            identification: {
-              type: identificationType,
+            identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
+              type: identificationType,------------
               number: identificationNumber,
             },
           },
@@ -192,7 +187,7 @@ const cardForm = mp.cardForm({
       return () => {
         progressBar.setAttribute("value", "0");
       };
-    },
+    }
   },
 });
 ```
@@ -249,11 +244,12 @@ You can find payment status in _status_ value.
     $payment->issuer_id = (int)$_POST['issuer'];
 
     $payer = new MercadoPago\Payer();
-    $payer->email = $_POST['email'];
+    $payer->email = $_POST['cardholderEmail'];
     $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
-        "type" => $_POST['docType'],------------
-        "number" => $_POST['docNumber']
+        "type" => $_POST['identificationType'],------------
+        "number" => $_POST['identificationNumber']
     );
+    $payer->first_name = $_POST['cardholderName'];
     $payment->payer = $payer;
 
     $payment->save();
@@ -274,32 +270,13 @@ You can find payment status in _status_ value.
 var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken("YOUR_ACCESS_TOKEN");
 
-var payment_data = {
-  transaction_amount: Number(req.body.transactionAmount),
-  token: req.body.token,
-  description: req.body.description,
-  installments: Number(req.body.installments),
-  payment_method_id: req.body.paymentMethodId,
-  issuer_id: req.body.issuer,
-  payer: {
-    email: req.body.email,
-    identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
-      type: req.body.docType,------------
-      number: req.body.docNumber
-    }
-  }
-};
-
-mercadopago.payment.save(payment_data)
+mercadopago.payment.save(req.body)
   .then(function(response) {
-    res.status(response.status).json({
-      status: response.body.status,
-      status_detail: response.body.status_detail,
-      id: response.body.id
-    });
+    const { status, status_detail, id } = response.body;
+    res.status(response.status).json({ status, status_detail, id });
   })
   .catch(function(error) {
-    res.status(response.status).send(error);
+    console.error(error);
   });
 ```
 ```java
@@ -317,12 +294,13 @@ payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmou
        .setPaymentMethodId(request.getParameter("paymentMethodId"));
 
 Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
-identification.setType(request.getParameter("docType"))
-              .setNumber(request.getParameter("docNumber"));------------ ----[mlm]----
-identification.setNumber(request.getParameter("docNumber"));------------
+identification.setType(request.getParameter("identificationType"))
+              .setNumber(request.getParameter("identificationNumber"));------------ ----[mlm]----
+identification.setNumber(request.getParameter("identificationNumber"));------------
 
 Payer payer = new Payer();
-payer.setEmail(request.getParameter("email"))
+payer.setEmail(request.getParameter("cardholderEmail"))
+     .setFirstName(request.getParameter("cardholderName"))
      .setIdentification(identification);
 
 payment.setPayer(payer);
@@ -346,11 +324,12 @@ payment_data = {
   installments: params[:installments].to_i,
   payment_method_id: params[:paymentMethodId],
   payer: {
-    email: params[:email],
+    email: params[:cardholderEmail],
     identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
-      type: params[:docType],------------
-      number: params[:docNumber]
-    }
+      type: params[:identificationType],------------
+      number: params[:identificationNumber]
+    },
+    first_name: params[:cardholderName]
   }
 }
 
@@ -381,12 +360,13 @@ var paymentRequest = new PaymentCreateRequest
     PaymentMethodId = Request["paymentMethodId"],
     Payer = new PaymentPayerRequest
     {
-        Email = Request["email"],
+        Email = Request["cardholderEmail"],
         Identification = new IdentificationRequest
         {----[mla, mlb, mlu, mlc, mpe, mco]----
-            Type = Request["docType"],------------
-            Number = Request["docNumber"],
+            Type = Request["identificationType"],------------
+            Number = Request["identificationNumber"],
         },
+        FirstName = Request["cardholderName"]
     },
 };
 
@@ -410,11 +390,12 @@ payment_data = {
     "installments": int(request.POST.get("installments")),
     "payment_method_id": request.POST.get("payment_method_id"),
     "payer": {
-        "email": request.POST.get("email"),
+        "email": request.POST.get("cardholderEmail"),
         "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
-            "type": request.POST.get("type"), ------------
-            "number": request.POST.get("number")
+            "type": request.POST.get("identificationType"), ------------
+            "number": request.POST.get("identificationNumber")
         }
+        "first_name": request.POST.get("cardholderName")
     }
 }
 
@@ -500,14 +481,6 @@ Finally, you always need to be notified of new payments and status updates.  For
 > Checkout API
 >
 > Use our [complete integration examples](http://github.com/mercadopago/card-payment-sample) on GitHub to download instantly.
-
-<span></span>
-
-> GIT
->
-> Payment form
->
-> If you want to deploy other technology in your server, you can [download a complete payment form sample](https://github.com/mercadopago/card-payment-sample) from GitHub.
 
 ---
 ### Next steps

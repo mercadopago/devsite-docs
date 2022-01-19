@@ -1,0 +1,189 @@
+openapi: 3.0.0
+servers:
+  - url: https://api.mercadopago.com
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
+paths:
+  /point/integration-api/devices/{deviceid}/payment-intents:
+    post:
+      tags:
+      - $ref: '#/tags/mp-point'
+      summary: Create a payment intent
+      description: This endpoint allows to create a payment intent for a device
+      parameters:
+        - name: x-test-scope
+          in: header
+          description: This is a temporary header, it should be used just for development with the value "sandbox"
+          schema:
+            type: string
+            example: sandbox
+        - name: deviceId
+          in: path
+          description: identifier of the device that will have a payment intent queued
+          required: true
+          schema:
+            type: string
+            example: "{deviceId}"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                amount:
+                  type: integer
+                  format: int64
+                  required: true
+                  example: 1500
+                  minimum: 1
+                  description: A positive integer representing how much to charge. The value must have two decimal places in the integer part (e.g., 175 to charge $1.75). The value must be between [100, 5000000] (e.g., a value to charge between $1,00 to $50.000,00 BRL).
+                description:
+                  type: string
+                  example: "your payment intent description"
+                  description: payment intent description
+                payment:
+                  type: object
+                  description: properties of the payment intent
+                  properties:
+                    installments:
+                      type: integer
+                      example: 1
+                      description: An integer value that must be between 1 and 72, this value can be setted only if type field is equal to credit_card
+                    type:
+                      type: string
+                      example: credit_card
+                      description: An alphanumeric value that must be one of this [credit_card, debit_card or voucher_card]
+                    installments_cost:
+                      type: string
+                      example: "seller"
+                      description: A string value that must be one of this [seller or buyer], this value can be setted only if type field is equal to credit_card
+                    voucher_type:
+                      type: string
+                      description: A string value that must be one of this [sodexo or alelo], this value can be setted only if type field is equal to voucher_card
+                  example: 
+                   installments: 1
+                   type: "credit_card"
+                   installments_cost: "buyer"
+                additional_info:
+                  type: object
+                  description: payment intent additional info
+                  properties:
+                    external_reference:
+                      type: string
+                      example: "4561ads-das4das4-das4754-das456"
+                      description: An alphanumeric value can be an identificator in your application. It will be returned in the Webhook notification
+                    print_on_terminal:
+                      type: boolean
+                      example: true
+                      description: A boolean value that determines if you want to print the ticket on the device
+              required: 
+               - amount
+
+      responses:
+        '200':
+          description: Success - Payment intent succesfully created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: "7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1"
+                    description: payment intent identifier
+                  device_id:
+                    type: string
+                    example: "INGENICO_MOVE2500__12345678"
+                    description: identifier of the device that have a payment intent queued
+                  amount:
+                    type: integer
+                    format: int64
+                    example: 1500
+                    description: payment intent amount
+                  description:
+                    type: string
+                    example: "your payment intent description"
+                    description: payment intent description
+                  payment:
+                    type: object
+                    properties:
+                      installments:
+                        type: integer
+                        example: 1
+                        description: An integer value that must be between 1 and 72, this value can be setted only if type field is equal to credit_card
+                      type:
+                        type: string
+                        example: "credit_card"
+                        description: An alphanumeric value that must be one of this [credit_card, debit_card or voucher_card]
+                      installments_cost:
+                        type: string
+                        example: "seller"
+                        description: A string value that must be one of this [seller or buyer], this value can be setted only if type field is equal to credit_card
+                  additional_info:
+                    type: object
+                    properties:
+                      external_reference:
+                        type: string
+                        example: "someone-reference-from-your-application"
+                        description: An alphanumeric value can be an identificator in your application. It will be returned in the Webhook notification
+                      print_on_terminal:
+                        type: boolean
+                        example: true
+                        description: A boolean value that determines if you want to print the ticket on the device
+        '401':
+            description: Error
+            content:
+              application/json:
+                schema:
+                  type: object
+                  properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 401-- Unauthorized - Token is invalid
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 400-- Bad request - Field is missing o incorrect
+        '403':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 403-- Forbidden - Integrator isn't registered
+        '409':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 409-- Conflict error - Device has a queued payment intent
+        '500':
+          description: Error
+          content:
+            application/json:
+              schema:
+                 type: object
+                 properties:
+                    errorKey:
+                      type: string
+                      enum:
+                        - 500-- Internal server error

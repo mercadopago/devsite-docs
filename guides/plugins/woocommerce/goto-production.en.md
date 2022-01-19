@@ -18,7 +18,7 @@ Follow the steps below to make the change:
 
 Done! Your store is in the Production environment and ready to process your sales.
 
-> LEFT_BUTTON_REQUIRED_EN
+> NEXT_STEP_CARD_EN
 >
 > Sales processing
 >

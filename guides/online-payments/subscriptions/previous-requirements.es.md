@@ -18,7 +18,17 @@ Ten en cuenta que el monto mínimo permitido para crear una suscripción es de $
 ------------
 
 ----[mco]----
-Ten en cuenta que el monto mínimo permitido para crear una suscripción es de $1500 y el máximo es de $30.000.000.
+Ten en cuenta que el monto mínimo permitido para crear una suscripción es de $ 1500 y el máximo es de $ 30.000.000.
+
+------------
+
+----[mpe]----
+Ten en cuenta que el monto mínimo permitido para crear una suscripción es de $ 2 y el máximo es de $ 1.500.
+
+------------
+
+----[mlu]----
+Ten en cuenta que el monto mínimo permitido para crear una suscripción es de $ 15 y el máximo es de $ 300.000.
 
 ------------
 
