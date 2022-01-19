@@ -6,6 +6,7 @@ Construye tu propia experiencia de checkout a través de la implementación de [
 
 ![es Introduccion Buenas practicas](/images/best-practices-guide/es-introduccion-buenaspracticas.png)
 
+
 > NEXT_STEP_CARD_ES
 >
 > Aspectos generales de tu checkout
