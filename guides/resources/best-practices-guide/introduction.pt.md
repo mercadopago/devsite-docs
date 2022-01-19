@@ -6,7 +6,7 @@ Crie sua própria experiência de checkout com a implementação do [Checkout AP
 
 ![en best practices introduction](/images/best-practices-guide/PortIntroduccionBuenasPracticas.png)
 
-> NEXT_STEP_CARD_ES
+> NEXT_STEP_CARD_PT
 >
 > Aspectos gerais do seu checkout
 >
