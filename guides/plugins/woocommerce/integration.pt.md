@@ -9,7 +9,6 @@ Atualmente existem 4 tipos de checkout disponíveis para o WooCommerce. Caso que
 
 Na tela de gerenciamento do plugin, você deverá preencher os campos solicitados de acordo com suas informações de negócio considerando as seções abaixo.
 
-
 ## País de operação
 
 No campo **País de operação** você deverá selecionar o país no qual sua conta do Mercado Pago opera. 
@@ -80,9 +79,20 @@ Além das configurações anteriores, você encontra diferentes opções relacio
 > Antes de configurar o Pix como meio de pagamento, recomendamos [baixar a última versão](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) do plugin Mercado Pago para WooCommerce e [cadastrar sua chave Pix](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required) no Mercado Pago. 
 ------------
 
+## E-mail de notificação
+
+Tendo selecionado o **Checkout Transparente** para receber os pagamento de sua loja, é importante configurar o envio de e-mails que notificarão o usuário de suas transações. Veja abaixo como personalizar o envio do **e-mail transacional** no painel de gerenciamento do WooCommerce.
+
+1. Em **E-mails**, habilite o envio a ser configurado selecionando a opção ˜ativar esse e-mail de notificação".
+2. Personalize o template do e-mail com: os destinatários, o assunto do e-mail e o cabeçalho.
+3. Insira o **conteúdo** a ser enviado e selecione o tipo do e-mail.
+6. Indique também o nome e o endereço de e-mail do remetente, além do logo e das cores da sua loja.
+4. Feitas as devidas configurações, instale e configure um **servidor de SMTP** de sua preferência para viabilizar o envio dos e-mails. 
+5. Envie um **e-mail de teste** para garantir que a plataforma está enviando os e-mails corretamente.
+
 Pronto! Agora o plugin do Mercado Pago com o WooCommerce está integrado à sua loja e pode ser testado realizando compras que serão apenas para fim de validar o funcionamento do plugin, mas não movimentará qualquer valor.
 
-> LEFT_BUTTON_REQUIRED_PT
+> NEXT_STEP_CARD_PT
 >
 > Teste de compras
 >

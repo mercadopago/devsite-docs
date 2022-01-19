@@ -19,7 +19,7 @@ Com o certificado ativado e os testes finalizados, você poderá tirar sua loja 
 
 Pronto! Sua loja está em Produção e habilitada para realizar suas vendas.
 
-> LEFT_BUTTON_REQUIRED_PT
+> NEXT_STEP_CARD_PT
 >
 > Processamento de vendas
 >

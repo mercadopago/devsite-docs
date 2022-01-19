@@ -14,7 +14,7 @@ Nesta documentação, detalharemos todas as etapas necessárias para realizar a 
 
 Para completar a integração, siga os passos abaixo, mas lembre-se de conferir os pré-requisitos antes de iniciar.
 
-> LEFT_BUTTON_REQUIRED_PT
+> NEXT_STEP_CARD_PT
 >
 > Pré requisitos
 >

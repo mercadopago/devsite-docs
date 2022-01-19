@@ -14,7 +14,7 @@ Pronto! Você verá o plugin instalado na seção **Personalizar** do seu painel
 >
 > Caso você tenha problemas durante a instalação do plugin e precise entrar em contato com nosso suporte, é possível que você seja solicitado a realizar a instalação de forma manual. Veja a [FAQ](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/faq) para detalhes de como fazê-lo. Ainda, mantenha o plugin sempre atualizado com a última versão para garantir a segurança dos dados e o funcionamento da integração.
   
-> LEFT_BUTTON_REQUIRED_PT
+> NEXT_STEP_CARD_PT
 >
 > Configuração da integração
 >
