@@ -8,7 +8,7 @@ Please note that the minimum amount allowed to create a subscription is $ 2 and 
 ------------
 
 ----[mlb]----
-Please note that the minimum amount allowed to create a subscription is R$ 0.5 and the maximum is R$ 50,000.
+Please note that the minimum amount allowed to create a subscription is R$ 0.5 and the maximum is R$ 700.
 
 ------------
 
