@@ -15,10 +15,10 @@ a una cuenta ya existente o [Crear una cuenta nueva](https://www.mercadopago[FAK
 Luego, necesitarás crear una aplicación para obtener las credenciales. Es fácil, te contamos cómo hacerlo:
 
 1. Ingresa a [Tus integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications).
-1. Dentro de la sección **Tus aplicaciones**, haz clic en el signo "+" para crear tu primera aplicación, o elige “Crear nueva aplicación” si ya tienes otras.
-1. Ponle un nombre a tu aplicación con el que puedas identificarla más adelante.
-1. Elige "Mercado Pago Point" como producto que vas a integrar.
-1. Acepta nuestros Términos y Condiciones. 
+2. Dentro de la sección **Tus aplicaciones**, haz clic en el signo "+" para crear tu primera aplicación, o elige “Crear nueva aplicación” si ya tienes otras.
+3. Ponle un nombre a tu aplicación con el que puedas identificarla más adelante.
+4. Elige "Mercado Pago Point" como producto que vas a integrar.
+5. Acepta nuestros Términos y Condiciones. 
 
 ¡Y listo!
 
@@ -41,7 +41,7 @@ curl -X POST \
 -H "Content-Type: application/json" \
 -H 'Authorization: Bearer ${PROD_ACCESS_TOKEN}' \
 "https://api.mercadopago.com/users/test_user" \
--d '{"site_id":----[mla]----"MLA"------------ ----[mlb]----"MLB""------------ ----[mlm]----"MLM"------------}'
+-d '{"site_id":----[mla]----"MLA"------------ ----[mlb]----"MLB"------------ ----[mlm]----"MLM"------------}'
 ```
 Puedes generar hasta 10 cuentas de usuarios de prueba en simultáneo. Ten en cuenta que los usuarios de prueba caducan luego de 60 días sin actividad en Mercado Pago. 
 
@@ -80,12 +80,18 @@ Recibirás una respuesta como esta:
 }
 ```
 
-> En caso de que requieras utilizar el dispositivo en el modo no integrado debes configurar el campo "operating_mode" con el valor `STANDALONE`.
+> En caso de que requieras utilizar el dispositivo en el modo no integrado debes configurar el campo `operating_mode` con el valor `STANDALONE`.
 
 
-### Próximos pasos
+> PREV_STEP_CARD_ES
+>
+> Introducción
+>
+> Lee nuestra introducción a API de Integraciones Point.
+>
+> [Introducción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/integration-api/introduction)
 
-> LEFT_BUTTON_RECOMMENDED_ES
+> NEXT_STEP_CARD_ES
 >
 > Comienza a procesar tus pagos
 >
