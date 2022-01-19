@@ -44,7 +44,6 @@ Se depois de habilitar esse recurso sua integração não estiver funcionando co
 
 Ir para a documentação do relatório de [Dinheiro em conta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/account-money/api#bookmark_atributos_configuráveis) e de [Liberações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/api#bookmark_atributos_configuráveis).
 
-
 ### 05 de janeiro
 
 > CHANGELOG
