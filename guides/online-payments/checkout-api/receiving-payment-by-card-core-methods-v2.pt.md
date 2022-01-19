@@ -612,28 +612,11 @@ curl -X POST \
 
 ## Exemplos para download
 
-----[mlb]----
-> NOTE
->
-> Checkout Transparente
->
-> Disponibilizamos [exemplos completos de integração](https://drive.google.com/file/d/10csLR_4NwMbXtHObxZ1Ej9fvB2Zkr7AS/view?usp=sharing) para que você possa fazer o download imediatamente.
-------------
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> NOTE
->
-> Checkout API
->
-> Disponibilizamos [exemplos completos de integração](https://drive.google.com/file/d/10csLR_4NwMbXtHObxZ1Ej9fvB2Zkr7AS/view?usp=sharing) para que você possa fazer o download imediatamente.
-------------
-
-<span></span>
-
 > GIT
 >
 > Formulário de pagamento
 >
-> Se você deseja implementar seu servidor com alguma outra tecnologia, te deixamos um [exemplo completo do formulário de pagamento](https://github.com/mercadopago/card-payment-sample) no GitHub para que você possa fazer o download.
+> Se você deseja implementar seu servidor com alguma outra tecnologia, te deixamos um [exemplo completo do formulário de pagamento](https://drive.google.com/file/d/10csLR_4NwMbXtHObxZ1Ej9fvB2Zkr7AS/view?usp=sharing) no GitHub para que você possa fazer o download.
 
 ## Adicionar eventos customizados
 

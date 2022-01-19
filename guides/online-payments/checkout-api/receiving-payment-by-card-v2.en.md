@@ -466,11 +466,11 @@ curl -X POST \
 
 ## Sample projects
 
-> NOTE
+> GIT
 >
 > Checkout API
 >
-> Use our [complete integration examples](https://drive.google.com/file/d/12gSCPLfZCE36iKFbM4BTUwf6lnM7lVEL/view?usp=sharing) to download instantly.
+> Use our [complete integration examples](https://github.com/mercadopago/card-payment-sample/tree/feature/secure-fields) to download instantly.
 
 <span></span>
 
@@ -478,7 +478,7 @@ curl -X POST \
 >
 > Payment form
 >
-> If you want to deploy other technology in your server, you can [download a complete payment form sample](https://github.com/mercadopago/card-payment-sample) from GitHub.
+> If you want to deploy other technology in your server, you can [download a complete payment form sample](https://drive.google.com/file/d/12gSCPLfZCE36iKFbM4BTUwf6lnM7lVEL/view?usp=sharing) from GitHub.
 
 ---
 ### Next steps
