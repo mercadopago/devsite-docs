@@ -8,7 +8,7 @@ Observe que o valor mínimo permitido para criar uma assinatura é de $ 2 e o m�
 ------------
 
 ----[mlb]----
-Observe que o valor mínimo permitido para criar uma assinatura é de R$ 0,5 e o máximo é de R$ 50.000.
+Observe que o valor mínimo permitido para criar uma assinatura é de R$ 0,5 e o máximo é de R$ 700.
 
 ------------
 
@@ -22,6 +22,15 @@ Observe que o valor mínimo permitido para criar uma assinatura é de $ 1500 e o
 
 ------------
 
+----[mpe]----
+Observe que o valor mínimo permitido para criar uma assinatura é de $ 2 e o máximo é de $ 1.500.
+
+------------
+
+----[mlu]----
+Observe que o valor mínimo permitido para criar uma assinatura é de $ 15 e o máximo é de $ 300.000.
+
+------------
 
 ## Primeiros passos
 

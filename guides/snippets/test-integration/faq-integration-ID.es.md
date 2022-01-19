@@ -1,4 +1,5 @@
-### 1. ¿Qué es el integrator ID?
+### ¿Qué es el integrator ID?
+
 Es el número de identificación que recibe un desarrollador o asociado de Mercado Pago al realizar su certificación.
 
 Esta identificación no es obligatoria para que la integración funcione, pero es a través de ella que reconocemos qué integraciones fueron realizadas por qué asociado.

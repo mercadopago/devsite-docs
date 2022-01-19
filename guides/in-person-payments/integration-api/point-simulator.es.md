@@ -16,7 +16,7 @@ Al utilizar el simulador por primera vez, deberás ingresar tus llaves y selecci
 
 Para utilizar **PDV Mode** necesitarás tu llave Access Token. Si estás utilizando un Access Token de prueba, el simulador te asignará un dispositivo virtual.
 
-Al utilizar **Device Mode**, debes ingresar tu Access Token y tu Device Id obtenido al [listar tus dispositivos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/integration-api/create-payment-intent#bookmark_Crea_la_intención_de_pago)
+Al utilizar **Device Mode**, debes ingresar tu Access Token y tu Device Id obtenido al [listar tus dispositivos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/integration-api/create-payment-intent#bookmark_crea_la_intención_de_pago)
 
 ### 2. Simula una intención de pago
 
@@ -42,3 +42,11 @@ Si el paso anterior fue exitoso, puedes dar clic en la animación de la tarjeta,
 
 Si realizaste los pasos de configuración de las [notificaciones Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/integration-api/integration#bookmark_3._Prepara_y_configura_tus_notificaciones_de_Webhook), es momento de que revises tus registros. Allí verás que fue enviada la notificación del estado de la transacción.
 
+
+> PREV_STEP_CARD_ES
+>
+> Configura las notificaciones
+>
+> Te explicamos cómo comenzar a recibir notificaciones de Webhooks.
+>
+> [Configura las notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/integration-api/notifications)

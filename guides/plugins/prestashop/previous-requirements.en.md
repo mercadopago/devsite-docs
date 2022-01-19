@@ -19,7 +19,7 @@ In order to integrate Mercado Pago with PrestaShop, you must meet the requiremen
  
 If all prerequisites are met, you can install the Mercado Pago plugin on the PrestaShop platform.
  
-> LEFT_BUTTON_REQUIRED_EN
+> NEXT_STEP_CARD_EN
 >
 > Plugin installation
 >

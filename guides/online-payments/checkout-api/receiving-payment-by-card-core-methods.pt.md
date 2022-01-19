@@ -71,7 +71,7 @@ Pode adicionar todo o que precisar, alterar o atributo `label` sugerido e somar-
 No exemplo a seguir, assume-se que os dados `transactionAmount` e `description` foram obtidos no passo prévio onde o cliente selecionou o produto ou serviço que deseja pagar.
 
 ```html
-<form id="form-checkout">
+<form id="form-checkout" method="POST" action="/process_payment">
     <input type="text" id="form-checkout__cardNumber" placeholder="Número do cartão" />
     <input type="text" id="form-checkout__cardExpirationMonth" placeholder="Mês de vencimiento (MM)" />
     <input type="text" id="form-checkout__cardExpirationYear" placeholder="Ano de vencimiento (YY o YYYY)" />
@@ -80,17 +80,17 @@ No exemplo a seguir, assume-se que os dados `transactionAmount` e `description` 
     <input type="text" id="form-checkout__securityCode" placeholder="Código de segurança"/>
     <select name="issuer" id="form-checkout__issuer">
         <option value="" disabled selected>Selecione o emissor</option>
-    </select>
+    </select>----[mla, mlb, mlu, mlc, mpe, mco]----
     <select name="identificationType" id="form-checkout__identificationType">
         <option value="" disabled selected>Tipo de documento</option>
-    </select>
+    </select>------------
     <input type="text" name="identificationNumber" id="form-checkout__identificationNumber" placeholder="N​ú​mero do documento​" />
     <select name="installments" id="form-checkout__installments">
         <option value="" disabled selected>Escolha a quantidade de parcelas</option>
     </select>
-    <input id="MPHiddenInputToken" name="MPHiddenInputToken" type="hidden" />
-    <input id="MPHiddenInputPaymentMethod" name="MPHiddenInputPaymentMethod" type="hidden" />
-    <input id="transactionAmmount" name="transactionAmmount" type="hidden" value="100"/>
+    <input id="token" name="token" type="hidden" />
+    <input id="paymentMethodId" name="paymentMethodId" type="hidden" />
+    <input id="transactionAmount" name="transactionAmount" type="hidden" value="100"/>
     <input id="description" name="description" type="hidden" value="product description" />
     <button type="submit" id="form-checkout__submit">Pagar</button>
 </form>
@@ -112,8 +112,8 @@ Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
 
 <script>
 const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-
-// Add Step #getIdentificationTypes
+----[mla, mlb, mlu, mlc, mpe, mco]----
+// Add Step #getIdentificationTypes------------
 // Add Step #getPaymentMethods
 // Add Step #getIssuers
 // Add Step #getInstallments
@@ -132,7 +132,7 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 
 Um dos campos obrigatórios é o tipo de documento. Utilize a lista de documentos no momento de completar os dados.
 
-Incluindo o elemento do tipo `select` com o id: `form-checkout__docType` que está no formulário, poderá preencher automaticamente as opções disponíveis quando chamar a função a seguir:
+Incluindo o elemento do tipo `select` com o id: `form-checkout__identificationType` que está no formulário, poderá preencher automaticamente as opções disponíveis quando chamar a função a seguir:
 
 ```javascript
 // Step #getIdentificationTypes
@@ -163,9 +163,9 @@ function createSelectOptions(elem, options, labelsAndKeys = { label : "name", va
 (async function getIdentificationTypes () {
    try {
        const identificationTypes = await mp.getIdentificationTypes();
-       const docTypeElement = document.getElementById('form-checkout__identificationType');
+       const identificationTypeElement = document.getElementById('form-checkout__identificationType');
 
-       createSelectOptions(docTypeElement, identificationTypes)
+       createSelectOptions(identificationTypeElement, identificationTypes)
    }catch(e) {
        return console.error('Error getting identificationTypes: ', e);
    }
@@ -184,21 +184,33 @@ Valide os dados dos seus clientes enquanto são preenchidos para evitar erros e 
 // Step #getPaymentMethods
 const cardNumberElement = document.getElementById('form-checkout__cardNumber');
 
+function clearHTMLSelectChildrenFrom(element) {
+    const currOptions = [...element.children];
+    currOptions.forEach(child => child.remove());
+}
+
 cardNumberElement.addEventListener('keyup', async () => {
    try {
-      const paymentMethodElement = document.getElementById('MPHiddenInputPaymentMethod');
+       const paymentMethodElement = document.getElementById('paymentMethodId');
+       const issuerElement = document.getElementById('form-checkout__issuer');
+       const installmentsElement = document.getElementById('form-checkout__installments');
        let cardNumber = cardNumberElement.value;
 
-       if (cardNumber.length < 6 && paymentMethodElement.value) return paymentMethodElement.value = "";
+       if (cardNumber.length < 6 && paymentMethodElement.value) {
+           clearHTMLSelectChildrenFrom(issuerElement);
+           clearHTMLSelectChildrenFrom(installmentsElement);
+           paymentMethodElement.value = "";
+           return
+       }
 
        if (cardNumber.length >= 6 && !paymentMethodElement.value) {
            let bin = cardNumber.substring(0,6);
            const paymentMethods = await mp.getPaymentMethods({'bin': bin});
 
-           const { id: paymentMethodID, additional_info_needed, issuer } = paymentMethods.results[0];
+           const { id: paymentMethodId, additional_info_needed, issuer } = paymentMethods.results[0];
 
            // Assign payment method ID to a hidden input.
-           paymentMethodElement.value = paymentMethodID;
+           paymentMethodElement.value = paymentMethodId;
 
            // If 'issuer_id' is needed, we fetch all issuers (getIssuers()) from bin.
            // Otherwise we just create an option with the unique issuer and call getInstallments().
@@ -227,10 +239,10 @@ Adicione o seguinte código para obter o `issuer_id`:
 const getIssuers = async () => {
    try {
        const cardNumber = document.getElementById('form-checkout__cardNumber').value;
-       const paymentMethodId = document.getElementById('MPHiddenInputPaymentMethod').value;
+       const paymentMethodId = document.getElementById('paymentMethodId').value;
        const issuerElement = document.getElementById('form-checkout__issuer');
 
-       const issuers = await mp.getIssuers({paymentMethodId: paymentMethodID, bin: cardNumber.slice(0,6)});
+       const issuers = await mp.getIssuers({paymentMethodId, bin: cardNumber.slice(0,6)});
 
        createSelectOptions(issuerElement, issuers);
 
@@ -253,7 +265,7 @@ const getInstallments = async () => {
        const cardNumber = document.getElementById('form-checkout__cardNumber').value; 
 
        const installments = await mp.getInstallments({
-           amount: document.getElementById('transactionAmmount').value,
+           amount: document.getElementById('transactionAmount').value,
            bin: cardNumber.slice(0,6),
            paymentTypeId: 'credit_card'
        });
@@ -276,15 +288,15 @@ formElement.addEventListener('submit', e => createCardToken(e));
 
 const createCardToken = async (event) => {
    try {
-       const tokenElement = document.getElementById('MPHiddenInputToken');
+       const tokenElement = document.getElementById('token');
 
        if (!tokenElement.value) {
            event.preventDefault();
 
            const token = await mp.createCardToken({
                cardNumber: document.getElementById('form-checkout__cardNumber').value,
-               cardholderName: document.getElementById('form-checkout__cardholderName').value,
-               identificationType: document.getElementById('form-checkout__identificationType').value,
+               cardholderName: document.getElementById('form-checkout__cardholderName').value,----[mla, mlb, mlu, mlc, mpe, mco]----
+               identificationType: document.getElementById('form-checkout__identificationType').value,------------
                identificationNumber: document.getElementById('form-checkout__identificationNumber').value,
                securityCode: document.getElementById('form-checkout__securityCode').value,
                cardExpirationMonth: document.getElementById('form-checkout__cardExpirationMonth').value,
@@ -303,7 +315,7 @@ const createCardToken = async (event) => {
 
 O método `createCardToken` retornará um token com a representação segura do cartão.
 
-Tomaremos o token ID da resposta e a salvaremos em um atributo oculto que denominaremos `MPHiddenInputToken`, para depois enviar o formulário para seus servidores.
+Tomaremos o token ID da resposta e a salvaremos em um atributo oculto que denominaremos `token`, para depois enviar o formulário para seus servidores.
 
 
 > WARNING
@@ -350,8 +362,8 @@ Encontre o estado do pagamento no campo _status_.
     $payer = new MercadoPago\Payer();
     $payer->email = $_POST['email'];
     $payer->identification = array(----[mla, mlb, mlu, mlc, mpe, mco]----
-        "type" => $_POST['docType'],------------
-        "number" => $_POST['docNumber']
+        "type" => $_POST['identificationType'],------------
+        "number" => $_POST['identificationNumber']
     );
     $payment->payer = $payer;
 
@@ -384,8 +396,8 @@ var payment_data = {
   payer: {
     email: req.body.email,
     identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
-      type: req.body.docType,------------
-      number: req.body.docNumber
+      type: req.body.identificationType,------------
+      number: req.body.identificationNumber
     }
   }
 };
@@ -399,7 +411,7 @@ mercadopago.payment.save(payment_data)
     });
   })
   .catch(function(error) {
-    res.status(response.status).send(error);
+    console.error(error)
   });
 ```
 ```java
@@ -417,9 +429,9 @@ payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmou
        .setPaymentMethodId(request.getParameter("paymentMethodId"));
 
 Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
-identification.setType(request.getParameter("docType"))
-              .setNumber(request.getParameter("docNumber"));------------ ----[mlm]----
-identification.setNumber(request.getParameter("docNumber"));------------
+identification.setType(request.getParameter("identificationType"))
+              .setNumber(request.getParameter("identificationNumber"));------------ ----[mlm]----
+identification.setNumber(request.getParameter("identificationNumber"));------------
 
 Payer payer = new Payer();
 payer.setEmail(request.getParameter("email"))
@@ -448,8 +460,8 @@ payment_data = {
   payer: {
     email: params[:email],
     identification: {----[mla, mlb, mlu, mlc, mpe, mco]----
-      type: params[:docType],------------
-      number: params[:docNumber]
+      type: params[:identificationType],------------
+      number: params[:identificationNumber]
     }
   }
 }
@@ -484,8 +496,8 @@ var paymentRequest = new PaymentCreateRequest
         Email = Request["email"],
         Identification = new IdentificationRequest
         {----[mla, mlb, mlu, mlc, mpe, mco]----
-            Type = Request["docType"],------------
-            Number = Request["docNumber"],
+            Type = Request["identificationType"],------------
+            Number = Request["identificationNumber"],
         },
     },
 };
@@ -593,31 +605,6 @@ Te recomendamos usar as [mensagens de respostas](https://www.mercadopago[FAKER][
 Por último, é importante que esteja sempre informado sobre a criação nos novos pagamentos e as atualizações dos seus estados. Por exemplo se foram aprovados, rejeitados ou caso encontram-se pendentes.
 
 [Configure notificações webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks) ou [notificações IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn).
-
-## Exemplos para download
-
-----[mlb]----
-> GIT
->
-> Checkout Transparente
->
-> Disponibilizamos [exemplos completos de integração](http://github.com/mercadopago/card-payment-sample) no GitHub para que você possa fazer o download imediatamente.
-------------
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> GIT
->
-> Checkout API
->
-> Disponibilizamos [exemplos completos de integração](http://github.com/mercadopago/card-payment-sample) no GitHub para que você possa fazer o download imediatamente.
-------------
-
-<span></span>
-
-> GIT
->
-> Formulário de pagamento
->
-> Se você deseja implementar seu servidor com alguma outra tecnologia, te deixamos um [exemplo completo do formulário de pagamento](https://github.com/mercadopago/card-payment-sample) no GitHub para que possa baixar.
 
 ---
 ### Próximos passos

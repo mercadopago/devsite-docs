@@ -1,6 +1,6 @@
 # Integra con Checkout Pro
 
-La integración con el Checkout Pro de Mercado Pago te permite cobrar a través de nuestro formulario web desde cualquier dispositivo de manera simple, rápida y segura. 
+La integración con el Checkout Pro de Mercado Pago te permite cobrar a través de nuestro formulario web desde cualquier dispositivo de manera simple, rápida y segura.
 
 > NOTE
 >
@@ -34,32 +34,37 @@ require __DIR__ .  '/vendor/autoload.php';
 MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 ?>
 ```
+
 ```node
 // SDK de Mercado Pago
-const mercadopago = require ('mercadopago');
+const mercadopago = require("mercadopago");
 // Agrega credenciales
 mercadopago.configure({
-  access_token: 'PROD_ACCESS_TOKEN'
+  access_token: "PROD_ACCESS_TOKEN",
 });
 ```
+
 ```java
 // SDK de Mercado Pago
 import com.mercadopago.MercadoPago;
 // Agrega credenciales
 MercadoPago.SDK.setAccessToken("PROD_ACCESS_TOKEN");
 ```
+
 ```ruby
 # SDK de Mercado Pago
 require 'mercadopago'
 # Agrega credenciales
 sdk = Mercadopago::SDK.new('PROD_ACCESS_TOKEN')
 ```
+
 ```csharp
 // SDK de Mercado Pago
  using MercadoPago.Config;
  // Agrega credenciales
 MercadoPagoConfig.AccessToken = "PROD_ACCESS_TOKEN";
 ```
+
 ```python
 # SDK de Mercado Pago
 import mercadopago
@@ -75,7 +80,7 @@ En seguida, configura la preferencia según tu producto o servicio:
 > Ten en cuenta que es necesario configurar las `back_urls` si deseas volver a tu sitio al finalizar el pago. Para más información, visita la sección [Integración avanzada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/advanced-integration#bookmark_url_de_retorno).
 
 [[[
- ```php
+```php
 <?php
 // Crea un objeto de preferencia
 $preference = new MercadoPago\Preference();
@@ -89,26 +94,29 @@ $preference->items = array($item);
 $preference->save();
 ?>
 ```
+
 ```node
 // Crea un objeto de preferencia
 let preference = {
   items: [
     {
-      title: 'Mi producto',
+      title: "Mi producto",
       unit_price: 100,
       quantity: 1,
-    }
-  ]
+    },
+  ],
 };
 
-mercadopago.preferences.create(preference)
-.then(function(response){
-// Este valor reemplazará el string "<%= global.id %>" en tu HTML
-  global.id = response.body.id;
-}).catch(function(error){
-  console.log(error);
-});
+mercadopago.preferences
+  .create(preference)
+  .then(function (response) {
+    // En esta instancia deberás asignar el valor dentro de response.body.id por el ID de preferencia solicitado en el siguiente paso
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
 ```
+
 ```java
 // Crea un objeto de preferencia
 Preference preference = new Preference();
@@ -121,6 +129,7 @@ item.setTitle("Mi producto")
 preference.appendItem(item);
 preference.save();
 ```
+
 ```ruby
 # Crea un objeto de preferencia
 preference_data = {
@@ -138,6 +147,7 @@ preference = preference_response[:response]
 # Este valor reemplazará el string "<%= @preference_id %>" en tu HTML
 @preference_id = preference['id']
 ```
+
 ```csharp
 // Crea el objeto de request de la preference
 var request = new PreferenceRequest
@@ -158,6 +168,7 @@ var request = new PreferenceRequest
 var client = new PreferenceClient();
 Preference preference = await client.CreateAsync(request);
 ```
+
 ```python
 # Crea un ítem en la preferencia
 preference_data = {
@@ -173,6 +184,7 @@ preference_data = {
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
 ```
+
 ```curl
 curl -X POST \
   'https://api.mercadopago.com/checkout/preferences' \
@@ -194,8 +206,9 @@ curl -X POST \
 ------------
 
 ----[mlc, mco]----
+
 [[[
- ```php
+```php
 <?php
 // Crea un objeto de preferencia
 $preference = new MercadoPago\Preference();
@@ -209,26 +222,30 @@ $preference->items = array($item);
 $preference->save();
 ?>
 ```
+
 ```node
 // Crea un objeto de preferencia
 let preference = {
   items: [
     {
-      title: 'Mi producto',
+      title: "Mi producto",
       unit_price: 100,
       quantity: 1,
-    }
-  ]
+    },
+  ],
 };
 
-mercadopago.preferences.create(preference)
-.then(function(response){
-// Este valor reemplazará el string "<%= global.id %>" en tu HTML
-  global.id = response.body.id;
-}).catch(function(error){
-  console.log(error);
-});
+mercadopago.preferences
+  .create(preference)
+  .then(function (response) {
+    // Este valor reemplazará el string "<%= global.id %>" en tu HTML
+    global.id = response.body.id;
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
 ```
+
 ```java
 // Crea un objeto de preferencia
 Preference preference = new Preference();
@@ -241,6 +258,7 @@ item.setTitle("Mi producto")
 preference.appendItem(item);
 preference.save();
 ```
+
 ```ruby
 # Crea un objeto de preferencia
 preference_data = {
@@ -258,6 +276,7 @@ preference = preference_response[:response]
 # Este valor reemplazará el string "<%= @preference_id %>" en tu HTML
 @preference_id = preference['id']
 ```
+
 ```csharp
 // Crea el objeto de request de la preference
 var request = new PreferenceRequest
@@ -278,6 +297,7 @@ var request = new PreferenceRequest
 var client = new PreferenceClient();
 Preference preference = await client.CreateAsync(request);
 ```
+
 ```python
 # Crea un ítem en la preferencia
 preference_data = {
@@ -293,6 +313,7 @@ preference_data = {
 preference_response = sdk.preference().create(preference_data)
 preference = preference_response["response"]
 ```
+
 ```curl
 curl -X POST \
   'https://api.mercadopago.com/checkout/preferences' \
@@ -347,21 +368,21 @@ Después, configura las credenciales de la SDK para su uso e inicializa tu check
 [[[
 ```html
 <script>
-// Agrega credenciales de SDK
-  const mp = new MercadoPago('PUBLIC_KEY', {
-        locale: 'es-AR'
+  // Agrega credenciales de SDK
+  const mp = new MercadoPago("PUBLIC_KEY", {
+    locale: "es-AR",
   });
 
   // Inicializa el checkout
   mp.checkout({
-      preference: {
-          id: 'YOUR_PREFERENCE_ID'
-      },
-      render: {
-            container: '.cho-container', // Indica el nombre de la clase donde se mostrará el botón de pago
-            label: 'Pagar', // Cambia el texto del botón de pago (opcional)
-      }
-});
+    preference: {
+      id: "YOUR_PREFERENCE_ID",
+    },
+    render: {
+      container: ".cho-container", // Indica el nombre de la clase donde se mostrará el botón de pago
+      label: "Pagar", // Cambia el texto del botón de pago (opcional)
+    },
+  });
 </script>
 ```
 ]]]
@@ -398,7 +419,7 @@ Implementa la solución Checkout Pro en tu sitio con nuestro video tutorial sobr
 
 Consulta el [ejemplo de integración completa](http://github.com/mercadopago/checkout-payment-sample) en GitHub para PHP o NodeJS para descargar un proyecto básico de implementación rápida de Checkout Pro en tu sitio.
 
----
+------------
 
 ### Próximo paso
 

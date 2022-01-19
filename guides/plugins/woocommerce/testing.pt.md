@@ -13,7 +13,7 @@ Com a loja em modo teste, é possível testar uma compra antes de habilitá-la p
 
 Se o teste correr sem erros, significa que sua loja está pronta para vender. Contudo, recomendamos realizar testes adicionais para que visualize os diferentes.
 
-> LEFT_BUTTON_REQUIRED_PT
+> NEXT_STEP_CARD_PT
 >
 > Ativação do modo produção
 >
