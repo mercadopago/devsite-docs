@@ -18,7 +18,7 @@ Another feature of the integration is the possibility to activate binary mode, a
  
 > All our payment solutions have an open source license. Do you want to participate in the creation? [Suggest improvements and edits on Github](https://github.com/mercadopago/cart-prestashop-7).
  
-> LEFT_BUTTON_REQUIRED_EN
+> NEXT_STEP_CARD_EN
 >
 > Integration prerequisites
 >

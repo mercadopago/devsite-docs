@@ -13,6 +13,12 @@ To integrate with Mercado Pago, follow the procedures below.
 * **Integrator ID:** Enter your *integrator_id* as a member of the **&lt;dev&gt;program**, Mercado Pago. If you are not a member yet, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/developer-program) for more information.
  
 6. Finally, configure your store's payment experiences according to the type of checkout you've chosen to configure, which could be [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction), the [Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction) and the **Ticket Checkout**.
+
+> NOTE
+>
+> Important
+>
+> Remember that the availability of the settings described below depends on the type of checkout chosen.
  
 * **Activate Checkout:** select **yes** to enable the Mercado Pago experience at your store's checkout.
 * **Payment methods:** choose the payment methods you want to offer.
@@ -25,16 +31,10 @@ To integrate with Mercado Pago, follow the procedures below.
 * **Discount for buying with Mercado Pago:** set a percentage discount amount for customers who pay with Mercado Pago.
 * **In-person payment methods:** select which payment methods will be offered for payments made via Ticket Checkout.
 * **Payment due:** after selecting the means of payment in person, indicate how many days these will expire after they are issued.
-
-> NOTE
->
-> Important
->
-> Remember that the availability of the settings described below depends on the type of checkout chosen.
  
 Ready! Now the Mercado Pago plugin with PrestaShop is integrated into your store.
  
-> LEFT_BUTTON_REQUIRED_EN
+> NEXT_STEP_CARD_PT
 >
 > Payment test
 >

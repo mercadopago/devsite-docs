@@ -17,7 +17,7 @@ Done! The module is now activated, and you can configure your integration.
 >
 > If you experience any problems during the plugin installation and need to contact our support, you may have to install it manually. See the [FAQ](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/faq) for details on how to do this.
 
-> LEFT_BUTTON_REQUIRED_EN
+> NEXT_STEP_CARD_EN
 >
 > Integration setup
 >

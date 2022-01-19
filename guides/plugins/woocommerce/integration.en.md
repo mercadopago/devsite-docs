@@ -78,9 +78,20 @@ In addition to the settings above, you will find different options related to yo
 > Before configuring Pix as a payment method, we recommend [downloading the latest version](https://br.wordpress.org/plugins/woocommerce-mercadopago/#description) of the Mercado Pago plugin for WooCommerce and [registering your Pix key](https://www.mercadopago.com.br/stop/pix?url=https%3A%2F%2Fwww.mercadopago.com.br%2Fadmin-pix-keys%2Fmy-keys&authentication_mode=required) in Mercado Pago.
 ------------
 
+## Notification email
+
+Having selected **Checkout API** to receive payments from your store, it is important to configure the email notifications that will notify the user of their transactions. See below how to customize  **transactional email** notifications in the WooCommerce management panel.
+
+1. In **E-mails**, enable the notifications to be configured by selecting the option ˜activate this notification e-mail".
+2. Customize the email template with: recipients, email subject and header.
+3. Enter the **content** to be sent and select the e-mail type.
+4. Also indicate the sender's name and email address, as well as your store's logo and colors.
+5. Once the necessary settings have been made, install and configure a **SMTP server** of your choice to enable e-mail notifications.
+6. Send a **test email** to ensure the platform is sending emails correctly.
+
 Done! The Mercado Pago plugin with WooCommerce is now integrated with your store and can be tested by making purchases that will only be for the purpose of validating the plugin's operation but will not charge any value.
 
-> LEFT_BUTTON_REQUIRED_EN
+> NEXT_STEP_CARD_EN
 >
 > Purchase test
 >
