@@ -6,7 +6,8 @@ Conoce los componentes principales de un checkout y cómo optimizarlos para ofre
 
 Utiliza **títulos** para agrupar temáticamente los datos requeridos e informar al usuario sobre la sección en la que se encuentra, y los **subtítulos** para contextualizar o explicar qué acción se debe realizar. También, puedes agregar textos **explicativos** que profundicen una información cuando sea necesario. 
 
-![aspectos generales - segmenta tu contenido](/images/best-practices-guide/es-aspectosgenerales-segmentatucontenido.png)
+![aspectos generales - segmenta tu contenido](/images/best-practices-guide/EspAspectosGeneralesSegmentaTuContenido.png)
+
 Los títulos ayudan a la escaneabilidad y los subtítulos permiten que el usuario tenga más información y, en consecuencia, se sienta más seguro.
 
 ## Optimiza tus formularios
@@ -59,6 +60,7 @@ Los **call to action** (CTAs) permiten realizar las acciones principales y secun
 * Agrega links para acciones secundarias que añadan contexto y procura que sea un texto autoexplicativo que haga referencia hacia dónde redirige el mismo.
 
 ![es Agrega accionables claros](/images/best-practices-guide/EspAspectosGeneralesAccionablesClaros.png)
+
 El CTA debe dejar clara la acción y qué sucederá al hacer clic en él.
 
 ## Ofrece opciones y destaca sus ventajas
@@ -78,20 +80,23 @@ Evita pedir datos repetidos, que puedan ser inferidos o no sean necesarios para 
 Por ejemplo, utiliza la información personal y de envío para tomar los datos de facturación y no sumar un formulario extra que ralentice el proceso de pago.
 
 ![es Saltea pasos innecesarios](/images/best-practices-guide/EspAspectosGeneralesSalteaPasosInnecesarios.png)
+
 Simplifica y acorta el proceso de carga de datos con checkboxes que infieran información de pasos previos o desplieguen un formulario en caso de que el usuario quiera cargar información diferente.
 
 ## Da visibilidad durante el proceso y permite revisar la compra antes de confirmar
 
 Si bien la mayoría de los usuarios revisan su compra al final, se sienten más seguros si pueden ir controlando lo que van haciendo durante todo el proceso. Para eso, puedes agregar un **componente de resumen fijo** o un acceso directo al carrito de compras que muestre el precio total a pagar según las acciones que se van realizando (ejemplo: cupón de descuento, costo de envío, etc). 
 
-![es Da visibilidad](/images/best-practices-guide/EspAspectosGeneralesVisibilidadDelProceso.png)
+![es Da visibilidad](/images/best-practices-guide/EspAspectosGeneralesVisibilidadDelProceso.gif)
+
 Puedes agregar un componente de resumen que permanezca durante todo el proceso y muestre las acciones realizadas con el total a pagar. De esta forma, el usuario siempre tiene visibilidad y control sobre el precio final.
 
 Además, antes de finalizar la compra, permite que tus usuarios puedan revisar todo el proceso y el precio final. Para esto, agrega una **página de confirmación** o revisión, previo a realizar el pago.
 
 En esta página, incluye un resumen de todas las decisiones tomadas e información cargada y el detalle del total a pagar. Es importante, dar la posibilidad de editar cualquiera de los datos desde allí, sin la necesidad de volver a los pasos previos.
 
-![es Confirma tu compra](/images/best-practices-guide/EspAspectosGeneralesConfirmaTuCompra.png)
+![es Confirma tu compra](/images/best-practices-guide/EspAspectosGeneralesConfirmaTuCompra.gif)
+
 Permitir la edición en una instancia previa a confirmar la compra, facilita la escaneabilidad y ayuda a que la edición de datos incorrectos sea más rápido y sin necesidad de volver atrás.
 
 > PREV_STEP_CARD_ES

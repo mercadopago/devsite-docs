@@ -7,6 +7,7 @@ Learn about the main components of a checkout and how to optimize them to offer 
 Use **headings** to group by theme the required details and indicate to the users in which section they are, and **subheadings** to give context or explain which action is expected. You can also add **explanatory texts** to detail a certain information, if necessary.
 
 ![en aspectos generales - segmenta tu contenido](/images/best-practices-guide/EngAspectosGeneralesSegmentaTuContenido.png)
+
 The headings help scanning and the subheadings allow users to have more information, which makes them feel safer.
 
 ## Optimize your forms
@@ -59,6 +60,7 @@ Use success messages only if the confirmation is necessary or if the entered det
 * Add links for secondary actions that add context and make sure it is a self explanatory text that makes reference to where the users are being redirected to. 
 
 ![en Agrega accionables claros](/images/best-practices-guide/EngAspectosGeneralesAccionablesClaros.png)
+
 The CTA must make it clear what the action is and what will happen when the user clicks on it.
 
 ## Offer options and highlight their benefits
@@ -78,20 +80,23 @@ Avoid requesting repeated details, which can be inferred or are not necessary to
 For example, you can use the personal and shipping information to get the billing details and do not add an extra form that slows down the payment process.
 
 ![en Saltea pasos innecesarios](/images/best-practices-guide/EngAspectosGeneralesSalteaPasosInnecesarios.png)
+
 Simplify and shorten the process of filling out the details with checkboxes that infer information from previous steps or display a form in case users want to enter different information.
 
 ## Give visibility during the process and allow users to review the purchase before confirming it
 
 Even though most of the users review their purchase in the final step, they feel safer when they can control each action they are performing during the process. For that, you can add a fixed **summary component** or a shortcut to the shopping cart that shows the total price to be paid according to the actions being performed (e.g: discount coupon, shipping cost, etc). 
 
-![en Da visibilidad](/images/best-practices-guide/EngAspectosGeneralesVisibilidadDelProceso.png)
+![en Da visibilidad](/images/best-practices-guide/EngAspectosGeneralesVisibilidadDelProceso.gif)
+
 You can add a permanent summary component during the whole process that shows the performed actions with the total amount to be paid. This way users can always view and control the final price. 
 
 Additionally, before completing the purchase, it allows your users to review the entire process and the final price. For this, add a **confirmation or review page**, before the payment.
 
 On this page, include a summary of all the decisions made and information entered, as well as the total amount to be paid. It is important to give users the possibility to edit any of the details from there, without the need to go back to previous steps.
 
-![en Confirma tu compra](/images/best-practices-guide/EngAspectosGeneralesConfirmaTuCompra.png)
+![en Confirma tu compra](/images/best-practices-guide/EngAspectosGeneralesConfirmaTuCompra.gif)
+
 Allowing the edition in a step previous to the purchase confirmation not only facilitates scanning the page, but also helps users to edit the incorrect details more easily and without the need to go back.
 
 > PREV_STEP_CARD_EN
