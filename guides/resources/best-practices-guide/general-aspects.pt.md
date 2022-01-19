@@ -98,7 +98,7 @@ Permitir a edição em uma etapa anterior à confirmação da compra, além de f
 >
 > Boas práticas de UX para checkouts
 >
-Uma introdução ao guia pensada para desenvolvedores, vendedores e agências.
+> Uma introdução ao guia pensada para desenvolvedores, vendedores e agências.
 >
 > [Introdução](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/best-practices-guide/introduction)
 
