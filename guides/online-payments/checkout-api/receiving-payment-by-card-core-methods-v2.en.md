@@ -601,19 +601,11 @@ curl -X POST \
 
 ## Sample projects
 
-> NOTE
->
-> Checkout API
->
-> Use our [complete integration examples](https://drive.google.com/file/d/10csLR_4NwMbXtHObxZ1Ej9fvB2Zkr7AS/view?usp=sharing) to download instantly.
-
-<span></span>
-
 > GIT
 >
 > Payment form
 >
-> If you want to deploy other technology in your server, you can [download a complete payment form sample](https://github.com/mercadopago/card-payment-sample) from GitHub.
+> If you want to deploy other technology in your server, you can [download a complete payment form sample](https://drive.google.com/file/d/10csLR_4NwMbXtHObxZ1Ej9fvB2Zkr7AS/view?usp=sharing) from GitHub.
 
 ## Add custom events
 
