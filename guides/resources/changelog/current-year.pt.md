@@ -36,7 +36,7 @@ Lançamos a nova versão 2.1.0 do SDK Ruby.
 
 Aumentamos as opções de personalização nos relatórios de Liberações e Dinheiro em conta.
 
-Com o novo recurso que permite configurações, o report_translation, é possível mudar o idioma padrão dos cabeçalhos das colunas, para que você possa visualizá-los no idioma que preferir.
+Com o novo recurso que permite configurações, o report_translation, é possível mudar o idioma padrão dos cabeçalhos das colunas para que você possa visualizá-los no idioma que preferir.
 
 Por padrão, esse recurso está desativado, mas você pode habilitá-lo pela opção "Idioma do relatório", na tela de [Ajustes](https://www.mercadopago[FAKER][URL][DOMAIN]/balance/reports/settlement/settings). Assim que fizer isso, recomendamos que você verifique se as integrações com base em arquivos Excel (.xlsx), que permitem fazer reconciliações automáticas, estão funcionando corretamente.
 
