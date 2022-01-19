@@ -10,6 +10,7 @@ curl -X POST \
 -d '{"site_id":"[FAKER][GLOBALIZE][UPPER_SITE_ID]"}'
 ```
 
+
 The answer will have a structure similar to the following example:
 
 ```json
