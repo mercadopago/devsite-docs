@@ -509,14 +509,6 @@ Por último, é importante que esteja sempre informado sobre a criação nos nov
 > Disponibilizamos [exemplos completos de integração](http://github.com/mercadopago/card-payment-sample) no GitHub para que você possa fazer o download imediatamente.
 ------------
 
-<span></span>
-
-> GIT
->
-> Formulário de pagamento
->
-> Se você deseja implementar seu servidor com alguma outra tecnologia, te deixamos um [exemplo completo do formulário de pagamento](https://github.com/mercadopago/card-payment-sample) no GitHub para que possa baixar.
-
 ---
 ### Próximos passos
 

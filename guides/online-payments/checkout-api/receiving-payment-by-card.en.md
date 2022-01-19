@@ -482,14 +482,6 @@ Finally, you always need to be notified of new payments and status updates.  For
 >
 > Use our [complete integration examples](http://github.com/mercadopago/card-payment-sample) on GitHub to download instantly.
 
-<span></span>
-
-> GIT
->
-> Payment form
->
-> If you want to deploy other technology in your server, you can [download a complete payment form sample](https://github.com/mercadopago/card-payment-sample) from GitHub.
-
 ---
 ### Next steps
 
