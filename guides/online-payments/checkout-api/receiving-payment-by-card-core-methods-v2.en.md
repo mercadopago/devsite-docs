@@ -599,14 +599,6 @@ curl -X POST \
 
 [TXTSNIPPET][/guides/snippets/test-integration/api-payment-notifications]
 
-## Sample projects
-
-> GIT
->
-> Payment form
->
-> If you want to deploy other technology in your server, you can [download a complete payment form sample](https://drive.google.com/file/d/10csLR_4NwMbXtHObxZ1Ej9fvB2Zkr7AS/view?usp=sharing) from GitHub.
-
 ## Add custom events
 
 It is possible to add other custom events to the inputs, such as focus, blur, ready and validityChange:
@@ -616,6 +608,15 @@ cardNumberElement.on("focus", () => console.log("Card Number received focus"));
 ```
 
 If you wish to know more about other customized events, access our [GitHub](https://github.com/lucmantovani/sdk-js/tree/feature/fields-docs#field-instanceonevent-callbacks) documentation.
+
+
+## Sample projects
+
+> GIT
+>
+> Payment form
+>
+> If you want to deploy other technology in your server, you can [download a complete payment form sample](https://drive.google.com/file/d/10csLR_4NwMbXtHObxZ1Ej9fvB2Zkr7AS/view?usp=sharing) from GitHub.
 
 ---
 ### Next steps

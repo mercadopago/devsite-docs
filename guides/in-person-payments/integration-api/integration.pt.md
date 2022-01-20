@@ -36,13 +36,39 @@ Depois de criar uma aplicação, você poderá acessar as [suas credenciais](htt
 
 Você pode testar suas integrações em um ambiente controlado com usuários de teste. Você pode criá-los usando o seguinte comando:
 
+----[mla]----
+
 ```curl
 curl -X POST \
 -H "Content-Type: application/json" \
 -H 'Authorization: Bearer ${PROD_ACCESS_TOKEN}' \
 "https://api.mercadopago.com/users/test_user" \
--d '{"site_id":----[mla]----"MLA"------------ ----[mlb]----"MLB"------------ ----[mlm]----"MLM"------------}'
+-d '{"site_id": "MLA"}'
 ```
+------------
+
+----[mlb]----
+
+```curl
+curl -X POST \
+-H "Content-Type: application/json" \
+-H 'Authorization: Bearer ${PROD_ACCESS_TOKEN}' \
+"https://api.mercadopago.com/users/test_user" \
+-d '{"site_id": "MLB"}'
+```
+------------
+
+----[mlm]----
+
+```curl
+curl -X POST \
+-H "Content-Type: application/json" \
+-H 'Authorization: Bearer ${PROD_ACCESS_TOKEN}' \
+"https://api.mercadopago.com/users/test_user" \
+-d '{"site_id": "MLM"}'
+```
+------------
+
 Você pode gerar até 10 contas de usuário de teste simultaneamente. Lembre-se de que os usuários de teste expiram após 60 dias sem atividade no Mercado Pago.
 
 ## 2. Associe o seu dispositivo Point à sua conta do Mercado Pago

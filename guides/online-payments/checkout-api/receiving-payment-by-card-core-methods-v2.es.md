@@ -607,15 +607,6 @@ curl -X POST \
 
 [TXTSNIPPET][/guides/snippets/test-integration/api-payment-notifications]
 
-## Ejemplos descargables
-
-> GIT
->
-> Formulario de pago
->
-> Si quieres implementar tu servidor con alguna otra tecnología, te dejamos un [ejemplo completo del formulario de pago](https://drive.google.com/file/d/10csLR_4NwMbXtHObxZ1Ej9fvB2Zkr7AS/view?usp=sharing) en GitHub para que puedas descargarlo.
-
-
 ## Agregar eventos personalizados
 
 Es posible agregar otros eventos personalizados a las entradas, como focus, blur, ready y validityChange:
@@ -625,6 +616,16 @@ cardNumberElement.on("focus", () => console.log("Card Number received focus"));
 ```
 
 Si quieres saber más sobre otros eventos customizados, accede a nuestra documentación de [GitHub](https://github.com/lucmantovani/sdk-js/tree/feature/fields-docs#field-instanceonevent-callback).
+
+
+## Ejemplos descargables
+
+> GIT
+>
+> Formulario de pago
+>
+> Si quieres implementar tu servidor con alguna otra tecnología, te dejamos un [ejemplo completo del formulario de pago](https://drive.google.com/file/d/10csLR_4NwMbXtHObxZ1Ej9fvB2Zkr7AS/view?usp=sharing) en GitHub para que puedas descargarlo.
+
 
 ---
 ### Próximos pasos
