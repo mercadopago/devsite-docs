@@ -58,9 +58,9 @@ Además, puedes usar el reporte para conocer el historial de dinero retirado ent
 
 > NOTE
 >
-> Próximamente verás los registros de tus movimientos en orden cronológico.
+> Encuentra con mayor facilidad todos tus movimientos
 >
-> En los reportes que generes a partir de Diciembre vas a ver todos tus movimientos en el orden en que se realizaron para que puedas identificarlos más fácil y controlar mejor tus ventas.
+> A partir de Enero este reporte muestra tus movimientos en orden cronológico, para que sea más fácil identificar cuándo se realizaron. Este cambio no se visualiza en los reportes que generes con fechas previas.
 ------------
 <hr/>
 
