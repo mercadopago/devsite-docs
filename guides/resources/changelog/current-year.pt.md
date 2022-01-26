@@ -6,6 +6,24 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Janeiro 2022
 
+### 24 de janeiro
+
+> CHANGELOG
+>
+> Nova versão SDK PHP
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK PHP
+
+Lançamos a nova versão 1.12.4 e 2.4.5 do SDK PHP.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub os detalhes das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-php/releases).
+
 ### 11 de janeiro
 
 > CHANGELOG
