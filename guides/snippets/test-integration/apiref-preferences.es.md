@@ -1,4 +1,4 @@
-## Preferencias
+### Preferencias
 
 |Acción|Descripción|
 |---|---|

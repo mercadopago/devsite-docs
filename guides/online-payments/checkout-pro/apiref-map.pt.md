@@ -1,4 +1,4 @@
-# Mapa de referência da API
+# Mapa de APIs
 
 As ações a seguir estão disponíveis para **Checkout PRO**.
 

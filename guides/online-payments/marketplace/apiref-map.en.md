@@ -1,6 +1,6 @@
-# Mapa de APIs
+# APIs Map
 
-Las siguientes acciones están disponibles para **Checkout PRO**.
+The following actions are available for **Marketplace**.
 
 [TXTSNIPPET][/guides/snippets/test-integration/apiref-preferences]
 
@@ -9,6 +9,10 @@ Las siguientes acciones están disponibles para **Checkout PRO**.
 [TXTSNIPPET][/guides/snippets/test-integration/apiref-paymentmethods]
 
 [TXTSNIPPET][/guides/snippets/test-integration/apiref-payments]
+
+[TXTSNIPPET][/guides/snippets/test-integration/apiref-refunds]
+
+[TXTSNIPPET][/guides/snippets/test-integration/apiref-customers]
 
 [TXTSNIPPET][/guides/snippets/test-integration/apiref-cards]
 

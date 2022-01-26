@@ -1,4 +1,4 @@
-## Preferences
+### Preferences
 
 |Action|Description|
 |---|---|
