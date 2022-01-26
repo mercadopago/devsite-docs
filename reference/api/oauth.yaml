@@ -22,32 +22,32 @@ paths:
               properties:
                 client_secret:
                   type: string
-                  description: Private key to be used in some plugins to generate payments. 
+                  description: Private key to be used in some plugins to generate payments. One of the keys in the pair that make up the credentials that identify an application/integration in your account. 
                   required: true
                   example: 'client_secret'
                 client_id:
                   type: string
-                  description: Unique ID that identifies your integration. 
+                  description: Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account. 
                   required: true
                   example: 'client_id'
                 grant_type:
                   type: string
-                  description: Specifies the type of operation to perform to get your credentials.
+                  description: Specifies the type of operation to perform. There are two possible operations.
                   required: true
                   example: 'authorization_code'
                   enum:
-                    - authorization_code -- In case you want to obtain credentials for the first time.
-                    - refresh_token -- In case you want to refresh existing token.
+                    - authorization_code -- used to get the access token for the first time.
+                    - refresh_token -- it is used to refresh an existing token.
                 code:
                   type: string
-                  description: The authorization code you get in your server for linking. Only required when grant_type is equal to authorization_code.
+                  description: Code provided by the authentication server so that the application can obtain an access token and an associated refresh token. It is valid for 10 minutes counted from its generation. Required when grant_type=authorization_code.
                   example: 'TG-XXXXXXXX-241983636'
                 redirect_uri:
                   type: string
-                  description: This is the URL you set up in the Redirect URL field of your application. Only required when grant_type is equal to authorization_code.
+                  description: URL reported in the Redirect URL field of your application. Required only when grant_type=authorization_code.
                 refresh_token:
                   type: string
-                  description: Value received when expiring credentials were created. Only required when grant_type is equal to refresh_token.
+                  description: Value received when the access token is created. Only required when grant_type=refresh_token.
       responses:
         '200':
           description: Success
@@ -59,35 +59,41 @@ paths:
                   access_token:
                     type: string
                     example: 'APP_USR-4934588586838432-XXXXXXXX-241983636'
-                    description: access_token
+                    description: Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+                    enum:
+                      - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+                      - Client ID -- 1585551492
+                      - Creation date (MMddHH) -- 030918
+                      - Security hash -- 25######3458
+                      - User ID -- 2880736
                   token_type:
                     type: string
                     example: 'bearer'
-                    description: token_type
+                    description: necessary information for the token to be used correctly to access protected resources. The token of type "bearer" is the only one supported by the authorization server and is used when the access token is included as plain text in the request. It is understood that the bearer has direct access to the token.
                   expires_in:
                     type: number
                     example: 15552000
-                    description: expires_in
+                    description: Fixed access_token expiration time expressed in seconds. By default, the expiration time is 180 days (15552000 seconds).
                   scope:
                     type: string
                     example: 'offline_access read write'
-                    description: scope
+                    description: Scopes are used in the API authorization and consent process and allow you to determine what access the application requests and what access the user grants. By default, the scopes associated with the token are the ones determined when creating the original token and configuring the application.
                   user_id:
                     type: number
                     example: 241983636
-                    description: user_id
+                    description: Identification number (Mercado Pago ID) generated automatically when creating a Mercado Pago account. It is a unique number that identifies the Mercado Pago seller and is the owner of the application.
                   refresh_token:
                     type: string
                     example: 'TG-XXXXXXXX-241983636'
-                    description: refresh_token
+                    description: temporal grants code used to obtain access tokens so that authorization and access to resources remain valid before the end of the access token's validity period. They define an ID used to retrieve authorization information. Unlike access tokens, refresh tokens can only be used for calls on the authorization server and are never sent to resource servers.
                   public_key:
                     type: string
                     example: 'APP_USR-d0a26210-XXXXXXXX-479f0400869e'
-                    description: public_key
+                    description: Public key of the application that will normally be used in the frontend and will allow, for example, knowing the means of payment and encrypting the card data. One of the keys in the pair that make up the credentials that identify an application/integration in your account.
                   live_mode: 
                     type: boolean
                     example: true
-                    description: live_mode
+                    description: Indicates whether the application is in production or test mode.
         '400':
           description: Error
           content:
