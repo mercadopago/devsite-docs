@@ -40,7 +40,7 @@ You can test your integrations in a controlled environment with test users. You 
 curl -X POST \
 -H "Content-Type: application/json" \
 -H 'Authorization: Bearer ${PROD_ACCESS_TOKEN}' \
-"https://api.mercadopago.com/users/test_user" \
+"https://api.mercadopago.com/users/test_users" \
 -d '{"site_id":----[mla]----"MLA"------------ ----[mlb]----"MLB"------------ ----[mlm]----"MLM"------------}'
 ```
 You can generate up to 10 test user accounts simultaneously. Keep in mind that test users expire after 60 days without activity in Mercado Pago.

@@ -40,7 +40,7 @@ Puedes probar tus integraciones en un ambiente controlado con usuarios de prueba
 curl -X POST \
 -H "Content-Type: application/json" \
 -H 'Authorization: Bearer ${PROD_ACCESS_TOKEN}' \
-"https://api.mercadopago.com/users/test_user" \
+"https://api.mercadopago.com/users/test_users" \
 -d '{"site_id":----[mla]----"MLA"------------ ----[mlb]----"MLB"------------ ----[mlm]----"MLM"------------}'
 ```
 Puedes generar hasta 10 cuentas de usuarios de prueba en simultáneo. Ten en cuenta que los usuarios de prueba caducan luego de 60 días sin actividad en Mercado Pago. 
