@@ -18,7 +18,7 @@ Pronto! O Checkout Pro foi configurado e habilitado com sucesso.
 >
 > Siga as etapas para configurar pagamentos com o Custom Checkout (Transparente).
 >
-> [Configuração de pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guias/plugins/magento-two/payment-configuration)
+> [Configuração de pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/magento-two/payment-configuration)
 
 > NEXT_STEP_CARD_PT
 >
@@ -26,4 +26,4 @@ Pronto! O Checkout Pro foi configurado e habilitado com sucesso.
 >
 > Siga as etapas para configurar o status do pedido para notificações de pagamento.
 >
-> [Configuração de notificações de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guias plugins/magento-two/notificações-configuração)
+> [Configuração de notificações de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/magento-two/notificações-configuração)
