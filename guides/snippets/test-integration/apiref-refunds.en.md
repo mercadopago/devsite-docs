@@ -1,4 +1,4 @@
-## Refunds
+### Refunds
 
 |Action|Description|
 |---|---|
@@ -7,7 +7,7 @@
 |[Get refunds list](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/chargebacks/_payments_id_refunds/get)|Get all Refunds for a specific payment.|
 |[Get specific refund](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/chargebacks/_payments_id_refunds_refund_id/get)|Get a specific Refund from a specific payment.|
 
-## Cancellations
+### Cancellations
 
 |Action|Description|
 |---|---|

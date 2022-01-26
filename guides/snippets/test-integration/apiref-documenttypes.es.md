@@ -1,4 +1,4 @@
-## Tipos de documento
+### Tipos de documento
 
 |Acción|Descripción|
 |---|---|

@@ -1,4 +1,4 @@
-## Estornos
+### Estornos
 
 |Ação|Descrição|
 |---|---|
@@ -8,7 +8,7 @@
 |[Obter lista de reembolsos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_payments_id_refunds/get)|Consultar todos os reembolsos para um pagamento específico.|
 |[Obter reembolso específico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_payments_id_refunds_refund_id/get)|Consultar reembolso específico de determinado pagamento.|
 
-## Cancelamentos
+### Cancelamentos
 
 |Ação|Descrição|
 |---|---|

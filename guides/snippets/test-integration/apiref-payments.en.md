@@ -1,4 +1,4 @@
-## Payments
+### Payments
 
 |Action|Description|
 |---|---|

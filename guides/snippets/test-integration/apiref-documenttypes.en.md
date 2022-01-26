@@ -1,4 +1,4 @@
-## Identification Types
+### Identification Types
 
 |Action|Description|
 |---|---|

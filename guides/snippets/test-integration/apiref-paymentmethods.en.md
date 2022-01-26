@@ -1,4 +1,4 @@
-## Payment Methods
+### Payment Methods
 
 |Action|Description|
 |---|---|

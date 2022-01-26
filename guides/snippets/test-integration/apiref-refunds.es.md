@@ -1,4 +1,4 @@
-## Reembolsos
+### Reembolsos
 
 |Acción|Descripción|
 |---|---|
@@ -7,7 +7,7 @@
 |[Obtener lista de reembolsos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/chargebacks/_payments_id_refunds/get)|Consultar todos los reembolsos para un pago específico.|
 |[Obtener reembolso específico(https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/chargebacks/_payments_id_refunds_refund_id/get)|Consultar reembolso específico de un pago determinado.|
 
-## Cancelaciones
+### Cancelaciones
 
 |Acción|Descripción|
 |---|---|

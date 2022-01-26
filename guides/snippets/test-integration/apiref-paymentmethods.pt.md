@@ -1,4 +1,4 @@
-## Meios de pagamento
+### Meios de pagamento
 
 |Ação|Descrição|
 |---|---|
