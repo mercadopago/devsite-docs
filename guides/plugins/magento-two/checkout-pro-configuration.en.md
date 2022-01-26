@@ -26,4 +26,4 @@ Ready! Checkout Pro has been configured and enabled successfully.
 >
 > Follow the steps to configure the order status for payment notifications.
 > 
-> [Payment notifications configuration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/magento-two/notifications-configuration
+> [Payment notifications configuration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/magento-two/notifications-configuration)
