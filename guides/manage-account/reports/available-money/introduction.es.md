@@ -60,7 +60,7 @@ Además, puedes usar el reporte para conocer el historial de dinero retirado ent
 >
 > Encuentra con mayor facilidad todos tus movimientos
 >
-> A partir de Enero este reporte muestra tus movimientos en orden cronológico, para que sea más fácil identificar cuándo se realizaron. Este cambio no se visualiza en los reportes que generes con fechas previas.
+> A partir de enero de 2022 este reporte muestra tus movimientos en orden cronológico, para que sea más fácil identificar cuándo se realizaron. Este cambio no se visualiza en los reportes que generes con fechas previas.
 ------------
 <hr/>
 

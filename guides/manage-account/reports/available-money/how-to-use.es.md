@@ -17,6 +17,7 @@ Para consultar el reporte te recomendamos descargarlo en formato .csv para abrir
 
 El reporte está compuesto por:
 
+----[mla, mlc, mco, mlu, mlm, mlb]----
 | Composición del reporte | Descripción |
 | --- | --- |
 | Initial Available Balance |<br/> Balance inicial.<br/><br/>|
@@ -25,7 +26,14 @@ El reporte está compuesto por:
 | Unblock |<br/> Los desbloqueos por la resolución de las disputas.<br/><br/>|
 | Subtotal | <br/>Es la suma de las operaciones que componen a cada sección.<br/><br/>|
 | Total| <br/> Es el resultado final compuesto por la suma de todos los subtotales. <br/><br/>Es decir:<br/> subtotal `Release` + subtotal `Block` + subtotal `Unblock` = resultado total<br/><br/> |
+------------
 
+----[mpe]----
+| Composición del reporte | Descripción |
+| --- | --- |
+| Initial Available Balance |<br/> Balance inicial. Indica el dinero que tenías disponible en la fecha inicial del periodo que elegiste para conciliar. <br/><br/>|
+| Release |<br/> El detalle de las transacciones que impactan el balance total.<br/><br/> |
+| Total| <br/> Total. Es el dinero que tienes disponible en tu cuenta. Se calcula como la diferencia entre el monto acreditado total y el monto debitado total.<br/><br/> |------------
 
 Ademas el reporte refleja los conceptos contables del *debe* (dinero que tienes que pagar) y *haber* (dinero que tienes por cobrar) escribiendo el reporte en dos columnas, una por cada concepto:  
 
@@ -54,7 +62,12 @@ Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la
 
 Observa cómo está compuesto el reporte de Dinero retirado en este ejemplo para identificar las secciones y leer tus propios reportes:
 
+----[mla, mlc, mco, mlu, mlm, mlb]----
 ![Reporte de Dinero retirado Ejemplos Mercado Pago](/images/manage-account/reports/examples-es.png)
+------------
+----[mpe]----
+![Reporte de Dinero retirado Ejemplos Mercado Pago](/images/manage-account/reports/example-n-ledger-es.jpg)
+------------
 
 La versión por defecto mostrará una vista extendida de las columnas. El informe final tendrá la mayor cantidad de detalle posible.
 
@@ -71,14 +84,15 @@ La versión por defecto mostrará una vista extendida de las columnas. El inform
 ## Diferencias entre retiro parcial y retiro total
 
 Cuando retires todo tu dinero disponible, el total del reporte va a coincidir con ese monto. En cambio, cuando hagas un retiro parcial, que no incluya la totalidad de tu dinero listo para usar, el total de dinero retirado y el total del reporte no van a coincidir. Por ejemplo, imagina que tienes $ 3.000 disponibles para retirar a una cuenta bancaria pero solo retiras $ 2.000. El retiro es parcial pero el valor total del reporte seguirá mostrándote el monto del balance inicial que había al momento del retiro, es decir, los $ 3.000 que tenías disponibles. En cambio, si retiras los $ 3.000, el valor total del reporte va a coincidir con el valor de ese retiro.
-
-> INFO
->
-> Próximamente verás los registros de tus movimientos en orden cronológico.
->
-> En los reportes que generes a partir de Diciembre vas a ver todos tus movimientos en el orden en que se realizaron para que puedas identificarlos más fácil y controlar mejor tus ventas.
 ------------
+----[mpe]----
+### ¿Cómo leer los reportes que generes a partir de enero de 2022?
 
+Los reportes que generes a partir de enero de 2022 tienen las siguientes características:
+1. Los movimientos se presentan en el orden en que ocurrieron, con lo cual podrás identificarlos con mayor facilidad y controlar mejor tus ventas. 
+2. Cuando se presenta alguna reclamación o contracargo por algún problema con el servicio o producto que vendiste, tu dinero es retenido hasta que la mediación se resuelva. Esta información se visualiza en tu reporte y la reconoces porque su descripción lleva el prefijo reserve_.
+3. Los movimientos relacionados con los retiros sobre tu dinero disponible se muestran como payout y todas las mediaciones que surgen cuando se inicia o resuelve un reclamo se presentan como dispute. Para conocer la descripción de otros movimientos y términos, puedes usar [este glosario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary). 
+------------
 <hr/>
 
 ### Próximos pasos
