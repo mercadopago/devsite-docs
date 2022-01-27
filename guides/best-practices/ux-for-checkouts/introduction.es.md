@@ -18,4 +18,4 @@ Construye tu propia experiencia de checkout a través de la implementación de [
 >
 > Conoce los componentes principales de un checkout y cómo optimizarlos para ofrecerle una mejor experiencia a tus usuarios y generar más conversiones.
 >
-> [Experiencia optimizada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/best-practices/ux-for-checkout/optimized-experience)
+> [Experiencia optimizada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/best-practices/ux-for-checkouts/optimized-experience/optimized-experience)
