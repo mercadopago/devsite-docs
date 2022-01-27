@@ -12,4 +12,4 @@ Ya tienes todo lo que necesitas para crear la mejor experiencia de pago para tus
 >
 > Sigue los pasos para crear un checkout fácil de recorrer y entender.
 >
-> [Crear un checkout ágil](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/best-practices-guide/create-a-fast-checkout)
+> [Crear un checkout ágil](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/best-practices/ux-for-checkout/create-a-fast-checkout)

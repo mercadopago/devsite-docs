@@ -19,9 +19,9 @@ La **consistencia** es una cualidad necesaria para aportar coherencia y congruen
 
 > PREV_STEP_CARD_ES
 >
-> Aspectos generales de tu checkout
+> Optimiza la experiencia de tu checkout
 >
 > Conoce los componentes principales de un checkout y cómo optimizarlos para ofrecerle una mejor experiencia a tus usuarios y generar más conversiones.
 >
-> [Aspectos generales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/best-practices-guide/general-aspects)
+> [Experiencia optimizada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/best-practices/ux-for-checkouts/optimized-experience)
 

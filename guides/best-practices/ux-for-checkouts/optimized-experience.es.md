@@ -126,11 +126,11 @@ Es importante, dar la posibilidad de editar cualquiera de los datos desde allí,
 
 > PREV_STEP_CARD_ES
 >
-> Buenas prácticas de UX para checkouts
+> UX para checkouts
 >
 > Una introducción la a guía pensada para desarrolladores, sellers y agencias.
 >
-> [Introducción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/best-practices-guide/introduction)
+> [Introducción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/best-practices/ux-for-checkouts/introduction)
 
 > NEXT_STEP_CARD_ES
 >
@@ -138,4 +138,4 @@ Es importante, dar la posibilidad de editar cualquiera de los datos desde allí,
 >
 > Sigue los pasos para crear un checkout fácil de recorrer y entender.
 >
-> [Facilidad de conversión](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/best-practices-guide/easier-conversions)
+> [Facilidad de conversión](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/best-practices/ux-for-checkouts/easier-conversions)
