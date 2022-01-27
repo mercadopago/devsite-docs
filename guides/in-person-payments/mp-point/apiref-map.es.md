@@ -2,7 +2,7 @@
 
 Las siguientes acciones están disponibles para **Mercado Pago Point**.
 
-### Dispositivos
+### Dispositivos:
 
 |Acción|Descripción|
 |---|---|
@@ -14,9 +14,9 @@ Las siguientes acciones están disponibles para **Mercado Pago Point**.
 
 
 |Acción|Descripción|
-|---|---|
-—-[mlb]----|[Crear intención de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/integrations_api_paymentintent_mlb/_point_integration-api_devices_deviceid_payment-intents/post)|Este endpoint permite crear una intención de pago para un dispositivo.|------------
-—-[mla]----|[Crear intención de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents/post)|Este endpoint permite crear una intención de pago para un dispositivo.|------------
+|---|---|----[mlb]----
+|[Crear intención de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/integrations_api_paymentintent_mlb/_point_integration-api_devices_deviceid_payment-intents/post)|Este endpoint permite crear una intención de pago para un dispositivo.|------------ ----[mla]----
+|[Crear intención de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents/post)|Este endpoint permite crear una intención de pago para un dispositivo.|------------
 |[Cancelar intención de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents_paymentintentid/delete)|Este endpoint permite cancelar una intención de pago.|
 |[Buscar en intención de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/integrations_api/_point_integration-api_payment-intents_paymentintentid/get)|Este endpoint permite obtener información sobre la intención de pago.|
 |[Obtener lista de intenciones de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/integrations_api/_point_integration-api_payment-intents_events/get)|Este endpoint permite obtener una lista de intentos de pago con sus estados finales entre un rango de fechas. |
