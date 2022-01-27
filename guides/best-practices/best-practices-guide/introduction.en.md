@@ -12,4 +12,4 @@ Build your own checkout experience by implementing the [Checkout API](https://ww
 >
 > Learn about the main components of a checkout and how to optimize them to offer a better experience for your users and get more conversion.
 >
-> [General aspects](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/best-practices-guide/general-aspects)
+> [General aspects](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/best-practices-guide/optimized-experience)

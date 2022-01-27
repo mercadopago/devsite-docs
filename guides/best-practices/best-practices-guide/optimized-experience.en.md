@@ -117,4 +117,4 @@ Allowing the edition in a step previous to the purchase confirmation not only fa
 >
 > Follow these steps to create an easy to navigate and understand checkout.
 >
-> [How to create a fast checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/best-practices-guide/create-a-fast-checkout)
+> [How to create a fast checkout](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/best-practices-guide/easier-conversions)

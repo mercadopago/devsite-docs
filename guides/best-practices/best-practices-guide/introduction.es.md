@@ -6,6 +6,11 @@ Construye tu propia experiencia de checkout a través de la implementación de [
 
 ![es Introduccion Buenas practicas](/images/best-practices-guide/EspIntroduccion.png)
 
+> WARNING 
+> 
+> Importante
+> 
+> Para saber cómo performa tu checkout una vez implementadas estas buenas prácticas, te recomendamos integrar alguna herramienta de trackeo y realizar optimizaciones en base a los resultados para mejorar la experiencia de tus usuarios y tener más conversiones.
 
 > NEXT_STEP_CARD_ES
 >
@@ -13,4 +18,4 @@ Construye tu propia experiencia de checkout a través de la implementación de [
 >
 > Conoce los componentes principales de un checkout y cómo optimizarlos para ofrecerle una mejor experiencia a tus usuarios y generar más conversiones.
 >
-> [Aspectos generales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/best-practices-guide/general-aspects)
+> [Experiencia optimizada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/best-practices-guide/optimized-experience)

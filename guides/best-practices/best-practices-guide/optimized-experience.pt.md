@@ -117,4 +117,4 @@ Permitir a edição em uma etapa anterior à confirmação da compra, além de f
 >
 > Siga estas etapas para criar um checkout fácil de navegar e entender.
 >
-> [Criar um checkout ágil ](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/best-practices-guide/create-a-fast-checkout)
+> [Criar um checkout ágil ](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/best-practices-guide/easier-conversions)

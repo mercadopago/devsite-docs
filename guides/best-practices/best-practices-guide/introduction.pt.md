@@ -12,4 +12,4 @@ Crie sua própria experiência de checkout com a implementação do [Checkout AP
 >
 > Confira os componentes principais de um checkout e saiba como otimizá-los para que seus usuários tenham uma experiência ainda melhor, gerando mais conversão.
 >
-> [Aspectos gerais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/best-practices-guide/general-aspects)
+> [Aspectos gerais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/best-practices-guide/optimized-experience)
