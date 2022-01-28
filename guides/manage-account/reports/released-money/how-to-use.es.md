@@ -19,9 +19,9 @@ El reporte está compuesto por:
 
 Además el reporte refleja los conceptos contables del *debe* (dinero que tienes que pagar) y *haber* (dinero que tienes por cobrar) escribiendo el reporte en dos columnas, una por cada concepto:  
 
-> Tu haber lo verás en la columna `NET_CREDIT`
->
-> Tu debe estará en la columna `NET_DEBIT`
+> Tu **haber** lo verás en la columna `NET_CREDIT`
+><br>
+> Tu **debe** estará en la columna `NET_DEBIT`
 
 Verás el dinero disponible de las operaciones liquidadas en las columnas `NET_CREDIT` (acreditado) y `NET_DEBIT` (debitado), dependiendo de si el monto es positivo o negativo. También verás ahí el monto bruto y los gastos de financiamiento, impuestos y costos de envío que descontamos para llegar al monto neto.
 
@@ -34,7 +34,7 @@ Si esto pasa, el reporte sigue siendo válido. El dinero vuelve a tu cuenta y la
 >
 > Nota
 >
-> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de ------------ ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mla]---- para revisarlo cuando lo necesites o quieras consultar algún término técnico.------------
+> Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de ------------ ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mla, mpe]---- para revisarlo cuando lo necesites o quieras consultar algún término técnico.------------
 
 ----[mpe]----
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de Liberaciones para revisarlo cuando lo necesites o quieras consultar algún término técnico.
