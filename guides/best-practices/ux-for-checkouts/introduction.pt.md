@@ -1,6 +1,6 @@
 # Boas práticas de UX para checkouts
 
-Para impulsionar seus negócios, criamos uma série de boas práticas de UX para checkouts que vão te ajudar a melhorar a experiência de pagamento dos seus clientes, ter mais conversão e oferecer um serviço ainda melhor. 
+Para impulsionar seus negócios, criamos uma guía de boas práticas de UX para checkouts que vão te ajudar a melhorar a experiência de pagamento dos seus clientes, ter mais conversão e oferecer um serviço ainda melhor. 
 
 ![pt best practices introduction](/images/best-practices-guide/PortIntroduccionBuenasPracticas.png)
 
