@@ -10,9 +10,9 @@ La **escaneabilidad** ayuda a recorrer visualmente la pantalla y entender las di
 
 Mantén los datos agrupados temáticamente y brinda contexto al usuario acerca de los pasos a seguir para completar su transacción. Esto ayudará a la escaneabilidad y hará que el usuario se sienta más seguro a la hora de compartir su información. Para esto, te recomendamos utilizar:
 
-* **Títulos**: úsalos para agrupar temáticamente los datos requeridos e informar al usuario sobre la sección en la que se encuentra
+* **Títulos**: úsalos para agrupar temáticamente los datos requeridos e informar al usuario sobre la sección en la que se encuentra.
 * **Subtítulos**: sirven para contextualizar o explicar qué acción se debe realizar.
-* **Textos explicativos**: brinda explicaciones o profundiza una información, siempre que sea necesario, para evitar dudas. 
+* **Textos explicativos**: úsalos para brindar explicaciones o profundizar una información, siempre que sea necesario, para evitar dudas. 
 
 ![aspectos generales - segmenta tu contenido](/images/best-practices-guide/EspAspectosGeneralesSegmentaTuContenido.png)
 
@@ -34,7 +34,7 @@ Los **highlights** son textos subrayados o destacados. Usa highlights para desta
 
 Los formularios son **conjuntos de inputs**, relacionados entre sí y con un objetivo en común, como por ejemplo, aquellos en los que se solicitan datos personales. 
 
-A su vez, los inputs son espacios donde los usuarios completan y editan la información requerida. Estos deben tener un orden lógico dentro del formulario y se deben diferenciar los opcionales de los obligatorios. Además, deben ser lo suficientemente largos para que el usuario vea la información ingresada y pueda revisar y editar fácilmente.
+A su vez, los **inputs** son espacios donde los usuarios completan y editan la información requerida. Estos deben tener un orden lógico dentro del formulario y se deben diferenciar los opcionales de los obligatorios. Además, deben ser lo suficientemente largos para que el usuario vea la información ingresada y pueda revisar y editar fácilmente.
 
 Para facilitar el llenado de datos y no cansar al usuario, te recomendamos:
 
@@ -48,7 +48,7 @@ Para facilitar el llenado de datos y no cansar al usuario, te recomendamos:
 
 ### Labels y placeholders
 
-Las **labels** son los nombres de cada campo de información e indican qué dato se debe ingresar allí. Deben permanecer siempre visibles para que el usuario pueda escanear y completar más rápido el formulario, ya que se usan de guía y evitan el esfuerzo de recordar. 
+Las **labels** son los nombres de cada input e indican qué dato se debe ingresar allí. Deben permanecer siempre visibles para que el usuario pueda escanear y completar más rápido el formulario, ya que se usan de guía y evitan el esfuerzo de recordar. 
 
 A su vez, los **placeholders** son los textos de relleno de cada input. Sirven para ejemplificar o explicar el dato a ingresar. Aprovecha esta instancia para colocar ejemplos de formato o accionables. 
 Es importante saber que el placeholder desaparece cuando el cursor se ubica sobre el input o se completa el dato. Ten en cuenta esta característica y evita usarlos como única referencia de tus inputs para que el usuario no deba esforzarse por recordar qué dato va en cada campo o deba borrar lo ingresado si quiere confirmarlo.
@@ -117,8 +117,7 @@ Si bien la mayoría de los usuarios revisan su compra al final, se sienten más 
 
 ![es da visibilidad del proceso](/images/best-practices-guide/EspAspectosGeneralesVisibilidadDelProceso_V2.gif)
 
-Además, antes de finalizar la compra, permite que tus usuarios puedan **revisar** todo el proceso y el precio final. Para esto, agrega una página de confirmación o revisión, previo a realizar el pago, que incluya un resumen de todas las decisiones tomadas, toda la información cargada y el detalle del total a pagar. 
-Es importante, dar la posibilidad de editar cualquiera de los datos desde allí, sin la necesidad de volver a los pasos previos.
+Además, antes de finalizar la compra, permite que tus usuarios puedan **revisar** todo el proceso y el precio final. Para esto, agrega una página de confirmación o revisión, previo a realizar el pago, que incluya un resumen de todas las decisiones tomadas, toda la información cargada y el detalle del total a pagar. Es importante, dar la posibilidad de editar cualquiera de los datos desde allí, sin la necesidad de volver a los pasos previos.
 
 
 ![es confrima tu compra](/images/best-practices-guide/EspAspectosGeneralesConfirmaTuCompra_V2.gif)
@@ -128,7 +127,7 @@ Es importante, dar la posibilidad de editar cualquiera de los datos desde allí,
 >
 > UX para checkouts
 >
-> Una introducción la a guía pensada para desarrolladores, sellers y agencias.
+> Una introducción a la guía de buenas prácticas-
 >
 > [Introducción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/best-practices/ux-for-checkouts/introduction)
 

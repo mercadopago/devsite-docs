@@ -1,10 +1,10 @@
 # Buenas prácticas de UX para checkouts
 
-Para potenciar tu negocio, creamos una serie de buenas prácticas de UX para checkouts que te ayudarán a mejorar la experiencia de pago de tus clientes, generar más conversiones y ofrecer un mejor servicio. En esta guía pensada para desarrolladores, sellers y agencias, te mostraremos los aspectos generales y las características básicas para lograr que tu checkout sea fácil de navegar y claro de entender.
-
-Construye tu propia experiencia de checkout a través de la implementación de [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction) o nuestras soluciones de [Plugins y plataformas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins) y lleva a la práctica estos consejos.
+Para potenciar tu negocio, creamos una guía de buenas prácticas de UX para checkouts que te ayudarán a mejorar la experiencia de pago de tus clientes, generar más conversiones y ofrecer un mejor servicio. 
 
 ![es Introduccion Buenas practicas](/images/best-practices-guide/EspIntroduccion.png)
+
+En esta guía te mostraremos cómo construir tu propia experiencia de checkout a través de la implementación de nuestras soluciones, que te permiten customizar tu front-end y llevar a la práctica estos consejos. 
 
 > WARNING 
 > 

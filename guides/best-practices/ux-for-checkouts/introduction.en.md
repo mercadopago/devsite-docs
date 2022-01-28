@@ -1,15 +1,21 @@
 # UX best practices for checkouts
 
-To boost your business, we have created a series of UX best practices for checkout that will help you to improve your client's payment experience, get more conversion and offer an even better service. In this guide, which is destined for developers, sellers and agencies, we will show you the general aspects and the basic features to make sure your checkout is easy to navigate and understand.
-
-Build your own checkout experience by implementing the [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction) or our [Plugins and platforms](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins) solutions and put into practice our tips. 
+To boost your business, we have created a guide of UX best practices for checkout that will help you to improve your client's payment experience, get more conversion and offer an even better service. 
 
 ![en best practices introduction](/images/best-practices-guide/EngIntroduccionBuenasPracticas.png)
 
+In this guide we will show you how to build your own checkout experience through the implementation of our solutions, which allow you to customize your front-end and put these tips into practice.
+
+> WARNING 
+> 
+> Important
+> 
+> To know how your checkout performs once these best practices have been implemented, we recommend that you integrate a tracking tool and perform optimizations based on the results to improve the experience of your users and have more conversions.
+
 > NEXT_STEP_CARD_EN
 >
-> General aspects of your checkout
+> Optimize your checkout experience
 >
 > Learn about the main components of a checkout and how to optimize them to offer a better experience for your users and get more conversion.
 >
-> [General aspects](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/best-practices-guide/optimized-experience)
+> [Optimized experience](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/best-practices-guide/optimized-experience)
