@@ -36,11 +36,6 @@ Com relação à **aprovação dos pagamentos** na sua loja, existem três princ
 | Recusas bancárias | Cartões com expiração da validade, falta de limite, saldo insuficiente ou desabilitado para compras online.| Oferecer alternativas para outros meios e/ou condições de pagamentos. |
 | Prevenção contra fraude | O sistema anti-fraude do Mercado Pago faz a proteção do seu negócio contra ataques maliciosos que podem gerar prejuízos. | Este tipo de recusa é benéfico para sua loja.  |
  
-Para mais informações sobre os motivos citados acima, acesse os artigos de:
- 
-* [Recusas de pagamento](https://conteudo.mercadopago.com.br/entenda-como-funcionam-as-recusas-de-aprovacao-de-pagamentos-no-mercado-pago);
-* [Como lidar com recusas de pagamento](https://conteudo.mercadopago.com.br/como-lidar-com-as-recusas-de-pagamento-do-cartao-de-credito-no-seu-e-commerce).
- 
 > NEXT_STEP_CARD_PT
 >
 > FAQ
