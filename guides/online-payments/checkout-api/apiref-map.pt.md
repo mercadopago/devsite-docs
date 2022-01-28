@@ -1,6 +1,6 @@
 # Mapa de APIs
 
-As ações a seguir estão disponíveis para **Checkout ----[mla]----API------------ ----[mlb]----Transparente------------**.
+As ações a seguir estão disponíveis para ----[mla]----**Checkout API**------------ ----[mlb]----**Checkout Transparente------------**.
 
 [TXTSNIPPET][/guides/snippets/test-integration/apiref-payments]
 
