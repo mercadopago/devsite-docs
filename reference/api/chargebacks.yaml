@@ -100,7 +100,7 @@ paths:
   /v1/payments/{id}/refunds:
     get:
       tags:
-          - $ref: "#/tags/marketplace"
+        - $ref: "#/tags/marketplace"
         - $ref: '#/tags/checkout-api'
       summary: Check refunds list
       description: Get all Refunds for a specific payment
