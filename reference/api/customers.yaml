@@ -291,6 +291,7 @@ paths:
       tags:
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
+        - $ref: '#/tags/checkout-api'
       summary: Update a customer
       description: Renew the data of a customer. Indicate the customer ID and send the parameters with the information you want to update
       parameters:
@@ -571,6 +572,7 @@ paths:
       tags:
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
+        - $ref: '#/tags/checkout-api'
       summary: Get a customer
       description: Check all the information of a client created with the client ID of your choice
       parameters:
@@ -952,6 +954,7 @@ paths:
       tags:
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
+        - $ref: '#/tags/checkout-api'
       summary: Search for a customer
       description: Find all customer information using specific filters
       parameters:

@@ -814,6 +814,7 @@ paths:
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/qr-code'
         - $ref: '#/tags/subscriptions'
+        - $ref: '#/tags/checkout-api'
       summary: Get a payment
       description: See all the information of a payment through the payment ID
       parameters:
@@ -1136,6 +1137,7 @@ paths:
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/subscriptions'
+        - $ref: '#/tags/checkout-api'
       summary: Update a payment
       description: Renew the details of a payment when you need it. Indicate the payment ID and send the parameters with the information you want to update
       parameters:
@@ -1632,6 +1634,7 @@ paths:
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/qr-code'
         - $ref: '#/tags/subscriptions'
+        - $ref: '#/tags/checkout-api'
       summary: Find payments
       description: Search and return payments made in the last twelve months from the search date
       parameters:

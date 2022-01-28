@@ -101,6 +101,7 @@ paths:
     get:
       tags:
           - $ref: "#/tags/marketplace"
+        - $ref: '#/tags/checkout-api'
       summary: Check refunds list
       description: Get all Refunds for a specific payment
       parameters:
@@ -224,6 +225,7 @@ paths:
     post:
       tags:
         - $ref: "#/tags/marketplace"
+        - $ref: '#/tags/checkout-api'
       summary: Post refunds
       description: Create Partial/Full Refund for a specific payment. If the amount field is filled, it will create a partial refund, if not, it will create a full refund
       parameters:
@@ -369,6 +371,7 @@ paths:
     get:
       tags:
         - $ref: "#/tags/marketplace"
+        - $ref: '#/tags/checkout-api'
       summary: Get specific refund
       description: Get a specific Refund from a specific payment
       parameters:
@@ -502,6 +505,7 @@ paths:
     put:
       tags:
         - $ref: '#/tags/marketplace'
+        - $ref: '#/tags/checkout-api'
       summary: Create a cancellation
       description: Cancel a sale for a specific payment
       parameters:
