@@ -139,4 +139,4 @@ Also, before finalizing the purchase, allow your users to **review** the entire 
 >
 > Follow these steps to create an easy to navigate and understand checkout.
 >
-> [Ease of conversions](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/best-practices/ux-for-checkouts/easier-conversions)
+> [Ease of conversions](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/best-practices/ux-for-checkouts/ease-of-conversion)

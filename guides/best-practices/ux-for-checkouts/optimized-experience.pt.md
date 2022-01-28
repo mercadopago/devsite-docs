@@ -137,4 +137,4 @@ Além disso, antes da conclusão da compra, permite que os usuários possam **re
 >
 > Siga estas etapas para criar um checkout fácil de navegar e entender.
 >
-> [Facilidade de conversão](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/best-practices/ux-for-checkouts/easier-conversions)
+> [Facilidade de conversão](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/best-practices/ux-for-checkouts/ease-of-conversion)
