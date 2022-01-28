@@ -2,6 +2,8 @@
 
 Para que el proceso de pago sea fácil y rápido para tus usuarios, tu checkout debe ser fácil de recorrer y entender.
 
+Te aconsejamos construir una experiencia de varios pasos en donde cada uno de ellos se centre en una acción diferente, especialmente si se trata de una experiencia mobile. De esta forma, el usuario puede enfocar su atención y es más fácil encontrar lo que busca de un solo vistazo. 
+
 Para **mobile**, elige pasos cortos que enfoquen la atención y sean fáciles de recorrer. En cambio, para **desktop**, puedes utilizar experiencias one step ya que el usuario tiene un control más extenso sobre sus acciones y es más fácil encontrar lo que busca.
 
 ![es Checkout agil](/images/best-practices-guide/EspCreaUnChoAgilIntro.png)

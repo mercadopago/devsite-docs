@@ -6,7 +6,7 @@ Mostraremos como você pode otimizar sua experiência de checkout usando seus co
 
 A **escaneabilidade** ajuda a navegar visualmente na tela e entender as diferentes seções e instâncias dela. Há elementos que você pode adicionar para facilitar a escaneabilidade e fornecer contexto para o usuário:
 
-## Títulos, subtítulos e textos explicativos
+### Títulos, subtítulos e textos explicativos
 
 Mantenha os dados agrupados tematicamente e forneça contexto ao usuário sobre as etapas a serem seguidas para concluir sua transação. Isso ajudará a escaneabilidade e fará com que o usuário se sinta mais seguro ao compartilhar suas informações. Para isso, recomendamos que você use:
 
