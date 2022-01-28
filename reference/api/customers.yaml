@@ -10,6 +10,7 @@ paths:
       tags:
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
+        - $ref: '#/tags/checkout-api'
       summary: Create a customer
       description: Create a customer with all its data and save the cards used to simplify the payment process
       requestBody:

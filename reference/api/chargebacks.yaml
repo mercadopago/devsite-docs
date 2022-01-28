@@ -9,6 +9,7 @@ paths:
     get:
       tags:
         - $ref: '#/tags/marketplace'
+        - $ref: '#/tags/checkout-api'
       summary: Get a chargeback
       description: Check all the information related to a chargeback for your product or service with the ID of the chargeback you want
       parameters:

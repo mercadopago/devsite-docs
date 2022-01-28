@@ -10,6 +10,7 @@ paths:
       tags:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/marketplace'
+        - $ref: '#/tags/checkout-api'
       summary: Obtain customer cards
       description: Consult a client's saved cards in order to be able to show them when making a payment.
       parameters:
