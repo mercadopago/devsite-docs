@@ -19,10 +19,6 @@ Para instalar el plugin manualmente, sigue los pasos:
  
 El plugin PrestaShop solo recibe notificaciones del tipo IPN. Para obtener más información, [haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn).
  
-### ¿Admitimos el modo de Gateway?
- 
-Todavía no admitimos el **modo Gateway** en PrestaShop.
- 
 ### ¿El plugin realiza conversión de moneda?
  
 No, el plugin de PrestaShop no convierte moneda.
