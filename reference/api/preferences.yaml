@@ -11,7 +11,7 @@ paths:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
-      summary: Create a preference
+      summary: Create preference
       description: Generate a preference with the information of a product or service and obtain the necessary URL to start the payment flow
       requestBody:
         content:
@@ -711,7 +711,7 @@ paths:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
-      summary: Get a preference
+      summary: Get preference
       description: Check all the payment information for a product or service with the ID of the preference of your choice
       parameters:
         - name: id

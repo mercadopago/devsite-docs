@@ -10,7 +10,7 @@ paths:
       tags:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/marketplace'
-      summary: Create an order
+      summary: Create order
       description: Generate an order to associate it with the payment preference and obtain the necessary URL to start the payment flow
       requestBody:
         content:
@@ -277,7 +277,7 @@ paths:
       tags:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/marketplace'
-      summary: Search for orders
+      summary: Search orders
       description: Find all the information of the orders generated through specific filters or a specific date range
       parameters:
         - name: status
@@ -831,7 +831,7 @@ paths:
       tags:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/marketplace'
-      summary: Get an order
+      summary: Get order
       description: Check the payment information for a product or service with the ID of the order you want
       parameters:
         - name: id
@@ -1280,7 +1280,7 @@ paths:
       tags:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/marketplace'
-      summary: Update an order
+      summary: Update order
       description: Renew the details of a payment. Indicate the ID of the order and send the parameters with the information you want to update
       parameters:
         - name: id

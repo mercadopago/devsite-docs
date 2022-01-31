@@ -12,7 +12,7 @@ paths:
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/subscriptions'
-      summary: Generate token
+      summary: Create and refresh token
       description: To create or refresh the necessary token to operate your application in the name of a seller
       requestBody:
         content:
