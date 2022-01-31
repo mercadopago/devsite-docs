@@ -31,4 +31,4 @@ Para usar a integração do Mercado Pago com o Magento 2 em sua loja, você deve
 >
 > Siga as etapas para instalar o plugin.
 >
-> [Instalação do plugin](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/magento-two/installation)
+> [Instalação do plugin](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/magento-two/instalation)

@@ -46,9 +46,9 @@ Además, puedes usar el reporte para conocer el historial de dinero ----[mla]---
 
 > INFO
 >
-> Próximamente verás los registros de tus movimientos en orden cronológico.
+> Encuentra con mayor facilidad todos tus movimientos
 >
-> En los reportes que generes a partir de Diciembre vas a ver todos tus movimientos en el orden en que se realizaron para que puedas identificarlos más fácil y controlar mejor tus ventas.
+> A partir de enero de 2022 este reporte muestra tus movimientos en orden cronológico, para que sea más fácil identificar cuándo se realizaron. Este cambio no se visualiza en los reportes que generes con fechas previas.
 ------------
 ----[mlm, mlb, mlc, mco, mlu, mla]----
 > NOTE
@@ -57,7 +57,6 @@ Además, puedes usar el reporte para conocer el historial de dinero ----[mla]---
 >
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de ------------ ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu]---- Liberaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mla]---- para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 ------------
-
 <hr/>
 
 ### Próximos pasos
