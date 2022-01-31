@@ -23,6 +23,8 @@ As ações a seguir estão disponíveis para **Código QR**.
 |[Atualizar caixa](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/pos/_pos_id/put)|Atualizar os dados de um ponto de venda.|
 |[Excluir caixa](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/pos/_pos_id/delete)|Exclua um ponto de venda sempre que for necessário com o ID da caixa.|
 
+## Modelo Atendido
+
 ### Ordens presenciais
 
 |Ação|Descrição|
@@ -39,5 +41,3 @@ As ações a seguir estão disponíveis para **Código QR**.
 |[Obter ordem](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/get)|Veja todas as informações de pagamento de um produto ou serviço com a identificação do pedido de sua escolha.|
 |[Excluir ordem](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/delete)|Exclua uma ordem criada sempre que for necessário com o ID do vendedor e a caixa.|
 
-
-[TXTSNIPPET][/guides/snippets/test-integration/apiref-orders]

@@ -277,7 +277,6 @@ paths:
       tags:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/marketplace'
-        - $ref: '#/tags/qr-code'
       summary: Search for orders
       description: Find all the information of the orders generated through specific filters or a specific date range
       parameters:
@@ -832,7 +831,6 @@ paths:
       tags:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/marketplace'
-        - $ref: '#/tags/qr-code'
       summary: Get an order
       description: Check the payment information for a product or service with the ID of the order you want
       parameters:

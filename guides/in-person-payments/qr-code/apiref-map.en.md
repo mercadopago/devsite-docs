@@ -12,6 +12,7 @@ The following actions are available for **QR Code**.
 |[Update store](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/stores/_users_user_id_stores_id/put)|Renew the data of a physical shop. |
 |[Delete store](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/stores/_users_user_id_stores_id/delete)|Delete a physical shop whenever you need it with the ID of the store.|
 
+## Attended Model
 
 ### Points of Sale
 
@@ -40,5 +41,3 @@ The following actions are available for **QR Code**.
 |[Get order](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/get)|Check the payment information for a product or service with the ID of the order you want.|
 |[Delete order](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/delete)|Delete an order whenever you need to with the ID of the user and the external ID.|
 
-
-[TXTSNIPPET][/guides/snippets/test-integration/apiref-orders]
