@@ -27,12 +27,9 @@ Para **sincronizar tu cuenta de Mercado Pago a Loja Integrada**, sigue estos pas
 2. Haz clic en “Mercado Pago” y luego en “Sincroniza tu cuenta de Mercado Pago”.
 3. Vas a ser redirigido a Mercado Pago para que ingreses con los datos de tu cuenta. Para autorizar la conexión, haz clic en “Permitir”.
 
-
 ![Installing Mercado Pago - Loja Integrada](/images/lojaintegrada/lojaintegrada-connect-1.gif)
 
-
 ¡Y listo! Mercado Pago ya está sincronizado en tu tienda para que empieces a cobrar.
-
 
 > NOTE
 >
@@ -62,15 +59,11 @@ Este producto permite que el **cliente finalice el pago en el entorno de la tien
 
 Checkout Pro es la **integración que te permite cobrar en el entorno de Mercado Pago**, con **métodos de pago adicionales** como: Pix, boleto en cuotas, débito virtual de Caixa y billetera digital de Mercado Pago.
 
-> Obtenga más información sobre las opciones de pago que el [Checkout Pro ofrece](https://conteudo.mercadopago.com.br/o-que-e-o-checkout-mercado-pago).
-
 1. Accede a las [configuraciones de formas de pago](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) en el menú de Loja Integrada y haz clic en “Mercado Pago”.
 2. En el ítem “Checkout Pro” cambia a la opción “Activado”.
 3. Finalmente, haz clic en “Guardar cambios”.
 
-
 ![Activating Checkout transparent and Checkout redirected - Loja Integrada](/images/lojaintegrada/lojaintegrada-checkout-1.gif)
-
 
 Completa los datos de tu tienda que quieras que aparezcan al realizar un pago:
 
@@ -88,9 +81,7 @@ Completa los datos de tu tienda que quieras que aparezcan al realizar un pago:
 4. Y si quieres que tus pagos con boleto tengan un descuento, marca la opción “Usar descuento en tus boletos?” y completa el porcentaje que quieras ofrecer como descuento en “Descuento aplicado”.
 5. Finalmente, haz clic en “Guardar cambios”.
 
-
 ![Setting ticket - Loja Integrada](/images/lojaintegrada/lojaintegrada-ticket-1.gif)
-
 
 ## Configuración de cuotas
 
@@ -109,9 +100,7 @@ Completa los datos de tu tienda que quieras que aparezcan al realizar un pago:
   - Y por último, según la configuración de tu cuenta, **elige el número de cuotas sin interés para tus pagos**.
 3. Finalmente, haz clic en “Guardar cambios”.
 
-
 ![Setting credit card - Loja Integrada](/images/lojaintegrada/lojaintegrada-credit-card-1.gif)
-
 
 ### Configura las cuotas sin interés en tu cuenta de Mercado Pago
 
@@ -119,8 +108,6 @@ Completa los datos de tu tienda que quieras que aparezcan al realizar un pago:
 2. Accede en la opción “Configuraciones”, navega hasta “Ofrecer cuotas sin interés” y haz clic en “Activar”.
 3. Elige “¿Cuántas quieres ofrecer?” y confirma los cambios con el botón “Activar”.
 
-
 ![Setting account installment - Loja Integrada](/images/lojaintegrada/lojaintegrada-account-installment-1.gif)
-
 
 > Para más información, visita el [sitio oficial de Loja Integrada](https://lojaintegrada.com.br/).

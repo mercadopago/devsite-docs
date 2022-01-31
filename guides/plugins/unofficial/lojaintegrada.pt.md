@@ -27,12 +27,9 @@ Para **sincronizar sua conta do Mercado Pago à Loja Integrada**, siga os passos
 2. Clique em “Mercado Pago” e depois em "Sincronizar conta do Mercado Pago”.
 3. Você será redirecionado para uma página do Mercado Pago para acessar com seus dados. Clique em “Permitir” para autorizar a conexão.
 
-
 ![Installing Mercado Pago - Loja Integrada](/images/lojaintegrada/lojaintegrada-connect-1.gif)
 
-
 E pronto! Sua conta Mercado Pago já está sincronizada em sua loja e você pode começar a receber pagamentos.
-
 
 > NOTE
 >
@@ -62,15 +59,11 @@ Este produto permite ao **cliente efetuar o pagamento no ambiente da loja**, sem
 
 O Checkout Pro é a **integração que te permite cobrar no ambiente do Mercado Pago**, contando com as **formas de pagamentos adicionais** como: Pix, boleto parcelado, débito virtual da Caixa e carteira digital do Mercado Pago.
 
-> Conheça mais sobre as opções de pagamentos que o [Checkout Pro oferece](https://conteudo.mercadopago.com.br/o-que-e-o-checkout-mercado-pago).
-
 1. Acesse as [configurações de formas de pagamento](https://app.lojaintegrada.com.br/painel/configuracao/pagamento/listar) no menu da Loja Integrada e clique em “Mercado Pago”.
 2. No item “Checkout Pro” alterar de “Desativado” para “Ativado”.
 3. Clique em “Salvar alterações”.
 
-
 ![Activating Checkout transparent and Checkout redirected - Loja Integrada](/images/lojaintegrada/lojaintegrada-checkout-1.gif)
-
 
 Informe como você quer que sua loja apareça para seu cliente quando for realizar a compra:
 
@@ -88,9 +81,7 @@ Operar com **boleto do Mercado Pago como opção de pagamento**:
 4. Caso deseje que o pagamento com boleto tenha desconto marque a opção “Usar desconto no boleto?” e informe a porcentagem de desconto no campo “Desconto aplicado”.
 5. Clique em “salvar alterações”.
 
-
 ![Setting ticket - Loja Integrada](/images/lojaintegrada/lojaintegrada-ticket-1.gif)
-
 
 ## Configuração de parcelamento
 
@@ -109,9 +100,7 @@ Operar com **boleto do Mercado Pago como opção de pagamento**:
   - E por último, de acordo com a configuração da sua conta Mercado Pago, **escolha o número de parcelas sem juros para pagamentos**.
 3. Clique em “Salvar alterações”.
 
-
 ![Setting credit card - Loja Integrada](/images/lojaintegrada/lojaintegrada-credit-card-1.gif)
-
 
 ### Configurando o parcelamento de sua conta Mercado Pago
 
@@ -119,8 +108,6 @@ Operar com **boleto do Mercado Pago como opção de pagamento**:
 2. Clique na opção "Configurações", navegue até o campo "Oferecer parcelas sem acréscimo" e clique em “Ativar”.
 3. Escolha “Quantas parcelas você quer oferecer?” e clique em “Ativar” para confirmar as alterações.
 
-
-	![Setting account installment - Loja Integrada](/images/lojaintegrada/lojaintegrada-account-installment-1.gif)
-
+![Setting account installment - Loja Integrada](/images/lojaintegrada/lojaintegrada-account-installment-1.gif)
 
 > Para mais informações, visite o [site oficial do Loja integrada](https://lojaintegrada.com.br/).
