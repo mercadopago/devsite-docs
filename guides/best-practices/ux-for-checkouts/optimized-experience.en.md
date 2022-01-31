@@ -29,7 +29,7 @@ It is a **progress bar** that tells the user in which stage of your checkout the
 
 **Highlights** are underlined or highlighted text. Use highlights to highlight important keywords or sentences that add value and make the screen easier to scan.
 
-![en Bullets y highlights](/images/best-practices-guide/EngCreaUnChoAgilBullets.png)
+![en Bullets y highlights](/images/best-practices-guide/EngCreaUnChoAgilBulletsv2.png)
 
 
 ## Facilitate data filling
@@ -65,7 +65,7 @@ Both the labels and the placeholders must be short, direct and clear to prevent 
 
 The **tooltips** are notifications that offer an extra layer of information when the helper is not enough. Use them to add definitions, complementary information or actionables through links. 
 
-![en helpers y tooltips dos&don't](/images/best-practices-guide/EngAspectosGeneralesHelpersTooltip.png)
+![en helpers y tooltips dos&don't](/images/best-practices-guide/EngAspectosGeneralesHelpersTooltipv2png)
 
 ### Success and error messages
 

@@ -28,7 +28,7 @@ Os **bullets** são uma lista com diferentes elementos. Use bullets para criar l
 
 Os **highlights** são textos sublinhados ou destacados. Use highlights para destacar palavras-chave ou frases importantes que agreguem valor, fazendo com que seja mais fácil de escanear a página. 
 
-![pt Bullets y highlights](/images/best-practices-guide/PortCreaUnChoAgilBullets.png)
+![pt Bullets y highlights](/images/best-practices-guide/PortCreaUnChoAgilBulletsv2.png)
 
 
 ## Facilite o preenchimento de dados
@@ -65,7 +65,7 @@ Os **helpers** são textos que vão embaixo dos inputs e fornecem mais informaç
 
 As **tooltips** são notificações que oferecem informações adicionais quando apenas o helper não é suficiente. Use-as para incluir definições, informações complementares ou acionáveis através de links. 
 
-![pt helpers y tooltips dos&don't](/images/best-practices-guide/PortAspectosGeneralesHelpersTooltip.png)
+![pt helpers y tooltips dos&don't](/images/best-practices-guide/PortAspectosGeneralesHelpersTooltipv2.png)
 
 ### Mensagens de sucesso e erro
 
