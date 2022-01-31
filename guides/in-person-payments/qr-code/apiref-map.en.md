@@ -12,8 +12,6 @@ The following actions are available for **QR Code**.
 |[Update store](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/stores/_users_user_id_stores_id/put)|Renew the data of a physical shop. |
 |[Delete store](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/stores/_users_user_id_stores_id/delete)|Delete a physical shop whenever you need it with the ID of the store.|
 
-## Attended Model
-
 ### Points of Sale
 
 |Action|Description|
@@ -24,6 +22,7 @@ The following actions are available for **QR Code**.
 |[Update POS](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/pos/_pos_id/put)|Renew the data of a Point of Sale.|
 |[Delete POS](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/pos/_pos_id/delete)|Delete a Point of Sale whenever you need it with the ID of the POS.|
 
+## Attended Model
 
 ### Instore Orders
 
