@@ -30,7 +30,7 @@ As ações a seguir estão disponíveis para **Código QR**.
 |Ação|Descrição|
 |---|---|
 |[Criar ordem](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post)|Gerar uma ordem para associar com a preferência de pagamento e obter a URL necessária para iniciar o fluxo de pagamento.|
-|[Excluir ordem|](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/delete)Exclua uma ordem criada sempre que for necessário com o ID do vendedor e a caixa.|
+|[Excluir ordem](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/delete)|Exclua uma ordem criada sempre que for necessário com o ID do vendedor e a caixa.|
 
 
 ### Ordens presenciais v2
