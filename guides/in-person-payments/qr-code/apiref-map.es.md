@@ -23,7 +23,24 @@ Las siguientes acciones están disponibles para **Código QR**.
 |[Actualizar caja](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/pos/_pos_id/put)|Renueva los datos de un punto de venta.|
 |[Eliminar caja](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/pos/_pos_id/delete)|Elimina un punto de venta siempre que lo necesites con el ID de la caja.|
 
-### Órdenes
+### Modelo Atendido
+
+#### Órdenes presenciales
+
+|Acción|Descripción|
+|---|---|
+|[Crear orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post)|Genera una orden de pago asociada a la caja que quieras con toda la información de pago de tu producto o servicio.|
+|[Eliminar orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/delete)|Elimina una orden creada siempre que lo necesites con el ID del vendedor y de la caja.|
+
+##·# Órdenes presenciales v2
+
+|Acción|Descripción|
+|---|---|
+|[Crear orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put)|Genera una orden de pago asociada a la caja que quieras con toda la información de pago de tu producto o servicio.|
+|[Obtener orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post)|Consulta toda la información de pago de un producto o servicio con el ID de la orden que quieras.|
+|[Eliminar orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/delete)|Elimina una orden creada siempre que lo necesites con el ID del vendedor y de la caja.|
+
+### Consulta de Órdenes
 
 |Acción|Descripción|
 |---|---|
@@ -37,23 +54,9 @@ Las siguientes acciones están disponibles para **Código QR**.
 |[Buscar en pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_search/get)|Busca y retorna los pagos hechos en los últimos doce meses desde la fecha de pago.|
 |[Obtener pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get)|Consulta toda la información de un pago a través del ID del pago.|
 
-[TXTSNIPPET][/guides/snippets/test-integration/apiref-refunds]
-
-## Modelo Atendido
-
-### Órdenes presenciales
+### Reembolsos
 
 |Acción|Descripción|
 |---|---|
-|[Crear orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post)|Genera una orden de pago asociada a la caja que quieras con toda la información de pago de tu producto o servicio.|
-|[Eliminar orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/delete)|Elimina una orden creada siempre que lo necesites con el ID del vendedor y de la caja.|
-
-
-### Órdenes presenciales v2
-
-|Acción|Descripción|
-|---|---|
-|[Crear orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put)|Genera una orden de pago asociada a la caja que quieras con toda la información de pago de tu producto o servicio.|
-|[Obtener orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post)|Consulta toda la información de pago de un producto o servicio con el ID de la orden que quieras.|
-|[Eliminar orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/delete)|Elimina una orden creada siempre que lo necesites con el ID del vendedor y de la caja.|
+|[Crear reembolso](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/chargebacks/_payments_id_refunds/post)|Crear reembolsos parciales/totales para un pago específico.|
 

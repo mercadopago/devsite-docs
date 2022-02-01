@@ -23,6 +23,23 @@ As ações a seguir estão disponíveis para **Código QR**.
 |[Atualizar caixa](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/pos/_pos_id/put)|Atualizar os dados de um ponto de venda.|
 |[Excluir caixa](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/pos/_pos_id/delete)|Exclua um ponto de venda sempre que for necessário com o ID da caixa.|
 
+### Modelo Atendido
+
+#### Ordens presenciais
+
+|Ação|Descrição|
+|---|---|
+|[Criar ordem](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post)|Gerar uma ordem para associar com a preferência de pagamento e obter a URL necessária para iniciar o fluxo de pagamento.|
+|[Excluir ordem](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/delete)|Exclua uma ordem criada sempre que for necessário com o ID do vendedor e a caixa.|
+
+#### Ordens presenciais v2
+
+|Ação|Descrição|
+|---|---|
+|[Criar ordem](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put)|Gerar uma ordem para associar com a preferência de pagamento e obter a URL necessária para iniciar o fluxo de pagamento.|
+|[Obter ordem](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/get)|Veja todas as informações de pagamento de um produto ou serviço com a identificação do pedido de sua escolha.|
+|[Excluir ordem](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/delete)|Exclua uma ordem criada sempre que for necessário com o ID do vendedor e a caixa.|
+
 ### Ordens
 
 |Ação|Descrição|
@@ -37,23 +54,11 @@ As ações a seguir estão disponíveis para **Código QR**.
 |[Pesquisar em pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_search/get)|Pesquisa e retorna pagamentos efetuados nos últimos doze meses a partir da data de pesquisa.|
 |[Obter pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get)|Consulte todas as informações de um pagamento através do ID de pagamento.|
 
-[TXTSNIPPET][/guides/snippets/test-integration/apiref-refunds]
-
-## Modelo Atendido
-
-### Ordens presenciais
+### Reembolsos
 
 |Ação|Descrição|
 |---|---|
-|[Criar ordem](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post)|Gerar uma ordem para associar com a preferência de pagamento e obter a URL necessária para iniciar o fluxo de pagamento.|
-|[Excluir ordem](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/delete)|Exclua uma ordem criada sempre que for necessário com o ID do vendedor e a caixa.|
+|[Criar reembolso](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_payments_id_refunds/post)|Criar um reembolso parcial/total para um pagamento específico.|
 
 
-### Ordens presenciais v2
-
-|Ação|Descrição|
-|---|---|
-|[Criar ordem](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put)|Gerar uma ordem para associar com a preferência de pagamento e obter a URL necessária para iniciar o fluxo de pagamento.|
-|[Obter ordem](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/get)|Veja todas as informações de pagamento de um produto ou serviço com a identificação do pedido de sua escolha.|
-|[Excluir ordem](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/delete)|Exclua uma ordem criada sempre que for necessário com o ID do vendedor e a caixa.|
 

@@ -22,6 +22,24 @@ The following actions are available for **QR Code**.
 |[Update POS](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/pos/_pos_id/put)|Renew the data of a Point of Sale.|
 |[Delete POS](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/pos/_pos_id/delete)|Delete a Point of Sale whenever you need it with the ID of the POS.|
 
+### Attended Model
+
+#### Instore Orders
+
+|Action|Description|
+|---|---|
+|[Create order](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post)|Generate a payment order with all the payment information for your product or service and associate it with the Point of Sale you want.|
+|[Delete order](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/delete)|Delete an order whenever you need to with the ID of the user and the external ID.|
+
+
+#### Instore Orders v2
+
+|Action|Description|
+|---|---|
+|[Create order](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put)|Generate a payment order with all the payment information for your product or service and associate it with the Point of Sale you want.|
+|[Get order](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/get)|Check the payment information for a product or service with the ID of the order you want.|
+|[Delete order](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/delete)|Delete an order whenever you need to with the ID of the user and the external ID.|
+
 ### Merchant Orders
 
 |Action|Description|
@@ -36,23 +54,12 @@ The following actions are available for **QR Code**.
 |[Search payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_search/get)|Search and return payments made in the last twelve months from the search date.|
 |[Get payment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get)|See all the information of a payment through the payment ID.|
 
-[TXTSNIPPET][/guides/snippets/test-integration/apiref-refunds]
-
-## Attended Model
-
-### Instore Orders
+### Refunds
 
 |Action|Description|
 |---|---|
-|[Create order](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post)|Generate a payment order with all the payment information for your product or service and associate it with the Point of Sale you want.|
-|[Delete order](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/delete)|Delete an order whenever you need to with the ID of the user and the external ID.|
+|[Create refund](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/chargebacks/_payments_id_refunds/post)|Create Partial/Full Refund for a specific payment.|
 
 
-### Instore Orders v2
 
-|Action|Description|
-|---|---|
-|[Create order](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put)|Generate a payment order with all the payment information for your product or service and associate it with the Point of Sale you want.|
-|[Get order](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/get)|Check the payment information for a product or service with the ID of the order you want.|
-|[Delete order](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/delete)|Delete an order whenever you need to with the ID of the user and the external ID.|
 
