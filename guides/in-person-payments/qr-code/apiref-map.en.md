@@ -22,6 +22,22 @@ The following actions are available for **QR Code**.
 |[Update POS](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/pos/_pos_id/put)|Renew the data of a Point of Sale.|
 |[Delete POS](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/pos/_pos_id/delete)|Delete a Point of Sale whenever you need it with the ID of the POS.|
 
+### Merchant Orders
+
+|Action|Description|
+|---|---|
+|[Search orders](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/merchant_orders/_merchant_orders_search/get)|Find all the information of the orders generated through specific filters or a specific date range.|
+|[Get order](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/merchant_orders/_merchant_orders_id/get)|Check the payment information for a product or service with the ID of the order you want.|
+
+### Payments
+
+|Action|Description|
+|---|---|
+|[Search payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_search/get)|Search and return payments made in the last twelve months from the search date.|
+|[Get payment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get)|See all the information of a payment through the payment ID.|
+
+[TXTSNIPPET][/guides/snippets/test-integration/apiref-refunds]
+
 ## Attended Model
 
 ### Instore Orders
