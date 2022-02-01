@@ -25,7 +25,7 @@ It is a **progress bar** that tells the user in which stage of your checkout the
 
 ### Bullets and highlights
 
-**Bullets** are a dotted list of different elements. Use bullets to make lists that help you read the information faster.
+**Bullets** are a dotted list of different elements. Use bullets to make lists that help you read the information faster. A list causes less cognitive effort than a paragraph.
 
 **Highlights** are underlined or highlighted text. Use highlights to highlight important keywords or sentences that add value and make the screen easier to scan.
 
@@ -34,7 +34,7 @@ It is a **progress bar** that tells the user in which stage of your checkout the
 
 ## Facilitate data filling
 
-**Forms** are sets of related inputs that have a common purpose, for example, such as those in which personal data is requested. 
+We recommend using **forms** to collect the data you need from the user. Forms are **sets of related inputs** that have a common purpose, for example, such as those in which personal data is requested. 
 
 In turn, the **inputs** are fields where the users must fill and edit the required information. They should have a logical order within the form and the required ones should be differentiated from the optional ones. Additionally, they must be long enough so that users can view the information they have entered and easily review and edit them.
 
@@ -89,7 +89,7 @@ Here are some tips:
 ![en Agrega accionables claros](/images/best-practices-guide/EngAspectosGeneralesAccionablesClaros.png)
 
 
-## Highlight the benefits
+## Highlight the options
 
 In a checkout, the user must choose between different options throughout the payment process, such as the type of delivery, payment methods, number of installments, among others. In this process, the conversion can vary according to different factors and the context of each one.
 

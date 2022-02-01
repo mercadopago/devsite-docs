@@ -1,6 +1,8 @@
 # Facilidade de conversão
 
-Para que o processo de pagamento seja prático e rápido para seus usuários, é necessário que seja fácil entender e navegar pelo seu checkout. 
+Para que o processo de pagamento seja prático e rápido para seus usuários e, assim, obter mais conversões, seu checkout deve ser fácil de navegar e consistente. Siga estas dicas para alcançá-lo.
+
+## Forneça etapas claras
 
 Aconselhamos que você construa uma experiência com várias etapas onde cada uma delas se concentre em uma ação diferente, principalmente se for uma experiência mobile. Desta forma, o usuário pode focar sua atenção e é mais fácil encontrar o que procura em um piscar de olhos.
 
@@ -10,7 +12,7 @@ Para **dispositivos móveis**, opte por etapas curtas, que chamem a atenção e 
 ![pt Checkout agil](/images/best-practices-guide/PortCreaUnChoAgilIntro.png)
 
 
-## Consistência 
+## Ofereça consistência 
 
 A **consistência** é um fator essencial para gerar coerência e congruência. Nos ajuda a estabelecer padrões que os usuários entendam e lembrem. Tente manter a consistência visual e textual.
 

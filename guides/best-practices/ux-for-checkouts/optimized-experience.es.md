@@ -24,7 +24,7 @@ Es una **barra de progreso** que le indica al usuario en qué instancia de tu ch
 
 ### Bullets y highlights
 
-Los **bullets** son una lista punteada de diferentes elementos. Utiliza bullets para hacer listas que ayuden a leer más rápido la información.
+Los **bullets** son una lista punteada de diferentes elementos. Utiliza bullets para hacer listas que ayuden a leer más rápido la información. Un listado provoca menos esfuerzo cognitivo que un párrafo de texto.
 
 Los **highlights** son textos subrayados o destacados. Usa highlights para destacar palabras claves u oraciones importantes que sumen valor y permitir que la pantalla sea más fácil de escanear.
 
@@ -32,7 +32,7 @@ Los **highlights** son textos subrayados o destacados. Usa highlights para desta
 
 ## Facilita el llenado de datos
 
-Los formularios son **conjuntos de inputs**, relacionados entre sí y con un objetivo en común, como por ejemplo, aquellos en los que se solicitan datos personales. 
+Te recomendamos utilizar **formularios** para recolectar los datos que necesitas del usuario. Los formularios son **conjuntos de inputs**, relacionados entre sí y con un objetivo en común, como por ejemplo, aquellos en los que se solicitan datos personales. 
 
 A su vez, los **inputs** son espacios donde los usuarios completan y editan la información requerida. Estos deben tener un orden lógico dentro del formulario y se deben diferenciar los opcionales de los obligatorios. Además, deben ser lo suficientemente largos para que el usuario vea la información ingresada y pueda revisar y editar fácilmente.
 
@@ -86,7 +86,7 @@ Te acercamos algunos consejos:
 
 ![es Agrega accionables claros](/images/best-practices-guide/EspAspectosGeneralesAccionablesClaros.png)
 
-## Destaca los beneficios
+## Destaca las opciones
 
 En un checkout, el usuario debe elegir entre diferentes opciones a lo largo de todo el proceso de pago, como por ejemplo el tipo de envío, formas de pago, número de cuotas, entre otras. En este proceso, la conversión puede variar según diferentes factores y el contexto de cada uno. 
 

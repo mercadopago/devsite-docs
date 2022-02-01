@@ -24,7 +24,7 @@ Trata-se de uma **barra de progresso** que indica ao usuário em qual etapa ele 
 
 ### Bullets y highlights
 
-Os **bullets** são uma lista com diferentes elementos. Use bullets para criar listas que facilitem a leitura da informação.
+Os **bullets** são uma lista com diferentes elementos. Use bullets para criar listas que facilitem a leitura da informação. Uma lista causa menos esforço cognitivo do que um parágrafo de texto.
 
 Os **highlights** são textos sublinhados ou destacados. Use highlights para destacar palavras-chave ou frases importantes que agreguem valor, fazendo com que seja mais fácil de escanear a página. 
 
@@ -33,7 +33,7 @@ Os **highlights** são textos sublinhados ou destacados. Use highlights para des
 
 ## Facilite o preenchimento de dados
 
-Os formulários são **conjuntos de entradas**, relacionados entre si e com um objetivo comum, como aqueles em que são solicitados dados pessoais.
+Recomendamos o uso de **formulários** para coletar os dados que você precisa do usuário. Os formulários são **conjuntos de inputs**, relacionados entre si e com um objetivo comum, como aqueles em que são solicitados dados pessoais.
 
 Os **inputs**, por sua vez, são campos onde as informações exigidas devem ser preenchidas ou editadas. Eles devem seguir uma ordem lógica dentro do formulário, sendo necessário diferenciar os campos obrigatórios dos opcionais. Além disso, devem ter um tamanho que permita que o usuário enxergue a informação que preencheu e possa revisá-la e editá-la facilmente.
 
@@ -88,7 +88,7 @@ Confira algumas dicas:
 
 ![pt Agrega accionables claros](/images/best-practices-guide/PortAspectosGeneralesAccionablesClaros.png)
 
-## Destaque os benefícios
+## Destaque as opções
 
 Num checkout, o usuário deve escolher entre diferentes opções ao longo do processo de pagamento, como tipo de entrega, formas de pagamento, número de parcelas, entre outras. Nesse processo, a conversão pode variar de acordo com diferentes fatores e o contexto de cada um.
 
