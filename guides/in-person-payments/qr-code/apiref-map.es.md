@@ -32,7 +32,7 @@ Las siguientes acciones están disponibles para **Código QR**.
 |[Crear orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post)|Genera una orden de pago asociada a la caja que quieras con toda la información de pago de tu producto o servicio.|
 |[Eliminar orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/delete)|Elimina una orden creada siempre que lo necesites con el ID del vendedor y de la caja.|
 
-##·# Órdenes presenciales v2
+### Órdenes presenciales v2
 
 |Acción|Descripción|
 |---|---|
