@@ -104,7 +104,7 @@ Además, puedes agregar las propuestas de valor más destacadas en cada opción 
 
 Evita pedir datos repetidos o que no sean necesarios para finalizar la compra. Para eso, aprovecha las instancias de pedido de datos obligatorios y obtén información que vayas a necesitar más adelante. Por ejemplo, utiliza la información personal y de envío para tomar los datos de facturación. Así evitarás sumar un formulario extra que ralentice el proceso de pago.
 
-También puedes utilizar **checkboxes** que infieran información de pasos previos o desplieguen un formulario en caso de que el usuario quiera cargar información diferente.
+También puedes utilizar **checkboxes**, o casillas de verificación, que infieran información de pasos previos o desplieguen un formulario en caso de que el usuario quiera cargar información diferente.
 
 
 ![es Saltea pasos innecesarios](/images/best-practices-guide/EspAspectosGeneralesSalteaPasosInnecesarios.png)
