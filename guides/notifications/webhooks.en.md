@@ -297,7 +297,7 @@ This indicates that payment **999999999** was created for user **44444** in prod
 | **action** | Type of notification received, indicating whether it is the update of a resource or the creation of a new |
 | **data - id** | Payment ID or merchant_order |
 
-4. If you want to receive notifications only from Webhook and not from IPN, you can add in the `notification_url` the parameter `source_news=webhook`. For example: https://www.yourserver.com/notifications?source_news=webhook
+4. If you want to receive notifications only from Webhook and not from IPN, you can add in the `notification_url` the parameter `source_news=webhook`. For example: https://www.yourserver.com/notifications?source_news=webhooks
 
 ## Actions required after receiving notification
 
@@ -307,10 +307,10 @@ After returning the notification and confirming its receipt, you will obtain the
 
 | Type | URL | Documentation |
 | --- | --- | --- |
-| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [see documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) |
-| subscription_preapproval | `https://api.mercadopago.com/preapproval` | [see documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/subscriptions/_preapproval/post) |
+| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) |
+| subscription_preapproval | `https://api.mercadopago.com/preapproval` | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/subscriptions/_preapproval/post) |
 | subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | - |
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | - |
-| point_integration_wh | - | [see documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/mp-point/introduction) |
+| point_integration_wh | - | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/mp-point/introduction) |
 
 With this information, you will be able to carry out the necessary updates to your platform, such as updating an approved payment.

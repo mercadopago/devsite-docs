@@ -81,4 +81,4 @@ Pronto! Você instalou com sucesso o plugin Mercado Pago para Magento 2.
 >
 > Siga as etapas para configurar pagamentos com o Checkout Custom (Transparente).
 >
-> [Configuração de pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guias/plugins/magento-two/payment-configuration)
+> [Configuração de pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/magento-two/payment-configuration)

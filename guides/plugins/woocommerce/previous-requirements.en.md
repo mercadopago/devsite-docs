@@ -19,7 +19,7 @@ To use the Mercado Pago integration with WooCommerce in your WordPress, you must
 
 If all prerequisites are met, you can install the plugin.
 
-> LEFT_BUTTON_REQUIRED_EN
+> NEXT_STEP_CARD_EN
 >
 > Plugin installation.
 >

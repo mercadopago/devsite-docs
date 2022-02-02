@@ -37,14 +37,9 @@ Abaixo, detalhamos os fatores que influenciam na recusa de um pagamento:
 |---|---|---|
 | Erros do comprador | Erros de preenchimento de dados de endereço, CPF ou cartão. | Checkout com informações claras no passo a passo da compra. |
 | Recusas bancárias | Cartões com expiração da validade, falta de limite, saldo insuficiente ou desabilitado para compras online.| Oferecer alternativas para outros meios e/ou condições de pagamentos. | 
-| Prevenção contra fraude | O sistema anti-fraude do Mercado Pago faz a proteção do seu negócio contra ataques maliciosos que podem gerar prejuízos. | Este tipo de recusa é benéfico para sua loja.  |
+| Prevenção contra fraude | O sistema anti-fraude do Mercado Pago faz a proteção do seu negócio contra ataques maliciosos que podem gerar prejuízos. | Este tipo de recusa é benéfico para sua loja. |
 
-Para mais informações sobre os motivos citados acima, acesse os artigos:
-
-* [Recusas de pagamento](https://conteudo.mercadopago.com.br/entenda-como-funcionam-as-recusas-de-aprovacao-de-pagamentos-no-mercado-pago) 
-* [Como lidar com recusas de pagamento](https://conteudo.mercadopago.com.br/como-lidar-com-as-recusas-de-pagamento-do-cartao-de-credito-no-seu-e-commerce)
-
-> LEFT_BUTTON_RECOMMENDED_PT
+> NEXT_STEP_CARD_PT
 >
 > FAQ
 >

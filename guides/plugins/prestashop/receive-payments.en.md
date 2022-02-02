@@ -38,12 +38,7 @@ Below, we detail the factors that influence a payment refusal.
 | Banking refusals | Cards with an expiration date, lack of limit, insufficient funds, or disabled for online purchases. | Offer alternatives to other methods and/or payment terms. |
 | Fraud prevention | Mercado Pago's anti-fraud system protects your business against malicious attacks that can generate losses.| This type of refusal is beneficial to your store. |
 
-For more information on the reasons mentioned above, visit these articles:
-
-* [Payment refusals](https://conteudo.mercadopago.com.br/entenda-como-funcionam-as-recusas-de-aprovacao-de-pagamentos-no-mercado-pago) 
-* [How to handle payment denials](https://conteudo.mercadopago.com.br/como-lidar-com-as-recusas-de-pagamento-do-cartao-de-credito-no-seu-e-commerce)
-
-> LEFT_BUTTON_RECOMMENDED_EN
+> NEXT_STEP_CARD_EN
 >
 > FAQ
 >

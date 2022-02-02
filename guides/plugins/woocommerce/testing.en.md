@@ -12,7 +12,7 @@ With the store in test mode, you can test purchases before enabling them for the
 
 If the test runs without errors, it means your store is ready to sell. However, we recommend you perform additional tests so that you can view the different payment results.
 
-> LEFT_BUTTON_REQUIRED_EN
+> NEXT_STEP_CARD_EN
 >
 > Activating production mode
 >

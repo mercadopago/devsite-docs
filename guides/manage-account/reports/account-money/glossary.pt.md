@@ -10,9 +10,9 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | SOURCE_ID | ID da transação no Mercado Pago (por exemplo, o pagamento de uma venda). |
 | USER_ID | Código da conta do vendedor. (Cust ID) |
 | PAYMENT_METHOD | Confira os [meios de pagamento disponíveis](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods) de acordo com o país no qual você opera com o Mercado Pago. |
-| PAYMENT_METHOD_TYPE | Tipo de meio de pagamento.<br><br> Pode ser:<br>*credit_card*: cartão de crédito.<br>*debit_card*: cartão de débito.<br>*bank_transfer*: transferência.<br>*atm*: caixa eletrônico.<br>*ticket*: à vista<br>*account_money*: dinheiro em conta.<br><br> |
+| PAYMENT_METHOD_TYPE | Tipo de meio de pagamento.<br><br> Pode ser:<br>*credit_card*: cartão de crédito.<br>*debit_card*: cartão de débito.<br>*bank_transfer*: transferência.<br>*atm*: caixa eletrônico.<br>*ticket*: à vista<br>*account_money*: dinheiro em conta.<br>*PIX*:transferência.<br><br/> |
 | SITE | MLB: Brasil |
-| TRANSACTION_TYPE | Tipo de operação. Pode ser:<br><br> *SETTLEMENT*: pagamento aprovado.<br> ----[mlu, mla, mlm, mco, mlc, mlb]---- *REFUND*: pagamento totalmente devolvido total ou parcial.------------ ----[mpe]---- *REFUND*: pagamento totalmente devolvido.------------<br>*CHARGEBACK*: o comprador fez uma contestação (desconhece o pagamento) no seu cartão de crédito.<br>*DISPUTE*: o comprador iniciou uma reclamação por esse pagamento.<br>*WITHDRAWAL*: retirada para a conta bancária.<br>*WITHDRAWAL_CANCEL*: retirada para a conta bancária que foi cancelada.<br>*PAYOUT*: saque em dinheiro disponível no Mercado Pago. ----[mlb]---- <br>*TRAVA_DE_RECEBIVEL*: trava de recebível. ------------ <br><br> |
+| TRANSACTION_TYPE | Tipo de operação. Pode ser:<br><br> *SETTLEMENT*: pagamento aprovado.<br> ----[mlu, mla, mlm, mco, mlc, mlb]---- *REFUND*: pagamento totalmente devolvido ou devolução parcial.------------ ----[mpe]---- *REFUND*: pagamento totalmente devolvido.------------<br>*CHARGEBACK*: o comprador fez uma contestação (desconhece o pagamento) no seu cartão de crédito.<br>*DISPUTE*: o comprador iniciou uma reclamação por esse pagamento.<br>*WITHDRAWAL*: retirada para a conta bancária.<br>*WITHDRAWAL_CANCEL*: retirada para a conta bancária que foi cancelada.<br>*PAYOUT*: saque em dinheiro ou transferência por PIX de saldo disponível no Mercado Pago. ----[mlb]---- <br>*TRAVA_DE_RECEBIVEL*: trava de recebível. ------------ <br><br> |
 | TRANSACTION_AMOUNT | Valor bruto da transação. |
 | TRANSACTION_CURRENCY | Moeda:<br><br>MXN (Peso mexicano)<br>CLP (Peso Chileno)<br>ARS (Peso Argentino)<br>BRL (Real Brasileiro)<br>EN (Sol Peruano)<br>COP (Peso Colombiano)<br>UYU (Peso Uruguayo)<br>VES (Bolivar Venezolano)<br><br> |
 | SELLER_AMOUNT | Valor recebido por compras com split. |
@@ -25,7 +25,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | COUPON_AMOUNT | Valor do cupom de desconto. **Apenas o valor bruto** (`TRANSACTION_AMOUNT`) **é descontado se fornecido pelo vendedor**. |
 | METADATA | ----[mlu, mla, mlm, mco, mlc, mlb]---- Dados adicionais como, por exemplo, o ID das devoluções parciais ou dados informados pelo vendedor em caso de integração externa. ------------ ----[mpe]---- Dados adicionais como, por exemplo, ou dados informados pelo vendedor em caso de integração externa. ------------|
 | MKP_FEE_AMOUNT | Comissão do Mercado Livre. |
-| FINANCING_FEE_AMOUNT | Custo de oferecer parcelamento sem juros. |
+| FINANCING_FEE_AMOUNT | Custo de oferecer parcelamento quando o custo dessa comissão for assumido pelo seller. |
 | SHIPPING_FEE_AMOUNT | Custo de envio. |
 | TAXES_AMOUNT | ----[mla]---- Impostos cobrados por retenção de Receita Bruta na fonte, IVA, Lucros; e impostos sobre Créditos e Débitos, entre outros. [Saiba mais sobre retenções e impostos.](https://vendedores.mercadolibre.com.ar/nota/retenciones-y-percepciones-sobre-tus-ventas-lo-que-debes-saber/) ------------ ----[mlm, mlc, mlu, mlb, mco, mpe]----Impostos recebidos.------------  |
 | INSTALLMENTS | Número de parcelas em que a transação foi realizada. |
@@ -42,6 +42,8 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 | PACK_ID | Identificador do pacote no carrinho. |
 | TAXES_DISAGGREGATED | Impostos desagregados no formato JSON. |
 | POI_ID | ID da maquininha se o pagamento é feito em uma loja física. |
+| POI_WALLET_NAME | Nome da carteira digital de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago.|
+| POI_BANK_NAME | Nome da instituição bancária de onde um pagamento virtual saiu. Permite identificar a origem de uma transação quando você cobra com um código QR do Mercado Pago.|
 
 <hr/>
 

@@ -20,7 +20,7 @@ Para criar uma aplicação siga os passos abaixo.
 4. Aceite nossos Termos e Condições.
 5. Crie a aplicação clicando no botão "Criar aplicação".
 
-A cada aplicação criada, um card novo contendo o nome, descrição e ID da aplicação é automaticamente criado na página inicial do painel do desenvolvedor.
+A cada aplicação criada, um card novo contendo o nome, descrição e ID da aplicação é automaticamente criado na página inicial do seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel) de desenvolvedor.
 
 
 ## Detalhes da aplicação
@@ -59,7 +59,7 @@ Após o acesso às credenciais ser concedido, você pode usá-las para integrar 
 
 
 ## ID de integrador
-No painel do desenvolvedor consta também o seu ID de integrador. O ID de integrador é um número único que o identifica como membro do &lt;dev&gt; program. 
+No seu Dashboard (https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel) de desenvolvedor consta também o seu ID de integrador. O ID de integrador é um número único que o identifica como membro do &lt;dev&gt; program. 
 
 O &lt;dev&gt; program é um programa de benefícios para desenvolvedores, gratuito e exclusivo, criado para que você faça parte da nossa comunidade e receba benefícios extras. Para fazer parte, você deve ser aprovado em algumas das certificações oficiais do Mercado Pago. 
 

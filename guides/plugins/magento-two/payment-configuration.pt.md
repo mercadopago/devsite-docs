@@ -108,4 +108,4 @@ O pagamento será cancelado quando o status estiver em `pending` ou `in_process`
 >
 > Configure o plugin para aceitar pagamentos com o Checkout Pro.
 >
-> [Configuração do Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guias/plugins/magento-two/checkout-pro-configuration)
+> [Configuração do Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/magento-two/checkout-pro-configuration)
