@@ -149,7 +149,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
         "end_date": "2021-07-02T11:59:52.581-04:00"
 }
 ```
->Você pode obter mais informações sobre os campos na [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference).
+>Você pode obter mais informações sobre os campos na [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/subscriptions/_preapproval/post).
 
 Pronto! Você criou uma assinatura com um plano associado.
 
@@ -283,7 +283,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 }
 ```
 
-> Você pode obter mais informações sobre os campos na [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference).
+> Você pode obter mais informações sobre os campos na [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/subscriptions/_preapproval/post).
 
 
 Atributos

@@ -14,8 +14,6 @@ We know some concepts may be new for you. Before starting, here's a cheatsheet.
 | Point of sale (POS) | A **place to perform a transaction** on a store or physical shop. Each POS will be linked with a unique QR code. |
 | Order | A purchase made by your client. Contains a list of products with an associated cost. |
 
-> Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) for more information.
-
 ## Previous requirements
 
 Keep these aspects in mind before you start:
@@ -28,7 +26,8 @@ You can [Sign in](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/l
 
 ### 2. Create an application
 
-You will need to create an application for each solution in order to have everything organized and to keep a record that facilitates its management. Create an application to get credentials and set up webhook notifications.
+To transact via Mercado Pago integration, a credential must be created. This credential will have an identification and the Access Token, only with this token will it be possible to transact using a Mercado Pago account.
+Create an application to get credentials and set up webhook notifications.
 
 It's easy and we explain how to do it:
 
@@ -42,7 +41,7 @@ It's easy and we explain how to do it:
 >
 > Note
 >
-> If you were to operate in behalf of others, you can work with their credentials safer and easier through [Oauth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/oauth).
+> In case of POS integrated with several tenants, see topic 4 and 5. Pay attention to the security of your integration and implement OAuth.
 
 ### 3. Generate test users
 
@@ -87,6 +86,22 @@ Response:
 > * Use test cards, because it is not possible to withdraw money. 
 
 Once the test users are created, you can start with the integration and create the Stores and Point of Sale.
+
+### 4. How to collect Access Token (OAUTH)
+
+For you integrator, who will work with several stores that use Mercado Pago digital wallet, we advise you to do the OAUTH process - authentication between accounts, this process consists of the customer allowing their data to be shared with a third party system in a secure way.
+
+The access token cannot be shared in any way other than OAUTH. [More information](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials)
+
+### 5. Cómo identificar tu integración
+
+To identify the orders that are transacted by your management system, include the sponsor ID, see in the [instore orders APIs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference) how you will send this information.
+ 
+Step by step:
+> * Create an account on the Mercado Pago portal (Integrator identification).
+> * Collect Collector ID (Cust ID or User ID) of your account.
+> * Include the Collector ID of your Integrator account inside the Sponsor ID of the seller.
+> * Submit Sponsor ID on all QR transactions. [See api](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post).
 
 ---
 ### Next steps

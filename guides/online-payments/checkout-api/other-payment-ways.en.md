@@ -129,7 +129,7 @@ Keep in mind that the answer will return all the payment methods. For this reaso
 ]
 ```
 
-> For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
+> For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payment_methods/_payment_methods/get).
 
 <br>
 <span></span>

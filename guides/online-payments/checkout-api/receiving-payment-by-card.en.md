@@ -21,7 +21,7 @@ With our Mercado Pago Checkout API, you should take into account two aspects: da
 
 Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
 
-> For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
+> For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/cards/_customers_customer_id_cards/post).
 
 <br>
 
