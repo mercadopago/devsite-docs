@@ -46,7 +46,6 @@ Si no tiene ninguna aplicación registrada, [vea el tutorial](https://youtu.be/F
 > En caso de PDV integrador con varias conexiones con cuentas Mercado Pago, ver tema 4 y 5. Atención a la seguridad de su integración e implemente [Oauth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/introduction).
 
 
-
 ### 3. Generar usuarios de prueba
 
 Para comenzar la integración es necesario que tengas como mínimo dos usuarios: un comprador y un vendedor.
