@@ -98,7 +98,7 @@ The access token cannot be shared in any way other than OAUTH. [More information
 To identify the orders that are transacted by your management system, include the sponsor ID, see in the [instore orders APIs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference) how you will send this information.
  
 Step by step:
-> * Create an account on the Mercado Pago portal (Integrator identification)
+> * Create an account on the Mercado Pago portal (Integrator identification).
 > * Collect Collector ID (Cust ID or User ID) of your account.
 > * Include the Collector ID of your Integrator account inside the Sponsor ID of the seller.
 > * Submit Sponsor ID on all QR transactions. [See api](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post).
