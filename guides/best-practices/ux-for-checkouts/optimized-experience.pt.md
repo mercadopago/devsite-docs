@@ -106,7 +106,7 @@ Além disso, você pode adicionar as propostas de valor mais destacadas em cada 
 
 Evite pedir dados repetidos ou que não sejam necessários para concluir a compra. Para isso, aproveite as etapas em que os dados obrigatórios são exigidos para conseguir mais informações que serão necessárias posteriormente. Por exemplo, use as informações pessoais e de envio para pegar os dados de faturamento. Assim, você evita incluir um formulário extra, o que atrasaria o processo de pagamento. 
 
-Você também pode usar **checkboxes** que deduzem informações de etapas anteriores ou exibem um formulário caso o usuário queira carregar informações diferentes.
+Você também pode usar **checkboxes** o caixas de seleção que deduzem informações de etapas anteriores ou exibem um formulário caso o usuário queira carregar informações diferentes.
 
 ![pt Saltea pasos innecesarios](/images/best-practices-guide/PortAspectosGeneralesSalteaPasosInnecesarios.png)
 
