@@ -105,7 +105,7 @@ Para identificar las órdenes que son realizadas por tu punto de venta, incluye 
  
 Paso a paso:
 > * Crear una cuenta en el portal de Mercado Pago (identificación del Integrador).
-> * Obtén la identificación del usuario (Cust ID o User ID) de su cuenta
+> * Obtén la identificación del usuario (Cust ID o User ID) de su cuenta.
 > * Incluye el ID de usuario de su cuenta de integrador dentro del sponsor ID del vendedor
 > * Envíe el sponsor ID en todas las transacciones QR [ver api](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post)
 
