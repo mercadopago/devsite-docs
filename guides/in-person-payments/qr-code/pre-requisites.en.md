@@ -41,7 +41,7 @@ It's easy and we explain how to do it:
 >
 > Note
 >
-> In case of POS integrated with several tenants, see topic 4 and 5. Pay attention to the security of your integration and implement OAUTH.
+> In case of POS integrated with several tenants, see topic 4 and 5. Pay attention to the security of your integration and implement OAuth.
 
 ### 3. Generate test users
 
