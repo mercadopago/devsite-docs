@@ -4,7 +4,7 @@ To know how your checkout is performing after implementing these best practices,
 
 ![en Medir y optimizar](/images/best-practices-guide/EngMedirYOptimizar.png)
 
-Now you have all the information you need to create the best payment experience for your clients. Integrate our [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/introduction) products or the [Plugins and platforms](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins) solutions and optimize your user experience with these best practices.
+Now you have all the information you need to create the best payment experience for your clients. Integrate our solutions and optimize your user experience with these best practices.
 
 > PREV_STEP_CARD_EN
 >

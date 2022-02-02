@@ -4,7 +4,7 @@ Para avaliar o desempenho do seu checkout após implementar essas boas práticas
 
 ![pt Medir y optimizar](/images/best-practices-guide/PortMedirOptimizar.png)
 
-Agora, você conta com todas as informações necessárias para criar a melhor experiência de pagamento para seus clientes. Integre nossos produtos [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction) ou as soluções de [Plugins e plataformas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins) e otimize a experiência do usuário com essas boas práticas.
+Agora, você conta com todas as informações necessárias para criar a melhor experiência de pagamento para seus clientes. Integre nossos produtos e otimize a experiência do usuário com essas boas práticas.
 
 > PREV_STEP_CARD_PT
 >
