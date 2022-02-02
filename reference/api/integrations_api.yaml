@@ -566,7 +566,7 @@ paths:
     get:
       tags:
         - $ref: '#/tags/mp-point'
-      summary: Get last payment intent
+      summary: Get last payment intent state
       description: This endpoint allows to find the last state of a payment intent
       parameters:
         - name: x-test-scope
