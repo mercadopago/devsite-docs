@@ -47,7 +47,6 @@ Si no tiene ninguna aplicación registrada, [vea el tutorial](https://youtu.be/F
 
 
 
-
 ### 3. Generar usuarios de prueba
 
 Para comenzar la integración es necesario que tengas como mínimo dos usuarios: un comprador y un vendedor.
