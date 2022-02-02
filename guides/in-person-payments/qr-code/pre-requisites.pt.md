@@ -14,7 +14,6 @@ Sabemos que alguns termos são novos. Antes de começar, os deixamos perto de su
 | Caixa (POS) | É um **ponto de venda** que existe numa sucursal ou loja física. Cada caixa terá um código QR unívoco vinculado. |
 | Ordem | É o pedido realizado pelo seu cliente. Contém uma relação de produtos com seu valor associado. |
 
-
 ## Requisitos prévios
 
 Observe estes pontos antes de começar: 
