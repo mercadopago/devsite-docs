@@ -14,7 +14,7 @@ O plugin do Mercado Pago vem com o **ambiente Sandbox** ativo por padrão. Nesse
  
 Após finalizar as etapas anteriores, ative o **modo Produção** para receber pagamentos reais.
  
-> LEFT_BUTTON_REQUIRED_PT
+> NEXT_STEP_CARD_PT
 >
 > Recebebimento de pagamentos
 >

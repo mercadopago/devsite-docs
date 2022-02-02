@@ -18,7 +18,7 @@ Sigue este paso a paso para realizar el cambio:
 
 ¡Listo! tu tienda está en producción y habilitada para processar tus ventas.
 
-> LEFT_BUTTON_REQUIRED_ES
+> NEXT_STEP_CARD_ES
 >
 > Procesamiento de ventas
 >

@@ -13,7 +13,6 @@ Utiliza el método `open` para abrir Checkout desde cualquier elemento deseado d
 Por ejemplo:
 
 [[[
-
 ```html
 <!-- Inicializa el checkout -->
 <script>
@@ -27,7 +26,6 @@ Por ejemplo:
 <!-- Por ejemplo: un radio button -->
 <input type="radio" id="checkout-open-radio" onclick="checkout.open()" />
 ```
-
 ]]]
 
 ### Abrir Checkout Pro con botón de pago
@@ -48,7 +46,6 @@ Puedes utilizar el método `render` de dos formas diferentes:
 Por ejemplo:
 
 [[[
-
 ```javascript
 // Dentro de las opciones de inicialización
 const checkout = mp.checkout({
@@ -67,7 +64,6 @@ checkout.render({
   label: "Pagar",
 });
 ```
-
 ]]]
 
 #### Botón de pago por defecto
@@ -83,7 +79,6 @@ checkout.render({
 Agrega el parámetro `autoOpen` a las opciones de inicio de Checkout para mostrar automáticamente Checkout Pro, sin necesidad de que tus compradores interactúen con un botón o cualquier otro elemento para abrirlo:
 
 [[[
-
 ```javascript
 // Inicializa el checkout
 const checkout = mp.checkout({
@@ -93,7 +88,6 @@ const checkout = mp.checkout({
   autoOpen: true, // Habilita la apertura automática del Checkout Pro
 });
 ```
-
 ]]]
 
 ## Esquema de apertura
@@ -108,12 +102,12 @@ Actualmente, los esquemas disponibles son:
 ----[mla]----
 ![Checkout-redirect](/images/web-payment-checkout/checkout-redirect.png)
 
----
+------------
 
 ----[mlc, mco, mlu, mlb, mlm]----
 ![Checkout-redirect](/images/web-payment-checkout/checkout-redirect-sv.png)
 
----
+------------
 
 Para integrar el esquema de redireccionamiento en tu integración, reemplaza el botón de pago configurado en la implementación básica y agrega el enlace web Checkout a tu sitio donde deseas que aparezca, como se muestra en el siguiente ejemplo:
 
@@ -209,7 +203,6 @@ Checkout Pro se abrirá en el <code>init_point</code> definido por la preferenci
   </body>
 </html>
 ```
-
 ]]]
 
 ## Estilo de color
@@ -217,7 +210,6 @@ Checkout Pro se abrirá en el <code>init_point</code> definido por la preferenci
 Agrega el atributo `theme`, de acuerdo con el ejemplo a continuación, a las opciones de inicio de Checkout Pro para personalizar el color del encabezado y tus elementos:
 
 [[[
-
 ```html
 <script>
   mp.checkout({
@@ -230,7 +222,6 @@ Agrega el atributo `theme`, de acuerdo con el ejemplo a continuación, a las opc
   });
 </script>
 ```
-
 ]]]
 
 > WARNING
@@ -246,13 +237,11 @@ Cambia el color del encabezado agregando el atributo `headerColor` al objeto` th
 Por ejemplo:
 
 [[[
-
 ```javascript
 theme: {
   headerColor: "#c0392b";
 }
 ```
-
 ]]]
 
 ### Elementos

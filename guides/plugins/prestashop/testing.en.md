@@ -14,7 +14,7 @@ The Mercado Pago plugin comes with the **Sandbox test environment** active by de
  
 After completing the previous steps, activate **Production mode** to receive real payments.
  
-> LEFT_BUTTON_REQUIRED_EN
+> NEXT_STEP_CARD_EN
 >
 > Receiving payments
 >

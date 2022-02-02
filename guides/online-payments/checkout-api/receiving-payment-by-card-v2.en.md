@@ -79,11 +79,11 @@ Use the following form and add the styles of your choice.
 ```html
 <!-- Step #2 -->
 <form id="form-checkout">
-   <div type="text" id="form-checkout__cardNumber-container"></div>
-   <div type="text" id="form-checkout__cardExpirationDate-container"></div>
+   <div id="form-checkout__cardNumber-container"></div>
+   <div id="form-checkout__cardExpirationDate-container"></div>
    <input type="text" name="cardholderName" id="form-checkout__cardholderName"/>
    <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail"/>
-   <div type="text" id="form-checkout__securityCode-container"></div>
+   <div id="form-checkout__securityCode-container"></div>
    <select name="issuer" id="form-checkout__issuer"></select>----[mla, mlb, mlu, mlc, mpe, mco]----
    <select name="identificationType" id="form-checkout__identificationType"></select>------------
    <input type="text" name="identificationNumber" id="form-checkout__identificationNumber"/>
@@ -466,11 +466,11 @@ curl -X POST \
 
 ## Sample projects
 
-> NOTE
+> GIT
 >
 > Checkout API
 >
-> Use our [complete integration examples](https://drive.google.com/file/d/12gSCPLfZCE36iKFbM4BTUwf6lnM7lVEL/view?usp=sharing) to download instantly.
+> Use our [complete integration examples](https://github.com/mercadopago/card-payment-sample/tree/feature/secure-fields) to download instantly.
 
 <span></span>
 
@@ -478,7 +478,7 @@ curl -X POST \
 >
 > Payment form
 >
-> If you want to deploy other technology in your server, you can [download a complete payment form sample](https://github.com/mercadopago/card-payment-sample) from GitHub.
+> If you want to deploy other technology in your server, you can [download a complete payment form sample](https://drive.google.com/file/d/12gSCPLfZCE36iKFbM4BTUwf6lnM7lVEL/view?usp=sharing) from GitHub.
 
 ---
 ### Next steps

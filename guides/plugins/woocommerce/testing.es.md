@@ -13,7 +13,7 @@ Con la tienda en modo de prueba, puedes probar una compra antes de habilitarla p
 
 Si la prueba se ejecuta sin errores, significa que su tienda está lista para vender. Sin embargo, recomendamos realizar pruebas adicionales para que pueda ver los diferentes resultados de pago.
 
-> LEFT_BUTTON_REQUIRED_ES
+> NEXT_STEP_CARD_ES
 >
 > Activación del modo de producción
 >

@@ -14,7 +14,7 @@ Ready! You will see the plugin installed in the **Custom** section of your admin
 >
 > If you have problems installing the plugin and need to contact our support, you may be asked to install it manually. See the [FAQ](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/faq) for details on how to do this. Also, keep the plugin always up to date with the latest version to ensure data security and integration work.
   
-> LEFT_BUTTON_REQUIRED_EN
+> NEXT_STEP_CARD_EN
 >
 > Integration setup
 >

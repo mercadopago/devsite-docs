@@ -14,7 +14,7 @@ El plugin del Mercado Pago tiene el **entorno de pruebas Sandbox** activo por de
  
 Luego de completar los pasos anteriores, activa el **Modo de producción** para recibir pagos reales.
  
-> LEFT_BUTTON_REQUIRED_ES
+> NEXT_STEP_CARD_ES
 >
 > Procesamiento de pagos
 >

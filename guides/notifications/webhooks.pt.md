@@ -297,7 +297,7 @@ Isso indica que foi criado o pagamento **999999999** para o usuário **44444** e
 | **action** | Tipo de notificação recebida, indicando se se trata da atualização de um recurso ou da criação de um novo |
 | **data - id** | ID do payment ou merchant_order |
  
-4. Caso deseje receber notificações apenas de Webhook e não de IPN, você pode adicionar na `notification_url` o parâmetro `source_news=webhook`. Por exemplo: https://www.yourserver.com/notifications?source_news=webhook
+4. Caso deseje receber notificações apenas de Webhook e não de IPN, você pode adicionar na `notification_url` o parâmetro `source_news=webhook`. Por exemplo: https://www.yourserver.com/notifications?source_news=webhooks
 
 ## Ações necessárias após receber uma notificação
 

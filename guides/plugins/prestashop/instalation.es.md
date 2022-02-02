@@ -14,7 +14,7 @@ Instala Mercado Pago para PrestaShop automáticamente siguiendo los pasos a cont
 >
 > Si tienes problemas para instalar el plugin y necesitas ponerte en contacto con nuestro soporte, es posible que se te solicite que lo instales manualmente. Consulta las [Preguntas frecuentes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/faq) para obtener detalles sobre cómo hacer esto. Además, mantenga el complemento siempre actualizado con la última versión para garantizar la seguridad de los datos y el trabajo de integración.
   
-> LEFT_BUTTON_REQUIRED_ES
+> NEXT_STEP_CARD_ES
 >
 > Configuración de integración
 >

@@ -8,7 +8,7 @@ Ten en cuenta que el monto mínimo permitido para crear una suscripción es de $
 ------------
 
 ----[mlb]----
-Ten en cuenta que el monto mínimo permitido para crear una suscripción es de R$ 0.5 y el máximo es de R$ 50.000.
+Ten en cuenta que el monto mínimo permitido para crear una suscripción es de R$ 0.5 y el máximo es de R$ 700.
 
 ------------
 

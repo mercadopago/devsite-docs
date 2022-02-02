@@ -19,7 +19,7 @@ Para utilizar la integración de Mercado Pago con WooCommerce en tu WordPress, d
 
 Si se cumplen todos los requisitos previos, se puede instalar el complemento.
 
-> LEFT_BUTTON_REQUIRED_ES
+> NEXT_STEP_CARD_ES
 >
 > Instalación del plugin
 >

@@ -89,11 +89,11 @@ Utiliza el siguiente formulario y agrega los estilos que desees.
 ```html
 <!-- Step #2 -->
 <form id="form-checkout">
-   <div type="text" id="form-checkout__cardNumber-container"></div>
-   <div type="text" id="form-checkout__cardExpirationDate-container"></div>
+   <div id="form-checkout__cardNumber-container"></div>
+   <div id="form-checkout__cardExpirationDate-container"></div>
    <input type="text" name="cardholderName" id="form-checkout__cardholderName"/>
    <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail"/>
-   <div type="text" id="form-checkout__securityCode-container"></div>
+   <div id="form-checkout__securityCode-container"></div>
    <select name="issuer" id="form-checkout__issuer"></select>----[mla, mlb, mlu, mlc, mpe, mco]----
    <select name="identificationType" id="form-checkout__identificationType"></select>------------
    <input type="text" name="identificationNumber" id="form-checkout__identificationNumber"/>
@@ -476,18 +476,18 @@ curl -X POST \
 ## Ejemplos descargables
 
 ----[mlb]----
-> NOTE
+> GIT
 >
 > Checkout Transparente
 >
-> Te dejamos [ejemplos completos de integración](https://drive.google.com/file/d/12gSCPLfZCE36iKFbM4BTUwf6lnM7lVEL/view?usp=sharing) para que puedas descargar al instante.
+> Te dejamos [ejemplos completos de integración](https://github.com/mercadopago/card-payment-sample/tree/feature/secure-fields) para que puedas descargar al instante.
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]----
-> NOTE
+> GIT
 >
 > Checkout API
 >
-> Te dejamos [ejemplos completos de integración](https://drive.google.com/file/d/12gSCPLfZCE36iKFbM4BTUwf6lnM7lVEL/view?usp=sharing) para que puedas descargar al instante.
+> Te dejamos [ejemplos completos de integración](https://github.com/mercadopago/card-payment-sample/tree/feature/secure-fields) para que puedas descargar al instante.
 ------------
 
 <span></span>
@@ -496,7 +496,7 @@ curl -X POST \
 >
 > Formulario de pago
 >
-> Si quieres implementar tu servidor con alguna otra tecnología, te dejamos un [ejemplo completo del formulario de pago](https://github.com/mercadopago/card-payment-sample) en GitHub para que puedas descargar.
+> Si quieres implementar tu servidor con alguna otra tecnología, te dejamos un [ejemplo completo del formulario de pago](https://drive.google.com/file/d/12gSCPLfZCE36iKFbM4BTUwf6lnM7lVEL/view?usp=sharing) en GitHub para que puedas descargar.
 
 ---
 ### Próximos pasos

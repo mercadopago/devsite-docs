@@ -12,7 +12,6 @@ La integración del Checkout Transparente de Mercado Pago para tarjetas permite 
 La integración del Checkout API de Mercado Pago para tarjetas permite que puedas ofrecer una opción de pagos completa dentro de tu sitio. Toda la experiencia sucede en tu tienda para que los clientes no tengan que salir al momento de realizar la compra.
 ------------
 
-Usa los [ejemplos descargables](#bookmark_ejemplos_descargables) para conocer la integración completa o para adaptarlos según lo que necesites.
 
 ## Funcionamiento
 
@@ -599,31 +598,6 @@ Te recomendamos usar los [mensajes de respuesta](https://www.mercadopago[FAKER][
 Por último, es importante que estés siempre informado sobre la creación de nuevos pagos y las actualizaciones de sus estados. Por ejemplo si fueron aprobados, rechazados o si se encuentran pendientes.
 
 [Configura notificaciones webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks) o [notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn).
-
-## Ejemplos descargables
-
-----[mlb]----
-> GIT
->
-> Checkout Transparente
->
-> Te dejamos [ejemplos completos de integración](http://github.com/mercadopago/card-payment-sample) en GitHub para que puedas descargar al instante.
-------------
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> GIT
->
-> Checkout API
->
-> Te dejamos [ejemplos completos de integración](http://github.com/mercadopago/card-payment-sample) en GitHub para que puedas descargar al instante.
-------------
-
-<span></span>
-
-> GIT
->
-> Formulario de pago
->
-> Si quieres implementar tu servidor con alguna otra tecnología, te dejamos un [ejemplo completo del formulario de pago](https://github.com/mercadopago/card-payment-sample) en GitHub para que puedas descargarlo.
 
 ---
 ### Próximos pasos
