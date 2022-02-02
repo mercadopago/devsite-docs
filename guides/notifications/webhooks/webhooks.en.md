@@ -1,24 +1,39 @@
-# IPN
+# Webhooks
 
-The **IPN (_Instant Payment Notification_)** is a mechanism that allows your application to receive notifications from Mercado Pago informing the status of a certain payment, chargeback and merchant_order, through a call `HTTP POST` to inform about your transactions.
+Webhook (also known as web callback) is a simple method that makes it easy for an app or system to provide real-time information whenever an event happens, that is, it is a way to passively receive data between two systems through of an `HTTP POST`.
 
-In IPN notifications, only one notification URL can be configured per account (depending on the application, more than one application can use this URL). In addition, there is also the possibility of using this type of notification from the object's `notification_url` field, so the URL can be different for each object or application.
+Webhooks notifications can be configured for one or more applications created in your [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/devpanel).
 
-In this documentation, we will explain the necessary settings for receiving IPN notifications (through the Dashboard or when creating payments), as well as showing the necessary actions that you must take for Mercado Pago to validate that the messages were properly received.
+Once configured, the Webhook will be sent whenever one or more registered events occur, avoiding a search job every minute in search of an answer and, consequently, a system overload and data loss whenever there is some situation. After receiving a notification on your platform, Mercado Pago will wait for a response to validate that you received it correctly
 
-## Dashboard configuration
- 
+In this documentation, we will explain the necessary settings to receive messages (through the Dashboard or when creating payments), in addition to showing the necessary actions that you must take for Mercado Pago to validate that the notifications were properly received.
+
+## Configuration via Dashboard
+
 Below we will explain how to indicate the URLs that will be notified and how to configure the events for which notification will be received.
 
-![ipn](/images/notifications/ipn__es.png)
+![webhooks](/images/notifications/webhooks_es.png)
 
-1. Access the [IPN Notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
-2. Next, configure the **URL** of **production** where notifications will be received.
+1. First, an application must be created on the home page of your [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel).
+2. With the application created, go to the Webhooks Notifications tab in your Dashboard and configure the [URLs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications) of **production**  and **test** from which notifications will be received. 
 3. You will also be able to experiment and test if the indicated URL is receiving notifications correctly, being able to verify the request, the response given by the server and the description of the event.
-4. If you need to identify multiple accounts, at the end of the indicated URL you can specify the parameter `?customer=(sellername) endpoint` to identify the sellers.
-5. Select the **events** from which you will receive notifications in `json` format using `HTTP POST` to the URL specified above. We notify you of events related to your orders (`merchant_orders`), chargebacks received (`chargebacks`), payments received (`payment`) or payment attempts (`point_integration_ipn`).
- 
-## Configuration while creating payments
+4. If you need to identify multiple accounts, at the end of the indicated URL you can indicate the parameter `?customer=(sellername) endpoint` to identify the sellers.
+5. Next, select the **events** from which you will receive notifications in `json` format via an `HTTP POST` to the URL specified above. An event is any type of update to the reported object, including status or attribute changes. See the events that can be configured in the table below.
+
+| Notification Type | Action | Description |
+| :--- | :--- | :--- |
+| `payment` | `payment.created` | Payment creation |
+| `payment` | `payment.updated` | Payment update |
+| `mp-connect` | `application.deauthorized` | Account unbinding |
+| `mp-connect` | `application.authorized` | Account linking |
+| `subscription_preapproval` | `created - updated` | Subscription |
+| `subscription_preapproval_plan` | `created - updated` | Subscription plan |
+| `subscription_authorized_payment` | `created - updated` | Recurring payment for a subscription |
+| `point_integration_wh` | `state_FINISHED` | Payment process completed |
+| `point_integration_wh` | `state_CANCELED` | Payment process canceled |
+| `point_integration_wh` | `state_ERROR` | An error occurred while processing the payment attempt |
+
+## Setup while creating payments
 
 It is possible to configure the notification URL more specifically for each payment using the `notification_url` field. See below how to do this using the SDKs.
 
@@ -180,7 +195,7 @@ payment_data = {
     "description": request.POST.get("description"),
     "installments": int(request.POST.get("installments")),
     "payment_method_id": request.POST.get("payment_method_id"),
-    "notification_url": "http://requestbin.fullcontact.com/1ogudgk1",
+    "notification_url" =  "http://requestbin.fullcontact.com/1ogudgk1",
     "payer": {
         "email": request.POST.get("email"),
         "identification": {----[mla, mlb, mlu, mlc, mpe, mco]----
@@ -222,66 +237,80 @@ curl -X POST \
 
 ```php
 <?php
-   MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
- 
-   $merchant_order = null;
- 
-   switch($_GET["topic"]) {
-       case "payment":
-           $payment = MercadoPago\Payment::find_by_id($_GET["id"]);
-           // Get the payment and the corresponding merchant_order reported by the IPN.
-           $merchant_order = MercadoPago\MerchantOrder::find_by_id($payment->order->id);
-           break;
-       case "merchant_order":
-           $merchant_order = MercadoPago\MerchantOrder::find_by_id($_GET["id"]);
-           break;
-   }
- 
-   $paid_amount = 0;
-   foreach ($merchant_order->payments as $payment) {  
-       if ($payment['status'] == 'approved'){
-           $paid_amount += $payment['transaction_amount'];
-       }
-   }
-  
-   // If the payment's transaction amount is equal (or bigger) than the merchant_order's amount you can release your items
-   if($paid_amount >= $merchant_order->total_amount){
-       if (count($merchant_order->shipments)>0) { // The merchant_order has shipments
-           if($merchant_order->shipments[0]->status == "ready_to_ship") {
-               print_r("Totally paid. Print the label and release your item.");
-           }
-       } else { // The merchant_order don't has any shipments
-           print_r("Totally paid. Release your item.");
-       }
-   } else {
-       print_r("Not paid yet. Do not release your item.");
-   }
-  
+  MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
+  switch($_POST["type"]) {
+      case "payment":
+          $payment = MercadoPago\Payment::find_by_id($_POST["data"]["id"]);
+          break;
+      case "plan":
+          $plan = MercadoPago\Plan::find_by_id($_POST["data"]["id"]);
+          break;
+      case "subscription":
+          $plan = MercadoPago\Subscription::find_by_id($_POST["data"]["id"]);
+          break;
+      case "invoice":
+          $plan = MercadoPago\Invoice::find_by_id($_POST["data"]["id"]);
+          break;
+      case "point_integrartion_wh":
+          // $_POST contains the information related to the notification.
+          break;    
+  }
 ?>
 ```
 
-3. Once the settings have been made, Mercado Pago will notify this URL with two parameters each time a resource is created or updated:
- 
-| Field | Description |
-| --- | --- |
-| `topic` | Identifies what the resource is, it can be `payment`, `chargebacks`,  `merchant_order ` or `point_integration_ipn`. |
-| `id` | It is a unique identifier of the notified resource. |
- 
-For example, if you set the URL: `https://www.yoursite.com/notifications`, you will receive payment notifications like this: `https://www.yoursite.com/notifications?topic=payment&id=123456789`.
+3. Once the necessary settings have been made, the notification via Webhook will have the following format:
 
-4. If you want to receive notifications only from IPN and not from Webhooks, you can add in the `notification_url` the parameter `source_news=ipn`. For example: https://www.yourserver.com/notifications?source_news=ipn
- 
+> NOTE
+>
+> Important
+>
+> For the event type `point_integration_wh` the notification format changes. [Click here](https://www.mercadopago[FAKER][URL][DOMÍNIO]/developers/en/guides/in-person-payments/mp-point/introduction) to consult the documentation of **Mercado Pago Point**.
+
+```json
+{
+  "id": 12345,
+  "live_mode": true,
+  "type": "payment",
+  "date_created": "2015-03-25T10:04:58.396-04:00",
+  "application_id": 123123123,
+  "user_id": 44444,
+  "version": 1,
+  "api_version": "v1",
+  "action": "payment.created",
+  "data": {
+      "id": "999999999"
+  }
+}
+```
+
+This indicates that payment **999999999** was created for user **44444** in production mode with API version V1 and that this event occurred on date **2016-03-25T10:04:58.396-04 :00**.
+
+| Attribute | Description |
+| --- | --- |
+| **id** | Notification ID |
+| **live_mode** | Indicates if the URL entered is valid. |
+| **date_created** | Resorce (payments, mp-connect, subscription etc) creation date |
+| **application_id** | Application ID that received the resource (payments, merchant_order, subscription, preapproval, etc) |
+| **user_id** | Vendor UserID |
+| **version** | Number of times a notification was sent |
+| **api_version** | Indicates if it is a duplicate notification or not |
+| **action** | Type of notification received, indicating whether it is the update of a resource or the creation of a new |
+| **data - id** | Payment ID or merchant_order |
+
+4. If you want to receive notifications only from Webhook and not from IPN, you can add in the `notification_url` the parameter `source_news=webhook`. For example: https://www.yourserver.com/notifications?source_news=webhooks
+
 ## Actions required after receiving notification
 
 [TXTSNIPPET][/guides/snippets/test-integration/notification-response]
 
-After returning the notification, you will get the full information of the notified resource by going to the corresponding API endpoint:
+After returning the notification and confirming its receipt, you will obtain the full information of the notified resource by accessing the corresponding API endpoint:
 
 | Type | URL | Documentation |
 | --- | --- | --- |
 | payment | `https://api.mercadopago.com/v1/payments/[ID]` | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) |
-| chargebacks | `https://api.mercadopago.com/v1/chargebacks/[ID]` | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/chargebacks/_chargebacks_id/get) |
-| merchant_orders | `https://api.mercadopago.com/merchant_orders/[ID]` | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/merchant_orders/_merchant_orders_id/get) |
-| point_integration_ipn | - | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/mp-point/introduction) |
+| subscription_preapproval | `https://api.mercadopago.com/preapproval` | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/subscriptions/_preapproval/post) |
+| subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | - |
+| subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | - |
+| point_integration_wh | - | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/mp-point/introduction) |
 
-With this information, you will be able to carry out the necessary updates to your platform, such as updating an approved payment or a closed order.
+With this information, you will be able to carry out the necessary updates to your platform, such as updating an approved payment.

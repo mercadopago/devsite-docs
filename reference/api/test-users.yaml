@@ -1,0 +1,339 @@
+openapi: 3.0.0
+servers:
+  - url: staging_mpt-users.furyapps.io/
+info:
+  title: MPT Users
+  version: "1.0"
+paths:
+  /test_users:
+    post:
+      tags:
+        - $ref: '#/tags/checkout-api'
+        - $ref: '#/tags/checkout-pro'
+      summary: Create Test User
+      description: This endpoint handles http requests to create test_users
+      parameters:
+        - name: access_token
+          in: query
+          description: Access Token to Authenticate the request
+          required: true
+          schema:
+            type: string
+            example: "12123adfasdf123u4u"
+      requestBody:
+        description: Test User Request
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                site_id:
+                  type: string
+                  required: true
+                  example: "MLA"
+                  enum:
+                    - MPE
+                    - MSV
+                    - MPA
+                    - MRD
+                    - MLU
+                    - MLA
+                    - MLC
+                    - MCR
+                    - MPY
+                    - MBO
+                    - MNI
+                    - MHN
+                    - MCO
+                    - MEC
+                    - MLB
+                    - MGT
+                    - MLV
+                    - MLM
+                    - MCU
+      responses:
+        '200':
+          description: Created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    example: 123
+                  nickname:
+                    type: string
+                    example: "TEST45I5GYIH"
+                  password:
+                    type: string
+                    example: "qatest6730"
+                  site_status:
+                    type: string
+                    example: "active"
+                  site_id:
+                    type: string
+                    example: "MLA"
+                  email:
+                    type: string
+                    example: "test_user_123@testuser.com"
+                  date_created:
+                    type: string
+                    example: "2021-11-04T12:02:35Z"
+                  date_last_updated:
+                    type: string
+                    example: "2021-11-04T12:02:35Z"
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400--Bad-Request--invalid-site_id
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 403--Forbidden--authorization-the-caller-id-must-be-a-productive-user
+        '405':
+          description: ""
+          content: {}
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Internal-Server-Error
+  /test_users/search:
+    get:
+      tags:
+        - $ref: '#/tags/checkout-api'
+        - $ref: '#/tags/checkout-pro'
+      summary: Create Test User
+      description: This endpoint handles http requests to create test_users
+      parameters:
+        - name: access_token
+          in: query
+          description: Access Token to Authenticate the request
+          required: true
+          schema:
+            type: string
+            example: "12123adfasdf123u4u"
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  total:
+                    type: integer
+                    example: 1
+                  results:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 123
+                        nickname:
+                          type: string
+                          example: "TEST45I5GYIH"
+                        site_status:
+                          type: string
+                          example: "active"
+                        site_id:
+                          type: string
+                          example: "MLA"
+                        email:
+                          type: string
+                          example: "test_user_123@testuser.com"
+                        date_created:
+                          type: string
+                          example: "2021-11-04T12:02:35Z"
+                        date_last_updated:
+                          type: string
+                          example: "2021-11-04T12:02:35Z"
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 403--Forbidden--authorization-the-caller.id-must-be-a-productive-user
+        '405':
+          description: Method Not Allowed
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 405--Method-Not-Allowed
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Internal-Server-Error
+  /test_users/{id}/password:
+    put:
+      tags:
+        - $ref: '#/tags/checkout-api'
+        - $ref: '#/tags/checkout-pro'
+      summary: Change User Password
+      description: This endpoint handles http requests to change the test user password
+      parameters:
+        - name: access_token
+          in: query
+          description: Access Token to Authenticate the request
+          required: true
+          schema:
+            type: string
+            example: "12123adfasdf123u4u"
+        - name: id
+          in: path
+          description: User id
+          required: true
+          schema:
+            type: string
+            example: "12123adfasdf123u4u"
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "password successfully reset"
+                  new_password:
+                    type: string
+                    example: "random"
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 403--Forbidden--authorization-the-caller-id-must-be-a-productive-user403--Forbidden
+        '405':
+          description: Method Not Allowed
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Internal-Server-Error
+  /test_users/{id}/account_money:
+    put:
+      tags:
+        - $ref: '#/tags/checkout-api'
+        - $ref: '#/tags/checkout-pro'
+      summary: Add AM to User Account
+      description: This endpoint handles http requests to add account_money to the test user account
+      parameters:
+        - name: access_token
+          in: query
+          description: Access Token to Authenticate the request
+          required: true
+          schema:
+            type: string
+            example: "12123adfasdf123u4u"
+        - name: id
+          in: path
+          description: User id
+          required: true
+          schema:
+            type: string
+            example: "12123adfasdf123u4u"
+      requestBody:
+        description: Amount Request
+        content:
+          application/json:
+            schema:
+              required:
+                - site_id
+              type: object
+              properties:
+                amount:
+                  type: number
+                  example: 1000.23
+        required: true
+      responses:
+        '204':
+          description: No Content
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400--Bad-Request--invalid-amount
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 403--Forbidden--authorization-the-caller-id-must-be-a-productive-user
+        '405':
+          description: Method Not Allowed
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Internal-Server-Error
