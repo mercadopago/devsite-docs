@@ -4,8 +4,8 @@ OAuth é um protocolo de autorização que permite que aplicações tenham acess
 
 Os fluxos, também chamados de grant types, fazem referência ao modo no qual uma aplicação obtém um token de acesso que permite acessar os dados expostos através de uma API. No caso do Mercado Pago, existem dois fluxos de acesso disponíveis: `authorization_code` e `refresh_token`. Em ambos fluxos, as entidades principais envolvidas nos processos são:
 
-* Access token: código utilizado nas diferentes requests de origem pública para ter acesso a um recurso protegido que representa uma autorização concedida por um vendedor a uma aplicação cliente contendo scopes e um tempo de validade limitado para o referido acesso.
-* Temporal grants: códigos temporários utilizados para serem trocados por um access token. São do tipo `authorization_code` e `refresh_token`.
+* **Access token**: código utilizado nas diferentes requests de origem pública para ter acesso a um recurso protegido que representa uma autorização concedida por um vendedor a uma aplicação cliente contendo scopes e um tempo de validade limitado para o referido acesso.
+* **Temporal grants**: códigos temporários utilizados para serem trocados por um access token. São do tipo `authorization_code` e `refresh_token`.
 
 > WARNING 
 > 

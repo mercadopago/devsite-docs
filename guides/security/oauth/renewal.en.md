@@ -1,6 +1,6 @@
 # Renewal
 
-The `refresh_token` flow is used to exchange a temporary grant of type `refresh_token` for an access token when the current access token has expired.
+The `refresh_token` flow is used to exchange a **temporary grant** of type `refresh_token` for an access token when the current access token has expired.
 
 The access token received through the endpoint is **valid for 180 days**, after which the entire authorization flow must be reconfigured.
 

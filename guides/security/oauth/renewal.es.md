@@ -1,6 +1,6 @@
 # Renovación
 
-El flujo `refresh_token` se usa para intercambiar un temporal grant de tipo `refresh_token` por un access token cuando el token de acceso en uso ha caducado.
+El flujo `refresh_token` se usa para intercambiar un **temporal grant** de tipo `refresh_token` por un access token cuando el token de acceso en uso ha caducado.
 
 El access token recibido a través del endpoint es **válido durante 180 día**s, luego de lo cual se debe reconfigurar todo el flujo de autorización.
 
