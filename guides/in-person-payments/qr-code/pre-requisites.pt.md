@@ -27,7 +27,7 @@ Você pode [Entrar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]
 ### 2. Crie uma aplicação
 
 Para transacionar via integração Mercado Pago, uma credencial deve ser criada. Essa credencial terá uma identificação e o Access Token, somente com esse token será possível transacionar utilizando uma conta Mercado Pago.
-Crie uma aplicação para obter as credenciais e configurar notificações de webhooks.
+Crie uma aplicação para obter as credenciais e configurar notificações webhooks.
 
 É fácil e explicamos como fazer isso:
 
