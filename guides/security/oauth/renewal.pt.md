@@ -1,6 +1,6 @@
 # Renovação
 
-O fluxo `refresh_token` é utilizado para trocar um temporal grant do tipo `refresh_token` por um access token quando o access token em uso estiver com sua validade expirada.
+O fluxo `refresh_token` é utilizado para trocar um **temporal grant** do tipo `refresh_token` por um access token quando o access token em uso estiver com sua validade expirada.
 
 O access token recebido através do endpoint tem **validade de 180 dias** e passado esse período é preciso reconfigurar todo fluxo de autorização.
 
@@ -24,3 +24,11 @@ Para renovar o **access token**:
 > Importante
 >
 > Lembre-se que cada vez que você renovar o `access_token`, o `refresh_token` também vai ser renovado, por tanto, você deverá armazená-lo novamente.
+
+> NEXT_STEP_CARD_PT
+>
+> Genrenciamento do OAuth
+>
+> Veja como desabilitar e invalidar os recursos.
+>
+> [Gerenciamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/dashboard/management)

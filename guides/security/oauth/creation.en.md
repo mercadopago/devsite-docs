@@ -6,7 +6,7 @@ Because it is a redirect-based flow, you must allow interaction with the seller'
 
 In this flow, the application requests the seller's express consent to access the data by opening a web page in which the requested areas to be accessed are made explicit.
 
-![oauth](/images/oauth/oauth.png)
+![oauth](/images/oauth/oauth-en.png)
 
 Once access is allowed, the server generates an access code that reaches the application through a redirect. In this step, the application requests access to the authentication server by sending the obtained code and application data. Once this is done, the server grants the access token and the refresh token to the application.
 
@@ -48,3 +48,10 @@ https://www.redirect-url.com?code=CODE&state=RANDOM_ID
 > 
 > It is recommended to carry out this procedure all at once together with the user, since the code received by the Redirect URL after authorization is valid for 10 minutes and the access token received through the endpoint is valid for 180 days.
 
+> NEXT_STEP_CARD_EN
+>
+> Access token renewal
+>
+> View the renewal flow for an expired access token.
+>
+> [Renewal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/creation)

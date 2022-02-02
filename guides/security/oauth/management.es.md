@@ -11,3 +11,10 @@ Actualmente existen diferentes formas en las que los **access token** y las **te
 
 Puedes recibir notificaciones de webhook cada vez que un vendedor autorice o desautorice tu aplicación. Para configurarlos, lee [Creacióm](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/dashboard/creation) a través del Dashboard.
 
+> NEXT_STEP_CARD_ES
+>
+> Recursos adicionales
+>
+> Vea videos tutoriales y acceda a las API.
+>
+> [Recursos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/dashboard/resources)

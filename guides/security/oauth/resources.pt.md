@@ -13,4 +13,10 @@
 |---|---|
 |[Criar e renovar token](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/oauth/_oauth_token/post) | Cria ou renova access tokens que dão acesso a recursos protegidos dos vendedores limitado à uma determinada aplicação. |
 
-
+> PREV_STEP_CARD_PT
+>
+> Genrenciamento do OAuth
+>
+> Veja como desabilitar e invalidar os recursos.
+>
+> [Gerenciamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/dashboard/management)

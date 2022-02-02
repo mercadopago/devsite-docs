@@ -6,7 +6,7 @@ Por ser um fluxo baseado em redirecionamento, você deve ser capaz de permitir i
 
 Neste fluxo, a aplicação solicita ao vendedor o consentimento expresso para acessar os dados através da abertura de uma página web que deixa explícito os scopes aos quais se está solicitando acesso. 
 
-![oauth](/images/oauth/oauth.png)
+![oauth](/images/oauth/oauth-pt.png)
 
 Uma vez permitido o acesso, o servidor gera um código de acesso que mediante um redirecionamento chega à aplicação. Nesta etapa, a aplicação solicita acesso ao servidor de autenticação enviando o código obtido e os dados da aplicação. Feito isso, o servidor concede o access token e o refresh token à aplicação.
 
@@ -48,4 +48,10 @@ https://www.redirect-url.com?code=CODE&state=RANDOM_ID
 > 
 > É recomendado realizar este procedimento por completo de uma única vez em conjunto com o usuário, visto que o código recebido pela Redirect URL após a autorização tem validade de 10 minutos e o access token recebido através do endpoint tem validade de 180 dias. 
 
-
+> NEXT_STEP_CARD_PT
+>
+> Renovação de access token
+>
+> Veja o fluxo de renovação de um access token vencido.
+>
+> [Renovação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/dashboard/renewal)

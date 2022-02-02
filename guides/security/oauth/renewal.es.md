@@ -25,3 +25,10 @@ Para renovar el **access token**:
 >
 > Recuerda que cada vez que renueves el access token, también se renovará el `refresh_token`, por lo que deberás almacenarlo nuevamente.
 
+> NEXT_STEP_CARD_ES
+>
+> Administración del OAuth.
+>
+> Vea como deshabilitar e invalidar funciones.
+>
+> [Administración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/dashboard/management)

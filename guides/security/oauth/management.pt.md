@@ -10,3 +10,11 @@ Atualmente existem formas diferentes através das quais os **access tokens** e *
 * **Exclusão de aplicação**: quando uma aplicação é excluída, todos os tokens e concessões temporárias pertencentes a ele são excluídos.
 
 Você pode receber notificações webhook sempre que um vendedor autorizar ou desautorizar sua aplicação. Para configurá-las, leia [Criação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/dashboard/creation) através do Dashboard.
+
+> NEXT_STEP_CARD_PT
+>
+> Recursos extras
+>
+> Veja vídeos tutoriais e acesse as APIs.
+>
+> [Recursos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/dashboard/resources)

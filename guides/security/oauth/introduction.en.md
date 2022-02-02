@@ -12,3 +12,11 @@ Flows, also called grant types, refer to the way an application obtains an acces
 > Important
 > 
 > The use of the OAuth protocol differs from the process of shared use of credentials. OAuth does not address issues related to client authentication, nor information related to it, its responsibility lies in the methods of obtaining a token to access a resource.
+
+> NEXT_STEP_CARD_EN
+>
+> Access creation
+>
+> Learn about the data access authorization flow.
+>
+> [Creation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/creation)

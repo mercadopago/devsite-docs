@@ -25,3 +25,10 @@ To renew the **access token**:
 >
 > Remember that every time you refresh the access token, the `refresh_token` will also be refreshed, so you will need to store it again.
 
+> NEXT_STEP_CARD_EN
+>
+> OAuth Management
+>
+> See how to disabled and invalidated features.
+>
+> [Management](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/management)

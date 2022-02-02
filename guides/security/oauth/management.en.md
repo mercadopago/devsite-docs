@@ -10,3 +10,11 @@ Currently there are different ways in which the **access tokens** and **temporal
 * **Application elimination**: when an application is eliminated, all tokens and temporal grants belonging to it are deleted.
 
 You can receive webhook notifications every time a seller authorizes or deauthorizes your application. To configure them, read [Creation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/creation) via Dashboard.
+
+> NEXT_STEP_CARD_EN
+>
+> Extra resources
+>
+> View tutorial videos and access APIs.
+>
+> [Resources](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/resources)

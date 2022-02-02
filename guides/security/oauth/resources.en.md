@@ -1,4 +1,4 @@
-# Rescources
+# Resources
 
 ## Tutorial videos
 
@@ -12,3 +12,11 @@
 |Action|Description|
 |---|---|
 |[Create and refresh token](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/oauth/_oauth_token/post) | To create or refresh the necessary token to operate your application in the name of a seller. |
+
+> PREV_STEP_CARD_EN
+>
+> Genrenciamento do OAuth
+>
+> Veja como desabilitar e invalidar os recursos.
+>
+> [Gerenciamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/dashboard/management)
