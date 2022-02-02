@@ -99,7 +99,7 @@ To identify the orders that are transacted by your management system, include th
  
 Step by step:
 > * Create an account on the Mercado Pago portal (Integrator identification)
-> * Collect Collector ID (Cust ID or User ID) of your account
+> * Collect Collector ID (Cust ID or User ID) of your account.
 > * Include the Collector ID of your Integrator account inside the Sponsor ID of the seller
 > * Submit Sponsor ID on all QR transactions [see api](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post)
 
