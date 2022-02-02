@@ -91,7 +91,7 @@ Uma vez que os usuários de teste são criados, você pode começar com a integr
 
 ### 4. Como coletar Access Token (OAUTH)
 
-Para você integrador, que irá trabalhar com diversas lojas que utilizam carteira digital Mercado Pago, orientamos que faça o processo de OAUTH - autenticação entre contas, esse processo consiste no processo do vendedor permitir que seus dados sejam compartilhados com um sistema terceiro de forma segura.
+Para você integrador que irá trabalhar com diversas lojas que utilizam carteira digital Mercado Pago, orientamos que faça o processo de OAuth - autenticação entre contas, esse processo consiste no processo do vendedor permitir que seus dados sejam compartilhados com um sistema terceiro de forma segura.
 
 O access token, não poderá ser compartilhado de outra maneira, que não seja o OAUTH, [Mais informações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials)
 
