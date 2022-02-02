@@ -93,7 +93,6 @@ For you integrator, who will work with several stores that use Mercado Pago digi
 
 The access token cannot be shared in any way other than OAUTH. [More information](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials)
 
-
 ### 5. Cómo identificar tu integración
 
 To identify the orders that are transacted by your management system, include the sponsor ID, see in the [face-to-face order APIs](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference) how you will send this information.
