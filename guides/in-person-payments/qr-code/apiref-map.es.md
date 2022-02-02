@@ -37,7 +37,7 @@ Las siguientes acciones están disponibles para **Código QR**.
 |Acción|Descripción|
 |---|---|
 |[Crear orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put)|Genera una orden de pago asociada a la caja que quieras con toda la información de pago de tu producto o servicio.|
-|[Obtener orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post)|Consulta toda la información de pago de un producto o servicio con el ID de la orden que quieras.|
+|[Obtener orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/get)|Consulta toda la información de pago de un producto o servicio con el ID de la orden que quieras.|
 |[Eliminar orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_pos_external_pos_id_orders/delete)|Elimina una orden creada siempre que lo necesites con el ID del vendedor y de la caja.|
 
 ### Consulta de Órdenes
