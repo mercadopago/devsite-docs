@@ -101,7 +101,7 @@ El access token no se puede compartir de ninguna otra forma que no sea mediante 
 
 ### 5. Cómo identificar tu integración (Sponsor ID)
 
-Para identificar las órdenes que son realizadas por tu punto de venta, incluye el Sponsor ID,  consulta en las APIs de [órdenes presenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference) cómo enviar esta información.
+Para identificar las órdenes que son realizadas por tu punto de venta, incluye el Sponsor ID, consulta en las APIs de [órdenes presenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference) cómo enviar esta información.
  
 Paso a paso:
 > * Crear una cuenta en el portal de Mercado Pago (identificación del Integrador)
