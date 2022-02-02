@@ -101,7 +101,7 @@ Para identificar os pedidos que são transacionados pelo seu sistema de gestão,
 
 Passo a Passo:
 > * Crie uma conta no portal Mercado Pago (identificação Integrador).
-> * Colete o Collector ID (Cust ID ou User ID)  de sua conta 
+> * Colete o Collector ID (Cust ID ou User ID) de sua conta.
 > * Inclua o Collector ID de sua conta Integrador dentro do Sponsor ID do vendedor
 > * Envie o Sponsor ID em todas as transações de QR [consulte a api](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post)
 
