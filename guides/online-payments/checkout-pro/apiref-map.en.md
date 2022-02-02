@@ -1,6 +1,6 @@
 # APIs map
 
-The following actions are available for **Checkout PRO**.
+The following actions are available for **Checkout Pro**.
 
 [TXTSNIPPET][/guides/snippets/test-integration/apiref-preferences]
 
