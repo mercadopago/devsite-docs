@@ -29,7 +29,7 @@ It is a **progress bar** that tells the user in which stage of your checkout the
 
 **Highlights** are underlined or highlighted text. Use highlights to highlight important keywords or sentences that add value and make the screen easier to scan.
 
-![en Bullets y highlights](/images/best-practices-guide/EngCreaUnChoAgilBulletsv2.png)
+![en Bullets y highlights](/images/best-practices-guide/EngCreaUnChoAgilBulletsv3.png)
 
 
 ## Facilitate data filling

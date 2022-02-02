@@ -28,7 +28,7 @@ Los **bullets** son una lista punteada de diferentes elementos. Utiliza bullets 
 
 Los **highlights** son textos subrayados o destacados. Usa highlights para destacar palabras claves u oraciones importantes que sumen valor y permitir que la pantalla sea más fácil de escanear.
 
-![es Bullets y highlights](/images/best-practices-guide/EspCreaUnChoAgilBulletsv2.png)
+![es Bullets y highlights](/images/best-practices-guide/EspCreaUnChoAgilBulletsv3.png)
 
 ## Facilita el llenado de datos
 
