@@ -1,4 +1,4 @@
-# Criação
+# Creación
 
 El flujo de authorization_code se caracteriza por la intervención del proveedor para autorizar explícitamente el acceso de la aplicación a sus datos y por el uso de un código otorgado por el servidor de autenticación para que la aplicación pueda obtener un access token y un refresh token asociado.
 
