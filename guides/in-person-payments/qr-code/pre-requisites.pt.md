@@ -42,7 +42,7 @@ Caso não tenha nenhuma aplicação cadastrada, [veja o tutorial](https://youtu.
 > 
 > Nota
 >
-> Caso sua integração seja um PDV integrado a vários lojistas/Vendedores, veja o tópico 4 e 5. Fique atento à segurança de sua integração e faça a implantação OAUTH.
+> Caso sua integração seja um PDV integrado a vários lojistas/Vendedores, veja o tópico 4 e 5. Fique atento à segurança de sua integração e faça a implantação [Oauth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/oauth/introdution).
 
 ### 3. Gerar usuários de teste
 
