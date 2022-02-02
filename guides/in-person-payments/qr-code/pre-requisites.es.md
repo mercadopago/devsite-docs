@@ -100,7 +100,6 @@ OAUTH - autenticación entre cuentas, este proceso consiste en que el cliente pe
 El access token no se puede compartir de ninguna otra forma que no sea mediante OAuth. [Mas informaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials)
 
 
-
 ### 5. Cómo identificar tu integración (Sponsor ID)
 
 Para identificar las órdenes que son realizadas por tu punto de venta, incluye el Sponsor ID,  consulta en las APIs de [órdenes presenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference) cómo enviar esta información.
