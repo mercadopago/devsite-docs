@@ -10,7 +10,7 @@ We'll show you how you can optimize your checkout experience using its main comp
 
 Keep the data grouped thematically and provide context to the user about the steps to follow to complete their transaction. This will help scannability and make the user feel more secure when sharing their information. For this, we recommend you use:
 
-* **Headings**: use them to group by theme the required details and indicate to the users in which section they are.
+* **Headings**: use them to group the required details by theme and to indicate the users which section they are  in.
 * **Subheadings**: they give context or explain which action is expected.
 * **Explanatory texts**: use them to provide explanations or deepen information, whenever necessary, to avoid doubts.
 
@@ -19,7 +19,7 @@ Keep the data grouped thematically and provide context to the user about the ste
 
 ### Progress indicator
 
-It is a **progress bar** that tells the user in which stage of your checkout they are. You can segment it into equal parts, indicating each step of the checkout. In this way, your user will have visibility of the step in which they are and how much remains to finish the payment process.
+It is a **progress bar** that tells the user which stage of your checkout they are in. You can segment it into equal parts, indicating each step of the checkout. In this way, your user will have visibility of the step they are in and how much remains to finish the payment process.
 
 ![en Progress indicator](/images/best-practices-guide/EngCreaUnChoAgilProgressIndicator.png)
 
@@ -27,7 +27,7 @@ It is a **progress bar** that tells the user in which stage of your checkout the
 
 **Bullets** are a dotted list of different elements. Use bullets to make lists that help you read the information faster. A list causes less cognitive effort than a paragraph.
 
-**Highlights** are underlined or highlighted text. Use highlights to highlight important keywords or sentences that add value and make the screen easier to scan.
+**Highlights** are underlined or highlighted text. Use highlights to call attention to important keywords or sentences that add value and make the screen easier to scan.
 
 ![en Bullets y highlights](/images/best-practices-guide/EngCreaUnChoAgilBulletsv3.png)
 
@@ -38,7 +38,7 @@ We recommend using **forms** to collect the data you need from the user. Forms a
 
 In turn, the **inputs** are fields where the users must fill and edit the required information. They should have a logical order within the form and the required ones should be differentiated from the optional ones. Additionally, they must be long enough so that users can view the information they have entered and easily review and edit them.
 
-In order to make filling out the form easier and do not tire the user: 
+In order to make filling out the form easier and not tire the user: 
 
 * Use a few inputs per form, use only the essential ones.
 * Remove any request of information that is not essential for the purchase process.
@@ -53,7 +53,7 @@ In order to make filling out the form easier and do not tire the user:
 **Labels** are the names of each input and indicate which detail should be entered. They should be constantly visible so that users can scan and fill out the form faster, since they work as a guide and prevent users from having to remember what information they should enter. 
 
 In turn, the **placeholders** are the filler texts of each input. They serve to exemplify or explain the data to be entered. Take advantage of this instance to place formatting or actionable examples.
-It is important to know that the placeholder disappears when the cursor is placed on the input or the data is completed. Take this feature into account and avoid using them as the only reference for your inputs so that the user does not have to make an effort to remember what data goes in each field, or has to delete what was entered if he wants to confirm it. 
+It is important to know that the placeholder disappears when the cursor is placed on the input or the data is completed. Take this feature into account and avoid using them as the only reference for your inputs so that the user does not have to make an effort to remember what data goes in each field, or has to delete what was entered if they want to confirm it. 
 
 Both the labels and the placeholders must be short, direct and clear to prevent users from making mistakes.
 
@@ -65,13 +65,13 @@ Both the labels and the placeholders must be short, direct and clear to prevent 
 
 The **tooltips** are notifications that offer an extra layer of information when the helper is not enough. Use them to add definitions, complementary information or actionables through links. 
 
-![en helpers y tooltips dos&don't](/images/best-practices-guide/EngAspectosGeneralesHelpersTooltipv2png)
+![en helpers y tooltips dos&don't](/images/best-practices-guide/EngAspectosGeneralesHelpersTooltipv2.png)
 
 ### Success and error messages
 
 **Success and error messages** validate the information entered in the inputs. To add emphasis, it is possible to use the green color in the success messages and red in the error ones. 
 
-Use success messages only if the confirmation is necessary or if the entered detail adds value to the user (e.g: free shipping or discount). In case of an **error**, it is important to make it clear what was the problem and provide a solution so that the user does not make the mistake again and gets frustrated. If the input has a helper, it should be replaced by the error message. 
+Use success messages only if the confirmation is necessary or if the entered detail adds value to the user (e.g: free shipping or discount). In case of an **error**, it is important to clarify what the problem was and provide a solution so that the user does not make the mistake again and gets frustrated. If the input has a helper, it should be replaced by the error message. 
 
 ![en Mensajes de éxito y error](/images/best-practices-guide/EngAspectosGeneralesMsjErrorDoDont.png)
 
@@ -93,11 +93,11 @@ Here are some tips:
 
 In a checkout, the user must choose between different options throughout the payment process, such as the type of delivery, payment methods, number of installments, among others. In this process, the conversion can vary according to different factors and the context of each one.
 
-Therefore, **offer options** that include different possible variables and order them in descending order, taking into account the most used or beneficial for your customers. However, we recommend **offering only the most common ones** because otherwise you can confuse and hinder the selection process.
+Therefore, **offer options** that include different possible variables and write them in descending order, taking into account the most used or beneficial for your customers. However, we recommend **offering only the most common ones** because otherwise you can confuse and hinder the selection process.
 
 * Use **radio buttons** when there are few options and you can only choose one of them
 * Offer **dropdowns** when there are several options and you don't want to take up so much screen space
-* Use **cards** when it comes to options visual options, among others. 
+* Use **cards** when it comes to visual options, among others. 
 
 In addition, you can add the most outstanding value propositions in each option to help the user have more information to make a decision.
 

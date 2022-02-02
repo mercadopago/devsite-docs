@@ -4,12 +4,12 @@ Para saber cómo performa tu checkout una vez implementadas estas buenas prácti
 
 ![es Medir y optimizar](/images/best-practices-guide/EspMedirYOptimizar.png)
 
-Ya tienes todo lo que necesitas para crear la mejor experiencia de pago para tus clientes. Integra nuestros productos [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction) o las soluciones de [Plugins y plataformas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins) y optimiza su UX con estas buenas prácticas.
+Ya tienes todo lo que necesitas para crear la mejor experiencia de pago para tus clientes. Integra nuestros productos y optimiza la experiencia de usuario con estas buenas prácticas.
 
 > PREV_STEP_CARD_ES
 >
 > Crea un checkout ágil
 >
-> Sigue los pasos para crear un checkout fácil de recorrer y entender.
+> Sigue los pasos para crear un checkout fácil de navegar y entender.
 >
 > [Crear un checkout ágil](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/best-practices/ux-for-checkout/create-a-fast-checkout)

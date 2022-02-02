@@ -36,7 +36,7 @@ Te recomendamos utilizar **formularios** para recolectar los datos que necesitas
 
 A su vez, los **inputs** son espacios donde los usuarios completan y editan la información requerida. Estos deben tener un orden lógico dentro del formulario y se deben diferenciar los opcionales de los obligatorios. Además, deben ser lo suficientemente largos para que el usuario vea la información ingresada y pueda revisar y editar fácilmente.
 
-Para facilitar el llenado de datos y no cansar al usuario, te recomendamos:
+Para facilitar el llenado de datos y no cansar al usuario, te damos algunas recomendaciones:
 
 * Utiliza pocos inputs por formulario, usa solo los indispensables. 
 * Elimina todo pedido de información que no sea indispensable para el proceso de compra. 
@@ -48,7 +48,7 @@ Para facilitar el llenado de datos y no cansar al usuario, te recomendamos:
 
 ### Labels y placeholders
 
-Las **labels** son los nombres de cada input e indican qué dato se debe ingresar allí. Deben permanecer siempre visibles para que el usuario pueda escanear y completar más rápido el formulario, ya que se usan de guía y evitan el esfuerzo de recordar. 
+Las **labels** son los nombres de cada input e indican qué dato se debe ingresar allí. Deben permanecer siempre visibles para que el usuario pueda escanear y completar más rápido el formulario, ya que sirven como guía y evitan el esfuerzo de recordar. 
 
 A su vez, los **placeholders** son los textos de relleno de cada input. Sirven para ejemplificar o explicar el dato a ingresar. Aprovecha esta instancia para colocar ejemplos de formato o accionables. 
 Es importante saber que el placeholder desaparece cuando el cursor se ubica sobre el input o se completa el dato. Ten en cuenta esta característica y evita usarlos como única referencia de tus inputs para que el usuario no deba esforzarse por recordar qué dato va en cada campo o deba borrar lo ingresado si quiere confirmarlo.
@@ -92,9 +92,9 @@ En un checkout, el usuario debe elegir entre diferentes opciones a lo largo de t
 
 Por eso, **ofrece opciones** que incluyan diferentes variables posibles y ordénalas de forma descendente, teniendo en cuenta las más usadas o beneficiosas para tus clientes. Sin embargo, te recomendamos **ofrecer solo las más comunes** porque, de lo contrario, puedes confundir y entorpecer el proceso de selección. 
 
-* Utiliza **radio buttons** cuando sean pocas opciones y solo se pueda elegir una de ellas
-* Ofrece **dropdowns** cuando sean varias opciones y no quieras ocupar tanto espacio de pantalla
-* Usa **cards** cuando se traten de opciones opciones visuales, entre otras. 
+* Utiliza **radio buttons** cuando sean pocas opciones y solo se pueda elegir una de ellas.
+* Ofrece **dropdowns** cuando sean varias opciones y no quieras ocupar tanto espacio de pantalla.
+* Usa **cards** cuando se traten de opciones visuales, entre otras. 
 
 Además, puedes agregar las propuestas de valor más destacadas en cada opción para ayudar a que el usuario tenga más información para tomar una decisión.
 
@@ -117,7 +117,7 @@ Si bien la mayoría de los usuarios revisan su compra al final, se sienten más 
 
 ![es da visibilidad del proceso](/images/best-practices-guide/EspAspectosGeneralesVisibilidadDelProceso_V2.gif)
 
-Además, antes de finalizar la compra, permite que tus usuarios puedan **revisar** todo el proceso y el precio final. Para esto, agrega una página de confirmación o revisión, previo a realizar el pago, que incluya un resumen de todas las decisiones tomadas, toda la información cargada y el detalle del total a pagar. Es importante, dar la posibilidad de editar cualquiera de los datos desde allí, sin la necesidad de volver a los pasos previos.
+Además, antes de finalizar la compra, permite que tus usuarios puedan **revisar** todo el proceso y el precio final. Para esto, agrega una página de confirmación o revisión, previo a realizar el pago, que incluya un resumen de todas las decisiones tomadas, toda la información cargada y el detalle del total a pagar. Es importante dar la posibilidad de editar cualquiera de los datos desde allí, sin la necesidad de volver a los pasos previos.
 
 
 ![es confrima tu compra](/images/best-practices-guide/EspAspectosGeneralesConfirmaTuCompra_V2.gif)

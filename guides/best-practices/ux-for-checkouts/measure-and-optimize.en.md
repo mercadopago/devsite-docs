@@ -1,6 +1,6 @@
 # Measure and optimize your results
 
-To know how your checkout is performing after implementing these best practices, we recommend you integrate a tracking tool (e.g: Google Analytics) and make optimizations based on results to improve your user's experience and have more conversion.
+To know how your checkout is performing after implementing these best practices, we recommend you integrate a tracking tool (e.g: Google Analytics) and make optimizations based on results to improve your user's experience and have more conversions.
 
 ![en Medir y optimizar](/images/best-practices-guide/EngMedirYOptimizar.png)
 
