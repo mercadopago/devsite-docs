@@ -26,4 +26,4 @@ Pronto! O Checkout Pro foi configurado e habilitado com sucesso.
 >
 > Siga as etapas para configurar o status do pedido para notificações de pagamento.
 >
-> [Configuração de notificações de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/magento-two/notificações-configuração)
+> [Configuração de notificações de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/magento-two/notifications-configuration)
