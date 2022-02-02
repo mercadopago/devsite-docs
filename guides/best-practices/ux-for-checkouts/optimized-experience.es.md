@@ -92,7 +92,7 @@ En un checkout, el usuario debe elegir entre diferentes opciones a lo largo de t
 
 Por eso, **ofrece opciones** que incluyan diferentes variables posibles y ordénalas de forma descendente, teniendo en cuenta las más usadas o beneficiosas para tus clientes. Sin embargo, te recomendamos **ofrecer solo las más comunes** porque, de lo contrario, puedes confundir y entorpecer el proceso de selección. 
 
-* Utiliza **radio buttons** cuando sean pocas opciones y solo se pueda elegir una de ellas.
+* Utiliza **radio buttons** o botones de opciones cuando sean pocas opciones y solo se pueda elegir una de ellas.
 * Ofrece **dropdowns** cuando sean varias opciones y no quieras ocupar tanto espacio de pantalla.
 * Usa **cards** cuando se traten de opciones visuales, entre otras. 
 
