@@ -105,7 +105,6 @@ Passo a Passo:
 > * Inclua o Collector ID de sua conta Integrador dentro do Sponsor ID do vendedor.
 > * Envie o Sponsor ID em todas as transações de QR. [Consulte a api](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/instore_orders/_mpmobile_instore_qr_user_id_external_id/post).
 
-
 ---
 ### Próximos passos
 
