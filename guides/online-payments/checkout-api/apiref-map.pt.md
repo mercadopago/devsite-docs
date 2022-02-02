@@ -1,6 +1,6 @@
 # Mapa de APIs
 
-As ações a seguir estão disponíveis para ----[mla, mlu, mpe, mco, mcl, mlm]----**Checkout API.**------------ ----[mlb]----**Checkout Transparente.**------------
+As ações a seguir estão disponíveis para ----[mla, mlu, mpe, mco, mlc, mlm]----**Checkout API.**------------ ----[mlb]----**Checkout Transparente.**------------
 
 [TXTSNIPPET][/guides/snippets/test-integration/apiref-payments]
 
