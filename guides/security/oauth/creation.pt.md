@@ -6,7 +6,7 @@ Por ser um fluxo baseado em redirecionamento, você deve ser capaz de permitir i
 
 Neste fluxo, a aplicação solicita ao vendedor o consentimento expresso para acessar os dados através da abertura de uma página web que deixa explícito os scopes aos quais se está solicitando acesso. 
 
-![oauth](/images/oauth/oauth-pt.png)
+![oauth](/images/oauth/new-oauth-pt.png)
 
 Uma vez permitido o acesso, o servidor gera um código de acesso que mediante um redirecionamento chega à aplicação. Nesta etapa, a aplicação solicita acesso ao servidor de autenticação enviando o código obtido e os dados da aplicação. Feito isso, o servidor concede o access token e o refresh token à aplicação.
 
