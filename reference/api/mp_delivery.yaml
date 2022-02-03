@@ -264,7 +264,7 @@ paths:
     get:
       tags:
         - $ref: '#/tags/mp-delivery'
-      summary: Get store
+      summary: Get specific store
       description: Get a specific store by its ID.
       parameters:
         - name: StoreID
