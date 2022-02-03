@@ -8,7 +8,6 @@ paths:
   /v1/customers:
     post:
       tags:
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/checkout-api'
       summary: Create customer
@@ -289,7 +288,6 @@ paths:
   /v1/customers/{id}:
     put:
       tags:
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/checkout-api'
       summary: Update customer
@@ -570,7 +568,6 @@ paths:
                       - not_found--not-found-
     get:
       tags:
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/checkout-api'
       summary: Get customer
@@ -952,7 +949,6 @@ paths:
   /v1/customers/search:
     get:
       tags:
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/checkout-api'
       summary: Search customers
