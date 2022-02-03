@@ -51,7 +51,7 @@ paths:
     get:
       tags:
         - $ref: '#/tags/mp-delivery'
-      summary: Print order coupon
+      summary: Get order coupon
       description: Returns the order coupon in PDF format
       parameters:
         - name: shipment_id
