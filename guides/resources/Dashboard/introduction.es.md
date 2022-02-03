@@ -2,6 +2,16 @@
 
 El [Dashboard](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel) es tu entorno de gestión de integración. Es creado automáticamente con una identificación de usuario para tí con solo abrir una cuenta de Mercado Pago. En él puedes crear, editar y eliminar aplicaciones.
 
+El Dashboard se compone de diferentes secciones, cada una con un propósito diferente.
+
+* **Encabezado**: resumen de tus datos personales como integrador de Mercado Pago.
+* **Tus aplicaciones**: tus aplicaciones.
+* **Cuentas que integras**: información sobre cuentas de terceros que se le ha dado permiso para usar.
+* **Tus certificaciones**: Información sobre tus certificaciones en nuestro programa de desarrolladores certificados (&lt;dev&gt; program).
+
+
+
+
 Las aplicaciones no son más que las diferentes integraciones que pueden contener una o más tiendas. Puedes crear una aplicación para cada solución que implementes, con el fin de tener todo organizado y mantener un control que te facilite su administración. 
 
 Cada aplicación tiene un conjunto de credenciales y cuenta con la posibilidad de configurar sus propias notificaciones. Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) y [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks) para obtener más información.
@@ -54,10 +64,5 @@ Puedes integrar soluciones para cuentas distintas a la tuya. Al integrar solucio
 3. Confirma la solicitud de credenciales.
 Una vez que se otorgue el acceso a las credenciales, puedes usarlas para integrar soluciones. Cuando se completen las integraciones, elimina los permisos de acceso para las credenciales que se compartieron y cuida la seguridad de los datos.
 
-## ID de integrador
-El [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel) también contiene tu ID de integrador. El ID del integrador es un número único que te identifica como miembro del &lt;dev&gt;program. 
 
-El &lt;dev&gt;program es un programa de beneficios para desarrolladores exclusivo y gratuito, diseñado para que seas parte de nuestra comunidad y recibas beneficios adicionales. Para participar, debes aprobar algunas de las certificaciones oficiales de Mercado Pago. 
-
-Consulta la página del [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/developer-program) y realiza la certificación del producto deseado, recibe tu ID de integrador e introdúcelo en sus integraciones para recibir beneficios adicionales.
 

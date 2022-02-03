@@ -2,7 +2,16 @@
 
 The [Dashboard](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel) is your integration management environment automatically created with an user ID for you when you open a Mercado Pago account. In it you can create, edit and delete applications.
 
-Applications are nothing more than different integrations that one or more stores have. You can create an application for each solution implemented, so you have everything organized and maintain control to facilitate your management. 
+The Dashboard is made up of different sections, each with a different purpose.
+
+* **Header**: summary of your personal information as an integrator of Mercado Pago.
+* **Your applications**: your applications.
+* **Accounts you integrate**: information regarding third-party accounts that you have been given permission to use.
+* **Your certifications**: information about your certifications in our certified developer program (&lt;dev&gt; program).
+
+
+
+
 
 Each application has a set of credentials and the possibility to configure its notifications. Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) and [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks) for more information.
 
@@ -64,10 +73,3 @@ This section contains the credentials of these other accounts. To request access
 
 Once access to credentials is granted, you can use them to integrate solutions. When the integrations are complete, remove the access permissions for the requested credentials and take care of data security.
 
-## Integrator ID
-
-The Developers Panel also contains your integrator ID. The Integrator ID is a unique number responsible for identifying you as a &lt;dev&gt;program's member. 
-
-The &lt;dev&gt;program is a free and exclusive developer program designed for you to join our community and receive extra benefits. To take part, you must have some of the official Mercado Pago certifications. 
-
-Check out the [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/developer-program) page and choose which product you want to earn your certification for. Then, use your integrator ID and enter it into your integrations to receive extra benefits.
