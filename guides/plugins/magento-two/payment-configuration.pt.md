@@ -100,7 +100,7 @@ O pagamento será cancelado quando o status estiver em `pending` ou `in_process`
 >
 > Siga as etapas para instalar o plugin do Mercado Pago.
 >
-> [Instalação do plugin](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/magento-two/instalation)
+> [Instalação do plugin](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/magento-two/installation)
 
 > NEXT_STEP_CARD_PT
 >
@@ -108,4 +108,4 @@ O pagamento será cancelado quando o status estiver em `pending` ou `in_process`
 >
 > Configure o plugin para aceitar pagamentos com o Checkout Pro.
 >
-> [Configuração do Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/magento-two/checkout-pro-configuration)
+> [Configuração do Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guias/plugins/magento-two/checkout-pro-configuration)

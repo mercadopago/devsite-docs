@@ -10,8 +10,7 @@ paths:
       tags:
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
-        - $ref: '#/tags/checkout-api'
-      summary: Create customer
+      summary: Create a customer
       description: Create a customer with all its data and save the cards used to simplify the payment process
       requestBody:
         content:
@@ -291,8 +290,7 @@ paths:
       tags:
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
-        - $ref: '#/tags/checkout-api'
-      summary: Update customer
+      summary: Update a customer
       description: Renew the data of a customer. Indicate the customer ID and send the parameters with the information you want to update
       parameters:
         - name: id
@@ -572,8 +570,7 @@ paths:
       tags:
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
-        - $ref: '#/tags/checkout-api'
-      summary: Get customer
+      summary: Get a customer
       description: Check all the information of a client created with the client ID of your choice
       parameters:
         - name: id
@@ -954,8 +951,7 @@ paths:
       tags:
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
-        - $ref: '#/tags/checkout-api'
-      summary: Search customers
+      summary: Search for a customer
       description: Find all customer information using specific filters
       parameters:
         - name: email

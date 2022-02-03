@@ -153,7 +153,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
         "end_date": "2021-07-02T11:59:52.581-04:00"
 }
 ```
->You can get more information about the fields in the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/subscriptions/_preapproval/post).
+>You can get more information about the fields in the [API Reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
 
 Done! You have already created a subscription with an associated plan.
 
@@ -290,7 +290,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 }
 ```
 
-> You can get more information about the fields in the [API reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/subscriptions/_preapproval/post).
+> You can get more information about the fields in the [API reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
 
 
 Attributes

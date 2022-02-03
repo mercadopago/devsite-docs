@@ -12,8 +12,7 @@ paths:
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/subscriptions'
-        - $ref: '#/tags/checkout-api'
-      summary: Create payment
+      summary: Create payments
       description: Create a payment and add all the information you need. Remember to add the payment details and the payer's information
       requestBody:
         content:
@@ -814,8 +813,7 @@ paths:
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/qr-code'
         - $ref: '#/tags/subscriptions'
-        - $ref: '#/tags/checkout-api'
-      summary: Get payment
+      summary: Get a payment
       description: See all the information of a payment through the payment ID
       parameters:
         - name: id
@@ -1137,8 +1135,7 @@ paths:
         - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/subscriptions'
-        - $ref: '#/tags/checkout-api'
-      summary: Update payment
+      summary: Update a payment
       description: Renew the details of a payment when you need it. Indicate the payment ID and send the parameters with the information you want to update
       parameters:
         - name: id
@@ -1634,8 +1631,7 @@ paths:
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/qr-code'
         - $ref: '#/tags/subscriptions'
-        - $ref: '#/tags/checkout-api'
-      summary: Search payments
+      summary: Find payments
       description: Search and return payments made in the last twelve months from the search date
       parameters:
         - name: sort

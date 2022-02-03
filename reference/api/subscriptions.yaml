@@ -9,7 +9,7 @@ paths:
     post:
       tags:
         - $ref: '#/tags/subscriptions'
-      summary: Create subscription
+      summary: Create a subscription
       description: Generate a subscription with all the settings you need
       requestBody:
         content:
