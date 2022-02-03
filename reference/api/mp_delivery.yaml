@@ -1,0 +1,863 @@
+openapi: 3.0.0
+servers:
+  - url: https://api.mercadopago.com
+info:
+  title: Mercado Pago API Reference
+  version: '1.0'
+paths:
+  /proximity-integration/shipments/{shipment_id}/accept:
+    put:
+      tags:
+        - $ref: '#/tags/mp-delivery'
+      summary: Accept order
+      description: Accept an order, changing its status
+      parameters:
+        - name: shipment_id
+          in: path
+          description: Shipment ID
+          required: true
+          schema:
+            type: string
+            example: 41034141533
+        - in: header
+          name: access-token
+          schema:
+            type: string
+            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
+          required: true
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: string
+                  description: Value of the status
+                  example: "accepted"
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Order status with value "accepted"
+                    example: accepted   
+  /proximity-integration/shipments/{shipment_id}/print_label_pdf:
+    get:
+      tags:
+        - $ref: '#/tags/mp-delivery'
+      summary: Print order coupon
+      description: Returns the order coupon in PDF format
+      parameters:
+        - name: shipment_id
+          in: path
+          description: Shipment ID
+          required: true
+          schema:
+            type: string
+            example: 41034141533
+        - name: access-token
+          in: header
+          description: Access Token
+          required: true
+          schema:
+            type: string
+            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
+      responses:
+        '200':
+          description: Success
+          content:
+            application/pdf:
+              schema:
+                type: string
+                format: binary
+                description: A binary code referring to the PDF coupon.
+  /proximity-integration/shipments/{shipment_id}/cancel:
+    put:
+      tags:
+        - $ref: '#/tags/mp-delivery'
+      summary: Cancel order
+      description: Cancel an order, changing its status.
+      parameters:
+        - name: shipment_id
+          in: path
+          description: Shipment ID
+          required: true
+          schema:
+            type: string
+            example: 41034141533
+        - name: access-token
+          in: header
+          description: Access Token
+          required: true
+          schema:
+            type: string
+            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: string
+                  description: "Value of the status"
+                  example: "cancelled"
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Order status with value "cancelled"
+                    example: cancelled
+  /proximity-integration/users/{seller_id}/stores:
+    get:
+      tags:
+        - $ref: '#/tags/mp-delivery'
+      summary: Get all stores
+      description: Get all stores of an user.
+      parameters:
+        - name: seller_id
+          in: path
+          description: ID of the seller.
+          required: true
+          schema:
+            type: string
+            example: 41562083
+        - name: access-token
+          in: header
+          description: Access Token
+          required: true
+          schema:
+            type: string
+            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:          
+                type: array
+                description: List of stores
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: number
+                      example: 41517088
+                      description: Store ID  
+                    user_id:
+                      type: number
+                      example: 813887163
+                      description: User ID
+                    description:
+                      type: string
+                      example: "Doc's grocery store"
+                      description: Name of the store
+                    business_hours:
+                      type: object
+                      properties:
+                       monday:
+                         type: array
+                         description: List of store opening hours.
+                         items:
+                           type: object
+                           properties:
+                             open:
+                               type: string
+                               example: "8:00"
+                               description: Store opening time.
+                             close:
+                               type: string
+                               example: "15:00"
+                               description: Store closing time.
+                       tuesday:
+                         type: array
+                         description: List of store opening hours.
+                         items:
+                           type: object
+                           properties:
+                             open:
+                               type: string
+                               example: "8:00"
+                               description: Store opening time.
+                             close:
+                               type: string
+                               example: "15:00"
+                               description: Store closing time.
+                       wendsday:
+                         type: array
+                         description: List of store opening hours on that weekday.
+                         items:
+                           type: object
+                           properties:
+                             open:
+                               type: string
+                               example: "8:00"
+                               description: Store opening time.
+                             close:
+                               type: string
+                               example: "15:00"
+                               description: Store closing time.
+                       thursday:
+                         type: array
+                         description: List of store opening hours on that weekday.
+                         items:
+                           type: object
+                           properties:
+                             open:
+                               type: string
+                               example: "8:00"
+                               description: Store opening time.
+                             close:
+                               type: string
+                               example: "15:00"
+                               description: Store closing time.
+                       friday:
+                         type: array
+                         description: List of store opening hours on that weekday.
+                         items:
+                           type: object
+                           properties:
+                             open:
+                               type: string
+                               example: "8:00"
+                               description: Store opening time.
+                             close:
+                               type: string
+                               example: "15:00"
+                               description: Store closing time.
+                    location: 
+                      type: object
+                      properties:
+                        address_line:
+                          type: string
+                          description: Store address 
+                          example: "Viaduto Arapuã - Saude, São Paulo - SP, 04307-070, Brasil"
+                        reference:
+                          type: string
+                          description: Store location add-on.
+                          example: "Next to a bakery"
+                        latitude:
+                          type: number
+                          description: Latitude of the store.
+                          example: -23.630159633405057
+                        longitude:
+                          type: number
+                          description: Longitude of the store.
+                          example: -46.64532809999999
+                    external_id:
+                      type: string
+                      description: A custom external ID refent to the store.
+                      example: "A15154DE"
+  /proximity-integration/stores/{StoreID}:
+    get:
+      tags:
+        - $ref: '#/tags/mp-delivery'
+      summary: Get store
+      description: Get a specific store by its ID.
+      parameters:
+        - name: StoreID
+          in: path
+          description: Store ID
+          required: true
+          schema:
+            type: string
+            example: 185522600
+        - name: access-token
+          in: header
+          description: Access Token
+          required: true
+          schema:
+            type: string
+            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: number
+                    example: 41517088
+                    description: Store ID  
+                  user_id:
+                    type: number
+                    example: 813887163
+                    description: User ID
+                  description:
+                    type: string
+                    example: "Doc's grocery store"
+                    description: Name of the store
+                  status:
+                    type: string
+                    example: "enabled"
+                    description: status
+                    enum:
+                      - disabled -- The store is disabled, and will not be shown on marketplace.
+                      - enabled -- The store is enabled and is shown on marketplace.
+                      - paused -- The delivery of store is paused, but the store will cotinue to be shown on marketplace.
+                  business_hours:
+                    type: object
+                    description: Each attribute of the object will be represented by a day of the week. 
+                    properties:
+                      monday:
+                        type: array
+                        description: List of store opening hours.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time.
+                      tuesday:
+                        type: array
+                        description: List of store opening hours.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time.
+                      wendsday:
+                        type: array
+                        description: List of store opening hours on that weekday.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time.
+                      thursday:
+                        type: array
+                        description: List of store opening hours on that weekday.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time.
+                      friday:
+                        type: array
+                        description: List of store opening hours on that weekday.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time.
+                  location: 
+                    type: object
+                    properties:
+                      address_line:
+                        type: string
+                        description: Store address 
+                        example: "Viaduto Arapuã - Saude, São Paulo - SP, 04307-070, Brasil"
+                      reference:
+                        type: string
+                        description: Store location add-on.
+                        example: "Next to a bakery"
+                      latitude:
+                        type: number
+                        description: Latitude of the store.
+                        example: -23.630159633405057
+                      longitude:
+                        type: number
+                        description: Longitude of the store.
+                        example: -46.64532809999999
+                  external_id:
+                    type: string
+                    description: A custom external ID refent to the store.
+                    example: "A15154DE"
+  /proximity-integration/stores/{StoreID}/external_id:
+    put:
+      tags:
+        - $ref: '#/tags/mp-delivery'
+      summary: Update external ID
+      description: The external ID is an optional field, that can be setted for a store.
+      parameters:
+        - name: StoreID
+          in: path
+          description: Store ID
+          required: true
+          schema:
+            type: string
+            example: 185522600
+        - name: access-token
+          in: header
+          description: Access Token
+          required: true
+          schema:
+            type: string
+            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                external_id:
+                  type: string
+                  description: "Value of the external ID"
+                  example: "9320001PC21"
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: number
+                    example: 41517088
+                    description: Store ID  
+                  user_id:
+                    type: number
+                    example: 813887163
+                    description: User ID
+                  description:
+                    type: string
+                    example: "Doc's grocery store"
+                    description: Name of the store
+                  business_hours:
+                    type: object
+                    description: Each attribute of the object will be represented by a day of the week. 
+                    properties:
+                      monday:
+                        type: array
+                        description: List of store opening hours.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time.
+                      tuesday:
+                        type: array
+                        description: List of store opening hours.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time.
+                      wendsday:
+                        type: array
+                        description: List of store opening hours on that weekday.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time.
+                      thursday:
+                        type: array
+                        description: List of store opening hours on that weekday.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time.
+                      friday:
+                        type: array
+                        description: List of store opening hours on that weekday.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time.
+                  location: 
+                    type: object
+                    properties:
+                      address_line:
+                        type: string
+                        description: Store address 
+                        example: "Viaduto Arapuã - Saude, São Paulo - SP, 04307-070, Brasil"
+                      reference:
+                        type: string
+                        description: Store location add-on.
+                        example: "Next to a bakery"
+                      latitude:
+                        type: number
+                        description: Latitude of the store.
+                        example: -23.630159633405057
+                      longitude:
+                        type: number
+                        description: Longitude of the store.
+                        example: -46.64532809999999
+                  external_id:
+                    type: string
+                    description: A custom external ID refent to the store.
+                    example: "9320001PC21"
+  /proximity-integration/users/{SellerID}/stores/external_id/{ExternalID}:
+    get:
+      tags:
+        - $ref: '#/tags/mp-delivery'
+      summary: Get store by external ID
+      description: Get stores by the external ID that was previously registered.
+      parameters:
+        - name: SellerID
+          in: path
+          description: Seller ID.
+          required: true
+          schema:
+            type: string
+            example: 185522600
+        - name: ExternalID
+          in: path
+          description: Store external ID.
+          required: true
+          schema:
+            type: string
+            example: "9320001PC21"
+        - name: access-token
+          in: header
+          description: Access Token
+          required: true
+          schema:
+            type: string
+            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:          
+                type: array
+                description: List of stores
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: number
+                      example: 41517088
+                      description: Store ID  
+                    user_id:
+                      type: number
+                      example: 813887163
+                      description: User ID
+                    description:
+                      type: string
+                      example: "Doc's grocery store"
+                      description: Name of the store
+                    business_hours:
+                      type: object
+                      properties:
+                       monday:
+                         type: array
+                         description: List of store opening hours.
+                         items:
+                           type: object
+                           properties:
+                             open:
+                               type: string
+                               example: "8:00"
+                               description: Store opening time.
+                             close:
+                               type: string
+                               example: "15:00"
+                               description: Store closing time.
+                       tuesday:
+                         type: array
+                         description: List of store opening hours.
+                         items:
+                           type: object
+                           properties:
+                             open:
+                               type: string
+                               example: "8:00"
+                               description: Store opening time.
+                             close:
+                               type: string
+                               example: "15:00"
+                               description: Store closing time.
+                       wendsday:
+                         type: array
+                         description: List of store opening hours on that weekday.
+                         items:
+                           type: object
+                           properties:
+                             open:
+                               type: string
+                               example: "8:00"
+                               description: Store opening time.
+                             close:
+                               type: string
+                               example: "15:00"
+                               description: Store closing time.
+                       thursday:
+                         type: array
+                         description: List of store opening hours on that weekday.
+                         items:
+                           type: object
+                           properties:
+                             open:
+                               type: string
+                               example: "8:00"
+                               description: Store opening time.
+                             close:
+                               type: string
+                               example: "15:00"
+                               description: Store closing time.
+                       friday:
+                         type: array
+                         description: List of store opening hours on that weekday.
+                         items:
+                           type: object
+                           properties:
+                             open:
+                               type: string
+                               example: "8:00"
+                               description: Store opening time.
+                             close:
+                               type: string
+                               example: "15:00"
+                               description: Store closing time.
+                    location: 
+                      type: object
+                      properties:
+                        address_line:
+                          type: string
+                          description: Store address 
+                          example: "Viaduto Arapuã - Saude, São Paulo - SP, 04307-070, Brasil"
+                        reference:
+                          type: string
+                          description: Store location add-on.
+                          example: "Next to a bakery"
+                        latitude:
+                          type: number
+                          description: Latitude of the store.
+                          example: -23.630159633405057
+                        longitude:
+                          type: number
+                          description: Longitude of the store.
+                          example: -46.64532809999999
+                    external_id:
+                      type: string
+                      description: A custom external ID refent to the store.
+                      example: "A15154DE"
+  /proximity-integration/stores/{store_id}/status:
+    put:
+      tags:
+        - $ref: '#/tags/mp-delivery'
+      summary: Update store status
+      description: Change the status of the store
+      parameters:
+        - name: store_id
+          in: path
+          description: Store ID.
+          required: true
+          schema:
+            type: string
+            example: 4101533
+        - name: access-token
+          in: header
+          description: Access Token
+          required: true
+          schema:
+            type: string
+            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: string
+                  example: "enabled"
+                  description: Available status
+                  enum:
+                    - disabled -- The store will be disabled, and will not be shown on marketplace.
+                    - enabled -- The store will be enabled and shown on marketplace.
+                    - paused -- The delivery of store will be paused, but the store will cotinue to be shown on marketplace.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: number
+                    example: 41517088
+                    description: Store ID  
+                  user_id:
+                    type: number
+                    example: 813887163
+                    description: User ID
+                  description:
+                    type: string
+                    example: "Doc's grocery store"
+                    description: Name of the store
+                  status:
+                    type: string
+                    example: "enabled"
+                    description: status
+                    enum:
+                      - disabled -- The store will be disabled, and will not be shown on marketplace.
+                      - enabled -- The store will be enabled and shown on marketplace.
+                      - paused -- The delivery of store will be paused, but the store will cotinue to be shown on marketplace.
+                  business_hours:
+                    type: object
+                    description: Each attribute of the object will be represented by a day of the week. 
+                    properties:
+                      monday:
+                        type: array
+                        description: List of store opening hours.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time.
+                      tuesday:
+                        type: array
+                        description: List of store opening hours.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time.
+                      wendsday:
+                        type: array
+                        description: List of store opening hours on that weekday.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time.
+                      thursday:
+                        type: array
+                        description: List of store opening hours on that weekday.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time.
+                      friday:
+                        type: array
+                        description: List of store opening hours on that weekday.
+                        items:
+                          type: object
+                          properties:
+                            open:
+                              type: string
+                              example: "8:00"
+                              description: Store opening time.
+                            close:
+                              type: string
+                              example: "15:00"
+                              description: Store closing time.
+                  location: 
+                    type: object
+                    properties:
+                      address_line:
+                        type: string
+                        description: Store address 
+                        example: "Viaduto Arapuã - Saude, São Paulo - SP, 04307-070, Brasil"
+                      reference:
+                        type: string
+                        description: Store location add-on.
+                        example: "Next to a bakery"
+                      latitude:
+                        type: number
+                        description: Latitude of the store.
+                        example: -23.630159633405057
+                      longitude:
+                        type: number
+                        description: Longitude of the store.
+                        example: -46.64532809999999
+                  external_id:
+                    type: string
+                    description: A custom external ID refent to the store.
+                    example: "A15154DE"

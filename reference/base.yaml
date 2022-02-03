@@ -56,6 +56,13 @@ tags:
       es: 'Checkout API'
     externalDocs: 
       url: '/guides/online-payments/checkout-api/introduction'
+  mp-delivery:
+    description:
+      pt: 'MP Delivery'
+      en: 'MP Delivery'
+      es: 'MP Delivery'
+    externalDocs: 
+      url: '/guides/online-payments/checkout-api/introduction'
   
 #------DEFAULT - ALL ARCHIVES - END------
 
