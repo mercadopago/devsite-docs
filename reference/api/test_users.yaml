@@ -5,7 +5,7 @@ info:
   title: Mercado Pago API Reference
   version: '1.0'
 paths:
-  /test_users:
+  /users/test_users:
     post:
       tags:
         - $ref: '#/tags/checkout-api'
@@ -19,7 +19,7 @@ paths:
           required: true
           schema:
             type: string
-            example: "12123adfasdf123u4u"
+            example: 12123adfasdf123u4u
       requestBody:
         content:
           application/json:
@@ -62,27 +62,35 @@ paths:
                   id:
                     type: integer
                     example: 123
+                    description: id
                   nickname:
                     type: string
                     example: "TEST45I5GYIH"
+                    description: nickname
                   password:
                     type: string
                     example: "qatest6730"
+                    description: password
                   site_status:
                     type: string
                     example: "active"
+                    description: site status
                   site_id:
                     type: string
                     example: "MLA"
+                    description: site id
                   email:
                     type: string
                     example: "test_user_123@testuser.com"
+                    description: email
                   date_created:
                     type: string
-                    example: "2021-11-04T12:02:35Z"
+                    example: "2022-02-01T12:00:00.000-04:00"
+                    description: date created
                   date_last_updated:
                     type: string
-                    example: "2021-11-04T12:02:35Z"
+                    example: "2022-02-01T12:00:00.000-04:00"
+                    description: date last updated
         '400':
           description: Bad Request
           content:
