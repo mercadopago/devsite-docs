@@ -32,25 +32,25 @@ paths:
                   required: true
                   example: "MLA"
                   enum:
-                    - MPE
-                    - MSV
-                    - MPA
-                    - MRD
-                    - MLU
-                    - MLA
-                    - MLC
-                    - MCR
-                    - MPY
-                    - MBO
-                    - MNI
-                    - MHN
-                    - MCO
-                    - MEC
-                    - MLB
-                    - MGT
-                    - MLV
-                    - MLM
-                    - MCU
+                    - MPE --
+                    - MSV --
+                    - MPA --
+                    - MRD --
+                    - MLU --
+                    - MLA --
+                    - MLC --
+                    - MCR --
+                    - MPY --
+                    - MBO --
+                    - MNI --
+                    - MHN --
+                    - MCO --
+                    - MEC --
+                    - MLB --
+                    - MGT --
+                    - MLV --
+                    - MLM --
+                    - MCU -- 
       responses:
         '200':
           description: Created
@@ -105,9 +105,6 @@ paths:
                     type: string
                     enum:
                       - 403--Forbidden--authorization-the-caller-id-must-be-a-productive-user
-        '405':
-          description: ""
-          content: {}
         '500':
           description: Internal Server Error
           content:
