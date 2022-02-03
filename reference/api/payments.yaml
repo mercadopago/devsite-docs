@@ -9,7 +9,6 @@ paths:
     post:
       tags:
         - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/subscriptions'
         - $ref: '#/tags/checkout-api'
@@ -810,7 +809,6 @@ paths:
     get:
       tags:
         - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/qr-code'
         - $ref: '#/tags/subscriptions'
@@ -1134,7 +1132,6 @@ paths:
     put:
       tags:
         - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/subscriptions'
         - $ref: '#/tags/checkout-api'
@@ -1630,7 +1627,6 @@ paths:
     get:
       tags:
         - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/qr-code'
         - $ref: '#/tags/subscriptions'

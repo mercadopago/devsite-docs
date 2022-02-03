@@ -9,7 +9,6 @@ paths:
     get:
       tags:
         - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/checkout-api'
       summary: Get customer cards
       description: Consult a client's saved cards in order to be able to show them when making a payment.
@@ -228,7 +227,6 @@ paths:
     post:
       tags:
         - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/checkout-api'
       summary: Save card
       description: Store the card reference used by the customer in the payment securely on our servers to avoid asking for all the data in future transactions
@@ -450,7 +448,6 @@ paths:
     get:
       tags:
         - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/checkout-api'
       summary: Get card
       description: Check the reference information for a saved card associated with a customer
@@ -675,7 +672,6 @@ paths:
     put:
       tags:
         - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/checkout-api'
       summary: Update card
       description: Renew the details of a card associated with a customer. Indicate the IDs and send the parameters with the information you want to update
@@ -877,7 +873,6 @@ paths:
     delete:
       tags:
         - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/checkout-api'
       summary: Delete card
       description: Delete the data of a card associated with a customer whenever you need to

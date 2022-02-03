@@ -9,7 +9,6 @@ paths:
     get:
       tags:
         - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/marketplace'
       summary: Get document types
       description: Consult all the types of documents available by country and get a list with the ID and details of each one
       responses:

@@ -9,7 +9,6 @@ paths:
     post:
       tags:
         - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/subscriptions'
       summary: Create and refresh token
