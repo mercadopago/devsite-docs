@@ -2,9 +2,7 @@
 
 The authorization_code flow is characterized by the intervention of the seller to explicitly authorize the application's access to their data and by the use of a code granted by the authentication server so that the application can obtain an access token and an associated refresh token.
 
-Because it is a redirect-based flow, you must allow interaction with the seller's browser and receive the request through the authorization server redirect.
-
-In this flow, the application requests the seller's express consent to access the data by opening a web page in which the requested areas to be accessed are made explicit.
+Because it is a redirect-based flow, you must allow interaction with the seller's browser and receive the request through the authorization server redirect. In this flow, the application requests the seller's express consent to access the data by opening a web page in which the requested areas to be accessed are made explicit.
 
 ![oauth](/images/oauth/new-oauth-es.png)
 
@@ -29,16 +27,18 @@ To generate the authorization code, the following requirements must be met.
 1. Edit your application so that it contains your Redirect URL. See [Edit Application]().
 2. Send the authentication URL to the seller whose account you want to link to yours with the following fields:
 
-https://auth.mercadopago.com/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com
+|---|---|
+| Authentication URL | https://auth.mercadopago.com/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com |
 
-* **client_id**: replace the "APP_ID" value with your app ID. Check [Application ID]().
-* **state**: replace the "RANDOM_ID" value with an identifier that is unique for each attempt and does not include sensitive information so that you can identify who the received code is from.
-* **redirect_uri**: add the reported URL in the Redirect URL field of your application.
+   - **client_id**: replace the "APP_ID" value with your app ID. Check [Application ID]().
+   - **state**: replace the "RANDOM_ID" value with an identifier that is unique for each attempt and does not include sensitive information so that you can identify who the received code is from.
+   - **redirect_uri**: add the reported URL in the Redirect URL field of your application.
 
 3. Wait for the seller to access the URL and allow access. Upon accessing the URL, the seller will be directed to Mercado Pago and must log into their account to carry out the authorization.
 4. Check your server's Redirect URL to see the authorization code returned in the **code** parameter.
 
-https://www.redirect-url.com?code=CODE&state=RANDOM_ID
+|---|---|
+| Redirect URL | https://www.redirect-url.com?code=CODE&state=RANDOM_ID |
 
 5. Send your credentials and authorization code to the [/oauth/token](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/oauth/_oauth_token/post) endpoint to receive the access token in response. 
 

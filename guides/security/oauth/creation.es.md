@@ -2,9 +2,7 @@
 
 El flujo de authorization_code se caracteriza por la intervención del proveedor para autorizar explícitamente el acceso de la aplicación a sus datos y por el uso de un código otorgado por el servidor de autenticación para que la aplicación pueda obtener un access token y un refresh token asociado.
 
-Debido a que es un flujo basado en la redirección, debes permitir la interacción con el navegador del vendedor y recibir la solicitud a través de la redirección del servidor de autorización.
-
-En este flujo, la aplicación solicita al vendedor el consentimiento expreso para acceder a los datos mediante la apertura de una página web en la que se explicitan los ámbitos a los que se solicita el acceso.
+Debido a que es un flujo basado en la redirección, debes permitir la interacción con el navegador del vendedor y recibir la solicitud a través de la redirección del servidor de autorización. En este flujo, la aplicación solicita al vendedor el consentimiento expreso para acceder a los datos mediante la apertura de una página web en la que se explicitan los ámbitos a los que se solicita el acceso.
 
 ![oauth](/images/oauth/new-oauth-es.png)
 
@@ -27,18 +25,20 @@ Para generar el código de autorización, es preciso cumplir con los requisitos 
 > Recuerda que utilizarás información sensible de tus vendedores. Asegúrate de guardarlos de forma segura. No los utilices en la URL de autenticación y gestiona todo el proceso únicamente desde tu servidor.
 
 1. Edita tu aplicación para que contenga tu Redirect URL. Consulta [Editar aplicación]().
-2. Envie a URL de autenticação para o vendedor cuja conta você deseja vincular à sua com os seguintes campos:
+2. Envie a URL de autenticación para o vendedor cuja conta você deseja vincular à sua com os seguintes campos:
 
-https://auth.mercadopago.com.br/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com
+|---|---|
+| URL de autenticación | https://auth.mercadopago.com.br/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com |
 
-* **client_id**: edita tu aplicación para que contenga tu Redirect URL. Consulta [Editar aplicación]().
-* **state**: reemplaza el valor "RANDOM_ID" con un identificador que sea único para cada intento y que no incluya información confidencial para que puedas identificar de quién es el código recibido.
-* **redirect_uri**: agrega la URL informada en el campo Redirect URL de tu aplicación.
+   - **client_id**: edita tu aplicación para que contenga tu Redirect URL. Consulta [Editar aplicación]().
+   - **state**: reemplaza el valor "RANDOM_ID" con un identificador que sea único para cada intento y que no incluya información confidencial para que puedas identificar de quién es el código recibido.
+   - **redirect_uri**: agrega la URL informada en el campo Redirect URL de tu aplicación.
 
 3. Espera a que el vendedor acceda a la URL y permita el acceso. Al acceder a la URL, el vendedor será dirigido a Mercado Pago y deberá iniciar sesión en su cuenta para realizar la autorización.
 4. Verifica la Redirect URL de tu servidor para ver el código de autorización devuelto en el parámetro de **code**.
 
-https://www.redirect-url.com?code=CODE&state=RANDOM_ID 
+|---|---|
+| Redirect URL | https://www.redirect-url.com?code=CODE&state=RANDOM_ID |
 
 5. Envía tus credenciales y código de autorización al endpoint [/oauth/token](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/oauth/_oauth_token/post) para recibir el access token como respuesta.
 

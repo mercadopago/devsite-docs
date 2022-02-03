@@ -30,7 +30,9 @@ By clicking on an application card, you will have access to its details, includi
 IDs are used to identify your applications and are created automatically whenever a new application is created.
 
 ### Credentials
-The production and test credentials needed to access your application are presented. **Test credentials** check your integrations and can be used together with test users and test credit cards to simulate card receipts, while **Production Credentials** are used to receive payments. By default, production credentials will be disabled until you enable them by clicking **Enable Credentials**.
+The production and test credentials needed to access your application are presented. **Test credentials** check your integrations and can be used together with test users and test credit cards to simulate card receipts, while **Production Credentials** are used to receive payments. 
+
+By default, production credentials will be disabled until you enable them by clicking **Enable Credentials**, fill in your business information and accept our Terms and conditions.
 
 > WARNING
 >

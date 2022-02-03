@@ -15,6 +15,6 @@ You can receive webhook notifications every time a seller authorizes or deauthor
 >
 > Extra resources
 >
-> View tutorial videos and access APIs.
+> Check the APIs map.
 >
 > [Resources](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/resources)

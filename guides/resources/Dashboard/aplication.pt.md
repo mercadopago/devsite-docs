@@ -30,7 +30,9 @@ Ao clicar no card de uma aplicação, você terá acesso aos seus detalhes, incl
 Os IDs servem para que você possa identificar as suas aplicações e são criados automaticamente sempre que uma nova aplicação for criada.
 
 ### Credenciais
-São apresentadas as credenciais de produção e de teste necessárias para acessar a sua aplicação. As **credenciais de teste** devem ser usadas para testar suas integrações e podem ser utilizadas em conjunto com cartões de crédito de teste para simular recebimentos via cartão, enquanto as **credenciais de produção** são usadas para receber pagamentos. Por padrão, as credenciais de produção estarão desativadas até que você as habilite clicando em **Ativar credenciais**.
+São apresentadas as credenciais de produção e de teste necessárias para acessar a sua aplicação. As **credenciais de teste** devem ser usadas para testar suas integrações e podem ser utilizadas em conjunto com cartões de crédito de teste para simular recebimentos via cartão, enquanto as **credenciais de produção** são usadas para receber pagamentos. 
+
+Por padrão, as credenciais de produção estarão desativadas até que você as habilite clicando em **Ativar credenciais**, preencha as informações de seu negócio e aceite os nossos Termos e condições.
 
 > WARNING
 >
@@ -41,7 +43,7 @@ São apresentadas as credenciais de produção e de teste necessárias para aces
 Também há a possibilidade de compartilhar as credenciais com outra conta do Mercado Pago, basta clicar em **compartilhar minhas credenciais** e preencher com o e-mail da conta que receberá as informações. 
 
 ### Notificações webhook
-Configure as URLs de produção e teste da qual serão recebidas as notificações webhook e selecione os eventos que serão responsáveis por gerar essas notificações. Leia [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks) para maiores informações para mais informações.
+Configure as URLs de produção e teste da qual serão recebidas as notificações webhook e selecione os eventos que serão responsáveis por gerar essas notificações. Leia [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks) para mais informações para mais informações.
 
 ## Gerenciar aplicação
 
