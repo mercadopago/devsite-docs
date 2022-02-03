@@ -30,7 +30,7 @@ Ao clicar no card de uma aplicação, você terá acesso aos seus detalhes, incl
 Os IDs servem para que você possa identificar as suas aplicações e são criados automaticamente sempre que uma nova aplicação for criada.
 
 ### Credenciais
-São apresentadas as credenciais de produção e de teste necessárias para acessar a sua aplicação. Por padrão, as credenciais de produção estarão desativadas até que você as habilite clicando em **Ativar credenciais** e preencher o formulário.
+São apresentadas as credenciais de produção e de teste necessárias para acessar a sua aplicação. As **credenciais de teste** devem ser usadas para testar suas integrações e podem ser utilizadas em conjunto com cartões de crédito de teste para simular recebimentos via cartão, enquanto as **credenciais de produção** são usadas para receber pagamentos. Por padrão, as credenciais de produção estarão desativadas até que você as habilite clicando em **Ativar credenciais**.
 
 > WARNING
 >
