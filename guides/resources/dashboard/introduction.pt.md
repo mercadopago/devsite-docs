@@ -13,6 +13,6 @@ O Dashboard é composto por diferentes seções, cada uma com um objetivo distin
 >
 > Cabeçalho
 >
-> Veja resumo das suas informações pessoais enquanto usuário integrador do Mercado Pago.
+> Veja um resumo dos seus dados.
 >
 > [Cabeçalho](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/dashboard/header)

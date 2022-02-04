@@ -13,6 +13,6 @@ The Dashboard is made up of different sections, each with a different purpose.
 >
 > Header
 >
-> Check the summary of your personal information as an integrator of Mercado Pago.
+> Check the summary of your information.
 >
 > [Header](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/header)
