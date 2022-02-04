@@ -24,7 +24,8 @@ To generate the authorization code, the following requirements must be met.
  
 1. Edit your application so that it contains your Redirect URL. See [Edit Application]().
 2. Send the authentication URL to the seller whose account you want to link to yours with the following fields:
- 
+
+|Description|URL| 
 |---|---|
 | Authentication URL | https://auth.mercadopago.com/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com |
  
@@ -35,6 +36,7 @@ To generate the authorization code, the following requirements must be met.
 3. Wait for the seller to access the URL and allow access. Upon accessing the URL, the seller will be directed to Mercado Pago and must log into their account to carry out the authorization.
 4. Check your server's Redirect URL to see the authorization code returned in the **code** parameter.
  
+|Description|URL|  
 |---|---|
 | Redirect URL | https://www.redirect-url.com?code=CODE&state=RANDOM_ID |
  

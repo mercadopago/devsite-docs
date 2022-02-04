@@ -7,3 +7,11 @@ Você pode integrar soluções para outras contas além da sua própria. Quando 
 3. Confirmar a solicitação das credenciais.
  
 Após o acesso às credenciais ser concedido, você pode usá-las para integrar soluções. Quando as integrações forem concluídas, remova as permissões de acesso para as credenciais que foram compartilhadas e cuide da segurança dos dados.
+
+> NEXT_STEP_CARD_PT
+>
+> Suas certificações
+>
+> Veja informações a respeito das suas certificações no nosso programa de desenvolvedores certificados (**&lt;dev&gt;program**).
+>
+> [Suas certificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/dashboard/certification)

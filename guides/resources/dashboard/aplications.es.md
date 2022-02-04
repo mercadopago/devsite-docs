@@ -68,3 +68,11 @@ También existe la posibilidad de compartir las credenciales con otra cuenta de 
  
 ### Notificaciones de webhook
 Configure las URL de producción y prueba desde las que se recibirán las notificaciones de webhook y seleccione los eventos que serán responsables de generar estas notificaciones. Lee [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks) para más información.
+
+> NEXT_STEP_CARD_ES
+>
+> Cuentas que integras
+>
+> Vea informaciónes a cerca de cuentas de terceros que se le ha dado permiso para usar.
+>
+> [Cuentas que integras](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/dashboard/integration)

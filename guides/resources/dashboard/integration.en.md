@@ -7,3 +7,11 @@ You can integrate solutions for accounts other than your own. When integrating s
 3. Confirm the credentials request.
  
 After access to credentials is granted, you can use them to integrate solutions. When the integrations are complete, remove access permissions for the credentials that were shared and take care of data security.
+
+> NEXT_STEP_CARD_EN
+>
+> Your certifications
+>
+> Check informations about your certifications in our certified developer program (**&lt;dev&gt;program**).
+>
+> [Your certifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/certification)

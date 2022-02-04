@@ -24,7 +24,8 @@ Para generar el código de autorización, es preciso cumplir con los requisitos 
  
 1. Edita tu aplicación para que contenga tu Redirect URL. Consulta [Editar aplicación]().
 2. Envie a URL de autenticación para o vendedor cuja conta você deseja vincular à sua com os seguintes campos:
- 
+
+|Descripción|URL| 
 |---|---|
 | URL de autenticación | https://auth.mercadopago.com.br/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com |
  
@@ -34,7 +35,8 @@ Para generar el código de autorización, es preciso cumplir con los requisitos 
  
 3. Espera a que el vendedor acceda a la URL y permita el acceso. Al acceder a la URL, el vendedor será dirigido a Mercado Pago y deberá iniciar sesión en su cuenta para realizar la autorización.
 4. Verifica la Redirect URL de tu servidor para ver el código de autorización devuelto en el parámetro de **code**.
- 
+
+|Descripción|URL|
 |---|---|
 | Redirect URL | https://www.redirect-url.com?code=CODE&state=RANDOM_ID |
  

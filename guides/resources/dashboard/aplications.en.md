@@ -68,3 +68,11 @@ There is also the possibility to share the credentials with another Mercado Pago
  
 ### Webhook notifications
 Configure the production and test URLs from which webhook notifications will be received and select the events that will be responsible for generating these notifications. Check [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks) for more information.
+
+> NEXT_STEP_CARD_EN
+>
+> Accounts you integrate
+>
+> Check informations about regarding third-party accounts that you have been given permission to use.
+>
+> [Accounts you integrate](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/integration)
