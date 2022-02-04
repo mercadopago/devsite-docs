@@ -9,3 +9,5 @@ Las siguientes acciones están disponibles para ----[mla, mlu, mpe, mco, mlc, ml
 [TXTSNIPPET][/guides/snippets/test-integration/apiref-cards]
 
 [TXTSNIPPET][/guides/snippets/test-integration/apiref-refunds]
+
+[TXTSNIPPET][/guides/snippets/test-integration/apiref-paymentmethods]
