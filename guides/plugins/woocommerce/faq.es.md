@@ -8,7 +8,7 @@ Para instalar el plugin manualmente, sigue estos pasos:
 2. Cambia el nombre del archivo .zip descargado por **woocommerce-mercadopago** (no descomprimas el archivo .zip antes de cargarlo en WordPress. Para que el complemento se instale correctamente, debes cargar el archivo en el formato original).
 3. Accede al **Panel** del WordPress y haz clic en **Plugins** **> Añadir nuevo**.
 4. En **Añadir plugins**, haz clic en **Subir plugin**.
-5. Haz clic en **Escoger  archivo** y selecciona la carpeta que acabas de renombrar.
+5. Haz clic en **Escoger archivo** y selecciona la carpeta que acabas de renombrar.
 6. Haz clic en **Instalar ahora**.
 7. Cuando finalices la instalación, haz clic en **Activar plugin**.
 
