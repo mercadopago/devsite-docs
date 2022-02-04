@@ -16,7 +16,31 @@ Para criar uma aplicação, siga os passos abaixo.
 4. Aceite nossos Termos e Condições.
 5. Crie a aplicação clicando no botão "Criar aplicação".
  
-A cada aplicação criada, um novo card contendo o nome, descrição e ID da aplicação é automaticamente criado na página inicial do seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/dashboard) de desenvolvedor.
+A cada aplicação criada, um novo card contendo o nome, descrição e ID da aplicação é automaticamente criado na página inicial do seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/dashboard/introduction) de desenvolvedor.
+
+## Gerenciar aplicação
+ 
+### Editar aplicação
+Você pode clicar no botão "Editar" para ver as configurações avançadas que incluem os dados da sua aplicação e o produto a ser integrado.
+ 
+* **Dados da sua aplicação**: esta seção define os dados básicos da aplicação e inclue:
+ 
+ - *Nome da aplicação (limite de 50 caracteres)*.
+ - *Descrição da aplicação (limite de 150 caracteres)*.
+ - *Permissões da aplicação*. Este campo apresenta as opções de acesso da sua aplicação, sendo elas: read (ler), offline access (acesso offline) e write (escrever). Por padrão, sua aplicação é criada com todas as permissões ativadas, mas você pode desativar uma permissão clicando na caixa de seleção referente à permissão que você deseja alterar.
+ - *Redirect URL*. Este campo define a URL (em https) na qual você deseja receber o código de autorização quando sua integração for configurada como Marketplace ou realizada através de OAuth. Veja [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/oauth/introduction) para mais detalhes.
+ - *Bloqueio de aplicação*. Caso haja, indicará o motivo do bloqueio da aplicação
+ 
+* **Produto a ser integrado**. Esta seção define o produto a ser integrado na sua aplicação. O campo "Produtos disponíveis" apresenta a lista de produtos disponíveis a serem integrados. Por padrão, o valor deste campo é preenchido com o valor inserido no momento da criação da aplicação, mas você pode alterar o produto escolhido sem a necessidade de reconfigurar a integração. Este campo serve como um informativo do produto ao qual a aplicação se refere.
+ 
+### Excluir aplicação
+Caso você precise por algum motivo, excluir uma aplicação, basta clicar em "Excluir" e confirmar a ação na caixa de diálogo.
+ 
+> WARNING
+>
+> Atenção
+>
+> Tenha em conta que ao excluir uma aplicação, sua loja deixará de receber pagamentos através da integração associada à aplicação e todas as configurações serão perdidas, incluindo as credenciais associadas. Uma vez excluída uma aplicação, não é possível recuperá-la.
  
 ## Detalhes da aplicação
  
@@ -44,26 +68,3 @@ Também há a possibilidade de compartilhar as credenciais com outra conta do Me
  
 ### Notificações webhook
 Configure as URLs de produção e teste da qual serão recebidas as notificações webhook e selecione os eventos que serão responsáveis por gerar essas notificações. Leia [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks) para mais informações para mais informações.
- 
-## Gerenciar aplicação
- 
-### Editar aplicação
-Você pode clicar no botão "Editar" para ver as configurações avançadas que incluem os dados da sua aplicação e o produto a ser integrado.
- 
-* **Dados da sua aplicação**: esta seção define os dados básicos da aplicação e inclue:
- 
- - *Nome da aplicação (limite de 50 caracteres)*.
- - *Descrição da aplicação (limite de 150 caracteres)*.
- - *Permissões da aplicação*. Este campo apresenta as opções de acesso da sua aplicação, sendo elas: read (ler), offline access (acesso offline) e write (escrever). Por padrão, sua aplicação é criada com todas as permissões ativadas, mas você pode desativar uma permissão clicando na caixa de seleção referente à permissão que você deseja alterar.
- - *Redirect URL*. Este campo define a URL (em https) na qual você deseja receber o código de autorização quando sua integração for configurada como Marketplace ou realizada através de OAuth. Veja [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/oauth/introduction) para mais detalhes.
- 
-* **Produto a ser integrado**. Esta seção define o produto a ser integrado na sua aplicação. O campo "Produtos disponíveis" apresenta a lista de produtos disponíveis a serem integrados. Por padrão, o valor deste campo é preenchido com o valor inserido no momento da criação da aplicação, mas você pode alterar o produto escolhido sem a necessidade de reconfigurar a integração. Este campo serve como um informativo do produto ao qual a aplicação se refere.
- 
-### Excluir aplicação
-Caso você precise por algum motivo, excluir uma aplicação, basta clicar em "Excluir" e confirmar a ação na caixa de diálogo.
- 
-> WARNING
->
-> Atenção
->
-> Tenha em conta que ao excluir uma aplicação, sua loja deixará de receber pagamentos através da integração associada à aplicação e todas as configurações serão perdidas, incluindo as credenciais associadas. Uma vez excluída uma aplicação, não é possível recuperá-la.

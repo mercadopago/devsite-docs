@@ -16,8 +16,31 @@ To create an application, follow the steps below:
 4. Accept our Terms and Conditions.
 5. Create the application by clicking on the button "Create application".
  
-To every application created, a new card containing the application's name, description and ID is automatically created on the [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/dashboard) homepage.
+To every application created, a new card containing the application's name, description and ID is automatically created on the [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/dashboard/introduction) homepage.
  
+## Manage application
+ 
+### Edit application
+After creating your application, you can click on the "Edit" button to see the advanced settings, which include your application data and the product to be integrated.
+ 
+* **Your application data**. This section defines the basic application data and includes:
+ 
+ - *Application name (limit of 50 characters)*.
+ - *Application description (limit of 150 characters)*.
+ - *Application permissions*. This field displays the access options for your application, namely: read, offline access and write. By default, your application is created with all permissions enabled. You can disable permissions by clicking on their respective checkboxes.
+ - *Redirect URL*. This field defines the URL (in https) where you want to receive the authorization code when your integration is configured as Marketplace or performed via OAuth. Check [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/oauth/introduction) for more details.
+ 
+* **Product to be integrated**. This section defines the product that should integrate with your application. The field "Available products" presents the list of available products to be integrated. By default, the value of this field is the value entered when creating the application, but you can change the chosen product without having to reconfigure the integration. This field works as an informational field for the product to which the application refers.
+ 
+### Delete application
+If you need to delete an application for any reason, click on "Delete" and confirm the action in the dialog box.
+ 
+> WARNING
+>
+> Attention
+>
+> Note that when you delete an app, your store will no longer receive payments through the integration associated with it, and all settings will be lost, including associated credentials. Once you delete an application, you cannot retrieve it.
+
 ## Application details
  
 By clicking on an application card, you will have access to its details, including:
@@ -44,26 +67,3 @@ There is also the possibility to share the credentials with another Mercado Pago
  
 ### Webhook notifications
 Configure the production and test URLs from which webhook notifications will be received and select the events that will be responsible for generating these notifications. Check [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks) for more information.
- 
-## Manage application
- 
-### Edit application
-After creating your application, you can click on the "Edit" button to see the advanced settings, which include your application data and the product to be integrated.
- 
-* **Your application data**. This section defines the basic application data and includes:
- 
- - *Application name (limit of 50 characters)*.
- - *Application description (limit of 150 characters)*.
- - *Application permissions*. This field displays the access options for your application, namely: read, offline access and write. By default, your application is created with all permissions enabled. You can disable permissions by clicking on their respective checkboxes.
- - *Redirect URL*. This field defines the URL (in https) where you want to receive the authorization code when your integration is configured as Marketplace or performed via OAuth. Check [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/oauth/introduction) for more details.
- 
-* **Product to be integrated**. This section defines the product that should integrate with your application. The field "Available products" presents the list of available products to be integrated. By default, the value of this field is the value entered when creating the application, but you can change the chosen product without having to reconfigure the integration. This field works as an informational field for the product to which the application refers.
- 
-### Delete application
-If you need to delete an application for any reason, click on "Delete" and confirm the action in the dialog box.
- 
-> WARNING
->
-> Attention
->
-> Note that when you delete an app, your store will no longer receive payments through the integration associated with it, and all settings will be lost, including associated credentials. Once you delete an application, you cannot retrieve it.

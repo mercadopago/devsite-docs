@@ -16,7 +16,30 @@ Para crear una aplicación, sigue los pasos a continuación.
 4. Acepta nuestros términos y condiciones.
 5. Crea la aplicación haciendo clic en el botón "Crear aplicación".
  
-Con cada aplicación creada, se crea automáticamente una nueva tarjeta en la página de inicio del [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/dashboard) que contiene el nombre, la descripción y el ID de la aplicación.
+Con cada aplicación creada, se crea automáticamente una nueva tarjeta en la página de inicio del [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/dashboard/introduction) que contiene el nombre, la descripción y el ID de la aplicación.
+
+## Administrar aplicación
+ 
+## Edita una aplicación
+Después de crear tu aplicación, puedes hacer clic en el botón "Editar" para ver la configuración avanzada, que incluye los datos de tu aplicación y el producto que se integrará.
+ 
+* **Los datos de tu aplicación**. Esta sección define los datos básicos de la aplicación e incluye:
+ 
+ - *Nombre de la aplicación (límite de 50 caracteres)*.
+ - *Descripción de la aplicación (límite de 150 caracteres)*.
+ - *Permisos de la aplicación*. Este campo muestra las opciones de acceso para tu aplicación, siendo: lectura (read), acceso sin conexión (offline access) y escritura (write). De forma predeterminada, tu aplicación se crea con todos los permisos habilitados. Pero puedes deshabilitar un permiso haciendo clic en la casilla de verificación del que deseas cambiar.
+ - *Redirigir URL*. Este campo define la URL en la que deseas recibir el código de autorización cuando tu integración se configura como Marketplace o se realiza a través de OAuth. Vea [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/introduction) para más detalles.
+ 
+* **Producto a integrar**. Esta sección define el producto que se integrará en tu aplicación. El campo "Productos disponibles" presenta la lista de productos disponibles para integrar. De forma predeterminada, el valor de este campo se completa con el valor ingresado al crear la aplicación, pero puedes cambiar el producto elegido sin tener que reconfigurar la integración. Este campo sirve como campo informativo para el producto al que se refiere la aplicación.
+ 
+### Elimina una aplicación
+Si por alguna razón necesitas eliminar una aplicación, simplemente haz clic en "Eliminar" y confirma la acción en el cuadro de diálogo.
+ 
+> WARNING
+>
+> Atención
+>
+> Tenga en cuenta que cuando eliminas una aplicación, tu tienda ya no recibirá pagos a través de la integración asociada con la aplicación y se perderán todas las configuraciones, incluidas las credenciales asociadas. Una vez que se elimina una aplicación, no se puede recuperar.
  
 ## Detalles de la aplicación
  
@@ -44,26 +67,3 @@ También existe la posibilidad de compartir las credenciales con otra cuenta de 
  
 ### Notificaciones de webhook
 Configure las URL de producción y prueba desde las que se recibirán las notificaciones de webhook y seleccione los eventos que serán responsables de generar estas notificaciones. Lee [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks) para más información.
- 
-## Administrar aplicación
- 
-## Edita una aplicación
-Después de crear tu aplicación, puedes hacer clic en el botón "Editar" para ver la configuración avanzada, que incluye los datos de tu aplicación y el producto que se integrará.
- 
-* **Los datos de tu aplicación**. Esta sección define los datos básicos de la aplicación e incluye:
- 
- - *Nombre de la aplicación (límite de 50 caracteres)*.
- - *Descripción de la aplicación (límite de 150 caracteres)*.
- - *Permisos de la aplicación*. Este campo muestra las opciones de acceso para tu aplicación, siendo: lectura (read), acceso sin conexión (offline access) y escritura (write). De forma predeterminada, tu aplicación se crea con todos los permisos habilitados. Pero puedes deshabilitar un permiso haciendo clic en la casilla de verificación del que deseas cambiar.
- - *Redirigir URL*. Este campo define la URL en la que deseas recibir el código de autorización cuando tu integración se configura como Marketplace o se realiza a través de OAuth. Vea [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/introduction) para más detalles.
- 
-* **Producto a integrar**. Esta sección define el producto que se integrará en tu aplicación. El campo "Productos disponibles" presenta la lista de productos disponibles para integrar. De forma predeterminada, el valor de este campo se completa con el valor ingresado al crear la aplicación, pero puedes cambiar el producto elegido sin tener que reconfigurar la integración. Este campo sirve como campo informativo para el producto al que se refiere la aplicación.
- 
-### Elimina una aplicación
-Si por alguna razón necesitas eliminar una aplicación, simplemente haz clic en "Eliminar" y confirma la acción en el cuadro de diálogo.
- 
-> WARNING
->
-> Atención
->
-> Tenga en cuenta que cuando eliminas una aplicación, tu tienda ya no recibirá pagos a través de la integración asociada con la aplicación y se perderán todas las configuraciones, incluidas las credenciales asociadas. Una vez que se elimina una aplicación, no se puede recuperar.
