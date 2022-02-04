@@ -37,7 +37,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval_plan' \
 	"auto_recurring":{
 		"frequency":"1",
 		"frequency_type":"months",
-        "transaction_amount":1100,
+        "transaction_amount":700.00,
 		"currency_id":"[FAKER][CURRENCY][ACRONYM]",
 		"repetitions":12,
 		"free_trial":{
@@ -74,7 +74,6 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval_plan' \
     "date_created": "2020-06-01T20:14:35.008-04:00",
     "last_modified": "2020-06-01T20:14:35.008-04:00",
     "init_point": "https://www.mercadopago.com/mlm/debits/new?preapproval_plan_id=2c938084726e18d60172720000000000",
-    "sandbox_init_point": "https://sandbox.mercadopago.com/mlm/debits/new?preapproval_plan_id=2c938084726e18d60172720000000000",
     "auto_recurring": {
         "frequency": 1,
         "frequency_type": "months",
@@ -114,7 +113,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 | Atributo | Definição |
 | --- | --- |
 | `preapproval_plan_id` (obrigatório) | Refere-se ao plano gerado anteriormente. |
-| `card_token_id` (obrigatório) | Las informações no cartão serão convertidas em um token para enviar os dados com segurança. |
+| `card_token_id` (obrigatório) | As informações no cartão serão convertidas em um token para enviar os dados com segurança. |
 | `payer_email` (obrigatório) | E-mail do pagador. |
 
 > WARNING
