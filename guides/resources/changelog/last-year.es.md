@@ -328,7 +328,7 @@ Lanzamos la nueva versión 3.11.0 para Magento 2.
 > PRODUCT: OAUTH
 Conoce cómo gestionar varias cuentas de Mercado Pago a la vez en tu integración y de manera segura a través de OAuth. Esta funcionalidad de vinculación permite que el vendedor ingrese a su cuenta de Mercado Pago, autorice la vinculación y habilite a tu aplicación para operar en su nombre.
 
-[Ir a la documentación de OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth)
+[Ir a la documentación de OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/introduction)
 
 ### 13 de Septiembre
 

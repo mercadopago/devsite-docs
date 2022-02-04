@@ -89,7 +89,7 @@ Resposta:
 
 Uma vez que os usuários de teste são criados, você pode começar com a integração e criar as lojas e caixas.
 
-### 4. Como coletar Access Token (OAUTH)
+### 4. Como coletar Access Token (OAuth)
 
 Para você integrador que irá trabalhar com diversas lojas que utilizam carteira digital Mercado Pago, orientamos que faça o processo de OAuth - autenticação entre contas, esse processo consiste no processo do vendedor permitir que seus dados sejam compartilhados com um sistema terceiro de forma segura.
 
