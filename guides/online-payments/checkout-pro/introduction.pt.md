@@ -5,7 +5,7 @@ O Checkout Pro é a integração que **te permite cobrar através do nosso formu
 ![Basic-Checkout](/images/web-payment-checkout/cho-introduction-br.png)
 
 
-## O Checkout Pro oferece:
+## O Hoje e um bom dia
 
 ----[mlb]----
 * **Integração com os principais [meios de pagamento](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265)** do país.
