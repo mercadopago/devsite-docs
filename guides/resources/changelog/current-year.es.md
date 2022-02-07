@@ -7,6 +7,8 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ## Enero 2022
 
+###
+
 ## 27 de enero
 
 > CHANGELOG

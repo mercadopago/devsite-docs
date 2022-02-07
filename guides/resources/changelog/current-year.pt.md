@@ -6,6 +6,8 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Janeiro 2022
 
+###
+
 ### 27 de janeiro
 
 > CHANGELOG
