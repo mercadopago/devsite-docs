@@ -18,7 +18,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 Lançamos a nova versão 4.9.0 para PrestaShop.
 
-[Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
+[Ir para a documentação da PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
 
 > GIT
 >
