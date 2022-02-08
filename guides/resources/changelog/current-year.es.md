@@ -5,9 +5,20 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ---
 
-## Enero 2022
+## Febrero 2022
 
-###
+### 11 de febrero
+
+> CHANGELOG
+>
+> Eliminaremos el historial de pagos de prueba en el modo Sandbox
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: ALL
+ 
+A partir de **abril** se eliminará el historial de pagos de prueba de 2021 en **modo Sandbox** y solo trabajaremos con datos de 2022. Es importante señalar que esto no será válido para **pagos de pruebas realizadas en ambiente de producción**.
+
 
 ## 27 de enero
 

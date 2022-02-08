@@ -4,9 +4,22 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
-## Janeiro 2022
+## Fevereiro 2022
 
-###
+### 11 de fevereiro
+
+> CHANGELOG
+>
+> Apagaremos o histórico de pagamentos de teste em modo Sandbox
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: ALL
+ 
+A partir de **abril**, o histórico de 2021 dos pagamentos de teste em **modo Sandbox** será apagado e passaremos a trabalhar apenas com os dados de 2022. É importante salientar que isso não será válido para **pagamentos de teste realizados em ambiente de produção**.
+
+
+## Janeiro 2022
 
 ### 27 de janeiro
 
