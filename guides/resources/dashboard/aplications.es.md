@@ -1,6 +1,6 @@
 # Tus aplicaciones
  
-Las aplicaciones son las distintas integraciones contenidas en una o varias tiendas. Puedes crear una aplicación para cada solución que implementes, con el fin de tener todo organizado y mantener un control que facilite la gestión.
+Llamamos aplicaciones a las distintas integraciones contenidas en una o varias tiendas. Puedes crear una aplicación para cada solución que implementes, con el fin de tener todo organizado y mantener un control que facilite la gestión.
  
 Cada aplicación tiene un conjunto de credenciales y la posibilidad de configurar sus propias notificaciones.
  
