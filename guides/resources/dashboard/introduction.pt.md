@@ -6,8 +6,8 @@ O Dashboard é composto por diferentes seções, cada uma com um objetivo distin
  
 * **Cabeçalho**: resumo das suas informações pessoais enquanto usuário integrador do Mercado Pago.
 * **Suas aplicações**: exibe as suas aplicações criadas e permite criar novas.
-* **Contas que você integra**: informações a respeito de contas de terceiro das quais você recebeu permissão para utilizar.
-* **Suas certificações**: informações a respeito das suas certificações no nosso programa de desenvolvedores certificados (**&lt;dev&gt;program**).
+* **Contas que você integra**: informações sobre contas de terceiro das quais você recebeu permissão para utilizar.
+* **Suas certificações**: informações sobre suas certificações no nosso programa de desenvolvedores certificados (**&lt;dev&gt;program**).
 
 > NEXT_STEP_CARD_PT
 >

@@ -1,8 +1,8 @@
 # Creación
  
-El flujo de authorization_code se caracteriza por la intervención del proveedor para autorizar explícitamente el acceso de la aplicación a sus datos y por el uso de un código otorgado por el servidor de autenticación para que la aplicación pueda obtener un access token y un refresh token asociado.
+El flujo de `authorization_code` se caracteriza por la intervención del vendedor para autorizar explícitamente el acceso de la aplicación a sus datos y por el uso de un código otorgado por el servidor de autenticación para que la aplicación pueda obtener un access token y un refresh token asociado.
  
-Debido a que es un flujo basado en la redirección, debes permitir la interacción con el navegador del vendedor y recibir la solicitud a través de la redirección del servidor de autorización. En este flujo, la aplicación solicita al vendedor el consentimiento expreso para acceder a los datos mediante la apertura de una página web en la que se explicitan los ámbitos a los que se solicita el acceso.
+Debido a que se trata de un flujo basado en la redirección, debes permitir la interacción con el navegador del vendedor y recibir la solicitud a través de la redirección del servidor de autorización. En este flujo, la aplicación solicita al vendedor el consentimiento expreso para acceder a los datos mediante la apertura de una página web en la que se explicitan los ámbitos a los que se solicita el acceso.
   
 Una vez permitido el acceso, el servidor genera un código de acceso que llega a la aplicación a través de una redirección. En este paso, la aplicación solicita acceso al servidor de autenticación enviando el código obtenido y los datos de la aplicación. Una vez hecho esto, el servidor otorga el access token y el refresh token a la aplicación.
  
@@ -20,7 +20,7 @@ Para generar el código de autorización, es preciso cumplir con los requisitos 
 >
 > Atención
 >
-> Recuerda que utilizarás información sensible de tus vendedores. Asegúrate de guardarlos de forma segura. No los utilices en la URL de autenticación y gestiona todo el proceso únicamente desde tu servidor.
+> Recuerda que utilizarás información sensible de tus vendedores. Asegúrate de guardarla de forma segura. No la utilices en la URL de autenticación y gestiona todo el proceso únicamente desde tu servidor.
  
 1. Edita tu aplicación para que contenga tu Redirect URL. Consulta [Editar aplicación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/dashboard/aplication).
 2. Envie a URL de autenticación para o vendedor cuja conta você deseja vincular à sua com os seguintes campos:
@@ -52,6 +52,6 @@ Para generar el código de autorización, es preciso cumplir con los requisitos 
 >
 > Renovación del access token
 >
-> Vea el flujo de renovación de un access token caducado.
+> Lee sobre el flujo de renovación de un access token caducado.
 >
 > [Renovación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/renewal)
