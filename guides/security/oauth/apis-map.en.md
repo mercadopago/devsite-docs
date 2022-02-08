@@ -1,6 +1,6 @@
 # APIs map
  
-The following actions are available for OAuth.
+The following actions are available for **OAuth**.
 
 |Action|Description|
 |---|---|
