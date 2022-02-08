@@ -56,7 +56,7 @@ Los ID se utilizan para identificar tus aplicaciones y se crean automáticamente
 ### Credenciales
 Se presentan las credenciales de producción y prueba necesarias para acceder a tu aplicación. Las **credenciales de prueba** deben usarse para probar tus integraciones y se pueden usar junto con tarjetas de crédito de prueba para simular recibos de tarjetas, mientras que las **credenciales de producción** se usan para recibir pagos.
  
-De forma predeterminada, las credenciales de producción estarán deshabilitadas hasta que las habilite haciendo clic en **Habilitar credenciales**, complete la información de su empresa y acepte nuestros Términos y condiciones.
+De forma predeterminada, las credenciales de producción estarán deshabilitadas hasta que las habilites haciendo clic en **Habilitar credenciales**, completes la información de su empresa y aceptes nuestros términos y condiciones.
  
 > WARNING
 >
