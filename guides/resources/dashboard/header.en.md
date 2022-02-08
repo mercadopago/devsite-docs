@@ -18,6 +18,6 @@ Check out the [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOMAIN]/d
 >
 > Your applications
 >
-> Check informations about your created applications.
+> Check information about your created applications.
 >
 > [Your applications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/aplications)
