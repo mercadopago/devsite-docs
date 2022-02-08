@@ -9,7 +9,7 @@ Currently there are different ways in which the **access tokens** and **temporal
 * **User session cleanup**: enables refresh of all vendor tokens and temporal grants.
 * **Application elimination**: when an application is eliminated, all tokens and temporal grants belonging to it are deleted.
  
-You can receive webhook notifications every time a seller authorizes or deauthorizes your application. To configure them, read [Creation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/creation) via Dashboard.
+You can receive webhook notifications every time a seller authorizes or deauthorizes your application. To configure them, read [Creation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/oauth/creation) via Dashboard.
  
 > NEXT_STEP_CARD_EN
 >
@@ -17,4 +17,4 @@ You can receive webhook notifications every time a seller authorizes or deauthor
 >
 > Check the APIs map.
 >
-> [Resources](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/resources)
+> [Resources](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/oauth/resources)

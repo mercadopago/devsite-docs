@@ -1,6 +1,6 @@
 # Header
  
-The header contains your identification as an integrating user of Mercado Pago. Your ID is made up of two IDs.
+The header contains your identification as an member user of Mercado Pago. Your ID is made up of two IDs.
  
 ## User ID
  

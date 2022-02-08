@@ -19,4 +19,4 @@ Los flujos, también llamados grant types, se refieren a la forma en que una apl
 >
 > Conozca el flujo de autorización de acceso a datos.
 >
-> [Creación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/dashboard/creation)
+> [Creación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/creation)

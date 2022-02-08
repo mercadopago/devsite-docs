@@ -9,7 +9,7 @@ Atualmente existem formas diferentes através das quais os **access tokens** e *
 * **Limpeza de sessão do usuário**: aciona a atualização de todos os tokens de vendedor e concessões temporárias.
 * **Exclusão de aplicação**: quando uma aplicação é excluída, todos os tokens e concessões temporárias pertencentes a ele são excluídos.
  
-Você pode receber notificações webhook sempre que um vendedor autorizar ou desautorizar sua aplicação. Para configurá-las, leia [Criação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/dashboard/creation) através do Dashboard.
+Você pode receber notificações webhook sempre que um vendedor autorizar ou desautorizar sua aplicação. Para configurá-las, leia [Criação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/oauth/creation) através do Dashboard.
  
 > NEXT_STEP_CARD_PT
 >
@@ -17,4 +17,4 @@ Você pode receber notificações webhook sempre que um vendedor autorizar ou de
 >
 > Veja vídeos tutoriais e acesse as APIs.
 >
-> [Recursos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/dashboard/resources)
+> [Recursos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/oauth/resources)

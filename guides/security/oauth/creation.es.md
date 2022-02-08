@@ -11,7 +11,7 @@ Para generar el código de autorización, es preciso cumplir con los requisitos 
 | Requisitos | Descripción | Especificaciones |
 | --- | --- | --- |
 | Cuentas de vendedor de Mercado Pago | Se requerirán cuentas de vendedor de Mercado Pago. Uno para ti y otro para el vendedor. | Cuenta de vendedor en Mercado Pago. Si no la tienes, haz [clic aquí](https://www.mercadopago[FAKER][URL[DOMAIN]/hub/registration/landing) para crear. |
-| Aplicación | Las aplicaciones son las distintas integraciones contenidas en una o varias tiendas. Puedes crear una aplicación para cada solución que implementes, con el fin de tener todo organizado y mantener un control que facilite la gestión. | Para usar OAuth necesitarás tener una aplicación creada. Consulta la documentación del [Dashboard](https://www.mercadopago[FAKER][URL[DOMAIN]/developers/es/guides/resources/dashboard) para obtener información sobre cómo crear una aplicación. |
+| Aplicación | Las aplicaciones son las distintas integraciones contenidas en una o varias tiendas. Puedes crear una aplicación para cada solución que implementes, con el fin de tener todo organizado y mantener un control que facilite la gestión. | Para usar OAuth necesitarás tener una aplicación creada. Consulta la documentación del [Dashboard](https://www.mercadopago[FAKER][URL[DOMAIN]/developers/es/guides/resources/dashboard/introduction) para obtener información sobre cómo crear una aplicación. |
 | Credenciales | Las [credenciales](https://www.mercadopago[FAKER][URL[DOMAIN]/developers/es/guides/resources/credentials) son contraseñas únicas con las que identificamos una integración en tu cuenta y sirven para capturar pagos de forma segura en tiendas virtuales y otras aplicaciones. | Para realizar pruebas y garantizar que la integración funcione, se requerirán credenciales de prueba. Después de este paso, necesitarás credenciales de producción para recibir pagos reales. |
 | Redirect URL | Dirección a la que deseas reenviar a los vendedores después de haberlos vinculado correctamente. | Esta es una dirección en tu servidor donde se recibirán los access tokens. |
 | URL de autenticación | Dirección a la que desea enviar a los vendedores para autorizar el acceso a datos privados. | Esta es una dirección en el servidor de Mercado Pago donde se otorga expresamente el permiso para acceder a los datos privados. |
@@ -22,14 +22,14 @@ Para generar el código de autorización, es preciso cumplir con los requisitos 
 >
 > Recuerda que utilizarás información sensible de tus vendedores. Asegúrate de guardarlos de forma segura. No los utilices en la URL de autenticación y gestiona todo el proceso únicamente desde tu servidor.
  
-1. Edita tu aplicación para que contenga tu Redirect URL. Consulta [Editar aplicación]().
+1. Edita tu aplicación para que contenga tu Redirect URL. Consulta [Editar aplicación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/dashboard/aplication).
 2. Envie a URL de autenticación para o vendedor cuja conta você deseja vincular à sua com os seguintes campos:
 
 |Descripción|URL| 
 |---|---|
 | URL de autenticación | https://auth.mercadopago.com.br/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com |
  
-  - **client_id**: edita tu aplicación para que contenga tu Redirect URL. Consulta [Editar aplicación]().
+  - **client_id**: edita tu aplicación para que contenga tu Redirect URL. Consulta [Editar aplicación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/dashboard/aplication).
   - **state**: reemplaza el valor "RANDOM_ID" con un identificador que sea único para cada intento y que no incluya información confidencial para que puedas identificar de quién es el código recibido.
   - **redirect_uri**: agrega la URL informada en el campo Redirect URL de tu aplicación.
  
@@ -54,4 +54,4 @@ Para generar el código de autorización, es preciso cumplir con los requisitos 
 >
 > Vea el flujo de renovación de un access token caducado.
 >
-> [Renovación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/dashboard/renewal)
+> [Renovación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/renewal)

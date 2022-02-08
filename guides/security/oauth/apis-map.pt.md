@@ -1,6 +1,6 @@
 # Mapa de APIs
  
-As ações a seguir estão disponíveis para OAuth.
+As ações a seguir estão disponíveis para **OAuth**.
  
 |Ação|Descrição|
 |---|---|

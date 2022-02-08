@@ -19,4 +19,4 @@ Os fluxos, também chamados de grant types, fazem referência ao modo no qual um
 >
 > Conheça o fluxo de autorização de acesso aos dados.
 >
-> [Criação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/dashboard/creation)
+> [Criação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/oauth/creation)

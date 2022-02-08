@@ -9,7 +9,7 @@ Actualmente existen diferentes formas en las que los **access token** y las **te
 * **Limpieza de sesión de usuario**: activa la actualización de todos los tokens de vendedores y temporal grants.
 * **Eliminación de la aplicación**: cuando se elimina una aplicación, se eliminan todos los tokens y temporal grants que le pertenecen.
  
-Puedes recibir notificaciones de webhook cada vez que un vendedor autorice o desautorice tu aplicación. Para configurarlos, lee [Creacióm](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/dashboard/creation) a través del Dashboard.
+Puedes recibir notificaciones de webhook cada vez que un vendedor autorice o desautorice tu aplicación. Para configurarlos, lee [Creacióm](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/creation) a través del Dashboard.
  
 > NEXT_STEP_CARD_ES
 >
@@ -17,4 +17,4 @@ Puedes recibir notificaciones de webhook cada vez que un vendedor autorice o des
 >
 > Vea videos tutoriales y acceda a las API.
 >
-> [Recursos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/dashboard/resources)
+> [Recursos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/resources)

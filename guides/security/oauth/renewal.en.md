@@ -12,7 +12,7 @@ The flow allows you to continue using a valid access token with the same charact
  
 To renew the **access token**:
  
-1. Send the `refresh_token` code, your **credentials**, and the `authorization_code` (see [Creation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/creation)) to the [/oauth/token](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/oauth/_oauth_token/post) endpoint with the `refresh_token` code in the `grant_type` parameter to receive a new response with a new access token and a new `refresh_token`.
+1. Send the `refresh_token` code, your **credentials**, and the `authorization_code` (see [Creation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/oauth/creation) to the [/oauth/token](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/oauth/_oauth_token/post) endpoint with the `refresh_token` code in the `grant_type` parameter to receive a new response with a new access token and a new `refresh_token`.
 2. Update the application with the access token received in the response.
  
 > WARNING
@@ -27,4 +27,4 @@ To renew the **access token**:
 >
 > See how to disabled and invalidated features.
 >
-> [Management](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/management)
+> [Management](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/oauth//management)

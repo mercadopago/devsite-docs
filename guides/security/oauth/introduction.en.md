@@ -19,4 +19,4 @@ The flujos, also called grant types, refer to the way in which an application ob
 >
 > Know the data access authorization flow.
 >
-> [Creation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/creation)
+> [Creation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/oauth/creation)
