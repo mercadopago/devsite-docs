@@ -8,7 +8,7 @@ Número de identificação (Mercado Pago ID) gerado automaticamente na criação
  
 ## Integrator ID
  
-Número único que o identifica como membro do **&lt;dev&gt;program** gerado automaticamente após sua primeira certificação bem sucedida. Ele e está localizado ao lado de seu Mercado Pago ID (user ID) e somente aparece após sua geração.
+Número único que o identifica como membro do **&lt;dev&gt;program** gerado automaticamente após sua primeira certificação bem sucedida. Ele está localizado ao lado de seu Mercado Pago ID (user ID) e é exibido somente após ser gerado.
  
 O **&lt;dev&gt;program** é um programa de benefícios para desenvolvedores, gratuito e exclusivo, criado para que você faça parte da nossa comunidade e receba benefícios extras. Para fazer parte, você deve ser aprovado em algumas das certificações oficiais do Mercado Pago.
  
