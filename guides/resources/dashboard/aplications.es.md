@@ -73,6 +73,6 @@ Configura las URL de producción y prueba desde las que se recibirán las notifi
 >
 > Cuentas que integras
 >
-> Vea informaciónes a cerca de cuentas de terceros que se le ha dado permiso para usar.
+> Accede a información acerca de cuentas de terceros que se te ha dado permiso para usar.
 >
 > [Cuentas que integras](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/dashboard/integration)
