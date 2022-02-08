@@ -52,6 +52,6 @@ Para generar el código de autorización, es preciso cumplir con los requisitos 
 >
 > Renovación del access token
 >
-> Vea el flujo de renovación de un access token caducado.
+> Lee sobre el flujo de renovación de un access token caducado.
 >
 > [Renovación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/dashboard/renewal)
