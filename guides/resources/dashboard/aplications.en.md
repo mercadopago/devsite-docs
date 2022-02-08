@@ -25,11 +25,11 @@ After creating your application, you can click on the "Edit" button to see the a
  
 * **Your application data**. This section defines the basic application data and includes:
  
- - *Application name (limit of 50 characters)*.
- - *Application description (limit of 150 characters)*.
- - *Application permissions*. This field displays the access options for your application, namely: read, offline access and write. By default, your application is created with all permissions enabled. You can disable permissions by clicking on their respective checkboxes.
- - *Redirect URL*. This field defines the URL (in https) where you want to receive the authorization code when your integration is configured as Marketplace or performed via OAuth. Check [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/oauth/introduction) for more details.
- - *Application blocking*. If blocked, it will indicate the reason for the application being blocked for use. Click on **Block Details** to check the solution for the reported block.
+ - Application name (limit of 50 characters).
+ - Application description (limit of 150 characters).
+ - Application permissions. This field displays the access options for your application, namely: read, offline access and write. By default, your application is created with all permissions enabled. You can disable permissions by clicking on their respective checkboxes.
+ - Redirect URL. This field defines the URL (in https) where you want to receive the authorization code when your integration is configured as Marketplace or performed via OAuth. Check [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/oauth/introduction) for more details.
+ - Application blocking. If blocked, it will indicate the reason for the application being blocked for use. Click on **Block Details** to check the solution for the reported block.
  
 * **Product to be integrated**. This section defines the product that should integrate with your application. The field "Available products" presents the list of available products to be integrated. By default, the value of this field is the value entered when creating the application, but you can change the chosen product without having to reconfigure the integration. This field works as an informational field for the product that the application refers to.
  
@@ -48,7 +48,7 @@ By clicking on an application card, you will have access to its details, includi
  
 * **Application name and ID**. In this area you can select the application you want based on its ID. Simply click on the number displayed and select the desired ID.
 * **My credentials**. Unique passwords with which we identify an integration in your account. The passwords are responsible for capturing payments in online stores and other applications. Check [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) for more information.
-* **Webhook notifications**. Notifications received via HTTP POST calls whenever there is a transaction-related event in your application. Check [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks) for more information.
+* **Webhook notifications**. Notifications received via HTTP POST calls whenever there is a transaction-related event in your application. Check [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks/webhooks) for more information.
  
 ### Application ID
 IDs are used to identify your applications and are created automatically whenever a new application is created.
@@ -62,12 +62,12 @@ By default, production credentials will be disabled until you enable them by cli
 >
 > Attention
 >
-> If you are not a developer, we recommend that you integrate Mercado Pago with your store through [plugins and platforms](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/gguides/plugins) and obtain your credentials through your Mercado Pago account in **Your business > Settings > Management and Administration > Credentials**. Check [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) for more information.
+> If you are not a developer, we recommend that you integrate Mercado Pago with your store through [plugins and platforms](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins) and obtain your credentials through your Mercado Pago account in **Your business > Settings > Management and Administration > Credentials**. Check [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) for more information.
  
 There is also the possibility to share the credentials with another Mercado Pago account, just click on **share my credentials** and fill in the email of the account that will receive the information.
  
 ### Webhook notifications
-Configure the production and test URLs from which webhook notifications will be received and select the events that will be responsible for generating these notifications. Check [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks) for more information.
+Configure the production and test URLs from which webhook notifications will be received and select the events that will be responsible for generating these notifications. Check [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks/webhooks) for more information.
 
 > NEXT_STEP_CARD_EN
 >

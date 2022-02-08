@@ -525,7 +525,7 @@ Notifications are automatically sent to inform you of any new payments and statu
 
 This will allow you to manage your inventories and keep your system in sync.
 
-To learn more about it, go to [Notifications.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn)
+To learn more about it, go to [Notifications.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/introduction)
 
 ## Test the integration
 

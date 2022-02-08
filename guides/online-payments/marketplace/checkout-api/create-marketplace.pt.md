@@ -303,7 +303,7 @@ Estes são alguns dos dados que você poderá encontrar dentro das notificaçõe
 | `action` | `application.deauthorized` | Confirma que o vendedor se desvinculou do aplicação. |
 | `data.id`| `string`| ID do vendedor vinculado ao aplicação. |
 
-Para saber mais, acesse [Notificações Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks).
+Para saber mais, acesse [Notificações Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks/webhooks).
 
 ## Devoluções e cancelamentos
 

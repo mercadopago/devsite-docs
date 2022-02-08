@@ -344,7 +344,7 @@ This is some of the data that you can find within the notifications:
 | `action` | `application.deauthorized` | Confirms that the seller has been unlinked from the application. |
 | `data.id`| `string`| ID of the seller linked to the application. |
 
-For more information, go to [Webhooks Notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks).
+For more information, go to [Webhooks Notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks/webhooks).
 
 ## Refunds and cancellations
 
