@@ -13,6 +13,6 @@ El Dashboard se compone de diferentes secciones, cada una con un propósito dife
 >
 > Encabezado
 >
-> Vea el resumen de sus datos.
+> Accede al resumen de tus datos.
 >
 > [Encabezado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/dashboard/header)
