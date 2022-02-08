@@ -6,7 +6,7 @@ Los **certificados** se pueden descargar en los archivos locales de tu computado
  
 Las **insignias** actúan como una insignia para identificar a los desarrolladores que ya completaron nuestro proceso de certificación oficial y, al igual que los certificados, tienen diferentes colores para cada tipo de certificación. También pueden descargarse a los archivos locales de tu computadora y agregarse a un perfil profesional a través de HTML, por ejemplo.
  
-Consulte la página [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/developer-program) para obtener más información.
+Consulta la página [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/developer-program) para obtener más información.
 
 > PREV_STEP_CARD_PT
 >
