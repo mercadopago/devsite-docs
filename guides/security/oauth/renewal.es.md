@@ -8,7 +8,7 @@ El flujo permite continuar utilizando un access token válido con las mismas car
 >
 > Importante
 >
-> Solo es posible utilizar este flujo si la aplicación contiene el alcance `offline_access` y el vendedor ha autorizado previamente esta acción.
+> Solo es posible utilizar este flujo si la aplicación contiene el scope `offline_access` y el vendedor ha autorizado previamente esta acción.
  
 Para renovar el **access token**:
  
