@@ -27,7 +27,7 @@ Después de crear tu aplicación, puedes hacer clic en el botón "Editar" para v
  
  - *Nombre de la aplicación (límite de 50 caracteres)*.
  - *Descripción de la aplicación (límite de 150 caracteres)*.
- - *Permisos de la aplicación*. Este campo muestra las opciones de acceso para tu aplicación, siendo: lectura (read), acceso sin conexión (offline access) y escritura (write). De forma predeterminada, tu aplicación se crea con todos los permisos habilitados. Pero puedes deshabilitar un permiso haciendo clic en la casilla de verificación del que deseas cambiar.
+ - *Permisos de la aplicación*. Este campo muestra las opciones de acceso para tu aplicación, las cuales son: lectura (read), acceso sin conexión (offline access) y escritura (write). De forma predeterminada, tu aplicación se crea con todos los permisos habilitados. Pero puedes deshabilitar un permiso haciendo clic en la casilla de verificación del que deseas cambiar.
  - *Redirigir URL*. Este campo define la URL en la que deseas recibir el código de autorización cuando tu integración se configura como Marketplace o se realiza a través de OAuth. Vea [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/introduction) para más detalles.
  - *Bloqueo de aplicaciones*. Si lo hay, indicará el motivo por el cual la aplicación está bloqueada para su uso. Haz clic en **Detalles del bloque** para verificar [la solución](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support/23066) para el bloqueo informado.
  
