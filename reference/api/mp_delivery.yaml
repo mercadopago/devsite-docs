@@ -14,18 +14,24 @@ paths:
       parameters:
         - name: shipment_id
           in: path
-          description: Shipment ID of the order that the operation to accept an order must perform. 
+          description: Unique ID that identifies the shipment of the order to be performed by the operation to accept an order. 
           required: true
           schema:
             type: string
             example: 41034141533
         - in: header
           name: access-token
-          description: Access token generated from the seller by the authentication process (OAuth).
+          description: "Access token generated from the seller by the authentication process (OAuth). This security code identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
+          enum:
+            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+            - Client ID -- 1585551492
+            - Creation date (MMddHH) -- 030918
+            - Security hash -- 25######3458
+            - User ID -- 2880736
+          required: true
           schema:
             type: string
-            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"
-          required: true
+            example: "APP_USR-3213901234561-124232-2cb82fs4f17683d1b2cf36d4bf-8138341993"  
       requestBody:
         content:
           application/json:
@@ -34,7 +40,7 @@ paths:
               properties:
                 status:
                   type: string
-                  description: Order status that must have the value "accepted" for this endpoint. 
+                  description: This property indicates the order status, which must have the value "accepted" for this endpoint. 
                   example: "accepted"
       responses:
         '200':
@@ -53,18 +59,24 @@ paths:
       tags:
         - $ref: '#/tags/mp-delivery'
       summary: Print/get order coupon
-      description: This endpoint is used to accept an order and, in addition, this endpoint returns the PDF file for the order coupon.
+      description: This endpoint is used to accept an order and, in addition, it returns the PDF file for the order coupon
       parameters:
         - name: shipment_id
           in: path
-          description: Shipment ID of the order that the operations to accept and print an order must perform. 
+          description: Unique ID that identifies the shipment of the order to be performed by the operations to accept and print an order. 
           required: true
           schema:
             type: string
             example: 41034141533
         - name: access-token
           in: header
-          description: Access token generated from the seller by the authentication process (OAuth).
+          description: "Access token generated from the seller by the authentication process (OAuth). This security code identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
+          enum:
+            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+            - Client ID -- 1585551492
+            - Creation date (MMddHH) -- 030918
+            - Security hash -- 25######3458
+            - User ID -- 2880736
           required: true
           schema:
             type: string
@@ -83,18 +95,24 @@ paths:
       tags:
         - $ref: '#/tags/mp-delivery'
       summary: Cancel order
-      description: This endpoint cancels an order, changing its status.
+      description: This endpoint cancels an order, changing its status
       parameters:
         - name: shipment_id
           in: path
-          description: Shipment ID of the order that the operations to accept and print an order must perform. 
+          description: Unique ID that identifies the shipment of the order to be performed by the operations to accept and print an order. 
           required: true
           schema:
             type: string
             example: 41034141533
         - name: access-token
           in: header
-          description: Access token generated from the seller by the authentication process (OAuth).
+          description: "Access token generated from the seller by the authentication process (OAuth). This security code identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
+          enum:
+            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+            - Client ID -- 1585551492
+            - Creation date (MMddHH) -- 030918
+            - Security hash -- 25######3458
+            - User ID -- 2880736
           required: true
           schema:
             type: string
@@ -107,7 +125,7 @@ paths:
               properties:
                 status:
                   type: string
-                  description: Order status that must have the value "cancelled" for this endpoint.
+                  description: This property indicates the order status, which must have the value "cancelled" for this endpoint.
                   example: "cancelled"
       responses:
         '200':
@@ -126,18 +144,24 @@ paths:
       tags:
         - $ref: '#/tags/mp-delivery'
       summary: Get all stores
-      description: This endpoint returns all stores owned by a user, using the User ID as search filter.
+      description: This endpoint returns all stores owned by a user, using the User ID as search filter
       parameters:
         - name: seller_id
           in: path
-          description: User ID that will be used to consult stores.
+          description: Unique ID that identifies the user that will be used as search filter to consult stores.
           required: true
           schema:
             type: string
             example: 41562083
         - name: access-token
           in: header
-          description: Access token generated from the seller by the authentication process (OAuth).
+          description: "Access token generated from the seller by the authentication process (OAuth). This security code identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
+          enum:
+            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+            - Client ID -- 1585551492
+            - Creation date (MMddHH) -- 030918
+            - Security hash -- 25######3458
+            - User ID -- 2880736
           required: true
           schema:
             type: string
@@ -156,11 +180,11 @@ paths:
                     id:
                       type: number
                       example: 41517088
-                      description: Store ID.
+                      description: Unique ID that identifies the store.
                     user_id:
                       type: number
                       example: 813887163
-                      description: User ID who owns the store.
+                      description: Unique ID that identifies the user who owns the store.
                     description:
                       type: string
                       example: "Doc's grocery store"
@@ -259,25 +283,31 @@ paths:
                           example: -46.64532809999999
                     external_id:
                       type: string
-                      description: An optional field that referes to a custom external ID of the store. This value can be updated by the endpoint that update External ID. 
+                      description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs. 
                       example: "A15154DE"
   /proximity-integration/stores/{StoreID}:
     get:
       tags:
         - $ref: '#/tags/mp-delivery'
       summary: Get store
-      description: This endpoint is used to get a specific store using its ID as search filter.
+      description: This endpoint is used to get a specific store using its ID as search filter
       parameters:
         - name: StoreID
           in: path
-          description: Store ID that will be used as search parameter. 
+          description: Unique ID that identifies the store that will be used as search parameter. 
           required: true
           schema:
             type: string
             example: 185522600
         - name: access-token
           in: header
-          description: Access token generated from the seller by the authentication process (OAuth).
+          description: "Access token generated from the seller by the authentication process (OAuth). This security code identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
+          enum:
+            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+            - Client ID -- 1585551492
+            - Creation date (MMddHH) -- 030918
+            - Security hash -- 25######3458
+            - User ID -- 2880736
           required: true
           schema:
             type: string
@@ -293,11 +323,11 @@ paths:
                   id:
                     type: number
                     example: 41517088
-                    description: Store ID  
+                    description: Unique ID that identifies the store.  
                   user_id:
                     type: number
                     example: 813887163
-                    description: User ID who owns the store
+                    description: Unique ID that identifies the user who owns the store.
                   description:
                     type: string
                     example: "Doc's grocery store"
@@ -405,25 +435,31 @@ paths:
                         example: -46.64532809999999
                   external_id:
                     type: string
-                    description: An optional field, that referes to a custom external ID of the store. This value can be updated by the endpoint that update External ID. 
+                    description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs. 
                     example: "A15154DE"
   /proximity-integration/stores/{StoreID}/external_id:
     put:
       tags:
         - $ref: '#/tags/mp-delivery'
       summary: Update external ID
-      description: This endpoint  updates the External ID value. The External ID value is an optonal field.
+      description: This endpoint updates the External ID value. The External ID value is an optonal field
       parameters:
         - name: StoreID
           in: path
-          description: ID referring to the store whose External ID will be updated.
+          description: Unique ID that identifies the store whose External ID will be updated.
           required: true
           schema:
             type: string
             example: 185522600
         - name: access-token
           in: header
-          description: Access token generated from the seller by the authentication process (OAuth).
+          description: "Access token generated from the seller by the authentication process (OAuth). This security code identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
+          enum:
+            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+            - Client ID -- 1585551492
+            - Creation date (MMddHH) -- 030918
+            - Security hash -- 25######3458
+            - User ID -- 2880736
           required: true
           schema:
             type: string
@@ -449,11 +485,11 @@ paths:
                   id:
                     type: number
                     example: 41517088
-                    description: Store ID  
+                    description: Unique ID that identifies the store.  
                   user_id:
                     type: number
                     example: 813887163
-                    description: User ID who owns the store
+                    description: Unique ID that identifies the user who owns the store.
                   description:
                     type: string
                     example: "Doc's grocery store"
@@ -553,18 +589,18 @@ paths:
                         example: -46.64532809999999
                   external_id:
                     type: string
-                    description: An optional field, that referes to a custom external ID refent to the store.
+                    description: This optional property indicates the custom external ID of the store.
                     example: "9320001PC21"
   /proximity-integration/users/{SellerID}/stores/external_id/{ExternalID}:
     get:
       tags:
         - $ref: '#/tags/mp-delivery'
       summary: Get store by external ID
-      description: This endpoint gets stores by the external ID that was previously registered.
+      description: This endpoint gets stores by the external ID that was previously registered
       parameters:
         - name: SellerID
           in: path
-          description: User ID who owns the store.
+          description: Unique ID that identifies the User who owns the store.
           required: true
           schema:
             type: string
@@ -578,7 +614,13 @@ paths:
             example: "9320001PC21"
         - name: access-token
           in: header
-          description: Access token generated from the seller by the authentication process (OAuth).
+          description: "Access token generated from the seller by the authentication process (OAuth). This security code identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
+          enum:
+            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+            - Client ID -- 1585551492
+            - Creation date (MMddHH) -- 030918
+            - Security hash -- 25######3458
+            - User ID -- 2880736
           required: true
           schema:
             type: string
@@ -598,7 +640,7 @@ paths:
                   user_id:
                     type: number
                     example: 813887163
-                    description: User ID who owns the store.
+                    description: Unique ID that identifies the user who owns the store.
                   description:
                     type: string
                     example: "Doc's grocery store"
@@ -697,25 +739,31 @@ paths:
                         example: -46.64532809999999
                   external_id:
                     type: string
-                    description: An optional field, that referes to a custom external ID of the store.
+                    description: This optional property indicates the custom external ID of the store.
                     example: "9320001PC21"
   /proximity-integration/stores/{store_id}/status:
     put:
       tags:
         - $ref: '#/tags/mp-delivery'
       summary: Update store status
-      description: This endpoint changes the operation status of a store.
+      description: This endpoint changes the operation status of a store
       parameters:
         - name: store_id
           in: path
-          description: ID of the store whose status will be updated.
+          description: Unique ID that identifies the store whose status will be updated.
           required: true
           schema:
             type: string
             example: 4101533
         - name: access-token
           in: header
-          description: Access token generated from the seller by the authentication process (OAuth).
+          description: "Access token generated from the seller by the authentication process (OAuth). This security code identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
+          enum:
+            - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+            - Client ID -- 1585551492
+            - Creation date (MMddHH) -- 030918
+            - Security hash -- 25######3458
+            - User ID -- 2880736
           required: true
           schema:
             type: string
@@ -745,11 +793,11 @@ paths:
                   id:
                     type: number
                     example: 41517088
-                    description: Store ID  
+                    description: Unique ID that identifies the store.  
                   user_id:
                     type: number
                     example: 813887163
-                    description: User ID who owns the store.
+                    description: Unique ID that identifies the user who owns the store.
                   description:
                     type: string
                     example: "Doc's grocery store"
@@ -857,5 +905,5 @@ paths:
                         example: -46.64532809999999
                   external_id:
                     type: string
-                    description: An optional field, that referes to a custom external ID of the store. This value can be updated by the endpoint that update External ID.
+                    description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs.
                     example: "A15154DE"
