@@ -9,7 +9,7 @@ Los flujos, también llamados grant types, se refieren a la forma en que una apl
  
 > WARNING
 >
-> Important
+> Importante
 >
 > El uso del protocolo OAuth difiere del proceso de uso compartido de credenciales. OAuth no aborda cuestiones relacionadas con la autenticación del cliente, ni información relacionada con la misma, su responsabilidad radica en los métodos de obtención de un token para acceder a un recurso.
  
