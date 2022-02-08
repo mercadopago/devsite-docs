@@ -73,6 +73,6 @@ Configure the production and test URLs from which webhook notifications will be 
 >
 > Accounts you integrate
 >
-> Check informations about regarding third-party accounts that you have been given permission to use.
+> Check information regarding third-party accounts that you have been given permission to use.
 >
 > [Accounts you integrate](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/integration)
