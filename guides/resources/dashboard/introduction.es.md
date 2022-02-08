@@ -5,7 +5,7 @@ El [Dashboard](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel) es tu e
 El Dashboard se compone de diferentes secciones, cada una con un propósito diferente.
  
 * **Encabezado**: resumen de tus datos personales como integrador de Mercado Pago.
-* **Tus aplicaciones**: muestra sus aplicaciones creadas y le permite crear otras nuevas.
+* **Tus aplicaciones**: muestra tus aplicaciones creadas y te permite crear otras nuevas.
 * **Cuentas que integras**: información a cerca de cuentas de terceros que se le ha dado permiso para usar.
 * **Tus certificaciones**: información a cerca de sus certificaciones en nuestro programa de desarrolladores certificados (**&lt;dev&gt;program**).
 
