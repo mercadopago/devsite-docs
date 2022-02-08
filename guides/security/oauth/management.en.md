@@ -1,4 +1,4 @@
-Management
+# Management
  
 Currently there are different ways in which the **access tokens** and **temporal grants** created can be disabled and invalidated to authorize requests for protected resources or to exchange them for new tokens.
  
