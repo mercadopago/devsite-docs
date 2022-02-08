@@ -25,6 +25,6 @@ Para renovar el **access token**:
 >
 > Administración de OAuth.
 >
-> Vea como deshabilitar e invalidar funciones.
+> Aprende cómo deshabilitar e invalidar funciones.
 >
 > [Administración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/management)
