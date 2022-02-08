@@ -1,6 +1,6 @@
 # Encabezado
  
-El encabezado contiene su identificación como usuario integrante de Mercado Pago. Su DNI se compone de dos DNI.
+El encabezado contiene tu identificación como usuario integrante de Mercado Pago. Tu ID se compone de dos ID.
  
 ## User ID
  
