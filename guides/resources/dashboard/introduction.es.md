@@ -6,7 +6,7 @@ El Dashboard se compone de diferentes secciones, cada una con un propósito dife
  
 * **Encabezado**: resumen de tus datos personales como integrador de Mercado Pago.
 * **Tus aplicaciones**: muestra tus aplicaciones creadas y te permite crear otras nuevas.
-* **Cuentas que integras**: información a cerca de cuentas de terceros que se le ha dado permiso para usar.
+* **Cuentas que integras**: información acerca de cuentas de terceros que se te ha dado permiso para usar.
 * **Tus certificaciones**: información a cerca de sus certificaciones en nuestro programa de desarrolladores certificados (**&lt;dev&gt;program**).
 
 > NEXT_STEP_CARD_ES
