@@ -10,7 +10,7 @@ To generate the authorization code, the following requirements must be met.
  
 | Requirements | Description | Specifications |
 | --- | --- | --- |
-| Seller Mercado Pago Accounts | Mercado Pago seller accounts will be required. One for you and one for the seller. | Seller account in Mercado Pago. If you don't have one, [clik here](https://www.mercadopago[FAKER][URL[DOMAIN]/hub/registration/landing) to create it. |
+| Mercado Pago Seller Accounts | Mercado Pago seller accounts will be required. One for you and one for the seller. | Seller account in Mercado Pago. If you don't have one, [click here](https://www.mercadopago[FAKER][URL[DOMAIN]/hub/registration/landing) to create it. |
 | Application | Applications are the different integrations contained in one or more stores. You can create an application for each solution you implement, in order to have everything organized and maintain control to facilitate management. | To use OAuth you will need to have an application created. See the [Dashboard](https://www.mercadopago[FAKER][URL[DOMAIN]/developers/en/guides/resources/dashboard) documentation for information on how to create an app. |
 | Credentials | The [credenciales](https://www.mercadopago[FAKER][URL[DOMAIN]/developers/en/guides/resources/credentials) are unique passwords with which we identify an integration in your account, and are used to securely capture payments in virtual stores and other applications. | To test and ensure the integration works, test credentials will be required. After this step, you will need production credentials to receive actual payments. |
 | Redirect URL | Address you want to forward sellers to after successfully linking them. | This is an address on your server where access tokens will be received. |
