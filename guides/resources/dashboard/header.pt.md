@@ -1,6 +1,6 @@
 # Cabeçalho
  
-No cabeçalho consta sua identificação enquanto usuário integrador do Mercado Pago. Sua identificação é composta por dois IDs.
+No cabeçalho consta sua identificação enquanto usuário integrador do Mercado Pago. Esta identificação é composta por dois IDs.
  
 ## User ID
  
