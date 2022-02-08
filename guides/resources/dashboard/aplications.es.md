@@ -34,7 +34,7 @@ Después de crear tu aplicación, puedes hacer clic en el botón "Editar" para v
 * **Producto a integrar**. Esta sección define el producto que se integrará en tu aplicación. El campo "Productos disponibles" presenta la lista de productos disponibles para integrar. De forma predeterminada, el valor de este campo se completa con el valor ingresado al crear la aplicación, pero puedes cambiar el producto elegido sin tener que reconfigurar la integración. Este campo sirve como campo informativo para el producto al que se refiere la aplicación.
  
 ### Elimina una aplicación
-Si por alguna razón necesitas eliminar una aplicación, simplemente haz clic en "Eliminar" y confirma la acción en el cuadro de diálogo.
+Si necesita eliminar una aplicación en su Dashboard, haz clic en los 3 puntos verticales en la tarjeta de la aplicación, seleccione la opción **Eliminar** y confirme la acción en el cuadro de diálogo.
  
 > WARNING
 >
@@ -54,7 +54,9 @@ Al hacer clic en la tarjeta de una aplicación, tendrás acceso a los detalles d
 Los ID se utilizan para identificar tus aplicaciones y se crean automáticamente cada vez que se crea una nueva aplicación.
  
 ### Credenciales
-Se presentan las credenciales de producción y prueba necesarias para acceder a tu aplicación. Las **credenciales de prueba** deben usarse para probar tus integraciones y se pueden usar junto con tarjetas de crédito de prueba para simular recibos de tarjetas, mientras que las **credenciales de producción** se usan para recibir pagos.
+Se presentan las credenciales de producción y prueba necesarias para acceder a tu aplicación. 
+
+Las **credenciales de prueba** deben usarse para probar tus integraciones y se pueden usar junto con tarjetas de crédito de prueba para simular recibos de tarjetas, mientras que las **credenciales de producción** se usan para recibir pagos.
  
 De forma predeterminada, las credenciales de producción estarán deshabilitadas hasta que las habilites haciendo clic en **Habilitar credenciales**, completes la información de su empresa y aceptes nuestros términos y condiciones.
  

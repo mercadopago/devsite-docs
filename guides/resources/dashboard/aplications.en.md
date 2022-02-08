@@ -34,8 +34,8 @@ After creating your application, you can click on the "Edit" button to see the a
 * **Product to be integrated**. This section defines the product that should integrate with your application. The field "Available products" presents the list of available products to be integrated. By default, the value of this field is the value entered when creating the application, but you can change the chosen product without having to reconfigure the integration. This field works as an informational field for the product that the application refers to.
  
 ### Delete application
-If you need to delete an application for any reason, click on "Delete" and confirm the action in the dialog box.
- 
+If you need to delete an application in your Dashboard, click on the 3 vertical dots on the application card, select the **Delete** option and confirm the action in the dialog box. 
+
 > WARNING
 >
 > Attention
@@ -54,7 +54,9 @@ By clicking on an application card, you will have access to its details, includi
 IDs are used to identify your applications and are created automatically whenever a new application is created.
  
 ### Credentials
-The production and test credentials needed to access your application are presented. **Test credentials** check your integrations and can be used together with test users and test credit cards to simulate card receipts, while **Production Credentials** are used to receive payments.
+The production and test credentials needed to access your application are presented. 
+
+**Test credentials** check your integrations and can be used together with test users and test credit cards to simulate card receipts, while **Production Credentials** are used to receive payments.
  
 By default, production credentials will be disabled until you enable them by clicking **Enable Credentials**, fill in your business information and accept our Terms and conditions.
  

@@ -34,7 +34,7 @@ Você pode clicar no botão "Editar" para ver as configurações avançadas que 
 * **Produto a ser integrado**. Esta seção define o produto a ser integrado na sua aplicação. O campo "Produtos disponíveis" apresenta a lista de produtos disponíveis a serem integrados. Por padrão, o valor deste campo é preenchido com o valor inserido no momento da criação da aplicação, mas você pode alterar o produto escolhido sem a necessidade de reconfigurar a integração. Este campo serve como um informativo do produto ao qual a aplicação se refere.
  
 ### Excluir aplicação
-Caso você precise por algum motivo, excluir uma aplicação, basta clicar em "Excluir" e confirmar a ação na caixa de diálogo.
+Caso seja necessário excluir uma aplicação em seu Dashboard, clique nos 3 pontos verticais na card da aplicação, selecione a opção **Excluir** e confirme a ação na caixa de diálogo.
  
 > WARNING
 >
@@ -54,7 +54,9 @@ Ao clicar no card de uma aplicação, você terá acesso aos seus detalhes, incl
 Os IDs servem para que você possa identificar as suas aplicações e são criados automaticamente sempre que uma nova aplicação for criada.
  
 ### Credenciais
-São apresentadas as credenciais de produção e de teste necessárias para acessar a sua aplicação. As **credenciais de teste** devem ser usadas para testar suas integrações e podem ser utilizadas em conjunto com cartões de crédito de teste para simular recebimentos via cartão, enquanto as **credenciais de produção** são usadas para receber pagamentos.
+São apresentadas as credenciais de produção e de teste necessárias para acessar a sua aplicação. 
+
+As **credenciais de teste** devem ser usadas para testar suas integrações e podem ser utilizadas em conjunto com cartões de crédito de teste para simular recebimentos via cartão, enquanto as **credenciais de produção** são usadas para receber pagamentos.
  
 Por padrão, as credenciais de produção estarão desativadas até que você as habilite clicando em **Ativar credenciais**, preencha as informações de seu negócio e aceite os nossos Termos e condições.
  
@@ -67,7 +69,7 @@ Por padrão, as credenciais de produção estarão desativadas até que você as
 Também há a possibilidade de compartilhar as credenciais com outra conta do Mercado Pago, basta clicar em **compartilhar minhas credenciais** e preencher com o e-mail da conta que receberá as informações.
  
 ### Notificações webhook
-Configure as URLs de produção e teste da qual serão recebidas as notificações webhook e selecione os eventos que serão responsáveis por gerar essas notificações. Leia [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks/webhooks) para mais informações para mais informações.
+Configure as URLs de produção e teste da qual serão recebidas as notificações webhook e selecione os eventos que serão responsáveis por gerar essas notificações. Leia [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks/webhooks) para mais informações.
 
 > NEXT_STEP_CARD_PT
 >

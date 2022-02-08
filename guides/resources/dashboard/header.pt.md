@@ -4,7 +4,7 @@ No cabeçalho consta sua identificação enquanto usuário integrador do Mercado
  
 ## User ID
  
-Número de identificação (Mercado Pago ID) gerado automaticamente na criação da conta no Mercado Pago. É um número único o ID que identifica o usuário Mercado Pago.
+Número de identificação (Mercado Pago ID) gerado automaticamente na criação da conta no Mercado Pago. É um número único que identifica o usuário Mercado Pago.
  
 ## Integrator ID
  
