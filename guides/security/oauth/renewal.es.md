@@ -23,7 +23,7 @@ Para renovar el **access token**:
  
 > NEXT_STEP_CARD_ES
 >
-> Administración del OAuth.
+> Administración de OAuth.
 >
 > Vea como deshabilitar e invalidar funciones.
 >
