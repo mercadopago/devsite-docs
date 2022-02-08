@@ -67,7 +67,7 @@ De forma predeterminada, las credenciales de producción estarán deshabilitadas
 También existe la posibilidad de compartir las credenciales con otra cuenta de Mercado Pago, solo haz clic en **compartir mis credenciales** y completa el correo electrónico de la cuenta que recibirá la información.
  
 ### Notificaciones de webhook
-Configure las URL de producción y prueba desde las que se recibirán las notificaciones de webhook y seleccione los eventos que serán responsables de generar estas notificaciones. Lee [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks) para más información.
+Configura las URL de producción y prueba desde las que se recibirán las notificaciones de webhook y selecciona los eventos que serán responsables de generar estas notificaciones. Lee [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks) para más información.
 
 > NEXT_STEP_CARD_ES
 >
