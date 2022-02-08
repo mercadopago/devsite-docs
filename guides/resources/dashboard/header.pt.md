@@ -12,7 +12,7 @@ Número único que o identifica como membro do **&lt;dev&gt;program** gerado aut
  
 O **&lt;dev&gt;program** é um programa de benefícios para desenvolvedores, gratuito e exclusivo, criado para que você faça parte da nossa comunidade e receba benefícios extras. Para fazer parte, você deve ser aprovado em algumas das certificações oficiais do Mercado Pago.
  
-Verifique a página do [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) e realize a certificação no produto desejado, receba seu ID de integrador e o insira nas suas integrações para receber benefícios extras.
+Acesse a página do [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) e realize a certificação no produto desejado, receba seu ID de integrador e insira-o nas suas integrações para receber benefícios extras.
 
 > NEXT_STEP_CARD_PT
 >
