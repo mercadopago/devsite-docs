@@ -51,7 +51,7 @@ Al hacer clic en la tarjeta de una aplicación, tendrás acceso a los detalles d
 * **Notificaciones de webhook**. Notificaciones que puedes recibir a través de llamadas HTTP POST siempre que haya un evento relacionado con una transacción en tu aplicación. Lee [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks) para obtener más información.
  
 ### ID de aplicación
-Los ID se utilizan para identificar sus aplicaciones y se crean automáticamente cada vez que se crea una nueva aplicación.
+Los ID se utilizan para identificar tus aplicaciones y se crean automáticamente cada vez que se crea una nueva aplicación.
  
 ### Credenciales
 Se presentan las credenciales de producción y prueba necesarias para acceder a su aplicación. Las **credenciales de prueba** deben usarse para probar sus integraciones y se pueden usar junto con tarjetas de crédito de prueba para simular recibos de tarjetas, mientras que las **credenciales de producción** se usan para recibir pagos.
