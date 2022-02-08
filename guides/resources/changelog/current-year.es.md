@@ -11,13 +11,13 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 > CHANGELOG
 >
-> Eliminaremos el historial de pagos de prueba en el modo Sandbox
+> Sandbox: limpiaremos el historial de pagos de prueba
 >
-> NEWS: NOVIDADES
+> NEWS: NOVEDADES
 >
 > PRODUCT: ALL
- 
-A partir de **abril** se eliminará el historial de pagos de prueba de 2021 en **modo Sandbox** y solo trabajaremos con datos de 2022. Es importante señalar que esto no será válido para **pagos de pruebas realizadas en ambiente de producción**.
+
+A partir de **abril** se eliminará el historial de pagos de prueba de años anteriores en **modo Sandbox** y solo trabajaremos con datos de 2022. Es importante señalar que esto no será válido para **pagos de pruebas realizadas en ambiente de producción**.
 
 
 ## 27 de enero

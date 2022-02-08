@@ -10,13 +10,13 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 > CHANGELOG
 >
-> We will delete test payment history in Sandbox mode
+> Sandbox: we will clean the test payment history
 >
-> NEWS: NOVIDADES
+> NEWS: NEWS
 >
 > PRODUCT: ALL
  
-As of **April**, the 2021 history of test payments in **Sandbox mode** will be deleted and we will only work with data from 2022. It is important to note that this will not be valid for **payments of tests performed in production environment**.
+As of **April**, the history of previous years of test payments in **Sandbox mode** will be deleted and we will only work with data from 2022. It is important to note that this will not be valid for **payments tests performed in a production environment**.
 
 
 ## January 2022
