@@ -15,6 +15,6 @@ Puedes recibir notificaciones de webhook cada vez que un vendedor autorice o des
 >
 > Recursos adicionales
 >
-> Vea videos tutoriales y acceda a las API.
+> Accede a videos tutoriales y a las APIs.
 >
 > [Recursos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/resources)
