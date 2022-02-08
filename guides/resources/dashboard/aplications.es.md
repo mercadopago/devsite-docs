@@ -40,7 +40,7 @@ Si por alguna razón necesitas eliminar una aplicación, simplemente haz clic en
 >
 > Atención
 >
-> Tenga en cuenta que cuando eliminas una aplicación, tu tienda ya no recibirá pagos a través de la integración asociada con la aplicación y se perderán todas las configuraciones, incluidas las credenciales asociadas. Una vez que se elimina una aplicación, no se puede recuperar.
+> Ten en cuenta que cuando eliminas una aplicación, tu tienda ya no recibirá pagos a través de la integración asociada con la aplicación y se perderán todas las configuraciones, incluidas las credenciales asociadas. Una vez que se elimina una aplicación, no se puede recuperar.
  
 ## Detalles de la aplicación
  
