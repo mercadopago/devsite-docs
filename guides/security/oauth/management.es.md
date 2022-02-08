@@ -1,6 +1,6 @@
 # Administración
  
-Actualmente existen diferentes formas en las que los **access token** y las **temporal grant** creadas se pueden deshabilitar e invalidar para autorizar solicitudes de recursos protegidos o para cambiarlos por nuevos tokens.
+Actualmente existen diferentes formas en las que los **access tokens** y las **temporal grants** creadas se pueden deshabilitar e invalidar para autorizar solicitudes de recursos protegidos o para cambiarlos por nuevos tokens.
  
 * **Expiración**: después del tiempo establecido en el momento de la creación, el token caduca automáticamente y no se puede obtener.
 * **Cambio de contraseña de usuario**: existen flujos de cambio de contraseña en los que el vendedor puede revocar todas tus credenciales, incluidos los tokens asociados y las temporal grants.
@@ -15,6 +15,6 @@ Puedes recibir notificaciones de webhook cada vez que un vendedor autorice o des
 >
 > Recursos adicionales
 >
-> Vea videos tutoriales y acceda a las API.
+> Accede a videos tutoriales y a las APIs.
 >
 > [Recursos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/resources)

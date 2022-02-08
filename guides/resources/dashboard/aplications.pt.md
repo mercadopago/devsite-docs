@@ -38,7 +38,7 @@ Caso seja necessário excluir uma aplicação em seu Dashboard, clique nos 3 pon
  
 > WARNING
 >
-> Atenção
+> Importante
 >
 > Tenha em conta que ao excluir uma aplicação, sua loja deixará de receber pagamentos através da integração associada à aplicação e todas as configurações serão perdidas, incluindo as credenciais associadas. Uma vez excluída uma aplicação, não é possível recuperá-la.
  
@@ -51,7 +51,7 @@ Ao clicar no card de uma aplicação, você terá acesso aos seus detalhes, incl
 * **Notificações webhook**. Eventos que você pode receber através chamadas POST HTTP toda vez que houver um evento relacionado a transações na sua aplicação. Leia [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks/webhooks) para mais informações para mais informações.
  
 ### ID da aplicação
-Os IDs servem para que você possa identificar as suas aplicações e são criados automaticamente sempre que uma nova aplicação for criada.
+Os IDs da aplicação são números de identificação criados automaticamente que permitem localizar as aplicações sempre que uma nova aplicação for criada.
  
 ### Credenciais
 São apresentadas as credenciais de produção e de teste necessárias para acessar a sua aplicação. 

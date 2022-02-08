@@ -8,7 +8,7 @@ El flujo permite continuar utilizando un access token válido con las mismas car
 >
 > Importante
 >
-> Solo es posible utilizar este flujo si la aplicación contiene el alcance `offline_access` y el vendedor ha autorizado previamente esta acción.
+> Solo es posible utilizar este flujo si la aplicación contiene el scope `offline_access` y el vendedor ha autorizado previamente esta acción.
  
 Para renovar el **access token**:
  
@@ -23,8 +23,8 @@ Para renovar el **access token**:
  
 > NEXT_STEP_CARD_ES
 >
-> Administración del OAuth.
+> Administración de OAuth.
 >
-> Vea como deshabilitar e invalidar funciones.
+> Aprende cómo deshabilitar e invalidar funciones.
 >
 > [Administración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/management)
