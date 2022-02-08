@@ -25,11 +25,11 @@ Después de crear tu aplicación, puedes hacer clic en el botón "Editar" para v
  
 * **Los datos de tu aplicación**. Esta sección define los datos básicos de la aplicación e incluye:
  
- - Nombre de la aplicación (límite de 50 caracteres).
- - Descripción de la aplicación (límite de 150 caracteres).
- - Permisos de la aplicación. Este campo muestra las opciones de acceso para tu aplicación, las cuales son: lectura (read), acceso sin conexión (offline access) y escritura (write). De forma predeterminada, tu aplicación se crea con todos los permisos habilitados. Pero puedes deshabilitar un permiso haciendo clic en la casilla de verificación del que deseas cambiar.
- - Redirigir URL. Este campo define la URL en la que deseas recibir el código de autorización cuando tu integración se configura como Marketplace o se realiza a través de OAuth. Lee [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/introduction) para más detalles.
- - Bloqueo de aplicaciones. Si lo hay, indicará el motivo por el cual la aplicación está bloqueada para su uso. Haz clic en **Detalles del bloqueo** para verificar [la solución](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support/23066) para el bloqueo informado.
+  - Nombre de la aplicación (límite de 50 caracteres).
+  - Descripción de la aplicación (límite de 150 caracteres).
+  - Permisos de la aplicación. Este campo muestra las opciones de acceso para tu aplicación, las cuales son: lectura (read), acceso sin conexión (offline access) y escritura (write). De forma predeterminada, tu aplicación se crea con todos los permisos habilitados. Pero puedes deshabilitar un permiso haciendo clic en la casilla de verificación del que deseas cambiar.
+  - Redirigir URL. Este campo define la URL en la que deseas recibir el código de autorización cuando tu integración se configura como Marketplace o se realiza a través de OAuth. Lee [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/introduction) para más detalles.
+  - Bloqueo de aplicaciones. Si lo hay, indicará el motivo por el cual la aplicación está bloqueada para su uso. Haz clic en **Detalles del bloqueo** para verificar [la solución](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support/23066) para el bloqueo informado.
  
 * **Producto a integrar**. Esta sección define el producto que se integrará en tu aplicación. El campo "Productos disponibles" presenta la lista de productos disponibles para integrar. De forma predeterminada, el valor de este campo se completa con el valor ingresado al crear la aplicación, pero puedes cambiar el producto elegido sin tener que reconfigurar la integración. Este campo sirve como campo informativo para el producto al que se refiere la aplicación.
  
