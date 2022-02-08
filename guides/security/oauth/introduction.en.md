@@ -1,6 +1,6 @@
 # OAuth
  
-OAuth is an authorization protocol that allows applications to have limited access to the private information of Mercado Pago accounts, through the HTTP protocol that introduces an authentication and authorization layer in which you request access to the protected resources of sellers , through an access token limited to a particular application, without the need for the credentials of the sellers through the access flows.
+OAuth is an authorization protocol that allows applications to have limited access to the private information of Mercado Pago accounts, through the HTTP protocol that introduces an authentication and authorization layer in which you request access to the protected resources of sellers, through an access token limited to a particular application, without the need for the credentials of the sellers through the access flows.
  
 The flujos, also called grant types, refer to the way in which an application obtains an access token that allows accessing the data displayed through an API. In the case of Mercado Pago, there are two available access flows: `authorization_code` and `refresh_token`. In both flows, the main entities involved in the processes are:
  
