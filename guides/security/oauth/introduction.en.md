@@ -11,7 +11,7 @@ The flows, also called grant types, refer to the way in which an application obt
 >
 > Important
 >
-> The use of the OAuth protocol differs from the shared use of credentials process. OAuth does not address questions related to client authentication, nor information related to the same, its responsibility lies in the methods of obtaining a token to access a resource.
+> The use of the OAuth protocol differs from the shared use of credentials process. OAuth does not address questions related to client authentication, nor information related to that, its responsibility lies in the methods of obtaining a token to access a resource.
  
 > NEXT_STEP_CARD_EN
 >
