@@ -12,6 +12,6 @@ Una vez concedido el acceso a las credenciales, puedes utilizarlas para integrar
 >
 > Tus certificaciones
 >
-> Vea informaciónes a cerca de sus certificaciones en nuestro programa de desarrolladores certificados (**&lt;dev&gt;program**).
+> Accede a información a cerca de tus certificaciones en nuestro programa de desarrolladores certificados (**&lt;dev&gt;program**).
 >
 > [Tus certificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/dashboard/certification)
