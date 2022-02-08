@@ -16,7 +16,7 @@ To create an application, follow the steps below:
 4. Accept our Terms and Conditions.
 5. Create the application by clicking on the button "Create application".
  
-To every application created, a new card containing the application's name, description and ID is automatically created on the [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/dashboard/introduction) homepage.
+For every application created, a new card containing the application's name, description and ID is automatically created on the [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/dashboard/introduction) homepage.
  
 ## Manage application
  
