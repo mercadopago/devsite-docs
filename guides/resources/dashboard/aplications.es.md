@@ -46,7 +46,7 @@ Si por alguna razón necesitas eliminar una aplicación, simplemente haz clic en
  
 Al hacer clic en la tarjeta de una aplicación, tendrás acceso a los detalles de la aplicación, que incluyen:
  
-* **Nombre e ID de la aplicación**. En esta área puede seleccionar la aplicación que desee en función de su ID. Simplemente haga clic en el número que se muestra y seleccione la identificación deseada.
+* **Nombre e ID de la aplicación**. En esta área puede seleccionar la aplicación que desees en función de su ID. Simplemente haz clic en el número que se muestra y selecciona la identificación deseada.
 * **Mis credenciales**. Contraseñas únicas con las que identificamos una integración en tu cuenta. Sirven para capturar pagos en tiendas online y otras aplicaciones. Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials) para obtener más información.
 * **Notificaciones de webhook**. Notificaciones que puedes recibir a través de llamadas HTTP POST siempre que haya un evento relacionado con una transacción en tu aplicación. Lee [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks) para obtener más información.
  
