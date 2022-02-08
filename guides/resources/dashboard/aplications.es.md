@@ -62,7 +62,7 @@ De forma predeterminada, las credenciales de producción estarán deshabilitadas
 >
 > Atención
 >
-> Si no eres desarrollador, te recomendamos integrar Mercado Pago con tu tienda a través de [plugins y plataformas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/gguides/plugins) y obtén tus credenciales a través de tu cuenta de Mercado Pago en **Tu negocio > Configuración > Gestión y Administración > Credenciales**. Lea Credenciales para obtener más información. Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMINIO]/developers/en/guides/resources/credentials) para más información.
+> Si no eres desarrollador, te recomendamos integrar Mercado Pago con tu tienda a través de [plugins y plataformas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/gguides/plugins). Obtén tus credenciales a través de tu cuenta de Mercado Pago en **Tu negocio > Configuración > Gestión y Administración > Credenciales**.  Lee [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) para más información.
  
 También existe la posibilidad de compartir las credenciales con otra cuenta de Mercado Pago, solo haz clic en **compartir mis credenciales** y completa el correo electrónico de la cuenta que recibirá la información.
  
