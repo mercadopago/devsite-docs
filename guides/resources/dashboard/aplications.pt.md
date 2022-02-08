@@ -38,7 +38,7 @@ Caso você precise por algum motivo, excluir uma aplicação, basta clicar em "E
  
 > WARNING
 >
-> Atenção
+> Importante
 >
 > Tenha em conta que ao excluir uma aplicação, sua loja deixará de receber pagamentos através da integração associada à aplicação e todas as configurações serão perdidas, incluindo as credenciais associadas. Uma vez excluída uma aplicação, não é possível recuperá-la.
  
