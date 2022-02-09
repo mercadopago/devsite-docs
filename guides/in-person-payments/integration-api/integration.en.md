@@ -26,7 +26,7 @@ Next, you will need to create an application to obtain the credentials. It's eas
 >
 > Note
 >
-> If you are going to operate on behalf of other sellers, you can manage the link safely by integrating [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/oauth).
+> If you are going to operate on behalf of other sellers, you can manage the link safely by integrating [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/oauth/introduction).
 
 ### Access your application credentials
 

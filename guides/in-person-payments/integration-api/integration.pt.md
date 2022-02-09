@@ -26,7 +26,7 @@ E pronto!
 >
 > Nota
 >
-> Se você vai realizar operações em nome de outros vendedores, pode gerenciar a ligação segura integrando [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/oauth).
+> Se você vai realizar operações em nome de outros vendedores, pode gerenciar a ligação segura integrando [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/oauth/introduction).
 
 ### Acesse as credenciais da sua aplicação
 

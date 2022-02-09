@@ -965,7 +965,7 @@ Use headers in your payment preference to work with metrics, adding the identifi
 >
 > Note
 >
-> Remember to add the `integrator_id` it to your integrations to receive additional benefits of the program. You can find your `integrator_id` in your [Developer Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/devpanel).
+> Remember to add the `integrator_id` it to your integrations to receive additional benefits of the program. You can find your `integrator_id` in your developer [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/introduction).
 
 [[[
 ```php

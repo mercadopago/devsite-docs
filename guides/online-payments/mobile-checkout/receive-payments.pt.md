@@ -454,7 +454,7 @@ As notificações informam automaticamente sobre seus novos pagamentos e atualiz
 
 Isto permitirá que você gerencie seu estoque e mantenha seu sistema sincronizado.
 
-Para mais informações, consulte a seção de [Notificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks).
+Para mais informações, consulte a seção de [Notificações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/webhooks/webhooks).
 
 ### Evite recusas de pagamentos
 

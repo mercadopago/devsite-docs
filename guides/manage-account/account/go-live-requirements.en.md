@@ -18,5 +18,5 @@ With this process, you can guarantee the security of your customers' data, compl
 We share some points of attention to increase the quality of your integrations:
 
 + Improve the [payment approval](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/payment-rejections) by submitting the item and payer information, shipping data, and industry information.
-+ Keep the status of orders updated in your systems by using and processing notifications correctly [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn) or [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks).
++ Keep the status of orders updated in your systems by using and processing notifications correctly [IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn) or [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks/webhooks).
 + Use reconciliation reports via API to improve the financial management of the business.

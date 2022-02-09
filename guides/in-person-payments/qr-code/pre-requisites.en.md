@@ -87,11 +87,11 @@ Response:
 
 Once the test users are created, you can start with the integration and create the Stores and Point of Sale.
 
-### 4. How to collect Access Token (OAUTH)
+### 4. How to collect Access Token (OAuth)
 
-For you integrator, who will work with several stores that use Mercado Pago digital wallet, we advise you to do the OAUTH process - authentication between accounts, this process consists of the customer allowing their data to be shared with a third party system in a secure way.
+For you integrator, who will work with several stores that use Mercado Pago digital wallet, we advise you to do the OAuth process - authentication between accounts, this process consists of the customer allowing their data to be shared with a third party system in a secure way.
 
-The access token cannot be shared in any way other than OAUTH. [More information](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials)
+The access token cannot be shared in any way other than OAuth. [More information](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials)
 
 ### 5. Cómo identificar tu integración
 

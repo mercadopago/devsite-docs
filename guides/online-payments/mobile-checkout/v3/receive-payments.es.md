@@ -524,7 +524,7 @@ El SDK permite configurar el color en formato hexadecimal, es decir por ejemplo 
 
 Las notificaciones son la forma automática de enterarte de tus nuevos pagos y las actualizaciones de sus estados. Esto te permitirá administrar tu _stock_ y mantener tu sistema sincronizado.
 
-Visita la sección [Notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn) para conocer más sobre esto.
+Visita la sección [Notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/introduction) para conocer más sobre esto.
 
 ## Prueba la integración
 

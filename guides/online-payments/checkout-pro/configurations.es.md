@@ -980,7 +980,7 @@ Para obtener métricas comerciales, utiliza _headers_ en tu preferencia de pago,
 > 
 > Nota
 > 
-> Recuerda agregar el _header_ `integrator_id` a tus integraciones para recibir beneficios adicionales del programa. Puedes encontrar tu `integrator_id` en el [Developer Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel). 
+> Recuerda agregar el _header_ `integrator_id` a tus integraciones para recibir beneficios adicionales del programa. Puedes encontrar tu `integrator_id` en el developer [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/dashboard/introduction). 
 
 Por ejemplo:
 
