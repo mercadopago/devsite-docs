@@ -783,7 +783,7 @@ paths:
                 status:
                   type: string
                   example: "enabled"
-                  description: Available operation status of a store.
+                  description: Status referring to the current state of operation of the store.
                   enum:
                     - disabled -- The store will be disabled, and will not be shown on marketplace.
                     - enabled -- The store will be enabled and shown on marketplace.
