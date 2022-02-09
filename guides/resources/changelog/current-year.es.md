@@ -5,13 +5,25 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ---
 
-> Nueva versión PrestaShop
->
 ## Febrero 2022
+
+### 11 de febrero
+
+> CHANGELOG
+>
+> Sandbox: limpiaremos el historial de pagos de prueba
+>
+> NEWS: NOVEDADES
+>
+> PRODUCT: ALL
+
+A partir de **abril** se eliminará el historial de pagos de prueba de años anteriores en **modo Sandbox** y solo trabajaremos con datos de 2022. Es importante señalar que esto no será válido para **pagos de prueba realizados en ambiente de producción**.
 
 ## 8 de febrero
 
 > CHANGELOG
+> 
+> Nueva versión PrestaShop
 >
 > NEW_VERSION: NUEVA VERSIÓN
 >

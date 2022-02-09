@@ -6,6 +6,18 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 
 ## February 2022
 
+### February 11th
+
+> CHANGELOG
+>
+> Sandbox: we will clean the test payment history
+>
+> NEWS: NEWS
+>
+> PRODUCT: ALL
+ 
+As of **April**, the history of previous years of test payments in **Sandbox mode** will be deleted, and we will only work with data from 2022. It is important to note that this will not be valid for **payment tests performed in a production environment**.
+
 ### February 8th
 
 > CHANGELOG
