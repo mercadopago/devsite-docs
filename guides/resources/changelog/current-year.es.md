@@ -17,7 +17,7 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 >
 > PRODUCT: ALL
 
-A partir de **abril** se eliminará el historial de pagos de prueba de años anteriores en **modo Sandbox** y solo trabajaremos con datos de 2022. Es importante señalar que esto no será válido para **pagos de pruebas realizadas en ambiente de producción**.
+A partir de **abril** se eliminará el historial de pagos de prueba de años anteriores en **modo Sandbox** y solo trabajaremos con datos de 2022. Es importante señalar que esto no será válido para **pagos de prueba realizados en ambiente de producción**.
 
 
 ## 27 de enero
