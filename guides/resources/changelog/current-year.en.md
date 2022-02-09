@@ -16,7 +16,7 @@ Find out everything about the new versions and updates of Mercado Pago integrati
 >
 > PRODUCT: ALL
  
-As of **April**, the history of previous years of test payments in **Sandbox mode** will be deleted and we will only work with data from 2022. It is important to note that this will not be valid for **payments tests performed in a production environment**.
+As of **April**, the history of previous years of test payments in **Sandbox mode** will be deleted, and we will only work with data from 2022. It is important to note that this will not be valid for **payment tests performed in a production environment**.
 
 
 ## January 2022
