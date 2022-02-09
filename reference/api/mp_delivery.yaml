@@ -191,35 +191,36 @@ paths:
                       description: Name of the store.
                     business_hours:
                       type: object
+                      description: List of store opening hours. Each attribute of the object will be represented by a day of the week. 
                       properties:
                        monday:
                          type: array
-                         description: List of store opening hours.
+                         description: List of store opening hours on that weekday. 
                          items:
                            type: object
                            properties:
                              open:
                                type: string
                                example: "8:00"
-                               description: Store opening time.
+                               description: Store opening time on that weekday.
                              close:
                                type: string
                                example: "15:00"
-                               description: Store closing time.
+                               description: Store closing time on that weekday.
                        tuesday:
                          type: array
-                         description: List of store opening hours.
+                         description: List of store opening hours on that weekday.
                          items:
                            type: object
                            properties:
                              open:
                                type: string
                                example: "8:00"
-                               description: Store opening time.
+                               description: Store opening time on that weekday.
                              close:
                                type: string
                                example: "15:00"
-                               description: Store closing time.
+                               description: Store closing time on that weekday.
                        wendsday:
                          type: array
                          description: List of store opening hours on that weekday.
@@ -229,11 +230,11 @@ paths:
                              open:
                                type: string
                                example: "8:00"
-                               description: Store opening time.
+                               description: Store opening time on that weekday.
                              close:
                                type: string
                                example: "15:00"
-                               description: Store closing time.
+                               description: Store closing time on that weekday.
                        thursday:
                          type: array
                          description: List of store opening hours on that weekday.
@@ -243,11 +244,11 @@ paths:
                              open:
                                type: string
                                example: "8:00"
-                               description: Store opening time.
+                               description: Store opening time on that weekday.
                              close:
                                type: string
                                example: "15:00"
-                               description: Store closing time.
+                               description: Store closing time on that weekday.
                        friday:
                          type: array
                          description: List of store opening hours on that weekday.
@@ -257,13 +258,14 @@ paths:
                              open:
                                type: string
                                example: "8:00"
-                               description: Store opening time.
+                               description: Store opening time on that weekday.
                              close:
                                type: string
                                example: "15:00"
-                               description: Store closing time.
+                               description: Store closing time on that weekday.
                     location: 
                       type: object
+                      description: Store location information. This includes address, latitute, longitude, and additional location references.
                       properties:
                         address_line:
                           type: string
@@ -342,36 +344,36 @@ paths:
                       - paused -- The delivery of store is paused, but the store will cotinue to be shown on marketplace.
                   business_hours:
                     type: object
-                    description: Each attribute of the object will be represented by a day of the week. 
+                    description: List of store opening hours. Each attribute of the object will be represented by a day of the week. 
                     properties:
                       monday:
                         type: array
-                        description: List of store opening hours.
+                        description: List of store opening hours on that weekday.
                         items:
                           type: object
                           properties:
                             open:
                               type: string
                               example: "8:00"
-                              description: Store opening time.
+                              description: Store opening time on that weekday.
                             close:
                               type: string
                               example: "15:00"
-                              description: Store closing time.
+                              description: Store closing time on that weekday.
                       tuesday:
                         type: array
-                        description: List of store opening hours.
+                        description: List of store opening hours on that weekday.
                         items:
                           type: object
                           properties:
                             open:
                               type: string
                               example: "8:00"
-                              description: Store opening time.
+                              description: Store opening time on that weekday.
                             close:
                               type: string
                               example: "15:00"
-                              description: Store closing time.
+                              description: Store closing time on that weekday.
                       wendsday:
                         type: array
                         description: List of store opening hours on that weekday.
@@ -381,11 +383,11 @@ paths:
                             open:
                               type: string
                               example: "8:00"
-                              description: Store opening time.
+                              description: Store opening time on that weekday.
                             close:
                               type: string
                               example: "15:00"
-                              description: Store closing time.
+                              description: Store closing time on that weekday.
                       thursday:
                         type: array
                         description: List of store opening hours on that weekday.
@@ -395,11 +397,11 @@ paths:
                             open:
                               type: string
                               example: "8:00"
-                              description: Store opening time.
+                              description: Store opening time on that weekday.
                             close:
                               type: string
                               example: "15:00"
-                              description: Store closing time.
+                              description: Store closing time on that weekday.
                       friday:
                         type: array
                         description: List of store opening hours on that weekday.
@@ -409,13 +411,14 @@ paths:
                             open:
                               type: string
                               example: "8:00"
-                              description: Store opening time.
+                              description: Store opening time on that weekday.
                             close:
                               type: string
                               example: "15:00"
-                              description: Store closing time.
+                              description: Store closing time on that weekday.
                   location: 
                     type: object
+                    description: Store location information. This includes address, latitute, longitude, and additional location references.
                     properties:
                       address_line:
                         type: string
@@ -496,36 +499,36 @@ paths:
                     description: Name of the store
                   business_hours:
                     type: object
-                    description: Each attribute of the object will be represented by a day of the week. 
+                    description: List of store opening hours. Each attribute of the object will be represented by a day of the week.  
                     properties:
                       monday:
                         type: array
-                        description: List of store opening hours.
+                        description: List of store opening hours on that weekday.
                         items:
                           type: object
                           properties:
                             open:
                               type: string
                               example: "8:00"
-                              description: Store opening time.
+                              description: Store opening time on that weekday.
                             close:
                               type: string
                               example: "15:00"
-                              description: Store closing time.
+                              description: Store closing time on that weekday.
                       tuesday:
                         type: array
-                        description: List of store opening hours.
+                        description: List of store opening hours on that weekday.
                         items:
                           type: object
                           properties:
                             open:
                               type: string
                               example: "8:00"
-                              description: Store opening time.
+                              description: Store opening time on that weekday.
                             close:
                               type: string
                               example: "15:00"
-                              description: Store closing time.
+                              description: Store closing time on that weekday.
                       wendsday:
                         type: array
                         description: List of store opening hours on that weekday.
@@ -535,11 +538,11 @@ paths:
                             open:
                               type: string
                               example: "8:00"
-                              description: Store opening time.
+                              description: Store opening time on that weekday.
                             close:
                               type: string
                               example: "15:00"
-                              description: Store closing time.
+                              description: Store closing time on that weekday.
                       thursday:
                         type: array
                         description: List of store opening hours on that weekday.
@@ -549,11 +552,11 @@ paths:
                             open:
                               type: string
                               example: "8:00"
-                              description: Store opening time.
+                              description: Store opening time on that weekday.
                             close:
                               type: string
                               example: "15:00"
-                              description: Store closing time.
+                              description: Store closing time on that weekday.
                       friday:
                         type: array
                         description: List of store opening hours on that weekday.
@@ -563,13 +566,14 @@ paths:
                             open:
                               type: string
                               example: "8:00"
-                              description: Store opening time.
+                              description: Store opening time on that weekday.
                             close:
                               type: string
                               example: "15:00"
-                              description: Store closing time.
+                              description: Store closing time on that weekday.
                   location: 
                     type: object
+                    description: Store location information. This includes address, latitute, longitude, and additional location references.
                     properties:
                       address_line:
                         type: string
@@ -647,35 +651,36 @@ paths:
                     description: Name of the store.
                   business_hours:
                     type: object
+                    description: List of store opening hours. Each attribute of the object will be represented by a day of the week. 
                     properties:
                      monday:
                        type: array
-                       description: List of store opening hours.
+                       description: List of store opening hours on that weekday.
                        items:
                          type: object
                          properties:
                            open:
                              type: string
                              example: "8:00"
-                             description: Store opening time.
+                             description: Store opening time on that weekday.
                            close:
                              type: string
                              example: "15:00"
-                             description: Store closing time.
+                             description: Store closing time on that weekday.
                      tuesday:
                        type: array
-                       description: List of store opening hours.
+                       description: List of store opening hours on that weekday.
                        items:
                          type: object
                          properties:
                            open:
                              type: string
                              example: "8:00"
-                             description: Store opening time.
+                             description: Store opening time on that weekday.
                            close:
                              type: string
                              example: "15:00"
-                             description: Store closing time.
+                             description: Store closing time on that weekday.
                      wendsday:
                        type: array
                        description: List of store opening hours on that weekday.
@@ -685,11 +690,11 @@ paths:
                            open:
                              type: string
                              example: "8:00"
-                             description: Store opening time.
+                             description: Store opening time on that weekday.
                            close:
                              type: string
                              example: "15:00"
-                             description: Store closing time.
+                             description: Store closing time on that weekday.
                      thursday:
                        type: array
                        description: List of store opening hours on that weekday.
@@ -699,11 +704,11 @@ paths:
                            open:
                              type: string
                              example: "8:00"
-                             description: Store opening time.
+                             description: Store opening time on that weekday.
                            close:
                              type: string
                              example: "15:00"
-                             description: Store closing time.
+                             description: Store closing time on that weekday.
                      friday:
                        type: array
                        description: List of store opening hours on that weekday.
@@ -713,13 +718,14 @@ paths:
                            open:
                              type: string
                              example: "8:00"
-                             description: Store opening time.
+                             description: Store opening time on that weekday.
                            close:
                              type: string
                              example: "15:00"
-                             description: Store closing time.
+                             description: Store closing time on that weekday.
                   location: 
                     type: object
+                    description: Store location information. This includes address, latitute, longitude, and additional location references.
                     properties:
                       address_line:
                         type: string
@@ -777,7 +783,7 @@ paths:
                 status:
                   type: string
                   example: "enabled"
-                  description: Available status
+                  description: Available operation status of a store.
                   enum:
                     - disabled -- The store will be disabled, and will not be shown on marketplace.
                     - enabled -- The store will be enabled and shown on marketplace.
@@ -812,36 +818,36 @@ paths:
                       - paused -- The delivery of store will be paused, but the store will cotinue to be shown on marketplace.
                   business_hours:
                     type: object
-                    description: Each attribute of the object will be represented by a day of the week. 
+                    description: List of store opening hours. Each attribute of the object will be represented by a day of the week.  
                     properties:
                       monday:
                         type: array
-                        description: List of store opening hours.
+                        description: List of store opening hours on that weekday.
                         items:
                           type: object
                           properties:
                             open:
                               type: string
                               example: "8:00"
-                              description: Store opening time.
+                              description: Store opening time on that weekday.
                             close:
                               type: string
                               example: "15:00"
                               description: Store closing time.
                       tuesday:
                         type: array
-                        description: List of store opening hours.
+                        description: List of store opening hours on that weekday.
                         items:
                           type: object
                           properties:
                             open:
                               type: string
                               example: "8:00"
-                              description: Store opening time.
+                              description: Store opening time on that weekday.
                             close:
                               type: string
                               example: "15:00"
-                              description: Store closing time.
+                              description: Store closing time on that weekday.
                       wendsday:
                         type: array
                         description: List of store opening hours on that weekday.
@@ -851,11 +857,11 @@ paths:
                             open:
                               type: string
                               example: "8:00"
-                              description: Store opening time.
+                              description: Store opening time on that weekday.
                             close:
                               type: string
                               example: "15:00"
-                              description: Store closing time.
+                              description: Store closing time on that weekday.
                       thursday:
                         type: array
                         description: List of store opening hours on that weekday.
@@ -865,11 +871,11 @@ paths:
                             open:
                               type: string
                               example: "8:00"
-                              description: Store opening time.
+                              description: Store opening time on that weekday.
                             close:
                               type: string
                               example: "15:00"
-                              description: Store closing time.
+                              description: Store closing time on that weekday.
                       friday:
                         type: array
                         description: List of store opening hours on that weekday.
@@ -879,13 +885,14 @@ paths:
                             open:
                               type: string
                               example: "8:00"
-                              description: Store opening time.
+                              description: Store opening time on that weekday.
                             close:
                               type: string
                               example: "15:00"
-                              description: Store closing time.
+                              description: Store closing time on that weekday.
                   location: 
                     type: object
+                    description: Store location information. This includes address, latitute, longitude, and additional location references.
                     properties:
                       address_line:
                         type: string
