@@ -21,7 +21,7 @@ Ambos checkouts reparten automáticamente los importes entre el vendedor y el _m
 Para realizar la integración deberás seguir el flujo de integración habitual del _checkout_ elegido, utilizando necesariamente un token de acceso para cada vendedor, obtenido a través de OAuth. A continuación, enumeramos los pasos necesarios para integrar una caja con el _mercado_.
 
 1. Sigue los pasos descritos en la  documentación de OAuth para obtener cada `access_token`. Esta información será necesaria durante el proceso de integración de pago en el _marketplace_.
-2. Elija el tipo de pago que desea ([Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction) o [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction)) y siga todo el flujo de integración.
+2. Elige el tipo de pago que desea ([Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction) o [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction)) y sigue todo el flujo de integración.
 3. En la integración del _checkout_, use la `public_key` de su cuenta de integrador en el frontend e inserte el `access_token` del vendedor obtenido en el paso 1, en el backend o en el _header_ de la solicitud.
 4. Para determinar el porcentaje de comisión del mercado:
 
