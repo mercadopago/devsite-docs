@@ -20,7 +20,6 @@ Ambos checkouts realizam automaticamente a divisão dos valores entre o vendedor
 
 Para realizar a integração você precisará seguir o fluxo de integração usual do checkout escolhido necessariamente usando um access token para cada vendedor, obtido através de OAuth. Abaixo listamos as etapas necessárias para integrar um checkout ao _marketplace_.
 
-
 1. Siga as etapas descritas na documentação OAuth para obter cada `access_token`. Esta informação será necessária durante o processo de integração do checkout ao _marketplace_.
 2. Escolha o tipo de checkout que deseja ([Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction) ou [Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction)) e siga todo o fluxo de integração.
 3. Na integração do checkout, utilize a `public_key` da sua conta de integrador no frontend e insira o `access_token` do vendedor obtido na etapa 1, no backend ou no header da requisição. 
