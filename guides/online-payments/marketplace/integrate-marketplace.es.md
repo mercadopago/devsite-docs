@@ -18,7 +18,7 @@ Ambos checkouts reparten automáticamente los importes entre el vendedor y el _m
 >
 > La comisión de Mercado Pago se descuenta de los fondos recibidos por el vendedor. Es decir, primero se descuenta la comisión de Mercado Pago y la comisión del marketplace se descuenta del saldo restante.
 
-Para realizar la integración deberá seguir el flujo de integración habitual del _checkout_ elegido utilizando necesariamente un token de acceso para cada vendedor, obtenido a través de OAuth. A continuación, enumeramos los pasos necesarios para integrar una caja con el _mercado_.
+Para realizar la integración deberás seguir el flujo de integración habitual del _checkout_ elegido, utilizando necesariamente un token de acceso para cada vendedor, obtenido a través de OAuth. A continuación, enumeramos los pasos necesarios para integrar una caja con el _mercado_.
 
 1. Siga los pasos descritos en la OAuth para obtener cada `access_token`. Esta información será necesaria durante el proceso de integración de pago en el _marketplace_.
 2. Elija el tipo de pago que desea ([Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction) o [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction)) y siga todo el flujo de integración.
