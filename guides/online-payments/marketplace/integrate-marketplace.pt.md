@@ -11,7 +11,6 @@ Caso escolha vender através de um Marketplace, é possível integrar **dois tip
 
 Ambos checkouts realizam automaticamente a divisão dos valores entre o vendedor e o _marketplace_ por meio do _split_ de pagamento, sem a necessidade de qualquer ação por parte do vendedor.
 
-
 > NOTE
 >
 > Importante
