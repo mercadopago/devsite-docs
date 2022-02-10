@@ -5,7 +5,6 @@ Marketplace é um site/plataforma de e-commerce que conecta vendedores e comprad
 Além da estrutura necessária para realizar vendas, alguns _marketplaces_ cuidam da disposição dos produtos, métodos de pagamento e envio, otimizando o processo de venda e facilitando o gerenciamento do negócio.
 
 Caso escolha vender através de um Marketplace, é possível integrar **dois tipos de checkout do Mercado Pago** para processar os pagamentos realizados.
-
  
 * [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction):  Neste modelo de checkout  o comprador é direcionado para uma página do Mercado Pago para concluir o pagamento.
 * [Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction): Este modelo de checkout permite ao comprador realizar o pagamento dentro do ambiente do _marketplace_.
