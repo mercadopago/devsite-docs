@@ -44,12 +44,12 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | TAXES_DISAGGREGATED | Impuestos desagregados en formato JSON. |
 | EFFECTIVE_COUPON_AMOUNT | Costo por ofrecer descuento. |
 | POI_ID | ID del lector si el pago se realiza a través de un comercio físico. |
-----[mpe]----
+----[mpe, mlu]----
 > INFO
 >
 > Algunas definiciones ya no están disponibles o han cambiado
 >
-> Usa este glosario para conocer los términos de los reportes que generes a partir de enero de 2022. Para los reportes que abarquen fechas previas [consulta este Glosario.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/glossary-old)
+> Usa este glosario para conocer los términos de los reportes que generes a partir de ------------ ----[mpe]----enero de 2022. ------------  ----[mlu]---- marzo de 2022. ------------ ----[mpe, mlu]---- Para los reportes que abarquen fechas previas [consulta este Glosario.](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/glossary-old)
 ------------
 <hr/>
 
