@@ -5,6 +5,61 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 
 ---
 
+## Febrero 2022
+
+### 11 de febrero
+
+> CHANGELOG
+>
+> Sandbox: limpiaremos el historial de pagos de prueba
+>
+> NEWS: NOVEDADES
+>
+> PRODUCT: ALL
+
+A partir de **abril** se eliminará el historial de pagos de prueba de años anteriores en **modo Sandbox** y solo trabajaremos con datos de 2022. Es importante señalar que esto no será válido para **pagos de prueba realizados en ambiente de producción**.
+
+## 8 de febrero
+
+> CHANGELOG
+> 
+> Nueva versión PrestaShop
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: PRESTASHOP
+
+Lanzamos la nueva versión 4.9.1 para PrestaShop.
+
+[Ir a documentación de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.9.1).
+
+## 7 de febrero
+
+> CHANGELOG
+>
+> Nueva versión PrestaShop
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: PRESTASHOP
+
+Lanzamos la nueva versión 4.9.0 para PrestaShop.
+
+[Ir a documentación de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.9.1).
+
+
 ## Enero 2022
 
 ## 27 de enero

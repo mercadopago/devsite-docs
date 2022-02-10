@@ -91,10 +91,10 @@ Respuesta:
 
 Una vez creados los usuarios de pruebas, ya puedes comenzar con la integración y crear las sucursales y cajas.
 
-### 4. Cómo obtener tu Access token (OAUTH)
+### 4. Cómo obtener tu Access token (OAuth)
 
 Si eres un integrador que trabajará con varios comercios para que operen con Mercado Pago, te recomendamos realizar el proceso 
-OAUTH - autenticación entre cuentas, este proceso consiste en que el cliente permita que sus datos sean compartidos con un sistema de terceros de forma segura. 
+OAuth - autenticación entre cuentas, este proceso consiste en que el cliente permita que sus datos sean compartidos con un sistema de terceros de forma segura. 
  
 El access token no se puede compartir de ninguna otra forma que no sea mediante OAuth. [Mas informaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials)
 

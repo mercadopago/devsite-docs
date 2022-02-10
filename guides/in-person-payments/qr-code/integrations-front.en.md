@@ -25,7 +25,7 @@ First, you must create a [Pay Link](https://www.mercadopago.com.ar/tools/create)
 
 ## Be aware of your received payments
 
-You can check your sales in the activity list in your [Mercado Pago account](https://www.mercadopago.com.ar/activities) or [integrate notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn) in your system.
+You can check your sales in the activity list in your [Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) or [integrate notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/introduction) in your system.
 
 ---
 ### Next Steps
