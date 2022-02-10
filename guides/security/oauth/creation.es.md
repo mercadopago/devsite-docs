@@ -32,6 +32,7 @@ Para generar el código de autorización, es preciso cumplir con los requisitos 
      * **client_id**: edita tu aplicación para que contenga tu Redirect  URL. Consulta [Editar aplicación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/dashboard/aplication).
      * **state**: reemplaza el valor "RANDOM_ID" con un identificador que sea único para cada intento y que no incluya información confidencial para que puedas identificar de quién es el código recibido.
      * **redirect_uri**: agrega la URL informada en el campo Redirect URL de tu aplicación.
+     <br/>
  
 3. Espera a que el vendedor acceda a la URL y permita el acceso. Al acceder a la URL, el vendedor será dirigido a Mercado Pago y deberá iniciar sesión en su cuenta para realizar la autorización.
 4. Verifica la Redirect URL de tu servidor para ver el código de autorización devuelto en el parámetro de **code**.

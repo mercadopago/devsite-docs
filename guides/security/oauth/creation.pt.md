@@ -32,7 +32,7 @@ Para gerar o authorization code é preciso atender aos requisitos abaixo.
      * **client_id**: substitua o valor "APP_ID" com a ID do sua aplicação. Veja [ID de aplicação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/dashboard/aplication).
      * **state**: substitua o valor "RANDOM_ID" por um identificador que seja único para cada tentativa e que não inclua informações sensíveis de forma que você consiga identificar de quem é o código recebido.
      * **redirect_uri**: adicione a URL informada no campo Redirect URL da sua aplicação.
- 
+     <br/>
 3. Aguarde o vendedor acessar a URL e permitir o acesso. Ao acessar a URL o vendedor será direcionado para o Mercado Pago e deverá realizar o login na conta dele para realizar a autorização.
 4. Verifique na Redirect URL do seu servidor o código de autorização retornado no parâmetro **code**.
 
