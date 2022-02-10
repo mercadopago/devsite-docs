@@ -17,7 +17,6 @@ Ambos checkouts realizam automaticamente a divisão dos valores entre o vendedor
 >
 > A comissão do Mercado Pago é descontada do valor recebido pelo vendedor. Ou seja,  primeiro é descontada a comissão do Mercado Pago e sobre o valor restante se desconta a comissão do Marketplace.
 
-
 Para realizar a integração você precisará seguir o fluxo de integração usual do checkout escolhido necessariamente usando um access token para cada vendedor, obtido através de OAuth. Abaixo listamos as etapas necessárias para integrar um checkout ao _marketplace_.
 
 1. Siga as etapas descritas na documentação OAuth para obter cada `access_token`. Esta informação será necessária durante o processo de integração do checkout ao _marketplace_.
