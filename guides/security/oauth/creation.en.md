@@ -32,7 +32,7 @@ To generate the authorization code, the following requirements must be met.
      * **client_id**: replace the "APP_ID" value with your aplication ID. Check [Application ID](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/aplication).
      * **state**: replace the "RANDOM_ID" value with an identifier that is unique for each attempt and does not include sensitive information so that you can identify who the received code is from.
      * **redirect_uri**: add the reported URL in the Redirect URL field of your application.
- 
+     <br/>
 3. Wait for the seller to access the URL and allow access. Upon accessing the URL, the seller will be directed to Mercado Pago and must log into their account to carry out the authorization.
 4. Check your server's Redirect URL to see the authorization code returned in the **code** parameter.
  

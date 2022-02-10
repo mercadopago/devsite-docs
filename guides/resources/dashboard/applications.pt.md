@@ -2,9 +2,7 @@
  
 As aplicações são as diferentes integrações contidas em uma ou mais lojas. Você pode criar uma aplicação para cada solução que implementar, a fim de ter tudo organizado e manter um controle que facilite a gestão.
  
-Cada aplicação possui um conjunto de credenciais e a possibilidade de configurar suas próprias notificações.
- 
-Cada card representa uma aplicação criada e exibe o **nome**, a **descrição**, o **ID da aplicação** e um botão que permite gerenciar a aplicação.
+Cada aplicação possui um conjunto de credenciais e a possibilidade de configurar suas próprias notificações. Cada card representa uma aplicação criada e exibe o **nome**, a **descrição**, o **ID da aplicação** e um botão que permite gerenciar a aplicação.
  
 ## Criar nova aplicação
  
@@ -30,8 +28,7 @@ Você pode clicar no botão "Editar" para ver as configurações avançadas que 
   * Permissões da aplicação. Este campo apresenta as opções de acesso da sua aplicação, sendo elas: read (ler), offline access (acesso offline) e write (escrever). Por padrão, sua aplicação é criada com todas as permissões ativadas, mas você pode desativar uma permissão clicando na caixa de seleção referente à permissão que você deseja alterar.
   * Redirect URL. Este campo define a URL (em https) na qual você deseja receber o código de autorização quando sua integração for configurada como Marketplace ou realizada através de OAuth. Veja [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/oauth/introduction) para mais detalhes.
   * Bloqueio de aplicação. Caso haja, indicará o motivo da aplicação estar bloqueada para uso. Clique em **Detalhes do bloqueio** para verificar [a solução](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/support/23064) do bloqueio informado. 
-  </br><br/>
-
+  </br>
 * **Produto a ser integrado**. Esta seção define o produto a ser integrado na sua aplicação. O campo "Produtos disponíveis" apresenta a lista de produtos disponíveis a serem integrados. Por padrão, o valor deste campo é preenchido com o valor inserido no momento da criação da aplicação, mas você pode alterar o produto escolhido sem a necessidade de reconfigurar a integração. Este campo serve como um informativo do produto ao qual a aplicação se refere.
  
 ### Excluir aplicação
