@@ -31,6 +31,7 @@ Você pode clicar no botão "Editar" para ver as configurações avançadas que 
   * Redirect URL. Este campo define a URL (em https) na qual você deseja receber o código de autorização quando sua integração for configurada como Marketplace ou realizada através de OAuth. Veja [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/oauth/introduction) para mais detalhes.
   * Bloqueio de aplicação. Caso haja, indicará o motivo da aplicação estar bloqueada para uso. Clique em **Detalhes do bloqueio** para verificar [a solução](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/support/23064) do bloqueio informado.
 <br/> 
+
 * **Produto a ser integrado**. Esta seção define o produto a ser integrado na sua aplicação. O campo "Produtos disponíveis" apresenta a lista de produtos disponíveis a serem integrados. Por padrão, o valor deste campo é preenchido com o valor inserido no momento da criação da aplicação, mas você pode alterar o produto escolhido sem a necessidade de reconfigurar a integração. Este campo serve como um informativo do produto ao qual a aplicação se refere.
  
 ### Excluir aplicação
