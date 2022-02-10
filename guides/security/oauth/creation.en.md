@@ -25,20 +25,19 @@ To generate the authorization code, the following requirements must be met.
 1. Edit your application so that it contains your Redirect URL. See [Edit Application](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/aplication).
 2. Send the authentication URL to the seller whose account you want to link to yours with the following fields:
 
-|Description|URL| 
-|---|---|
-| Authentication URL | https://auth.mercadopago.com/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com |
- 
-  - **client_id**: replace the "APP_ID" value with your aplication ID. Check [Application ID](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/aplication).
-  - **state**: replace the "RANDOM_ID" value with an identifier that is unique for each attempt and does not include sensitive information so that you can identify who the received code is from.
-  - **redirect_uri**: add the reported URL in the Redirect URL field of your application.
- 
+    |Description|URL| 
+    |---|---|
+    | Authentication URL | https://auth.mercadopago.com/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com |
+     * **client_id**: replace the "APP_ID" value with your aplication ID. Check [Application ID](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/aplication).
+     * **state**: replace the "RANDOM_ID" value with an identifier that is unique for each attempt and does not include sensitive information so that you can identify who the received code is from.
+     * **redirect_uri**: add the reported URL in the Redirect URL field of your application.
+     <br/>
 3. Wait for the seller to access the URL and allow access. Upon accessing the URL, the seller will be directed to Mercado Pago and must log into their account to carry out the authorization.
 4. Check your server's Redirect URL to see the authorization code returned in the **code** parameter.
  
-|Description|URL|  
-|---|---|
-| Redirect URL | https://www.redirect-url.com?code=CODE&state=RANDOM_ID |
+   |Description|URL|  
+   |---|---|
+   | Redirect URL | https://www.redirect-url.com?code=CODE&state=RANDOM_ID |
  
 5. Send your credentials and authorization code to the [/oauth/token](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/oauth/_oauth_token/post) endpoint to receive the access token in response.
  

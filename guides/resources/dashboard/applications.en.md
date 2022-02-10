@@ -2,9 +2,7 @@
  
 Applications are the different integrations contained in one or more stores. You can create an application for each solution you implement, in order to have everything organized and maintain control that makes management easier.
  
-Each application has a set of credentials and the possibility to configure its own notifications.
- 
-Each card represents a created application and displays the **name**, the **description**, the **application ID** and a button that allows managing the application.
+Each application has a set of credentials and the possibility to configure its own notifications. Each card represents a created application and displays the **name**, the **description**, the **application ID** and a button that allows managing the application.
  
 ## Create new application
  
@@ -30,7 +28,7 @@ After creating your application, you can click on the "Edit" button to see the a
   - Application permissions. This field displays the access options for your application, namely: read, offline access and write. By default, your application is created with all permissions enabled. You can disable permissions by clicking on their respective checkboxes.
   - Redirect URL. This field defines the URL (in https) where you want to receive the authorization code when your integration is configured as Marketplace or performed via OAuth. Check [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/oauth/introduction) for more details.
   - Application blocking. If blocked, it will indicate the reason for the application being blocked for use. Click on **Block Details** to check the solution for the reported block.
- 
+  <br/>
 * **Product to be integrated**. This section defines the product that should integrate with your application. The field "Available products" presents the list of available products to be integrated. By default, the value of this field is the value entered when creating the application, but you can change the chosen product without having to reconfigure the integration. This field works as an informational field for the product that the application refers to.
  
 ### Delete application
