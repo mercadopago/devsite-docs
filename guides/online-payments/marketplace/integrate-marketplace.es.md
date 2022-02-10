@@ -26,6 +26,6 @@ Para realizar la integración deberás seguir el flujo de integración habitual 
 4. Para determinar el porcentaje de comisión del mercado:
 
     - Si el checkout es Pro, completa el parámetro `marketplace_fee` con el porcentaje que se cobrará por cada preferencia de pago creada en la API **/checkout/preferences**.
-    - Si el checkout es transparente, complete el parámetro `application_fee` con el porcentaje que se cobrará por cada pago creado en la API **/payments**.
+    - Si el checkout es transparente, completa el parámetro `application_fee` con el porcentaje que se cobrará por cada pago creado en la API **/payments**.
 
 Al completar estos pasos, el pago se habrá integrado en el _marketplace_ y estará listo para procesar pagos.
