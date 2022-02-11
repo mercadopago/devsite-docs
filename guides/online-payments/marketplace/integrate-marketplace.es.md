@@ -8,7 +8,7 @@ Si eliges vender a través de un _marketplace_, es posible integrar **dos tipos 
 
 
 * [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction):  en este modelo de checkout, el comprador es dirigido a una página de Mercado Pago para completar el pago.
-* [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction): este modelo de pago permite al comprador realizar el pago dentro del entorno del _marketplace_.
+* [----[mla, mlu, mpe, mco, mlc, mlm]----Checkout API------------ ----[mlb]----Checkout Transparente------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/introduction): este modelo de pago permite al comprador realizar el pago dentro del entorno del _marketplace_.
 
 Ambos checkouts reparten automáticamente los importes entre el vendedor y el _marketplace_ a través del _split del pago_ sin necesidad de ninguna acción por parte del vendedor.
 
