@@ -10,7 +10,7 @@ Neste guia, mostraremos como construir sua própria experiência de checkout atr
 > 
 > Importante
 > 
-> Para saber cómo performa tu checkout una vez implementadas estas buenas prácticas, te recomendamos integrar alguna herramienta de trackeo y realizar optimizaciones en base a los resultados para mejorar la experiencia de tus usuarios y tener más conversiones.
+> Para saber o desempenho do seu checkout após a implementação dessas boas práticas, recomendamos que você integre uma ferramenta de rastreamento e realize otimizações com base nos resultados para melhorar a experiência de seus usuários e ter mais conversões.
 
 > NEXT_STEP_CARD_PT
 >
