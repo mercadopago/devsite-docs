@@ -1,0 +1,18 @@
+# APIs Map
+
+The following actions are available for **IPN**.
+
+|Action|Description|
+|---|---|
+|[Get order](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/merchant_orders/_merchant_orders_id/get)|Check the payment information for a product or service with the ID of the order you want.|
+
+
+> NOTE
+>
+> Note
+>
+> Remember that you can also make API calls suing query params for the following:
+> <br>
+> [On demand order search](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/troubleshooting)
+> <br>
+> [Search payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/additional-tools)
