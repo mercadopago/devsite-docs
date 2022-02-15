@@ -31,7 +31,7 @@ Mercado Pago informará a esta `notification_url` tanto en la creación como act
 |`id`|É um identificador exclusivo do recurso relatado.|
 
 
-> **Exemplo:** Se você definir `notification_url`: “https: // www.seusite.com.br / notificações”, receberá notificações de pagamento como esta: “https://www.yoursite.com/notifications?topic=merchant_order&id=123456789”
+> **Exemplo:** Se você definir `notification_url`: `https://www.seusite.com.br/notificações`, receberá notificações de pagamento como esta: `https://www.yoursite.com/notifications?topic=merchant_order&id=123456789`
 
 
 ## Ao receber uma notificação

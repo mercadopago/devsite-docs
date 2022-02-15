@@ -250,7 +250,7 @@ curl -X POST \
 
 > Por exemplo, se configurar a URL: `https://www.yoursite.com/notifications`, você receberá as notificações de pagamento desta maneira: `https://www.yoursite.com/notifications?topic=payment&id=123456789`.
 
-4. Caso deseje receber notificações apenas de IPN e não de Webhooks, você pode adicionar na `notification_url` o parâmetro `source_news=ipn`. Por exemplo: https://www.yourserver.com/notifications?source_news=ipn
+4. Caso deseje receber notificações apenas de IPN e não de Webhooks, você pode adicionar na `notification_url` o parâmetro `source_news=ipn`. Por exemplo: `https://www.yourserver.com/notifications?source_news=ipn`
 
 > PREV_STEP_CARD_PT
 >
