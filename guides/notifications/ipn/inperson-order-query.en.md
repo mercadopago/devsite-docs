@@ -30,6 +30,6 @@ Please find all the information you need about the request and response paramete
 >
 > Troubleshooting
 >
-> Learn what to do when you donñt receive notifications.
+> Learn what to do when you don't receive notifications.
 >
 > [Troubleshooting](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/troubleshooting)

@@ -29,6 +29,6 @@ curl --location --request GET 'https://api.mercadopago.com/v1/payments/search?li
 >
 > APIs Map
 >
-> Learn about the available API endpoints for IPN.
+> Learn about the available API endpoints available for IPN.
 >
 > [APIs Map](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/apis-map)

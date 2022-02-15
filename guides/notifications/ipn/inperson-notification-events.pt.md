@@ -66,6 +66,6 @@ Dentro do pedido, no objeto de pagamentos, você encontrará todos os pagamentos
 >
 > Consulta da ordem
 > 
->Verifique o status das ordens.
+> Verifique o status das ordens.
 >
 > [Consulta da ordem](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/inperson-order-query)

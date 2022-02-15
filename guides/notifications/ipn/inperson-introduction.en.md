@@ -20,8 +20,8 @@ If you are integrating in person payments with QR code, below we will provide in
 
 > NEXT_STEP_CARD_EN
 >
-> Configue in person payment notifications
+> Configure in person payment notifications
 >
 > Configure notifications for QR code payments.
 >
-> [Configue in person payment notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/inperson-configuration)
+> [Configure in person payment notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/inperson-configuration)

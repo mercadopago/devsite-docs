@@ -25,6 +25,6 @@ With this information, you will be able to carry out the necessary updates to yo
 >
 > In person payments introduction
 >
-> IPN for in person payments using QR.
+> IPN for in person payments using QR code.
 >
 > [In person payments introduction](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/inperson-introduction)

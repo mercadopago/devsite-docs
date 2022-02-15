@@ -1,4 +1,4 @@
-# Ações necessárias após receber a notificação
+# Após receber a notificação
 
 [TXTSNIPPET][/guides/snippets/test-integration/notification-response]
 
@@ -25,6 +25,6 @@ Com essas informações, você poderá realizar as atualizações necessárias n
 >
 > Introdução aos pagamentos presenciais
 >
-> IPN para pagamentos presenciais com QR.
+> IPN para pagamentos presenciais com QR code.
 >
 > [Introdução aos pagamentos presenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/inperson-introduction)

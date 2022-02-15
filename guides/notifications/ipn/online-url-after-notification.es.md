@@ -1,4 +1,4 @@
-# Acciones necesarias después de recibir la notificación
+# Después de recibir la notificación
 
 [TXTSNIPPET][/guides/snippets/test-integration/notification-response]
 
@@ -26,6 +26,6 @@ Con esta información podrás realizar las actualizaciones necesarias a tu plata
 >
 > Introducción a pagos presenciales
 >
-> IPN for in person payments using QR.
+> IPN para pagos presenciales usando código QR.
 >
 > [Introducción a pagos presenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/inperson-introduction)
