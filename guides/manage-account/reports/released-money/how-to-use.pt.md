@@ -19,12 +19,12 @@ O relatório é composto por:
 | Total| <br/> É o resultado final composto pela soma de todos os subtotais. <br/><br/>Ou seja:<br/> subtotal `Release` + subtotal `Block` + subtotal `Unblock` = resultado total<br/><br/> |
 
 
-Além disso, o relatório reflete os conceitos de *débito* (dinheiro a pagar) e *crédito* (dinheiro a receber) em duas colunas, uma para conceito: 
+Além disso, o relatório reflete os conceitos de *débito* (dinheiro a pagar) e *crédito* (dinheiro a receber) em duas colunas, uma para cada conceito: 
 
 
-> Seu a ver estará na coluna `NET_CREDIT`
->
-> Seu deve estará na coluna `NET_DEBIT`
+> Seu **a receber** estará na coluna `NET_CREDIT`
+><br>
+> Seu **a pagar** estará na coluna `NET_DEBIT`
 
 Você verá o saldo disponível das transações liberadas nas colunas `NET_CREDIT` (creditado) e `NET_DEBIT` (debitado), dependendo se o valor é positivo ou negativo. Você também verá aí o valor bruto e os gastos de financiamento, impostos e custos de envio que descontamos para chegar ao valor líquido.
 

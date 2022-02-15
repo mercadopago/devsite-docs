@@ -8,8 +8,8 @@ paths:
   /v1/chargebacks/{id}:
     get:
       tags:
-        - $ref: '#/tags/marketplace'
-      summary: Get a chargeback
+        - $ref: '#/tags/checkout-api'
+      summary: Get chargeback
       description: Check all the information related to a chargeback for your product or service with the ID of the chargeback you want
       parameters:
         - name: id
@@ -99,8 +99,8 @@ paths:
   /v1/payments/{id}/refunds:
     get:
       tags:
-          - $ref: "#/tags/marketplace"
-      summary: Check refunds list
+        - $ref: '#/tags/checkout-api'
+      summary: Get refunds list
       description: Get all Refunds for a specific payment
       parameters:
         - name: id
@@ -222,8 +222,8 @@ paths:
                       - 2000--Payment-not-found--Payment_Id_does_not_exist-
     post:
       tags:
-        - $ref: "#/tags/marketplace"
-      summary: Post refunds
+        - $ref: '#/tags/checkout-api'
+      summary: Create refund
       description: Create Partial/Full Refund for a specific payment. If the amount field is filled, it will create a partial refund, if not, it will create a full refund
       parameters:
         - name: id
@@ -367,7 +367,7 @@ paths:
   /v1/payments/{id}/refunds/{refund_id}:
     get:
       tags:
-        - $ref: "#/tags/marketplace"
+        - $ref: '#/tags/checkout-api'
       summary: Get specific refund
       description: Get a specific Refund from a specific payment
       parameters:
@@ -500,8 +500,8 @@ paths:
   /v1/payments/{payment_id}:
     put:
       tags:
-        - $ref: '#/tags/marketplace'
-      summary: Create a cancellation
+        - $ref: '#/tags/checkout-api'
+      summary: Create cancellation
       description: Cancel a sale for a specific payment
       parameters:
         - name: payment_id

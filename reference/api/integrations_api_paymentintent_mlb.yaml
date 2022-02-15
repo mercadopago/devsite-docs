@@ -9,7 +9,7 @@ paths:
     post:
       tags:
       - $ref: '#/tags/mp-point'
-      summary: Create a payment intent
+      summary: Create payment intent
       description: This endpoint allows to create a payment intent for a device
       parameters:
         - name: x-test-scope

@@ -110,7 +110,7 @@ $payment = $mp->post("/v1/payments", $payment_data);
 
 ## Listen for notifications of payments
 
- Every time a payment is made and there is a novelty about the payment, Mercado Pago will send you a notification so you can update your systems. You can see the step by step in our section of [notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks)
+ Every time a payment is made and there is a novelty about the payment, Mercado Pago will send you a notification so you can update your systems. You can see the step by step in our section of [notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks/webhooks)
  
  ## Retries
 

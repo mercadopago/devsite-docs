@@ -4,7 +4,7 @@
  
 Para instalar o plugin de forma manual, siga os passos abaixo:
  
-1. [Baixe o arquivo .zip](https://github.com/mercadopago/cart-prestashop-7/raw/master/mercadopago.zip) diretamente do nosso Github ou do [diretório](https://addons.prestashop.com/pt/pagamento-carta-carteira/23962-mercado-pago.html) de módulos do PrestaShop.
+1. [Baixe o arquivo .zip](https://github.com/mercadopago/cart-prestashop-7/releases/latest) diretamente do nosso Github ou do [diretório](https://addons.prestashop.com/pt/pagamento-carta-carteira/23962-mercado-pago.html) de módulos do PrestaShop.
 2. Vá à seção "Módulos e serviços'", no menu "Módulos" do seu administrador.
 3. Clique no botão **Enviar um módulo** no canto superior direito.
 4. Selecione ou arraste o arquivo **Mercadopago.zip** baixado anteriormente.
@@ -17,11 +17,7 @@ Para instalar o plugin de forma manual, siga os passos abaixo:
  
 ### Como validar as notificações?
  
-No plugin da PrestaShop são recebidas apenas notificações do tipo IPN. Para mais informações, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn).
- 
-### Oferecemos suporte para o modo de Gateway?
- 
-Ainda não oferecemos suporte ao **modo Gateway** na PrestaShop.
+No plugin da PrestaShop são recebidas apenas notificações do tipo IPN. Para mais informações, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/introduction).
  
 ### O plugin faz conversão de moeda?
  

@@ -6,9 +6,9 @@ Checkout Pro has features that allow you to improve the management of your sales
 
 IPN notifications (_Instant Payment Notification_) are automatic notifications that can be sent when there are payments and/or status updates, letting you know if transactions have been approved, declined, or are pending.
 
-[Receive IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn)
+[Receive IPN notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/introduction)
 
-Automatic notifications allow you to manage your inventory and keep your system in sync with your business payment flows. Learn how to receive IPN notifications [here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn).
+Automatic notifications allow you to manage your inventory and keep your system in sync with your business payment flows. Learn how to receive IPN notifications [here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/introduction).
 
 ## Enter additional information to the preference
 

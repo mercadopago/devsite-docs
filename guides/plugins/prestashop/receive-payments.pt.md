@@ -7,7 +7,7 @@ Após realizar a integração e fazer os devidos testes, sua loja já está pron
 Para começar a receber pagamentos é necessário ativar o modo Produção. Para isso, siga os procedimentos abaixo.
  
 1. No Painel Administrativo da sua loja na Prestashop, acesse o menu **Módulos e serviços**, localize o plugin do Mercado Pago e clique em **configurar**.
-2. Na tela de gerenciamento do plugin, confirme se as [credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) de produção são as mesmas da conta que você recebe o dinheiro das vendas. Essa informação poderá ser visualizada em seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel).
+2. Na tela de gerenciamento do plugin, confirme se as [credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) de produção são as mesmas da conta que você recebe o dinheiro das vendas. Essa informação poderá ser visualizada em seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/dashboard/introduction).
 3. Em seguida, clique em **sim** para ativar o modo Produção.
  
 > NOTE
@@ -35,11 +35,6 @@ Com relação à **aprovação dos pagamentos** na sua loja, existem três princ
 | Erros do comprador | Erros de preenchimento de dados de endereço, CPF ou cartão. | Checkout com informações claras no passo a passo da compra. |
 | Recusas bancárias | Cartões com expiração da validade, falta de limite, saldo insuficiente ou desabilitado para compras online.| Oferecer alternativas para outros meios e/ou condições de pagamentos. |
 | Prevenção contra fraude | O sistema anti-fraude do Mercado Pago faz a proteção do seu negócio contra ataques maliciosos que podem gerar prejuízos. | Este tipo de recusa é benéfico para sua loja.  |
- 
-Para mais informações sobre os motivos citados acima, acesse os artigos de:
- 
-* [Recusas de pagamento](https://conteudo.mercadopago.com.br/entenda-como-funcionam-as-recusas-de-aprovacao-de-pagamentos-no-mercado-pago);
-* [Como lidar com recusas de pagamento](https://conteudo.mercadopago.com.br/como-lidar-com-as-recusas-de-pagamento-do-cartao-de-credito-no-seu-e-commerce).
  
 > NEXT_STEP_CARD_PT
 >

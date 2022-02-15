@@ -39,7 +39,7 @@ Se requiere información del negocio para identificar tu tienda. Completa los ca
 3. **ID de la tienda:** usa un número o prefijo para identificar pedidos y pagos de tu tienda.
 4. **Integrator ID:** ingresa tu *integrator_id* como miembro del **&lt;dev&gt;program** de Mercado Pago. Si aún no eres un miembro, [haz clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/developer-program) para obtener más información.
 
-En **Ajustes avanzados**, configura las opciones relacionadas con el almacenamiento de información en un archivo para depurar problemas técnicos, así como para configurar las [notificaciones de IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn).
+En **Ajustes avanzados**, configura las opciones relacionadas con el almacenamiento de información en un archivo para depurar problemas técnicos, así como para configurar las [notificaciones de IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/introduction).
 
 ## Experiencia de pago
 
