@@ -47,7 +47,7 @@ Para pagos presenciales, te recomendamos utilizar notificaciones IPN de topic `m
 
 Dentro de la orden, en el objeto payments, encontrarás todos los pagos de la misma. Es importante obtener el id de los pagos con `status` = **approved** para poder realizar devoluciones
 
- WARNING
+> WARNING
 >
 > Importante
 >
