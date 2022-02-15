@@ -111,6 +111,7 @@ We have released the new version 4.9.0 for PrestaShop.
 >
 > [Check GitHub](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.9.1) for further details regarding this release.
 
+
 ## January 2022
 
 ### Janary 27th
