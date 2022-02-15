@@ -1,4 +1,3 @@
-
 # Changelog
 
 Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones de Mercado Pago.
@@ -6,6 +5,62 @@ Entérate todo sobre las nuevas versiones y actualizaciones de las integraciones
 ---
 
 ## Febrero 2022
+
+### 14 de febrero
+
+> CHANGELOG
+>
+> Nueva versión WooCommerce
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: WOOCOMMERCE
+
+Lanzamos la nueva versión 5.7.2 para WooCommerce.
+
+[Ir a documentación de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.7.2).
+
+> CHANGELOG
+>
+> Nueva versión WooCommerce
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: WOOCOMMERCE
+
+Lanzamos la nueva versión 5.7.1 para WooCommerce.
+
+[Ir a documentación de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.7.1).
+
+> CHANGELOG
+>
+> Nueva versión WooCommerce
+>
+> NEW_VERSION: NUEVA VERSIÓN
+>
+> PRODUCT: WOOCOMMERCE
+
+Lanzamos la nueva versión 5.7.0 para WooCommerce.
+
+[Ir a documentación de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.7.0).
 
 ### 11 de febrero
 
@@ -22,7 +77,7 @@ A partir de **abril** se eliminará el historial de pagos de prueba de años ant
 ## 8 de febrero
 
 > CHANGELOG
-> 
+>
 > Nueva versión PrestaShop
 >
 > NEW_VERSION: NUEVA VERSIÓN
@@ -58,7 +113,6 @@ Lanzamos la nueva versión 4.9.0 para PrestaShop.
 > GitHub
 >
 > Consulta en GitHub el detalle de los [últimos cambios productivos](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.9.1).
-
 
 ## Enero 2022
 

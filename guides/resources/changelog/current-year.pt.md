@@ -6,6 +6,62 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ## Fevereiro 2022
 
+### 14 de fevereiro
+
+> CHANGELOG
+>
+> Nova versão WooCommerce
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: WOOCOMMERCE
+
+Lançamos a nova versão 5.7.2 para WooCommerce.
+
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.7.2).
+
+> CHANGELOG
+>
+> Nova versão WooCommerce
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: WOOCOMMERCE
+
+Lançamos a nova versão 5.7.1 para WooCommerce.
+
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.7.1).
+
+> CHANGELOG
+>
+> Nova versão WooCommerce
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: WOOCOMMERCE
+
+Lançamos a nova versão 5.7.0 para WooCommerce.
+
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.7.0).
+
 ### 11 de fevereiro
 
 > CHANGELOG
@@ -15,7 +71,7 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 > NEWS: NOVIDADES
 >
 > PRODUCT: ALL
- 
+
 A partir de **abril**, o histórico de anos anteriores dos pagamentos de teste em **modo Sandbox** será apagado e passaremos a trabalhar apenas com os dados de 2022. É importante salientar que isso não será válido para **pagamentos de teste realizados em ambiente de produção**.
 
 ### 8 de Fevereiro
@@ -57,7 +113,6 @@ Lançamos a nova versão 4.9.0 para PrestaShop.
 > GitHub
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.9.1)
-
 
 ## Janeiro 2022
 
