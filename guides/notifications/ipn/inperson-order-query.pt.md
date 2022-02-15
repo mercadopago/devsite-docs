@@ -17,3 +17,19 @@ No pedido, dentro do objeto pagamento, você encontrará todos os pagamentos efe
 Se você precisar de mais informações sobre os pagamentos, pode usar o ID de pagamento para obter uma resposta mais detalhada.
 
 Em nossa [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get) você obterá as informações necessárias sobre os parâmetros de solicitação e resposta.
+
+> PREV_STEP_CARD_PT
+>
+> Eventos de notificação
+>
+> Conheça sobre eventos de notificação.
+>
+> [Eventos de notificação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/inperson-notification-events)
+
+> NEXT_STEP_CARD_PT
+>
+> Troubleshooting
+>
+> Conheça o que fazer quando as notificações não são recebidas.
+>
+> [Troubleshooting](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/troubleshooting)

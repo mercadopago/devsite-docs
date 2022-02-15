@@ -16,3 +16,11 @@ The following actions are available for **IPN**.
 > [On demand order search](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/troubleshooting)
 > <br>
 > [Search payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/additional-tools)
+
+> PREV_STEP_CARD_EN
+>
+> Additional tools
+>
+> Learn about additional tools for payments search.
+>
+> [Additional tools](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/additional-tools)

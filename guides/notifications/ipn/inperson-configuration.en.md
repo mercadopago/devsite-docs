@@ -16,3 +16,19 @@ The payment confirmation process is divided in two parts:
 
 1. Notification events
 2. Merchant order query
+
+> PREV_STEP_CARD_EN
+>
+> In person payments introduction
+>
+> IPN for in person payments using QR.
+>
+> [In person payments introduction](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/inperson-introduction)
+
+> NEXT_STEP_CARD_EN
+>
+> Notification events
+>
+> Learn about notification events.
+>
+> [Notification events](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/inperson-notification-events)

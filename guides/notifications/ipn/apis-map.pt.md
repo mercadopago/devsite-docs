@@ -16,3 +16,11 @@ As ações a seguir estão disponíveis para **IPN**.
 > [Pesquisar pedidos sob demanda](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/troubleshooting)
 > <br>
 > [Pesquisa de pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/additional-tools)
+
+> PREV_STEP_CARD_PT
+>
+> Ferramentas adicionais
+>
+> Conheça sobre ferramentas adicionais para pesquisa de pagamento.
+>
+> [Ferramentas adicionais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/additional-tools)

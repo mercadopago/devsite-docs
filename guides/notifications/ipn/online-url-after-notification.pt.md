@@ -12,3 +12,19 @@ Depois de dar um retorno à notificação, você obterá as informações comple
 | point_integration_ipn | - | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/mp-point/introduction) |
 
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma como, por exemplo, atualizar um pagamento aprovado o um pedido fechado.
+
+> PREV_STEP_CARD_PT
+>
+> Configurações ao criar pagamentos
+>
+> Defina a URL de notificação ao criar um pagamento.
+>
+> [Configurações ao criar pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/online-payment-creation-config)
+
+> NEXT_STEP_CARD_PT
+>
+> Introdução aos pagamentos presenciais
+>
+> IPN para pagamentos presenciais com QR.
+>
+> [Introdução aos pagamentos presenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/inperson-introduction)

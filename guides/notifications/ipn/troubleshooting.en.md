@@ -39,3 +39,19 @@ If the QR on which the order was published has not been scanned, the response wi
 > Mercado Pago requires standardizing the integration of in person payments that have the notification (IPN) to Merchant Orders implemented as their main method.
 > <br>
 > The order search by `external_reference` should only be used as a contingency method in the event that no notifications are received.
+
+> PREV_STEP_CARD_EN
+>
+> Merchant order query
+>
+> Consult the orders status.
+>
+> [Merchant order query](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/inperson-order-query)
+
+> NEXT_STEP_CARD_EN
+>
+> Additional tools
+>
+> Learn about additional tools for payments search.
+>
+> [Additional tools](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/additional-tools)

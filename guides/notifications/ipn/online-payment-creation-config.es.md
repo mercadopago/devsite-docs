@@ -250,3 +250,19 @@ curl -X POST \
 > Por ejemplo, si configuras la URL: `https://www.yoursite.com/notifications`, recibirás notificaciones de pago como esta:` https://www.yoursite.com/notifications?topic=payment&id=123456789`.
 
 4. Si deseas recibir notificaciones solo de IPN y no de Webhooks, puedes agregar en el `notification_url` el parámetro `source_news=ipn`. Por ejemplo: https://www.yourserver.com/notifications?source_news=ipn
+
+> PREV_STEP_CARD_ES
+>
+> Pagos Online
+>
+> Configura URLs y eventos para pagos online.
+>
+> [Configuración de URLs y eventos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/online-url-configuration)
+
+> NEXT_STEP_CARD_ES
+>
+> Después de recibir la notificación
+>
+> Acciones necesarias después de recibir la notificación.
+>
+> [Después de recibir la notificación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/online-url-after-notification)

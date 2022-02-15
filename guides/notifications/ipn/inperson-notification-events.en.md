@@ -53,4 +53,18 @@ Inside the order, in the payments object, you will find all the payments for it.
 >
 > Mercado Pago requests for integrations to use this IPN notification method as the main method to receive payment notifications.
 
+> PREV_STEP_CARD_EN
+>
+> Configue in person payment notifications
+>
+> Configure notifications for QR code payments.
+>
+> [Configue in person payment notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/inperson-configuration)
 
+> NEXT_STEP_CARD_EN
+>
+> Merchant order query
+>
+> Consult the orders status.
+>
+> [Merchant order query](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/inperson-order-query)

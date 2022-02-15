@@ -39,3 +39,19 @@ Se o QR em que o pedido foi publicado não tiver sido verificado, a resposta ser
 > No Mercado Pago exigimos a padronização da integração dos pagamentos presenciais, que têm como principal método a notificação (IPN).
 > <br>
 > A busca de pedidos por `external_reference` deve ser utilizada apenas como contingência, caso nenhuma notificação seja recebida.
+
+> PREV_STEP_CARD_PT
+>
+> Consulta da ordem
+> 
+> Verifique o status das ordens.
+>
+> [Consulta da ordem](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/inperson-order-query)
+
+> NEXT_STEP_CARD_PT
+>
+> Ferramentas adicionais
+>
+> Conheça sobre ferramentas adicionais para pesquisa de pagamento.
+>
+> [Ferramentas adicionais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/additional-tools)

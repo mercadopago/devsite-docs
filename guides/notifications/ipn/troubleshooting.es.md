@@ -39,3 +39,19 @@ Si no se ha escaneado el QR en el que se publicó el pedido, la respuesta será:
 > Para homologar la integración de pagos presenciales, desde Mercado Pago requerimos que tengan implementada la notificación (IPN) a Merchant Orders como método principal. 
 > <br>
 > La búsqueda de orden por `external_reference` deberá usarse sólo como contingencia ante el eventual caso que no se reciban notificaciones.
+
+> PREV_STEP_CARD_ES
+>
+> Consulta de la orden
+>
+> Consulta los estados de las órdenes.
+>
+> [Consulta de la orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/inperson-order-query)
+
+> NEXT_STEP_CARD_ES
+>
+> Herramientas adicionales
+>
+> Aprende sobre herramientas adicionales para búsqueda de pagos.
+>
+> [Herramientas adicionales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/additional-tools)

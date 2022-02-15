@@ -9,3 +9,19 @@ Se você estiver integrando pagamentos presenciais com QR code, abaixo apresenta
 > Importante
 >
 > O Mercado Pago orienta que as integrações utilizem esse método de notificação IPN como método principal para receber as notificações de pagamento.
+
+> PREV_STEP_CARD_PT
+>
+> Após receber a notificação
+>
+> Ações necessárias após receber a notificação.
+>
+> [Após receber a notificação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/online-url-after-notification)
+
+> NEXT_STEP_CARD_PT
+>
+> Configurar notificações de pagamento cara a cara
+>
+> Configurar notificações de pagamento com código QR.
+>
+> [Configurar notificações de pagamento cara a cara](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/inperson-configuration)

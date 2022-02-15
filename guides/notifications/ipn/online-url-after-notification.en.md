@@ -13,3 +13,18 @@ After returning the notification, you will get the full information of the notif
 
 With this information, you will be able to carry out the necessary updates to your platform, such as updating an approved payment or a closed order.
 
+> PREV_STEP_CARD_EN
+>
+> Configuration while creating payments
+>
+> Configure the notification URL while creating a payment.
+>
+> [Configuration while creating payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/online-payment-creation-config)
+
+> NEXT_STEP_CARD_EN
+>
+> In person payments introduction
+>
+> IPN for in person payments using QR.
+>
+> [In person payments introduction](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/inperson-introduction)

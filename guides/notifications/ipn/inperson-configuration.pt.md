@@ -16,3 +16,19 @@ O processo de confirmação de pagamento é dividido em duas partes:
 
 1. Eventos de notificação
 2. Consulta da ordem
+
+> PREV_STEP_CARD_PT
+>
+> Introdução aos pagamentos presenciais
+>
+> IPN para pagamentos presenciais com QR.
+>
+> [Introdução aos pagamentos presenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/inperson-introduction)
+
+> NEXT_STEP_CARD_PT
+>
+> Eventos de notificação
+>
+> Conheça sobre eventos de notificação.
+>
+> [Eventos de notificação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/inperson-notification-events)

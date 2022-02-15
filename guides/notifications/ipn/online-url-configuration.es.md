@@ -10,3 +10,18 @@ A continuación explicaremos cómo indicar las URLs que serán notificadas y có
 4. Si necesitas identificar varias cuentas, al final de la URL indicada puedes especificar el parámetro `?cliente=(nombredelvendedor) endpoint` para identificar a los vendedores.
 5. Selecciona los **eventos** de los que recibirás notificaciones en formato `json` usando `HTTP POST` a la URL especificada anteriormente. Te notificamos de los eventos relacionados con tus pedidos (`merchant_orders`), devoluciones de cargo recibidas (`chargebacks`), pagos recibidos (`payment`) o intentos de pago (`point_integration_ipn`).
 
+> PREV_STEP_CARD_ES
+>
+> Introducción
+>
+> Lee nuestra introducción a IPN.
+>
+> [Introducción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/introduction)
+
+> NEXT_STEP_CARD_ES
+>
+> Configuración al crear pagos
+>
+> Configura la URL de notificación al crear un pago.
+>
+> [Configuración al crear pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/online-payment-creation-config)

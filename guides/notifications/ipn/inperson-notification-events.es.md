@@ -52,3 +52,19 @@ Dentro de la orden, en el objeto payments, encontrarás todos los pagos de la mi
 > Importante
 >
 > Mercado Pago indica a las integraciones que utilicen este método de notificación IPN como método principal para recibir notificaciones de pago.
+
+> PREV_STEP_CARD_ES
+>
+> Configura notificaciones de pagos presenciales
+>
+> Configura las notificaciones de pago con código QR.
+>
+> [Configura notificaciones de pagos presenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/inperson-configuration)
+
+> NEXT_STEP_CARD_ES
+>
+> Consulta de la orden
+>
+> Consulta los estados de las órdenes.
+>
+> [Consulta de la orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/inperson-order-query)

@@ -17,3 +17,19 @@ Within the MO, in the payment object, you will find all the payments made, wheth
 If you require more information about payments you can use the **payment ID** to obtain a more detailed response.
 
 Please find all the information you need about the request and response parameters in our [API reference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) documentation.
+
+> PREV_STEP_CARD_EN
+>
+> Notification events
+>
+> Learn about notification events.
+>
+> [Notification events](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/inperson-notification-events)
+
+> NEXT_STEP_CARD_EN
+>
+> Troubleshooting
+>
+> Learn what to do when you donñt receive notifications.
+>
+> [Troubleshooting](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/troubleshooting)

@@ -14,3 +14,18 @@ Después de devolver la notificación, obtendrás la información completa del r
 Con esta información podrás realizar las actualizaciones necesarias a tu plataforma, como actualizar un pago aprobado o un pedido cerrado.
 
 
+> PREV_STEP_CARD_ES
+>
+> Configuración al crear pagos
+>
+> Configura la URL de notificación al crear un pago.
+>
+> [Configuración al crear pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/online-payment-creation-config)
+
+> NEXT_STEP_CARD_ES
+>
+> Introducción a pagos presenciales
+>
+> IPN for in person payments using QR.
+>
+> [Introducción a pagos presenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/inperson-introduction)

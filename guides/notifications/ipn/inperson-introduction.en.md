@@ -10,3 +10,18 @@ If you are integrating in person payments with QR code, below we will provide in
 >
 > Mercado Pago directs integrations to use this IPN notification method as the primary method to receive payment notifications.
 
+> PREV_STEP_CARD_EN
+>
+> After receiving the notification
+>
+> Actions to be carried out after receiving the notification.
+>
+> [After receiving the notification](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/online-url-after-notification)
+
+> NEXT_STEP_CARD_EN
+>
+> Configue in person payment notifications
+>
+> Configure notifications for QR code payments.
+>
+> [Configue in person payment notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/inperson-configuration)

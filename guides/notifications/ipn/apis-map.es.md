@@ -16,3 +16,10 @@ Las siguientes acciones están disponibles para **IPN**.
 > <br>
 > [Búsqueda de pagos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/additional-tools)
 
+> PREV_STEP_CARD_ES
+>
+> Herramientas adicionales
+>
+> Aprende sobre herramientas adicionales para búsqueda de pagos.
+>
+> [Herramientas adicionales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/additional-tools)
