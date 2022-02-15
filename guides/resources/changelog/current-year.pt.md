@@ -113,7 +113,6 @@ Lançamos a nova versão 4.9.0 para PrestaShop.
 > GitHub
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.9.1)
-
 ## Janeiro 2022
 
 ### 27 de janeiro
