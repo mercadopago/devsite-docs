@@ -326,7 +326,7 @@ Lançamos a nova versão 3.11.0 para Magento 2.
 > PRODUCT: OAUTH
 Aprenda a gerenciar várias contas do Mercado Pago simultaneamente e de forma segura através do OAuth. Essa funcionalidade de vinculação permite que o vendedor acesse sua conta do Mercado Pago, autorize a vinculação e habilite sua aplicação para operar em seu nome.
 
-[Ir para a documentação de OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/oauth)
+[Ir para a documentação de OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/oauth/introduction)
 
 ### 13 de setembro
 
@@ -526,6 +526,7 @@ Agora você pode incluir Boleto Bancário, Checkout Pro, Mercado Pago Wallet y M
 O MercadoPago.js V2 inclui dentro de suas funcionalidades um sistema para prevenção de fraudes. Seu objetivo é detectar e analisar comportamentos incomuns dos clientes, evitar movimentos suspeitos e melhorar a aprovação dos pagamentos.
 
 Nunca guardaremos ou compartilharemos os dados de seus clientes, mas se preferir não utilizar o device ID, saiba como desabilitá-lo na [referência técnica](https://github.com/mercadopago/sdk-js).
+
 ### 27 de julho
 
 > CHANGELOG
@@ -947,6 +948,7 @@ Use o modelo dinâmico para integrar Código QR que permite incluir o montante a
 Agora você pode incluir Pix como meio de pagamento com o gateway MercadoPagoV2 para VTEX.
 
 [Ir para a documentação VTEX](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/unofficial/vtex/#bookmark_criando_afiliação_de_gateway_mercadopagov2)
+
 ------------
 
 ### 22 de abril
@@ -986,7 +988,6 @@ Lançamos a nova versão 5.1.1 para WooCommerce.
 > GitHub
 >
 > Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.1.1).
-
 
 ### 20 de abril
 

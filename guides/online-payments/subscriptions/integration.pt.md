@@ -37,7 +37,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval_plan' \
 	"auto_recurring":{
 		"frequency":"1",
 		"frequency_type":"months",
-        "transaction_amount":1100,
+        "transaction_amount":700.00,
 		"currency_id":"[FAKER][CURRENCY][ACRONYM]",
 		"repetitions":12,
 		"free_trial":{
@@ -74,11 +74,10 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval_plan' \
     "date_created": "2020-06-01T20:14:35.008-04:00",
     "last_modified": "2020-06-01T20:14:35.008-04:00",
     "init_point": "https://www.mercadopago.com/mlm/debits/new?preapproval_plan_id=2c938084726e18d60172720000000000",
-    "sandbox_init_point": "https://sandbox.mercadopago.com/mlm/debits/new?preapproval_plan_id=2c938084726e18d60172720000000000",
     "auto_recurring": {
         "frequency": 1,
         "frequency_type": "months",
-        "transaction_amount": 1100,
+        "transaction_amount": 700.00,
         "currency_id": "[FAKER][CURRENCY][ACRONYM]",
         "repetitions": 12,
         "free_trial": {
@@ -114,7 +113,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 | Atributo | Definição |
 | --- | --- |
 | `preapproval_plan_id` (obrigatório) | Refere-se ao plano gerado anteriormente. |
-| `card_token_id` (obrigatório) | Las informações no cartão serão convertidas em um token para enviar os dados com segurança. |
+| `card_token_id` (obrigatório) | As informações no cartão serão convertidas em um token para enviar os dados com segurança. |
 | `payer_email` (obrigatório) | E-mail do pagador. |
 
 > WARNING
@@ -139,17 +138,16 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
     "date_created": "2020-06-02T08:37:42.734-04:00",
     "last_modified": "2020-06-02T08:37:42.735-04:00",
     "init_point":  "https://www.mercadopago.com/mlm/debits/new?preapproval_id=2c938084726e18d60172750000000000",
-    "sandbox_init_point": "https://sandbox.mercadopago.com/mlm/debits/new?preapproval_id=2c938084726e18d60172750000000000",
     "auto_recurring": {
         "frequency": 1,
         "frequency_type": "months",
-        "transaction_amount": 1100,
+        "transaction_amount": 700.00,
         "currency_id": "[FAKER][CURRENCY][ACRONYM]",
         "start_date": "2020-07-02T08:37:42.734-04:00",
         "end_date": "2021-07-02T11:59:52.581-04:00"
 }
 ```
->Você pode obter mais informações sobre os campos na [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference).
+>Você pode obter mais informações sobre os campos na [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/subscriptions/_preapproval/post).
 
 Pronto! Você criou uma assinatura com um plano associado.
 
@@ -169,7 +167,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 --data-raw '{
   "auto_recurring": {
     "currency_id": "[FAKER][CURRENCY][ACRONYM]",
-    "transaction_amount": 1100,
+    "transaction_amount": 700.00,
     "frequency": 1,
     "frequency_type": "months",
     "end_date": "2022-07-20T11:59:52.581-04:00"
@@ -199,11 +197,10 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
     "date_created": "2020-06-02T09:07:14.260-04:00",
     "last_modified": "2020-06-02T09:07:14.263-04:00",
     "init_point": "https://www.mercadopago.com/mlm/debits/new?preapproval_id=2c938084726fca480172750000000000",
-    "sandbox_init_point": "https://sandbox.mercadopago.com/mlm/debits/new?preapproval_id=2c938084726fca480172750000000000",
     "auto_recurring": {
         "frequency": 1,
         "frequency_type": "months",
-        "transaction_amount": 1100,
+        "transaction_amount": 700.00,
         "currency_id": "[FAKER][CURRENCY][ACRONYM]",
         "start_date": "2020-06-02T09:07:14.260-04:00",
         "end_date": "2022-07-20T11:59:52.581-04:00"
@@ -233,7 +230,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 --data-raw '{
   "auto_recurring": {
     "currency_id": "[FAKER][CURRENCY][ACRONYM]",
-    "transaction_amount": 1100,
+    "transaction_amount": 700.00,
     "frequency": 1,
     "frequency_type": "months",
     "end_date": "2022-07-20T11:59:52.581-04:00"
@@ -270,11 +267,10 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
     "date_created": "2020-06-02T09:07:14.260-04:00",
     "last_modified": "2020-06-02T09:07:14.263-04:00",
     "init_point": "https://www.mercadopago.com/mlm/debits/new?preapproval_id=2c938084726fca480172750000000000",
-    "sandbox_init_point": "https://sandbox.mercadopago.com/mlm/debits/new?preapproval_id=2c938084726fca480172750000000000",
     "auto_recurring": {
         "frequency": 1,
         "frequency_type": "months",
-        "transaction_amount": 1100,
+        "transaction_amount": 700.00,
         "currency_id": "[FAKER][CURRENCY][ACRONYM]",
         "start_date": "2020-06-02T09:07:14.260-04:00",
         "end_date": "2022-07-20T11:59:52.581-04:00"
@@ -283,7 +279,7 @@ curl --location --request POST 'https://api.mercadopago.com/preapproval' \
 }
 ```
 
-> Você pode obter mais informações sobre os campos na [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference).
+> Você pode obter mais informações sobre os campos na [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/subscriptions/_preapproval/post).
 
 
 Atributos

@@ -453,7 +453,7 @@ Para obtener una respuesta de pago se deberá implementar el protocolo **PXLifeC
 
 Las notificaciones son la forma automática de enterarte de tus nuevos pagos y las actualizaciones de sus estados. Esto te permitirá administrar tu _stock_ y mantener tu sistema sincronizado.
 
-Visita la sección [Notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn) para conocer más sobre esto.
+Visita la sección [Notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/introduction) para conocer más sobre esto.
 
 ### Previene pagos rechazados
 

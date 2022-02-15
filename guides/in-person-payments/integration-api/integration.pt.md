@@ -6,7 +6,7 @@ Siga estas etapas para começar a integrar a API de integrações aos seus ponto
 
 ### Acesse uma conta no Mercado Pago
 
-Para iniciar a integração, é necessário ter uma conta no Mercado Pago ou no Mercado Libre.
+Para iniciar a integração, é necessário ter uma conta no Mercado Pago ou no Mercado Livre.
 Você pode [Entrar](https://www.mercadolibre.com/jms/[FAKER][GLOBALIZE][SITE_ID]/lgz/login?platform_id=mp&go=https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/qr-code/pre-requisites)
 em uma conta existente ou [Criar uma nova conta](https://www.mercadopago[FAKER][URL][DOMAIN]).
 
@@ -26,7 +26,7 @@ E pronto!
 >
 > Nota
 >
-> Se você vai realizar operações em nome de outros vendedores, pode gerenciar a ligação segura integrando [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/oauth).
+> Se você vai realizar operações em nome de outros vendedores, pode gerenciar a ligação segura integrando [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/oauth/introduction).
 
 ### Acesse as credenciais da sua aplicação
 
@@ -90,7 +90,8 @@ Depois de vincular seu dispositivo Point à sua conta do Mercado Pago, você dev
 
 Para integrar seu dispositivo Point com a nossa API, é necessário ativar o modo de operação ponto de venda (PDV). Para fazer isso, execute o seguinte comando:
 
-``` curl --location --request PATCH 'https://api.mercadopago.com/point/integration-api/devices/{{device.id}}' \
+``` bash
+curl --location --request PATCH 'https://api.mercadopago.com/point/integration-api/devices/{{device.id}}' \
 --header 'Authorization: Bearer ${ACCESS_TOKEN}' \
 --header 'Content-Type: application/json' \
 --data-raw '{

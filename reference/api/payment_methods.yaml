@@ -9,9 +9,9 @@ paths:
     get:
       tags:
         - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/subscriptions'
-      summary: Get the payment methods
+        - $ref: '#/tags/checkout-api'
+      summary: Get payment methods
       description: Consult all the available payment methods and obtain a list with the details of each one and its properties
       responses:
         '200':

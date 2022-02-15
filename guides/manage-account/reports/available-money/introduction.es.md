@@ -46,21 +46,21 @@ Usa el reporte de Dinero retirado **cuando quieras tener un informe detallado de
 ### Usa el reporte para conocer tu historial
 
 Además, puedes usar el reporte para conocer el historial de dinero retirado entre dos fechas o dos retiros de dinero, el detalle de los eventos que componen un retiro automático o manual (total o parcial), el detalle de disputas, reembolsos, envios, contracargos, impuestos y otras operaciones. También visualizarás el detalle de las cuotas liquidadas y las cuotas que aún faltan saldar.
-----[mlm, mlb, mlc, mco, mlu, mla]----
+----[mlm, mlb, mlc, mco, mla]----
 > NOTE
 >
 > Nota
 >
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/glossary) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 ------------
-----[mpe]----
+----[mpe, mlu]----
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/available-money/glossary) de Dinero retirado para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
 > NOTE
 >
-> Próximamente verás los registros de tus movimientos en orden cronológico.
+> Encuentra con mayor facilidad todos tus movimientos
 >
-> En los reportes que generes a partir de Diciembre vas a ver todos tus movimientos en el orden en que se realizaron para que puedas identificarlos más fácil y controlar mejor tus ventas.
+> A partir de ------------ ----[mpe]----enero de 2022 ------------  ----[mlu]---- marzo de 2022 ------------  ----[mpe, mlu]---- este reporte muestra tus movimientos en orden cronológico, para que sea más fácil identificar cuándo se realizaron. Este cambio no se visualiza en los reportes que generes con fechas previas.
 ------------
 <hr/>
 

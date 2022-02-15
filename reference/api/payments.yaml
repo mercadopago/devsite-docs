@@ -9,10 +9,10 @@ paths:
     post:
       tags:
         - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/subscriptions'
-      summary: Create payments
+        - $ref: '#/tags/checkout-api'
+      summary: Create payment
       description: Create a payment and add all the information you need. Remember to add the payment details and the payer's information
       requestBody:
         content:
@@ -809,11 +809,11 @@ paths:
     get:
       tags:
         - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/qr-code'
         - $ref: '#/tags/subscriptions'
-      summary: Get a payment
+        - $ref: '#/tags/checkout-api'
+      summary: Get payment
       description: See all the information of a payment through the payment ID
       parameters:
         - name: id
@@ -1132,10 +1132,10 @@ paths:
     put:
       tags:
         - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/subscriptions'
-      summary: Update a payment
+        - $ref: '#/tags/checkout-api'
+      summary: Update payment
       description: Renew the details of a payment when you need it. Indicate the payment ID and send the parameters with the information you want to update
       parameters:
         - name: id
@@ -1627,11 +1627,11 @@ paths:
     get:
       tags:
         - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
         - $ref: '#/tags/qr-code'
         - $ref: '#/tags/subscriptions'
-      summary: Find payments
+        - $ref: '#/tags/checkout-api'
+      summary: Search payments
       description: Search and return payments made in the last twelve months from the search date
       parameters:
         - name: sort

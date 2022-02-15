@@ -104,9 +104,9 @@ To validate the QR, you only need to [create a test user](https://www.mercadopag
 
 ## Notifications
 
-To get the payment data, you need to configure the notification URL in [Mercado Pago panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn). 
+To get the payment data, you need to configure the notification URL in [Mercado Pago panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn/introduction). 
 
-With the URL configured, you can validate orders as shown in [Notifications section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn). 
+With the URL configured, you can validate orders as shown in [Notifications section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/introduction). 
 
 
 

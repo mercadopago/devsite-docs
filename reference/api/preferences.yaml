@@ -9,9 +9,8 @@ paths:
     post:
       tags:
         - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
-      summary: Create a preference
+      summary: Create preference
       description: Generate a preference with the information of a product or service and obtain the necessary URL to start the payment flow
       requestBody:
         content:
@@ -550,7 +549,6 @@ paths:
     get:
       tags:
         - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
       summary: Search preferences
       description: Find all the information related to generated preferences using specific filters or a specific date range
@@ -709,9 +707,8 @@ paths:
     get:
       tags:
         - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
-      summary: Get a preference
+      summary: Get preference
       description: Check all the payment information for a product or service with the ID of the preference of your choice
       parameters:
         - name: id
@@ -987,7 +984,6 @@ paths:
     put:
       tags:
         - $ref: '#/tags/checkout-pro'
-        - $ref: '#/tags/marketplace'
         - $ref: '#/tags/mobile-checkout'
       summary: Update a preference
       description: Renew the details of a payment preference. Indicate the ID of the preference and send the parameters with the information you want to update
