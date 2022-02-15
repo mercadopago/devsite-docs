@@ -198,7 +198,8 @@ We have released the new version 3.14.1 for Magento 2.
 > NEW_VERSION: NEW VERSION
 >
 > PRODUCT: WOOCOMMERCE
-> We have released the new version 5.6.1 for WooCommerce.
+
+We have released the new version 5.6.1 for WooCommerce.
 
 [Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction)
 
