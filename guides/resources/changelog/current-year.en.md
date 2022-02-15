@@ -51,7 +51,8 @@ We have released the new version 5.7.1 for WooCommerce.
 > NEW_VERSION: NEW VERSION
 >
 > PRODUCT: WOOCOMMERCE
-> We have released the new version 5.7.0 for WooCommerce.
+
+We have released the new version 5.7.0 for WooCommerce.
 
 [Go to WooCommerce documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/woocommerce/introduction)
 
