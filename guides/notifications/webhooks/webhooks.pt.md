@@ -32,9 +32,7 @@ Abaixo explicaremos como indicar as URLs que serão notificadas e como configura
 | `point_integration_wh` | `state_FINISHED`| Processo de pagamento concluído |
 | `point_integration_wh` | `state_CANCELED` | Processo de pagamento cancelado |
 | `point_integration_wh` | `state_ERROR`| Ocorreu um erro ao processar a tentativa de pagamento |
-| `shipments` | `shipment_id`| 	Dados de envio do pedido |
-| `shipments` | `ready_to_ship`| Pedido está passível de ser entregue|
-| `shipments` | `shipment_id`| 	Devolve os dados de envio |
+| `shipments` | `shipment.updated`| Dados de envio e atualização do pedido |
 
 ## Configuração durante a criação de pagamentos
 
@@ -268,6 +266,8 @@ curl -X POST \
 > Importante
 >
 > Para o tipo de evento `point_integration_wh`, o formato da notificação muda. [Clique aqui](https://www.mercadopago[FAKER][URL][DOMÍNIO]/developers/pt/guides/in-person-payments/mp-point/introduction) para consultar a documentação do **Mercado Pago Point**.
+> <br/>
+> No caso do evento de `shipments`, também teremos alguns atributos diferentes na resposta. Veja na tabela abaixo quais são essas particularidades.
 
 ```json
 {
@@ -299,12 +299,23 @@ Isso indica que foi criado o pagamento **999999999** para o usuário **44444** e
 | **api_version** | Indica se é uma notificação duplicada ou não |
 | **action** | Tipo de notificação recebida, indicando se se trata da atualização de um recurso ou da criação de um novo |
 | **data - id** | ID do payment ou merchant_order |
+| **attempts** (shipments) | Número de vezes que uma notificação foi enviada |
+| **received** (shipments) | Data de criação do recurso |
+| **resource** (shipments) | Tipo de notificação recebida, indicando se se trata da atualização de um recurso ou da criação de um novo |
+| **sent** (shipments) | Data de envio da notificação |
+| **topic** (shipments) | Tipo de notificação recebida  |
  
 4. Caso deseje receber notificações apenas de Webhook e não de IPN, você pode adicionar na `notification_url` o parâmetro `source_news=webhook`. Por exemplo: https://www.yourserver.com/notifications?source_news=webhooks
 
 ## Ações necessárias após receber uma notificação
 
 [TXTSNIPPET][/guides/snippets/test-integration/notification-response]
+
+> NOTE
+>
+> Importante
+>
+> No caso do tipo de evento `shipments`, para evitar que o tópico de notificações realize novas tentativas de envio será necessário confirmar o recebimento das mensagens retornando um `HTTP STATUS 200 (OK)` em até **500 ms**. Caso não seja enviada uma mensagem confirmando o recebimento da notificação, **novas tentativas serão feitas em um período de 12 horas**.
 
 Depois de dar um retorno à notificação e confirmar o seu recebimento, você obterá as informações completas do recurso notificado acessando o terminal correspondente da API:
 
@@ -315,6 +326,6 @@ Depois de dar um retorno à notificação e confirmar o seu recebimento, você o
 | subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | - |
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | - |
 | point_integration_wh | - | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/mp-point/introduction) |
-| shipments | - | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/mp-point/introduction) |
+| shipments | - | - |
 
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma como, por exemplo, atualizar um pagamento aprovado. 
