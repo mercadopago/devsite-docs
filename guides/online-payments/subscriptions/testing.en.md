@@ -59,11 +59,7 @@ Credit card testing
 
 ### Test cards
 
-| Card | Number | CVV | Expiration date |
-| --- | --- | --- | --- |
-| Mastercard | 5031 7557 3453 0604 | 123 | 11/25 |
-| Visa | 4509 9535 6623 3704 | 123 | 11/25 |
-| American Express | 3711 803032 57522 | 1234 | 11/25 |
+[TXTSNIPPET][/guides/snippets/test-integration/test-cards]
 
 ------------
 ### Next steps
