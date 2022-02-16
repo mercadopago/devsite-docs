@@ -32,6 +32,9 @@ Abaixo explicaremos como indicar as URLs que serão notificadas e como configura
 | `point_integration_wh` | `state_FINISHED`| Processo de pagamento concluído |
 | `point_integration_wh` | `state_CANCELED` | Processo de pagamento cancelado |
 | `point_integration_wh` | `state_ERROR`| Ocorreu um erro ao processar a tentativa de pagamento |
+| `shipments` | `shipment_id`| 	Dados de envio do pedido |
+| `shipments` | `ready_to_ship`| Pedido está passível de ser entregue|
+| `shipments` | `shipment_id`| 	Devolve os dados de envio |
 
 ## Configuração durante a criação de pagamentos
 
@@ -312,5 +315,6 @@ Depois de dar um retorno à notificação e confirmar o seu recebimento, você o
 | subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | - |
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | - |
 | point_integration_wh | - | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/mp-point/introduction) |
+| shipments | - | [ver documentação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/mp-point/introduction) |
 
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma como, por exemplo, atualizar um pagamento aprovado. 
