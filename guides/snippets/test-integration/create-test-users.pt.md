@@ -18,7 +18,9 @@ A resposta terá estrutura similar a do exemplo abaixo:
     "nickname": "TT123456",
     "password": "qatest123456",
     "site_status": "active",
-    "email": "test_user_123456@testuser.com"
+    "email": "test_user_123456@testuser.com",
+    "date_created": "2021-11-04T12:02:35Z",
+    "date_last_updated": "2021-11-04T12:02:35Z"
 }
 ```
 
