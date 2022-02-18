@@ -6,9 +6,9 @@ En caso de que requieras un listado de los pagos realizados puedes hacer una lla
 
 Puedes utilizar parámetros del body de un `payment` como query params para poder filtrar los resultados:
 
-**Begin date:** fecha de inicio de la búsqueda
-**End date:** fecha de fin de la búsqueda
-**Status:** estado del pago
+* **Begin date:** fecha de inicio de la búsqueda
+* **End date:** fecha de fin de la búsqueda
+* **Status:** estado del pago
 
 A continuación, te mostramos un ejemplo de la llamada a la API con estos query params:
 

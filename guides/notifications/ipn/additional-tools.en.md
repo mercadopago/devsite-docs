@@ -6,9 +6,9 @@ If you require a list of payments you can make an API call to the payments endpo
 
 You can use body parameters of a `payment` as query params to be able to filter the results:
 
-**Begin date:** begin date for searching
-**End date:** end date for searching
-**Status:** payment status
+* **Begin date:** begin date for searching
+* **End date:** end date for searching
+* **Status:** payment status
 
 Here’s an example of an API call using these query params:
 
