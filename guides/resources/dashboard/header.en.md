@@ -20,4 +20,4 @@ Check out the [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL][DOMAIN]/d
 >
 > Check information about your created applications.
 >
-> [Your applications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/aplications)
+> [Your applications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/applications)

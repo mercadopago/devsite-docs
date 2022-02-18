@@ -22,7 +22,7 @@ Para gerar o authorization code é preciso atender aos requisitos abaixo.
 >
 > Lembre que você vai utilizar informações sensíveis dos seus vendedores. Certifique-se de resguardá-las de maneira segura. Não as utilize na URL de autenticação e gerencie todo processo somente a partir do seu servidor.
  
-1. Edite sua aplicação para conter sua Redirect URL. Veja [Editar aplicação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/dashboard/aplication).
+1. Edite sua aplicação para conter sua Redirect URL. Veja [Editar aplicação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/dashboard/application).
 2. Envie a URL de autenticação para o vendedor cuja conta você deseja vincular à sua com os seguintes campos:
 
    |Descrição|URL| 
