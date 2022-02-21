@@ -85,7 +85,7 @@ paths:
                 back_url:
                   required: true
                   type: string
-                  description: Successful return url. Use this setting to redirect your customers after our checkout to your site. It is only required for subscriptions without a plan.
+                  description: Successful return url. Use this setting to redirect your customers  to your site after our checkout. It is only required for subscriptions without a plan.
                   example: https://www.mercadopago.com.ar
                 status:
                   type: string
@@ -113,7 +113,7 @@ paths:
                   application_id:
                     type: number
                     example: 1234567812345678
-                    description: Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account. Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account.
+                    description: Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account.
                   collector_id:
                     type: number
                     example: 100200300
@@ -133,11 +133,11 @@ paths:
                   back_url:
                     type: string
                     example: https://www.mercadopago.com.ar
-                    description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                    description: Successful return URL. Use this setting to redirect your customers to your site after our checkout.
                   init_point:
                     type: string
                     example: https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_id=2c938084726fca480172750000000000
-                    description: Url to checkout to add or modify payment method.
+                    description: URL to checkout to add or modify payment method.
                   auto_recurring:
                     type: object
                     description: Configuration data for recurrence.
@@ -418,7 +418,7 @@ paths:
                 back_url:
                   required: true
                   type: string
-                  description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                  description: Successful return URL. Use this setting to redirect your customers to your site after our checkout.
                   example: https://www.yoursite.com
       responses:
         '200':
@@ -527,11 +527,11 @@ paths:
                             example: bolbradesco
                     back_url:
                       type: string
-                      description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                      description: Successful return URL. Use this setting to redirect your customers to your site after our checkout.
                       example: https://www.mercadopago.com.ar
                   back_url:
                     type: string
-                    description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                    description: Successful return URL. Use this setting to redirect your customers to your site after our checkout.
                     example: https://www.mercadopago.com.ar
                   external_reference:
                     type: string
@@ -651,7 +651,7 @@ paths:
                   version:
                     type: number
                     example: 0
-                    description: How many times subscription was modified
+                    description: Indicates how many times the subscription was modified
                   application_id:
                     type: number
                     example: 1234567812345678
@@ -675,11 +675,11 @@ paths:
                   back_url:
                     type: string
                     example: https://www.mercadopago.com.ar
-                    description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                    description: Successful return URL. Use this setting to redirect your customers to your site after our checkout.
                   init_point:
                     type: string
                     example: https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_id=2c938084726fca480172750000000000
-                    description: Url to checkout to add or modify payment method.
+                    description: URL to checkout to add or modify payment method.
                   auto_recurring:
                     type: object
                     description: Configuration data for recurrence.
@@ -772,7 +772,7 @@ paths:
                     properties:
                       quotas:
                         type: number
-                        description: How many payments we going to do.
+                        description: How many payments are going to be made.
                         example: 6
                       charged_quantity:
                         type: number
@@ -796,7 +796,7 @@ paths:
                         example: "2022-01-01T11:12:25.892-04:00"
                       last_charged_amount:
                         type: number
-                        description: Date of last time amount charged.
+                        description: Date of last charged amount.
                         example: 100.00
                       semaphore:
                         type: number
@@ -890,7 +890,7 @@ paths:
                 back_url:
                   type: string
                   example: https://www.mercadopago.com.ar
-                  description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                  description: Successful return URL. Use this setting to redirect your customers after our checkout to your site.
                 auto_recurring:
                   type: object
                   description: Configuration data for recurrence.
@@ -963,11 +963,11 @@ paths:
                   back_url:
                     type: string
                     example: https://www.mercadopago.com.ar
-                    description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                    description: Successful return URL. Use this setting to redirect your customers to your site after our checkout.
                   init_point:
                     type: string
                     example: https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_id=2c938084726fca480172750000000000
-                    description: Url to checkout to add or modify payment method.
+                    description: URL to checkout to add or modify payment method.
                   auto_recurring:
                     type: object
                     description: Configuration data for recurrence.
@@ -1060,7 +1060,7 @@ paths:
                     properties:
                       quotas:
                         type: number
-                        description: How many payments we going to do.
+                        description: How many payments are going to be made.
                         example: 6
                       charged_quantity:
                         type: number
@@ -1084,7 +1084,7 @@ paths:
                         example: "2022-01-01T11:12:25.892-04:00"
                       last_charged_amount:
                         type: number
-                        description: Date of last time amount charged.
+                        description: Date of last charged amount.
                         example: 100.00
                       semaphore:
                         type: number
@@ -1210,7 +1210,7 @@ paths:
                   back_url:
                     required: true
                     type: string
-                    description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                    description: Successful return URL. Use this setting to redirect your customers to your site after our checkout.
                     example: https://www.yoursite.com
                   application_id:
                     type: number
@@ -1245,7 +1245,7 @@ paths:
                   init_point:
                     type: string
                     example: https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c938084726fca480172750000000000
-                    description: Url to checkout to add or modify payment method.
+                    description: URL to checkout to add or modify payment method.
                   preapproval_plan_id:
                     type: string
                     description: Unique preapproval plan identifier. This parameter is only available when it is a subscription with a plan and indicates from which plan the subscription was created.
@@ -1306,7 +1306,7 @@ paths:
                       - false -- Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.
                   quotas:
                     type: number
-                    description: How many payments we going to do.
+                    description: How many payments are going to be made.
                     example: 10
                   charged_quantity:
                     type: number
@@ -1872,7 +1872,7 @@ paths:
                             example: bolbradesco
                     back_url:
                       type: string
-                      description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                      description: Successful return URL. Use this setting to redirect your customers to your site after our checkout.
                       example: https://www.mercadopago.com.ar
                   back_url:
                     type: string
@@ -2598,7 +2598,7 @@ paths:
                         version:
                           type: number
                           example: 0
-                          description: How many times subscription was modified
+                          description: Indicates how many times the subscription was modified
                         application_id:
                           type: number
                           example: 1234567812345678
