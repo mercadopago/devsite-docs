@@ -11,7 +11,7 @@ The following actions are available for **IPN**.
 >
 > Note
 >
-> Remember that you can also make API calls suing query params for the following:
+> Remember that you can also make API calls using query params for the following:
 > <br>
 > [On demand order search](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/troubleshooting)
 > <br>

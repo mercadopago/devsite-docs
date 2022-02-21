@@ -2,11 +2,11 @@
 
 An event is any type of update on the notified object, including changes of status or attributes.
 
-We notify events related to your orders (`merchant_order`) or payments received (` payment`).
+We notify events related to your orders (`merchant_order`) or payments received (`payment`).
 
 The `merchant_order` is an entity that groups both payments and withdrawals. You will have to consult the data of the orders that are notified to you.
 
-Whenever an event occurs related to any of the mentioned resources, we will send you a notification using `HTTP POST` to the` notification_url` you specified.
+Whenever an event occurs related to any of the mentioned resources, we will send you a notification using `HTTP POST` to the `notification_url` you specified.
 
 The following events are notified:
 
@@ -27,7 +27,7 @@ Mercado Pago will inform this `notification_url` both when creating and updating
 
 |Field|Description|
 |---|---|
-|`topic`|Identifies what it is about. It can be `payment` or` merchant_order`.|
+|`topic`|Identifies what it is about. It can be `payment` or `merchant_order`.|
 |`id`|It is a unique identifier of the reported resource.|
 
 
@@ -55,11 +55,11 @@ Inside the order, in the payments object, you will find all the payments for it.
 
 > PREV_STEP_CARD_EN
 >
-> Configue in person payment notifications
+> Configure in person payment notifications
 >
 > Configure notifications for QR code payments.
 >
-> [Configue in person payment notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/inperson-configuration)
+> [Configure in person payment notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/inperson-configuration)
 
 > NEXT_STEP_CARD_EN
 >

@@ -27,7 +27,7 @@ Mercado Pago informará a esta `notification_url` tanto en la creación como act
 
 |Campo|Descrição|
 |---|---|
-|`topic`|Identificação do que se trata. Podendo ser `payment` ou` merchant_order`.|
+|`topic`|Identificação do que se trata. Podendo ser `payment` ou `merchant_order`.|
 |`id`|É um identificador exclusivo do recurso relatado.|
 
 
@@ -42,8 +42,8 @@ Lembre-se que esta comunicação é exclusivamente entre os servidores do Mercad
 
 Se você estiver integrando pagamentos presencial, recomendamos o uso de notificações IPN do tipo `merchant_order`. Para fazer isso, mantenha as seguintes regras em mente:
 
-1. O campo `status` do` merchant_order` permanecerá **aberto** quando ainda não tiver pagamentos associados, ou se tiverem rejeitados ou aprovados por um valor inferior ao total do pedido.
-2. O campo `status` do` merchant_order` será **fechado** quando a soma dos pagamentos aprovados for igual que o total do pedido.
+1. O campo `status` do `merchant_order` permanecerá **aberto** quando ainda não tiver pagamentos associados, ou se tiverem rejeitados ou aprovados por um valor inferior ao total do pedido.
+2. O campo `status` do `merchant_order` será **fechado** quando a soma dos pagamentos aprovados for igual que o total do pedido.
 
 Dentro do pedido, no objeto de pagamentos, você encontrará todos os pagamentos dele. É importante obter o id dos pagamentos com `status` = **aproved** para fazer reembolsos
 

@@ -10,7 +10,7 @@ Siempre que suceda un evento relacionado a alguno de los recursos mencionados, t
 
 Se notifican los siguientes eventos:
 
-1. **Registrar la Merchant Order (MO).** Al escanear un QR que contenga un monto, este creará una merchant order automáticamente, enviando una notificación. Resulta preciso tener en cuenta el siguiente escenario: Si se escanea varias veces el mismo QR, cada uno creará una merchant order distinta y, por lo tanto, una nueva notificación.
+1. **Registrar la Merchant Order (MO).** Al escanear un QR que contenga un monto, este creará una merchant order automáticamente, enviando una notificación. Resulta preciso tener en cuenta el siguiente escenario: si se escanea varias veces el mismo QR, cada uno creará una merchant order distinta y, por lo tanto, una nueva notificación.
 2. **Actualización de Payments.** Cada intento de pago por parte del cliente, actualizará la información de la merchant order y enviará una notificación
 3. **Cierre de la MO.** Una vez que se realice un pago aprobado, el status de la MO aparecerá closed y se enviará una notificación 
 

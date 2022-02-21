@@ -6,7 +6,7 @@ En las notificaciones de IPN para pagos en persona, el campo `status` del objeto
 
 Dentro del pedido, en el objeto de pagos, encontrarás todos los pagos realizados, ya sean aprobados o rechazados. Es importante obtener el ID de los pagos con estado **aprobado** para poder realizar devoluciones de cargo/reembolsos.
 
-Para cada escaneo QR, se genera un `merchant_order` diferente. Recuerda que si el cliente hace más de un escaneo, un pedido estará **opened** indefinidamente y, para cerrar la transacción, el `merchant_order` debe tener `status` = **closed**.
+Para cada escaneo de QR, se genera un `merchant_order` diferente. Recuerda que si el cliente hace más de un escaneo, un pedido estará **opened** indefinidamente y, para cerrar la transacción, el `merchant_order` debe tener `status` = **closed**.
 
 **Para recibir las notificaciones de los eventos en tu plataforma**, puedes configurar previamente una URL a la cual Mercado Pago tenga acceso desde el atributo `notification_url` al crear la orden que deseas cobrar.
 

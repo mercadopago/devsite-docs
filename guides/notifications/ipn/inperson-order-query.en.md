@@ -6,7 +6,7 @@ Please find all the information you need about the request and response paramete
 
 > NOTE
 >
-> Nota
+> Note
 >
 > Remember that the `status` field of the `merchant_order` will only be **closed** when the sum of the approved payments is equal to the total of the order.
 
