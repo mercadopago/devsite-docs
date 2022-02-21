@@ -679,7 +679,7 @@ paths:
                   init_point:
                     type: string
                     example: https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_id=2c938084726fca480172750000000000
-                    description: Url to checkout to add or modify payment method.
+                    description: URL to checkout to add or modify payment method.
                   auto_recurring:
                     type: object
                     description: Configuration data for recurrence.
