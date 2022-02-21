@@ -531,7 +531,7 @@ paths:
                       example: https://www.mercadopago.com.ar
                   back_url:
                     type: string
-                    description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                    description: Successful return URL. Use this setting to redirect your customers to your site after our checkout.
                     example: https://www.mercadopago.com.ar
                   external_reference:
                     type: string
