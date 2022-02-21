@@ -85,7 +85,7 @@ paths:
                 back_url:
                   required: true
                   type: string
-                  description: Successful return url. Use this setting to redirect your customers after our checkout to your site. It is only required for subscriptions without a plan.
+                  description: Successful return url. Use this setting to redirect your customers  to your site after our checkout. It is only required for subscriptions without a plan.
                   example: https://www.mercadopago.com.ar
                 status:
                   type: string
