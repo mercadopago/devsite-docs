@@ -113,7 +113,7 @@ paths:
                   application_id:
                     type: number
                     example: 1234567812345678
-                    description: Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account. Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account.
+                    description: Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account.
                   collector_id:
                     type: number
                     example: 100200300
