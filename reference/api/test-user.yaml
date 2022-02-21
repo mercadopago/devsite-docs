@@ -10,7 +10,7 @@ paths:
       tags:
         - $ref: '#/tags/checkout-api'
         - $ref: '#/tags/checkout-pro'
-      summary: Create Test User
+      summary: Create test user
       description: This endpoint handles http requests to create test_user
       parameters:
         - name: access_token
@@ -129,7 +129,7 @@ paths:
       tags:
         - $ref: '#/tags/checkout-api'
         - $ref: '#/tags/checkout-pro'
-      summary: Create Test User
+      summary: Get test user
       description: This endpoint handles http requests to create test_user
       parameters:
         - name: access_token
@@ -214,7 +214,7 @@ paths:
       tags:
         - $ref: '#/tags/checkout-api'
         - $ref: '#/tags/checkout-pro'
-      summary: Change User Password
+      summary: Update test user password
       description: This endpoint handles http requests to change the test user password
       parameters:
         - name: access_token
@@ -274,7 +274,7 @@ paths:
       tags:
         - $ref: '#/tags/checkout-api'
         - $ref: '#/tags/checkout-pro'
-      summary: Add AM to User Account
+      summary: Add AM to test user account
       description: This endpoint handles http requests to add account_money to the test user account
       parameters:
         - name: access_token
