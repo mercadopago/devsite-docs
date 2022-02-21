@@ -22,9 +22,10 @@ Para realizar a integração você precisará seguir o fluxo de integração usu
 1. Siga as etapas descritas na [documentação OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/oauth/introduction) para obter cada `access_token`. Esta informação será necessária durante o processo de integração do checkout ao _marketplace_.
 2. Escolha o tipo de checkout que deseja ([Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction) ou ----[mla, mlu, mpe, mco, mlc, mlm]----[Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction)------------ ----[mlb]----[Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction)------------) e siga todo o fluxo de integração.
 3. Na integração do checkout, utilize a `public_key` da sua conta de integrador no frontend e insira o `access_token` do vendedor obtido na etapa 1, no backend ou no header da requisição. 
+
 4. Para determinar a porcentagem de comissão do marketplace:
 
-    - Se o checkout for Pro preencha o parâmetro `marketplace_fee` com a porcentagem a ser cobrada para cada preferência de pagamento criada na API **/checkout/preferences**.
-    - Se o checkout for Transparente, preencha o parâmetro `application_fee` com a porcentagem a ser cobrado para cada pagamento criado na API **/payments**.
+    - Se o checkout for Pro, preencha o parâmetro `marketplace_fee` com o valor a ser cobrado para cada preferência de pagamento criada na API **/checkout/preferences**.
+    - Se o checkout for Transparente, preencha o parâmetro `application_fee` com o valor a ser cobrado para cada pagamento criado na API **/payments**.
 
 Ao concluir essas etapas, o checkout terá sido integrado ao _marketplace_ e estará pronto para processar os pagamentos.
