@@ -1,4 +1,4 @@
-# Integre ----[mla, mlu, mpe, mco, mlc, mlm]----[Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction)------------ ----[mlb]----[Checkout Transparente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction)------------) para pagamentos com Pix
+# Integre ----[mla, mlu, mpe, mco, mlc, mlm]----Checkout API------------ ----[mlb]----Checkout Transparente------------ para pagamentos com Pix
 
 Você pode receber pagamentos instantaneamente com Pix (`bank_transfer`) de qualquer banco ou carteira digital, seja através de um **código QR** ou de um **código de pagamento** com um prazo de validade para que o pagamento seja efetuado.
 
