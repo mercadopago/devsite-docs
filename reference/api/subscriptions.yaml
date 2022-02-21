@@ -1449,7 +1449,7 @@ paths:
                       - CLP -- Chilean peso.
                       - MXN -- Mexican peso.
                       - COP -- Colombian peso.
-                      - PEN - Peruvian sol.
+                      - PEN -- Peruvian sol.
                       - UYU -- Uruguayan peso.
                   transaction_amount:
                     type: number
@@ -1611,8 +1611,7 @@ paths:
                         example: 100
                   results:
                     type: array
-                    description: The page of items. This will be an empty array if there are no results.
-                    properties:
+                    items:
                       type: object
                       description: Invoices result item.
                       properties:
@@ -2304,7 +2303,7 @@ paths:
                   results:
                     type: array
                     description: The page of items. This will be an empty array if there are no results.
-                    properties:
+                    items:
                       type: object
                       description: Plan result item.
                       properties:
@@ -2588,14 +2587,14 @@ paths:
                   results:
                     type: array
                     description: The page of items. This will be an empty array if there are no results.
-                    properties:
+                    items:
                       type: object
                       description: Subscription result item.
                       properties:
                         id:
                           type: string
                           example: '2c938084726fca480172750000000000'
-                          description: Unique subscroption identifier.
+                          description: Unique subscription identifier.
                         version:
                           type: number
                           example: 0
