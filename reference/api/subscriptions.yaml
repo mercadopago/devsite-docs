@@ -1060,7 +1060,7 @@ paths:
                     properties:
                       quotas:
                         type: number
-                        description: How many payments we going to do.
+                        description: How many payments are going to be made.
                         example: 6
                       charged_quantity:
                         type: number
