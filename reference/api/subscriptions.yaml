@@ -8,65 +8,92 @@ paths:
   /preapproval:
     post:
       tags:
-        - $ref: '#/tags/subscriptions'
-      summary: Create subscription
-      description: Generate a subscription with all the settings you need
+        - $ref: "#/tags/subscriptions"
+      summary: Create a subscription
+      description: A subscription is the union between a plan and a customer. The main characteristic of this contract is that it has a configured a payment method and is the basis for creating the invoices. You can also create a subscription without a plan
       requestBody:
         content:
           application/json:
             schema:
               type: object
               properties:
+                preapproval_plan_id:
+                  type: string
+                  description: Unique subscription plan identifier. This is an optional field. Our model supports creating subscriptions with or without a plan. If you create a subscription with plan we will take the recurring settings from the plan to create the subscription. When you edit the plan we will update the subscriptions. Decide your best model depending on your business.
+                  example: 2c938084726fca480172750000000000
+                reason:
+                  type: string
+                  description: It is a short description that the subscriber will see during the checkout process and in the notifications. It is only required for subscriptions without a plan.
+                  example: Yoga classes
+                external_reference:
+                  type: string
+                  description: Reference to sync with your system. This is a free text field to help you with your integration to link the entities. It is only required for subscriptions without a plan.
+                  example: YG-1234
+                payer_email:
+                  required: true
+                  type: string
+                  description: To create a subscription it is necessary to link it with an email. Then you will get a unique identifier to identify the subscriber.
+                  example: test_user@testuser.com
+                card_token_id:
+                  type: string
+                  description: Unique card token identifier. 
+                  example: e3ed6f098462036dd2cbabe314b9de2a
                 auto_recurring:
                   type: object
-                  description: Recurring data.
+                  description: Configuration data for recurrence It is only required for subscriptions without a plan.
                   properties:
                     frequency:
+                      required: true
                       type: number
-                      description: Recurring frecuency.
+                      description: Indicates the frequency value. Along with frequency_type they define the invoice cycle that a subscription will have.
                       example: 1
                     frequency_type:
+                      required: true
                       type: string
-                      description: Recurring frecuency type (days or months).
+                      description: Indicates the type of frequency. Along with frequency they define the invoice cycle that a subscription will have.
                       example: months
-                    transaction_amount:
-                      type: number
-                      description: Recurring amount.
-                      example: 10
-                    currency_id:
-                      type: string
-                      description: Currency Id.
-                      example: ARS
+                      enum:
+                        - days -- Indicate a frequency in units of days
+                        - months -- Indicate a frequency in units of months
                     start_date:
                       type: string
                       format: date
-                      description: preapproval's start date.
-                      example: '2020-06-02T13:07:14.260Z'
+                      description: Date from which the subscription will be active and we start collecting invoices.
+                      example: "2020-06-02T13:07:14.260Z"
                     end_date:
                       type: string
                       format: date
-                      description: preapproval's end date.
-                      example: '2022-07-20T15:59:52.581Z'
+                      description: Date until which the subscription will be active and we will stop charging invoices.
+                      example: "2022-07-20T15:59:52.581Z"
+                    transaction_amount:
+                      type: number
+                      description: Amount we will charge on each invoice.
+                      example: 10
+                    currency_id:
+                      required: true
+                      type: string
+                      description: ID of the currency used in the payment.
+                      example: ARS
+                      enum:
+                        - ARS -- Argentine peso.
+                        - BRL -- Brazilian real.
+                        - CLP -- Chilean peso.
+                        - MXN -- Mexican peso.
+                        - COP -- Colombian peso.
+                        - PEN -- Peruvian sol.
+                        - UYU -- Uruguayan peso.
                 back_url:
+                  required: true
                   type: string
-                  description: Return URL.
+                  description: Successful return url. Use this setting to redirect your customers after our checkout to your site. It is only required for subscriptions without a plan.
                   example: https://www.mercadopago.com.ar
-                collector_id:
+                status:
                   type: string
-                  description: Seller ID.
-                  exmaple: 100200300
-                external_reference:
-                  type: string
-                  description: Preapproval reference value.
-                  example: 23546246234
-                payer_email:
-                  type: string
-                  description: Customer's e-mail.
-                  example: test_user@testuser.com
-                reason:
-                  type: string
-                  description: Preapproval titlte.
-                  exampe: Suscripcion Particular
+                  description: When you create a subscription, you can make it pending or authorized. Authorized status requires you to indicate a payment method. A pending subscription is waiting for a payment method, that the customer can load into our checkout or by your integration tokenizing a card and adding it to the subscription.
+                  example: authorized
+                  enum:
+                    - pending -- Subscription without a payment method
+                    - authorized -- Subscription with a payment method
       responses:
         '200':
           description: Success
@@ -78,85 +105,128 @@ paths:
                   id:
                     type: string
                     example: 2c938084726fca480172750000000000
-                    description: id
-                  payer_id:
-                    type: number
-                    example: 123123123
-                    description: payer_id
-                  back_url:
-                    type: string
-                    example: https://www.mercadopago.com.ar
-                    description: back_url
-                  collector_id:
-                    type: number
-                    example: 100200300
-                    description: collector_id
-                  application_id:
-                    type: number
-                    example: 1234567812345678
-                    description: application_id
-                  status:
-                    type: string
-                    example: pending
-                    description: status
-                  reason:
-                    type: string
-                    example: Suscripcion Particular
-                    description: reason
-                  external_reference:
-                    type: string
-                    example: 23546246234
-                    description: external_reference
-                  date_created:
-                    type: string
-                    example: 2020-06-02T13:07:14.260Z
-                    description: date_created
-                  last_modified:
-                    type: string
-                    example: 2020-06-02T13:07:14.263Z
-                    description: last_modified
-                  init_point:
-                    type: string
-                    example: >-
-                      https://www.mercadopago.com/MLB/debits/new?preapproval_id=2c938084726fca480172750000000000
-                    description: init_point
-                  sandbox_init_point:
-                    type: string
-                    example: >-
-                      https://sandbox.mercadopago.com/MLB/debits/new?preapproval_id=2c938084726fca480172750000000000
-                    description: sandbox_init_point
-                  auto_recurring:
-                    type: object
-                    properties:
-                      frequency:
-                        type: number
-                        example: 1
-                        description: frequency
-                      frequency_type:
-                        type: string
-                        example: months
-                        description: frequency_type
-                      transaction_amount:
-                        type: number
-                        example: 10
-                        description: transaction_amount
-                      currency_id:
-                        type: string
-                        example: ARS
-                        description: currency_id
-                      start_date:
-                        type: string
-                        example: 2020-06-02T13:07:14.260Z
-                        description: start_date
-                      end_date:
-                        type: string
-                        example: 2022-07-20T15:59:52.581Z
-                        description: end_date
-                    description: auto_recurring
+                    description: Unique subscription identifier.
                   version:
                     type: number
                     example: 0
-                    description: version
+                    description: How many times the subscription was modified.
+                  application_id:
+                    type: number
+                    example: 1234567812345678
+                    description: Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account. Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account.
+                  collector_id:
+                    type: number
+                    example: 100200300
+                    description: Unique ID that identifies your user as a seller. This ID matches your User ID in our ecosystem.
+                  preapproval_plan_id:
+                    type: string
+                    description: Unique plan identifier.
+                    example: 2c938084726fca480172750000000000
+                  reason:
+                    type: string
+                    example: Yoga classes.
+                    description: It is a short description that the subscriber will see during the checkout process and in the notifications. It is only required for subscriptions without a plan.
+                  external_reference:
+                    type: string
+                    example: 23546246234
+                    description: Reference to sync with your system. This is a free text field to help you with your integration to link the entities.
+                  back_url:
+                    type: string
+                    example: https://www.mercadopago.com.ar
+                    description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                  init_point:
+                    type: string
+                    example: https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_id=2c938084726fca480172750000000000
+                    description: Url to checkout to add or modify payment method.
+                  auto_recurring:
+                    type: object
+                    description: Configuration data for recurrence.
+                    properties:
+                      frequency:
+                        type: number
+                        description: Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.
+                        example: 1
+                      frequency_type:
+                        required: true
+                        type: string
+                        description: Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.
+                        example: months
+                        enum:
+                          - days -- Indicate a frequency in units of days
+                          - months -- Indicate a frequency in units of months
+                      start_date:
+                        type: string
+                        format: date
+                        description: Date from which the subscription will be active and we start collecting invoices.
+                        example: "2020-06-02T13:07:14.260Z"
+                      end_date:
+                        type: string
+                        format: date
+                        description: Date until which the subscription will be active and we will stop charging invoices.
+                        example: "2022-07-20T15:59:52.581Z"
+                      currency_id:
+                        type: string
+                        description: ID of the currency used in the payment.
+                        example: ARS
+                        enum:
+                          - ARS -- Argentine peso.
+                          - BRL -- Brazilian real.
+                          - CLP -- Chilean peso.
+                          - MXN -- Mexican peso.
+                          - COP -- Colombian peso.
+                          - PEN -- Peruvian sol.
+                          - UYU -- Uruguayan peso.
+                      transaction_amount:
+                        type: number
+                        description: Amount we will charge on each invoice.
+                        example: 10
+                      free_trial:
+                        type: object
+                        description: Free trial data.
+                        properties:
+                          frequency:
+                            type: number
+                            description: Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.
+                            example: 1
+                          frequency_type:
+                            required: true
+                            type: string
+                            description: Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.
+                            example: months
+                            enum:
+                              - days -- Indicate a frequency in units of days
+                              - months -- Indicate a frequency in units of months
+                  payer_id:
+                    type: number
+                    example: 123123123
+                    description: Unique customer identifier. This is created from the email you used to create the subscription.
+                  card_id:
+                    type: number
+                    example: 123123123
+                    description: Unique identifier to retrieve data from the card used as a payment method.
+                  payment_method_id:
+                    type: number
+                    example: 123123123
+                    description: Payment method configured.
+                  next_payment_date:
+                    type: string
+                    example: "2022-01-01T11:12:25.892-04:00"
+                    description: Date of the next payment debit.
+                  date_created:
+                    type: string
+                    example: "2022-01-01T11:12:25.892-04:00"
+                    description: Creation date.
+                  last_modified:
+                    type: string
+                    example: "2022-01-01T11:12:25.892-04:00"
+                    description: Date of last modification.
+                  status:
+                    type: string
+                    example: pending
+                    description: Status
+                    enum:
+                      - pending -- Subscription without a payment method
+                      - authorized -- Subscription with a payment method
         '400':
           description: Error
           content:
@@ -167,129 +237,45 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - >-
-                        Card token was used, please generate
-                        new--Card-token-was-used--please-generate-new-
-                      - >-
-                        Card token was generated without cvv
-                        validation--Card-token-was-generated-without-cvv-validation-
-                      - >-
-                        Subscriptions are not available for this country
-                        yet--Subscriptions-are-not-available-for-this-country-yet-
-                      - >-
-                        The payment method account money is not available in
-                        your
-                        country--The-payment-method-account-money-is-not-available-in-your-country-
-                      - >-
-                        Collector and Application cannot be from different
-                        countries--Collector-and-Application-cannot-be-from-different-countries-
-                      - card_token_id is required--card-token-id-is-required-
-                      - payer_email is required--payer-email-is-required-
-                      - >-
-                        Invalid value for payer_email, must be a valid email
-                        address--Invalid-value-for-payer-email--must-be-a-valid-email-address-
-                      - >-
-                        Invalid value for transaction amount, must be a positive
-                        number--Invalid-value-for-transaction-amount--must-be-a-positive-number-
-                      - >-
-                        Invalid value for transaction amount, only two decimals
-                        are
-                        allowed--Invalid-value-for-transaction-amount--only-two-decimals-are-allowed-
-                      - >-
-                        Cannot pay an amount lower than ${currency_id} ${min
-                        amount}--Cannot-pay-an-amount-lower-than---currency-id----min-amount--
-                      - >-
-                        Cannot pay an amount greater than ${currency_id} ${max
-                        amount}--Cannot-pay-an-amount-greater-than---currency-id----max-amount--
-                      - >-
-                        The transaction_amount must be the same as
-                        preapproval_plan--The-transaction-amount-must-be-the-same-as-preapproval-plan-
-                      - >-
-                        You cannot create a new preapproval from a
-                        cancelled/inactive
-                        template--You-cannot-create-a-new-preapproval-from-a-cancelled-inactive-template-
-                      - back_url is required--back-url-is-required-
-                      - >-
-                        Invalid value for back url, must be a valid
-                        URL--Invalid-value-for-back-url--must-be-a-valid-URL-
-                      - reason is required--reason-is-required-
-                      - >-
-                        reason has more than 255
-                        characters--reason-has-more-than-255-characters-
-                      - >-
-                        reason has unsupported
-                        characters--reason-has-unsupported-characters-
-                      - >-
-                        auto_recurring.frequency is
-                        required--auto-recurring-frequency-is-required-
-                      - >-
-                        Invalid value for frequency, must be a positive
-                        integer--Invalid-value-for-frequency--must-be-a-positive-integer-
-                      - >-
-                        Invalid value for frequency type, valid ones are [days,
-                        months]--Invalid-value-for-frequency-type--valid-ones-are--days--months--
-                      - >-
-                        auto_recurring.frequency_type is
-                        required--auto-recurring-frequency-type-is-required-
-                      - >-
-                        auto_recurring.transaction_amount is
-                        required--auto-recurring-transaction-amount-is-required-
-                      - >-
-                        auto_recurring.currency_id is
-                        required--auto-recurring-currency-id-is-required-
-                      - >-
-                        Invalid field ->
-                        auto_recurring.currency_id--Invalid-field----auto-recurring-currency-id-
-                      - >-
-                        Invalid value for auto_recurring.end_date, the date must
-                        be after
-                        today--Invalid-value-for-auto-recurring-end-date--the-date-must-be-after-today-
-                      - >-
-                        auto_recurring.end_date must be after
-                        auto_recurring.start_date--auto-recurring-end-date-must-be-after-auto-recurring-start-date-
-                      - >-
-                        Invalid value for auto_recurring.start_date, the date
-                        must be after
-                        today--Invalid-value-for-auto-recurring-start-date--the-date-must-be-after-today-
-                      - >-
-                        Invalid format in auto_recurring.start_date or
-                        auto_recurring.end_date--Invalid-format-in-auto-recurring-start-date-or-auto-recurring-end-date-
-                      - >-
-                        external_reference has more than 255
-                        characters--external-reference-has-more-than-255-characters-
-                      - >-
-                        external_reference has unsupported
-                        characters--external-reference-has-unsupported-characters-
-                      - >-
-                        Already exists a preapproval for user ${payer_email} and
-                        application
-                        ${application_id}--Already-exists-a-preapproval-for-user---payer-email--and-application---application-id--
-                      - >-
-                        Cannot operate between different
-                        countries--Cannot-operate-between-different-countries-
-                      - >-
-                        Payer and collector cannot be the same
-                        user--Payer-and-collector-cannot-be-the-same-user-
-                      - >-
-                        Both payer and collector must be real or test
-                        users--Both-payer-and-collector-must-be-real-or-test-users-
-                      - >-
-                        This preapproval cannot be created: The seller does not
-                        accept
-                        account_money--This-preapproval-cannott-be-created--The-seller-does-not-accept-account-money-
-                      - >-
-                        This preapproval cannot be created only with payment
-                        method
-                        account_money--This-preapproval-can-t-be-created-only-with-payment-method-account-money-
-                      - >-
-                        You cannot create a preapproval with payment_method in
-                        status
-                        pending--You-cannot-create-a-preapproval-with-payment-method-in-status-pending-
-                      - >-
-                        Cannot create preapproval pending, the feature with
-                        account money is disabled for your
-                        country.--Cannot-create-preapproval-pending--the-feature-with-account-money-is-disabled-for-your-country-
-                      - Invalid request data--Invalid-request-data-
+                      - 400--Bad-Request--Subscriptions are not available for this country yet
+                      - 400--Bad-Request--The payment method account money is not available in your country
+                      - 400--Bad-Request--Collector and Application cannot be from different countries
+                      - 400--Bad-Request--Field card_token_id is required
+                      - 400--Bad-Request--Field payer_email is required
+                      - 400--Bad-Request--Invalid value for payer_email, must be a valid email address
+                      - 400--Bad-Request--Invalid value for transaction amount, must be a positive number
+                      - 400--Bad-Request--Invalid value for transaction amount, only two decimals are allowed
+                      - 400--Bad-Request--Invalid value for auto_recurring.currency_id
+                      - 400--Bad-Request--Invalid value for auto_recurring.end_date, the date must be after today
+                      - 400--Bad-Request--Invalid value for auto_recurring.frequency, must be a positive integer
+                      - 400--Bad-Request--Invalid value for auto_recurring.frequency_type, valid ones are days, months
+                      - 400--Bad-Request--Invalid value for auto_recurring.start_date, the date must be after today
+                      - 400--Bad-Request--Invalid format in auto_recurring.start_date or auto_recurring.end_date
+                      - 400--Bad-Request--Invalid value for back_url, must be a valid URL
+                      - 400--Bad-Request--Field reason has more than 255 characters
+                      - 400--Bad-Request--Field reason has unsupported characters
+                      - 400--Bad-Request--Field auto_recurring.frequency is required
+                      - 400--Bad-Request--Field auto_recurring.frequency_type is required
+                      - 400--Bad-Request--Field auto_recurring.transaction_amount is required
+                      - 400--Bad-Request--Field auto_recurring.currency_id is required
+                      - 400--Bad-Request--Field auto_recurring.end_date must be after auto_recurring.start_date
+                      - 400--Bad-Request--Field external_reference has more than 255 characters
+                      - 400--Bad-Request--Field external_reference has unsupported characters
+                      - 400--Bad-Request--Already exists a preapproval for user <payer_email> and application <application_id>
+                      - 400--Bad-Request--Payer and collector cannot be the same user
+                      - 400--Bad-Request--Both payer and collector must be real or test users
+                      - 400--Bad-Request--This preapproval cannot be created. The seller does not accept account_money
+                      - 400--Bad-Request--This preapproval cannot be created only with payment method account_money
+                      - 400--Bad-Request--Cannot operate between different countries
+                      - 400--Bad-Request--Cannot create preapproval pending, the feature with account money is disabled for your country.
+                      - 400--Bad-Request--Cannot pay an amount lower than min
+                      - 400--Bad-Request--Cannot pay an amount greater than max
+                      - 400--Bad-Request--You cannot create a preapproval with payment_method in status pending
+                      - 400--Bad-Request--You cannot create a new preapproval from a cancelled or inactive template
+                      - 400--Bad-Request--The transaction_amount must be the same as preapproval_plan
+                      - 400--Bad-Request--Card token was used, please generate new
+                      - 400--Bad-Request--Card token was generated without cvv validation
+                      - 400--Bad-Request--Invalid request data
         '401':
           description: Error
           content:
@@ -300,18 +286,10 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - >-
-                        CC_VAL_433--CC-VAL-433-Credit-card-validation-has-failed-
-                      - >-
-                        Verification of collectors personal data is in process,
-                        come back
-                        later--Verification-of-collector-s-personal-data-is-in-process--come-back-later-
-                      - >-
-                        Unauthorized access to
-                        resource--Unauthorized-access-to-resource-
-                      - >-
-                        This app cannot create preapprovals without a
-                        plan--This-app-can-t-create-preapprovals-without-a-plan-
+                      - 401--Unauthorized--CC_VAL_433 Credit card validation has failed
+                      - 401--Unauthorized--Verification of collectors personal data is in process, come back later
+                      - 401--Unauthorized--Unauthorized access to resource
+                      - 401--Unauthorized--This app cannot create subscriptions without a plan
         '403':
           description: Error
           content:
@@ -322,16 +300,306 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - >-
-                        The collector does not meet the personal data
-                        verification
-                        requirements--The-collector-does-not-meet-the-personal-data-verification-requirements-
-                      - >-
-                        The caller is not authorized to access this
-                        resource--The-caller-is-not-authorized-to-access-this-resource-
-                      - >-
-                        AM_VAL_01 Unauthorized seller for this
-                        feature--AM-VAL-01-Unauthorized-seller-for-this-feature--account-money---
+                      - 403--Forbidden--The collector does not meet the personal data verification requirements
+                      - 403--Forbidden--The caller is not authorized to access this resource
+                      - 403--Forbidden--Unauthorized seller for this feature AM_VAL_01
+        '500':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Error--Internal server error
+  /preapproval_plan:
+    post:
+      tags:
+        - $ref: "#/tags/subscriptions"
+      summary: Create a subscription plan
+      description: A plan is a template to create subscriptions thats tell how often and how much to charge your customers. Plans can be created with free trials, biiling cycles and more. The subscriptions created from a plan are related to it and allows synchronizing modifications such as reason or amount
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                reason:
+                  required: true
+                  type: string
+                  description: It is a short description that the subscriber will see during the checkout process and in the notifications.
+                  example: Yoga classes
+                auto_recurring:
+                  type: object
+                  description: Configuration data for recurrence.
+                  properties:
+                    frequency:
+                      required: true
+                      type: number
+                      description: Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.
+                      example: 1
+                    frequency_type:
+                      required: true
+                      type: string
+                      description: Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.
+                      example: months
+                      enum:
+                        - days -- Indicate a frequency in units of days
+                        - months -- Indicate a frequency in units of months
+                    repetitions:
+                      type: number
+                      description: It is optional and is used to create a limited subscription. Indicates the number of times that we will repeat the recurrence cycle. If this param is not defined, subscription does not end until some of the parties cancel it.
+                      example: 12
+                    billing_day:
+                      type: number
+                      description: Day of the month that the subscription will always be charged. It only accepts values between 1 and 28. This setting is only available for subscriptions with a plan associated.
+                      example: 10
+                    billing_day_proportional:
+                      type: boolean
+                      description: Charge a proportional amount to the billing day at the time of registration.
+                      example: true
+                      enum:
+                        - true -- Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.
+                        - false -- Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.
+                    free_trial:
+                      type: object
+                      description: Free trial data.
+                      properties:
+                        frequency:
+                          type: number
+                          description: Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.
+                          example: 1
+                        frequency_type:
+                          type: string
+                          description: Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.
+                          example: months
+                          enum:
+                            - days -- Indicate a frequency in units of days
+                            - months -- Indicate a frequency in units of months
+                    transaction_amount:
+                      type: number
+                      description: Amount that will be charged on each invoice.
+                      example: 10
+                    currency_id:
+                      required: true
+                      type: string
+                      description: ID of the currency used in the payment.
+                      example: ARS
+                      enum:
+                        - ARS -- Argentine peso.
+                        - BRL -- Brazilian real.
+                        - CLP -- Chilean peso.
+                        - MXN -- Mexican peso.
+                        - COP -- Colombian peso.
+                        - PEN -- Peruvian sol.
+                        - UYU -- Uruguayan peso.
+                payment_methods_allowed:
+                  type: object
+                  description: Payment methods enabled at checkout.
+                  properties:
+                    payment_types:
+                      type: array
+                      description: Payment types allowed in the payment flow.
+                      properties:
+                        id:
+                          type: string
+                          description: Payment type identifier.
+                          example: credit_card
+                    payment_methods:
+                      type: array
+                      description: Payment methods allowed in the payment flow.
+                      properties:
+                        id:
+                          type: string
+                          description: Payment method identifier.
+                          example: bolbradesco
+                back_url:
+                  required: true
+                  type: string
+                  description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                  example: https://www.yoursite.com
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: 2c938084726fca480172750000000000
+                    description: Unique subscription plan identifier.
+                  application_id:
+                    type: number
+                    example: 1234567812345678
+                    description: Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account.
+                  collector_id:
+                    type: number
+                    example: 100200300
+                    description: Unique ID that identifies your user as a seller. This ID matches your User ID in our ecosystem.
+                  reason:
+                    type: string
+                    description: It is a short description that the subscriber will see during the checkout process and in the notifications.
+                    example: Yoga classes
+                  auto_recurring:
+                    type: object
+                    description: Configuration data for recurrence.
+                    properties:
+                      frequency:
+                        type: number
+                        description: Indicates the frequency value. Along with frequency_type they define the invoice cycle that a subscription will have.
+                        example: 1
+                      frequency_type:
+                        type: string
+                        description: Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.
+                        example: months
+                        enum:
+                          - days -- Indicate a frequency in units of days
+                          - months -- Indicate a frequency in units of months
+                      repetitions:
+                        type: number
+                        description: It is optional and is used to create a limited subscription. Indicates the number of times that we will repeat the recurrence cycle. If this param is not defined, subscription does not end until some of the parties cancel it.
+                        example: 12
+                      billing_day:
+                        type: number
+                        description: Day of the month that the subscription will always be charged. It only accepts values between 1 and 28.
+                        example: 10
+                      billing_day_proportional:
+                        type: boolean
+                        description: Charge a proportional amount to the billing day at the time of registration.
+                        example: true
+                        enum:
+                          - true -- Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.
+                          - false -- Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.
+                      free_trial:
+                        type: object
+                        description: Free trial data.
+                        properties:
+                          frequency:
+                            type: number
+                            description: Indicates the frequency value. Along with frequency_type they define the invoice cycle that a subscription will have.
+                            example: 1
+                          frequency_type:
+                            type: string
+                            description: Indicates the type of frequency. Along with frequency they define the invoice cycle that a subscription will have.
+                            example: months
+                            enum:
+                              - days -- Indicate a frequency in units of days
+                              - months -- Indicate a frequency in units of months
+                      transaction_amount:
+                        type: number
+                        description: Amount that will be charged on each invoice.
+                        example: 10
+                      currency_id:
+                        type: string
+                        description: ID of the currency used in the payment.
+                        enum:
+                          - ARS -- Argentine peso.
+                          - BRL -- Brazilian real.
+                          - CLP -- Chilean peso.
+                          - MXN -- Mexican peso.
+                          - COP -- Colombian peso.
+                          - PEN -- Peruvian sol.
+                          - UYU -- Uruguayan peso.
+                        example: ARS
+                  payment_methods_allowed:
+                    type: object
+                    description: Payment methods enabled at checkout.
+                    properties:
+                      payment_types:
+                        type: array
+                        description: Payment types allowed in the payment flow.
+                        properties:
+                          id:
+                            type: string
+                            description: Payment type identifier.
+                            example: credit_card
+                      payment_methods:
+                        type: array
+                        description: Payment methods allowed in the payment flow.
+                        properties:
+                          id:
+                            type: string
+                            description: Payment method identifier.
+                            example: bolbradesco
+                    back_url:
+                      type: string
+                      description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                      example: https://www.mercadopago.com.ar
+                  back_url:
+                    type: string
+                    description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                    example: https://www.mercadopago.com.ar
+                  external_reference:
+                    type: string
+                    example: 23546246234
+                    description: Reference to sync with your system. This is a free text field to help you with your integration to link the entities.
+                  init_point:
+                    type: string
+                    example: https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c938084726fca480172750000000000
+                    description: Url to checkout to add payment method
+                  date_created:
+                    type: string
+                    example: 2022-01-01T11:12:25.892-04:00
+                    description: Creation date
+                  last_modified:
+                    type: string
+                    example: 2022-01-01T11:12:25.892-04:00
+                    description: Date of last modification
+                  status:
+                    type: string
+                    example: active
+                    description: Status of the plan.
+                    enum:
+                      - active -- Plan available to create subscriptions
+                      - cancelled -- Plan not available to create subscriptions
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400--Bad-Request--Parameter back_url is required
+                      - 400--Bad-Request--Parameter reason is required
+                      - 400--Bad-Request--Parameter external_reference has unsupported characters
+                      - 400--Bad-Request--Parameter auto_recurring is required
+                      - 400--Bad-Request--Parameters frequency and frequency_type are required in the recurring payments scheme
+                      - 400--Bad-Request--Invalid value for back_url. Must be a valid URL
+                      - 400--Bad-Request--Invalid value for status. Valid ones ar active, inactive, cancelled.
+                      - 400--Bad-Request--Invalid value for transaction_amount, must be a positive number
+                      - 400--Bad-Request--Invalid value for transaction_amount, must be a positive integer
+                      - 400--Bad-Request--Invalid value for transaction_amount, only two decimals are allowed
+                      - 400--Bad-Request--Invalid value for payer_email, must be a valid email address
+                      - 400--Bad-Request--Invalid value for currency_id
+                      - 400--Bad-Request--Invalid value for frequency, must be a positive integer
+                      - 400--Bad-Request--Invalid value for frequency_type
+                      - 400--Bad-Request--Invalid value for frequency_type, valid ones are days or months
+                      - 400--Bad-Request--Invalid value for repetitions, mus be a positive integer
+                      - 400--Bad-Request--Cannot pay an amount greater than max
+                      - 400--Bad-Request--Cannot pay an amount lower than min
+                      - 400--Bad-Request--Cannot operate with this currency_id in this site
+                      - 400--Bad-Request--Cannot operate between diferent countries
+                      - 400--Bad-Request--Field currency_id is required
+                      - 400--Bad-Request--Reason has unsupported characters
+                      - 400--Bad-Request--Plan are not available for this country yet
+        '401':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401--Unauthorized--Must provide your access_token to proceed
         '404':
           description: Error
           content:
@@ -342,9 +610,2199 @@ paths:
                   errorKey:
                     type: string
                     enum:
-                      - >-
-                        The preapproval with id ${preapproval id} does not
-                        exist--The-preapproval-with-id---preapproval-id--does-not-exist-
-                      - >-
-                        Card token service not
-                        found--Card-token-service-not-found-
+                      - 404--Not-Found--The application id does not exist
+        '500':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Error--Internal server error
+  /preapproval/{id}:
+    get:
+      tags:
+        - $ref: "#/tags/subscriptions"
+      summary: Get a subscription
+      description: Obtains all the information of a subscription from its ID
+      parameters:
+        - name: id
+          in: path
+          description: Subscription identifier
+          required: true
+          schema:
+            type: string
+            example: 2c938084726fca480172750000000000
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: 2c938084726fca480172750000000000
+                    description: Unique subscription identifier.
+                  version:
+                    type: number
+                    example: 0
+                    description: How many times subscription was modified
+                  application_id:
+                    type: number
+                    example: 1234567812345678
+                    description: Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account. Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account.
+                  collector_id:
+                    type: number
+                    example: 100200300
+                    description: Unique ID that identifies your user as a seller. This ID matches your User ID in our ecosystem.
+                  preapproval_plan_id:
+                    type: string
+                    description: Unique subscription plan identifier. This parameter is only available when it is a subscription with a plan and indicates from which plan the subscription was created.
+                    example: 2c938084726fca480172750000000000
+                  reason:
+                    type: string
+                    example: Yoga classes.
+                    description: It is a short description that the subscriber will see during the checkout process and in the notifications. It is only required for subscriptions without a plan.
+                  external_reference:
+                    type: string
+                    example: 23546246234
+                    description: Reference to sync with your system. This is a free text field to help you with your integration to link the entities.
+                  back_url:
+                    type: string
+                    example: https://www.mercadopago.com.ar
+                    description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                  init_point:
+                    type: string
+                    example: https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_id=2c938084726fca480172750000000000
+                    description: Url to checkout to add or modify payment method.
+                  auto_recurring:
+                    type: object
+                    description: Configuration data for recurrence.
+                    properties:
+                      frequency:
+                        type: number
+                        description: Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.
+                        example: 1
+                      frequency_type:
+                        required: true
+                        type: string
+                        description: Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.
+                        example: months
+                        enum:
+                          - days -- Indicate a frequency in units of days
+                          - months -- Indicate a frequency in units of months
+                      start_date:
+                        type: string
+                        format: date
+                        description: Date from which the subscription will be active and we start collecting invoices.
+                        example: "2020-06-02T13:07:14.260Z"
+                      end_date:
+                        type: string
+                        format: date
+                        description: Date until which the subscription will be active and we will stop charging invoices.
+                        example: "2022-07-20T15:59:52.581Z"
+                      currency_id:
+                        type: string
+                        description: ID of the currency used in the payment.
+                        example: ARS
+                        enum:
+                          - ARS -- Argentine peso.
+                          - BRL -- Brazilian real.
+                          - CLP -- Chilean peso.
+                          - MXN -- Mexican peso.
+                          - COP -- Colombian peso.
+                          - PEN -- Peruvian sol.
+                          - UYU -- Uruguayan peso.
+                      transaction_amount:
+                        type: number
+                        description: Amount we will charge on each invoice.
+                        example: 10
+                      free_trial:
+                        type: object
+                        description: Free trial data.
+                        properties:
+                          frequency:
+                            type: number
+                            description: Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.
+                            example: 1
+                          frequency_type:
+                            required: true
+                            type: string
+                            description: Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.
+                            example: months
+                            enum:
+                              - days -- Indicate a frequency in units of days
+                              - months -- Indicate a frequency in units of months
+                  first_invoice_offset:
+                    type: number
+                    description: Number of days to collect the first invoice
+                    example: 7
+                  payer_id:
+                    type: number
+                    example: 123123123
+                    description: Unique customer identifier. This is created from the email you used to create the subscription.
+                  card_id:
+                    type: number
+                    example: 123123123
+                    description: Unique identifier to retrieve data from the card used as a payment method.
+                  payment_method_id:
+                    type: string
+                    example: account_money
+                    description: Payment method configured.
+                  next_payment_date:
+                    type: string
+                    example: "2022-01-01T11:12:25.892-04:00"
+                    description: Date of the next payment debit.
+                  date_created:
+                    type: string
+                    example: "2022-01-01T11:12:25.892-04:00"
+                    description: Creation date.
+                  last_modified:
+                    type: string
+                    example: "2022-01-01T11:12:25.892-04:00"
+                    description: Date of last modification.
+                  summarized:
+                    type: object
+                    description: Summary information on subscription invoices and charges
+                    properties:
+                      quotas:
+                        type: number
+                        description: How many payments we going to do.
+                        example: 6
+                      charged_quantity:
+                        type: number
+                        description: Total charged of charged quotas.
+                        example: 3
+                      charged_amount:
+                        type: number
+                        description: Total amount collected to date.
+                        example: 1000.00
+                      pending_charge_quantity:
+                        type: number
+                        description: Pending quotas to charge.
+                        example: 1
+                      pending_charge_amount:
+                        type: number
+                        description: Amount pending collection.
+                        example: 200.00
+                      last_charged_date:
+                        type: number
+                        description: Date of last charge.
+                        example: "2022-01-01T11:12:25.892-04:00"
+                      last_charged_amount:
+                        type: number
+                        description: Date of last time amount charged.
+                        example: 100.00
+                      semaphore:
+                        type: number
+                        description: Subscription collection status summary.
+                        example: green
+                        enum:
+                          - green -- All collections made.
+                          - yellow -- With collection problems. We are trying to collect an invoice.
+                          - red -- With pending collections. An invoice could not be collected.
+                          - blank -- Discounted collection.
+                  status:
+                    type: string
+                    example: pending
+                    description: Status
+                    enum:
+                      - pending -- Preapproval without a payment method.
+                      - authorized -- Preapproval with a valid payment method.
+                      - paused -- Preapproval with temporally discontinued collection of payments.
+                      - cancelled -- Preapproval terminated. This is an irreversible state.
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400--Bad-Request--Invalid value {id}, Field 'id' must match this pattern '[a-f0-9-]+'
+        '403':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 403--Forbidden--The caller is not authorized to access this resource
+        '404':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 404--Not-found--The preapproval with id {id} does not exist
+        '500':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Error--Internal server error
+    put:
+      tags:
+        - $ref: "#/tags/subscriptions"
+      summary: Update a subscription
+      description: Renew the data of a subscription. Indicate the preapproval ID and send the body with the information you want to update. You can update reason, amount, payment method and status and more 
+      parameters:
+        - name: id
+          in: path
+          description: Unique subscription identifier you want to modify.
+          required: true
+          schema:
+            type: string
+            example: 2c938084726fca480172750000000000
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                reason:
+                  type: string
+                  example: Yoga classes.
+                  description: It is a short description that the subscriber will see during the checkout process and in the notifications. It is only required for subscriptions without a plan.
+                external_reference:
+                  type: string
+                  example: 23546246234
+                  description: Reference to sync with your system. This is a free text field to help you with your integration to link the entities.
+                back_url:
+                  type: string
+                  example: https://www.mercadopago.com.ar
+                  description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                auto_recurring:
+                  type: object
+                  description: Configuration data for recurrence.
+                  properties:
+                    transaction_amount:
+                      type: number
+                      description: Amount we will charge on each invoice.
+                      example: 10
+                    currency_id:
+                      type: string
+                      description: ID of the currency used in the payment.
+                      example: ARS
+                      enum:
+                          - ARS -- Argentine peso.
+                          - BRL -- Brazilian real.
+                          - CLP -- Chilean peso.
+                          - MXN -- Mexican peso.
+                          - COP -- Colombian peso.
+                          - PEN -- Peruvian sol.
+                          - UYU -- Uruguayan peso.
+                card_token_id:
+                  type: number
+                  example: 123123123
+                  description: Unique identifier to retrieve data from the card used as a payment method.
+                status:
+                  type: string
+                  example: pending
+                  description: Status
+                  enum:
+                    - pending -- Subscription without a payment method
+                    - authorized -- Subscription with a valid payment method
+                    - paused -- Subscription with temporally discontinued collection of payments
+                    - cancelled -- Subscription terminated. This is an irreversible state.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: 2c938084726fca480172750000000000
+                    description: Unique subscription identifier.
+                  version:
+                    type: number
+                    example: 0
+                    description: How many times the subscription was modified
+                  application_id:
+                    type: number
+                    example: 1234567812345678
+                    description: Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account.
+                  collector_id:
+                    type: number
+                    example: 100200300
+                    description: Unique ID that identifies your user as a seller. This ID matches your User ID in our ecosystem.
+                  preapproval_plan_id:
+                    type: string
+                    description: Unique subscription plan identifier. This parameter is only available when it is a subscription with a plan and indicates from which plan the subscription was created.
+                    example: 2c938084726fca480172750000000000
+                  reason:
+                    type: string
+                    example: Yoga classes.
+                    description: It is a short description that the subscriber will see during the checkout process and in the notifications. It is only required for subscriptions without a plan.
+                  external_reference:
+                    type: string
+                    example: 23546246234
+                    description: Reference to sync with your system. This is a free text field to help you with your integration to link the entities.
+                  back_url:
+                    type: string
+                    example: https://www.mercadopago.com.ar
+                    description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                  init_point:
+                    type: string
+                    example: https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_id=2c938084726fca480172750000000000
+                    description: Url to checkout to add or modify payment method.
+                  auto_recurring:
+                    type: object
+                    description: Configuration data for recurrence.
+                    properties:
+                      frequency:
+                        type: number
+                        description: Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.
+                        example: 1
+                      frequency_type:
+                        required: true
+                        type: string
+                        description: Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.
+                        example: months
+                        enum:
+                          - days -- Indicate a frequency in units of days
+                          - months -- Indicate a frequency in units of months
+                      start_date:
+                        type: string
+                        format: date
+                        description: Date from which the subscription will be active and we start collecting invoices.
+                        example: "2020-06-02T13:07:14.260Z"
+                      end_date:
+                        type: string
+                        format: date
+                        description: Date until which the subscription will be active and we will stop charging invoices.
+                        example: "2022-07-20T15:59:52.581Z"
+                      currency_id:
+                        type: string
+                        description: ID of the currency used in the payment.
+                        example: ARS
+                        enum:
+                          - ARS -- Argentine peso.
+                          - BRL -- Brazilian real.
+                          - CLP -- Chilean peso.
+                          - MXN -- Mexican peso.
+                          - COP -- Colombian peso.
+                          - PEN -- Peruvian sol.
+                          - UYU -- Uruguayan peso.
+                      transaction_amount:
+                        type: number
+                        description: Amount that will be charged on each invoice.
+                        example: 10
+                      free_trial:
+                        type: object
+                        description: Free trial data.
+                        properties:
+                          frequency:
+                            type: number
+                            description: Indicates the frequency value. Along with frequency_type they define the invoice cycle that a subscription will have.
+                            example: 1
+                          frequency_type:
+                            required: true
+                            type: string
+                            description: Indicates the type of frequency. Along with frequency they define the invoice cycle that a subscription will have.
+                            example: months
+                            enum:
+                              - days -- Indicate a frequency in units of days
+                              - months -- Indicate a frequency in units of months
+                  first_invoice_offset:
+                    type: number
+                    description: Number of days to collect the first invoice
+                    example: 7
+                  payer_id:
+                    type: number
+                    example: 123123123
+                    description: Unique customer identifier. This is created from the email you used to create the subscription.
+                  card_id:
+                    type: number
+                    example: 123123123
+                    description: Unique identifier to retrieve data from the card used as a payment method.
+                  payment_method_id:
+                    type: string
+                    example: account_money
+                    description: Payment method configured.
+                  next_payment_date:
+                    type: string
+                    example: "2022-01-01T11:12:25.892-04:00"
+                    description: Date of the next payment debit.
+                  date_created:
+                    type: string
+                    example: "2022-01-01T11:12:25.892-04:00"
+                    description: Creation date.
+                  last_modified:
+                    type: string
+                    example: "2022-01-01T11:12:25.892-04:00"
+                    description: Date of last modification.
+                  summarized:
+                    type: object
+                    description: Summary information on subscription invoices and charges
+                    properties:
+                      quotas:
+                        type: number
+                        description: How many payments we going to do.
+                        example: 6
+                      charged_quantity:
+                        type: number
+                        description: Total charged of charged quotas.
+                        example: 3
+                      charged_amount:
+                        type: number
+                        description: Total amount collected to date.
+                        example: 1000.00
+                      pending_charge_quantity:
+                        type: number
+                        description: Pending quotas to charge.
+                        example: 1
+                      pending_charge_amount:
+                        type: number
+                        description: Amount pending collection.
+                        example: 200.00
+                      last_charged_date:
+                        type: number
+                        description: Date of last charge.
+                        example: "2022-01-01T11:12:25.892-04:00"
+                      last_charged_amount:
+                        type: number
+                        description: Date of last time amount charged.
+                        example: 100.00
+                      semaphore:
+                        type: number
+                        description: Subscription collection status summary.
+                        example: green
+                        enum:
+                          - green -- All collections made.
+                          - yellow -- With collection problems. We are trying to collect an invoice.
+                          - red -- With pending collections. An invoice could not be collected.
+                          - blank -- Discounted collection.
+                  status:
+                    type: string
+                    example: pending
+                    description: Status
+                    enum:
+                      - pending -- Subscription without a payment method.
+                      - authorized -- Subscription with a valid payment method.
+                      - paused -- Subscription with temporally discontinued collection of payments.
+                      - cancelled -- Subscription terminated. This is an irreversible state.
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400--Bad-request--Invalid transition from cancelled to authorized
+                      - 400--Bad-request--You can not modify a cancelled preapproval.
+                      - 400--Bad-request--You can not modify a paused subscription.
+                      - 400--Bad-request--This preapproval can not be authorized with a credit card
+                      - 400--Bad-request--This preapproval can not disable account_money
+                      - 400--Bad-request--This preapproval can not be authorized only with account_money
+                      - 400--Bad-request--This preapproval require account_money to be authorized
+                      - 400--Bad-request--You must provide a card_id
+                      - 400--Bad-request--preapproval without another payment method
+        '401':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401--Unauthorized--Unauthorized access to resource
+        '500':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Error--Internal server error
+  /preapproval/export:
+    get:
+      tags:
+        - $ref: "#/tags/subscriptions"
+      summary: Export subscriptions
+      description: Downloads a CSV file with all the subscriptions that match the search request
+      parameters:
+        - name: collector_id
+          in: path
+          required: true
+          description: ID of the collector requesting the subscriptions.
+          schema:
+            type: number
+            example: 38524206
+        - name: preapproval_plan_id
+          in: path
+          description: Specifies the plan ID of the subscriptions wants to get.
+          schema:
+            type: string
+            example: 2c938084726fca480172750000000000
+        - name: status
+          in: path
+          description: Specifies the status of the subscriptions wants to get. Can be null, one or many.
+          schema:
+            type: string
+            example: authorized,cancelled,paused
+            enum:
+              - pending -- Preapproval without a payment method.
+              - authorized -- Preapproval with a valid payment method.
+              - paused -- Preapproval with temporally discontinued collection of payments.
+              - cancelled -- Preapproval terminated. This is an irreversible state.
+        - name: sort
+          in: path
+          description: Specifies the type of sorting selected to retrieve the subscriptions. You must indicate a field and a sort type with the following format field_name:sort_type.
+          schema:
+            type: string
+            example: payer_id:asc
+            enum:
+              - asc - Ascending sort
+              - desc - Descending sort
+      responses:
+        '200':
+          description: Success
+          headers:
+            Content-Disposition:
+              schema:
+                type: string
+              description: the format is `attachment; filename="preapprovals.zip"`
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+                properties:
+                  id:
+                    type: number
+                    example: 2c9380847cc2c422017cc489094f0001
+                    description: Unique subscription identifier.
+                  payer_id:
+                    type: number
+                    example: 123123123
+                    description: Unique customer identifier. This is created from the email you used to create the subscription.
+                  back_url:
+                    required: true
+                    type: string
+                    description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                    example: https://www.yoursite.com
+                  application_id:
+                    type: number
+                    example: 1234567812345678
+                    description: Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account.
+                  status:
+                    type: string
+                    example: pending
+                    description: Status
+                    enum:
+                      - pending -- Preapproval without a payment method.
+                      - authorized -- Preapproval with a valid payment method.
+                      - paused -- Preapproval with temporally discontinued collection of payments.
+                      - cancelled -- Preapproval terminated. This is an irreversible state.
+                  reason:
+                    required: true
+                    type: string
+                    description: It is a short description that the subscriber will see during the checkout process and in the notifications.
+                    example: Yoga classes
+                  external_reference:
+                    type: string
+                    example: 23546246234
+                    description: Reference to sync with your system. This is a free text field to help you with your integration to link the entities.
+                  date_created:
+                    type: string
+                    example: "2022-01-01T11:12:25.892-04:00"
+                    description: Creation date.
+                  last_modified:
+                    type: string
+                    example: "2022-01-01T11:12:25.892-04:00"
+                    description: Date of last modification.
+                  init_point:
+                    type: string
+                    example: https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c938084726fca480172750000000000
+                    description: Url to checkout to add or modify payment method.
+                  preapproval_plan_id:
+                    type: string
+                    description: Unique preapproval plan identifier. This parameter is only available when it is a subscription with a plan and indicates from which plan the subscription was created.
+                    example: 2c938084726fca480172750000000000
+                  frequency:
+                    required: true
+                    type: number
+                    description: Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.
+                    example: 1
+                  frequency_type:
+                    required: true
+                    type: string
+                    description: Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.
+                    example: months
+                    enum:
+                      - days - Indicate a frequency in units of days
+                      - months - Indicate a frequency in units of months
+                  transaction_amount:
+                    type: number
+                    description: Amount we will charge on each invoice.
+                    example: 10
+                  currency_id:
+                    type: string
+                    description: ID of the currency used in the payment.
+                    example: ARS
+                    enum:
+                      - ARS -- Argentine peso.
+                      - BRL -- Brazilian real.
+                      - CLP -- Chilean peso.
+                      - MXN -- Mexican peso.
+                      - COP -- Colombian peso.
+                      - PEN -- Peruvian sol.
+                      - UYU -- Uruguayan peso.
+                  start_date:
+                    type: string
+                    format: date
+                    description: Date from which the subscription will be active and we start collecting invoices.
+                    example: "2020-06-02T13:07:14.260Z"
+                  end_date:
+                    type: string
+                    format: date
+                    description: Date until which the subscription will be active and we will stop charging invoices.
+                    example: "2022-07-20T15:59:52.581Z"
+                  has_billing_day:
+                    type: boolean
+                    description: Is subscription has or not billing day.
+                    example: false
+                  billing_day:
+                    type: number
+                    description: Day of the month that the subscription will always be charged. It only accepts values between 1 and 28.
+                    example: 10
+                  billing_day_proportional:
+                    type: boolean
+                    description: Charge a proportional amount to the billing day at the time of registration.
+                    example: true
+                    enum:
+                      - true -- Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.
+                      - false -- Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.
+                  quotas:
+                    type: number
+                    description: How many payments we going to do.
+                    example: 10
+                  charged_quantity:
+                    type: number
+                    description: Total charged of charged quotas.
+                    example: 20
+                  pending_charged_quantity:
+                    type: number
+                    description: Pending quotas to charge.
+                    example: 20
+                  charge_amount:
+                    type: number
+                    description: Total amount collected to date.
+                    example: 20
+                  pending_charge_amount:
+                    type: number
+                    description: Amount pending collection.
+                    example: 20
+                  semaphore:
+                    type: number
+                    description: Preapproval collection status summary.
+                    example: green
+                    enum:
+                      - green -- All collections made.
+                      - yellow -- With collection problems. We are trying to collect an invoice.
+                      - red -- With pending collections. An invoice could not be collected.
+                      - blank -- Discounted collection.
+                  last_charge_date:
+                    type: number
+                    description: Date of last time a payment of this subscription.was made.
+                    example: 24-2-2021
+                  last_charge_amount:
+                    type: number
+                    description: Amount of last payment of this subscription.
+                    example: 1900
+                  next_payment_date:
+                    type: date
+                    description: Date of the next payment debit.
+                    example: 24-3-2021
+                  payment_method_id:
+                    type: string
+                    description: Payment method configured.
+                    example: account_money
+                  card_id:
+                    type: number
+                    description: Unique identifier to retrieve data from the card used as a payment method.
+                    example: 434319883
+                  version:
+                    type: number
+                    description: How many times preapproval was modified.
+                    example: 4
+                  payer_first_name:
+                    type: string
+                    description: Customer name.
+                    example: Jorge
+                  payer_last_name:
+                    type: string
+                    description: Customer lastname.
+                    example: Smith
+        '401':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401--Unauthorized--Unauthorized access to resource
+        '500':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Error--Internal server error
+  /authorized_payments/{id}:
+     get:
+      tags:
+        - $ref: "#/tags/subscriptions"
+      summary: Get invoices data
+      description: Obtains all the information of a invoice from its ID. Invoices are automatically schedules and charged based on the recurrence defined in the subscription
+      parameters:
+        - name: id
+          in: path
+          description: Authorized payment identifier
+          required: true
+          schema:
+            type: number
+            example: 3950169598
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: number
+                    description: Unique invoice identifier.
+                    example: 6114264375
+                  type:
+                    type: string
+                    description: Type of invoice generated based on recurrence.
+                    example: scheduled
+                    enum:
+                      - scheduled -- Automatically generated and scheduled by the recurrence engine.
+                  date_created:
+                    type: string
+                    description: Invoice creation date.
+                    example: "2022-01-01T11:12:25.892-04:00"
+                  last_modified:
+                    type: string
+                    description: Invoice last modified date. An invoice is modified when an update occurs in collection attempts or payment.
+                    example: "2022-01-01T11:12:25.892-04:00"
+                  preapproval_id:
+                    type: string
+                    description: Subscription ID for which the invoice was created.
+                    example: 2c938084726fca480172750000000000
+                  reason:
+                    type: string
+                    description: It is a short description that the subscriber will see during the checkout process and in the notifications.
+                    example: Yoga classes
+                  external_reference:
+                    type: string
+                    example: 23546246234
+                    description: Reference to sync with your system. This is a free text field to help you with your integration to link the entities.
+                  currency_id:
+                    type: string
+                    description: ID of the currency used in the payment.
+                    example: ARS
+                    enum:
+                      - ARS -- Argentine peso.
+                      - BRL -- Brazilian real.
+                      - CLP -- Chilean peso.
+                      - MXN -- Mexican peso.
+                      - COP -- Colombian peso.
+                      - PEN - Peruvian sol.
+                      - UYU -- Uruguayan peso.
+                  transaction_amount:
+                    type: number
+                    description: Amount we will charge on each invoice.
+                    example: 10
+                  debit_date:
+                    type: date
+                    description: Date on which we will tried to do the payment.
+                    example: "2022-01-01T11:12:25.892-04:00"
+                  retry_attempt:
+                    type: number
+                    description: How many times we try to collect the invoice.
+                    example: 4
+                  status:
+                    type: string
+                    description: Status of the invoice.
+                    example: scheduled
+                    enum:
+                      - scheduled -- Authorized payment scheduled to collect
+                      - processed -- Authorized payment collected or exceeded retries
+                      - recycling -- Authorized payment in attempt to collect
+                      - cancelled -- Authorized payment canceled
+                  summarized:
+                    type: string
+                    description: Summarization status of the invoice result in the subscription.
+                    example: pending
+                    enum:
+                      - pending -- Pending summary in the subscription.
+                      - done -- Summarized result in the subscription.
+                  payment:
+                    type: object
+                    description: Payment status related to the invoice.
+                    properties:
+                      id:
+                        type: number
+                        description: Unique payment identifier.
+                        example: 19951521071
+                      status:
+                        type: string
+                        description: Payment status.
+                        example: approved
+                        enum:
+                          - pending -- The user has not yet completed the payment process.
+                          - approved -- The payment has been approved and accredited.
+                          - authorized -- The payment has been authorized but not captured yet.
+                          - in_process -- Payment is being reviewed.
+                          - in_mediation -- Users have initiated a dispute.
+                          - rejected -- Payment was rejected. The user may retry payment.
+                          - cancelled -- Payment was cancelled by one of the parties or because time for payment has expired
+                          - refunded -- Payment was refunded to the user.
+                          - charged_back -- Was made a chargeback in the buyer’s credit card.
+                      status_detail:
+                        type: string
+                        description: Payment status detail.
+                        example: accredited
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400--Bad-request--Binding exception, parameters passed are invalid
+        '401':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401--Unauthorized--Unauthorized access to resource
+        '500':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Error--Internal server error
+  /authorized_payments/search:
+    get:
+      tags:
+        - $ref: "#/tags/subscriptions"
+      summary: Search invoices
+      description: Search the invoices of a subscriptions by different parameters. You can search by subscription, payment or customer ID
+      parameters:
+        - name: id
+          in: path
+          description: Unique ID that identifies a invoice.
+          required: true
+          schema:
+            type: number
+            example: 3950169598
+        - name: preapproval_id
+          in: path
+          description: Unique subscription ID to find related invoices.
+          required: true
+          schema:
+            type: string
+            example: 2c938084726fca480172750000000000
+        - name: payment_id
+          in: path
+          description: Unique payment ID to find related invoice.
+          required: true
+          schema:
+            type: number
+            example: 12476802073
+        - name: payer_id
+          in: path
+          description: Unique payer ID to find your related invoices.
+          required: true
+          schema:
+            type: number
+            example: 1054464758
+        - name: offset
+          in: path
+          description: Specifies the offset of the first item in the collection to return.
+          schema:
+            type: number
+            example: 20
+        - name: limit
+          in: path
+          description: Specifies the maximum number of items to return.
+          schema:
+            type: number
+            example: 20
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  paging:
+                    type: object
+                    description: Information for pagination of search results.
+                    properties:
+                      offset:
+                        type: number
+                        description: The offset of the first item in the collection to return.
+                        example: 0
+                      limit:
+                        type: number
+                        description: The maximum number of entries to return.
+                        example: 20
+                      total:
+                        type: number
+                        description:  The total number of items in the collection.
+                        example: 100
+                  results:
+                    type: array
+                    description: The page of items. This will be an empty array if there are no results.
+                    properties:
+                      type: object
+                      description: Invoices result item.
+                      properties:
+                        id:
+                          type: number
+                          description: Unique invoice identifier.
+                          example: 6114264375
+                        type:
+                          type: string
+                          description: Type of invoice generated based on recurrence.
+                          example: scheduled
+                          enum:
+                            - scheduled -- Automatically generated and scheduled by the recurrence engine.
+                        date_created:
+                          type: string
+                          description: Invoice creation date.
+                          example: "2022-01-01T11:12:25.892-04:00"
+                        last_modified:
+                          type: string
+                          description: Invoice last modified date. An invoice is modified when an update occurs in collection attempts or payment.
+                          example: "2022-01-01T11:12:25.892-04:00"
+                        preapproval_id:
+                          type: string
+                          description: Subscription ID for which the invoice was created.
+                          example: 2c938084726fca480172750000000000
+                        reason:
+                          type: string
+                          description: It is a short description that the subscriber will see during the checkout process and in the notifications.
+                          example: Yoga classes
+                        external_reference:
+                          type: string
+                          example: 23546246234
+                          description: Reference to sync with your system. This is a free text field to help you with your integration to link the entities.
+                        currency_id:
+                          type: string
+                          description: ID of the currency used in the payment.
+                          example: ARS
+                          enum:
+                            - ARS -- Argentine peso.
+                            - BRL -- Brazilian real.
+                            - CLP -- Chilean peso.
+                            - MXN -- Mexican peso.
+                            - COP -- Colombian peso.
+                            - PEN -- Peruvian sol.
+                            - UYU -- Uruguayan peso.
+                        transaction_amount:
+                          type: number
+                          description: Amount we will charge on each invoice.
+                          example: 10
+                        debit_date:
+                          type: date
+                          description: Date on which we will tried to do the payment.
+                          example: "2022-01-01T11:12:25.892-04:00"
+                        retry_attempt:
+                          type: number
+                          description: How many times we try to collect the authorized payment.
+                          example: 4
+                        status:
+                          type: string
+                          description: Status of the invoice.
+                          example: scheduled
+                          enum:
+                            - scheduled -- Authorized payment scheduled to collect
+                            - processed -- Authorized payment collected or exceeded retries
+                            - recycling -- Authorized payment in attempt to collect
+                            - cancelled -- Authorized payment canceled
+                        summarized:
+                          type: string
+                          description: Summarization status of the invoice result in the subscription.
+                          example: pending
+                          enum:
+                            - pending -- Pending summary in the subscription.
+                            - done -- Summarized result in the subscription.
+                        payment:
+                          type: object
+                          description: Payment status related to the authorized payment.
+                          properties:
+                            id:
+                              type: number
+                              description: Unique payment identifier.
+                              example: 19951521071
+                            status:
+                              type: string
+                              description: Payment status.
+                              example: approved
+                              enum:
+                                - pending -- The user has not yet completed the payment process.
+                                - approved -- The payment has been approved and accredited.
+                                - authorized -- The payment has been authorized but not captured yet.
+                                - in_process -- Payment is being reviewed.
+                                - in_mediation -- Users have initiated a dispute.
+                                - rejected -- Payment was rejected. The user may retry payment.
+                                - cancelled -- Payment was cancelled by one of the parties or because time for payment has expired
+                                - refunded -- Payment was refunded to the user.
+                                - charged_back -- Was made a chargeback in the buyer’s credit card.
+                            status_detail:
+                              type: string
+                              description: Payment status detail.
+                              example: accredited
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400--Bad-request--Search parameters are required
+                      - 400--Bad-request--Binding exception, parameters passed are invalid
+        '401':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401--Unauthorized--Unauthorized access to resource
+        '500':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Error--Internal server error
+  /preapproval_plan/{id}:
+    get:
+      tags:
+        - $ref: "#/tags/subscriptions"
+      summary: Get a subscription plan
+      description: Obtains all the information of a plan from its ID
+      parameters:
+        - name: id
+          in: path
+          description: Subscription plan identifier
+          required: true
+          schema:
+            type: string
+            example: 2c938084726fca480172750000000000
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: 2c938084726fca480172750000000000
+                    description: Unique subscription plan identifier.
+                  application_id:
+                    type: number
+                    example: 1234567812345678
+                    description: Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account.
+                  collector_id:
+                    type: number
+                    example: 100200300
+                    description: Unique ID that identifies your user as a seller. This ID matches your User ID in our ecosystem.
+                  reason:
+                    type: string
+                    description: It is a short description that the subscriber will see during the checkout process and in the notifications.
+                    example: Yoga classes
+                  auto_recurring:
+                    type: object
+                    description: Configuration data for recurrence.
+                    properties:
+                      frequency:
+                        type: number
+                        description: Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.
+                        example: 1
+                      frequency_type:
+                        required: true
+                        type: string
+                        description: Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.
+                        example: months
+                        enum:
+                          - days -- Indicate a frequency in units of days
+                          - months -- Indicate a frequency in units of months
+                      repetitions:
+                        type: number
+                        description: It is optional and is used to create a limited subscription. Indicates the number of times that we will repeat the recurrence cycle. If this param is not defined, subscription does not end until some of the parties cancel it.
+                        example: 12
+                      billing_day:
+                        type: number
+                        description: Day of the month that the subscription will always be charged. It only accepts values between 1 and 28.
+                        example: 10
+                      billing_day_proportional:
+                        type: boolean
+                        description: Charge a proportional amount to the billing day at the time of registration.
+                        example: true
+                        enum:
+                          - true -- Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.
+                          - false -- Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.
+                      free_trial:
+                        type: object
+                        description: Free trial data.
+                        properties:
+                          frequency:
+                            type: number
+                            description: Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.
+                            example: 7
+                          frequency_type:
+                            required: true
+                            type: string
+                            description: Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.
+                            example: months
+                            enum:
+                              - days -- Indicate a frequency in units of days
+                              - months -- Indicate a frequency in units of months
+                          first_invoice_offset:
+                            type: number
+                            description: Number of days to collect the first invoice.
+                            example: 7
+                      transaction_amount:
+                        type: number
+                        description: Amount we will charge on each invoice.
+                        example: 10
+                      currency_id:
+                        type: string
+                        description: ID of the currency used in the payment.
+                        example: ARS
+                        enum:
+                          - ARS -- Argentine peso.
+                          - BRL -- Brazilian real.
+                          - CLP -- Chilean peso.
+                          - MXN -- Mexican peso.
+                          - COP -- Colombian peso.
+                          - PEN -- Peruvian sol.
+                          - UYU -- Uruguayan peso.
+                  payment_methods_allowed:
+                    type: object
+                    description: Payment methods enabled at checkout.
+                    properties:
+                      payment_types:
+                        type: array
+                        description: Payment types allowed in the payment flow.
+                        properties:
+                          id:
+                            type: string
+                            description: Payment type identifier.
+                            example: credit_card
+                      payment_methods:
+                        type: array
+                        description: Payment methods allowed in the payment flow.
+                        properties:
+                          id:
+                            type: string
+                            description: Payment method identifier.
+                            example: bolbradesco
+                    back_url:
+                      type: string
+                      description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                      example: https://www.mercadopago.com.ar
+                  back_url:
+                    type: string
+                    description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                    example: https://www.mercadopago.com.ar
+                  external_reference:
+                    type: string
+                    example: "23546246234"
+                    description: Reference to sync with your system. This is a free text field to help you with your integration to link the entities.
+                  init_point:
+                    type: string
+                    example: https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c938084726fca480172750000000000
+                    description: URL to start the subscription flow
+                  date_created:
+                    type: string
+                    example: "2022-01-01T11:12:25.892-04:00"
+                    description: Creation date.
+                  last_modified:
+                    type: string
+                    example: "2022-01-01T11:12:25.892-04:00"
+                    description: Date of last modification.
+                  status:
+                    type: string
+                    example: active
+                    description: Status of the plan.
+                    enum:
+                      - active -- Plan available to create subscriptions
+                      - cancelled -- Plan not available to create subscriptions       
+        '401':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401--Unauthorized--Unauthorized access to resource
+        '404':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 404--Not-found--The template with id {id} does not exist
+        '500':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Error--Internal server error
+    put:
+      tags:
+        - $ref: "#/tags/subscriptions"
+      summary: Update a subscription plan
+      description: Renew the data of a plan. Indicate the plan ID and send the body with the information you want to update
+      parameters:
+        - name: id
+          in: path
+          description: Subscription plan identifier
+          required: true
+          schema:
+            type: string
+            example: 2c938084726fca480172750000000000
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                reason:
+                  type: string
+                  description: It is a short description that the subscriber will see during the checkout process and in the notifications.
+                  example: Yoga classes
+                auto_recurring:
+                  type: object
+                  description: Configuration data for recurrence.
+                  properties:
+                    frequency:
+                      type: number
+                      description: Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.
+                      example: 1
+                    frequency_type:
+                      required: true
+                      type: string
+                      description: Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.
+                      example: months
+                      enum:
+                        - days -- Indicate a frequency in units of days
+                        - months -- Indicate a frequency in units of months
+                    repetitions:
+                      type: number
+                      description: It is optional and is used to create a limited subscription. Indicates the number of times that we will repeat the recurrence cycle. If this param is not defined, subscription does not end until some of the parties cancel it.
+                      example: 12
+                    billing_day:
+                      type: number
+                      description: Day of the month that the subscription will always be charged. It only accepts values between 1 and 28.
+                      example: 10
+                    billing_day_proportional:
+                      type: boolean
+                      description: Charge a proportional amount to the billing day at the time of registration.
+                      example: true
+                      enum:
+                        - true -- Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.
+                        - false -- Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.
+                    free_trial:
+                      type: object
+                      description: Free trial data.
+                      properties:
+                        frequency:
+                          type: number
+                          description: Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.
+                          example: 1
+                        frequency_type:
+                          required: true
+                          type: string
+                          description: Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.
+                          example: months
+                          enum:
+                            - days -- Indicate a frequency in units of days
+                            - months -- Indicate a frequency in units of months
+                    transaction_amount:
+                      type: number
+                      description: Amount we will charge on each invoice.
+                      example: 10
+                    currency_id:
+                      type: string
+                      description: ID of the currency used in the payment.
+                      example: ARS
+                      enum:
+                        - ARS -- Argentine peso.
+                        - BRL -- Brazilian real.
+                        - CLP -- Chilean peso.
+                        - MXN -- Mexican peso.
+                        - COP -- Colombian peso.
+                        - PEN -- Peruvian sol.
+                        - UYU -- Uruguayan peso.
+                payment_methods_allowed:
+                  type: object
+                  description: Payment methods enabled at checkout.
+                  properties:
+                    payment_types:
+                      type: array
+                      description: Payment types allowed in the payment flow.
+                      properties:
+                        id:
+                          type: string
+                          description: Payment type identifier.
+                          example: credit_card
+                    payment_methods:
+                      type: array
+                      description: Payment methods allowed in the payment flow.
+                      properties:
+                        id:
+                          type: string
+                          description: Payment method identifier.
+                          example: bolbradesco
+                back_url:
+                  type: string
+                  description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                  example: https://www.yoursite.com
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: 2c938084726fca480172750000000000
+                    description: Unique subscription plan identifier.
+                  application_id:
+                    type: number
+                    example: 1234567812345678
+                    description: Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account.
+                  collector_id:
+                    type: number
+                    example: 100200300
+                    description: Unique ID that identifies your user as a seller. This ID matches your User ID in our ecosystem.
+                  reason:
+                    type: string
+                    description: It is a short description that the subscriber will see during the checkout process and in the notifications.
+                    example: Yoga classes
+                  auto_recurring:
+                    type: object
+                    description: Configuration data for recurrence.
+                    properties:
+                      frequency:
+                        type: number
+                        description: Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.
+                        example: 1
+                      frequency_type:
+                        required: true
+                        type: string
+                        description: Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.
+                        example: months
+                        enum:
+                          - days -- Indicate a frequency in units of days
+                          - months -- Indicate a frequency in units of months
+                      repetitions:
+                        type: number
+                        description: It is optional and is used to create a limited subscription. Indicates the number of times that we will repeat the recurrence cycle. If this param is not defined, subscription does not end until some of the parties cancel it.
+                        example: 12
+                      billing_day:
+                        type: number
+                        description: Day of the month that the subscription will always be charged. It only accepts values between 1 and 28.
+                        example: 10
+                      billing_day_proportional:
+                        type: boolean
+                        description: Charge a proportional amount to the billing day at the time of registration.
+                        example: true
+                        enum:
+                          - true -- Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.
+                          - false -- Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.
+                      free_trial:
+                        type: object
+                        description: Free trial data.
+                        properties:
+                          frequency:
+                            type: number
+                            description: Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.
+                            example: 7
+                          frequency_type:
+                            required: true
+                            type: string
+                            description: Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.
+                            example: months
+                            enum:
+                              - days -- Indicate a frequency in units of days
+                              - months -- Indicate a frequency in units of months
+                          first_invoice_offset:
+                            type: number
+                            description: Number of days to collect the first invoice
+                            example: 7
+                      transaction_amount:
+                        type: number
+                        description: Amount we will charge on each invoice.
+                        example: 10
+                      currency_id:
+                        type: string
+                        description: ID of the currency used in the payment.
+                        example: ARS
+                        enum:
+                          - ARS -- Argentine peso.
+                          - BRL -- Brazilian real.
+                          - CLP -- Chilean peso.
+                          - MXN -- Mexican peso.
+                          - COP -- Colombian peso.
+                          - PEN -- Peruvian sol.
+                          - UYU -- Uruguayan peso.
+                  payment_methods_allowed:
+                    type: object
+                    description: Payment methods enabled at checkout.
+                    properties:
+                      payment_types:
+                        type: array
+                        description: Payment types allowed in the payment flow.
+                        properties:
+                          id:
+                            type: string
+                            description: Payment type identifier.
+                            example: credit_card
+                      payment_methods:
+                        type: array
+                        description: Payment methods allowed in the payment flow.
+                        properties:
+                          id:
+                            type: string
+                            description: Payment method identifier.
+                            example: bolbradesco
+                    back_url:
+                      type: string
+                      description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                      example: https://www.mercadopago.com.ar
+                  back_url:
+                    type: string
+                    description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                    example: https://www.mercadopago.com.ar
+                  external_reference:
+                    type: string
+                    example: "23546246234"
+                    description: Reference to sync with your system. This is a free text field to help you with your integration to link the entities.
+                  init_point:
+                    type: string
+                    example: https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c938084726fca480172750000000000
+                    description: URL to start the subscription flow
+                  date_created:
+                    type: string
+                    example: "2022-01-01T11:12:25.892-04:00"
+                    description: Creation date
+                  last_modified:
+                    type: string
+                    example: "2022-01-01T11:12:25.892-04:00"
+                    description: Date of last modification
+                  status:
+                    type: string
+                    example: active
+                    description: status
+                    enum:
+                      - active -- Plan available to create subscription
+                      - cancelled -- Plan not available to create subscription  
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                     - 400--Bad-Request--Check the parameters of the body
+        '401':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401--Unauthorized--Unauthorized access to resource
+        '404':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 404--Not-found--The template with id {id} does not exist
+        '500':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Error--Internal server error
+  /preapproval_plan/search:
+    get:
+      tags:
+        - $ref: "#/tags/subscriptions"
+      summary: Search subscription plans
+      description: Search for subscription plans by different parameters
+      parameters:
+        - name: status
+          in: path
+          description: Specifies the status of the plan wants to get.
+          schema:
+            type: string
+            example: active
+        - name: q
+          in: path
+          description: Free search field.
+          schema:
+            type: string
+            example: Plan gold
+        - name: sort
+          in: path
+          description: Specifies the name of the field by which the results are to be sorted according to a criteria.
+          schema:
+            type: string
+            example: date_created
+        - name: criteria
+          in: path
+          description: Specifies the order criteria of the results.
+          schema:
+            type: string
+            example: asc
+            enum:
+              - asc -- Ascending sort
+              - desc -- Descending sort
+        - name: offset
+          in: path
+          description: Specifies the offset of the first item in the collection to return.
+          schema:
+            type: number
+            example: 20
+        - name: limit
+          in: path
+          description: Specifies the maximum number of items to return.
+          schema:
+            type: number
+            example: 20
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  paging:
+                    type: object
+                    description: Information for pagination of search results.
+                    properties:
+                      offset:
+                        type: number
+                        description: The offset of the first item in the collection to return.
+                        example: 0
+                      limit:
+                        type: number
+                        description: The maximum number of entries to return.
+                        example: 20
+                      total:
+                        type: number
+                        description:  The total number of items in the collection.
+                        example: 100
+                  results:
+                    type: array
+                    description: The page of items. This will be an empty array if there are no results.
+                    properties:
+                      type: object
+                      description: Plan result item.
+                      properties:
+                        id:
+                          type: string
+                          example: 2c938084726fca480172750000000000
+                          description: Unique subscription plan identifier.
+                        application_id:
+                          type: number
+                          example: 1234567812345678
+                          description: Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account.
+                        collector_id:
+                          type: number
+                          example: 100200300
+                          description: Unique ID that identifies your user as a seller. This ID matches your User ID in our ecosystem.
+                        reason:
+                          type: string
+                          description: It is a short description that the subscriber will see during the checkout process and in the notifications.
+                          example: Yoga classes
+                        auto_recurring:
+                          type: object
+                          description: Configuration data for recurrence.
+                          properties:
+                            frequency:
+                              type: number
+                              description: Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.
+                              example: 1
+                            frequency_type:
+                              required: true
+                              type: string
+                              description: Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.
+                              example: months
+                              enum:
+                                - days -- Indicate a frequency in units of days
+                                - months -- Indicate a frequency in units of months
+                            repetitions:
+                              type: number
+                              description: It is optional and is used to create a limited subscription. Indicates the number of times that we will repeat the recurrence cycle. If this param is not defined, subscription does not end until some of the parties cancel it.
+                              example: 12
+                            billing_day:
+                              type: number
+                              description: Day of the month that the subscription will always be charged. It only accepts values between 1 and 28.
+                              example: 10
+                            billing_day_proportional:
+                              type: boolean
+                              description: Charge a proportional amount to the billing day at the time of registration.
+                              example: true
+                              enum:
+                                - true -- Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.
+                                - false -- Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.
+                            free_trial:
+                              type: object
+                              description: Free trial data.
+                              properties:
+                                frequency:
+                                  type: number
+                                  description: Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.
+                                  example: 7
+                                frequency_type:
+                                  required: true
+                                  type: string
+                                  description: Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.
+                                  example: months
+                                  enum:
+                                    - days -- Indicate a frequency in units of days
+                                    - months -- Indicate a frequency in units of months
+                                first_invoice_offset:
+                                  type: number
+                                  description: Number of days to collect the first invoice.
+                                  example: 7
+                            transaction_amount:
+                              type: number
+                              description: Amount we will charge on each invoice.
+                              example: 10
+                            currency_id:
+                              type: string
+                              description: ID of the currency used in the payment.
+                              example: ARS
+                              enum:
+                                - ARS -- Argentine peso.
+                                - BRL -- Brazilian real.
+                                - CLP -- Chilean peso.
+                                - MXN -- Mexican peso.
+                                - COP -- Colombian peso.
+                                - PEN -- Peruvian sol.
+                                - UYU -- Uruguayan peso.
+                        payment_methods_allowed:
+                          type: object
+                          description: Payment methods enabled at checkout.
+                          properties:
+                            payment_types:
+                              type: array
+                              description: Payment types allowed in the payment flow.
+                              properties:
+                                id:
+                                  type: string
+                                  description: Payment type identifier.
+                                  example: credit_card
+                            payment_methods:
+                              type: array
+                              description: Payment methods allowed in the payment flow.
+                              properties:
+                                id:
+                                  type: string
+                                  description: Payment method identifier.
+                                  example: bolbradesco
+                          back_url:
+                            type: string
+                            description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                            example: https://www.mercadopago.com.ar
+                        back_url:
+                          type: string
+                          description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                          example: https://www.mercadopago.com.ar
+                        external_reference:
+                          type: string
+                          example: "23546246234"
+                          description: Reference to sync with your system. This is a free text field to help you with your integration to link the entities.
+                        init_point:
+                          type: string
+                          example: https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c938084726fca480172750000000000
+                          description: URL to start the subscription flow
+                        date_created:
+                          type: string
+                          example: "2022-01-01T11:12:25.892-04:00"
+                          description: Creation date.
+                        last_modified:
+                          type: string
+                          example: "2022-01-01T11:12:25.892-04:00"
+                          description: Date of last modification.
+                        subscribed:
+                          type: number
+                          description: Number of customers subscribed to the plan.
+                          example: 50
+                        status:
+                          type: string
+                          example: active
+                          description: Status of the plan.
+                          enum:
+                            - active -- Plan available to create subscriptions
+                            - cancelled -- Plan not available to create subscriptions
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400--Bad-request--Search parameters are required
+                      - 400--Bad-request--Binding exception, parameters passed are invalid
+                      - 400--Bad-request--Invalid status value. Valid status are active, cancelled
+        '401':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401--Unauthorized--Unauthorized access to resource
+        '500':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Error--Internal server error
+  /preapproval/search:
+    get:
+      tags:
+        - $ref: "#/tags/subscriptions"
+      summary: Search subscriptions
+      description: Search for subscriptions by using different parameters
+      parameters:
+        - name: q
+          in: path
+          description: Free search field.
+          schema:
+            type: string
+            example: Plan gold
+        - name: payer_id
+          in: path
+          description: Unique customer ID to find related subscriptions.
+          schema:
+            type: number
+            example: 123123123
+        - name: payer_email
+          in: path
+          description: Allows you to search for subscriptions registered with this email.
+          schema:
+            type: string
+            example: test_1234@testuser.com
+        - name: preapproval_plan_id
+          in: path
+          description: Specifies the plan ID of the subscriptions wants to get.
+          schema:
+            type: string
+            example: 2c938084726fca480172750000000000
+        - name: transaction_amount
+          in: path
+          description: Specifies the amount of the subscriptions wants to get.
+          schema:
+            type: number
+            example: 1000
+        - name: semaphore
+          in: path
+          description: Specifies the control status of the subscription.
+          schema:
+            type: string
+            example: green
+            enum:
+              - green -- All collections made.
+              - yellow -- With collection problems. We are trying to collect an invoice.
+              - red -- With pending collections. An invoice could not be collected.
+              - blank -- Discounted collection.
+        - name: status
+          in: path
+          description: Specifies the status of the subscriptions wants to get. Can be null, one or many.
+          schema:
+            type: string
+            example: authorized,cancelled,paused
+            enum:
+              - pending -- Subscription without a payment method.
+              - authorized -- Subscription with a valid payment method.
+              - paused -- Subscription with temporally discontinued collection of payments.
+              - cancelled -- Subscription terminated. This is an irreversible state.
+        - name: sort
+          in: path
+          description: Specifies the type of sorting selected to retrieve the subscriptions. You must indicate a field and a sort type with the following format field_name:sort_type.
+          schema:
+            type: string
+            example: payer_id:asc
+            enum:
+              - asc -- Ascending sort
+              - desc -- Descending sort
+        - name: offset
+          in: path
+          description: Specifies the offset of the first item in the collection to return.
+          schema:
+            type: number
+            example: 20
+        - name: limit
+          in: path
+          description: Specifies the maximum number of items to return.
+          schema:
+            type: number
+            example: 20
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  paging:
+                    type: object
+                    description: Information for pagination of search results.
+                    properties:
+                      offset:
+                        type: number
+                        description: The offset of the first item in the collection to return.
+                        example: 0
+                      limit:
+                        type: number
+                        description: The maximum number of entries to return.
+                        example: 20
+                      total:
+                        type: number
+                        description:  The total number of items in the collection.
+                        example: 100
+                  results:
+                    type: array
+                    description: The page of items. This will be an empty array if there are no results.
+                    properties:
+                      type: object
+                      description: Subscription result item.
+                      properties:
+                        id:
+                          type: string
+                          example: 2c938084726fca480172750000000000
+                          description: Unique subscroption identifier.
+                        version:
+                          type: number
+                          example: 0
+                          description: How many times subscription was modified
+                        application_id:
+                          type: number
+                          example: 1234567812345678
+                          description: Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account.
+                        collector_id:
+                          type: number
+                          example: 100200300
+                          description: Unique ID that identifies your user as a seller. This ID matches your User ID in our ecosystem.
+                        preapproval_plan_id:
+                          type: string
+                          description: Unique subscription plan identifier. This parameter is only available when it is a subscription with a plan and indicates from which plan the subscription was created.
+                          example: 2c938084726fca480172750000000000
+                        reason:
+                          type: string
+                          example: Yoga classes.
+                          description: It is a short description that the subscriber will see during the checkout process and in the notifications. It is only required for subscriptions without a plan.
+                        external_reference:
+                          type: string
+                          example: 23546246234
+                          description: Reference to sync with your system. This is a free text field to help you with your integration to link the entities.
+                        back_url:
+                          type: string
+                          example: https://www.mercadopago.com.ar
+                          description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                        init_point:
+                          type: string
+                          example: https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_id=2c938084726fca480172750000000000
+                          description: Url to checkout to add or modify payment method.
+                        auto_recurring:
+                          type: object
+                          description: Configuration data for recurrence.
+                          properties:
+                            frequency:
+                              type: number
+                              description: Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.
+                              example: 1
+                            frequency_type:
+                              required: true
+                              type: string
+                              description: Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.
+                              example: months
+                              enum:
+                                - days -- Indicate a frequency in units of days
+                                - months -- Indicate a frequency in units of months
+                            start_date:
+                              type: string
+                              format: date
+                              description: Date from which the subscription will be active and we start collecting invoices.
+                              example: "2020-06-02T13:07:14.260Z"
+                            end_date:
+                              type: string
+                              format: date
+                              description: Date until which the subscription will be active and we will stop charging invoices.
+                              example: "2022-07-20T15:59:52.581Z"
+                            currency_id:
+                              type: string
+                              description: ID of the currency used in the payment.
+                              example: ARS
+                              enum:
+                                - ARS -- Argentine peso.
+                                - BRL -- Brazilian real.
+                                - CLP -- Chilean peso.
+                                - MXN -- Mexican peso.
+                                - COP -- Colombian peso.
+                                - PEN -- Peruvian sol.
+                                - UYU -- Uruguayan peso.
+                            transaction_amount:
+                              type: number
+                              description: Amount we will charge on each invoice.
+                              example: 10
+                            free_trial:
+                              type: object
+                              description: Free trial data.
+                              properties:
+                                frequency:
+                                  type: number
+                                  description: Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.
+                                  example: 1
+                                frequency_type:
+                                  required: true
+                                  type: string
+                                  description: Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.
+                                  example: months
+                                  enum:
+                                    - days -- Indicate a frequency in units of days
+                                    - months -- Indicate a frequency in units of months
+                        first_invoice_offset:
+                          type: number
+                          description: Number of days to collect the first invoice
+                          example: 7
+                        payer_id:
+                          type: number
+                          example: 123123123
+                          description: Unique customer identifier. This is created from the email you used to create the subscription.
+                        payer_first_name:
+                          type: string
+                          description: Customer name.
+                          example: Jorge
+                        payer_last_name:
+                          type: string
+                          description: Customer lastname.
+                          example: Smith
+                        card_id:
+                          type: number
+                          example: 123123123
+                          description: Unique identifier to retrieve data from the card used as a payment method.
+                        payment_method_id:
+                          type: string
+                          example: account_money
+                          description: Payment method configured.
+                        next_payment_date:
+                          type: string
+                          example: "2022-01-01T11:12:25.892-04:00"
+                          description: Date of the next payment debit.
+                        date_created:
+                          type: string
+                          example: "2022-01-01T11:12:25.892-04:00"
+                          description: Creation date.
+                        last_modified:
+                          type: string
+                          example: "2022-01-01T11:12:25.892-04:00"
+                          description: Date of last modification.
+                        summarized:
+                          type: object
+                          description: Summary information on subscription invoices and charges
+                          properties:
+                            quotas:
+                              type: number
+                              description: How many payments we going to do.
+                              example: 6
+                            charged_quantity:
+                              type: number
+                              description: Total charged of charged quotas.
+                              example: 3
+                            charged_amount:
+                              type: number
+                              description: Total amount collected to date.
+                              example: 1000.00
+                            pending_charge_quantity:
+                              type: number
+                              description: Pending quotas to charge.
+                              example: 1
+                            pending_charge_amount:
+                              type: number
+                              description: Amount pending collection.
+                              example: 200.00
+                            last_charged_date:
+                              type: number
+                              description: Date of last charge.
+                              example: "2022-01-01T11:12:25.892-04:00"
+                            last_charged_amount:
+                              type: number
+                              description: Date of last time amount charged.
+                              example: 100.00
+                            semaphore:
+                              type: number
+                              description: Subscription collection status summary.
+                              example: green
+                              enum:
+                                - green -- All collections made.
+                                - yellow -- With collection problems. We are trying to collect an invoice.
+                                - red -- With pending collections. An invoice could not be collected.
+                                - blank -- Discounted collection.
+                        status:
+                          type: string
+                          example: pending
+                          description: Status
+                          enum:
+                            - pending -- Preapproval without a payment method.
+                            - authorized -- Preapproval with a valid payment method.
+                            - paused -- Preapproval with temporally discontinued collection of payments.
+                            - cancelled -- Preapproval terminated. This is an irreversible state.
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 400--Bad-request--Search parameters are required
+                      - 400--Bad-request--Binding exception, parameters passed are invalid
+        '401':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401--Unauthorized--Unauthorized access to resource
+        '500':
+          description: Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Error--Internal server error  
