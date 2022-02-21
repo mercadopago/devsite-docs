@@ -133,7 +133,7 @@ paths:
                   back_url:
                     type: string
                     example: https://www.mercadopago.com.ar
-                    description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                    description: Successful return URL. Use this setting to redirect your customers to your site after our checkout.
                   init_point:
                     type: string
                     example: https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_id=2c938084726fca480172750000000000
