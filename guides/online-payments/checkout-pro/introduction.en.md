@@ -26,27 +26,27 @@ Checkout Pro is an integration that allows you to **charge your customers throug
 ----[mla, mlb]----
 |                               | Checkout Pro | API |
 | :--- | :---: | :---: |
-| Integration difficulty        | Low | Medium | High |
-| UI/UX Design                  | ✔ | ✔ |   |
-| Conversion optimization       | ✔ | ✔ |   |
-| Approval optimization         | ✔ |   |   |
-| Guest payments                | ✔ | ✔ | ✔ |
-| Registered users payments     | ✔ |   |   |
-| Fraud prevention              | ✔ | ✔ | ✔ |
-| Order completed page          | ✔ |   |   |
-| Split payments                | ✔ |   |   |
+| Integration difficulty        | Low | High |
+| UI/UX Design                  | ✔ |   |
+| Conversion optimization       | ✔ |   |
+| Approval optimization         | ✔ |   |
+| Guest payments                | ✔ | ✔ |
+| Registered users payments     | ✔ |   |
+| Fraud prevention              | ✔ | ✔ |
+| Order completed page          | ✔ |   |
+| Split payments                | ✔ |   |
 ------------
 ----[mlm, mlu, mco, mlc, mpe]----
 |                               | Checkout Pro | API |
 | :--- | :---: | :---: |
-| Integration difficulty        | Low | Medium | High |
-| UI/UX Design                  | ✔ | ✔ |   |
-| Conversion optimization       | ✔ | ✔ |   |
-| Approval optimization         | ✔ |   |   |
-| Guest payments                | ✔ | ✔ | ✔ |
-| Registered users payments     | ✔ |   |   |
-| Fraud prevention              | ✔ | ✔ | ✔ |
-| Order completed page          | ✔ |   |   |
+| Integration difficulty        | Low | High |
+| UI/UX Design                  | ✔ |   |
+| Conversion optimization       | ✔ |   |
+| Approval optimization         | ✔ |   |
+| Guest payments                | ✔ | ✔ |
+| Registered users payments     | ✔ |   |
+| Fraud prevention              | ✔ | ✔ |
+| Order completed page          | ✔ |   |
 ------------
 
 ---

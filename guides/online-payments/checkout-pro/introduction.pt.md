@@ -25,27 +25,27 @@ O Checkout Pro é a integração que **te permite cobrar através do nosso formu
 ----[mla, mlb]----
 |                                       | Checkout Pro | API |
 | :--- | :---: | :---: |
-| Dificuldade de integração             | Baixa | Média | Alta |
-| Design UI/UX                          | ✔ | ✔ |   |
-| Conversão otimizada                   | ✔ | ✔ |   |
-| Aprovação otimizada                   | ✔ |   |   |
-| Pagamento de usuários convidados      | ✔ | ✔ | ✔ |
-| Pagamento de usuários cadastrados     | ✔ |   |   |
-| Prevenção de fraude                   | ✔ | ✔ | ✔ |
-| Tela de finalização de pagamento      | ✔ |   |   |
-| Pagamento com dois cartões            | ✔ |   |   |
+| Dificuldade de integração             | Baixa | Alta |
+| Design UI/UX                          | ✔ |   |
+| Conversão otimizada                   | ✔ |   |
+| Aprovação otimizada                   | ✔ |   |
+| Pagamento de usuários convidados      | ✔ | ✔ |
+| Pagamento de usuários cadastrados     | ✔ |   |
+| Prevenção de fraude                   | ✔ | ✔ |
+| Tela de finalização de pagamento      | ✔ |   |
+| Pagamento com dois cartões            | ✔ |   |
 ------------
 ----[mlm, mlu, mco, mlc, mpe]----
 |                                       | Checkout Pro | API |
 | :--- | :---: | :---: |
-| Dificuldade de integração             | Baixa | Media | Alta |
-| Design UI/UX                          | ✔ | ✔ |   |
-| Conversão otimizada                   | ✔ | ✔ |   |
-| Aprovação otimizada                   | ✔ |   |   |
-| Pagamento de usuários convidados      | ✔ | ✔ | ✔ |
-| Pagamento de usuários cadastrados     | ✔ |   |   |
-| Prevenção de fraude                   | ✔ | ✔ | ✔ |
-| Tela de finalização de pagamento      | ✔ |   |   |
+| Dificuldade de integração             | Baixa | Alta |
+| Design UI/UX                          | ✔ |   |
+| Conversão otimizada                   | ✔ |   |
+| Aprovação otimizada                   | ✔ |   |
+| Pagamento de usuários convidados      | ✔ | ✔ |
+| Pagamento de usuários cadastrados     | ✔ |   |
+| Prevenção de fraude                   | ✔ | ✔ |
+| Tela de finalização de pagamento      | ✔ |   |
 ------------
 
 ---
