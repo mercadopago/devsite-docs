@@ -1245,7 +1245,7 @@ paths:
                   init_point:
                     type: string
                     example: https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c938084726fca480172750000000000
-                    description: Url to checkout to add or modify payment method.
+                    description: URL to checkout to add or modify payment method.
                   preapproval_plan_id:
                     type: string
                     description: Unique preapproval plan identifier. This parameter is only available when it is a subscription with a plan and indicates from which plan the subscription was created.
