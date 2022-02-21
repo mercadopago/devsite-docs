@@ -1210,7 +1210,7 @@ paths:
                   back_url:
                     required: true
                     type: string
-                    description: Successful return url. Use this setting to redirect your customers after our checkout to your site.
+                    description: Successful return URL. Use this setting to redirect your customers to your site after our checkout.
                     example: https://www.yoursite.com
                   application_id:
                     type: number
