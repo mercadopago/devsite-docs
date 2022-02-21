@@ -1306,7 +1306,7 @@ paths:
                       - false -- Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.
                   quotas:
                     type: number
-                    description: How many payments we going to do.
+                    description: How many payments are going to be made.
                     example: 10
                   charged_quantity:
                     type: number
