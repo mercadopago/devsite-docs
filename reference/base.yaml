@@ -58,11 +58,11 @@ tags:
       url: '/guides/online-payments/checkout-api/introduction'
   mp-delivery:
     description:
-      pt: 'MP Delivery'
-      en: 'MP Delivery'
-      es: 'MP Delivery'
+      pt: 'Mercado Pago Delivery'
+      en: 'Mercado Pago Delivery'
+      es: 'Mercado Pago Delivery'
     externalDocs: 
-      url: '/guides/online-payments/checkout-api/introduction'
+      url: '/guides/online-payments/proximity/introduction'
   
 #------DEFAULT - ALL ARCHIVES - END------
 
