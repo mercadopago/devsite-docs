@@ -31,7 +31,7 @@ Mercado Pago will inform this `notification_url` both when creating and updating
 |`id`|It is a unique identifier of the reported resource.|
 
 
-> **Example:** If you set the `notification_url`: `https: // www.yoursite.com / notifications`, you will receive payment notifications like this: `https://www.yoursite.com/notifications?topic=merchant_order&id=123456789`
+> **Example:** If you set the `notification_url`: `https://www.yoursite.com/notifications`, you will receive payment notifications like this: `https://www.yoursite.com/notifications?topic=merchant_order&id=123456789`
 
 
 ## When receiving a notification
