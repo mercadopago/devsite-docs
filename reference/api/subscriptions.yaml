@@ -651,7 +651,7 @@ paths:
                   version:
                     type: number
                     example: 0
-                    description: How many times subscription was modified
+                    description: Indicates how many times the subscription was modified
                   application_id:
                     type: number
                     example: 1234567812345678
