@@ -23,8 +23,8 @@ O Checkout Pro é a integração que **te permite cobrar através do nosso formu
 ## Diferenças do Checkout Pro para outras soluções do Mercado Pago
 
 ----[mla, mlb]----
-|                                       | Checkout Pro | Web Tokenize Checkout | API |
-| :--- | :---: | :---: | :---: |
+|                                       | Checkout Pro | API |
+| :--- | :---: | :---: |
 | Dificuldade de integração             | Baixa | Média | Alta |
 | Design UI/UX                          | ✔ | ✔ |   |
 | Conversão otimizada                   | ✔ | ✔ |   |
@@ -36,8 +36,8 @@ O Checkout Pro é a integração que **te permite cobrar através do nosso formu
 | Pagamento com dois cartões            | ✔ |   |   |
 ------------
 ----[mlm, mlu, mco, mlc, mpe]----
-|                                       | Checkout Pro | Web Tokenize Checkout | API |
-| :--- | :---: | :---: | :---: |
+|                                       | Checkout Pro | API |
+| :--- | :---: | :---: |
 | Dificuldade de integração             | Baixa | Media | Alta |
 | Design UI/UX                          | ✔ | ✔ |   |
 | Conversão otimizada                   | ✔ | ✔ |   |
@@ -59,4 +59,3 @@ O Checkout Pro é a integração que **te permite cobrar através do nosso formu
 > Para realizar a integração com o Checkout Pro, você deve cumprir alguns requisitos.
 >
 > [Requisitos para integrar](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/previous-requirements)
->

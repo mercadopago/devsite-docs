@@ -27,8 +27,8 @@ Checkout Pro es la integración que **te permite cobrar a través de nuestro for
 ## Diferencias de Checkout Pro para otras soluciones de Mercado Pago
 
 ----[mla, mlb]----
-|                                       | Checkout Pro | Web Tokenize Checkout | API |
-| :--- | :--: | :--: | :--: |
+|                                       | Checkout Pro | API |
+| :--- | :--: | :--: |
 | Dificultad de integración             | Baja | Media | Alta |
 | Diseño UI/UX                          | ✔ | ✔ |   |
 | Conversión optimizada                 | ✔ | ✔ |   |
@@ -40,8 +40,8 @@ Checkout Pro es la integración que **te permite cobrar a través de nuestro for
 | Pago con dos tarjetas                 | ✔ |   |   |
 ------------
 ----[mlm, mlu, mco, mlc, mpe]----
-|                                       | Checkout Pro | Web Tokenize Checkout | API |
-| :--- | :--: | :--: | :--: |
+|                                       | Checkout Pro | API |
+| :--- | :--: | :--: |
 | Dificultad de integración             | Baja | Media | Alta |
 | Diseño UI/UX                          | ✔ | ✔ |   |
 | Conversión optimizada                 | ✔ | ✔ |   |

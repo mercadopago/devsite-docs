@@ -59,7 +59,7 @@
 
 ------------
 
-To **test different payment results,** fill in the desired status in the name of the cardholder:
+To **test different payment results**, fill in the desired status in the name of the cardholder:
 
 | Payment status | Description |
 | --- | --- |
