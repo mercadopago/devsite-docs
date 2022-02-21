@@ -1,4 +1,4 @@
-# Integre ----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------ para pagamentos com Pix
+# Integre o Checkout Transparente para pagamentos com Pix
 
 Você pode receber pagamentos instantaneamente com Pix (`bank_transfer`) de qualquer banco ou carteira digital, seja através de um **código QR** ou de um **código de pagamento** com um prazo de validade para que o pagamento seja efetuado.
 
