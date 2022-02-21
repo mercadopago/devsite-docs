@@ -796,7 +796,7 @@ paths:
                         example: "2022-01-01T11:12:25.892-04:00"
                       last_charged_amount:
                         type: number
-                        description: Date of last time amount charged.
+                        description: Date of last charged amount.
                         example: 100.00
                       semaphore:
                         type: number
