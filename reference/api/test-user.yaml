@@ -11,11 +11,17 @@ paths:
         - $ref: '#/tags/checkout-api'
         - $ref: '#/tags/checkout-pro'
       summary: Create test user
-      description: This endpoint handles http requests to create test_user
+      description: This endpoint handles http requests to create a test user.
       parameters:
         - name: access_token
           in: query
-          description: Access Token to Authenticate the request
+          description: Access token generated from the seller by the authentication process (OAuth). This security code identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+          enum:
+                      - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+                      - Client ID -- 1585551492
+                      - Creation date (MMddHH) -- 030918
+                      - Security hash -- 25######3458
+                      - User ID -- 2880736
           required: true
           schema:
             type: string
@@ -28,7 +34,7 @@ paths:
               properties:
                 site_id:
                   type: string
-                  description: site ID
+                  description: ID of the site where the test user will be created.
                   required: true
                   example: "MLA"
                   enum:
@@ -62,35 +68,35 @@ paths:
                   id:
                     type: integer
                     example: 123
-                    description: id
+                    description: Unique ID that identifies the test user.
                   nickname:
                     type: string
                     example: "TEST45I5GYIH"
-                    description: nickname
+                    description: Nickname that identifies the test user
                   password:
                     type: string
                     example: "qatest6730"
-                    description: password
+                    description: Test user password.
                   site_status:
                     type: string
                     example: "active"
-                    description: site status
+                    description: Status of the site where the test user was created.
                   site_id:
                     type: string
                     example: "MLA"
-                    description: site id
+                    description: ID of the site where the test user was created.
                   email:
                     type: string
                     example: "test_user_123@testuser.com"
-                    description: email
+                    description: Test user login email.
                   date_created:
                     type: string
                     example: "2022-02-01T12:00:00.000-04:00"
-                    description: date created
+                    description: Test user creation date.
                   date_last_updated:
                     type: string
                     example: "2022-02-01T12:00:00.000-04:00"
-                    description: date last updated
+                    description: Test user registration update date.
         '400':
           description: Bad Request
           content:
@@ -114,7 +120,7 @@ paths:
                     enum:
                       - 403--Forbidden--authorization-the-caller-id-must-be-a-productive-user
         '500':
-          description: Internal Server Error
+          description: Internal server error
           content:
             application/json:
               schema:
@@ -129,12 +135,18 @@ paths:
       tags:
         - $ref: '#/tags/checkout-api'
         - $ref: '#/tags/checkout-pro'
-      summary: Get test user
-      description: This endpoint handles http requests to create test_user
+      summary: Search test user
+      description: This endpoint handles http requests to search a test user.
       parameters:
         - name: access_token
           in: query
-          description: Access Token to Authenticate the request
+          description: Access token generated from the seller by the authentication process (OAuth). This security code identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+          enum:
+                      - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+                      - Client ID -- 1585551492
+                      - Creation date (MMddHH) -- 030918
+                      - Security hash -- 25######3458
+                      - User ID -- 2880736
           required: true
           schema:
             type: string
@@ -148,9 +160,11 @@ paths:
                 type: object
                 properties:
                   total:
+                    description: Total test users found.
                     type: integer
                     example: 1
                   results:
+                    description: Localized test user information.
                     type: array
                     items:
                       type: object
@@ -215,18 +229,24 @@ paths:
         - $ref: '#/tags/checkout-api'
         - $ref: '#/tags/checkout-pro'
       summary: Update test user password
-      description: This endpoint handles http requests to change the test user password
+      description: This endpoint handles http requests to change the test user password.
       parameters:
         - name: access_token
           in: query
-          description: Access Token to Authenticate the request
+          description: Access token generated from the seller by the authentication process (OAuth). This security code identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+          enum:
+                      - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+                      - Client ID -- 1585551492
+                      - Creation date (MMddHH) -- 030918
+                      - Security hash -- 25######3458
+                      - User ID -- 2880736
           required: true
           schema:
             type: string
             example: "12123adfasdf123u4u"
         - name: id
           in: path
-          description: User id
+          description: Unique ID that identifies the test user.
           required: true
           schema:
             type: string
@@ -240,9 +260,11 @@ paths:
                 type: object
                 properties:
                   message:
+                    description: Message with the password change status.
                     type: string
                     example: "password successfully reset"
                   new_password:
+                    description: New test user password.
                     type: string
                     example: "random"
         '403':
@@ -257,9 +279,9 @@ paths:
                     enum:
                       - 403--Forbidden--authorization-the-caller-id-must-be-a-productive-user403--Forbidden
         '405':
-          description: Method Not Allowed
+          description: Method not allowed
         '500':
-          description: Internal Server Error
+          description: Internal server error
           content:
             application/json:
               schema:
@@ -279,20 +301,26 @@ paths:
       parameters:
         - name: access_token
           in: query
-          description: Access Token to Authenticate the request
+          description: Access token generated from the seller by the authentication process (OAuth). This security code identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+          enum:
+                      - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+                      - Client ID -- 1585551492
+                      - Creation date (MMddHH) -- 030918
+                      - Security hash -- 25######3458
+                      - User ID -- 2880736 
           required: true
           schema:
             type: string
             example: "12123adfasdf123u4u"
         - name: id
           in: path
-          description: User id
+          description: Unique ID that identifies the test user.
           required: true
           schema:
             type: string
             example: "12123adfasdf123u4u"
       requestBody:
-        description: Amount Request
+        description: Amount request
         content:
           application/json:
             schema:
@@ -301,14 +329,15 @@ paths:
               type: object
               properties:
                 amount:
+                  description: Amout add to the test user account.
                   type: number
                   example: 1000.23
         required: true
       responses:
         '204':
-          description: No Content
+          description: No content
         '400':
-          description: Bad Request
+          description: Bad request
           content:
             application/json:
               schema:
@@ -330,9 +359,9 @@ paths:
                     enum:
                       - 403--Forbidden--authorization-the-caller-id-must-be-a-productive-user
         '405':
-          description: Method Not Allowed
+          description: Method not allowed
         '500':
-          description: Internal Server Error
+          description: Internal server error
           content:
             application/json:
               schema:
