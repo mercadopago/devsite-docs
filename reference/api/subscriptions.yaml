@@ -2594,7 +2594,7 @@ paths:
                       properties:
                         id:
                           type: string
-                          example: 2c938084726fca480172750000000000
+                          example: '2c938084726fca480172750000000000'
                           description: Unique subscroption identifier.
                         version:
                           type: number
