@@ -49,7 +49,7 @@ Para crear una **afiliación de gateway de pago con MercadoPagoV2**, sigue los p
    - **Modo de processamento - Modo de procesamiento:** configura si el pago será gateway o agregador. Para procesar pagos en modo Gateway, comunícate con tu Asesor de Mercado Pago.
    - **Integrator ID:** para programadores o agencias que realizan la integración.
    - **Moeda - Moneda:** moneda a configurar (USD o Local).
-   - **Plazo de captura de pagamento aprobado - Plazo de captura de pagos aprobado:** Configura un retraso en la captura automática de VTEX.
+   - **Plazo de captura de pagamento aprobado - Plazo de captura de pagos aprobado:** configura un retraso en la captura automática de VTEX.
 5. Haz clic en **Salva**.
 
 ¡Y listo! ¡Tu afiliación con MercadoPagoV2 ya está activa!
