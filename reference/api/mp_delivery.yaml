@@ -70,7 +70,7 @@ paths:
             example: 41034141533
         - name: access-token
           in: header
-          description: "Access token generated from the seller by the authentication process (OAuth). This security code identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
+          description: "Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
           enum:
             - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
             - Client ID -- 1585551492
@@ -106,7 +106,7 @@ paths:
             example: 41034141533
         - name: access-token
           in: header
-          description: "Access token generated from the seller by the authentication process (OAuth). This security code identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
+          description: "Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
           enum:
             - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
             - Client ID -- 1585551492
@@ -155,7 +155,7 @@ paths:
             example: 41562083
         - name: access-token
           in: header
-          description: "Access token generated from the seller by the authentication process (OAuth). This security code identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
+          description: "Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
           enum:
             - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
             - Client ID -- 1585551492
@@ -303,7 +303,7 @@ paths:
             example: 185522600
         - name: access-token
           in: header
-          description: "Access token generated from the seller by the authentication process (OAuth). This security code identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
+          description: "Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
           enum:
             - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
             - Client ID -- 1585551492
@@ -333,7 +333,7 @@ paths:
                   description:
                     type: string
                     example: "Doc's grocery store"
-                    description: Name of the store
+                    description: Name of the store.
                   status:
                     type: string
                     example: "enabled"
@@ -456,7 +456,7 @@ paths:
             example: 185522600
         - name: access-token
           in: header
-          description: "Access token generated from the seller by the authentication process (OAuth). This security code identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
+          description: "Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
           enum:
             - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
             - Client ID -- 1585551492
@@ -593,7 +593,7 @@ paths:
                         example: -46.64532809999999
                   external_id:
                     type: string
-                    description: This optional property indicates the custom external ID of the store.
+                    description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs.
                     example: "9320001PC21"
   /proximity-integration/users/{SellerID}/stores/external_id/{ExternalID}:
     get:
@@ -604,7 +604,7 @@ paths:
       parameters:
         - name: SellerID
           in: path
-          description: Unique ID that identifies the User who owns the store.
+          description: Unique ID that identifies the user who owns the store.
           required: true
           schema:
             type: string
@@ -618,7 +618,7 @@ paths:
             example: "9320001PC21"
         - name: access-token
           in: header
-          description: "Access token generated from the seller by the authentication process (OAuth). This security code identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
+          description: "Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
           enum:
             - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
             - Client ID -- 1585551492
@@ -745,7 +745,7 @@ paths:
                         example: -46.64532809999999
                   external_id:
                     type: string
-                    description: This optional property indicates the custom external ID of the store.
+                    description: This optional property indicates the custom external ID of the store. This value can be changed or updated using the endpoint that updates External IDs.
                     example: "9320001PC21"
   /proximity-integration/stores/{store_id}/status:
     put:
@@ -763,7 +763,7 @@ paths:
             example: 4101533
         - name: access-token
           in: header
-          description: "Access token generated from the seller by the authentication process (OAuth). This security code identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
+          description: "Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
           enum:
             - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
             - Client ID -- 1585551492
@@ -785,9 +785,9 @@ paths:
                   example: "enabled"
                   description: Status referring to the current state of operation of the store.
                   enum:
-                    - disabled -- The store will be disabled, and will not be shown on marketplace.
-                    - enabled -- The store will be enabled and shown on marketplace.
-                    - paused -- The delivery of store will be paused, but the store will cotinue to be shown on marketplace.
+                    - disabled -- The store is disabled, and will not be shown on marketplace.
+                    - enabled -- The store is enabled and is shown on marketplace.
+                    - paused -- The delivery of store is paused, but the store will cotinue to be shown on marketplace.
       responses:
         '200':
           description: Success
@@ -807,15 +807,15 @@ paths:
                   description:
                     type: string
                     example: "Doc's grocery store"
-                    description: Name of the store
+                    description: Name of the store.
                   status:
                     type: string
                     example: "enabled"
                     description: Operation status of a store.
                     enum:
-                      - disabled -- The store will be disabled, and will not be shown on marketplace.
-                      - enabled -- The store will be enabled and shown on marketplace.
-                      - paused -- The delivery of store will be paused, but the store will cotinue to be shown on marketplace.
+                      - disabled -- The store is disabled, and will not be shown on marketplace.
+                      - enabled -- The store is enabled and is shown on marketplace.
+                      - paused -- The delivery of store is paused, but the store will cotinue to be shown on marketplace.
                   business_hours:
                     type: object
                     description: List of store opening hours. Each attribute of the object will be represented by a day of the week.  
