@@ -98,7 +98,7 @@ paths:
                     example: "2022-02-01T12:00:00.000-04:00"
                     description: Test user registration update date.
         '400':
-          description: Bad Request
+          description: Bad request
           content:
             application/json:
               schema:
@@ -108,6 +108,17 @@ paths:
                     type: string
                     enum:
                       - 400--Bad-Request--invalid-site_id
+        '401':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401--Not-Found--invalid-token                           
         '403':
           description: Forbidden
           content:
@@ -119,6 +130,17 @@ paths:
                     type: string
                     enum:
                       - 403--Forbidden--authorization-the-caller-id-must-be-a-productive-user
+        '404':
+          description: Resource not found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 404--Resource-Not-Found                    
         '500':
           description: Internal server error
           content:
@@ -190,6 +212,17 @@ paths:
                         date_last_updated:
                           type: string
                           example: "2021-11-04T12:02:35Z"
+        '401':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401--Not-Found--invalid-token                   
         '403':
           description: Forbidden
           content:
@@ -201,6 +234,17 @@ paths:
                     type: string
                     enum:
                       - 403--Forbidden--authorization-the-caller.id-must-be-a-productive-user
+        '404':
+          description: Resource not found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 404--Resource-Not-Found                 
         '405':
           description: Method Not Allowed
           content:
