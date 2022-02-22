@@ -42,7 +42,7 @@ Para crear una **afiliación de gateway de pago con MercadoPagoV2**, sigue los p
    - **Nome da loja - Nombre para resúmenes:** Nombre de la tienda. El valor de este campo aparecerá en la factura de la tarjeta del cliente.
    - **Parcelamento máximo - Cuotas máximas:** número máximo de cuotas disponibles.
    - **Categoría principal da loja - Categoría principal de la tienda:** categoría de la tienda.
-   - **Reembolso automático / manual:** Selecciona si deseas que Mercado Pago reembolse automáticamente en caso de cancelación o si deseas retener el monto pagado para que el cliente lo use en futuras compras.
+   - **Reembolso automático / manual:** selecciona si deseas que Mercado Pago reembolse automáticamente en caso de cancelación o si deseas retener el monto pagado para que el cliente lo use en futuras compras.
    - **Modo binário - binário:** Configura si el pago puede pasar por revisión manual o no.
    - **Métodos de pagamento excluídos - Métodos de pago excluídos (visa, paypal, bolbradesco, oxxo...):** Métodos de pago que se excluirán en el momento de la compra. [Mira las opciones aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/payment-methods). Aplicable solo para MercadoPagoPRO, MercadoPagoWallet y MercadoPAgoOff.
    - **Tipos de pagamento excluídos - Tipos de pago excluidos (credit_card, bank_transfer, ticket...):** Tipos de pago que se excluirán en el momento de la compra. [Mira las opciones aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/payment-methods). Aplicable solo para MercadoPagoPRO, MercadoPagoWallet y MercadoPagoOff.
