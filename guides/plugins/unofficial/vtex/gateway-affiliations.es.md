@@ -22,7 +22,7 @@ La afiliación MercadoPagoV2 procesa los planes de pago con Tarjeta de crédito,
 
 La afiliación MercadoPagoV2 procesa los planes de pago con Tarjeta de crédito, Tarjeta de débito, y Checkout Pro.
 
----
+------------
 
 > WARNING
 >
