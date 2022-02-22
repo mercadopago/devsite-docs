@@ -10,7 +10,7 @@ Con esto, es posible decidir por qué gateway de pagos se procesarán los difere
 
 La afiliación MercadoPagoV2 procesa los planes de pago con Tarjeta de Crédito, Boleto Bancário, Pix, Mercado Pago Offline y Checkout Pro.
 
----
+------------
 
 ----[mla, mlm, mlu, mco, mpe]----
 
