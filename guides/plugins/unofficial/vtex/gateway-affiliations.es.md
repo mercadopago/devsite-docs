@@ -46,7 +46,7 @@ Para crear una **afiliación de gateway de pago con MercadoPagoV2**, sigue los p
    - **Modo binário - binário:** Configura si el pago puede pasar por revisión manual o no.
    - **Métodos de pagamento excluídos - Métodos de pago excluídos (visa, paypal, bolbradesco, oxxo...):** Métodos de pago que se excluirán en el momento de la compra. [Mira las opciones aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/payment-methods). Aplicable solo para MercadoPagoPRO, MercadoPagoWallet y MercadoPAgoOff.
    - **Tipos de pagamento excluídos - Tipos de pago excluidos (credit_card, bank_transfer, ticket...):** Tipos de pago que se excluirán en el momento de la compra. [Mira las opciones aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/plugins/unofficial/vtex/payment-methods). Aplicable solo para MercadoPagoPRO, MercadoPagoWallet y MercadoPagoOff.
-   - **Modo de processamento - Modo de procesamiento** Configura si el pago será gateway o agregador. Para procesar pagos en modo Gateway, comunícate con tu Asesor de Mercado Pago.
+   - **Modo de processamento - Modo de procesamiento:** configura si el pago será gateway o agregador. Para procesar pagos en modo Gateway, comunícate con tu Asesor de Mercado Pago.
    - **Integrator ID:** Para programadores o agencias que realizan la integración.
    - **Moeda - Moneda:** Moneda a configurar (USD o Local).
    - **Plazo de captura de pagamento aprobado - Plazo de captura de pagos aprobado:** Configura un retraso en la captura automática de VTEX.
