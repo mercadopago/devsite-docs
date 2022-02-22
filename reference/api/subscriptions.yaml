@@ -1161,13 +1161,13 @@ paths:
             example: 38524206
         - name: preapproval_plan_id
           in: path
-          description: Specifies the plan ID of the subscriptions wants to get.
+          description: Specifies a Plan ID for filtering results from the export.
           schema:
             type: string
             example: 2c938084726fca480172750000000000
         - name: status
           in: path
-          description: Specifies the status of the subscriptions wants to get. Can be null, one or many.
+          description: Specifies a status for filtering results from the export. Can be null, one or more than one.
           schema:
             type: string
             example: authorized,cancelled,paused
@@ -2507,13 +2507,13 @@ paths:
             example: test_1234@testuser.com
         - name: preapproval_plan_id
           in: path
-          description: Specifies the plan ID of the subscriptions wants to get.
+          description: Specifies a plan ID for filtering results from the search.
           schema:
             type: string
             example: 2c938084726fca480172750000000000
         - name: transaction_amount
           in: path
-          description: Specifies the amount of the subscriptions wants to get.
+          description: Specifies a subscription amount for filtering results from the search.
           schema:
             type: number
             example: 1000
@@ -2530,7 +2530,7 @@ paths:
               - blank -- Discounted collection.
         - name: status
           in: path
-          description: Specifies the status of the subscriptions wants to get. Can be null, one or many.
+          description: Specifies a status for filtering results from the export. Can be null, one or many.
           schema:
             type: string
             example: authorized,cancelled,paused
