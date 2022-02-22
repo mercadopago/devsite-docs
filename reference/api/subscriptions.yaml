@@ -1245,7 +1245,6 @@ paths:
                     description: Unique preapproval plan identifier. This parameter is only available when it is a subscription with a plan and indicates from which plan the subscription was created.
                     example: 2c938084726fca480172750000000000
                   frequency:
-                    required: true
                     type: number
                     description: Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.
                     example: 1
