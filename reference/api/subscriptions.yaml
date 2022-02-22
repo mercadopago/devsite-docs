@@ -2067,7 +2067,6 @@ paths:
                         description: Indicates the frequency value. Together with frequency_type they define the invoice cycle that a subscription will have.
                         example: 1
                       frequency_type:
-                        required: true
                         type: string
                         description: Indicates the type of frequency. Together with frequency they define the invoice cycle that a subscription will have.
                         example: months
