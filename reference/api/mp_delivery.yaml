@@ -19,9 +19,9 @@ paths:
           schema:
             type: string
             example: 41034141533
-        - in: header
-          name: access-token
-          description: "Access token generated from the seller by the authentication process (OAuth). This security code identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
+        - name: access-token
+          in: header
+          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
           enum:
             - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
             - Client ID -- 1585551492
@@ -70,7 +70,7 @@ paths:
             example: 41034141533
         - name: access-token
           in: header
-          description: "Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
+          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
           enum:
             - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
             - Client ID -- 1585551492
@@ -106,7 +106,7 @@ paths:
             example: 41034141533
         - name: access-token
           in: header
-          description: "Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
+          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
           enum:
             - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
             - Client ID -- 1585551492
@@ -155,7 +155,7 @@ paths:
             example: 41562083
         - name: access-token
           in: header
-          description: "Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
+          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
           enum:
             - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
             - Client ID -- 1585551492
@@ -303,7 +303,7 @@ paths:
             example: 185522600
         - name: access-token
           in: header
-          description: "Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
+          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
           enum:
             - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
             - Client ID -- 1585551492
@@ -456,7 +456,7 @@ paths:
             example: 185522600
         - name: access-token
           in: header
-          description: "Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
+          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
           enum:
             - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
             - Client ID -- 1585551492
@@ -496,7 +496,7 @@ paths:
                   description:
                     type: string
                     example: "Doc's grocery store"
-                    description: Name of the store
+                    description: Name of the store.
                   business_hours:
                     type: object
                     description: List of store opening hours. Each attribute of the object will be represented by a day of the week.  
@@ -618,7 +618,7 @@ paths:
             example: "9320001PC21"
         - name: access-token
           in: header
-          description: "Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
+          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
           enum:
             - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
             - Client ID -- 1585551492
@@ -729,7 +729,7 @@ paths:
                     properties:
                       address_line:
                         type: string
-                        description: Store address information.
+                        description: Store address information
                         example: "Viaduto Arapuã - Saude, São Paulo - SP, 04307-070, Brasil"
                       reference:
                         type: string
@@ -763,7 +763,7 @@ paths:
             example: 4101533
         - name: access-token
           in: header
-          description: "Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of:"
+          description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
           enum:
             - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
             - Client ID -- 1585551492
