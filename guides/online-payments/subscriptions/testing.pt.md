@@ -58,11 +58,7 @@ Testes com cartão de crédito
 
 ### Cartões de teste
 
-| Cartão | Número | Código de segurança | Data de vencimento |
-| --- |	--- | --- | --- |
-| Mastercard | 5031 4332 1540 6351 | 123 | 11/25 |
-| Visa | 4235 6477 2802 5682 | 123 | 11/25 |
-| American Express | 3753 651535 56885 | 1234| 11/25 |
+[TXTSNIPPET][/guides/snippets/test-integration/test-cards]
 
 ------------
 ### Próximos passos
