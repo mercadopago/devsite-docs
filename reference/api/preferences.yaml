@@ -144,24 +144,16 @@ paths:
                       $ref: '#/components/schemas/shipment_mode'
                     local_pickup:
                       type: boolean
-                      description: >-
-                        The payer have the option to pick up the shipment in
-                        your store (mode:me2 only).
+                      description: The payer have the option to pick up the shipment in your store (mode:me2 only).
                     dimensions:
                       type: string
-                      description: >-
-                        Dimensions of the shipment in cm x cm x cm, gr (mode:me2
-                        only)
+                      description: Dimensions of the shipment in cm x cm x cm, gr (mode:me2 only)
                     default_shipping_method:
                       type: number
-                      description: >-
-                        Select default shipping method in checkout (mode:me2
-                        only).
+                      description: Select default shipping method in checkout (mode:me2 only).
                     free_methods:
                       type: array
-                      description: >-
-                        Offer a shipping method as free shipping (mode:me2
-                        only).
+                      description: Offer a shipping method as free shipping (mode:me2 only).
                       items:
                         type: object
                         properties:
@@ -295,7 +287,7 @@ paths:
                           description: id
                         picture_url:
                           type: string
-                          description: picture_url
+                          description: Item image URL.
                         title:
                           type: string
                           example: Dummy Item
@@ -335,13 +327,13 @@ paths:
                         description: email
                       date_created:
                         type: string
-                        description: date_created
+                        description: Registration date.
                       phone:
                         type: object
                         properties:
                           area_code:
                             type: string
-                            description: area_code
+                            description: Area code.
                           number:
                             type: string
                             description: number
@@ -361,14 +353,14 @@ paths:
                         properties:
                           street_name:
                             type: string
-                            description: street_name
+                            description: Street name.
                           street_number:
                             type: string
                             format: nullable
-                            description: street_number
+                            description: Street number.
                           zip_code:
                             type: string
-                            description: zip_code
+                            description: Zip code.
                         description: address
                   back_urls:
                     type: object
@@ -418,7 +410,7 @@ paths:
                       default_installments:
                         type: string
                         format: nullable
-                        description: default_installments
+                        description: Prefered number of credit card installments.
                   client_id:
                     type: string
                     example: 6295877106812064
@@ -433,28 +425,28 @@ paths:
                     description: Marketplace`s fee charged by application owner. Its default value is 0 in local currency. This property can only be sent if the marketplace property is defined as well, otherwise the request will fail.
                   shipments:
                     type: object
+                    description: Shipments information.
                     properties:
                       receiver_address:
                         type: object
+                        description: Shipping address.
                         properties:
                           zip_code:
                             type: string
-                            description: zip_code
+                            description: Zip code.
                           street_number:
                             type: string
                             format: nullable
-                            description: street_number
+                            description: Street number.
                           street_name:
                             type: string
-                            description: street_name
+                            description: Street name.
                           floor:
                             type: string
-                            description: floor
+                            description: Floor.
                           apartment:
                             type: string
-                            description: apartment
-                        description: receiver_address
-                    description: shipments
+                            description: Apartment.
                   notification_url:
                     type: string
                     format: nullable
@@ -465,10 +457,10 @@ paths:
                     description: The statement descriptor is a long text (up to 16 characters) that will be visualized in the payer´s credit card invoice to easily identify the purchase.
                   external_reference:
                     type: string
-                    description: external_reference
+                    description: Reference you can synchronize with your payment system.
                   additional_info:
                     type: string
-                    description: additional_info
+                    description: Additional information.
                   expires:
                     type: boolean
                     description: Boolean value that determines if a preference expires.
@@ -483,7 +475,7 @@ paths:
                   date_created:
                     type: string
                     example: 2018-02-02T19:22:23.535Z
-                    description: date_created
+                    description: Registration date.
                   id:
                     type: string
                     example: 202809963-920c288b-4ebb-40be-966f-700250fa5370
@@ -586,15 +578,15 @@ paths:
                         concept_id:
                           type: string
                           format: nullable
-                          description: concept_id
+                          description: Unique ID used to identify the concept.
                         corporation_id:
                           type: string
                           format: nullable
-                          description: corporation_id
+                          description: Integrator identifier
                         date_created:
                           type: string
                           example: 2018-02-02T19:18:51.150Z
-                          description: date_created
+                          description: Registration date.
                         expiration_date_from:
                           type: string
                           format: nullable
@@ -608,11 +600,11 @@ paths:
                           description: Boolean value that determines if a preference expires.
                         external_reference:
                           type: string
-                          description: external_reference
+                          description: Reference you can synchronize with your payment system.
                         integrator_id:
                           type: string
                           format: nullable
-                          description: integrator_id
+                          description: Integrator identifier
                         items:
                           type: array
                           items:
@@ -622,7 +614,7 @@ paths:
                         last_updated:
                           type: string
                           format: nullable
-                          description: last_updated
+                          description: Last updated date
                         live_mode:
                           type: boolean
                           description: live_mode
@@ -653,13 +645,13 @@ paths:
                           example: MLA
                           description: Unique ID used to identify the site.
                           enum:
-                            - MLA --
-                            - MLB --
-                            - MLC --
-                            - MCO --
-                            - MLM --
-                            - MLU --
-                            - MLC --
+                            - MLA -- Mercado Libre Argentina
+                            - MLB -- Mercado Libre Brasil
+                            - MLC -- Mercado Libre Chile
+                            - MLM -- Mercado Libre México
+                            - MLU -- Mercado Libre Uruguay
+                            - MCO -- Mercado Libre Colombia
+                            - MPE -- Mercado Libre Perú
                         sponsor_id:
                           type: number
                           example: 0
@@ -720,7 +712,7 @@ paths:
                 properties:
                   additional_info:
                     type: string
-                    description: additional_info
+                    description: Additional information.
                   auto_return:
                     $ref: '#/components/schemas/auto_return'
                   back_urls:
@@ -747,7 +739,7 @@ paths:
                   date_created:
                     type: string
                     example: 2018-02-02T19:18:51.150Z
-                    description: date_created
+                    description: Registration date.
                   expiration_date_from:
                     type: string
                     format: nullable
@@ -761,7 +753,7 @@ paths:
                     description: Boolean value that determines if a preference expires.
                   external_reference:
                     type: string
-                    description: external_reference
+                    description: Reference you can synchronize with your payment system.
                   id:
                     type: string
                     example: 202809963-a2201f8d-11cb-443f-adf6-de5a42eed67d
@@ -791,7 +783,7 @@ paths:
                         picture_url:
                           type: string
                           example: http://placehold.it/350x150
-                          description: picture_url
+                          description: Item image URL.
                         description:
                           type: string
                           example: >-
@@ -836,7 +828,7 @@ paths:
                         properties:
                           area_code:
                             type: string
-                            description: area_code
+                            description: Area code.
                           number:
                             type: string
                             example: 631.586.0213
@@ -848,15 +840,15 @@ paths:
                           zip_code:
                             type: string
                             example: 76336
-                            description: zip_code
+                            description: Zip code.
                           street_name:
                             type: string
                             example: Marjory Stream
-                            description: street_name
+                            description: Street name.
                           street_number:
                             type: string
                             example: 941
-                            description: street_number
+                            description: Street number.
                         description: address
                       email:
                         type: string
@@ -881,7 +873,7 @@ paths:
                         description: surname
                       date_created:
                         type: string
-                        description: date_created
+                        description: Registration date.
                   payment_methods:
                     type: object
                     description: All configuration related to payments methods, such as excluded payment methods, excluded payment types, default payment method, and installments.
@@ -898,7 +890,7 @@ paths:
                       default_installments:
                         type: string
                         format: nullable
-                        description: default_installments
+                        description: Prefered number of credit card installments.
                       default_payment_method_id:
                         type: string
                         format: nullable
@@ -923,28 +915,28 @@ paths:
                     description: Automatically generated URL to open the Checkout in sandbox mode. Real users are used here, but transactions are executed using test credentials.
                   shipments:
                     type: object
+                    description: Shipments information.
                     properties:
                       receiver_address:
                         type: object
+                        description: Shipping address.
                         properties:
                           floor:
                             type: string
-                            description: floor
+                            description: Floor.
                           zip_code:
                             type: string
-                            description: zip_code
+                            description: Zip code.
                           street_name:
                             type: string
-                            description: street_name
+                            description: Street name.
                           apartment:
                             type: string
-                            description: apartment
+                            description: Apartment.
                           street_number:
                             type: string
                             format: nullable
-                            description: street_number
-                        description: receiver_address
-                    description: shipments
+                            description: Street number.
         '400':
           description: Error
           content:
@@ -1120,24 +1112,16 @@ paths:
                       $ref: '#/components/schemas/shipment_mode'
                     local_pickup:
                       type: boolean
-                      description: >-
-                        The payer have the option to pick up the shipment in
-                        your store (mode:me2 only).
+                      description: The payer have the option to pick up the shipment in your store (mode:me2 only).
                     dimensions:
                       type: string
-                      description: >-
-                        Dimensions of the shipment in cm x cm x cm, gr (mode:me2
-                        only)
+                      description: Dimensions of the shipment in cm x cm x cm, gr (mode:me2 only)
                     default_shipping_method:
                       type: number
-                      description: >-
-                        Select default shipping method in checkout (mode:me2
-                        only).
+                      description: Select default shipping method in checkout (mode:me2 only).
                     free_methods:
                       type: array
-                      description: >-
-                        Offer a shipping method as free shipping (mode:me2
-                        only).
+                      description: Offer a shipping method as free shipping (mode:me2 only).
                       items:
                         type: object
                         properties:
@@ -1239,7 +1223,7 @@ paths:
                 properties:
                   additional_info:
                     type: string
-                    description: additional_info
+                    description: Additional information.
                   auto_return:
                     $ref: '#/components/schemas/auto_return'
                   back_urls:
@@ -1273,7 +1257,7 @@ paths:
                   date_created:
                     type: string
                     example: '2018-02-02T19:22:23.535Z'
-                    description: date_created
+                    description: Registration date.
                   date_of_expiration:
                     type: object
                   expiration_date_from:
@@ -1290,7 +1274,7 @@ paths:
                     description: Boolean value that determines if a preference expires.
                   external_reference:
                     type: string
-                    description: external_reference
+                    description: Reference you can synchronize with your payment system.
                   id:
                     type: string
                     example: 202809963-920c288b-4ebb-40be-966f-700250fa5370
@@ -1312,7 +1296,7 @@ paths:
                           description: id
                         picture_url:
                           type: string
-                          description: picture_url
+                          description: Item image URL.
                         title:
                           type: string
                           example: Dummy Item
@@ -1363,7 +1347,7 @@ paths:
                         properties:
                           area_code:
                             type: string
-                            description: area_code
+                            description: Area code.
                           number:
                             type: string
                             description: number
@@ -1373,16 +1357,16 @@ paths:
                         properties:
                           zip_code:
                             type: string
-                            description: zip_code
+                            description: Zip code.
                           street_name:
                             type: string
                             example: Mc Street
-                            description: street_name
+                            description: Street name.
                           street_number:
                             type: string
                             example: '7304'
                             format: nullable
-                            description: street_number
+                            description: Street number.
                         description: address
                       email:
                         type: string
@@ -1405,7 +1389,7 @@ paths:
                         description: surname
                       date_created:
                         type: string
-                        description: date_created
+                        description: Registration date.
                       last_purchase:
                         type: object
                   payment_methods:
@@ -1445,7 +1429,7 @@ paths:
                       default_installments:
                         type: string
                         format: nullable
-                        description: default_installments
+                        description: Prefered number of credit card installments.
                   processing_modes:
                     type: object
                   product_id:
@@ -1472,40 +1456,45 @@ paths:
                     example: MLB
                   shipments:
                     type: object
+                    description: Shipments information.
                     properties:
                       default_shipping_method:
                         type: object
+                        description: Select default shipping method in checkout (mode:me2 only).
                       receiver_address:
                         type: object
+                        description: Shipping address.
                         properties:
                           zip_code:
                             type: string
-                            description: zip_code
+                            description: Zip code.
                           street_name:
                             type: string
-                            description: street_name
+                            description: Street name.
                           street_number:
                             type: string
                             format: nullable
-                            description: street_number
+                            description: Street number.
                           floor:
                             type: string
-                            description: floor
+                            description: Floor.
                           apartment:
                             type: string
-                            description: apartment
+                            description: Apartment.
                           city_name:
                             type: object
+                            description: City name.
                           state_name:
                             type: object
+                            description: State name.
                           country_name:
-                            type: object
-                        description: receiver_address
-                    description: shipments
+                            type: Country name.
                   total_amount:
                     type: object
+                    description: Total amount of the order.
                   last_updated:
                     type: object
+                    description: Last updated date
                   statement_descriptor:
                     type: string
                     example: MERCADOPAGO
