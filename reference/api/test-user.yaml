@@ -11,7 +11,7 @@ paths:
         - $ref: '#/tags/checkout-api'
         - $ref: '#/tags/checkout-pro'
       summary: Create test user
-      description: This endpoint handles http requests to create a test user.
+      description: This endpoint handles http requests to create a test user
       parameters:
         - name: access_token
           in: query
@@ -60,7 +60,7 @@ paths:
                   nickname:
                     type: string
                     example: "TEST45I5GYIH"
-                    description: Nickname that identifies the test user
+                    description: Nickname that identifies the test user.
                   password:
                     type: string
                     example: "qatest6730"
@@ -76,7 +76,7 @@ paths:
                   email:
                     type: string
                     example: "test_user_123@testuser.com"
-                    description: Test user login email.
+                    description: Test user email.
                   date_created:
                     type: string
                     example: "2022-02-01T12:00:00.000-04:00"
@@ -84,7 +84,7 @@ paths:
                   date_last_updated:
                     type: string
                     example: "2022-02-01T12:00:00.000-04:00"
-                    description: Test user registration update date.
+                    description: Date of last record update.
         '400':
           description: Bad request
           content:
@@ -146,7 +146,7 @@ paths:
         - $ref: '#/tags/checkout-api'
         - $ref: '#/tags/checkout-pro'
       summary: Search test user
-      description: This endpoint handles http requests to search a test user.
+      description: This endpoint handles http requests to search a test user
       parameters:
         - name: access_token
           in: query
@@ -268,7 +268,7 @@ paths:
         - $ref: '#/tags/checkout-api'
         - $ref: '#/tags/checkout-pro'
       summary: Update test user password
-      description: This endpoint handles http requests to change the test user password.
+      description: This endpoint handles http requests to change the test user password
       parameters:
         - name: access_token
           in: query
