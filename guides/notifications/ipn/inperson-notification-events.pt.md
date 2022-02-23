@@ -2,7 +2,7 @@
 
 Um evento é qualquer tipo de atualização sobre o objeto notificado, incluindo mudanças de status ou atributos. 
 
-Notificamos eventos referente a suas ordem (`merchant_order`) o pagamento recebido (`payment`) 
+Notificamos eventos referente a suas ordem (`merchant_order`) o pagamento recebido (`payment`). 
 
 A `merchant_order` é uma entidade que agrupa pagamentos aprovados ou rejeitados. Deverá consultar os dados dos pagamentos que são notificados.
 
@@ -10,9 +10,9 @@ Sempre que ocorrer um evento relacionado a qualquer um dos recursos mencionados,
 
 Os seguintes eventos são notificados:
 
-1. **Registrar o Merchant Order (MO)**  Ao digitalizar um QR que contém um valor, ele criará automaticamente um pedido do lojista, enviando uma notificação (Se o mesmo QR for escaneado várias vezes, cada um criará um pedido comercial diferente e, portanto, uma nova notificação, a integração deve levar este cenário em consideração)
-2. **Atualização de pagamentos.** Cada tentativa de pagamento por parte do cliente atualizará as informações do pedido do lojista e enviará uma notificação
-3. **Fechamento do MO.** Assim que um pagamento aprovado for feito, o status do MO aparecerá fechado e uma notificação será enviada
+1. **Registrar o Merchant Order (MO).**  Ao digitalizar um QR que contém um valor, ele criará automaticamente um pedido do lojista, enviando uma notificação (se o mesmo QR for escaneado várias vezes, cada um criará um pedido comercial diferente e, portanto, uma nova notificação, a integração deve levar este cenário em consideração).
+2. **Atualização de pagamentos.** Cada tentativa de pagamento por parte do cliente atualizará as informações do pedido do lojista e enviará uma notificação.
+3. **Fechamento do MO.** Assim que um pagamento aprovado for realizado, o status do MO aparecerá fechado e uma notificação será enviada.
 
 **Se o servidor não estiver disponível ou demorar mais de 22 segundos para responder**, o Mercado Pago tentará avisar periodicamente seguindo o seguinte esquema:
 
@@ -30,9 +30,7 @@ Mercado Pago informará a esta `notification_url` tanto en la creación como act
 |`topic`|Identificação do que se trata. Podendo ser `payment` ou `merchant_order`.|
 |`id`|É um identificador exclusivo do recurso relatado.|
 
-
 > **Exemplo:** Se você definir `notification_url`: `https://www.seusite.com.br/notificações`, receberá notificações de pagamento como esta: `https://www.yoursite.com/notifications?topic=merchant_order&id=123456789`
-
 
 ## Ao receber uma notificação
 
@@ -40,7 +38,7 @@ Mercado Pago informará a esta `notification_url` tanto en la creación como act
 
 Lembre-se que esta comunicação é exclusivamente entre os servidores do Mercado Pago e o seu servidor, portanto não haverá um usuário físico vendo nenhum tipo de resultado.
 
-Se você estiver integrando pagamentos presencial, recomendamos o uso de notificações IPN do tipo `merchant_order`. Para fazer isso, mantenha as seguintes regras em mente:
+Se você estiver integrando pagamentos presenciais, recomendamos o uso de notificações IPN do tipo `merchant_order`. Para fazer isso, mantenha as seguintes regras em mente:
 
 1. O campo `status` do `merchant_order` permanecerá **aberto** quando ainda não tiver pagamentos associados, ou se tiverem rejeitados ou aprovados por um valor inferior ao total do pedido.
 2. O campo `status` do `merchant_order` será **fechado** quando a soma dos pagamentos aprovados for igual que o total do pedido.
@@ -56,16 +54,16 @@ Dentro do pedido, no objeto de pagamentos, você encontrará todos os pagamentos
 
 > PREV_STEP_CARD_PT
 >
-> Configurar notificações de pagamento cara a cara
+> Configurar notificações de pagamentos presenciais
 >
 > Configurar notificações de pagamento com código QR.
 >
-> [Configurar notificações de pagamento cara a cara](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/inperson-configuration)
+> [Configurar notificações de pagamentos presenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/inperson-configuration)
 
 > NEXT_STEP_CARD_PT
 >
-> Consulta da ordem
+> Consultar pedidos
 > 
-> Verifique o status das ordens.
+> Verifique o status dos pedidos.
 >
-> [Consulta da ordem](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/inperson-order-query)
+> [Consultar pedidos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/inperson-order-query)

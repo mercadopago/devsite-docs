@@ -1,6 +1,6 @@
 # Consulta da ordem
 
-Para poder consultar o status do pedido por meio do `merchant_order`, você precisará fazer um get usando o id que você recebeu no servidor de notificações.
+Para poder consultar o status do pedido por meio do `merchant_order`, você precisará fazer um GET usando o ID que você recebeu no servidor de notificações.
 
 Em nossa [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/merchant_orders/_merchant_orders_id/get) você obterá as informações necessárias sobre os parâmetros de solicitação e resposta.
 

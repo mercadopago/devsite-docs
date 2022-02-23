@@ -14,7 +14,7 @@ Abaixo explicaremos como indicar as URLs que serão notificadas e como configura
 >
 > Introdução
 >
-> Leia nossa introdução ao IPN..
+> Leia nossa introdução ao IPN.
 >
 > [Introdução](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/introduction)
 

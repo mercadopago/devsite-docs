@@ -1,6 +1,6 @@
 # Troubleshooting
 
-**Se nenhuma notificação for recebida**, será necessário aplicar a busca de pedidos como um método de contingência usando sua `external_reference`  como critério de busca. A busca pode ser feita de duas maneiras:
+**Se nenhuma notificação for recebida**, será necessário aplicar a busca de pedidos como um método de contingência usando sua `external_reference` como critério de busca. A busca pode ser feita de duas maneiras:
 
 |Mecanismo|Descrição|
 |---|---|
@@ -20,7 +20,7 @@ curl --location --request GET 'https://api.mercadopago.com/merchant_orders?exter
 >
 > Esta solução usa a mesma [API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/merchant_orders/_merchant_orders_id/get) que usamos na seção [Consulta da ordem](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/query-through-mo), adicionando o parâmetro de consulta `external_reference` para consultar o pagamento no caso de não receber a notificação.
 
-A resposta será a mesma que usar o id de pagamento e devem usar os mesmos critérios mencionados acima para confirmar o pedido.
+A resposta será a mesma que quando utilizar o ID de pagamento e eles devem usar os mesmos critérios mencionados acima para confirmar o pedido.
 
 Se o QR em que o pedido foi publicado não tiver sido verificado, a resposta será:
 

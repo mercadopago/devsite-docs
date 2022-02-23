@@ -2,9 +2,9 @@
 
 As ações a seguir estão disponíveis para **IPN**.
 
-|Acción|Descrição|
+|Ação|Descrição|
 |---|---|
-|[Obter ordem](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/merchant_orders/_merchant_orders_id/get)|Veja todas as informações de pagamento de um produto ou serviço com a identificação do pedido de sua escolha.|
+|[Obter ordem](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/merchant_orders/_merchant_orders_id/get)|Veja todas as informações de pagamento de um produto ou serviço com a identificação do pedido de sua escolha.|
 
 
 > NOTE
@@ -21,6 +21,6 @@ As ações a seguir estão disponíveis para **IPN**.
 >
 > Ferramentas adicionais
 >
-> Conheça sobre ferramentas adicionais para pesquisa de pagamento.
+> Conheça sobre as ferramentas adicionais para pesquisa de pagamento.
 >
 > [Ferramentas adicionais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/additional-tools)

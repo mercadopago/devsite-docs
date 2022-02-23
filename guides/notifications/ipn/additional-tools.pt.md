@@ -2,13 +2,13 @@
 
 ## Pesquisa de pagamentos
 
-Se você precisar de uma lista dos pagamentos feitos, poderá fazer uma chamada para o endpoint de pagamento. Em nossa [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_search/get) você obterá as informações necessárias sobre os parâmetros de solicitação e resposta.
+Se você precisar de uma lista dos pagamentos realizados, poderá fazer uma chamada para o endpoint de pagamento. Em nossa [Referência de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_search/get) você obterá as informações necessárias sobre os parâmetros de solicitação e resposta.
 
-Você pode usar parâmetros do body de um `pagamento` como query params para poder filtrar os resultados:
+Você pode usar os parâmetros do body de um `pagamento` como query params para poder filtrar os resultados:
 
-* **Data de início:** data de início da pesquisa
-* **Data de término:** data de término da pesquisa
-* **Status:** status do pagamento
+* **Data de início:** data de início da pesquisa.
+* **Data de término:** data de término da pesquisa.
+* **Status:** status do pagamento.
 
 Aqui está um exemplo da chamada de API com estes parâmetros de consulta:
 
