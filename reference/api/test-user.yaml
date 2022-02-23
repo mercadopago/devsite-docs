@@ -39,24 +39,12 @@ paths:
                   example: "MLA"
                   enum:
                     - MPE -- Mercado Libre Perú
-                    - MSV -- Mercado Libre El Salvador
-                    - MPA -- Mercado Libre Panamá
-                    - MRD -- Mercado Libre República Dominicana
-                    - MLU -- Mercado Libre Uruguai
+                    - MLU -- Mercado Libre Uruguay
                     - MLA -- Mercado Libre Argentina
                     - MLC -- Mercado Libre Chile
-                    - MCR -- Mercado Libre Costa Rica
-                    - MPY -- Mercado Libre Paraguay
-                    - MBO -- Mercado Libre Bolívia
-                    - MNI -- Mercado Libre Nicaragua
-                    - MHN -- Mercado Libre Honduras
                     - MCO -- Mercado Libre Colombia
-                    - MEC -- Mercado Libre Ecuador
                     - MLB -- Mercado Libre Brasil
-                    - MGT -- Mercado Libre Guatemala
-                    - MLV -- Mercado Libre Venezuela
                     - MLM -- Mercado Libre México
-                    - MCU -- 
       responses:
         '200':
           description: Created
