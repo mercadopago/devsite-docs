@@ -20,4 +20,4 @@ Consulta la página del [&lt;dev&gt;program](https://www.mercadopago[FAKER][URL]
 >
 > Accede a información acerca de tus aplicaciones creadas.
 >
-> [Tus aplicaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/dashboard/aplications)
+> [Tus aplicaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/dashboard/applications)
