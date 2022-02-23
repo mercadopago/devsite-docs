@@ -38,24 +38,24 @@ paths:
                   required: true
                   example: "MLA"
                   enum:
-                    - MPE --
-                    - MSV --
-                    - MPA --
-                    - MRD --
-                    - MLU --
-                    - MLA --
-                    - MLC --
-                    - MCR --
-                    - MPY --
-                    - MBO --
-                    - MNI --
-                    - MHN --
-                    - MCO --
-                    - MEC --
-                    - MLB --
-                    - MGT --
-                    - MLV --
-                    - MLM --
+                    - MPE -- Mercado Libre Perú
+                    - MSV -- Mercado Libre El Salvador
+                    - MPA -- Mercado Libre Panamá
+                    - MRD -- Mercado Libre República Dominicana
+                    - MLU -- Mercado Libre Uruguai
+                    - MLA -- Mercado Libre Argentina
+                    - MLC -- Mercado Libre Chile
+                    - MCR -- Mercado Libre Costa Rica
+                    - MPY -- Mercado Libre Paraguay
+                    - MBO -- Mercado Libre Bolívia
+                    - MNI -- Mercado Libre Nicaragua
+                    - MHN -- Mercado Libre Honduras
+                    - MCO -- Mercado Libre Colombia
+                    - MEC -- Mercado Libre Ecuador
+                    - MLB -- Mercado Libre Brasil
+                    - MGT -- Mercado Libre Guatemala
+                    - MLV -- Mercado Libre Venezuela
+                    - MLM -- Mercado Libre México
                     - MCU -- 
       responses:
         '200':
@@ -193,24 +193,31 @@ paths:
                       properties:
                         id:
                           type: integer
+                          description: Unique ID that identifies the test user.
                           example: 123
                         nickname:
                           type: string
+                          description: Nickname that identifies the test user.
                           example: "TEST45I5GYIH"
                         site_status:
                           type: string
+                          description: Status of the site where the test user was created.
                           example: "active"
                         site_id:
                           type: string
+                          description: ID of the site where the test user was created.
                           example: "MLA"
                         email:
                           type: string
+                          description: Test user login email.
                           example: "test_user_123@testuser.com"
                         date_created:
                           type: string
+                          description: Test user creation date.
                           example: "2021-11-04T12:02:35Z"
                         date_last_updated:
                           type: string
+                          description: Test user registration update date.
                           example: "2021-11-04T12:02:35Z"
         '401':
           description: Not found
