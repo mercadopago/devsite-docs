@@ -34,7 +34,7 @@ paths:
                       description:
                         type: string
                         example: Dummy description
-                        description: Item description. This is a free text field.
+                        description: Item description.
                       picture_url:
                         type: string
                         example: http://www.myapp.com/myimage.jpg
@@ -220,7 +220,7 @@ paths:
                   description: Reference you can synchronize with your payment system.
                 expires:
                   type: boolean
-                  description: Boolean value that determines if a preference expires.
+                  description: Boolean value that determines if a preference expire.
                 date_of_expiration:
                   type: string
                   format: date
@@ -239,7 +239,6 @@ paths:
                 marketplace_fee:
                   type: number
                   description: Marketplace`s fee charged by application owner. Its default value is 0 in local currency. This property can only be sent if the marketplace property is defined as well, otherwise the request will fail.
-                  example: 0
                 differential_pricing:
                   type: object
                   description: Differential pricing configuration for this preference. The seller can have their own configuration regarding payment methods and installments, and it's in this parameter where they will include the numeric ID to indicate so. This value is used to apply custom payment methods. 
@@ -279,6 +278,7 @@ paths:
                     $ref: '#/components/schemas/operation_type'
                   items:
                     type: array
+                    description: items
                     items:
                       type: object
                       properties:
@@ -311,45 +311,45 @@ paths:
                           type: number
                           example: 10
                           description: Unit price of the item.
-                    description: items
                   payer:
                     type: object
                     description: Buyer information, such as name, last name, e-mail, phone, personal identification, address, and registration date.
                     properties:
                       name:
                         type: string
-                        description: name
+                        description: Name of the associated payer.
                       surname:
                         type: string
-                        description: surname
+                        description: Last name of the associated payer.
                       email:
                         type: string
-                        description: email
+                        description: Payer’s email address.
                       date_created:
                         type: string
                         description: Registration date.
                       phone:
                         type: object
+                        description: Phone number of the associated payer.
                         properties:
                           area_code:
                             type: string
                             description: Area code.
                           number:
                             type: string
-                            description: number
-                        description: phone
+                            description: Phone number.
                       identification:
                         type: object
+                        description: Identification of the associated payer.
                         properties:
                           type:
                             type: string
-                            description: type
+                            description: Type of identification of the associated payer (required if the payer is a customer).
                           number:
                             type: string
-                            description: number
-                        description: identification
+                            description: Identification number.
                       address:
                         type: object
+                        description: Address.
                         properties:
                           street_name:
                             type: string
@@ -361,7 +361,6 @@ paths:
                           zip_code:
                             type: string
                             description: Zip code.
-                        description: address
                   back_urls:
                     type: object
                     description: URLs to return to the sellers website.
@@ -582,7 +581,7 @@ paths:
                         corporation_id:
                           type: string
                           format: nullable
-                          description: Integrator identifier
+                          description: Corporation identifier
                         date_created:
                           type: string
                           example: 2018-02-02T19:18:51.150Z
@@ -626,17 +625,17 @@ paths:
                           $ref: '#/components/schemas/operation_type'
                         payer_email:
                           type: string
-                          description: payer_email
+                          description: Payer’s email address.
                         platform_id:
                           type: string
-                          description: platform_id
+                          description: Platform identifier
                         processing_modes:
                           type: string
                           format: nullable
-                          description: processing_modes
+                          description: Processing mode
                         product_id:
                           type: string
-                          description: product_id
+                          description: Unique ID used to identify the product.
                         purpose:
                           type: string
                           description: purpose
@@ -719,15 +718,15 @@ paths:
                     type: object
                     description: URLs to return to the sellers website.
                     properties:
-                      success:
-                        type: string
-                        description: Approved payment URL.
-                      pending:
-                        type: string
-                        description: Pending or in process payment URL.
                       failure:
                         type: string
                         description: Canceled payment URL.
+                      pending:
+                        type: string
+                        description: Pending or in process payment URL.
+                      success:
+                        type: string
+                        description: Approved payment URL.
                   client_id:
                     type: string
                     example: 6295877106812064
@@ -765,13 +764,14 @@ paths:
                     description: Automatically generated URL to open the Checkout.
                   items:
                     type: array
+                    description: Items information.
                     items:
                       type: object
                       properties:
                         id:
                           type: string
                           example: item-ID-1234
-                          description: id
+                          description: Item id.
                         currency_id:
                           type: string
                           example: $
@@ -800,7 +800,6 @@ paths:
                           type: number
                           example: 14.5
                           description: Unit price of the item.
-                    description: items
                   marketplace:
                     type: string
                     example: MP-MKT-6295877106812064
@@ -825,6 +824,7 @@ paths:
                     properties:
                       phone:
                         type: object
+                        description: Buyer’s phone number.
                         properties:
                           area_code:
                             type: string
@@ -832,10 +832,10 @@ paths:
                           number:
                             type: string
                             example: 631.586.0213
-                            description: number
-                        description: phone
+                            description: Phone number.
                       address:
                         type: object
+                        description: Address.
                         properties:
                           zip_code:
                             type: string
@@ -849,28 +849,27 @@ paths:
                             type: string
                             example: 941
                             description: Street number.
-                        description: address
                       email:
                         type: string
-                        description: email
+                        description: Payer’s email address.
                       identification:
                         type: object
+                        description: Payer ID.
                         properties:
                           number:
                             type: string
                             example: 12345678
-                            description: number
+                            description: Identification number.
                           type:
                             type: string
                             example: DNI
-                            description: type
-                        description: identification
+                            description: Identification Type.
                       name:
                         type: string
-                        description: name
+                        description: Buyer’s name.
                       surname:
                         type: string
-                        description: surname
+                        description: Buyer’s last name.
                       date_created:
                         type: string
                         description: Registration date.
@@ -886,7 +885,7 @@ paths:
                           properties:
                             id:
                               type: string
-                              description: id
+                              description: Payment method identifier.
                       default_installments:
                         type: string
                         format: nullable
@@ -903,7 +902,7 @@ paths:
                           properties:
                             id:
                               type: string
-                              description: id
+                              description: Payment type identifier
                       installments:
                         type: string
                         format: nullable
@@ -1185,7 +1184,7 @@ paths:
                   description: Reference you can synchronize with your payment system.
                 expires:
                   type: boolean
-                  description: Boolean value that determines if a preference expires.
+                  description: Boolean value that determines if a preference expire.
                 date_of_expiration:
                   type: string
                   format: date
@@ -1200,12 +1199,11 @@ paths:
                   description: Date in YYYY-MM-DD-HH-MM-SS format which indicates the end of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates.
                 marketplace:
                   type: string
-                  description: 'Origin of the payment. This is an alphanumeric field whose default value is NONE. If the collector has their own marketplace, this is where the credentials to identify it are sent. The marketplace credentials must correspond to the credentials used to create the preference.
+                  description: Origin of the payment. This is an alphanumeric field whose default value is NONE. If the collector has their own marketplace, this is where the credentials to identify it are sent. The marketplace credentials must correspond to the credentials used to create the preference.
                 marketplace_fee:
                   type: number
-                  description: >-
-                    Marketplace`s fee charged by application owner. Its default value is 0 in local currency. This property can only be sent if the marketplace property is defined as well, otherwise the request will fail.
-                    value: 0 in local currency
+                  description: Marketplace`s fee charged by application owner. Its default value is 0 in local currency. This property can only be sent if the marketplace property is defined as well, otherwise the request will fail.
+                  example: 0
                 differential_pricing:
                   type: object
                   description: Differential pricing configuration for this preference. The seller can have their own configuration regarding payment methods and installments, and it's in this parameter where they will include the numeric ID to indicate so. This value is used to apply custom payment methods.
@@ -1230,15 +1228,15 @@ paths:
                     type: object
                     description: URLs to return to the sellers website.
                     properties:
-                      success:
-                        type: string
-                        description: Approved payment URL.
-                      pending:
-                        type: string
-                        description: Pending or in process payment URL.
                       failure:
                         type: string
                         description: Canceled payment URL.
+                      pending:
+                        type: string
+                        description: Pending or in process payment URL.
+                      success:
+                        type: string
+                        description: Approved payment URL.
                   binary_mode:
                     type: boolean
                     example: false
@@ -1344,16 +1342,17 @@ paths:
                     properties:
                       phone:
                         type: object
+                        description: Buyer phone.
                         properties:
                           area_code:
                             type: string
                             description: Area code.
                           number:
                             type: string
-                            description: number
-                        description: phone
+                            description: Number.
                       address:
                         type: object
+                        description: Buyer address.
                         properties:
                           zip_code:
                             type: string
@@ -1367,26 +1366,25 @@ paths:
                             example: '7304'
                             format: nullable
                             description: Street number.
-                        description: address
                       email:
                         type: string
-                        description: email
+                        description: Buyer e-mail address.
                       identification:
                         type: object
+                        description: Personal identification.
                         properties:
                           number:
                             type: string
-                            description: number
+                            description: Number.
                           type:
                             type: string
-                            description: type
-                        description: identification
+                            description: Identification Type.
                       name:
                         type: string
-                        description: name
+                        description: Buyer name.
                       surname:
                         type: string
-                        description: surname
+                        description: Buyer last name.
                       date_created:
                         type: string
                         description: Registration date.
@@ -1411,7 +1409,7 @@ paths:
                             id:
                               type: string
                               example: ''
-                              description: id
+                              description: Payment method ID.
                       excluded_payment_types:
                         type: array
                         description: Payment types excluded from the payment process. The payment types included here will not be available at checkout.
@@ -1421,7 +1419,7 @@ paths:
                             id:
                               type: string
                               example: ''
-                              description: id
+                              description: Payment method data_type ID.
                       installments:
                         type: string
                         format: nullable
