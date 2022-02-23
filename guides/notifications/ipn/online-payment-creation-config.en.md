@@ -1,20 +1,4 @@
-# IPN notifications for online payments
-
-See below how to configure IPN notifications for online payments.
-
-## Dashboard configuration
- 
-Below we will explain how to indicate the URLs that will be notified and how to configure the events for which notification will be received.
-
-![ipn](/images/notifications/ipn__es.png)
-
-1. Access the [IPN Notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
-2. Next, configure the **URL** of **production** where notifications will be received.
-3. You will also be able to experiment and test if the indicated URL is receiving notifications correctly, being able to verify the request, the response given by the server and the description of the event.
-4. If you need to identify multiple accounts, at the end of the indicated URL you can specify the parameter `?customer=(sellername) endpoint` to identify the sellers.
-5. Select the **events** from which you will receive notifications in `json` format using `HTTP POST` to the URL specified above. We notify you of events related to your orders (`merchant_orders`), chargebacks received (`chargebacks`), payments received (`payment`) or payment attempts (`point_integration_ipn`).
- 
-## Configuration while creating payments
+# Configuration while creating payments
 
 It is possible to configure the notification URL more specifically for each payment using the `notification_url` field. See below how to do this using the SDKs.
 
@@ -257,27 +241,30 @@ curl -X POST \
 ```
 
 3. Once the settings have been made, Mercado Pago will notify this URL with two parameters each time a resource is created or updated:
- 
+
+
 | Field | Description |
 | --- | --- |
 | `topic` | Identifies what the resource is, it can be `payment`, `chargebacks`,  `merchant_order ` or `point_integration_ipn`. |
 | `id` | It is a unique identifier of the notified resource. |
- 
-For example, if you set the URL: `https://www.yoursite.com/notifications`, you will receive payment notifications like this: `https://www.yoursite.com/notifications?topic=payment&id=123456789`.
 
-4. If you want to receive notifications only from IPN and not from Webhooks, you can add in the `notification_url` the parameter `source_news=ipn`. For example: https://www.yourserver.com/notifications?source_news=ipn
- 
-## Actions required after receiving notification
 
-[TXTSNIPPET][/guides/snippets/test-integration/notification-response]
+> For example, if you set the URL: `https://www.yoursite.com/notifications`, you will receive payment notifications like this: `https://www.yoursite.com/notifications?topic=payment&id=123456789`.
 
-After returning the notification, you will get the full information of the notified resource by going to the corresponding API endpoint:
+4. If you want to receive notifications only from IPN and not from Webhooks, you can add in the `notification_url` the parameter `source_news=ipn`. For example: `https://www.yourserver.com/notifications?source_news=ipn`
 
-| Type | URL | Documentation |
-| --- | --- | --- |
-| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) |
-| chargebacks | `https://api.mercadopago.com/v1/chargebacks/[ID]` | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/chargebacks/_chargebacks_id/get) |
-| merchant_orders | `https://api.mercadopago.com/merchant_orders/[ID]` | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/merchant_orders/_merchant_orders_id/get) |
-| point_integration_ipn | - | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/mp-point/introduction) |
+> PREV_STEP_CARD_EN
+>
+> Online Payments
+>
+> Configure URLs and events for online payments.
+>
+> [URLs and events configuration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/online-url-configuration)
 
-With this information, you will be able to carry out the necessary updates to your platform, such as updating an approved payment or a closed order.
+> NEXT_STEP_CARD_EN
+>
+> After receiving the notification
+>
+> Actions to be carried out after receiving the notification.
+>
+> [After receiving the notification](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/online-url-after-notification)

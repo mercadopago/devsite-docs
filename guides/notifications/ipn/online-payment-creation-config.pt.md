@@ -1,24 +1,8 @@
-# Notificaciones IPN para pagos online
+# Configuração ao criar pagamentos
 
-Vea a continuación cómo configurar notificaciones tipo IPN para pagos en línea.
+É possível configurar a URL de notificação de modo mais específico para cada pagamento utilizando o campo `notification_url`. Veja abaixo como realizar essa configuração com uso dos SDKs.
 
-## Configuración del Dashboard
- 
-A continuación explicaremos cómo indicar las URLs que serán notificadas y cómo configurar los eventos para los que se recibirán notificaciones.
-
-![ipn](/images/notifications/ipn__es.png)
-
-1. Accede a la pantalla [Notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
-2. A continuación, configura la **URL** de **producción** donde se recibirán las notificaciones.
-3. También podrás experimentar y probar si la URL indicada está recibiendo notificaciones correctamente, pudiendo verificar la solicitud, la respuesta dada por el servidor y la descripción del evento.
-4. Si necesitas identificar varias cuentas, al final de la URL indicada puedes especificar el parámetro `?cliente=(nombredelvendedor) endpoint` para identificar a los vendedores.
-5. Selecciona los **eventos** de los que recibirás notificaciones en formato `json` usando `HTTP POST` a la URL especificada anteriormente. Te notificamos de los eventos relacionados con tus pedidos (`merchant_orders`), devoluciones de cargo recibidas (`chargebacks`), pagos recibidos (`payment`) o intentos de pago (`point_integration_ipn`).
- 
-## Configuración al crear pagos
-
-Es posible configurar la URL de notificación de forma más específica para cada pago utilizando el campo `notification_url`. Ve a continuación cómo hacer esto usando los SDK.
-
-1. En el campo `notification_url`, indica la URL desde lo que se recibirán las notificaciones, como se muestra abajo.
+1. No campo `notificaction_url`, indique a URL do qual serão recebidas as notificações como exemplificado abaixo.
 
 [[[
 ```php
@@ -214,8 +198,8 @@ curl -X POST \
 ```
 ]]]
 
-2. Implementa el receptor de notificaciones usando el siguiente código como ejemplo:
- 
+2. Implemente o receptor de notificações usando o seguinte código como exemplo:
+
 ```php
 <?php
    MercadoPago\SDK::setAccessToken("ENV_ACCESS_TOKEN");
@@ -255,29 +239,31 @@ curl -X POST \
   
 ?>
 ```
- 
-3. Una vez realizada la configuración, Mercado Pago notificará esta URL con dos parámetros cada vez que se cree o actualice un recurso:
- 
-| Campo | Descripción |
+
+3. Feitas as configurações, o Mercado Pago notificará essa URL com dois parâmetros a cada vez que um recurso for criado, ou atualizado:
+
+| Campo | Descrição |
 | --- | --- |
-| `topic` | Identifica cuál es el recurso, puede ser `payment`, `chargebacks`, `merchant_order ` o `point_integration_ipn`. |
-| `id` | Es un identificador único del recurso notificado. |
- 
-Por ejemplo, si configuras la URL: `https://www.yoursite.com/notifications`, recibirás notificaciones de pago como esta:` https://www.yoursite.com/notifications?topic=payment&id=123456789`.
+| `topic` | Identifica do que se trata o recurso, podendo ser `payment`, `chargebacks`, `merchant_order ` ou `point_integration_ipn`. |
+| `id` | É um identificador único do recurso notificado. |
 
-4. Si deseas recibir notificaciones solo de IPN y no de Webhooks, puedes agregar en el `notification_url` el parámetro `source_news=ipn`. Por ejemplo: https://www.yourserver.com/notifications?source_news=ipn
- 
-## Acciones necesarias después de recibir la notificación
 
-[TXTSNIPPET][/guides/snippets/test-integration/notification-response]
+> Por exemplo, se configurar a URL: `https://www.yoursite.com/notifications`, você receberá as notificações de pagamento desta maneira: `https://www.yoursite.com/notifications?topic=payment&id=123456789`.
 
-Después de devolver la notificación, obtendrás la información completa del recurso notificado yendo al punto final de la API correspondiente:
+4. Caso deseje receber notificações apenas de IPN e não de Webhooks, você pode adicionar na `notification_url` o parâmetro `source_news=ipn`. Por exemplo: `https://www.yourserver.com/notifications?source_news=ipn`
 
-| Tipo | URL | Documentación |
-| --- | --- | --- |
-| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [ver documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments_id/get) |
-| chargebacks | `https://api.mercadopago.com/v1/chargebacks/[ID]` | [ver documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/chargebacks/_chargebacks_id/get) |
-| merchant_orders | `https://api.mercadopago.com/merchant_orders/[ID]` | [ver documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/merchant_orders/_merchant_orders_id/get) |
-| point_integration_ipn | - | [ver documentación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/mp-point/introduction) |
+> PREV_STEP_CARD_PT
+>
+> Pagamentos Online
+>
+> Configurar URLs e eventos para pagamentos online.
+>
+> [Configuração de URLs e eventos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/online-url-configuration)
 
-Con esta información podrás realizar las actualizaciones necesarias a tu plataforma, como actualizar un pago aprobado o un pedido cerrado.
+> NEXT_STEP_CARD_PT
+>
+> Após receber a notificação
+>
+> Ações necessárias após receber a notificação.
+>
+> [Após receber a notificação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/notifications/ipn/online-url-after-notification)
