@@ -60,7 +60,7 @@
 ------------
 
 
-Para **testar diferentes resultados de pagamento** com o Checkout Pro, preencha o status desejado no nome do titular do cartão:
+Para **testar diferentes resultados de pagamento**, preencha o status desejado no nome do titular do cartão:
 
 | Status de pagamento | Descrição |
 | --- | --- |
