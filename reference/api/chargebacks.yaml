@@ -511,6 +511,16 @@ paths:
           schema:
             type: string
             example: 12123adfasdf123u4u
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: String
+                  example: cancelled
+                  description: Payment status.
       responses:
         '200':
           description: success
