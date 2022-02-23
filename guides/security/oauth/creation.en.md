@@ -22,7 +22,7 @@ To generate the authorization code, the following requirements must be met.
 >
 > Remember that you will use sensitive information from your sellers. Make sure you store it safely. Do not use it in the authentication URL and manage the entire process only from your server.
  
-1. Edit your application so that it contains your Redirect URL. See [Edit Application](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/aplication).
+1. Edit your application so that it contains your Redirect URL. See [Edit Application](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/application).
 2. Send the authentication URL to the seller whose account you want to link to yours with the following fields:
 
     |Description|URL| 
