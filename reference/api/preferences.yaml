@@ -278,13 +278,13 @@ paths:
                     $ref: '#/components/schemas/operation_type'
                   items:
                     type: array
-                    description: items
+                    description: Items information.
                     items:
                       type: object
                       properties:
                         id:
                           type: string
-                          description: id
+                          description: Item ID.
                         picture_url:
                           type: string
                           description: Item image URL.
@@ -388,7 +388,7 @@ paths:
                           properties:
                             id:
                               type: string
-                              description: id
+                              description: Payment method identifier.
                       excluded_payment_types:
                         type: array
                         description: Payment types excluded from the payment process. The payment types included here will not be available at checkout.
@@ -397,7 +397,7 @@ paths:
                           properties:
                             id:
                               type: string
-                              description: id
+                              description: Payment type identifier
                       installments:
                         type: string
                         format: nullable
@@ -544,6 +544,14 @@ paths:
           description: The site id
           schema:
             type: string
+          enum:
+            - MLA -- Mercado Libre Argentina
+            - MLB -- Mercado Libre Brasil
+            - MLC -- Mercado Libre Chile
+            - MLM -- Mercado Libre México
+            - MLU -- Mercado Libre Uruguay
+            - MCO -- Mercado Libre Colombia
+            - MPE -- Mercado Libre Perú
         - name: marketplace
           in: query
           description: The marketplace identifier
