@@ -323,7 +323,16 @@ paths:
                     enum:
                       - 403--Forbidden--authorization-the-caller-id-must-be-a-productive-user403--Forbidden
         '405':
-          description: Method not allowed
+          description: Method Not Allowed
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 405--Method-Not-Allowed
         '500':
           description: Internal server error
           content:
