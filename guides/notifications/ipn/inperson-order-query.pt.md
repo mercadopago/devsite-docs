@@ -1,4 +1,4 @@
-# Consulta da ordem
+# Consulta do pedido
 
 Para poder consultar o status do pedido por meio do `merchant_order`, você precisará fazer um GET usando o ID que você recebeu no servidor de notificações.
 

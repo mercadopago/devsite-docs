@@ -2,7 +2,7 @@
 
 Um evento é qualquer tipo de atualização sobre o objeto notificado, incluindo mudanças de status ou atributos. 
 
-Notificamos eventos referente a suas ordem (`merchant_order`) o pagamento recebido (`payment`). 
+Notificamos eventos referente a seus pedidos (`merchant_order`) o pagamento recebido (`payment`). 
 
 A `merchant_order` é uma entidade que agrupa pagamentos aprovados ou rejeitados. Deverá consultar os dados dos pagamentos que são notificados.
 
@@ -23,7 +23,7 @@ Os seguintes eventos são notificados:
 |Segunda tentativa|5 minutos|5 segundos|
 |Terceira tentativa|30 minutos|5 segundos|
 
-Mercado Pago informará a esta `notification_url` tanto en la creación como actualización de los estados de pagos u órdenes con dos parámetros:
+O Mercado Pago informará este `notification_url` ao criar e atualizar o status do pagamento ou do pedido com dois parâmetros:
 
 |Campo|Descrição|
 |---|---|
