@@ -24,10 +24,14 @@ La respuesta tendrá una estructura similar al siguiente ejemplo:
 }
 ```
 
+Para más información sobre los parámetros y respuestas de la API del usuario de prueba, accede a [Referencias API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference)
+
 >WARNING
 >
 >Importante
 >
-> * Puedes generar hasta 10 cuentas de usuarios de prueba en simultáneo. Por eso, te recomendamos guardar el _email_ y _password_ de cada uno.
-> * Los usuarios de prueba caducan luego de 60 días sin actividad en Mercado Pago.
-> * Tanto el comprador como el vendedor deben ser usuarios de prueba.
+> Puedes generar hasta 10 cuentas de usuarios de prueba en simultáneo. Por eso, te recomendamos **guardar el email y password de cada uno**.
+> <br/>
+> Los usuarios de prueba caducan luego de 60 días sin actividad en Mercado Pago.
+> <br/>
+> Tanto el comprador como el vendedor deben ser usuarios de prueba.
