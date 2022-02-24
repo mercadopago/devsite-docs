@@ -50,11 +50,11 @@ paths:
                       currency_id:
                         type: string
                         example: U$
-                        description: Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency.
+                        description: Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.
                       unit_price:
                         type: number
                         example: 10
-                        description: Unit price of the item.
+                        description: Unit price of the item. This property is used together with the property quantity to determine the order cost.
                 payer:
                   type: object
                   description: Buyer information, such as name, last name, e-mail, phone, personal identification, address, and registration date.
@@ -235,7 +235,7 @@ paths:
                   description: Date in YYYY-MM-DD-HH-MM-SS format which indicates the end of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates.
                 marketplace:
                   type: string
-                  description: Origin of the payment. This is an alphanumeric field whose default value is NONE. If the collector has their own marketplace, this is where the credentials to identify it are sent. The marketplace credentials must correspond to the credentials used to create the preference.
+                  description: Origin of the payment. This is an alphanumeric field whose default value is NONE. If the collector has their own marketplace, this is where the credentials to identify it are sent. As the marketplace is associated to the Application ID, the marketplace credentials must correspond to the credentials used to create the preference. Using the wrong credentials will result in an error.
                 marketplace_fee:
                   type: number
                   description: Marketplace`s fee charged by application owner. Its default value is 0 in local currency. This property can only be sent if the marketplace property is defined as well, otherwise the request will fail.
@@ -302,7 +302,7 @@ paths:
                         currency_id:
                           type: string
                           example: $
-                          description: Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency.
+                          description: Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.
                         quantity:
                           type: number
                           example: 1
@@ -310,7 +310,7 @@ paths:
                         unit_price:
                           type: number
                           example: 10
-                          description: Unit price of the item.
+                          description: Unit price of the item. This property is used together with the property quantity to determine the order cost.
                   payer:
                     type: object
                     description: Buyer information, such as name, last name, e-mail, phone, personal identification, address, and registration date.
@@ -417,7 +417,7 @@ paths:
                   marketplace:
                     type: string
                     example: MP-MKT-6295877106812064
-                    description: Origin of the payment. This is an alphanumeric field whose default value is NONE. If the collector has their own marketplace, this is where the credentials to identify it are sent. The marketplace credentials must correspond to the credentials used to create the preference.
+                    description: Origin of the payment. This is an alphanumeric field whose default value is NONE. If the collector has their own marketplace, this is where the credentials to identify it are sent. As the marketplace is associated to the Application ID, the marketplace credentials must correspond to the credentials used to create the preference. Using the wrong credentials will result in an error.
                   marketplace_fee:
                     type: number
                     example: 0
@@ -628,7 +628,7 @@ paths:
                         marketplace:
                           type: string
                           example: NONE
-                          description: Origin of the payment. This is an alphanumeric field whose default value is NONE. If the collector has their own marketplace, this is where the credentials to identify it are sent. The marketplace credentials must correspond to the credentials used to create the preference.
+                          description: Origin of the payment. This is an alphanumeric field whose default value is NONE. If the collector has their own marketplace, this is where the credentials to identify it are sent. As the marketplace is associated to the Application ID, the marketplace credentials must correspond to the credentials used to create the preference. Using the wrong credentials will result in an error.
                         operation_type:
                           $ref: '#/components/schemas/operation_type'
                         payer_email:
@@ -783,7 +783,7 @@ paths:
                         currency_id:
                           type: string
                           example: $
-                          description: Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency.
+                          description: Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.
                         title:
                           type: string
                           example: Practical Granite Shirt
@@ -807,11 +807,11 @@ paths:
                         unit_price:
                           type: number
                           example: 14.5
-                          description: Unit price of the item.
+                          description: Unit price of the item. This property is used together with the property quantity to determine the order cost.
                   marketplace:
                     type: string
                     example: MP-MKT-6295877106812064
-                    description: Origin of the payment. This is an alphanumeric field whose default value is NONE. If the collector has their own marketplace, this is where the credentials to identify it are sent. The marketplace credentials must correspond to the credentials used to create the preference.
+                    description: Origin of the payment. This is an alphanumeric field whose default value is NONE. If the collector has their own marketplace, this is where the credentials to identify it are sent. As the marketplace is associated to the Application ID, the marketplace credentials must correspond to the credentials used to create the preference. Using the wrong credentials will result in an error.
                   marketplace_fee:
                     type: number
                     example: 0
@@ -1025,11 +1025,11 @@ paths:
                       currency_id:
                         type: string
                         example: U$
-                        description: Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency.
+                        description: Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.
                       unit_price:
                         type: number
                         example: 10
-                        description: Unit price of the item.
+                        description: Unit price of the item. This property is used together with the property quantity to determine the order cost.
                 payer:
                   type: object
                   description: Buyer information, such as name, last name, e-mail, phone, personal identification, address, and registration date.
@@ -1207,7 +1207,7 @@ paths:
                   description: Date in YYYY-MM-DD-HH-MM-SS format which indicates the end of the preference`s validity period. This can be used, for instance, for limited sales, where sellers make an offer between certain dates.
                 marketplace:
                   type: string
-                  description: Origin of the payment. This is an alphanumeric field whose default value is NONE. If the collector has their own marketplace, this is where the credentials to identify it are sent. The marketplace credentials must correspond to the credentials used to create the preference.
+                  description: Origin of the payment. This is an alphanumeric field whose default value is NONE. If the collector has their own marketplace, this is where the credentials to identify it are sent. As the marketplace is associated to the Application ID, the marketplace credentials must correspond to the credentials used to create the preference. Using the wrong credentials will result in an error.
                 marketplace_fee:
                   type: number
                   description: Marketplace`s fee charged by application owner. Its default value is 0 in local currency. This property can only be sent if the marketplace property is defined as well, otherwise the request will fail.
@@ -1317,7 +1317,7 @@ paths:
                         currency_id:
                           type: string
                           example: $
-                          description: Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency.
+                          description: Unique ID to identify the currency. ISO_4217 code. Some sites allow local currency and USD, but it is important to note that the amount is converted to local currency when the preference is created, as the checkout always processes transactions using local currency. If you use USD please take into consideration that this value is not automatically updated if the value of local currency changes in relation to USD.
                         quantity:
                           type: number
                           example: 1
@@ -1325,12 +1325,12 @@ paths:
                         unit_price:
                           type: number
                           example: 10
-                          description: Unit price of the item.
+                          description: Unit price of the item. This property is used together with the property quantity to determine the order cost.
                     description: items
                   marketplace:
                     type: string
                     example: MP-MKT-6295877106812064
-                    description: Origin of the payment. This is an alphanumeric field whose default value is NONE. If the collector has their own marketplace, this is where the credentials to identify it are sent. The marketplace credentials must correspond to the credentials used to create the preference.
+                    description: Origin of the payment. This is an alphanumeric field whose default value is NONE. If the collector has their own marketplace, this is where the credentials to identify it are sent. As the marketplace is associated to the Application ID, the marketplace credentials must correspond to the credentials used to create the preference. Using the wrong credentials will result in an error.
                   marketplace_fee:
                     type: number
                     example: 0
