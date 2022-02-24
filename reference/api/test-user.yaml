@@ -197,7 +197,7 @@ paths:
                          example: "MLA"
                        email:
                          type: string
-                         description: Test user login email.
+                         description: Test user email.
                          example: "test_user_123@testuser.com"
                        date_created:
                          type: string
@@ -205,7 +205,7 @@ paths:
                          example: "2021-11-04T12:02:35Z"
                        date_last_updated:
                          type: string
-                         description: Test user registration update date.
+                         description: Date of last record update.
                          example: "2021-11-04T12:02:35Z"
        '401':
          description: Not found
@@ -377,7 +377,7 @@ paths:
              type: object
              properties:
                amount:
-                 description: Amount add to the test user account.
+                 description: Amount added to the test user account.
                  type: number
                  example: 1000.23
        required: true
