@@ -1,0 +1,421 @@
+openapi: 3.0.0
+servers:
+ - url: https://api.mercadopago.com
+info:
+ title: Mercado Pago API Reference
+ version: '1.0'
+paths:
+ /users/test_user:
+   post:
+     tags:
+       - $ref: '#/tags/checkout-api'
+       - $ref: '#/tags/checkout-pro'
+     summary: Create test user
+     description: This endpoint handles http requests to create a test user
+     parameters:
+       - name: access_token
+         in: query
+         description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+         enum:
+                     - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+                     - Client ID -- 1585551492
+                     - Creation date (MMddHH) -- 030918
+                     - Security hash -- 25######3458
+                     - User ID -- 2880736
+         required: true
+         schema:
+           type: string
+           example: 12123adfasdf123u4u
+     requestBody:
+       content:
+         application/json:
+           schema:
+             type: object
+             properties:
+               site_id:
+                 type: string
+                 description: ID of the site where the test user will be created.
+                 required: true
+                 example: "MLA"
+                 enum:
+                   - MPE -- Mercado Libre Perú
+                   - MLU -- Mercado Libre Uruguay
+                   - MLA -- Mercado Libre Argentina
+                   - MLC -- Mercado Libre Chile
+                   - MCO -- Mercado Libre Colombia
+                   - MLB -- Mercado Libre Brasil
+                   - MLM -- Mercado Libre México
+     responses:
+       '200':
+         description: Created
+         content:
+           application/json:
+             schema:
+               type: object
+               properties:
+                 id:
+                   type: integer
+                   example: 123
+                   description: Unique ID that identifies the test user.
+                 nickname:
+                   type: string
+                   example: "TEST45I5GYIH"
+                   description: Nickname that identifies the test user.
+                 password:
+                   type: string
+                   example: "qatest6730"
+                   description: Test user password.
+                 site_status:
+                   type: string
+                   example: "active"
+                   description: Status of the site where the test user was created.
+                 site_id:
+                   type: string
+                   example: "MLA"
+                   description: ID of the site where the test user was created.
+                 email:
+                   type: string
+                   example: "test_user_123@testuser.com"
+                   description: Test user email.
+                 date_created:
+                   type: string
+                   example: "2022-02-01T12:00:00.000-04:00"
+                   description: Test user creation date.
+                 date_last_updated:
+                   type: string
+                   example: "2022-02-01T12:00:00.000-04:00"
+                   description: Date of last record update.
+       '400':
+         description: Bad request
+         content:
+           application/json:
+             schema:
+               type: object
+               properties:
+                 errorKey:
+                   type: string
+                   enum:
+                     - 400--Bad-Request--invalid-site_id
+       '401':
+         description: Not found
+         content:
+           application/json:
+             schema:
+               type: object
+               properties:
+                 errorKey:
+                   type: string
+                   enum:
+                     - 401--Not-Found--invalid-token                          
+       '403':
+         description: Forbidden
+         content:
+           application/json:
+             schema:
+               type: object
+               properties:
+                 errorKey:
+                   type: string
+                   enum:
+                     - 403--Forbidden--authorization-the-caller-id-must-be-a-productive-user
+       '404':
+         description: Resource not found
+         content:
+           application/json:
+             schema:
+               type: object
+               properties:
+                 errorKey:
+                   type: string
+                   enum:
+                     - 404--Resource-Not-Found                   
+       '500':
+         description: Internal server error
+         content:
+           application/json:
+             schema:
+               type: object
+               properties:
+                 errorKey:
+                   type: string
+                   enum:
+                     - 500--Internal-Server-Error
+ /test_user/search:
+   get:
+     tags:
+       - $ref: '#/tags/checkout-api'
+       - $ref: '#/tags/checkout-pro'
+     summary: Search test user
+     description: This endpoint handles http requests to search a test user
+     parameters:
+       - name: access_token
+         in: query
+         description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+         enum:
+                     - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+                     - Client ID -- 1585551492
+                     - Creation date (MMddHH) -- 030918
+                     - Security hash -- 25######3458
+                     - User ID -- 2880736
+         required: true
+         schema:
+           type: string
+           example: "12123adfasdf123u4u"
+     responses:
+       '200':
+         description: OK
+         content:
+           application/json:
+             schema:
+               type: object
+               properties:
+                 total:
+                   description: Total test users found.
+                   type: integer
+                   example: 1
+                 results:
+                   description: Localized test user information.
+                   type: array
+                   items:
+                     type: object
+                     properties:
+                       id:
+                         type: integer
+                         description: Unique ID that identifies the test user.
+                         example: 123
+                       nickname:
+                         type: string
+                         description: Nickname that identifies the test user.
+                         example: "TEST45I5GYIH"
+                       site_status:
+                         type: string
+                         description: Status of the site where the test user was created.
+                         example: "active"
+                       site_id:
+                         type: string
+                         description: ID of the site where the test user was created.
+                         example: "MLA"
+                       email:
+                         type: string
+                         description: Test user email.
+                         example: "test_user_123@testuser.com"
+                       date_created:
+                         type: string
+                         description: Test user creation date.
+                         example: "2021-11-04T12:02:35Z"
+                       date_last_updated:
+                         type: string
+                         description: Date of last record update.
+                         example: "2021-11-04T12:02:35Z"
+       '401':
+         description: Not found
+         content:
+           application/json:
+             schema:
+               type: object
+               properties:
+                 errorKey:
+                   type: string
+                   enum:
+                     - 401--Not-Found--invalid-token                  
+       '403':
+         description: Forbidden
+         content:
+           application/json:
+             schema:
+               type: object
+               properties:
+                 errorKey:
+                   type: string
+                   enum:
+                     - 403--Forbidden--authorization-the-caller.id-must-be-a-productive-user
+       '404':
+         description: Resource not found
+         content:
+           application/json:
+             schema:
+               type: object
+               properties:
+                 errorKey:
+                   type: string
+                   enum:
+                     - 404--Resource-Not-Found                
+       '405':
+         description: Method Not Allowed
+         content:
+           application/json:
+             schema:
+               type: object
+               properties:
+                 errorKey:
+                   type: string
+                   enum:
+                     - 405--Method-Not-Allowed
+       '500':
+         description: Internal Server Error
+         content:
+           application/json:
+             schema:
+               type: object
+               properties:
+                 errorKey:
+                   type: string
+                   enum:
+                     - 500--Internal-Server-Error
+ /test_user/{id}/password:
+   put:
+     tags:
+       - $ref: '#/tags/checkout-api'
+       - $ref: '#/tags/checkout-pro'
+     summary: Update test user password
+     description: This endpoint handles http requests to change the test user password
+     parameters:
+       - name: access_token
+         in: query
+         description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+         enum:
+                     - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+                     - Client ID -- 1585551492
+                     - Creation date (MMddHH) -- 030918
+                     - Security hash -- 25######3458
+                     - User ID -- 2880736
+         required: true
+         schema:
+           type: string
+           example: "12123adfasdf123u4u"
+       - name: id
+         in: path
+         description: Unique ID that identifies the test user.
+         required: true
+         schema:
+           type: string
+           example: "12123adfasdf123u4u"
+     responses:
+       '200':
+         description: OK
+         content:
+           application/json:
+             schema:
+               type: object
+               properties:
+                 message:
+                   description: Message with the password change status.
+                   type: string
+                   example: "password successfully reset"
+                 new_password:
+                   description: New test user password.
+                   type: string
+                   example: "random"
+       '403':
+         description: Forbidden
+         content:
+           application/json:
+             schema:
+               type: object
+               properties:
+                 errorKey:
+                   type: string
+                   enum:
+                     - 403--Forbidden--authorization-the-caller-id-must-be-a-productive-user403--Forbidden
+       '405':
+         description: Method Not Allowed
+         content:
+           application/json:
+             schema:
+               type: object
+               properties:
+                 errorKey:
+                   type: string
+                   enum:
+                     - 405--Method-Not-Allowed
+       '500':
+         description: Internal server error
+         content:
+           application/json:
+             schema:
+               type: object
+               properties:
+                 errorKey:
+                   type: string
+                   enum:
+                     - 500--Internal-Server-Error
+ /test_user/{id}/account_money:
+   put:
+     tags:
+       - $ref: '#/tags/checkout-api'
+       - $ref: '#/tags/checkout-pro'
+     summary: Add AM to test user account
+     description: This endpoint handles http requests to add account_money to the test user account
+     parameters:
+       - name: access_token
+         in: query
+         description: Access token generated from the seller by the authentication process (OAuth). Security code that identifies the user, their privileges and an application used in different requests from public sources to access protected resources. Its validity is determined by the expires_in parameter and is similar to APP_USR-1585551492-030918-25######3458-2880736, which is composed of
+         enum:
+                     - Access token type -- APP_USR (application on behalf of a user), TEST (test, only valid in sandbox)
+                     - Client ID -- 1585551492
+                     - Creation date (MMddHH) -- 030918
+                     - Security hash -- 25######3458
+                     - User ID -- 2880736
+         required: true
+         schema:
+           type: string
+           example: "12123adfasdf123u4u"
+       - name: id
+         in: path
+         description: Unique ID that identifies the test user.
+         required: true
+         schema:
+           type: string
+           example: "12123adfasdf123u4u"
+     requestBody:
+       description: Amount request
+       content:
+         application/json:
+           schema:
+             required:
+               - site_id
+             type: object
+             properties:
+               amount:
+                 description: Amount added to the test user account.
+                 type: number
+                 example: 1000.23
+       required: true
+     responses:
+       '204':
+         description: No content
+       '400':
+         description: Bad request
+         content:
+           application/json:
+             schema:
+               type: object
+               properties:
+                 errorKey:
+                   type: string
+                   enum:
+                     - 400--Bad-Request--invalid-amount
+       '403':
+         description: Forbidden
+         content:
+           application/json:
+             schema:
+               type: object
+               properties:
+                 errorKey:
+                   type: string
+                   enum:
+                     - 403--Forbidden--authorization-the-caller-id-must-be-a-productive-user
+       '405':
+         description: Method not allowed
+       '500':
+         description: Internal server error
+         content:
+           application/json:
+             schema:
+               type: object
+               properties:
+                 errorKey:
+                   type: string
+                   enum:
+                     - 500--Internal-Server-Error
