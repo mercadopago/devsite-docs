@@ -12,7 +12,7 @@ O fluxo permite continuar utilizando um access token válido com as mesmas carac
  
 Para renovar o **access token**:
  
-1. Envie o código do `refresh_token`, as suas **credenciais** e o `authorization_code` (veja [Criação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/oauth/creation) ao endpoint [/oauth/token](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/oauth/_oauth_token/post) com o código do `refresh_token` no parâmetro `grant_type` para receber uma nova resposta com um novo `access_token` e um novo `refresh_token`.
+1. Envie o código do `refresh_token`, as suas **credenciais** e o `authorization_code` (veja [Criação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/security/oauth/creation)) ao endpoint [/oauth/token](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/oauth/_oauth_token/post) com o código do `refresh_token` no parâmetro `grant_type` para receber uma nova resposta com um novo `access_token` e um novo `refresh_token`.
 2. Atualize a aplicação com o access token recebido na resposta.
  
 > WARNING
