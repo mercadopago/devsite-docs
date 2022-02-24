@@ -112,7 +112,7 @@ Para realizar a instalação do Checkout Pro, siga os passos abaixo.
 Para instalar o Checkout Pro em sua Shopify, siga o passo a passo abaixo.
 
 1. Acesse o **Painel de Administração** da sua loja e clique em **Configurações > Pagamentos**.
-2. Em **Provedore de pagamento** clique em **Escolher provedor**.
+2. Em **Provedor de pagamento** clique em **Escolher provedor**.
 3. Busque por **Mercado Pago** no espaço de busca e clique na opção disponível.
 4. Em _Client_id_ e _Client_secret_, insira suas credenciais de **Produção**. Para mais informações sobre como obter essas informações, acesse a documentação [Credenciais.](https://www.mercadopago.com.br/developers/pt/guides/resources/credentials)
 5. Selecione as imagens referentes aos meios de pagamento que deseja exibir em sua loja. Essas imagens são meramente ilustrativas e não significam a ativação do meio de pagamento selecionado.
