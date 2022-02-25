@@ -1256,7 +1256,7 @@ paths:
                   collector_id:
                     type: number
                     example: 202809963
-                    description: UUnique ID used to identify the collector. It is the same as the Cust ID.
+                    description: Unique ID used to identify the collector. It is the same as the Cust ID.
                   coupon_code:
                     type: object
                     description: Discount campaign with a specific code.
