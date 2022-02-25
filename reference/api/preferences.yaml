@@ -90,7 +90,7 @@ paths:
                           description: Number.
                     address:
                       type: object
-                      description: Buyer address.
+                      description: Buyer’s address.
                       properties:
                         zip_code:
                           type: string
@@ -209,7 +209,7 @@ paths:
                   description: URL where you'd like to receive a payment notification.
                 statement_descriptor:
                   type: string
-                  description: The statement descriptor is a long text (up to 16 characters) that will be visualized in the payer´s credit card invoice to easily identify the purchase.
+                  description: The statement descriptor is a long text (up to 16 characters) that will be visualized in the payer´s credit card statement to easily identify the purchase.
                 additional_info:
                   type: string
                   description: Additional information.
@@ -220,7 +220,7 @@ paths:
                   description: Reference you can synchronize with your payment system.
                 expires:
                   type: boolean
-                  description: Boolean value that determines if a preference expire.
+                  description: Boolean value that determines if a preference expires.
                 date_of_expiration:
                   type: string
                   format: date
@@ -248,7 +248,7 @@ paths:
                       description: Differential pricing ID.
                 tracks:
                   type: array
-                  description: Tracks to be executed during the users`s interaction in the Checkout flow. The user can configure their own tracks. We currently supoort google and facebook. The collector must send the pixel ID.
+                  description: Tracks to be executed during the users`s interaction in the Checkout flow. The user can configure their own tracks. We currently supoort google and facebook. The collector must send the pixel ID (from google or facebook), and when the transaction flow is finalized the seller will be notified of the sale.
                   items:
                     type: object
                     properties:
@@ -273,7 +273,7 @@ paths:
                   collector_id:
                     type: number
                     example: 202809963
-                    description: Unique ID used to identify the collector.
+                    description: Unique ID used to identify the collector. It is the same as the Cust ID.
                   operation_type:
                     $ref: '#/components/schemas/operation_type'
                   items:
@@ -349,7 +349,7 @@ paths:
                             description: Identification number.
                       address:
                         type: object
-                        description: Address.
+                        description: Buyer’s address.
                         properties:
                           street_name:
                             type: string
@@ -413,7 +413,7 @@ paths:
                   client_id:
                     type: string
                     example: 6295877106812064
-                    description: Unique ID used to identify the client.
+                    description: Unique ID used to identify the client. It is obtained from the credentials used to create the preference. It´s the application ID.
                   marketplace:
                     type: string
                     example: MP-MKT-6295877106812064
@@ -453,7 +453,7 @@ paths:
                   statement_descriptor:
                     type: string
                     example: MERCADOPAGO
-                    description: The statement descriptor is a long text (up to 16 characters) that will be visualized in the payer´s credit card invoice to easily identify the purchase.
+                    description: The statement descriptor is a long text (up to 16 characters) that will be visualized in the payer´s credit card statement to easily identify the purchase.
                   external_reference:
                     type: string
                     description: Reference you can synchronize with your payment system.
@@ -531,12 +531,12 @@ paths:
       parameters:
         - name: sponsor_id
           in: query
-          description: The sponsor id
+          description: Unique numeric ID to identify the sponsor. It is used to identify what platform the checkout flow was initiated in.
           schema:
             type: string
         - name: external_reference
           in: query
-          description: The external reference
+          description: Reference you can synchronize with your payment system.
           schema:
             type: string
         - name: site_id
@@ -554,7 +554,7 @@ paths:
             - MPE -- Mercado Libre Perú
         - name: marketplace
           in: query
-          description: The marketplace identifier
+          description: Marketplace ID.
           schema:
             type: string
       responses:
@@ -577,11 +577,11 @@ paths:
                         client_id:
                           type: string
                           example: 6295877106812064
-                          description: Unique ID used to identify the client.
+                          description: Unique ID used to identify the client. It is obtained from the credentials used to create the preference. It´s the application ID.
                         collector_id:
                           type: number
                           example: 202809963
-                          description: Unique ID used to identify the collector.
+                          description: Unique ID used to identify the collector. It is the same as the Cust ID.
                         concept_id:
                           type: string
                           format: nullable
@@ -705,7 +705,7 @@ paths:
       parameters:
         - name: id
           in: path
-          description: The preference's ID
+          description: Preference ID.
           required: true
           schema:
             type: string
@@ -738,11 +738,11 @@ paths:
                   client_id:
                     type: string
                     example: 6295877106812064
-                    description: Unique ID used to identify the client.
+                    description: Unique ID used to identify the client. It is obtained from the credentials used to create the preference. It´s the application ID.
                   collector_id:
                     type: number
                     example: 202809963
-                    description: Unique ID used to identify the collector.
+                    description: Unique ID used to identify the collector. It is the same as the Cust ID.
                   date_created:
                     type: string
                     example: 2018-02-02T19:18:51.150Z
@@ -823,7 +823,7 @@ paths:
                   statement_descriptor:
                     type: string
                     example: MERCADOPAGO
-                    description: The statement descriptor is a long text (up to 16 characters) that will be visualized in the payer´s credit card invoice to easily identify the purchase.
+                    description: The statement descriptor is a long text (up to 16 characters) that will be visualized in the payer´s credit card statement to easily identify the purchase.
                   operation_type:
                     $ref: '#/components/schemas/operation_type'
                   payer:
@@ -843,7 +843,7 @@ paths:
                             description: Phone number.
                       address:
                         type: object
-                        description: Address.
+                        description: Buyer’s address.
                         properties:
                           zip_code:
                             type: string
@@ -1065,7 +1065,7 @@ paths:
                           description: Number.
                     address:
                       type: object
-                      description: Buyer address.
+                      description: Buyer’s address.
                       properties:
                         zip_code:
                           type: string
@@ -1192,7 +1192,7 @@ paths:
                   description: Reference you can synchronize with your payment system.
                 expires:
                   type: boolean
-                  description: Boolean value that determines if a preference expire.
+                  description: Boolean value that determines if a preference expires.
                 date_of_expiration:
                   type: string
                   format: date
@@ -1248,16 +1248,18 @@ paths:
                   binary_mode:
                     type: boolean
                     example: false
+                    description: When the payment is activated, it can only be approved or rejected. Otherwise, the payment may be pending.
                   client_id:
                     type: string
                     example: 6295877106812064
-                    description: Unique ID used to identify the client.
+                    description: Unique ID used to identify the client. It is obtained from the credentials used to create the preference. It´s the application ID.
                   collector_id:
                     type: number
                     example: 202809963
-                    description: Unique ID used to identify the collector.
+                    description: UUnique ID used to identify the collector. It is the same as the Cust ID.
                   coupon_code:
                     type: object
+                    description: Discount campaign with a specific code.
                   coupon_labels:
                     type: object
                   date_created:
@@ -1266,6 +1268,7 @@ paths:
                     description: Registration date.
                   date_of_expiration:
                     type: object
+                    description: 
                   expiration_date_from:
                     type: string
                     format: nullable
@@ -1299,7 +1302,7 @@ paths:
                       properties:
                         id:
                           type: string
-                          description: id
+                          description: Item ID.
                         picture_url:
                           type: string
                           description: Item image URL.
@@ -1326,7 +1329,7 @@ paths:
                           type: number
                           example: 10
                           description: Unit price of the item. This property is used together with the property quantity to determine the order cost.
-                    description: items
+                    description: Items information.
                   marketplace:
                     type: string
                     example: MP-MKT-6295877106812064
@@ -1337,6 +1340,7 @@ paths:
                     description: Marketplace`s fee charged by application owner. It is a fixed amount and its default value is 0 in local currency. This property can only be sent if a valid marketplace has been defined as well, otherwise the request will fail.
                   metadata:
                     type: object
+                    description: Valid JSON that can be added to the payment to save additional attributes.
                   notification_url:
                     type: string
                     example: https://url.com.br/notificacao
@@ -1360,7 +1364,7 @@ paths:
                             description: Number.
                       address:
                         type: object
-                        description: Buyer address.
+                        description: Buyer’s address.
                         properties:
                           zip_code:
                             type: string
@@ -1404,6 +1408,7 @@ paths:
                     properties:
                       default_card_id:
                         type: object
+                        descriptionL: Default card ID.
                       default_payment_method_id:
                         type: string
                         format: nullable
@@ -1438,8 +1443,10 @@ paths:
                         description: Prefered number of credit card installments.
                   processing_modes:
                     type: object
+                    description: Processing mode
                   product_id:
                     type: object
+                    description: Unique ID used to identify the product.
                   redirect_urls:
                     type: object
                     properties:
@@ -1460,6 +1467,15 @@ paths:
                   site_id:
                     type: string
                     example: MLB
+                    description: Unique ID used to identify the site.
+                    enum:
+                      - MLA -- Mercado Libre Argentina
+                      - MLB -- Mercado Libre Brasil
+                      - MLC -- Mercado Libre Chile
+                      - MLM -- Mercado Libre México
+                      - MLU -- Mercado Libre Uruguay
+                      - MCO -- Mercado Libre Colombia
+                      - MPE -- Mercado Libre Perú
                   shipments:
                     type: object
                     description: Shipments information.
@@ -1495,6 +1511,7 @@ paths:
                             description: State name.
                           country_name:
                             type: Country name.
+                            description: Country name.
                   total_amount:
                     type: object
                     description: Total amount of the order.
@@ -1504,7 +1521,7 @@ paths:
                   statement_descriptor:
                     type: string
                     example: MERCADOPAGO
-                    description: The statement descriptor is a long text (up to 16 characters) that will be visualized in the payer´s credit card invoice to easily identify the purchase.
+                    description: The statement descriptor is a long text (up to 16 characters) that will be visualized in the payer´s credit card statement to easily identify the purchase.
         '400':
           description: Error
           content:
