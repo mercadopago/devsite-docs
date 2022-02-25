@@ -98,48 +98,48 @@ paths:
                       - 400--Bad-Request--invalid-site_id
         '401':
           description: Not found
-            content:
-              application/json:
-                schema:
-                  type: object
-                  properties:
-                    errorKey:
-                      type: string
-                      enum:
-                        - 401--Not-Found--invalid-token													
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 401--Not-Found--invalid-token													
         '403':
           description: Forbidden
-            content:
-              application/json:
-                schema:
-                  type: object
-                  properties:
-                    errorKey:
-                      type: string
-                      enum:
-                        - 403--Forbidden--authorization-the-caller-id-must-be-a-productive-user
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 403--Forbidden--authorization-the-caller-id-must-be-a-productive-user
         '404':
           description: Resource not found
-            content:
-              application/json:
-                schema:
-                  type: object
-                  properties:
-                    errorKey:
-                      type: string
-                      enum:
-                        - 404--Resource-Not-Found									 
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 404--Resource-Not-Found									 
         '500':
           description: Internal server error
-            content:
-              application/json:
-                schema:
-                  type: object
-                  properties:
-                    errorKey:
-                      type: string
-                      enum:
-                        - 500--Internal-Server-Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errorKey:
+                    type: string
+                    enum:
+                      - 500--Internal-Server-Error
   /test_user/search:
     get:
       tags:
