@@ -916,10 +916,10 @@ paths:
                   example: pending
                   description: Status
                   enum:
-                    - pending -- Subscription without a payment method
-                    - authorized -- Subscription with a valid payment method
-                    - paused -- Subscription with temporally discontinued collection of payments
-                    - cancelled -- Subscription terminated. This is an irreversible state.
+                    - pending -- Preapproval without a payment method
+                    - authorized -- Preapproval with a valid payment method
+                    - paused -- Preapproval with temporally discontinued collection of payments
+                    - cancelled -- Preapproval terminated. This is an irreversible state.
       responses:
         '200':
           description: Success
@@ -1094,10 +1094,10 @@ paths:
                     example: pending
                     description: Status
                     enum:
-                      - pending -- Subscription without a payment method.
-                      - authorized -- Subscription with a valid payment method.
-                      - paused -- Subscription with temporally discontinued collection of payments.
-                      - cancelled -- Subscription terminated. This is an irreversible state.
+                      - pending -- Preapproval without a payment method.
+                      - authorized -- Preapproval with a valid payment method.
+                      - paused -- Preapproval with temporally discontinued collection of payments.
+                      - cancelled -- Preapproval terminated. This is an irreversible state.
         '400':
           description: Error
           content:
@@ -1283,7 +1283,7 @@ paths:
                     example: "2022-07-20T15:59:52.581Z"
                   has_billing_day:
                     type: boolean
-                    description: Is subscription has or not billing day.
+                    description: Indicates if the subscription has a billing day or not.
                     example: false
                   billing_day:
                     type: number
@@ -1449,7 +1449,7 @@ paths:
                     example: 10
                   debit_date:
                     type: date
-                    description: Date on which we will tried to do the payment.
+                    description: Date on which we will try to make the payment.
                     example: "2022-01-01T11:12:25.892-04:00"
                   retry_attempt:
                     type: number
@@ -1616,7 +1616,7 @@ paths:
                           description: Type of invoice generated based on recurrence.
                           example: scheduled
                           enum:
-                            - scheduled -- Automatically generated and scheduled by the recurrence engine.
+                            - scheduled -- Automatically generated and scheduled by the recurrence engine
                         date_created:
                           type: string
                           description: Invoice creation date.
@@ -1655,7 +1655,7 @@ paths:
                           example: 10
                         debit_date:
                           type: date
-                          description: Date on which we will tried to do the payment.
+                          description: Date on which we will try to make the payment.
                           example: "2022-01-01T11:12:25.892-04:00"
                         retry_attempt:
                           type: number
