@@ -144,7 +144,7 @@ paths:
                       $ref: '#/components/schemas/shipment_mode'
                     local_pickup:
                       type: boolean
-                      description: The payer have the option to pick up the shipment in your store (mode:me2 only).
+                      description: The payer has the option to pick up the shipment in your store (mode:me2 only).
                     dimensions:
                       type: string
                       description: Dimensions of the shipment in cm x cm x cm, gr (mode:me2 only)
@@ -1038,7 +1038,7 @@ paths:
                         description: Unit price of the item. This property is used together with the property quantity to determine the order cost.
                 payer:
                   type: object
-                  description: Buyer information, such as name, last name, e-mail, phone, personal identification, address, and registration date.
+                  description: Buyer´s information, such as name, last name, e-mail, phone, personal identification, address, and registration date.
                   properties:
                     name:
                       type: string
