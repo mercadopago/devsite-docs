@@ -1,150 +1,108 @@
-# Mercado Pago para Shopify
-
-
-## Introducción
-
-Las soluciones de Mercado Pago en Shopify te permitirán cobrar online en tu sitio web sin necesidad de tener conocimientos técnicos o de programación.
-
-> Mercado Pago es partner oficial de Shopify: le brindamos seguridad a todos los pagos realizados en tu tienda.
+# Shopify
 
 ----[mlb]----
-## Tipos de integración
 
-Elige la solución que mejor se adapte a tu negocio:
+[Shopify](https://es.shopify.com/?shpxid=7bb7e37d-61C2-4AC4-F4B7-F7598BB65345) és una plataforma de comercio electrónico que ofrece todas las funciones que necesitas para vender online.
 
-__Checkout transparente Mercado Pago__: *app extension* de Shopify que brinda una experiencia de compra rápida y segura, ¡sin salir de tu tienda! Puedes instalarla desde el [app store de Shopify](https://apps.shopify.com/).
+Al integrar Mercado Pago en tu Shopify, puedes recibir pagos a través de [Checkout Pro](https://www.mercadopago.com.br/developers/es/guides/online-payments/checkout-pro/introduction), donde se redirecciona al comprador a una página de Mercado Pago para completar el pago, o através de [Checkout Api](https://www.mercadopago.com.br/developers/es/guides/online-payments/checkout-api/introduction) que permite al comprador realizar todo el proceso de pago dentro del entorno de tu tienda.
 
-__Checkout redirect Mercado Pago__: configura Checkout Pro para que tus clientes finalicen su pago en nuestro sitio. Ya se encuentra pre-instalada en tu administrador de Shopify.
+Si lo desea, solo puede usar un tipo de pago en su tienda (Checkout Pro o Checkout Api), sin embargo, **para ofrecer el Checkout Api, es obligatorio integrar Checkout Pro primero**.
 
-## Checkout transparente
+Para realizar la integración, deberá seguir estos pasos:
 
-Instala la [app extension de nuestro checkout transparente](https://apps.shopify.com/checkout-transparente) en tu tienda de Shopify y deja todo en nuestras manos: tus clientes podrán completar sus datos en un paso y finalizar la compra de forma rápida y segura.
+1. [Instalar Checkout Pro](#bookmark_checkout_pro)
+2. [Instalar Checkout Api](#bookmark_checkout_api)
 
-> WARNING
->
-> Importante
->
-> Pronto, el checkout transparente de Mercado Pago para Shopify será deprecado para nuevos usuarios y reemplazado por un nuevo modelo, más personalizable y que permite ofrecer Pix. 
+## Checkout Pro
 
+La primera fase de la integración de Mercado Pago con Shopify es la instalación de Checkout Pro. En este modelo de checkout, el cliente es dirigido a una página de Mercado Pago donde deberás completar la información solicitada y concluir el pago.
 
-### ¿Qué puedo hacer con el checkout transparente de Mercado Pago?
-
-| Características | Descripción |
-| --- | --- |
-| Compras en un paso | Ofrece una experiencia de compra clara y rápida, desarrollada dentro de tu tienda y en la misma página. |
-| Experiencia mobile | Brinda un flujo de compra pensado y optimizado para dispositivos móviles. |
-| Envíos | Conecta el checkout con tu herramienta de envíos y ofrece entregas durante el proceso de compra. |
-| Ads tracking | Realiza un seguimiento detallado de tus campañas de marketing durante todo el proceso. |
-| Medios de pago | Acepta pagos con tarjeta de crédito y débito, efectivo y dinero en cuenta de Mercado Pago. |
-| Financiación | Vende en cuotas y ofrece las promociones disponibles. |
-| Pago como invitado | Permite que tus clientes paguen sin necesidad de tener cuenta en Mercado Pago. |
-| Descuentos | Ofrece promociones a tus clientes creando cupones y descuentos automáticos. |
-
-
-### ¿Cómo instalar el checkout transparente?
-
-Instala Mercado Pago para Shopify de forma automática siguiendo estos pasos desde el app store de Shopify:
-
-1. Ingresa al sitio [https://apps.shopify.com/](https://apps.shopify.com/) desde tu navegador y logueate a tu cuenta. También podrás acceder desde la sección Apps de tu panel de Shopify.
-1. Busca “Checkout transparente de Mercado Pago” entre la oferta de apps.
-1. Haz clic en "Agregar app".
-1. Dirígete a la sección Apps de tu panel de administración.
-
-**¡Excelente! El checkout ya está instalado en tu tienda, solo debes activarlo para empezar a vender.**
-
-
-### ¿Cómo activarlo con mi cuenta de Mercado Pago?
-
-Conecta una cuenta de Mercado Pago a la app para capturar los cobros de tus ventas en Shopify. ¡Es fácil! Solo necesitas tener una cuenta vendedor en Mercado Pago y obtener las credenciales de prueba y producción. 
-
-Una vez instalado el checkout, sigue estos pasos:
-
-1. Crea una [cuenta vendedor](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-company?confirmation_url=https%3A%2F%2Fwww.mercadopago[FAKER][URL][DOMAIN]%2Fcomo-cobrar) en Mercado Pago si todavía no tienes una.
-1. Obtén las [credenciales]([FAKER][CREDENTIALS][URL]) **Public Key** y **Access Token**, y pégalas en los campos de Producción y Pruebas que encontrarás en la configuración de la app.
-1. Homologa la cuenta para [ir a Producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/goto-production) y recibir el dinero de tus ventas en Mercado Pago.
-
-**¡Listo! Con esta configuración podrás comenzar a vender y obtener los pagos que recibas en tu cuenta de Mercado Pago.**
-
-> WARNING
->
-> Importante
->
-> Las [credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/faqs/credentials) son las claves que te identifican de forma única dentro de Mercado Pago. Te permitirán simular pagos en un entorno de prueba y recibir pagos reales una vez que estés listo para ir a producción.
-
-
-### ¿Cómo probar el checkout?
-
-La app extension de Mercado Pago viene con el entorno de testeos activo por defecto para que puedas simular pagos en la tienda y verificar que todo funciona bien antes de empezar a recibir pagos reales de tus clientes. 
- 
-Aquí es donde entran en juego las credenciales de prueba que ingresaste en el módulo al momento de integrar Mercado Pago a tu tienda.
-
-Cuando hagas pruebas, revisa que el flujo de pagos funcione correctamente. 
-
-**¿Ves que todo va bien? Desactiva Pruebas y ve al modo Producción para recibir pagos reales.**
-
-
-### Ir a producción
-
-Para empezar a cobrar debes activar tus credenciales.
-
-> Consulta los [requisitos para salir a producción](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/api/goto-production) si tienes alguna duda con el proceso.
-
-Al activarlas, asegúrate que las credenciales de Producción ingresadas sean las de la cuenta que reciba el dinero de las ventas. 
-
-Activa el modo Producción solo cuando estés listo para vender y hayas puesto a prueba el checkout con pagos simulados en la fase de testeos. 
-
-**¡Listo! El checkout transparente de Mercado Pago está preparado para recibir cobros online.**
-
-------------
-
-
-## Checkout redirect Mercado Pago
-
-Configura nuestro módulo para finalizar la compra en el sitio de Mercado Pago durante el proceso de compra en tu tienda de Shopify.
-
-
-### ¿Qué puedo hacer con el gateway de pagos de Mercado Pago?
-
-| Características | Descripción |
-| --- | --- |
-| Interfaz Mercado Pago | ¡Nosotros nos encargamos! No tienes que preocuparte por la implementación y diseño de un checkout. |
-| Ads tracking | Realiza un seguimiento detallado de tus campañas de marketing y su conversión durante todo el proceso. |
-| Medios de pago | Acepta pagos con tarjeta de crédito y débito, efectivo y dinero en cuenta de Mercado Pago. |
-| Financiación | Vende en cuotas y ofrece las promociones disponibles. |
-| Pago como invitado | Permite que tus clientes paguen sin necesidad de tener cuenta en Mercado Pago. |
-| Descuentos | Utiliza cupones para ofrecer promociones a tus clientes. |
-
-
-### ¿Cómo configurar el módulo de Mercado Pago?
-
-Sigue estos pasos para procesar los pagos con Checkout Pro:
-
-1. En el panel de administración de Shopify, dirígete a la sección *Payments* dentro de *Settings*.
-1. En el box *Third-party providers*, busca y selecciona Mercado Pago.
-1. Obtén las [credenciales]([FAKER][CREDENTIALS][URL]) **Client id** e **Client secret**, y pégalas en los campos correspondientes.
-1. Elige los medios de pago que quieres ofrecerle a tus clientes.
-1. Asegúrate de seleccionar el modo Test para verificar que todo funcione correctamente antes de ir a producción.
-1. Activa el módulo para guardar los cambios.
-
-**¡Listo! Mercado Pago fue instalado y configurado. Una vez que hayas hecho pruebas, puedes venir a esta misma sección para desactivar el entorno de test y recibir pagos reales.**
+Si ya tiene Checkout Pro instalado, haga [clic aquí](#bookmark_checkout_api) y siga los pasos para instalar el Checkout Api.
 
 > NOTE
 >
-> Nota
+> Importante
 >
-> Consulta la documentación de [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payments/web-payment-checkout/introduction) para conocer mejor todas sus características y funcionalidades.
+> Checkout Pro de Mercado Pago se instala exclusivamente en **Producción**, es decir, ya permite el procesamiento de pagos reales. Esto significa que **no necesita configurar un modo de producción** para comenzar a recibir pagos realizados en su tienda.
 
+## Instalación
 
-### Mapeo de estados de pago
+Para instalar Checkout Pro en tu Shopify, sigue las instrucciones a continuación.
 
-El siguiente esquema representa la correlación entre los estados de un pago en Mercado Pago y el estado de la orden en Shopify.
+1. Acceda al **Panel de administración** de su tienda y haga clic en **Configuración > Pagos**.
+2. En **Proveedores de pago**, haga clic en **Seleccionar un proveedor**.
+3. Busque Mercado Pago en el espacio de búsqueda y haga clic en la opción disponible.
+4.  En _Client_id_ y _Client_secret_, ingrese sus credenciales de **Producción**. Para más detalles sobre cómo obtener esta información, vaya a la documentación de [Credenciales](https://www.mercadopago.com.br/developers/es/guides/resources/credentials).
+5. Seleccione las imágenes referentes a los medios de pago que desea mostrar en su tienda. Estas imágenes son sólo para fines ilustrativos y no implican la activación del método de pago seleccionado.
+6. En **Modo de prueba**, seleccione la opción **Habilita el modo de prueba** si desea mantener su tienda en un entorno de prueba antes de ponerla a disposición de sus clientes, sin embargo, si prefiere dejar su tienda habilitada para recibir ventas reales, mantenga el campo deshabilitado.
+7. Cuando termine de completar, haga clic en **Guardar**.
 
-| Estado del pago | Mercado Pago status | Shopify order status |
-| --- | --- | --- |
-| Aprobado | Approved | Completed |
-| Pendiente | Pending | Pending |
-| En proceso | In process | Pending |
-| En mediación | In mediation | Pending |
-| Cancelado | Cancelled | Failed |
-| Reembolsado | Refunded | Failed |
-| Rechazado | Rejected | Failed |
+[TXTSNIPPET][/guides/snippets/test-integration/shopify-cpf-config]
+
+Una vez que haya completado estos ajustes, por favor haga una compra de prueba para asegurar el correcto funcionamiento de lo checkout.
+
+### Pruebas de compras
+
+Las pruebas ayudan a garantizar que los pagos se procesan correctamente antes de permitir las ventas reales.
+
+Siga los pasos a continuación para realizar una compra de prueba en su tienda.
+
+1. Vaya a la página de inicio de su tienda y seleccione un producto para comprar.
+2. Haga clic en **Comprar** y continúe con su carrito.
+3. Ingrese un código postal para simular el envío y haga clic en **Continuar**.
+4. Complete los campos obligatorios y seleccione Mercado Pago como método de pago.
+5. Haga clic en Pagar.
+
+Si la prueba se ejecuta sin errores, significa que la instalación se realizó correctamente y su tienda está lista para vender.
+
+## Checkout Api
+
+> WARNING
+>
+> Importante
+>
+> La sección de integración de Checkout Api para Shopify está **disponible exclusivamente en inglés y portugués**. Para acceder a la documentación en inglés, [haga clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/official/shopify#bookmark_checkout_transparente) o, si lo prefiere, acceda a la versión en portugués [haciendo clic aquí](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/shopify#bookmark_checkout_transparente).
+
+------------
+
+----[mla, mlm, mlu, mpe, mco, mlc]----
+
+[Shopify](https://es.shopify.com/?shpxid=7bb7e37d-61C2-4AC4-F4B7-F7598BB65345) és una plataforma de comercio electrónico que ofrece todas las funciones que necesitas para vender online.
+
+Al integrar Mercado Pago en tu Shopify, puedes recibir pagos a través de [Checkout Pro](https://www.mercadopago.com.br/developers/es/guides/online-payments/checkout-pro/introduction), donde se redirecciona al comprador a una página de Mercado Pago para completar el pago.
+
+Para obtener más información sobre Checkout Pro y sus beneficios, [haga clic aquí](https://www.mercadopago.com.br/developers/es/guides/online-payments/checkout-pro/introduction) y acceda a nuestra documentación.
+
+## Checkout Pro
+
+Al instalar Checkout Pro, su cliente será dirigido a una página de Mercado Pago donde deberá completar la información solicitada y realizar el pago, es decir, la transacción se procesa y completa fuera del entorno de su tienda.
+
+Para instalar Checkout Pro, siga los pasos a continuación.
+
+> NOTE
+>
+> Importante
+>
+> Checkout Pro de Mercado Pago se instala exclusivamente en **Producción**, es decir, ya permite el procesamiento de pagos reales. Esto significa que **no necesita configurar un modo de producción** para comenzar a recibir pagos realizados en su tienda.
+
+## Instalación
+
+Para instalar Checkout Pro en tu Shopify, sigue las instrucciones a continuación.
+
+1. Acceda al **Panel de administración** de su tienda y haga clic en **Configuración > Pagos**.
+2. En **Proveedores de pago**, haga clic en **Seleccionar un proveedor**.
+3. Busque Mercado Pago en el espacio de búsqueda y haga clic en la opción disponible.
+4.  En _Client_id_ y _Client_secret_, ingrese sus credenciales de **Producción**. Para más detalles sobre cómo obtener esta información, vaya a la documentación de [Credenciales](https://www.mercadopago.com.br/developers/es/guides/resources/credentials).
+5. Seleccione las imágenes referentes a los medios de pago que desea mostrar en su tienda. Estas imágenes son sólo para fines ilustrativos y no implican la activación del método de pago seleccionado.
+6. En **Modo de prueba**, seleccione la opción **Habilita el modo de prueba** si desea mantener su tienda en un entorno de prueba antes de ponerla a disposición de sus clientes, sin embargo, si prefiere dejar su tienda habilitada para recibir ventas reales, mantenga el campo deshabilitado.
+7. Cuando termine de completar, haga clic en **Guardar**.
+
+[TXTSNIPPET][/guides/snippets/test-integration/shopify-cpf-config]
+
+Una vez que haya completado estos ajustes, por favor haga una compra de prueba para asegurar el correcto funcionamiento de lo checkout.
+
+### Pruebas de compras
+
+[TXTSNIPPET][/guides/snippets/test-integration/shopify-test-purchase]
+
+------------
