@@ -14,7 +14,7 @@ paths:
       parameters:
         - name: id
           in: path
-          description: Chargeback Id
+          description: Unique chargeback identifier
           required: true
           schema:
             type: string
@@ -29,26 +29,24 @@ paths:
                 properties:
                   id:
                     type: string
-                    description: Chargeback identifier
+                    description: Unique chargeback identifier
                   payments:
                     type: array
-                    description: List of payments ids associated to the case
+                    description: List of payments IDs associated to the case
                     items:
                       type: number
                   currency:
                     type: string
-                    description: Amount's currency
+                    description: Chergeback amount currency
                   amount:
                     type: number
-                    description: Chargeback's amount
+                    description: Chergeback amount
                   coverage_applied:
                     type: boolean
                     description: Whether the seller has been covered or not
                   coverage_elegible:
                     type: boolean
-                    description: >-
-                      Whether the chargeback complies with the conditions to be
-                      covered
+                    description: Indicates if the money returned to the buyer can be covered by Mercado Pago. It is only possible to continue with the rest of the steps if the chargeback can be covered.
                   documentation_required:
                     type: boolean
                     description: >-
@@ -75,7 +73,7 @@ paths:
                           description: Documentation's file type
                         url:
                           type: string
-                          description: Url to see the documentation file
+                          description: URL to see the documentation file
                         description:
                           type: string
                           description: Documentation's description
@@ -93,9 +91,7 @@ paths:
                     description: Chargeback's last modified date
                   live_mode:
                     type: boolean
-                    description: >-
-                      Whether the chargeback will be processed in sandbox or in
-                      production mode
+                    description: Whether the chargeback will be processed in sandbox or in production mode. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.
   /v1/payments/{id}/refunds:
     get:
       tags:
