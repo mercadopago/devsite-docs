@@ -36,7 +36,7 @@ paths:
                   example: test_user@testuser.com
                 card_token_id:
                   type: string
-                  description: Unique card token identifier. 
+                  description: Unique card token identifier 
                   example: e3ed6f098462036dd2cbabe314b9de2a
                 auto_recurring:
                   type: object
@@ -213,11 +213,11 @@ paths:
                   date_created:
                     type: string
                     example: "2022-01-01T11:12:25.892-04:00"
-                    description: Creation date.
+                    description: Creation date
                   last_modified:
                     type: string
                     example: "2022-01-01T11:12:25.892-04:00"
-                    description: Date of last modification.
+                    description: Date of last modification
                   status:
                     type: string
                     example: pending
@@ -653,7 +653,7 @@ paths:
                   application_id:
                     type: number
                     example: 1234567812345678
-                    description: Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account. Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account.
+                    description: Unique ID that identifies your application/integration. One of the keys in the pair that make up the credentials that identify an application/integration in your account.
                   collector_id:
                     type: number
                     example: 100200300
@@ -757,7 +757,7 @@ paths:
                   date_created:
                     type: string
                     example: "2022-01-01T11:12:25.892-04:00"
-                    description: Creation date.
+                    description: Creation date
                   last_modified:
                     type: string
                     example: "2022-01-01T11:12:25.892-04:00"
@@ -808,10 +808,10 @@ paths:
                     example: pending
                     description: Status
                     enum:
-                      - pending -- Preapproval without a payment method.
-                      - authorized -- Preapproval with a valid payment method.
-                      - paused -- Preapproval with temporally discontinued collection of payments.
-                      - cancelled -- Preapproval terminated. This is an irreversible state.
+                      - pending -- Preapproval without a payment method
+                      - authorized -- Preapproval with a valid payment method
+                      - paused -- Preapproval with temporally discontinued collection of payments
+                      - cancelled -- Preapproval terminated. This is an irreversible state
         '400':
           description: Error
           content:
@@ -1043,11 +1043,11 @@ paths:
                   date_created:
                     type: string
                     example: "2022-01-01T11:12:25.892-04:00"
-                    description: Creation date.
+                    description: Creation date
                   last_modified:
                     type: string
                     example: "2022-01-01T11:12:25.892-04:00"
-                    description: Date of last modification.
+                    description: Date of last modification
                   summarized:
                     type: object
                     description: Summary information on subscription invoices and charges
@@ -1094,10 +1094,10 @@ paths:
                     example: pending
                     description: Status
                     enum:
-                      - pending -- Preapproval without a payment method.
-                      - authorized -- Preapproval with a valid payment method.
-                      - paused -- Preapproval with temporally discontinued collection of payments.
-                      - cancelled -- Preapproval terminated. This is an irreversible state.
+                      - pending -- Preapproval without a payment method
+                      - authorized -- Preapproval with a valid payment method
+                      - paused -- Preapproval with temporally discontinued collection of payments
+                      - cancelled -- Preapproval terminated. This is an irreversible state
         '400':
           description: Error
           content:
@@ -1231,11 +1231,11 @@ paths:
                   date_created:
                     type: string
                     example: "2022-01-01T11:12:25.892-04:00"
-                    description: Creation date.
+                    description: Creation date
                   last_modified:
                     type: string
                     example: "2022-01-01T11:12:25.892-04:00"
-                    description: Date of last modification.
+                    description: Date of last modification
                   init_point:
                     type: string
                     example: https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c938084726fca480172750000000000
@@ -1410,7 +1410,7 @@ paths:
                     description: Type of invoice generated based on recurrence.
                     example: scheduled
                     enum:
-                      - scheduled -- Automatically generated and scheduled by the recurrence engine.
+                      - scheduled -- Automatically generated and scheduled by the recurrence engine
                   date_created:
                     type: string
                     description: Invoice creation date.
@@ -1484,15 +1484,15 @@ paths:
                         description: Payment status.
                         example: approved
                         enum:
-                          - pending -- The user has not yet completed the payment process.
-                          - approved -- The payment has been approved and accredited.
-                          - authorized -- The payment has been authorized but not captured yet.
-                          - in_process -- Payment is being reviewed.
-                          - in_mediation -- Users have initiated a dispute.
-                          - rejected -- Payment was rejected. The user may retry payment.
+                          - pending -- The user has not yet completed the payment process
+                          - approved -- The payment has been approved and accredited
+                          - authorized -- The payment has been authorized but not captured yet
+                          - in_process -- Payment is being reviewed
+                          - in_mediation -- Users have initiated a dispute
+                          - rejected -- Payment was rejected. The user may retry payment
                           - cancelled -- Payment was cancelled by one of the parties or because time for payment has expired
-                          - refunded -- Payment was refunded to the user.
-                          - charged_back -- Was made a chargeback in the buyer’s credit card.
+                          - refunded -- Payment was refunded to the user
+                          - charged_back -- Was made a chargeback in the buyer’s credit card
                       status_detail:
                         type: string
                         description: Payment status detail.
@@ -1690,15 +1690,15 @@ paths:
                               description: Payment status.
                               example: approved
                               enum:
-                                - pending -- The user has not yet completed the payment process.
-                                - approved -- The payment has been approved and accredited.
-                                - authorized -- The payment has been authorized but not captured yet.
-                                - in_process -- Payment is being reviewed.
-                                - in_mediation -- Users have initiated a dispute.
-                                - rejected -- Payment was rejected. The user may retry payment.
+                                - pending -- The user has not yet completed the payment process
+                                - approved -- The payment has been approved and accredited
+                                - authorized -- The payment has been authorized but not captured yet
+                                - in_process -- Payment is being reviewed
+                                - in_mediation -- Users have initiated a dispute
+                                - rejected -- Payment was rejected. The user may retry payment
                                 - cancelled -- Payment was cancelled by one of the parties or because time for payment has expired
-                                - refunded -- Payment was refunded to the user.
-                                - charged_back -- Was made a chargeback in the buyer’s credit card.
+                                - refunded -- Payment was refunded to the user
+                                - charged_back -- Was made a chargeback in the buyer’s credit card
                             status_detail:
                               type: string
                               description: Payment status detail.
@@ -1822,7 +1822,7 @@ paths:
                               - months -- Indicate a frequency in units of months
                           first_invoice_offset:
                             type: number
-                            description: Number of days to collect the first invoice.
+                            description: Number of days to collect the first invoice
                             example: 7
                       transaction_amount:
                         type: number
@@ -1879,11 +1879,11 @@ paths:
                   date_created:
                     type: string
                     example: "2022-01-01T11:12:25.892-04:00"
-                    description: Creation date.
+                    description: Creation date
                   last_modified:
                     type: string
                     example: "2022-01-01T11:12:25.892-04:00"
-                    description: Date of last modification.
+                    description: Date of last modification
                   status:
                     type: string
                     example: active
@@ -2172,8 +2172,8 @@ paths:
                     example: active
                     description: status
                     enum:
-                      - active -- Plan available to create subscription
-                      - cancelled -- Plan not available to create subscription  
+                      - active -- Plan available to create subscriptions
+                      - cancelled -- Plan not available to create subscriptions  
         '400':
           description: Bad request
           content:
@@ -2227,7 +2227,7 @@ paths:
       parameters:
         - name: status
           in: path
-          description: Specifies the status of the plan wants to get.
+          description: Specifies the status of the plan you want to get.
           schema:
             type: string
             example: active
@@ -2415,11 +2415,11 @@ paths:
                         date_created:
                           type: string
                           example: "2022-01-01T11:12:25.892-04:00"
-                          description: Creation date.
+                          description: Creation date
                         last_modified:
                           type: string
                           example: "2022-01-01T11:12:25.892-04:00"
-                          description: Date of last modification.
+                          description: Date of last modification
                         subscribed:
                           type: number
                           description: Number of customers subscribed to the plan.
@@ -2521,10 +2521,10 @@ paths:
             type: string
             example: authorized,cancelled,paused
             enum:
-              - pending -- Subscription without a payment method.
-              - authorized -- Subscription with a valid payment method.
-              - paused -- Subscription with temporally discontinued collection of payments.
-              - cancelled -- Subscription terminated. This is an irreversible state.
+              - pending -- Preapproval without a payment method.
+              - authorized -- Preapproval with a valid payment method.
+              - paused -- Preapproval with temporally discontinued collection of payments.
+              - cancelled -- Preapproval terminated. This is an irreversible state.
         - name: sort
           in: path
           description: Specifies the type of sorting selected to retrieve the subscriptions. You must indicate a field and a sort type with the following format field_name:sort_type.
@@ -2700,11 +2700,11 @@ paths:
                         date_created:
                           type: string
                           example: "2022-01-01T11:12:25.892-04:00"
-                          description: Creation date.
+                          description: Creation date
                         last_modified:
                           type: string
                           example: "2022-01-01T11:12:25.892-04:00"
-                          description: Date of last modification.
+                          description: Date of last modification
                         summarized:
                           type: object
                           description: Summary information on subscription invoices and charges
