@@ -262,6 +262,9 @@ paths:
                       values:
                         type: string
                         description: Configuration values according the track type.
+                metadata:
+                    type: object
+                    description: Valid JSON that can be added to the payment to save additional attributes.
       responses:
         '200':
           description: Success
@@ -489,6 +492,9 @@ paths:
                     example: >-
                       https://sandbox.mercadopago.com/mla/checkout/pay?pref_id=202809963-920c288b-4ebb-40be-966f-700250fa5370
                     description: Automatically generated URL to open the Checkout in sandbox mode. Real users are used here, but transactions are executed using test credentials.
+                  metadata:
+                    type: object
+                    description: Valid JSON that can be added to the payment to save additional attributes.
         '400':
           description: Error
           content:
@@ -1219,6 +1225,9 @@ paths:
                     id:
                       type: number
                       description: Differential pricing ID.
+                metadata:
+                    type: object
+                    description: Valid JSON that can be added to the payment to save additional attributes.
       responses:
         '200':
           description: success
