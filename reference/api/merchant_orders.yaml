@@ -1200,7 +1200,7 @@ paths:
                       email:
                         type: string
                         example: vendedor+329653108@adf12.com.br
-                        description: email associated with the collector´s Mercado Pago account
+                        description: Email associated with the collector´s Mercado Pago account
                       nickname:
                         type: string
                         example: TESTRPEHE21Q
@@ -1485,7 +1485,7 @@ paths:
                       email:
                         type: string
                         example: vendedor+329653108@adf12.com.br
-                        description: email associated with the collector´s Mercado Pago account
+                        description: Email associated with the collector´s Mercado Pago account
                       nickname:
                         type: string
                         example: TESTRPEHE21Q
