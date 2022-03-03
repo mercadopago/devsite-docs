@@ -313,7 +313,7 @@ paths:
                     description: Detail in which the Collection resulted
                     enum:
                       - Accredited -- credited payment.
-                      - pending_contingency -- o pagamento está sendo processado.
+                      - pending_contingency -- the payment is being processed.
                       - pending_review_manual -- the payment is under review to determine its approval or rejection.
                       - cc_rejected_bad_filled_date -- incorrect expiration date.
                       - cc_rejected_bad_filled_other -- incorrect card details.
@@ -885,7 +885,7 @@ paths:
                     description: Detail in which the Collection resulted
                     enum:
                       - Accredited -- credited payment.
-                      - pending_contingency -- o pagamento está sendo processado.
+                      - pending_contingency -- the payment is being processed.
                       - pending_review_manual -- the payment is under review to determine its approval or rejection.
                       - cc_rejected_bad_filled_date -- incorrect expiration date.
                       - cc_rejected_bad_filled_other -- incorrect card details.
@@ -1254,7 +1254,7 @@ paths:
                     description: Detail in which the Collection resulted
                     enum:
                       - Accredited -- credited payment.
-                      - pending_contingency -- o pagamento está sendo processado.
+                      - pending_contingency -- the payment is being processed.
                       - pending_review_manual -- the payment is under review to determine its approval or rejection.
                       - cc_rejected_bad_filled_date -- incorrect expiration date.
                       - cc_rejected_bad_filled_other -- incorrect card details.
@@ -1777,7 +1777,7 @@ paths:
                             description: Detail in which the Collection resulted
                             enum:
                               - Accredited -- credited payment.
-                              - pending_contingency -- o pagamento está sendo processado.
+                              - pending_contingency -- the payment is being processed.
                               - pending_review_manual -- the payment is under review to determine its approval or rejection.
                               - cc_rejected_bad_filled_date -- incorrect expiration date.
                               - cc_rejected_bad_filled_other -- incorrect card details.
