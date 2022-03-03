@@ -1,6 +1,6 @@
 ## Criar reembolso total
 
-Criar um reembolso total para um pagamento específico. 
+É possível criar um reembolso total utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Criar reembolso](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_payments_id_refunds/post). 
 
 [[[
 ```php
@@ -19,7 +19,7 @@ $refund->save();
 
 ## Criar reembolso parcial
 
-Criar um reembolso parcial para um pagamento específico. 
+É possível criar um reembolso parcial utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Criar reembolso](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_payments_id_refunds/post). 
 
 [[[
 ```php
@@ -38,7 +38,7 @@ $refund->save();
 
 ## Obter reembolso específico
 
-Consultar reembolso específico de determinado pagamento.
+É possível obter reembolsos específicos de determinados pagamentos utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Obter reembolso específico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_chargebacks_id/get).
 
 [[[
 ```php

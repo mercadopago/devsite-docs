@@ -1,6 +1,6 @@
 ## Crear pago
 
-Realiza la creación de un pago y agrega toda la información que necesites. Ten en cuenta de sumar el detalle del pago y los datos del pagador.
+Es posible crear y agregar información de pago utilizando el SDK a continuación. Para obtener detalles sobre los parámetros de la solicitud, consulte la API [Crear pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payments/_payments/post).
 
 [[[
 ```node

@@ -1,6 +1,6 @@
 ## Criar preferência
 
-Criar uma preferência com informações sobre um produto ou serviço e obter a URL necessária para iniciar o fluxo de pagamento.
+É possível criar uma preferência utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Criar preferência](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/preferences/_checkout_preferences/post).
 
 [[[
 ```php

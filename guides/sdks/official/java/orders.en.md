@@ -1,7 +1,6 @@
 ## Create order 
 
-Generate an order to associate it with the payment preference and obtain the necessary URL to start the payment flow.
-
+You can create an order to associate it with the payment preference and get the URL needed to start the payment flow by using the SDK below. For details of the request parameters, access the [Create order](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/merchant_orders/_merchant_orders/post) API.
 
 [[[
 ```java
@@ -40,7 +39,7 @@ client.create(createRequest);
 
 ## Search orders
 
-Find all the information of the orders generated through specific filters or a specific date range.
+You can find all information for orders created through specific filters or by a specific date range through the SDK below. For details of the request parameters, access the [Search orders](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/merchant_orders/_merchant_orders_search/get) API.
 
 
 [[[
@@ -65,7 +64,7 @@ client.search(searchRequest);
 
 ## Get order
 
-Check the payment information for a product or service with the ID of the order you want.
+You can get all payment information for a product or service with the order ID of your choice through the SDK below. For details of the request parameters, access the [Get Order](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/merchant_orders/_merchant_orders_id/get) API.
 
 [[[
 ```java
@@ -79,7 +78,7 @@ client.get(orderId);
 
 ## Update order
 
-Atualizar os dados de um pagamento. Indique o ID do pedido e envie as informações que você deseja atualizar.
+You can update the details of a payment by indicating the order ID and submitting the information you update using the SDK below. For details of the request parameters, access the [Update Order](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/merchant_orders/_merchant_orders_id/put) API.
 
 [[[
 ```java

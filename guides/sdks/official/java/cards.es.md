@@ -1,6 +1,6 @@
 ## Guardar tarjeta
 
-Almacena de manera segura en nuestro servidores la referencia de la tarjeta utilizada por el cliente en el pago para evitar volver a pedir todos los datos en futuras transacciones.
+Es posible guardar de forma segura la referencia a una tarjeta utilizada por el cliente en el pago en nuestros servidores a través del SDK a continuación. Para obtener detalles sobre los parámetros de la solicitud, consulte la API [Guardar tarjeta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/cards/_customers_customer_id_cards/post).
 
 [[[
 ```java
@@ -19,7 +19,7 @@ client.create(customerId, request);
 
 ## Obtener tarjetas de un cliente
 
-Consulta el listado de tarjetas almacenadas de un cliente para poder mostrarlas al momento de hacer un pago.
+Es posible obtener los datos de la tarjeta de un determinado cliente a través de su ID de cliente utilizando el SDK a continuación. Para obtener detalles sobre los parámetros de solicitud, consulte la API [Obtener tarjetas de un cliente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/cards/_customers_customer_id_cards/get).
 
 [[[
 ```java
@@ -33,7 +33,7 @@ client.listAll(customerId);
 
 ## Obtener tarjeta
 
-Consulta la información de referencia de una tarjeta guardada asociada a un cliente.
+Puede consultar la información de referencia de una tarjeta almacenada asociada con un cliente utilizando el SDK a continuación. Para obtener detalles sobre los parámetros de la solicitud, consulte la API [Obtener tarjeta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/cards/_customers_customer_id_cards_id/get).
 
 [[[
 ```java
@@ -48,7 +48,7 @@ client.get(customerId, cardId);
 
 ## Eliminar tarjeta
 
-Elimina los datos de una tarjeta asociada a un cliente siempre que lo necesites.
+Puede eliminar una tarjeta asociada con el cliente siempre que sea necesario utilizando el SDK a continuación. Para obtener detalles sobre los parámetros de la solicitud, consulta la API [Eliminar tarjeta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/cards/_customers_customer_id_cards_id/delete).
 
 
 [[[

@@ -1,6 +1,6 @@
 ## Create preference
 
-Generate a preference with the information of a product or service and obtain the necessary URL to start the payment flow.
+It is possible to create Preferences using the SDK below. For details on request parameters, check the [Create preferences](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/preferences/_checkout_preferences/post) API.
 
 [[[
 ```ruby

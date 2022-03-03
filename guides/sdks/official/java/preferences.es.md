@@ -1,6 +1,6 @@
 ## Crear preferencia
 
-Crea una preferencia con la información de un producto o servicio y obtén la URL necesaria para iniciar el flujo de pago.
+Puede crear una preferencia usando el SDK a continuación. Para obtener detalles sobre los parámetros de la solicitud, consulte la API [Crear preferencia](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/preferences/_checkout_preferences/post).
 
 [[[
 ```java
@@ -33,7 +33,7 @@ client.create(request);
 
 ## Buscar preferencias
 
-Encuentra toda la información de las preferencias generadas a través de filtros específicos o por un rango de fechas determinado.
+Puede encontrar toda la información de preferencias generada a través de filtros específicos o por un rango de fechas específico utilizando el SDK a continuación. Para detalles de los parámetros de la solicitud, acceda a la API [Buscar preferencias](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/preferences/_checkout_preferences_search/get).
 
 [[[
 ```java
@@ -55,7 +55,7 @@ client.search(searchRequest);
 
 ## Obtener preferencia
 
-Consulta toda la información de pago de un producto o servicio con el ID de la preferencia que quieras.
+Puede obtener toda la información de pago de un producto o servicio con el ID de preferencia deseado utilizando el SDK a continuación. Para obtener detalles sobre los parámetros de la solicitud, acceda a la API [Obtener preferencia](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/preferences/_checkout_preferences_id/get).
 
 [[[
 ```java
@@ -69,7 +69,7 @@ client.get(preferenceId);
 
 ## Actualizar preferencia
 
-Renueva los datos de una preferencia de pago. Indica el ID de la preferencia y envía los parámetros con la información que quieras actualizar.
+Puede actualizar los detalles de una preferencia de pago utilizando el ID de preferencia. Para detalles de los parámetros de la solicitud, acceda a la API [Actualizar preferencia](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/preferences/_checkout_preferences_id/put).
 
 
 [[[

@@ -1,6 +1,6 @@
 ## Criar preferência
 
-Criar uma preferência com informações sobre um produto ou serviço e obter a URL necessária para iniciar o fluxo de pagamento.
+É possível criar uma preferência utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Criar preferência](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/preferences/_checkout_preferences/post).
 
 [[[
 ```java
@@ -33,7 +33,7 @@ client.create(request);
 
 ## Pesquisar preferências
 
-Encontre todas as informações das preferências geradas através de filtros específicos ou por uma faixa de datas específica.
+É possível encontrar todas as informações das preferências geradas através de filtros específicos ou por uma faixa de datas específica utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, acesse a API [Pesquisar preferências](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/preferences/_checkout_preferences_search/get).
 
 [[[
 ```java
@@ -55,7 +55,7 @@ client.search(searchRequest);
 
 ## Obter preferência
 
-Veja todas as informações de pagamento de um produto ou serviço com a identificação da preferência desejada.
+É possível obter todas as informações de pagamento de um produto ou serviço com a identificação da preferência desejada utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, acesse a API [Obter preferência](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/preferences/_checkout_preferences_id/get).
 
 [[[
 ```java
@@ -69,7 +69,7 @@ client.get(preferenceId);
 
 ## Atualizar preferência
 
-Atualizar os detalhes de uma preferência de pagamento. Digite o ID da preferência e envie as informações que você deseja atualizar.
+É possível atualizar os detalhes de uma preferência de pagamento através do ID da preferência. Para detalhamento dos parâmetros de requisição, acesse a API [Atualizar preferência](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/preferences/_checkout_preferences_id/put).
 
 
 [[[

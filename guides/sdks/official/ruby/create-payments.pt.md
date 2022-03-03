@@ -1,6 +1,6 @@
 ## Criar pagamento
 
-Crie um pagamento e acrescente todas as informações que você precisa. Certifique-se de acrescentar os detalhes do pagamento e os detalhes do cliente.
+É possível criar e acrescentar informações de determinado pagamento utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Criar pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments/post).
 
 
 [[[

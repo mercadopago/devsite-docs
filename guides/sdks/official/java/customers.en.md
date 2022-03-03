@@ -1,6 +1,6 @@
 ## Create customer
 
-Create a customer with all its data and save the cards used to simplify the payment process.
+It is possible to create customers using the SDK below. For details on the request parameters, check the [Create customer](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/customers/_customers/post) API.
 
 [[[
 ```java
@@ -35,7 +35,7 @@ client.create(customerRequest);
 
 ## Search customers
 
-Find all customer information using specific filters.
+It is possible to search customers using the SDK below. For details on the request parameters, check the [Search customer](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/customers/_customers_search/get) API.
 
 [[[
 ```java
@@ -56,7 +56,7 @@ client.search(searchRequest);
 
 ## Update customer
 
-RRenew the data of a customer. Indicate the customer ID and send the parameters with the information you want to update.
+It is possible to update customers using the SDK below. For details on the request parameters, check the [Update customer](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/customers/_customers_id/put) API.
 
 [[[
 ```java
@@ -88,7 +88,7 @@ CustomerRequest customerRequest =
 
 ## Get customer
 
-Check all the information of a client created with the client ID of your choice.
+It is possible to get all the information of a customer from their identification using the SDK below. For details of the request parameters, access the API [Get Customer](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/customers/_customers_id/get)
 
 
 [[[

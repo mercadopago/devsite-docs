@@ -1,6 +1,6 @@
 ## Criar reembolso total
 
-Criar um reembolso total para um pagamento específico. 
+É possível criar um reembolso total utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Criar reembolso](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_payments_id_refunds/post). 
 
 [[[
 ```java
@@ -14,7 +14,7 @@ client.refund(paymentId, amount);
 
 ## Criar reembolso parcial
 
-Criar um reembolso parcial para um pagamento específico. 
+É possível criar um reembolso parcial utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Criar reembolso](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_payments_id_refunds/post).  
 
 [[[
 ```java
@@ -28,7 +28,7 @@ refund.save();
 
 ## Obter reembolso específico
 
-Consultar reembolso específico de determinado pagamento.
+É possível obter reembolsos específicos de determinados pagamentos utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Obter reembolso específico](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_payments_id_refunds_refund_id/get).
 
 [[[
 ```java
@@ -42,7 +42,7 @@ client.get(paymentId, refundId);
 
 ## Obter lista de reembolso
 
-Consultar todos os reembolsos para um pagamento específico.
+É possível consultar todos os reembolsos para um pagamento específico utilizando o SDK abaixo. Para detalhes dos parâmetros de requisição, acesse a API [Obter lista de reembolso](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_payments_id_refunds/get).
 
 [[[
 ```java

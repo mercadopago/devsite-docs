@@ -1,6 +1,6 @@
 ## Criar pagamento
 
-Crie um pagamento e acrescente todas as informações que você precisa. Certifique-se de acrescentar os detalhes do pagamento e os detalhes do cliente.
+É possível criar e acrescentar informações de determinado pagamento utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Criar pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments/post).
 
 [[[
 ```java
@@ -63,7 +63,7 @@ client.create(createRequest);
 
 ## Pesquisar pagamentos
 
-Pesquisa e retorna pagamentos efetuados nos últimos doze meses a partir da data de pesquisa.
+É possível pesquisar pagamentos efetuados nos últimos doze meses a partir da data de pesquisa utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, acesse a API [Pesquisar pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_search/get).
 
 [[[
 ```java
@@ -84,7 +84,7 @@ client.search(searchRequest);
 
 ## Obter pagamento
 
-Consulte todas as informações de um pagamento através do ID de pagamento.
+É possível consultar todas as informações de um pagamento através do ID de pagamento utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, acesse a API [Obter pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get).
 
 [[[
 ```java
@@ -98,7 +98,7 @@ client.get(paymentId);
 
 ## Atualizar pagamento
 
-Altera os dados de um pagamento quando necessário. Indique a identificação do pagamento e envie os parâmetros com as informações que você deseja atualizar.
+É possível alterar os dados de determinado pagamento enviando os parâmetros com as informações que você deseja atualizar através do SDK abaixo. Para detalhamento dos parâmetros de requisição, acesse a API [Atualizar pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/put).
 
 [[[
 ```java

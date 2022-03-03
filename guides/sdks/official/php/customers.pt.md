@@ -1,6 +1,6 @@
-## Criar cliente
+## Criar clientes
 
-Crie um cliente com todos os seus detalhes para que você possa salvar os cartões que eles usam e simplificar o processo de pagamento.
+É possível criar clientes utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Criar Cliente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/customers/_customers/post).
 
 [[[
 ```php
@@ -27,7 +27,7 @@ Crie um cliente com todos os seus detalhes para que você possa salvar os cartõ
 
 ## Pesquisar clientes
 
-Encontre todas as informações do cliente através de filtros específicos.
+É possível pesquisar clientes utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Pesquisar Clientes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/customers/_customers_search/get).
 
 [[[
 
@@ -48,7 +48,7 @@ Encontre todas as informações do cliente através de filtros específicos.
 
 ## Atualizar cliente
 
-Atualize os dados de um cliente. Indique o ID do cliente e envie as informações que você deseja atualizar.
+É possível atualizar clientes utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Atualizar clientes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/customers/_customers_id/put).
 
 [[[
 ```php

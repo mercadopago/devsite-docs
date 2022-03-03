@@ -1,6 +1,6 @@
 ## Criar reembolso total
 
-Criar um reembolso total para um pagamento específico. 
+É possível criar um reembolso total utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Criar reembolso](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_payments_id_refunds/post).  
 
 [[[
 ```dotnet
@@ -13,7 +13,7 @@ client.Refund(payment_id);
 
 ## Criar reembolso parcial
 
-Criar um reembolso parcial para um pagamento específico. 
+É possível criar um reembolso parcial utilizando o SDK abaixo. Para detalhamento dos parâmetros de requisição, verifique a API [Criar reembolso](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_payments_id_refunds/post).  
 
 [[[
 ```dotnet

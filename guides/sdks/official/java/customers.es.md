@@ -1,6 +1,6 @@
 ## Crear cliente
 
-Realiza la creación de un cliente con todos sus datos para poder guardar las tarjetas que utilice y simplificar el proceso de pago.
+Es posible crear clientes utilizando lo SDK a continuación. Para obtener detalles sobre los parámetros de solicitud, consulte la API [Crear Cliente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/customers/_customers/post).
 
 [[[
 ```java
@@ -35,7 +35,7 @@ client.create(customerRequest);
 
 ## Buscar clientes
 
-Encuentra toda la información de los clientes a través de filtros específicos.
+Es posible buscar clientes utilizando lo SDK a continuación. Para obtener detalles sobre los parámetros de solicitud, consulte la API [Buscar en Clientes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/customers/_customers_search/get).
 
 [[[
 ```java
@@ -56,7 +56,7 @@ client.search(searchRequest);
 
 ## Actualizar cliente
 
-Renueva los datos de un cliente. Indica el ID del cliente y envía los parámetros con la información que quieras actualizar.
+Es posible actualizar clientes utilizando lo SDK a continuación. Para obtener detalles sobre los parámetros de solicitud, consulte la API [Actualizar Cliente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/customers/_customers_id/put).
 
 [[[
 ```java
@@ -88,7 +88,7 @@ CustomerRequest customerRequest =
 
 ## Obtener cliente
 
-Consulta toda la información de un cliente creado con el ID del cliente que quieras.
+Es posible obtener toda la información de un cliente a partir de su identificación utilizando el SDK a continuación. Para detalles de los parámetros de la solicitud, acceda a la API [Obtener cliente](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/customers/_customers_id/get)
 
 [[[
 ```java

@@ -1,6 +1,6 @@
 ## Create full refund
 
-Create full refund for a specific payment. 
+You can create a full refund using the SDK below. For details on the request parameters, check the [Create refund](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/chargebacks/_payments_id_refunds/post) API. 
 
 [[[
 ```java
@@ -14,7 +14,7 @@ client.refund(paymentId, amount);
 
 ## Create partial refund
 
-Create a partial refund for a specific payment. 
+You can create a partial refund using the SDK below. For details on the request parameters, check the [Create refund](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/chargebacks/_payments_id_refunds/post) API. 
 
 [[[
 ```java
@@ -28,7 +28,7 @@ refund.save();
 
 ## Get specific refund
 
-Get a specific Refund from a specific payment.
+You can get a specific refund of certain payments using the SDKs below. For details on the request parameters, check the [Get specific refund](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/chargebacks/_payments_id_refunds_refund_id/get) API.
 
 [[[
 ```java
@@ -42,7 +42,7 @@ client.get(paymentId, refundId);
 
 ## Get refunds list
 
-Get all Refunds for a specific payment.
+You can get all refunds for a specific payment using the SDK below. For details of the request parameters, access the API [Get refunds list](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/chargebacks/_payments_id_refunds/get).
 
 [[[
 ```java
