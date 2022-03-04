@@ -43,7 +43,7 @@ paths:
                   id:
                     type: string
                     example: 41034141533
-                    description: Shipment ID of the Order.
+                    description: Shipment ID of the order.
                   type:
                     type: string
                     example: DELIVERY
@@ -58,11 +58,11 @@ paths:
                   createdAt:
                     type: string
                     example: "2022-02-16T21:20:15.227Z"
-                    description: Order creation time. (UTC date-time in ISO timestamp format).
+                    description: Order creation time (UTC date-time in ISO timestamp format).
                   orderTiming:
                     type: string
                     example: INSTANT
-                    description: Scheduled time to start preparing an order.By now, only the start immediately is implemented, and the value of this field will always be INSTANT.
+                    description: Scheduled time to start preparing an order. By now, only the start immediately is implemented, and the value of this field will always be INSTANT.
                   preparationStartDateTime: 
                     type: string
                     example: "2022-02-16T21:20:47.755Z"
