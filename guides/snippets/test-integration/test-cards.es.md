@@ -59,7 +59,7 @@
 
 ------------
 
-Para **probar distintos resultados de pago** con Checkout Pro, completa el estado deseado en el nombre del titular de la tarjeta:
+Para **probar distintos resultados de pago**, completa el estado deseado en el nombre del titular de la tarjeta:
 
 | Estado de pago | Descripción |
 | --- | --- |

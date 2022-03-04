@@ -22,14 +22,14 @@ Para generar el código de autorización, es preciso cumplir con los requisitos 
 >
 > Recuerda que utilizarás información sensible de tus vendedores. Asegúrate de guardarla de forma segura. No la utilices en la URL de autenticación y gestiona todo el proceso únicamente desde tu servidor.
  
-1. Edita tu aplicación para que contenga tu Redirect URL. Consulta [Editar aplicación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/dashboard/aplication).
+1. Edita tu aplicación para que contenga tu Redirect URL. Consulta [Editar aplicación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/dashboard/applications).
 2. Envie a URL de autenticación para o vendedor cuja conta você deseja vincular à sua com os seguintes campos:
 
    |Descripción|URL| 
    |---|---|
-   | URL de autenticación | https://auth.mercadopago.com.br/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com |
+   | URL de autenticación | https://auth.mercadopago.com/authorization?client_id=APP_ID&response_type=code&platform_id=mp&state=RANDOM_ID&redirect_uri=https://www.redirect-url.com |
  
-     * **client_id**: edita tu aplicación para que contenga tu Redirect  URL. Consulta [Editar aplicación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/dashboard/aplication).
+     * **client_id**: edita tu aplicación para que contenga tu Redirect  URL. Consulta [ID de aplicación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/dashboard/applications).
      * **state**: reemplaza el valor "RANDOM_ID" con un identificador que sea único para cada intento y que no incluya información confidencial para que puedas identificar de quién es el código recibido.
      * **redirect_uri**: agrega la URL informada en el campo Redirect URL de tu aplicación.
      <br/>
