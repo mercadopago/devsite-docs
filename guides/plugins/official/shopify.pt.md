@@ -6,7 +6,7 @@
 
 Ao integrar o **Mercado Pago** na sua Shopify, será possível receber pagamentos através do [Checkout Pro](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-pro/introduction), onde o comprador é direcionado para uma página do Mercado Pago para concluir o pagamento, ou do [Checkout Transparente](https://www.mercadopago.com.br/developers/pt/guides/online-payments/checkout-api/introduction) que permite ao comprador realizar todo o processo de pagamento dentro do ambiente da sua loja.
 
-Caso queira, é possível utilizar somente um tipo de checkout em sua loja (Checkout Pro ou Transparente), contudo, **para oferecer o Checkout Transparente, é obrigatório integrar o Checkout Pro primeiro**.
+Caso queira, é possível utilizar somente um tipo de checkout (Checkout Pro ou Transparente), contudo, **para oferecer o Checkout Transparente, é obrigatório integrar o Checkout Pro primeiro**.
 
 Para realizar a integração, você precisará seguir as seguintes etapas:
 
@@ -28,8 +28,8 @@ Caso você já tenha o Checkout Pro instalado, [clique aqui](#bookmark_checkout_
 
 ### Instalação
 
-Para instalar o Checkout Pro em sua Shopify, siga o passo a passo abaixo.
-
+Para instalar o Checkout Pro em sua loja Shopify, siga o passo a passo abaixo.
+ 
 1. Acesse o **Painel de Administração** da sua loja e clique em **Configurações > Pagamentos**.
 2. Em **Provedor de pagamento** clique em **Escolher provedor**.
 3. Busque por **Mercado Pago** no espaço de busca e clique na opção disponível.
@@ -38,9 +38,20 @@ Para instalar o Checkout Pro em sua Shopify, siga o passo a passo abaixo.
 6. Em **Modo teste**, selecione a opção **Habilite o modo de teste** caso queira manter sua loja em ambiente de teste antes de disponibilizá-la aos seus clientes, contudo, se preferir deixar sua loja habilitada para receber vendas reais, mantenha o campo desabilitado.
 7. Ao finalizar o preenchimento, clique em **Salvar alterações**.
 
-[TXTSNIPPET][/guides/snippets/test-integration/shopify-cpf-config]
+### Configuração
+ 
+Para garantir uma melhor experiência de compra e maior integração com os aplicativos Shopify, é importante personalizar informações específicas no checkout e na sua loja. Para isso, siga as etapas abaixo.
+ 
+1. Acesse o **Painel de Administração** da sua loja e clique em **Configurações > Checkout**.
+2. Em **Opções de Formulário**, marque o item **Nome da Empresa** como **obrigatório**.
+3. Volte para **Configurações** e clique em **Idiomas**.
+4. Na seção **Idioma Padrão**, clique em **Alterar Idiomas do Tema**.
+5. Selecione a opção Português e clique em salvar.
+6. Ainda na página de idiomas, utilize a barra de busca e procure pelo campo **Company**.
+7. Substitua todas as entradas de **Company label**, **Optional company label**, **Address company blank**, e **Address – Company** pelo texto **CPF/CNPJ**.
+8. Clique em **Salvar**.
 
-Ao concluir essas configurações, faça uma compra teste para garantir o funcionamento correto do checkout.
+Pronto, ao concluir essas etapas o checkout estará instalado e configurado. Agora, faça uma compra teste para garantir que todas as etapas foram feitas corretamente e o checkout está pronto para processar suas vendas.
 
 ### Teste de compras
 
@@ -60,21 +71,32 @@ O Checkout Transparente do Mercado Pago permite que todo o processo de compra ac
 
 Para instalar o Checkout Transparente em sua Shopify, siga o passo a passo abaixo.
 
-1. [Clique aqui](https://apps.shopify.com/checkout-transparente) para acessar a página de instalação do aplicativo Checkout Transparente do Mercado Pago.
+1. [Clique aqui](https://apps.shopify.com/checkout-transparente-mp) para acessar a página de instalação do aplicativo Checkout Transparente do Mercado Pago.
 2. No canto inferior direito da tela, clique em **Instalar app**.
 3. Na tela seguinte, você deverá inserir suas credenciais **Public key** e **Access token** para teste e para produção. Para saber como obter essas informações, [clique aqui](https://www.mercadopago.com.br/developers/pt/guides/resources/credentials) e acesse nossa documentação.
 4. Em **Como você quer operar**, selecione a opção **Quero testar minha loja**. Isso permitirá realizar testes para garantir o funcionamento do checkout.
 5. Clique em **Salvar alterações**.
 
-[TXTSNIPPET][/guides/snippets/test-integration/shopify-cpf-config]
-
-Ao finalizar essas configurações, passe para a próxima etapa e faça uma compra teste para garantir o funcionamento correto do checkout.
+### Configuração
+ 
+Para garantir uma melhor experiência de compra e maior integração com os aplicativos Shopify, é importante personalizar informações específicas no checkout e na sua loja. Para isso, siga as etapas abaixo.
+ 
+1. Acesse o **Painel de Administração** da sua loja e clique em **Configurações > Checkout**.
+2. Em **Opções de Formulário**, marque o item **Nome da Empresa** como **obrigatório**.
+3. Volte para **Configurações** e clique em **Idiomas**.
+4. Na seção **Idioma Padrão**, clique em **Alterar Idiomas do Tema**.
+5. Selecione a opção Português e clique em salvar.
+6. Ainda na página de idiomas, utilize a barra de busca e procure pelo campo **Company**.
+7. Substitua todas as entradas de **Company label**, **Optional company label**, **Address company blank**, e **Address – Company** pelo texto **CPF/CNPJ**.
+8. Clique em **Salvar**.
+ 
+Pronto, ao concluir essas etapas o checkout estará instalado e configurado. Agora, faça uma compra teste para garantir que todas as etapas foram feitas corretamente e o checkout está pronto para processar suas vendas.
 
 ### Teste de compras
 
 [TXTSNIPPET][/guides/snippets/test-integration/shopify-test-purchase]
 
-## Ativação do modo produção
+### Ativação do modo produção
 
 A ativação do modo produção permitirá que sua loja receba vendas reais. Para ativá-lo siga os passos abaixo.
 
@@ -119,9 +141,20 @@ Para instalar o Checkout Pro em sua Shopify, siga o passo a passo abaixo.
 6. Em **Modo teste**, selecione a opção **Habilite o modo de teste** caso queira manter sua loja em ambiente de teste antes de disponibilizá-la aos seus clientes, contudo, se preferir deixar sua loja habilitada para receber vendas reais, mantenha o campo desabilitado.
 7. Ao finalizar o preenchimento, clique em **Salvar alterações**.
 
-[TXTSNIPPET][/guides/snippets/test-integration/shopify-cpf-config]
-
-Ao concluir essas configurações, faça uma compra teste para garantir o funcionamento correto do checkout.
+### Configuração
+ 
+Para garantir uma melhor experiência de compra e maior integração com os aplicativos Shopify, é importante personalizar informações específicas no checkout e na sua loja. Para isso, siga as etapas abaixo.
+ 
+1. Acesse o **Painel de Administração** da sua loja e clique em **Configurações > Checkout**.
+2. Em **Opções de Formulário**, marque o item **Nome da Empresa** como **obrigatório**.
+3. Volte para **Configurações** e clique em **Idiomas**.
+4. Na seção **Idioma Padrão**, clique em **Alterar Idiomas do Tema**.
+5. Selecione a opção Português e clique em salvar.
+6. Ainda na página de idiomas, utilize a barra de busca e procure pelo campo **Company**.
+7. Substitua todas as entradas de **Company label**, **Optional company label**, **Address company blank**, e **Address – Company** pelo texto **CPF/CNPJ**.
+8. Clique em **Salvar**.
+ 
+Pronto, ao concluir essas etapas o checkout estará instalado e configurado. Agora,  faça uma compra teste para garantir que todas as etapas foram feitas corretamente e o checkout está pronto para processar suas vendas.
 
 ### Teste de compras
 
