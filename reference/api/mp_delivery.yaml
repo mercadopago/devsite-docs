@@ -49,8 +49,8 @@ paths:
                     example: DELIVERY
                     description: This field refers to the way in which the order will be delivered.
                     enum:
-                      - DELIVERY -- The restaurant will be responsible for delivering the order.
-                      - TAKEOUT -- The buyer will pick up the order from the restaurant.
+                      - DELIVERY -- the restaurant will be responsible for delivering the order.
+                      - TAKEOUT -- the buyer will pick up the order from the restaurant.
                   displayId:
                     type: string
                     example: "9129"
@@ -66,7 +66,7 @@ paths:
                   preparationStartDateTime: 
                     type: string
                     example: "2022-02-16T21:20:47.755Z"
-                    description: Value referring to the start of preparation of an order. For now, the value contained in this field will be the time when the order changed its state to ready_to_ship/ready_to_print. (UTC date-time in ISO timestamp format). 
+                    description: Value referring to the start of preparation of an order. For now, the value contained in this field will be the time when the order changed its state to ready_to_ship/ready_to_print. UTC date-time in ISO timestamp format. 
                   merchant:
                     type: object
                     description: Informations about the seller.
@@ -96,7 +96,7 @@ paths:
                         externalCode:
                           type: string
                           example: "1215451"
-                          description: External Code for an item which can be used by point of sale.
+                          description: External code for an item which can be used by point of sale.
                         unit: 
                           type: string
                           example: "UNIT"
@@ -122,27 +122,27 @@ paths:
                               name: 
                                 type: string
                                 example: "Soda"
-                                description: Name of the comeplemnt item.
+                                description: Name of the complement item.
                               externalCode:
                                 type: string
                                 example: "151545"
-                                description: External Code for an comeplemnt item which can be used by point of sale.
+                                description: External code for a complement item which can be used by a point of sale.
                               unit:
                                 type: string
                                 example: "UNIT"
-                                description: Measure unit of the comeplemnt item. By now, only the UNIT value is available
+                                description: Measure unit of the complement item. By now, only the UNIT value is available
                               quantity:
                                 type: number
                                 example: 2
                                 description: The quantity of the complement item.
                               unitPrice:
                                 type: object
-                                description: Unit price of a comeplement item.
+                                description: Unit price of a complement item.
                                 properties:
                                   value:
                                     type: number
                                     example: 100.0
-                                    description: Unit price of an complement item.
+                                    description: Unit price of a complement item.
                                   currency:
                                     type: string
                                     example: "ARS"
@@ -185,7 +185,7 @@ paths:
                             value:
                               type: number
                               example: 200.0
-                              description: Sum of the prices of the complements of an item
+                              description: Sum of the prices of the complements of an item.
                             currency: 
                               type: string
                               example: "ARS"
@@ -211,15 +211,15 @@ paths:
                         type:
                           type: string
                           example: "DELIVERY_FEE"
-                          description: Field that specifies the type of the fee. This field still only has the value DELIVERY_FEE. 
+                          description: Field that specifies the type of the fee. The only value currently available is DELIVERY_FEE. 
                           enum: 
-                            - DELIVERY_FEE -- Fee charged for shipping the product.
+                            - DELIVERY_FEE -- fee charged for shipping the product.
                         receivedBy:
                           type: string
                           example: "MERCHANT"
-                          description: Field that specifies who will receive the fee amount. This field still only has the value MERCHANT. 
+                          description: Field that specifies who will receive the fee amount. The only value currently available is MERCHANT. 
                           enum: 
-                            - MERCHANT -- The fee amount will be received by the merchant.
+                            - MERCHANT -- the fee amount that will be received by the merchant.
                         price: 
                           type: object
                           properties:
@@ -233,7 +233,7 @@ paths:
                               description: Currency related to price.
                   discounts:
                     type: array
-                    description: This field does not yet have properties, on the next updates, discount information will be added.
+                    description: This field has no properties yet. Discount information will be added here in coming updates.
                     items:
                       type: object
                   total:
@@ -302,7 +302,7 @@ paths:
                         example: 0
                       methods:
                         type: array
-                        description: Methods used on the payment.
+                        description: Payment methods used.
                         items:
                           type: object
                           properties:
@@ -315,13 +315,13 @@ paths:
                               description: Currency related to the payment.
                             type:
                               type: string
-                              description: Time when the payment was or will be made.By now, the only possible value for this field is PREPAID.
+                              description: Time when the payment was or will be made. By now, the only possible value for this field is PREPAID.
                               example: "PREPAID"
                             method:
                               type: string
                               description: Method used for payment.
                               enum:
-                                - DIGITAL_WALLET -- Amount paid using the Digital Wallet of Mercado Pago.
+                                - DIGITAL_WALLET -- amount paid using the Digital Wallet of Mercado Pago.
                               example: "DIGITAL_WALLET"
                   customer:
                     type: object
@@ -329,7 +329,7 @@ paths:
                     properties:
                       id:
                         type: string
-                        description: ID of the buyer user.
+                        description: User ID of the buyer.
                         example: "1071059933"
                       name:
                         type: string
@@ -340,21 +340,21 @@ paths:
                         properties:
                           number:
                             type: string
-                            description: Buyer's phone number.
+                            description: Buyer´s phone number.
                             example: "011 123456789"
                       documentNumber:
                         type: string
-                        description: User identification document number.
+                        description: Buyer´s ID number.
                         example: "2731234567894"
                   delivery:
                     type: object
-                    description: Information about the location that the order should be delivered.
+                    description: Information about the location where the order should be delivered.
                     properties:
                       deliveredBy:
                         type: string
                         description: Responsible for order delivery.
                         enum:
-                          - MERCHANT -- The restaurant is responsible for the order delivery.
+                          - MERCHANT -- the restaurant is responsible for the order delivery.
                         example: "MERCHANT"
                       deliveryAddress:
                         type: object
@@ -412,7 +412,7 @@ paths:
                         example: "2022-02-21T21:49:55Z"
                       deliveryDateTime:
                         type: string
-                        description: Delivery completion time. (UTC date-time in ISO timestamp format).
+                        description: Delivery completion time (UTC date-time in ISO timestamp format).
                         example: "2022-02-21T21:52:55Z"
                   extension:
                     type: object
@@ -421,22 +421,22 @@ paths:
                         type: string
                         description: Status of an order.
                         enum:
-                          - pending -- Order in creation.
-                          - handling -- Processing payment.
-                          - ready_to_ship -- Order created.
-                          - shipped -- Order sent for delivery.
-                          - not_delivered -- Order not delivered.
-                          - delivered -- Order delivered.
-                          - cancelled -- Order cancelled.
+                          - pending -- order in creation.
+                          - handling -- processing payment.
+                          - ready_to_ship -- order created.
+                          - shipped -- order sent for delivery.
+                          - not_delivered -- order not delivered.
+                          - delivered -- order delivered.
+                          - cancelled -- order cancelled.
                         example: "ready_to_ship"
                       substatus:
                         type: string
                         description: Substatus of an order, along with the status they define the current state of an order.
                         enum:
-                          - ready_to_print -- Order awaiting acceptance.
-                          - printed -- Order accepted.
-                          - out_for_delivery -- Order went out for delivery.
-                          - delivery_failed -- Delivery not completed.
+                          - ready_to_print -- order awaiting acceptance.
+                          - printed -- order accepted.
+                          - out_for_delivery -- order went out for delivery.
+                          - delivery_failed -- delivery not completed.
                         example: "printed"
                       store:
                         type: object
@@ -447,7 +447,7 @@ paths:
                             example: "44905357"
                           externalCode:
                             type: string
-                            description: A optional field that refeers to a external code that can be used on point of sale. External code can be setted by the Mercado Pago Delivery API.
+                            description: An optional field that refeers to a external code that can be used on a point of sale. This external code can be set by the Mercado Pago Delivery API.
                             example: "UNID01"
   /proximity-integration/shipments/{shipment_id}/accept:
     put:
@@ -1277,7 +1277,7 @@ paths:
                             close:
                               type: string
                               example: "15:00"
-                              description: Store closing time.
+                              description: Store closing time on that weekday.
                       tuesday:
                         type: array
                         description: List of store opening hours on that weekday.
