@@ -6,13 +6,6 @@ Para imprimí-lo, realize um GET enviando o `shipment_id` e o `access-token` (ge
 
 A impressão do comprovante pode ser realizada sempre, exceto quando o pedido estiver com [status cancelado ou enviado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/mp-delivery/get-order-data).
 
-[[[
-```response PDF
-
-![comprovante](/images/mp-delivery/comprovante.png)
-
-```
-]]]
 
 > NEXT_STEP_CARD_PT
 >

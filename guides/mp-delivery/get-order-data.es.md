@@ -11,6 +11,7 @@ Con el número `shipment_id` presente en el campo "recurso" de la notificación,
   * **Not_delivered**: el pedido no se entregó.
   * **Delivered**: pedido entregado.
   * **Cancelled**: pedido cancelado.
+  <br/>
 * **Substatus**: subestado en que se encuentra el pedido. El subestado se relaciona directamente con el estado.
   * **Pending > creating_route**: orden de ruta en creación.
   * **Handling > null**:  indicará el motivo por el cual el pedido está a la espera de su aceptación.
@@ -18,6 +19,7 @@ Con el número `shipment_id` presente en el campo "recurso" de la notificación,
   * **Ready_to_ship > printed**: pedido aceptado e impreso.
   * **Out_for_delivery**: el pedido salió para su entrega.
   * **Delivery_failed**: entrega no completada.
+  <br/>
 * **Orders**: datos del pedido.
 * **Items**: datos de los artículos del pedido.
 * **Payments**: detalles de pago.

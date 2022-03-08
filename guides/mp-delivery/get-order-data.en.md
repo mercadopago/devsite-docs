@@ -11,6 +11,7 @@ With the `shipment_id` number present in the "resource" field of the notificatio
   * **Not_delivered**: order wasn't delivered.
   * **Delivered**: order delivered.
   * **Cancelled**: order canceled.
+  <br/>
 * **Substatus**: substate in which the order is. The substate relates directly to the state.
   * **Pending > creating_route**: order route being created.
   * **Handling > null**: will indicate the reason why the order is waiting for its acceptance.
@@ -18,6 +19,7 @@ With the `shipment_id` number present in the "resource" field of the notificatio
   * **Ready_to_ship > printed**: order accepted and printed.
   * **Out_for_delivery**: order went out for delivery. 
   * **Delivery_failed**: delivery not completed.
+  <br/>
 * **Orders**: order data.
 * **Items**: order items data.
 * **Payments**: payment details.
