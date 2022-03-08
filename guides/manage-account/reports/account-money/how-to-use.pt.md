@@ -42,7 +42,7 @@ Observe como está composto o relatório de Dinheiro em conta neste exemplo para
 
 A versão padrão mostrará uma visualização estendida das colunas. O relatório final terá a maior quantidade de detalhes possível.
 
-Para transações do tipo PNF - Pagamento no Fluxo, acesse [Pagamentos no fluxo no relatório de Dinheiro disponível](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/extra/pnf-bank), onde você terá a explicação de como utilizar o relatório Dinheiro em Conta para planejar sua agenda de recebimento das cotas  a serem liberadas.
+Para transações do tipo PNF - Pagamento no Fluxo, acesse [Pagamentos no fluxo no relatório de dinheiro disponível](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/extra/pnf-bank) para mais informações sobre como utilizar o relatório **Dinheiro em conta** para planejar sua agenda de recebimento das cotas a serem liberadas.
 
 ### Próximos passos
 
