@@ -14,4 +14,4 @@ To be able to integrate Mercado Pago Delivery with your POS, you must meet the r
 >
 > Learn how to configure the integration with Mercado Pago Delivery.
 >
-> [Configuration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/mp-delivery/configuration)
+> [Configuration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/configuration)

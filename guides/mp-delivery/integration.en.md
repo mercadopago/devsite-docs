@@ -12,4 +12,4 @@ To configure the integration with Mercado Pago Delivery, follow the steps below.
 >
 > Learn how to manage orders with Mercado Pago Delivery.
 >
-> [Management](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/proximity-mp-delivery/order-management)
+> [Management](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/order-management)

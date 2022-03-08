@@ -12,5 +12,5 @@ Para configurar la integración con Mercado Pago Delivery, sigue los pasos a con
 >
 > Aprende a gestionar pedidos con Mercado Pago Delivery.
 >
-> [Administración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/proximity-mp-delivery/order-management)
+> [Administración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/order-management)
 

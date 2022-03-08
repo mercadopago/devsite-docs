@@ -21,4 +21,4 @@ Una vez integrado, las notificaciones de nuevos pedidos se envían al PDV/POS qu
 >
 > Conoce los requisitos previos para llevar a cabo la integración.
 >
-> [Requisitos previos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/mp-delivery/previous-requirements)
+> [Requisitos previos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/previous-requirements)

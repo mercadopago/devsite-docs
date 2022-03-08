@@ -14,4 +14,4 @@ Para poder realizar a integração do Mercado Pago Delivery com seu PDV/POS, é 
 >
 > Saiba como configurar a integração com o Mercado Pago Delivery.
 >
-> [Configuração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/mp-delivery/configuration)
+> [Configuração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/mp-delivery/configuration)

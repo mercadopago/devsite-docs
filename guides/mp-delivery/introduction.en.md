@@ -20,4 +20,4 @@ Once integrated, notifications of new orders are sent to the POS which consults 
 >
 > Learn about the prerequisites for performing the integration.
 >
-> [Prerequisites](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/mp-delivery/previous-requirements)
+> [Prerequisites](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/previous-requirements)
