@@ -32,7 +32,7 @@ Além disso, você pode usar o relatório para ver o histórico do seu dinheiro 
 
 ### Previsibilidade de Liberações
 
-Opcionalmente o relatório traz colunas com o agendamento das previsões de liberações de pagamentos possibilitando um melhor planejamento dos recebíveis.
+Opcionalmente, o relatório traz colunas com o agendamento das previsões de liberações de pagamentos, possibilitando um melhor planejamento dos recebíveis.
 
 
 > NOTE
