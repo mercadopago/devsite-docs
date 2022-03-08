@@ -44,7 +44,6 @@ A versão padrão mostrará uma visualização estendida das colunas. O relatór
 
 Para transações do tipo PNF - Pagamento no Fluxo, acesse [Pagamentos no fluxo no relatório de Dinheiro disponível](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/extra/pnf-bank), onde você terá a explicação de como utilizar o relatório Dinheiro em Conta para planejar sua agenda de recebimento das cotas  a serem liberadas.
 
-
 ### Próximos passos
 
 > LEFT_BUTTON_REQUIRED_PT
