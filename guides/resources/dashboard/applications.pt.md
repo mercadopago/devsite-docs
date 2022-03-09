@@ -21,7 +21,7 @@ A cada aplicação criada, um novo card contendo o nome, descrição e ID da apl
 ### Editar aplicação
 Você pode clicar no botão "Editar" para ver as configurações avançadas que incluem os dados da sua aplicação e o produto a ser integrado.
  
-* **Dados da sua aplicação**: esta seção define os dados básicos da aplicação e inclue:
+* **Dados da sua aplicação**: esta seção define os dados básicos da aplicação e inclui:
  
   * Nome da aplicação (limite de 50 caracteres).
   * Descrição da aplicação (limite de 150 caracteres).
