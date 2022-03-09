@@ -352,8 +352,8 @@ paths:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/subscriptions'
         - $ref: '#/tags/qr-code'
-      summary: Add AM to test user account
-      description: This endpoint handles http requests to add account_money to the test user account
+      summary: Add amount (account_money) to test user account
+      description: This endpoint handles http requests to add amount (account_money) to the test user account
       parameters:
         - name: access_token
           in: query
