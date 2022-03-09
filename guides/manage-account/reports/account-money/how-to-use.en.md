@@ -1,4 +1,3 @@
-
 # How to use the report?
 
 Once the report is ready and downloaded, you will have a file to review the spreadsheets or import into the reconciliation program you use.
@@ -35,7 +34,6 @@ And in the `SETTLEMENT_NET_AMOUNT` column you will find the real impact on your 
 ## Report example
 
 Note how the Account Money report is composed in this example to identify the operations and read your own reports:
-
 
 ![Reporte de dinero en cuenta Ejemplos Mercado Pago](/images/manage-account/reports/example-settlement-en.jpg)
 

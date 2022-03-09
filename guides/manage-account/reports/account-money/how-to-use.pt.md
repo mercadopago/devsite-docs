@@ -1,4 +1,3 @@
-
 # Como usar o relatório?
 
 Quando o relatório estiver pronto e baixado, você terá um arquivo pronto para consultar as planilhas de cálculo e importá-las para o programa que você usa.
@@ -25,7 +24,6 @@ O relatório está composto por diferentes tipos de transações que você pode 
 | *CHARGEBACK_SHIPPING* | <br/> Contestação de envios.<br/><br/> |
 | *DISPUTE_SHIPPING* | <br/> O envio está com reclamação.<br/><br/> |
 
-
 Na coluna `SETTLEMENT_NET_AMOUNT` está o impacto real sobre o dinheiro da sua conta.
 
 > NOTE
@@ -43,6 +41,7 @@ Observe como está composto o relatório de Dinheiro em conta neste exemplo para
 A versão padrão mostrará uma visualização estendida das colunas. O relatório final terá a maior quantidade de detalhes possível.
 
 <hr/>
+
 Para transações do tipo PNF - Pagamento no Fluxo, acesse [Pagamentos no fluxo no relatório de dinheiro disponível](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/extra/pnf-bank) para mais informações sobre como utilizar o relatório **Dinheiro em conta** para planejar sua agenda de recebimento das cotas a serem liberadas.
 
 ### Próximos passos
