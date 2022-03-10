@@ -56,6 +56,13 @@ tags:
       es: 'Checkout API'
     externalDocs: 
       url: '/guides/online-payments/checkout-api/introduction'
+  cash-out:
+    description:
+      pt: 'Saque'
+      en: 'Cashout'
+      es: 'Retiro'
+    externalDocs: 
+      url: '/guides/in-person-payments/qr-code/introduction'
   
 #------DEFAULT - ALL ARCHIVES - END------
 
