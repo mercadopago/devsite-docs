@@ -241,7 +241,7 @@ paths:
                   description: Marketplace`s fee charged by application owner. It is a fixed amount and its default value is 0 in local currency. This property can only be sent if a valid marketplace has been defined as well, otherwise the request will fail.
                 differential_pricing:
                   type: object
-                  description: Differential pricing configuration for this preference. The seller can have their own configuration regarding payment methods and installments, and it's in this parameter where they will include the numeric ID to indicate so. This value is used to apply custom payment methods. 
+                  description: Differential pricing configuration for this preference. The seller can have their own configuration regarding payment methods and installments, and it`s in this parameter where they will include the numeric ID to indicate so. This value is used to apply custom payment methods. 
                   properties:
                     id:
                       type: number
@@ -1220,7 +1220,7 @@ paths:
                   example: 0
                 differential_pricing:
                   type: object
-                  description: Differential pricing configuration for this preference. The seller can have their own configuration regarding payment methods and installments, and it's in this parameter where they will include the numeric ID to indicate so. This value is used to apply custom payment methods.
+                  description: Differential pricing configuration for this preference. The seller can have their own configuration regarding payment methods and installments, and it`s in this parameter where they will include the numeric ID to indicate so. This value is used to apply custom payment methods.
                   properties:
                     id:
                       type: number
