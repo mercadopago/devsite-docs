@@ -1,6 +1,6 @@
 # Mercado Pago Delivery
 
-Mercado Pago Delivery es una solución de entrega de comidas a pedido en la que el cliente ingresa a una lista de restaurantes registrados, selecciona su pedido y paga directamente desde la aplicación de Mercado Pago.
+Mercado Pago Delivery es una solución de entrega de comidas a pedido en la que el cliente ingresa a una lista de restaurantes registrados, selecciona su orden y paga directamente desde la aplicación de Mercado Pago.
 
 Puedes integrar el TPV/POS de tu restaurante con Mercado Pago Delivery para:
 
