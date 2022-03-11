@@ -203,7 +203,7 @@ Depois, do seu frontend, adicione o seguinte código para exibir o botão de pag
 <script>
 // Adicione as credenciais do SDK
 const mp = new MercadoPago('PUBLIC_KEY', {
-      locale: 'es-AR'
+      locale: 'es-BR'
 });
 
 const preferenceId = "<?php echo $preference->id; ?>"
@@ -214,7 +214,7 @@ mp.checkout({
       id: preferenceId
     },
     render: {
-      container: '.cho-container', // Indica onde o botão de pagamento será exibido
+      container: '.cho-container', // Indique o nome da class onde será exibido o botão de pagamento
       label: 'Pagar com Mercado Pago', // Muda o texto do botão de pagamento (opcional)
       type: 'wallet', // Aplica a marca do Mercado Pago ao botão
     }
