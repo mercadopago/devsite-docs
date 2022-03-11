@@ -7,7 +7,7 @@ Puedes integrar el TPV/POS de tu restaurante con Mercado Pago Delivery para:
 * Estar en la lista de restaurantes registrados.
 * Recibir y aceptar pedidos automáticamente.
 * Administrar fácilmente el inventario y las finanzas.
-* Cierrar el cajero de manera eficiente utilizando la solución de conciliación ya integrada, mostrando en detalle todas las transacciones financieras realizadas.
+* Cerrar la caja de manera eficiente utilizando la solución de conciliación ya integrada, mostrando en detalle todas las transacciones financieras realizadas.
 
 La integración del PDV con Mercado Pago Delivery se realiza a través de la herramienta Gestor de Pedidos a través de las APIs. 
 
