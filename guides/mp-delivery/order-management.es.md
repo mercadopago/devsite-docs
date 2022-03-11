@@ -11,7 +11,7 @@ Con `shipping_id` en la mano, puede:
 * Obtener datos de la orden.
 * Aceptar órdenes.
 * Imprimir el recibo de la orden.
-* Cancelar el pedido.
+* Cancelar la orden.
 
 > NEXT_STEP_CARD_ES
 >
