@@ -21,7 +21,7 @@ Con el número `shipment_id` presente en el campo "recurso" de la notificación,
   * **Delivery_failed**: entrega no completada.
   <br/>
 * **Orders**: datos la orden.
-* **Items**: datos de los artículos del pedido.
+* **Items**: datos de los artículos la orden.
 * **Payments**: detalles de pago.
 * **Stores**: datos de la tienda.
 
