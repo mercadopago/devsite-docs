@@ -4,7 +4,7 @@ Con el número `shipment_id` presente en el campo "recurso" de la notificación,
 
 * **Shipping**: datos de entrega.
 * **Status**: estado en el que se encuentra la orden.
-  * **Pending**: estado inicial de un pedido. Significa que el pedido se está creando y se manejará más adelante.
+  * **Pending**: estado inicial de una orden. Significa que la orden se está creando y se manejará más adelante.
   * **Handling**: el pedido está siendo ensamblado y esperando una respuesta del sistema, como la finalización del pago por parte del cliente.
   * **Ready_to_ship**: este estado tiene dos subestados que indican que un pedido se puede entregar (porque se ha recibido y se puede aceptar o porque se ha aceptado y se puede imprimir).
   * **Shipped**: pedido en camino.
