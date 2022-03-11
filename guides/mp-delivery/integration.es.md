@@ -10,7 +10,7 @@ Para configurar la integración con Mercado Pago Delivery, sigue los pasos a con
 >
 > Administración de órdenes
 >
-> Aprende a gestionar pedidos con Mercado Pago Delivery.
+> Aprende a gestionar órdenes con Mercado Pago Delivery.
 >
 > [Administración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/order-management)
 
