@@ -134,7 +134,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 ]
 ```
 
-> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference).
+> Obtenha mais informação nas [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payment_methods/_payment_methods/get).
 
 <br>
 <span></span>

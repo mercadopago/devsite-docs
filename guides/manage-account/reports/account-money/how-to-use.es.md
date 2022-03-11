@@ -1,4 +1,3 @@
-
 # ¿Cómo usar el reporte?
 
 Una vez listo y descargado el reporte, tendrás un archivo para consultar las planillas de cálculo o importar en el programa de conciliación que uses.
@@ -24,7 +23,6 @@ El reporte está compuesto por distintos tipo de transacciones que puedes ver en
 | *CHARGEBACK_SHIPPING* |<br/> Contracargo de envíos.<br/><br/> |
 | *DISPUTE_SHIPPING* |<br/> Envíos en reclamo.<br/><br/> |
 
-
 Y en la columna `SETTLEMENT_NET_AMOUNT` encontrarás el impacto real sobre tu dinero.
 
 > NOTE
@@ -36,7 +34,6 @@ Y en la columna `SETTLEMENT_NET_AMOUNT` encontrarás el impacto real sobre tu di
 ## Ejemplo de un reporte
 
 Observa cómo está compuesto el reporte de Todas las transacciones en este ejemplo para identificar las operaciones y leer tus propios reportes:
-
 
 ![Reporte de Todas las transacciones Ejemplos Mercado Pago](/images/manage-account/reports/example-settlement-es.png)
 

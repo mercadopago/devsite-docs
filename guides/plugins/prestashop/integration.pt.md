@@ -5,7 +5,7 @@ Para realizar a integração com o Mercado Pago, siga os procedimentos abaixo.
 1. No Painel Administrativo da sua loja na Prestashop, acesse o menu **Módulos e serviços**, localize o plugin do Mercado Pago e clique em **configurar**.
 2. Na tela de gerenciamento do plugin, preencha os campos solicitados de acordo com suas informações de negócio.
 3. No campo **Localização**, selecione o país de operação da sua conta do Mercado Pago.
-4. Na seção **Credenciais**, confirme se os campos estão devidamente preenchidos de acordo com as [credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) indicadas em seu seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel). 
+4. Na seção **Credenciais**, confirme se os campos estão devidamente preenchidos de acordo com as [credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) indicadas em seu seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/dashboard/introduction). 
 5. Em seguida, configure as informações de negócio necessárias para identificar sua loja.
  
 * **Nome da loja:** insira o nome da sua loja.
@@ -23,7 +23,7 @@ Para realizar a integração com o Mercado Pago, siga os procedimentos abaixo.
 * **Ativar o checkout:** selecione **Sim** para ativar a experiência do Mercado Pago no checkout da sua loja.
 * **Meios de pagamento:** escolha os meios de pagamento que deseja oferecer.
 * **Máximo de parcelas:** selecione o máximo de parcelas que deseja oferecer em sua loja.
-* **Parcelamento e juros:** [configure](https://www.mercadopago.com.br//costs-section#from-section=menu) a tarifa que será paga em cada compra e também ofereça parcelas sem juros para seus clientes.
+* **Parcelamento e juros:** [configure](https://www.mercadopago.[FAKER][URL][DOMAIN]/costs-section) a tarifa que será paga em cada compra e também ofereça parcelas sem juros para seus clientes.
 * **Voltar à loja:** selecione se deseja ou não que o cliente retorne automaticamente à sua loja após concluir o pagamento.
 * **Modal checkout:** defina se os clientes terão acesso ao formulário de pagamentos do Mercado Pago sem sair da sua loja.
 * **Modo binário:** ative quando não quiser deixar os pagamentos em estado pendente ou em revisão. Com o modo binário, os pagamentos serão aceitos ou recusados automaticamente.

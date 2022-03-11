@@ -55,7 +55,7 @@ Lastly, make sure you’ve received a status notification in your system. And it
 | --- | --- | --- |
 | **QR scan before creating the order**. A client scans a QR code before to making an order.| App shows a waiting screen. | Verify `fixed_amount` = **true** on the Point of Sale. |
 | **QR scanning**. User scans QR code after order is created.| App shows a checkout screen. | Verify amount displayed on checkout. |
-| **Approved payment**. User makes a successful payment. | Point of Sale system receives information about an approved payment.| Verify [notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn) were received. |
+| **Approved payment**. User makes a successful payment. | Point of Sale system receives information about an approved payment.| Verify [notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/introduction) were received. |
 | **Rejected payment**. User makes a rejected payment.| Point of Sale system receives information about the rejected payment and keeps waiting for the order to be paid.| `merchant_order` status must be **opened**. |
 | **Second payment attempt**. At first, the user performs a rejected payment and then executes an approved payment. | Point of sale system receives information about the rejected and approved payment later.| Don’t remove the order after a rejected payment.|
 | **Refunds**. These are performed from the Point of Sale.| Refunds impact in buyer account.| See [refunds](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds/#bookmark_refunds). |

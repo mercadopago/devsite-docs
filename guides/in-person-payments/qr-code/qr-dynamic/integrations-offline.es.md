@@ -101,9 +101,9 @@ Para validar el QR, solo necesitas [crear un usuario de prueba](https://www.merc
 
 ## Notificaciones
 
-Para obtener los datos del pago, es necesario configurar la URL de notificación en el [panel de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn). 
+Para obtener los datos del pago, es necesario configurar la URL de notificación en el [panel de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn/introduction). 
 
-Al tener la URL configurada, ya se pueden validar las órdenes como lo indica la [sección de Notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn).
+Al tener la URL configurada, ya se pueden validar las órdenes como lo indica la [sección de Notificaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/introduction).
 
 
 ## Comenzar a recibir pagos

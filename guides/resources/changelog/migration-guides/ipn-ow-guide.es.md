@@ -28,7 +28,7 @@ El JSON va a tener información básica del pago. Y si necesitas más informaci�
 
 ## ¿Cómo activar las notificaciones IPN?
 
-Desde tu cuenta de Mercado Pago, puedes [sumar notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn).
+Desde tu cuenta de Mercado Pago, puedes [sumar notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/notifications/ipn/introduction).
 
 > Tienes que usar la cuenta en la que recibes los pagos de los que quieres ser notificado.
 
@@ -60,7 +60,7 @@ También vas a recibir un JSON de esta forma:
 }
 ```
 
-> Puedes encontrar más información sobre cómo integrar las notificaciones en la [sección Notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn).
+> Puedes encontrar más información sobre cómo integrar las notificaciones en la [sección Notificaciones IPN](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/ipn/introduction).
 
 ## Si no quiero notificaciones IPN, ¿qué puedo hacer?
 

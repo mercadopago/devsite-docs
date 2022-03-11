@@ -85,7 +85,7 @@ La configuración de atributos de preferencia también te permite [obtener infor
 		{
 			"id": "item-ID-1234",
 			"title": "Title of what you are paying for. It will be displayed in the payment process.",
-			"currency_id": "CLP",
+			"currency_id": "COP",
 			"picture_url": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
 			"description": "Item description",
 			"category_id": "art", // Available categories at https://api.mercadopago.com/item_categories
@@ -980,7 +980,7 @@ Para obtener métricas comerciales, utiliza _headers_ en tu preferencia de pago,
 > 
 > Nota
 > 
-> Recuerda agregar el _header_ `integrator_id` a tus integraciones para recibir beneficios adicionales del programa. Puedes encontrar tu `integrator_id` en el [Developer Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/devpanel). 
+> Recuerda agregar el _header_ `integrator_id` a tus integraciones para recibir beneficios adicionales del programa. Puedes encontrar tu `integrator_id` en el developer [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/dashboard/introduction). 
 
 Por ejemplo:
 

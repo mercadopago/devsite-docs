@@ -1,0 +1,20 @@
+## Create preference
+
+It is possible to create Preferences using the SDK below. For details on request parameters, check the [Create preference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/preferences/_checkout_preferences/post) API.
+
+[[[
+```python
+preference_data = {
+    "title": "Blue shirt",
+    "quantity": 1,
+    "currency_id": "[FAKER][CURRENCY][ACRONYM]",
+    "unit_price": [FAKER][COMMERCE][PRICE],
+    "payer": {
+        "email": "john@yourdomain.com"
+    }
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
+```
+]]]

@@ -25,7 +25,7 @@
 
  With the payments without cvv, you can make recurring charges with Mercado Pago having the freedom to adapt the solution in the most optimal way for your business
  
- ## Create an aplication
+ ## Create an application
  
  To create an application you have to enter with your Mercado Pago account at: [https://applications.mercadopago.com/](https://applications.mercadopago.com/) To be able to operate payments without CVP, the application must be enabled for that purpose. These permits are assigned from Mercado Pago, so you must send us the APP ID obtained to make the corresponding configuration.
  
@@ -110,7 +110,7 @@ $payment = $mp->post("/v1/payments", $payment_data);
 
 ## Listen for notifications of payments
 
- Every time a payment is made and there is a novelty about the payment, Mercado Pago will send you a notification so you can update your systems. You can see the step by step in our section of [notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks)
+ Every time a payment is made and there is a novelty about the payment, Mercado Pago will send you a notification so you can update your systems. You can see the step by step in our section of [notifications](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/webhooks/webhooks)
  
  ## Retries
 

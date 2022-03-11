@@ -1,10 +1,4 @@
 # PrestaShop
-
-> WARNING
->
-> Proteja a sua integração!
->
-> Em outubro de 2022, versões do plugin PrestaShop anteriores a 4.3.0 serão descontinuadas. Mantenha sua loja sempre atualizada com a versão mais recente para não suspender transações e expor dados sensíveis.
  
 A [PrestaShop](https://www.prestashop.com/pt/) é uma plataforma de e-commerce com software de código aberto, que permite a qualquer usuário criar e desenvolver um site comercial. Como parceiros oficiais da PrestaShop, fornecemos maior segurança e eficiência à sua loja.
  

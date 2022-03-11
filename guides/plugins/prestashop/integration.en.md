@@ -5,7 +5,7 @@ To integrate with Mercado Pago, follow the procedures below.
 1. On the Admin Panel of your Prestashop store, access the **Modules and Services** menu, find the Mercado Pago plugin and click on **configure**.
 2. On the plugin management screen, fill in the required fields according to your business information.
 3. In the `Location` field, select the country of operation of your Mercado Pago account.
-4. In the **Credentials** section, confirm that the fields are properly filled in according to the [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) indicated in their [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/devpanel).  
+4. In the **Credentials** section, confirm that the fields are properly filled in according to the [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) indicated in their [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/introduction).  
 5. Next, set up the necessary business information to identify your store.
  
 * **Store Name:** enter your store name.
@@ -23,7 +23,7 @@ To integrate with Mercado Pago, follow the procedures below.
 * **Activate Checkout:** select **yes** to enable the Mercado Pago experience at your store's checkout.
 * **Payment methods:** choose the payment methods you want to offer.
 * **Max installments:** select the maximum installments you want to offer in your store.
-* **Installment and interest:** [configure](https://www.mercadopago.com.br/costs-section#from-section=menu) the rate that will be paid on each purchase and also offer interest-free installments for your customers.
+* **Installment and interest:** [configure](https://www.mercadopago.[FAKER][URL][DOMAIN]/costs-section) the rate that will be paid on each purchase and also offer interest-free installments for your customers.
 * **Return to the store:** select whether or not you want the customer to automatically return to your store after completing the payment.
 * **Modal checkout:** define if customers will have access to the Mercado Pago payment form without leaving your store.
 * **Binary mode:** enable when you don't want to leave payments in pending or review status. With binary mode, payments will be accepted or declined automatically.

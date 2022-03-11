@@ -26,7 +26,7 @@ Next, you will need to create an application to obtain the credentials. It's eas
 >
 > Note
 >
-> If you are going to operate on behalf of other sellers, you can manage the link safely by integrating [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/oauth).
+> If you are going to operate on behalf of other sellers, you can manage the link safely by integrating [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/oauth/introduction).
 
 ### Access your application credentials
 
@@ -90,7 +90,8 @@ Once you have linked your Point device to your Mercado Pago account, you must co
 
 To integrate your Point device with our API it is necessary to activate the point of sale (POS) operating mode. To achieve this, run the following command:
 
-``` curl --location --request PATCH 'https://api.mercadopago.com/point/integration-api/devices/{{device.id}}' \
+``` bash
+ curl --location --request PATCH 'https://api.mercadopago.com/point/integration-api/devices/{{device.id}}' \
 --header 'Authorization: Bearer ${ACCESS_TOKEN}' \
 --header 'Content-Type: application/json' \
 --data-raw '{

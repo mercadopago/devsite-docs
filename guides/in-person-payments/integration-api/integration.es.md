@@ -26,7 +26,7 @@ Luego, necesitarás crear una aplicación para obtener las credenciales. Es fác
 >
 > Nota
 >
-> Si vas a operar en nombre de otros vendedores, puedes gestionar la vinculación de manera segura integrando [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth).
+> Si vas a operar en nombre de otros vendedores, puedes gestionar la vinculación de manera segura integrando [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/introduction).
 
 ### Accede a las credenciales de tu aplicación
 
@@ -90,7 +90,8 @@ Una vez que hayas vinculado tu dispositivo Point a tu cuenta de Mercado Pago, de
 
 Para integrar tu dispositivo Point con nuestra API es necesario activar el modo operativo punto de venta (PDV). Para lograrlo, ejecuta el siguiente comando:
 
-``` curl --location --request PATCH 'https://api.mercadopago.com/point/integration-api/devices/{{device.id}}' \
+``` bash
+ curl --location --request PATCH 'https://api.mercadopago.com/point/integration-api/devices/{{device.id}}' \
 --header 'Authorization: Bearer ${ACCESS_TOKEN}' \
 --header 'Content-Type: application/json' \
 --data-raw '{

@@ -41,11 +41,6 @@ A continuación, detallamos los factores que influyen en lo rechazo de un pago:
 | Rechazos bancarios | Tarjetas con fecha de vencimiento, falta de límite, saldo insuficiente o inhabilitadas para compras online.| Ofrecer alternativas a otros medios y/o condiciones de pago.|
 | Prevención del fraude | El sistema antifraude de Mercado Pago protege tu negocio contra ataques maliciosos que pueden generar pérdidas.| Este tipo de rechazo es beneficioso para tu tienda. |
 
-Para obtener más información sobre las razones mencionadas anteriormente, visita estos artículos:
-
-* [Rechazos de pago](https://conteudo.mercadopago.com.br/entenda-como-funcionam-as-recusas-de-aprovacao-de-pagamentos-no-mercado-pago) 
-* [Manejar las denegaciones de pago](https://conteudo.mercadopago.com.br/como-lidar-com-as-recusas-de-pagamento-do-cartao-de-credito-no-seu-e-commerce)
-
 > NEXT_STEP_CARD_ES
 >
 > Preguntas frecuentes

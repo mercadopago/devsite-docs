@@ -4,7 +4,156 @@ Descubra tudo sobre as novas versões e atualizações das integrações do Merc
 
 ---
 
+## Fevereiro 2022
+
+### 14 de fevereiro
+
+> CHANGELOG
+>
+> Nova versão WooCommerce
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: WOOCOMMERCE
+
+Lançamos a nova versão 5.7.2 para WooCommerce.
+
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.7.2).
+
+> CHANGELOG
+>
+> Nova versão WooCommerce
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: WOOCOMMERCE
+
+Lançamos a nova versão 5.7.1 para WooCommerce.
+
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.7.1).
+
+> CHANGELOG
+>
+> Nova versão WooCommerce
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: WOOCOMMERCE
+
+Lançamos a nova versão 5.7.0 para WooCommerce.
+
+[Ir para a documentação de WooCommerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-woocommerce/releases/tag/v5.7.0).
+
+### 11 de fevereiro
+
+> CHANGELOG
+>
+> Sandbox: limparemos o histórico de pagamentos de teste
+>
+> NEWS: NOVIDADES
+>
+> PRODUCT: ALL
+
+A partir de **abril**, o histórico de anos anteriores dos pagamentos de teste em **modo Sandbox** será apagado e passaremos a trabalhar apenas com os dados de 2022. É importante salientar que isso não será válido para **pagamentos de teste realizados em ambiente de produção**.
+
+### 8 de Fevereiro
+
+> CHANGELOG
+>
+> Nova versão PrestaShop
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: PRESTASHOP
+
+Lançamos a nova versão 4.9.1 para PrestaShop.
+
+[Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.9.0)
+
+### 7 de fevereiro
+
+> CHANGELOG
+>
+> Nova versão PrestaShop
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: PRESTASHOP
+
+Lançamos a nova versão 4.9.0 para PrestaShop.
+
+[Ir para a documentação de PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/introduction)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-prestashop-7/releases/tag/v4.9.1)
+
+
 ## Janeiro 2022
+
+### 27 de janeiro
+
+> CHANGELOG
+>
+> Nova versão Magento 2
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: MAGENTO 2
+
+Lançamos a nova versão 3.14.2 para Magento 2.
+
+[Ir para a documentação de Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/official/magento-two)
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub o detalhe das [últimas atualizações produtivas](https://github.com/mercadopago/cart-magento2/releases/tag/v3.14.2).
+
+### 24 de janeiro
+
+> CHANGELOG
+>
+> Nova versão SDK PHP
+>
+> NEW_VERSION: NOVA VERSÃO
+>
+> PRODUCT: SDK PHP
+
+Lançamos a nova versão 1.12.4 e 2.4.5 do SDK PHP.
+
+> GIT
+>
+> GitHub
+>
+> Confira no GitHub os detalhes das [últimas atualizações produtivas](https://github.com/mercadopago/sdk-php/releases).
 
 ### 11 de janeiro
 
