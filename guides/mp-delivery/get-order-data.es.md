@@ -1,4 +1,4 @@
-# Obtener datos del pedido
+# Obtener datos de la orden
 
 Con el número `shipment_id` presente en el campo "recurso" de la notificación, es posible realizar un GET para consultar los datos del pedido cuya respuesta contiene la siguiente información.
 
