@@ -15,7 +15,7 @@ Con `shipping_id` en la mano, puede:
 
 > NEXT_STEP_CARD_ES
 >
-> Obtener datos del pedido
+> Obtener datos de la orden
 >
 > Conoce cómo obtener datos de órdenes con Mercado Pago Delivery.
 >
