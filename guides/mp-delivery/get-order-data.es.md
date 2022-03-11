@@ -29,6 +29,6 @@ Con el número `shipment_id` presente en el campo "recurso" de la notificación,
 >
 > Aceptar órdenes
 >
-> Conoce cómo aceptar pedidos con Mercado Pago Delivery.
+> Conoce cómo aceptar órdenes con Mercado Pago Delivery.
 >
 > [Aceptar pedidos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/accept-order)
