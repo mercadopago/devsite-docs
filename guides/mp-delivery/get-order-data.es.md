@@ -9,7 +9,7 @@ Con el número `shipment_id` presente en el campo "recurso" de la notificación,
   * **Ready_to_ship**: este estado tiene dos subestados que indican que un pedido se puede entregar (porque se ha recibido y se puede aceptar o porque se ha aceptado y se puede imprimir).
   * **Shipped**: orden en camino.
   * **Not_delivered**: el pedido no se entregó.
-  * **Delivered**: pedido entregado.
+  * **Delivered**: orden entregada.
   * **Cancelled**: pedido cancelado.
   <br/>
 * **Substatus**: subestado en que se encuentra el pedido. El subestado se relaciona directamente con el estado.
