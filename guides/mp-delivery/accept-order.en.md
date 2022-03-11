@@ -18,4 +18,4 @@ When accepting the order, the status will be changed and the new order status wi
 >
 > Learn how to print proof of orders with Mercado Pago Delivery.
 >
-> [Print order receipt](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/print-order)
+> [Print order receipt](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/print-order-receipt)
