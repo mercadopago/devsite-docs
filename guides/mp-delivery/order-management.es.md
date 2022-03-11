@@ -1,4 +1,4 @@
-# Administración de pedidos
+# Administración de órdenes
 
 La gestión de pedidos se realiza a través de API REST, con las que podrá realizar acciones en función del estado actual del pedido.
 
