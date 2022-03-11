@@ -13,7 +13,7 @@ La integración del PDV con Mercado Pago Delivery se realiza a través de la her
 
 El **Gestor de Pedidos** es una herramienta encargada de controlar todo el flujo de un pedido. Para acceder a él, en el [panel de usuario de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home) haz clic en **Delivery > Order Manager**. Es solo para restaurantes que no cuentan con un software de gestión integrado con Mercado Pago, ya que no es posible integrar el Gestor con otro software de gestión de pedidos.
 
-Una vez integrado, las notificaciones de nuevos pedidos se envían al PDV/POS que consulta los datos del pedido y lo acepta.
+Una vez integrado, las notificaciones de nuevas órdenes se envían al PDV/POS que consulta los datos de la orden y la acepta.
 
 > NEXT_STEP_CARD_ES
 >
