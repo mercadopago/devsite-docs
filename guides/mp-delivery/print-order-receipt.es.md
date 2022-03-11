@@ -1,4 +1,4 @@
-# Imprimir recibo de pedido
+# Imprimir recibo de orden
 
 Después de aceptar el pedido, podrá imprimir su recibo en **formato PDF**.
 
