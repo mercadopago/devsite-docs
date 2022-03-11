@@ -1,22 +1,22 @@
-# Administración de pedidos
+# Administración de órdenes
 
-La gestión de pedidos se realiza a través de API REST, con las que podrá realizar acciones en función del estado actual del pedido.
+La gestión de órdenes se realiza a través de API REST, con las que podrá realizar acciones en función del estado actual de la orden.
 
-Los cambios en el estado del pedido, desde el momento de la creación hasta la finalización de la entrega, se notificarán a través de un webhook que contiene el recurso y el `user_id` en su cuerpo.
+Los cambios en el estado de la orden, desde el momento de la creación hasta la finalización de la entrega, se notificarán a través de un webhook que contiene el recurso y el `user_id` en su body.
 
-El atributo resource devuelve el `shipment_id` que se utilizará para cualquier operación relacionada con el pedido y el atributo `user_id` devuelve el ID de usuario de la tienda que recibió el pedido.
+El atributo resource devuelve el `shipment_id` que se utilizará para cualquier operación relacionada con la orden y el atributo `user_id` devuelve el ID de usuario de la tienda que recibió la orden.
 
 Con `shipping_id` en la mano, puede:
 
-* Obtener datos del pedido.
-* Aceptar pedidos.
-* Imprime el recibo del pedido.
-* Cancelar el pedido.
+* Obtener datos de la orden.
+* Aceptar órdenes.
+* Imprimir el recibo de la orden.
+* Cancelar la orden.
 
 > NEXT_STEP_CARD_ES
 >
-> Obtener datos del pedido
+> Obtener datos de la orden
 >
-> Conoce cómo obtener datos de pedidos con Mercado Pago Delivery.
+> Conoce cómo obtener datos de órdenes con Mercado Pago Delivery.
 >
-> [Obtener datos del pedido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/get-order-data)
+> [Obtener datos de la orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/get-order-data)
