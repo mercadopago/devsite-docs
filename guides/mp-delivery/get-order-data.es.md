@@ -15,7 +15,7 @@ Con el número `shipment_id` presente en el campo "recurso" de la notificación,
 * **Substatus**: subestado en que se encuentra la orden. El subestado se relaciona directamente con el estado.
   * **Pending > creating_route**: orden de ruta en creación.
   * **Handling > null**:  indicará el motivo por el cual la orden está a la espera de su aceptación.
-  * **Ready_to_ship > ready_to_print**: esperando la aceptación del pedido.
+  * **Ready_to_ship > ready_to_print**: esperando la aceptación la orden.
   * **Ready_to_ship > printed**: pedido aceptado e impreso.
   * **Out_for_delivery**: el pedido salió para su entrega.
   * **Delivery_failed**: entrega no completada.
