@@ -10,7 +10,7 @@ Con el número `shipment_id` presente en el campo "recurso" de la notificación,
   * **Shipped**: orden en camino.
   * **Not_delivered**: el pedido no se entregó.
   * **Delivered**: orden entregada.
-  * **Cancelled**: pedido cancelado.
+  * **Cancelled**: orden cancelada.
   <br/>
 * **Substatus**: subestado en que se encuentra el pedido. El subestado se relaciona directamente con el estado.
   * **Pending > creating_route**: orden de ruta en creación.
