@@ -1,6 +1,6 @@
 # Administración de órdenes
 
-La gestión de pedidos se realiza a través de API REST, con las que podrá realizar acciones en función del estado actual del pedido.
+La gestión de órdenes se realiza a través de API REST, con las que podrá realizar acciones en función del estado actual de la orden.
 
 Los cambios en el estado del pedido, desde el momento de la creación hasta la finalización de la entrega, se notificarán a través de un webhook que contiene el recurso y el `user_id` en su cuerpo.
 
