@@ -18,4 +18,4 @@ Ao aceitar o pedido, o status será alterado e no response será indicado o novo
 >
 > Saiba como imprimir o comprovante dos pedidos com o Mercado Pago Delivery.
 >
-> [Imprimir comprovante do pedido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/mp-delivery/print-order)
+> [Imprimir comprovante do pedido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/mp-delivery/print-order-receipt)
