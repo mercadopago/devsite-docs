@@ -3,7 +3,7 @@
 Para configurar la integración con Mercado Pago Delivery, sigue los pasos a continuación.
 
 1. Crea la aplicación a través del Dashboard. Consulta [Tus aplicaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/dashboard/applications) para obtener instrucciones.
-2. Configura las notificaciones seleccionando la opción "Envíos". Consulte [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks/webhooks) para obtener instrucciones.
+2. Configura las notificaciones seleccionando la opción "Envíos". Consulta [Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/notifications/webhooks/webhooks) para obtener instrucciones.
 3. Utilice las API disponibles para gestionar los pedidos. Ver [Administración](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/proximity-mp-delivery/order-management).
 
 > NEXT_STEP_CARD_ES
