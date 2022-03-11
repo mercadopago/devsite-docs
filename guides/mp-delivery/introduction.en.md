@@ -4,7 +4,7 @@ Mercado Pago Delivery is an on-demand meal delivery solution in which the custom
 
 You can integrate your restaurant's POS with Mercado Pago Delivery to:
 * Be on the list of registered restaurants.
-Receive and accept orders automatically.
+* Receive and accept orders automatically.
 Easily manage inventory and finances.
 Close the cashier efficiently using the already integrated reconciliation solution, displaying in detail all the financial transactions carried out.
 
