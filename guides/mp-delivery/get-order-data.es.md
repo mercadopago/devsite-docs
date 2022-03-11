@@ -20,7 +20,7 @@ Con el número `shipment_id` presente en el campo "recurso" de la notificación,
   * **Out_for_delivery**: el pedido salió para su entrega.
   * **Delivery_failed**: entrega no completada.
   <br/>
-* **Orders**: datos del pedido.
+* **Orders**: datos la orden.
 * **Items**: datos de los artículos del pedido.
 * **Payments**: detalles de pago.
 * **Stores**: datos de la tienda.
