@@ -8,7 +8,7 @@ El atributo resource devuelve el `shipment_id` que se utilizará para cualquier 
 
 Con `shipping_id` en la mano, puede:
 
-* Obtener datos del pedido.
+* Obtener datos de la orden.
 * Aceptar pedidos.
 * Imprime el recibo del pedido.
 * Cancelar el pedido.
