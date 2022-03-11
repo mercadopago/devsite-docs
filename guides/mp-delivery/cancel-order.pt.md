@@ -10,4 +10,4 @@ Veja [Segurança](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guid
 >
 > Saiba como imprimir o comprovante dos pedidos com o Mercado Pago Delivery.
 >
-> [Imprimir comprovante do pedido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/mp-delivery/print-order)
+> [Imprimir comprovante do pedido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/mp-delivery/rint-order-receipt)
