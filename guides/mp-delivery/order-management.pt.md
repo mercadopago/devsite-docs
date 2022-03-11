@@ -19,4 +19,4 @@ Com o `shipment_id` em mãos, você consegue:
 >
 > Saiba como obter dados de pedidos com o Mercado Pago Delivery.
 >
-> [Obter dados do pedido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/mp-delivery/order-data)
+> [Obter dados do pedido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/mp-delivery/get-order-data)
