@@ -8,7 +8,7 @@ Para configurar la integración con Mercado Pago Delivery, sigue los pasos a con
 
 > NEXT_STEP_CARD_ES
 >
-> Administración de pedidos
+> Administración de órdenes
 >
 > Aprende a gestionar pedidos con Mercado Pago Delivery.
 >
