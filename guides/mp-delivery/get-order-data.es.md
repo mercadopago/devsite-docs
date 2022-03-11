@@ -12,7 +12,7 @@ Con el número `shipment_id` presente en el campo "recurso" de la notificación,
   * **Delivered**: orden entregada.
   * **Cancelled**: orden cancelada.
   <br/>
-* **Substatus**: subestado en que se encuentra el pedido. El subestado se relaciona directamente con el estado.
+* **Substatus**: subestado en que se encuentra la orden. El subestado se relaciona directamente con el estado.
   * **Pending > creating_route**: orden de ruta en creación.
   * **Handling > null**:  indicará el motivo por el cual la orden está a la espera de su aceptación.
   * **Ready_to_ship > ready_to_print**: esperando la aceptación del pedido.
