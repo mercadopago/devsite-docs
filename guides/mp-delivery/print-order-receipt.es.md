@@ -6,14 +6,6 @@ Para imprimirlo, realice un GET enviando el `shipment_id` y `access-token` (gene
 
 El recibo siempre se puede imprimir, excepto cuando el pedido tiene [estado cancelado o enviado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/get-order-data).
 
-[[[
-```response PDF
-
-![recibo](/images/mp-delivery/recibo.png)
-
-```
-]]]
-
 > NEXT_STEP_CARD_ES
 >
 > Cancelar pedido
