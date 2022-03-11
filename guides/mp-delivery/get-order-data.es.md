@@ -27,7 +27,7 @@ Con el número `shipment_id` presente en el campo "recurso" de la notificación,
 
 > NEXT_STEP_CARD_ES
 >
-> Aceptar pedidos
+> Aceptar órdenes
 >
 > Conoce cómo aceptar pedidos con Mercado Pago Delivery.
 >
