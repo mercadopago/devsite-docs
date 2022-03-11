@@ -17,7 +17,7 @@ Con el número `shipment_id` presente en el campo "recurso" de la notificación,
   * **Handling > null**:  indicará el motivo por el cual la orden está a la espera de su aceptación.
   * **Ready_to_ship > ready_to_print**: esperando la aceptación la orden.
   * **Ready_to_ship > printed**: orden aceptada e impresa.
-  * **Out_for_delivery**: el pedido salió para su entrega.
+  * **Out_for_delivery**: la orden salió para su entrega.
   * **Delivery_failed**: entrega no completada.
   <br/>
 * **Orders**: datos la orden.
