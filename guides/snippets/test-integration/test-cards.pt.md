@@ -1,3 +1,9 @@
+# Cartões de teste
+
+Você pode usar cartões de teste de métodos de pagamento locais de cada país, e simular diferentes respostas dos pagamentos, sem a necessidade de usar um cartão real.
+
+Para isso, utilize algum dos cartões que disponibilizamos a seguir, dependendo do seu país:
+
 ----[mla]----
 
 | Cartão | Número | Código de segurança | Data de vencimento |

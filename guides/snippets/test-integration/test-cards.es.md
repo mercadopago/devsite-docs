@@ -1,3 +1,9 @@
+# Tarjetas de prueba
+
+Puedes utilizar tarjetas de prueba de medios de pago locales de cada país, y simular las distintas respuestas de pagos, sin necesidad de utilizar una tarjeta real.
+
+Para eso, utiliza alguna de las tarjetas que te facilitamos a continuación, dependiendo de tu país:
+
 ----[mla]----
 
 | Tarjeta | Número | Código de seguridad | Fecha de vencimiento |

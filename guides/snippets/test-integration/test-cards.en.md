@@ -1,3 +1,9 @@
+# Test credit cards
+
+You can use test credit cards from local payment methods in each country, and simulate different payment responses, with no need to use a real card.
+
+To do this, use any of the cards we provide below, according to your country:
+
 ----[mla]----
 
 | Card | Number | CVV | Expiration Date |
