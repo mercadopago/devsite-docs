@@ -10,4 +10,4 @@ Check [Security](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guide
 >
 > Learn how to print proof of orders with Mercado Pago Delivery.
 >
-> [Print order receipt](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/print-order)
+> [Print order receipt](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/rint-order-receipt)
