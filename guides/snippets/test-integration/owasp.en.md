@@ -28,7 +28,7 @@ For its implementation, any programming technique that allows the efficient appl
 * Data type conversion with strict exception handling.
 * Minimum and maximum value range verification for numeric parameters and dates, minimum and maximum length verification for character strings.
 
-It is critical to ensure that any input validation performed on the client-side also should be performed on the server-side since they could be bypassed on the client-side by an attacker. 
+It is critical to ensure that any input validation performed on the client-side should also be performed on the server-side since they could be bypassed on the client-side by an attacker. 
 
 
 ## Server-Side Request Forgery (SSRF)
