@@ -104,7 +104,7 @@ X-meli-session-id: device_id
 <script src="https://www.mercadopago.com/v2/security.js" view="checkout" output="deviceId"></script>
 ````
 
-- If you want your own variable, you can add an HTML tag on your site with the identificator `id =" deviceId "` and the code will automatically assign the value `device_id`.
+- If you want your own variable, you can add an HTML tag on your site with the identificator `id ="deviceId"` and the code will automatically assign the value `device_id`.
 
 ```html
 <input type="hidden" id="deviceId">
