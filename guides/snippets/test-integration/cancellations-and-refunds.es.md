@@ -19,7 +19,7 @@ En esta documentación, encontrarás las instrucciones y los links de las APIs n
 
 Antes de cancelar una compra, se deben tener en cuenta los siguientes factores: 
 
-- **Status de pago**: Cancelaciones solo se pueden realizar si el estado de pago es Pending o In process. Estos estados se muestran en la respuesta a la llamada de la API de cancelación en los campos de, *Status* y *Status detail* respectivamente.
+- **Status de pago**: las cancelaciones solo se pueden realizar si el estado de pago es Pending o In process. Estos estados se muestran en la respuesta a la llamada de la API de cancelación en los campos de, *Status* y *Status detail* respectivamente.
 
 - **Fecha de vencimiento**: Un pago vence a los 30 días sin confirmación y la cancelación es automática. El status final de esta transacción aparecerá como *Cancelled* o *Expired*. Esta información se mostrará en la respuesta a la llamada de la API de cancelación, en los campos de, *Status* y *Status detail* respectivamente.
 
