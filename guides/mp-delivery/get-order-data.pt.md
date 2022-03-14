@@ -1,6 +1,6 @@
 # Obter dados do pedido
 
-Com o número do `shipment_id` presente no campo "resource" da notificação, é possível realizar um GET para consultar os dados do pedido cuja resposta contém as seguintes informações.
+Com o número do `shipment_id` presente no campo `resource` da notificação, é possível realizar um GET para consultar os dados do pedido cuja resposta contém as seguintes informações.
 
 * **Shipping**: dados da entrega.
 * **Status**: estado no qual o pedido se encontra.

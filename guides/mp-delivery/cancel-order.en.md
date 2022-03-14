@@ -4,10 +4,18 @@ To cancel a request that was accepted in the POS, perform a put sending the `shi
 
 Check [Security](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/oauth/introduction) for more information about OAuth.
 
+> NEXT_STEP_CARD_EN
+>
+> Store management
+>
+> Learn how to consult and manage informations of stores.
+>
+> [Store management](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/store-management)
+
+
+
+
+
 > PREV_STEP_CARD_EN
 >
-> Print order receipt
->
-> Learn how to print proof of orders with Mercado Pago Delivery.
->
-> [Print order receipt](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/print-order-receipt)
+

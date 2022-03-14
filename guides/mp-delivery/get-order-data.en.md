@@ -1,6 +1,6 @@
 # Get order data
 
-With the `shipment_id` number present in the "resource" field of the notification, it is possible to perform a GET to query the order data whose response contains the following information.
+With the `shipment_id` number present in the `resource` field of the notification, it is possible to perform a GET to query the order data whose response contains the following information.
 
 * **Shipping**: delivery data.
 * **Status**: current status of the order.
