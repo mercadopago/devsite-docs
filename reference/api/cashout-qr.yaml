@@ -11,7 +11,7 @@ paths:
         - $ref: '#/tags/cash-out'
         - $ref: '#/tags/qr-code'
       summary: Confirm cashout status
-      description: After complete a transaction fisically, inform the status of the money delivered (this endpoint works until 5 minutes after the transaction was done)
+      description: After complete a cashout transaction fisically, confirm the status of the money delivered. This endpoint works until 5 minutes after the transaction was done
       requestBody:
         content:
           application/json:
@@ -24,7 +24,7 @@ paths:
                   $ref: '#/components/schemas/status_detail'
                 description:
                   type: string
-                  description: Custom description of status
+                  description: Custom description of status.
                   example: connection lost
       responses:
         '200':
@@ -70,7 +70,7 @@ components:
   schemas:
     status:
       type: string
-      description: Status of the money, if the status is not confirmed cashout and payment (if applies) amount will be refunded to the payer.
+      description: Status of the money. If the status of cashout and payment (if applies) is not confirmed, the amount will be refunded to the payer.
       example: confirmed
       enum:
         - confirmed -- the money was delivered correctly to the payer.
@@ -81,10 +81,10 @@ components:
       description: Detail of the status.
       example: confirmed
       enum:
-        - internal_comunication_error -- some error occur in seller infraestructure(only for fail status).
+        - internal_comunication_error -- some error occur in seller infraestructure (only for fail status).
         - manually_cancelled -- cancelled manually for the cashier (only for cancelled status).
-        - confirmation_not_received -- the notification for this transaction was not received by seller(only for cancelled status).
-        - merchant_order_not_found -- merchant order asosiated to the transaction not found (only for cancelled status).
+        - confirmation_not_received -- the notification for this transaction was not received by seller (only for cancelled status).
+        - merchant_order_not_found -- merchant order associated to the transaction not found (only for cancelled status).
         - other -- other error (only for cancelled and fail status).
         - confirmed -- cashout confirmed (only for confirmed status).
     
