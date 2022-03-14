@@ -101,7 +101,7 @@ paths:
                   id:
                     type: string
                     example: 000000001-sT93QZFAsfxU9P5
-                    description: id
+                    description: Customer ID.
                   email:
                     type: string
                     example: jhon@doe.com
@@ -296,7 +296,7 @@ paths:
         - name: id
           in: path
           required: true
-          description: Customer's Id
+          description: Customer ID.
           schema:
             type: number
             example: 123123
@@ -389,7 +389,7 @@ paths:
                   id:
                     type: string
                     example: 000000001-sT93QZFAsfxU9P5
-                    description: id
+                    description: Customer ID.
                   email:
                     type: string
                     example: jhon@doe.com
@@ -576,7 +576,7 @@ paths:
         - name: id
           in: path
           required: true
-          description: Customer's Id
+          description: Customer ID.
           schema:
             type: number
             example: 123123
@@ -956,7 +956,7 @@ paths:
       parameters:
         - name: email
           in: query
-          description: The user e-mail for search
+          description: Customer's email.
           required: true
           schema:
             type: string
@@ -975,16 +975,16 @@ paths:
                       limit:
                         type: number
                         example: 10
-                        description: limit
+                        description: The maximum number of entries to return.
                       offset:
                         type: number
                         example: 0
-                        description: offset
+                        description: The offset of the first item in the collection to return.
                       total:
                         type: number
                         example: 1
-                        description: total
-                    description: paging
+                        description: The total number of items in the collection.
+                    description: Information for pagination of search results.
                   results:
                     type: array
                     items:
@@ -1059,7 +1059,7 @@ paths:
                         id:
                           type: string
                           example: 123456789-jxOV430go9fx2e
-                          description: id
+                          description: Customer ID.
                         identification:
                           type: object
                           properties:
@@ -1100,7 +1100,7 @@ paths:
                               description: Phone number.
                               example: '987654321'
                           description: Customer phone's information.
-                    description: results
+                    description: The page of items. This will be an empty array if there are no results.
         '400':
           description: Error
           content:
