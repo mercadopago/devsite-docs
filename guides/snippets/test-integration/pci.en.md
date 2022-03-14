@@ -7,7 +7,7 @@ In addition, for Mercado Pago to be able to operate with credit and debit cards,
 ## Definition and context
 If you have ever stored, processed or transmitted card data in your company, you have probably heard of PCI. From Mercado Pago we want to help you and simplify the task of understanding these regulations and the different associated responsibilities.
 
-As a Service Provider, we must meet regulatory and security responsibilities vis-à-vis card brands and acquirers, but even so, security throughout the payment process is the obligation of both parties. Merchants and / or e-commerce platforms that are integrated with payment processors such as Mercado Pago must meet minimum security requirements to mitigate risks of fraud and information leakage, securing user data.
+As a Service Provider, we must meet regulatory and security responsibilities vis-à-vis card brands and acquirers, but even so, security throughout the payment process is the obligation of both parties. Merchants and/or e-commerce platforms that are integrated with payment processors such as Mercado Pago must meet minimum security requirements to mitigate risks of fraud and information leakage, securing user data.
 
 PCI DSS (Payment Card Industry Data Security Standard) is an international security standard that must be met by all entities that store, process or transmit card data.
 
