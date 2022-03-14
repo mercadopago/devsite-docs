@@ -11,11 +11,3 @@ Check [Security](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guide
 > Learn how to consult and manage informations of stores.
 >
 > [Store management](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/store-management)
-
-
-
-
-
-> PREV_STEP_CARD_EN
->
-

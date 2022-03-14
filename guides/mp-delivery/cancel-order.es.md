@@ -11,9 +11,3 @@ Consulta [Seguridad](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/g
 > Aprende a consultar y gestionar informaciónes de sus tiendas.
 >
 > [Administración de tiendas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/store-management)
-
-
-
-> PREV_STEP_CARD_ES
->
-
