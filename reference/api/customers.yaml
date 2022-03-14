@@ -80,7 +80,7 @@ paths:
                       description: Street number.
                 date_registered:
                   type: Date(ISO_8601)
-                  example: '2000-01-18'
+                  example: '2021-10-20T11:37:30.000-04:00'
                   description: Customer's registration date.
                 description:
                   type: String
@@ -162,7 +162,7 @@ paths:
                   date_registered:
                     type: string
                     format: nullable
-                    description: date_registered
+                    description: Customer's registration date.
                   description:
                     type: string
                     example: This is my description
@@ -368,7 +368,7 @@ paths:
                       description: Street number.
                 date_registered:
                   type: Date(ISO_8601)
-                  example: '2000-01-18'
+                  example: '22021-10-20T11:37:30.000-04:00'
                   description: Customer's registration date.
                 description:
                   type: String
@@ -449,7 +449,7 @@ paths:
                   date_registered:
                     type: string
                     format: nullable
-                    description: date_registered
+                    description: Customer's registration date.
                   description:
                     type: string
                     example: This is my description
@@ -1034,7 +1034,7 @@ paths:
                         date_registered:
                           type: string
                           format: nullable
-                          description: date_registered
+                          description: Customer's registration date.
                         default_address:
                           type: string
                           format: nullable
