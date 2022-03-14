@@ -61,7 +61,7 @@ Mercado Pago is responsible for ensuring the cardholder data information once th
 
 Mercado Pago considerably simplifies the burden of compliance with this regulation for organizations that adopt Checkout Pro since they use a field that originates directly from our servers in a secure area for the entry of card data from the client. In this way, most of the PCI DSS requirements fall on Mercado Pago and it will considerably reduce its efforts in security controls.
 
-To comply with PCI DSS, demonstrate your compliance, and in turn protect your customers' card details, it is important to use secure payment integrations like Checkou Pro to ensure that cardholder data does not reach your servers.
+To comply with PCI DSS, demonstrate your compliance, and in turn protect your customers' card details, it is important to use secure payment integrations like Checkout Pro to ensure that cardholder data does not reach your servers.
 
 As we saw in the previous sections, for level 1, it is necessary to perform an audit with an external consultant. On the other hand, for levels 2 to 4, there are different types of SAQ depending on which payment integration method you use. We Recommend that you complete the corresponding SAQ according to the type of Checkout chosen due to the obligations imposed by the PCI regulations. 
 
