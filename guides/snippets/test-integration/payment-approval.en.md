@@ -4,7 +4,7 @@
 
 A payment can be rejected due to an error with a payment method or non-compliance with security requirements. I.e, if a card lacks enough funds, a data fails to upload properly or unusual account movements are detected.
 
-In order to avoid any revenue loss with your business and to enhance your customers experience, we work with agents from each payment method and operate with the latest tools for fraud prevention and payment growth.
+In order to avoid any revenue loss with your business and to enhance your customers' experience, we work with agents from each payment method and operate with the latest tools for fraud prevention and payment growth.
 
 ## Bank rejected payments
 
