@@ -5,8 +5,8 @@ Com este simulador, você poderá criar uma intenção de pagamento e processá-
 
 O simulador possui dois modos de uso:
 
-* **PDV Mode**: simula a integração de um sistema completo (dispositivo e PDV) com nossa API de Integrações. Acesse o [Simulador PDV Mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/?ignoreapidoc=true)
-* **Device Mode**: simula um dispositivo de ponto virtual para que você possa testar sua integração a partir de HTTP requests. Acesse o [Simulador Device Mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/device?ignoreapidoc=true).
+* **PDV Mode**: Simula a integração de um sistema completo (dispositivo e PDV) com nossa API de Integrações. Acesse o [Simulador PDV Mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/?ignoreapidoc=true).
+* **Device Mode**: Simula um dispositivo de ponto virtual para que você possa testar sua integração a partir de HTTP requests. Acesse o [Simulador Device Mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/device?ignoreapidoc=true).
 
 ## Como usar o simulador
 
@@ -14,9 +14,16 @@ O simulador possui dois modos de uso:
 
 Ao usar o simulador pela primeira vez, você precisará inserir suas chaves e selecionar um dos dispositivos disponíveis.
 
-Para usar o **PDV Mode**, você precisará de sua chave Access Token. Se você estiver usando um Access Token de teste, o simulador atribuirá a você um dispositivo virtual.
+* **PDV Mode:** Você deve inserir seu Token de Acesso de teste e o simulador atribuirá a você um dispositivo virtual.
 
-Ao usar o **Device Mode**, você deve inserir seu Access Token e sua Device ID obtida quando você [lista seus dispositivos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/integration-api/create-payment-intent#bookmark_criar_intenção_de_pagamento)
+* **Device Mode:** Você deve inserir seu token de acesso de teste e seu ID de dispositivo obtido em [lista seus dispositivos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/integration-api/create-payment-intent#https://www.mercadopago.com.br/developers/pt/guides/in-person-payments/integration-api/create-payment-intent#bookmark_obtenha_a_lista_de_seus_dispositivos_dispon%C3%ADveis).
+
+> WARNING
+>
+> Importante
+>
+> Lembre-se que para usar o simulador você deve configurar um Token de Acesso de teste(`TEST-XXXXX-XXXXX-XXXXXXX`) e você pode obtê-lo em suas [integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications), opção **Minhas Credenciais / Credenciais de teste**.
+
 
 ### 2. Simule uma intenção de pagamento
 
@@ -41,6 +48,11 @@ Se a etapa anterior foi bem-sucedida, você pode clicar na animação do cartão
 
 Se você executou as etapas de configuração para as [notificações de Webhooks](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/in-person-payments/integration-api/integration), é hora de você revisar seus registros. Lá você verá que a notificação do status da transação foi enviada.
 
+> NOTE
+>
+> Nota
+>
+> O simulador permitirá que você faça pagamentos de teste, desta forma, você pode consultar todas as informações correspondentes na seção [API de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get).
 
 > PREV_STEP_CARD_PT
 >
