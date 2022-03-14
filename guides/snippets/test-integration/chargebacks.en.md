@@ -121,7 +121,7 @@ You will get the following information:
 
 > NOTE
 >
-> Nota
+> Note
 >
 > Find more information in [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/chargebacks/_chargebacks_id/get).
 
