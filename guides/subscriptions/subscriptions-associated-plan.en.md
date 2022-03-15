@@ -13,7 +13,7 @@ As soon as you run the API, the plan is created, and you will then have access t
 
 ### Create subscription
 
-Once you create a plan, you can create a subscription. Subscription is a payer authorization for recurring charges with a defined payment method (credit card, for example). When subscribing to a product/service, the customer agrees to be periodically charged a certain amount for the defined period.
+Once you create a plan, you can create a subscription. A subscription is a payer authorization for recurring charges with a defined payment method (credit card, for example). When subscribing to a product/service, the customer agrees to be periodically charged a certain amount for the defined period.
 
 To create a subscription, have the `preapproval_plan_id` at hand, access the [/preapproval](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/subscriptions/_preapproval/post) endpoint, and fill in the attributes as indicated in the parameter table. It is fundamental to pay attention to the `preapproval_plan_id` parameter and insert the `id` generated in the plan creation step.
 
