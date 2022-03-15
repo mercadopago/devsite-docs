@@ -288,7 +288,7 @@ You can also add the `auto_return` attribute with the `approved` value if you wa
 >
 > Note
 >
-> Note that the `auto_return` attribute only works for Checkout Pro's `redirect` and `mobile` mode. It does not work in [modal mode](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/integration) since in the latter the buyer remains on the site throughout the payment process.
+> Note that the `auto_return` attribute only works for Checkout Pro's `redirect` and `mobile` mode. It does not work in [modal mode](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/integration) since in the latter the buyer remains on the site throughout the payment process.
 
 ![autoreturn](/images/web-payment-checkout/autoreturn-img.png)
 

@@ -285,7 +285,7 @@ Si quieres que la redirección sea automática para los pagos aprobados, sin mos
 >
 > Nota
 >
-> Ten en cuenta que el atributo `auto_return` solo funciona para el modo `redirect` y `mobile` de Checkout Pro. No funciona en [modo modal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/integration), ya que en este último el comprador permanece en el sitio durante todo el proceso de pago.
+> Ten en cuenta que el atributo `auto_return` solo funciona para el modo `redirect` y `mobile` de Checkout Pro. No funciona en [modo modal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/integration), ya que en este último el comprador permanece en el sitio durante todo el proceso de pago.
 
 ![autoreturn](/images/web-payment-checkout/autoreturn-img.png)
 
