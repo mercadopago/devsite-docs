@@ -10,7 +10,6 @@ O plano de assinatura permite definir, entre outros atributos, o título, valor 
 
 Ao executar a API, o plano estará criado e você terá acesso ao `preapproval_plan_id`, **que na resposta à API, será exibido apenas como `id`.** Este **atributo é mandatório** para a criação da assinatura. 
 
-
 ### Criar assinatura
 
 Tendo um plano criado, você poderá criar a assinatura de fato. Assinatura é uma autorização do pagador para cobranças recorrentes com um meio de pagamento definido (cartão de crédito, por exemplo). Ao realizar a assinatura de um produto/serviço, o cliente concorda com a cobrança periódica de determinado valor pelo período de tempo definido.
