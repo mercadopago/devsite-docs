@@ -82,7 +82,7 @@ Con la funcionalidad CardForm de la librería MercadoPago.js V2, puedes obtener 
 
 CardForm te permite tener una implementación segura y una correcta tokenización de la información de la tarjeta.
 
-Para los campos PCI (**Card Number**, **Expiration Date** y **CVV**) debes crear `divs` que servirán como contenedores para los `iFrames`.
+Para los campos PCI (**Card Number**, **Expiration Date** y **Security Code**) debes crear `divs` que servirán como contenedores para los `iFrames`.
 
 Utiliza el siguiente formulario y agrega los estilos que desees.
 
