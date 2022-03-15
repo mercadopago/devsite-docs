@@ -1,6 +1,6 @@
 # Prerequisites
 
-To perform signature integration, you must meet the requirements listed below.
+To perform a signature integration, you must meet the requirements listed below.
 
 | Requirements | Description |
 |---|---|
