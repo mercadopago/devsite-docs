@@ -4,7 +4,7 @@
 
 A payment can be rejected due to an error with a payment method or non-compliance with security requirements. I.e, if a card lacks enough funds, a data fails to upload properly or unusual account movements are detected.
 
-In order to avoid any revenue loss with your business and to enhance your customers experience, we work with agents from each payment method and operate with the latest tools for fraud prevention and payment growth.
+In order to avoid any revenue loss with your business and to enhance your customers' experience, we work with agents from each payment method and operate with the latest tools for fraud prevention and payment growth.
 
 ## Bank rejected payments
 
@@ -98,13 +98,13 @@ X-meli-session-id: device_id
 
 #### You can obtain the Device ID in two ways:
 
-- A global javascript variable is automatically created `MP_DEVICE_SESSION_ID` with the value ` device_id`. If you prefer that we assign it to another variable, indicate the name by adding the attribute `output`.
+- A global javascript variable is automatically created `MP_DEVICE_SESSION_ID` with the value `device_id`. If you prefer that we assign it to another variable, indicate the name by adding the attribute `output`.
 
 ```html
 <script src="https://www.mercadopago.com/v2/security.js" view="checkout" output="deviceId"></script>
 ````
 
-- If you want your own variable, you can add an HTML tag on your site with the identificator `id =" deviceId "` and the code will automatically assign the value `device_id`.
+- If you want your own variable, you can add an HTML tag on your site with the identificator `id ="deviceId"` and the code will automatically assign the value `device_id`.
 
 ```html
 <input type="hidden" id="deviceId">

@@ -4,7 +4,7 @@ Encuentra toda la información sobre los contracargos, cómo prevenirlos y gesti
 
 ## ¿Qué es un contracargo?
 
-Se crea un contracargo cuando **el cliente disputa un cobro de su tarjeta de crédito o débito ante el banco emisor de su tarjeta y pide un reembolso del dinero.**
+Se crea un contracargo cuando **el cliente disputa un cobro de su tarjeta de crédito o débito ante el banco emisor de su tarjeta y pide un reembolso del dinero**.
 
 ----[mla, mlm, mpe, mco, mlu, mlb]----
 
@@ -78,7 +78,7 @@ Es muy simple. Agrega el script, configura la sección de tu sitio en la que se 
 <script src="https://www.mercadopago.com/v2/security.js" view="home"></script>
 ```
 
-#### Posibles valores para `view`
+#### Posibles valores para view
 
 | Tipo | Descripción |
 | --- | --- |

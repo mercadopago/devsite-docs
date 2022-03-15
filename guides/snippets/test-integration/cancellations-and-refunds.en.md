@@ -21,7 +21,7 @@ Before canceling a purchase, the following factors must be considered:
 
 - **Payment status**: Cancellations can only be made if the payment status is Pending or In process. These statuses are displayed in the response of the Cancellation API call in the fields *Status* and *Status detail* respectively.
 
-- **Expiry date**: A payment expires after 30 days without confirmation and the cancellation is automatic. The final status of this transaction will appear as *Canceled* or *Expired*. This information will be displayed in the response of the Cancellation API call, in the fields *Status* and *Status detail* respectively.
+- **Expiration date**: A payment expires after 30 days without confirmation and the cancellation is automatic. The final status of this transaction will appear as *Canceled* or *Expired*. This information will be displayed in the response of the Cancellation API call, in the fields *Status* and *Status detail* respectively.
 
 ----[mlb]----
 - **Boleto bancário**: If the expiry date of a boleto bancário expires, the user can generate it again by entering the transaction ID of their Mercado Pago account. However, if you want to avoid stock retention problems, for example, you can choose not to make a new issue of this slip available. To do this, simply cancel it.

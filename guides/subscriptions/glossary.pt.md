@@ -2,7 +2,6 @@
 
 Na tabela a seguir, descrevemos os principais termos utilizados durante o processo de integração das assinaturas.
 
-
 | Termo | Descrição |
 |---|---|
 | Plano de assinatura | Modelo que permite definir, entre outros atributos, o título, valor e frequência das assinaturas criadas pelo vendedor. Tem como função definir características gerais das assinaturas, que são criadas a partir desta instituição. É importante esclarecer que nenhum meio de pagamento está configurado neste modelo. |

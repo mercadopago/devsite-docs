@@ -1,6 +1,6 @@
 # Webhooks
 
-Webhook (also known as web callback) is a simple method that makes it easy for an app or system to provide real-time information whenever an event happens, that is, it is a way to passively receive data between two systems through of an `HTTP POST`.
+Webhook (also known as web callback) is a simple method that makes it easy for an app or system to provide real-time information whenever an event happens, that is, it is a way to passively receive data between two systems through an `HTTP POST`.
 
 Webhooks notifications can be configured for one or more applications created in your [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/dashboard/introduction).
 
@@ -289,7 +289,7 @@ This indicates that payment **999999999** was created for user **44444** in prod
 | --- | --- |
 | **id** | Notification ID |
 | **live_mode** | Indicates if the URL entered is valid. |
-| **date_created** | Resorce (payments, mp-connect, subscription etc) creation date |
+| **date_created** | Resource (payments, mp-connect, subscription etc) creation date |
 | **application_id** | Application ID that received the resource (payments, merchant_order, subscription, preapproval, etc) |
 | **user_id** | Vendor UserID |
 | **version** | Number of times a notification was sent |
