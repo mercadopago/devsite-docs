@@ -12,7 +12,6 @@ Para oferecer **assinaturas sem um plano associado e com pagamento autorizado**,
 
 Finalizando o preenchimento dos campos, execute a requisição.
 
-
 > NOTE
 >
 > Importante
