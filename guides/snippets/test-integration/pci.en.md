@@ -63,7 +63,7 @@ Mercado Pago considerably simplifies the burden of compliance with this regulati
 
 To comply with PCI DSS, demonstrate your compliance, and in turn protect your customers' card details, it is important to use secure payment integrations like Checkout Pro to ensure that cardholder data does not reach your servers.
 
-As we saw in the previous sections, for level 1, it is necessary to perform an audit with an external consultant. On the other hand, for levels 2 to 4, there are different types of SAQ depending on which payment integration method you use. We Recommend that you complete the corresponding SAQ according to the type of Checkout chosen due to the obligations imposed by the PCI regulations. 
+As we saw in the previous sections, for level 1, it is necessary to perform an audit with an external consultant. On the other hand, for levels 2 to 4, there are different types of SAQ depending on which payment integration method you use. We recommend that you complete the corresponding SAQ according to the type of Checkout chosen due to the obligations imposed by the PCI regulations. 
 
 Here we summarize what type of SAQ you must complete for each solution integration offered by Mercado Pago.
 
