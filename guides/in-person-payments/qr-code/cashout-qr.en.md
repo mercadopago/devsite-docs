@@ -53,7 +53,7 @@ By including the object within the payment order, we will have a body as the one
 
 | Attribute | Type | Description |
 |---|---|--- |
-| Amount | Double | Total amount to cashout from the customer's account. (required)|
+| Amount | Double | Total amount to cash out from the customer's account. (required)|
 
 ## Confirm cashout
 
