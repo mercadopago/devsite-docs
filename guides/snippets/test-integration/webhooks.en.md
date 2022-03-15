@@ -289,7 +289,7 @@ This indicates that payment **999999999** was created for user **44444** in prod
 | --- | --- |
 | **id** | Notification ID |
 | **live_mode** | Indicates if the URL entered is valid. |
-| **date_created** | Resorce (payments, mp-connect, subscription etc) creation date |
+| **date_created** | Resource (payments, mp-connect, subscription etc) creation date |
 | **application_id** | Application ID that received the resource (payments, merchant_order, subscription, preapproval, etc) |
 | **user_id** | Vendor UserID |
 | **version** | Number of times a notification was sent |
