@@ -4,7 +4,7 @@ To perform a signature integration, you must meet the requirements listed below.
 
 | Requirements | Description |
 |---|---|
-| Mercado Pago or Mercado Livre seller account | To integrate subscriptions on your website, you need a seller account on Mercado Pago or Mercado Livre. If not, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) to create. | 
+| Mercado Pago or Mercado Libre seller account | To integrate subscriptions on your website, you need a seller account on Mercado Pago or Mercado Libre. If not, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) to create. | 
 | Credentials | Unique passwords with which we identify an integration in your account. The Public key and Access Token will be required to perform your integrations. [Click here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) for more information. |
 | Integration with Javascript SDK - Card token ID | Integration with Mercado Pago's Javascript SDK allows you to create a token with card data and send it to your backend to be used for payments. For more information, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/sdks) |
 ----[mlb]----| Minimum transaction amount | The minimum amount allowed to create a subscription is R$1.00, and the maximum is R$500.00 |------------
