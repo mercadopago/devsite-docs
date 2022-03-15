@@ -59,7 +59,7 @@ Al incluir el objeto dentro de la orden de pago, tendremos un cuerpo como el que
 
 Para confirmar el estado de retiro de dinero del saldo de Mercado Pago, envía un POST con una combinación de información y atributos (“status” y “status_detail”) configurado por el vendedor al endpoint [/instore/orders/{merchant_order_id}/confirmación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/cashout-qr/_instore_orders_merchant_order_id_confirmation/post).
  
-Al retirar dinero, el flujo correcto a completar depende de varios factores, como la cantidad de dinero disponible en la cuenta que no es visible hasta que se completa la transacción. Consulte a continuación las posibles opciones de combinación y las devoluciones de API:
+Al retirar dinero, el flujo correcto a completar depende de varios factores, como la cantidad de dinero disponible en la cuenta, que no es visible hasta que se completa la transacción. Consulte a continuación las posibles opciones de combinación y las devoluciones de API:
  
 | Estado | Estado_detalle | Volver |
 | --- | --- |--- |
