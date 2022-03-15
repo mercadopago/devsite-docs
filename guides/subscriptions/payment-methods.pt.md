@@ -20,7 +20,6 @@ Ao integrar assinaturas, é possível customizar e definir um valor proporcional
 
 Para oferecer pagamento de assinaturas via boleto bancário, envie um POST com o parâmetro `payment_methods_allowed` informando o meio de pagamento que deverá aparecerá no checkout, por exemplo, `bolbradesco` ao endpoint [/preapproval_plan](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/subscriptions/_preapproval_plan/post) e execute a requisição. 
 
-
 >NOTE
 >
 > Importante
