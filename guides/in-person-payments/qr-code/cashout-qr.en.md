@@ -53,7 +53,7 @@ By including the object within the payment order, we will have a body as the one
 
 | Attribute | Type | Description |
 |---|---|--- |
-| Amount | Double | Total amount to cash out from the customer's account. (required)|
+| Amount | Double | Total amount to cash out from the customer's account (required).|
 
 ## Confirm cashout
 
@@ -64,5 +64,5 @@ When we make the cashout, the correct flow to complete depends on several factor
 | Status | Status_detail | Return |
 | --- | --- |--- |
 | Confirm | confirmed | Confirm the cashout.|
-| Canceled | manually_cancelled <br/> confirmation_not_received <br/> other | Confirm the cashout. |
+| Cancelled | manually_cancelled <br/> confirmation_not_received <br/> other | Cash out cancelled. |
 | Fail | internal_communication_error <br/> other | Error performing withdrawal. A refund is made to the customer referring to the withdrawal value, either from the purchase or the pure withdrawal.|

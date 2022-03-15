@@ -61,8 +61,8 @@ Para confirmar el estado de retiro de dinero del saldo de Mercado Pago, envía u
  
 Al retirar dinero, el flujo correcto a completar depende de varios factores, como la cantidad de dinero disponible en la cuenta, que no es visible hasta que se completa la transacción. Consulte a continuación las posibles opciones de combinación y las devoluciones de API:
  
-| Estado | Estado_detalle | Volver |
+| Estado | Status_detail | Volver |
 | --- | --- |--- |
 | Confirm | confirmado | Confirmar el retiro|
-| Canceled | cancelado_manualmente <br/> confirmación_no_recibida <br/> otro | Confirmar el retiro |
+| Cancelled | manually_cancelled <br/> confirmation_not_received <br/> other | Retiro cancelado. |
 | Fail | internal_communication_error <br/> otro | Error al realizar el retiro. Se realiza una devolución al cliente referente al valor de retiro, ya sea de la compra o del retiro puro.|

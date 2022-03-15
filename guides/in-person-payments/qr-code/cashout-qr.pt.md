@@ -53,7 +53,7 @@ Ao incluir o objeto dentro da ordem de pagamento, teremos um corpo conforme o ex
 
 | Atributo | Tipo (type) | Descrição |
 |---|---|--- |
-| Amount | Double | Valor total para retirar da conta do cliente. (obrigatório)|
+| Amount | Double | Valor total para retirar da conta do cliente (obrigatório).|
 
 ## Confirmar retirada 
 
@@ -64,5 +64,5 @@ Quando realizamos a retirada de dinheiro, o fluxo correto para finalizar depende
 | Status | Status_detail | Retorno |
 | --- | --- |--- |
 | Confirm | confirmed | Confirma a retirada.|
-| Canceled | manually_cancelled <br/> confirmation_not_received <br/> other | Confirma a retirada. |
+| Cancelled | manually_cancelled <br/> confirmation_not_received <br/> other | Retirada cancelada. |
 | Fail | internal_comunication_error <br/> other | Erro ao realizar a retirada. É realizada uma devolução ao cliente referente ao valor de retirada, seja da compra ou da retirada pura.|
