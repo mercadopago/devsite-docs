@@ -29,8 +29,7 @@ Antes de realizar o cancelamento de uma compra, é preciso atentar-se os seguint
 
 ------------
 
-Considerando as informações acima, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_payments_payment_id/put
-) e visite nossa Referência API para ter acesso à API de cancelamento.
+Considerando as informações acima, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/chargebacks/_payments_payment_id/put) e visite nossa Referência API para ter acesso à API de cancelamento.
 
 ## Reembolsos
 

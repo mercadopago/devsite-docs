@@ -28,8 +28,7 @@ Before canceling a purchase, the following factors must be considered:
 
 ------------
 
-Considering the above information, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/chargebacks/_payments_payment_id/put
-) and visit our API Reference to access the Cancellation API.
+Considering the above information, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/chargebacks/_payments_payment_id/put) and visit our API Reference to access the Cancellation API.
 
 ## Refunds
 

@@ -17,7 +17,42 @@ Cuando esto ocurre, podemos retener el dinero del cobro hasta que el problema se
 
 ------------
 
+----[mlb]----
+En caso de que el reclamo sea aceptado por la entidad emisora, se le devolverá el dinero al comprador. Pero no te preocupes, si cumples con los [requisitos del Programa de Protección al Vendedor](https://www.mercadopago.com.br/ajuda/requisitos-programa-proteccion-vendedor_294) te cubriremos el contracargo y no te descontaremos el dinero de la venta.
+
+------------
+
+----[mla]----
 En caso de que el reclamo sea aceptado por la entidad emisora, se le devolverá el dinero al comprador. Pero no te preocupes, si cumples con los [requisitos del Programa de Protección al Vendedor](https://www.mercadopago.com.ar/ayuda/requisitos-programa-proteccion-vendedor_294) te cubriremos el contracargo y no te descontaremos el dinero de la venta.
+
+------------
+
+----[mlm]----
+En caso de que el reclamo sea aceptado por la entidad emisora, se le devolverá el dinero al comprador. Pero no te preocupes, si cumples con los [requisitos del Programa de Protección al Vendedor](https://www.mercadopago.com.mx/ayuda/requisitos-programa-proteccion-vendedor_294) te cubriremos el contracargo y no te descontaremos el dinero de la venta.
+
+------------
+
+----[mpe]----
+En caso de que el reclamo sea aceptado por la entidad emisora, se le devolverá el dinero al comprador. Pero no te preocupes, si cumples con los [requisitos del Programa de Protección al Vendedor](https://www.mercadopago.com.pe/ayuda/requisitos-programa-proteccion-vendedor_294) te cubriremos el contracargo y no te descontaremos el dinero de la venta.
+
+------------
+
+----[mco]----
+En caso de que el reclamo sea aceptado por la entidad emisora, se le devolverá el dinero al comprador. Pero no te preocupes, si cumples con los [requisitos del Programa de Protección al Vendedor](https://www.mercadopago.com.co/ayuda/requisitos-programa-proteccion-vendedor_294) te cubriremos el contracargo y no te descontaremos el dinero de la venta.
+
+------------
+
+----[mlu]----
+En caso de que el reclamo sea aceptado por la entidad emisora, se le devolverá el dinero al comprador. Pero no te preocupes, si cumples con los [requisitos del Programa de Protección al Vendedor](https://www.mercadopago.com.uy/ayuda/requisitos-programa-proteccion-vendedor_294) te cubriremos el contracargo y no te descontaremos el dinero de la venta.
+
+------------
+
+----[mlc]----
+En caso de que el reclamo sea aceptado por la entidad emisora, se le devolverá el dinero al comprador. Pero no te preocupes, si cumples con los [requisitos del Programa de Protección al Vendedor](https://www.mercadopago.cl/ayuda/requisitos-programa-proteccion-vendedor_294) te cubriremos el contracargo y no te descontaremos el dinero de la venta.
+
+------------
+
+
 
 > NOTE
 >

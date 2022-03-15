@@ -17,7 +17,40 @@ When that happens, we can withhold the collected money until the problem is solv
 
 ------------
 
+----[mlb]----
+If the claim is accepted by the issuer entity, the buyer will have the money refunded.  But don't worry, if you meet the [Seller Protection Program](https://www.mercadopago.com.br/ajuda/requisitos-programa-proteccion-vendedor_294) requirements we will cover the chargeback and will not discount the sales money.
+
+------------
+
+----[mla]----
 If the claim is accepted by the issuer entity, the buyer will have the money refunded.  But don't worry, if you meet the [Seller Protection Program](https://www.mercadopago.com.ar/ayuda/requisitos-programa-proteccion-vendedor_294) requirements we will cover the chargeback and will not discount the sales money.
+
+------------
+
+----[mlm]----
+If the claim is accepted by the issuer entity, the buyer will have the money refunded.  But don't worry, if you meet the [Seller Protection Program](https://www.mercadopago.com.mx/ayuda/requisitos-programa-proteccion-vendedor_294) requirements we will cover the chargeback and will not discount the sales money.
+
+------------
+
+----[mpe]----
+If the claim is accepted by the issuer entity, the buyer will have the money refunded.  But don't worry, if you meet the [Seller Protection Program](https://www.mercadopago.com.pe/ayuda/requisitos-programa-proteccion-vendedor_294) requirements we will cover the chargeback and will not discount the sales money.
+
+------------
+
+----[mco]----
+If the claim is accepted by the issuer entity, the buyer will have the money refunded.  But don't worry, if you meet the [Seller Protection Program](https://www.mercadopago.com.co/ayuda/requisitos-programa-proteccion-vendedor_294) requirements we will cover the chargeback and will not discount the sales money.
+
+------------
+
+----[mlu]----
+If the claim is accepted by the issuer entity, the buyer will have the money refunded.  But don't worry, if you meet the [Seller Protection Program](https://www.mercadopago.com.uy/ayuda/requisitos-programa-proteccion-vendedor_294) requirements we will cover the chargeback and will not discount the sales money.
+
+------------
+
+----[mlc]----
+If the claim is accepted by the issuer entity, the buyer will have the money refunded.  But don't worry, if you meet the [Seller Protection Program](https://www.mercadopago.cl/ayuda/requisitos-programa-proteccion-vendedor_294) requirements we will cover the chargeback and will not discount the sales money.
+
+------------
 
 > NOTE
 >

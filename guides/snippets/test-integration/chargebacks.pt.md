@@ -17,13 +17,47 @@ Quando isso acontece, podemos reter o dinheiro da cobrança até o problema ser 
 
 ------------
 
+----[mlb]----
+Caso a reclamação seja aceita pela entidade emissora, o dinheiro será devolvido ao comprador. Mas não se preocupe, se você atender aos [requisitos do Programa de Proteção ao Vendedor](https://www.mercadopago.com.br/ajuda/requisitos-programa-proteccion-vendedor_294), nós vamos realizar o estorno sem descontar o dinheiro da sua venda.
+
+------------
+
+----[mla]----
 Caso a reclamação seja aceita pela entidade emissora, o dinheiro será devolvido ao comprador. Mas não se preocupe, se você atender aos [requisitos do Programa de Proteção ao Vendedor](https://www.mercadopago.com.ar/ayuda/requisitos-programa-proteccion-vendedor_294), nós vamos realizar o estorno sem descontar o dinheiro da sua venda.
+
+------------
+
+----[mlm]----
+Caso a reclamação seja aceita pela entidade emissora, o dinheiro será devolvido ao comprador. Mas não se preocupe, se você atender aos [requisitos do Programa de Proteção ao Vendedor](https://www.mercadopago.com.mx/ayuda/requisitos-programa-proteccion-vendedor_294), nós vamos realizar o estorno sem descontar o dinheiro da sua venda.
+
+------------
+
+----[mpe]----
+Caso a reclamação seja aceita pela entidade emissora, o dinheiro será devolvido ao comprador. Mas não se preocupe, se você atender aos [requisitos do Programa de Proteção ao Vendedor](https://www.mercadopago.com.pe/ayuda/requisitos-programa-proteccion-vendedor_294), nós vamos realizar o estorno sem descontar o dinheiro da sua venda.
+
+------------
+
+----[mco]----
+Caso a reclamação seja aceita pela entidade emissora, o dinheiro será devolvido ao comprador. Mas não se preocupe, se você atender aos [requisitos do Programa de Proteção ao Vendedor](https://www.mercadopago.com.co/ayuda/requisitos-programa-proteccion-vendedor_294), nós vamos realizar o estorno sem descontar o dinheiro da sua venda.
+
+------------
+
+----[mlu]----
+Caso a reclamação seja aceita pela entidade emissora, o dinheiro será devolvido ao comprador. Mas não se preocupe, se você atender aos [requisitos do Programa de Proteção ao Vendedor](https://www.mercadopago.com.uy/ayuda/requisitos-programa-proteccion-vendedor_294), nós vamos realizar o estorno sem descontar o dinheiro da sua venda.
+
+------------
+
+----[mlc]----
+Caso a reclamação seja aceita pela entidade emissora, o dinheiro será devolvido ao comprador. Mas não se preocupe, se você atender aos [requisitos do Programa de Proteção ao Vendedor](https://www.mercadopago.cl/ayuda/requisitos-programa-proteccion-vendedor_294), nós vamos realizar o estorno sem descontar o dinheiro da sua venda.
+
+------------
+
 
 > NOTE
 >
 > Nota
 >
-> Se você recebeu uma reclamação e não sabe o que fazer, consulte as nossas [perguntas frequentes](https://www.mercadopago.com.ar/ayuda/recib%C3%AD-un-contracargo_4249).
+> Se você recebeu uma reclamação e não sabe o que fazer, consulte as nossas [perguntas frequentes](https://www.mercadopago.com.br/ajuda/recib%C3%AD-un-contracargo_4249).
 
 ## Recomendações para prevenir contestações de pagamento
 
@@ -31,7 +65,7 @@ Não é possível evitar todas as contestações, porém, você pode diminuir a 
 
 ### Preencha os dados do seu negócio
 
-Caso o comprador não reconheça a cobrança na fatura do seu cartão, ele poderá contestá-la. Para evitá-las, preencha a [informação do seu negócio](https://www.mercadopago.com.ar/settings/account) para definir como você quer aparecer nas faturas de cartões e nos SMS de confirmação de pagamento.
+Caso o comprador não reconheça a cobrança na fatura do seu cartão, ele poderá contestá-la. Para evitá-las, preencha a [informação do seu negócio](https://www.mercadopago.com.br/settings/account) para definir como você quer aparecer nas faturas de cartões e nos SMS de confirmação de pagamento.
 
 ### Adicione o código de segurança no seu site
 
