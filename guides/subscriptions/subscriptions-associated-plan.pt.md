@@ -1,6 +1,6 @@
 ## Assinaturas com plano associado
 
-Assinaturas com plano associado são utilizadas quando é necessário utilizar a mesma assinatura em ocasiões diferentes organizá-las em grupos identificáveis. Por exemplo, para uma assinatura mensal e anual de uma academia.
+Assinaturas com plano associado são utilizadas quando é necessário utilizar a mesma assinatura em ocasiões diferentes e organizá-las em grupos identificáveis. Por exemplo, para uma assinatura mensal e anual de uma academia.
 
 ### Criar plano
 
