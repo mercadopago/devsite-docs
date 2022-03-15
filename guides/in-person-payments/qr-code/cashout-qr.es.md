@@ -53,7 +53,7 @@ Al incluir el objeto dentro de la orden de pago, tendremos un cuerpo como el que
 
 | Atributo | Tipo | Descripción |
 |---|---|--- |
-| Amount | Double | Importe total a retirar de la cuenta del cliente. (requerido)|
+| Amount | Double | Importe total a retirar de la cuenta del cliente (requerido).|
 
 ## Confirmar retiro
 
