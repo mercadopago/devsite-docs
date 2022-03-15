@@ -81,7 +81,7 @@ components:
       description: Detail of the status.
       example: confirmed
       enum:
-        - internal_comunication_error -- some error occur in seller infraestructure (only for fail status).
+        - internal_comunication_error -- an error occurs in seller infraestructure (only for fail status).
         - manually_cancelled -- cancelled manually for the cashier (only for cancelled status).
         - confirmation_not_received -- the notification for this transaction was not received by seller (only for cancelled status).
         - merchant_order_not_found -- merchant order associated to the transaction not found (only for cancelled status).
