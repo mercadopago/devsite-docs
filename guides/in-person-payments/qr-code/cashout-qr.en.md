@@ -59,7 +59,7 @@ By including the object within the payment order, we will have a body as the one
 
 To confirm the status of a cashout from the Mercado Pago balance, send a POST with a combination of information and attributes (“status” and “status _detail”) configured by the seller to the endpoint [/instore/orders/{merchant_order_id}/confirmation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/cashout-qr/_instore_orders_merchant_order_id_confirmation/post).
  
-When we make the cashout, the correct flow to complete depends on several factors, such as the amount of money available in the account that is not visible until the transaction is completed. See below for possible combination options and API returns:
+When we make the cashout, the correct flow to complete depends on several factors, such as the amount of money available in the account, which is not visible until the transaction is completed. See below for possible combination options and API returns:
  
 | Status | Status_detail | Return |
 | --- | --- |--- |
