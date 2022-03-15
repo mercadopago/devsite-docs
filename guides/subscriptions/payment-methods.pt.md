@@ -24,7 +24,7 @@ Para oferecer pagamento de assinaturas via boleto bancário, envie um POST com o
 >
 > Importante
 >
-> O pagamento de assinaturas por boleto bancário está disponível somente para assinaturas criadas pelo Checkout Pro, onde o vendedor deverá redirecionar o comprador para a URL  gerada no parâmetro `init_point`. 
+> O pagamento de assinaturas por boleto bancário está disponível somente para assinaturas criadas pelo Checkout Pro, onde o vendedor deverá redirecionar o comprador para a URL gerada no parâmetro `init_point`. 
 
 ------------
 
