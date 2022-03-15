@@ -4,7 +4,7 @@ Subscriptions with an associated plan are used when it is necessary to use the s
 
 ### Create plan 
 
-The integration of **subscriptions with an associated plan** happens in two steps: In the first, it is necessary to **create a plan** to be associated with the subscription, and in the second step, to **create a subscription**.
+The integration of **subscriptions with an associated plan** happens in two steps: In the first one, it is necessary to **create a plan** to be associated with the subscription, and in the second step, to **create a subscription**.
 
 The subscription plan allows you to define, among other attributes, the title, value, and frequency of subscriptions created by the seller. To create a plan and associate it with a subscription, check out the [preapproval_plan](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/subscriptions/_preapproval_plan/post) endpoint, fill in the necessary attributes, and execute the request.
 
