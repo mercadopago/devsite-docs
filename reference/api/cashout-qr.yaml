@@ -11,7 +11,7 @@ paths:
         - $ref: '#/tags/cash-out'
         - $ref: '#/tags/qr-code'
       summary: Confirm cashout status
-      description: After complete a cashout transaction fisically, confirm the status of the money delivered. This endpoint works until 5 minutes after the transaction was done
+      description: After complete a cashout transaction physically, confirm the status of the money delivered. This endpoint works until 5 minutes after the transaction was done
       requestBody:
         content:
           application/json:
