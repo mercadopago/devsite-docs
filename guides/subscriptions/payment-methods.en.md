@@ -19,7 +19,7 @@ By integrating subscriptions, it is possible to customize and define a proportio
 
 It is possible to allow the subscriber to pay the subscription with a boleto bancário. When opting for this payment method, the invoice sent will be valid for seven days, and it is going to remain valid until three days after expiration. If the subscriber fails to pay more than two consecutive boletos, the subscription is canceled. 
 
-To offer subscriptions with payments via boleto bancário, send a POST with the `payment_methods_allowed" parameter informing the payment method to be displayed on the checkout, such as `bolbradesco`, to the[/preapproval_plan](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/subscriptions/_preapproval_plan/post) endpoint, and execute the request.
+To offer subscriptions with payments via boleto bancário, send a POST with the `payment_methods_allowed` parameter informing the payment method to be displayed on the checkout, such as `bolbradesco`, to the[/preapproval_plan](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/subscriptions/_preapproval_plan/post) endpoint, and execute the request.
 
 > NOTE
 >
