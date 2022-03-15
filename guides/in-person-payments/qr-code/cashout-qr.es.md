@@ -15,7 +15,7 @@ Las características principales son:
 
 ## Incluir retiro
 
-Para incluir el retiro del pago en su integración, envíe un PUT al extremo de creación del pedido [/instore/qr/seller/collectors/{user_id}/stores/{external_store_id}/pos/{external_pos_id}/orders](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put) incluyendo en el `body` el importe total a retirar de la cuenta del cliente.
+Para incluir el retiro del pago en tu integración, envía un PUT al endpoint de creación del pedido [/instore/qr/seller/collectors/{user_id}/stores/{external_store_id}/pos/{external_pos_id}/orders](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put) incluyendo en el `body` el importe total a retirar de la cuenta del cliente.
 
 Al incluir el objeto dentro de la orden de pago, tendremos un cuerpo como el que se muestra en el siguiente ejemplo:
 
