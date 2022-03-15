@@ -42,4 +42,4 @@ Para definir uma pro rata no pagamento de assinaturas, envie um POST com os par�
 >
 > Importante
 >
-> Caso queira modificar uma assinatura específica e definir uma Pro rata, envie um PUT com o parâmetro `billing_day_proportional` ao endpoint [/preapproval_plan/{id}](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/subscriptions/_preapproval_plan_id/put),  altere o valor de `false` para `true` e execute a requisição.
+> Caso queira modificar uma assinatura específica e definir uma Pro rata, envie um PUT com o parâmetro `billing_day_proportional` ao endpoint [/preapproval_plan/{id}](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/subscriptions/_preapproval_plan_id/put), altere o valor de `false` para `true` e execute a requisição.
