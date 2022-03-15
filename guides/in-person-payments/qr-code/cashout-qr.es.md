@@ -11,7 +11,7 @@ Las características principales son:
 >
 > Importante
 >
-> Solo puede integrar este producto si su contacto comercial comparte toda la información necesaria.
+> Solo puedes integrar este producto si tu contacto comercial comparte toda la información necesaria.
 
 ## Incluir retiro
 
