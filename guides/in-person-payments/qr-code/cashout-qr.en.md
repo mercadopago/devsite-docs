@@ -17,7 +17,7 @@ The main features are:
 
 To include the cashout in your integration, send a PUT to the order creation endpoint [/instore/qr/seller/collectors/{user_id}/stores/{external_store_id}/pos/{external_pos_id}/orders](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/instore_orders_v2/_instore_qr_seller_collectors_user_id_stores_external_store_id_pos_external_pos_id_orders/put) including in the `body` the total amount to be cashes out from the customer's account.
 
-By including the object within the payment order, we will have a body as shown in the example below:
+By including the object within the payment order, we will have a body as the one shown in the example below:
 
 [[[
 ```json
