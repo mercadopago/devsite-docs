@@ -10,7 +10,7 @@ Assinaturas com pagamento autorizado permitem que a parcela de uma assinatura se
 
 Para oferecer **assinaturas sem um plano associado e com pagamento autorizado**, envie um POST com os atributos necessários ao endpoint [/preapproval](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/subscriptions/_preapproval/post) e atente-se ao parâmetro `status`, que deverá ser preenchido com o valor `authorized`. 
 
-Finalizando o preenchimento dos campos,  execute a requisição.
+Finalizando o preenchimento dos campos, execute a requisição.
 
 
 > NOTE
