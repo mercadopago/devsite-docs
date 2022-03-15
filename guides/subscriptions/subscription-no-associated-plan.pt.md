@@ -4,7 +4,6 @@ Assinaturas sem plano associado é quando diferentes assinaturas possuem caracte
 
 Este modelo de assinatura pode ser feito de duas maneiras: **com pagamento autorizado** ou **com pagamento pendente**. 
 
-
 ### Assinaturas com pagamento autorizado
 
 Assinaturas com pagamento autorizado permitem que a parcela de uma assinatura seja gerada e cobrada com base na recorrência definida, fazendo com que o mecanismo de assinatura agende e crie os pagamentos automaticamente com base no meio de pagamento definido no ato da criação da assinatura.
