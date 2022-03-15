@@ -9,7 +9,7 @@ paths:
     get:
       tags:
         - $ref: '#/tags/mp-delivery'
-      summary: Get Order by Shipment ID
+      summary: Get order by shipment ID
       description: Retrieve the information of an order by its shipment ID.
       parameters:
         - name: shipment_id
@@ -735,7 +735,7 @@ paths:
     get:
       tags:
         - $ref: '#/tags/mp-delivery'
-      summary: Get store
+      summary: Get specific store
       description: This endpoint is used to get a specific store using its ID as search filter
       parameters:
         - name: StoreID
