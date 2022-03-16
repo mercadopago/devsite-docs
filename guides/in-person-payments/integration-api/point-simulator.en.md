@@ -16,7 +16,7 @@ When using the simulator for the first time, you will need to enter your keys an
 
 * **PDV Mode:** You must enter your Test Access Token and the simulator will assign you a virtual device.
 
-* **Device Mode:** You must enter your Test Access Token and your Device Id obtained when [listing your devices](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/integration-api/create-payment-intent#bookmark_get_the_list_of_your_available_devices).
+* **Device mode:** you must enter your test `access-token` and your device id obtained when [listing your devices](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/integration-api/create-payment-intent#bookmark_get_the_list_of_your_available_devices).
 
 > WARNING
 >
