@@ -1,10 +1,8 @@
-# Produtos
+# Produtos e meios de pagamentos disponíveis por localidade
 
-Os produtos oferecidos pelo Mercado Pago podem variar de acordo com cada país.
+Os produtos oferecidos pelo Mercado Pago podem variar de acordo com cada país. Veja a seguir quais são as **soluções de pagamento** disponíveis por cada pais e, a partir disso, quais são os **meios de pagamento** disponíveis e indisponíveis.
 
-## Disponibilidade por país
-
-### Pagamentos:
+## Pagamentos:
 
 ----[mlb]----
 | Produto | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
@@ -23,7 +21,7 @@ Os produtos oferecidos pelo Mercado Pago podem variar de acordo com cada país.
 | Chackout API | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 ------------
 
-### Assinaturas:
+## Assinaturas:
 
 ----[mlb]----
 | Produto | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
@@ -40,42 +38,39 @@ Os produtos oferecidos pelo Mercado Pago podem variar de acordo com cada país.
 | Checkout API | ✔ | ✔ | | | ✔ | | | |
 ------------
 
-### Marketplace:
-
-----[mlb]----
-| Produto | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Checkout Pro | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| Checkout Transparente | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-------------
-----[mla, mlm, mpe, mco, mlu, mlc]----
-| Produto | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Checkout Pro | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| Checkout API | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-------------
-
-
-## Funcionalidades de API por país
-
-A seguir uma lista de funcionalidades específicas de nossa API por país:
-
-| Funcionalidade | ARG | BRA | CHL | COL | MEX | PER | URY | VEN |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Autorização e captura | ✔ | ✔ | | | | ✔ | | |
-| Captura parcial | ✔ | ✔ | | | | | | |
-| Reembolsos | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | |
-| Reembolsos parciais | ✔ | ✔ | ✔ | | ✔ | | | |
-| Pagamentos sem CVV | ✔ | ✔ | | ✔ | ✔ | ✔ | ✔ | |
-| Soft descriptor | ✔ | ✔ | | | | | | ✔ |
-
-
-
-## Meios de pagamento não disponíveis
-
-Pode ser que alguns [meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/localization/payment-methods) não estejam disponíveis para alguns produtos. Abaixo estão detalhados quais meios de pagamento não estão disponíveis por produto e por país.
+A partir das informações anteriores, abaixo estão detalhados quais meios de pagamento não estão disponíveis por país.
 
 ### Argentina
+
+* **Disponíveis:** 
+
+| Meio de pagamento | ID do tipo de pagamento| ID |
+| :--- | :--- | :--- |
+| Visa | `credit_card` | `visa` |
+| Mastercard | `credit_card` | `master` |
+| American Express | `credit_card` | `amex` |
+| Diners Club International | `credit_card` | `diners` |
+| Tarjeta Naranja | `credit_card` | `naranja` |
+| Tarjeta Nativa | `credit_card` | `nativa` |
+| Tarjeta Shopping | `credit_card` | `shopping` |
+| Tarjeta Cencosud | `credit_card` | `cencosud` |
+| Tarjeta CMR MasterCard | `credit_card` | `cmr_master` |
+| Argencard | `credit_card` | `argencard` |
+| Cordial | `credit_card` | `cordial` |
+| Cordobesa | `credit_card` | `cordobesa` |
+| Cabal | `credit_card` | `cabal` |
+| Visa Débito | `debit_card` | `debvisa` |
+| Mastercard Débito | `debit_card` | `debmaster` |
+| Maestro | `debit_card` | `maestro` |
+| Cabal Débito | `debit_card` | `debcabal` |
+| Pago Fácil | `ticket` | `pagofacil` |
+| RapiPago | `ticket` | `rapipago` |
+| Carga Virtual | `ticket` | `cargavirtual` |
+| Cobro Express | `ticket` | `cobroexpress` |
+| Red Link | `atm` | `redlink` |
+| Dinheiro em conta | `account_money` | `account_money` |
+
+* **Indisponíveis:** 
 
 ----[mlb]----
 | Produto | Solução | Meios de pagamento não disponíveis |
@@ -104,7 +99,28 @@ Assinaturas | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmas
 | Marketplace | Checkout API | N/A |
 ------------
 
-### Brasil
+## Brasil
+
+* **Disponíveis:** 
+
+| Meio de pagamento | ID do tipo de pagamento. | ID |
+| :--- | :--- | :--- |
+| Visa | `credit_card` | `visa` |
+| Mastercard | `credit_card` | `master` |
+| American Express | `credit_card` | `amex` |
+| Hipercard | `credit_card` | `hipercard` |
+| Diners Club International | `credit_card` | `diners` |
+| Elo | `credit_card` | `elo` |
+| Cartão Mercado Livre | `credit_card` | `melicard` |
+| Boleto Bancario | `ticket` | `bolbradesco` |
+| Dinheiro em conta | `account_money` | `account_money` |
+| Giftcard | `digital_currency` | `giftcard` |
+| Pagamento na Lotérica | `ticket`| `pec` |
+| Paypal | `digital_wallet` | `paypal` |
+| Pix | `bank_transfer` | `pix` |
+
+* **Indisponíveis:** 
+
 ----[mlb]----
 | Produto | Solução | Meios de pagamento não disponíveis |
 | :--- | :--- | :--- |
@@ -130,10 +146,27 @@ Assinaturas | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmas
 | Assinaturas | Checkout API | `bolbradesco`, `giftcard`, `pix`  |
 | Marketplace | Checkout Pro | `pix` |
 | Marketplace | Checkout API | `pix` |
-------------
 
+## Chile
 
-### Chile
+* **Disponíveis:** 
+
+| Meio de pagamento | ID do tipo de pagamento| ID |
+| :--- | :--- | :--- |
+| Visa | `credit_card` | `visa` |
+| Mastercard | `credit_card` | `master` |
+| American Express | `credit_card` | `amex` |
+| Diners Club International | `credit_card` | `diners` |
+| Tarjeta CMR | `credit_card` | `cmr` |
+| Tarjeta Magna | `credit_card` | `magna` |
+| Tarjeta Presto | `credit_card` | `presto` |
+| Visa Débito | `debit_card` | `debvisa` |
+| Mastercard Débito | `debit_card` | `debmaster` |
+| Redcompra | `debit_card` | `redcompra` |
+| Dinheiro em conta | `account_money` | `account_money` |
+
+* **Indisponíveis:** 
+
 ----[mlb]----
 | Produto | Solução | Meios de pagamento não disponíveis |
 | :--- | :--- | :--- |
@@ -155,8 +188,25 @@ Assinaturas | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmas
 | Marketplace | Checkout API | N/A |
 ------------
 
+## Colômbia
 
-### Colômbia
+* **Disponíveis:** 
+
+| Meio de pagamento | ID do tipo de pagamento| ID |
+| :--- | :--- | :--- |
+| Visa | `credit_card` | `visa` |
+| Mastercard | `credit_card` | `master` |
+| American Express | `credit_card` | `amex` |
+| Diners Club International | `credit_card` | `diners` |
+| Crédito Fácil Codensa | `credit_card` | `codensa` |
+| Visa Débito | `debit_card` | `debvisa` |
+| Mastercard Débito | `debit_card` | `debmaster` |
+| Efecty | `ticket` | `efecty` |
+| PSE | `bank_transfer` | `pse` |
+| Dinheiro em conta | `account_money` | `account_money` |
+
+* **Indisponíveis:** 
+
 ----[mlb]----
 | Produto | Solução | Meios de pagamento não disponíveis |
 | :--- | :--- | :--- |
@@ -176,10 +226,30 @@ Assinaturas | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmas
 | Pagamentos | Checkout API | `account_money` |
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | `account_money` |
-------------
 
+## México
 
-### México
+* **Disponíveis:** 
+
+| Meio de pagamento | ID do tipo de pagamento| ID |
+| :--- | :--- | :--- |
+| Visa | `credit_card` | `visa` |
+| Mastercard | `credit_card` | `master` |
+| American Express | `credit_card` | `amex` |
+| Visa Débito | `debit_card` | `debvisa` |
+| Mastercard Débito | `debit_card` | `debmaster` |
+| Tarjeta Mercado Pago | `prepaid_card` | `mercadopagocard` |
+| Oxxo | `ticket` | `oxxo` |
+| PayCash | `ticket` | `paycash` |
+| BBVA Bancomer | `atm` | `bancomer` |
+| Banamex | `atm` | `banamex` |
+| Santander | `atm` | `serfin` |
+| Dinheiro em conta | `account_money` | `account_money` |
+| Bitcoin | `digital_currency` | `bitcoin` |
+| Paypal | `digital_wallet` | `paypal` |
+
+* **Indisponíveis:** 
+
 ----[mlb]----
 | Produto | Solução | Meios de pagamento não disponíveis |
 | :--- | :--- | :--- |
@@ -205,10 +275,22 @@ Assinaturas | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmas
 | Assinaturas | Checkout API | `amex`, `mercadopagocard`, `oxxo`, `bancomer`, `banamex`, `serfin`, `bitcoin` |
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | N/A |
-------------
 
+## Peru
 
-### Peru
+* **Disponíveis:** 
+
+| Meio de pagamento | ID do tipo de pagamento| ID |
+| :--- | :--- | :--- |
+| Visa | `credit_card` | `visa` |
+| Visa Débito | `dedit_card` | `debvisa` |
+| Diners Club International | `credit_card` | `diners` |
+| Mastercard Débito | `debit_card` | `debmaster` |
+| BCP, BBVA Continental u otros | `atm` | `pagoefectivo_atm` |
+| Dinheiro em conta | `account_money` | `account_money` |
+
+* **Indisponíveis:** 
+
 ----[mlb]----
 | Produto | Solução | Meios de pagamento não disponíveis |
 | :--- | :--- | :--- |
@@ -228,10 +310,23 @@ Assinaturas | Checkout API | `naranja`, `nativa`, `shopping`, `debvisa`, `debmas
 | Pagamentos | Checkout API | N/A |
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | N/A |
-------------
 
+## Uruguai
 
-### Uruguai
+* **Disponíveis:** 
+
+| Meio de pagamento | ID do tipo de pagamento| ID |
+| :--- | :--- | :--- |
+| Visa | `credit_card` | `visa` |
+| Mastercard | `credit_card` | `master` |
+| Diners Club International | `credit_card` | `diners` |
+| OCA | `credit_card` | `oca` |
+| Lider | `credit_card` | `lider` |
+| Abitab | `ticket` | `abitab` |
+| Red Pagos | `ticket` | `redpagos` |
+| Dinheiro em conta | `account_money` | `account_money` |
+
+* **Indisponíveis:** 
 
 | Produto | Solução | Meios de pagamento não disponíveis |
 | :--- | :--- | :--- |
