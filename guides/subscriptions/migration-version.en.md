@@ -1,1 +1,0 @@
-[TXTSNIPPET][/guides/snippets/test-integration/subscription-migration]

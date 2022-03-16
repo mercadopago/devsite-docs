@@ -1,1 +1,0 @@
-[TXTSNIPPET][/guides/resources/dashboard/introduction]
