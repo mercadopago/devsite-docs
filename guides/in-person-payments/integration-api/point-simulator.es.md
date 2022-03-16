@@ -22,7 +22,7 @@ Al utilizar el simulador por primera vez, deberás ingresar tus credenciales y s
 >
 > Importante
 >
-> Recuerda que para utilizar el simulador debes configurar un Access Token de prueba (`TEST-XXXXX-XXXXX-XXXXXXX`) y lo puedes obtener en tus [integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications), opción **Mis Credenciales / Credenciales de Prueba**.
+> Recuerda que para utilizar el simulador debes configurar un `access-token` de prueba (`TEST-XXXXX-XXXXX-XXXXXXX`) y lo puedes obtener en tus [integraciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications), opción **Mis credenciales > Credenciales de prueba**.
 
 ### 2. Simula una intención de pago
 
