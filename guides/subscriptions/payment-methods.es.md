@@ -8,7 +8,7 @@ Al integrar suscripciones, es posible personalizar y ofrecer diferentes medios d
 
 ----[mla, mlm, mpe, mco, mlu, mlc]----
 
-Al integrar las suscripciones, es posible personalizar y definir un valor proporcional para el pago de la suscripción. Para realizar esta integración, siga los pasos que se describen a continuación.
+Al integrar las suscripciones, es posible personalizar y definir un valor proporcional para el pago de la suscripción. Para realizar esta integración, sigue los pasos que se describen a continuación.
 
 ------------
 

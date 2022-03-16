@@ -1,6 +1,6 @@
 ## Assinaturas com plano associado
 
-Assinaturas com plano associado são utilizadas quando é necessário utilizar a mesma assinatura em ocasiões diferentes organizá-las em grupos identificáveis. Por exemplo, para uma assinatura mensal e anual de uma academia.
+Assinaturas com plano associado são utilizadas quando é necessário utilizar a mesma assinatura em ocasiões diferentes e organizá-las em grupos identificáveis. Por exemplo, para uma assinatura mensal e anual de uma academia.
 
 ### Criar plano
 
@@ -8,8 +8,7 @@ A integração de **assinaturas com plano associado** é feita em duas etapas. N
 
 O plano de assinatura permite definir, entre outros atributos, o título, valor e frequência das assinaturas criadas pelo vendedor. Para criar um plano e associá-lo à uma assinatura, veja o endpoint [/preapproval_plan](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/subscriptions/_preapproval_plan/post), preencha os atributos necessários e execute a requisição. 
 
-Ao executar a API, o plano estará criado e você terá acesso ao `preapproval_plan_id`, **que na resposta à API, será exibido apenas como ìd`.** Este **atributo é mandatório** para a criação da assinatura. 
-
+Ao executar a API, o plano estará criado e você terá acesso ao `preapproval_plan_id`, **que na resposta à API, será exibido apenas como `id`.** Este **atributo é mandatório** para a criação da assinatura. 
 
 ### Criar assinatura
 
