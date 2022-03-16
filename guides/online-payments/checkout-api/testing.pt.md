@@ -34,7 +34,8 @@ Inicie sua integração configurada com as credenciais do seu usuário de teste 
 >
 > Importante
 >
-> Tenha em conta que não é possível testar o fluxo completo para pagamentos em boleto ou em lotérica.
+> Tenha em conta que não é possível testar o fluxo completo para pagamentos em  Boleto bancário, Pagamento em lóterica sem boleto e Pix.
+
 
 ## Começar a receber pagamentos
 

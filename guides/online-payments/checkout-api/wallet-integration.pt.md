@@ -203,7 +203,7 @@ Depois, do seu frontend, adicione o seguinte código para exibir o botão de pag
 <script>
 // Adicione as credenciais do SDK
 const mp = new MercadoPago('PUBLIC_KEY', {
-      locale: 'es-BR'
+      locale: 'pt-BR'
 });
 
 const preferenceId = "<?php echo $preference->id; ?>"
@@ -227,7 +227,7 @@ mp.checkout({
 <script>
 // Adicione as credenciais do SDK
 const mp = new MercadoPago('PUBLIC_KEY', {
-      locale: 'es-BR'
+      locale: 'pt-BR'
 });
 
 // Inicializa o checkout
@@ -250,7 +250,7 @@ mp.checkout({
 <script>
 // Adicione as credenciais do SDK
 const mp = new MercadoPago('PUBLIC_KEY', {
-      locale: 'es-BR'
+      locale: 'pt-BR'
 });
 
 const preferenceId = ${preference.id};
@@ -274,7 +274,7 @@ mp.checkout({
 <script>
 # Adicione as credenciais do SDK
 const mp = new MercadoPago('PUBLIC_KEY', {
-      locale: 'es-BR'
+      locale: 'pt-BR'
 });
 
 const preferenceId = "<%= @preference_id %>";
@@ -298,7 +298,7 @@ mp.checkout({
 <script>
 // Adicione as credenciais do SDK
 const mp = new MercadoPago('PUBLIC_KEY', {
-      locale: 'es-BR'
+      locale: 'pt-BR'
 });
 
 const preferenceId = @Html.DisplayFor(model => model.id);
@@ -322,7 +322,7 @@ mp.checkout({
 <script>
 # Adicione as credenciais do SDK
 const mp = new MercadoPago('PUBLIC_KEY', {
-      locale: 'es-BR'
+      locale: 'pt-BR'
 });
 
 const preferenceId = {{ preference_id }}
