@@ -16,7 +16,7 @@ Al utilizar el simulador por primera vez, deberás ingresar tus credenciales y s
 
 * **PDV mode:** debes ingresar tu `access-token` de prueba y el simulador te asignará un dispositivo virtual.
 
-* **Device Mode:** Debes ingresar tu Access Token de prueba y tu Device Id obtenido al [listar tus dispositivos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/integration-api/create-payment-intent#bookmark_obtén_el_listado_de_tus_dispositivos_disponibles).
+* **Device mode:** debes ingresar tu `access-token` de prueba y la Identificación del dispositivo obtenido al [listar tus dispositivos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/integration-api/create-payment-intent#bookmark_obtén_el_listado_de_tus_dispositivos_disponibles).
 
 > WARNING
 >
