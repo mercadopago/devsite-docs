@@ -1,4 +1,4 @@
-# Cashout
+# CashOut
 
 This functionality allows the operator to provide money to the customer, deducting the amount directly from the balance in the account of the buyer who carried out a transaction.
 

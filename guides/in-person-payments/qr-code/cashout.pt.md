@@ -1,4 +1,4 @@
-# Retirada de dinheiro (Cashout)
+# Retirada de dinheiro (CashOut)
 
 Esta funcionalidade permite que o operador possa fornecer dinheiro ao cliente, descontando o valor diretamente do saldo em conta do comprador que realizou uma transação. 
 

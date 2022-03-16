@@ -58,9 +58,9 @@ tags:
       url: '/guides/online-payments/checkout-api/introduction'
   cash-out:
     description:
-      pt: 'Saque'
-      en: 'Cashout'
-      es: 'Retiro'
+      pt: 'Retirada de dinheiro'
+      en: 'CashOut'
+      es: 'Retiros de efectivo'
     externalDocs: 
       url: '/guides/in-person-payments/qr-code/introduction'
   
