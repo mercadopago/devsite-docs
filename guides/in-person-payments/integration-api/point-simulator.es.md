@@ -14,7 +14,7 @@ El simulador cuenta con dos modos de uso:
 
 Al utilizar el simulador por primera vez, deberás ingresar tus credenciales y seleccionar uno de tus dispositivos disponibles. 
 
-* **PDV Mode:** Debes ingresar tu Access Token de prueba y el simulador te asignará un dispositivo virtual.
+* **PDV mode:** debes ingresar tu `access-token` de prueba y el simulador te asignará un dispositivo virtual.
 
 * **Device Mode:** Debes ingresar tu Access Token de prueba y tu Device Id obtenido al [listar tus dispositivos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/in-person-payments/integration-api/create-payment-intent#bookmark_obtén_el_listado_de_tus_dispositivos_disponibles).
 
