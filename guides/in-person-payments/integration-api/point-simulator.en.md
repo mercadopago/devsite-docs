@@ -6,7 +6,7 @@ With this simulator, you will be able to create a payment intent and process it 
 The simulator has two modes of usage:
 
 * **PDV Mode**: Simulates the integration of a complete system (device and POS) with our Integrations API. Access the [PDV Mode Simulator](https://api.mercadopago.com/point/integrator-simulator/sandbox/?ignoreapidoc=true).
-* **Device Mode**: Simulates a virtual Point device so that you can test your integration from HTTP requests. Access the [Device Mode Simulator](https://api.mercadopago.com/point/integrator-simulator/sandbox/device?ignoreapidoc=true).
+* **Device mode**: simulates a virtual Point device so that you can test your integration from HTTP requests. Access the [Device Mode Simulator](https://api.mercadopago.com/point/integrator-simulator/sandbox/device?ignoreapidoc=true).
 
 ## How to use the simulator
 
