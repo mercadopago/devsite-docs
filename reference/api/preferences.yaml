@@ -983,7 +983,7 @@ paths:
       tags:
         - $ref: '#/tags/checkout-pro'
         - $ref: '#/tags/mobile-checkout'
-      summary: Update a preference
+      summary: Update preference
       description: Renew the details of a payment preference. Indicate the ID of the preference and send the parameters with the information you want to update
       parameters:
         - name: id
