@@ -14,7 +14,7 @@ The simulator has two modes of usage:
 
 When using the simulator for the first time, you will need to enter your keys and select one of your available devices.
 
-* **PDV Mode:** You must enter your Test Access Token and the simulator will assign you a virtual device.
+* **PDV mode:** you must enter your test `access-token` and the simulator will assign you a virtual device.
 
 * **Device mode:** you must enter your test `access-token` and your device id obtained when [listing your devices](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/in-person-payments/integration-api/create-payment-intent#bookmark_get_the_list_of_your_available_devices).
 
