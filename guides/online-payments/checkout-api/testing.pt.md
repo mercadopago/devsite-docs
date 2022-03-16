@@ -36,7 +36,6 @@ Inicie sua integração configurada com as credenciais do seu usuário de teste 
 >
 > Tenha em conta que não é possível testar o fluxo completo para pagamentos em  Boleto bancário, Pagamento em lóterica sem boleto e Pix.
 
-
 ## Começar a receber pagamentos
 
 Para começar a cobrar, você deve cumprir os [requisitos para entrar em produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/goto-production) e [ativar suas credenciais]([FAKER][CREDENTIALS][URL]).
