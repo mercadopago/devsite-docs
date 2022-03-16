@@ -22,7 +22,7 @@ When using the simulator for the first time, you will need to enter your keys an
 >
 > Important
 > 
-> Remember that to use the simulator you must configure a Test Access Token(`TEST-XXXXX-XXXXX-XXXXXXX`) and you can get it in your [integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications), option **My Credentials / Test Credentials**.
+> Remember that to use the simulator you must configure a test `access-token`(`TEST-XXXXX-XXXXX-XXXXXXX`) and you can get it in your [integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications), option **My credentials > Test credentials**.
 
 ### 2. Simulate a payment intent
 
