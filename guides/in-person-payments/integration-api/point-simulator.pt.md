@@ -22,7 +22,7 @@ Ao usar o simulador pela primeira vez, você precisará inserir suas chaves e se
 >
 > Importante
 >
-> Lembre-se que para usar o simulador você deve configurar um Token de Acesso de teste(`TEST-XXXXX-XXXXX-XXXXXXX`) e você pode obtê-lo em suas [integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications), opção **Minhas Credenciais / Credenciais de teste**.
+> Lembre-se que para usar o simulador você deve configurar um `access-token` de teste (`TEST-XXXXX-XXXXX-XXXXXXX`) e você pode obtê-lo em suas [integrações](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/applications), opção **Minhas credenciais > Credenciais de teste**.
 
 
 ### 2. Simule uma intenção de pagamento
