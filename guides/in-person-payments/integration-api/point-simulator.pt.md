@@ -6,7 +6,7 @@ Com este simulador, você poderá criar uma intenção de pagamento e processá-
 O simulador possui dois modos de uso:
 
 * **PDV mode**: simula a integração de um sistema completo (dispositivo e PDV) com nossa API de Integrações. Acesse o [Simulador PDV Mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/?ignoreapidoc=true).
-* **Device Mode**: Simula um dispositivo de ponto virtual para que você possa testar sua integração a partir de HTTP requests. Acesse o [Simulador Device Mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/device?ignoreapidoc=true).
+* **Device mode**: simula um dispositivo de ponto virtual para que você possa testar sua integração a partir de HTTP requests. Acesse o [Simulador device mode](https://api.mercadopago.com/point/integrator-simulator/sandbox/device?ignoreapidoc=true).
 
 ## Como usar o simulador
 
