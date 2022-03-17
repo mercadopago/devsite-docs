@@ -2,7 +2,7 @@
 
 ### Boleto bancário
 
-É possível disponibilizar ao o assinante a opção de pagar a assinatura com boleto bancário. Ao optar por esse meio de cobrança, o boleto enviado terá validade de 7 dias e continuará válido até 3 dias após o vencimento. Caso o assinante deixe de pagar mais de 2 boletos consecutivos, a assinatura será cancelada.
+É possível disponibilizar para o assinante a opção de pagar a assinatura com boleto bancário. Ao optar por esse meio de cobrança, o boleto enviado terá validade de 7 dias e continuará válido até 3 dias após o vencimento. Caso o assinante deixe de pagar mais de 2 boletos consecutivos, a assinatura será cancelada.
 
 Para oferecer pagamento de assinaturas via boleto bancário, envie um POST com o parâmetro `payment_methods_allowed" informando o meio de pagamento que deverá aparecerá no checkout, por exemplo, `bolbradesco` ao endpoint [/preapproval_plan](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/subscriptions/_preapproval_plan/post) e execute a requisição. 
 
