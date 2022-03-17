@@ -831,15 +831,15 @@ paths:
                           description: application identifier.
                         order_status:
                           $ref: '#/components/schemas/order_status'
-                    description: elements
+                    description: Contains the order data.
                   next_offset:
                     type: number
                     example: 1
-                    description: next_offset
+                    description: Numeric field used to paginate the response.
                   total:
                     type: number
                     example: 1
-                    description: total
+                    description: Total search results.
         '400':
           description: Error
           content:

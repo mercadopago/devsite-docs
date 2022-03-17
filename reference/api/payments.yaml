@@ -353,7 +353,7 @@ paths:
                   taxes_amount:
                     type: number
                     example: 0
-                    description: taxes_amount
+                    description: Corresponds to the tax values ​​calculated for the payment.
                   counter_currency:
                     type: string
                     format: nullable
@@ -1294,7 +1294,7 @@ paths:
                   taxes_amount:
                     type: number
                     example: 0
-                    description: taxes_amount
+                    description: Corresponds to the tax values ​​calculated for the payment.
                   counter_currency:
                     type: string
                     format: nullable
@@ -1718,16 +1718,16 @@ paths:
                         total:
                           type: number
                           example: 17493
-                          description: total
+                          description: The total number of items in the collection.
                         limit:
                           type: number
                           example: 30
-                          description: limit
+                          description: The maximum number of entries to return.
                         offset:
                           type: number
                           example: 0
-                          description: offset
-                      description: paging
+                          description: Numeric field used to paginate the response.
+                      description: Information for pagination of search results.
                     results:
                       type: array
                       items:
