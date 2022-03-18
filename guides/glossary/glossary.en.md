@@ -10,8 +10,6 @@ In the following table, you can find the main terms used in the subscription onb
 | Validation charge | Charge of a minimum amount made when signing up for the subscription to verify that the card used for payment is valid.
 Once the validation is done, the amount is automatically refunded to the payer. |
 | Billing date | Date defined by the seller for monthly subscription charges to occur automatically. |
-| Proportional value (Pro rata) | Amount to be charged if the subscription starts on a day other than the billing date set by the seller.
-This amount is proportional to the days between joining and the date of the first monthly charge. |
-| Free trial | Free trial that the seller can offer the subscriber before the first charge.
-In this case, the subscriber has the first payment paid and starts paying on the following charges. |
+| Proportional value (Pro rata) | Amount to be charged if the subscription starts on a day other than the billing date set by the seller.This amount is proportional to the days between joining and the date of the first monthly charge. |
+| Free trial | Free trial that the seller can offer the subscriber before the first charge. In this case, the subscriber has the first payment paid and starts paying on the following charges. |
 | Account balance |Account balance available in the Mercado Pago wallet that can be used to pay for subscriptions. |
