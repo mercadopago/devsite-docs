@@ -1,4 +1,4 @@
-# Getting started
+# Começando
 
 O Mercado Pago oferece diversas soluções que permitem receber pagamentos virtuais ou presenciais. Você pode oferecer meios de pagamento sem contratos nem mensalidades, através de integrações em loja online ou produtos, como link de pagamento, Código QR e com Point, a maquininha do Mercado Pago, que podem ou não ser integrados.
 
@@ -43,5 +43,10 @@ Nesse caso, você pode integrar as soluções via SDK ou plugin e realizar as cu
 
 > Veja a documentação da solução escolhida e integre.
 
-![Getting started](/images/getting-started/getting-started-diagram.png)
+![Getting started](/images/getting-started/getting-started-diagram-pt.png)
 
+## Glossário
+
+**Plugin:** componentes que agregam funcionalidades específicas a um sistema sem a necessidade de desenvolvimento. No nosso caso, os plugins realizam a instalação de determinadas soluções do Mercado Pago à algumas das mais conhecidas plataformas de comércio online.
+
+**SDK:** também conhecido como software development kit, é um conjunto de ferramentas que permite a criação de aplicações ou a adição de funcionalidades a produtos já existentes. No nosso caso, temos SDKs que realizam ambas atividades.
