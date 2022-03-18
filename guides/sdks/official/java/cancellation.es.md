@@ -4,11 +4,10 @@ Es posible cancelar una compra específica desde el ID de pago utilizando el SDK
 
 [[[
 ```java
-MercadoPago.SDK.configure("YOUR_ACCESS_TOKEN");
- 
-Payment payment = Payment.findById("payment_id");
-payment.setStatus(Payment.Status.cancelled);
-payment.update();
+PaymentClient client = new PaymentClient();
+
+Long paymentId = 123456789L;
+client.cancel(paymentId);
 
  
 ```
