@@ -607,7 +607,7 @@ paths:
                   live_mode:
                     type: string
                     example: 
-                    description: Live mode
+                    description: Whether the chargeback will be processed in sandbox or in production mode. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.
                   sponsor_id:
                     type: string
                     example: 
@@ -691,11 +691,11 @@ paths:
                               number:
                                 type: string
                                 example: "32659430"
-                                description: Number
+                                description: Identification number.
                               type:
                                 type: string
                                 example: "DNI"
-                                description: Type
+                                description: Identification type.
                         phone:
                           type: array
                           description: List of phones
@@ -753,7 +753,7 @@ paths:
                               title:
                                 type: string
                                 example: "My product"
-                                description: Title
+                                description: Item title.
                               description:
                                 type: string
                                 example: "E-commerce store cellphone"
@@ -846,7 +846,7 @@ paths:
                         id:
                           type: string
                           example: "3754501423"
-                          description: Identifier
+                          description: Order identifier
                   external_reference:
                     type: string
                     example: "firstname@gmail.com"

@@ -1963,7 +1963,7 @@ paths:
                             type: string
                             format: nullable
                             description: Merchant number (Applies to gateway model).
-                      description: results
+                      description: Search results
         '400':
           description: Error
           content:
@@ -2133,7 +2133,7 @@ components:
         - rejected -- Payment was rejected. The user may retry payment.
         - cancelled -- Payment was cancelled by one of the parties or because time for payment has expired
         - refunded -- Payment was refunded to the user.
-        - charged_back -- Was made a chargeback in the buyer’s credit card.
+        - charged_back -- A chargeback was made in the buyer’s credit card.
     payment_type_id:
       type: string
       description: Type of payment method chosen.

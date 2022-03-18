@@ -57,7 +57,7 @@ paths:
                         description: Unit price of the item. This property is used together with the property quantity to determine the order cost.
                 payer:
                   type: object
-                  description: Buyer information, such as name, last name, e-mail, phone, personal identification, address, and registration date.
+                  description: Buyer´s information, such as name, last name, e-mail, phone, personal identification, address, and registration date.
                   properties:
                     name:
                       type: string
@@ -1411,13 +1411,14 @@ paths:
                         description: Registration date.
                       last_purchase:
                         type: object
+                        description: Date of last purchase
                   payment_methods:
                     type: object
                     description: All configuration related to payments methods, such as excluded payment methods, excluded payment types, default payment method, and installments.
                     properties:
                       default_card_id:
                         type: object
-                        descriptionL: Default card ID.
+                        description: Default card ID.
                       default_payment_method_id:
                         type: string
                         format: nullable
