@@ -7,4 +7,4 @@ Com seu usuário e senha de teste, siga as próximas etapas:
 3. Insira os dados do seu usuário de teste.
 4. Confirme a compra.
 
-Pronto! Com o teste concluído corretamente, seu produto/serviço já poderão ser disponibilizadas para os seus clientes.
+Pronto! Com o teste concluído corretamente, seu produto/serviço já poderão ser disponibilizados para os seus clientes.
