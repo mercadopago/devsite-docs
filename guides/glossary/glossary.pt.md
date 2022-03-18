@@ -9,7 +9,6 @@ Na tabela a seguir, descrevemos os principais termos utilizados durante o proces
 | Pagamento autorizado ou authorized payment | Parcela de uma assinatura que é gerada e cobrada com base na recorrência definida. O mecanismo de assinatura agenda e gera os pagamentos automaticamente. |
 | Cobrança de verificação | Cobrança de um valor mínimo, feita no momento da adesão da assinatura para verificar se o cartão utilizado para pagamento é válido. Assim que a verificação é concluída, o valor é reembolsado automaticamente para o pagador. |
 | Data de cobrança | Data definida pelo vendedor para que as cobranças de assinaturas mensais ocorram automaticamente. |
-| Valor proporcional (pró-rata) | Valor cobrado do assinante caso a assinatura comece em um dia diferente da data de cobrança definida pelo vendedor. 
-Esse valor é proporcional aos dias entre a adesão e a data da primeira cobrança mensal. |
+| Valor proporcional (pró-rata) | Valor cobrado do assinante caso a assinatura comece em um dia diferente da data de cobrança definida pelo vendedor. Esse valor é proporcional aos dias entre a adesão e a data da primeira cobrança mensal. |
 | Teste grátis | Período gratuito que o vendedor pode oferecer ao assinante antes da primeira cobrança. Nesse caso, o assinante tem o primeiro pagamento abonado e começa a pagar nas cobranças seguintes. |
 | Account Money (Dinheiro em conta) | Saldo em conta disponível na carteira do Mercado Pago que pode ser utilizado para o pagamento das assinaturas. |
