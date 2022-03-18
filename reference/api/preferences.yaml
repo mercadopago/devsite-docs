@@ -57,7 +57,7 @@ paths:
                         description: Unit price of the item. This property is used together with the property quantity to determine the order cost.
                 payer:
                   type: object
-                  description: Buyer´s information, such as name, last name, e-mail, phone, personal identification, address, and registration date.
+                  description: Buyer information, such as name, last name, e-mail, phone, personal identification, address, and registration date.
                   properties:
                     name:
                       type: string
@@ -579,7 +579,7 @@ paths:
                         id:
                           type: string
                           example: 202809963-a2201f8d-11cb-443f-adf6-de5a42eed67d
-                          description: Preference ID.
+                          description: id
                         client_id:
                           type: string
                           example: 6295877106812064
@@ -630,7 +630,7 @@ paths:
                           description: Last updated date
                         live_mode:
                           type: boolean
-                          description: Indicates whether the Payment was made in a production environment or in a Test environment. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.
+                          description: live_mode
                         marketplace:
                           type: string
                           example: NONE
@@ -652,7 +652,7 @@ paths:
                           description: Unique ID used to identify the product.
                         purpose:
                           type: string
-                          description: This field has two possible values, empty and wallet_purchase.
+                          description: purpose
                         site_id:
                           type: string
                           example: MLA
@@ -669,11 +669,11 @@ paths:
                           type: number
                           example: 0
                           description: Unique numeric ID to identify the sponsor. It is used to identify what platform the checkout flow was initiated in.
-                    description: Elements
+                    description: elements
                   next_offset:
                     type: number
                     example: 1
-                    description: Numeric field used to paginate the response.
+                    description: next_offset
                   total:
                     type: number
                     example: 1
@@ -1277,7 +1277,7 @@ paths:
                     description: Registration date.
                   date_of_expiration:
                     type: object
-                    description: Expiration date
+                    description: 
                   expiration_date_from:
                     type: string
                     format: nullable
@@ -1411,14 +1411,13 @@ paths:
                         description: Registration date.
                       last_purchase:
                         type: object
-                        description: Date of last purchase
                   payment_methods:
                     type: object
                     description: All configuration related to payments methods, such as excluded payment methods, excluded payment types, default payment method, and installments.
                     properties:
                       default_card_id:
                         type: object
-                        description: Default card ID.
+                        descriptionL: Default card ID.
                       default_payment_method_id:
                         type: string
                         format: nullable

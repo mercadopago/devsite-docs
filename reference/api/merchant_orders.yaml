@@ -36,7 +36,7 @@ paths:
                   description: Identifier of the Partners Mercado Pago account. It is used to identify if the integration was performed by a partner.
                 payer:
                   type: object
-                  description: Buyer's information.
+                  description: Buyer Information.
                   properties:
                     id:
                       type: number
@@ -196,7 +196,7 @@ paths:
                       email:
                         type: string
                         description: Payer’s email address.
-                    description: Buyer's information.
+                    description: Buyer Information.
                   items:
                     type: array
                     items:
@@ -781,7 +781,7 @@ paths:
                             email:
                               type: string
                               description: Payer’s email address.
-                          description: Buyer's information.
+                          description: Buyer Information.
                         items:
                           type: array
                           items:
@@ -831,15 +831,15 @@ paths:
                           description: application identifier.
                         order_status:
                           $ref: '#/components/schemas/order_status'
-                    description: Contains the order data.
+                    description: elements
                   next_offset:
                     type: number
                     example: 1
-                    description: Numeric field used to paginate the response.
+                    description: next_offset
                   total:
                     type: number
                     example: 1
-                    description: Total search results.
+                    description: total
         '400':
           description: Error
           content:
@@ -1256,7 +1256,7 @@ paths:
                     description: Refunded amount
                   payer:
                     type: object
-                    description: Buyer's information.
+                    description: Buyer Information.
                     properties:
                       id:
                         type: number
@@ -1376,7 +1376,7 @@ paths:
                   description: Identifier of the Partners Mercado Pago account. It is used to identify if the integration was performed by a partner.
                 payer:
                   type: object
-                  description: Buyer's information.
+                  description: Buyer Information.
                   properties:
                     id:
                       type: number
@@ -1550,7 +1550,7 @@ paths:
                       email:
                         type: string
                         description: Payer’s email address.
-                    description: Buyer's information.
+                    description: Buyer Information.
                   items:
                     type: array
                     items:
@@ -1697,7 +1697,7 @@ components:
       enum:
         - payment_required -- Order without payments or with all payments "rejected" or "cancelled".
         - reverted -- Order with all payments "refunded" or "chargeback".
-        - paid -- Order with the sum of all payments "approved", "chargeback" or "in_mediation", covers the order total amount.
+        - paid -- Order with the sum of all payments "approved", "chargeback" or "in_mediation" covers the order total amount.
         - partially_reverted -- Order with at least one payment "refunded" or "chargeback".
         - partially_paid -- Order with at least one payment "approved" and not covering order total amount.
         - payment_in_process -- Order with payments "in_process", "pending" or "authorized".
