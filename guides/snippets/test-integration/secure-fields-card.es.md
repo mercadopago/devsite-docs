@@ -2,9 +2,9 @@ Para crear un pago es necesario hacer la captura de los datos de la tarjeta a tr
 
 Para capturar datos de la tarjeta, siga estos pasos:
 
-[1. Incluye y configura la librería MercadoPago.js](#bookmark_1._incluye_y_configura_la_librería_mercadopago.js)
-[2. Agrega el formulario de pago](#bookmark_2._agrega_el_formulario_de_pago)
-[3. Integra el formulario con la librería MercadoPago.js](#bookmark_3._integra_el_formulario_con_la_librería_mercadopago.js)
+1. [Incluye y configura la librería MercadoPago.js](#bookmark_1._incluye_y_configura_la_librería_mercadopago.js)
+2. [Agrega el formulario de pago](#bookmark_2._agrega_el_formulario_de_pago)
+3. [Integra el formulario con la librería MercadoPago.js](#bookmark_3._integra_el_formulario_con_la_librería_mercadopago.js)
 
 ### 1. Incluye y configura la librería MercadoPago.js
 
