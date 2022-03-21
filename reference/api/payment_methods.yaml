@@ -29,7 +29,7 @@ paths:
                     name:
                       type: string
                       example: Visa
-                      description: Name of the payment method.
+                      description: Descriptive name of the payment method, for example Visa, American Express, etc.
                     payment_type_id:
                       type: string
                       example: credit_card
@@ -51,15 +51,15 @@ paths:
                     secure_thumbnail:
                       type: string
                       example: https://www.mercadopago.com/org-img/MP3/API/logos/visa.gif
-                      description: Logo to display on secure sites.
+                      description: Logo to display on secure sites. Link to the thumbnail image that identifies the issuer and the payment method hosted on a server with a secure transfer protocol.
                     thumbnail:
                       type: string
                       example: http://img.mlstatic.com/org-img/MP3/API/logos/visa.gif
-                      description: Logo to show.
+                      description: Logo to show. Link to the thumbnail image that identifies the issuer and the payment method.
                     deferred_capture:
                       type: string
                       example: supported
-                      description: Whether the capture can be delayed or not.
+                      description: Indicates whether the capture can be delayed or not. It has three possible values.
                       enum:
                         - supported -- This payment method supports authorization and capture operations.
                         - unsupported -- Deferred capture is not available for this payment method.
@@ -69,7 +69,7 @@ paths:
                       properties:
                         bin:
                           type: object
-                          description: bin
+                          description: Regular expression through which it will be verified if a bin corresponds to the means of payment.
                           properties:
                             pattern:
                               type: string
@@ -83,12 +83,10 @@ paths:
                             installments_pattern:
                               type: string
                               example: ^(?!(417401|453998|426398|462437|451212|456188))
-                              description: >-
-                                Regular expression representing bins allowed to pay with more than
-                                one installment.
+                              description: Regular expression representing bins allowed to pay with more than one installment.
                         card_number:
                           type: object
-                          description: card_number
+                          description: Contains information about card length and validaton.
                           properties:
                             length:
                               type: string
@@ -105,7 +103,7 @@ paths:
                                 - none -- There is no algorithm to validate the checksum.
                         security_code:
                           type: object
-                          description: security_code
+                          description: Card security code information.
                           properties:
                             mode:
                               type: string
@@ -161,7 +159,10 @@ paths:
                     processing_modes:
                       type: string
                       example: aggregator
-
+                      description: The processing mode of the means of payment. There are 2 types.
+                      enum:
+                        - Aggegator -- aggregator mode. Receive payments using all the cards and promotions that Mercado Pago offers, in addition to bank transfers and offline payment methods and where the money is deposited and managed in a Mercado Pago bank accounts.
+                        - Gateway -- gateway mode. Receive payments directly into the store codes (merchant account) of the seller using all the seller's own promotions. With this mode they can also negotiate with purchasers, both in terms of tariffs and interest-free installments and promotions.
         '400':
           description: Error
           content:

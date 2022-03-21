@@ -30,6 +30,10 @@ Este relatório **é usado para conciliar as movimentações de dinheiro** aprov
 
 Além disso, você pode usar o relatório para ver o histórico do seu dinheiro em conta entre duas datas e ver os detalhes dos eventos que o afetam, como disputas, contestações, devoluções, envios, entre outros.
 
+### Previsibilidade de Liberações
+
+Opcionalmente, o relatório traz colunas com o agendamento das previsões de liberações de pagamentos, possibilitando um melhor planejamento dos recebíveis.
+
 > NOTE
 >
 > Nota

@@ -85,6 +85,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
     "show_chargeback_cancel": true,
     "scheduled": false,
     "coupon_detailed": true,
+    "include_withdraw": true,
     "shipping_detail": true,
     "refund_detailed": true,
     "display_timezone": "GMT-04",
@@ -95,7 +96,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
     },
     "columns": [
         {
-            "key": "DATE"
+            "key": "TRANSACTION_DATE"
         },
         {
             "key": "SOURCE_ID"
@@ -122,6 +123,7 @@ curl -X POST \
             "file_name_prefix": "settlement-report-USER_ID",
             "show_fee_prevision": false,
             "show_chargeback_cancel": true,
+            "include_withdraw": true,
             "coupon_detailed": true,
             "shipping_detail": true,
             "refund_detailed": true,
@@ -137,7 +139,7 @@ curl -X POST \
             },
             "columns": [
                 {
-                    "key": "DATE"
+                    "key": "TRANSACTION_DATE"
                 },
                 {
                     "key": "SOURCE_ID"
@@ -161,6 +163,7 @@ $data = '{
             "file_name_prefix": "settlement-report-USER_ID",
             "show_fee_prevision": false,
             "show_chargeback_cancel": true,
+            "include_withdraw": true,
             "coupon_detailed": true,
             "shipping_detail": true,
             "refund_detailed": true,
@@ -176,7 +179,7 @@ $data = '{
             },
             "columns": [
                 {
-                    "key": "DATE"
+                    "key": "TRANSACTION_DATE"
                 },
                 {
                     "key": "SOURCE_ID"
@@ -205,6 +208,7 @@ String body = "{
                     \\"show_fee_prevision\\": false,
                     \\"show_chargeback_cancel\\": true,
                     \\"coupon_detailed\\": true,
+                    \\"include_withdraw\\": true,
                     \\"shipping_detail\\": true,
                     \\"refund_detailed\\": true,
                     \\"display_timezone\\": \\"GMT-04\\",
@@ -218,7 +222,7 @@ String body = "{
                         \\"value\\": 1
                     },
                     \\"columns\\": [
-                        { \\"key\\": \\"DATE\\" },
+                        { \\"key\\": \\"TRANSACTION_DATE\\" },
                         { \\"key\\": \\"SOURCE_ID\\" },
                         { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
                     ]
@@ -247,6 +251,7 @@ data = '{
             "show_fee_prevision": false,
             "show_chargeback_cancel": true,
             "coupon_detailed": true,
+            "include_withdraw": true,
             "shipping_detail": true,
             "refund_detailed": true,
             "display_timezone": "GMT-04",
@@ -261,7 +266,7 @@ data = '{
             },
             "columns": [
                 {
-                    "key": "DATE"
+                    "key": "TRANSACTION_DATE"
                 },
                 {
                     "key": "SOURCE_ID"
@@ -288,6 +293,7 @@ var dataString = '{
             "show_fee_prevision": false,
             "show_chargeback_cancel": true,
             "coupon_detailed": true,
+            "include_withdraw": true,
             "shipping_detail": true,
             "refund_detailed": true,
             "display_timezone": "GMT-04",
@@ -302,7 +308,7 @@ var dataString = '{
             },
             "columns": [
                 {
-                    "key": "DATE"
+                    "key": "TRANSACTION_DATE"
                 },
                 {
                     "key": "SOURCE_ID"
@@ -339,6 +345,7 @@ Recibirás como respuesta un `HTTP STATUS 201 (Created)`
     "show_chargeback_cancel": true,
     "scheduled": false,
     "coupon_detailed": true,
+    "include_withdraw": true,
     "shipping_detail": true,
     "refund_detailed": true,
     "display_timezone": "GMT-04",
@@ -353,7 +360,7 @@ Recibirás como respuesta un `HTTP STATUS 201 (Created)`
     },
     "columns": [
         {
-            "key": "DATE"
+            "key": "TRANSACTION_DATE"
         },
         {
             "key": "SOURCE_ID"
@@ -382,6 +389,7 @@ curl -X PUT \
         "show_fee_prevision": false,
         "show_chargeback_cancel": true,
         "coupon_detailed": true,
+        "include_withdraw": true,
         "shipping_detail": true,
         "refund_detailed": true,
         "display_timezone": "GMT-04",
@@ -396,7 +404,7 @@ curl -X PUT \
         },
         "columns": [
             {
-                "key": "DATE"
+                "key": "TRANSACTION_DATE"
             },
             {
                 "key": "SOURCE_ID"
@@ -421,6 +429,7 @@ $data = '{
         "show_fee_prevision": false,
         "show_chargeback_cancel": true,
         "coupon_detailed": true,
+        "include_withdraw": true,
         "shipping_detail": true,
         "refund_detailed": true,
         "display_timezone": "GMT-04",
@@ -435,7 +444,7 @@ $data = '{
         },
         "columns": [
             {
-                "key": "DATE"
+                "key": "TRANSACTION_DATE"
             },
             {
                 "key": "SOURCE_ID"
@@ -464,6 +473,7 @@ String body = "{
                     \\"show_fee_prevision\\": false,
                     \\"show_chargeback_cancel\\": true,
                     \\"coupon_detailed\\": true,
+                    \\"include_withdraw\\": true,
                     \\"shipping_detail\\": true,
                     \\"refund_detailed\\": true,
                     \\"display_timezone\\": \\"GMT-04\\",
@@ -477,7 +487,7 @@ String body = "{
                         \\"value\\": 1
                     },
                     \\"columns\\": [
-                        { \\"key\\": \\"DATE\\" },
+                        { \\"key\\": \\"TRANSACTION_DATE\\" },
                         { \\"key\\": \\"SOURCE_ID\\" },
                         { \\"key\\": \\"EXTERNAL_REFERENCE\\" },
                     ]
@@ -505,6 +515,7 @@ data = '{
             "show_fee_prevision": false,
             "show_chargeback_cancel": true,
             "coupon_detailed": true,
+            "include_withdraw": true,
             "shipping_detail": true,
             "refund_detailed": true,
             "display_timezone": "GMT-04",
@@ -519,7 +530,7 @@ data = '{
             },
             "columns": [
                 {
-                    "key": "DATE"
+                    "key": "TRANSACTION_DATE"
                 },
                 {
                     "key": "SOURCE_ID"
@@ -546,6 +557,7 @@ var dataString = '{
         "show_fee_prevision": false,
         "show_chargeback_cancel": true,
         "coupon_detailed": true,
+        "include_withdraw": true,
         "shipping_detail": true,
         "refund_detailed": true,
         "display_timezone": "GMT-04",
@@ -560,7 +572,7 @@ var dataString = '{
         },
         "columns": [
             {
-                "key": "DATE"
+                "key": "TRANSACTION_DATE"
             },
             {
                 "key": "SOURCE_ID"
@@ -598,6 +610,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
     "show_chargeback_cancel": true,
     "scheduled": false,
     "coupon_detailed": true,
+    "include_withdraw": true,
     "shipping_detail": true,
     "refund_detailed": true,
     "display_timezone": "GMT-04",
@@ -612,7 +625,7 @@ Recibirás como respuesta un `HTTP STATUS 200 (Ok)`
     },
     "columns": [
         {
-            "key": "DATE"
+            "key": "TRANSACTION_DATE"
         },
         {
             "key": "SOURCE_ID"
@@ -636,6 +649,7 @@ Conoce los campos que puedes configurar para ajustar tus preferencias antes de e
 | `columns` | <br/>Campo con el detalle de columnas a incluir en tu reporte. Encuentra todos los posibles valores en la sección de  [Glosario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/account-money/glossary).<br/><br/>|
 | `file_name_prefix` | <br/>Prefijo que compone el nombre del reporte una vez generado y listo para descargar.<br/><br/> |
 | `display_timezone` (opcional) | <br/>Este campo determina la fecha y la hora que se visualiza en los reportes. Si no configuras este campo con una zona horaria, el sistema tomará por defecto el valor GMT-04. Si eliges una zona horaria que utiliza horario de verano, es necesario que hagas el ajuste manual cuando cambie la hora.<br/><br/> |
+| `include_withdraw` | <br/>Este parámetro nos permite ignorar (false) o incluir (true) los retiros de dinero en el reporte.<br/><br/> |
 | `report_translation` (opcional) | <br/>Permite cambiar el idioma predeterminado de los encabezados de las columnas. En caso de habilitarlo, se recomienda verificar que funcionen correctamente las integraciones con archivos de Excel (.xlsx) que permiten conciliar de forma automática.<br/><br/> Si la integración no funciona bien, asegúrate de actualizarla tomando como referencia los nuevos encabezados.<br/><br/> |
 | `frequency` | <br/>Indica la frecuencia diaria, semanal o mensual de los reportes programados.<br/><br/> - `frequency` aplica type *monthly* al día del mes o *weekly* el día de la semana<br/> - `hour` hora del día en la que generar el reporte <br/> - `type` indica el tipo de frecuencia *daily* (diaria), *weekly* (semanal) y *monthly* (mensual).<br/><br/> |
 | *`refund_detailed` (opcional)* | <br/>Muestra el código de referencia (`external_reference`) del reembolso en vez del código de referencia (`external_reference`) del pago.<br/><br/> |

@@ -10,6 +10,8 @@ paths:
       tags:
         - $ref: '#/tags/checkout-api'
         - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/subscriptions'
+        - $ref: '#/tags/qr-code'
       summary: Create test user
       description: This endpoint handles http requests to create a test user
       parameters:
@@ -145,6 +147,8 @@ paths:
       tags:
         - $ref: '#/tags/checkout-api'
         - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/subscriptions'
+        - $ref: '#/tags/qr-code'
       summary: Search test user
       description: This endpoint handles http requests to search a test user
       parameters:
@@ -267,6 +271,8 @@ paths:
       tags:
         - $ref: '#/tags/checkout-api'
         - $ref: '#/tags/checkout-pro'
+        - $ref: '#/tags/subscriptions'
+        - $ref: '#/tags/qr-code'
       summary: Update test user password
       description: This endpoint handles http requests to change the test user password
       parameters:
@@ -344,8 +350,10 @@ paths:
       tags:
         - $ref: '#/tags/checkout-api'
         - $ref: '#/tags/checkout-pro'
-      summary: Add AM to test user account
-      description: This endpoint handles http requests to add account_money to the test user account
+        - $ref: '#/tags/subscriptions'
+        - $ref: '#/tags/qr-code'
+      summary: Add amount (account_money) to test user account
+      description: This endpoint handles http requests to add amount (account_money) to the test user account
       parameters:
         - name: access_token
           in: query
