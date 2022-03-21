@@ -44,9 +44,3 @@ En ese caso, puedes integrar las soluciones a través de SDK o plugin y realizar
 > Accede a la documentación de la plataforma elegida e integra.
 
 ![Getting started](/images/getting-started/getting-started-diagram-es.png)
-
-## Glosario
-
-**Plugin:** componentes que añaden funcionalidades específicas a un sistema sin necesidad de desarrollo. En nuestro caso, los plugins instalan determinadas soluciones de Mercado Pago en algunas de las plataformas de comercio online más conocidas.
-
-**SDK:** también conocido como kit de desarrollo de software, es un conjunto de herramientas que permite la creación de aplicaciones o el agregado de funcionalidad a productos existentes. En nuestro caso, tenemos SDKs que realizan ambas actividades.

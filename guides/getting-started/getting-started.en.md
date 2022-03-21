@@ -46,9 +46,3 @@ In this case, you can integrate the solutions via SDK or plugin and perform cust
 > Check out the documentation of the chosen solution and integrate.
 
 ![Getting started](/images/getting-started/getting-started-diagram-en.png)
-
-## Glossary
-
-**Plugin:** Set of components that add specific functionalities to a system without requiring development. In our case, the plugins install Mercado Pago's solutions in some of the most well-known online commerce platforms.
-
-**SDK:** Known as a software development kit, an SDK is a set of tools that allows the creation of applications or the addition of functionalities to existing products. In our scenario, we have SDKs that perform both activities.
