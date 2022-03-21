@@ -13,3 +13,5 @@ Once the validation is done, the amount is automatically refunded to the payer. 
 | Proportional value (Pro rata) | Amount to be charged if the subscription starts on a day other than the billing date set by the seller.This amount is proportional to the days between joining and the date of the first monthly charge. |
 | Free trial | Free trial that the seller can offer the subscriber before the first charge. In this case, the subscriber has the first payment paid and starts paying on the following charges. |
 | Account balance |Account balance available in the Mercado Pago wallet that can be used to pay for subscriptions. |
+| Plugin | Set of components that add specific functionalities to a system without requiring development. In our case, the plugins install Mercado Pago's solutions in some of the most well-known online commerce platforms. |
+| SDK |  Known as a software development kit, an SDK is a set of tools that allows the creation of applications or the addition of functionalities to existing products. In our scenario, we have SDKs that perform both activities. |
