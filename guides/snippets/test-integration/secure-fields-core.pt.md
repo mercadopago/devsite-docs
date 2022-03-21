@@ -8,16 +8,12 @@ Para criar um pagamento é necessário fazer a captura dos dados do cartão atra
 
 Para capturar os dados do cartão, siga estas etapas:
 
-- [1. Inclua a biblioteca MercadoPago.js](#1-inclua-a-biblioteca-mercadopagojs)
-- [2. Adicione o formulário de pagamento](#2-adicione-o-formulário-de-pagamento)
-- [3. Configure sua chave pública](#3-configure-sua-chave-pública)
-- [4. Crie os campos PCI](#4-crie-os-campos-pci)
-- [5. Obtenha os dados para seu formulário](#5-obtenha-os-dados-para-seu-formulário)
-  - [Obtenha os tipos de documento](#obtenha-os-tipos-de-documento)
-  - [Obtenha o meio de pagamento do cartão](#obtenha-o-meio-de-pagamento-do-cartão)
-  - [Obtenha o banco emissor](#obtenha-o-banco-emissor)
-  - [Obtenha a quantidade de parcelas](#obtenha-a-quantidade-de-parcelas)
-- [6. Crie o token do cartão](#6-crie-o-token-do-cartão)
+[1. Inclua a biblioteca MercadoPago.js](#bookmark_1._inclua_a_biblioteca_mercadopago.js)
+[2. Adicione o formulário de pagamento](#bookmark_2._adicione_o_formulário_de_pagamento)
+[3. Configure sua chave pública](#bookmark_3._configure_sua_chave_pública)
+[4. Crie os campos PCI](#bookmark_4._crie_os_campos_pci)
+[5. Obtenha os dados para seu formulário](#bookmark_5._obtenha_os_dados_para_seu_formulário)
+[6. Crie o token do cartão](#bookmark_6._crie_o_token_do_cartão)
 
 ### 1. Inclua a biblioteca MercadoPago.js
 

@@ -8,16 +8,12 @@ Para crear un pago es necesario hacer la captura de los datos de la tarjeta a tr
 
 Para capturar datos de la tarjeta, sigue estos pasos:
 
-- [1. Incluye la librería MercadoPago.js](#1-incluye-la-librería-mercadopagojs)
-- [2. Agrega el formulario de pago](#2-agrega-el-formulario-de-pago)
-- [3. Configura tu clave pública](#3-configura-tu-clave-pública)
-- [4. Crea los campos PCI](#4-crea-los-campos-pci)
-- [5. Obtén los datos para tu formulario](#5-obtén-los-datos-para-tu-formulario)
-  - [Obtener tipos de documentos](#obtener-tipos-de-documentos)
-  - [Obtener método de pago de la tarjeta](#obtener-método-de-pago-de-la-tarjeta)
-  - [Obtener banco emisor](#obtener-banco-emisor)
-  - [Obtener cantidad de cuotas](#obtener-cantidad-de-cuotas)
-- [6. Crea el token de la tarjeta](#6-crea-el-token-de-la-tarjeta)
+[1. Incluye la librería MercadoPago.js](#bookmark_1._incluye_la_librería_mercadopago.js)
+[2. Agrega el formulario de pago](#bookmark_2._agrega_el_formulario_de_pago)
+[3. Configura tu clave pública](#bookmark_3._configura_tu_clave_pública)
+[4. Crea los campos PCI](#bookmark_4._crea_los_campos_pci)
+[5. Obtén los datos para tu formulario](#bookmark_5._obtén_los_datos_para_tu_formulario)
+[6. Crea el token de la tarjeta](#bookmark_6._crea_el_token_de_la_tarjeta)
 
 ### 1. Incluye la librería MercadoPago.js
 

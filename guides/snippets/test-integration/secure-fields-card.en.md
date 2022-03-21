@@ -2,9 +2,9 @@ To create a payment, you should capture card data through the buyer's browser. F
 
 To capture card data, follow these steps:
 
-- [1. Include and configure MercadoPago.js library](#1-include-and-configure-mercadopagojs-library)
-- [2. Add payment form](#2-add-payment-form)
-- [3. Integrate the form with MercadoPago.js library](#3-integrate-the-form-with-mercadopagojs-library)
+[1. Include and configure MercadoPago.js library](#bookmark_1._include_and_configure_mercadopago.js_library)
+[2. Add payment form](#bookmark_2._add_payment_form)
+[3. Integrate the form with MercadoPago.js library](#bookmark_3._integrate_the_form_with_mercadopago.js_library)
 
 ### 1. Include and configure MercadoPago.js library
 
