@@ -1,8 +1,7 @@
+# Campos del reporte
 
-# Glosario
 
-
-Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado con todos ellos. ¡Usa este glosario para no perderte!
+Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado con todos ellos. ¡Usa esta tabla para no perderte!
 
 | Nombre de la columna del reporte | Qué significa |
 | --- | --- |

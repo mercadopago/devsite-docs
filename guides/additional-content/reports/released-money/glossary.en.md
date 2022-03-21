@@ -1,7 +1,7 @@
-# Glossary
+# Report fields
 
 
-If you have any doubts about the technical terms used, check the glossary below.
+If you have any doubts about the technical terms used, check the table below.
 
 | Name on the report column | What it means |
 | --- | --- |

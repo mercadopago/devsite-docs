@@ -1,8 +1,7 @@
+# Report fields
 
-# Glossary
 
-
-We know, some terms are technical and you may not be familiar with all of them. Use this glossary to not get lost!
+We know, some terms are technical and you may not be familiar with all of them. Use this table to not get lost!
 
 | Name on the report column | What it means |
 | --- | --- |

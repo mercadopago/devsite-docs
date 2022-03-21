@@ -1,8 +1,7 @@
+# Campos do relatório
 
-# Glossário
 
-
-Sabemos que alguns termos são técnicos e você pode não estar familiarizado com todos eles. Use este glossário para não se perder!
+Sabemos que alguns termos são técnicos e você pode não estar familiarizado com todos eles. Use esta tabela para não se perder!
 
 | Nome da coluna do relatório | O que significa |
 | --- | --- |
