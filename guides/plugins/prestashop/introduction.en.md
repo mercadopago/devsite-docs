@@ -6,7 +6,7 @@
 > 
 > Mercado Pago checkout for PrestaShop version 1.6 will be disabled.
 >
-> As of the next update (4.10.0+), there will be no Mercado Pago checkout for PrestaShop version 1.6. Follow the instructions and upgrade so you don't stop selling. [SEE HOW TO UPGRADE](https://devdocs.prestashop.com/1.7/basics/keeping-up-to-date/) 
+> As of the next update (4.10.0+), there will be no Mercado Pago checkout for PrestaShop version 1.6. [Click here](https://devdocs.prestashop.com/1.7/basics/keeping-up-to-date/) and follow the instructions to upgrade your PrestaShop version.
 
 [PrestaShop](https://www.prestashop.com/en/) is an e-commerce platform with open source software that allows any user to create and develop a commercial website. As official PrestaShop partners, we provide greater security and efficiency to your store.
  
