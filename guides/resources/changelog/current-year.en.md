@@ -36,7 +36,7 @@ We have released the new version 4.10.0 for PrestaShop.
 
 We have released the new version 3.15.0 for Magento 2.
 
-[Go to Magento 2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/official/magento-two)
+[Go to Magento 2 documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/magento-two/introduction)
 
 > GIT
 >
