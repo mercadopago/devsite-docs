@@ -45,4 +45,4 @@ In this case, you can integrate the solutions via SDK or plugin and perform cust
 
 > Check out the documentation of the chosen solution and integrate.
 
-![Getting started](/images/getting-started/getting-started-diagram-en.png)
+![Getting started](/images/getting-started/getting-started-diagram2-en.png)

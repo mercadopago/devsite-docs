@@ -43,4 +43,4 @@ En ese caso, puedes integrar las soluciones a través de SDK o plugin y realizar
 
 > Accede a la documentación de la plataforma elegida e integra.
 
-![Getting started](/images/getting-started/getting-started-diagram-es.png)
+![Getting started](/images/getting-started/getting-started-diagram2-es.png)

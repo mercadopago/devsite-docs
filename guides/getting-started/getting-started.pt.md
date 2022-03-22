@@ -43,5 +43,5 @@ Nesse caso, você pode integrar as soluções via SDK ou plugin e realizar as cu
 
 > Veja a documentação da solução escolhida e integre.
 
-![Getting started](/images/getting-started/getting-started-diagram-pt.png)
+![Getting started](/images/getting-started/getting-started-diagram2-pt.png)
 
