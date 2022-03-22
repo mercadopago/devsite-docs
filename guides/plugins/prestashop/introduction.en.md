@@ -2,7 +2,9 @@
 
 > WARNING
 >
-> Attention! Mercado Pago checkout for PrestaShop version 1.6 will be disabled.
+> Attention
+> 
+> Mercado Pago checkout for PrestaShop version 1.6 will be disabled.
 >
 > As of the next update (4.10.0+), there will be no Mercado Pago checkout for PrestaShop version 1.6. Follow the instructions and upgrade so you don't stop selling. [SEE HOW TO UPGRADE](https://devdocs.prestashop.com/1.7/basics/keeping-up-to-date/) 
 
