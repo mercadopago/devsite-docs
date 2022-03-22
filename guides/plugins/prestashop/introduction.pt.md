@@ -1,6 +1,6 @@
 # PrestaShop
 
-> NOTE
+> WARNING
 >
 > Atenção
 > 
