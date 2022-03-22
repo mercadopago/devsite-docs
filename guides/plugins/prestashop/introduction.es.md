@@ -6,7 +6,7 @@
 >
 > El checkout de Mercado Pago para la versión 1.6 de PrestaShop estará desactivado.
 >
-> A partir de la próxima actualización (4.10.0+), no habrá checkout de Mercado Pago para la versión 1.6 de PrestaShop. Siga las instrucciones y actualice su versión de PrestaShop para seguir vendiendo. [VER COMO ACTUALIZAR](https://devdocs.prestashop.com/1.7/basics/keeping-up-to-date/)
+> A partir de la próxima actualización (4.10.0+), no habrá checkout de Mercado Pago para la versión 1.6 de PrestaShop. [Haz clic aquí](https://devdocs.prestashop.com/1.7/basics/keeping-up-to-date/) y siga las instrucciones para actualizar su versión de PrestaShop.
 
 [PrestaShop](https://www.prestashop.com/es/) es una plataforma de comercio electrónico con software de código abierto que permite a cualquier usuario crear y desarrollar un sitio web comercial. Como socios oficiales de PrestaShop, brindamos mayor seguridad y eficiencia a tu tienda.
  
