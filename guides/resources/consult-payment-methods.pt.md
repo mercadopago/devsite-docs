@@ -1,4 +1,4 @@
-# Disponibilidade dos meios de pagamento
+# Disponibilidade dos produtos e meios de pagamento
 
 Os produtos e seus meios de pagamento oferecidos pelo Mercado Pago variam de acordo com cada país. Veja abaixo como consultar todos os meios de pagamento que estão disponíveis e, a partir disso, quais estarão ou não disponíveis por produto e por país.
 
