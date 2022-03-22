@@ -4,9 +4,9 @@ To be able to integrate Mercado Pago Delivery with your POS, you must meet the r
 
 | Requirements | Description |
 |---|---|
-|Mercado Pago Account| To make sales, you need a seller account on Mercado Pago. If you don't have it, [check here](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) to create it.|
+|Mercado Pago Account| It is necessary for the integrator to have an account on Mercado Pago in order to be able to generate their credentials. If you don't have it, [check here](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) to create it.|
 |Credentials| The [credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) are unique passwords with which we identify an integration in your account and serve to capture payments in virtual stores and other applications securely.|
-|Access Token| You will need a valid access token in the different requests of public origin to have access to protected resources of other Mercado Pago accounts. See [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/oauth/introduction) to learn how to get an access token.|
+|Access Token| You will need a valid access token in the different requests of public origin to have access to protected resources of other Mercado Pago accounts. In addition, through the OAuth authorization protocol, it will be possible to receive notifications of orders from restaurants. Check [OAuth](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/security/oauth/introduction) to learn how to get an access token.|
 
 > NEXT_STEP_CARD_EN
 >
