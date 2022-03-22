@@ -1,6 +1,6 @@
 # PrestaShop
 
-> NOTE
+> WARNING
 >
 > Attention! Mercado Pago checkout for PrestaShop version 1.6 will be disabled.
 >
