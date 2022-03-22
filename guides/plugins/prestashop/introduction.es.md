@@ -1,6 +1,6 @@
 # PrestaShop
 
-> NOTE
+> WARNING
 >
 > ¡Atención! El checkout de Mercado Pago para la versión 1.6 de PrestaShop estará desactivado.
 >
