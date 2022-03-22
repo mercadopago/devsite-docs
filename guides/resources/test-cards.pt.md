@@ -6,8 +6,7 @@ Você pode utilizar cartões de teste de métodos de pagamento locais e simular 
 >
 > Atenção
 >
->  
-É necessário que o DNI associado ao cartão seja o mesmo do usuário de teste que está realizando a compra. Para confirmar essa informação, na sua conta de usuário do Mercado Pago acesse **Seu Perfil > Seus dados** e revise o **campo Documento**, garantindo que será o mesmo a ser associado ao cartão.
+>  É necessário que o DNI associado ao cartão seja o mesmo do usuário de teste que está realizando a compra. Para confirmar essa informação, na sua conta de usuário do Mercado Pago acesse **Seu Perfil > Seus dados** e revise o **campo Documento**, garantindo que será o mesmo a ser associado ao cartão.
  
 Para isso, de acordo com o seu país, utilize algum dos cartões que disponibilizamos a seguir.
 

@@ -166,7 +166,7 @@ Based on the previous information, below are detailed which payment methods are 
 | Marketplace | Checkout Pro | N/A |
 | Marketplace | Checkout API | `account_money` |
  
-### México
+### Mexico
  
 * **Available:**
  
