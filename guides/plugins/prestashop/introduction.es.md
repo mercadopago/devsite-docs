@@ -1,5 +1,13 @@
 # PrestaShop
 
+> WARNING
+>
+> Atención
+>
+> El checkout de Mercado Pago para la versión 1.6 de PrestaShop estará desactivado.
+>
+> A partir de la próxima actualización (4.10.0+), no habrá checkout de Mercado Pago para la versión 1.6 de PrestaShop. [Haz clic aquí](https://devdocs.prestashop.com/1.7/basics/keeping-up-to-date/) y siga las instrucciones para actualizar su versión de PrestaShop.
+
 [PrestaShop](https://www.prestashop.com/es/) es una plataforma de comercio electrónico con software de código abierto que permite a cualquier usuario crear y desarrollar un sitio web comercial. Como socios oficiales de PrestaShop, brindamos mayor seguridad y eficiencia a tu tienda.
  
 Esta documentación fue diseñada para que puedas hacer toda la configuración necesaria para integrar el plugin Mercado Pago con tu tienda en PrestaShop, sin tener que escribir una sola línea de código para instalarlo en las tiendas de tus clientes.
