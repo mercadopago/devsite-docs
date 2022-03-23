@@ -10,12 +10,12 @@ No caso das soluções integráveis, o fluxo inicial de integração é sempre o
 >
 > Importante
 >
-> Caso você já possua uma conta Mercado Livre, acesse o Painel de Negócios do Mercado Pago com o mesmo login e a mesma senha.
+> Caso você já possua uma conta Mercado Livre, acesse o Painel de Negócios do Mercado Pago com o mesmo login e senha.
 
 Com a conta ativa, você tem acesso a dois painéis diferentes com informações importantes:
 
-* [Painel de Negócios](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans/list#from-section=menu) que permite gerenciar perfil e atividade financeira, considerando frentes de caixa, faturamento, métricas, colaboradores, catálogo de produtos e muito mais.
-* [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel) que  permite gerenciar integrações com desenvolvimento de código.
+* [Painel de Negócios](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans/list#from-section=menu) que permite gerenciar o perfil e a atividade financeira, considerando frentes de caixa, faturamento, métricas, colaboradores, catálogo de produtos e muito mais.
+* [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel) que permite gerenciar integrações com desenvolvimento de código.
 
 Tanto no [Painel de Negócios](https://www.mercadopago[FAKER][URL][DOMAIN]/subscription-plans/list#from-section=menu) quanto no [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel), você terá acesso às [credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials), que são senhas únicas que capturam pagamentos em lojas virtuais e outras aplicações de forma segura com as quais identificamos uma integração na sua conta. 
 
