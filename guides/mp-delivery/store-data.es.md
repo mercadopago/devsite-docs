@@ -16,7 +16,7 @@ Este endpoint devuelve todos los datos del endpoint anterior, además de informa
 
 > NEXT_STEP_CARD_ES
 >
-> Cambiar el estado de la tienda
+> Cambiar el estado de la sucursal
 >
 > Aprenda a cambiar el estado de funcionamiento de la tienda de la tienda.
 >
