@@ -33,4 +33,4 @@ Para consultar los datos de una orden, realiza un GET enviando `shipment_id` y `
 >
 > Conoce cómo aceptar órdenes con Mercado Pago Delivery.
 >
-> [Aceptar pedidos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/accept-order)
+> [Aceptar órdenes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/accept-order)
