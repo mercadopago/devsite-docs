@@ -10,4 +10,4 @@ Consulta [Seguridad](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/g
 >
 > Aprende a consultar y gestionar la información de tu sucursal.
 >
-> [Administración de tiendas](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/store-management)
+> [Administración de sucursales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/store-management)
