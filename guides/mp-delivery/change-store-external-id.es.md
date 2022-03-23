@@ -8,7 +8,7 @@ Para ingresar el valor de una ID externa en una sucursal, realiza un PUT enviand
 >
 > Importante
 >
-> También podrás consultar la información de una tienda a través de su ID externo. Para eso, envíe como parámetros de solicitud el `user_id` relacionado con la tienda, el `external_id` y el `access_token`. Vea más informaciónes en la API [Obtener tienda por ID externo](https://www.mercadopago[FAKER][URL][DOMINIO]/developers/pt/reference/mp_delivery/_proximity-integration_users_SellerID_stores_external_id_ExternalID/get).
+> También podrás consultar la información de una sucursal a través de su ID externo. Para eso, envía como parámetros de solicitud el `user_id` relacionado con la sucursal, el `external_id` y el `access_token`. Accede a más información en la API [Obtener sucursal por ID externo](https://www.mercadopago[FAKER][URL][DOMINIO]/developers/pt/reference/mp_delivery/_proximity-integration_users_SellerID_stores_external_id_ExternalID/get).
 
 > PREV_STEP_CARD_ES
 >
