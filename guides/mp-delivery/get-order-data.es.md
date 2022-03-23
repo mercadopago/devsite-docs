@@ -5,7 +5,7 @@ Para consultar los datos de una orden, realiza un GET enviando `shipment_id` y `
 * **Merchant**: información sobre el restaurante que recibió la orden.
 * **Items**: descripción de los artículos y artículos adicionales en la orden.
 * **OtherFees**: información de tarifas de transacción y envío.
-* **Discounts**: descuentos aplicados al pedido.
+* **Discounts**: descuentos aplicados a la orden.
 * **Total**: importe total pagado en un pedido.
 * **Payments**: información sobre el método de pago de un pedido.
 * **Customer**: datos sobre el comprador.
