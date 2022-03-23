@@ -12,4 +12,4 @@ El recibo siempre se puede imprimir, excepto cuando la orden tiene [estado cance
 >
 > Conoce cómo cancelar órdenes en Mercado Pago Delivery.
 >
-> [Cancelar pedido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/cancel-order)
+> [Cancelar orden](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/cancel-order)
