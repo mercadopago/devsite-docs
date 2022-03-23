@@ -14,4 +14,4 @@ En esta guía te mostraremos cuáles son las mejores prácticas que puedes lleva
 >
 > Conoce qué acciones tomar para mantener tu integración segura.
 >
-> [Credenciales seguras](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/best-practices/safety-for-your-credentials/safe-credentials)
+> [Credenciales seguras](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/best-practices/safety-for-your-credentials/secure-credentials)

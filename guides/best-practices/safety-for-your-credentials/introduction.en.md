@@ -14,4 +14,4 @@ In this guide we will show you what the best practices that you can carry out ar
 >
 >Learn what actions to take to keep your integration secure.
 >
-> [Secure credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/best-practices/safety-for-your-credentials/safe-credentials)
+> [Secure credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/best-practices/safety-for-your-credentials/secure-credentials)
