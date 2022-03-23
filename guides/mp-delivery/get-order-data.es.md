@@ -7,7 +7,7 @@ Para consultar los datos de una orden, realiza un GET enviando `shipment_id` y `
 * **OtherFees**: información de tarifas de transacción y envío.
 * **Discounts**: descuentos aplicados a la orden.
 * **Total**: importe total pagado en una orden.
-* **Payments**: información sobre el método de pago de un pedido.
+* **Payments**: información sobre el método de pago de una orden.
 * **Customer**: datos sobre el comprador.
 * **Delivery**: información sobre el lugar de entrega.
 * **Extension.status**: estado en el que se encuentra la orden.
