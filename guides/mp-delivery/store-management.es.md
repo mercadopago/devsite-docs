@@ -11,7 +11,7 @@ Con `store_id` puede consultar y cambiar el estado operativo de la sucursal, ade
 
 > NEXT_STEP_CARD_ES
 >
-> Obtener datos de la tienda
+> Obtener datos de la sucursal
 >
 > Más información sobre cómo obtener datos de la tienda.
 >
