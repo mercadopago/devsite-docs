@@ -10,7 +10,7 @@ This endpoint point returns all data from the previous endpoint, plus informatio
 >
 > Important
 >
-> You will also be able to consult the information of a store through its external ID, if any. For that, just send as request parameters the `user_id` related to the store, the `external_id` and the `access_token`. Check more information in the API [Get store by external ID](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/mp_delivery/_proximity-integration_users_SellerID_stores_external_id_ExternalID/get).
+> You will also be able to consult the information of a store through its external ID, if it has one. For that, just send as request parameters the `user_id` related to the store, the `external_id` and the `access_token`. Check more information in the API [Get store by external ID](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/mp_delivery/_proximity-integration_users_SellerID_stores_external_id_ExternalID/get).
 > </br>
 > To learn how to create an external ID for your store and use it as an identifier for the order management software system, access [Change external store ID](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/change-store-external-id).
 
