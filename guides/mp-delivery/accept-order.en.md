@@ -10,7 +10,7 @@ When accepting the order, the status will be changed and the new order status wi
 >
 > Important
 >
-> It is important to know that only in the states **ready_to_ship** and **ready_to_print** it is possible to accept an order. After accepting the order, the substatus will be “printed”. If the order is not accepted 5 minutes after its creation, it will be automatically cancelled.
+> It is important to know that only in the statuses **ready_to_ship** and **ready_to_print** it is possible to accept an order. After accepting the order, the substatus will be **printed**. If the order is not accepted 5 minutes after its creation, it will be automatically cancelled.
 
 > NEXT_STEP_CARD_EN
 >
