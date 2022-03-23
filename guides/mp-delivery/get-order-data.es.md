@@ -2,7 +2,7 @@
 
 Para consultar los datos de una orden, realiza un GET enviando `shipment_id` y `access-token` (generados por el proceso de autenticación OAuth) al endpoint[/proximity-integration/v1/orders/{shipmentId}](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/mp_delivery/_proximity-integrationorders_shipment_id/get). Consulta [Seguridad](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/introduction) para obtener más información sobre OAuth.
 
-* **Merchant**: información sobre el restaurante que recibió el pedido.
+* **Merchant**: información sobre el restaurante que recibió la orden.
 * **Items**: descripción de los artículos y artículos adicionales en el pedido.
 * **OtherFees**: información de tarifas de transacción y envío.
 * **Discounts**: descuentos aplicados al pedido.
