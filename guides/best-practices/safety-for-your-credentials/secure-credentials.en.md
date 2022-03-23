@@ -50,7 +50,7 @@ When you share your credentials, you allow another Mercado Pago account to see a
 
 You can remove these permissions at any time from the **Credentials** panel.
 
-Once your integration is complete, remove any credential sharing permissions that are no longer needed to ensure privacy and security.
+> Once your integration is complete, remove any credential sharing permissions that are no longer needed to ensure privacy and security.
 
 
 ## Use OAuth to manage third-party credentials

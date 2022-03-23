@@ -49,7 +49,7 @@ Ao compartilhar suas credenciais, você permite que outra conta do Mercado Pago 
 
 Você pode remover essas permissões a qualquer momento no painel Credenciais.
 
-Assim que a integração for concluída, remova quaisquer permissões de compartilhamento de credenciais que não sejam mais necessárias para garantir privacidade e segurança.
+> Assim que a integração for concluída, remova quaisquer permissões de compartilhamento de credenciais que não sejam mais necessárias para garantir privacidade e segurança.
 
 ## Utilize o OAuth para gerenciar credenciais de terceiros
 
