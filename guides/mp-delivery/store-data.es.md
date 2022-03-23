@@ -1,4 +1,4 @@
-# Obtener datos de la tienda
+# Obtener datos de la sucursal
 
 Para obtener información sobre todas las tiendas que están vinculadas a **un usuario específico**, realice un GET enviando el `user_id` y el `access-token` (generados por el proceso de autenticación de OAuth) al punto final [[/proximity-integration/users/{seller_id}/stores](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/mp_delivery/_proximity-integration_users_seller_id_stores/get). Consulte [Seguridad](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/oauth/introduction) para obtener más información sobre OAuth.
 
