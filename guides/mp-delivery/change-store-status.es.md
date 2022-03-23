@@ -2,7 +2,7 @@
 
 Los estados de funcionamiento se definen de la siguiente manera:
 
-* **Habilitado**: la tienda está abierta y lista para recibir pedidos.
+* **Enabled**: la sucursal está abierta y lista para recibir órdenes.
 * **Pausada**: la tienda está en pausa y no podrá recibir nuevos pedidos, pero seguirá apareciendo en la app de Mercado Pago.
 * **Desactivado**: la tienda está cerrada, no podrá recibir nuevos pedidos y ya no se mostrará en la aplicación de Mercado Pago.
 
