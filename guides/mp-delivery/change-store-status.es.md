@@ -12,6 +12,6 @@ Para cambiarlos, debes realizar un PUT enviando el `store_id` y el `access-token
 >
 > Cambiar ID externo de la sucursal
 >
-> Aprende a cambiar el ID externo de su tienda.
+> Aprende a cambiar el ID externo de tu sucursal.
 >
 > [Cambiar ID externo de tienda](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/change-store-external-id)
