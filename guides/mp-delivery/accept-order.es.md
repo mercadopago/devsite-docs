@@ -16,6 +16,6 @@ Al aceptar la orden, se cambiará el estado y en la respuesta se indicará el es
 >
 > Imprimir recibo de orden
 >
-> Aprende a imprimir comprobantes de pedidos con Mercado Pago Delivery.
+> Aprende a imprimir comprobantes de órdenes con Mercado Pago Delivery.
 >
 > [Imprimir recibo de pedido](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/print-order-receipt)
