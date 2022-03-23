@@ -10,7 +10,7 @@ Al aceptar la orden, se cambiará el estado y en la respuesta se indicará el es
 >
 > Importante
 >
-> Es importante saber que solo en los estados **ready_to_ship** y **ready_to_print** es posible aceptar un pedido. Después de aceptar el pedido, el subestado será "impreso". Si el pedido no es aceptado 5 minutos después de su creación, se cancelará automáticamente.
+> Es importante saber que solo es posible aceptar una orden en los estados **ready_to_ship** y **ready_to_print**. Después de aceptar la orden, el subestado será **printed**. Si la orden no es aceptada 5 minutos después de su creación, se cancelará automáticamente.
 
 > NEXT_STEP_CARD_ES
 >
