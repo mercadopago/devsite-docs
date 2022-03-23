@@ -15,4 +15,4 @@ Con `store_id` puede consultar y cambiar el estado operativo de la sucursal, ade
 >
 > Más información sobre cómo obtener datos de la tienda.
 >
-> [Obtener datos de la tienda](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/store-data)
+> [Obtener datos de la sucursal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/store-data)
