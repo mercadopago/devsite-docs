@@ -14,7 +14,7 @@ Al aceptar la orden, se cambiará el estado y en la respuesta se indicará el es
 
 > NEXT_STEP_CARD_ES
 >
-> Imprimir recibo de pedido
+> Imprimir recibo de orden
 >
 > Aprende a imprimir comprobantes de pedidos con Mercado Pago Delivery.
 >
