@@ -1,4 +1,4 @@
-# Cambiar el estado de la tienda
+# Cambiar el estado de la sucursal
 
 Los estados de salud se definen de la siguiente manera:
 
