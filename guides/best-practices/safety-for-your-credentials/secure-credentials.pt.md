@@ -16,7 +16,7 @@ Por exemplo, se você fizer um GET para o endpoint _/users/me_, ficaria assim:
 curl -H 'Authorization: Bearer APP_USR-12345678-031820-X-12345678' \
 https://api.mercadolibre.com/users/me
 ```
-Sempre mantenha suas credenciais ocultas e não as exponha em nenhum parâmetro ou no lado público de sua integração.
+> Sempre mantenha suas credenciais ocultas e não as exponha em nenhum parâmetro ou no lado público de sua integração.
 
 ## Renove suas credenciais periodicamente
 

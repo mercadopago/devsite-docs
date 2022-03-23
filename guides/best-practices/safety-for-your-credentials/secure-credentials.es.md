@@ -16,7 +16,7 @@ Por ejemplo, si realizas un GET al recurso _/users/me_, sería de esta manera:
 curl -H 'Authorization: Bearer APP_USR-12345678-031820-X-12345678' \
 https://api.mercadolibre.com/users/me
 ```
-Mantén siempre tus credenciales ocultas y no las expongas en algún parámetro o del lado público de tu integración.
+> Mantén siempre tus credenciales ocultas y no las expongas en algún parámetro o del lado público de tu integración.
 
 ## Renueva tus credeciales periódicamente
 
@@ -27,7 +27,7 @@ Renueva tus credenciales de forma simple siguiendo estos pasos:
 1. Ve al [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel). 
 2. Accede a la aplicación cuyas credenciales quieres renovar.
 3. Selecciona Credenciales de Producción.
-4. Una vez allí, podrás renovar tanto el Access Token como el Client Secret. Para hacerlo, haz clic en **Más opciones > Renovar**.
+4. Una vez allí, podrás renovar el Access Token y el Client Secret. Para hacerlo, haz clic en **Más opciones > Renovar**.
 
 > WARNING 
 > 

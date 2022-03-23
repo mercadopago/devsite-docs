@@ -17,7 +17,7 @@ curl -H 'Authorization: Bearer APP_USR-12345678-031820-X-12345678' \
 https://api.mercadolibre.com/users/me
 ```
 
-Always keep your credentials hidden and do not expose them in any parameters or on the public side of your integration.
+> Always keep your credentials hidden and do not expose them in any parameters or on the public side of your integration.
 
 ## Renew your credentials periodically
 
