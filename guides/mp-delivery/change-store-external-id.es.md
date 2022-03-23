@@ -16,4 +16,4 @@ Para ingresar el valor de una ID externa en una sucursal, realiza un PUT enviand
 >
 > Aprende a cambiar el estado de funcionamiento de la sucursal.
 >
-> [Cambiar estado de tienda](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guias/mp-delivery/change-store-status)
+> [Cambiar estado de una sucursal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guias/mp-delivery/change-store-status)
