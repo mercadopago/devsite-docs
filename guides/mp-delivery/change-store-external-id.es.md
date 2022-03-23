@@ -1,4 +1,4 @@
-# Cambiar ID externo de la tienda
+# Cambiar ID externo de la sucursal
 
 También existe la posibilidad de crear un ID externo (`external_id`) para una determinada sucursal. Este campo es opcional, pero se puede utilizar como identificador para el sistema de software de gestión de pedidos.
 
