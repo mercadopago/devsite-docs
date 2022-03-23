@@ -6,7 +6,7 @@ You can integrate your restaurant's POS with Mercado Pago Delivery to:
 
 * Receive and accept orders automatically.
 * Easily manage inventory and finances.
-* Close the cashier efficiently using the already integrated reconciliation solution, displaying in detail all the financial transactions carried out.
+* Close the cash register efficiently using the already integrated reconciliation solution, displaying in detail all the financial transactions carried out.
 
 The seller can use Mercado Pago Delivery in two ways: through an **integration with a POS using our APIs** or through the **Order Manager**, which is a tool that is available on the Mercado Pago portal.
 
