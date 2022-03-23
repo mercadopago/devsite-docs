@@ -1,6 +1,6 @@
 # Change store status
 
-The health statuses are defined as follows:
+The peformance statuses are defined as follows:
 
 * **Enabled**: the store is open and ready to take orders.
 * **Paused**: the store is paused and will not be able to receive new orders, but it will continue to be displayed in the Mercado Pago app.
