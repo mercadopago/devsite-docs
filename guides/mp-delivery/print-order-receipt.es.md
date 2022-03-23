@@ -8,7 +8,7 @@ El recibo siempre se puede imprimir, excepto cuando la orden tiene [estado cance
 
 > NEXT_STEP_CARD_ES
 >
-> Cancelar pedido
+> Cancelar orden
 >
 > Conoce cómo cancelar pedidos en Mercado Pago Delivery.
 >
