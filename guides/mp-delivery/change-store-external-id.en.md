@@ -14,6 +14,6 @@ To enter the value of an external ID in a store, perform a PUT sending the `stor
 >
 > Change store status
 >
-> Learn how to change the store's working status of the store.
+> Learn how to change the store's working status.
 >
 > [Change store status](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/change-store-status)
