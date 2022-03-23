@@ -13,7 +13,7 @@ To query data from an order, perform a GET sending the `shipment_id` and `access
 * **Extension.status**: current status of the order.
   * **Pending**: initial status of the order. It means that the order is being created and will be handled later.
   * **Handling**: the order is being assembled and waiting for a response from the system, such as the completion of payment by the customer.
-  * **Ready_to_ship**: this state has two substates that denote that an order is deliverable (because it has been received and can be accepted or because it has been accepted and can be printed).
+  * **Ready_to_ship**: this status has two substatus that denote that an order is deliverable (because it has been received and can be accepted or because it has been accepted and can be printed).
   * **Shipped**: order on the way.
   * **Not_delivered**: order wasn't delivered.
   * **Delivered**: order delivered.
