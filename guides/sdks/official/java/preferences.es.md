@@ -5,27 +5,29 @@ Puede crear una preferencia usando el SDK a continuación. Para obtener detalles
 [[[
 ```java
 
+// SDK de Mercado Pago
+import com.mercadopago.MercadoPagoConfig;
+
+// Configurar credenciales
+MercadoPagoConfig.setAccessToken("PROD_ACCESS_TOKEN");
+
+// Crear un cliente de la API de preferencias
 PreferenceClient client = new PreferenceClient();
 
+// Crear un ítem para agregar a la preferencia
 List<PreferenceItemRequest> items = new ArrayList<>();
 PreferenceItemRequest item =
    PreferenceItemRequest.builder()
-       .title("Dummy Title")
-       .description("Dummy description")
-       .pictureUrl("http://www.myapp.com/myimage.jpg")
+       .title("Meu produto")
        .quantity(1)
-       .currencyId("US")
-       .unitPrice(new BigDecimal("10"))
+       .unitPrice(new BigDecimal("100"))
        .build();
 items.add(item);
 
-List<PreferenceTrackRequest> tracks = new ArrayList<>();
-PreferenceTrackRequest googleTrack = PreferenceTrackRequest.builder().type("google_ad").build();
+// Asociar el ítem con la preferencia
+PreferenceRequest request = PreferenceRequest.builder().items(items).build();
 
-tracks.add(googleTrack);
-
-PreferenceRequest request = PreferenceRequest.builder().items(items).tracks(tracks).build();
-
+// Guardar la preferencia
 client.create(request);
 
 ```
