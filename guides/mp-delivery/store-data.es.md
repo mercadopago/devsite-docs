@@ -20,4 +20,4 @@ Este endpoint devuelve todos los datos del endpoint anterior, además de informa
 >
 > Aprenda a cambiar el estado de funcionamiento de la sucursal.
 >
-> [Cambiar estado de tienda](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guias/mp-delivery/change-store-status)
+> [Cambiar estado de sucursal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guias/mp-delivery/change-store-status)
