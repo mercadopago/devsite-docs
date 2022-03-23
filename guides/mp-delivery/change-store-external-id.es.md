@@ -12,7 +12,7 @@ Para ingresar el valor de una ID externa en una sucursal, realiza un PUT enviand
 
 > PREV_STEP_CARD_ES
 >
-> Cambiar el estado de la tienda
+> Cambiar el estado de la sucursal
 >
 > Aprenda a cambiar el estado de funcionamiento de la tienda de la tienda.
 >
