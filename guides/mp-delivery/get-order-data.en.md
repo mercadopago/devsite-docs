@@ -19,7 +19,7 @@ To query data from an order, perform a GET sending the `shipment_id` and `access
   * **Delivered**: order delivered.
   * **Cancelled**: order canceled.
   <br/>
-* **Extension.substatus**: substate in which the order is. The substate relates directly to the state.
+* **Extension.substatus**: substatus in which the order is. The substate relates directly to the state.
   * **Pending > creating_route**: order route being created.
   * **Handling > null**: will indicate the reason why the order is waiting for its acceptance.
   * **Ready_to_ship > ready_to_print**: waiting for order acceptance.
