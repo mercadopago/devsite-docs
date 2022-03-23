@@ -8,6 +8,6 @@ Check [Security](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guide
 >
 > Store management
 >
-> Learn how to consult and manage informations of stores.
+> Learn how to consult and manage store information.
 >
 > [Store management](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/mp-delivery/store-management)
