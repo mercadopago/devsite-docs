@@ -4,7 +4,7 @@ Para obtener información sobre todas las sucursales que están vinculadas a **u
 
 También es posible consultar información de una **sucursal específica** usando su **ID**. Para ello, realiza un GET enviando el `store_id` y el `access-token` al endpoint [/proximity-integration/stores/{StoreID}](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/mp_delivery/_proximity-integration_stores_store_id/get).
 
-Este punto de enlace devuelve todos los datos del punto de enlace anterior, además de información sobre el estado actual del almacenamiento ("habilitado", "en pausa" o "deshabilitado"). Consulta [Cambiar estado de tienda](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/print-order-receipt) para obtener más información sobre los estados.
+Este endpoint devuelve todos los datos del endpoint anterior, además de información sobre el estado actual del almacenamiento ("enabled", "paused" o "disabled"). Consulta [Cambiar estado de la sucursal](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/mp-delivery/print-order-receipt) para obtener más información sobre los estados.
 
 > NOTE
 >
