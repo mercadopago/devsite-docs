@@ -7,7 +7,7 @@ A partir de la solicitud realizada a través de APIs REST, con la identificació
 * Horas de oficina.
 * Identificación externa (si la hay).
 
-Con `store_id` puede consultar y cambiar el estado operativo de la tienda, además de poder crear una identificación externa que se utilizará como identificador para un sistema de software de gestión de pedidos.
+Con `store_id` puede consultar y cambiar el estado operativo de la sucursal, además de poder crear una identificación externa que se utilizará como identificador para un sistema de software de gestión de pedidos.
 
 > NEXT_STEP_CARD_ES
 >
