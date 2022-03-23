@@ -10,7 +10,7 @@ Para cambiarlos, debes realizar un PUT enviando el `store_id` y el `access-token
 
 > NEXT_STEP_CARD_ES
 >
-> Cambiar ID externo de la tienda
+> Cambiar ID externo de la sucursal
 >
 > Aprende a cambiar el ID externo de su tienda.
 >
