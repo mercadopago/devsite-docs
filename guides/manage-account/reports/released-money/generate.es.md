@@ -42,11 +42,29 @@ Considera estas opciones a la hora de descargar tu reporte:
 | Formatos de descarga | .csv, .xlsx <br/><br/>Tip: descarga el reporte en .csv para importar los datos y usarlos en otras aplicaciones. Descárgalo en .xlsx para leer la información en las tablas de la hoja de cálculo. |
 | Archivo | Los reportes generados quedan guardados en tu cuenta de Mercado Pago. |
 
+
+## Notificaciones
+
+### Webhook
+
+Webhook (también conocido como devolución de llamada web) es un método simple que facilita que una aplicación o sistema proporcione información en tiempo real cada vez que ocurre un evento, es decir, es una forma de recibir datos pasivamente entre dos sistemas a través de un HTTP POST. Para el caso de los reportes que se utilizan para conciliar se enviará una notificación al usuario que tenga configurado este servicio cuando sus archivos sean generados.
+
+| Atributo | Descripción |
+| --- | --- |
+| transaction_id | ID de la transacción |
+| request_date    | Fecha de la solicitud |
+| generation_date | Fecha de la generación |
+| files | Archivos disponibles |
+| type | Formato del archivo |
+| url | Enlace de descarga |
+| name | Nombre del archivo |
+| status | Estado del reporte |
+| creation_type | Creación manual o programada |
+| report_type | Tipo de reporte |
+| is_test | Define si es una prueba |
+
 ----[mlm, mlb, mlc, mco, mlu, mla]----
-> INFO
->
-> Nota
->
+
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de ------------ ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu]---- Liberaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mla]----para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 ------------
 

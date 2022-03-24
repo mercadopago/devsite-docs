@@ -57,10 +57,26 @@ All the options you have available when downloading your report.
 | Set up available via API | <br/>- Columns to generate per report.<br/> - File prefix for easy identification.<br/> - SFTP upload.<br/> - Column separator (period or semicolon).<br/> - Email notification.<br/><br/> |
 
 
-> NOTE
->
-> Note
->
+## Notifications
+
+### Webhook
+
+Webhook (también conocido como devolución de llamada web) es un método simple que facilita que una aplicación o sistema proporcione información en tiempo real cada vez que ocurre un evento, es decir, es una forma de recibir datos pasivamente entre dos sistemas a través de un HTTP POST. Para el caso de los reportes que se utilizan para conciliar se enviará una notificación al usuario que tenga configurado este servicio cuando sus archivos sean generados.
+
+| Atributo | Descripción |
+| --- | --- |
+| transaction_id | Transaction ID |
+| request_date    | Request date |
+| generation_date | Generation date |
+| files | Available files |
+| type | File format |
+| url | Download link |
+| name | File name |
+| status | Report status |
+| creation_type | Manual or scheduled creation |
+| report_type | Report type |
+| is_test | Determines if it is a test |
+
 > Have the [Glossary of the Account Money report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/account-money/glossary) on hand to review it when needed or want to review a technical term.
 
 <hr/>
