@@ -71,3 +71,56 @@ mercadopago.preferences.create(preference)
 ]]]
 
 ------------
+
+## Associar Facebook Ads
+
+É possível associar a preferência a um pixel para acompanhamento das conversões do Facebook Ads. Para detalhamento dos parâmetros de requisição, verifique a API [Criar preferência](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/preferences/_checkout_preferences/post).
+
+[[[
+```node
+===
+Adicione o código na preferência e substitua o valor <code>pixel_id</code> pelo seu identificador.
+===
+  // Criar um objeto preferência
+var preference = {
+
+  // Associe seu píxel do Facebook
+  tracks: [
+        {
+          type: "facebook_ad",
+          values: {
+            "pixel_id": 'PIXEL_ID'
+          }
+        }
+      ]
+  //...
+};
+```
+]]]
+
+## Associar Google Ads
+
+É possível associar uma tag à preferência para acompanhamento das conversões do Google Ads. Para detalhamento dos parâmetros de requisição, verifique a API [Criar preferência](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/preferences/_checkout_preferences/post).
+
+[[[
+```node
+===
+Adicione o código na preferência e substitua os valores <code>CONVERSION\_ID</code> e <code>CONVERSION\_LABEL</code> pelos dados da sua _tag_.
+===
+  // Criar um objeto preferência
+var preference = {
+ 
+  // Associar sua tag do Google ads
+  tracks: [
+        {
+            type: "google_ad",
+            values: {
+              conversion_id: "CONVERSION_ID",
+              conversion_label: "CONVERSION_LABEL"
+            } 
+        }
+      ]
+  ...
+};
+```
+]]]

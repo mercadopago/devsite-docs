@@ -57,3 +57,62 @@ preference = preference_response["response"]
 ]]]
 
 ------------
+
+## Asociar Facebook Ads
+
+Puede asociar la preferencia con un píxel para rastrear las conversiones de anuncios de Facebook. Para obtener detalles sobre los parámetros de solicitud, consulte la API [Crear preferencia](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/preferences/_checkout_preferences/post).
+
+[[[
+```dotnet
+===
+Agrega el código en la preferencia y reemplaza el valor <code>PIXEL_ID</code> por tu identificador.
+===
+// Asocia tu píxel de Facebook
+var tracks = new List<PreferenceTrackRequest>
+{
+    new PreferenceTrackRequest
+    {
+        Type = "facebook_ad",
+        Values = new PreferenceTrackValuesRequest
+        {
+            PixelId = "PIXEL_ID",
+        },
+    },
+};
+
+var request = new PreferenceRequest
+{
+    // ...
+    Tracks = tracks,
+};
+
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
+```
+]]]
+
+## Asociar Google Ads
+
+[[[
+```python
+===
+Agrega el código en la preferencia y reemplaza los valores <code>CONVERSION\_ID</code> y <code>CONVERSION\_LABEL</code> por los datos de tu _tag_.
+===
+# Asocia tu tag
+preference_data = {
+    # ...
+    "tracks": [
+        {
+            "type": "google_ad",
+            "values": {
+                "conversion_id": "CONVERSION_ID",
+                "conversion_label": "CONVERSION_LABEL"
+            }
+        }
+    ]
+}
+
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
+```
+]]]

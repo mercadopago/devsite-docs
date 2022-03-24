@@ -71,3 +71,70 @@ Preference preference = await client.CreateAsync(request);
 ]]]
 
 ------------
+
+## Asociar Facebook Ads
+
+Puede asociar la preferencia con un píxel para rastrear las conversiones de anuncios de Facebook. Para obtener detalles sobre los parámetros de solicitud, consulte la API [Crear preferencia](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/preferences/_checkout_preferences/post).
+
+[[[
+```dotnet
+===
+Agrega el código en la preferencia y reemplaza el valor <code>PIXEL_ID</code> por tu identificador.
+===
+// Asocia tu píxel de Facebook
+var tracks = new List<PreferenceTrackRequest>
+{
+    new PreferenceTrackRequest
+    {
+        Type = "facebook_ad",
+        Values = new PreferenceTrackValuesRequest
+        {
+            PixelId = "PIXEL_ID",
+        },
+    },
+};
+
+var request = new PreferenceRequest
+{
+    // ...
+    Tracks = tracks,
+};
+
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
+```
+]]]
+
+## Asociar Google Ads
+
+Puede asociar una *tag* a la preferencia para realizar el seguimiento de las conversiones de Google Ads. Para obtener detalles sobre los parámetros de solicitud, consulte la API [Crear preferencia](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/preferences/_checkout_preferences/post).
+
+[[[
+```dotnet
+===
+Agrega el código en la preferencia y reemplaza los valores <code>CONVERSION\_ID</code> y <code>CONVERSION\_LABEL</code> por los datos de tu _tag_.
+===
+// Asocia tu tag
+var tracks = new List<PreferenceTrackRequest>
+{
+    new PreferenceTrackRequest
+    {
+        Type = "facebook_ad",
+        Values = new PreferenceTrackValuesRequest
+        {
+            ConversionId = "CONVERSION_ID",
+            ConversionLabel = "CONVERSION_LABEL",
+        },
+    },
+};
+
+var request = new PreferenceRequest
+{
+    // ...
+    Tracks = tracks,
+};
+
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
+```
+]]]
