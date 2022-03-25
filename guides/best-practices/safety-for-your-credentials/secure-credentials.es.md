@@ -16,7 +16,11 @@ Por ejemplo, si realizas un GET al recurso _/users/me_, sería de esta manera:
 curl -H 'Authorization: Bearer APP_USR-12345678-031820-X-12345678' \
 https://api.mercadolibre.com/users/me
 ```
-> Mantén siempre tus credenciales ocultas y no las expongas en algún parámetro o del lado público de tu integración.
+> Mantén siempre tus credenciales ocultas. Nunca expongas tu Access Token en algún parámetro o del lado público de tu integración.
+
+## Usa la Public Key en el front-end
+
+Public Key es una llave pública de la aplicación que normalmente se utiliza en el frontend y permite, por ejemplo, conocer los métodos de pago y cifrar los datos de la tarjeta. Recuerda utilizar únicamente este tipo de llave en el front end de tu integración. Para conocer más, ve a [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/resources/credentials).
 
 ## Renueva tus credeciales periódicamente
 

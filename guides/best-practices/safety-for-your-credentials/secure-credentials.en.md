@@ -17,7 +17,11 @@ curl -H 'Authorization: Bearer APP_USR-12345678-031820-X-12345678' \
 https://api.mercadolibre.com/users/me
 ```
 
-> Always keep your credentials hidden and do not expose them in any parameters or on the public side of your integration.
+> Always keep your credentials hidden. Never expose your Access Token in any parameter or on the public side of your integration.
+
+## Use the Public Key on the front-end
+
+Public Key is a key of the application that is normally used in the frontend and allows, for example, to know the payment methods and to encrypt the card data. Remember to only use this type of key in the front end of your integration. To learn more, go to [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials).
 
 ## Renew your credentials periodically
 
@@ -29,7 +33,6 @@ Renew your credentials in a simple way by following these steps:
 2. Access the application whose credentials you want to renew.
 3. Select Production Credentials.
 4. Once there, you can renew both the Access Token and the Client Secret. To do so, click **More Options > Renew**.
-
 
 > WARNING 
 > 
