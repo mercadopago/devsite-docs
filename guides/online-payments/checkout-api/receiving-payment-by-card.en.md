@@ -284,30 +284,28 @@ mercadopago.payment.save(req.body)
 You can find payment status in _status_ value.
 ===
 
-MercadoPago.SDK.setAccessToken("YOUR_ACCESS_TOKEN");
+PaymentClient client = new PaymentClient();
 
-Payment payment = new Payment();
-payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmount")))
-       .setToken(request.getParameter("token"))
-       .setDescription(request.getParameter("description"))
-       .setInstallments(Integer.valueOf(request.getParameter("installments")))
-       .setPaymentMethodId(request.getParameter("paymentMethodId"));
+PaymentCreateRequest paymentCreateRequest =
+   PaymentCreateRequest.builder()
+       .transactionAmount(request.getTransactionAmount())
+       .token(request.getToken())
+       .description(request.getDescription())
+       .installments(request.getInstallments())
+       .paymentMethodId(request.getPaymentMethodId())
+       .payer(
+           PaymentPayerRequest.builder()
+               .email(request.getPayer().getEmail())
+               .firstName(request.getPayer().getFirstName())
+               .identification(
+                   IdentificationRequest.builder()
+                       .type(request.getPayer().getIdentification().getType())
+                       .number(request.getPayer().getIdentification().getNumber())
+                       .build())
+               .build())
+       .build();
 
-Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
-identification.setType(request.getParameter("identificationType"))
-              .setNumber(request.getParameter("identificationNumber"));------------ ----[mlm]----
-identification.setNumber(request.getParameter("identificationNumber"));------------
-
-Payer payer = new Payer();
-payer.setEmail(request.getParameter("cardholderEmail"))
-     .setFirstName(request.getParameter("cardholderName"))
-     .setIdentification(identification);
-
-payment.setPayer(payer);
-
-payment.save();
-
-System.out.println(payment.getStatus());
+client.create(paymentCreateRequest);
 
 ```
 ```ruby
