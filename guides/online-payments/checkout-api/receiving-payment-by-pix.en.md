@@ -75,32 +75,26 @@ mercadopago.payment.create(payment_data).then(function (data) {
 
 ```
 ```java
-import com.mercadopago.*;
+MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
 
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+PaymentClient client = new PaymentClient();
 
-Payment payment = new Payment();
+PaymentCreateRequest paymentCreateRequest =
+   PaymentCreateRequest.builder()
+       .transactionAmount(new BigDecimal("100"))
+       .description("Título do produto")
+       .paymentMethodId("pix")
+       .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
+       .payer(
+           PaymentPayerRequest.builder()
+               .email("test@test.com")
+               .firstName("Test")
+               .identification(
+                   IdentificationRequest.builder().type("CPF").number("19119119100").build())
+               .build())
+       .build();
 
-payment.setTransactionAmount(100f)
-       .setDescription("Título do produto")
-       .setPaymentMethodId("pix")
-       .setPayer(new Payer()
-           .setEmail("test@test.com")
-           .setFirstName("Test")
-           .setLastName("User")
-           .setIdentification(new Identification()
-               .setType("CPF")
-               .setNumber("19119119100"))
-           .setAddress(new Address()
-               .setZipCode("06233200")
-               .setStreetName("Av. das Nações Unidas")
-               .setStreetNumber(3003)
-               .setNeighborhood("Bonfim")
-               .setCity("Osasco")
-               .setFederalUnit("SP"))
-);
-
-payment.save();
+client.create(paymentCreateRequest);
 ```
 ```ruby
 require 'mercadopago'
@@ -266,7 +260,8 @@ date_of_expiration: "2020-05-30T23:59:59.000-04:00",
 ===
 The date uses the format ISO 8601: yyyy-MM-dd'T'HH:mm:ssz
 ===
-payment.setDateOfExpiration("2020-05-30T23:59:59.000-04:00")
+PaymentCreateRequest paymentCreateRequest = PaymentCreateRequest.builder()
+       .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
 ```
 ```ruby
 ===

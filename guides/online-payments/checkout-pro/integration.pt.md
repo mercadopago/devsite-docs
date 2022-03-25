@@ -44,9 +44,9 @@ mercadopago.configure({
 ```
 ```java
 // SDK do Mercado Pago
-import com.mercadopago.MercadoPago;
+import com.mercadopago.MercadoPagoConfig;
 // Adicione as credenciais
-MercadoPago.SDK.setAccessToken("PROD_ACCESS_TOKEN");
+MercadoPagoConfig.setAccessToken("PROD_ACCESS_TOKEN");
 ```
 ```ruby
 # SDK do Mercado Pago
@@ -111,15 +111,21 @@ mercadopago.preferences.create(preference)
 ```
 ```java
 // Cria um objeto de preferência
-Preference preference = new Preference();
+PreferenceClient client = new PreferenceClient();
 
 // Cria um item na preferência
-Item item = new Item();
-item.setTitle("Meu produto")
-    .setQuantity(1)
-    .setUnitPrice((float) 75.56);
-preference.appendItem(item);
-preference.save();
+List<PreferenceItemRequest> items = new ArrayList<>();
+PreferenceItemRequest item =
+   PreferenceItemRequest.builder()
+       .title("Meu produto")
+       .quantity(1)
+       .unitPrice(new BigDecimal("100"))
+       .build();
+items.add(item);
+
+PreferenceRequest request = PreferenceRequest.builder().items(items).build();
+
+client.create(request);
 ```
 ```ruby
 # Cria um objeto de preferência

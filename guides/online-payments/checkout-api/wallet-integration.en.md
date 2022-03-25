@@ -89,16 +89,23 @@ mercadopago.preferences.create(preference)
 The wallet mode works by adding the _purpose_ attribute to the preference.
 ===
 // Create a preference object
-Preference preference = new Preference();
+PreferenceClient client = new PreferenceClient();
 
 // Create a preference item
-Item item = new Item();
-item.setTitle("My Item")
-    .setQuantity(1)
-    .setUnitPrice((float) 75);
-preference.appendItem(item);
-preference.setPurpose("wallet_purchase");
-preference.save();
+PreferenceItemRequest item =
+   PreferenceItemRequest.builder()
+       .title("Meu produto")
+       .quantity(1)
+       .unitPrice(new BigDecimal("75"))
+       .build();
+
+List<PreferenceItemRequest> items = new ArrayList<>();
+items.add(item);
+
+PreferenceRequest request =
+   PreferenceRequest.builder().items(items).purpose("wallet_purchase").build();
+
+client.create(request);
 ```
 ```ruby
 ===

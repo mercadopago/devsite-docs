@@ -43,20 +43,22 @@ For fund reserve authorization, you just need to add the `capture=false` attribu
 ```
 ```java
 
-import com.mercadopago.*;
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
 
-Payment payment = new Payment();
+PaymentClient client = new PaymentClient();
 
-payment.setTransactionAmount(100f)
-      .setToken('ff8080814c11e237014c1ff593b57b4d')
-      .setDescription('Title of what you are paying for')
-      .setInstallments(1)
-      .setPaymentMethodId("visa")
-      .setPayer(new Payer("test_user_19653727@testuser.com"))
-      .setCapture(false);
+PaymentCreateRequest request =
+   PaymentCreateRequest.builder()
+       .transactionAmount(new BigDecimal("100"))
+       .token("ff8080814c11e237014c1ff593b57b4d")
+       .description("Título do produto")
+       .installments(1)
+       .paymentMethodId("visa")
+       .payer(PaymentPayerRequest.builder().email("test_user_19653727@testuser.com").build())
+       .capture(false)
+       .build();
 
-payment.save();
+client.create(request);
 
 ```
 ```node
@@ -229,12 +231,13 @@ To capture the full amount, you need to submit the `capture` attribute as `true`
 ?>
 ```
 ```java
-import com.mercadopago.*;
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
 
-Payment payment = Payment.load(paymentId);
-payment.setCapture(true);
-payment.update();
+
+Long paymentId = 123456789L;
+
+PaymentClient client = new PaymentClient();
+client.capture(paymentId);
 ```
 ```node
 var mercadopago = require('mercadopago');
@@ -332,14 +335,13 @@ To capture an amount lower than the reserve, you need to submit the `transaction
 ?>
 ```
 ```java
-import com.mercadopago.*;
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
 
 
-Payment payment = Payment.load(paymentId);
-payment.setTransactionAmount((float) 75);
-payment.setCapture(true);
-payment.update();
+Long paymentId = 123456789L;
+
+PaymentClient client = new PaymentClient();
+client.capture(paymentId, new BigDecimal("75"));
 ```
 ```node
 var mercadopago = require('mercadopago');
@@ -440,13 +442,13 @@ If you update payment `status` to `cancelled`, you can cancel a reserve and rele
 ?>
 ```
 ```java
-import com.mercadopago.*;
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
 
 
-Payment payment = Payment.load(paymentId);
-payment.setStatus(Status.cancelled);
-payment.update();
+Long paymentId = 123456789L;
+
+PaymentClient client = new PaymentClient();
+client.cancel(paymentId);
 ```
 ```node
 var mercadopago = require('mercadopago');

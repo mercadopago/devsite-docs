@@ -63,9 +63,9 @@ npm install mercadopago
 To install the SDK in your [Maven](http://maven.apache.org/install.html) project, add the following dependency in your pom.xml file and then run ´maven install´.
 ===
 <dependency>
-            <groupId> com.mercadopago </groupId>
-            <artifactId> sdk-java </artifactId>
-            <version> 1.9.0 </version>
+   <groupId>com.mercadopago</groupId>
+   <artifactId>sdk-java</artifactId>
+   <version>2.0.0</version>
 </dependency>
 ```
 ```ruby
