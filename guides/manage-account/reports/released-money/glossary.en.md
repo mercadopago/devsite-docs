@@ -38,6 +38,7 @@ If you have any doubts about the technical terms used, check the glossary below.
 | TAXES_DISAGGREGATED | Taxes disaggregated in JSON format. |
 | EFFECTIVE_COUPON_AMOUNT | Cost for offering discount. |
 | POI_ID | Point ID if payment is made through a physical retailer. |
+| CARD_INITIAL_NUMBER | It corresponds to the first digits of the credit or debit card that you used to make the purchase. |
 
 <hr/>
 
