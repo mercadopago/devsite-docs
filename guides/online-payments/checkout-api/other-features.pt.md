@@ -43,20 +43,22 @@ Para fazer uma autorização de reserva de valores é preciso apenas adicionar o
 ```
 ```java
 
-import com.mercadopago.*;
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
 
-Payment payment = new Payment();
+PaymentClient client = new PaymentClient();
 
-payment.setTransactionAmount(100f)
-      .setToken('ff8080814c11e237014c1ff593b57b4d')
-      .setDescription('Título do produto')
-      .setInstallments(1)
-      .setPaymentMethodId("visa")
-      .setPayer(new Payer("test_user_19653727@testuser.com"))
-      .setCapture(false);
+PaymentCreateRequest request =
+   PaymentCreateRequest.builder()
+       .transactionAmount(new BigDecimal("100"))
+       .token("ff8080814c11e237014c1ff593b57b4d")
+       .description("Título do produto")
+       .installments(1)
+       .paymentMethodId("visa")
+       .payer(PaymentPayerRequest.builder().email("test_user_19653727@testuser.com").build())
+       .capture(false)
+       .build();
 
-payment.save();
+client.create(request);
 
 ```
 ```node
@@ -230,12 +232,13 @@ Para fazer a captura do valor total deve apenas enviar o atributo `capture` como
 ?>
 ```
 ```java
-import com.mercadopago.*;
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
 
-Payment payment = Payment.load(paymentId);
-payment.setCapture(true);
-payment.update();
+
+Long paymentId = 123456789L;
+
+PaymentClient client = new PaymentClient();
+client.capture(paymentId);
 ```
 ```node
 var mercadopago = require('mercadopago');
@@ -333,14 +336,13 @@ Para capturar um valor inferior ao reservado, é preciso adicionar o atributo `t
 ?>
 ```
 ```java
-import com.mercadopago.*;
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
 
 
-Payment payment = Payment.load(paymentId);
-payment.setTransactionAmount((float) 75);
-payment.setCapture(true);
-payment.update();
+Long paymentId = 123456789L;
+
+PaymentClient client = new PaymentClient();
+client.capture(paymentId, new BigDecimal("75"));
 ```
 ```node
 var mercadopago = require('mercadopago');
@@ -441,13 +443,13 @@ Pode-se cancelar uma reserva e liberar o limite do cartão ao atualizar o atribu
 ?>
 ```
 ```java
-import com.mercadopago.*;
-MercadoPago.SDK.configure("ENV_ACCESS_TOKEN");
+MercadoPagoConfig.setAccessToken("ENV_ACCESS_TOKEN");
 
 
-Payment payment = Payment.load(paymentId);
-payment.setStatus(Status.cancelled);
-payment.update();
+Long paymentId = 123456789L;
+
+PaymentClient client = new PaymentClient();
+client.cancel(paymentId);
 ```
 ```node
 var mercadopago = require('mercadopago');

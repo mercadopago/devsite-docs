@@ -84,16 +84,23 @@ mercadopago.preferences.create(preference)
 O modo carteira funciona adicionando o atributo _purpose_ na preferência.
 ===
 // Cria um objeto de preferência
-Preference preference = new Preference();
+PreferenceClient client = new PreferenceClient();
 
 // Cria um item na preferência
-Item item = new Item();
-item.setTitle("Meu produto")
-    .setQuantity(1)
-    .setUnitPrice((float) 75);
-preference.appendItem(item);
-preference.setPurpose("wallet_purchase");
-preference.save();
+PreferenceItemRequest item =
+   PreferenceItemRequest.builder()
+       .title("Meu produto")
+       .quantity(1)
+       .unitPrice(new BigDecimal("75"))
+       .build();
+
+List<PreferenceItemRequest> items = new ArrayList<>();
+items.add(item);
+
+PreferenceRequest request =
+   PreferenceRequest.builder().items(items).purpose("wallet_purchase").build();
+
+client.create(request);
 ```
 ```ruby
 ===
