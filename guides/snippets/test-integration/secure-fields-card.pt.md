@@ -8,7 +8,7 @@ Para capturar os dados do cartão, siga estas etapas:
 
 ### 1. Inclua e configure a biblioteca MercadoPago.js
 
-**Utilize nossa biblioteca oficial para acessar a API de Mercado Pago** desde seu frontend para coletar os dados de forma segura e configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
+**Utilize a nossa biblioteca oficial para acessar a API de Mercado Pago** desde seu frontend para coletar os dados de forma segura e configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
 
 ```html
 <body>
@@ -43,7 +43,6 @@ Para os campos PCI (**Card Number**, **Expiration Date** e **CVV**) deve-se cria
 
 Utilize o formulário abaixo e adicione os estilos que desejar.
 
-
 ```html
 <!-- Step #2 -->
 <form id="form-checkout">
@@ -65,8 +64,7 @@ Utilize o formulário abaixo e adicione os estilos que desejar.
 > 
 > Referência técnica
 > 
-> Procure mais informações sobre os diferentes atributos nas [referências técnicas](https://github.com/mercadopago/sdk-js).
-
+> Veja mais informações sobre os diferentes atributos nas [referências técnicas](https://github.com/mercadopago/sdk-js).
 
 ### 3. Integre o formulário com a biblioteca MercadoPago.js
 

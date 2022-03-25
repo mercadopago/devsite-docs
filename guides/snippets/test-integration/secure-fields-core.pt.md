@@ -71,9 +71,7 @@ No exemplo a seguir, assume-se que os dados `transactionAmount` e `description` 
 >
 > Lembre-se que é preciso ter o formulário antes de todos os passos seguintes para seu correto funcionamento.
 
-
 ### 3. Configure sua chave pública
-
 
 Configure a sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
 
@@ -179,7 +177,7 @@ function createSelectOptions(elem, options, labelsAndKeys = { label : "name", va
 
 #### Obtenha o meio de pagamento do cartão
 
-Valide os dados dos seus clientes enquanto são preenchidos para evitar erros e oferecer corretamente as parcelas disponíveis. Use o seguinte código de exemplo para identificar o meio de pagamento com os primeiros 6 dígitos do cartão.
+Valide os dados dos seus clientes enquanto estes são preenchidos para evitar erros e oferecer corretamente as parcelas disponíveis. Use o seguinte código de exemplo para identificar o meio de pagamento com os primeiros 6 dígitos do cartão.
 
 ```javascript
 function clearHTMLSelectChildrenFrom(element) {
@@ -295,7 +293,6 @@ const formElement = document.getElementById('form-checkout');
 O método `createCardToken` retornará um token com a representação segura do cartão.
 
 Receberemos o token ID da resposta e ao salvaremos em um atributo oculto denominado `token` para depois enviar o formulário aos seus servidores.
-
 
 > WARNING
 >
