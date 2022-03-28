@@ -10,7 +10,7 @@ Los tipos de documento aceptados para cobrar a través de Mercado Pago varían s
 
 ## Obtener los tipos de documento
 
-Los tipos de documentos aceptados se pueden obtener de la siguiente manera:
+Los tipos de documento aceptados se pueden obtener de la siguiente manera:
 
 Para consultar todos los tipos de documentos disponibles por país y obtener un listado con la identificación y detalle de cada uno de ellos, realiza un GET al endpoint [/v1/identification_types](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/identification_types/_identification_types/get).
 
