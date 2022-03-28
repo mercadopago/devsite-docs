@@ -10,7 +10,7 @@ Al consultar los métodos de pago disponibles, la `response` te indicará los re
 
 ## Productos y métodos de pago disponibles por país
  
-Puede ser que algunos métodos de pago no estén disponibles para algunos productos. A continuación se detallan qué métodos de pago no están disponibles por producto y por país.
+Vea a continuación cuáles son los **productos disponibles por país** y, a partir de ahí, qué **medios de pago estarán o no disponibles por producto y por país**.
  
 ### Pagos:
  
