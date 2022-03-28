@@ -260,7 +260,7 @@ Con base en la información anterior, a continuación se detallan qué métodos 
 | Bitcoin | `digital_currency` | `bitcoin` |
 | Paypal | `digital_wallet` | `paypal` |
  
-* **Indisponible:**
+* **No disponible:**
  
 ----[mlb]----
 | Producto | Solución | Medios de pago no disponibles|
