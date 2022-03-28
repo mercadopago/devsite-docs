@@ -8,7 +8,7 @@ You can use test cards of local payment methods and simulate different payment r
 >
 >The DNI associated with the card must be the same as the test user making the purchase. To confirm this information, go to your Mercado Pago user account, access **Your Profile > Your information** and review the **Document field**, ensuring that it will be the same to be associated with the card.
  
-For this, depending on your country, use one of the cards that we provide below.
+For this, depending on your country, use one of the cards provided below.
 
 ----[mla]----
 | Card | Number | Security code | Expiration date |
