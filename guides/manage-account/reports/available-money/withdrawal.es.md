@@ -6,7 +6,7 @@ Puedes crear un reporte de Dinero retirado de forma automática cada vez que hag
 
 >WARNING
 >
->A partir del 15 de mayo no podrás crear nuevos reportes
+> Importante
 >
 >A partir del 15 de mayo no podrás crear nuevos reportes. Tendrás a disposición tu historial para que puedas descargar los archivos que necesites. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible puedes usar el [reporte de ----[mla]----Liquidaciones------------ ----[mlm, mlb, mlc, mco, mlu, mpe]----Liberaciones------------](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction)
 
