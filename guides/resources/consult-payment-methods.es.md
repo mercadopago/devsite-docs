@@ -216,7 +216,7 @@ Con base en la información anterior, a continuación se detallan qué métodos 
 | PSE | `bank_transfer` | `pse` |
 | Dinero en cuenta  | `account_money` | `account_money` |
  
-* **Indisponible:**
+* **No disponible:**
  
 ----[mlb]----
 | Producto | Solución | Medios de pago no disponibles |
