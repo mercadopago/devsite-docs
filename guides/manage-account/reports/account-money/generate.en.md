@@ -56,7 +56,6 @@ All the options you have available when downloading your report.
 | File | <br/>The generated reports are saved in your Mercado Pago account.<br/><br/> |
 | Set up available via API | <br/>- Columns to generate per report.<br/> - File prefix for easy identification.<br/> - SFTP upload.<br/> - Column separator (period or semicolon).<br/> - Email notification.<br/><br/> |
 
-
 ## Notifications
 
 ### Webhook
