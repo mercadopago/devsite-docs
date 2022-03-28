@@ -11,16 +11,13 @@ Puedes generar un reporte de ----[mla]---- Liquidaciones ------------ ----[mlm, 
 | Panel de Mercado Pago | Para generar manualmente un reporte desde tu panel de Mercado Pago, ve a [Reportes](https://www.mercadopago[FAKER][URL][DOMAIN]/movements) y elige la opción de "Ver reportes creados".<br/><br/>Sigue el paso a paso para [generar reportes desde el panel](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/panel). |
 | Integración vía API | Para generar manualmente un reporte o programar la frecuencia de uno según tus necesidades, utiliza nuestra integración vía API. <br/><br/>Lee la documentación para [generar reportes por API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/api). |
 
-
 ## Características técnicas del reporte
 
 Ten en cuenta la siguiente información técnica cuando quieras generar tus reportes.
 
-
 ### Estructura del reporte
 
 Conoce las características de los elementos que conforman tu reporte.
-
 
 | Elemento o acción | Características |
 | --- | --- |
@@ -30,7 +27,6 @@ Conoce las características de los elementos que conforman tu reporte.
 | Moneda | Local (basada en el país donde esté registrada la cuenta de Mercado Pago) |
 | Zona horaria de las columnas con fechas | GMT-4 <br/> <br/> Toma como referencia el lugar desde el que se descarga el reporte. |
 | Selección de fechas vía web | Debe basarse en el timezone de la cuenta. <br/> Por ejemplo, a la cuenta registrada en Brasil le corresponde el timezone de São Paulo. |
-
 
 ### Exportación del reporte
 
@@ -42,22 +38,38 @@ Considera estas opciones a la hora de descargar tu reporte:
 | Formatos de descarga | .csv, .xlsx <br/><br/>Tip: descarga el reporte en .csv para importar los datos y usarlos en otras aplicaciones. Descárgalo en .xlsx para leer la información en las tablas de la hoja de cálculo. |
 | Archivo | Los reportes generados quedan guardados en tu cuenta de Mercado Pago. |
 
+## Notificaciones
+
+### Webhook
+
+Webhook (también conocido como devolución de llamada web) es un método simple que facilita que una aplicación o sistema proporcione información en tiempo real cada vez que ocurre un evento, es decir, es una forma de recibir datos pasivamente entre dos sistemas a través de un HTTP POST. Para el caso de los reportes que se utilizan para conciliar se enviará una notificación al usuario que tenga configurado este servicio cuando sus archivos sean generados.
+
+| Atributo | Descripción |
+| --- | --- |
+| transaction_id | ID de la transacción |
+| request_date    | Fecha de la solicitud |
+| generation_date | Fecha de la generación |
+| files | Archivos disponibles |
+| type | Formato del archivo |
+| url | Enlace de descarga |
+| name | Nombre del archivo |
+| status | Estado del reporte |
+| creation_type | Creación manual o programada |
+| report_type | Tipo de reporte |
+| is_test | Define si es una prueba |
+
 ----[mlm, mlb, mlc, mco, mla]----
-> INFO
->
-> Nota
->
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de ------------ ----[mla]---- Liquidaciones ------------ ----[mlm, mlb, mlc, mco, mlu]---- Liberaciones ------------ ----[mlm, mlb, mlc, mco, mlu, mla]----para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 ------------
 
 ----[mpe, mlu]----
 > Ten a mano el [Glosario del reporte](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/glossary) de Liberaciones para revisarlo cuando lo necesites o quieras consultar algún término técnico.
 
-> INFO
+> NOTE
 >
-> Próximamente verás los registros de tus movimientos en orden cronológico.
+> Atención
 >
-> En los reportes que generes a partir de Diciembre vas a ver todos tus movimientos en el orden en que se realizaron para que puedas identificarlos más fácil y controlar mejor tus ventas.
+> Próximamente verás los registros de tus movimientos en orden cronológico. En los reportes que generes a partir de Diciembre vas a ver todos tus movimientos en el orden en que se realizaron para que puedas identificarlos más fácil y controlar mejor tus ventas.
 ------------
 
 <hr/>

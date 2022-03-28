@@ -42,11 +42,26 @@ All the options you have available when downloading your report.
 | Download formats | .csv, .xlsx <br/><br/>Tip:Download the report in .csv to import the data and use it in other applications. Download it in .xlsx to read the information in the spreadsheet tables. |
 | File | Generated reports are saved in your Mercado Pago account. |
 
+## Notifications
 
-> NOTE
->
-> Note
->
+### Webhook
+
+Webhook (also known as "web callback") is a simple method that allows an application or system to send real-time data whenever a particular event takes place, that is, it is a way to passively receive information between two systems via an HTTP POST. In the case of the reports used for reconciliation, a notification is sent to the user who has set up this service when their files are generated.
+
+| Atributo | Descripción |
+| --- | --- |
+| transaction_id | Transaction ID |
+| request_date    | Request date |
+| generation_date | Generation date |
+| files | Available files |
+| type | File format |
+| url | Download link |
+| name | File name |
+| status | Report status |
+| creation_type | Manual or scheduled creation |
+| report_type | Report type |
+| is_test | Determines if it is a test |
+
 > Have the [Glossary of Releases report](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/reports/released-money/glossary) on hand to review it when needed or want to review a technical term.
 
 <hr/>
