@@ -63,7 +63,7 @@ Para eso, dependiendo de tu país, utiliza una de las tarjetas que te proporcion
 | American Express | 3711 803032 57522 | 1234 | 11/25 |
 ------------
  
-Para **probar diferentes resultados de pago** con Checkout Pro, complete el estado deseado en el nombre del titular de la tarjeta:
+Para **probar diferentes resultados de pago** con Checkout Pro, completa el estado deseado en el nombre del titular de la tarjeta:
  
 | Estado de pago | Descripción |
 | --- | --- |
