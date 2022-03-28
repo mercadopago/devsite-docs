@@ -8,7 +8,7 @@ Los tipos de documento aceptados para cobrar a través de Mercado Pago varían s
 >
 > La siguiente información no se aplica para México.
 
-## Obtener los tipos de documentos
+## Obtener los tipos de documento
 
 Los tipos de documentos aceptados se pueden obtener de la siguiente manera:
 
