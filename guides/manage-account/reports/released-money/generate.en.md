@@ -42,7 +42,6 @@ All the options you have available when downloading your report.
 | Download formats | .csv, .xlsx <br/><br/>Tip:Download the report in .csv to import the data and use it in other applications. Download it in .xlsx to read the information in the spreadsheet tables. |
 | File | Generated reports are saved in your Mercado Pago account. |
 
-
 ## Notifications
 
 ### Webhook
