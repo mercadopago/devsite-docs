@@ -6,7 +6,7 @@ The products and payment methods offered by Mercado Pago vary according to each 
 
 To consult all available payment methods and obtain a list with the details of each one of them and their properties, perform a GET to the endpoint[/v1/payment_methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payment_methods/_payment_methods/get). You can get more information about the attributes in [Get payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payment_methods/_payment_methods/get) in the API references.
 
-When consulting the available payment methods, the `response` will indicate the results that will coincide with the country associated with your Mercado Pago account. Check the [payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/payment_methods) available by country for more information.
+When consulting the available payment methods, the `response` will indicate the results that will coincide with the country associated with your Mercado Pago account.
 
 ## Products and payment methods available by country
  
