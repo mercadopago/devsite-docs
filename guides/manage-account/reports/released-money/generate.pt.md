@@ -42,26 +42,11 @@ Todas as opções disponíveis na hora de baixar seu relatório.
 | Formatos de download | .csv, .xlsx <br/><br/>Dica: baixe o relatório em .csv para importar os dados e usá-los em outros aplicativos. Baixe-o em .xlsx para ler as informações nas tabelas da planilha. |
 | Arquivo | Os relatórios gerados ficam salvos na sua conta do Mercado Pago. |
 
-## Notificações
 
-### Webhook
-
-Webhook (também conhecido como "retorno de chamada web"), é um método simples que permite que um aplicativo ou sistema forneça informações em tempo real toda vez que um evento acontece, ou seja, é uma maneira de receber dados entre dois sistemas de forma passiva, por meio de um HTTP POST. No caso dos relatórios usados na reconciliação, uma notificação é enviada ao usuário que tiver configurado este serviço quando seus arquivos forem gerados.
-
-| Atributo | Descripción |
-| --- | --- |
-| transaction_id | ID da transação |
-| request_date    | Data da solicitação |
-| generation_date | Data da geração |
-| files | Arquivos disponíveis |
-| type | Formato do arquivo |
-| url | Link de download |
-| name | Nome do arquivo |
-| status | Status do relatório |
-| creation_type | Criação manual ou agendada |
-| report_type | Tipo de relatório |
-| is_test | Determina se é um teste |
-
+> NOTE
+>
+> Nota
+>
 > Tenha em mãos o [Glossário do relatório](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/reports/released-money/glossary) de ----[mla]---- Liquidações ------------ ----[mlm, mlb, mlc, mco, mlu, mpe]---- Liberações ------------ para consultá-lo quando precisar ou queira conferir algum termo técnico.
 
 <hr/>
