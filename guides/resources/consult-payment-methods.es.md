@@ -340,7 +340,7 @@ Con base en la información anterior, a continuación se detallan qué métodos 
 | Red Pagos | `ticket` | `redpagos` |
 | Dinero en cuenta | `account_money` | `account_money` |
  
-* **Indisponible:**
+* **No disponible:**
  
 | Producto | Solución | Medios de pago no disponibles |
 | :--- | :--- | :--- |
