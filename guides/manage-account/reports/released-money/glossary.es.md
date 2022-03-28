@@ -38,6 +38,7 @@ Lo sabemos, algunos términos son técnicos y puede que no estés familiarizado 
 | TAXES_DISAGGREGATED | Impuestos desagregados en formato JSON. |
 | EFFECTIVE_COUPON_AMOUNT | Costo por ofrecer descuento. |
 | POI_ID | ID del lector si el pago se realiza a través de un comercio físico. |
+| CARD_INITIAL_NUMBER | Corresponde a los primeros dígitos de la tarjeta crédito o débito con la que se hizo la compra. |
 ----[mpe, mlu]----
 > INFO
 >
