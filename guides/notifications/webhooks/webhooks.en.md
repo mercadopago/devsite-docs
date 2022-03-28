@@ -98,30 +98,30 @@ mercadopago.payment.save(payment_data)
   });
 ```
 ```java
-MercadoPago.SDK.setAccessToken("YOUR_ACCESS_TOKEN");
+MercadoPagoConfig.setAccessToken("YOUR_ACCESS_TOKEN");
 
-Payment payment = new Payment();
-payment.setTransactionAmount(Float.valueOf(request.getParameter("transactionAmount")))
-       .setToken(request.getParameter("token"))
-       .setDescription(request.getParameter("description"))
-       .setInstallments(Integer.valueOf(request.getParameter("installments")))
-       .setPaymentMethodId(request.getParameter("paymentMethodId"))
-       .setNotificationUrl("http://requestbin.fullcontact.com/1ogudgk1");
+PaymentClient client = new PaymentClient();
 
-Identification identification = new Identification();----[mla, mlb, mlu, mlc, mpe, mco]----
-identification.setType(request.getParameter("docType"))
-              .setNumber(request.getParameter("docNumber"));------------ ----[mlm]----
-identification.setNumber(request.getParameter("docNumber"));------------
+PaymentCreateRequest createRequest =
+   PaymentCreateRequest.builder()
+       .transactionAmount(new BigDecimal("100"))
+       .token("token")
+       .description("description")
+       .installments(1)
+       .paymentMethodId("visa")
+       .notificationUrl("http://test.com")
+       .payer(
+           PaymentPayerRequest.builder()
+               .email("test@test.com")
+               .identification(
+                   IdentificationRequest.builder()
+                       .type("CPF")
+                       .number("19119119100")
+                       .build())
+               .build())
+       .build();
 
-Payer payer = new Payer();
-payer.setEmail(request.getParameter("email"))
-     .setIdentification(identification);
-     
-payment.setPayer(payer);
-
-payment.save();
-
-System.out.println(payment.getStatus());
+client.create(createRequest);
 
 ```
 ```ruby

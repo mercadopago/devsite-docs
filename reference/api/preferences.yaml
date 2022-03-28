@@ -41,8 +41,8 @@ paths:
                         description: Item image URL.
                       category_id:
                         type: string
-                        example: cat123
-                        description: This is a free string where the item category can be added.
+                        example: car_electronics
+                        description: This is a free string where the item category can be added. We suggest using one of the options shown in the following link https://api.mercadopago.com/item_categories
                       quantity:
                         type: number
                         example: 1
