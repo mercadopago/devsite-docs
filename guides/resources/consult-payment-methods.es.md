@@ -129,7 +129,7 @@ Con base en la información anterior, a continuación se detallan qué métodos 
 | Paypal | `digital_wallet` | `paypal` |
 | Pix | `bank_transfer` | `pix` |
  
-* **Indisponible:**
+* **No disponible:**
  
 ----[mlb]----
 | Producto | Solución | Medios de pago no disponibles |
