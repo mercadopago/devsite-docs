@@ -14,7 +14,7 @@ Los tipos de documento aceptados se pueden obtener de la siguiente manera:
 
 Para consultar todos los tipos de documento disponibles por país y obtener un listado con la identificación y detalle de cada uno de ellos, realiza un GET al endpoint [/v1/identification_types](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/identification_types/_identification_types/get).
 
-Puedes obtener más información sobre los atributos en [Obtener tipos de documentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/identification_types/_identification_types/get) en referencias API.
+Puedes obtener más información sobre los atributos en [Obtener tipos de documento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/identification_types/_identification_types/get) en referencias API.
  
 ## Disponibilidad de documentos por país
 
