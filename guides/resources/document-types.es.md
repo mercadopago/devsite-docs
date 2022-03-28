@@ -18,7 +18,7 @@ Puedes obtener más información sobre los atributos en [Obtener tipos de docume
  
 ## Disponibilidad de documentos por país
 
-Vea a continuación los tipos de documentos aceptados según cada país.
+Lee a continuación los tipos de documento aceptados según cada país.
 
 | País | Tipo de documento | Identificación |
 | :--- | :--- | :--- |
