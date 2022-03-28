@@ -10,7 +10,7 @@ Para consultar el reporte te recomendamos descargarlo en formato .csv para abrir
 ----[mlm, mlb, mlc, mco, mla]----
 > WARNING
 >
-> El reporte de Dinero retirado será deshabilitado desde el 1 de marzo de 2022
+> Importante
 >
 > Usa el [reporte de Liberaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/reports/released-money/introduction) para conciliar las transacciones del dinero disponible en tu cuenta, incluidos tus retiros bancarios.
 ------------
