@@ -2,7 +2,7 @@
 
 Los tipos de documentos aceptados al cobrar a través de Mercado Pago varían según el país.
 
-> NOTA
+> NOTE
 >
 > Importante
 >
