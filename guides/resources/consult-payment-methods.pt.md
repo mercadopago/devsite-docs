@@ -10,7 +10,7 @@ Ao consultar os meios de pagamento disponíveis, no `response` serão indicados 
 
 ## Produtos e meios de pagamentos disponíveis por país
  
-Pode ser que alguns meios de pagamento não estejam disponíveis para alguns produtos. Abaixo estão detalhados quais meios de pagamento não estão disponíveis por produto e por país.
+Veja abaixo quais são os **produtos disponíveis por país** e, a partir disso, quais **meios de pagamentos estarão ou não disponíveis por produto e por país**.
  
 ### Pagamentos:
  
