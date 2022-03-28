@@ -1,6 +1,6 @@
 # Tipos de documentos
 
-Los tipos de documentos aceptados al cobrar a través de Mercado Pago varían según el país.
+Los tipos de documento aceptados para cobrar a través de Mercado Pago varían según el país.
 
 > NOTE
 >
