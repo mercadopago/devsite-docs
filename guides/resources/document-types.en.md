@@ -12,7 +12,7 @@ The document types accepted when charging through Mercado Pago vary by country.
 
 The document types accepted can be obtained as follows:
 
-To consult all the types of documents available by country and obtain a list with the identification and details of each one of them, perform a GET to the endpoint [/v1/identification_types](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/identification_types/_identification_types/get).
+To consult all the document types available by country and obtain a list with the identification and details of each one of them, perform a GET to the endpoint [/v1/identification_types](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/identification_types/_identification_types/get).
 
 You can get more information about the attributes in [Get Document Types](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/identification_types/_identification_types/get) in API references.
  
