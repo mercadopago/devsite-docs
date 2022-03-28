@@ -42,7 +42,6 @@ Todas as opções disponíveis na hora de baixar seu relatório.
 | Formatos de download | .csv, .xlsx <br/><br/>Dica: baixe o relatório em .csv para importar os dados e usá-los em outros aplicativos. Baixe-o em .xlsx para ler as informações nas tabelas da planilha. |
 | Arquivo | Os relatórios gerados ficam salvos na sua conta do Mercado Pago. |
 
-
 ## Notificações
 
 ### Webhook
