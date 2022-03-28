@@ -10,7 +10,7 @@ When consulting the available payment methods, the `response` will indicate the 
 
 ## Products and payment methods available by country
  
-It may be that some payment methods are not available for some products. Below are detailed which payment methods are not available by product and by country.
+It may be that some payment methods are not available for some products. Payment methods availability by product and by country are detailed below.
  
 ### Payments:
  
