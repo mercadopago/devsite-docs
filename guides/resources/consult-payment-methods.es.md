@@ -1,6 +1,6 @@
 # Disponibilidad de productos y medios de pago
 
-Los productos y medios de pago que ofrece Mercado Pago varían según cada país. Vea a continuación cómo consultar todos los métodos de pago que están disponibles y, a partir de eso, cuáles estarán o no disponibles por producto y por país.
+Los productos y medios de pago que ofrece Mercado Pago varían según cada país. Lee a continuación cómo consultar todos los métodos de pago que están disponibles y, a partir de eso, cuáles están o no disponibles por producto y por país.
 
 ## Consultar formas de pago
 
