@@ -59,7 +59,6 @@ Todas las opciones que tienes disponible a la hora de descargar tu reporte.
 | Archivo | <br/>Los reportes generados quedan guardados en tu cuenta de Mercado Pago.<br/><br/> |
 | Configuración disponible vía API | <br/>- Columnas a generar por reporte<br/> - Prefijo del archivo para identificarlo fácilmente<br/> - Carga por SFTP<br/> - Separador de columnas (punto o punto y coma)<br/> - Notificación por e-mail<br/><br/> |
 
-
 ## Notificaciones
 
 ### Webhook
