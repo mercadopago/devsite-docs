@@ -18,7 +18,7 @@ You can get more information about the attributes in [Get Document Types](https:
  
 ## Availability of documents by country
 
-See below the types of documents accepted according to each country.
+See below the document types accepted according to each country.
 
 | Country | Document type | ID |
 | :--- | :--- | :--- |
