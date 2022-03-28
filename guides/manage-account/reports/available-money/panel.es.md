@@ -13,7 +13,7 @@ Genera tus reportes de Dinero retirado desde tu panel de Mercado Pago. Podrás p
 ----[mpe, mlu]----
 > WARNING
 >
->A partir del 15 de mayo no podrás crear nuevos reportes
+> Importante
 >
 > A partir del 15 de mayo no podrás crear nuevos reportes. Tendrás a disposición tu historial para que puedas descargar los archivos que necesites. Para seguir llevando el control de todos los retiros y movimientos de tu dinero disponible puedes usar el [reporte de liberaciones.](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/23879?utm_source=faq_mp&utm_medium=faq&utm_campaign=bank_disable)
 ------------
