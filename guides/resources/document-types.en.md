@@ -1,6 +1,6 @@
 # Document types
 
-The types of documents accepted when charging through Mercado Pago vary by country.
+The document types accepted when charging through Mercado Pago vary by country.
 
 > NOTE
 >
