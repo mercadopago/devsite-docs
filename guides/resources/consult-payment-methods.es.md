@@ -302,7 +302,7 @@ Con base en la información anterior, a continuación se detallan qué métodos 
 | BCP, BBVA Continental u otros | `atm` | `pagoefectivo_atm` |
 | Dinero en cuenta	| `account_money` | `account_money` |
  
-* **Indisponible:**
+* **No disponible:**
  
 ----[mlb]----
 | Producto | Solución | Medios de pago no disponibles |
