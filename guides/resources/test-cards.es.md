@@ -1,6 +1,6 @@
 # Tarjetas de prueba locales
 
-Puede usar tarjetas de prueba de métodos de pago locales y simular diferentes respuestas de pago, sin necesidad de usar una tarjeta real.
+Puedes usar tarjetas de prueba de métodos de pago locales y simular diferentes respuestas de pago, sin necesidad de usar una tarjeta real.
 
 > WARNING
 >
