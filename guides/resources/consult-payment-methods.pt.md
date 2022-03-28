@@ -10,7 +10,7 @@ Ao consultar os meios de pagamento disponíveis, no `response` serão indicados 
 
 ## Produtos e meios de pagamentos disponíveis por país
  
-Veja abaixo quais são os **produtos disponíveis por país** e, a partir disso, quais **meios de pagamentos estarão ou não disponíveis por produto e por país**.
+See below which are the **products available by country** and, from that, which **means of payment will or will not be available by product and by country**.
  
 ### Pagamentos:
  
