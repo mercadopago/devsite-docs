@@ -29,7 +29,7 @@ It may be that some payment methods are not available for some products. Payment
 | Checkout Pro | ✔ | ✔ | | | ✔ | | | |
 | Checkout API | ✔ | ✔ | | | ✔ | | | |
  
-Based on the previous information, below are detailed which payment methods are not available by country.
+Based on the previous information, below we detail which payment methods are available/unavailable by country.
 
 ### Argentina
  
