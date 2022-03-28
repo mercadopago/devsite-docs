@@ -6,7 +6,7 @@ Los productos y medios de pago que ofrece Mercado Pago varían según cada país
 
 Para consultar todos los métodos de pago disponibles y obtener un listado con el detalle de cada uno de ellos y sus propiedades, realiza un GET al endpoint[/v1/payment_methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payment_methods/_payment_methods/get). Puedes obtener más información sobre los atributos en [Obtener medios de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/payment_methods/_payment_methods/get) en las referencias de la API.
 
-Al consultar los métodos de pago disponibles, la `response` te indicará los resultados que coincidirán con el país asociado a tu cuenta de Mercado Pago. Consulta los [métodos de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payment_methods) disponibles por país para más información.
+Al consultar los métodos de pago disponibles, la `response` te indicará los resultados que coinciden con el país asociado a tu cuenta de Mercado Pago. Consulta los [métodos de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/payment_methods) disponibles por país para más información.
 
 ## Productos y métodos de pago disponibles por país
  
