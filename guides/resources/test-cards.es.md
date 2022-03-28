@@ -6,7 +6,7 @@ Puedes usar tarjetas de prueba de métodos de pago locales y simular diferentes 
 >
 > Importante
 >
-> El DNI asociado a la tarjeta debe ser el mismo que el del usuario de prueba que realiza la compra. Para confirmar esta información, en tu cuenta de usuario de Mercado Pago, accede a **Tu Perfil > Tus información** y revisa el **campo Documento**, asegurando que será el mismo asociado a la tarjeta.
+> El DNI asociado a la tarjeta debe ser el mismo que el del usuario de prueba que realiza la compra. Para confirmar esta información, en tu cuenta de usuario de Mercado Pago, accede a **Tu perfil > Tus datos** y revisa el campo **Documento**, asegurando que será el mismo asociado a la tarjeta.
  
 Para eso, dependiendo de tu país, utiliza una de las tarjetas que te proporcionamos a continuación.
 
