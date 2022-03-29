@@ -6,7 +6,8 @@ Installation is done in two steps: adding the Mercado Pago SDK to the project wi
  
 1. To include the Mercado Pago.js SDK V2, add the code below to the project's HTML.
  
-<!DOCTYPE html>
+[[[
+```html
 <html>
 <head>
    <title>Pay Modal Version</title>
@@ -16,9 +17,13 @@ Installation is done in two steps: adding the Mercado Pago SDK to the project wi
    <div class="cho-container"></div>
    //Add the MercadoPago SDK.js/v2
        <script src="https://sdk.mercadopago.com/js/v2"></script>
+```
+]]]
       
 2. When you finish adding the Mercado Pago.js SDK V2, configure the SDK credentials and initialize your checkout with the ID of the previously created preference and the identifier of the element where the payment button should be displayed, as shown in the example below.
  
+[[[
+```html
 <script>
            // Add your Mercado Pago account credentials along with the SDK
            const mp = new MercadoPago('YOUR_PUBLIC_KEY', {
@@ -37,6 +42,8 @@ Installation is done in two steps: adding the Mercado Pago SDK to the project wi
   
 </body>
 </html>
+```
+]]]
  
 In the example above, a payment button will be rendered and will be responsible for opening Checkout Pro. If you want to customize the way the checkout opens, see the Opening scheme section
  

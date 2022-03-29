@@ -7,8 +7,8 @@ A instalação é feita em duas etapas: incluindo o SDK do Mercado Pago ao proje
 
 1. Para incluir o SDK Mercado Pago.js V2, adicione o código abaixo no HTML do projeto.
 
-
-<!DOCTYPE html>
+[[[
+```html
 <html>
 <head>
 	<title>Pagar Versão Modal</title>
@@ -18,12 +18,14 @@ A instalação é feita em duas etapas: incluindo o SDK do Mercado Pago ao proje
 	<div class="cho-container"></div>
 	//Adicione o SDK MercadoPago.js/v2
 		<script src="https://sdk.mercadopago.com/js/v2"></script>
+```
+]]]
 		
-
 
 2. Ao finalizar a inclusão do SDK Mercado Pago.js V2, configure as credenciais do SDK e inicialize seu checkout com o ID da preferência previamente criada e o identificador do elemento onde o botão de pagamento deverá ser exibido conforme exemplo abaixo.
 
-
+[[[
+```html
 <script>
 			//Adicione as credenciais de sua conta Mercado Pago junto ao SDK
 			const mp = new MercadoPago('YOUR_PUBLIC_KEY', {
@@ -42,6 +44,8 @@ A instalação é feita em duas etapas: incluindo o SDK do Mercado Pago ao proje
 	
 </body>
 </html>
+```
+]]]
 
 
 No exemplo acima, um botão de pagamento será renderizado e ficará responsável por abrir o Checkout Pro. Caso queira personalizar a forma como o checkout será aberto, veja a seção Esquema de abertura
