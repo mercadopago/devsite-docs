@@ -8,7 +8,7 @@ Te mostraremos cómo puedes optimizar la seguridad de tus integraciones de maner
 
 ## Envía el access token por header
 
-Cada vez que realices llamadas a la API, **envía el access_token por header** en lugar de hacerlo por query param. Esto te permitirá resguardar tu access_token para que no sea expuesto a cualquier persona ajena a tu integración.
+Cada vez que realices llamadas a la API, **envía el Access Token por header** en lugar de hacerlo por query param. Esto te permitirá resguardar tu access_token para que no sea expuesto a cualquier persona ajena a tu integración.
 
 Por ejemplo, si realizas un GET al recurso _/users/me_, sería de esta manera:
 
@@ -16,6 +16,7 @@ Por ejemplo, si realizas un GET al recurso _/users/me_, sería de esta manera:
 curl -H 'Authorization: Bearer APP_USR-12345678-031820-X-12345678' \
 https://api.mercadolibre.com/users/me
 ```
+
 > Mantén siempre tus credenciales ocultas. Nunca expongas tu Access Token en algún parámetro o del lado público de tu integración.
 
 ## Usa la Public Key en el front-end
