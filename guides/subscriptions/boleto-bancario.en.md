@@ -1,5 +1,4 @@
-—-[mlb]----
-
+----[mlb]----
 ### Boleto bancário
 
 It is possible to allow the subscriber to pay the subscription with a boleto bancário. When opting for this payment method, the invoice sent will be valid for seven days, and it is going to remain valid until three days after expiration. If the subscriber fails to pay more than two consecutive boletos, the subscription is canceled. 

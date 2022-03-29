@@ -1,1 +1,0 @@
-[TXTSNIPPET][/guides/snippets/test-integration/payment-methods-by-country]

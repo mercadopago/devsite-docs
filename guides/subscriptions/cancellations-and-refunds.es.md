@@ -1,1 +1,0 @@
-[TXTSNIPPET][/guides/snippets/test-integration/cancellations-and-refunds]
