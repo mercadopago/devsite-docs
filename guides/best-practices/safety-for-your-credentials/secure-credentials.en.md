@@ -17,11 +17,15 @@ curl -H 'Authorization: Bearer APP_USR-12345678-031820-X-12345678' \
 https://api.mercadolibre.com/users/me
 ```
 
+> WARNING 
+> 
+> Important
+> 
 > Always keep your credentials hidden. Never expose your Access Token in any parameter or on the public side of your integration.
 
 ## Use the Public Key on the front-end
 
-Public Key is a key of the application that is normally used in the frontend and allows, for example, to know the payment methods and to encrypt the card data. Remember to only use this type of key in the front end of your integration. To learn more, go to [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials).
+Public Key is a key of the application that is normally used in the frontend and allows, for example, to know the payment methods and to encrypt the card data. Remember to only use this type of key in the public side of your integration. To learn more, go to [Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials).
 
 ## Renew your credentials periodically
 
