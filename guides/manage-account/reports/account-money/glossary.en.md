@@ -16,11 +16,11 @@ We know, some terms are technical and you may not be familiar with all of them. 
 | TRANSACTION_AMOUNT | Gross amount of the transaction. |
 | TRANSACTION_CURRENCY | You can take some of these values as appropriate: <br><br> MXN (Mexican Peso) <br> CLP (Chilean Peso) <br> ARS (Argentine Peso) <br> BRL (Brazilian Real) <br> COP (Colombian Peso) <br> PEN (Peruvian Sun) <br> UYU (Uruguayan Peso) <br> VES (Venezuelan Bolivar) <br><br> |
 | SELLER_AMOUNT | Amount received for split purchases. |
-| TRANSACTION_DATE | Date of transaction accreditation. |
+| TRANSACTION_DATE | Date on which the transaction originates. |
 | FEE_AMOUNT | Sum of processing fees, shipments, financing and coupons if assumed by the seller. |
 | SETTLEMENT_NET_AMOUNT | Net amount of the transaction that impacted the account balance. All commissions involved from `TRANSACTION_AMOUNT` were discounted. |
 | SETTLEMENT_CURRENCY | You can take some of these values as appropriate: <br><br> MXN (Mexican Peso) <br> CLP (Chilean Peso) <br> ARS (Argentine Peso) <br> BRL (Brazilian Real) <br> COP (Colombian Peso) <br> PEN (Peruvian Sun) <br> UYU (Uruguayan Peso) <br> VES (Venezuelan Bolivar) <br><br> |
-| SETTLEMENT_DATE | Date the transaction money was credited. |
+| SETTLEMENT_DATE | Date of operation approval. |
 | REAL_AMOUNT | Net amount of the transaction, if it is a settlement, the amounts for chargebacks, claims or returns are discounted. |
 | COUPON_AMOUNT | Discount coupon amount. **Only the gross amount** (`TRANSACTION_AMOUNT`) **is discounted if provided by the seller**. |
 | METADATA | ----[mlu, mla, mlm, mco, mlc, mlb]---- Extra data such as the ID of partial returns or data provided by the seller in case of having an external integration. ------------ ----[mpe]---- Extra data such as data provided by the seller in case of having an external integration. ------------|
