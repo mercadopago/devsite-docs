@@ -11,7 +11,7 @@ Sabemos que alguns termos são técnicos e você pode não estar familiarizado c
 
 | Nome da coluna do relatório | O que significa |
 | --- | --- |
-| DATE| Data de liberação, bloqueio ou desbloqueio, conforme apropriado. |
+| DATE| Data de liberação, bloqueio ou desbloqueio, conforme se aplicar. |
 | SOURCE_ID | ID da operação no Mercado Pago (por exemplo, o pagamento de uma venda).|
 | EXTERNAL_REFERENCE | <br/> ID que ajuda a identificar a origem da operação. Por exemplo, pode ser a venda através do ID do pedido ou do envio (se for uma compra de carrinho) ou o próprio ID fornecido pelo vendedor no caso de uma integração externa. <br/><br/> Lembre-se de que é possível que este campo esteja vazio para alguns casos, como pagamento de boletos ou envio de dinheiro, entre outros. <br/> <br/> |
 | RECORD_TYPE | <br/> `initial_available_balance` → Dinheiro disponível do período anterior.<br/><br/> `block` → Dinheiro bloqueado por uma reclamação ou contestação.<br/><br/> `unblock` → Dinheiro liberado porque foi resolvida uma reclamação ou estorno.<br/><br/> `release` → Dinheiro de uma cobrança que foi liberado.<br/><br/> `fullblock` → Diheiro bloqueado por restrição.<br/><br/> `subtotal` → Soma dos valores de cada record type.<br/><br/> `total` → Valor líquido total. <br/> <br/> |
