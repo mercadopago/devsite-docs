@@ -202,3 +202,14 @@ It can be rejected or remain pending. Take into account that authorized funds ca
 > * The reserve will be valid for 5 days. If you don't capture it within this term, it will be cancelled.
 > * You need to save the payment ID to complete the process.
 ------------
+
+---
+## Next steps
+
+> LEFT_BUTTON_RECOMMENDED_EN
+>
+> Other features
+>
+> Get more information about how to capture an authorized payment.
+>
+> [Capture an authorized payment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/capture-authorized-payments)

@@ -202,3 +202,14 @@ También puede resultar rechazada o quedar pendiente. Ten en cuenta que los fond
 > * La reserva tendrá una validez de 5 días. Si no la capturas hasta ese momento, será cancelada.
 > * Debes guardar el ID del pago para poder finalizar el proceso.
 ------------
+
+---
+## Próximos pasos
+
+> LEFT_BUTTON_RECOMMENDED_ES
+>
+> Otras funcionalidades
+>
+> Obtén más información sobre cómo capturar un pago autorizado.
+>
+> [Captura un pago autorizado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/capture-authorized-payments)

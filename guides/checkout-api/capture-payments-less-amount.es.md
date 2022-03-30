@@ -121,3 +121,14 @@ curl -X PUT \
 > Nota
 >
 > No es posible capturar un monto mayor al reservado, para eso es necesario cancelar la reserva y generar una nueva.
+
+---
+## Próximos pasos
+
+> LEFT_BUTTON_RECOMMENDED_ES
+>
+> Otras funcionalidades
+>
+> Obtén más información sobre cómo cancelar una reserva.
+>
+> [Cancelar una reserva](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/cancel-reserve)

@@ -11,6 +11,9 @@ Por exemplo, se o cartão não possui saldo suficiente para a compra, pode-se re
 > Você pode configurar o envio de e-mails aos clientes com mensagens de status dos pedidos como, por exemplo, de pagamento aprovado. Porém, a configuração deste envio deve ser feita em suas respectivas plataformas. Veja as documentações de [WooComerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/woocommerce/integration), [PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/email-customization) e [Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/magento-two/notifications-configuration) para mais detalhes.
 
 
+---
+## Próximos passos
+
 > LEFT_BUTTON_RECOMMENDED_PT
 >
 > Integração avançada

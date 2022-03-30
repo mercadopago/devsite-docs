@@ -10,7 +10,10 @@ Os cancelamentos se realizam quando um pagamento de boleto não se concretizou a
 
 Encontre mais informações na [seção de Reembolsos e cancelamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/cancellations-and-refunds).
 
+---
+## Próximos passos
 
+----[mla, mlb, mlm, mpe]----
 > LEFT_BUTTON_RECOMMENDED_PT
 >
 > Outras funcionalidades
@@ -18,3 +21,14 @@ Encontre mais informações na [seção de Reembolsos e cancelamentos](https://w
 > Obtenha mais informações sobre autorização e captura de pagamentos.
 >
 > [Autorização e captura](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/authorization-and-capture)
+------------
+
+----[mlu, mco, mlc]----
+> LEFT_BUTTON_RECOMMENDED_PT
+>
+> Entrar em produção
+>
+> Requisitos para entrar em produção.
+>
+> [Entrar em produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/goto-production)
+------------

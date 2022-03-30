@@ -98,3 +98,14 @@ curl -X PUT \
 }
 ```
 
+
+---
+## Next steps
+
+> LEFT_BUTTON_RECOMMENDED_EN
+>
+> Production environment
+>
+> Requirements for the production environment.
+>
+> [Production environment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/goto-production)

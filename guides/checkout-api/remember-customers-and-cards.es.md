@@ -1147,6 +1147,9 @@ Ejemplo de respuesta sin incluir el parámetro `customers_id`:
 >
 > Si no tienes el `customer_id`, [consulta la API de Clientes](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/reference/customers/_customers_search/get) y genera una solicitud `HTTP GET` utilizando el parámetro `email` para obtenerlo. 
 
+---
+## Próximos pasos
+
 > LEFT_BUTTON_RECOMMENDED_ES
 >
 > Cancelaciones y reembolsos

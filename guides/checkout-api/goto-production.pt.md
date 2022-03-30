@@ -57,7 +57,7 @@ Deve-se comunicar claramente que as promoções são oferecidas pelo Mercado Pag
 Disponibilize uma política de termos e condições e deixe claro que é responsável por todos os dados que sejam inseridos no seu site.
 
 ---
-### Próximos passos
+## Próximos passos
 
 > LEFT_BUTTON_RECOMMENDED_PT
 >
@@ -65,7 +65,7 @@ Disponibilize uma política de termos e condições e deixe claro que é respons
 >
 > Permite pagamentos somente de usuários cadastrados no Mercado Pago, com cartão e saldo disponível.
 >
-> [Usuários cadastrados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/wallet-integration)
+> [Usuários cadastrados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/wallet-integration)
 
 
 > RIGHT_BUTTON

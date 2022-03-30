@@ -60,7 +60,7 @@ You need to be clear about which promotions are offered by Mercado Pago. You can
 You need to have a policy on terms and conditions and make it clear that you are responsible for all the data uploaded to your website.
 
 ---
-### Next steps
+## Next steps
 
 > LEFT_BUTTON_RECOMMENDED_EN
 >
@@ -68,7 +68,7 @@ You need to have a policy on terms and conditions and make it clear that you are
 >
 > It allows payments only from Mercado Pago registered users, with cards and available balance.
 >
-> [Registered users](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/wallet-integration)
+> [Registered users](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/wallet-integration)
 
 > RIGHT_BUTTON
 >

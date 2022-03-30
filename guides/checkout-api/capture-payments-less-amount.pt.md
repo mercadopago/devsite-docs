@@ -121,3 +121,15 @@ curl -X PUT \
 > Nota
 >
 > Não é possível capturar um valor superior ao reservado, para isso é preciso cancelar a reserva e gerar uma nova.
+
+
+---
+## Próximos passos
+
+> LEFT_BUTTON_RECOMMENDED_PT
+>
+> Outras funcionalidades
+>
+> Obtenha mais informações sobre como cancelar uma reserva.
+>
+> [Cancelar uma reserva](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/cancel-reserve)

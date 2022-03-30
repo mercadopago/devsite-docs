@@ -121,3 +121,14 @@ curl -X PUT \
 > Note
 >
 > You cannot capture an amount higher than the reserve; to do so, you need to cancel and make a new reserve.
+
+---
+## Next steps
+
+> LEFT_BUTTON_RECOMMENDED_EN
+>
+> Other features
+>
+> Get more information about how to cancel a reserve.
+>
+> [Cancel a reserve](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/cancel-reserve)

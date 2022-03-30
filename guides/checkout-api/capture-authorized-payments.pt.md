@@ -104,3 +104,14 @@ A resposta devolverá que o pagamento se encontra aprovado e creditado.
 > Nota
 >
 > Se não adicionar o valor, será capturado o total reservado.
+
+---
+## Próximos passos
+
+> LEFT_BUTTON_RECOMMENDED_PT
+>
+> Outras funcionalidades
+>
+> Obtenha mais informações sobre como capturar um pagamento por um valor inferior ao reservado.
+>
+> [Capturar um pagamento por um valor inferior ao reservado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/capture-payments-less-amount)

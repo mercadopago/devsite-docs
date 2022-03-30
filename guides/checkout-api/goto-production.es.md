@@ -60,7 +60,7 @@ Debes aclarar que las promociones son ofrecidas por Mercado Pago. Puedes [inclui
 Debes disponer de una política de términos y condiciones y aclarar que sos responsable por todos los datos que sean ingresados en tu sitio.
 
 ---
-### Próximos pasos
+## Próximos pasos
 
 > LEFT_BUTTON_RECOMMENDED_ES
 >
@@ -68,7 +68,7 @@ Debes disponer de una política de términos y condiciones y aclarar que sos res
 >
 > Permite pagos solo de usuarios registrados en Mercado Pago, con tarjetas y dinero disponible.
 >
-> [Usuarios registrados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/wallet-integration)
+> [Usuarios registrados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/wallet-integration)
 
 > RIGHT_BUTTON
 >
