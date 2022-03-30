@@ -13,23 +13,23 @@ In order to ensure both the best integration quality and user experience for the
 
 ## Security
 
-### Use the official libraries and ensure data security
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use the official libraries and ensure data security
 
-On one hand, you need to use MercadoPago.js library, as provided by Mercado Pago. You can't change or host it on your servers. And, on the other hand, you need to make sure not to put the `name` attribute when creating a card form to take care of data security.
+On one hand, you need to use MercadoPago.js library, as provided by Mercado Pago. You can't change or host it on your servers. And, on the other, you need to make sure not to put the `name` attribute when creating a card form to take care of data security.
 
 These measures protect your customer's sensitive data, meet the required security standards, and keep yours up to date.
 
-### Don't forget to get an SSL certificate
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Don't forget to get an SSL certificate
 
-To ensure security and data protection, you need a valid SSL certificate and make the payment form available on an HTTPS page. This protects buyers' transactions and data. You may not have it while running tests, but it is mandatory for the production environment.
+To ensure security and data protection, you need to have a valid SSL certificate and make the payment form available on an HTTPS page. This protects buyers' transactions and data. You may not have it while running tests, but it is mandatory for the production environment.
 
 ## Sending information
 
 To prevent real payments being rejected by security non-compliance, you must add as much information as you can while performing an operation.
 
-In order to optimize payment security validation and avoid rejected payments, you can send us the customer and item data so we can analyze it. I.e., if you send us this information, we can detect if the buyer has made suspicious payments in the past.
+In order to optimize payment security validation and avoid rejected payments, you can send us the customer and item data so we can analyze it. I.e., if you send us this information, we can detect if the buyer have done suspicious payments in the past.
 
-You can see more information in the [Improves approval section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/account/payment-rejections).
+You can see more information in the [Improves approval section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/payment-rejections).
 
 ## Notifications and payment search
 
@@ -39,11 +39,11 @@ By implementing these notifications, you will be able to find out all the update
 
 ## User experience
 
-### Response Handling
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response Handling
 
-As mentioned in the [Handling Responses](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/handling-responses) section, you should be shown the messages corresponding to the client, depending on the result of the payment, so that they can act in the correct way.
+As mentioned in the [Handling Responses section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/handling-responses), you should be shown the messages corresponding to the client, depending on the result of the payment, so that he can act in the correct way.
 
-### Be transparent with promotions and financing
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Be transparent with promotions and financing
 
 You need to be clear about which promotions are offered by Mercado Pago. You can [include a payment method banner](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/banners/introduction) or [add a link to the promotions section](https://www.mercadopago.com/mla/credit_card_promos.htm). Besides, you need to inform [financing costs applicable to your customers](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/costos-financiacion_621).
 
@@ -60,15 +60,15 @@ You need to be clear about which promotions are offered by Mercado Pago. You can
 You need to have a policy on terms and conditions and make it clear that you are responsible for all the data uploaded to your website.
 
 ---
-## Next steps
+### Next steps
 
 > LEFT_BUTTON_RECOMMENDED_EN
 >
-> Receive payments by Mercado Pago wallet
+> Accepts payments by Mercado Pago wallet
 >
 > It allows payments only from Mercado Pago registered users, with cards and available balance.
 >
-> [Registered users](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/wallet-integration)
+> [Registered users](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/v1/wallet-integration)
 
 > RIGHT_BUTTON
 >

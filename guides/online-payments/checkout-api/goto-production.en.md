@@ -29,7 +29,7 @@ To prevent real payments being rejected by security non-compliance, you must add
 
 In order to optimize payment security validation and avoid rejected payments, you can send us the customer and item data so we can analyze it. I.e., if you send us this information, we can detect if the buyer has made suspicious payments in the past.
 
-You can see more information in the [Improves approval section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/account/payment-rejections).
+You can see more information in the [Improves approval section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/payment-rejections).
 
 ## Notifications and payment search
 
@@ -41,7 +41,7 @@ By implementing these notifications, you will be able to find out all the update
 
 ### Response Handling
 
-As mentioned in the [Handling Responses](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/handling-responses) section, you should be shown the messages corresponding to the client, depending on the result of the payment, so that they can act in the correct way.
+As mentioned in the [Handling Responses](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses) section, you should be shown the messages corresponding to the client, depending on the result of the payment, so that they can act in the correct way.
 
 ### Be transparent with promotions and financing
 
@@ -60,7 +60,7 @@ You need to be clear about which promotions are offered by Mercado Pago. You can
 You need to have a policy on terms and conditions and make it clear that you are responsible for all the data uploaded to your website.
 
 ---
-## Next steps
+### Next steps
 
 > LEFT_BUTTON_RECOMMENDED_EN
 >
@@ -68,7 +68,7 @@ You need to have a policy on terms and conditions and make it clear that you are
 >
 > It allows payments only from Mercado Pago registered users, with cards and available balance.
 >
-> [Registered users](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/wallet-integration)
+> [Registered users](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/wallet-integration)
 
 > RIGHT_BUTTON
 >

@@ -29,7 +29,7 @@ Para evitar que un pago real se rechace por no cumplir con las validaciones de s
 
 Para optimizar la validación de seguridad de los pagos y mejorar las aprobaciones, puedes enviarnos los datos del comprador y del ítem para que los analicemos. Por ejemplo, si nos envías esta información, podemos detectar si ese comprador realizó pagos sospechosos en otro momento y prevenirlo.
 
-Puedes ver más información en la [sección de Mejora la aprobación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/account/payment-rejections).
+Puedes ver más información en la [sección de Mejora la aprobación](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/payment-rejections).
 
 ## Notificaciones y búsqueda de pagos
 
@@ -41,7 +41,7 @@ Implementando estas notificaciones, podrás enterarte de todas las actualizacion
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mostrar los correctos mensajes de respuesta
 
-Como se menciona en la [sección de Mensajes de respuesta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/handling-responses), se le deben mostrar los mensajes correspondientes al cliente, dependiendo el resultado del pago, para que el mismo pueda accionar de la manera correcta.
+Como se menciona en la [sección de Mensajes de respuesta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v1/handling-responses), se le deben mostrar los mensajes correspondientes al cliente, dependiendo el resultado del pago, para que el mismo pueda accionar de la manera correcta.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sé transparente con las promociones y financiación
 
@@ -60,7 +60,7 @@ Debes aclarar que las promociones son ofrecidas por Mercado Pago. Puedes [inclui
 Debes disponer de una política de términos y condiciones y aclarar que sos responsable por todos los datos que sean ingresados en tu sitio.
 
 ---
-## Próximos pasos
+### Próximos pasos
 
 > LEFT_BUTTON_RECOMMENDED_ES
 >
@@ -68,7 +68,7 @@ Debes disponer de una política de términos y condiciones y aclarar que sos res
 >
 > Permite pagos solo de usuarios registrados en Mercado Pago, con tarjetas y dinero disponible.
 >
-> [Usuarios registrados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/wallet-integration)
+> [Usuarios registrados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/v1/wallet-integration)
 
 > RIGHT_BUTTON
 >

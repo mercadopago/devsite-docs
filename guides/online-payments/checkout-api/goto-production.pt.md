@@ -26,7 +26,7 @@ Para que seja seguro e que possa cuidar dos dados, é necessário que tenha um c
 Para evitar que um pagamento real seja recusado por não atender as validações de segurança, é necessário somar todas as informações possíveis na hora de realizar a operação.
 Para otimizar a validação de segurança dos pagamentos e melhorar as aprovações, você poderá enviar para nós os dados do comprador e do item para que os analisemos. Por exemplo, se você enviar essas informações para nós, poderemos detectar se esse comprador realizou pagamentos suspeitos em outro momento e preveni-lo.
 
-Veja mais informações na [seção Melhore a aprovação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/account/payment-rejections).
+Veja mais informações na [seção Melhore a aprovação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/payment-rejections).
 
 ## Notificações e pesquisa de pagamento
 
@@ -57,7 +57,7 @@ Deve-se comunicar claramente que as promoções são oferecidas pelo Mercado Pag
 Disponibilize uma política de termos e condições e deixe claro que é responsável por todos os dados que sejam inseridos no seu site.
 
 ---
-## Próximos passos
+### Próximos passos
 
 > LEFT_BUTTON_RECOMMENDED_PT
 >
@@ -65,7 +65,7 @@ Disponibilize uma política de termos e condições e deixe claro que é respons
 >
 > Permite pagamentos somente de usuários cadastrados no Mercado Pago, com cartão e saldo disponível.
 >
-> [Usuários cadastrados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/wallet-integration)
+> [Usuários cadastrados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/wallet-integration)
 
 
 > RIGHT_BUTTON

@@ -26,7 +26,7 @@ Para que seja seguro e que possa cuidar dos dados, é necessário que tenha um c
 Para evitar que um pagamento real seja recusado por não atender as validações de segurança, é necessário somar todas as informações possíveis na hora de realizar a operação.
 Para otimizar a validação de segurança dos pagamentos e melhorar as aprovações, você poderá enviar para nós os dados do comprador e do item para que os analisemos. Por exemplo, se você enviar essas informações para nós, poderemos detectar se esse comprador realizou pagamentos suspeitos em outro momento e preveni-lo.
 
-Veja mais informações na [seção Melhore a aprovação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/account/payment-rejections).
+Veja mais informações na [seção Melhore a aprovação](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/manage-account/account/payment-rejections).
 
 ## Notificações e pesquisa de pagamento
 
@@ -38,11 +38,11 @@ Ao implementar essas notificações, você poderá descobrir todas as atualizaç
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mostrar mensagens de resposta corretas
 
-Conforme mencionado na [seção Mensagens de resposta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/handling-responses), deve-se mostrar as mensagens correspondentes ao cliente, dependendo do resultado do pagamento, para que ele possa agir da maneira correta.
+Conforme mencionado na [seção Mensagens de resposta](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v1/handling-responses), deve-se mostrar as mensagens correspondentes ao cliente, dependendo do resultado do pagamento, para que ele possa agir da maneira correta.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seja transparente com as promoções e financiamentos
 
-Deve-se comunicar claramente que as promoções são oferecidas pelo Mercado Pago. Pode-se [incluir um banner de meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/introduction) ou [adicionar um link na seção de promoções](https://www.mercadopago.com.br/promocoes/). Também, deve-se informar os [custos de financiamento que se aplicam aos seus clientes](https://www.mercadopago.com.br/ajuda/Custos-de-parcelamento_322).
+Deve-se comunicar claramento que as promoções são oferecidas pelo Mercado Pago. Pode-se [incluir um banner de meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/banners/introduction) ou [adicionar um link na seção de promoções](https://www.mercadopago.com.br/promocoes/). Também, deve-se informar os [custos de financiamento que se aplicam aos seus clientes](https://www.mercadopago.com.br/ajuda/Custos-de-parcelamento_322).
 
 ----[mla]----
 > NOTE
@@ -57,7 +57,7 @@ Deve-se comunicar claramente que as promoções são oferecidas pelo Mercado Pag
 Disponibilize uma política de termos e condições e deixe claro que é responsável por todos os dados que sejam inseridos no seu site.
 
 ---
-## Próximos passos
+### Próximos passos
 
 > LEFT_BUTTON_RECOMMENDED_PT
 >
@@ -65,7 +65,7 @@ Disponibilize uma política de termos e condições e deixe claro que é respons
 >
 > Permite pagamentos somente de usuários cadastrados no Mercado Pago, com cartão e saldo disponível.
 >
-> [Usuários cadastrados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/wallet-integration)
+> [Usuários cadastrados](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v1/wallet-integration)
 
 
 > RIGHT_BUTTON
