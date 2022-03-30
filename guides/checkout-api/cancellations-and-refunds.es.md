@@ -8,7 +8,7 @@ Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes 
 Las cancelaciones se efectúan cuando el pago en efectivo no se concretó antes de la fecha de vencimiento y el vendedor decide cancelarlo. Los reembolsos suceden cuando el pago se realizó pero el vendedor decide anularlo totalmente.
 ------------
 
-Puedes encontrar toda la información en la [sección Reembolsos y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/uides/additional-content/account/cancellations-and-refunds).
+Puedes encontrar toda la información en la [sección Reembolsos y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/account/cancellations-and-refunds).
 
 ---
 ## Próximos pasos
