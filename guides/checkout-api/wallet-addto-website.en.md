@@ -1,8 +1,8 @@
 # How to add the wallet to your website
 
-You need to integrate [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/introduction) setup as [wallet mode](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/configurations#bookmark_accept_payments_from_registered_users_only) to add the Mercado Pago wallet to your website.
+You need to integrate [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-pro/introduction) setup as [wallet mode](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-pro/configurations#bookmark_accept_payments_from_registered_users_only) to add the Mercado Pago wallet to your website.
 
-To integrate it, you need to [generate the payment preference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-pro/integration#bookmark_steps_to_integrate) with the information of the product or service you want to offer and add the payment option on your website. 
+To integrate it, you need to [generate the payment preference](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-pro/integration#bookmark_steps_to_integrate) with the information of the product or service you want to offer and add the payment option on your website. 
 
 ## Steps to integrate the wallet
 
@@ -12,7 +12,7 @@ To integrate it, you need to [generate the payment preference](https://www.merca
 >
 > 1. Generate your preference
 
-To start, you need to generate your payment preference from your backend with the [Mercado Pago SDK](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements#bookmark_always_use_our_libraries) you used in your Checkout API. 
+To start, you need to generate your payment preference from your backend with the [Mercado Pago SDK](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/previous-requirements#bookmark_always_use_our_libraries) you used in your Checkout API. 
 
 [[[
 ```php

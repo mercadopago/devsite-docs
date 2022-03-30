@@ -12,7 +12,7 @@ As credenciais são as **chaves que te oferecemos para que possa configurar sua 
 
 Para poder encontrá-las, veja a [seção de Credenciais]([FAKER][CREDENTIALS][URL]).
 
-> Tem dúvidas sobre credenciais? Leia [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) para mais informações. 
+> Tem dúvidas sobre credenciais? Leia [Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/credentials/credentials) para mais informações. 
 
 ## Sempre utilize nossas bibliotecas
 Recomendamos que utilize as bibliotecas oficiais para sua integração. Isso permite cuidar dos dados sensíveis dos seus clientes, cumprir com os padrões de segurança requeridos e estar sempre atualizado.
@@ -105,7 +105,7 @@ Se não pode utilizar nossos SDKs oficiais, tenha disponível toda a informaçã
 
 ## Cumpra com os requisitos para ir a produção
 
-Ao finalizar sua integração, é necessário que tenha em conta todos os [requisitos para ir a produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/goto-production).
+Ao finalizar sua integração, é necessário que tenha em conta todos os [requisitos para ir a produção](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/goto-production).
 Com esse processo, garante-se a segurança dos dados dos seus clientes, o cumprimento das normas e disposições legais de cada país e ofereça a melhor experiência de compra para suas vendas.
 
 Quando sua integração estiver pronta e quiser começar a receber pagamentos, complete o formulário para ir a produção na [seção de Credenciais]([FAKER][CREDENTIALS][URL]).

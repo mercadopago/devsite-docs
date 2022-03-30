@@ -1,8 +1,8 @@
 # Cómo sumar la billetera en tu sitio
 
-Necesitas integrar [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/introduction) configurado como [modo billetera](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/configurations#bookmark_aceptar_pagos_%C3%BAnicamente_de_usuarios_registrados) para agregar la billetera de Mercado Pago en tu sitio.
+Necesitas integrar [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-pro/introduction) configurado como [modo billetera](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-pro/configurations#bookmark_aceptar_pagos_%C3%BAnicamente_de_usuarios_registrados) para agregar la billetera de Mercado Pago en tu sitio.
 
-Para integrarlo, tienes que [generar la preferencia de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-pro/integration#bookmark_pasos_para_integrarte) con la información del producto o servicio que quieras ofrecer y agregar la opción de pago en tu sitio. 
+Para integrarlo, tienes que [generar la preferencia de pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-pro/integration#bookmark_pasos_para_integrarte) con la información del producto o servicio que quieras ofrecer y agregar la opción de pago en tu sitio. 
 
 ## Pasos para integrar la billetera
 
@@ -12,7 +12,7 @@ Para integrarlo, tienes que [generar la preferencia de pago](https://www.mercado
 >
 > 1. Genera tu preferencia
 
-Para comenzar, tienes que generar tu preferencia de pago desde tu backend con la [SDK de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/previous-requirements#bookmark_utiliza_nuestras_librer%C3%ADas_siempre) que utilizaste en tu Checkout API. 
+Para comenzar, tienes que generar tu preferencia de pago desde tu backend con la [SDK de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/previous-requirements#bookmark_utiliza_nuestras_librer%C3%ADas_siempre) que utilizaste en tu Checkout API. 
 
 [[[
 ```php

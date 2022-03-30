@@ -1,8 +1,8 @@
 # Como adicionar a carteira no seu site
 
-Você deve integrar o [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction) configurado como [modo carteira](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/configurations#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados) para adicionar a carteira do Mercado Pago no seu site.
+Você deve integrar o [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/heckout-pro/introduction) configurado como [modo carteira](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-pro/configurations#bookmark_aceitar_pagamentos_somente_de_usuários_cadastrados) para adicionar a carteira do Mercado Pago no seu site.
 
-Para integrá-lo, você deve [gerar a preferência de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/integration#bookmark_etapas_para_se_integrar) com as informações do produto ou serviço que quer oferecer e adicionar a opção de pagamento no seu site. 
+Para integrá-lo, você deve [gerar a preferência de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-pro/integration#bookmark_etapas_para_se_integrar) com as informações do produto ou serviço que quer oferecer e adicionar a opção de pagamento no seu site. 
 
 ## Passos para integrar a carteira
 
@@ -12,7 +12,7 @@ Para integrá-lo, você deve [gerar a preferência de pagamento](https://www.mer
 >
 > 1. Gere sua preferência
 
-Para começar, você precisa gerar sua preferência de pagamento pelo seu backend com a [SDK do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/previous-requirements#bookmark_sempre_utilize_nossas_bibliotecas) que você usou na sua API de Checkout. 
+Para começar, você precisa gerar sua preferência de pagamento pelo seu backend com a [SDK do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/previous-requirements#bookmark_sempre_utilize_nossas_bibliotecas) que você usou na sua API de Checkout. 
 
 [[[
 ```php

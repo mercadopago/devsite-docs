@@ -5,7 +5,7 @@ Después de registrar la clave Pix, sigue la documentación para realizar la int
 
 ## Configurar el pago con Pix
 
-Después de registrar la clave Pix y [capturar los datos de pago con el formulario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/online-payments/checkout-api/other-payment-ways#bookmark_data_capture_for_payment), para recibir pagos con Pix debes reenviar el correo electrónico del comprador, tipo y número de documento, método de pago y detalle del valor.
+Después de registrar la clave Pix y [capturar los datos de pago con el formulario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/other-payment-methods#bookmark_data_capture_for_payment), para recibir pagos con Pix debes reenviar el correo electrónico del comprador, tipo y número de documento, método de pago y detalle del valor.
 
 [[[
 ```php
@@ -321,6 +321,6 @@ Para renderizar el código QR y habilitar el recurso de copiar y pegar, sigue lo
 >
 > Importante
 >
-> Si necesitas devolver un pago realizado a través de una transferencia Pix, puedes encontrar esta información en [Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/manage-account/account/cancellations-and-refunds).
+> Si necesitas devolver un pago realizado a través de una transferencia Pix, puedes encontrar esta información en [Devoluciones y cancelaciones](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/account/cancellations-and-refunds).
 
 ------------

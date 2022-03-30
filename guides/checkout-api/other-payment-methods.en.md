@@ -12,7 +12,7 @@ To receive other payment methods, you should take into account two aspects:
 1. First, you need a frontend to collect customer's e-mail and document, amount and payment method.
 1. Then, you need a backend that takes the payment data and can confirm and make the payment.
 
-Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
+Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
 
 ## Check the available payment methods
 
@@ -96,7 +96,7 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method.
 
-Keep in mind that the answer will return all the payment methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_payment_methods).
+Keep in mind that the answer will return all the payment methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_payment_methods).
 
 ```json
 [
@@ -153,7 +153,7 @@ Keep in mind that the answer will return all the payment methods. For this reaso
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 Add the following form with the styles you want.
 
@@ -503,7 +503,7 @@ To avoid collection issues, you need to cancel expired payments. Cash payments s
 
 Take into account that **you can only cancel payments in process or pending status**. If a payment expires after 30 days, the cancellation is automatic and the final status will be cancelled or expired.
 
-For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/account/cancellations-and-refunds).
 
 ## Payment credit times
 
@@ -522,7 +522,7 @@ To receive other payment methods, you should take into account two aspects:
 1. First, you need a frontend to collect customer's e-mail and document, amount and payment method.
 1. Then, you need a backend that takes the payment data and can confirm and make the payment.
 
-Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
+Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
 
 ## Check the available payment methods
 
@@ -608,7 +608,7 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method.
 
-Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_payment_methods).
+Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_payment_methods).
 
 ```json
 [
@@ -771,7 +771,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 Add the following form with the styles you want.
 
@@ -1009,7 +1009,7 @@ To avoid collection issues, you need to cancel expired payments. Cash payments s
 
 Take into account that **you can only cancel payments in process or pending status**. If a payment expires after 30 days, the cancellation is automatic and the final status will be cancelled or expired.
 
-For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/account/cancellations-and-refunds).
 
 ## Payment credit times
 
@@ -1048,7 +1048,7 @@ To receive other payment methods, you should take into account two aspects:
 1. First, you need a frontend to collect customer's e-mail and document, amount and payment method.
 1. Then, you need a backend that takes the payment data and can confirm and make the payment.
 
-Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
+Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
 
 ## Check the available payment methods
 
@@ -1130,7 +1130,7 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method.
 
-Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_payment_methods).
+Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_payment_methods).
 
 ```json
 
@@ -1203,7 +1203,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 Add the following form with the styles you want.
 
@@ -1488,7 +1488,7 @@ To avoid collection issues, you need to cancel expired payments. Cash payments s
 
 Take into account that **you can only cancel payments in process or pending status**. If a payment expires after 30 days, the cancellation is automatic and the final status will be cancelled or expired.
 
-For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/account/cancellations-and-refunds).
 
 ## Payment credit times
 
@@ -1507,7 +1507,7 @@ To receive other payment methods, you should take into account two aspects:
 1. First, you need a frontend to collect customer's e-mail and document, amount and payment method.
 1. Then, you need a backend that takes the payment data and can confirm and make the payment.
 
-Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
+Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
 
 ## Check the available payment methods
 
@@ -1591,7 +1591,7 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method.
 
-Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_payment_methods).
+Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_payment_methods).
 
 ```json
 [
@@ -1681,7 +1681,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 Add the following form with the styles you want.
 
@@ -2213,7 +2213,7 @@ To avoid collection issues, you need to cancel expired payments. Cash payments s
 
 Take into account that **you can only cancel payments in process or pending status**. If a payment expires after 30 days, the cancellation is automatic and the final status will be cancelled or expired.
 
-For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/account/cancellations-and-refunds).
 
 ## Payment credit times
 
@@ -2232,7 +2232,7 @@ To receive other payment methods, you should take into account two aspects:
 1. First, you need a frontend to collect customer's e-mail and document, amount and payment method.
 1. Then, you need a backend that takes the payment data and can confirm and make the payment.
 
-Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
+Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
 
 ## Check the available payment methods
 
@@ -2315,7 +2315,7 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method.
 
-Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_payment_methods).
+Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_payment_methods).
 
 ```json
 [
@@ -2390,7 +2390,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 Add the following form with the styles you want.
 
@@ -2872,7 +2872,7 @@ Take into account that **you can only cancel payments in process or pending stat
 >
 > Remember that if payments are not made within 30 minutes, Webpay will automatically cancel them.
 
-For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/account/cancellations-and-refunds).
 
 ## Payment credit times
 
@@ -2892,7 +2892,7 @@ To receive other payment methods, you should take into account two aspects:
 1. First, you need a frontend to collect customer's e-mail and document, amount and payment method.
 1. Then, you need a backend that takes the payment data and can confirm and make the payment.
 
-Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
+Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
 
 ## Check the available payment methods
 
@@ -2974,7 +2974,7 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment method.
 
-Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_payment_methods).
+Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_payment_methods).
 
 ```json
 [
@@ -3024,7 +3024,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 Add the following form with the styles you want.
 
@@ -3317,7 +3317,7 @@ To avoid collection issues, you need to cancel expired payments. Cash payments s
 
 Take into account that **you can only cancel payments in process or pending status**. If a payment expires after 30 days, the cancellation is automatic and the final status will be cancelled or expired.
 
-For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/account/cancellations-and-refunds).
 
 ## Payment credit times
 
@@ -3337,7 +3337,7 @@ To receive other payment methods, you should take into account two aspects:
 
 1. Then, you need a backend that takes the payment data and can confirm and make the payment.
 
-Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
+Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
 
 ## Check the available payment methods
 
@@ -3419,7 +3419,7 @@ curl -X GET \
 
 The result will be a list of payment methods and their features. For example, `payment_type_id` payment methods with `ticket` as value refer to cash payment.
 
-Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_payment_methods).
+Keep in mind that the answer will return all the payments methods. For this reason, you have to filter the options you want to offer according to the [list of available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_payment_methods).
 
 ```json
 [
@@ -3486,7 +3486,7 @@ Keep in mind that the answer will return all the payments methods. For this reas
 
 To capture sensitive data from your customer, **please use our form with the corresponding attributes,** which ensures information security.
 
-Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/other-payment-ways#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
+Use the list you consulted in [Obtain the available payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods#bookmark_obtain_the_available_payment_methods) to create the payment options you want to offer.
 
 Add the following form with the styles you want.
 
@@ -3920,7 +3920,7 @@ To avoid collection issues, you need to cancel expired payments. Cash payments s
 
 Take into account that **you can only cancel payments in process or pending status**. If a payment expires after 30 days, the cancellation is automatic and the final status will be cancelled or expired.
 
-For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/cancellations-and-refunds).
+For more information, check the [Refunds and Cancellations section](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/account/cancellations-and-refunds).
 
 ## Payment credit times
 

@@ -7,7 +7,7 @@ Integrating Mercado Pago's Checkout API for cards allows you to offer a complete
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-coremethods-en.png)
 
-> For an automated payment flow, [use MercadoPago.js V2 CardForm functionality](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/receiving-payment-by-card).
+> For an automated payment flow, [use MercadoPago.js V2 CardForm functionality](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/receiving-payment-by-card).
 
 <br>
 
@@ -18,7 +18,7 @@ With our Mercado Pago Checkout API, you should take into account two aspects: da
 1. First, you need a frontend to collect card data and generate a security token with the information required to create a payment.
 2. Then, you need a backend that takes the generated token and payment data, such as amount and item, to confirm and make a payment.
 
-Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
+Both for frontend and backend, we recommend [our libraries](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/previous-requirements#bookmark_always_use_our_libraries) to collect user sensitive data securely.
 
 For more information, check [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference).
 
@@ -322,7 +322,7 @@ In the above example, after the `submit` action, your backend should display a `
 
 Once the request –with all the collected information– is in your backend, it should be submitted to Mercado Pago through our APIs.  The minimum mandatory fields to submit are: `token`, `transaction_amount`, `installments`, `payment_method_id` and `payer.email`.
 
-For this to work, you should configure your [private key]([FAKER][CREDENTIALS][URL]). Also, to interact with our APIs, you should use [Mercado Pago official SDK](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/previous-requirements#bookmark__install_mercado_pago_sdk).
+For this to work, you should configure your [private key]([FAKER][CREDENTIALS][URL]). Also, to interact with our APIs, you should use [Mercado Pago official SDK](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/previous-requirements#bookmark__install_mercado_pago_sdk).
 
 [[[
 ```php
@@ -573,13 +573,13 @@ For improved payment approval, you need to correctly inform results to your cust
 
 This will prevent rejections and chargebacks in the case of already approved transactions.  For example, this allows you to correct data upload mistakes or change payment methods.
 
-We recommend using [response handling](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/handling-responses) and the suggested communication in each case.
+We recommend using [response handling](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/handling-responses) and the suggested communication in each case.
 
 > NOTE
 >
 > Note
 >
-> Avoid rejected payments with our recommendations to [improve the approval process](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/manage-account/account/payment-rejections).
+> Avoid rejected payments with our recommendations to [improve the approval process](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/account/payment-rejections).
 
 ## Receive payment notifications
 

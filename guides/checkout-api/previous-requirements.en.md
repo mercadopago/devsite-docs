@@ -11,7 +11,7 @@ Your credentials are the **keys we provide you to configure your integrations**.
 
 Check the [Credentials]([FAKER][CREDENTIALS][URL]) section to learn how to obtain these informations.
 
-> Do you have any questions about credentials? Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/resources/credentials) for more information.
+> Do you have any questions about credentials? Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/credentials/credentials) for more information.
 
 
 ## Always use our libraries
@@ -100,7 +100,7 @@ If you can't use our official SDKs, you will have all the information about data
 
 ## Meet the requirements for the production environment
 
-When you develop your integration, consider all the [requirements for the production environment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/online-payments/checkout-api/goto-production). This process can ensure your customer's data security, compliance with legal standards or provisions in each country, and the best shopping experience for your customers.
+When you develop your integration, consider all the [requirements for the production environment](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/goto-production). This process can ensure your customer's data security, compliance with legal standards or provisions in each country, and the best shopping experience for your customers.
 
 Once your integration is ready, you just need to fill out the form for to go to production in the [Credentials section]([FAKER][CREDENTIALS][URL]) to start receiving payments.
 
