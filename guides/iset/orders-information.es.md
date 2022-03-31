@@ -3,7 +3,7 @@
   - mlb
 ---
 
-# Información para los pedidos de tu tienda iSET
+# Información para los pedidos de tu tienda iSet
 
 Para **configurar la información de los pedidos en tu tienda**, sigue estos pasos:
 

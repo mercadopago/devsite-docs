@@ -11,7 +11,7 @@ Estabeleça a quantidade máxima ou mínima de parcelas e a aplicação de acré
 >
 > Importante
 >
-> Para que o parcelamento funcione corretamente, é necessário configurá-lo também no Mercado Pago, acessando a configuração de [parcelamento de sua conta](#bookmark_configurando_o_parcelamento_em_sua_conta_do_mercado_pago).
+> Para que o parcelamento funcione corretamente, é necessário configurá-lo também no Mercado Pago, acessando a configuração de parcelamento de sua conta.
 
 1. Acesse "Formas de pagamento" da seção Módulos do painel administrativo de sua loja.
 2. Na lista de meios de pagamentos, selecione as "Opções de configuração" do Mercado Pago.

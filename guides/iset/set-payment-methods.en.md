@@ -5,9 +5,9 @@
 
 # Set payment methods
 
-After activating Mercado Pago, you have the option to offer the following payment methods: [Checkout Pro](#bookmark_checkout_pro), [Transparent Checkout](#bookmark_transparent_checkout) or [both checkouts](#bookmark_both_checkouts).
+After activating Mercado Pago, you have the option to offer the following payment methods: [Checkout Pro](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/iset/set-payment-methods#bookmark_checkout_pro), [Checkout API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/iset/set-payment-methods#bookmark_checkout_api) or [both checkouts](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/iset/set-payment-methods#bookmark_both_checkouts).
 
-You also have the option to [offer interest free installments](#bookmark_set_interest_free_installments_in_your_mercado_pago_account) and set the [rates and terms](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) of your online sales whenever you want.
+You also have the option to [offer interest free installments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/iset/set-interestfree-installments) and set the [rates and terms](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/release-options/) of your online sales whenever you want.
 
 ## Set payment types
 

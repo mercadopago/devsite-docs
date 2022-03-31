@@ -5,7 +5,7 @@
 
 # Configurando o parcelamento em sua conta do Mercado Pago
 
-1. Acesse a seção [Seu negocio](https://www.mercadopago.com.br/business/) na sua conta Mercado Pago.
+1. Acesse a seção [Seu negocio](https://www.mercadopago[FAKER][URL][DOMAIN]/business/) na sua conta Mercado Pago.
 2. Procure por "Oferecer parcelamento sem juros" e clique em "Ativar".
 3. Escolha "Quantas parcelas você quer oferecer?" e clique em "Ativar" para confirmar as alterações.
 <p>&nbsp;</p>

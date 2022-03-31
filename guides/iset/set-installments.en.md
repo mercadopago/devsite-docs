@@ -11,12 +11,12 @@ You can set the maximum or minimum amount of installments and apply surcharges o
 >
 > Important
 >
-> Installments must be set as automatic to avoid any problems when processing payments. We are going to take the enabled [installments in your Mercado Pago account](#bookmark_set_interest_free_installments_in_your_mercado_pago_account) as appropriate.
+> Installments must be set as automatic to avoid any problems when processing payments. We are going to take the enabled installments in your Mercado Pago account as appropriate.
 
 1. Go to “Payment methods” in the section Modules from the admin panel of your store.
-1. Search in the payment methods list for Mercado Pago and go to “Setting options”.
-1. Select in “Product category” the category that applies to your products.
-1. Complete the following fields according to the settings of your Mercado Pago account:
+2. Search in the payment methods list for Mercado Pago and go to “Setting options”.
+3. Select in “Product category” the category that applies to your products.
+4. Complete the following fields according to the settings of your Mercado Pago account:
 
     | Field | Description |
     | --- | --- |
@@ -26,7 +26,7 @@ You can set the maximum or minimum amount of installments and apply surcharges o
     | Discounts for payments in cash (%) | Enter the discount value for cash payments that you want. |
     | Surcharge/Discount | Apply a surcharge or discount on the order. |
 
-1. Click on “Close” and then on “Save changes”.
+5. Click on “Close” and then on “Save changes”.
 <p>&nbsp;</p>
 
 ![Payments Connect - iSET](/images/iset/iset_configuration_installments_6.gif)
