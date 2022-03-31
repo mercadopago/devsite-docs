@@ -11,7 +11,7 @@ La integración del Checkout API de Mercado Pago para tarjetas permite que pueda
 > 
 > Tu integración con la API transparente de Mercado Pago puede ser elegible para [PCI SAQ A](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/security/pci-v2#bookmark_ventajas_de_un_saq-a). Esta categoría de PCI requiere menos requisitos del vendedor, lo que acelera el proceso de certificación. Para ser elegible para esta categoría, tu integración debe realizarse mediante campos de tarjeta en formato Iframe.
 
-**Fields** utiliza componentes HTML iframe permite que los datos PCI (`cardNumber`,` CVV`, y `expirationDate`) sean inaccesibles para terceros y procesados ​​por los servidores de Mercado Pago, aumentando la seguridad del comprador, vendedor y adquiriente.
+**Fields** utiliza componentes HTML iframe permite que los datos PCI (`cardNumber`,` securityCode`, y `expirationDate`) sean inaccesibles para terceros y procesados ​​por los servidores de Mercado Pago, aumentando la seguridad del comprador, vendedor y adquiriente.
 
 ![Fields](/images/api/api-integration-introduction-v2-es.png)
 

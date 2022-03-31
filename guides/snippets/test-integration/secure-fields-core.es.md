@@ -93,13 +93,13 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 
 ### 4. Crea los campos PCI
 
-En este paso se crean los campos seguros (cardNumber, expirationDate y CVV) con **Fields**, alojados por **Mercado Pago**, y que hacen uso del elemento `HTML iframe`.
+En este paso se crean los campos seguros (cardNumber, expirationDate y securityCode) con **Fields**, alojados por **Mercado Pago**, y que hacen uso del elemento `HTML iframe`.
 
 El segundo parámetro son las opciones, y se le pueden asignar valores para **placeholder** y **style**. El valor de **placeholder** debe ser un *string*, mientras que **style** es un *objeto* con las llaves siendo el nombre de la propiedad CSS y los valores un string con el estilo. Los valores no válidos se ignorarán y se mostrará una advertencia en la consola.
 
 Para más detalles sobre los estilos permitidos, [consulta la referencia técnica](https://github.com/lucmantovani/sdk-js/tree/feature/fields-docs#style).
 
-Un ejemplo de código con `cardNumber`, `expirationDate` y `CVV` sería:
+Un ejemplo de código con `cardNumber`, `expirationDate` y `securityCode` sería:
 
 ```javascript
   const cardNumberElement = mp.fields.create('cardNumber', {
@@ -110,7 +110,7 @@ Un ejemplo de código con `cardNumber`, `expirationDate` y `CVV` sería:
     placeholder: "Data de vencimiento (MM/YYYY)"
   }).mount('form-checkout__cardExpirationDate-container');
  
-  const securityCodeElement = mp.fields.create('CVV', {
+  const securityCodeElement = mp.fields.create('securityCode', {
     placeholder: "Código de seguridad"  
   }).mount('form-checkout__securityCode-container');
 ```

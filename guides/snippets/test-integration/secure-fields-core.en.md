@@ -92,13 +92,13 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 
 ### 4. Create the PCI fields
 
-Safe fields (cardNumber, expirationDate and CVV) hosted by **Mercado Pago** are created in this step with **Fields**, using the `HTML iframe` element.
+Safe fields (cardNumber, expirationDate and securityCode) hosted by **Mercado Pago** are created in this step with **Fields**, using the `HTML iframe` element.
 
 The second parameter is options, and can be assigned values ​​for **placeholder** and **style**. The value for **placeholder** must be a *string*, while **style** is an *object* with the keys being the CSS property name and the values ​​a string with the styling. Invalid values ​​will be ignored, with a warning displayed on the console.
 
 For more details on the allowed styles, [check out the technical reference](https://github.com/lucmantovani/sdk-js/tree/feature/fields-docs#style).
 
-A code example with `cardNumber`, `expirationDate` and `CVV` would be:
+A code example with `cardNumber`, `expirationDate` and `securityCode` would be:
 
 ```javascript
   const cardNumberElement = mp.fields.create('cardNumber', {
@@ -109,7 +109,7 @@ A code example with `cardNumber`, `expirationDate` and `CVV` would be:
     placeholder: "MM/YYYY"
   }).mount('form-checkout__cardExpirationDate-container');
  
-  const securityCodeElement = mp.fields.create('CVV', {
+  const securityCodeElement = mp.fields.create('securityCode', {
     placeholder: "CVV"  
   }).mount('form-checkout__securityCode-container');
 ```
