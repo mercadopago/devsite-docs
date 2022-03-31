@@ -5,14 +5,14 @@ Para realizar a integração com o Mercado Pago, siga os procedimentos abaixo.
 1. No Painel Administrativo da sua loja na Prestashop, acesse o menu **Módulos e serviços**, localize o plugin do Mercado Pago e clique em **configurar**.
 2. Na tela de gerenciamento do plugin, preencha os campos solicitados de acordo com suas informações de negócio.
 3. No campo **Localização**, selecione o país de operação da sua conta do Mercado Pago.
-4. Na seção **Credenciais**, confirme se os campos estão devidamente preenchidos de acordo com as [credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/credentials) indicadas em seu seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/resources/dashboard/introduction). 
+4. Na seção **Credenciais**, confirme se os campos estão devidamente preenchidos de acordo com as [credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/credentials/credentials) indicadas em seu seu [Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/dashboard/introduction). 
 5. Em seguida, configure as informações de negócio necessárias para identificar sua loja.
  
 * **Nome da loja:** insira o nome da sua loja.
 * **Categoria da loja:** insira a categoria dos produtos de sua loja.
 * **Integrator ID:** Insira seu *integrator_id* como membro do **&lt;dev&gt;program**, do Mercado Pago. Caso ainda não seja um membro, [clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/developer-program) para mais informações.
  
-6. Configure as experiências de pagamento da sua loja de acordo com o tipo de checkout que você escolheu para configurar, podendo ser o [Checkout Pro](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-pro/introduction), o [Checkout Transparente](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/introduction) e o **Ticket Checkout**.
+1. Configure as experiências de pagamento da sua loja de acordo com o tipo de checkout que você escolheu para configurar, podendo ser o [Checkout Pro](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-pro/introduction), o [Checkout Transparente](https://www.mercadopago.[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/introduction) e o **Ticket Checkout**.
 
 > NOTE
 >
@@ -34,10 +34,3 @@ Para realizar a integração com o Mercado Pago, siga os procedimentos abaixo.
  
 Pronto! Agora o plugin do Mercado Pago com a PrestaShop está integrado à sua loja.
  
-> NEXT_STEP_CARD_PT
->
-> Teste de pagamentos
->
-> Saiba como realizar uma compra teste e garantir o funcionamento da integração.
->
-> [Teste de pagamentos](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/plugins/prestashop/testing)

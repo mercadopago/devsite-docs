@@ -17,16 +17,9 @@ To install the plugin manually, follow the steps below:
 
 ### How to validate notifications?
  
-The PrestaShop plugin only receives notifications of the IPN type. For more information, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/notifications/ipn/introduction).
+The PrestaShop plugin only receives notifications of the IPN type. For more information, [click here](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/notifications/ipn/introduction).
  
 ### Does the plugin do currency conversion?
  
 No, PrestaShop plugin doesn't convert currency.
 
-> PREV_STEP_CARD_EN
->
-> Receiving payments
->
-> Learn how to enable your store to process real sales.
->
-> [Receiving payments](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/plugins/prestashop/receive-payments)
