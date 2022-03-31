@@ -5,7 +5,7 @@ Después de registrar la clave Pix, sigue la documentación para realizar la int
 
 ## Configurar el pago con Pix
 
-Después de registrar la clave Pix y [capturar los datos de pago con el formulario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/other-payment-methods#bookmark_data_capture_for_payment), para recibir pagos con Pix debes reenviar el correo electrónico del comprador, tipo y número de documento, método de pago y detalle del valor.
+Después de registrar la clave Pix y [capturar los datos de pago con el formulario](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/payment-methods/other-payment-methods#bookmark_data_capture_for_payment), para recibir pagos con Pix debes reenviar el correo electrónico del comprador, tipo y número de documento, método de pago y detalle del valor.
 
 [[[
 ```php

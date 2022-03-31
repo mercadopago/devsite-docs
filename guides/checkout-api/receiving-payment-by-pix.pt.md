@@ -4,7 +4,7 @@ Após cadastrar a chave Pix, siga a documentação para realizar a integração 
 
 ## Configurar pagamento com Pix
 
-Após cadastrar a chave Pix e [capturar os dados para pagamento com o formulário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/other-payment-methods#bookmark_capture_os_dados_para_pagamento), você deve encaminhar o e-mail do comprador, o tipo e número de documento, o meio de pagamento utilizado e o detalhe do valor. 
+Após cadastrar a chave Pix e [capturar os dados para pagamento com o formulário](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/payment-methods/other-payment-methods#bookmark_capture_os_dados_para_pagamento), você deve encaminhar o e-mail do comprador, o tipo e número de documento, o meio de pagamento utilizado e o detalhe do valor. 
 
 [[[
 ```php
