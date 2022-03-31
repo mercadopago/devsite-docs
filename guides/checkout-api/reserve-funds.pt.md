@@ -204,13 +204,3 @@ Também pode resultar rejeitado ou ficar pendente. Tenha em conta que os valores
 > * Deve guardar o ID do pagamento para poder finalizar o processo.
 ------------
 
----
-## Próximos passos
-
-> LEFT_BUTTON_RECOMMENDED_PT
->
-> Outras funcionalidades
->
-> Obtenha mais informações sobre como capturar um pagamento autorizado.
->
-> [Capture um pagamento autorizado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/capture-authorized-payments)

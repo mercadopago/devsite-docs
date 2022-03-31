@@ -14,13 +14,4 @@ Inicie sua integração configurada com as credenciais do seu usuário de teste 
 1. Insira o e-mail do seu usuário de teste comprador.
 2. Confirme a compra, e pronto!
 
----
-### Próximos passos
 
-> LEFT_BUTTON_RECOMMENDED_PT
->
-> Cartões de teste
->
-> Cartões de teste para sua integração.
->
-> [Cartões de teste](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/test-cards)

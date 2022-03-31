@@ -11,7 +11,7 @@ Your credentials are the **keys we provide you to configure your integrations**.
 
 Check the [Credentials]([FAKER][CREDENTIALS][URL]) section to learn how to obtain these informations.
 
-> Do you have any questions about credentials? Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/credentials/credentials) for more information.
+> Do you have any questions about credentials? Read [Credentials](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/credentials/credentials) for more information.
 
 
 ## Always use our libraries
@@ -105,22 +105,4 @@ When you develop your integration, consider all the [requirements for the produc
 Once your integration is ready, you just need to fill out the form for to go to production in the [Credentials section]([FAKER][CREDENTIALS][URL]) to start receiving payments.
 
 
----
-### Next steps
 
-> LEFT_BUTTON_REQUIRED_EN
->
-> Integrate Checkout API for cards
->
-> Create and configure your own payment experience.
->
-> [Integrate Checkout API for cards](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/receiving-payment-by-card)
-
-
-> RIGHT_BUTTON_RECOMMENDED_EN
->
-> API References
->
-> Find all the information required to interact with our APIs.
->
-> [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference)

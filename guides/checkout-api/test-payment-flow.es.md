@@ -14,13 +14,3 @@ Inicia tu integración configurada con las credenciales de tu usuario de prueba 
 1. Ingresa el e-mail de tu usuario de prueba comprador.
 1. Confirma la compra, ¡y listo!
 
----
-### Próximos pasos
-
-> LEFT_BUTTON_RECOMMENDED_ES
->
-> Tarjetas de prueba
->
-> Tarjetas de prueba para tu integración.
->
-> [Tarjetas de prueba](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/test-cards)

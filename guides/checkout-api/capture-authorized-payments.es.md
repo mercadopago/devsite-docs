@@ -105,13 +105,3 @@ La respuesta va a devolver que el pago se encuentra aprobado y acreditado.
 >
 > Si no agregas un monto, se capturará el total reservado.
 
----
-## Próximos pasos
-
-> LEFT_BUTTON_RECOMMENDED_ES
->
-> Otras funcionalidades
->
-> Obtén más información sobre cómo capturar un pago por un monto menor al reservado.
->
-> [Captura un pago por un monto menor al reservado](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/checkout-api/capture-payments-less-amount)

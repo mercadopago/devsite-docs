@@ -292,33 +292,4 @@ curl -X POST \
 >
 > If you want to deploy other technology in your server, you can [download a complete payment form sample](https://drive.google.com/file/d/12gSCPLfZCE36iKFbM4BTUwf6lnM7lVEL/view?usp=sharing) from GitHub.
 
----
-### Next steps
 
-> LEFT_BUTTON_REQUIRED_EN
->
-> Test your integration
->
-> Check that everything works in your integration with test users.
->
-> [Test your integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/test-integration)
-
-----[mlc]----
-> RIGHT_BUTTON_RECOMMENDED_EN
->
-> API References
->
-> Find all the information required to interact with our APIs.
->
-> [API References](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference)
-------------
-
-----[mla, mlb, mlm, mlu, mpe, mco]----
-> RIGHT_BUTTON_RECOMMENDED_EN
->
-> Integrate other payment methods
->
-> Learn about all the available payment options and how to offer them.
->
-> [Integrate other payment methods](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/other-payment-methods)
-------------

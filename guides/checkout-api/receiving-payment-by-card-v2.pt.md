@@ -313,33 +313,3 @@ curl -X POST \
 >
 > Se você deseja implementar seu servidor com alguma outra tecnologia, te deixamos um [exemplo completo do formulário de pagamento](https://drive.google.com/file/d/12gSCPLfZCE36iKFbM4BTUwf6lnM7lVEL/view?usp=sharing) no GitHub para que possa fazer o download.
 
----
-### Próximos passos
-
-> LEFT_BUTTON_REQUIRED_PT
->
-> Teste sua integração
->
-> Confirme que está tudo bem com a sua integração e com os usuários de teste.
->
-> [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/test-integration)
-
-----[mlc]----
-> RIGHT_BUTTON_RECOMMENDED_PT
->
-> Referências de API
->
-> Encontre toda a informação necessária para interagir com nossas APIs.
->
-> [Referências de API](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference)
-------------
-
-----[mla, mlb, mlm, mlu, mpe, mco]----
-> RIGHT_BUTTON_RECOMMENDED_PT
->
-> Integrar outros meios de pagamento
->
-> Conheça todas as opções de pagamentos disponíveis e veja como oferecê-las.
->
-> [Integrar outros meios de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/other-payment-methods)
-------------

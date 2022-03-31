@@ -33,7 +33,7 @@ Além de cartões, também existem outras opções de pagamento que podem ser of
 | `ticket` | Cobro Express |
 | `atm` | Red Link |
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os meios de pagamento disponíveis
+### Obtenha os meios de pagamento disponíveis
 
 Consulte os meios de pagamento disponíveis sempre que necessite.
 
@@ -144,7 +144,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 >
 > Capture os dados para pagamento
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa a biblioteca MercadoPago.js
+### 1. Usa a biblioteca MercadoPago.js
 
 **Lembre-se usar nossa biblioteca oficial para acessar a API de Mercado Pago** no seu frontend e coletar os dados de forma segura.
 
@@ -154,7 +154,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 
 > Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout API anterior](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v1/other-payment-ways).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o formulário de pagamento
+### 2. Adicione o formulário de pagamento
 
 Para realizar a captura dos dados sensíveis dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação.
 
@@ -209,7 +209,7 @@ Adicione o seguinte formulário com os estilos que quiser.
 </form>
 ```
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure sua chave pública
+### 3. Configure sua chave pública
 Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
 
 ```javascript
@@ -218,9 +218,9 @@ const mp = new MercadoPago("YOUR_PUBLIC_KEY");
 
 > Se ainda não possui conta para ver suas credenciais, [registre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtenha os dados para seu formulário
+### 4. Obtenha os dados para seu formulário
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os tipos de documento
+#### Obtenha os tipos de documento
 
 Um dos campos obrigatórios é o tipo de documento. Utilize a lista de documentos no momento de completar os dados.
 
@@ -759,7 +759,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 >
 > Capture os dados para pagamento
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa a biblioteca MercadoPago.js
+### 1. Usa a biblioteca MercadoPago.js
 
 **Lembre-se usar nossa biblioteca oficial para acessar a API de Mercado Pago** no seu frontend e coletar os dados de forma segura.
 
@@ -769,7 +769,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 
 > Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout API anterior](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v1/other-payment-ways).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o formulário de pagamento
+### 2. Adicione o formulário de pagamento
 
 Para realizar a captura dos dados sensíveis dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação.
 
@@ -824,7 +824,7 @@ Adicione o seguinte formulário com os estilos que quiser.
 </form>
 ```
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure sua chave pública
+### 3. Configure sua chave pública
 
 Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
 
@@ -1056,7 +1056,7 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 
 ## Consulta os meios de pagamento disponíveis
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meios de pagamento
+### Meios de pagamento
 
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
@@ -1065,7 +1065,7 @@ Além de cartões, também existem outras opções de pagamento que podem ser of
 | `ticket` | Abitab |
 | `ticket` | Redpagos |
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os meios de pagamento disponíveis
+### Obtenha os meios de pagamento disponíveis
 
 Consulte os meios de pagamento disponíveis sempre que necessite.
 
@@ -1192,7 +1192,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 >
 > Capture os dados para pagamento
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa a biblioteca MercadoPago.js
+### 1. Usa a biblioteca MercadoPago.js
 
 **Lembre-se usar nossa biblioteca oficial para acessar a API de Mercado Pago** no seu frontend e coletar os dados de forma segura.
 
@@ -1202,7 +1202,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 
 > Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout API anterior](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v1/other-payment-ways).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o formulário de pagamento
+### 2. Adicione o formulário de pagamento
 
 Para realizar a captura dos dados sensíveis dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação.
 
@@ -1266,9 +1266,9 @@ const mp = new MercadoPago("YOUR_PUBLIC_KEY");
 
 > Se ainda não possui conta para ver suas credenciais, [registre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtenha os dados para seu formulário
+### 4. Obtenha os dados para seu formulário
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os tipos de documento
+#### Obtenha os tipos de documento
 
 Um dos campos obrigatórios é o tipo de documento. Utilize a lista de documentos no momento de completar os dados.
 Incluindo o elemento de tipo select com `id = docType` que se encontra no formulário, MercadoPago.js completará automaticamente as opções disponíveis quando a seguinte função for chamada:
@@ -1512,7 +1512,7 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 
 ## Consulta os meios de pagamento disponíveis
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meios de pagamento
+### Meios de pagamento
 
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
@@ -1523,7 +1523,7 @@ Além de cartões, também existem outras opções de pagamento que podem ser of
 | `bank_transfer` | PSE |
 
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os meios de pagamento disponíveis
+### Obtenha os meios de pagamento disponíveis
 
 Consulte os meios de pagamento disponíveis sempre que necessite.
 
@@ -1668,7 +1668,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 >
 > Capture os dados para pagamento
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa a biblioteca MercadoPago.js
+### 1. Usa a biblioteca MercadoPago.js
 
 **Lembre-se usar nossa biblioteca oficial para acessar a API de Mercado Pago** no seu frontend e coletar os dados de forma segura.
 
@@ -1678,7 +1678,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 
 > Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout API anterior](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v1/other-payment-ways).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o formulário de pagamento
+### 2. Adicione o formulário de pagamento
 
 Para realizar a captura dos dados sensíveis dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação.
 
@@ -1733,7 +1733,7 @@ Adicione o seguinte formulário com os estilos que quiser.
 </form>
 ```
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure sua chave pública
+### 3. Configure sua chave pública
 Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
 
 ```javascript
@@ -1742,9 +1742,9 @@ const mp = new MercadoPago("YOUR_PUBLIC_KEY");
 
 > Se ainda não possui conta para ver suas credenciais, [registre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtenha os dados para seu formulário
+### 4. Obtenha os dados para seu formulário
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os tipos de documento
+#### Obtenha os tipos de documento
 
 Um dos campos obrigatórios é o tipo de documento. Utilize a lista de documentos no momento de completar os dados.
 
@@ -2237,7 +2237,7 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 
 ## Consulta os meios de pagamento disponíveis
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meios de pagamento
+### Meios de pagamento
 
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
@@ -2247,7 +2247,7 @@ Além de cartões, também existem outras opções de pagamento que podem ser of
 | `bank_transfer` | Redcompra Webpay |
 
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os meios de pagamento disponíveis
+### Obtenha os meios de pagamento disponíveis
 
 Consulte os meios de pagamento disponíveis sempre que necessite.
 
@@ -2377,7 +2377,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 >
 > Capture os dados para pagamento
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa a biblioteca MercadoPago.js
+### 1. Usa a biblioteca MercadoPago.js
 
 **Lembre-se usar nossa biblioteca oficial para acessar a API de Mercado Pago** no seu frontend e coletar os dados de forma segura.
 
@@ -2387,7 +2387,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 
 > Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout API anterior](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v1/other-payment-ways).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o formulário de pagamento
+### 2. Adicione o formulário de pagamento
 
 Para realizar a captura dos dados sensíveis dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação.
 
@@ -2442,7 +2442,7 @@ Adicione o seguinte formulário com os estilos que quiser.
 </form>
 ```
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure sua chave pública
+### 3. Configure sua chave pública
 
 Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
 
@@ -2452,9 +2452,9 @@ const mp = new MercadoPago("YOUR_PUBLIC_KEY");
 
 > Se ainda não possui conta para ver suas credenciais, [registre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtenha os dados para seu formulário
+### 4. Obtenha os dados para seu formulário
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os tipos de documento
+#### Obtenha os tipos de documento
 
 Um dos campos obrigatórios é o tipo de documento. Utilize a lista de documentos no momento de completar os dados.
 
@@ -2897,7 +2897,7 @@ Tanto para o frontend como para o backend, recomendamos utilizar [nossos SDKs](h
 
 ## Consulta os meios de pagamento disponíveis
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meios de pagamento
+### Meios de pagamento
 
 Além de cartões, também existem outras opções de pagamento que podem ser oferecidas no seu site.
 
@@ -2905,7 +2905,7 @@ Além de cartões, também existem outras opções de pagamento que podem ser of
 | --- | --- |
 | `atm` | PagoEfectivo |
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os meios de pagamento disponíveis
+### Obtenha os meios de pagamento disponíveis
 
 Consulte os meios de pagamento disponíveis sempre que necessite.
 
@@ -3010,7 +3010,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 >
 > Capture os dados para pagamento
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Usa a biblioteca MercadoPago.js
+### 1. Usa a biblioteca MercadoPago.js
 
 **Lembre-se usar nossa biblioteca oficial para acessar a API de Mercado Pago** no seu frontend e coletar os dados de forma segura.
 
@@ -3020,7 +3020,7 @@ Tenha em conta que essa resposta devolverá todos os meios de pagamento. Por iss
 
 > Esta documentação utiliza a nova versão de MercadoPago.js V2. Para ver a versão anterior, vá para a [seção de Checkout API anterior](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/online-payments/checkout-api/v1/other-payment-ways).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Adicione o formulário de pagamento
+### 2. Adicione o formulário de pagamento
 
 Para realizar a captura dos dados sensíveis dos seus clientes, **é muito importante que utilize nosso formulário com os atributos correspondentes** para garantir a segurança da informação.
 
@@ -3075,7 +3075,7 @@ Adicione o seguinte formulário com os estilos que quiser.
 </form>
 ```
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure sua chave pública
+### 3. Configure sua chave pública
 Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
 
 ```javascript
@@ -3084,9 +3084,9 @@ const mp = new MercadoPago("YOUR_PUBLIC_KEY");
 
 > Se ainda não possui conta para ver suas credenciais, [registre-se](https://www.mercadopago[FAKER][URL][DOMAIN]/registration-mp).
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Obtenha os dados para seu formulário
+### 4. Obtenha os dados para seu formulário
 
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtenha os tipos de documento
+#### Obtenha os tipos de documento
 
 Um dos campos obrigatórios é o tipo de documento. Utilize a lista de documentos no momento de completar os dados.
 
@@ -3523,7 +3523,7 @@ Adicione o seguinte formulário com os estilos que quiser.
 </form>
 ```
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Configure sua chave pública
+### 3. Configure sua chave pública
 
 Configure sua [chave pública]([FAKER][CREDENTIALS][URL]) da seguinte forma:
 
@@ -3920,21 +3920,4 @@ Cada meio de pagamento possui sua própria data de aprovação, em alguns casos 
 Revise os [tempos de aprovação por meio de pagamento](https://www.mercadopago.com.br/ajuda/meios-de-pagamento-parcelamento_265) sempre que necessite.
 
 ------------
----
-### Próximos passos
 
-> LEFT_BUTTON_RECOMMENDED_ES
->
-> Teste sua integração
->
-> Revise que esteja tudo bem com sua integração com usuários de teste.
->
-> [Teste sua integração](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/test-integration)
-
-> RIGHT_BUTTON_RECOMMENDED_PT
->
-> Integração avançada
->
-> Otimize sua integração e melhore a gestão das suas vendas.
->
-> [Integração avançada](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/checkout-api/remember-customers-and-cards)

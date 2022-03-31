@@ -10,13 +10,4 @@ For example, if the card has insufficient balance, you can suggest trying again 
 >
 > You can configure or send e-mails to clients with status messages for two orders, such as approved payment. Therefore, the configuration of this shipment must be made in their respective platforms. See [WooComerce](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/woocommerce/integration), [PrestaShop](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/prestashop/email-customization) and [Magento 2](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/magento-two/notifications-configuration) documentation for more details.
 
----
-## Next steps
 
-> LEFT_BUTTON_RECOMMENDED_EN
->
-> Advanced integration
->
-> Enhance your integration and improve your sales management.
->
-> [Advanced integration](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/checkout-api/remember-customers-and-cards)
